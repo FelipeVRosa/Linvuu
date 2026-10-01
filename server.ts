@@ -126,6 +126,12 @@ async function startServer() {
 
   app.use(express.json());
 
+  // Direct Project Archive Downloader for local VS Code integration
+  app.get('/api/download-project', (_req: Request, res: Response) => {
+    const archivePath = path.resolve(__dirname, 'linvuu-kosmos.tar.gz');
+    res.download(archivePath, 'linvuu-kosmos.tar.gz');
+  });
+
   // -------------------------------------------------------------
   // 1. User & Authentication Profile Endpoints
   // -------------------------------------------------------------

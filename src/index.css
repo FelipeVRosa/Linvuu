@@ -1,0 +1,1194 @@
+/* ==========================================================================
+   LINVUU KOSMOS — EDITORIAL DARK THEME
+   Strict Pure CSS with Native CSS Variables (:root)
+   No Tailwind, No External UI Kits.
+   ========================================================================== */
+
+:root {
+  /* Core Kosmos Palette */
+  --kosmos: #150330;
+  --profundo: #1d0640;
+  --profundo-elevated: #250952;
+  --profundo-card: #1f0745;
+  --profundo-hover: #2e0c66;
+  
+  --ouro: #F5A623;
+  --ouro-hover: #e09419;
+  --ouro-light: #ffc466;
+  --ouro-dim: rgba(245, 166, 35, 0.12);
+  --ouro-border: rgba(245, 166, 35, 0.35);
+  --ouro-glow: 0 0 20px rgba(245, 166, 35, 0.25);
+
+  --texto: #F2EFE8;
+  --texto-secundario: #C5BFB3;
+  --texto-terciario: #8C8477;
+  
+  --erro: #E5484D;
+  --erro-bg: rgba(229, 72, 77, 0.12);
+  --erro-border: rgba(229, 72, 77, 0.45);
+  
+  --sucesso: #30A46C;
+  --sucesso-bg: rgba(48, 164, 108, 0.12);
+  --sucesso-border: rgba(48, 164, 108, 0.45);
+
+  --info: #3E63DD;
+  --info-bg: rgba(62, 99, 221, 0.12);
+
+  --borda: rgba(242, 239, 232, 0.10);
+  --borda-suave: rgba(242, 239, 232, 0.06);
+  --borda-foco: rgba(245, 166, 35, 0.6);
+  
+  --sombra-card: 0 8px 30px rgba(10, 2, 24, 0.65);
+  --sombra-dropdown: 0 12px 40px rgba(7, 1, 18, 0.85);
+
+  --font-base: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+}
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--kosmos);
+  color: var(--texto);
+  font-family: var(--font-base);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Editorial Serif Accents */
+h1, h2, h3, .serif-heading {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--texto);
+}
+
+em, i, .editorial-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--kosmos);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--profundo-elevated);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ouro-hover);
+}
+
+/* App Wrapper */
+.kosmos-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, #22064c 0%, #150330 65%, #0f0224 100%);
+}
+
+/* ==========================================================================
+   Header & Nav
+   ========================================================================== */
+.kosmos-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(21, 3, 48, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--borda);
+  padding: 0.75rem 1.5rem;
+}
+
+.kosmos-header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  cursor: pointer;
+}
+
+.brand-mascot-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--ouro);
+  background: var(--profundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--ouro-glow);
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.brand-mascot-avatar:hover {
+  transform: scale(1.06) rotate(-3deg);
+}
+
+.brand-mascot-avatar img,
+.brand-mascot-avatar svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-text h1 {
+  font-size: 1.45rem;
+  line-height: 1.1;
+  color: var(--ouro);
+}
+
+.brand-text p {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--texto-secundario);
+}
+
+/* Header Controls */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-selector-group {
+  display: flex;
+  align-items: center;
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 24px;
+  padding: 0.2rem 0.5rem;
+}
+
+.lang-label {
+  font-size: 0.75rem;
+  color: var(--texto-terciario);
+  margin-right: 0.4rem;
+  padding-left: 0.4rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--texto-secundario);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--texto);
+  background: rgba(242, 239, 232, 0.05);
+}
+
+.lang-btn.active {
+  background: var(--ouro);
+  color: #150330;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(245, 166, 35, 0.35);
+}
+
+/* Streak & XP Badges */
+.stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ouro);
+}
+
+.stat-pill.streak {
+  color: #FF8A00;
+}
+
+/* Subscription Badge in Header */
+.sub-status-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid var(--ouro-border);
+}
+
+.sub-status-btn.subscribed {
+  background: linear-gradient(135deg, rgba(245, 166, 35, 0.2) 0%, rgba(48, 164, 108, 0.2) 100%);
+  color: var(--ouro);
+  border-color: var(--ouro);
+}
+
+.sub-status-btn.free {
+  background: var(--profundo);
+  color: var(--texto-secundario);
+}
+
+.sub-status-btn:hover {
+  border-color: var(--ouro);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   Main Layout: Sidebar (100 Lessons) + Lesson Workspace
+   ========================================================================== */
+.kosmos-layout {
+  display: flex;
+  flex: 1;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 100-Lessons Syllabus Sidebar */
+.kosmos-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  background: rgba(29, 6, 64, 0.45);
+  border-right: 1px solid var(--borda);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 65px);
+  position: sticky;
+  top: 65px;
+}
+
+.sidebar-header {
+  padding: 1rem 1.25rem 0.75rem;
+  border-bottom: 1px solid var(--borda-suave);
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-title h2 {
+  font-size: 1.15rem;
+  color: var(--texto);
+}
+
+.level-filter-bar {
+  display: flex;
+  gap: 0.35rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.filter-chip {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  color: var(--texto-secundario);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-chip.active {
+  background: var(--ouro-dim);
+  border-color: var(--ouro);
+  color: var(--ouro);
+}
+
+.sidebar-search-box {
+  padding: 0.5rem 1.25rem;
+  border-bottom: 1px solid var(--borda-suave);
+}
+
+.sidebar-search-input {
+  width: 100%;
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  color: var(--texto);
+  font-family: var(--font-base);
+  font-size: 0.82rem;
+  outline: none;
+}
+
+.sidebar-search-input:focus {
+  border-color: var(--ouro);
+}
+
+.lessons-scroll-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.lesson-item-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 10px;
+  margin-bottom: 0.4rem;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.lesson-item-card:hover {
+  background: rgba(242, 239, 232, 0.04);
+  border-color: var(--borda-suave);
+}
+
+.lesson-item-card.active {
+  background: var(--profundo-card);
+  border-color: var(--ouro-border);
+  box-shadow: 0 4px 16px rgba(10, 2, 24, 0.4);
+}
+
+.day-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  background: var(--profundo-elevated);
+  color: var(--texto-secundario);
+  min-width: 48px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.lesson-item-card.active .day-badge {
+  background: var(--ouro);
+  color: #150330;
+}
+
+.lesson-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.lesson-item-title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--texto);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.15rem;
+}
+
+.lesson-item-sub {
+  font-size: 0.72rem;
+  color: var(--texto-terciario);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lock-status-icon {
+  font-size: 0.78rem;
+  flex-shrink: 0;
+  color: var(--ouro);
+}
+
+.free-pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--sucesso);
+  background: var(--sucesso-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Workspace View (Lesson Content)
+   ========================================================================== */
+.kosmos-workspace {
+  flex: 1;
+  min-width: 0;
+  padding: 1.75rem 2.5rem;
+  max-width: 1120px;
+}
+
+.lesson-hero {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.lesson-meta-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.level-tag {
+  background: var(--ouro-dim);
+  border: 1px solid var(--ouro);
+  color: var(--ouro);
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.access-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+.access-tag.free {
+  background: var(--sucesso-bg);
+  color: var(--sucesso);
+  border: 1px solid var(--sucesso-border);
+}
+
+.access-tag.paid {
+  background: var(--ouro-dim);
+  color: var(--ouro);
+  border: 1px solid var(--ouro-border);
+}
+
+.lesson-hero h1 {
+  font-size: 2.1rem;
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+
+.lesson-hero p.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--texto-secundario);
+  max-width: 800px;
+  line-height: 1.55;
+}
+
+/* 5-Skeleton Tabs Navigation */
+.lesson-nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--borda);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--texto-secundario);
+  font-family: var(--font-base);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--texto);
+  background: rgba(242, 239, 232, 0.03);
+}
+
+.tab-btn.active {
+  color: var(--ouro);
+  border-bottom-color: var(--ouro);
+}
+
+/* Tab Panels Container */
+.tab-content-panel {
+  background: var(--profundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: var(--sombra-card);
+}
+
+/* Section 1: Video Module */
+.video-module-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video-player-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--borda);
+}
+
+.video-player-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-speaker-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--profundo);
+  border: 1px solid var(--borda-suave);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.speaker-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.speaker-info p {
+  font-size: 0.84rem;
+  color: var(--texto-secundario);
+}
+
+.video-timestamps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.timestamp-chip {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--texto-secundario);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timestamp-chip:hover {
+  border-color: var(--ouro);
+  color: var(--ouro);
+}
+
+/* Section 2: Phonetics Module */
+.phonetics-module {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.phonetic-intro-box {
+  background: var(--profundo);
+  border-left: 4px solid var(--ouro);
+  padding: 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.phonetic-rule-card {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.phonetic-rule-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ipa-badge {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.6rem;
+  background: var(--profundo-elevated);
+  border: 1px solid var(--ouro-border);
+  color: var(--ouro);
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.phonetic-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.example-card {
+  background: var(--profundo-card);
+  border: 1px solid var(--borda-suave);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.word-ipa-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.example-word {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--texto);
+}
+
+.example-ipa {
+  font-family: 'Times New Roman', serif;
+  font-size: 0.95rem;
+  color: var(--ouro);
+}
+
+.example-trans {
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+}
+
+/* Audio Practice Button */
+.audio-play-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--profundo-elevated);
+  border: 1px solid var(--ouro-border);
+  color: var(--ouro);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.audio-play-btn:hover {
+  background: var(--ouro);
+  color: #150330;
+}
+
+/* Section 3: Grammar Module */
+.grammar-module {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grammar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.grammar-section h3 {
+  font-size: 1.4rem;
+  color: var(--ouro);
+  border-bottom: 1px solid var(--borda-suave);
+  padding-bottom: 0.5rem;
+}
+
+.grammar-explanation-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--texto);
+}
+
+.grammar-table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--borda);
+}
+
+.kosmos-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: var(--profundo);
+  font-size: 0.88rem;
+}
+
+.kosmos-table th {
+  background: var(--profundo-elevated);
+  color: var(--ouro);
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--borda);
+}
+
+.kosmos-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--borda-suave);
+  color: var(--texto);
+}
+
+.kosmos-table tr:hover td {
+  background: rgba(245, 166, 35, 0.04);
+}
+
+.philology-note-box {
+  background: linear-gradient(135deg, rgba(29, 6, 64, 0.8) 0%, rgba(37, 9, 82, 0.8) 100%);
+  border: 1px solid var(--ouro-border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.philology-note-box h4 {
+  font-size: 0.95rem;
+  color: var(--ouro);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Section 4: Immersion Module */
+.immersion-module {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.immersion-text-reader {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 2rem;
+  font-size: 1.25rem;
+  line-height: 2.2;
+}
+
+.immersion-token {
+  padding: 0.15rem 0.35rem;
+  margin: 0 0.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border-bottom: 1.5px dotted var(--ouro);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.immersion-token:hover,
+.immersion-token.selected {
+  background: var(--ouro-dim);
+  color: var(--ouro);
+}
+
+/* Token Popover Detail Card */
+.token-detail-card {
+  background: var(--profundo-elevated);
+  border: 1px solid var(--ouro);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  box-shadow: var(--sombra-dropdown);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.token-detail-card .token-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.token-word {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ouro);
+}
+
+.token-grammar-tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(242, 239, 232, 0.1);
+  color: var(--texto-secundario);
+}
+
+/* Section 5: Practice & XP Exercises */
+.practice-module {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exercise-container {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-prompt {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: var(--texto);
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--profundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.option-item:hover {
+  background: var(--profundo-elevated);
+  border-color: var(--ouro-border);
+}
+
+.option-item.selected {
+  border-color: var(--ouro);
+  background: var(--ouro-dim);
+}
+
+/* Red / Green Feedback Banners */
+.feedback-banner {
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.feedback-banner.correct {
+  background: var(--sucesso-bg);
+  border: 1px solid var(--sucesso-border);
+  color: #72E09B;
+}
+
+.feedback-banner.incorrect {
+  background: var(--erro-bg);
+  border: 1px solid var(--erro-border);
+  color: #FF8F94;
+}
+
+.feedback-title {
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feedback-explanation {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--texto);
+}
+
+/* ==========================================================================
+   Paywall Screen (Day 3+)
+   ========================================================================== */
+.paywall-container {
+  background: linear-gradient(180deg, rgba(29, 6, 64, 0.9) 0%, rgba(21, 3, 48, 0.98) 100%);
+  border: 2px solid var(--ouro-border);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 12px 50px rgba(10, 2, 24, 0.8);
+  max-width: 760px;
+  margin: 2rem auto;
+}
+
+.paywall-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: var(--ouro-dim);
+  border: 2px solid var(--ouro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ouro);
+  box-shadow: var(--ouro-glow);
+}
+
+.paywall-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ouro);
+}
+
+.paywall-desc {
+  font-size: 1.05rem;
+  color: var(--texto-secundario);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.paywall-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-card {
+  background: var(--profundo);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  text-align: left;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.pricing-card.featured {
+  border-color: var(--ouro);
+  background: var(--profundo-elevated);
+  box-shadow: var(--ouro-glow);
+}
+
+.plan-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 1.8rem;
+  font-family: var(--font-serif);
+  color: var(--ouro);
+  margin-bottom: 1rem;
+}
+
+.plan-features-list {
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--texto-secundario);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan-features-list li::before {
+  content: '✓ ';
+  color: var(--ouro);
+  font-weight: 700;
+}
+
+/* Action Buttons */
+.kosmos-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.kosmos-btn-primary {
+  background: var(--ouro);
+  color: #150330;
+  box-shadow: 0 4px 18px rgba(245, 166, 35, 0.4);
+}
+
+.kosmos-btn-primary:hover {
+  background: var(--ouro-hover);
+  transform: translateY(-2px);
+}
+
+.kosmos-btn-secondary {
+  background: var(--profundo-elevated);
+  color: var(--texto);
+  border: 1px solid var(--borda);
+}
+
+.kosmos-btn-secondary:hover {
+  border-color: var(--ouro);
+  color: var(--ouro);
+}
+
+/* ==========================================================================
+   High Thinking Philologist Modal / Drawer
+   ========================================================================== */
+.thinking-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 2, 24, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.thinking-modal-card {
+  background: var(--profundo);
+  border: 1px solid var(--ouro-border);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 840px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.9);
+}
+
+.thinking-modal-header {
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--borda);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thinking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(152, 195, 121, 0.15);
+  color: #98C379;
+  border: 1px solid rgba(152, 195, 121, 0.35);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.thinking-modal-body {
+  padding: 1.75rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.thinking-input-box {
+  margin-bottom: 1.5rem;
+}
+
+.thinking-textarea {
+  width: 100%;
+  min-height: 90px;
+  background: var(--profundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 0.85rem;
+  color: var(--texto);
+  font-family: var(--font-base);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+}
+
+.thinking-textarea:focus {
+  border-color: var(--ouro);
+}
+
+.thinking-response-panel {
+  background: var(--profundo-card);
+  border: 1px solid var(--borda-suave);
+  border-radius: 10px;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .kosmos-sidebar {
+    display: none;
+  }
+  .kosmos-workspace {
+    padding: 1rem;
+  }
+}

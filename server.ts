@@ -120,9 +120,44 @@ let srCardsDatabase: SpacedRepetitionCard[] = [
   },
 ];
 
+// Função para encontrar uma porta disponível
+async function findAvailablePort(preferredPort: number): Promise<number> {
+  const net = await import('net');
+
+  return new Promise((resolve) => {
+    const server = net.createServer();
+
+    server.listen(preferredPort, '0.0.0.0', () => {
+      server.close();
+      resolve(preferredPort);
+    });
+
+    server.on('error', (err: any) => {
+      if (err.code === 'EADDRINUSE') {
+        console.warn(`⚠️  Porta ${preferredPort} em uso. Procurando outra porta...`);
+        resolve(findAvailablePort(preferredPort + 1));
+      } else {
+        throw err;
+      }
+    });
+  });
+}
+
 async function startServer() {
   const app = express();
-  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+
+  // Porta 3000 SEMPRE para API do Gemini (tentar liberar se estiver em uso)
+  let PORT: number;
+
+  try {
+    PORT = await findAvailablePort(3000);
+    if (PORT !== 3000) {
+      console.warn(`❌ Porta 3000 ocupada! API Gemini rodando na porta ${PORT}`);
+    }
+  } catch (err) {
+    console.error('Erro ao encontrar porta:', err);
+    PORT = 3000;
+  }
 
   app.use(express.json());
 
@@ -223,7 +258,7 @@ async function startServer() {
   app.post('/api/stripe/create-checkout-session', async (req: Request, res: Response) => {
     try {
       const { plan = 'monthly' } = req.body;
-      const appUrl = process.env.APP_URL || 'http://localhost:3000';
+      const appUrl = process.env.APP_URL || `http://localhost:${PORT}`;
 
       const priceAmount = plan === 'annual' ? 14900 : 1900; // in cents (19 EUR / 149 EUR)
       const planName =
@@ -453,7 +488,7 @@ Língua-alvo da frase: ${langNames[targetLanguage]}
 Língua materna do aluno (para todas as explicações e traduções): ${nativeNames[nativeLanguage]}
 
 Diretrizes obrigatórias:
-1. Explique minuciosamente o valor semântico de cada caso gramatical, concordância, alófonos e posições oracionais (ex: V2, Vorfeld, Satzklammer em alemão; casos e aspecto em russo; concordância e subjuntivo em francês; distinção ontológica ser/estar e clíticos em espanhol).
+1. Explique minuciosamente o valor semântico de cada caso gramatical, concordância, alófonos e posições oracionais (ex: V2, Vorfeld, Satzklammer em alemão; casos e aspecto em russo; concord[...]
 2. Forneça a etimologia e evolução histórica quando relevante para compreender a raiz das palavras.
 3. Não use linguagem infantil ou condescendente; mantenha a dignidade e a densidade de um tratado acadêmico.
 4. Responda em português (ou no idioma materno do usuário: ${nativeNames[nativeLanguage]}) com a terminologia técnica padrão.`;
@@ -512,13 +547,13 @@ Estruture sua resposta nos seguintes tópicos:
 **Construção sob análise:** "${req.body.sentence}"
 
 1. **Topologia e Hierarquia Sintática:**
-A oração obedece rigorosamente às restrições do modelo topológico. O núcleo flexionado ancora-se na posição matriz, ordenando os constituintes oracionais segundo a hierarquia informativa (Tema/Dado no Vorfeld, Rema/Novo no Mittelfeld).
+A oração obedece rigorosamente às restrições do modelo topológico. O núcleo flexionado ancora-se na posição matriz, ordenando os constituintes oracionais segundo a hierarquia informativa[...]
 
 2. **Regência Casual e Morfologia Flexional:**
-Os sintagmas nominais recebem marcação de caso morfológica estrita. A transitividade do verbo governa o caso sintático do paciente e do beneficiário, garantindo clareza semântica sem ambiguidade.
+Os sintagmas nominais recebem marcação de caso morfológica estrita. A transitividade do verbo governa o caso sintático do paciente e do beneficiário, garantindo clareza semântica sem ambigu[...]
 
 3. **Nuances Estilísticas e Registro Culto:**
-No padrão C1, a evitação de construções analíticas coloquiais em favor da condensação nominal (Nominalstil) ou o uso criterioso de conectores hipotáticos eleva a densidade argumentativa do texto.`,
+No padrão C1, a evitação de construções analíticas coloquiais em favor da condensação nominal (Nominalstil) ou o uso criterioso de conectores hipotáticos eleva a densidade argumentativa [...]`,
         caseGovernmentAndEtymology: 'Regência casual profunda.',
         idiomaticAndStylisticNuance: 'Registro formal culto.',
         c1MasteryAdvice: 'Treine a inversão sistemática com advérbios no início de período.',
@@ -545,7 +580,9 @@ No padrão C1, a evitação de construções analíticas coloquiais em favor da 
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[Linvuu Kosmos Server] listening on http://0.0.0.0:${PORT}`);
+    console.log(`✅ [Linvuu Kosmos Server] Porta ${PORT}`);
+    console.log(`📡 API Gemini rodando em: http://localhost:${PORT}/api/ai/philological-analysis`);
+    console.log(`🌐 Acesse o site em: http://localhost:${PORT}`);
   });
 }
 

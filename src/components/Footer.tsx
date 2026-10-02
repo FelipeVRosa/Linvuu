@@ -1,41 +1,34 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
+import { CURSOS } from '../lib/content';
+import { Redes } from './Redes';
 
-export const Footer: React.FC = () => {
+export function Footer() {
   return (
-    <footer className="border-t border-[#e1ddd1] mt-20 py-9 pb-12">
-      <div className="max-w-[1080px] mx-auto px-7 flex justify-between gap-5 flex-wrap">
-        <span className="text-xs tracking-[0.2em] uppercase text-[#8f9d9a] leading-loose">
-          <strong className="text-[#6b7280] font-medium">LINVUU</strong> · IDIOMAS SEM ESFORÇO
-          <br />
-          SÃO PAULO · 2026
-        </span>
-        <nav className="flex gap-5.5 flex-wrap items-center">
-          <a
-            href="#idiomas"
-            className="text-xs font-medium tracking-[0.08em] uppercase text-[#6b7280] hover:text-[#d64000] transition-colors"
-          >
-            Idiomas
-          </a>
-          <a
-            href="#profissoes"
-            className="text-xs font-medium tracking-[0.08em] uppercase text-[#6b7280] hover:text-[#d64000] transition-colors"
-          >
-            Profissões
-          </a>
-          <a
-            href="#praticar"
-            className="text-xs font-medium tracking-[0.08em] uppercase text-[#6b7280] hover:text-[#d64000] transition-colors"
-          >
-            Praticar
-          </a>
-          <a
-            href="#familia"
-            className="text-xs font-medium tracking-[0.08em] uppercase text-[#6b7280] hover:text-[#d64000] transition-colors"
-          >
-            Família
-          </a>
+    <footer className="foot">
+      <div className="foot-inner">
+        <div className="foot-brand">
+          <img className="logo-img" src="/brand/linvuu-logo.png" alt="Linvuu" width="127" height="28" />
+          <p>100 dias para um mundo novo. Idiomas e STEM em trilhas curtas, com pessoas reais.</p>
+          <div id="redes"><Redes /></div>
+        </div>
+        <nav aria-label="Idiomas">
+          <h2 className="foot-h">Idiomas</h2>
+          {CURSOS.filter((c) => c.area === 'idiomas').map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
         </nav>
+        <nav aria-label="STEM">
+          <h2 className="foot-h">STEM</h2>
+          {CURSOS.filter((c) => c.area === 'stem').map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
+        </nav>
+        <nav aria-label="Linvuu">
+          <h2 className="foot-h">Linvuu</h2>
+          <Link to="/cursos">Todos os cursos</Link>
+          <Link to="/#metodo">Método</Link>
+          <Link to="/#faq">Dúvidas</Link>
+        </nav>
+      </div>
+      <div className="foot-base">
+        <span>© 2026 Linvuu · São Paulo</span>
       </div>
     </footer>
   );
-};
+}

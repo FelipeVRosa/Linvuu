@@ -5,7 +5,6 @@ export default function App() {
   const [currentMood, setCurrentMood] = useState('day');
 
   useEffect(() => {
-    // Mood Engine - auto-detect time of day
     const updateMood = () => {
       const hour = new Date().getHours();
       let mood = 'day';
@@ -15,7 +14,7 @@ export default function App() {
       else mood = 'night';
       setCurrentMood(mood);
     };
-    
+
     updateMood();
     const interval = setInterval(updateMood, 15 * 60 * 1000);
     return () => clearInterval(interval);
@@ -48,16 +47,13 @@ export default function App() {
       badge: 'No ar',
       flag: '🇩🇪',
     },
-  ];
-
-  const TRACKS_SOON = [
     {
       id: 'gb',
       num: '03',
       name: 'Inglês',
       nameEm: 'English',
       desc: 'Da base à fluência conversacional. Foco em phrasal verbs e compreensão oral — o que falta em quase todo curso tradicional.',
-      days: 'Em preparação',
+      days: '30 dias · 8 módulos',
       badge: 'Em breve',
       flag: '🇬🇧',
     },
@@ -67,7 +63,7 @@ export default function App() {
       name: 'Espanhol',
       nameEm: 'Español',
       desc: 'Da pronúncia ao subjuntivo. Español de verdade, sem sotaque de livro didático.',
-      days: 'Em preparação',
+      days: '30 dias · 8 módulos',
       badge: 'Em breve',
       flag: '🇪🇸',
     },
@@ -77,9 +73,50 @@ export default function App() {
       name: 'Português',
       nameEm: 'Português',
       desc: 'Para estrangeiros. Da estrutura básica às expressões do dia a dia no Brasil.',
-      days: 'Em preparação',
+      days: '30 dias · 8 módulos',
       badge: 'Em breve',
       flag: '🇧🇷',
+    },
+  ];
+
+  const TRACKS_SOON = [
+    {
+      id: 'fr',
+      num: '06',
+      name: 'Francês',
+      nameEm: 'Français',
+      desc: 'Leitura, pronúncia e frases úteis para o mundo profissional, com foco em contexto real.',
+      days: 'Em preparação',
+      badge: 'Em breve',
+      flag: '🇫🇷',
+    },
+    {
+      id: 'it',
+      num: '07',
+      name: 'Italiano',
+      nameEm: 'Italiano',
+      desc: 'Melodia, clareza e expressão prática para viagem, estudo e trabalho.',
+      days: 'Em preparação',
+      badge: 'Em breve',
+      flag: '🇮🇹',
+    },
+  ];
+
+  const FEATURES = [
+    {
+      title: 'Microaprendizagem',
+      text: 'Cada dia entrega uma unidade clara, sem excesso de teoria e com prática imediata.',
+      icon: '⏱️',
+    },
+    {
+      title: 'Fixação real',
+      text: 'Revisão espaçada, feedback imediato e reforço de pontos que você errou.',
+      icon: '🧠',
+    },
+    {
+      title: 'Conteúdo nativo',
+      text: 'Textos e áudios autênticos para você entrar em contato com a língua em uso.',
+      icon: '🎧',
     },
   ];
 
@@ -102,11 +139,19 @@ export default function App() {
         <path d="M32 44 Q38 36 44 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
         <path d="M56 44 Q62 36 68 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
       `,
+      thinking: `
+        <path d="M33 44 Q38 39 43 44" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M57 44 Q62 39 67 44" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="48" cy="47" r="2.5" fill="${accent}" opacity="0.8"/>
+      `,
     };
 
     const mouths: Record<string, string> = {
       idle: `<path d="M44 56 Q50 61 56 56" stroke="${dark}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`,
       happy: `<path d="M42 54 Q50 64 58 54" stroke="${dark}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`,
+      thinking: `<path d="M44 58 Q50 52 56 58" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
+      celebrate: `<path d="M42 57 Q50 68 58 57" stroke="${dark}" stroke-width="2.8" fill="none" stroke-linecap="round"/>`,
+      sad: `<path d="M44 60 Q50 54 56 60" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
     };
 
     return `<svg width="200" height="200" viewBox="0 0 100 100" fill="none" aria-hidden="true">
@@ -122,10 +167,9 @@ export default function App() {
 
   return (
     <div className="home">
-      {/* NAV */}
       <header className="nav-bar">
         <div className="nav-inner">
-          <a href="#" className="logo">
+          <a href="#top" className="logo" aria-label="Linvuu home">
             <svg className="logo-mark" viewBox="0 0 32 24" aria-hidden="true">
               <rect x="0" y="0" width="11" height="6" fill="var(--text)" />
               <rect x="0" y="9" width="22" height="6" fill="var(--text)" />
@@ -133,17 +177,17 @@ export default function App() {
             </svg>
             <span className="logo-text">Linvuu</span>
           </a>
-          <nav className="nav-links">
+          <nav className="nav-links" aria-label="Navegação principal">
             <a href="#idiomas">Idiomas</a>
             <a href="#stem">STEM</a>
+            <a href="#como-funciona">Como funciona</a>
             <a href="#sobre">Sobre</a>
           </nav>
-          <a href="app.html" className="nav-cta">Começar</a>
+          <a href="#idiomas" className="nav-cta">Começar</a>
         </div>
       </header>
 
-      <main>
-        {/* HERO */}
+      <main id="top">
         <section className="hero">
           <div className="hero-meta">
             <span>Idiomas &amp; STEM</span>
@@ -160,15 +204,29 @@ export default function App() {
             Cada dia é uma camada. Cada semana, um módulo. Cada trilha, do zero ao domínio real — sem promessa de fluência em uma semana.
           </p>
           <p className="hero-desc">
-            Russo, alemão, inglês, espanhol, português. Matemática, física. Cada matéria em sua própria trilha de trinta dias: vídeo-aula curta, imersão em texto nativo, prática com feedback imediato, revisão espaçada. Método editorial, sem gamificação vazia, sem atalho. O Lin caminha com você.
+            Russo, alemão, inglês, espanhol, português. Matemática, física. Cada matéria em sua própria trilha de trinta dias: vídeo-aula curta, imersão em texto nativo, prática com feedback e revisão espaçada.
           </p>
           <div className="hero-cta">
             <a href="#idiomas" className="btn btn-primary">Ver trilhas</a>
-            <a href="#sobre" className="btn btn-ghost">Como funciona</a>
+            <a href="#como-funciona" className="btn btn-ghost">Como funciona</a>
+          </div>
+
+          <div className="hero-stats" aria-label="Estatísticas do método Linvuu">
+            <div className="stat-box">
+              <strong>30 dias</strong>
+              <span>por trilha</span>
+            </div>
+            <div className="stat-box">
+              <strong>3 camadas</strong>
+              <span>por dia</span>
+            </div>
+            <div className="stat-box">
+              <strong>15 min</strong>
+              <span>de prática</span>
+            </div>
           </div>
         </section>
 
-        {/* IDIOMAS */}
         <section className="section" id="idiomas">
           <div className="section-head">
             <span className="section-kicker">Trilhas vivas</span>
@@ -181,7 +239,13 @@ export default function App() {
           </div>
           <div className="track-grid">
             {TRACKS_ACTIVE.map((track) => (
-              <button key={track.id} className="track" onClick={() => window.location.href = `app.html?lang=${track.id}`}>
+              <button
+                key={track.id}
+                type="button"
+                className="track"
+                onClick={() => setLinState('happy')}
+                aria-label={`Selecionar trilha ${track.name}`}
+              >
                 <div className="track-num">
                   <span>Trilha {track.num}</span>
                   <span className="track-flag">{track.flag}</span>
@@ -199,7 +263,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* IDIOMAS EM BREVE */}
         <section className="section" style={{ paddingTop: 0 }} id="idiomas-em-breve">
           <div className="section-head">
             <span className="section-kicker">Em preparação</span>
@@ -228,13 +291,33 @@ export default function App() {
           </div>
         </section>
 
-        {/* STEM */}
+        <section className="section" style={{ paddingTop: 0 }} id="como-funciona">
+          <div className="section-head">
+            <span className="section-kicker">Por que funciona</span>
+            <h2 className="section-h2">
+              Aprender sem <em>distância</em>
+            </h2>
+            <p className="section-sub">
+              O método combina a densidade de uma aula, a naturalidade de um texto e a força da revisão para transformar prática em memória.
+            </p>
+          </div>
+          <div className="feature-grid">
+            {FEATURES.map((feature) => (
+              <article key={feature.title} className="feature-card">
+                <span className="feature-icon" aria-hidden="true">{feature.icon}</span>
+                <h3>{feature.title}</h3>
+                <p>{feature.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="section" style={{ paddingTop: 0 }} id="stem">
           <div className="section-head">
             <span className="section-kicker">Ciências exatas · em preparação</span>
             <h2 className="section-h2">STEM</h2>
             <p className="section-sub">
-              Matemática e física com o mesmo rigor das trilhas de idioma: definição precisa, exemplo resolvido passo a passo, exercício com feedback, revisão espaçada. Sem decoreba, sem atalho.
+              Matemática e física com o mesmo rigor das trilhas de idioma: definição precisa, exemplo resolvido passo a passo, exercício com feedback, revisão espaçada.
             </p>
           </div>
           <div className="stem-strip">
@@ -255,7 +338,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* SOBRE */}
         <section className="section" style={{ paddingTop: 0 }} id="sobre">
           <div className="section-head">
             <span className="section-kicker">Sobre a Linvuu</span>
@@ -263,7 +345,7 @@ export default function App() {
               Três camadas, <em>um dia</em>
             </h2>
             <p className="section-sub">
-              Toda trilha, de idioma ou de STEM, obedece à mesma estrutura diária. Assistir, ler, fazer. Sem aula longa, sem teoria solta. A Linvuu foi desenhada para quem quer aprender com profundidade — não para quem busca atalho.
+              Toda trilha, de idioma ou de STEM, obedece à mesma estrutura diária. Assistir, ler, fazer. Sem aula longa, sem teoria solta. A Linvuu foi desenhada para quem quer aprender com progresso real.
             </p>
           </div>
           <div className="method-grid">
@@ -288,7 +370,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* LIN */}
         <section className="section" style={{ paddingTop: 0 }} id="lin">
           <div className="section-head">
             <span className="section-kicker">Seu parceiro</span>
@@ -296,23 +377,26 @@ export default function App() {
               Conheça o <em>Lin</em>
             </h2>
             <p className="section-sub">
-              O Lin caminha com você durante toda a trilha. Conte a ele suas conquistas — ele celebra. Conte suas frustrações — ele ajuda a atravessar. Cinco estados emocionais, um para cada momento do aprendizado.
+              O Lin caminha com você durante toda a trilha. Conte a ele suas conquistas — ele celebra. Conte suas frustrações — ele ajuda a atravessar.
             </p>
           </div>
           <div className="lin-showcase">
             <div className="lin-stage">
               <div className="lin-scene">
-                <div
-                  className="lin"
-                  dangerouslySetInnerHTML={{ __html: linSVG(linState) }}
-                />
+                <div className="lin" dangerouslySetInnerHTML={{ __html: linSVG(linState) }} />
                 <h3 className="lin-title" id="linTitle">
-                  Pronto quando você estiver
+                  {linState === 'happy' ? 'Vamos em frente!' : linState === 'thinking' ? 'Pensando no próximo passo...' : linState === 'celebrate' ? 'Você está no caminho certo!' : "Pronto quando você estiver"}
                 </h3>
                 <p className="lin-desc" id="linDesc">
-                  Comece a primeira trilha e o Lin monta o baralho de revisão com você.
+                  {linState === 'happy'
+                    ? 'Você já deu o primeiro passo. Agora é só seguir a trilha e manter o ritmo.'
+                    : linState === 'thinking'
+                      ? 'Tudo bem parar para revisar: a clareza vem quando o cérebro processa o que aprendeu.'
+                      : linState === 'celebrate'
+                        ? 'A consistência faz a diferença — e o progresso já começou.'
+                        : 'Comece a primeira trilha e o Lin monta o baralho de revisão com você.'}
                 </p>
-                <button className="btn btn-primary" id="linCta">
+                <button type="button" className="btn btn-primary" id="linCta" onClick={() => setLinState('celebrate')}>
                   Escolher uma trilha
                 </button>
               </div>
@@ -323,6 +407,7 @@ export default function App() {
                 {(['idle', 'thinking', 'happy', 'sad', 'celebrate'] as const).map((state) => (
                   <button
                     key={state}
+                    type="button"
                     className={`lin-chip ${linState === state ? 'on' : ''}`}
                     onClick={() => setLinState(state)}
                   >
@@ -335,7 +420,6 @@ export default function App() {
         </section>
       </main>
 
-      {/* FOOTER */}
       <footer className="foot">
         <div className="foot-inner">
           <span className="foot-copy">
@@ -345,7 +429,7 @@ export default function App() {
           <nav className="foot-links">
             <a href="#idiomas">Idiomas</a>
             <a href="#stem">STEM</a>
-            <a href="#sobre">Sobre</a>
+            <a href="#como-funciona">Como funciona</a>
             <a href="#lin">Lin</a>
           </nav>
         </div>

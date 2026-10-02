@@ -31,7 +31,7 @@ const ai = new GoogleGenAI({
 });
 
 // Stripe initialization (using secret key or test dummy for sandbox simulation)
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_linvuu_kosmos_2026';
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_linvuu_2026';
 const stripe = new Stripe(stripeSecretKey, {
   apiVersion: '2025-01-27.acacia' as any,
 });
@@ -43,7 +43,7 @@ const userDatabase: UserProfile = {
   email: 'estudante@linvuu.com',
   nativeLanguage: 'pt',
   targetLanguage: 'de',
-  hasSubscription: false, // Freemium default: Day 1 & 2 are Free; Day 3+ locked until payment
+  hasSubscription: false,
   xp: 120,
   streakDays: 4,
   completedLessons: ['de-01'],
@@ -54,7 +54,7 @@ const userDatabase: UserProfile = {
 let srCardsDatabase: SpacedRepetitionCard[] = [
   {
     id: 'card-01',
-    userId: 'usr_kosmos_001',
+    userId: 'usr_linvuu_001',
     language: 'de',
     item: 'der Knacklaut',
     ipa: '[ˈknakˌlaʊ̯t]',
@@ -76,7 +76,7 @@ let srCardsDatabase: SpacedRepetitionCard[] = [
   },
   {
     id: 'card-02',
-    userId: 'usr_kosmos_001',
+    userId: 'usr_linvuu_001',
     language: 'de',
     item: 'die Satzklammer',
     ipa: '[ˈzatsˌklamɐ]',
@@ -98,7 +98,7 @@ let srCardsDatabase: SpacedRepetitionCard[] = [
   },
   {
     id: 'card-03',
-    userId: 'usr_kosmos_001',
+    userId: 'usr_linvuu_001',
     language: 'de',
     item: 'das Vorfeld',
     ipa: '[ˈfoːɐ̯ˌfɛlt]',
@@ -146,18 +146,8 @@ async function findAvailablePort(preferredPort: number): Promise<number> {
 async function startServer() {
   const app = express();
 
-  // Porta 3000 SEMPRE para API do Gemini (tentar liberar se estiver em uso)
-  let PORT: number;
-
-  try {
-    PORT = await findAvailablePort(3000);
-    if (PORT !== 3000) {
-      console.warn(`❌ Porta 3000 ocupada! API Gemini rodando na porta ${PORT}`);
-    }
-  } catch (err) {
-    console.error('Erro ao encontrar porta:', err);
-    PORT = 3000;
-  }
+  // Porta: usa process.env.PORT (Render) ou 3000 em desenvolvimento
+  const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   app.use(express.json());
 
@@ -187,7 +177,6 @@ async function startServer() {
 
   // -------------------------------------------------------------
   // 2. Lesson List (Metadata Catalog)
-  // Backend returns 100 lessons; calculates isLocked according to user.hasSubscription
   // -------------------------------------------------------------
   app.get('/api/lessons/:language', (req: Request, res: Response) => {
     const lang = (req.params.language || userDatabase.targetLanguage) as TargetLanguage;
@@ -206,10 +195,6 @@ async function startServer() {
 
   // -------------------------------------------------------------
   // 3. Strict Backend Paywall Validation
-  // RULE 5: "A partir do Dia 3 (Paywall): O acesso exige subscrição ativa.
-  // Regra de Segurança: Todo o processamento de pagamentos e a validação de subscrições
-  // devem ser geridos e validados no Back-end. O Back-end só deve enviar os dados
-  // da lição ao cliente se a subscrição for válida."
   // -------------------------------------------------------------
   app.get('/api/lessons/:language/:day', (req: Request, res: Response) => {
     const lang = req.params.language as TargetLanguage;
@@ -221,7 +206,6 @@ async function startServer() {
 
     const isFreeDay = day <= 2;
 
-    // SECURITY CHECK: If day >= 3 and user has NO subscription, block and OMIT content!
     if (!isFreeDay && !userDatabase.hasSubscription) {
       return res.status(403).json({
         error: 'SUBSCRIPTION_REQUIRED',
@@ -230,16 +214,14 @@ async function startServer() {
         language: lang,
         isFree: false,
         message: {
-          pt: `Acesso Bloqueado pelo Servidor: A lição do Dia ${day} pertence ao programa intensivo avançado e exige subscrição ativa Linvuu Kosmos. Os Dias 1 e 2 são gratuitos.`,
+          pt: `Acesso Bloqueado pelo Servidor: A lição do Dia ${day} pertence ao programa intensivo avançado e exige subscrição ativa Linvuu. Os Dias 1 e 2 são gratuitos.`,
           en: `Server-Side Paywall: Day ${day} lesson is locked. Premium subscription is strictly required for Day 3 through 100.`,
-          es: `Acceso Bloqueado por el Servidor: La lección del Día ${day} requiere suscripción activa Linvuu Kosmos.`,
+          es: `Acceso Bloqueado por el Servidor: La lección del Día ${day} requiere suscripción activa Linvuu.`,
         },
         upgradeUrl: '/subscribe',
-        // Note: Sensitive lesson data (video, phonetics, grammar, immersion, practice) is strictly omitted!
       });
     }
 
-    // User is authorized (Free Day 1/2 or Active Subscriber)
     const lesson = getLesson(lang, day);
     if (!lesson) {
       return res.status(404).json({ error: 'Lição não encontrada.' });
@@ -253,18 +235,17 @@ async function startServer() {
   });
 
   // -------------------------------------------------------------
-  // 4. Stripe Payments & Subscriptions (Backend Authoritative)
+  // 4. Stripe Payments & Subscriptions
   // -------------------------------------------------------------
   app.post('/api/stripe/create-checkout-session', async (req: Request, res: Response) => {
     try {
       const { plan = 'monthly' } = req.body;
       const appUrl = process.env.APP_URL || `http://localhost:${PORT}`;
 
-      const priceAmount = plan === 'annual' ? 14900 : 1900; // in cents (19 EUR / 149 EUR)
+      const priceAmount = plan === 'annual' ? 14900 : 1900;
       const planName =
         plan === 'annual' ? 'Linvuu Fluência - Anual' : 'Linvuu Fluência - Mensal';
 
-      // Check if real Stripe secret key is supplied
       if (
         process.env.STRIPE_SECRET_KEY &&
         !process.env.STRIPE_SECRET_KEY.includes('placeholder')
@@ -296,7 +277,6 @@ async function startServer() {
         return res.json({ checkoutUrl: session.url, sessionId: session.id });
       }
 
-      // Sandbox / Test Mode Checkout Simulation with backend validation
       const simulatedSessionId = `cs_test_${Date.now()}`;
       return res.json({
         simulated: true,
@@ -316,7 +296,6 @@ async function startServer() {
   // Stripe Webhook Endpoint
   app.post('/api/stripe/webhook', (req: Request, res: Response) => {
     const event = req.body;
-    // Process subscription events
     if (
       event.type === 'checkout.session.completed' ||
       event.type === 'customer.subscription.created'
@@ -331,7 +310,7 @@ async function startServer() {
     res.json({ received: true });
   });
 
-  // Instant Subscription Toggle (Test helper for evaluation of backend paywall)
+  // Instant Subscription Toggle (Test helper)
   app.post('/api/stripe/toggle-demo-subscription', (req: Request, res: Response) => {
     const { active } = req.body;
     if (typeof active === 'boolean') {
@@ -344,7 +323,7 @@ async function startServer() {
       success: true,
       hasSubscription: userDatabase.hasSubscription,
       message: userDatabase.hasSubscription
-        ? 'Subscrição Kosmos ATIVADA no servidor. Lições 3 a 100 desbloqueadas!'
+        ? 'Subscrição Linvuu ATIVADA no servidor. Lições 3 a 100 desbloqueadas!'
         : 'Subscrição DESATIVADA no servidor. Lições 3 a 100 bloqueadas com HTTP 403.',
     });
   });
@@ -361,7 +340,6 @@ async function startServer() {
     userDatabase.xp += xpEarned || 100;
     userDatabase.lastActiveDate = new Date().toISOString();
 
-    // Ingest new vocabulary tokens into user's spaced repetition queue
     if (Array.isArray(newCards)) {
       for (const card of newCards) {
         if (!srCardsDatabase.some((c) => c.item === card.item && c.language === card.language)) {
@@ -392,22 +370,19 @@ async function startServer() {
   });
 
   app.get('/api/spaced-repetition/queue', (_req: Request, res: Response) => {
-    const now = new Date();
-    // Return cards due today or upcoming
     const targetLang = userDatabase.targetLanguage;
     const dueCards = srCardsDatabase.filter((c) => c.language === targetLang);
     res.json({ cards: dueCards, total: dueCards.length });
   });
 
   app.post('/api/spaced-repetition/review', (req: Request, res: Response) => {
-    const { cardId, rating } = req.body; // rating: 1 (blackout) to 5 (perfect recall)
+    const { cardId, rating } = req.body;
     const card = srCardsDatabase.find((c) => c.id === cardId);
 
     if (!card) {
       return res.status(404).json({ error: 'Cartão não encontrado.' });
     }
 
-    // SuperMemo SM-2 Algorithm implementation
     const q = Math.max(1, Math.min(5, rating || 3));
     let { repetitions, easeFactor, intervalDays } = card;
 
@@ -425,7 +400,6 @@ async function startServer() {
       intervalDays = 1;
     }
 
-    // Update Ease Factor
     easeFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
     if (easeFactor < 1.3) easeFactor = 1.3;
 
@@ -447,10 +421,6 @@ async function startServer() {
 
   // -------------------------------------------------------------
   // 6. High Thinking Mode Philological & Grammar AI
-  // FEATURE REQUIREMENT:
-  // "You MUST add thinking mode to the app where relevant to handle users' most complex queries.
-  //  You MUST use the gemini-3.1-pro-preview model and set thinkingLevel to ThinkingLevel.HIGH.
-  //  Do not set maxOutputTokens."
   // -------------------------------------------------------------
   app.post('/api/ai/philological-analysis', async (req: Request, res: Response) => {
     try {
@@ -482,15 +452,15 @@ async function startServer() {
         ru: 'Русский',
       };
 
-      const systemPrompt = `Você é o Filólogo e Linguista Chefe da plataforma Linvuu Kosmos.
+      const systemPrompt = `Você é o Filólogo e Linguista Chefe da plataforma Linvuu.
 Seu objetivo é fornecer uma análise filológica e morfossintática universitária, densa e cognitiva de nível C1 sobre a frase ou estrutura sob análise.
 Língua-alvo da frase: ${langNames[targetLanguage]}
 Língua materna do aluno (para todas as explicações e traduções): ${nativeNames[nativeLanguage]}
 
 Diretrizes obrigatórias:
-1. Explique minuciosamente o valor semântico de cada caso gramatical, concordância, alófonos e posições oracionais (ex: V2, Vorfeld, Satzklammer em alemão; casos e aspecto em russo; concord[...]
-2. Forneça a etimologia e evolução histórica quando relevante para compreender a raiz das palavras.
-3. Não use linguagem infantil ou condescendente; mantenha a dignidade e a densidade de um tratado acadêmico.
+1. Explique minuciosamente o valor semântico de cada caso gramatical, concordância, alófonos e posições oracionais.
+2. Forneça a etimologia e evolução histórica quando relevante.
+3. Não use linguagem infantil ou condescendente; mantenha a dignidade de um tratado acadêmico.
 4. Responda em português (ou no idioma materno do usuário: ${nativeNames[nativeLanguage]}) com a terminologia técnica padrão.`;
 
       const userPrompt = `Realize a análise filológica profunda e rigorosa da seguinte construção:
@@ -506,8 +476,6 @@ Estruture sua resposta nos seguintes tópicos:
 4. Nuances de Registro e Estilo C1 vs. Erros Frequentes de Não-Nativos
 5. Sentença Modelo Contrastiva para Fixação`;
 
-      // HIGH THINKING EXECUTION via gemini-3.1-pro-preview with thinkingLevel: HIGH
-      // CRITICAL: Do NOT set maxOutputTokens!
       const geminiResponse = await ai.models.generateContent({
         model: 'gemini-3.1-pro-preview',
         contents: userPrompt,
@@ -536,7 +504,6 @@ Estruture sua resposta nos seguintes tópicos:
       res.json(result);
     } catch (err: any) {
       console.error('Erro na análise de High Thinking:', err);
-      // Fallback with rich pedagogical analysis if API key is not ready or rate-limited
       res.status(200).json({
         sentence: req.body.sentence || '',
         targetLanguage: req.body.targetLanguage || 'de',
@@ -547,13 +514,13 @@ Estruture sua resposta nos seguintes tópicos:
 **Construção sob análise:** "${req.body.sentence}"
 
 1. **Topologia e Hierarquia Sintática:**
-A oração obedece rigorosamente às restrições do modelo topológico. O núcleo flexionado ancora-se na posição matriz, ordenando os constituintes oracionais segundo a hierarquia informativa[...]
+A oração obedece rigorosamente às restrições do modelo topológico. O núcleo flexionado ancora-se na posição matriz, ordenando os constituintes oracionais segundo a hierarquia informativa.
 
 2. **Regência Casual e Morfologia Flexional:**
-Os sintagmas nominais recebem marcação de caso morfológica estrita. A transitividade do verbo governa o caso sintático do paciente e do beneficiário, garantindo clareza semântica sem ambigu[...]
+Os sintagmas nominais recebem marcação de caso morfológica estrita. A transitividade do verbo governa o caso sintático do paciente e do beneficiário.
 
 3. **Nuances Estilísticas e Registro Culto:**
-No padrão C1, a evitação de construções analíticas coloquiais em favor da condensação nominal (Nominalstil) ou o uso criterioso de conectores hipotáticos eleva a densidade argumentativa [...]`,
+No padrão C1, a evitação de construções analíticas coloquiais em favor da condensação nominal (Nominalstil) eleva a densidade argumentativa.`,
         caseGovernmentAndEtymology: 'Regência casual profunda.',
         idiomaticAndStylisticNuance: 'Registro formal culto.',
         c1MasteryAdvice: 'Treine a inversão sistemática com advérbios no início de período.',
@@ -580,7 +547,7 @@ No padrão C1, a evitação de construções analíticas coloquiais em favor da 
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`✅ [Linvuu Kosmos Server] Porta ${PORT}`);
+    console.log(`✅ [Linvuu Server] Porta ${PORT}`);
     console.log(`📡 API Gemini rodando em: http://localhost:${PORT}/api/ai/philological-analysis`);
     console.log(`🌐 Acesse o site em: http://localhost:${PORT}`);
   });

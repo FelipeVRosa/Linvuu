@@ -162,9 +162,9 @@ async function startServer() {
   app.use(express.json());
 
   // Direct Project Archive Downloader for local VS Code integration
+  // (o pacote linvuu-kosmos.tar.gz foi removido do repositório; o código-fonte está no GitHub)
   app.get('/api/download-project', (_req: Request, res: Response) => {
-    const archivePath = path.resolve(__dirname, 'linvuu-kosmos.tar.gz');
-    res.download(archivePath, 'linvuu-kosmos.tar.gz');
+    res.status(410).json({ error: 'Pacote removido. Use o repositório no GitHub.' });
   });
 
   // -------------------------------------------------------------

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { NativeLanguage, TargetLanguage, UserProfile } from '../types';
 import { MASCOTS } from '../assets/mascots';
 import { LinvuuLogo } from './LinvuuLogo';
+import { LinvuuAvatar } from './LinvuuAvatar';
 import { getLocalized, UI_STRINGS } from '../utils/i18n';
 
 interface HeaderProps {
@@ -24,16 +25,17 @@ export const Header: React.FC<HeaderProps> = ({
   dueCardsCount,
 }) => {
   const currentMascot = MASCOTS[user.targetLanguage] || MASCOTS.de;
+  const [mascotBubble, setMascotBubble] = useState<string | null>(null);
 
-  const targetLangs: { id: TargetLanguage; label: string; icon: string }[] = [
-    { id: 'de', label: 'DE (Alemão)', icon: '🥨' },
-    { id: 'ru', label: 'RU (Russo)', icon: '🥟' },
-    { id: 'fr', label: 'FR (Francês)', icon: '🥐' },
-    { id: 'es', label: 'ES (Espanhol)', icon: '🥢' },
+  const targets: { id: TargetLanguage; label: string; symbol: string; mascotKey: string }[] = [
+    { id: 'de', label: 'DE', symbol: '🥨', mascotKey: 'de' },
+    { id: 'ru', label: 'RU', symbol: '🥟', mascotKey: 'ru' },
+    { id: 'fr', label: 'FR', symbol: '🥐', mascotKey: 'fr' },
+    { id: 'es', label: 'ES', symbol: '🍅', mascotKey: 'es' },
   ];
 
   const nativeLangs: { id: NativeLanguage; label: string; flag: string }[] = [
-    { id: 'pt', label: 'Português', flag: '🇵🇹' },
+    { id: 'pt', label: 'Português', flag: '🇧🇷' },
     { id: 'en', label: 'English', flag: '🇬🇧' },
     { id: 'es', label: 'Español', flag: '🇪🇸' },
     { id: 'de', label: 'Deutsch', flag: '🇩🇪' },
@@ -41,128 +43,151 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'ru', label: 'Русский', flag: '🇷🇺' },
   ];
 
+  const handleMascotClick = () => {
+    setMascotBubble(currentMascot.voiceQuote);
+    setTimeout(() => setMascotBubble(null), 5000);
+  };
+
   return (
-    <header className="kosmos-header">
-      <div className="kosmos-header-inner">
-        {/* Official Brand Logo & Language Identity */}
-        <div className="brand-section" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <LinvuuLogo height={32} color="var(--ouro)" />
+    <header className="sticky top-0 z-40 w-full bg-[#0D1017]/95 backdrop-blur-md border-b border-white/[0.08] px-4 sm:px-8 py-3 transition-colors">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        {/* ======================================================== */}
+        {/* ZONE 1: BRAND LOGO + INTERACTIVE TALKING LINVUU MASCOT   */}
+        {/* ======================================================== */}
+        <div className="flex items-center gap-4 shrink-0">
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="flex items-center gap-2.5 group cursor-pointer focus:outline-none"
+            title="Linvuu - Página Inicial"
+          >
+            <LinvuuLogo height={32} color="#F59E0B" />
+          </a>
 
-          <div style={{ height: '24px', width: '1px', background: 'var(--borda)', margin: '0 0.25rem' }} />
+          <div className="h-6 w-px bg-white/10 hidden sm:block" />
 
-          <div
-            className="brand-mascot-avatar"
-            title={`${currentMascot.name}: ${currentMascot.description}`}
-            dangerouslySetInnerHTML={{ __html: currentMascot.svgIcon }}
-          />
-
-          <div className="brand-text">
-            <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--ouro)' }}>
-              Kosmos C1
-            </span>
-            <p>
-              {currentMascot.name} • {getLocalized(UI_STRINGS.tagline, user.nativeLanguage)}
-            </p>
+          {/* Interactive Mascot with dynamic emotion and quotes */}
+          <div className="relative flex items-center gap-2">
+            <LinvuuAvatar
+              emotion="happy"
+              size={40}
+              color={currentMascot.color}
+              fillColor="#151A24"
+              speechBubble={mascotBubble || undefined}
+              onClick={handleMascotClick}
+              showBadge={user.targetLanguage.toUpperCase()}
+            />
+            <div className="hidden lg:block text-xs">
+              <span className="font-bold text-white block leading-none">{currentMascot.name}</span>
+              <span className="text-[11px] text-slate-400 block mt-0.5 leading-none">
+                {currentMascot.greeting}
+              </span>
+            </div>
           </div>
         </div>
 
-        {/* Central Controls */}
-        <div className="header-actions">
-          {/* Target Language Switcher with Mascots */}
-          <div className="lang-selector-group" title="Selecionar idioma de estudo">
-            <span className="lang-label">Alvo:</span>
-            {targetLangs.map((t) => (
-              <button
-                key={t.id}
-                className={`lang-btn ${user.targetLanguage === t.id ? 'active' : ''}`}
-                onClick={() => onUpdateTargetLang(t.id)}
-              >
-                <span>{t.icon}</span>
-                <span>{t.id.toUpperCase()}</span>
-              </button>
-            ))}
+        {/* ======================================================== */}
+        {/* ZONE 2: APRENDENDO SELECTOR (Target Languages & Mascots)  */}
+        {/* ======================================================== */}
+        <div className="flex items-center gap-2">
+          <div className="flex items-center p-1 rounded-2xl bg-white/[0.04] border border-white/[0.08] text-xs">
+            <span className="px-2.5 py-1 text-xs font-semibold text-slate-400 select-none">
+              Aprendendo:
+            </span>
+
+            {targets.map((t) => {
+              const isSelected = user.targetLanguage === t.id;
+              const mascot = MASCOTS[t.mascotKey];
+              return (
+                <button
+                  key={t.id}
+                  onClick={() => {
+                    onUpdateTargetLang(t.id);
+                    setMascotBubble(mascot.greeting);
+                    setTimeout(() => setMascotBubble(null), 4000);
+                  }}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all text-xs cursor-pointer ${
+                    isSelected
+                      ? 'bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20 scale-[1.02]'
+                      : 'text-slate-300 hover:text-white hover:bg-white/[0.06]'
+                  }`}
+                  title={`${mascot.name} (${mascot.language})`}
+                >
+                  <span className="text-sm leading-none">{t.symbol}</span>
+                  <span className="tracking-wide">{t.label}</span>
+                </button>
+              );
+            })}
           </div>
 
-          {/* Native Language Adapter (Dynamic i18n Rule 3) */}
-          <div className="lang-selector-group" title={getLocalized(UI_STRINGS.nativeLanguageLabel, user.nativeLanguage)}>
-            <span className="lang-label">Língua Materna:</span>
+          {/* Native Language Selector */}
+          <div className="hidden md:flex items-center">
             <select
               value={user.nativeLanguage}
               onChange={(e) => onUpdateNativeLang(e.target.value as NativeLanguage)}
-              style={{
-                background: 'var(--profundo-elevated)',
-                color: 'var(--texto)',
-                border: '1px solid var(--borda)',
-                borderRadius: '14px',
-                padding: '0.25rem 0.5rem',
-                fontSize: '0.78rem',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-                outline: 'none',
-              }}
+              className="bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 text-xs rounded-xl border border-white/[0.08] px-2.5 py-2 font-medium cursor-pointer outline-none transition-colors"
+              title="Sua Língua Materna para explicações"
             >
               {nativeLangs.map((nl) => (
-                <option key={nl.id} value={nl.id}>
+                <option key={nl.id} value={nl.id} className="bg-[#11141E] text-white">
                   {nl.flag} {nl.label}
                 </option>
               ))}
             </select>
           </div>
+        </div>
 
-          {/* Spaced Repetition Launcher */}
+        {/* ======================================================== */}
+        {/* ZONE 3: ACTIONS, TUTOR, STREAK & SUBSCRIPTION STATUS     */}
+        {/* ======================================================== */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Spaced Repetition Flashcards */}
           <button
-            className="stat-pill"
             onClick={onOpenSpacedRepetition}
-            title={getLocalized(UI_STRINGS.spacedRepetitionTitle, user.nativeLanguage)}
-            style={{ cursor: 'pointer' }}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] text-xs font-semibold text-slate-200 transition-colors"
+            title="Praticar vocabulário com Repetição Espaçada"
           >
             <span>🧠</span>
-            <span>SM-2 ({dueCardsCount})</span>
+            <span>Revisão ({dueCardsCount})</span>
           </button>
 
-          {/* High Thinking Philologist Button */}
+          {/* Personal Tutor Linvuu */}
           <button
-            className="stat-pill"
             onClick={onOpenPhilologist}
-            title={getLocalized(UI_STRINGS.thinkingPhilologistTitle, user.nativeLanguage)}
-            style={{
-              cursor: 'pointer',
-              background: 'linear-gradient(135deg, rgba(37, 9, 82, 0.9) 0%, rgba(29, 6, 64, 0.9) 100%)',
-              borderColor: 'var(--ouro-border)',
-            }}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-xs font-bold text-amber-300 transition-all active:scale-95 shadow-sm"
+            title="Abrir o Tutor Pessoal Linvuu para tirar dúvidas profundas"
           >
             <span>✨</span>
-            <span style={{ color: 'var(--ouro)', fontWeight: 700 }}>Filólogo C1</span>
+            <span className="hidden xs:inline">Tutor Linvuu</span>
+            <span className="xs:hidden">Tutor</span>
           </button>
 
-          {/* Streak & XP */}
-          <div className="stat-pill streak" title="Dias seguidos de dedicação ao idioma">
+          {/* Streak Days */}
+          <div
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-orange-500/10 border border-orange-500/25 text-orange-400 text-xs font-bold"
+            title={`${user.streakDays} dias consecutivos de dedicação`}
+          >
             <span>🔥</span>
             <span>{user.streakDays}d</span>
           </div>
 
-          <div className="stat-pill" title="Pontos de Experiência (XP)">
-            <span>⚡</span>
-            <span>{user.xp} XP</span>
-          </div>
-
-          {/* Subscription State & Paywall Toggle */}
+          {/* Subscription Status Button */}
           <button
-            className={`sub-status-btn ${user.hasSubscription ? 'subscribed' : 'free'}`}
             onClick={onOpenSubscriptionModal}
-            title="Gerir subscrição Linvuu Kosmos (Stripe)"
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold text-xs transition-all cursor-pointer shadow-sm ${
+              user.hasSubscription
+                ? 'bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25'
+                : 'bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 hover:from-amber-400 hover:to-amber-500 shadow-amber-500/20 active:scale-95'
+            }`}
+            title="Gerenciar assinatura Linvuu"
           >
-            {user.hasSubscription ? (
-              <>
-                <span>👑</span>
-                <span>Kosmos Membro</span>
-              </>
-            ) : (
-              <>
-                <span>🔒</span>
-                <span>Freemium (Desbloquear)</span>
-              </>
-            )}
+            <span>{user.hasSubscription ? '👑' : '⭐'}</span>
+            <span className="hidden sm:inline">
+              {user.hasSubscription ? 'Membro Linvuu' : 'Desbloquear 100 Dias'}
+            </span>
           </button>
         </div>
       </div>

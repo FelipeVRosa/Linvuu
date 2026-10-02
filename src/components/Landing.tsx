@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { Navigation } from './Navigation';
 import { Hero } from './Hero';
 import { LanguagePicker } from './LanguagePicker';
@@ -8,7 +8,11 @@ import { ExerciseLab } from './ExerciseLab';
 import { Family } from './Family';
 import { Footer } from './Footer';
 
-export default function Landing() {
+interface LandingProps {
+  onStartApp?: () => void;
+}
+
+export default function Landing({ onStartApp }: LandingProps) {
   const [selectedLang, setSelectedLang] = useState('en');
   const [selectedProf, setSelectedProf] = useState('tec');
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
@@ -31,8 +35,8 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="bg-[#f9f8f6] text-[#374151]">
-      <Navigation />
+    <div className="bg-[#f9f8f6] text-[#374151] min-h-screen">
+      <Navigation onStart={onStartApp} />
       <Hero />
 
       {/* PASSO 01 */}
@@ -126,6 +130,26 @@ export default function Landing() {
         </div>
         <Family />
       </motion.section>
+
+      {/* CTA para entrar na plataforma completa */}
+      {onStartApp && (
+        <section className="max-w-[1080px] mx-auto px-7 py-12 text-center">
+          <div className="bg-[#edebe3] border border-[#e1ddd1] rounded-2xl p-8 sm:p-12 shadow-[0_1px_3px_rgba(0,0,0,.08)]">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#00262b] mb-3">
+              Pronto para entrar na trilha completa?
+            </h3>
+            <p className="font-serif italic text-base text-[#6b7280] max-w-lg mx-auto mb-7">
+              Acesse sua área de estudos, revisões espaçadas e lições interativas diárias.
+            </p>
+            <button
+              onClick={onStartApp}
+              className="inline-flex items-center gap-2 font-medium text-sm tracking-[0.06em] uppercase px-8 h-[48px] rounded-[94px] bg-[#d64000] text-white border border-[#d64000] shadow-[0_1px_3px_rgba(0,0,0,.08)] hover:bg-[#b33600] transition-colors cursor-pointer"
+            >
+              Abrir Sala de Aula Linvuu →
+            </button>
+          </div>
+        </section>
+      )}
 
       <Footer />
     </div>

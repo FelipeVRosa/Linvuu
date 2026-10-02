@@ -181,7 +181,7 @@ export const LESSONS_ES: Record<number, DailyLesson> = {
       embedUrl: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ',
       title: { pt: 'Masterclass C1: A Lógica Implacável de Por e Para com Nativo', en: 'Masterclass: Implacable Logic of Por and Para', es: 'Masterclass: La Lógica de Por y Para' },
       nativeSpeaker: 'Prof. Dr. Santiago Valenzuela',
-      description: { pt: 'Conteúdo reservado a subscritores Linvuu Kosmos.', en: 'Reserved for Kosmos Subscribers.', es: 'Contenido reservado para suscriptores Kosmos.' },
+      description: { pt: 'Conteúdo reservado a subscritores Linvuu.', en: 'Reserved for Linvuu Subscribers.', es: 'Contenido reservado para suscriptores Linvuu.' },
       durationMinutes: 24
     },
     phonetics: {

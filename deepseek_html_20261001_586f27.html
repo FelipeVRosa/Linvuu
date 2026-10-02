@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f9f8f6">
+<title>Linvuu · idiomas e STEM em trilhas de 30 dias</title>
+<meta name="description" content="Trilhas de 30 dias para dominar um idioma ou uma ciência. Método editorial, rigor acadêmico, sem gamificação vazia.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 24'%3E%3Crect x='0' y='0' width='11' height='6' fill='%23374151'/%3E%3Crect x='0' y='9' width='22' height='6' fill='%23374151'/%3E%3Crect x='0' y='18' width='7' height='6' fill='%23374151'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   LINVUU — Sistema Editorial
+   Tema: light editorial baseado no design system do edX.
+   Paleta: pergaminho + tinta teal + acento laranja queimado.
+   Fonte: Inter única (400/500/700/900).
+   Forma: botões pill (94px), cards quadrados (0px).
+   ============================================================ */
+:root{
+  --page:           #f9f8f6;
+  --ink:            #00262b;
+  --ink-deep:       #132a26;
+  --surface:        #edebe3;
+  --surface-alt:    #f3f1ed;
+  --surface-raised: #ffffff;
+
+  --border:         #e1ddd1;
+  --border-strong:  #cccccc;
+
+  --accent:         #d64000;
+  --accent-dark:    #b33600;
+  --accent-soft:    #ffeac9;
+  --on-accent:      #ffffff;
+
+  --link:           #00698f;
+
+  --text:           #374151;
+  --text-strong:    #333333;
+  --text-muted:     #6b7280;
+  --text-faint:     #a5b5b1;
+
+  --danger:         #d64000;
+  --danger-tint:    rgba(214,64,0,.10);
+  --success:        #00698f;
+
+  --r-none: 0px;
+  --r-xs:   2px;
+  --r-sm:   4px;
+  --r-md:   12px;
+  --r-lg:   24px;
+  --r-pill: 94px;
+  --r-full: 9999px;
+
+  --grotesk: 'Inter', system-ui, sans-serif;
+  --sans:    'Inter', system-ui, sans-serif;
+  --serif:   'Inter', system-ui, sans-serif;
+  --mono:    'Roboto Mono', ui-monospace, monospace;
+
+  --elevation-sm: 0 1px 2px 0 rgba(0,0,0,.05);
+  --elevation-md: 0 1px 3px 0 rgba(0,0,0,.10), 0 1px 2px -1px rgba(0,0,0,.10);
+  --elevation-lg: 0 0 18px 0 rgba(0,0,0,.20);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--page);transition:background-color 1.5s cubic-bezier(.4,0,.2,1)}
+body{
+  font-family:var(--sans);
+  background:var(--page);
+  color:var(--text);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--accent);color:var(--on-accent)}
+:focus-visible{outline:none;box-shadow:0 0 0 2px var(--page),0 0 0 4px var(--accent)}
+.mono{font-family:var(--mono)}
+
+/* ============================================================
+   MOOD MODES — Tons claros circadianos
+   ============================================================ */
+html.mood-dawn{
+  --page:#faf4ec; --surface:#f3ece2;
+  background: radial-gradient(ellipse at top,
+    rgba(214,64,0,.04) 0%, transparent 60%) fixed, var(--page);
+}
+html.mood-day{
+  --page:#f9f8f6; --surface:#edebe3;
+  background: radial-gradient(ellipse at top,
+    rgba(0,38,43,.03) 0%, transparent 60%) fixed, var(--page);
+}
+html.mood-dusk{
+  --page:#f3ede4; --surface:#e8e0d2;
+  background: radial-gradient(ellipse at top,
+    rgba(200,133,26,.05) 0%, transparent 60%) fixed, var(--page);
+}
+html.mood-night{
+  --page:#ede8df; --surface:#e2dcd0;
+  background: radial-gradient(ellipse at top,
+    rgba(0,38,43,.06) 0%, transparent 60%) fixed, var(--page);
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.home{max-width:1120px;margin:0 auto;padding:0 32px}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav-bar{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(16px);
+  background:rgba(249,248,246,.92);
+  border-bottom:1px solid var(--border);
+}
+html.mood-night .nav-bar{background:rgba(237,232,223,.92)}
+.nav-inner{
+  max-width:1120px;margin:0 auto;padding:16px 32px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.logo{display:inline-flex;align-items:center;gap:11px}
+.logo-mark{width:26px;height:auto;flex-shrink:0;border-radius:var(--r-none)}
+.logo-text{
+  font-family:var(--grotesk);
+  font-weight:900;
+  font-size:22px;
+  letter-spacing:-.04em;
+  color:var(--text);
+}
+.nav-links{display:flex;gap:2px}
+.nav-links a{
+  padding:9px 15px;font-family:var(--grotesk);
+  font-size:14px;font-weight:500;line-height:1.4;
+  letter-spacing:.04em;text-transform:uppercase;
+  color:var(--text-faint);border-radius:var(--r-xs);
+  transition:color .18s,background .18s;
+}
+.nav-links a:hover{color:var(--text)}
+.nav-links a.on{color:var(--accent);background:rgba(214,64,0,.08)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent);color:var(--on-accent);
+  font-family:var(--grotesk);
+  font-weight:500;font-size:16px;line-height:1;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:10px 22px;border-radius:var(--r-pill);
+  border:1px solid var(--accent);
+  box-shadow:var(--elevation-md);
+  transition:background .18s,border-color .18s;
+}
+.nav-cta:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;padding:110px 0 90px;overflow:hidden}
+.hero::before{
+  content:'';position:absolute;top:-240px;left:50%;
+  transform:translateX(-50%);
+  width:1000px;height:640px;
+  background:radial-gradient(ellipse at center,rgba(0,38,43,.06) 0%,transparent 70%);
+  pointer-events:none;z-index:0;
+  transition:background 1.5s;
+}
+.hero-kicker{
+  position:relative;z-index:1;
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:34px;
+}
+.hero-kicker::before{
+  content:'';width:28px;height:1px;background:var(--accent);
+}
+.hero-h1{
+  position:relative;z-index:1;
+  font-family:var(--grotesk);
+  font-weight:900;
+  font-size:clamp(38px,6.4vw,72px);
+  letter-spacing:-0.028em;
+  line-height:1.05;
+  max-width:900px;
+  margin:0 0 26px;
+  color:var(--text);
+}
+.hero-h1 em{
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:400;
+  color:var(--accent);
+  letter-spacing:-.01em;
+}
+.hero-sub{
+  position:relative;z-index:1;
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:400;
+  font-size:clamp(17px,2.2vw,19px);
+  line-height:1.55;
+  color:var(--text-muted);
+  max-width:640px;
+  margin:0 0 18px;
+}
+.hero-desc{
+  position:relative;z-index:1;
+  font-family:var(--sans);
+  font-size:15px;
+  font-weight:400;
+  color:var(--text-muted);
+  line-height:1.6;
+  max-width:620px;
+  margin:0 0 40px;
+}
+.hero-cta{
+  position:relative;z-index:1;
+  display:flex;gap:12px;flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--grotesk);
+  font-weight:500;font-size:16px;
+  letter-spacing:0.02em;text-transform:uppercase;
+  padding:0 24px;line-height:48px;
+  border-radius:var(--r-pill);
+  cursor:pointer;
+  transition:background .18s,border-color .18s,color .18s;
+  border:1px solid transparent;
+}
+.btn-primary{
+  background:var(--accent);color:var(--on-accent);
+  border-color:var(--accent);
+  box-shadow:var(--elevation-md);
+}
+.btn-primary:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+.btn-ghost{
+  background:transparent;color:var(--text-muted);
+  border-color:var(--border-strong);
+  box-shadow:var(--elevation-sm);
+}
+.btn-ghost:hover{color:var(--text);border-color:var(--text-faint)}
+
+.hero-meta{
+  position:relative;z-index:1;
+  display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:400;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--text-faint);
+  padding-bottom:18px;margin-bottom:44px;
+  border-bottom:1px solid var(--border);
+}
+.hero-meta-right{text-align:right}
+
+/* ============================================================
+   SECTION
+   ============================================================ */
+.section{padding:80px 0}
+.section-head{margin-bottom:44px}
+.section-kicker{
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:16px;
+}
+.section-kicker::before{
+  content:'';width:20px;height:1px;background:var(--accent);
+}
+.section-h2{
+  font-family:var(--grotesk);
+  font-size:clamp(24px,3vw,32px);
+  font-weight:700;line-height:1.2;
+  letter-spacing:-0.018em;
+  color:var(--text);
+  margin-bottom:12px;
+}
+.section-h2 em{
+  font-family:var(--serif);font-style:italic;
+  font-weight:400;color:var(--accent);
+}
+.section-sub{
+  font-family:var(--sans);
+  font-size:15px;font-weight:400;
+  line-height:1.55;color:var(--text-muted);
+  max-width:620px;
+}
+
+/* ============================================================
+   TRILHAS
+   ============================================================ */
+.track-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:0;
+  border-top:1px solid var(--border);
+}
+.track{
+  position:relative;
+  background:transparent;
+  border:0;
+  border-bottom:1px solid var(--border);
+  border-right:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  padding:36px 32px 34px;
+  text-align:left;
+  cursor:pointer;
+  display:flex;flex-direction:column;gap:18px;
+  min-height:250px;
+  transition:background .2s;
+}
+.track:hover{background:var(--surface)}
+.track:last-child{border-right:1px solid var(--border)}
+.track.soon{cursor:default;opacity:.55}
+.track.soon:hover{background:transparent}
+
+.track-num{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--accent);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.track-flag{
+  display:inline-flex;line-height:1;
+  border-radius:var(--r-none);overflow:hidden;
+  border:1px solid var(--border-strong);
+}
+.track-flag svg{display:block}
+.track.soon .track-flag{filter:grayscale(.7);opacity:.6}
+
+.track-name{
+  font-family:var(--grotesk);
+  font-size:26px;font-weight:700;
+  letter-spacing:-.018em;
+  color:var(--text);
+  line-height:1.1;
+}
+.track-name em{
+  font-family:var(--serif);font-style:italic;
+  font-weight:400;color:var(--accent);
+}
+.track-desc{
+  font-family:var(--sans);
+  font-size:14px;font-weight:400;
+  line-height:1.5;
+  color:var(--text-muted);
+  flex:1;
+}
+.track-meta{
+  display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+}
+.track-days{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:400;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--text-faint);
+}
+.track-badge{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);
+}
+.track.soon .track-badge{color:var(--text-faint)}
+
+/* ============================================================
+   STEM STRIP
+   ============================================================ */
+.stem-strip{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--border);
+}
+.stem{
+  padding:32px 30px;
+  display:flex;align-items:flex-start;gap:18px;
+  border-bottom:1px solid var(--border);
+  border-right:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  opacity:.75;
+  transition:opacity .2s,background .2s;
+}
+.stem:hover{opacity:1;background:var(--surface)}
+.stem:last-child{border-right:0}
+.stem-ic{
+  width:48px;height:48px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--accent);
+  border:1px solid var(--border-strong);
+  border-radius:var(--r-none);
+}
+.stem-body b{
+  display:block;
+  font-family:var(--grotesk);
+  font-size:17px;font-weight:700;
+  color:var(--text);
+  margin-bottom:6px;
+  letter-spacing:-.01em;
+}
+.stem-body span{
+  font-family:var(--sans);
+  font-size:14px;font-weight:400;
+  color:var(--text-muted);
+  line-height:1.5;
+}
+@media(max-width:640px){.stem-strip{grid-template-columns:1fr}.stem{border-right:0}}
+
+/* ============================================================
+   SOBRE — três passos + valores
+   ============================================================ */
+.method-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:0;
+  border-top:1px solid var(--border);
+}
+.method{
+  padding:32px 28px 30px;
+  border-bottom:1px solid var(--border);
+  border-right:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  display:flex;flex-direction:column;gap:14px;
+  background:transparent;
+  transition:background .2s;
+}
+.method:hover{background:var(--surface)}
+.method:last-child{border-right:1px solid var(--border)}
+.method-num{
+  font-family:var(--grotesk);
+  font-size:28px;font-weight:700;
+  letter-spacing:-.02em;
+  color:var(--accent);
+  line-height:1;
+}
+.method-h3{
+  font-family:var(--grotesk);
+  font-size:22px;font-weight:700;line-height:1.3;
+  color:var(--text);
+  letter-spacing:-.01em;
+}
+.method p{
+  font-family:var(--sans);
+  font-size:14px;font-weight:400;line-height:1.55;
+  color:var(--text-muted);
+  flex:1;
+}
+.method-ic{color:var(--accent);margin-top:auto;opacity:.7}
+
+/* ============================================================
+   O LIN — mascote/parceiro
+   ============================================================ */
+.lin-showcase{display:flex;flex-direction:column;gap:20px}
+.lin-stage{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  padding:64px 32px;
+  display:flex;align-items:center;justify-content:center;
+  min-height:440px;
+  position:relative;overflow:hidden;
+}
+.lin-stage::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 40%,rgba(214,64,0,.05) 0%,transparent 60%);
+  pointer-events:none;
+}
+.lin-scene{
+  position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;
+  gap:18px;text-align:center;max-width:480px;
+}
+.lin-title{
+  font-family:var(--grotesk);
+  font-size:24px;font-weight:700;line-height:1.3;
+  letter-spacing:-.015em;
+  margin-top:12px;color:var(--text);
+}
+.lin-desc{
+  font-family:var(--serif);
+  font-style: italic;
+  font-weight:400;
+  font-size:16px;line-height:1.6;
+  color:var(--text-muted);
+  margin-bottom:8px;
+}
+.lin-picker{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.lin-picker-label{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;
+  color:var(--text-faint);
+}
+.lin-picker-row{display:flex;gap:6px;flex-wrap:wrap}
+.lin-chip{
+  background:transparent;
+  border:1px solid var(--border-strong);
+  color:var(--text-muted);
+  font-family:var(--grotesk);
+  font-size:14px;font-weight:500;line-height:1;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:8px 18px;border-radius:var(--r-pill);
+  cursor:pointer;
+  transition:border-color .18s,color .18s,background .18s;
+}
+.lin-chip:hover{border-color:var(--text-faint);color:var(--text)}
+.lin-chip.on{
+  border-color:var(--accent);color:var(--accent);
+  background:rgba(214,64,0,.06);
+}
+
+/* ============================================================
+   LIN — SVG e animações
+   ============================================================ */
+.lin{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.lin-svg{display:block}
+
+@keyframes linIdle{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-3px)}
+}
+.lin-svg .lin-body,
+.lin-svg .lin-face{
+  animation:linIdle 3.6s ease-in-out infinite;
+  transform-origin:center bottom;
+}
+.lin-svg .lin-face{animation-delay:.12s}
+
+@keyframes linThinking{
+  0%,100%{transform:rotate(0deg)}
+  50%{transform:rotate(-4deg)}
+}
+.lin-svg[data-lin-state="thinking"] .lin-body,
+.lin-svg[data-lin-state="thinking"] .lin-face{
+  animation:linThinking 4s ease-in-out infinite;
+  transform-origin:center bottom;
+}
+
+@keyframes linJump{
+  0%,100%{transform:translateY(0)}
+  30%{transform:translateY(-12px)}
+  50%{transform:translateY(0)}
+  65%{transform:translateY(-5px)}
+  80%{transform:translateY(0)}
+}
+.lin-svg[data-lin-state="happy"] .lin-body,
+.lin-svg[data-lin-state="happy"] .lin-face,
+.lin-svg[data-lin-state="celebrate"] .lin-body,
+.lin-svg[data-lin-state="celebrate"] .lin-face{
+  animation:linJump 2.4s ease-in-out infinite;
+  transform-origin:center bottom;
+}
+
+@keyframes linSway{
+  0%,100%{transform:rotate(0deg)}
+  50%{transform:rotate(2deg)}
+}
+.lin-svg[data-lin-state="sad"] .lin-body{
+  animation:linSway 5s ease-in-out infinite;
+  transform-origin:center bottom;
+}
+.lin-svg[data-lin-state="sad"] .lin-body{filter:saturate(.55)}
+
+@keyframes linSparkle{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(.7)}
+}
+.lin-svg .lin-sparkle{animation:linSparkle 1.6s ease-in-out infinite;transform-origin:center}
+
+/* ============================================================
+   DESIGN SHOWCASE
+   ============================================================ */
+.showcase{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  padding:34px;
+  margin-bottom:20px;
+}
+.showcase-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+  padding-bottom:18px;margin-bottom:26px;
+  border-bottom:1px solid var(--border);
+}
+.showcase-tag{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--accent);
+}
+.showcase-h{
+  font-family:var(--grotesk);
+  font-size:22px;font-weight:700;line-height:1.3;
+  color:var(--text);letter-spacing:-.01em;
+  margin-top:6px;
+}
+.showcase-sub{
+  font-family:var(--sans);
+  font-size:12px;font-weight:400;line-height:1.4;
+  color:var(--text-muted);
+  margin-top:4px;
+}
+.swatch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;border-top:1px solid var(--border)}
+.swatch{
+  padding:14px 16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);
+  border-radius:var(--r-none);
+  display:flex;flex-direction:column;gap:10px;
+}
+.swatch:last-child{border-right:0}
+.swatch-color{height:48px;border:1px solid var(--border-strong);border-radius:var(--r-none)}
+.swatch-name{
+  font-family:var(--grotesk);font-size:12px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-muted);
+}
+.swatch-hex{
+  font-family:var(--mono);font-size:14px;font-weight:500;
+  color:var(--text);
+}
+.mood-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.mood-card{
+  background:transparent;border:1px solid var(--border);
+  padding:18px;border-radius:var(--r-none);
+  box-shadow:none;
+  display:flex;flex-direction:column;gap:8px;text-align:left;
+  cursor:pointer;transition:border-color .2s;
+}
+.mood-card:hover{border-color:var(--border-strong)}
+.mood-card-h{
+  font-family:var(--grotesk);font-size:12px;font-weight:500;
+  letter-spacing:0.08em;color:var(--text-faint);text-transform:uppercase;
+}
+.mood-card-t{
+  font-family:var(--serif);
+  font-style: italic;
+  font-size:16px;font-weight:400;line-height:1.5;
+  color:var(--text);
+}
+.mood-card-time{
+  font-family:var(--grotesk);font-size:12px;font-weight:400;
+  color:var(--text-muted);letter-spacing:.1em;
+}
+.avatar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.avatar-card{
+  background:transparent;border:1px solid var(--border);
+  border-radius:var(--r-none);
+  box-shadow:none;
+  padding:22px;display:flex;flex-direction:column;align-items:center;gap:14px;
+  transition:border-color .2s;
+}
+.avatar-card:hover{border-color:var(--border-strong)}
+.avatar-card-name{
+  font-family:var(--grotesk);font-size:12px;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--text-faint);text-align:center;
+}
+.avatar-card-progress{
+  font-family:var(--grotesk);font-size:12px;font-weight:400;
+  color:var(--text-muted);text-align:center;
+}
+
+/* ============================================================
+   AVATAR ENGINE (identidade visual do usuário)
+   ============================================================ */
+.avatar{
+  display:inline-flex;align-items:center;justify-content:center;
+  border-radius:var(--r-full);
+  background:var(--surface);
+  border:1px solid var(--border-strong);
+  overflow:hidden;flex-shrink:0;cursor:pointer;padding:0;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1.2),border-color .2s;
+  position:relative;
+}
+.avatar:hover{transform:translateY(-1px);border-color:var(--accent)}
+.avatar.av-lg{width:64px;height:64px}
+.avatar-svg{display:block}
+@keyframes avBreathe{0%,100%{opacity:.88;transform:scale(1)}50%{opacity:1;transform:scale(1.015)}}
+.avatar .avatar-svg{animation:avBreathe 3.6s ease-in-out infinite;transform-origin:center}
+@keyframes avBadgePop{0%{opacity:0;transform:scale(0) rotate(-30deg)}70%{opacity:1;transform:scale(1.12) rotate(6deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+.avatar-svg .av-badge{animation:avBadgePop .55s cubic-bezier(.2,.8,.3,1.4) both}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{
+  border-top:1px solid var(--border);
+  margin-top:80px;
+  padding:44px 0 60px;
+}
+.foot-inner{
+  max-width:1120px;margin:0 auto;padding:0 32px;
+  display:flex;align-items:flex-start;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+}
+.foot-copy{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:400;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--text-faint);
+  line-height:1.6;
+}
+.foot-copy strong{color:var(--text-muted);font-weight:500}
+.foot-links{display:flex;gap:26px}
+.foot-links a{
+  font-family:var(--grotesk);
+  font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;
+  color:var(--text-muted);
+  transition:color .2s;
+}
+.foot-links a:hover{color:var(--accent)}
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
+.scroll-reveal-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  .lin-svg .lin-body,.lin-svg .lin-face,.lin-svg .lin-sparkle,
+  .avatar .avatar-svg,.avatar-svg .av-badge{animation:none}
+  .scroll-reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV — Idiomas · STEM · Sobre
+     ============================================================ -->
+<header class="nav-bar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <svg class="logo-mark" viewBox="0 0 32 24" aria-hidden="true">
+        <rect x="0" y="0" width="11" height="6" fill="var(--text)"/>
+        <rect x="0" y="9" width="22" height="6" fill="var(--text)"/>
+        <rect x="0" y="18" width="7" height="6" fill="var(--text)"/>
+      </svg>
+      <span class="logo-text">Linvuu</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#idiomas">Idiomas</a>
+      <a href="#stem">STEM</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a href="app.html" class="nav-cta">Começar</a>
+  </div>
+</header>
+
+<main class="home">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span>Idiomas &amp; STEM</span>
+      <span class="hero-meta-right">desde 2026 · São Paulo</span>
+    </div>
+    <span class="hero-kicker">Trilhas de aprendizado</span>
+    <h1 class="hero-h1">
+      Uma trilha por vez.<br>
+      Trinta dias por trilha.<br>
+      Um idioma — ou uma ciência —<br>
+      <em>para a vida.</em>
+    </h1>
+    <p class="hero-sub">Cada dia é uma camada. Cada semana, um módulo. Cada trilha, do zero ao domínio real — sem promessa de fluência em uma semana.</p>
+    <p class="hero-desc">Russo, alemão, inglês, espanhol, português. Matemática, física. Cada matéria em sua própria trilha de trinta dias: vídeo-aula curta, imersão em texto nativo, prática com feedback imediato, revisão espaçada. Método editorial, sem gamificação vazia, sem atalho. O Lin caminha com você.</p>
+    <div class="hero-cta">
+      <a href="#idiomas" class="btn btn-primary">Ver trilhas</a>
+      <a href="#sobre" class="btn btn-ghost">Como funciona</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       IDIOMAS
+       ============================================================ -->
+  <section class="section" id="idiomas">
+    <div class="section-head">
+      <span class="section-kicker">Trilhas vivas</span>
+      <h2 class="section-h2">Cinco idiomas. <em>Cinco trilhas.</em></h2>
+      <p class="section-sub">Russo, alemão, inglês, espanhol e português. Cada idioma em sua própria jornada de trinta dias — do alfabeto à leitura autônoma.</p>
+    </div>
+    <div class="track-grid" id="activeTracks"></div>
+  </section>
+
+  <!-- ============================================================
+       IDIOMAS EM PREPARAÇÃO
+       ============================================================ -->
+  <section class="section" style="padding-top:0" id="idiomas-em-breve">
+    <div class="section-head">
+      <span class="section-kicker">Em preparação</span>
+      <h2 class="section-h2">Próximos idiomas</h2>
+      <p class="section-sub">A mesma estrutura de trilha — trinta dias, três camadas por dia. O que muda é o idioma e o texto de imersão.</p>
+    </div>
+    <div class="track-grid" id="soonTracks"></div>
+  </section>
+
+  <!-- ============================================================
+       STEM
+       ============================================================ -->
+  <section class="section" style="padding-top:0" id="stem">
+    <div class="section-head">
+      <span class="section-kicker">Ciências exatas · em preparação</span>
+      <h2 class="section-h2">STEM</h2>
+      <p class="section-sub">Matemática e física com o mesmo rigor das trilhas de idioma: definição precisa, exemplo resolvido passo a passo, exercício com feedback, revisão espaçada. Sem decoreba, sem atalho.</p>
+    </div>
+    <div class="stem-strip">
+      <div class="stem">
+        <span class="stem-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 16h2v4H6zM11 12h2v8h-2zM16 8h2v12h-2z"/><path d="M6 12l5-5 5 3 4-6"/></svg>
+        </span>
+        <div class="stem-body">
+          <b>Matemática</b>
+          <span>Álgebra · geometria · análise · estatística. Do número natural ao cálculo diferencial, com demonstrações completas.</span>
+        </div>
+      </div>
+      <div class="stem">
+        <span class="stem-ic">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+        </span>
+        <div class="stem-body">
+          <b>Física</b>
+          <span>Mecânica · termodinâmica · eletromagnetismo. Da cinemática ao campo, com problemas resolvidos e intuição geométrica.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE — método em três camadas
+       ============================================================ -->
+  <section class="section" style="padding-top:0" id="sobre">
+    <div class="section-head">
+      <span class="section-kicker">Sobre a Linvuu</span>
+      <h2 class="section-h2">Três camadas, <em>um dia</em></h2>
+      <p class="section-sub">Toda trilha, de idioma ou de STEM, obedece à mesma estrutura diária. Assistir, ler, fazer. Sem aula longa, sem teoria solta. A Linvuu foi desenhada para quem quer aprender com profundidade — não para quem busca atalho.</p>
+    </div>
+    <div class="method-grid">
+      <div class="method">
+        <span class="method-num">01</span>
+        <h3 class="method-h3">Vídeo-aula</h3>
+        <p>Aula curta, capitulada, com saltos navegáveis. Você assiste no seu ritmo e volta ao ponto que precisa.</p>
+        <span class="method-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M10 9l5 3-5 3z"/></svg></span>
+      </div>
+      <div class="method">
+        <span class="method-num">02</span>
+        <h3 class="method-h3">Imersão</h3>
+        <p>Texto curto no idioma (ou no formalismo), com áudio nativo e tradução sob demanda. Vocabulário destacado no contexto.</p>
+        <span class="method-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></span>
+      </div>
+      <div class="method">
+        <span class="method-num">03</span>
+        <h3 class="method-h3">Prática</h3>
+        <p>Exercício com feedback imediato, XP pelo acerto e revisão espaçada do que você errou — em duas rodadas depois.</p>
+        <span class="method-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       O LIN — seu parceiro de estudo
+       ============================================================ -->
+  <section class="section" style="padding-top:0" id="lin">
+    <div class="section-head">
+      <span class="section-kicker">Seu parceiro</span>
+      <h2 class="section-h2">Conheça o <em>Lin</em></h2>
+      <p class="section-sub">O Lin caminha com você durante toda a trilha. Conte a ele suas conquistas — ele celebra. Conte suas frustrações — ele ajuda a atravessar. Cinco estados emocionais, um para cada momento do aprendizado. Clique para ver cada um.</p>
+    </div>
+    <div class="lin-showcase">
+      <div class="lin-stage">
+        <div class="lin-scene">
+          <span class="lin" id="linSlot"></span>
+          <h3 class="lin-title" id="linTitle">Pronto quando você estiver</h3>
+          <p class="lin-desc" id="linDesc">Comece a primeira trilha e o Lin monta o baralho de revisão com você.</p>
+          <button class="btn btn-primary" id="linCta">Escolher uma trilha</button>
+        </div>
+      </div>
+      <div class="lin-picker">
+        <span class="lin-picker-label">Estados</span>
+        <div class="lin-picker-row" id="linPicker">
+          <button class="lin-chip on" data-state="idle">Idle</button>
+          <button class="lin-chip" data-state="thinking">Pensando</button>
+          <button class="lin-chip" data-state="happy">Feliz</button>
+          <button class="lin-chip" data-state="sad">Triste</button>
+          <button class="lin-chip" data-state="celebrate">Celebrando</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DESIGN SHOWCASE
+       ============================================================ -->
+  <section class="section" style="padding-top:0" id="design">
+    <div class="section-head">
+      <span class="section-kicker">Sistema visual</span>
+      <h2 class="section-h2">O que sustenta o <em>Linvuu</em></h2>
+      <p class="section-sub">Paleta editorial, avatar generativo, modo circadiano. O mesmo rigor que aplicamos ao conteúdo, aplicado à interface.</p>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-head">
+        <div>
+          <span class="showcase-tag">Paleta</span>
+          <h3 class="showcase-h">Tinta estrutura · acento atenção</h3>
+          <p class="showcase-sub">Três pesos: tinta no contraste, acento no detalhe, papel claro no silêncio.</p>
+        </div>
+      </div>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="swatch-color" style="background:#f9f8f6"></div><span class="swatch-name">Página</span><span class="swatch-hex">#f9f8f6</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#edebe3"></div><span class="swatch-name">Superfície</span><span class="swatch-hex">#edebe3</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#d64000"></div><span class="swatch-name">Acento</span><span class="swatch-hex">#d64000</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#b33600"></div><span class="swatch-name">Acento escuro</span><span class="swatch-hex">#b33600</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#374151"></div><span class="swatch-name">Texto</span><span class="swatch-hex">#374151</span></div>
+        <div class="swatch"><div class="swatch-color" style="background:#6b7280"></div><span class="swatch-name">Mudo</span><span class="swatch-hex">#6b7280</span></div>
+      </div>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-head">
+        <div>
+          <span class="showcase-tag">Modo circadiano</span>
+          <h3 class="showcase-h">A interface respira com o dia</h3>
+          <p class="showcase-sub">Quatro fases, transição suave de 1.5s. Clique para pré-visualizar.</p>
+        </div>
+      </div>
+      <div class="mood-grid" id="moodGrid">
+        <button class="mood-card" data-mood="dawn">
+          <span class="mood-card-h">Amanhecer</span>
+          <span class="mood-card-t">Âmbar suave</span>
+          <span class="mood-card-time">05:00 – 08:00</span>
+        </button>
+        <button class="mood-card" data-mood="day">
+          <span class="mood-card-h">Dia</span>
+          <span class="mood-card-t">Claro diurno</span>
+          <span class="mood-card-time">08:00 – 17:00</span>
+        </button>
+        <button class="mood-card" data-mood="dusk">
+          <span class="mood-card-h">Crepúsculo</span>
+          <span class="mood-card-t">Crepúsculo quente</span>
+          <span class="mood-card-time">17:00 – 20:00</span>
+        </button>
+        <button class="mood-card" data-mood="night">
+          <span class="mood-card-h">Noite</span>
+          <span class="mood-card-t">Noite serena</span>
+          <span class="mood-card-time">20:00 – 05:00</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-head">
+        <div>
+          <span class="showcase-tag">Avatar generativo</span>
+          <h3 class="showcase-h">Cada seed, uma identidade</h3>
+          <p class="showcase-sub">Três estilos, seis arquétipos, acessórios por conquista. Determinístico por seed.</p>
+        </div>
+      </div>
+      <div class="avatar-grid" id="avatarShowcase"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="foot">
+  <div class="foot-inner">
+    <span class="foot-copy">
+      <strong>LINVUU</strong> · APRENDIZADO EM TRILHAS<br>
+      SÃO PAULO · 2026
+    </span>
+    <nav class="foot-links">
+      <a href="#idiomas">Idiomas</a>
+      <a href="#stem">STEM</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#lin">Lin</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   MOOD ENGINE
+   ============================================================ */
+const MoodEngine = (() => {
+  function currentPhase(d = new Date()){
+    const h = d.getHours();
+    if(h >= 5 && h < 8)  return 'dawn';
+    if(h >= 8 && h < 17) return 'day';
+    if(h >= 17 && h < 20)return 'dusk';
+    return 'night';
+  }
+  function resolve(){
+    const o = sessionStorage.getItem('linvuu_mood_override');
+    if(o && o !== 'auto') return o;
+    return currentPhase();
+  }
+  function apply(){
+    const p = resolve();
+    const r = document.documentElement;
+    r.classList.remove('mood-dawn','mood-day','mood-dusk','mood-night');
+    r.classList.add('mood-' + p);
+    r.dataset.mood = p;
+    return p;
+  }
+  function start(){
+    apply();
+    setInterval(apply, 15 * 60 * 1000);
+    document.addEventListener('visibilitychange', () => { if(!document.hidden) apply(); });
+  }
+  return { apply, start, currentPhase };
+})();
+
+/* ============================================================
+   BANDEIRAS SVG
+   ============================================================ */
+const FLAGS = {
+  ru: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039a6"/><rect y="13.33" width="30" height="6.67" fill="#d52b1e"/></svg>`,
+  de: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#dd0000"/><rect y="13.33" width="30" height="6.67" fill="#ffce00"/></svg>`,
+  gb: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#C8102E" stroke-width="4"/><path d="M30 0 V40 M0 20 H60" stroke="#fff" stroke-width="13"/><path d="M30 0 V40 M0 20 H60" stroke="#C8102E" stroke-width="8"/></svg>`,
+  es: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/><rect x="7" y="8.5" width="3" height="3.5" fill="#aa151b" opacity=".85" rx=".4"/></svg>`,
+  br: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#009c3b"/><path d="M15 2 L28 10 L15 18 L2 10 Z" fill="#ffdf00"/><circle cx="15" cy="10" r="4.6" fill="#002776"/><path d="M11 8.4 Q15 9.4 19 8.4 Q18 10 17 10.4 Q15 12 13 10.4 Q12 10 11 8.4 Z" fill="#fff"/></svg>`,
+  default: (s=56) => `<svg width="${s}" height="${Math.round(s*0.667)}" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#edebe3"/><circle cx="15" cy="10" r="4" fill="#a5b5b1"/></svg>`
+};
+const flagSVG = (id, size=56) => (FLAGS[id] || FLAGS.default)(size);
+
+/* ============================================================
+   AVATAR ENGINE (identidade visual do usuário)
+   ============================================================ */
+const AVATAR_PALETTE = [
+  { name:'ink',     core:'#00262b' },
+  { name:'link',    core:'#00698f' },
+  { name:'accent',  core:'#d64000' },
+  { name:'amber',   core:'#ffeac9' },
+  { name:'stone',   core:'#6b7280' },
+  { name:'sand',    core:'#a5b5b1' }
+];
+const AVATAR_ARCHETYPES = [
+  { id:'wanderer', label:'Andarilho',  glyph:'M12 5 L20 19 L4 19 Z' },
+  { id:'scholar',  label:'Estudioso',  glyph:'M12 4 L20 12 L12 20 L4 12 Z' },
+  { id:'dreamer',  label:'Sonhador',   glyph:'M16 4 A8 8 0 1 0 16 20 A9 9 0 0 1 16 4 Z' },
+  { id:'builder',  label:'Construtor', glyph:'M5 5 H19 V19 H5 Z' },
+  { id:'seeker',   label:'Buscador',   glyph:'M12 3 V21 M3 12 H21' },
+  { id:'keeper',   label:'Guardião',   glyph:'M12 3 L20 6 V12 C20 17 16 20 12 21 C8 20 4 17 4 12 V6 Z' }
+];
+const AVATAR_ACCESSORIES = [
+  { id:'laurel',  label:'Curso concluído', color:'#d64000', test:s => Object.keys(s.completed||{}).length >= 30, glyph:'M12 3 L14.2 9.8 L21 12 L14.2 14.2 L12 21 L9.8 14.2 L3 12 L9.8 9.8 Z' },
+  { id:'tome',    label:'20 dias', color:'#b33600', test:s => Object.keys(s.completed||{}).length >= 20, glyph:'M4 5 H11 V19 H4 Z M13 5 H20 V19 H13 Z' },
+  { id:'compass', label:'10 dias', color:'#ffeac9', test:s => Object.keys(s.completed||{}).length >= 10, glyph:'M12 3 A9 9 0 1 0 12 21 A9 9 0 1 0 12 3 M9 15 L15 9 L13 13 L9 15 Z' },
+  { id:'flame',   label:'7 dias de streak', color:'#d64000', test:s => (s.streak||0) >= 7, glyph:'M8 14 A4 4 0 0 0 12 10 C12 8 11 6 10 4 C14 6 18 10 18 15 A6 6 0 1 1 6 15 C6 14 6.5 12 8 11 Z' },
+  { id:'spark',   label:'500 XP', color:'#d64000', test:s => (s.xp||0) >= 500, glyph:'M12 3 L13.5 10.5 L21 12 L13.5 13.5 L12 21 L10.5 13.5 L3 12 L10.5 10.5 Z' }
+];
+
+function hashSeed(str){
+  let h = 5381;
+  for(let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+  return Math.abs(h) || 1;
+}
+const pickPalette = h => AVATAR_PALETTE[h % AVATAR_PALETTE.length];
+const avatarArchetype = seed => AVATAR_ARCHETYPES[hashSeed(seed||'anon') % AVATAR_ARCHETYPES.length];
+function avatarAccessory(store){
+  if(!store) return null;
+  for(const acc of AVATAR_ACCESSORIES){ if(acc.test(store)) return acc; }
+  return null;
+}
+const avatarProgress = store => {
+  if(!store) return 0;
+  return Math.max(0, Math.min(1, Object.keys(store.completed||{}).length / 30));
+};
+
+function avatarOrb(seed){
+  const h = hashSeed(seed), pal = pickPalette(h);
+  const n = 56, golden = Math.PI * (3 - Math.sqrt(5));
+  const rot = (h % 360) * Math.PI / 180;
+  const cx = 20, cy = 20, scale = 16.5;
+  let dots = '';
+  for(let i = 0; i < n; i++){
+    const y = 1 - (i / (n - 1)) * 2;
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = golden * i;
+    const x = Math.cos(th) * r, z = Math.sin(th) * r;
+    const xr = x * Math.cos(rot) + z * Math.sin(rot);
+    const zr = -x * Math.sin(rot) + z * Math.cos(rot);
+    const px = cx + xr * scale, py = cy + y * scale;
+    const depth = (zr + 1) / 2;
+    const rad = (0.5 + depth * 1.6).toFixed(2);
+    const op = (0.1 + depth * 0.9).toFixed(2);
+    const fill = depth > 0.65 ? pal.core : 'rgba(55,65,81,.5)';
+    dots += `<circle cx="${px.toFixed(2)}" cy="${py.toFixed(2)}" r="${rad}" fill="${fill}" opacity="${op}"/>`;
+  }
+  return { svg: dots, pal };
+}
+function avatarRing(seed){
+  const h = hashSeed(seed), pal = pickPalette(h);
+  const rings = [{r:0,count:1,size:2.4},{r:8,count:8,size:1.8},{r:15,count:14,size:1.4}];
+  let dots = '', bit = 0;
+  rings.forEach(ring => {
+    for(let i = 0; i < ring.count; i++){
+      const a = (i / ring.count) * Math.PI * 2 - Math.PI / 2;
+      const px = 20 + Math.cos(a) * ring.r, py = 20 + Math.sin(a) * ring.r;
+      const active = ((h >> (bit % 28)) & 1) === 1; bit++;
+      const fill = active ? pal.core : 'rgba(55,65,81,.18)';
+      const op = active ? 1 : 0.6;
+      dots += `<circle cx="${px.toFixed(2)}" cy="${py.toFixed(2)}" r="${ring.size}" fill="${fill}" opacity="${op}"/>`;
+    }
+  });
+  return { svg: dots, pal };
+}
+function avatarGrid(seed){
+  const h = hashSeed(seed), pal = pickPalette(h);
+  const cells = 5, gap = 6, start = (40 - (cells - 1) * gap) / 2;
+  let bg = '', fg = '';
+  for(let row = 0; row < cells; row++)
+    for(let col = 0; col < cells; col++)
+      bg += `<circle cx="${start + col * gap}" cy="${start + row * gap}" r="1.2" fill="rgba(55,65,81,.06)"/>`;
+  let bit = 0;
+  for(let row = 0; row < cells; row++){
+    for(let col = 0; col < 3; col++){
+      const active = ((h >> (bit % 28)) & 1) === 1; bit++;
+      if(active){
+        const mirror = cells - 1 - col, py = start + row * gap;
+        fg += `<circle cx="${start + col * gap}" cy="${py}" r="2" fill="${pal.core}"/>`;
+        if(mirror !== col) fg += `<circle cx="${start + mirror * gap}" cy="${py}" r="2" fill="${pal.core}"/>`;
+      }
+    }
+  }
+  return { svg: bg + fg, pal };
+}
+const AVATAR_STYLES = { orb: avatarOrb, ring: avatarRing, grid: avatarGrid };
+
+function avatarSVG(seed, size = 40, opts = {}){
+  const h = hashSeed(seed || 'anon');
+  const styleKeys = Object.keys(AVATAR_STYLES);
+  const style = opts.style || styleKeys[(h >> 5) % styleKeys.length];
+  const fn = AVATAR_STYLES[style] || avatarOrb;
+  const { svg, pal } = fn(seed || 'anon');
+  const archetype = avatarArchetype(seed);
+  const accessory = avatarAccessory(opts.store);
+  const progress = avatarProgress(opts.store);
+  const C = 2 * Math.PI * 19, ringOffset = C * (1 - progress);
+  const ring = progress > 0.01
+    ? `<circle cx="20" cy="20" r="19" fill="none" stroke="${pal.core}" stroke-width="1.4"
+        stroke-linecap="round" stroke-dasharray="${C.toFixed(2)}"
+        stroke-dashoffset="${ringOffset.toFixed(2)}"
+        opacity="${(0.35 + progress * 0.55).toFixed(2)}"
+        transform="rotate(-90 20 20)"/>` : '';
+  const archGlyph = `<g transform="translate(4,4) scale(0.3)" opacity="0.55" fill="${pal.core}"><path d="${archetype.glyph}"/></g>`;
+  const accBadge = accessory
+    ? `<g class="av-badge" transform="translate(30,30)">
+        <circle r="6.5" fill="var(--surface)" stroke="var(--border-strong)" stroke-width="0.8"/>
+        <g transform="translate(-3.5,-3.5) scale(0.29)" fill="${accessory.color}"><path d="${accessory.glyph}"/></g>
+      </g>` : '';
+  return `<svg class="avatar-svg" width="${size}" height="${size}" viewBox="0 0 40 40"
+    fill="none" aria-hidden="true" data-palette="${pal.name}"
+    data-archetype="${archetype.id}" data-style="${style}"
+    data-progress="${(progress * 100).toFixed(0)}"
+    ${accessory ? `data-accessory="${accessory.id}"` : ''}>
+    <circle cx="20" cy="20" r="19" fill="rgba(55,65,81,.04)"/>
+    ${ring}${svg}${archGlyph}${accBadge}
+  </svg>`;
+}
+
+/* ============================================================
+   LIN — o parceiro de estudo
+   Criatura arredondada, não geométrica. Diferente do logo.
+   ============================================================ */
+function linSVG(state = 'idle', size = 160){
+  const dark = 'var(--text)';
+  const accent = 'var(--accent)';
+  const white = '#ffffff';
+  const shadow = 'rgba(0,0,0,.08)';
+
+  // ---- Eyes by state ----
+  const eyes = {
+    idle: `
+      <ellipse cx="38" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
+      <ellipse cx="62" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
+      <circle cx="39" cy="43" r="3.2" fill="${dark}"/>
+      <circle cx="63" cy="43" r="3.2" fill="${dark}"/>
+      <circle cx="40.5" cy="41.5" r="1.1" fill="${white}"/>
+      <circle cx="64.5" cy="41.5" r="1.1" fill="${white}"/>
+    `,
+    happy: `
+      <path d="M32 44 Q38 36 44 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M56 44 Q62 36 68 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+    `,
+    thinking: `
+      <ellipse cx="38" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
+      <ellipse cx="62" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
+      <circle cx="40" cy="43" r="3.2" fill="${dark}"/>
+      <circle cx="63" cy="43" r="3.2" fill="${dark}"/>
+      <path d="M32 34 Q38 32 44 35" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    `,
+    sad: `
+      <ellipse cx="38" cy="44" rx="6" ry="6.5" fill="${white}"/>
+      <ellipse cx="62" cy="44" rx="6" ry="6.5" fill="${white}"/>
+      <circle cx="39" cy="46" r="3" fill="${dark}"/>
+      <circle cx="63" cy="46" r="3" fill="${dark}"/>
+      <path d="M31 36 Q38 32 45 37" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <path d="M55 37 Q62 32 69 36" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    `,
+    celebrate: `
+      <path d="M32 42 Q38 33 44 42" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M56 42 Q62 33 68 42" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <g class="lin-sparkle">
+        <path d="M22 22 L23.5 26 L27.5 27.5 L23.5 29 L22 33 L20.5 29 L16.5 27.5 L20.5 26 Z" fill="${accent}"/>
+        <path d="M78 22 L79.5 26 L83.5 27.5 L79.5 29 L78 33 L76.5 29 L72.5 27.5 L76.5 26 Z" fill="${accent}"/>
+      </g>
+    `
+  };
+
+  // ---- Mouth by state ----
+  const mouths = {
+    idle: `<path d="M44 56 Q50 61 56 56" stroke="${dark}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`,
+    happy: `<path d="M42 54 Q50 64 58 54" stroke="${dark}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`,
+    thinking: `<ellipse cx="50" cy="58" rx="3" ry="3.8" fill="${dark}" opacity="0.75"/>`,
+    sad: `<path d="M44 60 Q50 54 56 60" stroke="${dark}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`,
+    celebrate: `<ellipse cx="50" cy="58" rx="6.5" ry="5" fill="${dark}"/>`
+  };
+
+  // ---- Arms ----
+  const arms = (state === 'celebrate')
+    ? `
+      <ellipse cx="16" cy="32" rx="4.5" ry="9" fill="${dark}" transform="rotate(-35 16 32)"/>
+      <ellipse cx="84" cy="32" rx="4.5" ry="9" fill="${dark}" transform="rotate(35 84 32)"/>
+    `
+    : `
+      <ellipse cx="16" cy="62" rx="4.5" ry="8" fill="${dark}"/>
+      <ellipse cx="84" cy="62" rx="4.5" ry="8" fill="${dark}"/>
+    `;
+
+  // ---- Antenna tuft ----
+  const tuft = `
+    <path d="M50 22 Q48 14 46 9" stroke="${accent}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="46" cy="8" rx="3" ry="4" fill="${accent}"/>
+    <path d="M50 22 Q54 15 57 11" stroke="${accent}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="57" cy="11" rx="3" ry="3" fill="${accent}"/>
+  `;
+
+  return `<svg class="lin-svg" width="${size}" height="${size}" viewBox="0 0 100 100"
+    fill="none" aria-hidden="true" data-lin-state="${state}">
+
+    <!-- shadow -->
+    <ellipse cx="50" cy="92" rx="22" ry="3" fill="${shadow}"/>
+
+    <!-- feet -->
+    <ellipse cx="38" cy="86" rx="7" ry="4" fill="${dark}"/>
+    <ellipse cx="62" cy="86" rx="7" ry="4" fill="${dark}"/>
+
+    <!-- arms -->
+    ${arms}
+
+    <!-- tuft -->
+    ${tuft}
+
+    <!-- body -->
+    <g class="lin-body">
+      <path d="M50 22 
+               C 72 22, 82 45, 82 62 
+               C 82 78, 68 88, 50 88 
+               C 32 88, 18 78, 18 62 
+               C 18 45, 28 22, 50 22 Z" 
+            fill="${dark}"/>
+      <!-- belly accent -->
+      <ellipse cx="50" cy="68" rx="19" ry="14" fill="${accent}"/>
+    </g>
+
+    <!-- face -->
+    <g class="lin-face">
+      ${eyes[state] || eyes.idle}
+      ${mouths[state] || mouths.idle}
+    </g>
+  </svg>`;
+}
+
+const LIN_SCENES = {
+  idle: {
+    title: 'Pronto quando você estiver',
+    desc: 'Comece a primeira trilha e o Lin monta o baralho de revisão com você.',
+    cta: 'Escolher uma trilha'
+  },
+  thinking: {
+    title: 'Deixa eu pensar…',
+    desc: 'O Lin está lendo sua resposta. Enquanto isso, ele já anota o que você precisa revisar.',
+    cta: 'Aguarde'
+  },
+  happy: {
+    title: 'Boa. De verdade.',
+    desc: 'Cada acerto fortalece o hábito. O dia 30 está mais perto do que parece — o Lin está anotando seu progresso.',
+    cta: 'Próximo exercício'
+  },
+  sad: {
+    title: 'Quase. Não foi dessa vez.',
+    desc: 'Errar faz parte do método. A resposta correta estava ali — o Lin acredita no próximo acerto.',
+    cta: 'Tentar de novo'
+  },
+  celebrate: {
+    title: 'Trilha concluída.',
+    desc: 'Trinta dias, três camadas por dia. O laurel já está no seu avatar — e o Lin já sabe qual será a próxima trilha.',
+    cta: 'Ver perfil'
+  }
+};
+
+function renderLinScene(state){
+  const scene = LIN_SCENES[state] || LIN_SCENES.idle;
+  const slot = document.getElementById('linSlot');
+  if(!slot) return;
+  slot.innerHTML = linSVG(state, 200);
+  document.getElementById('linTitle').textContent = scene.title;
+  document.getElementById('linDesc').textContent = scene.desc;
+  document.getElementById('linCta').textContent = scene.cta;
+  document.querySelectorAll('.lin-chip').forEach(c => c.classList.toggle('on', c.dataset.state === state));
+}
+function bindLinShowcase(){
+  document.querySelectorAll('.lin-chip').forEach(chip => {
+    chip.addEventListener('click', () => renderLinScene(chip.dataset.state));
+  });
+}
+
+/* ============================================================
+   TRILHAS
+   ============================================================ */
+const TRACKS_ACTIVE = [
+  { id:'ru', num:'01', name:'Russo', nameEm:'Русский',
+    desc:'Do alfabeto cirílico à leitura de um texto autoral. Oito módulos, trinta dias, focados em decifrar o alfabeto nos primeiros cinco dias e ler com autonomia nos últimos cinco.',
+    days:'30 dias · 8 módulos', badge:'No ar' },
+  { id:'de', num:'02', name:'Alemão', nameEm:'Deutsch',
+    desc:'Do zero às primeiras conversas. Casos, gêneros e a estrutura da frase alemã explicados sem decoreba — a gramática aparece onde ela serve, não antes.',
+    days:'30 dias · 8 módulos', badge:'No ar' }
+];
+const TRACKS_SOON = [
+  { id:'gb', num:'03', name:'Inglês', nameEm:'English', desc:'Da base à fluência conversacional. Foco em phrasal verbs e compreensão oral — o que falta em quase todo curso tradicional.', days:'Em preparação', badge:'Em breve' },
+  { id:'es', num:'04', name:'Espanhol', nameEm:'Español', desc:'Da pronúncia ao subjuntivo. Español de verdade, sem sotaque de livro didático.', days:'Em preparação', badge:'Em breve' },
+  { id:'br', num:'05', name:'Português', nameEm:'Português', desc:'Para estrangeiros. Da estrutura básica às expressões do dia a dia no Brasil.', days:'Em preparação', badge:'Em breve' }
+];
+
+function renderTracks(){
+  document.getElementById('activeTracks').innerHTML = TRACKS_ACTIVE.map(t => `
+    <button class="track" data-track="${t.id}">
+      <div class="track-num"><span>Trilha ${t.num}</span><span class="track-flag">${flagSVG(t.id, 40)}</span></div>
+      <h3 class="track-name">${t.name} <em>${t.nameEm}</em></h3>
+      <p class="track-desc">${t.desc}</p>
+      <div class="track-meta">
+        <span class="track-days">${t.days}</span>
+        <span class="track-badge">${t.badge}</span>
+      </div>
+    </button>
+  `).join('');
+
+  document.getElementById('soonTracks').innerHTML = TRACKS_SOON.map(t => `
+    <div class="track soon">
+      <div class="track-num"><span>Trilha ${t.num}</span><span class="track-flag">${flagSVG(t.id, 40)}</span></div>
+      <h3 class="track-name">${t.name} <em>${t.nameEm}</em></h3>
+      <p class="track-desc">${t.desc}</p>
+      <div class="track-meta">
+        <span class="track-days">${t.days}</span>
+        <span class="track-badge">${t.badge}</span>
+      </div>
+    </div>
+  `).join('');
+
+  document.querySelectorAll('.track[data-track]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.location.href = `app.html?lang=${btn.dataset.track}`;
+    });
+  });
+}
+
+/* ============================================================
+   AVATAR SHOWCASE
+   ============================================================ */
+const SHOWCASE_AVATARS = [
+  { seed:'linvuu-demo-01', store:{ completed:{1:1,2:1,3:1,4:1,5:1}, xp:120, streak:3 } },
+  { seed:'linvuu-demo-02', store:{ completed:{1:1,2:1,3:1,4:1,5:1,6:1,7:1,8:1,9:1,10:1}, xp:380, streak:7 } },
+  { seed:'linvuu-demo-03', store:{ completed:Object.fromEntries([...Array(14)].map((_,i)=>[i+1,true])), xp:720, streak:14 } },
+  { seed:'linvuu-demo-04', store:{ completed:Object.fromEntries([...Array(30)].map((_,i)=>[i+1,true])), xp:1480, streak:30 } }
+];
+function renderAvatars(){
+  document.getElementById('avatarShowcase').innerHTML = SHOWCASE_AVATARS.map(a => {
+    const arch = avatarArchetype(a.seed);
+    const acc = avatarAccessory(a.store);
+    const done = Object.keys(a.store.completed).length;
+    return `<div class="avatar-card">
+      <span class="avatar av-lg">${avatarSVG(a.seed, 64, { store: a.store })}</span>
+      <span class="avatar-card-name">${arch.label}</span>
+      <span class="avatar-card-progress">${done}/30 dias${acc ? ' · ' + acc.label : ''}</span>
+    </div>`;
+  }).join('');
+}
+
+/* ============================================================
+   MOOD SHOWCASE
+   ============================================================ */
+function bindMoodShowcase(){
+  document.querySelectorAll('.mood-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const mood = card.dataset.mood;
+      sessionStorage.setItem('linvuu_mood_override', mood);
+      MoodEngine.apply();
+      document.querySelectorAll('.mood-card').forEach(c => {
+        c.style.borderColor = c === card ? 'var(--accent)' : '';
+      });
+    });
+  });
+  const cur = document.documentElement.dataset.mood;
+  const active = document.querySelector(`.mood-card[data-mood="${cur}"]`);
+  if(active) active.style.borderColor = 'var(--accent)';
+}
+
+/* ============================================================
+   SMOOTH SCROLL
+   ============================================================ */
+function bindSmoothScroll(){
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if(id.length > 1){
+        const el = document.querySelector(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({ behavior:'smooth', block:'start' }); }
+      }
+    });
+  });
+}
+
+/* ============================================================
+   REVEAL ON SCROLL
+   ============================================================ */
+function bindRevealOnScroll(){
+  const els = document.querySelectorAll('#idiomas, #idiomas-em-breve, #stem, #sobre, #lin, #design, .showcase, .track, .method, .lin-showcase');
+  els.forEach(el => el.classList.add('scroll-reveal'));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting){
+        const delay = parseInt(entry.target.dataset.delay || 0, 10);
+        setTimeout(() => entry.target.classList.add('scroll-reveal-in'), delay);
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.scroll-reveal').forEach((el, i) => {
+    el.dataset.delay = (i % 5) * 60;
+    io.observe(el);
+  });
+}
+
+/* ============================================================
+   BOOT
+   ============================================================ */
+MoodEngine.start();
+renderTracks();
+renderAvatars();
+renderLinScene('idle');
+bindMoodShowcase();
+bindLinShowcase();
+bindSmoothScroll();
+bindRevealOnScroll();
+</script>
+</body>
+</html>

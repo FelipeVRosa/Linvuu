@@ -1,5 +1,5 @@
 /**
- * LINVUU - Kosmos Language Platform
+ * LINVUU - Language Platform
  * Core Type Contracts: Multilingual, Pedagogical, and Security
  */
 

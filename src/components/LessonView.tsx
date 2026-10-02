@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { DailyLesson, ImmersionToken, NativeLanguage, PracticeExercise } from '../types';
 import { getLocalized, UI_STRINGS } from '../utils/i18n';
+import { LinvuuAvatar } from './LinvuuAvatar';
 
 interface LessonViewProps {
   lesson: DailyLesson;
@@ -81,7 +82,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
           {lesson.isFree ? (
             <span className="access-tag free">✓ Gratuito (Dias 1 e 2)</span>
           ) : (
-            <span className="access-tag paid">👑 Membro Kosmos</span>
+            <span className="access-tag paid">👑 Membro Linvuu</span>
           )}
         </div>
         <h1>{title}</h1>
@@ -330,7 +331,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
                         )
                       }
                     >
-                      <span>✨ Aprofundar com o Filólogo Kosmos (High Thinking)</span>
+                      <span>✨ Tirar dúvidas com o Tutor Linvuu</span>
                     </button>
                   </div>
                 )}

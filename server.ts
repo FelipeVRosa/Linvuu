@@ -38,9 +38,9 @@ const stripe = new Stripe(stripeSecretKey, {
 
 // Central In-Memory Database for User Profile & Spaced Repetition (Backend Authority)
 const userDatabase: UserProfile = {
-  id: 'usr_kosmos_001',
-  name: 'Estudante Kosmos',
-  email: 'estudante@linvuu.kosmos',
+  id: 'usr_linvuu_001',
+  name: 'Estudante Linvuu',
+  email: 'estudante@linvuu.com',
   nativeLanguage: 'pt',
   targetLanguage: 'de',
   hasSubscription: false, // Freemium default: Day 1 & 2 are Free; Day 3+ locked until payment
@@ -227,7 +227,7 @@ async function startServer() {
 
       const priceAmount = plan === 'annual' ? 14900 : 1900; // in cents (19 EUR / 149 EUR)
       const planName =
-        plan === 'annual' ? 'Linvuu Kosmos C1 - Anual' : 'Linvuu Kosmos C1 - Mensal';
+        plan === 'annual' ? 'Linvuu Fluência - Anual' : 'Linvuu Fluência - Mensal';
 
       // Check if real Stripe secret key is supplied
       if (
@@ -242,7 +242,7 @@ async function startServer() {
                 product_data: {
                   name: planName,
                   description:
-                    'Acesso irrestrito às 100 lições intensivas, fonética, gramática C1 e Inteligência Filológica.',
+                    'Acesso irrestrito às 100 lições, áudios autênticos e Tutor Linvuu.',
                 },
                 unit_amount: priceAmount,
                 recurring: {

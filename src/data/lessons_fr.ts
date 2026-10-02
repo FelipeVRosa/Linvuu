@@ -191,7 +191,7 @@ export const LESSONS_FR: Record<number, DailyLesson> = {
       embedUrl: 'https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ',
       title: { pt: 'Masterclass C1: A Dialética Temporal no Francês Literário', en: 'Masterclass: Temporal Dialectics in Literary French', es: 'Masterclass: La Dialéctica Temporal' },
       nativeSpeaker: 'Prof. Éléonore de Montalembert',
-      description: { pt: 'Conteúdo reservado a membros Linvuu Kosmos.', en: 'Reserved for Kosmos Members.', es: 'Contenido reservado para miembros Kosmos.' },
+      description: { pt: 'Conteúdo reservado a membros Linvuu.', en: 'Reserved for Linvuu Members.', es: 'Contenido reservado para miembros Linvuu.' },
       durationMinutes: 26
     },
     phonetics: {

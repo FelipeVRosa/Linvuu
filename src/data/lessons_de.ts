@@ -614,9 +614,9 @@ export const LESSONS_DE: Record<number, DailyLesson> = {
       },
       nativeSpeaker: 'Prof. Dr. Maximilian Lindemann (Munique)',
       description: {
-        pt: 'Conteúdo reservado aos subscritores Linvuu Kosmos. Análise exaustiva das 9 preposições bidirecionais: in, an, auf, neben, hinter, über, unter, vor, zwischen.',
-        en: 'Reserved for Linvuu Kosmos Subscribers. Exhaustive analysis of the 9 two-way prepositions.',
-        es: 'Contenido reservado para suscriptores Linvuu Kosmos.'
+        pt: 'Conteúdo reservado aos subscritores Linvuu. Análise exaustiva das 9 preposições bidirecionais: in, an, auf, neben, hinter, über, unter, vor, zwischen.',
+        en: 'Reserved for Linvuu Subscribers. Exhaustive analysis of the 9 two-way prepositions.',
+        es: 'Contenido reservado para suscriptores Linvuu.'
       },
       durationMinutes: 24,
       timestamps: [

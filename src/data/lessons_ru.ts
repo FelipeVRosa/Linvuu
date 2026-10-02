@@ -271,9 +271,9 @@ export const LESSONS_RU: Record<number, DailyLesson> = {
       },
       nativeSpeaker: 'Prof. Andrei Voronin (Universidade de São Petersburgo)',
       description: {
-        pt: 'Conteúdo reservado a subscritores Linvuu Kosmos. O primeiro caso flexional russo desvendado com rigor.',
-        en: 'Reserved for Linvuu Kosmos Subscribers.',
-        es: 'Contenido reservado para suscriptores Linvuu Kosmos.'
+        pt: 'Conteúdo reservado a subscritores Linvuu. O primeiro caso flexional russo desvendado com rigor.',
+        en: 'Reserved for Linvuu Subscribers.',
+        es: 'Contenido reservado para suscriptores Linvuu.'
       },
       durationMinutes: 25
     },

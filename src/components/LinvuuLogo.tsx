@@ -4,20 +4,17 @@ interface LinvuuLogoProps {
   height?: number;
   color?: string;
   showWordmark?: boolean;
-  showIcon?: boolean;
   className?: string;
 }
 
 /**
- * Official Linvuu Brand Logomark & Wordmark.
- * Keep the icon optional so the product can use the wordmark alone,
- * as in the provided logo reference.
+ * Linvuu Logo - Minimalist Educational Style
+ * Inspired by edX & Assimil: Clean, Geometric, Professional
  */
 export const LinvuuLogo: React.FC<LinvuuLogoProps> = ({
   height = 36,
-  color = '#F5A623',
+  color = '#0066CC',
   showWordmark = true,
-  showIcon = false,
   className = '',
 }) => {
   return (
@@ -26,40 +23,47 @@ export const LinvuuLogo: React.FC<LinvuuLogoProps> = ({
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        gap: `${height * 0.35}px`,
+        gap: `${height * 0.4}px`,
         userSelect: 'none',
       }}
     >
-      {showIcon && (
-        <svg
-          height={height}
-          viewBox="0 0 110 110"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ flexShrink: 0 }}
-        >
-          <rect x="0" y="8" width="62" height="26" rx="4" fill={color} />
-          <rect x="0" y="42" width="105" height="26" rx="4" fill={color} />
-          <rect x="0" y="76" width="42" height="26" rx="4" fill={color} />
-        </svg>
-      )}
+      {/* Minimalist Mark: Single Gradient Bar + Accent Dot */}
+      <svg
+        height={height}
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ flexShrink: 0 }}
+      >
+        <defs>
+          <linearGradient id="linvuuGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor={color} />
+            <stop offset="100%" stopColor={color} stopOpacity="0.6" />
+          </linearGradient>
+        </defs>
+        
+        {/* Primary bar: represents learning progression */}
+        <rect x="4" y="16" width="32" height="6" rx="3" fill="url(#linvuuGradient)" />
+        
+        {/* Accent dot: represents student engagement */}
+        <circle cx="40" cy="19" r="3" fill={color} />
+      </svg>
 
+      {/* Clean Wordmark */}
       {showWordmark && (
         <span
           style={{
-            fontFamily: "'Montserrat', sans-serif",
-            fontWeight: 800,
-            fontSize: `${height * 1.12}px`,
-            letterSpacing: '-0.08em',
-            color: '#F2EFE8',
+            fontFamily: "'-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+            fontWeight: 600,
+            fontSize: `${height * 0.85}px`,
+            letterSpacing: '-0.02em',
+            color: '#1A1A1A',
             lineHeight: 1,
             display: 'flex',
             alignItems: 'center',
-            whiteSpace: 'nowrap',
-            textShadow: '0 0 14px rgba(255, 255, 255, 0.12)',
           }}
         >
-          Lin<span style={{ color }}>vuu</span>
+          <span style={{ color }}>L</span>invuu
         </span>
       )}
     </div>

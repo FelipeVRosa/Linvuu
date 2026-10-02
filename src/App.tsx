@@ -1,175 +1,240 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+
+/* ---------- Mascotes: comida típica de cada idioma ---------- */
+const MASCOTS: Record<string, string> = {
+  ru: '/mascots/pelmeni-ru.png',
+  de: '/mascots/pretzel-de.png',
+  gb: '/mascots/batata-en.png',
+  es: '/mascots/tomate-es.png',
+  fr: '/mascots/croissant-fr.png',
+  br: '/mascots/pastel-pt.png', // salve o PNG do pastel com esse nome
+};
+
+/* ---------- Bandeiras ---------- */
+const FLAGS: Record<string, string> = {
+  ru: '<rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039a6"/><rect y="13.33" width="30" height="6.67" fill="#d52b1e"/>',
+  de: '<rect width="30" height="20" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#dd0000"/><rect y="13.33" width="30" height="6.67" fill="#ffce00"/>',
+  es: '<rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/>',
+  fr: '<rect width="30" height="20" fill="#fff"/><rect width="10" height="20" fill="#002395"/><rect x="20" width="10" height="20" fill="#ed2939"/>',
+  br: '<rect width="30" height="20" fill="#009c3b"/><path d="M15 2 28 10 15 18 2 10Z" fill="#ffdf00"/><circle cx="15" cy="10" r="4" fill="#002776"/>',
+};
+
+const Flag: React.FC<{ id: string; size?: number }> = ({ id, size = 40 }) => {
+  if (id === 'gb') {
+    return (
+      <svg width={size} height={Math.round(size * 0.667)} viewBox="0 0 60 40" aria-hidden="true">
+        <rect width="60" height="40" fill="#012169" />
+        <path d="M0 0 60 40M60 0 0 40" stroke="#fff" strokeWidth="8" />
+        <path d="M0 0 60 40M60 0 0 40" stroke="#C8102E" strokeWidth="4" />
+        <path d="M30 0V40M0 20H60" stroke="#fff" strokeWidth="13" />
+        <path d="M30 0V40M0 20H60" stroke="#C8102E" strokeWidth="8" />
+      </svg>
+    );
+  }
+  return (
+    <svg
+      width={size}
+      height={Math.round(size * 0.667)}
+      viewBox="0 0 30 20"
+      aria-hidden="true"
+      dangerouslySetInnerHTML={{ __html: FLAGS[id] ?? '' }}
+    />
+  );
+};
+
+/* ---------- Dados ---------- */
+const TARGETS = [
+  { id: 'ru', label: 'Russo · Русский' },
+  { id: 'de', label: 'Alemão · Deutsch' },
+  { id: 'gb', label: 'Inglês · English' },
+  { id: 'es', label: 'Espanhol · Español' },
+  { id: 'fr', label: 'Francês · Français' },
+  { id: 'br', label: 'Português · Português' },
+];
+
+const SOURCES = [
+  { id: 'pt', label: 'Português' },
+  { id: 'en', label: 'English' },
+  { id: 'es', label: 'Español' },
+  { id: 'de', label: 'Deutsch' },
+  { id: 'fr', label: 'Français' },
+  { id: 'ru', label: 'Русский' },
+];
+
+const LEVELS = [
+  { id: 'zero', label: 'Zero absoluto' },
+  { id: 'a1', label: 'Básico · A1' },
+  { id: 'a2', label: 'Básico · A2' },
+  { id: 'b1', label: 'Intermediário · B1' },
+  { id: 'b2', label: 'Intermediário · B2' },
+  { id: 'c1', label: 'Avançado · C1' },
+];
+
+type Track = { id: string; num: string; name: string; nameEm: string; desc: string; days: string; badge: string };
+
+const TRACKS_ACTIVE: Track[] = [
+  { id: 'ru', num: '01', name: 'Russo', nameEm: 'Русский', desc: 'Do alfabeto cirílico à leitura de um texto autoral. Oito módulos, trinta dias, focados em decifrar o alfabeto nos primeiros cinco dias e ler com autonomia nos últimos cinco.', days: '30 dias · 8 módulos', badge: 'No ar' },
+  { id: 'de', num: '02', name: 'Alemão', nameEm: 'Deutsch', desc: 'Do zero às primeiras conversas. Casos, gêneros e a estrutura da frase alemã explicados sem decoreba — a gramática aparece onde ela serve, não antes.', days: '30 dias · 8 módulos', badge: 'No ar' },
+];
+
+const TRACKS_SOON: Track[] = [
+  { id: 'gb', num: '03', name: 'Inglês', nameEm: 'English', desc: 'Da base à fluência conversacional. Foco em phrasal verbs e compreensão oral — o que falta em quase todo curso tradicional.', days: 'Em preparação', badge: 'Em breve' },
+  { id: 'es', num: '04', name: 'Espanhol', nameEm: 'Español', desc: 'Da pronúncia ao subjuntivo. Español de verdade, sem sotaque de livro didático.', days: 'Em preparação', badge: 'Em breve' },
+  { id: 'fr', num: '05', name: 'Francês', nameEm: 'Français', desc: 'Leitura, pronúncia e frases úteis para o mundo profissional, com foco em contexto real.', days: 'Em preparação', badge: 'Em breve' },
+  { id: 'br', num: '06', name: 'Português', nameEm: 'Português', desc: 'Para estrangeiros. Da estrutura básica às expressões do dia a dia no Brasil.', days: 'Em preparação', badge: 'Em breve' },
+];
+
+const METHOD = [
+  { num: '01', title: 'Vídeo-aula', text: 'Aula curta, capitulada, com saltos navegáveis. Você assiste no seu ritmo e volta ao ponto que precisa.', icon: '<rect x="2" y="5" width="20" height="14" rx="1"/><path d="M10 9l5 3-5 3z"/>' },
+  { num: '02', title: 'Imersão', text: 'Texto curto no idioma, com áudio nativo e tradução sob demanda. Vocabulário destacado no contexto.', icon: '<path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/>' },
+  { num: '03', title: 'Prática', text: 'Exercício com feedback imediato, XP pelo acerto e revisão espaçada do que você errou — em duas rodadas depois.', icon: '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>' },
+];
+
+/* Painel da direita: astronomia, física, matemática e saudações */
+type Cosmo = { t?: string; c?: string; img?: string };
+const COSMOS: Cosmo[] = [
+  { t: 'E = mc²', c: 'f big' },
+  { t: 'Olá', c: 'hi' }, { t: 'Hello', c: 'hi' }, { t: 'Привет', c: 'hi' },
+  { t: 'F = G·m₁m₂ / r²', c: 'f' },
+  { t: 'Hallo', c: 'hi' }, { t: 'Hola', c: 'hi' }, { t: 'Bonjour', c: 'hi' },
+  { t: 'T² ∝ a³', c: 'f' },
+  { t: 'v = √(GM / r)', c: 'f' },
+  { t: 'λ = h / p', c: 'f' },
+  { t: 'e^(iπ) + 1 = 0', c: 'f big' },
+  { t: '∫ f(x) dx', c: 'f' },
+  { t: 'Σ', c: 'big' }, { t: 'π', c: 'big' }, { t: 'Δ', c: 'big' },
+  { t: 'L = 4πR²σT⁴', c: 'f' },
+  { t: 'z = Δλ / λ', c: 'f' },
+  { img: '/mascots/ima-fisica.png' },
+  { img: '/mascots/ampulheta-matematica.png' },
+];
+
+const phaseOf = (d = new Date()) => {
+  const h = d.getHours();
+  if (h >= 5 && h < 8) return 'dawn';
+  if (h >= 8 && h < 17) return 'day';
+  if (h >= 17 && h < 20) return 'dusk';
+  return 'night';
+};
+
+const hide = (e: React.SyntheticEvent<HTMLImageElement>) => {
+  e.currentTarget.style.display = 'none';
+};
+
+const scrollTo = (id: string) => (e: React.MouseEvent) => {
+  e.preventDefault();
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 export default function App() {
-  const [linState, setLinState] = useState<'idle' | 'thinking' | 'happy' | 'sad' | 'celebrate'>('idle');
-  const [currentMood, setCurrentMood] = useState('day');
+  const [src, setSrc] = useState('pt');
+  const [tgt, setTgt] = useState('ru');
+  const [level, setLevel] = useState('b1');
+  const [mascotSrc, setMascotSrc] = useState(MASCOTS.ru);
+  const [swap, setSwap] = useState(false);
+  const [mascotEmpty, setMascotEmpty] = useState(false);
+  const revealRef = useRef<HTMLElement | null>(null);
 
+  /* tom circadiano */
   useEffect(() => {
-    const updateMood = () => {
-      const hour = new Date().getHours();
-      let mood = 'day';
-      if (hour >= 5 && hour < 8) mood = 'dawn';
-      else if (hour >= 8 && hour < 17) mood = 'day';
-      else if (hour >= 17 && hour < 20) mood = 'dusk';
-      else mood = 'night';
-      setCurrentMood(mood);
+    const apply = () => {
+      const p = phaseOf();
+      const r = document.documentElement;
+      r.classList.remove('mood-dawn', 'mood-day', 'mood-dusk', 'mood-night');
+      r.classList.add(`mood-${p}`);
+      r.dataset.mood = p;
     };
-
-    updateMood();
-    const interval = setInterval(updateMood, 15 * 60 * 1000);
-    return () => clearInterval(interval);
+    apply();
+    const id = setInterval(apply, 15 * 60 * 1000);
+    return () => clearInterval(id);
   }, []);
 
+  /* troca do mascote ao mudar "Quero aprender" */
   useEffect(() => {
-    document.documentElement.classList.remove('mood-dawn', 'mood-day', 'mood-dusk', 'mood-night');
-    document.documentElement.classList.add(`mood-${currentMood}`);
-    document.documentElement.dataset.mood = currentMood;
-  }, [currentMood]);
+    setSwap(true);
+    const id = setTimeout(() => {
+      setMascotEmpty(false);
+      setMascotSrc(MASCOTS[tgt] ?? '');
+      setSwap(false);
+    }, 180);
+    return () => clearTimeout(id);
+  }, [tgt]);
 
-  const TRACKS_ACTIVE = [
-    {
-      id: 'ru',
-      num: '01',
-      name: 'Russo',
-      nameEm: 'Русский',
-      desc: 'Do alfabeto cirílico à leitura de um texto autoral. Oito módulos, trinta dias, focados em decifrar o alfabeto nos primeiros cinco dias e ler com autonomia nos últimos cinco.',
-      days: '30 dias · 8 módulos',
-      badge: 'No ar',
-      flag: '🇷🇺',
-    },
-    {
-      id: 'de',
-      num: '02',
-      name: 'Alemão',
-      nameEm: 'Deutsch',
-      desc: 'Do zero às primeiras conversas. Casos, gêneros e a estrutura da frase alemã explicados sem decoreba — a gramática aparece onde ela serve, não antes.',
-      days: '30 dias · 8 módulos',
-      badge: 'No ar',
-      flag: '🇩🇪',
-    },
-    {
-      id: 'gb',
-      num: '03',
-      name: 'Inglês',
-      nameEm: 'English',
-      desc: 'Da base à fluência conversacional. Foco em phrasal verbs e compreensão oral — o que falta em quase todo curso tradicional.',
-      days: '30 dias · 8 módulos',
-      badge: 'Em breve',
-      flag: '🇬🇧',
-    },
-    {
-      id: 'es',
-      num: '04',
-      name: 'Espanhol',
-      nameEm: 'Español',
-      desc: 'Da pronúncia ao subjuntivo. Español de verdade, sem sotaque de livro didático.',
-      days: '30 dias · 8 módulos',
-      badge: 'Em breve',
-      flag: '🇪🇸',
-    },
-    {
-      id: 'br',
-      num: '05',
-      name: 'Português',
-      nameEm: 'Português',
-      desc: 'Para estrangeiros. Da estrutura básica às expressões do dia a dia no Brasil.',
-      days: '30 dias · 8 módulos',
-      badge: 'Em breve',
-      flag: '🇧🇷',
-    },
-  ];
+  /* revelar ao rolar */
+  useEffect(() => {
+    const els = document.querySelectorAll('.scroll-reveal');
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const i = Array.from(els).indexOf(entry.target);
+            setTimeout(() => entry.target.classList.add('scroll-reveal-in'), (i % 5) * 60);
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
 
-  const TRACKS_SOON = [
-    {
-      id: 'fr',
-      num: '06',
-      name: 'Francês',
-      nameEm: 'Français',
-      desc: 'Leitura, pronúncia e frases úteis para o mundo profissional, com foco em contexto real.',
-      days: 'Em preparação',
-      badge: 'Em breve',
-      flag: '🇫🇷',
-    },
-    {
-      id: 'it',
-      num: '07',
-      name: 'Italiano',
-      nameEm: 'Italiano',
-      desc: 'Melodia, clareza e expressão prática para viagem, estudo e trabalho.',
-      days: 'Em preparação',
-      badge: 'Em breve',
-      flag: '🇮🇹',
-    },
-  ];
+  const onSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    document.getElementById('idiomas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
-  const FEATURES = [
-    {
-      title: 'Microaprendizagem',
-      text: 'Cada dia entrega uma unidade clara, sem excesso de teoria e com prática imediata.',
-      icon: '⏱️',
-    },
-    {
-      title: 'Fixação real',
-      text: 'Revisão espaçada, feedback imediato e reforço de pontos que você errou.',
-      icon: '🧠',
-    },
-    {
-      title: 'Conteúdo nativo',
-      text: 'Textos e áudios autênticos para você entrar em contato com a língua em uso.',
-      icon: '🎧',
-    },
-  ];
-
-  const linSVG = (state: string) => {
-    const dark = 'var(--text)';
-    const accent = 'var(--accent)';
-    const white = '#ffffff';
-    const shadow = 'rgba(0,0,0,.08)';
-
-    const eyes: Record<string, string> = {
-      idle: `
-        <ellipse cx="38" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
-        <ellipse cx="62" cy="42" rx="6.5" ry="7.5" fill="${white}"/>
-        <circle cx="39" cy="43" r="3.2" fill="${dark}"/>
-        <circle cx="63" cy="43" r="3.2" fill="${dark}"/>
-        <circle cx="40.5" cy="41.5" r="1.1" fill="${white}"/>
-        <circle cx="64.5" cy="41.5" r="1.1" fill="${white}"/>
-      `,
-      happy: `
-        <path d="M32 44 Q38 36 44 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
-        <path d="M56 44 Q62 36 68 44" stroke="${dark}" stroke-width="3.2" fill="none" stroke-linecap="round"/>
-      `,
-      thinking: `
-        <path d="M33 44 Q38 39 43 44" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <path d="M57 44 Q62 39 67 44" stroke="${dark}" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <circle cx="48" cy="47" r="2.5" fill="${accent}" opacity="0.8"/>
-      `,
-    };
-
-    const mouths: Record<string, string> = {
-      idle: `<path d="M44 56 Q50 61 56 56" stroke="${dark}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`,
-      happy: `<path d="M42 54 Q50 64 58 54" stroke="${dark}" stroke-width="2.6" fill="none" stroke-linecap="round"/>`,
-      thinking: `<path d="M44 58 Q50 52 56 58" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
-      celebrate: `<path d="M42 57 Q50 68 58 57" stroke="${dark}" stroke-width="2.8" fill="none" stroke-linecap="round"/>`,
-      sad: `<path d="M44 60 Q50 54 56 60" stroke="${dark}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
-    };
-
-    return `<svg width="200" height="200" viewBox="0 0 100 100" fill="none" aria-hidden="true">
-      <ellipse cx="50" cy="92" rx="22" ry="3" fill="${shadow}"/>
-      <ellipse cx="38" cy="86" rx="7" ry="4" fill="${dark}"/>
-      <ellipse cx="62" cy="86" rx="7" ry="4" fill="${dark}"/>
-      <path d="M50 22 C 72 22, 82 45, 82 62 C 82 78, 68 88, 50 88 C 32 88, 18 78, 18 62 C 18 45, 28 22, 50 22 Z" fill="${dark}"/>
-      <ellipse cx="50" cy="68" rx="19" ry="14" fill="${accent}"/>
-      ${eyes[state] || eyes.idle}
-      ${mouths[state] || mouths.idle}
-    </svg>`;
+  const trackCard = (t: Track, interactive: boolean) => {
+    const body = (
+      <>
+        <div className="track-num">
+          <span>Trilha {t.num}</span>
+          <span className="track-flag">
+            <Flag id={t.id} />
+            {MASCOTS[t.id] && <img className="track-mascot" src={MASCOTS[t.id]} alt="" onError={hide} />}
+          </span>
+        </div>
+        <h3 className="track-name">
+          {t.name} <em>{t.nameEm}</em>
+        </h3>
+        <p className="track-desc">{t.desc}</p>
+        <div className="track-meta">
+          <span className="track-days">{t.days}</span>
+          <span className="track-badge">{t.badge}</span>
+        </div>
+      </>
+    );
+    return interactive ? (
+      <button key={t.id} type="button" className="track scroll-reveal" onClick={() => setTgt(t.id)}>
+        {body}
+      </button>
+    ) : (
+      <div key={t.id} className="track soon scroll-reveal">
+        {body}
+      </div>
+    );
   };
 
   return (
-    <div className="home">
+    <>
+      <div className="top-bar">
+        <div className="top-inner">
+          <span className="top-tagline">Linvuu · idiomas em trilhas de 30 dias</span>
+          <div className="top-right">
+            <div className="lang-picker" role="group" aria-label="Idioma do site">
+              {SOURCES.map((s) => (
+                <a key={s.id} href="#" className={`lang-code ${s.id === 'pt' ? 'on' : ''}`} onClick={(e) => e.preventDefault()}>
+                  {s.id.toUpperCase()}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <header className="nav-bar">
         <div className="nav-inner">
-          <a href="#top" className="logo" aria-label="Linvuu home">
+          <a href="#top" className="logo" aria-label="Linvuu início" onClick={scrollTo('top')}>
             <svg className="logo-mark" viewBox="0 0 32 24" aria-hidden="true">
               <rect x="0" y="0" width="11" height="6" fill="var(--text)" />
               <rect x="0" y="9" width="22" height="6" fill="var(--text)" />
@@ -177,93 +242,122 @@ export default function App() {
             </svg>
             <span className="logo-text">Linvuu</span>
           </a>
+
           <nav className="nav-links" aria-label="Navegação principal">
-            <a href="#idiomas">Idiomas</a>
-            <a href="#stem">STEM</a>
-            <a href="#como-funciona">Como funciona</a>
-            <a href="#sobre">Sobre</a>
+            <a href="#sobre" className="nav-item" onClick={scrollTo('sobre')}>Sobre a Linvuu</a>
+            <div className="nav-item has-dropdown">
+              <button type="button" className="nav-link-btn" aria-haspopup="true">
+                <span>Aprenda um idioma</span>
+                <svg className="chev" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+              </button>
+              <div className="dropdown" role="menu">
+                {TRACKS_ACTIVE.concat(TRACKS_SOON).map((t) => (
+                  <a
+                    key={t.id}
+                    href="#idiomas"
+                    className="dropdown-item"
+                    role="menuitem"
+                    onClick={(e) => { setTgt(t.id); scrollTo('idiomas')(e); }}
+                  >
+                    <span className="dropdown-flag"><Flag id={t.id} size={20} /></span>
+                    <span className="dropdown-label">{t.name}</span>
+                    <span className="dropdown-native">{t.nameEm}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </nav>
-          <a href="#idiomas" className="nav-cta">Começar</a>
+
+          <div className="nav-icons">
+            <a href="#idiomas" className="nav-cta" onClick={scrollTo('idiomas')}>Começar</a>
+          </div>
         </div>
       </header>
 
-      <main id="top">
+      <main className="home" id="top">
         <section className="hero">
           <div className="hero-meta">
-            <span>Idiomas &amp; STEM</span>
+            <span>Idiomas</span>
             <span className="hero-meta-right">desde 2026 · São Paulo</span>
           </div>
-          <span className="hero-kicker">Trilhas de aprendizado</span>
-          <h1 className="hero-h1">
-            Uma trilha por vez.<br />
-            Trinta dias por trilha.<br />
-            Um idioma — ou uma ciência —<br />
-            <em>para a vida.</em>
-          </h1>
-          <p className="hero-sub">
-            Cada dia é uma camada. Cada semana, um módulo. Cada trilha, do zero ao domínio real — sem promessa de fluência em uma semana.
-          </p>
-          <p className="hero-desc">
-            Russo, alemão, inglês, espanhol, português. Matemática, física. Cada matéria em sua própria trilha de trinta dias: vídeo-aula curta, imersão em texto nativo, prática com feedback e revisão espaçada.
-          </p>
-          <div className="hero-cta">
-            <a href="#idiomas" className="btn btn-primary">Ver trilhas</a>
-            <a href="#como-funciona" className="btn btn-ghost">Como funciona</a>
-          </div>
 
-          <div className="hero-stats" aria-label="Estatísticas do método Linvuu">
-            <div className="stat-box">
-              <strong>30 dias</strong>
-              <span>por trilha</span>
+          <div className="hero-grid">
+            <div className="hero-visual">
+              <div className={`hero-mascot ${mascotEmpty || !mascotSrc ? 'empty' : ''}`}>
+                {mascotSrc && (
+                  <img
+                    className={swap ? 'swap' : ''}
+                    src={mascotSrc}
+                    alt="Mascote do idioma"
+                    onError={() => setMascotEmpty(true)}
+                    onLoad={() => setMascotEmpty(false)}
+                    style={mascotEmpty ? { display: 'none' } : undefined}
+                  />
+                )}
+              </div>
             </div>
-            <div className="stat-box">
-              <strong>3 camadas</strong>
-              <span>por dia</span>
+
+            <div className="hero-main">
+              <span className="hero-kicker">Trilhas de 30 dias</span>
+              <h1 className="hero-h1">
+                Aprenda um idioma.<br />
+                Em trinta dias.<br />
+                <em>Do zero à autonomia.</em>
+              </h1>
+              <p className="hero-sub">
+                Russo, alemão, inglês, espanhol, francês, português. Cada idioma em sua própria trilha de 30 dias — vídeo-aula, imersão, prática com feedback.
+              </p>
+
+              <form className="hero-search" onSubmit={onSearch}>
+                <div className="search-field">
+                  <label htmlFor="src-lang">Idioma de origem</label>
+                  <select id="src-lang" value={src} onChange={(e) => setSrc(e.target.value)}>
+                    {SOURCES.map((o) => <option key={o.id} value={o.id}>{o.label}</option>)}
+                  </select>
+                </div>
+                <div className="search-field">
+                  <label htmlFor="tgt-lang">Quero aprender</label>
+                  <select id="tgt-lang" value={tgt} onChange={(e) => setTgt(e.target.value)}>
+                    {TARGETS.map((o) => <option key={o.id} value={o.id}>{o.label}</option>)}
+                  </select>
+                </div>
+                <div className="search-field">
+                  <label htmlFor="level">Meu nível</label>
+                  <select id="level" value={level} onChange={(e) => setLevel(e.target.value)}>
+                    {LEVELS.map((o) => <option key={o.id} value={o.id}>{o.label}</option>)}
+                  </select>
+                </div>
+                <button type="submit" className="search-btn" aria-label="Buscar trilha">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.35-4.35" /></svg>
+                  <span>Buscar</span>
+                </button>
+              </form>
             </div>
-            <div className="stat-box">
-              <strong>15 min</strong>
-              <span>de prática</span>
+
+            <div className="hero-cosmos" aria-hidden="true">
+              {COSMOS.map((x, i) =>
+                x.img ? (
+                  <img key={i} src={x.img} alt="" onError={hide} />
+                ) : (
+                  <span key={i} className={`chip ${x.c}`}>{x.t}</span>
+                )
+              )}
             </div>
           </div>
         </section>
 
-        <section className="section" id="idiomas">
+        <section className="section scroll-reveal" id="idiomas">
           <div className="section-head">
             <span className="section-kicker">Trilhas vivas</span>
-            <h2 className="section-h2">
-              Cinco idiomas. <em>Cinco trilhas.</em>
-            </h2>
+            <h2 className="section-h2">Seis idiomas. <em>Seis trilhas.</em></h2>
             <p className="section-sub">
-              Russo, alemão, inglês, espanhol e português. Cada idioma em sua própria jornada de trinta dias — do alfabeto à leitura autônoma.
+              Cada idioma em sua própria jornada de trinta dias — do alfabeto à leitura autônoma.
             </p>
           </div>
-          <div className="track-grid">
-            {TRACKS_ACTIVE.map((track) => (
-              <button
-                key={track.id}
-                type="button"
-                className="track"
-                onClick={() => setLinState('happy')}
-                aria-label={`Selecionar trilha ${track.name}`}
-              >
-                <div className="track-num">
-                  <span>Trilha {track.num}</span>
-                  <span className="track-flag">{track.flag}</span>
-                </div>
-                <h3 className="track-name">
-                  {track.name} <em>{track.nameEm}</em>
-                </h3>
-                <p className="track-desc">{track.desc}</p>
-                <div className="track-meta">
-                  <span className="track-days">{track.days}</span>
-                  <span className="track-badge">{track.badge}</span>
-                </div>
-              </button>
-            ))}
-          </div>
+          <div className="track-grid">{TRACKS_ACTIVE.map((t) => trackCard(t, true))}</div>
         </section>
 
-        <section className="section" style={{ paddingTop: 0 }} id="idiomas-em-breve">
+        <section className="section scroll-reveal" style={{ paddingTop: 0 }} id="idiomas-em-breve">
           <div className="section-head">
             <span className="section-kicker">Em preparação</span>
             <h2 className="section-h2">Próximos idiomas</h2>
@@ -271,151 +365,28 @@ export default function App() {
               A mesma estrutura de trilha — trinta dias, três camadas por dia. O que muda é o idioma e o texto de imersão.
             </p>
           </div>
-          <div className="track-grid">
-            {TRACKS_SOON.map((track) => (
-              <div key={track.id} className="track soon">
-                <div className="track-num">
-                  <span>Trilha {track.num}</span>
-                  <span className="track-flag">{track.flag}</span>
-                </div>
-                <h3 className="track-name">
-                  {track.name} <em>{track.nameEm}</em>
-                </h3>
-                <p className="track-desc">{track.desc}</p>
-                <div className="track-meta">
-                  <span className="track-days">{track.days}</span>
-                  <span className="track-badge">{track.badge}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="track-grid">{TRACKS_SOON.map((t) => trackCard(t, false))}</div>
         </section>
 
-        <section className="section" style={{ paddingTop: 0 }} id="como-funciona">
-          <div className="section-head">
-            <span className="section-kicker">Por que funciona</span>
-            <h2 className="section-h2">
-              Aprender sem <em>distância</em>
-            </h2>
-            <p className="section-sub">
-              O método combina a densidade de uma aula, a naturalidade de um texto e a força da revisão para transformar prática em memória.
-            </p>
-          </div>
-          <div className="feature-grid">
-            {FEATURES.map((feature) => (
-              <article key={feature.title} className="feature-card">
-                <span className="feature-icon" aria-hidden="true">{feature.icon}</span>
-                <h3>{feature.title}</h3>
-                <p>{feature.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="section" style={{ paddingTop: 0 }} id="stem">
-          <div className="section-head">
-            <span className="section-kicker">Ciências exatas · em preparação</span>
-            <h2 className="section-h2">STEM</h2>
-            <p className="section-sub">
-              Matemática e física com o mesmo rigor das trilhas de idioma: definição precisa, exemplo resolvido passo a passo, exercício com feedback, revisão espaçada.
-            </p>
-          </div>
-          <div className="stem-strip">
-            <div className="stem">
-              <span className="stem-ic">📊</span>
-              <div className="stem-body">
-                <b>Matemática</b>
-                <span>Álgebra · geometria · análise · estatística. Do número natural ao cálculo diferencial, com demonstrações completas.</span>
-              </div>
-            </div>
-            <div className="stem">
-              <span className="stem-ic">⚛️</span>
-              <div className="stem-body">
-                <b>Física</b>
-                <span>Mecânica · termodinâmica · eletromagnetismo. Da cinemática ao campo, com problemas resolvidos e intuição geométrica.</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="section" style={{ paddingTop: 0 }} id="sobre">
+        <section className="section scroll-reveal" style={{ paddingTop: 0 }} id="sobre" ref={revealRef}>
           <div className="section-head">
             <span className="section-kicker">Sobre a Linvuu</span>
-            <h2 className="section-h2">
-              Três camadas, <em>um dia</em>
-            </h2>
+            <h2 className="section-h2">Três camadas, <em>um dia</em></h2>
             <p className="section-sub">
-              Toda trilha, de idioma ou de STEM, obedece à mesma estrutura diária. Assistir, ler, fazer. Sem aula longa, sem teoria solta. A Linvuu foi desenhada para quem quer aprender com progresso real.
+              Toda trilha obedece à mesma estrutura diária. Assistir, ler, fazer. Sem aula longa, sem teoria solta.
             </p>
           </div>
           <div className="method-grid">
-            <div className="method">
-              <span className="method-num">01</span>
-              <h3 className="method-h3">Vídeo-aula</h3>
-              <p>Aula curta, capitulada, com saltos navegáveis. Você assiste no seu ritmo e volta ao ponto que precisa.</p>
-              <span className="method-ic">▶️</span>
-            </div>
-            <div className="method">
-              <span className="method-num">02</span>
-              <h3 className="method-h3">Imersão</h3>
-              <p>Texto curto no idioma (ou no formalismo), com áudio nativo e tradução sob demanda. Vocabulário destacado no contexto.</p>
-              <span className="method-ic">📖</span>
-            </div>
-            <div className="method">
-              <span className="method-num">03</span>
-              <h3 className="method-h3">Prática</h3>
-              <p>Exercício com feedback imediato, XP pelo acerto e revisão espaçada do que você errou — em duas rodadas depois.</p>
-              <span className="method-ic">✓</span>
-            </div>
-          </div>
-        </section>
-
-        <section className="section" style={{ paddingTop: 0 }} id="lin">
-          <div className="section-head">
-            <span className="section-kicker">Seu parceiro</span>
-            <h2 className="section-h2">
-              Conheça o <em>Lin</em>
-            </h2>
-            <p className="section-sub">
-              O Lin caminha com você durante toda a trilha. Conte a ele suas conquistas — ele celebra. Conte suas frustrações — ele ajuda a atravessar.
-            </p>
-          </div>
-          <div className="lin-showcase">
-            <div className="lin-stage">
-              <div className="lin-scene">
-                <div className="lin" dangerouslySetInnerHTML={{ __html: linSVG(linState) }} />
-                <h3 className="lin-title" id="linTitle">
-                  {linState === 'happy' ? 'Vamos em frente!' : linState === 'thinking' ? 'Pensando no próximo passo...' : linState === 'celebrate' ? 'Você está no caminho certo!' : "Pronto quando você estiver"}
-                </h3>
-                <p className="lin-desc" id="linDesc">
-                  {linState === 'happy'
-                    ? 'Você já deu o primeiro passo. Agora é só seguir a trilha e manter o ritmo.'
-                    : linState === 'thinking'
-                      ? 'Tudo bem parar para revisar: a clareza vem quando o cérebro processa o que aprendeu.'
-                      : linState === 'celebrate'
-                        ? 'A consistência faz a diferença — e o progresso já começou.'
-                        : 'Comece a primeira trilha e o Lin monta o baralho de revisão com você.'}
-                </p>
-                <button type="button" className="btn btn-primary" id="linCta" onClick={() => setLinState('celebrate')}>
-                  Escolher uma trilha
-                </button>
+            {METHOD.map((m) => (
+              <div key={m.num} className="method scroll-reveal">
+                <span className="method-num">{m.num}</span>
+                <h3 className="method-h3">{m.title}</h3>
+                <p>{m.text}</p>
+                <span className="method-ic">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" dangerouslySetInnerHTML={{ __html: m.icon }} />
+                </span>
               </div>
-            </div>
-            <div className="lin-picker">
-              <span className="lin-picker-label">Estados</span>
-              <div className="lin-picker-row" id="linPicker">
-                {(['idle', 'thinking', 'happy', 'sad', 'celebrate'] as const).map((state) => (
-                  <button
-                    key={state}
-                    type="button"
-                    className={`lin-chip ${linState === state ? 'on' : ''}`}
-                    onClick={() => setLinState(state)}
-                  >
-                    {state.charAt(0).toUpperCase() + state.slice(1)}
-                  </button>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </main>
@@ -427,13 +398,11 @@ export default function App() {
             SÃO PAULO · 2026
           </span>
           <nav className="foot-links">
-            <a href="#idiomas">Idiomas</a>
-            <a href="#stem">STEM</a>
-            <a href="#como-funciona">Como funciona</a>
-            <a href="#lin">Lin</a>
+            <a href="#idiomas" onClick={scrollTo('idiomas')}>Idiomas</a>
+            <a href="#sobre" onClick={scrollTo('sobre')}>Sobre</a>
           </nav>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

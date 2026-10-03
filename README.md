@@ -16,6 +16,7 @@ npm run build      # valida o conteúdo e gera dist/
 - `content/indice.json`: gerado por `npm run content`. Não edite à mão.
 - `content/legado/`: material anterior (alemão: 16 aulas escritas).
 - `src/config/social.ts`: URLs das redes sociais. `src/config/equipe.ts`: professores e depoimentos. `src/config/mascotes.ts`: liga os mascotes.
-- `docs/ROTEIRO.md`: plano das 30 rodadas.
+- `docs/ROTEIRO.md`: plano das 30 rodadas. `docs/PUBLICAR.md`: hospedagem e domínio. `docs/AUTENTICACAO.md`: login com Google e e-mail.
+- `src/config/livros.ts`: vitrine de livros. `src/config/equipe.ts`: professores e avaliações. `src/config/site.ts`: e-mail oficial.
 
 `src/data/`, `src/types.ts` e `server.ts` são do sistema anterior (API de aulas, Stripe, IA) e ainda não estão ligados ao site novo.

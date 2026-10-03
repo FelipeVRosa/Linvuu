@@ -4,21 +4,23 @@ Cada rodada é uma conversa de trabalho com entrega verificável. Meta: um site 
 
 ## Direção visual (decidida na rodada 1)
 - Plataforma entre Coursera, edX e Duolingo: branco, tipografia grande, botões arredondados, uma única cor de destaque.
+- Cada bloco da página tem sua cor de fundo (hero escuro, branco, cinza, tom quente) para o usuário separar as informações. Hover forte nos elementos clicáveis. Idiomas e STEM têm ícones e cores próprios.
+- A camada 1 de cada dia é "Comece aqui" (áudio palavra por palavra); vídeo é apoio opcional.
 - Sem mascote ao lado de idioma. Os mascotes (`public/mascots/`) só voltam depois de pintados, e só em momentos de feedback (acerto, sequência, conclusão). A chave é `src/config/mascotes.ts`.
 - Logo oficial em `public/brand/`.
 - Honestidade de status: nada aparece como "no ar" se não estiver publicado. Cada aula mostra seu próprio status.
 
 ## Fase A · Fundação (1–5)
-1. **Feita.** Limpeza, estrutura de 100 dias, home, catálogo, página de curso e de aula, redes sociais, rodapé grande.
+1. **Feita (rodadas 1 a 3).** Limpeza, estrutura de 100 dias, home, catálogo, página de curso e de aula, redes sociais, rodapé grande.
 2. Revisão no navegador (desktop e celular), acessibilidade (contraste, teclado, leitor de tela), imagem de compartilhamento, 404. Colocar o site no ar (Vercel, Netlify ou GitHub Pages) com domínio.
 3. Sistema de design: tokens, botões, campos, cartões, estados vazios e de erro, modo escuro opcional.
-4. Contas e progresso: login por e-mail/Google, salvar dia concluído e sequência. Decidir backend (Supabase ou o `server.ts`).
+4. Progresso do aluno: salvar dia concluído e sequência (o login com Google e e-mail já está programado na rodada 3; ver `docs/AUTENTICACAO.md`). Decidir onde guardar o progresso (Firestore ou o `server.ts`).
 5. Esquema definitivo de aula (v1) e validador em `npm run content:check`. Reordenar o alemão (as 16 aulas já escritas) dentro da trilha.
 
 ## Fase B · Player de aula (6–10)
-6. Player da camada Imersão: texto, áudio, tradução sob demanda, vocabulário clicável.
+6. Player do "Comece aqui" (ouvir e ler palavra por palavra) e da Imersão: texto, áudio, tradução sob demanda, vocabulário clicável.
 7. Player da camada Prática: múltipla escolha, lacunas, ordenação, tradução reversa (já existem no material de alemão).
-8. Vídeo-aula: incorporação, capítulos, legendas e transcrição.
+8. Vídeos de apoio: só nos pontos em que os alunos mais erram (a camada 1 é o "Comece aqui", com áudio palavra por palavra). Incorporação, legendas e transcrição.
 9. Revisão espaçada do que o aluno errou (o algoritmo SM-2 já existe no `server.ts`).
 10. Migrar as 16 aulas de alemão (Semana 1 e 2) para o player novo, trocando Tailwind e lucide pelo CSS do site.
 

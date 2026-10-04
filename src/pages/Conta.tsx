@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
-import { mensagemDeErro } from '../lib/firebase';
+import { googleAtivo, mensagemDeErro } from '../lib/firebase';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 
@@ -51,13 +51,17 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
         <p className="conta-sub">{cadastro ? 'Salve seu progresso e continue de onde parou.' : 'Bom te ver de novo.'}</p>
 
         {!configurado && (
-          <p className="conta-aviso" role="status">O login ainda não foi ativado neste ambiente. Assim que a Linvuu o ativar, os botões abaixo passam a funcionar.</p>
+          <p className="conta-aviso" role="status">O login ainda não foi ativado neste ambiente.</p>
         )}
 
-        <button type="button" className="btn btn-google" disabled={!configurado || ocupado} onClick={() => executar(entrarComGoogle)}>
-          <GoogleG /> Continuar com Google
-        </button>
-        <div className="conta-ou"><span>ou com e-mail</span></div>
+        {googleAtivo && (
+          <>
+            <button type="button" className="btn btn-google" disabled={!configurado || ocupado} onClick={() => executar(entrarComGoogle)}>
+              <GoogleG /> Continuar com Google
+            </button>
+            <div className="conta-ou"><span>ou com e-mail</span></div>
+          </>
+        )}
 
         <form onSubmit={enviar} noValidate={false}>
           {cadastro && (

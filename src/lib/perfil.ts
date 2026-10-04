@@ -1,7 +1,7 @@
 import { carregarDb } from './firebase';
 
 /** Coleção do Firestore com um documento por usuário (id = uid do Auth). Precisa bater com as regras publicadas. */
-export const COLECAO_USUARIOS = 'usuarios';
+export const COLECAO_USUARIOS = 'users';
 
 export interface Perfil {
   nome: string;

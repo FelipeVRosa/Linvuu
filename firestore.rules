@@ -5,7 +5,7 @@ service cloud.firestore {
   match /databases/{database}/documents {
 
     // Um documento por usuário, com o mesmo id do login. Cada pessoa só enxerga e altera o próprio.
-    match /usuarios/{uid} {
+    match /users/{uid} {
       allow read: if request.auth != null && request.auth.uid == uid;
 
       // Criação (é o que o site faz no cadastro): campos fixos e começando do zero.

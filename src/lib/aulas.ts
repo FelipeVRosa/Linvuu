@@ -6,6 +6,8 @@ export interface LinhaDialogo { personagem: string; ru: string; pt: string; audi
 export interface ExemploGramatica { ru: string; pt: string }
 export interface LinhaTabela { nominativo: string; acusativo: string; exemplo: string }
 export interface Pergunta { pergunta: string; resposta: string }
+export interface ErroComum { errado: string; certo: string; motivo: string }
+export interface TabelaTitulada { titulo?: string; linhas: Record<string, string>[] }
 
 export type TipoExercicio = 'multiple-choice' | 'audio-recognition' | 'fill-gap' | 'sentence-ordering' | 'producao';
 export interface Exercicio {
@@ -21,7 +23,7 @@ export type Bloco =
   | { tipo: 'palavras'; min: number; itens: Palavra[] }
   | { tipo: 'dialogo'; min: number; titulo: string; contexto?: string; linhas: LinhaDialogo[] }
   | { tipo: 'texto'; min: number; titulo: string; ru: string; pt: string; perguntas: Pergunta[] }
-  | { tipo: 'gramatica'; min: number; titulo: string; explicacao: string; exemplos?: ExemploGramatica[]; tabela?: LinhaTabela[] }
+  | { tipo: 'gramatica'; min: number; titulo: string; explicacao: string; comparacao?: string; exemplos?: ExemploGramatica[]; tabela?: Record<string, string>[]; tabelas?: TabelaTitulada[]; erros?: ErroComum[]; tag?: string }
   | { tipo: 'exercicios'; min: number; itens: Exercicio[] };
 
 export interface SessaoAula { sessao: string; titulo: string; duracaoMin: number; blocos: Bloco[] }

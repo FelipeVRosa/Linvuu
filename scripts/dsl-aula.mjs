@@ -10,11 +10,19 @@ export const palavras = (min, itens) => ({ tipo: 'palavras', min, itens: itens.m
 export const dialogo = (min, titulo, contexto, linhas) => ({ tipo: 'dialogo', min, titulo, contexto, linhas: linhas.map(([personagem, ru, pt]) => ({ personagem, ru: `— ${ru}`, pt: `— ${pt}`, audio: ru })) });
 /** perguntas: [pergunta, resposta] */
 export const texto = (min, titulo, ru, pt, perguntas) => ({ tipo: 'texto', min, titulo, ru, pt, perguntas: perguntas.map(([pergunta, resposta]) => ({ pergunta, resposta })) });
-/** exemplos: [[ru, pt]]; tabela: lista de objetos (as chaves viram colunas) */
-export const gramatica = (min, titulo, explicacao, { exemplos, tabela } = {}) => ({
+/**
+ * Gramática. explicacao: explique em português ANTES de usar termos em russo.
+ * Opções: exemplos [[ru, pt]]; tabela (lista de objetos, as chaves viram colunas); tabelas [{titulo, linhas}];
+ * comparacao (como é em português); erros [[errado, certo, motivo]]; tag (categoria na aba Gramática).
+ */
+export const gramatica = (min, titulo, explicacao, { exemplos, tabela, tabelas, comparacao, erros, tag } = {}) => ({
   tipo: 'gramatica', min, titulo, explicacao,
+  ...(comparacao ? { comparacao } : {}),
   ...(exemplos ? { exemplos: exemplos.map(([ru, pt]) => ({ ru, pt })) } : {}),
   ...(tabela ? { tabela } : {}),
+  ...(tabelas ? { tabelas } : {}),
+  ...(erros ? { erros: erros.map(([errado, certo, motivo]) => ({ errado, certo, motivo })) } : {}),
+  ...(tag ? { tag } : {}),
 });
 
 // Exercícios (o id é gerado por exercicios()).

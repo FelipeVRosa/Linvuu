@@ -3,28 +3,112 @@
   "dia": 43,
   "fase": 5,
   "nivel": "a2",
-  "status": "planejada",
-  "titulo": "No mercado",
-  "objetivo": "Pedir quantidades e perguntar preços.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Gramática: gênero e plural: O plural",
+  "objetivo": "Aula 11, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Gramática: gênero e plural",
+    "objetivo": "Entender que o russo não tem artigos, descobrir o gênero de um substantivo pela terminação e formar o plural regular.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "O plural",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva o plural que você já sabe: друг, брат, сестра, ребёнок, человек."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "O plural regular",
+        "explicacao": "Masculino: consoante + -ы (стол → столы); -й e -ь viram -и (музей → музеи, словарь → словари). Feminino: -а vira -ы; -я e -ь viram -и (книга → книги, неделя → недели, ночь → ночи). Neutro: -о vira -а e -е vira -я (окно → окна, море → моря). Regra de ortografia: depois de г, к, х, ж, ч, ш, щ nunca se escreve -ы, e sim -и (книга → книги, ручка → ручки). Você já viu irregulares: друг → друзья, брат → братья, ребёнок → дети, человек → люди.",
+        "comparacao": "em português o plural quase sempre é um -s. Em russo a terminação muda e depende do gênero.",
+        "tabela": [
+          {
+            "singular": "стол",
+            "plural": "столы",
+            "pt": "mesas"
+          },
+          {
+            "singular": "музей",
+            "plural": "музеи",
+            "pt": "museus"
+          },
+          {
+            "singular": "словарь",
+            "plural": "словари",
+            "pt": "dicionários"
+          },
+          {
+            "singular": "книга",
+            "plural": "книги",
+            "pt": "livros (г pede -и)"
+          },
+          {
+            "singular": "ручка",
+            "plural": "ручки",
+            "pt": "canetas (к pede -и)"
+          },
+          {
+            "singular": "неделя",
+            "plural": "недели",
+            "pt": "semanas"
+          },
+          {
+            "singular": "окно",
+            "plural": "окна",
+            "pt": "janelas"
+          },
+          {
+            "singular": "море",
+            "plural": "моря",
+            "pt": "mares"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "книгы",
+            "certo": "книги",
+            "motivo": "Depois de г, к, х, ж, ч, ш, щ escreve-se -и, nunca -ы."
+          }
+        ],
+        "tag": "Substantivos"
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Моя комната / Meu quarto",
+        "ru": "Это моя комната. Здесь есть окна, столы и книги. Окна большие, а столы маленькие. Я люблю читать здесь.",
+        "pt": "Este é o meu quarto. Aqui há janelas, mesas e livros. As janelas são grandes e as mesas são pequenas. Eu gosto de ler aqui.",
+        "perguntas": [
+          {
+            "pergunta": "Что есть в комнате?",
+            "resposta": "Окна, столы и книги"
+          },
+          {
+            "pergunta": "Какие окна?",
+            "resposta": "Большие"
+          },
+          {
+            "pergunta": "Какие столы?",
+            "resposta": "Маленькие"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga o plural de «книга, стол, окно, ручка, неделя» e a frase «У меня есть книги и ручки.»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-011.json",
+  "responsavel": null
 }

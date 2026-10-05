@@ -5,7 +5,7 @@ import path from 'node:path';
 const raiz = path.resolve(import.meta.dirname, '..');
 const SITE = 'https://linvuu.com.br';
 const { cursos } = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'cursos.json'), 'utf8'));
-const urls = ['/', '/cursos', '/privacidade', '/termos', ...cursos.map((c) => `/curso/${c.id}`)];
+const urls = ['/', '/cursos', '/gramatica/ru', '/privacidade', '/termos', ...cursos.map((c) => `/curso/${c.id}`)];
 for (const c of cursos.filter((x) => x.area === 'idiomas')) {
   const dir = path.join(raiz, 'content', 'idiomas', c.id);
   for (const f of fs.readdirSync(dir).filter((x) => /^dia-\d+\.json$/.test(x)).sort()) {

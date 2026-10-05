@@ -27,6 +27,7 @@ export function Footer() {
         <nav aria-label="Linvuu">
           <h2 className="foot-h">Linvuu</h2>
           <Link to="/cursos">Todos os cursos</Link>
+          <Link to="/gramatica/ru">Gramática</Link>
           <Link to="/#metodo">Método</Link>
           <Link to="/#avaliacoes">Avaliações</Link>
           <Link to="/#faq">Dúvidas</Link>

@@ -3,28 +3,143 @@
   "dia": 42,
   "fase": 5,
   "nivel": "a2",
-  "status": "planejada",
-  "titulo": "No restaurante",
-  "objetivo": "Ler o cardápio, pedir e pagar a conta.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Gramática: gênero e plural: Como descobrir o gênero",
+  "objetivo": "Aula 11, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 11,
+    "titulo": "Gramática: gênero e plural",
+    "objetivo": "Entender que o russo não tem artigos, descobrir o gênero de um substantivo pela terminação e formar o plural regular.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Como descobrir o gênero",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva o gênero de: дом, книга, окно, день, ночь, имя."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "O gênero pela terminação",
+        "explicacao": "Olhe a última letra do substantivo no singular. Masculino: termina em consoante (стол, дом), em -й (музей) ou em -ь (день, словарь). Feminino: termina em -а ou -я (книга, неделя), ou em -ь (ночь, тетрадь). Neutro: termina em -о, -е ou -мя (окно, море, имя, время). Dois cuidados: (1) palavras em -ь podem ser masculinas ou femininas e não há regra, então decore o gênero junto com a palavra; (2) homens com final em -а ou -я são masculinos: папа, дедушка, дядя, мужчина.",
+        "comparacao": "o gênero português também se decora («o dia», «a noite»), mas o russo quase sempre mostra o gênero na terminação. Cuidado: o gênero russo nem sempre bate com o português (книга é feminino, «livro» é masculino; письмо é neutro, «carta» é feminina).",
+        "tabela": [
+          {
+            "genero": "masculino",
+            "terminacao": "consoante, -й, -ь",
+            "exemplos": "стол, дом, музей, день"
+          },
+          {
+            "genero": "feminino",
+            "terminacao": "-а, -я, -ь",
+            "exemplos": "книга, неделя, ночь, тетрадь"
+          },
+          {
+            "genero": "neutro",
+            "terminacao": "-о, -е, -мя",
+            "exemplos": "окно, море, имя, время"
+          },
+          {
+            "genero": "exceção: masculino",
+            "terminacao": "-а, -я (homens)",
+            "exemplos": "папа, дедушка, дядя, мужчина"
+          },
+          {
+            "genero": "exceção: neutro",
+            "terminacao": "vogal de palavra estrangeira",
+            "exemplos": "кафе, такси, пальто, кино (não mudam)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Папа — feminino, porque termina em -а.",
+            "certo": "Папа é masculino.",
+            "motivo": "Homens são masculinos, mesmo com -а/-я."
+          },
+          {
+            "errado": "мой книга",
+            "certo": "моя книга",
+            "motivo": "O possessivo concorda com o gênero de «книга» (feminino)."
+          }
+        ],
+        "tag": "Substantivos"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "неделя",
+            "translit": "niediélia",
+            "pt": "semana (feminino)",
+            "en": "week",
+            "audio": "неделя"
+          },
+          {
+            "ru": "музей",
+            "translit": "muziéi",
+            "pt": "museu (masculino)",
+            "en": "museum",
+            "audio": "музей"
+          },
+          {
+            "ru": "море",
+            "translit": "móre",
+            "pt": "mar (neutro)",
+            "en": "sea",
+            "audio": "море"
+          },
+          {
+            "ru": "гость",
+            "translit": "gost",
+            "pt": "convidado (masculino)",
+            "en": "guest",
+            "audio": "гость"
+          },
+          {
+            "ru": "дверь",
+            "translit": "dvier",
+            "pt": "porta (feminino)",
+            "en": "door",
+            "audio": "дверь"
+          },
+          {
+            "ru": "здание",
+            "translit": "zdánie",
+            "pt": "prédio (neutro)",
+            "en": "building",
+            "audio": "здание"
+          },
+          {
+            "ru": "месяц",
+            "translit": "miésiats",
+            "pt": "mês (masculino)",
+            "en": "month",
+            "audio": "месяц"
+          },
+          {
+            "ru": "фамилия",
+            "translit": "famíliia",
+            "pt": "sobrenome (feminino)",
+            "en": "surname",
+            "audio": "фамилия"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga com o possessivo certo: «мой дом», «моя неделя», «моё море», «мой день», «моя ночь»."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-011.json",
+  "responsavel": null
 }

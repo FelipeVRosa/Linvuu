@@ -5,7 +5,7 @@ import { falar, falarLista, parar, temVoz } from '../lib/audio';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
-const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino' };
+const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino' };
 
 function Audio({ texto, idioma, rotulo = 'Ouvir' }: { texto: string; idioma: string; rotulo?: string }) {
   return (
@@ -30,7 +30,7 @@ function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
   );
 }
 
-function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
+export function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
   const cols = Object.keys(linhas[0] ?? {});
   return (
     <div className="tabela-rolagem">
@@ -124,6 +124,25 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   );
 }
 
+export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string }) {
+  return (
+    <section className="gramatica">
+      <h3 className="bloco-sub">{b.titulo}</h3>
+      <p>{b.explicacao}</p>
+      {b.comparacao && <p className="callout comparacao"><strong>Em português:</strong> {b.comparacao}</p>}
+      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
+      {b.tabela && <Tabela linhas={b.tabela} />}
+      {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
+      {b.erros && (
+        <div className="erros">
+          <h4 className="bloco-sub">Erros comuns</h4>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo}</span><small>{e.motivo}</small></li>)}</ul>
+        </div>
+      )}
+    </section>
+  );
+}
+
 function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
@@ -179,14 +198,7 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
         {b.perguntas.map((p) => <details key={p.pergunta} className="pergunta"><summary lang={idioma}>{p.pergunta}</summary><p lang={idioma}>{p.resposta}</p></details>)}
       </section>
     );
-    case 'gramatica': return (
-      <section>
-        <h3 className="bloco-sub">{b.titulo}</h3>
-        <p>{b.explicacao}</p>
-        {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
-        {b.tabela && <Tabela linhas={b.tabela as unknown as Record<string, string>[]} />}
-      </section>
-    );
+    case 'gramatica': return <Gramatica b={b} idioma={idioma} />;
     case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} />;
   }
 }

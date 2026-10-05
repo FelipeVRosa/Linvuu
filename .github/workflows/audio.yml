@@ -36,10 +36,25 @@ jobs:
       - name: Gerar os MP3
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite=15 --amostra
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite=15 --amostra 2>&1 | tee /tmp/saida.txt
           else
-            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="${{ inputs.limite }}"
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="${{ inputs.limite }}" 2>&1 | tee /tmp/saida.txt
           fi
+      - name: Relatório (duração e tamanho de cada MP3)
+        if: always()
+        run: |
+          {
+            cat /tmp/saida.txt
+            echo "--- arquivos:"
+            for f in public/audio/${IDIOMA}/*.mp3; do
+              [ -e "$f" ] || continue
+              d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" 2>/dev/null)
+              c=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,bit_rate -of csv=p=0 "$f" 2>/dev/null)
+              echo "$(basename "$f") $(stat -c%s "$f") bytes, ${d}s, $c"
+            done
+          } > /tmp/relatorio.txt
+          cat /tmp/relatorio.txt
+          echo "::notice title=Relatorio de audio::$(sed ':a;N;$!ba;s/\n/%0A/g' /tmp/relatorio.txt)"
       - name: Guardar para ouvir (baixe o .zip em "Artifacts")
         if: always()
         uses: actions/upload-artifact@v4

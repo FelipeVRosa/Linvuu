@@ -50,11 +50,11 @@ Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais lo
 | 23 | Perfekt 3: haben ou sein? (schon, noch nicht, noch nie) | no ar |
 | 24 | Präteritum: war, hatte e os modais; reconhecer o Präteritum dos textos | no ar |
 | 25 | Os quatro casos: visão geral e quadro dos artigos | no ar |
-| 26 | Dativo 1: artigos e pronomes | a escrever |
-| 27 | Dativo 2: verbos com dativo e a ordem dativo/acusativo | a escrever |
-| 28 | Dativo 3: aus, bei, mit, nach, seit, von, zu | a escrever |
-| 29 | Acusativo: durch, für, gegen, ohne, um + Wechselpräpositionen 1 (Wo? × Wohin?) | a escrever |
-| 30 | Wechselpräpositionen 2: stehen/stellen, liegen/legen, sitzen/setzen, hängen | a escrever |
+| 26 | Dativo 1: artigos e pronomes (e a ordem dativo/acusativo) | no ar |
+| 27 | Dativo 2: verbos com dativo e sensações com «mir» | no ar |
+| 28 | Dativo 3: aus, bei, mit, nach, seit, von, zu | no ar |
+| 29 | Acusativo: durch, für, gegen, ohne, um + Wechselpräpositionen 1 (Wo? × Wohin?) | no ar |
+| 30 | Verbos de posição (stehen/stellen…) e Declinação-N | no ar |
 | 31 | Revisão e simulado A2 (parte 1) | a escrever |
 | 32 a 34 | Adjetivos em três passos (definido, indefinido, sem artigo) | a escrever |
 | 35 | Comparativo e superlativo | a escrever |

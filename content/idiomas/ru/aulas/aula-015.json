@@ -5,363 +5,452 @@
   "ciclo": 1,
   "nivel": "a1",
   "status": "publicada",
-  "titulo": "Dias da semana e horas",
-  "objetivo": "Dizer os dias da semana, perguntar e dizer as horas e marcar um compromisso com «в» + dia e «в» + hora.",
+  "titulo": "Gramática: as duas conjugações",
+  "objetivo": "Reconhecer a 1ª e a 2ª conjugação, conjugar os verbos no presente sem errar as terminações e conhecer os verbos irregulares mais usados.",
   "duracaoTotalMin": 120,
   "sessoes": [
     {
       "sessao": "S1",
-      "titulo": "Os dias da semana",
+      "titulo": "O que é conjugar",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva 5 frases com o que você faz e o que você gosta de fazer."
-        },
-        {
-          "tipo": "palavras",
-          "min": 10,
-          "itens": [
-            {
-              "ru": "понедельник",
-              "translit": "panidiélnik",
-              "pt": "segunda-feira",
-              "en": "Monday",
-              "audio": "понедельник"
-            },
-            {
-              "ru": "вторник",
-              "translit": "ftórnik",
-              "pt": "terça-feira",
-              "en": "Tuesday",
-              "audio": "вторник"
-            },
-            {
-              "ru": "среда",
-              "translit": "sridá",
-              "pt": "quarta-feira",
-              "en": "Wednesday",
-              "audio": "среда"
-            },
-            {
-              "ru": "четверг",
-              "translit": "chitviérk",
-              "pt": "quinta-feira",
-              "en": "Thursday",
-              "audio": "четверг"
-            },
-            {
-              "ru": "пятница",
-              "translit": "piátnitsa",
-              "pt": "sexta-feira",
-              "en": "Friday",
-              "audio": "пятница"
-            },
-            {
-              "ru": "суббота",
-              "translit": "subóta",
-              "pt": "sábado",
-              "en": "Saturday",
-              "audio": "суббота"
-            },
-            {
-              "ru": "воскресенье",
-              "translit": "vaskriséni",
-              "pt": "domingo",
-              "en": "Sunday",
-              "audio": "воскресенье"
-            },
-            {
-              "ru": "выходные",
-              "translit": "vykhadnýie",
-              "pt": "fim de semana (só plural)",
-              "en": "weekend",
-              "audio": "выходные"
-            },
-            {
-              "ru": "рабочий день",
-              "translit": "rabóchii dien",
-              "pt": "dia útil",
-              "en": "working day",
-              "audio": "рабочий день"
-            },
-            {
-              "ru": "каждый",
-              "translit": "kázhdyi",
-              "pt": "cada, todo",
-              "en": "every",
-              "audio": "каждый"
-            }
-          ]
+          "enunciado": "Escreva as 6 formas de «работать» e de «читать» de memória."
         },
         {
           "tipo": "gramatica",
-          "min": 10,
-          "titulo": "Dias da semana: «в» + dia",
-          "explicacao": "Em russo, os dias da semana não levam o «-feira» e se escrevem com letra minúscula, como em português. Para dizer «na segunda», use «в» + o dia: «в понедельник». Os dias que terminam em -а trocam para -у (acusativo): «в пятницу», «в субботу», «в среду». Antes de «вторник» usa-se «во»: «во вторник». «Воскресенье» não muda: «в воскресенье».",
-          "comparacao": "em português dizemos «na segunda» ou «às segundas». Em russo o dia leva só «в» e a terminação do acusativo.",
-          "tabela": [
+          "min": 12,
+          "titulo": "Conjugar: as duas conjugações do presente",
+          "explicacao": "Conjugar é mudar o final do verbo para mostrar QUEM faz a ação: eu falo, tu falas, ele fala. Em português há três grupos (-ar, -er, -ir). O presente russo tem só DUAS conjugações, e cada uma tem as suas terminações. Passo a passo: (1) tire o -ть do infinitivo para achar a raiz; (2) descubra a conjugação do verbo; (3) acrescente as seis terminações. 1ª conjugação: -ю, -ешь, -ет, -ем, -ете, -ют (depois de consoante, -у e -ут). 2ª conjugação: -ю, -ишь, -ит, -им, -ите, -ят (depois de ж, ч, ш, щ, -у e -ат). A diferença está na vogal: е na 1ª, и na 2ª.",
+          "comparacao": "o infinitivo português já mostra o grupo (-ar, -er, -ir). O infinitivo russo -ть sozinho não basta: o grupo precisa ser aprendido junto com o verbo; a sessão seguinte dá as regras práticas.",
+          "tabelas": [
             {
-              "dia": "понедельник",
-              "forma": "в понедельник",
-              "pt": "na segunda"
+              "titulo": "As terminações",
+              "linhas": [
+                {
+                  "pronome": "я",
+                  "conj1": "-ю / -у",
+                  "conj2": "-ю / -у"
+                },
+                {
+                  "pronome": "ты",
+                  "conj1": "-ешь",
+                  "conj2": "-ишь"
+                },
+                {
+                  "pronome": "он / она",
+                  "conj1": "-ет",
+                  "conj2": "-ит"
+                },
+                {
+                  "pronome": "мы",
+                  "conj1": "-ем",
+                  "conj2": "-им"
+                },
+                {
+                  "pronome": "вы",
+                  "conj1": "-ете",
+                  "conj2": "-ите"
+                },
+                {
+                  "pronome": "они",
+                  "conj1": "-ют / -ут",
+                  "conj2": "-ят / -ат"
+                }
+              ]
             },
             {
-              "dia": "вторник",
-              "forma": "во вторник",
-              "pt": "na terça"
-            },
-            {
-              "dia": "среда",
-              "forma": "в среду",
-              "pt": "na quarta"
-            },
-            {
-              "dia": "четверг",
-              "forma": "в четверг",
-              "pt": "na quinta"
-            },
-            {
-              "dia": "пятница",
-              "forma": "в пятницу",
-              "pt": "na sexta"
-            },
-            {
-              "dia": "суббота",
-              "forma": "в субботу",
-              "pt": "no sábado"
-            },
-            {
-              "dia": "воскресенье",
-              "forma": "в воскресенье",
-              "pt": "no domingo"
+              "titulo": "Um exemplo de cada",
+              "linhas": [
+                {
+                  "pronome": "я",
+                  "conj1": "читаю",
+                  "conj2": "говорю"
+                },
+                {
+                  "pronome": "ты",
+                  "conj1": "читаешь",
+                  "conj2": "говоришь"
+                },
+                {
+                  "pronome": "он / она",
+                  "conj1": "читает",
+                  "conj2": "говорит"
+                },
+                {
+                  "pronome": "мы",
+                  "conj1": "читаем",
+                  "conj2": "говорим"
+                },
+                {
+                  "pronome": "вы",
+                  "conj1": "читаете",
+                  "conj2": "говорите"
+                },
+                {
+                  "pronome": "они",
+                  "conj1": "читают",
+                  "conj2": "говорят"
+                }
+              ]
             }
           ],
           "erros": [
             {
-              "errado": "в Понедельник",
-              "certo": "в понедельник",
-              "motivo": "Dia da semana não leva maiúscula no meio da frase."
+              "errado": "Мы говорем.",
+              "certo": "Мы говорим.",
+              "motivo": "«говорить» é da 2ª conjugação: -им."
             },
             {
-              "errado": "на пятница",
-              "certo": "в пятницу",
-              "motivo": "Use «в» e troque -а por -у."
+              "errado": "Ты читаишь.",
+              "certo": "Ты читаешь.",
+              "motivo": "«читать» é da 1ª conjugação: -ешь."
             }
           ],
-          "tag": "Tempo"
-        },
-        {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Diga os 7 dias em ordem, duas vezes. Depois: «Я работаю в понедельник. Я отдыхаю в субботу.»"
-        }
-      ]
-    },
-    {
-      "sessao": "S2",
-      "titulo": "As horas",
-      "duracaoMin": 30,
-      "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os 7 dias da semana de memória."
+          "tag": "Verbos"
         },
         {
           "tipo": "palavras",
           "min": 8,
           "itens": [
             {
-              "ru": "час",
-              "translit": "chas",
-              "pt": "hora",
-              "en": "hour",
-              "audio": "час"
+              "ru": "танцевать",
+              "translit": "tantsevát",
+              "pt": "dançar",
+              "en": "to dance",
+              "audio": "танцевать"
             },
             {
-              "ru": "минута",
-              "translit": "minúta",
-              "pt": "minuto",
-              "en": "minute",
-              "audio": "минута"
+              "ru": "рисовать",
+              "translit": "risavát",
+              "pt": "desenhar",
+              "en": "to draw",
+              "audio": "рисовать"
             },
             {
-              "ru": "половина",
-              "translit": "palavína",
-              "pt": "metade",
-              "en": "half",
-              "audio": "половина"
+              "ru": "путешествовать",
+              "translit": "putishéstvavat",
+              "pt": "viajar",
+              "en": "to travel",
+              "audio": "путешествовать"
             },
             {
-              "ru": "ровно",
-              "translit": "róvna",
-              "pt": "em ponto",
-              "en": "exactly",
-              "audio": "ровно"
+              "ru": "видеть",
+              "translit": "vídit",
+              "pt": "ver",
+              "en": "to see",
+              "audio": "видеть"
             },
             {
-              "ru": "утром",
-              "translit": "útram",
-              "pt": "de manhã",
-              "en": "in the morning",
-              "audio": "утром"
+              "ru": "слышать",
+              "translit": "slýshat",
+              "pt": "ouvir (perceber o som)",
+              "en": "to hear",
+              "audio": "слышать"
             },
             {
-              "ru": "днём",
-              "translit": "dniom",
-              "pt": "durante o dia, à tarde",
-              "en": "during the day",
-              "audio": "днём"
+              "ru": "просить",
+              "translit": "prasít",
+              "pt": "pedir",
+              "en": "to ask for",
+              "audio": "просить"
             },
             {
-              "ru": "вечером",
-              "translit": "viécheram",
-              "pt": "à noite (início)",
-              "en": "in the evening",
-              "audio": "вечером"
+              "ru": "платить",
+              "translit": "platít",
+              "pt": "pagar",
+              "en": "to pay",
+              "audio": "платить"
             },
             {
-              "ru": "ночью",
-              "translit": "nóchiu",
-              "pt": "de madrugada",
-              "en": "at night",
-              "audio": "ночью"
+              "ru": "ходить",
+              "translit": "khadít",
+              "pt": "andar, ir (habitual)",
+              "en": "to walk, to go",
+              "audio": "ходить"
             }
           ]
         },
         {
-          "tipo": "gramatica",
-          "min": 12,
-          "titulo": "Dizer as horas",
-          "explicacao": "Para perguntar: «Который час?» ou «Сколько времени?». Para responder, «час» muda como «рубль»: 1 → «час»; 2, 3 e 4 → «часа»; 5 a 12 → «часов». Para as meias horas, diz-se «половина» + a hora SEGUINTE no genitivo: 2h30 = «половина третьего» (literalmente «a metade da terceira»). Para dizer a que horas algo acontece, use «в» + hora: «в три часа», «в пять часов». «Один час» vira só «в час».",
-          "comparacao": "em português a meia hora usa a hora que passou («duas e meia»). Em russo usa-se a hora que vem: «a metade da terceira».",
-          "exemplos": [
-            {
-              "ru": "Который час?",
-              "pt": "Que horas são?"
-            },
-            {
-              "ru": "Сейчас пять часов.",
-              "pt": "Agora são cinco horas."
-            },
-            {
-              "ru": "В котором часу урок?",
-              "pt": "A que horas é a aula?"
-            }
-          ],
-          "tabela": [
-            {
-              "hora": "1:00",
-              "russo": "час",
-              "exemplo": "Сейчас час. / Урок в час."
-            },
-            {
-              "hora": "2:00",
-              "russo": "два часа",
-              "exemplo": "Урок в два часа."
-            },
-            {
-              "hora": "4:00",
-              "russo": "четыре часа",
-              "exemplo": "Сейчас четыре часа."
-            },
-            {
-              "hora": "5:00",
-              "russo": "пять часов",
-              "exemplo": "Я работаю в пять часов."
-            },
-            {
-              "hora": "12:00",
-              "russo": "двенадцать часов",
-              "exemplo": "Я обедаю в двенадцать часов."
-            },
-            {
-              "hora": "2:30",
-              "russo": "половина третьего",
-              "exemplo": "Урок в половине третьего."
-            },
-            {
-              "hora": "3:30",
-              "russo": "половина четвёртого",
-              "exemplo": "Сейчас половина четвёртого."
-            },
-            {
-              "hora": "4:30",
-              "russo": "половина пятого",
-              "exemplo": "Мы обедаем в половине пятого."
-            }
-          ],
-          "tag": "Tempo"
-        },
-        {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Pergunte e responda: «Который час? — Сейчас три часа.» Repita com 5 horas diferentes."
+          "enunciado": "Conjugue em voz alta, de memória, «танцевать» (1ª conjugação) e «видеть» (2ª): as seis formas de cada."
         }
       ]
     },
     {
-      "sessao": "S3",
-      "titulo": "Marcar um compromisso",
+      "sessao": "S2",
+      "titulo": "Como saber a conjugação",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva as horas: 1:00, 3:00, 5:00, 9:00, 2:30."
+          "enunciado": "Escreva as terminações da 1ª e da 2ª conjugação lado a lado."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "Como reconhecer a conjugação pelo infinitivo",
+          "explicacao": "Regras práticas: verbos em -ить são da 2ª conjugação (говорить, любить, платить). Verbos em -еть são quase todos da 2ª (смотреть, видеть, сидеть), com exceções como «уметь» (умею) e «хотеть» (misto). Verbos em -ать e -ять são quase todos da 1ª (читать, делать, гулять), menos poucas exceções da 2ª: слышать, держать, дышать, лежать, стоять. Verbos em -овать e -евать são da 1ª e trocam por -ую (рисовать → рисую). Verbos em -авать são da 1ª (вставать → встаю). Na 2ª conjugação, algumas consoantes mudam SÓ na forma «я»: б → бл (любить → люблю), в → вл (готовить → готовлю), д → ж (видеть → вижу), т → ч (платить → плачу), с → ш (просить → прошу). As outras formas ficam normais: любишь, видишь.",
+          "tabelas": [
+            {
+              "titulo": "Infinitivo → conjugação",
+              "linhas": [
+                {
+                  "terminacao": "-ать, -ять",
+                  "conjugacao": "1ª",
+                  "exemplo": "читать, делать, гулять, работать"
+                },
+                {
+                  "terminacao": "-овать, -евать",
+                  "conjugacao": "1ª (-ую)",
+                  "exemplo": "рисовать → рисую, танцевать → танцую"
+                },
+                {
+                  "terminacao": "-авать",
+                  "conjugacao": "1ª (-аю)",
+                  "exemplo": "вставать → встаю"
+                },
+                {
+                  "terminacao": "-ить",
+                  "conjugacao": "2ª",
+                  "exemplo": "говорить, любить, платить, просить"
+                },
+                {
+                  "terminacao": "-еть",
+                  "conjugacao": "2ª",
+                  "exemplo": "смотреть, видеть, сидеть (exceção: уметь, хотеть)"
+                },
+                {
+                  "terminacao": "exceções em -ать/-ять",
+                  "conjugacao": "2ª",
+                  "exemplo": "слышать, держать, дышать, лежать, стоять"
+                }
+              ]
+            },
+            {
+              "titulo": "Mudança da consoante só na forma «я» (2ª conjugação)",
+              "linhas": [
+                {
+                  "troca": "б → бл",
+                  "exemplo": "любить → я люблю, ты любишь"
+                },
+                {
+                  "troca": "в → вл",
+                  "exemplo": "готовить → я готовлю, ты готовишь"
+                },
+                {
+                  "troca": "д → ж",
+                  "exemplo": "видеть → я вижу, ты видишь; ходить → я хожу, ты ходишь"
+                },
+                {
+                  "troca": "т → ч",
+                  "exemplo": "платить → я плачу, ты платишь"
+                },
+                {
+                  "troca": "с → ш",
+                  "exemplo": "просить → я прошу, ты просишь"
+                }
+              ]
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Я любю.",
+              "certo": "Я люблю.",
+              "motivo": "Na 2ª conjugação, б vira бл na forma «я»."
+            },
+            {
+              "errado": "Я видю.",
+              "certo": "Я вижу.",
+              "motivo": "д vira ж na forma «я»."
+            }
+          ],
+          "tag": "Verbos"
+        },
+        {
+          "tipo": "palavras",
+          "min": 8,
+          "itens": [
+            {
+              "ru": "пить",
+              "translit": "pit",
+              "pt": "beber",
+              "en": "to drink",
+              "audio": "пить"
+            },
+            {
+              "ru": "есть (comer)",
+              "translit": "yest",
+              "pt": "comer (diferente de «есть» = há)",
+              "en": "to eat",
+              "audio": "есть (comer)"
+            },
+            {
+              "ru": "мочь",
+              "translit": "moch",
+              "pt": "poder",
+              "en": "can",
+              "audio": "мочь"
+            },
+            {
+              "ru": "спать",
+              "translit": "spat",
+              "pt": "dormir",
+              "en": "to sleep",
+              "audio": "спать"
+            },
+            {
+              "ru": "уметь",
+              "translit": "umiét",
+              "pt": "saber (fazer algo)",
+              "en": "to know how",
+              "audio": "уметь"
+            },
+            {
+              "ru": "помнить",
+              "translit": "pómnit",
+              "pt": "lembrar",
+              "en": "to remember",
+              "audio": "помнить"
+            },
+            {
+              "ru": "сидеть",
+              "translit": "sidiét",
+              "pt": "estar sentado",
+              "en": "to sit",
+              "audio": "сидеть"
+            },
+            {
+              "ru": "лежать",
+              "translit": "lezhát",
+              "pt": "estar deitado",
+              "en": "to lie",
+              "audio": "лежать"
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 5,
+          "enunciado": "Diga em voz alta: «Я люблю. Я вижу. Я хожу. Я плачу. Я прошу.» e as seis formas de «любить»."
+        }
+      ]
+    },
+    {
+      "sessao": "S3",
+      "titulo": "Os irregulares mais usados",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva as 6 formas de «видеть» e de «просить»."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 10,
+          "titulo": "Os verbos irregulares que você mais vai usar",
+          "explicacao": "Poucos verbos fogem da regra, mas aparecem todo dia. Decore estas formas. Atenção: o verbo «есть» (comer) é diferente do «есть» de «У меня есть» (há, existe): «Я ем суп» × «У меня есть суп». «Идти» e «хотеть» já apareceram em aulas anteriores.",
+          "tabela": [
+            {
+              "pronome": "я",
+              "пить": "пью",
+              "есть": "ем",
+              "мочь": "могу",
+              "спать": "сплю"
+            },
+            {
+              "pronome": "ты",
+              "пить": "пьёшь",
+              "есть": "ешь",
+              "мочь": "можешь",
+              "спать": "спишь"
+            },
+            {
+              "pronome": "он / она",
+              "пить": "пьёт",
+              "есть": "ест",
+              "мочь": "может",
+              "спать": "спит"
+            },
+            {
+              "pronome": "мы",
+              "пить": "пьём",
+              "есть": "едим",
+              "мочь": "можем",
+              "спать": "спим"
+            },
+            {
+              "pronome": "вы",
+              "пить": "пьёте",
+              "есть": "едите",
+              "мочь": "можете",
+              "спать": "спите"
+            },
+            {
+              "pronome": "они",
+              "пить": "пьют",
+              "есть": "едят",
+              "мочь": "могут",
+              "спать": "спят"
+            }
+          ],
+          "tag": "Verbos"
         },
         {
           "tipo": "dialogo",
-          "min": 12,
-          "titulo": "Когда урок? / Quando é a aula?",
-          "contexto": "Dois colegas combinam o horário da aula.",
+          "min": 10,
+          "titulo": "Что ты пьёшь? / O que você bebe?",
+          "contexto": "Dois amigos conversam por mensagem de voz.",
           "linhas": [
             {
-              "personagem": "Дима",
-              "ru": "— Привет, Катя! Когда у нас урок?",
-              "pt": "— Oi, Katya! Quando é a nossa aula?",
-              "audio": "Привет, Катя! Когда у нас урок?"
+              "personagem": "Лена",
+              "ru": "— Привет, Макс! Что ты пьёшь?",
+              "pt": "— Oi, Max! O que você está bebendo?",
+              "audio": "Привет, Макс! Что ты пьёшь?"
             },
             {
-              "personagem": "Катя",
-              "ru": "— Урок в среду.",
-              "pt": "— A aula é na quarta.",
-              "audio": "Урок в среду."
+              "personagem": "Макс",
+              "ru": "— Я пью чай. А ты?",
+              "pt": "— Estou bebendo chá. E você?",
+              "audio": "Я пью чай. А ты?"
             },
             {
-              "personagem": "Дима",
-              "ru": "— В котором часу?",
-              "pt": "— A que horas?",
-              "audio": "В котором часу?"
+              "personagem": "Лена",
+              "ru": "— Я пью кофе. Ты ешь утром?",
+              "pt": "— Eu bebo café. Você come de manhã?",
+              "audio": "Я пью кофе. Ты ешь утром?"
             },
             {
-              "personagem": "Катя",
-              "ru": "— В пять часов. Ты работаешь в среду?",
-              "pt": "— Às cinco. Você trabalha na quarta?",
-              "audio": "В пять часов. Ты работаешь в среду?"
+              "personagem": "Макс",
+              "ru": "— Нет, утром я не ем. Я пью чай.",
+              "pt": "— Não, de manhã eu não como. Eu bebo chá.",
+              "audio": "Нет, утром я не ем. Я пью чай."
             },
             {
-              "personagem": "Дима",
-              "ru": "— Да, но я работаю утром. Вечером я дома.",
-              "pt": "— Sim, mas eu trabalho de manhã. À noite estou em casa.",
-              "audio": "Да, но я работаю утром. Вечером я дома."
+              "personagem": "Лена",
+              "ru": "— Ты можешь работать вечером?",
+              "pt": "— Você pode trabalhar à noite?",
+              "audio": "Ты можешь работать вечером?"
             },
             {
-              "personagem": "Катя",
-              "ru": "— Хорошо! В среду, в пять часов.",
-              "pt": "— Certo! Na quarta, às cinco.",
-              "audio": "Хорошо! В среду, в пять часов."
+              "personagem": "Макс",
+              "ru": "— Да, могу. Вечером я дома.",
+              "pt": "— Posso, sim. À noite estou em casa.",
+              "audio": "Да, могу. Вечером я дома."
             },
             {
-              "personagem": "Дима",
-              "ru": "— Хорошо. Пока!",
-              "pt": "— Combinado. Tchau!",
-              "audio": "Хорошо. Пока!"
+              "personagem": "Лена",
+              "ru": "— Отлично! Пока!",
+              "pt": "— Ótimo! Tchau!",
+              "audio": "Отлично! Пока!"
             },
             {
-              "personagem": "Катя",
+              "personagem": "Макс",
               "ru": "— Пока!",
               "pt": "— Tchau!",
               "audio": "Пока!"
@@ -369,30 +458,9 @@
           ]
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "Моя неделя / Minha semana",
-          "ru": "Меня зовут Игорь. В понедельник я работаю в офисе. Во вторник у меня урок русского языка. В среду я отдыхаю. В пятницу вечером я смотрю фильм. В субботу и в воскресенье я гуляю.",
-          "pt": "Eu me chamo Igor. Na segunda eu trabalho no escritório. Na terça eu tenho aula de russo. Na quarta eu descanso. Na sexta à noite eu assisto a um filme. No sábado e no domingo eu passeio.",
-          "perguntas": [
-            {
-              "pergunta": "Когда Игорь работает в офисе?",
-              "resposta": "В понедельник"
-            },
-            {
-              "pergunta": "Что он делает в пятницу вечером?",
-              "resposta": "Смотрит фильм"
-            },
-            {
-              "pergunta": "Когда он отдыхает?",
-              "resposta": "В среду"
-            }
-          ]
-        },
-        {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Conte a sua semana em voz alta: «В понедельник я … Во вторник я …»"
+          "enunciado": "Diga: «Я пью воду. Я не ем утром. Я могу работать. Я сплю поздно.»"
         }
       ]
     },
@@ -404,7 +472,7 @@
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva 4 frases: o que você faz em 4 dias diferentes."
+          "enunciado": "Conjugue de memória: «пить», «мочь» e «спать»."
         },
         {
           "tipo": "exercicios",
@@ -412,173 +480,184 @@
           "itens": [
             {
               "tipo": "multiple-choice",
-              "enunciado": "«Во вторник» significa:",
+              "enunciado": "A conjugação de «читать» é:",
               "opcoes": [
-                "na terça",
-                "na quarta",
-                "na quinta"
+                "1ª",
+                "2ª",
+                "irregular"
               ],
-              "gabarito": "na terça",
-              "explicacao": "«вторник» pede «во».",
+              "gabarito": "1ª",
+              "explicacao": "Verbos em -ать são da 1ª conjugação.",
               "id": "ru-015-e01"
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "___ пятницу (na sexta)",
+              "tipo": "multiple-choice",
+              "enunciado": "A conjugação de «говорить» é:",
               "opcoes": [
-                "в",
-                "на",
-                "во"
+                "2ª",
+                "1ª",
+                "irregular"
               ],
-              "gabarito": "в",
-              "explicacao": "в + acusativo.",
+              "gabarito": "2ª",
+              "explicacao": "Verbos em -ить são da 2ª conjugação.",
               "id": "ru-015-e02"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Я работаю ___ вторник.",
+              "enunciado": "Ты ___ книгу. (читать)",
               "opcoes": [
-                "во",
-                "в",
-                "на"
+                "читаешь",
+                "читаишь",
+                "читает"
               ],
-              "gabarito": "во",
-              "explicacao": "Antes de «вторник» usa-se «во».",
+              "gabarito": "читаешь",
+              "explicacao": "1ª conjugação: ты → -ешь.",
               "id": "ru-015-e03"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Qual está correto?",
+              "tipo": "fill-gap",
+              "enunciado": "Он ___ быстро. (говорить)",
               "opcoes": [
-                "в субботу",
-                "в суббота",
-                "на субботу"
+                "говорит",
+                "говорет",
+                "говорить"
               ],
-              "gabarito": "в субботу",
-              "explicacao": "-а vira -у.",
+              "gabarito": "говорит",
+              "explicacao": "2ª conjugação: он → -ит.",
               "id": "ru-015-e04"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Который час?» significa:",
+              "tipo": "fill-gap",
+              "enunciado": "Мы ___ в кафе. (сидеть)",
               "opcoes": [
-                "Que horas são?",
-                "Quanto custa?",
-                "Onde é?"
+                "сидим",
+                "сидем",
+                "сидят"
               ],
-              "gabarito": "Que horas são?",
-              "explicacao": "Pergunta pela hora.",
+              "gabarito": "сидим",
+              "explicacao": "2ª conjugação: мы → -им.",
               "id": "ru-015-e05"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Сейчас пять ___. (horas)",
+              "enunciado": "Я ___ музыку. (любить)",
               "opcoes": [
-                "час",
-                "часа",
-                "часов"
+                "люблю",
+                "любю",
+                "любить"
               ],
-              "gabarito": "часов",
-              "explicacao": "De 5 a 12: часов.",
+              "gabarito": "люблю",
+              "explicacao": "б vira бл na forma «я».",
               "id": "ru-015-e06"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Сейчас два ___. (horas)",
+              "enunciado": "Я ___ фильм. (видеть)",
               "opcoes": [
-                "час",
-                "часа",
-                "часов"
+                "вижу",
+                "видю",
+                "видеть"
               ],
-              "gabarito": "часа",
-              "explicacao": "De 2 a 4: часа.",
+              "gabarito": "вижу",
+              "explicacao": "д vira ж na forma «я».",
               "id": "ru-015-e07"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "2:30 em russo:",
+              "tipo": "fill-gap",
+              "enunciado": "Они ___ воду. (пить)",
               "opcoes": [
-                "половина третьего",
-                "половина второго",
-                "два тридцать"
+                "пьют",
+                "пьёт",
+                "пьёшь"
               ],
-              "gabarito": "половина третьего",
-              "explicacao": "A metade da terceira hora.",
+              "gabarito": "пьют",
+              "explicacao": "пить é irregular: они → пьют.",
               "id": "ru-015-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Слышать» é da 2ª conjugação porque:",
+              "opcoes": [
+                "é uma das exceções em -ать",
+                "termina em -ать",
+                "é irregular"
+              ],
+              "gabarito": "é uma das exceções em -ать",
+              "explicacao": "Exceções da 2ª em -ать: слышать, держать, дышать, лежать, стоять.",
+              "id": "ru-015-e09"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Я ___ работать вечером. (мочь)",
+              "opcoes": [
+                "могу",
+                "можу",
+                "мога"
+              ],
+              "gabarito": "могу",
+              "explicacao": "мочь é irregular: я → могу.",
+              "id": "ru-015-e10"
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
-              "audio": "в три часа",
+              "audio": "Что ты пьёшь?",
               "opcoes": [
-                "в три часа",
-                "в пять часов",
-                "в час"
+                "Что ты пьёшь?",
+                "Что ты ешь?",
+                "Что ты видишь?"
               ],
-              "gabarito": "в три часа",
-              "explicacao": "«три» = 3.",
-              "id": "ru-015-e09"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Eu trabalho na segunda.»",
-              "opcoes": [
-                "понедельник",
-                "в",
-                "работаю",
-                "Я"
-              ],
-              "gabarito": "Я работаю в понедельник.",
-              "explicacao": "Sujeito + verbo + в + dia.",
-              "id": "ru-015-e10"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Em russo, os dias da semana levam maiúscula no meio da frase?",
-              "opcoes": [
-                "Não",
-                "Sim",
-                "Só a segunda-feira"
-              ],
-              "gabarito": "Não",
-              "explicacao": "Letra minúscula, como em português.",
+              "gabarito": "Что ты пьёшь?",
+              "explicacao": "«пьёшь» = você bebe.",
               "id": "ru-015-e11"
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Урок в среду",
-              "respostaEsperada": "Урок в среду",
-              "explicacao": "в + acusativo (среда → среду).",
+              "audio": "Я не ем утром",
+              "respostaEsperada": "Я не ем утром",
+              "explicacao": "есть (comer): я ем.",
               "id": "ru-015-e12"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Утром» significa:",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Eu bebo chá.»",
               "opcoes": [
-                "de manhã",
-                "à noite",
-                "à tarde"
+                "чай",
+                "пью",
+                "Я"
               ],
-              "gabarito": "de manhã",
-              "explicacao": "утро → утром.",
+              "gabarito": "Я пью чай.",
+              "explicacao": "Sujeito + verbo + objeto.",
               "id": "ru-015-e13"
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 4 frases: o que você faz em 4 dias diferentes, com a hora em uma delas.",
-              "respostaEsperada": "В понедельник я работаю. Во вторник я читаю книгу. В пятницу вечером я смотрю фильм. В субботу я гуляю в пять часов.",
+              "tipo": "multiple-choice",
+              "enunciado": "«Есть» em «Я ем суп» e em «У меня есть суп» é:",
+              "opcoes": [
+                "duas palavras diferentes: comer (ем) × há (есть)",
+                "a mesma palavra",
+                "o mesmo significado"
+              ],
+              "gabarito": "duas palavras diferentes: comer (ем) × há (есть)",
+              "explicacao": "Comer: ем, ешь, ест... Há: есть, sempre igual.",
               "id": "ru-015-e14"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conjugue «любить» e «читать» (6 formas cada) e escreva 2 frases.",
+              "respostaEsperada": "Я люблю, ты любишь, он любит, мы любим, вы любите, они любят. Я читаю, ты читаешь, он читает, мы читаем, вы читаете, они читают.",
+              "id": "ru-015-e15"
             }
           ]
         },
         {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Grave-se: diga o que você faz em 5 dias diferentes, com uma hora."
+          "enunciado": "Grave-se conjugando 5 verbos de memória, com as seis formas."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você já marca dia e hora. Próxima aula: o seu dia, do acordar ao jantar."
+  "notasParaOAluno": "Você sabe conjugar qualquer verbo regular e os seis irregulares mais usados. Próxima aula: «в» e «на»."
 }

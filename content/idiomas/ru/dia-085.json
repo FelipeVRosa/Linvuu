@@ -3,28 +3,188 @@
   "dia": 85,
   "fase": 9,
   "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Séries e filmes",
-  "objetivo": "Assistir a uma cena e captar o enredo.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Gramática: verbos de movimento: Duas formas de «ir»",
+  "objetivo": "Aula 22, sessão 1 de 4 · 30 min",
+  "aula": {
+    "numero": 22,
+    "titulo": "Gramática: verbos de movimento",
+    "objetivo": "Usar os verbos de movimento mais frequentes: идти/ходить, ехать/ездить, лететь/летать, бежать/бегать e os prefixos при-, у-, в-, вы- e по-.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Duas formas de «ir»",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva as 6 formas de «идти» e de «ехать»."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Determinado × indeterminado",
+        "explicacao": "Em português «ir» serve para tudo. Em russo, os verbos de movimento têm DOIS verbos para cada ideia. O verbo determinado descreve uma ação que acontece agora, numa única direção: «идти», «ехать». O verbo indeterminado descreve hábito, ida e volta ou capacidade: «ходить», «ездить». Além disso, o russo separa o MEIO: a pé (идти / ходить) × de transporte (ехать / ездить). Pergunta-guia: estou indo agora, numa direção (идти / ехать)? Ou é costume, ida e volta, ou capacidade (ходить / ездить)? No passado, «ходил» pode significar «fui e voltei». Com meios de transporte usa-se «на» + preposicional: на автобусе, на метро, на машине.",
+        "comparacao": "em português o mesmo «ir» serve para a pé, de ônibus, agora ou todos os dias. O russo escolhe o verbo pelo meio e pela situação.",
+        "exemplos": [
+          {
+            "ru": "Я иду в магазин.",
+            "pt": "Eu estou indo à loja (agora)."
+          },
+          {
+            "ru": "Я хожу в магазин каждый день.",
+            "pt": "Eu vou à loja todo dia (hábito)."
+          },
+          {
+            "ru": "Он едет на работу.",
+            "pt": "Ele está indo ao trabalho (agora)."
+          },
+          {
+            "ru": "Он ездит на работу на автобусе.",
+            "pt": "Ele vai ao trabalho de ônibus (sempre)."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Os dois pares",
+            "linhas": [
+              {
+                "significado": "a pé",
+                "determinado": "идти",
+                "indeterminado": "ходить",
+                "pt": "ir a pé"
+              },
+              {
+                "significado": "de transporte",
+                "determinado": "ехать",
+                "indeterminado": "ездить",
+                "pt": "ir de transporte"
+              }
+            ]
+          },
+          {
+            "titulo": "Conjugação dos indeterminados",
+            "linhas": [
+              {
+                "pronome": "я",
+                "ходить": "хожу",
+                "ездить": "езжу"
+              },
+              {
+                "pronome": "ты",
+                "ходить": "ходишь",
+                "ездить": "ездишь"
+              },
+              {
+                "pronome": "он / она",
+                "ходить": "ходит",
+                "ездить": "ездит"
+              },
+              {
+                "pronome": "мы",
+                "ходить": "ходим",
+                "ездить": "ездим"
+              },
+              {
+                "pronome": "вы",
+                "ходить": "ходите",
+                "ездить": "ездите"
+              },
+              {
+                "pronome": "они",
+                "ходить": "ходят",
+                "ездить": "ездят"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Я иду на работу на автобусе.",
+            "certo": "Я еду на работу на автобусе.",
+            "motivo": "Com transporte use «ехать», não «идти»."
+          },
+          {
+            "errado": "Я иду в магазин каждый день.",
+            "certo": "Я хожу в магазин каждый день.",
+            "motivo": "Hábito pede o indeterminado: ходить."
+          }
+        ],
+        "tag": "Verbos de movimento"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "автобус",
+            "translit": "aftóbus",
+            "pt": "ônibus",
+            "en": "bus",
+            "audio": "автобус"
+          },
+          {
+            "ru": "метро",
+            "translit": "mitró",
+            "pt": "metrô (não muda)",
+            "en": "metro",
+            "audio": "метро"
+          },
+          {
+            "ru": "поезд",
+            "translit": "póist",
+            "pt": "trem",
+            "en": "train",
+            "audio": "поезд"
+          },
+          {
+            "ru": "самолёт",
+            "translit": "samaliót",
+            "pt": "avião",
+            "en": "plane",
+            "audio": "самолёт"
+          },
+          {
+            "ru": "машина",
+            "translit": "mashína",
+            "pt": "carro",
+            "en": "car",
+            "audio": "машина"
+          },
+          {
+            "ru": "велосипед",
+            "translit": "vilasipiét",
+            "pt": "bicicleta",
+            "en": "bicycle",
+            "audio": "велосипед"
+          },
+          {
+            "ru": "пешком",
+            "translit": "pishkóm",
+            "pt": "a pé",
+            "en": "on foot",
+            "audio": "пешком"
+          },
+          {
+            "ru": "такси",
+            "translit": "taksí",
+            "pt": "táxi (não muda)",
+            "en": "taxi",
+            "audio": "такси"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga: «Я иду в магазин. Я хожу в магазин каждый день. Я еду на работу. Я езжу на работу на автобусе.»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-022.json",
+  "responsavel": null
 }

@@ -1,4 +1,4 @@
-# Revisão objetiva: aulas 1 a 19 (ru)
+# Revisão objetiva: aulas 1 a 24 (ru)
 
 Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto nos arquivos de `content/idiomas/ru/aulas/`.
 
@@ -19,12 +19,17 @@ Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto 
 | 12 | Gramática: adjetivos e possessivos | 0 | 20 | 8 | 14 | 120 | 120 |
 | 13 | Gramática: advérbios e perguntas | 0 | 29 | 8 | 10 | 120 | 120 |
 | 14 | Gramática: o mapa dos casos | 0 | 13 | 0 | 14 | 120 | 120 |
-| 15 | Dias da semana e horas | 0 | 18 | 8 | 14 | 120 | 120 |
-| 16 | Meu dia | 0 | 20 | 8 | 14 | 120 | 120 |
-| 17 | O passado | 0 | 12 | 8 | 14 | 120 | 120 |
-| 18 | Comida e restaurante | 0 | 20 | 8 | 14 | 120 | 120 |
-| 19 | Revisão e prova final | 0 | 5 | 8 | 16 | 120 | 120 |
-| **Total** | | 33 | 346 | 126 | 246 | 2280 | 2280 |
+| 15 | Gramática: as duas conjugações | 0 | 16 | 8 | 15 | 120 | 120 |
+| 16 | Gramática: в e на | 0 | 16 | 8 | 15 | 120 | 120 |
+| 17 | Dias da semana e horas | 0 | 18 | 8 | 14 | 120 | 120 |
+| 18 | Meu dia | 0 | 20 | 8 | 14 | 120 | 120 |
+| 19 | O passado | 0 | 12 | 8 | 14 | 120 | 120 |
+| 20 | Gramática: aspecto do verbo | 0 | 13 | 8 | 14 | 120 | 120 |
+| 21 | Gramática: o futuro | 0 | 16 | 8 | 14 | 120 | 120 |
+| 22 | Gramática: verbos de movimento | 0 | 16 | 8 | 14 | 120 | 120 |
+| 23 | Comida e restaurante | 0 | 20 | 8 | 14 | 120 | 120 |
+| 24 | Revisão e prova final | 0 | 5 | 8 | 19 | 120 | 120 |
+| **Total** | | 33 | 423 | 166 | 321 | 2880 | 2880 |
 
 ## 1. Alfabeto
 O russo tem 33 letras. As aulas ensinam **33**. Alfabeto completo.
@@ -89,26 +94,46 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 | 14 | S2 | 0 de 8 | — |
 | 14 | S3 | 0 de 6 | — |
 | 14 | S4 | 0 de 0 | — |
-| 15 | S1 | 0 de 10 | — |
+| 15 | S1 | 0 de 8 | — |
 | 15 | S2 | 0 de 8 | — |
-| 15 | S3 | 0 de 9 | — |
+| 15 | S3 | 0 de 8 | — |
 | 15 | S4 | 0 de 0 | — |
-| 16 | S1 | 0 de 12 | — |
+| 16 | S1 | 0 de 8 | — |
 | 16 | S2 | 0 de 8 | — |
-| 16 | S3 | 0 de 9 | — |
+| 16 | S3 | 0 de 8 | — |
 | 16 | S4 | 0 de 0 | — |
-| 17 | S1 | 0 de 6 | — |
-| 17 | S2 | 0 de 6 | — |
+| 17 | S1 | 0 de 10 | — |
+| 17 | S2 | 0 de 8 | — |
 | 17 | S3 | 0 de 9 | — |
 | 17 | S4 | 0 de 0 | — |
 | 18 | S1 | 0 de 12 | — |
 | 18 | S2 | 0 de 8 | — |
 | 18 | S3 | 0 de 9 | — |
 | 18 | S4 | 0 de 0 | — |
-| 19 | S1 | 0 de 5 | — |
-| 19 | S2 | 0 de 9 | — |
-| 19 | S3 | 0 de 0 | — |
+| 19 | S1 | 0 de 6 | — |
+| 19 | S2 | 0 de 6 | — |
+| 19 | S3 | 0 de 9 | — |
 | 19 | S4 | 0 de 0 | — |
+| 20 | S1 | 0 de 5 | — |
+| 20 | S2 | 0 de 8 | — |
+| 20 | S3 | 0 de 8 | — |
+| 20 | S4 | 0 de 0 | — |
+| 21 | S1 | 0 de 8 | — |
+| 21 | S2 | 0 de 8 | — |
+| 21 | S3 | 0 de 9 | — |
+| 21 | S4 | 0 de 0 | — |
+| 22 | S1 | 0 de 8 | — |
+| 22 | S2 | 0 de 8 | — |
+| 22 | S3 | 0 de 9 | — |
+| 22 | S4 | 0 de 0 | — |
+| 23 | S1 | 0 de 12 | — |
+| 23 | S2 | 0 de 8 | — |
+| 23 | S3 | 0 de 9 | — |
+| 23 | S4 | 0 de 0 | — |
+| 24 | S1 | 0 de 5 | — |
+| 24 | S2 | 0 de 9 | — |
+| 24 | S3 | 0 de 0 | — |
+| 24 | S4 | 0 de 0 | — |
 
 ## 3. Números prometidos x reais
 | Aula | Promessa no objetivo | Real |
@@ -125,9 +150,9 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 - Todos batem.
 
 ## 6. Horas reais do ciclo (calculadas)
-- 19 aulas declaram 2280 min = **38.0 h** (média de 120 min por aula).
+- 24 aulas declaram 2880 min = **48.0 h** (média de 120 min por aula).
 - Um ciclo de 10 aulas nesse formato teria **20.0 h**.
-- A 40 min por dia, 19 aulas levam 57 dias.
+- A 40 min por dia, 24 aulas levam 72 dias.
 - Para um ciclo ter 80 h, cada aula teria de ter 8 h (16 sessões de 30 min), ou o ciclo teria de ter 40 aulas.
 
 ## 7. Achados de leitura (não automáticos)

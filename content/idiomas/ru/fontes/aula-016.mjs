@@ -1,82 +1,84 @@
 import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'ru', numero: 16, titulo: 'Meu dia', nivel: 'a1',
-  objetivo: 'Contar a sua rotina com verbos em -ся, horas, advérbios de tempo e os verbos de movimento «идти» e «ехать».',
-  nota: 'Você conta o seu dia inteiro. Próxima aula: o passado.',
+  idioma: 'ru', numero: 16, titulo: 'Gramática: в e на', nivel: 'a1',
+  objetivo: 'Escolher entre «в» (dentro) e «на» (em cima, lugar aberto, evento), usar os verbos de posição e aplicar a escolha ao movimento.',
+  nota: 'Você escolhe entre «в» e «на» com segurança e descreve onde as coisas estão. Próxima aula: dias da semana e horas.',
   sessoes: [
-    sessao('S1', 'Verbos em -ся', [
-      revisao(5, 'Escreva as 6 formas de «читать» no presente.'),
-      palavras(12, [
-        ['вставать', 'fstavát', 'levantar-se', 'to get up'], ['просыпаться', 'prasypátsa', 'acordar', 'to wake up'], ['умываться', 'umyvátsa', 'lavar-se', 'to wash'], ['одеваться', 'adevátsa', 'vestir-se', 'to get dressed'],
-        ['завтракать', 'záftrakat', 'tomar café da manhã', 'to have breakfast'], ['обедать', 'abiédat', 'almoçar', 'to have lunch'], ['ужинать', 'úzhynat', 'jantar', 'to have dinner'],
-        ['завтрак', 'záftrak', 'café da manhã', 'breakfast'], ['обед', 'abiéd', 'almoço', 'lunch'], ['ужин', 'úzhyn', 'jantar (refeição)', 'dinner'], ['рано', 'rána', 'cedo', 'early'], ['поздно', 'pózna', 'tarde (hora)', 'late'],
-      ]),
-      gramatica(8, 'Verbos com -ся: a ação volta para quem faz', 'Alguns verbos terminam em -ся, como «просыпаться» (acordar) e «умываться» (lavar-se). A ação volta para quem a faz, como em «levantar-se». Conjugue normalmente e acrescente -сь se a forma terminar em vogal (я просыпаюсь, вы просыпаетесь) ou -ся se terminar em consoante (он просыпается, они просыпаются). «Вставать» segue o mesmo padrão sem -ся: я встаю.', {
-        tag: 'Verbos',
+    sessao('S1', 'в = dentro, на = em cima', [
+      revisao(5, 'Escreva 4 frases com «в» + lugar, como «Я живу в …».'),
+      gramatica(12, 'в e на: escolher pela imagem do lugar', 'Os dois significam «em», mas o russo escolhe pela imagem. «В» = dentro de um espaço fechado ou delimitado: в доме, в комнате, в сумке, и também países e cidades (в России, в Москве). «На» = sobre uma superfície (на столе, на полу, на стене), em um lugar visto como espaço aberto (на улице, на площади, на море) ou em um evento e atividade (на работе, на уроке, на концерте). A palavra depois de в/на vai para o preposicional (-е, -и): в доме, на столе. Alguns masculinos curtos têm preposicional em -у quando respondem «где?»: в шкафу, в саду, в лесу, на полу, на мосту.', {
+        tag: 'Preposições',
+        comparacao: 'em português usamos «em / na / no» para tudo. Em russo, a escolha entre в e на depende da imagem do lugar: dentro, em cima, espaço aberto ou evento.',
         tabela: [
-          { pronome: 'я', просыпаться: 'просыпаюсь' }, { pronome: 'ты', просыпаться: 'просыпаешься' }, { pronome: 'он / она', просыпаться: 'просыпается' },
-          { pronome: 'мы', просыпаться: 'просыпаемся' }, { pronome: 'вы', просыпаться: 'просыпаетесь' }, { pronome: 'они', просыпаться: 'просыпаются' },
+          { situacao: 'dentro de um espaço fechado', preposicao: 'в', exemplo: 'в доме, в комнате, в сумке, в шкафу' }, { situacao: 'países e cidades', preposicao: 'в', exemplo: 'в России, в Бразилии, в Москве' },
+          { situacao: 'em cima de uma superfície', preposicao: 'на', exemplo: 'на столе, на полу, на стене' }, { situacao: 'espaço aberto', preposicao: 'на', exemplo: 'на улице, на площади, на море' },
+          { situacao: 'evento ou atividade', preposicao: 'на', exemplo: 'на работе, на уроке, на концерте, на вечеринке' }, { situacao: 'masculinos em -у (exceção)', preposicao: 'в / на', exemplo: 'в саду, в лесу, на полу, на мосту' },
         ],
-        exemplos: [['Я встаю в семь часов.', 'Eu me levanto às sete horas.'], ['Я завтракаю дома.', 'Eu tomo café da manhã em casa.'], ['Мы обедаем в кафе.', 'Nós almoçamos no café.']],
-        erros: [['Я просыпаюся.', 'Я просыпаюсь.', 'Depois de vogal usa-se -сь.']],
+        erros: [['Я на России.', 'Я в России.', 'País e cidade: в.'], ['Книга в столе.', 'Книга на столе.', 'Em cima de uma superfície: на.'], ['Он в уроке.', 'Он на уроке.', 'Aula é um evento: на.']],
       }),
-      producao(5, 'Diga: «Я просыпаюсь рано. Я встаю в семь часов. Я завтракаю дома.»'),
-    ]),
-    sessao('S2', 'Ir e voltar: «идти» e «ехать»', [
-      revisao(5, 'Escreva uma frase com cada verbo da sessão anterior.'),
       palavras(8, [
-        ['идти', 'itti', 'ir a pé', 'to go (on foot)'], ['ехать', 'yékhat', 'ir de transporte', 'to go (by vehicle)'], ['на работу', 'na rabótu', 'para o trabalho', 'to work'], ['домой', 'damói', 'para casa', 'home (direction)'],
-        ['в магазин', 'v magazín', 'à loja', 'to the shop'], ['до', 'do', 'até, antes de', 'until'], ['каждый день', 'kázhdyi dien', 'todo dia', 'every day'], ['обычно', 'abýchna', 'normalmente', 'usually'],
+        ['пол', 'pol', 'chão', 'floor'], ['стена', 'stiná', 'parede', 'wall'], ['шкаф', 'shkaf', 'armário', 'wardrobe'], ['сад', 'sad', 'jardim', 'garden'],
+        ['лес', 'lies', 'floresta', 'forest'], ['площадь', 'plóshchat', 'praça', 'square'], ['концерт', 'kantsért', 'show, concerto', 'concert'], ['вечеринка', 'vichirínka', 'festa', 'party'],
       ]),
-      gramatica(12, 'Para onde? «в» e «на» + acusativo', 'Já vimos «Где?» (onde): «в» + preposicional («в магазине»). Para perguntar «Куда?» (para onde, com movimento), usa-se o ACUSATIVO: «Я иду в магазин», «Я еду на работу». Em resumo: parado → preposicional; em movimento → acusativo. Para «para casa» existe uma palavra própria, sem preposição: «домой»; «em casa» é «дома». Os verbos «идти» (a pé) e «ехать» (de ônibus, carro, trem) são irregulares: aprenda as formas.', {
-        tag: 'Casos',
-        comparacao: 'em português usamos «à loja» para o movimento e «na loja» para o lugar. O russo troca a terminação da palavra.',
-        tabelas: [
-          { titulo: 'Onde? × para onde?', linhas: [
-            { parado: 'в магазине', movimento: 'в магазин', pt: 'na loja / à loja' }, { parado: 'на работе', movimento: 'на работу', pt: 'no trabalho / ao trabalho' }, { parado: 'в школе', movimento: 'в школу', pt: 'na escola / à escola' },
-            { parado: 'в офисе', movimento: 'в офис', pt: 'no escritório / ao escritório' }, { parado: 'дома', movimento: 'домой', pt: 'em casa / para casa' },
-          ] },
-          { titulo: 'Os verbos de movimento', linhas: [
-            { pronome: 'я', идти: 'иду', ехать: 'еду' }, { pronome: 'ты', идти: 'идёшь', ехать: 'едешь' }, { pronome: 'он / она', идти: 'идёт', ехать: 'едет' },
-            { pronome: 'мы', идти: 'идём', ехать: 'едем' }, { pronome: 'вы', идти: 'идёте', ехать: 'едете' }, { pronome: 'они', идти: 'идут', ехать: 'едут' },
-          ] },
-        ],
-        erros: [['Я иду в магазине.', 'Я иду в магазин.', 'Com movimento (куда?) use o acusativo.'], ['Я иду в дома.', 'Я иду домой.', 'Para «para casa» use «домой».']],
-      }),
-      producao(5, 'Diga: «Я иду на работу. Я еду домой. Я иду в магазин.»'),
+      producao(5, 'Diga: «Книга на столе. Я в России. Деньги в сумке. Я на работе.»'),
     ]),
-    sessao('S3', 'Diálogo e leitura', [
-      revisao(5, 'Escreva 3 frases: «Я иду …», «Я еду …», «Я завтракаю …».'),
-      dialogo(12, 'Мой день / Meu dia', 'Dois colegas falam da rotina.', [
-        ['Олег', 'В котором часу ты встаёшь?', 'A que horas você se levanta?'], ['Вера', 'Я встаю в семь часов. А ты?', 'Eu me levanto às sete. E você?'], ['Олег', 'Я встаю рано, в шесть. Я завтракаю дома.', 'Eu me levanto cedo, às seis. Tomo café em casa.'],
-        ['Вера', 'Потом ты идёшь на работу?', 'Depois você vai ao trabalho?'], ['Олег', 'Да, я еду на работу. Я работаю до пяти часов.', 'Sim, vou de transporte ao trabalho. Trabalho até as cinco.'],
-        ['Вера', 'А после работы?', 'E depois do trabalho?'], ['Олег', 'Я иду в магазин и еду домой. Вечером я ужинаю и отдыхаю.', 'Vou à loja e volto para casa. À noite eu janto e descanso.'], ['Вера', 'Хороший день!', 'Que dia bom!'],
+    sessao('S2', 'Onde está? Os verbos de posição', [
+      revisao(5, 'Escreva 4 frases com «на» e 4 com «в».'),
+      palavras(8, [
+        ['картина', 'kartína', 'quadro', 'picture'], ['кровать', 'kravát', 'cama', 'bed'], ['диван', 'divan', 'sofá', 'sofa'], ['кресло', 'krésla', 'poltrona', 'armchair'],
+        ['стул', 'stul', 'cadeira', 'chair'], ['газета', 'gazéta', 'jornal', 'newspaper'], ['лампа', 'lámpa', 'abajur, lâmpada', 'lamp'], ['телевизор', 'tilivízar', 'televisão', 'TV'],
       ]),
-      texto(8, 'Мой день / Meu dia', 'Меня зовут Таня. Я обычно просыпаюсь в семь часов. Сначала я умываюсь и одеваюсь, потом завтракаю. В восемь часов я еду на работу. Я работаю в школе. Днём я обедаю в кафе. После работы я иду домой. Вечером я ужинаю, смотрю фильм и отдыхаю.',
-        'Eu me chamo Tanya. Normalmente eu acordo às sete horas. Primeiro eu me lavo e me visto, depois tomo café da manhã. Às oito horas vou ao trabalho. Eu trabalho numa escola. Durante o dia almoço no café. Depois do trabalho vou para casa. À noite janto, assisto a um filme e descanso.',
-        [['Когда Таня просыпается?', 'В семь часов'], ['Где она обедает?', 'В кафе'], ['Что она делает вечером?', 'Ужинает, смотрит фильм и отдыхает']]),
-      producao(5, 'Conte o seu dia: «Я просыпаюсь в … Потом я … После работы я …»'),
+      gramatica(12, 'Onde está? лежать, стоять, сидеть, висеть', 'Em português dizemos «está» para tudo: «o livro está na mesa». Em russo o verbo escolhe a posição do objeto: «лежать» (deitado, na horizontal), «стоять» (de pé), «сидеть» (sentado), «висеть» (pendurado). Para soar natural, evite «есть» e use o verbo certo: «Книга лежит на столе», «Лампа стоит на столе», «Кот сидит на диване», «Картина висит на стене». Estes verbos são da 2ª conjugação: лежу, лежишь, лежит, лежим, лежите, лежат; сижу, сидишь...; стою, стоишь...; вишу, висишь...', {
+        tag: 'Preposições',
+        comparacao: 'o português usa «estar» para todas as posições. O russo diz se o objeto está deitado, de pé, sentado ou pendurado.',
+        tabela: [
+          { posicao: 'horizontal', verbo: 'лежать → лежит', exemplo: 'Книга лежит на столе.' }, { posicao: 'de pé', verbo: 'стоять → стоит', exemplo: 'Лампа стоит на столе.' },
+          { posicao: 'sentado', verbo: 'сидеть → сидит', exemplo: 'Кот сидит на диване.' }, { posicao: 'pendurado', verbo: 'висеть → висит', exemplo: 'Картина висит на стене.' },
+        ],
+      }),
+      producao(5, 'Descreva uma sala em voz alta: «На столе лежит книга. На диване сидит кот. На стене висит картина.» Troque as palavras.'),
+    ]),
+    sessao('S3', 'Parado × movimento e idiomas', [
+      revisao(5, 'Escreva 4 frases com verbos de posição.'),
+      gramatica(12, 'Где? e Куда? com в e на; на + idiomas', 'A escolha entre в e на continua no movimento: se com «где?» você usa в, com «куда?» também usa в (в школе → в школу). Se usa на, usa на nos dois (на работе → на работу). No movimento a palavra vai para o acusativo (-а vira -у). Português: «na escola» e «à escola»; russo: muda só a terminação. Também se usa «на» para idiomas: «Я говорю на русском языке», «Я читаю на португальском».', {
+        tag: 'Preposições',
+        tabelas: [
+          { titulo: 'Parado (где?) × movimento (куда?)', linhas: [
+            { parado: 'в школе', movimento: 'в школу', pt: 'na escola / à escola' }, { parado: 'на работе', movimento: 'на работу', pt: 'no trabalho / ao trabalho' }, { parado: 'в городе', movimento: 'в город', pt: 'na cidade / à cidade' },
+            { parado: 'в парке', movimento: 'в парк', pt: 'no parque / ao parque' }, { parado: 'на улице', movimento: 'на улицу', pt: 'na rua / para a rua' }, { parado: 'на концерте', movimento: 'на концерт', pt: 'no show / ao show' }, { parado: 'на уроке', movimento: 'на урок', pt: 'na aula / à aula' },
+          ] },
+          { titulo: 'на + idiomas', linhas: [{ russo: 'на русском (языке)', pt: 'em russo' }, { russo: 'на португальском', pt: 'em português' }, { russo: 'на английском', pt: 'em inglês' }] },
+        ],
+        erros: [['Я иду на школу.', 'Я иду в школу.', '«Школа» usa в nos dois casos.'], ['Я говорю в русском.', 'Я говорю на русском.', 'Para idiomas usa-se «на».']],
+      }),
+      dialogo(10, 'Где ты? / Onde você está?', 'Dois amigos falam por telefone.', [
+        ['Антон', 'Алло, Аня! Где ты?', 'Alô, Anya! Onde você está?'], ['Аня', 'Я на работе. А ты?', 'Estou no trabalho. E você?'], ['Антон', 'Я в кафе. Я сижу на улице.', 'Estou num café. Estou sentado na rua.'],
+        ['Аня', 'Хорошо! Куда ты идёшь потом?', 'Que bom! Para onde você vai depois?'], ['Антон', 'Я иду в магазин, потом домой. А ты?', 'Vou à loja, depois para casa. E você?'], ['Аня', 'Я еду на концерт.', 'Eu vou a um show.'],
+        ['Антон', 'Отлично! Пока!', 'Ótimo! Tchau!'], ['Аня', 'Пока!', 'Tchau!'],
+      ]),
+      producao(3, 'Diga: «Я иду в школу. Я еду на работу. Я говорю на русском.»'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva 5 frases sobre o seu dia de ontem ou de hoje.'),
+      revisao(5, 'Escreva 4 frases: uma com в, uma com на, uma de posição e uma de movimento.'),
       exercicios(20, [
-        mc('«Я встаю в семь часов» significa:', ['Eu me levanto às sete horas', 'Eu durmo às sete horas', 'Eu trabalho às sete horas'], 'Eu me levanto às sete horas', 'вставать = levantar-se.'),
-        lacuna('Я ___ рано. (acordo)', ['просыпаюсь', 'просыпаюся', 'просыпаю'], 'просыпаюсь', 'Depois de vogal: -сь.'),
-        lacuna('Он ___ дома. (almoça)', ['обедает', 'обедаю', 'обедаешь'], 'обедает', 'он → -ет.'),
-        lacuna('Мы ___ в кафе. (jantamos)', ['ужинаем', 'ужинаю', 'ужинают'], 'ужинаем', 'мы → -ем.'),
-        mc('Qual está correto?', ['Я иду в магазин', 'Я иду в магазине', 'Я иду в магазина'], 'Я иду в магазин', 'Movimento: acusativo.'),
-        lacuna('Я еду ___ работу. (para o)', ['на', 'в', 'из'], 'на', '«на работу» = para o trabalho.'),
-        lacuna('Я иду ___. (para casa)', ['домой', 'дома', 'дом'], 'домой', '«домой» = para casa.'),
-        mc('«Дома» e «домой» são diferentes porque:', ['«дома» = em casa (parado); «домой» = para casa (movimento)', 'são sinônimos', '«домой» é plural'], '«дома» = em casa (parado); «домой» = para casa (movimento)', 'Parado × movimento.'),
-        ouvir('Я иду на работу', ['Я иду на работу', 'Я еду домой', 'Я работаю дома'], 'Я иду на работу', 'идти = ir a pé.'),
-        lacuna('Ты ___ в школу? (vai a pé)', ['идёшь', 'иду', 'идут'], 'идёшь', 'ты → -ёшь.'),
-        ordem('Ordene: «Eu tomo café da manhã em casa.»', ['дома', 'завтракаю', 'Я'], 'Я завтракаю дома.', 'Sujeito + verbo + lugar.'),
-        ditado('Я еду домой', 'ехать + домой.'),
-        mc('«Рано» e «поздно» são:', ['advérbios (não mudam)', 'adjetivos', 'verbos'], 'advérbios (não mudam)', 'Advérbios nunca mudam.'),
-        livre('Escreva 5 frases sobre o seu dia, do acordar ao jantar.', 'Я просыпаюсь в семь часов. Я завтракаю дома. Я еду на работу. После работы я иду домой. Вечером я ужинаю.'),
+        mc('«Книга ___ столе.»', ['на', 'в', 'из'], 'на', 'Em cima de uma superfície: на.'),
+        mc('«Деньги ___ сумке.»', ['в', 'на', 'с'], 'в', 'Dentro de algo: в.'),
+        lacuna('Я ___ России.', ['в', 'на', 'из'], 'в', 'Países: в.'),
+        lacuna('Он ___ уроке.', ['на', 'в', 'из'], 'на', 'Evento: на.'),
+        mc('Qual está correto?', ['Я на работе', 'Я в работе', 'Я на работа'], 'Я на работе', 'на + preposicional.'),
+        lacuna('Лампа ___ на столе. (está de pé)', ['стоит', 'лежит', 'сидит'], 'стоит', 'Objeto de pé: стоять.'),
+        lacuna('Картина ___ на стене.', ['висит', 'стоит', 'сидит'], 'висит', 'Pendurado: висеть.'),
+        lacuna('Книга ___ на столе.', ['лежит', 'сидит', 'висит'], 'лежит', 'Horizontal: лежать.'),
+        mc('Movimento: «Я иду ___ школу.»', ['в', 'на', 'из'], 'в', 'школа usa в nos dois casos.'),
+        mc('Movimento: «Я еду ___ работу.»', ['на', 'в', 'из'], 'на', 'работа usa на nos dois casos.'),
+        lacuna('Я говорю ___ русском.', ['на', 'в', 'по'], 'на', 'Idiomas: на.'),
+        ouvir('Книга лежит на столе', ['Книга лежит на столе', 'Книга стоит в столе', 'Книга висит на стене'], 'Книга лежит на столе', 'лежать + на + preposicional.'),
+        ordem('Ordene: «A lâmpada está de pé na mesa.»', ['столе', 'на', 'стоит', 'Лампа'], 'Лампа стоит на столе.', 'Sujeito + verbo de posição + на + lugar.'),
+        ditado('Я иду на работу', 'на + acusativo no movimento.'),
+        livre('Escreva 4 frases: uma com «в», uma com «на», uma com verbo de posição e uma de movimento.', 'Я живу в России. Я на работе. Книга лежит на столе. Я иду в магазин.'),
       ]),
-      producao(5, 'Grave-se contando o seu dia, do acordar ao jantar.'),
+      producao(5, 'Grave-se descrevendo onde estão 5 coisas da sua casa.'),
     ]),
   ],
 });

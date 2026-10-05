@@ -38,7 +38,7 @@ for (const a of aulas) {
     dia = (a.aula - 1) * 4 + i + 1;
     const m = trilha.dias[dia - 1] ?? { fase: Math.ceil(dia / 10), nivel: a.nivel }; // depois do dia 100 o curso continua
     escrever(path.join(dirIdioma, `dia-${pad(dia)}.json`), {
-      idioma: id, dia, fase: m.fase, nivel: m.nivel, status: a.status,
+      idioma: id, dia, fase: m.fase, nivel: a.nivel ?? m.nivel, status: a.status,
       titulo: `${a.titulo}: ${s.titulo}`,
       objetivo: `Aula ${a.aula}, sessão ${i + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`,
       aula: { numero: a.aula, titulo: a.titulo, objetivo: a.objetivo, sessoes: a.sessoes.length, duracaoTotalMin: a.duracaoTotalMin, nivel: a.nivel },

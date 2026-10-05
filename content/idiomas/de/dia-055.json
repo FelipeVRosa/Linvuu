@@ -2,125 +2,184 @@
   "idioma": "de",
   "dia": 55,
   "fase": 6,
-  "nivel": "a2",
+  "nivel": "a1",
   "status": "publicada",
-  "titulo": "Gramática: os verbos modais: Modais com separáveis e diálogo",
+  "titulo": "Pronomes no acusativo e a negação (kein e nicht): Nicht e a resposta «doch»",
   "objetivo": "Aula 14, sessão 3 de 4 · 30 min",
   "aula": {
     "numero": 14,
-    "titulo": "Gramática: os verbos modais",
-    "objetivo": "Usar können, müssen, wollen, dürfen, sollen e möchten, com o segundo verbo no fim, e distinguir «nicht müssen» (não precisar) de «nicht dürfen» (ser proibido).",
+    "titulo": "Pronomes no acusativo e a negação (kein e nicht)",
+    "objetivo": "Trocar o objeto direto por pronomes (ihn, sie, es, mich, dich…), negar substantivos com «kein» e todo o resto com «nicht», e responder a perguntas negativas com «doch».",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
   },
   "sessao": {
     "sessao": "S3",
-    "titulo": "Modais com separáveis e diálogo",
+    "titulo": "Nicht e a resposta «doch»",
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "gar nicht",
+            "translit": "gar niçt",
+            "pt": "de jeito nenhum",
+            "en": "not at all",
+            "audio": "gar nicht"
+          },
+          {
+            "ru": "nicht mehr",
+            "translit": "niçt mér",
+            "pt": "não mais",
+            "en": "no longer",
+            "audio": "nicht mehr"
+          },
+          {
+            "ru": "nur",
+            "translit": "nur",
+            "pt": "só, apenas",
+            "en": "only",
+            "audio": "nur"
+          },
+          {
+            "ru": "aber",
+            "translit": "áber",
+            "pt": "mas",
+            "en": "but",
+            "audio": "aber"
+          },
+          {
+            "ru": "leider",
+            "translit": "láider",
+            "pt": "infelizmente",
+            "en": "unfortunately",
+            "audio": "leider"
+          },
+          {
+            "ru": "doch",
+            "translit": "dorr",
+            "pt": "sim! (contra uma negação)",
+            "en": "yes, I do",
+            "audio": "doch"
+          }
+        ]
+      },
+      {
         "tipo": "gramatica",
         "min": 10,
-        "titulo": "Modais com verbo separável e perguntas",
-        "explicacao": "Com um modal, o verbo separável fica INTEIRO no fim: «Ich muss um sieben Uhr aufstehen», «Du kannst morgen mitkommen». A pergunta de sim ou não começa pelo modal: «Kannst du morgen kommen?». Com palavra interrogativa: «Wann musst du aufstehen?». Sem verbo principal: quando o sentido é claro, ele pode ficar de fora («Ich muss nach Hause», «Ich will ins Kino»), sobretudo com movimento.",
+        "titulo": "«Nicht»: onde colocar, e como responder com «doch»",
+        "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS; «nicht» nega TODO O RESTO: o verbo, a frase inteira, um adjetivo ou um advérbio. PASSO 2: se nega a frase inteira, «nicht» vai para o FIM: «Ich arbeite heute nicht.» PASSO 3: se nega um adjetivo ou advérbio, vai ANTES dele: «Das Buch ist nicht teuer.» PASSO 4: com verbo separável, «nicht» vem antes do prefixo: «Ich stehe nicht auf.» PASSO 5: com modais, vem antes do infinitivo: «Ich kann nicht kommen.» PASSO 6: se alguém pergunta de forma NEGATIVA («Hast du keine Zeit?»), a resposta é «DOCH» para dizer «sim, tenho» e «Nein» para dizer «não, não tenho». «Doch» é a palavra que contradiz uma negação.",
         "tabela": [
           {
-            "padrao": "modal + separável inteiro no fim",
-            "exemplo": "Ich muss um sieben Uhr aufstehen."
+            "situacao": "nega a frase toda",
+            "exemplo": "Ich arbeite heute nicht."
           },
           {
-            "padrao": "pergunta de sim ou não",
-            "exemplo": "Kannst du morgen mitkommen?"
+            "situacao": "nega um adjetivo",
+            "exemplo": "Das Buch ist nicht teuer."
           },
           {
-            "padrao": "palavra interrogativa",
-            "exemplo": "Wann musst du aufstehen?"
+            "situacao": "nega um advérbio ou lugar",
+            "exemplo": "Ich komme nicht aus Spanien."
           },
           {
-            "padrao": "verbo principal omitido",
-            "exemplo": "Ich muss nach Hause."
+            "situacao": "verbo separável",
+            "exemplo": "Ich stehe nicht auf."
+          },
+          {
+            "situacao": "verbo modal",
+            "exemplo": "Ich kann nicht kommen."
+          },
+          {
+            "situacao": "resposta «doch»",
+            "exemplo": "Hast du keine Zeit? — Doch, ich habe Zeit!"
+          },
+          {
+            "situacao": "resposta «nein»",
+            "exemplo": "Hast du keine Zeit? — Nein, ich habe keine Zeit."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich nicht arbeite heute.",
+            "certo": "Ich arbeite heute nicht.",
+            "motivo": "«nicht» vai para o fim."
+          },
+          {
+            "errado": "Ich habe nicht Zeit.",
+            "certo": "Ich habe keine Zeit.",
+            "motivo": "Substantivo: «keine»."
+          },
+          {
+            "errado": "Hast du keine Zeit? — Ja, ich habe Zeit.",
+            "certo": "Hast du keine Zeit? — Doch, ich habe Zeit.",
+            "motivo": "Contra uma negação use «doch», não «ja»."
           }
         ],
         "tag": "Verbos"
       },
       {
         "tipo": "dialogo",
-        "min": 10,
-        "titulo": "Regeln / Regras",
-        "contexto": "Dois amigos estão num estacionamento.",
+        "min": 7,
+        "titulo": "Hast du Zeit? / Você tem tempo?",
+        "contexto": "Dois amigos combinam um jantar.",
         "linhas": [
           {
             "personagem": "Lea",
-            "ru": "— Darf ich hier parken?",
-            "pt": "— Posso estacionar aqui?",
-            "audio": "Darf ich hier parken?"
+            "ru": "— Hast du heute Abend Zeit?",
+            "pt": "— Você tem tempo hoje à noite?",
+            "audio": "Hast du heute Abend Zeit?"
           },
           {
             "personagem": "Paul",
-            "ru": "— Nein, hier darfst du nicht parken. Du musst dort parken.",
-            "pt": "— Não, aqui você não pode estacionar. Tem que estacionar ali.",
-            "audio": "Nein, hier darfst du nicht parken. Du musst dort parken."
+            "ru": "— Nein, leider nicht. Ich habe keine Zeit.",
+            "pt": "— Não, infelizmente não. Não tenho tempo.",
+            "audio": "Nein, leider nicht. Ich habe keine Zeit."
           },
           {
             "personagem": "Lea",
-            "ru": "— Muss ich bezahlen?",
-            "pt": "— Preciso pagar?",
-            "audio": "Muss ich bezahlen?"
+            "ru": "— Hast du keinen Hunger? Wir können zusammen essen.",
+            "pt": "— Você não está com fome? Podemos comer juntos.",
+            "audio": "Hast du keinen Hunger? Wir können zusammen essen."
           },
           {
             "personagem": "Paul",
-            "ru": "— Ja, du musst einen Euro pro Stunde bezahlen.",
-            "pt": "— Sim, você precisa pagar um euro por hora.",
-            "audio": "Ja, du musst einen Euro pro Stunde bezahlen."
+            "ru": "— Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+            "pt": "— Estou, sim! Mas ainda preciso trabalhar.",
+            "audio": "Doch, ich habe Hunger! Aber ich muss noch arbeiten."
           },
           {
             "personagem": "Lea",
-            "ru": "— Kann ich mit Karte zahlen?",
-            "pt": "— Posso pagar com cartão?",
-            "audio": "Kann ich mit Karte zahlen?"
+            "ru": "— Arbeitest du nicht um sechs Uhr?",
+            "pt": "— Você não trabalha às seis?",
+            "audio": "Arbeitest du nicht um sechs Uhr?"
           },
           {
             "personagem": "Paul",
-            "ru": "— Nein, du kannst nur bar zahlen.",
-            "pt": "— Não, você só pode pagar em dinheiro.",
-            "audio": "Nein, du kannst nur bar zahlen."
+            "ru": "— Doch, aber heute arbeite ich bis acht.",
+            "pt": "— Trabalho, sim, mas hoje trabalho até as oito.",
+            "audio": "Doch, aber heute arbeite ich bis acht."
           },
           {
             "personagem": "Lea",
-            "ru": "— Ich will heute noch einkaufen. Ich möchte ins Kaufhaus gehen.",
-            "pt": "— Eu quero fazer compras ainda hoje. Gostaria de ir à loja de departamentos.",
-            "audio": "Ich will heute noch einkaufen. Ich möchte ins Kaufhaus gehen."
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Das Kaufhaus schließt um achtzehn Uhr. Du kannst nicht lange warten.",
-            "pt": "— A loja fecha às dezoito horas. Você não pode esperar muito.",
-            "audio": "Das Kaufhaus schließt um achtzehn Uhr. Du kannst nicht lange warten."
-          },
-          {
-            "personagem": "Lea",
-            "ru": "— Danke! Ich kann um fünf Uhr dort sein.",
-            "pt": "— Obrigada! Eu posso estar lá às cinco.",
-            "audio": "Danke! Ich kann um fünf Uhr dort sein."
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Gut, dann musst du jetzt losfahren.",
-            "pt": "— Ótimo, então você precisa partir agora.",
-            "audio": "Gut, dann musst du jetzt losfahren."
+            "ru": "— Dann essen wir um halb neun. Ich hole dich ab.",
+            "pt": "— Então comemos às oito e meia. Eu busco você.",
+            "audio": "Dann essen wir um halb neun. Ich hole dich ab."
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Diga 5 regras da sua vida usando «muss», «darf nicht», «kann», «will» e «soll»."
+        "min": 2,
+        "enunciado": "Responda em voz alta com «doch» ou «nein»: «Hast du keine Zeit? Hast du keinen Hunger? Arbeitest du nicht?»"
       },
       {
         "tipo": "revisao",
         "min": 5,
-        "enunciado": "Escreva uma frase com cada um dos 6 modais."
+        "enunciado": "Escreva 5 frases com «kein», «keine» e «keinen»."
       }
     ]
   },

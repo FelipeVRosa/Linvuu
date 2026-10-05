@@ -3,31 +3,87 @@
   "dia": 11,
   "fase": 2,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Minha casa e apartamento",
-  "objetivo": "Praticar cômodos, mobília e caso Preposicional aprofundado.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "em-producao",
+  "titulo": "Eu e você: Diálogo de apresentação + texto",
+  "objetivo": "Aula 3, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Eu e você",
+    "objetivo": "Apresentar-se, usar os 8 pronomes pessoais e fechar o alfabeto cirílico.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Diálogo de apresentação + texto",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva: Меня зовут, Как тебя зовут, Очень приятно."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 12,
+        "titulo": "Меня зовут… / Eu me chamo…",
+        "contexto": "Primeiro encontro entre duas pessoas.",
+        "linhas": [
+          {
+            "personagem": "Иван",
+            "ru": "— Привет! Как тебя зовут?",
+            "pt": "— Oi! Como você se chama?",
+            "audio": "Привет! Как тебя зовут?"
+          },
+          {
+            "personagem": "Анна",
+            "ru": "— Привет! Меня зовут Анна. А тебя?",
+            "pt": "— Oi! Eu me chamo Anna. E você?",
+            "audio": "Привет! Меня зовут Анна. А тебя?"
+          },
+          {
+            "personagem": "Иван",
+            "ru": "— Меня зовут Иван. Очень приятно!",
+            "pt": "— Eu me chamo Ivan. Muito prazer!",
+            "audio": "Меня зовут Иван. Очень приятно!"
+          },
+          {
+            "personagem": "Анна",
+            "ru": "— Мне тоже очень приятно!",
+            "pt": "— Muito prazer também!",
+            "audio": "Мне тоже очень приятно!"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "На уроке / Na aula",
+        "ru": "Преподаватель входит в класс и говорит: «Здравствуйте! Меня зовут Иван Петрович. А как вас зовут?» Студентка отвечает: «Меня зовут Лена. Очень приятно!» Преподаватель говорит: «Мне тоже очень приятно, Лена!»",
+        "pt": "O professor entra na sala e diz: «Olá! Eu me chamo Ivan Petrovich. E como a senhora se chama?» A estudante responde: «Eu me chamo Lena. Muito prazer!» O professor diz: «Muito prazer também, Lena!»",
+        "perguntas": [
+          {
+            "pergunta": "Как зовут преподавателя?",
+            "resposta": "Иван Петрович"
+          },
+          {
+            "pergunta": "Как зовут студентку?",
+            "resposta": "Лена"
+          },
+          {
+            "pergunta": "Что говорит Лена?",
+            "resposta": "«Меня зовут Лена. Очень приятно!»"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Repita o diálogo. Depois se apresente em voz alta: «Привет! Меня зовут… Очень приятно!»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Мой дом и квартира",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 11 · A2",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-003.json",
+  "responsavel": null
 }

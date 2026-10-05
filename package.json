@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "node scripts/conteudo.mjs --check && vite build",
+    "build": "node scripts/conteudo.mjs --check && node scripts/seo.mjs && vite build",
     "start": "tsx server.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "content": "node scripts/conteudo.mjs",
-    "content:check": "node scripts/conteudo.mjs --check"
+    "content:check": "node scripts/conteudo.mjs --check",
+    "aulas": "node scripts/aulas.mjs ru && node scripts/conteudo.mjs",
+    "auditar": "node scripts/auditar-aulas.mjs ru --md"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

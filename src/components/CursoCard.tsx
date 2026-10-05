@@ -16,7 +16,7 @@ export function CursoCard({ curso }: { curso: Curso }) {
       <h3>{idioma && <Bandeira id={curso.id} size={26} />} {curso.nome}{curso.nomeNativo !== curso.nome && <em> {curso.nomeNativo}</em>}</h3>
       <p>{curso.descricao}</p>
       <div className="curso-card-meta">
-        <span>100 dias</span>{idioma && <span>Do zero ao B1</span>}<span>15 min por dia</span>
+        <span>100 dias</span>{idioma && <span>Começa do zero</span>}<span>Sessões de ~30 min</span>
       </div>
     </Link>
   );

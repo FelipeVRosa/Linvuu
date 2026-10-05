@@ -4,13 +4,15 @@ import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
 import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { usePageTitle } from '../lib/usePageTitle';
+import { JsonLd } from '../components/JsonLd';
+import { SITE_URL } from '../config/site';
 import NaoEncontrada from './NaoEncontrada';
 
 export default function Curso() {
   const { id } = useParams();
   const [params] = useSearchParams();
   const curso = getCurso(id);
-  usePageTitle(curso?.nome);
+  usePageTitle(curso ? `${curso.nome}: curso de ${curso.nome.toLowerCase()} do zero` : undefined, curso?.descricao);
   if (!curso) return <NaoEncontrada />;
 
   const stats = statusDoCurso(curso.id);
@@ -20,6 +22,7 @@ export default function Curso() {
 
   return (
     <div className="pagina">
+      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: `${curso.nome} (${curso.nomeNativo})`, description: curso.descricao, inLanguage: 'pt-BR', educationalLevel: 'Beginner', provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
       <Navegacao pai="/cursos" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">
@@ -29,7 +32,7 @@ export default function Curso() {
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>3 camadas por dia</span><span>Do zero ao B1</span></>}
+            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} aulas publicadas</span>}
           </div>
         </div>

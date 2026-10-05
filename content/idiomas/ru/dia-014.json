@@ -3,31 +3,116 @@
   "dia": 14,
   "fase": 2,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Planos para o futuro",
-  "objetivo": "Praticar futuro simples e composto.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "em-producao",
+  "titulo": "Ler é fácil: Mais palavras e prática de leitura",
+  "objetivo": "Aula 4, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Ler é fácil",
+    "objetivo": "Ler 20 palavras novas em voz alta e entender frases completas sem cópula.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Mais palavras e prática de leitura",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva: дом, стол, книга, машина, окно."
+      },
+      {
+        "tipo": "palavras",
+        "min": 15,
+        "itens": [
+          {
+            "ru": "этот",
+            "translit": "état",
+            "pt": "este",
+            "en": "this",
+            "audio": "этот"
+          },
+          {
+            "ru": "эта",
+            "translit": "éta",
+            "pt": "esta",
+            "en": "this (f)",
+            "audio": "эта"
+          },
+          {
+            "ru": "эти",
+            "translit": "éti",
+            "pt": "estes / estas",
+            "en": "these",
+            "audio": "эти"
+          },
+          {
+            "ru": "новый",
+            "translit": "nóvyi",
+            "pt": "novo",
+            "en": "new",
+            "audio": "новый"
+          },
+          {
+            "ru": "старый",
+            "translit": "stáryi",
+            "pt": "velho",
+            "en": "old",
+            "audio": "старый"
+          },
+          {
+            "ru": "большой",
+            "translit": "bolshói",
+            "pt": "grande",
+            "en": "big",
+            "audio": "большой"
+          },
+          {
+            "ru": "маленький",
+            "translit": "málienkiy",
+            "pt": "pequeno",
+            "en": "small",
+            "audio": "маленький"
+          },
+          {
+            "ru": "красивый",
+            "translit": "krasívyi",
+            "pt": "bonito",
+            "en": "beautiful",
+            "audio": "красивый"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Gênero em um minuto",
+        "explicacao": "Todo substantivo russo tem gênero, e o adjetivo concorda com ele. Masculino: termina em consoante (дом, стол). Feminino: termina em -а ou -я (книга, машина). Neutro: termina em -о ou -е (окно). O adjetivo muda junto: новый (m), новая (f), новое (n). Atenção: o gênero russo nem sempre bate com o português (книга é feminino, «livro» é masculino). Você vai praticar isso com calma na aula 5.",
+        "exemplos": [
+          {
+            "ru": "новый дом",
+            "pt": "casa nova (masculino)"
+          },
+          {
+            "ru": "новая книга",
+            "pt": "livro novo (feminino)"
+          },
+          {
+            "ru": "новое окно",
+            "pt": "janela nova (neutro)"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 4,
+        "enunciado": "Leia em voz alta: «Это новый дом. Это старая книга. Это большая машина.»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Планы на будущее",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 14 · A2",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-004.json",
+  "responsavel": null
 }

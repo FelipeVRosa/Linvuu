@@ -85,6 +85,7 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
           {!cadastro && <button type="button" className="link conta-esqueci" onClick={esqueci} disabled={!configurado || ocupado}>Esqueci minha senha</button>}
         </form>
 
+        {cadastro && <p className="conta-aceite">Ao criar a conta, você concorda com os <Link to="/termos">Termos de uso</Link> e a <Link to="/privacidade">Política de privacidade</Link>.</p>}
         <p className="conta-troca">{cadastro ? 'Já tem conta?' : 'Ainda não tem conta?'} <Link to={`${outra}${destino !== '/' ? `?proximo=${encodeURIComponent(destino)}` : ''}`}>{cadastro ? 'Entrar' : 'Cadastre-se grátis'}</Link></p>
         <p className="conta-ajuda">Precisa de ajuda? <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a></p>
       </div>

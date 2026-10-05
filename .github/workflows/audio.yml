@@ -48,9 +48,8 @@ jobs:
             echo "--- arquivos:"
             for f in public/audio/${IDIOMA}/*.mp3; do
               [ -e "$f" ] || continue
-              d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" 2>/dev/null)
-              c=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,bit_rate -of csv=p=0 "$f" 2>/dev/null)
-              echo "$(basename "$f") $(stat -c%s "$f") bytes, ${d}s, $c"
+              t=$(stat -c%s "$f")
+              echo "$(basename "$f") ${t} bytes, ~$(( t * 8 / 48000 ))s a 48 kbps, $(file -b "$f" | cut -c1-110)"
             done
           } > /tmp/relatorio.txt
           cat /tmp/relatorio.txt

@@ -22,13 +22,23 @@ export default aula({
     ]),
     sessao('S2', 'Como descobrir o gênero', [
       revisao(5, 'Escreva o gênero de: дом, книга, окно, день, ночь, имя.'),
-      gramatica(12, 'O gênero pela terminação', 'Olhe a última letra do substantivo no singular. Masculino: termina em consoante (стол, дом), em -й (музей) ou em -ь (день, словарь). Feminino: termina em -а ou -я (книга, неделя), ou em -ь (ночь, тетрадь). Neutro: termina em -о, -е ou -мя (окно, море, имя, время). Dois cuidados: (1) palavras em -ь podem ser masculinas ou femininas e não há regra, então decore o gênero junto com a palavra; (2) homens com final em -а ou -я são masculinos: папа, дедушка, дядя, мужчина.', {
+      gramatica(12, 'O gênero pela terminação', 'Olhe a última letra do substantivo no singular. Masculino: termina em consoante (стол, дом), em -й (музей) ou em -ь (день, словарь). Feminino: termina em -а ou -я (книга, неделя), ou em -ь (ночь, тетрадь). Neutro: termina em -о, -е ou -мя (окно, море, имя, время). Passo a passo: (1) olhe a última letra; (2) se ela for -ь, consulte a lista ou o dicionário; (3) confira se há um sufixo que denuncia o gênero (-тель, -ость, -ие...). Dois cuidados: (1) palavras em -ь podem ser masculinas ou femininas e não há regra, então decore o gênero junto com a palavra; (2) homens com final em -а ou -я são masculinos: папа, дедушка, дядя, мужчина.', {
         tag: 'Substantivos',
         comparacao: 'o gênero português também se decora («o dia», «a noite»), mas o russo quase sempre mostra o gênero na terminação. Cuidado: o gênero russo nem sempre bate com o português (книга é feminino, «livro» é masculino; письмо é neutro, «carta» é feminina).',
-        tabela: [
+        tabelas: [
+          { titulo: 'Pela última letra', linhas: [
           { genero: 'masculino', terminacao: 'consoante, -й, -ь', exemplos: 'стол, дом, музей, день' }, { genero: 'feminino', terminacao: '-а, -я, -ь', exemplos: 'книга, неделя, ночь, тетрадь' },
           { genero: 'neutro', terminacao: '-о, -е, -мя', exemplos: 'окно, море, имя, время' }, { genero: 'exceção: masculino', terminacao: '-а, -я (homens)', exemplos: 'папа, дедушка, дядя, мужчина' },
           { genero: 'exceção: neutro', terminacao: 'vogal de palavra estrangeira', exemplos: 'кафе, такси, пальто, кино (não mudam)' },
+                  ] },
+          { titulo: 'Palavras em -ь: decore o gênero junto com a palavra', linhas: [
+            { genero: 'masculino', terminacao: '-ь', exemplos: 'день (dia), словарь (dicionário), учитель (professor), гость (convidado), дождь (chuva), корабль (navio)' },
+            { genero: 'feminino', terminacao: '-ь', exemplos: 'ночь (noite), дверь (porta), тетрадь (caderno), мать (mãe), дочь (filha), соль (sal), жизнь (vida), любовь (amor)' },
+          ] },
+          { titulo: 'Sufixos que denunciam o gênero', linhas: [
+            { genero: 'masculino', terminacao: '-тель, -ник, -ист', exemplos: 'учитель, художник, журналист' }, { genero: 'feminino', terminacao: '-ость, -ция, -ия, -ка', exemplos: 'радость (alegria), станция (estação), фамилия, ручка' },
+            { genero: 'neutro', terminacao: '-ие, -ние, -мя', exemplos: 'здание, занятие (atividade), имя, время' },
+          ] },
         ],
         erros: [['Папа — feminino, porque termina em -а.', 'Папа é masculino.', 'Homens são masculinos, mesmo com -а/-я.'], ['мой книга', 'моя книга', 'O possessivo concorda com o gênero de «книга» (feminino).']],
       }),

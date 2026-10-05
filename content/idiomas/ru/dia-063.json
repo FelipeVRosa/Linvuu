@@ -4,107 +4,164 @@
   "fase": 7,
   "nivel": "b1",
   "status": "publicada",
-  "titulo": "Meu dia: Diálogo e leitura",
+  "titulo": "Gramática: в e на: Parado × movimento e idiomas",
   "objetivo": "Aula 16, sessão 3 de 4 · 30 min",
   "aula": {
     "numero": 16,
-    "titulo": "Meu dia",
-    "objetivo": "Contar a sua rotina com verbos em -ся, horas, advérbios de tempo e os verbos de movimento «идти» e «ехать».",
+    "titulo": "Gramática: в e на",
+    "objetivo": "Escolher entre «в» (dentro) e «на» (em cima, lugar aberto, evento), usar os verbos de posição e aplicar a escolha ao movimento.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
   },
   "sessao": {
     "sessao": "S3",
-    "titulo": "Diálogo e leitura",
+    "titulo": "Parado × movimento e idiomas",
     "duracaoMin": 30,
     "blocos": [
       {
         "tipo": "revisao",
         "min": 5,
-        "enunciado": "Escreva 3 frases: «Я иду …», «Я еду …», «Я завтракаю …»."
+        "enunciado": "Escreva 4 frases com verbos de posição."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Где? e Куда? com в e на; на + idiomas",
+        "explicacao": "A escolha entre в e на continua no movimento: se com «где?» você usa в, com «куда?» também usa в (в школе → в школу). Se usa на, usa на nos dois (на работе → на работу). No movimento a palavra vai para o acusativo (-а vira -у). Português: «na escola» e «à escola»; russo: muda só a terminação. Também se usa «на» para idiomas: «Я говорю на русском языке», «Я читаю на португальском».",
+        "tabelas": [
+          {
+            "titulo": "Parado (где?) × movimento (куда?)",
+            "linhas": [
+              {
+                "parado": "в школе",
+                "movimento": "в школу",
+                "pt": "na escola / à escola"
+              },
+              {
+                "parado": "на работе",
+                "movimento": "на работу",
+                "pt": "no trabalho / ao trabalho"
+              },
+              {
+                "parado": "в городе",
+                "movimento": "в город",
+                "pt": "na cidade / à cidade"
+              },
+              {
+                "parado": "в парке",
+                "movimento": "в парк",
+                "pt": "no parque / ao parque"
+              },
+              {
+                "parado": "на улице",
+                "movimento": "на улицу",
+                "pt": "na rua / para a rua"
+              },
+              {
+                "parado": "на концерте",
+                "movimento": "на концерт",
+                "pt": "no show / ao show"
+              },
+              {
+                "parado": "на уроке",
+                "movimento": "на урок",
+                "pt": "na aula / à aula"
+              }
+            ]
+          },
+          {
+            "titulo": "на + idiomas",
+            "linhas": [
+              {
+                "russo": "на русском (языке)",
+                "pt": "em russo"
+              },
+              {
+                "russo": "на португальском",
+                "pt": "em português"
+              },
+              {
+                "russo": "на английском",
+                "pt": "em inglês"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Я иду на школу.",
+            "certo": "Я иду в школу.",
+            "motivo": "«Школа» usa в nos dois casos."
+          },
+          {
+            "errado": "Я говорю в русском.",
+            "certo": "Я говорю на русском.",
+            "motivo": "Para idiomas usa-se «на»."
+          }
+        ],
+        "tag": "Preposições"
       },
       {
         "tipo": "dialogo",
-        "min": 12,
-        "titulo": "Мой день / Meu dia",
-        "contexto": "Dois colegas falam da rotina.",
+        "min": 10,
+        "titulo": "Где ты? / Onde você está?",
+        "contexto": "Dois amigos falam por telefone.",
         "linhas": [
           {
-            "personagem": "Олег",
-            "ru": "— В котором часу ты встаёшь?",
-            "pt": "— A que horas você se levanta?",
-            "audio": "В котором часу ты встаёшь?"
+            "personagem": "Антон",
+            "ru": "— Алло, Аня! Где ты?",
+            "pt": "— Alô, Anya! Onde você está?",
+            "audio": "Алло, Аня! Где ты?"
           },
           {
-            "personagem": "Вера",
-            "ru": "— Я встаю в семь часов. А ты?",
-            "pt": "— Eu me levanto às sete. E você?",
-            "audio": "Я встаю в семь часов. А ты?"
+            "personagem": "Аня",
+            "ru": "— Я на работе. А ты?",
+            "pt": "— Estou no trabalho. E você?",
+            "audio": "Я на работе. А ты?"
           },
           {
-            "personagem": "Олег",
-            "ru": "— Я встаю рано, в шесть. Я завтракаю дома.",
-            "pt": "— Eu me levanto cedo, às seis. Tomo café em casa.",
-            "audio": "Я встаю рано, в шесть. Я завтракаю дома."
+            "personagem": "Антон",
+            "ru": "— Я в кафе. Я сижу на улице.",
+            "pt": "— Estou num café. Estou sentado na rua.",
+            "audio": "Я в кафе. Я сижу на улице."
           },
           {
-            "personagem": "Вера",
-            "ru": "— Потом ты идёшь на работу?",
-            "pt": "— Depois você vai ao trabalho?",
-            "audio": "Потом ты идёшь на работу?"
+            "personagem": "Аня",
+            "ru": "— Хорошо! Куда ты идёшь потом?",
+            "pt": "— Que bom! Para onde você vai depois?",
+            "audio": "Хорошо! Куда ты идёшь потом?"
           },
           {
-            "personagem": "Олег",
-            "ru": "— Да, я еду на работу. Я работаю до пяти часов.",
-            "pt": "— Sim, vou de transporte ao trabalho. Trabalho até as cinco.",
-            "audio": "Да, я еду на работу. Я работаю до пяти часов."
+            "personagem": "Антон",
+            "ru": "— Я иду в магазин, потом домой. А ты?",
+            "pt": "— Vou à loja, depois para casa. E você?",
+            "audio": "Я иду в магазин, потом домой. А ты?"
           },
           {
-            "personagem": "Вера",
-            "ru": "— А после работы?",
-            "pt": "— E depois do trabalho?",
-            "audio": "А после работы?"
+            "personagem": "Аня",
+            "ru": "— Я еду на концерт.",
+            "pt": "— Eu vou a um show.",
+            "audio": "Я еду на концерт."
           },
           {
-            "personagem": "Олег",
-            "ru": "— Я иду в магазин и еду домой. Вечером я ужинаю и отдыхаю.",
-            "pt": "— Vou à loja e volto para casa. À noite eu janto e descanso.",
-            "audio": "Я иду в магазин и еду домой. Вечером я ужинаю и отдыхаю."
+            "personagem": "Антон",
+            "ru": "— Отлично! Пока!",
+            "pt": "— Ótimo! Tchau!",
+            "audio": "Отлично! Пока!"
           },
           {
-            "personagem": "Вера",
-            "ru": "— Хороший день!",
-            "pt": "— Que dia bom!",
-            "audio": "Хороший день!"
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "Мой день / Meu dia",
-        "ru": "Меня зовут Таня. Я обычно просыпаюсь в семь часов. Сначала я умываюсь и одеваюсь, потом завтракаю. В восемь часов я еду на работу. Я работаю в школе. Днём я обедаю в кафе. После работы я иду домой. Вечером я ужинаю, смотрю фильм и отдыхаю.",
-        "pt": "Eu me chamo Tanya. Normalmente eu acordo às sete horas. Primeiro eu me lavo e me visto, depois tomo café da manhã. Às oito horas vou ao trabalho. Eu trabalho numa escola. Durante o dia almoço no café. Depois do trabalho vou para casa. À noite janto, assisto a um filme e descanso.",
-        "perguntas": [
-          {
-            "pergunta": "Когда Таня просыпается?",
-            "resposta": "В семь часов"
-          },
-          {
-            "pergunta": "Где она обедает?",
-            "resposta": "В кафе"
-          },
-          {
-            "pergunta": "Что она делает вечером?",
-            "resposta": "Ужинает, смотрит фильм и отдыхает"
+            "personagem": "Аня",
+            "ru": "— Пока!",
+            "pt": "— Tchau!",
+            "audio": "Пока!"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Conte o seu dia: «Я просыпаюсь в … Потом я … После работы я …»"
+        "min": 3,
+        "enunciado": "Diga: «Я иду в школу. Я еду на работу. Я говорю на русском.»"
       }
     ]
   },

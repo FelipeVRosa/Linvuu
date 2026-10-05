@@ -113,43 +113,95 @@
           "tipo": "gramatica",
           "min": 8,
           "titulo": "O adjetivo muda com o substantivo",
-          "explicacao": "O adjetivo vem antes do substantivo e imita o gênero e o número dele. Para achar a forma, parta do masculino (-ый, -ий ou -ой) e troque a terminação: feminino -ая (ou -яя), neutro -ое (ou -ее), plural -ые (ou -ие). Depois de г, к, х, ж, ч, ш, щ aparece -ий / -ие (маленький, маленькие, хороший, хорошие). O plural é igual para os três gêneros.",
+          "explicacao": "O adjetivo vem antes do substantivo e imita o gênero e o número dele. Para achar a forma, parta do masculino (-ый, -ий ou -ой) e troque a terminação: feminino -ая (ou -яя), neutro -ое (ou -ее), plural -ые (ou -ие). Depois de г, к, х, ж, ч, ш, щ aparece -ий / -ие (маленький, маленькие, хороший, хорошие). O plural é igual para os três gêneros. Os adjetivos têm quatro tipos, que só mudam o jeito de escrever a mesma ideia: duro (-ый), com acento no final (-ой), depois de г/к/х/ж/ч/ш/щ (-ий, e o neutro -ое com acento ou -ее sem acento) e suave (-ий, -яя, -ее).",
           "comparacao": "o adjetivo português também concorda («casa nova», «livros novos»), mas o russo tem uma forma para cada um dos três gêneros e outra para o plural.",
-          "tabela": [
+          "tabelas": [
             {
-              "adjetivo": "новый",
-              "masculino": "новый дом",
-              "feminino": "новая книга",
-              "neutro": "новое окно",
-              "plural": "новые книги"
+              "titulo": "Cinco adjetivos nos quatro formatos",
+              "linhas": [
+                {
+                  "adjetivo": "новый",
+                  "masculino": "новый дом",
+                  "feminino": "новая книга",
+                  "neutro": "новое окно",
+                  "plural": "новые книги"
+                },
+                {
+                  "adjetivo": "старый",
+                  "masculino": "старый стол",
+                  "feminino": "старая машина",
+                  "neutro": "старое кафе",
+                  "plural": "старые друзья"
+                },
+                {
+                  "adjetivo": "большой",
+                  "masculino": "большой город",
+                  "feminino": "большая семья",
+                  "neutro": "большое окно",
+                  "plural": "большие столы"
+                },
+                {
+                  "adjetivo": "маленький",
+                  "masculino": "маленький кот",
+                  "feminino": "маленькая собака",
+                  "neutro": "маленькое море",
+                  "plural": "маленькие коты"
+                },
+                {
+                  "adjetivo": "хороший",
+                  "masculino": "хороший друг",
+                  "feminino": "хорошая подруга",
+                  "neutro": "хорошее кино",
+                  "plural": "хорошие друзья"
+                }
+              ]
             },
             {
-              "adjetivo": "старый",
-              "masculino": "старый стол",
-              "feminino": "старая машина",
-              "neutro": "старое кафе",
-              "plural": "старые друзья"
-            },
-            {
-              "adjetivo": "большой",
-              "masculino": "большой город",
-              "feminino": "большая семья",
-              "neutro": "большое окно",
-              "plural": "большие столы"
-            },
-            {
-              "adjetivo": "маленький",
-              "masculino": "маленький кот",
-              "feminino": "маленькая собака",
-              "neutro": "маленькое море",
-              "plural": "маленькие коты"
-            },
-            {
-              "adjetivo": "хороший",
-              "masculino": "хороший друг",
-              "feminino": "хорошая подруга",
-              "neutro": "хорошее кино",
-              "plural": "хорошие друзья"
+              "titulo": "Os quatro tipos de adjetivo (o masculino mostra o tipo)",
+              "linhas": [
+                {
+                  "tipo": "duro: -ый",
+                  "masculino": "новый",
+                  "feminino": "новая",
+                  "neutro": "новое",
+                  "plural": "новые"
+                },
+                {
+                  "tipo": "duro com acento no final: -ой",
+                  "masculino": "молодой",
+                  "feminino": "молодая",
+                  "neutro": "молодое",
+                  "plural": "молодые"
+                },
+                {
+                  "tipo": "depois de г, к, х: -ий",
+                  "masculino": "маленький",
+                  "feminino": "маленькая",
+                  "neutro": "маленькое",
+                  "plural": "маленькие"
+                },
+                {
+                  "tipo": "depois de ж, ч, ш, щ (sem acento)",
+                  "masculino": "хороший",
+                  "feminino": "хорошая",
+                  "neutro": "хорошее",
+                  "plural": "хорошие"
+                },
+                {
+                  "tipo": "depois de ж, ч, ш, щ (com acento)",
+                  "masculino": "большой",
+                  "feminino": "большая",
+                  "neutro": "большое",
+                  "plural": "большие"
+                },
+                {
+                  "tipo": "suave: -ий",
+                  "masculino": "синий (azul)",
+                  "feminino": "синяя",
+                  "neutro": "синее",
+                  "plural": "синие"
+                }
+              ]
             }
           ],
           "erros": [

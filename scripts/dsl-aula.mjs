@@ -2,6 +2,10 @@
 // Cada arquivo de fonte exporta `aula(...)`. `npm run aulas` compila para content/idiomas/<id>/aulas/aula-NNN.json.
 const soma = (blocos) => blocos.reduce((x, b) => x + (b.min ?? 0), 0);
 
+/** Abertura da aula (só no começo de uma aula nova). */
+export const intro = (min, texto) => ({ tipo: 'intro', min, texto });
+/** grupos: [[nome, [[Maiúscula, minúscula, som em português, IPA, exemplo, tradução do exemplo]]]] */
+export const alfabeto = (min, grupos) => ({ tipo: 'alfabeto', min, grupos: grupos.map(([nome, letras]) => ({ nome, letras: letras.map(([maiuscula, minuscula, som, ipa, exemplo, exemploPt]) => ({ maiuscula, minuscula, som, ipa, exemplo, exemploPt })) })) });
 export const revisao = (min, enunciado) => ({ tipo: 'revisao', min, enunciado });
 export const producao = (min, enunciado, exemplo) => ({ tipo: 'producao', min, enunciado, ...(exemplo ? { exemplo } : {}) });
 /** itens: [ru, transliteração, pt, en] */
@@ -30,7 +34,7 @@ export const mc = (enunciado, opcoes, gabarito, explicacao) => ({ tipo: 'multipl
 export const lacuna = (enunciado, opcoes, gabarito, explicacao) => ({ tipo: 'fill-gap', enunciado, opcoes, gabarito, explicacao });
 export const ordem = (enunciado, opcoes, gabarito, explicacao) => ({ tipo: 'sentence-ordering', enunciado, opcoes, gabarito, explicacao });
 export const ouvir = (audio, opcoes, gabarito, explicacao) => ({ tipo: 'audio-recognition', enunciado: 'Ouça e escolha.', audio, opcoes, gabarito, explicacao });
-export const ditado = (audio, explicacao) => ({ tipo: 'audio-recognition', enunciado: 'Ouça e escreva em cirílico.', audio, respostaEsperada: audio, explicacao });
+export const ditado = (audio, explicacao) => ({ tipo: 'audio-recognition', enunciado: 'Ouça e escreva.', audio, respostaEsperada: audio, explicacao });
 export const livre = (enunciado, respostaEsperada) => ({ tipo: 'producao', enunciado, respostaEsperada });
 export const exercicios = (min, itens) => ({ tipo: 'exercicios', min, itens });
 
@@ -40,6 +44,7 @@ export function aula({ idioma, numero, titulo, nivel, objetivo, sessoes, nota, s
   const p = String(numero).padStart(3, '0');
   let n = 0;
   for (const s of sessoes) for (const b of s.blocos) if (b.tipo === 'exercicios') b.itens.forEach((i) => { i.id = `${idioma}-${p}-e${String(++n).padStart(2, '0')}`; });
+  if (idioma === 'ru') for (const se of sessoes) for (const b of se.blocos) if (b.tipo === 'exercicios') b.itens.forEach((i) => { if (i.enunciado === 'Ouça e escreva.') i.enunciado = 'Ouça e escreva em cirílico.'; });
   const total = sessoes.reduce((x, s) => x + s.duracaoMin, 0);
   const avisos = sessoes.filter((s) => s.duracaoMin !== 30).map((s) => `${s.sessao}: ${s.duracaoMin} min`);
   if (avisos.length) console.warn(`aviso aula ${numero}: sessões fora de 30 min (${avisos.join(', ')})`);

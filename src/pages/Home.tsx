@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <button type="submit" className="search-btn">{t.hero.botao}</button>
             </form>
-            <p className="hero-nota">{t.hero.nota.replace('{n}', String(Math.floor((statusDoCurso('ru')?.publicadas ?? 0) / 4)))}</p>
+            <p className="hero-nota">{t.hero.nota.replace('{ru}', String(Math.floor((statusDoCurso('ru')?.publicadas ?? 0) / 4))).replace('{de}', String(Math.floor((statusDoCurso('de')?.publicadas ?? 0) / 4)))}</p>
           </div>
 
           <aside className="hoje" aria-label="Exemplo de uma sessão">

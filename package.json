@@ -12,7 +12,7 @@
     "lint": "tsc --noEmit",
     "content": "node scripts/conteudo.mjs",
     "content:check": "node scripts/conteudo.mjs --check",
-    "aulas": "node scripts/compilar-aulas.mjs ru && node scripts/aulas.mjs ru && node scripts/gramatica.mjs ru && node scripts/conteudo.mjs",
+    "aulas": "node scripts/compilar-aulas.mjs ru && node scripts/compilar-aulas.mjs de && node scripts/aulas.mjs ru && node scripts/aulas.mjs de && node scripts/gramatica.mjs ru && node scripts/gramatica.mjs de && node scripts/conteudo.mjs",
     "auditar": "node scripts/auditar-aulas.mjs ru --md"
   },
   "dependencies": {

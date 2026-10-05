@@ -35,8 +35,9 @@ export default function Curso() {
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> {stats?.total ?? 100} dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
+            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> {stats?.total ?? 120} dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
+            {['ru', 'de'].includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">Gramática do {curso.nome.toLowerCase()} →</Link>}
           </div>
         </div>
       </header>
@@ -44,7 +45,7 @@ export default function Curso() {
       {curso.area !== 'idiomas' ? (
         <section className="aviso">
           <h2>Trilha em planejamento</h2>
-          <p>A trilha de {curso.nome} seguirá o mesmo formato de 100 dias dos idiomas. Ainda não há aulas publicadas.</p>
+          <p>A trilha de {curso.nome} seguirá o mesmo formato de 120 dias dos idiomas. Ainda não há aulas publicadas.</p>
           <Link to="/cursos?area=idiomas" className="btn btn-ghost">Ver os cursos de idiomas</Link>
         </section>
       ) : (

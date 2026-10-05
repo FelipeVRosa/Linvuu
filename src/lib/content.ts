@@ -1,4 +1,4 @@
-import trilhaJson from '../../content/trilha-100-dias.json';
+import trilhaJson from '../../content/trilha.json';
 import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
 import type { InfoAula, SessaoAula } from './aulas';

@@ -1,11 +1,11 @@
-// Gera a estrutura de conteúdo: 100 arquivos por idioma + content/indice.json.
+// Gera a estrutura de conteúdo: 120 arquivos por idioma + content/indice.json.
 //   node scripts/conteudo.mjs          cria o que falta (nunca sobrescreve aula já editada)
 //   node scripts/conteudo.mjs --check  só valida (usado em `npm run content:check`)
 import fs from 'node:fs';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..', 'content');
-const trilha = JSON.parse(fs.readFileSync(path.join(root, 'trilha-100-dias.json'), 'utf8'));
+const trilha = JSON.parse(fs.readFileSync(path.join(root, 'trilha.json'), 'utf8'));
 const { cursos } = JSON.parse(fs.readFileSync(path.join(root, 'cursos.json'), 'utf8'));
 const check = process.argv.includes('--check');
 const STATUS = ['planejada', 'em-producao', 'publicada'];

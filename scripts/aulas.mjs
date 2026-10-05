@@ -8,10 +8,11 @@ const id = process.argv[2] ?? 'ru';
 const raiz = path.resolve(import.meta.dirname, '..');
 const dirIdioma = path.join(raiz, 'content', 'idiomas', id);
 const dirAulas = path.join(dirIdioma, 'aulas');
-const trilha = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'trilha-100-dias.json'), 'utf8'));
+const trilha = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'trilha.json'), 'utf8'));
 const pad = (n) => String(n).padStart(3, '0');
 const escrever = (f, o) => fs.writeFileSync(f, JSON.stringify(o, null, 2) + '\n');
 
+fs.mkdirSync(dirAulas, { recursive: true });
 const arquivos = fs.readdirSync(dirAulas).filter((f) => /^aula-\d+\.json$/.test(f)).sort();
 const aulas = arquivos.map((f) => JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8')));
 

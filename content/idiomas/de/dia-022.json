@@ -3,28 +3,143 @@
   "dia": 22,
   "fase": 3,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Objetos do dia a dia",
-  "objetivo": "Nomear e pedir objetos comuns.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Números, horas e dias: As horas",
+  "objetivo": "Aula 6, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 6,
+    "titulo": "Números, horas e dias",
+    "objetivo": "Contar até 100 e mais, dizer as horas, os dias da semana, os meses e a data.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "As horas",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva os números de 21 a 30 por extenso, em alemão."
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "die Uhr",
+            "translit": "di ur",
+            "pt": "relógio; hora (no horário)",
+            "en": "clock; o’clock",
+            "audio": "die Uhr"
+          },
+          {
+            "ru": "die Stunde",
+            "translit": "di xtúnde",
+            "pt": "hora (duração)",
+            "en": "hour",
+            "audio": "die Stunde"
+          },
+          {
+            "ru": "die Minute",
+            "translit": "di minúte",
+            "pt": "minuto",
+            "en": "minute",
+            "audio": "die Minute"
+          },
+          {
+            "ru": "halb",
+            "translit": "halp",
+            "pt": "meio, meia",
+            "en": "half",
+            "audio": "halb"
+          },
+          {
+            "ru": "das Viertel",
+            "translit": "das fírtel",
+            "pt": "quarto",
+            "en": "quarter",
+            "audio": "das Viertel"
+          },
+          {
+            "ru": "vor",
+            "translit": "for",
+            "pt": "antes de, faltando",
+            "en": "to, before",
+            "audio": "vor"
+          },
+          {
+            "ru": "nach",
+            "translit": "narr",
+            "pt": "depois de, passando",
+            "en": "past, after",
+            "audio": "nach"
+          },
+          {
+            "ru": "Punkt",
+            "translit": "púnkt",
+            "pt": "em ponto",
+            "en": "sharp",
+            "audio": "Punkt"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "As horas",
+        "explicacao": "Perguntas: «Wie spät ist es?» ou «Wie viel Uhr ist es?». Resposta: «Es ist acht Uhr.» Para a hora em que algo acontece: «Um wie viel Uhr?» — «Um acht Uhr.» Na fala do dia a dia: «fünf nach acht» (8h05), «Viertel nach acht» (8h15), «halb neun» (8h30), «Viertel vor neun» (8h45), «fünf vor neun» (8h55). Atenção: «halb neun» é MEIA HORA ANTES das nove, ou seja, 8h30. No registro oficial (trens, TV) usa-se o relógio de 24 horas: «acht Uhr dreißig», «vierzehn Uhr fünfzehn».",
+        "comparacao": "em português «oito e meia» olha para a hora que passou. Em alemão «halb neun» olha para a hora que vem, a das nove.",
+        "tabela": [
+          {
+            "hora": "8:00",
+            "informal": "acht Uhr",
+            "oficial": "acht Uhr"
+          },
+          {
+            "hora": "8:05",
+            "informal": "fünf nach acht",
+            "oficial": "acht Uhr fünf"
+          },
+          {
+            "hora": "8:15",
+            "informal": "Viertel nach acht",
+            "oficial": "acht Uhr fünfzehn"
+          },
+          {
+            "hora": "8:30",
+            "informal": "halb neun",
+            "oficial": "acht Uhr dreißig"
+          },
+          {
+            "hora": "8:45",
+            "informal": "Viertel vor neun",
+            "oficial": "acht Uhr fünfundvierzig"
+          },
+          {
+            "hora": "14:30",
+            "informal": "halb drei",
+            "oficial": "vierzehn Uhr dreißig"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "halb drei = 3:30",
+            "certo": "halb drei = 2:30",
+            "motivo": "«halb drei» é meia hora antes das três."
+          }
+        ],
+        "tag": "Tempo"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Pergunte e responda: «Wie spät ist es? — Es ist halb drei.» Repita com 5 horas diferentes."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-006.json",
+  "responsavel": null
 }

@@ -1,0 +1,75 @@
+name: Gerar áudios (Edge TTS)
+
+# Manual: Actions → "Gerar áudios (Edge TTS)" → Run workflow. Gera só o que falta e salva os MP3 num ramo novo (audio/<idioma>-<n>).
+# Piloto: subir um ramo piloto-audio/<qualquer-nome> gera 15 áudios espalhados (as duas vozes) e só guarda para ouvir (artefato), sem commitar.
+on:
+  workflow_dispatch:
+    inputs:
+      idioma:
+        description: 'Idioma (de, ru, gb, es, fr, br)'
+        required: true
+        default: 'de'
+      limite:
+        description: 'Máximo de áudios novos (0 = todos)'
+        required: true
+        default: '0'
+  push:
+    branches: ['piloto-audio/**']
+
+permissions:
+  contents: write
+
+env:
+  IDIOMA: ${{ inputs.idioma || 'de' }}
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Gerar os MP3
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite=15 --amostra 2>&1 | tee /tmp/saida.txt
+          else
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="${{ inputs.limite }}" 2>&1 | tee /tmp/saida.txt
+          fi
+      - name: Relatório (duração e tamanho de cada MP3)
+        if: always()
+        run: |
+          {
+            cat /tmp/saida.txt
+            echo "--- arquivos:"
+            for f in public/audio/${IDIOMA}/*.mp3; do
+              [ -e "$f" ] || continue
+              t=$(stat -c%s "$f")
+              echo "$(basename "$f") ${t} bytes, ~$(( t * 8 / 48000 ))s a 48 kbps, $(file -b "$f" | cut -c1-110)"
+            done
+          } > /tmp/relatorio.txt
+          cat /tmp/relatorio.txt
+          echo "::notice title=Relatorio de audio::$(sed ':a;N;$!ba;s/\n/%0A/g' /tmp/relatorio.txt)"
+      - name: Guardar para ouvir (baixe o .zip em "Artifacts")
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio-${{ inputs.idioma || 'de' }}
+          path: public/audio/${{ inputs.idioma || 'de' }}
+          retention-days: 30
+      - name: Salvar no GitHub (só nas execuções manuais)
+        if: github.event_name == 'workflow_dispatch' && always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RAMO="audio/${IDIOMA}-${{ github.run_number }}"
+          git checkout -b "$RAMO"
+          git add public/audio
+          if git diff --cached --quiet; then echo "Nada novo para salvar."; exit 0; fi
+          git commit -m "áudio (${IDIOMA}): novos MP3 gerados com Edge TTS"
+          git push origin "$RAMO"
+          echo "Ramo criado: $RAMO. Abra um pull request dele para a main depois de ouvir os áudios."

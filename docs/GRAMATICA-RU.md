@@ -1,8 +1,8 @@
 # Gramática do russo: qualidade, ordem do curso e próximos passos
 
-## 1. Ponderação sobre a qualidade das aulas (24 aulas, 96 sessões, 48 h)
+## 1. Ponderação sobre a qualidade das aulas (30 aulas, 120 sessões, 60 h)
 
-Números reais, calculados dos arquivos: 412 palavras únicas, 52 blocos de gramática, 22 diálogos, 19 textos com perguntas, 321 exercícios (121 de múltipla escolha, 100 de lacuna, 47 de áudio, 32 de ordenar frase, 21 de escrita livre) e 96 tarefas de fala ou escrita.
+Números reais, calculados dos arquivos (conferidos na rodada anterior com 24 aulas; as aulas 25 a 30 somam mais 15 blocos de gramática, 6 diálogos, 6 textos e 90 exercícios): hoje são 67 blocos de gramática e mais de 400 exercícios.
 
 | Critério | Nota | Por quê |
 |---|---|---|
@@ -33,9 +33,15 @@ Números reais, calculados dos arquivos: 412 palavras únicas, 52 blocos de gram
 | **21** | **O futuro** | буду + infinitivo; futuro perfectivo; como escolher |
 | **22** | **Verbos de movimento** | идти/ходить, ехать/ездить, лететь, бежать, prefixos при-/у-/в-/вы-, пойти/поехать |
 | 23 | Comida e restaurante | Acusativo ao pedir, мне нужно/нужен/нужна/нужны, можно, нельзя |
-| 24 | Revisão e prova final | Mapa de 23 pontos, 10 erros comuns, prova de 19 exercícios |
+| 24 | Revisão e prova final do nível inicial | Mapa de 23 pontos, 10 erros comuns, prova de 19 exercícios |
+| **25** | **Dativo** | Singular, plural e pronomes; verbos (звонить, помогать, нравиться); к e по; idade e sensações |
+| **26** | **Instrumental** | Singular, plural e pronomes; com, instrumento, profissão, estações; над, под, перед, за, между |
+| **27** | **Genitivo completo** | Singular e plural (-ов, -ей, zero), quantidade, medidas, из/с = откуда |
+| **28** | **Numerais e datas** | Até 1000, numeral + substantivo (1 / 2–4 / 5+), idade, ordinais, meses, datas |
+| **29** | **Quadro geral dos casos** | Seis casos × gênero × número para substantivos, adjetivos, possessivos e pronomes; preposições por caso |
+| **30** | **Comparativo e superlativo** | -ее, irregulares, чем / genitivo, самый, такой же, предпочитать |
 
-Em negrito, o que esta rodada acrescentou ou reforçou. As aulas 15 e 16 foram inseridas **antes** do «meu dia» e do passado porque essas aulas já usam conjugação, «в» e «на». A aula 20 vem logo **depois** do passado, a 21 logo depois do aspecto, e a 22 depois do futuro, porque «пойти» e «поехать» são perfectivos.
+Em negrito, o que as últimas rodadas acrescentaram ou reforçaram. A partir da aula 25 o curso passa dos 100 dias (a aula 25 ocupa os dias 97 a 100; a aula 30 termina no dia 120). As aulas 15 e 16 foram inseridas **antes** do «meu dia» e do passado porque essas aulas já usam conjugação, «в» e «на». A aula 20 vem logo **depois** do passado, a 21 logo depois do aspecto, e a 22 depois do futuro, porque «пойти» e «поехать» são perfectivos.
 
 ## 3. A lógica: quem depende de quem
 1. Substantivo e gênero → 2. concordância (adjetivo, possessivo, «этот», passado) → 3. plural → 4. casos na ordem de necessidade (nominativo, acusativo, preposicional, genitivo, dativo, instrumental) → 5. verbos: 1ª e 2ª conjugação → passado → aspecto → futuro → movimento.
@@ -52,15 +58,15 @@ Passo seguinte: marcar cada bloco com `requer` e fazer o script avisar quando um
 7. **Nada de regra sem uso:** exemplos, exercícios e uma tarefa de fala em cada tópico.
 
 ## 5. A aba Gramática (no ar)
-`/gramatica/ru`: 52 tópicos em 14 categorias, gerados dos blocos de gramática das aulas (nada é escrito duas vezes). Cada tópico abre com explicação, tabelas, comparação, exemplos e erros comuns, e leva à sessão em que é praticado. Para um tópico novo aparecer: `gramatica(min, titulo, explicacao, { tag: '…' })` na aula. Falta: busca por palavra e a mesma aba para o alemão.
+`/gramatica/ru`: 67 tópicos em 16 categorias (novas: «Quadro dos casos» e «Comparação»), gerados dos blocos de gramática das aulas (nada é escrito duas vezes). Cada tópico abre com explicação, tabelas, comparação, exemplos e erros comuns, e leva à sessão em que é praticado. Para um tópico novo aparecer: `gramatica(min, titulo, explicacao, { tag: '…' })` na aula. Falta: busca por palavra e a mesma aba para o alemão.
 
 ## 6. Próximos passos, por prioridade
-1. **Acento tônico** nas palavras do vocabulário e nos exemplos (ex.: мама́ → ма́ма). É a melhoria de qualidade com maior efeito.
-2. **Revisão por falante nativo** das 24 aulas.
-3. **Áudio gravado** (693 frases) e, só então, anúncios.
-4. **Exercícios de produção corrigidos pelo site** (a correção com IA do `server.ts`).
-5. **Revisão espaçada** automática (cartões que voltam).
-6. **A2:** genitivo plural e numerais, dativo e instrumental completos, comparativo, imperativo, condicional, particípio.
+1. **Acento tônico** nas palavras do vocabulário e nos exemplos (ex.: мама́ → ма́ма). Combinado com o Felipe: será feito em uma rodada própria, com explicação.
+2. **Mais aulas** (ordem sugerida): imperativo; compras e roupas; viagem e transporte; saúde e corpo; casa e cidade; trabalho e estudo; plural completo dos adjetivos; condicional («бы»); particípios e gerúndios (B1).
+3. **Revisão por falante nativo** das 30 aulas.
+4. **Áudio gravado** (829 frases) e, só então, anúncios.
+5. **Exercícios de produção corrigidos pelo site** (a correção com IA do `server.ts`).
+6. **Revisão espaçada** automática (cartões que voltam).
 7. Alemão: converter as 16 aulas para o formato compacto e criar a aba de gramática dele.
 
 ## 7. Áudios RED KALINKA

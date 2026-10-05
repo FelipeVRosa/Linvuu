@@ -1,4 +1,4 @@
-# Revisão objetiva: aulas 1 a 24 (ru)
+# Revisão objetiva: aulas 1 a 30 (ru)
 
 Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto nos arquivos de `content/idiomas/ru/aulas/`.
 
@@ -29,7 +29,13 @@ Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto 
 | 22 | Gramática: verbos de movimento | 0 | 16 | 8 | 14 | 120 | 120 |
 | 23 | Comida e restaurante | 0 | 20 | 8 | 14 | 120 | 120 |
 | 24 | Revisão e prova final | 0 | 5 | 8 | 19 | 120 | 120 |
-| **Total** | | 33 | 423 | 166 | 321 | 2880 | 2880 |
+| 25 | Gramática: o dativo | 0 | 19 | 8 | 15 | 120 | 120 |
+| 26 | Gramática: o instrumental | 0 | 14 | 8 | 15 | 120 | 120 |
+| 27 | Gramática: o genitivo completo | 0 | 11 | 8 | 15 | 120 | 120 |
+| 28 | Gramática: numerais e datas | 0 | 17 | 8 | 15 | 120 | 120 |
+| 29 | Gramática: o quadro geral dos casos | 0 | 0 | 0 | 16 | 120 | 120 |
+| 30 | Gramática: comparativo e superlativo | 0 | 16 | 8 | 14 | 120 | 120 |
+| **Total** | | 33 | 500 | 206 | 411 | 3600 | 3600 |
 
 ## 1. Alfabeto
 O russo tem 33 letras. As aulas ensinam **33**. Alfabeto completo.
@@ -134,6 +140,30 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 | 24 | S2 | 0 de 9 | — |
 | 24 | S3 | 0 de 0 | — |
 | 24 | S4 | 0 de 0 | — |
+| 25 | S1 | 0 de 6 | — |
+| 25 | S2 | 0 de 8 | — |
+| 25 | S3 | 0 de 13 | — |
+| 25 | S4 | 0 de 0 | — |
+| 26 | S1 | 0 de 6 | — |
+| 26 | S2 | 0 de 8 | — |
+| 26 | S3 | 0 de 9 | — |
+| 26 | S4 | 0 de 0 | — |
+| 27 | S1 | 0 de 6 | — |
+| 27 | S2 | 0 de 5 | — |
+| 27 | S3 | 0 de 9 | — |
+| 27 | S4 | 0 de 0 | — |
+| 28 | S1 | 0 de 12 | — |
+| 28 | S2 | 0 de 5 | — |
+| 28 | S3 | 0 de 8 | — |
+| 28 | S4 | 0 de 0 | — |
+| 29 | S1 | 0 de 0 | — |
+| 29 | S2 | 0 de 0 | — |
+| 29 | S3 | 0 de 1 | — |
+| 29 | S4 | 0 de 0 | — |
+| 30 | S1 | 0 de 8 | — |
+| 30 | S2 | 0 de 8 | — |
+| 30 | S3 | 0 de 9 | — |
+| 30 | S4 | 0 de 0 | — |
 
 ## 3. Números prometidos x reais
 | Aula | Promessa no objetivo | Real |
@@ -150,9 +180,9 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 - Todos batem.
 
 ## 6. Horas reais do ciclo (calculadas)
-- 24 aulas declaram 2880 min = **48.0 h** (média de 120 min por aula).
+- 30 aulas declaram 3600 min = **60.0 h** (média de 120 min por aula).
 - Um ciclo de 10 aulas nesse formato teria **20.0 h**.
-- A 40 min por dia, 24 aulas levam 72 dias.
+- A 40 min por dia, 30 aulas levam 90 dias.
 - Para um ciclo ter 80 h, cada aula teria de ter 8 h (16 sessões de 30 min), ou o ciclo teria de ter 40 aulas.
 
 ## 7. Achados de leitura (não automáticos)

@@ -32,6 +32,9 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - `npm run auditar`: gera `docs/REVISAO-RU-AULAS.md` (alfabeto, letras fora de ordem, duplicatas, minutos, promessas).
 - `npm run build`: valida o conteúdo e gera o site.
 
+## Dias além de 100
+A trilha-mestre tem 100 dias, mas um idioma pode continuar: `npm run aulas` gera `dia-101.json` em diante, sem buracos. O site lê o total de dias do índice (`content/indice.json`). Para os outros idiomas nada muda.
+
 ## Como adicionar uma aula (sem gastar tokens)
 Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - **Compacto (recomendado):** escreva `content/idiomas/ru/fontes/aula-011.mjs` (copie `aula-007.mjs`). Palavras, diálogos e exercícios são listas curtas; ids, áudio e minutos são automáticos. Formato em `scripts/dsl-aula.mjs`.
@@ -47,8 +50,8 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - Login por e-mail e senha ativo; Google escondido até ser ativado.
 - GitHub Pages foi descartado; hospedagem é o Render.
 
-## Estado (rodada 10)
-- Russo: aulas 1 a 24 (dias 1 a 96, status "publicada", curso "Disponível"; as aulas 11 a 16 e 20 a 22 são de gramática) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
+## Estado (rodada 11)
+- Russo: aulas 1 a 30 (dias 1 a 120, status "publicada", curso "Disponível"; as aulas 11 a 16, 20 a 22 e 25 a 30 são de gramática; o curso passa dos 100 dias a partir da aula 25) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
 - Aba Gramática em `/gramatica/ru`, gerada das aulas (`scripts/gramatica.mjs`); ordem do curso, qualidade e próximos passos em `docs/GRAMATICA-RU.md`. Blocos de gramática aceitam `comparacao`, `erros`, `tabelas` e `tag`.
 - A página do curso lista por aula quando o curso tem aulas escritas; as fases genéricas só aparecem para o que ainda é planejado.
 - Os áudios RED KALINKA enviados pelo Felipe não entram no site nem no repositório (decisão dele; ele é o autor do livro). Ver `docs/GRAMATICA-RU.md`, seção 6.

@@ -19,8 +19,13 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
   const status = [];
   const sobrescritos = {};
   const grupos = {};
-  for (const d of trilha.dias) {
+  // a trilha-mestre tem 100 dias; um idioma pode continuar depois (dia-101.json em diante, gerados por aulas.mjs)
+  const maisDias = fs.readdirSync(dir).map((f) => f.match(/^dia-(\d+)\.json$/)?.[1]).filter(Boolean).map(Number).filter((n) => n > trilha.dias.length);
+  const ultimoDia = Math.max(trilha.dias.length, ...maisDias);
+  for (let n = 1; n <= ultimoDia; n++) {
+    const d = trilha.dias[n - 1] ?? { dia: n, fase: Math.ceil(n / 10), nivel: 'a2', titulo: `Dia ${n}`, objetivo: '' };
     const file = path.join(dir, `dia-${pad(d.dia)}.json`);
+    if (!fs.existsSync(file) && n > trilha.dias.length) { erros.push(`falta ${c.id}/dia-${pad(n)}.json (a continuação do curso não pode ter buracos)`); continue; }
     if (!fs.existsSync(file)) {
       if (check) { erros.push(`falta ${c.id}/dia-${pad(d.dia)}.json`); status.push('planejada'); continue; }
       const aula = {
@@ -40,7 +45,7 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     if (!STATUS.includes(aula.status)) erros.push(`${file}: status inválido "${aula.status}"`);
     status.push(aula.status);
     if (aula.aula?.numero) { const g = (grupos[aula.aula.numero] ??= { aula: aula.aula.numero, titulo: aula.aula.titulo, dias: [d.dia, d.dia] }); g.dias[1] = d.dia; }
-    const m = trilha.dias[d.dia - 1];
+    const m = trilha.dias[d.dia - 1] ?? { titulo: null, objetivo: null };
     if (aula.titulo !== m.titulo || aula.objetivo !== m.objetivo) sobrescritos[d.dia] = { t: aula.titulo, o: aula.objetivo };
   }
   indice.cursos[c.id] = {

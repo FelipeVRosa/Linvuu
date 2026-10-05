@@ -33,7 +33,7 @@ const usados = new Set();
 for (const a of aulas) {
   a.sessoes.forEach((s, i) => {
     dia = (a.aula - 1) * 4 + i + 1;
-    const m = trilha.dias[dia - 1];
+    const m = trilha.dias[dia - 1] ?? { fase: Math.ceil(dia / 10), nivel: a.nivel }; // depois do dia 100 o curso continua
     escrever(path.join(dirIdioma, `dia-${pad(dia)}.json`), {
       idioma: id, dia, fase: m.fase, nivel: m.nivel, status: a.status,
       titulo: `${a.titulo}: ${s.titulo}`,

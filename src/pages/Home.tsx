@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CURSOS, FASES, NIVEL_CURTO, NIVEL_LABEL } from '../lib/content';
+import { CURSOS, FASES, NIVEL_CURTO, NIVEL_LABEL, statusDoCurso } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
 import { Vitrine } from '../components/Vitrine';
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <button type="submit" className="search-btn">{t.hero.botao}</button>
             </form>
-            <p className="hero-nota">{t.hero.nota}</p>
+            <p className="hero-nota">{t.hero.nota.replace('{n}', String(Math.floor((statusDoCurso('ru')?.publicadas ?? 0) / 4)))}</p>
           </div>
 
           <aside className="hoje" aria-label="Exemplo de uma sessão">

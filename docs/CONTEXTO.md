@@ -33,8 +33,11 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - `npm run build`: valida o conteúdo e gera o site.
 
 ## Como adicionar uma aula (sem gastar tokens)
-1. Salve o JSON em `content/idiomas/ru/aulas/aula-007.json` pelo VS Code (não cole no chat).
-2. `npm run aulas && npm run auditar`.
+Dois jeitos. O compacto gasta cerca de 40% menos texto:
+- **Compacto (recomendado):** escreva `content/idiomas/ru/fontes/aula-011.mjs` (copie `aula-007.mjs`). Palavras, diálogos e exercícios são listas curtas; ids, áudio e minutos são automáticos. Formato em `scripts/dsl-aula.mjs`.
+- **JSON:** salve em `content/idiomas/ru/aulas/aula-011.json` (formato das aulas 1 a 6).
+1. Escreva a aula pelo VS Code (não cole no chat).
+2. `npm run aulas && npm run auditar` (o primeiro compila as fontes compactas e gera os dias).
 3. Leia o relatório, corrija o JSON, repita.
 4. Commit, push em uma branch e abra o PR. O teste automático roda o build.
 
@@ -44,8 +47,8 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - Login por e-mail e senha ativo; Google escondido até ser ativado.
 - GitHub Pages foi descartado; hospedagem é o Render.
 
-## Estado (rodada 6)
-- Russo: aulas 1 a 6 (dias 1 a 24) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
+## Estado (rodada 7)
+- Russo: aulas 1 a 10 (dias 1 a 40, status "publicada", curso "Disponível") estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
 - Marketing reescrito (ver `docs/MARKETING.md`); textos em `src/i18n/pt-BR.ts`; preparação internacional em `docs/INTERNACIONAL.md`.
 - Páginas de termos e privacidade (modelo inicial, precisa de revisão jurídica e dos dados da empresa).
 - Pendente de revisão: ver `docs/REVISAO-RU-AULAS.md` (diálogo da aula 1 com russo pouco natural, negação na aula 7).

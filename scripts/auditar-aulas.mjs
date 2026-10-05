@@ -103,28 +103,28 @@ const totalMin = resumo.reduce((x, r) => x + r.declarado, 0);
 const mediaAula = totalMin / resumo.length;
 p('## 6. Horas reais do ciclo (calculadas)');
 p(`- ${resumo.length} aulas declaram ${totalMin} min = **${(totalMin / 60).toFixed(1)} h** (média de ${mediaAula} min por aula).`);
-p(`- Um ciclo de 10 aulas nesse formato teria **${((mediaAula * 10) / 60).toFixed(1)} h**, não 80 h.`);
-p(`- A 40 min por dia, ${resumo.length} aulas levam ${Math.ceil(totalMin / 40)} dias; 10 aulas levam ${Math.ceil((mediaAula * 10) / 40)} dias.`);
-p('- Para o ciclo ter 80 h, cada aula teria de ter 8 h (16 sessões de 30 min), ou o ciclo teria de ter 40 aulas.');
+if (resumo.length !== 10) p(`- Um ciclo de 10 aulas nesse formato teria **${((mediaAula * 10) / 60).toFixed(1)} h**.`);
+p(`- A 40 min por dia, ${resumo.length} aulas levam ${Math.ceil(totalMin / 40)} dias.`);
+p('- Para um ciclo ter 80 h, cada aula teria de ter 8 h (16 sessões de 30 min), ou o ciclo teria de ter 40 aulas.');
 if (id === 'ru') {
   p('');
   p('## 7. Achados de leitura (não automáticos)');
   [
-    'Aula 1, S3: o diálogo soa pouco natural em russo («Она мама» repete «Это мама»; «А, вот кто!» e «Нет, не за что» não são naturais). Vale revisão de um falante nativo.',
+    'Revisão de falante nativo: todas as aulas foram escritas e conferidas sem um nativo. Peça a um nativo para ler as aulas 1 a 10 (diálogos e textos) antes de divulgar em anúncio.',
     'Aula 3, S3: o texto «На уроке» usa vocabulário não ensinado (преподаватель, входит, класс, студентка, говорит, отвечает). Com tradução funciona, mas pesa para a aula 3.',
-    'Aula 5, S1: «мои друзья» mostra plural irregular (друг → друзья) sem aviso; a aula 6 só explica isso depois.',
-    'Aula 5, S2 tem 6 palavras e 4 exercícios; as outras sessões têm de 10 a 20 itens. A carga fica desigual.',
-    'Aula 6 ensina «У меня есть» mas não «У меня нет» (não tenho). A negação precisa vir logo na aula 7.',
+    'Aula 5, S1: «мои друзья» mostra plural irregular (друг → друзья) sem aviso; a aula 6 explica isso depois.',
+    'Aula 9, S3: «Они учителя» usa o plural irregular de «учитель» sem explicação (a tradução ajuda).',
     'Palavras com letras ainda não ensinadas continuam existindo nas aulas 1 a 3 (frases prontas como «спасибо», «хорошо»). O site as marca com "ouça e repita"; vale decidir se ficam assim ou se ganham uma aula de leitura.',
   ].forEach((t) => p(`- ${t}`));
   p('');
-  p('### Resolvidos na rodada 6');
+  p('### Resolvidos nas rodadas 6 e 7');
   [
     'Alfabeto completo: У e Х entraram no grupo 2 da aula 1 («falsas amigas»); as 33 letras fecham na aula 3.',
     'Objetivos com números reais (12 letras e 19 palavras na aula 1; 20 palavras na aula 4).',
     'Minutos das sessões batem com a duração declarada (aulas 1 e 6).',
     'Gênero explicado na aula 4 (bloco novo) antes de ser cobrado; ortografia do Brasil («gênero»).',
     'Transliteração de «что»: shto. «Nunca use есть» virou "no dia a dia, não use".',
+    'Aula 1: diálogo da sessão 3 reescrito com russo natural. Aula 5: sessão 2 ganhou 4 exercícios (carga igual às outras). Aula 7 ensina a negação («не» e «У меня нет»).',
     'Aula 6: bloco "vocabulario" virou "palavras"; «родители» repetida trocada por «люди»; distrator «ребята» trocado; explicação do «н-» e de «в деревне» ajustadas.',
   ].forEach((t) => p(`- ${t}`));
 

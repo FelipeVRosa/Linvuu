@@ -33,7 +33,7 @@ export default function Curso() {
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
             {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
-            {stats && <span>{stats.publicadas} de {stats.total} aulas publicadas</span>}
+            {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
           </div>
         </div>
       </header>
@@ -54,8 +54,8 @@ export default function Curso() {
               <Link to={`/curso/${curso.id}/dia/${inicio.dia}`} className="btn btn-primary">Ir para o dia {inicio.dia}</Link>
             </section>
           )}
-          {stats && stats.publicadas === 0 && (
-            <p className="nota">As aulas deste curso ainda estão sendo produzidas. Você pode navegar pela trilha inteira e ver o objetivo de cada dia.</p>
+          {stats && stats.publicadas < stats.total && (
+            <p className="nota">Parte das aulas deste curso ainda está sendo produzida. Você pode navegar pela trilha inteira e ver o objetivo de cada dia.</p>
           )}
           <h2 className="pagina-h2">A trilha, dia por dia</h2>
           {FASES.map((f) => (

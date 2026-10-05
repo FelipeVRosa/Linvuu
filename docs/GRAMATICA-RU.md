@@ -39,7 +39,11 @@ Hoje essa ordem é seguida à mão e conferida pelo relatório de auditoria. O p
 - Para um tópico novo aparecer na aba: escreva `gramatica(min, titulo, explicacao, { tag: 'Casos', ... })` na aula.
 - Falta: busca por palavra, índice por nível e a mesma aba para o alemão.
 
-## 5. Próximas aulas sugeridas (em ordem)
+## 5. O que já foi feito das aulas sugeridas (aulas 15 a 19) e o que vem depois
+Feito: 15 dias da semana e horas; 16 meu dia (verbos em -ся, идти/ехать, куда?); 17 passado; 18 comida e restaurante (мне нужно, можно, нельзя); 19 revisão e prova final do nível inicial.
+Depois: futuro e aspecto do verbo; genitivo plural; dativo e instrumental completos; comparativo; imperativo; compras e roupas; viagem e transporte.
+
+### Plano original (para referência)
 - **15. Dias da semana e horas** (в + acusativo: «в понедельник»; horas inteiras).
 - **16. Meu dia** (rotina, verbos com -ся, advérbios de tempo).
 - **17 e 18. Passado** (был/была/было/были; verbos no passado; contar o que aconteceu).
@@ -47,5 +51,5 @@ Hoje essa ordem é seguida à mão e conferida pelo relatório de auditoria. O p
 - **20. Revisão e prova final do nível inicial.**
 Com 20 aulas o curso soma 40 horas de conteúdo. Isso é uma base de iniciante, não um nível completo.
 
-## 6. Material de terceiros (importante)
-Os arquivos de áudio «RED KALINKA» (A1, A2 e B1) que o Felipe enviou são de uma editora e **não podem ser publicados no site nem guardados no repositório**. As faixas do A1 têm os mesmos temas do material antigo em `content/legado/russo-interativo` (Привет, студент; Это мой друг; Моя семья; Профессия; Я русский, а вы?; Язык; Что ты делаешь?). Temas comuns não são problema, mas diálogos, textos e frases escolhidas podem ser. Antes de anunciar: (1) confira se algum texto das aulas 1 a 6 ou do material legado foi copiado de um livro; (2) grave o áudio do site com voz própria ou de um nativo contratado.
+## 6. Áudios RED KALINKA
+Os áudios «RED KALINKA» (A1, A2 e B1) que o Felipe enviou **não entram no site nem no repositório**, por decisão dele. O Felipe é o autor do livro e informou que não há risco de direitos autorais para o conteúdo; a decisão de não publicar os áudios vale como regra do projeto. O áudio do site será gravado à parte (lista em `content/audio/ru-gravar.csv`).

@@ -3,28 +3,147 @@
   "dia": 70,
   "fase": 7,
   "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Revisão da fase 7",
-  "objetivo": "Contar uma história pessoal de dois minutos.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Comida e restaurante: Precisar, poder, não poder",
+  "objetivo": "Aula 18, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "Comida e restaurante",
+    "objetivo": "Pedir comida e bebida, dizer o que você quer, precisa e gosta, e usar «мне нужно», «можно» e «нельзя».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Precisar, poder, não poder",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva os pronomes no dativo: мне, тебе, ему, ей, нам, вам, им."
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "нужно",
+            "translit": "núzhna",
+            "pt": "é preciso",
+            "en": "it is necessary",
+            "audio": "нужно"
+          },
+          {
+            "ru": "можно",
+            "translit": "mózhna",
+            "pt": "pode-se, é permitido",
+            "en": "may",
+            "audio": "можно"
+          },
+          {
+            "ru": "нельзя",
+            "translit": "nilziá",
+            "pt": "não pode, é proibido",
+            "en": "must not",
+            "audio": "нельзя"
+          },
+          {
+            "ru": "надо",
+            "translit": "náda",
+            "pt": "é preciso (coloquial)",
+            "en": "must",
+            "audio": "надо"
+          },
+          {
+            "ru": "лучше",
+            "translit": "lúchshe",
+            "pt": "melhor",
+            "en": "better",
+            "audio": "лучше"
+          },
+          {
+            "ru": "больше",
+            "translit": "bólshe",
+            "pt": "mais",
+            "en": "more",
+            "audio": "больше"
+          },
+          {
+            "ru": "вкусно",
+            "translit": "fkúsna",
+            "pt": "gostoso",
+            "en": "tasty",
+            "audio": "вкусно"
+          },
+          {
+            "ru": "пить",
+            "translit": "pit",
+            "pt": "beber",
+            "en": "to drink",
+            "audio": "пить"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Мне нужно, можно, нельзя",
+        "explicacao": "Em russo, muitas ideias de necessidade e permissão não têm um sujeito como «eu». Quem precisa vai para o dativo (мне, тебе, ему...) e a palavra «нужно» vem depois. Depois dela pode vir um verbo no infinitivo: «Мне нужно работать». Se vem um substantivo, a forma de «нужно» concorda com ele: «нужен» (masculino), «нужна» (feminino), «нужно» (neutro), «нужны» (plural). Já «можно» (pode-se) e «нельзя» (não se pode) nunca mudam: são advérbios.",
+        "comparacao": "em português dizemos «eu preciso de água» (sujeito eu). Em russo: «a mim é necessária água» (Мне нужна вода), e «нужна» concorda com a água.",
+        "exemplos": [
+          {
+            "ru": "Мне нужно работать.",
+            "pt": "Eu preciso trabalhar."
+          },
+          {
+            "ru": "Можно воду, пожалуйста?",
+            "pt": "Posso pedir água, por favor?"
+          },
+          {
+            "ru": "Здесь нельзя громко говорить.",
+            "pt": "Aqui não se pode falar alto."
+          }
+        ],
+        "tabela": [
+          {
+            "coisa": "хлеб (masculino)",
+            "forma": "нужен",
+            "exemplo": "Мне нужен хлеб."
+          },
+          {
+            "coisa": "вода (feminino)",
+            "forma": "нужна",
+            "exemplo": "Мне нужна вода."
+          },
+          {
+            "coisa": "молоко (neutro)",
+            "forma": "нужно",
+            "exemplo": "Мне нужно молоко."
+          },
+          {
+            "coisa": "деньги (plural)",
+            "forma": "нужны",
+            "exemplo": "Мне нужны деньги."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Я нужно воду.",
+            "certo": "Мне нужна вода.",
+            "motivo": "Quem precisa vai para o dativo (мне); o que se precisa concorda com «нужна»."
+          }
+        ],
+        "tag": "Verbos"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga: «Мне нужен хлеб. Мне нужна вода. Мне нужно молоко. Можно воду, пожалуйста?»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-018.json",
+  "responsavel": null
 }

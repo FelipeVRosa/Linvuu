@@ -11,7 +11,7 @@ const CATEGORIAS = [
   [/c[óo]pula|profiss[ãa]o|negar com/i, 'Frase básica'], [/ty|ты.*вы|zовут|зовут/i, 'Pronomes'], [/g[êe]nero|plurais/i, 'Substantivos'],
   [/у меня есть|verbos|presente dos verbos|pedir/i, 'Verbos'], [/preposicional|acusativo|n[ãa]o tenho|нет/i, 'Casos'], [/n[úu]mero|рубль/i, 'Números'],
 ];
-const ORDEM = ['Frase básica', 'Substantivos', 'Adjetivos e possessivos', 'Pronomes', 'Verbos', 'Advérbios', 'Perguntas', 'Números', 'Casos'];
+const ORDEM = ['Frase básica', 'Substantivos', 'Adjetivos e possessivos', 'Pronomes', 'Verbos', 'Advérbios', 'Perguntas', 'Números', 'Tempo', 'Casos', 'Revisão'];
 const categoria = (b) => b.tag ?? CATEGORIAS.find(([re]) => re.test(b.titulo))?.[1] ?? 'Outros';
 
 const topicos = [];

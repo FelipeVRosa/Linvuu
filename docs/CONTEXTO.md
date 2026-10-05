@@ -52,7 +52,7 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 
 ## Estado (rodada 13)
 - Russo: aulas 1 a 30 (dias 1 a 120, status "publicada", curso "Disponível"; as aulas 11 a 16, 20 a 22 e 25 a 30 são de gramática; o curso passa dos 100 dias a partir da aula 25) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
-- Alemão: aulas 1 a 10 (dias 1 a 40, primeiro bloco) no ar, curso "Disponível"; plano das 30 aulas em `docs/PLANO-ALEMAO.md`.
+- Alemão: bloco A1 completo, aulas 1 a 20 (dias 1 a 80, 40 h), com áudio; plano v2 em `docs/PLANO-ALEMAO.md` (A1 20 aulas, A2 26, B1 26). Antes: aulas 1 a 10 (dias 1 a 40, primeiro bloco) no ar, curso "Disponível"; plano das 30 aulas em `docs/PLANO-ALEMAO.md`.
 - Áudio: MP3 salvos em `public/audio/<idioma>/` (gerados com Edge TTS por um workflow do GitHub); ver `docs/AUDIO.md`. Acento tônico é só gráfico (não entra no hash nem na fala). As 16 aulas antigas ficam em `content/legado/` só como consulta.
 - Aba Gramática em `/gramatica/ru` e `/gramatica/de`, gerada das aulas (`scripts/gramatica.mjs`); ordem do curso, qualidade e próximos passos em `docs/GRAMATICA-RU.md`. Blocos de gramática aceitam `comparacao`, `erros`, `tabelas` e `tag`.
 - A página do curso lista por aula quando o curso tem aulas escritas; as fases genéricas só aparecem para o que ainda é planejado.

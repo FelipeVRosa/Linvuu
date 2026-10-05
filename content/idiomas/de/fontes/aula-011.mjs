@@ -1,78 +1,74 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 11, titulo: 'Gramática: os quatro casos', nivel: 'a1',
-  objetivo: 'Entender o que são os quatro casos do alemão (Nominativ, Akkusativ, Dativ, Genitiv), ler o quadro completo dos artigos e usar os pronomes pessoais no nominativo, acusativo e dativo.',
-  nota: 'Você tem o quadro dos quatro casos. Próxima aula: o dativo.',
+  idioma: 'de', numero: 11, titulo: 'Können e möchten: saber, poder, pedir e convidar', nivel: 'a1',
+  objetivo: 'Dizer o que você sabe fazer com «können», pedir ajuda e esclarecimentos com educação e convidar, aceitar ou recusar com «möchten» e «können», sempre com o segundo verbo no fim da frase.',
+  nota: 'Você sabe dizer o que consegue fazer, pedir ajuda e convidar. Próxima aula: müssen, wollen e dürfen.',
   sessoes: [
-    sessao('S1', 'O que é um caso', [
-      revisao(5, 'Escreva 4 frases com objeto direto (acusativo): «Ich esse den Käse…».'),
+    sessao('S1', 'Können: o que eu sei fazer', [
+      revisao(5, 'Escreva as 6 formas de «möchten» e 3 frases com «Ich möchte … + verbo no fim».'),
       palavras(8, [
-        ['das Geschenk', 'das guexênk', 'presente', 'gift'], ['der Hund', 'der hunt', 'cachorro', 'dog'], ['die Katze', 'di kátse', 'gato', 'cat'], ['das Handy', 'das hen-di', 'celular', 'mobile phone'], ['die Tasche', 'di táxe', 'bolsa', 'bag'], ['der Schlüssel', 'der xlússel', 'chave', 'key'], ['das Fahrrad', 'das fár-rat', 'bicicleta', 'bicycle'], ['die Zeitung', 'di tsáitung', 'jornal', 'newspaper'],
+        ['schwimmen', 'xvímen', 'nadar', 'to swim'], ['tanzen', 'tántsen', 'dançar', 'to dance'], ['singen', 'zíngen', 'cantar', 'to sing'], ['malen', 'málen', 'pintar, desenhar', 'to paint'],
+        ['das Klavier', 'das klavír', 'piano', 'piano'], ['die Gitarre', 'di guitáre', 'violão, guitarra', 'guitar'], ['der Fußball', 'der fús-bal', 'futebol', 'football'], ['schlecht', 'xleçt', 'mal, ruim', 'bad'],
       ]),
-      gramatica(14, 'Os quatro casos', 'Em alemão a função de uma palavra na frase aparece no ARTIGO (e em alguns finais). Há quatro casos. NOMINATIVO: quem faz a ação, o sujeito (wer? was?). AKKUSATIV: o objeto direto (wen? was?). DATIV: o objeto indireto, a quem se dá, diz ou ajuda (wem?). GENITIV: posse (wessen?). Em «Der Mann gibt dem Kind einen Apfel»: «der Mann» é o sujeito (nominativo), «dem Kind» é a quem ele dá (dativo) e «einen Apfel» é o que ele dá (acusativo). Você já usa o nominativo e o acusativo; nesta aula começa o quadro completo.', {
-        tag: 'Casos',
-        comparacao: 'em português a função aparece na ordem das palavras e nas preposições («dar a maçã ao menino»). Em alemão ela aparece no artigo: «dem Kind» já diz «ao menino».',
+      gramatica(14, 'Können: o primeiro verbo modal, passo a passo', 'Um verbo MODAL ajuda outro verbo a dizer «poder», «saber», «dever», «querer». Vamos montar o primeiro, «können». PASSO 1: «können» diz o que você sabe ou consegue fazer: «Ich kann schwimmen» = eu sei nadar. PASSO 2: conjugue «können»; ele é irregular no singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie können. PASSO 3: o segundo verbo vai para o FIM da frase, no infinitivo: «Ich kann gut schwimmen.» A frase fica «emoldurada»: o modal na 2ª posição e o infinitivo no fim. PASSO 4: para perguntar, o modal vai para o começo: «Kannst du schwimmen?» PASSO 5: para negar, «nicht» vem antes do verbo que está no fim: «Ich kann nicht schwimmen.» REGRA DE BOLSO: «ich» e «er» são IGUAIS (kann) e nunca levam -t.', {
+        tag: 'Verbos',
+        comparacao: 'o português também usa «saber» ou «poder» + infinitivo («eu sei nadar»). A diferença é só a posição: em alemão o infinitivo vai sempre para o FIM da frase, não fica ao lado do modal.',
         tabela: [
-          { caso: 'Nominativ', pergunta: 'wer? was?', funcao: 'sujeito', exemplo: 'Der Mann liest.' }, { caso: 'Akkusativ', pergunta: 'wen? was?', funcao: 'objeto direto', exemplo: 'Ich sehe den Mann.' },
-          { caso: 'Dativ', pergunta: 'wem?', funcao: 'objeto indireto', exemplo: 'Ich helfe dem Mann.' }, { caso: 'Genitiv', pergunta: 'wessen?', funcao: 'posse', exemplo: 'Das ist das Auto des Mannes.' },
+          { pronome: 'ich', können: 'kann', exemplo: 'Ich kann schwimmen.' }, { pronome: 'du', können: 'kannst', exemplo: 'Kannst du tanzen?' }, { pronome: 'er / sie / es', können: 'kann', exemplo: 'Er kann gut singen.' },
+          { pronome: 'wir', können: 'können', exemplo: 'Wir können Gitarre spielen.' }, { pronome: 'ihr', können: 'könnt', exemplo: 'Könnt ihr malen?' }, { pronome: 'sie / Sie', können: 'können', exemplo: 'Können Sie Klavier spielen?' },
         ],
-        erros: [['Ich helfe den Mann.', 'Ich helfe dem Mann.', '«helfen» pede o dativo (a quem?).'], ['Ich sehe der Mann.', 'Ich sehe den Mann.', 'O objeto direto masculino vai para o acusativo.']],
+        exemplos: [['Ich kann gut schwimmen.', 'Eu sei nadar bem.'], ['Kannst du Klavier spielen? — Ja, ein bisschen.', 'Você sabe tocar piano? — Sim, um pouco.'], ['Ich kann nicht tanzen.', 'Eu não sei dançar.']],
+        erros: [['Ich können schwimmen.', 'Ich kann schwimmen.', '«ich» pede «kann», não «können».'], ['Er kannt singen.', 'Er kann singen.', 'No «er», o modal não leva -t.'], ['Ich kann schwimmen gut.', 'Ich kann gut schwimmen.', 'O verbo principal fica no FIM da frase.']],
       }),
-      producao(3, 'Diga: «Der Mann liest. Ich sehe den Mann. Ich helfe dem Mann. Das ist das Auto des Mannes.»'),
+      producao(3, 'Diga 5 coisas que você sabe fazer e 2 que não sabe: «Ich kann … / Ich kann nicht …».'),
     ]),
-    sessao('S2', 'O quadro dos artigos', [
-      revisao(5, 'Escreva de memória o artigo definido no nominativo e no acusativo, nos quatro gêneros.'),
+    sessao('S2', 'Können: pedir e entender', [
+      revisao(5, 'Escreva uma frase com cada pessoa de «können» (ich, du, er, wir, ihr, sie).'),
       palavras(8, [
-        ['wer', 'ver', 'quem (sujeito)', 'who'], ['wen', 'ven', 'quem (objeto direto)', 'whom'], ['wem', 'vem', 'a quem', 'to whom'], ['wessen', 'véssen', 'de quem', 'whose'], ['der Name', 'der náme', 'nome', 'name'], ['das Kind', 'das kint', 'criança', 'child'], ['die Eltern', 'di éltern', 'pais', 'parents'], ['das Auto', 'das áuto', 'carro', 'car'],
+        ['wiederholen', 'vi-derhólen', 'repetir', 'to repeat'], ['langsam', 'lángzam', 'devagar', 'slowly'], ['laut', 'laut', 'alto (volume)', 'loud'], ['bedeuten', 'bedóiten', 'significar', 'to mean'],
+        ['buchstabieren', 'burrxtabíren', 'soletrar', 'to spell'], ['die Frage', 'di frága', 'pergunta', 'question'], ['die Antwort', 'di ántvort', 'resposta', 'answer'], ['verstehen', 'fersxtéen', 'entender', 'to understand'],
       ]),
-      gramatica(14, 'O quadro completo dos artigos', 'Este é o quadro que organiza tudo. Três atalhos: (1) o FEMININO e o PLURAL quase não mudam; só mudam no dativo e no genitivo. (2) O NEUTRO é igual ao nominativo no acusativo, e igual ao masculino no dativo e no genitivo. (3) No acusativo só o masculino muda. Outros detalhes: no genitivo, o substantivo masculino e neutro ganha -s ou -es («des Mannes», «des Kindes»); no dativo plural, o substantivo ganha -n («den Kindern»), exceto se já termina em -n ou -s.', {
-        tag: 'Casos',
-        tabelas: [
-          { titulo: 'Artigo definido (der, die, das)', linhas: [
-            { caso: 'Nominativ', masculino: 'der', feminino: 'die', neutro: 'das', plural: 'die' }, { caso: 'Akkusativ', masculino: 'den', feminino: 'die', neutro: 'das', plural: 'die' },
-            { caso: 'Dativ', masculino: 'dem', feminino: 'der', neutro: 'dem', plural: 'den (+n)' }, { caso: 'Genitiv', masculino: 'des (+s)', feminino: 'der', neutro: 'des (+s)', plural: 'der' },
-          ] },
-          { titulo: 'Artigo indefinido (ein, eine) e mein, dein, kein...', linhas: [
-            { caso: 'Nominativ', masculino: 'ein', feminino: 'eine', neutro: 'ein', plural: '— / keine' }, { caso: 'Akkusativ', masculino: 'einen', feminino: 'eine', neutro: 'ein', plural: '— / keine' },
-            { caso: 'Dativ', masculino: 'einem', feminino: 'einer', neutro: 'einem', plural: '— / keinen (+n)' }, { caso: 'Genitiv', masculino: 'eines (+s)', feminino: 'einer', neutro: 'eines (+s)', plural: '— / keiner' },
-          ] },
-        ],
-        exemplos: [['Der Mann gibt dem Kind einen Apfel.', 'O homem dá uma maçã à criança.'], ['Die Frau hilft der Nachbarin.', 'A mulher ajuda a vizinha.'], ['Das ist das Auto des Lehrers.', 'Este é o carro do professor.']],
-        erros: [['mit der Kind', 'mit dem Kind', '«Kind» é neutro: dativo «dem».'], ['das Auto der Mann', 'das Auto des Mannes', 'Posse: genitivo, e o substantivo ganha -es.']],
-      }),
-      producao(3, 'Leia o quadro dos artigos em voz alta, por coluna: «der, den, dem, des; die, die, der, der; das, das, dem, des».'),
-    ]),
-    sessao('S3', 'Os pronomes e o diálogo', [
-      revisao(5, 'Escreva os pronomes pessoais no nominativo: eu, tu, ele, ela, nós, vós, eles.'),
-      gramatica(12, 'Os pronomes pessoais nos três casos', 'Os pronomes pessoais também mudam com o caso. O dativo é o que você mais vai usar com verbos como «helfen», «gehören», «gefallen» e «geben». Regra de ordem: o PRONOME vem antes do SUBSTANTIVO («Ich gebe ihm den Ball», «Ich gebe es dem Kind»). Se os dois são pronomes, o acusativo vem antes: «Ich gebe ihn ihm».', {
-        tag: 'Casos',
-        comparacao: 'o português também muda os pronomes («eu / me / mim», «ele / o / lhe»). O alemão faz o mesmo e depois estende a mudança aos artigos.',
+      gramatica(12, 'Pedir ajuda e esclarecimentos', '«Kannst du …?» (informal) e «Können Sie …?» (formal) são o jeito mais comum de pedir alguma coisa. O verbo principal vai para o FIM, no infinitivo. Aprenda estas frases de sala de aula: elas servem em qualquer conversa com um alemão e já aparecem nas provas de A1. Lembre-se de que «langsamer» quer dizer «mais devagar».', {
+        tag: 'Verbos',
         tabela: [
-          { nominativo: 'ich', acusativo: 'mich', dativo: 'mir' }, { nominativo: 'du', acusativo: 'dich', dativo: 'dir' }, { nominativo: 'er', acusativo: 'ihn', dativo: 'ihm' }, { nominativo: 'sie (ela)', acusativo: 'sie', dativo: 'ihr' }, { nominativo: 'es', acusativo: 'es', dativo: 'ihm' },
-          { nominativo: 'wir', acusativo: 'uns', dativo: 'uns' }, { nominativo: 'ihr', acusativo: 'euch', dativo: 'euch' }, { nominativo: 'sie (eles)', acusativo: 'sie', dativo: 'ihnen' }, { nominativo: 'Sie (formal)', acusativo: 'Sie', dativo: 'Ihnen' },
+          { frase: 'Wie bitte?', pt: 'Como? (não ouvi)' }, { frase: 'Können Sie das bitte wiederholen?', pt: 'O senhor pode repetir isso, por favor?' }, { frase: 'Können Sie bitte langsamer sprechen?', pt: 'O senhor pode falar mais devagar, por favor?' },
+          { frase: 'Ich verstehe das nicht.', pt: 'Eu não entendo isso.' }, { frase: 'Was bedeutet «Bahnhof»?', pt: 'O que significa «Bahnhof»?' }, { frase: 'Wie schreibt man das?', pt: 'Como se escreve isso?' },
+          { frase: 'Können Sie das buchstabieren?', pt: 'O senhor pode soletrar isso?' }, { frase: 'Wie sagt man «obrigado» auf Deutsch?', pt: 'Como se diz «obrigado» em alemão?' }, { frase: 'Können Sie mir helfen?', pt: 'O senhor pode me ajudar?' },
         ],
-        erros: [['Ich gebe den Ball ihm.', 'Ich gebe ihm den Ball.', 'O pronome vem antes do substantivo.'], ['Das Handy gehört ich.', 'Das Handy gehört mir.', '«gehören» pede o dativo.']],
+        erros: [['Können Sie sprechen langsam?', 'Können Sie langsam sprechen?', 'O verbo principal vai para o fim.'], ['Kannst Sie mir helfen?', 'Können Sie mir helfen?', 'Com «Sie» (formal) o modal é «können».']],
       }),
-      dialogo(10, 'Wem gehört das? / De quem é isto?', 'Dois amigos organizam objetos esquecidos.', [
-        ['Lara', 'Entschuldigung, wem gehört das Handy?', 'Com licença, de quem é este celular?'], ['Tom', 'Das Handy? Es gehört mir. Danke!', 'O celular? É meu. Obrigado!'], ['Lara', 'Und die Tasche? Gehört sie dir auch?', 'E a bolsa? Ela também é sua?'],
-        ['Tom', 'Nein, die Tasche gehört meiner Schwester.', 'Não, a bolsa é da minha irmã.'], ['Lara', 'Und der Schlüssel? Der gehört bestimmt ihr.', 'E a chave? Com certeza é dela.'], ['Tom', 'Ja, ich gebe ihr den Schlüssel.', 'Sim, eu dou a chave para ela.'],
-        ['Lara', 'Sehr gut. Und wem gibst du das Geschenk?', 'Muito bem. E a quem você dá o presente?'], ['Tom', 'Ich gebe es meinem Bruder. Er hat heute Geburtstag.', 'Eu dou para o meu irmão. Hoje é aniversário dele.'], ['Lara', 'Wie schön! Ich schenke ihm ein Buch.', 'Que bom! Eu dou um livro para ele.'], ['Tom', 'Super! Er liest gern.', 'Ótimo! Ele gosta de ler.'],
+      producao(5, 'Finja que você não entendeu e peça ajuda em voz alta: «Wie bitte? Können Sie das wiederholen? Können Sie bitte langsamer sprechen?»'),
+    ]),
+    sessao('S3', 'Convidar, aceitar e recusar', [
+      revisao(5, 'Escreva as frases de sala de aula da sessão anterior de memória.'),
+      gramatica(10, 'Convidar com «möchten» e «können»', 'Para convidar alguém, use «Möchtest du …?» (informal) ou «Möchten Sie …?» (formal), ou «Kannst du …?» quando é um pedido («Kannst du um acht Uhr kommen?»). Para ACEITAR: «Ja, gern!», «Gute Idee!», «Ja, das kann ich.» Para RECUSAR com educação, diga «leider» (infelizmente) e dê o motivo: «Nein, leider nicht. Ich muss arbeiten.» Comece sempre pela palavra que responde: «Ja» ou «Nein».', {
+        tag: 'Verbos',
+        tabela: [
+          { funcao: 'convidar', exemplo: 'Möchtest du am Samstag ins Kino gehen?' }, { funcao: 'convidar (formal)', exemplo: 'Möchten Sie einen Kaffee trinken?' }, { funcao: 'aceitar', exemplo: 'Ja, gern! / Gute Idee! / Ja, das kann ich.' },
+          { funcao: 'recusar', exemplo: 'Nein, leider nicht. / Tut mir leid, ich kann nicht.' }, { funcao: 'dar o motivo', exemplo: 'Ich habe keine Zeit. / Ich muss arbeiten.' },
+        ],
+      }),
+      dialogo(10, 'Eine Einladung / Um convite', 'Dois amigos combinam de ir ao cinema.', [
+        ['Mia', 'Hallo Jonas! Möchtest du am Samstag mit mir ins Kino gehen?', 'Oi, Jonas! Você quer ir ao cinema comigo no sábado?'], ['Jonas', 'Am Samstag? Ja, gern! Um wie viel Uhr?', 'No sábado? Sim, com prazer! A que horas?'], ['Mia', 'Um acht Uhr. Kannst du um halb acht am Bahnhof sein?', 'Às oito. Você pode estar na estação às sete e meia?'],
+        ['Jonas', 'Ja, das kann ich. Möchtest du vorher etwas essen?', 'Sim, posso. Você quer comer alguma coisa antes?'], ['Mia', 'Gute Idee! Ich kann eine Pizza essen. Und du?', 'Boa ideia! Eu posso comer uma pizza. E você?'], ['Jonas', 'Ich möchte lieber einen Salat.', 'Eu prefiro uma salada.'],
+        ['Mia', 'Okay. Dann bis Samstag!', 'Certo. Então até sábado!'], ['Jonas', 'Bis Samstag! Tschüs!', 'Até sábado! Tchau!'],
       ]),
-      producao(3, 'Diga: «Das Handy gehört mir. Ich gebe ihr den Schlüssel. Ich gebe es meinem Bruder.»'),
+      producao(5, 'Convide alguém em voz alta, aceite um convite e recuse outro com um motivo.'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva 4 frases, uma em cada caso: nominativo, acusativo, dativo e genitivo.'),
+      revisao(5, 'Escreva 4 frases: uma habilidade, um pedido de ajuda, um convite e uma recusa com motivo.'),
       exercicios(20, [
-        lacuna('Ich sehe ___ Hund. (o)', ['den', 'der', 'dem'], 'den', 'Acusativo masculino.'), lacuna('Ich helfe ___ Mann. (ao)', ['dem', 'den', 'des'], 'dem', 'helfen pede dativo.'), lacuna('Das ist das Auto ___ Mannes.', ['des', 'dem', 'den'], 'des', 'Genitivo masculino.'),
-        lacuna('Der Mann gibt ___ Kind einen Apfel. (à)', ['dem', 'das', 'des'], 'dem', 'Kind é neutro: dativo «dem».'), lacuna('Die Frau hilft ___ Nachbarin. (à)', ['der', 'die', 'den'], 'der', 'Feminino dativo: «der».'), lacuna('Ich gebe ___ Schlüssel. (a ela)', ['ihr den', 'sie den', 'ihr der'], 'ihr den', 'Pronome no dativo, depois o objeto no acusativo.'),
-        lacuna('Das Handy gehört ___. (a mim)', ['mir', 'mich', 'ich'], 'mir', '«gehören» pede dativo.'), lacuna('Ich sehe ___. (ele)', ['ihn', 'ihm', 'er'], 'ihn', 'Acusativo de «er».'), lacuna('Ich helfe ___. (a eles)', ['ihnen', 'sie', 'ihr'], 'ihnen', 'Dativo plural: ihnen.'),
-        mc('A pergunta do dativo é:', ['wem?', 'wen?', 'wessen?'], 'wem?', 'wem = a quem.'), mc('Em «Ich gebe es meinem Bruder», «meinem Bruder» está no:', ['dativo', 'acusativo', 'genitivo'], 'dativo', 'A quem eu dou.'), mc('No acusativo, qual gênero muda?', ['só o masculino', 'só o feminino', 'todos'], 'só o masculino', 'der → den, ein → einen.'),
-        mc('Dativo plural de «die Kinder»:', ['den Kindern', 'den Kinder', 'dem Kindern'], 'den Kindern', 'Dativo plural: artigo «den» e substantivo +n.'), ordem('Ordene: «Eu dou a chave para ela.»', ['Ich', 'gebe', 'ihr', 'den', 'Schlüssel'], 'Ich gebe ihr den Schlüssel.', 'Pronome antes do substantivo.'),
-        ouvir('Das Handy gehört mir', ['Das Handy gehört mir', 'Ich sehe das Handy', 'Das ist mein Handy'], 'Das Handy gehört mir', '«mir» é dativo.'), ditado('Ich gebe es meinem Bruder', 'Pronome acusativo + substantivo dativo.'),
-        livre('Escreva 4 frases, uma em cada caso: nominativo, acusativo, dativo e genitivo.', 'Der Hund schläft. Ich sehe den Hund. Ich gebe dem Hund Wasser. Das ist das Haus des Lehrers.'),
+        lacuna('Ich ___ schwimmen. (können)', ['kann', 'kannst', 'können'], 'kann', 'ich → kann.'), lacuna('Du ___ gut tanzen. (können)', ['kannst', 'kann', 'könnt'], 'kannst', 'du → kannst.'), lacuna('Er ___ Klavier spielen. (können)', ['kann', 'kannt', 'können'], 'kann', 'er → kann, sem -t.'),
+        lacuna('Wir ___ Gitarre spielen. (können)', ['können', 'kann', 'könnt'], 'können', 'wir → können.'), lacuna('Ihr ___ gut singen. (können)', ['könnt', 'können', 'kannst'], 'könnt', 'ihr → könnt.'),
+        mc('Onde vai o segundo verbo com «können»?', ['no fim da frase', 'logo depois de «können»', 'no começo'], 'no fim da frase', 'Moldura da frase.'), mc('Qual frase está certa?', ['Ich kann gut schwimmen.', 'Ich kann schwimmen gut.', 'Ich können gut schwimmen.'], 'Ich kann gut schwimmen.', 'Modal na 2ª posição, infinitivo no fim.'),
+        ordem('Ordene: «Você pode me ajudar?»', ['Kannst', 'du', 'mir', 'helfen'], 'Kannst du mir helfen?', 'Pergunta de sim ou não: modal primeiro.'), ordem('Ordene: «Eu não sei dançar.»', ['Ich', 'kann', 'nicht', 'tanzen'], 'Ich kann nicht tanzen.', '«nicht» antes do verbo no fim.'),
+        mc('«Wie bitte?» serve para:', ['pedir que repitam', 'agradecer', 'despedir-se'], 'pedir que repitam', 'Quando você não ouviu.'), mc('Como recusar um convite com educação?', ['Nein, leider nicht.', 'Nein, gern!', 'Ja, leider nicht.'], 'Nein, leider nicht.', '«leider» = infelizmente.'),
+        mc('«Können Sie bitte langsamer sprechen?» significa:', ['O senhor pode falar mais devagar?', 'O senhor sabe falar devagar?', 'O senhor quer falar mais alto?'], 'O senhor pode falar mais devagar?', 'langsamer = mais devagar.'),
+        ouvir('Kannst du um halb acht am Bahnhof sein?', ['Kannst du um halb acht am Bahnhof sein?', 'Kannst du um acht Uhr kommen?', 'Möchtest du am Bahnhof essen?'], 'Kannst du um halb acht am Bahnhof sein?', '«halb acht» = 7h30.'), ditado('Können Sie das bitte wiederholen', 'Pedido educado com «können».'),
+        livre('Escreva 5 frases: duas habilidades, um pedido, um convite e uma recusa com motivo.', 'Ich kann gut schwimmen. Ich kann nicht tanzen. Können Sie das bitte wiederholen? Möchtest du ins Kino gehen? Nein, leider nicht. Ich muss arbeiten.'),
       ]),
-      producao(5, 'Grave-se explicando, com exemplos seus, o que é nominativo, acusativo, dativo e genitivo.'),
+      producao(5, 'Grave-se: diga o que sabe e não sabe fazer, peça ajuda e faça um convite.'),
     ]),
   ],
 });

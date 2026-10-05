@@ -1,58 +1,53 @@
-# Plano do curso de alemão (30 aulas, 120 dias)
+# Plano do curso de alemão (versão 2): A1, A2 e B1, em passos pequenos
 
-Mesmo formato do russo: 4 sessões de ~30 min por aula, explicação em português primeiro, comparação com o português, erros comuns, diálogo, texto e prática. Aulas escritas em `content/idiomas/de/fontes/aula-NNN.mjs` (formato compacto). Aba Gramática automática em `/gramatica/de`.
+Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais longe, **sem resumir**, mas **sempre respeitando os níveis** (A1, A2, B1): nenhum ponto de A2 aparece antes de o A1 terminar, nem de B1 antes do A2. Cada aula tem 4 sessões de ~30 min; a **Revisão** é sempre a última aba da sessão.
 
-## Estado
-**No ar (aulas 1 a 10, 40 dias, primeiro bloco completo):** sons e saudações; apresentar-se e «sein»; artigos, gênero e plural; presente regular e ordem da frase; família, «haben» e possessivos; números, horas e datas; comida, acusativo e «möchten»; rotina e verbos separáveis; cidade, «Wo? × Wohin?» e direções; revisão e prova.
+## Método (didático ao máximo)
+1. **Uma ideia nova por sessão**, em PASSOS numerados (passo 1, passo 2…), do mais simples ao mais completo.
+2. Cada regra vem com: comparação com o português, tabela, exemplos traduzidos e os **erros mais comuns** de quem fala português.
+3. O vocabulário vem antes da gramática que o usa; o diálogo e o texto vêm depois, com frases que o aluno já entende.
+4. Toda sessão fecha com produção oral ou escrita; toda aula fecha com prática e, ao fim de cada bloco, revisão e prova (simulado original).
+5. Áudio neural (Edge TTS) para todas as frases, salvo no repositório.
 
-## Ordem das aulas e da gramática
-| Aula | Tema | Gramática |
+## Estrutura
+| Bloco | Nível | Aulas | Dias | Régua de nível |
+|---|---|---|---|---|
+| 1 | **A1** | 1 a 20 | 1 a 80 | Goethe-Zertifikat A1 (Start Deutsch 1 / Fit in Deutsch 1) |
+| 2 | **A2** | 21 a 46 | 81 a 184 | Goethe-Zertifikat A2 |
+| 3 | **B1** | 47 a 72 | 185 a 288 | Goethe / ÖSD Zertifikat B1 |
+
+## Bloco A1 (aulas 1 a 20)
+| Aula | Tema | Estado |
 |---|---|---|
-| 1 | Sons e primeiras palavras | Alfabeto, ä ö ü ß, ch, sch, ei, ie, eu, au, st/sp |
-| 2 | Quem sou eu | Ordem da frase (verbo na 2ª posição), «sein», du/ihr/Sie, nacionalidades |
-| 3 | Substantivos e artigos | der/die/das, maiúscula, plural (5 tipos), ein/eine/kein |
-| 4 | Verbos no presente | Terminações, raízes em -t/-s, V2, perguntas, nicht, gern |
-| 5 | Família, haben e possessivos | haben, acusativo masculino (einen), mein/dein/…, números 0–20, idade |
-| **6** | Números, horas e dias | Números até 100, Uhrzeit, Wochentage, Monate, datas |
-| **7** | Comida e bebida | möchten, acusativo (den/einen), preços, verbos com e→i (essen, sprechen) |
-| **8** | Rotina | Verbos separáveis (aufstehen), a→ä, Zeitangaben |
-| **9** | Cidade e direções | Wo? (Dativ) × Wohin? (Akkusativ), in/an/auf, Wegbeschreibung |
-| **10** | Revisão e prova do bloco 1 | Mapa de revisão |
-| **11** | Gramática: os quatro casos | Quadro geral Nominativ, Akkusativ, Dativ, Genitiv |
-| **12** | Dativo | Artigos, pronomes, aus/bei/mit/nach/seit/von/zu, verbos com Dativ |
-| **13** | Acusativo e preposições | für/durch/gegen/ohne/um; Wechselpräpositionen |
-| **14** | Verbos modais | können, müssen, wollen, dürfen, sollen, möchten |
-| **15** | Perfekt | haben/sein + Partizip II; Partizip regular e irregular |
-| **16** | Präteritum | war/hatte; modais no Präteritum |
-| **17** | Adjetivos | Declinação com artigo definido, indefinido e sem artigo |
-| **18** | Comparativo e superlativo | -er, am -sten, irregulares (gut, besser, am besten) |
-| **19** | Orações subordinadas | weil, dass, wenn, ob; verbo no fim |
-| **20** | Revisão e prova do bloco 2 | Mapa de revisão |
-| **21** | Verbos reflexivos | sich waschen, sich freuen; pronomes reflexivos |
-| **22** | Imperativo | du/ihr/Sie; bitte |
-| **23** | Futur I | werden + infinitivo; planos |
-| **24** | Orações relativas | der/die/das como pronome relativo |
-| **25** | Konjunktiv II básico | wäre, hätte, würde; pedidos educados |
-| **26** | Genitivo | Formas e preposições (wegen, trotz, während) |
-| **27** | Passiv (introdução) | werden + Partizip II |
-| **28** | Infinitivo com «zu» | um … zu; zu + infinitivo |
-| **29** | Conectores | aber, denn, deshalb, trotzdem, außerdem |
-| **30** | Revisão e prova final | Mapa de revisão, erros comuns, prova |
+| 1 | Sons e primeiras palavras | no ar |
+| 2 | Quem sou eu (sein, W-Fragen, du/Sie) | no ar |
+| 3 | Substantivos e artigos | no ar |
+| 4 | Verbos no presente e ordem da frase | no ar |
+| 5 | Família, haben e possessivos | no ar |
+| 6 | Números, horas e dias | no ar |
+| 7 | Comida e bebida (acusativo, möchten) | no ar |
+| 8 | Rotina e verbos separáveis | no ar |
+| 9 | Cidade e direções | no ar |
+| 10 | Revisão e prova do primeiro bloco | no ar |
+| 11 | Können e möchten: saber, poder, pedir e convidar | **novo** |
+| 12 | Müssen, wollen e dürfen | **novo** |
+| 13 | Imperativo (Sie, wir, du, ihr) | **novo** |
+| 14 | Pronomes no acusativo, kein e nicht | **novo** |
+| 15 | Compras e roupas | **novo** |
+| 16 | Profissões e local de trabalho | a escrever |
+| 17 | Casa e moradia (es gibt) | a escrever |
+| 18 | Tempo livre, clima e hobbies (gern, lieber) | a escrever |
+| 19 | Viagens e transporte | a escrever |
+| 20 | Revisão e simulado A1 (formato Goethe, original) | a escrever |
 
-## Calibração com os livros de referência
-Foram lidos, só como referência de ordem e de nível, os sumários de «Begegnungen A1+ e A2+» (Schubert), «Alemão para autodidatas, níveis A e B» (Steffler) e «Der Ausländer» (Fonseca). Nada foi copiado: textos, diálogos e exercícios do site são escritos à parte.
-- **A1+ (Begegnungen):** apresentação → local de trabalho (können, negação) → cidade e hotel (acusativo, möchte) → comida → dia a dia (separáveis, Perfekt, müssen/sollen) → viagens (wollen, imperativo, dativo) → moradia (dativo, Wechselpräpositionen, comparativo) → eventos (werden, Präteritum dos modais).
-- **A2+:** Perfekt, reflexivos, Genitiv → Präteritum → weil, wenn, Konjunktiv II → Nebensätze → Adjektivdeklination, obwohl → Relativsätze, Komparation → als/wenn, infinitivo com zu, deshalb/trotzdem → Passiv, um … zu.
-O plano acima já cobre esse caminho. Ajustes feitos: «können» e «möchten» entram cedo (aulas 7 e 14), a Declinação-N (Junge, Herr, Student) vai para a aula 12 ou 13, perguntas indiretas e wenn × als × ob para a aula 19, verbos com preposição para a aula 25 ou 26, «um … zu» e «damit» para a aula 28. Fica para um «Alemão 2» (B1/B2): passiva completa, Plusquamperfekt, Futur II, Partizip I, partículas discursivas.
+## Bloco A2 (aulas 21 a 46), em passos pequenos
+Perfekt em três passos (regular, irregular, sein × haben) · Präteritum de sein, haben e dos modais · dativo em quatro passos (artigos, pronomes, verbos, preposições) · acusativo × dativo × Wechselpräpositionen · Declinação-N · adjetivos (3 passos) · comparativo e superlativo · subordinadas (weil, dass, wenn, ob) · reflexivos · Konjunktiv II básico (möchte, würde, könnte, hätte, wäre) · Futur I · genitivo básico · indicações de tempo · saúde, viagens, moradia, trabalho · revisão e simulado A2. As cinco aulas que eram «11 a 15» da primeira versão (quatro casos, dativo, acusativo e lugares, modais, Perfekt) estão guardadas em `content/idiomas/de/fontes-a2/` e voltam aqui, divididas em passos menores (os áudios delas já estão prontos).
 
-## Princípios (os mesmos do russo)
-1. Português primeiro; termo alemão depois.
-2. Cada regra depois dos seus pré-requisitos (gênero → artigos → casos → verbos → frases subordinadas).
-3. Uma ideia por sessão; tabela só quando há padrão.
-4. Erros comuns de falantes de português em todo bloco de gramática.
-5. A aba Gramática lê os blocos das aulas (`tag` define a categoria).
+## Bloco B1 (aulas 47 a 72)
+Relativsätze (nominativo, acusativo, dativo, com preposição) · Passiv Präsens e Präteritum · Konjunktiv II completo · Plusquamperfekt · infinitivo com «zu», «um … zu», «damit» · conectores (obwohl, während, bevor, nachdem, falls, deshalb, trotzdem) · perguntas indiretas · verbos e adjetivos com preposição · adjetivos substantivados · Partizip I e II como adjetivo · Futur II · genitivo e preposições do genitivo · textos e argumentação · revisão e simulado B1.
 
-## Observações do alemão
-- Pronúncia na transliteração: «ç» = «ch» suave; «rr» = «ch» áspero; «x» = «sch».
-- Estudar sempre o artigo junto com o substantivo e o plural junto com o singular.
-- Revisão por especialistas antes de anunciar (decisão do Felipe).
+## Fontes e direitos (registro)
+- **Referência de nível e formato (nada copiado):** as provas modelo do Goethe-Institut / ÖSD (A1, A2 e B1) servem de régua para o vocabulário, os temas e os tipos de tarefa (Lesen, Hören, Schreiben, Sprechen). O texto e as questões delas **não** entram no curso: o Goethe-Institut é uma entidade privada e as provas são obras protegidas. Os simulados do curso são **originais**, no mesmo formato.
+- **Referência de ordem de gramática (nada copiado):** sumários de «Begegnungen A1+ e A2+», «Alemão para autodidatas A e B» e «Der Ausländer».
+- **Fonte livre candidata:** cursos do governo dos EUA (FSI e DLI), que o Felipe indicou. A adaptar só depois de conferir, curso a curso, a página de rosto (como foi feito com o FSI German Basic, Vol. 1, de 1961). Cada trecho adaptado será registrado aqui.
+- **Verbos:** as tabelas de conjugação são escritas à parte (as formas verbais são fatos, não texto protegido).

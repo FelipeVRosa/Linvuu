@@ -1,72 +1,85 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 12, titulo: 'Gramática: o dativo', nivel: 'a1',
-  objetivo: 'Usar o dativo com os verbos que o pedem, com as preposições fixas (aus, bei, mit, nach, seit, von, zu) e na ordem certa quando há dativo e acusativo na mesma frase.',
-  nota: 'Você usa o dativo com verbos e preposições. Próxima aula: o acusativo, as preposições de lugar e a Declinação-N.',
+  idioma: 'de', numero: 12, titulo: 'Müssen, wollen e dürfen: obrigação, vontade e permissão', nivel: 'a1',
+  objetivo: 'Usar «müssen» (ter que), «wollen» (querer) e «dürfen» (ter permissão) e ler as placas mais comuns, sempre com a moldura da frase.',
+  nota: 'Você domina os modais do A1. Próxima aula: o imperativo.',
   sessoes: [
-    sessao('S1', 'Verbos que pedem dativo', [
-      revisao(5, 'Escreva o quadro dos artigos no dativo: masculino, feminino, neutro e plural.'),
-      palavras(10, [
-        ['helfen', 'hélfen', 'ajudar', 'to help'], ['danken', 'dánken', 'agradecer', 'to thank'], ['gehören', 'guehörren', 'pertencer', 'to belong'], ['gefallen', 'guefálen', 'agradar, gostar', 'to like'], ['schmecken', 'xmécken', 'ter gosto, agradar ao paladar', 'to taste'],
-        ['antworten', 'ántvorten', 'responder', 'to answer'], ['gratulieren', 'gratulíren', 'parabenizar', 'to congratulate'], ['passen', 'pássen', 'servir, combinar', 'to fit'], ['fehlen', 'félen', 'faltar', 'to be missing'], ['glauben', 'gláuben', 'acreditar (em alguém)', 'to believe'],
-      ]),
-      gramatica(12, 'Verbos que pedem dativo', 'Alguns verbos alemães pedem dativo para a pessoa, mesmo quando em português o complemento é direto: «Ich helfe dir» (eu ajudo você), «Das Kleid gefällt mir» (o vestido agrada a mim = eu gosto do vestido), «Ich danke dir» (agradeço a você). Aprenda cada verbo junto com o dativo. «Helfen» troca e por i (du hilfst, er hilft); «gefallen» troca a por ä (es gefällt). O dativo também aparece em frases de sensação: «Mir ist kalt», «Wie geht es dir?», «Mir ist schlecht».', {
-        tag: 'Casos',
-        comparacao: 'em português dizemos «eu ajudo você» (objeto direto) e «eu gosto do vestido». Em alemão a pessoa de «helfen» e a coisa de «gefallen» vão para o dativo: «dir», «mir».',
-        tabela: [
-          { verbo: 'helfen', exemplo: 'Ich helfe dir.', pt: 'Eu ajudo você.' }, { verbo: 'danken', exemplo: 'Er dankt der Lehrerin.', pt: 'Ele agradece à professora.' }, { verbo: 'gehören', exemplo: 'Das Buch gehört mir.', pt: 'O livro é meu.' },
-          { verbo: 'gefallen', exemplo: 'Das Kleid gefällt mir.', pt: 'Eu gosto do vestido.' }, { verbo: 'schmecken', exemplo: 'Die Suppe schmeckt mir.', pt: 'Eu gosto da sopa (do sabor).' }, { verbo: 'antworten', exemplo: 'Er antwortet dem Chef.', pt: 'Ele responde ao chefe.' },
-          { verbo: 'gratulieren', exemplo: 'Wir gratulieren dir zum Geburtstag.', pt: 'Parabenizamos você pelo aniversário.' }, { verbo: 'passen', exemplo: 'Die Jacke passt mir.', pt: 'A jaqueta serve em mim.' }, { verbo: 'fehlen', exemplo: 'Mir fehlt Zeit.', pt: 'Falta-me tempo.' },
-        ],
-        erros: [['Ich helfe dich.', 'Ich helfe dir.', '«helfen» pede dativo.'], ['Das Kleid gefällt ich.', 'Das Kleid gefällt mir.', 'Quem gosta vai para o dativo.']],
-      }),
-      producao(3, 'Diga: «Ich helfe dir. Das Buch gehört mir. Das Kleid gefällt mir. Mir ist kalt.»'),
-    ]),
-    sessao('S2', 'Preposições que pedem dativo', [
-      revisao(5, 'Escreva 5 frases com verbos que pedem dativo.'),
+    sessao('S1', 'Müssen: ter que', [
+      revisao(5, 'Escreva as 6 formas de «können» e uma frase com cada uma.'),
       palavras(8, [
-        ['der Arzt', 'der artst', 'médico', 'doctor'], ['der Chef', 'der xéf', 'chefe', 'boss'], ['der Zug', 'der tsuk', 'trem', 'train'], ['die Arbeit', 'di árbait', 'trabalho', 'work'], ['der Urlaub', 'der úrlaup', 'férias', 'holiday'], ['die Straßenbahn', 'di xtrásen-ban', 'bonde, VLT', 'tram'], ['das Flugzeug', 'das flúk-tsoik', 'avião', 'plane'], ['das Schiff', 'das xif', 'navio', 'ship'],
+        ['der Termin', 'der termín', 'compromisso, hora marcada', 'appointment'], ['die Hausaufgabe', 'di háus-aufgabe', 'lição de casa', 'homework'], ['pünktlich', 'púnktliç', 'pontual', 'punctual'], ['früh', 'frü', 'cedo', 'early'],
+        ['spät', 'xpet', 'tarde (hora)', 'late'], ['sofort', 'zofórt', 'imediatamente', 'immediately'], ['heute Abend', 'hóite ábent', 'hoje à noite', 'tonight'], ['viel', 'fil', 'muito', 'a lot'],
       ]),
-      gramatica(12, 'aus, bei, mit, nach, seit, von, zu: sempre dativo', 'Sete preposições pedem SEMPRE o dativo (decore-as em fila: aus, bei, mit, nach, seit, von, zu; «gegenüber» também). Usos: «aus» = de (origem, material): aus Brasilien. «Bei» = na casa de, no local de: bei Anna, beim Arzt. «Mit» = com, e meio de transporte: mit dem Bus. «Nach» = depois de; para cidades e países: nach dem Essen, nach Berlin. «Seit» = desde: seit zwei Jahren. «Von» = de, por: vom Chef. «Zu» = para, até (pessoas e lugares): zum Arzt, zur Schule. Contrações: bei dem = beim, von dem = vom, zu dem = zum, zu der = zur.', {
-        tag: 'Preposições',
+      gramatica(14, 'Müssen: obrigação e necessidade, passo a passo', 'PASSO 1: «müssen» expressa o que você TEM QUE fazer (obrigação ou necessidade): «Ich muss arbeiten» = eu tenho que trabalhar. PASSO 2: conjugue: ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. O «ü» some no singular e, como em «können», «ich» e «er» são iguais, sem -t. PASSO 3: o segundo verbo vai para o FIM, no infinitivo: «Du musst pünktlich sein.» PASSO 4: pergunta: «Muss ich heute arbeiten?» PASSO 5: com verbo separável, ele fica INTEIRO no fim: «Ich muss um sieben Uhr aufstehen.» Em português usamos «ter que»; em alemão não existe um verbo «ter» aqui: o modal faz tudo sozinho.', {
+        tag: 'Verbos',
+        comparacao: 'o português diz «ter que» (verbo ter + que). O alemão tem um verbo próprio, «müssen», que se conjuga e deixa o outro verbo no infinitivo, no fim.',
         tabela: [
-          { preposicao: 'aus', significado: 'de (origem, material)', exemplo: 'Ich komme aus dem Haus.' }, { preposicao: 'bei', significado: 'na casa de, no local de', exemplo: 'Ich bin beim Arzt. Ich wohne bei meiner Oma.' }, { preposicao: 'mit', significado: 'com; meio de transporte', exemplo: 'Ich fahre mit dem Zug.' },
-          { preposicao: 'nach', significado: 'depois de; para cidades e países', exemplo: 'Nach der Arbeit fahre ich nach Berlin.' }, { preposicao: 'seit', significado: 'desde, há (tempo)', exemplo: 'Ich wohne seit zwei Jahren hier.' }, { preposicao: 'von', significado: 'de, por', exemplo: 'Das Geschenk ist von meinem Chef.' },
-          { preposicao: 'zu', significado: 'para, até (pessoas, lugares)', exemplo: 'Ich gehe zum Arzt.' },
+          { pronome: 'ich', müssen: 'muss', exemplo: 'Ich muss arbeiten.' }, { pronome: 'du', müssen: 'musst', exemplo: 'Du musst pünktlich sein.' }, { pronome: 'er / sie / es', müssen: 'muss', exemplo: 'Er muss früh aufstehen.' },
+          { pronome: 'wir', müssen: 'müssen', exemplo: 'Wir müssen einkaufen.' }, { pronome: 'ihr', müssen: 'müsst', exemplo: 'Ihr müsst Hausaufgaben machen.' }, { pronome: 'sie / Sie', müssen: 'müssen', exemplo: 'Müssen Sie heute arbeiten?' },
         ],
-        erros: [['Ich fahre mit der Bus.', 'Ich fahre mit dem Bus.', '«mit» pede dativo; «Bus» é masculino: dem.'], ['Ich wohne seit drei Jahre hier.', 'Ich wohne seit drei Jahren hier.', 'No dativo plural, o substantivo ganha -n.']],
+        erros: [['Ich müssen arbeiten.', 'Ich muss arbeiten.', '«ich» pede «muss».'], ['Er musst früh aufstehen.', 'Er muss früh aufstehen.', 'No «er», sem -st nem -t.'], ['Ich muss aufstehe um sieben Uhr.', 'Ich muss um sieben Uhr aufstehen.', 'O infinitivo inteiro vai para o fim.']],
       }),
-      producao(5, 'Diga: «Ich fahre mit dem Zug zur Arbeit. Ich wohne seit zwei Jahren in Berlin. Nach der Arbeit gehe ich zum Arzt.»'),
+      producao(3, 'Diga 5 coisas que você tem que fazer hoje: «Ich muss …»'),
     ]),
-    sessao('S3', 'Dois objetos e diálogo', [
-      revisao(5, 'Escreva as 7 preposições do dativo, em ordem, de memória.'),
-      gramatica(10, 'Dativo e acusativo na mesma frase: a ordem', 'Quando uma frase tem dativo (a quem) e acusativo (o quê), a ordem é: (1) com DOIS SUBSTANTIVOS, o dativo vem antes: «Ich gebe dem Kind den Ball». (2) PRONOME antes de SUBSTANTIVO: «Ich gebe ihm den Ball», «Ich gebe ihn dem Kind». (3) Com DOIS PRONOMES, o acusativo vem antes: «Ich gebe ihn ihm». Lembrete: no dativo plural o substantivo ganha -n («den Kindern»).', {
-        tag: 'Casos',
-        tabela: [
-          { padrao: 'substantivo + substantivo', exemplo: 'Ich gebe dem Kind den Ball.' }, { padrao: 'pronome dativo + substantivo', exemplo: 'Ich gebe ihm den Ball.' }, { padrao: 'pronome acusativo + substantivo dativo', exemplo: 'Ich gebe ihn dem Kind.' }, { padrao: 'dois pronomes (acusativo primeiro)', exemplo: 'Ich gebe ihn ihm.' },
+    sessao('S2', 'Wollen: querer', [
+      revisao(5, 'Escreva as 6 formas de «müssen» e 3 frases com verbos separáveis.'),
+      palavras(8, [
+        ['der Plan', 'der plan', 'plano', 'plan'], ['die Idee', 'di idé', 'ideia', 'idea'], ['vielleicht', 'filáiçt', 'talvez', 'maybe'], ['bestimmt', 'bextímt', 'com certeza', 'certainly'],
+        ['allein', 'aláin', 'sozinho', 'alone'], ['zusammen', 'tsuzámen', 'juntos', 'together'], ['nächste Woche', 'néçste vórre', 'semana que vem', 'next week'], ['die Zukunft', 'di tsúkunft', 'futuro', 'future'],
+      ]),
+      gramatica(12, 'Wollen: querer, e a diferença para möchten', 'PASSO 1: «wollen» expressa uma vontade FIRME ou um plano: «Ich will nächste Woche nach Berlin fahren». PASSO 2: conjugue: ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Atenção: «ich» e «er» são «will», sem -t. PASSO 3: o infinitivo vai para o fim. PASSO 4: «möchten» é mais educado e suave («eu gostaria»); «wollen» é direto («eu quero»). Para pedir algo a um desconhecido, prefira «möchten»: «Ich möchte einen Kaffee», não «Ich will einen Kaffee», que soa seco.', {
+        tag: 'Verbos',
+        tabelas: [
+          { titulo: 'wollen', linhas: [
+            { pronome: 'ich', wollen: 'will', exemplo: 'Ich will Deutsch lernen.' }, { pronome: 'du', wollen: 'willst', exemplo: 'Was willst du machen?' }, { pronome: 'er / sie / es', wollen: 'will', exemplo: 'Sie will nach Berlin fahren.' },
+            { pronome: 'wir', wollen: 'wollen', exemplo: 'Wir wollen zusammen kochen.' }, { pronome: 'ihr', wollen: 'wollt', exemplo: 'Wollt ihr ins Kino gehen?' }, { pronome: 'sie / Sie', wollen: 'wollen', exemplo: 'Was wollen Sie trinken?' },
+          ] },
+          { titulo: 'wollen × möchten', linhas: [
+            { modal: 'wollen', sentido: 'quero (firme, plano)', exemplo: 'Ich will heute Abend zu Hause bleiben.' }, { modal: 'möchten', sentido: 'gostaria (educado, pedido)', exemplo: 'Ich möchte bitte einen Kaffee.' },
+          ] },
         ],
-        erros: [['Ich gebe den Ball dem Kind.', 'Ich gebe dem Kind den Ball.', 'Com dois substantivos, o dativo vem antes (o mais comum).']],
+        erros: [['Ich will einen Kaffee, bitte. (num café, a um desconhecido)', 'Ich möchte einen Kaffee, bitte.', '«wollen» soa seco; «möchten» é educado.'], ['Er willt gehen.', 'Er will gehen.', 'No «er», o modal não leva -t.']],
       }),
-      dialogo(10, 'Geschenke / Presentes', 'Dois amigos falam dos presentes de aniversário.', [
-        ['Mia', 'Was schenkst du deiner Mutter zum Geburtstag?', 'O que você dá de presente de aniversário para a sua mãe?'], ['Jonas', 'Ich schenke ihr einen Schal. Und du?', 'Eu dou um cachecol para ela. E você?'], ['Mia', 'Ich schenke meinem Vater ein Buch.', 'Eu dou um livro para o meu pai.'],
-        ['Jonas', 'Gefällt ihm das Buch?', 'O livro agrada a ele?'], ['Mia', 'Ja, ich glaube schon. Er liest gern Krimis.', 'Sim, acho que sim. Ele gosta de ler romances policiais.'], ['Jonas', 'Und deinen Eltern? Kaufst du ihnen auch etwas?', 'E para os seus pais? Você também compra alguma coisa?'],
-        ['Mia', 'Ich koche ihnen am Samstag ein Essen.', 'No sábado eu cozinho uma refeição para eles.'], ['Jonas', 'Das ist eine schöne Idee. Ich helfe dir gern.', 'É uma bela ideia. Ajudo você com prazer.'], ['Mia', 'Danke! Mit dem Auto holen wir den Kuchen.', 'Obrigada! De carro, buscamos o bolo.'], ['Jonas', 'Perfekt! Bis Samstag!', 'Perfeito! Até sábado!'],
-      ]),
-      producao(5, 'Diga a quem você dá presente em aniversários: «Ich schenke meiner Mutter … Ich schenke meinem Vater …»'),
+      producao(5, 'Diga 5 planos seus: «Ich will nächste Woche … Ich will vielleicht … Ich will bestimmt …»'),
     ]),
-    sessao('S4', 'Prática', [
-      revisao(5, 'Escreva 4 frases: um verbo com dativo, uma preposição do dativo, dois objetos e uma sensação com «mir».'),
-      exercicios(20, [
-        lacuna('Ich helfe ___. (a você)', ['dir', 'dich', 'du'], 'dir', 'helfen pede dativo.'), lacuna('Das Kleid gefällt ___. (a mim)', ['mir', 'mich', 'ich'], 'mir', 'gefallen pede dativo.'), lacuna('Ich fahre mit ___ Bus.', ['dem', 'den', 'der'], 'dem', 'mit + dativo; Bus é masculino.'),
-        lacuna('Ich komme aus ___ Schule.', ['der', 'die', 'dem'], 'der', 'aus + dativo; Schule é feminino.'), lacuna('Ich bin bei ___ Arzt. (no)', ['dem', 'den', 'der'], 'dem', 'bei + dativo (beim).'), lacuna('Ich wohne seit zwei ___ hier. (anos)', ['Jahren', 'Jahre', 'Jahr'], 'Jahren', 'Dativo plural: +n.'),
-        lacuna('Ich gehe ___ Arzt. (ao)', ['zum', 'zur', 'ins'], 'zum', 'zu + dem = zum.'), lacuna('Nach ___ Arbeit fahre ich nach Hause.', ['der', 'die', 'den'], 'der', 'nach + dativo; Arbeit é feminino.'),
-        mc('Qual preposição NÃO pede dativo?', ['für', 'mit', 'bei'], 'für', 'für pede acusativo.'), mc('«beim» é a contração de:', ['bei dem', 'bei den', 'bei der'], 'bei dem', 'bei + dem = beim.'), mc('Qual ordem está certa?', ['Ich gebe ihm den Ball.', 'Ich gebe den Ball ihm.', 'Ich gebe ihn ihm Ball.'], 'Ich gebe ihm den Ball.', 'Pronome antes do substantivo.'),
-        ordem('Ordene: «Eu dou um livro ao meu pai.»', ['Ich', 'gebe', 'meinem', 'Vater', 'ein', 'Buch'], 'Ich gebe meinem Vater ein Buch.', 'Dativo antes do acusativo.'), ouvir('Ich fahre mit dem Zug', ['Ich fahre mit dem Zug', 'Ich fahre für den Zug', 'Ich fahre mit den Zug'], 'Ich fahre mit dem Zug', 'mit + dativo.'),
-        ditado('Ich wohne seit zwei Jahren hier', 'seit + dativo plural.'), mc('«Mir ist kalt» significa:', ['Estou com frio', 'Eu sou frio', 'Eu fico frio'], 'Estou com frio', 'Sensação: dativo.'),
-        livre('Escreva 4 frases: um verbo com dativo, uma preposição com dativo, um presente e uma sensação.', 'Ich helfe meiner Mutter. Ich fahre mit dem Zug. Ich schenke meinem Bruder ein Buch. Mir ist kalt.'),
+    sessao('S3', 'Dürfen: ter permissão, e as placas', [
+      revisao(5, 'Escreva as 6 formas de «wollen» e a diferença entre «wollen» e «möchten».'),
+      palavras(8, [
+        ['verboten', 'ferbóten', 'proibido', 'forbidden'], ['erlaubt', 'erláupt', 'permitido', 'allowed'], ['der Eingang', 'der áin-gang', 'entrada', 'entrance'], ['der Ausgang', 'der áus-gang', 'saída', 'exit'],
+        ['rauchen', 'ráurren', 'fumar', 'to smoke'], ['fotografieren', 'fotografíren', 'fotografar', 'to take photos'], ['das Schild', 'das xilt', 'placa', 'sign'], ['man', 'man', 'a gente, se (impessoal)', 'one, you'],
       ]),
-      producao(5, 'Grave-se contando como você chega ao trabalho, desde quando mora na sua cidade e a quem você dá presente.'),
+      gramatica(12, 'Dürfen: ter permissão (e a palavra «man»)', 'PASSO 1: «dürfen» expressa PERMISSÃO: «Darf ich hier sitzen?» = posso sentar aqui? PASSO 2: conjugue: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie dürfen (o «ü» some no singular). PASSO 3: com «nicht», «dürfen» significa PROIBIDO: «Hier darf man nicht rauchen» = aqui não se pode fumar. PASSO 4: «man» é impessoal (como «a gente» ou «se»): «Hier darf man parken.» Ele leva o verbo na forma de «er». As placas usam o infinitivo ou o substantivo: «Rauchen verboten», «Parken erlaubt», «Eingang», «Ausgang».', {
+        tag: 'Verbos',
+        tabelas: [
+          { titulo: 'dürfen', linhas: [
+            { pronome: 'ich', dürfen: 'darf', exemplo: 'Darf ich hier sitzen?' }, { pronome: 'du', dürfen: 'darfst', exemplo: 'Du darfst hier nicht parken.' }, { pronome: 'er / sie / es / man', dürfen: 'darf', exemplo: 'Hier darf man nicht rauchen.' },
+            { pronome: 'wir', dürfen: 'dürfen', exemplo: 'Wir dürfen hier fotografieren.' }, { pronome: 'ihr', dürfen: 'dürft', exemplo: 'Ihr dürft jetzt gehen.' }, { pronome: 'sie / Sie', dürfen: 'dürfen', exemplo: 'Dürfen Sie hier rauchen?' },
+          ] },
+          { titulo: 'As placas mais comuns', linhas: [
+            { frase: 'Rauchen verboten', pt: 'Proibido fumar' }, { frase: 'Parken verboten', pt: 'Proibido estacionar' }, { frase: 'Fotografieren erlaubt', pt: 'Permitido fotografar' }, { frase: 'Eingang', pt: 'Entrada' }, { frase: 'Ausgang', pt: 'Saída' },
+          ] },
+        ],
+        erros: [['Hier dürfen nicht rauchen.', 'Hier darf man nicht rauchen.', 'Falta o sujeito «man»; ele leva a forma «darf».'], ['Ich darfe hier sitzen?', 'Darf ich hier sitzen?', 'Pergunta: o modal vem primeiro e «ich» pede «darf».']],
+      }),
+      producao(5, 'Diga 5 regras de lugares que você conhece: «Hier darf man … / Hier darf man nicht …»'),
+    ]),
+    sessao('S4', 'Prática e diálogo', [
+      revisao(5, 'Escreva uma frase com cada um dos 4 modais que você já conhece: können, müssen, wollen e dürfen.'),
+      dialogo(7, 'Im Schwimmbad / Na piscina', 'Um funcionário explica as regras a um visitante.', [
+        ['Bademeister', 'Entschuldigung, Sie dürfen hier nicht rauchen.', 'Com licença, o senhor não pode fumar aqui.'], ['Tom', 'Oh, das tut mir leid. Wo darf man rauchen?', 'Ah, desculpe. Onde se pode fumar?'], ['Bademeister', 'Draußen, vor dem Eingang. Hier ist es verboten.', 'Lá fora, na frente da entrada. Aqui é proibido.'],
+        ['Tom', 'Danke. Muss ich auch die Schuhe ausziehen?', 'Obrigado. Eu também preciso tirar os sapatos?'], ['Bademeister', 'Ja, hier müssen alle die Schuhe ausziehen.', 'Sim, aqui todos precisam tirar os sapatos.'], ['Tom', 'Und darf ich mit der Kamera fotografieren?', 'E posso fotografar com a câmera?'],
+        ['Bademeister', 'Nein, Fotografieren ist hier nicht erlaubt.', 'Não, fotografar não é permitido aqui.'],
+      ]),
+      exercicios(13, [
+        lacuna('Ich ___ heute arbeiten. (müssen)', ['muss', 'musst', 'müssen'], 'muss', 'ich → muss.'), lacuna('Du ___ pünktlich sein. (müssen)', ['musst', 'muss', 'müsst'], 'musst', 'du → musst.'), lacuna('Ich ___ nächste Woche nach Berlin fahren. (wollen)', ['will', 'willst', 'wollen'], 'will', 'ich → will.'),
+        lacuna('Wir ___ zusammen kochen. (wollen)', ['wollen', 'will', 'wollt'], 'wollen', 'wir → wollen.'), lacuna('___ ich hier sitzen? (dürfen)', ['Darf', 'Darfe', 'Dürfen'], 'Darf', 'ich → darf.'), lacuna('Hier ___ man nicht rauchen. (dürfen)', ['darf', 'dürfen', 'darfst'], 'darf', '«man» leva «darf».'),
+        mc('«Hier darf man nicht parken» significa:', ['É proibido estacionar aqui', 'Não é preciso estacionar aqui', 'Ninguém quer estacionar aqui'], 'É proibido estacionar aqui', '«nicht dürfen» = proibido.'), mc('Para pedir um café a um desconhecido, o melhor é:', ['Ich möchte einen Kaffee.', 'Ich will einen Kaffee.', 'Ich muss einen Kaffee.'], 'Ich möchte einen Kaffee.', '«möchten» é educado.'),
+        ordem('Ordene: «Eu tenho que me levantar às sete horas.»', ['Ich', 'muss', 'um', 'sieben', 'Uhr', 'aufstehen'], 'Ich muss um sieben Uhr aufstehen.', 'O separável fica inteiro no fim.'), ouvir('Hier darf man nicht rauchen', ['Hier darf man nicht rauchen', 'Hier muss man rauchen', 'Hier will man nicht rauchen'], 'Hier darf man nicht rauchen', '«darf» + «nicht» = proibido.'),
+        ditado('Fotografieren ist hier nicht erlaubt', '«erlaubt» = permitido.'), mc('«Eingang» e «Ausgang» são:', ['entrada e saída', 'saída e entrada', 'chegada e partida'], 'entrada e saída', 'Ein = dentro; Aus = fora.'),
+        livre('Escreva 5 frases: uma com «müssen», uma com «wollen», uma com «dürfen», uma proibição e uma permissão.', 'Ich muss arbeiten. Ich will nach Berlin fahren. Darf ich hier sitzen? Hier darf man nicht rauchen. Hier darf man fotografieren.'),
+      ]),
+      producao(5, 'Grave-se: diga o que você tem que fazer, o que você quer fazer e o que você pode ou não pode fazer num lugar público.'),
     ]),
   ],
 });

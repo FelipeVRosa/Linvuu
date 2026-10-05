@@ -5,332 +5,460 @@
   "ciclo": 1,
   "nivel": "a1",
   "status": "publicada",
-  "titulo": "Gramática: os verbos modais",
-  "objetivo": "Usar können, müssen, wollen, dürfen, sollen e möchten, com o segundo verbo no fim, e distinguir «nicht müssen» (não precisar) de «nicht dürfen» (ser proibido).",
+  "titulo": "Pronomes no acusativo e a negação (kein e nicht)",
+  "objetivo": "Trocar o objeto direto por pronomes (ihn, sie, es, mich, dich…), negar substantivos com «kein» e todo o resto com «nicht», e responder a perguntas negativas com «doch».",
   "duracaoTotalMin": 120,
   "sessoes": [
     {
       "sessao": "S1",
-      "titulo": "Os seis modais",
+      "titulo": "Os pronomes no acusativo",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «möchten» e 3 frases com a moldura da frase."
+          "enunciado": "Escreva o acusativo de «der Mann», «die Frau», «das Kind» e «die Kinder», com artigo definido."
+        },
+        {
+          "tipo": "palavras",
+          "min": 8,
+          "itens": [
+            {
+              "ru": "brauchen",
+              "translit": "bráurren",
+              "pt": "precisar de",
+              "en": "to need",
+              "audio": "brauchen"
+            },
+            {
+              "ru": "suchen",
+              "translit": "zúrren",
+              "pt": "procurar",
+              "en": "to look for",
+              "audio": "suchen"
+            },
+            {
+              "ru": "finden",
+              "translit": "fínden",
+              "pt": "achar, encontrar",
+              "en": "to find",
+              "audio": "finden"
+            },
+            {
+              "ru": "lieben",
+              "translit": "líben",
+              "pt": "amar",
+              "en": "to love",
+              "audio": "lieben"
+            },
+            {
+              "ru": "mögen",
+              "translit": "mö-guen",
+              "pt": "gostar de",
+              "en": "to like",
+              "audio": "mögen"
+            },
+            {
+              "ru": "abholen",
+              "translit": "áp-hôlen",
+              "pt": "buscar (alguém)",
+              "en": "to pick up",
+              "audio": "abholen"
+            },
+            {
+              "ru": "einladen",
+              "translit": "áin-ladem",
+              "pt": "convidar",
+              "en": "to invite",
+              "audio": "einladen"
+            },
+            {
+              "ru": "fragen",
+              "translit": "frágen",
+              "pt": "perguntar",
+              "en": "to ask",
+              "audio": "fragen"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 14,
+          "titulo": "Os pronomes no acusativo, passo a passo",
+          "explicacao": "PASSO 1: o OBJETO DIRETO é o que sofre a ação: em «Ich sehe den Mann», quem eu vejo é «den Mann». PASSO 2: para não repetir a palavra, trocamos o objeto por um pronome: «Ich sehe den Mann» → «Ich sehe ihn.» PASSO 3: o pronome segue o GÊNERO da palavra trocada: «der Tisch» → «ihn»; «die Lampe» → «sie»; «das Buch» → «es»; «die Bücher» → «sie». PASSO 4: para pessoas, os pronomes de «eu» e «tu» mudam de forma: «ich» → «mich», «du» → «dich». PASSO 5: cuidado com «sie» (ela, eles) e «Sie» (o senhor, a senhora): o contexto e a maiúscula mostram qual é qual. Lembre-se de que só o masculino muda no artigo (den); nos pronomes, mudam todos: ich → mich, du → dich, er → ihn, wir → uns, ihr → euch.",
+          "comparacao": "o português também troca o pronome («eu vejo ele», «eu vejo você»). Em alemão cada pronome tem uma forma própria no acusativo, e a escolha depende do gênero da palavra.",
+          "exemplos": [
+            {
+              "ru": "Wo ist der Schlüssel? Ich suche ihn.",
+              "pt": "Onde está a chave? Eu estou procurando por ela."
+            },
+            {
+              "ru": "Wo ist die Tasche? Ich finde sie nicht.",
+              "pt": "Onde está a bolsa? Eu não a encontro."
+            },
+            {
+              "ru": "Das Buch ist gut. Ich lese es gern.",
+              "pt": "O livro é bom. Eu gosto de lê-lo."
+            }
+          ],
+          "tabela": [
+            {
+              "nominativo": "ich",
+              "acusativo": "mich",
+              "exemplo": "Er sieht mich."
+            },
+            {
+              "nominativo": "du",
+              "acusativo": "dich",
+              "exemplo": "Ich liebe dich."
+            },
+            {
+              "nominativo": "er",
+              "acusativo": "ihn",
+              "exemplo": "Ich kenne ihn."
+            },
+            {
+              "nominativo": "sie (ela)",
+              "acusativo": "sie",
+              "exemplo": "Ich suche sie."
+            },
+            {
+              "nominativo": "es",
+              "acusativo": "es",
+              "exemplo": "Ich finde es gut."
+            },
+            {
+              "nominativo": "wir",
+              "acusativo": "uns",
+              "exemplo": "Sie ruft uns an."
+            },
+            {
+              "nominativo": "ihr",
+              "acusativo": "euch",
+              "exemplo": "Ich lade euch ein."
+            },
+            {
+              "nominativo": "sie (eles)",
+              "acusativo": "sie",
+              "exemplo": "Ich kenne sie."
+            },
+            {
+              "nominativo": "Sie (formal)",
+              "acusativo": "Sie",
+              "exemplo": "Ich verstehe Sie."
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Ich sehe er.",
+              "certo": "Ich sehe ihn.",
+              "motivo": "O objeto direto pede o acusativo."
+            },
+            {
+              "errado": "Ich liebe du.",
+              "certo": "Ich liebe dich.",
+              "motivo": "«du» vira «dich» no acusativo."
+            }
+          ],
+          "tag": "Pronomes"
+        },
+        {
+          "tipo": "producao",
+          "min": 3,
+          "enunciado": "Troque os objetos por pronomes em voz alta: «Ich sehe den Mann → Ich sehe ihn», com 5 frases suas."
+        }
+      ]
+    },
+    {
+      "sessao": "S2",
+      "titulo": "Kein, keine: negar um substantivo",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva os pronomes no acusativo para as 9 pessoas."
+        },
+        {
+          "tipo": "palavras",
+          "min": 8,
+          "itens": [
+            {
+              "ru": "der Hunger",
+              "translit": "der rúnguer",
+              "pt": "fome",
+              "en": "hunger",
+              "audio": "der Hunger"
+            },
+            {
+              "ru": "der Durst",
+              "translit": "der durst",
+              "pt": "sede",
+              "en": "thirst",
+              "audio": "der Durst"
+            },
+            {
+              "ru": "die Zeit",
+              "translit": "di tsait",
+              "pt": "tempo",
+              "en": "time",
+              "audio": "die Zeit"
+            },
+            {
+              "ru": "das Geld",
+              "translit": "das guélt",
+              "pt": "dinheiro",
+              "en": "money",
+              "audio": "das Geld"
+            },
+            {
+              "ru": "die Lust",
+              "translit": "di lust",
+              "pt": "vontade",
+              "en": "desire",
+              "audio": "die Lust"
+            },
+            {
+              "ru": "das Problem",
+              "translit": "das problém",
+              "pt": "problema",
+              "en": "problem",
+              "audio": "das Problem"
+            },
+            {
+              "ru": "die Ahnung",
+              "translit": "di ánung",
+              "pt": "noção, ideia",
+              "en": "idea",
+              "audio": "die Ahnung"
+            },
+            {
+              "ru": "das Auto",
+              "translit": "das áuto",
+              "pt": "carro",
+              "en": "car",
+              "audio": "das Auto"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "«Kein» e «keine»: negar um substantivo, passo a passo",
+          "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS. Use-o no lugar de «ein» ou quando o substantivo não tem artigo: «Ich habe ein Auto» → «Ich habe kein Auto.»; «Ich habe Zeit» → «Ich habe keine Zeit.» PASSO 2: «kein» tem as terminações de «ein»: masculino: kein (nominativo) e keinen (acusativo); feminino: keine; neutro: kein; plural: keine. PASSO 3: expressões fixas com «haben»: «Ich habe keinen Hunger», «keinen Durst», «keine Zeit», «keine Lust», «keine Ahnung» (não faço ideia). PASSO 4: lembre que o objeto direto masculino ganha -en: «keinen Hunger», «keinen Kaffee».",
+          "tabela": [
+            {
+              "genero": "masculino",
+              "nominativo": "kein Hund",
+              "acusativo": "keinen Hund",
+              "exemplo": "Ich habe keinen Hund."
+            },
+            {
+              "genero": "feminino",
+              "nominativo": "keine Katze",
+              "acusativo": "keine Katze",
+              "exemplo": "Ich habe keine Katze."
+            },
+            {
+              "genero": "neutro",
+              "nominativo": "kein Auto",
+              "acusativo": "kein Auto",
+              "exemplo": "Ich habe kein Auto."
+            },
+            {
+              "genero": "plural",
+              "nominativo": "keine Kinder",
+              "acusativo": "keine Kinder",
+              "exemplo": "Ich habe keine Kinder."
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Ich habe nicht Zeit.",
+              "certo": "Ich habe keine Zeit.",
+              "motivo": "Com substantivo, use «kein/keine»."
+            },
+            {
+              "errado": "Ich habe kein Hunger.",
+              "certo": "Ich habe keinen Hunger.",
+              "motivo": "«Hunger» é masculino: objeto direto → keinen."
+            }
+          ],
+          "tag": "Verbos"
+        },
+        {
+          "tipo": "producao",
+          "min": 5,
+          "enunciado": "Diga 6 coisas que você não tem: «Ich habe keinen / keine / kein …»"
+        }
+      ]
+    },
+    {
+      "sessao": "S3",
+      "titulo": "Nicht e a resposta «doch»",
+      "duracaoMin": 30,
+      "blocos": [
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva 5 frases com «kein», «keine» e «keinen»."
         },
         {
           "tipo": "palavras",
           "min": 6,
           "itens": [
             {
-              "ru": "schwimmen",
-              "translit": "xvímen",
-              "pt": "nadar",
-              "en": "to swim",
-              "audio": "schwimmen"
+              "ru": "gar nicht",
+              "translit": "gar niçt",
+              "pt": "de jeito nenhum",
+              "en": "not at all",
+              "audio": "gar nicht"
             },
             {
-              "ru": "tanzen",
-              "translit": "tántsen",
-              "pt": "dançar",
-              "en": "to dance",
-              "audio": "tanzen"
+              "ru": "nicht mehr",
+              "translit": "niçt mér",
+              "pt": "não mais",
+              "en": "no longer",
+              "audio": "nicht mehr"
             },
             {
-              "ru": "singen",
-              "translit": "zíngen",
-              "pt": "cantar",
-              "en": "to sing",
-              "audio": "singen"
+              "ru": "nur",
+              "translit": "nur",
+              "pt": "só, apenas",
+              "en": "only",
+              "audio": "nur"
             },
             {
-              "ru": "parken",
-              "translit": "párken",
-              "pt": "estacionar",
-              "en": "to park",
-              "audio": "parken"
+              "ru": "aber",
+              "translit": "áber",
+              "pt": "mas",
+              "en": "but",
+              "audio": "aber"
             },
             {
-              "ru": "bleiben",
-              "translit": "bláiben",
-              "pt": "ficar, permanecer",
-              "en": "to stay",
-              "audio": "bleiben"
+              "ru": "leider",
+              "translit": "láider",
+              "pt": "infelizmente",
+              "en": "unfortunately",
+              "audio": "leider"
             },
             {
-              "ru": "warten",
-              "translit": "várten",
-              "pt": "esperar",
-              "en": "to wait",
-              "audio": "warten"
+              "ru": "doch",
+              "translit": "dorr",
+              "pt": "sim! (contra uma negação)",
+              "en": "yes, I do",
+              "audio": "doch"
             }
           ]
         },
         {
           "tipo": "gramatica",
-          "min": 14,
-          "titulo": "Verbos modais: forma e sentido",
-          "explicacao": "Os verbos modais mudam o sentido do verbo principal. O modal fica na 2ª posição, conjugado, e o verbo principal vai para o FIM, no infinitivo (a moldura da frase): «Ich kann gut schwimmen.» Atenção às formas: «ich» e «er / sie / es» são IGUAIS e sem -t (ich kann, er kann), e quase todos trocam a vogal no singular (können → kann, müssen → muss, dürfen → darf, wollen → will). Sentidos: können = poder, saber; müssen = ter que; wollen = querer; dürfen = ter permissão; sollen = dever (ordem de outra pessoa); möchten = gostaria.",
-          "comparacao": "em português «poder», «dever» e «querer» também vêm com outro verbo no infinitivo. A diferença é a posição: em alemão o infinitivo vai para o fim da frase.",
-          "tabela": [
-            {
-              "pronome": "ich",
-              "können": "kann",
-              "müssen": "muss",
-              "wollen": "will",
-              "dürfen": "darf",
-              "sollen": "soll",
-              "möchten": "möchte"
-            },
-            {
-              "pronome": "du",
-              "können": "kannst",
-              "müssen": "musst",
-              "wollen": "willst",
-              "dürfen": "darfst",
-              "sollen": "sollst",
-              "möchten": "möchtest"
-            },
-            {
-              "pronome": "er / sie / es",
-              "können": "kann",
-              "müssen": "muss",
-              "wollen": "will",
-              "dürfen": "darf",
-              "sollen": "soll",
-              "möchten": "möchte"
-            },
-            {
-              "pronome": "wir",
-              "können": "können",
-              "müssen": "müssen",
-              "wollen": "wollen",
-              "dürfen": "dürfen",
-              "sollen": "sollen",
-              "möchten": "möchten"
-            },
-            {
-              "pronome": "ihr",
-              "können": "könnt",
-              "müssen": "müsst",
-              "wollen": "wollt",
-              "dürfen": "dürft",
-              "sollen": "sollt",
-              "möchten": "möchtet"
-            },
-            {
-              "pronome": "sie / Sie",
-              "können": "können",
-              "müssen": "müssen",
-              "wollen": "wollen",
-              "dürfen": "dürfen",
-              "sollen": "sollen",
-              "möchten": "möchten"
-            }
-          ],
-          "erros": [
-            {
-              "errado": "Er kannt schwimmen.",
-              "certo": "Er kann schwimmen.",
-              "motivo": "No «er», o modal não tem -t."
-            },
-            {
-              "errado": "Ich kann schwimmen gut.",
-              "certo": "Ich kann gut schwimmen.",
-              "motivo": "O verbo principal vai para o FIM."
-            }
-          ],
-          "tag": "Verbos"
-        },
-        {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Diga: «Ich kann schwimmen. Ich muss arbeiten. Ich will tanzen. Ich darf hier parken. Du sollst warten.»"
-        }
-      ]
-    },
-    {
-      "sessao": "S2",
-      "titulo": "Sentidos e armadilhas",
-      "duracaoMin": 30,
-      "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva as formas de «können», «müssen» e «dürfen» no «ich», «du» e «er»."
-        },
-        {
-          "tipo": "gramatica",
-          "min": 14,
-          "titulo": "Atenção: «nicht müssen» não é «nicht dürfen»",
-          "explicacao": "A negação muda o sentido dos modais de um jeito que confunde quem fala português. «Du musst nicht kommen» = você NÃO PRECISA vir (é opcional). «Du darfst nicht kommen» = você NÃO PODE vir (é proibido). «Können» pode ser capacidade («Ich kann schwimmen») ou possibilidade («Es kann regnen»). «Dürfen» pede permissão («Darf ich…?»); «können» também serve para pedir, de modo mais informal («Kannst du mir helfen?»). «Sollen» expressa o que outra pessoa quer de você («Der Arzt sagt, ich soll mehr schlafen»).",
-          "comparacao": "em português «não precisa» e «não pode» são bem diferentes. Em alemão o erro típico é usar «nicht müssen» querendo dizer «proibido».",
-          "tabela": [
-            {
-              "modal": "müssen",
-              "sentido": "ter que",
-              "exemplo": "Ich muss arbeiten."
-            },
-            {
-              "modal": "nicht müssen",
-              "sentido": "não precisar",
-              "exemplo": "Du musst nicht kommen."
-            },
-            {
-              "modal": "dürfen",
-              "sentido": "ter permissão",
-              "exemplo": "Darf ich hier sitzen?"
-            },
-            {
-              "modal": "nicht dürfen",
-              "sentido": "ser proibido",
-              "exemplo": "Hier darf man nicht parken."
-            },
-            {
-              "modal": "können",
-              "sentido": "poder, saber",
-              "exemplo": "Kannst du mir helfen?"
-            },
-            {
-              "modal": "wollen",
-              "sentido": "querer (firme)",
-              "exemplo": "Ich will heute schwimmen."
-            },
-            {
-              "modal": "möchten",
-              "sentido": "gostaria (educado)",
-              "exemplo": "Ich möchte einen Kaffee."
-            },
-            {
-              "modal": "sollen",
-              "sentido": "dever (ordem de outro)",
-              "exemplo": "Ich soll mehr schlafen."
-            }
-          ],
-          "erros": [
-            {
-              "errado": "Hier musst du nicht parken. (quero dizer: é proibido)",
-              "certo": "Hier darfst du nicht parken.",
-              "motivo": "«nicht müssen» é só «não precisa»."
-            }
-          ],
-          "tag": "Verbos"
-        },
-        {
-          "tipo": "producao",
-          "min": 11,
-          "enunciado": "Diga 8 frases em voz alta, trocando os sentidos: «Du musst nicht kommen. Du darfst nicht kommen. Darf ich hier sitzen? Kannst du mir helfen? Ich soll mehr schlafen. Ich will Deutsch lernen.»"
-        }
-      ]
-    },
-    {
-      "sessao": "S3",
-      "titulo": "Modais com separáveis e diálogo",
-      "duracaoMin": 30,
-      "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva uma frase com cada um dos 6 modais."
-        },
-        {
-          "tipo": "gramatica",
           "min": 10,
-          "titulo": "Modais com verbo separável e perguntas",
-          "explicacao": "Com um modal, o verbo separável fica INTEIRO no fim: «Ich muss um sieben Uhr aufstehen», «Du kannst morgen mitkommen». A pergunta de sim ou não começa pelo modal: «Kannst du morgen kommen?». Com palavra interrogativa: «Wann musst du aufstehen?». Sem verbo principal: quando o sentido é claro, ele pode ficar de fora («Ich muss nach Hause», «Ich will ins Kino»), sobretudo com movimento.",
+          "titulo": "«Nicht»: onde colocar, e como responder com «doch»",
+          "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS; «nicht» nega TODO O RESTO: o verbo, a frase inteira, um adjetivo ou um advérbio. PASSO 2: se nega a frase inteira, «nicht» vai para o FIM: «Ich arbeite heute nicht.» PASSO 3: se nega um adjetivo ou advérbio, vai ANTES dele: «Das Buch ist nicht teuer.» PASSO 4: com verbo separável, «nicht» vem antes do prefixo: «Ich stehe nicht auf.» PASSO 5: com modais, vem antes do infinitivo: «Ich kann nicht kommen.» PASSO 6: se alguém pergunta de forma NEGATIVA («Hast du keine Zeit?»), a resposta é «DOCH» para dizer «sim, tenho» e «Nein» para dizer «não, não tenho». «Doch» é a palavra que contradiz uma negação.",
           "tabela": [
             {
-              "padrao": "modal + separável inteiro no fim",
-              "exemplo": "Ich muss um sieben Uhr aufstehen."
+              "situacao": "nega a frase toda",
+              "exemplo": "Ich arbeite heute nicht."
             },
             {
-              "padrao": "pergunta de sim ou não",
-              "exemplo": "Kannst du morgen mitkommen?"
+              "situacao": "nega um adjetivo",
+              "exemplo": "Das Buch ist nicht teuer."
             },
             {
-              "padrao": "palavra interrogativa",
-              "exemplo": "Wann musst du aufstehen?"
+              "situacao": "nega um advérbio ou lugar",
+              "exemplo": "Ich komme nicht aus Spanien."
             },
             {
-              "padrao": "verbo principal omitido",
-              "exemplo": "Ich muss nach Hause."
+              "situacao": "verbo separável",
+              "exemplo": "Ich stehe nicht auf."
+            },
+            {
+              "situacao": "verbo modal",
+              "exemplo": "Ich kann nicht kommen."
+            },
+            {
+              "situacao": "resposta «doch»",
+              "exemplo": "Hast du keine Zeit? — Doch, ich habe Zeit!"
+            },
+            {
+              "situacao": "resposta «nein»",
+              "exemplo": "Hast du keine Zeit? — Nein, ich habe keine Zeit."
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Ich nicht arbeite heute.",
+              "certo": "Ich arbeite heute nicht.",
+              "motivo": "«nicht» vai para o fim."
+            },
+            {
+              "errado": "Ich habe nicht Zeit.",
+              "certo": "Ich habe keine Zeit.",
+              "motivo": "Substantivo: «keine»."
+            },
+            {
+              "errado": "Hast du keine Zeit? — Ja, ich habe Zeit.",
+              "certo": "Hast du keine Zeit? — Doch, ich habe Zeit.",
+              "motivo": "Contra uma negação use «doch», não «ja»."
             }
           ],
           "tag": "Verbos"
         },
         {
           "tipo": "dialogo",
-          "min": 10,
-          "titulo": "Regeln / Regras",
-          "contexto": "Dois amigos estão num estacionamento.",
+          "min": 7,
+          "titulo": "Hast du Zeit? / Você tem tempo?",
+          "contexto": "Dois amigos combinam um jantar.",
           "linhas": [
             {
               "personagem": "Lea",
-              "ru": "— Darf ich hier parken?",
-              "pt": "— Posso estacionar aqui?",
-              "audio": "Darf ich hier parken?"
+              "ru": "— Hast du heute Abend Zeit?",
+              "pt": "— Você tem tempo hoje à noite?",
+              "audio": "Hast du heute Abend Zeit?"
             },
             {
               "personagem": "Paul",
-              "ru": "— Nein, hier darfst du nicht parken. Du musst dort parken.",
-              "pt": "— Não, aqui você não pode estacionar. Tem que estacionar ali.",
-              "audio": "Nein, hier darfst du nicht parken. Du musst dort parken."
+              "ru": "— Nein, leider nicht. Ich habe keine Zeit.",
+              "pt": "— Não, infelizmente não. Não tenho tempo.",
+              "audio": "Nein, leider nicht. Ich habe keine Zeit."
             },
             {
               "personagem": "Lea",
-              "ru": "— Muss ich bezahlen?",
-              "pt": "— Preciso pagar?",
-              "audio": "Muss ich bezahlen?"
+              "ru": "— Hast du keinen Hunger? Wir können zusammen essen.",
+              "pt": "— Você não está com fome? Podemos comer juntos.",
+              "audio": "Hast du keinen Hunger? Wir können zusammen essen."
             },
             {
               "personagem": "Paul",
-              "ru": "— Ja, du musst einen Euro pro Stunde bezahlen.",
-              "pt": "— Sim, você precisa pagar um euro por hora.",
-              "audio": "Ja, du musst einen Euro pro Stunde bezahlen."
+              "ru": "— Doch, ich habe Hunger! Aber ich muss noch arbeiten.",
+              "pt": "— Estou, sim! Mas ainda preciso trabalhar.",
+              "audio": "Doch, ich habe Hunger! Aber ich muss noch arbeiten."
             },
             {
               "personagem": "Lea",
-              "ru": "— Kann ich mit Karte zahlen?",
-              "pt": "— Posso pagar com cartão?",
-              "audio": "Kann ich mit Karte zahlen?"
+              "ru": "— Arbeitest du nicht um sechs Uhr?",
+              "pt": "— Você não trabalha às seis?",
+              "audio": "Arbeitest du nicht um sechs Uhr?"
             },
             {
               "personagem": "Paul",
-              "ru": "— Nein, du kannst nur bar zahlen.",
-              "pt": "— Não, você só pode pagar em dinheiro.",
-              "audio": "Nein, du kannst nur bar zahlen."
+              "ru": "— Doch, aber heute arbeite ich bis acht.",
+              "pt": "— Trabalho, sim, mas hoje trabalho até as oito.",
+              "audio": "Doch, aber heute arbeite ich bis acht."
             },
             {
               "personagem": "Lea",
-              "ru": "— Ich will heute noch einkaufen. Ich möchte ins Kaufhaus gehen.",
-              "pt": "— Eu quero fazer compras ainda hoje. Gostaria de ir à loja de departamentos.",
-              "audio": "Ich will heute noch einkaufen. Ich möchte ins Kaufhaus gehen."
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Das Kaufhaus schließt um achtzehn Uhr. Du kannst nicht lange warten.",
-              "pt": "— A loja fecha às dezoito horas. Você não pode esperar muito.",
-              "audio": "Das Kaufhaus schließt um achtzehn Uhr. Du kannst nicht lange warten."
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Danke! Ich kann um fünf Uhr dort sein.",
-              "pt": "— Obrigada! Eu posso estar lá às cinco.",
-              "audio": "Danke! Ich kann um fünf Uhr dort sein."
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Gut, dann musst du jetzt losfahren.",
-              "pt": "— Ótimo, então você precisa partir agora.",
-              "audio": "Gut, dann musst du jetzt losfahren."
+              "ru": "— Dann essen wir um halb neun. Ich hole dich ab.",
+              "pt": "— Então comemos às oito e meia. Eu busco você.",
+              "audio": "Dann essen wir um halb neun. Ich hole dich ab."
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
-          "enunciado": "Diga 5 regras da sua vida usando «muss», «darf nicht», «kann», «will» e «soll»."
+          "min": 2,
+          "enunciado": "Responda em voz alta com «doch» ou «nein»: «Hast du keine Zeit? Hast du keinen Hunger? Arbeitest du nicht?»"
         }
       ]
     },
@@ -342,7 +470,7 @@
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva 4 frases com modais, uma delas com verbo separável."
+          "enunciado": "Escreva 4 frases: um pronome no acusativo, um «kein», um «nicht» e uma resposta com «doch»."
         },
         {
           "tipo": "exercicios",
@@ -350,200 +478,190 @@
           "itens": [
             {
               "tipo": "fill-gap",
-              "enunciado": "Ich ___ gut schwimmen. (können)",
+              "enunciado": "Wo ist der Schlüssel? Ich suche ___.",
               "opcoes": [
-                "kann",
-                "kannst",
-                "können"
+                "ihn",
+                "er",
+                "ihm"
               ],
-              "gabarito": "kann",
-              "explicacao": "ich → kann.",
+              "gabarito": "ihn",
+              "explicacao": "«der Schlüssel» é masculino: acusativo «ihn».",
               "id": "de-014-e01"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Er ___ heute arbeiten. (müssen)",
+              "enunciado": "Wo ist die Tasche? Ich finde ___ nicht.",
               "opcoes": [
-                "muss",
-                "musst",
-                "müssen"
+                "sie",
+                "es",
+                "ihn"
               ],
-              "gabarito": "muss",
-              "explicacao": "er → muss (sem -t).",
+              "gabarito": "sie",
+              "explicacao": "«die Tasche» é feminino: «sie».",
               "id": "de-014-e02"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Du ___ hier nicht parken. (dürfen)",
+              "enunciado": "Das Buch ist gut. Ich lese ___ gern.",
               "opcoes": [
-                "darfst",
-                "darf",
-                "dürft"
+                "es",
+                "sie",
+                "ihn"
               ],
-              "gabarito": "darfst",
-              "explicacao": "du → darfst.",
+              "gabarito": "es",
+              "explicacao": "«das Buch» é neutro: «es».",
               "id": "de-014-e03"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Wir ___ nach Hause fahren. (wollen)",
+              "enunciado": "Ich liebe ___. (você, informal)",
               "opcoes": [
-                "wollen",
-                "will",
-                "wollt"
+                "dich",
+                "du",
+                "dir"
               ],
-              "gabarito": "wollen",
-              "explicacao": "wir → wollen.",
+              "gabarito": "dich",
+              "explicacao": "Acusativo de «du».",
               "id": "de-014-e04"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Ihr ___ pünktlich sein. (sollen)",
+              "enunciado": "Er sieht ___. (a mim)",
               "opcoes": [
-                "sollt",
-                "sollen",
-                "soll"
+                "mich",
+                "ich",
+                "mir"
               ],
-              "gabarito": "sollt",
-              "explicacao": "ihr → sollt.",
+              "gabarito": "mich",
+              "explicacao": "Acusativo de «ich».",
               "id": "de-014-e05"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Ich ___ einen Kaffee trinken. (möchten)",
+              "enunciado": "Ich habe ___ Auto. (nenhum)",
               "opcoes": [
-                "möchte",
-                "möchtest",
-                "möchten"
+                "kein",
+                "keine",
+                "keinen"
               ],
-              "gabarito": "möchte",
-              "explicacao": "ich → möchte.",
+              "gabarito": "kein",
+              "explicacao": "«Auto» é neutro: kein.",
               "id": "de-014-e06"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Du musst nicht kommen» significa:",
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe ___ Zeit. (nenhuma)",
               "opcoes": [
-                "Você não precisa vir",
-                "Você não pode vir",
-                "Você não quer vir"
+                "keine",
+                "kein",
+                "keinen"
               ],
-              "gabarito": "Você não precisa vir",
-              "explicacao": "nicht müssen = não precisar.",
+              "gabarito": "keine",
+              "explicacao": "«Zeit» é feminino: keine.",
               "id": "de-014-e07"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Hier darfst du nicht parken» significa:",
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe ___ Hunger. (nenhuma)",
               "opcoes": [
-                "Aqui é proibido estacionar",
-                "Aqui você não precisa estacionar",
-                "Aqui você não sabe estacionar"
+                "keinen",
+                "kein",
+                "keine"
               ],
-              "gabarito": "Aqui é proibido estacionar",
-              "explicacao": "nicht dürfen = proibido.",
+              "gabarito": "keinen",
+              "explicacao": "«Hunger» é masculino, objeto direto: keinen.",
               "id": "de-014-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Eu preciso me levantar às sete horas.»",
+              "tipo": "fill-gap",
+              "enunciado": "Ich arbeite heute ___.",
               "opcoes": [
-                "Ich",
-                "muss",
-                "um",
-                "sieben",
-                "Uhr",
-                "aufstehen"
+                "nicht",
+                "kein",
+                "keine"
               ],
-              "gabarito": "Ich muss um sieben Uhr aufstehen.",
-              "explicacao": "O separável fica inteiro no fim.",
+              "gabarito": "nicht",
+              "explicacao": "Nega o verbo: «nicht» no fim.",
               "id": "de-014-e09"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Você pode me ajudar?»",
+              "tipo": "multiple-choice",
+              "enunciado": "Quando se usa «kein»?",
               "opcoes": [
-                "Kannst",
-                "du",
-                "mir",
-                "helfen"
+                "para negar substantivos",
+                "para negar verbos",
+                "para negar adjetivos"
               ],
-              "gabarito": "Kannst du mir helfen?",
-              "explicacao": "Modal primeiro; verbo no fim.",
+              "gabarito": "para negar substantivos",
+              "explicacao": "«kein» nega substantivos.",
               "id": "de-014-e10"
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Onde vai o verbo principal com um modal?",
+              "enunciado": "Hast du keine Zeit? — ___, ich habe Zeit!",
               "opcoes": [
-                "no fim da frase",
-                "logo depois do modal",
-                "no começo"
+                "Doch",
+                "Ja",
+                "Nein"
               ],
-              "gabarito": "no fim da frase",
-              "explicacao": "Moldura da frase.",
+              "gabarito": "Doch",
+              "explicacao": "Contradiz a negação.",
               "id": "de-014-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Qual modal pede permissão?",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Eu não estou me levantando.»",
               "opcoes": [
-                "dürfen",
-                "müssen",
-                "wollen"
+                "Ich",
+                "stehe",
+                "nicht",
+                "auf"
               ],
-              "gabarito": "dürfen",
-              "explicacao": "Darf ich…?",
+              "gabarito": "Ich stehe nicht auf.",
+              "explicacao": "«nicht» antes do prefixo.",
               "id": "de-014-e12"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escolha.",
-              "audio": "Ich muss nach Hause",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Eu não posso vir.»",
               "opcoes": [
-                "Ich muss nach Hause",
-                "Ich will nach Hause",
-                "Ich darf nach Hause"
+                "Ich",
+                "kann",
+                "nicht",
+                "kommen"
               ],
-              "gabarito": "Ich muss nach Hause",
-              "explicacao": "müssen = ter que.",
+              "gabarito": "Ich kann nicht kommen.",
+              "explicacao": "«nicht» antes do infinitivo.",
               "id": "de-014-e13"
             },
             {
               "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Kannst du mir helfen",
-              "respostaEsperada": "Kannst du mir helfen",
-              "explicacao": "können + verbo no fim.",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Ich hole dich ab",
+              "opcoes": [
+                "Ich hole dich ab",
+                "Ich hole es ab",
+                "Ich hole ihn ab"
+              ],
+              "gabarito": "Ich hole dich ab",
+              "explicacao": "«dich» = acusativo de «du».",
               "id": "de-014-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«sollen» expressa:",
-              "opcoes": [
-                "o que outra pessoa quer de você",
-                "o que você quer",
-                "o que você sabe"
-              ],
-              "gabarito": "o que outra pessoa quer de você",
-              "explicacao": "Ordem ou conselho de outro.",
-              "id": "de-014-e15"
-            },
-            {
               "tipo": "producao",
-              "enunciado": "Escreva 5 frases com modais: o que você precisa, pode, quer, não pode e deve fazer.",
-              "respostaEsperada": "Ich muss arbeiten. Ich kann gut kochen. Ich will Deutsch lernen. Ich darf hier nicht parken. Ich soll mehr schlafen.",
-              "id": "de-014-e16"
+              "enunciado": "Escreva 5 frases: um pronome no acusativo, um «kein», um «nicht», um «nicht» com verbo separável e uma resposta com «doch».",
+              "respostaEsperada": "Ich sehe ihn. Ich habe keine Zeit. Ich arbeite heute nicht. Ich stehe nicht auf. Hast du keinen Hunger? Doch!",
+              "id": "de-014-e15"
             }
           ]
         },
         {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Grave-se falando das suas obrigações e dos seus desejos com os modais."
+          "enunciado": "Grave-se: diga 4 coisas que você não tem, 3 que você não faz e responda a duas perguntas negativas com «doch»."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você usa os seis verbos modais. Próxima aula: o Perfekt, o passado do dia a dia."
+  "notasParaOAluno": "Você troca objetos por pronomes e nega corretamente. Próxima aula: compras e roupas."
 }

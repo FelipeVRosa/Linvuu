@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso } from '../lib/content';
+import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import NaoEncontrada from './NaoEncontrada';
 
-const CAMADAS: { k: 'video' | 'imersao' | 'pratica'; t: string; d: string }[] = [
-  { k: 'video', t: 'Vídeo-aula', d: 'Aula curta, em capítulos.' },
-  { k: 'imersao', t: 'Imersão', d: 'Texto com áudio nativo e vocabulário.' },
+const CAMADAS: { k: 'comeceAqui' | 'imersao' | 'pratica'; t: string; d: string }[] = [
+  { k: 'comeceAqui', t: 'Comece aqui', d: 'Ouça cada palavra com áudio nativo e leia junto.' },
+  { k: 'imersao', t: 'Imersão', d: 'Textos e diálogos curtos, com tradução sob demanda.' },
   { k: 'pratica', t: 'Prática', d: 'Exercícios com feedback imediato.' },
 ];
 
@@ -31,9 +32,7 @@ export default function Dia() {
 
   return (
     <div className="pagina">
-      <nav className="migalhas" aria-label="Você está em">
-        <Link to="/">Início</Link> / <Link to="/cursos">Cursos</Link> / <Link to={`/curso/${curso!.id}`}>{curso!.nome}</Link> / <span aria-current="page">Dia {dia}</span>
-      </nav>
+      <Navegacao pai={`/curso/${curso!.id}`} trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `Dia ${dia}` }]} />
 
       {erro && <p className="vazio">Não foi possível carregar esta aula. Recarregue a página.</p>}
       {!aula && !erro && <p className="resultado" role="status">Carregando…</p>}
@@ -41,7 +40,7 @@ export default function Dia() {
       {aula && (
         <>
           <header>
-            <span className="curso-card-area">Dia {dia} de 100 · {fase?.titulo} · {NIVEL_LABEL[aula.nivel]}</span>
+            <span className="kicker-pagina">Dia {dia} de 100 · {fase?.titulo} · {NIVEL_LABEL[aula.nivel]}</span>
             <h1 className="pagina-h1">{aula.titulo}</h1>
             <p className="lead">Ao final do dia: {aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}</p>
             <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>
@@ -51,8 +50,8 @@ export default function Dia() {
             <p className="nota">
               Esta aula de {curso!.nome} ainda não foi publicada.{' '}
               {aula.imersao.status === 'legado'
-                ? 'O conteúdo já está escrito e será levado para o player da Linvuu; o vídeo ainda será gravado.'
-                : 'O objetivo do dia já está definido; o vídeo, o texto e os exercícios estão em produção.'}
+                ? 'O conteúdo já está escrito e será levado para o player da Linvuu.'
+                : 'O objetivo do dia já está definido; o áudio, o texto e os exercícios estão em produção.'}
             </p>
           )}
 

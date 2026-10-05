@@ -1,6 +1,8 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { DIAS, FASES, diaDoCurso, INICIO_POR_NIVEL, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
 import { Bandeira } from '../components/Bandeira';
+import { Navegacao } from '../components/Navegacao';
+import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { usePageTitle } from '../lib/usePageTitle';
 import NaoEncontrada from './NaoEncontrada';
 
@@ -18,16 +20,16 @@ export default function Curso() {
 
   return (
     <div className="pagina">
-      <nav className="migalhas" aria-label="Você está em"><Link to="/">Início</Link> / <Link to="/cursos">Cursos</Link> / <span aria-current="page">{curso.nome}</span></nav>
+      <Navegacao pai="/cursos" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">
         <div>
-          <span className="curso-card-area">{curso.area === 'idiomas' ? 'Idioma' : 'STEM'}</span>
+          <span className={`area-tag ${curso.area === 'idiomas' ? 'area-idiomas' : 'area-stem'}`}>{curso.area === 'idiomas' ? <><IconeIdiomas size={16} /> Idioma</> : <><IconeStem size={16} /> STEM</>}</span>
           <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em>{curso.nomeNativo}</em>}</h1>
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>3 camadas por dia</span><span>Zero a B1</span></>}
+            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>3 camadas por dia</span><span>Do zero ao B1</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} aulas publicadas</span>}
           </div>
         </div>

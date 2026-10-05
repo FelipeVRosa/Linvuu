@@ -14,9 +14,10 @@ export interface Fase { id: number; titulo: string; nivel: Nivel; resumo: string
 export interface DiaMestre { dia: number; fase: number; nivel: Nivel; titulo: string; objetivo: string }
 export interface Aula extends DiaMestre {
   idioma: string; status: StatusAula;
-  video: { status: string; url: string | null; duracaoMin: number | null };
+  comeceAqui: { status: string; audio: string | null; palavras: unknown[] };
   imersao: { status: string; texto: string | null; audio: string | null; vocabulario: unknown[] };
   pratica: { status: string; exercicios: unknown[] };
+  videoApoio: { status: string; url: string | null; motivo: string | null };
   responsavel: string | null;
 }
 
@@ -34,7 +35,7 @@ export const diaDoCurso = (id: string, d: DiaMestre) => {
 
 export const getCurso = (id?: string) => CURSOS.find((c) => c.id === id);
 export const statusDoCurso = (id: string) => INDICE[id];
-export const NIVEL_LABEL: Record<string, string> = { zero: 'Zero absoluto', a1: 'Básico · A1', a2: 'Básico · A2', b1: 'Intermediário · B1', b2: 'Intermediário · B2', c1: 'Avançado · C1' };
+export const NIVEL_LABEL: Record<string, string> = { zero: 'Iniciando do zero', a1: 'Básico · A1', a2: 'Básico · A2', b1: 'Intermediário · B1', b2: 'Intermediário · B2', c1: 'Avançado · C1' };
 export const NIVEL_CURTO: Record<string, string> = { zero: 'Zero', a1: 'A1', a2: 'A2', b1: 'B1' };
 export const STATUS_CURSO: Record<StatusCurso, string> = { 'em-producao': 'Em produção', 'em-breve': 'Em breve', 'em-planejamento': 'Em planejamento' };
 export const STATUS_AULA: Record<StatusAula, string> = { planejada: 'Planejada', 'em-producao': 'Em produção', publicada: 'Publicada' };

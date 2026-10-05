@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { CURSOS } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
+import { Navegacao } from '../components/Navegacao';
+import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { usePageTitle } from '../lib/usePageTitle';
 
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -26,11 +28,13 @@ export default function Cursos() {
 
   return (
     <div className="pagina">
+      <Navegacao pai="/" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos' }]} />
       <h1 className="pagina-h1">Todos os cursos</h1>
       <div className="filtros">
         <div className="chips" role="group" aria-label="Área">
           {['todos', 'idiomas', 'stem'].map((a) => (
             <button key={a} type="button" className={area === a ? 'on' : ''} aria-pressed={area === a} onClick={() => set('area', a)}>
+              {a === 'idiomas' && <IconeIdiomas size={16} />}{a === 'stem' && <IconeStem size={16} />}
               {a === 'todos' ? 'Todos' : a === 'idiomas' ? 'Idiomas' : 'STEM'}
             </button>
           ))}

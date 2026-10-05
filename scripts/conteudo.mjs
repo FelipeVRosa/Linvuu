@@ -25,9 +25,11 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
       const aula = {
         idioma: c.id, dia: d.dia, fase: d.fase, nivel: d.nivel, status: 'planejada',
         titulo: d.titulo, objetivo: d.objetivo,
-        video: { status: 'pendente', url: null, duracaoMin: null },
+        comeceAqui: { status: 'pendente', audio: null, palavras: [] },
         imersao: { status: 'pendente', texto: null, audio: null, vocabulario: [] },
         pratica: { status: 'pendente', exercicios: [] },
+        // vídeo de apoio é opcional: só entra onde os alunos mais erram
+        videoApoio: { status: 'nenhum', url: null, motivo: null },
         responsavel: null,
       };
       fs.writeFileSync(file, JSON.stringify(aula, null, 2) + '\n');

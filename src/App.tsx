@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Cursos from './pages/Cursos';
 import Curso from './pages/Curso';
 import Dia from './pages/Dia';
+import Conta from './pages/Conta';
 import NaoEncontrada from './pages/NaoEncontrada';
 
 function RolarAoTopo() {
@@ -33,6 +34,8 @@ export default function App() {
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
+          <Route path="/entrar" element={<Conta modo="entrar" />} />
+          <Route path="/cadastro" element={<Conta modo="cadastro" />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </main>

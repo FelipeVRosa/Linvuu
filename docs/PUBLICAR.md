@@ -1,23 +1,18 @@
 # Como ver o site e colocá-lo no ar
 
-O site novo é estático (Vite + React). Ele não precisa do `server.ts` para funcionar.
+O site no ar roda no **Render**, em https://linvuu.com.br, com deploy automático a cada push na `main`. Domínio no Registro.br, HTTPS pelo Render.
 
 ## Ver no seu computador
 ```
 npm install
 npm run dev          # abre em http://localhost:3000
 ```
-Se a porta 3000 estiver ocupada, o servidor usa a 3001 e avisa no terminal.
+Para o login funcionar localmente, crie `.env.local` a partir de `.env.example` (ver `docs/AUTENTICACAO.md`).
 
-## Colocar no ar (grátis): Vercel
-1. Entre em vercel.com com a conta do GitHub e clique em "Add New → Project".
-2. Escolha o repositório `FelipeVRosa/Linvuu`. O `vercel.json` já traz as configurações (build `npm run build`, pasta `dist`, rotas do site).
-3. Clique em "Deploy". Cada pull request ganha um endereço de prévia próprio.
+## No Render
+- Build: `npm install && npm run build` (valida o conteúdo e gera `dist/`). Start: `npm start` (`tsx server.ts`, que serve o `dist/` e a API).
+- Variáveis de ambiente: as do servidor (Gemini, Stripe) e as `VITE_FIREBASE_*` do login. Estas últimas precisam existir **antes do build**.
+- Pull requests: o GitHub roda o teste `CI` (`npm ci` e `npm run build`) em cada PR.
 
-Alternativa: Netlify. "Add new site → Import from Git"; o `netlify.toml` já está pronto.
-
-## Por que o preview não aparecia
-O `index.html` da raiz do `main` era o de um site de HTML puro (sem `<div id="root">` e sem o `main.tsx`). Qualquer preview que rode o projeto como app Vite abria esse arquivo e o app React nunca carregava. O `main` agora tem o `index.html` do app; o HTML antigo está em `content/legado/site-estatico/`.
-
-## GitHub Pages
-Não recomendado agora: o site usa endereços absolutos (`/brand/...`) e rotas sem `#`, o que exige domínio próprio para funcionar em Pages.
+## Outras hospedagens
+`vercel.json` e `netlify.toml` continuam no repositório como alternativas. O GitHub Pages foi descartado.

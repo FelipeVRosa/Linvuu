@@ -3,28 +3,87 @@
   "dia": 53,
   "fase": 6,
   "nivel": "a2",
-  "status": "planejada",
-  "titulo": "Na farmácia e no médico",
-  "objetivo": "Descrever sintomas e entender receitas.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Gramática: o mapa dos casos: O que é um caso",
+  "objetivo": "Aula 14, sessão 1 de 4 · 30 min",
+  "aula": {
+    "numero": 14,
+    "titulo": "Gramática: o mapa dos casos",
+    "objetivo": "Entender o que são casos, ver o mapa dos seis casos e reconhecer, nas frases que você já sabe, qual caso aparece e por quê.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "O que é um caso",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva uma frase com «У меня нет», uma com «в» + lugar e uma com «читаю» + objeto."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 15,
+        "titulo": "Caso: a função da palavra na frase",
+        "explicacao": "Em português, a função de uma palavra aparece na ordem da frase e nas preposições: «o cachorro mordeu o homem» não é «o homem mordeu o cachorro». Em russo, a função aparece na terminação: a palavra muda de final, e cada final é um caso. São seis casos. Em «Мама читает книгу», «мама» é quem faz a ação (nominativo) e «книгу» é o que recebe a ação (acusativo). Você já usou quatro dos seis casos sem saber os nomes; agora eles ganham nome.",
+        "comparacao": "o português não muda os substantivos, mas muda os pronomes: «eu / me / mim», «ele / o / lhe». O russo faz isso com todas as palavras.",
+        "tabela": [
+          {
+            "caso": "Nominativo",
+            "pergunta": "Кто? Что?",
+            "funcao": "quem faz; a forma do dicionário",
+            "exemplo": "Мама дома."
+          },
+          {
+            "caso": "Acusativo",
+            "pergunta": "Кого? Что?",
+            "funcao": "o que recebe a ação (objeto direto)",
+            "exemplo": "Я читаю книгу."
+          },
+          {
+            "caso": "Genitivo",
+            "pergunta": "Кого? Чего?",
+            "funcao": "ausência, dono, origem",
+            "exemplo": "У меня нет сестры."
+          },
+          {
+            "caso": "Preposicional",
+            "pergunta": "О ком? О чём? Где?",
+            "funcao": "lugar (com в e на)",
+            "exemplo": "Я живу в Москве."
+          },
+          {
+            "caso": "Dativo",
+            "pergunta": "Кому? Чему?",
+            "funcao": "para quem, a quem (você vai ver agora)",
+            "exemplo": "Я звоню маме."
+          },
+          {
+            "caso": "Instrumental",
+            "pergunta": "Кем? Чем?",
+            "funcao": "com quem, por meio de (você vai ver agora)",
+            "exemplo": "Я работаю с братом."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Я читаю книга.",
+            "certo": "Я читаю книгу.",
+            "motivo": "O objeto direto vai para o acusativo."
+          }
+        ],
+        "tag": "Casos"
+      },
+      {
+        "tipo": "producao",
+        "min": 10,
+        "enunciado": "Diga «Мама читает книгу.» Depois troque «мама» e «книга» por outras palavras e adapte as terminações."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-014.json",
+  "responsavel": null
 }

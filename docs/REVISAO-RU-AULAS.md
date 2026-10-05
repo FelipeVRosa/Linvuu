@@ -1,4 +1,4 @@
-# Revisão objetiva: aulas 1 a 10 (ru)
+# Revisão objetiva: aulas 1 a 14 (ru)
 
 Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto nos arquivos de `content/idiomas/ru/aulas/`.
 
@@ -15,7 +15,11 @@ Gerado por `node scripts/auditar-aulas.mjs ru --md`. Números calculados direto 
 | 8 | Onde eu moro e trabalho | 0 | 20 | 7 | 12 | 120 | 120 |
 | 9 | O que eu faço | 0 | 20 | 8 | 12 | 120 | 120 |
 | 10 | No café e no mercado | 0 | 22 | 8 | 14 | 120 | 120 |
-| **Total** | | 33 | 191 | 70 | 122 | 1200 | 1200 |
+| 11 | Gramática: gênero e plural | 0 | 18 | 0 | 14 | 120 | 120 |
+| 12 | Gramática: adjetivos e possessivos | 0 | 20 | 8 | 14 | 120 | 120 |
+| 13 | Gramática: advérbios e perguntas | 0 | 29 | 8 | 10 | 120 | 120 |
+| 14 | Gramática: o mapa dos casos | 0 | 13 | 0 | 14 | 120 | 120 |
+| **Total** | | 33 | 271 | 86 | 174 | 1680 | 1680 |
 
 ## 1. Alfabeto
 O russo tem 33 letras. As aulas ensinam **33**. Alfabeto completo.
@@ -64,6 +68,22 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 | 10 | S2 | 0 de 10 | — |
 | 10 | S3 | 0 de 9 | — |
 | 10 | S4 | 0 de 0 | — |
+| 11 | S1 | 0 de 10 | — |
+| 11 | S2 | 0 de 8 | — |
+| 11 | S3 | 0 de 1 | — |
+| 11 | S4 | 0 de 0 | — |
+| 12 | S1 | 0 de 12 | — |
+| 12 | S2 | 0 de 8 | — |
+| 12 | S3 | 0 de 9 | — |
+| 12 | S4 | 0 de 0 | — |
+| 13 | S1 | 0 de 10 | — |
+| 13 | S2 | 0 de 12 | — |
+| 13 | S3 | 0 de 7 | — |
+| 13 | S4 | 0 de 8 | — |
+| 14 | S1 | 0 de 0 | — |
+| 14 | S2 | 0 de 8 | — |
+| 14 | S3 | 0 de 6 | — |
+| 14 | S4 | 0 de 0 | — |
 
 ## 3. Números prometidos x reais
 | Aula | Promessa no objetivo | Real |
@@ -80,8 +100,9 @@ Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras
 - Todos batem.
 
 ## 6. Horas reais do ciclo (calculadas)
-- 10 aulas declaram 1200 min = **20.0 h** (média de 120 min por aula).
-- A 40 min por dia, 10 aulas levam 30 dias.
+- 14 aulas declaram 1680 min = **28.0 h** (média de 120 min por aula).
+- Um ciclo de 10 aulas nesse formato teria **20.0 h**.
+- A 40 min por dia, 14 aulas levam 42 dias.
 - Para um ciclo ter 80 h, cada aula teria de ter 8 h (16 sessões de 30 min), ou o ciclo teria de ter 40 aulas.
 
 ## 7. Achados de leitura (não automáticos)

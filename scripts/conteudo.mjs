@@ -18,6 +18,7 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
   fs.mkdirSync(dir, { recursive: true });
   const status = [];
   const sobrescritos = {};
+  const grupos = {};
   for (const d of trilha.dias) {
     const file = path.join(dir, `dia-${pad(d.dia)}.json`);
     if (!fs.existsSync(file)) {
@@ -38,6 +39,7 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     if (aula.dia !== d.dia || aula.idioma !== c.id) erros.push(`${file}: dia/idioma não confere`);
     if (!STATUS.includes(aula.status)) erros.push(`${file}: status inválido "${aula.status}"`);
     status.push(aula.status);
+    if (aula.aula?.numero) { const g = (grupos[aula.aula.numero] ??= { aula: aula.aula.numero, titulo: aula.aula.titulo, dias: [d.dia, d.dia] }); g.dias[1] = d.dia; }
     const m = trilha.dias[d.dia - 1];
     if (aula.titulo !== m.titulo || aula.objetivo !== m.objetivo) sobrescritos[d.dia] = { t: aula.titulo, o: aula.objetivo };
   }
@@ -48,6 +50,7 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     planejadas: status.filter((s) => s === 'planejada').length,
     status,
     sobrescritos,
+    grupos: Object.values(grupos),
   };
 }
 if (!check) fs.writeFileSync(path.join(root, 'indice.json'), JSON.stringify(indice) + '\n');

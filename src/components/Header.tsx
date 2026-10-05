@@ -73,6 +73,7 @@ export function Header() {
         </form>
 
         <nav className="nav-links" aria-label="Principal">
+          <Link to="/gramatica/ru" className="nav-item">Gramática</Link>
           <Link to="/#metodo" className="nav-item">Método</Link>
           <Link to="/#avaliacoes" className="nav-item">Avaliações</Link>
           <Link to="/#faq" className="nav-item">Dúvidas</Link>
@@ -115,6 +116,7 @@ export function Header() {
           </form>
           {CURSOS.map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
           <Link to="/cursos">Todos os cursos</Link>
+          <Link to="/gramatica/ru">Gramática</Link>
           <Link to="/#metodo">Método</Link>
           <Link to="/#avaliacoes">Avaliações</Link>
           <Link to="/#faq">Dúvidas</Link>

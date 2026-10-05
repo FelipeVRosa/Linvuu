@@ -1,5 +1,5 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, diaDoCurso, INICIO_POR_NIVEL, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, diaDoCurso, gruposDoCurso, INICIO_POR_NIVEL, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
 import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
 import { IconeIdiomas, IconeStem } from '../components/Icones';
@@ -19,6 +19,9 @@ export default function Curso() {
   const nivel = params.get('nivel');
   const inicio = nivel ? INICIO_POR_NIVEL[nivel] : undefined;
   const faseInicio = inicio ? DIAS[inicio.dia - 1].fase : 1;
+  const grupos = gruposDoCurso(curso.id);
+  const ultimo = grupos.length ? grupos[grupos.length - 1].dias[1] : 0;
+  const fasesRestantes = FASES.filter((f) => f.dias[1] > ultimo);
 
   return (
     <div className="pagina">
@@ -57,17 +60,41 @@ export default function Curso() {
           {stats && stats.publicadas < stats.total && (
             <p className="nota">Parte das aulas deste curso ainda está sendo produzida. Você pode navegar pela trilha inteira e ver o objetivo de cada dia.</p>
           )}
-          <h2 className="pagina-h2">A trilha, dia por dia</h2>
-          {FASES.map((f) => (
-            <details key={f.id} className="fase-bloco" open={f.id === faseInicio}>
+          {grupos.map((g) => (
+            <details key={g.aula} className="fase-bloco" open={g.aula === (grupos.find((x) => inicio && inicio.dia >= x.dias[0] && inicio.dia <= x.dias[1])?.aula ?? grupos[0].aula)}>
+              <summary>
+                <span className="fase-num">Aula {g.aula}</span>
+                <strong>{g.titulo}</strong>
+                <span className="fase-dias">Dias {g.dias[0]}–{g.dias[1]}</span>
+              </summary>
+              <ol className="dias" start={g.dias[0]}>
+                {DIAS.filter((d) => d.dia >= g.dias[0] && d.dia <= g.dias[1]).map((m) => {
+                  const d = diaDoCurso(curso.id, m);
+                  const st = stats?.status[d.dia - 1] ?? 'planejada';
+                  return (
+                    <li key={d.dia}>
+                      <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
+                        <span className="dia-n">{d.dia}</span>
+                        <span className="dia-t">{d.titulo}<small>{d.objetivo}</small></span>
+                        <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ol>
+            </details>
+          ))}
+          {fasesRestantes.length > 0 && <h2 className="pagina-h2">{grupos.length ? 'O que vem depois (planejado)' : 'A trilha, dia por dia'}</h2>}
+          {fasesRestantes.map((f) => (
+            <details key={f.id} className="fase-bloco" open={!grupos.length && f.id === faseInicio}>
               <summary>
                 <span className="fase-num">Fase {f.id}</span>
                 <strong>{f.titulo}</strong>
                 <span className="fase-nivel">{NIVEL_CURTO[f.nivel]}</span>
                 <span className="fase-dias">Dias {f.dias[0]}–{f.dias[1]}</span>
               </summary>
-              <ol className="dias" start={f.dias[0]}>
-                {DIAS.filter((d) => d.fase === f.id).map((m) => {
+              <ol className="dias" start={Math.max(f.dias[0], ultimo + 1)}>
+                {DIAS.filter((d) => d.fase === f.id && d.dia > ultimo).map((m) => {
                   const d = diaDoCurso(curso.id, m);
                   const st = stats?.status[d.dia - 1] ?? 'planejada';
                   return (

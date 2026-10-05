@@ -56,9 +56,13 @@ export function lerCsv(texto) {
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const dir = path.join(raiz, 'public', 'audio', idioma);
 const tts = {};
+const LIMITE_MS = 20000; // tempo máximo por tentativa: a biblioteca às vezes não rejeita e o job ficaria parado
 const sintetizar = async (texto, g, arquivo) => {
-  tts[g] ??= new EdgeTTS({ voice: voz(g), lang: cfg.lang, outputFormat: 'audio-24khz-48kbitrate-mono-mp3', timeout: 30000 });
-  await tts[g].ttsPromise(texto, arquivo);
+  // uma conexão nova por frase: uma conexão presa não contamina as seguintes
+  const motor = new EdgeTTS({ voice: voz(g), lang: cfg.lang, outputFormat: 'audio-24khz-48kbitrate-mono-mp3', timeout: LIMITE_MS });
+  let relogio;
+  const prazo = new Promise((_, rej) => { relogio = setTimeout(() => rej(new Error(`sem resposta em ${LIMITE_MS / 1000}s`)), LIMITE_MS + 2000); });
+  try { await Promise.race([motor.ttsPromise(texto, arquivo), prazo]); } finally { clearTimeout(relogio); }
 };
 
 async function main() {
@@ -82,23 +86,26 @@ async function main() {
   console.log(`${idioma}: ${linhas.length} frases na lista; ${pulados} já existem; ${pendentes.length} a gerar (${caracteres} caracteres); voz m = ${voz('m')}, voz f = ${voz('f')}`);
   if (simular) { pendentes.slice(0, 12).forEach((l) => console.log(`  ${l.arquivo}  [${l.voz}]  ${l.texto}`)); if (pendentes.length > 12) console.log(`  … e mais ${pendentes.length - 12}`); console.log(`tamanho estimado: ~${Math.round((caracteres * 430 + pendentes.length * 3000) / 1024)} KB`); return; }
 
-  let gerados = 0; const falhas = []; let bytes = 0; const feitos = [];
+  let gerados = 0; const falhas = []; let bytes = 0; const feitos = []; let seguidas = 0;
   for (const l of pendentes) {
     const alvo = path.join(dir, l.arquivo); const g = l.voz === 'f' ? 'f' : 'm'; let ok = false;
     for (let tentativa = 1; tentativa <= 3 && !ok; tentativa++) {
+      const t0 = Date.now();
       try {
         await sintetizar(limpar(l.texto), g, alvo);
         const tam = fs.statSync(alvo).size;
         if (tam < 1000) throw new Error(`arquivo pequeno demais (${tam} bytes)`);
-        bytes += tam; gerados++; ok = true; feitos.push(l);
+        bytes += tam; gerados++; ok = true; feitos.push(l); seguidas = 0;
+        console.log(`ok     ${l.arquivo} [${g}] ${Date.now() - t0}ms  ${l.texto.slice(0, 50)}`);
       } catch (e) {
         fs.rmSync(alvo, { force: true });
-        if (tentativa === 3) falhas.push(`${l.arquivo} (${l.texto}): ${e?.message ?? e}`);
-        else await dormir(1000 * tentativa * tentativa);
+        console.log(`FALHA  ${l.arquivo} [${g}] tentativa ${tentativa} ${Date.now() - t0}ms  ${l.texto.slice(0, 50)}  → ${e?.message ?? e}`);
+        if (tentativa === 3) { falhas.push(`${l.arquivo} (${l.texto}): ${e?.message ?? e}`); seguidas++; }
+        else await dormir(1000 * tentativa);
       }
     }
+    if (seguidas >= 8) { console.error('8 frases seguidas falharam: parando para não gastar o tempo do GitHub (serviço limitando ou fora do ar?)'); break; }
     await dormir(250); // sem rajadas: o serviço não é oficial
-    if (falhas.length >= 5 && gerados === 0) { console.error('5 falhas seguidas sem nenhum sucesso: parando (serviço bloqueado ou fora do ar?)'); break; }
   }
   const presentes = fs.readdirSync(dir).filter((f) => f.endsWith('.mp3')).map((f) => f.replace('.mp3', '')).sort();
   fs.writeFileSync(path.join(dir, 'index.json'), JSON.stringify(presentes) + '\n');

@@ -1,5 +1,7 @@
 # Plano do curso de alemão (versão 2): A1, A2 e B1, em passos pequenos
 
+> Decisão do Felipe: o alemão pode passar de 120 dias (hoje 140 e crescendo). O ajuste do marketing e dos textos que falam em «120 dias» fica para o fim.
+
 Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais longe, **sem resumir**, mas **sempre respeitando os níveis** (A1, A2, B1): nenhum ponto de A2 aparece antes de o A1 terminar, nem de B1 antes do A2. Cada aula tem 4 sessões de ~30 min; a **Revisão** é sempre a última aba da sessão.
 
 ## Método (didático ao máximo)
@@ -55,9 +57,11 @@ Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais lo
 | 28 | Dativo 3: aus, bei, mit, nach, seit, von, zu | no ar |
 | 29 | Acusativo: durch, für, gegen, ohne, um + Wechselpräpositionen 1 (Wo? × Wohin?) | no ar |
 | 30 | Verbos de posição (stehen/stellen…) e Declinação-N | no ar |
-| 31 | Revisão e simulado A2 (parte 1) | a escrever |
-| 32 a 34 | Adjetivos em três passos (definido, indefinido, sem artigo) | a escrever |
-| 35 | Comparativo e superlativo | a escrever |
+| 31 | Revisão e simulado A2 (parte 1) | no ar |
+| 32 | Adjetivos 1: depois de der, die, das | no ar |
+| 33 | Adjetivos 2: depois de ein, mein, kein | no ar |
+| 34 | Adjetivos 3: sem artigo + as três famílias | no ar |
+| 35 | Comparativo e superlativo | no ar |
 | 36 a 37 | Subordinadas: weil, dass, wenn, ob | a escrever |
 | 38 | Verbos reflexivos | a escrever |
 | 39 | Konjunktiv II básico (möchte, würde, könnte, hätte, wäre) | a escrever |

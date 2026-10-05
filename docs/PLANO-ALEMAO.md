@@ -29,16 +29,18 @@ Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais lo
 | 8 | Rotina e verbos separáveis | no ar |
 | 9 | Cidade e direções | no ar |
 | 10 | Revisão e prova do primeiro bloco | no ar |
-| 11 | Können e möchten: saber, poder, pedir e convidar | **novo** |
-| 12 | Müssen, wollen e dürfen | **novo** |
-| 13 | Imperativo (Sie, wir, du, ihr) | **novo** |
-| 14 | Pronomes no acusativo, kein e nicht | **novo** |
-| 15 | Compras e roupas | **novo** |
-| 16 | Profissões e local de trabalho | a escrever |
-| 17 | Casa e moradia (es gibt) | a escrever |
-| 18 | Tempo livre, clima e hobbies (gern, lieber) | a escrever |
-| 19 | Viagens e transporte | a escrever |
-| 20 | Revisão e simulado A1 (formato Goethe, original) | a escrever |
+| 11 | Können e möchten: saber, poder, pedir e convidar | no ar |
+| 12 | Müssen, wollen e dürfen | no ar |
+| 13 | Imperativo (Sie, wir, du, ihr) | no ar |
+| 14 | Pronomes no acusativo, kein e nicht | no ar |
+| 15 | Compras e roupas | no ar |
+| 16 | Profissões e local de trabalho | **novo** |
+| 17 | Casa e moradia (es gibt) | **novo** |
+| 18 | Tempo livre, clima e hobbies (gern, lieber) | **novo** |
+| 19 | Viagens e transporte | **novo** |
+| 20 | Revisão e simulado A1 (formato Goethe, original) | **novo** |
+
+**O bloco A1 está completo e com áudio: 20 aulas, 80 sessões, 40 h.**
 
 ## Bloco A2 (aulas 21 a 46), em passos pequenos
 Perfekt em três passos (regular, irregular, sein × haben) · Präteritum de sein, haben e dos modais · dativo em quatro passos (artigos, pronomes, verbos, preposições) · acusativo × dativo × Wechselpräpositionen · Declinação-N · adjetivos (3 passos) · comparativo e superlativo · subordinadas (weil, dass, wenn, ob) · reflexivos · Konjunktiv II básico (möchte, würde, könnte, hätte, wäre) · Futur I · genitivo básico · indicações de tempo · saúde, viagens, moradia, trabalho · revisão e simulado A2. As cinco aulas que eram «11 a 15» da primeira versão (quatro casos, dativo, acusativo e lugares, modais, Perfekt) estão guardadas em `content/idiomas/de/fontes-a2/` e voltam aqui, divididas em passos menores (os áudios delas já estão prontos).

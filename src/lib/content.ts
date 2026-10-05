@@ -49,11 +49,11 @@ export const STATUS_AULA: Record<StatusAula, string> = { planejada: 'Planejada',
 /** Dia sugerido para começar conforme o nível. A trilha é para iniciantes. */
 export const INICIO_POR_NIVEL: Record<string, { dia: number; aviso?: string }> = {
   zero: { dia: 1 },
-  a1: { dia: 11 },
-  a2: { dia: 31 },
-  b1: { dia: 61 },
-  b2: { dia: 91, aviso: 'Esta trilha foi pensada para quem está começando. As trilhas avançadas ainda estão em planejamento; por enquanto, comece pelo dia 91 como revisão.' },
-  c1: { dia: 91, aviso: 'Esta trilha foi pensada para quem está começando e serve só como revisão no seu nível. As trilhas avançadas ainda estão em planejamento.' },
+  a1: { dia: 25, aviso: 'Se algum ponto parecer novo, volte às aulas anteriores; elas são curtas.' },
+  a2: { dia: 97, aviso: 'O bloco A2 começa na aula 25. As aulas 11 a 24 revisam a gramática, se você sentir falta.' },
+  b1: { dia: 97, aviso: 'Ainda não há aulas de B1. Comece pelo dia 97 (início do bloco A2) como revisão; as aulas de B1 estão em planejamento.' },
+  b2: { dia: 97, aviso: 'Esta trilha foi pensada para quem está começando. As trilhas avançadas ainda estão em planejamento; use o dia 97 como revisão.' },
+  c1: { dia: 97, aviso: 'Esta trilha foi pensada para quem está começando e serve só como revisão no seu nível. As trilhas avançadas ainda estão em planejamento.' },
 };
 
 const aulas = import.meta.glob('../../content/idiomas/*/dia-*.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;

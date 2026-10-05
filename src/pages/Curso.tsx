@@ -35,7 +35,7 @@ export default function Curso() {
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
+            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> {stats?.total ?? 100} dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
           </div>
         </div>
@@ -68,7 +68,8 @@ export default function Curso() {
                 <span className="fase-dias">Dias {g.dias[0]}–{g.dias[1]}</span>
               </summary>
               <ol className="dias" start={g.dias[0]}>
-                {DIAS.filter((d) => d.dia >= g.dias[0] && d.dia <= g.dias[1]).map((m) => {
+                {Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k).map((n) => {
+                  const m = DIAS[n - 1] ?? { dia: n, fase: Math.ceil(n / 10), nivel: 'a2' as const, titulo: '', objetivo: '' };
                   const d = diaDoCurso(curso.id, m);
                   const st = stats?.status[d.dia - 1] ?? 'planejada';
                   return (

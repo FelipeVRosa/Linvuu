@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso } from '../lib/content';
+import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { Sessao } from '../components/Sessao';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -16,7 +16,8 @@ export default function Dia() {
   const { id, n } = useParams();
   const curso = getCurso(id);
   const dia = Number(n);
-  const valido = !!curso && curso.area === 'idiomas' && Number.isInteger(dia) && dia >= 1 && dia <= 100;
+  const total = statusDoCurso(curso?.id ?? '')?.total ?? 100;
+  const valido = !!curso && curso.area === 'idiomas' && Number.isInteger(dia) && dia >= 1 && dia <= total;
   const [aula, setAula] = useState<Aula | null>(null);
   const [erro, setErro] = useState(false);
 
@@ -42,7 +43,7 @@ export default function Dia() {
         <>
           <header>
             <span className="kicker-pagina">
-              {aula.aula ? `Aula ${aula.aula.numero} · sessão ${aula.sessao?.sessao.replace('S', '')} de ${aula.aula.sessoes} · ${aula.sessao?.duracaoMin} min` : `Dia ${dia} de 100 · ${fase?.titulo} · ${NIVEL_LABEL[aula.nivel]}`}
+              {aula.aula ? `Aula ${aula.aula.numero} · sessão ${aula.sessao?.sessao.replace('S', '')} de ${aula.aula.sessoes} · ${aula.sessao?.duracaoMin} min` : `Dia ${dia} de ${total} · ${fase?.titulo} · ${NIVEL_LABEL[aula.nivel]}`}
             </span>
             <h1 className="pagina-h1">{aula.titulo}</h1>
             <p className="lead">{aula.aula ? `Objetivo da aula: ${aula.aula.objetivo}` : `Ao final do dia: ${aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}`}</p>
@@ -58,7 +59,7 @@ export default function Dia() {
           )}
 
           {aula.sessao ? (
-            <Sessao key={dia} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < 100 ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+            <Sessao key={dia} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
           ) : (
             <div className="camadas">
               {CAMADAS.map((c, i) => (
@@ -75,7 +76,7 @@ export default function Dia() {
           <nav className="dia-nav" aria-label="Navegar entre dias">
             {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>← Dia {dia - 1}</Link> : <span />}
             <Link to={`/curso/${curso!.id}`}>Ver a trilha</Link>
-            {dia < 100 ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>Dia {dia + 1} →</Link> : <span />}
+            {dia < total ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>Dia {dia + 1} →</Link> : <span />}
           </nav>
         </>
       )}

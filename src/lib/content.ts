@@ -3,7 +3,7 @@ import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
 import type { InfoAula, SessaoAula } from './aulas';
 
-export type StatusCurso = 'em-producao' | 'em-breve' | 'em-planejamento';
+export type StatusCurso = 'disponivel' | 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
 export type Nivel = 'zero' | 'a1' | 'a2' | 'b1';
 
@@ -41,7 +41,7 @@ export const getCurso = (id?: string) => CURSOS.find((c) => c.id === id);
 export const statusDoCurso = (id: string) => INDICE[id];
 export const NIVEL_LABEL: Record<string, string> = { zero: 'Iniciando do zero', a1: 'Básico · A1', a2: 'Básico · A2', b1: 'Intermediário · B1', b2: 'Intermediário · B2', c1: 'Avançado · C1' };
 export const NIVEL_CURTO: Record<string, string> = { zero: 'Zero', a1: 'A1', a2: 'A2', b1: 'B1' };
-export const STATUS_CURSO: Record<StatusCurso, string> = { 'em-producao': 'Em produção', 'em-breve': 'Em breve', 'em-planejamento': 'Em planejamento' };
+export const STATUS_CURSO: Record<StatusCurso, string> = { disponivel: 'Disponível', 'em-producao': 'Em produção', 'em-breve': 'Em breve', 'em-planejamento': 'Em planejamento' };
 export const STATUS_AULA: Record<StatusAula, string> = { planejada: 'Planejada', 'em-producao': 'Em produção', publicada: 'Publicada' };
 
 /** Dia sugerido para começar conforme o nível. A trilha é para iniciantes. */

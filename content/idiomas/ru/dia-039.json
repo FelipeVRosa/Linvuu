@@ -3,28 +3,111 @@
   "dia": 39,
   "fase": 4,
   "nivel": "a2",
-  "status": "planejada",
-  "titulo": "Cores, roupas e tamanhos",
-  "objetivo": "Descrever roupas e pedir outro tamanho.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "No café e no mercado: No café e na loja",
+  "objetivo": "Aula 10, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 10,
+    "titulo": "No café e no mercado",
+    "objetivo": "Pedir algo, perguntar o preço, contar de 1 a 10, de 10 em 10 até 50 e dizer 100, e fechar o primeiro ciclo de aulas.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "No café e na loja",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conte de 10 em 10 até 50 em voz alta e escreva 5 números em russo."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 12,
+        "titulo": "В кафе / No café",
+        "contexto": "Um cliente e uma atendente.",
+        "linhas": [
+          {
+            "personagem": "Официантка",
+            "ru": "— Здравствуйте! Что вы хотите?",
+            "pt": "— Olá! O que o senhor deseja?",
+            "audio": "Здравствуйте! Что вы хотите?"
+          },
+          {
+            "personagem": "Клиент",
+            "ru": "— Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
+            "pt": "— Olá! Quero um café e pão, por favor.",
+            "audio": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста."
+          },
+          {
+            "personagem": "Официантка",
+            "ru": "— Хорошо. Это всё?",
+            "pt": "— Certo. É tudo?",
+            "audio": "Хорошо. Это всё?"
+          },
+          {
+            "personagem": "Клиент",
+            "ru": "— Да, это всё. Сколько стоит?",
+            "pt": "— Sim, é tudo. Quanto custa?",
+            "audio": "Да, это всё. Сколько стоит?"
+          },
+          {
+            "personagem": "Официантка",
+            "ru": "— Кофе — сто рублей, хлеб — пятьдесят рублей.",
+            "pt": "— O café custa cem rublos, o pão, cinquenta.",
+            "audio": "Кофе — сто рублей, хлеб — пятьдесят рублей."
+          },
+          {
+            "personagem": "Клиент",
+            "ru": "— Сто пятьдесят рублей. Вот, пожалуйста.",
+            "pt": "— Cento e cinquenta rublos. Aqui está.",
+            "audio": "Сто пятьдесят рублей. Вот, пожалуйста."
+          },
+          {
+            "personagem": "Официантка",
+            "ru": "— Спасибо! До свидания!",
+            "pt": "— Obrigada! Até logo!",
+            "audio": "Спасибо! До свидания!"
+          },
+          {
+            "personagem": "Клиент",
+            "ru": "— До свидания!",
+            "pt": "— Até logo!",
+            "audio": "До свидания!"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "В магазине / Na loja",
+        "ru": "Это магазин. Здесь есть хлеб, молоко и вода. Хлеб стоит пятьдесят рублей, молоко стоит пятьдесят рублей, а вода стоит тридцать рублей. Я хочу хлеб и молоко. Это сто рублей.",
+        "pt": "Esta é uma loja. Aqui há pão, leite e água. O pão custa cinquenta rublos, o leite custa cinquenta rublos e a água custa trinta rublos. Eu quero pão e leite. São cem rublos.",
+        "perguntas": [
+          {
+            "pergunta": "Что есть в магазине?",
+            "resposta": "Хлеб, молоко и вода"
+          },
+          {
+            "pergunta": "Сколько стоит вода?",
+            "resposta": "Тридцать рублей"
+          },
+          {
+            "pergunta": "Сколько стоят хлеб и молоко?",
+            "resposta": "Сто рублей"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Represente o diálogo do café: um pedido completo, com preço e agradecimento."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-010.json",
+  "responsavel": null
 }

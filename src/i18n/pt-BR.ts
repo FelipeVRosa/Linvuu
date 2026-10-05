@@ -13,7 +13,7 @@ export const ptBR = {
     labelIdioma: 'Quero aprender',
     labelNivel: 'Meu nível',
     botao: 'Começar grátis',
-    nota: 'Hoje, as aulas completas são de russo (aulas 1 a 6). Alemão vem em seguida.',
+    nota: 'Hoje, as aulas completas são de russo ({n} aulas no ar). Alemão vem em seguida.',
   },
   prova: [
     { t: 'Explicação em português', d: 'Cada regra vem com o porquê, pensada para quem fala português.' },
@@ -42,7 +42,7 @@ export const ptBR = {
     { p: 'Vou ficar fluente?', r: 'Nenhum curso online promete isso com honestidade. A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. A trilha de 100 dias foi desenhada para dar uma base sólida de iniciante.' },
     { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo do criador da Linvuu. Hoje o site oferece cursos em texto, áudio e exercícios. Para saber primeiro das novidades, como livros e novos idiomas, assine a newsletter no rodapé.' },
     { p: 'O que é o "Comece aqui"?', r: 'É o primeiro momento de cada sessão: você ouve cada palavra e lê junto, para o idioma entrar pelo ouvido antes de qualquer regra. Vídeos de apoio entram só onde os alunos mais tropeçam.' },
-    { p: 'O que significam "Em produção" e "Em breve"?', r: '"Em produção" quer dizer que as aulas já existem, mas ainda passam por revisão e gravação. "Em breve" é um curso que ainda não começou a ser produzido. Cada aula mostra seu próprio status.' },
+    { p: 'O que significam "Disponível", "Em produção" e "Em breve"?', r: '"Disponível" quer dizer que há aulas no ar para estudar. "Em produção" quer dizer que as aulas existem, mas ainda passam por revisão. "Em breve" é um curso que ainda não começou a ser produzido. Cada aula mostra seu próprio status.' },
     { p: 'O site vai ter outros idiomas de interface?', r: 'Hoje o site está em português. Versões em outros idiomas virão com o crescimento da Linvuu.' },
   ],
 };

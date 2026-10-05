@@ -3,28 +3,196 @@
   "dia": 28,
   "fase": 3,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Gostar e preferir",
-  "objetivo": "Falar do que você gosta e do que não gosta.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Quem sou eu: Leitura e prática",
+  "objetivo": "Aula 7, sessão 4 de 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Quem sou eu",
+    "objetivo": "Dizer sua profissão e nacionalidade, negar com «не» e dizer o que você não tem com «У меня нет».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Leitura e prática",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva 3 frases com «У меня нет» (um amigo, um carro, um cachorro)."
+      },
+      {
+        "tipo": "texto",
+        "min": 7,
+        "titulo": "Моя подруга / Minha amiga",
+        "ru": "Это моя подруга. Её зовут Анна. Она не русская, она немка. Она из Германии. Анна врач. У неё есть брат. Он студент. У неё нет сестры.",
+        "pt": "Esta é minha amiga. Ela se chama Anna. Ela não é russa, é alemã. Ela é da Alemanha. Anna é médica. Ela tem um irmão. Ele é estudante. Ela não tem irmã.",
+        "perguntas": [
+          {
+            "pergunta": "Кто Анна по профессии?",
+            "resposta": "Врач"
+          },
+          {
+            "pergunta": "Анна русская?",
+            "resposta": "Нет, она немка"
+          },
+          {
+            "pergunta": "Есть ли у Анны сестра?",
+            "resposta": "Нет, у неё нет сестры"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 13,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Я врач» significa:",
+            "opcoes": [
+              "Eu sou médico(a)",
+              "Eu tenho médico",
+              "Eu não sou médico(a)"
+            ],
+            "gabarito": "Eu sou médico(a)",
+            "explicacao": "Sem «é» no presente: Я + profissão.",
+            "id": "ru-007-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Ela é estudante»?",
+            "opcoes": [
+              "Она студентка",
+              "Она есть студентка",
+              "Она студент"
+            ],
+            "gabarito": "Она студентка",
+            "explicacao": "студент → студентка (feminino).",
+            "id": "ru-007-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Я ___ русский. (não)",
+            "opcoes": [
+              "не",
+              "нет",
+              "ни"
+            ],
+            "gabarito": "не",
+            "explicacao": "«не» nega a palavra seguinte; «нет» é «não» sozinho ou «não há».",
+            "id": "ru-007-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Откуда ты?",
+            "opcoes": [
+              "Откуда ты?",
+              "Кто ты?",
+              "Как дела?"
+            ],
+            "gabarito": "Откуда ты?",
+            "explicacao": "«Откуда» = de onde.",
+            "id": "ru-007-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Eu sou do Brasil.»",
+            "opcoes": [
+              "Я",
+              "из",
+              "Бразилии"
+            ],
+            "gabarito": "Я из Бразилии.",
+            "explicacao": "Я + из + país.",
+            "id": "ru-007-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Я бразильянка» é dito por:",
+            "opcoes": [
+              "uma mulher",
+              "um homem",
+              "qualquer pessoa"
+            ],
+            "gabarito": "uma mulher",
+            "explicacao": "Terminação -ка: feminino.",
+            "id": "ru-007-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "У меня есть сестра. → У меня нет ___.",
+            "opcoes": [
+              "сестры",
+              "сестра",
+              "сестру"
+            ],
+            "gabarito": "сестры",
+            "explicacao": "-а vira -ы depois de «нет».",
+            "id": "ru-007-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Нет» + «брат» fica:",
+            "opcoes": [
+              "брата",
+              "брату",
+              "братом"
+            ],
+            "gabarito": "брата",
+            "explicacao": "Consoante final ganha -а.",
+            "id": "ru-007-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "У меня нет машины",
+            "respostaEsperada": "У меня нет машины",
+            "explicacao": "Negação de posse.",
+            "id": "ru-007-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Ele não é russo.»",
+            "opcoes": [
+              "не",
+              "Он",
+              "русский"
+            ],
+            "gabarito": "Он не русский.",
+            "explicacao": "«не» antes da palavra negada.",
+            "id": "ru-007-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "У меня нет собаки",
+              "У меня нет собака",
+              "У меня не собаки"
+            ],
+            "gabarito": "У меня нет собаки",
+            "explicacao": "собака → собаки (г/к pedem -и).",
+            "id": "ru-007-e11"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 4 frases: sua profissão, sua nacionalidade, algo que você tem e algo que não tem.",
+            "respostaEsperada": "Я учитель. Я бразилец. У меня есть брат. У меня нет сестры.",
+            "id": "ru-007-e12"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Grave-se: «Привет! Меня зовут… Я … Я из Бразилии. У меня нет…»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  },
+  "origem": "content/idiomas/ru/aulas/aula-007.json",
   "responsavel": null
 }

@@ -5,7 +5,7 @@ import { falar, falarLista, parar, temVoz } from '../lib/audio';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
-const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural' };
+const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino' };
 
 function Audio({ texto, idioma, rotulo = 'Ouvir' }: { texto: string; idioma: string; rotulo?: string }) {
   return (

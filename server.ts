@@ -534,7 +534,13 @@ No padrão C1, a evitação de construções analíticas coloquiais em favor da 
   // 7. Vite Middleware Integration (Dev) or Static dist (Prod)
   // -------------------------------------------------------------
   if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'dist')));
+    app.use(express.static(path.resolve(__dirname, 'dist'), {
+      setHeaders: (res, arquivo) => {
+        // MP3 tem o nome do hash do texto: nunca muda, pode ficar em cache por um ano. A lista (index.json) muda e fica 5 minutos.
+        if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
+      },
+    }));
     app.get('*', (_req: Request, res: Response) => {
       res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });

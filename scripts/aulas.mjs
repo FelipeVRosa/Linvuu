@@ -67,23 +67,30 @@ for (const f of fs.readdirSync(dirIdioma).filter((x) => /^dia-\d+\.json$/.test(x
   limpos++;
 }
 
-// 3) lista de áudios a gravar (texto único → arquivo nomeado pelo hash do texto)
-const hash = (t) => { let h = 0x811c9dc5; for (const c of Buffer.from(t.normalize('NFC').trim(), 'utf8')) { h ^= c; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, '0'); };
+// 3) lista de áudios (texto único → arquivo nomeado pelo hash do texto).
+// O acento tônico (U+0301) é só gráfico: não entra no hash nem na fala, para o nome do arquivo não mudar quando o acento for colocado.
+const textoParaAudio = (t) => t.normalize('NFC').replace(/\u0301/g, '').trim();
+const hash = (t) => { let h = 0x811c9dc5; for (const c of Buffer.from(textoParaAudio(t), 'utf8')) { h ^= c; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, '0'); };
+const arquivoVozes = path.join(dirIdioma, 'vozes.json');
+const vozes = fs.existsSync(arquivoVozes) ? JSON.parse(fs.readFileSync(arquivoVozes, 'utf8')) : { padrao: 'm', personagens: {} };
+const desconhecidos = new Set();
+const vozDe = (personagem) => { const v = vozes.personagens[personagem]; if (!v) desconhecidos.add(personagem); return v ?? vozes.padrao; };
 const textos = new Map();
-const add = (t, onde) => { if (!t) return; const k = t.normalize('NFC').trim(); if (!textos.has(k)) textos.set(k, { onde, usos: 0 }); textos.get(k).usos++; };
+const add = (t, onde, voz = vozes.padrao) => { if (!t) return; const k = textoParaAudio(t); if (!textos.has(k)) textos.set(k, { onde, usos: 0, voz }); textos.get(k).usos++; };
 for (const a of aulas) for (const s of a.sessoes) for (const b of s.blocos) {
   const onde = `aula ${a.aula} ${s.sessao} ${b.tipo}`;
   if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => add(l.exemplo, onde)));
   if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i) => add(i.audio ?? i.ru, onde));
-  if (b.tipo === 'dialogo') b.linhas.forEach((l) => add(l.audio, onde));
+  if (b.tipo === 'dialogo') b.linhas.forEach((l) => add(l.audio, onde, vozDe(l.personagem)));
   if (b.tipo === 'texto') add(b.ru, onde);
   if (b.tipo === 'gramatica') (b.exemplos ?? []).forEach((e) => add(e.ru.replace(/\s*\(.*?\)\s*$/, ''), onde));
   if (b.tipo === 'exercicios') b.itens.forEach((i) => add(i.audio, onde));
 }
+if (desconhecidos.size) console.warn(`aviso: personagens sem voz em ${path.relative(raiz, arquivoVozes)}: ${[...desconhecidos].join(', ')} (usando "${vozes.padrao}")`);
 const colisoes = new Map();
 for (const t of textos.keys()) { const h = hash(t); colisoes.set(h, [...(colisoes.get(h) ?? []), t]); }
 if ([...colisoes.values()].some((v) => v.length > 1)) { console.error('colisão de hash entre textos'); process.exit(1); }
 fs.mkdirSync(path.join(raiz, 'content', 'audio'), { recursive: true });
-const csv = ['arquivo,texto,primeiro_uso,vezes_usado', ...[...textos].map(([t, v]) => `${hash(t)}.mp3,"${t.replace(/"/g, '""')}",${v.onde},${v.usos}`)].join('\n') + '\n';
+const csv = ['arquivo,texto,voz,primeiro_uso,vezes_usado', ...[...textos].map(([t, v]) => `${hash(t)}.mp3,"${t.replace(/"/g, '""')}",${v.voz},${v.onde},${v.usos}`)].join('\n') + '\n';
 fs.writeFileSync(path.join(raiz, 'content', 'audio', `${id}-gravar.csv`), csv);
 console.log(`${aulas.length} aulas → ${usados.size} dias; ${limpos} dias do material antigo voltaram ao texto-mestre; ${textos.size} áudios a gravar`);

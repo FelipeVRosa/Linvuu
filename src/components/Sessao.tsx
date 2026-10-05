@@ -209,14 +209,21 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
   const [completa, setCompleta] = useState(() => lerSessao(chave)?.completa ?? false);
   const [voz, setVoz] = useState<boolean | null>(null);
+  const [provisorio, setProvisorio] = useState(false);
   const b = sessao.blocos[idx];
 
   useEffect(() => { temVoz(idioma).then(setVoz); return () => parar(); }, [idioma]);
+  useEffect(() => {
+    const ouvir = (e: Event) => setProvisorio((e as CustomEvent<string>).detail === 'voz-do-navegador');
+    window.addEventListener('linvuu:fonte-audio', ouvir);
+    return () => window.removeEventListener('linvuu:fonte-audio', ouvir);
+  }, []);
   useEffect(() => { parar(); salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
 
   return (
     <div className="sessao">
       {voz === false && <p className="nota">Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</p>}
+      {provisorio && <p className="nota nota-audio" role="status">Áudio provisório: este trecho usa a voz do seu navegador. A gravação chega em breve.</p>}
       <ol className="passos" aria-label="Blocos da sessão">
         {sessao.blocos.map((x, k) => (
           <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {ROTULO_BLOCO[x.tipo]}</button></li>

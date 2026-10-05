@@ -20,12 +20,12 @@ permissions:
   contents: write
 
 env:
-  IDIOMA: ${{ inputs.idioma || 'de' }}
+  IDIOMA: ${{ inputs.idioma || (startsWith(github.ref_name, 'piloto-audio/ru') && 'ru') || 'de' }}
 
 jobs:
   audio:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -58,8 +58,8 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: audio-${{ inputs.idioma || 'de' }}
-          path: public/audio/${{ inputs.idioma || 'de' }}
+          name: audio-${{ env.IDIOMA }}
+          path: public/audio/${{ env.IDIOMA }}
           retention-days: 30
       - name: Salvar no GitHub (só nas execuções manuais)
         if: github.event_name == 'workflow_dispatch' && always()

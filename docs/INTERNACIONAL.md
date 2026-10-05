@@ -26,3 +26,15 @@ Um curso de russo **para falantes de português** não é o mesmo que **para fal
 
 ## Moeda e pagamento
 Pix só no Brasil. Fora, cartão. O provedor de pagamento deve ser escolhido já pensando nisso.
+
+## Idiomas de explicação: português, inglês e espanhol (decisão do Felipe)
+- O site terá **3 idiomas de explicação**: português (hoje), inglês e espanhol. Hindi e chinês ficaram de fora de propósito (já há sites assim).
+- Uma barra (como a do Assimil) troca **só a explicação**. A **base** (o idioma estudado: sons, palavras, frases, diálogos, textos e o áudio) é a mesma para todos. Um estrangeiro que escolhe EN vê o russo ou o alemão com tudo explicado em inglês.
+- **Já preparado:** o campo `en` das palavras existe nos dados, mas hoje fica escondido (`MOSTRAR_INGLES = false` em `Sessao.tsx`). A barra do topo e o registro de idiomas (`src/i18n/locales.ts`) já aceitam novos idiomas.
+- **O que falta (depois do site completo em português):**
+  1. Textos do site (`src/i18n/`): criar `en.ts` e `es.ts`.
+  2. Conteúdo das aulas: traduções de tradução de palavras (`pt` → `en`, `es`), explicações de gramática, comparações, erros comuns, instruções dos exercícios, notas e objetivos. A fonte compacta vai aceitar `{ pt, en, es }`, com **português como reserva** quando uma tradução faltar.
+  3. Frases-exemplo e diálogos: a coluna de tradução ao lado do alemão ou do russo também precisa dos 3 idiomas.
+  4. Rotas e busca: `/en/…` e `/es/…`, `hreflang` e sitemap por idioma.
+  5. Revisão por nativos de inglês e espanhol (tradução automática só como rascunho).
+- **Áudio:** não muda, porque o áudio é só do idioma estudado.

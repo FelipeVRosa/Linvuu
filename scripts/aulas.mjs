@@ -27,6 +27,8 @@ const anotar = (sessao) => {
     if (b.tipo === 'palavras') b.itens.forEach((i) => { const f = [...new Set(letrasDe(i.ru))].filter((c) => !ensinadas.has(c)); if (f.length) i.ainda = f.map((c) => c.toUpperCase()); });
     return b;
   });
+  // a revisão fica no FIM da sessão (decisão do Felipe), mesmo que a fonte da aula a traga no começo
+  copia.blocos = [...copia.blocos.filter((b) => b.tipo !== 'revisao'), ...copia.blocos.filter((b) => b.tipo === 'revisao')];
   return copia;
 };
 let dia = 0;

@@ -82,7 +82,7 @@ async function main() {
   console.log(`${idioma}: ${linhas.length} frases na lista; ${pulados} já existem; ${pendentes.length} a gerar (${caracteres} caracteres); voz m = ${voz('m')}, voz f = ${voz('f')}`);
   if (simular) { pendentes.slice(0, 12).forEach((l) => console.log(`  ${l.arquivo}  [${l.voz}]  ${l.texto}`)); if (pendentes.length > 12) console.log(`  … e mais ${pendentes.length - 12}`); console.log(`tamanho estimado: ~${Math.round((caracteres * 430 + pendentes.length * 3000) / 1024)} KB`); return; }
 
-  let gerados = 0; const falhas = []; let bytes = 0;
+  let gerados = 0; const falhas = []; let bytes = 0; const feitos = [];
   for (const l of pendentes) {
     const alvo = path.join(dir, l.arquivo); const g = l.voz === 'f' ? 'f' : 'm'; let ok = false;
     for (let tentativa = 1; tentativa <= 3 && !ok; tentativa++) {
@@ -90,7 +90,7 @@ async function main() {
         await sintetizar(limpar(l.texto), g, alvo);
         const tam = fs.statSync(alvo).size;
         if (tam < 1000) throw new Error(`arquivo pequeno demais (${tam} bytes)`);
-        bytes += tam; gerados++; ok = true;
+        bytes += tam; gerados++; ok = true; feitos.push(l);
       } catch (e) {
         fs.rmSync(alvo, { force: true });
         if (tentativa === 3) falhas.push(`${l.arquivo} (${l.texto}): ${e?.message ?? e}`);
@@ -104,6 +104,7 @@ async function main() {
   fs.writeFileSync(path.join(dir, 'index.json'), JSON.stringify(presentes) + '\n');
   const total = presentes.reduce((x, f) => x + fs.statSync(path.join(dir, `${f}.mp3`)).size, 0);
   console.log(`gerados: ${gerados} (${(bytes / 1024).toFixed(0)} KB) | pulados (já existiam): ${pulados} | falhas: ${falhas.length} | na pasta: ${presentes.length} arquivos, ${(total / 1024 / 1024).toFixed(2)} MB`);
+  if (feitos.length && feitos.length <= 40) console.log('--- o que cada arquivo diz (arquivo, voz, texto):\n' + feitos.map((l) => `${l.arquivo} [${l.voz}] ${l.texto}`).join('\n'));
   if (falhas.length) { console.error('Falhas:\n' + falhas.slice(0, 20).join('\n')); process.exitCode = 1; }
 }
 

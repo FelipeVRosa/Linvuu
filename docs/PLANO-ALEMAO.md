@@ -3,7 +3,7 @@
 Mesmo formato do russo: 4 sessões de ~30 min por aula, explicação em português primeiro, comparação com o português, erros comuns, diálogo, texto e prática. Aulas escritas em `content/idiomas/de/fontes/aula-NNN.mjs` (formato compacto). Aba Gramática automática em `/gramatica/de`.
 
 ## Estado
-**No ar (aulas 1 a 5, 20 dias):** sons e saudações; apresentar-se e «sein»; artigos, gênero e plural; presente regular e ordem da frase; família, «haben» e possessivos.
+**No ar (aulas 1 a 10, 40 dias, primeiro bloco completo):** sons e saudações; apresentar-se e «sein»; artigos, gênero e plural; presente regular e ordem da frase; família, «haben» e possessivos; números, horas e datas; comida, acusativo e «möchten»; rotina e verbos separáveis; cidade, «Wo? × Wohin?» e direções; revisão e prova.
 
 ## Ordem das aulas e da gramática
 | Aula | Tema | Gramática |
@@ -38,6 +38,12 @@ Mesmo formato do russo: 4 sessões de ~30 min por aula, explicação em portugu�
 | **28** | Infinitivo com «zu» | um … zu; zu + infinitivo |
 | **29** | Conectores | aber, denn, deshalb, trotzdem, außerdem |
 | **30** | Revisão e prova final | Mapa de revisão, erros comuns, prova |
+
+## Calibração com os livros de referência
+Foram lidos, só como referência de ordem e de nível, os sumários de «Begegnungen A1+ e A2+» (Schubert), «Alemão para autodidatas, níveis A e B» (Steffler) e «Der Ausländer» (Fonseca). Nada foi copiado: textos, diálogos e exercícios do site são escritos à parte.
+- **A1+ (Begegnungen):** apresentação → local de trabalho (können, negação) → cidade e hotel (acusativo, möchte) → comida → dia a dia (separáveis, Perfekt, müssen/sollen) → viagens (wollen, imperativo, dativo) → moradia (dativo, Wechselpräpositionen, comparativo) → eventos (werden, Präteritum dos modais).
+- **A2+:** Perfekt, reflexivos, Genitiv → Präteritum → weil, wenn, Konjunktiv II → Nebensätze → Adjektivdeklination, obwohl → Relativsätze, Komparation → als/wenn, infinitivo com zu, deshalb/trotzdem → Passiv, um … zu.
+O plano acima já cobre esse caminho. Ajustes feitos: «können» e «möchten» entram cedo (aulas 7 e 14), a Declinação-N (Junge, Herr, Student) vai para a aula 12 ou 13, perguntas indiretas e wenn × als × ob para a aula 19, verbos com preposição para a aula 25 ou 26, «um … zu» e «damit» para a aula 28. Fica para um «Alemão 2» (B1/B2): passiva completa, Plusquamperfekt, Futur II, Partizip I, partículas discursivas.
 
 ## Princípios (os mesmos do russo)
 1. Português primeiro; termo alemão depois.

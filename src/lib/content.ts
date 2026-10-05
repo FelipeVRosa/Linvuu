@@ -1,6 +1,7 @@
 import trilhaJson from '../../content/trilha-100-dias.json';
 import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
+import type { InfoAula, SessaoAula } from './aulas';
 
 export type StatusCurso = 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
@@ -14,10 +15,13 @@ export interface Fase { id: number; titulo: string; nivel: Nivel; resumo: string
 export interface DiaMestre { dia: number; fase: number; nivel: Nivel; titulo: string; objetivo: string }
 export interface Aula extends DiaMestre {
   idioma: string; status: StatusAula;
-  comeceAqui: { status: string; audio: string | null; palavras: unknown[] };
-  imersao: { status: string; texto: string | null; audio: string | null; vocabulario: unknown[] };
-  pratica: { status: string; exercicios: unknown[] };
-  videoApoio: { status: string; url: string | null; motivo: string | null };
+  /** Dias em sessões (aulas escritas): trazem a aula e a sessão. Dias planejados trazem as três camadas vazias. */
+  aula?: InfoAula;
+  sessao?: SessaoAula;
+  comeceAqui?: { status: string; audio: string | null; palavras: unknown[] };
+  imersao?: { status: string; texto: string | null; audio: string | null; vocabulario: unknown[] };
+  pratica?: { status: string; exercicios: unknown[] };
+  videoApoio?: { status: string; url: string | null; motivo: string | null };
   responsavel: string | null;
 }
 
@@ -40,14 +44,14 @@ export const NIVEL_CURTO: Record<string, string> = { zero: 'Zero', a1: 'A1', a2:
 export const STATUS_CURSO: Record<StatusCurso, string> = { 'em-producao': 'Em produção', 'em-breve': 'Em breve', 'em-planejamento': 'Em planejamento' };
 export const STATUS_AULA: Record<StatusAula, string> = { planejada: 'Planejada', 'em-producao': 'Em produção', publicada: 'Publicada' };
 
-/** Dia sugerido para começar conforme o nível. O teto da trilha de 100 dias é B1. */
+/** Dia sugerido para começar conforme o nível. A trilha é para iniciantes. */
 export const INICIO_POR_NIVEL: Record<string, { dia: number; aviso?: string }> = {
   zero: { dia: 1 },
   a1: { dia: 11 },
   a2: { dia: 31 },
   b1: { dia: 61 },
-  b2: { dia: 91, aviso: 'Esta trilha de 100 dias termina em B1. Comece pelo dia 91 e fique de olho nas trilhas avançadas, que ainda estão em planejamento.' },
-  c1: { dia: 91, aviso: 'Esta trilha de 100 dias termina em B1. Ela serve como revisão para quem já está em C1; as trilhas avançadas ainda estão em planejamento.' },
+  b2: { dia: 91, aviso: 'Esta trilha foi pensada para quem está começando. As trilhas avançadas ainda estão em planejamento; por enquanto, comece pelo dia 91 como revisão.' },
+  c1: { dia: 91, aviso: 'Esta trilha foi pensada para quem está começando e serve só como revisão no seu nível. As trilhas avançadas ainda estão em planejamento.' },
 };
 
 const aulas = import.meta.glob('../../content/idiomas/*/dia-*.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;

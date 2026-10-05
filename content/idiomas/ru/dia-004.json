@@ -4,31 +4,200 @@
   "fase": 1,
   "nivel": "zero",
   "status": "em-producao",
-  "titulo": "Profissão",
-  "objetivo": "Praticar profissões, locais de trabalho e estudo, caso preposicional (в/на) e verbos.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "titulo": "Ouvir antes de falar: Cópula zero e prática",
+  "objetivo": "Aula 1, sessão 4 de 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Ouvir antes de falar",
+    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler 22 palavras e produzir 4 frases.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Cópula zero e prática",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Releia o diálogo da S3 e escreva as 3 primeiras linhas em russo."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Cópula zero: não existe «ser/estar» no presente",
+        "explicacao": "Em russo você diz «Это мама» literalmente «isto mãe». Não existe «é». Nunca diga «Это есть мама».",
+        "exemplos": [
+          {
+            "ru": "Это мама.",
+            "pt": "Isto é a mãe."
+          },
+          {
+            "ru": "Это сок.",
+            "pt": "Isto é suco."
+          },
+          {
+            "ru": "Она мама.",
+            "pt": "Ela é a mãe."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "id": "ru-001-e01",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha a letra inicial.",
+            "audio": "мама",
+            "opcoes": [
+              "А",
+              "М",
+              "О"
+            ],
+            "gabarito": "М",
+            "explicacao": "«мама» começa com М."
+          },
+          {
+            "id": "ru-001-e02",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha a letra inicial.",
+            "audio": "нет",
+            "opcoes": [
+              "Н",
+              "В",
+              "Р"
+            ],
+            "gabarito": "Н",
+            "explicacao": "«нет» começa com Н — parece H latino, mas soa N."
+          },
+          {
+            "id": "ru-001-e03",
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra parece B mas soa V?",
+            "opcoes": [
+              "Б",
+              "В",
+              "Ь"
+            ],
+            "gabarito": "В",
+            "explicacao": "«В» (ve) soa V em «вот»."
+          },
+          {
+            "id": "ru-001-e04",
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Это есть мама",
+              "Это мама",
+              "Мама есть это"
+            ],
+            "gabarito": "Это мама",
+            "explicacao": "Não existe «есть» para «é»."
+          },
+          {
+            "id": "ru-001-e05",
+            "tipo": "fill-gap",
+            "enunciado": "— Кто это? — Это ___.",
+            "opcoes": [
+              "мама",
+              "как",
+              "сок"
+            ],
+            "gabarito": "мама",
+            "explicacao": "«Кто это?» → «Это мама»."
+          },
+          {
+            "id": "ru-001-e06",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Esta é a mãe.»",
+            "opcoes": [
+              "мама",
+              "Это"
+            ],
+            "gabarito": "Это мама.",
+            "explicacao": "Sujeito antes: Это + мама."
+          },
+          {
+            "id": "ru-001-e07",
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «obrigado»?",
+            "opcoes": [
+              "Спасибо",
+              "Пока",
+              "Привет"
+            ],
+            "gabarito": "Спасибо",
+            "explicacao": "«Спасибо» = obrigado."
+          },
+          {
+            "id": "ru-001-e08",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "не за что",
+            "respostaEsperada": "не за что",
+            "explicacao": "«Не за что» = de nada."
+          },
+          {
+            "id": "ru-001-e09",
+            "tipo": "multiple-choice",
+            "enunciado": "Qual significa «suco»?",
+            "opcoes": [
+              "сор",
+              "сок",
+              "вот"
+            ],
+            "gabarito": "сок",
+            "explicacao": "«Сок» = suco. «Сор» = lixo."
+          },
+          {
+            "id": "ru-001-e10",
+            "tipo": "fill-gap",
+            "enunciado": "— Как дела? — ___, спасибо.",
+            "opcoes": [
+              "Хорошо",
+              "Нет",
+              "Кто"
+            ],
+            "gabarito": "Хорошо",
+            "explicacao": "«Хорошо, спасибо» = Bem, obrigado."
+          },
+          {
+            "id": "ru-001-e11",
+            "tipo": "multiple-choice",
+            "enunciado": "«Нормально» significa:",
+            "opcoes": [
+              "Normal (estranho)",
+              "Tudo bem",
+              "Mal"
+            ],
+            "gabarito": "Tudo bem",
+            "explicacao": "«Нормально» = tudo bem, ok. Não é «anormal»."
+          },
+          {
+            "id": "ru-001-e12",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Ela é a mãe.»",
+            "opcoes": [
+              "мама",
+              "Она"
+            ],
+            "gabarito": "Она мама.",
+            "explicacao": "Sem «é»: Она + мама."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Grave-se: «Кто это? Это мама. Она мама. Спасибо!»",
+        "exemplo": "Кто это? Это мама. Она мама. Спасибо!"
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Профессия",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 4 · A1",
-  "markdown": "aulas_markdown/aula-04.md",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-001.json",
+  "responsavel": null
 }

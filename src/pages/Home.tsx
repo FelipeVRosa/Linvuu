@@ -1,12 +1,14 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CURSOS, DIAS, FASES, NIVEL_CURTO, NIVEL_LABEL } from '../lib/content';
+import { CURSOS, FASES, NIVEL_CURTO, NIVEL_LABEL } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
 import { Vitrine } from '../components/Vitrine';
 import { Avaliacoes } from '../components/Avaliacoes';
 import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { EQUIPE } from '../config/equipe';
+import aula1 from '../../content/idiomas/ru/aulas/aula-001.json';
+import { ROTULO_BLOCO } from '../lib/aulas';
 import { usePageTitle } from '../lib/usePageTitle';
 
 const IDIOMAS = CURSOS.filter((c) => c.area === 'idiomas');
@@ -40,7 +42,7 @@ export default function Home() {
           <div className="hero-main">
             <span className="hero-kicker">Idiomas e STEM</span>
             <h1 className="hero-h1">100 dias rumo à proficiência.</h1>
-            <p className="hero-sub">Quinze minutos por dia: ouça, leia, mergulhe no idioma e pratique com feedback. Do primeiro dia à autonomia, com pessoas reais do outro lado.</p>
+            <p className="hero-sub">Sessões de cerca de 30 minutos: ouça, leia, mergulhe no idioma e pratique com feedback. Do primeiro dia à autonomia, com pessoas reais do outro lado.</p>
             <form className="hero-search" onSubmit={buscar}>
               <div className="search-field">
                 <label htmlFor="tgt-lang">Quero aprender</label>
@@ -65,16 +67,16 @@ export default function Home() {
             </form>
           </div>
 
-          <aside className="hoje" aria-label="Exemplo de um dia da trilha">
-            <span className="hoje-kicker">Dia 1 de 100</span>
-            <h2>{DIAS[0].titulo}</h2>
-            <p>{DIAS[0].objetivo}</p>
+          <aside className="hoje" aria-label="Exemplo de uma sessão">
+            <span className="hoje-kicker">Russo · aula 1, sessão 1 de 4</span>
+            <h2>{aula1.sessoes[0].titulo}</h2>
+            <p>{aula1.titulo}: {aula1.objetivo.charAt(0).toLowerCase() + aula1.objetivo.slice(1)}</p>
             <ol>
-              <li><span>01</span> Comece aqui</li>
-              <li><span>02</span> Imersão</li>
-              <li><span>03</span> Prática</li>
+              {aula1.sessoes[0].blocos.map((b, i) => (
+                <li key={i}><span>{String(i + 1).padStart(2, '0')}</span> {ROTULO_BLOCO[b.tipo as keyof typeof ROTULO_BLOCO]}<small>{b.min} min</small></li>
+              ))}
             </ol>
-            <span className="hoje-meta">15 minutos</span>
+            <span className="hoje-meta">{aula1.sessoes[0].duracaoMin} minutos</span>
           </aside>
         </div>
       </section>
@@ -89,7 +91,7 @@ export default function Home() {
             <Link to="/cursos?area=idiomas" className="area-card area-idiomas">
               <span className="area-icone"><IconeIdiomas size={30} /></span>
               <h3>Idiomas</h3>
-              <p>Russo, alemão, inglês, espanhol, francês e português. Seis trilhas de 100 dias, do zero a uma base B1.</p>
+              <p>Russo, alemão, inglês, espanhol, francês e português. Seis trilhas de 100 dias, todas começando do zero.</p>
               <span className="area-ver">Ver idiomas →</span>
             </Link>
             <Link to="/cursos?area=stem" className="area-card area-stem">
@@ -136,8 +138,8 @@ export default function Home() {
         <section className="section" aria-labelledby="h-metodo">
           <div className="section-head">
             <span className="section-kicker">Método</span>
-            <h2 className="section-h2" id="h-metodo">Três camadas, <em>um dia</em></h2>
-            <p className="section-sub">Toda aula segue a mesma estrutura: ouvir e ler, mergulhar, praticar. Vídeos de apoio entram só onde os alunos mais erram.</p>
+            <h2 className="section-h2" id="h-metodo">Três momentos, <em>uma sessão</em></h2>
+            <p className="section-sub">Toda sessão segue a mesma estrutura: ouvir e ler, mergulhar, praticar. Vídeos de apoio entram só onde os alunos mais erram.</p>
           </div>
           <div className="method-grid">
             {METODO.map((m) => (

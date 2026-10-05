@@ -29,7 +29,7 @@ export default function Curso() {
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>3 camadas por dia</span><span>Do zero ao B1</span></>}
+            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> 100 dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} aulas publicadas</span>}
           </div>
         </div>

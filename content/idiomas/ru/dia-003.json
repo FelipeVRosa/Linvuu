@@ -4,31 +4,77 @@
   "fase": 1,
   "nivel": "zero",
   "status": "em-producao",
-  "titulo": "Minha família",
-  "objetivo": "Praticar membros da família, estrutura \"У меня есть...\" e plurais.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "titulo": "Ouvir antes de falar: Primeiro diálogo",
+  "objetivo": "Aula 1, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Ouvir antes de falar",
+    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler 22 palavras e produzir 4 frases.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Primeiro diálogo",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Ouça e escolha: «сок» / «сор» / «вот». Identifique qual palavra ouviu."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 15,
+        "titulo": "Кто это? / Quem é este?",
+        "contexto": "Duas pessoas olham uma foto de família.",
+        "linhas": [
+          {
+            "personagem": "Анна",
+            "ru": "— Кто это?",
+            "pt": "— Quem é este?",
+            "audio": "Кто это?"
+          },
+          {
+            "personagem": "Том",
+            "ru": "— Это мама.",
+            "pt": "— Esta é a mãe.",
+            "audio": "Это мама."
+          },
+          {
+            "personagem": "Анна",
+            "ru": "— А кто она?",
+            "pt": "— E quem é ela?",
+            "audio": "А кто она?"
+          },
+          {
+            "personagem": "Том",
+            "ru": "— Она мама. Вот сок.",
+            "pt": "— Ela é a mãe. Aqui está o suco.",
+            "audio": "Она мама. Вот сок."
+          },
+          {
+            "personagem": "Анна",
+            "ru": "— А, вот кто! Спасибо!",
+            "pt": "— Ah, então é quem! Obrigada!",
+            "audio": "А, вот кто! Спасибо!"
+          },
+          {
+            "personagem": "Том",
+            "ru": "— Нет, не за что.",
+            "pt": "— Não, de nada.",
+            "audio": "Нет, не за что."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 10,
+        "enunciado": "Ouça o diálogo completo e repita imitando a entonação. Depois responda em russo: «Кто это?»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Моя семья",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 3 · A1",
-  "markdown": "aulas_markdown/aula-03.md",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-001.json",
+  "responsavel": null
 }

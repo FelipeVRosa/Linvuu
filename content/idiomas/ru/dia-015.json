@@ -3,31 +3,99 @@
   "dia": 15,
   "fase": 2,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Saúde e no médico",
-  "objetivo": "Praticar partes do corpo e sintomas (у меня болит...).",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "em-producao",
+  "titulo": "Ler é fácil: Diálogo sobre objetos + texto",
+  "objetivo": "Aula 4, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 4,
+    "titulo": "Ler é fácil",
+    "objetivo": "Ler 25 palavras novas em voz alta e entender frases completas sem cópula.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Diálogo sobre objetos + texto",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva 5 frases com «Это + substantivo»."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 12,
+        "titulo": "Что это? / O que é isto?",
+        "contexto": "Duas amigas olham fotos e objetos em uma mesa.",
+        "linhas": [
+          {
+            "personagem": "Лена",
+            "ru": "— Что это?",
+            "pt": "— O que é isto?",
+            "audio": "Что это?"
+          },
+          {
+            "personagem": "Оля",
+            "ru": "— Это книга.",
+            "pt": "— Isto é um livro.",
+            "audio": "Это книга."
+          },
+          {
+            "personagem": "Лена",
+            "ru": "— А это?",
+            "pt": "— E isto?",
+            "audio": "А это?"
+          },
+          {
+            "personagem": "Оля",
+            "ru": "— Это ручка и машина.",
+            "pt": "— Isto é uma caneta e um carro.",
+            "audio": "Это ручка и машина."
+          },
+          {
+            "personagem": "Лена",
+            "ru": "— А кто это?",
+            "pt": "— E quem é este?",
+            "audio": "А кто это?"
+          },
+          {
+            "personagem": "Оля",
+            "ru": "— Это кот и собака.",
+            "pt": "— É um gato e um cachorro.",
+            "audio": "Это кот и собака."
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 8,
+        "titulo": "Мой дом / Minha casa",
+        "ru": "Это мой дом. Он большой и красивый. Вот окно. Это моё окно. А это стол и стул. Это моя книга и ручка. Вот моя машина. Она маленькая, но красивая.",
+        "pt": "Esta é minha casa. Ela é grande e bonita. Eis a janela. Esta é minha janela. E esta é a mesa e a cadeira. Este é meu livro e minha caneta. Eis meu carro. Ele é pequeno, mas bonito.",
+        "perguntas": [
+          {
+            "pergunta": "Какой дом?",
+            "resposta": "Большой и красивый"
+          },
+          {
+            "pergunta": "Что это?",
+            "resposta": "Это стол и стул"
+          },
+          {
+            "pergunta": "Какая машина?",
+            "resposta": "Маленькая, но красивая"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Leia o texto em voz alta. Depois descreva 3 objetos da sua casa em russo."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Здоровье и у врача",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 15 · A2",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-004.json",
+  "responsavel": null
 }

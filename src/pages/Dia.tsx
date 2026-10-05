@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
+import { Sessao } from '../components/Sessao';
 import { usePageTitle } from '../lib/usePageTitle';
 import NaoEncontrada from './NaoEncontrada';
 
@@ -40,31 +41,36 @@ export default function Dia() {
       {aula && (
         <>
           <header>
-            <span className="kicker-pagina">Dia {dia} de 100 · {fase?.titulo} · {NIVEL_LABEL[aula.nivel]}</span>
+            <span className="kicker-pagina">
+              {aula.aula ? `Aula ${aula.aula.numero} · sessão ${aula.sessao?.sessao.replace('S', '')} de ${aula.aula.sessoes} · ${aula.sessao?.duracaoMin} min` : `Dia ${dia} de 100 · ${fase?.titulo} · ${NIVEL_LABEL[aula.nivel]}`}
+            </span>
             <h1 className="pagina-h1">{aula.titulo}</h1>
-            <p className="lead">Ao final do dia: {aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}</p>
+            <p className="lead">{aula.aula ? `Objetivo da aula: ${aula.aula.objetivo}` : `Ao final do dia: ${aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}`}</p>
             <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>
           </header>
 
           {aula.status !== 'publicada' && (
             <p className="nota">
-              Esta aula de {curso!.nome} ainda não foi publicada.{' '}
-              {aula.imersao.status === 'legado'
-                ? 'O conteúdo já está escrito e será levado para o player da Linvuu.'
-                : 'O objetivo do dia já está definido; o áudio, o texto e os exercícios estão em produção.'}
+              {aula.sessao
+                ? 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão e a voz nativa está em gravação (por enquanto o áudio usa a voz do seu navegador).'
+                : `Esta aula de ${curso!.nome} ainda não foi publicada. O objetivo do dia já está definido; o áudio, o texto e os exercícios estão em produção.`}
             </p>
           )}
 
-          <div className="camadas">
-            {CAMADAS.map((c, i) => (
-              <section key={c.k} className="camada">
-                <span className="method-num">0{i + 1}</span>
-                <h2>{c.t}</h2>
-                <p>{c.d}</p>
-                <span className="camada-status">{aula[c.k].status === 'pendente' ? 'Em breve' : aula[c.k].status === 'legado' ? 'Escrita, em migração' : 'Disponível'}</span>
-              </section>
-            ))}
-          </div>
+          {aula.sessao ? (
+            <Sessao key={dia} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < 100 ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+          ) : (
+            <div className="camadas">
+              {CAMADAS.map((c, i) => (
+                <section key={c.k} className="camada">
+                  <span className="method-num">0{i + 1}</span>
+                  <h2>{c.t}</h2>
+                  <p>{c.d}</p>
+                  <span className="camada-status">{aula[c.k]?.status === 'legado' ? 'Escrita, em migração' : 'Em breve'}</span>
+                </section>
+              ))}
+            </div>
+          )}
 
           <nav className="dia-nav" aria-label="Navegar entre dias">
             {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>← Dia {dia - 1}</Link> : <span />}

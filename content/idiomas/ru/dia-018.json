@@ -3,31 +3,137 @@
   "dia": 18,
   "fase": 2,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Festas e presentes",
-  "objetivo": "Praticar caso Dativo (кому?) e felicitações.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "em-producao",
+  "titulo": "Este é meu amigo: Adjetivos possessivos e prática",
+  "objetivo": "Aula 5, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 5,
+    "titulo": "Este é meu amigo",
+    "objetivo": "Usar possessivos (мой/моя/моё/мои) e género dos substantivos na prática.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Adjetivos possessivos e prática",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva: мой друг, моя подруга, моё окно."
+      },
+      {
+        "tipo": "palavras",
+        "min": 10,
+        "itens": [
+          {
+            "ru": "хороший",
+            "translit": "kharóshiy",
+            "pt": "bom",
+            "en": "good (m)",
+            "audio": "хороший"
+          },
+          {
+            "ru": "хорошая",
+            "translit": "kharóshaya",
+            "pt": "boa",
+            "en": "good (f)",
+            "audio": "хорошая"
+          },
+          {
+            "ru": "новый",
+            "translit": "nóvyi",
+            "pt": "novo",
+            "en": "new (m)",
+            "audio": "новый"
+          },
+          {
+            "ru": "новая",
+            "translit": "nóvaya",
+            "pt": "nova",
+            "en": "new (f)",
+            "audio": "новая"
+          },
+          {
+            "ru": "старый",
+            "translit": "stáryi",
+            "pt": "velho",
+            "en": "old (m)",
+            "audio": "старый"
+          },
+          {
+            "ru": "старая",
+            "translit": "stáraya",
+            "pt": "velha",
+            "en": "old (f)",
+            "audio": "старая"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "id": "ru-005-e01",
+            "tipo": "multiple-choice",
+            "enunciado": "«Это ___ подруга.»",
+            "opcoes": [
+              "мой",
+              "моя",
+              "моё"
+            ],
+            "gabarito": "моя",
+            "explicacao": "«Подруга» feminino."
+          },
+          {
+            "id": "ru-005-e02",
+            "tipo": "multiple-choice",
+            "enunciado": "«Это ___ друг.»",
+            "opcoes": [
+              "мой",
+              "моя",
+              "моё"
+            ],
+            "gabarito": "мой",
+            "explicacao": "«Друг» masculino."
+          },
+          {
+            "id": "ru-005-e03",
+            "tipo": "fill-gap",
+            "enunciado": "Это ___ собака.",
+            "opcoes": [
+              "мой",
+              "моя",
+              "моё"
+            ],
+            "gabarito": "моя",
+            "explicacao": "«Собака» feminino (mesmo em PT sendo «o cachorro»)."
+          },
+          {
+            "id": "ru-005-e04",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "моя подруга",
+            "opcoes": [
+              "моя подруга",
+              "мой друг",
+              "моё окно"
+            ],
+            "gabarito": "моя подруга",
+            "explicacao": "Concordância feminina."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga em voz alta: «Это мой друг. Это моя подруга. Это моё окно.»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "tituloOriginal": "Праздники и подарки",
-  "fonte": "content/legado/russo-interativo",
-  "origem": "Curso de 30 aulas · aula 18 · A2",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-005.json",
+  "responsavel": null
 }

@@ -62,10 +62,11 @@ Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais lo
 | 33 | Adjetivos 2: depois de ein, mein, kein | no ar |
 | 34 | Adjetivos 3: sem artigo + as três famílias | no ar |
 | 35 | Comparativo e superlativo | no ar |
-| 36 a 37 | Subordinadas: weil, dass, wenn, ob | a escrever |
-| 38 | Verbos reflexivos | a escrever |
-| 39 | Konjunktiv II básico (möchte, würde, könnte, hätte, wäre) | a escrever |
-| 40 | Futur I e werden | a escrever |
+| 36 | Subordinadas 1: weil e dass | no ar |
+| 37 | Subordinadas 2: wenn, ob e perguntas indiretas | no ar |
+| 38 | Verbos reflexivos | no ar |
+| 39 | Konjunktiv II básico (würde, hätte, wäre, könnte) | no ar |
+| 40 | Futur I e werden | no ar |
 | 41 | Genitivo e Declinação-N | a escrever |
 | 42 | Perguntas (welcher, was für ein) e pronomes | a escrever |
 | 43 | Saúde e corpo | a escrever |

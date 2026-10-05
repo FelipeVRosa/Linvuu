@@ -2,29 +2,198 @@
   "idioma": "de",
   "dia": 98,
   "fase": 10,
-  "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Autoavaliação",
-  "objetivo": "Mapear o que já domina e o que falta.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Os quatro casos: nominativo, acusativo, dativo e genitivo: O quadro dos artigos",
+  "objetivo": "Aula 25, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 25,
+    "titulo": "Os quatro casos: nominativo, acusativo, dativo e genitivo",
+    "objetivo": "Entender o que são os quatro casos do alemão (Nominativ, Akkusativ, Dativ, Genitiv), ler o quadro completo dos artigos e usar os pronomes pessoais no nominativo, acusativo e dativo.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "O quadro dos artigos",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "wer",
+            "translit": "ver",
+            "pt": "quem (sujeito)",
+            "en": "who",
+            "audio": "wer"
+          },
+          {
+            "ru": "wen",
+            "translit": "ven",
+            "pt": "quem (objeto direto)",
+            "en": "whom",
+            "audio": "wen"
+          },
+          {
+            "ru": "wem",
+            "translit": "vem",
+            "pt": "a quem",
+            "en": "to whom",
+            "audio": "wem"
+          },
+          {
+            "ru": "wessen",
+            "translit": "véssen",
+            "pt": "de quem",
+            "en": "whose",
+            "audio": "wessen"
+          },
+          {
+            "ru": "der Name",
+            "translit": "der náme",
+            "pt": "nome",
+            "en": "name",
+            "audio": "der Name"
+          },
+          {
+            "ru": "das Kind",
+            "translit": "das kint",
+            "pt": "criança",
+            "en": "child",
+            "audio": "das Kind"
+          },
+          {
+            "ru": "die Eltern",
+            "translit": "di éltern",
+            "pt": "pais",
+            "en": "parents",
+            "audio": "die Eltern"
+          },
+          {
+            "ru": "das Auto",
+            "translit": "das áuto",
+            "pt": "carro",
+            "en": "car",
+            "audio": "das Auto"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "O quadro completo dos artigos",
+        "explicacao": "Este é o quadro que organiza tudo. Três atalhos: (1) o FEMININO e o PLURAL quase não mudam; só mudam no dativo e no genitivo. (2) O NEUTRO é igual ao nominativo no acusativo, e igual ao masculino no dativo e no genitivo. (3) No acusativo só o masculino muda. Outros detalhes: no genitivo, o substantivo masculino e neutro ganha -s ou -es («des Mannes», «des Kindes»); no dativo plural, o substantivo ganha -n («den Kindern»), exceto se já termina em -n ou -s.",
+        "exemplos": [
+          {
+            "ru": "Der Mann gibt dem Kind einen Apfel.",
+            "pt": "O homem dá uma maçã à criança."
+          },
+          {
+            "ru": "Die Frau hilft der Nachbarin.",
+            "pt": "A mulher ajuda a vizinha."
+          },
+          {
+            "ru": "Das ist das Auto des Lehrers.",
+            "pt": "Este é o carro do professor."
+          }
+        ],
+        "tabelas": [
+          {
+            "titulo": "Artigo definido (der, die, das)",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "der",
+                "feminino": "die",
+                "neutro": "das",
+                "plural": "die"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "den",
+                "feminino": "die",
+                "neutro": "das",
+                "plural": "die"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "dem",
+                "feminino": "der",
+                "neutro": "dem",
+                "plural": "den (+n)"
+              },
+              {
+                "caso": "Genitiv",
+                "masculino": "des (+s)",
+                "feminino": "der",
+                "neutro": "des (+s)",
+                "plural": "der"
+              }
+            ]
+          },
+          {
+            "titulo": "Artigo indefinido (ein, eine) e mein, dein, kein...",
+            "linhas": [
+              {
+                "caso": "Nominativ",
+                "masculino": "ein",
+                "feminino": "eine",
+                "neutro": "ein",
+                "plural": "— / keine"
+              },
+              {
+                "caso": "Akkusativ",
+                "masculino": "einen",
+                "feminino": "eine",
+                "neutro": "ein",
+                "plural": "— / keine"
+              },
+              {
+                "caso": "Dativ",
+                "masculino": "einem",
+                "feminino": "einer",
+                "neutro": "einem",
+                "plural": "— / keinen (+n)"
+              },
+              {
+                "caso": "Genitiv",
+                "masculino": "eines (+s)",
+                "feminino": "einer",
+                "neutro": "eines (+s)",
+                "plural": "— / keiner"
+              }
+            ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "mit der Kind",
+            "certo": "mit dem Kind",
+            "motivo": "«Kind» é neutro: dativo «dem»."
+          },
+          {
+            "errado": "das Auto der Mann",
+            "certo": "das Auto des Mannes",
+            "motivo": "Posse: genitivo, e o substantivo ganha -es."
+          }
+        ],
+        "tag": "Casos"
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Leia o quadro dos artigos em voz alta, por coluna: «der, den, dem, des; die, die, der, der; das, das, dem, des»."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva de memória o artigo definido no nominativo e no acusativo, nos quatro gêneros."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-025.json",
+  "responsavel": null
 }

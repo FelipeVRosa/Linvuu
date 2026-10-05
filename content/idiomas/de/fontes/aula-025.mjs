@@ -1,9 +1,9 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 11, titulo: 'Gramática: os quatro casos', nivel: 'a1',
+  idioma: 'de', numero: 25, titulo: 'Os quatro casos: nominativo, acusativo, dativo e genitivo', nivel: 'a2',
   objetivo: 'Entender o que são os quatro casos do alemão (Nominativ, Akkusativ, Dativ, Genitiv), ler o quadro completo dos artigos e usar os pronomes pessoais no nominativo, acusativo e dativo.',
-  nota: 'Você tem o quadro dos quatro casos. Próxima aula: o dativo.',
+  nota: 'Você tem o quadro dos quatro casos. Próximas aulas: o dativo, em passos pequenos.',
   sessoes: [
     sessao('S1', 'O que é um caso', [
       revisao(5, 'Escreva 4 frases com objeto direto (acusativo): «Ich esse den Käse…».'),

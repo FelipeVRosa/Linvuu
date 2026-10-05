@@ -425,3 +425,50 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .concluida{padding:14px 20px;background:var(--ok-bg);color:var(--ok);border-radius:var(--r-sm);font-weight:600}
 .concluida a{text-decoration:underline;margin-left:6px}
 @media(max-width:760px){.dialogo li{grid-template-columns:1fr auto}.dialogo .quem{grid-column:1/-1}.bloco{padding:18px}}
+
+.ainda{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:var(--r-pill);background:var(--warn-bg);color:var(--warn);font-size:12px;font-weight:700}
+
+/* ===== Barra do topo (estilo sites de idiomas europeus) ===== */
+.barra-topo{background:#fff;border-bottom:1px solid var(--border);font-size:13px}
+.barra-topo-in{max-width:1320px;margin:0 auto;padding:6px var(--pad);display:flex;justify-content:flex-end;align-items:center;gap:22px}
+.barra-topo a{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--text)}
+.barra-topo a:hover{text-decoration:underline}
+.barra-idiomas{display:flex;gap:2px;margin-right:auto}
+.barra-idioma{padding:6px 12px;border:0;background:transparent;font-weight:700;cursor:pointer;color:var(--text)}
+.barra-idioma:hover{background:var(--surface)}
+@media(max-width:760px){.barra-topo{display:none}}
+
+/* ===== Hero: nota e faixa de provas ===== */
+.hero-nota{margin-top:14px;font-size:14px;color:#aab4bb}
+.prova{background:#fff;border-bottom:1px solid var(--border)}
+.prova-grade{max-width:var(--max);margin:0 auto;padding:28px var(--pad);display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.prova-grade li{display:flex;flex-direction:column;gap:4px;padding-left:16px;border-left:4px solid var(--accent)}
+.prova-grade strong{font-size:17px;letter-spacing:-.01em}
+.prova-grade span{font-size:14px;color:var(--muted)}
+@media(max-width:960px){.prova-grade{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.prova-grade{grid-template-columns:1fr}}
+
+/* ===== Newsletter e rodapé ===== */
+.foot-news{background:var(--ink);color:#fff}
+.foot-news-in{max-width:var(--max);margin:0 auto;padding:36px var(--pad);display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:center}
+.foot-news h2{font-size:24px;font-weight:800;letter-spacing:-.02em}
+.foot-news p{color:#c8d0d6;margin-top:4px}
+.news-linha{display:flex;gap:10px}
+.news-linha input{flex:1;min-width:0;padding:13px 18px;border-radius:var(--r-pill);border:1.5px solid #fff3;background:#fff;font-size:15px}
+.news-aceite{margin-top:10px;color:#c8d0d6;font-size:13px}
+.news-aceite a{text-decoration:underline;color:#fff}
+.news-ok{padding:14px 18px;border-radius:var(--r-sm);background:var(--ok-bg);color:var(--ok);font-weight:600}
+.news-nota a{text-decoration:underline;color:#fff;font-weight:600}
+.foot-news .conta-erro{margin-top:10px}
+.foot-legal{display:flex;gap:18px}
+.foot-legal a:hover,.foot-base a:hover{text-decoration:underline}
+@media(max-width:760px){.foot-news-in{grid-template-columns:1fr}.news-linha{flex-direction:column}}
+
+/* ===== Páginas legais e aceite do cadastro ===== */
+.texto-legal{max-width:760px}
+.texto-legal h2{font-size:20px;font-weight:700;margin:28px 0 8px}
+.texto-legal p,.texto-legal li{color:var(--muted);margin-bottom:8px}
+.texto-legal ul{list-style:disc;padding-left:22px}
+.texto-legal a{text-decoration:underline;color:var(--text)}
+.conta-aceite{font-size:13px;color:var(--faint);text-align:center}
+.conta-aceite a{text-decoration:underline;color:var(--text)}

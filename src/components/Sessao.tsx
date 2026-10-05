@@ -22,7 +22,7 @@ function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
       {unicos.map((p) => (
         <li key={p.ru}>
           <div><strong lang={idioma} className="ru">{p.ru}</strong><span className="translit">{p.translit}</span></div>
-          <div className="trad">{p.pt}{p.en && <small> · {p.en}</small>}</div>
+          <div className="trad">{p.pt}{p.en && <small> · {p.en}</small>}{p.ainda && <span className="ainda" title={`Tem letras que você ainda vai aprender (${p.ainda.join(', ')}). Por enquanto, ouça e repita.`}>ouça e repita</span>}</div>
           <Audio texto={p.audio ?? p.ru} idioma={idioma} />
         </li>
       ))}

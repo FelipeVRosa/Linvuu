@@ -77,9 +77,9 @@ for (const r of resumo) p(`| ${r.aula} | ${r.titulo} | ${r.letras} | ${r.palavra
 p(`| **Total** | | ${resumo.reduce((x, r) => x + r.letras, 0)} | ${resumo.reduce((x, r) => x + r.palavras, 0)} | ${resumo.reduce((x, r) => x + r.falas, 0)} | ${resumo.reduce((x, r) => x + r.exerc, 0)} | ${resumo.reduce((x, r) => x + r.declarado, 0)} | ${resumo.reduce((x, r) => x + r.blocos, 0)} |`);
 p('');
 if (id === 'ru') {
-  p('## 1. O alfabeto não fecha');
+  p('## 1. Alfabeto');
   p(`O russo tem 33 letras. As aulas ensinam **${ensinadas.size}**. ${faltantes.length ? `**Faltam: ${faltantes.join(', ')}.**` : 'Alfabeto completo.'}`);
-  p('A aula 3 promete "fechar o alfabeto cirílico", mas só fecha com У e Х.');
+  if (faltantes.length) p('A aula 3 promete "fechar o alfabeto cirílico", mas só fecha com as letras que faltam.');
   p('');
   p('## 2. Palavras usam letras que ainda não foram ensinadas');
   p('Para cada sessão: palavras (de palavras, diálogos, textos e exemplos de letras) com alguma letra que o aluno ainda não viu.');
@@ -110,22 +110,24 @@ if (id === 'ru') {
   p('');
   p('## 7. Achados de leitura (não automáticos)');
   [
-    'Aula 4 testa concordância de gênero (новый/новая/новое, старая nos exercícios e07, e09 e e11) e usa мой/моя/моё no texto, mas o gênero só é explicado na aula 5, sessão 1.',
-    'Transliteração de «что» e «не за что» como "chto" e "nié za chto": em russo «что» soa "shto". A grafia engana o aluno.',
     'Aula 1, S3: o diálogo soa pouco natural em russo («Она мама» repete «Это мама»; «А, вот кто!» e «Нет, не за что» não são naturais). Vale revisão de um falante nativo.',
-    'Aulas 1 e 4: «Nunca use есть» é forte demais. Em contexto formal e em definições «есть» aparece. Sugestão: "no dia a dia, não use".',
     'Aula 3, S3: o texto «На уроке» usa vocabulário não ensinado (преподаватель, входит, класс, студентка, говорит, отвечает). Com tradução funciona, mas pesa para a aula 3.',
-    'Aula 5, S1: «мои друзья» mostra plural irregular (друг → друзья) sem aviso.',
+    'Aula 5, S1: «мои друзья» mostra plural irregular (друг → друзья) sem aviso; a aula 6 só explica isso depois.',
     'Aula 5, S2 tem 6 palavras e 4 exercícios; as outras sessões têm de 10 a 20 itens. A carga fica desigual.',
-    'Aula 1, S1: a introdução promete 8 palavras; a lista tem 7 diferentes (мама repetida).',
-    'Aula 6: o bloco de palavras se chama "vocabulario" (nas aulas 1 a 5 é "palavras") e as tabelas de gramática usam colunas diferentes (pronome/forma, singular/plural). Falta um contrato único de esquema.',
-    'Aula 6: «родители» está nas duas listas de palavras (S1 e S2).',
-    'Aula 6, exercício e07: «ребята» é um distrator arriscado, porque no russo falado também significa "crianças/pessoal". Troque por uma forma que não exista.',
-    'Aula 6, exercício e11 explica «в + preposicional», que não foi ensinado em nenhuma aula anterior.',
-    'Aula 6: ensina «У меня есть» mas não «У меня нет» (não tenho). O aluno só consegue afirmar; a negação precisa vir logo depois.',
-    'Aula 6: as formas «него, неё, них» ganham um «н-» depois de «у». A tabela mostra, mas não explica.',
-    'Aula 6: «Não existe verbo ter» é uma simplificação: «иметь» existe, só é raro na fala.',
+    'Aula 6 ensina «У меня есть» mas não «У меня нет» (não tenho). A negação precisa vir logo na aula 7.',
+    'Palavras com letras ainda não ensinadas continuam existindo nas aulas 1 a 3 (frases prontas como «спасибо», «хорошо»). O site as marca com "ouça e repita"; vale decidir se ficam assim ou se ganham uma aula de leitura.',
   ].forEach((t) => p(`- ${t}`));
+  p('');
+  p('### Resolvidos na rodada 6');
+  [
+    'Alfabeto completo: У e Х entraram no grupo 2 da aula 1 («falsas amigas»); as 33 letras fecham na aula 3.',
+    'Objetivos com números reais (12 letras e 19 palavras na aula 1; 20 palavras na aula 4).',
+    'Minutos das sessões batem com a duração declarada (aulas 1 e 6).',
+    'Gênero explicado na aula 4 (bloco novo) antes de ser cobrado; ortografia do Brasil («gênero»).',
+    'Transliteração de «что»: shto. «Nunca use есть» virou "no dia a dia, não use".',
+    'Aula 6: bloco "vocabulario" virou "palavras"; «родители» repetida trocada por «люди»; distrator «ребята» trocado; explicação do «н-» e de «в деревне» ajustadas.',
+  ].forEach((t) => p(`- ${t}`));
+
 }
 const texto = out.join('\n') + '\n';
 if (gravar) { fs.writeFileSync(path.join(raiz, 'docs', `REVISAO-${id.toUpperCase()}-AULAS.md`), texto); console.log('gravado'); } else console.log(texto);

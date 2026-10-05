@@ -21,5 +21,17 @@ service cloud.firestore {
 
       allow delete: if false;
     }
+
+    // Lista de e-mails da newsletter: qualquer visitante pode se inscrever, ninguém pode ler pelo navegador.
+    // (Leia a lista pelo Console do Firebase.)
+    match /newsletter/{id} {
+      allow create: if request.resource.data.keys().hasOnly(['email', 'origem', 'criadoEm'])
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 200
+        && request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+        && request.resource.data.origem is string
+        && request.resource.data.origem.size() <= 40;
+      allow read, update, delete: if false;
+    }
   }
 }

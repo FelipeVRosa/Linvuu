@@ -15,7 +15,19 @@ const escrever = (f, o) => fs.writeFileSync(f, JSON.stringify(o, null, 2) + '\n'
 const arquivos = fs.readdirSync(dirAulas).filter((f) => /^aula-\d+\.json$/.test(f)).sort();
 const aulas = arquivos.map((f) => JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8')));
 
-// 1) um dia por sessão
+// 1) um dia por sessão. Cada palavra recebe `ainda`: letras que o aluno ainda não aprendeu naquele ponto do curso.
+const ensinadas = new Set();
+const letrasDe = (t) => [...t.matchAll(/[А-Яа-яЁё]/g)].map((m) => m[0].toLowerCase());
+const anotar = (sessao) => {
+  const copia = JSON.parse(JSON.stringify(sessao));
+  copia.blocos = copia.blocos.map((b) => {
+    if (b.tipo === 'vocabulario') b.tipo = 'palavras';
+    if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => ensinadas.add(l.maiuscula.toLowerCase())));
+    if (b.tipo === 'palavras') b.itens.forEach((i) => { const f = [...new Set(letrasDe(i.ru))].filter((c) => !ensinadas.has(c)); if (f.length) i.ainda = f.map((c) => c.toUpperCase()); });
+    return b;
+  });
+  return copia;
+};
 let dia = 0;
 const usados = new Set();
 for (const a of aulas) {
@@ -27,7 +39,7 @@ for (const a of aulas) {
       titulo: `${a.titulo}: ${s.titulo}`,
       objetivo: `Aula ${a.aula}, sessão ${i + 1} de ${a.sessoes.length} · ${s.duracaoMin} min`,
       aula: { numero: a.aula, titulo: a.titulo, objetivo: a.objetivo, sessoes: a.sessoes.length, duracaoTotalMin: a.duracaoTotalMin, nivel: a.nivel },
-      sessao: { ...s, blocos: s.blocos.map((b) => (b.tipo === 'vocabulario' ? { ...b, tipo: 'palavras' } : b)) },
+      sessao: anotar(s),
       origem: `content/idiomas/${id}/aulas/${arquivos[a.aula - 1]}`,
       responsavel: null,
     });

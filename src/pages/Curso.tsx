@@ -4,13 +4,15 @@ import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
 import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { usePageTitle } from '../lib/usePageTitle';
+import { JsonLd } from '../components/JsonLd';
+import { SITE_URL } from '../config/site';
 import NaoEncontrada from './NaoEncontrada';
 
 export default function Curso() {
   const { id } = useParams();
   const [params] = useSearchParams();
   const curso = getCurso(id);
-  usePageTitle(curso?.nome);
+  usePageTitle(curso ? `${curso.nome}: curso de ${curso.nome.toLowerCase()} do zero` : undefined, curso?.descricao);
   if (!curso) return <NaoEncontrada />;
 
   const stats = statusDoCurso(curso.id);
@@ -20,6 +22,7 @@ export default function Curso() {
 
   return (
     <div className="pagina">
+      <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: `${curso.nome} (${curso.nomeNativo})`, description: curso.descricao, inLanguage: 'pt-BR', educationalLevel: 'Beginner', provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
       <Navegacao pai="/cursos" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">

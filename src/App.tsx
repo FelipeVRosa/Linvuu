@@ -7,6 +7,8 @@ import Cursos from './pages/Cursos';
 import Curso from './pages/Curso';
 import Dia from './pages/Dia';
 import Conta from './pages/Conta';
+import { Legal } from './pages/Legal';
+import { BarraTopo } from './components/BarraTopo';
 import NaoEncontrada from './pages/NaoEncontrada';
 
 function RolarAoTopo() {
@@ -27,6 +29,7 @@ export default function App() {
     <>
       <a href="#conteudo" className="skip-link">Ir para o conteúdo</a>
       <RolarAoTopo />
+      <BarraTopo />
       <Header />
       <main id="conteudo" tabIndex={-1}>
         <Routes>
@@ -36,6 +39,8 @@ export default function App() {
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
           <Route path="/entrar" element={<Conta modo="entrar" />} />
           <Route path="/cadastro" element={<Conta modo="cadastro" />} />
+          <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
+          <Route path="/termos" element={<Legal tipo="termos" />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </main>

@@ -16,7 +16,7 @@
       "blocos": [
         { "tipo": "revisao", "min": 5, "enunciado": "Escreva: Это мой друг. Это моя подруга. Это моё окно." },
         {
-          "tipo": "vocabulario",
+          "tipo": "palavras",
           "min": 12,
           "itens": [
             { "ru": "семья", "translit": "semiá", "pt": "família", "en": "family", "audio": "семья" },
@@ -37,7 +37,7 @@
           "tipo": "gramatica",
           "min": 8,
           "titulo": "У меня есть = eu tenho",
-          "explicacao": "Não existe verbo «ter». Usa-se «У меня есть» literalmente «junto a mim há». Troque «меня» para outras pessoas.",
+          "explicacao": "Na fala do dia a dia o russo não usa um verbo «ter». Usa-se «У меня есть», literalmente «junto a mim há». Troque «меня» para outras pessoas. Atenção: depois de «у», os pronomes «он», «она» e «они» ganham um «н-»: у него, у неё, у них.",
           "tabela": [
             { "pronome": "я", "forma": "У меня есть", "pt": "Eu tenho" },
             { "pronome": "ты", "forma": "У тебя есть", "pt": "Você tem" },
@@ -58,7 +58,7 @@
       "blocos": [
         { "tipo": "revisao", "min": 5, "enunciado": "Escreva: У меня есть мама. У меня есть папа." },
         {
-          "tipo": "vocabulario",
+          "tipo": "palavras",
           "min": 10,
           "itens": [
             { "ru": "друзья", "translit": "druziá", "pt": "amigos", "en": "friends", "audio": "друзья" },
@@ -68,7 +68,7 @@
             { "ru": "сыновья", "translit": "synoviá", "pt": "filhos (m)", "en": "sons", "audio": "сыновья" },
             { "ru": "дочери", "translit": "dócheri", "pt": "filhas", "en": "daughters", "audio": "дочери" },
             { "ru": "мужья", "translit": "muzhiá", "pt": "maridos", "en": "husbands", "audio": "мужья" },
-            { "ru": "родители", "translit": "radítieli", "pt": "pais", "en": "parents", "audio": "родители" }
+            { "ru": "люди", "translit": "liúdi", "pt": "pessoas", "en": "people", "audio": "люди" }
           ]
         },
         {
@@ -134,7 +134,7 @@
         { "tipo": "revisao", "min": 5, "enunciado": "Escreva 5 frases com «У меня есть»." },
         {
           "tipo": "exercicios",
-          "min": 15,
+          "min": 20,
           "itens": [
             { "id": "ru-006-e01", "tipo": "multiple-choice", "enunciado": "«Eu tenho uma irmã» em russo:", "opcoes": ["У меня есть сестра", "Я имею сестра", "Меня есть сестра"], "gabarito": "У меня есть сестра", "explicacao": "Estrutura У + genitivo + есть." },
             { "id": "ru-006-e02", "tipo": "fill-gap", "enunciado": "— У тебя есть брат? — Да, ___ есть брат.", "opcoes": ["у меня", "меня", "я"], "gabarito": "у меня", "explicacao": "«У меня» = junto a mim." },
@@ -142,11 +142,11 @@
             { "id": "ru-006-e04", "tipo": "sentence-ordering", "enunciado": "Ordene: «Eu tenho mãe e pai.»", "opcoes": ["мама", "и", "папа", "У меня есть"], "gabarito": "У меня есть мама и папа.", "explicacao": "Ordem: У меня есть + lista." },
             { "id": "ru-006-e05", "tipo": "multiple-choice", "enunciado": "«Ele tem esposa» em russo:", "opcoes": ["У него есть жена", "У его есть жена", "Он имеет жена"], "gabarito": "У него есть жена", "explicacao": "«он» vira «него» após «у»." },
             { "id": "ru-006-e06", "tipo": "multiple-choice", "enunciado": "Plural de «друг»:", "opcoes": ["друзья", "други", "другов"], "gabarito": "друзья", "explicacao": "Plural irregular." },
-            { "id": "ru-006-e07", "tipo": "multiple-choice", "enunciado": "Plural de «ребёнок»:", "opcoes": ["дети", "ребёнки", "ребята"], "gabarito": "дети", "explicacao": "Plural supletivo." },
+            { "id": "ru-006-e07", "tipo": "multiple-choice", "enunciado": "Plural de «ребёнок»:", "opcoes": ["дети", "ребёнки", "ребёны"], "gabarito": "дети", "explicacao": "Plural supletivo." },
             { "id": "ru-006-e08", "tipo": "fill-gap", "enunciado": "У меня есть ___. (amiga)", "opcoes": ["подруга", "друг", "подруги"], "gabarito": "подруга", "explicacao": "Feminino singular." },
             { "id": "ru-006-e09", "tipo": "audio-recognition", "enunciado": "Ouça e escreva.", "audio": "У меня есть бабушка и дедушка", "respostaEsperada": "У меня есть бабушка и дедушка", "explicacao": "Frases de família." },
             { "id": "ru-006-e10", "tipo": "multiple-choice", "enunciado": "«У неё есть» significa:", "opcoes": ["Ela tem", "Ele tem", "Nós temos"], "gabarito": "Ela tem", "explicacao": "«неё» = dela." },
-            { "id": "ru-006-e11", "tipo": "sentence-ordering", "enunciado": "Ordene: «Eu tenho uma casa no campo.»", "opcoes": ["дом", "в", "У меня есть", "деревне"], "gabarito": "У меня есть дом в деревне.", "explicacao": "Preposição «в» + preposicional." },
+            { "id": "ru-006-e11", "tipo": "sentence-ordering", "enunciado": "Ordene: «Eu tenho uma casa no campo.»", "opcoes": ["дом", "в", "У меня есть", "деревне"], "gabarito": "У меня есть дом в деревне.", "explicacao": "«В деревне» = no campo. A palavra «деревня» muda de forma depois de «в»; isso será estudado nas próximas aulas." },
             { "id": "ru-006-e12", "tipo": "producao", "enunciado": "Escreva 4 frases sobre sua família usando «У меня есть».", "respostaEsperada": "У меня есть мама. У меня есть папа. У меня есть сестра. У меня есть брат." }
           ]
         },

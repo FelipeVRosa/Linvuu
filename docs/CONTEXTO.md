@@ -23,7 +23,8 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - `content/audio/<id>-gravar.csv`: lista de áudios a gravar (arquivo = hash do texto + .mp3).
 - `content/legado/`: material anterior (alemão: 16 aulas; russo antigo; site estático). Fonte de consulta.
 - `src/`: site (React + Vite). `server.ts`: API (Gemini, Stripe) e serve o `dist/` no Render.
-- `docs/`: este contexto, a análise e o plano, a revisão das aulas, publicar, autenticação.
+- `docs/`: este contexto, a análise e o plano, marketing, internacional, a revisão das aulas, publicar, autenticação, backup.
+- `src/i18n/`: textos do site e idiomas da interface. `scripts/seo.mjs`: sitemap e robots (rodam no build).
 
 ## Comandos
 - `npm run dev`: abre o site local (porta 3000).
@@ -43,7 +44,9 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - Login por e-mail e senha ativo; Google escondido até ser ativado.
 - GitHub Pages foi descartado; hospedagem é o Render.
 
-## Estado (rodada 5)
-- Russo: aulas 1 a 6 (dias 1 a 24) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador).
-- Pendente de revisão: ver `docs/REVISAO-RU-AULAS.md`.
+## Estado (rodada 6)
+- Russo: aulas 1 a 6 (dias 1 a 24) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
+- Marketing reescrito (ver `docs/MARKETING.md`); textos em `src/i18n/pt-BR.ts`; preparação internacional em `docs/INTERNACIONAL.md`.
+- Páginas de termos e privacidade (modelo inicial, precisa de revisão jurídica e dos dados da empresa).
+- Pendente de revisão: ver `docs/REVISAO-RU-AULAS.md` (diálogo da aula 1 com russo pouco natural, negação na aula 7).
 - Progresso por conta (Firestore), áudio nativo, pagamento, termos e privacidade: ainda não feitos.

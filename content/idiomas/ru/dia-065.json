@@ -3,28 +3,143 @@
   "dia": 65,
   "fase": 7,
   "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Contar uma viagem",
-  "objetivo": "Narrar uma viagem com início, meio e fim.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "O passado: Ser e estar no passado",
+  "objetivo": "Aula 17, sessão 1 de 4 · 30 min",
+  "aula": {
+    "numero": 17,
+    "titulo": "O passado",
+    "objetivo": "Contar o que aconteceu: «был, была, было, были» e o passado dos verbos com -л, -ла, -ло, -ли.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Ser e estar no passado",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva 4 frases no presente sobre o que você faz hoje."
+      },
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "раньше",
+            "translit": "ránshe",
+            "pt": "antes, antigamente",
+            "en": "before",
+            "audio": "раньше"
+          },
+          {
+            "ru": "тогда",
+            "translit": "tagdá",
+            "pt": "então, naquela época",
+            "en": "then",
+            "audio": "тогда"
+          },
+          {
+            "ru": "давно",
+            "translit": "davnó",
+            "pt": "há muito tempo",
+            "en": "long ago",
+            "audio": "давно"
+          },
+          {
+            "ru": "недавно",
+            "translit": "nidávna",
+            "pt": "há pouco",
+            "en": "recently",
+            "audio": "недавно"
+          },
+          {
+            "ru": "в прошлом году",
+            "translit": "f próshlam gadú",
+            "pt": "no ano passado",
+            "en": "last year",
+            "audio": "в прошлом году"
+          },
+          {
+            "ru": "на прошлой неделе",
+            "translit": "na próshloi nidiélie",
+            "pt": "na semana passada",
+            "en": "last week",
+            "audio": "на прошлой неделе"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Был, была, было, были",
+        "explicacao": "No presente não há «ser/estar» («Я студент»). No passado ele aparece e muda com o gênero e o número de QUEM é o sujeito: «был» (masculino), «была» (feminino), «было» (neutro), «были» (plural). Quem fala também conta: um homem diz «Я был дома», uma mulher diz «Я была дома». Para dizer «eu tinha», troque «есть» por «был/была/было/были» e concorde com a coisa que se tinha: «У меня был брат», «У меня была сестра». A negação usa «не было» e o genitivo: «У меня не было сестры». Neste nível usamos o passado do dia a dia; a diferença entre os dois aspectos do verbo virá em aula própria.",
+        "comparacao": "em português «eu fui / estive» é igual para homem e mulher. Em russo o verbo muda conforme o gênero de quem fala: «я был» (homem), «я была» (mulher).",
+        "exemplos": [
+          {
+            "ru": "У меня был брат.",
+            "pt": "Eu tinha um irmão."
+          },
+          {
+            "ru": "У меня была сестра.",
+            "pt": "Eu tinha uma irmã."
+          },
+          {
+            "ru": "У меня не было сестры.",
+            "pt": "Eu não tinha irmã."
+          }
+        ],
+        "tabela": [
+          {
+            "sujeito": "я (homem)",
+            "passado": "был",
+            "exemplo": "Я был дома."
+          },
+          {
+            "sujeito": "я (mulher)",
+            "passado": "была",
+            "exemplo": "Я была дома."
+          },
+          {
+            "sujeito": "он",
+            "passado": "был",
+            "exemplo": "Он был в школе."
+          },
+          {
+            "sujeito": "она",
+            "passado": "была",
+            "exemplo": "Она была в офисе."
+          },
+          {
+            "sujeito": "оно",
+            "passado": "было",
+            "exemplo": "Окно было новое."
+          },
+          {
+            "sujeito": "мы, вы, они",
+            "passado": "были",
+            "exemplo": "Мы были в кафе."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Вчера я есть дома.",
+            "certo": "Вчера я был дома.",
+            "motivo": "No passado «есть» não se usa: use был/была/было/были."
+          }
+        ],
+        "tag": "Verbos"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga: «Вчера я был(а) дома. У меня был брат. У меня не было сестры.»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-017.json",
+  "responsavel": null
 }

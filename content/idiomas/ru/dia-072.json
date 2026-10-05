@@ -3,28 +3,201 @@
   "dia": 72,
   "fase": 8,
   "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Expressar opinião",
-  "objetivo": "Dizer o que pensa e justificar.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Comida e restaurante: Prática",
+  "objetivo": "Aula 18, sessão 4 de 4 · 30 min",
+  "aula": {
+    "numero": 18,
+    "titulo": "Comida e restaurante",
+    "objetivo": "Pedir comida e bebida, dizer o que você quer, precisa e gosta, e usar «мне нужно», «можно» e «нельзя».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Prática",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva 4 frases com «Мне нужен / нужна / нужно / нужны»."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 20,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Я хочу ___. (peixe)",
+            "opcoes": [
+              "рыба",
+              "рыбу",
+              "рыбы"
+            ],
+            "gabarito": "рыбу",
+            "explicacao": "Acusativo: -а → -у.",
+            "id": "ru-018-e01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Мне ___ хлеб. (preciso de)",
+            "opcoes": [
+              "нужен",
+              "нужна",
+              "нужно"
+            ],
+            "gabarito": "нужен",
+            "explicacao": "хлеб é masculino.",
+            "id": "ru-018-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Мне ___ вода.",
+            "opcoes": [
+              "нужна",
+              "нужен",
+              "нужно"
+            ],
+            "gabarito": "нужна",
+            "explicacao": "вода é feminino.",
+            "id": "ru-018-e03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Мне ___ молоко.",
+            "opcoes": [
+              "нужно",
+              "нужна",
+              "нужны"
+            ],
+            "gabarito": "нужно",
+            "explicacao": "молоко é neutro.",
+            "id": "ru-018-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Мне ___ деньги.",
+            "opcoes": [
+              "нужны",
+              "нужна",
+              "нужно"
+            ],
+            "gabarito": "нужны",
+            "explicacao": "деньги é plural.",
+            "id": "ru-018-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Можно воду?» significa:",
+            "opcoes": [
+              "Posso pedir água?",
+              "Eu bebo água",
+              "A água é boa"
+            ],
+            "gabarito": "Posso pedir água?",
+            "explicacao": "«можно» = pode-se, é permitido.",
+            "id": "ru-018-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Здесь нельзя громко говорить» significa:",
+            "opcoes": [
+              "Aqui não se pode falar alto",
+              "Aqui se pode falar alto",
+              "Aqui ninguém fala"
+            ],
+            "gabarito": "Aqui não se pode falar alto",
+            "explicacao": "«нельзя» = não pode.",
+            "id": "ru-018-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Мне нужно работать» significa:",
+            "opcoes": [
+              "Eu preciso trabalhar",
+              "Eu quero trabalhar",
+              "Eu trabalho"
+            ],
+            "gabarito": "Eu preciso trabalhar",
+            "explicacao": "«нужно» + infinitivo.",
+            "id": "ru-018-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Что вы хотите?",
+            "opcoes": [
+              "Что вы хотите?",
+              "Что вы делаете?",
+              "Где вы живёте?"
+            ],
+            "gabarito": "Что вы хотите?",
+            "explicacao": "«хотите» = o senhor quer.",
+            "id": "ru-018-e09"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Eu quero sopa e peixe.»",
+            "opcoes": [
+              "суп",
+              "и",
+              "рыбу",
+              "хочу",
+              "Я"
+            ],
+            "gabarito": "Я хочу суп и рыбу.",
+            "explicacao": "Я + хочу + objetos (рыба → рыбу).",
+            "id": "ru-018-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Мне нужна вода",
+            "respostaEsperada": "Мне нужна вода",
+            "explicacao": "нужна concorda com «вода».",
+            "id": "ru-018-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Я нужно воду» está errado porque:",
+            "opcoes": [
+              "quem precisa vai para o dativo: Мне нужна вода",
+              "falta o verbo «ser»",
+              "«вода» é masculino"
+            ],
+            "gabarito": "quem precisa vai para o dativo: Мне нужна вода",
+            "explicacao": "Dativo para quem precisa.",
+            "id": "ru-018-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Вкусно» é:",
+            "opcoes": [
+              "advérbio (não muda)",
+              "adjetivo",
+              "verbo"
+            ],
+            "gabarito": "advérbio (não muda)",
+            "explicacao": "Advérbios nunca mudam.",
+            "id": "ru-018-e13"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um pedido de restaurante com 4 frases.",
+            "respostaEsperada": "Добрый вечер! Я хочу суп и рыбу. Можно воду, пожалуйста? Это всё. Спасибо!",
+            "id": "ru-018-e14"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Grave-se: faça um pedido de restaurante completo, com bebida."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/ru/aulas/aula-018.json",
+  "responsavel": null
 }

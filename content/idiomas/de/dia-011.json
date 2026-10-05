@@ -3,30 +3,135 @@
   "dia": 11,
   "fase": 2,
   "nivel": "a1",
-  "status": "em-producao",
-  "titulo": "No restaurante e no café",
-  "objetivo": "Ler o cardápio, pedir, pagar a conta e dizer o que prefere com gern, lieber e am liebsten.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Substantivos e artigos: Ein, eine, kein e diálogo",
+  "objetivo": "Aula 3, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Substantivos e artigos",
+    "objetivo": "Usar der, die, das e ein/eine/kein, escrever os substantivos com maiúscula e formar os plurais mais comuns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Ein, eine, kein e diálogo",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva o plural de 6 palavras que você já conhece."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "Ein, eine, kein: o artigo indefinido e o negativo",
+        "explicacao": "«Ein» e «eine» são o «um» e a «uma»: ein Mann, eine Frau, ein Kind. No plural não há artigo indefinido: «Das sind Bücher». Para negar um substantivo, use «kein» (ou «keine»), que tem as mesmas terminações de «ein»: «Das ist kein Tisch» (isto não é uma mesa). Para «isto é» usa-se «das ist» no singular e «das sind» no plural.",
+        "tabela": [
+          {
+            "genero": "masculino",
+            "definido": "der Tisch",
+            "indefinido": "ein Tisch",
+            "negativo": "kein Tisch"
+          },
+          {
+            "genero": "feminino",
+            "definido": "die Lampe",
+            "indefinido": "eine Lampe",
+            "negativo": "keine Lampe"
+          },
+          {
+            "genero": "neutro",
+            "definido": "das Buch",
+            "indefinido": "ein Buch",
+            "negativo": "kein Buch"
+          },
+          {
+            "genero": "plural",
+            "definido": "die Bücher",
+            "indefinido": "—",
+            "negativo": "keine Bücher"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Das ist ein Lampe.",
+            "certo": "Das ist eine Lampe.",
+            "motivo": "«Lampe» é feminino: eine."
+          },
+          {
+            "errado": "Das sind ein Bücher.",
+            "certo": "Das sind Bücher.",
+            "motivo": "No plural não há artigo indefinido."
+          }
+        ],
+        "tag": "Substantivos"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 10,
+        "titulo": "Was ist das? / O que é isto?",
+        "contexto": "Dois amigos apontam objetos numa sala.",
+        "linhas": [
+          {
+            "personagem": "Anna",
+            "ru": "— Was ist das?",
+            "pt": "— O que é isto?",
+            "audio": "Was ist das?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Das ist ein Buch. Und das ist eine Lampe.",
+            "pt": "— Isto é um livro. E isto é uma lâmpada.",
+            "audio": "Das ist ein Buch. Und das ist eine Lampe."
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Ist das ein Tisch?",
+            "pt": "— Isto é uma mesa?",
+            "audio": "Ist das ein Tisch?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Nein, das ist kein Tisch. Das ist ein Stuhl.",
+            "pt": "— Não, isto não é uma mesa. É uma cadeira.",
+            "audio": "Nein, das ist kein Tisch. Das ist ein Stuhl."
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Und was sind das?",
+            "pt": "— E o que são estas coisas?",
+            "audio": "Und was sind das?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Das sind Bücher. Die Bücher sind neu.",
+            "pt": "— São livros. Os livros são novos.",
+            "audio": "Das sind Bücher. Die Bücher sind neu."
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Und das? Ist das eine Tür?",
+            "pt": "— E isto? É uma porta?",
+            "audio": "Und das? Ist das eine Tür?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Ja, das ist eine Tür.",
+            "pt": "— Sim, é uma porta.",
+            "audio": "Ja, das ist eine Tür."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Aponte 5 objetos da sua casa e diga: «Das ist ein … / eine … / Das sind …»."
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "fonte": "content/legado/alemao-descomplicado",
-  "origem": "Semana 2 · aula 08 (Dia 008) · Kapitel 4 Teil B",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-003.json",
+  "responsavel": null
 }

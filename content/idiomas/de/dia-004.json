@@ -3,30 +3,262 @@
   "dia": 4,
   "fase": 1,
   "nivel": "zero",
-  "status": "em-producao",
-  "titulo": "O acusativo",
-  "objetivo": "Usar o objeto direto no acusativo, sabendo que só o masculino muda.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Sons e primeiras palavras: Saudações",
+  "objetivo": "Aula 1, sessão 4 de 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sons e primeiras palavras",
+    "objetivo": "Reconhecer os sons do alemão (incluindo ä, ö, ü, ß, ch, sch, ei, ie), ler palavras novas sem medo e fazer as primeiras saudações.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S4",
+    "titulo": "Saudações",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Leia as combinações «ei, ie, eu, au, sch, st, sp, ch» com uma palavra de exemplo cada."
+      },
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "Hallo",
+            "translit": "hálo",
+            "pt": "olá",
+            "en": "hello",
+            "audio": "Hallo"
+          },
+          {
+            "ru": "Guten Morgen",
+            "translit": "gúten mórguen",
+            "pt": "bom dia (de manhã)",
+            "en": "good morning",
+            "audio": "Guten Morgen"
+          },
+          {
+            "ru": "Guten Tag",
+            "translit": "gúten tak",
+            "pt": "bom dia, boa tarde",
+            "en": "good day",
+            "audio": "Guten Tag"
+          },
+          {
+            "ru": "Guten Abend",
+            "translit": "gúten ábent",
+            "pt": "boa noite (ao chegar)",
+            "en": "good evening",
+            "audio": "Guten Abend"
+          },
+          {
+            "ru": "Tschüs",
+            "translit": "tchüs",
+            "pt": "tchau",
+            "en": "bye",
+            "audio": "Tschüs"
+          },
+          {
+            "ru": "Danke / Bitte",
+            "translit": "dánke / bíte",
+            "pt": "obrigado / por favor, de nada",
+            "en": "thanks / please",
+            "audio": "Danke / Bitte"
+          }
+        ]
+      },
+      {
+        "tipo": "dialogo",
+        "min": 7,
+        "titulo": "Hallo! Wie geht’s? / Oi! Como vai?",
+        "contexto": "Duas pessoas se encontram na rua.",
+        "linhas": [
+          {
+            "personagem": "Anna",
+            "ru": "— Hallo, Ben!",
+            "pt": "— Oi, Ben!",
+            "audio": "Hallo, Ben!"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Hallo, Anna! Wie geht’s?",
+            "pt": "— Oi, Anna! Como vai?",
+            "audio": "Hallo, Anna! Wie geht’s?"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Gut, danke! Und dir?",
+            "pt": "— Bem, obrigada! E você?",
+            "audio": "Gut, danke! Und dir?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Auch gut, danke.",
+            "pt": "— Também bem, obrigado.",
+            "audio": "Auch gut, danke."
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Tschüs, Ben!",
+            "pt": "— Tchau, Ben!",
+            "audio": "Tschüs, Ben!"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Tschüs, Anna!",
+            "pt": "— Tchau, Anna!",
+            "audio": "Tschüs, Anna!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 12,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «ei» em «Eis»?",
+            "opcoes": [
+              "«ai»",
+              "«ei»",
+              "«i»"
+            ],
+            "gabarito": "«ai»",
+            "explicacao": "«ei» soa «ai».",
+            "id": "de-001-e01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «ie» em «Bier»?",
+            "opcoes": [
+              "«i» longo",
+              "«ie»",
+              "«ai»"
+            ],
+            "gabarito": "«i» longo",
+            "explicacao": "«ie» é um «i» longo.",
+            "id": "de-001-e02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «sch» em «Schule»?",
+            "opcoes": [
+              "«x» de xícara",
+              "«sk»",
+              "«s»"
+            ],
+            "gabarito": "«x» de xícara",
+            "explicacao": "«sch» sempre soa «x».",
+            "id": "de-001-e03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «h» de «Haus»:",
+            "opcoes": [
+              "é aspirado, como em «house»",
+              "é mudo, como em português",
+              "soa como «r»"
+            ],
+            "gabarito": "é aspirado, como em «house»",
+            "explicacao": "No começo da palavra, o h é aspirado.",
+            "id": "de-001-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «w» de «Wasser» soa como:",
+            "opcoes": [
+              "«v» de vaca",
+              "«u»",
+              "«w» inglês"
+            ],
+            "gabarito": "«v» de vaca",
+            "explicacao": "w = v.",
+            "id": "de-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «z» de «Zeit» soa como:",
+            "opcoes": [
+              "«ts»",
+              "«z» de zebra",
+              "«s»"
+            ],
+            "gabarito": "«ts»",
+            "explicacao": "z = ts.",
+            "id": "de-001-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «s» de «Sonne» (antes de vogal) soa como:",
+            "opcoes": [
+              "«z»",
+              "«s»",
+              "«x»"
+            ],
+            "gabarito": "«z»",
+            "explicacao": "s antes de vogal = z.",
+            "id": "de-001-e07"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Guten Tag",
+            "opcoes": [
+              "Guten Tag",
+              "Guten Abend",
+              "Gute Nacht"
+            ],
+            "gabarito": "Guten Tag",
+            "explicacao": "«Guten Tag» é a saudação do dia.",
+            "id": "de-001-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Danke",
+            "respostaEsperada": "Danke",
+            "explicacao": "Obrigado.",
+            "id": "de-001-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual saudação se usa de manhã?",
+            "opcoes": [
+              "Guten Morgen",
+              "Guten Abend",
+              "Gute Nacht"
+            ],
+            "gabarito": "Guten Morgen",
+            "explicacao": "Morgen = manhã.",
+            "id": "de-001-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Tschüs» significa:",
+            "opcoes": [
+              "tchau",
+              "obrigado",
+              "por favor"
+            ],
+            "gabarito": "tchau",
+            "explicacao": "Despedida informal.",
+            "id": "de-001-e11"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma saudação e uma despedida em alemão.",
+            "respostaEsperada": "Hallo! Guten Tag! Tschüs!",
+            "id": "de-001-e12"
+          }
+        ]
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "fonte": "content/legado/alemao-descomplicado",
-  "origem": "Semana 1 · aula 04",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-001.json",
+  "responsavel": null
 }

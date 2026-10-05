@@ -15,6 +15,7 @@ const ORDEM = ['Frase básica', 'Substantivos', 'Adjetivos e possessivos', 'Pron
 const categoria = (b) => b.tag ?? CATEGORIAS.find(([re]) => re.test(b.titulo))?.[1] ?? 'Outros';
 
 const topicos = [];
+if (!fs.existsSync(dirAulas)) fs.mkdirSync(dirAulas, { recursive: true });
 for (const f of fs.readdirSync(dirAulas).filter((x) => /^aula-\d+\.json$/.test(x)).sort()) {
   const a = JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8'));
   a.sessoes.forEach((s, i) => s.blocos.forEach((b, k) => {

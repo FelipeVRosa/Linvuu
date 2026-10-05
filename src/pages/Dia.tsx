@@ -16,7 +16,7 @@ export default function Dia() {
   const { id, n } = useParams();
   const curso = getCurso(id);
   const dia = Number(n);
-  const total = statusDoCurso(curso?.id ?? '')?.total ?? 100;
+  const total = statusDoCurso(curso?.id ?? '')?.total ?? 120;
   const valido = !!curso && curso.area === 'idiomas' && Number.isInteger(dia) && dia >= 1 && dia <= total;
   const [aula, setAula] = useState<Aula | null>(null);
   const [erro, setErro] = useState(false);
@@ -59,7 +59,7 @@ export default function Dia() {
           )}
 
           {aula.sessao ? (
-            <Sessao key={dia} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+            <Sessao key={dia} nomeIdioma={curso!.nome.toLowerCase()} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
           ) : (
             <div className="camadas">
               {CAMADAS.map((c, i) => (

@@ -3,30 +3,163 @@
   "dia": 10,
   "fase": 1,
   "nivel": "zero",
-  "status": "em-producao",
-  "titulo": "Alimentos e compras",
-  "objetivo": "Nomear alimentos e embalagens e perguntar preços no mercado.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Substantivos e artigos: O plural",
+  "objetivo": "Aula 3, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 3,
+    "titulo": "Substantivos e artigos",
+    "objetivo": "Usar der, die, das e ein/eine/kein, escrever os substantivos com maiúscula e formar os plurais mais comuns.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "O plural",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Escreva o artigo (der, die ou das) de 6 palavras da sessão anterior."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "O plural: cinco jeitos",
+        "explicacao": "O plural alemão se forma de cinco jeitos: -e (der Tisch → die Tische), -(e)n (die Lampe → die Lampen), -er (das Buch → die Bücher), sem terminação (der Lehrer → die Lehrer) e -s (das Auto → die Autos, comum em palavras estrangeiras). Muitas palavras ganham também um trema na vogal (a → ä, o → ö, u → ü). Não há regra segura: aprenda o plural junto com o substantivo. O artigo definido do plural é sempre «die», para os três gêneros.",
+        "comparacao": "o plural português quase sempre é um «-s». O plural alemão tem cinco formas e é preciso decorá-las com cada palavra.",
+        "tabela": [
+          {
+            "tipo": "-e",
+            "singular": "der Tisch",
+            "plural": "die Tische"
+          },
+          {
+            "tipo": "-e + trema",
+            "singular": "der Stuhl",
+            "plural": "die Stühle"
+          },
+          {
+            "tipo": "-n / -en",
+            "singular": "die Lampe",
+            "plural": "die Lampen"
+          },
+          {
+            "tipo": "-n / -en",
+            "singular": "die Frau",
+            "plural": "die Frauen"
+          },
+          {
+            "tipo": "-er",
+            "singular": "das Kind",
+            "plural": "die Kinder"
+          },
+          {
+            "tipo": "-er + trema",
+            "singular": "das Buch / das Haus",
+            "plural": "die Bücher / die Häuser"
+          },
+          {
+            "tipo": "sem terminação",
+            "singular": "der Lehrer / das Fenster",
+            "plural": "die Lehrer / die Fenster"
+          },
+          {
+            "tipo": "sem terminação + trema",
+            "singular": "der Vater / die Mutter",
+            "plural": "die Väter / die Mütter"
+          },
+          {
+            "tipo": "-s",
+            "singular": "das Auto / das Hotel",
+            "plural": "die Autos / die Hotels"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "die Tischen",
+            "certo": "die Tische",
+            "motivo": "«Tisch» faz o plural com -e, não -en."
+          },
+          {
+            "errado": "die Kinders",
+            "certo": "die Kinder",
+            "motivo": "Kind → Kinder (sem -s)."
+          }
+        ],
+        "tag": "Substantivos"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "das Auto",
+            "translit": "das áuto",
+            "pt": "carro",
+            "en": "car",
+            "audio": "das Auto"
+          },
+          {
+            "ru": "das Hotel",
+            "translit": "das hotél",
+            "pt": "hotel",
+            "en": "hotel",
+            "audio": "das Hotel"
+          },
+          {
+            "ru": "die Mutter",
+            "translit": "di múter",
+            "pt": "mãe",
+            "en": "mother",
+            "audio": "die Mutter"
+          },
+          {
+            "ru": "der Vater",
+            "translit": "der fáter",
+            "pt": "pai",
+            "en": "father",
+            "audio": "der Vater"
+          },
+          {
+            "ru": "der Bruder",
+            "translit": "der brúder",
+            "pt": "irmão",
+            "en": "brother",
+            "audio": "der Bruder"
+          },
+          {
+            "ru": "die Schwester",
+            "translit": "di xvéster",
+            "pt": "irmã",
+            "en": "sister",
+            "audio": "die Schwester"
+          },
+          {
+            "ru": "der Freund",
+            "translit": "der fróint",
+            "pt": "amigo",
+            "en": "friend",
+            "audio": "der Freund"
+          },
+          {
+            "ru": "die Freundin",
+            "translit": "di fróindin",
+            "pt": "amiga",
+            "en": "friend (f)",
+            "audio": "die Freundin"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga o plural de: «der Tisch, die Lampe, das Kind, das Buch, das Auto, der Vater»."
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "fonte": "content/legado/alemao-descomplicado",
-  "origem": "Semana 2 · aula 07 (Dia 007) · Kapitel 4 Teil A",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-003.json",
+  "responsavel": null
 }

@@ -16,7 +16,7 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 | Áudio nativo (futuro) | Servidor/armazenamento a contratar | O site lê de `VITE_AUDIO_BASE_URL`; até lá usa a voz do navegador |
 
 ## Estrutura do repositório
-- `content/trilha-100-dias.json`: trilha-mestre (10 fases, 100 dias).
+- `content/trilha.json`: trilha-mestre (12 fases, 120 dias). Idiomas com aulas escritas (russo e alemão) substituem o texto-mestre pelos títulos reais.
 - `content/cursos.json`: cursos e status.
 - `content/idiomas/<id>/aulas/aula-NNN.json`: **aulas escritas** (4 sessões de ~30 min). É aqui que o conteúdo novo entra.
 - `content/idiomas/<id>/dia-NNN.json`: um dia por sessão. **Gerado** por `npm run aulas`. Não edite à mão os dias 1 a 24 do russo.
@@ -32,8 +32,8 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - `npm run auditar`: gera `docs/REVISAO-RU-AULAS.md` (alfabeto, letras fora de ordem, duplicatas, minutos, promessas).
 - `npm run build`: valida o conteúdo e gera o site.
 
-## Dias além de 100
-A trilha-mestre tem 100 dias, mas um idioma pode continuar: `npm run aulas` gera `dia-101.json` em diante, sem buracos. O site lê o total de dias do índice (`content/indice.json`). Para os outros idiomas nada muda.
+## 120 dias
+Decisão do Felipe: russo e alemão têm 120 dias (30 aulas de 4 sessões). A trilha-mestre tem 120 dias para todos os idiomas. `npm run aulas` compila as fontes de russo e de alemão e gera os dias; o site lê o total de dias do índice (`content/indice.json`).
 
 ## Como adicionar uma aula (sem gastar tokens)
 Dois jeitos. O compacto gasta cerca de 40% menos texto:
@@ -50,9 +50,10 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - Login por e-mail e senha ativo; Google escondido até ser ativado.
 - GitHub Pages foi descartado; hospedagem é o Render.
 
-## Estado (rodada 11)
+## Estado (rodada 12)
 - Russo: aulas 1 a 30 (dias 1 a 120, status "publicada", curso "Disponível"; as aulas 11 a 16, 20 a 22 e 25 a 30 são de gramática; o curso passa dos 100 dias a partir da aula 25) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
-- Aba Gramática em `/gramatica/ru`, gerada das aulas (`scripts/gramatica.mjs`); ordem do curso, qualidade e próximos passos em `docs/GRAMATICA-RU.md`. Blocos de gramática aceitam `comparacao`, `erros`, `tabelas` e `tag`.
+- Alemão: aulas 1 a 5 (dias 1 a 20) no ar, curso "Disponível"; plano das 30 aulas em `docs/PLANO-ALEMAO.md`. As 16 aulas antigas ficam em `content/legado/` só como consulta.
+- Aba Gramática em `/gramatica/ru` e `/gramatica/de`, gerada das aulas (`scripts/gramatica.mjs`); ordem do curso, qualidade e próximos passos em `docs/GRAMATICA-RU.md`. Blocos de gramática aceitam `comparacao`, `erros`, `tabelas` e `tag`.
 - A página do curso lista por aula quando o curso tem aulas escritas; as fases genéricas só aparecem para o que ainda é planejado.
 - Os áudios RED KALINKA enviados pelo Felipe não entram no site nem no repositório (decisão dele; ele é o autor do livro). Ver `docs/GRAMATICA-RU.md`, seção 6.
 - Marketing reescrito (ver `docs/MARKETING.md`); textos em `src/i18n/pt-BR.ts`; preparação internacional em `docs/INTERNACIONAL.md`.

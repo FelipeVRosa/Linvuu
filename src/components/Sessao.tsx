@@ -5,7 +5,7 @@ import { falar, falarLista, parar, temVoz } from '../lib/audio';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
-const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino' };
+const ROTULO_COLUNA: Record<string, string> = { pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', artigo: 'Artigo', definido: 'Definido', indefinido: 'Indefinido', negativo: 'Negativo', pos1: '1ª posição', pos2: '2ª posição (verbo)', resto: 'Resto', masc_neutro: 'Masculino e neutro', fem_plural: 'Feminino e plural', combinacao: 'Combinação', som: 'Som', resposta: 'Resposta', haben: 'haben', sein: 'sein', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino' };
 
 function Audio({ texto, idioma, rotulo = 'Ouvir' }: { texto: string; idioma: string; rotulo?: string }) {
   return (
@@ -203,7 +203,7 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
   }
 }
 
-export function Sessao({ sessao, idioma, aula, proximo }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string }) {
+export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string; nomeIdioma?: string }) {
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
@@ -216,7 +216,7 @@ export function Sessao({ sessao, idioma, aula, proximo }: { sessao: SessaoAula; 
 
   return (
     <div className="sessao">
-      {voz === false && <p className="nota">Seu navegador não tem voz em russo instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</p>}
+      {voz === false && <p className="nota">Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</p>}
       <ol className="passos" aria-label="Blocos da sessão">
         {sessao.blocos.map((x, k) => (
           <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {ROTULO_BLOCO[x.tipo]}</button></li>

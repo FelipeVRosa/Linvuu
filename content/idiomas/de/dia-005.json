@@ -3,30 +3,147 @@
   "dia": 5,
   "fase": 1,
   "nivel": "zero",
-  "status": "em-producao",
-  "titulo": "Verbos com mudança de vogal e as horas",
-  "objetivo": "Conjugar verbos como helfen e fahren, dizer as horas e contar a rotina.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Quem sou eu: Ich heiße…",
+  "objetivo": "Aula 2, sessão 1 de 4 · 30 min",
+  "aula": {
+    "numero": 2,
+    "titulo": "Quem sou eu",
+    "objetivo": "Apresentar-se, perguntar o nome e a origem e usar «sein» no presente, com «du», «ihr» e «Sie».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Ich heiße…",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Leia em voz alta as saudações da aula anterior e as combinações «ei, ie, sch, ch»."
+      },
+      {
+        "tipo": "palavras",
+        "min": 10,
+        "itens": [
+          {
+            "ru": "heißen",
+            "translit": "háissen",
+            "pt": "chamar-se",
+            "en": "to be called",
+            "audio": "heißen"
+          },
+          {
+            "ru": "der Name",
+            "translit": "der náme",
+            "pt": "nome",
+            "en": "name",
+            "audio": "der Name"
+          },
+          {
+            "ru": "der Vorname",
+            "translit": "der fórname",
+            "pt": "nome próprio",
+            "en": "first name",
+            "audio": "der Vorname"
+          },
+          {
+            "ru": "der Nachname",
+            "translit": "der nárrname",
+            "pt": "sobrenome",
+            "en": "last name",
+            "audio": "der Nachname"
+          },
+          {
+            "ru": "kommen",
+            "translit": "kómen",
+            "pt": "vir",
+            "en": "to come",
+            "audio": "kommen"
+          },
+          {
+            "ru": "aus",
+            "translit": "aus",
+            "pt": "de (origem)",
+            "en": "from",
+            "audio": "aus"
+          },
+          {
+            "ru": "woher",
+            "translit": "vôher",
+            "pt": "de onde",
+            "en": "where from",
+            "audio": "woher"
+          },
+          {
+            "ru": "wer",
+            "translit": "ver",
+            "pt": "quem",
+            "en": "who",
+            "audio": "wer"
+          },
+          {
+            "ru": "wie",
+            "translit": "vi",
+            "pt": "como",
+            "en": "how",
+            "audio": "wie"
+          },
+          {
+            "ru": "und",
+            "translit": "unt",
+            "pt": "e",
+            "en": "and",
+            "audio": "und"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
+        "titulo": "A ordem da frase e as primeiras perguntas",
+        "explicacao": "O verbo conjugado fica sempre na SEGUNDA posição da frase afirmativa e das perguntas com palavra interrogativa: «Ich heiße Anna.», «Wie heißt du?», «Woher kommst du?». A pergunta de sim ou não começa pelo verbo: «Heißt du Anna?». Os pronomes pessoais são: ich, du, er, sie, es, wir, ihr, sie e Sie (formal).",
+        "comparacao": "em português o verbo também vem logo depois do sujeito, mas o alemão fixa o verbo na segunda posição mesmo quando outro termo abre a frase.",
+        "tabela": [
+          {
+            "pergunta": "Wie heißt du?",
+            "resposta": "Ich heiße Anna.",
+            "pt": "Como você se chama? Eu me chamo Anna."
+          },
+          {
+            "pergunta": "Wie heißen Sie?",
+            "resposta": "Ich heiße Müller.",
+            "pt": "Como o senhor se chama? Eu me chamo Müller."
+          },
+          {
+            "pergunta": "Woher kommst du?",
+            "resposta": "Ich komme aus Brasilien.",
+            "pt": "De onde você vem? Venho do Brasil."
+          },
+          {
+            "pergunta": "Wer ist das?",
+            "resposta": "Das ist Ben.",
+            "pt": "Quem é este? É o Ben."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich Anna heiße.",
+            "certo": "Ich heiße Anna.",
+            "motivo": "O verbo conjugado fica na segunda posição."
+          }
+        ],
+        "tag": "Frase"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Diga: «Ich heiße … Ich komme aus Brasilien.» Depois pergunte: «Wie heißt du? Woher kommst du?»"
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "fonte": "content/legado/alemao-descomplicado",
-  "origem": "Semana 1 · aula 05",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-002.json",
+  "responsavel": null
 }

@@ -3,30 +3,183 @@
   "dia": 3,
   "fase": 1,
   "nivel": "zero",
-  "status": "em-producao",
-  "titulo": "Gêneros, artigos e negação",
-  "objetivo": "Escolher der, die ou das, usar ein e eine, e negar com kein ou nicht.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Sons e primeiras palavras: Combinações de letras",
+  "objetivo": "Aula 1, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 1,
+    "titulo": "Sons e primeiras palavras",
+    "objetivo": "Reconhecer os sons do alemão (incluindo ä, ö, ü, ß, ch, sch, ei, ie), ler palavras novas sem medo e fazer as primeiras saudações.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "zero"
   },
-  "imersao": {
-    "status": "legado",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Combinações de letras",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Leia as 10 palavras da sessão anterior em voz alta."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 14,
+        "titulo": "Combinações de letras que mudam o som",
+        "explicacao": "Algumas letras juntas formam um som próprio. A regra vale sempre. Uma vogal seguida de uma consoante simples costuma ser longa (Tal, Name); seguida de duas consoantes iguais, costuma ser curta (Ball, Kette). O «ch» tem dois sons: suave («ç») depois de e, i, ä, ö, ü, l, n, r; áspero («rr» carioca) depois de a, o, u e au. As combinações «sp» e «st» no início de uma palavra soam «xp» e «xt».",
+        "comparacao": "em português «ei» e «ie» não existem como sons próprios, e o «ch» soa como «x». No alemão, «ei» é «ai», «ie» é um «i» longo, «sch» é «x» e «ch» é «ç» ou «rr».",
+        "tabela": [
+          {
+            "combinacao": "ei",
+            "som": "«ai»",
+            "exemplo": "Eis (ais), Wein (vain)"
+          },
+          {
+            "combinacao": "ie",
+            "som": "«i» longo",
+            "exemplo": "Bier (bir), Brief (brif)"
+          },
+          {
+            "combinacao": "eu, äu",
+            "som": "«ói»",
+            "exemplo": "Euro (ói-ro), Häuser (hóizer)"
+          },
+          {
+            "combinacao": "au",
+            "som": "«au»",
+            "exemplo": "Haus (haus), Auto (áuto)"
+          },
+          {
+            "combinacao": "sch",
+            "som": "«x» de «xícara»",
+            "exemplo": "Schule (xúle), Fisch (fix)"
+          },
+          {
+            "combinacao": "sp, st (início)",
+            "som": "«xp», «xt»",
+            "exemplo": "Sport (xport), Stein (xtain)"
+          },
+          {
+            "combinacao": "ch (suave)",
+            "som": "«ç»",
+            "exemplo": "ich (iç), Milch (milç)"
+          },
+          {
+            "combinacao": "ch (áspero)",
+            "som": "«rr» carioca",
+            "exemplo": "Buch (burr), acht (arrt)"
+          },
+          {
+            "combinacao": "tsch",
+            "som": "«tch»",
+            "exemplo": "Deutsch (dóitx)"
+          },
+          {
+            "combinacao": "pf",
+            "som": "«p» e «f» juntos",
+            "exemplo": "Apfel (ápfel)"
+          },
+          {
+            "combinacao": "qu",
+            "som": "«kv»",
+            "exemplo": "Quelle (kvéle)"
+          },
+          {
+            "combinacao": "ck",
+            "som": "«k» curto",
+            "exemplo": "Jacke (iáke)"
+          },
+          {
+            "combinacao": "ng",
+            "som": "nasal, sem «g» solto",
+            "exemplo": "singen (zíngen)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Eis → «eis»",
+            "certo": "Eis → «ais»",
+            "motivo": "«ei» soa «ai», não «ei»."
+          },
+          {
+            "errado": "Schule → «sk»",
+            "certo": "Schule → «xúle»",
+            "motivo": "«sch» sempre soa «x»."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "ich",
+            "translit": "iç",
+            "pt": "eu",
+            "en": "I",
+            "audio": "ich"
+          },
+          {
+            "ru": "Schule",
+            "translit": "xúle",
+            "pt": "escola",
+            "en": "school",
+            "audio": "Schule"
+          },
+          {
+            "ru": "Sport",
+            "translit": "xport",
+            "pt": "esporte",
+            "en": "sport",
+            "audio": "Sport"
+          },
+          {
+            "ru": "Eis",
+            "translit": "ais",
+            "pt": "gelo, sorvete",
+            "en": "ice",
+            "audio": "Eis"
+          },
+          {
+            "ru": "Bier",
+            "translit": "bir",
+            "pt": "cerveja",
+            "en": "beer",
+            "audio": "Bier"
+          },
+          {
+            "ru": "Euro",
+            "translit": "ói-ro",
+            "pt": "euro",
+            "en": "euro",
+            "audio": "Euro"
+          },
+          {
+            "ru": "Deutsch",
+            "translit": "dóitx",
+            "pt": "alemão (idioma)",
+            "en": "German",
+            "audio": "Deutsch"
+          },
+          {
+            "ru": "Apfel",
+            "translit": "ápfel",
+            "pt": "maçã",
+            "en": "apple",
+            "audio": "Apfel"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Leia em voz alta: «ich, Schule, Sport, Eis, Bier, Euro, Deutsch, Apfel»."
+      }
+    ]
   },
-  "pratica": {
-    "status": "legado",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "fonte": "content/legado/alemao-descomplicado",
-  "origem": "Semana 1 · aula 03",
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/de/aulas/aula-001.json",
+  "responsavel": null
 }

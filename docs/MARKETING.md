@@ -10,7 +10,7 @@ Decidido na rodada 6, com autonomia dada pelo Felipe. Tudo aqui é para ser test
 O Babbel abre a página com credibilidade (especialistas) e números (lições, idiomas). A Linvuu usa o mesmo padrão com fatos verdadeiros e verificáveis: "sessões de 30 minutos", "áudio em cada palavra", "aula 1 grátis".
 
 ## O que mudou no site
-- **Título:** de "100 dias rumo à proficiência" para "Aprenda idiomas como um professor ensina." Motivo: "proficiência" é o nível mais alto da escala europeia (C2) e a trilha não chega lá; o título antigo prometia mais do que a Linvuu entrega. "100 dias" continua como formato do curso, não como promessa.
+- **Título:** de "100 dias rumo à proficiência" para "Aprenda idiomas como um professor ensina." Motivo: "proficiência" é o nível mais alto da escala europeia (C2) e a trilha não chega lá; o título antigo prometia mais do que a Linvuu entrega. "120 dias" é o formato do curso (30 aulas de 4 sessões), não uma promessa.
 - **Chamada principal:** "Começar grátis", com nota honesta: hoje só o russo tem aulas completas.
 - **Faixa de provas** logo abaixo do topo: explicação em português, sessões de 30 minutos, áudio em cada palavra, aula 1 grátis.
 - **Cartão da aula 1** no topo: o visitante vê o que vai estudar nos primeiros 30 minutos (é a sessão real, lida do arquivo da aula).

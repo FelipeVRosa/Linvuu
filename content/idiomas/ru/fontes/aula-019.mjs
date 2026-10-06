@@ -3,7 +3,7 @@ import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, e
 export default aula({
   idioma: 'ru', numero: 19, titulo: 'O passado', nivel: 'a1',
   objetivo: 'Contar o que aconteceu: «был, была, было, были» e o passado dos verbos com -л, -ла, -ло, -ли.',
-  nota: 'Você conta o que aconteceu. Próxima aula: o aspecto do verbo (eu lia × eu li).',
+  nota: 'Você conta o que fez ontem. Próxima aula: comida e restaurante.',
   sessoes: [
     sessao('S1', 'Ser e estar no passado', [
       revisao(5, 'Escreva 4 frases no presente sobre o que você faz hoje.'),

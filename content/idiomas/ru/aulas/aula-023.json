@@ -3,389 +3,414 @@
   "aula": 23,
   "modulo": 1,
   "ciclo": 1,
-  "nivel": "a1",
+  "nivel": "a2",
   "status": "publicada",
-  "titulo": "Comida e restaurante",
-  "objetivo": "Pedir comida e bebida, dizer o que você quer, precisa e gosta, e usar «мне нужно», «можно» e «нельзя».",
+  "titulo": "Gramática: o futuro",
+  "objetivo": "Formar o futuro com «буду» + infinitivo e com o verbo perfectivo, e escolher entre os dois.",
   "duracaoTotalMin": 120,
   "sessoes": [
     {
       "sessao": "S1",
-      "titulo": "Comidas e bebidas",
+      "titulo": "Futuro com «буду»",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva 5 frases com «Я люблю …» e «Я хочу …»."
+          "enunciado": "Escreva 5 pares de verbos (imperfectivo / perfectivo)."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "Futuro composto: «буду» + infinitivo",
+          "explicacao": "Em português o futuro muda a terminação («falarei») ou usa «vou falar». O russo tem DUAS formas de futuro, conforme o aspecto. A primeira é o futuro composto, do imperfectivo: «буду» + infinitivo imperfectivo = vou fazer / farei (processo, hábito, duração). O verbo «быть» no futuro: я буду, ты будешь, он будет, мы будем, вы будете, они будут. O verbo que vem depois fica sempre no infinitivo.",
+          "comparacao": "o português diz «vou ler» ou «lerei». «Буду читать» equivale a «vou ler / vou ficar lendo (durante um tempo, regularmente)».",
+          "tabela": [
+            {
+              "pronome": "я",
+              "futuro": "буду",
+              "exemplo": "Я буду дома."
+            },
+            {
+              "pronome": "ты",
+              "futuro": "будешь",
+              "exemplo": "Ты будешь работать."
+            },
+            {
+              "pronome": "он / она",
+              "futuro": "будет",
+              "exemplo": "Он будет читать."
+            },
+            {
+              "pronome": "мы",
+              "futuro": "будем",
+              "exemplo": "Мы будем обедать."
+            },
+            {
+              "pronome": "вы",
+              "futuro": "будете",
+              "exemplo": "Вы будете в кафе?"
+            },
+            {
+              "pronome": "они",
+              "futuro": "будут",
+              "exemplo": "Они будут гулять."
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Я буду читаю.",
+              "certo": "Я буду читать.",
+              "motivo": "Depois de «буду» vem o infinitivo."
+            },
+            {
+              "errado": "Я буду прочитать.",
+              "certo": "Я прочитаю.",
+              "motivo": "«Буду» não se usa com verbo perfectivo."
+            }
+          ],
+          "tag": "Aspecto e futuro"
         },
         {
           "tipo": "palavras",
-          "min": 12,
+          "min": 8,
           "itens": [
             {
-              "ru": "мясо",
-              "translit": "miássa",
-              "pt": "carne",
-              "en": "meat",
-              "audio": "мясо"
+              "ru": "послезавтра",
+              "translit": "poslezáftra",
+              "pt": "depois de amanhã",
+              "en": "the day after tomorrow",
+              "audio": "послезавтра"
             },
             {
-              "ru": "рыба",
-              "translit": "rýba",
-              "pt": "peixe",
-              "en": "fish",
-              "audio": "рыба"
+              "ru": "скоро",
+              "translit": "skóra",
+              "pt": "em breve",
+              "en": "soon",
+              "audio": "скоро"
             },
             {
-              "ru": "курица",
-              "translit": "kúritsa",
-              "pt": "frango",
-              "en": "chicken",
-              "audio": "курица"
+              "ru": "через час",
+              "translit": "chiéris chas",
+              "pt": "daqui a uma hora",
+              "en": "in an hour",
+              "audio": "через час"
             },
             {
-              "ru": "рис",
-              "translit": "ris",
-              "pt": "arroz",
-              "en": "rice",
-              "audio": "рис"
+              "ru": "через неделю",
+              "translit": "chiéris nidiélyu",
+              "pt": "daqui a uma semana",
+              "en": "in a week",
+              "audio": "через неделю"
             },
             {
-              "ru": "картошка",
-              "translit": "kartóshka",
-              "pt": "batata",
-              "en": "potato",
-              "audio": "картошка"
+              "ru": "на следующей неделе",
+              "translit": "na sliéduyushchei nidiélie",
+              "pt": "na semana que vem",
+              "en": "next week",
+              "audio": "на следующей неделе"
             },
             {
-              "ru": "салат",
-              "translit": "saláht",
-              "pt": "salada",
-              "en": "salad",
-              "audio": "салат"
+              "ru": "обязательно",
+              "translit": "abizátilna",
+              "pt": "com certeza, sem falta",
+              "en": "definitely",
+              "audio": "обязательно"
             },
             {
-              "ru": "яблоко",
-              "translit": "iáblaka",
-              "pt": "maçã",
-              "en": "apple",
-              "audio": "яблоко"
+              "ru": "может быть",
+              "translit": "mózhit byt",
+              "pt": "talvez",
+              "en": "maybe",
+              "audio": "может быть"
             },
             {
-              "ru": "сыр",
-              "translit": "syr",
-              "pt": "queijo",
-              "en": "cheese",
-              "audio": "сыр"
-            },
-            {
-              "ru": "яйцо",
-              "translit": "yitsó",
-              "pt": "ovo",
-              "en": "egg",
-              "audio": "яйцо"
-            },
-            {
-              "ru": "масло",
-              "translit": "máslo",
-              "pt": "manteiga",
-              "en": "butter",
-              "audio": "масло"
-            },
-            {
-              "ru": "пирог",
-              "translit": "piróg",
-              "pt": "torta",
-              "en": "pie",
-              "audio": "пирог"
-            },
-            {
-              "ru": "каша",
-              "translit": "kásha",
-              "pt": "mingau",
-              "en": "porridge",
-              "audio": "каша"
+              "ru": "наверное",
+              "translit": "navérnaye",
+              "pt": "provavelmente",
+              "en": "probably",
+              "audio": "наверное"
             }
           ]
         },
         {
-          "tipo": "gramatica",
-          "min": 8,
-          "titulo": "Pedir comida: o acusativo em ação",
-          "explicacao": "Quando você pede ou diz o que come, o alimento vai para o acusativo (o objeto direto). Só mudam as palavras femininas em -а: -а vira -у. Masculinos e neutros que não são seres vivos ficam iguais: «Я хочу рис», «Я хочу мясо», «Я хочу салат».",
-          "tabela": [
-            {
-              "palavra": "рыба",
-              "acusativo": "рыбу",
-              "exemplo": "Я хочу рыбу."
-            },
-            {
-              "palavra": "курица",
-              "acusativo": "курицу",
-              "exemplo": "Я люблю курицу."
-            },
-            {
-              "palavra": "картошка",
-              "acusativo": "картошку",
-              "exemplo": "Я хочу картошку."
-            },
-            {
-              "palavra": "каша",
-              "acusativo": "кашу",
-              "exemplo": "Я не люблю кашу."
-            },
-            {
-              "palavra": "мясо",
-              "acusativo": "мясо",
-              "exemplo": "Я хочу мясо."
-            },
-            {
-              "palavra": "рис",
-              "acusativo": "рис",
-              "exemplo": "Я люблю рис."
-            },
-            {
-              "palavra": "салат",
-              "acusativo": "салат",
-              "exemplo": "Я хочу салат."
-            },
-            {
-              "palavra": "яблоко",
-              "acusativo": "яблоко",
-              "exemplo": "Я хочу яблоко."
-            }
-          ],
-          "tag": "Casos"
-        },
-        {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Diga: «Я хочу рыбу и рис. Я люблю курицу. Я не люблю кашу.»"
+          "enunciado": "Diga: «Завтра я буду работать. Я буду дома. Мы будем обедать в кафе.»"
         }
       ]
     },
     {
       "sessao": "S2",
-      "titulo": "Precisar, poder, não poder",
+      "titulo": "Futuro perfectivo",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva os pronomes no dativo: мне, тебе, ему, ей, нам, вам, им."
+          "enunciado": "Escreva as 6 formas de «быть» no futuro."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "O futuro dos verbos perfectivos",
+          "explicacao": "O perfectivo se conjuga com as mesmas terminações do presente (1ª ou 2ª conjugação), mas o sentido é de FUTURO: a ação ainda não foi feita e será concluída. Прочитать → я прочитаю, ты прочитаешь, он прочитает, мы прочитаем, вы прочитаете, они прочитают. Verbos com prefixo seguem o padrão do verbo base: писать → напишу (с → ш), смотреть → посмотрю. Alguns pares trocam a raiz e mudam a consoante: купить → куплю (п → пл), ответить → отвечу (т → ч), сказать → скажу. E «дать» é irregular: дам, дашь, даст, дадим, дадите, дадут. Nunca se usa «буду» com o perfectivo.",
+          "comparacao": "em português o futuro dos verbos de ação concluída é «lerei» ou «vou ler». O russo usa o perfectivo conjugado como se fosse presente.",
+          "exemplos": [
+            {
+              "ru": "Завтра я прочитаю книгу.",
+              "pt": "Amanhã eu vou ler o livro (até o fim)."
+            },
+            {
+              "ru": "Я напишу письмо.",
+              "pt": "Vou escrever a carta."
+            },
+            {
+              "ru": "Я куплю хлеб.",
+              "pt": "Vou comprar pão."
+            }
+          ],
+          "tabela": [
+            {
+              "infinitivo": "прочитать",
+              "я": "прочитаю",
+              "ты": "прочитаешь",
+              "они": "прочитают"
+            },
+            {
+              "infinitivo": "сделать",
+              "я": "сделаю",
+              "ты": "сделаешь",
+              "они": "сделают"
+            },
+            {
+              "infinitivo": "написать",
+              "я": "напишу",
+              "ты": "напишешь",
+              "они": "напишут"
+            },
+            {
+              "infinitivo": "посмотреть",
+              "я": "посмотрю",
+              "ты": "посмотришь",
+              "они": "посмотрят"
+            },
+            {
+              "infinitivo": "купить",
+              "я": "куплю",
+              "ты": "купишь",
+              "они": "купят"
+            },
+            {
+              "infinitivo": "ответить",
+              "я": "отвечу",
+              "ты": "ответишь",
+              "они": "ответят"
+            },
+            {
+              "infinitivo": "сказать",
+              "я": "скажу",
+              "ты": "скажешь",
+              "они": "скажут"
+            },
+            {
+              "infinitivo": "дать",
+              "я": "дам",
+              "ты": "дашь",
+              "они": "дадут"
+            }
+          ],
+          "tag": "Aspecto e futuro"
         },
         {
           "tipo": "palavras",
           "min": 8,
           "itens": [
             {
-              "ru": "нужно",
-              "translit": "núzhna",
-              "pt": "é preciso",
-              "en": "it is necessary",
-              "audio": "нужно"
+              "ru": "позвонить",
+              "translit": "pazvanít",
+              "pt": "ligar (perfectivo)",
+              "en": "to call",
+              "audio": "позвонить"
             },
             {
-              "ru": "можно",
-              "translit": "mózhna",
-              "pt": "pode-se, é permitido",
-              "en": "may",
-              "audio": "можно"
+              "ru": "увидеть",
+              "translit": "uvídit",
+              "pt": "ver, avistar (perfectivo)",
+              "en": "to see",
+              "audio": "увидеть"
             },
             {
-              "ru": "нельзя",
-              "translit": "nilziá",
-              "pt": "não pode, é proibido",
-              "en": "must not",
-              "audio": "нельзя"
+              "ru": "встретить",
+              "translit": "vstrétit",
+              "pt": "encontrar (perfectivo)",
+              "en": "to meet",
+              "audio": "встретить"
             },
             {
-              "ru": "надо",
-              "translit": "náda",
-              "pt": "é preciso (coloquial)",
-              "en": "must",
-              "audio": "надо"
+              "ru": "начать",
+              "translit": "nachát",
+              "pt": "começar (perfectivo: начну)",
+              "en": "to begin",
+              "audio": "начать"
             },
             {
-              "ru": "лучше",
-              "translit": "lúchshe",
-              "pt": "melhor",
-              "en": "better",
-              "audio": "лучше"
+              "ru": "решить",
+              "translit": "rishít",
+              "pt": "decidir (perfectivo)",
+              "en": "to decide",
+              "audio": "решить"
             },
             {
-              "ru": "больше",
-              "translit": "bólshe",
-              "pt": "mais",
-              "en": "more",
-              "audio": "больше"
+              "ru": "забыть",
+              "translit": "zabýt",
+              "pt": "esquecer (perfectivo: забуду)",
+              "en": "to forget",
+              "audio": "забыть"
             },
             {
-              "ru": "вкусно",
-              "translit": "fkúsna",
-              "pt": "gostoso",
-              "en": "tasty",
-              "audio": "вкусно"
+              "ru": "взять",
+              "translit": "vziat",
+              "pt": "pegar (perfectivo: возьму)",
+              "en": "to take",
+              "audio": "взять"
             },
             {
-              "ru": "пить",
-              "translit": "pit",
-              "pt": "beber",
-              "en": "to drink",
-              "audio": "пить"
+              "ru": "помочь",
+              "translit": "pamóch",
+              "pt": "ajudar (perfectivo: помогу)",
+              "en": "to help",
+              "audio": "помочь"
             }
           ]
         },
         {
-          "tipo": "gramatica",
-          "min": 12,
-          "titulo": "Мне нужно, можно, нельзя",
-          "explicacao": "Em russo, muitas ideias de necessidade e permissão não têm um sujeito como «eu». Quem precisa vai para o dativo (мне, тебе, ему...) e a palavra «нужно» vem depois. Depois dela pode vir um verbo no infinitivo: «Мне нужно работать». Se vem um substantivo, a forma de «нужно» concorda com ele: «нужен» (masculino), «нужна» (feminino), «нужно» (neutro), «нужны» (plural). Já «можно» (pode-se) e «нельзя» (não se pode) nunca mudam: são advérbios.",
-          "comparacao": "em português dizemos «eu preciso de água» (sujeito eu). Em russo: «a mim é necessária água» (Мне нужна вода), e «нужна» concorda com a água.",
-          "exemplos": [
-            {
-              "ru": "Мне нужно работать.",
-              "pt": "Eu preciso trabalhar."
-            },
-            {
-              "ru": "Можно воду, пожалуйста?",
-              "pt": "Posso pedir água, por favor?"
-            },
-            {
-              "ru": "Здесь нельзя громко говорить.",
-              "pt": "Aqui não se pode falar alto."
-            }
-          ],
-          "tabela": [
-            {
-              "coisa": "хлеб (masculino)",
-              "forma": "нужен",
-              "exemplo": "Мне нужен хлеб."
-            },
-            {
-              "coisa": "вода (feminino)",
-              "forma": "нужна",
-              "exemplo": "Мне нужна вода."
-            },
-            {
-              "coisa": "молоко (neutro)",
-              "forma": "нужно",
-              "exemplo": "Мне нужно молоко."
-            },
-            {
-              "coisa": "деньги (plural)",
-              "forma": "нужны",
-              "exemplo": "Мне нужны деньги."
-            }
-          ],
-          "erros": [
-            {
-              "errado": "Я нужно воду.",
-              "certo": "Мне нужна вода.",
-              "motivo": "Quem precisa vai para o dativo (мне); o que se precisa concorda com «нужна»."
-            }
-          ],
-          "tag": "Verbos"
-        },
-        {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Diga: «Мне нужен хлеб. Мне нужна вода. Мне нужно молоко. Можно воду, пожалуйста?»"
+          "enunciado": "Diga o que você vai fazer amanhã: «Завтра я прочитаю … Я напишу … Я куплю …»"
         }
       ]
     },
     {
       "sessao": "S3",
-      "titulo": "No restaurante",
+      "titulo": "Qual futuro escolher",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva um pedido de restaurante com 3 itens."
+          "enunciado": "Escreva 3 frases com «буду» e 3 com futuro perfectivo."
+        },
+        {
+          "tipo": "gramatica",
+          "min": 10,
+          "titulo": "буду × perfectivo: processo ou resultado",
+          "explicacao": "A escolha segue a mesma lógica do passado. Quer falar de processo, hábito ou duração? Use «буду» + infinitivo imperfectivo. Quer falar de resultado, de ação única concluída? Use o futuro perfectivo.",
+          "tabela": [
+            {
+              "situacao": "hábito",
+              "forma": "буду + imperfectivo",
+              "exemplo": "Каждый день я буду писать."
+            },
+            {
+              "situacao": "duração",
+              "forma": "буду + imperfectivo",
+              "exemplo": "Завтра я буду работать весь день."
+            },
+            {
+              "situacao": "ação única concluída",
+              "forma": "perfectivo",
+              "exemplo": "Завтра я напишу письмо."
+            },
+            {
+              "situacao": "resultado imediato",
+              "forma": "perfectivo",
+              "exemplo": "Я куплю хлеб."
+            }
+          ],
+          "tag": "Aspecto e futuro"
         },
         {
           "tipo": "dialogo",
-          "min": 12,
-          "titulo": "В ресторане / No restaurante",
-          "contexto": "Dois clientes e um garçom.",
+          "min": 8,
+          "titulo": "Планы / Planos",
+          "contexto": "Duas amigas falam do dia seguinte.",
           "linhas": [
             {
-              "personagem": "Официант",
-              "ru": "— Добрый вечер! Что вы хотите?",
-              "pt": "— Boa noite! O que desejam?",
-              "audio": "Добрый вечер! Что вы хотите?"
+              "personagem": "Оля",
+              "ru": "— Что ты будешь делать завтра?",
+              "pt": "— O que você vai fazer amanhã?",
+              "audio": "Что ты будешь делать завтра?"
             },
             {
-              "personagem": "Игорь",
-              "ru": "— Добрый вечер! Мне, пожалуйста, суп и рыбу.",
-              "pt": "— Boa noite! Para mim, por favor, sopa e peixe.",
-              "audio": "Добрый вечер! Мне, пожалуйста, суп и рыбу."
+              "personagem": "Дима",
+              "ru": "— Утром я буду работать. Вечером я позвоню маме.",
+              "pt": "— De manhã vou trabalhar. À noite vou ligar para a minha mãe.",
+              "audio": "Утром я буду работать. Вечером я позвоню маме."
             },
             {
-              "personagem": "Анна",
-              "ru": "— А мне — курицу с рисом, пожалуйста.",
-              "pt": "— E para mim, frango com arroz, por favor.",
-              "audio": "А мне — курицу с рисом, пожалуйста."
+              "personagem": "Оля",
+              "ru": "— А в субботу?",
+              "pt": "— E no sábado?",
+              "audio": "А в субботу?"
             },
             {
-              "personagem": "Официант",
-              "ru": "— Что вы хотите пить?",
-              "pt": "— O que desejam beber?",
-              "audio": "Что вы хотите пить?"
+              "personagem": "Дима",
+              "ru": "— В субботу я буду отдыхать. Мы будем гулять в парке.",
+              "pt": "— No sábado vou descansar. Vamos passear no parque.",
+              "audio": "В субботу я буду отдыхать. Мы будем гулять в парке."
             },
             {
-              "personagem": "Игорь",
-              "ru": "— Воду, пожалуйста. А Анне — чай.",
-              "pt": "— Água, por favor. E para a Anna, chá.",
-              "audio": "Воду, пожалуйста. А Анне — чай."
+              "personagem": "Оля",
+              "ru": "— Хорошо! Ты купишь хлеб?",
+              "pt": "— Que bom! Você vai comprar pão?",
+              "audio": "Хорошо! Ты купишь хлеб?"
             },
             {
-              "personagem": "Анна",
-              "ru": "— Да, чай с молоком.",
-              "pt": "— Isso, chá com leite.",
-              "audio": "Да, чай с молоком."
+              "personagem": "Дима",
+              "ru": "— Да, куплю. Я обязательно куплю хлеб и молоко.",
+              "pt": "— Sim, vou comprar. Com certeza vou comprar pão e leite.",
+              "audio": "Да, куплю. Я обязательно куплю хлеб и молоко."
             },
             {
-              "personagem": "Официант",
-              "ru": "— Хорошо. Это всё?",
-              "pt": "— Certo. É tudo?",
-              "audio": "Хорошо. Это всё?"
+              "personagem": "Оля",
+              "ru": "— Отлично! До завтра!",
+              "pt": "— Ótimo! Até amanhã!",
+              "audio": "Отлично! До завтра!"
             },
             {
-              "personagem": "Игорь",
-              "ru": "— Да, это всё. Спасибо!",
-              "pt": "— Sim, é tudo. Obrigado!",
-              "audio": "Да, это всё. Спасибо!"
+              "personagem": "Дима",
+              "ru": "— До завтра!",
+              "pt": "— Até amanhã!",
+              "audio": "До завтра!"
             }
           ]
         },
         {
           "tipo": "texto",
-          "min": 8,
-          "titulo": "Мой любимый ресторан / Meu restaurante favorito",
-          "ru": "Мой любимый ресторан рядом с домом. Там вкусно и недорого. Я люблю рыбу и салат. Моя подруга любит мясо и картошку. Мы часто обедаем там в субботу. Нам нужно два часа, потому что мы любим говорить.",
-          "pt": "Meu restaurante favorito fica perto de casa. Lá é gostoso e barato. Eu gosto de peixe e salada. Minha amiga gosta de carne e batata. Nós almoçamos lá com frequência no sábado. Precisamos de duas horas, porque gostamos de conversar.",
+          "min": 5,
+          "titulo": "Мой план / Meu plano",
+          "ru": "Завтра я буду дома. Утром я прочитаю книгу и напишу письмо. Днём я буду готовить обед. Вечером я позвоню другу, и мы будем смотреть фильм.",
+          "pt": "Amanhã vou estar em casa. De manhã vou ler um livro e escrever uma carta. Durante o dia vou preparar o almoço. À noite vou ligar para um amigo e vamos assistir a um filme.",
           "perguntas": [
             {
-              "pergunta": "Где ресторан?",
-              "resposta": "Рядом с домом"
+              "pergunta": "Что он прочитает утром?",
+              "resposta": "Книгу"
             },
             {
-              "pergunta": "Что любит подруга?",
-              "resposta": "Мясо и картошку"
+              "pergunta": "Что он будет делать днём?",
+              "resposta": "Готовить обед"
             },
             {
-              "pergunta": "Когда они обедают там?",
-              "resposta": "В субботу"
+              "pergunta": "Что они будут делать вечером?",
+              "resposta": "Смотреть фильм"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
-          "enunciado": "Faça em voz alta um pedido completo: prato, bebida e «Это всё. Спасибо!»"
+          "min": 2,
+          "enunciado": "Diga o seu plano de amanhã, com «буду» e com perfectivo."
         }
       ]
     },
@@ -397,7 +422,7 @@
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Escreva 4 frases com «Мне нужен / нужна / нужно / нужны»."
+          "enunciado": "Escreva 4 frases sobre amanhã."
         },
         {
           "tipo": "exercicios",
@@ -405,163 +430,162 @@
           "itens": [
             {
               "tipo": "fill-gap",
-              "enunciado": "Я хочу ___. (peixe)",
+              "enunciado": "Завтра я ___ работать.",
               "opcoes": [
-                "рыба",
-                "рыбу",
-                "рыбы"
+                "буду",
+                "будет",
+                "будут"
               ],
-              "gabarito": "рыбу",
-              "explicacao": "Acusativo: -а → -у.",
+              "gabarito": "буду",
+              "explicacao": "я → буду.",
               "id": "ru-023-e01"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Мне ___ хлеб. (preciso de)",
+              "enunciado": "Он ___ дома.",
               "opcoes": [
-                "нужен",
-                "нужна",
-                "нужно"
+                "будет",
+                "буду",
+                "будешь"
               ],
-              "gabarito": "нужен",
-              "explicacao": "хлеб é masculino.",
+              "gabarito": "будет",
+              "explicacao": "он → будет.",
               "id": "ru-023-e02"
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Мне ___ вода.",
+              "enunciado": "Мы ___ гулять.",
               "opcoes": [
-                "нужна",
-                "нужен",
-                "нужно"
+                "будем",
+                "будете",
+                "будут"
               ],
-              "gabarito": "нужна",
-              "explicacao": "вода é feminino.",
+              "gabarito": "будем",
+              "explicacao": "мы → будем.",
               "id": "ru-023-e03"
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Мне ___ молоко.",
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está correto?",
               "opcoes": [
-                "нужно",
-                "нужна",
-                "нужны"
+                "Я буду читать",
+                "Я буду читаю",
+                "Я буду прочитать"
               ],
-              "gabarito": "нужно",
-              "explicacao": "молоко é neutro.",
+              "gabarito": "Я буду читать",
+              "explicacao": "«буду» + infinitivo imperfectivo.",
               "id": "ru-023-e04"
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Мне ___ деньги.",
+              "tipo": "multiple-choice",
+              "enunciado": "Futuro perfectivo de «прочитать» (я):",
               "opcoes": [
-                "нужны",
-                "нужна",
-                "нужно"
+                "прочитаю",
+                "прочитал",
+                "буду читать"
               ],
-              "gabarito": "нужны",
-              "explicacao": "деньги é plural.",
+              "gabarito": "прочитаю",
+              "explicacao": "Perfectivo conjugado como presente = futuro.",
               "id": "ru-023-e05"
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "«Можно воду?» significa:",
+              "enunciado": "«Я напишу письмо» significa:",
               "opcoes": [
-                "Posso pedir água?",
-                "Eu bebo água",
-                "A água é boa"
+                "Vou escrever a carta (e concluir)",
+                "Estou escrevendo a carta",
+                "Eu escrevia cartas"
               ],
-              "gabarito": "Posso pedir água?",
-              "explicacao": "«можно» = pode-se, é permitido.",
+              "gabarito": "Vou escrever a carta (e concluir)",
+              "explicacao": "Futuro perfectivo.",
               "id": "ru-023-e06"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Здесь нельзя громко говорить» significa:",
+              "tipo": "fill-gap",
+              "enunciado": "Завтра я ___ хлеб. (купить)",
               "opcoes": [
-                "Aqui não se pode falar alto",
-                "Aqui se pode falar alto",
-                "Aqui ninguém fala"
+                "куплю",
+                "покупаю",
+                "куплил"
               ],
-              "gabarito": "Aqui não se pode falar alto",
-              "explicacao": "«нельзя» = não pode.",
+              "gabarito": "куплю",
+              "explicacao": "п vira пл na forma «я».",
               "id": "ru-023-e07"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Мне нужно работать» significa:",
+              "tipo": "fill-gap",
+              "enunciado": "Я ___ маме. (позвонить)",
               "opcoes": [
-                "Eu preciso trabalhar",
-                "Eu quero trabalhar",
-                "Eu trabalho"
+                "позвоню",
+                "звоню",
+                "позвонил"
               ],
-              "gabarito": "Eu preciso trabalhar",
-              "explicacao": "«нужно» + infinitivo.",
+              "gabarito": "позвоню",
+              "explicacao": "Perfectivo: я позвоню.",
               "id": "ru-023-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Буду» pode ser usado com verbo perfectivo?",
+              "opcoes": [
+                "Não",
+                "Sim",
+                "Só com «уже»"
+              ],
+              "gabarito": "Não",
+              "explicacao": "Perfectivo tem futuro simples.",
+              "id": "ru-023-e09"
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
-              "audio": "Что вы хотите?",
+              "audio": "Завтра я буду работать",
               "opcoes": [
-                "Что вы хотите?",
-                "Что вы делаете?",
-                "Где вы живёте?"
+                "Завтра я буду работать",
+                "Вчера я работал",
+                "Сегодня я работаю"
               ],
-              "gabarito": "Что вы хотите?",
-              "explicacao": "«хотите» = o senhor quer.",
-              "id": "ru-023-e09"
+              "gabarito": "Завтра я буду работать",
+              "explicacao": "«буду» + infinitivo.",
+              "id": "ru-023-e10"
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Eu quero sopa e peixe.»",
+              "enunciado": "Ordene: «Amanhã eu vou comprar pão.»",
               "opcoes": [
-                "суп",
-                "и",
-                "рыбу",
-                "хочу",
-                "Я"
+                "хлеб",
+                "куплю",
+                "я",
+                "Завтра"
               ],
-              "gabarito": "Я хочу суп и рыбу.",
-              "explicacao": "Я + хочу + objetos (рыба → рыбу).",
-              "id": "ru-023-e10"
+              "gabarito": "Завтра я куплю хлеб.",
+              "explicacao": "Завтра + sujeito + perfectivo + objeto.",
+              "id": "ru-023-e11"
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Мне нужна вода",
-              "respostaEsperada": "Мне нужна вода",
-              "explicacao": "нужна concorda com «вода».",
-              "id": "ru-023-e11"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "«Я нужно воду» está errado porque:",
-              "opcoes": [
-                "quem precisa vai para o dativo: Мне нужна вода",
-                "falta o verbo «ser»",
-                "«вода» é masculino"
-              ],
-              "gabarito": "quem precisa vai para o dativo: Мне нужна вода",
-              "explicacao": "Dativo para quem precisa.",
+              "audio": "Завтра мы будем дома",
+              "respostaEsperada": "Завтра мы будем дома",
+              "explicacao": "мы → будем.",
               "id": "ru-023-e12"
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "«Вкусно» é:",
+              "enunciado": "Para dizer «todos os dias vou escrever»:",
               "opcoes": [
-                "advérbio (não muda)",
-                "adjetivo",
-                "verbo"
+                "Каждый день я буду писать",
+                "Каждый день я напишу",
+                "Каждый день я написал"
               ],
-              "gabarito": "advérbio (não muda)",
-              "explicacao": "Advérbios nunca mudam.",
+              "gabarito": "Каждый день я буду писать",
+              "explicacao": "Hábito: «буду» + imperfectivo.",
               "id": "ru-023-e13"
             },
             {
               "tipo": "producao",
-              "enunciado": "Escreva um pedido de restaurante com 4 frases.",
-              "respostaEsperada": "Добрый вечер! Я хочу суп и рыбу. Можно воду, пожалуйста? Это всё. Спасибо!",
+              "enunciado": "Escreva 4 frases sobre amanhã: 2 com «буду» e 2 com futuro perfectivo.",
+              "respostaEsperada": "Завтра я буду работать. Я буду дома. Я напишу письмо. Я куплю хлеб.",
               "id": "ru-023-e14"
             }
           ]
@@ -569,10 +593,10 @@
         {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Grave-se: faça um pedido de restaurante completo, com bebida."
+          "enunciado": "Grave-se contando o seu plano de amanhã e o da semana que vem."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você pede comida, diz o que precisa e conversa num restaurante. Próxima aula: revisão e prova final do nível inicial."
+  "notasParaOAluno": "Você fala do futuro de duas formas. Próxima aula: os verbos de movimento mais usados."
 }

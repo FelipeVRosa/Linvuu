@@ -1,82 +1,86 @@
 import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'ru', numero: 24, titulo: 'Revisão e prova final', nivel: 'a1',
-  objetivo: 'Revisar o alfabeto, o gênero, a concordância, os casos básicos, o presente e o passado, e fazer a prova final do nível inicial.',
-  nota: 'Você concluiu o nível inicial de russo: 24 aulas, 48 horas de estudo guiado. Revise as aulas por alguns dias e continue praticando com a leitura e a fala.',
+  idioma: 'ru', numero: 24, titulo: 'Gramática: verbos de movimento', nivel: 'a2',
+  objetivo: 'Usar os verbos de movimento mais frequentes: идти/ходить, ехать/ездить, лететь/летать, бежать/бегать e os prefixos при-, у-, в-, вы- e по-.',
+  nota: 'Você escolhe os verbos de movimento certos. Próxima aula: o dativo.',
   sessoes: [
-    sessao('S1', 'Mapa de revisão', [
-      revisao(5, 'Leia em voz alta o alfabeto, de А a Я, sem olhar.'),
-      gramatica(12, 'Tudo o que você já sabe, em uma tabela', 'Esta tabela resume cada ponto de gramática das aulas anteriores em uma linha. Releia uma linha por vez e diga um exemplo seu em voz alta. Se alguma linha parecer estranha, volte à aula indicada ou abra o tópico na aba Gramática.', {
-        tag: 'Revisão',
-        tabela: [
-          { tema: 'Sem artigos', regra: 'Não existe «o/a/um/uma»; o contexto decide.', aula: '11' }, { tema: 'Frase com «é»', regra: 'Sem «есть» no presente: «Это дом», «Я врач».', aula: '1, 4, 7' },
-          { tema: 'Formal e informal', regra: 'ты (amigos) × вы (formal ou plural).', aula: '2, 3' }, { tema: 'Gênero', regra: 'Consoante, -й, -ь: masculino; -а, -я: feminino; -о, -е, -мя: neutro.', aula: '11' },
-          { tema: 'Plural', regra: '-ы / -и / -а / -я; depois de г к х ж ч ш щ escreve-se -и.', aula: '11' }, { tema: 'Adjetivo e possessivo', regra: 'Concordam com o gênero e o número do substantivo.', aula: '5, 12' },
-          { tema: 'Ter / não ter', regra: 'У меня есть + nominativo; У меня нет + genitivo.', aula: '6, 7' }, { tema: 'Negação', regra: '«не» antes da palavra negada; «никогда не».', aula: '7, 13' },
-          { tema: 'Conjugações', regra: '1ª: -ю, -ешь, -ет, -ем, -ете, -ют; 2ª: -ю, -ишь, -ит, -им, -ите, -ят; irregulares: пить, есть, мочь, спать.', aula: '8, 9, 15' }, { tema: 'в e на', regra: 'в = dentro, país, cidade; на = em cima, espaço aberto, evento; verbos de posição.', aula: '8, 16' },
-          { tema: 'Onde? / Para onde?', regra: 'Parado: preposicional; movimento: acusativo (в школе → в школу).', aula: '16, 18' }, { tema: 'Objeto direto', regra: 'Acusativo: -а → -у; masculino e neutro inanimados não mudam.', aula: '9' },
-          { tema: 'Números e preço', regra: '1 рубль, 2–4 рубля, 5+ рублей.', aula: '10' }, { tema: 'Advérbios', regra: 'Nunca mudam; vêm do adjetivo trocando o final por -о.', aula: '13' },
-          { tema: 'Perguntas', regra: 'Sim/não pela entonação; palavra interrogativa no começo.', aula: '13' }, { tema: 'Casos', regra: 'Seis casos; cada terminação mostra a função da palavra.', aula: '14' },
-          { tema: 'Dias e horas', regra: 'в + dia (в пятницу); в + hora (в пять часов).', aula: '17' }, { tema: 'Verbos em -ся', regra: 'Depois de vogal -сь, depois de consoante -ся.', aula: '18' },
-          { tema: 'Passado', regra: '-л, -ла, -ло, -ли; был/была/было/были.', aula: '19' }, { tema: 'Aspecto', regra: 'Imperfectivo = processo ou hábito; perfectivo = resultado concluído; estude os pares.', aula: '20' },
-          { tema: 'Futuro', regra: 'буду + infinitivo (imperfectivo); verbo perfectivo conjugado (напишу).', aula: '21' }, { tema: 'Movimento', regra: 'идти / ходить, ехать / ездить; по- + forma = futuro (пойду, поеду).', aula: '22' },
-          { tema: 'Precisar e poder', regra: 'Мне нужно/нужен/нужна/нужны; можно; нельзя.', aula: '23' },
+    sessao('S1', 'Duas formas de «ir»', [
+      revisao(5, 'Escreva as 6 formas de «идти» e de «ехать».'),
+      gramatica(12, 'Determinado × indeterminado', 'Em português «ir» serve para tudo. Em russo, os verbos de movimento têm DOIS verbos para cada ideia. O verbo determinado descreve uma ação que acontece agora, numa única direção: «идти», «ехать». O verbo indeterminado descreve hábito, ida e volta ou capacidade: «ходить», «ездить». Além disso, o russo separa o MEIO: a pé (идти / ходить) × de transporte (ехать / ездить). Pergunta-guia: estou indo agora, numa direção (идти / ехать)? Ou é costume, ida e volta, ou capacidade (ходить / ездить)? No passado, «ходил» pode significar «fui e voltei». Com meios de transporte usa-se «на» + preposicional: на автобусе, на метро, на машине.', {
+        tag: 'Verbos de movimento',
+        comparacao: 'em português o mesmo «ir» serve para a pé, de ônibus, agora ou todos os dias. O russo escolhe o verbo pelo meio e pela situação.',
+        tabelas: [
+          { titulo: 'Os dois pares', linhas: [
+            { significado: 'a pé', determinado: 'идти', indeterminado: 'ходить', pt: 'ir a pé' }, { significado: 'de transporte', determinado: 'ехать', indeterminado: 'ездить', pt: 'ir de transporte' },
+          ] },
+          { titulo: 'Conjugação dos indeterminados', linhas: [
+            { pronome: 'я', ходить: 'хожу', ездить: 'езжу' }, { pronome: 'ты', ходить: 'ходишь', ездить: 'ездишь' }, { pronome: 'он / она', ходить: 'ходит', ездить: 'ездит' },
+            { pronome: 'мы', ходить: 'ходим', ездить: 'ездим' }, { pronome: 'вы', ходить: 'ходите', ездить: 'ездите' }, { pronome: 'они', ходить: 'ходят', ездить: 'ездят' },
+          ] },
         ],
+        exemplos: [['Я иду в магазин.', 'Eu estou indo à loja (agora).'], ['Я хожу в магазин каждый день.', 'Eu vou à loja todo dia (hábito).'], ['Он едет на работу.', 'Ele está indo ao trabalho (agora).'], ['Он ездит на работу на автобусе.', 'Ele vai ao trabalho de ônibus (sempre).']],
+        erros: [['Я иду на работу на автобусе.', 'Я еду на работу на автобусе.', 'Com transporte use «ехать», não «идти».'], ['Я иду в магазин каждый день.', 'Я хожу в магазин каждый день.', 'Hábito pede o indeterminado: ходить.']],
       }),
       palavras(8, [
-        ['много', 'mnóga', 'muito (Я много читаю)', 'a lot'], ['мало', 'mála', 'pouco (Я мало работаю)', 'little'], ['только', 'tólka', 'só, apenas', 'only'], ['если', 'iésli', 'se', 'if'], ['поэтому', 'payétamu', 'por isso', 'therefore'],
+        ['автобус', 'aftóbus', 'ônibus', 'bus'], ['метро', 'mitró', 'metrô (não muda)', 'metro'], ['поезд', 'póist', 'trem', 'train'], ['самолёт', 'samaliót', 'avião', 'plane'],
+        ['машина', 'mashína', 'carro', 'car'], ['велосипед', 'vilasipiét', 'bicicleta', 'bicycle'], ['пешком', 'pishkóm', 'a pé', 'on foot'], ['такси', 'taksí', 'táxi (não muda)', 'taxi'],
       ]),
-      producao(5, 'Apresente-se em 6 frases, em voz alta: nome, origem, profissão, onde mora, o que gosta e o que fez ontem.'),
+      producao(5, 'Diga: «Я иду в магазин. Я хожу в магазин каждый день. Я еду на работу. Я езжу на работу на автобусе.»'),
     ]),
-    sessao('S2', 'Leitura final', [
-      revisao(5, 'Releia o diálogo e o texto abaixo em voz alta antes de começar.'),
-      texto(10, 'Меня зовут Лена / Eu me chamo Lena', 'Меня зовут Лена. Я из Бразилии, но сейчас я живу в Москве. Я работаю в школе. Я учитель. У меня есть брат и сестра. Мой брат живёт в Сан-Паулу. Он инженер. Моя сестра студентка. Вчера я была дома. Я читала книгу и слушала музыку. Сегодня я работаю до пяти часов. После работы я иду в магазин. Мне нужен хлеб и молоко. Я люблю читать и гулять. Я очень люблю Москву.',
-        'Eu me chamo Lena. Sou do Brasil, mas agora moro em Moscou. Trabalho numa escola. Sou professora. Tenho um irmão e uma irmã. Meu irmão mora em São Paulo. Ele é engenheiro. Minha irmã é estudante. Ontem estive em casa. Li um livro e ouvi música. Hoje trabalho até as cinco. Depois do trabalho vou à loja. Preciso de pão e leite. Gosto de ler e passear. Gosto muito de Moscou.',
-        [['Откуда Лена?', 'Из Бразилии'], ['Где она живёт и работает?', 'Живёт в Москве, работает в школе'], ['Кто её брат?', 'Инженер'], ['Что она делала вчера?', 'Читала книгу и слушала музыку'], ['Что ей нужно в магазине?', 'Хлеб и молоко']]),
-      dialogo(10, 'Знакомство / Conhecendo-se', 'Dois adultos se conhecem num evento.', [
-        ['Анна', 'Здравствуйте! Как вас зовут?', 'Olá! Como o senhor se chama?'], ['Паоло', 'Здравствуйте! Меня зовут Паоло. А вас?', 'Olá! Eu me chamo Paolo. E a senhora?'], ['Анна', 'Меня зовут Анна. Откуда вы?', 'Eu me chamo Anna. De onde o senhor é?'],
-        ['Паоло', 'Я из Италии. Я живу в Москве. А вы?', 'Sou da Itália. Moro em Moscou. E a senhora?'], ['Анна', 'Я русская. Я живу в Москве. Вы работаете?', 'Sou russa. Moro em Moscou. O senhor trabalha?'],
-        ['Паоло', 'Да, я работаю в офисе. Я инженер.', 'Sim, trabalho num escritório. Sou engenheiro.'], ['Анна', 'Вы любите Москву?', 'O senhor gosta de Moscou?'], ['Паоло', 'Да, очень! Мне нравится этот город.', 'Sim, muito! Eu gosto desta cidade.'],
+    sessao('S2', 'Voar, correr, chegar e sair', [
+      revisao(5, 'Escreva 4 frases com «идти / ходить» e 4 com «ехать / ездить».'),
+      palavras(8, [
+        ['лететь', 'litiét', 'voar (determinado: лечу, летишь)', 'to fly'], ['летать', 'litát', 'voar (indeterminado)', 'to fly (habitually)'], ['бежать', 'bizhát', 'correr (determinado: бегу, бежишь)', 'to run'], ['бегать', 'biégat', 'correr (indeterminado)', 'to run (habitually)'],
+        ['приходить', 'prikhadít', 'chegar a pé', 'to arrive'], ['уходить', 'ukhadít', 'sair, ir embora a pé', 'to leave'], ['приезжать', 'priyezzhát', 'chegar de transporte', 'to arrive by vehicle'], ['уезжать', 'uyezzhát', 'partir de transporte', 'to leave by vehicle'],
       ]),
-      producao(5, 'Responda em voz alta às perguntas do texto e do diálogo, como se fosse você.'),
-    ]),
-    sessao('S3', 'Os erros mais comuns', [
-      revisao(5, 'Escreva 3 erros que você já cometeu em russo e a forma certa.'),
-      gramatica(15, 'Os 10 erros mais comuns de quem fala português', 'Estes dez erros aparecem com mais frequência em quem fala português. Corrigir só esses já deixa a sua fala muito mais natural. Leia cada par em voz alta: primeiro o errado (para reconhecer o som estranho), depois o certo (para fixar).', {
-        tag: 'Revisão',
-        erros: [
-          ['Это есть книга.', 'Это книга.', 'Sem «есть» no presente para dizer «é».'], ['Мой книга.', 'Моя книга.', 'O possessivo concorda com o gênero.'], ['Я читаю книга.', 'Я читаю книгу.', 'Objeto direto no acusativo.'],
-          ['Я живу в Бразилия.', 'Я живу в Бразилии.', '«в» pede o preposicional.'], ['Я иду в магазине.', 'Я иду в магазин.', 'Movimento pede o acusativo.'], ['Я никогда читаю.', 'Я никогда не читаю.', 'Dupla negação obrigatória.'],
-          ['У меня нет сестра.', 'У меня нет сестры.', '«нет» pede o genitivo.'], ['Вчера я есть дома.', 'Вчера я был дома.', 'No passado: был/была.'], ['Я нужно воду.', 'Мне нужна вода.', 'Quem precisa vai para o dativo.'], ['Ты есть студент?', 'Ты студент?', 'Pergunta pela entonação, sem «есть».'],
+      gramatica(12, 'Prefixos de direção e o futuro com по-', 'Os verbos de movimento aceitam prefixos que dizem a direção: при- (chegar), у- (ir embora), в- (entrar), вы- (sair de dentro). Exemplos a pé: приходить, уходить, входить, выходить. Com transporte: приезжать, уезжать, въезжать, выезжать. O prefixo «по-» forma o perfectivo de «идти» e «ехать»: «пойти» e «поехать». Eles servem para o futuro («Завтра я пойду в магазин» = amanhã vou à loja) e para dizer que alguém partiu («Я поехал на работу» = saí para o trabalho). No passado: пошёл, пошла, пошли; поехал, поехала, поехали.', {
+        tag: 'Verbos de movimento',
+        tabelas: [
+          { titulo: 'Direção', linhas: [
+            { ideia: 'chegar', a_pe: 'приходить / прийти', transporte: 'приезжать / приехать' }, { ideia: 'ir embora', a_pe: 'уходить / уйти', transporte: 'уезжать / уехать' },
+            { ideia: 'entrar', a_pe: 'входить / войти', transporte: 'въезжать / въехать' }, { ideia: 'sair de dentro', a_pe: 'выходить / выйти', transporte: 'выезжать / выехать' },
+          ] },
+          { titulo: 'Futuro de «пойти» e «поехать»', linhas: [
+            { pronome: 'я', пойти: 'пойду', поехать: 'поеду' }, { pronome: 'ты', пойти: 'пойдёшь', поехать: 'поедешь' }, { pronome: 'он / она', пойти: 'пойдёт', поехать: 'поедет' },
+            { pronome: 'мы', пойти: 'пойдём', поехать: 'поедем' }, { pronome: 'вы', пойти: 'пойдёте', поехать: 'поедете' }, { pronome: 'они', пойти: 'пойдут', поехать: 'поедут' },
+          ] },
         ],
+        erros: [['Я идти завтра в магазин.', 'Завтра я пойду в магазин.', 'Para o futuro use «по-» + forma conjugada (пойду), nunca o infinitivo sozinho.'], ['Я прихожу на работу на автобусе.', 'Я приезжаю на работу на автобусе.', 'Com transporte use «приезжать» (приходить é a pé).']],
       }),
-      producao(10, 'Leia cada erro em voz alta e diga a forma certa. Depois grave 5 frases suas, sem nenhum desses erros.'),
+      producao(5, 'Diga: «Я прихожу на работу в девять часов. Я ухожу в пять. Завтра я поеду в Москву.»'),
     ]),
-    sessao('S4', 'Prova final do nível inicial', [
-      revisao(5, 'Releia o mapa de revisão e escolha os 3 pontos em que você ainda erra.'),
-      exercicios(20, [
-        mc('Gênero de «окно»:', ['neutro', 'feminino', 'masculino'], 'neutro', 'Terminação -о: neutro.'),
-        lacuna('Это ___ книга. (nova)', ['новая', 'новый', 'новое'], 'новая', 'книга é feminino.'),
-        mc('Plural de «книга»:', ['книги', 'книгы', 'книга'], 'книги', 'Depois de г: -и.'),
-        lacuna('У меня нет ___. (irmã)', ['сестры', 'сестра', 'сестру'], 'сестры', '«нет» + genitivo.'),
-        lacuna('Я живу в ___. (Moscou)', ['Москве', 'Москва', 'Москву'], 'Москве', 'в + preposicional.'),
-        lacuna('Я читаю ___. (livro)', ['книгу', 'книга', 'книги'], 'книгу', 'Acusativo: -а → -у.'),
-        lacuna('Я иду ___. (para casa)', ['домой', 'дома', 'дом'], 'домой', 'Movimento: «домой».'),
-        mc('Passado de «работать» (ela):', ['работала', 'работал', 'работает'], 'работала', 'Feminino: -ла.'),
-        lacuna('Вчера я ___ дома. (estive; homem)', ['был', 'была', 'есть'], 'был', 'Homem: был.'),
-        lacuna('Мне ___ вода. (preciso de)', ['нужна', 'нужен', 'нужно'], 'нужна', 'вода é feminino.'),
-        mc('Advérbio de «хороший»:', ['хорошо', 'хорошая', 'хорошие'], 'хорошо', 'Advérbio: troque o final por -о.'),
-        mc('«Во вторник» = ', ['na terça', 'na quarta', 'na quinta'], 'na terça', '«вторник» pede «во».'),
-        lacuna('Сейчас пять ___. (horas)', ['часов', 'часа', 'час'], 'часов', 'De 5 a 12: часов.'),
-        ordem('Ordene: «Eu nunca leio.»', ['никогда', 'не', 'читаю', 'Я'], 'Я никогда не читаю.', 'Dupla negação.'),
-        lacuna('Мы ___ быстро. (говорить)', ['говорим', 'говорем', 'говорят'], 'говорим', '2ª conjugação: мы → -им.'),
-        lacuna('Завтра я ___ работать. (буду)', ['буду', 'будет', 'будем'], 'буду', 'Futuro composto: я буду + infinitivo.'),
-        mc('«Я прочитал книгу» sugere:', ['ação concluída com resultado', 'processo sem fim', 'hábito'], 'ação concluída com resultado', 'Perfectivo: resultado.'),
-        ditado('Я живу в Москве и работаю в школе', 'preposicional + verbos -ть.'),
-        livre('Escreva 6 frases: nome, origem, profissão, onde mora, o que gosta e o que fez ontem.', 'Меня зовут Анна. Я из Бразилии. Я врач. Я живу в Москве. Я люблю читать книги. Вчера я была дома.'),
+    sessao('S3', 'Diálogo e leitura', [
+      revisao(5, 'Escreva 4 frases sobre como você vai ao trabalho ou à escola.'),
+      dialogo(12, 'Как ты ездишь на работу? / Como você vai ao trabalho?', 'Dois colegas comparam o caminho.', [
+        ['Борис', 'Как ты ездишь на работу?', 'Como você vai ao trabalho?'], ['Нина', 'Я езжу на метро. А ты?', 'Eu vou de metrô. E você?'], ['Борис', 'Я хожу пешком. Моя работа рядом.', 'Eu vou a pé. Meu trabalho é perto.'],
+        ['Нина', 'Ты всегда ходишь пешком?', 'Você sempre vai a pé?'], ['Борис', 'Нет, иногда я езжу на автобусе.', 'Não, às vezes vou de ônibus.'], ['Нина', 'А завтра ты пойдёшь на работу пешком?', 'E amanhã você vai a pé para o trabalho?'],
+        ['Борис', 'Да, завтра я пойду пешком. А ты поедешь на метро?', 'Sim, amanhã vou a pé. E você vai de metrô?'], ['Нина', 'Да, как всегда!', 'Sim, como sempre!'],
       ]),
-      producao(5, 'Grave-se: apresentação completa de 1 minuto, com tudo o que você aprendeu.'),
+      texto(8, 'Мой путь на работу / Meu caminho para o trabalho', 'Я живу в Москве. Каждый день я хожу на работу пешком, потому что мой офис рядом. Иногда я езжу на автобусе. Мой друг живёт далеко. Он ездит на работу на метро. Он выходит из дома в семь часов и приезжает на работу в восемь. Завтра я пойду на работу пешком, а он поедет на метро.',
+        'Eu moro em Moscou. Todo dia vou a pé para o trabalho, porque meu escritório é perto. Às vezes vou de ônibus. Meu amigo mora longe. Ele vai ao trabalho de metrô. Ele sai de casa às sete horas e chega ao trabalho às oito. Amanhã vou a pé para o trabalho, e ele vai de metrô.',
+        [['Как автор ходит на работу?', 'Пешком'], ['Как ездит друг?', 'На метро'], ['Когда друг приезжает на работу?', 'В восемь часов']]),
+      producao(5, 'Conte como você vai ao trabalho ou à escola todos os dias e como irá amanhã.'),
+    ]),
+    sessao('S4', 'Prática', [
+      revisao(5, 'Escreva 4 frases com verbos de movimento: agora, hábito, futuro e passado.'),
+      exercicios(20, [
+        mc('Agora, numa direção, a pé:', ['идти', 'ходить', 'ехать'], 'идти', 'Determinado: agora, numa direção.'),
+        mc('Hábito, a pé:', ['ходить', 'идти', 'ехать'], 'ходить', 'Indeterminado: hábito.'),
+        lacuna('Каждый день я ___ в магазин. (a pé; hábito)', ['хожу', 'иду', 'еду'], 'хожу', 'Hábito: ходить.'),
+        lacuna('Сейчас я ___ на работу. (de transporte)', ['еду', 'езжу', 'иду'], 'еду', 'Agora, de transporte: ехать.'),
+        lacuna('Он всегда ___ на автобусе.', ['ездит', 'едет', 'ходит'], 'ездит', 'Hábito, de transporte: ездить.'),
+        lacuna('Завтра я ___ в магазин. (a pé)', ['пойду', 'иду', 'хожу'], 'пойду', 'Futuro: по- + forma conjugada.'),
+        lacuna('Завтра мы ___ в Москву. (de transporte)', ['поедем', 'едем', 'ездим'], 'поедем', 'Futuro: поехать.'),
+        mc('«Я приезжаю на работу на метро» significa:', ['Eu chego ao trabalho de metrô', 'Eu saio de metrô', 'Eu moro no metrô'], 'Eu chego ao trabalho de metrô', 'приезжать = chegar de transporte.'),
+        mc('«Уходить» significa:', ['ir embora, sair', 'chegar', 'entrar'], 'ir embora, sair', 'Prefixo у-: sair, ir embora.'),
+        mc('Passado de «пойти» (ela):', ['пошла', 'пошёл', 'пошли'], 'пошла', 'Feminino: пошла.'),
+        ouvir('Я хожу на работу пешком', ['Я хожу на работу пешком', 'Я иду на работу пешком', 'Я езжу на работу'], 'Я хожу на работу пешком', 'ходить = hábito a pé.'),
+        ordem('Ordene: «Eu vou ao trabalho de ônibus todos os dias.»', ['автобусе', 'на', 'езжу', 'работу', 'Я', 'на'], 'Я езжу на работу на автобусе.', 'на + acusativo (destino); на + preposicional (meio).'),
+        ditado('Завтра я поеду в Москву', 'поехать: я поеду.'),
+        livre('Escreva 4 frases: como você vai ao trabalho, um hábito, o que fará amanhã e de onde você sai.', 'Я хожу на работу пешком. Иногда я езжу на метро. Завтра я пойду в магазин. Я ухожу из дома в семь часов.'),
+      ]),
+      producao(5, 'Grave-se contando como você se desloca todos os dias e o que fará amanhã.'),
     ]),
   ],
 });

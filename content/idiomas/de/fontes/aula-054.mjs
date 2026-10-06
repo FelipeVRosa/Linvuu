@@ -3,7 +3,7 @@ import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, grama
 export default aula({
   idioma: 'de', numero: 54, titulo: 'Konjunktiv II 1: situações irreais e desejos', nivel: 'b1',
   objetivo: 'Formar condicionais irreais com «wenn» + Konjunktiv II («Wenn ich Zeit hätte, würde ich reisen»), expressar desejos («Ich wünschte, …»), dar conselhos hipotéticos e perguntar «Was würdest du tun, wenn …?».',
-  nota: 'Você fala do que não é real: sonhos, hipóteses e desejos. Próxima aula: o Konjunktiv II no passado.',
+  nota: 'Você fala do que não é real: sonhos, hipóteses e desejos. Próxima aula: o infinitivo com «zu».',
   sessoes: [
     sessao('S1', 'Wenn + Konjunktiv II', [
       revisao(5, 'Escreva 6 frases com würde, hätte, wäre e könnte do A2.'),

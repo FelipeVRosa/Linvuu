@@ -19,6 +19,9 @@ function blocosDe(grupos: Grupo[]): Bloco[] {
   return out;
 }
 
+/** Blocos que já têm aulas no ar, mas ainda não estão completos. */
+const EM_CONSTRUCAO: Record<string, string[]> = { de: ['b2'] };
+
 const horas = (sessoes: number) => (sessoes / 2).toLocaleString('pt-BR', { maximumFractionDigits: 1 });
 
 export function TrilhaIdioma() {
@@ -44,6 +47,9 @@ export function TrilhaIdioma() {
 
   if (!curso) return null;
   const total = stats?.total ?? 0;
+  const aberto = (chave: string) => EM_CONSTRUCAO[curso.id]?.includes(chave) ?? false;
+  const completos = blocos.filter((b) => !aberto(b.chave));
+  const ate = completos.length ? completos[completos.length - 1].chave : blocos[blocos.length - 1]?.chave;
 
   return (
     <div className="trilha-idioma">
@@ -63,7 +69,7 @@ export function TrilhaIdioma() {
       {blocos.length > 0 ? (
         <>
           <p className="trilha-resumo">
-            <strong>{curso.nome}</strong>: {grupos.length} aulas, {total} sessões de ~30 min (cerca de {horas(total)} h), de {NIVEL_CURTO[blocos[0].chave] ?? 'A1'} a {NIVEL_CURTO[blocos[blocos.length - 1].chave] ?? ''}.
+            <strong>{curso.nome}</strong>: {grupos.length} aulas, {total} sessões de ~30 min (cerca de {horas(total)} h), de {NIVEL_CURTO[blocos[0].chave] ?? 'A1'} a {NIVEL_CURTO[ate ?? ''] ?? ''}{completos.length < blocos.length ? ', com o início do B2 já no ar' : ''}.
           </p>
           <ol className="trilha-niveis" ref={lista}>
             {blocos.map((b, i) => (
@@ -73,6 +79,7 @@ export function TrilhaIdioma() {
                   <div className="nivel-topo">
                     <span className="fase-nivel">{NIVEL_CURTO[b.chave] ?? b.chave.toUpperCase()}</span>
                     <h3>{NIVEL_LABEL[b.chave] ?? b.chave}</h3>
+                    {aberto(b.chave) && <span className="fase-nivel">em construção</span>}
                   </div>
                   <p className="nivel-meta">Aulas {b.aulas[0].aula} a {b.aulas[b.aulas.length - 1].aula} · {b.sessoes} sessões · {horas(b.sessoes)} h</p>
                   <div className="nivel-acoes">

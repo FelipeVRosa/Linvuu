@@ -1,70 +1,67 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 60, titulo: 'Verbos com preposição 1', nivel: 'b1',
-  objetivo: 'Aprender os verbos mais comuns que pedem uma preposição fixa (auf, an, für, über, um, von, mit, bei, zu) e o caso que ela rege, e usá-los em frases completas.',
-  nota: 'Você usa os verbos com preposição mais comuns. Próxima aula: os advérbios pronominais (darauf, worauf…).',
+  idioma: 'de', numero: 60, titulo: 'Verbos com preposição 2: darauf, daran, worauf, woran', nivel: 'b1',
+  objetivo: 'Usar os advérbios pronominais com «da(r)-» (darauf, daran, davon…) para retomar coisas e situações, as perguntas com «wo(r)-» (worauf, woran…), e a antecipação «darauf, dass …» / «darauf, … zu …».',
+  nota: 'Você retoma e pergunta com advérbios pronominais. Próxima aula: adjetivos e substantivos com preposição.',
   sessoes: [
-    sessao('S1', 'Verbos com «auf»', [
-      revisao(5, 'Escreva 6 frases com pares de conectores.'),
+    sessao('S1', 'Da(r)- + preposição', [
+      revisao(5, 'Escreva 8 verbos com preposição e o caso que pedem.'),
       palavras(8, [
-        ['warten auf', 'vár-ten auf', 'esperar por', 'to wait for'], ['sich freuen auf', 'zich fróien auf', 'estar ansioso por', 'to look forward to'], ['hoffen auf', 'hó-fen auf', 'ter esperança em', 'to hope for'], ['sich vorbereiten auf', 'zich fôr-be-ráiten auf', 'preparar-se para', 'to prepare for'],
-        ['achten auf', 'árrten auf', 'prestar atenção em', 'to pay attention to'], ['antworten auf', 'ánt-vor-ten auf', 'responder a', 'to answer'], ['reagieren auf', 'reaguíren auf', 'reagir a', 'to react to'], ['sich verlassen auf', 'zich fer-lássen auf', 'confiar em', 'to rely on'],
+        ['darauf', 'dá-rauf', 'nisso, por isso, a isso', 'for it'], ['daran', 'dá-ran', 'nisso, a isso (conexão)', 'of it'], ['davon', 'dá-fon', 'disso', 'of it'], ['dafür', 'da-für', 'para isso, a favor', 'for it'],
+        ['darüber', 'da-rü-ber', 'sobre isso', 'about it'], ['damit', 'dá-mit', 'com isso', 'with it'], ['dazu', 'da-tsu', 'para isso, além disso', 'to it'], ['darum', 'da-rúm', 'por isso', 'for it'],
       ]),
-      gramatica(14, 'Verbos com preposição, passo a passo', 'PASSO 1: muitos verbos alemães pedem uma PREPOSIÇÃO FIXA, que faz parte do verbo e não pode ser trocada: «warten AUF», «denken AN», «sich interessieren FÜR». PASSO 2: a preposição REGE UM CASO (acusativo ou dativo), e o substantivo depois dela leva esse caso: «Ich warte auf DEN Bus» (acusativo). PASSO 3: aprenda SEMPRE o verbo com a preposição e o caso: «warten auf + Akk». PASSO 4: muitas vezes a preposição alemã é diferente da portuguesa: «esperar POR» = «warten AUF»; «pensar EM» = «denken AN». PASSO 5: nesta sessão, os verbos com «AUF»: todos pedem ACUSATIVO nos casos mais comuns: «Ich freue mich auf den Urlaub», «Ich hoffe auf gutes Wetter.» PASSO 6: com uma pessoa, use o pronome ou o substantivo no acusativo: «Ich warte auf meinen Bruder» / «Ich warte auf ihn.»', {
-        tag: 'Verbos',
-        comparacao: 'em português a preposição muda por verbo («esperar por», «pensar em», «gostar de»). O alemão faz o mesmo, mas as preposições não coincidem com as portuguesas. Por isso aprenda o verbo e a preposição juntos.',
+      gramatica(14, 'O advérbio pronominal com da(r)-, passo a passo', 'PASSO 1: se o verbo pede uma preposição e o complemento é uma COISA ou uma SITUAÇÃO já mencionada, o alemão troca «preposição + substantivo» por «DA(R)- + preposição»: «Ich warte auf den Bus» → «Ich warte DARAUF.» PASSO 2: forma: «da-» + preposição que começa por consoante (damit, davon, dafür, dazu, danach) e «DAR-» + preposição que começa por vogal (darauf, daran, darüber, darum, darin). PASSO 3: serve APENAS para coisas e situações. Para PESSOAS, use a preposição + pronome: «Ich warte auf ihn» (e não «darauf»). PASSO 4: o advérbio pronominal pode vir no começo da frase para dar ênfase: «Darauf freue ich mich.» PASSO 5: lembre: «damit» também é conjunção (para que); aqui é advérbio («com isso»).', {
+        tag: 'Pronomes',
         tabela: [
-          { verbo: 'warten auf + Akk', frase: 'Ich warte auf den Bus.' }, { verbo: 'sich freuen auf + Akk', frase: 'Ich freue mich auf den Urlaub.' }, { verbo: 'hoffen auf + Akk', frase: 'Ich hoffe auf gutes Wetter.' }, { verbo: 'sich vorbereiten auf + Akk', frase: 'Ich bereite mich auf die Prüfung vor.' },
-          { verbo: 'achten auf + Akk', frase: 'Achte auf den Verkehr!' }, { verbo: 'antworten auf + Akk', frase: 'Er antwortet auf die E-Mail.' }, { verbo: 'sich verlassen auf + Akk', frase: 'Ich verlasse mich auf dich.' },
+          { verbo: 'warten auf', completo: 'Ich warte auf den Bus.', retomada: 'Ich warte darauf.' }, { verbo: 'denken an', completo: 'Ich denke an die Reise.', retomada: 'Ich denke daran.' }, { verbo: 'sprechen über', completo: 'Wir sprechen über das Wetter.', retomada: 'Wir sprechen darüber.' }, { verbo: 'sich interessieren für', completo: 'Ich interessiere mich für Musik.', retomada: 'Ich interessiere mich dafür.' },
+          { verbo: 'träumen von', completo: 'Ich träume von einem Haus.', retomada: 'Ich träume davon.' }, { verbo: 'sich beschäftigen mit', completo: 'Ich beschäftige mich mit dem Problem.', retomada: 'Ich beschäftige mich damit.' },
         ],
-        erros: [['Ich warte für den Bus.', 'Ich warte auf den Bus.', 'Preposição fixa: «warten auf».'], ['Ich warte auf dem Bus.', 'Ich warte auf den Bus.', '«warten auf» pede acusativo.'], ['Ich freue mich über den Urlaub. (que vem)', 'Ich freue mich auf den Urlaub.', '«sich freuen auf» = ansioso pelo futuro.']],
+        erros: [['Ich warte auf es.', 'Ich warte darauf.', 'Coisa/situação: «darauf», não «auf es».'], ['Ich warte darauf ihn.', 'Ich warte auf ihn.', 'Pessoa: preposição + pronome.'], ['Ich denke dran die Reise.', 'Ich denke an die Reise. / Ich denke daran.', 'Ou o substantivo, ou o advérbio pronominal.']],
       }),
-      producao(3, 'Diga 6 frases com verbos de «auf»: «Ich warte auf … Ich freue mich auf … Ich hoffe auf …»'),
+      producao(3, 'Retome 6 coisas em voz alta com «da(r)-»: «Ich warte auf den Bus → Ich warte darauf.»'),
     ]),
-    sessao('S2', 'Verbos com «an», «für» e «über»', [
-      revisao(5, 'Escreva os 7 verbos de «auf» com o caso e uma frase com cada.'),
+    sessao('S2', 'Wo(r)- + preposição', [
+      revisao(5, 'Escreva 6 pares de frases: com substantivo e com advérbio pronominal.'),
       palavras(8, [
-        ['denken an', 'dén-ken an', 'pensar em', 'to think of'], ['glauben an', 'gláu-ben an', 'acreditar em', 'to believe in'], ['teilnehmen an', 'táil-né-men an', 'participar de', 'to take part in'], ['sich erinnern an', 'zich er-í-nern an', 'lembrar-se de', 'to remember'],
-        ['sich interessieren für', 'zich in-te-re-síren für', 'interessar-se por', 'to be interested in'], ['sich entscheiden für', 'zich ent-xái-den für', 'decidir-se por', 'to decide on'], ['sprechen über', 'xpré-çen ü-ber', 'falar sobre', 'to talk about'], ['sich ärgern über', 'zich ér-guern ü-ber', 'irritar-se com', 'to be annoyed about'],
+        ['worauf', 'vo-rauf', 'em que, por quê (coisa)', 'what … for'], ['woran', 'vo-ran', 'em que (coisa)', 'what … of'], ['wovon', 'vo-fon', 'de quê', 'what … of'], ['wofür', 'vo-für', 'para quê, por quê', 'what for'],
+        ['worüber', 'vo-rü-ber', 'sobre o quê', 'what about'], ['womit', 'vo-mít', 'com quê', 'with what'], ['wozu', 'vo-tsu', 'para quê', 'what for'], ['worum', 'vo-rúm', 'sobre o quê', 'what about'],
       ]),
-      gramatica(12, 'Verbos com an, für e über', 'PASSO 1: com «AN»: «denken an + Akk» («Ich denke an dich»), «glauben an + Akk» («Ich glaube an dich»), «sich erinnern an + Akk», e «teilnehmen an + DATIVO» («Ich nehme an dem Kurs teil»: «am Kurs»). PASSO 2: com «FÜR»: sempre acusativo: «sich interessieren für + Akk» («Ich interessiere mich für Musik»), «sich entscheiden für + Akk», «sich bedanken für + Akk». PASSO 3: com «ÜBER»: acusativo: «sprechen über + Akk», «sich ärgern über + Akk», «sich freuen über + Akk» (alegrar-se com o que há), «diskutieren über + Akk». PASSO 4: lembre da diferença «freuen auf» (futuro) × «freuen über» (presente). PASSO 5: um truque: «über» = sobre o assunto, «für» = a favor/interesse, «an» = conexão mental.', {
-        tag: 'Verbos',
+      gramatica(12, 'Perguntar por coisas com wo(r)-', 'PASSO 1: para perguntar por uma COISA ou SITUAÇÃO ligada ao verbo com preposição, use «WO(R)-» + preposição: «Ich warte auf den Bus» → «WORAUF wartest du?» PASSO 2: a mesma regra de «da(r)-»: «wo-» + consoante (womit, wovon, wofür, wozu) e «wor-» + vogal (worauf, woran, worüber, worum). PASSO 3: para PESSOAS, use a preposição + pronome interrogativo: «Auf WEN wartest du?» (acusativo), «Mit WEM sprichst du?» (dativo). PASSO 4: compare: «Worauf wartest du?» (coisa) × «Auf wen wartest du?» (pessoa). PASSO 5: responda com a preposição + substantivo ou «darauf»: «Ich warte auf den Bus» ou «Ich warte darauf.» PASSO 6: em conversa, «woran denkst du?», «worüber sprecht ihr?» e «wofür interessierst du dich?» são muito comuns.', {
+        tag: 'Pronomes',
         tabela: [
-          { verbo: 'denken an + Akk', frase: 'Ich denke an dich.' }, { verbo: 'teilnehmen an + Dat', frase: 'Ich nehme am Kurs teil.' }, { verbo: 'sich interessieren für + Akk', frase: 'Ich interessiere mich für Musik.' }, { verbo: 'sich entscheiden für + Akk', frase: 'Ich habe mich für den Kurs entschieden.' },
-          { verbo: 'sprechen über + Akk', frase: 'Wir sprechen über das Wetter.' }, { verbo: 'sich ärgern über + Akk', frase: 'Ich ärgere mich über den Lärm.' }, { verbo: 'sich freuen über + Akk', frase: 'Ich freue mich über das Geschenk.' },
+          { coisa: 'Worauf wartest du?', pessoa: 'Auf wen wartest du?' }, { coisa: 'Woran denkst du?', pessoa: 'An wen denkst du?' }, { coisa: 'Worüber sprecht ihr?', pessoa: 'Über wen sprecht ihr?' }, { coisa: 'Wofür interessierst du dich?', pessoa: 'Für wen interessierst du dich?' },
+          { coisa: 'Womit beschäftigst du dich?', pessoa: 'Mit wem beschäftigst du dich?' }, { coisa: 'Wovon träumst du?', pessoa: 'Von wem träumst du?' },
         ],
-        erros: [['Ich denke von dir.', 'Ich denke an dich.', 'Preposição fixa: «denken an».'], ['Ich interessiere mich in Musik.', 'Ich interessiere mich für Musik.', '«interessieren für».'], ['Wir sprechen von das Wetter.', 'Wir sprechen über das Wetter.', '«sprechen über + Akk».']],
+        erros: [['Auf was wartest du?', 'Worauf wartest du?', 'Em alemão correto: «worauf» para coisas.'], ['Worauf wartest du? (a pessoa)', 'Auf wen wartest du?', 'Pessoa: preposição + wen/wem.'], ['Wo denkst du an?', 'Woran denkst du?', 'A preposição se junta ao «wo(r)-».']],
       }),
-      producao(5, 'Diga 6 frases com verbos de «an», «für» e «über»: «Ich denke an … Ich interessiere mich für … Wir sprechen über …»'),
+      producao(5, 'Faça 6 perguntas em voz alta com «wo(r)-»: «Worauf wartest du? Woran denkst du? Worüber sprecht ihr?»'),
     ]),
-    sessao('S3', 'Verbos com «um», «von», «mit», «bei» e «zu»', [
-      revisao(5, 'Escreva 8 verbos com preposição e o caso que cada um pede.'),
-      gramatica(10, 'Mais verbos com preposição', 'PASSO 1: com «UM» + acusativo: «sich kümmern um» (cuidar de), «sich bewerben um» (candidatar-se a), «bitten um» (pedir), «es geht um» (trata-se de). PASSO 2: com «VON» + dativo: «träumen von», «erzählen von», «abhängen von» (depender de), «halten von» (achar de). PASSO 3: com «MIT» + dativo: «sich beschäftigen mit» (ocupar-se com), «anfangen mit», «aufhören mit», «rechnen mit» (contar com), «zufrieden sein mit». PASSO 4: com «BEI» + dativo: «sich bedanken bei» (agradecer a), «sich entschuldigen bei». PASSO 5: com «ZU» + dativo: «gehören zu» (fazer parte de), «einladen zu» (convidar para), «gratulieren zu» (parabenizar por).', {
-        tag: 'Verbos',
+    sessao('S3', 'Darauf, dass … e darauf, … zu …', [
+      revisao(5, 'Escreva 6 perguntas com «wo(r)-» e 3 com «auf wen / mit wem».'),
+      gramatica(10, 'O advérbio pronominal antecipa uma frase', 'PASSO 1: o advérbio pronominal também ANTECIPA uma oração com «DASS» ou um infinitivo com «ZU»: «Ich warte DARAUF, dass du kommst» (eu espero que você venha). PASSO 2: com o MESMO sujeito, prefira o infinitivo: «Ich freue mich DARAUF, dich zu sehen.» PASSO 3: com sujeitos DIFERENTES, use «dass»: «Ich freue mich darauf, dass du kommst.» PASSO 4: lembre da preposição do verbo: «sich freuen auf» → «darauf», «sich ärgern über» → «darüber», «denken an» → «daran». PASSO 5: o advérbio pronominal é obrigatório quando o verbo pede preposição: «Ich ärgere mich darüber, dass …» (e não «Ich ärgere mich, dass …»).', {
+        tag: 'Frase',
         tabela: [
-          { verbo: 'sich kümmern um + Akk', frase: 'Ich kümmere mich um die Kinder.' }, { verbo: 'bitten um + Akk', frase: 'Ich bitte um Hilfe.' }, { verbo: 'träumen von + Dat', frase: 'Ich träume von einem Haus am Meer.' }, { verbo: 'abhängen von + Dat', frase: 'Das hängt vom Wetter ab.' },
-          { verbo: 'sich beschäftigen mit + Dat', frase: 'Ich beschäftige mich mit Musik.' }, { verbo: 'rechnen mit + Dat', frase: 'Ich rechne mit Regen.' }, { verbo: 'sich bedanken bei + Dat', frase: 'Ich bedanke mich bei dir.' }, { verbo: 'einladen zu + Dat', frase: 'Er lädt mich zum Essen ein.' },
+          { construcao: 'darauf + dass', frase: 'Ich warte darauf, dass du kommst.' }, { construcao: 'darauf + zu (mesmo sujeito)', frase: 'Ich freue mich darauf, dich zu sehen.' }, { construcao: 'darüber + dass', frase: 'Ich ärgere mich darüber, dass er nicht anruft.' }, { construcao: 'daran + zu', frase: 'Ich denke daran, im Sommer zu reisen.' }, { construcao: 'davon + dass', frase: 'Er träumt davon, dass er reich wird.' },
         ],
       }),
-      dialogo(10, 'Ein Gespräch über Pläne / Uma conversa sobre planos', 'Dois amigos falam de planos e preocupações.', [
-        ['Mia', 'Worauf freust du dich am meisten?', 'Pelo que você está mais ansioso?'], ['Jonas', 'Ich freue mich auf den Urlaub. Ich träume von einem Haus am Meer.', 'Estou ansioso pelas férias. Sonho com uma casa na praia.'], ['Mia', 'Hast du dich schon für ein Hotel entschieden?', 'Você já decidiu por um hotel?'],
-        ['Jonas', 'Das hängt vom Wetter ab. Ich rechne mit Regen.', 'Isso depende do tempo. Conto com chuva.'], ['Mia', 'Ich kümmere mich um die Tickets. Du kannst dich um das Hotel kümmern.', 'Eu cuido das passagens. Você pode cuidar do hotel.'], ['Jonas', 'Gern! Ich bedanke mich schon jetzt bei dir.', 'Com prazer! Já agradeço desde já.'],
-        ['Mia', 'Ich denke oft an unsere letzte Reise.', 'Penso muitas vezes na nossa última viagem.'], ['Jonas', 'Ich erinnere mich gern daran. Wir haben viel gelacht.', 'Lembro-me com prazer. Rimos muito.'],
+      dialogo(10, 'Worüber sprecht ihr? / Sobre o que vocês conversam?', 'Dois colegas conversam sobre expectativas.', [
+        ['Mia', 'Worüber sprecht ihr?', 'Sobre o que vocês conversam?'], ['Jonas', 'Wir sprechen darüber, dass Paul nächstes Jahr nach Berlin zieht.', 'Falamos sobre o fato de o Paul se mudar para Berlim no ano que vem.'], ['Mia', 'Woran liegt das?', 'Por que isso acontece?'],
+        ['Jonas', 'Er wartet darauf, dass er eine Stelle bekommt.', 'Ele espera conseguir uma vaga.'], ['Mia', 'Ich freue mich darauf, ihn dort zu besuchen.', 'Estou ansiosa por visitá-lo lá.'], ['Jonas', 'Ich freue mich auch darauf. Wir haben davon schon lange geträumt.', 'Também estou ansioso. Já sonhamos com isso há muito tempo.'],
+        ['Mia', 'Und worauf freust du dich am meisten?', 'E pelo que você está mais ansioso?'], ['Jonas', 'Auf das Wiedersehen mit meinen Freunden.', 'Pelo reencontro com os meus amigos.'],
       ]),
-      producao(5, 'Fale em voz alta dos seus planos e sonhos com verbos de preposição: «Ich träume von … Ich kümmere mich um … Ich rechne mit …»'),
+      producao(5, 'Fale em voz alta do que você espera, sonha e teme, com «darauf, dass» e «darauf, … zu».'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva uma lista de 16 verbos com preposição e o caso, de memória.'),
+      revisao(5, 'Escreva um texto de 6 frases com advérbios pronominais.'),
       exercicios(20, [
-        lacuna('Ich warte ___ den Bus.', ['auf', 'für', 'an'], 'auf', 'warten auf + Akk.'), lacuna('Ich denke ___ dich.', ['an', 'auf', 'von'], 'an', 'denken an + Akk.'), lacuna('Ich interessiere mich ___ Musik.', ['für', 'an', 'auf'], 'für', 'sich interessieren für.'),
-        lacuna('Wir sprechen ___ das Wetter.', ['über', 'von', 'für'], 'über', 'sprechen über + Akk.'), lacuna('Ich kümmere mich ___ die Kinder.', ['um', 'für', 'an'], 'um', 'sich kümmern um + Akk.'), lacuna('Ich träume ___ einem Haus am Meer.', ['von', 'auf', 'über'], 'von', 'träumen von + Dat.'),
-        lacuna('Ich beschäftige mich ___ Musik.', ['mit', 'bei', 'für'], 'mit', 'sich beschäftigen mit + Dat.'), lacuna('Ich bedanke mich ___ dir.', ['bei', 'mit', 'an'], 'bei', 'sich bedanken bei + Dat.'), lacuna('Ich freue mich ___ den Urlaub. (que vem)', ['auf', 'über', 'für'], 'auf', 'freuen auf = futuro.'),
-        mc('A preposição de um verbo com preposição:', ['é fixa e rege um caso', 'muda livremente', 'não existe'], 'é fixa e rege um caso', 'Aprenda junto.'), mc('«Sich freuen auf» e «sich freuen über» diferem em:', ['futuro × presente', 'formal × informal', 'dativo × genitivo'], 'futuro × presente', 'Pelo que vem × pelo que há.'), mc('«Teilnehmen an» pede:', ['dativo', 'acusativo', 'genitivo'], 'dativo', 'Ich nehme am Kurs teil.'),
-        ordem('Ordene: «Eu espero pelo ônibus.»', ['Ich', 'warte', 'auf', 'den', 'Bus'], 'Ich warte auf den Bus.', 'warten auf + Akk.'), ouvir('Ich bedanke mich bei dir', ['Ich bedanke mich bei dir', 'Ich danke dich', 'Ich bedanke dir'], 'Ich bedanke mich bei dir', 'sich bedanken bei + Dat.'), ditado('Ich träume von einem Haus am Meer', 'träumen von + Dat.'),
-        livre('Escreva 5 frases com verbos com preposição: auf, an, für, über, um ou von.', 'Ich warte auf den Bus. Ich denke an dich. Ich interessiere mich für Musik. Wir sprechen über das Wetter. Ich kümmere mich um die Kinder.'),
+        lacuna('Ich warte ___. (auf den Bus)', ['darauf', 'davon', 'dafür'], 'darauf', 'warten auf → darauf.'), lacuna('Ich denke ___. (an die Reise)', ['daran', 'darauf', 'damit'], 'daran', 'denken an → daran.'), lacuna('Wir sprechen ___. (über das Wetter)', ['darüber', 'davon', 'dazu'], 'darüber', 'sprechen über → darüber.'),
+        lacuna('___ wartest du? (coisa)', ['Worauf', 'Auf wen', 'Wofür'], 'Worauf', 'Pergunta por coisa.'), lacuna('___ wartest du? (pessoa)', ['Auf wen', 'Worauf', 'Wofür'], 'Auf wen', 'Pergunta por pessoa.'), lacuna('___ denkst du? (coisa)', ['Woran', 'An wen', 'Worauf'], 'Woran', 'denken an → woran.'),
+        lacuna('Ich freue mich ___, dich zu sehen.', ['darauf', 'darüber', 'davon'], 'darauf', 'sich freuen auf → darauf.'), lacuna('Ich ärgere mich ___, dass er nicht anruft.', ['darüber', 'darauf', 'daran'], 'darüber', 'sich ärgern über → darüber.'), mc('O advérbio pronominal serve para:', ['coisas e situações', 'pessoas', 'lugares'], 'coisas e situações', 'Para pessoas: preposição + pronome.'),
+        mc('«Wo(r)-» é usado para perguntar por:', ['coisas', 'pessoas', 'lugares'], 'coisas', 'Worauf, woran…'), mc('«Darauf» é formado por:', ['dar- + auf', 'da- + auf', 'wo- + auf'], 'dar- + auf', 'Preposição que começa por vogal: dar-.'), ordem('Ordene: «Eu espero que você venha.»', ['Ich', 'warte', 'darauf', 'dass', 'du', 'kommst'], 'Ich warte darauf, dass du kommst.', 'darauf + dass + verbo no fim.'),
+        ouvir('Ich freue mich darauf, dich zu sehen', ['Ich freue mich darauf, dich zu sehen', 'Ich freue mich auf dich zu sehen', 'Ich sehe dich darauf'], 'Ich freue mich darauf, dich zu sehen', 'darauf + zu.'), ditado('Worüber sprecht ihr', 'Pergunta com wo(r)-.'), livre('Escreva 5 frases: duas com «da(r)-», uma pergunta com «wo(r)-», uma com «darauf, dass» e uma com «darauf, … zu».', 'Ich warte darauf. Ich denke daran. Worauf wartest du? Ich warte darauf, dass du kommst. Ich freue mich darauf, dich zu sehen.'),
       ]),
-      producao(5, 'Grave-se falando de coisas que você espera, em que pensa e pelas quais se interessa.'),
+      producao(5, 'Grave-se perguntando e respondendo com «worauf», «woran», «darüber» e «darauf, dass».'),
     ]),
   ],
 });

@@ -1,65 +1,69 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 68, titulo: 'Dar opinião, concordar, discordar e estruturar um texto', nivel: 'b1',
-  objetivo: 'Expressar e justificar uma opinião, concordar e discordar com educação, e estruturar um texto de opinião (fórum ou carta de leitor) com introdução, argumentos, exemplo e conclusão.',
-  nota: 'Você dá opinião e escreve um texto argumentativo. Próxima aula: vida profissional, currículo e entrevista.',
+  idioma: 'de', numero: 68, titulo: 'Revisão e simulado do B1', nivel: 'b1',
+  objetivo: 'Rever todo o B1 em um mapa, treinar leitura, escuta, escrita e fala no formato de provas de B1, corrigir os erros mais comuns e fazer um simulado original.',
+  nota: 'Você fechou o B1 do alemão. Repita o simulado até acertar quase tudo; o B2 começa na próxima aula.',
   sessoes: [
-    sessao('S1', 'Dar opinião', [
-      revisao(5, 'Escreva 8 palavras formadas por composição, prefixos e sufixos.'),
-      palavras(8, [
-        ['meiner Meinung nach', 'mái-ner mái-nung narr', 'na minha opinião', 'in my opinion'], ['ich bin der Meinung, dass', 'ich bin der mái-nung das', 'sou da opinião de que', 'I am of the opinion that'], ['ich finde, dass', 'ich fín-de das', 'acho que', 'I find that'], ['ich glaube / denke, dass', 'ich gláu-be dass', 'creio / penso que', 'I believe / think that'],
-        ['das Argument', 'das ar-gu-mént', 'argumento', 'argument'], ['das Beispiel', 'das bái-xpil', 'exemplo', 'example'], ['der Grund', 'der grunt', 'motivo', 'reason'], ['die Begründung', 'di be-grún-dung', 'justificativa', 'justification'],
-      ]),
-      gramatica(14, 'Dar opinião, passo a passo', 'PASSO 1: para dar opinião, use um verbo de opinião + «dass»: «Ich finde, dass Homeoffice praktisch ist.» PASSO 2: com a ORDEM NORMAL (sem «dass»), a opinião soa mais direta: «Ich finde, Homeoffice ist praktisch.» PASSO 3: «MEINER MEINUNG NACH» (na minha opinião) abre a frase, e o verbo vem logo depois (2ª posição): «Meiner Meinung nach ist das richtig.» PASSO 4: «Ich bin der Meinung, dass …» é formal; «Ich finde / glaube / denke / meine» é de uso comum. PASSO 5: justifique SEMPRE com «weil», «denn», «deshalb» ou um exemplo: «Ich finde das gut, weil man Zeit spart.» PASSO 6: suavize quando preciso: «Ich glaube eher, dass …» (eu acho mais que …), «Es kommt darauf an» (depende).', {
-        tag: 'Frase',
+    sessao('S1', 'O mapa do B1', [
+      revisao(5, 'Leia em voz alta 5 frases das aulas 47 a 67 que você acha difíceis.'),
+      gramatica(15, 'O B1 inteiro em uma tabela', 'Esta tabela resume as aulas 47 a 67. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.', {
+        tag: 'Revisão',
         tabela: [
-          { forma: 'verbo de opinião + dass', frase: 'Ich finde, dass Homeoffice praktisch ist.' }, { forma: 'ordem normal', frase: 'Ich finde, Homeoffice ist praktisch.' }, { forma: 'meiner Meinung nach', frase: 'Meiner Meinung nach ist das richtig.' }, { forma: 'formal', frase: 'Ich bin der Meinung, dass das ein Vorteil ist.' }, { forma: 'com motivo', frase: 'Ich finde das gut, weil man Zeit spart.' },
-        ],
-        erros: [['Meiner Meinung nach das ist richtig.', 'Meiner Meinung nach ist das richtig.', 'Depois de «meiner Meinung nach», o verbo na 2ª posição.'], ['Ich finde, dass Homeoffice ist praktisch.', 'Ich finde, dass Homeoffice praktisch ist.', 'Depois de «dass», o verbo no fim.'], ['Ich bin der Meinung, ist das richtig.', 'Ich bin der Meinung, dass das richtig ist.', 'Falta o «dass».']],
-      }),
-      producao(3, 'Dê 6 opiniões sobre temas do dia a dia, com motivo: «Ich finde, dass … , weil …»'),
-    ]),
-    sessao('S2', 'Concordar e discordar', [
-      revisao(5, 'Escreva 6 opiniões com justificativa.'),
-      palavras(8, [
-        ['zustimmen', 'tsú-xti-men', 'concordar', 'to agree'], ['widersprechen', 'ví-der-xpré-çen', 'contradizer, discordar', 'to contradict'], ['recht haben', 'réçt há-ben', 'ter razão', 'to be right'], ['teilweise', 'táil-vai-ze', 'em parte', 'partly'],
-        ['genauso', 'gue-náu-zo', 'exatamente assim', 'exactly'], ['anders', 'án-ders', 'diferente', 'different'], ['sicher', 'zí-çer', 'seguro', 'sure'], ['dagegen sein', 'da-guê-guen zain', 'ser contra', 'to be against'],
-      ]),
-      gramatica(12, 'Concordar e discordar com educação, passo a passo', 'PASSO 1: para CONCORDAR: «Da stimme ich dir zu» (concordo com você), «Das sehe ich genauso», «Da hast du recht», «Das stimmt». PASSO 2: para concordar EM PARTE: «Da stimme ich dir teilweise zu», «Einerseits hast du recht, andererseits …». PASSO 3: para DISCORDAR com educação: «Das sehe ich anders», «Da bin ich nicht sicher», «Das stimmt nicht ganz». PASSO 4: para DISCORDAR com força: «Da bin ich anderer Meinung», «Das sehe ich überhaupt nicht so». PASSO 5: «zustimmen» pede DATIVO e é separável: «Ich stimme dir zu», «Ich habe ihm zugestimmt». PASSO 6: «dafür sein» (ser a favor) e «dagegen sein» (ser contra), com «dass» ou «zu»: «Ich bin dafür, dass wir früher anfangen.»', {
-        tag: 'Frase',
-        tabela: [
-          { funcao: 'concordar', frase: 'Da stimme ich dir zu. / Das sehe ich genauso. / Da hast du recht.' }, { funcao: 'concordar em parte', frase: 'Da stimme ich dir teilweise zu.' }, { funcao: 'discordar com educação', frase: 'Das sehe ich anders. / Da bin ich nicht sicher.' }, { funcao: 'discordar com força', frase: 'Da bin ich anderer Meinung.' }, { funcao: 'a favor / contra', frase: 'Ich bin dafür, dass wir früher anfangen.' },
-        ],
-        erros: [['Ich stimme dich zu.', 'Ich stimme dir zu.', '«zustimmen» pede dativo.'], ['Ich zustimme dir.', 'Ich stimme dir zu.', 'Separável: o prefixo vai para o fim.'], ['Das sehe ich anderes.', 'Das sehe ich anders.', '«anders» é advérbio (invariável).']],
-      }),
-      producao(5, 'Reaja em voz alta a 6 opiniões: concorde, concorde em parte e discorde com educação.'),
-    ]),
-    sessao('S3', 'Estruturar um texto de opinião', [
-      revisao(5, 'Escreva 6 fórmulas para concordar e discordar.'),
-      gramatica(10, 'O texto de opinião, passo a passo', 'PASSO 1: um texto de opinião (fórum, carta de leitor) tem QUATRO partes: INTRODUÇÃO (o tema e a sua posição), ARGUMENTOS (dois ou três, com motivo), EXEMPLO (um caso concreto) e CONCLUSÃO. PASSO 2: introdução: «Ich möchte meine Meinung zum Thema … äußern.» PASSO 3: argumentos, com ordem: «ERSTENS …, ZWEITENS …, DRITTENS …», «AUSSERDEM …». PASSO 4: exemplo: «Zum Beispiel …», «Ein Beispiel dafür ist …». PASSO 5: contra-argumento: «Natürlich gibt es auch Nachteile, aber …». PASSO 6: conclusão: «Zusammenfassend kann man sagen, dass …», «Abschließend möchte ich sagen …». PASSO 7: use os conectores que você aprendeu (weil, denn, deshalb, obwohl, trotzdem, einerseits … andererseits).', {
-        tag: 'Frase',
-        tabela: [
-          { parte: 'introdução', frase: 'Ich möchte meine Meinung zum Thema Homeoffice äußern.' }, { parte: 'argumentos', frase: 'Erstens spart man Zeit. Zweitens kann man ruhiger arbeiten.' }, { parte: 'exemplo', frase: 'Zum Beispiel muss man nicht pendeln.' }, { parte: 'contra-argumento', frase: 'Natürlich gibt es auch Nachteile, aber die Vorteile überwiegen.' }, { parte: 'conclusão', frase: 'Zusammenfassend kann man sagen, dass Homeoffice sinnvoll ist.' },
+          { tema: 'Orações relativas', regra: 'der/die/das/die; den; dem/der/denen; dessen/deren; preposição antes do relativo; «was» depois de alles, nichts, etwas, superlativo.', aula: '47 a 49' },
+          { tema: 'Passivo', regra: 'werden + Partizip II; wurde + Partizip II; ist … worden; com modais; sem sujeito; estado: sein + Partizip II; man, sich lassen.', aula: '50, 51' },
+          { tema: 'Plusquamperfekt', regra: 'hatte/war + Partizip II; nachdem (Plusquamperfekt) e bevor.', aula: '52' },
+          { tema: 'Conjunções de tempo', regra: 'als (fato único) × wenn (repetição, presente, futuro); während, seitdem, bis, sobald, solange.', aula: '53' },
+          { tema: 'Konjunktiv II (presente)', regra: 'hätte, wäre, würde + infinitivo; wenn + Konjunktiv II; pedidos educados, desejos e conselhos.', aula: '54' },
+          { tema: 'Infinitivo com zu', regra: 'zu antes do infinitivo; anzurufen; sem zu depois de modais, werden, lassen, gehen, bleiben.', aula: '55' },
+          { tema: 'Finalidade e contraste', regra: 'um … zu (mesmo sujeito), damit (sujeitos diferentes), ohne … zu, (an)statt … zu.', aula: '56' },
+          { tema: 'Conectores', regra: 'obwohl (verbo no fim) × trotzdem (verbo na 2ª posição); deshalb, deswegen, außerdem, sonst; pares: entweder … oder, weder … noch, sowohl … als auch, einerseits … andererseits, je … desto.', aula: '57, 58' },
+          { tema: 'Verbos, adjetivos e substantivos com preposição', regra: 'warten auf, denken an, stolz auf, Angst vor; da(r)- e wo(r)-: darauf, worauf; darauf, dass.', aula: '59 a 61' },
+          { tema: 'Adjetivos substantivados', regra: 'das Gute, etwas Neues, alles Gute; der Deutsche, ein Bekannter.', aula: '62' },
+          { tema: 'Formação de palavras', regra: 'compostos (gênero da última palavra), prefixos inseparáveis e separáveis, sufixos -ung, -keit, -heit, -schaft, -lich, -los.', aula: '63' },
+          { tema: 'Opinião, trabalho, mídia, apresentação', regra: 'meiner Meinung nach; Da stimme ich dir zu; Lebenslauf; Umwelt; Die Grafik zeigt …', aula: '64 a 67' },
         ],
       }),
-      dialogo(10, 'Eine Diskussion über Homeoffice / Uma discussão sobre home office', 'Dois colegas debatem o trabalho em casa.', [
-        ['Mia', 'Ich bin der Meinung, dass Homeoffice die Arbeit verbessert.', 'Sou da opinião de que o home office melhora o trabalho.'], ['Jonas', 'Da stimme ich dir teilweise zu. Man spart Zeit, weil man nicht pendeln muss.', 'Concordo em parte. Economiza-se tempo, porque não é preciso se deslocar.'], ['Mia', 'Außerdem kann man ruhiger arbeiten.', 'Além disso, pode-se trabalhar com mais tranquilidade.'],
-        ['Jonas', 'Das sehe ich anders. Zu Hause lenkt mich vieles ab.', 'Vejo diferente. Em casa muita coisa me distrai.'], ['Mia', 'Zum Beispiel?', 'Por exemplo?'], ['Jonas', 'Zum Beispiel die Wäsche, der Fernseher und die Nachbarn.', 'Por exemplo, a roupa, a TV e os vizinhos.'],
-        ['Mia', 'Einerseits hast du recht, andererseits kann man sich gut organisieren.', 'Por um lado você tem razão, por outro dá para se organizar bem.'], ['Jonas', 'Zusammenfassend würde ich sagen: Eine Mischung aus beidem ist ideal.', 'Resumindo, eu diria: uma mistura dos dois é ideal.'],
-      ]),
-      producao(5, 'Defenda uma opinião em voz alta em 8 frases, com introdução, dois argumentos, um exemplo e a conclusão.'),
+      producao(10, 'Fale 2 minutos em alemão sobre um tema à sua escolha: abertura, opinião com dois argumentos, um exemplo, uma hipótese (Konjunktiv II) e a conclusão.'),
     ]),
-    sessao('S4', 'Prática', [
-      revisao(5, 'Escreva um texto de opinião de cerca de 80 palavras sobre um tema à sua escolha.'),
+    sessao('S2', 'Leitura e escuta (formato B1, original)', [
+      revisao(5, 'Releia a carta e o diálogo abaixo em voz alta antes de começar.'),
+      texto(10, 'Ein Leserbrief / Uma carta de leitor', 'Sehr geehrte Redaktion, in Ihrer Zeitung wurde letzte Woche berichtet, dass die Stadt weniger Geld für Fahrradwege ausgeben will. Ich bin der Meinung, dass das ein Fehler wäre. Erstens fahren immer mehr Menschen mit dem Rad zur Arbeit, um Zeit und Geld zu sparen. Zweitens ist das Rad gut für die Umwelt und für die Gesundheit. Obwohl Autos in der Stadt wichtig sind, brauchen wir sichere Wege für Radfahrer. Wenn die Stadt mehr investieren würde, könnten mehr Menschen auf das Auto verzichten. Mit freundlichen Grüßen, Maria Becker',
+        'Prezada redação, no seu jornal foi noticiado na semana passada que a cidade quer gastar menos dinheiro com ciclovias. Sou da opinião de que isso seria um erro. Primeiro, cada vez mais pessoas vão de bicicleta ao trabalho para economizar tempo e dinheiro. Segundo, a bicicleta faz bem ao meio ambiente e à saúde. Embora os carros sejam importantes na cidade, precisamos de caminhos seguros para ciclistas. Se a cidade investisse mais, mais pessoas poderiam abrir mão do carro. Atenciosamente, Maria Becker',
+        [['Worüber wurde berichtet?', 'Dass die Stadt weniger Geld für Fahrradwege ausgeben will'], ['Was ist die Meinung der Autorin?', 'Weniger Geld für Fahrradwege wäre ein Fehler'], ['Welche zwei Argumente nennt sie?', 'Zeit und Geld sparen; Umwelt und Gesundheit'], ['Was würde passieren, wenn die Stadt mehr investieren würde?', 'Mehr Menschen könnten auf das Auto verzichten']]),
+      dialogo(10, 'Am Telefon / Ao telefone', 'Um cliente remarca uma consulta.', [
+        ['Tom', 'Guten Tag, hier ist Tom Weber. Ich möchte meinen Termin am Dienstag verschieben.', 'Bom dia, aqui é Tom Weber. Gostaria de remarcar a minha consulta de terça.'], ['Sekretärin', 'Das ist kein Problem. Wann würde es Ihnen passen?', 'Não há problema. Quando seria bom para o senhor?'], ['Tom', 'Wenn möglich, am Donnerstag. Am Dienstag muss ich leider zu einer wichtigen Besprechung.', 'Se possível, na quinta. Na terça preciso ir a uma reunião importante.'],
+        ['Sekretärin', 'Am Donnerstag um zehn Uhr hätten wir noch einen Termin frei.', 'Na quinta às dez ainda teríamos um horário livre.'], ['Tom', 'Das passt mir sehr gut. Könnten Sie mir bitte eine Bestätigung schicken?', 'Serve muito bem. A senhora poderia me enviar uma confirmação, por favor?'], ['Sekretärin', 'Selbstverständlich. Die E-Mail wird noch heute verschickt.', 'Naturalmente. O e-mail será enviado ainda hoje.'],
+      ]),
+      producao(5, 'Responda em voz alta: o que a autora da carta defende, quais são os seus argumentos e o que você pensa sobre o tema.'),
+    ]),
+    sessao('S3', 'Os erros mais comuns do B1 e a escrita', [
+      revisao(5, 'Escreva 3 erros que você ainda comete no B1 e a forma certa.'),
+      gramatica(15, 'Os 14 erros mais comuns do B1', 'Leia cada par em voz alta: primeiro o errado, depois o certo.', {
+        tag: 'Revisão',
+        erros: [
+          ['Obwohl es regnet, ich gehe spazieren.', 'Obwohl es regnet, gehe ich spazieren.', 'Depois da subordinada, a principal começa pelo verbo.'], ['Es regnet. Trotzdem ich gehe spazieren.', 'Es regnet. Trotzdem gehe ich spazieren.', 'Depois de «trotzdem», o verbo na 2ª posição.'], ['Wenn ich Zeit hätte, ich würde reisen.', 'Wenn ich Zeit hätte, würde ich reisen.', 'Depois da subordinada, a principal começa pelo verbo.'], ['Ich habe vergessen, dich zu anrufen.', 'Ich habe vergessen, dich anzurufen.', '«zu» entre prefixo e verbo.'],
+          ['Ich lerne Deutsch, um ich in Berlin zu arbeiten.', 'Ich lerne Deutsch, um in Berlin zu arbeiten.', 'No «um … zu», não se repete o sujeito.'], ['Ich warte für den Bus.', 'Ich warte auf den Bus.', 'Preposição fixa.'], ['Die Frau, der dort steht, ist meine Chefin.', 'Die Frau, die dort steht, ist meine Chefin.', 'Relativo concorda em gênero.'], ['Das Auto wird reparieren.', 'Das Auto wird repariert.', 'Passivo: Partizip II.'],
+          ['Das Auto ist repariert geworden.', 'Das Auto ist repariert worden.', 'Passivo: «worden».'], ['Alles, das ich weiß, habe ich gelernt.', 'Alles, was ich weiß, habe ich gelernt.', 'Depois de «alles»: «was».'], ['Als ich Zeit habe, rufe ich an.', 'Wenn ich Zeit habe, rufe ich an.', 'Presente: «wenn».'], ['Ich bleibe zu Hause, weil ich bin krank.', 'Ich bleibe zu Hause, weil ich krank bin.', 'Depois de «weil», o verbo vai para o fim.'],
+          ['Ich habe etwas neues gehört.', 'Ich habe etwas Neues gehört.', 'Substantivado: maiúscula.'], ['Ich bin stolz von meiner Familie.', 'Ich bin stolz auf meine Familie.', 'Preposição fixa.'],
+        ],
+      }),
+      producao(10, 'Escreva um texto de opinião de cerca de 100 palavras (tema à escolha) com introdução, dois argumentos, um exemplo, um contra-argumento e conclusão. Depois leia-o em voz alta.'),
+    ]),
+    sessao('S4', 'Simulado do B1', [
+      revisao(5, 'Releia o mapa e escolha os 3 pontos em que você ainda erra.'),
       exercicios(20, [
-        lacuna('Ich finde, ___ Homeoffice praktisch ist.', ['dass', 'ob', 'wenn'], 'dass', '«dass» + verbo no fim.'), lacuna('Meiner Meinung ___ ist das richtig.', ['nach', 'mit', 'zu'], 'nach', 'meiner Meinung nach.'), lacuna('Da stimme ich ___ zu. (a você)', ['dir', 'dich', 'du'], 'dir', '«zustimmen» pede dativo.'),
-        lacuna('Das sehe ich ___. (diferente)', ['anders', 'anderes', 'andere'], 'anders', 'Advérbio.'), lacuna('___ spart man Zeit, zweitens ist es ruhiger.', ['Erstens', 'Einerseits', 'Außerdem'], 'Erstens', 'Primeiro argumento.'), lacuna('___ kann man sagen, dass es sinnvoll ist. (resumindo)', ['Zusammenfassend', 'Zum Beispiel', 'Erstens'], 'Zusammenfassend', 'Conclusão.'),
-        mc('«Da hast du recht» expressa:', ['concordância', 'discordância', 'dúvida'], 'concordância', 'Você tem razão.'), mc('«Das sehe ich anders» expressa:', ['discordância educada', 'concordância', 'pergunta'], 'discordância educada', 'Vejo diferente.'), mc('Depois de «meiner Meinung nach», o verbo vai:', ['na 2ª posição', 'no fim', 'no começo'], 'na 2ª posição', 'Meiner Meinung nach ist das …'),
-        mc('O texto de opinião termina com:', ['uma conclusão', 'uma pergunta', 'um exemplo'], 'uma conclusão', 'Zusammenfassend …'), ordem('Ordene: «Na minha opinião, isso é correto.»', ['Meiner', 'Meinung', 'nach', 'ist', 'das', 'richtig'], 'Meiner Meinung nach ist das richtig.', 'Verbo na 2ª posição.'), ouvir('Da stimme ich dir teilweise zu', ['Da stimme ich dir teilweise zu', 'Da stimme ich dir nicht zu', 'Da hast du unrecht'], 'Da stimme ich dir teilweise zu', 'Concordo em parte.'),
-        ditado('Zusammenfassend kann man sagen, dass es sinnvoll ist', 'Conclusão.'), livre('Escreva 5 frases: uma opinião com «dass», uma com «meiner Meinung nach», uma de concordância, uma de discordância e uma conclusão.', 'Ich finde, dass Homeoffice praktisch ist. Meiner Meinung nach spart man Zeit. Da stimme ich dir zu. Das sehe ich anders. Zusammenfassend kann man sagen, dass es sinnvoll ist.'),
+        ouvir('Wenn ich mehr Zeit hätte, würde ich reisen', ['Wenn ich mehr Zeit hätte, würde ich reisen', 'Wenn ich Zeit habe, reise ich', 'Ich habe keine Zeit zum Reisen'], 'Wenn ich mehr Zeit hätte, würde ich reisen', 'Hören: irreal no presente.'), ouvir('Das Rathaus wurde 1450 gebaut', ['Das Rathaus wurde 1450 gebaut', 'Das Rathaus wird 1450 gebaut', 'Man baut das Rathaus'], 'Das Rathaus wurde 1450 gebaut', 'Hören: passivo no passado.'),
+        ouvir('Ich freue mich darauf, dich zu sehen', ['Ich freue mich darauf, dich zu sehen', 'Ich freue mich über dich', 'Ich sehe dich darauf'], 'Ich freue mich darauf, dich zu sehen', 'Hören: darauf + zu.'), ditado('Zusammenfassend kann man sagen, dass es sinnvoll ist', 'Schreiben: conclusão.'),
+        mc('Leia: «Das Geschäft bleibt wegen Renovierung bis zum 15. Mai geschlossen.» Isso significa:', ['a loja está fechada para reforma até 15 de maio', 'a loja abre em 15 de maio sem reforma', 'a loja fecha em 15 de maio'], 'a loja está fechada para reforma até 15 de maio', 'Lesen: aviso.'),
+        mc('Leia: «Mitarbeiter gesucht: Wir bieten flexible Arbeitszeiten und suchen Erfahrung im Verkauf.» O que a empresa procura?', ['funcionário com experiência em vendas', 'cliente para vendas', 'estagiário sem experiência'], 'funcionário com experiência em vendas', 'Lesen: anúncio.'), mc('Leia: «Je mehr man übt, desto besser wird man.» A ideia é:', ['praticar mais melhora o resultado', 'praticar menos melhora', 'praticar não importa'], 'praticar mais melhora o resultado', 'Lesen: je … desto.'),
+        mc('Leia: «Wenn es regnet, bleibe ich zu Hause.» A ideia é:', ['se chover, a pessoa fica em casa', 'a pessoa ficou em casa porque choveu', 'a pessoa nunca fica em casa'], 'se chover, a pessoa fica em casa', 'Lesen: wenn (condição).'),
+        lacuna('Die Frau, ___ ich kenne, arbeitet hier.', ['die', 'der', 'den'], 'die', 'Relativo acusativo feminino.'), lacuna('Ich warte ___ den Bus.', ['auf', 'für', 'an'], 'auf', 'warten auf.'), lacuna('Wenn ich Zeit ___, würde ich reisen.', ['hätte', 'habe', 'hatte'], 'hätte', 'Konjunktiv II.'),
+        lacuna('Ich lerne Deutsch, ___ in Berlin zu arbeiten.', ['um', 'damit', 'weil'], 'um', 'Mesmo sujeito.'), lacuna('Das Auto ___ repariert. (passivo, presente)', ['wird', 'wurde', 'ist'], 'wird', 'Passivo.'),
+        ordem('Ordene: «Se eu tivesse tempo, eu viajaria.»', ['Wenn', 'ich', 'Zeit', 'hätte', 'würde', 'ich', 'reisen'], 'Wenn ich Zeit hätte, würde ich reisen.', 'Irreal do presente.'), ordem('Ordene: «Embora chova, vou passear.»', ['Obwohl', 'es', 'regnet', 'gehe', 'ich', 'spazieren'], 'Obwohl es regnet, gehe ich spazieren.', 'obwohl + verbo no fim.'),
+        livre('Schreiben: escreva 5 frases de um texto de opinião sobre um tema à sua escolha, com opinião, argumento, exemplo, uma frase com Konjunktiv II e conclusão.', 'Meiner Meinung nach ist Homeoffice praktisch. Erstens spart man Zeit. Zum Beispiel muss man nicht pendeln. Wenn alle zu Hause arbeiten würden, wären die Straßen leerer. Zusammenfassend kann man sagen, dass es sinnvoll ist.'),
       ]),
-      producao(5, 'Grave-se debatendo um tema com um amigo imaginário: opine, concorde e discorde.'),
+      producao(5, 'Sprechen, em 3 partes: (1) faça uma apresentação de 1 minuto sobre um tema; (2) responda a 2 perguntas e dê uma opinião com um argumento; (3) planeje algo junto com um parceiro, com propostas e concordâncias.'),
     ]),
   ],
 });

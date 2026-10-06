@@ -89,24 +89,24 @@ As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira vers�
 | 52 | Plusquamperfekt; nachdem, bevor | no ar |
 | 53 | als × wenn; während, seitdem, bis, sobald, solange | no ar |
 | 54 | Konjunktiv II 1: condicionais irreais e desejos | no ar |
-| 55 | Konjunktiv II 2: o irreal no passado (hätte/wäre + Partizip II) | no ar |
-| 56 | Infinitivo com zu | no ar |
-| 57 | Finalidade e contraste: um … zu, damit, ohne … zu, statt … zu | no ar |
-| 58 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | no ar |
-| 59 | Conectores 2: entweder … oder, weder … noch, sowohl … als auch, einerseits … andererseits, je … desto | no ar |
-| 60 | Verbos com preposição 1 (auf, an, für, über, um, von, mit, bei, zu) | no ar |
-| 61 | Verbos com preposição 2: advérbios pronominais (darauf, worauf, darauf, dass) | no ar |
-| 62 | Adjetivos e substantivos com preposição | no ar |
-| 63 | Partizip I e II como adjetivo | no ar |
-| 64 | Adjetivos substantivados (das Neue, der Deutsche, etwas Neues) | no ar |
-| 65 | Futur II, suposições e partículas modais (doch, mal, ja, eben, halt, denn, eigentlich, wohl, schon) | no ar |
-| 66 | O discurso indireto (dass, ob, sollen; reconhecer o Konjunktiv I) | no ar |
-| 67 | Formação de palavras (prefixos, sufixos, compostos) | a escrever |
-| 68 | Dar opinião, concordar, discordar; escrever um texto de opinião | a escrever |
-| 69 | Vida profissional: currículo e entrevista | a escrever |
-| 70 | Mídia, sociedade e meio ambiente | a escrever |
-| 71 | Apresentação oral e discussão | a escrever |
-| 72 | Revisão e simulado B1 (formato B1, original) | a escrever |
+| 55 | Infinitivo com zu | no ar |
+| 56 | Finalidade e contraste: um … zu, damit, ohne … zu, statt … zu | no ar |
+| 57 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | no ar |
+| 58 | Conectores 2: entweder … oder, weder … noch, sowohl … als auch, einerseits … andererseits, je … desto | no ar |
+| 59 | Verbos com preposição 1 | no ar |
+| 60 | Verbos com preposição 2: advérbios pronominais (darauf, worauf, darauf, dass) | no ar |
+| 61 | Adjetivos e substantivos com preposição | no ar |
+| 62 | Adjetivos substantivados (das Neue, der Deutsche, etwas Neues) | no ar |
+| 63 | Formação de palavras: compostos, prefixos e sufixos | no ar |
+| 64 | Dar opinião, concordar, discordar; texto de opinião | no ar |
+| 65 | Vida profissional: currículo, candidatura e entrevista | no ar |
+| 66 | Mídia, sociedade e meio ambiente | no ar |
+| 67 | Apresentação oral, gráficos e discussão | no ar |
+| 68 | Revisão e simulado B1 (formato B1, original) | no ar |
+| 69 | B2 · Konjunktiv II no passado (hätte/wäre + Partizip II) | no ar (B2, em construção) |
+| 70 | B2 · Partizip I e II como adjetivo | no ar (B2, em construção) |
+| 71 | B2 · Futur II, suposições e partículas modais | no ar (B2, em construção) |
+| 72 | B2 · Discurso indireto 1: dass, ob, sollen e o Konjunktiv I | no ar (B2, em construção) |
 
 ## Fontes e direitos (registro)
 - **Referência de nível e formato (nada copiado):** as provas modelo do Goethe-Institut / ÖSD (A1, A2 e B1) servem de régua para o vocabulário, os temas e os tipos de tarefa (Lesen, Hören, Schreiben, Sprechen). O texto e as questões delas **não** entram no curso: o Goethe-Institut é uma entidade privada e as provas são obras protegidas. Os simulados do curso são **originais**, no mesmo formato.

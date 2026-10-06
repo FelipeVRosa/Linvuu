@@ -1,66 +1,65 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 64, titulo: 'Adjetivos substantivados', nivel: 'b1',
-  objetivo: 'Transformar adjetivos e particípios em substantivos (das Neue, etwas Neues, der Deutsche, ein Bekannter, der Reisende), com maiúscula e a terminação do adjetivo.',
-  nota: 'Você usa adjetivos como substantivos. Próxima aula: Futur II e as partículas modais.',
+  idioma: 'de', numero: 64, titulo: 'Dar opinião, concordar, discordar e estruturar um texto', nivel: 'b1',
+  objetivo: 'Expressar e justificar uma opinião, concordar e discordar com educação, e estruturar um texto de opinião (fórum ou carta de leitor) com introdução, argumentos, exemplo e conclusão.',
+  nota: 'Você dá opinião e escreve um texto argumentativo. Próxima aula: vida profissional, currículo e entrevista.',
   sessoes: [
-    sessao('S1', 'Das Gute, etwas Neues, alles Gute', [
-      revisao(5, 'Escreva 6 frases com Partizip I e II como adjetivo.'),
+    sessao('S1', 'Dar opinião', [
+      revisao(5, 'Escreva 8 palavras formadas por composição, prefixos e sufixos.'),
       palavras(8, [
-        ['das Gute', 'das gú-te', 'o bom, o bem', 'the good'], ['das Neue', 'das nói-e', 'o novo, a novidade', 'the new'], ['das Wichtige', 'das víç-ti-gue', 'o importante', 'the important'], ['das Schöne', 'das xö-ne', 'o belo', 'the beautiful'],
-        ['etwas Neues', 'ét-vas nói-es', 'algo novo', 'something new'], ['nichts Gutes', 'niçts gú-tes', 'nada de bom', 'nothing good'], ['alles Gute', 'á-les gú-te', 'tudo de bom', 'all the best'], ['viel Interessantes', 'fil in-te-re-sán-tes', 'muita coisa interessante', 'a lot of interesting things'],
+        ['meiner Meinung nach', 'mái-ner mái-nung narr', 'na minha opinião', 'in my opinion'], ['ich bin der Meinung, dass', 'ich bin der mái-nung das', 'sou da opinião de que', 'I am of the opinion that'], ['ich finde, dass', 'ich fín-de das', 'acho que', 'I find that'], ['ich glaube / denke, dass', 'ich gláu-be dass', 'creio / penso que', 'I believe / think that'],
+        ['das Argument', 'das ar-gu-mént', 'argumento', 'argument'], ['das Beispiel', 'das bái-xpil', 'exemplo', 'example'], ['der Grund', 'der grunt', 'motivo', 'reason'], ['die Begründung', 'di be-grún-dung', 'justificativa', 'justification'],
       ]),
-      gramatica(14, 'O adjetivo que vira substantivo, passo a passo', 'PASSO 1: em alemão, qualquer adjetivo pode virar SUBSTANTIVO e leva INICIAL MAIÚSCULA: «gut» → «das Gute» (o bom). PASSO 2: depois de «DAS», o adjetivo leva «-e»: «das Gute», «das Neue», «das Wichtigste», «das Schöne». PASSO 3: depois de «ETWAS», «NICHTS», «VIEL», «WENIG», o adjetivo leva «-ES»: «etwas Neues» (algo novo), «nichts Gutes» (nada de bom), «viel Interessantes». PASSO 4: depois de «ALLES», leva «-E»: «alles Gute» (tudo de bom). PASSO 5: use para ideias abstratas: «das Wichtigste» (o mais importante), «das Beste» (o melhor). PASSO 6: perguntas e votos comuns: «Gibt es etwas Neues?», «Ich wünsche dir alles Gute.»', {
-        tag: 'Substantivos',
-        comparacao: 'o português usa o artigo + adjetivo («o novo», «o bom») sem mudar a grafia. O alemão escreve com maiúscula e escolhe a terminação conforme a palavra que vem antes.',
+      gramatica(14, 'Dar opinião, passo a passo', 'PASSO 1: para dar opinião, use um verbo de opinião + «dass»: «Ich finde, dass Homeoffice praktisch ist.» PASSO 2: com a ORDEM NORMAL (sem «dass»), a opinião soa mais direta: «Ich finde, Homeoffice ist praktisch.» PASSO 3: «MEINER MEINUNG NACH» (na minha opinião) abre a frase, e o verbo vem logo depois (2ª posição): «Meiner Meinung nach ist das richtig.» PASSO 4: «Ich bin der Meinung, dass …» é formal; «Ich finde / glaube / denke / meine» é de uso comum. PASSO 5: justifique SEMPRE com «weil», «denn», «deshalb» ou um exemplo: «Ich finde das gut, weil man Zeit spart.» PASSO 6: suavize quando preciso: «Ich glaube eher, dass …» (eu acho mais que …), «Es kommt darauf an» (depende).', {
+        tag: 'Frase',
         tabela: [
-          { construcao: 'das + adj. -e', exemplo: 'das Gute, das Neue, das Wichtigste, das Schöne' }, { construcao: 'etwas / nichts / viel + adj. -es', exemplo: 'etwas Neues, nichts Gutes, viel Interessantes' }, { construcao: 'alles + adj. -e', exemplo: 'alles Gute, alles Schöne' }, { construcao: 'votos', exemplo: 'Ich wünsche dir alles Gute.' }, { construcao: 'pergunta', exemplo: 'Gibt es etwas Neues?' },
+          { forma: 'verbo de opinião + dass', frase: 'Ich finde, dass Homeoffice praktisch ist.' }, { forma: 'ordem normal', frase: 'Ich finde, Homeoffice ist praktisch.' }, { forma: 'meiner Meinung nach', frase: 'Meiner Meinung nach ist das richtig.' }, { forma: 'formal', frase: 'Ich bin der Meinung, dass das ein Vorteil ist.' }, { forma: 'com motivo', frase: 'Ich finde das gut, weil man Zeit spart.' },
         ],
-        erros: [['etwas neues', 'etwas Neues', 'Substantivado: maiúscula.'], ['nichts Gute', 'nichts Gutes', 'Depois de «nichts»: «-es».'], ['alles Gutes', 'alles Gute', 'Depois de «alles»: «-e».']],
+        erros: [['Meiner Meinung nach das ist richtig.', 'Meiner Meinung nach ist das richtig.', 'Depois de «meiner Meinung nach», o verbo na 2ª posição.'], ['Ich finde, dass Homeoffice ist praktisch.', 'Ich finde, dass Homeoffice praktisch ist.', 'Depois de «dass», o verbo no fim.'], ['Ich bin der Meinung, ist das richtig.', 'Ich bin der Meinung, dass das richtig ist.', 'Falta o «dass».']],
       }),
-      producao(3, 'Diga 6 frases com adjetivos substantivados: «Gibt es etwas Neues? Ich wünsche dir alles Gute. Das Wichtigste ist …»'),
+      producao(3, 'Dê 6 opiniões sobre temas do dia a dia, com motivo: «Ich finde, dass … , weil …»'),
     ]),
-    sessao('S2', 'Der Deutsche, ein Bekannter', [
-      revisao(5, 'Escreva 6 frases com «etwas Neues», «nichts Gutes», «alles Gute» e «das Wichtigste».'),
+    sessao('S2', 'Concordar e discordar', [
+      revisao(5, 'Escreva 6 opiniões com justificativa.'),
       palavras(8, [
-        ['der Deutsche', 'der dói-tche', 'o alemão', 'the German'], ['der Bekannte', 'der be-kán-te', 'o conhecido', 'the acquaintance'], ['der Kranke', 'der krán-ke', 'o doente', 'the sick person'], ['der Angestellte', 'der án-gue-xtél-te', 'o funcionário', 'the employee'],
-        ['der Verwandte', 'der fer-ván-te', 'o parente', 'the relative'], ['der Arbeitslose', 'der ár-baits-lô-se', 'o desempregado', 'the unemployed'], ['der Erwachsene', 'der er-vák-se-ne', 'o adulto', 'the adult'], ['der Jugendliche', 'der iú-guent-li-çe', 'o jovem', 'the young person'],
+        ['zustimmen', 'tsú-xti-men', 'concordar', 'to agree'], ['widersprechen', 'ví-der-xpré-çen', 'contradizer, discordar', 'to contradict'], ['recht haben', 'réçt há-ben', 'ter razão', 'to be right'], ['teilweise', 'táil-vai-ze', 'em parte', 'partly'],
+        ['genauso', 'gue-náu-zo', 'exatamente assim', 'exactly'], ['anders', 'án-ders', 'diferente', 'different'], ['sicher', 'zí-çer', 'seguro', 'sure'], ['dagegen sein', 'da-guê-guen zain', 'ser contra', 'to be against'],
       ]),
-      gramatica(12, 'Pessoas: der Deutsche, ein Deutscher', 'PASSO 1: muitos adjetivos e particípios viram SUBSTANTIVOS DE PESSOAS: «deutsch» → «der Deutsche»; «bekannt» → «der Bekannte»; «krank» → «der Kranke»; «angestellt» → «der Angestellte»; «verwandt» → «der Verwandte»; «arbeitslos» → «der Arbeitslose». PASSO 2: eles se declinam como ADJETIVOS: depois de «der/die/das», «-e» (nominativo) e «-en» (os outros casos); depois de «ein», «-er» (masculino), «-e» (feminino): «der Deutsche / ein Deutscher», «die Deutsche / eine Deutsche», «die Deutschen / Deutsche». PASSO 3: acusativo masculino: «den Deutschen», «einen Deutschen». PASSO 4: dativo: «dem Deutschen», «einem Deutschen», «den Deutschen». PASSO 5: use-os para falar de grupos: «die Erwachsenen» (os adultos), «die Jugendlichen» (os jovens), «die Kranken» (os doentes).', {
-        tag: 'Substantivos',
+      gramatica(12, 'Concordar e discordar com educação, passo a passo', 'PASSO 1: para CONCORDAR: «Da stimme ich dir zu» (concordo com você), «Das sehe ich genauso», «Da hast du recht», «Das stimmt». PASSO 2: para concordar EM PARTE: «Da stimme ich dir teilweise zu», «Einerseits hast du recht, andererseits …». PASSO 3: para DISCORDAR com educação: «Das sehe ich anders», «Da bin ich nicht sicher», «Das stimmt nicht ganz». PASSO 4: para DISCORDAR com força: «Da bin ich anderer Meinung», «Das sehe ich überhaupt nicht so». PASSO 5: «zustimmen» pede DATIVO e é separável: «Ich stimme dir zu», «Ich habe ihm zugestimmt». PASSO 6: «dafür sein» (ser a favor) e «dagegen sein» (ser contra), com «dass» ou «zu»: «Ich bin dafür, dass wir früher anfangen.»', {
+        tag: 'Frase',
         tabela: [
-          { caso: 'Nominativ', masculino: 'der Deutsche / ein Deutscher', feminino: 'die Deutsche / eine Deutsche', plural: 'die Deutschen / Deutsche' }, { caso: 'Akkusativ', masculino: 'den Deutschen / einen Deutschen', feminino: 'die Deutsche / eine Deutsche', plural: 'die Deutschen / Deutsche' }, { caso: 'Dativ', masculino: 'dem Deutschen / einem Deutschen', feminino: 'der Deutschen / einer Deutschen', plural: 'den Deutschen / Deutschen' },
+          { funcao: 'concordar', frase: 'Da stimme ich dir zu. / Das sehe ich genauso. / Da hast du recht.' }, { funcao: 'concordar em parte', frase: 'Da stimme ich dir teilweise zu.' }, { funcao: 'discordar com educação', frase: 'Das sehe ich anders. / Da bin ich nicht sicher.' }, { funcao: 'discordar com força', frase: 'Da bin ich anderer Meinung.' }, { funcao: 'a favor / contra', frase: 'Ich bin dafür, dass wir früher anfangen.' },
         ],
-        erros: [['ein Bekannte', 'ein Bekannter', 'Masculino com ein: «-er».'], ['Ich kenne den Deutsche.', 'Ich kenne den Deutschen.', 'Acusativo masculino: «-en».'], ['die deutsche (as alemãs, sem substantivo)', 'die Deutschen', 'Substantivado: maiúscula.']],
+        erros: [['Ich stimme dich zu.', 'Ich stimme dir zu.', '«zustimmen» pede dativo.'], ['Ich zustimme dir.', 'Ich stimme dir zu.', 'Separável: o prefixo vai para o fim.'], ['Das sehe ich anderes.', 'Das sehe ich anders.', '«anders» é advérbio (invariável).']],
       }),
-      producao(5, 'Fale de pessoas em voz alta: «Ich kenne einen Deutschen. Mein Bekannter arbeitet … Die Jugendlichen wollen …»'),
+      producao(5, 'Reaja em voz alta a 6 opiniões: concorde, concorde em parte e discorde com educação.'),
     ]),
-    sessao('S3', 'O que há de novo?', [
-      revisao(5, 'Escreva 6 frases com pessoas substantivadas, em casos diferentes.'),
-      gramatica(10, 'Particípios substantivados e usos na conversa', 'PASSO 1: também os PARTICÍPIOS viram substantivos: «der Reisende» (o viajante, de «reisend»), «der Studierende» (o estudante), «der Angestellte» (o funcionário, de «angestellt»), «der Verletzte» (o ferido). PASSO 2: a declinação é a mesma dos adjetivos. PASSO 3: nas conversas, use as formas com neutros para falar de assuntos: «Was gibt es Neues?», «Nichts Besonderes.» PASSO 4: para generalizar, use o plural: «die Deutschen», «die Jugendlichen», «die Erwachsenen».', {
-        tag: 'Substantivos',
+    sessao('S3', 'Estruturar um texto de opinião', [
+      revisao(5, 'Escreva 6 fórmulas para concordar e discordar.'),
+      gramatica(10, 'O texto de opinião, passo a passo', 'PASSO 1: um texto de opinião (fórum, carta de leitor) tem QUATRO partes: INTRODUÇÃO (o tema e a sua posição), ARGUMENTOS (dois ou três, com motivo), EXEMPLO (um caso concreto) e CONCLUSÃO. PASSO 2: introdução: «Ich möchte meine Meinung zum Thema … äußern.» PASSO 3: argumentos, com ordem: «ERSTENS …, ZWEITENS …, DRITTENS …», «AUSSERDEM …». PASSO 4: exemplo: «Zum Beispiel …», «Ein Beispiel dafür ist …». PASSO 5: contra-argumento: «Natürlich gibt es auch Nachteile, aber …». PASSO 6: conclusão: «Zusammenfassend kann man sagen, dass …», «Abschließend möchte ich sagen …». PASSO 7: use os conectores que você aprendeu (weil, denn, deshalb, obwohl, trotzdem, einerseits … andererseits).', {
+        tag: 'Frase',
         tabela: [
-          { forma: 'Partizip I substantivado', exemplo: 'der Reisende, der Studierende' }, { forma: 'Partizip II substantivado', exemplo: 'der Angestellte, der Verletzte' }, { forma: 'pergunta comum', exemplo: 'Was gibt es Neues?' }, { forma: 'resposta comum', exemplo: 'Nichts Besonderes.' }, { forma: 'grupos', exemplo: 'die Deutschen, die Jugendlichen, die Erwachsenen' },
+          { parte: 'introdução', frase: 'Ich möchte meine Meinung zum Thema Homeoffice äußern.' }, { parte: 'argumentos', frase: 'Erstens spart man Zeit. Zweitens kann man ruhiger arbeiten.' }, { parte: 'exemplo', frase: 'Zum Beispiel muss man nicht pendeln.' }, { parte: 'contra-argumento', frase: 'Natürlich gibt es auch Nachteile, aber die Vorteile überwiegen.' }, { parte: 'conclusão', frase: 'Zusammenfassend kann man sagen, dass Homeoffice sinnvoll ist.' },
         ],
       }),
-      dialogo(10, 'Was gibt es Neues? / O que há de novo?', 'Dois amigos trocam novidades.', [
-        ['Mia', 'Was gibt es Neues?', 'O que há de novo?'], ['Jonas', 'Nichts Besonderes. Ich habe nur etwas Interessantes gelesen.', 'Nada de especial. Só li algo interessante.'], ['Mia', 'Was denn?', 'O quê?'],
-        ['Jonas', 'Viele Deutsche arbeiten heute weniger als früher.', 'Muitos alemães trabalham hoje menos do que antigamente.'], ['Mia', 'Und die Jugendlichen? Was machen die?', 'E os jovens? O que fazem?'], ['Jonas', 'Die Jugendlichen wollen mehr Freizeit. Alles Gute braucht Zeit, sagen sie.', 'Os jovens querem mais tempo livre. Dizem que tudo de bom leva tempo.'],
-        ['Mia', 'Da haben sie recht. Das Wichtigste ist die Gesundheit.', 'Têm razão. O mais importante é a saúde.'], ['Jonas', 'Ja, und für die Erwachsenen ist das Beste ein ruhiges Wochenende.', 'Sim, e para os adultos o melhor é um fim de semana tranquilo.'],
+      dialogo(10, 'Eine Diskussion über Homeoffice / Uma discussão sobre home office', 'Dois colegas debatem o trabalho em casa.', [
+        ['Mia', 'Ich bin der Meinung, dass Homeoffice die Arbeit verbessert.', 'Sou da opinião de que o home office melhora o trabalho.'], ['Jonas', 'Da stimme ich dir teilweise zu. Man spart Zeit, weil man nicht pendeln muss.', 'Concordo em parte. Economiza-se tempo, porque não é preciso se deslocar.'], ['Mia', 'Außerdem kann man ruhiger arbeiten.', 'Além disso, pode-se trabalhar com mais tranquilidade.'],
+        ['Jonas', 'Das sehe ich anders. Zu Hause lenkt mich vieles ab.', 'Vejo diferente. Em casa muita coisa me distrai.'], ['Mia', 'Zum Beispiel?', 'Por exemplo?'], ['Jonas', 'Zum Beispiel die Wäsche, der Fernseher und die Nachbarn.', 'Por exemplo, a roupa, a TV e os vizinhos.'],
+        ['Mia', 'Einerseits hast du recht, andererseits kann man sich gut organisieren.', 'Por um lado você tem razão, por outro dá para se organizar bem.'], ['Jonas', 'Zusammenfassend würde ich sagen: Eine Mischung aus beidem ist ideal.', 'Resumindo, eu diria: uma mistura dos dois é ideal.'],
       ]),
-      producao(5, 'Troque novidades em voz alta: «Was gibt es Neues? Nichts Besonderes. Ich habe etwas Interessantes gelesen …»'),
+      producao(5, 'Defenda uma opinião em voz alta em 8 frases, com introdução, dois argumentos, um exemplo e a conclusão.'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva um texto de 6 frases com adjetivos substantivados, incluindo pessoas.'),
+      revisao(5, 'Escreva um texto de opinião de cerca de 80 palavras sobre um tema à sua escolha.'),
       exercicios(20, [
-        lacuna('Gibt es etwas ___? (novo)', ['Neues', 'Neue', 'neues'], 'Neues', 'Substantivado depois de etwas: -es e maiúscula.'), lacuna('Ich wünsche dir alles ___. (de bom)', ['Gute', 'Gutes', 'gute'], 'Gute', 'Depois de alles: -e.'), lacuna('Das ___ ist die Gesundheit. (mais importante)', ['Wichtigste', 'wichtigste', 'Wichtigsten'], 'Wichtigste', 'das + superlativo substantivado.'),
-        lacuna('Ich kenne einen ___. (alemão)', ['Deutschen', 'Deutscher', 'Deutsche'], 'Deutschen', 'Acusativo masculino: -en.'), lacuna('Das ist ein ___ von mir. (conhecido, m.)', ['Bekannter', 'Bekannte', 'Bekanntes'], 'Bekannter', 'ein + masculino: -er.'), lacuna('Die ___ wollen mehr Freizeit. (jovens)', ['Jugendlichen', 'Jugendliche', 'jugendlichen'], 'Jugendlichen', 'die + plural: -en.'),
-        mc('Um adjetivo substantivado se escreve:', ['com maiúscula', 'com minúscula', 'em itálico'], 'com maiúscula', 'Das Gute.'), mc('Depois de «nichts», o adjetivo substantivado leva:', ['-es', '-e', '-en'], '-es', 'nichts Gutes.'), mc('Depois de «alles», o adjetivo substantivado leva:', ['-e', '-es', '-en'], '-e', 'alles Gute.'),
-        ordem('Ordene: «Há alguma novidade?»', ['Gibt', 'es', 'etwas', 'Neues'], 'Gibt es etwas Neues?', 'etwas + Neues.'), ouvir('Ich wünsche dir alles Gute', ['Ich wünsche dir alles Gute', 'Ich wünsche dir alles Gutes', 'Ich wünsche dir etwas Gute'], 'Ich wünsche dir alles Gute', 'alles + -e.'), ditado('Das Wichtigste ist die Gesundheit', 'das + superlativo substantivado.'),
-        livre('Escreva 5 frases: etwas Neues, nichts Gutes, alles Gute, uma pessoa substantivada e um grupo.', 'Gibt es etwas Neues? Ich habe nichts Gutes gehört. Ich wünsche dir alles Gute. Ich kenne einen Deutschen. Die Jugendlichen wollen mehr Freizeit.'),
+        lacuna('Ich finde, ___ Homeoffice praktisch ist.', ['dass', 'ob', 'wenn'], 'dass', '«dass» + verbo no fim.'), lacuna('Meiner Meinung ___ ist das richtig.', ['nach', 'mit', 'zu'], 'nach', 'meiner Meinung nach.'), lacuna('Da stimme ich ___ zu. (a você)', ['dir', 'dich', 'du'], 'dir', '«zustimmen» pede dativo.'),
+        lacuna('Das sehe ich ___. (diferente)', ['anders', 'anderes', 'andere'], 'anders', 'Advérbio.'), lacuna('___ spart man Zeit, zweitens ist es ruhiger.', ['Erstens', 'Einerseits', 'Außerdem'], 'Erstens', 'Primeiro argumento.'), lacuna('___ kann man sagen, dass es sinnvoll ist. (resumindo)', ['Zusammenfassend', 'Zum Beispiel', 'Erstens'], 'Zusammenfassend', 'Conclusão.'),
+        mc('«Da hast du recht» expressa:', ['concordância', 'discordância', 'dúvida'], 'concordância', 'Você tem razão.'), mc('«Das sehe ich anders» expressa:', ['discordância educada', 'concordância', 'pergunta'], 'discordância educada', 'Vejo diferente.'), mc('Depois de «meiner Meinung nach», o verbo vai:', ['na 2ª posição', 'no fim', 'no começo'], 'na 2ª posição', 'Meiner Meinung nach ist das …'),
+        mc('O texto de opinião termina com:', ['uma conclusão', 'uma pergunta', 'um exemplo'], 'uma conclusão', 'Zusammenfassend …'), ordem('Ordene: «Na minha opinião, isso é correto.»', ['Meiner', 'Meinung', 'nach', 'ist', 'das', 'richtig'], 'Meiner Meinung nach ist das richtig.', 'Verbo na 2ª posição.'), ouvir('Da stimme ich dir teilweise zu', ['Da stimme ich dir teilweise zu', 'Da stimme ich dir nicht zu', 'Da hast du unrecht'], 'Da stimme ich dir teilweise zu', 'Concordo em parte.'),
+        ditado('Zusammenfassend kann man sagen, dass es sinnvoll ist', 'Conclusão.'), livre('Escreva 5 frases: uma opinião com «dass», uma com «meiner Meinung nach», uma de concordância, uma de discordância e uma conclusão.', 'Ich finde, dass Homeoffice praktisch ist. Meiner Meinung nach spart man Zeit. Da stimme ich dir zu. Das sehe ich anders. Zusammenfassend kann man sagen, dass es sinnvoll ist.'),
       ]),
-      producao(5, 'Grave-se trocando novidades e falando de pessoas e grupos com adjetivos substantivados.'),
+      producao(5, 'Grave-se debatendo um tema com um amigo imaginário: opine, concorde e discorde.'),
     ]),
   ],
 });

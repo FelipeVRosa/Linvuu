@@ -79,7 +79,34 @@ As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira vers�
 **O bloco A2 está completo e (com o áudio pendente das aulas 41 a 46) fechado: 26 aulas, 104 sessões.**
 
 ## Bloco B1 (aulas 47 a 72)
-Relativsätze (nominativo, acusativo, dativo, com preposição) · Passiv Präsens e Präteritum · Konjunktiv II completo · Plusquamperfekt · infinitivo com «zu», «um … zu», «damit» · conectores (obwohl, während, bevor, nachdem, falls, deshalb, trotzdem) · perguntas indiretas · verbos e adjetivos com preposição · adjetivos substantivados · Partizip I e II como adjetivo · Futur II · genitivo e preposições do genitivo · textos e argumentação · revisão e simulado B1.
+| Aula | Tema | Estado |
+|---|---|---|
+| 47 | Orações relativas 1: nominativo | no ar |
+| 48 | Orações relativas 2: acusativo e «was» | no ar |
+| 49 | Orações relativas 3: dativo, preposição, genitivo (dessen/deren) | no ar |
+| 50 | O passivo 1: werden + Partizip II; modais; estado | no ar |
+| 51 | O passivo 2: Präteritum, Perfekt, sem sujeito | a escrever |
+| 52 | Plusquamperfekt; nachdem, bevor | a escrever |
+| 53 | als × wenn; während, seitdem, bis | a escrever |
+| 54 | Konjunktiv II 1: condicionais irreais (wenn ich … hätte, würde ich …) | a escrever |
+| 55 | Konjunktiv II 2: no passado (hätte/wäre + Partizip II) | a escrever |
+| 56 | Infinitivo com zu | a escrever |
+| 57 | um … zu, damit, ohne … zu, statt … zu | a escrever |
+| 58 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | a escrever |
+| 59 | Conectores 2: einerseits … andererseits, entweder … oder, weder … noch, sowohl … als auch | a escrever |
+| 60 | Verbos com preposição 1 | a escrever |
+| 61 | Verbos com preposição 2 e pronominaladverbien (darauf, worauf) | a escrever |
+| 62 | Adjetivos e substantivos com preposição | a escrever |
+| 63 | Partizip I e II como adjetivo | a escrever |
+| 64 | Adjetivos substantivados (das Neue, der Deutsche) | a escrever |
+| 65 | Futur II, suposições e partículas (doch, mal, ja, eben, halt) | a escrever |
+| 66 | Discurso indireto (reconhecer o Konjunktiv I) | a escrever |
+| 67 | Formação de palavras (prefixos, sufixos, compostos) | a escrever |
+| 68 | Dar opinião, concordar, discordar; escrever um texto de opinião | a escrever |
+| 69 | Vida profissional: currículo e entrevista | a escrever |
+| 70 | Mídia, sociedade e meio ambiente | a escrever |
+| 71 | Apresentação oral e discussão | a escrever |
+| 72 | Revisão e simulado B1 (formato B1, original) | a escrever |
 
 ## Fontes e direitos (registro)
 - **Referência de nível e formato (nada copiado):** as provas modelo do Goethe-Institut / ÖSD (A1, A2 e B1) servem de régua para o vocabulário, os temas e os tipos de tarefa (Lesen, Hören, Schreiben, Sprechen). O texto e as questões delas **não** entram no curso: o Goethe-Institut é uma entidade privada e as provas são obras protegidas. Os simulados do curso são **originais**, no mesmo formato.

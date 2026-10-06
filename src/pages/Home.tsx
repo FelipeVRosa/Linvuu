@@ -2,6 +2,7 @@ import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CURSOS, NIVEL_LABEL, statusDoCurso } from '../lib/content';
 import { TrilhaIdioma } from '../components/TrilhaIdioma';
+import { falar } from '../lib/audio';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
 import { Vitrine } from '../components/Vitrine';
@@ -30,6 +31,7 @@ export default function Home() {
   const nav = useNavigate();
   const [tgt, setTgt] = useState('ru');
   const [nivel, setNivel] = useState('zero');
+  const [tocando, setTocando] = useState(false);
   const [filtro, setFiltro] = useState<Filtro>('todos');
   const ehStem = STEM.some((c) => c.id === tgt);
 
@@ -72,6 +74,13 @@ export default function Home() {
           <aside className="hoje" aria-label="Exemplo de uma sessão">
             <span className="hoje-kicker">Russo · aula 1, sessão 1 de 4</span>
             <h2>{aula1.sessoes[0].titulo}</h2>
+            <div className={`hoje-frase${tocando ? ' tocando' : ''}`}>
+              <div><p lang="ru">Здравствуйте</p><small>Olá (formal) · toque para ouvir</small></div>
+              <button type="button" className="hoje-ouvir" aria-label="Ouvir: Здравствуйте" onClick={async () => { setTocando(true); try { await falar('Здравствуйте', 'ru'); } finally { setTocando(false); } }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="#fff" /></svg>
+              </button>
+              <span className="hoje-onda" aria-hidden="true"><span /><span /><span /><span /><span /><span /><span /></span>
+            </div>
             <p>{aula1.titulo}: {aula1.objetivo.charAt(0).toLowerCase() + aula1.objetivo.slice(1)}</p>
             <ol>
               {aula1.sessoes[0].blocos.map((b, i) => (

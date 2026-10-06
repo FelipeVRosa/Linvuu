@@ -6,7 +6,8 @@
   --ok:#0b7a3b; --ok-bg:#e6f5ec; --warn:#8a5a00; --warn-bg:#fff4d6; --soon:#4a5560; --soon-bg:#eceff1;
   --idioma:#b8480a; --idioma-bg:#fff0e3; --stem:#0b6b6b; --stem-bg:#dff3f1; --quente:#fbeee3; --ink:#0f1417;
   --r-sm:10px; --r-md:16px; --r-pill:999px;
-  --font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font:'Inter Variable','Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-display:'Fraunces Variable',Georgia,'Times New Roman',serif;
   --max:1120px; --pad:clamp(20px,4vw,32px);
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -26,8 +27,8 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 
 /* Botões */
 .btn,.nav-cta,.search-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;line-height:1;padding:14px 26px;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
-.btn-primary,.nav-cta,.search-btn{background:var(--accent);color:var(--on-accent)}
-.btn-primary:hover,.nav-cta:hover,.search-btn:hover{background:var(--accent-dark)}
+.btn-primary,.nav-cta,.search-btn{background:var(--accent-dark);color:var(--on-accent)}
+.btn-primary:hover,.nav-cta:hover,.search-btn:hover{background:#a83f06}
 .btn-ghost{background:#fff;border-color:var(--border-strong);color:var(--text)}
 .btn-ghost:hover{border-color:var(--text)}
 .link{background:none;border:0;padding:0;text-decoration:underline;cursor:pointer;color:var(--accent-dark)}
@@ -541,3 +542,18 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .passos{list-style:none;margin:12px 0 16px;padding:0;counter-reset:passo;display:flex;flex-direction:column;gap:10px;max-width:72ch}
 .passos li{counter-increment:passo;position:relative;padding-left:46px;min-height:32px;display:flex;align-items:center}
 .passos li::before{content:counter(passo);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--idioma-bg);color:var(--idioma);font-weight:700;font-size:14px;display:grid;place-items:center}
+
+/* Títulos com fonte de personalidade; cartão de aula com áudio de verdade */
+.hero-h1,.section-h2,.hoje h2{font-family:var(--font-display);font-weight:600;letter-spacing:-.03em}
+.hero-h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04}
+.hoje-frase{display:flex;align-items:center;gap:14px;margin:14px 0 6px;padding:14px 16px;border:1.5px solid var(--border);border-radius:var(--r-md);background:#fff}
+.hoje-frase p{margin:0;font-family:var(--font-display);font-size:28px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.hoje-frase small{display:block;color:var(--muted);font-size:14px;font-weight:500;letter-spacing:0;font-family:var(--font)}
+.hoje-ouvir{flex:none;width:48px;height:48px;border-radius:50%;border:0;background:var(--accent-dark);display:grid;place-items:center;cursor:pointer}
+.hoje-ouvir:hover{background:#a83f06}
+.hoje-onda{display:flex;align-items:center;gap:3px;height:28px;margin-left:auto}
+.hoje-onda span{display:block;width:3px;height:8px;border-radius:2px;background:var(--border-strong,#cfc7bc)}
+.hoje-frase.tocando .hoje-onda span{background:var(--accent-dark);animation:onda .9s ease-in-out infinite}
+.hoje-frase.tocando .hoje-onda span:nth-child(2n){animation-delay:.15s}.hoje-frase.tocando .hoje-onda span:nth-child(3n){animation-delay:.3s}
+@keyframes onda{0%,100%{height:8px}50%{height:26px}}
+@media(prefers-reduced-motion:reduce){.hoje-frase.tocando .hoje-onda span{animation:none;height:18px}}

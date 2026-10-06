@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CURSOS, FASES, NIVEL_CURTO, NIVEL_LABEL, statusDoCurso } from '../lib/content';
+import { CURSOS, NIVEL_LABEL, statusDoCurso } from '../lib/content';
+import { TrilhaIdioma } from '../components/TrilhaIdioma';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
 import { Vitrine } from '../components/Vitrine';
@@ -128,16 +129,7 @@ export default function Home() {
             <h2 className="section-h2" id="h-100">{t.trilha.titulo}</h2>
             <p className="section-sub">{t.trilha.sub}</p>
           </div>
-          <ol className="fases">
-            {FASES.map((f) => (
-              <li key={f.id}>
-                <span className="fase-dias">Dias {f.dias[0]}–{f.dias[1]}</span>
-                <h3>{f.titulo}</h3>
-                <p>{f.resumo}</p>
-                <span className="fase-nivel">{NIVEL_CURTO[f.nivel]}</span>
-              </li>
-            ))}
-          </ol>
+          <TrilhaIdioma />
         </section>
       </div>
 

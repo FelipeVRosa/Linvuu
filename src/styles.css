@@ -503,3 +503,30 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .link-gramatica{font-weight:700;text-decoration:underline;color:var(--accent-dark)}
 
 .nota-audio{font-size:13px;padding:8px 14px}
+
+/* Trilha por idioma */
+.trilha-idioma{display:flex;flex-direction:column;gap:20px}
+.trilha-abas{display:flex;flex-wrap:wrap;gap:10px}
+.trilha-aba{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--border);border-radius:var(--r-pill);background:#fff;font:inherit;font-weight:600;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.trilha-aba small{font-weight:500;color:var(--faint);font-size:12px}
+.trilha-aba:hover{border-color:var(--border-strong);transform:translateY(-1px)}
+.trilha-aba.ativa{border-color:var(--accent);background:var(--idioma-bg)}
+.trilha-aba:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.trilha-resumo{margin:0;color:var(--muted);max-width:70ch}
+.trilha-niveis{list-style:none;margin:0;padding:0 0 0 30px;position:relative;display:flex;flex-direction:column;gap:18px}
+.trilha-niveis::before{content:"";position:absolute;left:9px;top:12px;bottom:12px;width:3px;border-radius:3px;background:linear-gradient(var(--accent),var(--border))}
+.nivel-bloco{position:relative;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.nivel-bloco.visivel{opacity:1;transform:none}
+.nivel-ponto{position:absolute;left:-29px;top:20px;width:20px;height:20px;border-radius:50%;background:#fff;border:4px solid var(--accent)}
+.nivel-cartao{background:#fff;border:1.5px solid var(--border);border-radius:var(--r-md);padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.nivel-topo{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.nivel-topo h3{margin:0;font-size:18px;letter-spacing:-.01em}
+.nivel-meta{margin:0;color:var(--muted);font-size:14px}
+.nivel-acoes .btn-mini{display:inline-block;padding:8px 14px;border-radius:var(--r-pill);background:var(--accent);color:var(--on-accent);font-weight:700;font-size:14px}
+.nivel-acoes .btn-mini:hover{background:var(--accent-dark)}
+.nivel-cartao details summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--idioma)}
+.nivel-aulas{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 16px}
+.nivel-aulas a{display:flex;gap:10px;padding:6px 0;font-size:14px;color:var(--text)}
+.nivel-aulas a:hover{color:var(--accent-dark)}
+.nivel-aulas span{min-width:26px;color:var(--faint);font-variant-numeric:tabular-nums}
+@media(prefers-reduced-motion:reduce){.nivel-bloco{opacity:1;transform:none;transition:none}.trilha-aba{transition:none}}

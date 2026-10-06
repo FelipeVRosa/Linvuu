@@ -1,5 +1,5 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, diaDoCurso, gruposDoCurso, INICIO_POR_NIVEL, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
 import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
 import { IconeIdiomas, IconeStem } from '../components/Icones';
@@ -17,9 +17,11 @@ export default function Curso() {
 
   const stats = statusDoCurso(curso.id);
   const nivel = params.get('nivel');
-  const inicio = nivel ? INICIO_POR_NIVEL[nivel] : undefined;
-  const faseInicio = inicio ? DIAS[inicio.dia - 1].fase : 1;
+  const inicio = nivel ? inicioDoNivel(curso.id, nivel) : undefined;
+  const faseInicio = inicio ? (DIAS[inicio.dia - 1]?.fase ?? 1) : 1;
   const grupos = gruposDoCurso(curso.id);
+  const grupoInicio = inicio ? grupos.find((x) => inicio.dia >= x.dias[0] && inicio.dia <= x.dias[1]) : undefined;
+  const tituloInicio = grupoInicio ? `aula ${grupoInicio.aula}, ${grupoInicio.titulo}` : (inicio && DIAS[inicio.dia - 1] ? diaDoCurso(curso.id, DIAS[inicio.dia - 1]).titulo : '');
   const ultimo = grupos.length ? grupos[grupos.length - 1].dias[1] : 0;
   const fasesRestantes = FASES.filter((f) => f.dias[1] > ultimo);
 
@@ -52,10 +54,10 @@ export default function Curso() {
         <>
           {inicio && (
             <section className="aviso aviso-inicio">
-              <h2>Seu ponto de partida: dia {inicio.dia}</h2>
-              <p>Para o nível {NIVEL_LABEL[nivel!]}, sugerimos começar pelo dia {inicio.dia}: {diaDoCurso(curso.id, DIAS[inicio.dia - 1]).titulo}.</p>
+              <h2>Seu ponto de partida: sessão {inicio.dia}</h2>
+              <p>Para o nível {NIVEL_LABEL[nivel!]}, sugerimos começar pela sessão {inicio.dia}: {tituloInicio}.</p>
               {inicio.aviso && <p>{inicio.aviso}</p>}
-              <Link to={`/curso/${curso.id}/dia/${inicio.dia}`} className="btn btn-primary">Ir para o dia {inicio.dia}</Link>
+              <Link to={`/curso/${curso.id}/dia/${inicio.dia}`} className="btn btn-primary">Ir para a sessão {inicio.dia}</Link>
             </section>
           )}
           {stats && stats.publicadas < stats.total && (

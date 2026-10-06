@@ -22,7 +22,7 @@ export const ptBR = {
     { t: 'Aula 1 grátis', d: 'Sem cartão e sem instalar nada. Veja o método antes de decidir.' },
   ],
   explorar: { kicker: 'Explore', titulo: 'Escolha o que aprender', idiomasTexto: 'Russo, alemão, inglês, espanhol, francês e português. Seis trilhas, todas começando do zero. O alemão vai do A1 ao B1, com explicações em passos pequenos e áudio em todas as frases.', stemTexto: 'Matemática e física com o mesmo rigor: definição precisa, exemplo resolvido e exercício com feedback.' },
-  trilha: { kicker: 'A trilha', titulo: 'Doze fases para sair do zero', sub: 'Cada fase termina em uma revisão. A mesma trilha organiza todos os idiomas; cada idioma ganha suas próprias aulas.' },
+  trilha: { kicker: 'A trilha', titulo: 'Escolha o idioma e veja o caminho', sub: 'Cada idioma tem a sua própria trilha, organizada por nível. Cada aula tem 4 sessões de cerca de 30 minutos e termina em uma revisão.' },
   metodo: { kicker: 'Como funciona', titulo: 'Uma sessão,', destaque: 'três momentos', sub: 'Cada sessão dura cerca de 30 minutos e segue a mesma ordem: ouvir e ler, ver o idioma em uso, praticar.',
     passos: [
       { n: '01', t: 'Comece aqui', d: 'Ouça cada palavra com áudio e leia junto. É o primeiro contato do dia com o idioma, antes de qualquer regra.' },

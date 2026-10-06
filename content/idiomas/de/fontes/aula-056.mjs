@@ -1,66 +1,66 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, alfabeto, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'de', numero: 56, titulo: 'O infinitivo com zu', nivel: 'b1',
-  objetivo: 'Usar o infinitivo com «zu» depois de verbos, adjetivos e expressões, com a posição do «zu» nos verbos separáveis, e distinguir os verbos que não levam «zu».',
-  nota: 'Você usa o infinitivo com zu. Próxima aula: um … zu, damit, ohne … zu, statt … zu.',
+  idioma: 'de', numero: 56, titulo: 'Finalidade e contraste: um … zu, damit, ohne … zu, statt … zu', nivel: 'b1',
+  objetivo: 'Expressar a finalidade com «um … zu» (mesmo sujeito) e «damit» (sujeitos diferentes), e usar «ohne … zu» e «(an)statt … zu» para dizer «sem fazer» e «em vez de fazer».',
+  nota: 'Você explica para que algo é feito e o que se faz sem ou em vez de outra coisa. Próxima aula: conectores com obwohl, trotzdem, deshalb e outros.',
   sessoes: [
-    sessao('S1', 'Zu + infinitivo', [
-      revisao(5, 'Escreva 6 frases com Konjunktiv II no passado, incluindo duas com duplo infinitivo.'),
+    sessao('S1', 'Um … zu: para', [
+      revisao(5, 'Escreva 6 frases com infinitivo com zu.'),
       palavras(8, [
-        ['anfangen', 'án-fan-guen', 'começar', 'to start'], ['aufhören', 'áuf-hörren', 'parar, acabar', 'to stop'], ['versuchen', 'fer-zúrren', 'tentar', 'to try'], ['vergessen', 'fergésen', 'esquecer', 'to forget'],
-        ['vorhaben', 'fôr-haben', 'pretender, planejar', 'to intend'], ['hoffen', 'hófen', 'esperar (ter esperança)', 'to hope'], ['planen', 'plánen', 'planejar', 'to plan'], ['vorschlagen', 'fôr-xláguen', 'propor, sugerir', 'to suggest'],
+        ['das Ziel', 'das tsil', 'objetivo', 'goal'], ['der Zweck', 'der tsvek', 'finalidade', 'purpose'], ['verbessern', 'ferbésern', 'melhorar', 'to improve'], ['erreichen', 'errái-çen', 'alcançar', 'to reach'],
+        ['sparen', 'xpáren', 'economizar', 'to save'], ['das Geld', 'das guélt', 'dinheiro', 'money'], ['die Prüfung', 'di prüfung', 'prova', 'exam'], ['bestehen', 'bexténen', 'passar (na prova)', 'to pass'],
       ]),
-      gramatica(14, 'O infinitivo com zu, passo a passo', 'PASSO 1: depois de MUITOS verbos, adjetivos e expressões, o segundo verbo vai no INFINITIVO com «ZU» antes dele: «Ich versuche, Deutsch zu lernen» (eu tento aprender alemão). PASSO 2: o «zu» fica ANTES do infinitivo, no fim da frase; com a vírgula, quando o infinitivo tem complementos: «Ich habe vergessen, dich anzurufen.» PASSO 3: com verbos SEPARÁVEIS, o «zu» entra ENTRE o prefixo e o verbo, tudo junto: anrufen → «anzurufen», mitbringen → «mitzubringen», aufstehen → «aufzustehen». PASSO 4: verbos que levam «zu»: anfangen, aufhören, beginnen, versuchen, vergessen, vorhaben, hoffen, planen, vorschlagen, empfehlen. PASSO 5: expressões com «zu»: «Ich habe Lust / Zeit / keine Lust, … zu …», «Es ist wichtig / schön / schwer, … zu …». PASSO 6: compare com os modais: «Ich kann schwimmen» (sem zu) × «Ich versuche zu schwimmen» (com zu).', {
-        tag: 'Verbos',
-        comparacao: 'o português usa «a/de/para» + infinitivo («comecei a estudar», «esqueci de ligar»). O alemão usa sempre «zu» + infinitivo, no fim da frase.',
+      gramatica(14, 'Um … zu: a finalidade, passo a passo', 'PASSO 1: para dizer PARA QUÊ se faz algo, use «UM … ZU» + infinitivo: «Ich lerne Deutsch, um in Berlin zu arbeiten» (eu estudo alemão para trabalhar em Berlim). PASSO 2: o «um» abre a oração; o «zu» fica ANTES do infinitivo, no fim; com verbo separável: «um aufzustehen». PASSO 3: REGRA: o SUJEITO é o MESMO na principal e no «um … zu» (aqui, «ich» faz as duas coisas). PASSO 4: vírgula antes de «um». PASSO 5: «um … zu» responde à pergunta «Wozu?» (para quê?) ou «Warum?». PASSO 6: não se usa «um … zu» quando o sujeito muda: nesse caso, use «damit» (próxima sessão).', {
+        tag: 'Frase',
+        comparacao: 'o português diz «para + infinitivo» («estudo para trabalhar»). O alemão faz «um … zu» + infinitivo, com o mesmo sujeito.',
         tabela: [
-          { construcao: 'verbo + zu', frase: 'Ich versuche, Deutsch zu lernen.' }, { construcao: 'separável: zu no meio', frase: 'Ich habe vergessen, dich anzurufen.' }, { construcao: 'Lust / Zeit haben', frase: 'Ich habe keine Lust, heute zu arbeiten.' }, { construcao: 'es ist + adjetivo', frase: 'Es ist wichtig, pünktlich zu sein.' }, { construcao: 'anfangen / aufhören', frase: 'Er hat angefangen, Sport zu machen.' },
+          { frase: 'Ich lerne Deutsch, um in Berlin zu arbeiten.', pt: 'Estudo alemão para trabalhar em Berlim.' }, { frase: 'Er spart Geld, um ein Auto zu kaufen.', pt: 'Ele economiza dinheiro para comprar um carro.' }, { frase: 'Ich stehe früh auf, um den Zug zu erreichen.', pt: 'Acordo cedo para pegar o trem.' }, { frase: 'Wir lernen viel, um die Prüfung zu bestehen.', pt: 'Estudamos muito para passar na prova.' },
         ],
-        erros: [['Ich habe vergessen, dich zu anrufen.', 'Ich habe vergessen, dich anzurufen.', 'Separável: «zu» entre o prefixo e o verbo.'], ['Ich versuche, Deutsch lernen.', 'Ich versuche, Deutsch zu lernen.', 'Falta o «zu».'], ['Ich kann zu schwimmen.', 'Ich kann schwimmen.', 'Modais não levam «zu».']],
+        erros: [['Ich lerne Deutsch, um ich in Berlin zu arbeiten.', 'Ich lerne Deutsch, um in Berlin zu arbeiten.', 'No «um … zu», não se repete o sujeito.'], ['Ich stehe früh auf, um zu aufstehen.', 'Ich stehe früh auf, um den Zug zu erreichen.', 'Use um + objetivo + zu + verbo.'], ['Ich lerne Deutsch, zu in Berlin arbeiten.', 'Ich lerne Deutsch, um in Berlin zu arbeiten.', 'Falta o «um».']],
       }),
-      producao(3, 'Diga 6 frases com «zu»: «Ich versuche, … zu … Ich habe vergessen, … Ich habe keine Lust, …»'),
+      producao(3, 'Diga 6 finalidades em voz alta: «Ich lerne Deutsch, um … zu … Ich spare Geld, um … zu …»'),
     ]),
-    sessao('S2', 'Quando não se usa zu', [
-      revisao(5, 'Escreva 6 frases com infinitivo com zu, duas com separáveis.'),
+    sessao('S2', 'Damit: para que', [
+      revisao(5, 'Escreva 6 frases com «um … zu».'),
       palavras(8, [
-        ['bleiben', 'bláiben', 'ficar', 'to stay'], ['gehen', 'géen', 'ir', 'to go'], ['lassen', 'lássen', 'deixar, mandar fazer', 'to let'], ['sehen', 'zéen', 'ver', 'to see'],
-        ['hören', 'hörren', 'ouvir', 'to hear'], ['helfen', 'hélfen', 'ajudar', 'to help'], ['lernen', 'lérnen', 'aprender', 'to learn'], ['schwimmen', 'xvímen', 'nadar', 'to swim'],
+        ['damit', 'dá-mit', 'para que', 'so that'], ['verstehen', 'fer-xtéen', 'entender', 'to understand'], ['erklären', 'erklérren', 'explicar', 'to explain'], ['helfen', 'hélfen', 'ajudar', 'to help'],
+        ['vergessen', 'fergésen', 'esquecer', 'to forget'], ['sicher', 'zíçer', 'seguro', 'safe'], ['pünktlich', 'púnktliç', 'pontual', 'punctual'], ['die Zukunft', 'di tsúkunft', 'futuro', 'future'],
       ]),
-      gramatica(12, 'Infinitivo sem zu, passo a passo', 'PASSO 1: os MODAIS não levam «zu»: «Ich kann schwimmen», «Ich muss arbeiten». PASSO 2: «werden» (Futur I) também não: «Ich werde kommen.» PASSO 3: verbos de movimento e de permanência, sem «zu»: «Ich gehe schwimmen», «Ich bleibe sitzen», «Wir fahren einkaufen». PASSO 4: «lassen» (mandar fazer, deixar), «sehen» e «hören» (perceber uma ação): «Ich lasse das Auto reparieren», «Ich sehe ihn kommen», «Ich höre sie singen». PASSO 5: «helfen» e «lernen» costumam vir sem «zu» com um infinitivo curto: «Ich helfe dir kochen», «Ich lerne schwimmen». PASSO 6: se houver DÚVIDA, procure o verbo na lista: se for modal, werden, lassen, gehen, bleiben, sehen, hören → sem «zu»; se for anfangen, versuchen, vergessen, hoffen → com «zu».', {
-        tag: 'Verbos',
+      gramatica(12, 'Damit: a finalidade com sujeitos diferentes', 'PASSO 1: «DAMIT» (para que) abre uma subordinada de finalidade. O verbo conjugado vai para o FIM. PASSO 2: use-o quando o sujeito da principal e o da subordinada são DIFERENTES: «Ich erkläre es dir, damit du es verstehst» (eu explico para que você entenda). PASSO 3: também pode usá-lo com o MESMO sujeito, mas «um … zu» é mais comum e mais curto. PASSO 4: «damit» não se confunde com «mit» (com); é uma única palavra, conjunção. PASSO 5: a vírgula antes de «damit» é obrigatória. PASSO 6: pergunta «Wozu?» ou «Damit was?»; resposta com «um … zu» ou «damit».', {
+        tag: 'Frase',
         tabela: [
-          { verbo: 'modais', frase: 'Ich kann schwimmen. Ich muss arbeiten.' }, { verbo: 'werden', frase: 'Ich werde kommen.' }, { verbo: 'gehen / bleiben / fahren', frase: 'Ich gehe schwimmen. Wir fahren einkaufen.' }, { verbo: 'lassen', frase: 'Ich lasse das Auto reparieren.' }, { verbo: 'sehen / hören', frase: 'Ich sehe ihn kommen. Ich höre sie singen.' },
+          { sujeitos: 'diferentes', frase: 'Ich erkläre es dir, damit du es verstehst.' }, { sujeitos: 'diferentes', frase: 'Ich rufe dich an, damit du nicht vergisst.' }, { sujeitos: 'diferentes', frase: 'Wir schreiben es auf, damit niemand es vergisst.' }, { sujeitos: 'mesmo (prefira um … zu)', frase: 'Ich lerne, um die Prüfung zu bestehen.' },
         ],
-        erros: [['Ich gehe zu schwimmen.', 'Ich gehe schwimmen.', '«gehen» + infinitivo, sem «zu».'], ['Ich lasse das Auto zu reparieren.', 'Ich lasse das Auto reparieren.', '«lassen» não leva «zu».']],
+        erros: [['Ich erkläre es dir, um du es verstehst.', 'Ich erkläre es dir, damit du es verstehst.', 'Sujeitos diferentes: «damit».'], ['Ich erkläre es dir, damit du verstehst es.', 'Ich erkläre es dir, damit du es verstehst.', 'Verbo no fim.'], ['Ich lerne, damit ich die Prüfung bestehe.', 'Ich lerne, um die Prüfung zu bestehen.', 'Mesmo sujeito: prefira «um … zu».']],
       }),
-      producao(5, 'Diga 6 frases sem «zu»: «Ich gehe schwimmen. Ich lasse … Ich sehe … Ich höre …»'),
+      producao(5, 'Diga 6 frases com «damit»: «Ich erkläre es dir, damit du es … Ich schreibe es auf, damit niemand …»'),
     ]),
-    sessao('S3', 'Planos e hábitos', [
-      revisao(5, 'Escreva 6 frases: três com «zu» e três sem.'),
-      gramatica(10, 'Infinitivo com zu em conversas de planos e hábitos', 'PASSO 1: para planos: «Ich habe vor, im Sommer nach Berlin zu fahren.» PASSO 2: para propor: «Hast du Lust, am Wochenende wandern zu gehen?» PASSO 3: para hábitos novos: «Ich habe begonnen, jeden Morgen zu joggen.» PASSO 4: para lembrar e esquecer: «Vergiss nicht, deine Schuhe mitzubringen!» PASSO 5: para ser claro e conciso: use «zu + infinitivo» em vez de «dass»: «Ich hoffe, dich bald zu sehen» (em vez de «Ich hoffe, dass ich dich bald sehe») quando o sujeito é o mesmo.', {
-        tag: 'Verbos',
+    sessao('S3', 'Ohne … zu e statt … zu', [
+      revisao(5, 'Escreva 6 frases de finalidade: 3 com «um … zu» e 3 com «damit».'),
+      gramatica(10, 'Ohne … zu e (an)statt … zu', 'PASSO 1: «OHNE … ZU» + infinitivo significa «SEM + fazer»: «Er ging, ohne ein Wort zu sagen» (ele foi embora sem dizer uma palavra). PASSO 2: «(AN)STATT … ZU» + infinitivo significa «EM VEZ DE + fazer»: «Statt zu lernen, schaut er fern» (em vez de estudar, ele vê TV). PASSO 3: o sujeito costuma ser o mesmo. PASSO 4: com sujeitos diferentes: «ohne dass» e «anstatt dass» + verbo no fim: «Er ging, ohne dass jemand es merkte.» PASSO 5: com separável, o «zu» entra no meio: «statt fernzusehen», «ohne aufzustehen».', {
+        tag: 'Frase',
         tabela: [
-          { funcao: 'plano', frase: 'Ich habe vor, im Sommer nach Berlin zu fahren.' }, { funcao: 'proposta', frase: 'Hast du Lust, am Wochenende wandern zu gehen?' }, { funcao: 'hábito novo', frase: 'Ich habe begonnen, jeden Morgen zu joggen.' }, { funcao: 'lembrete', frase: 'Vergiss nicht, deine Schuhe mitzubringen!' }, { funcao: 'mesmo sujeito', frase: 'Ich hoffe, dich bald zu sehen.' },
+          { construcao: 'ohne … zu', frase: 'Er ging, ohne ein Wort zu sagen.' }, { construcao: '(an)statt … zu', frase: 'Statt zu lernen, schaut er fern.' }, { construcao: 'separável', frase: 'Statt fernzusehen, lese ich lieber ein Buch.' }, { construcao: 'ohne dass (outro sujeito)', frase: 'Er ging, ohne dass jemand es merkte.' },
         ],
       }),
-      dialogo(10, 'Pläne und Vorsätze / Planos e propósitos', 'Dois amigos falam de planos e de bons propósitos.', [
-        ['Mia', 'Hast du Lust, am Wochenende wandern zu gehen?', 'Você tem vontade de fazer uma trilha no fim de semana?'], ['Jonas', 'Ich habe vor, am Samstag auszuschlafen.', 'Pretendo dormir até tarde no sábado.'], ['Mia', 'Es ist wichtig, auch mal Pause zu machen.', 'É importante também fazer uma pausa.'],
-        ['Jonas', 'Stimmt. Ich habe versucht, weniger zu arbeiten, aber es ist schwer.', 'É verdade. Tentei trabalhar menos, mas é difícil.'], ['Mia', 'Hast du angefangen, Sport zu machen?', 'Você começou a fazer esporte?'], ['Jonas', 'Ja, ich habe begonnen, jeden Morgen zu joggen.', 'Sim, comecei a correr toda manhã.'],
-        ['Mia', 'Dann vergiss nicht, deine Schuhe mitzubringen!', 'Então não se esqueça de trazer os seus tênis!'], ['Jonas', 'Keine Sorge, ich habe nicht vergessen, sie einzupacken.', 'Sem preocupação, não me esqueci de colocá-los na mala.'],
+      dialogo(10, 'Warum lernst du Deutsch? / Por que você estuda alemão?', 'Dois amigos falam de como aprendem alemão.', [
+        ['Lea', 'Warum lernst du Deutsch?', 'Por que você estuda alemão?'], ['Paul', 'Ich lerne Deutsch, um in Berlin zu arbeiten.', 'Estudo alemão para trabalhar em Berlim.'], ['Lea', 'Und wie lernst du?', 'E como você estuda?'],
+        ['Paul', 'Ich höre jeden Tag Podcasts, um mein Hörverstehen zu verbessern.', 'Ouço podcasts todos os dias para melhorar a minha compreensão auditiva.'], ['Lea', 'Ich schreibe die Wörter auf, damit ich sie nicht vergesse.', 'Eu anoto as palavras para não esquecê-las.'], ['Paul', 'Ich spreche mit Muttersprachlern, ohne Angst zu haben.', 'Eu converso com nativos sem ter medo.'],
+        ['Lea', 'Statt jeden Tag fernzusehen, lese ich lieber Bücher.', 'Em vez de ver TV todo dia, prefiro ler livros.'], ['Paul', 'Gute Idee! Ich gehe auch öfter in die Bibliothek, um zu lernen.', 'Boa ideia! Eu também vou mais à biblioteca para estudar.'],
       ]),
-      producao(5, 'Conte os seus planos e bons propósitos em voz alta, com «zu» + infinitivo.'),
+      producao(5, 'Explique em voz alta como você aprende alemão, com «um … zu», «damit», «ohne … zu» e «statt … zu».'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva um texto de 6 frases com infinitivos com zu sobre os seus planos.'),
+      revisao(5, 'Escreva um texto de 6 frases sobre como você estuda, com as quatro construções.'),
       exercicios(20, [
-        lacuna('Ich versuche, Deutsch ___ lernen.', ['zu', 'um', 'für'], 'zu', 'zu + infinitivo.'), lacuna('Ich habe vergessen, dich ___. (anrufen)', ['anzurufen', 'zu anrufen', 'anrufen zu'], 'anzurufen', 'Separável: zu no meio.'), lacuna('Ich habe keine Lust, heute ___ arbeiten.', ['zu', 'um', 'zum'], 'zu', 'Lust haben + zu.'),
-        lacuna('Es ist wichtig, pünktlich ___ sein.', ['zu', 'um', 'von'], 'zu', 'es ist + adj. + zu.'), lacuna('Ich gehe ___. (schwimmen)', ['schwimmen', 'zu schwimmen', 'schwimmend'], 'schwimmen', '«gehen» sem zu.'), lacuna('Ich lasse das Auto ___. (reparieren)', ['reparieren', 'zu reparieren', 'repariert'], 'reparieren', '«lassen» sem zu.'),
-        mc('Os modais levam «zu»?', ['não', 'sim', 'só no passado'], 'não', 'Ich kann schwimmen.'), mc('Com verbo separável, o «zu» vai:', ['entre o prefixo e o verbo', 'antes do prefixo', 'depois do verbo'], 'entre o prefixo e o verbo', 'anzurufen.'), mc('A vírgula antes do infinitivo com zu é:', ['comum quando há complementos', 'proibida', 'só em perguntas'], 'comum quando há complementos', 'Ich versuche, Deutsch zu lernen.'),
-        ordem('Ordene: «Esqueci de ligar para você.»', ['Ich', 'habe', 'vergessen', 'dich', 'anzurufen'], 'Ich habe vergessen, dich anzurufen.', 'zu entre prefixo e verbo.'), ordem('Ordene: «É importante ser pontual.»', ['Es', 'ist', 'wichtig', 'pünktlich', 'zu', 'sein'], 'Es ist wichtig, pünktlich zu sein.', 'zu antes do infinitivo.'), ouvir('Hast du Lust, am Wochenende wandern zu gehen', ['Hast du Lust, am Wochenende wandern zu gehen', 'Du gehst am Wochenende wandern', 'Ich habe am Wochenende gewandert'], 'Hast du Lust, am Wochenende wandern zu gehen', 'Lust haben + zu.'),
-        ditado('Vergiss nicht, deine Schuhe mitzubringen', 'Separável com zu.'), livre('Escreva 5 frases com infinitivo com zu: um plano, uma proposta, um hábito, um lembrete e uma com verbo separável.', 'Ich habe vor, nach Berlin zu fahren. Hast du Lust, wandern zu gehen? Ich habe begonnen, zu joggen. Vergiss nicht, anzurufen! Ich habe vergessen, dich abzuholen.'),
+        lacuna('Ich lerne Deutsch, ___ in Berlin zu arbeiten.', ['um', 'damit', 'für'], 'um', 'Mesmo sujeito: um … zu.'), lacuna('Ich erkläre es dir, ___ du es verstehst.', ['damit', 'um', 'weil'], 'damit', 'Sujeitos diferentes: damit.'), lacuna('Er ging, ___ ein Wort zu sagen.', ['ohne', 'statt', 'um'], 'ohne', 'sem fazer.'),
+        lacuna('___ zu lernen, schaut er fern.', ['Statt', 'Ohne', 'Um'], 'Statt', 'em vez de fazer.'), lacuna('Ich stehe früh auf, um den Zug ___ erreichen.', ['zu', 'um', 'für'], 'zu', 'um … zu.'), lacuna('Ich rufe dich an, damit du nicht ___. (vergessen)', ['vergisst', 'vergessen', 'zu vergessen'], 'vergisst', 'Subordinada: verbo no fim.'),
+        mc('«Um … zu» pede:', ['o mesmo sujeito', 'sujeitos diferentes', 'nenhum sujeito'], 'o mesmo sujeito', 'Ich lerne, um … zu.'), mc('«Damit» abre uma oração com o verbo:', ['no fim', 'na 2ª posição', 'no começo'], 'no fim', 'Subordinada.'), mc('«Ohne … zu» significa:', ['sem fazer', 'para fazer', 'em vez de fazer'], 'sem fazer', 'Ohne ein Wort zu sagen.'),
+        ordem('Ordene: «Estudo alemão para trabalhar em Berlim.»', ['Ich', 'lerne', 'Deutsch', 'um', 'in', 'Berlin', 'zu', 'arbeiten'], 'Ich lerne Deutsch, um in Berlin zu arbeiten.', 'um … zu.'), ordem('Ordene: «Em vez de estudar, ele vê TV.»', ['Statt', 'zu', 'lernen', 'schaut', 'er', 'fern'], 'Statt zu lernen, schaut er fern.', 'statt … zu.'), ouvir('Ich schreibe die Wörter auf, damit ich sie nicht vergesse', ['Ich schreibe die Wörter auf, damit ich sie nicht vergesse', 'Ich schreibe die Wörter auf, um sie nicht zu vergessen', 'Ich vergesse die Wörter nicht'], 'Ich schreibe die Wörter auf, damit ich sie nicht vergesse', 'damit + verbo no fim.'),
+        ditado('Er ging, ohne ein Wort zu sagen', 'ohne … zu.'), livre('Escreva 5 frases: uma com «um … zu», uma com «damit», uma com «ohne … zu», uma com «statt … zu» e uma com «ohne dass».', 'Ich lerne Deutsch, um in Berlin zu arbeiten. Ich erkläre es dir, damit du es verstehst. Er ging, ohne ein Wort zu sagen. Statt zu lernen, schaut er fern. Er ging, ohne dass jemand es merkte.'),
       ]),
-      producao(5, 'Grave-se falando dos seus planos, propósitos e hábitos com «zu» + infinitivo.'),
+      producao(5, 'Grave-se explicando os seus objetivos e como você os alcança, com as quatro construções.'),
     ]),
   ],
 });

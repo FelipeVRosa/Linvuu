@@ -215,7 +215,7 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 }
 @media(max-width:760px){
   .nav-explorar,.nav-busca,.nav-cta{display:none}
-  .nav-burger{display:block;margin-left:auto}
+  .nav-burger{display:grid;place-items:center;min-width:44px;min-height:44px;margin-left:auto}
   .menu-mobile{display:flex;flex-direction:column;padding:8px var(--pad) 20px;border-top:1px solid var(--border);background:#fff}
   .menu-mobile a{padding:12px 0;font-weight:500;border-bottom:1px solid var(--border)}
   .menu-mobile input{width:100%;padding:12px 18px;margin-bottom:8px;border:1.5px solid var(--border-strong);border-radius:var(--r-pill)}
@@ -530,3 +530,14 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .nivel-aulas a:hover{color:var(--accent-dark)}
 .nivel-aulas span{min-width:26px;color:var(--faint);font-variant-numeric:tabular-nums}
 @media(prefers-reduced-motion:reduce){.nivel-bloco{opacity:1;transform:none;transition:none}.trilha-aba{transition:none}}
+
+/* Acessibilidade e leitura */
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.bloco p{max-width:72ch}
+.ex-dica{display:block;margin-top:8px;color:var(--faint);font-size:13px}
+@media(hover:none){.ex-dica{display:none}}
+
+/* Explicação em passos numerados */
+.passos{list-style:none;margin:12px 0 16px;padding:0;counter-reset:passo;display:flex;flex-direction:column;gap:10px;max-width:72ch}
+.passos li{counter-increment:passo;position:relative;padding-left:46px;min-height:32px;display:flex;align-items:center}
+.passos li::before{content:counter(passo);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--idioma-bg);color:var(--idioma);font-weight:700;font-size:14px;display:grid;place-items:center}

@@ -93,10 +93,10 @@ As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira vers�
 | 56 | Infinitivo com zu | no ar |
 | 57 | Finalidade e contraste: um … zu, damit, ohne … zu, statt … zu | no ar |
 | 58 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | no ar |
-| 59 | Conectores 2: einerseits … andererseits, entweder … oder, weder … noch, sowohl … als auch | a escrever |
-| 60 | Verbos com preposição 1 | a escrever |
-| 61 | Verbos com preposição 2 e pronominaladverbien (darauf, worauf) | a escrever |
-| 62 | Adjetivos e substantivos com preposição | a escrever |
+| 59 | Conectores 2: entweder … oder, weder … noch, sowohl … als auch, einerseits … andererseits, je … desto | no ar |
+| 60 | Verbos com preposição 1 (auf, an, für, über, um, von, mit, bei, zu) | no ar |
+| 61 | Verbos com preposição 2: advérbios pronominais (darauf, worauf, darauf, dass) | no ar |
+| 62 | Adjetivos e substantivos com preposição | no ar |
 | 63 | Partizip I e II como adjetivo | a escrever |
 | 64 | Adjetivos substantivados (das Neue, der Deutsche) | a escrever |
 | 65 | Futur II, suposições e partículas (doch, mal, ja, eben, halt) | a escrever |

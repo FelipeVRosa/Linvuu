@@ -20,7 +20,7 @@ Decisão do Felipe: o russo e o alemão vão **até o B1**, de forma progressiva
 | Bloco | Aulas | Estado |
 |---|---|---|
 | A1 | 1 a 24 (a renumerar: aspecto, futuro e movimento saem para o A2) | no ar |
-| A2 | 25 a 49 | 25 a 42 no ar; 43 a 49 a escrever |
+| A2 | 25 a 49 | 25 a 46 no ar; 47 a 49 a escrever |
 | B1 | 50 a 78 | a escrever |
 
 ### A2 (25 a 49)
@@ -44,10 +44,10 @@ Decisão do Felipe: o russo e o alemão vão **até o B1**, de forma progressiva
 | 40 | Clima e estações; impessoais | no ar |
 | 41 | Tempo livre e hobbies | no ar |
 | 42 | Telefone, mensagens e e-mails | no ar |
-| 43 | Reflexivos e recíprocos | a escrever |
-| 44 | весь, сам, каждый, другой | a escrever |
-| 45 | Verbos de movimento com prefixo 1 | a escrever |
-| 46 | Verbos de movimento com prefixo 2 | a escrever |
+| 43 | Reflexivos e recíprocos | no ar |
+| 44 | весь, сам, каждый, другой | no ar |
+| 45 | Verbos de movimento com prefixo 1 | no ar |
+| 46 | Verbos de movimento com prefixo 2 | no ar |
 | 47 | Quantidade: много, мало, несколько; genitivo plural | a escrever |
 | 48 | Expressões de tempo | a escrever |
 | 49 | Revisão e simulado A2 (original) | a escrever |

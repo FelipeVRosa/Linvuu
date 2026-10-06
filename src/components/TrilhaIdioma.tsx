@@ -69,7 +69,7 @@ export function TrilhaIdioma() {
       {blocos.length > 0 ? (
         <>
           <p className="trilha-resumo">
-            <strong>{curso.nome}</strong>: {grupos.length} aulas, {total} sessões de ~30 min (cerca de {horas(total)} h), de {NIVEL_CURTO[blocos[0].chave] ?? 'A1'} a {NIVEL_CURTO[ate ?? ''] ?? ''}{completos.length < blocos.length ? ', com o início do B2 já no ar' : ''}.
+            <strong>{curso.nome}</strong>: {grupos.length} aulas, {total} sessões de ~30 min (cerca de {horas(total)} h), de {NIVEL_CURTO[blocos[0].chave] ?? 'A1'} a {NIVEL_CURTO[ate ?? ''] ?? ''}{completos.length < blocos.length ? `, com o início do ${(() => { const k = blocos.find((x) => aberto(x.chave))?.chave ?? ''; return NIVEL_CURTO[k] ?? k.toUpperCase(); })()} já no ar` : ''}.
           </p>
           <ol className="trilha-niveis" ref={lista}>
             {blocos.map((b, i) => (

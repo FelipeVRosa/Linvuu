@@ -4,136 +4,89 @@
   "fase": 9,
   "nivel": "a1",
   "status": "publicada",
-  "titulo": "Gramática: o futuro: Qual futuro escolher",
+  "titulo": "Revisão e prova final: Os erros mais comuns",
   "objetivo": "Aula 21, sessão 3 de 4 · 30 min",
   "aula": {
     "numero": 21,
-    "titulo": "Gramática: o futuro",
-    "objetivo": "Formar o futuro com «буду» + infinitivo e com o verbo perfectivo, e escolher entre os dois.",
+    "titulo": "Revisão e prova final",
+    "objetivo": "Revisar o alfabeto, o gênero, a concordância, os casos básicos, o presente e o passado, e fazer a prova final do nível inicial.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
   },
   "sessao": {
     "sessao": "S3",
-    "titulo": "Qual futuro escolher",
+    "titulo": "Os erros mais comuns",
     "duracaoMin": 30,
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
-        "titulo": "буду × perfectivo: processo ou resultado",
-        "explicacao": "A escolha segue a mesma lógica do passado. Quer falar de processo, hábito ou duração? Use «буду» + infinitivo imperfectivo. Quer falar de resultado, de ação única concluída? Use o futuro perfectivo.",
-        "tabela": [
+        "min": 15,
+        "titulo": "Os 10 erros mais comuns de quem fala português",
+        "explicacao": "Estes dez erros aparecem com mais frequência em quem fala português. Corrigir só esses já deixa a sua fala muito mais natural. Leia cada par em voz alta: primeiro o errado (para reconhecer o som estranho), depois o certo (para fixar).",
+        "erros": [
           {
-            "situacao": "hábito",
-            "forma": "буду + imperfectivo",
-            "exemplo": "Каждый день я буду писать."
+            "errado": "Это есть книга.",
+            "certo": "Это книга.",
+            "motivo": "Sem «есть» no presente para dizer «é»."
           },
           {
-            "situacao": "duração",
-            "forma": "буду + imperfectivo",
-            "exemplo": "Завтра я буду работать весь день."
+            "errado": "Мой книга.",
+            "certo": "Моя книга.",
+            "motivo": "O possessivo concorda com o gênero."
           },
           {
-            "situacao": "ação única concluída",
-            "forma": "perfectivo",
-            "exemplo": "Завтра я напишу письмо."
+            "errado": "Я читаю книга.",
+            "certo": "Я читаю книгу.",
+            "motivo": "Objeto direto no acusativo."
           },
           {
-            "situacao": "resultado imediato",
-            "forma": "perfectivo",
-            "exemplo": "Я куплю хлеб."
+            "errado": "Я живу в Бразилия.",
+            "certo": "Я живу в Бразилии.",
+            "motivo": "«в» pede o preposicional."
+          },
+          {
+            "errado": "Я иду в магазине.",
+            "certo": "Я иду в магазин.",
+            "motivo": "Movimento pede o acusativo."
+          },
+          {
+            "errado": "Я никогда читаю.",
+            "certo": "Я никогда не читаю.",
+            "motivo": "Dupla negação obrigatória."
+          },
+          {
+            "errado": "У меня нет сестра.",
+            "certo": "У меня нет сестры.",
+            "motivo": "«нет» pede o genitivo."
+          },
+          {
+            "errado": "Вчера я есть дома.",
+            "certo": "Вчера я был дома.",
+            "motivo": "No passado: был/была."
+          },
+          {
+            "errado": "Я нужно воду.",
+            "certo": "Мне нужна вода.",
+            "motivo": "Quem precisa vai para o dativo."
+          },
+          {
+            "errado": "Ты есть студент?",
+            "certo": "Ты студент?",
+            "motivo": "Pergunta pela entonação, sem «есть»."
           }
         ],
-        "tag": "Aspecto e futuro"
-      },
-      {
-        "tipo": "dialogo",
-        "min": 8,
-        "titulo": "Планы / Planos",
-        "contexto": "Duas amigas falam do dia seguinte.",
-        "linhas": [
-          {
-            "personagem": "Оля",
-            "ru": "— Что ты будешь делать завтра?",
-            "pt": "— O que você vai fazer amanhã?",
-            "audio": "Что ты будешь делать завтра?"
-          },
-          {
-            "personagem": "Дима",
-            "ru": "— Утром я буду работать. Вечером я позвоню маме.",
-            "pt": "— De manhã vou trabalhar. À noite vou ligar para a minha mãe.",
-            "audio": "Утром я буду работать. Вечером я позвоню маме."
-          },
-          {
-            "personagem": "Оля",
-            "ru": "— А в субботу?",
-            "pt": "— E no sábado?",
-            "audio": "А в субботу?"
-          },
-          {
-            "personagem": "Дима",
-            "ru": "— В субботу я буду отдыхать. Мы будем гулять в парке.",
-            "pt": "— No sábado vou descansar. Vamos passear no parque.",
-            "audio": "В субботу я буду отдыхать. Мы будем гулять в парке."
-          },
-          {
-            "personagem": "Оля",
-            "ru": "— Хорошо! Ты купишь хлеб?",
-            "pt": "— Que bom! Você vai comprar pão?",
-            "audio": "Хорошо! Ты купишь хлеб?"
-          },
-          {
-            "personagem": "Дима",
-            "ru": "— Да, куплю. Я обязательно куплю хлеб и молоко.",
-            "pt": "— Sim, vou comprar. Com certeza vou comprar pão e leite.",
-            "audio": "Да, куплю. Я обязательно куплю хлеб и молоко."
-          },
-          {
-            "personagem": "Оля",
-            "ru": "— Отлично! До завтра!",
-            "pt": "— Ótimo! Até amanhã!",
-            "audio": "Отлично! До завтра!"
-          },
-          {
-            "personagem": "Дима",
-            "ru": "— До завтра!",
-            "pt": "— Até amanhã!",
-            "audio": "До завтра!"
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "min": 5,
-        "titulo": "Мой план / Meu plano",
-        "ru": "Завтра я буду дома. Утром я прочитаю книгу и напишу письмо. Днём я буду готовить обед. Вечером я позвоню другу, и мы будем смотреть фильм.",
-        "pt": "Amanhã vou estar em casa. De manhã vou ler um livro e escrever uma carta. Durante o dia vou preparar o almoço. À noite vou ligar para um amigo e vamos assistir a um filme.",
-        "perguntas": [
-          {
-            "pergunta": "Что он прочитает утром?",
-            "resposta": "Книгу"
-          },
-          {
-            "pergunta": "Что он будет делать днём?",
-            "resposta": "Готовить обед"
-          },
-          {
-            "pergunta": "Что они будут делать вечером?",
-            "resposta": "Смотреть фильм"
-          }
-        ]
+        "tag": "Revisão"
       },
       {
         "tipo": "producao",
-        "min": 2,
-        "enunciado": "Diga o seu plano de amanhã, com «буду» e com perfectivo."
+        "min": 10,
+        "enunciado": "Leia cada erro em voz alta e diga a forma certa. Depois grave 5 frases suas, sem nenhum desses erros."
       },
       {
         "tipo": "revisao",
         "min": 5,
-        "enunciado": "Escreva 3 frases com «буду» e 3 com futuro perfectivo."
+        "enunciado": "Escreva 3 erros que você já cometeu em russo e a forma certa."
       }
     ]
   },

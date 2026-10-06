@@ -1,86 +1,80 @@
 import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
 export default aula({
-  idioma: 'ru', numero: 22, titulo: 'Gramática: verbos de movimento', nivel: 'a1',
-  objetivo: 'Usar os verbos de movimento mais frequentes: идти/ходить, ехать/ездить, лететь/летать, бежать/бегать e os prefixos при-, у-, в-, вы- e по-.',
-  nota: 'Você usa os verbos de movimento mais frequentes. Próxima aula: comida e restaurante.',
+  idioma: 'ru', numero: 22, titulo: 'Gramática: aspecto do verbo', nivel: 'a2',
+  objetivo: 'Entender a diferença entre verbo imperfectivo e perfectivo (eu lia × eu li), reconhecer pares de verbos e formar o perfectivo com prefixos.',
+  nota: 'Você já escolhe entre processo e resultado. Próxima aula: o futuro, com «буду» e com o perfectivo.',
   sessoes: [
-    sessao('S1', 'Duas formas de «ir»', [
-      revisao(5, 'Escreva as 6 formas de «идти» e de «ехать».'),
-      gramatica(12, 'Determinado × indeterminado', 'Em português «ir» serve para tudo. Em russo, os verbos de movimento têm DOIS verbos para cada ideia. O verbo determinado descreve uma ação que acontece agora, numa única direção: «идти», «ехать». O verbo indeterminado descreve hábito, ida e volta ou capacidade: «ходить», «ездить». Além disso, o russo separa o MEIO: a pé (идти / ходить) × de transporte (ехать / ездить). Pergunta-guia: estou indo agora, numa direção (идти / ехать)? Ou é costume, ida e volta, ou capacidade (ходить / ездить)? No passado, «ходил» pode significar «fui e voltei». Com meios de transporte usa-se «на» + preposicional: на автобусе, на метро, на машине.', {
-        tag: 'Verbos de movimento',
-        comparacao: 'em português o mesmo «ir» serve para a pé, de ônibus, agora ou todos os dias. O russo escolhe o verbo pelo meio e pela situação.',
-        tabelas: [
-          { titulo: 'Os dois pares', linhas: [
-            { significado: 'a pé', determinado: 'идти', indeterminado: 'ходить', pt: 'ir a pé' }, { significado: 'de transporte', determinado: 'ехать', indeterminado: 'ездить', pt: 'ir de transporte' },
-          ] },
-          { titulo: 'Conjugação dos indeterminados', linhas: [
-            { pronome: 'я', ходить: 'хожу', ездить: 'езжу' }, { pronome: 'ты', ходить: 'ходишь', ездить: 'ездишь' }, { pronome: 'он / она', ходить: 'ходит', ездить: 'ездит' },
-            { pronome: 'мы', ходить: 'ходим', ездить: 'ездим' }, { pronome: 'вы', ходить: 'ходите', ездить: 'ездите' }, { pronome: 'они', ходить: 'ходят', ездить: 'ездят' },
-          ] },
+    sessao('S1', 'Duas formas para cada verbo', [
+      revisao(5, 'Escreva o passado de 5 verbos, no masculino e no feminino.'),
+      gramatica(14, 'Imperfectivo e perfectivo', 'Em russo, quase todo verbo tem DOIS infinitivos, chamados aspectos. O imperfectivo olha a ação como processo, hábito ou repetição: «Я читал книгу» = eu lia / estava lendo um livro (talvez sem terminar). O perfectivo olha a ação como um todo, concluída, com resultado: «Я прочитал книгу» = eu li o livro até o fim. Em português, a ideia aparece na diferença entre «eu lia» (pretérito imperfeito) e «eu li» (pretérito perfeito). Pergunta-guia: o que importa é o processo ou o hábito (imperfectivo), ou o resultado concluído (perfectivo)? O perfectivo se conjuga como qualquer verbo (1ª ou 2ª conjugação) e muitas vezes se forma com um PREFIXO: делать → сделать. Atenção: o perfectivo não tem presente; as formas de presente dele têm sentido de futuro (próxima aula). Por isso, ao estudar um verbo, estude sempre o par: imperfectivo / perfectivo.', {
+        tag: 'Aspecto e futuro',
+        comparacao: 'o português usa duas terminações do mesmo verbo («eu lia» × «eu li»). O russo usa dois verbos diferentes, quase sempre parecidos.',
+        tabela: [
+          { imperfectivo: 'делать', perfectivo: 'сделать', pt: 'fazer' }, { imperfectivo: 'читать', perfectivo: 'прочитать', pt: 'ler' }, { imperfectivo: 'писать', perfectivo: 'написать', pt: 'escrever' },
+          { imperfectivo: 'смотреть', perfectivo: 'посмотреть', pt: 'assistir, olhar' }, { imperfectivo: 'готовить', perfectivo: 'приготовить', pt: 'cozinhar' }, { imperfectivo: 'покупать', perfectivo: 'купить', pt: 'comprar' },
+          { imperfectivo: 'учить', perfectivo: 'выучить', pt: 'aprender de cor' }, { imperfectivo: 'открывать', perfectivo: 'открыть', pt: 'abrir' }, { imperfectivo: 'закрывать', perfectivo: 'закрыть', pt: 'fechar' },
+          { imperfectivo: 'отвечать', perfectivo: 'ответить', pt: 'responder' }, { imperfectivo: 'спрашивать', perfectivo: 'спросить', pt: 'perguntar' }, { imperfectivo: 'давать', perfectivo: 'дать', pt: 'dar' },
         ],
-        exemplos: [['Я иду в магазин.', 'Eu estou indo à loja (agora).'], ['Я хожу в магазин каждый день.', 'Eu vou à loja todo dia (hábito).'], ['Он едет на работу.', 'Ele está indo ao trabalho (agora).'], ['Он ездит на работу на автобусе.', 'Ele vai ao trabalho de ônibus (sempre).']],
-        erros: [['Я иду на работу на автобусе.', 'Я еду на работу на автобусе.', 'Com transporte use «ехать», não «идти».'], ['Я иду в магазин каждый день.', 'Я хожу в магазин каждый день.', 'Hábito pede o indeterminado: ходить.']],
+        exemplos: [['Вчера я читал книгу.', 'Ontem eu lia / estava lendo um livro.'], ['Вчера я прочитал книгу.', 'Ontem eu li o livro (até o fim).'], ['Каждый день я читал.', 'Todo dia eu lia (hábito).'], ['Я написал письмо.', 'Eu escrevi a carta (concluída).']],
+        erros: [['Я прочитал книгу каждый день.', 'Я читал книгу каждый день.', 'Hábito e repetição pedem o imperfectivo.']],
+      }),
+      palavras(6, [
+        ['долго', 'dólga', 'por muito tempo', 'for a long time'], ['весь день', 'vies dien', 'o dia inteiro', 'all day'], ['за час', 'za chas', 'em uma hora (prazo)', 'in an hour'], ['наконец', 'nakaniéts', 'finalmente', 'finally'], ['сразу', 'srázu', 'imediatamente', 'at once'],
+      ]),
+      producao(5, 'Diga duas frases para cada par: «Я читал книгу. Я прочитал книгу.» «Я писал письмо. Я написал письмо.»'),
+    ]),
+    sessao('S2', 'Palavras-pista', [
+      revisao(5, 'Escreva 5 pares de verbos (imperfectivo / perfectivo) de memória.'),
+      gramatica(12, 'Palavras-pista para escolher o aspecto', 'Certas palavras indicam o aspecto. Imperfectivo: каждый день, всегда, часто, редко, иногда, обычно, долго, весь день (hábito, repetição ou duração). Perfectivo: уже, сразу, наконец, за час (resultado, prazo, ação única concluída). Pergunta-teste: «Что ты делал вчера?» (imperfectivo: o que você estava fazendo?) × «Что ты сделал вчера?» (perfectivo: o que você fez, o que realizou?).', {
+        tag: 'Aspecto e futuro',
+        tabela: [
+          { pista: 'каждый день', aspecto: 'imperfectivo', exemplo: 'Я каждый день читал.' }, { pista: 'всегда', aspecto: 'imperfectivo', exemplo: 'Я всегда писал письма.' }, { pista: 'долго', aspecto: 'imperfectivo', exemplo: 'Я долго читал.' },
+          { pista: 'уже', aspecto: 'perfectivo', exemplo: 'Я уже прочитал.' }, { pista: 'сразу', aspecto: 'perfectivo', exemplo: 'Я сразу ответил.' }, { pista: 'наконец', aspecto: 'perfectivo', exemplo: 'Я наконец написал письмо.' }, { pista: 'за час', aspecto: 'perfectivo', exemplo: 'Я прочитал книгу за час.' },
+        ],
+        exemplos: [['Что ты делал вчера?', 'O que você estava fazendo ontem?'], ['Что ты сделал вчера?', 'O que você fez (realizou) ontem?']],
       }),
       palavras(8, [
-        ['автобус', 'aftóbus', 'ônibus', 'bus'], ['метро', 'mitró', 'metrô (não muda)', 'metro'], ['поезд', 'póist', 'trem', 'train'], ['самолёт', 'samaliót', 'avião', 'plane'],
-        ['машина', 'mashína', 'carro', 'car'], ['велосипед', 'vilasipiét', 'bicicleta', 'bicycle'], ['пешком', 'pishkóm', 'a pé', 'on foot'], ['такси', 'taksí', 'táxi (não muda)', 'taxi'],
+        ['решать / решить', 'rishát / rishít', 'resolver, decidir', 'to solve'], ['начинать / начать', 'nachinát / nachát', 'começar', 'to begin'], ['заканчивать / закончить', 'zakánchivat / zakónchit', 'terminar', 'to finish'], ['встречать / встретить', 'vstrichát / vstrétit', 'encontrar', 'to meet'],
+        ['забывать / забыть', 'zabyvát / zabýt', 'esquecer', 'to forget'], ['помогать / помочь', 'pamagát / pamóch', 'ajudar', 'to help'], ['брать / взять', 'brat / vziat', 'pegar', 'to take'], ['говорить / сказать', 'gavarít / skazát', 'dizer, falar', 'to say'],
       ]),
-      producao(5, 'Diga: «Я иду в магазин. Я хожу в магазин каждый день. Я еду на работу. Я езжу на работу на автобусе.»'),
+      producao(5, 'Responda em voz alta: «Что ты делал вчера?» (processo) e «Что ты уже сделал сегодня?» (resultado).'),
     ]),
-    sessao('S2', 'Voar, correr, chegar e sair', [
-      revisao(5, 'Escreva 4 frases com «идти / ходить» e 4 com «ехать / ездить».'),
-      palavras(8, [
-        ['лететь', 'litiét', 'voar (determinado: лечу, летишь)', 'to fly'], ['летать', 'litát', 'voar (indeterminado)', 'to fly (habitually)'], ['бежать', 'bizhát', 'correr (determinado: бегу, бежишь)', 'to run'], ['бегать', 'biégat', 'correr (indeterminado)', 'to run (habitually)'],
-        ['приходить', 'prikhadít', 'chegar a pé', 'to arrive'], ['уходить', 'ukhadít', 'sair, ir embora a pé', 'to leave'], ['приезжать', 'priyezzhát', 'chegar de transporte', 'to arrive by vehicle'], ['уезжать', 'uyezzhát', 'partir de transporte', 'to leave by vehicle'],
-      ]),
-      gramatica(12, 'Prefixos de direção e o futuro com по-', 'Os verbos de movimento aceitam prefixos que dizem a direção: при- (chegar), у- (ir embora), в- (entrar), вы- (sair de dentro). Exemplos a pé: приходить, уходить, входить, выходить. Com transporte: приезжать, уезжать, въезжать, выезжать. O prefixo «по-» forma o perfectivo de «идти» e «ехать»: «пойти» e «поехать». Eles servem para o futuro («Завтра я пойду в магазин» = amanhã vou à loja) e para dizer que alguém partiu («Я поехал на работу» = saí para o trabalho). No passado: пошёл, пошла, пошли; поехал, поехала, поехали.', {
-        tag: 'Verbos de movimento',
-        tabelas: [
-          { titulo: 'Direção', linhas: [
-            { ideia: 'chegar', a_pe: 'приходить / прийти', transporte: 'приезжать / приехать' }, { ideia: 'ir embora', a_pe: 'уходить / уйти', transporte: 'уезжать / уехать' },
-            { ideia: 'entrar', a_pe: 'входить / войти', transporte: 'въезжать / въехать' }, { ideia: 'sair de dentro', a_pe: 'выходить / выйти', transporte: 'выезжать / выехать' },
-          ] },
-          { titulo: 'Futuro de «пойти» e «поехать»', linhas: [
-            { pronome: 'я', пойти: 'пойду', поехать: 'поеду' }, { pronome: 'ты', пойти: 'пойдёшь', поехать: 'поедешь' }, { pronome: 'он / она', пойти: 'пойдёт', поехать: 'поедет' },
-            { pronome: 'мы', пойти: 'пойдём', поехать: 'поедем' }, { pronome: 'вы', пойти: 'пойдёте', поехать: 'поедете' }, { pronome: 'они', пойти: 'пойдут', поехать: 'поедут' },
-          ] },
+    sessao('S3', 'Formar o perfectivo', [
+      revisao(5, 'Escreva 5 palavras-pista de cada aspecto.'),
+      gramatica(12, 'Prefixos que formam o perfectivo', 'O jeito mais comum de formar o perfectivo é acrescentar um prefixo ao imperfectivo. Os mais frequentes: с- (делать → сделать), про- (читать → прочитать), на- (писать → написать), по- (смотреть → посмотреть), при- (готовить → приготовить), вы- (учить → выучить), у- (видеть → увидеть). Outros pares trocam a terminação: покупать → купить, отвечать → ответить. Depois de formado, o perfectivo se conjuga como qualquer verbo; no passado: прочитал, прочитала, прочитали.', {
+        tag: 'Aspecto e futuro',
+        tabela: [
+          { prefixo: 'с-', par: 'делать → сделать', pt: 'fazer' }, { prefixo: 'про-', par: 'читать → прочитать', pt: 'ler' }, { prefixo: 'на-', par: 'писать → написать', pt: 'escrever' }, { prefixo: 'по-', par: 'смотреть → посмотреть', pt: 'assistir' },
+          { prefixo: 'при-', par: 'готовить → приготовить', pt: 'cozinhar' }, { prefixo: 'вы-', par: 'учить → выучить', pt: 'aprender' }, { prefixo: 'у-', par: 'видеть → увидеть', pt: 'avistar' },
         ],
-        erros: [['Я идти завтра в магазин.', 'Завтра я пойду в магазин.', 'Para o futuro use «по-» + forma conjugada (пойду), nunca o infinitivo sozinho.'], ['Я прихожу на работу на автобусе.', 'Я приезжаю на работу на автобусе.', 'Com transporte use «приезжать» (приходить é a pé).']],
       }),
-      producao(5, 'Diga: «Я прихожу на работу в девять часов. Я ухожу в пять. Завтра я поеду в Москву.»'),
-    ]),
-    sessao('S3', 'Diálogo e leitura', [
-      revisao(5, 'Escreva 4 frases sobre como você vai ao trabalho ou à escola.'),
-      dialogo(12, 'Как ты ездишь на работу? / Como você vai ao trabalho?', 'Dois colegas comparam o caminho.', [
-        ['Борис', 'Как ты ездишь на работу?', 'Como você vai ao trabalho?'], ['Нина', 'Я езжу на метро. А ты?', 'Eu vou de metrô. E você?'], ['Борис', 'Я хожу пешком. Моя работа рядом.', 'Eu vou a pé. Meu trabalho é perto.'],
-        ['Нина', 'Ты всегда ходишь пешком?', 'Você sempre vai a pé?'], ['Борис', 'Нет, иногда я езжу на автобусе.', 'Não, às vezes vou de ônibus.'], ['Нина', 'А завтра ты пойдёшь на работу пешком?', 'E amanhã você vai a pé para o trabalho?'],
-        ['Борис', 'Да, завтра я пойду пешком. А ты поедешь на метро?', 'Sim, amanhã vou a pé. E você vai de metrô?'], ['Нина', 'Да, как всегда!', 'Sim, como sempre!'],
+      dialogo(8, 'Что ты уже сделал? / O que você já fez?', 'Uma mãe e o filho conversam à noite.', [
+        ['Мама', 'Саша, ты уже прочитал книгу?', 'Sasha, você já leu o livro?'], ['Саша', 'Нет, я ещё читаю. Я читал её весь вечер.', 'Não, ainda estou lendo. Li a noite inteira.'], ['Мама', 'А письмо ты написал?', 'E a carta, você escreveu?'],
+        ['Саша', 'Да, я уже написал письмо и ответил.', 'Sim, já escrevi a carta e respondi.'], ['Мама', 'Хорошо! Ты купил хлеб?', 'Que bom! Você comprou pão?'], ['Саша', 'Да, я купил хлеб и молоко.', 'Sim, comprei pão e leite.'],
+        ['Мама', 'Отлично! Спасибо!', 'Ótimo! Obrigada!'], ['Саша', 'Не за что!', 'De nada!'],
       ]),
-      texto(8, 'Мой путь на работу / Meu caminho para o trabalho', 'Я живу в Москве. Каждый день я хожу на работу пешком, потому что мой офис рядом. Иногда я езжу на автобусе. Мой друг живёт далеко. Он ездит на работу на метро. Он выходит из дома в семь часов и приезжает на работу в восемь. Завтра я пойду на работу пешком, а он поедет на метро.',
-        'Eu moro em Moscou. Todo dia vou a pé para o trabalho, porque meu escritório é perto. Às vezes vou de ônibus. Meu amigo mora longe. Ele vai ao trabalho de metrô. Ele sai de casa às sete horas e chega ao trabalho às oito. Amanhã vou a pé para o trabalho, e ele vai de metrô.',
-        [['Как автор ходит на работу?', 'Пешком'], ['Как ездит друг?', 'На метро'], ['Когда друг приезжает на работу?', 'В восемь часов']]),
-      producao(5, 'Conte como você vai ao trabalho ou à escola todos os dias e como irá amanhã.'),
+      producao(5, 'Conte três coisas que você já fez hoje e uma que ainda não fez.'),
     ]),
     sessao('S4', 'Prática', [
-      revisao(5, 'Escreva 4 frases com verbos de movimento: agora, hábito, futuro e passado.'),
+      revisao(5, 'Escreva 4 frases: 2 com imperfectivo e 2 com perfectivo.'),
       exercicios(20, [
-        mc('Agora, numa direção, a pé:', ['идти', 'ходить', 'ехать'], 'идти', 'Determinado: agora, numa direção.'),
-        mc('Hábito, a pé:', ['ходить', 'идти', 'ехать'], 'ходить', 'Indeterminado: hábito.'),
-        lacuna('Каждый день я ___ в магазин. (a pé; hábito)', ['хожу', 'иду', 'еду'], 'хожу', 'Hábito: ходить.'),
-        lacuna('Сейчас я ___ на работу. (de transporte)', ['еду', 'езжу', 'иду'], 'еду', 'Agora, de transporte: ехать.'),
-        lacuna('Он всегда ___ на автобусе.', ['ездит', 'едет', 'ходит'], 'ездит', 'Hábito, de transporte: ездить.'),
-        lacuna('Завтра я ___ в магазин. (a pé)', ['пойду', 'иду', 'хожу'], 'пойду', 'Futuro: по- + forma conjugada.'),
-        lacuna('Завтра мы ___ в Москву. (de transporte)', ['поедем', 'едем', 'ездим'], 'поедем', 'Futuro: поехать.'),
-        mc('«Я приезжаю на работу на метро» significa:', ['Eu chego ao trabalho de metrô', 'Eu saio de metrô', 'Eu moro no metrô'], 'Eu chego ao trabalho de metrô', 'приезжать = chegar de transporte.'),
-        mc('«Уходить» significa:', ['ir embora, sair', 'chegar', 'entrar'], 'ir embora, sair', 'Prefixo у-: sair, ir embora.'),
-        mc('Passado de «пойти» (ela):', ['пошла', 'пошёл', 'пошли'], 'пошла', 'Feminino: пошла.'),
-        ouvir('Я хожу на работу пешком', ['Я хожу на работу пешком', 'Я иду на работу пешком', 'Я езжу на работу'], 'Я хожу на работу пешком', 'ходить = hábito a pé.'),
-        ordem('Ordene: «Eu vou ao trabalho de ônibus todos os dias.»', ['автобусе', 'на', 'езжу', 'работу', 'Я', 'на'], 'Я езжу на работу на автобусе.', 'на + acusativo (destino); на + preposicional (meio).'),
-        ditado('Завтра я поеду в Москву', 'поехать: я поеду.'),
-        livre('Escreva 4 frases: como você vai ao trabalho, um hábito, o que fará amanhã e de onde você sai.', 'Я хожу на работу пешком. Иногда я езжу на метро. Завтра я пойду в магазин. Я ухожу из дома в семь часов.'),
+        mc('«Я читал книгу» sugere:', ['processo (talvez sem terminar)', 'ação concluída com resultado', 'futuro'], 'processo (talvez sem terminar)', 'Imperfectivo: processo.'),
+        mc('«Я прочитал книгу» sugere:', ['ação concluída com resultado', 'processo sem fim', 'hábito'], 'ação concluída com resultado', 'Perfectivo: resultado.'),
+        lacuna('Каждый день я ___ книгу. (читать)', ['читал', 'прочитал', 'прочитаю'], 'читал', 'Hábito: imperfectivo.'),
+        lacuna('Я уже ___ письмо. (escrever)', ['написал', 'писал', 'пишу'], 'написал', '«уже»: perfectivo.'),
+        lacuna('Вчера я ___ весь вечер. (читать)', ['читал', 'прочитал', 'прочитала'], 'читал', 'Duração: imperfectivo.'),
+        lacuna('Она наконец ___ книгу. (прочитать)', ['прочитала', 'читала', 'прочитал'], 'прочитала', 'Perfectivo feminino: -ла.'),
+        mc('Qual par está correto (imperfectivo / perfectivo)?', ['делать / сделать', 'делать / делал', 'сделать / делать'], 'делать / сделать', 'Imperfectivo primeiro, perfectivo depois.'),
+        mc('Perfectivo de «писать»:', ['написать', 'писать', 'сделать'], 'написать', 'Prefixo на-.'),
+        mc('Perfectivo de «покупать»:', ['купить', 'покупить', 'купать'], 'купить', 'O par troca a terminação.'),
+        mc('«Что ты сделал?» pergunta por:', ['resultado', 'processo', 'hábito'], 'resultado', 'Perfectivo: o que foi realizado.'),
+        mc('O perfectivo tem presente?', ['Não: as formas de presente têm sentido de futuro', 'Sim, como o imperfectivo', 'Só no passado'], 'Não: as formas de presente têm sentido de futuro', 'Perfectivo: passado e futuro.'),
+        ouvir('Я уже прочитал книгу', ['Я уже прочитал книгу', 'Я долго читал книгу', 'Я читаю книгу'], 'Я уже прочитал книгу', '«уже» + perfectivo.'),
+        ordem('Ordene: «Ele já escreveu a carta.»', ['письмо', 'уже', 'написал', 'Он'], 'Он уже написал письмо.', 'Sujeito + уже + perfectivo + objeto.'),
+        livre('Escreva 4 frases: 2 com imperfectivo (hábito ou processo) e 2 com perfectivo (resultado).', 'Каждый день я читал. Вчера я долго писал. Я уже прочитал книгу. Я наконец написал письмо.'),
       ]),
-      producao(5, 'Grave-se contando como você se desloca todos os dias e o que fará amanhã.'),
+      producao(5, 'Grave-se contando o que você fazia todo dia e o que você já fez hoje.'),
     ]),
   ],
 });

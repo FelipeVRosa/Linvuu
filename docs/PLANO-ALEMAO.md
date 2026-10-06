@@ -97,10 +97,10 @@ As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira vers�
 | 60 | Verbos com preposição 1 (auf, an, für, über, um, von, mit, bei, zu) | no ar |
 | 61 | Verbos com preposição 2: advérbios pronominais (darauf, worauf, darauf, dass) | no ar |
 | 62 | Adjetivos e substantivos com preposição | no ar |
-| 63 | Partizip I e II como adjetivo | a escrever |
-| 64 | Adjetivos substantivados (das Neue, der Deutsche) | a escrever |
-| 65 | Futur II, suposições e partículas (doch, mal, ja, eben, halt) | a escrever |
-| 66 | Discurso indireto (reconhecer o Konjunktiv I) | a escrever |
+| 63 | Partizip I e II como adjetivo | no ar |
+| 64 | Adjetivos substantivados (das Neue, der Deutsche, etwas Neues) | no ar |
+| 65 | Futur II, suposições e partículas modais (doch, mal, ja, eben, halt, denn, eigentlich, wohl, schon) | no ar |
+| 66 | O discurso indireto (dass, ob, sollen; reconhecer o Konjunktiv I) | no ar |
 | 67 | Formação de palavras (prefixos, sufixos, compostos) | a escrever |
 | 68 | Dar opinião, concordar, discordar; escrever um texto de opinião | a escrever |
 | 69 | Vida profissional: currículo e entrevista | a escrever |

@@ -45,7 +45,7 @@ export default function Curso() {
       {curso.area !== 'idiomas' ? (
         <section className="aviso">
           <h2>Trilha em planejamento</h2>
-          <p>A trilha de {curso.nome} seguirá o mesmo formato de 120 dias dos idiomas. Ainda não há aulas publicadas.</p>
+          <p>A trilha de {curso.nome} seguirá o mesmo formato dos outros idiomas: sessões de cerca de 30 minutos, em passos pequenos. Ainda não há aulas publicadas.</p>
           <Link to="/cursos?area=idiomas" className="btn btn-ghost">Ver os cursos de idiomas</Link>
         </section>
       ) : (

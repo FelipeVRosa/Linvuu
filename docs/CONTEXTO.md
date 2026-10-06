@@ -3,7 +3,7 @@
 Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é público: o Claude consegue clonar e ler sem token. O token só é preciso para enviar (push).
 
 ## O que é
-Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
+Linvuu: idiomas e STEM em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
 
 ## Onde cada coisa fica
 | O quê | Onde | Observação |
@@ -32,8 +32,8 @@ Linvuu: idiomas e STEM em trilhas de 100 dias, para falantes de português. Dono
 - `npm run auditar`: gera `docs/REVISAO-RU-AULAS.md` (alfabeto, letras fora de ordem, duplicatas, minutos, promessas).
 - `npm run build`: valida o conteúdo e gera o site.
 
-## 120 dias
-Decisão do Felipe: russo e alemão têm 120 dias (30 aulas de 4 sessões). A trilha-mestre tem 120 dias para todos os idiomas. `npm run aulas` compila as fontes de russo e de alemão e gera os dias; o site lê o total de dias do índice (`content/indice.json`).
+## Tamanho das trilhas
+Decisão do Felipe: o russo tem 120 dias (30 aulas de 4 sessões). O alemão **passa de 120 dias** e segue os níveis do quadro europeu: A1 (20 aulas), A2 (26 aulas) e B1 (26 aulas), ou seja, 72 aulas = 288 sessões = 144 h. A trilha-mestre (`content/trilha.json`) continua com 120 dias como reserva para os idiomas ainda sem aulas escritas; `npm run aulas` cria dias além dos 120 quando um idioma tem mais aulas. O texto do site não promete um número fixo de dias. Plano completo em `docs/PLANO-ALEMAO.md`.
 
 ## Como adicionar uma aula (sem gastar tokens)
 Dois jeitos. O compacto gasta cerca de 40% menos texto:
@@ -52,7 +52,7 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 
 ## Estado (rodada 13)
 - Russo: aulas 1 a 30 (dias 1 a 120, status "publicada", curso "Disponível"; as aulas 11 a 16, 20 a 22 e 25 a 30 são de gramática; o curso passa dos 100 dias a partir da aula 25) estão no site, com player de sessão (áudio pela voz do navegador, exercícios, progresso salvo no navegador). O alfabeto fecha (33 letras; У e Х entraram na aula 1).
-- Alemão: bloco A1 completo, aulas 1 a 20 (dias 1 a 80, 40 h), com áudio; plano v2 em `docs/PLANO-ALEMAO.md` (A1 20 aulas, A2 26, B1 26). Antes: aulas 1 a 10 (dias 1 a 40, primeiro bloco) no ar, curso "Disponível"; plano das 30 aulas em `docs/PLANO-ALEMAO.md`.
+- Alemão COMPLETO: 72 aulas (A1, A2 e B1), 288 dias, 144 h, 205 tópicos de gramática e áudio em todas as frases; plano em `docs/PLANO-ALEMAO.md`. Antes: aulas 1 a 10 (dias 1 a 40, primeiro bloco) no ar, curso "Disponível"; plano das 30 aulas em `docs/PLANO-ALEMAO.md`.
 - Áudio: MP3 salvos em `public/audio/<idioma>/` (gerados com Edge TTS por um workflow do GitHub); ver `docs/AUDIO.md`. Acento tônico é só gráfico (não entra no hash nem na fala). As 16 aulas antigas ficam em `content/legado/` só como consulta.
 - Aba Gramática em `/gramatica/ru` e `/gramatica/de`, gerada das aulas (`scripts/gramatica.mjs`); ordem do curso, qualidade e próximos passos em `docs/GRAMATICA-RU.md`. Blocos de gramática aceitam `comparacao`, `erros`, `tabelas` e `tag`.
 - A página do curso lista por aula quando o curso tem aulas escritas; as fases genéricas só aparecem para o que ainda é planejado.

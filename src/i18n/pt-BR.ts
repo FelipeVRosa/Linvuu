@@ -21,7 +21,7 @@ export const ptBR = {
     { t: 'Áudio em cada palavra', d: 'Ouça, repita e treine a leitura desde o primeiro dia.' },
     { t: 'Aula 1 grátis', d: 'Sem cartão e sem instalar nada. Veja o método antes de decidir.' },
   ],
-  explorar: { kicker: 'Explore', titulo: 'Escolha o que aprender', idiomasTexto: 'Russo, alemão, inglês, espanhol, francês e português. Seis trilhas de 120 dias, todas começando do zero.', stemTexto: 'Matemática e física com o mesmo rigor: definição precisa, exemplo resolvido e exercício com feedback.' },
+  explorar: { kicker: 'Explore', titulo: 'Escolha o que aprender', idiomasTexto: 'Russo, alemão, inglês, espanhol, francês e português. Seis trilhas, todas começando do zero. O alemão vai do A1 ao B1, com explicações em passos pequenos e áudio em todas as frases.', stemTexto: 'Matemática e física com o mesmo rigor: definição precisa, exemplo resolvido e exercício com feedback.' },
   trilha: { kicker: 'A trilha', titulo: 'Doze fases para sair do zero', sub: 'Cada fase termina em uma revisão. A mesma trilha organiza todos os idiomas; cada idioma ganha suas próprias aulas.' },
   metodo: { kicker: 'Como funciona', titulo: 'Uma sessão,', destaque: 'três momentos', sub: 'Cada sessão dura cerca de 30 minutos e segue a mesma ordem: ouvir e ler, ver o idioma em uso, praticar.',
     passos: [
@@ -39,7 +39,7 @@ export const ptBR = {
     { p: 'Funciona para quem nunca estudou o idioma?', r: 'Sim. A trilha começa do zero, pelos sons e pelo alfabeto. Se você já sabe algo, escolha seu nível na página inicial e a trilha sugere um dia para começar.' },
     { p: 'Quanto custa?', r: 'A aula 1 é gratuita, sem cartão. Os valores dos cursos completos serão divulgados antes de qualquer cobrança, com as condições à vista.' },
     { p: 'Quanto tempo preciso por dia?', r: 'Cada aula tem 4 sessões de cerca de 30 minutos, duas horas por aula. O ritmo é seu: dá para fazer uma sessão por dia e parar no fim de qualquer bloco. Hoje o progresso fica salvo no seu navegador.' },
-    { p: 'Vou ficar fluente?', r: 'Nenhum curso online promete isso com honestidade. A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. A trilha de 120 dias foi desenhada para dar uma base sólida de iniciante.' },
+    { p: 'Vou ficar fluente?', r: 'Nenhum curso online promete isso com honestidade. A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. As trilhas foram desenhadas para levar você do zero a uma base sólida; no alemão, o caminho completo vai do A1 ao B1.' },
     { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo do criador da Linvuu. Hoje o site oferece cursos em texto, áudio e exercícios. Para saber primeiro das novidades, como livros e novos idiomas, assine a newsletter no rodapé.' },
     { p: 'O que é o "Comece aqui"?', r: 'É o primeiro momento de cada sessão: você ouve cada palavra e lê junto, para o idioma entrar pelo ouvido antes de qualquer regra. Vídeos de apoio entram só onde os alunos mais tropeçam.' },
     { p: 'O que significam "Disponível", "Em produção" e "Em breve"?', r: '"Disponível" quer dizer que há aulas no ar para estudar. "Em produção" quer dizer que as aulas existem, mas ainda passam por revisão. "Em breve" é um curso que ainda não começou a ser produzido. Cada aula mostra seu próprio status.' },

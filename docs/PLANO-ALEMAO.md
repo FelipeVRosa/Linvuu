@@ -85,14 +85,14 @@ As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira vers�
 | 48 | Orações relativas 2: acusativo e «was» | no ar |
 | 49 | Orações relativas 3: dativo, preposição, genitivo (dessen/deren) | no ar |
 | 50 | O passivo 1: werden + Partizip II; modais; estado | no ar |
-| 51 | O passivo 2: Präteritum, Perfekt, sem sujeito | a escrever |
-| 52 | Plusquamperfekt; nachdem, bevor | a escrever |
-| 53 | als × wenn; während, seitdem, bis | a escrever |
-| 54 | Konjunktiv II 1: condicionais irreais (wenn ich … hätte, würde ich …) | a escrever |
-| 55 | Konjunktiv II 2: no passado (hätte/wäre + Partizip II) | a escrever |
-| 56 | Infinitivo com zu | a escrever |
-| 57 | um … zu, damit, ohne … zu, statt … zu | a escrever |
-| 58 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | a escrever |
+| 51 | O passivo 2: Präteritum, Perfekt, sem sujeito; man e sich lassen | no ar |
+| 52 | Plusquamperfekt; nachdem, bevor | no ar |
+| 53 | als × wenn; während, seitdem, bis, sobald, solange | no ar |
+| 54 | Konjunktiv II 1: condicionais irreais e desejos | no ar |
+| 55 | Konjunktiv II 2: o irreal no passado (hätte/wäre + Partizip II) | no ar |
+| 56 | Infinitivo com zu | no ar |
+| 57 | Finalidade e contraste: um … zu, damit, ohne … zu, statt … zu | no ar |
+| 58 | Conectores 1: obwohl, trotzdem, deshalb, deswegen, außerdem, sonst | no ar |
 | 59 | Conectores 2: einerseits … andererseits, entweder … oder, weder … noch, sowohl … als auch | a escrever |
 | 60 | Verbos com preposição 1 | a escrever |
 | 61 | Verbos com preposição 2 e pronominaladverbien (darauf, worauf) | a escrever |

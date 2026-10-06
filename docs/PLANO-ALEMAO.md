@@ -67,14 +67,16 @@ Decisão do Felipe: o alemão é mais fácil que o russo, então pode ir mais lo
 | 38 | Verbos reflexivos | no ar |
 | 39 | Konjunktiv II básico (würde, hätte, wäre, könnte) | no ar |
 | 40 | Futur I e werden | no ar |
-| 41 | Genitivo e Declinação-N | a escrever |
-| 42 | Perguntas (welcher, was für ein) e pronomes | a escrever |
-| 43 | Saúde e corpo | a escrever |
-| 44 | Trabalho, formulários e e-mails formais | a escrever |
-| 45 | Moradia, cidade e orientação | a escrever |
-| 46 | Revisão e simulado A2 (formato Goethe A2, original) | a escrever |
+| 41 | O genitivo: posse, tempo, wegen, während, trotz | no ar |
+| 42 | Perguntas e pronomes indefinidos | no ar |
+| 43 | Saúde e corpo | no ar |
+| 44 | Trabalho, formulários e e-mails formais | no ar |
+| 45 | Moradia, cidade e orientação | no ar |
+| 46 | Revisão e simulado A2 (formato Goethe A2, original) | no ar |
 
 As aulas «quatro casos» (agora 25) voltaram do A1. As outras da primeira versão (dativo, acusativo e lugares com Declinação-N, modais) estão em `content/idiomas/de/fontes-a2/` e serão reescritas em passos menores nas aulas 26 a 30; os áudios delas já estão prontos.
+
+**O bloco A2 está completo e (com o áudio pendente das aulas 41 a 46) fechado: 26 aulas, 104 sessões.**
 
 ## Bloco B1 (aulas 47 a 72)
 Relativsätze (nominativo, acusativo, dativo, com preposição) · Passiv Präsens e Präteritum · Konjunktiv II completo · Plusquamperfekt · infinitivo com «zu», «um … zu», «damit» · conectores (obwohl, während, bevor, nachdem, falls, deshalb, trotzdem) · perguntas indiretas · verbos e adjetivos com preposição · adjetivos substantivados · Partizip I e II como adjetivo · Futur II · genitivo e preposições do genitivo · textos e argumentação · revisão e simulado B1.

@@ -20,7 +20,7 @@ Decisão do Felipe: o russo e o alemão vão **até o B1**, de forma progressiva
 | Bloco | Aulas | Estado |
 |---|---|---|
 | A1 | 1 a 24 (a renumerar: aspecto, futuro e movimento saem para o A2) | no ar |
-| A2 | 25 a 49 | 25 a 34 no ar; 35 a 49 a escrever |
+| A2 | 25 a 49 | 25 a 38 no ar; 39 a 49 a escrever |
 | B1 | 50 a 78 | a escrever |
 
 ### A2 (25 a 49)
@@ -36,10 +36,10 @@ Decisão do Felipe: o russo e o alemão vão **até o B1**, de forma progressiva
 | 32 | O imperativo | no ar |
 | 33 | что, потому что, когда, если, чтобы | no ar |
 | 34 | Saúde e corpo | no ar |
-| 35 | Trabalho e profissões | a escrever |
-| 36 | Casa e moradia | a escrever |
-| 37 | Compras e roupas | a escrever |
-| 38 | Viagens e transporte | a escrever |
+| 35 | Trabalho e profissões | no ar |
+| 36 | Casa e moradia | no ar |
+| 37 | Compras e roupas | no ar |
+| 38 | Viagens e transporte | no ar |
 | 39 | Cidade e direções | a escrever |
 | 40 | Clima e estações; impessoais | a escrever |
 | 41 | Tempo livre e hobbies | a escrever |

@@ -2,11 +2,14 @@ import express from 'express';
 import type { Request, Response } from 'express';
 import { createServer as createViteServer } from 'vite';
 import path from 'path';
+import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import Stripe from 'stripe';
 import { getLesson, getLessonSummaryList } from './src/data/index.ts';
+import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
+import { SITE_URL } from './src/config/site.ts';
 import type {
   NativeLanguage,
   PhilologicalAnalysisRequest,
@@ -541,8 +544,13 @@ No padrão C1, a evitação de construções analíticas coloquiais em favor da 
         else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
       },
     }));
-    app.get('*', (_req: Request, res: Response) => {
-      res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).
+    const dadosMeta = carregarDadosMeta(__dirname);
+    let htmlBase: string | null = null;
+    app.get('*', (req: Request, res: Response) => {
+      htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
+      const m = metaDaRota(req.path, dadosMeta);
+      res.status(m.status).type('html').send(aplicarMeta(htmlBase, m, SITE_URL));
     });
   } else {
     const vite = await createViteServer({

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bloco, Exercicio, Palavra, ROTULO_BLOCO, SessaoAula } from '../lib/aulas';
 import { falar, falarLista, parar, temVoz } from '../lib/audio';
@@ -52,6 +52,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const [res, setRes] = useState<'ok' | 'erro' | 'livre' | null>(null);
   const [acertos, setAcertos] = useState<Record<string, boolean>>({});
   const [fim, setFim] = useState(false);
+  const navTeclado = useRef(false); // true depois de um Tab: o Enter passa a agir no botão em foco
   const ex = itens[i];
   const corrigiveis = itens.filter((x) => x.tipo !== 'producao');
 
@@ -70,6 +71,36 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   };
   const recomecar = () => { setI(0); setAcertos({}); setFim(false); setEscolha(null); setOrdem([]); setTexto(''); setRes(null); };
 
+  const comOpcoes = ex.opcoes && ex.gabarito !== undefined && ex.tipo !== 'sentence-ordering';
+  const pode = ex.tipo === 'producao' ? true : ex.tipo === 'sentence-ordering' ? ordem.length > 0 : comOpcoes ? escolha !== null : texto.trim() !== '';
+
+  // Teclado: 1 a 9 escolhem a opção (ou a peça), Enter verifica e avança. Não interfere em campos de texto nem em botões em foco.
+  useEffect(() => {
+    const aoPonteiro = () => { navTeclado.current = false; };
+    const aoTeclar = (e: KeyboardEvent) => {
+      if (e.key === 'Tab') { navTeclado.current = true; return; }
+      if (fim || e.metaKey || e.ctrlKey || e.altKey) return;
+      const alvo = e.target as HTMLElement | null;
+      const tag = alvo?.tagName;
+      if (e.key === 'Enter') {
+        if (tag === 'TEXTAREA' || tag === 'SELECT') return;
+        if ((tag === 'BUTTON' || tag === 'A') && navTeclado.current) return; // navegando com Tab: o botão em foco faz a sua própria ação
+        e.preventDefault();
+        if (res === null) { if (pode) verificar(); } else avancar();
+        return;
+      }
+      if (res !== null || tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || alvo?.isContentEditable) return;
+      if (!/^[1-9]$/.test(e.key)) return;
+      const k = Number(e.key) - 1;
+      navTeclado.current = false;
+      if (comOpcoes && k < ex.opcoes!.length) { e.preventDefault(); setEscolha(ex.opcoes![k]); }
+      else if (ex.tipo === 'sentence-ordering' && k < ex.opcoes!.length && !ordem.includes(k)) { e.preventDefault(); setOrdem((o) => [...o, k]); }
+    };
+    document.addEventListener('keydown', aoTeclar);
+    document.addEventListener('pointerdown', aoPonteiro, true);
+    return () => { document.removeEventListener('keydown', aoTeclar); document.removeEventListener('pointerdown', aoPonteiro, true); };
+  });
+
   if (fim) {
     const certos = corrigiveis.filter((x) => acertos[x.id]).length;
     const erros = corrigiveis.filter((x) => acertos[x.id] === false);
@@ -82,8 +113,6 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     );
   }
 
-  const comOpcoes = ex.opcoes && ex.gabarito !== undefined && ex.tipo !== 'sentence-ordering';
-  const pode = ex.tipo === 'producao' ? true : ex.tipo === 'sentence-ordering' ? ordem.length > 0 : comOpcoes ? escolha !== null : texto.trim() !== '';
   return (
     <div className="exercicio">
       <span className="ex-n">Exercício {i + 1} de {itens.length}</span>
@@ -94,6 +123,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           {ex.opcoes!.map((o) => (
             <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}</button>
           ))}
+          <small className="ex-dica">Teclado: tecle 1 a {ex.opcoes!.length} para escolher e Enter para verificar.</small>
         </div>
       )}
       {ex.tipo === 'sentence-ordering' && (
@@ -108,7 +138,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       {!comOpcoes && ex.tipo !== 'sentence-ordering' && (
         ex.tipo === 'producao'
           ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="Escreva aqui (só você vê)" lang={idioma} />
-          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder="Escreva em cirílico" lang={idioma} />
+          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? 'Escreva em cirílico' : 'Escreva aqui'} lang={idioma} />
       )}
       {res && (
         <div className={`ex-feedback ${res}`} role="status">
@@ -126,11 +156,24 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   );
 }
 
+/** Explicações em «PASSO 1: … PASSO 2: …» viram uma lista numerada; as demais ficam como parágrafo. */
+function Explicacao({ texto }: { texto: string }) {
+  const partes = texto.split(/\s*PASSO \d+:\s*/);
+  if (partes.length < 3) return <p>{texto}</p>;
+  const intro = partes[0].trim();
+  return (
+    <>
+      {intro && <p>{intro}</p>}
+      <ol className="passos">{partes.slice(1).map((x, i) => <li key={i}>{x.trim().replace(/^./, (c) => c.toUpperCase())}</li>)}</ol>
+    </>
+  );
+}
+
 export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string }) {
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
-      <p>{b.explicacao}</p>
+      <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>Em português:</strong> {b.comparacao}</p>}
       {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}

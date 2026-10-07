@@ -1,222 +1,175 @@
-import { FormEvent, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { CURSOS, NIVEL_LABEL, statusDoCurso } from '../lib/content';
-import { TrilhaIdioma } from '../components/TrilhaIdioma';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CURSOS_ATIVOS, statusDoCurso } from '../lib/content';
 import { falar } from '../lib/audio';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
 import { Vitrine } from '../components/Vitrine';
 import { Avaliacoes } from '../components/Avaliacoes';
-import { IconeIdiomas, IconeStem } from '../components/Icones';
-import { EQUIPE } from '../config/equipe';
-import aula1 from '../../content/idiomas/ru/aulas/aula-001.json';
+import { Traco } from '../components/Traco';
+import { DEPOIMENTOS } from '../config/equipe';
+import { LIVROS } from '../config/livros';
 import { ROTULO_BLOCO } from '../lib/aulas';
 import { usePageTitle } from '../lib/usePageTitle';
 import { useT } from '../i18n';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL, EMAIL_OFICIAL } from '../config/site';
 import { REDES } from '../config/social';
+import en1 from '../../content/idiomas/en/aulas/aula-001.json';
+import ru1 from '../../content/idiomas/ru/aulas/aula-001.json';
+import de1 from '../../content/idiomas/de/aulas/aula-001.json';
+import fr1 from '../../content/idiomas/fr/aulas/aula-001.json';
 
-const IDIOMAS = CURSOS.filter((c) => c.area === 'idiomas');
-const STEM = CURSOS.filter((c) => c.area === 'stem');
-const NIVEIS = ['zero', 'a1', 'a2', 'b1', 'b2', 'c1'];
-const rotulo = (nome: string, nativo: string) => (nome === nativo ? nome : `${nome} · ${nativo}`);
+type Aula = { titulo: string; sessoes: { titulo: string; duracaoMin: number; blocos: { tipo: string; min: number }[] }[] };
+// Frase de amostra de cada curso: a mesma situação (pedir um café) em cada idioma.
+const AMOSTRA: Record<string, { nome: string; frase: string; aula: Aula }> = {
+  en: { nome: 'Inglês', frase: 'Hello. A coffee, please.', aula: en1 as Aula },
+  ru: { nome: 'Russo', frase: 'Здравствуйте. Мне кофе, пожалуйста.', aula: ru1 as Aula },
+  de: { nome: 'Alemão', frase: 'Guten Tag. Einen Kaffee, bitte.', aula: de1 as Aula },
+  fr: { nome: 'Francês', frase: 'Bonjour. Un café, s’il vous plaît.', aula: fr1 as Aula },
+};
+const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0);
+const PADRAO = NO_AR.find((c) => c.status === 'disponivel')?.id ?? NO_AR[0]?.id;
 
-
-type Filtro = 'todos' | 'idiomas' | 'stem';
+const NIVEIS = [
+  { cod: 'A1', nome: 'Do zero', texto: 'Se apresentar, pedir o que precisa e entender frases do dia a dia.', valor: 0.34, sem: 3 },
+  { cod: 'A2', nome: 'Dia a dia', texto: 'Falar de rotina, compras, passado e planos, em frases simples.', valor: 0.67, sem: 11 },
+  { cod: 'B1', nome: 'Independente', texto: 'Se virar em viagem, estudo e trabalho; contar experiências e dar opinião.', valor: 1, sem: 7 },
+];
 
 export default function Home() {
   usePageTitle();
   const t = useT();
-  const nav = useNavigate();
-  const [tgt, setTgt] = useState('ru');
-  const [nivel, setNivel] = useState('zero');
+  const [lang, setLang] = useState(PADRAO);
   const [tocando, setTocando] = useState(false);
-  const [filtro, setFiltro] = useState<Filtro>('todos');
-  const ehStem = STEM.some((c) => c.id === tgt);
+  const amostra = lang ? AMOSTRA[lang] : undefined;
+  const sessao = amostra?.aula.sessoes[0];
+  const aulasNoAr = NO_AR.map((c) => `${c.nome} (${Math.floor((statusDoCurso(c.id)?.publicadas ?? 0) / 4)})`).join(', ');
 
-  const buscar = (e: FormEvent) => { e.preventDefault(); nav(ehStem ? `/curso/${tgt}` : `/curso/${tgt}?nivel=${nivel}`); };
-  const visiveis = CURSOS.filter((c) => filtro === 'todos' || c.area === filtro);
+  const ouvir = async () => {
+    if (!lang || !amostra) return;
+    setTocando(true);
+    try { await falar(amostra.frase, lang); } finally { setTocando(false); }
+  };
 
   return (
     <>
-      <section className="hero">
-        <div className="hero-grid">
-          <div className="hero-main">
-            <span className="hero-kicker">{t.hero.kicker}</span>
-            <h1 className="hero-h1">{t.hero.titulo}</h1>
-            <p className="hero-sub">{t.hero.sub}</p>
-            <ul className="hero-niveis" aria-label={t.hero.niveis}>
-              {['A1', 'A2', 'B1'].map((n) => <li key={n}>{n}</li>)}
-            </ul>
-            <form className="hero-search" onSubmit={buscar}>
-              <div className="search-field">
-                <label htmlFor="tgt-lang">{t.hero.labelIdioma}</label>
-                <select id="tgt-lang" value={tgt} onChange={(e) => setTgt(e.target.value)}>
-                  <optgroup label="Idiomas">
-                    {IDIOMAS.map((c) => <option key={c.id} value={c.id}>{rotulo(c.nome, c.nomeNativo)}</option>)}
-                  </optgroup>
-                  <optgroup label="STEM">
-                    {STEM.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
-                  </optgroup>
-                </select>
-              </div>
-              <div className="search-field">
-                <label htmlFor="level">{t.hero.labelNivel}</label>
-                <select id="level" value={ehStem ? 'stem' : nivel} disabled={ehStem} onChange={(e) => setNivel(e.target.value)}>
-                  {ehStem
-                    ? <option value="stem">Em breve para STEM</option>
-                    : NIVEIS.map((n) => <option key={n} value={n}>{NIVEL_LABEL[n]}</option>)}
-                </select>
-              </div>
-              <button type="submit" className="search-btn">{t.hero.botao}</button>
-            </form>
-            <p className="hero-acoes"><a className="hero-link" href="#metodo">{t.hero.link} →</a></p>
-            <p className="hero-nota">{t.hero.nota.replace('{ru}', String(Math.floor((statusDoCurso('ru')?.publicadas ?? 0) / 4))).replace('{de}', String(Math.floor((statusDoCurso('de')?.publicadas ?? 0) / 4)))}</p>
+      <section className="lv-hero">
+        <div className="lv-hero-in">
+          <div className="lv-hero-main">
+            <p className="lv-kicker">{t.hero.kicker}</p>
+            <h1>Pare de colecionar apps. Comece a falar o idioma.</h1>
+            <p className="lv-hero-sub">{t.hero.sub}</p>
+            <div className="lv-hero-botoes">
+              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-claro">Fazer a aula 1 grátis</Link>
+              <Link to="/cursos" className="lv-link-claro">Ver os cursos →</Link>
+            </div>
+            <p className="lv-hero-nota">Sem cartão. Aulas já no ar: {aulasNoAr}.</p>
           </div>
 
-          <aside className="hoje" aria-label="Exemplo de uma sessão">
-            <span className="hoje-kicker">Russo · aula 1, sessão 1 de 4</span>
-            <h2>{aula1.sessoes[0].titulo}</h2>
-            <div className={`hoje-frase${tocando ? ' tocando' : ''}`}>
-              <div><p lang="ru">Здравствуйте</p><small>Olá (formal) · toque para ouvir</small></div>
-              <button type="button" className="hoje-ouvir" aria-label="Ouvir: Здравствуйте" onClick={async () => { setTocando(true); try { await falar('Здравствуйте', 'ru'); } finally { setTocando(false); } }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="#fff" /></svg>
-              </button>
-              <span className="hoje-onda" aria-hidden="true"><span /><span /><span /><span /><span /><span /><span /></span>
-            </div>
-            <p>{aula1.titulo}: {aula1.objetivo.charAt(0).toLowerCase() + aula1.objetivo.slice(1)}</p>
-            <ol>
-              {aula1.sessoes[0].blocos.map((b, i) => (
-                <li key={i}><span>{String(i + 1).padStart(2, '0')}</span> {ROTULO_BLOCO[b.tipo as keyof typeof ROTULO_BLOCO]}<small>{b.min} min</small></li>
-              ))}
-            </ol>
-            <span className="hoje-meta">{aula1.sessoes[0].duracaoMin} minutos</span>
-          </aside>
+          {amostra && sessao && lang && (
+            <aside className="lv-amostra" aria-label="Exemplo de uma sessão">
+              <div className="lv-abas" role="tablist" aria-label="Idioma do exemplo">
+                {NO_AR.map((c) => (
+                  <button key={c.id} type="button" role="tab" aria-selected={lang === c.id} className={lang === c.id ? 'on' : ''} onClick={() => setLang(c.id)}>{c.nome}</button>
+                ))}
+              </div>
+              <p className="lv-am-pt">Olá. Um café, por favor.</p>
+              <div className="lv-am-alvo">
+                <p lang={lang}>{amostra.frase}</p>
+                <button type="button" className={`lv-play${tocando ? ' tocando' : ''}`} aria-label={`Ouvir: ${amostra.frase}`} onClick={ouvir}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor" /></svg>
+                </button>
+              </div>
+              <p className="lv-am-meta">Aula 1 · sessão 1 de 4 · {sessao.duracaoMin} minutos</p>
+              <ol className="lv-am-lista">
+                {sessao.blocos.map((b, i) => (
+                  <li key={i}><span>{ROTULO_BLOCO[b.tipo as keyof typeof ROTULO_BLOCO]}</span><small>{b.min} min</small></li>
+                ))}
+              </ol>
+              <Traco valor={0.12} altura={12} semente={7} trilha rotulo="Início do caminho" />
+            </aside>
+          )}
         </div>
       </section>
 
-      <section className="prova" aria-label="Por que a Linvuu">
-        <ul className="prova-grade">
+      <section className="lv-prova" aria-label="Por que a Linvuu">
+        <ul>
           {t.prova.map((x) => <li key={x.t}><strong>{x.t}</strong><span>{x.d}</span></li>)}
         </ul>
       </section>
 
-      <div className="band">
-        <section className="section" aria-labelledby="h-explorar">
-          <div className="section-head">
-            <span className="section-kicker">{t.explorar.kicker}</span>
-            <h2 className="section-h2" id="h-explorar">{t.explorar.titulo}</h2>
-          </div>
-          <div className="areas">
-            <Link to="/cursos?area=idiomas" className="area-card area-idiomas">
-              <span className="area-icone"><IconeIdiomas size={30} /></span>
-              <h3>Idiomas</h3>
-              <p>{t.explorar.idiomasTexto}</p>
-              <span className="area-ver">Ver idiomas →</span>
-            </Link>
-            <Link to="/cursos?area=stem" className="area-card area-stem">
-              <span className="area-icone"><IconeStem size={30} /></span>
-              <h3>STEM</h3>
-              <p>{t.explorar.stemTexto}</p>
-              <span className="area-ver">Ver STEM →</span>
-            </Link>
-          </div>
+      <section className="lv-sec" id="cursos" aria-labelledby="h-cursos">
+        <p className="lv-kicker lv-kicker-esc">{t.explorar.kicker}</p>
+        <h2 id="h-cursos">{t.explorar.titulo}</h2>
+        <p className="lv-sec-sub">{t.explorar.idiomasTexto}</p>
+        <div className="lv-grade">{CURSOS_ATIVOS.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
+      </section>
 
-          <div className="chips" role="group" aria-label="Filtrar cursos">
-            {(['todos', 'idiomas', 'stem'] as Filtro[]).map((f) => (
-              <button key={f} type="button" className={filtro === f ? 'on' : ''} aria-pressed={filtro === f} onClick={() => setFiltro(f)}>
-                {f === 'idiomas' && <IconeIdiomas size={16} />}{f === 'stem' && <IconeStem size={16} />}
-                {f === 'todos' ? 'Todos' : f === 'idiomas' ? 'Idiomas' : 'STEM'}
-              </button>
-            ))}
-          </div>
-          <div className="curso-grid">{visiveis.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
-        </section>
-      </div>
+      <section className="lv-sec lv-sec-papel" aria-labelledby="h-niveis">
+        <p className="lv-kicker lv-kicker-esc">Níveis</p>
+        <h2 id="h-niveis">O que você consegue fazer em cada nível</h2>
+        <div className="lv-niveis">
+          {NIVEIS.map((n) => (
+            <article key={n.cod}>
+              <div className="lv-nivel-cod"><span className="lv-cod">{n.cod}</span><span>{n.nome}</span></div>
+              <Traco valor={n.valor} altura={12} semente={n.sem} />
+              <p>{n.texto}</p>
+            </article>
+          ))}
+        </div>
+        <details className="lv-cefr">
+          <summary>O que significam A1, A2 e B1?</summary>
+          <p>São níveis do Quadro Europeu Comum de Referência para Línguas, uma escala usada em escolas e exames no mundo todo. Usamos a escala como referência para organizar o curso. O certificado da Linvuu é emitido por nós, por nível concluído, e não substitui exames oficiais de proficiência.</p>
+        </details>
+      </section>
 
-      <div className="band band-cinza">
-        <section className="section" aria-labelledby="h-100">
-          <div className="section-head">
-            <span className="section-kicker">{t.trilha.kicker}</span>
-            <h2 className="section-h2" id="h-100">{t.trilha.titulo}</h2>
-            <p className="section-sub">{t.trilha.sub}</p>
-          </div>
-          <TrilhaIdioma />
-        </section>
-      </div>
+      <section className="lv-sec" id="metodo" aria-labelledby="h-metodo">
+        <p className="lv-kicker lv-kicker-esc">{t.metodo.kicker}</p>
+        <h2 id="h-metodo">{t.metodo.titulo} {t.metodo.destaque}</h2>
+        <p className="lv-sec-sub">{t.metodo.sub}</p>
+        <div className="lv-passos">
+          {t.metodo.passos.map((m) => (
+            <div key={m.n}><span className="lv-num">{m.n}</span><h3>{m.t}</h3><p>{m.d}</p></div>
+          ))}
+        </div>
+      </section>
 
-      <div className="band" id="metodo">
-        <section className="section" aria-labelledby="h-metodo">
-          <div className="section-head">
-            <span className="section-kicker">{t.metodo.kicker}</span>
-            <h2 className="section-h2" id="h-metodo">{t.metodo.titulo} <em>{t.metodo.destaque}</em></h2>
-            <p className="section-sub">{t.metodo.sub}</p>
-          </div>
-          <div className="method-grid">
-            {t.metodo.passos.map((m) => (
-              <div key={m.n} className="method"><span className="method-num">{m.n}</span><h3 className="method-h3">{m.t}</h3><p>{m.d}</p></div>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      <div className="band band-quente" id="livros">
-        <section className="section" aria-labelledby="h-livros">
-          <div className="section-head">
-            <span className="section-kicker">{t.livros.kicker}</span>
-            <h2 className="section-h2" id="h-livros">{t.livros.titulo}</h2>
-          </div>
+      {LIVROS.length > 0 && (
+        <section className="lv-sec lv-sec-papel" id="livros" aria-labelledby="h-livros">
+          <p className="lv-kicker lv-kicker-esc">{t.livros.kicker}</p>
+          <h2 id="h-livros">{t.livros.titulo}</h2>
           <Vitrine />
         </section>
-      </div>
-
-      <div className="band" id="avaliacoes">
-        <section className="section" aria-labelledby="h-aval">
-          <div className="section-head">
-            <span className="section-kicker">{t.avaliacoes.kicker}</span>
-            <h2 className="section-h2" id="h-aval">{t.avaliacoes.titulo}</h2>
-          </div>
-          <Avaliacoes />
-        </section>
-      </div>
-
-      {EQUIPE.length > 0 && (
-        <div className="band band-cinza">
-          <section className="section" aria-labelledby="h-equipe">
-            <div className="section-head"><span className="section-kicker">Pessoas</span><h2 className="section-h2" id="h-equipe">Quem ensina</h2></div>
-            <div className="pessoas">
-              {EQUIPE.map((p) => (
-                <article key={p.nome} className="pessoa">
-                  {p.foto && <img src={p.foto} alt={`Foto de ${p.nome}`} loading="lazy" />}
-                  <h3>{p.nome}</h3><span>{p.papel}</span><p>{p.bio}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
       )}
 
-      <div className="band band-cinza" id="faq">
-        <section className="section" aria-labelledby="h-faq">
-          <div className="section-head"><span className="section-kicker">{t.faq.kicker}</span><h2 className="section-h2" id="h-faq">{t.faq.titulo}</h2></div>
-          <Faq />
+      {DEPOIMENTOS.length > 0 && (
+        <section className="lv-sec" id="avaliacoes" aria-labelledby="h-aval">
+          <p className="lv-kicker lv-kicker-esc">{t.avaliacoes.kicker}</p>
+          <h2 id="h-aval">{t.avaliacoes.titulo}</h2>
+          <Avaliacoes />
         </section>
-      </div>
+      )}
 
-      <section className="cta-band">
+      <section className="lv-sec lv-sec-papel" id="faq" aria-labelledby="h-faq">
+        <p className="lv-kicker lv-kicker-esc">{t.faq.kicker}</p>
+        <h2 id="h-faq">{t.faq.titulo}</h2>
+        <Faq />
+      </section>
+
+      <section className="lv-cta">
         <h2>{t.cta.titulo}</h2>
         <p>{t.cta.texto}</p>
-        <div className="cta-botoes">
-          <Link to="/curso/ru/dia/1" className="btn btn-primary">{t.cta.primario}</Link>
-          <Link to="/cursos" className="btn btn-claro">{t.cta.secundario}</Link>
+        <div className="lv-hero-botoes">
+          <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-claro">{t.cta.primario}</Link>
+          <Link to="/cursos" className="lv-link-claro">{t.cta.secundario} →</Link>
         </div>
       </section>
 
       <JsonLd dados={{
         '@context': 'https://schema.org',
         '@graph': [
-          { '@type': 'Organization', name: 'Linvuu', url: SITE_URL, logo: `${SITE_URL}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: REDES.filter((r) => r.url).map((r) => r.url) },
+          { '@type': 'EducationalOrganization', name: 'Linvuu', url: SITE_URL, logo: `${SITE_URL}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: REDES.filter((r) => r.url).map((r) => r.url) },
           { '@type': 'WebSite', name: 'Linvuu', url: SITE_URL, inLanguage: 'pt-BR' },
           { '@type': 'FAQPage', mainEntity: t.faqItens.map((i) => ({ '@type': 'Question', name: i.p, acceptedAnswer: { '@type': 'Answer', text: i.r } })) },
         ],

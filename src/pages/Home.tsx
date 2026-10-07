@@ -175,7 +175,7 @@ export default function Home() {
         <h2 id="h-metodo">{t.metodo.titulo} {t.metodo.destaque}</h2>
         <p className="lv-sec-sub">{t.metodo.sub}</p>
         <div className="lv-fotos">
-          {FOTOS.map((f) => <img key={f.src} src={f.src} alt={f.alt} width="1000" height="600" loading="lazy" decoding="async" />)}
+          {FOTOS.map((f) => <img key={f.src} src={f.src} alt={f.alt} width="1000" height="750" loading="lazy" decoding="async" />)}
         </div>
         <div className="lv-passos">
           {t.metodo.passos.map((m) => (

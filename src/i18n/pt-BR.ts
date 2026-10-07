@@ -9,7 +9,7 @@ export const ptBR = {
   hero: {
     kicker: 'Idiomas para quem fala português',
     titulo: 'Idiomas explicados de verdade, do zero ao B1.',
-    sub: 'Gramática clara quando você precisa, áudio em cada frase e exercícios corrigidos na hora. Sessões de 30 minutos, com explicação em português.',
+    sub: 'Entre no idioma desde a primeira sessão: diálogos, áudio e fala. A gramática e o vocabulário entram quando você precisa, explicados em português.',
     link: 'Ver como funciona',
     niveis: 'Do zero ao B1',
     labelIdioma: 'Quero aprender',

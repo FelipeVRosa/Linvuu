@@ -13,7 +13,7 @@ Paleta (usar só estas):
 - Grafite #1D1F1C (texto)
 - Ocre queimado #B7791F (apenas no traço da barra de progresso e em pequenos detalhes)
 
-Tipografia: Fraunces (serifada, títulos, peso 600, tracking levemente negativo) e Inter (corpo). Escala forte e hierárquica.
+Tipografia: Newsreader (serifada, títulos, peso 600, tracking levemente negativo) e Source Sans 3 (corpo). Escala forte e hierárquica.
 
 Elemento de assinatura: uma barra de progresso desenhada à mão, em traço riscado de caneta, que começa curta e cresce. Ela representa evolução e mudança de vida. Deve parecer feita por uma pessoa, com leve irregularidade, nunca perfeita nem vetorial fria.
 
@@ -25,7 +25,7 @@ Tom: confiante, culto e direto. Nada de texto de vendedor de curso. Não afirmar
 ## 1. Logo
 
 ```
-Redesenhe o logo da Linvuu. Entregar: (a) logotipo horizontal com a palavra "Linvuu" em Fraunces ou serifada própria, (b) símbolo isolado quadrado para avatar, (c) versões em verde sobre off-white, off-white sobre verde e monocromática grafite.
+Redesenhe o logo da Linvuu. Entregar: (a) logotipo horizontal com a palavra "Linvuu" em Newsreader, (b) símbolo isolado quadrado para avatar, (c) versões em verde sobre off-white, off-white sobre verde e monocromática grafite.
 Ideia: a letra inicial ou o traço sob a palavra forma uma barra de progresso riscada à mão, em ocre, que cresce da esquerda para a direita. Sutil, sem ícone de livro, balão de fala ou globo.
 Legibilidade a 24 px de altura. Entregar SVG e PNG com fundo transparente.
 ```
@@ -37,7 +37,7 @@ Capa de apostila Linvuu, sistema único para todos os idiomas e níveis, variand
 Fundo verde floresta. Margens de 18 mm.
 Topo: logotipo Linvuu em off-white, pequeno.
 Centro-alto: a palavra "olá" do idioma, no próprio alfabeto, escrita à mão em grande escala, off-white (Francês: Bonjour. Russo: Привет. Alemão: Hallo. Inglês: Hello).
-Centro: nome do idioma em Fraunces, muito grande (ex.: "Francês"). Abaixo, em Inter: "Nível A1 · Aulas 1 a 18".
+Centro: nome do idioma em Newsreader, muito grande (ex.: "Francês"). Abaixo, em Source Sans 3: "Nível A1 · Aulas 1 a 18".
 Abaixo: a barra de progresso riscada à mão em ocre. Ela está preenchida proporcionalmente ao nível: A1 curta, A2 média, B1 longa.
 Rodapé: "linvuu.com.br".
 Entregar um template editável com campos: idioma, saudação, nível, intervalo de aulas, comprimento da barra.
@@ -48,8 +48,8 @@ Lombada (para versão impressa futura): vertical, "Linvuu · Francês · A1".
 
 ```
 Contracapa A4 da apostila Linvuu, off-white #F5F1E8 com texto grafite.
-Título em Fraunces: "Fale de verdade."
-Três blocos curtos em Inter: "Sessões de 30 minutos" / "Gramática clara, com tabelas" / "Áudio em cada frase".
+Título em Newsreader: "Fale de verdade."
+Três blocos curtos em Source Sans 3: "Sessões de 30 minutos" / "Gramática clara, com tabelas" / "Áudio em cada frase".
 Parágrafo: "Esta apostila acompanha o curso online da Linvuu. Cada aula tem quatro sessões e termina em prática oral. Estude no seu ritmo, volte quando precisar."
 Nota pequena: "Material de estudo da Linvuu. O certificado de nível é emitido pela Linvuu e não substitui exames oficiais."
 Rodapé: logo pequeno e "linvuu.com.br". Sem código de barras, sem selo "oficial", sem foto.
@@ -59,7 +59,7 @@ Rodapé: logo pequeno e "linvuu.com.br". Sem código de barras, sem selo "oficia
 
 ```
 Certificado de conclusão de nível, A4 paisagem, off-white com moldura fina verde floresta e canto com traço de barra de progresso ocre cheia.
-Título (Fraunces): "Certificado de conclusão".
+Título (Newsreader): "Certificado de conclusão".
 Texto central: "A Linvuu certifica que [NOME COMPLETO] concluiu o nível [A1/A2/B1] do curso de [IDIOMA], com [N] aulas e [H] horas de estudo."
 Data de emissão e assinatura "Linvuu" (assinatura tipográfica, sem rosto nem carimbo).
 Rodapé obrigatório, legível: "Certificado de conclusão emitido pela Linvuu. Não é uma certificação oficial e não substitui exames de proficiência reconhecidos."
@@ -73,7 +73,7 @@ Horas por nível (4 sessões de 30 min por aula = 2 h por aula): A1 com 18 aulas
 ```
 Instagram e Facebook, avatar: símbolo da Linvuu, quadrado 1080x1080, centrado em círculo seguro.
 Facebook capa: 820x312 px, conteúdo importante dentro de 640x312 (centro) para o celular. Verde floresta, logotipo off-white à esquerda, barra riscada ocre atravessando, frase "Fale de verdade."
-LinkedIn capa: 1584x396 px, mesma ideia, mais sóbria, com "Idiomas para quem vai viver fora." em Inter.
+LinkedIn capa: 1584x396 px, mesma ideia, mais sóbria, com "Idiomas para quem vai viver fora." em Source Sans 3.
 YouTube banner: 2560x1440 px, área segura 1546x423 no centro, logotipo e "Fale de verdade."
 Mesma identidade das peças anteriores. Sem foto de pessoas, sem emoji.
 ```
@@ -84,7 +84,7 @@ Mesma identidade das peças anteriores. Sem foto de pessoas, sem emoji.
    - Campo "Company name and blurb": a primeira parte do texto sugerido no chat (marca, público e direção visual).
    - Link do GitHub: já está (`FelipeVRosa/Linvuu`).
    - Arquivos: suba `public/brand/linvuu-logo.png` e `linvuu-mark.png` como referência provisória.
-   - Fontes: Fraunces e Inter (são livres, Google Fonts).
+   - Fontes: Newsreader e Source Sans 3 (livres).
 2. **Depois que a ferramenta gerar as peças:** baixe os arquivos e anexe-os aqui no chat. Eu coloco no repositório assim:
    - Logo e símbolo (SVG/PNG): `public/brand/`
    - Capas, certificado, redes sociais: `public/brand/` (peças fixas) e `content/livros/` (templates das apostilas)

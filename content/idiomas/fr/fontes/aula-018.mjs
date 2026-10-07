@@ -1,0 +1,68 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'fr', numero: 18, titulo: 'Revisão e simulado do A1', nivel: 'a1',
+  objetivo: 'Rever todo o A1 em um mapa, treinar leitura, escuta, escrita e fala, corrigir os erros mais comuns dos brasileiros e fazer um simulado original.',
+  nota: 'Você fechou o A1 do francês. Repita o simulado até acertar quase tudo. Para um certificado oficial, treine também com provas reais (como o DELF A1) e, se possível, com um professor nativo.',
+  sessoes: [
+    sessao('S1', 'O mapa do A1', [
+      revisao(5, 'Leia em voz alta 5 frases das aulas 1 a 17 que você acha difíceis.'),
+      gramatica(15, 'O A1 inteiro em uma tabela', 'Esta tabela resume as aulas 1 a 17. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.', {
+        tag: 'Revisão',
+        tabela: [
+          { tema: 'Sons e alfabeto', regra: '«u» (ü), «eu», vogais nasais, «r» de garganta; letras finais mudas; ligação e elisão.', aula: '1' },
+          { tema: 'Être, tu/vous e adjetivos', regra: '«je suis, tu es, il est, nous sommes, vous êtes, ils sont»; adjetivo concorda; «ne… pas»; «est-ce que».', aula: '2' },
+          { tema: 'Apresentações, países e números', regra: '«Je m\'appelle…», «Je suis brésilien(ne)», «J\'habite au Brésil / en France / à Paris»; números 0–20; idade com «avoir».', aula: '3' },
+          { tema: 'Verbos em -er', regra: '«je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent»; perguntas e advérbios.', aula: '4' },
+          { tema: 'Artigos e profissões', regra: '«le, la, les, un, une, des, du, de la»; «c\'est» / «il est» com profissões.', aula: '5' },
+          { tema: 'Família e possessivos', regra: '«avoir» e sensações; «mon, ma, mes», «ton, ta, tes», «son, sa, ses».', aula: '6' },
+          { tema: 'Números, horas e datas', regra: '21–100; «Il est trois heures et quart.»; dias, meses, datas.', aula: '7' },
+          { tema: 'Il y a, lugares e demonstrativos', regra: '«Il y a un café près d\'ici.»; «à côté de, devant, derrière»; «ce, cet, cette, ces».', aula: '8' },
+          { tema: 'Comida e partitivos', regra: '«du, de la, des, de»; quantidades com «de»; «prendre».', aula: '9' },
+          { tema: 'Aller, transportes e imperativo', regra: '«je vais, tu vas, il va»; «je vais manger»; «Tournez à gauche.»', aula: '10' },
+          { tema: 'Pronominais, frequência e verbos -ir', regra: '«je me lève»; «toujours, souvent, parfois, jamais»; «finir, choisir».', aula: '11' },
+          { tema: 'Adjetivos, roupas e compras', regra: 'posição, cores, «beau/nouveau/vieux», «Combien ça coûte ?», números acima de 100.', aula: '12' },
+          { tema: 'Gostos e pronomes', regra: '«moi, toi, lui…»; «le, la, l\', les»; «Je trouve que…».', aula: '13' },
+          { tema: 'Vouloir, pouvoir, devoir, y e en', regra: '«je veux, je peux, je dois»; «J\'y vais.»; «J\'en veux deux.»', aula: '14' },
+          { tema: 'Passé composé', regra: '«j\'ai mangé»; «je suis allé(e)»; «je me suis levé(e)»; negação em volta do auxiliar.', aula: '15, 16' },
+          { tema: 'Clima e comparações', regra: '«Il fait chaud.»; «plus… que, moins… que, aussi… que»; «meilleur», «mieux».', aula: '17' },
+        ],
+      }),
+      producao(10, 'Fale 3 minutos em francês: apresente-se, descreva a sua família e a sua rotina, conte o que você fez ontem e o que vai fazer no fim de semana.'),
+    ]),
+    sessao('S2', 'Leitura e escuta (formato A1, original)', [
+      revisao(5, 'Releia o texto e o diálogo abaixo em voz alta antes de começar.'),
+      texto(10, 'Une nouvelle ville / Uma cidade nova', 'Je m\'appelle Carlos. J\'ai trente ans et je suis brésilien. J\'habite dans un petit appartement à Lyon. Il y a deux pièces et une cuisine. Je travaille dans un restaurant tous les jours, de neuf heures à dix-sept heures. D\'habitude, je déjeune à midi. Le week-end, j\'aime me promener dans le parc et cuisiner pour mes amis. Hier, il a plu, alors je suis resté à la maison. Aujourd\'hui, il fait beau : je vais jouer au football avec mes amis.', 'Meu nome é Carlos. Tenho trinta anos e sou brasileiro. Moro num apartamento pequeno em Lyon. Há dois cômodos e uma cozinha. Trabalho num restaurante todos os dias, das nove às dezessete horas. Geralmente almoço ao meio-dia. No fim de semana, gosto de passear no parque e cozinhar para os amigos. Ontem choveu, então fiquei em casa. Hoje está bom tempo: vou jogar futebol com meus amigos.', [['D\'où est Carlos ?', 'Du Brésil.'], ['Où travaille-t-il ?', 'Dans un restaurant.'], ['À quelle heure déjeune-t-il d\'habitude ?', 'À midi.'], ['Qu\'est-ce qu\'il a fait hier ?', 'Il est resté à la maison parce qu\'il a plu.'], ['Qu\'est-ce qu\'il va faire aujourd\'hui ?', 'Il va jouer au football avec ses amis.']]),
+      dialogo(8, 'Un nouveau voisin / Um vizinho novo', 'Carlos conversa com a vizinha, Julie.', [
+        ['Carlos', 'Bonjour ! Je suis Carlos. J\'habite à côté de chez vous.', 'Olá! Sou o Carlos. Moro ao lado da sua casa.'], ['Julie', 'Enchantée, Carlos. Je m\'appelle Julie. Vous êtes d\'où ?', 'Prazer, Carlos. Chamo-me Julie. De onde o senhor é?'], ['Carlos', 'Je suis du Brésil. Et vous ?', 'Sou do Brasil. E a senhora?'], ['Julie', 'Moi, je suis de Lyon. Vous travaillez ici ?', 'Eu sou de Lyon. O senhor trabalha aqui?'], ['Carlos', 'Oui, je travaille dans un restaurant près de la gare. Vous voulez venir manger un jour ?', 'Sim, trabalho num restaurante perto da estação. Quer vir comer um dia?'], ['Julie', 'Avec plaisir ! Je peux venir samedi soir ?', 'Com prazer! Posso ir sábado à noite?'],
+      ]),
+      producao(7, 'Responda em voz alta: quem é Carlos, o que ele faz e do que gosta. Depois diga o que você faria no lugar dele num fim de semana.'),
+    ]),
+    sessao('S3', 'Os erros mais comuns do A1 e a escrita', [
+      revisao(5, 'Escreva 3 erros que você ainda comete no A1 e a forma certa.'),
+      gramatica(15, 'Os 16 erros mais comuns do A1', 'Leia cada par em voz alta: primeiro o errado, depois o certo.', {
+        tag: 'Revisão',
+        erros: [
+          ['Je suis 25 ans.', 'J\'ai 25 ans.', 'Idade: «avoir», não «être».'], ['Je suis faim.', 'J\'ai faim.', 'Sensações: «avoir».'], ['Il est un médecin.', 'Il est médecin. / C\'est un médecin.', 'Profissão sem artigo depois de «il est».'], ['Je ne parle pas pas.', 'Je ne parle pas.', 'Uma só negação com «ne… pas».'],
+          ['Je vais à le cinéma.', 'Je vais au cinéma.', 'à + le = au.'], ['Je veux de manger.', 'Je veux manger.', 'Sem preposição depois de «vouloir».'], ['Je mange du pain beaucoup.', 'Je mange beaucoup de pain.', '«Beaucoup de» + substantivo.'], ['Je n\'ai pas de l\'argent.', 'Je n\'ai pas d\'argent.', 'Na negação, partitivo vira «de».'],
+          ['Elle est grand.', 'Elle est grande.', 'Adjetivo concorda.'], ['Le voiture est rouge.', 'La voiture est rouge.', '«Voiture» é feminino.'], ['Je regarde le.', 'Je le regarde.', 'Pronome antes do verbo.'], ['J\'ai allé à Paris.', 'Je suis allé à Paris.', '«Aller» usa «être».'],
+          ['Je suis levé tôt.', 'Je me suis levé tôt.', 'Pronominais usam «être».'], ['Il est plus grand de moi.', 'Il est plus grand que moi.', 'Comparar: «que».'], ['Il fait un froid.', 'Il fait froid.', 'Clima sem artigo.'], ['Je pense c\'est bien.', 'Je pense que c\'est bien.', '«Que» obrigatório.'],
+        ],
+      }),
+      producao(10, 'Escreva um e-mail curto (cerca de 60 palavras) para um amigo francês: apresente-se, descreva a sua casa e a sua rotina, e convide-o para o fim de semana. Depois leia-o em voz alta.'),
+    ]),
+    sessao('S4', 'Simulado do A1', [
+      revisao(5, 'Releia o mapa e escolha os 3 pontos em que você ainda erra.'),
+      exercicios(20, [
+        ouvir('Elle n\'est pas contente aujourd\'hui', ['Elle n\'est pas contente aujourd\'hui', 'Elle est contente aujourd\'hui', 'Il n\'est pas content aujourd\'hui'], 'Elle n\'est pas contente aujourd\'hui', 'Escuta: negativa de «être».'), ouvir('Je voudrais un café, s\'il vous plaît', ['Je voudrais un café, s\'il vous plaît', 'J\'aime le café, s\'il vous plaît', 'Je voudrais un thé, s\'il vous plaît'], 'Je voudrais un café, s\'il vous plaît', 'Escuta: pedido educado.'),
+        mc('Leia: «Elle a les cheveux longs et les yeux bleus.» O que a frase descreve?', ['a aparência', 'a rotina', 'o clima'], 'a aparência', 'Leitura: cabelos e olhos.'), mc('Qual frase está correta?', ['Est-ce qu\'elle a une voiture ?', 'Est-ce qu\'elle est une voiture ?', 'Est-ce elle a une voiture ?'], 'Est-ce qu\'elle a une voiture ?', '«Est-ce que» + sujeito + verbo.'),
+        lacuna('Combien ___ ces chaussures ?', ['coûtent', 'coûte', 'coûtez'], 'coûtent', 'Plural: «-ent».'), lacuna('Elle ___ à six heures chaque jour. (levantar-se)', ['se lève', 'se lever', 'se levé'], 'se lève', 'Pronominal no presente.'), lacuna('Je n\'ai pas ___ argent.', ['d\'', 'de l\'', 'du'], 'd\'', 'Negação: «de».'), lacuna('Nous ___ allés au cinéma hier.', ['sommes', 'avons', 'sont'], 'sommes', '«Aller» usa «être».'),
+        mc('Como se pergunta a hora?', ['Quelle heure est-il ?', 'Quel âge as-tu ?', 'Comment ça va ?'], 'Quelle heure est-il ?', 'Pergunta da hora.'), mc('Qual frase está correta?', ['Je vais au marché.', 'Je vais à le marché.', 'Je vais en marché.'], 'Je vais au marché.', 'à + le = au.'), mc('Qual frase está correta?', ['Je l\'ai vu hier.', 'J\'ai le vu hier.', 'Je ai vu lui hier.'], 'Je l\'ai vu hier.', 'Pronome antes do auxiliar.'), mc('Qual frase está correta?', ['Elle est plus grande que moi.', 'Elle est plus grande de moi.', 'Elle est plus grand que je.'], 'Elle est plus grande que moi.', 'Comparar com «que» + tônico.'),
+        ordem('Ordene: «Je ne vais pas au travail aujourd\'hui.»', ['Je', 'ne', 'vais', 'pas', 'au', 'travail', 'aujourd\'hui'], 'Je ne vais pas au travail aujourd\'hui.', 'ne + verbo + pas.'), ordem('Ordene: «Hier, je me suis levé à sept heures.»', ['Hier,', 'je', 'me', 'suis', 'levé', 'à', 'sept', 'heures'], 'Hier, je me suis levé à sept heures.', 'Pronome + auxiliar + particípio.'),
+        ditado('J\'habite à Lyon avec ma sœur', 'Escreva: J\'habite à Lyon avec ma sœur.'), ditado('Il fait froid et il pleut', 'Escreva: Il fait froid et il pleut.'),
+        livre('Escreva em francês: Eu moro no Brasil. Ontem eu fui ao mercado. Amanhã vou trabalhar.', 'J\'habite au Brésil. Hier, je suis allé au marché. Demain, je vais travailler.'),
+      ]),
+      producao(5, 'Releia os itens que você errou e diga a regra de cada um em voz alta.'),
+    ]),
+  ],
+});

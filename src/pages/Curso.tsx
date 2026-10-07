@@ -2,7 +2,6 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { DIAS, FASES, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
 import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
-import { IconeIdiomas, IconeStem } from '../components/Icones';
 import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL } from '../config/site';
@@ -32,12 +31,11 @@ export default function Curso() {
 
       <header className="curso-topo">
         <div>
-          <span className={`area-tag ${curso.area === 'idiomas' ? 'area-idiomas' : 'area-stem'}`}>{curso.area === 'idiomas' ? <><IconeIdiomas size={16} /> Idioma</> : <><IconeStem size={16} /> STEM</>}</span>
           <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em>{curso.nomeNativo}</em>}</h1>
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
-            {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> {stats?.total ?? 120} dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
+            <><span>Sessões de ~30 min</span><span>Começa do zero</span></>
             {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
             {['ru', 'de', 'en'].includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">Gramática do {curso.nome.toLowerCase()} →</Link>}
           </div>

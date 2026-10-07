@@ -1,4 +1,4 @@
-// Ícones de área: balão de conversa para Idiomas, átomo para STEM.
+// Ícones de área: balão de conversa para Idiomas.
 const base = { width: 24, height: 24, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true } as const;
 
 export const IconeIdiomas = ({ size = 24 }: { size?: number }) => (
@@ -9,14 +9,7 @@ export const IconeIdiomas = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
-export const IconeStem = ({ size = 24 }: { size?: number }) => (
-  <svg {...base} width={size} height={size}>
-    <circle cx="12" cy="12" r="1.6" />
-    <ellipse cx="12" cy="12" rx="10" ry="4.2" />
-    <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" />
-    <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" />
-  </svg>
-);
+
 
 export const IconeAspas = () => (
   <svg width="26" height="20" viewBox="0 0 26 20" aria-hidden="true"><path fill="currentColor" d="M0 20V11C0 4.4 3.4.9 10 0v4C6.8 4.7 5.2 6.4 5 9h5v11H0zm15 0V11c0-6.6 3.4-10.1 10-11v4c-3.2.7-4.8 2.4-5 5h5v11H15z" /></svg>

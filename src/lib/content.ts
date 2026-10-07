@@ -8,7 +8,7 @@ export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
 export type Nivel = 'zero' | 'a1' | 'a2' | 'b1';
 
 export interface Curso {
-  id: string; area: 'idiomas' | 'stem'; nome: string; nomeNativo: string;
+  id: string; area: 'idiomas'; nome: string; nomeNativo: string;
   mascote: string; status: StatusCurso; descricao: string; dias: number | null;
 }
 export interface Fase { id: number; titulo: string; nivel: Nivel; resumo: string; dias: [number, number] }
@@ -78,3 +78,6 @@ export const carregarAula = (idioma: string, dia: number) => {
   const key = `../../content/idiomas/${idioma}/dia-${String(dia).padStart(3, '0')}.json`;
   return aulas[key] ? aulas[key]() : Promise.reject(new Error('aula não encontrada'));
 };
+
+/** Cursos listados na vitrine (o curso de português para estrangeiros fica fora até ter aulas). */
+export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== 'br');

@@ -1,8 +1,11 @@
-import '@fontsource-variable/inter';
-import '@fontsource-variable/fraunces';
+import '@fontsource-variable/fraunces/full.css';
+import '@fontsource-variable/source-sans-3';
+import '@fontsource-variable/literata';
+import './tokens.css';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './styles.css';
+import './redesign.css';
 import App from './App.tsx';
 import { AuthProvider } from './lib/AuthContext';
 

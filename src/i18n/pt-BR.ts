@@ -1,13 +1,13 @@
 // Todo o texto de marketing do site, em um só lugar. Traduzir o site = copiar este arquivo e traduzir os valores.
 export const ptBR = {
   meta: {
-    titulo: 'Linvuu · Idiomas ensinados como um professor ensina',
-    descricao: 'Cursos de idiomas e STEM em sessões de 30 minutos, com explicação em português, áudio em cada palavra e exercícios com correção na hora. Comece grátis pela aula 1 de russo.',
+    titulo: 'Linvuu · Idiomas para quem fala português',
+    descricao: 'Cursos de inglês, espanhol, russo, alemão, francês e italiano para quem fala português. Sessões de 30 minutos, explicação clara, áudio em cada frase e exercícios corrigidos na hora. Aula 1 grátis.',
   },
   barra: { novidades: 'Receber novidades', duvidas: 'Dúvidas', contato: 'Contato', idioma: 'Idioma do site' },
   nav: { metodo: 'Método', avaliacoes: 'Avaliações', duvidas: 'Dúvidas' },
   hero: {
-    kicker: 'Idiomas e STEM',
+    kicker: 'Idiomas para quem fala português',
     titulo: 'Idiomas explicados de verdade, do zero ao B1.',
     sub: 'Gramática clara quando você precisa, áudio em cada frase e exercícios corrigidos na hora. Sessões de 30 minutos, com explicação em português.',
     link: 'Ver como funciona',
@@ -23,7 +23,7 @@ export const ptBR = {
     { t: 'Áudio em cada palavra', d: 'Ouça, repita e treine a leitura desde o primeiro dia.' },
     { t: 'Aula 1 grátis', d: 'Sem cartão e sem instalar nada. Veja o método antes de decidir.' },
   ],
-  explorar: { kicker: 'Explore', titulo: 'Escolha o que aprender', idiomasTexto: 'Russo, alemão, inglês, espanhol, francês e português. Seis trilhas, todas começando do zero. O alemão vai do A1 ao B1, com explicações em passos pequenos e áudio em todas as frases.', stemTexto: 'Matemática e física com o mesmo rigor: definição precisa, exemplo resolvido e exercício com feedback.' },
+  explorar: { kicker: 'Explore', titulo: 'Escolha o que aprender', idiomasTexto: 'Inglês, espanhol, russo, alemão, francês e italiano. Todos começam do zero e vão até o B1.' },
   trilha: { kicker: 'A trilha', titulo: 'Escolha o idioma e veja o caminho', sub: 'Cada idioma tem a sua própria trilha, organizada por nível. Cada aula tem 4 sessões de cerca de 30 minutos e termina em uma revisão.' },
   metodo: { kicker: 'Como funciona', titulo: 'Uma sessão,', destaque: 'três momentos', sub: 'Cada sessão dura cerca de 30 minutos e segue a mesma ordem: ouvir e ler, ver o idioma em uso, praticar.',
     passos: [
@@ -34,8 +34,8 @@ export const ptBR = {
   livros: { kicker: 'Livros', titulo: 'Livros da Linvuu' },
   avaliacoes: { kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', vazio: 'As primeiras avaliações de alunos reais chegam em breve.' },
   faq: { kicker: 'Dúvidas', titulo: 'Antes de começar' },
-  cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece a aula 1 de russo agora: grátis, sem cartão e sem instalar nada.', primario: 'Começar a aula 1 grátis', secundario: 'Ver todos os cursos' },
-  rodape: { frase: 'Idiomas e STEM ensinados como um professor ensina.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.', termos: 'Termos de uso', privacidade: 'Política de privacidade' },
+  cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece a aula 1 agora: grátis, sem cartão e sem instalar nada.', primario: 'Começar a aula 1 grátis', secundario: 'Ver todos os cursos' },
+  rodape: { frase: 'Idiomas ensinados passo a passo, para quem fala português.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.', termos: 'Termos de uso', privacidade: 'Política de privacidade' },
   newsletter: { email: 'Seu e-mail', consentimento: 'Concordo em receber e-mails da Linvuu.', botao: 'Quero receber', ok: 'Pronto. Você vai receber as novidades da Linvuu.', erro: 'Não conseguimos registrar agora. Escreva para', invalido: 'Digite um e-mail válido.', semAceite: 'Marque a caixa para receber e-mails.', ocupado: 'Enviando…' },
   faqItens: [
     { p: 'Funciona para quem nunca estudou o idioma?', r: 'Sim. A trilha começa do zero, pelos sons e pelo alfabeto. Se você já sabe algo, escolha seu nível na página inicial e a trilha sugere um dia para começar.' },

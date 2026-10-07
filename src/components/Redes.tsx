@@ -4,7 +4,7 @@ import { SOCIAL_PATHS } from '../config/socialIcons';
 export function Redes() {
   return (
     <ul className="redes" aria-label="Redes sociais da Linvuu">
-      {REDES.map((r) => {
+      {REDES.filter((r) => r.url).map((r) => {
         const icone = (
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d={SOCIAL_PATHS[r.id]} fill="currentColor" /></svg>
         );

@@ -27,17 +27,19 @@ h1,h2,h3{font-family:var(--font-display);font-variation-settings:var(--fraunces-
 @media(max-width:820px){.lv-nav,.lv-conta{display:none}.lv-burger{display:block;margin-left:auto}}
 
 /* Hero */
-.lv-hero{background:var(--verde-floresta);color:var(--papel)}
+.lv-hero{background:var(--papel);color:var(--grafite);border-bottom:1px solid var(--linha)}
 .lv-hero-in{max-width:var(--max);margin:0 auto;padding:88px var(--pad) 96px;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
 .lv-kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 20px;color:var(--papel);opacity:.8}
+.lv-hero .lv-kicker{color:var(--verde-floresta);opacity:1}
 .lv-kicker-esc{color:var(--verde-floresta);opacity:1;margin-bottom:12px}
-.lv-hero h1{font-size:clamp(40px,6vw,72px);line-height:1.04;margin:0 0 24px;color:var(--papel);text-wrap:balance}
-.lv-hero-sub{font-size:20px;line-height:1.5;max-width:34em;margin:0 0 36px;color:var(--papel);opacity:.9}
+.lv-hero h1{font-size:clamp(40px,6vw,72px);line-height:1.04;margin:0 0 24px;color:var(--verde-floresta);text-wrap:balance}
+.lv-hero-sub{font-size:20px;line-height:1.5;max-width:34em;margin:0 0 36px;color:var(--grafite-80)}
 .lv-hero-botoes{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
 .lv-link-claro{color:var(--papel);text-decoration:none;font-weight:600;border-bottom:1px solid var(--ocre);padding-bottom:2px}
 .lv-link-claro:hover{border-bottom-width:2px}
-.lv-hero-nota{margin:28px 0 0;font-size:14px;opacity:.75}
-.lv-amostra{background:var(--papel);color:var(--grafite);padding:28px;border:1px solid var(--papel-escuro)}
+.lv-hero-nota{margin:28px 0 0;font-size:14px;color:var(--grafite-65)}
+.lv-hero .lv-link-claro{color:var(--verde-floresta)}
+.lv-amostra{background:var(--papel-claro);color:var(--grafite);padding:28px;border:1px solid var(--linha-forte)}
 .lv-abas{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:24px;border-bottom:1px solid var(--linha)}
 .lv-abas button{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:8px 12px;font:inherit;font-size:14px;color:var(--grafite-80);cursor:pointer}
 .lv-abas button:hover{color:var(--verde-floresta)}
@@ -146,3 +148,21 @@ h1,h2,h3{font-family:var(--font-display);font-variation-settings:var(--fraunces-
 .lv-foot .redes a{background:transparent;color:var(--papel);border:1px solid rgba(245,241,232,.5)}
 .lv-foot .redes a:hover{background:var(--papel);color:var(--verde-floresta);text-decoration:none}
 .lv-foot .news-aceite a{text-decoration:underline}
+
+/* Calor: saudação nos cartões, exercício, fotos, carta */
+.lv-saud{font-family:var(--font-display);font-variation-settings:var(--fraunces-display);font-size:44px;line-height:1.05;font-weight:600;color:var(--verde-floresta);display:block;margin-bottom:4px}
+.lv-exp{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.lv-exp-box{background:var(--papel-claro);border:1px solid var(--linha-forte);padding:28px}
+.lv-exp-box h3{font-size:24px;margin:0 0 16px}
+.lv-exp-opc{display:flex;flex-direction:column;gap:8px;margin:20px 0 0}
+.lv-exp-opc button{text-align:left;font:inherit;font-size:16px;padding:12px 14px;background:var(--papel);border:1px solid var(--linha-forte);border-radius:2px;cursor:pointer;color:var(--grafite)}
+.lv-exp-opc button:hover:not(:disabled){border-color:var(--verde-floresta)}
+.lv-exp-opc button.certo{border-color:var(--verde-floresta);background:var(--verde-100)}
+.lv-exp-opc button.errado{border-color:var(--tijolo,#8C2F1E)}
+.lv-exp-msg{margin:16px 0 0;font-size:15px;color:var(--grafite-80);min-height:3em}
+.lv-ouvir{display:inline-flex;align-items:center;gap:10px;background:var(--verde-floresta);color:var(--papel);border:0;border-radius:2px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}
+.lv-fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:0 0 8px}
+.lv-fotos img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:0}
+.lv-carta{max-width:640px;margin:0 auto;font-size:19px;line-height:1.65}
+.lv-carta-ass{font-family:'Caveat',cursive;font-size:30px;color:var(--verde-floresta);margin:20px 0 0}
+@media(max-width:800px){.lv-exp{grid-template-columns:1fr;gap:32px}.lv-fotos{grid-template-columns:1fr}}

@@ -8,6 +8,7 @@ import { Vitrine } from '../components/Vitrine';
 import { Avaliacoes } from '../components/Avaliacoes';
 import { Traco } from '../components/Traco';
 import { DEPOIMENTOS } from '../config/equipe';
+import { CARTA } from '../config/carta';
 import { LIVROS } from '../config/livros';
 import { ROTULO_BLOCO } from '../lib/aulas';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -30,6 +31,38 @@ const AMOSTRA: Record<string, { nome: string; frase: string; aula: Aula }> = {
 };
 const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0);
 const PADRAO = NO_AR.find((c) => c.status === 'disponivel')?.id ?? NO_AR[0]?.id;
+
+const FOTOS = [
+  { src: '/fotos/comece.jpg', alt: 'Mãos usando um tablet sobre uma mesa de madeira' },
+  { src: '/fotos/imersao.jpg', alt: 'Pessoas lendo em uma livraria com estantes de livros' },
+  { src: '/fotos/pratica.jpg', alt: 'Homem escrevendo em um caderno' },
+];
+
+// Exercício sem cadastro: a mesma pergunta em cada idioma. A voz usa a gravação, se existir, ou a do navegador.
+const EXERCICIO: Record<string, string> = { en: 'Where is the station?', ru: 'Где вокзал?', de: 'Wo ist der Bahnhof?', fr: 'Où est la gare ?' };
+const OPCOES = ['Onde fica a estação?', 'Quanto custa isto?', 'Que horas são?'];
+
+function Experimente({ lang }: { lang: string }) {
+  const [esc, setEsc] = useState<string | null>(null);
+  const [tocando, setTocando] = useState(false);
+  const frase = EXERCICIO[lang];
+  const ouvir = async () => { setTocando(true); try { await falar(frase, lang); } finally { setTocando(false); } };
+  const certo = esc === OPCOES[0];
+  return (
+    <div className="lv-exp-box">
+      <h3>O que ela disse?</h3>
+      <button type="button" className="lv-ouvir" onClick={ouvir} aria-label="Ouvir a frase">{tocando ? 'Tocando…' : 'Ouvir a frase'}</button>
+      <div className="lv-exp-opc">
+        {OPCOES.map((o) => (
+          <button key={o} type="button" disabled={certo} className={esc === o ? (o === OPCOES[0] ? 'certo' : 'errado') : ''} onClick={() => setEsc(o)}>{o}</button>
+        ))}
+      </div>
+      <p className="lv-exp-msg" aria-live="polite">
+        {esc === null ? '' : certo ? `Isso mesmo: “${frase}” é “Onde fica a estação?”. Na aula 1 você começa assim, ouvindo antes de ler.` : 'Ainda não. Ouça de novo com calma e tente outra vez.'}
+      </p>
+    </div>
+  );
+}
 
 const NIVEIS = [
   { cod: 'A1', nome: 'Do zero', texto: 'Se apresentar, pedir o que precisa e entender frases do dia a dia.', valor: 0.34, sem: 3 },
@@ -61,7 +94,7 @@ export default function Home() {
             <h1>Pare de colecionar apps. Comece a falar o idioma.</h1>
             <p className="lv-hero-sub">{t.hero.sub}</p>
             <div className="lv-hero-botoes">
-              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-claro">Fazer a aula 1 grátis</Link>
+              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-primary">Fazer a aula 1 grátis</Link>
               <Link to="/cursos" className="lv-link-claro">Ver os cursos →</Link>
             </div>
             <p className="lv-hero-nota">Sem cartão. Aulas já no ar: {aulasNoAr}.</p>
@@ -106,7 +139,20 @@ export default function Home() {
         <div className="lv-grade">{CURSOS_ATIVOS.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
       </section>
 
-      <section className="lv-sec lv-sec-papel" aria-labelledby="h-niveis">
+      {lang && EXERCICIO[lang] && (
+        <section className="lv-sec lv-sec-papel" aria-labelledby="h-exp">
+          <div className="lv-exp">
+            <div>
+              <p className="lv-kicker lv-kicker-esc">Experimente agora</p>
+              <h2 id="h-exp">Ouça uma frase e escolha o que ela quer dizer.</h2>
+              <p className="lv-sec-sub">Sem cadastro. Você pode ouvir quantas vezes quiser; errar faz parte.</p>
+            </div>
+            <Experimente key={lang} lang={lang} />
+          </div>
+        </section>
+      )}
+
+      <section className="lv-sec" aria-labelledby="h-niveis">
         <p className="lv-kicker lv-kicker-esc">Níveis</p>
         <h2 id="h-niveis">O que você consegue fazer em cada nível</h2>
         <div className="lv-niveis">
@@ -128,12 +174,23 @@ export default function Home() {
         <p className="lv-kicker lv-kicker-esc">{t.metodo.kicker}</p>
         <h2 id="h-metodo">{t.metodo.titulo} {t.metodo.destaque}</h2>
         <p className="lv-sec-sub">{t.metodo.sub}</p>
+        <div className="lv-fotos">
+          {FOTOS.map((f) => <img key={f.src} src={f.src} alt={f.alt} width="1000" height="600" loading="lazy" decoding="async" />)}
+        </div>
         <div className="lv-passos">
           {t.metodo.passos.map((m) => (
             <div key={m.n}><span className="lv-num">{m.n}</span><h3>{m.t}</h3><p>{m.d}</p></div>
           ))}
         </div>
       </section>
+
+      {CARTA.paragrafos.length > 0 && CARTA.assinatura && (
+        <section className="lv-sec" aria-labelledby="h-carta">
+          <p className="lv-kicker lv-kicker-esc">Quem faz a Linvuu</p>
+          <h2 id="h-carta" className="sr-only">Carta</h2>
+          <div className="lv-carta">{CARTA.paragrafos.map((p, i) => <p key={i}>{p}</p>)}<p className="lv-carta-ass">{CARTA.assinatura}</p></div>
+        </section>
+      )}
 
       {LIVROS.length > 0 && (
         <section className="lv-sec lv-sec-papel" id="livros" aria-labelledby="h-livros">

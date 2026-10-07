@@ -4,10 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 export type DadosMeta = {
-  cursos: { id: string; nome: string; descricao: string }[];
+  cursos: { id: string; nome: string; descricao: string; status?: string }[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[] }>;
 };
-export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean };
+export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[] };
 
 export function carregarDadosMeta(raiz: string): DadosMeta | null {
   try {
@@ -34,7 +34,16 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   let m = p.match(/^\/curso\/([^/]+)$/);
   if (m) {
     const c = d.cursos.find((x) => x.id === m![1]);
-    return c ? { status: 200, caminho: p, titulo: `${c.nome}: curso de ${c.nome.toLowerCase()} do zero`, descricao: c.descricao } : naoEncontrada(p);
+    if (!c) return naoEncontrada(p);
+    const url = `${SITE}${p}`;
+    return {
+      status: 200, caminho: p, titulo: `${c.nome}: curso de ${c.nome.toLowerCase()} do zero`, descricao: c.descricao,
+      semIndice: c.status === 'em-breve' || undefined,
+      jsonld: [
+        { '@context': 'https://schema.org', '@type': 'Course', name: `${c.nome} para quem fala português`, description: c.descricao, inLanguage: 'pt-BR', url, provider: { '@type': 'Organization', name: 'Linvuu', url: SITE } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Início', item: SITE }, { '@type': 'ListItem', position: 2, name: 'Cursos', item: `${SITE}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
+      ],
+    };
   }
   m = p.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
   if (m) {
@@ -56,6 +65,7 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   return naoEncontrada(p);
 }
 
+const SITE = 'https://linvuu.com.br';
 const naoEncontrada = (p: string): MetaRota => ({ status: 404, caminho: p, titulo: 'Página não encontrada', semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -76,6 +86,8 @@ export function aplicarMeta(html: string, m: MetaRota, site: string): string {
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
   troca(/(<link rel="alternate" hreflang="pt-BR" href=")[^"]*(")/, url);
+  troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
+  if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
   return out;
 }

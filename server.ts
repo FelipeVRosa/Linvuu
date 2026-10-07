@@ -154,6 +154,17 @@ async function startServer() {
 
   app.use(express.json());
 
+  // Saúde do serviço (para o Render e para monitoramento).
+  app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
+
+  // As rotas /api abaixo vieram do protótipo antigo e o site atual não usa nenhuma delas.
+  // Ficam DESATIVADAS em produção: eram públicas, sem login nem limite (a análise por IA gastaria a chave do Gemini
+  // e o webhook do Stripe aceitava qualquer chamada, sem assinatura). Quando o pagamento e a IA entrarem de verdade,
+  // serão refeitos com login (Firebase), assinatura do webhook do Stripe e limite de uso.
+  if (process.env.NODE_ENV === 'production') {
+    app.use('/api', (_req: Request, res: Response) => { res.status(410).json({ error: 'API desativada.' }); });
+  }
+
   // Direct Project Archive Downloader for local VS Code integration
   // (o pacote linvuu-kosmos.tar.gz foi removido do repositório; o código-fonte está no GitHub)
   app.get('/api/download-project', (_req: Request, res: Response) => {

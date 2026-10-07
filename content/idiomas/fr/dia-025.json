@@ -3,28 +3,173 @@
   "dia": 25,
   "fase": 3,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Rotina da manhã",
-  "objetivo": "Contar o que você faz do despertar até sair de casa.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Números até 100, horas, dias e meses: Os números de 21 a 100",
+  "objetivo": "Aula 7, sessão 1 de 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Números até 100, horas, dias e meses",
+    "objetivo": "Contar até 100, dizer as horas, e falar de dias, meses, datas e estações.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S1",
+    "titulo": "Os números de 21 a 100",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 8,
+        "itens": [
+          {
+            "ru": "vingt et un",
+            "translit": "vẽ-té-ẽ",
+            "pt": "vinte e um",
+            "en": "",
+            "audio": "vingt et un"
+          },
+          {
+            "ru": "trente",
+            "translit": "trãt",
+            "pt": "trinta",
+            "en": "",
+            "audio": "trente"
+          },
+          {
+            "ru": "quarante",
+            "translit": "karãt",
+            "pt": "quarenta",
+            "en": "",
+            "audio": "quarante"
+          },
+          {
+            "ru": "cinquante",
+            "translit": "sẽkãt",
+            "pt": "cinquenta",
+            "en": "",
+            "audio": "cinquante"
+          },
+          {
+            "ru": "soixante",
+            "translit": "suassãt",
+            "pt": "sessenta",
+            "en": "",
+            "audio": "soixante"
+          },
+          {
+            "ru": "soixante-dix",
+            "translit": "suassãt-dis",
+            "pt": "setenta (sessenta e dez)",
+            "en": "",
+            "audio": "soixante-dix"
+          },
+          {
+            "ru": "quatre-vingts",
+            "translit": "katr-vẽ",
+            "pt": "oitenta (quatro vintes)",
+            "en": "",
+            "audio": "quatre-vingts"
+          },
+          {
+            "ru": "cent",
+            "translit": "sã",
+            "pt": "cem",
+            "en": "",
+            "audio": "cent"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "De 21 a 100: a lógica francesa",
+        "explicacao": "PASSO 1: as dezenas até 60 são regulares: vingt (20), trente (30), quarante (40), cinquante (50), soixante (60). Some a unidade com hífen: «vingt-deux», «trente-cinq», «quarante-huit». PASSO 2: o «un» pede «et» sem hífen em 21, 31, 41, 51 e 61: «vingt et un», «trente et un», «soixante et un». Nos demais, só hífen: «vingt-deux». PASSO 3: de 70 a 79 some-se à dezena de 60: «soixante-dix» (60 + 10), «soixante et onze» (60 + 11), «soixante-douze», … «soixante-dix-neuf». PASSO 4: 80 é «quatre-vingts» (4 × 20): com «s» quando está sozinho; sem «s» quando vem seguido de outro número: «quatre-vingt-un» (81, sem «et»). De 90 a 99 some-se a «quatre-vingt»: «quatre-vingt-dix» (90), «quatre-vingt-onze» (91), … «quatre-vingt-dix-neuf» (99). PASSO 5: 100 é «cent». PASSO 6: na Bélgica e em parte da Suíça se diz «septante» (70) e «nonante» (90); na França, não. PASSO 7: pronúncia: «vingt» soa «vẽ» no número isolado; em «vingt et un», ouve-se o «t» na ligação (vẽ-té-ẽ).",
+        "comparacao": "o português tem palavras próprias de 20 a 100 («setenta», «oitenta», «noventa»). O francês usa contas: 70 é «sessenta e dez» e 90 é «quatro vintes e dez». Treine até as contas virarem hábito.",
+        "tabela": [
+          {
+            "numero": "21",
+            "escrita": "vingt et un",
+            "conta": "20 + 1"
+          },
+          {
+            "numero": "35",
+            "escrita": "trente-cinq",
+            "conta": "30 + 5"
+          },
+          {
+            "numero": "60",
+            "escrita": "soixante",
+            "conta": "60"
+          },
+          {
+            "numero": "71",
+            "escrita": "soixante et onze",
+            "conta": "60 + 11"
+          },
+          {
+            "numero": "80",
+            "escrita": "quatre-vingts",
+            "conta": "4 × 20"
+          },
+          {
+            "numero": "81",
+            "escrita": "quatre-vingt-un",
+            "conta": "4 × 20 + 1"
+          },
+          {
+            "numero": "90",
+            "escrita": "quatre-vingt-dix",
+            "conta": "4 × 20 + 10"
+          },
+          {
+            "numero": "99",
+            "escrita": "quatre-vingt-dix-neuf",
+            "conta": "4 × 20 + 19"
+          },
+          {
+            "numero": "100",
+            "escrita": "cent",
+            "conta": "100"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "vingt-un",
+            "certo": "vingt et un",
+            "motivo": "21, 31, 41, 51, 61 e 71 levam «et»."
+          },
+          {
+            "errado": "quatre-vingt-et-un",
+            "certo": "quatre-vingt-un",
+            "motivo": "81 e 91 não levam «et»."
+          },
+          {
+            "errado": "quatre-vingt (80)",
+            "certo": "quatre-vingts",
+            "motivo": "80 sozinho leva «s»."
+          },
+          {
+            "errado": "septante-cinq (na França)",
+            "certo": "soixante-quinze",
+            "motivo": "«Septante» é belga e suíço."
+          }
+        ],
+        "tag": "Números"
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Conte de 20 em 20 até 100, e diga em voz alta: 21, 35, 48, 62, 71, 80, 91, 99."
+      },
+      {
+        "tipo": "revisao",
+        "min": 5,
+        "enunciado": "Conte de 0 a 20 em voz alta e diga a sua idade e a de duas pessoas."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/fr/aulas/aula-007.json",
+  "responsavel": null
 }

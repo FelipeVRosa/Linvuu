@@ -1,0 +1,93 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 52, titulo: 'Relativos (2): il quale, chi, ciò che', nivel: 'b1',
+  objetivo: 'Usar «il quale / la quale», «il cui», «chi», «ciò che / quello che» e «il che» para ligar frases com mais precisão, na escrita e na fala.',
+  nota: 'Você agora escolhe o relativo certo: che, cui, il quale, chi ou ciò che. Próxima aula: conectores.',
+  sessoes: [
+    sessao('S1', 'Il quale, cui e il cui', [
+      revisao(5, 'Diga em voz alta quatro frases com «che» e «cui» (aula 32), por exemplo: «Il libro che leggo» e «La persona con cui lavoro».'),
+      palavras(8, [
+        ['il motivo', '', 'o motivo', ''], ['l\'argomento', '', 'o assunto', ''], ['la questione', '', 'a questão', ''], ['la ditta', '', 'a empresa', ''], ['il quartiere', '', 'o bairro', ''], ['il progetto', '', 'o projeto', ''], ['la persona', '', 'a pessoa', ''], ['il periodo', '', 'o período', ''],
+      ]),
+      gramatica(12, 'Il quale, la quale e il cui', 'PASSO 1: lembre-se de que «che» não aceita preposição; depois de preposição, usa-se «cui»: «la persona con cui lavoro». PASSO 2: «il quale» é outra forma de dizer «que / o qual». Ele concorda em gênero e número com o antecedente: il quale, la quale, i quali, le quali. PASSO 3: depois de preposição, junte-a ao artigo de «quale»: «il collega con il quale lavoro», «la ditta per la quale lavoro», «gli amici ai quali scrivo». Equivale a «con cui», «per cui», «a cui». PASSO 4: use «il quale» sobretudo na escrita formal ou quando «che» deixaria a frase ambígua: «Ho parlato con la sorella di Marco, la quale abita a Roma.» (quem mora em Roma? a irmã.) PASSO 5: na conversa de todo dia, «che» e «cui» soam mais naturais. PASSO 6: «il cui» significa «cujo». O artigo concorda com a coisa possuída, e «cui» não muda: «Marco, la cui sorella abita a Roma», «una ditta i cui prodotti sono famosi». PASSO 7: lugar e tempo: «la città dove vivo» ou «la città in cui vivo».', {
+        tag: 'Relativos',
+        comparacao: 'em português, «o qual / a qual / os quais / as quais» e «cujo» funcionam de modo parecido. A diferença está no «cui»: ele é invariável, e é o artigo diante do possuído que muda («la cui sorella», «le cui sorelle»). E o erro mais comum de brasileiros é copiar a fala: «a garota que eu falei». Em italiano, a preposição é obrigatória: «la ragazza con cui ho parlato».',
+        tabela: [
+          { forma: 'con il quale', equivale: 'con cui', exemplo: 'Il collega con il quale lavoro è simpatico.' },
+          { forma: 'per la quale', equivale: 'per cui', exemplo: 'La ditta per la quale lavoro è grande.' },
+          { forma: 'ai quali', equivale: 'a cui', exemplo: 'Sono gli amici ai quali scrivo spesso.' },
+          { forma: 'dalle quali', equivale: 'da cui', exemplo: 'Sono le ragioni dalle quali nasce il problema.' },
+          { forma: 'il cui', equivale: 'cujo', exemplo: 'Una ditta i cui prodotti sono famosi.' },
+          { forma: 'dove / in cui', equivale: 'onde / em que', exemplo: 'Il quartiere dove abito è tranquillo.' },
+        ],
+        erros: [['La ragazza che ho parlato è italiana.', 'La ragazza con cui ho parlato è italiana.', '«Che» não leva preposição; com «parlare con», use «con cui».'], ['Marco, il cui la sorella abita a Roma.', 'Marco, la cui sorella abita a Roma.', '«Il cui» já faz o papel do possessivo: não se acrescenta outro artigo.'], ['Ho scritto alle amiche, i quali non hanno risposto.', 'Ho scritto alle amiche, le quali non hanno risposto.', '«Quale» concorda com o antecedente: feminino plural.'], ['Il libro di cui ti ho parlato di è bello.', 'Il libro di cui ti ho parlato è bello.', '«Cui» já contém a preposição.']],
+      }),
+      producao(5, 'Descreva em voz alta três pessoas que você conhece, ligando as frases com «con cui», «la cui» ou «il quale».'),
+    ]),
+    sessao('S2', 'Chi, ciò che, quello che e il che', [
+      revisao(4, 'Releia em voz alta a tabela da sessão anterior e troque cada «cui» por «il quale» (e vice-versa).'),
+      palavras(6, [
+        ['chiunque', 'kiúnkue', 'qualquer pessoa / quem quer que', ''], ['ciascuno', 'tchascúno', 'cada um', ''], ['nessuno', '', 'ninguém', ''], ['sorprendere', '', 'surpreender', ''], ['dipendere da', '', 'depender de', ''], ['il proverbio', '', 'o provérbio', ''],
+      ]),
+      gramatica(12, 'Chi, ciò che, quello che, il che', 'PASSO 1: «chi» sem antecedente significa «quem / aquele que». O verbo fica sempre no singular: «Chi studia impara.», «Chi ha fame può servirsi.» PASSO 2: é muito frequente em provérbios: «Chi dorme non piglia pesci.» PASSO 3: não confunda com o «chi» interrogativo: «Chi è?», «Non so chi abbia chiamato.» PASSO 4: «ciò che» e «quello che» significam «o que» (a coisa que): «Ciò che dici è vero.», «Non capisco quello che dici.» «Ciò» é mais formal; «quello che» é o mais usado na fala. PASSO 5: com preposição: «ciò di cui parlo», «quello a cui penso», «tutto quello di cui hai bisogno». PASSO 6: «tutto ciò che» e «tutto quello che» = «tudo o que»: «Tutto quello che ho è tuo.» PASSO 7: «il che» retoma a frase inteira anterior: «Ha perso il lavoro, il che lo preoccupa.» Na fala também se ouve «cosa che»: «Ha vinto, cosa che mi ha sorpreso.» PASSO 8: nunca use «che» sozinho no lugar de «o que» nestas frases.', {
+        tag: 'Relativos',
+        comparacao: 'em português, «quem» e «o que» são relativos livres, como «chi» e «ciò che». A armadilha é o «isso que» e o «o que» que retoma uma frase («ele ganhou, o que me surpreendeu»): o italiano exige «il che» (ou «cosa che») e não aceita um «che» solto.',
+        tabela: [
+          { forma: 'chi', equivale: 'quem / aquele que', exemplo: 'Chi studia impara.' },
+          { forma: 'ciò che', equivale: 'o que (formal)', exemplo: 'Ciò che dici è giusto.' },
+          { forma: 'quello che', equivale: 'o que (comum)', exemplo: 'Non capisco quello che dici.' },
+          { forma: 'ciò di cui', equivale: 'aquilo de que', exemplo: 'Ecco ciò di cui parlavo.' },
+          { forma: 'tutto quello che', equivale: 'tudo o que', exemplo: 'Tutto quello che ho è tuo.' },
+          { forma: 'il che', equivale: 'o que (retoma a frase)', exemplo: 'Ha vinto, il che mi ha sorpreso.' },
+        ],
+        erros: [['Non capisco che dici.', 'Non capisco quello che dici.', 'Para «o que» sem antecedente, use «quello che» ou «ciò che».'], ['Chi studiano imparano.', 'Chi studia impara.', '«Chi» pede verbo no singular, mesmo falando de muitas pessoas.'], ['Ha vinto, che mi ha sorpreso.', 'Ha vinto, il che mi ha sorpreso.', 'Para retomar a frase inteira, use «il che».'], ['Ecco ciò che ti ho parlato.', 'Ecco ciò di cui ti ho parlato.', '«Parlare di» exige «di cui».']],
+      }),
+      producao(8, 'Diga em voz alta cinco frases que começam por «Chi…», «Ciò che…» ou «Quello che…», sobre o seu trabalho ou estudo. Exemplo: «Quello che mi piace è lavorare in squadra.»'),
+    ]),
+    sessao('S3', 'Escolher o relativo certo', [
+      revisao(4, 'Diga em voz alta uma frase com cada um: «che», «cui», «il quale», «chi», «ciò che».'),
+      palavras(5, [
+        ['il vicino', '', 'o vizinho', ''], ['la raccolta di firme', '', 'o abaixo-assinado', ''], ['la bottega', '', 'a lojinha / o ateliê', ''], ['partecipare', '', 'participar', ''], ['una riunione', '', 'uma reunião', ''],
+      ]),
+      gramatica(8, 'Mapa dos relativos', 'PASSO 1: sujeito ou objeto direto: «che» («la ditta che cresce», «il libro che leggo»). PASSO 2: com preposição: «cui» ou «il quale» («la persona a cui scrivo / alla quale scrivo»). PASSO 3: posse: «il cui». PASSO 4: lugar: «dove» ou «in cui». PASSO 5: pessoas em geral: «chi». PASSO 6: coisas sem antecedente: «ciò che / quello che». PASSO 7: frase inteira: «il che». PASSO 8: depois de uma pausa na escrita, «il quale» ajuda a escolher o antecedente certo.', {
+        tag: 'Relativos',
+        tabela: [
+          { precisa: 'sujeito / objeto', use: 'che', exemplo: 'Il progetto che studio è nuovo.' },
+          { precisa: 'preposição', use: 'cui / il quale', exemplo: 'La persona a cui scrivo è un collega.' },
+          { precisa: 'posse', use: 'il cui', exemplo: 'Il vicino, la cui bottega è chiusa, è partito.' },
+          { precisa: 'lugar', use: 'dove / in cui', exemplo: 'La piazza dove giocavo è sparita.' },
+          { precisa: 'quem', use: 'chi', exemplo: 'Chi vuole può partecipare.' },
+          { precisa: 'o que', use: 'ciò che / quello che', exemplo: 'Ciò che manca è il tempo.' },
+          { precisa: 'a frase toda', use: 'il che', exemplo: 'È tardi, il che è un problema.' },
+        ],
+        erros: [['Il posto che vado spesso è bello.', 'Il posto dove vado spesso è bello.', 'Para lugar com movimento, use «dove» (ou «in cui»); «che» não serve.'], ['Tutto ciò che di cui ho bisogno è tempo.', 'Tutto ciò di cui ho bisogno è tempo.', '«Di cui» já traz a ligação; não se acrescenta «che».'], ['Il collega a cui lavoro è gentile.', 'Il collega con cui lavoro è gentile.', 'Em italiano, «lavorare» pede «con».'], ['Chi vogliono partecipare, vengano.', 'Chi vuole partecipare, venga.', '«Chi» pede o verbo no singular.']],
+      }),
+      texto(8, 'Un quartiere che cambia', 'Il quartiere in cui vivo da dieci anni sta cambiando. La piazza dove giocavano i bambini è diventata un parcheggio, il che non piace a nessuno. Alcuni vicini, i quali abitano qui da sempre, hanno scritto una lettera al sindaco. Il signor Bruni, la cui bottega è aperta dal 1980, dice che ciò che manca oggi è uno spazio per incontrarsi. Chi ha un\'idea può venire alla riunione di sabato. Tutto quello che serve è un po\' di tempo e la voglia di partecipare.', 'O bairro em que vivo há dez anos está mudando. A praça onde as crianças brincavam virou um estacionamento, o que não agrada a ninguém. Alguns vizinhos, que moram aqui desde sempre, escreveram uma carta ao prefeito. O senhor Bruni, cuja lojinha está aberta desde 1980, diz que o que falta hoje é um espaço para se encontrar. Quem tiver uma ideia pode vir à reunião de sábado. Tudo o que é preciso é um pouco de tempo e vontade de participar.', [['O que aconteceu com a praça?', 'Virou um estacionamento.'], ['O que o senhor Bruni diz que falta?', 'Um espaço para as pessoas se encontrarem.'], ['Quem pode ir à reunião de sábado?', 'Quem tem uma ideia.']]),
+      producao(5, 'Resuma o texto em voz alta, em três frases, usando pelo menos dois relativos diferentes.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 52', [
+      revisao(5, 'Releia o mapa dos relativos e diga uma frase para cada linha.'),
+      exercicios(20, [
+        ouvir('La ragazza con cui ho parlato è italiana', ['La ragazza con cui ho parlato è italiana', 'La ragazza che ho parlato è italiana', 'La ragazza di cui ho parlato è italiana'], 'La ragazza con cui ho parlato è italiana', 'Ouça a preposição: «con cui».'),
+        ouvir('Chi dorme non piglia pesci', ['Chi dorme non piglia pesci', 'Chi dormono non pigliano pesci', 'Che dorme non piglia pesci'], 'Chi dorme non piglia pesci', 'Provérbio: «chi» + singular.'),
+        ouvir('Ha vinto, il che mi ha sorpreso', ['Ha vinto, il che mi ha sorpreso', 'Ha vinto, che mi ha sorpreso', 'Ha vinto, quello che mi ha sorpreso'], 'Ha vinto, il che mi ha sorpreso', '«Il che» retoma a frase.'),
+        ditado('Non capisco quello che dici', 'Escreva: Non capisco quello che dici.'),
+        ditado('Una ditta i cui prodotti sono famosi', 'Escreva: Una ditta i cui prodotti sono famosi.'),
+        ditado('Il collega con il quale lavoro è simpatico', 'Escreva: Il collega con il quale lavoro è simpatico.'),
+        mc('Qual relativo significa «cujo»?', ['il cui', 'chi', 'il che'], 'il cui', 'O artigo concorda com o possuído.'),
+        mc('«Chi studia impara» usa o verbo:', ['no singular', 'no plural', 'no infinitivo'], 'no singular', '«Chi» sempre singular.'),
+        mc('Para retomar a frase inteira, use:', ['il che', 'ciò di cui', 'la quale'], 'il che', '«Il che» = «o que», referindo-se à frase anterior.'),
+        mc('Qual frase está correta?', ['Ecco ciò di cui parlavo.', 'Ecco ciò che parlavo.', 'Ecco ciò che di cui parlavo.'], 'Ecco ciò di cui parlavo.', '«Parlare di» pede «di cui».'),
+        lacuna('Gli amici ai ___ scrivo sono italiani. (aos quais)', ['quali', 'quale', 'cui'], 'quali', 'Plural masculino: «ai quali».'),
+        lacuna('La ditta per ___ lavoro è grande.', ['cui', 'che', 'chi'], 'cui', 'Preposição + «cui».'),
+        lacuna('Marco, ___ sorella abita a Roma, è mio amico.', ['la cui', 'il cui', 'cui'], 'la cui', 'O artigo concorda com «sorella».'),
+        lacuna('Tutto ___ ho è tuo.', ['quello che', 'quello cui', 'chi'], 'quello che', '«Tutto quello che» = «tudo o que».'),
+        ordem('Ordene: «Chi studia impara.»', ['Chi', 'studia', 'impara'], 'Chi studia impara.', 'Relativo livre.'),
+        ordem('Ordene: «Il quartiere in cui vivo sta cambiando.»', ['Il', 'quartiere', 'in', 'cui', 'vivo', 'sta', 'cambiando'], 'Il quartiere in cui vivo sta cambiando.', 'Preposição + cui.'),
+        livre('Escreva em italiano: A garota com quem falei é italiana. Não entendo o que você diz. Ele ganhou, o que me surpreendeu.', 'La ragazza con cui ho parlato è italiana. Non capisco quello che dici. Ha vinto, il che mi ha sorpreso.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre o seu bairro, usando «in cui», «il che» e «quello che».'),
+    ]),
+  ],
+});

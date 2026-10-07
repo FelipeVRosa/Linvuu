@@ -1,0 +1,94 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 59, titulo: 'Viver na Itália: burocracia, banco, celular', nivel: 'b1',
+  objetivo: 'Entender e usar o vocabulário e as frases de repartições, banco e telefonia: pedir informação, entender as instruções do funcionário («Compili», «Firmi») e perguntar com cortesia.',
+  nota: 'Esta aula ensina vocabulário e frases, não procedimentos: documentos, prazos, valores e regras mudam e variam de lugar para lugar. Confirme sempre no site ou no balcão do órgão, do banco ou da operadora. Próxima aula: estratégias para parafrasear e pedir ajuda.',
+  sessoes: [
+    sessao('S1', 'Repartições e documentos: vocabulário e frases', [
+      revisao(5, 'Diga em voz alta cinco pedidos de informação com «Lei», por exemplo: «Mi può dire dove si trova lo sportello?»'),
+      palavras(8, [
+        ['l\'ufficio', '', 'a repartição / o escritório', ''], ['lo sportello', '', 'o guichê / balcão', ''], ['la coda', '', 'a fila', ''], ['il modulo', '', 'o formulário', ''], ['compilare', '', 'preencher', ''], ['la firma', '', 'a assinatura', ''], ['l\'appuntamento', '', 'o agendamento / o compromisso', ''], ['la ricevuta', '', 'o comprovante / o recibo', ''],
+      ]),
+      gramatica(12, 'Mi serve, ci vuole, compili', 'PASSO 1: para dizer que você precisa de algo, o italiano usa «servire»: «Mi serve un modulo.» (um só) e «Mi servono due moduli.» (mais de um). O verbo concorda com a coisa de que você precisa. PASSO 2: para tempo ou quantidade necessária, use «volerci»: «Ci vuole un\'ora.», «Ci vogliono due ore.», «Ci vuole un documento.» PASSO 3: pergunte com cortesia: «Che documenti servono?», «Quanto tempo ci vuole?», «Posso prendere un appuntamento?», «Dove devo andare per…?» PASSO 4: o funcionário provavelmente usará o imperativo com «Lei», que é igual à 3ª pessoa do congiuntivo presente: «Compili il modulo.» (compilare), «Prenda il numero.» (prendere), «Aspetti qui.» (aspettare), «Firmi qui.» (firmare), «Venga allo sportello.» (venire), «Mi dia il documento.» (dare). PASSO 5: negativo com «Lei»: «Non si preoccupi.» (aula 28). PASSO 6: para ter certeza: «Può ripetere, per favore?», «Dove firmo?», «Mi può dare una ricevuta?» PASSO 7: não temos como dizer aqui quais documentos, prazos ou taxas se aplicam a você: isso depende do caso e muda com o tempo.', {
+        tag: 'Vida prática',
+        comparacao: 'o português diz «preciso de um formulário». O italiano põe a coisa como sujeito: «mi serve un modulo», e concorda: «mi servono due moduli». E «demora duas horas» é «ci vogliono due ore», não «demora». Quanto à cortesia, o imperativo de «Lei» é a forma do congiuntivo («compili», «firmi»), diferente do «tu» («compila», «firma»).',
+        tabela: [
+          { frase: 'Mi serve un modulo.', uso: 'preciso de (singular)', nota: 'serve' },
+          { frase: 'Mi servono due moduli.', uso: 'preciso de (plural)', nota: 'servono' },
+          { frase: 'Ci vuole un\'ora.', uso: 'tempo necessário', nota: 'singular' },
+          { frase: 'Ci vogliono due ore.', uso: 'tempo necessário', nota: 'plural' },
+          { frase: 'Compili il modulo.', uso: 'o funcionário pede', nota: 'imperativo de Lei' },
+          { frase: 'Firmi qui.', uso: 'o funcionário pede', nota: 'imperativo de Lei' },
+        ],
+        erros: [['Mi servono un documento.', 'Mi serve un documento.', 'Um documento, verbo no singular.'], ['Ci vuole due ore.', 'Ci vogliono due ore.', '«Due ore» é plural: «ci vogliono».'], ['Compila il modulo, signora.', 'Compili il modulo, signora.', 'Com «Lei», use a forma de cortesia.'], ['Devo di compilare il modulo?', 'Devo compilare il modulo?', 'Depois de «dovere», infinitivo direto.']],
+      }),
+      producao(5, 'Imagine que você precisa de um formulário. Diga em voz alta cinco frases para perguntar o que é necessário, quanto tempo demora e onde assinar.'),
+    ]),
+    sessao('S2', 'No banco: vocabulário e frases', [
+      revisao(4, 'Diga em voz alta o imperativo de «Lei» de cinco verbos: compilare, firmare, aspettare, prendere, venire.'),
+      palavras(6, [
+        ['il conto', '', 'a conta (bancária)', ''], ['il bonifico', '', 'a transferência', ''], ['il prelievo', '', 'o saque', ''], ['il saldo', '', 'o saldo', ''], ['la carta', '', 'o cartão', ''], ['la commissione', '', 'a tarifa / comissão', ''],
+      ]),
+      gramatica(12, 'Vorrei aprire un conto, vorrei fare un bonifico', 'PASSO 1: peça sempre com o condicional: «Vorrei aprire un conto.», «Vorrei fare un bonifico.», «Vorrei sapere il saldo.» PASSO 2: dinheiro: «prelevare» (sacar), «versare» (depositar): «Vorrei prelevare cento euro.» PASSO 3: perguntas úteis: «Quanto costa la commissione?», «Si può pagare con la carta?», «Dov\'è lo sportello bancomat?» PASSO 4: cartão perdido: «Ho perso la carta: come posso bloccarla?» (pronome ligado ao infinitivo). PASSO 5: segurança: «Non dica a nessuno il suo PIN.» (negativo de Lei) PASSO 6: preposições: «in banca», «allo sportello», «sul conto», «con la carta», «con un bonifico». PASSO 7: «il conto» também é a conta do restaurante: o contexto resolve. PASSO 8: tarifas, prazos e condições mudam: leia o contrato e pergunte antes de assinar.', {
+        tag: 'Vida prática',
+        comparacao: 'em português: «sacar», «depositar», «transferir» e «agência». Em italiano: «prelevare», «versare», «fare un bonifico» e «filiale» (ou «agenzia»). Cuidado com «banco»: em italiano, «il banco» é balcão ou bancada; o banco de dinheiro é «la banca».',
+        tabela: [
+          { frase: 'Vorrei aprire un conto.', uso: 'abrir conta' }, { frase: 'Vorrei fare un bonifico.', uso: 'transferência' }, { frase: 'Vorrei prelevare cento euro.', uso: 'sacar' }, { frase: 'Quanto costa la commissione?', uso: 'tarifa' }, { frase: 'Come posso bloccare la carta?', uso: 'cartão perdido' }, { frase: 'Si può pagare con la carta?', uso: 'forma de pagamento' },
+        ],
+        erros: [['Vorrei sacare dei soldi.', 'Vorrei prelevare dei soldi.', '«Sacare» não existe; use «prelevare».'], ['Vorrei fare una transferenza.', 'Vorrei fare un bonifico.', 'Transferência bancária é «bonifico».'], ['Vado al banco a prendere i soldi.', 'Vado in banca a prendere i soldi.', '«Banca» é o banco; «banco» é balcão.'], ['Ho perso la carta, devo bloccarlo.', 'Ho perso la carta, devo bloccarla.', 'O pronome retoma «la carta»: feminino.']],
+      }),
+      producao(8, 'Simule em voz alta uma ida ao banco: você quer abrir uma conta, perguntar a tarifa e saber como bloquear um cartão.'),
+    ]),
+    sessao('S3', 'Celular e internet', [
+      revisao(4, 'Diga em voz alta três pedidos com «vorrei» e dois com «mi serve».'),
+      palavras(5, [
+        ['il cellulare', '', 'o celular', ''], ['la scheda SIM', '', 'o chip (SIM)', ''], ['la ricarica', '', 'a recarga', ''], ['l\'offerta', '', 'o plano / a oferta', ''], ['il campo', '', 'o sinal (de celular)', ''],
+      ]),
+      gramatica(8, 'Vorrei una SIM, non c\'è campo', 'PASSO 1: «cellulare» (ou «telefonino») é o celular: «celular» não existe em italiano. PASSO 2: «una scheda SIM» ou «una SIM». PASSO 3: peça: «Vorrei un\'offerta con molti giga.», «Vorrei fare una ricarica.» PASSO 4: problemas: «Non c\'è campo.», «Il telefono non prende.», «Ho finito i giga.», «Ho il cellulare scarico.» PASSO 5: pergunte: «Qual è la password del Wi-Fi?», «Può mandarmi un messaggio?» PASSO 6: depois de ouvir as condições, o funcionário dirá: «Controlli bene le condizioni.», «Firmi qui.» PASSO 7: mensagens de voz são «vocali».', {
+        tag: 'Vida prática',
+        comparacao: 'o português usa «celular», «chip» e «sinal». O italiano diz «cellulare» (ou «telefonino»), «SIM» e «campo» («non c\'è campo» = estou sem sinal). «Giga» é a palavra usada para o pacote de dados.',
+        tabela: [
+          { palavra: 'cellulare', equivale: 'celular', exemplo: 'Il mio cellulare è nuovo.' }, { palavra: 'scheda SIM', equivale: 'chip', exemplo: 'Vorrei una scheda SIM.' }, { palavra: 'campo', equivale: 'sinal', exemplo: 'Qui non c\'è campo.' }, { palavra: 'scarico', equivale: 'sem bateria', exemplo: 'Ho il telefono scarico.' }, { palavra: 'i giga', equivale: 'dados móveis', exemplo: 'Ho finito i giga.' },
+        ],
+        erros: [['Il mio celular è nuovo.', 'Il mio cellulare è nuovo.', '«Celular» não existe; é «cellulare».'], ['Il mio telefono è scaricato.', 'Il mio telefono è scarico.', 'Sem bateria: adjetivo «scarico».'], ['Vorrei un chip.', 'Vorrei una scheda SIM.', 'Para o cartão do telefone, diga «SIM».'], ['Non ho sinale qui.', 'Non c\'è campo qui.', 'A forma comum é «non c\'è campo».']],
+      }),
+      dialogo(8, 'Una SIM in negozio', 'Camila chegou há pouco à Itália e vai a uma loja de telefonia.', [
+        ['Il commesso', 'Buongiorno, posso aiutarla?', 'Bom dia, posso ajudá-la?'],
+        ['Camila', 'Buongiorno. Sono arrivata da poco in Italia e vorrei una scheda SIM per il mio telefono.', 'Bom dia. Cheguei há pouco à Itália e queria um chip para o meu telefone.'],
+        ['Il commesso', 'Certo. Preferisce un\'offerta con molti giga o con più minuti per chiamare?', 'Claro. A senhora prefere um plano com muitos giga ou com mais minutos para ligar?'],
+        ['Camila', 'Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.', 'Preciso principalmente dos giga, porque uso muito a internet. Ligo pouco.'],
+        ['Il commesso', 'Allora Le consiglio un\'offerta mensile con molti giga. Dovrà compilare questo modulo e firmare qui.', 'Então recomendo um plano mensal com muitos giga. Terá de preencher este formulário e assinar aqui.'],
+        ['Camila', 'Va bene. Quanto costa al mese?', 'Tudo bem. Quanto custa por mês?'],
+        ['Il commesso', 'Il prezzo è scritto sul cartello, ma dipende dall\'offerta. Controlli bene le condizioni prima di firmare.', 'O preço está escrito na placa, mas depende do plano. Confira bem as condições antes de assinar.'],
+        ['Camila', 'Grazie. Un\'ultima domanda: se qui non c\'è campo, che cosa faccio?', 'Obrigada. Uma última pergunta: se aqui não há sinal, o que faço?'],
+        ['Il commesso', 'Può chiamare il servizio clienti: il numero è sul modulo. Oppure venga in negozio.', 'Pode ligar para o atendimento ao cliente: o número está no formulário. Ou venha à loja.'],
+        ['Camila', 'Perfetto. Dove firmo?', 'Perfeito. Onde assino?'],
+      ]),
+      producao(5, 'Diga em voz alta como você pediria um plano de celular e o que você perguntaria antes de assinar.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 59', [
+      revisao(5, 'Releia as frases de repartição, banco e celular e diga uma frase nova de cada.'),
+      exercicios(20, [
+        ouvir('Mi servono due documenti', ['Mi servono due documenti', 'Mi serve due documenti', 'Mi servo due documenti'], 'Mi servono due documenti', 'Concordância com o plural.'),
+        ouvir('Ci vogliono due ore', ['Ci vogliono due ore', 'Ci vuole due ore', 'Ci voglio due ore'], 'Ci vogliono due ore', '«Volerci» no plural.'),
+        ouvir('Compili il modulo e firmi qui', ['Compili il modulo e firmi qui', 'Compila il modulo e firma qui', 'Compilare il modulo e firmare qui'], 'Compili il modulo e firmi qui', 'Imperativo de Lei.'),
+        ditado('Vorrei fare un bonifico', 'Escreva: Vorrei fare un bonifico.'),
+        ditado('Qui non c\'è campo', 'Escreva: Qui non c\'è campo.'),
+        ditado('Dove devo firmare', 'Escreva: Dove devo firmare.'),
+        mc('«Mi servono due moduli» mostra que o verbo concorda com:', ['a coisa necessária', 'quem precisa', 'o funcionário'], 'a coisa necessária', 'Servire: a coisa é o sujeito.'),
+        mc('«Prelevare» significa:', ['sacar', 'depositar', 'abrir conta'], 'sacar', 'Prelievo.'),
+        mc('O que é «il banco» em italiano?', ['o balcão', 'o banco de dinheiro', 'a agência'], 'o balcão', 'O banco é «la banca».'),
+        mc('Como dizer «celular» em italiano?', ['cellulare', 'celular', 'cellula'], 'cellulare', 'Palavra italiana.'),
+        lacuna('Mi ___ un modulo. (preciso de)', ['serve', 'servono', 'servo'], 'serve', 'Um só modulo.'),
+        lacuna('___ il modulo, per favore. (Lei, compilar)', ['Compili', 'Compila', 'Compilare'], 'Compili', 'Imperativo de Lei.'),
+        lacuna('Ho perso la carta: devo ___ . (bloqueá-la)', ['bloccarla', 'bloccarlo', 'bloccare la'], 'bloccarla', 'Pronome feminino.'),
+        lacuna('Vorrei ___ cento euro. (sacar)', ['prelevare', 'sacare', 'versare'], 'prelevare', 'Vocabulário bancário.'),
+        ordem('Ordene: «Vorrei aprire un conto.»', ['Vorrei', 'aprire', 'un', 'conto'], 'Vorrei aprire un conto.', 'Pedido educado.'),
+        ordem('Ordene: «Quanto tempo ci vuole?»', ['Quanto', 'tempo', 'ci', 'vuole'], 'Quanto tempo ci vuole?', 'Volerci.'),
+        livre('Escreva em italiano: Preciso de um formulário. Quanto tempo demora? Queria fazer uma transferência.', 'Mi serve un modulo. Quanto tempo ci vuole? Vorrei fare un bonifico.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre uma situação prática em que você precisaria de ajuda na Itália, usando as frases da aula.'),
+    ]),
+  ],
+});

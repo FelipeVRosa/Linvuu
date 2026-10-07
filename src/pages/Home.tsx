@@ -20,6 +20,7 @@ import en1 from '../../content/idiomas/en/aulas/aula-001.json';
 import ru1 from '../../content/idiomas/ru/aulas/aula-001.json';
 import de1 from '../../content/idiomas/de/aulas/aula-001.json';
 import fr1 from '../../content/idiomas/fr/aulas/aula-001.json';
+import it1 from '../../content/idiomas/it/aulas/aula-001.json';
 
 type Aula = { titulo: string; sessoes: { titulo: string; duracaoMin: number; blocos: { tipo: string; min: number }[] }[] };
 // Frase de amostra de cada curso: a mesma situação (pedir um café) em cada idioma.
@@ -27,6 +28,7 @@ const AMOSTRA: Record<string, { nome: string; frase: string; aula: Aula }> = {
   en: { nome: 'Inglês', frase: 'Hello. A coffee, please.', aula: en1 as Aula },
   ru: { nome: 'Russo', frase: 'Здравствуйте. Мне кофе, пожалуйста.', aula: ru1 as Aula },
   de: { nome: 'Alemão', frase: 'Guten Tag. Einen Kaffee, bitte.', aula: de1 as Aula },
+  it: { nome: 'Italiano', frase: 'Buongiorno. Un caffè, per favore.', aula: it1 as Aula },
   fr: { nome: 'Francês', frase: 'Bonjour. Un café, s’il vous plaît.', aula: fr1 as Aula },
 };
 const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0);
@@ -39,7 +41,7 @@ const FOTOS = [
 ];
 
 // Exercício sem cadastro: a mesma pergunta em cada idioma. A voz usa a gravação, se existir, ou a do navegador.
-const EXERCICIO: Record<string, string> = { en: 'Where is the station?', ru: 'Где вокзал?', de: 'Wo ist der Bahnhof?', fr: 'Où est la gare ?' };
+const EXERCICIO: Record<string, string> = { en: 'Where is the station?', ru: 'Где вокзал?', de: 'Wo ist der Bahnhof?', fr: 'Où est la gare ?', it: 'Dov’è la stazione?' };
 const OPCOES = ['Onde fica a estação?', 'Quanto custa isto?', 'Que horas são?'];
 
 function Experimente({ lang }: { lang: string }) {

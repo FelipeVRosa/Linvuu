@@ -1,0 +1,116 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 35, titulo: 'Trabalho e apresentação profissional', nivel: 'a2',
+  objetivo: "Dizer a profissão e o local de trabalho («sono», «faccio», «lavoro come / in / per»), descrever tarefas e experiência e se apresentar profissionalmente numa entrevista, usando Lei.",
+  nota: "Você se apresenta profissionalmente e fala do seu trabalho. Próxima aula: telefone, convites e como marcar um encontro.",
+  sessoes: [
+    sessao('S1', 'Profissões e local de trabalho', [
+      revisao(5, 'Reserve um quarto em voz alta e peça uma informação sobre o trem (aula 34).'),
+      palavras(8, [
+        ["l'ingegnere", 'lindjenhére', 'o engenheiro', ''], ["l'insegnante", 'linsenhánte', 'o(a) professor(a)', ''], ["l'infermiere", 'linfermiére', 'o enfermeiro', ''], ['il cuoco', 'il kuóko', 'o cozinheiro', ''],
+        ["l'avvocato", 'lavvokáto', 'o advogado', ''], ["l'impiegato", 'limpiegáto', 'o funcionário de escritório', ''], ['la ditta', 'la dítta', 'a empresa', ''], ["l'ufficio", 'luffítcho', 'o escritório', ''],
+      ]),
+      gramatica(12, 'Sono, faccio, lavoro come', "PASSO 1: perguntar: «Che lavoro fa?» (Lei) «Che lavoro fai?» (tu) «Di cosa ti occupi?» PASSO 2: com «essere», a profissão vem SEM artigo: «Sono ingegnere.» «Sono insegnante.» «Sono cuoca.» PASSO 3: se houver adjetivo ou complemento, entra o artigo indefinido: «È un bravo ingegnere.» «Sono un'insegnante di matematica.» PASSO 4: com «fare», o artigo definido aparece: «Faccio l'ingegnere.» «Fa il cuoco.» PASSO 5: com «come», sem artigo: «Lavoro come ingegnere.» PASSO 6: o feminino: -o → -a (cuoco → cuoca, impiegato → impiegata, avvocato → avvocata), -e → -a (infermiere → infermiera), -tore → -trice (attore → attrice, scrittore → scrittrice, direttore → direttrice), -ista e -ante não mudam (il/la dentista, il/la insegnante). Alguns têm formas próprias: professore → professoressa, dottore → dottoressa. PASSO 7: local: «Lavoro in una banca», «in un ospedale», «in una scuola», «in un negozio», «in ufficio», «per una ditta», «presso la ditta Rossi». PASSO 8: horário: «Lavoro a tempo pieno / part-time.» «Lavoro dalle nove alle cinque.» PASSO 9: tempo no cargo (aula 31): «Lavoro qui da tre anni.»", {
+        tag: 'Trabalho',
+        comparacao: "o português também diz «sou engenheiro», sem artigo: aqui os dois idiomas coincidem. O que muda é «fare» (fazer a profissão): «Faccio l'ingegnere» leva artigo definido, algo que não existe em português. Falso amigo: «impiegato» é o funcionário de escritório (não «empregado» em geral). E o brasileiro diz «faço faculdade», mas «facoltà» em italiano é o departamento universitário (aula 35, S2).",
+        tabela: [
+          { masculino: 'il cuoco', feminino: 'la cuoca', sentido: 'cozinheiro(a)' },
+          { masculino: "l'impiegato", feminino: "l'impiegata", sentido: 'funcionário(a) de escritório' },
+          { masculino: "l'infermiere", feminino: "l'infermiera", sentido: 'enfermeiro(a)' },
+          { masculino: "l'attore", feminino: "l'attrice", sentido: 'ator, atriz' },
+          { masculino: 'il professore', feminino: 'la professoressa', sentido: 'professor(a)' },
+          { masculino: 'il dentista', feminino: 'la dentista', sentido: 'dentista (não muda)' },
+        ],
+        erros: [
+          ["Faccio ingegnere.", "Faccio l'ingegnere.", 'Com «fare» vai o artigo definido.'],
+          ['Lavoro come un ingegnere.', 'Lavoro come ingegnere.', 'Depois de «come» a profissão fica sem artigo.'],
+          ['Maria è professore.', 'Maria è professoressa.', 'O feminino de «professore» é «professoressa».'],
+          ['Lavoro a una banca.', 'Lavoro in una banca.', 'Local de trabalho: «in».'],
+        ],
+      }),
+      producao(5, 'Diga em voz alta a sua profissão (ou a que você gostaria de ter), onde trabalha e há quanto tempo.', 'Sono insegnante. Lavoro in una scuola da tre anni.'),
+    ]),
+    sessao('S2', 'Descrever o que você faz', [
+      revisao(4, 'Diga em voz alta cinco profissões, no masculino e no feminino.'),
+      palavras(6, [
+        ['occuparsi di', 'okkupársi di', 'ocupar-se de / cuidar de', ''], ['il capo', 'il kápo', 'o chefe', ''], ['il collega', 'il kollêga', 'o colega', ''], ['la riunione', 'la riuniône', 'a reunião', ''], ['lo stipendio', 'lo stipéndio', 'o salário', ''], ["l'orario", 'lorário', 'o horário', ''],
+      ]),
+      gramatica(12, 'Tarefas, experiência e estudos', "PASSO 1: tarefas: «Mi occupo di + substantivo / infinitivo»: «Mi occupo di vendite.» «Mi occupo di gestire i clienti.» PASSO 2: atividades gerais: «Mi piace + infinitivo» (aula 16), «Devo + infinitivo», «So + infinitivo» (aula 13): «So usare il computer.» «So parlare inglese.» PASSO 3: experiência concluída: passato prossimo + «per» + duração: «Ho lavorato in una banca per cinque anni.» PASSO 4: período em datas: «dal 2018 al 2022», «dal lunedì al venerdì». PASSO 5: situação atual: presente + «da»: «Lavoro qui da due anni.» PASSO 6: situação antiga: imperfetto: «Prima lavoravo a Roma.» PASSO 7: estudos: «Studio medicina all'università.» «Frequento l'università.» «Mi sono laureato in economia.» PASSO 8: procurar trabalho: «Cerco lavoro.» «Sono disoccupato.» «Sto cercando un lavoro come cuoco.» (aula 30)", {
+        tag: 'Trabalho',
+        comparacao: "o português diz «cuido das vendas», «trabalho com vendas»; o italiano usa «mi occupo di vendite» ou «lavoro nelle vendite». O falso amigo mais frequente: «faculdade». Em português é a escola superior; em italiano «facoltà» é só um departamento dentro da universidade (Facoltà di Medicina). Para dizer «faço faculdade», diga «frequento l'università» ou «studio medicina all'università». Também: «laurea» é o diploma de graduação.",
+        tabela: [
+          { estrutura: 'Mi occupo di + subst. / inf.', exemplo: 'Mi occupo di vendite.', sentido: 'Cuido de vendas.' },
+          { estrutura: 'Ho lavorato per + tempo', exemplo: 'Ho lavorato in una banca per cinque anni.', sentido: 'Trabalhei num banco por cinco anos.' },
+          { estrutura: 'Lavoro da + tempo', exemplo: 'Lavoro qui da due anni.', sentido: 'Trabalho aqui há dois anos.' },
+          { estrutura: 'Prima + imperfetto', exemplo: 'Prima lavoravo a Roma.', sentido: 'Antes eu trabalhava em Roma.' },
+          { estrutura: "Studio ... all'università", exemplo: "Studio medicina all'università.", sentido: 'Estudo medicina na universidade.' },
+          { estrutura: 'Sono disoccupato', exemplo: 'Cerco un lavoro come cuoco.', sentido: 'Estou desempregado, procuro trabalho.' },
+        ],
+        erros: [
+          ['Mi occupo da vendite.', 'Mi occupo di vendite.', '«Occuparsi di».'],
+          ['Ho lavorato in una banca da cinque anni. (já acabou)', 'Ho lavorato in una banca per cinque anni.', 'Situação concluída: «per»; «da» é para o que continua.'],
+          ["Faccio la facoltà di medicina.", "Studio medicina all'università.", '«Facoltà» é departamento; para estudar, diga «studio… all\'università».'],
+          ['Prima lavoro a Roma.', 'Prima lavoravo a Roma.', 'Situação passada habitual: imperfetto.'],
+        ],
+      }),
+      producao(8, 'Apresente-se profissionalmente em voz alta durante 1 minuto: o que você faz, onde, há quanto tempo, o que fazia antes e o que estudou.', 'Mi chiamo Ana e sono ingegnere. Lavoro in una ditta da due anni. Prima lavoravo a Milano.'),
+    ]),
+    sessao('S3', 'Apresentação profissional e entrevista (Lei)', [
+      revisao(4, 'Diga em voz alta três frases sobre uma experiência passada de trabalho, com «per» e «da».'),
+      palavras(5, [
+        ['il colloquio', 'il kollókuio', 'a entrevista', ''], ['il curriculum', 'il kurríkulum', 'o currículo', ''], ["l'esperienza", 'lesperiéntsa', 'a experiência', ''], ['il tempo pieno', 'il témpo piêno', 'tempo integral', ''], ['lavorare in squadra', 'lavoráre in skuádra', 'trabalhar em equipe', ''],
+      ]),
+      gramatica(8, 'Apresentação profissional formal', "PASSO 1: abra com o nome, a origem e a situação: «Buongiorno, mi chiamo Camila. Sono brasiliana e vivo a Milano da un anno.» PASSO 2: formação: «Mi sono laureata in economia.» (passato prossimo reflexivo, concorda com quem fala: laureato / laureata). PASSO 3: experiência: «Ho lavorato come analista per tre anni.» PASSO 4: o que busca: «Sto cercando un lavoro come analista.» PASSO 5: qualidades: «Sono una persona precisa e puntuale.» «So lavorare in squadra.» PASSO 6: línguas: «Parlo portoghese e inglese, e abbastanza bene l'italiano.» PASSO 7: disponibilidade: «Sono disponibile da lunedì prossimo.» PASSO 8: o entrevistador usa Lei: «Può parlarmi della Sua esperienza?» «Quando sarebbe disponibile?» O possessivo de Lei, «Sua / suo», costuma ser escrito com maiúscula em textos formais. PASSO 9: encerrar: «La ringrazio per il colloquio.»", {
+        tag: 'Trabalho',
+        comparacao: "em português «me formei em economia» é reflexivo, como o italiano «mi sono laureata». A armadilha é «laurearsi» (formar-se na universidade): «formarsi» existe, mas é mais geral (formação); para a graduação o termo preciso é «laurearsi». Em entrevista, o brasileiro costuma usar «você»; em italiano o tratamento com desconhecidos é Lei («può parlarmi», «la Sua esperienza»), e não «tu».",
+        tabela: [
+          { funcao: 'abertura', italiano: 'Buongiorno, mi chiamo Camila e sono brasiliana.', sentido: 'Bom dia, me chamo Camila e sou brasileira.' },
+          { funcao: 'formação', italiano: 'Mi sono laureata in economia.', sentido: 'Formei-me em economia.' },
+          { funcao: 'experiência', italiano: 'Ho lavorato come analista per tre anni.', sentido: 'Trabalhei como analista por três anos.' },
+          { funcao: 'objetivo', italiano: 'Sto cercando un lavoro come analista.', sentido: 'Estou procurando um trabalho como analista.' },
+          { funcao: 'qualidades', italiano: 'So lavorare in squadra.', sentido: 'Sei trabalhar em equipe.' },
+          { funcao: 'encerramento', italiano: 'La ringrazio per il colloquio.', sentido: 'Agradeço pela entrevista.' },
+        ],
+        erros: [
+          ['Mi ho laureato in economia.', 'Mi sono laureato in economia.', '«Laurearsi» é reflexivo: o auxiliar é «essere».'],
+          ['Può parlarti della tua esperienza?', 'Può parlarmi della Sua esperienza?', 'Em entrevista usa-se Lei, não «tu».'],
+          ['Sono cercando un lavoro.', 'Sto cercando un lavoro.', 'Estar + gerúndio: «stare».'],
+          ['Ho lavorato come analista da tre anni. (já terminou)', 'Ho lavorato come analista per tre anni.', 'Situação concluída: «per».'],
+        ],
+      }),
+      dialogo(8, 'Un colloquio / Uma entrevista', 'Camila faz uma entrevista de trabalho com o diretor de uma empresa.', [
+        ['Il direttore', 'Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?', 'Bom dia, senhora. Sente-se. Pode me falar da sua experiência?'],
+        ['Camila', 'Buongiorno. Mi sono laureata in economia a San Paolo e ho lavorato per tre anni in una banca.', 'Bom dia. Formei-me em economia em São Paulo e trabalhei por três anos num banco.'],
+        ['Il direttore', 'E adesso che cosa fa? Vive in Italia?', 'E agora o que a senhora faz? Mora na Itália?'],
+        ['Camila', 'Vivo a Milano da un anno e sto cercando un lavoro come analista. Parlo bene l\'inglese e abbastanza bene l\'italiano.', 'Moro em Milão há um ano e estou procurando um trabalho como analista. Falo bem inglês e razoavelmente bem italiano.'],
+        ['Il direttore', 'Sa lavorare in squadra?', 'Sabe trabalhar em equipe?'],
+        ['Camila', 'Sì, mi piace lavorare con i colleghi. Sono precisa e puntuale. Sono disponibile da lunedì prossimo. La ringrazio per il colloquio.', 'Sim, gosto de trabalhar com os colegas. Sou precisa e pontual. Estou disponível a partir de segunda-feira. Agradeço pela entrevista.'],
+      ]),
+      producao(5, 'Simule em voz alta os primeiros 30 segundos de uma entrevista: nome, origem, formação, experiência e o que você busca.', 'Buongiorno, mi chiamo Pedro. Mi sono laureato in ingegneria e ho lavorato per due anni in una ditta.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 35', [
+      revisao(5, 'Apresente-se profissionalmente em voz alta em 30 segundos.'),
+      exercicios(20, [
+        ouvir('Sono insegnante', ['Sono insegnante', 'Faccio l\'insegnante', 'Lavoro come insegnante'], 'Sono insegnante', 'Ouça: sem artigo.'),
+        ouvir('Lavoro in una banca da tre anni', ['Lavoro in una banca da tre anni', 'Ho lavorato in una banca per tre anni', 'Lavorerò in una banca fra tre anni'], 'Lavoro in una banca da tre anni', 'Ouça «da tre anni».'),
+        ouvir('Mi occupo di vendite', ['Mi occupo di vendite', 'Mi occupo da vendite', 'Mi piacciono le vendite'], 'Mi occupo di vendite', 'Ouça «occuparsi di».'),
+        ditado('Sto cercando un lavoro', 'Escreva: Sto cercando un lavoro.'),
+        ditado('Mi sono laureata in economia', 'Escreva: Mi sono laureata in economia.'),
+        ditado('So lavorare in squadra', 'Escreva: So lavorare in squadra.'),
+        mc('Qual frase está correta?', ['Sono ingegnere.', 'Sono il ingegnere.', 'Faccio ingegnere.'], 'Sono ingegnere.', 'Profissão sem artigo com «essere».'),
+        mc('Feminino de «professore»:', ['professoressa', 'professora', 'professorice'], 'professoressa', 'Forma própria do feminino.'),
+        mc('«Faculdade» (estudar na universidade):', ['studio all\'università', 'faccio la facoltà', 'sono alla facoltà'], 'studio all\'università', '«Facoltà» é departamento.'),
+        mc('Em entrevista com o diretor, o tratamento correto é:', ['Lei', 'tu', 'voi'], 'Lei', 'Formal: Lei.'),
+        lacuna('Faccio ___ cuoco.', ['il', 'un', 'lo'], 'il', 'Com «fare» vai o artigo definido.'),
+        lacuna('Lavoro ___ una banca.', ['in', 'a', 'da'], 'in', 'Local de trabalho: in.'),
+        lacuna('Ho lavorato lì ___ cinque anni. (já acabou)', ['per', 'da', 'fa'], 'per', 'Duração concluída.'),
+        lacuna('Mi occupo ___ vendite.', ['di', 'da', 'a'], 'di', '«Occuparsi di».'),
+        ordem('Ordene: «Lavoro come ingegnere in una ditta.»', ['Lavoro', 'come', 'ingegnere', 'in', 'una', 'ditta'], 'Lavoro come ingegnere in una ditta.', 'Come + profissão sem artigo.'),
+        ordem('Ordene: «Mi sono laureata in economia.»', ['Mi', 'sono', 'laureata', 'in', 'economia'], 'Mi sono laureata in economia.', 'Passato prossimo reflexivo.'),
+        livre('Escreva em italiano: Sou engenheiro. Trabalho numa empresa há dois anos. Antes eu trabalhava em Roma. Estou procurando um trabalho como professor.', 'Sono ingegnere. Lavoro in una ditta da due anni. Prima lavoravo a Roma. Sto cercando un lavoro come professore.'),
+      ]),
+      producao(5, 'Fale 1 minuto: apresente-se numa conferência, dizendo profissão, empresa, tarefas e um objetivo profissional.'),
+    ]),
+  ],
+});

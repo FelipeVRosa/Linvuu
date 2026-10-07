@@ -3,28 +3,195 @@
   "dia": 26,
   "fase": 3,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Rotina da tarde e da noite",
-  "objetivo": "Narrar o resto do dia com horários.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Família e possessivos: Os possessivos",
+  "objetivo": "Aula 7, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 7,
+    "titulo": "Família e possessivos",
+    "objetivo": "Nomear os membros da família, distinguir «parenti» (parentes) de «genitori» (pais), usar os possessivos com o artigo certo (e sem artigo com a família no singular) e falar da própria família.",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Os possessivos",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "il mio libro",
+            "translit": "il mío líbro",
+            "pt": "o meu livro",
+            "en": "",
+            "audio": "il mio libro"
+          },
+          {
+            "ru": "la mia casa",
+            "translit": "la mía káza",
+            "pt": "a minha casa",
+            "en": "",
+            "audio": "la mia casa"
+          },
+          {
+            "ru": "i miei amici",
+            "translit": "i miéi amítchi",
+            "pt": "os meus amigos",
+            "en": "",
+            "audio": "i miei amici"
+          },
+          {
+            "ru": "le mie amiche",
+            "translit": "le míe amíke",
+            "pt": "as minhas amigas",
+            "en": "",
+            "audio": "le mie amiche"
+          },
+          {
+            "ru": "di chi è?",
+            "translit": "di ki é",
+            "pt": "de quem é?",
+            "en": "",
+            "audio": "di chi è?"
+          },
+          {
+            "ru": "è mio",
+            "translit": "é mío",
+            "pt": "é meu",
+            "en": "",
+            "audio": "è mio"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Possessivos: mio, tuo, suo, nostro, vostro, loro",
+        "explicacao": "PASSO 1: o possessivo italiano concorda com o objeto possuído, e não com o dono: «il mio libro» (livro é masculino), «la mia casa» (casa é feminina), «i miei libri», «le mie case». Quem fala é homem ou mulher, tanto faz. PASSO 2: as formas são: «mio, mia, miei, mie», «tuo, tua, tuoi, tue», «suo, sua, suoi, sue», «nostro, nostra, nostri, nostre», «vostro, vostra, vostri, vostre» e «loro» (nunca muda). PASSO 3: o possessivo normalmente leva artigo definido: «il mio libro», «la tua casa», «i suoi amici», «le nostre amiche». PASSO 4: exceção importante: com parentes no singular o artigo se omite: «mio fratello», «tua sorella», «sua madre», «nostro zio». Com parentes no plural, o artigo volta: «i miei fratelli», «le tue sorelle». PASSO 5: «loro» sempre leva artigo, mesmo com a família no singular: «il loro fratello», «la loro madre». Também fica o artigo se há adjetivo ou diminutivo: «la mia cara sorella», «la mia sorellina». PASSO 6: com «mamma» e «papà», o artigo costuma ficar: «la mia mamma», «il mio papà». Com «nonno» e «nonna», as duas formas existem: «mia nonna» e «la mia nonna». PASSO 7: «suo» pode ser «dele», «dela» e «do senhor / da senhora»; o contexto decide. Para evitar dúvida, diga «il libro di Marco». PASSO 8: sem substantivo, o possessivo funciona como pronome: «È mio», «È tua?», «Sono nostri». E para perguntar a quem pertence: «Di chi è?» (singular), «Di chi sono?» (plural).",
+        "comparacao": "em português o artigo é opcional («meu livro» ou «o meu livro»). O italiano exige o artigo («il mio libro»), mas o dispensa com família no singular («mio fratello»). Por outro lado, o português tem «seu» ambíguo (você, ele, ela), e o italiano também: «suo» pode ser dele, dela ou do senhor.",
+        "tabela": [
+          {
+            "pessoa": "io",
+            "masculino": "mio",
+            "feminino": "mia",
+            "masculino_plural": "miei",
+            "feminino_plural": "mie"
+          },
+          {
+            "pessoa": "tu",
+            "masculino": "tuo",
+            "feminino": "tua",
+            "masculino_plural": "tuoi",
+            "feminino_plural": "tue"
+          },
+          {
+            "pessoa": "lui / lei / Lei",
+            "masculino": "suo",
+            "feminino": "sua",
+            "masculino_plural": "suoi",
+            "feminino_plural": "sue"
+          },
+          {
+            "pessoa": "noi",
+            "masculino": "nostro",
+            "feminino": "nostra",
+            "masculino_plural": "nostri",
+            "feminino_plural": "nostre"
+          },
+          {
+            "pessoa": "voi",
+            "masculino": "vostro",
+            "feminino": "vostra",
+            "masculino_plural": "vostri",
+            "feminino_plural": "vostre"
+          },
+          {
+            "pessoa": "loro",
+            "masculino": "loro",
+            "feminino": "loro",
+            "masculino_plural": "loro",
+            "feminino_plural": "loro"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Mio libro è qui.",
+            "certo": "Il mio libro è qui.",
+            "motivo": "Com coisas, o possessivo leva artigo."
+          },
+          {
+            "errado": "La mio casa è grande.",
+            "certo": "La mia casa è grande.",
+            "motivo": "O possessivo concorda com «casa», feminina."
+          },
+          {
+            "errado": "Il mio fratello è alto.",
+            "certo": "Mio fratello è alto.",
+            "motivo": "Com um parente no singular, o artigo se omite."
+          },
+          {
+            "errado": "I suo amici sono simpatici.",
+            "certo": "I suoi amici sono simpatici.",
+            "motivo": "Plural masculino: «suoi»."
+          }
+        ],
+        "tag": "Possessivos"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "Una foto di famiglia / Uma foto de família",
+        "contexto": "Giulia mostra uma foto a Marco.",
+        "linhas": [
+          {
+            "personagem": "Giulia",
+            "ru": "— Guarda, questa è la mia famiglia.",
+            "pt": "— Olhe, esta é a minha família.",
+            "audio": "Guarda, questa è la mia famiglia."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Chi è lui?",
+            "pt": "— Quem é ele?",
+            "audio": "Chi è lui?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— È mio padre. Si chiama Paolo. E lei è mia madre, Anna.",
+            "pt": "— É meu pai. Ele se chama Paolo. E ela é minha mãe, Anna.",
+            "audio": "È mio padre. Si chiama Paolo. E lei è mia madre, Anna."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— E questi chi sono?",
+            "pt": "— E esses, quem são?",
+            "audio": "E questi chi sono?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Sono i miei fratelli, Luca e Sara.",
+            "pt": "— São os meus irmãos, Luca e Sara.",
+            "audio": "Sono i miei fratelli, Luca e Sara."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— La tua famiglia è grande!",
+            "pt": "— A sua família é grande!",
+            "audio": "La tua famiglia è grande!"
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Diga o masculino, o feminino e o plural de «cugino», «zio» e «nonno». Qual é a diferença entre «parenti» e «genitori»?"
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  },
+  "origem": "content/idiomas/it/aulas/aula-007.json",
   "responsavel": null
 }

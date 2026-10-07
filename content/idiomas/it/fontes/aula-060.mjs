@@ -1,0 +1,93 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 60, titulo: 'Estratégias: parafrasear e pedir ajuda', nivel: 'b1',
+  objetivo: 'Pedir repetição e esclarecimento, confirmar o que entendeu, contornar uma palavra que falta e usar as semelhanças e os falsos amigos entre português e italiano.',
+  nota: 'Você agora tem ferramentas para não travar quando falta uma palavra ou quando você não entende. Próxima aula: revisão dos tempos do B1.',
+  sessoes: [
+    sessao('S1', 'Pedir ajuda e confirmar', [
+      revisao(5, 'Diga em voz alta cinco perguntas de sala de aula, por exemplo: «Come si dice… in italiano?», «Che cosa significa…?»'),
+      palavras(8, [
+        ['ripetere', '', 'repetir', ''], ['chiarire', '', 'esclarecer', ''], ['intendere', '', 'querer dizer / entender', ''], ['lentamente', '', 'devagar', ''], ['più piano', '', 'mais devagar / mais baixo', ''], ['cioè', 'tchoé', 'ou seja', ''], ['un esempio', '', 'um exemplo', ''], ['la parola', '', 'a palavra', ''],
+      ]),
+      gramatica(12, 'Può ripetere? Se ho capito bene…', 'PASSO 1: peça repetição: «Può ripetere, per favore?» (com «Lei»), «Puoi ripetere?» (com «tu»). PASSO 2: peça mais clareza: «Può parlare più lentamente?», «Può spiegarmi meglio?», «Può farmi un esempio?» PASSO 3: pergunte o significado: «Che cosa significa…?», «Che cosa vuol dire…?», «Come si dice… in italiano?» PASSO 4: diga o que não entendeu: «Non ho capito la parola…», «Non ho sentito bene.» PASSO 5: confirme: «Se ho capito bene, Lei dice che…», «Mi sembra di capire che…» (com «di» + infinitivo), «Intende dire che…?» PASSO 6: o imperativo de «Lei» usa a forma do congiuntivo: «Ripeta, per favore.», «Parli più lentamente.», «Mi spieghi.» PASSO 7: com amigos, o «tu»: «Ripeti», «parla più piano», «spiegami». PASSO 8: não pense que pedir ajuda é fraqueza: é o que usa quem aprende bem.', {
+        tag: 'Estratégias',
+        comparacao: 'em português, o pedido de repetição é simples: «pode repetir?». O italiano distingue «tu» e «Lei» também aqui: «puoi ripetere?» entre amigos; «può ripetere?» com um desconhecido. Para confirmar, o passato prossimo faz parte da fórmula: «Se ho capito bene», e não «se entendo bem».',
+        tabela: [
+          { objetivo: 'repetição', lei: 'Può ripetere, per favore?', tu: 'Puoi ripetere?' },
+          { objetivo: 'mais devagar', lei: 'Parli più lentamente, per favore.', tu: 'Parla più piano, per favore.' },
+          { objetivo: 'significado', lei: 'Che cosa significa questa parola?', tu: 'Che cosa vuol dire questa parola?' },
+          { objetivo: 'exemplo', lei: 'Può farmi un esempio?', tu: 'Mi fai un esempio?' },
+          { objetivo: 'confirmar', lei: 'Se ho capito bene, Lei dice che…', tu: 'Se ho capito bene, dici che…' },
+        ],
+        erros: [['Parla più lentamente, signora.', 'Parli più lentamente, signora.', 'Com «Lei», imperativo na forma do congiuntivo.'], ['Non ho capito che cosa hai detto, può ripetere?', 'Non ho capito che cosa ha detto, può ripetere?', 'Não misture «tu» e «Lei».'], ['Se capisco bene, vuoi dire che…', 'Se ho capito bene, vuoi dire che…', 'A fórmula fixa usa o passato prossimo.'], ['Puoi ripetere, signor Rossi?', 'Può ripetere, signor Rossi?', 'Com «signor Rossi», use «Lei».']],
+      }),
+      producao(5, 'Simule em voz alta uma conversa em que você não entende e pede, em quatro frases diferentes, repetição, explicação e confirmação.'),
+    ]),
+    sessao('S2', 'Quando falta a palavra: parafrasear', [
+      revisao(4, 'Peça em voz alta repetição, com «Lei» e com «tu», cinco vezes com variações.'),
+      palavras(6, [
+        ['ovvero', '', 'ou seja', ''], ['in altre parole', '', 'em outras palavras', ''], ['una specie di', '', 'uma espécie de', ''], ['serve a', '', 'serve para', ''], ['il contrario', '', 'o contrário', ''], ['mi sfugge', '', 'me escapa', ''],
+      ]),
+      gramatica(12, 'È una cosa che serve a…', 'PASSO 1: quando falta uma palavra, descreva: o que é, para que serve, onde se encontra. PASSO 2: «È una cosa che serve a + infinitivo»: «È una cosa che serve ad aprire le bottiglie.» («ad» antes de vogal) PASSO 3: onde se encontra, com «si»: «È un posto dove si compra il pane.» PASSO 4: com preposição, use «con cui», «in cui» (aula 52): «È un oggetto con cui si taglia la carta.» PASSO 5: aproximações: «una specie di», «è tipo», «qualcosa come», «è il contrario di caldo». PASSO 6: reformulação: «cioè», «ovvero», «in altre parole». PASSO 7: ganhe tempo: «Come si dice…?», «Mi sfugge la parola.», «Non mi viene in mente.», «Ce l\'ho sulla punta della lingua.» PASSO 8: depois peça ao interlocutor: «Come si chiama quella cosa che serve a…?»', {
+        tag: 'Estratégias',
+        comparacao: 'o português usa «aquilo que serve para…». O italiano põe o verbo «servire a» + infinitivo (ou «serve per» na fala) e usa «si» para o geral: «un posto dove si compra…». Descrever com calma, com palavras simples, costuma bastar para ser entendido.',
+        tabela: [
+          { estrategia: 'para que serve', frase: 'È una cosa che serve ad aprire le bottiglie.', palavra: 'il cavatappi' },
+          { estrategia: 'onde se encontra', frase: 'È un posto dove si compra il pane.', palavra: 'il panificio' },
+          { estrategia: 'com que se faz', frase: 'È un oggetto con cui si taglia la carta.', palavra: 'le forbici' },
+          { estrategia: 'contrário', frase: 'È il contrario di caldo.', palavra: 'freddo' },
+          { estrategia: 'aproximação', frase: 'È una specie di borsa per i libri.', palavra: 'lo zaino' },
+          { estrategia: 'pedir ao outro', frase: 'Come si chiama quella cosa che serve a…?', palavra: '—' },
+        ],
+        erros: [['Un posto dove compra il pane.', 'Un posto dove si compra il pane.', 'Para o geral, use o «si impersonale».'], ['È una cosa per che si taglia.', 'È una cosa con cui si taglia.', 'Preposição + «cui».'], ['Ce l\'ho sulla lingua.', 'Ce l\'ho sulla punta della lingua.', 'A expressão inclui «punta».'], ['Come si chiama quel cosa?', 'Come si chiama quella cosa?', '«Cosa» é feminino.']],
+      }),
+      producao(8, 'Escolha cinco objetos ou lugares e descreva cada um em voz alta sem dizer o nome, como se tivesse esquecido a palavra.'),
+    ]),
+    sessao('S3', 'Semelhanças e falsos amigos', [
+      revisao(4, 'Diga em voz alta cinco formas de pedir ajuda quando falta uma palavra.'),
+      palavras(5, [
+        ['assomigliare', '', 'parecer-se', ''], ['il falso amico', '', 'o falso cognato', ''], ['il quaderno', '', 'o caderno', ''], ['scoprire', '', 'descobrir', ''], ['in effetti', '', 'de fato', ''],
+      ]),
+      gramatica(8, 'Palavras parecidas e armadilhas', 'PASSO 1: muitas terminações coincidem: -ção/-zione (informazione), -dade/-tà (città, università, qualità), -dor/-tore (direttore), -mente/-mente (finalmente). PASSO 2: certos sons mudam de modo regular: «ch» do português vira «chi» ou «pi»: chave/chiave, cheio/pieno, chamar/chiamare; «pl» vira «pi»: plano/piano. PASSO 3: aprenda famílias de palavras: lavorare, lavoro, lavoratore. PASSO 4: tenha uma lista pessoal de falsos amigos: «burro» = manteiga, «caldo» = quente, «camera» = quarto, «cena» = jantar, «salire» = subir, «squisito» = delicioso, «cantina» = adega ou porão (não lanchonete), «eventualmente» = se for o caso. PASSO 5: «pronto» ao telefone é «alô»; «pronto» como adjetivo é «pronto, preparado». PASSO 6: anote cada erro e a forma certa num caderno.', {
+        tag: 'Estratégias',
+        comparacao: 'o italiano é a língua mais próxima do português depois do espanhol, mas isso engana: palavras iguais podem ter outro sentido. «Salire» não é sair (é subir); «cantina» não é lanchonete (é adega ou porão); «caldo» não é frio.',
+        tabela: [
+          { italiano: 'burro', parece: 'burro (animal)', significa: 'manteiga' },
+          { italiano: 'caldo', parece: 'caldo', significa: 'quente' },
+          { italiano: 'camera', parece: 'câmera', significa: 'quarto' },
+          { italiano: 'cena', parece: 'cena', significa: 'jantar' },
+          { italiano: 'salire', parece: 'sair', significa: 'subir' },
+          { italiano: 'squisito', parece: 'esquisito', significa: 'delicioso' },
+          { italiano: 'cantina', parece: 'cantina (lanchonete)', significa: 'adega, porão' },
+        ],
+        erros: [['Sono salito dall\'autobus alla stazione.', 'Sono sceso dall\'autobus alla stazione.', '«Salire» é subir; descer é «scendere».'], ['Sono caldo.', 'Ho caldo.', 'Sensações de temperatura usam «avere».'], ['Ho mangiato la cena a mezzogiorno.', 'Ho mangiato il pranzo a mezzogiorno.', '«Cena» é jantar; almoço é «pranzo».'], ['Vado in cantina a mangiare un panino.', 'Vado alla mensa a mangiare un panino.', '«Cantina» é adega ou porão; o refeitório é «mensa» (e a lanchonete, «bar»).']],
+      }),
+      texto(8, 'Come imparo l\'italiano', 'Quando ho cominciato a studiare italiano, pensavo che fosse facile, perché assomiglia al portoghese. In effetti molte parole sono quasi uguali: informazione, università, qualità. Ma presto ho scoperto i falsi amici: una volta ho chiesto dov\'era la «cantina» della scuola per mangiare un panino, ma la cantina è il posto dove si conserva il vino! Ora uso un quaderno dove scrivo gli errori e le parole nuove. Quando non capisco, chiedo: «Può ripetere più lentamente?» oppure «Che cosa significa?». Se non trovo una parola, la spiego con altre parole. Così parlo di più e mi sento più sicuro.', 'Quando comecei a estudar italiano, achava que era fácil, porque se parece com o português. De fato, muitas palavras são quase iguais: informazione, università, qualità. Mas logo descobri os falsos cognatos: uma vez perguntei onde ficava a «cantina» da escola para comer um sanduíche, mas a «cantina» é o lugar onde se guarda o vinho! Agora uso um caderno onde escrevo os erros e as palavras novas. Quando não entendo, pergunto: «Pode repetir mais devagar?» ou «O que significa?». Se não encontro uma palavra, explico com outras palavras. Assim falo mais e me sinto mais seguro.', [['Por que o autor achava o italiano fácil?', 'Porque se parece com o português.'], ['Qual foi o erro com «cantina»?', 'Achou que era a lanchonete da escola, mas «cantina» é a adega ou o porão.'], ['O que o autor faz quando não encontra uma palavra?', 'Explica com outras palavras.']]),
+      producao(5, 'Diga em voz alta três falsos amigos que você já conhecia e três novos desta aula, cada um numa frase.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 60', [
+      revisao(5, 'Releia as frases de pedir ajuda e as de parafrasear e diga uma frase nova de cada tipo.'),
+      exercicios(20, [
+        ouvir('Può ripetere, per favore', ['Può ripetere, per favore', 'Puoi ripetere, per favore', 'Posso ripetere, per favore'], 'Può ripetere, per favore', 'Pedido com «Lei».'),
+        ouvir('Se ho capito bene, lei dice che è tardi', ['Se ho capito bene, lei dice che è tardi', 'Se capisco bene, lei dice che è tardi', 'Se ho capito bene, lei dice che era tardi'], 'Se ho capito bene, lei dice che è tardi', 'Fórmula de confirmação.'),
+        ouvir('È un posto dove si compra il pane', ['È un posto dove si compra il pane', 'È un posto dove compra il pane', 'È un posto dove si comprano il pane'], 'È un posto dove si compra il pane', 'Si impersonale.'),
+        ditado('Che cosa significa questa parola', 'Escreva: Che cosa significa questa parola.'),
+        ditado('Mi sfugge la parola', 'Escreva: Mi sfugge la parola.'),
+        ditado('Ce l\'ho sulla punta della lingua', 'Escreva: Ce l\'ho sulla punta della lingua.'),
+        mc('«Camera» em italiano é:', ['quarto', 'câmera fotográfica', 'sala'], 'quarto', 'Falso amigo.'),
+        mc('«Salire» significa:', ['subir', 'sair', 'descer'], 'subir', 'Sair é «uscire».'),
+        mc('Para pedir devagar a um desconhecido:', ['Parli più lentamente.', 'Parla più lentamente.', 'Parlare lentamente.'], 'Parli più lentamente.', 'Imperativo de Lei.'),
+        mc('Para descrever um lugar onde se compra pão:', ['un posto dove si compra il pane', 'un posto dove compra il pane', 'un posto che si compra il pane'], 'un posto dove si compra il pane', 'Si impersonale.'),
+        lacuna('È una cosa che serve ___ aprire le bottiglie. (antes de vogal)', ['ad', 'a', 'di'], 'ad', '«Serve ad aprire».'),
+        lacuna('È un oggetto ___ cui si taglia la carta.', ['con', 'che', 'a'], 'con', 'Preposição + «cui».'),
+        lacuna('Mi ___ di capire che Lei ha cambiato idea.', ['sembra', 'sembro', 'sembrano'], 'sembra', '«Mi sembra di capire».'),
+        lacuna('I miei ___ sono Marco e Anna. (meus pais)', ['genitori', 'parenti', 'cugini'], 'genitori', '«Parenti» são todos os parentes.'),
+        ordem('Ordene: «Può parlare più lentamente?»', ['Può', 'parlare', 'più', 'lentamente'], 'Può parlare più lentamente?', 'Pedido educado.'),
+        ordem('Ordene: «Come si dice in italiano?»', ['Come', 'si', 'dice', 'in', 'italiano'], 'Come si dice in italiano?', 'Pergunta útil.'),
+        livre('Escreva em italiano: Pode repetir, por favor? Não entendi a palavra. É um lugar onde se compra o pão.', 'Può ripetere, per favore? Non ho capito la parola. È un posto dove si compra il pane.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre um assunto e, quando faltar uma palavra, use pelo menos duas estratégias da aula.'),
+    ]),
+  ],
+});

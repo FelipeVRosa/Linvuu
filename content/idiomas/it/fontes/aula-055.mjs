@@ -1,0 +1,92 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 55, titulo: 'E-mail e carta formais', nivel: 'b1',
+  objetivo: 'Escrever e-mails e cartas formais em italiano: saudação, assunto, pedido com cortesia, anexos e despedida, usando «Lei» e o condicional.',
+  nota: 'Você agora escreve uma mensagem formal clara e educada para uma empresa, uma escola ou um escritório. Próxima aula: trabalho e entrevista.',
+  sessoes: [
+    sessao('S1', 'Estrutura e fórmulas do e-mail formal', [
+      revisao(5, 'Diga em voz alta, com «Lei», cinco frases para pedir informações a um desconhecido (aula 29): «Mi può dire…?», «Vorrei sapere…».'),
+      palavras(8, [
+        ['l\'oggetto', '', 'o assunto', ''], ['il destinatario', '', 'o destinatário', ''], ['il mittente', '', 'o remetente', ''], ['in allegato', '', 'em anexo', ''], ['la richiesta', '', 'o pedido', ''], ['la risposta', '', 'a resposta', ''], ['distinti saluti', '', 'atenciosamente (mais formal)', ''], ['gentile', '', 'prezado(a)', ''],
+      ]),
+      gramatica(12, 'Come iniziare e chiudere', 'PASSO 1: o e-mail formal tem cinco partes: oggetto (assunto curto), saudação, motivo, pedido e despedida. PASSO 2: saudação a uma pessoa: «Gentile Signora Rossi,», «Gentile dottor Bianchi,» (dottore e dottoressa são títulos de quem tem graduação). Mais solene: «Egregio Signor Bianchi,». PASSO 3: a um grupo ou empresa: «Gentili Signori,», «Spettabile ditta,» ou só «Buongiorno,» em e-mails de rotina. PASSO 4: abra com o motivo: «Le scrivo per…», «Vorrei avere informazioni su…», «In riferimento alla Sua email del 3 marzo…» PASSO 5: use «Lei», e na escrita muito formal as formas de cortesia costumam vir com maiúscula: «Le», «La», «Suo». PASSO 6: anexos: «In allegato trova il mio curriculum.», «Allego il modulo compilato.» PASSO 7: feche com agradecimento e disponibilidade: «La ringrazio per la cortese attenzione e resto a disposizione per qualsiasi chiarimento.» PASSO 8: despedida: «Cordiali saluti» (padrão) ou «Distinti saluti» (mais formal), seguida do nome. PASSO 9: não misture «tu» e «Lei» na mesma mensagem.', {
+        tag: 'Escrita formal',
+        comparacao: 'o português usa «Prezado(a)» e «Atenciosamente». O italiano usa «Gentile» (nunca «Caro» com desconhecidos) e «Cordiali saluti». Em português é comum dizer só «senhor»; em italiano o normal é «Signor Rossi», com o sobrenome, ou o título («dottor Bianchi»).',
+        tabela: [
+          { parte: 'assunto', exemplo: 'Oggetto: Richiesta di informazioni', nota: 'curto e claro' },
+          { parte: 'saudação', exemplo: 'Gentile Signora Rossi,', nota: 'com vírgula' },
+          { parte: 'motivo', exemplo: 'Le scrivo per avere informazioni sul corso.', nota: '«Lei» de cortesia' },
+          { parte: 'anexo', exemplo: 'In allegato trova il mio curriculum.', nota: 'ou «Allego…»' },
+          { parte: 'fechamento', exemplo: 'La ringrazio per la cortese attenzione.', nota: 'agradecer' },
+          { parte: 'despedida', exemplo: 'Cordiali saluti, Ana Souza', nota: 'ou «Distinti saluti»' },
+        ],
+        erros: [['Caro Signor Rossi,', 'Gentile Signor Rossi,', '«Caro» é para amigos; com desconhecidos, «Gentile».'], ['Ti scrivo per chiedere informazioni.', 'Le scrivo per chiedere informazioni.', 'Em e-mail formal, use «Lei».'], ['Gentile Signora Rossi, grazie per la tua email.', 'Gentile Signora Rossi, grazie per la Sua email.', 'Não misture «tu» e «Lei».'], ['Cari saluti, Ana', 'Cordiali saluti, Ana', 'A fórmula é «cordiali saluti».']],
+      }),
+      producao(5, 'Escreva (ou diga em voz alta) a abertura e o fechamento de um e-mail formal para a secretaria de uma escola de italiano.'),
+    ]),
+    sessao('S2', 'Pedir, responder e reclamar com cortesia', [
+      revisao(4, 'Diga em voz alta três saudações e três despedidas formais, sem olhar a tabela.'),
+      palavras(6, [
+        ['inviare', '', 'enviar', ''], ['confermare', '', 'confirmar', ''], ['disdire', '', 'cancelar (reserva, contrato)', ''], ['il disagio', '', 'o transtorno', ''], ['il rimborso', '', 'o reembolso', ''], ['cortesemente', '', 'gentilmente', ''],
+      ]),
+      gramatica(12, 'Vorrei, potrebbe, le sarei grato', 'PASSO 1: pedidos básicos com o condicional (aula 29): «Vorrei sapere…», «Potrebbe inviarmi…?», «Mi servirebbe…» PASSO 2: pedido muito educado: «Le sarei grato / grata se potesse…» (condicional + congiuntivo imperfetto). Exemplo: «Le sarei grata se potesse inviarmi il programma.» PASSO 3: com a pessoa como sujeito do segundo verbo: «Vorrei che mi inviasse…» («vorrei che» + congiuntivo imperfetto). PASSO 4: pedido direto, mas cortês: «Le chiedo di inviarmi…» («chiedere» + «di» + infinitivo, sem «che»). PASSO 5: prazo: «entro venerdì» (sem «di»), «entro il 10 marzo». PASSO 6: responder: «La ringrazio per la Sua email.», «Come richiesto, in allegato trova…» PASSO 7: recusar ou dar má notícia: «Purtroppo non è possibile…», «Mi dispiace, ma…» PASSO 8: reclamar sem agressividade: «Le scrivo per segnalare un problema.», «Mi scuso per il disagio» (quando você é quem pede desculpas), «Chiedo un rimborso.»', {
+        tag: 'Escrita formal',
+        comparacao: 'o português diz «gostaria que você me enviasse» e «ficarei grato se puder enviar». O italiano usa o mesmo mecanismo, mas o verbo seguinte precisa estar no congiuntivo imperfetto: «vorrei che mi inviasse», «le sarei grato se potesse». Um erro de brasileiros é usar o indicativo («se pode»).',
+        tabela: [
+          { formula: 'Vorrei sapere…', uso: 'pedir informação', exemplo: 'Vorrei sapere quando inizia il corso.' },
+          { formula: 'Potrebbe inviarmi…?', uso: 'pedir que envie', exemplo: 'Potrebbe inviarmi il programma?' },
+          { formula: 'Le sarei grata se potesse…', uso: 'pedido muito educado', exemplo: 'Le sarei grata se potesse rispondere presto.' },
+          { formula: 'Vorrei che mi inviasse…', uso: 'pedir a outra pessoa', exemplo: 'Vorrei che mi inviasse il modulo.' },
+          { formula: 'Le chiedo di…', uso: 'pedido direto', exemplo: 'Le chiedo di confermare la prenotazione.' },
+          { formula: 'entro + data', uso: 'prazo', exemplo: 'Mi risponda entro venerdì.' },
+        ],
+        erros: [['Le sarei grato se può rispondere.', 'Le sarei grato se potesse rispondere.', 'Depois de «se» em pedido educado: congiuntivo imperfetto.'], ['Vorrei che mi invii il modulo.', 'Vorrei che mi inviasse il modulo.', '«Vorrei che» pede congiuntivo imperfetto.'], ['Mi risponda entro di venerdì.', 'Mi risponda entro venerdì.', '«Entro» não leva «di».'], ['Le chiedo che inviare il file.', 'Le chiedo di inviare il file.', '«Chiedere di» + infinitivo.']],
+      }),
+      producao(8, 'Escreva ou diga em voz alta três pedidos formais, um deles com «Le sarei grato/a se potesse…» e outro com «Vorrei che mi inviasse…».'),
+    ]),
+    sessao('S3', 'Registro, títulos e linguagem impessoal', [
+      revisao(4, 'Transforme em voz alta «Ciao Marta, ti scrivo per…» em uma mensagem formal.'),
+      palavras(5, [
+        ['la segreteria', '', 'a secretaria', ''], ['l\'iscrizione', '', 'a inscrição', ''], ['il modulo', '', 'o formulário', ''], ['la disponibilità', '', 'a disponibilidade', ''], ['il programma', '', 'o programa', ''],
+      ]),
+      gramatica(8, 'Si prega di, si comunica che', 'PASSO 1: avisos formais usam o «si» impessoal (aula 51): «Si prega di confermare la presenza.», «Si comunica che il corso inizia lunedì.» PASSO 2: compare os registros: informal «Ciao, mi mandi il file?»; formal «Buongiorno, potrebbe inviarmi il file?» PASSO 3: títulos: «Gentile dottoressa Conti», «Gentile professor Neri», «Gentile avvocato Rossi». Se não sabe o título, use «Signor / Signora». PASSO 4: frases completas, sem abreviações de chat. PASSO 5: um parágrafo por assunto; assunto do e-mail com poucas palavras. PASSO 6: releia as terminações dos verbos e a ortografia dos acentos antes de enviar.', {
+        tag: 'Escrita formal',
+        comparacao: 'o português formal usa muito «solicito» e «favor enviar». O italiano usa «si prega di» (equivale a «favor» + verbo) e as fórmulas com o condicional. «Si prega di» é impessoal e por isso soa mais seco do que «Potrebbe…».',
+        tabela: [
+          { informal: 'Ciao, mi mandi il file?', formal: 'Buongiorno, potrebbe inviarmi il file?' },
+          { informal: 'Grazie mille!', formal: 'La ringrazio per la disponibilità.' },
+          { informal: 'Fammi sapere.', formal: 'Resto in attesa di una Sua risposta.' },
+          { informal: 'A presto!', formal: 'Cordiali saluti.' },
+          { informal: 'Scusa il ritardo.', formal: 'Mi scuso per il ritardo.' },
+        ],
+        erros: [['Si prega di a confermare.', 'Si prega di confermare.', '«Si prega di» vem direto antes do infinitivo.'], ['Gentile Signora Conti, ci vediamo!', 'Gentile Signora Conti, a presto.', 'Evite frases de chat em e-mails formais.'], ['Si comunica che il corso inizi lunedì.', 'Si comunica che il corso inizia lunedì.', 'Comunicar um fato: indicativo.'], ['Gentile Signora Conti, mandami il file.', 'Gentile Signora Conti, potrebbe inviarmi il file?', 'Com «Lei», evite o imperativo de «tu»; use o condicional.']],
+      }),
+      texto(8, 'Un\'email di richiesta', 'Oggetto: Richiesta di informazioni sul corso estivo. Gentile Segreteria, mi chiamo Ana Souza e vivo a San Paolo. Le scrivo per avere informazioni sul corso estivo di italiano per stranieri. Vorrei sapere quali livelli sono previsti, quanto dura il corso e se è possibile iscriversi online. Le sarei grata se potesse inviarmi il programma e le date disponibili. In allegato trova una breve presentazione del mio livello. La ringrazio per la cortese attenzione e resto a disposizione per qualsiasi chiarimento. Cordiali saluti, Ana Souza.', 'Assunto: Pedido de informações sobre o curso de verão. Prezada Secretaria, meu nome é Ana Souza e moro em São Paulo. Escrevo para obter informações sobre o curso de verão de italiano para estrangeiros. Gostaria de saber quais níveis estão previstos, quanto dura o curso e se é possível se inscrever on-line. Ficaria grata se pudessem me enviar o programa e as datas disponíveis. Em anexo vai uma breve apresentação do meu nível. Agradeço a atenção e fico à disposição para qualquer esclarecimento. Atenciosamente, Ana Souza.', [['Por que Ana escreve?', 'Para ter informações sobre o curso de verão.'], ['O que ela pergunta?', 'Quais níveis, quanto dura e se dá para se inscrever on-line.'], ['O que ela envia em anexo?', 'Uma breve apresentação do seu nível.']]),
+      producao(5, 'Escreva em voz alta o assunto e a primeira frase de um e-mail em que você pede o reembolso de uma compra.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 55', [
+      revisao(5, 'Releia as fórmulas de abertura, pedido e despedida e diga uma frase nova de cada tipo.'),
+      exercicios(20, [
+        ouvir('Le scrivo per avere informazioni', ['Le scrivo per avere informazioni', 'Ti scrivo per avere informazioni', 'Le scrivi per avere informazioni'], 'Le scrivo per avere informazioni', 'Formal: «Le scrivo».'),
+        ouvir('Le sarei grata se potesse rispondere', ['Le sarei grata se potesse rispondere', 'Le sarei grata se può rispondere', 'Le sarò grata se potesse rispondere'], 'Le sarei grata se potesse rispondere', 'Condizionale + congiuntivo imperfetto.'),
+        ouvir('Resto a disposizione per qualsiasi chiarimento', ['Resto a disposizione per qualsiasi chiarimento', 'Resto in disposizione per qualsiasi chiarimento', 'Resto a disposizione di qualsiasi chiarimento'], 'Resto a disposizione per qualsiasi chiarimento', 'Fórmula de fechamento.'),
+        ditado('Gentile Signora Rossi', 'Escreva: Gentile Signora Rossi.'),
+        ditado('In allegato trova il mio curriculum', 'Escreva: In allegato trova il mio curriculum.'),
+        ditado('La ringrazio per la cortese attenzione', 'Escreva: La ringrazio per la cortese attenzione.'),
+        mc('Qual saudação serve para uma desconhecida?', ['Gentile Signora Rossi,', 'Cara Signora Rossi,', 'Ciao Signora Rossi,'], 'Gentile Signora Rossi,', 'Com desconhecidos: «Gentile».'),
+        mc('Qual é a despedida mais usada?', ['Cordiali saluti', 'A presto', 'Ciao'], 'Cordiali saluti', 'Padrão em e-mails formais.'),
+        mc('«Vorrei che mi inviasse…» usa:', ['congiuntivo imperfetto', 'indicativo presente', 'infinitivo'], 'congiuntivo imperfetto', '«Vorrei che» + imperfetto do congiuntivo.'),
+        mc('Como dizer «favor confirmar» num aviso?', ['Si prega di confermare.', 'Si prega confermare.', 'Si pregano di confermare.'], 'Si prega di confermare.', 'Fórmula fixa.'),
+        lacuna('Mi risponda ___ venerdì. (até)', ['entro', 'fino', 'dentro di'], 'entro', 'Prazo: «entro».'),
+        lacuna('Le chiedo ___ inviarmi il modulo.', ['di', 'che', 'a'], 'di', '«Chiedere di» + infinitivo.'),
+        lacuna('Le sarei grato se ___ rispondere. (pudesse)', ['potesse', 'può', 'potrà'], 'potesse', 'Congiuntivo imperfetto.'),
+        lacuna('In ___ trova il mio curriculum.', ['allegato', 'allegare', 'allega'], 'allegato', '«In allegato» = em anexo.'),
+        ordem('Ordene: «Le scrivo per chiedere informazioni.»', ['Le', 'scrivo', 'per', 'chiedere', 'informazioni'], 'Le scrivo per chiedere informazioni.', 'Abertura formal.'),
+        ordem('Ordene: «Resto in attesa di una Sua risposta.»', ['Resto', 'in', 'attesa', 'di', 'una', 'Sua', 'risposta'], 'Resto in attesa di una Sua risposta.', 'Fechamento formal.'),
+        livre('Escreva em italiano: Prezada Senhora Rossi, escrevo para pedir informações. Em anexo vai o formulário. Atenciosamente.', 'Gentile Signora Rossi, Le scrivo per chiedere informazioni. In allegato trova il modulo. Cordiali saluti.'),
+      ]),
+      producao(5, 'Escreva um e-mail curto (4 a 5 frases) em que você pede informações sobre um curso.'),
+    ]),
+  ],
+});

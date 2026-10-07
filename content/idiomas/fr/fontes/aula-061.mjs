@@ -1,0 +1,74 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'fr', numero: 61, titulo: 'Revisão do B1', nivel: 'b1',
+  objetivo: 'Rever todo o B1 em dois mapas, corrigir os erros mais comuns dos brasileiros neste nível e treinar com exercícios de todos os temas.',
+  nota: 'Você revisou o B1 inteiro. Na próxima aula, o simulado final do nível.',
+  sessoes: [
+    sessao('S1', 'O mapa do B1, parte 1 (aulas 39 a 50)', [
+      revisao(5, 'Leia em voz alta cinco frases das aulas 39 a 50 que você acha difíceis.'),
+      gramatica(15, 'O B1 em uma tabela: aulas 39 a 50', 'Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.', {
+        tag: 'Revisão',
+        tabela: [
+          { tema: 'Plus-que-parfait', regra: '«avoir/être» no imparfait + particípio; o passado do passado: «J\'avais déjà mangé quand il est arrivé».', aula: '39' },
+          { tema: 'Discurso indireto', regra: 'o tempo recua: presente → imparfait, futuro → condicional; «si» para perguntas; «de» + infinitivo para ordens.', aula: '40' },
+          { tema: 'Voz passiva e «on»', regra: '«être» + particípio (concorda); agente com «par»; na fala, «on» e «se faire».', aula: '41' },
+          { tema: 'Gérondif e particípio presente', regra: '«en» + «-ant» (simultaneidade, modo); particípio presente na escrita: «un homme parlant français».', aula: '42' },
+          { tema: 'Relativos compostos e «ce»', regra: '«lequel, auquel, duquel» depois de preposição; «ce qui, ce que, ce dont».', aula: '43, 56' },
+          { tema: 'Condicional passado', regra: '«aurais/serais» + particípio: arrependimento e hipótese irreal no passado; «si» + plus-que-parfait.', aula: '44' },
+          { tema: 'Subjuntivo: formação', regra: 'radical do «ils» + «-e, -es, -e, -ions, -iez, -ent»; irregulares: être, avoir, aller, faire, pouvoir, savoir.', aula: '45' },
+          { tema: 'Subjuntivo: usos', regra: 'emoção, dúvida, vontade, necessidade; «bien que», «pour que», «avant que», «à condition que».', aula: '46, 59' },
+          { tema: 'Conectores lógicos', regra: 'causa, consequência, oposição: «parce que, car, donc, cependant, en revanche».', aula: '47, 55' },
+          { tema: 'Opinião e debate', regra: '«à mon avis», «je suis convaincu que», «je ne suis pas sûr que» + subjuntivo; concordar e discordar com educação.', aula: '48' },
+          { tema: 'Carta e e-mail formais', regra: '«Madame, Monsieur», «Je me permets de…», «Veuillez agréer…»; tom neutro e frases completas.', aula: '49' },
+          { tema: 'Emprego e entrevista', regra: 'CV, carta de apresentação, «j\'ai de l\'expérience en…», condicional de cortesia.', aula: '50' },
+        ],
+      }),
+      producao(10, 'Fale 3 minutos em francês: conte um fato do passado usando plus-que-parfait, diga o que teria feito diferente (condicional passado) e dê sua opinião sobre algo atual com subjuntivo.'),
+    ]),
+    sessao('S2', 'O mapa do B1, parte 2 (aulas 51 a 60)', [
+      revisao(5, 'Releia a tabela anterior e escolha os 3 temas em que você ainda hesita.'),
+      gramatica(15, 'O B1 em uma tabela: aulas 51 a 60', 'Releia uma linha por vez e diga um exemplo seu em voz alta.', {
+        tag: 'Revisão',
+        tabela: [
+          { tema: 'Mídia e publicidade', regra: 'vocabulário de notícias e anúncios; «selon», «d\'après»; «il paraît que», «on dit que»; análise de uma publicidade.', aula: '51' },
+          { tema: 'Meio ambiente e sociedade', regra: '«il faudrait que» + subjuntivo; «si chacun… , l\'avenir sera…»; «trier, recycler, polluer».', aula: '52' },
+          { tema: 'Cidadania e instituições', regra: '«voter», «élire», «le droit de»; sistema escolar e político; passiva em contextos oficiais.', aula: '53' },
+          { tema: 'Ordem dos pronomes', regra: 'me/te/se/nous/vous → le/la/les → lui/leur → y → en; imperativo: «donne-le-moi»; «y» e «en» substituem coisas.', aula: '54' },
+          { tema: 'Causa, consequência, finalidade', regra: '«grâce à / à cause de»; «tellement… que»; «pour que» + subjuntivo; nominalizações.', aula: '55' },
+          { tema: 'Destaque e articuladores', regra: '«c\'est… qui/que»; «ce qui, ce que, ce dont»; «d\'abord, ensuite, enfin»; «en revanche, cependant».', aula: '56' },
+          { tema: 'Cultura e arte', regra: '«il s\'agit de», «raconter», «se dérouler»; reconhecer o passé simple (fut, eut, fit, dit, vint).', aula: '57' },
+          { tema: 'Viagem avançada', regra: 'reclamação com condicional; passiva: «le vol a été annulé»; «se faire voler».', aula: '58' },
+          { tema: 'Reuniões e negociação', regra: '«à condition que», «à moins que», «sauf si»; verbos de relato: «annoncer, confirmer, suggérer».', aula: '59' },
+          { tema: 'Estratégias', regra: 'palavras aparentadas (-tion, -té); famílias de palavras; falsos amigos: rester, demander, attendre, exprès, sale, ignorer.', aula: '60' },
+        ],
+      }),
+      producao(10, 'Fale 3 minutos em francês: negocie algo (um preço, um prazo) e depois relate a conversa a um colega usando verbos de relato.'),
+    ]),
+    sessao('S3', 'Os erros mais comuns do B1', [
+      revisao(5, 'Escreva 3 erros que você ainda comete no B1 e a forma certa.'),
+      gramatica(15, 'Os 16 erros mais comuns do B1', 'Leia cada par em voz alta: primeiro o errado, depois o certo.', {
+        tag: 'Revisão',
+        erros: [
+          ['Quand il est arrivé, j\'ai déjà mangé.', 'Quand il est arrivé, j\'avais déjà mangé.', 'Anterior a outro passado: plus-que-parfait.'], ['Il a dit qu\'il viendra.', 'Il a dit qu\'il viendrait.', 'Relato no passado: o futuro vira condicional.'], ['Je pense qu\'il vienne.', 'Je pense qu\'il vient.', '«Penser que» afirmativo: indicativo.'], ['Je ne pense pas qu\'il vient.', 'Je ne pense pas qu\'il vienne.', 'Negativo: subjuntivo.'],
+          ['Bien qu\'il est fatigué, il travaille.', 'Bien qu\'il soit fatigué, il travaille.', '«Bien que» + subjuntivo.'], ['Je veux que tu viens.', 'Je veux que tu viennes.', '«Vouloir que» + subjuntivo.'], ['Si j\'aurais su, je serais venu.', 'Si j\'avais su, je serais venu.', 'Depois de «si», nunca condicional.'], ['Le livre dont je t\'ai parlé de.', 'Le livre dont je t\'ai parlé.', '«Dont» já contém «de».'],
+          ['Ce que m\'intéresse, c\'est la musique.', 'Ce qui m\'intéresse, c\'est la musique.', 'Sujeito: «ce qui».'], ['C\'est moi qui est arrivé.', 'C\'est moi qui suis arrivé.', 'O verbo concorda com «moi».'], ['Les bagages sont perdu.', 'Les bagages sont perdus.', 'Particípio concorda.'], ['Le vol a annulé.', 'Le vol a été annulé.', 'Passiva: falta «été».'],
+          ['Je lui le donne.', 'Je le lui donne.', 'Ordem dos pronomes.'], ['Je pense à Paul → J\'y pense.', 'Je pense à Paul → Je pense à lui.', 'Pessoa: tônico.'], ['Je veux un remboursement.', 'Je voudrais être remboursé.', 'Pedido educado.'], ['Il l\'a fait expresso.', 'Il l\'a fait exprès.', '«Exprès» = de propósito.'],
+        ],
+      }),
+      producao(10, 'Escolha oito pares e invente uma frase nova para cada regra, em voz alta.'),
+    ]),
+    sessao('S4', 'Prática da revisão do B1', [
+      revisao(5, 'Releia os erros mais comuns do B1 em voz alta.'),
+      exercicios(20, [
+        ouvir('J\'avais déjà mangé quand il est arrivé', ['J\'avais déjà mangé quand il est arrivé', 'J\'ai déjà mangé quand il arrivait', 'Je mangeais déjà quand il arrive'], 'J\'avais déjà mangé quand il est arrivé', 'Escuta: plus-que-parfait.'), ouvir('Si j\'avais su, je serais venu', ['Si j\'avais su, je serais venu', 'Si j\'aurais su, je serais venu', 'Si je savais, je viendrais'], 'Si j\'avais su, je serais venu', 'Escuta: condicional passado.'), ouvir('Ce qui m\'intéresse, c\'est la musique', ['Ce qui m\'intéresse, c\'est la musique', 'Ce que m\'intéresse, c\'est la musique', 'Ce dont m\'intéresse, c\'est la musique'], 'Ce qui m\'intéresse, c\'est la musique', 'Escuta: destaque.'),
+        ditado('Bien qu\'il soit fatigué, il travaille', 'Escreva: Bien qu\'il soit fatigué, il travaille.'), ditado('Je le lui ai donné hier', 'Escreva: Je le lui ai donné hier.'),
+        mc('Depois de «bien que» usa-se:', ['subjuntivo', 'indicativo', 'condicional'], 'subjuntivo', 'Concessão.'), mc('«Il a dit : Je viendrai» no relato passado:', ['Il a dit qu\'il viendrait.', 'Il a dit qu\'il viendra.', 'Il a dit qu\'il vient.'], 'Il a dit qu\'il viendrait.', 'Recuo de tempo.'), mc('Pronome para «à Paul»:', ['lui', 'y', 'en'], 'lui', 'Pessoa com à.'), mc('Voz passiva no passado:', ['Le vol a été annulé.', 'Le vol a annulé.', 'Le vol est annulé par.'], 'Le vol a été annulé.', 'être + particípio.'), mc('«Attendre» significa:', ['esperar', 'atender', 'alcançar'], 'esperar', 'Falso amigo.'),
+        lacuna('Il faut que tu ___ . (venir)', ['viennes', 'viens', 'venir'], 'viennes', 'Subjuntivo.'), lacuna('Si j\'___ de l\'argent, je voyagerais.', ['avais', 'aurais', 'aurai'], 'avais', 'Si + imparfait.'), lacuna('C\'est Paul ___ a gagné.', ['qui', 'que', 'dont'], 'qui', 'Sujeito.'), lacuna('J\'accepte à condition que vous ___ avant. (payer)', ['payiez', 'payez', 'payer'], 'payiez', 'Subjuntivo.'),
+        ordem('Ordene: «Si j\'avais su, je serais venu.»', ['Si', 'j\'avais', 'su,', 'je', 'serais', 'venu'], 'Si j\'avais su, je serais venu.', 'Condicional passado.'), ordem('Ordene: «Il y en a trois.»', ['Il', 'y', 'en', 'a', 'trois'], 'Il y en a trois.', 'Y antes de en.'),
+        livre('Escreva em francês: Embora esteja cansado, ele trabalha. O voo foi cancelado. Eu o enviei a ela ontem.', 'Bien qu\'il soit fatigué, il travaille. Le vol a été annulé. Je le lui ai envoyé hier.'),
+      ]),
+      producao(5, 'Releia os itens que você errou e diga a regra de cada um em voz alta.'),
+    ]),
+  ],
+});

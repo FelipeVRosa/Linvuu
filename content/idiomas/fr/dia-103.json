@@ -2,29 +2,172 @@
   "idioma": "fr",
   "dia": 103,
   "fase": 11,
-  "nivel": "b1",
-  "status": "planejada",
-  "titulo": "Viagem e transporte",
-  "objetivo": "Comprar bilhete e pedir informação em estação ou aeroporto.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "nivel": "a2",
+  "status": "publicada",
+  "titulo": "Corpo, saúde e farmácia: Na farmácia",
+  "objetivo": "Aula 26, sessão 3 de 4 · 30 min",
+  "aula": {
+    "numero": 26,
+    "titulo": "Corpo, saúde e farmácia",
+    "objetivo": "Nomear partes do corpo, dizer onde dói, descrever sintomas, falar com o médico e na farmácia, e usar «avoir mal à» e «il faut».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a2"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S3",
+    "titulo": "Na farmácia",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "la pharmacie",
+            "translit": "la farmasi",
+            "pt": "a farmácia",
+            "en": "",
+            "audio": "la pharmacie"
+          },
+          {
+            "ru": "le médicament",
+            "translit": "lö medikamã",
+            "pt": "o remédio",
+            "en": "",
+            "audio": "le médicament"
+          },
+          {
+            "ru": "l'ordonnance",
+            "translit": "lordonãs",
+            "pt": "a receita médica",
+            "en": "",
+            "audio": "l'ordonnance"
+          },
+          {
+            "ru": "le comprimé",
+            "translit": "lö kõprimé",
+            "pt": "o comprimido",
+            "en": "",
+            "audio": "le comprimé"
+          },
+          {
+            "ru": "le sirop",
+            "translit": "lö siro",
+            "pt": "o xarope",
+            "en": "",
+            "audio": "le sirop"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Pedir um remédio",
+        "explicacao": "PASSO 1: pedido educado: «Je voudrais quelque chose contre le mal de tête, s'il vous plaît.» PASSO 2: frase do farmacêutico: «Vous avez une ordonnance ?» «Prenez un comprimé trois fois par jour.» PASSO 3: «contre» + problema: «un médicament contre la toux», «un sirop contre le rhume». PASSO 4: «sans ordonnance» (sem receita): «Ce médicament est disponible sans ordonnance.» PASSO 5: pergunta de preço: «Ça coûte combien ?» «C'est remboursé ?» PASSO 6: despedida: «Merci, bonne journée.» «Bon rétablissement !» (melhoras)",
+        "comparacao": "em português dizemos «um remédio para tosse». O francês usa «contre»: «un médicament contre la toux». E «melhoras» vira «bon rétablissement».",
+        "tabela": [
+          {
+            "pedido": "um remédio para a tosse",
+            "frase": "un médicament contre la toux"
+          },
+          {
+            "pedido": "um xarope para o resfriado",
+            "frase": "un sirop contre le rhume"
+          },
+          {
+            "pedido": "sem receita",
+            "frase": "sans ordonnance"
+          },
+          {
+            "pedido": "com receita",
+            "frase": "avec une ordonnance"
+          },
+          {
+            "pedido": "melhoras",
+            "frase": "Bon rétablissement !"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Un médicament pour la toux.",
+            "certo": "Un médicament contre la toux.",
+            "motivo": "Remédio para tratar: «contre»."
+          },
+          {
+            "errado": "Je veux un médicament.",
+            "certo": "Je voudrais un médicament.",
+            "motivo": "Pedido educado."
+          },
+          {
+            "errado": "Sans de ordonnance.",
+            "certo": "Sans ordonnance.",
+            "motivo": "Sem artigo."
+          },
+          {
+            "errado": "Prenez trois fois par jour de comprimés.",
+            "certo": "Prenez des comprimés trois fois par jour.",
+            "motivo": "Ordem da frase."
+          }
+        ],
+        "tag": "Saúde"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 8,
+        "titulo": "À la pharmacie / Na farmácia",
+        "contexto": "Marie conversa com o farmacêutico sobre uma tosse.",
+        "linhas": [
+          {
+            "personagem": "Marie",
+            "ru": "— Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît.",
+            "pt": "— Bom dia. Gostaria de algo para a tosse, por favor.",
+            "audio": "Bonjour. Je voudrais quelque chose contre la toux, s'il vous plaît."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Depuis quand toussez-vous ?",
+            "pt": "— Há quanto tempo a senhora tosse?",
+            "audio": "Depuis quand toussez-vous ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Depuis trois jours. J'ai aussi mal à la gorge.",
+            "pt": "— Há três dias. Também estou com dor de garganta.",
+            "audio": "Depuis trois jours. J'ai aussi mal à la gorge."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Vous avez de la fièvre ?",
+            "pt": "— A senhora tem febre?",
+            "audio": "Vous avez de la fièvre ?"
+          },
+          {
+            "personagem": "Marie",
+            "ru": "— Non, je n'ai pas de fièvre, mais je suis très fatiguée.",
+            "pt": "— Não, não tenho febre, mas estou muito cansada.",
+            "audio": "Non, je n'ai pas de fièvre, mais je suis très fatiguée."
+          },
+          {
+            "personagem": "Le pharmacien",
+            "ru": "— Prenez ce sirop trois fois par jour et reposez-vous. Si ça ne va pas mieux dans quatre jours, consultez un médecin.",
+            "pt": "— Tome este xarope três vezes por dia e descanse. Se não melhorar em quatro dias, consulte um médico.",
+            "audio": "Prenez ce sirop trois fois par jour et reposez-vous. Si ça ne va pas mieux dans quatre jours, consultez un médecin."
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 5,
+        "enunciado": "Peça um remédio em voz alta para dor de cabeça, tosse e febre."
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Diga ao médico três sintomas e há quanto tempo."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  },
+  "origem": "content/idiomas/fr/aulas/aula-026.json",
   "responsavel": null
 }

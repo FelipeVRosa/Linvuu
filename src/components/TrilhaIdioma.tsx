@@ -20,7 +20,7 @@ function blocosDe(grupos: Grupo[]): Bloco[] {
 }
 
 /** Blocos que já têm aulas no ar, mas ainda não estão completos. */
-const EM_CONSTRUCAO: Record<string, string[]> = { de: ['b2'], ru: ['b1'] };
+const EM_CONSTRUCAO: Record<string, string[]> = { de: ['b2'] };
 
 const horas = (sessoes: number) => (sessoes / 2).toLocaleString('pt-BR', { maximumFractionDigits: 1 });
 

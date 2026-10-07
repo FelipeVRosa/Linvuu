@@ -1,0 +1,103 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 58, titulo: 'Cultura, festas e tradições', nivel: 'b1',
+  objetivo: 'Desejar bons votos, descrever festas e tradições com cuidado e falar de eventos culturais (filme, mostra, concerto) dando e pedindo recomendações.',
+  nota: 'Você agora fala de festas, descreve costumes sem generalizar demais e recomenda um programa cultural. Próxima aula: viver na Itália.',
+  sessoes: [
+    sessao('S1', 'Auguri e feste', [
+      revisao(5, 'Diga em voz alta cinco frases com o «si impersonale» (aula 51) sobre o que se faz no seu país nas festas.'),
+      palavras(8, [
+        ['la ricorrenza', '', 'a data comemorativa', ''], ['la tradizione', '', 'a tradição', ''], ['gli auguri', '', 'os votos / parabéns', ''], ['scambiarsi', '', 'trocar (entre si)', ''], ['il ponte', '', 'o feriadão (emenda)', ''], ['festivo', '', 'feriado / de festa', ''], ['il cenone', '', 'a ceia grande', ''], ['il regalo', '', 'o presente', ''],
+      ]),
+      gramatica(12, 'Buon Natale, auguri, a Capodanno', 'PASSO 1: os votos mais comuns: «Buon Natale!», «Buona Pasqua!», «Buon anno!», «Buone feste!», «Buon compleanno!». Depois de «buon» vem substantivo masculino; para feminino, «buona». PASSO 2: «Auguri!» só existe no plural e serve para aniversário, casamento, boa sorte e votos em geral: «Tanti auguri!», «Auguri di buon compleanno!» PASSO 3: «Congratulazioni!» é para um êxito (formatura, promoção, nascimento). PASSO 4: respostas: «Grazie, altrettanto!», «Anche a te!», e com cortesia, «Grazie, anche a Lei!» PASSO 5: as principais festas são marcadas com «a»: «a Natale», «a Pasqua», «a Capodanno», «a Ferragosto», e não com «in» (também se ouve «per Natale»). PASSO 6: troca recíproca: «Ci scambiamo gli auguri.», «Ci scambiamo i regali.» PASSO 7: «fare il ponte» é emendar um feriado com o fim de semana. PASSO 8: dias «festivi» (feriados) e «feriali» (úteis).', {
+        tag: 'Cultura',
+        comparacao: 'o português diz «Feliz Natal» e «Feliz aniversário». O italiano diz «Buon Natale» e «Buon compleanno» (literalmente «bom»), e usa «auguri» para «parabéns». «Parabéns» pelo aniversário é «auguri»; «congratulazioni» é para uma conquista. E a festa pede «a», e não «em»: «a Natale».',
+        tabela: [
+          { situacao: 'Natal', formula: 'Buon Natale!', resposta: 'Grazie, altrettanto!' },
+          { situacao: 'Páscoa', formula: 'Buona Pasqua!', resposta: 'Anche a te!' },
+          { situacao: 'Ano-novo', formula: 'Buon anno!', resposta: 'Grazie, anche a te!' },
+          { situacao: 'aniversário', formula: 'Tanti auguri!', resposta: 'Grazie mille!' },
+          { situacao: 'formatura', formula: 'Congratulazioni!', resposta: 'Grazie, sono molto contento.' },
+          { situacao: 'festas em geral', formula: 'Buone feste!', resposta: 'Altrettanto!' },
+        ],
+        erros: [['Buono Natale!', 'Buon Natale!', 'Antes de substantivo masculino, «buono» perde a última vogal: «buon».'], ['Buon Pasqua!', 'Buona Pasqua!', '«Pasqua» é feminino: «buona».'], ['In Natale andiamo dai nonni.', 'A Natale andiamo dai nonni.', 'Festas pedem «a».'], ['Augurio!', 'Auguri!', 'Como votos, usa-se o plural.']],
+      }),
+      producao(5, 'Diga em voz alta os votos que você daria a um amigo no Natal, no aniversário e numa formatura, e as respostas.'),
+    ]),
+    sessao('S2', 'Descrever uma tradição', [
+      revisao(4, 'Diga em voz alta cinco votos, e a resposta a cada um.'),
+      palavras(6, [
+        ['il panettone', '', 'o panetone', ''], ['la Befana', '', 'a Befana (figura da Epifania)', ''], ['il carnevale', '', 'o carnaval', ''], ['la sagra', '', 'a festa popular local (de um prato, de um produto)', ''], ['il corteo', '', 'o desfile / cortejo', ''], ['il costume', '', 'a fantasia / o costume', ''],
+      ]),
+      gramatica(12, 'Si usa, è tradizione, una volta', 'PASSO 1: para descrever hábitos, use o presente com «si» (aula 51): «A Natale si mangia il panettone.», «A Capodanno si mangiano le lenticchie.» PASSO 2: expressões úteis: «Si usa + infinitivo», «È tradizione + infinitivo», «È usanza + infinitivo»: «È tradizione scambiarsi i regali.» (sem «di») PASSO 3: para costumes de quando era criança, use o imperfetto: «Quando ero piccolo, a Natale andavamo dai nonni.» PASSO 4: voz passiva para festas: «Il carnevale è festeggiato con maschere e coriandoli.» PASSO 5: use relativos (aula 52): «La festa di cui ti parlo si chiama…» PASSO 6: seja cuidadoso: tradições mudam com a região e a família. Use «in molte famiglie», «di solito», «in alcune regioni», «a seconda della zona». PASSO 7: compare: «In Brasile, invece, …» PASSO 8: os exemplos da tabela são usos comuns, não regras; confirme sempre com pessoas do lugar.', {
+        tag: 'Cultura',
+        comparacao: 'em português dizemos «é tradição comer…». O italiano diz «è tradizione mangiare…», sem preposição. E «costume» tem os dois sentidos em italiano: a fantasia ou o traje («un costume di Carnevale», «costume da bagno») e o hábito coletivo («usi e costumi»); para hábito, «usanza» e «abitudine» também são muito usados.',
+        tabela: [
+          { festa: 'Natale', quando: '25 dicembre', exemplo: 'In molte famiglie si fa il cenone la sera del 24.' },
+          { festa: 'Capodanno', quando: '1 gennaio', exemplo: 'Si usa mangiare le lenticchie per portare fortuna.' },
+          { festa: 'Befana', quando: '6 gennaio', exemplo: 'Per i bambini, la Befana porta dolci.' },
+          { festa: 'Carnevale', quando: 'febbraio o marzo', exemplo: 'I bambini indossano costumi e maschere.' },
+          { festa: 'Ferragosto', quando: '15 agosto', exemplo: 'Molti fanno una gita o un pranzo con gli amici.' },
+          { festa: 'Pasqua', quando: 'primavera', exemplo: 'Si mangia spesso la colomba.' },
+        ],
+        erros: [['Si mangia le lenticchie.', 'Si mangiano le lenticchie.', '«Lenticchie» é plural: passivante.'], ['È tradizione di mangiare le lenticchie.', 'È tradizione mangiare le lenticchie.', '«Tradizione» + infinitivo, sem «di».'], ['Quando ero piccolo, a Natale siamo andati dai nonni.', 'Quando ero piccolo, a Natale andavamo dai nonni.', 'Hábito no passado: imperfetto.'], ['La festa che ti parlo è molto antica.', 'La festa di cui ti parlo è molto antica.', '«Parlare di» pede «di cui».']],
+      }),
+      producao(8, 'Descreva em voz alta uma festa do seu país em seis frases: quando é, o que se come, o que se faz e o que você recorda dela.'),
+    ]),
+    sessao('S3', 'Cultura e recomendações', [
+      revisao(4, 'Diga em voz alta o que você fez no último fim de semana de lazer, com passato prossimo.'),
+      palavras(5, [
+        ['la mostra', '', 'a exposição', ''], ['lo spettacolo', '', 'o espetáculo', ''], ['il biglietto', '', 'o ingresso / a passagem', ''], ['consigliare', '', 'recomendar', ''], ['la biblioteca', '', 'a biblioteca', ''],
+      ]),
+      gramatica(8, 'Mi è piaciuto, ti consiglio di', 'PASSO 1: «piacere» no passato prossimo usa «essere» e concorda com o que agrada: «Il film mi è piaciuto.», «La mostra mi è piaciuta.», «I concerti mi sono piaciuti.» PASSO 2: recomendações: «Ti consiglio di vedere…», «Vale la pena visitare…», «È da non perdere.» PASSO 3: opinião com «trovare»: «Ho trovato il libro interessante.» PASSO 4: gêneros: «un giallo» (policial), «una commedia», «un documentario», «un romanzo». PASSO 5: cuidado: «libreria» é livraria; biblioteca é «biblioteca». PASSO 6: «essere stato a» (já estive em): «Sono stato a una mostra.»', {
+        tag: 'Cultura',
+        comparacao: 'o português diz «gostei do filme». Em italiano, o passato prossimo de «piacere» é construído como «o filme me agradou»: «mi è piaciuto», com particípio concordando com o filme. E «libreria» não é biblioteca: é a livraria onde se compram livros.',
+        tabela: [
+          { expressao: 'mi è piaciuto', uso: 'masculino singular', exemplo: 'Il concerto mi è piaciuto.' },
+          { expressao: 'mi è piaciuta', uso: 'feminino singular', exemplo: 'La mostra mi è piaciuta.' },
+          { expressao: 'mi sono piaciuti / piaciute', uso: 'plural', exemplo: 'I quadri mi sono piaciuti.' },
+          { expressao: 'ti consiglio di + inf.', uso: 'recomendar', exemplo: 'Ti consiglio di vedere quel film.' },
+          { expressao: 'vale la pena + inf.', uso: 'vale a pena', exemplo: 'Vale la pena visitare questa città.' },
+        ],
+        erros: [['Il film mi ha piaciuto.', 'Il film mi è piaciuto.', '«Piacere» usa «essere» nos tempos compostos.'], ['La mostra mi è piaciuto.', 'La mostra mi è piaciuta.', 'O particípio concorda com «la mostra».'], ['Ti consiglio vedere quel film.', 'Ti consiglio di vedere quel film.', '«Consigliare di» + infinitivo.'], ['Sono andato in libreria per prendere un libro in prestito.', 'Sono andato in biblioteca per prendere un libro in prestito.', 'Livros emprestados vêm da biblioteca.']],
+      }),
+      dialogo(8, 'Ferragosto e Natale', 'Elisa e João conversam sobre como cada um passa os feriados.', [
+        ['João', 'Elisa, che fai per Ferragosto?', 'Elisa, o que você faz no Ferragosto?'],
+        ['Elisa', 'Di solito vado dai miei in campagna. Facciamo un pranzo lungo con tutta la famiglia. E tu?', 'Geralmente vou à casa dos meus pais no campo. Fazemos um almoço longo com toda a família. E você?'],
+        ['João', 'Quest\'anno resto in città. Ma l\'anno scorso sono stato a una sagra in un paese vicino e mi è piaciuta molto.', 'Este ano fico na cidade. Mas no ano passado fui a uma festa popular numa cidadezinha vizinha e gostei muito.'],
+        ['Elisa', 'Le sagre sono belle: si mangia bene e si conosce la gente del posto. Ti consiglio di andarci di nuovo.', 'As festas populares são legais: come-se bem e conhece-se o pessoal do lugar. Recomendo que você vá de novo.'],
+        ['João', 'Sì, vale la pena. E a Natale? Come lo festeggiate da voi?', 'Sim, vale a pena. E no Natal? Como vocês comemoram aí?'],
+        ['Elisa', 'In molte famiglie, il 24 sera c\'è il cenone, poi ci si scambia i regali. Il 25 si pranza di nuovo tutti insieme.', 'Em muitas famílias, na noite do dia 24 há a ceia, depois trocam-se os presentes. No dia 25 almoça-se de novo todos juntos.'],
+        ['João', 'In Brasile è simile: si cena la sera del 24 e si aspetta la mezzanotte.', 'No Brasil é parecido: janta-se na noite do dia 24 e espera-se a meia-noite.'],
+        ['Elisa', 'Davvero? E il panettone lo mangiate anche voi?', 'Sério? E o panetone, vocês também comem?'],
+        ['João', 'Sì, e c\'è anche una versione con il cioccolato, molto amata.', 'Sim, e há também uma versão com chocolate, muito querida.'],
+        ['Elisa', 'Mi piacerebbe provarla! Allora, buone feste in anticipo!', 'Eu adoraria provar! Então, boas festas com antecedência!'],
+      ]),
+      producao(5, 'Recomende em voz alta um filme, um livro ou uma exposição a um amigo, com três frases.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 58', [
+      revisao(5, 'Releia os votos e as tradições da aula e diga uma frase nova para cada festa.'),
+      exercicios(20, [
+        ouvir('Buona Pasqua a tutti', ['Buona Pasqua a tutti', 'Buon Pasqua a tutti', 'Buono Pasqua a tutti'], 'Buona Pasqua a tutti', '«Pasqua» é feminino.'),
+        ouvir('A Capodanno si mangiano le lenticchie', ['A Capodanno si mangiano le lenticchie', 'A Capodanno si mangia le lenticchie', 'In Capodanno si mangiano le lenticchie'], 'A Capodanno si mangiano le lenticchie', 'Passivante plural.'),
+        ouvir('La mostra mi è piaciuta molto', ['La mostra mi è piaciuta molto', 'La mostra mi è piaciuto molto', 'La mostra mi ha piaciuto molto'], 'La mostra mi è piaciuta molto', 'Concordância com «la mostra».'),
+        ditado('Ci scambiamo gli auguri', 'Escreva: Ci scambiamo gli auguri.'),
+        ditado('È tradizione scambiarsi i regali', 'Escreva: È tradizione scambiarsi i regali.'),
+        ditado('Ti consiglio di vedere quel film', 'Escreva: Ti consiglio di vedere quel film.'),
+        mc('Qual é a resposta educada a «Buon anno!»?', ['Grazie, altrettanto!', 'Prego!', 'Di niente!'], 'Grazie, altrettanto!', 'Retribui os votos.'),
+        mc('Com festas, a preposição é:', ['a', 'in', 'su'], 'a', '«A Natale», «a Pasqua».'),
+        mc('«Libreria» em italiano é:', ['livraria', 'biblioteca', 'estante'], 'livraria', 'Falso amigo.'),
+        mc('Para feriado emendado com o fim de semana, diz-se:', ['fare il ponte', 'fare la festa', 'fare ferie'], 'fare il ponte', '«Il ponte».'),
+        lacuna('___ Natale andiamo dai nonni. (no)', ['A', 'In', 'Su'], 'A', 'Festas pedem «a».'),
+        lacuna('È tradizione ___ i regali.', ['scambiarsi', 'di scambiarsi', 'a scambiarsi'], 'scambiarsi', 'Sem preposição.'),
+        lacuna('Il film mi ___ piaciuto.', ['è', 'ha', 'sono'], 'è', 'Piacere com «essere».'),
+        lacuna('Quando ero piccolo, a Natale ___ dai nonni. (íamos)', ['andavamo', 'siamo andati', 'andremo'], 'andavamo', 'Hábito: imperfetto.'),
+        ordem('Ordene: «Buon Natale a tutti.»', ['Buon', 'Natale', 'a', 'tutti'], 'Buon Natale a tutti.', 'Votos.'),
+        ordem('Ordene: «Vale la pena visitare questa città.»', ['Vale', 'la', 'pena', 'visitare', 'questa', 'città'], 'Vale la pena visitare questa città.', 'Recomendação.'),
+        livre('Escreva em italiano: Feliz Natal! A mostra me agradou. Recomendo que você vá.', 'Buon Natale! La mostra mi è piaciuta. Ti consiglio di andarci.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre uma festa do seu país, com pelo menos três usos de «si».'),
+    ]),
+  ],
+});

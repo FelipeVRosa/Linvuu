@@ -1,0 +1,111 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 34, titulo: 'Viagem: aeroporto, trem, hotel', nivel: 'a2',
+  objetivo: "Comprar bilhete de trem, perguntar horários e plataformas, usar «ci vuole / ci vogliono» para a duração, enfrentar o aeroporto (check-in, embarque, bagagem) e reservar e usar um hotel.",
+  nota: "Você se vira em estação, aeroporto e hotel. Próxima aula: trabalho e apresentação profissional.",
+  sessoes: [
+    sessao('S1', 'De trem: bilhetes, horários e plataformas', [
+      revisao(5, 'Diga em voz alta o que dói, o que você tem e o que o médico diria para você fazer (aula 33).'),
+      palavras(8, [
+        ['il biglietto', 'il bilhétto', 'o bilhete', ''], ['andata e ritorno', 'andáta e ritórno', 'ida e volta', ''], ['il binario', 'il binário', 'a plataforma', ''], ['la partenza', 'la partêntsa', 'a partida', ''],
+        ["l'arrivo", 'larrívo', 'a chegada', ''], ['il ritardo', 'il ritárdo', 'o atraso', ''], ['la stazione', 'la statsiône', 'a estação', ''], ['la fermata', 'la fermáta', 'a parada', ''],
+      ]),
+      gramatica(12, 'Comprar o bilhete e perguntar sobre o trem', "PASSO 1: pedir o bilhete: «Vorrei un biglietto per Roma, andata e ritorno.» «Un biglietto di sola andata per Bologna, per favore.» PASSO 2: perguntar horário: «A che ora parte il prossimo treno per Firenze?» «A che ora arriva?» PASSO 3: perguntar a plataforma: «Da quale binario parte?» Resposta: «Dal binario cinque.» PASSO 4: preço e classe: «Quanto costa?» «Prima o seconda classe?» PASSO 5: duração com «ci vuole / ci vogliono» (impessoal, concorda com o tempo): «Quanto tempo ci vuole?» «Ci vuole un'ora.» «Ci vogliono due ore.» PASSO 6: atraso: «Il treno è in ritardo di dieci minuti.» «Il treno è in orario.» PASSO 7: subir e descer: «Salgo sul treno», «Scendo a Bologna.» «Salire» é subir/embarcar, e «scendere» é descer. PASSO 8: troca de trem: «Devo cambiare a Bologna?» PASSO 9: as regras de validação, de classe e de plataforma variam; confira sempre no bilhete e nos painéis da estação.", {
+        tag: 'Viagem',
+        comparacao: "o português diz «quanto tempo demora?» e «demora duas horas». Para o tempo necessário, o italiano usa «ci vuole / ci vogliono»: «quanto tempo ci vuole?», «ci vogliono due ore». «Durare» (durar) descreve a duração de um evento: «il film dura due ore». «Binario» é o trilho e, na estação, a plataforma de embarque; não é o «binário» da informática. Por fim, «salire» é subir (e embarcar), e não «sair».",
+        tabela: [
+          { situacao: 'pedir bilhete', frase: 'Vorrei un biglietto per Roma, andata e ritorno.' },
+          { situacao: 'horário', frase: 'A che ora parte il prossimo treno per Firenze?' },
+          { situacao: 'plataforma', frase: 'Da quale binario parte?' },
+          { situacao: 'duração', frase: 'Quanto tempo ci vuole? Ci vogliono due ore.' },
+          { situacao: 'atraso', frase: 'Il treno è in ritardo di dieci minuti.' },
+          { situacao: 'baldeação', frase: 'Devo cambiare a Bologna?' },
+        ],
+        erros: [
+          ['Quanto tempo demora?', 'Quanto tempo ci vuole?', '«Demora» não existe em italiano; para o tempo necessário use «ci vuole».'],
+          ['Ci vuole due ore.', 'Ci vogliono due ore.', 'Tempo no plural: «ci vogliono».'],
+          ['Un biglietto a Roma.', 'Un biglietto per Roma.', 'Destino do bilhete: «per».'],
+          ['Salgo a Bologna. (vou descer lá)', 'Scendo a Bologna.', '«Salire» é subir; descer é «scendere».'],
+        ],
+      }),
+      producao(5, 'Compre um bilhete em voz alta: destino, ida e volta, classe, horário e plataforma.', 'Vorrei un biglietto per Venezia, andata e ritorno. Da quale binario parte?'),
+    ]),
+    sessao('S2', 'No aeroporto', [
+      revisao(4, 'Diga em voz alta cinco frases de estação: bilhete, horário, plataforma, preço e duração.'),
+      palavras(6, [
+        ['il volo', 'il vôlo', 'o voo', ''], ["l'imbarco", 'limbárko', 'o embarque', ''], ["la carta d'imbarco", 'la kárta dimbárko', 'o cartão de embarque', ''], ['il bagaglio a mano', 'il bagálho a máno', 'a bagagem de mão', ''], ['la valigia', 'la valídja', 'a mala', ''], ['il passaporto', 'il passapórto', 'o passaporte', ''],
+      ]),
+      gramatica(12, 'Check-in, embarque e perguntas no aeroporto', "PASSO 1: no balcão: «Vorrei fare il check-in per il volo per Lisbona.» «Ho una valigia da imbarcare.» PASSO 2: o funcionário pergunta: «Ha un bagaglio a mano?» «Mi dà il passaporto, per favore?» PASSO 3: embarque: «L'imbarco è alle nove, all'uscita B12.» A porta de embarque se chama «uscita»; nos painéis também aparece o inglês «gate», e os dois são entendidos. PASSO 4: atraso e cancelamento: «Il volo è in ritardo.» «Il volo è stato cancellato.» (frase pronta). PASSO 5: pedir informação com educação (aula 29): «Potrebbe indicarmi dov'è il check-in?» PASSO 6: alfândega: «Ha qualcosa da dichiarare?» (qualcosa + da + infinitivo) PASSO 7: tempo: «Il volo parte tra un'ora.» (aula 31) PASSO 8: bagagem: «valigia» é a mala; «bagaglio» é a bagagem em geral; «zaino» é a mochila; «borsa» é a bolsa ou a sacola.", {
+        tag: 'Viagem',
+        comparacao: "o português «mala» corresponde a «valigia»; «bagagem», a «bagaglio»; «bolsa», a «borsa». Para a porta de embarque, diz-se «uscita» (literalmente saída). «Imbarco» é embarque, e «sbarco», desembarque. Armadilha também com o atraso: o voo «está em atraso» (essere in ritardo), e não «tem atraso».",
+        tabela: [
+          { palavra: 'la valigia', sentido: 'a mala', exemplo: 'Ho una valigia grande.' },
+          { palavra: 'il bagaglio', sentido: 'a bagagem', exemplo: 'Il bagaglio a mano è piccolo.' },
+          { palavra: "l'uscita", sentido: 'a porta de embarque', exemplo: "L'imbarco è all'uscita B12." },
+          { palavra: 'il ritardo', sentido: 'o atraso', exemplo: 'Il volo è in ritardo.' },
+          { palavra: 'la dogana', sentido: 'a alfândega', exemplo: 'Ha qualcosa da dichiarare?' },
+          { palavra: 'lo zaino', sentido: 'a mochila', exemplo: 'Porto uno zaino piccolo.' },
+        ],
+        erros: [
+          ['Il mio volo ha ritardo.', 'Il mio volo è in ritardo.', 'Atraso: «essere in ritardo».'],
+          ['Ho una valise.', 'Ho una valigia.', 'A mala é «valigia».'],
+          ["Il volo parte in un'ora.", "Il volo parte tra un'ora.", 'Daqui a: «tra / fra».'],
+          ['Ho qualcosa dichiarare.', 'Ho qualcosa da dichiarare.', '«Qualcosa» + «da» + infinitivo.'],
+        ],
+      }),
+      producao(8, 'Encene em voz alta o check-in: você diz o voo, entrega o passaporte, pergunta a que horas é o embarque e em que porta.', 'Vorrei fare il check-in. A che ora è l\'imbarco? Da quale uscita parte il volo?'),
+    ]),
+    sessao('S3', 'No hotel', [
+      revisao(4, 'Diga em voz alta cinco frases do aeroporto com «valigia», «imbarco», «volo» e «ritardo».'),
+      palavras(5, [
+        ['la camera', 'la kámera', 'o quarto', ''], ['la prenotazione', 'la prenotatsiône', 'a reserva', ''], ['camera matrimoniale', 'kámera matrimoniále', 'quarto de casal', ''], ['la colazione', 'la kolatsiône', 'o café da manhã', ''], ['la chiave', 'la kiáve', 'a chave', ''],
+      ]),
+      gramatica(8, 'Reservar, chegar e pedir no hotel', "PASSO 1: chegar: «Buonasera, ho una prenotazione a nome di Silva.» PASSO 2: reservar: «Vorrei una camera singola / doppia / matrimoniale per due notti, dal 3 al 5 maggio.» PASSO 3: perguntar sobre serviços: «La colazione è inclusa?» «C'è il Wi-Fi?» «C'è l'ascensore?» PASSO 4: horários: «A che ora è la colazione?» «A che ora devo lasciare la camera?» PASSO 5: bagagem: «Potrei lasciare i bagagli qui?» PASSO 6: pedir algo: «Mi dà la chiave, per favore?» PASSO 7: problemas: «Non funziona il riscaldamento.» «Non c'è acqua calda.» «L'aria condizionata non va.» PASSO 8: falso amigo: «camera» é o quarto (não a câmera fotográfica, que é «macchina fotografica»); outra palavra para quarto é «stanza».", {
+        tag: 'Viagem',
+        comparacao: "«quarto» em português é o cômodo e também um número ordinal; o italiano usa «camera» (ou «stanza») para o cômodo e «quarto» para o ordinal. O falso amigo mais traiçoeiro é «camera»: não é a câmera de fotografar. Outra palavra útil: «pensione» é uma pequena pousada familiar.",
+        tabela: [
+          { tipo: 'camera singola', italiano: 'Vorrei una camera singola.', sentido: 'quarto individual' },
+          { tipo: 'camera doppia', italiano: 'Vorrei una camera doppia.', sentido: 'quarto duplo' },
+          { tipo: 'camera matrimoniale', italiano: 'Vorrei una camera matrimoniale.', sentido: 'quarto de casal' },
+          { tipo: 'prenotazione', italiano: 'Ho una prenotazione a nome di Silva.', sentido: 'reserva em nome de Silva' },
+          { tipo: 'colazione', italiano: 'La colazione è inclusa?', sentido: 'o café da manhã está incluído?' },
+          { tipo: 'problema', italiano: "Non c'è acqua calda.", sentido: 'não tem água quente' },
+        ],
+        erros: [
+          ['Ho una prenotazione al nome di Silva.', 'Ho una prenotazione a nome di Silva.', 'Expressão fixa: «a nome di».'],
+          ['Vorrei una camera singolo.', 'Vorrei una camera singola.', '«Camera» é feminino.'],
+          ['Vorrei una camera con due notti.', 'Vorrei una camera per due notti.', 'Duração: «per».'],
+          ["Non c'è calda acqua.", "Non c'è acqua calda.", 'O adjetivo vem depois do substantivo.'],
+        ],
+      }),
+      texto(8, 'Un viaggio a Venezia / Uma viagem a Veneza', "Sabato scorso sono andata a Venezia in treno. Il Frecciarossa parte da Milano alle nove e ci vogliono circa due ore e mezza. Ho comprato il biglietto online, quindi non ho dovuto fare la fila in stazione. L'hotel era piccolo ma carino: la camera matrimoniale aveva una finestra sul canale e la colazione era inclusa. Purtroppo il treno del ritorno era in ritardo di venti minuti, ma sono arrivata a casa prima di mezzanotte.", "No sábado passado fui a Veneza de trem. O Frecciarossa parte de Milão às nove e levam cerca de duas horas e meia. Comprei o bilhete on-line, então não precisei ficar na fila na estação. O hotel era pequeno mas simpático: o quarto de casal tinha uma janela para o canal e o café da manhã estava incluído. Infelizmente o trem da volta estava com vinte minutos de atraso, mas cheguei em casa antes da meia-noite.", [
+        ['Come è andata a Venezia?', 'In treno.'], ['Quanto tempo ci vuole da Milano?', 'Circa due ore e mezza.'], ['Dove ha comprato il biglietto?', 'Online.'], ['Com\'era la camera?', 'Matrimoniale, con una finestra sul canale.'], ['Perché è arrivata più tardi a casa?', 'Perché il treno era in ritardo di venti minuti.'],
+      ]),
+      producao(5, 'Reserve um quarto em voz alta: tipo de quarto, noites, datas e uma pergunta sobre o café da manhã.', 'Vorrei una camera doppia per due notti, dal 3 al 5 maggio. La colazione è inclusa?'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 34', [
+      revisao(5, 'Conte em voz alta uma viagem: como você foi, quanto tempo levou, onde dormiu e o que deu errado.'),
+      exercicios(20, [
+        ouvir('Da quale binario parte il treno', ['Da quale binario parte il treno', 'A che ora parte il treno', 'Da quale uscita parte il volo'], 'Da quale binario parte il treno', 'Ouça «binario».'),
+        ouvir('Ci vogliono due ore', ['Ci vogliono due ore', 'Ci vuole un\'ora', 'Dura due ore'], 'Ci vogliono due ore', 'Ouça «ci vogliono».'),
+        ouvir('Vorrei una camera matrimoniale', ['Vorrei una camera matrimoniale', 'Vorrei una camera singola', 'Vorrei una camera doppia'], 'Vorrei una camera matrimoniale', 'Ouça «matrimoniale».'),
+        ditado('Un biglietto per Roma, andata e ritorno', 'Escreva: Un biglietto per Roma, andata e ritorno.'),
+        ditado('Il volo è in ritardo', 'Escreva: Il volo è in ritardo.'),
+        ditado('La colazione è inclusa', 'Escreva: La colazione è inclusa.'),
+        mc('«Quanto tempo demora?» em italiano:', ['Quanto tempo ci vuole?', 'Quanto tempo demora?', 'Quanto tempo prende?'], 'Quanto tempo ci vuole?', 'Use «ci vuole».'),
+        mc('Em italiano «camera» é:', ['o quarto', 'a câmera de fotos', 'a cama'], 'o quarto', 'Falso amigo.'),
+        mc('Como se diz «a mala»?', ['la valigia', 'la valise', 'il bagaglio a mano'], 'la valigia', '«Valigia» = mala.'),
+        mc('«Scendo a Bologna» significa:', ['desço em Bologna', 'subo em Bologna', 'saio de Bologna'], 'desço em Bologna', '«Scendere» = descer.'),
+        lacuna('Un biglietto ___ Firenze, per favore.', ['per', 'a', 'di'], 'per', 'Destino: per.'),
+        lacuna('Ci ___ tre ore. (vuole / vogliono)', ['vogliono', 'vuole', 'vuoi'], 'vogliono', 'Tempo no plural.'),
+        lacuna('Il volo parte ___ un\'ora. (daqui a)', ['tra', 'da', 'per'], 'tra', 'Daqui a: tra / fra.'),
+        lacuna('Ho una prenotazione a ___ di Silva.', ['nome', 'nomi', 'nominato'], 'nome', 'A nome di.'),
+        ordem('Ordene: «A che ora parte il prossimo treno?»', ['A', 'che', 'ora', 'parte', 'il', 'prossimo', 'treno'], 'A che ora parte il prossimo treno?', 'Pergunta de horário.'),
+        ordem('Ordene: «Vorrei una camera per due notti.»', ['Vorrei', 'una', 'camera', 'per', 'due', 'notti'], 'Vorrei una camera per due notti.', 'Reserva.'),
+        livre('Escreva em italiano: Eu queria um bilhete para Roma, ida e volta. Quanto tempo leva? De qual plataforma parte? O café da manhã está incluído?', 'Vorrei un biglietto per Roma, andata e ritorno. Quanto tempo ci vuole? Da quale binario parte? La colazione è inclusa?'),
+      ]),
+      producao(5, 'Fale 1 minuto planejando uma viagem: transporte, horário, hotel, duração e uma dúvida.'),
+    ]),
+  ],
+});

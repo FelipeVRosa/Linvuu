@@ -1,0 +1,102 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 56, titulo: 'Trabalho e entrevista', nivel: 'b1',
+  objetivo: 'Apresentar a sua trajetória profissional, responder às perguntas de uma entrevista de emprego e falar do trabalho no dia a dia.',
+  nota: 'Você agora conta a sua experiência, fala de pontos fortes e responde a uma entrevista em registro formal. Próxima aula: notícias e mídia.',
+  sessoes: [
+    sessao('S1', 'Apresentar a sua trajetória', [
+      revisao(5, 'Apresente-se em voz alta em registro profissional, em quatro frases (aula 35): nome, profissão, onde trabalha, o que faz.'),
+      palavras(8, [
+        ['il curriculum', 'kurríkulum', 'o currículo', ''], ['il colloquio', '', 'a entrevista', ''], ['l\'esperienza', '', 'a experiência', ''], ['le competenze', '', 'as competências', ''], ['l\'azienda', '', 'a empresa', ''], ['il ruolo', '', 'a função / o papel', ''], ['il candidato', '', 'o candidato', ''], ['la laurea', '', 'a graduação (diploma)', ''],
+      ]),
+      gramatica(12, 'Lavoro qui da tre anni, ho lavorato per due anni', 'PASSO 1: para algo que começou no passado e continua, o italiano usa o presente com «da»: «Lavoro in questa azienda da tre anni.» PASSO 2: para algo que terminou, use o passato prossimo com «per»: «Ho lavorato per due anni a Milano.» PASSO 3: para descrever o que você fazia nesse trabalho, use o imperfetto: «Mi occupavo dei clienti stranieri.» PASSO 4: formação: «Mi sono laureato / laureata in economia nel 2019.» (laurearsi in), «Mi sono diplomato / diplomata nel 2015.» PASSO 5: função atual: «Mi occupo di…», «Sono responsabile di…», «Lavoro come ingegnere.» (sem artigo depois de «come»). PASSO 6: com «fare»: «Faccio l\'ingegnere.» (com artigo) PASSO 7: competências: «So usare Excel.», «Parlo inglese e francese.», «Sono abituato / abituata a lavorare in squadra.» PASSO 8: «tre anni fa» = há três anos (um ponto no passado): «Ho iniziato tre anni fa.»', {
+        tag: 'Trabalho',
+        comparacao: 'em português dizemos «trabalho aqui há três anos». O italiano diz «lavoro qui da tre anni» (presente + «da»). Se você usar o passato prossimo («ho lavorato qui da tre anni»), a frase passa a ser estranha. Para um ponto no passado, «há três anos» é «tre anni fa».',
+        tabela: [
+          { estrutura: 'presente + da', quando: 'continua até hoje', exemplo: 'Lavoro qui da tre anni.' },
+          { estrutura: 'passato prossimo + per', quando: 'terminou', exemplo: 'Ho lavorato per due anni a Milano.' },
+          { estrutura: 'imperfetto', quando: 'o que fazia', exemplo: 'Mi occupavo dei clienti.' },
+          { estrutura: 'laurearsi in', quando: 'formação', exemplo: 'Mi sono laureata in lingue.' },
+          { estrutura: 'lavorare come', quando: 'função', exemplo: 'Lavoro come guida turistica.' },
+          { estrutura: 'tempo + fa', quando: 'ponto no passado', exemplo: 'Ho iniziato tre anni fa.' },
+        ],
+        erros: [['Ho lavorato qui da tre anni.', 'Lavoro qui da tre anni.', 'Se ainda trabalha, use o presente com «da».'], ['Ho lavorato da due anni a Milano.', 'Ho lavorato per due anni a Milano.', 'Período terminado: «per».'], ['Mi sono laureato di economia.', 'Mi sono laureato in economia.', 'A preposição é «in».'], ['Lavoro come un ingegnere.', 'Lavoro come ingegnere.', 'Depois de «come» (função), sem artigo.']],
+      }),
+      producao(5, 'Conte em voz alta, em cinco frases, o seu percurso: estudos, experiências anteriores e trabalho atual (ou o que você gostaria de fazer).'),
+    ]),
+    sessao('S2', 'A entrevista: perguntas e respostas', [
+      revisao(4, 'Diga em voz alta três frases com «da» e três com «per» sobre o seu percurso.'),
+      palavras(6, [
+        ['i punti di forza', '', 'os pontos fortes', ''], ['il punto debole', '', 'o ponto fraco', ''], ['lo stipendio', '', 'o salário', ''], ['l\'orario', '', 'o horário', ''], ['la disponibilità', '', 'a disponibilidade', ''], ['crescere', '', 'crescer', ''],
+      ]),
+      gramatica(12, 'Mi parli di Lei, perché vorrebbe lavorare da noi?', 'PASSO 1: o entrevistador usa «Lei»: «Mi parli un po\' di Lei.», «Perché vorrebbe lavorare da noi?», «Quali sono i Suoi punti di forza?» PASSO 2: respostas diretas e claras: «Sono preciso e puntuale.», «Mi piace imparare cose nuove.» PASSO 3: use o condicional para expressar desejo: «Mi piacerebbe lavorare in un team internazionale.», «Vorrei crescere professionalmente.» PASSO 4: use a hipótese com «se» + congiuntivo imperfetto: «Se potessi scegliere, preferirei un lavoro con più contatto con i clienti.» PASSO 5: disponibilidade: «Sono disponibile da subito.», «Sono disponibile a viaggiare / a trasferirmi.» PASSO 6: pergunte você também: «Posso chiedere com\'è l\'orario?», «Quali sarebbero le mie responsabilità?» PASSO 7: ponto fraco, com honestidade e saída positiva: «A volte sono troppo perfezionista, ma sto imparando a delegare.» PASSO 8: para fechar: «La ringrazio per il tempo che mi ha dedicato.»', {
+        tag: 'Trabalho',
+        comparacao: 'em português, «gostaria de» abre muitos pedidos. O italiano usa «vorrei» e «mi piacerebbe», mas a preposição muda: «disponibile a» + infinitivo, e não «de». Quanto a «piacere», o verbo concorda com o que agrada: «mi piace lavorare» (infinitivo = singular).',
+        tabela: [
+          { pergunta: 'Mi parli un po\' di Lei.', resposta: 'Mi sono laureata in lingue e lavoro in un\'agenzia da quattro anni.' },
+          { pergunta: 'Perché vorrebbe lavorare da noi?', resposta: 'Mi piacerebbe lavorare in un team internazionale.' },
+          { pergunta: 'Quali sono i Suoi punti di forza?', resposta: 'Sono precisa, puntuale e abituata a lavorare in squadra.' },
+          { pergunta: 'Qual è il Suo punto debole?', resposta: 'A volte sono troppo perfezionista, ma sto imparando a delegare.' },
+          { pergunta: 'Quando sarebbe disponibile a iniziare?', resposta: 'Sono disponibile da subito.' },
+        ],
+        erros: [['Mi piacerei lavorare qui.', 'Mi piacerebbe lavorare qui.', 'O condicional de «piacere» concorda com o que agrada: «piacerebbe».'], ['Sono disponibile di iniziare subito.', 'Sono disponibile a iniziare subito.', '«Disponibile a» + infinitivo.'], ['Mi interesso a questo ruolo.', 'Mi interessa questo ruolo.', '«Interessare» funciona como «piacere»; ou «sono interessato a».'], ['Mi piacciono lavorare in squadra.', 'Mi piace lavorare in squadra.', 'Com infinitivo, «piace» fica no singular.']],
+      }),
+      producao(8, 'Simule uma entrevista em voz alta: faça as cinco perguntas da tabela e responda a cada uma com sua própria história.'),
+    ]),
+    sessao('S3', 'O trabalho de todos os dias', [
+      revisao(4, 'Diga em voz alta três perguntas que você faria a um entrevistador sobre o cargo.'),
+      palavras(5, [
+        ['il tempo pieno', '', 'o período integral', ''], ['il part-time', '', 'o meio período', ''], ['le ferie', '', 'as férias (do trabalho)', ''], ['la scadenza', '', 'o prazo', ''], ['il collega', '', 'o colega', ''],
+      ]),
+      gramatica(8, 'Parlare del lavoro quotidiano', 'PASSO 1: «lavoro» é singular e muitas vezes sem artigo em expressões gerais: «Cerco lavoro.», «Ho trovato lavoro.» PASSO 2: tipo de contrato em termos gerais: «lavoro a tempo pieno» ou «part-time». PASSO 3: horário: «Comincio alle nove e finisco alle cinque.» PASSO 4: papéis: «Mi occupo dei clienti.», «Sono responsabile del progetto.», «Faccio parte di un team.» PASSO 5: prazos e tarefas: «rispettare le scadenze», «consegnare un progetto». PASSO 6: «le ferie» só existe no plural: «Sono in ferie.», «Vado in ferie ad agosto.» PASSO 7: lembre da armadilha: «ditta», «azienda» e «impresa» são sinônimos próximos de «empresa»; «stipendio» é o salário que se recebe todo mês.', {
+        tag: 'Trabalho',
+        comparacao: 'o português também usa «férias» só no plural. O italiano faz o mesmo («le ferie») e diz «sono in ferie». Cuidado com as preposições: «occuparsi di», «far parte di».',
+        tabela: [
+          { expressao: 'cercare lavoro', sentido: 'procurar emprego', exemplo: 'Cerco lavoro nel settore turistico.' },
+          { expressao: 'occuparsi di', sentido: 'cuidar de', exemplo: 'Mi occupo dei clienti stranieri.' },
+          { expressao: 'far parte di', sentido: 'fazer parte de', exemplo: 'Faccio parte di un team di dieci persone.' },
+          { expressao: 'rispettare le scadenze', sentido: 'cumprir prazos', exemplo: 'È importante rispettare le scadenze.' },
+          { expressao: 'essere in ferie', sentido: 'estar de férias', exemplo: 'Il direttore è in ferie fino a lunedì.' },
+        ],
+        erros: [['Sono in feria.', 'Sono in ferie.', '«Ferie» só existe no plural.'], ['Faccio parte da un team.', 'Faccio parte di un team.', '«Far parte di».'], ['Mi occupo con i clienti.', 'Mi occupo dei clienti.', '«Occuparsi di».'], ['Ho iniziato a lavorare qui tre anni.', 'Ho iniziato a lavorare qui tre anni fa.', 'Ponto no passado: «tre anni fa».']],
+      }),
+      dialogo(8, 'Il colloquio', 'Valentina faz uma entrevista para uma vaga em uma agência de viagens.', [
+        ['Il direttore', 'Buongiorno, signora Moretti, si accomodi. Mi parli un po\' di Lei.', 'Bom dia, senhora Moretti, sente-se. Fale um pouco da senhora.'],
+        ['Valentina', 'Buongiorno e grazie. Mi sono laureata in lingue nel 2018 e lavoro in un\'agenzia di viaggi da quattro anni.', 'Bom dia e obrigada. Formei-me em línguas em 2018 e trabalho numa agência de viagens há quatro anos.'],
+        ['Il direttore', 'Di che cosa si occupa esattamente?', 'Do que exatamente a senhora cuida?'],
+        ['Valentina', 'Mi occupo dei clienti stranieri: preparo i programmi e rispondo alle richieste. Prima, per due anni, ho lavorato in un hotel.', 'Cuido dos clientes estrangeiros: preparo os roteiros e respondo aos pedidos. Antes, por dois anos, trabalhei num hotel.'],
+        ['Il direttore', 'Perché vorrebbe cambiare lavoro?', 'Por que a senhora gostaria de mudar de emprego?'],
+        ['Valentina', 'Mi piacerebbe avere più responsabilità e lavorare in un team internazionale.', 'Eu gostaria de ter mais responsabilidades e trabalhar em uma equipe internacional.'],
+        ['Il direttore', 'Quali sono i Suoi punti di forza?', 'Quais são os seus pontos fortes?'],
+        ['Valentina', 'Sono precisa, puntuale e abituata a lavorare in squadra. Parlo inglese e francese.', 'Sou precisa, pontual e acostumada a trabalhar em equipe. Falo inglês e francês.'],
+        ['Il direttore', 'Quando sarebbe disponibile a iniziare?', 'Quando a senhora estaria disponível para começar?'],
+        ['Valentina', 'Dovrei prima parlarne con la mia azienda attuale, ma Le darò una data precisa al più presto.', 'Eu precisaria primeiro conversar com minha empresa atual, mas darei uma data precisa o quanto antes.'],
+      ]),
+      producao(5, 'Diga em voz alta como você responderia à pergunta final do diretor.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 56', [
+      revisao(5, 'Releia as perguntas e respostas da entrevista e diga em voz alta a sua versão de cada uma.'),
+      exercicios(20, [
+        ouvir('Lavoro in questa azienda da tre anni', ['Lavoro in questa azienda da tre anni', 'Ho lavorato in questa azienda da tre anni', 'Lavoravo in questa azienda per tre anni'], 'Lavoro in questa azienda da tre anni', 'Presente + «da».'),
+        ouvir('Mi sono laureata in lingue', ['Mi sono laureata in lingue', 'Mi sono laureata di lingue', 'Ho laureato in lingue'], 'Mi sono laureata in lingue', '«Laurearsi in».'),
+        ouvir('Mi piacerebbe lavorare in un team internazionale', ['Mi piacerebbe lavorare in un team internazionale', 'Mi piacerei lavorare in un team internazionale', 'Mi piace lavorare in un team internazionale'], 'Mi piacerebbe lavorare in un team internazionale', 'Condicional de «piacere».'),
+        ditado('Sono disponibile da subito', 'Escreva: Sono disponibile da subito.'),
+        ditado('Mi occupo dei clienti stranieri', 'Escreva: Mi occupo dei clienti stranieri.'),
+        ditado('Quali sono i Suoi punti di forza', 'Escreva: Quali sono i Suoi punti di forza.'),
+        mc('Para algo que ainda continua, use:', ['presente + da', 'passato prossimo + per', 'imperfetto + da'], 'presente + da', '«Lavoro qui da tre anni».'),
+        mc('«Ho lavorato per due anni a Milano» indica:', ['período terminado', 'algo que continua', 'um plano para o futuro'], 'período terminado', 'Passato prossimo + «per».'),
+        mc('Qual frase está correta?', ['Lavoro come ingegnere.', 'Lavoro come un ingegnere.', 'Lavoro come l\'ingegnere.'], 'Lavoro come ingegnere.', 'Função sem artigo.'),
+        mc('«Le ferie» é:', ['sempre plural', 'sempre singular', 'invariável'], 'sempre plural', '«Essere in ferie».'),
+        lacuna('Sono disponibile ___ trasferirmi.', ['a', 'di', 'per'], 'a', '«Disponibile a».'),
+        lacuna('Mi ___ dei clienti stranieri. (cuido)', ['occupo', 'preoccupo', 'occupa'], 'occupo', '«Occuparsi di».'),
+        lacuna('Ho iniziato a lavorare qui tre anni ___ .', ['fa', 'da', 'per'], 'fa', 'Ponto no passado.'),
+        lacuna('Mi ___ lavorare in squadra. (gosto)', ['piace', 'piacciono', 'piaccio'], 'piace', 'Infinitivo = singular.'),
+        ordem('Ordene: «Lavoro qui da tre anni.»', ['Lavoro', 'qui', 'da', 'tre', 'anni'], 'Lavoro qui da tre anni.', 'Presente + «da».'),
+        ordem('Ordene: «Sono disponibile da subito.»', ['Sono', 'disponibile', 'da', 'subito'], 'Sono disponibile da subito.', 'Disponibilidade.'),
+        livre('Escreva em italiano: Trabalho nesta empresa há três anos. Formei-me em economia. Eu gostaria de trabalhar em equipe.', 'Lavoro in questa azienda da tre anni. Mi sono laureato in economia. Mi piacerebbe lavorare in squadra.'),
+      ]),
+      producao(5, 'Fale 1 minuto respondendo a «Mi parli un po\' di Lei».'),
+    ]),
+  ],
+});

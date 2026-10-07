@@ -1,0 +1,104 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 51, titulo: 'Si impersonale e si passivante', nivel: 'b1',
+  objetivo: 'Usar «si» para falar de regras e costumes em geral («si mangia tardi») e para dizer «vende-se / fala-se» («si vendono case»), com a concordância certa.',
+  nota: 'Você agora lê placas e avisos e descreve hábitos de um lugar sem dizer quem faz. Próxima aula: relativos (il quale, chi, ciò che).',
+  sessoes: [
+    sessao('S1', 'Si passivante: placas, anúncios, instruções', [
+      revisao(5, 'Diga em voz alta três frases com o gerundio (aula 50), por exemplo: «Camminando, ho incontrato un amico.»'),
+      palavras(8, [
+        ['un cartello', '', 'uma placa', ''], ['vietato', '', 'proibido', ''], ['consentito', '', 'permitido', ''], ['l\'ingresso', '', 'a entrada', ''], ['il regolamento', '', 'o regulamento', ''], ['in genere', '', 'em geral', ''], ['la regola', '', 'a regra', ''], ['l\'abitudine', '', 'o hábito', ''],
+      ]),
+      gramatica(12, 'Si vende la casa, si vendono le case', 'PASSO 1: o «si passivante» coloca «si» antes do verbo na 3ª pessoa, e o verbo concorda com a coisa de que se fala. PASSO 2: coisa no singular, verbo no singular: «Si vende la casa.» PASSO 3: coisa no plural, verbo no plural: «Si vendono due case.» PASSO 4: é a forma típica de placas e anúncios: «Si affittano camere.», «Qui si parla inglese.» PASSO 5: também serve para receitas e instruções: «Si taglia la cipolla e si aggiunge l\'olio.» PASSO 6: ela não diz quem faz a ação. Se precisar do agente, use a passiva com «da» (aula 49): «La casa è stata venduta da mio zio.» PASSO 7: a pergunta de controle é sempre a mesma: o que é vendido, falado ou comido está no singular ou no plural?', {
+        tag: 'Si impersonale e passivante',
+        comparacao: 'o português tem a mesma estrutura («vende-se casa», «vendem-se casas»), mas na fala brasileira é comum dizer «vende-se casas». No italiano, a concordância com o plural é a norma na escrita e nas placas: «si vendono case».',
+        tabela: [
+          { coisa: 'singular', exemplo: 'Si vende la casa.', nota: 'verbo no singular' },
+          { coisa: 'plural', exemplo: 'Si vendono due case.', nota: 'verbo no plural' },
+          { coisa: 'anúncio', exemplo: 'Si affittano camere.', nota: 'camere é plural' },
+          { coisa: 'língua', exemplo: 'Qui si parla italiano.', nota: 'a língua é singular' },
+          { coisa: 'receita', exemplo: 'Si mescolano le uova e lo zucchero.', nota: 'dois ingredientes: plural' },
+          { coisa: 'comida', exemplo: 'Qui si mangiano ottimi gnocchi.', nota: 'gnocchi é plural' },
+        ],
+        erros: [['Si vende due case.', 'Si vendono due case.', 'O verbo concorda com «due case», que é plural.'], ['Qui si mangia gli gnocchi.', 'Qui si mangiano gli gnocchi.', '«Gli gnocchi» é plural: o verbo vai ao plural.'], ['Si vendono la casa.', 'Si vende la casa.', '«La casa» é singular: o verbo fica no singular.'], ['Si affitta camere.', 'Si affittano camere.', '«Camere» é plural.']],
+      }),
+      producao(5, 'Invente em voz alta três placas ou anúncios com o «si passivante», por exemplo: «Si vendono biciclette usate.»'),
+    ]),
+    sessao('S2', 'Si impersonale: o que se faz em geral', [
+      revisao(4, 'Releia em voz alta a tabela da sessão anterior trocando cada coisa do singular para o plural (e vice-versa).'),
+      palavras(6, [
+        ['di solito', '', 'geralmente', ''], ['la gente', '', 'as pessoas / a gente', ''], ['l\'usanza', '', 'o costume', ''], ['ovunque', '', 'em qualquer lugar', ''], ['soprattutto', '', 'sobretudo', ''], ['a seconda di', '', 'dependendo de', ''],
+      ]),
+      gramatica(12, 'Si mangia tardi, ci si alza presto', 'PASSO 1: o «si impersonale» fala de pessoas em geral (todo mundo, qualquer pessoa). Forma: «si» + 3ª pessoa do singular: «In Italia si mangia tardi.», «Qui si vive bene.» PASSO 2: com «essere» e adjetivo, o adjetivo vai ao plural: «Quando si è stanchi, si dorme.», «Si è contenti.» PASSO 3: com verbos reflexivos, o primeiro «si» vira «ci»: «Ci si alza presto.», «Ci si sente bene.» Nunca «si si». PASSO 4: no passato prossimo com «avere», o impessoal usa «essere» e o particípio no masculino singular: «Si è mangiato bene.» PASSO 5: com verbos que já usam «essere», o particípio vai ao plural: «Si è arrivati tardi.» PASSO 6: reflexivos no passato: «Ci si è divertiti molto.» PASSO 7: este «si» é diferente do passivante: aqui não há uma coisa que o verbo deva acompanhar; fala-se de gente em geral. PASSO 8: alternativa mais rara e literária: «uno» («Uno non sa mai.»).', {
+        tag: 'Si impersonale e passivante',
+        comparacao: 'o português do Brasil costuma dizer «a gente» ou «você» para generalizar («aqui você come tarde»). O italiano usa «si»; «tu» e «voi» soam como falar com alguém em particular. Atenção especial ao adjetivo: «si è stanchi» (plural), algo que o português não faz.',
+        tabela: [
+          { caso: 'verbo simples', exemplo: 'In Italia si mangia tardi.' },
+          { caso: 'essere + adjetivo', exemplo: 'Quando si è stanchi, si dorme.' },
+          { caso: 'reflexivo', exemplo: 'Ci si alza presto.' },
+          { caso: 'passato (avere)', exemplo: 'Si è mangiato bene.' },
+          { caso: 'passato (essere)', exemplo: 'Si è arrivati tardi.' },
+          { caso: 'reflexivo no passato', exemplo: 'Ci si è divertiti molto.' },
+        ],
+        exemplos: [['Qui si vive bene.', 'Aqui se vive bem.'], ['Quando si è giovani, si dorme poco.', 'Quando se é jovem, dorme-se pouco.'], ['Ci si sente a casa in questo paese.', 'Sente-se em casa neste país.']],
+        erros: [['Quando si è stanco, si dorme.', 'Quando si è stanchi, si dorme.', 'Com «essere» no impessoal, o adjetivo vai ao plural.'], ['Si si alza presto.', 'Ci si alza presto.', 'Com reflexivo, o primeiro «si» vira «ci».'], ['Si ha mangiato bene.', 'Si è mangiato bene.', 'No impessoal, o auxiliar é sempre «essere».'], ['In Italia si mangiano tardi.', 'In Italia si mangia tardi.', 'Impessoal: verbo no singular; não há coisa plural a que concordar.']],
+      }),
+      producao(8, 'Explique em voz alta, a um estrangeiro, cinco hábitos de uma cidade que você conhece (horários, comida, transporte), usando o «si impersonale». Comece por: «Nella mia città, di solito si…»'),
+    ]),
+    sessao('S3', 'Si com modais, tempos compostos e perguntas', [
+      revisao(4, 'Diga cinco frases com «si è» + adjetivo no plural: «si è stanchi», «si è contenti», «si è nervosi»...'),
+      palavras(5, [
+        ['come si dice', '', 'como se diz', ''], ['come si scrive', '', 'como se escreve', ''], ['non si può', '', 'não se pode', ''], ['si deve', '', 'deve-se', ''], ['a mani vuote', '', 'de mãos vazias', ''],
+      ]),
+      gramatica(8, 'Si + modal, si + passato, perguntas úteis', 'PASSO 1: perguntas úteis para quem vive ou viaja: «Come si dice…?», «Come si scrive…?», «Dove si comprano i biglietti?» PASSO 2: com modal, o verbo modal concorda com a coisa se for passivante: «Si possono comprare i biglietti online.»; sem coisa, fica no singular: «Qui non si può fumare.» PASSO 3: o passivante no passato usa «essere» e o particípio concorda: «Si sono vendute tutte le case.», «Si è venduta la casa.» PASSO 4: «la gente» é singular: «La gente mangia tardi.» PASSO 5: quando o primeiro «si» entra em choque com outro «si», use «ci si»: «Ci si può fidare.»', {
+        tag: 'Si impersonale e passivante',
+        comparacao: 'no português, «não se pode fumar aqui» e «vendem-se casas» são naturais, mas o passado do passivante («venderam-se todas as casas») soa formal. O italiano usa «si sono vendute» em qualquer registro, com o particípio concordando em gênero e número.',
+        tabela: [
+          { uso: 'pergunta', exemplo: 'Come si scrive il suo cognome?' },
+          { uso: 'modal + coisa', exemplo: 'Si possono usare le carte di credito?' },
+          { uso: 'modal sem coisa', exemplo: 'Qui non si può parcheggiare.' },
+          { uso: 'passivante no passato', exemplo: 'Si sono vendute tutte le case.' },
+          { uso: 'ci si', exemplo: 'Ci si può fidare di lui.' },
+        ],
+        erros: [['Si è venduto tutte le case.', 'Si sono vendute tutte le case.', 'Passivante composto: essere + particípio concordando com «le case».'], ['Dove si compra i biglietti?', 'Dove si comprano i biglietti?', '«I biglietti» é plural.'], ['La gente mangiano tardi.', 'La gente mangia tardi.', '«La gente» é singular em italiano.'], ['Si si può fidare.', 'Ci si può fidare.', 'Dois «si» seguidos viram «ci si».']],
+      }),
+      dialogo(8, 'Come si fa qui?', 'João acabou de chegar à Itália e pergunta à colega Laura como funcionam os costumes do dia a dia.', [
+        ['João', 'Laura, posso farti una domanda? Al bar, come si ordina il caffè?', 'Laura, posso te fazer uma pergunta? No bar, como se pede o café?'],
+        ['Laura', 'Si dice semplicemente «un caffè». Di solito si beve al banco, in piedi.', 'Diz-se simplesmente «um caffè». Geralmente bebe-se no balcão, em pé.'],
+        ['João', 'E il cappuccino? Si può ordinare anche dopo pranzo?', 'E o cappuccino? Pode-se pedir também depois do almoço?'],
+        ['Laura', 'Si può, ma di solito dopo i pasti si preferisce l\'espresso.', 'Pode-se, mas geralmente depois das refeições prefere-se o espresso.'],
+        ['João', 'Capito. E a cena? A che ora si mangia?', 'Entendi. E o jantar? A que horas se come?'],
+        ['Laura', 'Dipende dalla zona, ma in genere si cena verso le otto o più tardi.', 'Depende da região, mas em geral janta-se por volta das oito ou mais tarde.'],
+        ['João', 'Da noi si cena prima. Qui si resta a tavola a lungo, vero?', 'Lá no Brasil janta-se mais cedo. Aqui fica-se à mesa por muito tempo, não é?'],
+        ['Laura', 'Sì, soprattutto quando si è con gli amici: non si ha mai fretta.', 'Sim, sobretudo quando se está com os amigos: nunca se tem pressa.'],
+        ['João', 'Ultima cosa: se mi invitano a casa, che cosa si porta?', 'Última coisa: se me convidam para ir à casa deles, o que se leva?'],
+        ['Laura', 'Di solito un dolce o una bottiglia di vino. È gentile non arrivare a mani vuote.', 'Geralmente uma sobremesa ou uma garrafa de vinho. É gentil não chegar de mãos vazias.'],
+      ]),
+      producao(5, 'Descreva em voz alta três costumes do seu país com «si»: «In Brasile si mangia…», «Quando si è invitati, si…».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 51', [
+      revisao(5, 'Releia em voz alta as três tabelas da aula e diga uma frase nova para cada linha.'),
+      exercicios(20, [
+        ouvir('Qui si parla italiano', ['Qui si parla italiano', 'Qui si parlano italiani', 'Qui parla italiano'], 'Qui si parla italiano', 'Língua no singular: «si parla».'),
+        ouvir('Si vendono due case', ['Si vendono due case', 'Si vende due case', 'Si sono vendute due case'], 'Si vendono due case', 'Plural: «si vendono».'),
+        ouvir('Ci si alza presto', ['Ci si alza presto', 'Si si alza presto', 'Ci alziamo presto'], 'Ci si alza presto', 'Reflexivo impessoal: «ci si».'),
+        ditado('Quando si è stanchi, si dorme', 'Escreva: Quando si è stanchi, si dorme.'),
+        ditado('Si sono vendute tutte le case', 'Escreva: Si sono vendute tutte le case.'),
+        ditado('Qui non si può parcheggiare', 'Escreva: Qui non si può parcheggiare.'),
+        mc('Qual frase está correta?', ['Si affittano camere.', 'Si affitta camere.', 'Si affittiamo camere.'], 'Si affittano camere.', '«Camere» é plural: o verbo concorda.'),
+        mc('No impessoal com «essere», o adjetivo fica:', ['no plural', 'no singular', 'invariável sem concordância'], 'no plural', '«Si è stanchi», «si è contenti».'),
+        mc('Qual é a forma certa do passato prossimo impessoal de «mangiare»?', ['Si è mangiato bene.', 'Si ha mangiato bene.', 'Si è mangiati bene.'], 'Si è mangiato bene.', 'Com verbo que usa «avere», o impessoal usa «essere» + particípio no masculino singular.'),
+        mc('«La gente» pede o verbo:', ['no singular', 'no plural', 'no infinitivo'], 'no singular', '«La gente mangia tardi».'),
+        lacuna('Ci ___ alza presto in questa casa. (reflexivo impessoal)', ['si', 'ci', 'mi'], 'si', 'A sequência é «ci si alza».'),
+        lacuna('Qui ___ mangiano ottimi gnocchi.', ['si', 'ci', 'ne'], 'si', 'Passivante: «si mangiano».'),
+        lacuna('Quando si è giovani, si è spesso ___ . (cansados)', ['stanchi', 'stanco', 'stanca'], 'stanchi', 'Adjetivo no plural.'),
+        lacuna('Come ___ scrive il suo cognome?', ['si', 'ci', 'le'], 'si', 'Pergunta com «si».'),
+        ordem('Ordene: «Qui si parla italiano.»', ['Qui', 'si', 'parla', 'italiano'], 'Qui si parla italiano.', 'Passivante singular.'),
+        ordem('Ordene: «Non si può parcheggiare qui.»', ['Non', 'si', 'può', 'parcheggiare', 'qui'], 'Non si può parcheggiare qui.', 'Negação antes de «si».'),
+        livre('Escreva em italiano: Aqui se come tarde. Vendem-se duas casas. Quando se está cansado, dorme-se.', 'Qui si mangia tardi. Si vendono due case. Quando si è stanchi, si dorme.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre os costumes de uma cidade ou de um país, usando «si» pelo menos seis vezes.'),
+    ]),
+  ],
+});

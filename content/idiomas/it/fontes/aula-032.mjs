@@ -1,0 +1,114 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 32, titulo: 'Relativos che e cui', nivel: 'a2',
+  objetivo: "Unir frases com o relativo «che» (sujeito e objeto), usar «preposição + cui» (con cui, di cui, in cui, a cui, per cui) e dizer «quello che», «dove» e «il giorno in cui».",
+  nota: "Você descreve pessoas, coisas e lugares em uma só frase, sem repetir palavras. Próxima aula: saúde, no médico e na farmácia.",
+  sessoes: [
+    sessao('S1', 'Che: o relativo mais simples', [
+      revisao(5, 'Diga em voz alta três frases com «da» (há quanto tempo) e três com «fra» (daqui a quanto tempo), aula 31.'),
+      palavras(8, [
+        ['che', 'ke', 'que (relativo)', ''], ['il libro che', 'il líbro ke', 'o livro que', ''], ['la persona che', 'la persôna ke', 'a pessoa que', ''], ['la ragazza che', 'la ragáttsa ke', 'a moça que', ''],
+        ["l'uomo che", 'luômo ke', 'o homem que', ''], ['la casa che', 'la kása ke', 'a casa que', ''], ['il film che', 'il film ke', 'o filme que', ''], ['quello che', 'kuéllo ke', 'aquilo que / o que', ''],
+      ]),
+      gramatica(12, 'Che: sujeito ou objeto', "PASSO 1: o relativo liga duas frases em uma: «Ho un amico. L'amico abita a Roma.» → «Ho un amico che abita a Roma.» PASSO 2: «che» serve para pessoas e coisas, como sujeito ou como objeto direto, e nunca varia (não há masculino, feminino nem plural). PASSO 3: como sujeito: «La ragazza che parla è mia sorella.» PASSO 4: como objeto direto: «Il libro che leggo è bello.» «Il film che abbiamo visto era lungo.» PASSO 5: não se repete o pronome: «Il libro che leggo» (e não «che lo leggo»). PASSO 6: o verbo concorda com o antecedente, a palavra à qual «che» se refere: «Gli amici che vengono sono simpatici.» «Le amiche che abitano a Milano.» PASSO 7: não use «chi» como relativo. «Chi» significa «quem» em perguntas («Chi è?») e em frases como «chi parla», não depois de substantivo. PASSO 8: não confunda com o «che» conjunção: «Dico che il film è bello» (digo que o filme é bom) e com o interrogativo «che cosa» (o quê).", {
+        tag: 'Relativos',
+        comparacao: "o «que» relativo do português corresponde ao «che» italiano: «o livro que leio» = «il libro che leggo». A diferença é que o italiano básico não usa «quem» nem «o qual» para esse papel. Dois cuidados: não repetir o objeto («o livro que eu li ele» não existe em italiano) e não usar «chi»: «la persona che parla», nunca «la persona chi parla».",
+        tabela: [
+          { duas_frases: "Ho un amico. L'amico abita a Roma.", com_che: 'Ho un amico che abita a Roma.' },
+          { duas_frases: 'Leggo un libro. Il libro è bello.', com_che: 'Il libro che leggo è bello.' },
+          { duas_frases: 'Ho visto un film. Il film era lungo.', com_che: 'Il film che ho visto era lungo.' },
+          { duas_frases: 'La ragazza parla. La ragazza è mia sorella.', com_che: 'La ragazza che parla è mia sorella.' },
+          { duas_frases: 'Le amiche abitano a Milano. Sono simpatiche.', com_che: 'Le amiche che abitano a Milano sono simpatiche.' },
+        ],
+        erros: [
+          ['La persona chi parla è Marco.', 'La persona che parla è Marco.', '«Chi» não é relativo depois de substantivo; use «che».'],
+          ['Il libro che lo leggo è bello.', 'Il libro che leggo è bello.', 'Não se repete o pronome: «che» já é o objeto.'],
+          ['Ho un amico che abito a Roma.', 'Ho un amico che abita a Roma.', 'O verbo concorda com o antecedente («amico»).'],
+          ['Le persone che parla sono simpatiche.', 'Le persone che parlano sono simpatiche.', 'Antecedente no plural: verbo no plural.'],
+        ],
+      }),
+      producao(5, 'Una duas frases em uma, em voz alta, cinco vezes. Exemplo: «Ho un amico. L\'amico lavora a Milano.» vira «Ho un amico che lavora a Milano.»', 'Ho una sorella che vive a Torino. Leggo un libro che mi piace molto.'),
+    ]),
+    sessao('S2', 'Preposição + cui', [
+      revisao(4, 'Una em voz alta três pares de frases com «che» (sujeito) e três com «che» (objeto).'),
+      palavras(6, [
+        ['con cui', 'kon kui', 'com quem / com o qual', ''], ['di cui', 'di kui', 'de quem / do qual', ''], ['a cui', 'a kui', 'a quem / ao qual', ''], ['in cui', 'in kui', 'em que / no qual', ''], ['per cui', 'per kui', 'por quem / pelo qual', ''], ['da cui', 'da kui', 'de onde / do qual', ''],
+      ]),
+      gramatica(12, 'Cui depois de preposição', "PASSO 1: se o relativo vem depois de uma preposição (com, de, em, a, por, para), use «cui», e não «che»: «La ragazza con cui parlo è Anna.» PASSO 2: a forma é «preposição + cui», sem artigo: con cui, di cui, a cui, da cui, in cui, per cui, su cui, tra cui. PASSO 3: serve para pessoas e coisas: «la persona a cui scrivo», «la città in cui abito», «il film di cui parli». PASSO 4: «in cui» vale para lugar e para tempo: «la casa in cui abito», «il giorno in cui sono arrivato». PASSO 5: a preposição fica antes de «cui», nunca no fim da frase: «la ragazza con cui parlo», e não «la ragazza che parlo con». PASSO 6: não se repete a pessoa: «La ragazza con cui parlo» (e não «con cui parlo con lei»). PASSO 7: na fala informal usa-se também «dove» para lugar: «la città dove abito» = «la città in cui abito». PASSO 8: cuidado com verbos que levam sujeito diferente: «Il film che mi piace» (o filme é o sujeito de «piace»), e não «il film di cui mi piace». PASSO 9: pergunte-se: o verbo da segunda frase pede uma preposição? Se sim, use «preposição + cui»; se não, use «che».", {
+        tag: 'Relativos',
+        comparacao: "o português usa «com quem», «de que», «onde», «em que»: «a pessoa com quem falo», «a cidade onde moro», «o filme de que gosto». O italiano resolve quase tudo com «cui»: «la persona con cui parlo», «la città in cui abito». Na fala, o brasileiro costuma dizer «a pessoa que eu falei com ela» ou «o filme que eu gosto», sem a preposição: o italiano não aceita isso. E o inverso: «o filme de que gosto» não vira «di cui»; o italiano diz «il film che mi piace», porque «piacere» põe o filme como sujeito.",
+        tabela: [
+          { prep_cui: 'con cui', exemplo: 'La ragazza con cui parlo è Anna.', sentido: 'com quem / com a qual' },
+          { prep_cui: 'di cui', exemplo: 'Il film di cui parli è lungo.', sentido: 'de que / do qual' },
+          { prep_cui: 'a cui', exemplo: 'La persona a cui scrivo è un amico.', sentido: 'a quem / à qual' },
+          { prep_cui: 'in cui', exemplo: 'La città in cui abito è piccola.', sentido: 'em que / na qual' },
+          { prep_cui: 'per cui', exemplo: 'Il motivo per cui studio è il lavoro.', sentido: 'pelo qual / por isso' },
+          { prep_cui: 'da cui', exemplo: 'La città da cui vengo è Napoli.', sentido: 'de onde / da qual' },
+        ],
+        erros: [
+          ['La ragazza che parlo con è Anna.', 'La ragazza con cui parlo è Anna.', 'A preposição vem antes de «cui».'],
+          ['La città che abito è bella.', 'La città in cui abito è bella.', '«Abitare in»: depois da preposição use «cui».'],
+          ['Il film di cui mi piace è lungo.', 'Il film che mi piace è lungo.', '«Piacere»: o filme é sujeito, então «che».'],
+          ["L'amica a che scrivo è Sara.", "L'amica a cui scrivo è Sara.", 'Depois de preposição não se usa «che», e sim «cui».'],
+        ],
+      }),
+      producao(8, 'Descreva em voz alta: a cidade em cui você mora, a pessoa con cui você mais fala, o lugar in cui você gosta de ficar e algo di cui você precisa.', 'La città in cui abito è grande. La persona con cui parlo di più è mia madre.'),
+    ]),
+    sessao('S3', 'Quello che, dove e il giorno in cui', [
+      revisao(4, 'Faça em voz alta três frases com «con cui», «di cui» e «in cui».'),
+      palavras(5, [
+        ['quello che', 'kuéllo ke', 'o que / aquilo que', ''], ['tutto quello che', 'tútto kuéllo ke', 'tudo o que', ''], ['dove', 'dôve', 'onde', ''], ['il giorno in cui', 'il djórno in kui', 'o dia em que', ''], ['la prima volta che', 'la príma vólta ke', 'a primeira vez que', ''],
+      ]),
+      gramatica(8, 'Quello che, dove, in cui', "PASSO 1: «quello che» (aquilo que, o que) não tem antecedente: «Non capisco quello che dici.» PASSO 2: «tutto quello che» (tudo o que): «Tutto quello che voglio è dormire.» PASSO 3: «dove» (onde) para lugar: «Il bar dove ci vediamo è vicino.» PASSO 4: para tempo, use «in cui» ou «che», e nunca «quando»: «il giorno in cui sono arrivato». Para «a primeira vez que» diz-se «la prima volta che». PASSO 5: «quello che» concorda com o verbo seguinte: «Quello che dici è vero.» PASSO 6: em textos mais formais aparece «ciò che» (veja o B1). Por enquanto, «quello che» basta.", {
+        tag: 'Relativos',
+        comparacao: "em português dizemos «o que você diz», «tudo o que eu quero», «o dia em que cheguei», «a primeira vez que vi». O italiano segue o mesmo caminho: «quello che dici», «tutto quello che voglio», «il giorno in cui sono arrivato», «la prima volta che ho visto». A armadilha é usar «quando» como relativo: «il giorno quando» é erro.",
+        tabela: [
+          { estrutura: 'quello che', sentido: 'o que / aquilo que', exemplo: 'Non capisco quello che dici.' },
+          { estrutura: 'tutto quello che', sentido: 'tudo o que', exemplo: 'Tutto quello che voglio è dormire.' },
+          { estrutura: 'dove', sentido: 'onde (lugar)', exemplo: 'Il bar dove ci vediamo è vicino.' },
+          { estrutura: 'il giorno in cui', sentido: 'o dia em que', exemplo: 'Il giorno in cui sono arrivato pioveva.' },
+          { estrutura: 'la prima volta che', sentido: 'a primeira vez que', exemplo: 'La prima volta che ho visto il mare.' },
+        ],
+        erros: [
+          ['Il giorno quando sono arrivato pioveva.', 'Il giorno in cui sono arrivato pioveva.', '«Quando» não é relativo: use «in cui».'],
+          ['Non capisco che dici.', 'Non capisco quello che dici.', 'Faltou «quello» antes de «che».'],
+          ['Tutto che voglio è dormire.', 'Tutto quello che voglio è dormire.', '«Tutto quello che».'],
+          ['La prima volta quando ho visto il mare.', 'La prima volta che ho visto il mare.', '«Quando» não é relativo: use «che».'],
+        ],
+      }),
+      dialogo(8, 'Una foto di famiglia / Uma foto de família', 'Elena mostra a Paolo uma foto da infância.', [
+        ['Elena', 'Guarda, questa è la casa in cui sono cresciuta.', 'Olhe, esta é a casa em que eu cresci.'],
+        ['Paolo', 'Bella! E chi è la signora che sta davanti alla porta?', 'Bonita! E quem é a senhora que está na frente da porta?'],
+        ['Elena', 'È la vicina con cui giocavo da bambina. Ha ottant\'anni, ma è ancora molto attiva.', 'É a vizinha com quem eu brincava quando criança. Tem oitenta anos, mas ainda é muito ativa.'],
+        ['Paolo', 'E il ragazzo di cui mi parlavi ieri? È in questa foto?', 'E o rapaz de quem você me falava ontem? Está nesta foto?'],
+        ['Elena', 'Sì, è quello che porta gli occhiali, vicino all\'albero.', 'Sim, é aquele que usa óculos, perto da árvore.'],
+        ['Paolo', 'Ho capito. È il ragazzo che hai conosciuto alle medie?', 'Entendi. É o rapaz que você conheceu no ensino fundamental?'],
+      ]),
+      producao(5, 'Descreva em voz alta uma foto sua: a casa em que mora, uma pessoa que está nela, o dia em que a foto foi tirada.', 'Questa è la casa in cui abito. Questa è la persona che mi aiuta sempre.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 32', [
+      revisao(5, 'Una em voz alta cinco pares de frases, usando «che» e «preposição + cui».'),
+      exercicios(20, [
+        ouvir('La ragazza che parla è mia sorella', ['La ragazza che parla è mia sorella', 'La ragazza con cui parlo è mia sorella', 'La ragazza di cui parla è mia sorella'], 'La ragazza che parla è mia sorella', 'Ouça «che parla».'),
+        ouvir('La città in cui abito è piccola', ['La città in cui abito è piccola', 'La città che abito è piccola', 'La città dove abita è piccola'], 'La città in cui abito è piccola', 'Ouça «in cui».'),
+        ouvir('Non capisco quello che dici', ['Non capisco quello che dici', 'Non capisco quello di cui dici', 'Non capisco che dici'], 'Non capisco quello che dici', 'Ouça «quello che».'),
+        ditado('Il film che ho visto era lungo', 'Escreva: Il film che ho visto era lungo.'),
+        ditado('La persona con cui parlo è Anna', 'Escreva: La persona con cui parlo è Anna.'),
+        ditado('Il giorno in cui sono arrivato pioveva', 'Escreva: Il giorno in cui sono arrivato pioveva.'),
+        mc('Qual frase está correta?', ['Il libro che leggo è bello.', 'Il libro che lo leggo è bello.', 'Il libro chi leggo è bello.'], 'Il libro che leggo è bello.', 'Sem pronome repetido e sem «chi».'),
+        mc('Qual frase está correta?', ['La ragazza con cui parlo è Anna.', 'La ragazza che parlo con è Anna.', 'La ragazza con che parlo è Anna.'], 'La ragazza con cui parlo è Anna.', 'Preposição + cui.'),
+        mc('«O filme de que gosto» em italiano:', ['il film che mi piace', 'il film di cui mi piace', 'il film che mi piaccio'], 'il film che mi piace', '«Piacere»: o filme é o sujeito.'),
+        mc('«O dia em que cheguei»:', ['il giorno in cui sono arrivato', 'il giorno quando sono arrivato', 'il giorno che in sono arrivato'], 'il giorno in cui sono arrivato', 'Tempo: «in cui».'),
+        lacuna('Il film ___ parli è lungo. (de que)', ['di cui', 'che', 'in cui'], 'di cui', 'Parlare di.'),
+        lacuna('La persona a ___ scrivo è un amico.', ['cui', 'che', 'chi'], 'cui', 'Depois de preposição: cui.'),
+        lacuna('Gli amici ___ vengono sono simpatici.', ['che', 'cui', 'chi'], 'che', 'Sujeito: che.'),
+        lacuna('Tutto ___ che voglio è dormire.', ['quello', 'cui', 'chi'], 'quello', 'Tutto quello che.'),
+        ordem('Ordene: «La città in cui abito è bella.»', ['La', 'città', 'in', 'cui', 'abito', 'è', 'bella'], 'La città in cui abito è bella.', 'Preposição + cui.'),
+        ordem('Ordene: «Il libro che leggo è bello.»', ['Il', 'libro', 'che', 'leggo', 'è', 'bello'], 'Il libro che leggo è bello.', 'Che como objeto.'),
+        livre('Escreva em italiano: Tenho um amigo que mora em Roma. A pessoa com quem falo é minha irmã. A cidade em que moro é pequena. Não entendo o que você diz.', 'Ho un amico che abita a Roma. La persona con cui parlo è mia sorella. La città in cui abito è piccola. Non capisco quello che dici.'),
+      ]),
+      producao(5, 'Fale 1 minuto descrevendo a sua cidade, uma pessoa importante e um lugar favorito, usando «che», «in cui», «con cui» e «di cui».'),
+    ]),
+  ],
+});

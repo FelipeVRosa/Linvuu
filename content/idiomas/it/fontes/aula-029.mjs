@@ -1,0 +1,117 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 29, titulo: 'Condizionale de cortesia', nivel: 'a2',
+  objetivo: "Fazer pedidos, ofertas e conselhos educados com o condizionale presente: «vorrei», «potrebbe», «avrei bisogno di», «mi piacerebbe», «dovresti», «al tuo posto».",
+  nota: "Você pede, oferece e aconselha com a cortesia que o italiano espera. Próxima aula: «stare + gerundio», «stare per» e «appena».",
+  sessoes: [
+    sessao('S1', 'Pedir com educação: vorrei, potrebbe', [
+      revisao(5, "Dê cinco instruções em voz alta com o imperativo (aula 28): duas com «tu», duas com «Lei» e uma com «voi». Exemplo: «Apri la finestra», «Prenda questa strada», «Mangiate con calma»."),
+      palavras(8, [
+        ['vorrei', 'vorrêi', 'eu queria / gostaria', ''], ['potrei', 'potrêi', 'eu poderia', ''], ['potrebbe', 'potrébbe', 'o(a) senhor(a) poderia', ''], ['mi piacerebbe', 'mi piatcherébbe', 'eu gostaria (de algo agradável)', ''],
+        ['avrei bisogno di', 'avrêi bizónho di', 'eu precisaria de', ''], ['per favore', 'per favôre', 'por favor', ''], ['mi dispiace', 'mi dispiátche', 'sinto muito / lamento', ''], ['se è possibile', 'se é possíbile', 'se for possível', ''],
+      ]),
+      gramatica(12, 'Vorrei, potrei, potrebbe: pedir com educação', "PASSO 1: em italiano, «Voglio un caffè» (quero um café) soa seco numa loja, num bar ou num hotel. Para pedir, usa-se o condizionale, um modo verbal que suaviza o pedido: «Vorrei un caffè, per favore.» PASSO 2: «vorrei» é o condizionale de «volere» (voglio → vorrei). Você já o usa desde o bar (aula 8); agora entendemos de onde ele vem. PASSO 3: para pedir que alguém faça algo, use «potere» no condizionale: com desconhecidos (Lei), «Potrebbe aiutarmi?»; com amigos (tu), «Potresti aiutarmi?». PASSO 4: o presente também é educado: «Mi può dire dov'è la stazione?» O condizionale apenas suaviza mais. PASSO 5: «Avrei bisogno di + substantivo» ou «di + infinitivo»: «Avrei bisogno di un'informazione.» «Avrei bisogno di parlare con Lei.» PASSO 6: para pedir licença, «Le dispiace se + presente?». Depois de «se», o verbo fica no presente: «Le dispiace se apro la finestra?» PASSO 7: respostas corteses: «Certo, prego.» «Faccia pure.» (fique à vontade) «Mi dispiace, ma fa freddo.» (explica a recusa sem brusquidão). PASSO 8: os pronomes podem vir colados ao infinitivo ou antes do verbo conjugado: «Potrebbe aiutarmi?» = «Mi potrebbe aiutare?». PASSO 9: com amigos e em família, o presente basta: «Mi passi il sale?» ou «Mi passi il sale, per favore?». Use o condizionale com desconhecidos, em serviços e quando o pedido incomoda.", {
+        tag: 'Condizionale',
+        comparacao: "em português suavizamos o pedido com o imperfeito ou o futuro do pretérito: «queria um café», «poderia me ajudar?», «gostaria de uma informação». O italiano usa o condizionale: «vorrei», «potrebbe», «vorrei sapere». É uma boa correspondência. Também se ouve «Volevo chiedere…» (imperfetto) na fala, mas aqui ensinamos o condizionale, que é a forma mais segura em qualquer situação. O brasileiro costuma errar na outra direção: diz «voglio» por tradução direta de «quero», e o pedido sai brusco.",
+        tabela: [
+          { uso: 'pedir algo', frase: 'Vorrei un caffè, per favore.', sentido: 'Queria um café, por favor.' },
+          { uso: 'pedir ajuda (Lei)', frase: 'Potrebbe aiutarmi?', sentido: 'O senhor poderia me ajudar?' },
+          { uso: 'pedir ajuda (tu)', frase: 'Potresti aiutarmi?', sentido: 'Você poderia me ajudar?' },
+          { uso: 'necessidade', frase: "Avrei bisogno di un'informazione.", sentido: 'Eu precisaria de uma informação.' },
+          { uso: 'licença', frase: 'Le dispiace se apro la finestra?', sentido: 'O senhor se importa se eu abrir a janela?' },
+          { uso: 'resposta', frase: 'Faccia pure.', sentido: 'Fique à vontade.' },
+        ],
+        erros: [
+          ['Voglio un caffè.', 'Vorrei un caffè.', 'Pedido seco; para pedir use o condizionale.'],
+          ['Potrebbe tu aiutarmi?', 'Potresti aiutarmi?', '«Potrebbe» é para Lei; com «tu» a forma é «potresti».'],
+          ['Le dispiace se aprirei la finestra?', 'Le dispiace se apro la finestra?', 'Depois de «se» (pedir licença) o verbo fica no presente.'],
+          ['Avrei bisogno un libro.', 'Avrei bisogno di un libro.', '«Avere bisogno» pede a preposição «di».'],
+        ],
+      }),
+      producao(5, "Peça cinco coisas em voz alta, com educação: um café, a conta, ajuda, uma informação e permissão para abrir a janela. Use «vorrei», «potrebbe», «avrei bisogno di» e «Le dispiace se».", "Vorrei un caffè, per favore. Potrebbe portarmi il conto?"),
+    ]),
+    sessao('S2', 'Formar o condizionale presente', [
+      revisao(4, 'Diga em voz alta cinco pedidos educados da sessão anterior, sem olhar.'),
+      palavras(6, [
+        ['parlerei', 'parlerêi', 'eu falaria', ''], ['prenderei', 'prenderêi', 'eu tomaria / pegaria', ''], ['partirei', 'partirêi', 'eu partiria', ''], ['sarei', 'sarêi', 'eu seria', ''], ['avrei', 'avrêi', 'eu teria', ''], ['andrei', 'andrêi', 'eu iria', ''],
+      ]),
+      gramatica(12, 'Condizionale presente: como se forma', "PASSO 1: o condizionale presente usa a mesma raiz do futuro (aula 27) mais as terminações «-ei, -esti, -ebbe, -emmo, -este, -ebbero». PASSO 2: nos verbos regulares, tira-se o «-e» final do infinitivo; nos verbos em «-are» o «a» vira «e»: parlare → parler-, prendere → prender-, partire → partir-. PASSO 3: acrescente a terminação: «parlerei», «prenderesti», «partirebbe». PASSO 4: os irregulares do futuro são irregulares aqui também: essere → sarei; avere → avrei; andare → andrei; potere → potrei; volere → vorrei; dovere → dovrei; fare → farei; venire → verrei; sapere → saprei; vedere → vedrei; dare → darei; stare → starei; bere → berrei. PASSO 5: verbos em «-care» e «-gare» ganham um «h» para manter o som duro: cercare → cercherei; pagare → pagherei. PASSO 6: verbos em «-ciare» e «-giare» perdem o «i»: cominciare → comincerei; mangiare → mangerei. PASSO 7: atenção às consoantes dobradas: «-ebbe» e «-ebbero» têm «bb»; «-emmo» tem «mm»: «potrebbe», «vorremmo», «parlerebbero». PASSO 8: no «noi», «vorremmo» e «potremmo» são os pedidos mais comuns em grupo: «Vorremmo un tavolo per due.» PASSO 9: não confunda: «parlerò» (futuro, falarei) e «parlerei» (condizionale, falaria).", {
+        tag: 'Condizionale',
+        comparacao: "o português também tem um tempo com raiz do infinitivo: «falaria, comeria, partiria» (futuro do pretérito). A armadilha está na aparência: o italiano «parlerei» lembra o português «falarei» (futuro), mas significa «falaria». O futuro italiano é «parlerò». Guarde: terminação em «-ò, -à» é futuro; terminação em «-ei, -ebbe» é condizionale.",
+        tabelas: [
+          { titulo: 'Verbos regulares', linhas: [
+            { pessoa: 'io', parlare: 'parlerei', prendere: 'prenderei', partire: 'partirei' }, { pessoa: 'tu', parlare: 'parleresti', prendere: 'prenderesti', partire: 'partiresti' }, { pessoa: 'lui / lei / Lei', parlare: 'parlerebbe', prendere: 'prenderebbe', partire: 'partirebbe' },
+            { pessoa: 'noi', parlare: 'parleremmo', prendere: 'prenderemmo', partire: 'partiremmo' }, { pessoa: 'voi', parlare: 'parlereste', prendere: 'prendereste', partire: 'partireste' }, { pessoa: 'loro', parlare: 'parlerebbero', prendere: 'prenderebbero', partire: 'partirebbero' },
+          ] },
+          { titulo: 'Irregulares mais úteis (io / Lei / noi)', linhas: [
+            { infinito: 'essere', io: 'sarei', lei: 'sarebbe', noi: 'saremmo' }, { infinito: 'avere', io: 'avrei', lei: 'avrebbe', noi: 'avremmo' }, { infinito: 'potere', io: 'potrei', lei: 'potrebbe', noi: 'potremmo' }, { infinito: 'volere', io: 'vorrei', lei: 'vorrebbe', noi: 'vorremmo' },
+            { infinito: 'dovere', io: 'dovrei', lei: 'dovrebbe', noi: 'dovremmo' }, { infinito: 'andare', io: 'andrei', lei: 'andrebbe', noi: 'andremmo' }, { infinito: 'fare', io: 'farei', lei: 'farebbe', noi: 'faremmo' }, { infinito: 'venire', io: 'verrei', lei: 'verrebbe', noi: 'verremmo' },
+          ] },
+        ],
+        erros: [
+          ['Io potrebbe venire.', 'Io potrei venire.', 'Com «io» a terminação é «-ei»; «-ebbe» é de lui/lei/Lei.'],
+          ['Cercarei un albergo.', 'Cercherei un albergo.', 'Verbos em «-care» ganham «h» para manter o som duro.'],
+          ['Mangiarei una pizza.', 'Mangerei una pizza.', 'Verbos em «-giare» perdem o «i».'],
+          ['Venirei domani.', 'Verrei domani.', '«Venire» é irregular: raiz «verr-».'],
+        ],
+      }),
+      producao(8, "Diga em voz alta o que você faria num sábado ideal, com oito frases no condizionale. Use verbos regulares e irregulares.", "Dormirei fino a tardi, mangerei con gli amici e andrei al mare."),
+    ]),
+    sessao('S3', 'Conselhos, desejos e permissões', [
+      revisao(4, 'Conjugue em voz alta no condizionale: potere, dovere e volere (io, tu, noi).'),
+      palavras(5, [
+        ['dovresti', 'dovrésti', 'você deveria', ''], ['al tuo posto', 'al tuo pósto', 'no seu lugar', ''], ['sarebbe meglio', 'sarébbe mélho', 'seria melhor', ''], ['ti consiglio', 'ti konsílho', 'eu te aconselho', ''], ['preferirei', 'preferirêi', 'eu preferiria', ''],
+      ]),
+      gramatica(8, 'Conselhos e desejos', "PASSO 1: para aconselhar com suavidade, use «dovere» no condizionale: «Dovresti riposare.» (tu) «Dovrebbe riposare.» (Lei) PASSO 2: «Al tuo posto, + condizionale»: «Al tuo posto, andrei dal medico.» PASSO 3: «Sarebbe meglio + infinitivo»: «Sarebbe meglio partire presto.» Não use «che» antes do infinitivo. PASSO 4: desejo: «Mi piacerebbe viaggiare.» «Mi piacerebbe molto.» (sem «di» antes do infinitivo) PASSO 5: preferência: «Preferirei il pesce.» PASSO 6: «Ti consiglio di + infinitivo» (presente): «Ti consiglio di prenotare.» PASSO 7: oferecer com cortesia: «Gradirebbe un caffè?» (formal) ou «Vuole un caffè?» (neutro). PASSO 8: aceitar: «Volentieri!» «Con piacere!» PASSO 9: diferença de força: «Devo andare» é uma obrigação; «Dovrei andare» é «deveria ir» (mas talvez não vá).", {
+        tag: 'Condizionale',
+        comparacao: "o português usa «deveria» e «seria melhor» da mesma forma. A armadilha é usar o presente: «devi andare dal medico» soa como ordem. Para um conselho, o italiano pede «dovresti». Ao contrário, «mi piacerebbe viaggiare» não tem «de» como o português «gostaria de viajar»: o infinitivo vem direto.",
+        tabela: [
+          { forca: 'obrigação', frase: 'Devi andare dal medico.', sentido: 'Você tem que ir ao médico.' },
+          { forca: 'conselho', frase: 'Dovresti andare dal medico.', sentido: 'Você deveria ir ao médico.' },
+          { forca: 'conselho hipotético', frase: 'Al tuo posto, andrei dal medico.', sentido: 'No seu lugar, eu iria ao médico.' },
+          { forca: 'desejo', frase: 'Mi piacerebbe viaggiare.', sentido: 'Eu gostaria de viajar.' },
+          { forca: 'preferência', frase: 'Preferirei il pesce.', sentido: 'Eu preferiria o peixe.' },
+        ],
+        erros: [
+          ['Devi andare dal medico. (conselho suave)', 'Dovresti andare dal medico.', '«Devi» soa como ordem; o conselho suave usa «dovresti».'],
+          ['Sarebbe meglio che partire presto.', 'Sarebbe meglio partire presto.', 'Antes do infinitivo não se usa «che».'],
+          ['Mi piacerebbe di viaggiare.', 'Mi piacerebbe viaggiare.', '«Piacere» é seguido do infinitivo sem preposição.'],
+          ['Al tuo posto, andavo dal medico.', 'Al tuo posto, andrei dal medico.', 'O conselho hipotético pede o condizionale.'],
+        ],
+      }),
+      dialogo(8, 'Al ristorante / No restaurante', 'Marco e Giulia chegam a um restaurante e conversam com o garçom.', [
+        ['Il cameriere', 'Buonasera. Un tavolo per due?', 'Boa noite. Uma mesa para dois?'],
+        ['Marco', 'Sì, grazie. Potremmo avere un tavolo vicino alla finestra?', 'Sim, obrigado. Poderíamos ter uma mesa perto da janela?'],
+        ['Il cameriere', 'Certo, prego, da questa parte. Che cosa vi porto da bere?', 'Claro, por favor, por aqui. O que lhes trago para beber?'],
+        ['Marco', 'Vorremmo dell\'acqua naturale. E potrebbe portarci il menu, per favore?', 'Queríamos água sem gás. E poderia nos trazer o cardápio, por favor?'],
+        ['Il cameriere', 'Subito. Vi consiglio le tagliatelle: sono la specialità della casa.', 'Já. Recomendo as tagliatelle: são a especialidade da casa.'],
+        ['Giulia', 'Io preferirei il pesce. Mi piacerebbe provare il branzino.', 'Eu preferiria o peixe. Gostaria de provar o robalo.'],
+      ]),
+      producao(5, "Dê em voz alta três conselhos a um amigo com «dovresti» e «al tuo posto», e diga um desejo seu com «mi piacerebbe».", "Dovresti dormire di più. Al tuo posto, andrei dal medico. Mi piacerebbe imparare il tedesco."),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 29', [
+      revisao(5, 'Faça em voz alta três pedidos a um desconhecido (Lei) e dois a um amigo (tu), todos educados.'),
+      exercicios(20, [
+        ouvir('Vorrei un caffè, per favore', ['Vorrei un caffè, per favore', 'Voglio un caffè, per favore', 'Vorrei un tè, per favore'], 'Vorrei un caffè, per favore', 'Ouça «vorrei» e a palavra «caffè».'),
+        ouvir('Potrebbe aiutarmi?', ['Potrebbe aiutarmi?', 'Potresti aiutarmi?', 'Potrei aiutarmi?'], 'Potrebbe aiutarmi?', 'Ouça «potrebbe» (Lei).'),
+        ouvir('Al tuo posto andrei dal medico', ['Al tuo posto andrei dal medico', 'Al tuo posto andrò dal medico', 'Al mio posto andrei dal medico'], 'Al tuo posto andrei dal medico', 'Ouça «andrei» e «tuo».'),
+        ditado("Avrei bisogno di un'informazione", "Escreva: Avrei bisogno di un'informazione."),
+        ditado('Mi piacerebbe viaggiare', 'Escreva: Mi piacerebbe viaggiare.'),
+        ditado('Dovresti riposare di più', 'Escreva: Dovresti riposare di più.'),
+        mc('Qual é a forma mais cortês de pedir um café no bar?', ['Vorrei un caffè, per favore.', 'Voglio un caffè.', 'Dammi un caffè.'], 'Vorrei un caffè, per favore.', 'Condizionale com «per favore».'),
+        mc('Condizionale de «avere», primeira pessoa:', ['avrei', 'avrò', 'avevo'], 'avrei', '«Avrei» é condizionale; «avrò» é futuro.'),
+        mc('«Parlerei» significa:', ['eu falaria', 'eu falarei', 'eu falava'], 'eu falaria', 'Armadilha: «parlerei» é condizionale; o futuro é «parlerò».'),
+        mc('Qual frase está correta?', ['Le dispiace se apro la finestra?', 'Le dispiace se aprirei la finestra?', 'Le dispiace se aprivo la finestra?'], 'Le dispiace se apro la finestra?', 'Depois de «se» fica o presente.'),
+        lacuna('___ aiutarmi, per favore? (Lei)', ['Potrebbe', 'Potresti', 'Potrei'], 'Potrebbe', 'Com Lei: «potrebbe».'),
+        lacuna('Al tuo posto, io ___ presto. (partire)', ['partirei', 'partirò', 'partivo'], 'partirei', 'Conselho hipotético: condizionale.'),
+        lacuna('Noi ___ un tavolo per due. (volere)', ['vorremmo', 'vorrei', 'vorrebbero'], 'vorremmo', 'Noi: terminação «-emmo».'),
+        lacuna('Avrei bisogno ___ un consiglio.', ['di', 'a', 'per'], 'di', '«Avere bisogno di».'),
+        ordem('Ordene: «Potrebbe portarci il conto?»', ['Potrebbe', 'portarci', 'il', 'conto'], 'Potrebbe portarci il conto?', 'Pedido educado com Lei.'),
+        ordem('Ordene: «Sarebbe meglio partire presto.»', ['Sarebbe', 'meglio', 'partire', 'presto'], 'Sarebbe meglio partire presto.', 'Sarebbe meglio + infinitivo.'),
+        livre('Escreva em italiano (use Lei nos pedidos): Eu queria um café. O senhor poderia me ajudar? Eu precisaria de um conselho. Depois, diga a um amigo: no seu lugar, eu iria ao médico.', "Vorrei un caffè. Potrebbe aiutarmi? Avrei bisogno di un consiglio. Al tuo posto, andrei dal medico."),
+      ]),
+      producao(5, 'Fale 1 minuto: pegue uma situação (hotel, bar ou loja), faça três pedidos educados e dê um conselho a quem está ao lado.'),
+    ]),
+  ],
+});

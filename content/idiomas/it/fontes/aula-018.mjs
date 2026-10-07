@@ -1,0 +1,69 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 18, titulo: 'Simulado A1', nivel: 'a1',
+  objetivo: 'Rever todo o A1 em um mapa, treinar leitura, escuta, escrita e fala, corrigir os erros mais comuns dos brasileiros e fazer um simulado original.',
+  nota: 'Você fechou o A1 do italiano. Repita o simulado até acertar quase tudo e volte aos tópicos em que errar. A Linvuu não prepara para exames externos; se esse for o seu objetivo, treine também com provas reais desses exames e, se possível, com um professor.',
+  sessoes: [
+    sessao('S1', 'O mapa do A1', [
+      revisao(5, 'Leia em voz alta cinco frases das aulas 1 a 17 que você acha difíceis.'),
+      gramatica(15, 'O A1 inteiro em uma tabela', 'Esta tabela resume as aulas 1 a 17. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.', {
+        tag: 'Revisão',
+        tabela: [
+          { tema: 'Sons e ortografia', regra: '«c» e «g» antes de e/i (tch, dj), «ch» e «gh» (k, g), «gn» (nh), «gli» (lh), «sc»; consoantes dobradas; acento tônico.', aula: '1' },
+          { tema: 'Essere, pronomes e adjetivos', regra: '«sono, sei, è, siamo, siete, sono»; «tu» × «Lei»; adjetivo concorda em gênero e número.', aula: '2' },
+          { tema: 'Apresentações, países e números', regra: '«Mi chiamo…», «Sono brasiliano/a», «Abito in Brasile / a Roma»; números 0 a 20; idade com «avere».', aula: '3' },
+          { tema: 'Presente em -are, negação e perguntas', regra: '«parlo, parli, parla, parliamo, parlate, parlano»; «non» antes do verbo; pergunta pela entonação.', aula: '4' },
+          { tema: 'Artigos, plural e c\'è / ci sono', regra: '«il, lo, la, l\', i, gli, le, un, uno, una, un\'»; plural em -i e -e; «C\'è un bar», «Ci sono due bar».', aula: '5' },
+          { tema: 'Avere e verbos em -ere e -ire', regra: '«ho, hai, ha»; «vendo, vendi»; «dormo, finisco»; expressões com «avere» (fame, sete, anni).', aula: '6' },
+          { tema: 'Família e possessivos', regra: '«mio, tuo, suo, nostro, vostro, loro» com artigo; sem artigo com família no singular («mia madre»).', aula: '7' },
+          { tema: 'Bar, comida e números até 100', regra: '«Vorrei un caffè», partitivo («del pane», «dei biscotti»), números de 21 a 100.', aula: '8' },
+          { tema: 'Horas, dias e meses', regra: '«Che ore sono?», «Sono le tre e mezza.», «È l\'una.»; dias e meses em minúscula.', aula: '9' },
+          { tema: 'Preposições simples e articuladas', regra: '«di, a, da, in, con, su, per, tra» + artigo: «al, alla, nel, dal, sul, dello».', aula: '10' },
+          { tema: 'Cidade, lugares e direções', regra: '«Dov\'è…?»; «vicino a, davanti a, accanto a»; «Vada dritto», «Giri a destra»; «in autobus», «a piedi».', aula: '11' },
+          { tema: 'Irregulares essenciais', regra: '«vado, vengo, faccio, sto, do, dico, esco, bevo»; «a», «in», «da» com «andare».', aula: '12' },
+          { tema: 'Volere, potere, dovere, sapere', regra: '«voglio, vorrei, posso, devo, so»; modal + infinitivo; «sapere» × «conoscere».', aula: '13' },
+          { tema: 'Rotina e reflexivos', regra: '«mi alzo, ti lavi, si veste»; «sempre, di solito, non… mai»; «prima, poi, dopo»; «ci vediamo».', aula: '14' },
+          { tema: 'Compras, roupas e cores', regra: 'cores concordam (exceto blu, rosa, viola); «Quanto costa?»; «questo» e «quello» (quel, quello, quell\').', aula: '15' },
+          { tema: 'Piacere e preferências', regra: '«mi piace» + singular ou infinitivo, «mi piacciono» + plural; «anche a me», «neanche a me»; «preferire A a B».', aula: '16' },
+          { tema: 'Passato prossimo com avere', regra: '«ho mangiato», «ho venduto», «ho dormito»; particípios irregulares (fatto, letto, visto, preso…); «già», «non… ancora», «mai».', aula: '17' },
+        ],
+      }),
+      producao(10, 'Fale 3 minutos em italiano: apresente-se, descreva a sua família, a sua casa e a sua rotina, conte o que você fez ontem e o que gosta de fazer no tempo livre.'),
+    ]),
+    sessao('S2', 'Leitura e escuta (formato A1, original)', [
+      revisao(5, 'Releia o texto e o diálogo abaixo em voz alta antes de começar.'),
+      texto(10, 'Una nuova città / Uma cidade nova', 'Mi chiamo Sofia. Ho venticinque anni e sono brasiliana. Abito a Torino, in un piccolo appartamento vicino alla stazione. Lavoro in un negozio di abbigliamento, dal lunedì al venerdì, dalle nove alle diciassette e trenta. Di solito pranzo al bar con una collega. La sera mi piace cucinare e ascoltare la musica. Ieri ho visto un film con un\'amica e abbiamo mangiato una pizza. Oggi fa freddo e piove, quindi ho preso l\'autobus. Sabato prossimo vado a Milano in treno.', 'Meu nome é Sofia. Tenho vinte e cinco anos e sou brasileira. Moro em Turim, num apartamento pequeno perto da estação. Trabalho numa loja de roupas, de segunda a sexta, das nove às dezessete e trinta. Geralmente almoço no bar com uma colega. À noite gosto de cozinhar e ouvir música. Ontem vi um filme com uma amiga e comemos uma pizza. Hoje faz frio e chove, por isso peguei o ônibus. No próximo sábado vou a Milão de trem.', [['Di dov\'è Sofia?', 'È brasiliana.'], ['Dove lavora?', 'In un negozio di abbigliamento.'], ['Dove pranza di solito?', 'Al bar, con una collega.'], ['Che cosa ha fatto ieri?', 'Ha visto un film con un\'amica e ha mangiato una pizza.'], ['Come va a Milano sabato?', 'In treno.']]),
+      dialogo(8, 'Una nuova vicina / Uma vizinha nova', 'Sofia conhece Marco, o vizinho do andar de baixo.', [
+        ['Marco', 'Buongiorno! Sono Marco, abito al secondo piano. Lei come si chiama?', 'Bom dia! Sou o Marco, moro no segundo andar. Como a senhora se chama?'], ['Sofia', 'Piacere, Marco. Mi chiamo Sofia e sono brasiliana. Abito qui da una settimana.', 'Prazer, Marco. Me chamo Sofia e sou brasileira. Moro aqui há uma semana.'], ['Marco', 'Benvenuta! Ha già visto il quartiere? C\'è un buon bar vicino alla stazione.', 'Seja bem-vinda! Já viu o bairro? Há um bom bar perto da estação.'], ['Sofia', 'Non ancora. Dov\'è esattamente? Mi piace molto il caffè.', 'Ainda não. Onde fica exatamente? Gosto muito de café.'], ['Marco', 'Vada dritto fino al semaforo e giri a sinistra. Ci vogliono cinque minuti a piedi.', 'Siga reto até o semáforo e vire à esquerda. Leva cinco minutos a pé.'], ['Sofia', 'Grazie mille. Vengo domani mattina! Vuole venire con me?', 'Muito obrigada. Vou amanhã de manhã! Quer vir comigo?'],
+      ]),
+      producao(7, 'Responda em voz alta: quem é Sofia, onde mora, o que faz e do que gosta. Depois diga o que você faria no lugar dela num sábado em Milão.'),
+    ]),
+    sessao('S3', 'Os erros mais comuns do A1 e a escrita', [
+      revisao(5, 'Escreva três erros que você ainda comete no A1 e a forma certa.'),
+      gramatica(15, 'Os 16 erros mais comuns do A1', 'Leia cada par em voz alta: primeiro o errado, depois o certo.', {
+        tag: 'Revisão',
+        erros: [
+          ['Sono 25 anni.', 'Ho 25 anni.', 'Idade: «avere», não «essere».'], ['Sono fame.', 'Ho fame.', 'Sensações: «avere».'], ['La mia sorella abita a Roma.', 'Mia sorella abita a Roma.', 'Família no singular, sem adjetivo: sem artigo.'], ['Vado a Italia.', 'Vado in Italia.', 'País pede «in».'],
+          ['Il studente è qui.', 'Lo studente è qui.', 'Antes de «s» + consoante, «lo».'], ['Un zaino blu.', 'Uno zaino blu.', 'Antes de «z», «uno».'], ['Ci sono un bar in piazza.', 'C\'è un bar in piazza.', 'Singular: «c\'è».'], ['Voglio di mangiare.', 'Voglio mangiare.', 'Sem preposição depois do modal.'],
+          ['Conosco nuotare.', 'So nuotare.', 'Habilidade: «sapere».'], ['Mi piace le olive.', 'Mi piacciono le olive.', 'O verbo concorda com a coisa de que se gosta.'], ['Io alzo alle sette.', 'Mi alzo alle sette.', 'Verbo reflexivo pede pronome.'], ['Non ho visto mai il mare.', 'Non ho mai visto il mare.', '«Mai» entra entre o auxiliar e o particípio.'],
+          ['Vado al dottore.', 'Vado dal dottore.', 'Ir a uma pessoa: «da».'], ['Sono l\'una e mezza.', 'È l\'una e mezza.', 'Uma hora: «è l\'una».'], ['Ho parlo con Marco.', 'Ho parlato con Marco.', 'Particípio de «-are»: «-ato».'], ['Scusa, signora, dov\'è la posta?', 'Scusi, signora, dov\'è la posta?', 'Com desconhecidos, «Lei»: «scusi».'],
+        ],
+      }),
+      producao(10, 'Escreva um e-mail curto (cerca de 60 palavras) para um amigo italiano: apresente-se, descreva a sua casa e a sua rotina, conte o que você fez no fim de semana e convide-o para um passeio. Depois leia-o em voz alta.'),
+    ]),
+    sessao('S4', 'Simulado do A1', [
+      revisao(5, 'Releia o mapa e escolha três pontos em que você ainda erra.'),
+      exercicios(20, [
+        ouvir('Lei non è contenta oggi', ['Lei non è contenta oggi', 'Lei è contenta oggi', 'Lui non è contento oggi'], 'Lei non è contenta oggi', 'Escuta: negação de «essere».'), ouvir('Vorrei un caffè, per favore', ['Vorrei un caffè, per favore', 'Voglio un caffè, per favore', 'Vorrei un tè, per favore'], 'Vorrei un caffè, per favore', 'Escuta: pedido educado.'),
+        mc('Leia: «Ha i capelli lunghi e gli occhi azzurri.» O que a frase descreve?', ['a aparência', 'a rotina', 'o clima'], 'a aparência', 'Leitura: cabelos e olhos.'), mc('Qual frase está correta?', ['Mi piacciono i film italiani.', 'Mi piace i film italiani.', 'Io piaccio i film italiani.'], 'Mi piacciono i film italiani.', '«Piacciono» com plural.'),
+        lacuna('Quanto ___ queste scarpe?', ['costano', 'costa', 'costate'], 'costano', 'Plural: «costano».'), lacuna('Lui ___ alle sei ogni giorno. (alzarsi)', ['si alza', 'mi alzo', 'ti alzi'], 'si alza', 'Reflexivo no presente.'), lacuna('Ieri io ___ un libro. (leggere)', ['ho letto', 'ha letto', 'leggo'], 'ho letto', 'Passato prossimo irregular.'), lacuna('Noi ___ al cinema stasera. (andare)', ['andiamo', 'andate', 'vanno'], 'andiamo', '«Noi andiamo».'),
+        mc('Como se pergunta a hora?', ['Che ore sono?', 'Quanti anni hai?', 'Come stai?'], 'Che ore sono?', 'Pergunta da hora.'), mc('Qual frase está correta?', ['Vado al mercato.', 'Vado a il mercato.', 'Vado in mercato.'], 'Vado al mercato.', 'a + il = al.'), mc('Qual frase está correta?', ['Vada dritto e giri a sinistra.', 'Vai dritto e giri a sinistra.', 'Va dritto e gira a sinistra, signora.'], 'Vada dritto e giri a sinistra.', 'Cortesia com «Lei».'), mc('Qual frase está correta?', ['Quel vestito è bellissimo.', 'Quello vestito è bellissimo.', 'Quella vestito è bellissimo.'], 'Quel vestito è bellissimo.', '«Quel» antes de consoante simples.'),
+        ordem('Ordene: «Non vado al lavoro oggi.»', ['Non', 'vado', 'al', 'lavoro', 'oggi'], 'Non vado al lavoro oggi.', 'Non + verbo.'), ordem('Ordene: «Ieri ho preso l\'autobus alle sette.»', ['Ieri', 'ho', 'preso', 'l\'autobus', 'alle', 'sette'], 'Ieri ho preso l\'autobus alle sette.', 'Auxiliar + particípio.'),
+        ditado('Abito a Torino con mia sorella', 'Escreva: Abito a Torino con mia sorella.'), ditado('Oggi fa freddo e piove', 'Escreva: Oggi fa freddo e piove.'),
+        livre('Escreva em italiano: Eu moro no Brasil. Ontem comprei pão no mercado. Amanhã vou trabalhar.', 'Abito in Brasile. Ieri ho comprato il pane al mercato. Domani vado a lavorare.'),
+      ]),
+      producao(5, 'Releia os itens que você errou e diga a regra de cada um em voz alta.'),
+    ]),
+  ],
+});

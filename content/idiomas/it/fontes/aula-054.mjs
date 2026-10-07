@@ -1,0 +1,103 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 54, titulo: 'Opinião e debate', nivel: 'b1',
+  objetivo: 'Dar a sua opinião, concordar e discordar com educação e montar argumentos curtos, escolhendo entre congiuntivo e indicativo.',
+  nota: 'Você agora participa de uma conversa de opiniões sem soar seco nem impreciso. Próxima aula: e-mail e carta formais.',
+  sessoes: [
+    sessao('S1', 'Dar a sua opinião', [
+      revisao(5, 'Diga em voz alta cinco frases com «Credo che» + congiuntivo presente (aula 44), por exemplo: «Credo che sia utile».'),
+      palavras(8, [
+        ['secondo me', '', 'na minha opinião', ''], ['a mio parere', '', 'a meu ver', ''], ['il punto di vista', '', 'o ponto de vista', ''], ['l\'opinione', '', 'a opinião', ''], ['ritenere', '', 'considerar', ''], ['dubitare', '', 'duvidar', ''], ['sembrare', '', 'parecer', ''], ['personalmente', '', 'pessoalmente', ''],
+      ]),
+      gramatica(12, 'Penso che sia, so che è', 'PASSO 1: para opinião, use um verbo de pensamento e «che» + congiuntivo: «Penso che abbia ragione.», «Credo che sia vero.», «Mi sembra che sia difficile.» PASSO 2: o mesmo vale para dúvida: «Dubito che venga.», «Non sono sicuro che sia giusto.» PASSO 3: para certeza e fatos, use indicativo: «So che ha ragione.», «È chiaro che è vero.», «È evidente che funziona.» PASSO 4: se o sujeito das duas partes é o mesmo, use «di» + infinitivo: «Penso di avere ragione.» (e não «penso che io abbia ragione») PASSO 5: depois de expressões como «secondo me», «a mio parere», «per me», que não são verbos, o verbo vai no indicativo: «Secondo me ha ragione.» PASSO 6: fórmulas de abertura: «Personalmente…», «Dal mio punto di vista…», «A mio avviso…». PASSO 7: o italiano falado às vezes usa o indicativo depois de «penso che», mas nos exames e na escrita o congiuntivo é o esperado.', {
+        tag: 'Opinião',
+        comparacao: 'em português, «acho que» pede indicativo: «acho que ele tem razão». Em italiano, o verbo de opinião pede congiuntivo: «penso che abbia ragione». Já «secondo me» funciona como o português «para mim», sem verbo antes, e por isso leva indicativo.',
+        tabela: [
+          { estrutura: 'penso / credo che', modo: 'congiuntivo', exemplo: 'Penso che abbia ragione.' },
+          { estrutura: 'mi sembra che', modo: 'congiuntivo', exemplo: 'Mi sembra che sia troppo caro.' },
+          { estrutura: 'dubito / non sono sicuro che', modo: 'congiuntivo', exemplo: 'Dubito che venga.' },
+          { estrutura: 'so che / è chiaro che', modo: 'indicativo', exemplo: 'È chiaro che è vero.' },
+          { estrutura: 'secondo me / per me', modo: 'indicativo', exemplo: 'Secondo me ha ragione.' },
+          { estrutura: 'mesmo sujeito', modo: 'di + infinitivo', exemplo: 'Penso di avere ragione.' },
+        ],
+        erros: [['Penso che ha ragione.', 'Penso che abbia ragione.', '«Penso che» pede congiuntivo.'], ['Penso che io abbia ragione.', 'Penso di avere ragione.', 'Mesmo sujeito nas duas partes: «di» + infinitivo.'], ['È chiaro che sia vero.', 'È chiaro che è vero.', 'Certeza pede indicativo.'], ['Dubito che viene.', 'Dubito che venga.', 'Dúvida pede congiuntivo.']],
+      }),
+      producao(5, 'Dê em voz alta a sua opinião sobre três assuntos (um filme, uma cidade, uma comida) começando por «Penso che…», «Credo che…» e «Secondo me…».'),
+    ]),
+    sessao('S2', 'Concordar e discordar com educação', [
+      revisao(4, 'Releia a tabela da sessão anterior e troque os sujeitos para criar frases novas.'),
+      palavras(6, [
+        ['essere d\'accordo', '', 'concordar', ''], ['avere ragione', '', 'ter razão', ''], ['avere torto', '', 'estar errado', ''], ['in parte', '', 'em parte', ''], ['al contrario', '', 'ao contrário', ''], ['capisco', '', 'entendo', ''],
+      ]),
+      gramatica(12, 'Sono d\'accordo, non sono del tutto d\'accordo', 'PASSO 1: para concordar: «Sono d\'accordo con te.», «Hai ragione.», «Esatto.», «Proprio così.», «La penso come te.» PASSO 2: concordância parcial: «In parte sì, ma…», «Hai ragione, però…», «Su questo sì, ma su…» PASSO 3: para discordar com educação, primeiro reconheça o ponto do outro e depois discorde: «Capisco il tuo punto di vista, ma non sono del tutto d\'accordo.» PASSO 4: fórmulas curtas: «Non la penso così.», «Non sono convinto.», «Io vedo la cosa in modo diverso.» PASSO 5: mais formal: «Mi permetto di dissentire.» PASSO 6: para pedir opinião: «Che ne pensi?», «Tu che cosa ne pensi?», «E Lei che ne pensa?» PASSO 7: para entrar na conversa: «Scusa se ti interrompo, posso aggiungere una cosa?» PASSO 8: use «avere ragione / torto» (verbo avere), e não «essere».', {
+        tag: 'Opinião',
+        comparacao: 'o português diz «você está certo» ou «você tem razão». O italiano usa «avere ragione» («hai ragione»); «essere» não serve nesse caso. Com pessoas desconhecidas, a forma de cortesia é «Lei ha ragione». E «concordar com» vira «essere d\'accordo con», sempre com «con».',
+        tabela: [
+          { funcao: 'concordar', frase: 'Sono d\'accordo con te.', nota: '«con», nunca «a»' },
+          { funcao: 'dar razão', frase: 'Hai ragione.', nota: 'avere, não essere' },
+          { funcao: 'concordar em parte', frase: 'In parte sì, ma…', nota: 'abre espaço para o «mas»' },
+          { funcao: 'discordar', frase: 'Non sono del tutto d\'accordo.', nota: 'suaviza com «del tutto»' },
+          { funcao: 'pedir opinião', frase: 'Che ne pensi?', nota: 'com cortesia: «Che ne pensa?»' },
+          { funcao: 'interromper', frase: 'Scusa se ti interrompo.', nota: 'antes de acrescentar algo' },
+        ],
+        erros: [['Sono d\'accordo a te.', 'Sono d\'accordo con te.', 'A preposição é «con».'], ['Sono accordo.', 'Sono d\'accordo.', 'A expressão é «essere d\'accordo».'], ['Sei ragione.', 'Hai ragione.', 'Ter razão usa o verbo «avere».'], ['Cosa pensi a questo film?', 'Cosa pensi di questo film?', '«Pensare di» pede opinião; «pensare a» é «ter em mente».']],
+      }),
+      producao(8, 'Simule um debate em voz alta: diga uma opinião, responda como se fosse outra pessoa que discorda com educação e termine com um acordo. Exemplo: «Secondo me, il treno è meglio dell\'aereo.»'),
+    ]),
+    sessao('S3', 'Argumentar e organizar o debate', [
+      revisao(4, 'Diga em voz alta três maneiras diferentes de concordar e três de discordar.'),
+      palavras(5, [
+        ['a favore di', '', 'a favor de', ''], ['contrario a', '', 'contra', ''], ['il vantaggio', '', 'a vantagem', ''], ['lo svantaggio', '', 'a desvantagem', ''], ['per quanto riguarda', '', 'quanto a', ''],
+      ]),
+      gramatica(8, 'Argumentar com ordem', 'PASSO 1: apresente a posição: «Sono favorevole a…» ou «Sono a favore di…» e «Sono contrario a…» PASSO 2: organize os argumentos: «In primo luogo…», «In secondo luogo…», «Inoltre…» PASSO 3: mostre os dois lados: «Da un lato…, dall\'altro…» PASSO 4: exemplifique: «Per esempio…», «Pensa a…» PASSO 5: mude de assunto com «Per quanto riguarda…» + artigo e nome: «Per quanto riguarda il costo…» PASSO 6: faça uma concessão: «Per quanto sia difficile, credo che valga la pena.» PASSO 7: conclua com um compromisso: «Mi sembra un buon compromesso.»', {
+        tag: 'Opinião',
+        comparacao: 'a regência muda: em português, «a favor de» e «contra», mas em italiano «favorevole a / a favore di» e «contrario a». «Per quanto riguarda» é o nosso «quanto a / no que diz respeito a»; ele não leva «di».',
+        tabela: [
+          { expressao: 'favorevole a / a favore di', uso: 'posição a favor', exemplo: 'Sono favorevole a questa proposta.' },
+          { expressao: 'contrario a', uso: 'posição contra', exemplo: 'Sono contrario al progetto.' },
+          { expressao: 'da un lato… dall\'altro', uso: 'dois lados', exemplo: 'Da un lato costa, dall\'altro risparmia tempo.' },
+          { expressao: 'per quanto riguarda', uso: 'mudar de tema', exemplo: 'Per quanto riguarda il prezzo, è alto.' },
+          { expressao: 'per quanto + congiuntivo', uso: 'concessão', exemplo: 'Per quanto sia caro, vale la pena.' },
+        ],
+        erros: [['Per quanto riguarda del lavoro, è tutto chiaro.', 'Per quanto riguarda il lavoro, è tutto chiaro.', '«Per quanto riguarda» não leva «di».'], ['Sono a favore a questa idea.', 'Sono a favore di questa idea.', 'A locução é «a favore di».'], ['Sono contrario di questa idea.', 'Sono contrario a questa idea.', '«Contrario» pede «a».'], ['Secondo me abbia ragione.', 'Secondo me ha ragione.', '«Secondo me» não é um verbo: indicativo.']],
+      }),
+      dialogo(8, 'Il centro senza auto', 'Davide e Elena discutem a proposta de fechar o centro da cidade aos carros.', [
+        ['Davide', 'Che ne pensi della proposta di chiudere il centro alle auto?', 'O que você acha da proposta de fechar o centro aos carros?'],
+        ['Elena', 'Personalmente sono favorevole. Penso che il centro sia più bello senza traffico.', 'Pessoalmente sou a favor. Acho que o centro fica mais bonito sem trânsito.'],
+        ['Davide', 'Capisco, ma temo che molti negozi perdano clienti.', 'Entendo, mas temo que muitas lojas percam clientes.'],
+        ['Elena', 'Non sono sicura che sia così. A volte succede il contrario: la gente cammina di più e si ferma nei negozi.', 'Não tenho certeza de que seja assim. Às vezes acontece o contrário: as pessoas caminham mais e param nas lojas.'],
+        ['Davide', 'In parte hai ragione. Però chi abita fuori città come fa?', 'Em parte você tem razão. Mas quem mora fora da cidade, como faz?'],
+        ['Elena', 'Per quanto riguarda questo, secondo me servono più autobus e parcheggi in periferia.', 'Quanto a isso, na minha opinião são necessários mais ônibus e estacionamentos na periferia.'],
+        ['Davide', 'Su questo siamo d\'accordo. Credo che il Comune debba spiegare bene il piano.', 'Nisso estamos de acordo. Acho que a prefeitura deve explicar bem o plano.'],
+        ['Elena', 'Esatto. Se la gente capisce i vantaggi, è più facile accettare il cambiamento.', 'Exato. Se as pessoas entendem as vantagens, é mais fácil aceitar a mudança.'],
+        ['Davide', 'Resto un po\' scettico, ma sono disposto a provare per qualche mese.', 'Continuo um pouco cético, mas estou disposto a tentar por alguns meses.'],
+        ['Elena', 'Mi sembra un buon compromesso.', 'Parece-me um bom meio-termo.'],
+      ]),
+      producao(5, 'Diga em voz alta a sua posição sobre a proposta do diálogo, com dois argumentos e uma concessão.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 54', [
+      revisao(5, 'Releia as frases de concordar e discordar e diga em voz alta uma frase nova para cada função.'),
+      exercicios(20, [
+        ouvir('Penso che abbia ragione', ['Penso che abbia ragione', 'Penso che ha ragione', 'Penso di avere ragione'], 'Penso che abbia ragione', 'Opinião: congiuntivo.'),
+        ouvir('Secondo me ha ragione', ['Secondo me ha ragione', 'Secondo me abbia ragione', 'Secondo me avere ragione'], 'Secondo me ha ragione', '«Secondo me» pede indicativo.'),
+        ouvir('Sono contrario a questa idea', ['Sono contrario a questa idea', 'Sono contrario di questa idea', 'Sono contro questa idea di'], 'Sono contrario a questa idea', '«Contrario a».'),
+        ditado('Non sono del tutto d\'accordo', 'Escreva: Non sono del tutto d\'accordo.'),
+        ditado('Che ne pensi della proposta', 'Escreva: Che ne pensi della proposta.'),
+        ditado('Per quanto riguarda il prezzo, è alto', 'Escreva: Per quanto riguarda il prezzo, è alto.'),
+        mc('Depois de «dubito che», o verbo vai:', ['no congiuntivo', 'no indicativo', 'no infinitivo'], 'no congiuntivo', 'Dúvida pede congiuntivo.'),
+        mc('Como dizer «você tem razão»?', ['Hai ragione.', 'Sei ragione.', 'Sei giusto.'], 'Hai ragione.', 'Com o verbo «avere».'),
+        mc('Se o sujeito é o mesmo nas duas partes, use:', ['di + infinitivo', 'che + congiuntivo', 'che + indicativo'], 'di + infinitivo', '«Penso di avere ragione».'),
+        mc('Qual frase está correta?', ['È chiaro che è vero.', 'È chiaro che sia vero.', 'È chiaro che fosse vero ora.'], 'È chiaro che è vero.', 'Certeza pede indicativo.'),
+        lacuna('Sono d\'accordo ___ te.', ['con', 'a', 'di'], 'con', 'Essere d\'accordo con.'),
+        lacuna('Non sono sicuro che ___ giusto. (ser)', ['sia', 'è', 'essere'], 'sia', 'Congiuntivo depois de dúvida.'),
+        lacuna('Sono ___ di questa proposta. (a favor)', ['a favore', 'favorevole', 'pro'], 'a favore', 'A locução é «a favore di».'),
+        lacuna('Capisco il tuo punto di vista, ___ non sono del tutto d\'accordo.', ['ma', 'perché', 'quindi'], 'ma', 'Reconhecer e discordar.'),
+        ordem('Ordene: «Penso che sia utile.»', ['Penso', 'che', 'sia', 'utile'], 'Penso che sia utile.', 'Opinião + congiuntivo.'),
+        ordem('Ordene: «Scusa se ti interrompo.»', ['Scusa', 'se', 'ti', 'interrompo'], 'Scusa se ti interrompo.', 'Fórmula para interromper.'),
+        livre('Escreva em italiano: Acho que ele tem razão. Não concordo totalmente. Sou contra este projeto.', 'Penso che abbia ragione. Non sono del tutto d\'accordo. Sono contrario a questo progetto.'),
+      ]),
+      producao(5, 'Fale 1 minuto defendendo uma opinião sua e reconhecendo um argumento contrário.'),
+    ]),
+  ],
+});

@@ -1,0 +1,93 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 53, titulo: 'Conectores', nivel: 'b1',
+  objetivo: 'Ligar ideias com causa, consequência, oposição, finalidade, condição e conclusão, sabendo quando o conector pede indicativo ou congiuntivo.',
+  nota: 'Você agora organiza um texto ou uma fala com conectores variados, em vez de repetir «e» e «ma». Próxima aula: opinião e debate.',
+  sessoes: [
+    sessao('S1', 'Causa e consequência', [
+      revisao(5, 'Diga em voz alta três frases com «perché» e «quindi» sobre a sua semana.'),
+      palavras(8, [
+        ['perché', '', 'porque / por quê', ''], ['siccome', 'sikkóme', 'como (causa)', ''], ['poiché', '', 'já que / uma vez que', ''], ['dato che', '', 'dado que', ''], ['quindi', '', 'portanto', ''], ['perciò', '', 'por isso', ''], ['di conseguenza', '', 'como consequência', ''], ['dunque', '', 'então / logo', ''],
+      ]),
+      gramatica(12, 'Perché, siccome, quindi, perciò', 'PASSO 1: para a causa, use «perché» (o mais geral, pode vir depois da principal): «Resto a casa perché piove.» PASSO 2: «siccome» é o «como» causal do português e costuma abrir a frase: «Siccome piove, resto a casa.» PASSO 3: «poiché», «dato che» e «visto che» apresentam uma causa já conhecida pelos dois; vêm no indicativo: «Dato che sei qui, ti aiuto.» PASSO 4: antes de substantivo, use «a causa di» (causa negativa), «per via di» (neutro) e «grazie a» (causa positiva): «A causa dello sciopero, il treno è in ritardo.» PASSO 5: consequência: «quindi», «perciò», «dunque», «di conseguenza»: «Sono stanco, quindi vado a letto.» PASSO 6: intensidade e resultado: «così… che» / «tanto… che»: «Era così stanco che si è addormentato.» PASSO 7: não use dois conectores para a mesma relação: ou «siccome…», ou «…perciò…». PASSO 8: cuidado: «perché» + congiuntivo deixa de ser causa e passa a ser finalidade («para que»).', {
+        tag: 'Conectores',
+        comparacao: 'o português tem «como» no começo da frase para a causa («Como chovia, fiquei em casa»). O italiano usa «siccome», e não «come». Além disso, o português coloca a vírgula e repete «por isso» com facilidade; o italiano evita juntar «siccome» e «perciò» na mesma frase.',
+        tabela: [
+          { conector: 'perché', tipo: 'causa', exemplo: 'Resto a casa perché piove.' },
+          { conector: 'siccome', tipo: 'causa (início)', exemplo: 'Siccome piove, resto a casa.' },
+          { conector: 'dato che / visto che', tipo: 'causa conhecida', exemplo: 'Visto che sei stanco, riposa.' },
+          { conector: 'a causa di', tipo: 'causa negativa', exemplo: 'A causa dello sciopero, siamo in ritardo.' },
+          { conector: 'grazie a', tipo: 'causa positiva', exemplo: 'Grazie al tuo aiuto, ho finito.' },
+          { conector: 'quindi / perciò', tipo: 'consequência', exemplo: 'Sono stanco, quindi vado a letto.' },
+        ],
+        erros: [['Come piove, resto a casa.', 'Siccome piove, resto a casa.', '«Come» raramente tem valor causal em italiano moderno; use «siccome».'], ['Siccome sono stanco, perciò vado a letto.', 'Siccome sono stanco, vado a letto.', 'Um conector basta: «siccome» ou «perciò».'], ['A causa che piove, restiamo a casa.', 'A causa della pioggia, restiamo a casa.', '«A causa di» vem antes de substantivo; antes de verbo, use «perché».'], ['Grazie allo sciopero, il treno è in ritardo.', 'A causa dello sciopero, il treno è in ritardo.', '«Grazie a» só vale para causas boas.']],
+      }),
+      producao(5, 'Explique em voz alta por que você escolheu estudar italiano, usando «siccome», «perciò» e «grazie a».'),
+    ]),
+    sessao('S2', 'Oposição e concessão', [
+      revisao(4, 'Diga em voz alta três frases com «perché» e uma com «siccome».'),
+      palavras(6, [
+        ['tuttavia', '', 'no entanto', ''], ['invece', '', 'ao contrário / já', ''], ['mentre', '', 'enquanto / ao passo que', ''], ['benché', 'benké', 'embora', ''], ['sebbene', 'sebbéne', 'embora', ''], ['nonostante', '', 'apesar de', ''],
+      ]),
+      gramatica(12, 'Ma, tuttavia, benché, nonostante', 'PASSO 1: oposição simples: «ma» e «però» (mais falado): «È caro, ma è bello.», «È caro, però è bello.» PASSO 2: contraste mais forte e escrito: «tuttavia», «eppure», «invece», «d\'altra parte», «in compenso»: «Non ha studiato; tuttavia ha passato l\'esame.» PASSO 3: «mentre» pode ser «enquanto» ou «ao passo que»: «Io lavoro, mentre lui dorme.» PASSO 4: concessão com congiuntivo: «benché», «sebbene» e, diante de verbo, «nonostante» (também aceita o indicativo na fala): «Benché sia stanco, lavora.» PASSO 5: «nonostante» + substantivo: «Nonostante la pioggia, siamo usciti.» PASSO 6: «anche se» + indicativo para fatos reais: «Anche se è tardi, vengo.»; + congiuntivo imperfetto para hipótese: «Anche se fosse tardi, verrei.» PASSO 7: para «apesar de + infinitivo», use «pur» + gerundio (aula 50): «Pur essendo stanco, lavora.» PASSO 8: «invece di» + infinitivo: «Invece di studiare, guarda la TV.»', {
+        tag: 'Conectores',
+        comparacao: 'o português usa «embora + subjuntivo» e «apesar de + infinitivo». O italiano faz o mesmo com «benché + congiuntivo», mas na prática não se usa «nonostante» + infinitivo: troque por «pur» + gerundio ou por «nonostante» + substantivo. E «apesar de que» é «nonostante» (+ congiuntivo).',
+        tabela: [
+          { conector: 'ma / però', registro: 'fala', exemplo: 'È caro, però è bello.' },
+          { conector: 'tuttavia / eppure', registro: 'escrita', exemplo: 'Ha studiato poco; tuttavia ha passato.' },
+          { conector: 'invece', registro: 'contraste', exemplo: 'Io esco, lui invece resta a casa.' },
+          { conector: 'benché / sebbene', registro: '+ congiuntivo', exemplo: 'Benché sia tardi, vengo.' },
+          { conector: 'nonostante', registro: '+ nome', exemplo: 'Nonostante la pioggia, siamo usciti.' },
+          { conector: 'anche se', registro: '+ indicativo', exemplo: 'Anche se è tardi, vengo.' },
+        ],
+        erros: [['Benché è stanco, lavora.', 'Benché sia stanco, lavora.', '«Benché» pede congiuntivo.'], ['Nonostante di piovere, siamo usciti.', 'Nonostante la pioggia, siamo usciti.', '«Nonostante» não aceita «di» + infinitivo; use um substantivo ou «pur» + gerundio.'], ['Anche se sia tardi, vengo.', 'Anche se è tardi, vengo.', 'Para um fato real, «anche se» leva o indicativo.'], ['Invece studiare, guarda la TV.', 'Invece di studiare, guarda la TV.', 'Com infinitivo, é «invece di».']],
+      }),
+      producao(8, 'Diga em voz alta seis frases de contraste sobre você e uma pessoa que conhece, usando «mentre», «invece», «benché» e «nonostante».'),
+    ]),
+    sessao('S3', 'Adição, sequência, finalidade e conclusão', [
+      revisao(4, 'Diga em voz alta duas frases com «benché + congiuntivo» e duas com «anche se».'),
+      palavras(5, [
+        ['inoltre', '', 'além disso', ''], ['intanto', '', 'enquanto isso', ''], ['affinché', 'affinké', 'para que', ''], ['purché', 'purké', 'desde que', ''], ['insomma', '', 'enfim / resumindo', ''],
+      ]),
+      gramatica(8, 'Inoltre, affinché, purché, insomma', 'PASSO 1: adicionar: «inoltre», «per di più», «oltre a» + nome ou infinitivo: «Oltre a lavorare, studia.» PASSO 2: organizar a sequência: «prima di tutto», «poi», «in seguito», «infine»; simultaneidade: «intanto», «nel frattempo». PASSO 3: finalidade com mesmo sujeito: «per» + infinitivo: «Lavoro per guadagnare.» PASSO 4: finalidade com sujeitos diferentes: «affinché» + congiuntivo: «Lavoro affinché tu possa studiare.» PASSO 5: condição: «purché», «a condizione che», «a meno che non» + congiuntivo: «Vengo, purché ci sia posto.», «Vengo, a meno che non piova.» PASSO 6: fechar: «insomma», «in conclusione», «in sintesi».', {
+        tag: 'Conectores',
+        comparacao: 'o português também distingue «para + infinitivo» de «para que + subjuntivo». A diferença está em «a meno che non»: o «non» costuma aparecer (é a forma padrão), não tem valor de negação e na fala às vezes é omitido; o português diz apenas «a menos que».',
+        tabela: [
+          { conector: 'inoltre / per di più', funcao: 'adicionar', exemplo: 'È bravo; inoltre è gentile.' },
+          { conector: 'prima di tutto / infine', funcao: 'sequência', exemplo: 'Prima di tutto, leggi il testo.' },
+          { conector: 'per + infinito', funcao: 'finalidade, mesmo sujeito', exemplo: 'Studio per imparare.' },
+          { conector: 'affinché + congiuntivo', funcao: 'finalidade, sujeitos diferentes', exemplo: 'Ripeto affinché tu capisca.' },
+          { conector: 'purché + congiuntivo', funcao: 'condição', exemplo: 'Esco, purché non piova.' },
+          { conector: 'insomma', funcao: 'concluir', exemplo: 'Insomma, è andata bene.' },
+        ],
+        erros: [['Lavoro per che tu possa studiare.', 'Lavoro affinché tu possa studiare.', 'Com outro sujeito, use «affinché» (ou «perché» + congiuntivo).'], ['Lo faccio affinché guadagnare.', 'Lo faccio per guadagnare.', 'Mesmo sujeito: «per» + infinitivo.'], ['Vengo a meno che piove.', 'Vengo a meno che non piova.', '«A meno che» pede congiuntivo (e, na forma padrão, o «non» expletivo).'], ['Oltre di lavorare, studia.', 'Oltre a lavorare, studia.', 'A preposição é «a».']],
+      }),
+      texto(8, 'Lavorare da casa: pro e contro', 'Lavorare da casa ha molti vantaggi. Prima di tutto, si risparmia il tempo del viaggio; inoltre si può organizzare la giornata con più libertà. Tuttavia, non tutto è semplice: siccome si vedono meno i colleghi, è più facile sentirsi soli. Benché molte aziende offrano questa possibilità, non tutte offrono gli strumenti giusti. Per questo, a mio parere, la soluzione migliore è un equilibrio: due o tre giorni in ufficio, purché le regole siano chiare. In conclusione, il lavoro da casa funziona bene quando serve a vivere meglio, non soltanto a lavorare di più.', 'Trabalhar de casa tem muitas vantagens. Antes de tudo, economiza-se o tempo de deslocamento; além disso, é possível organizar o dia com mais liberdade. No entanto, nem tudo é simples: como se veem menos os colegas, é mais fácil sentir-se sozinho. Embora muitas empresas ofereçam essa possibilidade, nem todas oferecem as ferramentas certas. Por isso, na minha opinião, a melhor solução é um equilíbrio: dois ou três dias no escritório, desde que as regras sejam claras. Em conclusão, o trabalho em casa funciona bem quando serve para viver melhor, não só para trabalhar mais.', [['Qual é uma vantagem de trabalhar de casa?', 'Economiza-se o tempo de deslocamento.'], ['Por que é mais fácil se sentir sozinho?', 'Porque se veem menos os colegas.'], ['Qual é a solução proposta?', 'Dois ou três dias no escritório, com regras claras.']]),
+      producao(5, 'Diga em voz alta a sua posição sobre o trabalho em casa, em quatro frases, usando pelo menos três conectores do texto.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 53', [
+      revisao(5, 'Releia as três tabelas e escolha um conector de cada grupo para fazer uma frase sobre o seu dia.'),
+      exercicios(20, [
+        ouvir('Siccome piove, resto a casa', ['Siccome piove, resto a casa', 'Come piove, resto a casa', 'Perché piove, resto a casa'], 'Siccome piove, resto a casa', '«Siccome» abre a frase causal.'),
+        ouvir('Benché sia stanco, lavora', ['Benché sia stanco, lavora', 'Benché è stanco, lavora', 'Anche se sia stanco, lavora'], 'Benché sia stanco, lavora', '«Benché» + congiuntivo.'),
+        ouvir('Vengo, a meno che non piova', ['Vengo, a meno che non piova', 'Vengo, a meno che piove', 'Vengo, a meno di piovere'], 'Vengo, a meno che non piova', '«A meno che non» + congiuntivo.'),
+        ditado('Nonostante la pioggia, siamo usciti', 'Escreva: Nonostante la pioggia, siamo usciti.'),
+        ditado('Lavoro affinché tu possa studiare', 'Escreva: Lavoro affinché tu possa studiare.'),
+        ditado('Insomma, è andata bene', 'Escreva: Insomma, è andata bene.'),
+        mc('Qual conector indica causa positiva?', ['grazie a', 'a causa di', 'nonostante'], 'grazie a', 'Causas boas pedem «grazie a».'),
+        mc('«Benché» pede:', ['congiuntivo', 'indicativo', 'infinitivo'], 'congiuntivo', 'Concessão.'),
+        mc('Com o mesmo sujeito, finalidade se faz com:', ['per + infinitivo', 'affinché + congiuntivo', 'purché + indicativo'], 'per + infinitivo', '«Studio per imparare».'),
+        mc('Qual frase está correta?', ['Oltre a lavorare, studia.', 'Oltre di lavorare, studia.', 'Oltre lavorare, studia.'], 'Oltre a lavorare, studia.', '«Oltre a» + infinitivo.'),
+        lacuna('___ sono stanco, vado a letto. (como)', ['Siccome', 'Come', 'Invece'], 'Siccome', 'Causa no início da frase.'),
+        lacuna('Io lavoro, ___ lui dorme.', ['mentre', 'purché', 'affinché'], 'mentre', 'Contraste: «ao passo que».'),
+        lacuna('Esco, ___ non piova. (desde que)', ['purché', 'benché', 'siccome'], 'purché', 'Condição + congiuntivo.'),
+        lacuna('Era ___ stanco che si è addormentato.', ['così', 'perciò', 'invece'], 'così', '«Così… che» expressa resultado.'),
+        ordem('Ordene: «Siccome piove, resto a casa.»', ['Siccome', 'piove,', 'resto', 'a', 'casa'], 'Siccome piove, resto a casa.', 'Causa no início.'),
+        ordem('Ordene: «Benché sia tardi, vengo.»', ['Benché', 'sia', 'tardi,', 'vengo'], 'Benché sia tardi, vengo.', 'Concessão.'),
+        livre('Escreva em italiano: Como chove, fico em casa. Embora esteja cansado, ele trabalha. Venho, desde que haja lugar.', 'Siccome piove, resto a casa. Benché sia stanco, lavora. Vengo, purché ci sia posto.'),
+      ]),
+      producao(5, 'Fale 1 minuto sobre um problema do seu dia a dia, ligando causa, consequência e oposição.'),
+    ]),
+  ],
+});

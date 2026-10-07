@@ -1,0 +1,118 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'it', numero: 33, titulo: 'Saúde: médico e farmácia', nivel: 'a2',
+  objetivo: "Dizer o que dói («mi fa male», «ho mal di»), descrever sintomas, entender o médico (Lei, imperativo, «da quanto tempo») e pedir um remédio na farmácia.",
+  nota: "Você explica o que sente e entende o que o médico e o farmacêutico dizem. Este conteúdo é para comunicação e não substitui orientação médica. Próxima aula: viagem, aeroporto, trem e hotel.",
+  sessoes: [
+    sessao('S1', 'O corpo e os sintomas', [
+      revisao(5, 'Una duas frases com «che» e duas com «preposição + cui», em voz alta (aula 32).'),
+      palavras(8, [
+        ['la testa', 'la tésta', 'a cabeça', ''], ['la gola', 'la gôla', 'a garganta', ''], ['la schiena', 'la skiéna', 'as costas', ''], ['lo stomaco', 'lo stómako', 'o estômago', ''],
+        ['la febbre', 'la fébbre', 'a febre', ''], ['la tosse', 'la tósse', 'a tosse', ''], ['il raffreddore', 'il raffreddôre', 'o resfriado', ''], ['il mal di testa', 'il mal di tésta', 'a dor de cabeça', ''],
+      ]),
+      gramatica(12, 'Mi fa male, ho mal di, ho la febbre', "PASSO 1: para dizer que algo dói, a parte do corpo é o sujeito: «Mi fa male la testa.» (a cabeça me dói) PASSO 2: com parte do corpo no plural, o verbo vai ao plural: «Mi fanno male i piedi.» PASSO 3: outra forma muito comum é «Ho mal di + parte do corpo»: «Ho mal di testa.» «Ho mal di gola.» «Ho mal di schiena.» «Ho mal di stomaco.» «Ho mal di denti.» PASSO 4: com um médico (Lei) usa-se «Le»: «Che cosa Le fa male?» «Le fa male la gola?» PASSO 5: doenças com «avere»: «Ho la febbre.» «Ho la tosse.» «Ho il raffreddore.» «Ho l'influenza.» PASSO 6: sensação geral: «Sto male.» «Non mi sento bene.» «Mi sento male.» PASSO 7: em italiano a parte do corpo leva artigo definido e não possessivo: «Mi fa male la testa» (e não «la mia testa»); «Mi lavo le mani» (e não «le mie mani»). PASSO 8: tempo da doença: «Ho la tosse da tre giorni.» (aula 31: situação que continua = «da»).", {
+        tag: 'Saúde',
+        comparacao: "em português dizemos «a minha cabeça dói» ou «estou com dor de cabeça». O italiano diz «mi fa male la testa» (sem possessivo) ou «ho mal di testa» (sem artigo). O erro típico do brasileiro é traduzir o possessivo: «la mia testa mi fa male» soa estranho. Outra diferença: «doer» tem a pessoa como objeto indireto («mi, ti, Le») e a parte do corpo como sujeito, por isso o verbo concorda com ela: «mi fanno male i piedi».",
+        tabela: [
+          { estrutura: 'Mi fa male + singular', exemplo: 'Mi fa male la testa.', sentido: 'A cabeça me dói.' },
+          { estrutura: 'Mi fanno male + plural', exemplo: 'Mi fanno male i piedi.', sentido: 'Os pés me doem.' },
+          { estrutura: 'Ho mal di + parte', exemplo: 'Ho mal di gola.', sentido: 'Estou com dor de garganta.' },
+          { estrutura: 'Ho + doença', exemplo: 'Ho la febbre.', sentido: 'Estou com febre.' },
+          { estrutura: 'Sto male', exemplo: 'Oggi sto male.', sentido: 'Hoje estou mal.' },
+          { estrutura: 'da + tempo', exemplo: 'Ho la tosse da tre giorni.', sentido: 'Estou com tosse há três dias.' },
+        ],
+        erros: [
+          ['La mia testa mi fa male.', 'Mi fa male la testa.', 'Parte do corpo: artigo, sem possessivo.'],
+          ['Mi fa male i piedi.', 'Mi fanno male i piedi.', 'Parte do corpo no plural: o verbo vai ao plural.'],
+          ['Ho male di testa.', 'Ho mal di testa.', 'Expressão fixa: «mal di».'],
+          ['Sono la febbre.', 'Ho la febbre.', 'Febre e doenças usam «avere».'],
+        ],
+      }),
+      producao(5, 'Diga em voz alta o que dói e o que você tem em quatro situações diferentes: dor de cabeça, gripe, dor nas costas e dor de garganta.', 'Ho mal di testa. Mi fanno male i piedi. Ho la febbre da ieri.'),
+    ]),
+    sessao('S2', 'No consultório: o médico fala com Lei', [
+      revisao(4, 'Diga cinco frases com «mi fa male», «mi fanno male» e «ho mal di».'),
+      palavras(6, [
+        ['il medico', 'il médiko', 'o médico', ''], ['la visita', 'la vízita', 'a consulta', ''], ['la ricetta', 'la ritchétta', 'a receita médica', ''], ['la medicina', 'la meditchína', 'o remédio', ''], ['il pronto soccorso', 'il prónto sokkórso', 'o pronto-socorro', ''], ['la tessera sanitaria', 'la téssera sanitária', 'o cartão de saúde', ''],
+      ]),
+      gramatica(12, 'Entender o médico: Lei e imperativo', "PASSO 1: o médico usa «Lei» (aula 1): «Come si sente?» «Che cosa Le fa male?» «Da quanto tempo ha la febbre?» PASSO 2: as instruções vêm no imperativo de Lei: verbos em «-are» terminam em «-i» (respirare → respiri; riposare → riposi); verbos em «-ere» e «-ire» terminam em «-a» (prendere → prenda; bere → beva; dormire → dorma; aprire → apra). PASSO 3: irregulares muito ouvidos: fare → faccia; andare → vada; stare → stia: «Stia a letto.» PASSO 4: imperativo negativo de Lei: «Non mangi cibi pesanti.» «Non beva alcolici.» PASSO 5: obrigação e conselho: «Deve riposare.» «Bisogna bere molta acqua.» (bisogna + infinitivo) PASSO 6: o paciente pede: «Vorrei prenotare una visita.» «Ho bisogno di una visita.» PASSO 7: dor com preposição articulada: «Ho male alla gola», «Ho male al braccio», «Ho male ai piedi» (a + artigo). PASSO 8: alergia: «È allergico a qualcosa?» «Sono allergica alla penicillina.» PASSO 9: em italiano «prende» a medicina; não se «toma»: «Prenda questa compressa.»", {
+        tag: 'Saúde',
+        comparacao: "o português diz «tome este remédio», com o verbo «tomar»; o italiano diz «prenda questa medicina» (do verbo «prendere», pegar). Para líquidos, «bere» (beber): «Beva molta acqua.» O imperativo de «Lei» é igual ao presente do subjuntivo, como em português: «tome» / «prenda», «beba» / «beva». Isso ajuda: se você sabe o subjuntivo, a forma de Lei sai naturalmente.",
+        tabela: [
+          { infinito: 'respirare', lei: 'respiri', exemplo: 'Respiri profondamente.' },
+          { infinito: 'riposare', lei: 'riposi', exemplo: 'Riposi un po\'.' },
+          { infinito: 'prendere', lei: 'prenda', exemplo: 'Prenda questa compressa.' },
+          { infinito: 'bere', lei: 'beva', exemplo: 'Beva molta acqua.' },
+          { infinito: 'dormire', lei: 'dorma', exemplo: 'Dorma bene.' },
+          { infinito: 'aprire', lei: 'apra', exemplo: 'Apra la bocca.' },
+          { infinito: 'stare', lei: 'stia', exemplo: 'Stia a letto.' },
+          { infinito: 'andare', lei: 'vada', exemplo: 'Vada dal medico.' },
+        ],
+        erros: [
+          ['Tomi questa compressa.', 'Prenda questa compressa.', 'Em italiano se «prende» o remédio, não se «toma».'],
+          ['Beve molta acqua. (instrução do médico)', 'Beva molta acqua.', 'Imperativo de Lei: verbos em «-ere» terminam em «-a».'],
+          ['Ho la tosse da tre giorni fa.', 'Ho la tosse da tre giorni.', 'A situação continua: «da» sem «fa».'],
+          ['Ho male alla la gola.', 'Ho male alla gola.', '«A» + «la» formam «alla»: não repita o artigo.'],
+        ],
+      }),
+      producao(8, 'Encene uma consulta em voz alta: o paciente diz o que sente e há quanto tempo; o médico faz três perguntas e dá três instruções com Lei.', 'Mi fa male la gola da due giorni. Prenda una compressa dopo i pasti.'),
+    ]),
+    sessao('S3', 'Na farmácia', [
+      revisao(4, 'Dê em voz alta três instruções de médico com Lei (prenda, beva, riposi).'),
+      palavras(5, [
+        ['la farmacia', 'la farmatchía', 'a farmácia', ''], ['la compressa', 'la kompréssa', 'o comprimido', ''], ['lo sciroppo', 'lo xiróppo', 'o xarope', ''], ['la pomata', 'la pomáta', 'a pomada', ''], ['senza ricetta', 'séntsa ritchétta', 'sem receita', ''],
+      ]),
+      gramatica(8, 'Pedir um remédio e entender a posologia', "PASSO 1: pedir: «Vorrei qualcosa per il mal di gola.» «Avrebbe qualcosa per la tosse?» (qualcosa per + problema) PASSO 2: perguntar sobre receita: «Serve la ricetta?» «Ci vuole la ricetta?» «È senza ricetta?» PASSO 3: frequência: «una compressa due volte al giorno», «tre volte alla settimana». Em italiano é «al giorno» (por dia). PASSO 4: horários: «dopo i pasti», «prima di dormire», «la mattina a digiuno», «ogni otto ore». PASSO 5: duração: «per cinque giorni». PASSO 6: «Mi serve una pomata» e «Mi servono due compresse»: «servire» concorda com o que se precisa, sem «di». PASSO 7: perguntas úteis: «Va bene per i bambini?» «Ha effetti collaterali?» PASSO 8: falso amigo parcial: «ricetta» é receita médica e de cozinha; «medicina» é remédio e a ciência; «pastiglia» é pastilha.", {
+        tag: 'Saúde',
+        comparacao: "o português usa «por dia» e «por semana» para a frequência; o italiano usa «al giorno», «alla settimana», «al mese» (preposição articulada). O erro é dizer «per giorno». Note também «ricetta»: como o português «receita», serve para a receita médica e a de cozinha.",
+        tabela: [
+          { italiano: 'due volte al giorno', sentido: 'duas vezes por dia' },
+          { italiano: 'dopo i pasti', sentido: 'depois das refeições' },
+          { italiano: 'prima di dormire', sentido: 'antes de dormir' },
+          { italiano: 'ogni otto ore', sentido: 'a cada oito horas' },
+          { italiano: 'per cinque giorni', sentido: 'por cinco dias' },
+          { italiano: 'senza ricetta', sentido: 'sem receita' },
+        ],
+        erros: [
+          ['Due volte per giorno.', 'Due volte al giorno.', 'Frequência: «al giorno».'],
+          ['Vorrei qualcosa a mal di gola.', 'Vorrei qualcosa per il mal di gola.', '«Qualcosa per» + problema.'],
+          ['Prenda una compressa prima dormire.', 'Prenda una compressa prima di dormire.', '«Prima» + «di» + infinitivo.'],
+          ['Mi serve di una pomata.', 'Mi serve una pomata.', '«Servire» não leva «di».'],
+        ],
+      }),
+      dialogo(8, 'In farmacia / Na farmácia', 'Carlos pede ajuda à farmacêutica por causa de uma dor de garganta.', [
+        ['Carlos', 'Buongiorno. Ho mal di gola e un po\' di tosse da due giorni. Avrebbe qualcosa?', 'Bom dia. Estou com dor de garganta e um pouco de tosse há dois dias. A senhora teria algo?'],
+        ['La farmacista', 'Ha anche la febbre?', 'O senhor também tem febre?'],
+        ['Carlos', 'No, la febbre no. Ma mi sento stanco.', 'Não, febre não. Mas me sinto cansado.'],
+        ['La farmacista', 'Allora Le do uno sciroppo e delle pastiglie per la gola. Segua le istruzioni sulla confezione.', 'Então lhe dou um xarope e pastilhas para a garganta. Siga as instruções da embalagem.'],
+        ['Carlos', 'Serve la ricetta?', 'Precisa de receita?'],
+        ['La farmacista', 'Dipende dal prodotto: controlli sulla confezione. Se non sta meglio, parli con il medico.', 'Depende do produto: confira na embalagem. Se não melhorar, fale com o médico.'],
+      ]),
+      producao(5, 'Peça em voz alta um remédio para três problemas (tosse, dor de cabeça, dor de garganta) e pergunte se precisa de receita.', 'Vorrei qualcosa per il mal di testa. Serve la ricetta?'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 33', [
+      revisao(5, 'Diga em voz alta o que dói, o que você tem e o que o médico diria para você fazer.'),
+      exercicios(20, [
+        ouvir('Mi fa male la testa', ['Mi fa male la testa', 'Mi fanno male i piedi', 'Ho mal di testa'], 'Mi fa male la testa', 'Ouça «mi fa male».'),
+        ouvir('Prenda questa compressa', ['Prenda questa compressa', 'Prende questa compressa', 'Prendo questa compressa'], 'Prenda questa compressa', 'Ouça «prenda» (Lei).'),
+        ouvir('Ho la tosse da tre giorni', ['Ho la tosse da tre giorni', 'Ho la febbre da tre giorni', 'Ho avuto la tosse tre giorni fa'], 'Ho la tosse da tre giorni', 'Ouça «tosse» e «da».'),
+        ditado('Ho mal di gola', 'Escreva: Ho mal di gola.'),
+        ditado('Beva molta acqua', 'Escreva: Beva molta acqua.'),
+        ditado('Serve la ricetta', 'Escreva: Serve la ricetta.'),
+        mc('Qual frase está correta?', ['Mi fanno male i piedi.', 'Mi fa male i piedi.', 'I miei piedi mi fanno male.'], 'Mi fanno male i piedi.', 'Plural: fanno; sem possessivo.'),
+        mc('Imperativo de Lei de «bere»:', ['beva', 'bevi', 'beve'], 'beva', 'Verbos em «-ere» terminam em «-a».'),
+        mc('Como se diz «duas vezes por dia»?', ['due volte al giorno', 'due volte per giorno', 'due volte in giorno'], 'due volte al giorno', 'Frequência: al giorno.'),
+        mc('O médico diz «Prenda una compressa». «Prenda» é:', ['imperativo de Lei', 'imperativo de tu', 'futuro'], 'imperativo de Lei', 'Prenda = prendere, Lei.'),
+        lacuna('Ho ___ di schiena.', ['mal', 'male', 'dolore'], 'mal', '«Ho mal di»: expressão fixa.'),
+        lacuna('Ho la febbre ___ ieri.', ['da', 'fa', 'per'], 'da', 'Situação que continua.'),
+        lacuna('Vorrei qualcosa ___ la tosse.', ['per', 'a', 'di'], 'per', '«Qualcosa per» + problema.'),
+        lacuna('Ho male ___ gola. (a + la)', ['alla', 'al', 'a la'], 'alla', 'A + la = alla.'),
+        ordem('Ordene: «Che cosa Le fa male?»', ['Che', 'cosa', 'Le', 'fa', 'male'], 'Che cosa Le fa male?', 'Pergunta do médico (Lei).'),
+        ordem('Ordene: «Prenda una compressa dopo i pasti.»', ['Prenda', 'una', 'compressa', 'dopo', 'i', 'pasti'], 'Prenda una compressa dopo i pasti.', 'Posologia.'),
+        livre('Escreva em italiano: Estou com dor de cabeça e com febre há dois dias. Os pés me doem. O senhor teria algo para a tosse?', 'Ho mal di testa e la febbre da due giorni. Mi fanno male i piedi. Avrebbe qualcosa per la tosse?'),
+      ]),
+      producao(5, 'Fale 1 minuto simulando uma ida à farmácia ou ao médico: sintomas, há quanto tempo, pedido e instruções.'),
+    ]),
+  ],
+});

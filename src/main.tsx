@@ -1,4 +1,4 @@
-import '@fontsource-variable/fraunces/full.css';
+import '@fontsource-variable/newsreader/opsz.css';
 import '@fontsource-variable/source-sans-3';
 import '@fontsource-variable/literata';
 import './tokens.css';

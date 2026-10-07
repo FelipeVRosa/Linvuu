@@ -56,8 +56,9 @@ export function lerCsv(texto) {
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const dir = path.join(raiz, 'public', 'audio', idioma);
 const tts = {};
-const LIMITE_MS = 20000; // tempo máximo por tentativa: a biblioteca às vezes não rejeita e o job ficaria parado
+const LIMITE_BASE_MS = 20000; // tempo máximo por tentativa: a biblioteca às vezes não rejeita e o job ficaria parado
 const sintetizar = async (texto, g, arquivo) => {
+  const LIMITE_MS = Math.max(LIMITE_BASE_MS, texto.length * 90); // textos longos (leituras) precisam de mais tempo
   // uma conexão nova por frase: uma conexão presa não contamina as seguintes
   const motor = new EdgeTTS({ voice: voz(g), lang: cfg.lang, outputFormat: 'audio-24khz-48kbitrate-mono-mp3', timeout: LIMITE_MS });
   let relogio;

@@ -28,6 +28,7 @@ const VOZES = {
   en: { lang: 'en-US', m: 'en-US-GuyNeural', f: 'en-US-JennyNeural' },
   es: { lang: 'es-ES', m: 'es-ES-AlvaroNeural', f: 'es-ES-ElviraNeural' },
   fr: { lang: 'fr-FR', m: 'fr-FR-HenriNeural', f: 'fr-FR-DeniseNeural' },
+  it: { lang: 'it-IT', m: 'it-IT-DiegoNeural', f: 'it-IT-ElsaNeural' },
   br: { lang: 'pt-BR', m: 'pt-BR-AntonioNeural', f: 'pt-BR-FranciscaNeural' },
 };
 const cfg = VOZES[idioma];

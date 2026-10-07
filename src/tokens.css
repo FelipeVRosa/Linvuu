@@ -53,16 +53,16 @@
 --foco:var(--ocre);
 }
 :root{
-/* Fraunces não tem cirílico: o navegador usa Literata glifo a glifo para Привет, Здравствуйте etc. */
---font-display:'Fraunces Variable','Literata Variable',Georgia,serif;
---font-display-cirilico:'Literata Variable','Fraunces Variable',Georgia,serif;
+/* Newsreader não tem cirílico: o navegador usa Literata glifo a glifo para Привет, Здравствуйте etc. */
+--font-display:'Newsreader Variable','Literata Variable',Georgia,serif;
+--font-display-cirilico:'Literata Variable','Newsreader Variable',Georgia,serif;
 --font-body:'Source Sans 3 Variable','Source Sans 3',ui-sans-serif,system-ui,sans-serif;
-/* Eixos travados da Fraunces: sem formas 'wonky', sem arredondamento, tamanho óptico fixo por uso */
---fraunces-display:"WONK" 0,"SOFT" 0,"opsz" 72; /* @kind font */
---fraunces-texto:"WONK" 0,"SOFT" 0,"opsz" 24; /* @kind font */
+/* Newsreader: tamanho óptico fixo por uso */
+--fraunces-display:"opsz" 72; /* @kind font */
+--fraunces-texto:"opsz" 24; /* @kind font */
 --font-hand:'Caveat','Bradley Hand',cursive;
 
-/* Escala (px). Forte e hierárquica: display em Fraunces 600, tracking negativo. */
+/* Escala (px). Forte e hierárquica: display em Newsreader 600, tracking negativo. */
 --t-display-xl:96px;
 --t-display-l:72px;
 --t-display-m:56px;

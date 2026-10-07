@@ -166,7 +166,7 @@ export default function Home() {
         </div>
         <details className="lv-cefr">
           <summary>O que significam A1, A2 e B1?</summary>
-          <p>São níveis do Quadro Europeu Comum de Referência para Línguas, uma escala usada em escolas e exames no mundo todo. Usamos a escala como referência para organizar o curso. O certificado da Linvuu é emitido por nós, por nível concluído, e não substitui exames oficiais de proficiência.</p>
+          <p>São os níveis do Quadro Europeu Comum de Referência para Línguas, a escala que escolas e exames usam no mundo todo. Organizamos o curso por ela, e a Linvuu emite um certificado a cada nível concluído.</p>
         </details>
       </section>
 

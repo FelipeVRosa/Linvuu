@@ -3,28 +3,130 @@
   "dia": 30,
   "fase": 3,
   "nivel": "a1",
-  "status": "planejada",
-  "titulo": "Revisão da fase 3",
-  "objetivo": "Descrever um dia típico seu em um minuto.",
-  "comeceAqui": {
-    "status": "pendente",
-    "audio": null,
-    "palavras": []
+  "status": "publicada",
+  "titulo": "Comida: some, any e pedir num café: Some, any e a lot of",
+  "objetivo": "Aula 8, sessão 2 de 4 · 30 min",
+  "aula": {
+    "numero": 8,
+    "titulo": "Comida: some, any e pedir num café",
+    "objetivo": "Nomear comidas e bebidas, separar o que se conta do que não se conta, usar some, any e a lot of, e fazer um pedido com «I'd like».",
+    "sessoes": 4,
+    "duracaoTotalMin": 120,
+    "nivel": "a1"
   },
-  "imersao": {
-    "status": "pendente",
-    "texto": null,
-    "audio": null,
-    "vocabulario": []
+  "sessao": {
+    "sessao": "S2",
+    "titulo": "Some, any e a lot of",
+    "duracaoMin": 30,
+    "blocos": [
+      {
+        "tipo": "palavras",
+        "min": 6,
+        "itens": [
+          {
+            "ru": "some",
+            "translit": "sâm",
+            "pt": "algum, um pouco de",
+            "en": "",
+            "audio": "some"
+          },
+          {
+            "ru": "any",
+            "translit": "éni",
+            "pt": "nenhum, algum",
+            "en": "",
+            "audio": "any"
+          },
+          {
+            "ru": "a lot of",
+            "translit": "a lót óv",
+            "pt": "muito(s)",
+            "en": "",
+            "audio": "a lot of"
+          },
+          {
+            "ru": "cheese",
+            "translit": "tchiz",
+            "pt": "queijo",
+            "en": "",
+            "audio": "cheese"
+          },
+          {
+            "ru": "fruit",
+            "translit": "frut",
+            "pt": "fruta",
+            "en": "",
+            "audio": "fruit"
+          },
+          {
+            "ru": "meat",
+            "translit": "miit",
+            "pt": "carne",
+            "en": "",
+            "audio": "meat"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Some, any e a lot of",
+        "explicacao": "PASSO 1: «some» em frases AFIRMATIVAS, com incontáveis e contáveis no plural: «I have some milk.», «She has some eggs.» PASSO 2: «any» em NEGATIVAS e PERGUNTAS: «I don't have any milk.», «Do you have any eggs?» PASSO 3: nas negativas, «any» = nenhum: «There isn't any bread.» PASSO 4: exceção: em ofertas e pedidos, use «some»: «Would you like some coffee?» PASSO 5: «a lot of» = muito: «I drink a lot of water.» Em frases negativas, prefira «much/many»: «I don't eat much meat.» PASSO 6: não use «some/any» com singular contável: «a sandwich» (nunca «some sandwich»).",
+        "comparacao": "em português «algum/nenhum» muda de forma. O inglês usa «some» para o positivo e «any» para negativa e pergunta; a palavra muda, o sentido de quantidade vem junto.",
+        "tabela": [
+          {
+            "tipo": "Afirmativa",
+            "exemplo": "I have some milk."
+          },
+          {
+            "tipo": "Negativa",
+            "exemplo": "I don't have any milk."
+          },
+          {
+            "tipo": "Pergunta",
+            "exemplo": "Do you have any milk?"
+          },
+          {
+            "tipo": "Oferta",
+            "exemplo": "Would you like some coffee?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "I don't have some bread.",
+            "certo": "I don't have any bread.",
+            "motivo": "Negativa pede «any»."
+          },
+          {
+            "errado": "Do you have some eggs?",
+            "certo": "Do you have any eggs?",
+            "motivo": "Pergunta comum pede «any»."
+          },
+          {
+            "errado": "I want some sandwich.",
+            "certo": "I want a sandwich.",
+            "motivo": "Singular contável leva «a/an»."
+          },
+          {
+            "errado": "I eat much rice every day.",
+            "certo": "I eat a lot of rice every day.",
+            "motivo": "Em frases afirmativas, use «a lot of»."
+          }
+        ],
+        "tag": "Quantidade"
+      },
+      {
+        "tipo": "producao",
+        "min": 8,
+        "enunciado": "Diga o que há e o que não há na sua geladeira: «There is some milk. There aren't any eggs.»"
+      },
+      {
+        "tipo": "revisao",
+        "min": 4,
+        "enunciado": "Diga se é contável ou incontável: egg, milk, sandwich, rice, juice, apple."
+      }
+    ]
   },
-  "pratica": {
-    "status": "pendente",
-    "exercicios": []
-  },
-  "responsavel": null,
-  "videoApoio": {
-    "status": "nenhum",
-    "url": null,
-    "motivo": null
-  }
+  "origem": "content/idiomas/en/aulas/aula-008.json",
+  "responsavel": null
 }

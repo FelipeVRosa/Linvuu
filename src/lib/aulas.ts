@@ -1,5 +1,5 @@
 // Tipos das aulas em sessões (content/idiomas/<id>/aulas/aula-NNN.json). Cada sessão vira um dia do curso.
-export interface Letra { maiuscula: string; minuscula: string; som: string; ipa: string; exemplo: string; exemploPt: string }
+export interface Letra { maiuscula: string; minuscula: string; som: string; ipa: string; exemplo: string; exemploPt: string; /** texto lido para o NOME da letra (ex.: «bee»), quando o nome importa (inglês) */ nome?: string }
 /** `ainda`: letras desta palavra que o aluno ainda não aprendeu (calculado por scripts/aulas.mjs). */
 export interface Palavra { ru: string; translit: string; pt: string; en?: string; audio?: string; ainda?: string[] }
 export interface LinhaDialogo { personagem: string; ru: string; pt: string; audio?: string }

@@ -25,7 +25,7 @@ const refazer = new Set((args.refazer ?? '').split(',').filter(Boolean));
 const VOZES = {
   de: { lang: 'de-DE', m: 'de-DE-ConradNeural', f: 'de-DE-KatjaNeural' },
   ru: { lang: 'ru-RU', m: 'ru-RU-DmitryNeural', f: 'ru-RU-SvetlanaNeural' },
-  gb: { lang: 'en-GB', m: 'en-GB-RyanNeural', f: 'en-GB-SoniaNeural' },
+  en: { lang: 'en-US', m: 'en-US-GuyNeural', f: 'en-US-JennyNeural' },
   es: { lang: 'es-ES', m: 'es-ES-AlvaroNeural', f: 'es-ES-ElviraNeural' },
   fr: { lang: 'fr-FR', m: 'fr-FR-HenriNeural', f: 'fr-FR-DeniseNeural' },
   br: { lang: 'pt-BR', m: 'pt-BR-AntonioNeural', f: 'pt-BR-FranciscaNeural' },

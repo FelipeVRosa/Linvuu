@@ -10,7 +10,7 @@ O Brasil está inundado de cursos de inglês, e inglês é uma língua relativam
 4. **Progresso real, não pontos:** painel com acertos por tópico gramatical, erros recorrentes e revisão espaçada baseada nos erros do próprio aluno. Sem XP e sem sequência.
 5. **Conversa corrigida** (fase posterior, com IA): só entra quando houver revisão da qualidade das correções, custo e privacidade definidos.
 
-Não vamos prometer "fluência", resultado em prazo fixo nem equivalência com Cambridge, TOEFL ou IELTS. Os níveis A1, A2 e B1 aparecem como rótulos, sem explicar o quadro europeu na página. O certificado é da Linvuu (conclusão de nível), não oficial, e isso deve estar escrito nele.
+Não vamos prometer "fluência", resultado em prazo fixo nem equivalência com Cambridge, TOEFL ou IELTS. Os níveis A1, A2 e B1 aparecem como rótulos, sem explicar o quadro europeu na página. O certificado é da Linvuu, um por nível (A1, A2 e B1), não oficial, e isso deve estar escrito nele (decisão do Felipe).
 
 ## Estrutura proposta (cerca de 62 aulas, 248 sessões)
 | Nível | Aulas | Foco |
@@ -30,9 +30,12 @@ Cada aula tem 4 sessões de cerca de 30 minutos, no mesmo formato do russo e do 
 Os livros enviados (Essential Grammar in Use, Practical English Usage, Gramática de Uso da Língua Inglesa, The Natural Approach e outros) servem para **conferir fatos e a ordem dos tópicos**. As explicações, os exemplos, os textos e os exercícios são escritos do zero. Nada é copiado nem parafraseado de perto. Antes do lançamento comercial, consulta jurídica sobre o uso de qualquer material com direitos reservados.
 
 ## Áudio
-Edge TTS (workflow atual) com vozes dos EUA (Guy e Jenny) para o curso principal e vozes britânicas (Ryan e Sonia) em amostras de escuta nos níveis A2 e B1. Migrar para Azure Speech antes do lançamento comercial, como já planejado.
+Inglês americano como modelo (mercado e provas mais comuns no Brasil), com vozes Guy e Jenny no Edge TTS. O id interno do curso passou de `gb` para `en`. Vozes britânicas entram só como amostras de escuta nos níveis A2 e B1. Migrar para Azure Speech antes do lançamento comercial, como já planejado.
 
-## Piloto: aulas 1 a 4 (A1)
+## Piloto: aulas 1 a 4 (A1) — escrito
+As 4 aulas (16 sessões) estão em `content/idiomas/en/fontes`. O teste de nivelamento ainda não existe (precisa de página própria) e fica para a próxima rodada.
+
+### Temas
 1. Sons e alfabeto para brasileiros (vogais, th, o final -ed, ortografia que engana)
 2. To be: afirmativa, negativa, pergunta; I, you, he, she, it
 3. Cumprimentos, apresentações, países e nacionalidades (diálogos curtos)

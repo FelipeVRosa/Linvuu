@@ -39,7 +39,7 @@ export default function Curso() {
             <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
             {curso.area === 'idiomas' && <><span><Bandeira id={curso.id} size={18} /> {stats?.total ?? 120} dias</span><span>Sessões de ~30 min</span><span>Começa do zero</span></>}
             {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
-            {['ru', 'de'].includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">Gramática do {curso.nome.toLowerCase()} →</Link>}
+            {['ru', 'de', 'en'].includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">Gramática do {curso.nome.toLowerCase()} →</Link>}
           </div>
         </div>
       </header>

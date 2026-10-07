@@ -5,7 +5,7 @@ const soma = (blocos) => blocos.reduce((x, b) => x + (b.min ?? 0), 0);
 /** Abertura da aula (só no começo de uma aula nova). */
 export const intro = (min, texto) => ({ tipo: 'intro', min, texto });
 /** grupos: [[nome, [[Maiúscula, minúscula, som em português, IPA, exemplo, tradução do exemplo]]]] */
-export const alfabeto = (min, grupos) => ({ tipo: 'alfabeto', min, grupos: grupos.map(([nome, letras]) => ({ nome, letras: letras.map(([maiuscula, minuscula, som, ipa, exemplo, exemploPt]) => ({ maiuscula, minuscula, som, ipa, exemplo, exemploPt })) })) });
+export const alfabeto = (min, grupos) => ({ tipo: 'alfabeto', min, grupos: grupos.map(([nome, letras]) => ({ nome, letras: letras.map(([maiuscula, minuscula, som, ipa, exemplo, exemploPt, nome]) => ({ maiuscula, minuscula, som, ipa, exemplo, exemploPt, ...(nome ? { nome } : {}) })) })) });
 export const revisao = (min, enunciado) => ({ tipo: 'revisao', min, enunciado });
 export const producao = (min, enunciado, exemplo) => ({ tipo: 'producao', min, enunciado, ...(exemplo ? { exemplo } : {}) });
 /** itens: [ru, transliteração, pt, en] */

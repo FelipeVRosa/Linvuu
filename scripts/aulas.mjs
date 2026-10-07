@@ -81,7 +81,7 @@ const textos = new Map();
 const add = (t, onde, voz = vozes.padrao) => { if (!t) return; const k = textoParaAudio(t); if (!textos.has(k)) textos.set(k, { onde, usos: 0, voz }); textos.get(k).usos++; };
 for (const a of aulas) for (const s of a.sessoes) for (const b of s.blocos) {
   const onde = `aula ${a.aula} ${s.sessao} ${b.tipo}`;
-  if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => add(l.exemplo, onde)));
+  if (b.tipo === 'alfabeto') b.grupos.forEach((g) => g.letras.forEach((l) => { add(l.exemplo, onde); add(l.nome, onde); }));
   if (b.tipo === 'palavras' || b.tipo === 'vocabulario') b.itens.forEach((i) => add(i.audio ?? i.ru, onde));
   if (b.tipo === 'dialogo') b.linhas.forEach((l) => add(l.audio, onde, vozDe(l.personagem)));
   if (b.tipo === 'texto') add(b.ru, onde);

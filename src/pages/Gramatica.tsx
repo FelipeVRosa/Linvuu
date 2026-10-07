@@ -7,10 +7,11 @@ import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
 import ru from '../../content/gramatica/ru.json';
 import de from '../../content/gramatica/de.json';
+import en from '../../content/gramatica/en.json';
 
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[] }
-const PACOTES: Record<string, Pacote> = { ru: ru as unknown as Pacote, de: de as unknown as Pacote };
+const PACOTES: Record<string, Pacote> = { ru: ru as unknown as Pacote, de: de as unknown as Pacote, en: en as unknown as Pacote };
 
 export default function Gramatica() {
   const { id } = useParams();

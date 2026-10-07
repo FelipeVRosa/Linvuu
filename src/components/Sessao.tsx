@@ -206,7 +206,7 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
           <h3 className="bloco-sub">{g.nome}</h3>
           <ul className="letras">{g.letras.map((l) => (
             <li key={l.maiuscula}>
-              <span className="letra" lang={idioma}>{l.maiuscula} {l.minuscula}</span>
+              <span className="letra" lang={idioma}>{l.maiuscula} {l.minuscula}{l.nome && <> <Audio texto={l.nome} idioma={idioma} rotulo={`Ouvir o nome da letra ${l.maiuscula}`} /></>}</span>
               <span className="ipa">{l.ipa || 'sem som próprio'}</span>
               <span className="som-txt">{l.som}</span>
               <span className="letra-ex"><span lang={idioma}>{l.exemplo}</span> · {l.exemploPt} <Audio texto={l.exemplo} idioma={idioma} /></span>

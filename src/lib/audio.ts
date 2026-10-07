@@ -1,7 +1,7 @@
 // Áudio das aulas. Ordem: MP3 salvo no site (public/audio/<idioma>/<hash>.mp3, listado em index.json) → voz do navegador (provisória).
 // Nome do arquivo = hash do texto SEM acento tônico (o acento é só gráfico). A lista vem de content/audio/<idioma>-gravar.csv.
 const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
-const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', gb: 'en-GB', es: 'es-ES', fr: 'fr-FR', br: 'pt-BR' };
+const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', br: 'pt-BR' };
 
 /** O que a voz lê e o que entra no hash: sem acento tônico (U+0301). Mantenha igual a scripts/aulas.mjs. */
 export const textoParaAudio = (t: string) => t.normalize('NFC').replace(/\u0301/g, '').trim();

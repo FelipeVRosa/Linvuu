@@ -8,6 +8,7 @@ const raiz = path.resolve(import.meta.dirname, '..');
 const fontes = path.join(raiz, 'content', 'idiomas', id, 'fontes');
 const saida = path.join(raiz, 'content', 'idiomas', id, 'aulas');
 if (!fs.existsSync(fontes)) process.exit(0);
+fs.mkdirSync(saida, { recursive: true });
 let n = 0;
 for (const f of fs.readdirSync(fontes).filter((x) => /^aula-\d+\.mjs$/.test(x)).sort()) {
   const { default: a } = await import(pathToFileURL(path.join(fontes, f)).href);

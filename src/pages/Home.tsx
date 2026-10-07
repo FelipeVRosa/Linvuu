@@ -46,6 +46,9 @@ export default function Home() {
             <span className="hero-kicker">{t.hero.kicker}</span>
             <h1 className="hero-h1">{t.hero.titulo}</h1>
             <p className="hero-sub">{t.hero.sub}</p>
+            <ul className="hero-niveis" aria-label={t.hero.niveis}>
+              {['A1', 'A2', 'B1'].map((n) => <li key={n}>{n}</li>)}
+            </ul>
             <form className="hero-search" onSubmit={buscar}>
               <div className="search-field">
                 <label htmlFor="tgt-lang">{t.hero.labelIdioma}</label>
@@ -68,6 +71,7 @@ export default function Home() {
               </div>
               <button type="submit" className="search-btn">{t.hero.botao}</button>
             </form>
+            <p className="hero-acoes"><a className="hero-link" href="#metodo">{t.hero.link} →</a></p>
             <p className="hero-nota">{t.hero.nota.replace('{ru}', String(Math.floor((statusDoCurso('ru')?.publicadas ?? 0) / 4))).replace('{de}', String(Math.floor((statusDoCurso('de')?.publicadas ?? 0) / 4)))}</p>
           </div>
 

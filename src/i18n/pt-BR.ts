@@ -8,12 +8,14 @@ export const ptBR = {
   nav: { metodo: 'Método', avaliacoes: 'Avaliações', duvidas: 'Dúvidas' },
   hero: {
     kicker: 'Idiomas e STEM',
-    titulo: 'Aprenda idiomas como um professor ensina.',
-    sub: 'Cursos em sessões de 30 minutos, com explicação em português, áudio em cada palavra e exercícios corrigidos na hora. Comece grátis pela aula 1.',
+    titulo: 'Idiomas explicados de verdade, do zero ao B1.',
+    sub: 'Gramática clara quando você precisa, áudio em cada frase e exercícios corrigidos na hora. Sessões de 30 minutos, com explicação em português.',
+    link: 'Ver como funciona',
+    niveis: 'Do zero ao B1',
     labelIdioma: 'Quero aprender',
     labelNivel: 'Meu nível',
     botao: 'Começar grátis',
-    nota: 'Aulas completas no ar: russo ({ru} aulas) e alemão ({de} aulas). Os outros idiomas vêm em seguida.',
+    nota: 'Aula 1 grátis, sem cartão. Já no ar: russo ({ru} aulas) e alemão ({de} aulas, com o B2 em construção). Os outros idiomas vêm em seguida.',
   },
   prova: [
     { t: 'Explicação em português', d: 'Cada regra vem com o porquê, pensada para quem fala português.' },

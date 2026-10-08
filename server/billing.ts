@@ -13,6 +13,8 @@ const stripe = chave ? new Stripe(chave) : null;
 let precoCache: string | null = process.env.STRIPE_PRICE_ID || null;
 
 const PRECO_CENTAVOS = 13900;
+const PRECO_TRIMESTRAL = 41700; // 3 x R$ 139, pagamento único (Pix, boleto ou cartão), sem renovação automática
+const somaMeses = (t: number, m: number) => { const d = new Date(t * 1000); d.setMonth(d.getMonth() + m); return Math.floor(d.getTime() / 1000); };
 
 export const cobrancaConfigurada = () => !!(stripe && projeto);
 
@@ -43,10 +45,22 @@ async function cliente(u: { uid: string; email?: string }): Promise<string> {
   return (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } })).id;
 }
 
-async function assinaturaAtiva(uid: string, email?: string): Promise<boolean> {
-  const c = await cliente({ uid, email });
-  const subs = await stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 });
-  return subs.data.some((x) => x.status === 'active' || x.status === 'trialing');
+type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | null; status: string | null; cancelaEm: number | null; ate: number | null };
+
+/** Acesso = assinatura mensal ativa OU pacote de 3 meses pago (Pix e boleto só contam depois de pagos). Stripe é a fonte da verdade. */
+async function acesso(u: { uid: string; email?: string }): Promise<Acesso> {
+  const c = await cliente(u);
+  const [subs, sessoes] = await Promise.all([
+    stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 }),
+    stripe!.checkout.sessions.list({ customer: c, limit: 30 }),
+  ]);
+  const s = subs.data.find((x) => x.status === 'active' || x.status === 'trialing');
+  const agora = Math.floor(Date.now() / 1000);
+  const pacotes = sessoes.data.filter((x) => x.mode === 'payment' && x.metadata?.plano === 'trimestral' && x.payment_status === 'paid').map((x) => somaMeses(x.created, 3));
+  const ate = pacotes.length ? Math.max(...pacotes) : null;
+  if (s) return { ativa: true, via: 'assinatura', status: s.status, cancelaEm: s.cancel_at_period_end ? s.items.data[0]?.current_period_end ?? null : null, ate: null };
+  if (ate && ate > agora) return { ativa: true, via: 'trimestral', status: 'paid', cancelaEm: null, ate };
+  return { ativa: false, via: null, status: null, cancelaEm: null, ate };
 }
 
 export function registrarCobranca(app: Express, urlBase: () => string) {
@@ -68,7 +82,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     if (!livre) {
       const u = await guarda(req, res); if (!u) return;
       try {
-        if (!(await assinaturaAtiva(u.uid, u.email))) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
+        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
       } catch (e) { console.error('aula', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
     }
     res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8'));
@@ -77,10 +91,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/billing/status', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
     try {
-      const c = await cliente(u);
-      const subs = await stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 });
-      const s = subs.data.find((x) => x.status === 'active' || x.status === 'trialing' || x.status === 'past_due');
-      res.json({ ativa: !!s && s.status !== 'past_due', status: s?.status ?? null, cancelaEm: s?.cancel_at_period_end ? s.items.data[0]?.current_period_end ?? null : null });
+      res.json(await acesso(u));
     } catch (e) { console.error('billing/status', e); res.status(500).json({ error: 'Não foi possível consultar a assinatura.' }); }
   });
 
@@ -88,13 +99,21 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const u = await guarda(req, res); if (!u) return;
     try {
       const base = urlBase();
-      const s = await stripe!.checkout.sessions.create({
-        mode: 'subscription', customer: await cliente(u), locale: 'pt-BR', allow_promotion_codes: true,
-        custom_text: { submit: { message: 'Reembolso integral em até 7 dias. Cancele quando quiser, sem multa.' } },
-        line_items: [{ price: await preco(), quantity: 1 }],
-        success_url: `${base}/assinatura?ok=1`, cancel_url: `${base}/assinatura`,
-        client_reference_id: u.uid,
-      });
+      const trimestral = req.body?.plano === 'trimestral';
+      const comum = { customer: await cliente(u), locale: 'pt-BR' as const, success_url: `${base}/assinatura?ok=1`, cancel_url: `${base}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
+      const s = trimestral
+        ? await stripe!.checkout.sessions.create({
+            ...comum, mode: 'payment', allowed_payment_method_types: ['card', 'pix', 'boleto'],
+            payment_method_options: { pix: { expires_after_seconds: 86400 }, boleto: { expires_after_days: 3 } },
+            line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: PRECO_TRIMESTRAL, product_data: { name: 'Linvuu: 3 meses de acesso' } } }],
+            metadata: { plano: 'trimestral', uid: u.uid },
+            custom_text: { submit: { message: 'Pagamento único, sem renovação automática. Reembolso integral em até 7 dias. Pix e boleto liberam o acesso quando o pagamento for confirmado.' } },
+          })
+        : await stripe!.checkout.sessions.create({
+            ...comum, mode: 'subscription',
+            custom_text: { submit: { message: 'Reembolso integral em até 7 dias. Cancele quando quiser, sem multa.' } },
+            line_items: [{ price: await preco(), quantity: 1 }],
+          });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/checkout', e); res.status(500).json({ error: 'Não foi possível abrir o pagamento.' }); }
   });

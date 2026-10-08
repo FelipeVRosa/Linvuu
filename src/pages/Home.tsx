@@ -225,6 +225,7 @@ export default function Home() {
               <h3>Assinatura</h3>
               <p className="lv-plano-preco">R$ 139<span> por mês</span></p>
               <p>Todos os cursos e todas as aulas. Cancele quando quiser. Reembolso integral em até 7 dias.</p>
+              <p>Ou pague 3 meses de uma vez, R$ 417, por Pix, boleto ou cartão.</p>
               <Link to="/assinatura" className="btn btn-primary">Assinar</Link>
             </div>
           </div>

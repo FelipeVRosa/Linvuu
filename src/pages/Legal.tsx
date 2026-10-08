@@ -60,8 +60,9 @@ function Termos() {
         <p>Os textos, áudios, exercícios, o design e a marca Linvuu pertencem à Linvuu. <strong>Todos os direitos reservados à Linvuu.</strong> Você pode estudar para uso pessoal. Não é permitido copiar, revender ou redistribuir o conteúdo sem autorização por escrito.</p>
         <h2>Plano pago e reembolso</h2>
         <p>As duas primeiras aulas de cada curso são grátis. Para continuar, há uma assinatura mensal de R$ 139, cobrada todo mês até você cancelar. O preço e a forma de pagamento aparecem antes da compra.</p>
+        <p><strong>Pacote de 3 meses:</strong> também é possível pagar R$ 417 de uma vez, por Pix, boleto ou cartão, e ter acesso por 3 meses. Esse pagamento não se renova sozinho. Pix e boleto liberam o acesso quando o pagamento é confirmado.</p>
         <p><strong>Reembolso de 7 dias:</strong> você pode pedir o reembolso integral em até 7 dias depois de contratar a assinatura, sem dar motivo, escrevendo para <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. Esse prazo também é o direito de arrependimento previsto no Código de Defesa do Consumidor para compras feitas pela internet.</p>
-        <p><strong>Cancelamento:</strong> você cancela quando quiser, sem multa. O acesso continua até o fim do período já pago, e não há nova cobrança depois disso.</p>
+        <p><strong>Cancelamento da assinatura mensal:</strong> você cancela quando quiser, sem multa. O acesso continua até o fim do período já pago, e não há nova cobrança depois disso.</p>
         <h2>Disponibilidade</h2>
         <p>Trabalhamos para manter o site no ar, mas ele pode ficar indisponível para manutenção ou por falhas fora do nosso controle.</p>
         <h2>Mudanças e foro</h2>

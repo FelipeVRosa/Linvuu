@@ -26,6 +26,7 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
     '/cursos': { titulo: 'Cursos' },
     '/entrar': { titulo: 'Entrar', semIndice: true },
     '/cadastro': { titulo: 'Cadastre-se', semIndice: true },
+    '/assinatura': { titulo: 'Assinatura', semIndice: true },
     '/privacidade': { titulo: 'Política de privacidade', descricao: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.' },
     '/termos': { titulo: 'Termos de uso', descricao: 'Regras de uso do site e dos cursos da Linvuu.' },
   };

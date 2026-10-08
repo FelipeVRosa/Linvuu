@@ -48,6 +48,7 @@ export function Header() {
                 <div className="menu-conta">
                   <strong>{usuario.nome}</strong>
                   <span>{usuario.email}</span>
+                  <Link to="/assinatura" onClick={() => setConta(false)}>Assinatura</Link>
                   <button type="button" onClick={deslogar}>Sair</button>
                 </div>
               )}

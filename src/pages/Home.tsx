@@ -98,10 +98,10 @@ export default function Home() {
             <h1>Pare de colecionar apps. Comece a falar o idioma.</h1>
             <p className="lv-hero-sub">{t.hero.sub}</p>
             <div className="lv-hero-botoes">
-              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-primary">Fazer a aula 1 grátis</Link>
+              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-primary">Fazer as 2 primeiras aulas grátis</Link>
               <Link to="/cursos" className="lv-link-claro">Ver os cursos →</Link>
             </div>
-            <p className="lv-hero-nota">Sem cartão. Aulas já no ar: {aulasNoAr}.</p>
+            <p className="lv-hero-nota">Sem cartão para começar. Depois da 2ª aula, R$ 139/mês. Aulas já no ar: {aulasNoAr}.</p>
           </div>
 
           {amostra && sessao && lang && (

@@ -7,6 +7,7 @@ import Cursos from './pages/Cursos';
 import Curso from './pages/Curso';
 import Dia from './pages/Dia';
 import Conta from './pages/Conta';
+import Assinatura from './pages/Assinatura';
 import { Legal } from './pages/Legal';
 import Gramatica from './pages/Gramatica';
 import { BarraTopo } from './components/BarraTopo';
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/cadastro" element={<Conta modo="cadastro" />} />
           <Route path="/gramatica" element={<Gramatica />} />
           <Route path="/gramatica/:id" element={<Gramatica />} />
+          <Route path="/assinatura" element={<Assinatura />} />
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />
           <Route path="*" element={<NaoEncontrada />} />

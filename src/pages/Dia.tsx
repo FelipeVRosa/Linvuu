@@ -4,6 +4,9 @@ import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso, statusDo
 import { Navegacao } from '../components/Navegacao';
 import { Sessao } from '../components/Sessao';
 import { usePageTitle } from '../lib/usePageTitle';
+import { Paywall } from '../components/Paywall';
+import { useAssinatura } from '../lib/assinatura';
+import { gratis } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
 
 const CAMADAS: { k: 'comeceAqui' | 'imersao' | 'pratica'; t: string; d: string }[] = [
@@ -20,6 +23,7 @@ export default function Dia() {
   const valido = !!curso && curso.area === 'idiomas' && Number.isInteger(dia) && dia >= 1 && dia <= total;
   const [aula, setAula] = useState<Aula | null>(null);
   const [erro, setErro] = useState(false);
+  const ass = useAssinatura();
 
   useEffect(() => {
     if (!valido) return;
@@ -30,6 +34,7 @@ export default function Dia() {
   usePageTitle(aula ? `Dia ${dia}: ${aula.titulo} · ${curso!.nome}` : undefined);
   if (!valido) return <NaoEncontrada />;
 
+  const bloqueado = !gratis(dia) && !ass.ativa;
   const fase = aula && FASES.find((f) => f.id === aula.fase);
 
   return (
@@ -58,7 +63,9 @@ export default function Dia() {
             </p>
           )}
 
-          {aula.sessao ? (
+          {bloqueado ? (
+            ass.carregando ? <p className="resultado" role="status">Carregando…</p> : <Paywall curso={curso!.nome} indisponivel={ass.indisponivel} />
+          ) : aula.sessao ? (
             <Sessao key={dia} nomeIdioma={curso!.nome.toLowerCase()} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
           ) : (
             <div className="camadas">

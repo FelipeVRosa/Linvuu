@@ -38,7 +38,7 @@ export function Footer() {
         </nav>
       </div>
       <div className="lv-foot-base">
-        <span>© 2026 Linvuu</span>
+        <span>© 2026 Linvuu. Todos os direitos reservados.</span>
         <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link></span>
         <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>
       </div>

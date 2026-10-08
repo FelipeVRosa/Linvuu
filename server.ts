@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
-import Stripe from 'stripe';
+import { registrarCobranca } from './server/billing';
 import { getLesson, getLessonSummaryList } from './src/data/index.ts';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
@@ -33,11 +33,6 @@ const ai = new GoogleGenAI({
   },
 });
 
-// Stripe initialization (using secret key or test dummy for sandbox simulation)
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder_linvuu_2026';
-const stripe = new Stripe(stripeSecretKey, {
-  apiVersion: '2025-01-27.acacia' as any,
-});
 
 // Central In-Memory Database for User Profile & Spaced Repetition (Backend Authority)
 const userDatabase: UserProfile = {
@@ -157,6 +152,8 @@ async function startServer() {
   // Saúde do serviço (para o Render e para monitoramento).
   app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
 
+  registrarCobranca(app, () => process.env.APP_URL || `http://localhost:${PORT}`);
+
   // As rotas /api abaixo vieram do protótipo antigo e o site atual não usa nenhuma delas.
   // Ficam DESATIVADAS em produção: eram públicas, sem login nem limite (a análise por IA gastaria a chave do Gemini
   // e o webhook do Stripe aceitava qualquer chamada, sem assinatura). Quando o pagamento e a IA entrarem de verdade,
@@ -245,100 +242,6 @@ async function startServer() {
       lesson,
       isUnlocked: true,
       userHasSubscription: userDatabase.hasSubscription,
-    });
-  });
-
-  // -------------------------------------------------------------
-  // 4. Stripe Payments & Subscriptions
-  // -------------------------------------------------------------
-  app.post('/api/stripe/create-checkout-session', async (req: Request, res: Response) => {
-    try {
-      const { plan = 'monthly' } = req.body;
-      const appUrl = process.env.APP_URL || `http://localhost:${PORT}`;
-
-      const priceAmount = plan === 'annual' ? 14900 : 1900;
-      const planName =
-        plan === 'annual' ? 'Linvuu Fluência - Anual' : 'Linvuu Fluência - Mensal';
-
-      if (
-        process.env.STRIPE_SECRET_KEY &&
-        !process.env.STRIPE_SECRET_KEY.includes('placeholder')
-      ) {
-        const session = await stripe.checkout.sessions.create({
-          line_items: [
-            {
-              price_data: {
-                currency: 'eur',
-                product_data: {
-                  name: planName,
-                  description:
-                    'Acesso irrestrito às 100 lições, áudios autênticos e Tutor Linvuu.',
-                },
-                unit_amount: priceAmount,
-                recurring: {
-                  interval: plan === 'annual' ? 'year' : 'month',
-                },
-              },
-              quantity: 1,
-            },
-          ],
-          mode: 'subscription',
-          success_url: `${appUrl}?payment_success=true&plan=${plan}`,
-          cancel_url: `${appUrl}?payment_cancelled=true`,
-          customer_email: userDatabase.email,
-        });
-
-        return res.json({ checkoutUrl: session.url, sessionId: session.id });
-      }
-
-      const simulatedSessionId = `cs_test_${Date.now()}`;
-      return res.json({
-        simulated: true,
-        sessionId: simulatedSessionId,
-        checkoutUrl: `${appUrl}?payment_success=true&session_id=${simulatedSessionId}&plan=${plan}`,
-        planName,
-        priceFormatted: plan === 'annual' ? '€149.00 / ano' : '€19.00 / mês',
-        message:
-          'Sessão de pagamento Stripe gerada pelo backend. Validação criptográfica de subscrição ativada.',
-      });
-    } catch (err: any) {
-      console.error('Erro no checkout do Stripe:', err);
-      res.status(500).json({ error: err.message || 'Erro ao processar checkout do Stripe' });
-    }
-  });
-
-  // Stripe Webhook Endpoint
-  app.post('/api/stripe/webhook', (req: Request, res: Response) => {
-    const event = req.body;
-    if (
-      event.type === 'checkout.session.completed' ||
-      event.type === 'customer.subscription.created'
-    ) {
-      userDatabase.hasSubscription = true;
-      userDatabase.subscriptionPlan = event.data?.object?.metadata?.plan || 'monthly';
-      userDatabase.subscriptionRenewsAt = new Date(
-        Date.now() + 30 * 24 * 60 * 60 * 1000
-      ).toISOString();
-      console.log('Stripe Webhook: Subscrição ativada com sucesso para', userDatabase.email);
-    }
-    res.json({ received: true });
-  });
-
-  // Instant Subscription Toggle (Test helper)
-  app.post('/api/stripe/toggle-demo-subscription', (req: Request, res: Response) => {
-    const { active } = req.body;
-    if (typeof active === 'boolean') {
-      userDatabase.hasSubscription = active;
-    } else {
-      userDatabase.hasSubscription = !userDatabase.hasSubscription;
-    }
-    userDatabase.subscriptionPlan = userDatabase.hasSubscription ? 'monthly' : undefined;
-    res.json({
-      success: true,
-      hasSubscription: userDatabase.hasSubscription,
-      message: userDatabase.hasSubscription
-        ? 'Subscrição Linvuu ATIVADA no servidor. Lições 3 a 100 desbloqueadas!'
-        : 'Subscrição DESATIVADA no servidor. Lições 3 a 100 bloqueadas com HTTP 403.',
     });
   });
 

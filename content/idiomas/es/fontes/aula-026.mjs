@@ -1,0 +1,118 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 26, titulo: 'Comparativos e superlativos', nivel: 'a2',
+  objetivo: 'Comparar pessoas, coisas e lugares com «más… que», «menos… que», «tan… como» e «tanto… como», usar os comparativos irregulares («mejor, peor, mayor, menor»), formar o superlativo («el más… de», «-ísimo») e evitar o erro de «más de» × «más que».',
+  nota: 'Você agora compara e escolhe: qual é mais barato, mais rápido, melhor. Próxima aula: o futuro simples, para falar de planos e previsões.',
+  sessoes: [
+    sessao('S1', 'Mais, menos e igual', [
+      revisao(5, 'Diga em voz alta, com os tempos que você já conhece, o que você fez ontem e o que você faz todos os dias. Depois conjugue «tener» e «ser» no presente.'),
+      palavras(8, [
+        ['barato, barata', 'baráto', 'barato', ''], ['caro, cara', 'káro', 'caro', ''], ['rápido, rápida', 'rápido', 'rápido', ''], ['lento, lenta', 'lénto', 'lento', ''],
+        ['alto, alta', 'álto', 'alto', ''], ['bajo, baja', 'báho', 'baixo', ''], ['fácil', 'fáthil', 'fácil', ''], ['difícil', 'difíthil', 'difícil', ''],
+      ]),
+      gramatica(12, 'Comparar com «más… que», «menos… que» e «tan… como»', 'PASSO 1: para dizer que algo tem mais de uma qualidade do que outra coisa, use «más» + adjetivo + «que»: «El tren es más rápido que el autobús.» PASSO 2: para dizer que tem menos, troque «más» por «menos»: «El autobús es menos caro que el tren.» PASSO 3: para dizer que é igual, use «tan» + adjetivo + «como»: «Mi hermana es tan alta como yo.» O «tan» é invariável: não muda com o gênero nem com o número. PASSO 4: o adjetivo concorda com o que é descrito, não com o «más»: «Ana es más alta que Pablo», «Los pisos son más caros que las casas». PASSO 5: depois de «que» e «como», o pronome é o de sujeito: «Soy más alto que tú», «Es tan lento como yo» (e não «que ti», «como mim»). Não existe «mim» nem «ti» depois de «que» nesta construção. PASSO 6: com substantivos, a igualdade usa «tanto, tanta, tantos, tantas» + substantivo + «como», e o «tanto» concorda com o substantivo: «Tengo tantos libros como tú», «Hay tanta gente como ayer». PASSO 7: com verbos, use «tanto como» sem mudar: «Trabajo tanto como tú.» PASSO 8: outras formas de dizer «igual»: «igual de + adjetivo + que»: «Es igual de difícil que el otro», e «el mismo, la misma… que»: «Tengo el mismo móvil que tú.» PASSO 9: «más de» + número, e não «más que»: «Hay más de veinte personas.» O «que» só aparece quando se compara duas coisas: «Hay más gente que ayer.»', {
+        tag: 'Comparativos',
+        comparacao: 'em português dizemos «mais rápido que», «tão alto quanto», «tantos livros quanto». A estrutura é a mesma. As armadilhas são: «tan» não varia (em português também «tão»), «tanto» varia, e o espanhol usa «como» onde nós usamos «quanto» ou «como». Depois de «que», o pronome é «tú», «yo», e não «ti» nem «mim».',
+        tabelas: [
+          { titulo: 'As três comparações', linhas: [
+            { tipo: 'mais', estrutura: 'más + adjetivo + que', exemplo: 'Este bolso es más caro que ese.' },
+            { tipo: 'menos', estrutura: 'menos + adjetivo + que', exemplo: 'Esta calle es menos ruidosa que la otra.' },
+            { tipo: 'igual (adjetivo)', estrutura: 'tan + adjetivo + como', exemplo: 'Mi hermano es tan alto como mi padre.' },
+            { tipo: 'igual (substantivo)', estrutura: 'tanto/a/os/as + substantivo + como', exemplo: 'Tengo tantas clases como tú.' },
+            { tipo: 'igual (verbo)', estrutura: 'verbo + tanto como', exemplo: 'Duermo tanto como mi madre.' },
+            { tipo: 'mais de um número', estrutura: 'más de + número', exemplo: 'Cuesta más de cien euros.' },
+          ] },
+        ],
+        exemplos: [['El examen es más fácil que el del año pasado.', 'A prova é mais fácil que a do ano passado.'], ['Este móvil es menos caro que aquel.', 'Este celular é menos caro que aquele.'], ['Ella habla tan rápido como su madre.', 'Ela fala tão rápido quanto a mãe.'], ['Hay más de treinta alumnos en la clase.', 'Há mais de trinta alunos na turma.']],
+        erros: [['Soy más alto de tú.', 'Soy más alto que tú.', 'Entre duas coisas comparadas, use «que»; «de» só vai antes de número.'], ['Hay más que veinte personas.', 'Hay más de veinte personas.', 'Antes de um número, o espanhol usa «más de».'], ['Ella es tan alta que yo.', 'Ella es tan alta como yo.', 'A igualdade é «tan… como», e não «tan… que».'], ['Tengo tanto libros como tú.', 'Tengo tantos libros como tú.', '«Tanto» concorda com o substantivo: tantos libros.']],
+      }),
+      producao(5, 'Compare em voz alta três coisas do seu dia a dia com «más… que», «menos… que» e «tan… como»: por exemplo o ônibus e o metrô, dois restaurantes, você e um amigo.'),
+    ]),
+    sessao('S2', 'Os comparativos irregulares', [
+      revisao(4, 'Faça quatro comparações com «más… que» e «tan… como». Diga uma frase com «más de» e um número.'),
+      palavras(6, [
+        ['mejor', 'mehór', 'melhor', ''], ['peor', 'peór', 'pior', ''], ['mayor', 'maiór', 'maior, mais velho', ''], ['menor', 'menór', 'menor, mais novo', ''], ['igual', 'iguál', 'igual', ''], ['el mismo, la misma', 'el mísmo, la mísma', 'o mesmo, a mesma', ''],
+      ]),
+      gramatica(12, 'Mejor, peor, mayor e menor', 'PASSO 1: quatro adjetivos têm um comparativo próprio e dispensam o «más»: «bueno» vira «mejor» (melhor), «malo» vira «peor» (pior), «grande» pode virar «mayor», e «pequeño» pode virar «menor». PASSO 2: «mejor» e «peor» são os mais usados. Diz-se «Este restaurante es mejor que ese», e não «más bueno que ese». O mesmo vale para «malo»: «Hoy el tiempo es peor que ayer». PASSO 3: «mejor» e «peor» também são advérbios, no sentido de «melhor» e «pior» com verbo: «Hablas mejor que yo», «Hoy canto peor». PASSO 4: «mayor» e «menor» falam de idade ou de importância: «mi hermano mayor» é o irmão mais velho, «mi hermana menor» é a irmã mais nova, «un problema mayor» é um problema maior. Para o tamanho físico, use «más grande» e «más pequeño»: «Mi casa es más grande que la tuya.» PASSO 5: os plurais são «mejores, peores, mayores, menores» (sem tilde e sem alteração de gênero): «Estas fotos son mejores que aquellas.» PASSO 6: para falar de quantidade, use «más» e «menos», que já são comparativos e não mudam: «Tengo más tiempo que tú», «Come menos que yo». PASSO 7: com «mayor», a expressão «una persona mayor» é uma forma delicada de dizer uma pessoa idosa. PASSO 8: pode-se reforçar com «mucho» ou «bastante» antes do comparativo: «mucho mejor», «bastante más caro». Não se usa «muy más» nem «muy mejor».', {
+        tag: 'Comparativos',
+        comparacao: 'em português também temos formas especiais: «melhor» (e não «mais bom»), «pior» (e não «mais mau»), «maior» e «menor». A grande diferença é que, em espanhol, «mayor» e «menor» falam mais de idade do que de tamanho; para tamanho físico usamos «más grande» e «más pequeño».',
+        tabelas: [
+          { titulo: 'Comparativos irregulares', linhas: [
+            { adjetivo: 'bueno, buena', comparativo: 'mejor', exemplo: 'El pan de aquí es mejor.' },
+            { adjetivo: 'malo, mala', comparativo: 'peor', exemplo: 'Hoy hace peor tiempo.' },
+            { adjetivo: 'grande (idade, importância)', comparativo: 'mayor', exemplo: 'Mi hermano mayor vive en Bilbao.' },
+            { adjetivo: 'pequeño (idade, importância)', comparativo: 'menor', exemplo: 'Mi hermana menor estudia música.' },
+            { adjetivo: 'mucho', comparativo: 'más', exemplo: 'Hoy trabajo más.' },
+            { adjetivo: 'poco', comparativo: 'menos', exemplo: 'Ahora duermo menos.' },
+          ] },
+        ],
+        exemplos: [['Tu español es mejor que el mío.', 'O seu espanhol é melhor que o meu.'], ['Esta película es mucho peor que la otra.', 'Este filme é muito pior que o outro.'], ['Mi hermano mayor tiene treinta años.', 'Meu irmão mais velho tem trinta anos.'], ['Tu casa es más grande que la mía.', 'Sua casa é maior que a minha.']],
+        erros: [['Este café es más bueno que ese.', 'Este café es mejor que ese.', '«Bueno» tem comparativo próprio: «mejor».'], ['Hoy estoy más malo que ayer.', 'Hoy estoy peor que ayer.', '«Malo» vira «peor».'], ['Mi casa es mayor que la tuya. (tamanho)', 'Mi casa es más grande que la tuya.', 'Para tamanho físico use «más grande»; «mayor» fala de idade ou importância.'], ['Es muy mejor.', 'Es mucho mejor.', 'Antes de comparativo, use «mucho», e não «muy».']],
+      }),
+      producao(8, 'Fale de duas pessoas da sua família: quem é mayor e quem é menor, quem cocina mejor, quem habla más. Faça pelo menos cinco frases com os comparativos irregulares.'),
+    ]),
+    sessao('S3', 'O superlativo', [
+      revisao(4, 'Diga a diferença entre «más grande» e «mayor». Faça uma frase com «mejor» e outra com «peor».'),
+      palavras(5, [
+        ['el pueblo', 'el puéblo', 'a vila, a cidade pequena', ''], ['la ciudad', 'la thiudád', 'a cidade', ''], ['el campo', 'el kámpo', 'o campo', ''], ['tranquilo, tranquila', 'trankílo', 'tranquilo', ''], ['ruidoso, ruidosa', 'ruidóso', 'barulhento', ''], ['largo, larga', 'lárgo', 'comprido (não «largo»)', ''],
+      ]),
+      gramatica(8, 'O superlativo: «el más… de» e «-ísimo»', 'PASSO 1: para dizer que algo é o máximo dentro de um grupo, ponha o artigo antes de «más» ou «menos»: «Madrid es la ciudad más grande de España.» A estrutura é «el, la, los, las» + (substantivo) + «más» + adjetivo + «de» + o grupo. PASSO 2: depois do grupo, use «de» e não «em»: «el más alto de la clase», «la más cara de la tienda». PASSO 3: com «mejor» e «peor», o artigo vem antes: «el mejor restaurante de la ciudad», «la peor idea del día». PASSO 4: sem grupo, o artigo muda o sentido: «Es más caro» (comparação) × «Es el más caro» (superlativo). PASSO 5: o outro superlativo é o absoluto: dizer que a qualidade é muito intensa. Faz-se com «muy» + adjetivo («muy caro») ou com o sufixo «-ísimo, -ísima»: «carísimo», «riquísimo», «facilísimo». Tire a vogal final do adjetivo e acrescente «-ísimo»: «caro → carísimo», «grande → grandísimo». PASSO 6: pequenas mudanças de ortografia mantêm o som: «rico → riquísimo» (c vira qu), «largo → larguísimo» (g vira gu), «feliz → felicísimo» (z vira c). PASSO 7: falso amigo: «largo» significa comprido, e não largo. O contrário de «estrecho» (estreito) é «ancho» (largo): «una calle ancha», «un río largo».', {
+        tag: 'Comparativos',
+        comparacao: 'o superlativo relativo é muito parecido: «a cidade mais cara da Espanha» corresponde a «la ciudad más cara de España». O «-ísimo» corresponde ao nosso «-íssimo» («caríssimo»). A diferença que pega é o falso amigo «largo»: em português é largo, mas em espanhol é comprido.',
+        tabelas: [
+          { titulo: 'Superlativo absoluto com -ísimo', linhas: [
+            { adjetivo: 'caro', superlativo: 'carísimo', observacao: 'tira o -o' },
+            { adjetivo: 'rico', superlativo: 'riquísimo', observacao: 'c vira qu' },
+            { adjetivo: 'largo', superlativo: 'larguísimo', observacao: 'g vira gu' },
+            { adjetivo: 'feliz', superlativo: 'felicísimo', observacao: 'z vira c' },
+            { adjetivo: 'fácil', superlativo: 'facilísimo', observacao: 'acrescenta -ísimo' },
+          ] },
+          { titulo: 'Falsos amigos', linhas: [
+            { palavra: 'largo', significa: 'comprido', exemplo: 'Es un camino muy largo.' },
+            { palavra: 'ancho', significa: 'largo (de largura)', exemplo: 'Es una calle ancha.' },
+            { palavra: 'estrecho', significa: 'estreito', exemplo: 'La puerta es estrecha.' },
+          ] },
+        ],
+        exemplos: [['Es la calle más ruidosa de mi barrio.', 'É a rua mais barulhenta do meu bairro.'], ['Este es el mejor pueblo de la región.', 'Esta é a melhor vila da região.'], ['El examen fue facilísimo.', 'A prova foi facílima.'], ['Es un río larguísimo.', 'É um rio comprídissimo.']],
+        erros: [['Es la ciudad más grande en España.', 'Es la ciudad más grande de España.', 'Depois do grupo, o espanhol usa «de».'], ['Es el más mejor.', 'Es el mejor.', '«Mejor» já é comparativo: não leva «más».'], ['Es una calle larga. (querendo dizer larga de largura)', 'Es una calle ancha.', '«Largo» é comprido; para largura, use «ancho».'], ['Es ricísimo.', 'Es riquísimo.', 'Para manter o som de «k», o «c» vira «qu».']],
+      }),
+      dialogo(8, 'Dos viajes / Duas viagens', 'Lucía e Diego decidem como viajar a Sevilla e comparam as opções.', [
+        ['Lucía', 'Diego, ¿cómo viajamos a Sevilla, en tren o en autobús?', 'Diego, como viajamos para Sevilha, de trem ou de ônibus?'],
+        ['Diego', 'El tren es más rápido que el autobús, pero también es más caro.', 'O trem é mais rápido que o ônibus, mas também é mais caro.'],
+        ['Lucía', '¿Cuánto es la diferencia?', 'Qual é a diferença de preço?'],
+        ['Diego', 'Más de veinte euros por persona.', 'Mais de vinte euros por pessoa.'],
+        ['Lucía', 'Entonces el autobús es la opción más barata.', 'Então o ônibus é a opção mais barata.'],
+        ['Diego', 'Sí, pero es menos cómodo y el viaje es mucho más largo.', 'Sim, mas é menos confortável e a viagem é muito mais longa.'],
+        ['Lucía', 'Tengo tanto tiempo como tú, pero no tanto dinero.', 'Tenho tanto tempo quanto você, mas não tanto dinheiro.'],
+        ['Diego', 'Vale, vamos en autobús. Es la mejor opción para nosotros.', 'Certo, vamos de ônibus. É a melhor opção para nós.'],
+      ]),
+      producao(5, 'Invente um superlativo para cada lugar que você conhece: «la calle más… de mi barrio», «el mejor restaurante de…», «el día más… de la semana». Diga três frases e uma com «-ísimo».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 26', [
+      revisao(5, 'Compare em voz alta duas cidades que você conhece, com «más», «menos», «tan», «mejor» e «peor». Depois diga qual é a mais bonita de todas.'),
+      exercicios(20, [
+        ouvir('El tren es más rápido que el autobús', ['El tren es más rápido que el autobús', 'El tren es menos rápido que el autobús', 'El tren es tan rápido como el autobús'], 'El tren es más rápido que el autobús', 'Ouça «más» e «que»: o tren ganha.'),
+        ouvir('Mi hermano mayor vive en Bilbao', ['Mi hermano mayor vive en Bilbao', 'Mi hermano menor vive en Bilbao', 'Mi hermano mejor vive en Bilbao'], 'Mi hermano mayor vive en Bilbao', 'Ouça a diferença entre «mayor» e «menor».'),
+        ouvir('Es la calle más larga de la ciudad', ['Es la calle más larga de la ciudad', 'Es la calle más ancha de la ciudad', 'Es la calle más cara de la ciudad'], 'Es la calle más larga de la ciudad', 'Ouça «larga»: aqui é comprida.'),
+        ditado('Tu español es mejor que el mío', 'Escreva: Tu español es mejor que el mío. Cuidado com a tilde de «mío».'),
+        ditado('Hay más de veinte personas', 'Escreva: Hay más de veinte personas. Antes de um número, é «más de».'),
+        ditado('Es un río larguísimo', 'Escreva: Es un río larguísimo. O «g» de «largo» vira «gu» antes de «-ísimo».'),
+        mc('Qual é a forma correta de «melhor» em espanhol?', ['mejor', 'más bueno', 'más mejor'], 'mejor', '«Bueno» tem comparativo próprio, «mejor».'),
+        mc('Como se diz «Ele é mais alto que eu»?', ['Es más alto que yo.', 'Es más alto de yo.', 'Es más alto que mí.'], 'Es más alto que yo.', 'Depois de «que», use o pronome sujeito: «yo».'),
+        mc('Como se diz «Há mais de dez pessoas»?', ['Hay más de diez personas.', 'Hay más que diez personas.', 'Hay mayor de diez personas.'], 'Hay más de diez personas.', 'Antes de número, o espanhol usa «más de».'),
+        mc('Qual frase quer dizer «Esta rua é larga (de largura)»?', ['Esta calle es ancha.', 'Esta calle es larga.', 'Esta calle es grande.'], 'Esta calle es ancha.', '«Largo» é comprido; «ancho» é largo.'),
+        mc('Qual é o superlativo absoluto de «rico»?', ['riquísimo', 'ricísimo', 'rico mucho'], 'riquísimo', 'O «c» vira «qu» para manter o som de «k».'),
+        mc('Qual é a melhor tradução de «a cidade mais cara da Espanha»?', ['la ciudad más cara de España', 'la ciudad más cara en España', 'la ciudad más caro de España'], 'la ciudad más cara de España', 'Depois do grupo, use «de»; o adjetivo concorda com «ciudad».'),
+        lacuna('Mi hermana es ___ alta como yo.', ['tan', 'tanto', 'más'], 'tan', 'Com adjetivo, a igualdade usa «tan… como».'),
+        lacuna('Tengo ___ libros como tú.', ['tantos', 'tanto', 'tan'], 'tantos', 'Antes de substantivo plural masculino, use «tantos».'),
+        lacuna('Hoy hace ___ tiempo que ayer. (pior)', ['peor', 'más malo', 'mal'], 'peor', '«Malo» vira «peor».'),
+        lacuna('Madrid es la ciudad más grande ___ España.', ['de', 'en', 'que'], 'de', 'Depois do grupo, use «de».'),
+        ordem('Ordene: «El autobús es menos caro que el tren.»', ['El', 'autobús', 'es', 'menos', 'caro', 'que', 'el', 'tren.'], 'El autobús es menos caro que el tren.', 'A estrutura é «menos + adjetivo + que».'),
+        ordem('Ordene: «Es el mejor restaurante de la ciudad.»', ['Es', 'el', 'mejor', 'restaurante', 'de', 'la', 'ciudad.'], 'Es el mejor restaurante de la ciudad.', 'O artigo vem antes de «mejor», e o grupo vem depois de «de».'),
+        livre('Escreva em espanhol: Meu irmão mais velho trabalha mais que eu.', 'Mi hermano mayor trabaja más que yo.'),
+      ]),
+      producao(5, 'Escreva e diga cinco frases comparando você com uma pessoa próxima: idade, altura, tempo livre, dinheiro, o que cada um faz melhor.'),
+    ]),
+  ],
+});

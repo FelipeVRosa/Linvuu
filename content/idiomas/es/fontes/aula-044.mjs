@@ -1,0 +1,102 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 44, titulo: 'Subjuntivo: tiempo y finalidad', nivel: 'b1',
+  objetivo: 'Usar o presente de subjuntivo depois de conjunções de tempo que falam do futuro («cuando llegues», «en cuanto termine», «hasta que vuelva»), de finalidade («para que entiendas», «sin que lo sepa») e de condição («a menos que», «con tal de que», «en caso de que»), distinguindo-o do indicativo.',
+  nota: 'Você fala do futuro com «cuando llegues, llámame», dá o motivo com «para que» e coloca condições: «a menos que llueva». Próxima aula: o pretérito perfecto de subjuntivo.',
+  sessoes: [
+    sessao('S1', 'Cuando, en cuanto, hasta que: o futuro pede subjuntivo', [
+      revisao(5, 'Diga em voz alta três frases com «quiero que», duas com «no creo que» e uma com «ojalá». Depois conjugue «llegar» no subjuntivo (llegue, llegues…).'),
+      palavras(8, [
+        ['cuando', '', 'quando', ''], ['en cuanto', '', 'assim que', ''], ['tan pronto como', '', 'assim que, logo que', ''], ['hasta que', '', 'até que', ''],
+        ['después de que', '', 'depois que', ''], ['antes de que', '', 'antes que', ''], ['mientras', '', 'enquanto', ''], ['una vez que', '', 'uma vez que, depois que', ''],
+      ]),
+      gramatica(12, 'Cuando llegues, llámame: ainda não aconteceu', 'PASSO 1: em português, quando falamos do futuro, usamos o futuro do subjuntivo depois de «quando»: «quando você chegar», «assim que eu terminar», «até que ele volte». Em espanhol, essa ideia pede o presente de subjuntivo: «cuando llegues», «en cuanto termine», «hasta que vuelva». PASSO 2: o espanhol NÃO usa o futuro depois de «cuando»: «cuando llegarás» está errado. PASSO 3: a regra geral é esta. Se a ação já aconteceu ou é um hábito, use o indicativo: «Cuando llego a casa, ceno» (hábito) e «Cuando llegué, llovía» (passado). Se a ação é futura e ainda não aconteceu, use o subjuntivo: «Cuando llegue a casa, cenaré». PASSO 4: o sinal está na oração principal: se ela está no futuro, num imperativo ou em «ir a» + infinitivo, a oração com «cuando» costuma estar no subjuntivo: «Cuando termines, llámame», «Voy a descansar en cuanto acabe». PASSO 5: as conjunções de tempo que seguem a mesma regra são «cuando, en cuanto, tan pronto como, hasta que, después de que, mientras (que), una vez que». PASSO 6: «antes de que» é especial: como a ação ainda não aconteceu, sempre pede subjuntivo: «Llámame antes de que salgas». PASSO 7: se o sujeito é o mesmo, use o infinitivo em «antes de» e «después de»: «Llámame antes de salir», «Hablamos después de comer». PASSO 8: «mientras» no sentido de «enquanto isso acontece» fica no indicativo: «Mientras cocino, escucho música». No futuro, passa para o subjuntivo: «Mientras no llueva, iremos al parque».', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português usa o futuro do subjuntivo: «quando você chegar», «assim que eu puder», «até que ela volte». O espanhol usa o presente de subjuntivo para a mesma ideia: «cuando llegues», «en cuanto pueda», «hasta que vuelva». A pegadinha é o futuro: o espanhol não usa o futuro do indicativo depois de «cuando» (não se diz «cuando llegarás»), e sim o presente de subjuntivo («cuando llegues»). Em contraste, «quando chego», «quando cheguei» são fatos e ficam no indicativo, como em português.',
+        tabela: [
+          { ideia: 'hábito', modo: 'indicativo', exemplo: 'Cuando llego a casa, ceno.' },
+          { ideia: 'passado', modo: 'indicativo', exemplo: 'Cuando llegué, ya habían cenado.' },
+          { ideia: 'futuro, ainda não aconteceu', modo: 'subjuntivo', exemplo: 'Cuando llegue, cenaremos.' },
+          { ideia: 'pedido (imperativo)', modo: 'subjuntivo', exemplo: 'En cuanto llegues, llámame.' },
+          { ideia: 'antes de que (sempre)', modo: 'subjuntivo', exemplo: 'Llámame antes de que salgas.' },
+          { ideia: 'mesmo sujeito', modo: 'infinitivo', exemplo: 'Llámame antes de salir.' },
+        ],
+        erros: [['Cuando llegarás, llámame.', 'Cuando llegues, llámame.', 'Depois de «cuando» em ideia de futuro, o espanhol usa o presente de subjuntivo, nunca o futuro.'], ['Cuando llegas mañana, llámame.', 'Cuando llegues mañana, llámame.', 'Ação futura: subjuntivo.'], ['Hasta que vienes, esperaré aquí.', 'Hasta que vengas, esperaré aquí.', 'Ação futura: subjuntivo.'], ['Llámame antes de que llegas.', 'Llámame antes de que llegues.', '«Antes de que» sempre pede subjuntivo.'], ['Cuando llegue ayer, llovía.', 'Cuando llegué ayer, llovía.', 'Ação já passada: indicativo. Atenção ao acento: «llegué» (yo, passado) e «llegue» (subjuntivo).']],
+      }),
+      producao(5, 'Diga cinco planos para o futuro com “cuando”, “en cuanto” e “hasta que”: «Cuando termine el curso, viajaré… En cuanto tenga tiempo, llamaré a… Esperaré hasta que…»'),
+    ]),
+    sessao('S2', 'Finalidade: para que, a fin de que, sin que', [
+      revisao(4, 'Complete em voz alta: «Cuando (yo) … a casa, cenaré. Espera aquí hasta que (yo) … Llámame en cuanto (tú) …»'),
+      palavras(6, [
+        ['para que', '', 'para que', ''], ['a fin de que', '', 'a fim de que', ''], ['con el fin de que', '', 'com o fim de que', ''], ['de modo que', '', 'de modo que', ''], ['sin que', '', 'sem que', ''], ['¿para qué?', '', 'para quê?', ''],
+      ]),
+      gramatica(12, 'Para quê? Finalidade com «para» e «para que»', 'PASSO 1: para dizer a finalidade de uma ação, o espanhol usa «para». Se o sujeito é o mesmo nas duas partes, o verbo seguinte fica no infinitivo: «Estudio para aprobar» (eu estudo, eu passo). PASSO 2: se os sujeitos são diferentes, use «para que» e o subjuntivo: «Te lo explico para que lo entiendas» (eu explico, você entende). PASSO 3: a versão mais formal é «a fin de que» ou «con el fin de que»: «Enviamos el aviso a fin de que todos lo lean». PASSO 4: «de modo que» e «de manera que» têm dois usos. Com o sentido de finalidade (para que), pedem subjuntivo: «Habla despacio, de modo que todos lo entiendan». Com o sentido de resultado (por isso), ficam no indicativo: «Habla despacio, de modo que todos lo entienden». PASSO 5: «sin que» (sem que) sempre pede subjuntivo: «Sale sin que nadie lo vea». Se o sujeito é o mesmo, use «sin» + infinitivo: «Sale sin hacer ruido». PASSO 6: «¿para qué?» pergunta a finalidade («¿Para qué estudias?»), enquanto «¿por qué?» pergunta a causa («¿Por qué estudias?»). PASSO 7: não use «para» com o sentido de «para que a pessoa faça»: «Te llamo para ayudarte» (eu ajudo) e «Te llamo para que me ayudes» (você me ajuda).', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português é muito próximo: «estudo para passar» (mesmo sujeito, infinitivo), «explico para que você entenda» (sujeitos diferentes, subjuntivo), «sai sem que ninguém veja». A diferença é que o português fala também «explico para você entender» (infinitivo pessoal), que em espanhol deve ser «para que entiendas». A forma «de modo que» tem os dois sentidos em ambos os idiomas.',
+        exemplos: [['Estudio para aprobar el examen.', 'Estudo para passar na prova.'], ['Te lo explico para que lo entiendas.', 'Eu explico para você entender.'], ['Habla despacio para que todos entiendan.', 'Fala devagar para que todos entendam.'], ['Sale sin que nadie lo vea.', 'Sai sem que ninguém o veja.'], ['Te llamo para que me ayudes.', 'Ligo para você me ajudar.']],
+        erros: [['Te lo explico para que entiendes.', 'Te lo explico para que entiendas.', '«Para que» pede subjuntivo.'], ['Estudio para que apruebo.', 'Estudio para aprobar.', 'Com o mesmo sujeito, use «para» + infinitivo.'], ['Sale sin que nadie lo ve.', 'Sale sin que nadie lo vea.', '«Sin que» sempre pede subjuntivo.'], ['Te llamo para que me ayudar.', 'Te llamo para que me ayudes.', 'Depois de «para que», o verbo vai conjugado, no subjuntivo.']],
+      }),
+      producao(8, 'Diga seis frases sobre para que você faz coisas e para que outras pessoas as fazem: «Estudio español para viajar. Mi madre me llama para que no me olvide de… Salgo sin que…»'),
+    ]),
+    sessao('S3', 'Condições e planos', [
+      revisao(4, 'Diga em voz alta três frases com «para que», duas com «sin que» e uma com «antes de que». Confira se todas as ações são futuras ou sem realização.'),
+      palavras(5, [
+        ['siempre que', '', 'desde que, contanto que', ''], ['con tal de que', '', 'contanto que', ''], ['a menos que', '', 'a menos que', ''], ['en caso de que', '', 'caso, no caso de', ''], ['aunque', '', 'embora, mesmo que', ''],
+      ]),
+      gramatica(8, 'Condições e concessões', 'PASSO 1: algumas conjunções de condição pedem sempre o subjuntivo, porque falam de algo que ainda não aconteceu ou pode não acontecer: «con tal de que, a menos que, a no ser que, en caso de que, siempre que (= com a condição de que)». PASSO 2: exemplos: «Iremos al lago a menos que llueva», «Te presto el coche con tal de que lo cuides», «Llévate el paraguas en caso de que llueva». PASSO 3: «siempre que» tem dois sentidos. Como condição (desde que), pede subjuntivo: «Puedes venir siempre que avises». Como «toda vez que» (hábito), fica no indicativo: «Siempre que llego, me saluda». PASSO 4: «aunque» muda de sentido conforme o modo. Com indicativo, mostra um fato que você sabe ser verdade: «Aunque llueve, saldremos» (está chovendo agora). Com subjuntivo, indica uma hipótese ou algo que não importa: «Aunque llueva, saldremos» (mesmo que chova). PASSO 5: resuma assim: se você sabe e afirma, indicativo; se é possível, futuro ou irrelevante, subjuntivo. PASSO 6: cuidado com o infinitivo, que não existe depois dessas conjunções com sujeito diferente. «A menos que» pede verbo conjugado.', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português usa subjuntivo nas mesmas conjunções: «a menos que chova», «contanto que você cuide», «caso chova». Em «embora» e «mesmo que», o português também diferencia: «embora esteja chovendo» (fato) e «mesmo que chova» (hipótese). O espanhol faz isso com uma só palavra, «aunque», e a diferença está no modo do verbo.',
+        tabela: [
+          { conjuncao: 'a menos que, a no ser que', sentido: 'a não ser que', exemplo: 'Iremos al lago a menos que llueva.' },
+          { conjuncao: 'con tal de que', sentido: 'contanto que', exemplo: 'Te lo presto con tal de que lo cuides.' },
+          { conjuncao: 'en caso de que', sentido: 'caso', exemplo: 'Llévate un paraguas en caso de que llueva.' },
+          { conjuncao: 'siempre que (condição)', sentido: 'desde que', exemplo: 'Puedes venir siempre que avises.' },
+          { conjuncao: 'aunque + indicativo', sentido: 'embora, fato conhecido', exemplo: 'Aunque llueve, saldremos.' },
+          { conjuncao: 'aunque + subjuntivo', sentido: 'mesmo que, hipótese', exemplo: 'Aunque llueva, saldremos.' },
+        ],
+        erros: [['Iremos al lago a menos que llueve.', 'Iremos al lago a menos que llueva.', '«A menos que» pede subjuntivo.'], ['Llévate un paraguas en caso de que necesitas.', 'Llévate un paraguas en caso de que lo necesites.', '«En caso de que» pede subjuntivo.'], ['Te lo presto con tal de que lo cuidas.', 'Te lo presto con tal de que lo cuides.', '«Con tal de que» pede subjuntivo.']],
+      }),
+      dialogo(8, 'Planes para el sábado / Planos para o sábado', 'Alba e Raúl fazem planos para o sábado. Preste atenção às conjunções.', [
+        ['Alba', '¿Qué hacemos el sábado?', 'O que fazemos no sábado?'],
+        ['Raúl', 'Cuando termine de trabajar, podemos ir al lago, siempre que no llueva.', 'Quando eu terminar de trabalhar, podemos ir ao lago, desde que não chova.'],
+        ['Alba', 'Vale. En caso de que llueva, ¿tienes un plan B?', 'Combinado. Caso chova, você tem um plano B?'],
+        ['Raúl', 'Sí, iremos al cine, a menos que prefieras quedarte en casa.', 'Sim, iremos ao cinema, a menos que você prefira ficar em casa.'],
+        ['Alba', 'Prefiero salir. Te llamo en cuanto me levante, para que sepas la hora.', 'Prefiro sair. Ligo para você assim que me levantar, para que saiba a hora.'],
+        ['Raúl', 'Perfecto. Yo llevo la comida, con tal de que tú traigas la bebida.', 'Perfeito. Eu levo a comida, contanto que você traga a bebida.'],
+        ['Alba', 'Trato hecho. Y diré a Marta que venga, para que no se quede sola.', 'Combinado. E vou dizer à Marta que venha, para que não fique sozinha.'],
+        ['Raúl', 'Genial. Díselo cuando la veas el viernes.', 'Ótimo. Diga a ela quando a vir na sexta.'],
+      ]),
+      producao(5, 'Escreva quatro frases com planos para o fim de semana e suas condições, usando «cuando», «a menos que», «en caso de que» e «para que».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 44', [
+      revisao(5, 'Diga em voz alta a diferença entre «cuando llego» e «cuando llegue». Depois, dê dois exemplos de «para» + infinitivo e dois de «para que» + subjuntivo.'),
+      exercicios(20, [
+        ouvir('Cuando llegues, llámame', ['Cuando llegues, llámame', 'Cuando llegas, llámame', 'Cuando llegaste, llámame'], 'Cuando llegues, llámame', 'A ação ainda vai acontecer, então «llegues» (subjuntivo).'),
+        ouvir('Te lo explico para que lo entiendas', ['Te lo explico para que lo entiendas', 'Te lo explico para que lo entiendes', 'Te lo explico para entenderlo'], 'Te lo explico para que lo entiendas', '«Para que» pede subjuntivo; ouça o «-as» de «entiendas».'),
+        ouvir('En cuanto termine, te llamo', ['En cuanto termine, te llamo', 'En cuanto termino, te llamo', 'En cuanto terminé, te llamo'], 'En cuanto termine, te llamo', 'Ação futura: «termine» (subjuntivo).'),
+        ditado('Llámame antes de que salgas', 'Escreva: Llámame antes de que salgas. «Llámame» leva acento.'),
+        ditado('Habla despacio para que todos entiendan', 'Escreva: Habla despacio para que todos entiendan. «Entiendan» é subjuntivo.'),
+        mc('Qual frase fala de algo que ainda não aconteceu?', ['Cuando llegue, te aviso.', 'Cuando llego, te aviso.', 'Cuando llegué, te avisé.'], 'Cuando llegue, te aviso.', 'Futuro: subjuntivo depois de «cuando».'),
+        mc('Como se diz «quando você chegar»?', ['cuando llegues', 'cuando llegarás', 'cuando llegas'], 'cuando llegues', 'O espanhol não usa o futuro depois de «cuando»: usa o presente de subjuntivo.'),
+        mc('Qual frase usa corretamente o mesmo sujeito?', ['Estudio para aprobar.', 'Estudio para que apruebe.', 'Estudio para que apruebo.'], 'Estudio para aprobar.', 'Mesmo sujeito: «para» + infinitivo.'),
+        mc('«Antes de que» pede…', ['sempre subjuntivo', 'sempre indicativo', 'sempre infinitivo'], 'sempre subjuntivo', 'A ação ainda não aconteceu quando a principal acontece.'),
+        mc('Qual frase indica hábito?', ['Cuando llego a casa, ceno.', 'Cuando llegue a casa, cenaré.', 'Cuando llegues a casa, cena.'], 'Cuando llego a casa, ceno.', 'Hábito: indicativo.'),
+        mc('Em «Habla despacio, de modo que todos lo entienden», «de modo que» indica…', ['resultado (indicativo)', 'finalidade (subjuntivo)', 'condição (infinitivo)'], 'resultado (indicativo)', 'O indicativo mostra que é um resultado real.'),
+        mc('Qual expressão pede subjuntivo?', ['a menos que', 'porque', 'ya que'], 'a menos que', 'A condição «a menos que» é sempre seguida de subjuntivo.'),
+        lacuna('Mañana, cuando tú ___, hablamos. (llegar; ação futura)', ['llegues', 'llegas', 'llegarás'], 'llegues', 'Futuro: subjuntivo.'),
+        lacuna('Espera aquí hasta que yo ___. (volver)', ['vuelva', 'vuelvo', 'volveré'], 'vuelva', '«Hasta que» + ação futura: subjuntivo.'),
+        lacuna('Te llamo para que ___ la hora. (saber, tú)', ['sepas', 'sabes', 'saber'], 'sepas', '«Para que» + subjuntivo de «saber» para «tú».'),
+        lacuna('Sale sin que nadie lo ___. (ver)', ['vea', 've', 'ver'], 'vea', '«Sin que» + subjuntivo.'),
+        lacuna('Llámame antes de ___ de casa. (salir, mesmo sujeito)', ['salir', 'que salgo', 'que salir'], 'salir', 'Mesmo sujeito: «antes de» + infinitivo.'),
+        lacuna('En caso de que ___, llevamos paraguas. (llover)', ['llueva', 'llueve', 'lloverá'], 'llueva', '«En caso de que» pede subjuntivo.'),
+        ordem('Ordene: «Cuando termine, te llamaré.»', ['Cuando', 'termine,', 'te', 'llamaré.'], 'Cuando termine, te llamaré.', 'Subjuntivo na oração de tempo, futuro na principal.'),
+        ordem('Ordene: «Te explico esto para que lo entiendas.»', ['Te', 'explico', 'esto', 'para', 'que', 'lo', 'entiendas.'], 'Te explico esto para que lo entiendas.', 'Finalidade com sujeitos diferentes.'),
+        ordem('Ordene: «Iremos al lago a menos que llueva.»', ['Iremos', 'al', 'lago', 'a', 'menos', 'que', 'llueva.'], 'Iremos al lago a menos que llueva.', '«A menos que» + subjuntivo.'),
+        livre('Escreva em espanhol: Quando você chegar, me ligue.', 'Cuando llegues, llámame.'),
+        livre('Escreva em espanhol: Estudo para que meus pais fiquem contentes.', 'Estudio para que mis padres estén contentos.'),
+      ]),
+      producao(5, 'Conte em voz alta o que você vai fazer neste fim de semana, usando «cuando», «en cuanto», «hasta que» e «a menos que» ao menos uma vez cada.'),
+    ]),
+  ],
+});

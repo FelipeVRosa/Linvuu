@@ -1,0 +1,100 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 7, titulo: 'Família e possessivos', nivel: 'a1',
+  objetivo: 'Nomear os membros da família no masculino e no feminino, formar o plural misto («los hermanos»), usar os possessivos «mi, tu, su, nuestro, vuestro» com a concordância certa, indicar posse com «de» e contar quantos somos em casa.',
+  nota: 'Você fala da sua família, mostra uma foto, diz de quem é cada coisa e conta quantos vocês são. Próxima aula: café e comida, com «querer», «quisiera» e os números até 100.',
+  sessoes: [
+    sessao('S1', 'Os membros da família', [
+      revisao(5, 'Conjugue «comer» e «vivir» de memória. Diga três frases com «vivo», «como» e «escribo». Depois diga o plural de «hijo», «ciudad» e «lápiz».'),
+      palavras(8, [
+        ['el padre', 'el pádre', 'o pai', ''], ['la madre', 'la mádre', 'a mãe', ''], ['el hermano', 'el ermáno', 'o irmão', ''], ['la hermana', 'la ermána', 'a irmã', ''],
+        ['el hijo', 'el ího', 'o filho', ''], ['la hija', 'la íha', 'a filha', ''], ['el abuelo', 'el abuélo', 'o avô', ''], ['la abuela', 'la abuéla', 'a avó', ''],
+      ]),
+      gramatica(12, 'A família: masculino, feminino e plural misto', 'PASSO 1: aprenda os pares: «padre / madre», «hermano / hermana», «hijo / hija», «abuelo / abuela», «tío / tía», «primo / prima», «sobrino / sobrina», «marido / mujer». Quase todos seguem a regra «-o» (masculino) e «-a» (feminino) que você já conhece. PASSO 2: o plural masculino serve para o grupo misto: «los padres» são o pai e a mãe (também «os pais»); «los hermanos» são irmãos e irmãs; «los abuelos» são os avós; «los hijos» são os filhos e as filhas; «los tíos» são os tios e as tias. Para dizer só as mulheres, use o feminino: «las hermanas». PASSO 3: para a quantidade de irmãos, use «tener»: «Tengo dos hermanos», «Tengo una hermana». Se você diz «Tengo dos hermanos», pode ser um irmão e uma irmã, ou dois irmãos. Para ser claro: «Tengo un hermano y una hermana». PASSO 4: a pergunta é «¿Cuántos hermanos tienes?» (tú) ou «¿Cuántos hermanos tiene usted?» (usted). Sem irmãos: «No tengo hermanos» ou «Soy hijo único / hija única». PASSO 5: para dizer a relação, use «ser»: «Ana es mi hermana», «Ellos son mis abuelos». PASSO 6: os parentes por casamento têm nomes próprios: «el suegro, la suegra», «el cuñado, la cuñada», «el yerno» (genro) e «la nuera» (nora). PASSO 7: «mujer» é mulher e também esposa: «mi mujer» é «minha esposa»; «esposo» e «esposa» são os termos mais neutros. PASSO 8: na Espanha, na fala informal, «tío» e «tía» também significam «cara» ou «sujeito» sem nenhum parentesco («ese tío»); use esse sentido só entre amigos. PASSO 9: «papá» e «mamá» são as formas de carinho, usadas na Espanha e na América Latina; «mi padre» e «mi madre» são as formas neutras. Para os dois juntos, «mis padres».', {
+        tag: 'Família',
+        comparacao: 'em português, «os pais» é o plural de «pai», e o plural masculino cobre o grupo misto. O espanhol faz o mesmo: «los padres», «los hermanos», «los abuelos», «los hijos». Vale notar que «mujer» significa mulher e também esposa.',
+        tabela: [
+          { masculino: 'el padre', feminino: 'la madre', plural_misto: 'los padres' },
+          { masculino: 'el hermano', feminino: 'la hermana', plural_misto: 'los hermanos' },
+          { masculino: 'el hijo', feminino: 'la hija', plural_misto: 'los hijos' },
+          { masculino: 'el abuelo', feminino: 'la abuela', plural_misto: 'los abuelos' },
+          { masculino: 'el tío', feminino: 'la tía', plural_misto: 'los tíos' },
+          { masculino: 'el primo', feminino: 'la prima', plural_misto: 'los primos' },
+          { masculino: 'el sobrino', feminino: 'la sobrina', plural_misto: 'los sobrinos' },
+          { masculino: 'el marido, el esposo', feminino: 'la mujer, la esposa', plural_misto: 'los esposos' },
+        ],
+        exemplos: [['Tengo dos hermanos y una hermana.', 'Tenho dois irmãos e uma irmã.'], ['Mis abuelos viven en Sevilla.', 'Meus avós moram em Sevilha.'], ['Ana es hija única.', 'Ana é filha única.'], ['¿Cuántos hermanos tienes?', 'Quantos irmãos você tem?']],
+        erros: [['Tengo dos irmanos.', 'Tengo dos hermanos.', '«Hermano» tem «h» mudo e se escreve com «e».'], ['Mi madre es el hermana de Ana.', 'Mi madre es la hermana de Ana.', 'Use o artigo feminino «la» para «hermana».'], ['Soy único hijo.', 'Soy hijo único.', 'O adjetivo «único» vem depois de «hijo».'], ['Mis padre viven en Madrid.', 'Mis padres viven en Madrid.', 'O plural precisa do «-s» no substantivo e no possessivo.']],
+      }),
+      producao(5, 'Diga em voz alta quantos irmãos, primos e tios você tem: «Tengo… hermanos. Tengo… primos. Mis abuelos viven en…»'),
+    ]),
+    sessao('S2', 'Os possessivos', [
+      revisao(4, 'Nomeie oito membros da família com o artigo e diga o plural misto de quatro deles.'),
+      palavras(6, [
+        ['el tío', 'el tío', 'o tio', ''], ['la tía', 'la tía', 'a tia', ''], ['el primo', 'el prímo', 'o primo', ''], ['la prima', 'la príma', 'a prima', ''], ['el marido', 'el marído', 'o marido', ''], ['la mujer', 'la muhér', 'a mulher; a esposa', ''],
+      ]),
+      gramatica(12, 'Mi, tu, su, nuestro, vuestro', 'PASSO 1: os possessivos mostram de quem é uma coisa ou pessoa: «mi» (meu, minha), «tu» (teu, seu, de você, tú), «su» (dele, dela, do senhor, da senhora, deles, delas), «nuestro» (nosso), «vuestro» (de vocês, na Espanha, vosotros). PASSO 2: eles vêm antes do substantivo, sem artigo: «mi libro», e não «el mi libro». PASSO 3: concordam com a coisa possuída, e não com o dono. «Mi hermano» e «mi hermana» têm a mesma forma, porque «mi» não tem gênero. Mas «mis hermanos» (plural) leva «-s». PASSO 4: «mi, tu, su» só mudam no plural: «mi / mis», «tu / tus», «su / sus». PASSO 5: «nuestro» e «vuestro» têm quatro formas: «nuestro, nuestra, nuestros, nuestras». «Nuestra casa» (casa é feminina), «nuestros libros». PASSO 6: «su» e «sus» servem para ele, ela, usted, eles, elas e ustedes. Para ficar claro, acrescente «de él, de ella, de usted, de ellos»: «la casa de ella». PASSO 7: «tu» (sem til) é possessivo; «tú» (com til) é o pronome. «Tu casa» é a sua casa, e «tú vives aquí» é você mora aqui. O mesmo vale para «mi» (meu) e «mí» (para mim). PASSO 8: com «usted», o possessivo é «su»: «¿Cuál es su apellido?». Com «tú», é «tu»: «¿Cuál es tu apellido?». PASSO 9: na América Latina, para «de vocês» usa-se «su» (com «ustedes»); «vuestro» é próprio da Espanha.', {
+        tag: 'Possessivos',
+        comparacao: 'em português dizemos «o meu irmão», com artigo, ou apenas «meu irmão». Em espanhol o artigo não aparece: «mi hermano». E o português tem «seu» para tú e usted, enquanto o espanhol separa «tu» (de você, com «tú») de «su» (de usted, de ele, de ela, deles). Isso torna o «su» ambíguo: se for preciso, diga «la casa de él».',
+        tabela: [
+          { pessoa: 'yo', singular: 'mi', plural: 'mis', exemplo: 'mi hermano, mis hermanos' },
+          { pessoa: 'tú', singular: 'tu', plural: 'tus', exemplo: 'tu casa, tus casas' },
+          { pessoa: 'él, ella, usted', singular: 'su', plural: 'sus', exemplo: 'su padre, sus padres' },
+          { pessoa: 'nosotros', singular: 'nuestro, nuestra', plural: 'nuestros, nuestras', exemplo: 'nuestra casa, nuestros libros' },
+          { pessoa: 'vosotros (Espanha)', singular: 'vuestro, vuestra', plural: 'vuestros, vuestras', exemplo: 'vuestro coche, vuestras amigas' },
+          { pessoa: 'ellos, ellas, ustedes', singular: 'su', plural: 'sus', exemplo: 'su casa, sus casas' },
+        ],
+        exemplos: [['Mi madre se llama Rosa.', 'Minha mãe se chama Rosa.'], ['¿Cuál es tu apellido?', 'Qual é o seu sobrenome? (tú)'], ['¿Cuál es su apellido, señora García?', 'Qual é o seu sobrenome, senhora García?'], ['Nuestra casa es pequeña.', 'Nossa casa é pequena.'], ['Vuestros amigos son simpáticos.', 'Os amigos de vocês são simpáticos. (Espanha)'], ['La casa de ella está en Madrid.', 'A casa dela fica em Madri.']],
+        erros: [['El mi libro', 'Mi libro', 'O possessivo antes do substantivo dispensa o artigo.'], ['Mi hermanas', 'Mis hermanas', 'O possessivo concorda em número com o que é possuído.'], ['Nuestro casa', 'Nuestra casa', '«Nuestro» concorda em gênero com «casa».'], ['Tú casa es grande.', 'Tu casa es grande.', 'O possessivo não leva til.'], ['Ella vive con sus madre.', 'Ella vive con su madre.', 'Uma só mãe: singular.']],
+      }),
+      producao(8, 'Apresente a sua família em voz alta, com «mi, mis, nuestro»: «Mi madre se llama… Mis hermanos tienen… años. Nuestra casa está en…» Depois pergunte a um amigo: «¿Cómo se llama tu madre? ¿Dónde viven tus abuelos?»'),
+    ]),
+    sessao('S3', 'Descrever a família e contar quantos somos', [
+      revisao(4, 'Diga os possessivos de cada pessoa (yo, tú, él, nosotros, vosotros, ellos) com uma palavra da família.'),
+      palavras(5, [
+        ['mayor', 'maiór', 'mais velho(a); adulto(a)', ''], ['menor', 'menór', 'mais novo(a)', ''], ['casado, casada', 'kasádo, kasáda', 'casado, casada', ''], ['soltero, soltera', 'soltéro, soltéra', 'solteiro, solteira', ''], ['somos cuatro', 'sómos kuátro', 'somos quatro', ''],
+      ]),
+      gramatica(8, 'De para a posse, mayor e menor, somos…', 'PASSO 1: para dizer de quem é algo, o espanhol usa «de» + o dono, e não «\'s»: «el libro de Ana», «la casa de mis abuelos». Com o artigo, «de + el» vira «del»: «el coche del profesor». PASSO 2: «mayor» é o mais velho (de dois irmãos, ou de um grupo): «mi hermano mayor». «Menor» é o mais novo: «mi hermana menor». Muitos também dizem «pequeño, pequeña». PASSO 3: «mayor» também quer dizer pessoa de idade: «mis abuelos son mayores». PASSO 4: para contar quantas pessoas formam a família, use «ser»: «Somos cuatro en mi familia.» Ou «tener»: «Tengo una familia pequeña». PASSO 5: para o estado civil, o uso comum é «ser soltero / soltera» e «estar casado / casada» (o contraste entre «ser» e «estar» vem na aula 10): «Soy soltera», «Mis padres están casados». PASSO 6: ao apresentar alguém, use «Este es…» ou «Esta es…» e depois o possessivo: «Esta es mi hermana, Elena». PASSO 7: sobrenomes: tradicionalmente o primeiro é o do pai e o segundo, o da mãe. «Mi apellido es García López» quer dizer que o pai é García e a mãe, López. Na Espanha, ao casar, cada pessoa conserva os seus sobrenomes. PASSO 8: ao falar de uma pessoa mais velha com respeito, diga «don Manuel» ou «doña Rosa» antes do nome de batismo (não do sobrenome).', {
+        tag: 'Posse',
+        comparacao: 'em português também usamos «de» para a posse: «o livro da Ana». A diferença é a contração: «del» (de + el) e a ausência do artigo antes de nome próprio. E «mayor» pode enganar: no contexto da família é «mais velho», e não «maior» no tamanho (que se diz «más grande»).',
+        tabela: [
+          { frase: 'el libro de Ana', funcao: 'posse com nome', traducao: 'o livro da Ana' },
+          { frase: 'el coche del profesor', funcao: 'de + el = del', traducao: 'o carro do professor' },
+          { frase: 'mi hermano mayor', funcao: 'mais velho', traducao: 'meu irmão mais velho' },
+          { frase: 'mi hermana menor', funcao: 'mais nova', traducao: 'minha irmã mais nova' },
+          { frase: 'Somos cuatro.', funcao: 'quantos somos', traducao: 'Somos quatro.' },
+          { frase: 'don Manuel, doña Rosa', funcao: 'respeito', traducao: 'senhor Manuel, senhora Rosa' },
+        ],
+        erros: [['El libro Ana', 'El libro de Ana', 'A posse pede «de».'], ['Es el coche de el profesor.', 'Es el coche del profesor.', '«De + el» contrai em «del».'], ['Mi hermano maior', 'Mi hermano mayor', '«Mayor» é o mais velho; «maior» não existe em espanhol.'], ['Somos cuatro personas en la familia.', 'Somos cuatro en la familia.', 'Já se entende que são pessoas.']],
+      }),
+      dialogo(8, 'Una foto de familia / Uma foto de família', 'Marta mostra uma foto de família a Javier.', [
+        ['Marta', 'Mira, Javier, esta es mi familia.', 'Olhe, Javier, esta é minha família.'], ['Javier', '¡Qué bonita! ¿Quiénes son ellos?', 'Que bonita! Quem são eles?'],
+        ['Marta', 'Son mis padres, Rosa y Manuel, y mis abuelos.', 'São meus pais, Rosa e Manuel, e meus avós.'], ['Javier', '¿Tienes hermanos?', 'Você tem irmãos?'],
+        ['Marta', 'Sí, tengo un hermano mayor y una hermana menor.', 'Sim, tenho um irmão mais velho e uma irmã mais nova.'], ['Javier', 'Entonces sois cinco en casa.', 'Então vocês são cinco em casa.'],
+        ['Marta', 'No, somos seis, con mi abuela.', 'Não, somos seis, com a minha avó.'],
+      ]),
+      producao(5, 'Escreva e diga cinco frases sobre alguém da sua família: nome, idade, onde vive, com «mayor» ou «menor» e uma frase com «de».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 7', [
+      revisao(5, 'Apresente a sua família em seis frases: quantos são, nomes, idades e onde vivem.'),
+      exercicios(20, [
+        ouvir('Mis abuelos viven en Sevilla', ['Mis abuelos viven en Sevilla', 'Mi abuelo vive en Sevilla', 'Mis abuelas viven en Sevilla'], 'Mis abuelos viven en Sevilla', 'Ouça «mis», «abuelos» e «viven»: plural em tudo.'),
+        ouvir('Esta es mi hermana', ['Esta es mi hermana', 'Este es mi hermano', 'Esta es mi madre'], 'Esta es mi hermana', 'Ouça «esta» e «hermana».'),
+        ouvir('¿Cuántos hermanos tienes?', ['¿Cuántos hermanos tienes?', '¿Cuántos hermanos tiene?', '¿Cuántas hermanas tienes?'], '¿Cuántos hermanos tienes?', 'Ouça «tienes» com «tú».'),
+        ditado('Mi madre se llama Rosa', 'Escreva: Mi madre se llama Rosa.'), ditado('Somos cuatro en casa', 'Escreva: Somos cuatro en casa.'), ditado('El libro de Ana', 'Escreva: El libro de Ana.'),
+        mc('Como se diz «meus irmãos»?', ['mis hermanos', 'mi hermanos', 'mis hermano'], 'mis hermanos', 'O possessivo e o substantivo vão ao plural.'),
+        mc('Qual possessivo completa «___ casa» (nossa)?', ['nuestra', 'nuestro', 'nuestras'], 'nuestra', '«Casa» é feminino singular.'),
+        mc('Qual é o plural misto de «hermano / hermana»?', ['los hermanos', 'los hermanas', 'las hermanos'], 'los hermanos', 'O masculino plural cobre o grupo misto.'),
+        mc('Como se diz «o livro da Ana»?', ['el libro de Ana', 'el libro Ana', 'Ana libro'], 'el libro de Ana', 'A posse pede «de».'),
+        mc('O que significa «mi hermano mayor»?', ['meu irmão mais velho', 'meu irmão maior', 'meu irmão mais novo'], 'meu irmão mais velho', '«Mayor» é mais velho.'),
+        mc('Qual forma é correta?', ['tu casa', 'tú casa', 'tu casas'], 'tu casa', 'O possessivo não leva til.'),
+        lacuna('___ padres viven en Madrid. (meus)', ['Mis', 'Mi', 'Nuestro'], 'Mis', 'Possessivo plural.'), lacuna('Es el coche ___ profesor. (do)', ['del', 'de el', 'al'], 'del', 'De + el = del.'), lacuna('Ana es ___ hermana. (minha)', ['mi', 'mis', 'el mi'], 'mi', 'Sem artigo e no singular.'),
+        lacuna('Ellos viven con ___ madre. (a mãe deles)', ['su', 'sus', 'nuestro'], 'su', '«Su» para ellos, uma só mãe.'), lacuna('Tengo un hermano ___ . (mais velho)', ['mayor', 'maior', 'grande'], 'mayor', '«Mayor» é o mais velho.'),
+        ordem('Ordene: «Mi madre se llama Rosa.»', ['Mi', 'madre', 'se', 'llama', 'Rosa.'], 'Mi madre se llama Rosa.', 'Possessivo, substantivo e verbo.'), ordem('Ordene: «Tengo dos hermanos y una hermana.»', ['Tengo', 'dos', 'hermanos', 'y', 'una', 'hermana.'], 'Tengo dos hermanos y una hermana.', 'Tener + quantidade.'),
+        livre('Escreva em espanhol: Minha avó vive com os meus pais.', 'Mi abuela vive con mis padres.'),
+      ]),
+      producao(5, 'Mostre em voz alta uma foto de família imaginária: «Esta es mi familia. Estos son mis… Este es mi… Esta es mi…» Diga nomes, idades e profissões.'),
+    ]),
+  ],
+});

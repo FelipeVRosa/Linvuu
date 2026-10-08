@@ -1,0 +1,86 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 38, titulo: 'Revisão e simulado do A2', nivel: 'a2',
+  objetivo: 'Rever todo o A2 em um mapa, treinar leitura, escuta, escrita curta e fala, corrigir os erros mais comuns dos brasileiros neste nível e fazer um simulado original, com gabarito comentado.',
+  nota: 'Você fechou o A2 do espanhol. Repita o simulado até acertar quase tudo, lendo a explicação de cada resposta. Este simulado é original da Linvuu e não equivale a nenhum exame externo. Para qualquer exame, treine também com o material específico dele e, se possível, converse com um professor.',
+  sessoes: [
+    sessao('S1', 'O mapa do A2', [
+      revisao(5, 'Leia em voz alta cinco frases das aulas 19 a 37 que você acha difíceis e diga por que.'),
+      gramatica(15, 'O A2 inteiro em uma tabela', 'Esta tabela resume as aulas 19 a 37. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática. Os blocos de saúde, viagem, trabalho, telefone e casa são situações reais: treine a fala delas, não só a leitura.', {
+        tag: 'Revisão',
+        tabela: [
+          { tema: 'Indefinido regular', regra: '-ar: -é, -aste, -ó, -amos, -asteis, -aron; -er/-ir: -í, -iste, -ió, -imos, -isteis, -ieron. Fato terminado: «Ayer hablé con ella».', aula: '19' },
+          { tema: 'Indefinido irregular', regra: 'ser e ir: fui, fuiste, fue, fuimos, fuisteis, fueron; tuve, estuve, hice, pude, puse, vine, dije (dijeron), di, vi.', aula: '20' },
+          { tema: 'Imperfecto', regra: '-aba, -abas, -aba, -ábamos, -abais, -aban; -ía, -ías, -ía, -íamos, -íais, -ían; irregulares: era, iba, veía.', aula: '21' },
+          { tema: 'Indefinido × imperfecto', regra: 'imperfecto = cenário, hábito, idade; indefinido = fato: «Cuando llegué, llovía».', aula: '22' },
+          { tema: 'Pronomes de objeto direto e indireto', regra: 'direto: me, te, lo, la, nos, os, los, las; indireto: me, te, le, nos, os, les; «a» pessoal: «Veo a Ana», «La veo»; «le dije».', aula: '23, 24' },
+          { tema: 'Dois pronomes', regra: 'indireto antes do direto: «me lo da»; «le/les + lo» vira «se lo»: «Se lo di».', aula: '25' },
+          { tema: 'Comparativos e superlativos', regra: 'más/menos… que; tan… como; tanto como; mejor, peor, mayor, menor; «el más alto de la clase».', aula: '26' },
+          { tema: 'Futuro simples', regra: 'infinitivo + -é, -ás, -á, -emos, -éis, -án; irregulares: tendré, haré, podré, pondré, saldré, vendré, diré, querré, sabré; «si» + presente.', aula: '27' },
+          { tema: 'Imperativo', regra: 'tú: habla, come, vive; irregulares: di, haz, ve, ten, pon, sal, ven, sé; usted: hable, coma, viva; negativo: no hables.', aula: '28' },
+          { tema: 'Condicional de cortesia', regra: 'quisiera, me gustaría, ¿podría…?, ¿le importaría…? para pedir com educação.', aula: '29' },
+          { tema: 'Estar + gerúndio, ir a, acabar de', regra: '«estoy comiendo» (agora), «voy a comer» (plano), «acabo de comer» (passado recente).', aula: '30' },
+          { tema: 'Quantidade, por × para', regra: 'mucho, poco, bastante, demasiado; por = causa, trajeto, troca, tempo; para = destino, finalidade, prazo.', aula: '31' },
+          { tema: 'Relativos', regra: '«que» (pessoa e coisa), «donde», «en el que», «con quien / con la que»; sem repetir o pronome.', aula: '32' },
+          { tema: 'Saúde', regra: '«me duele(n)», «tengo dolor de», «tengo fiebre», «desde hace», «alérgico a», imperativo de usted.', aula: '33' },
+          { tema: 'Viagem', regra: '«billete de ida y vuelta», «sale a las», «tarda / dura», «voy en tren», «reserva a nombre de», «completo».', aula: '34' },
+          { tema: 'Trabalho', regra: '«soy ingeniera» sem artigo; «trabajo en / de / como / para»; «llevo… trabajando»; «español e inglés».', aula: '35' },
+          { tema: 'Telefone e convites', regra: '«¿Diga?», «Soy…», «¿Está…?»; «¿Te apetece…?», «Me encantaría», «quedamos a las ocho»; «invitar» = convidar e pagar.', aula: '36' },
+          { tema: 'Casa', regra: '«primer / tercer piso», «planta baja», «se alquila», «el alquiler», «¿Le importa…?» (responder «No» é permitir), «ya se lo dije».', aula: '37' },
+        ],
+      }),
+      producao(10, 'Fale 3 minutos em espanhol: conte a sua infância (imperfecto), o que você fez ontem (indefinido), o que vai fazer no ano que vem (futuro) e um conselho que você daria a um amigo (imperativo).'),
+    ]),
+    sessao('S2', 'Leitura e escuta (formato A2, original)', [
+      revisao(5, 'Releia o texto e o diálogo abaixo em voz alta antes de responder às perguntas.'),
+      texto(10, 'Mi primer mes en Zaragoza / Meu primeiro mês em Zaragoza', 'Hace un mes que vivo en Zaragoza. Cuando llegué, llovía y yo estaba muy cansado, pero una compañera de trabajo me esperaba en la estación. Desde entonces trabajo en una oficina del centro y vivo en un piso pequeño, cerca del tranvía. Al principio no conocía a nadie. Ahora tengo varios amigos y quedamos casi todos los fines de semana. Ayer fuimos al cine, y la película que vimos era muy divertida. Mañana tengo cita con el médico, porque me duele la espalda desde hace una semana. Si todo va bien, me quedaré aquí dos años y aprenderé a cocinar mejor que mi vecina.', 'Faz um mês que moro em Zaragoza. Quando cheguei, chovia e eu estava muito cansado, mas uma colega de trabalho me esperava na estação. Desde então trabalho num escritório do centro e moro num apartamento pequeno, perto do bonde. No começo eu não conhecia ninguém. Agora tenho vários amigos e combinamos de nos ver quase todos os fins de semana. Ontem fomos ao cinema, e o filme que vimos era muito divertido. Amanhã tenho consulta com o médico, porque as costas doem há uma semana. Se tudo correr bem, ficarei aqui dois anos e aprenderei a cozinhar melhor do que minha vizinha.', [
+        ['¿Cuánto tiempo hace que vive en Zaragoza?', 'Hace un mes.'], ['¿Qué tiempo hacía cuando llegó?', 'Llovía.'], ['¿Quién lo esperaba en la estación?', 'Una compañera de trabajo.'], ['¿Por qué tiene cita con el médico?', 'Porque le duele la espalda desde hace una semana.'], ['¿Qué hará si todo va bien?', 'Se quedará dos años y aprenderá a cocinar mejor que su vecina.'],
+      ]),
+      dialogo(8, 'Un plan para el sábado / Um plano para o sábado', 'Hugo liga para Camila para convidá-la para jantar.', [
+        ['Camila', '¿Diga?', 'Alô?'], ['Hugo', 'Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?', 'Oi, Camila, é o Hugo. Você está livre no sábado à noite?'], ['Camila', 'Creo que sí. ¿Por qué?', 'Acho que sim. Por quê?'],
+        ['Hugo', '¿Te apetece ir a cenar? Conozco un restaurante nuevo que está cerca de mi casa.', 'Você topa ir jantar? Conheço um restaurante novo que fica perto de casa.'], ['Camila', 'Me encantaría. ¿A qué hora quedamos?', 'Eu adoraria. A que horas combinamos?'], ['Hugo', 'A las ocho y media, delante del restaurante. Acabo de reservar una mesa.', 'Às oito e meia, na frente do restaurante. Acabei de reservar uma mesa.'],
+        ['Camila', 'Perfecto. ¿Cómo se llama?', 'Perfeito. Como se chama?'], ['Hugo', 'Se llama La Plaza. Te lo mando por mensaje ahora mismo.', 'Chama-se La Plaza. Mando para você por mensagem agora mesmo.'], ['Camila', 'Gracias. ¿No llegarás tarde, como la última vez?', 'Obrigada. Você não vai chegar tarde, como da última vez?'], ['Hugo', 'Esta vez llegaré antes que tú, ¡te lo prometo!', 'Desta vez chegarei antes de você, prometo!'],
+      ]),
+      producao(7, 'Responda em voz alta: quem é o autor do texto, o que ele fez e o que vai fazer. Depois diga o que você faria no lugar dele e como você recusaria o convite de Hugo.'),
+    ]),
+    sessao('S3', 'Os erros mais comuns do A2 e a escrita', [
+      revisao(5, 'Escreva três erros que você ainda comete no A2 e a forma correta de cada um.'),
+      gramatica(15, 'Os 20 erros mais comuns do A2', 'Leia cada par em voz alta: primeiro o errado, depois o certo. Esta lista é o gabarito comentado das armadilhas mais frequentes dos brasileiros: marque os que já fizeram parte da sua fala e repita-os durante a semana.', {
+        tag: 'Revisão',
+        erros: [
+          ['Cuando era pequeño, fui a la playa cada verano.', 'Cuando era pequeño, iba a la playa cada verano.', 'Hábito no passado: imperfecto.'], ['Cuando llegué, todos dormieron.', 'Cuando llegué, todos dormían.', 'Cenário em curso: imperfecto.'], ['Ayer he ido al cine.', 'Ayer fui al cine.', 'Com «ayer», tempo terminado: indefinido.'], ['Yo fue al mercado.', 'Yo fui al mercado.', 'Primeira pessoa de «ir»: «fui».'],
+          ['Ellos hacieron la tarea.', 'Ellos hicieron la tarea.', 'O radical de «hacer» no indefinido é «hic-».'], ['Ellos dijieron la verdad.', 'Ellos dijeron la verdad.', 'Depois de «j», a terminação é «-eron».'], ['Veo María.', 'Veo a María.', 'Objeto direto de pessoa leva «a».'], ['Yo lo di el libro a Ana.', 'Yo le di el libro a Ana.', 'Objeto indireto: «le».'],
+          ['Le lo di.', 'Se lo di.', 'Dois pronomes de terceira pessoa: «se lo».'], ['Es más alto de mí.', 'Es más alto que yo.', 'Comparar: «que», seguido de «yo».'], ['Es más bueno que yo.', 'Es mejor que yo.', 'O comparativo de «bueno» é «mejor».'], ['Mañana voy comprar pan.', 'Mañana voy a comprar pan.', 'Plano: «ir a» + infinitivo.'],
+          ['Si tendré tiempo, te llamaré.', 'Si tengo tiempo, te llamaré.', 'Depois de «si», presente.'], ['Habla más despacio, señor.', 'Hable más despacio, señor.', 'Com «usted», o imperativo muda a vogal.'], ['Acabo de comí.', 'Acabo de comer.', '«Acabar de» + infinitivo.'], ['Gracias para tu ayuda.', 'Gracias por tu ayuda.', 'Agradecimento: «por».'],
+          ['La casa que vivo es pequeña.', 'La casa donde vivo es pequeña.', 'Falta a preposição ou o «donde».'], ['Me duele mis pies.', 'Me duelen los pies.', 'Verbo no plural e artigo, não possessivo.'], ['Trabajo aquí hace dos años.', 'Trabajo aquí desde hace dos años.', '«Desde hace» + período.'], ['Quedamos en las ocho.', 'Quedamos a las ocho.', 'As horas pedem «a las».'],
+        ],
+      }),
+      producao(10, 'Escreva uma mensagem curta (cerca de 80 palavras) a um amigo espanhol: conte o que você fez no fim de semana passado, há quanto tempo mora onde mora, e convide-o para um programa. Depois leia-a em voz alta.', 'Hola, Marta: el sábado fui al cine con mi hermana y vimos una película muy divertida. Vivo en São Paulo desde hace cinco años, pero antes vivía en Curitiba. ¿Te apetece cenar conmigo el viernes? Quedamos a las nueve delante del restaurante. Un abrazo.'),
+    ]),
+    sessao('S4', 'Simulado do A2', [
+      revisao(5, 'Releia o mapa e escolha os três pontos em que você ainda erra. Faça o simulado sem olhar o mapa.'),
+      exercicios(20, [
+        ouvir('Cuando llegué, llovía', ['Cuando llegué, llovía', 'Cuando llegaba, llovió', 'Cuando llegaré, lloverá'], 'Cuando llegué, llovía', 'Escuta: indefinido para o fato («llegué») e imperfecto para o cenário («llovía»).'),
+        ouvir('Llevo dos años viviendo aquí', ['Llevo dos años viviendo aquí', 'Viví aquí hace dos años', 'Viviré aquí dentro de dos años'], 'Llevo dos años viviendo aquí', 'Escuta: «llevo» + tempo + gerúndio indica algo que continua.'),
+        ouvir('Me duele la garganta desde ayer', ['Me duele la garganta desde ayer', 'Me duelen las gargantas desde ayer', 'Tengo dolor de garganta hace ayer'], 'Me duele la garganta desde ayer', 'Escuta: «doler» no singular, com artigo.'),
+        ouvir('Quedamos a las ocho delante del cine', ['Quedamos a las ocho delante del cine', 'Quedamos en las ocho delante del cine', 'Quedamos a las ocho detrás del cine'], 'Quedamos a las ocho delante del cine', 'Escuta: «a las ocho» e «delante del».'),
+        mc('Leia: «Hace un mes que vivo en Zaragoza.» Desde quando o autor mora lá?', ['há um mês', 'daqui a um mês', 'durante um mês'], 'há um mês', 'Leitura: «hace» + tempo indica quanto tempo faz.'),
+        mc('Leia o diálogo. Para onde Hugo convida Camila?', ['para jantar num restaurante', 'para ir ao cinema', 'para viajar de trem'], 'para jantar num restaurante', 'Leitura: «¿Te apetece ir a cenar?».'),
+        mc('Qual frase está correta?', ['Si tengo tiempo, te llamaré.', 'Si tendré tiempo, te llamaré.', 'Si tenía tiempo, te llamaré.'], 'Si tengo tiempo, te llamaré.', 'Depois de «si», presente.'),
+        mc('Qual frase está correta?', ['Mi hermano es más alto que yo.', 'Mi hermano es más alto de yo.', 'Mi hermano es más alto como yo.'], 'Mi hermano es más alto que yo.', 'Comparativo: «más… que».'),
+        mc('Qual frase está correta?', ['Gracias por tu ayuda.', 'Gracias para tu ayuda.', 'Gracias de tu ayuda.'], 'Gracias por tu ayuda.', 'Agradecimento pede «por».'),
+        mc('Qual é o pedido mais educado?', ['Quisiera un café, por favor.', 'Quiero un café.', 'Dame un café.'], 'Quisiera un café, por favor.', 'Condicional de cortesia.'),
+        mc('Passado recente:', ['Acabo de comer.', 'Acabo comer.', 'Acabo a comer.'], 'Acabo de comer.', '«Acabar de» + infinitivo.'),
+        mc('Qual é o imperativo de usted do verbo «beber»?', ['beba', 'bebe', 'bebed'], 'beba', 'Verbos em -er: terminação «-a» na forma de usted.'),
+        lacuna('Cuando era niño, ___ en el campo. (viver)', ['vivía', 'viví', 'viviré'], 'vivía', 'Fase longa do passado: imperfecto.'), lacuna('Ayer ___ al médico. (ir)', ['fui', 'iba', 'voy'], 'fui', 'Fato terminado: indefinido de «ir».'), lacuna('Ya ___ lo dije. (a ela)', ['se', 'le', 'lo'], 'se', '«Le lo» vira «se lo».'), lacuna('Mañana ___ el pan. (comprar)', ['compraré', 'compré', 'compraba'], 'compraré', 'Futuro simples: «compraré».'),
+        lacuna('El libro ___ leo es caro.', ['que', 'donde', 'quien'], 'que', 'Relativo de objeto: «que».'), lacuna('Voy ___ tren a Sevilla.', ['en', 'de', 'por'], 'en', 'Meio de transporte: «en».'), lacuna('Hablo portugués ___ inglés.', ['e', 'y', 'u'], 'e', 'O «y» vira «e» antes de som «i».'), lacuna('¿Te ___ ir al cine?', ['apetece', 'apetecen', 'apeteces'], 'apetece', '«Apetecer» + infinitivo, singular.'), lacuna('Vivo en el ___ piso. (1º)', ['primer', 'primero', 'primeiro'], 'primer', '«Primero» perde o «-o» antes de substantivo masculino.'),
+        ordem('Ordene: «Cuando era pequeño, vivía en el campo.»', ['Cuando', 'era', 'pequeño,', 'vivía', 'en', 'el', 'campo.'], 'Cuando era pequeño, vivía en el campo.', 'Imperfecto para a infância.'), ordem('Ordene: «Me duele la espalda desde hace una semana.»', ['Me', 'duele', 'la', 'espalda', 'desde', 'hace', 'una', 'semana.'], 'Me duele la espalda desde hace una semana.', 'Saúde com «desde hace».'), ordem('Ordene: «¿Te apetece ir al cine el sábado?»', ['¿Te', 'apetece', 'ir', 'al', 'cine', 'el', 'sábado?'], '¿Te apetece ir al cine el sábado?', 'Convite com «apetecer».'),
+        ditado('Quisiera reservar una habitación doble', 'Escreva: Quisiera reservar una habitación doble. Pedido educado de viagem.'), ditado('Ayer fuimos al cine y comimos pizza', 'Escreva: Ayer fuimos al cine y comimos pizza. Indefinido de «ir» e «comer».'), ditado('La casa donde vivo es pequeña', 'Escreva: La casa donde vivo es pequeña. «Donde» como relativo, sem til.'),
+        livre('Escreva em espanhol: Quando eu era criança, morava no campo. Ontem fui ao cinema. Se tiver tempo, ligo para você. Moro aqui há dois anos.', 'Cuando era niño, vivía en el campo. Ayer fui al cine. Si tengo tiempo, te llamo. Vivo aquí desde hace dos años.'),
+        livre('Escreva em espanhol: Trabalho numa empresa pequena. Faz um ano que trabalho aqui. Antes trabalhava numa loja.', 'Trabajo en una empresa pequeña. Llevo un año trabajando aquí. Antes trabajaba en una tienda.'),
+      ]),
+      producao(5, 'Releia os itens que você errou e diga a regra de cada um em voz alta. Depois refaça só esses itens.'),
+    ]),
+  ],
+});

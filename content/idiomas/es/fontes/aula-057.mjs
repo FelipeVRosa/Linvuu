@@ -1,0 +1,110 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 57, titulo: 'Cultura, festas e tradições', nivel: 'b1',
+  objetivo: 'Falar de festas e costumes com «se» e «soler», conhecer algumas celebrações da Espanha e do México, felicitar e desejar bem com «que + subjuntivo», e comparar tradições do Brasil com as de países de língua espanhola.',
+  nota: 'Você consegue descrever uma festa, desejar bem em cada ocasião e comparar costumes. Próxima aula: viver na Espanha ou na América Latina.',
+  sessoes: [
+    sessao('S1', 'Falar de festas e costumes', [
+      revisao(5, 'Responda em voz alta: «¿Qué es importante para aprender un idioma?» usando «es importante que…», e dê uma opinião com «creo que…» e outra com «no creo que…».'),
+      palavras(8, [
+        ['la fiesta', 'la fiésta', 'a festa', ''], ['la tradición', 'la tradithión', 'a tradição', ''], ['la costumbre', 'la kostúmbre', 'o costume', ''], ['el desfile', 'el desfíle', 'o desfile', ''],
+        ['la procesión', 'la prothesión', 'a procissão', ''], ['los fuegos artificiales', 'los fuégos artifithiáles', 'os fogos de artifício', ''], ['celebrar', 'thelebrár', 'comemorar, celebrar', ''], ['disfrazarse', 'disfrathárse', 'fantasiar-se', ''],
+      ]),
+      gramatica(12, 'Descrever costumes: se impersonal e soler + infinitivo', 'PASSO 1: para dizer o que se faz numa festa sem dizer quem faz, use «se» + verbo na 3ª pessoa (aula 49): «Se celebra en marzo.», «Se comen dulces típicos.» PASSO 2: o verbo concorda com o que é celebrado ou comido: «Se celebra la fiesta» (singular), «Se celebran las fallas» (plural). PASSO 3: para falar de hábitos, use «soler» + infinitivo, que significa «costumar»: «Suelo ir a casa de mi abuela.», «En Navidad solemos cenar en familia.» PASSO 4: «soler» é irregular no presente: o «o» do radical vira «ue» (suelo, sueles, suele, solemos, soléis, suelen), como em «poder». No imperfecto é regular e indica hábito no passado: «Solía viajar en verano.» PASSO 5: «soler» é sempre seguido de infinitivo, sem preposição: «Suelo ir», e não «Suelo a ir». PASSO 6: «fiesta» é festa, mas também a data em que não se trabalha: «día festivo». O verbo «celebrar» corresponde a comemorar e também a realizar um evento: «El festival se celebra en julio.» PASSO 7: combine para descrever: «En esta fiesta se suele comer…», «La gente suele disfrazarse.»', {
+        tag: 'Cultura',
+        comparacao: 'em português dizemos «costumo ir» e «comemora-se em março». O espanhol usa o verbo «soler» e o «se» antes do verbo: «suelo ir», «se celebra en marzo». O «soler» não leva preposição, assim como o «costumar» do português: «costumo ir», não «costumo de ir».',
+        tabela: [
+          { pessoa: 'yo', soler: 'suelo', exemplo: 'Suelo ver el desfile desde casa.' },
+          { pessoa: 'tú', soler: 'sueles', exemplo: '¿Sueles viajar en vacaciones?' },
+          { pessoa: 'él, ella, usted', soler: 'suele', exemplo: 'Mi abuela suele cocinar para todos.' },
+          { pessoa: 'nosotros', soler: 'solemos', exemplo: 'Solemos cenar juntos.' },
+          { pessoa: 'vosotros', soler: 'soléis', exemplo: '¿Soléis salir el día de Nochevieja?' },
+          { pessoa: 'ellos, ustedes', soler: 'suelen', exemplo: 'Mis padres suelen ir al pueblo.' },
+        ],
+        erros: [['Se celebra las fallas en marzo.', 'Se celebran las fallas en marzo.', 'Com «se», o verbo concorda com o plural «las fallas».'], ['Suelo a ir al cine.', 'Suelo ir al cine.', '«Soler» vem direto com o infinitivo, sem preposição.'], ['Yo soleo ir al cine.', 'Yo suelo ir al cine.', '«Soler» muda o «o» para «ue» no presente.']],
+      }),
+      producao(5, 'Descreva em voz alta uma festa da sua cidade com três frases: uma com «se celebra…», uma com «se suele…» e uma com «suelo…».'),
+    ]),
+    sessao('S2', 'Festas, felicitações e desejos', [
+      revisao(4, 'Conjugue «soler» no presente de memória e diga uma frase com «solemos».'),
+      palavras(6, [
+        ['la cabalgata', 'la kabalgáta', 'o cortejo', ''], ['la ofrenda', 'la ofrénda', 'a oferenda', ''], ['las uvas', 'las úbas', 'as uvas', ''], ['los regalos', 'los rregálos', 'os presentes', ''],
+        ['felicitar', 'felithitár', 'parabenizar, felicitar', ''], ['¡Enhorabuena!', 'enorabuéna', 'parabéns!', ''],
+      ]),
+      gramatica(12, 'Um calendário de festas e como felicitar', 'PASSO 1: conheça algumas festas. Não é necessário decorar tudo; é a base para conversar. PASSO 2: para felicitar em datas fixas, use fórmulas curtas: «¡Feliz Navidad!», «¡Feliz Año Nuevo!», «¡Felices fiestas!», «¡Feliz cumpleaños!». PASSO 3: para uma conquista (aprovação, notícia boa), use «¡Enhorabuena!» (Espanha) ou «¡Felicidades!» / «¡Felicitaciones!» (muito comuns na América Latina). Não use «enhorabuena» para aniversário. PASSO 4: para desejar bem, use «que» + subjuntivo, com o verbo logo depois: «Que lo pases bien.», «Que disfrutes de las fiestas.», «Que tengas un buen viaje.» É o mesmo subjuntivo de desejo da aula 43. PASSO 5: «Ojalá» também expressa desejo e leva subjuntivo: «Ojalá haga buen tiempo.» PASSO 6: a data de uma festa leva artigo e não leva preposição: «El 6 de enero», «el último miércoles de agosto», «el uno y el dos de noviembre».', {
+        tag: 'Cultura',
+        comparacao: 'em português «parabéns» serve para aniversário e conquistas. Em espanhol, são duas coisas: «¡Feliz cumpleaños!» para aniversário e «¡Enhorabuena!» (ou «¡Felicidades!») para uma conquista. «Feliz Navidad» vem sem «Natal»: «Navidad» é Natal e «Nochebuena» é a noite de 24 de dezembro.',
+        tabela: [
+          { festa: 'Las Fallas', 'quando e onde': 'Valencia, em março, com o auge no dia 19 (San José)', 'o que se faz': 'Constroem-se grandes figuras artísticas que se queimam na última noite.' },
+          { festa: 'La Tomatina', 'quando e onde': 'Buñol (Valência), na última quarta-feira de agosto', 'o que se faz': 'Os participantes se jogam tomates.' },
+          { festa: 'San Fermín', 'quando e onde': 'Pamplona, de 6 a 14 de julho', 'o que se faz': 'Há os encierros, em que os touros correm pela rua; muita gente veste branco com lenço vermelho.' },
+          { festa: 'Semana Santa', 'quando e onde': 'Várias cidades da Espanha, em março ou abril', 'o que se faz': 'Saem procissões com imagens religiosas pelas ruas.' },
+          { festa: 'Nochevieja', 'quando e onde': 'Espanha, 31 de dezembro', 'o que se faz': 'Come-se uma uva a cada uma das doze badaladas da meia-noite.' },
+          { festa: 'Día de los Reyes Magos', 'quando e onde': 'Espanha, 6 de janeiro', 'o que se faz': 'Na véspera há cortejos e no dia as crianças recebem presentes; come-se o roscón de Reyes.' },
+          { festa: 'Día de Muertos', 'quando e onde': 'México, 1 e 2 de novembro', 'o que se faz': 'Montam-se altares com fotos, flores e comida para lembrar quem já morreu.' },
+        ],
+        erros: [['Feliz Natal!', '¡Feliz Navidad!', 'Em espanhol, «Natal» é «Navidad».'], ['¡Enhorabuena por tu cumpleaños!', '¡Feliz cumpleaños!', '«Enhorabuena» é para conquistas e boas notícias.'], ['Que lo pasas bien.', 'Que lo pases bien.', 'Desejo com «que» pede subjuntivo.']],
+      }),
+      producao(8, 'Escolha uma festa da tabela e explique em voz alta: onde, quando e o que se faz. Termine com uma felicitação ou desejo que combine com ela.'),
+    ]),
+    sessao('S3', 'Comparar tradições', [
+      revisao(4, 'Diga uma felicitação para cada ocasião: Natal, aniversário, uma aprovação e uma viagem (use «que» + subjuntivo para a viagem).'),
+      palavras(5, [
+        ['mientras que', 'miéntras ke', 'enquanto que, já', ''], ['a diferencia de', 'a diferénthia de', 'diferentemente de', ''], ['se parece a', 'se paréthe a', 'se parece com', ''], ['igual que', 'igual ke', 'igual a, como', ''],
+        ['antes… ahora…', 'ántes… aóra', 'antes… agora…', ''],
+      ]),
+      gramatica(8, 'Comparar costumes e contar como eram', 'PASSO 1: para contrastar, use «mientras que»: «En Brasil se cena pronto, mientras que en España se cena más tarde.» PASSO 2: «a diferencia de» + substantivo: «A diferencia de Brasil, en España…». PASSO 3: para semelhanças: «igual que», «como» e «se parece a»: «Se parece a nuestra fiesta de San Juan.» (o verbo é «parecerse a»). PASSO 4: para contar como eram os costumes, use o imperfecto de hábito (aula 21) ou «solía»: «Cuando era pequeña, mi familia se reunía en Navidad.», «Antes se solía celebrar en casa; ahora se hace en la calle.» PASSO 5: sobre datas, nunca use preposição: «Se celebra el último miércoles de agosto.»', {
+        tag: 'Cultura',
+        comparacao: 'em português dizemos «parece-se com» e «diferentemente de». O espanhol usa «se parece a» e «a diferencia de». Atenção à preposição: «parecerse a» (e não «parecerse con»). «Igual que» corresponde a «igual a» e «tal como».',
+        tabela: [
+          { funcao: 'contrastar', estrutura: 'mientras que', exemplo: 'En Brasil es verano, mientras que en España es invierno.' },
+          { funcao: 'contrastar', estrutura: 'a diferencia de', exemplo: 'A diferencia de mi ciudad, aquí hay desfile.' },
+          { funcao: 'aproximar', estrutura: 'se parece a', exemplo: 'Se parece a nuestro Carnaval.' },
+          { funcao: 'igualar', estrutura: 'igual que', exemplo: 'Igual que en Brasil, se come en familia.' },
+          { funcao: 'costume passado', estrutura: 'imperfecto / solía', exemplo: 'Antes se solía cenar en casa.' },
+        ],
+        erros: [['Se parece con nuestra fiesta.', 'Se parece a nuestra fiesta.', 'O verbo «parecerse» pede a preposição «a».'], ['La Tomatina se celebra en el último miércoles de agosto.', 'La Tomatina se celebra el último miércoles de agosto.', 'Datas não levam «en».'], ['Igual de en Brasil, se cena en familia.', 'Igual que en Brasil, se cena en familia.', 'A estrutura é «igual que».']],
+      }),
+      dialogo(4, 'Dos formas de celebrar / Duas formas de comemorar', 'Pablo, espanhol, e Camila, mexicana que mora em Madri, comparam festas de fim de ano.', [
+        ['Pablo', 'Camila, ¿cómo se celebra el Año Nuevo en México? Aquí tomamos doce uvas con las campanadas.', 'Camila, como se comemora o Ano Novo no México? Aqui comemos doze uvas com as badaladas.'],
+        ['Camila', 'En muchas casas también se toman las uvas, pero lo más importante es cenar en familia y hacer un brindis.', 'Em muitas casas também se comem as uvas, mas o mais importante é jantar em família e fazer um brinde.'],
+        ['Pablo', '¿Y el Día de Muertos? He visto fotos de altares muy bonitos.', 'E o Dia dos Mortos? Vi fotos de altares muito bonitos.'],
+        ['Camila', 'Se celebra el uno y el dos de noviembre. Se ponen fotos de los familiares que ya no están, flores y comida en un altar.', 'Comemora-se no dia primeiro e no dia dois de novembro. Colocam-se em um altar fotos dos familiares que já se foram, flores e comida.'],
+        ['Pablo', 'Aquí en noviembre solemos visitar los cementerios el día de Todos los Santos, pero es algo más tranquilo.', 'Aqui, em novembro, costumamos visitar os cemitérios no dia de Todos os Santos, mas é algo mais tranquilo.'],
+        ['Camila', 'Se parece un poco, ¿verdad? En los dos casos se recuerda a los que ya no están.', 'Parece um pouco, não é? Nos dois casos se lembra de quem já se foi.'],
+        ['Pablo', 'Sí. Ojalá pueda ir algún día a México en esas fechas.', 'Sim. Tomara que eu possa ir um dia ao México nessas datas.'],
+        ['Camila', 'Seguro que te gustaría. Que lo pases bien en tu próximo viaje.', 'Com certeza você gostaria. Que você aproveite bem a sua próxima viagem.'],
+      ]),
+      texto(4, 'Nochevieja y las doce uvas / A virada do ano e as doze uvas', 'En España, la noche del 31 de diciembre se llama Nochevieja. Muchas familias cenan juntas y, antes de la medianoche, ponen la televisión para seguir las campanadas del reloj. Con cada campanada se come una uva: son doce en total. No es fácil, porque hay que comerlas rápido, y por eso mucha gente las prepara antes, sin pepitas. Después se brinda, se desea «¡Feliz Año Nuevo!» y todos se abrazan. Se dice que esta costumbre trae buena suerte para el año que empieza. Algunas personas salen luego a bailar y otras prefieren quedarse en casa.', 'Na Espanha, a noite de 31 de dezembro se chama Nochevieja. Muitas famílias jantam juntas e, antes da meia-noite, ligam a televisão para acompanhar as badaladas do relógio. A cada badalada se come uma uva: são doze no total. Não é fácil, porque é preciso comê-las rápido, e por isso muita gente as prepara antes, sem sementes. Depois se faz um brinde, se deseja «¡Feliz Año Nuevo!» e todos se abraçam. Diz-se que esse costume traz boa sorte para o ano que começa. Algumas pessoas saem depois para dançar e outras preferem ficar em casa.', [
+        ['¿Cuántas uvas se comen y cuándo?', 'Doce, una con cada campanada de la medianoche.'], ['¿Por qué mucha gente prepara las uvas antes?', 'Porque hay que comerlas rápido, y las preparan sin pepitas.'], ['¿Qué se dice que trae esta costumbre?', 'Buena suerte para el año que empieza.'],
+      ]),
+      producao(5, 'Compare em voz alta uma festa do Brasil com uma da tabela, usando «mientras que», «a diferencia de» e «se parece a».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 57', [
+      revisao(5, 'Descreva uma festa com cinco frases: onde e quando se celebra, o que se come, o que se suele hacer, e um desejo no final.'),
+      exercicios(20, [
+        ouvir('Se celebran las fallas en marzo', ['Se celebran las fallas en marzo', 'Se celebra las fallas en marzo', 'Se celebraron las fallas en marzo'], 'Se celebran las fallas en marzo', 'O verbo concorda com «las fallas» (plural).'),
+        ouvir('Solemos cenar en familia', ['Solemos cenar en familia', 'Soleos cenar en familia', 'Solimos cenar en familia'], 'Solemos cenar en familia', '«Solemos» é a forma de «nosotros».'),
+        ouvir('Que lo pases muy bien', ['Que lo pases muy bien', 'Que lo pasas muy bien', 'Que lo pasen muy bien'], 'Que lo pases muy bien', 'Desejo com subjuntivo de «tú».'),
+        ditado('Se comen doce uvas en Nochevieja', 'Escreva: Se comen doce uvas en Nochevieja. (plural: «se comen»)'),
+        ditado('Feliz Año Nuevo', 'Escreva: Feliz Año Nuevo. (com «ñ»)'),
+        ditado('Enhorabuena por tu trabajo', 'Escreva: Enhorabuena por tu trabajo. (conquista)'),
+        mc('Em que mês se celebram Las Fallas, em Valência?', ['Março', 'Agosto', 'Julho'], 'Março', 'Com o auge no dia 19, San José.'),
+        mc('O que se faz na Tomatina?', ['Jogam-se tomates entre os participantes.', 'Correm touros pelas ruas.', 'Comem-se doze uvas.'], 'Jogam-se tomates entre os participantes.', 'La Tomatina acontece em Buñol, na última quarta-feira de agosto.'),
+        mc('Qual é a felicitação para uma aprovação?', ['¡Enhorabuena!', '¡Feliz cumpleaños!', '¡Feliz Navidad!'], '¡Enhorabuena!', 'Conquista: enhorabuena.'),
+        mc('Como dizer «costumo ir» em espanhol?', ['Suelo ir.', 'Soleo ir.', 'Suelo a ir.'], 'Suelo ir.', '«Soler» + infinitivo, com ditongo.'),
+        mc('Qual frase está correta?', ['Se parece a nuestra fiesta.', 'Se parece con nuestra fiesta.', 'Se parece de nuestra fiesta.'], 'Se parece a nuestra fiesta.', '«Parecerse a».'),
+        lacuna('El Día de Muertos se ___ el uno y el dos de noviembre. (celebrar)', ['celebra', 'celebran', 'celebrar'], 'celebra', 'Singular: «el Día de Muertos».'),
+        lacuna('Que ___ unas buenas vacaciones. (tú, tener)', ['tengas', 'tienes', 'tener'], 'tengas', 'Desejo com subjuntivo.'),
+        lacuna('Ojalá ___ buen tiempo el día de la fiesta. (hacer)', ['haga', 'hace', 'hará'], 'haga', 'Ojalá + subjuntivo.'),
+        lacuna('La fiesta se celebra ___ último miércoles de agosto.', ['el', 'en el', 'al'], 'el', 'Datas levam artigo e não levam preposição.'),
+        lacuna('Antes se ___ celebrar en casa. (soler, imperfecto)', ['solía', 'suele', 'sueles'], 'solía', 'Costume do passado: «solía».'),
+        ordem('Ordene: «En Navidad solemos cenar con la familia.»', ['En', 'Navidad', 'solemos', 'cenar', 'con', 'la', 'familia.'], 'En Navidad solemos cenar con la familia.', 'Soler + infinitivo.'),
+        ordem('Ordene: «A diferencia de Brasil, aquí se cena más tarde.»', ['A', 'diferencia', 'de', 'Brasil,', 'aquí', 'se', 'cena', 'más', 'tarde.'], 'A diferencia de Brasil, aquí se cena más tarde.', 'Contraste com «a diferencia de».'),
+        livre('Escreva em espanhol: Na Nochevieja comem-se doze uvas.', 'En Nochevieja se comen doce uvas.'),
+      ]),
+      producao(5, 'Escreva um cartão curto para uma amiga espanhola em uma festa à sua escolha: felicitação, um desejo com «que + subjuntivo» e uma pergunta sobre como ela costuma celebrá-la.'),
+    ]),
+  ],
+});

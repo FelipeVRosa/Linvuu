@@ -1,0 +1,102 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 25, titulo: 'Dois pronomes juntos (se lo)', nivel: 'a2',
+  objetivo: 'Combinar o pronome de objeto indireto com o de objeto direto na ordem certa (me lo, te la, nos los), usar «se lo, se la, se los, se las» no lugar de «le lo» e «les lo», acentuar corretamente o infinitivo («dárselo», «decírtelo»), juntar o reflexivo com o objeto direto («me la pongo») e reconhecer palavras que variam entre a Espanha e a América Latina.',
+  nota: 'Você troca os dois complementos por pronomes e fala como se fala no dia a dia: «¿me lo prestas?», «se lo di», «te la mando». Próxima aula: comparativos e superlativos.',
+  sessoes: [
+    sessao('S1', 'Me lo, te la, nos los', [
+      revisao(5, 'Responda usando o pronome certo: «¿Le escribiste a Ana?», «¿Les mandaste la invitación a tus padres?», «¿Me llamas esta noche?»'),
+      palavras(8, [
+        ['la entrada', 'la entráda', 'o ingresso, a entrada', ''], ['el billete', 'el bilhéte', 'a passagem (Espanha); a nota (dinheiro)', ''], ['el móvil', 'el móbil', 'o celular (Espanha)', ''], ['el ordenador', 'el ordenadór', 'o computador (Espanha)', ''],
+        ['el sobre', 'el sóbre', 'o envelope', ''], ['la factura', 'la faktúra', 'a nota fiscal, a fatura', ''], ['traer', 'traér', 'trazer', ''], ['entregar', 'entregár', 'entregar', ''],
+      ]),
+      gramatica(12, 'Objeto indireto + objeto direto: a ordem dos pronomes', 'PASSO 1: uma frase pode ter os dois complementos: «Doy el libro a Ana». O livro é o objeto direto (o quê?) e Ana é o indireto (a quem?). Se você trocar os dois por pronomes, a frase fica «Se lo doy». PASSO 2: a regra é uma só: primeiro o pronome da pessoa (o indireto), depois o pronome da coisa (o direto). Ou seja, «me, te, nos, os» vêm antes de «lo, la, los, las». PASSO 3: «¿Me das el libro? — Sí, te lo doy». Aqui «te» é a pessoa a quem dou (você) e «lo» é «el libro». PASSO 4: nada se coloca entre os dois pronomes, e eles nunca se invertem: «me lo», e não «lo me». PASSO 5: «lo, la, los, las» concordam com a coisa, e não com a pessoa. A coisa feminina plural é «las», seja quem for a pessoa: «Me las das», «Te las doy». PASSO 6: a posição é a de sempre, antes do verbo conjugado: «Me lo dices», «No te lo digo», «Nos las trae». PASSO 7: nos tempos compostos, os dois pronomes vêm antes de «haber»: «Te lo he dicho». No indefinido: «Me lo dio», «Te la mandé». PASSO 8: no português falado do Brasil, essa combinação praticamente não existe: dizemos «me dá isso» ou «te mando». Em espanhol o uso do duplo pronome é muito frequente e precisa virar hábito.', {
+        tag: 'Pronomes',
+        comparacao: 'o português tem as contrações «mo, to, lho» («dá-mo», «disse-to»), mas elas são de uso escrito e quase desapareceram da fala. O português falado do Brasil prefere «me dá isso» ou «te mando». Por isso, a combinação do espanhol, de uso diário, é uma das novidades mais importantes deste nível.',
+        tabela: [
+          { pessoa: 'a mí', com_lo: 'me lo', com_la: 'me la', com_los: 'me los', com_las: 'me las' },
+          { pessoa: 'a ti', com_lo: 'te lo', com_la: 'te la', com_los: 'te los', com_las: 'te las' },
+          { pessoa: 'a nosotros', com_lo: 'nos lo', com_la: 'nos la', com_los: 'nos los', com_las: 'nos las' },
+          { pessoa: 'a vosotros (Espanha)', com_lo: 'os lo', com_la: 'os la', com_los: 'os los', com_las: 'os las' },
+        ],
+        exemplos: [['¿Me prestas el cargador? — Sí, te lo presto.', 'Você me empresta o carregador? Sim, empresto a você.'], ['Quiero ver las entradas. — Ahora te las traigo.', 'Quero ver os ingressos. Agora eu os trago para você.'], ['Nos explican la regla y nos la repiten.', 'Eles nos explicam a regra e a repetem para nós.']],
+        erros: [['¿Me das lo?', '¿Me lo das?', 'O pronome vem antes do verbo, e o indireto vem primeiro.'], ['Lo me dio ayer.', 'Me lo dio ayer.', 'A ordem é sempre o indireto (me, te, nos, os) e depois o direto (lo, la, los, las).'], ['Te los doy. (querendo dizer: a chave)', 'Te la doy.', 'O pronome direto concorda com a coisa: «la llave» é feminino singular.'], ['He lo dicho.', 'Lo he dicho.', 'O pronome não fica entre o auxiliar e o particípio.']],
+      }),
+      producao(5, 'Responda em voz alta com os dois pronomes: «¿Me prestas tu móvil?» (Sí, te lo presto), «¿Me traes la factura?», «¿Me explicas la regla?», «¿Me mandas las entradas?»'),
+    ]),
+    sessao('S2', 'Se lo, se la, se los, se las', [
+      revisao(4, 'Combine os pronomes: «Me das el libro» → «Me lo das». Faça o mesmo com «Te traigo la factura», «Nos mandan las entradas».'),
+      palavras(6, [
+        ['pasar', 'pasár', 'passar (algo a alguém)', ''], ['recordar', 'rekordár', 'lembrar', ''], ['la contraseña', 'la kontrasénha', 'a senha', ''], ['la dirección', 'la direkthión', 'o endereço', ''], ['el recibo', 'el rethíbo', 'o recibo', ''], ['el correo', 'el koréo', 'o e-mail; o correio', ''],
+      ]),
+      gramatica(12, 'Se lo: quando o indireto é «le» ou «les»', 'PASSO 1: se o objeto indireto é de terceira pessoa («le, les») e o direto é «lo, la, los, las», surge um problema de som: «le lo», «les la». O espanhol evita isso trocando «le» e «les» por «se». PASSO 2: «Le doy el libro a Ana» vira «Se lo doy». «Les mando las entradas a mis padres» vira «Se las mando». PASSO 3: esse «se» não é o «se» reflexivo. Ele é o «le» ou «les» transformado, e por isso não diz se a pessoa é uma ou várias, nem se é homem ou mulher. Quem fala sabe pelo contexto. PASSO 4: o «lo, la, los, las» concorda com a coisa: «Les di las llaves» é «Se las di», e o «las» é de «llaves», e não de quem as recebeu. PASSO 5: para esclarecer a quem, acrescente «a + pessoa» no fim: «Se lo di a Ana», «Se las mandé a mis padres», «Se lo dije a usted». PASSO 6: com o infinitivo, os dois pronomes se colam ao final: «dar + se + lo» vira «dárselo». Como a palavra cresce, é obrigatório pôr o acento escrito na sílaba forte original: «dárselo, decírtelo, mostrárselo, comprármelo, escribírselo». PASSO 7: como em outros casos, há duas posições: «Voy a dárselo» ou «Se lo voy a dar». PASSO 8: na América Latina, não existe «os»: em lugar de «os lo digo», diz-se «se lo digo» para «ustedes». PASSO 9: um falso amigo desta parte: «dirección» é endereço (e também direção), por exemplo: «¿Me das tu dirección?». O correio eletrônico é «correo» ou «correo electrónico».', {
+        tag: 'Pronomes',
+        comparacao: 'a regra do «se lo» não tem equivalente no português. Lá, a mesma ideia fica no «lhe», que quase não aparece na fala. Em espanhol, «le lo» e «les la» são sempre errados: troque por «se lo» e «se la». Também não confunda com o «se» reflexivo de «se lava» ou com o «se» impessoal de «se habla español».',
+        tabela: [
+          { frase_completa: 'Le doy el libro a Ana.', com_pronomes: 'Se lo doy.' },
+          { frase_completa: 'Le mando la carta a Pablo.', com_pronomes: 'Se la mando.' },
+          { frase_completa: 'Les di los billetes a mis padres.', com_pronomes: 'Se los di.' },
+          { frase_completa: 'Les expliqué las reglas a los niños.', com_pronomes: 'Se las expliqué.' },
+          { frase_completa: 'Voy a dar el regalo a Marta.', com_pronomes: 'Voy a dárselo. / Se lo voy a dar.' },
+        ],
+        exemplos: [['¿Le dijiste la verdad a Marta? — Sí, se la dije.', 'Você disse a verdade à Marta? Sim, eu a disse a ela.'], ['¿Cuándo les mandas las fotos? — Se las mando hoy.', 'Quando você manda as fotos a eles? Eu as mando hoje.'], ['Quiero decírtelo ahora.', 'Quero te dizer isso agora.'], ['El camarero nos trajo la cuenta y se la pagamos.', 'O garçom nos trouxe a conta e nós a pagamos a ele.']],
+        erros: [['Le lo di a Pablo.', 'Se lo di a Pablo.', '«Le lo» não existe; use «se lo».'], ['Les las mandé a mis padres.', 'Se las mandé a mis padres.', '«Les las» não existe; use «se las».'], ['Se la di a mis padres. (as llaves)', 'Se las di a mis padres.', 'O pronome direto concorda com a coisa: «las llaves».'], ['Voy a darselo.', 'Voy a dárselo.', 'Com dois pronomes colados ao infinitivo, o acento escrito é obrigatório.'], ['Os lo digo a ustedes.', 'Se lo digo a ustedes.', 'Com «ustedes», o pronome é «se», e não «os».']],
+      }),
+      producao(8, 'Imagine que você organiza uma viagem em grupo. Diga em voz alta, com pelo menos oito frases, o que você já deu, mandou e disse a cada pessoa, usando «se lo», «se la», «se los» e «se las». Exemplo: «Las entradas se las mandé a Pablo.»'),
+    ]),
+    sessao('S3', 'Reflexivo, pedidos e vocabulário que muda', [
+      revisao(4, 'Transforme em pronomes: «Doy la contraseña a Marta», «Mando las fotos a mis padres», «Voy a explicar la regla a Pablo».'),
+      palavras(5, [
+        ['el celular', 'el selulár', 'o celular (América Latina)', ''], ['la computadora', 'la komputadóra', 'o computador (América Latina)', ''], ['el boleto', 'el boléto', 'o ingresso ou o bilhete (vários países da América Latina)', ''], ['el pasaje', 'el pasáhe', 'a passagem (vários países da América Latina)', ''], ['el carro', 'el kárro', 'o carro (América Latina)', ''],
+      ]),
+      gramatica(8, 'Reflexivo + objeto direto e vocabulário da Espanha e da América Latina', 'PASSO 1: os verbos reflexivos da aula 14 também podem ter um objeto direto: «Me pongo la chaqueta», «Me lavo las manos». Quando o objeto direto vira pronome, o reflexivo vem antes: «Me la pongo», «Me las lavo». PASSO 2: com a terceira pessoa, o «se» reflexivo vem antes do «lo»: «Se puso el abrigo» vira «Se lo puso». PASSO 3: para pedir algo usando dois pronomes, fica natural: «¿Me lo puedes explicar?», «¿Puedes explicármelo?». PASSO 4: o vocabulário muda entre a Espanha e a América Latina. «Móvil», «ordenador», «coche» e «billete» (Espanha) correspondem a «celular», «computadora», «carro» e «boleto» ou «pasaje» (vários países da América Latina). Ambos são entendidos; ouvir o outro não deve surpreender. PASSO 5: use a variante da sua região-alvo e seja coerente. Neste curso, o áudio é da Espanha, e as palavras da América Latina aparecem em nota.', {
+        tag: 'Pronomes',
+        comparacao: 'em português, o reflexivo e o objeto direto também podem aparecer juntos («ele pôs o casaco» → «ele o pôs»), mas o brasileiro diz «ele pôs ele» ou simplesmente repete o nome. Em espanhol, «se lo puso» é a forma normal.',
+        tabela: [
+          { frase: 'Me pongo la chaqueta.', com_pronome: 'Me la pongo.' }, { frase: 'Me lavo las manos.', com_pronome: 'Me las lavo.' }, { frase: 'Se puso el abrigo.', com_pronome: 'Se lo puso.' }, { frase: 'Me voy a poner el abrigo.', com_pronome: 'Me lo voy a poner. / Voy a ponérmelo.' },
+        ],
+        erros: [['Me lavo-las.', 'Me las lavo.', 'O pronome vem antes do verbo, sem hífen.'], ['Voy a ponermelo.', 'Voy a ponérmelo.', 'Com dois pronomes colados ao infinitivo, o acento é obrigatório.'], ['Se pone-lo.', 'Se lo pone.', 'O reflexivo vem primeiro, depois o objeto direto.']],
+      }),
+      dialogo(8, 'Prestar y devolver / Emprestar e devolver', 'Valeria e Daniel moram juntos e conversam sobre um carregador e as chaves do carro.', [
+        ['Valeria', 'Daniel, ¿me prestas tu cargador? El mío está roto.', 'Daniel, você me empresta seu carregador? O meu está quebrado.'],
+        ['Daniel', 'Claro, te lo presto. Pero me lo devuelves esta noche, ¿vale?', 'Claro, eu empresto. Mas você me devolve esta noite, certo?'],
+        ['Valeria', 'Te lo devuelvo antes de cenar. ¿Y tienes las llaves del coche?', 'Devolvo antes do jantar. E você está com as chaves do carro?'],
+        ['Daniel', 'Se las di ayer a Pablo. Él las tiene.', 'Eu as dei ontem ao Pablo. Ele está com elas.'],
+        ['Valeria', '¿Se las diste a Pablo? ¿Por qué se las diste?', 'Você as deu ao Pablo? Por que você as deu a ele?'],
+        ['Daniel', 'Porque necesitaba el coche para llevar a su madre al médico. Me lo pidió por la mañana.', 'Porque ele precisava do carro para levar a mãe dele ao médico. Pediu de manhã.'],
+        ['Valeria', 'Vale. Entonces se lo pido yo esta noche.', 'Certo. Então eu o peço a ele esta noite.'],
+        ['Daniel', 'Mejor le mandas un mensaje. Si quieres, te doy su número.', 'É melhor você mandar uma mensagem a ele. Se quiser, eu te dou o número dele.'],
+        ['Valeria', 'Sí, me lo das luego. Y gracias por el cargador.', 'Sim, você me dá depois. E obrigada pelo carregador.'],
+      ]),
+      producao(5, 'Escreva e diga em voz alta cinco frases com dois pronomes: o que você empresta, o que você pede e o que você já disse, por exemplo «Se lo pedí a mi hermano» e «Me lo mandó ayer».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 25', [
+      revisao(5, 'Responda em voz alta com dois pronomes: «¿Me prestas el móvil?», «¿Le mandaste el correo a Marta?», «¿Les diste las llaves a tus padres?»'),
+      exercicios(20, [
+        ouvir('Te lo doy mañana', ['Te lo doy mañana', 'Me lo doy mañana', 'Se lo doy mañana'], 'Te lo doy mañana', '«Te» é a pessoa que recebe; «lo» é a coisa dada.'),
+        ouvir('Se lo dije a Pablo', ['Se lo dije a Pablo', 'Se la dije a Pablo', 'Te lo dije a Pablo'], 'Se lo dije a Pablo', '«Se» vem de «le»; «lo» retoma a coisa dita.'),
+        ouvir('Me las trajo ayer', ['Me las trajo ayer', 'Me los trajo ayer', 'Nos las trajo ayer'], 'Me las trajo ayer', '«Las» concorda com uma coisa feminina plural.'),
+        ditado('Se lo mandé ayer', 'Escreva: Se lo mandé ayer. O «é» final leva acento.'),
+        ditado('Voy a dárselo mañana', 'Escreva: Voy a dárselo mañana. Dois pronomes colados exigem o acento em «dár».'),
+        ditado('¿Me lo puedes explicar?', 'Escreva: ¿Me lo puedes explicar? Os dois pronomes ficam antes do verbo conjugado.'),
+        mc('Qual é a ordem correta dos pronomes?', ['Me lo da.', 'Lo me da.', 'Me da lo.'], 'Me lo da.', 'O pronome da pessoa vem antes do da coisa.'),
+        mc('Como se diz «Eu o dei a ele»?', ['Se lo di.', 'Le lo di.', 'Lo le di.'], 'Se lo di.', '«Le lo» vira «se lo».'),
+        mc('Em «Se las di», o que é «las»?', ['As coisas dadas, no feminino plural', 'As pessoas que receberam', 'Um pronome reflexivo'], 'As coisas dadas, no feminino plural', '«Las» concorda com a coisa, e o «se» é o indireto.'),
+        mc('Como se escreve «dar + se + lo» no infinitivo?', ['dárselo', 'darselo', 'darsélo'], 'dárselo', 'Com dois pronomes, o acento escrito é obrigatório.'),
+        mc('Onde ficam os dois pronomes no perfecto?', ['Antes de «he»: Se lo he dicho.', 'Depois do particípio: He dicho selo.', 'Entre «he» e «dicho»: He se lo dicho.'], 'Antes de «he»: Se lo he dicho.', 'Os pronomes vêm antes de «haber».'),
+        mc('O que significa «dirección»?', ['endereço', 'diretoria', 'trajeto'], 'endereço', '«Dirección» é endereço (e também direção).'),
+        mc('Como se diz «celular» na Espanha?', ['el móvil', 'el celular', 'el portátil'], 'el móvil', 'Na América Latina se diz «el celular».'),
+        lacuna('¿Me prestas el cargador? — Sí, ___ presto.', ['te lo', 'se lo', 'me lo'], 'te lo', '«Te» é a pessoa que recebe e «lo» é o carregador.'),
+        lacuna('¿Les diste las llaves a tus padres? — Sí, ___ di.', ['se las', 'les las', 'las les'], 'se las', '«Les las» vira «se las».'),
+        lacuna('¿Le escribiste la carta a Ana? — Sí, ___ escribí.', ['se la', 'le la', 'la le'], 'se la', '«Le la» vira «se la».'),
+        lacuna('Voy a ___ a Pablo. (dar + el regalo)', ['dárselo', 'darle lo', 'dárlelo'], 'dárselo', 'Dois pronomes colados ao infinitivo: «dárselo».'),
+        lacuna('Ya ___ dije a mis padres. (la noticia)', ['se la', 'les la', 'la les'], 'se la', '«Se» substitui «les» e «la» substitui «la noticia».'),
+        ordem('Ordene: «Te lo doy mañana.»', ['Te', 'lo', 'doy', 'mañana.'], 'Te lo doy mañana.', 'Pronome da pessoa, pronome da coisa, verbo.'),
+        ordem('Ordene: «Se las di ayer.»', ['Se', 'las', 'di', 'ayer.'], 'Se las di ayer.', '«Se las» antes do verbo.'),
+        livre('Escreva em espanhol: Eu o dei a ele ontem.', 'Se lo di ayer.'),
+      ]),
+      producao(5, 'Conte em voz alta uma troca de favores entre amigos, com pelo menos seis frases e dois pronomes em cada uma, como «Me lo prestó», «Se lo devolví», «Te la mando».'),
+    ]),
+  ],
+});

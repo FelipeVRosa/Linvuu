@@ -1,0 +1,107 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 54, titulo: 'Estilo formal e e-mail', nivel: 'b1',
+  objetivo: 'Escrever um e-mail formal com assunto, saudação, abertura, pedido cortês e despedida adequados, e trocar entre o registro informal (tú) e o formal (usted) com segurança.',
+  nota: 'Você consegue escrever um e-mail formal completo e corrigir o tom de uma mensagem informal. Próxima aula: trabalho e entrevista.',
+  sessoes: [
+    sessao('S1', 'A estrutura de um e-mail formal', [
+      revisao(5, 'Diga em voz alta a diferença entre «tú» e «usted» com três frases: uma para um amigo, uma para um médico desconhecido e uma para o chefe. Depois diga cinco expressões de opinião da aula 53.'),
+      palavras(8, [
+        ['el asunto', 'el asúnto', 'o assunto (do e-mail)', ''], ['Estimado señor / Estimada señora', 'estimádo señór / estimáda señóra', 'Prezado senhor / Prezada senhora', ''], ['Le escribo para…', 'le eskríbo para', 'escrevo para…', ''], ['adjunto', 'adjúnto', 'em anexo', ''],
+        ['A la espera de su respuesta', 'a la espéra de su respuésta', 'aguardando sua resposta', ''], ['Quedo a su disposición.', 'kédo a su disposithión', 'fico à disposição.', ''], ['Atentamente,', 'atenta-ménte', 'Atenciosamente,', ''], ['Un cordial saludo,', 'un kordiál saludo', 'Cordiais saudações,', ''],
+      ]),
+      gramatica(12, 'As partes de um e-mail formal', 'PASSO 1: o assunto diz em poucas palavras do que trata o e-mail: «Asunto: Solicitud de información». Evite «Hola» ou deixar em branco. PASSO 2: a saudação. Com nome: «Estimado señor Ruiz:» ou «Estimada señora García:». Para vários destinatários: «Estimados señores:». Sem saber quem lerá: «A quien corresponda:». Depois da saudação, usa-se dois-pontos, ou vírgula em mensagens menos rígidas. PASSO 3: a abertura diz por que você escreve: «Le escribo para…», «Me dirijo a usted para…», «Me pongo en contacto con ustedes para…». PASSO 4: o corpo: um assunto por parágrafo, frases curtas, e «usted» do começo ao fim. PASSO 5: o fecho antes da despedida: «A la espera de su respuesta,», «Quedo a su disposición para cualquier duda.», «Le agradezco de antemano su atención.» PASSO 6: a despedida e a assinatura: «Atentamente,», «Un cordial saludo,», «Cordialmente,», seguida do seu nome. Entre amigos, ao contrário: «Un abrazo», «Hasta pronto», «Besos». PASSO 7: abreviaturas: «Sr.» (señor), «Sra.» (señora), «Srta.» (señorita, cada vez menos usada). Escreva com ponto. PASSO 8: para anexos use «adjunto»: «Adjunto el documento» ou «Le envío adjunto el documento».', {
+        tag: 'Registro formal',
+        comparacao: 'em português escrevemos «Prezado senhor», «Segue em anexo» e «Atenciosamente». O espanhol tem equivalentes diretos: «Estimado señor», «Adjunto» e «Atentamente». Cuidado com «Querido», que em espanhol é afetuoso, e com «Sigue adjunto», que é cópia do português. O natural é «Adjunto…».',
+        tabela: [
+          { parte: 'saudação', formal: 'Estimada señora Pérez:', informal: 'Hola, Marta,' },
+          { parte: 'abertura', formal: 'Le escribo para solicitar información.', informal: 'Te escribo para preguntarte una cosa.' },
+          { parte: 'anexo', formal: 'Adjunto le envío el documento.', informal: 'Te mando el documento.' },
+          { parte: 'fecho', formal: 'Quedo a su disposición.', informal: 'Cualquier cosa, dime.' },
+          { parte: 'despedida', formal: 'Atentamente, / Un cordial saludo,', informal: 'Un abrazo, / Hasta pronto,' },
+        ],
+        erros: [['Querido señor Ruiz:', 'Estimado señor Ruiz:', '«Querido» é afetuoso; num e-mail formal use «estimado».'], ['Te escribo para pedir información. (a uma empresa)', 'Le escribo para pedir información.', 'Com desconhecidos ou empresas, trate por «usted».'], ['Sigue adjunto el currículum.', 'Adjunto el currículum.', '«Segue em anexo» não se diz assim em espanhol; use «adjunto».'], ['Estimada señor García:', 'Estimado señor García:', '«Estimado» concorda com «señor» (masculino).']],
+      }),
+      producao(5, 'Escreva, em voz alta ou no papel, a saudação e a despedida de um e-mail formal para uma empresa e, logo depois, para um amigo. Anote as palavras que mudam.'),
+    ]),
+    sessao('S2', 'Pedir com cortesia', [
+      revisao(4, 'Diga as quatro partes principais de um e-mail formal em ordem (assunto, saudação, corpo, despedida) e uma frase de cada.'),
+      palavras(6, [
+        ['solicitar', 'solithitár', 'solicitar, pedir formalmente', ''], ['Le agradecería que…', 'le agradetherí-a ke', 'eu agradeceria se…', ''], ['Le ruego que…', 'le rruégo ke', 'peço-lhe que…', ''], ['Disculpe las molestias.', 'diskúlpe las molestias', 'desculpe o incômodo.', ''],
+        ['a la mayor brevedad', 'a la mayór brebedád', 'o mais breve possível', ''], ['de antemano', 'de antemáno', 'antecipadamente', ''],
+      ]),
+      gramatica(12, 'Pedir, agradecer e pedir desculpas no registro formal', 'PASSO 1: um pedido direto formal usa «quisiera» (aula 29) ou «querría»: «Quisiera solicitar información sobre el curso.» PASSO 2: o pedido mais polido usa «¿Podría…?» ou «¿Sería posible…?»: «¿Podría enviarme el presupuesto?», «¿Sería posible cambiar la fecha?» PASSO 3: uma estrutura muito comum em e-mails é «Le agradecería que + imperfecto de subjuntivo» (aula 46): «Le agradecería que me enviara la información.» Há também a forma em «-se»: «enviase». Ambas valem; use a que preferir, de forma consistente. PASSO 4: outra estrutura é «Le ruego que + presente de subjuntivo»: «Le ruego que me confirme la fecha.» Soa mais firme. PASSO 5: para dar uma má notícia: «Lamento informarle de que…» e para pedir desculpas: «Le pido disculpas por el retraso.», «Disculpe las molestias.» PASSO 6: para urgência sem ser ríspido: «a la mayor brevedad posible» ou «lo antes posible». PASSO 7: o equivalente a «antecipadamente» é «de antemano»: «Le agradezco de antemano su atención.»', {
+        tag: 'Registro formal',
+        comparacao: 'em português escrevemos «agradeceria se pudesse enviar». O espanhol usa «agradecería que + subjuntivo». A palavra «disculpa» existe (a desculpa), mas o mais usual para pedir desculpas é «pedir disculpas», no plural. E «informarle de que…» usa «de que» (informar de algo).',
+        tabela: [
+          { informal: '¿Me mandas el documento?', formal: '¿Podría enviarme el documento?' },
+          { informal: 'Necesito que me contestes.', formal: 'Le agradecería que me contestara.' },
+          { informal: 'Dime la fecha, por favor.', formal: 'Le ruego que me confirme la fecha.' },
+          { informal: 'Perdona el retraso.', formal: 'Le pido disculpas por el retraso.' },
+          { informal: 'Gracias por todo.', formal: 'Le agradezco de antemano su atención.' },
+          { informal: 'Siento decirte que no.', formal: 'Lamento informarle de que no es posible.' },
+        ],
+        erros: [['Le agradecería que me envía la información.', 'Le agradecería que me enviara la información.', 'Depois de «agradecería que» usa-se imperfecto de subjuntivo.'], ['Le ruego que me confirma la fecha.', 'Le ruego que me confirme la fecha.', 'Depois de «rogar que» vem presente de subjuntivo.'], ['Le pido desculpa por el retraso.', 'Le pido disculpas por el retraso.', 'Em espanhol a grafia é «disculpas», com «i» (e o mais usual é o plural).'], ['Quiero que me envíe… (a um diretor desconhecido)', 'Quisiera que me enviara… / Le agradecería que me enviara…', '«Quiero» soa seco no registro formal; prefira o condicional ou «agradecería».']],
+      }),
+      producao(8, 'Escreva três pedidos formais: um para uma empresa (informação), um para um professor (prazo) e um para um vizinho (barulho). Use «Quisiera», «¿Podría…?» e «Le agradecería que…».'),
+    ]),
+    sessao('S3', 'Reclamar, agradecer e responder', [
+      revisao(4, 'Transforme em formal: «¿Me mandas el informe? Gracias por todo. Un abrazo.»'),
+      palavras(5, [
+        ['En respuesta a su mensaje…', 'en rrespuésta a su mensáje', 'em resposta à sua mensagem…', ''], ['No he recibido…', 'no é rrethibído', 'não recebi…', ''], ['Les agradecería una solución.', 'les agradetherí-a úna solúthión', 'agradeceria uma solução.', ''], ['Gracias por su rápida respuesta.', 'grathias por su rrápida rrespuésta', 'obrigado pela rápida resposta.', ''],
+        ['Le confirmo que…', 'le konfírmo ke', 'confirmo-lhe que…', ''],
+      ]),
+      gramatica(8, 'E-mails de reclamação, de agradecimento e de resposta', 'PASSO 1: ao reclamar, comece por descrever o fato com calma: «Me pongo en contacto con ustedes porque todavía no he recibido el pedido que realicé el día 3.» O pretérito perfecto («no he recibido») serve para algo que ainda vale hoje. PASSO 2: depois diga o que espera: «Les agradecería una solución lo antes posible.» PASSO 3: ao agradecer: «Gracias por su rápida respuesta.», «Le agradezco su ayuda.» PASSO 4: ao responder a uma mensagem: «En respuesta a su mensaje del 12 de mayo, le confirmo que…». PASSO 5: mantenha o tom: reclamar com educação funciona melhor do que reclamar com raiva. Evite frases como «Esto es inaceptable» no primeiro contato. PASSO 6: «ustedes» (várias pessoas ou uma empresa) usa o verbo na 3ª pessoa do plural; «usted» (uma pessoa), na 3ª do singular. Na Espanha, «vosotros» não se usa em e-mail formal.', {
+        tag: 'Registro formal',
+        comparacao: 'em português escreveríamos «gostaria de reclamar» e «agradeço desde já». O espanhol faz igual, com «quisiera reclamar» e «le agradezco de antemano». O ponto novo é o uso de «ustedes» para empresas: «Les escribo…» (e não «Le escribo…», que se refere a uma só pessoa).',
+        tabela: [
+          { objetivo: 'reclamar', frase: 'Todavía no he recibido el pedido.' },
+          { objetivo: 'pedir solução', frase: 'Les agradecería una solución lo antes posible.' },
+          { objetivo: 'agradecer', frase: 'Gracias por su rápida respuesta.' },
+          { objetivo: 'responder', frase: 'En respuesta a su mensaje, le confirmo que…' },
+        ],
+        erros: [['Les escribo para solicitar… (a uma só pessoa)', 'Le escribo para solicitar…', '«Le» é para uma pessoa; «les», para várias ou para uma empresa.'], ['No recibí todavía el pedido.', 'No he recibido todavía el pedido.', 'Para algo que ainda vale hoje, o perfecto é mais natural na Espanha.'], ['Esto es inaceptable. Quiero mi dinero.', 'Les agradecería que me devolvieran el importe.', 'Mesmo na reclamação, mantenha o tom formal e cortês.']],
+      }),
+      dialogo(4, 'Antes de enviar / Antes de enviar', 'Laura pede a Sergio que revise um e-mail para a diretora.', [
+        ['Laura', 'Sergio, ¿puedes mirar este correo antes de enviarlo? Es para la directora.', 'Sergio, você pode olhar este e-mail antes de enviar? É para a diretora.'],
+        ['Sergio', 'Claro. ¿Cómo empieza?', 'Claro. Como começa?'],
+        ['Laura', 'Pone: «Hola, Carmen. Te mando el informe».', 'Diz: «Oi, Carmen. Estou te mandando o relatório».'],
+        ['Sergio', 'Mejor no. Con la directora, es mejor que uses «Estimada señora Ruiz:» y «Le envío el informe adjunto».', 'Melhor não. Com a diretora, é melhor que você use «Estimada señora Ruiz:» e «Le envío el informe adjunto».'],
+        ['Laura', 'Tienes razón. ¿Y al final? Había puesto «Un besito».', 'Você tem razão. E no final? Eu tinha colocado «Um beijinho».'],
+        ['Sergio', 'Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».', 'Isso também não. Coloque «Fico à disposição. Cordiais saudações».'],
+        ['Laura', 'Mucho mejor. Gracias.', 'Muito melhor. Obrigada.'],
+        ['Sergio', 'De nada. Y revisa el asunto: tiene que decir qué contiene el correo.', 'De nada. E revise o assunto: tem que dizer o que o e-mail contém.'],
+      ]),
+      texto(4, 'Un correo formal / Um e-mail formal', 'Asunto: Información sobre el curso de fotografía\n\nEstimados señores:\n\nLes escribo para pedir información sobre el curso de fotografía que anuncian en su página web. Quisiera saber si todavía quedan plazas para el mes de octubre y cuál es el precio de la matrícula. Además, les agradecería que me indicaran si es necesario llevar cámara propia o si el centro presta el material.\n\nLes agradezco de antemano su atención y quedo a la espera de su respuesta.\n\nAtentamente,\nDaniela Ortega', 'Assunto: Informações sobre o curso de fotografia\n\nPrezados senhores:\n\nEscrevo para pedir informações sobre o curso de fotografia que vocês anunciam em seu site. Gostaria de saber se ainda há vagas para o mês de outubro e qual é o valor da matrícula. Além disso, agradeceria se me indicassem se é necessário levar câmera própria ou se o centro empresta o material.\n\nAgradeço desde já a atenção e fico aguardando a resposta.\n\nAtenciosamente,\nDaniela Ortega', [
+        ['¿Para qué escribe Daniela?', 'Para pedir información sobre un curso de fotografía.'], ['¿Qué quiere saber?', 'Si quedan plazas para octubre, el precio de la matrícula y si hay que llevar cámara propia.'], ['¿Cómo se despide?', 'Con «Atentamente,» y su nombre.'],
+      ]),
+      producao(5, 'Escreva em voz alta, frase por frase, a abertura de um e-mail de reclamação para uma loja online. Comece com «Me pongo en contacto con ustedes porque…».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 54', [
+      revisao(5, 'Escreva de memória uma saudação, uma abertura e uma despedida formais. Depois reescreva a abertura em tom informal.'),
+      exercicios(20, [
+        ouvir('Estimada señora García', ['Estimada señora García', 'Estimado señor García', 'Querida señora García'], 'Estimada señora García', 'Ouça o feminino «estimada» e «señora».'),
+        ouvir('Le agradecería que me enviara la información', ['Le agradecería que me enviara la información', 'Le agradecería que me envía la información', 'Le agradeceré que me envíe la información'], 'Le agradecería que me enviara la información', 'Agradecería que + imperfecto de subjuntivo.'),
+        ouvir('Quedo a su disposición', ['Quedo a su disposición', 'Quedo a tu disposición', 'Quedamos a su disposición'], 'Quedo a su disposición', 'Fecho formal, com «su» e verbo na primeira pessoa do singular.'),
+        ditado('Le escribo para pedir información', 'Escreva: Le escribo para pedir información.'),
+        ditado('Adjunto el currículum', 'Escreva: Adjunto el currículum. (com acento em «currículum»)'),
+        ditado('Un cordial saludo', 'Escreva: Un cordial saludo. (despedida formal)'),
+        mc('Qual saudação é adequada para uma carta formal a um homem?', ['Estimado señor Ruiz:', 'Querido señor Ruiz:', 'Hola, Ruiz,'], 'Estimado señor Ruiz:', '«Estimado» é o formal; «querido» é afetuoso.'),
+        mc('Qual despedida é formal?', ['Atentamente,', 'Besos,', 'Hasta luego,'], 'Atentamente,', 'As outras duas são informais.'),
+        mc('Como dizer «segue em anexo o documento» de forma natural?', ['Adjunto el documento.', 'Sigue adjunto el documento.', 'Sigue anexo el documento.'], 'Adjunto el documento.', '«Sigue adjunto» é cópia do português.'),
+        mc('Como pedir desculpas pelo atraso, de forma formal?', ['Le pido disculpas por el retraso.', 'Le pido desculpa por el retraso.', 'Perdona el retraso.'], 'Le pido disculpas por el retraso.', '«Disculpas» no plural, com «i».'),
+        mc('Para escrever a uma empresa (várias pessoas), qual abertura é adequada?', ['Les escribo para solicitar información.', 'Te escribo para solicitar información.', 'Os escribo para solicitar información.'], 'Les escribo para solicitar información.', '«Les» para vários destinatários, no registro formal.'),
+        lacuna('Le ruego que me ___ la fecha. (confirmar)', ['confirme', 'confirma', 'confirmara'], 'confirme', 'Rogar que + presente de subjuntivo.'),
+        lacuna('Le agradecería que me ___ la información. (enviar)', ['enviara', 'envía', 'enviaría'], 'enviara', 'Agradecería que + imperfecto de subjuntivo.'),
+        lacuna('___ informarle de que el curso está completo. (Lamento)', ['Lamento', 'Lamentar', 'Lamentado'], 'Lamento', '«Lamento informarle» é a fórmula de má notícia.'),
+        lacuna('A la ___ de su respuesta, reciba un cordial saludo. (espera)', ['espera', 'esperanza', 'esperar'], 'espera', '«A la espera de su respuesta» é fórmula fixa.'),
+        lacuna('Le agradezco ___ su atención. (antecipadamente)', ['de antemano', 'en adelante', 'de adelanto'], 'de antemano', '«De antemano» é a expressão natural no e-mail.'),
+        ordem('Ordene: «Quedo a su disposición para cualquier duda.»', ['Quedo', 'a', 'su', 'disposición', 'para', 'cualquier', 'duda.'], 'Quedo a su disposición para cualquier duda.', 'Fórmula de fecho.'),
+        ordem('Ordene: «Les escribo para solicitar información sobre el curso.»', ['Les', 'escribo', 'para', 'solicitar', 'información', 'sobre', 'el', 'curso.'], 'Les escribo para solicitar información sobre el curso.', 'Abertura típica de e-mail formal.'),
+        livre('Escreva em espanhol (formal): Gostaria de saber se ainda há vagas. Agradeço desde já.', 'Quisiera saber si todavía quedan plazas. Le agradezco de antemano su atención.'),
+      ]),
+      producao(5, 'Escreva um e-mail formal completo de cinco linhas pedindo informação sobre um aluguel de apartamento: assunto, saudação, pedido, fecho e despedida.'),
+    ]),
+  ],
+});

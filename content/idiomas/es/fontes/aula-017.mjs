@@ -1,0 +1,113 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 17, titulo: 'Pretérito perfecto: contar o que você fez hoje', nivel: 'a1',
+  objetivo: 'Formar o pretérito perfecto com haber + particípio (regular e irregular), usá-lo com hoy, esta mañana, esta semana, ya, todavía no, alguna vez e nunca, e perceber que ele não equivale ao «tenho comido» do português.',
+  nota: 'Você já conta o que fez hoje e o que já fez na vida. Próxima aula: o simulado do A1, com leitura, escuta, escrita e fala sobre tudo o que viu até aqui.',
+  sessoes: [
+    sessao('S1', 'Haber + particípio', [
+      revisao(5, 'Diga cinco frases sobre os seus gostos com «me gusta» e «me gustan». Depois pergunte a um amigo se ele gosta do mesmo, com «¿Y a ti?».'),
+      palavras(8, [
+        ['ya', 'iá', 'já', ''], ['todavía no', 'todabía no', 'ainda não', ''], ['hoy', 'oi', 'hoje', ''], ['esta mañana', 'ésta manhána', 'esta manhã', ''],
+        ['esta semana', 'ésta semána', 'esta semana', ''], ['este año', 'éste ánho', 'este ano', ''], ['alguna vez', 'algúna beth', 'alguma vez, já (na vida)', ''], ['nunca', 'núnka', 'nunca', ''],
+      ]),
+      gramatica(12, 'O pretérito perfecto com haber', 'PASSO 1: o «pretérito perfecto» fala de algo que já aconteceu, mas num período que ainda não acabou: hoje, esta semana, este mês, este ano; ou algo que importa agora: «Ya he comido». PASSO 2: monte-o em duas partes: o verbo «haber» no presente + o particípio. As formas de «haber» são: he, has, ha, hemos, habéis, han. PASSO 3: o particípio dos verbos em -ar termina em «-ado»: hablar → hablado, trabajar → trabajado. Os verbos em -er e -ir terminam em «-ido»: comer → comido, vivir → vivido. PASSO 4: o particípio nunca muda: não tem gênero nem número. Diga «Ella ha comido» e «Ellas han comido»; muda só o «haber». PASSO 5: nada se põe entre «haber» e o particípio. A negação e os pronomes ficam antes: «No he comido», «Me he levantado», «Ya me he duchado». O advérbio «ya» fica antes de «he» ou depois do particípio: «Ya he comido» ou «He comido ya», nunca «He ya comido». PASSO 6: os marcadores mais comuns são: «hoy, esta mañana, esta tarde, esta semana, este mes, este año, ya, todavía no, alguna vez, nunca, siempre». PASSO 7: o cuidado mais importante: o «tenho comido» do português indica repetição, uma ação que vem se repetindo. O «he comido» do espanhol conta uma ação concluída: significa «comi (hoje)» ou «já comi». Não use «tener» no lugar de «haber» para formar este tempo: «tengo comido» não é o pretérito perfecto. PASSO 8: na Espanha o pretérito perfecto é usado para o que aconteceu hoje; em boa parte da América Latina se prefere o pretérito indefinido (que você verá no A2) mesmo para hoje: «Hoy comí».', {
+        tag: 'Pretérito perfecto',
+        comparacao: 'o «pretérito perfeito composto» do português («tenho comido») tem outro valor: repetição de uma ação no período recente. O espanhol «he comido» equivale a «comi» ou «já comi». Portanto «Hoy he comido pizza» é «Hoje comi pizza», e não «hoje tenho comido pizza».',
+        tabelas: [
+          { titulo: 'haber (presente) + particípio', linhas: [
+            { pronome: 'yo', haber: 'he', hablar: 'he hablado', comer: 'he comido', vivir: 'he vivido' },
+            { pronome: 'tú', haber: 'has', hablar: 'has hablado', comer: 'has comido', vivir: 'has vivido' },
+            { pronome: 'él / ella / usted', haber: 'ha', hablar: 'ha hablado', comer: 'ha comido', vivir: 'ha vivido' },
+            { pronome: 'nosotros', haber: 'hemos', hablar: 'hemos hablado', comer: 'hemos comido', vivir: 'hemos vivido' },
+            { pronome: 'vosotros', haber: 'habéis', hablar: 'habéis hablado', comer: 'habéis comido', vivir: 'habéis vivido' },
+            { pronome: 'ellos, ustedes', haber: 'han', hablar: 'han hablado', comer: 'han comido', vivir: 'han vivido' },
+          ] },
+        ],
+        exemplos: [['Hoy he trabajado mucho.', 'Hoje trabalhei muito.'], ['Esta semana hemos estudiado cinco horas.', 'Esta semana estudamos cinco horas.'], ['Ya he comido, gracias.', 'Já comi, obrigado.'], ['Todavía no he hablado con Ana.', 'Ainda não falei com a Ana.'], ['Me he levantado muy pronto.', 'Levantei-me muito cedo.']],
+        erros: [['Tengo comido.', 'He comido.', 'O auxiliar é «haber»; «tener» não forma o tempo composto.'], ['Ella han hablado.', 'Ella ha hablado.', 'O auxiliar concorda com o sujeito: «ella ha».'], ['Hemos comidos.', 'Hemos comido.', 'O particípio não muda.'], ['He me levantado.', 'Me he levantado.', 'O pronome vem antes de «haber».'], ['He ya comido.', 'Ya he comido.', 'Nada fica entre «haber» e o particípio.']],
+      }),
+      producao(5, 'Diga em voz alta o que você fez hoje até agora, em cinco frases: «Hoy me he levantado… He desayunado… He trabajado…» Termine com o que ainda não fez: «Todavía no he…»'),
+    ]),
+    sessao('S2', 'Particípios irregulares', [
+      revisao(4, 'Conjugue «haber» de memória. Diga três frases com particípios regulares: um em -ado, um em -ido e um de verbo reflexivo.'),
+      palavras(6, [
+        ['hecho', 'étcho', 'feito (de hacer)', ''], ['dicho', 'dítcho', 'dito (de decir)', ''], ['visto', 'bísto', 'visto (de ver)', ''], ['puesto', 'puésto', 'posto (de poner)', ''], ['escrito', 'eskríto', 'escrito (de escribir)', ''], ['abierto', 'abiérto', 'aberto (de abrir)', ''],
+      ]),
+      gramatica(12, 'Os particípios que fogem da regra', 'PASSO 1: alguns verbos muito usados têm particípio irregular. Eles são poucos e você já conhece a maioria deles pelo infinitivo. PASSO 2: aprenda estes primeiro: hacer → hecho, decir → dicho, ver → visto, poner → puesto, escribir → escrito, abrir → abierto, volver → vuelto, romper → roto. PASSO 3: os compostos seguem o verbo-base: «deshacer» → deshecho; «describir» → descrito; «devolver» → devuelto. PASSO 4: os verbos irregulares do presente costumam ter particípio regular: ir → ido, ser → sido, estar → estado, tener → tenido, dar → dado, saber → sabido, querer → querido, poder → podido, salir → salido, venir → venido. PASSO 5: os verbos em -er e -ir cuja raiz termina em vogal levam acento no «í» do particípio: leer → leído, creer → creído, oír → oído, traer → traído, caer → caído. PASSO 6: o particípio irregular se usa do mesmo modo: «Hoy he hecho la compra», «Hemos visto una película», «Han escrito un correo». PASSO 7: para treinar, responda à pergunta «¿Qué has hecho hoy?» sempre com «he + particípio». PASSO 8: nas frases negativas com «todavía no», o particípio fica igual: «Todavía no he visto la película».', {
+        tag: 'Pretérito perfecto',
+        comparacao: 'o português também tem particípios irregulares, e muitos coincidem: feito/hecho, dito/dicho, visto/visto, posto/puesto, escrito/escrito, aberto/abierto. A maior armadilha é inventar uma forma regular («he hacido», «he escribido») por analogia com o português regular.',
+        tabelas: [
+          { titulo: 'Particípios irregulares mais usados', linhas: [
+            { infinitivo: 'hacer', participio: 'hecho', exemplo: 'He hecho la cena.' }, { infinitivo: 'decir', participio: 'dicho', exemplo: 'Ha dicho la verdad.' }, { infinitivo: 'ver', participio: 'visto', exemplo: 'Hemos visto una serie.' },
+            { infinitivo: 'poner', participio: 'puesto', exemplo: 'He puesto la mesa.' }, { infinitivo: 'escribir', participio: 'escrito', exemplo: 'Has escrito un correo.' }, { infinitivo: 'abrir', participio: 'abierto', exemplo: 'Han abierto la tienda.' },
+            { infinitivo: 'volver', participio: 'vuelto', exemplo: 'Ha vuelto tarde.' }, { infinitivo: 'romper', participio: 'roto', exemplo: 'He roto un vaso.' },
+          ] },
+          { titulo: 'Particípios regulares de verbos irregulares', linhas: [
+            { infinitivo: 'ir', participio: 'ido', exemplo: 'He ido al mercado.' }, { infinitivo: 'ser', participio: 'sido', exemplo: 'Ha sido un buen día.' }, { infinitivo: 'estar', participio: 'estado', exemplo: 'Hemos estado en casa.' },
+            { infinitivo: 'tener', participio: 'tenido', exemplo: 'He tenido mucho trabajo.' }, { infinitivo: 'leer', participio: 'leído (com acento)', exemplo: 'He leído un libro.' }, { infinitivo: 'salir', participio: 'salido', exemplo: 'Han salido de casa.' },
+          ] },
+        ],
+        erros: [['He hacido la compra.', 'He hecho la compra.', '«Hacer» tem particípio irregular: «hecho».'], ['Has escribido un correo.', 'Has escrito un correo.', '«Escribir» tem particípio irregular: «escrito».'], ['Hemos abrido la puerta.', 'Hemos abierto la puerta.', '«Abrir» tem particípio irregular: «abierto».'], ['He vido la película.', 'He visto la película.', '«Ver» tem particípio irregular: «visto».'], ['He leido el libro.', 'He leído el libro.', 'O particípio de «leer» leva acento no «í».']],
+      }),
+      producao(8, 'Diga o que você fez hoje, esta semana e este mês, com seis verbos de particípio irregular: «He hecho… He visto… He escrito… He puesto… He abierto… He dicho…»'),
+    ]),
+    sessao('S3', 'Alguna vez, nunca e todavía no', [
+      revisao(4, 'Diga o particípio de dez verbos, em voz alta: hacer, decir, ver, poner, escribir, abrir, volver, ir, leer, ser.'),
+      palavras(5, [
+        ['una vez', 'úna beth', 'uma vez', ''], ['muchas veces', 'mútchas bétheses', 'muitas vezes', ''], ['asistir a', 'asistír a', 'estar presente em, ir a (aula, reunião)', ''], ['perder', 'perdér', 'perder', ''], ['la sierra', 'la siérra', 'a serra', ''],
+      ]),
+      gramatica(8, 'Perguntar e responder sobre experiências', 'PASSO 1: para perguntar sobre uma experiência na vida, use «alguna vez»: «¿Has estado alguna vez en Madrid?» PASSO 2: respostas possíveis: «Sí, he estado una vez / dos veces / muchas veces» e «No, nunca he estado» ou «No he estado nunca». PASSO 3: para perguntar se algo já aconteceu: «¿Has comido ya?» Respostas: «Sí, ya he comido» ou «Todavía no he comido». PASSO 4: para perguntar sobre hoje: «¿Qué has hecho hoy?» Respostas com «he + particípio». PASSO 5: com «usted»: «¿Ha estado alguna vez en Brasil?»; com «vosotros» (Espanha): «¿Habéis estado alguna vez en Brasil?». PASSO 6: falso amigo: «asistir a» é estar presente num evento (aula, concerto, reunião), e não «assistir a um filme»: um filme se «ve». PASSO 7: «perder» é perder (algo, o trem, a chave) e vem do mesmo padrão: «He perdido el tren». Cuidado: «perder» muda e → ie no presente (pierdo).', {
+        tag: 'Pretérito perfecto',
+        comparacao: 'o português «já fui a Madri» corresponde a «he estado en Madrid» ou «he ido a Madrid». A forma «alguna vez» (alguma vez) é a que o espanhol usa para perguntar sobre experiências, enquanto no português dizemos só «você já foi?». O falso amigo «asistir» pode levar o brasileiro a dizer «asistí una película», que soa errado.',
+        tabela: [
+          { situacao: 'experiência na vida', pergunta: '¿Has estado alguna vez en Brasil?', resposta: 'Sí, he estado dos veces. / No, nunca he estado.' },
+          { situacao: 'já ou ainda não', pergunta: '¿Has comido ya?', resposta: 'Sí, ya he comido. / Todavía no.' },
+          { situacao: 'o dia de hoje', pergunta: '¿Qué has hecho hoy?', resposta: 'He trabajado y he ido al mercado.' },
+          { situacao: 'com usted', pergunta: '¿Ha estado alguna vez en Brasil?', resposta: 'Sí, he estado una vez.' },
+          { situacao: 'com vosotros (Espanha)', pergunta: '¿Habéis estado alguna vez en Brasil?', resposta: 'No, nunca hemos estado.' },
+          { situacao: 'assistir a um filme', pergunta: '¿Has visto esta película?', resposta: 'No, todavía no he visto esta película.' },
+        ],
+        erros: [['He asistido una película.', 'He visto una película.', 'Filmes se «veem»; «asistir a» é estar presente num evento.'], ['¿Has estado alguna vez a Brasil?', '¿Has estado alguna vez en Brasil?', 'Com «estar», o lugar pede «en».'], ['Nunca no he estado en Madrid.', 'Nunca he estado en Madrid.', 'Com «nunca» antes do verbo, não se usa «no»; depois do verbo, sim: «No he estado nunca en Madrid».'], ['Todavía no he comida.', 'Todavía no he comido.', 'O particípio não concorda com o objeto.']],
+      }),
+      dialogo(8, 'Un día largo / Um dia longo', 'Marcos e Elena conversam sobre o que fizeram hoje.', [
+        ['Marcos', 'Hola, Elena. ¿Qué has hecho hoy?', 'Oi, Elena. O que você fez hoje?'],
+        ['Elena', 'Esta mañana he trabajado en casa y he escrito varios correos. ¿Y tú?', 'Esta manhã trabalhei em casa e escrevi vários e-mails. E você?'],
+        ['Marcos', 'Yo he ido al mercado y he comprado fruta. He visto a Carmen allí.', 'Eu fui ao mercado e comprei frutas. Vi a Carmen lá.'],
+        ['Elena', '¿Has comido ya?', 'Você já comeu?'],
+        ['Marcos', 'Todavía no. He preparado la comida, pero no he comido. ¿Y tú?', 'Ainda não. Preparei a comida, mas não comi. E você?'],
+        ['Elena', 'Yo sí. ¿Has estado alguna vez en la sierra?', 'Eu sim. Você já esteve na serra?'],
+        ['Marcos', 'Sí, he estado dos veces. Me encanta. ¿Y tú?', 'Sim, estive duas vezes. Adoro. E você?'],
+        ['Elena', 'Yo nunca he estado. ¿Vamos este fin de semana?', 'Eu nunca estive. Vamos neste fim de semana?'],
+        ['Marcos', 'Vale, de acuerdo.', 'Combinado, de acordo.'],
+      ]),
+      producao(5, 'Responda em voz alta a cinco perguntas: «¿Qué has hecho hoy? ¿Has comido ya? ¿Has estado alguna vez en España? ¿Has visto alguna serie esta semana? ¿Qué no has hecho todavía?»'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 17', [
+      revisao(5, 'Conte em voz alta o que você fez hoje e o que ainda não fez, com pelo menos dois particípios irregulares. Depois pergunte a um amigo se ele já fez o mesmo.'),
+      exercicios(20, [
+        ouvir('He comido en casa', ['He comido en casa', 'Ha comido en casa', 'Hemos comido en casa'], 'He comido en casa', 'Ouça o «he» do começo: primeira pessoa.'),
+        ouvir('Todavía no he visto la película', ['Todavía no he visto la película', 'Todavía no he hecho la película', 'Ya he visto la película'], 'Todavía no he visto la película', 'Ouça «todavía no» e o particípio «visto».'),
+        ouvir('¿Has estado alguna vez en España?', ['¿Has estado alguna vez en España?', '¿Ha estado alguna vez en España?', '¿Habéis estado alguna vez en España?'], '¿Has estado alguna vez en España?', 'Ouça «has» e a pergunta com «alguna vez».'),
+        ditado('Hoy he trabajado mucho', 'Escreva: Hoy he trabajado mucho.'),
+        ditado('Hemos escrito un correo', 'Escreva: Hemos escrito un correo. O particípio de «escribir» é «escrito».'),
+        ditado('Nunca he estado en Madrid', 'Escreva: Nunca he estado en Madrid.'),
+        mc('Qual é a forma de «yo» do pretérito perfecto de «hablar»?', ['he hablado', 'tengo hablado', 'ha hablado'], 'he hablado', 'Haber (he) + particípio (hablado).'),
+        mc('Qual é o particípio de «hacer»?', ['hecho', 'hacido', 'haciendo'], 'hecho', 'Particípio irregular: «hecho».'),
+        mc('Qual é o particípio de «escribir»?', ['escrito', 'escribido', 'escribiendo'], 'escrito', 'Particípio irregular: «escrito».'),
+        mc('Qual é o particípio de «leer»?', ['leído', 'leido', 'lecho'], 'leído', 'Leva acento no «í».'),
+        mc('Qual frase está correta?', ['Ya he comido.', 'He ya comido.', 'Tengo comido.'], 'Ya he comido.', '«Ya» fica antes de «he»; «tengo comido» não é o tempo composto.'),
+        mc('Como se diz «Assisti a um filme»?', ['He visto una película.', 'He asistido una película.', 'He mirado a una película.'], 'He visto una película.', 'Filme se «vê»; «asistir a» é estar presente num evento.'),
+        lacuna('Hoy ___ trabajado mucho. (yo)', ['he', 'ha', 'hemos'], 'he', 'Com «yo», a forma de «haber» é «he».'),
+        lacuna('Ella ___ vuelto tarde. (haber)', ['ha', 'han', 'has'], 'ha', 'Com «ella», a forma é «ha».'),
+        lacuna('Nosotros ___ visto una serie. (haber)', ['hemos', 'habéis', 'han'], 'hemos', 'Com «nosotros», a forma é «hemos».'),
+        lacuna('Todavía no he ___ la película. (ver)', ['visto', 'visado', 'ver'], 'visto', 'Particípio irregular: «visto».'),
+        lacuna('¿Has estado ___ vez en Madrid?', ['alguna', 'algún', 'nada'], 'alguna', '«Alguna vez» é a expressão fixa.'),
+        ordem('Ordene: «Hoy me he levantado muy pronto.»', ['Hoy', 'me', 'he', 'levantado', 'muy', 'pronto.'], 'Hoy me he levantado muy pronto.', 'O pronome vem antes de «he».'),
+        ordem('Ordene: «¿Qué has hecho esta mañana?»', ['¿Qué', 'has', 'hecho', 'esta', 'mañana?'], '¿Qué has hecho esta mañana?', 'O interrogativo abre a pergunta.'),
+        livre('Escreva em espanhol: Hoje trabalhei e fui ao mercado, mas ainda não comi.', 'Hoy he trabajado y he ido al mercado, pero todavía no he comido.'),
+      ]),
+      producao(5, 'Conte em voz alta o seu dia de hoje, do despertar até agora, em seis frases com o pretérito perfecto e dois marcadores como «ya» e «todavía no».'),
+    ]),
+  ],
+});

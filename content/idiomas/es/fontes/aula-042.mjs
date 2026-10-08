@@ -1,0 +1,117 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 42, titulo: 'Subjuntivo presente (formas)', nivel: 'b1',
+  objetivo: 'Formar o presente de subjuntivo dos verbos regulares, dos irregulares a partir da primeira pessoa («tenga», «haga», «diga»), dos verbos com mudança de radical e dos seis verbos com forma própria («sea», «esté», «vaya», «haya», «sepa», «dé»), com as mudanças de ortografia (busque, llegue, empiece).',
+  nota: 'Você já sabe formar o presente de subjuntivo: «hable», «coma», «tenga», «vaya». Os usos começam na próxima aula, com desejo, dúvida e emoção.',
+  sessoes: [
+    sessao('S1', 'A vogal trocada: formas regulares', [
+      revisao(5, 'Diga em voz alta a primeira pessoa do presente de hablar, comer, vivir, tener, hacer, decir e salir («hablo, como, vivo, tengo…»). Essas formas são a base desta aula.'),
+      palavras(8, [
+        ['quiero que', '', 'quero que', ''], ['espero que', '', 'espero que', ''], ['necesito que', '', 'preciso que', ''], ['prefiero que', '', 'prefiro que', ''],
+        ['es importante que', '', 'é importante que', ''], ['te recomiendo que', '', 'recomendo a você que', ''], ['ojalá', '', 'tomara', ''], ['no te preocupes', '', 'não se preocupe (tú)', ''],
+      ]),
+      gramatica(12, 'A receita do subjuntivo: tire o «-o» e troque a vogal', 'PASSO 1: o subjuntivo é um conjunto de formas do verbo que o espanhol usa depois de certas expressões, como «quiero que» ou «es importante que». Nesta aula você só aprende a FORMAR essas formas; os usos chegam nas aulas 43 e 44. PASSO 2: primeiro, pegue a forma de «yo» do presente do verbo: «hablo», «como», «vivo». PASSO 3: tire o «-o» final: «habl-», «com-», «viv-». PASSO 4: acrescente a vogal TROCADA. Os verbos em -ar passam a usar «e»: hable, hables, hable, hablemos, habléis, hablen. Os verbos em -er e em -ir passam a usar «a»: coma, comas, coma, comamos, comáis, coman; viva, vivas, viva, vivamos, viváis, vivan. PASSO 5: para lembrar, pense assim: no presente, -ar é o verbo da vogal «a», então no subjuntivo ele muda para «e»; -er e -ir são verbos da vogal «e» ou «i», então mudam para «a». PASSO 6: a forma de «yo» é igual à de «él, ella, usted»: «que yo hable» e «que él hable». Quando houver risco de confusão, use o pronome. PASSO 7: só a forma de «vosotros» leva acento: «habléis, comáis, viváis». Na América Latina, usa-se «ustedes» no lugar: «hablen, coman, vivan». PASSO 8: você já usou essas formas ao dar ordens: o imperativo de «usted» e o imperativo negativo de «tú» são subjuntivo: «Hable más despacio», «No hables tan rápido», «Coma algo».', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português faz a mesma troca de vogal: «falo → fale» (a vira e), «como → coma» (o vira a), «vivo → viva». Se você entende «que eu fale», «que eu coma», «que eu viva», já sabe o método. A diferença é que o espanhol tem seis formas, uma para cada pessoa, e os dois idiomas têm irregularidades diferentes. O português «que tu fales» corresponde ao espanhol «que tú hables».',
+        tabela: [
+          { pessoa: 'yo', 'hablar': 'hable', 'comer': 'coma', 'vivir': 'viva' },
+          { pessoa: 'tú', 'hablar': 'hables', 'comer': 'comas', 'vivir': 'vivas' },
+          { pessoa: 'él, ella, usted', 'hablar': 'hable', 'comer': 'coma', 'vivir': 'viva' },
+          { pessoa: 'nosotros, nosotras', 'hablar': 'hablemos', 'comer': 'comamos', 'vivir': 'vivamos' },
+          { pessoa: 'vosotros, vosotras', 'hablar': 'habléis', 'comer': 'comáis', 'vivir': 'viváis' },
+          { pessoa: 'ellos, ellas, ustedes', 'hablar': 'hablen', 'comer': 'coman', 'vivir': 'vivan' },
+        ],
+        erros: [['que tú habla', 'que tú hables', 'Em -ar, a terminação de «tú» no subjuntivo é «-es».'], ['que nosotros comemos', 'que nosotros comamos', 'Em -er, o subjuntivo usa «-a»: «comamos».'], ['que ellos hablan', 'que ellos hablen', 'Em -ar, o subjuntivo usa «e»: «hablen».'], ['que vosotros habláis', 'que vosotros habléis', 'Em -ar, troque o «a» por «e» também em «vosotros».'], ['que yo vivo', 'que yo viva', 'Depois de «que» no subjuntivo, «yo» usa «viva», não «vivo».']],
+      }),
+      producao(5, 'Diga em voz alta as seis formas do subjuntivo de «cantar» e de «beber» («cante, cantes, cante…», «beba, bebas, beba…»). Depois diga: «Hable más despacio, por favor» e «No hables tan rápido».'),
+    ]),
+    sessao('S2', 'Irregulares: yo, radicais e os seis rebeldes', [
+      revisao(4, 'Diga em voz alta o subjuntivo de hablar, comer e vivir para «yo», «nosotros» e «ellos». Corrija-se olhando a tabela.'),
+      palavras(6, [
+        ['que yo tenga', '', 'que eu tenha', ''], ['que tú hagas', '', 'que você faça', ''], ['que él diga', '', 'que ele diga', ''], ['que nosotros vayamos', '', 'que nós vamos', ''], ['que ellos sepan', '', 'que eles saibam', ''], ['que usted esté', '', 'que o senhor esteja', ''],
+      ]),
+      gramatica(12, 'Irregulares: a regra do «yo» e os seis rebeldes', 'PASSO 1: a regra do «yo» funciona para a maior parte dos verbos irregulares. Se a primeira pessoa do presente é irregular, o subjuntivo herda a irregularidade em todas as pessoas: tengo → tenga, tengas, tenga, tengamos, tengáis, tengan; hago → haga; digo → diga; vengo → venga; pongo → ponga; salgo → salga; traigo → traiga; oigo → oiga; veo → vea; conozco → conozca; conduzco → conduzca; caigo → caiga. PASSO 2: verbos com mudança no radical (e → ie, o → ue) mudam em «yo, tú, él, ellos», mas NÃO em «nosotros» nem «vosotros»: pensar → piense, pienses, piense, pensemos, penséis, piensen; poder → pueda, puedas, pueda, podamos, podáis, puedan; querer → quiera, quieras, quiera, queramos, queráis, quieran. PASSO 3: os verbos em -ir com mudança de radical mudam também em «nosotros» e «vosotros»: dormir → duerma, duermas, duerma, durmamos, durmáis, duerman; sentir → sienta, sientas, sienta, sintamos, sintáis, sientan; pedir → pida, pidas, pida, pidamos, pidáis, pidan. PASSO 4: seis verbos têm forma própria e merecem memorização: ser → sea; estar → esté; ir → vaya; haber → haya; saber → sepa; dar → dé. PASSO 5: «esté» leva acento em todas as pessoas menos «estemos»: esté, estés, esté, estemos, estéis, estén. «Dé» leva acento só nas formas de «yo» e «él»: dé, des, dé, demos, deis, den. PASSO 6: os verbos em -uir levam «y» antes da vogal: construir → construya, construyas…; já «leer» é regular: lea, leas… PASSO 7: dica prática: ao ver um verbo novo, pergunte-se primeiro «como é a forma de yo?».', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português tem as mesmas irregularidades, baseadas na primeira pessoa: «tenho → tenha», «faço → faça», «digo → diga», «venho → venha», «ponho → ponha», «saio → saia». Os verbos mais rebeldes também são parentes: «seja, esteja, vá, haja, saiba, dê» ↔ «sea, esté, vaya, haya, sepa, dé». Quase tudo é parecido, mas em espanhol «nosotros» e «vosotros» seguem regras próprias de radical.',
+        tabelas: [
+          { titulo: 'Os seis verbos com forma própria', linhas: [
+            { pessoa: 'yo', ser: 'sea', estar: 'esté', ir: 'vaya', haber: 'haya', saber: 'sepa', dar: 'dé' },
+            { pessoa: 'tú', ser: 'seas', estar: 'estés', ir: 'vayas', haber: 'hayas', saber: 'sepas', dar: 'des' },
+            { pessoa: 'él, ella, usted', ser: 'sea', estar: 'esté', ir: 'vaya', haber: 'haya', saber: 'sepa', dar: 'dé' },
+            { pessoa: 'nosotros', ser: 'seamos', estar: 'estemos', ir: 'vayamos', haber: 'hayamos', saber: 'sepamos', dar: 'demos' },
+            { pessoa: 'vosotros', ser: 'seáis', estar: 'estéis', ir: 'vayáis', haber: 'hayáis', saber: 'sepáis', dar: 'deis' },
+            { pessoa: 'ellos, ellas, ustedes', ser: 'sean', estar: 'estén', ir: 'vayan', haber: 'hayan', saber: 'sepan', dar: 'den' },
+          ] },
+          { titulo: 'A regra do «yo»', linhas: [
+            { infinitivo: 'tener', yo: 'tengo', subjuntivo: 'tenga' }, { infinitivo: 'hacer', yo: 'hago', subjuntivo: 'haga' }, { infinitivo: 'decir', yo: 'digo', subjuntivo: 'diga' },
+            { infinitivo: 'venir', yo: 'vengo', subjuntivo: 'venga' }, { infinitivo: 'poner', yo: 'pongo', subjuntivo: 'ponga' }, { infinitivo: 'salir', yo: 'salgo', subjuntivo: 'salga' },
+            { infinitivo: 'traer', yo: 'traigo', subjuntivo: 'traiga' }, { infinitivo: 'oír', yo: 'oigo', subjuntivo: 'oiga' }, { infinitivo: 'ver', yo: 'veo', subjuntivo: 'vea' },
+          ] },
+        ],
+        erros: [['que tú tienes', 'que tú tengas', 'O subjuntivo herda a forma de «yo» (tengo → tenga) e usa a terminação «-as».'], ['que nosotros piensemos', 'que nosotros pensemos', 'Em -ar e -er, «nosotros» e «vosotros» mantêm o radical.'], ['que nosotros duermamos', 'que nosotros durmamos', 'Em -ir com mudança de radical, «nosotros» e «vosotros» usam «u» (dormir) ou «i» (sentir, pedir).'], ['que yo sepo', 'que yo sepa', '«Saber» tem forma própria: «sepa».'], ['que yo estea', 'que yo esté', '«Estar» tem forma própria: «esté».'], ['que nosotros vamos', 'que nosotros vayamos', '«Ir» usa «vay-» em todas as pessoas.'], ['que tú dés', 'que tú des', 'Só «dé» (yo e él) leva acento; «des» não leva.']],
+      }),
+      producao(8, 'Diga em voz alta o subjuntivo de tener, hacer, ir, ser, estar e saber para «tú» e «nosotros». Depois diga cinco frases que comecem com «Quiero que tú…» e usem esses verbos. Ainda são só as formas; não se preocupe com o sentido exato.'),
+    ]),
+    sessao('S3', 'Mudanças de ortografia e ordens com usted', [
+      revisao(4, 'Diga em voz alta o subjuntivo de ir, ser, estar, haber e saber para «yo» e «ellos».'),
+      palavras(5, [
+        ['pase', '', 'entre (usted)', ''], ['siéntese', '', 'sente-se (usted)', ''], ['dígame', '', 'diga-me (usted)', ''], ['tenga', '', 'tenha, tome (usted)', ''], ['no se preocupe', '', 'não se preocupe (usted)', ''],
+      ]),
+      gramatica(8, 'Para manter o som: c/qu, g/gu, z/c e g/j', 'PASSO 1: no subjuntivo, a vogal final troca para «e» (em -ar) ou «a» (em -er e -ir). Essa troca pode estragar o som da consoante anterior, então a escrita muda para manter o som. PASSO 2: verbos em -car: o «c» vira «qu» antes de «e»: buscar → busque, busques, busque…; sacar → saque; tocar → toque. PASSO 3: verbos em -gar: o «g» vira «gu» antes de «e»: llegar → llegue; pagar → pague; apagar → apague. PASSO 4: verbos em -zar: o «z» vira «c» antes de «e»: empezar → empiece; cruzar → cruce; utilizar → utilice. PASSO 5: verbos em -ger e -gir: o «g» vira «j» antes de «a»: coger → coja, escoja, dirija. PASSO 6: «seguir» e «conseguir» perdem o «u»: siga, consiga. «Jugar» muda o radical e a ortografia: juegue. PASSO 7: o som continua o mesmo do infinitivo: o «c» de «buscar» soa /k/, então em «busque» o «qu» mantém esse som. PASSO 8: você já usa essas formas em ordens: «Llegue temprano», «Busque aquí», «No llegues tarde».', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português faz exatamente o mesmo ajuste: «buscar → busque», «chegar → chegue», «pagar → pague», «começar → comece», «escolher → escolha». O raciocínio é o mesmo, e a maioria dos verbos até coincide. A diferença é o «z/c»: em espanhol «empezar → empiece», em português «começar → comece» (que já é com «c» desde o infinitivo).',
+        tabela: [
+          { infinitivo: 'buscar', yo: 'busco', subjuntivo: 'busque', mudanca: 'c → qu' },
+          { infinitivo: 'sacar', yo: 'saco', subjuntivo: 'saque', mudanca: 'c → qu' },
+          { infinitivo: 'llegar', yo: 'llego', subjuntivo: 'llegue', mudanca: 'g → gu' },
+          { infinitivo: 'pagar', yo: 'pago', subjuntivo: 'pague', mudanca: 'g → gu' },
+          { infinitivo: 'empezar', yo: 'empiezo', subjuntivo: 'empiece', mudanca: 'z → c' },
+          { infinitivo: 'cruzar', yo: 'cruzo', subjuntivo: 'cruce', mudanca: 'z → c' },
+          { infinitivo: 'coger', yo: 'cojo', subjuntivo: 'coja', mudanca: 'g → j (já aparece no yo)' },
+          { infinitivo: 'seguir', yo: 'sigo', subjuntivo: 'siga', mudanca: 'gu → g' },
+        ],
+        erros: [['que yo busce', 'que yo busque', 'Antes de «e», o «c» /k/ precisa virar «qu».'], ['que yo llege', 'que yo llegue', 'Antes de «e», o «g» /g/ precisa virar «gu».'], ['que yo empeze', 'que yo empiece', 'Antes de «e», o «z» vira «c», e o radical muda para «ie».'], ['que yo coga', 'que yo coja', 'Com «a», o «g» soaria /g/; para manter o som /x/, escreve-se «j».']],
+      }),
+      dialogo(8, 'En la recepción del hotel / Na recepção do hotel', 'O senhor Martínez reserva uma noite num hotel. A recepcionista usa várias ordens com «usted», que são formas do subjuntivo.', [
+        ['La recepcionista', 'Buenos días, señor Martínez. Pase y siéntese, por favor.', 'Bom dia, senhor Martínez. Entre e sente-se, por favor.'],
+        ['Señor Martínez', 'Gracias. Quiero hacer una reserva para el viernes.', 'Obrigado. Quero fazer uma reserva para sexta-feira.'],
+        ['La recepcionista', 'Perfecto. Dígame su nombre completo y tenga a mano su documento.', 'Perfeito. Diga-me seu nome completo e tenha seu documento à mão.'],
+        ['Señor Martínez', 'Aquí lo tiene. ¿Puedo pagar con tarjeta?', 'Aqui está. Posso pagar com cartão?'],
+        ['La recepcionista', 'Claro. No se preocupe por el pago hoy; puede hacerlo a la llegada. Espere un momento, por favor, mientras lo compruebo.', 'Claro. Não se preocupe com o pagamento hoje; pode fazê-lo na chegada. Espere um momento, por favor, enquanto verifico.'],
+        ['Señor Martínez', 'Sin prisa. Oiga, ¿el desayuno está incluido?', 'Sem pressa. Escute, o café da manhã está incluído?'],
+        ['La recepcionista', 'Sí. Y si llega tarde, no se olvide de avisar a recepción.', 'Sim. E se chegar tarde, não se esqueça de avisar a recepção.'],
+        ['Señor Martínez', 'Muy bien. Hasta el viernes.', 'Muito bem. Até sexta-feira.'],
+      ]),
+      producao(5, 'Dê seis ordens a uma pessoa a quem você trata de «usted», usando os verbos pasar, sentarse, decir, tener, esperar e llegar: «Pase, siéntese…». Depois dê três ordens negativas a um amigo: «No llegues tarde…»'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 42', [
+      revisao(5, 'Diga em voz alta a receita do subjuntivo, com as suas palavras: o que se faz com a forma de «yo» e como a vogal é trocada. Depois diga um exemplo de verbo regular e um irregular.'),
+      exercicios(20, [
+        ouvir('Que ella coma', ['Que ella coma', 'Que ella come', 'Que ella comas'], 'Que ella coma', 'A terminação «-a» em «coma» é a marca do subjuntivo para -er.'),
+        ouvir('Que nosotros tengamos', ['Que nosotros tengamos', 'Que nosotros tenemos', 'Que nosotros tengáis'], 'Que nosotros tengamos', 'A forma de «nosotros» é «tengamos»; a de vosotros seria «tengáis».'),
+        ouvir('Que vosotros vayáis', ['Que vosotros vayáis', 'Que vosotros vais', 'Que vosotros vayamos'], 'Que vosotros vayáis', '«Vayáis» tem o acento no «á» e a terminação «-áis».'),
+        ditado('Que tengas un buen viaje', 'Escreva: Que tengas un buen viaje. «Tengas» é a forma de «tú».'),
+        ditado('No me llames tan tarde', 'Escreva: No me llames tan tarde. É o imperativo negativo de tú, que usa o subjuntivo.'),
+        mc('Qual é o subjuntivo de «hablar» para «que yo»?', ['hable', 'hablo', 'hablaré'], 'hable', 'Tire o «-o» de «hablo» e acrescente «-e».'),
+        mc('Qual é a terminação do subjuntivo de «comer» para «que tú»?', ['-as', '-es', '-amos'], '-as', 'Em -er e -ir, a vogal trocada é «a»: «comas».'),
+        mc('Qual é o subjuntivo de «ser» para «que él»?', ['sea', 'sepa', 'es'], 'sea', '«Ser» tem forma própria: sea, seas, sea…'),
+        mc('Qual é o subjuntivo de «pensar» para «que nosotros»?', ['pensemos', 'piensemos', 'pensamos'], 'pensemos', 'Em -ar e -er, «nosotros» não muda o radical.'),
+        mc('Qual é o subjuntivo de «dar» para «que yo»?', ['dé', 'de', 'dar'], 'dé', 'Leva acento para diferenciar do «de» da preposição.'),
+        mc('Qual é o subjuntivo de «salir» para «que yo»?', ['salga', 'sala', 'salía'], 'salga', 'A regra do «yo»: salgo → salga.'),
+        mc('Como se diz «Fale mais devagar» a um senhor, com «usted»?', ['Hable más despacio.', 'Habla más despacio.', 'Hablo más despacio.'], 'Hable más despacio.', 'A ordem com «usted» usa a forma do subjuntivo.'),
+        lacuna('Que tú ___ paciencia. (tener)', ['tengas', 'tienes', 'tengan'], 'tengas', 'Forma de «tú»: tengas.'),
+        lacuna('Que nosotros ___ pronto. (ir)', ['vayamos', 'vamos', 'vayan'], 'vayamos', '«Ir» usa vay- no subjuntivo.'),
+        lacuna('Que ellos ___ bien. (estar)', ['estén', 'están', 'esté'], 'estén', 'Forma de «ellos»: estén, com acento.'),
+        lacuna('Que yo ___ el libro. (buscar)', ['busque', 'busce', 'busco'], 'busque', 'O «c» vira «qu» antes de «e».'),
+        lacuna('Que vosotros ___ algo. (comer)', ['comáis', 'coméis', 'comas'], 'comáis', 'Em -er, o subjuntivo de «vosotros» é «-áis».'),
+        lacuna('Que ustedes ___ venir. (poder)', ['puedan', 'podan', 'pueden'], 'puedan', 'Em «ellos, ustedes» o radical muda: pueda, puedas, pueda, puedan.'),
+        ordem('Ordene: «Siéntese aquí, por favor.»', ['Siéntese', 'aquí,', 'por', 'favor.'], 'Siéntese aquí, por favor.', 'Ordem com «usted».'),
+        ordem('Ordene: «No hables tan rápido.»', ['No', 'hables', 'tan', 'rápido.'], 'No hables tan rápido.', 'O imperativo negativo de «tú» usa o subjuntivo.'),
+        livre('Escreva as seis formas do subjuntivo presente de «vivir».', 'viva, vivas, viva, vivamos, viváis, vivan'),
+        livre('Escreva o subjuntivo de «hacer» para «yo», «tú» e «nosotros».', 'haga, hagas, hagamos'),
+      ]),
+      producao(5, 'Diga em voz alta o subjuntivo de seis verbos que você escolher, três regulares e três irregulares, para duas pessoas diferentes cada um.'),
+    ]),
+  ],
+});

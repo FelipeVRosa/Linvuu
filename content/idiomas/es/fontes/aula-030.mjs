@@ -1,0 +1,120 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 30, titulo: 'Estar + gerúndio, ir a + infinitivo e acabar de', nivel: 'a2',
+  objetivo: 'Falar do que acontece agora com «estar» + gerúndio, do futuro próximo com «ir a» + infinitivo e do passado recente com «acabar de» + infinitivo, formar o gerúndio regular e irregular e posicionar os pronomes.',
+  nota: 'Você agora diz o que está fazendo, o que vai fazer e o que acabou de fazer. Próxima aula: expressões de quantidade, advérbios em -mente e a diferença entre «por» e «para».',
+  sessoes: [
+    sessao('S1', 'Estar + gerúndio: o que acontece agora', [
+      revisao(5, 'Conjugue «estar» no presente e diga três lugares onde você está. Depois diga duas frases no futuro simples.'),
+      palavras(8, [
+        ['ahora mismo', 'aóra mísmo', 'agora mesmo', ''], ['en este momento', 'en éste moménto', 'neste momento', ''], ['todavía', 'todabía', 'ainda', ''], ['mientras', 'miéntras', 'enquanto', ''],
+        ['leer', 'leér', 'ler', ''], ['dormir', 'dormír', 'dormir', ''], ['ducharse', 'dutchárse', 'tomar banho', ''], ['esperar', 'esperár', 'esperar', ''],
+      ]),
+      gramatica(12, 'Estar + gerúndio', 'PASSO 1: para dizer o que alguém faz neste momento, use «estar» no presente + o gerúndio do verbo principal: «Estoy leyendo», «Estás cocinando», «Está durmiendo». PASSO 2: o gerúndio é a forma do verbo que termina em «-ando» ou «-iendo». Verbos em -ar: tire o «-ar» e ponha «-ando»: «hablar → hablando», «trabajar → trabajando». PASSO 3: verbos em -er e -ir: tire a terminação e ponha «-iendo»: «comer → comiendo», «escribir → escribiendo», «vivir → viviendo». PASSO 4: quando a raiz do verbo termina em vogal, o «i» de «-iendo» vira «y»: «leer → leyendo», «oír → oyendo», «caer → cayendo», «construir → construyendo», «ir → yendo». PASSO 5: verbos em -ir que mudam a vogal do radical no presente também mudam no gerúndio: «dormir → durmiendo», «pedir → pidiendo», «decir → diciendo», «venir → viniendo», «seguir → siguiendo», «sentir → sintiendo», «servir → sirviendo». PASSO 6: o pronome pode ir antes de «estar» ou colado ao gerúndio, e a sílaba forte não muda de lugar: «Me estoy duchando» ou «Estoy duchándome»; «Lo estoy leyendo» ou «Estoy leyéndolo». PASSO 7: use o gerúndio para ações em curso. Alguns verbos de estado não combinam bem com ele: «ser», «tener», «saber», «querer», «gustar». Diz-se «Tengo hambre», e não «Estoy teniendo hambre». PASSO 8: para falar de uma ação que dura desde algum tempo, use «llevar» + tempo + gerúndio: «Llevo tres meses estudiando español.» E para continuar, «seguir» + gerúndio: «Sigo trabajando».', {
+        tag: 'Gerúndio',
+        comparacao: 'em português dizemos «estou falando» ou, em Portugal, «estou a falar». Em espanhol, só existe a primeira estrutura: «estoy hablando». A forma «estoy a hablar», do português europeu, não existe. Outra diferença: em português usamos «estou falando» também para o futuro próximo («amanhã estou viajando»); em espanhol, para o futuro use o presente ou «ir a»: «Mañana viajo» ou «Mañana voy a viajar».',
+        tabelas: [
+          { titulo: 'Gerúndio regular', linhas: [
+            { infinitivo: 'hablar', gerundio: 'hablando', exemplo: 'Estoy hablando con Ana.' },
+            { infinitivo: 'trabajar', gerundio: 'trabajando', exemplo: 'Estamos trabajando.' },
+            { infinitivo: 'comer', gerundio: 'comiendo', exemplo: 'Están comiendo.' },
+            { infinitivo: 'escribir', gerundio: 'escribiendo', exemplo: 'Estoy escribiendo un correo.' },
+          ] },
+          { titulo: 'Gerúndio irregular', linhas: [
+            { infinitivo: 'leer', gerundio: 'leyendo', observacao: 'i vira y entre vogais' },
+            { infinitivo: 'oír', gerundio: 'oyendo', observacao: 'i vira y entre vogais' },
+            { infinitivo: 'ir', gerundio: 'yendo', observacao: 'i vira y' },
+            { infinitivo: 'dormir', gerundio: 'durmiendo', observacao: 'o vira u' },
+            { infinitivo: 'pedir', gerundio: 'pidiendo', observacao: 'e vira i' },
+            { infinitivo: 'decir', gerundio: 'diciendo', observacao: 'e vira i' },
+            { infinitivo: 'venir', gerundio: 'viniendo', observacao: 'e vira i' },
+          ] },
+        ],
+        exemplos: [['Ahora mismo estoy leyendo un libro.', 'Agora mesmo estou lendo um livro.'], ['¿Qué estás haciendo?', 'O que você está fazendo?'], ['Mi padre está durmiendo.', 'Meu pai está dormindo.'], ['Me estoy duchando; te llamo luego.', 'Estou tomando banho; ligo para você depois.']],
+        erros: [['Estoy hablar con Ana.', 'Estoy hablando con Ana.', 'Depois de «estar», o verbo vai no gerúndio.'], ['Estoy a hablar con Ana.', 'Estoy hablando con Ana.', '«Estar a + infinitivo» é do português europeu, não do espanhol.'], ['Está leiendo un libro.', 'Está leyendo un libro.', 'Entre vogais, o «i» vira «y»: leyendo.'], ['Estoy durmindo.', 'Estoy durmiendo.', 'O gerúndio de «dormir» é «durmiendo».']],
+      }),
+      producao(5, 'Diga, em voz alta, o que você está fazendo agora, o que a sua família está fazendo e o que estão fazendo as pessoas de uma foto imaginária. Use seis gerúndios diferentes.'),
+    ]),
+    sessao('S2', 'Ir a + infinitivo e acabar de', [
+      revisao(4, 'Diga o gerúndio de «hablar», «comer», «leer», «dormir» e «decir». Faça uma frase com «estar» + gerúndio.'),
+      palavras(6, [
+        ['voy a', 'boi a', 'vou (fazer)', ''], ['vamos a', 'bámos a', 'vamos (fazer)', ''], ['acabar de', 'akabár de', 'acabar de', ''], ['estar a punto de', 'estár a púnto de', 'estar prestes a', ''], ['enseguida', 'enseguída', 'em seguida, já', ''], ['hace un rato', 'áthe un ráto', 'há pouco', ''],
+      ]),
+      gramatica(12, 'Ir a + infinitivo e acabar de + infinitivo', 'PASSO 1: para falar de um plano ou do futuro próximo, use «ir» no presente + «a» + infinitivo: «Voy a comprar pan», «Vamos a viajar». O presente de «ir» é: voy, vas, va, vamos, vais, van. PASSO 2: o «a» é obrigatório: «Voy a comer», e nunca «Voy comer». PASSO 3: a mesma estrutura serve para dizer «vamos…» como convite: «Vamos a comer» quer dizer «vamos comer». PASSO 4: diferença de uso: «ir a» + infinitivo é o futuro do dia a dia, para planos e intenções («Esta tarde voy a estudiar»); o futuro simples soa mais firme ou formal e é muito usado em previsões e promessas («Mañana lloverá»). Na prática, os dois muitas vezes são intercambiáveis. PASSO 5: para o passado recente, use «acabar de» + infinitivo, com «acabar» no presente: «Acabo de llegar» significa «acabei de chegar». PASSO 6: a forma é fixa: «acabar» no presente + «de» + infinitivo. «Acaba de salir» significa «acabou de sair». PASSO 7: «estar a punto de» + infinitivo expressa que algo está prestes a acontecer: «Estoy a punto de salir» significa «estou quase saindo» ou «estou prestes a sair». PASSO 8: os pronomes ficam antes de «ir» e «acabar» ou colados ao infinitivo: «Me voy a duchar / Voy a ducharme», «Lo acabo de ver / Acabo de verlo». PASSO 9: «ir a» também serve para previsões do tempo, na terceira pessoa: «Va a llover», «Va a nevar».', {
+        tag: 'Futuro próximo',
+        comparacao: 'em português dizemos «vou comer» (sem preposição) e «acabei de comer» (passado do verbo «acabar»). Em espanhol, o futuro próximo leva a preposição «a» («voy a comer»), e o passado recente usa o presente de «acabar» («acabo de comer»), e não o passado: «acabé de comer» não existe. A armadilha é esquecer o «a» do «ir a» e usar o passado com «acabar de».',
+        tabelas: [
+          { titulo: 'Ir a + infinitivo (presente de ir)', linhas: [
+            { pronome: 'yo', forma: 'voy a comer' }, { pronome: 'tú', forma: 'vas a comer' }, { pronome: 'él / ella / usted', forma: 'va a comer' },
+            { pronome: 'nosotros', forma: 'vamos a comer' }, { pronome: 'vosotros', forma: 'vais a comer' }, { pronome: 'ellos / ustedes', forma: 'van a comer' },
+          ] },
+          { titulo: 'Os três tempos de ação', linhas: [
+            { estrutura: 'estar + gerúndio', sentido: 'está acontecendo', exemplo: 'Estoy cocinando.' },
+            { estrutura: 'ir a + infinitivo', sentido: 'vai acontecer', exemplo: 'Voy a cocinar.' },
+            { estrutura: 'acabar de + infinitivo', sentido: 'acabou de acontecer', exemplo: 'Acabo de cocinar.' },
+          ] },
+        ],
+        exemplos: [['Esta tarde voy a estudiar en la biblioteca.', 'Esta tarde vou estudar na biblioteca.'], ['Vamos a cenar en un bar cerca del cine.', 'Vamos jantar em um bar perto do cinema.'], ['Acabo de llegar a casa.', 'Acabei de chegar em casa.'], ['Va a llover; toma el paraguas.', 'Vai chover; leve o guarda-chuva.']],
+        erros: [['Voy comer.', 'Voy a comer.', 'O «a» é obrigatório entre «ir» e o infinitivo.'], ['Acabé de llegar.', 'Acabo de llegar.', 'Com «acabar de», o verbo «acabar» fica no presente.'], ['Acabo llegar.', 'Acabo de llegar.', 'A expressão é «acabar de», com «de».'], ['Voy en comer.', 'Voy a comer.', 'A preposição de «ir a» é sempre «a».']],
+      }),
+      producao(8, 'Diga o que você vai fazer hoje à noite, amanhã e no fim de semana (com «ir a»), e o que você acabou de fazer (com «acabar de»). Faça pelo menos seis frases.'),
+    ]),
+    sessao('S3', 'Combinar os três em contexto', [
+      revisao(4, 'Diga uma frase com cada estrutura: «estar» + gerúndio, «ir a» + infinitivo e «acabar de» + infinitivo.'),
+      palavras(5, [
+        ['cenar', 'thenár', 'jantar', ''], ['la cena', 'la théna', 'o jantar (não «cena»)', ''], ['la cartelera', 'la kartelera', 'a programação do cinema', ''], ['pasarlo bien', 'pasárlo bién', 'divertir-se', ''], ['estar constipado', 'estár konstipádo', 'estar resfriado', ''], ['estar embarazada', 'estár embarathada', 'estar grávida', ''],
+      ]),
+      gramatica(8, 'Escolher a estrutura e cuidar dos falsos amigos', 'PASSO 1: para escolher, pense no tempo da ação: agora → «estar + gerúndio»; logo depois → «ir a + infinitivo»; logo antes → «acabar de + infinitivo». PASSO 2: com «todavía» (ainda) e «ya» (já), o gerúndio mostra uma ação em curso: «Todavía estoy trabajando», «Ya estoy llegando». PASSO 3: para negar o que não está acontecendo, ponha «no» antes de «estar»: «No estoy trabajando». PASSO 4: nas perguntas, o gerúndio vem depois do verbo: «¿Qué estás haciendo?», «¿Dónde estáis comiendo?» PASSO 5: falsos amigos neste tema: «cena» não é cena de filme; é o jantar. «Cenar» é jantar. PASSO 6: «embarazada» significa grávida, e não constrangida (para isso, use «avergonzada»). «Constipado» significa resfriado, e não constipado no sentido intestinal. PASSO 7: «pasarlo bien» é divertir-se: «¡Que lo paséis bien!» (Espanha) ou «¡Que lo pases bien!». PASSO 8: no telefone, a pergunta mais comum é «¿Qué estás haciendo?» ou «¿Qué haces?», e a resposta com gerúndio é natural.', {
+        tag: 'Gerúndio',
+        comparacao: 'em português dizemos «estou jantando», «vou jantar» e «acabei de jantar». Em espanhol: «estoy cenando», «voy a cenar» e «acabo de cenar». A diferença mais perigosa é o falso amigo «embarazada»: quem está constrangido diz «estoy avergonzado», e não «embarazado». E «cena» é o jantar, enquanto a cena de um filme é «escena».',
+        tabela: [
+          { palavra: 'cena', significa: 'jantar', exemplo: 'La cena es a las nueve.' },
+          { palavra: 'escena', significa: 'cena (de filme, de teatro)', exemplo: 'La última escena es muy triste.' },
+          { palavra: 'embarazada', significa: 'grávida', exemplo: 'Mi hermana está embarazada.' },
+          { palavra: 'avergonzado', significa: 'constrangido, com vergonha', exemplo: 'Estoy avergonzada.' },
+          { palavra: 'constipado', significa: 'resfriado', exemplo: 'Estoy constipado desde ayer.' },
+        ],
+        erros: [['Estoy embarazada de la reunión.', 'Estoy avergonzada por la reunión.', '«Embarazada» significa grávida.'], ['Vamos a ver una cena de la película.', 'Vamos a ver una escena de la película.', '«Cena» é o jantar; a cena de filme é «escena».'], ['Estoy yendo a cenar.', 'Voy a cenar.', 'Para o futuro próximo, use «ir a», e não o gerúndio de «ir».'], ['Estoy cenar.', 'Estoy cenando.', 'Depois de «estar», o verbo vai no gerúndio.']],
+      }),
+      dialogo(8, 'Una llamada / Uma ligação', 'Ana liga para Pablo e eles contam o que estão fazendo e o que vão fazer.', [
+        ['Ana', 'Hola, Pablo. ¿Qué estás haciendo?', 'Oi, Pablo. O que você está fazendo?'],
+        ['Pablo', 'Estoy cocinando. Acabo de llegar a casa.', 'Estou cozinhando. Acabei de chegar em casa.'],
+        ['Ana', '¿Estás cenando ya?', 'Você já está jantando?'],
+        ['Pablo', 'Todavía no. Voy a cenar dentro de media hora. ¿Y tú?', 'Ainda não. Vou jantar daqui a meia hora. E você?'],
+        ['Ana', 'Estoy esperando el autobús. Voy a ir al cine con Marta.', 'Estou esperando o ônibus. Vou ao cinema com a Marta.'],
+        ['Pablo', '¿Qué película vais a ver?', 'Que filme vocês vão ver?'],
+        ['Ana', 'Aún no lo sabemos. Estamos mirando la cartelera en el móvil.', 'Ainda não sabemos. Estamos olhando a programação no celular.'],
+        ['Pablo', '¿Vais a cenar después?', 'Vocês vão jantar depois?'],
+        ['Ana', 'Sí, vamos a cenar en un bar cerca del cine.', 'Sim, vamos jantar em um bar perto do cinema.'],
+        ['Pablo', 'Pues que lo paséis bien.', 'Então divirtam-se.'],
+      ]),
+      producao(5, 'Imagine uma ligação a um amigo: pergunte o que ele está fazendo, diga o que você está fazendo e combine o que cada um vai fazer. Fale em voz alta, com as três estruturas.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 30', [
+      revisao(5, 'Descreva uma cena de rua com «estar» + gerúndio, diga três planos com «ir a» e duas coisas que você acabou de fazer.'),
+      exercicios(20, [
+        ouvir('Estoy leyendo un libro', ['Estoy leyendo un libro', 'Estoy leyendo un libre', 'Estoy viendo un libro'], 'Estoy leyendo un libro', 'Ouça «leyendo»: o gerúndio de «leer» tem «y».'),
+        ouvir('Voy a cenar dentro de media hora', ['Voy a cenar dentro de media hora', 'Acabo de cenar dentro de media hora', 'Estoy cenando dentro de media hora'], 'Voy a cenar dentro de media hora', 'Ouça «voy a»: futuro próximo.'),
+        ouvir('Acabo de llegar a casa', ['Acabo de llegar a casa', 'Voy a llegar a casa', 'Estoy llegando a casa'], 'Acabo de llegar a casa', 'Ouça «acabo de»: passado recente.'),
+        ditado('Mi padre está durmiendo', 'Escreva: Mi padre está durmiendo. O gerúndio de «dormir» é «durmiendo».'),
+        ditado('Voy a estudiar en la biblioteca', 'Escreva: Voy a estudiar en la biblioteca.'),
+        ditado('Acabamos de comer', 'Escreva: Acabamos de comer.'),
+        mc('Qual é o gerúndio de «decir»?', ['diciendo', 'deciendo', 'dijendo'], 'diciendo', 'O «e» da raiz vira «i»: diciendo.'),
+        mc('Qual é o gerúndio de «leer»?', ['leyendo', 'leiendo', 'leendo'], 'leyendo', 'Entre vogais, o «i» vira «y».'),
+        mc('Como se diz «Eu vou comer»?', ['Voy a comer.', 'Voy comer.', 'Voy de comer.'], 'Voy a comer.', 'A preposição «a» é obrigatória.'),
+        mc('Como se diz «Acabei de chegar»?', ['Acabo de llegar.', 'Acabé de llegar.', 'Voy a llegar.'], 'Acabo de llegar.', 'O verbo «acabar» fica no presente.'),
+        mc('O que quer dizer «Mi hermana está embarazada»?', ['Minha irmã está grávida.', 'Minha irmã está constrangida.', 'Minha irmã está resfriada.'], 'Minha irmã está grávida.', '«Embarazada» é grávida; constrangida é «avergonzada».'),
+        mc('Qual palavra quer dizer «jantar»?', ['la cena', 'la escena', 'el almuerzo'], 'la cena', '«Escena» é cena de filme.'),
+        lacuna('Ahora mismo ___ cocinando. (yo, estar)', ['estoy', 'voy', 'acabo'], 'estoy', '«Estar» + gerúndio descreve a ação em curso.'),
+        lacuna('Mañana ___ a viajar. (nosotros, ir)', ['vamos', 'vais', 'vamos de'], 'vamos', '«Vamos a» + infinitivo: futuro próximo.'),
+        lacuna('Ella ___ de salir. (acabar, presente)', ['acaba', 'acabó', 'acabará'], 'acaba', 'Com «acabar de», o verbo fica no presente.'),
+        lacuna('Me ___ duchando. (estar)', ['estoy', 'voy', 'estás'], 'estoy', 'Pronome + «estar» + gerúndio.'),
+        ordem('Ordene: «Estamos mirando la cartelera.»', ['Estamos', 'mirando', 'la', 'cartelera.'], 'Estamos mirando la cartelera.', '«Estar» + gerúndio + objeto.'),
+        ordem('Ordene: «Vamos a cenar en un bar.»', ['Vamos', 'a', 'cenar', 'en', 'un', 'bar.'], 'Vamos a cenar en un bar.', '«Vamos a» + infinitivo.'),
+        livre('Escreva em espanhol: Acabo de chegar e vou cozinhar agora.', 'Acabo de llegar y voy a cocinar ahora.'),
+      ]),
+      producao(5, 'Conte, em voz alta, três coisas que você acabou de fazer, três que você está fazendo e três que você vai fazer.'),
+    ]),
+  ],
+});

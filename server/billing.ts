@@ -65,7 +65,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     try {
       const base = urlBase();
       const s = await stripe!.checkout.sessions.create({
-        mode: 'subscription', customer: await cliente(u), locale: 'pt-BR',
+        mode: 'subscription', customer: await cliente(u), locale: 'pt-BR', allow_promotion_codes: true,
         line_items: [{ price: await preco(), quantity: 1 }],
         success_url: `${base}/assinatura?ok=1`, cancel_url: `${base}/assinatura`,
         client_reference_id: u.uid,

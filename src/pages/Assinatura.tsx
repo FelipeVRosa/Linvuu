@@ -53,7 +53,7 @@ export default function Assinatura() {
                 <div className="lv-plano">
                   <h3>3 meses</h3>
                   <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span> pagamento único</span></p>
-                  <p>Pix, boleto ou cartão. Sem renovação automática.</p>
+                  <p>Pix, boleto ou cartão. Sem renovação automática. Escolha a forma de pagamento; se for Pix, selecione Pix e clique em Continuar: o QR code aparece na tela seguinte.</p>
                   <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses'}</button>
                 </div>
               </div>

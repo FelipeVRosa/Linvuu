@@ -10,7 +10,7 @@ export function Vitrine() {
     <Carrossel rotulo="Livros da Linvuu">
       {itens
         ? itens.map((l) => {
-            const capa = l.capa ? <img src={l.capa} alt={`Capa do livro de ${l.titulo}, Coleção Linvuu`} width={1200} height={1683} loading="lazy" decoding="async" /> : <span className="capa-vazia" />;
+            const capa = l.capa ? <img src={l.capa} srcSet={`${l.capa} 600w, ${l.capa.replace('-600', '-900')} 900w`} sizes="(max-width: 700px) 240px, 300px" alt={`Capa do livro de ${l.titulo}, Coleção Linvuu`} width={600} height={842} loading="lazy" decoding="async" /> : <span className="capa-vazia" />;
             const corpo = (
               <>
                 <div className="livro-capa">{capa}</div>

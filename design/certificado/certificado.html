@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Certificado de conclusão · Linvuu</title>
+<style>
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;src:url('fontes/newsreader-latin-opsz-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;src:url('fontes/newsreader-latin-ext-opsz-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF,U+2020,U+20A0-20AB}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;src:url('fontes/newsreader-latin-opsz-italic.woff2') format('woff2')}
+@font-face{font-family:'Literata';font-weight:200 900;src:url('fontes/literata-cyrillic-wght-normal.woff2') format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+2116}
+@font-face{font-family:'Source Sans 3';font-weight:200 900;src:url('fontes/source-sans-3-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Source Sans 3';font-weight:200 900;src:url('fontes/source-sans-3-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF}
+@page{size:297mm 210mm;margin:0}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;background:#F5F1E8}
+.c{position:relative;width:297mm;height:210mm;background:#F5F1E8;color:#1D1F1C;font-family:'Source Sans 3',sans-serif;overflow:hidden}
+.serif{font-family:'Newsreader','Literata',Georgia,serif;font-optical-sizing:auto}
+.k{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#5C5E57}
+b{font-weight:600}
+</style>
+</head>
+<body>
+<div class="c">
+  <div style="position:absolute;inset:9mm;border:1px solid #1E3B2F"></div>
+  <div style="position:absolute;inset:11mm;border:0.5px solid rgba(30,59,47,.35)"></div>
+  <div style="position:absolute;inset:11mm;display:grid;grid-template-rows:auto 1fr auto auto;padding:12mm 20mm 8mm">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <img src="linvuu-wordmark-verde.svg" alt="Linvuu" style="height:39px;width:auto">
+      <div style="width:58mm;height:22px"><svg viewBox="0 0 400 20" preserveAspectRatio="none" width="100%" height="100%" style="display:block"><path fill="#B7791F" d="M2.5,11.6 C50,10 96,8.4 150,8.8 C200,9.2 250,10.4 300,9.6 C340,9 372,8.2 397.5,8.8 C399.6,9.1 399.4,11 396.8,11.4 C368,12.4 335,13 296,13 C248,13.1 198,12.6 148,12.4 C98,12.3 52,13.4 4.5,14 C1.2,14 0.6,11.9 2.5,11.6 Z"></path></svg></div>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:7mm;max-width:232mm">
+      <span id="faixa" style="font-size:14px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#1E3B2F"></span>
+      <h1 class="serif" style="margin:0;font-weight:500;font-size:74px;letter-spacing:-0.02em;line-height:1;color:#1E3B2F">Certificado de conclusão</h1>
+      <p class="serif" id="texto" style="margin:0;font-weight:400;font-size:31px;line-height:1.4"></p>
+      <p id="nivelTxt" style="margin:0;padding-left:5mm;border-left:1px solid #1E3B2F;font-size:20px;line-height:1.5;color:#3E403B;max-width:200mm"></p>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12mm;padding:6mm 0 5mm;border-top:1px solid rgba(29,31,28,.25)">
+      <div style="display:flex;flex-direction:column;gap:1.5mm"><span class="k">Data de emissão</span><span id="data" style="font-size:19px"></span></div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1.5mm"><span class="k">Emissor</span><span style="font-size:19px">Emitido pela Linvuu</span></div>
+    </div>
+    <p style="margin:0;font-size:13px;line-height:1.45;color:#3E403B;text-align:center">Certificado de conclusão emitido pela Linvuu. Não é uma certificação oficial.</p>
+  </div>
+</div>
+<script>
+// Parâmetros: ?nome=&idioma=&nivel=a1|a2|b1&aulas=&horas=&data=
+const p = new URLSearchParams(location.search);
+const NIVEIS = {
+  A1: ['Do zero', 'Consegue se apresentar, pedir o que precisa e entender frases simples.'],
+  A2: ['Dia a dia', 'Consegue conversar sobre rotina, compras, viagem e trabalho em frases curtas.'],
+  B1: ['Independente', 'Consegue se virar sozinho em viagem ou trabalho e explicar opiniões e planos.'],
+};
+const nivel = (p.get('nivel') || 'A1').toUpperCase();
+const idioma = p.get('idioma') || 'francês';
+const nome = p.get('nome') || '[NOME COMPLETO]';
+const aulas = p.get('aulas') || '18', horas = p.get('horas') || '36';
+const data = p.get('data') || new Date().toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+document.getElementById('faixa').textContent = `Nível ${nivel} · ${idioma.charAt(0).toUpperCase() + idioma.slice(1)}`;
+document.getElementById('texto').innerHTML = `A Linvuu certifica que <b style="color:#1E3B2F">${esc(nome)}</b> concluiu o nível <b>${nivel}</b> do curso de <b>${esc(idioma)}</b>, com <b>${esc(aulas)}</b> aulas e <b>${esc(horas)}</b> horas de estudo guiado.`;
+document.getElementById('nivelTxt').innerHTML = `<span style="font-weight:600;color:#1D1F1C">${nivel} · ${NIVEIS[nivel][0]}.</span> ${NIVEIS[nivel][1]}`;
+document.getElementById('data').textContent = data;
+document.fonts.ready.then(() => { document.body.dataset.pronto = '1'; });
+</script>
+</body>
+</html>

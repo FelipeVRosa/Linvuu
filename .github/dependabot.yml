@@ -1,0 +1,13 @@
+# Atualizações automáticas de dependências e de GitHub Actions (cada uma vira um pull request com o CI rodando).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    groups:
+      seguranca-e-patches:
+        update-types: [patch, minor]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }

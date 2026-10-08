@@ -5,6 +5,7 @@ service cloud.firestore {
   match /databases/{database}/documents {
 
     // Um documento por usuário, com o mesmo id do login. Cada pessoa só enxerga e altera o próprio.
+    // Qualquer outro caminho é negado por padrão (não há regra que permita).
     match /users/{uid} {
       allow read: if request.auth != null && request.auth.uid == uid;
 
@@ -15,9 +16,11 @@ service cloud.firestore {
         && request.resource.data.streak == 0
         && request.resource.data.licoesCompletas.size() == 0;
 
-      // Atualização: o dono não pode trocar a data de criação.
+      // Atualização: o dono só pode mudar o nome. XP, streak e lições são do servidor (não podem ser forjados no navegador).
       allow update: if request.auth != null && request.auth.uid == uid
-        && request.resource.data.criadoEm == resource.data.criadoEm;
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['nome'])
+        && request.resource.data.nome is string
+        && request.resource.data.nome.size() <= 100;
 
       allow delete: if false;
     }

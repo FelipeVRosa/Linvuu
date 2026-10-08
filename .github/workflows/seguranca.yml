@@ -1,0 +1,37 @@
+name: Segurança
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 6 * * 1'   # toda segunda, 03h17 em Brasília
+permissions:
+  contents: read
+jobs:
+  segredos:
+    name: Varredura de segredos (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  dependencias:
+    name: Auditoria completa de dependências
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm audit --audit-level=moderate
+      - run: npm audit signatures

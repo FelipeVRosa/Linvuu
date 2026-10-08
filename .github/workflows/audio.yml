@@ -21,6 +21,7 @@ permissions:
 
 env:
   IDIOMA: ${{ inputs.idioma || (startsWith(github.ref_name, 'piloto-audio/ru') && 'ru') || 'de' }}
+  LIMITE: ${{ inputs.limite }}
 
 jobs:
   audio:
@@ -28,17 +29,23 @@ jobs:
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Validar entradas
+        run: |
+          case "$IDIOMA" in de|ru|en|es|fr|it|br) ;; *) echo "idioma inválido"; exit 1;; esac
+          case "${LIMITE:-0}" in ''|*[!0-9]*) echo "limite inválido"; exit 1;; esac
       - name: Gerar os MP3
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
             node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite=15 --amostra 2>&1 | tee /tmp/saida.txt
           else
-            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="${{ inputs.limite }}" 2>&1 | tee /tmp/saida.txt
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="$LIMITE" 2>&1 | tee /tmp/saida.txt
           fi
       - name: Relatório (duração e tamanho de cada MP3)
         if: always()

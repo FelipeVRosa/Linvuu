@@ -1,0 +1,115 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 25, titulo: 'Pronoun placement and the spoken norm', nivel: 'a2',
+  objetivo: "Put object pronouns in the right place in spoken Brazilian Portuguese («eu te vi», «vou te ligar», «me dá») and recognize the written forms with a hyphen («vi-o», «vê-lo», «dê-me»).",
+  nota: "You can place «me», «te» and the third person objects naturally in everyday speech, make requests with «me dá» or «pode me ajudar?» and read the formal written forms with a hyphen. Next lesson: comparatives and superlatives.",
+  sessoes: [
+    sessao('S1', 'Before the verb: how Brazilians speak', [
+      revisao(5, "Say aloud: «Ele me deu um presente.» «Eu falei pra ela.» «Eu te mandei uma mensagem.» Then say who gave, sent or told what to whom this week."),
+      palavras(8, [
+        ['ligar', 'lee-GAR', 'to call (by phone); to turn on', ''], ['avisar', 'ah-vee-ZAR', 'to let someone know, to warn', ''], ['esperar', 'ehs-peh-RAR', 'to wait for; to hope', ''], ['ajudar', 'ah-zhoo-DAR', 'to help', ''],
+        ['convidar', 'koh~-vee-DAR', 'to invite', ''], ['buscar', 'boos-KAR', 'to pick up, to fetch', ''], ['levar', 'leh-VAR', 'to take, to carry', ''], ['chamar', 'shah-MAR', 'to call (someone over); to name', ''],
+        ['lembrar', 'leh~-BRAR', 'to remember; to remind', ''], ['esquecer', 'ehs-keh-SEHR', 'to forget', ''],
+      ]),
+      gramatica(12, "Spoken Brazilian Portuguese: the pronoun goes before the verb", "STEP 1: in everyday speech in Brazil the object pronoun goes right before the conjugated verb, whether it is direct or indirect: «Eu te vi», «Ele me ligou», «A gente se encontra às sete», «Ela me deu um presente». This is the normal spoken pattern, with friends, at work, in shops and on the phone. STEP 2: with «não», the order is «não + pronoun + verb»: «Eu não te vi», «Ele não me ligou». STEP 3: the written standard of Brazil also puts the pronoun before the verb when something attracts it: a subject («Ele me viu»), «não», «já», «nunca», «também», «que», a question word. Only at the very beginning of a written clause, or after a pause, does the standard write the pronoun after the verb, with a hyphen: «Disseram-me que não havia vaga», «Vi-o ontem». That is formal writing; do not use it when you speak. STEP 4: for the third person, speech uses the subject words as objects: «Eu vi ele», «Eu conheço ela», «Eu chamei eles». The written norm is «Eu o vi», «Eu a conheço», «Eu os chamei». For a test or a formal e-mail, use «o, a, os, as»; for talking, «ele, ela, eles, elas» are normal. STEP 5: Brazilians also drop the object when it is clear: «Você viu o filme?» «Vi.» — «Você comprou o pão?» «Comprei.» This is natural and very frequent, and often better than «eu vi ele».", {
+        tag: 'Pronoun placement',
+        comparacao: "English always puts the object after the verb: «I saw you», «He called me». Portuguese puts the short pronoun before the verb: «Eu te vi», «Ele me ligou». Do not copy the English order. Also, English can only drop the object in a few cases («I saw.» is odd), while Portuguese does it constantly.",
+        tabela: [
+          { meaning: 'I saw you.', spoken: 'Eu te vi.', written: 'Eu te vi. (te is fine in writing too)' },
+          { meaning: 'He called me.', spoken: 'Ele me ligou.', written: 'Ele me ligou.' },
+          { meaning: 'I know her.', spoken: 'Eu conheço ela.', written: 'Eu a conheço.' },
+          { meaning: 'We called them.', spoken: 'A gente chamou eles.', written: 'Nós os chamamos.' },
+          { meaning: 'He did not call me.', spoken: 'Ele não me ligou.', written: 'Ele não me ligou.' },
+          { meaning: 'They told me (starting a written sentence).', spoken: 'Eles me falaram.', written: 'Disseram-me.' },
+        ],
+        exemplos: [
+          ['Eu te vi ontem no mercado.', 'I saw you yesterday at the market.'], ['Ela não me avisou.', 'She did not let me know.'], ['Você viu o Pedro? — Vi ele ontem.', 'Did you see Pedro? — I saw him yesterday.'], ['Eles me convidaram para a festa.', 'They invited me to the party.'],
+        ],
+        erros: [["Eu vi-te ontem. (in speech)", "Eu te vi ontem.", "The pronoun after the verb with a hyphen is written or European Portuguese. In Brazilian speech, put it before the verb."], ["Ele viu-me.", "Ele me viu.", "With a subject before the verb, the pronoun goes before the verb, even in writing."], ["Eu não vi-o.", "Eu não o vi. / Eu não vi ele.", "After «não» the pronoun goes before the verb. In speech use «ele»."], ["Eu o vi ele.", "Eu vi ele. / Eu o vi.", "Use either «o» or «ele» as the object, never both."]],
+      }),
+      producao(5, "Answer aloud, using a pronoun before the verb or just the verb: «Você viu o Pedro?» «Ele te ligou?» «Você conhece a Ana?» «Você me esperou ontem?»"),
+    ]),
+    sessao('S2', 'With two verbs: «vou te ligar», «quero te ver»', [
+      revisao(4, "Say: «Eu te vi ontem.» «Ele não me ligou.» «A gente chamou eles.» Then say the written form: «Eu o vi.» «Nós os chamamos.»"),
+      palavras(6, [
+        ['encontrar', 'eh~-koh~-TRAR', 'to meet; to find', ''], ['visitar', 'vee-zee-TAR', 'to visit', ''], ['atender', 'ah-teh~-DEHR', 'to answer (the phone); to serve', ''], ['responder', 'hehs-poh~-DEHR', 'to answer', ''],
+        ['endereço', 'eh~-deh-REH-soo', 'address', ''], ['chamada', 'shah-MAH-dah', 'phone call', ''],
+      ]),
+      gramatica(12, "Two verbs: the pronoun goes before the second one", "STEP 1: when there is an auxiliary or a modal verb and an infinitive («vou ligar», «quero ver», «posso ajudar», «preciso falar»), spoken Portuguese places the pronoun between the two verbs, with no hyphen: «Vou te ligar», «Quero te ver», «Posso te ajudar?», «Preciso me lembrar». STEP 2: the same happens with «estar» + gerund: «Estou te esperando», «Ela está me ajudando». STEP 3: this pronoun belongs to the infinitive or the gerund, not to the first verb, so «Vou te ligar» means «I am going to call you». Say it like one rhythm: «vou-te-ligar». STEP 4: the written norm attaches the pronoun to the infinitive with a hyphen: «Quero vê-lo» (I want to see him), «Vou ligar-lhe» (rare), «Posso ajudá-lo?» (formal). With «o, a, os, as», the final -r of the infinitive disappears and the pronoun becomes «lo, la, los, las»: ver → vê-lo, fazer → fazê-lo, abrir → abri-la, comprar → comprá-la. Mind the accent: stressed final -ar becomes -á-, -er becomes -ê- (or -é- in some verbs) and -ir becomes -i-. STEP 5: a safe, natural way is to avoid the pronoun and use «você» or the full noun: «Quero ver você», «Vou ligar pra você», «Posso ajudar você?». Everyone accepts it. STEP 6: in speech with a modal and a third person object, use the full pronoun or drop it: «Preciso ver ele» or «Preciso ver.»", {
+        tag: 'Pronoun placement',
+        comparacao: "English says «I'm going to call you», «I want to see you», with the object after the infinitive. Portuguese puts «te» before the second verb: «vou te ligar», «quero te ver». The pronoun jumps ahead of the infinitive. Also, English never attaches the object to the verb with a hyphen; written Portuguese does («vê-lo»).",
+        tabela: [
+          { meaning: 'I am going to call you.', spoken: 'Vou te ligar. / Vou ligar pra você.', written: 'Vou ligar para você.' },
+          { meaning: 'I want to see you.', spoken: 'Quero te ver.', written: 'Quero vê-lo(a). / Quero ver você.' },
+          { meaning: 'Can I help you?', spoken: 'Posso te ajudar?', written: 'Posso ajudá-lo(a)?' },
+          { meaning: 'I am waiting for you.', spoken: 'Estou te esperando.', written: 'Estou esperando você. / Espero-o.' },
+          { meaning: 'He wants to invite us.', spoken: 'Ele quer convidar a gente.', written: 'Ele quer nos convidar. / Ele quer convidar-nos.' },
+          { meaning: 'I need to do it.', spoken: 'Preciso fazer isso. / Preciso fazer.', written: 'Preciso fazê-lo.' },
+        ],
+        exemplos: [
+          ['Vou te mandar o endereço agora.', 'I will send you the address now.'], ['Eu quero te ajudar com isso.', 'I want to help you with this.'], ['Ela está me esperando na estação.', 'She is waiting for me at the station.'], ['Posso te fazer uma pergunta?', 'May I ask you a question?'],
+        ],
+        erros: [["Eu quero lo ver.", "Eu quero te ver. / Quero vê-lo.", "There is no free-standing «lo». It is always attached with a hyphen to the infinitive in writing."], ["Vou ligar-te.", "Vou te ligar.", "That hyphen order is the European one. In Brazil the pronoun goes before the second verb."], ["Posso ajudar te?", "Posso te ajudar?", "The pronoun is not placed after the infinitive in speech."], ["Eu vou-te ligar.", "Eu vou te ligar.", "The pronoun does not attach to the first verb with a hyphen in Brazilian usage."]],
+      }),
+      producao(8, "Say eight sentences about what you will do or want to do with a friend, using a pronoun before the second verb: «Vou te ligar amanhã.» «Quero te mostrar a cidade.» «Posso te ajudar com o dever?» Then say two of them in the written form with a hyphen."),
+    ]),
+    sessao('S3', 'Requests: «me dá», «me ajuda?»', [
+      revisao(4, "Say aloud: «Vou te ligar.» «Quero te ver.» «Estou te esperando.» «Posso te ajudar?» Then say «Quero vê-lo» and «Posso ajudá-lo?»."),
+      palavras(5, [
+        ['passar', 'pah-SAR', 'to pass, to hand', ''], ['sal', 'SAH-oo', 'salt', ''], ['minuto', 'mee-NOO-too', 'minute', ''], ['desculpa', 'djees-KOOL-pah', 'sorry (informal)', ''], ['número', 'NOO-meh-roo', 'number', ''],
+      ]),
+      gramatica(8, "Everyday requests with a pronoun at the start", "STEP 1: in speech, short requests often begin with the pronoun: «Me dá um minuto», «Me liga amanhã», «Me avisa quando chegar», «Me passa o sal?». The verb is just the present tense form you already know («você dá», «você liga», «você passa»). Lesson 28 explains the imperative in full; for now learn these as ready-made chunks. STEP 2: to be more polite, use «pode»: «Pode me ajudar?», «Pode me passar o sal?», and with «por favor». STEP 3: «Me desculpa» and «Me desculpe» (more careful) are the way to say sorry, and «Me diz» or «Me fala» mean «tell me». STEP 4: the written standard avoids starting a sentence with a pronoun, so it writes «Dê-me um minuto», «Ligue-me amanhã», «Avise-me», «Desculpe-me». This is used in formal writing, notices and speeches. In an e-mail to a client or a teacher you may prefer «Peço desculpas», «Por favor, avise-me». STEP 5: in Brazilian conversation do not be afraid of «Me dá» in a shop or café: it is common and not rude when said with a friendly tone and «por favor».", {
+        tag: 'Pronoun placement',
+        comparacao: "English builds a request with an object after the verb and says «please»: «Give me a minute, please.» Portuguese puts «me» first: «Me dá um minuto, por favor.» Politeness comes from the tone, «por favor», and the use of «pode» («Pode me dar...?»), not from changing the pronoun order.",
+        tabela: [
+          { meaning: 'Give me a minute.', spoken: 'Me dá um minuto.', written: 'Dê-me um minuto.' },
+          { meaning: 'Call me tomorrow.', spoken: 'Me liga amanhã.', written: 'Ligue-me amanhã.' },
+          { meaning: 'Let me know when you arrive.', spoken: 'Me avisa quando chegar.', written: 'Avise-me quando chegar.' },
+          { meaning: 'Can you pass me the salt?', spoken: 'Pode me passar o sal?', written: 'Pode passar-me o sal?' },
+          { meaning: 'Sorry! / Excuse me.', spoken: 'Me desculpa! / Desculpa!', written: 'Desculpe-me.' },
+        ],
+        erros: [["Dá-me um café, por favor. (in a café in Brazil)", "Me dá um café, por favor. / Pode me dar um café?", "The hyphen form sounds too formal or European in a casual spoken situation."], ["Me dê um minuto, por favor. (as a common spoken request)", "Me dá um minuto, por favor.", "Spoken Brazilian commands use the «você» present form («dá»), which you already know. «Dê» is more formal. See lesson 28."], ["Me ajuda? (to a stranger, in a formal setting)", "Pode me ajudar, por favor?", "Add «pode» and «por favor» for more politeness when you do not know the person."]],
+      }),
+      dialogo(8, 'Waiting at the station', "Letícia and Thiago had planned to meet, but he did not come. They speak the next day.", [
+        ['Letícia', 'Thiago, eu te esperei ontem na estação. Você esqueceu?', 'Thiago, I waited for you at the station yesterday. Did you forget?'],
+        ['Thiago', 'Esqueci, me desculpa! Eu não te avisei. O celular ficou em casa.', "I forgot, I'm sorry! I did not let you know. My phone stayed at home."],
+        ['Letícia', 'Tudo bem. Vou te mandar o endereço do restaurante.', "It's okay. I will send you the address of the restaurant."],
+        ['Thiago', 'Pode me ligar às sete?', 'Can you call me at seven?'],
+        ['Letícia', 'Ligo, sim. Eu te ligo às sete.', 'Yes, I will. I will call you at seven.'],
+        ['Thiago', 'Perfeito. Você vai chamar a Ana também?', 'Perfect. Are you going to invite Ana too?'],
+        ['Letícia', 'Vou chamar ela, sim. Ela me ajudou muito esta semana.', 'Yes, I will invite her. She helped me a lot this week.'],
+        ['Thiago', 'Então me passa o número dela. Eu ligo pra ela hoje.', "Then give me her number. I will call her today."],
+        ['Letícia', 'Passo agora.', "I'll send it now."],
+      ]),
+      producao(5, "Roleplay aloud: you are in a café with a friend. Ask for the salt, ask him or her to call you later, say sorry for being late, and ask «Pode me ajudar?» using the pronoun at the start."),
+    ]),
+    sessao('S4', 'Review and practice of lesson 25', [
+      revisao(5, "Say the spoken form and then the written form: «I saw her.» «I want to see you.» «Call me.» «She helped us.»"),
+      exercicios(20, [
+        ouvir('Eu te vi ontem.', ['Eu te vi ontem.', 'Eu vi-te ontem.', 'Eu me vi ontem.'], 'Eu te vi ontem.', 'In speech the pronoun goes before the verb.'),
+        ouvir('Vou te ligar amanhã.', ['Vou te ligar amanhã.', 'Vou ligar-te amanhã.', 'Vou me ligar amanhã.'], 'Vou te ligar amanhã.', 'The pronoun goes before the second verb.'),
+        ouvir('Posso te ajudar?', ['Posso te ajudar?', 'Posso ajudar?', 'Posso me ajudar?'], 'Posso te ajudar?', 'A common offer: «Can I help you?»'),
+        ouvir('Me dá um minuto.', ['Me dá um minuto.', 'Dá-me um minuto.', 'Te dá um minuto.'], 'Me dá um minuto.', 'A spoken request with the pronoun at the start.'),
+        ouvir('Eu vi ele ontem.', ['Eu vi ele ontem.', 'Eu vi ela ontem.', 'Eu o vi ontem.'], 'Eu vi ele ontem.', 'In speech «ele» can be the object of «ver».'),
+        ouvir('Ela está me esperando.', ['Ela está me esperando.', 'Ela está te esperando.', 'Ela está esperando-me.'], 'Ela está me esperando.', 'The pronoun goes before the gerund.'),
+        ditado('Eu te mandei uma mensagem.', 'Write: Eu te mandei uma mensagem.'),
+        ditado('Quero te ver amanhã.', 'Write: Quero te ver amanhã.'),
+        ditado('Me liga depois.', 'Write: Me liga depois.'),
+        mc('Which is the usual spoken form of «I saw him yesterday»?', ['Eu vi ele ontem.', 'Eu vi-o ontem.', 'Eu ele vi ontem.'], 'Eu vi ele ontem.', 'Speech uses «ele» as the object; the hyphen form is formal or European.'),
+        mc('Which is the written form of «I want to see him»?', ['Quero vê-lo.', 'Quero ver-o.', 'Quero o ver-lo.'], 'Quero vê-lo.', '«Ver» loses the -r and becomes «vê» + «-lo».'),
+        mc('Which sentence has the correct order in spoken Brazilian Portuguese?', ['Ele não me ligou.', 'Ele não ligou-me.', 'Ele ligou não me.'], 'Ele não me ligou.', 'The pronoun goes between «não» and the verb.'),
+        mc('How does a formal written text say «Call me tomorrow»?', ['Ligue-me amanhã.', 'Me liga amanhã.', 'Ligue me amanhã.'], 'Ligue-me amanhã.', 'The written standard does not start with a pronoun; it uses the hyphen.'),
+        mc('How do you say politely «Can you help me?» at a counter?', ['Pode me ajudar, por favor?', 'Ajuda-me!', 'Me ajuda já!'], 'Pode me ajudar, por favor?', '«Pode» plus «por favor» is polite and natural.'),
+        mc('A friend asks «Você viu o filme?» What is the most natural short answer?', ['Vi.', 'Vi-o.', 'Eu vi ele o.'], 'Vi.', 'Brazilians often drop the object.'),
+        lacuna('Eu ___ chamei ontem. (you, spoken)', ['te', 'ti', 'tu'], 'te', 'The spoken pronoun for «você» is «te».'),
+        lacuna('Vou ___ mandar o endereço. (to you)', ['te', 'lhe', 'ti'], 'te', 'The pronoun goes before the second verb.'),
+        lacuna('Ele não ___ avisou. (me)', ['me', 'mim', 'eu'], 'me', '«Não me avisou» is the order.'),
+        lacuna('Eu a conheço. / Eu conheço ___. (spoken)', ['ela', 'a ela', 'lhe'], 'ela', 'In speech «ela» replaces «a».'),
+        ordem('Put in order: «Eu vou te ligar à noite.»', ['Eu', 'vou', 'te', 'ligar', 'à', 'noite.'], 'Eu vou te ligar à noite.', 'Subject, auxiliary, pronoun, infinitive.'),
+        livre('Write in Portuguese (spoken style): I waited for you and you did not call me.', 'Eu te esperei e você não me ligou.'),
+      ]),
+      producao(5, "Leave a voice message for a friend: say that you called him or her, that you are waiting, that you will send the address, and ask him or her to call you back."),
+    ]),
+  ],
+});

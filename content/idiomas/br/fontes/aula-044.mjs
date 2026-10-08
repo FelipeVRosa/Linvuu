@@ -1,0 +1,111 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 44, titulo: 'The subjunctive: purpose, time limits and conditions', nivel: 'b1',
+  objetivo: 'Use the conjunctions that always take the subjunctive (para que, antes que, até que, sem que, caso, embora, mesmo que, desde que, a menos que) and choose between them and the infinitive when the subject does not change.',
+  nota: 'You can now say why you do something («para que você entenda»), set a time limit («antes que chova», «até que ele chegue»), state conditions («desde que», «a menos que», «caso chova») and make concessions («embora», «mesmo que»). Next lesson: the imperfect subjunctive («se eu tivesse», «queria que você viesse»).',
+  sessoes: [
+    sessao('S1', 'Purpose and time limits', [
+      revisao(5, 'Say the present subjunctive of: chegar, entender, voltar, haver, chover, saber, ser, ir (for «você» or «ele»). Then make two sentences with «espero que» and two with «duvido que».'),
+      palavras(8, [
+        ['para que', 'PAH-rah kee', 'so that, in order that', ''], ['a fim de que', 'ah FEE~ djee kee', 'in order that (more formal)', ''], ['antes que', 'AH~-tchees kee', 'before (someone does something)', ''], ['até que', 'ah-TEH kee', 'until (someone does something)', ''],
+        ['sem que', 'SEH~ kee', 'without (someone doing something)', ''], ['caso', 'KAH-zoo', 'in case, if (it happens)', ''], ['embora', 'eh~-BOH-rah', 'although', ''], ['mesmo que', 'MEHZ-moo kee', 'even if', ''],
+      ]),
+      gramatica(12, 'Purpose and time limits: «para que», «antes que», «até que», «sem que»', "STEP 1: some conjunctions always take the subjunctive, because what comes after them has not happened yet, is only a goal, or is not presented as a fact. Learn them as a group. STEP 2: purpose. «Para que» and the more formal «a fim de que» mean «so that»: «Falo devagar para que você entenda», «Ele fala alto a fim de que todos ouçam». STEP 3: time limits. «Antes que» (before) and «até que» (until): «Vamos sair antes que chova», «Espere até que ele chegue». STEP 4: «sem que» means «without something happening»: «Ele entra sem que ninguém perceba». STEP 5: the same-subject rule from lesson 43 applies. When the subject does not change, use the preposition and the infinitive: «Estudo para passar» (not «para que eu passe»), «Antes de sair, feche a porta», «Fique aqui até terminar», «Ele saiu sem falar». STEP 6: in everyday speech, many Brazilians use «para» + a pronoun + infinitive instead of «para que»: «Falo devagar pra você entender». It is natural, and the subjunctive version is the one for writing.", {
+        tag: 'Subjunctive',
+        comparacao: "English says «so that you understand», «before it rains», «until he arrives», using the present tense, and «without anyone noticing», using -ing. Portuguese uses the same pattern (conjunction + que + verb) for all four, with the verb in the subjunctive. If you can substitute «so that», «before», «until» or «without» for the word in English, check whether the subject changes: if it does, use «que» and the subjunctive.",
+        tabela: [
+          { conjunction: 'para que', same_subject: 'para + infinitive', example: 'Falo devagar para que você entenda.', meaning: 'I speak slowly so that you understand.' },
+          { conjunction: 'a fim de que', same_subject: 'a fim de + infinitive', example: 'Ele fala alto a fim de que todos ouçam.', meaning: 'He speaks loudly so that everybody hears.' },
+          { conjunction: 'antes que', same_subject: 'antes de + infinitive', example: 'Vamos sair antes que chova.', meaning: 'Let us leave before it rains.' },
+          { conjunction: 'até que', same_subject: 'até + infinitive', example: 'Espere até que ele chegue.', meaning: 'Wait until he arrives.' },
+          { conjunction: 'sem que', same_subject: 'sem + infinitive', example: 'Ele entra sem que ninguém perceba.', meaning: 'He enters without anybody noticing.' },
+        ],
+        erros: [['Falo devagar para que você entende.', 'Falo devagar para que você entenda.', '«Para que» always takes the subjunctive.'], ['Espere até que ele chega.', 'Espere até que ele chegue.', 'A time limit that has not yet been reached takes the subjunctive.'], ['Estudo para que passar.', 'Estudo para passar.', 'Same subject: use «para» + infinitive.'], ['Ele saiu sem que falar.', 'Ele saiu sem falar.', 'Same subject: use «sem» + infinitive.']],
+      }),
+      producao(5, 'Say five sentences about what you do to help a friend, using «para que», «antes que», «até que» or «sem que» with the subjunctive, for example: «Eu ligo para que você não esqueça».'),
+    ]),
+    sessao('S2', 'Conditions and concession', [
+      revisao(4, 'Complete aloud: «Vamos sair antes que…», «Espere até que…», «Falo devagar para que…», «Ele entra sem que…».'),
+      palavras(6, [
+        ['desde que', 'DEZ-djee kee', 'provided that, as long as', ''], ['a menos que', 'ah MEH-noos kee', 'unless', ''], ['contanto que', 'koh~-TAH~-too kee', 'provided that', ''], ['ainda que', 'ah-EE~-dah kee', 'even if, although', ''], ['de modo que', 'djee MOH-doo kee', 'so that; so', ''], ['a trilha', 'ah TREE-lyah', 'the trail', ''],
+      ]),
+      gramatica(12, 'Conditions and concessions: «caso», «desde que», «a menos que», «embora», «mesmo que»', "STEP 1: conditions. «Caso» means «in case»: «Caso chova, a festa será dentro de casa». «Desde que» and «contanto que» mean «provided that»: «Você pode ir, desde que volte cedo». «A menos que» and «a não ser que» mean «unless»: «Vou sair, a menos que chova». STEP 2: concessions (contrasts). «Embora» (although) is followed by the subjunctive even when the fact is real: «Embora ele more longe, chega cedo». «Mesmo que» and «ainda que» (even if) are also followed by the subjunctive: «Mesmo que chova, eu vou». STEP 3: «de modo que» is both «so that» (purpose, subjunctive) and «so» (result, indicative): «Ele fala alto de modo que todos ouçam». STEP 4: «apesar de» + noun or infinitive is also «despite», but it does not take the subjunctive: «Apesar da chuva, fui», «Apesar de estar cansado, ele trabalhou». STEP 5: «desde que» has a second meaning, «since» in time, and then it takes the indicative: «Moro aqui desde que nasci». STEP 6: «se» (if) has its own rules, which you will study in lessons 46 and 47.", {
+        tag: 'Subjunctive',
+        comparacao: "English uses the indicative after «although», «unless» and «provided that»: «although he lives far away», «unless it rains». In Portuguese all of these take the subjunctive. This is the most useful list for writing: with «embora», «a menos que», «desde que» and «caso» your sentences sound much more natural.",
+        tabela: [
+          { conjunction: 'caso', meaning: 'in case', example: 'Caso chova, ficamos em casa.', translation: 'In case it rains, we stay home.' },
+          { conjunction: 'desde que / contanto que', meaning: 'provided that', example: 'Pode ir, desde que volte cedo.', translation: 'You can go, as long as you come back early.' },
+          { conjunction: 'a menos que / a não ser que', meaning: 'unless', example: 'Vou, a menos que chova.', translation: 'I will go, unless it rains.' },
+          { conjunction: 'embora', meaning: 'although', example: 'Embora more longe, chega cedo.', translation: 'Although he lives far away, he arrives early.' },
+          { conjunction: 'mesmo que / ainda que', meaning: 'even if', example: 'Mesmo que seja caro, eu compro.', translation: 'Even if it is expensive, I will buy it.' },
+        ],
+        erros: [['Embora ele mora longe, chega cedo.', 'Embora ele more longe, chega cedo.', '«Embora» always takes the subjunctive, even when the fact is real.'], ['Caso chove, ficamos em casa.', 'Caso chova, ficamos em casa.', '«Caso» takes the subjunctive.'], ['Vou, a menos que chove.', 'Vou, a menos que chova.', '«A menos que» takes the subjunctive.'], ['Apesar de que ela está cansada, trabalha.', 'Apesar de estar cansada, ela trabalha. / Embora esteja cansada, ela trabalha.', '«Apesar de» is followed by a noun or an infinitive. With a full clause, use «embora» + subjunctive.']],
+      }),
+      dialogo(8, 'A hike on Saturday', 'Beatriz and Daniel plan a hike for Saturday morning.', [
+        ['Beatriz', 'Vamos sair cedo, para que a gente chegue antes do calor.', 'Let us leave early, so that we arrive before the heat.'],
+        ['Daniel', 'Boa ideia. A que horas você quer sair?', 'Good idea. What time do you want to leave?'],
+        ['Beatriz', 'Às seis. Caso chova, a gente deixa para o domingo.', 'At six. In case it rains, we leave it for Sunday.'],
+        ['Daniel', 'Combinado. Eu levo o lanche, a menos que você prefira comprar na estrada.', 'Agreed. I will bring the snack, unless you prefer to buy it on the road.'],
+        ['Beatriz', 'Pode levar, contanto que não seja muito pesado.', 'You can bring it, as long as it is not too heavy.'],
+        ['Daniel', 'Não vai ser. Embora a trilha seja curta, é bom levar bastante água.', 'It will not be. Although the trail is short, it is good to bring plenty of water.'],
+        ['Beatriz', 'Claro. Vou mandar mensagem para a Júlia agora, antes que ela saia de casa.', 'Of course. I will send Júlia a message now, before she leaves home.'],
+        ['Daniel', 'Boa. E mesmo que ela não possa vir, a gente vai.', 'Good. And even if she cannot come, we are going.'],
+      ]),
+    ]),
+    sessao('S3', 'Subjunctive, infinitive or indicative?', [
+      revisao(4, 'Say three sentences with «embora» and three with «desde que», each with a verb in the subjunctive.'),
+      palavras(5, [
+        ['regar', 'heh-GAR', 'to water (plants)', ''], ['a planta', 'ah PLAH~-tah', 'the plant', ''], ['a portaria', 'ah por-tah-REE-ah', 'the lobby, the front desk (of a building)', ''], ['à vontade', 'ah voh~-TAH-djee', 'at ease; make yourself at home', ''], ['atrasar', 'ah-trah-ZAR', 'to be late, to delay', ''],
+      ]),
+      gramatica(8, 'Choosing between infinitive, indicative and subjunctive', "STEP 1: first ask: does the subject stay the same? If yes, use the preposition + infinitive: «antes de sair», «para passar», «sem falar», «apesar de estar cansado». STEP 2: if there is a new subject and the idea is a purpose, a time limit, a condition or a concession, use the conjunction + «que» + subjunctive: «antes que ele saia», «para que ela passe», «embora esteja cansado». STEP 3: if the idea is a real fact and a reason, use the indicative: «porque», «já que», «como» (since), «enquanto», «portanto»: «Fiquei em casa porque estava cansado», «Já que você está aqui, vamos comer». STEP 4: «quando», «assim que», «depois que» and «se» refer to a future event with a special form, the future subjunctive, in lesson 46. For habits and past events they take the indicative: «Quando chego em casa, tomo banho», «Quando cheguei, ele já tinha saído». STEP 5: a quick test: if you could add «hopefully», «maybe» or «not yet» to the idea, it is probably subjunctive; if you could add «really» or «as we know», it is indicative.", {
+        tag: 'Subjunctive',
+        comparacao: "English does not care about this choice because the verb does not change. In Portuguese the decision depends on two questions: is the subject the same, and is the idea a fact? If the subject is the same, use an infinitive. If it is not a fact, use the subjunctive.",
+        tabela: [
+          { idea: 'same subject', pattern: 'preposition + infinitive', example: 'Antes de sair, feche a porta.' },
+          { idea: 'new subject, not a fact', pattern: 'conjunction + que + subjunctive', example: 'Feche a porta antes que ele saia.' },
+          { idea: 'real reason (fact)', pattern: 'porque, já que, como + indicative', example: 'Fiquei porque estava cansado.' },
+          { idea: 'time, habit', pattern: 'quando + indicative', example: 'Quando chego, tomo banho.' },
+          { idea: 'time, future', pattern: 'quando + future subjunctive (lesson 46)', example: 'Quando eu chegar, tomo banho.' },
+        ],
+        erros: [['Saí de casa antes que chegar.', 'Saí de casa antes de chegar.', 'Same subject: «antes de» + infinitive.'], ['Moro aqui desde que nasço.', 'Moro aqui desde que nasci.', 'Here «desde que» means «since» and takes the indicative, in the past.'], ['Fiquei em casa porque esteja cansado.', 'Fiquei em casa porque estava cansado.', '«Porque» gives a real reason: indicative.']],
+      }),
+      texto(8, 'Instructions for the neighbor', "Querido vizinho, obrigada por cuidar da casa. Vou deixar a chave na portaria, para que você possa entrar sem que ninguém precise abrir. Regue as plantas antes que o sol esquente. Dê comida ao gato duas vezes por dia, embora ele peça mais. Fique à vontade, desde que não use o computador do escritório. Fique com a chave até que eu volte. Caso aconteça algum problema, ligue para a minha irmã. Mesmo que seja tarde, ela atende. Volto no dia 20, a menos que o voo atrase. Um abraço, Dona Marta.", "Dear neighbor, thank you for looking after the house. I will leave the key at the front desk, so that you can come in without anyone needing to open the door. Water the plants before the sun gets hot. Feed the cat twice a day, although he will ask for more. Make yourself at home, as long as you do not use the computer in the office. Keep the key until I come back. In case any problem comes up, call my sister. Even if it is late, she will answer. I come back on the 20th, unless the flight is late. A hug, Dona Marta.", [
+        ['Where will the key be left? (answer in Portuguese)', 'Na portaria.'],
+        ['When should the neighbor water the plants? (answer in Portuguese)', 'Antes que o sol esquente.'],
+        ['What is the neighbor not allowed to use? (answer in Portuguese)', 'O computador do escritório.'],
+        ['When will Dona Marta return, and what may change it? (answer in Portuguese)', 'No dia 20, a menos que o voo atrase.'],
+      ]),
+      producao(5, 'Write a note for a house guest. Include one sentence each with «para que», «antes que», «caso», «desde que» and «embora».'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 44', [
+      revisao(5, 'Say aloud the nine key conjunctions of the lesson (para que, antes que, até que, sem que, caso, embora, mesmo que, desde que, a menos que) and one sentence with each.'),
+      exercicios(20, [
+        ouvir('Falo devagar para que você entenda.', ['Falo devagar para que você entenda.', 'Falo devagar para que você entende.', 'Falo devagar porque você entende.'], 'Falo devagar para que você entenda.', '«Para que» takes the subjunctive: «entenda».'),
+        ouvir('Espere até que ele chegue.', ['Espere até que ele chegue.', 'Espere até que ele chega.', 'Espere quando ele chegou.'], 'Espere até que ele chegue.', 'A time limit not yet reached: subjunctive.'),
+        ouvir('Vamos sair antes que chova.', ['Vamos sair antes que chova.', 'Vamos sair antes de chover.', 'Vamos sair depois que chove.'], 'Vamos sair antes que chova.', '«Antes que» always takes the subjunctive.'),
+        ouvir('Embora ele more longe, chega cedo.', ['Embora ele more longe, chega cedo.', 'Embora ele mora longe, chega cedo.', 'Porque ele mora longe, chega cedo.'], 'Embora ele more longe, chega cedo.', '«Embora» takes the subjunctive.'),
+        ouvir('Pode ir, desde que volte cedo.', ['Pode ir, desde que volte cedo.', 'Pode ir, desde que volta cedo.', 'Pode ir, desde que voltou cedo.'], 'Pode ir, desde que volte cedo.', 'Condition «desde que»: subjunctive.'),
+        ditado('Caso chova, ficamos em casa.', 'Write: Caso chova, ficamos em casa.'),
+        ditado('Mesmo que seja caro, eu compro.', 'Write: Mesmo que seja caro, eu compro.'),
+        ditado('Ele saiu sem falar.', 'Write: Ele saiu sem falar. Same subject: infinitive.'),
+        mc('Which conjunction means «so that»?', ['para que', 'embora', 'antes que'], 'para que', '«Para que» expresses purpose.'),
+        mc('Which sentence is correct when the subject is the same?', ['Estudo para passar.', 'Estudo para que passo.', 'Estudo para que passar.'], 'Estudo para passar.', 'Same subject: «para» + infinitive.'),
+        mc('Which expression means «unless»?', ['a menos que', 'desde que', 'embora'], 'a menos que', '«A menos que» takes the subjunctive.'),
+        mc('What does «embora» mean?', ['although', 'because', 'when'], 'although', 'It expresses a contrast.'),
+        mc('Which sentence is correct?', ['Espere até que ele chegue.', 'Espere até que ele chega.', 'Espere até que ele chegou.'], 'Espere até que ele chegue.', 'Subjunctive after «até que».'),
+        lacuna('Vamos sair antes que ___. (chover)', ['chova', 'chove', 'choveu'], 'chova', '-er verbs take «a»: «chova».'),
+        lacuna('Fale devagar para que todos ___. (entender)', ['entendam', 'entendem', 'entenderam'], 'entendam', 'Plural subjunctive of «entender».'),
+        lacuna('Caso ___ problema, me ligue. (haver)', ['haja', 'há', 'houve'], 'haja', 'Subjunctive of «haver»: «haja».'),
+        lacuna('Embora ele ___ cansado, trabalha muito. (estar)', ['esteja', 'está', 'estava'], 'esteja', 'Subjunctive of «estar»: «esteja».'),
+        lacuna('Pode sair, desde que ___ cedo. (voltar)', ['volte', 'volta', 'voltou'], 'volte', '-ar verbs take «e»: «volte».'),
+        lacuna('___ de sair, feche a porta. (before)', ['Antes', 'Antes que', 'Até que'], 'Antes', 'Same subject: «antes de» + infinitive.'),
+        ordem('Put in order: «Fale devagar para que eu entenda.»', ['Fale', 'devagar', 'para', 'que', 'eu', 'entenda.'], 'Fale devagar para que eu entenda.', 'Purpose clause with the subjunctive.'),
+        ordem('Put in order: «Caso chova, ficamos em casa.»', ['Caso', 'chova,', 'ficamos', 'em', 'casa.'], 'Caso chova, ficamos em casa.', '«Caso» + subjunctive opens the sentence.'),
+        livre('Write in Portuguese: Wait until he arrives.', 'Espere até que ele chegue.'),
+        livre('Write in Portuguese: I speak slowly so that you understand.', 'Falo devagar para que você entenda.'),
+      ]),
+      producao(5, 'Describe the rules of your home, school or workplace to a new person, with one sentence each of purpose, time limit, condition and concession (for example: «Pode usar a sala, desde que…»).'),
+    ]),
+  ],
+});

@@ -1,0 +1,110 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 21, titulo: 'The imperfect: how things used to be', nivel: 'a2',
+  objetivo: 'Form the imperfect (pretérito imperfeito) of regular verbs and of the four irregular ones (ser, ter, vir, pôr), and use it to describe your childhood, past habits, people, places, age, time and weather.',
+  nota: 'You can describe how things used to be: where you lived, what you did every day, what people and places were like. Next lesson: perfeito and imperfeito together, to tell a complete story.',
+  sessoes: [
+    sessao('S1', 'Forming the imperfect', [
+      revisao(5, 'Tell three things that happened yesterday, using the simple past: one with a regular verb, one with «fui» or «tive», one with «fiz» or «disse».'),
+      palavras(8, [
+        ['quando eu era criança', 'KWAH~-doo EH-oo EH-rah kree-AH~-sah', 'when I was a child', ''], ['a infância', 'ah een-FAH~-see-ah', 'childhood', ''], ['antigamente', 'ah~-tchee-gah-MEHN-tchee', 'in the old days, formerly', ''], ['naquela época', 'nah-KEH-lah EH-poh-kah', 'at that time', ''],
+        ['sempre', 'SEHM-pree', 'always', ''], ['todo dia', 'TOH-doo DJEE-ah', 'every day', ''], ['toda semana', 'TOH-dah seh-MAH-nah', 'every week', ''], ['às vezes', 'ahs VEH-zees', 'sometimes', ''],
+        ['de vez em quando', 'djee VEHZ eh~ KWAH~-doo', 'from time to time', ''], ['o interior', 'oo een-teh-ree-OR', 'the countryside, the inland region', ''],
+      ]),
+      gramatica(12, 'Pretérito imperfeito: -ar, -er and -ir', "STEP 1: the «pretérito imperfeito» describes the past without saying when it began or ended. It is the tense of habits («Eu jogava futebol todo sábado»), of descriptions («A casa era grande») and of a scene in progress. STEP 2: for -ar verbs remove «-ar» and add: -ava, -ava, -ávamos, -avam. «Falar» becomes «falava, falava, falávamos, falavam». STEP 3: for -er and -ir verbs remove the ending and add: -ia, -ia, -íamos, -iam. «Comer» becomes «comia, comia, comíamos, comiam»; «abrir» becomes «abria, abria, abríamos, abriam». STEP 4: «eu», «você», «ele», «ela» and «a gente» all have the same form: «eu falava, você falava, ela falava, a gente falava». Use the pronoun when it is not clear who does the action. STEP 5: «nós» has a written accent: «falávamos», «comíamos». In everyday speech Brazilians prefer «a gente falava» to «nós falávamos». STEP 6: stress: «falava» is fah-LAH-vah, «comia» is koh-MEE-ah, «falavam» is fah-LAH-vah~oo. STEP 7: the imperfect is regular for all verbs except four: ser, ter, vir and pôr (next block).", {
+        tag: 'Imperfect',
+        comparacao: "English has no single tense for this. It uses «used to», «would» or «was/were -ing»: «I used to play», «I would play every Saturday», «I was playing». Portuguese uses one form for all three: «eu jogava». The spelling is easy: -ava for -ar verbs and -ia for -er and -ir verbs, without exceptions apart from four verbs.",
+        tabela: [
+          { person: 'eu', falar: 'falava', comer: 'comia', abrir: 'abria' },
+          { person: 'você, ele, ela, a gente', falar: 'falava', comer: 'comia', abrir: 'abria' },
+          { person: 'nós', falar: 'falávamos', comer: 'comíamos', abrir: 'abríamos' },
+          { person: 'vocês, eles, elas', falar: 'falavam', comer: 'comiam', abrir: 'abriam' },
+        ],
+        exemplos: [['Quando eu era criança, eu morava no interior.', 'When I was a child, I lived in the countryside.'], ['A gente brincava na rua todo dia.', 'We played in the street every day.'], ['Meu avô trabalhava numa fazenda.', 'My grandfather worked on a farm.'], ['Eles comiam muito pão.', 'They used to eat a lot of bread.']],
+        erros: [['Eu falavo português.', 'Eu falava português.', 'The «eu» form of the imperfect ends in -a, the same as ele/ela: falava.'], ['Eu comiava.', 'Eu comia.', '-er and -ir verbs take -ia, not -iava.'], ['Nós falavamos.', 'Nós falávamos.', 'The «nós» form needs a written accent: falávamos.'], ['Quando eu era criança, eu vivi no interior (as a general description).', 'Quando eu era criança, eu vivia no interior.', 'A situation over a period, without a clear end, uses the imperfect.']],
+      }),
+      producao(5, 'Say three things you did every day when you were a child, with -ar verbs: brincar, estudar, jogar, ajudar, assistir. Use «todo dia» or «sempre».', 'Todo dia eu brincava na rua. Eu estudava de manhã. Sempre ajudava a minha mãe.'),
+    ]),
+    sessao('S2', 'Irregular verbs and the uses of the imperfect', [
+      revisao(4, 'Say the imperfect of «morar», «comer» and «abrir» for «eu» and «nós» (morava, morávamos...).'),
+      palavras(6, [
+        ['costumar', 'koh-stoo-MAHR', 'to be used to; to usually do', ''], ['o costume', 'oo koh-STOO-mee', 'habit, custom (not a costume)', ''], ['a fazenda', 'ah fah-ZEHN-dah', 'farm, ranch', ''], ['o quintal', 'oo kee~-TAH-oo', 'backyard', ''], ['brincar', 'bree~-KAHR', 'to play (children)', ''],
+        ['o vizinho', 'oo vee-ZEE-nyoo', 'neighbor', ''], ['a bicicleta', 'ah bee-see-KLEH-tah', 'bicycle', ''], ['pequeno', 'peh-KEH-noo', 'small', ''],
+      ]),
+      gramatica(12, '«Ser», «ter», «vir», «pôr» and «ir/ver» in the imperfect', "STEP 1: only four verbs are irregular in the imperfect. «Ser» becomes «era, era, éramos, eram». «Ter» becomes «tinha, tinha, tínhamos, tinham». «Vir» becomes «vinha, vinha, vínhamos, vinham». «Pôr» becomes «punha, punha, púnhamos, punham». STEP 2: «ir» and «ver» are regular: «ia, ia, íamos, iam» and «via, via, víamos, viam». STEP 3: «ser» is used for descriptions and for time: «A casa era grande. Eram duas horas.» (Note «eram» when the hour is plural.) STEP 4: «ter» also gives age: «Eu tinha dez anos.» (I was ten.) In daily speech «tinha» also means «there was / there were»: «Tinha muita gente na festa.» In writing you may see «havia», with the same meaning. STEP 5: use the imperfect for the weather and the setting of a scene: «Fazia frio. Chovia.» (It was cold. It was raining.) STEP 6: for an action in progress use «estar» in the imperfect plus the gerund: «estava, estava, estávamos, estavam» + -ando, -endo, -indo: «Eu estava dormindo.» (I was sleeping.) STEP 7: to say «used to», you can add «costumar» in the imperfect plus the infinitive: «Eu costumava acordar cedo.» The noun «costume» means habit: it is a false friend, because the English «costume» (fantasia in Portuguese) is not a «costume».", {
+        tag: 'Imperfect',
+        comparacao: "English «was» and «were» have a clear counterpart in «era» and «eram»: «It was big» is «Era grande». But English «there was» becomes «tinha» or «havia» in the past. And «I was ten years old» is «Eu tinha dez anos», never «Eu era dez anos». A false friend: «costume» in Portuguese means habit or custom, not a theatre or party costume.",
+        tabelas: [
+          { titulo: 'Irregular imperfect', linhas: [
+            { person: 'eu, você, ele, ela, a gente', ser: 'era', ter: 'tinha', vir: 'vinha', pôr: 'punha' },
+            { person: 'nós', ser: 'éramos', ter: 'tínhamos', vir: 'vínhamos', pôr: 'púnhamos' },
+            { person: 'vocês, eles, elas', ser: 'eram', ter: 'tinham', vir: 'vinham', pôr: 'punham' },
+          ] },
+          { titulo: 'Regular but frequent', linhas: [
+            { person: 'eu, você, ele, ela, a gente', ir: 'ia', ver: 'via', estar: 'estava' },
+            { person: 'nós', ir: 'íamos', ver: 'víamos', estar: 'estávamos' },
+            { person: 'vocês, eles, elas', ir: 'iam', ver: 'viam', estar: 'estavam' },
+          ] },
+        ],
+        exemplos: [['Eu tinha dez anos.', 'I was ten years old.'], ['A casa era pequena e tinha um quintal.', 'The house was small and had a backyard.'], ['Todo domingo a gente ia à casa da minha avó.', 'Every Sunday we went to my grandmother\'s house.'], ['Eles costumavam acordar cedo.', 'They used to wake up early.']],
+        erros: [['Eu era dez anos.', 'Eu tinha dez anos.', 'Age uses «ter»: tinha dez anos.'], ['Eu tinhava um cachorro.', 'Eu tinha um cachorro.', '«Ter» is irregular in the imperfect: tinha.'], ['Eu iava à praia.', 'Eu ia à praia.', 'The imperfect of «ir» is «ia».'], ['Eu costumo ir à praia (for a past habit).', 'Eu costumava ir à praia.', 'To say «used to», put «costumar» in the imperfect.']],
+      }),
+      producao(8, 'Describe your childhood home or the street where you lived: size, rooms, neighbors, what you did there. At least five sentences with «era», «tinha», «ia» or «brincava».', 'A minha casa era pequena, mas tinha um quintal grande. Os vizinhos eram simpáticos. A gente brincava na rua todo dia.'),
+    ]),
+    sessao('S3', 'Describing the past and a conversation with a grandmother', [
+      revisao(4, 'Say the imperfect of «ser», «ter», «ir» and «ver» for «eu» and «eles» out loud.'),
+      palavras(5, [
+        ['a lembrança', 'ah leh~-BRAH~-sah', 'memory, souvenir', ''], ['a saudade', 'ah sah-oo-DAH-djee', 'the feeling of missing someone or something', ''], ['a carta', 'ah KAR-tah', 'letter', ''], ['crescer', 'kreh-SEHR', 'to grow up', ''],
+        ['contar', 'koh~-TAHR', 'to tell (a story); to count', ''], ['mudar', 'moo-DAHR', 'to change; to move (house)', ''], ['divertido', 'djee-vehr-TCHEE-doo', 'fun', ''], ['o rádio', 'oo HAH-djee-oo', 'radio', ''],
+      ]),
+      gramatica(8, 'Pronoun «a gente», «ia + infinitive» and describing people', "STEP 1: «a gente» is the spoken form for «nós» and takes the third person singular: «A gente morava no interior» (We lived in the countryside). Write «nós morávamos» in formal texts. STEP 2: to describe people, use «ser» and «ter» in the imperfect: «Minha avó era baixa e tinha olhos verdes.» STEP 3: «ia + infinitive» is the imperfect of the near future: it means «was going to» or «would»: «Eu ia viajar, mas fiquei doente.» (I was going to travel but I got sick.) This pattern appears again in the next lesson. STEP 4: «saudade» has no one-word translation in English: it is the warm ache of missing someone or something. «Tenho saudade da minha infância» (I miss my childhood) is a very common sentence. STEP 5: the imperfect is also used to be polite («Eu queria um café», «Eu ia pedir uma coisa»), which you will see more in lesson 29. STEP 6: when you do not know how to start a childhood story, the usual formula is «Quando eu era criança...» or «Antigamente...».", {
+        tag: 'Imperfect',
+        comparacao: "English «used to» and «was going to» both exist, but they are a structure of two words. In Portuguese, one word does the work: «morava», «ia viajar». Note too that «a gente» is a noun in form (the people) but works as a pronoun «we» and takes the singular verb.",
+        exemplos: [['Quando a gente era criança, tudo era mais simples.', 'When we were children, everything was simpler.'], ['Meu avô era alto e tinha bigode.', 'My grandfather was tall and had a mustache.'], ['Eu ia ligar, mas era muito tarde.', 'I was going to call, but it was too late.'], ['Tenho saudade da casa da minha avó.', 'I miss my grandmother\'s house.']],
+        erros: [['A gente morávamos no interior.', 'A gente morava no interior.', '«A gente» takes the verb in the singular: morava.'], ['Minha avó estava baixa.', 'Minha avó era baixa.', 'A lasting trait uses «ser», not «estar».'], ['Eu sou saudade.', 'Eu tenho saudade.', 'You «have» saudade; you do not «are» it.']],
+      }),
+      dialogo(8, 'Grandma\'s childhood', 'Larissa asks her grandmother Dona Marta about her childhood in a small town.', [
+        ['Larissa', 'Vó, como era a sua vida quando a senhora era criança?', 'Grandma, what was your life like when you were a child?'],
+        ['Dona Marta', 'Eu morava numa cidade pequena no interior. A casa era simples, mas tinha um quintal enorme.', 'I lived in a small town in the countryside. The house was simple, but it had an enormous backyard.'],
+        ['Larissa', 'E o que a senhora fazia depois da escola?', 'And what did you do after school?'],
+        ['Dona Marta', 'Eu brincava na rua com os vizinhos. Meu pai trabalhava na fazenda e a minha mãe cozinhava.', 'I played in the street with the neighbors. My father worked on the farm and my mother cooked.'],
+        ['Larissa', 'Vocês tinham televisão?', 'Did you have a television?'],
+        ['Dona Marta', 'Não! Em casa só tinha rádio. À noite a gente ouvia histórias e músicas.', 'No! At home there was only a radio. At night we listened to stories and music.'],
+        ['Larissa', 'Que diferente! A senhora gostava dessa vida?', 'How different! Did you like that life?'],
+        ['Dona Marta', 'Gostava muito. Era simples, mas eu era feliz. Até hoje eu tenho saudade daquele tempo.', 'I liked it a lot. It was simple, but I was happy. To this day I miss that time.'],
+      ]),
+      producao(5, 'Ask a grandparent or an imaginary older person three questions about the past: «Como era...?», «O que você fazia...?», «Onde você morava?». Then answer them yourself about your own childhood.'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 21', [
+      revisao(5, 'Say aloud: eu falava, nós falávamos, eles comiam, ela abria, eu era, eu tinha, eu ia, eu via.'),
+      exercicios(20, [
+        ouvir('Eu morava no interior.', ['Eu morava no interior.', 'Eu morei no interior.', 'Eu moro no interior.'], 'Eu morava no interior.', '«Morava» is the imperfect: a situation over time.'),
+        ouvir('A casa era pequena.', ['A casa era pequena.', 'A casa foi pequena.', 'A casa é pequena.'], 'A casa era pequena.', '«Era» describes a place in the past.'),
+        ouvir('Eles brincavam na rua.', ['Eles brincavam na rua.', 'Eles brincaram na rua.', 'Eles brincam na rua.'], 'Eles brincavam na rua.', 'The plural ending is -avam.'),
+        ouvir('Eu tinha dez anos.', ['Eu tinha dez anos.', 'Eu tive dez anos.', 'Eu tenho dez anos.'], 'Eu tinha dez anos.', 'Age in the past uses «tinha».'),
+        ouvir('Nós íamos à praia.', ['Nós íamos à praia.', 'Nós fomos à praia.', 'Nós vamos à praia.'], 'Nós íamos à praia.', '«Íamos» is the imperfect of ir with nós.'),
+        ouvir('Tenho saudade da minha infância.', ['Tenho saudade da minha infância.', 'Tenho vontade da minha infância.', 'Tenho idade da minha infância.'], 'Tenho saudade da minha infância.', '«Saudade» is the feeling of missing something.'),
+        ditado('Quando eu era criança, eu brincava na rua.', 'Write: Quando eu era criança, eu brincava na rua.'),
+        ditado('A gente ouvia rádio à noite.', 'Write: A gente ouvia rádio à noite.'),
+        ditado('Meu avô trabalhava numa fazenda.', 'Write: Meu avô trabalhava numa fazenda.'),
+        mc('Which sentence uses the correct form for «nós»?', ['Nós falávamos.', 'Nós falavamos.', 'Nós falaríamos.'], 'Nós falávamos.', 'The «nós» form has a written accent.'),
+        mc('How do you say «I was ten years old»?', ['Eu tinha dez anos.', 'Eu era dez anos.', 'Eu estava dez anos.'], 'Eu tinha dez anos.', 'Age uses «ter».'),
+        mc('Which verb form means «used to eat»?', ['comia', 'comeu', 'comi'], 'comia', '«Comia» is the imperfect.'),
+        mc('What does «Tinha muita gente» mean?', ['There were many people.', 'He had many people.', 'There will be many people.'], 'There were many people.', 'In daily speech «tinha» means there was / there were.'),
+        mc('What does the Portuguese word «costume» mean?', ['habit, custom', 'a party outfit', 'a suit'], 'habit, custom', 'It is a false friend: a costume in the English sense is a «fantasia».'),
+        mc('Which sentence uses «a gente» correctly?', ['A gente morava no interior.', 'A gente morávamos no interior.', 'A gente moravam no interior.'], 'A gente morava no interior.', '«A gente» takes the singular verb.'),
+        lacuna('Quando eu era criança, eu ___ na rua. (brincar)', ['brincava', 'brinquei', 'brinco'], 'brincava', 'Habit in the past: imperfect.'),
+        lacuna('Minha avó ___ simpática. (ser)', ['era', 'foi', 'é'], 'era', 'A description uses «era».'),
+        lacuna('Eu ___ muitos livros. (ter)', ['tinha', 'tive', 'tenho'], 'tinha', 'A past situation: «tinha».'),
+        lacuna('Eles ___ à escola de bicicleta. (ir)', ['iam', 'foram', 'vão'], 'iam', 'The plural imperfect of ir is «iam».'),
+        lacuna('Eu ___ dormindo quando ela ligou. (estar)', ['estava', 'estive', 'estou'], 'estava', 'An action in progress: «estava» + gerund.'),
+        ordem('Put in order: «A casa era grande.»', ['A', 'casa', 'era', 'grande.'], 'A casa era grande.', 'Subject, verb, adjective.'),
+        ordem('Put in order: «Todo dia a gente brincava na rua.»', ['Todo', 'dia', 'a', 'gente', 'brincava', 'na', 'rua.'], 'Todo dia a gente brincava na rua.', 'Time expression first, then subject and verb.'),
+        livre('Write in Portuguese: When I was a child, I lived in a small town and played in the street.', 'Quando eu era criança, eu morava numa cidade pequena e brincava na rua.'),
+        livre('Write in Portuguese: My grandfather was tall and worked on a farm.', 'Meu avô era alto e trabalhava numa fazenda.'),
+      ]),
+      producao(5, 'Describe your childhood in at least six sentences: where you lived, the house, your family, what you did every day. Use «a gente» once.'),
+    ]),
+  ],
+});

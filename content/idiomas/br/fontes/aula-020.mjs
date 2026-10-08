@@ -1,0 +1,106 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 20, titulo: 'Simple past: irregular verbs', nivel: 'a2',
+  objetivo: 'Use the irregular forms of the simple past (ser/ir, ter, estar, fazer, dizer, poder, querer, saber, pôr, ver, vir, dar, trazer) to tell what happened, where you went and what you did, in real conversations.',
+  nota: 'You can now narrate a weekend or a trip with the most frequent irregular verbs. Next lesson: the imperfect, to say how things used to be and to describe the past.',
+  sessoes: [
+    sessao('S1', '«Fui», «tive» and «estive»', [
+      revisao(5, 'Tell what you did last weekend with three regular verbs in the past (falar, comer, almoçar, assistir...). Example: «No sábado eu almocei com a minha avó.»'),
+      palavras(8, [
+        ['a festa', 'ah FEHS-tah', 'party', ''], ['a praia', 'ah PRAH-ee-ah', 'beach', ''], ['a viagem', 'ah vee-AH-zheh~ee', 'trip, journey', ''], ['o cinema', 'oo see-NEH-mah', 'cinema, movie theater', ''],
+        ['visitar', 'vee-zee-TAHR', 'to visit', ''], ['passear', 'pah-see-AHR', 'to go for a walk or a ride', ''], ['ao, à', 'OW, AH', 'to the (a + o, a + a)', ''], ['no fim de semana', 'noo FEE~ djee seh-MAH-nah', 'at the weekend', ''],
+        ['na sexta-feira', 'nah SEHS-tah FAY-rah', 'on Friday', ''], ['de repente', 'djee heh-PEHN-tchee', 'suddenly', ''],
+      ]),
+      gramatica(12, '«Ser/ir», «ter» and «estar» in the simple past', "STEP 1: some of the most frequent verbs are irregular in the past. You learn them as whole forms, because the stem changes. The endings also differ from the regular ones: the «eu» form ends in -i or -e and the third person has no -ou. STEP 2: «ser» and «ir» share the same past: «fui, foi, foi, fomos, foram». Only the context tells them apart: «Eu fui professor» (I was a teacher, from ser) and «Eu fui ao mercado» (I went to the market, from ir). STEP 3: «ter» becomes «tive, teve, teve, tivemos, tiveram». «Ontem eu tive uma reunião.» (Yesterday I had a meeting.) STEP 4: «estar» becomes «estive, esteve, esteve, estivemos, estiveram». It is used for presence in a place: «Estive em Salvador no ano passado.» STEP 5: with «ir» the preposition is «a» (ao, à) in careful speech, but in daily Brazilian speech people say «Fui no mercado» and «Fui na praia». Both are fine; use «ao/à» in writing. With a destination such as «casa» or a city, use «para» or nothing: «Fui para casa», «Fui a São Paulo». STEP 6: «foi» can be ser or ir, and only the sentence tells you which: «Como foi a festa?» is about ser (How was the party?), «Ela foi à festa» is about ir (She went to the party).", {
+        tag: 'Simple past, irregular',
+        comparacao: "English also has an irregular past for the most common verbs (go, went; have, had; be, was). In Portuguese the same happens, with a twist: ser (to be) and ir (to go) share one past form, «fui», so «I was» and «I went» can look the same. Note that the English «I was in Paris» is «Eu estive em Paris», not «fui».",
+        tabela: [
+          { person: 'eu', ser_ir: 'fui', ter: 'tive', estar: 'estive' },
+          { person: 'você, ele, ela, a gente', ser_ir: 'foi', ter: 'teve', estar: 'esteve' },
+          { person: 'nós', ser_ir: 'fomos', ter: 'tivemos', estar: 'estivemos' },
+          { person: 'vocês, eles, elas', ser_ir: 'foram', ter: 'tiveram', estar: 'estiveram' },
+        ],
+        exemplos: [['Eu fui à praia no domingo.', 'I went to the beach on Sunday.'], ['A gente teve uma festa em casa.', 'We had a party at home.'], ['Ela esteve no Rio na semana passada.', 'She was in Rio last week.'], ['Eles foram ao cinema ontem.', 'They went to the cinema yesterday.']],
+        erros: [['Eu fiu ao mercado.', 'Eu fui ao mercado.', 'The «eu» form of ser and ir is «fui».'], ['Ontem eu tenho uma reunião.', 'Ontem eu tive uma reunião.', 'A past time word needs the past: tive.'], ['Eu estava em Salvador (for a past visit)', 'Eu estive em Salvador.', 'A finished stay uses «estive». «Estava» is for a background situation (lesson 21).'], ['Eles foi ao cinema.', 'Eles foram ao cinema.', 'Plural subject: -ram.']],
+      }),
+      producao(5, 'Say where you went last weekend and what you had (a party, a meeting, a trip). Use «fui», «tive» and «estive» at least once.', 'No sábado eu fui a uma festa. No domingo eu estive em casa e tive muito trabalho.'),
+    ]),
+    sessao('S2', '«Fiz», «disse», «pude»: the irregular stems', [
+      revisao(4, 'Conjugate «ser/ir», «ter» and «estar» in the past: fui, tive, estive; fomos, tivemos, estivemos.'),
+      palavras(6, [
+        ['fazer', 'fah-ZEHR', 'to do, to make', ''], ['dizer', 'djee-ZEHR', 'to say, to tell', ''], ['poder', 'poh-DEHR', 'to be able to, can', ''], ['querer', 'keh-REHR', 'to want', ''], ['saber', 'sah-BEHR', 'to know; to find out', ''],
+        ['pôr', 'POHR', 'to put', ''], ['a reunião', 'ah heh-oo-nee-OW~', 'meeting', ''], ['a prova', 'ah PROH-vah', 'exam, test', ''], ['conseguir', 'koh~-seh-GEER', 'to manage to', ''],
+      ]),
+      gramatica(12, '«Fazer», «dizer», «poder», «querer», «saber» and «pôr»', "STEP 1: these six verbs change their stem in the past: the vowel or consonant changes and the endings are -e / -e (without -ou) in the third person: «fiz, fez, fez, fizemos, fizeram». STEP 2: here are the six verbs in the past. «Fazer»: fiz, fez, fizemos, fizeram. «Dizer»: disse, disse, dissemos, disseram. «Poder»: pude, pôde, pudemos, puderam. «Querer»: quis, quis, quisemos, quiseram. «Saber»: soube, soube, soubemos, souberam. «Pôr»: pus, pôs, pusemos, puseram. STEP 3: the written accents matter: «pôde» (past, from poder) is different from «pode» (present). In the same way «pôs» (past) differs from «põe» (present). STEP 4: some of these verbs change meaning in the past. «Eu não pude ir» means I tried and could not go. «Eu soube» means I found out (I did not know and then I learned). «Eu não quis» means I refused. For the idea of wanting or knowing as a background situation you will use the imperfect in lesson 21: «eu queria», «eu sabia». STEP 5: «fazer» is used in the question «O que você fez?» (What did you do?). The answer repeats the verb or uses another: «Fiz o jantar.» or «Cozinhei.». STEP 6: derived verbs follow the same pattern: «desfazer» (undo) and «refazer» (redo) work like «fazer»; «pôr» also gives «compor», «propor» and «supor».", {
+        tag: 'Simple past, irregular',
+        comparacao: "English has the same kind of stem change in some verbs (make, made; say, said; put, put). The Portuguese list is longer, but it is a closed list that you learn once. The good news is that all these verbs share the same endings, with -e instead of -ou in the third person.",
+        tabela: [
+          { person: 'eu', fazer: 'fiz', dizer: 'disse', poder: 'pude', querer: 'quis', saber: 'soube', pôr: 'pus' },
+          { person: 'você, ele, ela, a gente', fazer: 'fez', dizer: 'disse', poder: 'pôde', querer: 'quis', saber: 'soube', pôr: 'pôs' },
+          { person: 'nós', fazer: 'fizemos', dizer: 'dissemos', poder: 'pudemos', querer: 'quisemos', saber: 'soubemos', pôr: 'pusemos' },
+          { person: 'vocês, eles, elas', fazer: 'fizeram', dizer: 'disseram', poder: 'puderam', querer: 'quiseram', saber: 'souberam', pôr: 'puseram' },
+        ],
+        exemplos: [['O que você fez ontem?', 'What did you do yesterday?'], ['Ela disse que chegou tarde.', 'She said that she arrived late.'], ['Eu não pude ir à reunião.', 'I could not go to the meeting.'], ['Eles fizeram a prova na sexta-feira.', 'They took the exam on Friday.']],
+        erros: [['Eu fazi o jantar.', 'Eu fiz o jantar.', '«Fazer» is irregular: fiz, not fazi.'], ['Ela dizeu que sim.', 'Ela disse que sim.', 'The past of «dizer» is «disse» for eu, ele, ela and você.'], ['Eu pode ir ontem.', 'Eu pude ir ontem.', '«Pode» is for ele/ela in the present. For «eu» in the past: pude.'], ['Ele quisou ir.', 'Ele quis ir.', 'There is no ending after «quis».']],
+      }),
+      producao(8, 'Tell what you did this week using six different verbs from today: fiz, disse, pude, quis, soube, pus. One sentence for each.', 'Fiz o almoço. Eu disse a verdade. Não pude ir à reunião. Quis descansar. Soube da notícia ontem. Pus o livro na mesa.'),
+    ]),
+    sessao('S3', '«Vi», «vim», «dei» and a weekend text', [
+      revisao(4, 'Say in the past: eu fiz, ela disse, nós pudemos, eles quiseram, você soube, eu pus.'),
+      palavras(5, [
+        ['ver', 'VEHR', 'to see', ''], ['vir', 'VEER', 'to come', ''], ['dar', 'DAHR', 'to give', ''], ['trazer', 'trah-ZEHR', 'to bring', ''],
+        ['ler', 'LEHR', 'to read', ''], ['sair', 'sah-EER', 'to go out, to leave', ''], ['o presente', 'oo preh-ZEHN-tchee', 'gift, present', ''], ['a surpresa', 'ah soor-PREH-zah', 'surprise', ''],
+      ]),
+      gramatica(8, '«Ver», «vir», «dar», «trazer», «ler» and «sair»', "STEP 1: «ver» becomes «vi, viu, vimos, viram». The first and the third person end in -i and -iu like a regular -er verb. «Vir» becomes «vim, veio, viemos, vieram»; note «veio» (not «viu»). STEP 2: «dar» becomes «dei, deu, demos, deram»: «Ela me deu um presente.» STEP 3: «trazer» becomes «trouxe, trouxe, trouxemos, trouxeram»: «Ele trouxe um bolo.» STEP 4: «ler» becomes «li, leu, lemos, leram» and «sair» becomes «saí, saiu, saímos, saíram». They are regular -er and -ir verbs, but the vowels sit side by side, so «sair» needs the accent in «saí», «saímos» and «saíram». STEP 5: be careful with «vi» (I saw) and «vim» (I came); they are not the same. «Vim» is «I came here». «Eu vim de ônibus.» (I came by bus.) STEP 6: in speech, «saiu» sounds like sah-EE-oo and «veio» like VAY-oo.", {
+        tag: 'Simple past, irregular',
+        comparacao: "English uses «came», «saw», «gave», «brought», «read» for these verbs. Portuguese shows the person in the ending, so «veio» can be he, she or you. Also note that «ler» (to read) and «ver» (to see) look alike in the infinitive; their past forms are very different: «li» and «vi».",
+        tabela: [
+          { person: 'eu', ver: 'vi', vir: 'vim', dar: 'dei', trazer: 'trouxe', ler: 'li', sair: 'saí' },
+          { person: 'você, ele, ela, a gente', ver: 'viu', vir: 'veio', dar: 'deu', trazer: 'trouxe', ler: 'leu', sair: 'saiu' },
+          { person: 'nós', ver: 'vimos', vir: 'viemos', dar: 'demos', trazer: 'trouxemos', ler: 'lemos', sair: 'saímos' },
+          { person: 'vocês, eles, elas', ver: 'viram', vir: 'vieram', dar: 'deram', trazer: 'trouxeram', ler: 'leram', sair: 'saíram' },
+        ],
+        exemplos: [['Eu vi a Marina no centro.', 'I saw Marina downtown.'], ['Ele veio de ônibus.', 'He came by bus.'], ['Ela me deu um livro.', 'She gave me a book.'], ['A gente saiu cedo.', 'We left early.']],
+        erros: [['Ele viu aqui ontem.', 'Ele veio aqui ontem.', '«Viu» is from ver (to see); «veio» is from vir (to come).'], ['Eu vi de ônibus.', 'Eu vim de ônibus.', 'To say I came, use «vim».'], ['Eu sai de casa às oito.', 'Eu saí de casa às oito.', 'The accent in «saí» is part of the spelling.'], ['Ele trazeu um bolo.', 'Ele trouxe um bolo.', 'The past of «trazer» is «trouxe».']],
+      }),
+      texto(8, 'A weekend with friends', 'No sábado de manhã eu fui ao mercado com a minha irmã. Nós compramos frutas e pão. À tarde vieram dois amigos, o Bruno e a Paula. Eles trouxeram um bolo de chocolate. A Paula me deu um presente, um livro de histórias brasileiras. Eu li duas páginas ainda no sofá. À noite a gente saiu para jantar. Eu fiz uma reserva, mas eles perderam o meu nome, então nós fomos a uma pizzaria. Eu disse ao Bruno: «Foi um dia muito bom!». Ele respondeu que sim.', 'On Saturday morning I went to the market with my sister. We bought fruit and bread. In the afternoon two friends came, Bruno and Paula. They brought a chocolate cake. Paula gave me a present, a book of Brazilian stories. I read two pages while still on the sofa. In the evening we went out to dinner. I made a reservation, but they lost my name, so we went to a pizzeria. I said to Bruno: «It was a very good day!». He answered yes.', [
+        ['Where did the narrator go on Saturday morning?', 'To the market, with her/his sister.'],
+        ['What did Bruno and Paula bring?', 'A chocolate cake.'],
+        ['What did Paula give the narrator?', 'A book of Brazilian stories.'],
+        ['Why did the group go to a pizzeria?', 'Because the restaurant lost the reservation.'],
+      ]),
+      producao(5, 'Tell a short story using «vi», «vim», «deu», «trouxe» or «saiu»: who came, what they brought, where you went. Three sentences.'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 20', [
+      revisao(5, 'Say aloud the past of ser/ir, ter, fazer, dizer and ver for «eu», «você» and «eles».'),
+      exercicios(20, [
+        ouvir('Eu fui ao cinema.', ['Eu fui ao cinema.', 'Eu foi ao cinema.', 'Eu vou ao cinema.'], 'Eu fui ao cinema.', '«Fui» is the «eu» form of ir.'),
+        ouvir('Ela fez o jantar.', ['Ela fez o jantar.', 'Ela fiz o jantar.', 'Ela faz o jantar.'], 'Ela fez o jantar.', '«Fez» is the third-person singular of fazer.'),
+        ouvir('Eles tiveram uma reunião.', ['Eles tiveram uma reunião.', 'Eles tinham uma reunião.', 'Eles têm uma reunião.'], 'Eles tiveram uma reunião.', 'Plural of «teve»: «tiveram».'),
+        ouvir('Eu não pude ir.', ['Eu não pude ir.', 'Eu não pode ir.', 'Eu não posso ir.'], 'Eu não pude ir.', '«Pude» is the «eu» form of poder in the past.'),
+        ouvir('Ele veio de ônibus.', ['Ele veio de ônibus.', 'Ele viu de ônibus.', 'Ele vem de ônibus.'], 'Ele veio de ônibus.', '«Veio» is the past of «vir».'),
+        ouvir('Ela me deu um presente.', ['Ela me deu um presente.', 'Ela me dei um presente.', 'Ela me dá um presente.'], 'Ela me deu um presente.', '«Deu» is the third person of «dar».'),
+        ditado('Eu fiz um bolo ontem.', 'Write: Eu fiz um bolo ontem.'),
+        ditado('Ele disse a verdade.', 'Write: Ele disse a verdade.'),
+        ditado('Nós fomos à praia.', 'Write: Nós fomos à praia.'),
+        mc('Which form means «I had»?', ['tive', 'teve', 'tinha'], 'tive', '«Tive» is the «eu» form of ter in the past.'),
+        mc('Which verb means «he said» in the past?', ['disse', 'dizeu', 'disseu'], 'disse', 'The third person of dizer is «disse».'),
+        mc('«Eu estive em Salvador» means:', ['I was in Salvador (a finished stay).', 'I am in Salvador.', 'I will be in Salvador.'], 'I was in Salvador (a finished stay).', '«Estive» is the finished past of estar.'),
+        mc('Which sentence means «I came by bus»?', ['Eu vim de ônibus.', 'Eu vi de ônibus.', 'Eu vim do ônibus.'], 'Eu vim de ônibus.', '«Vim» comes from vir.'),
+        mc('What does «Eu soube ontem» mean?', ['I found out yesterday.', 'I knew yesterday.', 'I will know tomorrow.'], 'I found out yesterday.', 'In the simple past, saber means to find out.'),
+        mc('Which form is the plural of «foi»?', ['foram', 'fomos', 'foi'], 'foram', 'Vocês, eles and elas take «foram».'),
+        lacuna('Ontem eu ___ ao mercado. (ir)', ['fui', 'foi', 'vou'], 'fui', 'The «eu» form is «fui».'),
+        lacuna('Ela ___ a verdade. (dizer)', ['disse', 'diz', 'dissemos'], 'disse', 'Third person: «disse».'),
+        lacuna('Nós ___ um bolo. (trazer)', ['trouxemos', 'trouxeram', 'trazemos'], 'trouxemos', '«Nós» takes -emos.'),
+        lacuna('Eu ___ tarde de casa. (sair)', ['saí', 'sai', 'saiu'], 'saí', 'The accent in «saí» is part of the spelling.'),
+        lacuna('Eles ___ a prova na sexta. (fazer)', ['fizeram', 'fez', 'fazem'], 'fizeram', 'Plural of «fez»: fizeram.'),
+        ordem('Put in order: «Eu fui à praia no domingo.»', ['Eu', 'fui', 'à', 'praia', 'no', 'domingo.'], 'Eu fui à praia no domingo.', 'Subject, verb, place, time.'),
+        ordem('Put in order: «O que você fez ontem?»', ['O', 'que', 'você', 'fez', 'ontem?'], 'O que você fez ontem?', 'Question word first.'),
+        livre('Write in Portuguese: Yesterday I went to the cinema and saw a Brazilian film.', 'Ontem eu fui ao cinema e vi um filme brasileiro.'),
+        livre('Write in Portuguese: She came by bus and brought a cake.', 'Ela veio de ônibus e trouxe um bolo.'),
+      ]),
+      producao(5, 'Tell about a trip or an outing in six sentences. Use at least four irregular verbs from this lesson.'),
+    ]),
+  ],
+});

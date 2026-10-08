@@ -171,3 +171,12 @@ h1,h2,h3{font-family:var(--font-display);font-variation-settings:var(--fraunces-
 .paywall h2{margin:0 0 8px}
 .paywall .erro{color:#8C2F1E}
 .link-btn{background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}
+
+.lv-planos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:20px auto 0 0;max-width:760px}
+.lv-plano{border:1px solid rgba(29,31,28,.25);border-radius:0;padding:28px;background:#fff;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.lv-plano-dest{border-color:#1E3B2F;border-width:2px}
+.lv-plano h3{margin:0}
+.lv-plano-preco{font-family:'Newsreader Variable',serif;font-size:2.2rem;margin:0}
+.lv-plano-preco span{font-size:1rem;font-family:inherit}
+.lv-plano p{margin:0}
+.lv-plano .btn{margin-top:auto}

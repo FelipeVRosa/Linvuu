@@ -212,6 +212,24 @@ export default function Home() {
         </section>
       )}
 
+      <section className="lv-sec" id="planos" aria-labelledby="h-planos">
+          <h2 id="h-planos">Preço</h2>
+          <div className="lv-planos">
+            <div className="lv-plano">
+              <h3>Grátis</h3>
+              <p className="lv-plano-preco">R$ 0</p>
+              <p>As 2 primeiras aulas de cada curso, sem cartão.</p>
+              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-ghost">Começar grátis</Link>
+            </div>
+            <div className="lv-plano lv-plano-dest">
+              <h3>Assinatura</h3>
+              <p className="lv-plano-preco">R$ 139<span> por mês</span></p>
+              <p>Todos os cursos e todas as aulas. Cancele quando quiser. Reembolso integral em até 7 dias.</p>
+              <Link to="/assinatura" className="btn btn-primary">Assinar</Link>
+            </div>
+          </div>
+      </section>
+
       <section className="lv-sec lv-sec-papel" id="faq" aria-labelledby="h-faq">
         <p className="lv-kicker lv-kicker-esc">{t.faq.kicker}</p>
         <h2 id="h-faq">{t.faq.titulo}</h2>

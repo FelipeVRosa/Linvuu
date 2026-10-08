@@ -24,25 +24,27 @@ export default function Dia() {
   const [aula, setAula] = useState<Aula | null>(null);
   const [erro, setErro] = useState(false);
   const ass = useAssinatura();
+  const bloqueado = !gratis(dia) && !ass.ativa && !import.meta.env.DEV;
+  const decidindo = !gratis(dia) && ass.carregando && !import.meta.env.DEV;
 
   useEffect(() => {
-    if (!valido) return;
+    if (!valido || bloqueado || decidindo) { setAula(null); return; }
     setAula(null); setErro(false);
     carregarAula(curso!.id, dia).then(setAula).catch(() => setErro(true));
-  }, [valido, curso, dia]);
+  }, [valido, curso, dia, bloqueado, decidindo]);
 
   usePageTitle(aula ? `Dia ${dia}: ${aula.titulo} · ${curso!.nome}` : undefined);
   if (!valido) return <NaoEncontrada />;
 
-  const bloqueado = !gratis(dia) && !ass.ativa;
   const fase = aula && FASES.find((f) => f.id === aula.fase);
 
   return (
     <div className="pagina">
       <Navegacao pai={`/curso/${curso!.id}`} trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `Dia ${dia}` }]} />
 
+      {bloqueado && !decidindo && <Paywall curso={curso!.nome} indisponivel={ass.indisponivel} />}
       {erro && <p className="vazio">Não foi possível carregar esta aula. Recarregue a página.</p>}
-      {!aula && !erro && <p className="resultado" role="status">Carregando…</p>}
+      {!aula && !erro && !bloqueado && <p className="resultado" role="status">Carregando…</p>}
 
       {aula && (
         <>
@@ -63,9 +65,7 @@ export default function Dia() {
             </p>
           )}
 
-          {bloqueado ? (
-            ass.carregando ? <p className="resultado" role="status">Carregando…</p> : <Paywall curso={curso!.nome} indisponivel={ass.indisponivel} />
-          ) : aula.sessao ? (
+          {aula.sessao ? (
             <Sessao key={dia} nomeIdioma={curso!.nome.toLowerCase()} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
           ) : (
             <div className="camadas">

@@ -1,3 +1,5 @@
+import { SESSOES_GRATIS } from '../config/planos';
+import { carregarAuth } from './firebase';
 import trilhaJson from '../../content/trilha.json';
 import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
@@ -73,10 +75,17 @@ export const INICIO_POR_NIVEL: Record<string, { dia: number; aviso?: string }> =
   c1: { dia: 97, aviso: 'Esta trilha foi pensada para quem está começando e serve só como revisão no seu nível. As trilhas avançadas ainda estão em planejamento.' },
 };
 
-const aulas = import.meta.glob('../../content/idiomas/*/dia-*.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;
-export const carregarAula = (idioma: string, dia: number) => {
+// Só as sessões grátis (1 a 8) vão dentro do site. As demais ficam no servidor e só saem para quem tem assinatura.
+const aulas = import.meta.glob('../../content/idiomas/*/dia-00{1,2,3,4,5,6,7,8}.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;
+export const carregarAula = async (idioma: string, dia: number): Promise<Aula> => {
   const key = `../../content/idiomas/${idioma}/dia-${String(dia).padStart(3, '0')}.json`;
-  return aulas[key] ? aulas[key]() : Promise.reject(new Error('aula não encontrada'));
+  if (aulas[key]) return aulas[key]();
+  if (dia <= SESSOES_GRATIS) throw new Error('aula não encontrada');
+  const { auth } = await carregarAuth();
+  const token = await auth.currentUser?.getIdToken();
+  const r = await fetch(`/api/aula/${idioma}/${dia}`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+  if (!r.ok) throw new Error('aula não encontrada');
+  return r.json();
 };
 
 /** Cursos listados na vitrine (o curso de português para estrangeiros fica fora até ter aulas). */

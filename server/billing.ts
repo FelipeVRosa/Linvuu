@@ -1,5 +1,7 @@
 // Cobrança da Linvuu: Stripe é a fonte da verdade (sem banco próprio). O navegador manda o token de login (Firebase);
 // o servidor confere o token, acha o cliente no Stripe pelo uid e responde se a assinatura está ativa.
+import fs from 'node:fs';
+import path from 'node:path';
 import type { Express, Request, Response } from 'express';
 import Stripe from 'stripe';
 import { getApps, initializeApp } from 'firebase-admin/app';
@@ -41,6 +43,12 @@ async function cliente(u: { uid: string; email?: string }): Promise<string> {
   return (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } })).id;
 }
 
+async function assinaturaAtiva(uid: string, email?: string): Promise<boolean> {
+  const c = await cliente({ uid, email });
+  const subs = await stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 });
+  return subs.data.some((x) => x.status === 'active' || x.status === 'trialing');
+}
+
 export function registrarCobranca(app: Express, urlBase: () => string) {
   const nao = (res: Response) => res.status(503).json({ error: 'Pagamento ainda não configurado.' });
   const guarda = async (req: Request, res: Response) => {
@@ -49,6 +57,22 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     if (!u) { res.status(401).json({ error: 'Entre na sua conta.' }); return null; }
     return u;
   };
+
+  // Sessões depois da 8ª (as 2 primeiras aulas são grátis): só saem do servidor para quem tem assinatura ativa.
+  app.get('/api/aula/:idioma/:n', async (req: Request, res: Response) => {
+    const idioma = String(req.params.idioma), n = Number(req.params.n);
+    if (!/^[a-z]{2}$/.test(idioma) || !Number.isInteger(n) || n < 1 || n > 999) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
+    const arq = path.join(process.cwd(), 'content', 'idiomas', idioma, `dia-${String(n).padStart(3, '0')}.json`);
+    if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
+    const livre = n <= 8 || (process.env.NODE_ENV !== 'production' && !cobrancaConfigurada());
+    if (!livre) {
+      const u = await guarda(req, res); if (!u) return;
+      try {
+        if (!(await assinaturaAtiva(u.uid, u.email))) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
+      } catch (e) { console.error('aula', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
+    }
+    res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8'));
+  });
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;

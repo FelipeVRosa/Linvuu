@@ -1,0 +1,128 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 42, titulo: 'The present subjunctive: forms', nivel: 'b1',
+  objetivo: 'Understand the subjunctive as the mood for what is not (yet) a fact, and form the present subjunctive of regular verbs, of verbs with irregular «eu» forms and of the twelve key irregulars: ser, estar, ter, ir, fazer, ver, vir, dar, saber, querer, poder, haver.',
+  nota: 'You can now recognise and form the present subjunctive: «fale, coma, parta, venha, faça, seja, vá, dê, saiba, queira, possa». Next lesson: when to use it, with wishes, doubts and emotions («Espero que você venha»).',
+  sessoes: [
+    sessao('S1', 'What the subjunctive is and how to build it', [
+      revisao(5, 'Say the present (eu form) of these verbs: falar, comer, partir, fazer, ter, vir, ver, dizer, sair, pedir. You will need the «eu» form today: it is the starting point of the subjunctive.'),
+      palavras(8, [
+        ['o modo', 'MOH-doo', 'the mood (grammar); the way', ''], ['o fato', 'FAH-too', 'the fact', ''], ['o desejo', 'deh-ZEH-zhoo', 'the wish, the desire', ''], ['a dúvida', 'DOO-vee-dah', 'the doubt', ''],
+        ['talvez', 'tah-oo-VEZ', 'maybe, perhaps', ''], ['esperar', 'ehs-peh-RAR', 'to hope (also: to wait)', ''], ['duvidar', 'doo-vee-DAR', 'to doubt', ''], ['tomara que', 'toh-MAH-rah kee', 'I hope that; hopefully', ''],
+      ]),
+      gramatica(12, 'The subjunctive: a mood for what is not a fact', "STEP 1: verbs have moods. The indicative is the mood of facts and certainties: «Ele chega às nove», «Eu sei que você mora aqui». The subjunctive (o subjuntivo) is the mood of what is not a fact: a wish, a doubt, an emotion, a plan, a condition. Compare «Ele vem» (fact) and «Espero que ele venha» (wish). STEP 2: you hear it almost always after the word «que», or after words like «talvez» (maybe) and «tomara que» (hopefully). The verb before it, such as «esperar», «querer» or «duvidar», tells you that what follows is not a fact. STEP 3: how to form the present subjunctive of any regular verb. Take the «eu» form of the present, drop the final -o and add the «opposite vowel» endings. Verbs in -ar take an «e»: -e, -es, -e, -emos, -em. Verbs in -er and -ir take an «a»: -a, -as, -a, -amos, -am. Example: falo, «fal-» + «e» gives «fale»; como, «com-» + «a» gives «coma»; parto, «part-» + «a» gives «parta». STEP 4: this is why the verbs that are irregular in the «eu» form carry the irregularity into every person: «faço» gives «faça», «tenho» gives «tenha», «venho» gives «venha», «vejo» gives «veja», «digo» gives «diga», «saio» gives «saia». STEP 5: «você», «ele», «ela» and «a gente» use the same form as «eu». You already know these forms: the imperative of lesson 28 («fale», «venha», «faça») is the subjunctive.", {
+        tag: 'Subjunctive',
+        comparacao: "English has almost lost the subjunctive: only traces remain, as in «I suggest that he go», «It is important that she be here» and «If I were you». Portuguese keeps it alive and uses it every day. The good news: you do not translate it word by word; you learn the triggers (wish, doubt, emotion, plan, condition) that tell you to switch from the indicative to the subjunctive.",
+        tabela: [
+          { person: 'eu', falar: 'fale', comer: 'coma', partir: 'parta' },
+          { person: 'você, ele, ela, a gente', falar: 'fale', comer: 'coma', partir: 'parta' },
+          { person: 'nós', falar: 'falemos', comer: 'comamos', partir: 'partamos' },
+          { person: 'vocês, eles, elas', falar: 'falem', comer: 'comam', partir: 'partam' },
+        ],
+        exemplos: [['Ele chega às nove.', 'He arrives at nine. (fact)'], ['Espero que ele chegue às nove.', 'I hope he arrives at nine. (wish)'], ['Você mora aqui.', 'You live here. (fact)'], ['Duvido que você more aqui.', 'I doubt that you live here. (doubt)']],
+        erros: [['Espero que ele chega.', 'Espero que ele chegue.', 'After «esperar que» the verb is in the subjunctive: the arrival is a wish, not a fact.'], ['Espero que você falas.', 'Espero que você fale.', 'For -ar verbs the subjunctive ending is -e, not -a or -as.'], ['Duvido que ele come.', 'Duvido que ele coma.', 'For -er and -ir verbs the subjunctive ending is -a: the vowels swap.']],
+      }),
+      producao(5, 'Say five facts with the indicative («Eu falo português», «Ela mora aqui»), then turn each one into a doubt or a wish using «duvido que…» or «espero que…» and the subjunctive.'),
+    ]),
+    sessao('S2', 'The irregular subjunctive forms', [
+      revisao(4, 'Form the present subjunctive of: cantar, vender, abrir, trabalhar, beber, escrever. Use «você» and «eles».'),
+      palavras(6, [
+        ['sair', 'sah-EER', 'to leave, to go out', ''], ['ouvir', 'oh-VEER', 'to hear, to listen', ''], ['chover', 'shoh-VER', 'to rain', ''], ['esquecer', 'ehs-keh-SER', 'to forget', ''], ['conseguir', 'koh~-seh-GEER', 'to manage to, to succeed in', ''], ['perder', 'pehr-DER', 'to lose, to miss', ''],
+      ]),
+      gramatica(12, 'Twelve irregular verbs in the present subjunctive', "STEP 1: the verbs below do not follow the «eu» form rule, or follow it with a surprise. Learn them as whole sets; they are the most used. STEP 2: five verbs build the subjunctive from the «eu» form but are worth memorising: «ter» (tenha), «fazer» (faça), «ver» (veja), «vir» (venha), «poder» (possa). STEP 3: seven verbs have a form that is not built from the «eu» form: «ser» (seja), «estar» (esteja), «ir» (vá), «dar» (dê), «saber» (saiba), «querer» (queira) and «haver» (haja). STEP 4: «ir» in the «nós» form is «vamos», the same as the indicative; in the «eles» form it is «vão». «Dar» has accents in «dê» (and «deem» for «eles», with no accent). STEP 5: «haver» in the subjunctive is «haja» and is used impersonally, like «there is/are»: «Espero que não haja problema», «Tomara que haja lugar». STEP 6: the subjunctive forms of the verbs with «eu» irregulars follow their model: «faço» gives «faça, faça, façamos, façam».", {
+        tag: 'Subjunctive',
+        comparacao: "English has just one irregular subjunctive form that everyone still uses: «be» («I suggest that she be on time»). Portuguese has about a dozen, which is why the tables below are worth learning in groups of three or four, with one example sentence each.",
+        tabelas: [
+          { titulo: 'Group 1: ser, estar, ir', linhas: [
+            { person: 'eu', ser: 'seja', estar: 'esteja', ir: 'vá' },
+            { person: 'você, ele, ela, a gente', ser: 'seja', estar: 'esteja', ir: 'vá' },
+            { person: 'nós', ser: 'sejamos', estar: 'estejamos', ir: 'vamos' },
+            { person: 'vocês, eles, elas', ser: 'sejam', estar: 'estejam', ir: 'vão' },
+          ] },
+          { titulo: 'Group 2: dar, saber, querer, haver', linhas: [
+            { person: 'eu', dar: 'dê', saber: 'saiba', querer: 'queira', haver: 'haja' },
+            { person: 'você, ele, ela, a gente', dar: 'dê', saber: 'saiba', querer: 'queira', haver: 'haja' },
+            { person: 'nós', dar: 'demos', saber: 'saibamos', querer: 'queiramos', haver: 'hajamos' },
+            { person: 'vocês, eles, elas', dar: 'deem', saber: 'saibam', querer: 'queiram', haver: 'hajam' },
+          ] },
+          { titulo: 'Group 3: ter, fazer, ver, vir, poder', linhas: [
+            { person: 'eu', ter: 'tenha', fazer: 'faça', ver: 'veja', vir: 'venha', poder: 'possa' },
+            { person: 'você, ele, ela, a gente', ter: 'tenha', fazer: 'faça', ver: 'veja', vir: 'venha', poder: 'possa' },
+            { person: 'nós', ter: 'tenhamos', fazer: 'façamos', ver: 'vejamos', vir: 'venhamos', poder: 'possamos' },
+            { person: 'vocês, eles, elas', ter: 'tenham', fazer: 'façam', ver: 'vejam', vir: 'venham', poder: 'possam' },
+          ] },
+        ],
+        exemplos: [['Espero que você venha.', 'I hope you come.'], ['Quero que ele faça.', 'I want him to do it.'], ['Duvido que seja verdade.', 'I doubt it is true.'], ['Espero que dê tudo certo.', 'I hope everything works out.'], ['Pode ser que eu vá.', 'I may go. (it may be that I go)'], ['Tomara que eles saibam.', 'Hopefully they know.']],
+        erros: [['Espero que você é feliz.', 'Espero que você seja feliz.', '«Ser» has its own subjunctive: «seja».'], ['Quero que ele vai.', 'Quero que ele vá.', 'The subjunctive of «ir» is «vá», not «vai».'], ['Duvido que ele sabe.', 'Duvido que ele saiba.', 'The subjunctive of «saber» is «saiba».'], ['Espero que ele faze.', 'Espero que ele faça.', 'The «ç» is kept in every person: «faça, façam».']],
+      }),
+      dialogo(8, 'Plans for Saturday', 'Larissa invites her colleague Thiago to a party. He may have to work.', [
+        ['Larissa', 'Eu espero que você venha à festa no sábado.', 'I hope you come to the party on Saturday.'],
+        ['Thiago', 'Eu quero ir, mas talvez eu trabalhe até tarde.', 'I want to go, but maybe I will work until late.'],
+        ['Larissa', 'Pode ser que a reunião acabe cedo.', 'The meeting may end early. (it may be that it ends early)'],
+        ['Thiago', 'Tomara que sim. Duvido que eu consiga sair antes das oito.', 'I hope so. I doubt that I will manage to leave before eight.'],
+        ['Larissa', 'Não tem problema. Quero que você chegue sem pressa.', 'No problem. I want you to arrive without rushing.'],
+        ['Thiago', 'Você quer que eu leve alguma coisa?', 'Do you want me to bring something?'],
+        ['Larissa', 'Traga gelo, por favor. E espero que não chova!', 'Bring ice, please. And I hope it does not rain!'],
+        ['Thiago', 'Tomara que não chova. Eu te aviso por mensagem.', 'Hopefully it does not rain. I will let you know by message.'],
+      ]),
+    ]),
+    sessao('S3', 'Spelling changes and more verbs', [
+      revisao(4, 'Say the subjunctive of: ser, estar, ir, dar, saber, querer (for «você»). Then complete aloud: «Espero que você…» with five different verbs.'),
+      palavras(5, [
+        ['avisar', 'ah-vee-ZAR', 'to let someone know, to warn', ''], ['o prazo', 'PRAH-zoo', 'the deadline', ''], ['o relatório', 'heh-lah-TOH-ryoo', 'the report', ''], ['a reunião', 'heh-oo-nee-OW~', 'the meeting', ''], ['o material', 'mah-teh-ree-AH-oo', 'the material', ''],
+      ]),
+      gramatica(8, 'Spelling changes and other irregular «eu» forms', "STEP 1: some verbs change their spelling in the subjunctive so that the sound stays the same. Verbs in -car change «c» to «qu» (ficar, fique), verbs in -gar change «g» to «gu» (pagar, pague, chegar, chegue), verbs in -çar change «ç» to «c» (começar, comece). Verbs in -ger and -gir change «g» to «j» (proteger, proteja; dirigir, dirija). STEP 2: verbs whose «eu» form is irregular carry it everywhere: «conheço» gives «conheça», «esqueço» gives «esqueça», «peço» gives «peça», «ouço» gives «ouça», «perco» gives «perca», «durmo» gives «durma», «sinto» gives «sinta», «sigo» gives «siga», «leio» gives «leia», «saio» gives «saia», «trago» gives «traga», «digo» gives «diga». STEP 3: verbs in -ear take an «i»: passear gives «passeie». STEP 4: stress stays where it is in the «eu» form: «FAle», «CHEgue», «peÇA». STEP 5: the negative imperative uses these forms: «Não fale», «Não esqueça», «Não se preocupe». The positive imperative for «você» and «vocês» too: «Fale», «Venha», «Faça».", {
+        tag: 'Subjunctive',
+        comparacao: "English spelling is often irregular without a reason. In Portuguese the changes follow one logic: they keep the sound of the stem. A «c» in «ficar» sounds like «k», so before an «e» it has to be written «qu» («fique») or it would sound like «s».",
+        tabela: [
+          { verb_type: '-car', rule: 'c becomes qu', infinitive: 'ficar', subjunctive: 'fique' },
+          { verb_type: '-gar', rule: 'g becomes gu', infinitive: 'chegar', subjunctive: 'chegue' },
+          { verb_type: '-çar', rule: 'ç becomes c', infinitive: 'começar', subjunctive: 'comece' },
+          { verb_type: '-ger, -gir', rule: 'g becomes j', infinitive: 'dirigir', subjunctive: 'dirija' },
+          { verb_type: '-cer', rule: 'eu form: -ço', infinitive: 'esquecer', subjunctive: 'esqueça' },
+          { verb_type: '-ouvir, -pedir', rule: 'eu form: -ouço, -peço', infinitive: 'ouvir', subjunctive: 'ouça' },
+          { verb_type: '-ear', rule: 'adds i', infinitive: 'passear', subjunctive: 'passeie' },
+          { verb_type: 'other irregular «eu»', rule: 'follows the eu form', infinitive: 'dormir', subjunctive: 'durma' },
+        ],
+        erros: [['Espero que ele chega cedo.', 'Espero que ele chegue cedo.', '-gar verbs add «u» to keep the hard «g» before «e»: «chegue».'], ['Quero que você fica.', 'Quero que você fique.', '-ar verbs take «e»; with «ficar» the «c» becomes «qu».'], ['Espero que você não esquece.', 'Espero que você não esqueça.', 'The «ç» of the «eu» form (esqueço) carries into the subjunctive.']],
+      }),
+      texto(8, 'A message from the manager', "Bom dia, pessoal. Na próxima semana teremos uma reunião importante. Peço que todos cheguem às nove horas e que ninguém esqueça o prazo do relatório. Quero que cada pessoa traga duas ideias. É importante que vocês leiam o material antes. Espero que não haja problema com a sala, mas é melhor que alguém avise a recepção. Obrigada pela atenção!", "Good morning, everybody. Next week we will have an important meeting. I ask that everyone arrive at nine o'clock and that nobody forget the deadline for the report. I want each person to bring two ideas. It is important that you read the material beforehand. I hope there is no problem with the room, but it is better that someone let the reception know. Thank you for your attention!", [
+        ['What time should everybody arrive? (answer in Portuguese)', 'Às nove horas.'],
+        ['What must nobody forget? (answer in Portuguese)', 'O prazo do relatório.'],
+        ['What should each person bring? (answer in Portuguese)', 'Duas ideias.'],
+        ['Whom should someone warn about the room? (answer in Portuguese)', 'A recepção.'],
+      ]),
+      producao(5, 'Write three short requests to a colleague using «Peço que…», «Quero que…» and «Espero que…», each with a verb whose spelling changes (chegar, ficar, começar, pagar, esquecer).'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 42', [
+      revisao(5, 'Say the subjunctive for «você» of: falar, comer, partir, ter, fazer, ver, vir, ser, estar, ir, dar, saber, querer, poder.'),
+      exercicios(20, [
+        ouvir('Espero que você venha.', ['Espero que você venha.', 'Espero que você vem.', 'Espero que você vinha.'], 'Espero que você venha.', '«Venha» is the subjunctive of «vir»; «vem» is the indicative.'),
+        ouvir('Quero que ele faça.', ['Quero que ele faça.', 'Quero que ele faz.', 'Quero que ele fazia.'], 'Quero que ele faça.', 'The «ç» sounds like «s»: «FAH-sah».'),
+        ouvir('Duvido que seja verdade.', ['Duvido que seja verdade.', 'Duvido que é verdade.', 'Duvido que foi verdade.'], 'Duvido que seja verdade.', 'The subjunctive of «ser» is «seja».'),
+        ouvir('Tomara que não chova.', ['Tomara que não chova.', 'Tomara que não chove.', 'Tomara que não choveu.'], 'Tomara que não chova.', '«Chova» is the subjunctive of «chover».'),
+        ouvir('Pode ser que eu vá.', ['Pode ser que eu vá.', 'Pode ser que eu vou.', 'Pode ser que eu fui.'], 'Pode ser que eu vá.', '«Vá» is the subjunctive of «ir».'),
+        ditado('Espero que dê tudo certo.', 'Write: Espero que dê tudo certo. Note the accent in «dê».'),
+        ditado('Quero que você chegue cedo.', 'Write: Quero que você chegue cedo. «Chegar» becomes «chegue».'),
+        ditado('Talvez ele saiba.', 'Write: Talvez ele saiba.'),
+        mc('Which letters form the subjunctive of -ar verbs?', ['-e, -es, -e, -emos, -em', '-a, -as, -a, -amos, -am', '-o, -as, -a, -amos, -am'], '-e, -es, -e, -emos, -em', 'The vowel is "opposite": -ar verbs take «e».'),
+        mc('What is the subjunctive of «comer» for «você»?', ['coma', 'come', 'comia'], 'coma', '-er verbs take «a» in the subjunctive.'),
+        mc('What is the subjunctive of «ir» for «eu»?', ['vá', 'vai', 'ia'], 'vá', 'The subjunctive of «ir» is «vá».'),
+        mc('What is the subjunctive of «ter» for «eles»?', ['tenham', 'têm', 'tinham'], 'tenham', 'Built from «tenho»: «tenha, tenham».'),
+        mc('Which sentence expresses a wish and needs the subjunctive?', ['Espero que ela chegue.', 'Ela chega às nove.', 'Ela chegou às nove.'], 'Espero que ela chegue.', 'A wish is not a fact, so it is in the subjunctive.'),
+        lacuna('Espero que você ___ à festa. (vir)', ['venha', 'vem', 'vinha'], 'venha', 'Built from «venho»: «venha».'),
+        lacuna('Quero que ele ___ o jantar. (fazer)', ['faça', 'faz', 'fazia'], 'faça', 'Built from «faço»: «faça».'),
+        lacuna('Duvido que ___ verdade. (ser)', ['seja', 'é', 'será'], 'seja', 'The subjunctive of «ser» is «seja».'),
+        lacuna('Talvez ela ___ tempo. (ter)', ['tenha', 'tem', 'teve'], 'tenha', 'Built from «tenho»: «tenha».'),
+        lacuna('Espero que eles ___ cedo. (chegar)', ['cheguem', 'chegam', 'chegaram'], 'cheguem', 'The «g» becomes «gu» before «e».'),
+        lacuna('Tomara que não ___ amanhã. (chover)', ['chova', 'chove', 'choveu'], 'chova', '-er verbs take «a»: «chova».'),
+        ordem('Put in order: «Espero que você venha.»', ['Espero', 'que', 'você', 'venha.'], 'Espero que você venha.', 'Main verb of wish + «que» + subjunctive.'),
+        ordem('Put in order: «Duvido que seja verdade.»', ['Duvido', 'que', 'seja', 'verdade.'], 'Duvido que seja verdade.', 'Doubt + «que» + subjunctive.'),
+        livre('Write in Portuguese: I want you to come early.', 'Quero que você venha cedo.'),
+        livre('Write in Portuguese: Maybe he knows the answer.', 'Talvez ele saiba a resposta.'),
+      ]),
+      producao(5, 'Describe a trip you plan, using five subjunctive forms in sentences with «Espero que…», «Quero que…», «Talvez…», «Tomara que…» and «Duvido que…».'),
+    ]),
+  ],
+});

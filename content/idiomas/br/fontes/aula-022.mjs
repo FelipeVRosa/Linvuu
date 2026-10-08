@@ -1,0 +1,102 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 22, titulo: 'Simple past or imperfect: telling a story', nivel: 'a2',
+  objetivo: 'Choose between the pretérito perfeito (what happened) and the imperfeito (the background, habits and actions in progress), combine them in a story, and understand verbs whose meaning changes (soube/sabia, quis/queria, conheci/conhecia).',
+  nota: 'You can tell a short story in the past: the scene, what was happening, and what happened next. Next lesson: direct object pronouns (o, a, os, as, me, te, nos) so that you stop repeating nouns.',
+  sessoes: [
+    sessao('S1', 'Event or background?', [
+      revisao(5, 'Say three sentences about your childhood with the imperfect (morava, brincava, era, tinha) and three about yesterday with the simple past (fui, comi, trabalhei).'),
+      palavras(8, [
+        ['enquanto', 'eh~-KWAH~-too', 'while', ''], ['então', 'eh~-TOW~', 'then, so', ''], ['depois', 'deh-POH-ees', 'afterwards', ''], ['primeiro', 'pree-MAY-roo', 'first', ''],
+        ['por fim', 'poor FEE~', 'finally, in the end', ''], ['uma vez', 'OO-mah VEHZ', 'once', ''], ['duas vezes', 'DOO-ahs VEH-zees', 'twice', ''], ['naquele dia', 'nah-KEH-lee DJEE-ah', 'that day', ''],
+        ['de manhã cedo', 'djee mah-NYAH~ SEH-doo', 'early in the morning', ''], ['tocar', 'toh-KAHR', 'to ring; to play (an instrument)', ''], ['chover', 'shoh-VEHR', 'to rain', ''], ['acordar', 'ah-kor-DAHR', 'to wake up', ''],
+      ]),
+      gramatica(12, 'Perfeito and imperfeito: the two roles in a story', "STEP 1: use the pretérito perfeito for events: things that happened, one after the other, and are finished. «Acordei, tomei café e saí.» (I woke up, had coffee and left.) Each verb moves the story forward. STEP 2: use the imperfeito for the background: the weather, the place, the time, how people were, what was going on, what used to happen. «Era sábado. Chovia. Eu estava em casa.» These verbs do not move the story forward; they paint the scene. STEP 3: when an action in progress is interrupted, the long one is imperfect and the short one is perfect: «Eu dormia (or estava dormindo) quando o telefone tocou.» STEP 4: two simultaneous actions both take the imperfect and are joined by «enquanto»: «Enquanto eu cozinhava, ele lia.» STEP 5: a repeated action uses the imperfect («Todo dia eu acordava às seis»), but an action counted or placed once, a specific number of times or for a stated period, uses the perfect: «Ontem acordei às cinco», «Eu fui lá duas vezes», «Morei em Recife por três anos.» STEP 6: typical clues. Perfeito: ontem, na sexta, de repente, uma vez, duas vezes, naquele dia, por fim. Imperfeito: sempre, todo dia, naquela época, quando eu era criança, às vezes, enquanto. The clues help, but the question is always: «is this the event or the scene?»", {
+        tag: 'Perfeito × imperfeito',
+        comparacao: "English also separates the two: «I was reading when the phone rang» uses a progressive for the scene and a simple past for the event. The difference is that English often uses the same simple past for a habit and an event («I walked to school» can mean once or every day), while Portuguese needs two forms: «Eu andei até a escola» (once) and «Eu andava até a escola» (every day, I used to walk).",
+        tabela: [
+          { question: 'What it does', perfeito: 'tells an event, finished', imperfeito: 'paints the scene, a habit, a situation' },
+          { question: 'Typical clue', perfeito: 'ontem, de repente, uma vez, duas vezes', imperfeito: 'sempre, todo dia, enquanto, naquela época' },
+          { question: 'Example', perfeito: 'Choveu ontem. (It rained yesterday.)', imperfeito: 'Chovia muito. (It was raining a lot.)' },
+          { question: 'Example', perfeito: 'Eu acordei às seis. (I woke up at six today.)', imperfeito: 'Eu acordava às seis. (I used to wake up at six.)' },
+          { question: 'In a story', perfeito: 'what happened, in order', imperfeito: 'what was going on around it' },
+        ],
+        exemplos: [['Era domingo e chovia. Eu fiquei em casa.', 'It was Sunday and it was raining. I stayed at home.'], ['Eu estava cozinhando quando ele chegou.', 'I was cooking when he arrived.'], ['Quando eu era criança, ia à praia todo verão.', 'When I was a child, I went to the beach every summer.'], ['De repente o telefone tocou.', 'Suddenly the phone rang.']],
+        erros: [['Eu estudei todo dia quando era criança.', 'Eu estudava todo dia quando era criança.', 'A habit repeated in the past uses the imperfect.'], ['Eu fui criança no interior.', 'Eu era criança no interior.', 'A state or a stage of life is the background: «era».'], ['Eu era dormindo quando ele ligou.', 'Eu estava dormindo quando ele ligou.', 'An action in progress uses «estar» + gerund, not «ser».'], ['Ontem eu acordava às seis (a single morning).', 'Ontem eu acordei às seis.', 'One specific morning is an event: the perfect.']],
+      }),
+      producao(5, 'Tell a short story of four sentences: the scene (the imperfect: era, chovia, estava...) and then two events (the perfect: cheguei, abri...).', 'Era sábado de manhã e chovia. Eu estava em casa. De repente o telefone tocou. Era a minha mãe!'),
+    ]),
+    sessao('S2', 'Verbs that change meaning', [
+      revisao(4, 'Complete from memory: «Eu estava dormindo quando o telefone ___.» and «Enquanto eu cozinhava, ele ___.» (tocou / lia)'),
+      palavras(6, [
+        ['acontecer', 'ah-koh~-teh-SEHR', 'to happen', ''], ['a notícia', 'ah noh-TCHEE-see-ah', 'news (a piece of news)', ''], ['atender', 'ah-teh~-DEHR', 'to answer (the phone); to serve (a customer)', ''], ['o susto', 'oo SOOS-too', 'fright, scare', ''], ['conhecer', 'koh-nyeh-SEHR', 'to know (a person or place); to meet', ''], ['ia + infinitive', 'EE-ah', 'was going to', ''],
+      ]),
+      gramatica(12, '«Saber», «conhecer», «querer», «poder» and «ter»: two tenses, two meanings', "STEP 1: some verbs are used in the imperfect for a state and in the perfect for an event, and the meaning changes. This is not a trick; it follows the same logic as the previous block. STEP 2: «saber». Imperfeito: «Eu sabia que ela estava doente.» (I knew she was sick, a state.) Perfeito: «Eu soube ontem que ela estava doente.» (I found out yesterday: an event.) STEP 3: «conhecer». Imperfeito: «Eu conhecia o Pedro.» (I knew Pedro.) Perfeito: «Eu conheci o Pedro na festa.» (I met Pedro at the party.) STEP 4: «querer». Imperfeito: «Eu queria ir.» (I wanted to go, as a wish.) Perfeito: «Eu quis ir.» (I wanted to go and tried.) With «não»: «Ela não quis falar» = she refused to speak. STEP 5: «poder». Imperfeito: «Eu podia sair.» (I was allowed or able to go out.) Perfeito: «Eu pude sair.» (I managed to go out.) «Não pude» = I couldn't (and didn't). STEP 6: «ter». Imperfeito: «Eu tinha uma reunião.» (I had a meeting scheduled, a state.) Perfeito: «Eu tive uma reunião.» (I had a meeting, it took place.) STEP 7: «ia + infinitive» also fits here: «Eu ia viajar, mas fiquei doente.» (I was going to travel, but I got sick.) The plan is the background; the sickness is the event. STEP 8: «estar» works the same way: «estava» is the state («Eu estava cansado»), «estive» is a finished stay («Estive em Recife»).", {
+        tag: 'Perfeito × imperfeito',
+        comparacao: "English changes the verb itself: know/find out, know/meet, want/refuse, can/manage to. Portuguese keeps one verb and changes the tense, so the tense carries the meaning. Do not look for another word: «soube» is just «saber» in the perfect.",
+        tabela: [
+          { verb: 'saber', imperfeito: 'sabia = I knew', perfeito: 'soube = I found out' },
+          { verb: 'conhecer', imperfeito: 'conhecia = I knew (was acquainted with)', perfeito: 'conheci = I met' },
+          { verb: 'querer', imperfeito: 'queria = I wanted (a wish)', perfeito: 'quis = I wanted and tried; não quis = I refused' },
+          { verb: 'poder', imperfeito: 'podia = I could, was able to', perfeito: 'pude = I managed to; não pude = I did not manage' },
+          { verb: 'ter', imperfeito: 'tinha = I had (a state)', perfeito: 'tive = I had (an event)' },
+        ],
+        exemplos: [['Eu sabia a verdade, mas não disse nada.', 'I knew the truth, but I said nothing.'], ['Eu soube da notícia ontem à noite.', 'I heard the news last night.'], ['Eu conheci a minha mulher no Rio.', 'I met my wife in Rio.'], ['Eu queria ir, mas não pude.', 'I wanted to go, but I could not.']],
+        erros: [['Eu sabia ontem que ela chegou (I found out).', 'Eu soube ontem que ela chegou.', 'Finding out is an event: «soube».'], ['Eu conhecia a Ana na festa (I met her).', 'Eu conheci a Ana na festa.', 'Meeting someone for the first time is an event: «conheci».'], ['Ela não queria falar (she refused).', 'Ela não quis falar.', 'A refusal on one occasion uses the perfect.'], ['Eu ia viajar, mas eu fico doente.', 'Eu ia viajar, mas fiquei doente.', 'The event that breaks the plan is in the perfect: fiquei.']],
+      }),
+      producao(8, 'Write or say six sentences using the pairs of this lesson. Example pairs: soube / sabia; conheci / conhecia; queria / quis. Add one sentence with «ia + infinitive».', 'Eu sabia que ela morava aqui. Soube ontem que ela se mudou. Conheci o Rafael na faculdade. Eu queria ir ao cinema, mas não pude.'),
+    ]),
+    sessao('S3', 'Storytelling and a short text', [
+      revisao(4, 'Say aloud one sentence with each: sabia / soube, conhecia / conheci, queria / quis.'),
+      palavras(5, [
+        ['o guarda-chuva', 'oo GWAR-dah SHOO-vah', 'umbrella', ''], ['o trânsito', 'oo TRAH~-zee-too', 'traffic', ''], ['molhado, molhada', 'moh-LYAH-doo', 'wet', ''], ['o escritório', 'oo ehs-kree-TOH-ree-oo', 'office', ''],
+        ['a toalha', 'ah toh-AH-lyah', 'towel', ''], ['a mochila', 'ah moh-SHEE-lah', 'backpack', ''], ['descer', 'deh-SEHR', 'to go down; to get off', ''], ['felizmente', 'feh-leez-MEHN-tchee', 'luckily', ''], ['a chefe, o chefe', 'ah SHEH-fee', 'boss', ''], ['atrasado, atrasada', 'ah-trah-ZAH-doo', 'late', ''],
+      ]),
+      gramatica(8, 'Connectors and a model for telling a story', "STEP 1: a good short story has three layers: the setting (imperfeito), the events (perfeito) and the end or result. STEP 2: start with the setting: «Era uma segunda-feira. Chovia muito e eu estava atrasado.» STEP 3: use connectors for the events: «primeiro, depois, então, de repente, por fim». STEP 4: «porque» gives the reason and «mas» the contrast: «Eu desci do ônibus porque a rua estava fechada.» STEP 5: close with the result and a comment: «Felizmente tudo acabou bem.» STEP 6: in speech, people often start with «Então...» or «Aí...» to link events: «Aí o telefone tocou e eu acordei.» «Aí» is spoken Brazilian Portuguese; avoid it in formal writing, where you use «então» or «depois».", {
+        tag: 'Perfeito × imperfeito',
+        comparacao: "English tells stories with the simple past almost all the way and adds «was -ing» for the scene. Portuguese separates more clearly: the setting and the details are in the imperfect, the actions in the perfect. It takes some practice, but after a few stories the choice becomes automatic.",
+        exemplos: [['Primeiro eu acordei, depois tomei café.', 'First I woke up, then I had coffee.'], ['Eu cheguei atrasado porque o trânsito estava parado.', 'I arrived late because the traffic was stopped.'], ['Aí a chuva parou e a gente saiu.', 'Then the rain stopped and we went out.'], ['Por fim eu cheguei em casa e dormi.', 'In the end I got home and slept.']],
+        erros: [['Primeiro eu acordo, depois eu tomava café.', 'Primeiro eu acordei, depois tomei café.', 'Events in a sequence are all in the perfect.'], ['Aí (in a formal e-mail): «Aí eu liguei para o cliente.»', 'Então eu liguei para o cliente. / Depois liguei para o cliente.', '«Aí» is a spoken link word; in writing prefer «então» or «depois».']],
+      }),
+      texto(8, 'A rainy morning in São Paulo', 'Ontem eu ia para o escritório de ônibus. Chovia muito e o trânsito estava parado. Eu estava lendo quando o motorista disse que a rua estava fechada. Então eu desci, abri o guarda-chuva e caminhei vinte minutos. Quando cheguei ao escritório, estava toda molhada! Os meus colegas me deram uma toalha e a chefe me trouxe um café quente. Felizmente eu tinha uma blusa na mochila. Depois, tudo correu bem e o dia foi tranquilo.', 'Yesterday I was going to the office by bus. It was raining a lot and the traffic was stopped. I was reading when the driver said that the street was closed. So I got off, opened my umbrella and walked for twenty minutes. When I arrived at the office, I was completely wet! My colleagues gave me a towel and the boss brought me a hot coffee. Luckily I had a blouse in my backpack. Afterwards everything went well and the day was quiet.', [
+        ['How was the narrator going to work?', 'By bus.'],
+        ['What was the weather like?', 'It was raining a lot.'],
+        ['Why did the narrator get off the bus?', 'The driver said the street was closed.'],
+        ['What did the boss bring?', 'A hot coffee.'],
+        ['What did the narrator have in the backpack?', 'A blouse.'],
+      ]),
+      producao(5, 'Tell a short story about a day that went wrong and then right. Use at least two imperfect forms for the scene and three perfect forms for the events.'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 22', [
+      revisao(5, 'Say aloud: «Era sábado, chovia, eu estava em casa. De repente o telefone tocou. Eu atendi.» (atender = to answer the phone) Then tell the same scene with your own details.'),
+      exercicios(20, [
+        ouvir('Choveu ontem.', ['Choveu ontem.', 'Chovia ontem.', 'Chove ontem.'], 'Choveu ontem.', 'One day of rain, a finished event: perfect.'),
+        ouvir('Chovia muito naquele dia.', ['Chovia muito naquele dia.', 'Choveu muito naquele dia.', 'Chove muito naquele dia.'], 'Chovia muito naquele dia.', 'A background condition: imperfect.'),
+        ouvir('Eu estava dormindo quando ela ligou.', ['Eu estava dormindo quando ela ligou.', 'Eu estive dormindo quando ela ligou.', 'Eu estou dormindo quando ela ligou.'], 'Eu estava dormindo quando ela ligou.', 'The long action is in the imperfect; the interruption is in the perfect.'),
+        ouvir('Eu soube ontem.', ['Eu soube ontem.', 'Eu sabia ontem.', 'Eu sei ontem.'], 'Eu soube ontem.', '«Soube» means I found out.'),
+        ouvir('Eu conheci o Pedro na festa.', ['Eu conheci o Pedro na festa.', 'Eu conhecia o Pedro na festa.', 'Eu conheço o Pedro na festa.'], 'Eu conheci o Pedro na festa.', '«Conheci» means I met.'),
+        ouvir('Todo dia a gente jogava futebol.', ['Todo dia a gente jogava futebol.', 'Todo dia a gente jogou futebol.', 'Todo dia a gente joga futebol.'], 'Todo dia a gente jogava futebol.', '«Todo dia» marks a habit: imperfect.'),
+        ditado('De repente o telefone tocou.', 'Write: De repente o telefone tocou.'),
+        ditado('Era domingo e chovia.', 'Write: Era domingo e chovia.'),
+        ditado('Eu queria ir, mas não pude.', 'Write: Eu queria ir, mas não pude.'),
+        mc('Which tense does «de repente» go with?', ['perfeito', 'imperfeito', 'both are impossible'], 'perfeito', '«De repente» announces a sudden event.'),
+        mc('Which sentence means «I found out yesterday»?', ['Soube ontem.', 'Sabia ontem.', 'Sei ontem.'], 'Soube ontem.', 'Finding out is an event.'),
+        mc('«Ela não quis falar» means:', ['She refused to speak.', 'She did not want to speak, in general.', 'She could not speak.'], 'She refused to speak.', 'The perfect of «não querer» = refused.'),
+        mc('Which sentence describes a habit?', ['Eu acordava às seis.', 'Eu acordei às seis ontem.', 'Eu acordo às seis amanhã.'], 'Eu acordava às seis.', 'The imperfect describes repeated actions.'),
+        mc('Which sentence has the right tenses?', ['Enquanto eu cozinhava, ele lia.', 'Enquanto eu cozinhei, ele leu.', 'Enquanto eu cozinho, ele leu.'], 'Enquanto eu cozinhava, ele lia.', 'Two simultaneous actions: both imperfect.'),
+        mc('How do you say «I was going to travel»?', ['Eu ia viajar.', 'Eu fui viajar.', 'Eu viajei.'], 'Eu ia viajar.', '«Ia + infinitive» expresses a past plan.'),
+        lacuna('Eu ___ lendo quando ele chegou. (estar)', ['estava', 'estive', 'estou'], 'estava', 'An action in progress: «estava».'),
+        lacuna('Eu ___ a Ana na festa. (conhecer, meeting for the first time)', ['conheci', 'conhecia', 'conheço'], 'conheci', 'Meeting someone is an event.'),
+        lacuna('Naquela época a gente ___ no interior. (morar)', ['morava', 'morou', 'mora'], 'morava', '«Naquela época» is the background of the past.'),
+        lacuna('De repente a luz ___. (apagar: to go out)', ['apagou', 'apagava', 'apaga'], 'apagou', 'A sudden event: perfect.'),
+        lacuna('Eu ___ que ela estava doente. (saber, I knew it)', ['sabia', 'soube', 'sei'], 'sabia', 'A state of knowing: imperfect.'),
+        ordem('Put in order: «Eu estava lendo quando ele ligou.»', ['Eu', 'estava', 'lendo', 'quando', 'ele', 'ligou.'], 'Eu estava lendo quando ele ligou.', 'The long action first, then the interruption.'),
+        ordem('Put in order: «Era sábado e chovia.»', ['Era', 'sábado', 'e', 'chovia.'], 'Era sábado e chovia.', 'Two background statements.'),
+        livre('Write in Portuguese: It was Sunday and it was raining. I stayed at home and slept.', 'Era domingo e chovia. Eu fiquei em casa e dormi.'),
+        livre('Write in Portuguese: I met Ana when I was living in São Paulo.', 'Conheci a Ana quando eu morava em São Paulo.'),
+      ]),
+      producao(5, 'Tell a story of six sentences about something that happened to you. Start with the setting in the imperfect, then give three events in the perfect and end with a result.'),
+    ]),
+  ],
+});

@@ -1,0 +1,118 @@
+import { aula, sessao, revisao, producao, palavras, dialogo, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 8, titulo: 'Café and food: «queria», numbers to 100, prices in reais', nivel: 'a1',
+  objetivo: 'Order a coffee and something to eat politely with «queria», count from 20 to 100, understand prices in reais and ask how much it is.',
+  nota: 'You can order at a café or bakery, say numbers up to 100, read a price and ask «quanto é?». Next lesson: the time, the days of the week, the months and the date.',
+  sessoes: [
+    sessao('S1', 'Ordering with «queria»', [
+      revisao(5, 'Greet an imaginary person with the right «bom dia / boa tarde / boa noite», say «tudo bem» and answer with «e você?». Then say with «eu sou» your name and with «eu tenho» your age (numbers 0 to 20).'),
+      palavras(8, [
+        ['queria', 'kee-REE-ah', "I would like (polite way to ask for something)", ''], ['pois não?', 'poys NOW~', "how can I help you? (what a shop assistant says)", ''], ['a padaria', 'ah pah-dah-REE-ah', 'bakery (also a café and small shop)', ''], ['o cafezinho', 'oo kah-feh-ZEE-nyoo', 'a small, strong coffee', ''],
+        ['café com leite', 'kah-FEH koh~ LAY-tchee', 'coffee with hot milk', ''], ['pão de queijo', 'POW~ djee KAY-zhoo', 'cheese bread (a small baked roll)', ''], ['suco de laranja', 'SOO-koo djee lah-RAH~-zhah', 'orange juice', ''], ['a água', 'ah AH-gwah', 'water', ''],
+        ['um copo de', 'oo~ KOH-poo djee', 'a glass of', ''], ['o bolo', 'oo BOH-loo', 'cake', ''], ['pra levar', 'prah leh-VAR', 'to take away, to go', ''], ['mais alguma coisa?', 'MY-ees ow-GOO-mah KOY-zah', 'anything else?', ''],
+        ['a conta', 'ah KOH~-tah', 'the bill', ''],
+      ]),
+      gramatica(12, 'Ordering politely with «queria»', "STEP 1: to ask for something in a café, a shop or a restaurant, Brazilians say «queria» + the thing: «Queria um café, por favor.» It means «I would like a coffee, please». It is polite and natural. You can add «eu» («Eu queria…»), but you do not need to. STEP 2: «queria» comes from the verb «querer» (to want). The full verb is lesson 13; for now learn «queria» as a ready-made phrase for ordering. The plain «quero» (I want) is correct, but it sounds more direct, so «queria» is the safer choice with strangers. STEP 3: the thing you ask for needs «um» or «uma» (or a number), and it must agree with the noun: «um café» (masculine), «uma água» (feminine), «um suco», «uma xícara de café». STEP 4: «de» joins a container or a type to its content: «um copo de água», «uma xícara de café», «suco de laranja», «pão de queijo». English often has no word here, but Portuguese always needs «de». STEP 5: the person serving you may ask «Pois não?» (how can I help you?), «Mais alguma coisa?» (anything else?) and «É pra comer aqui ou pra levar?» (is it to eat here or to take away?). You can answer «É só isso, obrigado» (that is all, thanks) and ask for «a conta, por favor». STEP 6: in the morning, Brazilians have «café da manhã» (breakfast), often in a padaria: coffee, bread with butter, cheese bread, juice, fruit.", {
+        tag: 'Ordering',
+        comparacao: "In English you say «Can I have…?» or «I'd like…». Portuguese «queria» is the same idea as «I'd like». English «a glass of water» needs «of», and so does Portuguese «um copo de água». Do not say «um copo água».",
+        tabela: [
+          { you_say: 'Queria um café, por favor.', meaning: "I'd like a coffee, please.", note: 'masculine: um' },
+          { you_say: 'Queria uma água, por favor.', meaning: "I'd like a water, please.", note: 'feminine: uma' },
+          { you_say: 'Queria um copo de suco de laranja.', meaning: "I'd like a glass of orange juice.", note: '«de» before the content' },
+          { you_say: 'Queria um pão de queijo.', meaning: "I'd like a cheese bread.", note: '«de» inside a fixed name' },
+          { you_say: 'É pra levar.', meaning: "It's to take away.", note: '«pra» is spoken for «para»' },
+          { you_say: 'A conta, por favor.', meaning: 'The bill, please.', note: 'always «por favor»' },
+        ],
+        erros: [['Queria uma café.', 'Queria um café.', '«Café» is masculine: «um café». Only «a água» and «a laranja» are feminine here.'], ['Queria um copo água.', 'Queria um copo de água.', 'A container is joined to its content with «de».'], ['Queria pão queijo.', 'Queria pão de queijo.', 'The name of the roll has «de»: «pão de queijo».'], ['saying «kwee-REE-ah» for «queria»', 'kee-REE-ah', 'In «que» and «qui» the «u» is silent: «queria» starts with a «k» sound.']],
+      }),
+      producao(5, 'Order out loud, as if you were at a padaria: a «café com leite», a «pão de queijo» and a «água». Start with «Bom dia!» and finish with «A conta, por favor.»'),
+    ]),
+    sessao('S2', 'Numbers from 20 to 100', [
+      revisao(4, 'Order a «cafezinho» and a «suco de laranja» with «queria». Then count aloud from 0 to 20 (zero, um, dois, três, quatro, cinco, seis, sete, oito, nove, dez, onze, doze, treze, catorze, quinze, dezesseis, dezessete, dezoito, dezenove, vinte).'),
+      palavras(6, [
+        ['vinte', 'VEE~-tchee', 'twenty', ''], ['trinta', 'TREE~-tah', 'thirty', ''], ['quarenta', 'kwah-REH~-tah', 'forty', ''], ['cinquenta', 'see~-KWEH~-tah', 'fifty', ''], ['sessenta', 'seh-SEH~-tah', 'sixty', ''],
+        ['setenta', 'seh-TEH~-tah', 'seventy', ''], ['oitenta', 'oy-TEH~-tah', 'eighty', ''], ['noventa', 'noh-VEH~-tah', 'ninety', ''], ['cem', 'SEH~ee', 'one hundred', ''],
+      ]),
+      gramatica(12, 'Numbers from 20 to 100', "STEP 1: the tens are: 20 vinte, 30 trinta, 40 quarenta, 50 cinquenta, 60 sessenta, 70 setenta, 80 oitenta, 90 noventa, 100 cem. From 30 up, the words follow a pattern: trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, all ending in «-enta» or «-inta». STEP 2: to say a number between the tens, put «e» (and) between the ten and the unit: 21 «vinte e um», 35 «trinta e cinco», 48 «quarenta e oito», 99 «noventa e nove». Always with the little word «e» and always written as separate words. STEP 3: «um» and «dois» have a feminine form, and they agree with the noun that comes right after: say «vinte e uma laranjas» and «trinta e duas mesas» (feminine nouns), but «vinte e um carros» and «trinta e dois cafés» (masculine nouns). From three upwards the number does not change. STEP 4: 100 alone is «cem»: «cem reais», «cem pessoas». Above 100 it becomes «cento»: «cento e um» (101), «cento e vinte» (120). You will meet those later; for today, «cem» is the top. STEP 5: say the number out loud as it is: ages («Eu tenho vinte e oito anos»), floors, bus lines, prices and sizes. Phone numbers are usually said in small groups of digits: «nove nove oito, sete um dois, quatro três» (99871-243). STEP 6: pronunciation: the stress falls on the «-EN-» of the tens («quarenta» = kwah-REH~-tah) and the «e» of the tens is nasal: do not say a clear «n».", {
+        tag: 'Numbers',
+        comparacao: "In English you say «twenty-one» with a hyphen and never use «and» before the unit. Portuguese needs «e» between the ten and the unit: «vinte e um». And, unlike English, «one» and «two» have gender: «uma laranja», «duas laranjas».",
+        tabelas: [
+          { titulo: 'The tens', linhas: [
+            { number: '20', word: 'vinte', example: 'Eu tenho vinte anos.' },
+            { number: '30', word: 'trinta', example: 'São trinta reais.' },
+            { number: '40', word: 'quarenta', example: 'A conta é quarenta reais.' },
+            { number: '50', word: 'cinquenta', example: 'Cinquenta pessoas.' },
+            { number: '60', word: 'sessenta', example: 'Sessenta minutos.' },
+            { number: '70', word: 'setenta', example: 'Setenta anos.' },
+            { number: '80', word: 'oitenta', example: 'Oitenta e cinco.' },
+            { number: '90', word: 'noventa', example: 'Noventa e nove.' },
+            { number: '100', word: 'cem', example: 'Cem reais.' },
+          ] },
+          { titulo: 'Joining tens and units with «e»', linhas: [
+            { number: '21', word: 'vinte e um / vinte e uma', example: 'vinte e uma laranjas' },
+            { number: '22', word: 'vinte e dois / vinte e duas', example: 'vinte e duas mesas' },
+            { number: '35', word: 'trinta e cinco', example: 'trinta e cinco anos' },
+            { number: '48', word: 'quarenta e oito', example: 'quarenta e oito reais' },
+            { number: '76', word: 'setenta e seis', example: 'setenta e seis pessoas' },
+          ] },
+        ],
+        erros: [['trinta cinco', 'trinta e cinco', 'Between the ten and the unit you need «e».'], ['vinte e um laranjas', 'vinte e uma laranjas', '«Laranja» is feminine, so «um» becomes «uma».'], ['cem e cinco', 'cento e cinco', 'Above 100 the word is «cento»: «cento e cinco» (105). «Cem» is only 100.'], ['saying «kwah-REN-tah» with a clear «n»', 'kwah-REH~-tah', 'The vowel before «n» is nasal; the «n» is not a separate sound.']],
+      }),
+      producao(8, 'Say these numbers out loud in Portuguese: 22, 31, 47, 58, 63, 74, 89, 96, 100. Then say your age and the age of two people you know with «tem… anos» (for example «Minha mãe tem cinquenta e dois anos»). Finally say a phone number in groups of digits.'),
+    ]),
+    sessao('S3', 'Reais, prices and paying', [
+      revisao(4, 'Count aloud: 20, 25, 30, 42, 57, 68, 73, 81, 99, 100. Then order a «café com leite» and «um pão de queijo» with «queria» and «por favor».'),
+      palavras(5, [
+        ['o real, os reais', 'oo heh-AH-oo, oos heh-AH-eess', 'real (Brazilian currency), reals', ''], ['o centavo', 'oo sen-TAH-voo', 'cent (a hundredth of a real)', ''], ['o cartão', 'oo kar-TOW~', 'card', ''], ['o dinheiro', 'oo djee-NYAY-roo', 'money, cash', ''],
+        ['o troco', 'oo TROH-koo', 'change (money back)', ''], ['o Pix', 'oo PEEKS', 'instant bank transfer used all over Brazil', ''], ['quanto custa?', 'KWAH~-too KOOS-tah', 'how much does it cost?', ''],
+      ]),
+      gramatica(8, 'Prices in reais: how to read, ask and pay', "STEP 1: the currency is the «real» (plural «reais») and it is written R$. The symbol goes before the number, and Brazil uses a comma for the decimals and a point for thousands: R$ 4,50 and R$ 1.250,00. This is the opposite of English. STEP 2: read R$ 4,50 as «quatro reais e cinquenta (centavos)». In everyday speech people drop the words: «quatro e cinquenta». R$ 12,00 is «doze reais». R$ 1,00 is «um real». R$ 0,50 is «cinquenta centavos». STEP 3: to ask the price say «Quanto custa?» for one thing («Quanto custa o suco?») and «Quanto custam?» for several («Quanto custam os pães de queijo?»). The shortest way is «Quanto é?», and for the whole bill «Quanto é tudo?». STEP 4: the answer uses «é» for one real and «são» for more: «É um real», «São nove reais e cinquenta». STEP 5: to pay, ask «Aceita cartão?» (do you accept a card?) or «Aceita Pix?». The seller may ask «débito ou crédito?» (debit or credit?). Cash is «dinheiro», and the change is «o troco». STEP 6: in Brazil the price tag often shows only «9,90», and in most cafés you pay at the counter (caixa) before or after, depending on the place.", {
+        tag: 'Prices',
+        comparacao: "In English the point separates decimals ($4.50) and the comma separates thousands. In Brazil it is the other way round: R$ 4,50 and R$ 1.250,00. In English you say «four fifty» and the price tag has the symbol first, as in Portuguese: «R$ 4,50».",
+        tabela: [
+          { price: 'R$ 1,00', you_say: 'um real', note: 'singular' },
+          { price: 'R$ 9,50', you_say: 'nove reais e cinquenta', note: 'or «nove e cinquenta»' },
+          { price: 'R$ 12,00', you_say: 'doze reais', note: 'plural «reais»' },
+          { price: 'R$ 0,50', you_say: 'cinquenta centavos', note: 'less than one real' },
+          { price: 'R$ 100,00', you_say: 'cem reais', note: '«cem» only for exactly 100' },
+          { price: 'R$ 1.250,00', you_say: 'mil duzentos e cinquenta reais', note: 'for later: point = thousands' },
+        ],
+        erros: [['dez real', 'dez reais', 'More than one: the plural is «reais».'], ['Quanto custam o café?', 'Quanto custa o café?', 'One thing: «custa». Several things: «custam».'], ['R$ 5.50', 'R$ 5,50', 'In Brazil the comma separates the decimals.'], ['São um real.', 'É um real.', 'One real takes «é»; two or more take «são».']],
+      }),
+      dialogo(8, 'At the padaria', 'Camila stops at a padaria for breakfast. A man works at the counter.', [
+        ['Camila', 'Bom dia!', 'Good morning!'], ['The waiter', 'Bom dia! Pois não?', 'Good morning! How can I help you?'], ['Camila', 'Queria um café com leite e um pão de queijo, por favor.', "I'd like a coffee with milk and a cheese bread, please."], ['The waiter', 'Claro. Mais alguma coisa?', 'Of course. Anything else?'],
+        ['Camila', 'Tem suco de laranja? Quanto custa?', 'Do you have orange juice? How much is it?'], ['The waiter', 'Tem, sim. Custa nove reais.', 'Yes, we do. It costs nine reais.'], ['Camila', 'Então queria um também.', "Then I'd like one too."], ['The waiter', 'Certo. É pra comer aqui ou pra levar?', 'All right. Is it to eat here or to take away?'],
+        ['Camila', 'Aqui, por favor. Quanto é tudo?', 'Here, please. How much is it all together?'], ['The waiter', 'São vinte e dois reais e cinquenta.', "That's twenty-two reais and fifty."], ['Camila', 'Aceita Pix?', 'Do you accept Pix?'], ['The waiter', 'Aceita, sim. Bom apetite!', 'We do. Enjoy your meal!'],
+        ['Camila', 'Obrigada!', 'Thank you!'],
+      ]),
+      producao(5, 'Role-play alone, out loud: you are in a padaria. Order two things, ask «Quanto é tudo?», imagine a price (for example «São quinze reais e cinquenta»), ask «Aceita cartão?» and thank the person.'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 8', [
+      revisao(5, 'Order a «cafezinho», a «água» and a «bolo» with «queria». Say the prices R$ 6,50, R$ 14,00 and R$ 37,90 out loud. Then count by tens from 10 to 100.'),
+      exercicios(20, [
+        ouvir('Queria um café, por favor.', ['Queria um café, por favor.', 'Queria uma água, por favor.', 'Queria um bolo, por favor.'], 'Queria um café, por favor.', 'Listen for «café» and the masculine «um».'),
+        ouvir('Quanto custa o suco?', ['Quanto custa o suco?', 'Quanto custa o café?', 'Quanto custam os sucos?'], 'Quanto custa o suco?', 'One thing: «custa».'),
+        ouvir('quarenta e cinco', ['quarenta e cinco', 'cinquenta e quatro', 'quatorze e cinco'], 'quarenta e cinco', 'Quarenta is 40; cinquenta is 50.'),
+        ouvir('São nove reais e cinquenta.', ['São nove reais e cinquenta.', 'São nove reais e quarenta.', 'São onze reais e cinquenta.'], 'São nove reais e cinquenta.', 'Listen for «nove» and «cinquenta».'),
+        ouvir('noventa e oito', ['noventa e oito', 'oitenta e nove', 'noventa e nove'], 'noventa e oito', 'Noventa is 90; oitenta is 80.'),
+        ouvir('É pra levar.', ['É pra levar.', 'É pra comer aqui.', 'É só isso.'], 'É pra levar.', '«Levar» means to take away.'),
+        ditado('Mais alguma coisa?', 'Write: Mais alguma coisa?'), ditado('A conta, por favor.', 'Write: A conta, por favor.'), ditado('Vinte e uma laranjas', 'Write: Vinte e uma laranjas.'), ditado('Aceita cartão?', 'Write: Aceita cartão?'),
+        mc('You want a polite way to ask for a coffee. What do you say?', ['Queria um café, por favor.', 'Café!', 'Eu sou um café.'], 'Queria um café, por favor.', '«Queria» + the thing + «por favor» is the polite way.'),
+        mc('How do you read R$ 4,50?', ['quatro reais e cinquenta', 'quatro mil e cinquenta', 'cinquenta e quatro reais'], 'quatro reais e cinquenta', 'The comma is the decimal separator.'),
+        mc('Which number is 100 by itself?', ['cem', 'cento', 'dez'], 'cem', '«Cem» is exactly 100; «cento» is used with 101 to 199.'),
+        mc('How do you ask the price of one thing?', ['Quanto custa?', 'Quanto custam?', 'Quanto são?'], 'Quanto custa?', 'One thing takes «custa»; several things take «custam».'),
+        mc('What does «pra levar» mean?', ['to take away', 'to eat here', 'the bill'], 'to take away', '«Levar» is to take; «pra» is spoken for «para».'),
+        lacuna('Queria ___ água, por favor.', ['uma', 'um', 'uns'], 'uma', '«Água» is feminine: «uma água».'),
+        lacuna('Queria um copo ___ suco de laranja.', ['de', 'com', 'em'], 'de', 'A container and its content are joined by «de».'),
+        lacuna('trinta ___ cinco', ['e', 'com', 'de'], 'e', 'Between ten and unit you need «e».'),
+        lacuna('São dez ___.', ['reais', 'real', 'reals'], 'reais', 'The plural of «real» is «reais».'),
+        ordem('Put in order: «Queria um café com leite, por favor.»', ['Queria', 'um', 'café', 'com', 'leite,', 'por', 'favor.'], 'Queria um café com leite, por favor.', 'Queria + um + the thing + por favor.'),
+        ordem('Put in order: «Quanto custa o suco de laranja?»', ['Quanto', 'custa', 'o', 'suco', 'de', 'laranja?'], 'Quanto custa o suco de laranja?', 'Question word, verb, then the thing.'),
+        livre('Write in Portuguese: I would like a glass of water and a cheese bread, please. How much is it?', 'Queria um copo de água e um pão de queijo, por favor. Quanto é?'),
+        livre('Write the price R$ 23,50 in words (Portuguese).', 'vinte e três reais e cinquenta'),
+      ]),
+      producao(5, 'Talk to an imaginary waiter: greet, order a drink and something to eat, say if it is for here or to go, ask the price, ask if they accept Pix or card, and say goodbye.'),
+    ]),
+  ],
+});

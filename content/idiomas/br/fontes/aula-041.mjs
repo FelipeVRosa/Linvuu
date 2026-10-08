@@ -1,0 +1,122 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'br', numero: 41, titulo: 'The conditional: futuro do pretérito', nivel: 'b1',
+  objetivo: 'Form the futuro do pretérito (the «would» tense, endings -ia, -ias, -ia, -íamos, -iam) to make polite requests, give advice, say what you would do and talk about imagined or possible situations.',
+  nota: 'You can now say «Eu gostaria de…», «Você poderia…?», «No seu lugar, eu aceitaria» and describe what you would do in an ideal situation. Next lesson: the present subjunctive and how to form it.',
+  sessoes: [
+    sessao('S1', 'Forming the conditional', [
+      revisao(5, "Say aloud three things you will do next week with the simple future from lesson 27 («eu farei», «ele dirá», «nós viajaremos»), then three polite requests with «queria» and «poderia» from lesson 29. Today these two worlds meet: the conditional is built on the same stem as the future."),
+      palavras(8, [
+        ['gostaria', 'goh-stah-REE-ah', 'I would like; he/she/you would like', ''], ['poderia', 'poh-deh-REE-ah', 'I/he/she/you would be able to; could', ''], ['deveria', 'deh-veh-REE-ah', 'I/he/she/you should; ought to', ''], ['faria', 'fah-REE-ah', 'I/he/she/you would do or make', ''],
+        ['diria', 'djee-REE-ah', 'I/he/she/you would say', ''], ['traria', 'trah-REE-ah', 'I/he/she/you would bring', ''], ['o conselho', 'koh~-SEH-lyoo', 'advice, a piece of advice', ''], ['aconselhar', 'ah-koh~-seh-LYAR', 'to advise', ''],
+        ['seria', 'seh-REE-ah', 'it/he/she/you would be', ''],
+      ]),
+      gramatica(12, 'Forming the futuro do pretérito', "STEP 1: the futuro do pretérito (English «conditional», the «would» tense) is formed from the whole infinitive plus the endings -ia, -ias, -ia, -íamos, -iam. The same endings are used for -ar, -er and -ir verbs: «falar» becomes «falaria», «comer» becomes «comeria», «partir» becomes «partiria». STEP 2: do not drop anything from the infinitive. If you already know the simple future («falarei», «comerei»), just replace the future endings with the endings above. STEP 3: three verbs have a short stem, exactly as in the simple future: «dizer» becomes «diria», «fazer» becomes «faria», «trazer» becomes «traria». All other verbs are regular here, even the ones that are irregular in the present: «ser» becomes «seria», «ter» becomes «teria», «ir» becomes «iria», «vir» becomes «viria», «estar» becomes «estaria», «poder» becomes «poderia». STEP 4: the stress falls on the «-ri-» of the ending («fala-RI-a», «fa-RI-a»), and «nós» has a written accent: «falaríamos». STEP 5: «você», «ele», «ela» and «a gente» take the same form as «eu». In the plural, «vocês», «eles» and «elas» take the -iam form.", {
+        tag: 'Conditional',
+        comparacao: "In English you need the extra word «would»: «I would speak», «she would go». Portuguese puts the «would» inside the verb: one word, «eu falaria», «ela iria». Be careful with the other English «would», the one that means «used to» («When I was a kid, we would play outside every day»). That one is not the conditional in Portuguese: it is the imperfeito («a gente brincava»).",
+        tabelas: [
+          { titulo: 'Regular verbs', linhas: [
+            { person: 'eu', falar: 'falaria', comer: 'comeria', partir: 'partiria' },
+            { person: 'você, ele, ela, a gente', falar: 'falaria', comer: 'comeria', partir: 'partiria' },
+            { person: 'nós', falar: 'falaríamos', comer: 'comeríamos', partir: 'partiríamos' },
+            { person: 'vocês, eles, elas', falar: 'falariam', comer: 'comeriam', partir: 'partiriam' },
+          ] },
+          { titulo: 'The three short stems (same stems as the simple future)', linhas: [
+            { person: 'eu, você, ele, ela', dizer: 'diria', fazer: 'faria', trazer: 'traria' },
+            { person: 'nós', dizer: 'diríamos', fazer: 'faríamos', trazer: 'traríamos' },
+            { person: 'vocês, eles, elas', dizer: 'diriam', fazer: 'fariam', trazer: 'trariam' },
+          ] },
+          { titulo: 'Other useful verbs (regular in this tense)', linhas: [
+            { infinitive: 'ser', conditional: 'seria', example: 'Seria ótimo!' },
+            { infinitive: 'ter', conditional: 'teria', example: 'Ela teria mais tempo.' },
+            { infinitive: 'ir', conditional: 'iria', example: 'Eu iria com você.' },
+            { infinitive: 'vir', conditional: 'viria', example: 'Ele viria amanhã.' },
+            { infinitive: 'poder', conditional: 'poderia', example: 'Você poderia me ajudar?' },
+          ] },
+        ],
+        exemplos: [['Eu iria com você.', 'I would go with you.'], ['Ela faria o jantar.', 'She would make dinner.'], ['A gente comeria agora.', 'We would eat now.'], ['Eles viriam de ônibus.', 'They would come by bus.']],
+        erros: [['Eu fazeria', 'Eu faria', '«Fazer», «dizer» and «trazer» lose the «-ze-»: «faria», «diria», «traria».'], ['Eu gostarria', 'Eu gostaria', 'The ending -ia is added to the full infinitive «gostar»: «gostar» + «ia». Only one «r» is written before «ia».'], ['Quando eu era criança, eu jogaria bola todo dia.', 'Quando eu era criança, eu jogava bola todo dia.', 'The English «would» for a past habit is not the conditional in Portuguese. Use the imperfeito.']],
+      }),
+      producao(5, 'Say aloud what you would do on a free Saturday in your city, with five different verbs in the conditional: «Eu dormiria até tarde. Eu faria um bom café. Eu iria…». Then say the same with «a gente» as the subject.'),
+    ]),
+    sessao('S2', 'Politeness and advice', [
+      revisao(4, 'Say the conditional of these verbs in the «eu» and «nós» forms: falar, comer, partir, fazer, dizer, trazer, ser, ter.'),
+      palavras(6, [
+        ['sugerir', 'soo-zheh-REER', 'to suggest', ''], ['aceitar', 'ah-seh-TAR', 'to accept', ''], ['oferecer', 'oh-feh-reh-SER', 'to offer', ''], ['no seu lugar', 'noh SEH-oo loo-GAR', 'in your place; if I were you', ''],
+        ['a proposta', 'ah proh-POS-tah', 'the offer, the proposal', ''], ['provavelmente', 'proh-vah-vel-MEH~-tchee', 'probably', ''],
+      ]),
+      gramatica(12, 'Polite requests, offers and advice', "STEP 1: for a polite request, use «poderia» + infinitive: «Você poderia me ajudar?», «Você poderia repetir, por favor?». It sounds softer than «Você pode…?». For a wish, use «gostaria de» + noun or infinitive: «Eu gostaria de um café», «Eu gostaria de falar com a gerente». STEP 2: for advice, use «deveria» + infinitive, or the expression «no seu lugar, eu…» + conditional: «Você deveria descansar», «No seu lugar, eu aceitaria a proposta». You can also say «Eu aconselharia…» or «Eu sugeriria…». STEP 3: to soften an opinion, use «seria» and «diria»: «Seria melhor esperar», «Eu diria que sim». STEP 4: in everyday speech, many Brazilians use the imperfeito for the same job: «Você podia me ajudar?», «Eu queria um café», «Você devia descansar». It is natural and friendly. The conditional is a bit more careful and is the safer choice in writing, at work and with people you do not know. STEP 5: in the question «Você se importaria de…?» (would you mind?), the next verb is an infinitive: «Você se importaria de fechar a janela?».", {
+        tag: 'Conditional',
+        comparacao: "English builds politeness with «would» and «could»: «Could you help me?», «I would like a coffee», «You should rest». Portuguese uses the conditional in the same places: «poderia», «gostaria», «deveria». The big difference is spoken Brazilian Portuguese, which often uses the imperfeito («podia», «queria», «devia») where English uses «could», «would like» and «should».",
+        tabela: [
+          { function: 'polite request', careful: 'Você poderia me ajudar?', everyday: 'Você pode me ajudar? / Você podia me ajudar?' },
+          { function: 'wish', careful: 'Eu gostaria de um café.', everyday: 'Eu queria um café.' },
+          { function: 'advice', careful: 'Você deveria descansar.', everyday: 'Você devia descansar. / Descansa um pouco.' },
+          { function: 'suggestion', careful: 'Eu sugeriria esperar.', everyday: 'Acho melhor esperar.' },
+          { function: 'softening', careful: 'Seria melhor sair agora.', everyday: 'Era melhor sair agora.' },
+        ],
+        erros: [['Eu gostaria um café.', 'Eu gostaria de um café.', '«Gostar» always takes «de»: «gostaria de um café», «gostaria de viajar».'], ['Você deveria de descansar.', 'Você deveria descansar.', '«Dever» is followed directly by the infinitive, with no «de».'], ['Você poderia me ajudaria?', 'Você poderia me ajudar?', 'Only the first verb is conjugated. The second verb stays in the infinitive.']],
+      }),
+      dialogo(8, 'An offer in Recife', 'Rafael received a job offer in another city. He asks his friend Camila for advice.', [
+        ['Rafael', 'Camila, preciso de um conselho. Recebi uma proposta de trabalho em Recife.', 'Camila, I need advice. I got a job offer in Recife.'],
+        ['Camila', 'Que notícia boa! Você aceitaria?', 'What good news! Would you accept?'],
+        ['Rafael', 'Eu gostaria de aceitar, mas minha família mora aqui.', 'I would like to accept, but my family lives here.'],
+        ['Camila', 'No seu lugar, eu conversaria primeiro com a Ana.', 'In your place, I would talk to Ana first.'],
+        ['Rafael', 'Você acha que ela viria comigo?', 'Do you think she would come with me?'],
+        ['Camila', 'Não sei, mas você deveria perguntar. Provavelmente ela teria muitas dúvidas.', 'I do not know, but you should ask. She would probably have a lot of questions.'],
+        ['Rafael', 'Você poderia falar com ela também? Ela escuta você.', 'Could you talk to her too? She listens to you.'],
+        ['Camila', 'Claro, eu poderia almoçar com vocês amanhã.', 'Of course, I could have lunch with you two tomorrow.'],
+        ['Rafael', 'Seria ótimo. Obrigado!', 'That would be great. Thank you!'],
+        ['Camila', 'De nada. Eu sugeriria também pedir uma semana para decidir.', 'You are welcome. I would also suggest asking for a week to decide.'],
+      ]),
+    ]),
+    sessao('S3', 'Imagining and guessing', [
+      revisao(4, 'Give a friend three pieces of advice with «você deveria…» and two with «no seu lugar, eu…».'),
+      palavras(5, [
+        ['o sonho', 'SOH-nyoo', 'the dream', ''], ['sonhar com', 'soh-NYAR koh~', 'to dream of, to dream about', ''], ['o mundo', 'MOO~-doo', 'the world', ''], ['ideal', 'ee-deh-AH-oo', 'ideal', ''], ['o despertador', 'djees-pehr-tah-DOR', 'the alarm clock', ''],
+      ]),
+      gramatica(8, 'Imagined situations and the future in the past', "STEP 1: use the conditional to describe an imagined situation. The condition can be hidden in a phrase such as «com mais dinheiro» (with more money), «sem você» (without you) or «num mundo ideal» (in an ideal world): «Com mais dinheiro, eu viajaria mais», «Sem você, eu não conseguiria». STEP 2: a full sentence with «se» («Se eu tivesse tempo, viajaria») needs a special verb form that you will learn in lesson 45 and practise in lesson 47. For now, only the conditional half is new. STEP 3: the conditional also looks forward from a moment in the past, the «future in the past»: «Em 2020, ninguém imaginava que a vida mudaria tanto», «Eu sabia que você viria». STEP 4: the conditional can also express a guess about the past, mostly in formal speech and writing: «Seriam duas horas quando ele chegou». In everyday speech people say «Devia ser umas duas horas». STEP 5: in the news the conditional marks something not yet confirmed: «O ministro viajaria hoje» (reportedly, he would travel today). You will recognise it when you read.", {
+        tag: 'Conditional',
+        comparacao: "English uses «would» for imagined situations («I would live by the sea») and also for the future seen from the past («I knew you would come»). Portuguese uses one tense for both: «Eu moraria perto do mar», «Eu sabia que você viria».",
+        exemplos: [['Com mais tempo, eu estudaria mais.', 'With more time, I would study more.'], ['Sem você, eu não conseguiria.', 'Without you, I would not manage.'], ['Num mundo ideal, ninguém passaria fome.', 'In an ideal world, nobody would go hungry.'], ['Eu sabia que você viria.', 'I knew you would come.']],
+        erros: [['Eu sabia que você vem.', 'Eu sabia que você viria.', 'After a past verb, the future that looks forward from that moment is the conditional («viria»), not the present.'], ['Eu moro perto do mar num mundo ideal.', 'Eu moraria perto do mar num mundo ideal.', 'An imagined situation needs the conditional, not the present.'], ['Com mais dinheiro, eu viajaré mais.', 'Com mais dinheiro, eu viajaria mais.', '«Viajaré» does not exist: the future is «viajarei» and the conditional is «viajaria».']],
+      }),
+      texto(8, 'An ideal world', "Num mundo ideal, minha vida seria diferente. Eu acordaria sem despertador e tomaria café com calma. Trabalharia só quatro dias por semana e teria tempo para ler. Com mais dinheiro, eu moraria perto do mar e viajaria todo ano. Meus amigos viriam me visitar, e eu faria um grande almoço para todos. Eu também ajudaria meus pais. É só um sonho, claro. Mas pensar nele me faz bem.", "In an ideal world, my life would be different. I would wake up without an alarm clock and have breakfast calmly. I would work only four days a week and have time to read. With more money, I would live near the sea and travel every year. My friends would come to visit me, and I would make a big lunch for everybody. I would also help my parents. It is only a dream, of course. But thinking about it does me good.", [
+        ['How many days a week would the writer work? (answer in Portuguese)', 'Quatro dias por semana.'],
+        ['Where would the writer live? (answer in Portuguese)', 'Perto do mar.'],
+        ['What would the writer do for the friends who visit? (answer in Portuguese)', 'Faria um grande almoço.'],
+        ['Whom would the writer also help? (answer in Portuguese)', 'Os pais.'],
+      ]),
+      producao(5, 'Write or say five sentences about your own ideal world, with «Num mundo ideal…», «Com mais tempo…» or «Sem…» followed by the conditional.'),
+    ]),
+    sessao('S4', 'Review and practice of lesson 41', [
+      revisao(5, 'Conjugate «fazer» in the conditional (eu, nós, eles), then say one polite request with «poderia», one wish with «gostaria de» and one piece of advice with «deveria».'),
+      exercicios(20, [
+        ouvir('Eu faria isso.', ['Eu faria isso.', 'Eu fiz isso.', 'Eu farei isso.'], 'Eu faria isso.', 'The ending «-ia» marks the conditional; «fiz» is the past and «farei» the future.'),
+        ouvir('Você poderia me ajudar?', ['Você poderia me ajudar?', 'Você pode me ajudar?', 'Você podia ajudar?'], 'Você poderia me ajudar?', 'Listen for the four syllables of «poderia».'),
+        ouvir('Nós viajaríamos', ['Nós viajaríamos', 'Nós viajamos', 'Nós viajaremos'], 'Nós viajaríamos', 'The stress is on «rí»: «viajaríamos».'),
+        ouvir('Eles diriam a verdade.', ['Eles diriam a verdade.', 'Eles disseram a verdade.', 'Eles dizem a verdade.'], 'Eles diriam a verdade.', '«Diriam» is the conditional of «dizer»; «disseram» is the past.'),
+        ouvir('Eu gostaria de um café.', ['Eu gostaria de um café.', 'Eu gosto de um café.', 'Eu gostei de um café.'], 'Eu gostaria de um café.', '«Gostaria de» is the polite way to ask for something.'),
+        ditado('Eu moraria perto do mar.', 'Write: Eu moraria perto do mar.'),
+        ditado('No seu lugar, eu aceitaria.', 'Write: No seu lugar, eu aceitaria.'),
+        ditado('Seria ótimo!', 'Write: Seria ótimo!'),
+        mc('Which form is the conditional of «dizer» for «eu»?', ['diria', 'dizeria', 'direi'], 'diria', 'Dizer, fazer and trazer lose the «-ze-»: «diria». «Direi» is the future.'),
+        mc('Which sentence is the most polite way to ask for help?', ['Você poderia me ajudar?', 'Me ajuda.', 'Você ajuda?'], 'Você poderia me ajudar?', '«Poderia» + infinitive is the polite request.'),
+        mc('Which tense does «a gente brincava todo dia» use for the English «we would play every day» (past habit)?', ['imperfeito', 'futuro do pretérito', 'presente'], 'imperfeito', 'The English «would» for a past habit is the imperfeito in Portuguese.'),
+        mc('How do you say «in your place, I would accept»?', ['No seu lugar, eu aceitaria.', 'No seu lugar, eu aceito.', 'No seu lugar, eu aceitei.'], 'No seu lugar, eu aceitaria.', 'Advice with «no seu lugar» uses the conditional.'),
+        mc('Which sentence is correct?', ['Eu gostaria de viajar.', 'Eu gostaria viajar.', 'Eu gostaria de viajaria.'], 'Eu gostaria de viajar.', '«Gostar» takes «de», and the second verb is an infinitive.'),
+        lacuna('Eu ___ com você, mas tenho aula. (ir, conditional)', ['iria', 'irei', 'fui'], 'iria', '«Ir» is regular in the conditional: «iria».'),
+        lacuna('Nós ___ mais tempo. (ter, conditional)', ['teríamos', 'teremos', 'tínhamos'], 'teríamos', 'Infinitive «ter» + «íamos» = «teríamos».'),
+        lacuna('Ela ___ o jantar. (fazer, conditional)', ['faria', 'fazeria', 'fará'], 'faria', 'The short stem is «far-»: «faria».'),
+        lacuna('Você ___ descansar. (dever, advice)', ['deveria', 'deveria de', 'devem'], 'deveria', '«Dever» + infinitive, with no «de».'),
+        lacuna('Eles ___ de ônibus. (vir, conditional)', ['viriam', 'vieram', 'vêm'], 'viriam', 'Plural conditional ending: «-iam».'),
+        ordem('Put in order: «Eu gostaria de um café.»', ['Eu', 'gostaria', 'de', 'um', 'café.'], 'Eu gostaria de um café.', 'Polite order: «gostaria de» + noun.'),
+        ordem('Put in order: «Você poderia repetir, por favor?»', ['Você', 'poderia', 'repetir,', 'por', 'favor?'], 'Você poderia repetir, por favor?', '«Poderia» + infinitive makes the request polite.'),
+        livre('Write in Portuguese: In your place, I would accept the offer.', 'No seu lugar, eu aceitaria a proposta.'),
+        livre('Write in Portuguese: With more money, I would travel more.', 'Com mais dinheiro, eu viajaria mais.'),
+      ]),
+      producao(5, 'Imagine a friend asks your advice about a new job in another city. Give four pieces of advice with «deveria», «no seu lugar, eu…», «seria melhor…» and «eu sugeriria…».'),
+    ]),
+  ],
+});

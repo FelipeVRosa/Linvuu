@@ -1,0 +1,99 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 51, titulo: 'Relativos (2): el cual, lo que', nivel: 'b1',
+  objetivo: 'Usar os relativos com preposição («con el que», «en la que», «por el cual»), «lo que» e «lo cual» para ideias inteiras, «cuyo» para a posse, as orações explicativas e especificativas, e o subjuntivo em relativas de antecedente desconhecido, evitando o pronome repetido típico de brasileiros.',
+  nota: 'Você liga ideias em frases longas, com os relativos que aparecem em textos e em conversas mais elaboradas. Próxima aula: conectores, para organizar o que você diz e escreve.',
+  sessoes: [
+    sessao('S1', 'Preposição + el que, el cual', [
+      revisao(5, 'Relembre os relativos do A2: «que», «donde» e «quien». Faça três frases: «La ciudad donde vivo…», «La persona que…», «El libro que…».'),
+      palavras(8, [
+        ['la persona con la que', '', 'a pessoa com quem', ''], ['el lugar en el que', '', 'o lugar em que', ''], ['la razón por la que', '', 'a razão pela qual', ''], ['el motivo por el cual', '', 'o motivo pelo qual', ''],
+        ['la forma en que', '', 'a maneira como', ''], ['el año en el que', '', 'o ano em que', ''], ['la empresa para la que', '', 'a empresa para a qual', ''], ['el amigo del que', '', 'o amigo de quem', ''],
+      ]),
+      gramatica(12, 'La casa en la que vivo, el motivo por el cual', 'PASSO 1: você já sabe que «que» liga duas ideias e que o verbo vem logo depois: «El libro que leo». PASSO 2: quando a oração relativa precisa de uma preposição, a preposição vem antes do relativo, e entre os dois entra o artigo: «La casa en la que vivo», «El amigo con el que viajé». PASSO 3: o artigo concorda com a palavra a que o relativo se refere (o antecedente): «La profesora de la que te hablé» (profesora é feminino), «Los amigos con los que salgo» (plural). PASSO 4: quando a preposição é «de» e o artigo é «el», eles se contraem: «del que», não «de el que». «El libro del que te hablé». PASSO 5: «el cual, la cual, los cuales, las cuales» fazem o mesmo trabalho de «el que, la que, los que, las que», mas são mais formais. Aparecem sobretudo na escrita e em orações explicativas entre vírgulas: «Mi hermano, el cual vive en Lima, es médico». PASSO 6: depois de preposições longas ou compostas, «el cual» é a escolha mais natural: «el puente a través del cual…», «los árboles debajo de los cuales…», «las razones según las cuales…». PASSO 7: para pessoas, depois de preposição, também se pode usar «quien, quienes»: «La persona con quien hablé», «Las personas a quienes pregunté». PASSO 8: o pronome nunca se repete na oração: não se diz «El hombre que hablé con él». Diga «El hombre con el que hablé».', {
+        tag: 'Relativos',
+        comparacao: 'o português tem estruturas muito parecidas: «a casa em que moro», «o amigo com quem viajei», «o motivo pelo qual». A diferença é que, em espanhol, o relativo com preposição quase sempre leva artigo («en la que»), e a forma sem artigo («en que») é aceita, mas menos precisa em frases longas. O erro mais comum de brasileiros é repetir o pronome: em português informal diz-se «o homem que eu falei com ele», e esse padrão passa para o espanhol como «El hombre que hablé con él», que não é correto.',
+        tabela: [
+          { formas: 'el que, la que, los que, las que', uso: 'depois de preposição, uso geral', exemplo: 'La casa en la que vivo es vieja.' },
+          { formas: 'el cual, la cual, los cuales, las cuales', uso: 'mais formal, com vírgula, com preposições longas', exemplo: 'La razón por la cual llamo es importante.' },
+          { formas: 'quien, quienes', uso: 'só para pessoas', exemplo: 'Es la persona con quien trabajo.' },
+          { formas: 'donde', uso: 'lugar (como «en el que»)', exemplo: 'La casa donde vivo es vieja.' },
+          { formas: 'del que, del cual', uso: 'contração de «de» + «el»', exemplo: 'El libro del que te hablé es corto.' },
+        ],
+        exemplos: [['El amigo con el que viajé vive en Sevilla.', 'O amigo com quem viajei mora em Sevilha.'], ['La empresa para la que trabajo está en el centro.', 'A empresa para a qual trabalho fica no centro.'], ['Estas son las razones por las cuales cambié de trabajo.', 'Estas são as razões pelas quais mudei de emprego.'], ['La profesora de la que te hablé da clases en línea.', 'A professora de quem lhe falei dá aulas on-line.']],
+        erros: [['El hombre que hablé con él es mi tío.', 'El hombre con el que hablé es mi tío.', 'Não se repete o pronome, e a preposição vem antes do relativo.'], ['La casa que vivo es pequeña.', 'La casa en la que vivo es pequeña.', 'O verbo «vivir» pede «en»: «en la que».'], ['La profesora de el que te hablé.', 'La profesora del que te hablé.', '«De» + «el» se contraem em «del».'], ['Las personas con los que trabajo son amables.', 'Las personas con las que trabajo son amables.', 'O artigo concorda com «personas»: feminino plural.']],
+      }),
+      producao(5, 'Descreva em voz alta cinco coisas da sua vida com relativos: «La casa en la que vivo…», «La persona con la que trabajo…», «El año en el que…», «La razón por la que…», «El libro del que…».'),
+    ]),
+    sessao('S2', 'Lo que, lo cual e todo lo que', [
+      revisao(4, 'Complete: «La ciudad en la que…», «El amigo con el que…», «El motivo por el cual…». Diga também quando se usa «del que» e não «de el que».'),
+      palavras(6, [
+        ['lo que', '', 'o que, aquilo que', ''], ['lo cual', '', 'o que (ideia inteira)', ''], ['todo lo que', '', 'tudo o que', ''], ['lo de', '', 'aquele assunto de', ''], ['por lo cual', '', 'por isso, pelo que', ''], ['con lo que', '', 'com o que', ''],
+      ]),
+      gramatica(12, 'Lo que dices, lo cual me sorprendió', 'PASSO 1: «lo que» é o relativo neutro. Ele não se refere a uma palavra, e sim a «aquilo que»: «Lo que dices es verdad», «Eso es lo que quiero». Em português é «o que» ou «aquilo que». PASSO 2: «todo lo que» é «tudo o que»: «Todo lo que necesito está aquí». Não se omite o «lo»: não existe «todo que». PASSO 3: «lo cual» (ou também «lo que») se refere a uma ideia inteira, que foi dita antes, e vem depois de vírgula: «No vino a la fiesta, lo cual me sorprendió». Aqui «lo cual» significa «e isso». PASSO 4: depois de preposição, «lo que» e «lo cual» funcionam também: «Llegó tarde, por lo cual perdió el tren», «Habló con su jefe, con lo que se resolvió todo». PASSO 5: «lo de» introduz um assunto já conhecido: «Lo de ayer fue un error», «¿Qué pasó con lo de la reunión?» Em português é «aquilo de», «aquela história de». PASSO 6: não confunda «qué» (interrogativo, com acento) com «lo que» (relativo, sem acento). Pergunta: «¿Qué quieres?». Relativo: «Lo que quiero es descansar». Depois de «no sé», os dois são possíveis: «No sé qué quieres» e «No sé lo que quieres». PASSO 7: com infinitivo, só «qué»: «No sé qué hacer», e não «lo que hacer». PASSO 8: depois de «lo que» e «todo lo que», use o subjuntivo quando se fala de algo ainda não definido: «Haz lo que quieras» (o que você quiser), «Compra lo que necesites», «Todo lo que digas será útil».', {
+        tag: 'Relativos',
+        comparacao: 'o português usa «o que» e «tudo o que» da mesma forma, e a vírgula com «o que» para comentar a frase inteira: «Ele não veio, o que me surpreendeu». Em espanhol dizem-se «lo que» ou «lo cual» («lo cual» é mais formal). Cuidado: em espanhol o artigo neutro «lo» é obrigatório antes de «que» neste uso, e não se diz «Qué me gusta es el café» nem «Todo que quiero».',
+        tabela: [
+          { forma: 'lo que', uso: 'aquilo que (sem antecedente)', exemplo: 'Lo que me gusta es el café.' },
+          { forma: 'todo lo que', uso: 'tudo o que', exemplo: 'Todo lo que dices es verdad.' },
+          { forma: ', lo cual / , lo que', uso: 'comenta a frase inteira', exemplo: 'No vino, lo cual me sorprendió.' },
+          { forma: 'por lo que / por lo cual', uso: 'consequência (por isso)', exemplo: 'Llegó tarde, por lo que perdió el tren.' },
+          { forma: 'lo de', uso: 'assunto conhecido', exemplo: 'Lo de ayer fue un error.' },
+          { forma: 'qué + infinitivo', uso: 'o que fazer', exemplo: 'No sé qué hacer.' },
+        ],
+        exemplos: [['Lo que más me gusta de esta ciudad es el río.', 'O que mais gosto nesta cidade é o rio.'], ['Te cuento todo lo que pasó.', 'Eu conto tudo o que aconteceu.'], ['Perdió las llaves, lo cual le complicó el día.', 'Perdeu as chaves, o que complicou o dia dele.'], ['Haz lo que quieras, yo te apoyo.', 'Faça o que quiser, eu te apoio.']],
+        erros: [['Todo que quiero es descansar.', 'Todo lo que quiero es descansar.', '«Todo» pede o neutro «lo» antes de «que».'], ['Qué me gusta es el café.', 'Lo que me gusta es el café.', 'Quando não é pergunta, usa-se «lo que», sem acento.'], ['No vino, que me sorprendió.', 'No vino, lo que / lo cual me sorprendió.', 'Para comentar a frase inteira, usa-se o neutro.'], ['No sé lo que hacer.', 'No sé qué hacer.', 'Com infinitivo, usa-se «qué».']],
+      }),
+      producao(8, 'Fale em voz alta de cinco coisas que você gosta ou detesta: «Lo que más me gusta es…», «Lo que menos me gusta es…», «Todo lo que…». Depois comente três fatos de ontem com «lo cual» ou «lo que»: «Llegué tarde, lo cual…».'),
+    ]),
+    sessao('S3', 'Cuyo, relativos explicativos e subjuntivo', [
+      revisao(4, 'Diga três frases com «lo que» e duas com «todo lo que». Depois uma com «por lo cual».'),
+      palavras(5, [
+        ['cuyo, cuya', '', 'cujo, cuja', ''], ['cuyos, cuyas', '', 'cujos, cujas', ''], ['donde', '', 'onde', ''], ['adonde', '', 'aonde', ''], ['a quien', '', 'a quem', ''],
+      ]),
+      gramatica(8, 'Cuyo, relativas com vírgula e relativas com subjuntivo', 'PASSO 1: «cuyo» (cujo) indica posse, e concorda com a coisa possuída, não com o possuidor: «El autor cuyo libro leí» (libro é masculino), «La mujer cuyas hijas conocí» (hijas é feminino plural). PASSO 2: depois de «cuyo» não se coloca artigo: não existe «cuyo el libro». «Cuyo» é mais comum na escrita; na fala, divida a frase: «Conocí a una mujer, y sus hijas…». PASSO 3: «donde» é relativo de lugar: «El sitio donde vivo», «El pueblo adonde vamos». Para tempo e modo, use preposição + relativo: «El día en que llegué», «La manera en que lo dijo». Não se diz «el día cuando» nem «la manera como lo dijo» no padrão escrito. PASSO 4: uma relativa com vírgulas dá informação extra, e todos os elementos são incluídos: «Mis hermanos, que viven en Lima, son médicos» (todos eles moram em Lima). Sem vírgulas, restringe: «Mis hermanos que viven en Lima son médicos» (só os que moram em Lima). PASSO 5: com vírgulas e sem preposição, o normal é «que»: «Mi hermana, que vive en Lima…» (a forma «la cual» é possível, mas formal). PASSO 6: o antecedente desconhecido ou inexistente pede subjuntivo: «Busco a alguien que hable alemán», «No hay nadie que lo sepa». Com antecedente conhecido, usa-se indicativo: «Conozco a alguien que habla alemán». PASSO 7: depois de «el que», «los que», o subjuntivo também aparece se não há pessoa determinada: «Los que quieran venir, que me avisen».', {
+        tag: 'Relativos',
+        comparacao: 'o português tem o mesmo «cujo», com concordância com a coisa possuída: «o autor cujo livro li». A fala informal brasileira evita esse relativo, mas em espanhol ele aparece em textos escritos e formais. Já «onde» e «aonde» também funcionam como em português, e a escolha entre relativa com vírgula e sem vírgula tem o mesmo efeito de sentido nas duas línguas.',
+        tabela: [
+          { forma: 'cuyo, cuya, cuyos, cuyas', uso: 'posse, concorda com o possuído', exemplo: 'El autor cuyo libro leí es chileno.' },
+          { forma: 'donde, adonde', uso: 'lugar', exemplo: 'El pueblo adonde vamos es pequeño.' },
+          { forma: 'en que / en el que', uso: 'tempo e modo', exemplo: 'El día en que llegué llovía.' },
+          { forma: 'relativa com vírgula', uso: 'informação extra', exemplo: 'Mis padres, que viven en Cádiz, son jubilados.' },
+          { forma: 'relativa com subjuntivo', uso: 'antecedente desconhecido', exemplo: 'Busco un piso que tenga terraza.' },
+        ],
+        erros: [['El autor cuyo el libro leí.', 'El autor cuyo libro leí.', 'Depois de «cuyo» não vai artigo.'], ['La mujer cuyo hijas conocí.', 'La mujer cuyas hijas conocí.', '«Cuyo» concorda com «hijas», o possuído.'], ['El día cuando llegué.', 'El día en que llegué.', 'Para tempo, use preposição + relativo.'], ['Busco una persona que habla alemán.', 'Busco una persona que hable alemán.', 'Pessoa desconhecida pede subjuntivo.']],
+      }),
+      texto(8, 'Mi barrio / O meu bairro', 'El barrio en el que vivo es pequeño, pero tiene todo lo que necesito. La plaza en la que juegan los niños está rodeada de cafeterías, una de las cuales, la de Rosa, abre desde las siete. Rosa, que lleva treinta años trabajando allí, conoce a todos los vecinos. Mi vecino de arriba, cuyo perro ladra todas las mañanas, es un hombre simpático con el que me llevo muy bien. Lo que más me gusta es el mercado, adonde voy los sábados. Ayer encontré allí una librería pequeña que no conocía. El dueño, a quien nunca había visto, me recomendó un libro del que no había oído hablar, lo cual me sorprendió mucho. Ahora busco una persona que quiera practicar español conmigo.', 'O bairro em que moro é pequeno, mas tem tudo o que preciso. A praça em que as crianças brincam é cercada de cafeterias, uma das quais, a da Rosa, abre desde as sete. Rosa, que trabalha lá há trinta anos, conhece todos os vizinhos. Meu vizinho de cima, cujo cachorro late todas as manhãs, é um homem simpático com quem me dou muito bem. O que mais gosto é o mercado, aonde vou aos sábados. Ontem encontrei ali uma livraria pequena que eu não conhecia. O dono, a quem eu nunca tinha visto, me recomendou um livro de que eu nunca tinha ouvido falar, o que me surpreendeu muito. Agora procuro uma pessoa que queira praticar espanhol comigo.', [
+        ['¿Qué tiene el barrio?', 'Todo lo que la persona necesita.'], ['¿Cuántos años lleva Rosa trabajando allí?', 'Treinta años.'], ['¿Qué hace el perro del vecino?', 'Ladra todas las mañanas.'], ['¿Cuándo va al mercado?', 'Los sábados.'], ['¿A quién busca ahora?', 'A una persona que quiera practicar español con ella o con él.'],
+      ]),
+      producao(5, 'Escreva e diga em voz alta cinco frases sobre o seu bairro ou a sua cidade com relativos: um com preposição, um com «lo que», um com «cuyo», um com vírgula e um com subjuntivo («Busco un lugar que…»).'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 51', [
+      revisao(5, 'Faça uma frase com cada: «en el que», «con la que», «por lo cual», «lo que», «todo lo que», «cuyo».'),
+      exercicios(20, [
+        ouvir('La casa en la que vivo es pequeña', ['La casa en la que vivo es pequeña', 'La casa que vivo es pequeña', 'La casa en lo que vivo es pequeña'], 'La casa en la que vivo es pequeña', 'O relativo com preposição leva artigo: «en la que».'),
+        ouvir('Lo que más me gusta es el mercado', ['Lo que más me gusta es el mercado', 'Qué más me gusta es el mercado', 'Todo que más me gusta es el mercado'], 'Lo que más me gusta es el mercado', '«Lo que» é o relativo neutro.'),
+        ouvir('No vino, lo cual me sorprendió', ['No vino, lo cual me sorprendió', 'No vino, que me sorprendió', 'No vino, el cual me sorprendió'], 'No vino, lo cual me sorprendió', '«Lo cual» comenta a frase inteira.'),
+        ditado('Es la persona con la que trabajo', 'Escreva: Es la persona con la que trabajo.'),
+        ditado('Todo lo que necesito está aquí', 'Escreva: Todo lo que necesito está aquí.'),
+        ditado('El libro del que te hablé es corto', 'Escreva: El libro del que te hablé es corto. Atenção a «del».'),
+        mc('Qual frase está correta?', ['El hombre con el que hablé es mi tío.', 'El hombre que hablé con él es mi tío.', 'El hombre que hablé con es mi tío.'], 'El hombre con el que hablé es mi tío.', 'Preposição + artigo + que, sem repetir o pronome.'),
+        mc('Qual forma é correta antes de «que» com «amigos»?', ['Los amigos con los que viajé', 'Los amigos con el que viajé', 'Los amigos con lo que viajé'], 'Los amigos con los que viajé', 'O artigo concorda com «amigos»: masculino plural.'),
+        mc('Como se diz «tudo o que preciso»?', ['todo lo que necesito', 'todo que necesito', 'todo qué necesito'], 'todo lo que necesito', '«Todo» pede «lo» antes de «que».'),
+        mc('Como se diz «o autor cujo livro li»?', ['el autor cuyo libro leí', 'el autor cuya libro leí', 'el autor cuyo el libro leí'], 'el autor cuyo libro leí', '«Cuyo» concorda com «libro» e não leva artigo.'),
+        mc('Qual frase usa subjuntivo corretamente?', ['Busco un piso que tenga terraza.', 'Busco un piso que tiene terraza.', 'Busco un piso que tendrá terraza.'], 'Busco un piso que tenga terraza.', 'O piso é desconhecido: subjuntivo.'),
+        mc('Qual frase restringe o grupo (só alguns irmãos)?', ['Mis hermanos que viven en Lima son médicos.', 'Mis hermanos, que viven en Lima, son médicos.', 'Mis hermanos cuyo viven en Lima son médicos.'], 'Mis hermanos que viven en Lima son médicos.', 'Sem vírgulas, a relativa restringe; com vírgulas, só acrescenta informação.'),
+        lacuna('La razón por la ___ llamo es importante.', ['cual', 'cuyo', 'lo'], 'cual', '«Por la cual» é a forma formal.'),
+        lacuna('El día en ___ llegué llovía.', ['que', 'cuando', 'lo'], 'que', 'Para tempo, use preposição + «que».'),
+        lacuna('No sé ___ hacer. (o que)', ['qué', 'lo que', 'que'], 'qué', 'Com infinitivo, usa-se «qué».'),
+        lacuna('Haz ___ quieras. (o que)', ['lo que', 'qué', 'el que'], 'lo que', 'Relativo neutro, com subjuntivo por não ser definido.'),
+        lacuna('Mi hermano, ___ vive en Lima, es médico.', ['que', 'lo que', 'cuyo'], 'que', 'Relativa explicativa com vírgula.'),
+        ordem('Ordene: «Lo que dices es verdad.»', ['Lo', 'que', 'dices', 'es', 'verdad.'], 'Lo que dices es verdad.', 'Relativo neutro como sujeito.'),
+        ordem('Ordene: «La casa en la que vivo es pequeña.»', ['La', 'casa', 'en', 'la', 'que', 'vivo', 'es', 'pequeña.'], 'La casa en la que vivo es pequeña.', 'Antecedente, preposição, artigo e «que».'),
+        livre('Escreva em espanhol: O amigo com quem viajei mora em Sevilha.', 'El amigo con el que viajé vive en Sevilla.'),
+      ]),
+      producao(5, 'Descreva em voz alta uma pessoa que você admira com relativos: «Es una persona con la que…», «Lo que más admiro de ella es…», «Es alguien cuyo…».'),
+    ]),
+  ],
+});

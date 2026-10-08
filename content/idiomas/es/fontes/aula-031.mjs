@@ -1,0 +1,114 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 31, titulo: 'Quantidade, advérbios e por × para', nivel: 'a2',
+  objetivo: 'Falar de quantidade com «mucho, poco, bastante, demasiado, suficiente, todo, algún, ningún», formar advérbios em «-mente» e escolher entre «por» e «para» (destino, finalidade, causa, trajeto, prazo, troca), evitando os erros mais comuns de brasileiros.',
+  nota: 'Você agora dosa as quantidades, descreve como as coisas são feitas e distingue «por» de «para». Próxima aula: os pronomes e as orações relativas («que, donde, quien»).',
+  sessoes: [
+    sessao('S1', 'Palavras de quantidade', [
+      revisao(5, 'Compare duas coisas em voz alta com «más… que» e «tan… como». Depois diga uma frase no futuro simples e outra com «ir a».'),
+      palavras(8, [
+        ['mucho, mucha', 'mútcho', 'muito', ''], ['poco, poca', 'póko', 'pouco', ''], ['bastante', 'bastánte', 'bastante, suficiente', ''], ['demasiado, demasiada', 'demasiádo', 'demais, excessivo', ''],
+        ['suficiente', 'sufithiénte', 'suficiente', ''], ['todo, toda', 'tódo', 'todo, toda', ''], ['un montón de', 'un montón de', 'um monte de', ''], ['un poco de', 'un póko de', 'um pouco de', ''],
+      ]),
+      gramatica(12, 'Mucho, poco, bastante, demasiado, todo e algún', 'PASSO 1: «mucho» e «poco» têm dois papéis. Antes de substantivo, concordam em gênero e número: «mucha gente», «muchos amigos», «poca agua», «pocas ideas». Depois de verbo, são invariáveis: «Trabajo mucho», «Duerme poco». PASSO 2: «bastante» quer dizer «suficiente» ou «bem, razoavelmente». Com substantivo, concorda só no número: «bastante dinero», «bastantes libros». Com adjetivo, fica invariável e atenua: «Es bastante caro» (é bem caro). PASSO 3: «demasiado» indica excesso: «demasiado calor», «demasiada gente», «demasiados coches». Antes de adjetivo, fica invariável e vai antes dele: «Es demasiado caro» (é caro demais). Não se diz «muy demasiado». PASSO 4: «suficiente» também indica quantidade suficiente: «Tengo suficiente tiempo», «No hay suficientes sillas». PASSO 5: «todo, toda, todos, todas» pedem o artigo antes do substantivo: «todo el día», «toda la noche», «todos los días», «todas las semanas». Nesses casos, sem o artigo soa errado. PASSO 6: «algún» e «ningún» são formas cortadas de «alguno» e «ninguno», usadas antes de substantivo masculino singular: «algún día», «ningún problema». No feminino, não se corta: «alguna vez», «ninguna idea». PASSO 7: a negação dupla é normal: «No tengo nada», «No viene nadie», «No hay ningún problema». Se a palavra negativa vem antes do verbo, não se usa «no»: «Nadie viene», «Nunca estudio». PASSO 8: «un poco de» + substantivo que não se conta: «un poco de agua», «un poco de tiempo»; «un montón de» é coloquial e significa «muitíssimo»: «un montón de gente».', {
+        tag: 'Quantidade',
+        comparacao: 'em português, «muito» concorda com o substantivo («muita gente», «muitos amigos») e fica invariável depois do verbo («trabalho muito»). Em espanhol é igual com «mucho». A diferença está no uso: com adjetivo se usa «muy» («muy caro»), e não «mucho caro»; e para «demais», o espanhol coloca «demasiado» antes do adjetivo («demasiado caro»), enquanto o português põe «demais» depois («caro demais»).',
+        tabelas: [
+          { titulo: 'Palavras de quantidade', linhas: [
+            { palavra: 'mucho, mucha, muchos, muchas', sentido: 'muito', exemplo: 'Hay mucha gente en la calle.' },
+            { palavra: 'poco, poca, pocos, pocas', sentido: 'pouco', exemplo: 'Tengo pocos amigos aquí.' },
+            { palavra: 'bastante, bastantes', sentido: 'bastante, suficiente', exemplo: 'Tenemos bastante tiempo.' },
+            { palavra: 'demasiado, demasiada…', sentido: 'demais (excesso)', exemplo: 'Hace demasiado calor.' },
+            { palavra: 'suficiente, suficientes', sentido: 'suficiente', exemplo: 'No tengo suficiente dinero.' },
+            { palavra: 'todo el, toda la, todos los, todas las', sentido: 'todo', exemplo: 'Trabajo todos los días.' },
+            { palavra: 'algún, alguna, ningún, ninguna', sentido: 'algum, nenhum', exemplo: 'No tengo ningún problema.' },
+            { palavra: 'un poco de, un montón de', sentido: 'um pouco de, um monte de', exemplo: 'Quiero un poco de agua.' },
+          ] },
+        ],
+        exemplos: [['Hay demasiada gente en el metro.', 'Há gente demais no metrô.'], ['Tengo suficiente tiempo para comer.', 'Tenho tempo suficiente para comer.'], ['Estudio todos los días.', 'Estudo todos os dias.'], ['No tengo ningún problema.', 'Não tenho nenhum problema.']],
+        erros: [['Trabajo todo los días.', 'Trabajo todos los días.', '«Todo» concorda com «días» e pede o artigo: todos los días.'], ['Es muy demasiado caro.', 'Es demasiado caro.', '«Demasiado» já indica excesso e não leva «muy».'], ['No tengo ninguno problema.', 'No tengo ningún problema.', 'Antes de substantivo masculino singular, «ninguno» se corta.'], ['Hay mucho gente.', 'Hay mucha gente.', '«Mucho» concorda com «gente», que é feminino.']],
+      }),
+      producao(5, 'Descreva a sua cidade em voz alta, com «mucha gente», «pocos parques», «demasiado tráfico», «bastantes tiendas» e «ningún problema».'),
+    ]),
+    sessao('S2', 'Por × para', [
+      revisao(4, 'Diga cinco frases com palavras de quantidade: «mucho», «poco», «bastante», «demasiado» e «todo».'),
+      palavras(6, [
+        ['por eso', 'por ésso', 'por isso', ''], ['por ejemplo', 'por ehémplo', 'por exemplo', ''], ['por fin', 'por fin', 'finalmente', ''], ['por favor', 'por fabór', 'por favor', ''], ['para qué', 'pára ké', 'para quê', ''], ['para mí', 'pára mi', 'para mim, na minha opinião', ''],
+      ]),
+      gramatica(12, 'Por e para: dois olhares', 'PASSO 1: as duas palavras se traduzem como «por» ou «para», mas o espanhol é mais firme na escolha. Uma regra prática: «para» olha para frente, para o objetivo; «por» olha para trás, para a causa, ou para o caminho. PASSO 2: use «para» para destino: «Salgo para Madrid», «Este tren va para Sevilla». PASSO 3: use «para» para finalidade, para quê: «Estudio para aprender», «Una taza para café», «¿Para qué sirve?». PASSO 4: use «para» para o destinatário: «Este regalo es para ti», «Trabajo para una empresa pequeña». PASSO 5: use «para» para prazo e opinião: «Tengo que terminar para el lunes», «Para mí, es muy fácil». PASSO 6: use «por» para causa e motivo: «Estoy cansado por el calor», «No salgo por la lluvia». PASSO 7: use «por» para trajeto e lugar aproximado: «Paso por tu calle», «Viajamos por España». PASSO 8: use «por» para meio, troca e preço: «Hablo por teléfono», «Pago diez euros por el libro», «Gracias por tu ayuda». PASSO 9: use «por» para partes do dia e duração: «por la mañana», «por la tarde», «por la noche», «por tres días». Mas com hora exata se usa «de»: «a las ocho de la mañana». PASSO 10: não esqueça as expressões fixas: «por favor», «por eso», «por ejemplo», «por fin», «por supuesto», «por primera vez».', {
+        tag: 'Preposições',
+        comparacao: 'em português também há «por» e «para», e na maior parte dos usos a divisão é a mesma: «para» = destino e finalidade; «por» = causa e trajeto. Mas há armadilhas: «Gracias por tu ayuda» (nunca «para»), «Estudio para aprender» (nunca «por aprender») e «de manhã» em português corresponde a «por la mañana» em espanhol. Além disso, «pelo» e «pela» do português são «por el» e «por la» em espanhol.',
+        tabelas: [
+          { titulo: 'Para', linhas: [
+            { uso: 'destino', exemplo: 'Salgo para Madrid mañana.' },
+            { uso: 'finalidade', exemplo: 'Estudio para aprender español.' },
+            { uso: 'destinatário', exemplo: 'Este regalo es para ti.' },
+            { uso: 'prazo', exemplo: 'Necesito el informe para el viernes.' },
+            { uso: 'opinião', exemplo: 'Para mí, es una buena idea.' },
+          ] },
+          { titulo: 'Por', linhas: [
+            { uso: 'causa', exemplo: 'No salgo por la lluvia.' },
+            { uso: 'trajeto, lugar', exemplo: 'Paso por tu casa a las seis.' },
+            { uso: 'meio', exemplo: 'Te llamo por teléfono.' },
+            { uso: 'troca, preço', exemplo: 'Pago veinte euros por la camiseta.' },
+            { uso: 'duração, parte do dia', exemplo: 'Estudio por la mañana.' },
+            { uso: 'agradecer', exemplo: 'Gracias por tu ayuda.' },
+          ] },
+        ],
+        exemplos: [['Voy a la tienda para comprar pan.', 'Vou à loja para comprar pão.'], ['No voy a la playa por el frío.', 'Não vou à praia por causa do frio.'], ['Este regalo es para mi madre.', 'Este presente é para a minha mãe.'], ['Gracias por todo.', 'Obrigado por tudo.']],
+        erros: [['Estudio por aprender español.', 'Estudio para aprender español.', 'Finalidade pede «para».'], ['Gracias para tu ayuda.', 'Gracias por tu ayuda.', 'Agradecer pede «por».'], ['Salgo por Madrid mañana. (destino)', 'Salgo para Madrid mañana.', 'Destino pede «para»; «por» indicaria apenas o trajeto.'], ['Lo hago para el calor. (causa)', 'Lo hago por el calor.', 'Causa pede «por».']],
+      }),
+      producao(8, 'Diga oito frases: duas com «para» (destino e finalidade), duas com «por» (causa e trajeto), duas com «por» de partes do dia e duração, e duas de agradecimento.'),
+    ]),
+    sessao('S3', 'Advérbios em -mente', [
+      revisao(4, 'Diga três usos de «por» e três de «para» com exemplos, de memória.'),
+      palavras(5, [
+        ['lentamente', 'lentaménte', 'lentamente', ''], ['rápidamente', 'rápidaménte', 'rapidamente', ''], ['fácilmente', 'fáthilménte', 'facilmente', ''], ['despacio', 'despáthio', 'devagar', ''], ['deprisa', 'depríssa', 'depressa', ''], ['pronto', 'prónto', 'logo, cedo (não «pronto»)', ''],
+      ]),
+      gramatica(8, 'Como se formam os advérbios em -mente', 'PASSO 1: o advérbio diz como, quando ou onde uma ação acontece. Muitos se formam com um adjetivo + «-mente». PASSO 2: pegue o adjetivo na forma feminina singular: «lento → lenta», «claro → clara», «rápido → rápida». Depois acrescente «-mente»: «lentamente», «claramente», «rápidamente». PASSO 3: se o adjetivo não muda de gênero (termina em -e, -l, -z, por exemplo), basta acrescentar «-mente»: «fácil → fácilmente», «feliz → felizmente», «frecuente → frecuentemente». PASSO 4: o acento do adjetivo permanece: «rápido → rápidamente», «fácil → fácilmente». O advérbio tem duas sílabas fortes. PASSO 5: quando há dois advérbios seguidos ligados por «y», é comum (e elegante) só o último levar «-mente»: «lenta y claramente»; usar «-mente» nos dois, «lentamente y claramente», também é aceito. PASSO 6: o advérbio de «bueno» é «bien». O contrário é «mal». PASSO 7: na fala do dia a dia, muitos adjetivos funcionam como advérbios, sem mudar: «Habla rápido», «Trabaja duro», «Habla claro». PASSO 8: alternativas sem «-mente»: «con cuidado», «con paciencia», «de forma tranquila», «despacio» (devagar), «deprisa» (depressa). PASSO 9: falso amigo: «pronto» significa em breve, cedo; não é «pronto» (de «estar pronto»). Para dizer que está pronto, use «listo» (ou «preparado»). Diga «Estoy listo», e não «Estoy pronto».', {
+        tag: 'Advérbios',
+        comparacao: 'em português o advérbio em «-mente» também vem do feminino do adjetivo («lenta → lentamente»), e a regra é a mesma em espanhol: «lenta → lentamente». Muda o acento: em português, «rápida» perde o acento em «rapidamente»; em espanhol, ele permanece em «rápidamente». E o falso amigo «pronto» é muito traiçoeiro: em espanhol quer dizer em breve ou cedo.',
+        tabela: [
+          { adjetivo: 'lento', adverbio: 'lentamente', observacao: 'feminino + mente' },
+          { adjetivo: 'claro', adverbio: 'claramente', observacao: 'feminino + mente' },
+          { adjetivo: 'rápido', adverbio: 'rápidamente', observacao: 'o acento permanece' },
+          { adjetivo: 'fácil', adverbio: 'fácilmente', observacao: 'o acento permanece' },
+          { adjetivo: 'feliz', adverbio: 'felizmente', observacao: 'z não muda, só acrescenta -mente' },
+          { adjetivo: 'bueno', adverbio: 'bien', observacao: 'forma própria' },
+          { adjetivo: 'malo', adverbio: 'mal', observacao: 'forma própria' },
+        ],
+        erros: [['Habla bueno español.', 'Habla bien español.', '«Bueno» é adjetivo; o advérbio é «bien».'], ['Trabajo lentomente.', 'Trabajo lentamente.', 'Parta do feminino: lenta + mente.'], ['Trabaja rapidamente.', 'Trabaja rápidamente.', 'O acento do adjetivo permanece em «rápidamente».'], ['Estoy pronto para salir.', 'Estoy listo para salir.', '«Pronto» em espanhol é em breve ou cedo.']],
+      }),
+      texto(8, 'Un sábado en el mercado / Um sábado na feira', 'Rosa va al mercado todos los sábados por la mañana. Hoy tiene que comprar fruta para su madre y un poco de queso para la cena. Pasa por el puesto de Don Manuel, que vende naranjas bastante baratas, y compra dos kilos. Después compra tomates, pero en el puesto de al lado hay demasiada gente y espera diez minutos. Habla con la vendedora amablemente, y la vendedora le explica claramente cuál es mejor. Vuelve a casa por el parque, porque es un camino más bonito, y llega pronto. Su madre abre la puerta y le dice: «Gracias por todo, Rosa. Estas naranjas son para el postre».', 'Rosa vai à feira todos os sábados de manhã. Hoje precisa comprar fruta para a mãe e um pouco de queijo para o jantar. Passa pela barraca do senhor Manuel, que vende laranjas bastante baratas, e compra dois quilos. Depois compra tomates, mas na barraca ao lado há gente demais e ela espera dez minutos. Fala com a vendedora com simpatia, e a vendedora explica com clareza qual é a melhor. Volta para casa pelo parque, porque é um caminho mais bonito, e chega logo. A mãe abre a porta e diz: «Obrigada por tudo, Rosa. Estas laranjas são para a sobremesa».', [
+        ['¿Cuándo va Rosa al mercado?', 'Todos los sábados por la mañana.'], ['¿Qué compra en el puesto de Don Manuel?', 'Dos kilos de naranjas.'], ['¿Por qué espera diez minutos?', 'Porque hay demasiada gente.'], ['¿Cómo vuelve a casa?', 'Por el parque.'], ['¿Para qué son las naranjas?', 'Para el postre.'],
+      ]),
+      producao(5, 'Diga, em voz alta, como você faz cinco coisas do dia a dia: «Hablo… Como… Conduzco… Trabajo…» Use pelo menos três advérbios em «-mente».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 31', [
+      revisao(5, 'Descreva um passeio no mercado com palavras de quantidade, «por» e «para», e dois advérbios em «-mente».'),
+      exercicios(20, [
+        ouvir('Hay demasiada gente en el metro', ['Hay demasiada gente en el metro', 'Hay bastante gente en el metro', 'Hay poca gente en el metro'], 'Hay demasiada gente en el metro', 'Ouça «demasiada»: excesso.'),
+        ouvir('Estudio para aprender español', ['Estudio para aprender español', 'Estudio por aprender español', 'Estudio y aprender español'], 'Estudio para aprender español', 'Ouça «para»: finalidade.'),
+        ouvir('Habla lenta y claramente', ['Habla lenta y claramente', 'Habla lentamente y claramente', 'Habla lenta y clara'], 'Habla lenta y claramente', 'Ouça: «lenta» sem «-mente» e só o último advérbio com «-mente».'),
+        ditado('Trabajo todos los días', 'Escreva: Trabajo todos los días. «Todos» concorda com «días».'),
+        ditado('Gracias por tu ayuda', 'Escreva: Gracias por tu ayuda. Para agradecer, use «por».'),
+        ditado('Voy a Madrid por la mañana', 'Escreva: Voy a Madrid por la mañana.'),
+        mc('Qual é o advérbio de «fácil»?', ['fácilmente', 'facilmente', 'fácil mente'], 'fácilmente', 'O acento do adjetivo permanece.'),
+        mc('Qual é o advérbio de «bueno»?', ['bien', 'buenamente', 'bueno'], 'bien', '«Bien» é o advérbio de «bueno».'),
+        mc('Como se diz «Obrigado pela sua ajuda»?', ['Gracias por tu ayuda.', 'Gracias para tu ayuda.', 'Gracias a tu ayuda.'], 'Gracias por tu ayuda.', 'Agradecer pede «por».'),
+        mc('Qual frase indica destino?', ['Salgo para Madrid.', 'Salgo por Madrid.', 'Salgo desde Madrid.'], 'Salgo para Madrid.', 'Destino pede «para».'),
+        mc('Como se diz «Estou pronto»?', ['Estoy listo.', 'Estoy pronto.', 'Estoy próximo.'], 'Estoy listo.', '«Pronto» em espanhol é em breve ou cedo.'),
+        mc('Qual frase está correta?', ['No tengo ningún problema.', 'No tengo ninguno problema.', 'No tengo ningun problema.'], 'No tengo ningún problema.', 'Antes de substantivo masculino singular, «ninguno» vira «ningún», com acento.'),
+        lacuna('Hay ___ gente. (muita)', ['mucha', 'mucho', 'muy'], 'mucha', '«Mucho» concorda com «gente», feminino.'),
+        lacuna('Es ___ caro. (caro demais)', ['demasiado', 'demasiada', 'muy demasiado'], 'demasiado', 'Antes de adjetivo, «demasiado» fica invariável.'),
+        lacuna('Este regalo es ___ ti.', ['para', 'por', 'de'], 'para', 'O destinatário pede «para».'),
+        lacuna('Estudio ___ la mañana.', ['por', 'para', 'a'], 'por', 'Partes do dia pedem «por».'),
+        ordem('Ordene: «Pago diez euros por el libro.»', ['Pago', 'diez', 'euros', 'por', 'el', 'libro.'], 'Pago diez euros por el libro.', 'O preço pede «por».'),
+        ordem('Ordene: «Hablo para mejorar mi español.»', ['Hablo', 'para', 'mejorar', 'mi', 'español.'], 'Hablo para mejorar mi español.', 'A finalidade pede «para».'),
+        livre('Escreva em espanhol: Estudo todos os dias para aprender espanhol.', 'Estudio todos los días para aprender español.'),
+      ]),
+      producao(5, 'Escreva e diga cinco frases sobre o seu dia, com «por», «para», uma palavra de quantidade e um advérbio em «-mente».'),
+    ]),
+  ],
+});

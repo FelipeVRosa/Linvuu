@@ -1,0 +1,112 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 15, titulo: 'Compras, roupas, cores, este e ese', nivel: 'a1',
+  objetivo: 'Nomear roupas e cores com a concordância certa, perguntar preços e tamanhos, pagar, usar os números de 100 a 1000, apontar objetos com este, ese e aquel, e conduzir uma compra curta numa loja.',
+  nota: 'Você já compra roupas em espanhol: pede, pergunta o preço, prova e paga. Próxima aula: «gustar» e as preferências (me gusta, me gustan, a mí también).',
+  sessoes: [
+    sessao('S1', 'Roupas e cores', [
+      revisao(5, 'Diga os números de 0 a 100 de dez em dez e responda: «¿Qué haces los sábados? ¿Adónde vas? ¿A qué hora vuelves?»'),
+      palavras(8, [
+        ['la camisa', 'la kamísa', 'a camisa', ''], ['los pantalones', 'los pantalónes', 'a calça', ''], ['el vestido', 'el bestído', 'o vestido', ''], ['la falda', 'la fálda', 'a saia (falso amigo: não é «falta»)', ''],
+        ['los zapatos', 'los thapátos', 'os sapatos', ''], ['la chaqueta', 'la tchakéta', 'o casaco curto, o paletó', ''], ['el abrigo', 'el abrígo', 'o casaco, o sobretudo', ''], ['las zapatillas', 'las thapílhas', 'os tênis (Espanha); também os chinelos de casa', ''],
+      ]),
+      gramatica(12, 'As cores e a concordância do adjetivo', 'PASSO 1: as cores principais são: rojo, azul, verde, amarillo, negro, blanco, gris, marrón, naranja e rosa. Diga cada uma em voz alta, cuidando dos sons: «amarillo» soa «amarílho», e «azul» começa com o «th» da Espanha (athúl). PASSO 2: a cor é um adjetivo e fica DEPOIS do substantivo: «una camisa blanca», «unos zapatos negros». Não se diz «una blanca camisa». PASSO 3: as cores terminadas em «-o» têm quatro formas: «rojo, roja, rojos, rojas». PASSO 4: as terminadas em «-e» ou consoante têm duas: singular e plural. «Verde / verdes», «azul / azules» (o «z» vira «c» antes do «-es»), «gris / grises», «marrón / marrones». PASSO 5: «naranja» e «rosa» têm a mesma forma para masculino e feminino: «un abrigo naranja», «una falda rosa». PASSO 6: para clarear ou escurecer, junte «claro» ou «oscuro» à cor, sem mudar a cor: «una camisa azul claro», «un abrigo verde oscuro». PASSO 7: «pantalones» é plural: «unos pantalones», e o adjetivo concorda: «unos pantalones negros». Diz-se «un pantalón» quando é uma peça só. Na Espanha, «los vaqueros» são os jeans; na América Latina se ouve «los jeans». PASSO 8: pronúncia: o «ll» de «amarillo» e «zapatillas» soa como «lh» na Espanha; o «ch» de «chaqueta» soa «tch»; o «z» de «zapatos» soa «th».', {
+        tag: 'Compras',
+        comparacao: 'em português o adjetivo também concorda e vem depois: «camisa branca, sapatos pretos». As diferenças são as formas: «negro» (preto), «marrón» (marrom) e «gris» (cinza). E o falso amigo «falda» é saia, nunca «falta».',
+        tabela: [
+          { cor: 'rojo', fem: 'roja', plural: 'rojos, rojas', exemplo: 'una camisa roja' },
+          { cor: 'negro', fem: 'negra', plural: 'negros, negras', exemplo: 'unos zapatos negros' },
+          { cor: 'blanco', fem: 'blanca', plural: 'blancos, blancas', exemplo: 'una falda blanca' },
+          { cor: 'amarillo', fem: 'amarilla', plural: 'amarillos, amarillas', exemplo: 'un vestido amarillo' },
+          { cor: 'azul', fem: 'azul', plural: 'azules', exemplo: 'unos pantalones azules' },
+          { cor: 'verde', fem: 'verde', plural: 'verdes', exemplo: 'una chaqueta verde' },
+          { cor: 'gris', fem: 'gris', plural: 'grises', exemplo: 'unas zapatillas grises' },
+          { cor: 'marrón', fem: 'marrón', plural: 'marrones', exemplo: 'un abrigo marrón' },
+          { cor: 'naranja, rosa', fem: 'naranja, rosa', plural: 'naranjas, rosas', exemplo: 'una falda rosa' },
+        ],
+        erros: [['una camisa blanco', 'una camisa blanca', 'A cor concorda em gênero com «camisa».'], ['unos zapatos negro', 'unos zapatos negros', 'A cor concorda em número com «zapatos».'], ['una azul camisa', 'una camisa azul', 'A cor vem depois do substantivo.'], ['unos pantalones azul', 'unos pantalones azules', 'O plural de «azul» é «azules».'], ['una falda azules', 'una falda azul', 'Singular: «azul». O plural é só para mais de uma peça.']],
+      }),
+      producao(5, 'Descreva em voz alta o que você está vestindo agora, com a cor de cada peça, e depois a roupa que você gostaria de comprar.'),
+    ]),
+    sessao('S2', 'Preços, tamanhos e pagamento', [
+      revisao(4, 'Diga seis peças de roupa com cor, no singular e no plural: «una camisa blanca, unas camisas blancas…»'),
+      palavras(6, [
+        ['la talla', 'la tálha', 'o tamanho (da roupa)', ''], ['el precio', 'el préthio', 'o preço', ''], ['las rebajas', 'las rebáhas', 'a liquidação, a promoção de preços', ''], ['el probador', 'el probadór', 'o provador', ''], ['probarse', 'probárse', 'experimentar (roupa)', ''], ['la caja', 'la káha', 'o caixa (o balcão de pagamento)', ''],
+      ]),
+      gramatica(12, 'Perguntar o preço, provar e pagar', 'PASSO 1: para perguntar o preço de uma peça, diga «¿Cuánto cuesta?»; de várias, «¿Cuánto cuestan?». «Costar» muda o → ue (cuesta, cuestan). Para o total, «¿Cuánto es?». PASSO 2: para pedir, use «Quisiera…», «Busco…» ou «¿Tiene…?»: «Busco una chaqueta negra», «¿Tiene esto en una talla más grande?» (a palavra «más» será vista na aula 26; aqui só use a frase pronta). Com «tú», «¿Tienes…?». PASSO 3: para experimentar: «¿Puedo probarme esta camisa?» («probarse» muda o → ue: me pruebo). PASSO 4: para dizer como ficou, use blocos prontos: «Me queda bien», «Me queda grande», «Me queda pequeño». PASSO 5: para pagar: «¿Puedo pagar con tarjeta?», «Pago en efectivo». Note: «con tarjeta» (com cartão) e «en efectivo» (em dinheiro vivo). PASSO 6: números de 100 a 1000: cien, ciento uno, ciento dos… doscientos, trescientos, cuatrocientos, quinientos, seiscientos, setecientos, ochocientos, novecientos, mil. Exatos: «cien euros». Com unidade a mais: «ciento cinco». PASSO 7: as centenas concordam com o substantivo: «doscientos euros», mas «doscientas camisas». PASSO 8: preços: «9,50 €» lê-se «nueve euros con cincuenta». Na escrita, a Espanha usa a vírgula para os centavos. Em outros países a moeda e a leitura mudam: pesos, dólares, soles. PASSO 9: pronúncia: «quinientos» soa kiniéntos; «cien» soa thién; «ciento» soa thiénto.', {
+        tag: 'Compras',
+        comparacao: 'em português dizemos «quanto custa?» e «quanto custam?», a mesma ideia. Os números 500, 700 e 900 mudam de forma: «quinientos» (não «cincocientos»), «setecientos» (não «sietecientos»), «novecientos» (não «nuevecientos»). E «cien» vira «ciento» quando vem algo depois: «ciento veinte».',
+        tabelas: [
+          { titulo: 'Números de 100 a 1000', linhas: [
+            { numero: '100', escrita: 'cien', exemplo: 'Cuesta cien euros.' }, { numero: '101', escrita: 'ciento uno', exemplo: 'Hay ciento uno.' }, { numero: '200', escrita: 'doscientos, doscientas', exemplo: 'Doscientas camisas.' },
+            { numero: '300', escrita: 'trescientos', exemplo: 'Trescientos euros.' }, { numero: '400', escrita: 'cuatrocientos', exemplo: 'Cuatrocientos euros.' }, { numero: '500', escrita: 'quinientos', exemplo: 'Quinientas personas.' },
+            { numero: '600', escrita: 'seiscientos', exemplo: 'Seiscientos euros.' }, { numero: '700', escrita: 'setecientos', exemplo: 'Setecientos euros.' }, { numero: '800', escrita: 'ochocientos', exemplo: 'Ochocientos euros.' },
+            { numero: '900', escrita: 'novecientos', exemplo: 'Novecientos euros.' }, { numero: '1000', escrita: 'mil', exemplo: 'Mil euros.' },
+          ] },
+        ],
+        exemplos: [['¿Cuánto cuestan estos zapatos? — Cuestan sesenta y cinco euros.', 'Quanto custam estes sapatos? Custam sessenta e cinco euros.'], ['¿Puedo probarme esta chaqueta?', 'Posso experimentar este casaco?'], ['Me queda grande.', 'Fica grande em mim.'], ['¿Puedo pagar con tarjeta?', 'Posso pagar com cartão?']],
+        erros: [['¿Cuánto cuestan esta camisa?', '¿Cuánto cuesta esta camisa?', 'Uma peça: singular, «cuesta».'], ['Quiero provar esta falda.', 'Quiero probarme esta falda.', 'O verbo é «probar(se)» e leva «b».'], ['Cien y cinco euros.', 'Ciento cinco euros.', 'Com unidade depois, «cien» vira «ciento».'], ['Doscientos camisas.', 'Doscientas camisas.', 'As centenas concordam em gênero.'], ['Pago en tarjeta.', 'Pago con tarjeta.', 'Cartão: «con»; dinheiro vivo: «en efectivo».']],
+      }),
+      producao(8, 'Ensaie uma compra em voz alta: cumprimente, peça uma peça de roupa, pergunte o preço, peça para provar e diga como ficou. Depois pague e agradeça.'),
+    ]),
+    sessao('S3', 'Este, ese e aquel', [
+      revisao(4, 'Diga os preços de três peças em euros: «Cuesta treinta y cinco euros… ciento veinte euros…»'),
+      palavras(5, [
+        ['barato, barata', 'baráto, baráta', 'barato, barata', ''], ['caro, cara', 'káro, kára', 'caro, cara', ''], ['grande', 'grande', 'grande', ''], ['pequeño, pequeña', 'pekénho, pekénha', 'pequeno, pequena', ''], ['nuevo, nueva', 'nuébo, nuéba', 'novo, nova', ''],
+      ]),
+      gramatica(8, 'Os demonstrativos: este, ese e aquel', 'PASSO 1: os demonstrativos mostram algo e indicam a distância. «Este» é para o que está perto de quem fala; «ese» é para o que está perto de quem ouve ou um pouco mais longe; «aquel» é para o que está longe dos dois. Eles combinam com «aquí, ahí, allí». PASSO 2: as formas de «este»: este, esta, estos, estas. De «ese»: ese, esa, esos, esas. De «aquel»: aquel, aquella, aquellos, aquellas. PASSO 3: o demonstrativo concorda com o substantivo em gênero e número e vem antes dele: «esta camisa», «ese abrigo», «aquellos zapatos». PASSO 4: sem o substantivo, o demonstrativo funciona como pronome: «Quiero este», «¿Cuánto cuesta esa?». Hoje se escreve sem acento. PASSO 5: «esto», «eso» e «aquello» são neutros: servem para uma coisa não identificada ou uma ideia, e nunca mudam: «¿Qué es esto?», «Eso es caro». PASSO 6: não existe junção com preposição: «neste» é «en este», «desta» é «de esta», «nesse» é «en ese». PASSO 7: para escolher entre dois: «¿Cuál prefieres: este o ese?» (aula 16 mostra mais).', {
+        tag: 'Demonstrativos',
+        comparacao: 'o português tem a mesma divisão em três: «este, esse, aquele». O espanhol é parecido, com uma diferença importante: não há junção com preposições. Onde dizemos «nesta loja», o espanhol diz «en esta tienda», e onde dizemos «desse casaco», diz «de ese abrigo».',
+        tabela: [
+          { distancia: 'perto de mim (aquí)', singular: 'este, esta', plural: 'estos, estas', neutro: 'esto' },
+          { distancia: 'perto de você, ou mais longe (ahí)', singular: 'ese, esa', plural: 'esos, esas', neutro: 'eso' },
+          { distancia: 'longe dos dois (allí)', singular: 'aquel, aquella', plural: 'aquellos, aquellas', neutro: 'aquello' },
+        ],
+        exemplos: [['Esta camisa es muy bonita.', 'Esta camisa é muito bonita.'], ['Ese abrigo es caro.', 'Esse casaco é caro.'], ['Aquellos zapatos son baratos.', 'Aqueles sapatos são baratos.'], ['¿Qué es esto?', 'O que é isto?'], ['Estoy en esta tienda.', 'Estou nesta loja.']],
+        erros: [['Este camisa es azul.', 'Esta camisa es azul.', '«Camisa» é feminino: «esta».'], ['Esta pantalón es negro.', 'Estos pantalones son negros.', '«Pantalones» é plural, e o verbo também.'], ['¿Qué es este?', '¿Qué es esto?', 'Para algo que não sabemos o que é, use o neutro «esto».'], ['Estoy nesta tienda.', 'Estoy en esta tienda.', 'Não há junção: «en» + «esta».'], ['Quiero de ese abrigo.', 'Quiero ese abrigo.', 'Sem preposição, o demonstrativo apenas aponta o objeto.']],
+      }),
+      dialogo(8, 'En la tienda / Na loja', 'Lucía compra uma jaqueta; a vendedora a atende.', [
+        ['La dependienta', 'Buenas tardes. ¿Qué desea?', 'Boa tarde. O que deseja?'],
+        ['Lucía', 'Buenas tardes. Busco una chaqueta negra.', 'Boa tarde. Procuro uma jaqueta preta.'],
+        ['La dependienta', 'Tenemos estas dos. Esta es de algodón y esa es de lana.', 'Temos estas duas. Esta é de algodão e essa é de lã.'],
+        ['Lucía', '¿Cuánto cuesta esta?', 'Quanto custa esta?'],
+        ['La dependienta', 'Cuesta sesenta y cinco euros.', 'Custa sessenta e cinco euros.'],
+        ['Lucía', 'Es un poco cara. ¿Y esa?', 'É um pouco cara. E essa?'],
+        ['La dependienta', 'Esa cuesta cuarenta euros y está en rebajas.', 'Essa custa quarenta euros e está em liquidação.'],
+        ['Lucía', 'Perfecto. ¿Puedo probarme esta chaqueta?', 'Perfeito. Posso experimentar esta jaqueta?'],
+        ['La dependienta', 'Claro. El probador está al fondo.', 'Claro. O provador fica no fundo.'],
+        ['Lucía', 'Me queda bien. Quiero esta chaqueta.', 'Ficou bem em mim. Quero esta jaqueta.'],
+        ['La dependienta', '¿Paga con tarjeta o en efectivo?', 'Paga com cartão ou em dinheiro?'],
+        ['Lucía', 'Con tarjeta, por favor.', 'Com cartão, por favor.'],
+      ]),
+      producao(5, 'Escolha dois objetos da sua casa, um perto e outro longe, e diga: «Este… es… Aquel… es… ¿Cuánto cuesta ese?». Use uma cor em cada frase.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 15', [
+      revisao(5, 'Diga cinco peças com cor e número. Depois pergunte o preço de uma peça perto e de outra longe, com «este» e «aquel».'),
+      exercicios(20, [
+        ouvir('Busco una falda azul', ['Busco una falda azul', 'Busco unas faldas azules', 'Busco un vestido azul'], 'Busco una falda azul', 'Ouça «una», «falda» e «azul» no singular.'),
+        ouvir('¿Cuánto cuestan estos zapatos?', ['¿Cuánto cuestan estos zapatos?', '¿Cuánto cuesta este zapato?', '¿Cuánto cuestan esos zapatos?'], '¿Cuánto cuestan estos zapatos?', 'Ouça o plural «cuestan» e «estos».'),
+        ouvir('Cuesta doscientos euros', ['Cuesta doscientos euros', 'Cuesta trescientos euros', 'Cuesta quinientos euros'], 'Cuesta doscientos euros', 'Ouça «dos» no início de «doscientos».'),
+        ditado('Me queda bien', 'Escreva: Me queda bien.'),
+        ditado('¿Puedo pagar con tarjeta?', 'Escreva: ¿Puedo pagar con tarjeta?'),
+        ditado('Quisiera unos pantalones negros', 'Escreva: Quisiera unos pantalones negros.'),
+        mc('Qual frase concorda corretamente?', ['una camisa blanca', 'una camisa blanco', 'un camisa blanca'], 'una camisa blanca', 'Feminino singular: «una camisa blanca».'),
+        mc('Qual é o plural de «azul»?', ['azules', 'azuls', 'azul'], 'azules', 'O plural de «azul» é «azules».'),
+        mc('Como se diz «Quanto custam estes sapatos?»', ['¿Cuánto cuestan estos zapatos?', '¿Cuánto cuesta estos zapatos?', '¿Cuánto cuestan estas zapatos?'], '¿Cuánto cuestan estos zapatos?', 'Plural: «cuestan» e «estos».'),
+        mc('Qual número é 105?', ['ciento cinco', 'cien cinco', 'cienticinco'], 'ciento cinco', '«Cien» vira «ciento» quando vem outro número depois.'),
+        mc('O que quer dizer «la falda»?', ['a saia', 'a falta', 'a calça'], 'a saia', 'Falso amigo: «falda» é saia.'),
+        mc('Como se diz «Nesta loja»?', ['En esta tienda', 'Nesta tienda', 'En la esta tienda'], 'En esta tienda', 'Em espanhol não há junção: «en» + «esta».'),
+        lacuna('Quiero ___ camisa. (esta, perto de mim)', ['esta', 'este', 'estas'], 'esta', '«Camisa» é feminino singular.'),
+        lacuna('¿Cuánto ___ estos zapatos? (costar)', ['cuestan', 'cuesta', 'cuestas'], 'cuestan', 'Plural: «cuestan».'),
+        lacuna('Doscientas ___.', ['camisas', 'camisa', 'camisos'], 'camisas', 'As centenas concordam em gênero e número.'),
+        lacuna('¿Qué es ___? (algo desconhecido)', ['esto', 'este', 'esta'], 'esto', 'O neutro «esto» serve para o que não sabemos nomear.'),
+        lacuna('Puedo pagar ___ tarjeta.', ['con', 'en', 'de'], 'con', 'Cartão: «con tarjeta».'),
+        ordem('Ordene: «Busco una chaqueta negra.»', ['Busco', 'una', 'chaqueta', 'negra.'], 'Busco una chaqueta negra.', 'Substantivo antes da cor.'),
+        ordem('Ordene: «¿Puedo probarme esta camisa?»', ['¿Puedo', 'probarme', 'esta', 'camisa?'], '¿Puedo probarme esta camisa?', '«Poder» e infinitivo.'),
+        livre('Escreva em espanhol: Quero esta saia azul, mas é um pouco cara.', 'Quiero esta falda azul, pero es un poco cara.'),
+      ]),
+      producao(5, 'Faça uma compra completa em voz alta com um vendedor imaginário: peça, pergunte o preço, prove, diga como ficou e pague.'),
+    ]),
+  ],
+});

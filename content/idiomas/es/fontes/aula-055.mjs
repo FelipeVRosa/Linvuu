@@ -1,0 +1,108 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 55, titulo: 'Trabalho e entrevista', nivel: 'b1',
+  objetivo: 'Falar da sua experiência e formação, responder às perguntas mais comuns de uma entrevista de trabalho, perguntar sobre as condições do emprego e entender um anúncio de vaga.',
+  nota: 'Você consegue contar sua trajetória, defender seus pontos fortes e fazer perguntas numa entrevista. Próxima aula: notícias e mídia.',
+  sessoes: [
+    sessao('S1', 'Falar da sua experiência', [
+      revisao(5, 'Diga em voz alta como pedir algo com educação em um e-mail: «Quisiera…», «¿Podría…?», «Le agradecería que…». Depois diga como você se despede de forma formal.'),
+      palavras(8, [
+        ['el puesto', 'el puésto', 'a vaga, o cargo', ''], ['la empresa', 'la empréssa', 'a empresa', ''], ['la experiencia', 'la eksperiéntia', 'a experiência', ''], ['el currículum', 'el kurríkulum', 'o currículo', ''],
+        ['las prácticas', 'las prákticas', 'o estágio', ''], ['el sueldo, el salario', 'el suéldo, el salário', 'o salário', ''], ['la jornada', 'la hornáda', 'a jornada de trabalho', ''], ['el contrato', 'el kontráto', 'o contrato', ''],
+      ]),
+      gramatica(12, 'Contar a sua trajetória: perfecto, indefinido e llevar + gerúndio', 'PASSO 1: para falar de algo que você fez em um período que já terminou, use o pretérito indefinido: «Trabajé tres años en una tienda.», «Estudié Administración en Valencia.» PASSO 2: para falar da experiência como balanço até hoje, sem marcar quando acabou, use o pretérito perfecto: «He trabajado con clientes de varios países.», «He hecho dos prácticas.» PASSO 3: para algo que começou e continua, o espanhol tem duas estruturas: «Llevo dos años trabajando en esta empresa.» (llevar + tempo + gerúndio, aula 50) e «Trabajo en esta empresa desde hace dos años.» PASSO 4: sobre a formação: «Estudié…», «Soy licenciado en…» / «Soy licenciada en…», «Tengo un máster en…». A palavra «carrera» designa o curso universitário completo: «Estudié la carrera de Derecho.» Para a trajetória profissional, diga «trayectoria profesional» ou «carrera profesional». PASSO 5: três falsos amigos para o trabalho: «prácticas» é estágio; «empleo» é emprego (o posto) e «trabajo» é tanto o trabalho como a tarefa; «solicitar un puesto» ou «presentarse a un puesto» é candidatar-se. O verbo «aplicar» com esse sentido é cópia do inglês e é evitado em registro cuidado na Espanha. PASSO 6: ao falar de funções use o presente: «Me encargo de la atención al cliente.» («encargarse de» = ocupar-se de).', {
+        tag: 'Trabalho',
+        comparacao: 'em português dizemos «trabalho aqui há dois anos» e «estou trabalhando aqui há dois anos». Em espanhol, essas ideias viram «trabajo aquí desde hace dos años» e «llevo dos años trabajando aquí». Repare em «desde hace» e em «llevo» + gerúndio: não se usa o infinitivo depois de «llevo».',
+        tabela: [
+          { ideia: 'período concluído', estrutura: 'indefinido', exemplo: 'Trabajé cinco años en un banco.' },
+          { ideia: 'balanço até hoje', estrutura: 'perfecto', exemplo: 'He trabajado en varios países.' },
+          { ideia: 'ainda continua', estrutura: 'llevo + tempo + gerúndio', exemplo: 'Llevo un año trabajando aquí.' },
+          { ideia: 'ainda continua', estrutura: 'presente + desde hace', exemplo: 'Trabajo aquí desde hace un año.' },
+          { ideia: 'função atual', estrutura: 'presente', exemplo: 'Me encargo de las ventas.' },
+        ],
+        erros: [['Trabajo aquí desde dos años.', 'Trabajo aquí desde hace dos años.', 'Com duração, usa-se «desde hace»; «desde» sozinho exige uma data de início.'], ['Llevo dos años trabajar aquí.', 'Llevo dos años trabajando aquí.', 'Depois de «llevo + tempo» vem o gerúndio.'], ['Hice un estágio en una empresa.', 'Hice unas prácticas en una empresa.', 'Em espanhol, estágio é «prácticas», normalmente no plural.'], ['Me encargo con las ventas.', 'Me encargo de las ventas.', '«Encargarse» pede a preposição «de».']],
+      }),
+      producao(5, 'Conte em quatro frases a sua trajetória: o que estudou (indefinido), o que já fez (perfecto) e o que faz hoje há quanto tempo («llevo… trabajando»).'),
+    ]),
+    sessao('S2', 'Responder às perguntas da entrevista', [
+      revisao(4, 'Diga a diferença entre «trabajé», «he trabajado» e «llevo trabajando» com uma frase para cada.'),
+      palavras(6, [
+        ['el punto fuerte', 'el púnto fuérte', 'o ponto forte', ''], ['el punto débil', 'el púnto débil', 'o ponto fraco', ''], ['el trabajo en equipo', 'el trabájo en ekípo', 'o trabalho em equipe', ''], ['Me considero…', 'me konsidéro', 'eu me considero…', ''],
+        ['estar dispuesto a…', 'estár dispuésto a', 'estar disposto a…', ''], ['aportar', 'aportár', 'contribuir, trazer', ''],
+      ]),
+      gramatica(12, 'As perguntas típicas e como responder', 'PASSO 1: a primeira pergunta quase sempre é «Cuénteme algo sobre usted» ou «Hábleme de su experiencia». Resposta em três partes: quem é você, o que fez, o que busca. «Soy economista. He trabajado cuatro años en administración y ahora busco un puesto con más responsabilidad.» PASSO 2: «¿Por qué quiere este puesto?» Responda com «Porque me interesa…» e «Creo que puedo aportar…»: «Me interesa la empresa porque trabaja con proyectos internacionales y creo que puedo aportar mi experiencia.» PASSO 3: pontos fortes: «Me considero una persona organizada.», «Se me da bien trabajar en equipo.» («se me da bien» é muito usado na Espanha). Note que «persona» é sempre feminina, mesmo para um homem: «una persona organizada». PASSO 4: ponto fraco: seja honesto e mostre melhora: «A veces me cuesta delegar, pero estoy aprendiendo a hacerlo.» PASSO 5: disponibilidade: «Estoy dispuesto a viajar» / «Estoy dispuesta a viajar» (sempre com «a»). PASSO 6: para falar do que acontecerá se for contratado, use a estrutura da aula 47: «Si me contratan, podré incorporarme el mes que viene.» (si + presente, futuro). PASSO 7: na entrevista, use «usted», a menos que o entrevistador proponha «tú».', {
+        tag: 'Trabalho',
+        comparacao: 'em português dizemos «sou uma pessoa organizada» e «estou disposto a viajar». O espanhol segue de perto: «soy una persona organizada» e «estoy dispuesto a viajar». A armadilha é a preposição («dispuesto a», nunca «de») e o gênero de «persona».',
+        tabela: [
+          { pergunta: 'Cuénteme algo sobre usted.', resposta: 'Soy…, he trabajado en…, ahora busco…' },
+          { pergunta: '¿Por qué quiere este puesto?', resposta: 'Me interesa porque… y creo que puedo aportar…' },
+          { pergunta: '¿Cuáles son sus puntos fuertes?', resposta: 'Me considero una persona…' },
+          { pergunta: '¿Y sus puntos débiles?', resposta: 'A veces me cuesta…, pero estoy aprendiendo.' },
+          { pergunta: '¿Tiene disponibilidad para viajar?', resposta: 'Sí, estoy dispuesto a viajar.' },
+        ],
+        erros: [['Me considero un persona organizada.', 'Me considero una persona organizada.', '«Persona» é feminino, mesmo se fala um homem.'], ['Estoy dispuesto de viajar.', 'Estoy dispuesto a viajar.', 'A preposição correta é «a».'], ['Si me contratarán, trabajaré mucho.', 'Si me contratan, trabajaré mucho.', 'Depois de «si» não se usa o futuro: use o presente.'], ['Soy muy trabajador y no tengo puntos débiles.', 'Soy trabajador, pero a veces me cuesta delegar.', 'Dizer que não há defeitos soa pouco honesto; reconheça um e mostre melhora.']],
+      }),
+      producao(8, 'Responda em voz alta, com «usted» imaginário: «Cuénteme algo sobre usted», «¿Por qué quiere este puesto?» e «¿Cuáles son sus puntos fuertes?». Dê duas frases em cada resposta.'),
+    ]),
+    sessao('S3', 'Condições do trabalho e fechamento', [
+      revisao(4, 'Diga um ponto forte e um ponto fraco seus, em espanhol, com as frases da sessão anterior.'),
+      palavras(5, [
+        ['la jornada completa / media jornada', 'la hornáda kompléta / média hornáda', 'tempo integral / meio período', ''], ['el contrato indefinido / temporal', 'el kontráto indefinído / temporál', 'contrato por tempo indeterminado / temporário', ''], ['el teletrabajo', 'el teletrabájo', 'o trabalho remoto', ''], ['el horario', 'el orário', 'o horário', ''],
+        ['bruto / neto', 'brúto / néto', 'bruto / líquido', ''],
+      ]),
+      gramatica(8, 'Perguntar sobre as condições e despedir-se', 'PASSO 1: no fim da entrevista você geralmente pode fazer perguntas. Use o futuro ou o condicional de cortesia: «¿Cuál sería el horario?», «¿Cuánto durará el contrato?», «¿Hay posibilidad de teletrabajo?» PASSO 2: sobre salário, seja claro e discreto: «¿Cuál es el rango salarial del puesto?» ou «¿El sueldo es bruto o neto?». PASSO 3: sobre o processo: «¿Cuándo me comunicarán su decisión?», «¿Qué pasos siguen ahora?» PASSO 4: agradeça com uma fórmula: «Les agradezco el tiempo que me han dedicado.» ou «Muchas gracias por la oportunidad.» PASSO 5: o aperto de mãos e a fórmula «Encantado de conocerle» (se quem fala é homem) ou «Encantada de conocerle» (se quem fala é mulher) fecham bem: «encantado/encantada» concorda com quem fala. Já o pronome depende de quem ouve: para um homem, «conocerle» (norma da Espanha) ou «conocerlo» (mais comum na América Latina); para uma mulher, «conocerla».', {
+        tag: 'Trabalho',
+        comparacao: 'em português diríamos «quando vocês vão me avisar?». Em espanhol, as palavras interrogativas sempre levam acento: «¿Cuándo…?», «¿Cuánto…?», «¿Cuál…?». Sem acento, «cuando» é uma palavra de ligação («cuando llegue»).',
+        tabela: [
+          { assunto: 'horário', pergunta: '¿Cuál sería el horario de trabajo?' },
+          { assunto: 'contrato', pergunta: '¿Qué tipo de contrato ofrecen?' },
+          { assunto: 'teletrabajo', pergunta: '¿Existe la posibilidad de teletrabajar algunos días?' },
+          { assunto: 'decisão', pergunta: '¿Cuándo me comunicarán su decisión?' },
+          { assunto: 'agradecer', pergunta: 'Les agradezco el tiempo que me han dedicado.' },
+        ],
+        erros: [['¿Cuando me avisarán?', '¿Cuándo me avisarán?', 'O interrogativo leva acento.'], ['¿Cuánto es el sueldo?', '¿Cuál es el sueldo?', 'Para perguntar «qual é», use «cuál»; «cuánto» pergunta quantidade.'], ['Muchas gracias por su tempo.', 'Muchas gracias por su tiempo.', 'A palavra é «tiempo»; «tempo» não existe em espanhol com esse sentido.']],
+      }),
+      dialogo(4, 'La entrevista / A entrevista', 'Daniel tem uma entrevista de trabalho com a senhora López.', [
+        ['Señora López', 'Buenos días, Daniel. Siéntese, por favor. Cuénteme brevemente su experiencia.', 'Bom dia, Daniel. Sente-se, por favor. Conte-me brevemente a sua experiência.'],
+        ['Daniel', 'Buenos días. Trabajé tres años en una tienda de informática y, desde hace un año, me encargo de la atención al cliente en una empresa de transportes.', 'Bom dia. Trabalhei três anos em uma loja de informática e, há um ano, cuido do atendimento ao cliente em uma empresa de transportes.'],
+        ['Señora López', '¿Por qué quiere cambiar de trabajo?', 'Por que quer mudar de trabalho?'],
+        ['Daniel', 'Porque busco un puesto con más responsabilidad. Creo que puedo aportar mi experiencia con los clientes.', 'Porque busco uma vaga com mais responsabilidade. Acho que posso contribuir com a minha experiência com clientes.'],
+        ['Señora López', '¿Cuál diría que es su punto fuerte?', 'Qual diria que é o seu ponto forte?'],
+        ['Daniel', 'Me considero una persona organizada y se me da bien trabajar en equipo.', 'Considero-me uma pessoa organizada e tenho facilidade para trabalhar em equipe.'],
+        ['Señora López', 'Perfecto. ¿Tiene alguna pregunta?', 'Perfeito. Tem alguma pergunta?'],
+        ['Daniel', 'Sí, ¿cuándo me comunicarán su decisión?', 'Sim, quando vão me comunicar a decisão?'],
+        ['Señora López', 'La semana que viene. Gracias por venir.', 'Na semana que vem. Obrigada por vir.'],
+      ]),
+      texto(4, 'Se busca dependiente / Procura-se atendente', 'Una librería del centro busca dependiente o dependienta para jornada completa. Se requiere una experiencia mínima de un año en atención al cliente y buen nivel de inglés. Se valorarán los conocimientos de informática. La empresa ofrece un contrato temporal de seis meses, con posibilidad de pasar a indefinido, y un horario de lunes a viernes, de nueve a cinco. Las personas interesadas deben enviar su currículum y una breve carta de presentación al correo indicado antes del 30 de noviembre. Solo se contactará con las candidaturas seleccionadas.', 'Uma livraria do centro procura atendente em período integral. Exige-se experiência mínima de um ano em atendimento ao cliente e bom nível de inglês. Serão valorizados os conhecimentos de informática. A empresa oferece contrato temporário de seis meses, com possibilidade de passar a indeterminado, e horário de segunda a sexta, das nove às cinco. As pessoas interessadas devem enviar o currículo e uma breve carta de apresentação ao e-mail indicado antes de 30 de novembro. Só será feito contato com as candidaturas selecionadas.', [
+        ['¿Qué experiencia se requiere?', 'Un año como mínimo en atención al cliente, y buen nivel de inglés.'], ['¿Qué tipo de contrato se ofrece?', 'Un contrato temporal de seis meses, con posibilidad de pasar a indefinido.'], ['¿Qué hay que enviar y hasta cuándo?', 'El currículum y una breve carta de presentación, antes del 30 de noviembre.'],
+      ]),
+      producao(5, 'Faça em voz alta três perguntas ao entrevistador sobre horário, contrato e decisão, usando «¿Cuál sería…?», «¿Hay posibilidad de…?» e «¿Cuándo…?».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 55', [
+      revisao(5, 'Responda como se estivesse numa entrevista: «Cuénteme algo sobre usted» (quatro frases) e «¿Cuál es su punto débil?» (duas frases).'),
+      exercicios(20, [
+        ouvir('Llevo dos años trabajando aquí', ['Llevo dos años trabajando aquí', 'Trabajé dos años aquí', 'Llevo dos años trabajar aquí'], 'Llevo dos años trabajando aquí', 'Llevo + tempo + gerúndio.'),
+        ouvir('Me considero una persona organizada', ['Me considero una persona organizada', 'Me considero un persona organizado', 'Me considero una persona organizadora'], 'Me considero una persona organizada', '«Persona» é feminino.'),
+        ouvir('¿Cuándo me comunicarán su decisión?', ['¿Cuándo me comunicarán su decisión?', '¿Cuánto me comunicarán su decisión?', '¿Cuándo me comunicaron su decisión?'], '¿Cuándo me comunicarán su decisión?', 'Pergunta sobre o futuro.'),
+        ditado('Trabajo aquí desde hace dos años', 'Escreva: Trabajo aquí desde hace dos años.'),
+        ditado('Estoy dispuesta a viajar', 'Escreva: Estoy dispuesta a viajar. (a mulher fala; preposição «a»)'),
+        ditado('Hice unas prácticas en una empresa', 'Escreva: Hice unas prácticas en una empresa. (acento em «prácticas»)'),
+        mc('Como dizer «trabalho aqui há dois anos»?', ['Trabajo aquí desde hace dos años.', 'Trabajo aquí desde dos años.', 'Trabajo aquí durante dos años.'], 'Trabajo aquí desde hace dos años.', '«Desde hace» com duração.'),
+        mc('Qual é a tradução natural de «estágio»?', ['prácticas', 'estágio', 'empleo'], 'prácticas', 'Em espanhol, estágio é «prácticas».'),
+        mc('Qual frase está correta?', ['Si me contratan, podré empezar el lunes.', 'Si me contratarán, podré empezar el lunes.', 'Si me contrataran, podré empezar el lunes.'], 'Si me contratan, podré empezar el lunes.', 'Depois de «si» vem o presente, não o futuro.'),
+        mc('Qual pergunta é adequada ao fim da entrevista?', ['¿Cuál sería el horario de trabajo?', '¿Cuánto me van a pagar ya?', '¿Esto es todo?'], '¿Cuál sería el horario de trabajo?', 'O condicional de cortesia é o tom adequado.'),
+        mc('Qual das opções fala de uma experiência ainda em curso?', ['Llevo un año trabajando aquí.', 'Trabajé un año aquí.', 'Había trabajado un año aquí.'], 'Llevo un año trabajando aquí.', 'Llevo + tempo + gerúndio.'),
+        lacuna('Estoy dispuesto ___ viajar. (a)', ['a', 'de', 'en'], 'a', '«Dispuesto a».'),
+        lacuna('Me ___ de la atención al cliente. (encargar)', ['encargo', 'encarga', 'encargué'], 'encargo', 'Presente, primeira pessoa.'),
+        lacuna('Estudié la ___ de Derecho en Madrid. (curso universitário)', ['carrera', 'carreira', 'cartera'], 'carrera', '«Carrera» é o curso universitário.'),
+        lacuna('Soy ___ en Economía. (mulher, formada)', ['licenciada', 'licenciado', 'licencio'], 'licenciada', 'Concorda com o gênero de quem fala.'),
+        lacuna('¿El sueldo es ___ o neto?', ['bruto', 'bruta', 'burdo'], 'bruto', '«Bruto» e «neto» são os termos para salário.'),
+        ordem('Ordene: «Llevo tres años trabajando en una empresa de transportes.»', ['Llevo', 'tres', 'años', 'trabajando', 'en', 'una', 'empresa', 'de', 'transportes.'], 'Llevo tres años trabajando en una empresa de transportes.', 'Llevo + tempo + gerúndio.'),
+        ordem('Ordene: «Creo que puedo aportar mi experiencia.»', ['Creo', 'que', 'puedo', 'aportar', 'mi', 'experiencia.'], 'Creo que puedo aportar mi experiencia.', 'Resposta típica de entrevista.'),
+        livre('Escreva em espanhol: Estudei Administração e trabalho aqui há um ano.', 'Estudié Administración y trabajo aquí desde hace un año.'),
+      ]),
+      producao(5, 'Escreva um pequeno parágrafo de apresentação profissional (cinco linhas) para um currículo, usando indefinido, perfecto e «llevo… trabajando».'),
+    ]),
+  ],
+});

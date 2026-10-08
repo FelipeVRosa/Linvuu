@@ -1,0 +1,92 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 41, titulo: 'Condicional compuesto', nivel: 'b1',
+  objetivo: 'Formar o condicional compuesto («habría ido») e usá-lo para falar do que teria acontecido e não aconteceu, dar conselhos e críticas sobre o passado («yo en tu lugar habría…», «deberías haberlo dicho») e expressar desejos não realizados («me habría gustado»).',
+  nota: 'Você fala do que teria feito, do que deveria ter feito e do que gostaria de ter feito: «Habría ido, pero tenía que trabajar». Próxima aula: as formas do subjuntivo presente.',
+  sessoes: [
+    sessao('S1', 'Formar o condicional compuesto', [
+      revisao(5, 'Diga em voz alta o condicional simples dos verbos que você já conhece («iría, comería, viviría, podría, querría») e o particípio de cinco verbos, entre eles dois irregulares.'),
+      palavras(8, [
+        ['habría ido', '', 'teria ido', ''], ['me habría gustado', '', 'eu teria gostado, eu gostaria de ter', ''], ['habría podido', '', 'teria podido', ''], ['por desgracia', '', 'infelizmente', ''],
+        ['una pena', '', 'uma pena', ''], ['en tu lugar', '', 'no seu lugar', ''], ['en su lugar', '', 'no lugar dele, dela, do senhor', ''], ['pero no pude', '', 'mas não pude', ''],
+      ]),
+      gramatica(12, 'Habría + particípio: o que teria acontecido', 'PASSO 1: pense numa coisa que você NÃO fez no passado, mas que teria feito em outra situação. Em português: «teria ido», «teria comprado». PASSO 2: o espanhol forma esse tempo com o condicional de «haber» + particípio: «habría ido», «habría comprado». PASSO 3: o condicional de «haber» é: habría, habrías, habría, habríamos, habríais, habrían. A raiz «habr-» é a mesma do futuro («habré»), e as terminações «-ía» são as mesmas do imperfecto de «comer» e «vivir» («comía, vivía»). Todas levam acento no «í». PASSO 4: o particípio é o de sempre: hablado, comido, vivido; hecho, dicho, visto, puesto, escrito, abierto, vuelto, roto. Com «haber», ele nunca concorda. PASSO 5: o uso mais importante é este: uma ação que não aconteceu e que normalmente vem acompanhada de um motivo com «pero»: «Habría ido a la fiesta, pero tenía que trabajar». PASSO 6: o mesmo vale para o que você «gostaria de ter feito»: «Me habría gustado viajar más». PASSO 7: negação e pronomes vão antes do auxiliar: «No lo habría hecho», «Lo habría comprado». PASSO 8: cuidado com uma letra só: «había ido» (tinha ido: foi, antes de outro fato) e «habría ido» (teria ido: não foi). Ouça com atenção a diferença entre «bía» e «bría».', {
+        tag: 'Tempos compostos',
+        comparacao: 'o português tem o mesmo tempo: «teria ido», «teria feito». A estrutura se parece muito (auxiliar + particípio), mas em espanhol o auxiliar é «haber», e não «ter». «Eu teria comprado» = «habría comprado». Em português falado, também se diz «eu ia comprar, mas…»; em espanhol esse sentido é dito com «habría comprado» ou com o imperfecto «iba a comprar».',
+        tabela: [
+          { pessoa: 'yo', forma: 'habría ido', exemplo: 'Yo habría ido contigo.' },
+          { pessoa: 'tú', forma: 'habrías comprado', exemplo: '¿Lo habrías comprado?' },
+          { pessoa: 'él, ella, usted', forma: 'habría dicho', exemplo: 'Ella no lo habría dicho.' },
+          { pessoa: 'nosotros, nosotras', forma: 'habríamos podido', exemplo: 'Habríamos podido llegar antes.' },
+          { pessoa: 'vosotros, vosotras', forma: 'habríais visto', exemplo: 'Lo habríais visto desde allí.' },
+          { pessoa: 'ellos, ellas, ustedes', forma: 'habrían hecho', exemplo: 'Ellos lo habrían hecho mejor.' },
+        ],
+        erros: [['Habria ido contigo.', 'Habría ido contigo.', 'Todas as formas do condicional de «haber» levam acento no «í».'], ['Tendría ido contigo.', 'Habría ido contigo.', 'O auxiliar é «haber»; «tener» não forma esse tempo.'], ['Habría comprada la casa.', 'Habría comprado la casa.', 'Com «haber», o particípio não concorda.'], ['Ayer había ido al cine, pero tenía que trabajar.', 'Ayer habría ido al cine, pero tenía que trabajar.', 'Se você não foi, é «habría ido». «Había ido» significa que foi.']],
+      }),
+      producao(5, 'Diga cinco coisas que você teria feito no fim de semana, mas não fez, e por quê: «Habría ido a la playa, pero llovía. Habría llamado a mi abuela, pero…»'),
+    ]),
+    sessao('S2', 'Conselhos e hipóteses sem «si»', [
+      revisao(4, 'Conjugue «habría hecho» nas seis pessoas. Depois diga a diferença entre «había ido» e «habría ido» com uma frase para cada.'),
+      palavras(6, [
+        ['en tu lugar', '', 'no seu lugar', ''], ['sin tu ayuda', '', 'sem a sua ajuda', ''], ['con más tiempo', '', 'com mais tempo', ''], ['conseguir', '', 'conseguir', ''],
+        ['arrepentirse de', '', 'arrepender-se de', ''], ['decir la verdad', '', 'dizer a verdade', ''],
+      ]),
+      gramatica(12, 'Conselhos, críticas e condições escondidas', 'PASSO 1: o condicional compuesto serve para dar opinião sobre algo que já aconteceu: «Yo en tu lugar habría dicho la verdad» (no seu lugar, eu teria dito a verdade). PASSO 2: a expressão «en tu lugar» (ou «en su lugar») cria a situação imaginária e dispensa qualquer outra explicação. PASSO 3: muitas hipóteses não precisam da palavra «si». Basta uma expressão que indique a condição: «Sin tu ayuda no lo habría conseguido» (sem a sua ajuda, eu não teria conseguido). PASSO 4: o mesmo acontece com «con» + substantivo: «Con más tiempo habría viajado más». PASSO 5: também funciona com «de otra manera»: «De otra manera, lo habríamos hecho mejor». PASSO 6: compare três tempos que parecem iguais: o condicional simples fala de uma hipótese sobre o presente ou futuro («Iría contigo», eu iria com você); o condicional compuesto fala de uma hipótese sobre o passado («Habría ido contigo», eu teria ido com você); o pluscuamperfecto fala do que realmente aconteceu antes («Había ido contigo», eu tinha ido com você). PASSO 7: quando alguém conta o que ia acontecer no futuro de um momento do passado, o espanhol também usa esse tempo: «Dijo que habría terminado para el lunes» (disse que teria terminado até segunda). Por ora, só reconheça. PASSO 8: as frases com «si» («Si hubiera sabido…») chegam na aula 47.', {
+        tag: 'Tempos compostos',
+        comparacao: 'em português, «no seu lugar, eu teria dito» é praticamente a mesma frase: «en tu lugar, habría dicho». «Sem a sua ajuda, não teria conseguido» também: «sin tu ayuda, no lo habría conseguido». O perigo é o falante brasileiro tender ao imperfeito na fala («sem você eu não conseguia»). Em espanhol, mantenha o condicional compuesto.',
+        tabela: [
+          { tempo: 'condicional simple', ideia: 'hipótese sobre o presente ou futuro', exemplo: 'Iría contigo.' },
+          { tempo: 'condicional compuesto', ideia: 'hipótese sobre o passado, que não aconteceu', exemplo: 'Habría ido contigo.' },
+          { tempo: 'pluscuamperfecto', ideia: 'fato que realmente aconteceu antes', exemplo: 'Había ido contigo.' },
+          { tempo: 'indefinido', ideia: 'fato passado concluído', exemplo: 'Fui contigo.' },
+        ],
+        erros: [['Sin tu ayuda no lo había conseguido.', 'Sin tu ayuda no lo habría conseguido.', 'Não é um fato anterior («había»), é uma hipótese («habría»).'], ['Con más tiempo, había viajado más.', 'Con más tiempo habría viajado más.', 'A condição imaginária pede o condicional compuesto.'], ['Yo en tu lugar lo había dicho.', 'Yo en tu lugar lo habría dicho.', 'Quando você se coloca no lugar do outro, é uma hipótese: «habría dicho».']],
+      }),
+      producao(8, 'Um amigo perdeu o trem e voltou para casa sem avisar ninguém. Dê a ele cinco conselhos sobre o passado: «Yo en tu lugar habría llamado a alguien. Habrías podido…»'),
+    ]),
+    sessao('S3', 'Lo que habría hecho de otra manera', [
+      revisao(4, 'Diga em voz alta três frases com «sin» ou «con» + condicional compuesto («sin ti no habría…», «con más dinero habría…»).'),
+      palavras(5, [
+        ['rechazar', '', 'recusar', ''], ['ofrecer', '', 'oferecer', ''], ['arrepentirse', '', 'arrepender-se', ''], ['tener remordimientos', '', 'ter remorsos', ''], ['una oferta de trabajo', '', 'uma oferta de emprego', ''],
+      ]),
+      gramatica(8, 'Debería haber, podría haber, tendría que haber', 'PASSO 1: em português dizemos «deveria ter feito», «poderia ter ido». Em espanhol, o segundo verbo é o infinitivo composto: «haber» + particípio. PASSO 2: «debería haber hecho» (deveria ter feito), «podría haber ido» (poderia ter ido), «tendría que haber llamado» (teria que ter ligado). PASSO 3: o primeiro verbo vai no condicional simples (debería, podría, tendría). O segundo é sempre «haber + particípio», sem mudar. PASSO 4: com um pronome, ele se junta ao final de «haber»: «debería haberlo dicho», «podrías haberme llamado». PASSO 5: «me habría gustado» + infinitivo expressa um desejo que não se realizou: «Me habría gustado estudiar música». PASSO 6: você pode trocar por «me gustaría haber» + particípio, com o mesmo sentido: «Me gustaría haber estudiado música». PASSO 7: também se diz «habríamos podido» (teríamos podido) para falar de uma possibilidade perdida: «Habríamos podido llegar antes». PASSO 8: a forma «debería haber» é crítica ou conselho sobre o passado, e é mais suave do que a ordem «tenías que».', {
+        tag: 'Tempos compostos',
+        comparacao: 'o português coloca o particípio depois de «ter»: «deveria ter feito». O espanhol usa «haber» no lugar de «ter»: «debería haber hecho». Os pronomes em português costumam ir antes do verbo («deveria tê-lo dito» é formal). Em espanhol, os pronomes colam no infinitivo: «debería haberlo dicho».',
+        exemplos: [['Deberías haber llamado antes.', 'Você deveria ter ligado antes.'], ['Podrías haberme avisado.', 'Você poderia ter me avisado.'], ['Tendríamos que haber salido antes.', 'Teríamos que ter saído antes.'], ['Me habría gustado estudiar música.', 'Eu gostaria de ter estudado música.'], ['No debería haberlo dicho.', 'Eu não deveria ter dito isso.']],
+        erros: [['Debería haber hacer la tarea.', 'Debería haber hecho la tarea.', 'Depois de «haber» vem o particípio, não o infinitivo.'], ['Podría haber venir antes.', 'Podría haber venido antes.', 'O infinitivo composto é «haber + particípio».'], ['Debería haber lo dicho.', 'Debería haberlo dicho.', 'O pronome se junta ao final do infinitivo, em uma só palavra.']],
+      }),
+      texto(8, 'Una oferta que rechacé / Uma oferta que recusei', 'El año pasado me ofrecieron un trabajo en Bilbao y lo rechacé. Ahora, a veces pienso en cómo habría sido mi vida allí. Habría vivido cerca del mar, habría conocido a gente nueva y, probablemente, habría ganado más dinero. Sin embargo, mi madre estaba enferma y no quería dejarla sola. Mi hermano me dijo que en mi lugar él habría aceptado, pero yo creo que habría tenido remordimientos. Mi amiga Inés opina que habríamos podido hacer las dos cosas: ir a Bilbao y visitar a mi madre cada fin de semana. A lo mejor tenía razón, pero entonces no lo vi así. No me arrepiento de mi decisión, pero me habría gustado tener más tiempo para pensarlo. Además, hace poco me ofrecieron otro puesto, esta vez en mi ciudad.', 'No ano passado me ofereceram um trabalho em Bilbao e eu o recusei. Agora, às vezes penso em como teria sido a minha vida lá. Teria vivido perto do mar, teria conhecido pessoas novas e, provavelmente, teria ganhado mais dinheiro. No entanto, minha mãe estava doente e eu não queria deixá-la sozinha. Meu irmão me disse que, no meu lugar, ele teria aceitado, mas eu acho que teria tido remorsos. Minha amiga Inés opina que poderíamos ter feito as duas coisas: ir a Bilbao e visitar minha mãe todo fim de semana. Talvez tivesse razão, mas na época eu não vi assim. Não me arrependo da minha decisão, mas teria gostado de ter mais tempo para pensar. Além disso, há pouco me ofereceram outro cargo, desta vez na minha cidade.', [
+        ['¿Qué hizo la autora con la oferta de Bilbao?', 'La rechazó.'], ['¿Por qué no quería dejar su ciudad?', 'Porque su madre estaba enferma.'], ['¿Qué habría hecho su hermano en su lugar?', 'Habría aceptado el trabajo.'], ['¿Qué opina Inés?', 'Opina que habrían podido hacer las dos cosas.'],
+      ]),
+      producao(5, 'Escreva quatro frases sobre uma decisão que você tomou e o que teria acontecido se fosse diferente: «Habría estudiado… Me habría gustado…». Evite «si» por enquanto.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 41', [
+      revisao(5, 'Diga em voz alta três frases com «habría» + particípio, duas com «debería haber» e uma com «me habría gustado». Tente falar sem ler.'),
+      exercicios(20, [
+        ouvir('Habría ido contigo', ['Habría ido contigo', 'Había ido contigo', 'Habrá ido contigo'], 'Habría ido contigo', 'Ouça «bría» (condicional) contra «bía» (imperfecto) e «brá» (futuro).'),
+        ouvir('Me habría gustado quedarme', ['Me habría gustado quedarme', 'Me gustaría quedarme', 'Me había gustado quedarme'], 'Me habría gustado quedarme', 'A frase tem «habría» + «gustado»: desejo que não se realizou.'),
+        ouvir('Yo en tu lugar habría llamado', ['Yo en tu lugar habría llamado', 'Yo en tu lugar había llamado', 'Yo en tu lugar llamaría'], 'Yo en tu lugar habría llamado', 'A expressão «en tu lugar» pede «habría» + particípio para o passado.'),
+        ditado('Sin tu ayuda no lo habría conseguido', 'Escreva: Sin tu ayuda no lo habría conseguido. «Ayuda» e «habría» têm cuidado com a escrita.'),
+        ditado('Deberías haberlo dicho antes', 'Escreva: Deberías haberlo dicho antes. O pronome «lo» cola em «haber».'),
+        mc('Como se diz «eu teria ido»?', ['habría ido', 'había ido', 'habré ido'], 'habría ido', 'Condicional de «haber» + particípio.'),
+        mc('Qual frase deixa claro que a pessoa NÃO foi?', ['Habría ido, pero tenía que trabajar.', 'Había ido, porque tenía que trabajar.', 'Fue, porque tenía que trabajar.'], 'Habría ido, pero tenía que trabajar.', 'O condicional compuesto indica algo que teria acontecido, mas não aconteceu.'),
+        mc('Como se diz «você deveria ter feito»?', ['Deberías haber hecho', 'Debías hacer', 'Deberías hacer'], 'Deberías haber hecho', 'Condicional de «deber» + «haber» + particípio.'),
+        mc('Qual é a forma correta do pronome em «deveria tê-lo dito»?', ['Debería haberlo dicho.', 'Debería haber lo dicho.', 'Debería haber dicholo.'], 'Debería haberlo dicho.', 'O pronome se junta ao infinitivo «haber».'),
+        mc('Qual é a diferença entre «había ido» e «habría ido»?', ['tinha ido (foi) × teria ido (não foi)', 'iria × ido', 'foi × irá'], 'tinha ido (foi) × teria ido (não foi)', 'Uma letra muda tudo: «había» é fato anterior, «habría» é hipótese.'),
+        lacuna('Yo ___ aceptado la oferta, pero no pude. (teria aceitado)', ['habría', 'había', 'habré'], 'habría', 'Hipótese não realizada: condicional compuesto.'),
+        lacuna('Nosotros ___ podido ayudarte. (teríamos podido)', ['habríamos', 'habíamos', 'habremos'], 'habríamos', 'Com «nosotros», condicional: «habríamos».'),
+        lacuna('Sin tu ayuda no lo ___ conseguido. (teria conseguido)', ['habría', 'había', 'habrá'], 'habría', 'Hipótese sobre o passado: «habría conseguido».'),
+        lacuna('Deberías ___ llamado antes. (ter)', ['haber', 'has', 'habías'], 'haber', 'Depois do condicional de «deber», vem o infinitivo composto «haber» + particípio.'),
+        lacuna('Me ___ gustado ir al concierto. (teria gostado)', ['habría', 'había', 'habré'], 'habría', 'Desejo não realizado: «me habría gustado».'),
+        lacuna('Ellos ___ venido, pero estaban enfermos. (teriam vindo)', ['habrían', 'habían', 'habrán'], 'habrían', 'Terceira pessoa do plural no condicional: «habrían».'),
+        ordem('Ordene: «Yo en tu lugar habría dicho la verdad.»', ['Yo', 'en', 'tu', 'lugar', 'habría', 'dicho', 'la', 'verdad.'], 'Yo en tu lugar habría dicho la verdad.', 'A expressão cria a situação imaginária; depois vem o condicional compuesto.'),
+        ordem('Ordene: «Deberías haberlo llamado antes.»', ['Deberías', 'haberlo', 'llamado', 'antes.'], 'Deberías haberlo llamado antes.', 'O pronome vai colado a «haber».'),
+        ordem('Ordene: «Me habría gustado quedarme más tiempo.»', ['Me', 'habría', 'gustado', 'quedarme', 'más', 'tiempo.'], 'Me habría gustado quedarme más tiempo.', 'Estrutura de desejo não realizado.'),
+        livre('Escreva em espanhol: Eu teria ido, mas estava doente.', 'Habría ido, pero estaba enfermo.'),
+        livre('Escreva em espanhol: Você deveria ter me ligado.', 'Deberías haberme llamado.'),
+      ]),
+      producao(5, 'Conte em voz alta uma viagem que você teria feito se tivesse tempo e dinheiro, e dê um conselho a um amigo sobre algo que ele já fez.'),
+    ]),
+  ],
+});

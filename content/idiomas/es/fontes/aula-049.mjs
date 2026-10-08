@@ -1,0 +1,100 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 49, titulo: 'Passiva e «se» impersonal', nivel: 'b1',
+  objetivo: 'Formar a voz passiva com «ser» + particípio (concordando com o sujeito), usar a passiva refleja («Se venden pisos»), o «se» impersonal («Se vive bien aquí») e outras formas impessoais (terceira pessoa do plural, «uno»), e distinguir «ser» + particípio de «estar» + particípio.',
+  nota: 'Você lê e escreve avisos, anúncios e notícias, e fala de ações sem dizer quem as faz. Próxima aula: gerúndio e particípio, as duas formas verbais que mais confundem brasileiros.',
+  sessoes: [
+    sessao('S1', 'A voz passiva com ser + particípio', [
+      revisao(5, 'Diga o particípio de «construir», «publicar», «hacer», «decir», «escribir», «abrir» e «ver»: construido, publicado, hecho, dicho, escrito, abierto, visto. Depois diga o pretérito indefinido de «ser»: fui, fuiste, fue, fuimos, fuisteis, fueron.'),
+      palavras(8, [
+        ['inaugurar', '', 'inaugurar', ''], ['publicar', '', 'publicar', ''], ['fundar', '', 'fundar', ''], ['descubrir', '', 'descobrir', ''],
+        ['elegir', '', 'eleger', ''], ['firmar', '', 'assinar', ''], ['entregar', '', 'entregar', ''], ['anunciar', '', 'anunciar', ''],
+      ]),
+      gramatica(12, 'El museo fue inaugurado por la alcaldesa', 'PASSO 1: na voz ativa, quem faz a ação é o sujeito: «La alcaldesa inauguró el museo». Na voz passiva, quem recebe a ação passa a ser o sujeito: «El museo fue inaugurado por la alcaldesa». PASSO 2: a passiva se forma com o verbo «ser» no tempo desejado, mais o particípio do verbo principal. PASSO 3: o particípio concorda em gênero e número com o sujeito, porque aqui ele funciona como adjetivo: «La casa fue construida», «Los libros fueron publicados», «Las cartas serán enviadas». PASSO 4: quem faz a ação, se for dito, vem com «por»: «por la alcaldesa», «por una editorial». PASSO 5: o verbo «ser» pode estar em qualquer tempo: «es construido» (presente), «fue construido» (indefinido), «era construido» (imperfecto), «ha sido construido» (perfecto), «será construido» (futuro), «había sido construido» (pluscuamperfecto), «sería construido» (condicional). PASSO 6: a passiva com «ser» é frequente em notícias, textos administrativos e escritos formais. Na conversa se prefere a voz ativa ou o «se» (próxima sessão). PASSO 7: só verbos com objeto direto formam esta passiva. Não se diz «Fue dicho a mí», e sim «Me lo dijeron». PASSO 8: o particípio irregular se mantém: «escrito», «hecho», «dicho», «puesto», «visto», «abierto». «La carta fue escrita» (e não «escribida»).', {
+        tag: 'Passiva',
+        comparacao: 'o português forma a passiva do mesmo jeito: «A casa foi construída pela empresa» é «La casa fue construida por la empresa». Troque «foi» por «fue» e «pela» por «por la». O cuidado é com a concordância do particípio (como em português) e com a escolha do tempo: o espanhol usa menos a passiva na fala do que o português, e prefere a ativa ou o «se».',
+        tabela: [
+          { tempo: 'presente', forma: 'es construido', exemplo: 'El puente es usado por miles de personas.' },
+          { tempo: 'indefinido', forma: 'fue construido', exemplo: 'La escuela fue fundada en 1990.' },
+          { tempo: 'imperfecto', forma: 'era construido', exemplo: 'La puerta era cerrada cada noche.' },
+          { tempo: 'pretérito perfecto', forma: 'ha sido construido', exemplo: 'La noticia ha sido publicada hoy.' },
+          { tempo: 'futuro', forma: 'será construido', exemplo: 'Las cartas serán enviadas mañana.' },
+          { tempo: 'pluscuamperfecto', forma: 'había sido construido', exemplo: 'El contrato había sido firmado el lunes.' },
+          { tempo: 'condicional', forma: 'sería construido', exemplo: 'El edificio sería inaugurado en mayo.' },
+        ],
+        exemplos: [['El libro fue publicado por una editorial pequeña.', 'O livro foi publicado por uma editora pequena.'], ['Los resultados serán anunciados el viernes.', 'Os resultados serão anunciados na sexta.'], ['La ley ha sido aprobada por el Parlamento.', 'A lei foi aprovada pelo Parlamento.'], ['Las llaves fueron entregadas a la vecina.', 'As chaves foram entregues à vizinha.']],
+        erros: [['La casa fue construido en 1990.', 'La casa fue construida en 1990.', 'O particípio concorda com o sujeito: «la casa», feminino.'], ['Los libros fueron publicado.', 'Los libros fueron publicados.', 'O particípio concorda no plural.'], ['El museo fue inaugurado de la alcaldesa.', 'El museo fue inaugurado por la alcaldesa.', 'O agente da passiva vem com «por».'], ['La carta fue escribida por Ana.', 'La carta fue escrita por Ana.', '«Escribir» tem o particípio irregular «escrito».']],
+      }),
+      producao(5, 'Diga em voz alta cinco frases na passiva, sobre coisas que você conhece: «Este libro fue escrito por…», «Mi escuela fue fundada…», «La ley fue aprobada…». Depois passe duas delas para a voz ativa.'),
+    ]),
+    sessao('S2', 'A passiva refleja e o «se» impersonal', [
+      revisao(4, 'Passe para a passiva: «La alcaldesa inauguró el museo» e «Una editorial publicará los libros». Depois diga o particípio de «vender», «alquilar» e «prohibir».'),
+      palavras(6, [
+        ['se alquila', '', 'aluga-se', ''], ['se vende', '', 'vende-se', ''], ['se busca', '', 'procura-se', ''], ['se prohíbe', '', 'é proibido', ''], ['se necesita', '', 'precisa-se', ''], ['se ruega', '', 'pede-se', ''],
+      ]),
+      gramatica(12, 'Se venden pisos, se vive bien aquí', 'PASSO 1: a passiva refleja evita dizer quem faz a ação. Forma-se com «se» + verbo na terceira pessoa. PASSO 2: o verbo concorda com o que recebe a ação, que vem depois: «Se vende un piso» (um), «Se venden pisos» (vários). Assim se escrevem os avisos: «Se alquila habitación», «Se alquilan habitaciones». PASSO 3: o «se» vem antes do verbo, mesmo em frases afirmativas: «Se habla español», e nunca «Habla-se español». PASSO 4: o «se» impessoal não tem sujeito: o verbo fica sempre no singular: «Aquí se vive bien», «En verano se duerme poco», «Se trabaja mucho». PASSO 5: quando o complemento é uma pessoa determinada, com «a», o verbo fica no singular, sem concordância: «Se busca a los responsables», «Se detuvo a dos sospechosos». Sem «a», a concordância é obrigatória: «Se buscan camareros». PASSO 6: não confunda com o «se» de outros usos: o «se» reflexivo («Ana se lava»), o recíproco («se quieren») e o «se» que substitui «le» antes de «lo» («se lo di»). Aqui, o «se» diz «não importa quem». PASSO 7: o «se» impessoal também aparece com «se puede», «se debe», «se necesita»: «Se puede entrar», «No se puede fumar». PASSO 8: use «se» para dizer regras e costumes: «En España se cena tarde». É uma generalização comum, e não vale para todas as pessoas.', {
+        tag: 'Passiva',
+        comparacao: 'o português tem a mesma construção: «Vendem-se casas», «Fala-se espanhol», «Vive-se bem aqui». As diferenças são duas. Em espanhol o «se» vem antes do verbo («Se vende»), em português depois («vende-se») no padrão formal. E o erro mais comum de brasileiros é deixar o verbo no singular diante de um plural, por influência da fala informal do português («Vende-se casas»). Em espanhol, como na norma do português, o verbo vai para o plural: «Se venden casas».',
+        tabela: [
+          { construcao: 'passiva refleja, singular', exemplo: 'Se alquila una habitación.', traducao: 'Aluga-se um quarto.' },
+          { construcao: 'passiva refleja, plural', exemplo: 'Se alquilan habitaciones.', traducao: 'Alugam-se quartos.' },
+          { construcao: 'se impessoal (sem objeto)', exemplo: 'Aquí se vive bien.', traducao: 'Aqui se vive bem.' },
+          { construcao: 'se impessoal + pessoa com «a»', exemplo: 'Se busca a la autora del libro.', traducao: 'Procura-se a autora do livro.' },
+          { construcao: 'se puede / se debe + infinitivo', exemplo: 'No se puede fumar aquí.', traducao: 'Não se pode fumar aqui.' },
+        ],
+        exemplos: [['Se habla español, inglés y francés.', 'Fala-se espanhol, inglês e francês.'], ['En esta calle se cierran las tiendas a las nueve.', 'Nesta rua as lojas fecham às nove.'], ['Se necesitan dos camareros para el verano.', 'São necessários dois garçons para o verão.'], ['En verano se duerme la siesta.', 'No verão se tira a sesta.']],
+        erros: [['Se vende casas.', 'Se venden casas.', 'O objeto está no plural, e o verbo concorda.'], ['Se alquila habitaciones.', 'Se alquilan habitaciones.', 'O verbo concorda com «habitaciones».'], ['Habla-se español.', 'Se habla español.', 'Em espanhol o «se» vem sempre antes do verbo.'], ['Se buscan a los responsables.', 'Se busca a los responsables.', 'Com pessoa e «a», o verbo fica no singular.']],
+      }),
+      producao(8, 'Escreva e diga em voz alta cinco avisos curtos com «se», como em uma porta ou um anúncio: «Se prohíbe…», «Se alquila…», «Se necesitan…». Depois diga três costumes do seu país com «se»: «En mi país se…».'),
+    ]),
+    sessao('S3', 'Outras formas impessoais e ser × estar com particípio', [
+      revisao(4, 'Diga três frases com «se»: um anúncio, uma proibição e um costume. Depois passe para a passiva refleja: «Vendemos libros» (Se…).'),
+      palavras(5, [
+        ['huésped', '', 'hóspede', ''], ['recepción', '', 'recepção', ''], ['equipaje', '', 'bagagem', ''], ['ruido', '', 'barulho', ''], ['toalla', '', 'toalha', ''],
+      ]),
+      gramatica(8, 'Dicen que…, uno aprende y está cerrado', 'PASSO 1: outra forma de não dizer quem faz é a terceira pessoa do plural, sem sujeito: «Dicen que lloverá», «Me han robado la cartera», «Llaman a la puerta». Há um sujeito vago («eles»), mas ninguém é nomeado. PASSO 2: «uno» e «una» falam de uma pessoa qualquer, incluindo quem fala: «Uno aprende con los errores». É mais formal ou reflexivo que «la gente» ou «tú». PASSO 3: «la gente» é singular em espanhol: «La gente habla mucho», e não «La gente hablan». PASSO 4: «tú» pode ser genérico na fala: «Si pides sin hacer cola, te miran mal». PASSO 5: «ser» + particípio expressa a ação, e «estar» + particípio expressa o resultado, o estado: «La tienda fue cerrada a las nueve» (ação), «La tienda está cerrada» (estado). PASSO 6: com «estar», o particípio concorda como adjetivo: «Las puertas están abiertas». Não existe «es cerrada» para dizer o estado. PASSO 7: muito frequente na fala: «Está prohibido», «Está permitido», «Está incluido», «Está pagado». PASSO 8: nos avisos, use «Se prohíbe», «Está prohibido» ou «Prohibido», que são equivalentes.', {
+        tag: 'Passiva',
+        comparacao: 'o português também usa «dizem que», «a gente» e «a pessoa». A grande diferença é «la gente», que em espanhol é singular e não aceita o verbo no plural. A distinção entre «ser» e «estar» + particípio é a mesma do português: «foi fechada» (ação) × «está fechada» (estado).',
+        tabela: [
+          { forma: 'terceira pessoa do plural', exemplo: 'Dicen que mañana lloverá.', traducao: 'Dizem que amanhã vai chover.' },
+          { forma: 'uno / una', exemplo: 'Uno aprende con los errores.', traducao: 'A gente aprende com os erros.' },
+          { forma: 'la gente (singular)', exemplo: 'La gente habla mucho aquí.', traducao: 'As pessoas falam muito aqui.' },
+          { forma: 'ser + particípio (ação)', exemplo: 'La puerta fue cerrada a las nueve.', traducao: 'A porta foi fechada às nove.' },
+          { forma: 'estar + particípio (estado)', exemplo: 'La puerta está cerrada.', traducao: 'A porta está fechada.' },
+        ],
+        erros: [['La gente hablan mucho.', 'La gente habla mucho.', '«La gente» é singular em espanhol.'], ['La tienda es cerrada hoy.', 'La tienda está cerrada hoy.', 'Para estado, use «estar» + particípio.'], ['Las puertas están abierto.', 'Las puertas están abiertas.', 'O particípio concorda com o sujeito.'], ['Es prohibido fumar.', 'Está prohibido fumar.', 'A expressão fixa leva «estar» (ou «Se prohíbe»).']],
+      }),
+      texto(8, 'Normas de la casa / Regras da casa', 'Bienvenidos a la casa de huéspedes Los Olivos. En esta casa se desayuna de ocho a diez en la cocina común. No se puede fumar dentro del edificio y se ruega no hacer ruido después de las once de la noche. Los huéspedes pueden dejar el equipaje en recepción: allí se guarda hasta las cuatro de la tarde. Si se pierde la llave, se avisa a la recepcionista. Aquí se habla español, inglés y francés. Las habitaciones se limpian cada dos días, pero las toallas solo se cambian si se dejan en el suelo. Se agradece que los huéspedes cuiden la casa. Esperamos que se sientan como en su casa.', 'Bem-vindos à pousada Los Olivos. Nesta casa o café da manhã é servido das oito às dez na cozinha comum. Não se pode fumar dentro do prédio e pede-se não fazer barulho depois das onze da noite. Os hóspedes podem deixar a bagagem na recepção: lá ela é guardada até as quatro da tarde. Se a chave for perdida, avisa-se a recepcionista. Aqui se fala espanhol, inglês e francês. Os quartos são limpos a cada dois dias, mas as toalhas só são trocadas se forem deixadas no chão. Agradece-se que os hóspedes cuidem da casa. Esperamos que se sintam como em casa.', [
+        ['¿Dónde se desayuna?', 'En la cocina común, de ocho a diez.'], ['¿Hasta qué hora se guarda el equipaje?', 'Hasta las cuatro de la tarde.'], ['¿Qué se ruega después de las once?', 'No hacer ruido.'], ['¿Qué idiomas se hablan?', 'Español, inglés y francés.'], ['¿Cuándo se cambian las toallas?', 'Solo si se dejan en el suelo.'],
+      ]),
+      producao(5, 'Escreva e diga em voz alta as regras de uma casa ou escritório que você conhece, usando pelo menos cinco frases com «se»: «Aquí se…», «No se puede…».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 49', [
+      revisao(5, 'Diga duas frases na passiva com «ser» + particípio e três com «se». Inclua um aviso na porta de uma loja.'),
+      exercicios(20, [
+        ouvir('La casa fue construida en 1990', ['La casa fue construida en 1990', 'La casa fue construido en 1990', 'Las casas fueron construidas en 1990'], 'La casa fue construida en 1990', 'Ouça «fue construida»: singular, feminino.'),
+        ouvir('Se venden pisos baratos', ['Se venden pisos baratos', 'Se vende piso barato', 'Se venden piso barato'], 'Se venden pisos baratos', 'O verbo vai no plural: «venden».'),
+        ouvir('Aquí se vive bien', ['Aquí se vive bien', 'Aquí se viven bien', 'Aquí vive bien'], 'Aquí se vive bien', 'Se impessoal: verbo no singular.'),
+        ditado('El libro fue publicado por una editorial pequeña', 'Escreva: El libro fue publicado por una editorial pequeña.'),
+        ditado('No se puede fumar aquí', 'Escreva: No se puede fumar aquí.'),
+        ditado('Se alquilan habitaciones', 'Escreva: Se alquilan habitaciones.'),
+        mc('Qual frase está na voz passiva?', ['La carta fue enviada ayer.', 'Ana envió la carta ayer.', 'Ana está enviando la carta.'], 'La carta fue enviada ayer.', 'A passiva usa «ser» + particípio.'),
+        mc('Qual é o particípio correto de «escribir» na passiva?', ['La carta fue escrita.', 'La carta fue escribida.', 'La carta fue escribido.'], 'La carta fue escrita.', 'O particípio é irregular e concorda com «carta».'),
+        mc('Como se escreve o anúncio de vários quartos?', ['Se alquilan habitaciones.', 'Se alquila habitaciones.', 'Alquila-se habitaciones.'], 'Se alquilan habitaciones.', 'O verbo concorda com o plural.'),
+        mc('Qual frase está correta?', ['La gente habla mucho.', 'La gente hablan mucho.', 'Las gente hablan mucho.'], 'La gente habla mucho.', '«La gente» é singular.'),
+        mc('Qual frase indica o estado de algo?', ['La tienda está cerrada.', 'La tienda fue cerrada.', 'La tienda se cierra.'], 'La tienda está cerrada.', '«Estar» + particípio indica o resultado.'),
+        mc('Qual frase impessoal está correta?', ['En esta calle se vive tranquilo.', 'En esta calle se viven tranquilo.', 'En esta calle viven-se tranquilo.'], 'En esta calle se vive tranquilo.', 'Com «se» impessoal, o verbo fica no singular.'),
+        lacuna('Las cartas serán ___ mañana. (enviar)', ['enviadas', 'enviados', 'enviada'], 'enviadas', 'O particípio concorda com «cartas».'),
+        lacuna('El museo fue inaugurado ___ la alcaldesa.', ['por', 'para', 'de'], 'por', 'O agente da passiva vem com «por».'),
+        lacuna('Se ___ dos camareros. (necesitar)', ['necesitan', 'necesita', 'necesitamos'], 'necesitan', 'O verbo concorda com «dos camareros».'),
+        lacuna('Las puertas ___ abiertas. (estado)', ['están', 'son', 'fueron'], 'están', 'Para o estado, use «estar».'),
+        lacuna('Está ___ fumar aquí. (proibido)', ['prohibido', 'prohibir', 'prohibiendo'], 'prohibido', 'Expressão fixa com particípio: «Está prohibido».'),
+        ordem('Ordene: «Se habla español.»', ['Se', 'habla', 'español.'], 'Se habla español.', 'O «se» vem antes do verbo.'),
+        ordem('Ordene: «Las cartas serán enviadas mañana.»', ['Las', 'cartas', 'serán', 'enviadas', 'mañana.'], 'Las cartas serán enviadas mañana.', 'Sujeito, «ser» no futuro, particípio concordado.'),
+        livre('Escreva em espanhol: Alugam-se quartos para o verão.', 'Se alquilan habitaciones para el verano.'),
+      ]),
+      producao(5, 'Descreva em voz alta uma rua ou um bairro que você conhece, usando «se» para dizer o que se faz, o que se vende e o que se pode ou não se pode fazer.'),
+    ]),
+  ],
+});

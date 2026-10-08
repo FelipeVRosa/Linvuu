@@ -1,0 +1,92 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 39, titulo: 'Pluscuamperfecto', nivel: 'b1',
+  objetivo: 'Formar e usar o pluscuamperfecto («había hablado», «había hecho») para falar de um fato que já tinha acontecido antes de outro momento do passado, com pronomes, negação, perguntas e marcadores como «ya» e «todavía no».',
+  nota: 'Você conta o que já tinha acontecido antes de outro fato no passado: «Cuando llegué, el tren ya había salido». Próxima aula: o futuro perfecto e a probabilidade.',
+  sessoes: [
+    sessao('S1', 'Formar o pluscuamperfecto', [
+      intro(0, 'Bem-vindo ao nível B1. No A2 você já contou o passado com o indefinido e o imperfecto, e já usa «he» + particípio. Agora você aprende a pôr um fato ANTES de outro fato do passado, o que deixa as suas histórias mais claras.'),
+      revisao(5, 'Diga em voz alta o que você já fez hoje, com «he» + particípio: «He desayunado… He salido…». Depois diga o particípio de hacer, decir, ver, poner e escribir.'),
+      palavras(8, [
+        ['ya había salido', '', 'já tinha saído', ''], ['todavía no había llegado', '', 'ainda não tinha chegado', ''], ['nunca había visto', '', 'nunca tinha visto', ''], ['antes de eso', '', 'antes disso', ''],
+        ['aún no', '', 'ainda não', ''], ['hasta entonces', '', 'até então', ''], ['por fin', '', 'finalmente', ''], ['al llegar', '', 'ao chegar', ''],
+      ]),
+      gramatica(12, 'Había + particípio: o passado do passado', 'PASSO 1: lembre do português. Para dizer que algo aconteceu antes de outro fato passado, dizemos «tinha saído», «tinha feito». O espanhol faz a mesma conta, mas com outro verbo auxiliar: «había salido», «había hecho». PASSO 2: o auxiliar é o verbo «haber» no imperfecto: «había, habías, había, habíamos, habíais, habían». Todas as formas levam acento no «í». PASSO 3: depois vem o particípio. Verbos em -ar fazem «-ado» (hablado) e verbos em -er e -ir fazem «-ido» (comido, vivido). PASSO 4: quando a raiz do verbo termina em vogal forte (a, e, o), o «-ido» leva acento: «leído, oído, traído, creído, caído». PASSO 5: os particípios irregulares são os mesmos que você já usa com «he»: hecho, dicho, visto, puesto, escrito, abierto, vuelto, roto, muerto, cubierto, resuelto. Os verbos formados com eles seguem o mesmo caminho: «deshecho, descrito, devuelto, descubierto». PASSO 6: com «haber», o particípio NUNCA concorda: «Ella había salido», «Ellas habían salido». PASSO 7: auxiliar e particípio ficam juntos. Pronomes e negação vão antes do auxiliar: «Lo había visto», «No lo había visto». PASSO 8: cuidado, «había» também é o imperfecto de «hay» («había mucha gente», havia muita gente). Quando vem um particípio logo depois, é o auxiliar.', {
+        tag: 'Tempos compostos',
+        comparacao: 'o português tem duas formas para esse tempo: a composta («tinha saído», a mais comum na fala) e a simples («saíra», literária). O espanhol usa a composta, com «haber», e nunca usa «tener» como auxiliar aqui: «tinha feito» = «había hecho». Os particípios irregulares são parecidos: feito/hecho, dito/dicho, visto/visto, posto/puesto, escrito/escrito, aberto/abierto.',
+        tabela: [
+          { pessoa: 'yo', forma: 'había hablado', exemplo: 'Ya había hablado con ella.' },
+          { pessoa: 'tú', forma: 'habías comido', exemplo: '¿Ya habías comido?' },
+          { pessoa: 'él, ella, usted', forma: 'había vivido', exemplo: 'Había vivido en Lima.' },
+          { pessoa: 'nosotros, nosotras', forma: 'habíamos hecho', exemplo: 'Lo habíamos hecho juntos.' },
+          { pessoa: 'vosotros, vosotras', forma: 'habíais dicho', exemplo: 'Ya me lo habíais dicho.' },
+          { pessoa: 'ellos, ellas, ustedes', forma: 'habían visto', exemplo: 'Ya lo habían visto.' },
+        ],
+        erros: [['Tenía hablado con ella.', 'Había hablado con ella.', 'O auxiliar deste tempo é «haber», não «tener».'], ['Habia salido.', 'Había salido.', 'Todas as formas de «había» levam acento no «í».'], ['Había escribido una carta.', 'Había escrito una carta.', '«Escribir» tem particípio irregular: «escrito».'], ['Había hacido la tarea.', 'Había hecho la tarea.', '«Hacer» tem particípio irregular: «hecho».'], ['Ellas habían salidas.', 'Ellas habían salido.', 'Com «haber», o particípio não muda de gênero nem de número.']],
+      }),
+      producao(5, 'Imagine as 8 da manhã de ontem. Diga cinco frases sobre o que você já tinha feito até aquela hora: «A las ocho ya había desayunado. Todavía no había salido de casa…»'),
+    ]),
+    sessao('S2', 'Ordenar os fatos de uma história', [
+      revisao(4, 'Conjugue em voz alta «había + hablado» nas seis pessoas e diga o particípio de abrir, volver, romper e cubrir.'),
+      palavras(6, [
+        ['al llegar', '', 'ao chegar', ''], ['ya', '', 'já', ''], ['todavía no', '', 'ainda não', ''], ['nunca antes', '', 'nunca antes', ''],
+        ['de repente', '', 'de repente', ''], ['por eso', '', 'por isso', ''],
+      ]),
+      gramatica(12, 'Qual fato veio primeiro?', 'PASSO 1: pense em dois fatos do passado. Um é o fato que você conta («cuando llegué»). O outro já tinha acontecido ANTES («el tren salió»). PASSO 2: o fato mais recente, o ponto de referência, usa o indefinido ou o imperfecto: «Cuando llegué…». O fato mais antigo usa o pluscuamperfecto: «…el tren ya había salido». PASSO 3: assim, a frase completa é «Cuando llegué, el tren ya había salido». Primeiro o trem saiu, depois eu cheguei. PASSO 4: palavras que ajudam a perceber a ordem: «ya, todavía no, aún no, nunca, antes, hasta entonces, al + infinitivo, cuando». PASSO 5: «ya» e «todavía no» costumam ficar antes do auxiliar: «ya había salido», «todavía no habían llegado». PASSO 6: use o pluscuamperfecto também para explicar uma causa: «Llegó tarde porque había perdido el autobús». PASSO 7: e para dizer o que você nunca tinha vivido até um momento: «Hasta aquel viaje, nunca había estado en Sevilla». PASSO 8: se os fatos acontecem na ordem em que você os conta, não precisa do pluscuamperfecto: «Llegué, cené y me acosté». PASSO 9: não confunda com o pretérito perfecto: «No he comido» olha desde o presente; «No había comido» olha desde um momento do passado.', {
+        tag: 'Tempos compostos',
+        comparacao: 'em português a lógica é igual: «Quando cheguei, o trem já tinha saído». A diferença está nos hábitos. Em português falado, muita gente usa o pretérito simples no lugar do mais-que-perfeito («quando cheguei, o trem já saiu»). Em espanhol essa troca confunde a ordem dos fatos, então prefira «ya había salido».',
+        tabela: [
+          { tempo: 'pretérito perfecto', olhar: 'desde o presente', exemplo: 'Todavía no he comido.' },
+          { tempo: 'pluscuamperfecto', olhar: 'desde um momento do passado', exemplo: 'Todavía no había comido cuando llamaste.' },
+          { tempo: 'indefinido', olhar: 'fato passado concluído', exemplo: 'Llamaste a las tres.' },
+          { tempo: 'imperfecto', olhar: 'cenário no passado', exemplo: 'Tenía hambre.' },
+        ],
+        erros: [['Cuando llegué, el tren ya salió.', 'Cuando llegué, el tren ya había salido.', 'O trem saiu antes de eu chegar, então precisa do pluscuamperfecto.'], ['Ayer, cuando me llamaste, ya he cenado.', 'Ayer, cuando me llamaste, ya había cenado.', 'A referência está no passado («ayer»); «he cenado» olha desde o presente.'], ['Nunca he estado en Sevilla hasta aquel viaje.', 'Nunca había estado en Sevilla hasta aquel viaje.', 'Com «hasta aquel viaje» a referência é um momento do passado.']],
+      }),
+      producao(8, 'Conte em voz alta uma pequena história em cinco frases, com pelo menos dois pluscuamperfectos: «Ayer llegué tarde al trabajo. Mis compañeros ya habían empezado la reunión…»'),
+    ]),
+    sessao('S3', 'Um dia complicado', [
+      revisao(4, 'Complete de cabeça: «Cuando llegué, ellos ya… (cenar). Todavía no… (yo, hacer) la tarea.» Diga qual fato veio primeiro em cada frase.'),
+      palavras(5, [
+        ['perder el tren', '', 'perder o trem', ''], ['el despertador', '', 'o despertador', ''], ['la estación', '', 'a estação', ''], ['reservar una mesa', '', 'reservar uma mesa', ''], ['enfadarse', '', 'ficar bravo, zangar-se', ''],
+      ]),
+      gramatica(8, 'Negação, pronomes e perguntas no pluscuamperfecto', 'PASSO 1: a negação vem antes de tudo: «No había terminado». PASSO 2: os pronomes de objeto e os reflexivos ficam antes do auxiliar: «Lo había visto», «No lo había visto», «Se había dormido». PASSO 3: para perguntar, troque a entonação e, se quiser, ponha o sujeito depois: «¿Habías estado antes en Madrid?», «¿Ya habían llegado tus padres?». PASSO 4: respostas curtas: «Sí, ya había estado», «No, todavía no había llegado». PASSO 5: uma estrutura muito útil: «Ya había + particípio + cuando + indefinido»: «Ya había anochecido cuando salimos». PASSO 6: para explicar o motivo de um estado, use «porque» + pluscuamperfecto: «Estaba cansada porque no había dormido bien». PASSO 7: «ya» e «todavía no» ajudam o ouvinte a entender que existem dois momentos.', {
+        tag: 'Tempos compostos',
+        comparacao: 'em português também dizemos «não tinha visto», «já tinha chegado». A diferença é a posição do pronome. O português coloca o pronome depois do verbo no registro formal («havia-o visto») ou antes, na fala («eu tinha visto ele» ou «eu o tinha visto»). O espanhol sempre põe o pronome antes do auxiliar: «lo había visto».',
+        exemplos: [['No lo había visto antes.', 'Eu não o tinha visto antes.'], ['Se había dormido en el sofá.', 'Ele tinha adormecido no sofá.'], ['¿Ya habían llegado tus padres?', 'Seus pais já tinham chegado?'], ['Ya había anochecido cuando salimos.', 'Já tinha anoitecido quando saímos.'], ['Estaba cansada porque no había dormido bien.', 'Ela estava cansada porque não tinha dormido bem.']],
+        erros: [['Lo no había visto.', 'No lo había visto.', 'A negação vem antes do pronome.'], ['Había lo visto.', 'Lo había visto.', 'O pronome vai antes do auxiliar, nunca entre o auxiliar e o particípio.'], ['Había se dormido.', 'Se había dormido.', 'O reflexivo vai antes do auxiliar.']],
+      }),
+      texto(8, 'Un viaje que empezó mal / Uma viagem que começou mal', 'El sábado pasado, Marta tenía que coger el tren de las nueve para ir a Valencia, pero se despertó tarde porque la noche anterior no había puesto el despertador. Cuando llegó a la estación, el tren ya había salido. Preguntó en información y le dijeron que el siguiente salía a las once. Mientras esperaba, llamó a su amiga Elena, que la esperaba en Valencia, y le explicó lo que había pasado. Elena no se enfadó; al contrario, ya había reservado una mesa para comer a las tres y todavía había tiempo de sobra. Marta llegó por fin a las doce y media. Hasta entonces, nunca había estado tan contenta de ver a una amiga. Comieron juntas y, después del café, Elena le enseñó las fotos del puerto, donde había paseado sola el día anterior.', 'No sábado passado, Marta tinha que pegar o trem das nove para ir a Valência, mas acordou tarde porque na noite anterior não tinha programado o despertador. Quando chegou à estação, o trem já tinha saído. Perguntou na informação e disseram que o seguinte saía às onze. Enquanto esperava, ligou para a amiga Elena, que a esperava em Valência, e explicou o que tinha acontecido. Elena não ficou brava; ao contrário, já tinha reservado uma mesa para comer às três e ainda havia tempo de sobra. Marta chegou finalmente às doze e meia. Até então, nunca tinha ficado tão contente de ver uma amiga. Almoçaram juntas e, depois do café, Elena mostrou a ela as fotos do porto, onde tinha passeado sozinha no dia anterior.', [
+        ['¿Por qué se despertó tarde Marta?', 'Porque la noche anterior no había puesto el despertador.'], ['¿Qué había pasado con el tren cuando ella llegó?', 'El tren ya había salido.'], ['¿Qué había hecho Elena antes de que Marta llegara?', 'Ya había reservado una mesa para comer.'], ['¿Dónde había paseado Elena el día anterior?', 'Había paseado por el puerto.'],
+      ]),
+      producao(5, 'Escreva quatro frases sobre uma vez em que você chegou tarde a algum lugar. Diga o que já tinha acontecido quando você chegou: «Cuando llegué, la clase ya había empezado».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 39', [
+      revisao(5, 'Diga em voz alta três frases com «ya había», duas com «todavía no había» e uma com «nunca había». Escolha um tema só: sua última viagem.'),
+      exercicios(20, [
+        ouvir('Ya había salido', ['Ya había salido', 'Ya ha salido', 'Ya habían salido'], 'Ya había salido', 'Ouça o «había» (singular) e compare com «ha» (presente) e «habían» (plural).'),
+        ouvir('Nunca habíamos estado allí', ['Nunca habíamos estado allí', 'Nunca hemos estado allí', 'Nunca habíais estado allí'], 'Nunca habíamos estado allí', 'A terminação «-íamos» marca «nosotros» no pluscuamperfecto.'),
+        ouvir('No lo había visto antes', ['No lo había visto antes', 'No lo he visto antes', 'No la había visto antes'], 'No lo había visto antes', 'Ouça «había» (passado) e o pronome «lo» (masculino).'),
+        ditado('Todavía no habían llegado', 'Escreva: Todavía no habían llegado. Atenção ao acento em «Todavía» e em «habían».'),
+        ditado('Cuando llegué, ya había cenado', 'Escreva: Cuando llegué, ya había cenado. «Llegué» leva acento; «había» também.'),
+        mc('Como se diz «eu tinha feito» em espanhol?', ['había hecho', 'tenía hecho', 'había hacido'], 'había hecho', 'O auxiliar é «haber» (había) e o particípio de «hacer» é irregular: «hecho».'),
+        mc('Qual é o particípio de «escribir»?', ['escrito', 'escribido', 'escrebido'], 'escrito', 'É um dos irregulares: «escrito». Também «descrito», «inscrito».'),
+        mc('Em «Cuando llegué, ya habían empezado», qual fato aconteceu primeiro?', ['Eles começaram', 'Eu cheguei', 'Os dois ao mesmo tempo'], 'Eles começaram', 'O pluscuamperfecto («habían empezado») marca o fato mais antigo.'),
+        mc('Qual frase põe o pronome no lugar certo?', ['No lo había visto.', 'No había lo visto.', 'Lo no había visto.'], 'No lo había visto.', 'A negação vem primeiro, depois o pronome, depois o auxiliar.'),
+        mc('Em «Había mucha gente en la plaza», «había» é…', ['o imperfecto de «hay» (existência)', 'o auxiliar do pluscuamperfecto', 'um futuro'], 'o imperfecto de «hay» (existência)', 'Não há particípio depois: significa «havia muita gente».'),
+        lacuna('Ella ___ salido antes de las ocho.', ['había', 'ha', 'habían'], 'había', 'Sujeito singular no passado: «había salido».'),
+        lacuna('Nosotros ya ___ cenado cuando llamaste.', ['habíamos', 'hemos', 'habíais'], 'habíamos', 'Com «nosotros», o auxiliar é «habíamos».'),
+        lacuna('Cuando llegué, el concierto ya ___. (tinha começado)', ['había empezado', 'empezó', 'ha empezado'], 'había empezado', 'O concerto começou antes da minha chegada: pluscuamperfecto.'),
+        lacuna('Yo nunca había ___ a Sevilla. (ido)', ['ido', 'iba', 'ir'], 'ido', 'O particípio de «ir» é «ido».'),
+        lacuna('Ellos habían ___ la puerta. (aberto)', ['abierto', 'abrido', 'abierta'], 'abierto', '«Abrir» tem particípio irregular («abierto») e não concorda.'),
+        ordem('Ordene: «Cuando llegamos, la tienda ya había cerrado.»', ['Cuando', 'llegamos,', 'la', 'tienda', 'ya', 'había', 'cerrado.'], 'Cuando llegamos, la tienda ya había cerrado.', 'Primeiro a loja fechou, depois nós chegamos.'),
+        ordem('Ordene: «No habíamos reservado mesa.»', ['No', 'habíamos', 'reservado', 'mesa.'], 'No habíamos reservado mesa.', 'Negação + auxiliar + particípio.'),
+        ordem('Ordene: «¿Habías estado antes en Madrid?»', ['¿Habías', 'estado', 'antes', 'en', 'Madrid?'], '¿Habías estado antes en Madrid?', 'Pergunta com auxiliar, particípio e complementos.'),
+        livre('Escreva em espanhol: Quando cheguei, o filme já tinha começado.', 'Cuando llegué, la película ya había empezado.'),
+        livre('Escreva em espanhol: Eu nunca tinha visto o mar.', 'Nunca había visto el mar.'),
+      ]),
+      producao(5, 'Conte em voz alta, em quatro frases, o que tinha acontecido antes de você acordar hoje (o que outras pessoas já tinham feito, o que ainda não tinha acontecido).'),
+    ]),
+  ],
+});

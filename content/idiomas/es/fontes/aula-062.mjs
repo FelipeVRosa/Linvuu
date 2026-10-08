@@ -1,0 +1,97 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 62, titulo: 'Revisão e simulado do B1', nivel: 'b1',
+  objetivo: 'Fazer um balanço honesto do seu nível, treinar leitura, escuta, escrita e fala no formato B1 e resolver um simulado original com gabarito comentado.',
+  nota: 'Você fechou o B1 do espanhol na Linvuu. Hoje você consegue contar fatos do passado com os tempos certos, falar de planos e hipóteses, usar o subjuntivo nas situações mais comuns, dar opinião e debater, escrever um e-mail formal, resolver trâmites do dia a dia, explicar com outras palavras quando falta uma, pedir que repitam e colocar os pronomes no lugar. O certificado de conclusão do nível é emitido pela Linvuu e atesta o seu percurso neste curso; ele não equivale a nenhum exame externo. Como próximos passos, refaça o simulado até errar pouco, leia e ouça textos reais (notícias, podcasts e séries em espanhol), escreva um pequeno diário e converse com falantes da língua sempre que puder. Se algum dia quiser fazer um exame externo, procure o material próprio dele.',
+  sessoes: [
+    sessao('S1', 'O que você consegue fazer no B1', [
+      revisao(5, 'Releia em voz alta os mapas dos tempos da aula 61 e marque os temas em que você ainda hesita.'),
+      gramatica(15, 'Uma lista honesta do que você faz no B1', 'Leia cada linha e responda sinceramente: faço com facilidade, faço com esforço ou ainda não faço. Para o que ainda não faz, volte à aula indicada. Esta lista é um instrumento de estudo da Linvuu, não é uma avaliação externa, e serve só para você se orientar.', {
+        tag: 'Balanço',
+        tabela: [
+          { tema: 'Contar', regra: 'narrar fatos do passado com sequência e causa, usando indefinido, imperfecto, perfecto e pluscuamperfecto.', aula: '39, 57, 61' },
+          { tema: 'Planos, suposições e hipóteses', regra: 'falar do futuro, fazer suposições (futuro perfecto) e dizer o que aconteceria ou teria acontecido (condicional e «si»).', aula: '40, 41, 47' },
+          { tema: 'Subjuntivo', regra: 'usar o subjuntivo depois de desejo, dúvida, emoção, tempo e finalidade, e escolher entre presente, perfecto e imperfecto.', aula: '42 a 46' },
+          { tema: 'Relatar e organizar', regra: 'passar o que alguém disse (discurso indireto), usar «se» e passiva, gerúndio e particípio, e relativos.', aula: '48 a 51' },
+          { tema: 'Conversar e debater', regra: 'dar opinião, concordar, discordar e usar conectores com educação.', aula: '52, 53' },
+          { tema: 'Escrever e trabalhar', regra: 'escrever um e-mail formal, falar de currículo e de entrevista.', aula: '54, 55' },
+          { tema: 'Entender', regra: 'entender o essencial de notícias, textos e conversas claras sobre assuntos comuns.', aula: '56, 57' },
+          { tema: 'Viver fora', regra: 'perguntar o que é preciso no banco, no celular e no aluguel, sabendo que as regras mudam e devem ser conferidas.', aula: '58' },
+          { tema: 'Quando falta uma palavra', regra: 'explicar com outras palavras, pedir repetição, confirmar e ganhar tempo.', aula: '59' },
+          { tema: 'Pronomes e preposições', regra: 'usar o «a» pessoal, verbos com preposição, «por» e «para» e pronomes com infinitivo, gerúndio e imperativo.', aula: '60' },
+        ],
+      }),
+      producao(10, 'Para cada linha da lista, fale 30 segundos em espanhol dando um exemplo real da sua vida. Marque as linhas em que você precisou pensar muito e volte a essas aulas antes do simulado.'),
+    ]),
+    sessao('S2', 'Leitura e escuta (formato B1, original)', [
+      revisao(5, 'Releia o texto e o diálogo abaixo em voz alta antes de começar. Tente entender o essencial antes de olhar a tradução.'),
+      texto(10, 'Trabajar desde casa / Trabalhar de casa', 'Hace tres años, Nuria dejó su trabajo en una oficina de Bilbao y empezó a trabajar desde casa como traductora. Al principio pensaba que tendría más tiempo libre, pero pronto se dio cuenta de que le costaba separar el trabajo del descanso. Por eso decidió que, cuando terminara de trabajar, apagaría el ordenador y saldría a caminar. También se apuntó a un taller de cerámica para conocer gente. Hoy dice que, aunque echa de menos a sus antiguos compañeros, no volvería a una oficina a menos que le ofrecieran un horario flexible. Si lo hubiera sabido, habría dado el paso mucho antes.', 'Há três anos, Nuria deixou o emprego num escritório de Bilbau e começou a trabalhar de casa como tradutora. No começo achava que teria mais tempo livre, mas logo percebeu que tinha dificuldade para separar o trabalho do descanso. Por isso decidiu que, quando terminasse de trabalhar, desligaria o computador e sairia para caminhar. Também se inscreveu numa oficina de cerâmica para conhecer pessoas. Hoje diz que, embora sinta falta dos antigos colegas, não voltaria a um escritório a menos que lhe oferecessem um horário flexível. Se tivesse sabido, teria dado o passo muito antes.', [
+        ['¿Qué trabajo hace Nuria ahora?', 'Es traductora y trabaja desde casa.'], ['¿Qué problema encontró al principio?', 'Le costaba separar el trabajo del descanso.'], ['¿Qué hace cuando termina de trabajar?', 'Apaga el ordenador y sale a caminar.'], ['¿Por qué se apuntó a un taller de cerámica?', 'Para conocer gente.'], ['¿En qué caso volvería a una oficina?', 'Si le ofrecieran un horario flexible.'],
+      ]),
+      dialogo(8, 'En recepción / Na recepção', 'Javier chega a um hotel e descobre que a reserva foi cancelada.', [
+        ['La recepcionista', 'Buenas noches. ¿En qué puedo ayudarle?', 'Boa noite. Em que posso ajudá-lo?'],
+        ['Javier', 'Buenas noches. Tengo una reserva a nombre de Javier Soto, pero me han dicho que no aparece en el sistema.', 'Boa noite. Tenho uma reserva em nome de Javier Soto, mas me disseram que ela não aparece no sistema.'],
+        ['La recepcionista', 'Un momento, voy a comprobarlo. Me temo que la reserva se canceló ayer por un error en el pago.', 'Um momento, vou verificar. Receio que a reserva tenha sido cancelada ontem por um erro no pagamento.'],
+        ['Javier', 'Pero yo no había recibido ningún aviso. Si me lo hubieran dicho, habría pagado de otra forma.', 'Mas eu não tinha recebido nenhum aviso. Se tivessem me dito, teria pagado de outra forma.'],
+        ['La recepcionista', 'Lo siento mucho. Queda una habitación doble, aunque está en el último piso y no tiene vistas.', 'Sinto muito. Resta um quarto duplo, embora fique no último andar e não tenha vista.'],
+        ['Javier', 'Me sirve, siempre que no sea más cara. Y quisiera que me enviaran un correo con la confirmación.', 'Serve para mim, desde que não seja mais cara. E eu gostaria que me enviassem um e-mail com a confirmação.'],
+        ['La recepcionista', 'Por supuesto. Se lo enviaré en cuanto termine el registro.', 'Claro. Envio assim que terminar o registro.'],
+        ['Javier', 'Gracias. Disculpe, ¿podría repetir lo del desayuno? No lo he entendido bien.', 'Obrigado. Desculpe, poderia repetir o que disse do café da manhã? Não entendi bem.'],
+        ['La recepcionista', 'Claro. Se sirve de siete a diez, en la planta baja.', 'Claro. É servido das sete às dez, no térreo.'],
+      ]),
+      producao(7, 'Responda em voz alta: o que Nuria fez e por que, e o que você faria no lugar dela. Depois conte o que aconteceu com Javier e como você teria reagido.'),
+    ]),
+    sessao('S3', 'Escrita e fala (formato B1)', [
+      revisao(5, 'Releia os erros que você mais comete no B1 e diga a forma certa em voz alta.'),
+      gramatica(15, 'Como escrever e falar bem no B1', 'PASSO 1: planeje em três partes: introdução (tema e posição), desenvolvimento (dois ou três argumentos com exemplos) e conclusão. PASSO 2: use um conector por parágrafo: «en primer lugar», «por otro lado», «sin embargo», «por lo tanto», «en conclusión». PASSO 3: varie os tempos: indefinido e imperfecto para contar; condicional para opinião ou hipótese; subjuntivo depois de «quiero que», «aunque», «para que», «es posible que». PASSO 4: releia a concordância (gênero, número, «el agua» é feminina), os acentos, os sinais «¿ ?» e «¡ !» e a ordem dos pronomes. PASSO 5: no e-mail formal, abra com «Estimado señor» ou «Estimada señora:», diga o motivo com «Le escribo para…» e feche com «Quedo a la espera de su respuesta. Atentamente,». PASSO 6: na fala, opine e descreva: «En mi opinión…», «Lo que más me interesa es…», «Estoy convencido de que…». PASSO 7: se faltar uma palavra, explique («Es una cosa que sirve para…»); se não entender, peça («¿Podría repetirlo más despacio?»); se precisar pensar, use «A ver…» e «Déjeme pensar un momento». PASSO 8: gerencie o tempo: 2 minutos para planejar, 8 para escrever e 2 para reler.', {
+        tag: 'Provas',
+        tabelas: [
+          { titulo: 'Texto de opinião', linhas: [
+            { etapa: '1', funcao: 'Planejar (2 min)', exemplo: 'tema, posição, três ideias.' }, { etapa: '2', funcao: 'Introduzir', exemplo: '«Hoy en día, mucha gente piensa que…»' }, { etapa: '3', funcao: 'Desenvolver', exemplo: '«En primer lugar… Además… Por ejemplo…»' },
+            { etapa: '4', funcao: 'Contrastar', exemplo: '«Sin embargo… Por otro lado…»' }, { etapa: '5', funcao: 'Concluir', exemplo: '«En conclusión, me parece que…»' }, { etapa: '6', funcao: 'Reler (2 min)', exemplo: 'concordância, acentos, ¿ ?, pronomes.' },
+          ] },
+          { titulo: 'E-mail formal', linhas: [
+            { parte: 'saudação', frase: 'Estimado señor García:' }, { parte: 'motivo', frase: 'Le escribo para solicitar información sobre…' }, { parte: 'pedido', frase: 'Le agradecería que me enviara…' },
+            { parte: 'despedida', frase: 'Quedo a la espera de su respuesta. Atentamente,' },
+          ] },
+        ],
+      }),
+      producao(10, 'Escreva um texto de 120 palavras: «¿Conviene aprender un idioma para trabajar?». Use pelo menos quatro conectores. Depois leia em voz alta e fale 1 minuto sobre o mesmo tema, sem olhar o papel.'),
+    ]),
+    sessao('S4', 'Simulado do B1 (com gabarito comentado)', [
+      revisao(5, 'Respire e releia a lista honesta do B1 por um minuto. Cada item abaixo tem a resposta comentada: leia a explicação depois de responder.'),
+      exercicios(20, [
+        ouvir('Si lo hubiera sabido, habría dado el paso antes', ['Si lo hubiera sabido, habría dado el paso antes', 'Si lo habría sabido, hubiera dado el paso antes', 'Si lo supiera, había dado el paso antes'], 'Si lo hubiera sabido, habría dado el paso antes', 'Escuta: hipótese irreal no passado: si + pluscuamperfecto de subjuntivo + condicional compuesto.'),
+        ouvir('Quisiera que me enviaran un correo', ['Quisiera que me enviaran un correo', 'Quisiera que me enviarían un correo', 'Quisiera que me enviaron un correo'], 'Quisiera que me enviaran un correo', 'Escuta: depois de «quisiera que», imperfecto de subjuntivo (terminação -aran).'),
+        ouvir('Me dijo que llegaría antes de las ocho', ['Me dijo que llegaría antes de las ocho', 'Me dijo que llegará antes de las ocho', 'Me dijo que llegó antes de las ocho'], 'Me dijo que llegaría antes de las ocho', 'Escuta: discurso indireto com verbo no passado: o futuro vira condicional.'),
+        ouvir('El contrato se firmó la semana pasada', ['El contrato se firmó la semana pasada', 'El contrato se firmaron la semana pasada', 'El contrato firmó la semana pasada'], 'El contrato se firmó la semana pasada', 'Escuta: «se» passivo, com o verbo concordando com «contrato» (singular).'),
+        mc('Leia: «Pronto se dio cuenta de que le costaba separar el trabajo del descanso.» Qual era o problema?', ['No lograba separar el trabajo del descanso.', 'No tenía clientes.', 'Echaba de menos su ciudad.'], 'No lograba separar el trabajo del descanso.', 'Leitura: «costar» + infinitivo = ter dificuldade.'),
+        mc('Leia: «Cuando terminara de trabajar, apagaría el ordenador y saldría a caminar.» O que ela decidiu fazer ao terminar?', ['Desligar o computador e sair para caminhar', 'Continuar trabalhando em casa', 'Ligar para os colegas'], 'Desligar o computador e sair para caminhar', 'Leitura: «apagar el ordenador» e «salir a caminar».'),
+        mc('Leia: «No volvería a una oficina a menos que le ofrecieran un horario flexible.» Quando ela voltaria?', ['Se lhe oferecessem horário flexível', 'Nunca, em nenhum caso', 'Se lhe pagassem mais'], 'Se lhe oferecessem horário flexível', 'Leitura: «a menos que» indica a única condição.'),
+        mc('Leia: «Queda una habitación doble, aunque está en el último piso y no tiene vistas.» O que a recepcionista oferece?', ['Un cuarto doble sin vistas', 'Una suite con vistas', 'Ninguna habitación'], 'Un cuarto doble sin vistas', 'Leitura: «queda» = resta; «aunque» introduz o aspecto negativo.'),
+        mc('Qual frase está correta?', ['Cuando llegamos, la película ya había empezado.', 'Cuando llegamos, la película ya empezaba.', 'Cuando llegamos, la película ya empezó.'], 'Cuando llegamos, la película ya había empezado.', 'Pluscuamperfecto: a ação é anterior a outro momento passado.'),
+        mc('Qual frase está correta?', ['Anoche salimos a cenar.', 'Anoche hemos salido a cenar.', 'Anoche salíamos a cenar una vez.'], 'Anoche salimos a cenar.', '«Anoche» é um tempo terminado: indefinido.'),
+        mc('Qual frase está correta?', ['Si tuviera tiempo, aprendería alemán.', 'Si tendría tiempo, aprendería alemán.', 'Si tengo tiempo, aprendería alemán.'], 'Si tuviera tiempo, aprendería alemán.', 'Si + imperfecto de subjuntivo + condicional.'),
+        mc('Como se diz «Ele disse: Irei amanhã» no discurso indireto?', ['Dijo que iría al día siguiente.', 'Dijo que irá mañana.', 'Dijo que fue al día siguiente.'], 'Dijo que iría al día siguiente.', 'Verbo principal no passado: futuro vira condicional, e «mañana» vira «al día siguiente».'),
+        mc('Qual frase está correta?', ['Se venden pisos.', 'Se vende pisos.', 'Se venden piso.'], 'Se venden pisos.', '«Se» passivo: o verbo concorda com o plural «pisos».'),
+        mc('Qual frase está correta?', ['Busco a mi hermano.', 'Busco mi hermano.', 'Busco de mi hermano.'], 'Busco a mi hermano.', '«A» pessoal diante de pessoa determinada.'),
+        mc('Qual frase está correta?', ['Dímelo ahora.', 'Dime-lo ahora.', 'Me lo dime ahora.'], 'Dímelo ahora.', 'Imperativo afirmativo: pronomes colados, com acento escrito e sem hífen.'),
+        mc('Qual é o sentido de «embarazada»?', ['grávida', 'constrangida', 'ocupada'], 'grávida', 'Falso amigo: «embarazada» é grávida; constrangida é «avergonzada».'),
+        mc('Você esqueceu a palavra «abrelatas». Qual frase ajuda a continuar a conversa?', ['Es una cosa que sirve para abrir latas.', 'No sé, no sé, no sé.', 'Eso, eso, eso.'], 'Es una cosa que sirve para abrir latas.', 'Parafrasear mantém a conversa: «una cosa que sirve para…».'),
+        mc('Qual despedida é adequada em um e-mail formal?', ['Quedo a la espera de su respuesta. Atentamente,', 'Chao, nos vemos', 'Besos y abrazos'], 'Quedo a la espera de su respuesta. Atentamente,', 'Registro formal.'),
+        lacuna('Cuando ___ a casa mañana, te llamo. (llegar)', ['llegue', 'llego', 'llegaré'], 'llegue', '«Cuando» + futuro pede subjuntivo.'),
+        lacuna('Aunque ___ mucho, saldré. (llover)', ['llueva', 'llueve', 'lloverá'], 'llueva', '«Aunque» + subjuntivo = hipótese ou indiferença.'),
+        lacuna('Me alegro de que ___ aquí. (estar, tú)', ['estés', 'estás', 'estarás'], 'estés', 'Emoção pede subjuntivo.'),
+        lacuna('Si ___ sabido, habría venido. (haber)', ['hubiera', 'había', 'habría'], 'hubiera', 'Pluscuamperfecto de subjuntivo depois de «si».'),
+        lacuna('Depende ___ que haga buen tiempo.', ['de', 'en', 'a'], 'de', '«Depender de» e «de que» mantêm o «de».'),
+        lacuna('Este regalo es ___ ti.', ['para', 'por', 'a'], 'para', '«Para» indica destinatário.'),
+        ordem('Ordene: «Si hubiera sabido, habría venido.»', ['Si', 'hubiera', 'sabido,', 'habría', 'venido.'], 'Si hubiera sabido, habría venido.', 'Si + pluscuamperfecto de subjuntivo, condicional compuesto.'),
+        ordem('Ordene: «No creo que sea verdad.»', ['No', 'creo', 'que', 'sea', 'verdad.'], 'No creo que sea verdad.', '«No creo que» + subjuntivo.'),
+        ditado('Cuando llegues, avísame', 'Escreva: Cuando llegues, avísame.'), ditado('No creo que haya terminado todavía', 'Escreva: No creo que haya terminado todavía.'),
+        livre('Escreva em espanhol: Se eu tivesse mais tempo, estudaria mais. Ele disse que chegaria às oito.', 'Si tuviera más tiempo, estudiaría más. Dijo que llegaría a las ocho.'),
+      ]),
+      producao(5, 'Releia os itens que você errou, diga a regra de cada um em voz alta e invente uma frase nova para cada regra.'),
+    ]),
+  ],
+});

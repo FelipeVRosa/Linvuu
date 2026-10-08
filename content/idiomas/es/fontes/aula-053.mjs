@@ -1,0 +1,107 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 53, titulo: 'Opinião e debate', nivel: 'b1',
+  objetivo: 'Dar a sua opinião, concordar e discordar com educação, defender um argumento com razões e exemplos, e usar corretamente indicativo e subjuntivo depois de «creo que», «no creo que» e «es importante que».',
+  nota: 'Você consegue opinar, discordar sem ser ríspido e montar um argumento curto. Próxima aula: estilo formal e e-mail.',
+  sessoes: [
+    sessao('S1', 'Dar a sua opinião', [
+      revisao(5, 'Diga em voz alta três frases com subjuntivo que você já conhece, por exemplo: «Quiero que vengas», «Dudo que sea verdad», «Me alegro de que estés aquí». Depois diga por que cada uma pede subjuntivo.'),
+      palavras(8, [
+        ['Creo que…', 'kréo ke', 'acho que…', ''], ['Pienso que…', 'piénso ke', 'penso que… / acho que…', ''], ['Me parece que…', 'me parétheke', 'me parece que…', ''], ['En mi opinión,…', 'en mi opinión', 'na minha opinião,…', ''],
+        ['Para mí,…', 'para mí', 'para mim,…', ''], ['Desde mi punto de vista,…', 'désde mi púnto de bísta', 'do meu ponto de vista,…', ''], ['la opinión', 'la opinión', 'a opinião', ''], ['el tema', 'el téma', 'o assunto, o tema', ''],
+      ]),
+      gramatica(12, 'Dar a opinião: creo que + indicativo, no creo que + subjuntivo', 'PASSO 1: para dar uma opinião, o espanhol tem várias portas de entrada: «Creo que…», «Pienso que…», «Me parece que…», «En mi opinión,…», «Para mí,…» e «Desde mi punto de vista,…». PASSO 2: quando você afirma, o que vem depois é um fato na sua cabeça, então usa o indicativo: «Creo que tienes razón.», «Me parece que es una buena idea.» PASSO 3: quando você nega a opinião, deixa de afirmar e passa a duvidar. É aí que entra o subjuntivo que você viu na aula 43: «No creo que tengas razón.», «No me parece que sea una buena idea.» PASSO 4: nas perguntas, o mais comum é o indicativo: «¿Crees que vendrá?» Se você já desconfia da resposta, pode usar o subjuntivo: «¿Crees que venga?», mas no começo fique com o indicativo. PASSO 5: «En mi opinión», «Para mí» e «Desde mi punto de vista» vêm seguidos de vírgula e não levam «que»: «En mi opinión, es necesario.» PASSO 6: não confunda «pensar que» (achar) com «pensar en» (pensar em alguém ou algo): «Pienso que es caro.» / «Pienso en mi familia.» PASSO 7: o verbo «achar» do português não existe com esse sentido em espanhol. Use «creer», «pensar» ou «parecer».', {
+        tag: 'Opinião',
+        comparacao: 'em português «acho que» serve para tudo, e «não acho que seja» também pede subjuntivo («seja»). Boa notícia: a lógica é a mesma. A diferença é de vocabulário: o espanhol usa «creer», «pensar» e «parecer», e nunca «achar» com esse sentido (o verbo «hallar» significa «encontrar»).',
+        tabela: [
+          { expressao: 'Creo que…', depois: 'indicativo', exemplo: 'Creo que el tema es importante.' },
+          { expressao: 'No creo que…', depois: 'subjuntivo', exemplo: 'No creo que el tema sea importante.' },
+          { expressao: 'Me parece que…', depois: 'indicativo', exemplo: 'Me parece que llegan tarde.' },
+          { expressao: 'No me parece que…', depois: 'subjuntivo', exemplo: 'No me parece que lleguen tarde.' },
+          { expressao: 'En mi opinión, / Para mí,', depois: 'frase normal, sem «que»', exemplo: 'Para mí, es mejor esperar.' },
+        ],
+        erros: [['No creo que tiene razón.', 'No creo que tenga razón.', 'Opinião negada pede subjuntivo: «tenga».'], ['Me parece de que es caro.', 'Me parece que es caro.', 'Não se usa «de» antes de «que» depois de «parecer».'], ['En mi opinión que es útil.', 'En mi opinión, es útil.', 'Depois de «en mi opinión» vem vírgula, não «que».'], ['Yo acho que es verdad.', 'Creo que es verdad.', '«Achar» não existe com esse sentido; use «creer» ou «pensar».']],
+      }),
+      producao(5, 'Escolha um tema (redes sociais, transporte público, séries) e dê duas opiniões em voz alta: uma com «Creo que…» e outra com «No creo que…». Cuidado com o modo verbal.'),
+    ]),
+    sessao('S2', 'Concordar, discordar e argumentar', [
+      revisao(4, 'Diga de memória cinco formas de começar uma opinião e complete uma delas com indicativo e outra com subjuntivo.'),
+      palavras(6, [
+        ['Estoy de acuerdo.', 'estói de akuérdo', 'concordo.', ''], ['No estoy de acuerdo.', 'no estói de akuérdo', 'não concordo.', ''], ['Tienes razón.', 'tiénes ráthon', 'você tem razão.', ''], ['Depende.', 'depénde', 'depende.', ''],
+        ['a favor / en contra', 'a fabór / en kóntra', 'a favor / contra', ''], ['la ventaja / la desventaja', 'la bentája / la desbentája', 'a vantagem / a desvantagem', ''],
+      ]),
+      gramatica(12, 'Concordar, discordar com educação e montar um argumento', 'PASSO 1: concordar tem graus. «Estoy totalmente de acuerdo.» (100%), «Estoy de acuerdo contigo.» (com uma pessoa), «Estoy de acuerdo en que…» (com uma ideia), «Tienes razón en parte.» (concordo só em parte). PASSO 2: discordar sem ser ríspido: «Entiendo tu punto de vista, pero…», «No lo veo así.», «Puede ser, pero…», «No estoy del todo de acuerdo.» Reconhecer o ponto do outro primeiro deixa a conversa mais leve. PASSO 3: um argumento curto tem três partes: opinião, razão e exemplo. «Creo que deberíamos usar más el transporte público (opinião) porque es más barato y contamina menos (razão). Por ejemplo, yo ahorro cuarenta euros al mes (exemplo).» PASSO 4: use os conectores da aula 52 para organizar: «por un lado… por otro lado», «además», «sin embargo», «en cambio», «por eso». PASSO 5: para pedir a vez de falar ou interromper com educação: «Perdona que te interrumpa, pero…», «¿Puedo añadir algo?» e, para não ser interrompido: «Déjame terminar, por favor.» PASSO 6: a estrutura é «estar de acuerdo»: sempre com «estar» e com «de». «Tener razón» não leva artigo.', {
+        tag: 'Debate',
+        comparacao: 'em português dizemos «concordo» ou «estou de acordo». Em espanhol, o verbo «concordar» existe, mas é mais técnico (concordância gramatical). Na conversa, o natural é «estar de acuerdo». E «ter razão» é «tener razón», sem artigo: «tem a razão» soa estranho.',
+        tabela: [
+          { funcao: 'concordar totalmente', frase: 'Estoy totalmente de acuerdo contigo.' },
+          { funcao: 'concordar em parte', frase: 'Tienes razón en parte, pero…' },
+          { funcao: 'discordar com suavidade', frase: 'Entiendo tu punto de vista, pero no lo veo así.' },
+          { funcao: 'discordar com firmeza', frase: 'Lo siento, pero no estoy de acuerdo.' },
+          { funcao: 'pedir a vez de falar', frase: 'Perdona que te interrumpa, ¿puedo añadir algo?' },
+          { funcao: 'dar uma razão', frase: 'Lo digo porque… / Por ejemplo,…' },
+        ],
+        erros: [['Soy de acuerdo.', 'Estoy de acuerdo.', 'A expressão fixa usa «estar», nunca «ser».'], ['Estoy acuerdo contigo.', 'Estoy de acuerdo contigo.', 'Falta a preposição «de».'], ['Tienes la razón.', 'Tienes razón.', '«Tener razón» não leva artigo.'], ['Estoy de acuerdo a ti.', 'Estoy de acuerdo contigo.', 'Com pessoas, «con» (e «conmigo, contigo» são formas únicas).']],
+      }),
+      producao(8, 'Grave ou diga em voz alta um mini debate com você mesmo: dê uma opinião, depois discorde dela com «Entiendo tu punto de vista, pero…» e feche com uma conclusão: «Entonces, quizá podamos…».'),
+    ]),
+    sessao('S3', 'Opiniões com «es + adjetivo + que»', [
+      revisao(4, 'Complete em voz alta: «Estoy de acuerdo ___» (com você), «Tienes ___ en parte», «No creo que ___ posible» (ser).'),
+      palavras(5, [
+        ['Es importante que…', 'es importánte ke', 'é importante que…', ''], ['Es necesario que…', 'es nethesário ke', 'é necessário que…', ''], ['Es mejor que…', 'es mehór ke', 'é melhor que…', ''], ['Es normal que…', 'es normál ke', 'é normal que…', ''],
+        ['Es raro que…', 'es rráro ke', 'é estranho que…', ''], ['Es una pena que…', 'es úna péna ke', 'é uma pena que…', ''],
+      ]),
+      gramatica(8, 'Es importante que… (subjuntivo) e es verdad que… (indicativo)', 'PASSO 1: uma opinião também pode vir com «es» + adjetivo + «que». Expressões de valor, necessidade ou emoção pedem subjuntivo: «Es importante que hablemos.», «Es mejor que esperes.», «Es raro que no llame.», «Es una pena que no puedas venir.» PASSO 2: já as expressões que dão algo como fato pedem indicativo: «Es verdad que está cansado.», «Es evidente que hay un problema.», «Es obvio que tienes razón.» PASSO 3: se o sujeito é o mesmo, ou a frase é geral, não há «que» nem subjuntivo: use o infinitivo. «Es importante escuchar.» (para todos) × «Es importante que escuches.» (você, especificamente). PASSO 4: a negação de uma expressão de fato muda o modo: «No es verdad que esté cansado.» (subjuntivo, porque agora você duvida).', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português funciona do mesmo jeito: «é importante que falemos» (subjuntivo), «é verdade que está cansado» (indicativo). A diferença está nos detalhes: o espanhol tem a forma «tú escuches», «nosotros hablemos» e sempre pede o infinitivo quando a ideia vale para todos.',
+        tabela: [
+          { grupo: 'valor ou necessidade', exemplos: 'importante, necesario, mejor, normal, lógico', modo: 'subjuntivo' },
+          { grupo: 'emoção', exemplos: 'raro, una pena, una lástima', modo: 'subjuntivo' },
+          { grupo: 'fato', exemplos: 'verdad, evidente, obvio, cierto', modo: 'indicativo' },
+          { grupo: 'fato negado', exemplos: 'no es verdad, no es cierto', modo: 'subjuntivo' },
+        ],
+        erros: [['Es importante que escuchar.', 'Es importante escuchar.', 'Sem sujeito específico, use só o infinitivo, sem «que».'], ['Es mejor que esperas.', 'Es mejor que esperes.', 'Depois de «es mejor que» vem subjuntivo.'], ['Es verdad que esté cansado.', 'Es verdad que está cansado.', '«Es verdad que» afirma um fato: indicativo.'], ['Es una pena que no puedes venir.', 'Es una pena que no puedas venir.', 'Emoção pede subjuntivo.']],
+      }),
+      dialogo(4, 'El móvil en clase / O celular na sala de aula', 'Marta e Javier discutem se os institutos devem proibir o celular.', [
+        ['Marta', '¿Tú qué opinas de prohibir el móvil en los institutos?', 'O que você acha de proibir o celular nas escolas?'],
+        ['Javier', 'A mí me parece una buena idea. En clase todos miran la pantalla y nadie escucha.', 'Para mim é uma boa ideia. Na sala todos olham a tela e ninguém escuta.'],
+        ['Marta', 'Entiendo tu punto de vista, pero no creo que prohibirlo sea la solución.', 'Entendo seu ponto de vista, mas não acho que proibir seja a solução.'],
+        ['Javier', '¿Ah, no? ¿Y qué propones?', 'Ah, não? E o que você propõe?'],
+        ['Marta', 'Es mejor que los profesores enseñen a usarlo bien. Por ejemplo, para buscar información.', 'É melhor que os professores ensinem a usá-lo bem. Por exemplo, para buscar informação.'],
+        ['Javier', 'Tienes razón en parte. Sin embargo, es normal que los alumnos se distraigan.', 'Você tem razão em parte. Porém, é normal que os alunos se distraiam.'],
+        ['Marta', 'Depende de la clase. Quizá podamos ponernos de acuerdo: móvil solo cuando el profesor lo pida.', 'Depende da turma. Talvez possamos concordar: celular só quando o professor pedir.'],
+        ['Javier', 'Eso sí me parece razonable.', 'Isso, sim, me parece razoável.'],
+      ]),
+      texto(4, 'Mi opinión sobre el teletrabajo / Minha opinião sobre o trabalho remoto', 'Hoy muchas empresas permiten el teletrabajo y, en mi opinión, es una buena noticia. Por un lado, ahorras tiempo, porque no tienes que viajar todos los días. Por otro lado, puedes organizar mejor tu jornada. Sin embargo, no creo que sea perfecto para todo el mundo. A veces te sientes solo y es difícil separar el trabajo de la vida personal. Por eso me parece importante que la empresa ofrezca un sistema mixto: dos o tres días en casa y el resto en la oficina. Es verdad que cada persona es diferente, pero creo que ese equilibrio funciona bien para la mayoría.', 'Hoje muitas empresas permitem o trabalho remoto e, na minha opinião, é uma boa notícia. Por um lado, você economiza tempo, porque não precisa viajar todos os dias. Por outro lado, pode organizar melhor sua jornada. Porém, não acho que seja perfeito para todo mundo. Às vezes você se sente sozinho e é difícil separar o trabalho da vida pessoal. Por isso me parece importante que a empresa ofereça um sistema misto: dois ou três dias em casa e o resto no escritório. É verdade que cada pessoa é diferente, mas acho que esse equilíbrio funciona bem para a maioria.', [
+        ['¿Qué ventaja menciona el texto?', 'Ahorrar tiempo, porque no hay que viajar todos los días, y organizar mejor la jornada.'], ['¿Qué problema aparece?', 'Se puede sentir soledad y es difícil separar el trabajo de la vida personal.'], ['¿Qué propone el autor?', 'Un sistema mixto: dos o tres días en casa y el resto en la oficina.'],
+      ]),
+      producao(5, 'Responda em voz alta, com «es importante que…»: «¿Qué es importante para aprender un idioma?» Dê duas ideias, uma com subjuntivo e outra com infinitivo.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 53', [
+      revisao(5, 'Dê uma opinião sobre o transporte público em três frases: uma com «creo que», uma com «no creo que» e uma com «es necesario que».'),
+      exercicios(20, [
+        ouvir('No creo que tengas razón', ['No creo que tengas razón', 'No creo que tienes razón', 'Creo que tienes razón'], 'No creo que tengas razón', 'Ouça o «no» e o subjuntivo «tengas».'),
+        ouvir('Estoy de acuerdo contigo', ['Estoy de acuerdo contigo', 'No estoy de acuerdo contigo', 'Estoy de acuerdo con ella'], 'Estoy de acuerdo contigo', 'Sem «no» e com «contigo».'),
+        ouvir('Es importante que escuchemos', ['Es importante que escuchemos', 'Es importante escuchar', 'Es importante que escuchamos'], 'Es importante que escuchemos', 'Subjuntivo de «nosotros»: «escuchemos».'),
+        ditado('Me parece que es una buena idea', 'Escreva: Me parece que es una buena idea. (indicativo depois de «me parece que»)'),
+        ditado('No creo que sea posible', 'Escreva: No creo que sea posible. (subjuntivo «sea»)'),
+        ditado('Tienes razón en parte', 'Escreva: Tienes razón en parte. (sem artigo)'),
+        mc('Qual frase está correta?', ['No creo que tenga razón.', 'No creo que tiene razón.', 'No creo que tendrá razón.'], 'No creo que tenga razón.', 'Opinião negada pede subjuntivo.'),
+        mc('Como dizer «concordo com você»?', ['Estoy de acuerdo contigo.', 'Soy de acuerdo contigo.', 'Estoy acuerdo a ti.'], 'Estoy de acuerdo contigo.', '«Estar de acuerdo» e «contigo».'),
+        mc('Qual frase discorda com suavidade?', ['No lo veo así.', 'Tienes razón.', 'Estoy totalmente de acuerdo.'], 'No lo veo así.', 'As outras duas são concordância.'),
+        mc('Como dizer «é importante ouvir» (para todos)?', ['Es importante escuchar.', 'Es importante que escuchar.', 'Es importante escucha.'], 'Es importante escuchar.', 'Sem sujeito específico, só o infinitivo.'),
+        mc('Qual é a opção sem erro?', ['En mi opinión, es una buena idea.', 'En mi opinión que es una buena idea.', 'En mi opinión de que es una buena idea.'], 'En mi opinión, es una buena idea.', 'Depois de «en mi opinión» vem vírgula.'),
+        lacuna('Creo que Marta ___ razón.', ['tiene', 'tenga', 'tendría'], 'tiene', 'Afirmação: indicativo.'),
+        lacuna('No me parece que ___ una buena idea.', ['sea', 'es', 'será'], 'sea', 'Opinião negada: subjuntivo.'),
+        lacuna('Es mejor que ___ con calma. (nosotros, hablar)', ['hablemos', 'hablamos', 'hablar'], 'hablemos', 'Subjuntivo de «nosotros».'),
+        lacuna('Es evidente que los jóvenes ___ menos. (leer)', ['leen', 'lean', 'leyeran'], 'leen', '«Es evidente que» apresenta um fato: indicativo.'),
+        lacuna('Estoy de acuerdo ___ . (com você)', ['contigo', 'con tú', 'a ti'], 'contigo', '«Contigo» é uma forma fixa.'),
+        ordem('Ordene: «Entiendo tu punto de vista, pero no lo veo así.»', ['Entiendo', 'tu', 'punto', 'de', 'vista,', 'pero', 'no', 'lo', 'veo', 'así.'], 'Entiendo tu punto de vista, pero no lo veo así.', 'Reconhece o outro e depois discorda.'),
+        ordem('Ordene: «Es importante que escuchemos a todos.»', ['Es', 'importante', 'que', 'escuchemos', 'a', 'todos.'], 'Es importante que escuchemos a todos.', 'Es importante que + subjuntivo.'),
+        livre('Escreva em espanhol: Acho que é uma boa ideia, mas não acho que seja fácil.', 'Creo que es una buena idea, pero no creo que sea fácil.'),
+      ]),
+      producao(5, 'Escolha um tema polêmico leve (por exemplo, jantar tarde ou cedo) e fale 30 segundos: opinião, uma razão, um exemplo e uma concessão com «tienes razón en parte».'),
+    ]),
+  ],
+});

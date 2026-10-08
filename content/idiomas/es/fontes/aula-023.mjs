@@ -1,0 +1,100 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 23, titulo: 'Pronomes de objeto direto', nivel: 'a2',
+  objetivo: 'Usar os pronomes de objeto direto (me, te, lo, la, nos, os, los, las) para não repetir o objeto, colocá-los antes do verbo ou colados ao infinitivo, usar o «lo» neutro («lo sé», «lo siento») e evitar a omissão do pronome, que é comum no português do Brasil.',
+  nota: 'Você responde sem repetir as palavras («lo compré», «la vi», «te llamo») e fala de objetos e de pessoas com naturalidade. Próxima aula: os pronomes de objeto indireto (le, les).',
+  sessoes: [
+    sessao('S1', 'Lo, la, los, las', [
+      revisao(5, 'Diga a diferença entre «sabía» e «supe». Depois conte em duas frases, com cenário e fato, algo que aconteceu esta semana.'),
+      palavras(8, [
+        ['la llave', 'la lhábe', 'a chave', ''], ['el cargador', 'el kargadór', 'o carregador', ''], ['el paraguas', 'el paráguas', 'o guarda-chuva', ''], ['las gafas', 'las gáfas', 'os óculos', ''],
+        ['buscar', 'buskár', 'procurar, buscar', ''], ['encontrar', 'enkontrár', 'encontrar', ''], ['perder', 'perdér', 'perder', ''], ['llevar', 'lhebár', 'levar, vestir', ''],
+      ]),
+      gramatica(12, 'Lo, la, los, las: não repetir o objeto', 'PASSO 1: o objeto direto é a coisa ou a pessoa que recebe a ação do verbo. Para achá-lo, pergunte «o quê?» ou «quem?» depois do verbo: em «Compré el libro», compro o quê? El libro. PASSO 2: para não repetir, troque o objeto por um pronome que concorda com ele em gênero e número: «lo» (masculino, singular), «la» (feminino, singular), «los» (masculino, plural) e «las» (feminino, plural). «¿Compraste el libro? — Sí, lo compré.» PASSO 3: o pronome vem antes do verbo conjugado, separado dele e sem hífen: «Lo compré», «La veo», «Las busco». PASSO 4: na negativa, o «no» vem antes do pronome: «No lo tengo», «No la encuentro». PASSO 5: com um infinitivo, há duas posições igualmente corretas: antes do verbo conjugado («Lo quiero comprar») ou colado ao final do infinitivo («Quiero comprarlo»), sem hífen. PASSO 6: com o pretérito perfecto, o pronome vem antes de «haber»: «Lo he visto», «No la he encontrado». PASSO 7: quando o objeto é uma pessoa, o «a» pessoal desaparece junto com o nome: «Veo a Ana» vira «La veo». PASSO 8: no português falado do Brasil, é comum omitir o pronome ou dizer «vi ele». Em espanhol o pronome é obrigatório quando o objeto já foi mencionado: «¿Viste la película? — Sí, la vi».', {
+        tag: 'Pronomes',
+        comparacao: 'o português escrito tem «o, a, os, as» («comprei-o», «vi-a»), mas no dia a dia o brasileiro omite o pronome («comprei») ou usa «ele» («vi ele»). O espanhol não faz isso: «lo compré» e «la vi» são a forma normal da fala. Também não existe hífen: «comprarlo», e não «comprar-lo».',
+        tabela: [
+          { objeto: 'el libro, el cargador', pronome: 'lo', exemplo: '¿El libro? Lo compré ayer.' },
+          { objeto: 'la llave, la película', pronome: 'la', exemplo: '¿La llave? No la encuentro.' },
+          { objeto: 'los billetes, los amigos', pronome: 'los', exemplo: '¿Los billetes? Los tengo aquí.' },
+          { objeto: 'las gafas, las flores', pronome: 'las', exemplo: '¿Las gafas? Las perdí.' },
+        ],
+        exemplos: [['Busco el paraguas, pero no lo encuentro.', 'Procuro o guarda-chuva, mas não o encontro.'], ['Quiero comprarlas hoy.', 'Quero comprá-las hoje.'], ['¿Has visto a Marta? — Sí, la he visto esta mañana.', 'Você viu a Marta? Sim, vi hoje de manhã.']],
+        erros: [['¿Compraste el pan? — Sí, compré.', 'Sí, lo compré.', 'O pronome do objeto direto é obrigatório em espanhol.'], ['Yo vi ele ayer.', 'Lo vi ayer.', 'Em espanhol não se diz «ele» como objeto; usa-se «lo».'], ['Quiero comprar-lo.', 'Quiero comprarlo.', 'O pronome se cola ao infinitivo sem hífen.'], ['Veo la todos los días.', 'La veo todos los días.', 'O pronome vem antes do verbo conjugado.'], ['No veo lo.', 'No lo veo.', 'Na negativa, o «no» vem antes do pronome, que fica antes do verbo.']],
+      }),
+      producao(5, 'Responda em voz alta usando um pronome: «¿Tienes las llaves?», «¿Compraste el pan?», «¿Ves a Marta?», «¿Has perdido el paraguas?» Exemplo: «Sí, las tengo.»'),
+    ]),
+    sessao('S2', 'Me, te, nos, os e o lo neutro', [
+      revisao(4, 'Substitua por um pronome: «Compré el libro», «Vi a Ana», «Busco las gafas», «Perdí los billetes».'),
+      palavras(6, [
+        ['invitar', 'imbitár', 'convidar', ''], ['esperar', 'esperár', 'esperar', ''], ['ayudar', 'aiudár', 'ajudar', ''], ['visitar', 'bisitár', 'visitar', ''], ['acompañar', 'akompanhár', 'acompanhar', ''], ['llamar', 'lhamár', 'chamar, ligar', ''],
+      ]),
+      gramatica(12, 'Me, te, nos, os, usted e o «lo» neutro', 'PASSO 1: quando o objeto direto é a pessoa que fala ou a que ouve, os pronomes são «me» (eu), «te» (tu), «nos» (nós) e «os» (vosotros). «Me llamas», «Te espero», «Nos invitan», «Os visito». PASSO 2: «usted» e «ustedes» seguem o modelo da terceira pessoa: «Lo llamo mañana, señor Ruiz» e «La ayudo, señora». Para ustedes: «Los llamo» ou «Las llamo». PASSO 3: «me», «te», «nos» e «os» também servem como objeto indireto; só a terceira pessoa muda. A aula 24 trata do indireto. PASSO 4: «lo» também pode substituir uma ideia, e não um substantivo. Chama-se «lo neutro»: «No lo sé», «Ya lo sabía», «Lo entiendo», «Lo siento». «Lo siento» é «sinto muito» (e não «eu o sinto»). PASSO 5: com «ser» e «estar», é comum repetir o adjetivo com «lo»: «¿Estás cansado? — Sí, lo estoy». É mais natural que o simples «Sí, estoy». PASSO 6: verbos que costumam ter objeto direto: llamar, esperar, ayudar, visitar, invitar, acompañar, conocer, escuchar, mirar, buscar. PASSO 7: «esperar» significa esperar (aguardar) e também ter esperança: «Te espero a las ocho» é «eu te espero às oito». «Buscar» é procurar ou ir buscar alguém: «Te busco en la estación». PASSO 8: na Espanha, para pessoas do sexo masculino é comum ouvir «le» no lugar de «lo» («le veo mañana»); é o chamado «leísmo», aceito na Espanha. Neste curso usamos «lo» e «la» e você será entendido em qualquer lugar.', {
+        tag: 'Pronomes',
+        comparacao: 'em português, «te espero» e «me liga» têm a mesma ordem do espanhol: «te espero», «me llamas». O que o português do Brasil não tem é o «os» de «vosotros» (Espanha) e o «lo» neutro, que o português costuma dispensar: «sei» e «entendo» soam completos, enquanto o espanhol prefere «lo sé» e «lo entiendo».',
+        tabela: [
+          { pessoa: 'yo', pronome: 'me', exemplo: '¿Me ves?' }, { pessoa: 'tú', pronome: 'te', exemplo: 'Te llamo luego.' }, { pessoa: 'él, usted (masc.)', pronome: 'lo', exemplo: 'Lo espero aquí.' }, { pessoa: 'ella, usted (fem.)', pronome: 'la', exemplo: 'La ayudo con las maletas.' },
+          { pessoa: 'nosotros', pronome: 'nos', exemplo: 'Nos invitan a cenar.' }, { pessoa: 'vosotros (Espanha)', pronome: 'os', exemplo: 'Os visito el domingo.' }, { pessoa: 'ellos, ustedes (masc.)', pronome: 'los', exemplo: 'Los conozco bien.' }, { pessoa: 'ellas, ustedes (fem.)', pronome: 'las', exemplo: 'Las acompaño a casa.' },
+        ],
+        exemplos: [['Te llamo esta noche, ¿vale?', 'Eu te ligo hoje à noite, certo?'], ['¿Nos esperáis en la puerta?', 'Vocês nos esperam na porta?'], ['No lo sé, pero lo busco ahora.', 'Eu não sei, mas procuro agora.'], ['Lo siento mucho, llego tarde.', 'Sinto muito, estou atrasado.']],
+        erros: [['Llamo te mañana.', 'Te llamo mañana.', 'O pronome vem antes do verbo conjugado.'], ['Esperé-te en la puerta.', 'Te esperé en la puerta.', 'Sem hífen, e antes do verbo conjugado.'], ['Me llamas ayer.', 'Me llamaste ayer.', 'Com «ayer», o verbo vai para o indefinido: «llamaste».'], ['La ayudo, señor Ruiz.', 'Lo ayudo, señor Ruiz.', 'Com «usted» masculino, o pronome é «lo».']],
+      }),
+      producao(8, 'Imagine que você marca um encontro com um amigo e peça em voz alta, com pelo menos oito frases, o que cada um faz: «Te llamo…», «Te espero…», «Me invitas…», «Nos vemos…», «Lo hago…». Use «te», «me» e «nos» pelo menos três vezes cada.'),
+    ]),
+    sessao('S3', 'Pronome com infinitivo, perfecto e o objeto perdido', [
+      revisao(4, 'Substitua o objeto por um pronome e diga nas duas posições: «Quiero ver la película» e «Voy a comprar los billetes».'),
+      palavras(5, [
+        ['dejar', 'dehár', 'deixar', ''], ['guardar', 'guardár', 'guardar', ''], ['roto, rota', 'róto', 'quebrado, rasgado', ''], ['el asiento', 'el asiénto', 'o assento', ''], ['la caja', 'la káha', 'a caixa', ''],
+      ]),
+      gramatica(8, 'Posição do pronome e falsos amigos', 'PASSO 1: com «ir a + infinitivo», «querer + infinitivo», «poder + infinitivo», há duas posições: «Voy a comprarlo» ou «Lo voy a comprar»; «Puedo verla» ou «La puedo ver». PASSO 2: a escolha de uma posição é de estilo; as duas são corretas. O que nunca se faz é pôr o pronome no meio: «Voy lo a comprar». PASSO 3: com o pretérito perfecto, o pronome nunca se cola ao particípio: «Lo he visto», e não «He visto-lo». PASSO 4: para dar ênfase, repete-se o objeto no começo da frase: «A Ana la vi ayer» e «Ese libro lo compré en Madrid». Isso é natural na fala e na escrita. PASSO 5: falsos amigos úteis nesta aula. «Cola» é «fila» de pessoas (a do banco ou a do caixa): «Vi a Marta en la cola». Também é a cola de colar e o rabo do animal. Em vários países da América Latina, como o México, diz-se mais «fila»: as duas se entendem. «Oficina» é «escritório», e não «oficina mecânica» (que é «taller»). «Pegar» é bater ou colar, e não pegar: para pegar o ônibus, «tomar».', {
+        tag: 'Pronomes',
+        comparacao: 'o português dos livros aceita «pretendo comprá-lo» e «vou comprá-lo», mas no Brasil falado a frase fica «vou comprar» ou «vou comprar ele». Em espanhol, a escolha é entre «Voy a comprarlo» e «Lo voy a comprar». Para «cola», o português usa «fila»; a palavra «cola» em português é a de colar.',
+        tabela: [
+          { frase: 'Quiero comprarlo.', posicao: 'colado ao infinitivo' }, { frase: 'Lo quiero comprar.', posicao: 'antes do verbo conjugado' }, { frase: 'Lo he comprado.', posicao: 'antes de «haber»' }, { frase: 'No lo he comprado.', posicao: '«no» + pronome + verbo' },
+        ],
+        erros: [['Voy lo a comprar.', 'Voy a comprarlo. / Lo voy a comprar.', 'O pronome não fica no meio do grupo verbal.'], ['He visto-lo.', 'Lo he visto.', 'Com o perfecto, o pronome fica antes de «haber».'], ['Trabajo en una oficina mecánica.', 'Trabajo en un taller mecánico.', '«Oficina» é escritório; oficina mecânica é «taller».']],
+      }),
+      dialogo(8, 'Objetos perdidos / Achados e perdidos', 'Um cliente procura objetos perdidos no balcão de uma estação.', [
+        ['El cliente', 'Buenos días. Perdí mi paraguas ayer en el tren. ¿Lo tienen aquí?', 'Bom dia. Perdi meu guarda-chuva ontem no trem. Vocês o têm aqui?'],
+        ['La empleada', '¿Cómo es? ¿Es grande?', 'Como ele é? É grande?'],
+        ['El cliente', 'Es negro y bastante grande. Lo dejé en el asiento.', 'É preto e bastante grande. Eu o deixei no assento.'],
+        ['La empleada', 'Un momento, por favor. Aquí hay uno negro, pero está roto. ¿Es este?', 'Um momento, por favor. Aqui há um preto, mas está quebrado. É este?'],
+        ['El cliente', 'No, el mío no está roto. También perdí unas gafas. ¿Las ha visto?', 'Não, o meu não está quebrado. Também perdi uns óculos. A senhora os viu?'],
+        ['La empleada', 'Sí, las encontró un revisor esta mañana. Las guardamos en esa caja.', 'Sim, um fiscal os encontrou hoje de manhã. Nós os guardamos naquela caixa.'],
+        ['El cliente', 'Son rojas y tienen el cristal izquierdo un poco rayado.', 'São vermelhos e têm a lente esquerda um pouco riscada.'],
+        ['La empleada', 'Aquí están. ¿Las reconoce?', 'Aqui estão. O senhor os reconhece?'],
+        ['El cliente', 'Sí, son mías. Muchas gracias. ¿Y el paraguas?', 'Sim, são meus. Muito obrigado. E o guarda-chuva?'],
+        ['La empleada', 'Si aparece, lo guardamos y lo llamamos por teléfono.', 'Se aparecer, nós o guardamos e ligamos para o senhor.'],
+      ]),
+      producao(5, 'Imagine que você perdeu um objeto. Explique em voz alta, em cinco frases, o que perdeu, onde o deixou e como ele é. Use «lo» ou «la» pelo menos duas vezes.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 23', [
+      revisao(5, 'Responda usando pronomes: «¿Tienes las llaves?», «¿Ves a Ana?», «¿Compraste el pan?», «¿Me esperas?»'),
+      exercicios(20, [
+        ouvir('Lo compré ayer', ['Lo compré ayer', 'La compré ayer', 'Lo compró ayer'], 'Lo compré ayer', 'Ouça o «lo» inicial e o «é» final de «yo».'),
+        ouvir('Las veo mañana', ['Las veo mañana', 'Los veo mañana', 'Las vi mañana'], 'Las veo mañana', 'O «las» substitui um objeto feminino plural.'),
+        ouvir('Te llamo esta noche', ['Te llamo esta noche', 'Me llamo esta noche', 'Se llama esta noche'], 'Te llamo esta noche', '«Te» é o objeto direto da pessoa com quem se fala.'),
+        ditado('Lo he visto en la calle', 'Escreva: Lo he visto en la calle. O pronome vem antes de «he».'),
+        ditado('No la encuentro', 'Escreva: No la encuentro. «No» vem antes do pronome.'),
+        ditado('¿Me esperas aquí?', 'Escreva: ¿Me esperas aquí? O pronome fica antes do verbo.'),
+        mc('Qual pronome substitui «el libro»?', ['lo', 'la', 'le'], 'lo', 'Masculino singular: «lo».'),
+        mc('Qual pronome substitui «las llaves»?', ['las', 'los', 'les'], 'las', 'Feminino plural: «las».'),
+        mc('Como se diz «Eu o vi»?', ['Lo vi.', 'Vi-lo.', 'Vi lo.'], 'Lo vi.', 'O pronome vem antes do verbo e sem hífen.'),
+        mc('Qual está correto?', ['Quiero comprarlo.', 'Quiero comprar-lo.', 'Quiero lo comprar.'], 'Quiero comprarlo.', 'O pronome se cola ao infinitivo sem hífen.'),
+        mc('Qual é a resposta natural a «¿Compraste el pan?»', ['Sí, lo compré.', 'Sí, compré.', 'Sí, le compré.'], 'Sí, lo compré.', 'O pronome é obrigatório.'),
+        mc('O que significa «Lo siento»?', ['Sinto muito.', 'Eu o sinto.', 'Eu sei.'], 'Sinto muito.', 'É uma expressão fixa para pedir desculpas.'),
+        mc('O que significa «cola» em «la cola del banco»?', ['fila', 'cola de colar', 'rabo do animal'], 'fila', 'Em espanhol «cola» pode ser a fila.'),
+        lacuna('¿Ves a Ana? — Sí, ___ veo.', ['la', 'lo', 'le'], 'la', 'Ana é feminino singular: «la».'),
+        lacuna('¿Conoces a Pedro? — Sí, ___ conozco.', ['lo', 'la', 'los'], 'lo', 'Pedro é masculino singular: «lo».'),
+        lacuna('¿Compraste las flores? — Sí, ___ compré.', ['las', 'los', 'la'], 'las', 'Feminino plural: «las».'),
+        lacuna('Quiero ver___ mañana. (la película)', ['la', 'lo', 'le'], 'la', 'O pronome se cola ao infinitivo: «verla».'),
+        lacuna('¿Me llamas? — Sí, ___ llamo.', ['te', 'me', 'se'], 'te', 'Quem pergunta é «me»; quem responde usa «te».'),
+        ordem('Ordene: «Lo compré ayer.»', ['Lo', 'compré', 'ayer.'], 'Lo compré ayer.', 'O pronome vem antes do verbo conjugado.'),
+        ordem('Ordene: «No la encuentro.»', ['No', 'la', 'encuentro.'], 'No la encuentro.', '«No», pronome e verbo.'),
+        livre('Escreva em espanhol: Eu a vi ontem e a chamei.', 'La vi ayer y la llamé.'),
+      ]),
+      producao(5, 'Conte em voz alta o que você fez hoje com objetos e pessoas, sem repetir os substantivos: «Lo compré», «La llamé», «Los vi»…'),
+    ]),
+  ],
+});

@@ -1,0 +1,94 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 45, titulo: 'Pretérito perfecto de subjuntivo', nivel: 'b1',
+  objetivo: 'Formar o pretérito perfecto de subjuntivo («haya llegado») e usá-lo depois dos mesmos gatilhos do subjuntivo presente quando a ação já terminou («espero que hayas llegado bien», «no creo que lo haya visto») e nas orações de tempo («cuando hayas terminado»).',
+  nota: 'Você fala de fatos já concluídos com o subjuntivo: «Me alegra que hayas venido», «Llámame cuando hayas terminado». Próxima aula: o imperfecto de subjuntivo.',
+  sessoes: [
+    sessao('S1', 'Formar o pretérito perfecto de subjuntivo', [
+      revisao(5, 'Diga em voz alta o presente de subjuntivo de ser, estar, ir, haber e saber para «tú» e «ellos». Depois conjugue o pretérito perfecto de indicativo de «llegar» (he llegado, has llegado…).'),
+      palavras(8, [
+        ['espero que hayas llegado', '', 'espero que você tenha chegado', ''], ['me alegra que hayas venido', '', 'fico contente que você tenha vindo', ''], ['no creo que lo haya visto', '', 'não acho que ele o tenha visto', ''], ['es posible que haya perdido', '', 'é possível que tenha perdido', ''],
+        ['dudo que haya terminado', '', 'duvido que tenha terminado', ''], ['cuando hayas terminado', '', 'quando você tiver terminado', ''], ['en cuanto haya llegado', '', 'assim que tiver chegado', ''], ['que yo sepa', '', 'que eu saiba', ''],
+      ]),
+      gramatica(12, 'Haya + particípio: a ação já terminou', 'PASSO 1: lembre do português: «espero que você tenha chegado», «duvido que ele tenha terminado». Esse «tenha chegado» é o pretérito perfeito do subjuntivo. PASSO 2: em espanhol, você forma esse tempo com o presente de subjuntivo de «haber» + particípio: «haya llegado». PASSO 3: o presente de subjuntivo de «haber» é: haya, hayas, haya, hayamos, hayáis, hayan. Só a forma «hayáis» leva acento. PASSO 4: o particípio é o de sempre (hablado, comido, vivido; hecho, dicho, visto, puesto, escrito, abierto, vuelto, roto…) e nunca muda de gênero nem de número. PASSO 5: o tempo aparece depois dos mesmos gatilhos que você já viu (desejo, dúvida, emoção, valoração), mas agora a ação já está concluída: «Me alegra que hayas venido» (você veio, e eu me alegro com isso). PASSO 6: compare com o subjuntivo presente: «Me alegra que vengas» (você vem, ou vai vir) × «Me alegra que hayas venido» (você já veio). PASSO 7: a lógica acompanha o indicativo. «Creo que ha llegado» (indicativo) corresponde a «No creo que haya llegado» (subjuntivo). «Sé que lo ha visto» corresponde a «Dudo que lo haya visto». PASSO 8: negação e pronomes ficam antes de «haya»: «No creo que lo haya visto», «Es posible que se haya olvidado». PASSO 9: cuidado com «haya»: não é o mesmo que «hay». «Hay» é o verbo existencial no presente; «haya» é o subjuntivo, como em «Es posible que haya problemas».', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português usa «ter» como auxiliar: «tenha chegado», «tenha feito». O espanhol usa «haber»: «haya llegado», «haya hecho». Nunca se usa «tener» como auxiliar aqui. A estrutura é a mesma: auxiliar no subjuntivo + particípio. Nos dois idiomas, o particípio não varia.',
+        tabela: [
+          { pessoa: 'yo', forma: 'haya llegado', exemplo: 'Dudo que yo haya llegado a tiempo.' },
+          { pessoa: 'tú', forma: 'hayas comido', exemplo: 'Espero que hayas comido bien.' },
+          { pessoa: 'él, ella, usted', forma: 'haya vivido', exemplo: 'No creo que haya vivido aquí.' },
+          { pessoa: 'nosotros, nosotras', forma: 'hayamos hecho', exemplo: 'Es una pena que no lo hayamos hecho.' },
+          { pessoa: 'vosotros, vosotras', forma: 'hayáis visto', exemplo: 'Me alegra que lo hayáis visto.' },
+          { pessoa: 'ellos, ellas, ustedes', forma: 'hayan salido', exemplo: 'Es posible que hayan salido.' },
+        ],
+        erros: [['Espero que has llegado bien.', 'Espero que hayas llegado bien.', 'Depois de «espero que», o auxiliar vai para o subjuntivo: «hayas».'], ['Espero que tengas llegado bien.', 'Espero que hayas llegado bien.', 'O auxiliar é «haber», não «tener».'], ['Dudo que haya escribido la carta.', 'Dudo que haya escrito la carta.', '«Escribir» tem particípio irregular: «escrito».'], ['Es posible que hayan salidos.', 'Es posible que hayan salido.', 'O particípio com «haber» não concorda.'], ['Es posible que hayais visto algo.', 'Es posible que hayáis visto algo.', 'A forma de «vosotros» leva acento: «hayáis».']],
+      }),
+      producao(5, 'Diga cinco frases com «espero que hayas…», «me alegra que hayas…» e «no creo que haya…» sobre uma pessoa que fez uma viagem e acabou de chegar.'),
+    ]),
+    sessao('S2', 'Presente ou perfecto: a ação já terminou?', [
+      revisao(4, 'Conjugue «haya hablado» nas seis pessoas e diga o particípio de ver, escribir, hacer, abrir e volver.'),
+      palavras(6, [
+        ['espero que hayas llegado bien', '', 'espero que você tenha chegado bem', ''], ['es una pena que no hayas venido', '', 'é uma pena que você não tenha vindo', ''], ['puede que se haya olvidado', '', 'pode ser que tenha esquecido', ''], ['no creo que haya llamado', '', 'não acho que tenha ligado', ''], ['me sorprende que no haya respondido', '', 'me surpreende que não tenha respondido', ''], ['ojalá haya dormido bien', '', 'tomara que tenha dormido bem', ''],
+      ]),
+      gramatica(12, 'Haya llegado ou llegue?', 'PASSO 1: a pergunta-chave é: a ação já terminou ou ainda vai acontecer (ou está acontecendo)? PASSO 2: se a ação está acontecendo agora, é habitual ou ainda vai acontecer, use o presente de subjuntivo: «Espero que llegues bien» (desejo para a viagem que vai fazer). PASSO 3: se a ação já terminou, use o pretérito perfecto de subjuntivo: «Espero que hayas llegado bien» (você já chegou). PASSO 4: o mesmo gatilho muda de sentido conforme o tempo: «Me alegra que vengas» (você vem) e «Me alegra que hayas venido» (você veio). PASSO 5: «dudo, no creo, es posible, puede que» também seguem a regra: «Dudo que venga» (futuro) e «Dudo que haya venido» (já aconteceu). PASSO 6: use o perfecto para qualquer fato terminado, seja de hoje ou de ontem, quando o gatilho está no presente: «No creo que lo haya dicho ayer». Na aula 46, você verá a outra possibilidade, com o imperfecto de subjuntivo. PASSO 7: com «ojalá», o perfecto serve para desejar algo que já aconteceu, mas que você não sabe: «Ojalá haya dormido bien». PASSO 8: expressões fixas úteis: «que yo sepa» (pelo que sei) e «que yo recuerde» (se bem me lembro).', {
+        tag: 'Subjuntivo',
+        comparacao: 'em português, as duas ideias são separadas pelo auxiliar: «espero que você chegue bem» (presente) e «espero que você tenha chegado bem» (perfeito). O espanhol faz a mesma separação: «llegues» × «hayas llegado». O erro mais comum do brasileiro é usar o presente de subjuntivo («llegues») para algo que já terminou; em espanhol, olhe para o tempo da ação e escolha «hayas llegado».',
+        tabela: [
+          { gatilho: 'Espero que…', presente: 'Espero que llegues bien. (vai chegar)', perfecto: 'Espero que hayas llegado bien. (já chegou)' },
+          { gatilho: 'Me alegra que…', presente: 'Me alegra que vengas. (você vem)', perfecto: 'Me alegra que hayas venido. (você veio)' },
+          { gatilho: 'No creo que…', presente: 'No creo que lo sepa. (agora)', perfecto: 'No creo que lo haya sabido. (antes)' },
+          { gatilho: 'Dudo que…', presente: 'Dudo que termine hoy. (futuro)', perfecto: 'Dudo que haya terminado. (já deveria)' },
+          { gatilho: 'Es una pena que…', presente: 'Es una pena que no puedas venir. (agora)', perfecto: 'Es una pena que no hayas podido venir. (já passou)' },
+        ],
+        erros: [['Espero que llegues bien. (a pessoa já chegou)', 'Espero que hayas llegado bien.', 'Se a ação terminou, o espanhol pede «haya llegado»; «llegues» olha para a viagem que ainda vai acontecer.'], ['No creo que lo ha hecho.', 'No creo que lo haya hecho.', 'O auxiliar precisa estar no subjuntivo: «haya».'], ['Me da pena que no puedes venir ayer.', 'Me da pena que no hayas podido venir ayer.', 'O fato já passou: use o perfecto de subjuntivo.'], ['Es una pena que no has venido.', 'Es una pena que no hayas venido.', 'Valoração pede subjuntivo; o auxiliar vai para «hayas».']],
+      }),
+      producao(8, 'Seu colega passou numa entrevista de emprego. Faça seis reações em voz alta: «Me alegra que hayas… Espero que hayas… Es una pena que no hayas… Dudo que hayan…»'),
+    ]),
+    sessao('S3', 'Cuando hayas terminado', [
+      revisao(4, 'Diga em voz alta a diferença entre «llegue» e «haya llegado» com duas frases cada. Use gatilhos de desejo ou dúvida.'),
+      palavras(5, [
+        ['cuando hayas terminado', '', 'quando você tiver terminado', ''], ['en cuanto haya llegado', '', 'assim que tiver chegado', ''], ['después de que hayan salido', '', 'depois que tiverem saído', ''], ['una vez que haya pagado', '', 'uma vez que tenha pagado', ''], ['tan pronto como hayas visto', '', 'assim que você tiver visto', ''],
+      ]),
+      gramatica(8, 'Orações de tempo com haya + particípio', 'PASSO 1: no futuro, as orações de tempo pedem subjuntivo (aula 44): «cuando llegues, llámame». PASSO 2: quando você quer dizer que a primeira ação TERMINA antes da segunda, use «haya» + particípio: «Llámame cuando hayas terminado» (quando você tiver terminado). PASSO 3: o português tem a mesma estrutura: «quando você tiver terminado», «assim que eu tiver chegado», «depois que eles tiverem saído». PASSO 4: as conjunções são as mesmas de antes: «cuando, en cuanto, tan pronto como, después de que, una vez que, hasta que». PASSO 5: a diferença de sentido é pequena. «Cuando termines, llámame» é natural e vale para «assim que terminar». «Cuando hayas terminado, llámame» deixa claro que a ação precisa estar concluída. PASSO 6: com «después de que» e «una vez que», o perfecto é muito comum: «Una vez que hayas pagado, recibirás el billete». PASSO 7: a oração principal fica no futuro, no imperativo ou no presente com valor de futuro. PASSO 8: erros típicos são o futuro do indicativo e o «he» + particípio depois de «cuando», que não funcionam nesse contexto.', {
+        tag: 'Subjuntivo',
+        comparacao: 'o português usa o futuro composto do subjuntivo: «quando você tiver terminado», «assim que eu tiver chegado». O espanhol usa o presente composto de subjuntivo: «cuando hayas terminado», «en cuanto haya llegado». A estrutura é idêntica, só muda o auxiliar («ter» → «haber»), e o tempo do auxiliar (futuro do subjuntivo no português, presente no espanhol).',
+        exemplos: [['Llámame cuando hayas terminado.', 'Ligue para mim quando tiver terminado.'], ['En cuanto haya llegado, te aviso.', 'Assim que eu tiver chegado, aviso você.'], ['Después de que hayan salido, cerramos.', 'Depois que eles tiverem saído, fechamos.'], ['Una vez que hayas pagado, recibirás el billete.', 'Uma vez que você tenha pagado, receberá a passagem.'], ['Tan pronto como hayas visto las fotos, dime algo.', 'Assim que você tiver visto as fotos, me diga algo.']],
+        erros: [['Cuando habrás terminado, llámame.', 'Cuando hayas terminado, llámame.', 'Depois de «cuando» com ideia de futuro, não se usa o futuro.'], ['En cuanto haya llegar, te aviso.', 'En cuanto haya llegado, te aviso.', 'Depois de «haya» vem o particípio.'], ['Cuando he terminado, llámame.', 'Cuando hayas terminado, llámame.', 'Aqui a ação ainda não aconteceu; o indicativo «he terminado» não serve.']],
+      }),
+      texto(8, 'Un mensaje después del partido / Uma mensagem depois da partida', 'Hola, Hugo: Espero que hayas llegado bien a casa. Me alegra que hayas podido venir al partido, aunque dudo que lo hayas disfrutado mucho, porque el equipo jugó fatal. Es una pena que no hayamos ganado, pero no creo que el entrenador haya cometido ningún error: simplemente, los otros jugaron mejor. Ayer me escribió Carlos. Dice que, cuando haya terminado los exámenes, nos invitará a cenar. Puede que se haya olvidado de la fecha del próximo partido, así que llámalo cuando hayas descansado un poco. Y en cuanto hayas visto las fotos que te envié, dime cuál te gusta más. Un abrazo, Daniel.', 'Oi, Hugo: Espero que você tenha chegado bem em casa. Fico contente que você tenha podido vir à partida, embora duvide que tenha aproveitado muito, porque o time jogou muito mal. É uma pena que não tenhamos ganhado, mas não acho que o técnico tenha cometido nenhum erro: simplesmente, os outros jogaram melhor. Ontem o Carlos me escreveu. Ele diz que, quando tiver terminado as provas, vai nos convidar para jantar. Pode ser que tenha esquecido a data da próxima partida, então ligue para ele quando tiver descansado um pouco. E assim que tiver visto as fotos que enviei, diga qual você mais gosta. Um abraço, Daniel.', [
+        ['¿Qué espera Daniel al principio?', 'Que Hugo haya llegado bien a casa.'], ['¿Qué lamenta Daniel?', 'Que el equipo no haya ganado.'], ['¿Qué dice Carlos?', 'Que, cuando haya terminado los exámenes, los invitará a cenar.'], ['¿Cuándo debe llamar Hugo a Carlos?', 'Cuando haya descansado un poco.'],
+      ]),
+      producao(5, 'Escreva uma mensagem de quatro frases a um amigo depois de um evento (uma festa, uma partida, uma aula). Use «espero que hayas…», «me alegra que hayas…» e «cuando hayas…».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 45', [
+      revisao(5, 'Diga em voz alta a diferença entre «llegues» e «hayas llegado» em duas frases. Depois dê dois exemplos de «cuando hayas…» e dois de «en cuanto haya…».'),
+      exercicios(20, [
+        ouvir('Espero que hayas llegado bien', ['Espero que hayas llegado bien', 'Espero que llegues bien', 'Espero que has llegado bien'], 'Espero que hayas llegado bien', '«Hayas llegado» indica que a chegada já aconteceu.'),
+        ouvir('No creo que lo haya visto', ['No creo que lo haya visto', 'No creo que lo he visto', 'No creo que lo vea'], 'No creo que lo haya visto', 'Ouça «haya» (subjuntivo) depois de «no creo que».'),
+        ouvir('Cuando hayas terminado, llámame', ['Cuando hayas terminado, llámame', 'Cuando termines, llámame', 'Cuando has terminado, llámame'], 'Cuando hayas terminado, llámame', '«Cuando» + futuro: «hayas terminado».'),
+        ditado('Me alegra que hayáis venido', 'Escreva: Me alegra que hayáis venido. «Hayáis» leva acento.'),
+        ditado('Es posible que haya perdido el tren', 'Escreva: Es posible que haya perdido el tren. Particípio de «perder»: «perdido».'),
+        mc('Como se forma o pretérito perfecto de subjuntivo?', ['haya (subjuntivo de haber) + particípio', 'había + particípio', 'tenga + particípio'], 'haya (subjuntivo de haber) + particípio', 'Presente de subjuntivo de «haber» + particípio.'),
+        mc('Qual frase diz que a pessoa JÁ chegou?', ['Espero que hayas llegado bien.', 'Espero que llegues bien.', 'Espero que llegaste bien.'], 'Espero que hayas llegado bien.', '«Hayas llegado» é a ação terminada; «llegues» olha para o futuro.'),
+        mc('Qual é a forma correta?', ['No creo que lo haya hecho.', 'No creo que lo ha hecho.', 'No creo que lo tenga hecho.'], 'No creo que lo haya hecho.', 'Depois de «no creo que», o auxiliar vai para o subjuntivo.'),
+        mc('«Cuando hayas terminado» equivale a…', ['quando você tiver terminado', 'quando você terminou', 'quando você termina'], 'quando você tiver terminado', 'É o futuro composto do subjuntivo do português.'),
+        mc('Em português «que tenha chegado» corresponde a…', ['que haya llegado', 'que tenga llegado', 'que había llegado'], 'que haya llegado', 'O auxiliar em espanhol é «haber».'),
+        mc('Qual frase está correta?', ['Es posible que hayan salido.', 'Es posible que hayan salidos.', 'Es posible que han salido.'], 'Es posible que hayan salido.', 'O particípio não concorda e o auxiliar fica no subjuntivo.'),
+        lacuna('Me alegra que tú ___ venido.', ['hayas', 'has', 'habías'], 'hayas', 'Emoção + perfecto de subjuntivo: «hayas».'),
+        lacuna('No creo que ellos ___ llegado todavía.', ['hayan', 'han', 'habrán'], 'hayan', 'Dúvida + perfecto de subjuntivo: «hayan».'),
+        lacuna('Es posible que Marta se ___ olvidado.', ['haya', 'ha', 'hay'], 'haya', '«Es posible que» + subjuntivo: «haya».'),
+        lacuna('Espero que vosotros ___ dormido bien.', ['hayáis', 'habéis', 'hayamos'], 'hayáis', 'Forma de «vosotros»: «hayáis».'),
+        lacuna('Cuando ___ terminado, llámame. (tú)', ['hayas', 'has', 'habrás'], 'hayas', 'Depois de «cuando» com ideia de futuro: «hayas terminado».'),
+        lacuna('En cuanto yo ___ llegado, te aviso.', ['haya', 'he', 'había'], 'haya', '«En cuanto» + futuro: subjuntivo.'),
+        lacuna('Dudo que él ___ escrito la carta.', ['haya', 'ha', 'hay'], 'haya', '«Dudar que» + perfecto de subjuntivo.'),
+        ordem('Ordene: «Espero que hayas dormido bien.»', ['Espero', 'que', 'hayas', 'dormido', 'bien.'], 'Espero que hayas dormido bien.', 'Desejo sobre algo que já aconteceu.'),
+        ordem('Ordene: «No creo que lo haya visto.»', ['No', 'creo', 'que', 'lo', 'haya', 'visto.'], 'No creo que lo haya visto.', 'O pronome vai antes de «haya».'),
+        ordem('Ordene: «Llámame cuando hayas terminado.»', ['Llámame', 'cuando', 'hayas', 'terminado.'], 'Llámame cuando hayas terminado.', '«Cuando» + «haya» + particípio.'),
+        livre('Escreva em espanhol: Espero que você tenha chegado bem.', 'Espero que hayas llegado bien.'),
+        livre('Escreva em espanhol: Não acho que ele tenha entendido.', 'No creo que haya entendido.'),
+      ]),
+      producao(5, 'Responda em voz alta: «¿Qué esperas que haya pasado en tu ciudad esta semana? ¿Qué dudas que haya cambiado?» Use ao menos três frases com subjuntivo perfecto.'),
+    ]),
+  ],
+});

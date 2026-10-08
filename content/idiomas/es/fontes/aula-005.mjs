@@ -1,0 +1,96 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 5, titulo: 'Artigos, gênero e plural, hay', nivel: 'a1',
+  objetivo: 'Usar «el, la, los, las, un, una, unos, unas», reconhecer o gênero dos substantivos (inclusive os que diferem do português), formar o plural, fazer a concordância com o adjetivo e dizer o que existe num lugar com «hay».',
+  nota: 'Você nomeia coisas e lugares com o artigo certo, usa o plural e diz o que há em um lugar. Próxima aula: o presente dos verbos em -er e -ir.',
+  sessoes: [
+    sessao('S1', 'Artigos e gênero', [
+      revisao(5, 'Diga a sua idade com «tener», conjugue «hablar» de memória e responda: «¿Dónde vives? ¿Qué estudias? ¿Por qué estudias español?»'),
+      palavras(8, [
+        ['el libro', 'el líbro', 'o livro', ''], ['la casa', 'la kása', 'a casa', ''], ['el coche', 'el kótche', 'o carro (Espanha)', ''], ['la mesa', 'la mésa', 'a mesa', ''],
+        ['el día', 'el día', 'o dia', ''], ['la mano', 'la máno', 'a mão', ''], ['el problema', 'el probléma', 'o problema', ''], ['la ciudad', 'la thiudád', 'a cidade', ''],
+      ]),
+      gramatica(12, 'El, la, un, una e o gênero dos substantivos', 'PASSO 1: todo substantivo espanhol é masculino ou feminino, e o artigo mostra qual. O artigo definido (o, a) é «el» para masculino e «la» para feminino: «el libro», «la casa». PASSO 2: o artigo indefinido (um, uma) é «un» e «una»: «un libro», «una casa». PASSO 3: regra prática: palavras em «-o» costumam ser masculinas e em «-a», femininas. Também são femininas as terminadas em «-ción», «-sión», «-dad», «-tud»: «la canción», «la ciudad», «la actitud». Quase sempre masculinas: as terminadas em «-aje» («el viaje») e em «-or» («el color»). PASSO 4: exceções muito comuns que valem decorar já: «el día», «el mapa», «el idioma», «el tema», «el problema» (masculinos em «-a»); «la mano», «la foto», «la moto» (femininas em «-o»; «foto» e «moto» são abreviações de «fotografía» e «motocicleta»). PASSO 5: muitas palavras que designam pessoas e terminam em «-ista» ou em «-e» (como «estudiante») têm uma só forma para os dois gêneros, e só o artigo muda: «el estudiante, la estudiante», «el turista, la turista». Mas há pares como «el jefe, la jefa» e «el dependiente, la dependienta». PASSO 6: cuidado, porque várias palavras mudam de gênero em relação ao português: «la leche» (o leite), «la sal» (o sal), «la sangre» (o sangue), «la nariz» (o nariz), «la sonrisa» (o sorriso), «la miel» (o mel), mas «el puente» (a ponte). PASSO 7: antes de substantivo feminino que começa com «a» tônica, usa-se «el» por som, e o substantivo continua feminino: «el agua», «el águila». O adjetivo fica no feminino: «el agua fría». No plural volta o «las»: «las aguas». PASSO 8: use o definido quando a pessoa já sabe de qual coisa se fala («el libro de Ana») e o indefinido quando a coisa aparece pela primeira vez ou é uma entre várias («Tengo un libro»). PASSO 9: com profissão, nacionalidade e religião depois de «ser», o artigo indefinido some: «Soy profesora», «Es español». Só aparece se houver adjetivo: «Es una profesora excelente».', {
+        tag: 'Artigos',
+        comparacao: 'em português também há «o, a, um, uma» e a regra «-o masculino, -a feminino» funciona quase igual. O perigo está nas palavras que mudam de gênero: dizemos «o leite», «o sal», «o sangue», «o nariz», e o espanhol diz «la leche», «la sal», «la sangre», «la nariz». Em contrapartida, «a ponte» é «el puente». Aprenda sempre a palavra com o artigo.',
+        tabela: [
+          { tipo: 'definido masculino', singular: 'el', plural: 'los', exemplo: 'el libro, los libros' },
+          { tipo: 'definido feminino', singular: 'la', plural: 'las', exemplo: 'la casa, las casas' },
+          { tipo: 'indefinido masculino', singular: 'un', plural: 'unos', exemplo: 'un coche, unos coches' },
+          { tipo: 'indefinido feminino', singular: 'una', plural: 'unas', exemplo: 'una mesa, unas mesas' },
+        ],
+        exemplos: [['La leche es blanca.', 'O leite é branco.'], ['El problema es difícil.', 'O problema é difícil.'], ['Tengo un coche y una moto.', 'Tenho um carro e uma moto.'], ['La ciudad es grande.', 'A cidade é grande.'], ['Marta es la estudiante de Madrid.', 'Marta é a estudante de Madri.'], ['El agua fría es buena.', 'A água fria é boa.']],
+        erros: [['La problema es difícil.', 'El problema es difícil.', '«Problema» termina em «-a», mas é masculino.'], ['El leche es blanca.', 'La leche es blanca.', '«Leche» é feminino em espanhol, ao contrário do português «o leite».'], ['El mano', 'La mano', '«Mano» termina em «-o», mas é feminino.'], ['Un mesa grande', 'Una mesa grande', 'O artigo concorda com o gênero do substantivo.'], ['Soy una profesora.', 'Soy profesora.', 'Com profissão depois de «ser», sem adjetivo, não se usa artigo.']],
+      }),
+      producao(5, 'Diga em voz alta seis frases do tipo «Tengo un libro / una casa…» e depois repita com o definido: «El libro es nuevo. La casa es grande.» Inclua «la leche» e «el problema».'),
+    ]),
+    sessao('S2', 'O plural e a concordância', [
+      revisao(4, 'Diga o artigo definido e o indefinido de seis palavras: libro, casa, mano, día, ciudad, leche.'),
+      palavras(6, [
+        ['los libros', 'los líbros', 'os livros', ''], ['las casas', 'las kásas', 'as casas', ''], ['los lápices', 'los lápithes', 'os lápis', ''], ['los países', 'los países', 'os países', ''],
+        ['las canciones', 'las kanthiónes', 'as canções', ''], ['los jóvenes', 'los hóbenes', 'os jovens', ''],
+      ]),
+      gramatica(12, 'Formar o plural e concordar o adjetivo', 'PASSO 1: se a palavra termina em vogal, acrescente «-s»: «casa → casas», «libro → libros», «madre → madres», «café → cafés». PASSO 2: se termina em consoante, acrescente «-es»: «ciudad → ciudades», «papel → papeles», «flor → flores», «reloj → relojes». PASSO 3: se termina em «-z», troque o «z» por «c» e acrescente «-es»: «lápiz → lápices», «vez → veces», «luz → luces». PASSO 4: o til acompanha a sílaba forte, que não pode mudar de lugar: «canción → canciones» (o til some), «joven → jóvenes» (o til aparece), «examen → exámenes». PASSO 5: palavras de uma sílaba ou terminadas em vogal tônica seguida de «s» recebem «-es»: «el país → los países», «el mes → los meses», «el autobús → los autobuses». Se a última sílaba não é tônica, a palavra não muda: «el lunes → los lunes», «la crisis → las crisis». PASSO 6: o masculino plural também designa grupos mistos: «los hermanos» são irmãos e irmãs, «los padres» são pai e mãe, «los niños» são crianças em geral. PASSO 7: o adjetivo concorda em gênero e número com o substantivo e costuma vir depois dele: «una casa blanca», «unos libros nuevos», «las ciudades grandes». Adjetivos em «-e» ou consoante têm uma só forma para os dois gêneros: «un coche grande», «una casa grande», «unas casas grandes». PASSO 8: duas contrações obrigatórias: «a + el = al» e «de + el = del»: «Hablo del libro», «Escucho al profesor». Com «él» (pronome) não há contração: «Hablo de él». PASSO 9: falsos amigos entre adjetivos: «largo» é comprido, e não largo; «ancho» é largo. «Una calle larga y ancha» é uma rua comprida e larga.', {
+        tag: 'Plural',
+        comparacao: 'o plural em espanhol é parecido com o do português, mas as terminações em «-l», «-n» e «-ão» diferem: «papel → papeles» (português: «papéis»), «joven → jóvenes» (português: «jovens»), «canción → canciones» (português: «canções»). E o «-z» vira «-ces»: «luz → luces», com «c», não «z». O adjetivo concorda e vem depois do substantivo, como na maioria das frases em português.',
+        tabela: [
+          { termina_em: 'vogal', regra: '+ s', exemplo: 'casa → casas' },
+          { termina_em: 'consoante', regra: '+ es', exemplo: 'ciudad → ciudades' },
+          { termina_em: '-z', regra: 'z vira c + es', exemplo: 'lápiz → lápices' },
+          { termina_em: '-ción, -sión', regra: 'perde o til + es', exemplo: 'canción → canciones' },
+          { termina_em: '-n com sílaba forte antes', regra: 'ganha til + es', exemplo: 'joven → jóvenes' },
+          { termina_em: '-s sem sílaba forte no fim', regra: 'não muda', exemplo: 'el lunes → los lunes' },
+        ],
+        exemplos: [['Los libros nuevos están aquí.', 'Os livros novos estão aqui.'], ['Las canciones españolas son bonitas.', 'As canções espanholas são bonitas.'], ['Mis amigos son jóvenes.', 'Meus amigos são jovens.'], ['Hablo del problema.', 'Falo do problema.'], ['Escucho al profesor.', 'Escuto o professor.'], ['Es una calle larga y ancha.', 'É uma rua comprida e larga.']],
+        erros: [['los lápizes', 'los lápices', 'O «z» vira «c» diante de «-es».'], ['las canciónes', 'las canciones', 'O til desaparece: a sílaba forte continua a mesma.'], ['los jovenes', 'los jóvenes', 'Surge uma sílaba a mais, e a sílaba forte precisa de til.'], ['Hablo de el problema.', 'Hablo del problema.', '«De + el» sempre se contrai em «del».'], ['una calle largo', 'una calle larga', 'O adjetivo concorda com o substantivo feminino.']],
+      }),
+      producao(8, 'Escreva e diga o plural de dez palavras: casa, libro, ciudad, canción, lápiz, país, joven, papel, mano, flor. Depois monte quatro frases com adjetivo: «Las casas son…» «Los libros son…»'),
+    ]),
+    sessao('S3', 'Hay: o que existe num lugar', [
+      revisao(4, 'Diga o plural de cinco palavras e coloque o artigo: «___ ciudades grandes, ___ lápices nuevos, ___ canciones bonitas».'),
+      palavras(5, [
+        ['hay', 'ái', 'há, tem, existe(m)', ''], ['no hay', 'no ái', 'não há, não tem', ''], ['¿Hay…?', 'ái', 'há…? tem…?', ''], ['el parque', 'el párke', 'o parque', ''], ['la plaza', 'la plátha', 'a praça', ''], ['la tienda', 'la tiénda', 'a loja', ''], ['el banco', 'el bánko', 'o banco', ''], ['la oficina', 'la ofithína', 'o escritório (não «oficina» de carros)', ''],
+      ]),
+      gramatica(8, 'Hay: há, tem', 'PASSO 1: «hay» diz que algo existe ou está presente num lugar. Traduz «há» e, na fala, o «tem» do português: «Hay un parque», «Hay dos bancos». PASSO 2: «hay» não muda: serve para singular e plural. Nunca existe «hayn». «Hay un libro» e «Hay tres libros». PASSO 3: depois de «hay», a coisa vem com artigo indefinido, número, «mucho/poco» ou sem artigo: «Hay unas tiendas», «Hay mucha gente». Não use «el, la, los, las» logo depois de «hay». PASSO 4: para negar, «no hay»: «No hay problema.» Para perguntar, «¿Hay un banco aquí?» e a resposta curta é «Sí, hay» ou «No, no hay». PASSO 5: para algo conhecido e determinado, o verbo é «estar» (aula 10): «El banco está en la plaza.» PASSO 6: «hay que + infinitivo» é «é preciso»: «Hay que estudiar». PASSO 7: falsos amigos de lugares: «oficina» é o escritório onde se trabalha, e não a oficina mecânica (que é «taller»). PASSO 8: pronuncie «hay» como «ái»: o «h» é mudo e o «y» final soa como «i».', {
+        tag: 'Hay',
+        comparacao: 'em português dizemos «tem um parque» na fala e «há um parque» na escrita. O espanhol usa só «hay» (e não «tiene») para existência. «Tiene» é o verbo «ter» de posse, e «Tiene un parque aquí», dito sobre um lugar, é o erro típico de quem pensa em português.',
+        tabela: [
+          { frase: 'Hay un parque.', quando: 'afirmação com singular', traducao: 'Há um parque.' },
+          { frase: 'Hay dos bancos.', quando: 'afirmação com plural', traducao: 'Há dois bancos.' },
+          { frase: 'No hay problema.', quando: 'negação', traducao: 'Não há problema.' },
+          { frase: '¿Hay una tienda aquí?', quando: 'pergunta', traducao: 'Há uma loja aqui?' },
+          { frase: 'Hay que estudiar.', quando: 'obrigação geral', traducao: 'É preciso estudar.' },
+        ],
+        exemplos: [['En mi calle hay una plaza y dos tiendas.', 'Na minha rua há uma praça e duas lojas.'], ['¿Hay un banco cerca?', 'Tem um banco perto?'], ['No hay oficinas en este edificio.', 'Não há escritórios neste edifício.'], ['Hay muchos coches en la ciudad.', 'Há muitos carros na cidade.']],
+        erros: [['Tiene un banco cerca.', 'Hay un banco cerca.', 'Para existência, usa-se «hay», não «tiene».'], ['Hayn dos tiendas.', 'Hay dos tiendas.', '«Hay» é invariável.'], ['Hay el banco en la plaza.', 'El banco está en la plaza.', 'Coisa determinada pede «estar», e «hay» pede indefinido.'], ['Trabajo en una oficina de coches.', 'Trabajo en un taller de coches.', '«Oficina» é escritório; a oficina mecânica é «taller».']],
+      }),
+      dialogo(8, '¿Qué hay en tu barrio? / O que há no seu bairro?', 'Lucía e Pablo falam do bairro onde Pablo vive.', [
+        ['Lucía', 'Pablo, ¿hay tiendas en tu barrio?', 'Pablo, há lojas no seu bairro?'], ['Pablo', 'Sí, hay muchas tiendas y un parque grande.', 'Sim, há muitas lojas e um parque grande.'],
+        ['Lucía', '¿Y hay un banco?', 'E há um banco?'], ['Pablo', 'Sí, hay dos bancos en la plaza.', 'Sim, há dois bancos na praça.'],
+        ['Lucía', '¿Hay una oficina de correos?', 'Há uma agência dos correios?'], ['Pablo', 'No, no hay. Hay una en el centro.', 'Não, não há. Há uma no centro.'],
+      ]),
+      producao(5, 'Descreva em voz alta o seu bairro com «hay»: duas coisas que há e duas que não há. Depois pergunte a um amigo: «¿Hay un parque en tu barrio?»'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 5', [
+      revisao(5, 'Diga cinco substantivos com artigo definido e indefinido, o plural de cada um e uma frase com «hay».'),
+      exercicios(20, [
+        ouvir('Hay dos bancos en la plaza', ['Hay dos bancos en la plaza', 'Hay un banco en la plaza', 'Hay dos tiendas en la plaza'], 'Hay dos bancos en la plaza', 'Ouça «dos bancos»: plural e número.'),
+        ouvir('Las canciones son bonitas', ['Las canciones son bonitas', 'La canción es bonita', 'Las casas son bonitas'], 'Las canciones son bonitas', 'Ouça o «las» e o «-nes» final.'),
+        ouvir('El problema es difícil', ['El problema es difícil', 'La problema es difícil', 'El problema es fácil'], 'El problema es difícil', 'Ouça «el problema»: masculino.'),
+        ditado('La leche es blanca', 'Escreva: La leche es blanca.'), ditado('No hay problema', 'Escreva: No hay problema.'), ditado('Los lápices son nuevos', 'Escreva: Los lápices son nuevos.'),
+        mc('Qual é o artigo de «problema»?', ['el', 'la', 'una'], 'el', 'Palavras gregas em «-ma» são masculinas: el problema, el tema.'),
+        mc('Qual é o plural de «lápiz»?', ['lápices', 'lápizes', 'lápiz'], 'lápices', 'O «z» vira «c» diante de «-es».'),
+        mc('Qual é o plural de «canción»?', ['canciones', 'canciónes', 'cancións'], 'canciones', 'O til some, porque a sílaba forte continua a mesma.'),
+        mc('Qual frase diz «Há muitas lojas»?', ['Hay muchas tiendas.', 'Hayn muchas tiendas.', 'Tiene muchas tiendas.'], 'Hay muchas tiendas.', '«Hay» é invariável e traduz a existência.'),
+        mc('Como se diz «o leite»?', ['la leche', 'el leche', 'las leche'], 'la leche', 'Leche é feminino.'),
+        mc('Qual significa «comprido»?', ['largo', 'ancho', 'grande'], 'largo', '«Largo» é comprido; «ancho» é largo.'),
+        lacuna('___ mano es grande. (a)', ['La', 'El', 'Un'], 'La', '«Mano» é feminino.'), lacuna('Hablo ___ profesor. (do)', ['del', 'de el', 'al'], 'del', 'De + el se contrai em «del».'), lacuna('Hay ___ parque aquí. (um)', ['un', 'una', 'el'], 'un', 'Depois de «hay», artigo indefinido; «parque» é masculino.'),
+        lacuna('Las casas son ___. (brancas)', ['blancas', 'blancos', 'blanca'], 'blancas', 'O adjetivo concorda com «casas»: feminino plural.'), lacuna('Los ___ son jóvenes. (amigos)', ['amigos', 'amigo', 'amigas'], 'amigos', 'O plural masculino cobre o grupo.'),
+        ordem('Ordene: «Hay una tienda en la plaza.»', ['Hay', 'una', 'tienda', 'en', 'la', 'plaza.'], 'Hay una tienda en la plaza.', 'Hay + indefinido + lugar.'), ordem('Ordene: «¿Hay un banco cerca?»', ['¿Hay', 'un', 'banco', 'cerca?'], '¿Hay un banco cerca?', 'A pergunta com hay mantém a ordem.'),
+        livre('Escreva em espanhol: Há duas lojas e um parque no meu bairro.', 'Hay dos tiendas y un parque en mi barrio.'),
+      ]),
+      producao(5, 'Descreva em voz alta uma cidade imaginária com dez frases: use «hay», artigos, plurais e adjetivos.'),
+    ]),
+  ],
+});

@@ -1,0 +1,105 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 47, titulo: 'Hipóteses com «si»', nivel: 'b1',
+  objetivo: 'Distinguir os três tipos de hipótese com «si»: condição possível (si + presente), hipótese improvável ou irreal agora (si + imperfecto de subjuntivo → condicional) e hipótese impossível no passado (si + pluscuamperfecto de subjuntivo → condicional compuesto), e dar conselhos com «yo en tu lugar».',
+  nota: 'Você usa o imperfecto de subjuntivo da aula 46 e o condicional (simples e composto) para imaginar o que seria, o que poderia ter sido e dar conselhos. Próxima aula: discurso indireto, para contar o que alguém disse.',
+  sessoes: [
+    sessao('S1', 'Si + imperfecto de subjuntivo: o que faria se…', [
+      revisao(5, 'Diga o imperfecto de subjuntivo de «tener», «ser», «poder» e «hacer» (yo). Depois diga o condicional de «viajar», «tener», «hacer» e «poder» (yo): viajaría, tendría, haría, podría.'),
+      palavras(8, [
+        ['ganar la lotería', '', 'ganhar na loteria', ''], ['mudarse de ciudad', '', 'mudar de cidade', ''], ['dejar el trabajo', '', 'largar o emprego', ''], ['dar la vuelta al mundo', '', 'dar a volta ao mundo', ''],
+        ['ahorrar', '', 'economizar', ''], ['aprender a tocar un instrumento', '', 'aprender a tocar um instrumento', ''], ['tener más tiempo libre', '', 'ter mais tempo livre', ''], ['abrir un negocio', '', 'abrir um negócio', ''],
+      ]),
+      gramatica(12, 'Si tuviera dinero, viajaría', 'PASSO 1: «si» (sem acento) é o nosso «se». Com ele você fala de condições, e o tempo do verbo mostra o quanto a condição é provável. PASSO 2: há três situações. (a) Condição possível: «Si tengo tiempo, voy» (aula 47, sessão 2). (b) Hipótese improvável ou irreal agora: «Si tuviera tiempo, iría». (c) Hipótese impossível no passado: «Si hubiera tenido tiempo, habría ido» (sessão 3). PASSO 3: nesta sessão veja a situação (b). A parte com «si» leva o imperfecto de subjuntivo (aula 46): «si tuviera», «si fuera», «si pudiera». PASSO 4: a outra parte leva o condicional simples: infinitivo + ía, ías, ía, íamos, íais, ían. «Viajaría, viajarías, viajaría, viajaríamos, viajaríais, viajarían.» PASSO 5: alguns condicionais são irregulares, e o radical é o mesmo do futuro: tendría, haría, diría, pondría, podría, querría, vendría, saldría, sabría, habría, valdría. PASSO 6: nunca ponha o condicional na parte do «si». Não se diz «si tendría dinero». Em algumas regiões isso se ouve na fala, mas a norma culta o evita. PASSO 7: a ordem das partes pode ser trocada: «Viajaría más si tuviera dinero» é igual a «Si tuviera dinero, viajaría más». Se a parte com «si» vier primeiro, use vírgula. PASSO 8: para dar conselho, use «Yo, en tu lugar, + condicional» ou «Si yo fuera tú, + condicional». «Si yo fuera tú, hablaría con él». Note que o verbo «ser» aparece aqui como «fuera», e não como «era».', {
+        tag: 'Hipóteses',
+        comparacao: 'o português tem a mesma estrutura: «Se eu tivesse dinheiro, viajaria». A correspondência é quase exata: «si tuviera» é «se eu tivesse», e «viajaría» é «viajaria». As armadilhas são duas. A primeira: em português, para uma condição possível, usamos o futuro do subjuntivo («Se eu tiver tempo, vou»), que não existe em espanhol: o espanhol usa o presente do indicativo («Si tengo tiempo, voy»). A segunda: «si» sem acento (se) não se confunde com «sí» (sim, ou o pronome «si mismo»).',
+        tabelas: [
+          { titulo: 'Condicional simples (infinitivo + terminações)', linhas: [
+            { pessoa: 'yo', viajar: 'viajaría', tener: 'tendría', hacer: 'haría' },
+            { pessoa: 'tú', viajar: 'viajarías', tener: 'tendrías', hacer: 'harías' },
+            { pessoa: 'él, ella, usted', viajar: 'viajaría', tener: 'tendría', hacer: 'haría' },
+            { pessoa: 'nosotros', viajar: 'viajaríamos', tener: 'tendríamos', hacer: 'haríamos' },
+            { pessoa: 'vosotros', viajar: 'viajaríais', tener: 'tendríais', hacer: 'haríais' },
+            { pessoa: 'ellos, ellas, ustedes', viajar: 'viajarían', tener: 'tendrían', hacer: 'harían' },
+          ] },
+          { titulo: 'Condicionais irregulares (mesmo radical do futuro)', linhas: [
+            { infinitivo: 'decir', condicional: 'diría' }, { infinitivo: 'poner', condicional: 'pondría' }, { infinitivo: 'poder', condicional: 'podría' }, { infinitivo: 'querer', condicional: 'querría' },
+            { infinitivo: 'venir', condicional: 'vendría' }, { infinitivo: 'salir', condicional: 'saldría' }, { infinitivo: 'saber', condicional: 'sabría' }, { infinitivo: 'haber', condicional: 'habría' },
+          ] },
+        ],
+        exemplos: [['Si ganara la lotería, dejaría el trabajo.', 'Se eu ganhasse na loteria, largaria o emprego.'], ['Si tuviéramos más tiempo, daríamos la vuelta al mundo.', 'Se tivéssemos mais tempo, daríamos a volta ao mundo.'], ['Si yo fuera tú, hablaría con ella.', 'Se eu fosse você, falaria com ela.'], ['Yo, en tu lugar, aceptaría el trabajo.', 'No seu lugar, eu aceitaria o emprego.']],
+        erros: [['Si tendría dinero, viajaría.', 'Si tuviera dinero, viajaría.', 'A parte com «si» leva imperfecto de subjuntivo, nunca condicional.'], ['Si tuviera dinero, viajo.', 'Si tuviera dinero, viajaría.', 'A outra parte leva condicional; o subjuntivo só vai na parte do «si».'], ['Si yo era tú, hablaría con él.', 'Si yo fuera tú, hablaría con él.', 'Para uma hipótese irreal, use «fuera», não «era».'], ['Si tengo dinero, viajaría. (para uma hipótese irreal)', 'Si tuviera dinero, viajaría.', 'O presente de «si» nomeia uma condição possível; para hipótese irreal, use o imperfecto de subjuntivo.']],
+      }),
+      producao(5, 'Diga em voz alta cinco coisas que você faria se ganhasse na loteria: «Si ganara la lotería, yo…». Depois diga o que você diria a um amigo que tem um problema: «Yo, en tu lugar…».'),
+    ]),
+    sessao('S2', 'Condições possíveis, conselhos e outros usos de «si»', [
+      revisao(4, 'Complete em voz alta: «Si tuviera tiempo, yo…», «Si viviera en España, yo…», «Si pudiera elegir, yo…».'),
+      palavras(6, [
+        ['si no', '', 'se não', ''], ['por si acaso', '', 'por via das dúvidas', ''], ['en tu lugar', '', 'no seu lugar', ''], ['de ser así', '', 'sendo assim', ''], ['en ese caso', '', 'nesse caso', ''], ['de lo contrario', '', 'caso contrário', ''],
+      ]),
+      gramatica(12, 'Si + presente, si no e outros usos', 'PASSO 1: para uma condição possível no presente ou no futuro, a parte com «si» leva o presente do indicativo, e a outra leva presente, futuro ou imperativo: «Si llueve, me quedo en casa», «Si llueve, me quedaré en casa», «Si llueve, quédate en casa». PASSO 2: nunca use o presente de subjuntivo nem o futuro depois de «si»: não se diz «si llueva» nem «si lloverá» (salvo o sentido de pergunta, como em «No sé si lloverá»). PASSO 3: «si no» é «se não»: «Si no estudias, no aprobarás». Escreve-se separado; «sino» (junto) é «mas sim» (aula 52). PASSO 4: o passado habitual usa o imperfecto de indicativo nas duas partes: «Si hacía frío, nos quedábamos en casa». Nesse uso, «si» equivale a «sempre que». PASSO 5: uma forma mais formal e curta usa «de» + infinitivo no lugar da parte com «si»: «De tener dinero, viajaría» é igual a «Si tuviera dinero, viajaría»; «De haberlo sabido, te habría avisado». Você vai encontrar esta forma em textos escritos. PASSO 6: «si» também introduz pergunta indireta (equivale a «se» no sentido de «whether»): «No sé si viene». Não leva subjuntivo. PASSO 7: «por si acaso» e «por si» + indicativo falam de precaução: «Llévate el paraguas por si llueve» (por via das dúvidas). PASSO 8: na cortesia, «si pudiera…» suaviza o pedido: «Si pudiera ayudarme con esto, se lo agradecería». Combine a parte do «si» com o condicional.', {
+        tag: 'Hipóteses',
+        comparacao: 'o português exige o futuro do subjuntivo na condição possível («se eu puder», «se chover»). O espanhol usa o presente do indicativo: «si puedo», «si llueve». Isto é o ponto de maior erro entre brasileiros: dizem «si pueda» ou «si llueva» por pensar na forma do português. Já a pergunta indireta com «si» funciona como em português: «não sei se vem» é «no sé si viene».',
+        tabela: [
+          { tipo: 'possível (presente ou futuro)', parte_si: 'presente do indicativo', outra_parte: 'presente, futuro ou imperativo', exemplo: 'Si estudias, aprobarás.' },
+          { tipo: 'improvável ou irreal agora', parte_si: 'imperfecto de subjuntivo', outra_parte: 'condicional', exemplo: 'Si estudiaras, aprobarías.' },
+          { tipo: 'habitual no passado', parte_si: 'imperfecto de indicativo', outra_parte: 'imperfecto de indicativo', exemplo: 'Si estudiaba, aprobaba.' },
+          { tipo: 'pergunta indireta', parte_si: 'indicativo', outra_parte: 'verbo de dizer, saber, perguntar', exemplo: 'No sé si estudia.' },
+        ],
+        exemplos: [['Si mañana hace sol, iremos a la playa.', 'Se amanhã fizer sol, iremos à praia.'], ['Si no me llamas, te llamo yo.', 'Se você não me ligar, eu ligo.'], ['Llévate un jersey por si hace frío.', 'Leve um casaco por via das dúvidas.'], ['Si pudiera pedirle un favor, se lo agradecería mucho.', 'Se eu pudesse lhe pedir um favor, agradeceria muito.']],
+        erros: [['Si tenga tiempo, te llamo.', 'Si tengo tiempo, te llamo.', 'Condição possível pede presente do indicativo, não subjuntivo.'], ['Si lloverá, me quedaré en casa.', 'Si llueve, me quedaré en casa.', 'Depois de «si» não se usa o futuro.'], ['Si me ayudarías, terminaría antes.', 'Si me ayudaras, terminaría antes.', 'Na parte do «si», o imperfecto de subjuntivo substitui o condicional.'], ['Sino estudias, no aprobarás.', 'Si no estudias, no aprobarás.', '«Si no» (se não) é escrito separado; «sino» é «mas sim».']],
+      }),
+      producao(8, 'Faça em voz alta três planos possíveis para a semana que vem: «Si hace buen tiempo, yo…», «Si no tengo trabajo, yo…». Depois dê um conselho a um colega que está cansado: «Si fuera tú, yo…».'),
+    ]),
+    sessao('S3', 'Si + pluscuamperfecto de subjuntivo: o que teria sido', [
+      revisao(4, 'Diga três frases com o condicional e o imperfecto de subjuntivo: «Si tuviera…, yo…». Depois diga o pretérito perfecto de «hacer», «decir» e «ver»: he hecho, he dicho, he visto.'),
+      palavras(5, [
+        ['arrepentirse de', '', 'arrepender-se de', ''], ['perder la oportunidad', '', 'perder a oportunidade', ''], ['tomar una decisión', '', 'tomar uma decisão', ''], ['aprovechar', '', 'aproveitar', ''], ['si lo hubiera sabido', '', 'se eu tivesse sabido', ''],
+      ]),
+      gramatica(8, 'Si hubiera estudiado, habría aprobado', 'PASSO 1: para falar do que não aconteceu no passado, você precisa de duas peças. PASSO 2: a primeira peça é o pluscuamperfecto de subjuntivo. Forma-se com o imperfecto de subjuntivo de «haber» (hubiera, hubieras, hubiera, hubiéramos, hubierais, hubieran) mais o particípio: «hubiera estudiado», «hubiera comido». A série em -se também existe: «hubiese estudiado». PASSO 3: a segunda peça é o condicional compuesto (aula 41): «habría» + particípio, como em «habría aprobado». PASSO 4: junte as duas: «Si hubiera estudiado, habría aprobado» (não estudei, não passei). Na fala, a parte principal também pode usar «hubiera» no lugar de «habría»: «Si hubiera estudiado, hubiera aprobado». Os dois são aceitos. PASSO 5: o particípio dos verbos irregulares é o mesmo que você usa no pretérito perfecto: hecho, dicho, puesto, visto, escrito, vuelto, abierto, roto, muerto, cubierto. PASSO 6: é possível misturar passado e presente: «Si hubiera aceptado ese trabajo, ahora viviría en Barcelona». A causa está no passado, o resultado no presente. PASSO 7: lamentos usam «ojalá» + pluscuamperfecto: «Ojalá hubiera estudiado más». E comparações irreais no passado usam «como si» + pluscuamperfecto: «Me miró como si no me hubiera visto nunca».', {
+        tag: 'Hipóteses',
+        comparacao: 'o português tem a mesma estrutura: «Se eu tivesse estudado, teria passado», com «tivesse estudado» (mais-que-perfeito do subjuntivo) e «teria passado» (futuro do pretérito composto). Troque «tivesse» por «hubiera» e «teria» por «habría». O cuidado é com o verbo auxiliar: em espanhol é «haber», e não «tener» (não se diz «si tuviera estudiado»).',
+        tabela: [
+          { pessoa: 'yo', pluscuamperfecto_subj: 'hubiera estudiado', condicional_compuesto: 'habría estudiado' },
+          { pessoa: 'tú', pluscuamperfecto_subj: 'hubieras estudiado', condicional_compuesto: 'habrías estudiado' },
+          { pessoa: 'él, ella, usted', pluscuamperfecto_subj: 'hubiera estudiado', condicional_compuesto: 'habría estudiado' },
+          { pessoa: 'nosotros', pluscuamperfecto_subj: 'hubiéramos estudiado', condicional_compuesto: 'habríamos estudiado' },
+          { pessoa: 'vosotros', pluscuamperfecto_subj: 'hubierais estudiado', condicional_compuesto: 'habríais estudiado' },
+          { pessoa: 'ellos, ellas, ustedes', pluscuamperfecto_subj: 'hubieran estudiado', condicional_compuesto: 'habrían estudiado' },
+        ],
+        exemplos: [['Si hubiera sabido la hora, habría llegado a tiempo.', 'Se eu tivesse sabido a hora, teria chegado a tempo.'], ['Si no hubiéramos perdido el tren, estaríamos ya en Sevilla.', 'Se não tivéssemos perdido o trem, já estaríamos em Sevilha.'], ['Ojalá hubieras venido a la fiesta.', 'Oxalá você tivesse vindo à festa.'], ['Si me lo hubieran dicho antes, habría cambiado de plan.', 'Se tivessem me dito antes, eu teria mudado de plano.']],
+        erros: [['Si habría estudiado, habría aprobado.', 'Si hubiera estudiado, habría aprobado.', 'Na parte do «si» usa-se o pluscuamperfecto de subjuntivo, nunca o condicional composto.'], ['Si había estudiado, habría aprobado.', 'Si hubiera estudiado, habría aprobado.', '«Había estudiado» é indicativo; hipótese pede «hubiera estudiado».'], ['Si hubiera estudiado, aprobaría ayer.', 'Si hubiera estudiado, habría aprobado ayer.', 'Para um resultado passado, o condicional deve ser composto.'], ['Si hubiera hacido, habría ido.', 'Si hubiera hecho, habría ido.', '«Hacer» tem o particípio irregular «hecho».']],
+      }),
+      texto(8, 'Otras decisiones / Outras decisões', 'A veces pienso en qué habría pasado si hubiera tomado otras decisiones. Si hubiera aceptado el trabajo de Barcelona, ahora viviría cerca del mar, pero probablemente no habría conocido a mi pareja. Si no hubiera dejado la música a los dieciocho años, tal vez tocaría en una orquesta. Mi hermana dice que, si yo hubiera estudiado derecho como querían mis padres, ahora ganaría más dinero. Puede ser, pero no sería tan feliz. Si pudiera cambiar una sola cosa, aprendería inglés antes. Si lo hubiera hecho de joven, hoy no tendría tanto miedo de hablar. Pero, si me quedo pensando en el pasado, no avanzo.', 'Às vezes penso no que teria acontecido se eu tivesse tomado outras decisões. Se eu tivesse aceitado o trabalho de Barcelona, agora viveria perto do mar, mas provavelmente não teria conhecido minha companheira. Se eu não tivesse largado a música aos dezoito anos, talvez tocasse em uma orquestra. Minha irmã diz que, se eu tivesse estudado direito como meus pais queriam, agora ganharia mais dinheiro. Pode ser, mas eu não seria tão feliz. Se eu pudesse mudar uma só coisa, aprenderia inglês antes. Se o tivesse feito quando jovem, hoje não teria tanto medo de falar. Mas, se eu ficar pensando no passado, não avanço.', [
+        ['¿Qué habría pasado si hubiera aceptado el trabajo de Barcelona?', 'Viviría cerca del mar, pero probablemente no habría conocido a su pareja.'], ['¿A qué edad dejó la música?', 'A los dieciocho años.'], ['¿Qué estudios querían sus padres?', 'Derecho.'], ['¿Qué cambiaría?', 'Aprendería inglés antes.'], ['¿Por qué dice que no avanza?', 'Porque se queda pensando en el pasado.'],
+      ]),
+      producao(5, 'Escreva e diga em voz alta cinco frases sobre decisões passadas: «Si hubiera… , habría…». Inclua uma mistura de passado e presente: «Si hubiera estudiado…, ahora…».'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 47', [
+      revisao(5, 'Diga uma frase de cada tipo: possível («Si tengo tiempo…»), irreal agora («Si tuviera tiempo…») e impossível no passado («Si hubiera tenido tiempo…»).'),
+      exercicios(20, [
+        ouvir('Si tuviera dinero, viajaría', ['Si tuviera dinero, viajaría', 'Si tengo dinero, viajaré', 'Si tendría dinero, viajaría'], 'Si tuviera dinero, viajaría', 'Ouça o par «tuviera» e «viajaría»: imperfecto de subjuntivo e condicional.'),
+        ouvir('Si hubiera estudiado, habría aprobado', ['Si hubiera estudiado, habría aprobado', 'Si estudio, aprobaré', 'Si estudiara, aprobaría'], 'Si hubiera estudiado, habría aprobado', 'Ouça «hubiera» e «habría»: duas formas de «haber» com particípio.'),
+        ouvir('Si llueve, me quedo en casa', ['Si llueve, me quedo en casa', 'Si lloviera, me quedaría en casa', 'Si hubiera llovido, me habría quedado en casa'], 'Si llueve, me quedo en casa', 'Presente do indicativo: condição possível.'),
+        ditado('Yo, en tu lugar, aceptaría el trabajo', 'Escreva: Yo, en tu lugar, aceptaría el trabajo.'),
+        ditado('Si yo fuera tú, hablaría con ella', 'Escreva: Si yo fuera tú, hablaría con ella.'),
+        ditado('Ojalá hubieras venido', 'Escreva: Ojalá hubieras venido.'),
+        mc('Qual é a frase para uma hipótese irreal agora?', ['Si tuviera tiempo, iría.', 'Si tengo tiempo, iré.', 'Si hubiera tenido tiempo, habría ido.'], 'Si tuviera tiempo, iría.', 'Irreal agora: imperfecto de subjuntivo e condicional.'),
+        mc('Qual é a frase para uma condição possível?', ['Si llueve, me quedo en casa.', 'Si lloviera, me quedo en casa.', 'Si lloverá, me quedo en casa.'], 'Si llueve, me quedo en casa.', 'Condição possível: presente do indicativo depois de «si».'),
+        mc('Qual é a frase para algo que não aconteceu no passado?', ['Si hubiera ido, habría visto el museo.', 'Si iba, vería el museo.', 'Si fuera, habría visto el museo.'], 'Si hubiera ido, habría visto el museo.', 'Passado irreal: pluscuamperfecto de subjuntivo e condicional compuesto.'),
+        mc('Como se diz «No seu lugar, eu aceitaria»?', ['Yo, en tu lugar, aceptaría.', 'Yo, en tu lugar, aceptaré.', 'Yo, en tu lugar, aceptaba.'], 'Yo, en tu lugar, aceptaría.', 'O conselho usa o condicional simples.'),
+        mc('Qual é o particípio de «hacer»?', ['hecho', 'hacido', 'haciendo'], 'hecho', '«Hacer» tem particípio irregular: hecho.'),
+        lacuna('Si ___ más tiempo, aprendería alemán. (tener)', ['tuviera', 'tendría', 'tengo'], 'tuviera', 'Na parte do «si», imperfecto de subjuntivo.'),
+        lacuna('Si tuviera dinero, ___ una casa. (comprar)', ['compraría', 'compraré', 'compro'], 'compraría', 'A outra parte leva condicional.'),
+        lacuna('Si no ___ el tren, habríamos llegado a tiempo. (perder)', ['hubiéramos perdido', 'perdemos', 'perdiéramos'], 'hubiéramos perdido', 'Passado irreal: pluscuamperfecto de subjuntivo.'),
+        lacuna('Si mañana ___ sol, iremos a la playa. (hacer)', ['hace', 'hiciera', 'haga'], 'hace', 'Condição possível: presente do indicativo.'),
+        lacuna('Ojalá ___ más tiempo ayer. (tener)', ['hubiera tenido', 'tuviera', 'tengo'], 'hubiera tenido', 'Lamento sobre o passado: pluscuamperfecto de subjuntivo.'),
+        ordem('Ordene: «Si tuviera dinero, viajaría.»', ['Si', 'tuviera', 'dinero,', 'viajaría.'], 'Si tuviera dinero, viajaría.', 'Primeiro a condição, depois o resultado.'),
+        ordem('Ordene: «Si hubiera sabido, habría venido.»', ['Si', 'hubiera', 'sabido,', 'habría', 'venido.'], 'Si hubiera sabido, habría venido.', 'Pluscuamperfecto de subjuntivo e condicional compuesto.'),
+        livre('Escreva em espanhol: Se eu tivesse mais tempo, estudaria espanhol todos os dias.', 'Si tuviera más tiempo, estudiaría español todos los días.'),
+      ]),
+      producao(5, 'Fale um minuto sobre uma decisão que você tomou e imagine como seria sua vida se tivesse feito outra: «Si hubiera… , ahora…».'),
+    ]),
+  ],
+});

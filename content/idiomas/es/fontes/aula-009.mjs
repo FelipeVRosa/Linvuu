@@ -1,0 +1,99 @@
+import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
+
+export default aula({
+  idioma: 'es', numero: 9, titulo: 'Horas, dias e meses', nivel: 'a1',
+  objetivo: 'Perguntar e dizer as horas, marcar um horário com «a las», dizer os dias da semana, os meses e a data, e falar de horários de abertura e de rotina com «de… a…» e «todos los días».',
+  nota: 'Você diz que horas são, quando algo acontece, que dia é hoje e a data. Próxima aula: «estar», onde as coisas estão e as preposições de lugar.',
+  sessoes: [
+    sessao('S1', 'Que horas são?', [
+      revisao(5, 'Peça duas coisas num café com «quisiera» e diga a conta: «Son… euros con…». Depois leia em voz alta: 34, 47, 68, 91, 100.'),
+      palavras(8, [
+        ['la hora', 'la óra', 'a hora', ''], ['el minuto', 'el minúto', 'o minuto', ''], ['el reloj', 'el rrelóh', 'o relógio', ''], ['en punto', 'en púnto', 'em ponto', ''],
+        ['y cuarto', 'i kuárto', 'e quinze (um quarto)', ''], ['y media', 'i média', 'e meia', ''], ['menos cuarto', 'ménos kuárto', 'quinze para (menos um quarto)', ''], ['a las…', 'a las', 'às… (para marcar o horário)', ''],
+      ]),
+      gramatica(12, 'Dizer as horas', 'PASSO 1: para perguntar a hora: «¿Qué hora es?» (a resposta tem o verbo «ser»). Para perguntar o horário de algo: «¿A qué hora…?». PASSO 2: é «uma hora» no singular: «Es la una.» Em todas as outras, plural: «Son las dos», «Son las tres», «Son las doce». O artigo «la / las» concorda com «hora», que fica subentendido. PASSO 3: até a meia hora, junte os minutos com «y»: «las tres y diez», «las cinco y veinte». Os quinze minutos são «y cuarto» e os trinta, «y media»: «las ocho y cuarto», «las ocho y media». PASSO 4: depois da meia hora, o espanhol conta os minutos que faltam para a hora seguinte, com «menos»: «las cuatro menos veinte» (3h40), «las diez menos cuarto» (9h45). Também se ouve dizer «las nueve y cuarenta y cinco», sobretudo em horários digitais. PASSO 5: «en punto» é em ponto: «Son las dos en punto.» PASSO 6: ao meio-dia, «Es mediodía»; à meia-noite, «Es medianoche». Os dois são singulares. PASSO 7: para marcar a hora de algo, use «a las» (ou «a la» para 1h): «La clase es a las nueve», «Como a la una». PASSO 8: de manhã, de tarde e de noite se dizem com «de la»: «las ocho de la mañana», «las tres de la tarde», «las diez de la noche». Quando não há hora, diga «por la mañana, por la tarde, por la noche». PASSO 9: as saudações seguem o dia: «buenos días» até o almoço, «buenas tardes» da hora do almoço até o escurecer e «buenas noches» à noite, para cumprimentar e para se despedir. PASSO 10: na Espanha, o almoço costuma ser mais tarde do que no Brasil, e o jantar também; isso varia por região e por país. Em horários de trem e ônibus, a Espanha usa o relógio de 24 horas: «las quince treinta» (15h30).', {
+        tag: 'Horas',
+        comparacao: 'em português dizemos «é uma hora» e «são duas horas», e o espanhol faz igual, mas sem a palavra «horas»: «Es la una», «Son las dos». A grande diferença é a segunda metade da hora: o brasileiro diz «quinze para as quatro», e o espanhol diz «las cuatro menos cuarto» (quatro menos um quarto). Usamos «às» no português («às nove») e «a las» no espanhol.',
+        tabela: [
+          { hora: '1:00', espanhol: 'Es la una.', observacao: 'singular' },
+          { hora: '2:00', espanhol: 'Son las dos.', observacao: 'plural' },
+          { hora: '3:10', espanhol: 'Son las tres y diez.', observacao: 'minutos com y' },
+          { hora: '4:15', espanhol: 'Son las cuatro y cuarto.', observacao: 'quinze minutos' },
+          { hora: '5:30', espanhol: 'Son las cinco y media.', observacao: 'meia hora' },
+          { hora: '6:40', espanhol: 'Son las siete menos veinte.', observacao: 'minutos que faltam' },
+          { hora: '7:45', espanhol: 'Son las ocho menos cuarto.', observacao: 'menos cuarto' },
+          { hora: '12:00', espanhol: 'Es mediodía. / Son las doce.', observacao: 'meio-dia' },
+        ],
+        exemplos: [['¿Qué hora es? — Son las nueve y media.', 'Que horas são? — São nove e meia.'], ['Es la una y cuarto.', 'É uma e quinze.'], ['La clase es a las diez menos cuarto.', 'A aula é às dez menos quinze.'], ['Son las ocho de la tarde.', 'São oito horas da noite (da tarde).'], ['¿A qué hora comes?', 'A que horas você almoça?']],
+        erros: [['Son la una.', 'Es la una.', 'Uma hora é singular.'], ['Es las dos.', 'Son las dos.', 'De duas em diante, o verbo vai ao plural.'], ['Son las dos horas.', 'Son las dos.', 'A palavra «horas» fica subentendida.'], ['Son las siete y cuarenta y cinco.', 'Son las ocho menos cuarto.', 'A forma digital existe, mas na fala o natural é «menos cuarto».'], ['Son las ocho en la mañana.', 'Son las ocho de la mañana.', 'Com hora exata, use «de la mañana».']],
+      }),
+      producao(5, 'Diga as horas do seu relógio em voz alta, de cinco maneiras: uma exata, uma «y cuarto», uma «y media», uma «menos cuarto» e uma «menos veinte».'),
+    ]),
+    sessao('S2', 'Dias da semana, meses e datas', [
+      revisao(4, 'Diga seis horas em voz alta (por exemplo, 2:15, 5:30, 6:45) e como marcar uma aula «a las» uma delas.'),
+      palavras(6, [
+        ['lunes', 'lúnes', 'segunda-feira', ''], ['martes', 'mártes', 'terça-feira', ''], ['miércoles', 'miérkoles', 'quarta-feira', ''], ['jueves', 'huébes', 'quinta-feira', ''], ['viernes', 'biérnes', 'sexta-feira', ''], ['sábado', 'sábado', 'sábado', ''], ['domingo', 'domíngo', 'domingo', ''],
+      ]),
+      gramatica(12, 'Os dias, os meses e a data', 'PASSO 1: os dias da semana são: lunes, martes, miércoles, jueves, viernes, sábado, domingo. Nos calendários da Espanha, a semana costuma começar na segunda-feira. PASSO 2: dias e meses se escrevem com minúscula, e todos são masculinos: «el lunes», «el sábado», «el domingo». PASSO 3: para dizer «na segunda» (um dia específico), diga «el lunes». Para dizer «às segundas» (todo dia assim), diga «los lunes». No plural, «lunes» a «viernes» não mudam («los lunes», «los martes»), e «sábado» e «domingo» ganham «-s» («los sábados», «los domingos»). PASSO 4: perguntas: «¿Qué día es hoy?» e «Hoy es martes». A data: «¿Qué fecha es hoy?» e «Hoy es 12 de octubre», sempre com «de» entre dia, mês e ano. PASSO 5: os meses: enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre. «Septiembre» também se escreve «setiembre». PASSO 6: a data usa números cardinais: «el 5 de mayo», «el 21 de junio». Só o dia 1 aceita o ordinal: «el primero de enero» ou «el uno de enero». PASSO 7: o ano se lê por inteiro: «dos mil veintiséis». PASSO 8: para o mês, use «en»: «en mayo», «en septiembre». Para um período, «de lunes a viernes», «de enero a marzo». PASSO 9: tempo: «hoy» (hoje), «mañana» (amanhã), «ayer» (ontem), «pasado mañana» (depois de amanhã). Cuidado: «mañana» também é «manhã»: «mañana por la mañana» é amanhã de manhã. PASSO 10: as estações: «la primavera», «el verano», «el otoño», «el invierno». No hemisfério sul, como na Argentina e no Chile, as estações ocorrem em meses opostos aos da Espanha. PASSO 11: «semana» e «fin de semana» são as palavras para semana e fim de semana: «el fin de semana», «la semana que viene».', {
+        tag: 'Calendário',
+        comparacao: 'o português escreve «segunda-feira», «terça-feira» e usa «às segundas». O espanhol é mais curto: «el lunes», «los lunes», sem «feira», e o dia leva artigo («el lunes trabajo»), exceto na resposta a «¿Qué día es hoy?»: «Hoy es lunes». As datas também são parecidas: «12 de outubro» é «12 de octubre». Um ponto de atenção é a ortografia, porque os meses e os dias se escrevem com minúscula, e o som «j» de «jueves» é o «h» áspero («huébes»).',
+        tabela: [
+          { tipo: 'um dia específico', frase: 'El lunes trabajo.', traducao: 'Na segunda trabalho.' },
+          { tipo: 'todo dia assim', frase: 'Los lunes trabajo.', traducao: 'Às segundas trabalho.' },
+          { tipo: 'pergunta do dia', frase: '¿Qué día es hoy? — Hoy es jueves.', traducao: 'Que dia é hoje? — Hoje é quinta.' },
+          { tipo: 'data', frase: 'Hoy es 5 de mayo.', traducao: 'Hoje é 5 de maio.' },
+          { tipo: 'mês', frase: 'En agosto viajo.', traducao: 'Em agosto viajo.' },
+          { tipo: 'período', frase: 'De lunes a viernes.', traducao: 'De segunda a sexta.' },
+        ],
+        exemplos: [['Mi cumpleaños es el 14 de noviembre.', 'Meu aniversário é 14 de novembro.'], ['Los sábados no trabajo.', 'Aos sábados não trabalho.'], ['La tienda abre de lunes a sábado.', 'A loja abre de segunda a sábado.'], ['Mañana es domingo.', 'Amanhã é domingo.'], ['Estudio español en octubre y noviembre.', 'Estudo espanhol em outubro e novembro.']],
+        erros: [['Lunes trabajo.', 'El lunes trabajo.', 'Dia específico leva o artigo «el».'], ['No trabajo en los miércoles.', 'No trabajo los miércoles.', 'Para dias habituais, use o artigo plural, sem «en».'], ['Hoy es Lunes.', 'Hoy es lunes.', 'Dias da semana se escrevem com minúscula.'], ['Hoy es 5 mayo.', 'Hoy es 5 de mayo.', 'A data leva «de» entre dia e mês.'], ['El quinto de enero', 'El cinco de enero', 'Só o dia 1 admite o ordinal («el primero»).'], ['En el mayo', 'En mayo', 'Meses não levam artigo depois de «en».']],
+      }),
+      producao(8, 'Responda em voz alta: «¿Qué día es hoy? ¿Qué fecha es hoy? ¿Cuándo es tu cumpleaños? ¿Dónde estudias los sábados?» (use verbos já vistos). Diga também o mês e o dia do seu aniversário.'),
+    ]),
+    sessao('S3', 'Horários de abertura e rotina', [
+      revisao(4, 'Diga os sete dias e os doze meses em ordem, sem pausa. Depois diga a data de hoje por extenso.'),
+      palavras(5, [
+        ['el horario', 'el orário', 'o horário', ''], ['abre, cierra', 'ábre, thiérra', 'abre, fecha', ''], ['la biblioteca', 'la bibliotéka', 'a biblioteca', ''], ['la librería', 'la libreríia', 'a livraria; não é «biblioteca»', ''], ['todos los días', 'tódos los días', 'todos os dias', ''],
+      ]),
+      gramatica(8, 'De… a…, abre e cierra, todos los días', 'PASSO 1: para um período de horas, o espanhol usa «de… a…» (com a hora): «de nueve a cinco», «de lunes a viernes». «Desde… hasta…» faz o mesmo, mais enfático: «desde las nueve hasta las cinco». PASSO 2: lojas e bibliotecas «abren» e «cierran»: «La tienda abre a las diez y cierra a las ocho». «Cerrar» (fechar) segue o padrão de «querer»: «cierro, cierras, cierra, cerramos, cerráis, cierran». PASSO 3: frequência: «todos los días» (todo dia), «todas las noches», «cada día», «los lunes», «a veces», «nunca». PASSO 4: «temprano» é cedo e «tarde» é tarde (e também a tarde): «Llego tarde.» PASSO 5: não troque as duas palavras: «biblioteca» é o local onde se pegam livros emprestados; a loja que vende livros é a «librería» (como em português, «livraria»). PASSO 6: «¿A qué hora abre…?» e «¿Hasta qué hora está abierto?» são as perguntas centrais para horários. PASSO 7: os horários de comércio variam de cidade para cidade e de país para país, e alguns negócios fecham ao meio-dia; confira antes de ir. PASSO 8: use «cerrado» (fechado) e «abierto» (aberto) como adjetivos: «La biblioteca está abierta». O verbo «estar» virá na aula 10.', {
+        tag: 'Horários',
+        comparacao: 'em português dizemos «das nove às cinco» e «de segunda a sexta». O espanhol usa «de nueve a cinco» e «de lunes a viernes», sem artigo antes das horas na primeira forma. O português também separa «livraria» e «biblioteca». O espanhol faz o mesmo, e a loja que vende livros é a «librería», não a «biblioteca».',
+        tabela: [
+          { frase: 'de nueve a cinco', uso: 'período de horas', traducao: 'das nove às cinco' },
+          { frase: 'de lunes a viernes', uso: 'período de dias', traducao: 'de segunda a sexta' },
+          { frase: 'Abre a las diez.', uso: 'quando abre', traducao: 'Abre às dez.' },
+          { frase: 'Cierra a las ocho.', uso: 'quando fecha', traducao: 'Fecha às oito.' },
+          { frase: 'todos los días', uso: 'frequência', traducao: 'todos os dias' },
+        ],
+        erros: [['La biblioteca vende libros.', 'La librería vende libros.', 'A loja é a «librería»; a «biblioteca» empresta.'], ['La tienda cierro a las ocho.', 'La tienda cierra a las ocho.', 'O verbo concorda com o sujeito: «la tienda» pede a terceira pessoa, «cierra».'], ['La tienda abre desde lunes a viernes.', 'La tienda abre de lunes a viernes.', 'Use «de… a…» ou «desde… hasta…», sem misturar.'], ['Todos días', 'Todos los días', 'Falta o artigo «los».']],
+      }),
+      dialogo(8, '¿A qué hora abre? / A que horas abre?', 'Carmen liga para a biblioteca e fala com um funcionário.', [
+        ['Carmen', 'Buenos días. ¿A qué hora abre la biblioteca?', 'Bom dia. A que horas abre a biblioteca?'], ['El empleado', 'Abre a las nueve de la mañana, señora.', 'Abre às nove da manhã, senhora.'],
+        ['Carmen', '¿Y hasta qué hora está abierta?', 'E até que horas fica aberta?'], ['El empleado', 'Cierra a las ocho de la tarde, de lunes a viernes.', 'Fecha às oito da noite, de segunda a sexta.'],
+        ['Carmen', '¿Y los sábados?', 'E aos sábados?'], ['El empleado', 'Los sábados abre de diez a dos. Los domingos está cerrada.', 'Aos sábados abre das dez às duas. Aos domingos está fechada.'],
+        ['Carmen', 'Muchas gracias. Hasta el sábado.', 'Muito obrigada. Até sábado.'],
+      ]),
+      producao(5, 'Descreva em voz alta o horário de uma loja ou da sua rotina: «Abre… Cierra… Los sábados… Todos los días…» Use três horas e dois dias.'),
+    ]),
+    sessao('S4', 'Revisão e prática da aula 9', [
+      revisao(5, 'Diga a hora do seu relógio, o dia de hoje e a data. Depois diga a que horas você faz três coisas durante o dia.'),
+      exercicios(20, [
+        ouvir('Son las tres y media', ['Son las tres y media', 'Son las tres y cuarto', 'Son las cuatro y media'], 'Son las tres y media', 'Ouça a hora «tres» e «y media».'),
+        ouvir('Es la una menos cuarto', ['Es la una menos cuarto', 'Es la una y cuarto', 'Son las doce y cuarto'], 'Es la una menos cuarto', 'Ouça «menos cuarto»: faltam quinze para a hora.'),
+        ouvir('La tienda abre los sábados', ['La tienda abre los sábados', 'La tienda cierra los sábados', 'La tienda abre los domingos'], 'La tienda abre los sábados', 'Ouça «abre» e «sábados».'),
+        ditado('Hoy es 12 de octubre', 'Escreva: Hoy es 12 de octubre.'), ditado('Son las ocho de la tarde', 'Escreva: Son las ocho de la tarde.'), ditado('Cierra a las ocho', 'Escreva: Cierra a las ocho.'),
+        mc('Como se diz «É uma hora»?', ['Es la una.', 'Son la una.', 'Son las una.'], 'Es la una.', 'Singular: «es la una».'),
+        mc('Como se diz 4:45?', ['las cinco menos cuarto', 'las cuatro menos cuarto', 'las cuatro y media'], 'las cinco menos cuarto', 'Faltam quinze para as cinco.'),
+        mc('Qual é a data correta?', ['5 de mayo', '5 mayo', 'quinto de mayo'], '5 de mayo', 'Dia + de + mês.'),
+        mc('Como se diz «às segundas»?', ['los lunes', 'el lunes', 'lunes'], 'los lunes', 'Hábito: artigo plural.'),
+        mc('Onde se compram livros?', ['en la librería', 'en la biblioteca', 'en la oficina'], 'en la librería', '«Librería» vende; «biblioteca» empresta.'),
+        mc('Como se diz «amanhã de manhã»?', ['mañana por la mañana', 'mañana en la mañana', 'mañana a la mañana'], 'mañana por la mañana', '«Por la mañana» sem hora exata.'),
+        lacuna('La clase es ___ las nueve. (às)', ['a', 'en', 'de'], 'a', 'Horário com «a las».'), lacuna('La tienda abre de lunes ___ viernes. (a)', ['a', 'hasta', 'de'], 'a', '«De… a…» para dias.'), lacuna('Hoy es ___. (terça)', ['martes', 'Martes', 'el martes'], 'martes', 'Dia da semana em minúscula e sem artigo na resposta.'),
+        lacuna('Son las ocho ___ la noche.', ['de', 'en', 'por'], 'de', 'Hora exata com «de la noche».'), lacuna('La biblioteca ___ a las ocho. (fecha)', ['cierra', 'cerra', 'cierro'], 'cierra', '«Cerrar» tem «ie» em «ella».'),
+        ordem('Ordene: «La tienda abre a las diez.»', ['La', 'tienda', 'abre', 'a', 'las', 'diez.'], 'La tienda abre a las diez.', 'Sujeito, verbo e horário.'), ordem('Ordene: «¿Qué hora es?»', ['¿Qué', 'hora', 'es?'], '¿Qué hora es?', 'Pergunta fixa da hora.'),
+        livre('Escreva em espanhol: Hoje é sexta-feira, 3 de abril. São duas e meia.', 'Hoy es viernes, 3 de abril. Son las dos y media.'),
+      ]),
+      producao(5, 'Descreva, em voz alta, a sua semana: o que faz às segundas, às quartas e aos sábados, e a que horas. Use pelo menos três horas.'),
+    ]),
+  ],
+});

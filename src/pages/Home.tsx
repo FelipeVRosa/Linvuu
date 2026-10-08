@@ -173,6 +173,17 @@ export default function Home() {
         </section>
       )}
 
+      <section className="lv-sec" id="portugues" aria-labelledby="h-pt-est">
+        <p className="lv-kicker lv-kicker-esc">Português para estrangeiros · Portuguese for foreigners</p>
+        <h2 id="h-pt-est">Português como língua estrangeira <em lang="en">Portuguese as a Foreign Language</em></h2>
+        <p className="lv-sec-sub" lang="pt-BR">Para quem não fala português: o curso de português do Brasil do A1 ao B1, com aulas explicadas em inglês.</p>
+        <p className="lv-sec-sub" lang="en">For people who do not speak Portuguese yet: Brazilian Portuguese from A1 to B1, with every lesson explained in English.</p>
+        <div className="lv-hero-botoes">
+          <Link to="/portugues" className="btn btn-primary">Conhecer o curso · About the course</Link>
+          <Link to="/curso/br/dia/1" className="btn btn-ghost">Start lesson 1 free</Link>
+        </div>
+      </section>
+
       <section className="lv-sec lv-sec-papel" id="faq" aria-labelledby="h-faq">
         <p className="lv-kicker lv-kicker-esc">{t.faq.kicker}</p>
         <h2 id="h-faq">{t.faq.titulo}</h2>

@@ -6,6 +6,7 @@ import { Sessao } from '../components/Sessao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { Paywall } from '../components/Paywall';
 import { useAssinatura } from '../lib/assinatura';
+import { textos } from '../lib/textos';
 import { gratis } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
 
@@ -18,6 +19,7 @@ const CAMADAS: { k: 'comeceAqui' | 'imersao' | 'pratica'; t: string; d: string }
 export default function Dia() {
   const { id, n } = useParams();
   const curso = getCurso(id);
+  const T = textos(curso?.id);
   const dia = Number(n);
   const total = statusDoCurso(curso?.id ?? '')?.total ?? 120;
   const valido = !!curso && curso.area === 'idiomas' && Number.isInteger(dia) && dia >= 1 && dia <= total;
@@ -40,24 +42,24 @@ export default function Dia() {
 
   return (
     <div className="pagina">
-      <Navegacao pai={`/curso/${curso!.id}`} trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos', para: '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `Dia ${dia}` }]} />
+      <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: T.inicio, para: '/' }, { rotulo: T.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `${T.sessao} ${dia}` }]} />
 
-      {bloqueado && !decidindo && <Paywall curso={curso!.nome} indisponivel={ass.indisponivel} />}
-      {erro && <p className="vazio">Não foi possível carregar esta aula. Recarregue a página.</p>}
-      {!aula && !erro && !bloqueado && <p className="resultado" role="status">Carregando…</p>}
+      {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome} indisponivel={ass.indisponivel} />}
+      {erro && <p className="vazio">{T.semAula}</p>}
+      {!aula && !erro && !bloqueado && <p className="resultado" role="status">{T.carregando}</p>}
 
       {aula && (
         <>
           <header>
             <span className="kicker-pagina">
-              {aula.aula ? `Aula ${aula.aula.numero} · sessão ${aula.sessao?.sessao.replace('S', '')} de ${aula.aula.sessoes} · ${aula.sessao?.duracaoMin} min` : `Dia ${dia} de ${total} · ${fase?.titulo} · ${NIVEL_LABEL[aula.nivel]}`}
+              {aula.aula ? T.kickerAula(aula.aula.numero, aula.sessao?.sessao.replace('S', '') ?? '', aula.aula.sessoes, aula.sessao?.duracaoMin ?? 30) : `Dia ${dia} de ${total} · ${fase?.titulo} · ${NIVEL_LABEL[aula.nivel]}`}
             </span>
             <h1 className="pagina-h1">{aula.titulo}</h1>
-            <p className="lead">{aula.aula ? `Objetivo da aula: ${aula.aula.objetivo}` : `Ao final do dia: ${aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}`}</p>
+            <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : `Ao final do dia: ${aula.objetivo.charAt(0).toLowerCase() + aula.objetivo.slice(1)}`}</p>
             <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>
           </header>
 
-          {aula.status !== 'publicada' && (
+          {aula.status !== 'publicada' && curso!.id !== 'br' && (
             <p className="nota">
               {aula.sessao
                 ? 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão e a voz nativa está em gravação (por enquanto o áudio usa a voz do seu navegador).'
@@ -80,10 +82,10 @@ export default function Dia() {
             </div>
           )}
 
-          <nav className="dia-nav" aria-label="Navegar entre dias">
-            {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>← Dia {dia - 1}</Link> : <span />}
-            <Link to={`/curso/${curso!.id}`}>Ver a trilha</Link>
-            {dia < total ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>Dia {dia + 1} →</Link> : <span />}
+          <nav className="dia-nav" aria-label={T.navDias}>
+            {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>{T.anterior(dia - 1)}</Link> : <span />}
+            <Link to={`/curso/${curso!.id}`}>{T.verTrilha}</Link>
+            {dia < total ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>{T.seguinte(dia + 1)}</Link> : <span />}
           </nav>
         </>
       )}

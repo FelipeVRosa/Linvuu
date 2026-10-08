@@ -16,4 +16,5 @@ export const LIVROS: Livro[] = [
   livro('fr', 'Francês'),
   livro('it', 'Italiano'),
   livro('ru', 'Russo'),
+  { ...livro('br', 'Português para estrangeiros'), link: '/portugues' },
 ];

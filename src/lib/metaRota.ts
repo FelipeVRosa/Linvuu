@@ -24,6 +24,8 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   if (p === '/') return { status: 200, caminho: '/' };
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
     '/cursos': { titulo: 'Cursos' },
+    '/portugues': { titulo: 'Português como língua estrangeira · Portuguese as a Foreign Language', descricao: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. Brazilian Portuguese for English speakers, A1 to B1, 62 lessons.' },
+    '/brazilian-portuguese': { titulo: 'Brazilian Portuguese for English speakers · Português como língua estrangeira', descricao: 'Learn Brazilian Portuguese from A1 to B1 in 62 lessons explained in English. Curso de português do Brasil para estrangeiros.' },
     '/entrar': { titulo: 'Entrar', semIndice: true },
     '/cadastro': { titulo: 'Cadastre-se', semIndice: true },
     '/assinatura': { titulo: 'Assinatura', semIndice: true },
@@ -32,7 +34,11 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
   };
   if (fixas[p]) return { status: 200, caminho: p, ...fixas[p] };
   if (!d) return { status: 200, caminho: p }; // sem dados: entrega a página padrão, sem inventar nada
-  let m = p.match(/^\/curso\/([^/]+)$/);
+  let m = p.match(/^\/curso\/br$/);
+  if (m) return { status: 200, caminho: p, titulo: 'Brazilian Portuguese for English speakers: A1 to B1', descricao: 'Brazilian Portuguese in 62 lessons explained in English, with audio, dialogues, grammar and exercises. Português do Brasil para estrangeiros.' };
+  m = p.match(/^\/curso\/br\/dia\/(\d+)$/);
+  if (m && d) { const n = Number(m[1]); const total = d.indice.br?.total ?? 0; if (n < 1 || n > total) return naoEncontrada(p); const g = d.indice.br.grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]); return { status: 200, caminho: p, titulo: g ? `Lesson ${g.aula}: ${g.titulo} · Brazilian Portuguese` : `Session ${n} · Brazilian Portuguese`, descricao: g ? `Brazilian Portuguese, lesson ${g.aula} (${g.titulo}), session ${n} of ${total}: explained in English, with audio and exercises.` : `Brazilian Portuguese, session ${n} of ${total}.` }; }
+  m = p.match(/^\/curso\/([^/]+)$/);
   if (m) {
     const c = d.cursos.find((x) => x.id === m![1]);
     if (!c) return naoEncontrada(p);

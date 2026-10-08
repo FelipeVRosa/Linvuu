@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Bloco, Exercicio, Palavra, ROTULO_BLOCO, SessaoAula } from '../lib/aulas';
+import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
 import { falar, falarLista, parar, temVoz } from '../lib/audio';
+import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 
 /** O site explica em português. O campo `en` (e, no futuro, `es`) fica nos dados e só aparece quando houver o seletor de idioma de explicação. */
@@ -9,7 +10,8 @@ const MOSTRAR_INGLES = false;
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
 const ROTULO_COLUNA: Record<string, string> = { termina_em: 'Termina em', forca_na: 'Força na', masc_sg: 'Masculino singular', fem_sg: 'Feminino singular', masc_pl: 'Masculino plural', fem_pl: 'Feminino plural', yo: 'yo', el_ella_usted: 'él / ella / usted', nosotros: 'nosotros', vosotros: 'vosotros', ellos_ustedes: 'ellos / ellas / ustedes', usa_se: 'Usa-se', infinito: 'Infinito', italiano: 'Em italiano', traducao: 'Tradução', quando: 'Quando', equivale: 'Em português', construcao: 'Construção', observacao: 'Observação', singolare: 'Singular', grafia: 'Grafia', interrogativo: 'Interrogativo', lui_lei: 'lui / lei', cor: 'Cor', se_clausola: 'Cláusula com «se»', consequencia: 'Consequência', precisa: 'Você precisa', use: 'Use', parece: 'Parece', significa: 'Significa', masculino_plural: 'Masculino plural', feminino_plural: 'Feminino plural', positivo: 'Positivo', prep_cui: 'Preposição + cui', ordinal: 'Ordinal', termo: 'Termo', contexto: 'Contexto', recurso: 'Recurso', festa: 'Festa', estrategia: 'Estratégia', passato_prossimo: 'Passato prossimo', com_pronome: 'Com pronome', forca: 'Força', duas_frases: 'Duas frases', com_che: 'Com «che»', suposicao: 'Suposição', original: 'Original', relato: 'Relato', attiva: 'Voz ativa', resposta_igual: 'Resposta (também)', resposta_oposta: 'Resposta (nem)', momento: 'Momento', principal: 'Principal', simultaneo: 'Ao mesmo tempo', anterior: 'Antes', lei: 'Lei (cortesia)', tu: 'tu', parlare: 'parlare', vendere: 'vendere', dormire: 'dormire', finire: 'finire', partire: 'partire', prendere: 'prendere', credere: 'credere', scrivere: 'scrivere', alzarsi: 'alzarsi', divertirsi: 'divertirsi', pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', auxiliar: 'Auxiliar', participio: 'Particípio passado', padrao: 'Padrão', modal: 'Modal', sentido: 'Sentido', wo: 'Wo? (onde: dativo)', wohin: 'Wohin? (para onde: acusativo)', zu: 'zu (até)', frase: 'Frase', alemao: 'Em alemão', informal: 'Informal', oficial: 'Oficial (24 h)', artigo: 'Artigo', definido: 'Definido', indefinido: 'Indefinido', negativo: 'Negativo', pos1: '1ª posição', pos2: '2ª posição (verbo)', resto: 'Resto', masc_neutro: 'Masculino e neutro', fem_plural: 'Feminino e plural', combinacao: 'Combinação', som: 'Som', resposta: 'Resposta', haben: 'haben', sein: 'sein', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino', como: 'Como', erro: 'Erro comum', formal: 'Formal', afirmativa: 'Afirmativa', negativa: 'Negativa', estrutura: 'Estrutura', expressao: 'Expressão', possuidor: 'Possuidor', escrita: 'Escrita', conta: 'Conta', fala: 'Como se diz', partitivo: 'Partitivo', quantidade: 'Quantidade', meio: 'Meio', tonico: 'Pronome tônico', objeto: 'Objeto', pessoa: 'Pessoa', vouloir: 'vouloir (querer)', pouvoir: 'pouvoir (poder)', devoir: 'devoir (dever)', savoir: 'savoir (saber)', nota: 'Nota', motivo: 'Motivo', formula: 'Fórmula', base: 'Base', parler: 'parler', finir: 'finir', etre: 'être', aller: 'aller', imparfait: 'Imparfait', pc: 'Passé composé', tempo: 'Tempo', parte: 'Parte', presente: 'Presente', com_pronomes: 'Com pronomes', fato: 'Fato', definicao: 'Definição', quem: 'Quem fala', pedido: 'Pedido', problema: 'Problema', operacao: 'Operação', fase: 'Fase', etapa: 'Etapa', negacao: 'Negação', registro: 'Tipo', conector: 'Conector', acao: 'Ação', prep: 'Preposição', costume: 'Costume', gatilho: 'Gatilho', modo: 'Modo', conjuncao: 'Conjunção', secao: 'Seção', valor: 'Valor', gerondio: 'Gérondif', ativa: 'Voz ativa', passiva: 'Voz passiva', direto: 'Discurso direto', indireto: 'Discurso indireto', connaitre: 'connaître', voir: 'voir', croire: 'croire', mettre: 'mettre' };
 
-function Audio({ texto, idioma, rotulo = 'Ouvir' }: { texto: string; idioma: string; rotulo?: string }) {
+function Audio({ texto, idioma, rotulo }: { texto: string; idioma: string; rotulo?: string }) {
+  rotulo = rotulo ?? textos(idioma).ouvir;
   return (
     <button type="button" className="som" aria-label={`${rotulo}: ${texto}`} onClick={() => falar(texto, idioma)}>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" /><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" /></svg>
@@ -18,13 +20,14 @@ function Audio({ texto, idioma, rotulo = 'Ouvir' }: { texto: string; idioma: str
 }
 
 function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
+  const T = textos(idioma);
   const unicos = useMemo(() => itens.filter((p, i) => itens.findIndex((q) => norm(q.ru) === norm(p.ru)) === i), [itens]);
   return (
     <ul className="palavras">
       {unicos.map((p) => (
         <li key={p.ru}>
           <div><strong lang={idioma} className="ru">{p.ru}</strong><span className="translit">{p.translit}</span></div>
-          <div className="trad">{p.pt}{MOSTRAR_INGLES && p.en && <small> · {p.en}</small>}{p.ainda && <span className="ainda" title={`Tem letras que você ainda vai aprender (${p.ainda.join(', ')}). Por enquanto, ouça e repita.`}>ouça e repita</span>}</div>
+          <div className="trad">{p.pt}{MOSTRAR_INGLES && p.en && <small> · {p.en}</small>}{p.ainda && <span className="ainda" title={`Tem letras que você ainda vai aprender (${p.ainda.join(', ')}). Por enquanto, ouça e repita.`}>{T.ainda}</span>}</div>
           <Audio texto={p.audio ?? p.ru} idioma={idioma} />
         </li>
       ))}
@@ -45,6 +48,7 @@ export function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
 }
 
 function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
+  const T = textos(idioma);
   const [i, setI] = useState(0);
   const [escolha, setEscolha] = useState<string | null>(null);
   const [ordem, setOrdem] = useState<number[]>([]);
@@ -106,9 +110,9 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     const erros = corrigiveis.filter((x) => acertos[x.id] === false);
     return (
       <div className="ex-resumo">
-        <h3>Você acertou {certos} de {corrigiveis.length}</h3>
-        {erros.length > 0 && <ul>{erros.map((x) => <li key={x.id}><strong>{x.enunciado}</strong> Resposta: <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
-        <button type="button" className="btn btn-ghost" onClick={recomecar}>Refazer os exercícios</button>
+        <h3>{T.acertou(certos, corrigiveis.length)}</h3>
+        {erros.length > 0 && <ul>{erros.map((x) => <li key={x.id}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
+        <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
       </div>
     );
   }
@@ -117,9 +121,9 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     <div className="exercicio">
       <span className="ex-n">Exercício {i + 1} de {itens.length}</span>
       <p className="ex-enunciado">{ex.enunciado}</p>
-      {ex.audio && <div className="ex-audio"><Audio texto={ex.audio} idioma={idioma} /> <span>Toque para ouvir</span></div>}
+      {ex.audio && <div className="ex-audio"><Audio texto={ex.audio} idioma={idioma} /> <span>{T.tocarOuvir}</span></div>}
       {comOpcoes && (
-        <div className="ex-opcoes" role="radiogroup" aria-label="Opções">
+        <div className="ex-opcoes" role="radiogroup" aria-label={T.opcoes}>
           {ex.opcoes!.map((o) => (
             <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}</button>
           ))}
@@ -128,29 +132,29 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       )}
       {ex.tipo === 'sentence-ordering' && (
         <>
-          <div className="ex-montada" aria-live="polite" lang={idioma}>{ordem.length ? ordem.map((k) => ex.opcoes![k]).join(' ') : <em>Toque nas peças abaixo</em>}</div>
+          <div className="ex-montada" aria-live="polite" lang={idioma}>{ordem.length ? ordem.map((k) => ex.opcoes![k]).join(' ') : <em>{T.pecas}</em>}</div>
           <div className="ex-opcoes">
             {ex.opcoes!.map((o, k) => <button key={k} type="button" className="ex-op" disabled={ordem.includes(k) || res !== null} onClick={() => setOrdem([...ordem, k])} lang={idioma}>{o}</button>)}
-            <button type="button" className="link" disabled={res !== null || !ordem.length} onClick={() => setOrdem([])}>Limpar</button>
+            <button type="button" className="link" disabled={res !== null || !ordem.length} onClick={() => setOrdem([])}>{T.limpar}</button>
           </div>
         </>
       )}
       {!comOpcoes && ex.tipo !== 'sentence-ordering' && (
         ex.tipo === 'producao'
-          ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder="Escreva aqui (só você vê)" lang={idioma} />
-          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? 'Escreva em cirílico' : 'Escreva aqui'} lang={idioma} />
+          ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
+          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? 'Escreva em cirílico' : T.escreva} lang={idioma} />
       )}
       {res && (
         <div className={`ex-feedback ${res}`} role="status">
-          {res === 'ok' && <strong>Certo.</strong>}
-          {res === 'erro' && <strong>Não foi dessa vez. Resposta: <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
-          {res === 'livre' && <strong>Compare com um exemplo: <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
+          {res === 'ok' && <strong>{T.certo}</strong>}
+          {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
+          {res === 'livre' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
           {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
         </div>
       )}
       <div className="ex-acoes">
-        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? 'Ver exemplo' : 'Verificar'}</button>
-          : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? 'Ver resultado' : 'Próximo'}</button>}
+        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : T.verificar}</button>
+          : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
       </div>
     </div>
   );
@@ -158,7 +162,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
 
 /** Explicações em «PASSO 1: … PASSO 2: …» viram uma lista numerada; as demais ficam como parágrafo. */
 function Explicacao({ texto }: { texto: string }) {
-  const partes = texto.split(/\s*PASSO \d+:\s*/);
+  const partes = texto.split(/\s*(?:PASSO|STEP) \d+:\s*/);
   if (partes.length < 3) return <p>{texto}</p>;
   const intro = partes[0].trim();
   return (
@@ -170,17 +174,18 @@ function Explicacao({ texto }: { texto: string }) {
 }
 
 export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string }) {
+  const T = textos(idioma);
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
       <Explicacao texto={b.explicacao} />
-      {b.comparacao && <p className="callout comparacao"><strong>Em português:</strong> {b.comparacao}</p>}
+      {b.comparacao && <p className="callout comparacao"><strong>{T.emPortugues}</strong> {b.comparacao}</p>}
       {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}
       {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
       {b.erros && (
         <div className="erros">
-          <h4 className="bloco-sub">Erros comuns</h4>
+          <h4 className="bloco-sub">{T.erros}</h4>
           <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo}</span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
@@ -189,15 +194,16 @@ export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica'
 }
 
 function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
+  const T = textos(idioma);
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
   switch (b.tipo) {
     case 'intro': return <p className="callout">{b.texto}</p>;
-    case 'revisao': return <p className="callout callout-tarefa"><strong>Revisão.</strong> {b.enunciado}</p>;
+    case 'revisao': return <p className="callout callout-tarefa"><strong>{T.revisao}</strong> {b.enunciado}</p>;
     case 'producao': return (
       <div className="callout callout-tarefa">
-        <p><strong>Agora é com você.</strong> {b.enunciado}</p>
-        {b.exemplo && <><button type="button" className="link" onClick={() => setExemplo((v) => !v)}>{exemplo ? 'Esconder exemplo' : 'Ver exemplo'}</button>{exemplo && <p lang={idioma} className="ru">{b.exemplo}</p>}</>}
+        <p><strong>{T.suaVez}</strong> {b.enunciado}</p>
+        {b.exemplo && <><button type="button" className="link" onClick={() => setExemplo((v) => !v)}>{exemplo ? T.esconder : T.verExemplo}</button>{exemplo && <p lang={idioma} className="ru">{b.exemplo}</p>}</>}
       </div>
     );
     case 'alfabeto': return (
@@ -221,9 +227,9 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
         <h3 className="bloco-sub">{b.titulo}</h3>
         {b.contexto && <p className="contexto">{b.contexto}</p>}
         <div className="dialogo-barra">
-          <button type="button" className="btn btn-ghost" onClick={() => falarLista(b.linhas.map((l) => l.audio ?? l.ru), idioma)}>Ouvir o diálogo todo</button>
-          <button type="button" className="link" onClick={parar}>Parar</button>
-          <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> Mostrar tradução</label>
+          <button type="button" className="btn btn-ghost" onClick={() => falarLista(b.linhas.map((l) => l.audio ?? l.ru), idioma)}>{T.ouvirDialogo}</button>
+          <button type="button" className="link" onClick={parar}>{T.parar}</button>
+          <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> {T.mostrarTrad}</label>
         </div>
         <ul className="dialogo">{b.linhas.map((l, i) => (
           <li key={i}><span className="quem">{l.personagem}</span><div><span lang={idioma} className="ru">{l.ru}</span>{trad && <small className="trad">{l.pt}</small>}</div><Audio texto={l.audio ?? l.ru} idioma={idioma} /></li>
@@ -235,11 +241,11 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
         <h3 className="bloco-sub">{b.titulo}</h3>
         <p lang={idioma} className="ru texto-ru">{b.ru}</p>
         <div className="dialogo-barra">
-          <Audio texto={b.ru} idioma={idioma} rotulo="Ouvir o texto" />
-          <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> Mostrar tradução</label>
+          <Audio texto={b.ru} idioma={idioma} rotulo={T.ouvirTexto} />
+          <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> {T.mostrarTrad}</label>
         </div>
         {trad && <p className="trad">{b.pt}</p>}
-        <h4 className="bloco-sub">Perguntas</h4>
+        <h4 className="bloco-sub">{T.perguntas}</h4>
         {b.perguntas.map((p) => <details key={p.pergunta} className="pergunta"><summary lang={idioma}>{p.pergunta}</summary><p lang={idioma}>{p.resposta}</p></details>)}
       </section>
     );
@@ -249,6 +255,7 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
 }
 
 export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string; nomeIdioma?: string }) {
+  const T = textos(idioma);
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
@@ -267,25 +274,25 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
 
   return (
     <div className="sessao">
-      {voz === false && <p className="nota">Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</p>}
-      {provisorio && <p className="nota nota-audio" role="status">Áudio provisório: este trecho usa a voz do seu navegador. A gravação chega em breve.</p>}
-      <ol className="passos" aria-label="Blocos da sessão">
+      {voz === false && <p className="nota">{idioma === 'br' ? `Your browser has no Portuguese voice installed, so the audio buttons may be silent. Install a Brazilian Portuguese voice in your device settings.` : <>Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</>}</p>}
+      {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
+      <ol className="passos" aria-label={T.blocosSessao}>
         {sessao.blocos.map((x, k) => (
-          <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {ROTULO_BLOCO[x.tipo]}</button></li>
+          <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {T.rotuloBloco[x.tipo]}</button></li>
         ))}
       </ol>
       <div className="bloco">
-        <div className="bloco-topo"><h2>{ROTULO_BLOCO[b.tipo]}</h2><span>Bloco {idx + 1} de {total} · ~{b.min} min</span></div>
+        <div className="bloco-topo"><h2>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
         <Conteudo key={idx} b={b} idioma={idioma} />
       </div>
       <div className="sessao-nav">
-        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>Voltar</button>
+        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>
         {idx < total - 1
-          ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>Continuar</button>
-          : <button type="button" className="btn btn-primary" onClick={() => setCompleta(true)}>{completa ? 'Sessão concluída' : 'Concluir sessão'}</button>}
+          ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
+          : <button type="button" className="btn btn-primary" onClick={() => setCompleta(true)}>{completa ? T.concluida : T.concluir}</button>}
       </div>
       {completa && idx === total - 1 && (
-        <p className="concluida" role="status">Sessão concluída neste navegador. {proximo && <Link to={proximo}>Ir para a próxima sessão →</Link>}</p>
+        <p className="concluida" role="status">{T.concluidaNav} {proximo && <Link to={proximo}>{T.proxSessao}</Link>}</p>
       )}
     </div>
   );

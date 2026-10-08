@@ -45,6 +45,7 @@ export function aula({ idioma, numero, titulo, nivel, objetivo, sessoes, nota, s
   let n = 0;
   for (const s of sessoes) for (const b of s.blocos) if (b.tipo === 'exercicios') b.itens.forEach((i) => { i.id = `${idioma}-${p}-e${String(++n).padStart(2, '0')}`; });
   if (idioma === 'ru') for (const se of sessoes) for (const b of se.blocos) if (b.tipo === 'exercicios') b.itens.forEach((i) => { if (i.enunciado === 'Ouça e escreva.') i.enunciado = 'Ouça e escreva em cirílico.'; });
+  if (idioma === 'br') for (const se of sessoes) for (const b of se.blocos) if (b.tipo === 'exercicios') b.itens.forEach((i) => { if (i.enunciado === 'Ouça e escolha.') i.enunciado = 'Listen and choose.'; if (i.enunciado === 'Ouça e escreva.') i.enunciado = 'Listen and write.'; });
   const total = sessoes.reduce((x, s) => x + s.duracaoMin, 0);
   const avisos = sessoes.filter((s) => s.duracaoMin !== 30).map((s) => `${s.sessao}: ${s.duracaoMin} min`);
   if (avisos.length) console.warn(`aviso aula ${numero}: sessões fora de 30 min (${avisos.join(', ')})`);

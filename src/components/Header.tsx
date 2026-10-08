@@ -35,6 +35,7 @@ export function Header() {
           <Link to="/cursos">Cursos</Link>
           <Link to="/gramatica/en">Gramática</Link>
           <Link to="/#metodo">Método</Link>
+          <Link to="/assinatura">Preço</Link>
           <Link to="/#faq">Dúvidas</Link>
         </nav>
 
@@ -74,6 +75,7 @@ export function Header() {
           <Link to="/cursos">Todos os cursos</Link>
           <Link to="/gramatica/en">Gramática</Link>
           <Link to="/#metodo">Método</Link>
+          <Link to="/assinatura">Preço e assinatura</Link>
           <Link to="/#faq">Dúvidas</Link>
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>Sair ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">

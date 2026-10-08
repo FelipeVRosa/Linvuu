@@ -3,7 +3,7 @@ import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { EMAIL_OFICIAL } from '../config/site';
 
-const ATUALIZADO = '5 de outubro de 2026';
+const ATUALIZADO = '8 de outubro de 2026';
 
 function Privacidade() {
   return (
@@ -17,18 +17,19 @@ function Privacidade() {
           <li><strong>Conta:</strong> nome, e-mail e senha. A senha é guardada pelo serviço de autenticação do Google (Firebase Authentication); a Linvuu não tem acesso a ela em texto.</li>
           <li><strong>Progresso:</strong> pontos (XP), sequência de estudo e aulas concluídas, guardados na sua conta. Parte do progresso também fica salva no seu navegador.</li>
           <li><strong>Newsletter:</strong> o e-mail que você informar, somente se você marcar a caixa de consentimento.</li>
+          <li><strong>Pagamento:</strong> se você assinar, os dados do cartão são digitados direto no Stripe, que processa o pagamento. A Linvuu não vê nem guarda o número do cartão; guardamos apenas o vínculo entre a sua conta e a assinatura (identificador do cliente no Stripe) e o status dela.</li>
           <li><strong>Dados técnicos:</strong> registros do servidor (como endereço IP e tipo de navegador), necessários para o site funcionar e se manter seguro.</li>
         </ul>
         <p>Hoje o site <strong>não usa cookies de publicidade nem ferramentas de análise de visitas</strong>. Se isso mudar, esta página será atualizada antes e pediremos o seu consentimento.</p>
         <h2>Para que usamos</h2>
         <ul>
-          <li>Criar e manter a sua conta e salvar o seu progresso (execução do serviço que você pediu).</li>
+          <li>Criar e manter a sua conta, salvar o seu progresso e processar a sua assinatura (execução do serviço que você pediu).</li>
           <li>Enviar novidades da Linvuu (consentimento; você pode cancelar a qualquer momento).</li>
           <li>Proteger o site contra abuso e corrigir falhas (legítimo interesse).</li>
         </ul>
         <h2>Com quem compartilhamos</h2>
-        <p>Usamos fornecedores para operar o site: Google (Firebase: autenticação e banco de dados) e o provedor de hospedagem do site (Render). Eles tratam os dados em nosso nome. Não vendemos os seus dados.</p>
-        <p>O áudio das aulas, por enquanto, usa a voz do seu próprio navegador. Esse processamento depende do seu aparelho e do seu navegador.</p>
+        <p>Usamos fornecedores para operar o site: Google (Firebase: autenticação e banco de dados), Stripe (pagamentos) e o provedor de hospedagem do site (Render). Eles tratam os dados em nosso nome. Não vendemos os seus dados.</p>
+        <p>O áudio das aulas vem de arquivos de voz sintética guardados no próprio site; onde ainda não há arquivo, usa-se a voz do seu navegador, que depende do seu aparelho.</p>
         <h2>Por quanto tempo guardamos</h2>
         <p>Enquanto a sua conta existir ou até você pedir a exclusão. Dados de newsletter ficam até você cancelar.</p>
         <h2>Os seus direitos</h2>

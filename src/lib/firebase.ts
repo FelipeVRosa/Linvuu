@@ -72,8 +72,12 @@ const ERROS: Record<string, string> = {
   'auth/network-request-failed': 'Sem conexão. Verifique a internet e tente de novo.',
   'auth/unauthorized-domain': 'Este endereço ainda não foi autorizado para login.',
   'auth/operation-not-allowed': 'Este tipo de login ainda não foi ativado.',
+  'auth/admin-restricted-operation': 'O cadastro por e-mail está desativado neste momento.',
+  'auth/password-does-not-meet-requirements': 'A senha não atende às regras de segurança. Use letras maiúsculas e minúsculas, número e símbolo.',
+  'auth/configuration-not-found': 'O login por e-mail ainda não foi configurado.',
 };
 export const mensagemDeErro = (e: unknown) => {
   const code = (e as { code?: string })?.code ?? '';
-  return ERROS[code] ?? 'Não foi possível concluir. Tente de novo em instantes.';
+  if (!ERROS[code]) console.warn('[linvuu] erro de login:', code || e);
+  return ERROS[code] ?? `Não foi possível concluir. Tente de novo em instantes.${code ? ` (código: ${code})` : ''}`;
 };

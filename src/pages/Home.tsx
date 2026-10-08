@@ -42,32 +42,6 @@ const FOTOS = [
   { src: '/fotos/pratica.jpg', alt: 'Homem escrevendo em um caderno' },
 ];
 
-// Exercício sem cadastro: a mesma pergunta em cada idioma. A voz usa a gravação, se existir, ou a do navegador.
-const EXERCICIO: Record<string, string> = { en: 'Where is the station?', ru: 'Где вокзал?', de: 'Wo ist der Bahnhof?', fr: 'Où est la gare ?', it: 'Dov’è la stazione?', es: '¿Dónde está la estación?' };
-const OPCOES = ['Onde fica a estação?', 'Quanto custa isto?', 'Que horas são?'];
-
-function Experimente({ lang }: { lang: string }) {
-  const [esc, setEsc] = useState<string | null>(null);
-  const [tocando, setTocando] = useState(false);
-  const frase = EXERCICIO[lang];
-  const ouvir = async () => { setTocando(true); try { await falar(frase, lang); } finally { setTocando(false); } };
-  const certo = esc === OPCOES[0];
-  return (
-    <div className="lv-exp-box">
-      <h3>O que ela disse?</h3>
-      <button type="button" className="lv-ouvir" onClick={ouvir} aria-label="Ouvir a frase">{tocando ? 'Tocando…' : 'Ouvir a frase'}</button>
-      <div className="lv-exp-opc">
-        {OPCOES.map((o) => (
-          <button key={o} type="button" disabled={certo} className={esc === o ? (o === OPCOES[0] ? 'certo' : 'errado') : ''} onClick={() => setEsc(o)}>{o}</button>
-        ))}
-      </div>
-      <p className="lv-exp-msg" aria-live="polite">
-        {esc === null ? '' : certo ? `Isso mesmo: “${frase}” é “Onde fica a estação?”. Na aula 1 você começa assim, ouvindo antes de ler.` : 'Ainda não. Ouça de novo com calma e tente outra vez.'}
-      </p>
-    </div>
-  );
-}
-
 const NIVEIS = [
   { cod: 'A1', nome: 'Do zero', texto: 'Se apresentar, pedir o que precisa e entender frases do dia a dia.', valor: 0.34, sem: 3 },
   { cod: 'A2', nome: 'Dia a dia', texto: 'Falar de rotina, compras, passado e planos, em frases simples.', valor: 0.67, sem: 11 },
@@ -142,19 +116,6 @@ export default function Home() {
         <p className="lv-sec-sub">{t.explorar.idiomasTexto}</p>
         <div className="lv-grade">{CURSOS_ATIVOS.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
       </section>
-
-      {lang && EXERCICIO[lang] && (
-        <section className="lv-sec lv-sec-papel" aria-labelledby="h-exp">
-          <div className="lv-exp">
-            <div>
-              <p className="lv-kicker lv-kicker-esc">Experimente agora</p>
-              <h2 id="h-exp">Ouça uma frase e escolha o que ela quer dizer.</h2>
-              <p className="lv-sec-sub">Sem cadastro. Você pode ouvir quantas vezes quiser; errar faz parte.</p>
-            </div>
-            <Experimente key={lang} lang={lang} />
-          </div>
-        </section>
-      )}
 
       <section className="lv-sec" aria-labelledby="h-niveis">
         <p className="lv-kicker lv-kicker-esc">Níveis</p>

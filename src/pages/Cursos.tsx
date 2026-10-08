@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { CURSOS_ATIVOS as CURSOS } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
@@ -33,6 +33,7 @@ export default function Cursos() {
           <input id="q" type="search" value={q} placeholder="Ex.: russo, francês" onChange={(e) => set('q', e.target.value)} />
         </div>
       </div>
+      <p className="nota"><Link to="/portugues">Português para estrangeiros · Portuguese as a Foreign Language →</Link></p>
       <p className="resultado" aria-live="polite">{lista.length} {lista.length === 1 ? 'curso' : 'cursos'}</p>
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => <CursoCard key={c.id} curso={c} />)}</div>

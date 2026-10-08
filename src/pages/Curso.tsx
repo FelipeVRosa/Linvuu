@@ -6,13 +6,15 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL } from '../config/site';
 import NaoEncontrada from './NaoEncontrada';
+import CursoBr from './CursoBr';
 
 export default function Curso() {
   const { id } = useParams();
   const [params] = useSearchParams();
   const curso = getCurso(id);
-  usePageTitle(curso ? `${curso.nome}: curso de ${curso.nome.toLowerCase()} do zero` : undefined, curso?.descricao);
+  usePageTitle(curso && curso.id !== 'br' ? `${curso.nome}: curso de ${curso.nome.toLowerCase()} do zero` : undefined, curso?.descricao);
   if (!curso) return <NaoEncontrada />;
+  if (curso.id === 'br') return <CursoBr />;
 
   const stats = statusDoCurso(curso.id);
   const nivel = params.get('nivel');

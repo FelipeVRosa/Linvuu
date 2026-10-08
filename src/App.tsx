@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import Home from './pages/Home';
 import Cursos from './pages/Cursos';
 import Curso from './pages/Curso';
+import Portugues from './pages/Portugues';
 import Dia from './pages/Dia';
 import Conta from './pages/Conta';
 import Assinatura from './pages/Assinatura';
@@ -37,6 +38,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
+          <Route path="/portugues" element={<Portugues />} />
+          <Route path="/brazilian-portuguese" element={<Portugues />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
           <Route path="/entrar" element={<Conta modo="entrar" />} />

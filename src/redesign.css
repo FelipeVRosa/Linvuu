@@ -183,3 +183,11 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 @media(max-width:700px){.livro{width:240px}}
 .livro h3,.livro p{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .livro-capa{margin-bottom:0}
+
+/* Página «Português para estrangeiros»: cada item traz o texto em português e em inglês, um sob o outro */
+.pt-pontos{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:20px}
+.pt-pontos li{border-left:2px solid var(--verde-floresta);padding:2px 0 2px 18px;max-width:46em}
+.pt-pontos li span{display:block}
+.pt-pontos li span+span{margin-top:6px;color:var(--grafite-65)}
+.pt-estrangeiros .lead{max-width:40em}
+.pt-estrangeiros section{margin-bottom:56px}

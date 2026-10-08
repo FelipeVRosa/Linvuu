@@ -28,6 +28,7 @@ export function Footer() {
           <h2>Linvuu</h2>
           <Link to="/cursos">Todos os cursos</Link>
           <Link to="/gramatica/en">Gramática</Link>
+          <Link to="/portugues">Português para estrangeiros</Link>
           <Link to="/#metodo">Método</Link>
           <Link to="/#faq">Dúvidas</Link>
           <a href={`mailto:${EMAIL_OFICIAL}`}>Contato</a>

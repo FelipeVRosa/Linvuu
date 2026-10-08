@@ -31,7 +31,7 @@ export const ptBR = {
       { n: '02', t: 'Imersão', d: 'Diálogos e textos curtos para ver o idioma em uso, com tradução quando você pedir e vocabulário destacado.' },
       { n: '03', t: 'Prática', d: 'Exercícios com resposta e explicação na hora, e uma tarefa de fala ou escrita para fechar a sessão.' },
     ] },
-  livros: { kicker: 'Livros', titulo: 'Livros da Linvuu' },
+  livros: { kicker: 'Livros', titulo: 'Coleção Linvuu' },
   avaliacoes: { kicker: 'Avaliações', titulo: 'O que dizem nossos alunos', vazio: 'As primeiras avaliações de alunos reais chegam em breve.' },
   faq: { kicker: 'Dúvidas', titulo: 'Antes de começar' },
   cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece agora: 2 aulas grátis, sem cartão e sem instalar nada.', primario: 'Começar grátis', secundario: 'Ver todos os cursos' },

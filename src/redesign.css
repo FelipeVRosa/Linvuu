@@ -180,3 +180,14 @@ h1,h2,h3{font-family:var(--font-display);font-variation-settings:var(--fraunces-
 .lv-plano-preco span{font-size:1rem;font-family:inherit}
 .lv-plano p{margin:0}
 .lv-plano .btn{margin-top:auto}
+
+/* Vitrine da Coleção Linvuu */
+.livro{width:250px;padding:0;gap:4px;border:0;border-radius:0;background:transparent;color:inherit;text-decoration:none}
+.livro-capa{aspect-ratio:216/303;border-radius:0;box-shadow:none;margin-bottom:10px;background:var(--papel-escuro)}
+.livro-capa img{display:block;transition:opacity .15s}
+.livro h3{font-family:'Newsreader Variable',serif;font-weight:500;font-size:22px;line-height:1.2}
+.livro p{font-size:15px}
+a.livro:hover,a.livro:focus-visible{transform:none;box-shadow:none;border-color:transparent}
+a.livro:hover .livro-capa img,a.livro:focus-visible .livro-capa img{opacity:.88}
+a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
+@media(max-width:700px){.livro{width:200px}}

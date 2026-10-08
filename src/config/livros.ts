@@ -1,7 +1,19 @@
-// Vitrine de livros. Enquanto a lista estiver vazia, a vitrine mostra 2 capas em branco.
-// Para cadastrar: coloque a imagem da capa em public/livros/ (ex.: /livros/alemao-1.jpg).
+// Vitrine da Coleção Linvuu (capas dos livros, Volume 1, níveis A1–A2).
+// Para cadastrar: gere a capa com scripts/capa.mjs, converta para .webp (1200 px de largura) e coloque em public/livros/.
 export interface Livro { titulo: string; subtitulo?: string; capa?: string; link?: string; preco?: string }
 
+const livro = (id: string, titulo: string): Livro => ({
+  titulo,
+  subtitulo: 'Volume 1 · Níveis A1–A2',
+  capa: `/livros/${id}-a1-a2-v1.webp`,
+  link: `/curso/${id}`,
+});
+
 export const LIVROS: Livro[] = [
-  // { titulo: 'Título do livro', subtitulo: 'Nível ou idioma', capa: '/livros/titulo.jpg', link: 'https://…', preco: 'R$ 00,00' },
+  livro('en', 'Inglês'),
+  livro('es', 'Espanhol'),
+  livro('de', 'Alemão'),
+  livro('fr', 'Francês'),
+  livro('it', 'Italiano'),
+  livro('ru', 'Russo'),
 ];

@@ -196,19 +196,19 @@ export default function Home() {
         </section>
       )}
 
-      {LIVROS.length > 0 && (
-        <section className="lv-sec lv-sec-papel" id="livros" aria-labelledby="h-livros">
-          <p className="lv-kicker lv-kicker-esc">{t.livros.kicker}</p>
-          <h2 id="h-livros">{t.livros.titulo}</h2>
-          <Vitrine />
-        </section>
-      )}
-
       {DEPOIMENTOS.length > 0 && (
         <section className="lv-sec" id="avaliacoes" aria-labelledby="h-aval">
           <p className="lv-kicker lv-kicker-esc">{t.avaliacoes.kicker}</p>
           <h2 id="h-aval">{t.avaliacoes.titulo}</h2>
           <Avaliacoes />
+        </section>
+      )}
+
+      {LIVROS.length > 0 && (
+        <section className="lv-sec lv-sec-papel" id="livros" aria-labelledby="h-livros">
+          <p className="lv-kicker lv-kicker-esc">{t.livros.kicker}</p>
+          <h2 id="h-livros">{t.livros.titulo}</h2>
+          <Vitrine />
         </section>
       )}
 

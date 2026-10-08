@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { LIVROS } from '../config/livros';
 import { Carrossel } from './Carrossel';
 
@@ -9,7 +10,7 @@ export function Vitrine() {
     <Carrossel rotulo="Livros da Linvuu">
       {itens
         ? itens.map((l) => {
-            const capa = l.capa ? <img src={l.capa} alt={`Capa de ${l.titulo}`} loading="lazy" /> : <span className="capa-vazia" />;
+            const capa = l.capa ? <img src={l.capa} alt={`Capa do livro de ${l.titulo}, Coleção Linvuu`} width={1200} height={1683} loading="lazy" decoding="async" /> : <span className="capa-vazia" />;
             const corpo = (
               <>
                 <div className="livro-capa">{capa}</div>
@@ -18,6 +19,7 @@ export function Vitrine() {
                 {l.subtitulo && <p>{l.subtitulo}</p>}
               </>
             );
+            if (l.link?.startsWith('/')) return <Link key={l.titulo} className="livro" role="listitem" to={l.link}>{corpo}</Link>;
             return l.link
               ? <a key={l.titulo} className="livro" role="listitem" href={l.link} target="_blank" rel="noopener noreferrer">{corpo}</a>
               : <div key={l.titulo} className="livro" role="listitem">{corpo}</div>;

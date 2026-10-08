@@ -107,7 +107,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
             payment_method_options: { pix: { expires_after_seconds: 86400 }, boleto: { expires_after_days: 3 } },
             line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: PRECO_TRIMESTRAL, product_data: { name: 'Linvuu: 3 meses de acesso' } } }],
             metadata: { plano: 'trimestral', uid: u.uid },
-            custom_text: { submit: { message: 'Pagamento único, sem renovação automática. Reembolso integral em até 7 dias. Pix e boleto liberam o acesso quando o pagamento for confirmado.' } },
+            custom_text: { submit: { message: 'Para pagar com Pix: selecione Pix e clique em Continuar. O QR code aparece na tela seguinte. Pagamento único, sem renovação automática, com reembolso integral em até 7 dias.' } },
           })
         : await stripe!.checkout.sessions.create({
             ...comum, mode: 'subscription',

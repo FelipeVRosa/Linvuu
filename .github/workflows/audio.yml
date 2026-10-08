@@ -63,7 +63,7 @@ jobs:
           echo "::notice title=Relatorio de audio::$(sed ':a;N;$!ba;s/\n/%0A/g' /tmp/relatorio.txt)"
       - name: Guardar para ouvir (baixe o .zip em "Artifacts")
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: audio-${{ env.IDIOMA }}
           path: public/audio/${{ env.IDIOMA }}

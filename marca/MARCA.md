@@ -217,6 +217,7 @@ Esta é a régua pedagógica (ver também `docs/PADRAO-LINVUU.md`):
 - `mapa-mental-a4.html`: mapa mental A4 paisagem, com nó central, cinco ramos e subnós (versão simples).
 - `mapa-mental-elaborado-a4.html`: mapa mental A4 paisagem com ramos numerados, subitens com exemplos e traço ocre (ver 6.8).
 - `tabela-caso-a4.html`: folha A4 com tabela de matriz (gênero × número), rótulo vertical, exceções e acento tônico (ver 6.9).
+- `tabela-preposicional-a4.html`: tabela completa do caso preposicional (terminações por gênero, exemplos no nominativo e no preposicional, plural mesclado e exceções em singular e plural). A tabela ocupa duas folhas na impressão; as exceções vão para a segunda.
 - `folha-branca-a4.html`: página em branco com cabeçalho, rodapé e área de texto na marca, para escrever o que vier.
 
 Como imprimir ou salvar em PDF: abrir no navegador, `Ctrl+P` (Windows) ou `Cmd+P` (Mac), tamanho A4, margens padrão, gráficos de fundo ativados.

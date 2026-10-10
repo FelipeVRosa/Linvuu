@@ -79,3 +79,17 @@ As regras de marca do projeto valem para tudo isso: sem promessa de fluência, p
 - Decidir a oferta do plano trimestral no app.
 - Falar com contador sobre impostos das duas vendas.
 - Falar com advogado sobre a regra de direcionamento e o texto dos termos.
+
+## Estado da integração do SDK (branch feat/revenuecat-sdk)
+- Pacote: `@revenuecat/purchases-capacitor` 13.7.3 (peer: `@capacitor/core` >= 8, compatível com o projeto).
+- Código: `src/lib/compras.ts`. Desligado por padrão.
+- Ligar no build: `VITE_COMPRAS_ATIVAS=true` e `VITE_REVENUECAT_ANDROID_KEY=<chave pública do SDK Android>`.
+- Chave com prefixo `test_` = Test Store do RevenueCat (sem cobrança real). Para a Play, usar a chave Android de produção (prefixo `goog_`).
+- Ainda não ligado a tela de assinatura nem a `getOfferings`/`purchasePackage`. Isso entra depois da conta da Play e dos produtos existirem.
+
+### Configuração no RevenueCat (Test Store, 10/10/2026)
+- Entitlement: identificador `Premium` (nome de exibição `com_linvuu_app_pro`). É esse identificador que o app deve checar.
+- Produto: `Premium`, assinatura mensal, na Test Store (preço de teste USD 30, sem valor real). Não é o preço final.
+- Pendente: associar o produto `Premium` ao entitlement `Premium` (Attach).
+- Yearly, Lifetime e produto duplicado foram removidos da configuração de teste.
+- Os produtos reais (mensal R$ 139, trimestral) só serão criados na Play, quando a conta estiver aprovada.

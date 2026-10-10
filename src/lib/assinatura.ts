@@ -1,19 +1,25 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useAuth } from './AuthContext';
 import { carregarAuth } from './firebase';
+import { api } from './api';
+import { Capacitor } from '@capacitor/core';
+
+/** No app nativo a compra fica desligada até a decisão de cobrança pela loja (Google Play / App Store). Veja docs/APP.md. */
+export const compraNoAppDisponivel = () => !Capacitor.isNativePlatform();
 
 export type Assinatura = { carregando: boolean; ativa: boolean; indisponivel: boolean; cancelaEm: number | null; via: 'assinatura' | 'trimestral' | null; ate: number | null; recarregar: () => void };
 
 async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
   const { auth } = await carregarAuth();
   const token = await auth.currentUser?.getIdToken();
-  const r = await fetch(`/api/billing/${caminho}`, { method: metodo, headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(corpo ? { 'Content-Type': 'application/json' } : {}) }, body: corpo ? JSON.stringify(corpo) : undefined });
+  const r = await fetch(api(`/api/billing/${caminho}`), { method: metodo, headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(corpo ? { 'Content-Type': 'application/json' } : {}) }, body: corpo ? JSON.stringify(corpo) : undefined });
   const j = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(j.error || 'Erro');
   return j;
 }
 
 export async function abrir(tipo: 'checkout' | 'portal', plano?: 'mensal' | 'trimestral') {
+  if (!compraNoAppDisponivel()) throw new Error('A compra ainda não está disponível neste aplicativo.');
   const j = await chamar(tipo, 'POST', plano ? { plano } : undefined);
   if (j.url) window.location.href = j.url;
 }

@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL } from '../config/planos';
+import { AULAS_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 
@@ -14,7 +15,7 @@ export default function Assinatura() {
   const [params] = useSearchParams();
   const [ocupado, setOcupado] = useState(false);
   const [erro, setErro] = useState('');
-  const ir = async (t: 'checkout' | 'portal', plano?: 'mensal' | 'trimestral') => {
+  const ir = async (t: 'checkout' | 'portal', plano?: Plano) => {
     setOcupado(true); setErro('');
     try { await abrir(t, plano); } catch (e) { setErro((e as Error).message); setOcupado(false); }
   };
@@ -52,9 +53,11 @@ export default function Assinatura() {
                 </div>
                 <div className="lv-plano">
                   <h3>3 meses</h3>
-                  <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span> pagamento único</span></p>
-                  <p>Pix, boleto ou cartão. Sem renovação automática. Escolha a forma de pagamento; se for Pix, selecione Pix e clique em Continuar: o QR code aparece na tela seguinte.</p>
-                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses'}</button>
+                  <p className="lv-plano-preco">{PRECO_TRIMESTRAL_PIX}<span> no Pix, pagamento único</span></p>
+                  <p>30% de desconto para quem paga por Pix. Sem renovação automática. O QR code aparece na tela seguinte.</p>
+                  <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses no Pix'}</button>
+                  <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span> no cartão ou boleto, pagamento único</span></p>
+                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses no cartão ou boleto'}</button>
                 </div>
               </div>
             </>

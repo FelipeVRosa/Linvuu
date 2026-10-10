@@ -34,6 +34,9 @@ try {
   ok((await fetch(base + '/api/aula/..%2f..%2fserver/1')).status === 404, 'path traversal em /api/aula barrado');
   ok((await fetch(base + '/api/billing/status')).status !== 200, 'cobrança exige login');
 
+  const pre = await fetch(base + '/api/billing/status', { method: 'OPTIONS', headers: { Origin: 'capacitor://localhost', 'Access-Control-Request-Method': 'GET' } });
+  ok(pre.status === 204 && pre.headers.get('access-control-allow-origin') === 'capacitor://localhost', 'CORS libera o app nativo (capacitor://localhost)');
+  ok(!(await fetch(base + '/api/billing/status', { headers: { Origin: 'https://site-estranho.com' } })).headers.get('access-control-allow-origin'), 'CORS não libera origens estranhas');
   const ruim = await fetch(base + '/api/billing/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{nao json' });
   const txt = await ruim.text();
   ok(ruim.status === 400 && !/at |node_modules|SyntaxError/.test(txt), 'JSON inválido → 400 sem detalhes internos');

@@ -4,6 +4,7 @@ import trilhaJson from '../../content/trilha.json';
 import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
 import type { InfoAula, SessaoAula } from './aulas';
+import { api } from './api';
 
 export type StatusCurso = 'disponivel' | 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
@@ -83,7 +84,7 @@ export const carregarAula = async (idioma: string, dia: number): Promise<Aula> =
   if (dia <= SESSOES_GRATIS) throw new Error('aula não encontrada');
   const { auth } = await carregarAuth();
   const token = await auth.currentUser?.getIdToken();
-  const r = await fetch(`/api/aula/${idioma}/${dia}`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+  const r = await fetch(api(`/api/aula/${idioma}/${dia}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
   if (!r.ok) throw new Error('aula não encontrada');
   return r.json();
 };

@@ -65,10 +65,26 @@ export function limitar(grupo: string, max: number, janelaMs: number) {
   };
 }
 
+/** Origens do app nativo (o site empacotado): só elas recebem CORS. O site na web é da mesma origem e não precisa. */
+const ORIGENS_APP = new Set(['https://localhost', 'capacitor://localhost', 'http://localhost']);
+export function cors(req: Request, res: Response, next: NextFunction) {
+  const origem = req.headers.origin;
+  if (origem && ORIGENS_APP.has(origem)) {
+    res.setHeader('Access-Control-Allow-Origin', origem);
+    res.setHeader('Vary', 'Origin');
+    res.setHeader('Access-Control-Allow-Headers', 'Authorization, Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Max-Age', '600');
+    if (req.method === 'OPTIONS') { res.status(204).end(); return; }
+  }
+  next();
+}
+
 export function registrarSeguranca(app: Express, producao: boolean) {
   app.disable('x-powered-by');
   app.set('trust proxy', 1); // atrás do proxy do Render: req.ip passa a ser o do visitante
   app.use(cabecalhos(producao));
+  app.use('/api', cors);
   app.use('/api/billing', limitar('billing', 30, 60_000));
   app.use('/api/aula', limitar('aula', 120, 60_000));
   app.use('/api', limitar('api', 300, 60_000));

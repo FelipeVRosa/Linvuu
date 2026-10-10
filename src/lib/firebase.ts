@@ -1,3 +1,4 @@
+import { Capacitor } from '@capacitor/core';
 // Firebase (Authentication + Firestore). As chaves vêm de variáveis VITE_FIREBASE_* (ver docs/AUTENTICACAO.md).
 // Sem elas, o login fica desativado e o site continua funcionando.
 // `?? {}` deixa este módulo importável fora do Vite (testes em Node).
@@ -14,7 +15,8 @@ const cfg = {
 
 export const authConfigurado = Boolean(cfg.apiKey && cfg.authDomain && cfg.projectId && cfg.appId);
 /** Login com Google fica escondido até o provedor ser ativado no Firebase (VITE_AUTH_GOOGLE=true). */
-export const googleAtivo = env.VITE_AUTH_GOOGLE === 'true';
+export const googleAtivo = env.VITE_AUTH_GOOGLE === 'true' && !Capacitor.isNativePlatform(); // o popup do Google não funciona no WebView do app
+
 
 // Emuladores locais (só em desenvolvimento): VITE_AUTH_EMULATOR=127.0.0.1:9099, VITE_FIRESTORE_EMULATOR=127.0.0.1:8080
 const emuladorAuth = env.DEV ? (env.VITE_AUTH_EMULATOR as string | undefined) : undefined;

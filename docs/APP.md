@@ -14,6 +14,9 @@
 | Android (no seu computador) | `npm install` e depois `npm run app:android`. Abra a pasta `android/` no Android Studio e rode em um emulador ou aparelho. Requer JDK 21 e Android SDK. |
 | iOS | Ainda não criado. Exige macOS e Xcode, e uma conta de desenvolvedor Apple. |
 
+## Publicação nas lojas
+Plano completo, com decisões e checklist: `docs/LANCAMENTO.md`.
+
 ## Antes de publicar nas lojas
 1. **Cobrança.** Conteúdo digital vendido dentro do app precisa usar a cobrança da loja (Google Play Billing; no iOS, compra no app da Apple). Não é permitido vender a assinatura Stripe dentro do app. Opções: (a) integrar a cobrança da loja e o servidor reconhecer a compra; (b) publicar o app sem venda e deixar a assinatura no site. Verifique as regras vigentes antes de decidir, porque elas mudam e variam por país.
 2. **Login com Google** dentro do app: o popup não funciona no WebView. Usar o plugin nativo do Firebase.

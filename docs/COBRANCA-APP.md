@@ -79,3 +79,10 @@ As regras de marca do projeto valem para tudo isso: sem promessa de fluência, p
 - Decidir a oferta do plano trimestral no app.
 - Falar com contador sobre impostos das duas vendas.
 - Falar com advogado sobre a regra de direcionamento e o texto dos termos.
+
+## Estado da integração do SDK (branch feat/revenuecat-sdk)
+- Pacote: `@revenuecat/purchases-capacitor` 13.7.3 (peer: `@capacitor/core` >= 8, compatível com o projeto).
+- Código: `src/lib/compras.ts`. Desligado por padrão.
+- Ligar no build: `VITE_COMPRAS_ATIVAS=true` e `VITE_REVENUECAT_ANDROID_KEY=<chave pública do SDK Android>`.
+- Chave com prefixo `test_` = Test Store do RevenueCat (sem cobrança real). Para a Play, usar a chave Android de produção (prefixo `goog_`).
+- Ainda não ligado a tela de assinatura nem a `getOfferings`/`purchasePackage`. Isso entra depois da conta da Play e dos produtos existirem.

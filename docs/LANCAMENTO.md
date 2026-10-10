@@ -4,7 +4,7 @@ Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. 
 
 ## 1. Decisões já tomadas
 - **Conta de organização** na Google Play (e na Apple Developer, depois) em nome do Instituto Renascimento, com CNPJ. Criada **no momento do lançamento**, não antes.
-- **Compra no app:** a primeira versão **não** vende nada dentro do app. A assinatura continua no site. Venda dentro do app só depois de integrar a cobrança da loja (ver seção 4).
+- **Compra no app: decidido (10/10/2026).** A primeira versão vende assinatura dentro do app pelo Google Play Billing, e o site continua vendendo pelo Stripe. O acesso vale pelas duas origens. Detalhes em `docs/COBRANCA-APP.md`.
 - **Stripe** continua sendo o meio de pagamento do site. Chaves live só na data de lançamento.
 - **Idiomas:** português primeiro; inglês e espanhol da interface depois (`docs/FUTURAS-MUDANCAS.md`).
 
@@ -57,9 +57,8 @@ Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. 
 
 ## 4. Cobrança dentro do app (decisão obrigatória)
 - Conteúdo digital vendido **dentro** do app deve usar a cobrança da loja (Google Play Billing; compra no app na App Store). Não pode levar o usuário para o Stripe dentro do app.
-- Opção A: primeira versão **sem venda** no app; assinatura só no site. Mais simples, mas o usuário que compra no app sai para o site. Confirme com as regras vigentes da loja antes de publicar.
-- Opção B: integrar a cobrança da loja. Mais trabalho: produtos de assinatura na loja, verificação da compra no servidor, reconciliação com o Stripe para quem assinou no site.
-- **Decisão sua**, com a revisão de quem for cuidar do lado jurídico.
+- **Decidido:** integrar Google Play Billing na primeira versão (Opção B). Implica conta de organização aberta **no início do desenvolvimento**, porque sem o app cadastrado no Play Console não há como testar compras.
+- Pendências de decisão e de verificação: regra de direcionamento para quem assina no site, plano trimestral no app, impostos das duas vendas. Ver `docs/COBRANCA-APP.md`.
 
 ## 5. Testadores (muitos, com a organização)
 - A lista precisa de **contas Google** de cada testador. Peça o e-mail da conta Google, não o e-mail de contato.
@@ -83,7 +82,8 @@ Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. 
 ## 8. Riscos
 | Risco | Efeito | Mitigação |
 |---|---|---|
-| Rejeição por cobrança externa | Atraso grande | Decisão da seção 4 antes da Fase C |
+| Regra de direcionamento para pagamento externo | Rejeição ou acesso cortado | Verificar política e orientação jurídica antes de programar a regra de acesso |
+| Conta da loja aberta tarde | Atrasa testes de compra | Abrir a conta de organização no início do desenvolvimento |
 | Rejeição por "site empacotado" | Atraso ou recusa | Funções nativas e teste em aparelho |
 | Perda da keystore | Impede atualizações | Backup fora do computador de trabalho |
 | Verificação da organização demorar | Atraso | Abrir a conta com antecedência, junto com documentos do CNPJ |
@@ -95,7 +95,9 @@ Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. 
 Marque com a data e o responsável quando concluir.
 
 - [ ] Fase A concluída (CLAUDE.md, AAB, versões, lint, ícone, ficha, privacidade, Firebase, Crashlytics desligado)
-- [ ] Decisão de cobrança no app (seção 4)
+- [x] Decisão de cobrança no app: Google Play Billing (10/10/2026)
+- [ ] Conta de organização aberta **no início do desenvolvimento** (não no lançamento)
+- [ ] Compras testadas com testadores de licença em aparelho real
 - [ ] Teste em aparelho real (Android) com login, aulas grátis, áudio e navegação
 - [ ] Faixa interna com testadores convidados
 - [ ] Faixa fechada com a lista de testadores, aparelhos variados e feedback coletado

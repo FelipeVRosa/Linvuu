@@ -176,6 +176,25 @@ Todo exercício tem a resposta e uma explicação. Nunca responder só "certo" o
 - Ligações: linhas de 1 px em grafite-50 ou o traço ocre para destaque. Sem curvas decorativas.
 - Ler de cima para baixo ou da esquerda para a direita. Máximo de 5 ramos principais.
 
+### 6.8 Mapa mental elaborado (A4 paisagem)
+Use quando o tema tem categorias e exemplos (gênero, caso, plural, exceções). Modelo: `modelos/mapa-mental-elaborado-a4.html`.
+- Nó central no meio, em caixa verde floresta.
+- Até 5 ramos: 3 à esquerda e 2 à direita, ou 2 e 3. Cada ramo tem número em círculo verde, título em Newsreader 600 e subitens com traço ocre à esquerda.
+- Subitens curtos: uma regra ou um exemplo por linha. Se o ramo passar de 4 linhas, separe em outro ramo ou leve para uma tabela.
+- Exemplos em idioma-alvo com a fonte Literata; o resto em Source Sans 3.
+- Caber em uma folha: verificar no PDF impresso. Se a última linha sair da página, encurte o texto antes de reduzir a fonte.
+
+### 6.9 Tabela de matriz (casos, declinações, conjugações)
+Use quando a informação cruza duas dimensões (gênero × número, pessoa × tempo). Componente `.lv-matriz` em `linvuu.css`; modelo: `modelos/tabela-caso-a4.html`.
+- Cabeçalho em duas camadas: grupo em verde floresta; subcolunas em verde-700.
+- Rótulo vertical à esquerda (`.lv-rotulo` + `.lv-rotulo-vertical`) para o agrupamento principal (ex.: Masculino, Feminino, Neutro, Plural).
+- Faixas alternadas de papel-claro e papel-escuro, para ler a linha inteira.
+- O termo que muda (a terminação) em negrito com traço ocre embaixo (`.lv-termo`). O traço é linha, então é permitido.
+- Exemplos em idioma-alvo com `.lv-celula-exemplo`.
+- Exceções em tabela própria, pequena, abaixo da tabela principal. Nunca misturar exceção com regra.
+- Acento tônico: grafite em negrito com o acento gráfico (́). Nunca vermelho: vermelho no kit é só para resposta errada.
+- Nota de rodapé em `.lv-matriz-nota` quando a tabela pede explicação do acento ou da exceção.
+
 ---
 
 ## 7. Estrutura de material didático
@@ -195,7 +214,9 @@ Esta é a régua pedagógica (ver também `docs/PADRAO-LINVUU.md`):
 ## 8. Modelos (pasta `modelos/`)
 
 - `folha-aula-a4.html`: folha de aula A4, com título, objetivo, passos, comparação, erros típicos, dica, exercícios com resposta e rodapé. Pronta para imprimir ou exportar para PDF.
-- `mapa-mental-a4.html`: mapa mental A4 paisagem, com nó central, cinco ramos e subnós.
+- `mapa-mental-a4.html`: mapa mental A4 paisagem, com nó central, cinco ramos e subnós (versão simples).
+- `mapa-mental-elaborado-a4.html`: mapa mental A4 paisagem com ramos numerados, subitens com exemplos e traço ocre (ver 6.8).
+- `tabela-caso-a4.html`: folha A4 com tabela de matriz (gênero × número), rótulo vertical, exceções e acento tônico (ver 6.9).
 - `folha-branca-a4.html`: página em branco com cabeçalho, rodapé e área de texto na marca, para escrever o que vier.
 
 Como imprimir ou salvar em PDF: abrir no navegador, `Ctrl+P` (Windows) ou `Cmd+P` (Mac), tamanho A4, margens padrão, gráficos de fundo ativados.
@@ -206,7 +227,8 @@ Como imprimir ou salvar em PDF: abrir no navegador, `Ctrl+P` (Windows) ou `Cmd+P
 
 - [ ] Só as quatro cores de marca e seus derivados.
 - [ ] Newsreader para títulos, Source Sans 3 para corpo, Literata para idioma-alvo quando necessário.
-- [ ] Ocre apenas em traços e linhas.
+- [ ] Ocre apenas em traços e linhas (inclui sublinhado de termo e borda de subitem).
+- [ ] Acento tônico em grafite, nunca em vermelho.
 - [ ] Nenhuma promessa sem prova ("melhor que", "oficial", "garantido", "nativo").
 - [ ] Nenhum nome de concorrente.
 - [ ] Nenhum emoji, nenhuma bandeira, nenhum mascote, nenhuma ilustração 3D.

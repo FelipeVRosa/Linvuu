@@ -5,3 +5,5 @@ export const SESSOES_GRATIS = AULAS_GRATIS * SESSOES_POR_AULA;
 export const PRECO_MENSAL = 'R$ 139';
 export const gratis = (dia: number) => dia <= SESSOES_GRATIS;
 export const PRECO_TRIMESTRAL = 'R$ 417';
+export const PRECO_MES_PIX = 'R$ 160'; // primeiro mês, só Pix, uma vez por cliente
+export const PRECO_TRIMESTRAL_PIX = 'R$ 291,90'; // 30% de desconto, só no Pix

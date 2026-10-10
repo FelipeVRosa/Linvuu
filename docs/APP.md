@@ -23,6 +23,9 @@
 6. **Ícone e splash:** usar a marca oficial, sem emoji nem bandeiras.
 7. **Política de privacidade e exclusão de conta** publicadas (ver `docs/SEGURANCA.md`, item 4).
 
+## Auditoria
+Checklist com o estado de cada item e as perguntas em aberto: `docs/AUDITORIA-APP.md`.
+
 ## Não feito ainda
 - iOS (exige Mac).
 - Ícone, splash, assinatura de release e ficha de loja.

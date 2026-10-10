@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { abrir } from '../lib/assinatura';
 import { textos } from '../lib/textos';
-import { AULAS_GRATIS, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_MENSAL, PRECO_MES_PIX, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import type { Plano } from '../lib/assinatura';
 
 export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
@@ -23,6 +23,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
       {usuario ? (
         <div className="lv-hero-botoes">
           <button type="button" className="btn btn-primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</button>
+          <button type="button" className="btn btn-ghost" onClick={() => assinar('mes-pix')} disabled={ocupado}>{T.mesPix(PRECO_MES_PIX)}</button>
           <button type="button" className="btn btn-ghost" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</button>
           <button type="button" className="btn btn-ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</button>
         </div>

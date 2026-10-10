@@ -18,7 +18,7 @@ async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
   return j;
 }
 
-export type Plano = 'mensal' | 'trimestral' | 'trimestral-pix';
+export type Plano = 'mensal' | 'trimestral' | 'trimestral-pix' | 'mes-pix';
 export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
   if (!compraNoAppDisponivel()) throw new Error('A compra ainda não está disponível neste aplicativo.');
   const j = await chamar(tipo, 'POST', plano ? { plano } : undefined);

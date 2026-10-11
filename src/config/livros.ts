@@ -17,4 +17,5 @@ export const LIVROS: Livro[] = [
   livro('it', 'Italiano'),
   livro('ru', 'Russo'),
   { ...livro('br', 'Português para estrangeiros'), link: '/portugues' },
+  { titulo: 'Gramática russa', subtitulo: 'Volume 1 · Consulta A1–A2', capa: '/livros/ru-gramatica-a1-a2-v1-600.webp', link: '/livro/gramatica-ru', preco: 'Assinatura' },
 ];

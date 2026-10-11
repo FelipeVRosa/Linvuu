@@ -146,3 +146,17 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });
 }
+
+/** Livro de gramática: só entrega o HTML para quem tem acesso ativo (assinatura ou pacote pago). Nunca fica em public/. */
+export function registrarLivroProtegido(app: Express) {
+  app.get('/api/livros/gramatica-ru', async (req: Request, res: Response) => {
+    if (!cobrancaConfigurada()) { res.status(503).json({ error: 'Indisponível no momento.' }); return; }
+    const u = await usuario(req);
+    if (!u) { res.status(401).json({ error: 'Entre na sua conta.' }); return; }
+    const a = await acesso(u);
+    if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
+    res.setHeader('Cache-Control', 'private, no-store');
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+    res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8'));
+  });
+}

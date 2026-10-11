@@ -1,0 +1,59 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../lib/AuthContext';
+import { carregarAuth } from '../lib/firebase';
+import { api } from '../lib/api';
+import { usePageTitle } from '../lib/usePageTitle';
+import { PRECO_MENSAL, PRECO_TRIMESTRAL } from '../config/planos';
+
+type Estado = 'carregando' | 'liberado' | 'entrar' | 'assinar' | 'indisponivel';
+
+export default function LivroGramatica() {
+  usePageTitle('Gramática russa A1–A2', 'O livro de gramática russa da Linvuu, do A1 ao A2, explicado em português. Para assinantes.');
+  const { usuario, carregando } = useAuth();
+  const [estado, setEstado] = useState<Estado>('carregando');
+  const [html, setHtml] = useState('');
+
+  useEffect(() => {
+    if (carregando) return;
+    if (!usuario) { setEstado('entrar'); return; }
+    let vivo = true;
+    (async () => {
+      const { auth } = await carregarAuth();
+      const token = await auth.currentUser?.getIdToken();
+      const r = await fetch(api('/api/livros/gramatica-ru'), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+      if (!vivo) return;
+      if (r.status === 402) { setEstado('assinar'); return; }
+      if (r.status === 503) { setEstado('indisponivel'); return; }
+      if (!r.ok) { setEstado('entrar'); return; }
+      const texto = await r.text();
+      if (!vivo) return;
+      setHtml(texto);
+      setEstado('liberado');
+    })();
+    return () => { vivo = false; };
+  }, [usuario, carregando]);
+
+  if (estado === 'liberado') {
+    return <iframe title="Gramática russa A1–A2" srcDoc={html} sandbox="" style={{ width: '100%', height: 'calc(100vh - 72px)', border: 0, display: 'block' }} />;
+  }
+
+  return (
+    <main className="lv-folha" style={{ maxWidth: 760, margin: '0 auto', padding: '48px 20px' }}>
+      <p className="lv-eyebrow">Livro · Russo · A1–A2</p>
+      <h1 className="lv-h1">A gramática russa que faltava para o estudante brasileiro.</h1>
+      <p className="lv-lead">Onze aulas, do alfabeto ao caso genitivo, explicadas em português, com exemplos em frases curtas, quadros-resumo e 100 exercícios com resposta comentada. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>
+      {estado === 'carregando' && <p className="lv-nota">Carregando…</p>}
+      {estado === 'entrar' && (
+        <p><Link className="btn btn-primary" to="/entrar">Entrar para ler</Link></p>
+      )}
+      {estado === 'assinar' && (
+        <>
+          <p>Este livro faz parte da assinatura da Linvuu: {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</p>
+          <p><Link className="btn btn-primary" to="/assinatura">Ver planos</Link></p>
+        </>
+      )}
+      {estado === 'indisponivel' && <p>Estamos com a leitura indisponível agora. Tente de novo em instantes.</p>}
+    </main>
+  );
+}

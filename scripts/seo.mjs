@@ -15,5 +15,5 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
 }
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE}${u}</loc></url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml);
-fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /entrar\nDisallow: /cadastro\n\nSitemap: ${SITE}/sitemap.xml\n`);
+fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /entrar\nDisallow: /cadastro\nDisallow: /livro/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log(`sitemap: ${urls.length} endereços`);

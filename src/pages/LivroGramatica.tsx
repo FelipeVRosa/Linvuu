@@ -35,7 +35,16 @@ export default function LivroGramatica() {
   }, [usuario, carregando]);
 
   if (estado === 'liberado') {
-    return <iframe title="Gramática russa A1–A2" srcDoc={html} sandbox="" style={{ width: '100%', height: 'calc(100vh - 72px)', border: 0, display: 'block' }} />;
+    return (
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '16px 16px 0' }}>
+        <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
+          <p className="lv-eyebrow">O livro faz parte do curso</p>
+          <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto. Quem tem acesso ativo pode ler o livro inteiro.</p>
+          <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
+        </aside>
+        <iframe title="Gramática russa A1–A2" srcDoc={html} sandbox="" style={{ width: '100%', height: 'calc(100vh - 230px)', border: 0, display: 'block' }} />
+      </div>
+    );
   }
 
   return (
@@ -49,7 +58,11 @@ export default function LivroGramatica() {
       )}
       {estado === 'assinar' && (
         <>
-          <p>Este livro faz parte da assinatura da Linvuu: {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</p>
+      <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
+        <p className="lv-eyebrow">O livro faz parte do curso</p>
+        <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto. Quem tem acesso ativo pode ler o livro inteiro.</p>
+        <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
+      </aside>
           <p><Link className="btn btn-primary" to="/assinatura">Ver planos</Link></p>
         </>
       )}

@@ -11,6 +11,7 @@ import Conta from './pages/Conta';
 import Assinatura from './pages/Assinatura';
 import { Legal } from './pages/Legal';
 import Gramatica from './pages/Gramatica';
+import LivroGramatica from './pages/LivroGramatica';
 import { BarraTopo } from './components/BarraTopo';
 import NaoEncontrada from './pages/NaoEncontrada';
 
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/cadastro" element={<Conta modo="cadastro" />} />
           <Route path="/gramatica" element={<Gramatica />} />
           <Route path="/gramatica/:id" element={<Gramatica />} />
+          <Route path="/livro/gramatica-ru" element={<LivroGramatica />} />
           <Route path="/assinatura" element={<Assinatura />} />
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />

@@ -5,7 +5,7 @@ import path from 'path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import { registrarCobranca } from './server/billing';
+import { registrarCobranca, registrarLivroProtegido } from './server/billing';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
@@ -28,6 +28,7 @@ async function startServer() {
   app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
 
   registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
+  registrarLivroProtegido(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

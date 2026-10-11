@@ -278,63 +278,6 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 @page paisagem { size: A4 landscape; margin: 14mm 18mm; }
 .lv-paisagem { page: paisagem; }
 
-/* ---------- 14. Tabela de matriz (casos, declinações, conjugações) ----------
-   Uso: cabeçalho em duas camadas (grupo + subgrupo), rótulo vertical à esquerda,
-   termo variável em negrito com traço ocre, faixas alternadas, bloco de exceções.
-   Acento tônico: grafite em negrito com o acento gráfico. Nunca vermelho. */
-.lv-matriz-wrap { overflow-x: auto; margin: var(--s-5) 0; }
-.lv-matriz { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--t-small); }
-.lv-matriz th, .lv-matriz td { padding: 7px 12px; vertical-align: middle; text-align: left; }
-.lv-matriz thead th {
-  font: 600 var(--t-eyebrow)/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase;
-  background: var(--verde-floresta); color: var(--papel); border-left: 2px solid var(--papel);
-}
-.lv-matriz thead tr.lv-matriz-sub th { background: var(--verde-700); }
-.lv-matriz thead th:first-child, .lv-matriz tbody th.lv-rotulo { border-left: 0; }
-.lv-matriz tbody th.lv-rotulo {
-  background: var(--verde-floresta); color: var(--papel); width: 48px; padding: 0; text-align: center;
-  border-top: 2px solid var(--papel); border-bottom: 2px solid var(--papel);
-}
-.lv-rotulo-vertical {
-  display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg);
-  font: 600 var(--t-eyebrow)/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase;
-}
-.lv-matriz tbody td { background: var(--papel-claro); border-bottom: 1px solid var(--linha); }
-.lv-matriz tbody tr.lv-faixa td { background: var(--papel-escuro); }
-.lv-matriz tbody td.lv-celula-exemplo { font-family: var(--font-alvo); font-size: 19px; line-height: 1.35; }
-.lv-termo {
-  font-weight: 700; color: var(--grafite);
-  text-decoration: underline; text-decoration-color: var(--ocre);
-  text-decoration-thickness: 2px; text-underline-offset: 4px;
-}
-.lv-tonica { font-weight: 700; }
-.lv-matriz-nota { font-size: var(--t-caption); color: var(--fg-3); margin-top: var(--s-2); }
-
-/* ---------- 15. Mapa mental elaborado (A4 paisagem) ----------
-   Estrutura: duas colunas de ramos, nó central no meio. Cada ramo tem número,
-   título em Newsreader e subitens com traço ocre à esquerda. Máximo de 5 ramos. */
-.lv-mapa-rico { display: grid; grid-template-columns: 1fr 200px 1fr; gap: var(--s-5); align-items: start; }
-.lv-mapa-rico .lv-coluna { display: grid; gap: var(--s-4); align-content: start; }
-.lv-mapa-rico .lv-no-central { align-self: center; padding: var(--s-5) var(--s-4); font-size: var(--t-h3); }
-.lv-ramo { border-top: 1px solid var(--linha); padding-top: var(--s-3); }
-.lv-ramo-titulo { display: flex; align-items: center; gap: var(--s-2); font: 600 var(--t-h4)/1.2 var(--font-display); color: var(--verde-floresta); margin: 0 0 var(--s-2); }
-.lv-ramo-num {
-  display: inline-grid; place-items: center; flex: none;
-  width: 26px; height: 26px; border-radius: 50%;
-  background: var(--verde-floresta); color: var(--papel); font: 700 13px/1 var(--font-body);
-}
-.lv-ramo ul { list-style: none; margin: 0; padding: 0 0 0 var(--s-4); border-left: 2px solid var(--ocre); }
-.lv-ramo li { font-size: 14px; color: var(--fg-2); line-height: 1.35; padding: 2px 0; }
-.lv-ramo li strong { color: var(--fg-1); font-weight: 600; }
-.lv-ramo li .lv-alvo { font-size: 16px; color: var(--fg-1); }
-@media (max-width: 720px) {
-  .lv-mapa-rico { grid-template-columns: 1fr; }
-  .lv-matriz { font-size: var(--t-caption); }
-}
-@media print {
-  .lv-matriz tr, .lv-ramo { break-inside: avoid; }
-}
-
 .lv-quadro{background:#FFFFFF;border:1px solid #d9d2c3;border-radius:14px;padding:22px 22px 18px;margin:28px 0;break-inside:avoid}
 .lv-quadro-titulo{font:600 22px/1.2 var(--font-display);margin:4px 0 14px;color:#1D1F1C}
 .lv-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -360,12 +303,12 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 @media (max-width:700px){.lv-grade{grid-template-columns:1fr}.lv-quadro{padding:16px}}
 
 :root{--font-display:'Newsreader Variable','Literata Variable',Georgia,serif;--font-cirilico:'Literata Variable','Newsreader Variable',Georgia,serif;--font-alvo:'Literata Variable','Newsreader Variable',Georgia,serif;--font-body:'Source Sans 3 Variable',ui-sans-serif,system-ui,sans-serif}
-.lv-livro{max-width:1180px;margin:0 auto;padding:56px 64px;column-count:2;column-gap:72px;column-rule:1px solid #d9d2c3;background:#FBF8F1;box-shadow:0 1px 3px rgba(29,31,28,.12)}
+.lv-livro{max-width:760px;margin:0 auto;padding:56px 64px;background:#FBF8F1;box-shadow:0 1px 3px rgba(29,31,28,.12)}
 .lv-livro h1,.lv-livro h2,.lv-livro h3,.lv-livro h4{break-after:avoid;break-inside:avoid}
 .lv-livro table,.lv-livro .lv-dica,.lv-livro .lv-atencao,.lv-livro .lv-matriz-wrap{break-inside:avoid}
 .lv-livro .lv-capa,.lv-livro .lv-cabecalho,.lv-livro .lv-rodape,.lv-livro .lv-progresso,.lv-livro .lv-sumario-bloco,.lv-livro .lv-titulo-aula{column-span:all}
-@media (max-width:760px){.lv-livro{column-count:1;padding:24px 16px;box-shadow:none}}
-@media print{@page{size:A4 landscape;margin:12mm}.lv-livro{padding:0;box-shadow:none;background:none;column-gap:12mm;max-width:none}}
+@media (max-width:760px){.lv-livro{padding:24px 16px;box-shadow:none}}
+@media print{@page{size:A4;margin:16mm}.lv-livro{padding:0;box-shadow:none;background:none;max-width:none}}
 .lv-sumario{list-style:none;padding:0;margin:0}
 .lv-sumario li{padding:.4rem 0;border-bottom:1px solid #d9d2c3}
 .lv-sumario a{color:#1E3B2F;text-decoration:none}
@@ -382,1332 +325,14 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <h1 class="lv-h1">Gramática russa do A1 ao A2</h1>
 <p class="lv-lead">Este material pertence à Linvuu e é o complemento do curso da Linvuu, em linvuu.com.br. Use-o como consulta e como roteiro de estudo, junto com as aulas do site.</p>
 <div aria-hidden="true" class="lv-progresso"><svg class="lv-progresso-svg" preserveaspectratio="none" viewbox="0 0 400 18"><path d="M4 11 C 70 8, 140 14, 210 10 S 340 12, 396 7" fill="none" stroke="#B7791F" stroke-linecap="round" stroke-width="5"></path></svg></div>
-<section class="lv-secao-folha lv-sumario-bloco"><h2 class="lv-h3">Sumário</h2><ol class="lv-sumario"><li><a href="#aula-1">AULA 1 — O ALFABETO RUSSO</a></li><li><a href="#aula-2">AULA 2 — O GÊNERO DOS SUBSTANTIVOS</a></li><li><a href="#aula-3">AULA 3 — O GÊNERO DOS ADJETIVOS</a></li><li><a href="#aula-4">AULA 4 — OS VERBOS NO PRESENTE</a></li><li><a href="#aula-5">AULA 5 — O PASSADO E O FUTURO</a></li><li><a href="#aula-6">AULA 6 — O CASO ACUSATIVO</a></li><li><a href="#aula-7">AULA 7 — O CASO PREPOSITIVO</a></li><li><a href="#aula-8">AULA 8 — O CASO DATIVO</a></li><li><a href="#aula-9">AULA 9 — O CASO INSTRUMENTAL</a></li><li><a href="#aula-10">AULA 10 — GENITIVO I: O "DE" E A NEGAÇÃO</a></li><li><a href="#aula-11">AULA 11 — GENITIVO II: PLURAL, NÚMEROS E PREPOSIÇÕES</a></li></ol></section></div>
-<h1 class="lv-h1" id="aula-1">AULA 1 — O ALFABETO RUSSO</h1>
-<p>(ou: como ler qualquer placa russa em uma hora)</p>
-<h2 class="lv-h3">1.1 Uma cena que você já viveu (ou vai viver)</h2>
-<p>Imagine a cena. Você está na Rússia. Você sai do metrô e vê uma placa grande, com letras estranhas que parecem um código secreto. A placa diz:</p>
-<p>РЕСТОРАН</p>
-<p>Você olha e pensa: "Isso é impossível. Parece chinês, parece grego, parece... nada que eu conheça." Você tira uma foto e desiste.</p>
-<p>Agora imagine a mesma cena uma hora depois. Você olha para a mesma placa e lê em voz alta:</p>
-<p>Restoran.</p>
-<p>É a mesma palavra: restaurante. Em russo, restaurante se escreve ресторан. E a palavra está ali, na sua frente, desde o começo. Você só não sabia ler.</p>
-<p>Esta aula é sobre essa hora. Em sessenta minutos de leitura atenta, você vai ler qualquer placa russa. Não vai entender todas as palavras ainda — mas vai ler. E isso é o começo de tudo.</p>
-<h2 class="lv-h3">1.2 A boa notícia: você não precisa decorar 33 coisas</h2>
-<p>O alfabeto russo tem 33 letras. Quando você vê esse número, o cérebro entra em pânico. "Trinta e três! É impossível!"</p>
-<p>Mas eu vou te dar uma boa notícia:</p>
-<p>Você não precisa decorar 33 letras. Você precisa decorar cerca de 15. As outras 18 você já conhece ou reconhece.</p>
-<p>Como assim? Porque as letras russas se dividem em quatro grupos:</p>
-<ol type="1">
-<li><p>Letras idênticas ao português (5): A, K, M, O, T.</p></li>
-<li><p>Letras parecidas com o português, mas com som diferente (7): В, Е, Н, Р, С, У, Х.</p></li>
-<li><p>Letras novas, mas com sons que você já conhece (13): Б, Г, Д, Ё, З, И, Й, Л, П, Ф, Э, Ю, Я.</p></li>
-<li><p>Letras realmente novas e sons novos (8): Ж, Ц, Ч, Ш, Щ, Ъ, Ы, Ь.</p></li>
-</ol>
-<p>Total: 33 letras. Mas dos 4 grupos, os grupos 1 e 2 são quase gratuitos. O grupo 3 você aprende em uma hora. O grupo 4 é o único que exige esforço.</p>
-<p>Vamos por partes.</p>
-<h2 class="lv-h3">1.3 Antes de começar: por que o alfabeto se chama cirílico</h2>
-<p>O alfabeto russo se chama cirílico (кириллица) porque foi criado por São Cirilo, um monge grego, no século IX. Ele queria traduzir a Bíblia para as línguas eslavas — e para isso precisava de um alfabeto. Como ele era grego, ele baseou o alfabeto no grego, com adaptações.</p>
-<p>O que isso significa para você:</p>
-<p>Muitas letras russas são parecidas com letras gregas que você já viu em matemática, física ou na vida:</p>
-<ul>
-<li><p>Г (gama) — parece um "g" virado</p></li>
-<li><p>Д (delta) — parece um "d" com pernas</p></li>
-<li><p>Л (lambda) — parece um "l" com pernas</p></li>
-<li><p>П (pi) — parece um "p" com pernas</p></li>
-<li><p>Ф (fi) — parece um "f" com um círculo</p></li>
-</ul>
-<p>Se você já viu essas letras gregas, já tem meio caminho andado.</p>
-<h2 class="lv-h3">1.4 GRUPO 1 — As letras idênticas ao português</h2>
-<p>Cinco letras são iguais ao português em forma e som. Você já as conhece. Não precisa fazer nada.</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 15%"/>
-<col style="width: 43%"/>
-<col style="width: 41%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Som (português)</strong></th>
-<th><strong>Exemplo</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>А а</strong></td>
-<td><strong>"a" de casa</strong></td>
-<td><strong>ма́ма (mama)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>К к</strong></td>
-<td><strong>"k" de kilo</strong></td>
-<td><strong>кот (kot — gato)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>М м</strong></td>
-<td><strong>"m" de mãe</strong></td>
-<td><strong>ма́ма (mama)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>О о</strong></td>
-<td><strong>"o" de bola</strong></td>
-<td><strong>дом (dom — casa)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Т т</strong></td>
-<td><strong>"t" de tia</strong></td>
-<td><strong>там (tam — lá)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<aside class="lv-dica"><p>Repare: essas cinco letras são idênticas ao português. Sem pegadinha. Sem exceção. Você já as conhece.</p></aside>
-<p>Exercício mental: tente ler estas palavras usando só essas cinco letras:</p>
-<ul>
-<li><p>том → tom (volume)</p></li>
-<li><p>кот → kot (gato)</p></li>
-<li><p>мак → mak (papoula)</p></li>
-<li><p>такт → takt (compasso)</p></li>
-<li><p>ком → kom (torrão)</p></li>
-</ul>
-<p>Você já está lendo russo. Sem ter estudado nada.</p>
-<h2 class="lv-h3">1.5 GRUPO 2 — As letras "falsas amigas"</h2>
-<p>Aqui está o primeiro perigo. Existem sete letras que parecem com letras do português, mas soam diferentes. São as "falsas amigas" — parecem familiares, mas enganam.</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 9%"/>
-<col style="width: 17%"/>
-<col style="width: 45%"/>
-<col style="width: 28%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Parece...</strong></th>
-<th><strong>Mas soa...</strong></th>
-<th><strong>Exemplo</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>В в</strong></td>
-<td><strong>"B"</strong></td>
-<td><strong>"V" de vida</strong></td>
-<td><strong>вода́ (vadá — água)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Е е</strong></td>
-<td><strong>"E"</strong></td>
-<td><strong>"IÉ" de ié-ié</strong></td>
-<td><strong>не́бо (niéba — céu)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Н н</strong></td>
-<td><strong>"H"</strong></td>
-<td><strong>"N" de nariz</strong></td>
-<td><strong>нос (nos — nariz)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Р р</strong></td>
-<td><strong>"P"</strong></td>
-<td><strong>"R" de carro (vibrante)</strong></td>
-<td><strong>рука́ (ruká — mão)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>С с</strong></td>
-<td><strong>"C"</strong></td>
-<td><strong>"S" de sapo</strong></td>
-<td><strong>соба́ка (sabáka — cachorro)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>У у</strong></td>
-<td><strong>"Y"</strong></td>
-<td><strong>"U" de urso</strong></td>
-<td><strong>у́тро (útra — manhã)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Х х</strong></td>
-<td><strong>"X"</strong></td>
-<td><strong>"KH" (som gutural, como "r" carioca ou "j" espanhol)</strong></td>
-<td><strong>хорошо́ (kharachó — bem)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Vou te dar uma tabela mnemônica. Grave isto:</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 46%"/>
-<col style="width: 53%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Falsa amiga</strong></th>
-<th><strong>O que ela realmente é</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>В parece B mas é V</strong></td>
-<td><strong>Pense: "В de Vida"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Е parece E mas é IÉ</strong></td>
-<td><strong>Pense: "Е de IÉ-ié"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Н parece H mas é N</strong></td>
-<td><strong>Pense: "Н de Nariz"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Р parece P mas é R</strong></td>
-<td><strong>Pense: "Р de Rato"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>С parece C mas é S</strong></td>
-<td><strong>Pense: "С de Sapo"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>У parece Y mas é U</strong></td>
-<td><strong>Pense: "У de Urso"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Х parece X mas é KH</strong></td>
-<td><strong>Pense: "Х de KHaki"</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>A regra de ouro do Grupo 2:</p>
-<p>Se a letra parece latina mas não é, desconfie. O russo pegou emprestado a forma, mas mudou o som.</p>
-<p>Exercício mental: leia estas palavras com as falsas amigas:</p>
-<ul>
-<li><p>вам → vam (a vocês)</p></li>
-<li><p>нет → niet (não)</p></li>
-<li><p>нос → nos (nariz)</p></li>
-<li><p>рука́ → ruká (mão)</p></li>
-<li><p>сон → son (sonho)</p></li>
-<li><p>ус → us (bigode)</p></li>
-<li><p>хор → khor (coro)</p></li>
-</ul>
-<p>Você já está lendo frases inteiras em russo.</p>
-<h2 class="lv-h3">1.6 GRUPO 3 — Letras novas com sons que você já conhece</h2>
-<p>Aqui está a parte fácil. Treze letras são novas na forma, mas os sons são sons que você já conhece (ou quase). Você só precisa aprender a associar forma + som.</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 9%"/>
-<col style="width: 49%"/>
-<col style="width: 41%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Som (português)</strong></th>
-<th><strong>Exemplo</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Б б</strong></td>
-<td><strong>"b" de bola</strong></td>
-<td><strong>брат (brat — irmão)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Г г</strong></td>
-<td><strong>"g" de gato (sempre duro, nunca "j")</strong></td>
-<td><strong>го́род (górat — cidade)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Д д</strong></td>
-<td><strong>"d" de dado</strong></td>
-<td><strong>дом (dom — casa)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ё ё</strong></td>
-<td><strong>"ió" de iô-iô (sempre tônico)</strong></td>
-<td><strong>ёлка (iólka — pinheiro de Natal)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>З з</strong></td>
-<td><strong>"z" de zebra</strong></td>
-<td><strong>зуб (zub — dente)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>И и</strong></td>
-<td><strong>"i" de idade</strong></td>
-<td><strong>игра́ (igrá — jogo)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Й й</strong></td>
-<td><strong>"i" fraco de pai (semivogal)</strong></td>
-<td><strong>мой (moi — meu)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Л л</strong></td>
-<td><strong>"l" de lua</strong></td>
-<td><strong>лампа (lámpa — lâmpada)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>П п</strong></td>
-<td><strong>"p" de pai</strong></td>
-<td><strong>па́па (pápa — papai)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ф ф</strong></td>
-<td><strong>"f" de faca</strong></td>
-<td><strong>футбо́л (futból — futebol)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Э э</strong></td>
-<td><strong>"é" de é</strong></td>
-<td><strong>э́то (éta — isto é)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ю ю</strong></td>
-<td><strong>"iú" de iú</strong></td>
-<td><strong>юг (iuk — sul)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Я я</strong></td>
-<td><strong>"iá" de iate</strong></td>
-<td><strong>я (ia — eu)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Vou te dar macetes para as mais importantes:</p>
-<ul>
-<li><p>Б parece "B", e é mesmo "B". Fácil.</p></li>
-<li><p>Г parece "G" invertido, e é "G" de gato. Sempre duro.</p></li>
-<li><p>Д parece uma casa de pernas, e é "D".</p></li>
-<li><p>Ё é o Е com dois pontinhos. Sempre tônico, som "ió".</p></li>
-<li><p>З parece um "3", e é "Z" de zebra.</p></li>
-<li><p>И parece um "N" invertido, e é "I".</p></li>
-<li><p>Й é o И com um acento. Som "i" fraco.</p></li>
-<li><p>Л parece um "L" com pernas, e é "L".</p></li>
-<li><p>П parece um "P" grego (pi), e é "P".</p></li>
-<li><p>Ф parece um "F" grego (fi), e é "F".</p></li>
-<li><p>Э parece um "É" virado, e é "É" aberto.</p></li>
-<li><p>Ю é "I" + "U" juntos: som "iú".</p></li>
-<li><p>Я é "I" + "A" juntos: som "iá".</p></li>
-</ul>
-<p>Exercício mental: leia estas palavras:</p>
-<ul>
-<li><p>брат → brat (irmão)</p></li>
-<li><p>го́род → górat (cidade)</p></li>
-<li><p>дом → dom (casa)</p></li>
-<li><p>ёлка → iólka (pinheiro)</p></li>
-<li><p>зуб → zub (dente)</p></li>
-<li><p>игра́ → igrá (jogo)</p></li>
-<li><p>мой → moi (meu)</p></li>
-<li><p>лампа → lámpa (lâmpada)</p></li>
-<li><p>па́па → pápa (papai)</p></li>
-<li><p>футбо́л → futból (futebol)</p></li>
-<li><p>э́то → éta (isto é)</p></li>
-<li><p>юг → iuk (sul)</p></li>
-<li><p>я → ia (eu)</p></li>
-</ul>
-<aside class="lv-dica"><p>Repare: você leu 13 palavras em russo. Sem decorar nenhuma lista. Sem sofrimento.</p></aside>
-<h2 class="lv-h3">1.7 GRUPO 4 — Letras realmente novas (e sons novos)</h2>
-<p>Aqui está o grupo que exige esforço. São oito letras que têm forma nova e som novo. Você precisa memorizá-las de verdade.</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 9%"/>
-<col style="width: 28%"/>
-<col style="width: 61%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Som</strong></th>
-<th><strong>Explicação</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Ж ж</strong></td>
-<td><strong>"j" de janela</strong></td>
-<td><strong>Como o "j" português, mas mais duro</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ц ц</strong></td>
-<td><strong>"ts" de tsunami</strong></td>
-<td><strong>Como o "ts" alemão</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Ч ч</strong></td>
-<td><strong>"tch" de tchau</strong></td>
-<td><strong>Como o "tch" português</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ш ш</strong></td>
-<td><strong>"ch" de chuveiro</strong></td>
-<td><strong>Como o "ch" português</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Щ щ</strong></td>
-<td><strong>"tch-tch" macio</strong></td>
-<td><strong>Como o "ch" mais prolongado</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ъ ъ</strong></td>
-<td><strong>(sem som)</strong></td>
-<td><strong>Sinal duro: separa consoante da vogal</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Ы ы</strong></td>
-<td><strong>"i" gutural</strong></td>
-<td><strong>Um "i" dito com a boca de "u"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ь ь</strong></td>
-<td><strong>(sem som)</strong></td>
-<td><strong>Sinal brando: amolece a consoante anterior</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Vou te explicar cada uma com calma:</p>
-<p>Ж — como "j" de janela</p>
-<p>Ж é o som do "j" português (de "janela", "jogo", "jantar"). Parece uma borboleta ou um inseto.</p>
-<ul>
-<li><p>жена́ → jiená (esposa)</p></li>
-<li><p>журна́л → jurnál (revista)</p></li>
-<li><p>жизнь → jizn (vida)</p></li>
-</ul>
-<p>Ц — como "ts" de tsunami</p>
-<p>Ц é o som do "ts" (como em "tsunami", "pizza" italiana). Parece um "U" com pernas.</p>
-<ul>
-<li><p>цена́ → tsená (preço)</p></li>
-<li><p>центр → tsentr (centro)</p></li>
-<li><p>коне́ц → kaniéts (fim)</p></li>
-</ul>
-<p>Ч — como "tch" de tchau</p>
-<p>Ч é o som do "tch" português. Parece um "h" com um chapéu.</p>
-<ul>
-<li><p>час → tchas (hora)</p></li>
-<li><p>чай → tchai (chá)</p></li>
-<li><p>челове́к → tchielaviék (pessoa)</p></li>
-</ul>
-<p>Ш — como "ch" de chuveiro</p>
-<p>Ш é o som do "ch" português (de "chuveiro", "chave"). Parece um "W" com pernas.</p>
-<ul>
-<li><p>шко́ла → shkóla (escola)</p></li>
-<li><p>шапка → shápka (chapéu)</p></li>
-<li><p>шум → shum (barulho)</p></li>
-</ul>
-<p>Щ — como "ch" mais prolongado</p>
-<p>Щ é o som do "ch" mais longo (como em "ch-ch" de "tchutchuca"). Parece um "Ш" com uma perninha.</p>
-<ul>
-<li><p>щи → shshi (sopa de repolho)</p></li>
-<li><p>борщ → borshsh (sopa de beterraba)</p></li>
-<li><p>това́рищ → tavárishsh (camarada)</p></li>
-</ul>
-<p>Ъ — sinal duro (sem som)</p>
-<p>Ъ é um sinal que não tem som próprio. Ele serve para separar uma consoante de uma vogal, mantendo a consoante dura. Aparece em poucas palavras.</p>
-<ul>
-<li><p>объе́кт → abiekt (objeto)</p></li>
-<li><p>объясни́ть → abiasnít (explicar)</p></li>
-<li><p>съесть → siest (comer tudo)</p></li>
-</ul>
-<p>Ы — "i" gutural</p>
-<p>Ы é o som mais difícil para o brasileiro. É um "i" dito com a boca de "u". Você precisa arredondar a boca como se fosse dizer "u" e, ao mesmo tempo, dizer "i". Parece difícil, mas você vai pegar.</p>
-<ul>
-<li><p>мы → my (nós)</p></li>
-<li><p>вы → vy (vocês)</p></li>
-<li><p>сын → syn (filho)</p></li>
-<li><p>ры́ба → ryba (peixe)</p></li>
-</ul>
-<p>Dica: diga "u" e, sem mudar a boca, diga "i". O resultado é aproximadamente "ы".</p>
-<p>Ь — sinal brando (sem som)</p>
-<p>Ь é um sinal que não tem som próprio. Ele amolece a consoante anterior. Ou seja, a consoante que vem antes dele é pronunciada com um leve "i" depois.</p>
-<ul>
-<li><p>день → dien' (dia)</p></li>
-<li><p>ночь → notch' (noite)</p></li>
-<li><p>мать → mat' (mãe)</p></li>
-<li><p>слова́рь → slavár' (dicionário)</p></li>
-</ul>
-<p>Dica: imagine que você está dizendo a palavra e, no final, esboça um "i" muito leve. É isso.</p>
-<h2 class="lv-h3">1.8 A tabela completa do alfabeto russo</h2>
-<p>Aqui está o alfabeto completo, na ordem correta. Repare nas colunas:</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 9%"/>
-<col style="width: 18%"/>
-<col style="width: 34%"/>
-<col style="width: 36%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Nº</strong></th>
-<th><strong>Letra</strong></th>
-<th><strong>Nome</strong></th>
-<th><strong>Som</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>1</strong></td>
-<td><strong>А а</strong></td>
-<td><strong>a</strong></td>
-<td><strong>"a" de casa</strong></td>
-</tr>
-<tr class="even">
-<td><strong>2</strong></td>
-<td><strong>Б б</strong></td>
-<td><strong>bé</strong></td>
-<td><strong>"b" de bola</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>3</strong></td>
-<td><strong>В в</strong></td>
-<td><strong>vé</strong></td>
-<td><strong>"v" de vida</strong></td>
-</tr>
-<tr class="even">
-<td><strong>4</strong></td>
-<td><strong>Г г</strong></td>
-<td><strong>gué</strong></td>
-<td><strong>"g" de gato</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>5</strong></td>
-<td><strong>Д д</strong></td>
-<td><strong>dé</strong></td>
-<td><strong>"d" de dado</strong></td>
-</tr>
-<tr class="even">
-<td><strong>6</strong></td>
-<td><strong>Е е</strong></td>
-<td><strong>ié</strong></td>
-<td><strong>"ié"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>7</strong></td>
-<td><strong>Ё ё</strong></td>
-<td><strong>ió</strong></td>
-<td><strong>"ió"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>8</strong></td>
-<td><strong>Ж ж</strong></td>
-<td><strong>jé</strong></td>
-<td><strong>"j" de janela</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>9</strong></td>
-<td><strong>З з</strong></td>
-<td><strong>zé</strong></td>
-<td><strong>"z" de zebra</strong></td>
-</tr>
-<tr class="even">
-<td><strong>10</strong></td>
-<td><strong>И и</strong></td>
-<td><strong>i</strong></td>
-<td><strong>"i" de idade</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>11</strong></td>
-<td><strong>Й й</strong></td>
-<td><strong>i crátkoie</strong></td>
-<td><strong>"i" fraco</strong></td>
-</tr>
-<tr class="even">
-<td><strong>12</strong></td>
-<td><strong>К к</strong></td>
-<td><strong>ka</strong></td>
-<td><strong>"k" de kilo</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>13</strong></td>
-<td><strong>Л л</strong></td>
-<td><strong>el</strong></td>
-<td><strong>"l" de lua</strong></td>
-</tr>
-<tr class="even">
-<td><strong>14</strong></td>
-<td><strong>М м</strong></td>
-<td><strong>em</strong></td>
-<td><strong>"m" de mãe</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>15</strong></td>
-<td><strong>Н н</strong></td>
-<td><strong>en</strong></td>
-<td><strong>"n" de nariz</strong></td>
-</tr>
-<tr class="even">
-<td><strong>16</strong></td>
-<td><strong>О о</strong></td>
-<td><strong>o</strong></td>
-<td><strong>"o" de bola</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>17</strong></td>
-<td><strong>П п</strong></td>
-<td><strong>pé</strong></td>
-<td><strong>"p" de pai</strong></td>
-</tr>
-<tr class="even">
-<td><strong>18</strong></td>
-<td><strong>Р р</strong></td>
-<td><strong>er</strong></td>
-<td><strong>"r" vibrante</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>19</strong></td>
-<td><strong>С с</strong></td>
-<td><strong>es</strong></td>
-<td><strong>"s" de sapo</strong></td>
-</tr>
-<tr class="even">
-<td><strong>20</strong></td>
-<td><strong>Т т</strong></td>
-<td><strong>té</strong></td>
-<td><strong>"t" de tia</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>21</strong></td>
-<td><strong>У у</strong></td>
-<td><strong>u</strong></td>
-<td><strong>"u" de urso</strong></td>
-</tr>
-<tr class="even">
-<td><strong>22</strong></td>
-<td><strong>Ф ф</strong></td>
-<td><strong>ef</strong></td>
-<td><strong>"f" de faca</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>23</strong></td>
-<td><strong>Х х</strong></td>
-<td><strong>kha</strong></td>
-<td><strong>"kh" gutural</strong></td>
-</tr>
-<tr class="even">
-<td><strong>24</strong></td>
-<td><strong>Ц ц</strong></td>
-<td><strong>tsé</strong></td>
-<td><strong>"ts" de tsunami</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>25</strong></td>
-<td><strong>Ч ч</strong></td>
-<td><strong>tché</strong></td>
-<td><strong>"tch" de tchau</strong></td>
-</tr>
-<tr class="even">
-<td><strong>26</strong></td>
-<td><strong>Ш ш</strong></td>
-<td><strong>cha</strong></td>
-<td><strong>"ch" de chuveiro</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>27</strong></td>
-<td><strong>Щ щ</strong></td>
-<td><strong>shcha</strong></td>
-<td><strong>"ch" prolongado</strong></td>
-</tr>
-<tr class="even">
-<td><strong>28</strong></td>
-<td><strong>Ъ ъ</strong></td>
-<td><strong>tviórdy znak</strong></td>
-<td><strong>(sem som)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>29</strong></td>
-<td><strong>Ы ы</strong></td>
-<td><strong>y</strong></td>
-<td><strong>"i" gutural</strong></td>
-</tr>
-<tr class="even">
-<td><strong>30</strong></td>
-<td><strong>Ь ь</strong></td>
-<td><strong>miákhki znak</strong></td>
-<td><strong>(sem som)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>31</strong></td>
-<td><strong>Э э</strong></td>
-<td><strong>é</strong></td>
-<td><strong>"é" aberto</strong></td>
-</tr>
-<tr class="even">
-<td><strong>32</strong></td>
-<td><strong>Ю ю</strong></td>
-<td><strong>iú</strong></td>
-<td><strong>"iú"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>33</strong></td>
-<td><strong>Я я</strong></td>
-<td><strong>iá</strong></td>
-<td><strong>"iá"</strong></td>
-</tr>
-</tbody>
-</table></div>
-<aside class="lv-dica"><p>Repare: a ordem é parecida com a do alfabeto latino até a letra 21 (У). Depois disso, ela se afasta. Isso é uma herança do grego.</p></aside>
-<h2 class="lv-h3">1.9 A grande sacada: o alfabeto russo é FONÉTICO</h2>
-<p>Aqui está a coisa mais importante desta aula. Preste atenção.</p>
-<p>Em português, a mesma letra pode ter vários sons.</p>
-<p>Pegue o X:</p>
-<ul>
-<li><p>xícara → som "ch"</p></li>
-<li><p>xadrez → som "sh"</p></li>
-<li><p>táxi → som "ks"</p></li>
-<li><p>exame → som "z"</p></li>
-</ul>
-<p>Pegue o S:</p>
-<ul>
-<li><p>sapo → som "s"</p></li>
-<li><p>casa → som "z"</p></li>
-<li><p>posto → som "s"</p></li>
-<li><p>desde → som "dj" ou "z"</p></li>
-</ul>
-<p>Isso é um pesadelo para quem aprende português. Mas o russo é diferente.</p>
-<p>Em russo, cada letra tem, quase sempre, um som fixo. Aprendeu a letra, aprendeu o som. Ponto.</p>
-<p>Isso tem duas exceções (que vamos ver na seção 1.10), mas são exceções previsíveis. O russo é muito mais fonético que o português.</p>
-<p>Isso é uma das razões pelas quais o russo é mais fácil para um brasileiro do que parece. Você não precisa adivinhar a pronúncia — você lê.</p>
-<h2 class="lv-h3">1.10 As duas regras de pronúncia que você precisa saber agora</h2>
-<p>Existem duas regras de pronúncia que já aparecem desde o começo. Você precisa aprendê-las agora.</p>
-<p>Regra 1: O "О" átono vira "А"</p>
-<p>Em russo, a letra О só soa "o" quando está tônica (com acento). Quando está átona (sem acento), soa "a".</p>
-<aside class="lv-dica"><p>Exemplos:</p></aside>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 15%"/>
-<col style="width: 22%"/>
-<col style="width: 61%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Palavra</strong></th>
-<th><strong>Pronúncia</strong></th>
-<th><strong>Tradução</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>дом</strong></td>
-<td><strong>dom</strong></td>
-<td><strong>casa (o "o" está tônico)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>окно́</strong></td>
-<td><strong>aknó</strong></td>
-<td><strong>janela (o primeiro "o" é átono, vira "a")</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>молоко́</strong></td>
-<td><strong>malakó</strong></td>
-<td><strong>leite (só o último "o" é tônico)</strong></td>
-</tr>
-<tr class="even">
-<td><strong>хорошо́</strong></td>
-<td><strong>kharachó</strong></td>
-<td><strong>bem (só o último "o" é tônico)</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Москва́</strong></td>
-<td><strong>maskvá</strong></td>
-<td><strong>Moscou (o primeiro "o" é átono)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>É por isso que você vai ver escritas como "Maskvá" e "Malakó" nos livros. É a pronúncia real. Os russos não dizem "Moskvá", dizem "Maskvá".</p>
-<p>O que fazer: quando você aprende uma palavra nova, aprenda com o acento. Sem o acento, você não sabe se o "o" é "o" ou "a". Guarde a palavra com o acento.</p>
-<p>Regra 2: Consoantes sonoras no fim viram surdas</p>
-<p>Em russo, se uma palavra termina com uma consoante sonora (Б, В, Г, Д, Ж, З), ela é pronunciada como a consoante surda correspondente (П, Ф, К, Т, Ш, С).</p>
-<aside class="lv-dica"><p>Exemplos:</p></aside>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 12%"/>
-<col style="width: 58%"/>
-<col style="width: 28%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Palavra</strong></th>
-<th><strong>Pronúncia real</strong></th>
-<th><strong>Tradução</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>друг</strong></td>
-<td><strong>druk</strong></td>
-<td><strong>amigo</strong></td>
-</tr>
-<tr class="even">
-<td><strong>го́род</strong></td>
-<td><strong>górat</strong></td>
-<td><strong>cidade</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>хлеб</strong></td>
-<td><strong>khlep</strong></td>
-<td><strong>pão</strong></td>
-</tr>
-<tr class="even">
-<td><strong>стол</strong></td>
-<td><strong>stol (não muda — o "л" é sempre sonoro)</strong></td>
-<td><strong>mesa</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Ивано́в</strong></td>
-<td><strong>Ivanóf</strong></td>
-<td><strong>Ivanov (sobrenome)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>É por isso que você vai ver escritas como "druk" e "górat". É a pronúncia real. Os russos não dizem "drug", dizem "druk".</p>
-<p>O que fazer: quando você aprende uma palavra, ouça a pronúncia. Com o tempo, seu ouvido assume o comando.</p>
-<h2 class="lv-h3">1.11 Como reconhecer as letras na rua</h2>
-<p>Aqui está um exercício mental que muda tudo. Imagine que você está na Rússia e vê uma placa. Você olha para a placa e tenta reconhecer as letras. Vamos treinar com placas reais.</p>
-<p>Placa 1:</p>
-<p>РЕСТОРАН</p>
-<ul>
-<li><p>Р = R</p></li>
-<li><p>Е = IE</p></li>
-<li><p>С = S</p></li>
-<li><p>Т = T</p></li>
-<li><p>О = O</p></li>
-<li><p>Р = R</p></li>
-<li><p>А = A</p></li>
-<li><p>Н = N</p></li>
-</ul>
-<p>Resultado: RESTORAN = Restaurante.</p>
-<p>Placa 2:</p>
-<p>МЕТРО</p>
-<ul>
-<li><p>М = M</p></li>
-<li><p>Е = IE</p></li>
-<li><p>Т = T</p></li>
-<li><p>Р = R</p></li>
-<li><p>О = O</p></li>
-</ul>
-<p>Resultado: METRO = Metrô.</p>
-<p>Placa 3:</p>
-<p>АПТЕКА</p>
-<ul>
-<li><p>А = A</p></li>
-<li><p>П = P</p></li>
-<li><p>Т = T</p></li>
-<li><p>Е = IE</p></li>
-<li><p>К = K</p></li>
-<li><p>А = A</p></li>
-</ul>
-<p>Resultado: APTEKA = Farmácia.</p>
-<p>Placa 4:</p>
-<p>БАНК</p>
-<ul>
-<li><p>Б = B</p></li>
-<li><p>А = A</p></li>
-<li><p>Н = N</p></li>
-<li><p>К = K</p></li>
-</ul>
-<p>Resultado: BANK = Banco.</p>
-<p>Placa 5:</p>
-<p>ОТЕЛЬ</p>
-<ul>
-<li><p>О = O</p></li>
-<li><p>Т = T</p></li>
-<li><p>Е = IE</p></li>
-<li><p>Л = L</p></li>
-<li><p>Ь = sinal brando</p></li>
-</ul>
-<p>Resultado: OTEL = Hotel.</p>
-<p>Placa 6:</p>
-<p>ТЕАТР</p>
-<ul>
-<li><p>Т = T</p></li>
-<li><p>Е = IE</p></li>
-<li><p>А = A</p></li>
-<li><p>Т = T</p></li>
-<li><p>Р = R</p></li>
-</ul>
-<p>Resultado: TEATR = Teatro.</p>
-<aside class="lv-dica"><p>Repare: você leu seis placas russas. Sem decorar nenhum alfabeto complicado. Sem sofrer.</p></aside>
-<p>É isso que o alfabeto russo faz. Ele é muito mais amigável do que parece.</p>
-<h2 class="lv-h3">1.12 Vogais duras e vogais brandas: a chave para as consoantes</h2>
-<p>Aqui está um conceito que você precisa entender desde o começo. Ele vai aparecer em todas as aulas seguintes.</p>
-<p>As vogais russas se dividem em duas famílias:</p>
-<p>Vogais DURAS (5):</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 37%"/>
-<col style="width: 62%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Som</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>А</strong></td>
-<td><strong>"a"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>О</strong></td>
-<td><strong>"o"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>У</strong></td>
-<td><strong>"u"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Э</strong></td>
-<td><strong>"é"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Ы</strong></td>
-<td><strong>"i" gutural</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Vogais BRANDAS (5):</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 44%"/>
-<col style="width: 55%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Letra</strong></th>
-<th><strong>Som</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Я</strong></td>
-<td><strong>"iá"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ё</strong></td>
-<td><strong>"ió"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Ю</strong></td>
-<td><strong>"iú"</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Е</strong></td>
-<td><strong>"ié"</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>И</strong></td>
-<td><strong>"i"</strong></td>
-</tr>
-</tbody>
-</table></div>
-<aside class="lv-dica"><p>Repare:</p></aside>
-<ul>
-<li><p>А ↔︎ Я (a ↔︎ iá)</p></li>
-<li><p>О ↔︎ Ё (o ↔︎ ió)</p></li>
-<li><p>У ↔︎ Ю (u ↔︎ iú)</p></li>
-<li><p>Э ↔︎ Е (é ↔︎ ié)</p></li>
-<li><p>Ы ↔︎ И (i gutural ↔︎ i)</p></li>
-</ul>
-<p>Cada vogal dura tem uma vogal branda correspondente. Isso é fundamental porque:</p>
-<p>Quando uma consoante vem antes de uma vogal branda, ela é pronunciada "amolecida" (palatalizada). Quando vem antes de uma vogal dura, ela é "dura".</p>
-<aside class="lv-dica"><p>Exemplos:</p></aside>
-<ul>
-<li><p>но (no) → "n" duro</p></li>
-<li><p>нё (nió) → "n" amolecido</p></li>
-<li><p>ну (nu) → "n" duro</p></li>
-<li><p>ню (niú) → "n" amolecido</p></li>
-</ul>
-<p>Por enquanto, você não precisa se preocupar com isso. Mas saiba que:</p>
-<p>As vogais brandas (Я, Ё, Ю, Е, И) são o "segredo" para entender as consoantes russas. Sempre que você vir uma dessas letras depois de uma consoante, a consoante é "mole".</p>
-<p>Vamos ver isso na prática na próxima seção.</p>
-<h2 class="lv-h3">1.13 As consoantes surdas e sonoras</h2>
-<p>Em russo, as consoantes se dividem em dois grupos, formando pares:</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 26%"/>
-<col style="width: 37%"/>
-<col style="width: 35%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Surda</strong></th>
-<th><strong>Sonora</strong></th>
-<th><strong>Par</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>П п</strong></td>
-<td><strong>Б б</strong></td>
-<td><strong>P ↔︎ B</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ф ф</strong></td>
-<td><strong>В в</strong></td>
-<td><strong>F ↔︎ V</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>К к</strong></td>
-<td><strong>Г г</strong></td>
-<td><strong>K ↔︎ G</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Т т</strong></td>
-<td><strong>Д д</strong></td>
-<td><strong>T ↔︎ D</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>С с</strong></td>
-<td><strong>З з</strong></td>
-<td><strong>S ↔︎ Z</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Ш ш</strong></td>
-<td><strong>Ж ж</strong></td>
-<td><strong>SH ↔︎ ZH</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Como funciona:</p>
-<ul>
-<li><p>Consoantes surdas são pronunciadas sem vibração das cordas vocais (como "p", "f", "k", "t", "s", "sh").</p></li>
-<li><p>Consoantes sonoras são pronunciadas com vibração das cordas vocais (como "b", "v", "g", "d", "z", "zh").</p></li>
-</ul>
-<p>A regra:</p>
-<p>Quando uma consoante sonora está no fim de uma palavra, ela é pronunciada como a surda correspondente.</p>
-<aside class="lv-dica"><p>Exemplos:</p></aside>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 21%"/>
-<col style="width: 47%"/>
-<col style="width: 30%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Palavra</strong></th>
-<th><strong>Pronúncia</strong></th>
-<th><strong>Tradução</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>друг</strong></td>
-<td><strong>druk (Г virou К)</strong></td>
-<td><strong>amigo</strong></td>
-</tr>
-<tr class="even">
-<td><strong>хлеб</strong></td>
-<td><strong>khlep (Б virou П)</strong></td>
-<td><strong>pão</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>го́род</strong></td>
-<td><strong>górat (Д virou Т)</strong></td>
-<td><strong>cidade</strong></td>
-</tr>
-<tr class="even">
-<td><strong>нож</strong></td>
-<td><strong>nosh (Ж virou Ш)</strong></td>
-<td><strong>faca</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>É por isso que "друг" soa "druk". A letra Г no fim da palavra vira К.</p>
-<h2 class="lv-h3">1.14 Como escrever em cursiva russa</h2>
-<p>Um detalhe importante: os russos escrevem em cursiva com muita frequência. Você vai ver textos manuscritos com letras diferentes das letras impressas.</p>
-<p>Aqui está uma pequena tabela das diferenças principais:</p>
-<div class="lv-matriz-wrap"><table class="lv-matriz">
-<colgroup>
-<col style="width: 23%"/>
-<col style="width: 24%"/>
-<col style="width: 51%"/>
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Impressa</strong></th>
-<th><strong>Cursiva</strong></th>
-<th><strong>Exemplo</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>А а</strong></td>
-<td><strong>А а</strong></td>
-<td><strong>quase igual</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Б б</strong></td>
-<td><strong>Б б</strong></td>
-<td><strong>parecido</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Г г</strong></td>
-<td><strong>Г г</strong></td>
-<td><strong>parecido</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Д д</strong></td>
-<td><strong>Д д</strong></td>
-<td><strong>vira um "g" com pernas</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Е е</strong></td>
-<td><strong>Е е</strong></td>
-<td><strong>parecido</strong></td>
-</tr>
-<tr class="even">
-<td><strong>И и</strong></td>
-<td><strong>И и</strong></td>
-<td><strong>parecido</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Л л</strong></td>
-<td><strong>Л л</strong></td>
-<td><strong>vira um "l" com curvas</strong></td>
-</tr>
-<tr class="even">
-<td><strong>М м</strong></td>
-<td><strong>М м</strong></td>
-<td><strong>parecido</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Т т</strong></td>
-<td><strong>Т т</strong></td>
-<td><strong>vira um "m"</strong></td>
-</tr>
-</tbody>
-</table></div>
-<p>Por enquanto, foque nas letras impressas. Quando você tiver contato com textos russos manuscritos, você vai aprender a cursiva aos poucos.</p>
-<h2 class="lv-h3">1.15 EXERCÍCIOS</h2>
-<p class="lv-eyebrow"><strong>Exercício 1 — Identifique o som</strong></p>
-<p>Escreva o som de cada letra (em português).</p>
-<ol type="1">
-<li><p>В → ____</p></li>
-<li><p>Е → ____</p></li>
-<li><p>Н → ____</p></li>
-<li><p>Р → ____</p></li>
-<li><p>С → ____</p></li>
-<li><p>У → ____</p></li>
-<li><p>Х → ____</p></li>
-<li><p>Б → ____</p></li>
-<li><p>Ж → ____</p></li>
-<li><p>Ц → ____</p></li>
-<li><p>Ч → ____</p></li>
-<li><p>Ш → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 2 — Leia as palavras</strong></p>
-<p>Leia cada palavra em voz alta (usando a tabela do alfabeto).</p>
-<ol type="1">
-<li><p>дом → ____</p></li>
-<li><p>брат → ____</p></li>
-<li><p>вода́ → ____</p></li>
-<li><p>не́бо → ____</p></li>
-<li><p>нос → ____</p></li>
-<li><p>рука́ → ____</p></li>
-<li><p>соба́ка → ____</p></li>
-<li><p>у́тро → ____</p></li>
-<li><p>хорошо́ → ____</p></li>
-<li><p>ма́ма → ____</p></li>
-<li><p>па́па → ____</p></li>
-<li><p>лампа → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 3 — As falsas amigas</strong></p>
-<p>Cada palavra abaixo tem uma "falsa amiga". Corrija a pronúncia.</p>
-<ol type="1">
-<li><p>вам → "bam"? Não. É ____.</p></li>
-<li><p>нет → "net"? Não. É ____.</p></li>
-<li><p>нос → "hos"? Não. É ____.</p></li>
-<li><p>рука́ → "puká"? Não. É ____.</p></li>
-<li><p>сон → "kon"? Não. É ____.</p></li>
-<li><p>ус → "ys"? Não. É ____.</p></li>
-<li><p>хор → "xor"? Não. É ____.</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 4 — Encontre a letra</strong></p>
-<p>Escreva a letra russa correspondente ao som.</p>
-<ol type="1">
-<li><p>"b" de bola → ____</p></li>
-<li><p>"v" de vida → ____</p></li>
-<li><p>"g" de gato → ____</p></li>
-<li><p>"d" de dado → ____</p></li>
-<li><p>"z" de zebra → ____</p></li>
-<li><p>"i" de idade → ____</p></li>
-<li><p>"l" de lua → ____</p></li>
-<li><p>"p" de pai → ____</p></li>
-<li><p>"f" de faca → ____</p></li>
-<li><p>"tch" de tchau → ____</p></li>
-<li><p>"ch" de chuveiro → ____</p></li>
-<li><p>"j" de janela → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 5 — Transliteração</strong></p>
-<p>Transcreva as palavras abaixo para o alfabeto latino (transliteração).</p>
-<ol type="1">
-<li><p>ма́ма → ____</p></li>
-<li><p>го́род → ____</p></li>
-<li><p>челове́к → ____</p></li>
-<li><p>шко́ла → ____</p></li>
-<li><p>жизнь → ____</p></li>
-<li><p>чай → ____</p></li>
-<li><p>дом → ____</p></li>
-<li><p>брат → ____</p></li>
-<li><p>футбо́л → ____</p></li>
-<li><p>э́то → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 6 — Placas russas</strong></p>
-<p>Leia as placas abaixo e diga o que significam em português.</p>
-<ol type="1">
-<li><p>РЕСТОРАН → ____</p></li>
-<li><p>МЕТРО → ____</p></li>
-<li><p>АПТЕКА → ____</p></li>
-<li><p>БАНК → ____</p></li>
-<li><p>ОТЕЛЬ → ____</p></li>
-<li><p>ТЕАТР → ____</p></li>
-<li><p>КИНО → ____</p></li>
-<li><p>МУЗЕЙ → ____</p></li>
-<li><p>ПОЧТА → ____</p></li>
-<li><p>ТАКСИ → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 7 — Vogais duras e brandas</strong></p>
-<p>Associe cada vogal dura com sua vogal branda correspondente.</p>
-<ol type="1">
-<li><p>А ↔︎ ____</p></li>
-<li><p>О ↔︎ ____</p></li>
-<li><p>У ↔︎ ____</p></li>
-<li><p>Э ↔︎ ____</p></li>
-<li><p>Ы ↔︎ ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 8 — Pronúncia com "О" átono</strong></p>
-<p>Leia as palavras e indique onde o "О" soa "o" e onde soa "a".</p>
-<ol type="1">
-<li><p>дом → ____</p></li>
-<li><p>окно́ → ____</p></li>
-<li><p>молоко́ → ____</p></li>
-<li><p>хорошо́ → ____</p></li>
-<li><p>Москва́ → ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 9 — Consoantes sonoras no fim</strong></p>
-<p>Leia as palavras e indique qual consoante soa no fim.</p>
-<ol type="1">
-<li><p>друг → soa ____</p></li>
-<li><p>хлеб → soa ____</p></li>
-<li><p>го́род → soa ____</p></li>
-<li><p>нож → soa ____</p></li>
-<li><p>стол → soa ____</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 10 — Produza</strong></p>
-<p>Escreva em russo (com caracteres cirílicos) as seguintes palavras em português (use a tabela do alfabeto):</p>
-<ol type="1">
-<li><p>mama → ____</p></li>
-<li><p>papa → ____</p></li>
-<li><p>dom → ____</p></li>
-<li><p>brat → ____</p></li>
-<li><p>futbol → ____</p></li>
-<li><p>teatr → ____</p></li>
-<li><p>bank → ____</p></li>
-<li><p>metro → ____</p></li>
-<li><p>taksi → ____</p></li>
-<li><p>restoran → ____</p></li>
-</ol>
-<h2 class="lv-h3">1.16 GABARITO</h2>
-<p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
-<ol type="1">
-<li><p>"v" — 2. "ié" — 3. "n" — 4. "r" — 5. "s" — 6. "u" — 7. "kh" — 8. "b" — 9. "j" — 10. "ts" — 11. "tch" — 12. "ch"</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 2:</strong></p>
-<ol type="1">
-<li><p>dom — 2. brat — 3. vadá — 4. niéba — 5. nos — 6. ruká — 7. sabáka — 8. útra — 9. kharachó — 10. máma — 11. pápa — 12. lámpa</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 3:</strong></p>
-<ol type="1">
-<li><p>vam — 2. niet — 3. nos — 4. ruká — 5. son — 6. us — 7. khor</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 4:</strong></p>
-<ol type="1">
-<li><p>Б — 2. В — 3. Г — 4. Д — 5. З — 6. И — 7. Л — 8. П — 9. Ф — 10. Ч — 11. Ш — 12. Ж</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 5:</strong></p>
-<ol type="1">
-<li><p>mama — 2. gorat — 3. tchelaviek — 4. shkola — 5. jizn — 6. tchai — 7. dom — 8. brat — 9. futbol — 10. eta</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 6:</strong></p>
-<ol type="1">
-<li><p>Restaurante — 2. Metrô — 3. Farmácia — 4. Banco — 5. Hotel — 6. Teatro — 7. Cinema — 8. Museu — 9. Correio — 10. Táxi</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 7:</strong></p>
-<ol type="1">
-<li><p>А ↔︎ Я — 2. О ↔︎ Ё — 3. У ↔︎ Ю — 4. Э ↔︎ Е — 5. Ы ↔︎ И</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 8:</strong></p>
-<ol type="1">
-<li><p>дом → "o" tônico — 2. окно́ → "a" átono + "o" tônico — 3. молоко́ → "a" átono + "a" átono + "o" tônico — 4. хорошо́ → "a" + "a" + "o" tônico — 5. Москва́ → "a" átono + "a" tônico</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 9:</strong></p>
-<ol type="1">
-<li><p>друг → "k" (Г virou К) — 2. хлеб → "p" (Б virou П) — 3. го́род → "t" (Д virou Т) — 4. нож → "sh" (Ж virou Ш) — 5. стол → "l" (não muda)</p></li>
-</ol>
-<p class="lv-eyebrow"><strong>Exercício 10:</strong></p>
-<ol type="1">
-<li><p>ма́ма — 2. па́па — 3. дом — 4. брат — 5. футбо́л — 6. теа́тр — 7. банк — 8. метро́ — 9. такси́ — 10. рестора́н</p></li>
-</ol>
-<h2 class="lv-h3">1.17 RESUMO DE BOLSO — AULA 1</h2>
-<ol type="1">
-<li><p>O alfabeto russo tem 33 letras. Mas você só precisa decorar cerca de 15. As outras 18 você já conhece ou reconhece.</p></li>
-<li><p>As letras se dividem em 4 grupos:</p>
-<ul>
-<li><p>Idênticas ao português (А, К, М, О, Т).</p></li>
-<li><p>Falsas amigas (В, Е, Н, Р, С, У, Х).</p></li>
-<li><p>Novas, mas com sons conhecidos (Б, Г, Д, Ё, З, И, Й, Л, П, Ф, Э, Ю, Я).</p></li>
-<li><p>Realmente novas e sons novos (Ж, Ц, Ч, Ш, Щ, Ъ, Ы, Ь).</p></li>
-</ul></li>
-<li><p>As falsas amigas são o maior perigo:</p>
-<ul>
-<li><p>В = V (não B)</p></li>
-<li><p>Е = IÉ (não E)</p></li>
-<li><p>Н = N (não H)</p></li>
-<li><p>Р = R (não P)</p></li>
-<li><p>С = S (não K)</p></li>
-<li><p>У = U (não Y)</p></li>
-<li><p>Х = KH (não X)</p></li>
-</ul></li>
-<li><p>O alfabeto russo é fonético. Cada letra tem, quase sempre, um som fixo. Isso é uma vantagem enorme.</p></li>
-<li><p>Duas regras de pronúncia para aprender agora:</p>
-<ul>
-<li><p>О átono vira А: окно́ = aknó, молоко́ = malakó.</p></li>
-<li><p>Consoantes sonoras no fim viram surdas: друг = druk, хлеб = khlep.</p></li>
-</ul></li>
-<li><p>Vogais duras e brandas:</p>
-<ul>
-<li><p>Duras: А, О, У, Э, Ы</p></li>
-<li><p>Brandas: Я, Ё, Ю, Е, И</p></li>
-</ul></li>
-<li><p>A grande sacada: o alfabeto russo é muito mais amigável do que parece. Você já leu seis placas russas nesta aula. Em uma hora, você vai ler qualquer placa.</p></li>
-</ol>
-<h2 class="lv-h3">1.18 O que vem na próxima aula</h2>
-<p>Na próxima aula, você vai aprender a primeira grande regra do russo: o gênero dos substantivos. Você vai entender que, no russo, a última letra da palavra decide se ela é masculina, feminina ou neutra — e por que isso importa tanto.</p>
-<p>Spoiler: é mais fácil do que parece. E você já tem a ferramenta para começar.</p>
-<p>Fim da Aula 1.</p>
-<p>Pronto. Agora você tem a Aula 1 — O Alfabeto Russo completa, com:</p>
-<ul>
-<li><p>Cena interativa (você lendo РЕСТОРАН como código secreto e descobrindo depois que é "restaurante").</p></li>
-<li><p>A boa notícia (você não precisa decorar 33 letras; só 15).</p></li>
-<li><p>A origem do alfabeto (cirílico, São Cirilo, grego).</p></li>
-<li><p>Os 4 grupos de letras (do mais fácil ao mais difícil).</p></li>
-<li><p>As falsas amigas (В, Е, Н, Р, С, У, Х) com macetes.</p></li>
-<li><p>Os 4 grupos detalhados com exemplos.</p></li>
-<li><p>A tabela completa do alfabeto (33 letras).</p></li>
-<li><p>A grande sacada (o russo é fonético).</p></li>
-<li><p>As duas regras de pronúncia (О átono, consoantes finais).</p></li>
-<li><p>As vogais duras e brandas (com os pares).</p></li>
-<li><p>As consoantes surdas e sonoras (com os pares).</p></li>
-<li><p>Leitura de 6 placas russas (com o passo a passo).</p></li>
-<li><aside class="lv-dica"><p>Curiosidade sobre cursiva.</p></aside></li>
-<li><p>10 exercícios variados, com gabarito completo.</p></li>
-<li><p>Resumo de bolso.</p></li>
-</ul>
-<h1 class="lv-h1" id="aula-2">AULA 2 — O GÊNERO DOS SUBSTANTIVOS</h1>
+<section class="lv-secao-folha lv-sumario-bloco"><h2 class="lv-h3">Sumário</h2><ol class="lv-sumario"><li><a href="#aula-1">AULA 1 — O GÊNERO DOS SUBSTANTIVOS</a></li><li><a href="#aula-2">AULA 2 — O GÊNERO DOS ADJETIVOS</a></li><li><a href="#aula-3">AULA 3 — OS VERBOS NO PRESENTE</a></li><li><a href="#aula-4">AULA 4 — O PASSADO E O FUTURO</a></li><li><a href="#aula-5">AULA 5 — O CASO ACUSATIVO</a></li><li><a href="#aula-6">AULA 6 — O CASO PREPOSITIVO</a></li><li><a href="#aula-7">AULA 7 — O CASO DATIVO</a></li><li><a href="#aula-8">AULA 8 — O CASO INSTRUMENTAL</a></li><li><a href="#aula-9">AULA 9 — GENITIVO I: O "DE" E A NEGAÇÃO</a></li><li><a href="#aula-10">AULA 10 — GENITIVO II: PLURAL, NÚMEROS E PREPOSIÇÕES</a></li></ol></section></div>
+<h1 class="lv-h1" id="aula-1">AULA 1 — O GÊNERO DOS SUBSTANTIVOS</h1>
 <p>(ou: como saber, em três segundos, se uma palavra russa é masculina, feminina ou neutra)</p>
-<h2 class="lv-h3">2.1 Antes de mais nada: o que é um substantivo?</h2>
+<h2 class="lv-h3">1.1 Antes de mais nada: o que é um substantivo?</h2>
 <p>Você já ouviu a palavra "substantivo" mil vezes na escola. Mas vou refrescar sua memória, porque isso importa para o que vem agora.</p>
 <p><strong>Substantivo é a palavra que nomeia.</strong> Nomeia coisas, pessoas, lugares, ideias, sentimentos. Casa. Mapa. Cachorro. Amizade. Café. Brasil. É o "quem" ou o "quê" de qualquer frase. Se você consegue apontar para algo e dar um nome, esse nome é um substantivo.</p>
 <p>Em português, a gente nem pensa muito nisso. A gente aprendeu a língua tão naturalmente que substantivo é só uma palavra entre outras. Mas quando você aprende uma língua nova, precisa entender o que é um substantivo, porque ele é a base de tudo. E, no russo, o substantivo tem uma propriedade que vai determinar <strong>tudo</strong> o que vem depois: <strong>o gênero</strong>.</p>
-<h2 class="lv-h3">2.2 A primeira boa notícia: o russo não tem artigos</h2>
+<h2 class="lv-h3">1.2 A primeira boa notícia: o russo não tem artigos</h2>
 <p>Aqui você respira aliviado. O russo não tem artigos. Nem definidos (o, a, os, as), nem indefinidos (um, uma, uns, umas). Nada.</p>
 <p>Em português, a gente diz "o mapa" ou "a casa". O artigo faz parte da palavra. Em russo, não. Дом pode significar "casa", "a casa" ou "uma casa". O contexto decide. Você não precisa se preocupar com artigo nenhum. Zero.</p>
 <p><strong>Mas isso traz um problema.</strong> Em português, quem manda no gênero do substantivo é o artigo. Veja o teste:</p>
@@ -1717,7 +342,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </ul>
 <p>Repare que a palavra "mapa" termina em -a. Em português, você poderia pensar que é feminina. Mas não é. <strong>O artigo "o" é que manda.</strong> Do mesmo jeito, "casa" termina em -a, e o artigo "a" confirma o feminino. Em português, a última letra não é a autoridade. A autoridade é o artigo.</p>
 <p><strong>Agora, a pergunta inevitável:</strong> se em russo não existe artigo, quem manda no gênero?</p>
-<h2 class="lv-h3">2.3 Quem manda no gênero russo: a última letra</h2>
+<h2 class="lv-h3">1.3 Quem manda no gênero russo: a última letra</h2>
 <p>Resposta direta: <strong>a última letra da palavra.</strong> É ela que determina o gênero. Sem artigo, sem exceção, sem discussão.</p>
 <p>E aqui vem a segunda novidade: o russo tem <strong>três</strong> gêneros, não dois.</p>
 <ol type="1">
@@ -1726,7 +351,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <li><p><strong>Neutro</strong> — ele/ela (оно) — é o "it" do inglês, onde moram as coisas, os objetos, os conceitos.</p></li>
 </ol>
 <p>Você já ouviu falar que o russo tem "gênero neutro"? É isso. Uma terceira caixa onde as palavras que não são nem masculinas nem femininas vão parar.</p>
-<h2 class="lv-h3">2.4 A tabela mestra: o gênero pela terminação</h2>
+<h2 class="lv-h3">1.4 A tabela mestra: o gênero pela terminação</h2>
 <p>Aqui está a regra que resolve 95% dos casos. Olhe a última letra. Aplique a tabela. Pronto.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -1785,7 +410,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </tbody>
 </table></div>
 <p><strong>É só isso.</strong> Terminou em consoante? Masculino. Terminou em -а ou -я? Feminino. Terminou em -о, -е ou -мя? Neutro. Terminou em -ь? Você precisa consultar o dicionário — e vou te explicar por quê daqui a pouco.</p>
-<h2 class="lv-h3">2.5 O protocolo de três segundos</h2>
+<h2 class="lv-h3">1.5 O protocolo de três segundos</h2>
 <p>Para qualquer palavra nova que você encontrar, faça isso:</p>
 <p>1. Olhe a última letra.</p>
 <p>2. Aplique a regra:</p>
@@ -1797,7 +422,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </ul>
 <p><strong>3. Anote a palavra junto com o gênero.</strong> Sempre. Nunca decore uma palavra russa sem o gênero. O flashcard certo não é "дом = casa". É "дом = casa (masculino)". O gênero vem junto, sempre — porque, como você vai ver na próxima aula, o adjetivo depende disso.</p>
 <p>Parece simples? É simples. Mas tem algumas armadilhas. E é sobre elas que vamos falar agora.</p>
-<h2 class="lv-h3">2.6 ARMADILHA Nº 1 — O sinal brando (-ь)</h2>
+<h2 class="lv-h3">1.6 ARMADILHA Nº 1 — O sinal brando (-ь)</h2>
 <p>O -ь (chamado de "sinal brando" ou "мягкий знак") é a pedra no sapato do estudante de russo.</p>
 <p>Ele não tem som próprio. Ele não é uma vogal, não é uma consoante. Ele é um sinal que <strong>amolece</strong> a consoante anterior. Pense nele como um "tempero" que muda a textura do som, mas não acrescenta nada.</p>
 <p>O problema é que, para o gênero, ele é <strong>ambíguo</strong>. Alguns substantivos terminados em -ь são masculinos. Outros são femininos. Não tem regra. Não tem lógica. <strong>Você tem que consultar o dicionário.</strong></p>
@@ -1878,20 +503,20 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </table></div>
 <p><strong>Como saber?</strong> Só olhando no dicionário. Mas não desespere. Com o tempo, você vai ouvir o gênero, porque os adjetivos que acompanham a palavra entregam o jogo. Um russo diz большо́й день ("um grande dia") e больша́я ночь ("uma grande noite"). A terminação do adjetivo diz se é masculino ou feminino. Mas isso é assunto da próxima aula.</p>
 <p>Por enquanto, grave isto: <strong>-ь é dicionário.</strong> Não tente adivinhar. Consulte. E anote o gênero junto com a palavra.</p>
-<h2 class="lv-h3">2.7 ARMADILHA Nº 2 — O -мя</h2>
+<h2 class="lv-h3">1.7 ARMADILHA Nº 2 — O -мя</h2>
 <p>Palavras terminadas em -мя são <strong>neutras</strong>. Sempre. E são poucas: cerca de <strong>dez</strong> em toda a língua russa. Você não precisa decorar todas de uma vez. As duas mais usadas são:</p>
 <ul>
 <li><p><strong>имя</strong> (ímia) — nome</p></li>
 <li><p><strong>вре́мя</strong> (vrémia) — tempo, hora</p></li>
 </ul>
 <p>As outras (знамя, семя, пламя, стремя, племя, темя, бремя, вымя, полымя) são menos frequentes. Mas a regra é a mesma: <strong>-мя = neutro.</strong> Você acabou de aprender a regra para todas elas de uma vez. É disso que serve uma regra: funciona até com palavras que você nunca viu.</p>
-<h2 class="lv-h3">2.8 ARMADILHA Nº 3 — A celebridade кофе</h2>
+<h2 class="lv-h3">1.8 ARMADILHA Nº 3 — A celebridade кофе</h2>
 <p>Aqui está a exceção mais famosa da língua russa.</p>
 <p><strong>Ко́фе</strong> (kófi) — café. Termina em -е. Pela regra, deveria ser neutro. Mas <strong>é masculino.</strong></p>
 <p>Por quê? História. A palavra entrou no russo como <strong>кофий</strong> (kófii), que era masculino. Com o tempo, a palavra encolheu para кофе, mas o gênero ficou. É um fóssil linguístico.</p>
 <p>Guarde: <strong>вку́сный ко́фе</strong> (café gostoso). Não "вкусное кофе". É masculino.</p>
 <p>(Gramáticas modernas toleram o neutro em contextos informais, mas o masculino é a forma clássica, a recomendada. Use o masculino.)</p>
-<h2 class="lv-h3">2.9 ARMADILHA Nº 4 — Substantivos em -а/-я que são masculinos</h2>
+<h2 class="lv-h3">1.9 ARMADILHA Nº 4 — Substantivos em -а/-я que são masculinos</h2>
 <p>Nem toda palavra terminada em -а ou -я é feminina. Existem exceções — e elas são importantes porque designam <strong>pessoas do sexo masculino</strong>.</p>
 <ul>
 <li><p><strong>па́па</strong> (pápa) — papai</p></li>
@@ -1910,9 +535,9 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <li><p><strong>Же́ня</strong> (Zhénia) — Zhenia (diminutivo de Evgenii ou Evgeniia)</p></li>
 </ul>
 <p>Todas terminam em -а ou -я, mas são <strong>masculinas</strong>, porque designam homens. A regra da terminação vale para a maioria, mas o significado vale para os seres animados. É uma exceção que você usa todo dia — então grave.</p>
-<h2 class="lv-h3">2.10 ARMADILHA Nº 5 — дитя, a criança</h2>
+<h2 class="lv-h3">1.10 ARMADILHA Nº 5 — дитя, a criança</h2>
 <p><strong>Дитя́</strong> (ditiá) — criança. É a <strong>única</strong> palavra neutra que designa uma pessoa. Todas as outras palavras que designam pessoas são masculinas ou femininas. Дитя é a exceção única. Vale a pena saber porque é uma palavra comum.</p>
-<h2 class="lv-h3">2.11 ARMADILHA Nº 6 — Substantivos de dois gêneros</h2>
+<h2 class="lv-h3">1.11 ARMADILHA Nº 6 — Substantivos de dois gêneros</h2>
 <p>Algumas palavras podem ser masculinas <strong>ou</strong> femininas, dependendo do sexo da pessoa que designam:</p>
 <ul>
 <li><p><strong>сирота́</strong> (sirrotá) — órfão ou órfã</p></li>
@@ -1923,7 +548,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <li><p><strong>самоуби́йца</strong> (samoubiítsa) — suicida (homem ou mulher)</p></li>
 </ul>
 <p>A palavra não muda; o adjetivo que a acompanha é que revela o gênero. Mas isso é assunto da próxima aula.</p>
-<h2 class="lv-h3">2.12 ARMADILHA Nº 7 — Estrangeirismos</h2>
+<h2 class="lv-h3">1.12 ARMADILHA Nº 7 — Estrangeirismos</h2>
 <p>Palavras estrangeiras que entram no russo às vezes não seguem as regras. As principais:</p>
 <ul>
 <li><p>Terminadas em <strong>-и, -у, -ю</strong> → geralmente <strong>neutras</strong>: такси́ (táxi), меню́ (menu), кенгуру́ (canguru), киви́ (kiwi), желе́ (geleia), кафе́ (café, mas cuidado — o кофе é masculino e o кафе é neutro!), метро́ (metrô), кино́ (cinema), пальто́ (casaco), бюро́ (escritório)</p></li>
@@ -1931,7 +556,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <li><p>Terminadas em <strong>-о</strong> e designando <strong>pessoas do sexo masculino</strong> → <strong>masculinas</strong>: маэ́стро (maestro), импреса́рио (empresário), Токи́о (Tóquio, cidade — nome masculino no russo?)</p></li>
 </ul>
 <p>Cada caso é um caso. Mas o mais comum é: estrangeirismo em vogal diferente de -а/-я → neutro.</p>
-<h2 class="lv-h3">2.13 A GRANDE DIVERGÊNCIA: português vs. russo</h2>
+<h2 class="lv-h3">1.13 A GRANDE DIVERGÊNCIA: português vs. russo</h2>
 <p>Aqui mora a confusão número um do estudante brasileiro. E nenhum dos livros que você me mostrou avisa isso de forma clara. Vou avisar agora, de forma brutal:</p>
 <p>O gênero do português não vale nada em russo.</p>
 <p>Veja a tabela. À esquerda, o gênero em português. À direita, o gênero em russo. Repare que quase nunca coincidem.</p>
@@ -2224,7 +849,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 <p>A doutrina desta aula, em uma frase:</p>
 <p>O gênero do português não vale nada em russo. Quando os dois coincidem, ótimo — é sorte. Quando divergem, manda o russo. Дом é masculino porque em russo é masculino. Ponto final.</p>
 <p>Isso não é um detalhe. É a diferença entre falar russo e falar português com palavras russas. Você está estudando outra língua. As regras são dela, não suas.</p>
-<h2 class="lv-h3">2.14 O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar</h2>
+<h2 class="lv-h3">1.14 O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar</h2>
 <p>Esta seção não existe em nenhum dos cinco livros que você me mostrou. Mas é a que você mais vai precisar.</p>
 <p>O cérebro do brasileiro tem um "piloto automático" que associa o gênero português ao substantivo. Quando você vê "livro", seu cérebro pensa masculino. Quando vê "casa", pensa feminino. Isso é inevitável — é a sua língua materna funcionando.</p>
 <p><strong>O problema:</strong> em russo, esse piloto automático te trai. E te trai feio.</p>
@@ -3095,7 +1720,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </tbody>
 </table></div>
 <p>Essas são as palavras que mais aparecem em textos de nível iniciante e que mais fazem o brasileiro errar. Grave-as.</p>
-<h2 class="lv-h3">2.15 Vocabulário de partida: 40 palavras (e seus gêneros)</h2>
+<h2 class="lv-h3">1.15 Vocabulário de partida: 40 palavras (e seus gêneros)</h2>
 <p>Aqui está uma lista de palavras comuns para você treinar. Repare nos gêneros. Repare nas divergências com o português.</p>
 <p>Masculino (termina em consoante ou -й)</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -3490,12 +2115,12 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">2.16 Como estudar esta aula</h2>
+<h2 class="lv-h3">1.16 Como estudar esta aula</h2>
 <p><strong>Regra de ouro:</strong> nunca decore uma palavra russa sem o gênero. Nunca. O flashcard certo não é "дом = casa". É "дом = casa (masculino)". O gênero vem junto, sempre. Porque, como você vai ver na próxima aula, o adjetivo depende disso.</p>
 <p><strong>Dica prática:</strong> quando você anotar uma palavra nova, escreva ao lado "m", "f" ou "n". Isso vai te economizar horas de confusão depois.</p>
 <p><strong>Dica de pronúncia:</strong> as consoantes sonoras б, в, г, д, ж, з "ensurdecem" no fim da palavra. Друг soa "druk", город soa "górat". Isso não afeta o gênero, mas afeta a pronúncia.</p>
 <p><strong>Dica anti-piloto automático:</strong> quando você aprender uma palavra nova, force o cérebro a esquecer o gênero português. Repita em voz alta: "дом é masculino, дом é masculino, дом é masculino". Isso parece bobo, mas ajuda a reconfigurar o reflexo.</p>
-<h2 class="lv-h3">2.17 EXERCÍCIOS</h2>
+<h2 class="lv-h3">1.17 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Identifique o gênero</strong></p>
 <p>Classifique cada palavra como masculino (m), feminino (f) ou neutro (n).</p>
 <ol type="1">
@@ -3771,7 +2396,7 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">2.18 GABARITO</h2>
+<h2 class="lv-h3">1.18 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>fem. — 2. masc. — 3. neutro — 4. neutro — 5. fem. — 6. neutro — 7. masc. (a pegadinha: em português, banana é feminina!) — 8. masc. — 9. neutro (carta é feminina em português; письмо não) — 10. masc. — 11. fem. — 12. fem. — 13. masc. — 14. neutro — 15. neutro (-мя!) — 16. neutro (-мя!) — 17. masc. (-ь — no dicionário) — 18. fem. (-ь) — 19. masc. (a exceção famosa!) — 20. neutro — 21. neutro — 22. fem. — 23. fem. — 24. fem. — 25. masc.</p></li>
@@ -3948,7 +2573,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">2.19 RESUMO DE BOLSO — AULA 2</h2>
+<h2 class="lv-h3">1.19 RESUMO DE BOLSO — AULA 2</h2>
 <ol type="1">
 <li><p><strong>O russo não tem artigos.</strong> Quem manda no gênero é a última letra.</p></li>
 <li><p><strong>São três gêneros:</strong> masculino, feminino e neutro.</p></li>
@@ -3990,9 +2615,9 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <p class="lv-plural">Plural: окна · моря</p></div>
 </div>
 <p class="lv-nota-quadro">A terminação ь pode ser masculina ou feminina. Quando isso acontecer, confirme o gênero no dicionário.</p>
-</section><h1 class="lv-h1" id="aula-3">AULA 3 — O GÊNERO DOS ADJETIVOS</h1>
+</section><h1 class="lv-h1" id="aula-2">AULA 2 — O GÊNERO DOS ADJETIVOS</h1>
 <p>(ou: a tesourinha — como decorar UM adjetivo e saber QUATRO)</p>
-<h2 class="lv-h3">3.1 O que é um adjetivo? O teste do aperto</h2>
+<h2 class="lv-h3">2.1 O que é um adjetivo? O teste do aperto</h2>
 <p>Antes de qualquer tabela, uma pergunta simples: <strong>o que é um adjetivo?</strong></p>
 <p>Adjetivo é a palavra que <strong>completa o substantivo</strong>. É a qualidade, a característica, o modo de ser da coisa. E há um teste infalível para reconhecê-lo — o <strong>teste do aperto</strong>:</p>
 <ul>
@@ -4003,7 +2628,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <p>Mas dá para pegar <strong>uma coisa grande</strong>, <strong>uma casa nova</strong>, <strong>um carro amarelo</strong>. Você pega a coisa, nunca a qualidade. Qualidade que só existe grudada num substantivo = adjetivo.</p>
 <p>Isso vale para <strong>novo, velho, alto, baixo, amarelo, vermelho, bonito, feio, caro, barato, quente, frio, inteligente, estranho</strong>. Todos são adjetivos. Todos precisam de um substantivo para existir.</p>
 <p>E é por isso que o adjetivo <strong>concorda</strong> com o substantivo. Se o substantivo é masculino, o adjetivo fica masculino. Se o substantivo é feminino, o adjetivo fica feminino. Se é neutro, o adjetivo fica neutro. Em russo, essa concordância é ainda mais visível do que em português, porque a terminação do adjetivo muda de forma clara e sistemática.</p>
-<h2 class="lv-h3">3.2 A regra de ouro: a raiz nunca muda</h2>
+<h2 class="lv-h3">2.2 A regra de ouro: a raiz nunca muda</h2>
 <p>Aqui está a informação que vai te libertar. Grava isto:</p>
 <p>Todo adjetivo russo é um LEGO de duas peças: RAIZ (intocável) + TERMINAÇÃO (móvel).</p>
 <p>A raiz carrega o <strong>significado</strong>. A terminação carrega a <strong>gramática</strong>. Por isso, quando o adjetivo precisa mudar de gênero (masculino → feminino → neutro), a raiz fica parada e só a terminação se mexe.</p>
@@ -4053,7 +2678,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 </tbody>
 </table></div>
 <p><strong>A raiz НОВ- nunca mudou.</strong> Só a terminação. Sempre.</p>
-<h2 class="lv-h3">3.3 A "tesourinha": o método para nunca mais errar</h2>
+<h2 class="lv-h3">2.3 A "tesourinha": o método para nunca mais errar</h2>
 <p>Agora, o método que vai ser sua ferramenta para o resto da vida. Eu chamo de <strong>"tesourinha"</strong>:</p>
 <p>Corte as duas últimas letras do masculino. Você tem a raiz. Cole a terminação nova. Pronto — o adjetivo mudou de gênero.</p>
 <p>Funciona porque as terminações masculinas — <strong>-ЫЙ, -ОЙ, -ИЙ</strong> — têm <strong>exatamente duas letras cada</strong>. É um encaixe perfeito.</p>
@@ -4088,7 +2713,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <li><p>ста́р + ые = <strong>ста́рые</strong></p></li>
 </ul>
 <p>Você acabou de aprender quatro formas de um adjetivo em três segundos. <strong>É isso que nenhum dos cinco livros que você me mostrou ensina.</strong> Eles dão a tabela pronta. Não ensinam o aluno a construir.</p>
-<h2 class="lv-h3">3.4 As três terminações do masculino</h2>
+<h2 class="lv-h3">2.4 As três terminações do masculino</h2>
 <p>Antes de aplicar a tesourinha, você precisa saber <strong>qual</strong> terminação masculina o adjetivo tem. Há três possibilidades — e cada uma diz a que "família" o adjetivo pertence.</p>
 <p>1. -ЫЙ (o mais comum)</p>
 <p>A imensa maioria dos adjetivos. Sempre -ЫЙ no masculino.</p>
@@ -4145,7 +2770,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <li><p>после́дн<strong>ий</strong> → после́дн<strong>яя</strong> → после́дн<strong>ее</strong></p></li>
 </ul>
 <p>É a única exceção real no início do estudo.</p>
-<h2 class="lv-h3">3.5 A tabela mestra dos adjetivos</h2>
+<h2 class="lv-h3">2.5 A tabela mestra dos adjetivos</h2>
 <p>Aqui está a tabela que resolve tudo.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -4196,7 +2821,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <li><p>O substantivo plural termina em <strong>-Ы/-И</strong> — e o adjetivo plural termina em <strong>-ЫЕ/-ИЕ</strong>.</p></li>
 </ul>
 <p><strong>O sistema conversa consigo mesmo.</strong> O adjetivo é um espelho do substantivo. Se você souber o gênero do substantivo, o adjetivo se encaixa automaticamente. É por isso que a Aula 2 (gênero do substantivo) veio antes desta.</p>
-<h2 class="lv-h3">3.6 A tabela viva: 20 adjetivos completos</h2>
+<h2 class="lv-h3">2.6 A tabela viva: 20 adjetivos completos</h2>
 <p>Aqui está a tabela viva. Repare na raiz de cada um. Repare na terminação. Repare que a raiz <strong>nunca muda</strong>.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -4364,7 +2989,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <li><p><strong>A terminação muda conforme o gênero.</strong> E você só precisa decorar a masculina.</p></li>
 <li><p><strong>A tônica pode mudar.</strong> Большо́й → больша́я (a tônica se move). Дорого́й → дорога́я (a tônica se move). У́мный → у́мная (a tônica fica no mesmo lugar). Isso não afeta a terminação, mas afeta a pronúncia.</p></li>
 </ol>
-<h2 class="lv-h3">3.7 A "família do синий" — a única exceção real</h2>
+<h2 class="lv-h3">2.7 A "família do синий" — a única exceção real</h2>
 <p>No meio de tantos -ЫЙ e -ОЙ mora uma pequena família que termina em -ИЙ e se comporta de forma diferente. É a <strong>família do синий</strong> — a única exceção real que você precisa saber no início.</p>
 <p>Membros mais comuns:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -4452,7 +3077,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <p><strong>Como reconhecer?</strong> Se o masculino termina em -ИЙ <strong>e a raiz termina em -н</strong> (ou uma consoante mole), provavelmente é da família do синий. Se a raiz termina em г, к, х, é apenas a ortografia obrigando -ИЙ (e o feminino é -АЯ normal).</p>
 <aside class="lv-dica"><p><strong>Curiosidade:</strong> quase todos os membros da família do синий têm <strong>significado temporal</strong> (partes do dia, estações do ano, "último"). Isso é um padrão útil para reconhecer.</p></aside>
 <p><strong>E o третий?</strong> É a outra exceção. <strong>Тре́тий</strong> (terceiro) tem feminino <strong>тре́тья</strong> (não "тре́тия") e neutro <strong>тре́тье</strong> (não "тре́тие"). É um fóssil linguístico, um remanescente de uma declinação antiga. Só precisa decorar.</p>
-<h2 class="lv-h3">3.8 A grande confusão: -ИЙ ortográfico vs. -ИЙ da família do синий</h2>
+<h2 class="lv-h3">2.8 A grande confusão: -ИЙ ortográfico vs. -ИЙ da família do синий</h2>
 <p>Este é o ponto que <strong>nenhum dos cinco livros explica com clareza</strong>. Vou ser brutalmente honesto com você.</p>
 <p>Há uma regra ortográfica do russo: depois das letras <strong>г, к, х, ж, ч, ш, щ</strong>, nunca se escreve <strong>Ы</strong>. Escreve-se <strong>И</strong>.</p>
 <p>Por isso, adjetivos como <strong>ру́сский</strong> (raiz РУССК-), <strong>ма́ленький</strong> (raiz МАЛЕНЬК-), <strong>ди́кий</strong> (raiz ДИК-), <strong>хоро́ший</strong> (raiz ХОРОШ-), <strong>горя́чий</strong> (raiz ГОРЯЧ-) terminam em <strong>-ИЙ</strong> no masculino. Mas <strong>não são da família do синий</strong>.</p>
@@ -4472,7 +3097,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 </ul>
 <p><strong>Como saber qual é qual na prática?</strong> Olhe o feminino. Se você vir "-ая", é comum. Se vir "-яя", é da família do синий. Com o tempo, você reconhece.</p>
 <p><strong>Truque de memorização:</strong> a família do синий é <strong>pequena</strong>. São cerca de 15-20 adjetivos, quase todos de significado temporal (estações, partes do dia) ou "último". Todo o resto que termina em -ИЙ é -АЯ/-ОЕ normal.</p>
-<h2 class="lv-h3">3.9 O acento que passeia (armadilha que ninguém avisa)</h2>
+<h2 class="lv-h3">2.9 O acento que passeia (armadilha que ninguém avisa)</h2>
 <p>Aqui está uma armadilha que nenhum dos cinco livros avisa de forma clara:</p>
 <p>Às vezes, a tônica muda quando a terminação muda.</p>
 <p>Veja:</p>
@@ -4557,13 +3182,13 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 </table></div>
 <p>A tônica fica na raiz. <strong>Não há regra fixa.</strong> Você precisa ouvir e memorizar.</p>
 <p><strong>O que fazer?</strong> Não tente adivinhar. Copie a forma da tabela. Com o tempo, seu ouvido assume o comando.</p>
-<h2 class="lv-h3">3.10 Como estudar esta aula (o método definitivo)</h2>
+<h2 class="lv-h3">2.10 Como estudar esta aula (o método definitivo)</h2>
 <p><strong>1. Decore o masculino. Sempre.</strong> Você nunca decora "новый, новая, новое, новые" — você decora <strong>"новый"</strong> e aplica a tesourinha.</p>
 <p><strong>2. Anote a raiz ao lado.</strong> No seu caderno, escreva "новый (НОВ-)". Assim você treina o cérebro a ver a raiz separada da terminação.</p>
 <p><strong>3. Treine a tesourinha até virar automático.</strong> Pegue um adjetivo, corte as duas letras, cole a nova terminação. Repita até não precisar mais pensar.</p>
 <p><strong>4. Reconheça a família do синий.</strong> São poucos. Grave-os como exceção. Todo o resto segue a regra normal.</p>
 <p><strong>5. Ouça o acento.</strong> A tônica pode mudar. Copie da tabela e do áudio até seu ouvido reconhecer.</p>
-<h2 class="lv-h3">3.11 Primeiras frases completas: ЭТО</h2>
+<h2 class="lv-h3">2.11 Primeiras frases completas: ЭТО</h2>
 <p>Uma palavra, um mundo: <strong>э́то</strong> (éta — "isto é / este é"). Ela nunca muda, concorda com nada, e resolve o presente do verbo ser, que em russo simplesmente não aparece.</p>
 <p>O seu primeiro diálogo em russo:</p>
 <p>— Что э́то? (Chto éta? — O que é isto?)<br/>
@@ -4629,7 +3254,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <p>— Како́й дом? — Но́вый. (Que casa? — Nova.)<br/>
 — Кака́я кни́га? — Но́вая. (Que livro? — Novo.)<br/>
 — Како́е пи́во? — Холо́дное. (Que cerveja? — Gelada.)</p>
-<h2 class="lv-h3">3.12 Armadilhas clássicas (antecipadas, para você não cair nelas)</h2>
+<h2 class="lv-h3">2.12 Armadilhas clássicas (antecipadas, para você não cair nelas)</h2>
 <p>⚠️ <strong>Erro 1 — traduzir o gênero do português.</strong></p>
 <p>"A casa nova" → ❌ нова́я дом. Para um russo, "нова́я дом" soa como "a casa novo" soa para você. ✅ но́вый дом — porque дом é masculino em russo.</p>
 <p>E "o livro novo"? Livro é masculino em português, mas кни́га é feminina: ✅ но́вая кни́га.</p>
@@ -4645,7 +3270,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <p>❌ хоро́шая → ✅ хоро́шая (raiz ХОРОШ- termina em ш; -ИЙ é ortográfico, feminino é -АЯ).</p>
 <p>⚠️ <strong>Erro 6 — procurar os artigos.</strong></p>
 <p>"Uma casa nova" e "a casa nova" são, em russo, a mesma coisa: но́вый дом. Os artigos desapareceram — o contexto faz o trabalho deles. Respire aliviado: a eterna dúvida "o ou a?" acabou; ela migrou para a concordância, e a concordância você agora sabe fazer.</p>
-<h2 class="lv-h3">3.13 Vocabulário de adjetivos (decore o masculino!)</h2>
+<h2 class="lv-h3">2.13 Vocabulário de adjetivos (decore o masculino!)</h2>
 <p>Aqui estão 30 adjetivos. Decore-os na forma masculina. As outras três formas vêm de graça.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -4814,7 +3439,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Curiosidade:</strong> кра́сный (vermelho) e краси́вый (bonito) são parentes — para os russos antigos, "vermelho" era "bonito". É por isso que a Praça Vermelha é, no fundo, a Praça Bela.</p></aside>
-<h2 class="lv-h3">3.14 EXERCÍCIOS</h2>
+<h2 class="lv-h3">2.14 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — A tesourinha</strong></p>
 <p>Una adjetivo e substantivo com a terminação correta.</p>
 <ol type="1">
@@ -4949,7 +3574,7 @@ Resposta pessoal. Mas verifique se o adjetivo concorda com o gênero do substant
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">3.15 GABARITO</h2>
+<h2 class="lv-h3">2.15 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>но́вый дом — 2. но́вая кни́га — 3. но́вое сло́во — 4. больша́я соба́ка — 5. ста́рый стол — 6. ма́ленькая ко́шка — 7. си́нее мо́ре — 8. дорого́е ви́но — 9. вку́сное пи́во — 10. краси́вая гита́ра — 11. холо́дная вода́ — 12. ру́сский язы́к — 13. хоро́ший день — 14. горя́чий ко́фе — 15. молодо́й челове́к</p></li>
@@ -4995,7 +3620,7 @@ Resposta pessoal. Verifique se o adjetivo concorda com o gênero do substantivo.
 </ol>
 <p><strong>Exercício 10:</strong><br/>
 Resposta pessoal.</p>
-<h2 class="lv-h3">3.16 RESUMO DE BOLSO — AULA 3</h2>
+<h2 class="lv-h3">2.16 RESUMO DE BOLSO — AULA 3</h2>
 <ol type="1">
 <li><p><strong>Adjetivo completa substantivo.</strong> É raiz + terminação.</p></li>
 <li><p><strong>A raiz nunca muda.</strong> A terminação muda para concordar.</p></li>
@@ -5031,9 +3656,9 @@ Resposta pessoal.</p>
 <tr><td>Neutro</td><td class="lv-ex">большо́е</td><td class="lv-ex">большо́е окно́</td></tr>
 <tr><td>Plural</td><td class="lv-ex">больши́е</td><td class="lv-ex">больши́е дома́</td></tr>
 </tbody></table>
-</section><h1 class="lv-h1" id="aula-4">AULA 4 — OS VERBOS NO PRESENTE</h1>
+</section><h1 class="lv-h1" id="aula-3">AULA 3 — OS VERBOS NO PRESENTE</h1>
 <p>(ou: a raiz intocável — como decorar um verbo e saber seis)</p>
-<h2 class="lv-h3">4.1 O que é um verbo? O teste do "acontecer"</h2>
+<h2 class="lv-h3">3.1 O que é um verbo? O teste do "acontecer"</h2>
 <p>Antes de qualquer tabela, a pergunta fundamental: <strong>o que é um verbo?</strong></p>
 <p>Verbo é a palavra que expressa <strong>ação</strong>, <strong>estado</strong> ou <strong>ocorrência</strong>. É aquilo que a pessoa <strong>faz</strong>, <strong>é</strong> ou <strong>está</strong>. E há um teste infalível para reconhecê-lo — o <strong>teste do "acontecer"</strong>:</p>
 <ul>
@@ -5043,7 +3668,7 @@ Resposta pessoal.</p>
 </ul>
 <p>O verbo é a <strong>espinha dorsal da frase</strong>. Sem verbo, não há ação. Sem verbo, não há frase completa. Você já sabe dizer "Э́то но́вый дом" (isto é uma casa nova). Mas ainda não sabe dizer "<strong>Eu construo</strong> uma casa nova" ou "<strong>Ele mora</strong> numa casa nova". Isso é assunto desta aula.</p>
 <p>E a boa notícia? <strong>O verbo russo é muito mais regular do que você imagina.</strong> Muito mais do que o substantivo ou o adjetivo. As exceções são poucas, e as regras são consistentes. Você vai ver.</p>
-<h2 class="lv-h3">4.2 O que é um pronome pessoal do caso reto? (a verdade simples e sem medo)</h2>
+<h2 class="lv-h3">3.2 O que é um pronome pessoal do caso reto? (a verdade simples e sem medo)</h2>
 <p>Antes de conjugar qualquer verbo, você precisa saber com o que ele se conjuga. E isso significa conhecer os <strong>pronomes pessoais do caso reto</strong>.</p>
 <p>Eu sei que "pronome pessoal do caso reto" soa como um monstro gramatical. Mas eu prometo: é <strong>a coisa mais simples do mundo</strong>. Vou desmontar o nome:</p>
 <ul>
@@ -5112,7 +3737,7 @@ Resposta pessoal.</p>
 <li><p><strong>Он, она́, оно́.</strong> Em russo, tudo tem gênero — até objetos. Então, "mesa" (стол) é masculino → <strong>он</strong>; "casa" (дом) é masculino → <strong>он</strong>; "livro" (кни́га) é feminino → <strong>она́</strong>; "janela" (окно́) é neutro → <strong>оно́</strong>. Isso assusta no começo, mas você já aprendeu na Aula 2 que o gênero é determinado pela última letra. Agora você só aplica: se o substantivo é masculino, use <strong>он</strong>; se é feminino, <strong>она́</strong>; se é neutro, <strong>оно́</strong>.</p></li>
 <li><p><strong>Они́.</strong> Uma única forma para os três gêneros no plural. Não importa se são "eles" ou "elas". É sempre <strong>они́</strong>.</p></li>
 </ol>
-<h2 class="lv-h3">4.3 O que é conjugação? (a explicação mais clara que você vai ler)</h2>
+<h2 class="lv-h3">3.3 O que é conjugação? (a explicação mais clara que você vai ler)</h2>
 <p>Antes de qualquer coisa, uma pergunta que ninguém faz e que todo mundo deveria fazer: <strong>o que é conjugar um verbo?</strong></p>
 <p>Em português, conjugar é <strong>mudar a forma do verbo para combinar com o sujeito da frase</strong>. Veja:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -5203,7 +3828,7 @@ Resposta pessoal.</p>
 <strong>ЧИТА- + -ЮТ = чита́ют</strong> (eles/elas leem)</p>
 <p><strong>A raiz ЧИТА- nunca mudou.</strong> Só a terminação. Sempre. É a mesma lógica do português. A diferença é que as terminações russas são mais "compridas" — e é isso que assusta o aluno iniciante. Mas a mecânica é idêntica.</p>
 <p><strong>Você acabou de aprender a conjugar um verbo russo.</strong> É isso. O resto é prática.</p>
-<h2 class="lv-h3">4.4 A "tesourinha do verbo": o método que ninguém ensina</h2>
+<h2 class="lv-h3">3.4 A "tesourinha do verbo": o método que ninguém ensina</h2>
 <p>Assim como fizemos com o adjetivo (Aula 3), vamos aplicar a <strong>tesourinha ao verbo</strong>. Grava isto:</p>
 <p>Todo verbo russo é um LEGO de duas peças: RAIZ (intocável) + TERMINAÇÃO (móvel).</p>
 <p>E o método é sempre o mesmo:</p>
@@ -5241,7 +3866,7 @@ Resposta pessoal.</p>
 </ol>
 <aside class="lv-dica"><p><strong>Repare:</strong> no verbo говори́ть, a vogal <strong>-и-</strong> aparece na raiz (говор-и-ть) mas some nas formas conjugadas (говор-ю). Isso é normal. Os verbos da 2ª conjugação (que terminam em -ить) geralmente perdem o -и- da raiz na 1ª pessoa do singular e usam terminações diferentes (-ишь, -ит, -им, -ите, -ят) nas outras pessoas.</p></aside>
 <p><strong>Por que isso é revolucionário?</strong> Porque ninguém explica que o verbo russo é um LEGO. Todos os livros dão a tabela e mandam decorar. <strong>Você vai ensinar o aluno a construir.</strong></p>
-<h2 class="lv-h3">4.5 O infinitivo russo: as três terminações</h2>
+<h2 class="lv-h3">3.5 O infinitivo russo: as três terminações</h2>
 <p>Em russo, o infinitivo (a forma "de dicionário") termina em três coisas diferentes:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -5275,7 +3900,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p><strong>A boa notícia:</strong> você não precisa se preocupar com -ТИ e -ЧЬ agora. São minoria. A imensa maioria dos verbos termina em <strong>-ТЬ</strong>, e é isso que vamos estudar nesta aula.</p>
-<h2 class="lv-h3">4.6 As duas conjugações: a lógica por trás</h2>
+<h2 class="lv-h3">3.6 As duas conjugações: a lógica por trás</h2>
 <p>Aqui está o ponto que <strong>nenhum dos cinco livros explica com clareza</strong>. Vou explicar.</p>
 <p>Em russo, os verbos se dividem em <strong>duas conjugações</strong>. E a diferença entre elas está nas <strong>terminações pessoais</strong>:</p>
 <p>1ª CONJUGAÇÃO:</p>
@@ -5387,7 +4012,7 @@ Resposta pessoal.</p>
 <li><p><strong>звони́ть</strong> (telefonar) → -ить → 2ª conjugação → <strong>звоню́, звони́шь, звони́т...</strong></p></li>
 </ul>
 <aside class="lv-atencao"><p><strong>Atenção:</strong> há <strong>exceções</strong>. Alguns verbos em -ать, -ять, -еть pertencem à 2ª conjugação. São apenas <strong>onze</strong> — e eu vou listá-los mais adiante.</p></aside>
-<h2 class="lv-h3">4.7 Os quatro tipos de verbo no presente</h2>
+<h2 class="lv-h3">3.7 Os quatro tipos de verbo no presente</h2>
 <p>Para facilitar a memorização, vou apresentar os quatro tipos de verbo do presente, baseados na classificação do Penguin (que é a mais clara de todas):</p>
 <p>Tipo 1 — ЗНАТЬ (o mais comum)</p>
 <p>Verbos em -ать, -ять, -еть que seguem as terminações -ю, -ешь, -ет, -ем, -ете, -ют.</p>
@@ -5671,7 +4296,7 @@ Resposta pessoal.</p>
 <li><p><strong>пить</strong> (beber): пью, пьёшь, пьёт, пьём, пьёте, пью́т.</p></li>
 <li><p><strong>дать</strong> (dar): дам, дашь, даст, дади́м, дади́те, даду́т.</p></li>
 </ul>
-<h2 class="lv-h3">4.8 As exceções: os 11 verbos em -ать/-ять/-еть que vão para a 2ª conjugação</h2>
+<h2 class="lv-h3">3.8 As exceções: os 11 verbos em -ать/-ять/-еть que vão para a 2ª conjugação</h2>
 <p>Aqui está a lista que <strong>só a Shotropa tem</strong> e que nenhum dos outros livros mostra. São <strong>onze</strong> verbos que terminam em -ать, -ять ou -еть, mas que <strong>não seguem a 1ª conjugação</strong>. Eles seguem a 2ª.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -5810,7 +4435,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p><strong>Como memorizar?</strong> Uma dica: quase todos esses verbos têm uma conotação de <strong>percepção</strong> (ver, ouvir, olhar, respirar) ou <strong>sentimento</strong> (odiar, ofender, suportar). Não é uma regra absoluta, mas ajuda. Grave-os.</p>
-<h2 class="lv-h3">4.9 O acento que passeia (ou fica quieto)</h2>
+<h2 class="lv-h3">3.9 O acento que passeia (ou fica quieto)</h2>
 <p>Assim como no adjetivo, o acento do verbo pode se mover — ou ficar no mesmo lugar. Veja:</p>
 <p>1. Acento fixo na raiz (mais comum na 1ª conjugação):</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -5936,7 +4561,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p><strong>O que fazer?</strong> Não tente adivinhar. Copie a forma da tabela. Com o tempo, seu ouvido assume o comando. E lembre-se: <strong>se o verbo contém ё, a tônica cai sempre no ё</strong>. Por isso живёшь, живёт, живём, живёте.</p>
-<h2 class="lv-h3">4.10 O verbo SER (быть): a ausência mais famosa da língua russa</h2>
+<h2 class="lv-h3">3.10 O verbo SER (быть): a ausência mais famosa da língua russa</h2>
 <p>Aqui está a maior fonte de confusão para o brasileiro. Preste atenção.</p>
 <p>Em russo, o verbo SER (быть) não existe no presente do indicativo.</p>
 <p>Em português, a gente diz:</p>
@@ -5953,7 +4578,7 @@ Resposta pessoal.</p>
 </ul>
 <p><strong>O verbo "ser" simplesmente não aparece.</strong> O contexto faz o trabalho dele. É como se a frase fosse "Eu brasileiro", "Ele médico". O russo não sente falta nenhuma disso.</p>
 <aside class="lv-atencao"><p><strong>Mas atenção:</strong> há uma exceção. A 3ª pessoa do singular do verbo быть — <strong>есть</strong> — sobrevive com um significado especial: <strong>"há", "existe", "tem"</strong>. É essa forma que você vai usar na construção de "ter" (próxima seção).</p></aside>
-<h2 class="lv-h3">4.11 Como dizer "eu tenho", "você tem", "ele tem"</h2>
+<h2 class="lv-h3">3.11 Como dizer "eu tenho", "você tem", "ele tem"</h2>
 <p>Aqui está uma das maiores diferenças entre o português e o russo, e uma das primeiras coisas que você vai querer dizer. Preste atenção.</p>
 <p>Em russo, o verbo "ter" não existe.</p>
 <p>Não há um verbo equivalente a "ter" como em português. Em vez disso, o russo usa uma construção que, traduzida literalmente, significa <strong>"junto a mim há"</strong>:</p>
@@ -6099,7 +4724,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p>A lógica é: <strong>quando é afirmativo, use есть + objeto normal; quando é negativo, use нет + objeto "modificado"</strong>. Você vai aprender a modificar mais adiante, mas já pode decorar essas fórmulas prontas.</p>
-<h2 class="lv-h3">4.12 Frases completas: os primeiros diálogos</h2>
+<h2 class="lv-h3">3.12 Frases completas: os primeiros diálogos</h2>
 <p>Agora que você sabe os pronomes pessoais, as duas conjugações, a ausência do verbo ser e a construção de "ter", você pode formar frases completas.</p>
 <p>Diálogo 1 — Na aula:</p>
 <p>— Что ты де́лаешь? (O que você está fazendo?)<br/>
@@ -6129,7 +4754,7 @@ Resposta pessoal.</p>
 — Меня́ зову́т Мари́я. Я изуча́ю ру́сский язы́к. (Eu me chamo Maria. Eu estudo russo.)<br/>
 — Я то́же изуча́ю ру́сский. (Eu também estudo russo.)</p>
 <p><strong>Nota:</strong> "Как тебя́ зову́т?" literalmente é "Como te chamam?" — o verbo <strong>звать</strong> (chamar) está na 3ª pessoa do plural. A resposta é <strong>Меня́ зову́т...</strong> ("Chamam-me..."). É a fórmula fixa para "Como você se chama?" em russo. Memorize como bloco.</p>
-<h2 class="lv-h3">4.13 EXERCÍCIOS</h2>
+<h2 class="lv-h3">3.13 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Identifique a raiz</strong></p>
 <p>Para cada verbo, escreva a raiz (corte -ТЬ, -ТИ ou -ЧЬ).</p>
 <ol type="1">
@@ -6287,7 +4912,7 @@ Resposta pessoal.</p>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">4.14 GABARITO</h2>
+<h2 class="lv-h3">3.14 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>чита- — 2. говор- — 3. работа- — 4. жив- — 5. зна- — 6. люб- — 7. смотр- — 8. пис- — 9. ид- — 10. мог-</p></li>
@@ -6343,7 +4968,7 @@ Resposta pessoal.</p>
 Resposta pessoal. Verifique se o verbo está conjugado corretamente.</p>
 <p><strong>Exercício 12:</strong><br/>
 Resposta pessoal.</p>
-<h2 class="lv-h3">4.12 — OS ADVÉRBIOS: as palavras que nunca mudam</h2>
+<h2 class="lv-h3">3.12 — OS ADVÉRBIOS: as palavras que nunca mudam</h2>
 <p>Antes de fechar esta aula, preciso te apresentar uma classe de palavras que vai te dar um alívio enorme: os <strong>advérbios</strong>.</p>
 <p>Eu vou ser direto com você: <strong>o advérbio é a classe de palavras mais fácil do russo inteiro.</strong> E eu não estou exagerando. Você vai entender por quê em três minutos.</p>
 <p>O que é um advérbio?</p>
@@ -6778,9 +5403,9 @@ Resposta pessoal.</p>
 <li><p><strong>Se você gosta de decorar, decore os advérbios.</strong> São a classe mais fácil do russo. Não tem conjugação, não tem declinação, não tem pegadinha. É só usar.</p></li>
 <li><p><strong>Os mais essenciais:</strong> сейча́с, сего́дня, за́втра, вчера́, всегда́, никогда́, здесь, там, до́ма, хорошо́, пло́хо, быстро, ме́дленно.</p></li>
 </ol>
-<h1 class="lv-h1" id="aula-5">AULA 5 — O PASSADO E O FUTURO</h1>
+<h1 class="lv-h1" id="aula-4">AULA 4 — O PASSADO E O FUTURO</h1>
 <p>(ou: o passado inacabado e o futuro incerto)</p>
-<h2 class="lv-h3">5.1 Antes de começar: uma verdade sobre o russo</h2>
+<h2 class="lv-h3">4.1 Antes de começar: uma verdade sobre o russo</h2>
 <p>Você já sabe conjugar verbos no presente. Sabe a tesourinha. Sabe os pronomes. Sabe os advérbios (вчера, сегодня, завтра). Agora falta o passo final: <strong>falar do que aconteceu e do que vai acontecer</strong>.</p>
 <p>Mas antes, uma verdade importante que nenhum dos cinco livros que analisei explica com honestidade:</p>
 <p><strong>O passado russo descreve um passado inacabado.</strong> Ele não fala de uma ação que terminou, fechou, acabou. Ele fala de uma ação que estava acontecendo, que se repetia, que durava. É o "eu lia", "eu trabalhava", "eu morava" do português. Um passado em andamento, sem ponto final.</p>
@@ -6788,7 +5413,7 @@ Resposta pessoal.</p>
 <p>Isso é fundamental para você entender o que está aprendendo. Você não está aprendendo "o passado" do russo. Está aprendendo <strong>um passado</strong> — o passado das ações em andamento, das ações repetidas, das ações que não têm fim marcado. Mais adiante, quando você estiver pronto, vai descobrir que existe outro passado e outro futuro. Mas isso é assunto para outra hora. Por enquanto, fique com este.</p>
 <p><strong>A boa notícia:</strong> este passado e este futuro são os mais usados no dia a dia. São a base da narrativa. Com eles, você já conta a sua vida. Vamos.</p>
 <p>PARTE 1 — O PASSADO</p>
-<h2 class="lv-h3">5.2 A regra da tesourinha do passado</h2>
+<h2 class="lv-h3">4.2 A regra da tesourinha do passado</h2>
 <p>Você já conhece a tesourinha do presente:</p>
 <p>Corte -ТЬ do infinitivo. Você tem a raiz. Cole a terminação pessoal do presente.</p>
 <p>Agora, o passado usa a <strong>mesma tesourinha</strong>, mas com uma diferença: <strong>a terminação de passado não depende da pessoa. Depende do gênero.</strong></p>
@@ -6830,7 +5455,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p><strong>É só isso.</strong> Quatro terminações. Nada mais.</p>
-<h2 class="lv-h3">5.3 A grande diferença do russo</h2>
+<h2 class="lv-h3">4.3 A grande diferença do russo</h2>
 <p>Aqui está a coisa mais importante que você precisa entender:</p>
 <p>No presente, o verbo concorda com a PESSOA. No passado, o verbo concorda com o GÊNERO do sujeito.</p>
 <p>Compare:</p>
@@ -6864,7 +5489,7 @@ Resposta pessoal.</p>
 <li><p><strong>Nunca</strong> se diz "я чита́л" se você é mulher.</p></li>
 </ul>
 <p><strong>É automático.</strong> Você não pensa "sou homem, vou usar -л". Você simplesmente usa a forma que combina com você.</p>
-<h2 class="lv-h3">5.4 A pergunta mais comum: "se um homem pergunta para uma mulher, é -Л ou -ЛА?"</h2>
+<h2 class="lv-h3">4.4 A pergunta mais comum: "se um homem pergunta para uma mulher, é -Л ou -ЛА?"</h2>
 <p>Esta é a dúvida que <strong>todo aluno tem</strong> e que <strong>nenhum dos cinco livros responde</strong>. Vou responder agora, com clareza absoluta.</p>
 <p>A regra é uma só, e vale sempre:</p>
 <p>A terminação do passado concorda com o GÊNERO DE QUEM É O SUJEITO — ou seja, de quem faz a ação. Não importa quem pergunta, nem quem fala. Importa de quem se fala.</p>
@@ -6967,7 +5592,7 @@ Resposta pessoal.</p>
 <li><p>Uma mulher pergunta a um homem: Ты был до́ма? (Você estava em casa?)</p></li>
 </ul>
 <p><strong>Sempre a mesma lógica:</strong> a terminação segue o sujeito, não o falante.</p>
-<h2 class="lv-h3">5.5 Exemplos com verbos regulares</h2>
+<h2 class="lv-h3">4.5 Exemplos com verbos regulares</h2>
 <p>Vamos aplicar a tesourinha em oito verbos regulares. Repare nas traduções: todas descrevem uma ação em andamento, repetida, durativa.</p>
 <p>ЧИТАТЬ (ler) — Raiz: ЧИТА-</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -7266,7 +5891,7 @@ Resposta pessoal.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">5.6 Os verbos irregulares mais importantes</h2>
+<h2 class="lv-h3">4.6 Os verbos irregulares mais importantes</h2>
 <p>Existem alguns verbos que não seguem a regra. Vou listar os principais.</p>
 <p>БЫТЬ (ser, estar) — o mais importante</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -7455,7 +6080,7 @@ Resposta pessoal.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">5.7 Os erros que o brasileiro VAI cometer no passado</h2>
+<h2 class="lv-h3">4.7 Os erros que o brasileiro VAI cometer no passado</h2>
 <p>Erro 1 — Usar a terminação da pessoa em vez do gênero</p>
 <p>❌ Errado: Я чита́ю вчера́.<br/>
 ✅ Correto: Я чита́л вчера́. (homem) / Я чита́ла вчера́. (mulher)</p>
@@ -7482,7 +6107,7 @@ Resposta pessoal.</p>
 <p>❌ Errado: Um homem perguntar a uma mulher "Ты чита́л?" (usando -л porque ele é homem).<br/>
 ✅ Correto: Um homem perguntar a uma mulher "Ты чита́ла?" (usando -ла porque ela é mulher).</p>
 <p><strong>Este é o erro mais sutil.</strong> O brasileiro tende a usar a terminação do próprio gênero ao fazer a pergunta. Mas a terminação segue o <strong>sujeito</strong>, não quem pergunta. Se um homem pergunta a uma mulher, ele usa <strong>-ла</strong> (porque ela é mulher). Se uma mulher pergunta a um homem, ela usa <strong>-л</strong> (porque ele é homem).</p>
-<h2 class="lv-h3">5.8 Frases no passado</h2>
+<h2 class="lv-h3">4.8 Frases no passado</h2>
 <p>Agora, frases reais com advérbios de tempo. Repare nas traduções: todas descrevem ações em andamento ou repetidas.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -7543,12 +6168,12 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p>PARTE 2 — O FUTURO</p>
-<h2 class="lv-h3">5.9 A regra do futuro composto</h2>
+<h2 class="lv-h3">4.9 A regra do futuro composto</h2>
 <p>O futuro que você vai aprender agora é <strong>composto</strong>. Ele tem duas partes:</p>
 <p>БУДУ (conjugado) + INFINITIVO do verbo principal.</p>
 <p>A primeira parte é o verbo быть conjugado no futuro. A segunda parte é o infinitivo — que <strong>nunca muda</strong>.</p>
 <p>Este futuro descreve ações que vão se desenrolar, que se repetirão, que durarão. É um futuro em aberto, sem garantia de conclusão. É o "eu vou ler", "eu vou trabalhar", "eu vou morar".</p>
-<h2 class="lv-h3">5.10 A conjugação de быть no futuro</h2>
+<h2 class="lv-h3">4.10 A conjugação de быть no futuro</h2>
 <p>Antes de qualquer coisa, você precisa saber conjugar <strong>быть</strong> no futuro. São seis formas. Só isso.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -7597,7 +6222,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> a raiz é <strong>буд-</strong>. As terminações são as do presente da 1ª conjugação (-у, -ешь, -ет, -ем, -ете, -ут). É um verbo comum. Não tem mistério.</p></aside>
-<h2 class="lv-h3">5.11 A mecânica do futuro</h2>
+<h2 class="lv-h3">4.11 A mecânica do futuro</h2>
 <p>Agora, a fórmula:</p>
 <p>БУДУ + INFINITIVO = FUTURO.</p>
 <p>Veja na prática com <strong>читать</strong>:</p>
@@ -7641,7 +6266,7 @@ Resposta pessoal.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o verbo <strong>читать</strong> está sempre no infinitivo. Sempre. Ele <strong>não muda</strong>. Só быть muda.</p></aside>
 <p><strong>É a coisa mais fácil do russo.</strong> Você só precisa saber conjugar быть no futuro (seis formas) e colar o infinitivo do verbo principal. Acabou.</p>
-<h2 class="lv-h3">5.12 Exemplos com vários verbos</h2>
+<h2 class="lv-h3">4.12 Exemplos com vários verbos</h2>
 <p>Vamos aplicar com seis verbos diferentes:</p>
 <p>ГОВОРИТЬ (falar)</p>
 <ul>
@@ -7698,7 +6323,7 @@ Resposta pessoal.</p>
 <li><p>Они́ бу́дут писа́ть.</p></li>
 </ul>
 <aside class="lv-dica"><p><strong>Repare:</strong> o infinitivo nunca muda. писа́ть é sempre писа́ть. люби́ть é sempre люби́ть. Sem conjugação, sem gênero, sem nada. É só colar.</p></aside>
-<h2 class="lv-h3">5.13 Os erros que o brasileiro VAI cometer no futuro</h2>
+<h2 class="lv-h3">4.13 Os erros que o brasileiro VAI cometer no futuro</h2>
 <p>Erro 1 — Conjugar o segundo verbo também</p>
 <p>❌ Errado: Я бу́ду чита́ю.<br/>
 ✅ Correto: Я бу́ду чита́ть.</p>
@@ -7719,7 +6344,7 @@ Resposta pessoal.</p>
 <p>❌ Errado: Я есть чита́ть.<br/>
 ✅ Correto: Я бу́ду чита́ть.</p>
 <p>O быть no presente <strong>não existe</strong>. No futuro, é <strong>буду</strong>. Não misture.</p>
-<h2 class="lv-h3">5.14 Frases no futuro</h2>
+<h2 class="lv-h3">4.14 Frases no futuro</h2>
 <p>Agora, frases reais:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -7849,7 +6474,7 @@ Resposta pessoal.</p>
 </tbody>
 </table></div>
 <p><strong>É isso.</strong> Agora você pode contar a vida. O que fazia ontem, o que faz hoje, o que vai fazer amanhã.</p>
-<h2 class="lv-h3">5.15 EXERCÍCIOS</h2>
+<h2 class="lv-h3">4.15 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Isole a raiz</strong></p>
 <p>Para cada verbo, escreva a raiz (corte -ТЬ).</p>
 <ol type="1">
@@ -7973,7 +6598,7 @@ Resposta pessoal.</p>
 <p>Вчера́ я ____ (чита́ть) кни́гу. Сего́дня я ____ (чита́ть) газе́ту. За́втра я ____ (чита́ть) журна́л.</p>
 <p>Вчера́ она́ ____ (рабо́тать) до́ма. Сего́дня она́ ____ (рабо́тать) в о́фисе. За́втра она́ ____ (рабо́тать) в Москве́.</p>
 <p>Мы ____ (жить) в Росси́и сейча́с. Ра́ньше мы ____ (жить) в Брази́лии. Пото́м мы ____ (жить) в Москве́.</p>
-<h2 class="lv-h3">5.16 GABARITO</h2>
+<h2 class="lv-h3">4.16 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>чита- — 2. говор- — 3. работа- — 4. жи- — 5. зна- — 6. люб- — 7. смотре- — 8. писа-</p></li>
@@ -8027,7 +6652,7 @@ Resposta pessoal.</p>
 Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.</p>
 <p><strong>Exercício 11:</strong><br/>
 чита́л, чита́ю, бу́ду чита́ть; рабо́тала, рабо́тает, бу́дет рабо́тать; живём, жи́ли, бу́дем жить.</p>
-<h2 class="lv-h3">5.17 RESUMO DE BOLSO — AULA 5</h2>
+<h2 class="lv-h3">4.17 RESUMO DE BOLSO — AULA 5</h2>
 <p>PASSADO:</p>
 <ol type="1">
 <li><p>Corte -ТЬ do infinitivo. Você tem a raiz.</p></li>
@@ -8055,25 +6680,25 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <li><p>За́втра я бу́ду чита́ть. (futuro incerto)</p></li>
 </ul>
 <p><strong>É isso.</strong> Você agora pode contar a vida: o que fazia ontem, o que faz hoje, o que vai fazer amanhã.</p>
-<h2 class="lv-h3">5.18 O que vem na próxima aula</h2>
+<h2 class="lv-h3">4.18 O que vem na próxima aula</h2>
 <p>Na próxima aula, você vai aprender o que fazer com o objeto da ação. <strong>Por que, ao dizer "eu leio o livro", o russo diz я чита́ю кни́гу — e a palavra livro muda de terminação?</strong></p>
 <p>As terminações dos substantivos vão começar a se mover. E você vai entender exatamente para onde, e por quê. <strong>Spoiler:</strong> tem a ver com <strong>ação</strong>. E não é mistério nenhum.</p>
-<h1 class="lv-h1" id="aula-6">AULA 6 — O CASO ACUSATIVO</h1>
+<h1 class="lv-h1" id="aula-5">AULA 5 — O CASO ACUSATIVO</h1>
 <p>(ou: o caso da ação — e a pergunta que resolve tudo: tem alma?)</p>
-<h2 class="lv-h3">6.1 Uma cena que você já viveu (ou vai viver)</h2>
+<h2 class="lv-h3">5.1 Uma cena que você já viveu (ou vai viver)</h2>
 <p>Imagine a cena. Você está na Rússia. Estudou o alfabeto, os substantivos, os adjetivos, os verbos no presente, no passado e no futuro. Você está confiante. Entra numa loja, aponta para uma coisa e diz:</p>
 <p>— Я ви́жу кни́га.</p>
 <p>A vendedora entende, mas faz uma careta. Ela repete, corrigindo:</p>
 <p>— Я ви́жу кни́гу.</p>
 <p>Você olha. É a mesma palavra. Кни́га. Mas agora termina em <strong>-у</strong>, não em <strong>-а</strong>. Você pensa: "Por quê? Eu estudei que кни́га é feminino. Por que a terminação mudou?"</p>
 <p>Isso acontece com <strong>todo estudante de russo</strong>. E acontece porque você acabou de encontrar o <strong>caso acusativo</strong>. Parece complexo. Não é. <strong>Cinco minutos de leitura atenta vão te economizar anos de falsa imersão.</strong> E você vai entender exatamente por quê.</p>
-<h2 class="lv-h3">6.2 A frase bíblica que explica tudo</h2>
+<h2 class="lv-h3">5.2 A frase bíblica que explica tudo</h2>
 <p>Existe uma frase no Evangelho de João que diz:</p>
 <p>"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."</p>
 <p>Por que "o Verbo"? Porque, para os antigos, o verbo é a coisa mais importante da frase. Se existe um sinônimo para verbo, é <strong>ação</strong>. Ver, ler, falar, comer, amar, escrever — tudo isso é ação.</p>
 <p>E o russo, sendo uma língua encantadora, organiza sua gramática em torno disso. <strong>O caso acusativo é o caso da AÇÃO.</strong> É o caso de quem sofre a ação. É o caso do objeto: aquilo que é visto, lido, falado, comido, amado, escrito.</p>
 <p>Quando você diz "eu leio <strong>o livro</strong>", o "livro" é o objeto da ação. Em russo, esse objeto precisa de uma marca especial. Essa marca é o <strong>caso acusativo</strong>.</p>
-<h2 class="lv-h3">6.3 A cosmovisão russa: quem tem alma?</h2>
+<h2 class="lv-h3">5.3 A cosmovisão russa: quem tem alma?</h2>
 <p>Agora vem a parte mais fascinante. Preste atenção, porque aqui está a chave de tudo.</p>
 <p>Para os russos, somente seres humanos e animais têm alma.</p>
 <p>Essa é uma cosmovisão antiga, enraizada na cultura eslava. Pessoas têm alma. Animais têm alma. Objetos não. Plantas não. Ideias não. Uma casa não tem alma. Uma pedra não tem alma. Mas um amigo tem. Um cachorro tem. Uma criança tem.</p>
@@ -8092,14 +6717,14 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <li><p><strong>Собака</strong> (cachorro) tem alma? Sim. É um animal. Mas espera — cachorro é feminino. E, no feminino, a regra é diferente. Vamos chegar lá.</p></li>
 </ul>
 <p><strong>Guarde esta pergunta.</strong> Ela vai resolver 90% dos seus erros de acusativo.</p>
-<h2 class="lv-h3">6.4 A regra única que resolve tudo</h2>
+<h2 class="lv-h3">5.4 A regra única que resolve tudo</h2>
 <p>Antes de entrar nos detalhes, aqui está a regra que nenhum dos cinco livros formula em uma frase. Grava isto:</p>
 <p>FEMININO: SEMPRE MUDA. Não importa se tem alma ou não. Sempre.</p>
 <p>MASCULINO: DEPENDE DA ALMA. Se tem alma, muda. Se não tem alma, não muda.</p>
 <p>NEUTRO: NUNCA MUDA. É neutro. Por natureza.</p>
 <p>É só isso. Três linhas. Você acabou de aprender o caso acusativo dos substantivos.</p>
 <p>Agora, os detalhes.</p>
-<h2 class="lv-h3">6.5 O FEMININO — sempre muda</h2>
+<h2 class="lv-h3">5.5 O FEMININO — sempre muda</h2>
 <p>O feminino é o mais fácil porque é <strong>consistente</strong>. Ele muda sempre, independentemente de ter alma ou não.</p>
 <p>Feminino terminado em -А → vira -У</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -8282,7 +6907,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <li><p>Termina em <strong>-ь</strong> → <strong>não muda</strong>.</p></li>
 </ul>
 <p><strong>E o conceito de alma?</strong> No feminino, <strong>não importa</strong>. A regra é sempre a mesma, tenha alma ou não. É por isso que o feminino é o mais fácil.</p>
-<h2 class="lv-h3">6.6 O MASCULINO — depende da alma</h2>
+<h2 class="lv-h3">5.6 O MASCULINO — depende da alma</h2>
 <p>Agora, o masculino. Aqui entra a pergunta mágica: <strong>tem alma?</strong></p>
 <p>Masculino INANIMADO (sem alma) → NÃO MUDA</p>
 <p>Se a palavra é masculina e <strong>não tem alma</strong> (é um objeto, uma ideia, um lugar, uma coisa), ela <strong>não muda</strong> no acusativo. Fica igual ao nominativo.</p>
@@ -8627,7 +7252,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 </tbody>
 </table></div>
 <p><strong>É só isso.</strong> Pergunte. Responda. Aplique.</p>
-<h2 class="lv-h3">6.7 O NEUTRO — nunca muda</h2>
+<h2 class="lv-h3">5.7 O NEUTRO — nunca muda</h2>
 <p>O neutro é o mais fácil de todos. Ele <strong>nunca muda</strong> no acusativo. Não importa se é um objeto, uma ideia ou uma coisa. Ele fica igual ao nominativo. Sempre.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -8752,7 +7377,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 </tbody>
 </table></div>
 <p><strong>É isso.</strong> O neutro é neutro. Não tem alma, não tem gênero masculino/feminino, não muda. Ponto final.</p>
-<h2 class="lv-h3">6.8 A tabela mestra do acusativo</h2>
+<h2 class="lv-h3">5.8 A tabela mestra do acusativo</h2>
 <p>Aqui está a tabela que resolve tudo:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -8814,13 +7439,13 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">6.9 A regra em três linhas</h2>
+<h2 class="lv-h3">5.9 A regra em três linhas</h2>
 <p>Se você esquecer tudo, grave isto:</p>
 <p><strong>FEMININO: SEMPRE MUDA.</strong> (а→у, я→ю, ь não muda)</p>
 <p><strong>MASCULINO: PERGUNTE "TEM ALMA?".</strong> Se tem, soma -а/-я. Se não tem, não muda.</p>
 <p>NEUTRO: NUNCA MUDA.</p>
 <p><strong>É isso.</strong> Você acabou de dominar o caso acusativo dos substantivos.</p>
-<h2 class="lv-h3">6.10 Casos especiais</h2>
+<h2 class="lv-h3">5.10 Casos especiais</h2>
 <p>МАТЬ e ДОЧЬ</p>
 <p>Duas palavras femininas em <strong>-ь</strong> que <strong>mudam</strong> no acusativo, apesar de terminarem em -ь (o que normalmente não muda):</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -8854,7 +7479,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <p><strong>Дитя́</strong> (criança) é a única palavra <strong>neutra</strong> que designa uma pessoa. No acusativo singular, fica <strong>дитя́</strong> (igual ao nominativo). No plural, é <strong>дете́й</strong> (igual ao genitivo plural). É uma exceção, mas você já sabe que дитя é especial.</p>
 <p>СУДЬЯ</p>
 <p><strong>Судья́</strong> (juiz) é masculino em significado, mas feminino em forma (termina em -я). No acusativo, muda como feminino: <strong>судью́</strong>.</p>
-<h2 class="lv-h3">6.11 Os erros que o brasileiro VAI cometer no acusativo</h2>
+<h2 class="lv-h3">5.11 Os erros que o brasileiro VAI cometer no acusativo</h2>
 <p>Erro 1 — Usar o nominativo em vez do acusativo no feminino</p>
 <p>❌ Errado: Я ви́жу кни́га.<br/>
 ✅ Correto: Я ви́жу кни́гу.</p>
@@ -8882,7 +7507,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <p>O brasileiro às vezes pensa: "cachorro tem alma, então muda como masculino animado". Não. Cachorro é feminino (соба́ка). Muda como feminino: соба́ка → соба́ку. Sempre.</p>
 <p>Erro 8 — Não distinguir masculino animado de inanimado</p>
 <p>Este é o erro mais grave. O brasileiro vê "стол" e "друг" e ambos terminam em consoante. Ele não sabe que стол não muda e друг muda. A pergunta mágica resolve: <strong>стол tem alma? Não. друг tem alma? Sim.</strong></p>
-<h2 class="lv-h3">6.12 Frases completas com o acusativo</h2>
+<h2 class="lv-h3">5.12 Frases completas com o acusativo</h2>
 <p>Agora, frases reais para você ver o acusativo em ação:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -8950,7 +7575,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">6.13 EXERCÍCIOS</h2>
+<h2 class="lv-h3">5.13 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Identifique o gênero e diga se muda</strong></p>
 <p>Para cada palavra, diga o gênero (masc., fem., neutro), se tem alma ou não (só para masculino) e se muda no acusativo.</p>
 <ol type="1">
@@ -9056,7 +7681,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">6.14 GABARITO</h2>
+<h2 class="lv-h3">5.14 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>masc., não tem alma, não muda</p></li>
@@ -9096,7 +7721,7 @@ Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.<
 </ol>
 <p><strong>Exercício 8:</strong><br/>
 Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
-<h2 class="lv-h3">6.15 RESUMO DE BOLSO — AULA 6</h2>
+<h2 class="lv-h3">5.15 RESUMO DE BOLSO — AULA 6</h2>
 <ol type="1">
 <li><p><strong>O caso acusativo é o caso da AÇÃO.</strong> É o caso do objeto: aquilo que é visto, lido, falado, comido, amado, escrito.</p></li>
 <li><p><strong>Para os russos, só seres humanos e animais têm alma.</strong> Isso determina quem muda e quem não muda no acusativo.</p></li>
@@ -9132,15 +7757,15 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <p><strong>Masculino sem vida</strong> (coisa)? Não muda. No plural, também não.</p>
 <p class="lv-exemplos">дом · го́род · города́</p></div></div>
 </div>
-</section><h1 class="lv-h1" id="aula-7">AULA 7 — O CASO PREPOSITIVO</h1>
+</section><h1 class="lv-h1" id="aula-6">AULA 6 — O CASO PREPOSITIVO</h1>
 <p>(ou: o caso do lugar — e o segredinho dos lugares abertos e fechados)</p>
-<h2 class="lv-h3">7.1 Uma cena que você já viveu (ou vai viver)</h2>
+<h2 class="lv-h3">6.1 Uma cena que você já viveu (ou vai viver)</h2>
 <p>Você já sabe conjugar verbos, usar o passado, o futuro e o caso acusativo. Agora imagine outra cena.</p>
 <p>Você está na Rússia. Quer dizer que está <strong>no quarto</strong>. Você pensa: "quarto em russo é ко́мната. Vou dizer я в ко́мната." A pessoa te olha com uma cara estranha e corrige:</p>
 <p>— Я в ко́мнате.</p>
 <p>Você olha. É a mesma palavra. Ко́мната. Mas agora termina em <strong>-е</strong>, não em <strong>-а</strong>. Você pensa: "Por quê? Eu já mudei essa palavra para o acusativo antes (ко́мнату). Agora mudou de novo? Quantas formas essa palavra tem?"</p>
 <p>Isso acontece com <strong>todo estudante de russo</strong>. E acontece porque você acabou de encontrar o <strong>caso prepositivo</strong>. Parece mais um caso complicado. Não é. <strong>Cinco minutos de leitura atenta e você vai entender o segredinho que resolve tudo.</strong></p>
-<h2 class="lv-h3">7.2 O que é o caso prepositivo? (e por que ele tem esse nome)</h2>
+<h2 class="lv-h3">6.2 O que é o caso prepositivo? (e por que ele tem esse nome)</h2>
 <p>Antes de qualquer coisa, uma pergunta: por que esse caso se chama <strong>prepositivo</strong>?</p>
 <p>Grava isto:</p>
 <p>O caso prepositivo é o único caso do russo que NUNCA aparece sozinho. Ele sempre vem depois de uma preposição.</p>
@@ -9150,7 +7775,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <p>O caso prepositivo serve para dizer ONDE as coisas estão. É o caso do lugar.</p>
 <p>Quando você quer dizer "estou <strong>no</strong> quarto", "moro <strong>na</strong> Rússia", "o livro está <strong>na</strong> mesa", "trabalho <strong>na</strong> fábrica" — em todas essas frases, o substantivo vai para o caso prepositivo.</p>
 <p><strong>É o caso do "onde".</strong> Simples assim.</p>
-<h2 class="lv-h3">7.3 O segredinho: lugares abertos e lugares fechados</h2>
+<h2 class="lv-h3">6.3 O segredinho: lugares abertos e lugares fechados</h2>
 <p>Agora vem a parte mais encantadora. Preste atenção, porque aqui está a chave de tudo.</p>
 <p>O russo tem <strong>duas preposições principais</strong> para dizer "onde": <strong>В</strong> e <strong>НА</strong>. As duas significam "em" ou "no/na". Mas o russo escolhe entre elas com base em uma lógica muito simples:</p>
 <p><strong>В</strong> → para lugares <strong>FECHADOS</strong>. Lugares onde você pode <strong>entrar dentro</strong>. Lugares que têm paredes, portas, um interior.</p>
@@ -9279,7 +7904,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <li><p><strong>Концерт</strong> (concerto) — não é um lugar, é um evento → <strong>НА</strong>.</p></li>
 </ul>
 <p><strong>A regra geral:</strong> dá para entrar dentro? Se sim, é <strong>В</strong>. Se é amplo, aberto ou é um evento/atividade, é <strong>НА</strong>.</p>
-<h2 class="lv-h3">7.4 A ponte com o português: В = no/na</h2>
+<h2 class="lv-h3">6.4 A ponte com o português: В = no/na</h2>
 <p>Aqui está a coisa mais bonita. Nós já fazemos isso em português sem perceber.</p>
 <p>Em português, dizemos:</p>
 <ul>
@@ -9333,7 +7958,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> não existe "в + o" ou "в + a" em russo. É sempre <strong>в</strong> sozinho, sem contração. Mas a ideia é a mesma do português. Você só precisa escolher entre <strong>В</strong> (fechado) e <strong>НА</strong> (aberto/evento).</p></aside>
-<h2 class="lv-h3">7.5 As 4 principais preposições do prepositivo</h2>
+<h2 class="lv-h3">6.5 As 4 principais preposições do prepositivo</h2>
 <p>O caso prepositivo é regido por quatro preposições principais. Vamos conhecer cada uma.</p>
 <p>1. В (em, dentro)</p>
 <p><strong>Uso:</strong> lugares fechados, onde você pode entrar dentro.<br/>
@@ -9571,7 +8196,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <li><p><strong>Na presença de:</strong> при де́тях (na presença das crianças).</p></li>
 <li><p><strong>No tempo de:</strong> при царе́ (no tempo do tsar).</p></li>
 </ol>
-<h2 class="lv-h3">7.6 A regra da tesourinha do prepositivo</h2>
+<h2 class="lv-h3">6.6 A regra da tesourinha do prepositivo</h2>
 <p>Agora, a mecânica. Como o substantivo muda quando vai para o prepositivo?</p>
 <p>A <strong>tesourinha</strong> funciona como sempre:</p>
 <p><strong>1. Encontre a forma do nominativo (a palavra "de dicionário").</strong><br/>
@@ -9646,7 +8271,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> a regra é quase sempre <strong>-Е</strong>. Só no feminino em <strong>-ь</strong> e no feminino em <strong>-ия</strong> é <strong>-И</strong>. E no neutro em <strong>-мя</strong> é <strong>-ЕНИ</strong>.</p></aside>
 <p>Vejamos cada caso em detalhe.</p>
-<h2 class="lv-h3">7.7 O MASCULINO no prepositivo</h2>
+<h2 class="lv-h3">6.7 O MASCULINO no prepositivo</h2>
 <p>O masculino é o mais fácil: <strong>sempre -Е</strong>. Não importa se termina em consoante, em -й ou em -ь. A terminação é <strong>-Е</strong>.</p>
 <p>Masculino em consoante</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -9782,7 +8407,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o -й desaparece e entra -е.</p></aside>
-<h2 class="lv-h3">7.8 O FEMININO no prepositivo</h2>
+<h2 class="lv-h3">6.8 O FEMININO no prepositivo</h2>
 <p>O feminino é um pouco mais complexo, porque depende da terminação.</p>
 <p>Feminino em -а</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -9973,7 +8598,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o -я desaparece e entra -ии.</p></aside>
-<h2 class="lv-h3">7.9 O NEUTRO no prepositivo</h2>
+<h2 class="lv-h3">6.9 O NEUTRO no prepositivo</h2>
 <p>O neutro é o mais simples. Duas regras.</p>
 <p>Neutro em -о</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -10116,7 +8741,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> são cerca de 10 palavras. Você já as conhece da Aula 2. Elas são neutras e terminam em -мя. No prepositivo, viram -мени.</p></aside>
-<h2 class="lv-h3">7.10 A tabela mestra do prepositivo</h2>
+<h2 class="lv-h3">6.10 A tabela mestra do prepositivo</h2>
 <p>Aqui está a tabela que resolve tudo:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -10189,7 +8814,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">7.11 A pergunta "onde?" vs. "para onde?"</h2>
+<h2 class="lv-h3">6.11 A pergunta "onde?" vs. "para onde?"</h2>
 <p>Aqui está uma das coisas mais importantes de toda a aula. Preste atenção.</p>
 <p>O russo distingue entre <strong>onde</strong> (lugar) e <strong>para onde</strong> (movimento). E essa distinção muda o caso.</p>
 <p><strong>ГДЕ?</strong> (Onde?) → <strong>Prepositivo.</strong> Você já está no lugar.</p>
@@ -10305,7 +8930,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>É isso.</strong> A mesma preposição В ou НА muda o caso do substantivo conforme o sentido. Lugar → prepositivo. Movimento → acusativo.</p>
-<h2 class="lv-h3">7.12 As exceções: os irregulares em -У/-Ю</h2>
+<h2 class="lv-h3">6.12 As exceções: os irregulares em -У/-Ю</h2>
 <p>Aqui está o ponto que só o Penguin explica com clareza. Existem alguns substantivos masculinos que, no prepositivo, <strong>em vez de -Е, recebem -У (ou -Ю)</strong>. Mas atenção: <strong>só quando a preposição é В ou НА.</strong> Com О, eles voltam para -Е.</p>
 <p>Lista dos irregulares mais comuns:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -10452,7 +9077,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">7.13 Os erros que o brasileiro VAI cometer no prepositivo</h2>
+<h2 class="lv-h3">6.13 Os erros que o brasileiro VAI cometer no prepositivo</h2>
 <p>Erro 1 — Usar o acusativo em vez do prepositivo</p>
 <p>❌ Errado: Я в ко́мнату (querendo dizer "estou no quarto").<br/>
 ✅ Correto: Я в ко́мнате.</p>
@@ -10493,7 +9118,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <p>❌ Errado: Я говорю́ о лесу́.<br/>
 ✅ Correto: Я говорю́ о ле́се.</p>
 <p>Os irregulares em -у/-ю só funcionam com В/НА. Com О, voltam para -е.</p>
-<h2 class="lv-h3">7.14 Frases completas com o prepositivo</h2>
+<h2 class="lv-h3">6.14 Frases completas com o prepositivo</h2>
 <p>Agora, frases reais para você ver o prepositivo em ação:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -10586,7 +9211,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">7.15 EXERCÍCIOS</h2>
+<h2 class="lv-h3">6.15 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Escolha В ou НА</strong></p>
 <p>Escolha a preposição correta (В ou НА) para cada lugar.</p>
 <ol type="1">
@@ -10710,7 +9335,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">7.16 GABARITO</h2>
+<h2 class="lv-h3">6.16 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>В — 2. НА — 3. В — 4. НА — 5. В — 6. НА — 7. В — 8. НА — 9. В — 10. НА</p></li>
@@ -10752,7 +9377,7 @@ Resposta pessoal. Verifique se aplicou o acusativo corretamente.</p>
 </ol>
 <p><strong>Exercício 9:</strong><br/>
 Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
-<h2 class="lv-h3">7.17 RESUMO DE BOLSO — AULA 7</h2>
+<h2 class="lv-h3">6.17 RESUMO DE BOLSO — AULA 7</h2>
 <ol type="1">
 <li><p><strong>O caso prepositivo é o único caso do russo que sempre vem depois de uma preposição.</strong> É por isso que se chama prepositivo.</p></li>
 <li><p><strong>Ele serve para dizer ONDE as coisas estão.</strong> É o caso do lugar.</p></li>
@@ -10793,15 +9418,15 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <p class="lv-exemplos">в города́х · в дере́внях · в музе́ях</p></div>
 </div>
 <p class="lv-nota-quadro">Use о em vez de в quando o assunto for o tema da conversa (о жизни, о море). O quadro mostra as terminações; as exceções ficam para depois.</p>
-</section><h1 class="lv-h1" id="aula-8">AULA 8 — O CASO DATIVO</h1>
+</section><h1 class="lv-h1" id="aula-7">AULA 7 — O CASO DATIVO</h1>
 <p>(ou: o caso das coisas que acontecem conosco)</p>
-<h2 class="lv-h3">8.1 Uma cena que você já viveu (ou vai viver)</h2>
+<h2 class="lv-h3">7.1 Uma cena que você já viveu (ou vai viver)</h2>
 <p>Você está na Rússia. Está com frio. Quer dizer "estou com frio" em russo. Você pensa: "frio em russo é хо́лодно. Vou dizer я хо́лодно." A pessoa te olha com uma cara estranha e corrige:</p>
 <p>— Мне хо́лодно.</p>
 <p>Você olha. É uma palavra nova — мне — que você nunca viu. Você pensa: "O que é isso? Por que não posso simplesmente dizer я хо́лодно?" E a pessoa te explica:</p>
 <p>— Porque o frio não é seu. O frio acontece <strong>a você</strong>.</p>
 <p>Essa é a porta de entrada para o <strong>caso dativo</strong>. E é aqui que o russo revela uma das suas belezas mais profundas. Preste atenção, porque depois desta aula você vai ver a língua russa com outros olhos.</p>
-<h2 class="lv-h3">8.2 O que é o caso dativo? (a verdade filosófica por trás da gramática)</h2>
+<h2 class="lv-h3">7.2 O que é o caso dativo? (a verdade filosófica por trás da gramática)</h2>
 <p>Antes de qualquer tabela, uma pergunta: o que é o dativo?</p>
 <p>Em português, a gente chama o dativo de "caso do objeto indireto". É o caso do "para" e do "a". "Dei o livro <strong>ao</strong> Ivan." "Falei <strong>para</strong> a Maria." "Comprei um presente <strong>para</strong> você." O dativo é o caso de quem <strong>recebe</strong> a ação, não de quem a faz.</p>
 <p>Mas essa definição é seca. Vou te dar a definição que muda tudo:</p>
@@ -10867,7 +9492,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o <strong>eu</strong> desaparece. Entra o <strong>мне</strong>. E o verbo <strong>ser</strong> também desaparece (como você já sabe desde a Aula 4). A frase fica: "A mim — quente." "A mim — frio." "A mim — agrada o café."</p></aside>
 <p><strong>É uma revolução mental.</strong> O russo não diz que <strong>você</strong> é quente. Ele diz que <strong>a você</strong> é quente. O calor não é seu. O calor te acontece.</p>
-<h2 class="lv-h3">8.3 O caso dativo é o caso do "para mim, a mim"</h2>
+<h2 class="lv-h3">7.3 O caso dativo é o caso do "para mim, a mim"</h2>
 <p>Antes de entrar na filosofia profunda, vamos ao prático. O dativo é, na sua forma mais simples, o caso do <strong>"para mim"</strong> e <strong>"a mim"</strong>. É o caso de quem <strong>recebe</strong>:</p>
 <ul>
 <li><p><strong>Para mim</strong> — мне</p></li>
@@ -10887,7 +9512,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <li><p>Verbos como ajudar, telefonar, contar, escrever (a alguém)</p></li>
 </ul>
 <p><strong>Tudo isso é dativo.</strong> Porque tudo isso são coisas que <strong>acontecem a você</strong>, não que você faz.</p>
-<h2 class="lv-h3">8.4 Os pronomes pessoais no dativo (primeiro passo)</h2>
+<h2 class="lv-h3">7.4 Os pronomes pessoais no dativo (primeiro passo)</h2>
 <p>Antes de qualquer substantivo, você precisa aprender os <strong>pronomes pessoais no dativo</strong>. Eles são a base. Sem eles, você não vai a lugar nenhum.</p>
 <p>Aqui estão:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -10998,7 +9623,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>É a base.</strong> Antes de aprender os substantivos no dativo, você precisa dominar esses pronomes. Decore-os como se fossem palavras mágicas. Eles vão aparecer em quase todas as frases que você for construir.</p>
-<h2 class="lv-h3">8.5 A grande distinção: o que VOCÊ FAZ vs. o que ACONTECE a você</h2>
+<h2 class="lv-h3">7.5 A grande distinção: o que VOCÊ FAZ vs. o que ACONTECE a você</h2>
 <p>Aqui está o insight mais importante da aula. Preste atenção.</p>
 <p>Em russo, existem duas maneiras de expressar uma relação entre uma pessoa e uma coisa:</p>
 <ol type="1">
@@ -11078,7 +9703,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> na primeira lista, <strong>eu</strong> sou o sujeito. Eu faço a ação. Eu amo, eu leio, eu vejo. Na segunda lista, <strong>a coisa</strong> acontece a mim. O frio me acontece. O café me agrada. A necessidade me vem. Os anos me são contados.</p></aside>
 <p><strong>O russo separa isso de forma implacável.</strong> E para nós, brasileiros, isso é uma revolução mental. Porque a gente sempre começa as frases com "eu". "Eu estou com frio." "Eu gosto de café." "Eu tenho 20 anos." E o russo vem e diz: "Não. A coisa não é sua. A coisa te acontece. Use o dativo."</p>
-<h2 class="lv-h3">8.6 A ilusão do "eu estou com calor"</h2>
+<h2 class="lv-h3">7.6 A ilusão do "eu estou com calor"</h2>
 <p>Vou te contar um segredo filosófico que ninguém nos ensina.</p>
 <p>Em português, a gente diz "<strong>eu estou com calor</strong>". Repare na frase. O calor está <strong>comigo</strong>. Como se o calor fosse uma coisa que eu carrego. Como se fosse minha posse temporária. Como se eu fosse o dono do calor.</p>
 <p><strong>Mas o calor não é meu.</strong> O calor é do ambiente. O calor me acontece. Eu não carrego o calor. O calor me envolve. O calor chega até mim, sem eu ter pedido.</p>
@@ -11208,7 +9833,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <aside class="lv-dica"><p><strong>Repare:</strong> o padrão é sempre <strong>мне + palavra</strong>. A palavra pode ser um advérbio (хо́лодно, жа́рко, пло́хо, хорошо́) ou um verbo (хо́чется). Mas o <strong>мне</strong> está sempre lá. Sempre.</p></aside>
 <p><strong>É uma das construções mais usadas do russo.</strong> No dia a dia, você vai dizer "мне хо́лодно" mil vezes. Vai dizer "мне жа́рко" mil vezes. Vai dizer "мне ну́жно" mil vezes. Todas essas frases usam o dativo.</p>
 <p>Você não vai estar "fazendo" frio. Você vai estar "tendo" frio — no dativo.</p>
-<h2 class="lv-h3">8.7 A grande distinção: GOSTAR vs. AMAR</h2>
+<h2 class="lv-h3">7.7 A grande distinção: GOSTAR vs. AMAR</h2>
 <p>Aqui está a parte mais encantadora do russo. Preste atenção, porque é uma distinção que o português não faz com clareza, mas o russo faz com precisão cirúrgica.</p>
 <p>Em português, a gente usa "amar" e "gostar" como se fossem a mesma coisa, só que em intensidades diferentes:</p>
 <ul>
@@ -11397,7 +10022,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>É uma das belezas do russo.</strong> A língua te obriga a pensar sobre a origem do sentimento. O amor sai de você. O prazer vem até você. Duas coisas diferentes, dois verbos diferentes, dois casos diferentes.</p>
-<h2 class="lv-h3">8.8 Outros usos do dativo: precisar, dever, agradar, telefonar</h2>
+<h2 class="lv-h3">7.8 Outros usos do dativo: precisar, dever, agradar, telefonar</h2>
 <p>Além dos usos filosóficos, o dativo tem usos muito práticos. Vou listar os principais.</p>
 <p>НУЖНО / НУЖНА́ / НУ́ЖНЫ — precisar</p>
 <p>Em português, "eu preciso de algo". Em russo, "a mim é necessário algo":</p>
@@ -11703,7 +10328,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>A lógica:</strong> a idade <strong>acontece a você</strong>. Você não possui os anos. Os anos passam por você. Dativo.</p>
-<h2 class="lv-h3">8.9 Os substantivos no dativo (terminações)</h2>
+<h2 class="lv-h3">7.9 Os substantivos no dativo (terminações)</h2>
 <p>Agora, os substantivos. Como eles mudam no dativo?</p>
 <p>A <strong>tesourinha</strong> funciona como sempre:</p>
 <p><strong>1. Encontre a forma do nominativo (a palavra "de dicionário").</strong><br/>
@@ -11823,7 +10448,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>No masculino e no neutro em -о, o dativo é diferente do prepositivo.</strong> No feminino, é igual.</p>
-<h2 class="lv-h3">8.10 A tabela mestra do dativo</h2>
+<h2 class="lv-h3">7.10 A tabela mestra do dativo</h2>
 <p>Aqui está a tabela que resolve tudo:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -11891,7 +10516,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">8.11 A grande diferença do dativo</h2>
+<h2 class="lv-h3">7.11 A grande diferença do dativo</h2>
 <p>O dativo tem uma característica muito peculiar. Ele é o único caso que, em russo, tem uma <strong>dupla função</strong>:</p>
 <ol type="1">
 <li><p><strong>Objeto indireto</strong> (a quem se dá, a quem se fala, a quem se escreve).</p></li>
@@ -11946,7 +10571,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <li><p><strong>Frases impessoais:</strong> мне хо́лодно, мне нра́вится.</p></li>
 </ol>
 <p>Sem o dativo, você não consegue dizer nem uma coisa nem outra.</p>
-<h2 class="lv-h3">8.12 Os erros que o brasileiro VAI cometer no dativo</h2>
+<h2 class="lv-h3">7.12 Os erros que o brasileiro VAI cometer no dativo</h2>
 <p>Erro 1 — Usar o nominativo em vez do dativo nas construções impessoais</p>
 <p>❌ Errado: Я хо́лодно.<br/>
 ✅ Correto: <strong>Мне</strong> хо́лодно.</p>
@@ -12005,7 +10630,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <p>❌ Errado: Мне ну́жно по́мощь.<br/>
 ✅ Correto: Мне <strong>нужна́</strong> по́мощь.</p>
 <p><strong>По́мощь</strong> é feminino. Então <strong>нужна́</strong>, não ну́жно.</p>
-<h2 class="lv-h3">8.13 Frases completas com o dativo</h2>
+<h2 class="lv-h3">7.13 Frases completas com o dativo</h2>
 <p>Agora, frases reais para você ver o dativo em ação:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -12093,7 +10718,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">8.14 EXERCÍCIOS</h2>
+<h2 class="lv-h3">7.14 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Escolha o pronome dativo correto</strong></p>
 <p>Complete com o pronome no dativo (мне, тебе́, ему́, ей, нам, вам, им).</p>
 <ol type="1">
@@ -12216,7 +10841,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">8.15 GABARITO</h2>
+<h2 class="lv-h3">7.15 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>ему́ — 2. мне — 3. вам — 4. ей — 5. Мне — 6. Им — 7. Нам — 8. вам — 9. Ему́ — 10. тебе́</p></li>
@@ -12258,7 +10883,7 @@ Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.</p>
 </ol>
 <p><strong>Exercício 9:</strong><br/>
 Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
-<h2 class="lv-h3">8.16 RESUMO DE BOLSO — AULA 8</h2>
+<h2 class="lv-h3">7.16 RESUMO DE BOLSO — AULA 8</h2>
 <ol type="1">
 <li><p><strong>O caso dativo é o caso do "para mim, a mim".</strong> É o caso de quem <strong>recebe</strong> a ação.</p></li>
 <li><p><strong>É também o caso das coisas que ACONTECEM a você</strong>, mas que não são suas. Calor, frio, fome, sede, gostar, precisar, ter idade — tudo isso vai para o dativo.</p></li>
@@ -12306,18 +10931,18 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </ul></li>
 <li><p><strong>Verbos que pedem dativo:</strong> помога́ть, звони́ть, писа́ть, говори́ть, дава́ть, расска́зывать, улыба́ться, ве́рить, дари́ть, покупа́ть, отвеча́ть, меша́ть.</p></li>
 </ol>
-<h2 class="lv-h3">8.17 O que vem na próxima aula</h2>
+<h2 class="lv-h3">7.17 O que vem na próxima aula</h2>
 <p>Na próxima aula, você vai aprender o <strong>caso instrumental</strong> — o caso do "com" e do "por meio de". <strong>Por que, ao dizer "eu escrevo com uma caneta", o russo diz я пишу́ ру́чкой — e a palavra caneta muda de terminação?</strong></p>
 <p>O instrumental é o caso do instrumento. E você já vai reconhecer a lógica, porque a tesourinha continua funcionando.</p>
-<h1 class="lv-h1" id="aula-9">AULA 9 — O CASO INSTRUMENTAL</h1>
+<h1 class="lv-h1" id="aula-8">AULA 8 — O CASO INSTRUMENTAL</h1>
 <p>(ou: o caso das extensões do corpo — e a diferença entre o "com" de instrumento e o "com" de companhia)</p>
-<h2 class="lv-h3">9.1 Uma cena que você já viveu (ou vai viver)</h2>
+<h2 class="lv-h3">8.1 Uma cena que você já viveu (ou vai viver)</h2>
 <p>Você está na Rússia. Quer dizer que escreve <strong>com uma caneta</strong>. Você pensa: "caneta em russo é ру́чка. E 'com' em russo é с. Então vou dizer я пишу́ с ру́чкой." A pessoa te olha com uma cara estranha e corrige:</p>
 <p>— Я пишу́ ру́чкой.</p>
 <p>Você olha. É a mesma palavra. Ру́чка. Mas agora está no instrumental (ру́чкой), <strong>e você não usou o с</strong>. Você pensa: "Mas eu queria dizer com a caneta! Por que não usei с?" E a pessoa te explica:</p>
 <p>— Porque a caneta não vai com você. A caneta <strong>é parte de você</strong> quando você escreve. A caneta é a extensão da sua mão.</p>
 <p>Essa é a porta de entrada para o <strong>caso instrumental</strong>. E é aqui que o russo revela uma das suas belezas mais profundas — uma beleza que o português esconde. Preste atenção, porque depois desta aula você vai entender uma das maiores diferenças entre as duas línguas.</p>
-<h2 class="lv-h3">9.2 O segredinho: a extensão do corpo</h2>
+<h2 class="lv-h3">8.2 O segredinho: a extensão do corpo</h2>
 <p>Em português, a palavra "com" tem dois sentidos completamente diferentes que a gente nem percebe:</p>
 <p>Sentido 1 — Instrumento (a coisa é a extensão do seu corpo):</p>
 <ul>
@@ -12376,7 +11001,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> no primeiro caso, a caneta e a colher são <strong>extensões do corpo</strong>. Você escreve, e a caneta faz parte do movimento da mão. Você come, e a colher faz parte do movimento da mão. A coisa <strong>não vai com você</strong>. Ela <strong>é você</strong>, naquele momento.</p></aside>
 <p>No segundo caso, você e a pessoa são <strong>duas coisas separadas</strong>. Você vai, e a pessoa vai. Você mora, e a pessoa mora. É companhia. Por isso precisa do <strong>с</strong>.</p>
-<h2 class="lv-h3">9.3 A metáfora do pintor</h2>
+<h2 class="lv-h3">8.3 A metáfora do pintor</h2>
 <p>Vou te dar uma metáfora que vale a aula inteira.</p>
 <p><strong>Imagine Da Vinci sem um pincel.</strong> Como ele pintaria a Mona Lisa? Ele não pintaria. O pincel é a extensão da mão dele. Sem o pincel, a mão dele não consegue realizar a ação de pintar. <strong>O pincel é parte de Da Vinci no momento da pintura.</strong></p>
 <p>Em russo, Da Vinci pintava <strong>ки́стью</strong> (pincel — instrumental puro). Não <strong>с ки́стью</strong>. Porque o pincel não era um companheiro. Era uma extensão da mão dele.</p>
@@ -12387,7 +11012,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <p>A coisa é uma extensão do seu corpo?</p>
 <p><strong>SIM</strong> → instrumental puro (ру́чкой, ло́жкой, ки́стью).</p>
 <p><strong>NÃO (é outra pessoa ou outra coisa independente)</strong> → С + instrumental (с дру́гом, с ма́мой).</p>
-<h2 class="lv-h3">9.4 A pergunta mágica: a coisa é extensão do corpo?</h2>
+<h2 class="lv-h3">8.4 A pergunta mágica: a coisa é extensão do corpo?</h2>
 <p>Aqui está como você vai decidir entre instrumental puro e С + instrumental:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -12456,7 +11081,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>É isso.</strong> A pergunta mágica resolve 90% dos casos.</p>
-<h2 class="lv-h3">9.5 As 6 preposições do instrumental</h2>
+<h2 class="lv-h3">8.5 As 6 preposições do instrumental</h2>
 <p>Além do "с" (companhia), o instrumental é regido por <strong>6 preposições principais</strong>. Todas elas expressam uma ideia de <strong>posição</strong> ou <strong>relação</strong>:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -12547,7 +11172,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> a preposição (над, под, пе́ред, ме́жду, за, с) <strong>nunca muda</strong>. Sempre igual. O substantivo é que vai para o instrumental. É por isso que se chama "caso instrumental" — a <strong>preposição pede</strong> que a palavra vá para o instrumental.</p></aside>
-<h2 class="lv-h3">9.6 A distinção crucial: lugar (instrumental) vs. movimento (acusativo)</h2>
+<h2 class="lv-h3">8.6 A distinção crucial: lugar (instrumental) vs. movimento (acusativo)</h2>
 <p>Aqui está uma armadilha que pega todo brasileiro. As preposições НАД, ПОД, ЗА e МЕ́ЖДУ mudam de caso conforme o sentido:</p>
 <p><strong>Lugar (repouso) → instrumental.</strong><br/>
 <strong>Movimento → acusativo.</strong></p>
@@ -12640,7 +11265,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o acusativo é sempre o caso do movimento. O caso do repouso muda: prepositivo com В/НА, instrumental com НАД/ПОД/ЗА/МЕ́ЖДУ.</p></aside>
-<h2 class="lv-h3">9.7 A regra da tesourinha do instrumental</h2>
+<h2 class="lv-h3">8.7 A regra da tesourinha do instrumental</h2>
 <p>Agora, as terminações. A tesourinha funciona como sempre:</p>
 <p><strong>1. Encontre a forma do nominativo (a palavra "de dicionário").</strong><br/>
 <strong>2. Aplique a terminação do instrumental, que depende do gênero.</strong><br/>
@@ -12720,7 +11345,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <li><p>Neutro em -мя recebe <strong>-ЕНЕМ</strong>.</p></li>
 </ul>
 <p><strong>A grande diferença do instrumental em relação aos outros casos:</strong> o masculino e o neutro recebem <strong>-ОМ/-ЕМ</strong> (não -У, não -Е). É uma terminação única.</p>
-<h2 class="lv-h3">9.8 A tabela mestra do instrumental</h2>
+<h2 class="lv-h3">8.8 A tabela mestra do instrumental</h2>
 <p>Aqui está a tabela que resolve tudo:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -12797,7 +11422,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <li><p>ноша → но́шей</p></li>
 </ul>
 <p>Isso é o que Dolenga menciona quando fala da raiz terminada em ж, ч, ш, ц, п.</p>
-<h2 class="lv-h3">9.9 A variação С / СО</h2>
+<h2 class="lv-h3">8.9 A variação С / СО</h2>
 <p>A preposição <strong>с</strong> (com) tem uma variação ortográfica:</p>
 <ul>
 <li><p><strong>С</strong> → antes de consoantes (menos as duas consoantes específicas): с дру́гом, с ма́мой, с учи́телем.</p></li>
@@ -12851,7 +11476,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>Por quê?</strong> Eufonia de novo. <strong>С дру́гом</strong> soaria normal. <strong>С мной</strong> soaria estranho (с + м). Por isso, o russo insere <strong>-о-</strong> para separar: <strong>со мной</strong>.</p>
-<h2 class="lv-h3">9.10 Os pronomes pessoais no instrumental</h2>
+<h2 class="lv-h3">8.10 Os pronomes pessoais no instrumental</h2>
 <p>Assim como no dativo, os pronomes pessoais têm formas especiais no instrumental. Você precisa decorar.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -12964,7 +11589,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">9.11 Os verbos que pedem instrumental</h2>
+<h2 class="lv-h3">8.11 Os verbos que pedem instrumental</h2>
 <p>Existem verbos que <strong>sempre</strong> pedem instrumental. Vou listar os principais:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -13064,7 +11689,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <li><p>Я студе́нт. (Sou estudante — sem verbo, nominativo).</p></li>
 <li><p>Я был студе́нтом. (Eu era estudante — com verbo, instrumental).</p></li>
 </ul>
-<h2 class="lv-h3">9.12 O uso idiomático: мы с X</h2>
+<h2 class="lv-h3">8.12 O uso idiomático: мы с X</h2>
 <p>Aqui está uma das construções mais elegantes do russo. Quando o russo quer dizer "X e eu", ele diz "nós com X":</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -13131,7 +11756,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>É uma construção muito usada no dia a dia.</strong> Em vez de dizer "Eva e eu", o russo diz "nós com Eva". Em vez de dizer "meu marido e eu", o russo diz "nós com o marido".</p>
-<h2 class="lv-h3">9.13 O instrumental de tempo</h2>
+<h2 class="lv-h3">8.13 O instrumental de tempo</h2>
 <p>Algumas expressões de tempo usam o instrumental <strong>sem preposição</strong>. Você já viu isso de passagem no prepositivo, mas aqui é o lugar certo.</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -13215,7 +11840,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> esses advérbios são, na verdade, formas do instrumental de substantivos (у́тро → у́тром, день → днём, ве́чер → ве́чером, ночь → но́чью). Por isso, são considerados instrumental. Mas você não precisa pensar nisso. Só precisa usá-los.</p></aside>
-<h2 class="lv-h3">9.14 Os erros que o brasileiro VAI cometer no instrumental</h2>
+<h2 class="lv-h3">8.14 Os erros que o brasileiro VAI cometer no instrumental</h2>
 <p>Erro 1 — Usar С quando não precisa</p>
 <p>❌ Errado: Я пишу́ <strong>с ру́чкой</strong>.<br/>
 ✅ Correto: Я пишу́ <strong>ру́чкой</strong>.</p>
@@ -13256,7 +11881,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <p>❌ Errado: Я пишу́ ру́чка? Não, ру́чка é o nominativo.<br/>
 ✅ Correto: Я пишу́ <strong>ру́чкой</strong> (feminino).</p>
 <p>Masculino: -ОМ/-ЕМ. Feminino em -а: -ОЙ. Feminino em -ь: -ЬЮ.</p>
-<h2 class="lv-h3">9.15 Frases completas com o instrumental</h2>
+<h2 class="lv-h3">8.15 Frases completas com o instrumental</h2>
 <p>Agora, frases reais para você ver o instrumental em ação:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -13359,7 +11984,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">9.16 EXERCÍCIOS</h2>
+<h2 class="lv-h3">8.16 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Instrumental puro ou С + instrumental?</strong></p>
 <p>Escolha a estrutura correta (instrumental puro ou С + instrumental).</p>
 <ol type="1">
@@ -13469,7 +12094,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">9.17 GABARITO</h2>
+<h2 class="lv-h3">8.17 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>ру́чкой (puro) — 2. с тобо́й (С) — 3. ло́жкой (puro) — 4. с учи́телем (С) — 5. ноже́м (puro) — 6. с ма́мой (С) — 7. ки́стью (puro) — 8. с колле́гами (С) — 9. мы́лом (puro) — 10. с дру́гом (С)</p></li>
@@ -13507,7 +12132,7 @@ Resposta pessoal. Verifique se aplicou o dativo corretamente.</p>
 </ol>
 <p><strong>Exercício 8:</strong><br/>
 Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
-<h2 class="lv-h3">9.18 RESUMO DE BOLSO — AULA 9</h2>
+<h2 class="lv-h3">8.18 RESUMO DE BOLSO — AULA 9</h2>
 <ol type="1">
 <li><p><strong>O caso instrumental é o caso do "com" e do "por meio de".</strong> Ele responde à pergunta "com o quê?" / "por meio de quê?".</p></li>
 <li><p>A grande distinção:</p>
@@ -13542,9 +12167,9 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 <li><p><strong>Мы с X:</strong> em vez de "X e eu", o russo diz "nós com X" (мы с Е́вой).</p></li>
 <li><p><strong>Instrumental de tempo:</strong> у́тром, днём, ве́чером, но́чью, весно́й, ле́том, о́сенью, зимо́й.</p></li>
 </ol>
-<h1 class="lv-h1" id="aula-10">AULA 10 — GENITIVO I: O "DE" E A NEGAÇÃO</h1>
+<h1 class="lv-h1" id="aula-9">AULA 9 — GENITIVO I: O "DE" E A NEGAÇÃO</h1>
 <p>(ou: o caso da origem — e a primeira metade do caso mais famoso do russo)</p>
-<h2 class="lv-h3">10.1 Uma cena que você já viveu (ou vai viver)</h2>
+<h2 class="lv-h3">9.1 Uma cena que você já viveu (ou vai viver)</h2>
 <p>Você está na Rússia. Está numa loja. Quer dizer que <strong>não tem dinheiro</strong>. Você pensa: "dinheiro em russo é де́ньги. Vou dizer у меня́ нет де́ньги." A pessoa te olha e corrige:</p>
 <p>— У меня́ нет де́нег.</p>
 <p>Você olha. É a mesma palavra. Де́ньги. Mas agora está <strong>де́нег</strong> — sem o <strong>-и</strong> no final. Você pensa: "Mas eu já mudei essa palavra antes? Por que mudou de novo? Quantas formas essa palavra tem?"</p>
@@ -13555,7 +12180,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </ol>
 <p>Esta é a Aula 10 — <strong>Genitivo I: o "de" e a negação</strong>. Só isso. Sem plural, sem números, sem preposições. Isso fica para a Aula 11.</p>
 <p><strong>E antes de começarmos, uma tranquilização:</strong> você está terminando a parte chata do russo. A gramática essencial acaba aqui. O que vem depois não é mais difícil — é mais rico. Você já vai ver.</p>
-<h2 class="lv-h3">10.2 Antes de mais nada: o que significa "genitivo"?</h2>
+<h2 class="lv-h3">9.2 Antes de mais nada: o que significa "genitivo"?</h2>
 <p>Vou te contar um segredo etimológico que <strong>nenhum dos cinco livros</strong> que analisei conta. Preste atenção, porque isso vai fazer o caso fazer sentido.</p>
 <p>A palavra <strong>genitivo</strong> vem do latim <strong>genitivus</strong>, que vem do verbo <strong>gignere</strong> — que significa "gerar", "dar à luz". E <strong>gignere</strong> vem de <strong>genesis</strong> — origem, nascimento, começo.</p>
 <p>Genitivo = caso da origem. Caso de quem gera. Caso de quem dá à luz.</p>
@@ -13570,7 +12195,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </ul>
 <aside class="lv-dica"><p><strong>Repare:</strong> em todas essas frases, o "de" indica <strong>posse, pertença, origem</strong>. É isso que o genitivo faz em russo. É o caso da <strong>posse</strong>. O caso do <strong>"de"</strong>.</p></aside>
 <p><strong>A grande sacada:</strong> a palavra "genética" também vem da mesma raiz. Genética é o estudo do que <strong>você herdou dos seus pais</strong>, do que <strong>veio antes de você</strong>, do que <strong>determina a sua origem</strong>. O genitivo é o "caso genético" da frase — o caso que marca <strong>de quem a coisa veio</strong>.</p>
-<h2 class="lv-h3">10.3 A ponte com o português</h2>
+<h2 class="lv-h3">9.3 A ponte com o português</h2>
 <p>Antes de qualquer tabela, vamos fazer a ponte. Em português, o genitivo se expressa de <strong>duas formas</strong>:</p>
 <p>Forma 1 — com "de":</p>
 <ul>
@@ -13620,7 +12245,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> em russo, <strong>não existe a palavra "de"</strong>. O que existe é uma <strong>mudança na terminação</strong> do substantivo. Кни́га Ива́на literalmente seria "livro Ivan-de" (Ivan com a terminação do genitivo).</p></aside>
 <p><strong>É por isso que o caso se chama genitivo.</strong> Porque ele marca a <strong>origem</strong>, a <strong>posse</strong>, a <strong>pertença</strong>. Sem a palavra "de". Só com a terminação.</p>
-<h2 class="lv-h3">10.4 As terminações do genitivo singular</h2>
+<h2 class="lv-h3">9.4 As terminações do genitivo singular</h2>
 <p>Agora, as terminações. A <strong>tesourinha</strong> funciona como sempre:</p>
 <p><strong>1. Encontre a forma do nominativo (a palavra "de dicionário").</strong><br/>
 <strong>2. Aplique a terminação do genitivo, que depende do gênero e da terminação.</strong><br/>
@@ -13699,7 +12324,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 <li><p><strong>Neutro em -мя</strong> recebe <strong>-ЕНИ</strong>.</p></li>
 </ul>
 <p><strong>É isso.</strong> Simples assim. Vamos ver cada caso em detalhe.</p>
-<h2 class="lv-h3">10.5 O MASCULINO no genitivo</h2>
+<h2 class="lv-h3">9.5 O MASCULINO no genitivo</h2>
 <p>Masculino em consoante → -А</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -13855,7 +12480,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o <strong>-ь</strong> desaparece e entra <strong>-Я</strong>.</p></aside>
 <aside class="lv-atencao"><p><strong>Atenção ao acento:</strong> сло́варь → словаря́ (tônica na terminação). Учи́тель → учи́теля (tônica na raiz). Não há regra fixa. Você precisa ouvir e memorizar.</p></aside>
-<h2 class="lv-h3">10.6 O FEMININO no genitivo</h2>
+<h2 class="lv-h3">9.6 O FEMININO no genitivo</h2>
 <p>Feminino em -а → -Ы (ou -И depois de г, к, х, ж, ч, ш, щ)</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -14099,7 +12724,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o <strong>-я</strong> desaparece e entra <strong>-ИИ</strong> (dois "i"s).</p></aside>
-<h2 class="lv-h3">10.7 O NEUTRO no genitivo</h2>
+<h2 class="lv-h3">9.7 O NEUTRO no genitivo</h2>
 <p>Neutro em -о → -А</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -14239,7 +12864,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> são cerca de 10 palavras. Você já as conhece desde a Aula 2. Elas são neutras e terminam em -мя. No genitivo, viram -мени.</p></aside>
-<h2 class="lv-h3">10.8 A tabela mestra do genitivo singular</h2>
+<h2 class="lv-h3">9.8 A tabela mestra do genitivo singular</h2>
 <p>Aqui está a tabela que resolve tudo:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -14308,7 +12933,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </tbody>
 </table></div>
 <p><strong>A grande diferença:</strong> o masculino e o neutro recebem <strong>-А/-Я</strong>; o feminino recebe <strong>-Ы/-И</strong>.</p>
-<h2 class="lv-h3">10.9 A primeira aplicação: a NEGAÇÃO ("não tenho")</h2>
+<h2 class="lv-h3">9.9 A primeira aplicação: a NEGAÇÃO ("não tenho")</h2>
 <p>Agora que você conhece as terminações, vamos à primeira aplicação prática. E aqui eu vou te dar uma boa notícia:</p>
 <p>A negação de posse em russo é a porta de entrada do genitivo. É a coisa mais fácil e mais usada.</p>
 <p>Você já sabe da Aula 4 como dizer "eu tenho":</p>
@@ -14430,7 +13055,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> todos os objetos estão no <strong>genitivo</strong>. Todos. É uma regra fixa. <strong>Нет sempre pede genitivo.</strong> Sempre.</p></aside>
 <aside class="lv-atencao"><p><strong>Atenção:</strong> algumas dessas frases têm genitivo <strong>plural</strong> (друзе́й, дете́й, де́нег). Isso é assunto da Aula 11. Por enquanto, foque no genitivo <strong>singular</strong>. As frases no singular são as mais fáceis.</p></aside>
-<h2 class="lv-h3">10.10 A segunda aplicação: a POSSE ("o livro de...")</h2>
+<h2 class="lv-h3">9.10 A segunda aplicação: a POSSE ("o livro de...")</h2>
 <p>A segunda aplicação do genitivo é a <strong>posse</strong>. É o "de" português.</p>
 <p>Compare:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
@@ -14531,7 +13156,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o primeiro substantivo (кни́га, дом, и́мя, центр, цвет, му́зыка, кры́ша, дверь) fica no <strong>nominativo</strong>. O segundo substantivo (Ива́на, ма́мы, ма́льчика, го́рода, мо́ря, компози́тора, до́ма, ко́мнаты) fica no <strong>genitivo</strong>. É o possessor.</p></aside>
 <p><strong>E a pergunta mágica:</strong> "de quem é?" A resposta vai para o genitivo. "O livro de quem? De Ivan." → Ива́на.</p>
-<h2 class="lv-h3">10.11 O uso do genitivo com "нет" em frases sem у меня</h2>
+<h2 class="lv-h3">9.11 O uso do genitivo com "нет" em frases sem у меня</h2>
 <p>A palavra <strong>нет</strong> também pode ser usada sem <strong>у меня</strong>. É o "não há", "não existe":</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -14603,7 +13228,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">10.12 Os erros que o brasileiro VAI cometer no genitivo</h2>
+<h2 class="lv-h3">9.12 Os erros que o brasileiro VAI cometer no genitivo</h2>
 <p>Erro 1 — Usar o nominativo em vez do genitivo depois de "нет"</p>
 <p>❌ Errado: У меня́ нет кни́га.<br/>
 ✅ Correto: У меня́ нет кни́ги.</p>
@@ -14654,7 +13279,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 <li><p>рука́ → руки́ (o acento muda)</p></li>
 </ul>
 <p>Não há regra fixa. Você precisa ouvir e memorizar.</p>
-<h2 class="lv-h3">10.13 Frases completas com o genitivo</h2>
+<h2 class="lv-h3">9.13 Frases completas com o genitivo</h2>
 <p>Agora, frases reais para você ver o genitivo em ação:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -14742,7 +13367,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">10.14 EXERCÍCIOS</h2>
+<h2 class="lv-h3">9.14 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Coloque no genitivo</strong></p>
 <p>Transforme as palavras abaixo no genitivo singular.</p>
 <ol type="1">
@@ -14851,7 +13476,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">10.15 GABARITO</h2>
+<h2 class="lv-h3">9.15 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>дру́га — 2. кни́ги — 3. окна́ — 4. семьи́ — 5. словаря́ — 6. но́чи — 7. музе́я — 8. вре́мени — 9. маши́ны — 10. мо́ря — 11. Росси́и — 12. врача́ — 13. две́ри — 14. студе́нта — 15. письма́</p></li>
@@ -14889,7 +13514,7 @@ Resposta pessoal. Verifique se aplicou o instrumental corretamente.</p>
 </ol>
 <p><strong>Exercício 8:</strong><br/>
 Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
-<h2 class="lv-h3">10.16 RESUMO DE BOLSO — AULA 10</h2>
+<h2 class="lv-h3">9.16 RESUMO DE BOLSO — AULA 10</h2>
 <ol type="1">
 <li><p><strong>O genitivo vem de "gênesis"</strong> — origem, nascimento. É o caso da <strong>posse</strong>, de <strong>quem pertence</strong>, de <strong>quem gera</strong>.</p></li>
 <li><p><strong>O genitivo corresponde ao "de" em português:</strong> o livro <strong>de</strong> Ivan, a casa <strong>de</strong> mamãe.</p></li>
@@ -14916,7 +13541,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 <li><p><strong>Нет sempre pede genitivo.</strong> Sempre. Sem exceção.</p></li>
 <li><p><strong>Erros do brasileiro:</strong> usar nominativo depois de нет; esquecer -и depois de г, к, х, ж, ч, ш, щ; esquecer -мя → -мени; confundir genitivo com acusativo animado; colocar o objeto possuído no genitivo.</p></li>
 </ol>
-<h2 class="lv-h3">10.17 A tranquilização: você está terminando a parte difícil</h2>
+<h2 class="lv-h3">9.17 A tranquilização: você está terminando a parte difícil</h2>
 <p>Antes de fechar esta aula, uma pausa. Preste atenção no que eu vou te dizer.</p>
 <p><strong>Você está terminando a parte chata do russo.</strong> A gramática essencial acaba aqui. Você já aprendeu:</p>
 <ul>
@@ -14931,9 +13556,9 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 <p><strong>Depois disso, você já terá os 6 casos do russo.</strong> E o que vem depois <strong>não é mais difícil</strong> — é mais rico. É vocabulário, expressões, cultura, imersão. Você já vai poder ler, escrever, ouvir e falar russo em nível A1/A2.</p>
 <p><strong>O erro do estudante de russo</strong> é achar que o avançado é difícil. <strong>Difícil no russo é a estrutura básica.</strong> Porque é abstrata, cheia de regras, cheia de exceções. Depois que você domina a estrutura, todo o resto flui. Você já tem a estrutura. Você já vai ver.</p>
 <p><strong>Falta uma aula.</strong> Uma aula em duas partes. E depois, o russo será seu.</p>
-<h1 class="lv-h1" id="aula-11">AULA 11 — GENITIVO II: PLURAL, NÚMEROS E PREPOSIÇÕES</h1>
+<h1 class="lv-h1" id="aula-10">AULA 10 — GENITIVO II: PLURAL, NÚMEROS E PREPOSIÇÕES</h1>
 <p>(ou: a segunda metade do caso mais famoso do russo)</p>
-<h2 class="lv-h3">11.1 Onde você está agora</h2>
+<h2 class="lv-h3">10.1 Onde você está agora</h2>
 <p>Você aprendeu, na Aula 10, o genitivo <strong>singular</strong> — o "de" e a negação. Você já sabe dizer:</p>
 <ul>
 <li><p><strong>У меня́ нет кни́ги.</strong> (Não tenho livro.)</p></li>
@@ -14947,7 +13572,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 <li><p><strong>As preposições do genitivo</strong> — без, для, до, из, от, у.</p></li>
 </ol>
 <p><strong>E depois desta aula, você terminou a gramática essencial do russo.</strong> Você terá visto os 6 casos. Vou explicar isso no final.</p>
-<h2 class="lv-h3">11.2 O genitivo plural: as terminações</h2>
+<h2 class="lv-h3">10.2 O genitivo plural: as terminações</h2>
 <p>O genitivo plural tem uma lógica parecida com a do singular, mas com terminações diferentes. Vou começar pelas quatro regras principais:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -15016,7 +13641,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tbody>
 </table></div>
 <p>Vou explicar cada caso com exemplos.</p>
-<h2 class="lv-h3">11.3 O masculino no genitivo plural</h2>
+<h2 class="lv-h3">10.3 O masculino no genitivo plural</h2>
 <p>Masculino duro → -ОВ</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -15172,7 +13797,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> depois de <strong>ж, ч, ш, щ</strong>, a terminação é <strong>-ЕЙ</strong> (não -ОВ).</p></aside>
-<h2 class="lv-h3">11.4 O feminino no genitivo plural</h2>
+<h2 class="lv-h3">10.4 O feminino no genitivo plural</h2>
 <p>Feminino em -а → sem terminação</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -15361,7 +13986,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o <strong>-я</strong> desaparece e entra <strong>-ИЙ</strong> (com dois "i"s).</p></aside>
-<h2 class="lv-h3">11.5 O neutro no genitivo plural</h2>
+<h2 class="lv-h3">10.5 O neutro no genitivo plural</h2>
 <p>Neutro em -о → sem terminação</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -15496,7 +14121,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tbody>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> essas 10 palavras são neutras e terminam em -мя. No genitivo plural, viram <strong>-ЁН</strong> (com o "ё" tônico).</p></aside>
-<h2 class="lv-h3">11.6 A vogal eufônica: o segredo do plural feminino e neutro</h2>
+<h2 class="lv-h3">10.6 A vogal eufônica: o segredo do plural feminino e neutro</h2>
 <p>Aqui está uma das regras que mais confundem o aluno — mas que é previsível quando você entende a lógica.</p>
 <p>Quando a raiz termina em duas consoantes, insere-se uma vogal (о ou е) entre elas, no genitivo plural, para facilitar a pronúncia.</p>
 <p><strong>A lógica:</strong> o russo não gosta de encontros consonânticos difíceis no final da palavra. Então, ele insere uma vogal.</p>
@@ -15633,7 +14258,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">11.7 Os irregulares mais comuns do plural</h2>
+<h2 class="lv-h3">10.7 Os irregulares mais comuns do plural</h2>
 <p>Existem algumas palavras cujo genitivo plural é irregular. Você precisa decorar as principais:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -15713,7 +14338,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> alguns têm terminação <strong>-ЬЕВ</strong> (братьев, деревьев, перьев, крыльев), outros terminam com <strong>-ЕЙ</strong> (друзей, мужей, детей, людей), outros são <strong>sem terminação</strong> (яблок, денег, суток).</p></aside>
 <p>Guarde esses porque aparecem muito no dia a dia.</p>
-<h2 class="lv-h3">11.8 A grande aplicação: os NÚMEROS</h2>
+<h2 class="lv-h3">10.8 A grande aplicação: os NÚMEROS</h2>
 <p>Agora chegamos à parte mais prática do genitivo plural. E aqui está uma das regras mais famosas do russo.</p>
 <p><strong>O número 1 vai com o nominativo singular.</strong><br/>
 <strong>Os números 2, 3 e 4 vão com o genitivo singular.</strong><br/>
@@ -16026,7 +14651,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </table></div>
 <aside class="lv-dica"><p><strong>Repare:</strong> o número 2 tem <strong>два</strong> (masculino/neutro) e <strong>две</strong> (feminino). É uma distinção importante.</p></aside>
 <p><strong>Os números 3 e 4</strong> não mudam com o gênero: <strong>три</strong>, <strong>четы́ре</strong>.</p>
-<h2 class="lv-h3">11.9 As preposições do genitivo</h2>
+<h2 class="lv-h3">10.9 As preposições do genitivo</h2>
 <p>Agora, as preposições que regem o genitivo. São as mais importantes:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -16406,7 +15031,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">11.10 A grande aplicação: a QUANTIDADE</h2>
+<h2 class="lv-h3">10.10 A grande aplicação: a QUANTIDADE</h2>
 <p>Certas palavras de quantidade pedem genitivo. As mais importantes são:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -16497,7 +15122,7 @@ Resposta pessoal. Verifique se aplicou o genitivo corretamente.</p>
 <li><p>Palavras contáveis (кни́га, стол, дом) → <strong>genitivo plural</strong> (мно́го книг, ма́ло столо́в).</p></li>
 </ul>
 <p><strong>É uma lógica de quantidade.</strong> Se a coisa é contável, o plural. Se é incontável, o singular.</p>
-<h2 class="lv-h3">11.11 Os erros que o brasileiro VAI cometer no genitivo plural</h2>
+<h2 class="lv-h3">10.11 Os erros que o brasileiro VAI cometer no genitivo plural</h2>
 <p>Erro 1 — Usar o nominativo depois de "нет"</p>
 <p>❌ Errado: У меня́ нет кни́ги. (singular, mas querendo dizer plural)<br/>
 ✅ Correto: У меня́ нет книг. (plural)</p>
@@ -16544,7 +15169,7 @@ Vou reformular: o erro é aplicar -ОВ em palavras que deveriam ter -ЕЙ.<br/>
 <p>❌ Errado: для ма́ма.<br/>
 ✅ Correto: для ма́мы.</p>
 <p>Todas as preposições do genitivo pedem genitivo. Sempre.</p>
-<h2 class="lv-h3">11.12 Frases completas com o genitivo plural</h2>
+<h2 class="lv-h3">10.12 Frases completas com o genitivo plural</h2>
 <p>Agora, frases reais:</p>
 <div class="lv-matriz-wrap"><table class="lv-matriz">
 <colgroup>
@@ -16647,7 +15272,7 @@ Vou reformular: o erro é aplicar -ОВ em palavras que deveriam ter -ЕЙ.<br/>
 </tr>
 </tbody>
 </table></div>
-<h2 class="lv-h3">11.13 EXERCÍCIOS</h2>
+<h2 class="lv-h3">10.13 EXERCÍCIOS</h2>
 <p class="lv-eyebrow"><strong>Exercício 1 — Genitivo plural</strong></p>
 <p>Transforme as palavras abaixo no genitivo plural.</p>
 <ol type="1">
@@ -16757,7 +15382,7 @@ Vou reformular: o erro é aplicar -ОВ em palavras que deveriam ter -ЕЙ.<br/>
 <li></li>
 <li></li>
 </ol>
-<h2 class="lv-h3">11.14 GABARITO</h2>
+<h2 class="lv-h3">10.14 GABARITO</h2>
 <p class="lv-eyebrow"><strong>Exercício 1:</strong></p>
 <ol type="1">
 <li><p>столо́в — 2. книг — 3. друзе́й — 4. о́кон — 5. учителе́й — 6. семе́й — 7. двере́й — 8. море́й — 9. враче́й — 10. времён — 11. ко́шек — 12. сестёр — 13. пи́сем — 14. дере́вьев — 15. дете́й</p></li>
@@ -16795,7 +15420,7 @@ Vou reformular: o erro é aplicar -ОВ em palavras que deveriam ter -ЕЙ.<br/>
 </ol>
 <p><strong>Exercício 8:</strong><br/>
 Resposta pessoal. Verifique se aplicou o genitivo plural corretamente.</p>
-<h2 class="lv-h3">11.15 RESUMO DE BOLSO — AULA 11</h2>
+<h2 class="lv-h3">10.15 RESUMO DE BOLSO — AULA 11</h2>
 <ol type="1">
 <li><p>Genitivo plural — terminações:</p>
 <ul>
@@ -16824,7 +15449,7 @@ Resposta pessoal. Verifique se aplicou o genitivo plural corretamente.</p>
 <li><p><strong>Quantidade:</strong> мно́го, ма́ло, немно́го, ско́лько, сто́лько, не́сколько + genitivo.</p></li>
 <li><p><strong>Erros do brasileiro:</strong> esquecer que 5+ pede genitivo plural; esquecer que 2-4 pede genitivo singular; esquecer a vogal eufônica; usar -ОВ em palavras que pedem -ЕЙ; esquecer que as preposições pedem genitivo.</p></li>
 </ol>
-<h2 class="lv-h3">11.16 A tranquilização final: você terminou a gramática essencial</h2>
+<h2 class="lv-h3">10.16 A tranquilização final: você terminou a gramática essencial</h2>
 <p>Agora, uma pausa. Preste atenção no que eu vou te dizer.</p>
 <p>Você terminou a gramática essencial do russo.</p>
 <p>Você já viu os <strong>6 casos</strong>:</p>
@@ -16860,7 +15485,7 @@ Resposta pessoal. Verifique se aplicou o genitivo plural corretamente.</p>
 <p><strong>E tudo isso é muito mais fácil do que a gramática.</strong> Porque é intuitivo, é cultural, é vivo. Você já tem a estrutura. Agora você vai construir a casa.</p>
 <p><strong>Falta uma coisa:</strong> praticar. Ler, ouvir, falar, escrever. Todos os dias. Mesmo que sejam 15 minutos. Porque a estrutura só se consolida com o uso.</p>
 <p><strong>Você terminou a parte chata.</strong> Agora, o russo será seu.</p>
-<h2 class="lv-h3">11.17 O que vem depois</h2>
+<h2 class="lv-h3">10.17 O que vem depois</h2>
 <p>A partir daqui, o seu caminho é:</p>
 <ol type="1">
 <li><p><strong>Revisar as Aulas 1 a 11.</strong> Ler de novo, fazer os exercícios de novo.</p></li>

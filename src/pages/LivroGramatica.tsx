@@ -51,7 +51,7 @@ export default function LivroGramatica() {
     <main className="lv-folha" style={{ maxWidth: 760, margin: '0 auto', padding: '48px 20px' }}>
       <p className="lv-eyebrow">Livro · Russo · A1–A2</p>
       <h1 className="lv-h1">A gramática russa que faltava para o estudante brasileiro.</h1>
-      <p className="lv-lead">Onze aulas, do alfabeto ao caso genitivo, explicadas em português, com exemplos em frases curtas, quadros-resumo e 100 exercícios com resposta comentada. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>
+      <p className="lv-lead">Dez aulas, do gênero dos substantivos ao genitivo, explicadas em português, com exemplos em frases curtas, quadros-resumo e exercícios com gabarito. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>
       {estado === 'carregando' && <p className="lv-nota">Carregando…</p>}
       {estado === 'entrar' && (
         <p><Link className="btn btn-primary" to="/entrar">Entrar para ler</Link></p>

@@ -40,14 +40,18 @@ async function startServer() {
     app.use(express.static(path.resolve(__dirname, 'dist'), {
       setHeaders: (res, arquivo) => {
         // MP3 tem o nome do hash do texto: nunca muda, pode ficar em cache por um ano. A lista (index.json) muda e fica 5 minutos.
-        if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
       },
     }));
     // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).
     const dadosMeta = carregarDadosMeta(__dirname);
     let htmlBase: string | null = null;
+    // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
+    app.get('/assets/*', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     app.get('*', (req: Request, res: Response) => {
+      res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       const m = metaDaRota(req.path, dadosMeta);
       res.status(m.status).type('html').send(aplicarMeta(htmlBase, m, SITE_URL));

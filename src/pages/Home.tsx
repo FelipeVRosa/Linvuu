@@ -117,24 +117,6 @@ export default function Home() {
         <div className="lv-grade">{CURSOS_ATIVOS.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
       </section>
 
-      <section className="lv-sec" aria-labelledby="h-niveis">
-        <p className="lv-kicker lv-kicker-esc">Níveis</p>
-        <h2 id="h-niveis">O que você consegue fazer em cada nível</h2>
-        <div className="lv-niveis">
-          {NIVEIS.map((n) => (
-            <article key={n.cod}>
-              <div className="lv-nivel-cod"><span className="lv-cod">{n.cod}</span><span>{n.nome}</span></div>
-              <Traco valor={n.valor} altura={12} semente={n.sem} />
-              <p>{n.texto}</p>
-            </article>
-          ))}
-        </div>
-        <details className="lv-cefr">
-          <summary>O que significam A1, A2 e B1?</summary>
-          <p>São os níveis do Quadro Europeu Comum de Referência para Línguas, a escala que escolas e exames usam no mundo todo. Organizamos o curso por ela, e a Linvuu emite um certificado a cada nível concluído.</p>
-        </details>
-      </section>
-
       <section className="lv-sec" id="metodo" aria-labelledby="h-metodo">
         <p className="lv-kicker lv-kicker-esc">{t.metodo.kicker}</p>
         <h2 id="h-metodo">{t.metodo.titulo} {t.metodo.destaque}</h2>
@@ -188,6 +170,23 @@ export default function Home() {
         <p className="lv-kicker lv-kicker-esc">{t.faq.kicker}</p>
         <h2 id="h-faq">{t.faq.titulo}</h2>
         <Faq />
+        <div className="lv-niveis-bloco" aria-labelledby="h-niveis">
+          <p className="lv-kicker lv-kicker-esc">Níveis</p>
+          <h3 id="h-niveis">O que você consegue fazer em cada nível</h3>
+          <div className="lv-niveis">
+            {NIVEIS.map((n) => (
+              <article key={n.cod}>
+                <div className="lv-nivel-cod"><span className="lv-cod">{n.cod}</span><span>{n.nome}</span></div>
+                <Traco valor={n.valor} altura={12} semente={n.sem} />
+                <p>{n.texto}</p>
+              </article>
+            ))}
+          </div>
+          <details className="lv-cefr">
+            <summary>O que significam A1, A2 e B1?</summary>
+            <p>São os níveis do Quadro Europeu Comum de Referência para Línguas, a escala que escolas e exames usam no mundo todo. Organizamos o curso por ela, e a Linvuu emite um certificado a cada nível concluído.</p>
+          </details>
+        </div>
       </section>
 
       <section className="lv-cta">

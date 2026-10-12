@@ -354,6 +354,31 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .area-aluno[data-tema="escuro"] .comparacao{background:var(--sem-superficie-2);border-left-color:var(--sem-acao);color:var(--sem-texto)}
 .area-aluno[data-tema="escuro"] .erros .errado{color:#f2a79b}
 .area-aluno[data-tema="escuro"] .erros .certo{color:var(--sem-acao)}
+/* Escuro, camada de cores de estado: a trilha legada usava verde-floresta e vermelho sobre fundo claro, o que sumia no escuro.
+   Verde-sálvia (acerto, passo feito, link), coral (erro) e âmbar (atenção), todos medidos em 4,5:1 ou mais sobre as superfícies escuras. */
+.area-aluno[data-tema="escuro"]{
+  --accent:#9CCBB0; --accent-dark:#9CCBB0; --on-accent:#18211C;
+  --ok:#9CCBB0; --ok-bg:rgba(156,203,176,.14); --err:#F2A79B; --err-bg:rgba(242,167,155,.14);
+  --warn:#F1D08A; --warn-bg:rgba(217,164,65,.16);
+}
+.area-aluno[data-tema="escuro"] .passo{background:var(--sem-superficie-2);color:var(--sem-texto)}
+.area-aluno[data-tema="escuro"] .passo.feito{background:rgba(156,203,176,.12);border-color:var(--ok);color:var(--ok)}
+.area-aluno[data-tema="escuro"] .passo.atual{background:var(--sem-texto);border-color:var(--sem-destaque);color:#18211C}
+.area-aluno[data-tema="escuro"] .passo.atual span{background:rgba(24,33,28,.14);color:#18211C}
+.area-aluno[data-tema="escuro"] .passo:hover:not(.atual){border-color:var(--sem-destaque)}
+.area-aluno[data-tema="escuro"] .ipa{color:#F1D08A}
+.area-aluno[data-tema="escuro"] .link,
+.area-aluno[data-tema="escuro"] .link-gramatica{color:var(--sem-acao)}
+.area-aluno[data-tema="escuro"] .ex-op.errada{border-color:var(--err);background:var(--err-bg);color:var(--err)}
+.area-aluno[data-tema="escuro"] .ex-feedback.erro,
+.area-aluno[data-tema="escuro"] .conta-erro{background:var(--err-bg);color:var(--err)}
+.area-aluno[data-tema="escuro"] .concluida{background:rgba(156,203,176,.14);color:var(--sem-acao)}
+.area-aluno[data-tema="escuro"] .concluida a{color:var(--sem-acao)}
+.area-aluno[data-tema="escuro"] .nota{background:var(--sem-superficie-2);color:var(--sem-texto)}
+/* Botão desligado continua legível: some o brilho, não o texto. */
+.area-aluno[data-tema="escuro"] .btn:disabled,
+.area-aluno[data-tema="escuro"] .btn-primary:disabled{opacity:1;background:var(--sem-superficie-3);border-color:var(--sem-superficie-3);color:rgba(245,241,232,.7)}
+.area-aluno[data-tema="escuro"] .btn-ghost:disabled{background:transparent;border-color:var(--sem-borda);color:rgba(245,241,232,.62)}
 /* Movimento reduzido: sem animação de entrada, de traço ou de mola. */
 @media (prefers-reduced-motion:reduce){
   .area-aluno,.area-aluno *,.area-aluno *::before,.area-aluno *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

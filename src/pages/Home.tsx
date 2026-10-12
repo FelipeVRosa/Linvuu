@@ -42,12 +42,6 @@ const FOTOS = [
   { src: '/fotos/pratica.jpg', alt: 'Homem escrevendo em um caderno' },
 ];
 
-const NIVEIS = [
-  { cod: 'A1', nome: 'Do zero', texto: 'Se apresentar, pedir o que precisa e entender frases do dia a dia.', valor: 0.34, sem: 3 },
-  { cod: 'A2', nome: 'Dia a dia', texto: 'Falar de rotina, compras, passado e planos, em frases simples.', valor: 0.67, sem: 11 },
-  { cod: 'B1', nome: 'Independente', texto: 'Se virar em viagem, estudo e trabalho; contar experiências e dar opinião.', valor: 1, sem: 7 },
-];
-
 export default function Home() {
   usePageTitle();
   const t = useT();
@@ -170,23 +164,6 @@ export default function Home() {
         <p className="lv-kicker lv-kicker-esc">{t.faq.kicker}</p>
         <h2 id="h-faq">{t.faq.titulo}</h2>
         <Faq />
-        <div className="lv-niveis-bloco" aria-labelledby="h-niveis">
-          <p className="lv-kicker lv-kicker-esc">Níveis</p>
-          <h3 id="h-niveis">O que você consegue fazer em cada nível</h3>
-          <div className="lv-niveis">
-            {NIVEIS.map((n) => (
-              <article key={n.cod}>
-                <div className="lv-nivel-cod"><span className="lv-cod">{n.cod}</span><span>{n.nome}</span></div>
-                <Traco valor={n.valor} altura={12} semente={n.sem} />
-                <p>{n.texto}</p>
-              </article>
-            ))}
-          </div>
-          <details className="lv-cefr">
-            <summary>O que significam A1, A2 e B1?</summary>
-            <p>São os níveis do Quadro Europeu Comum de Referência para Línguas, a escala que escolas e exames usam no mundo todo. Organizamos o curso por ela, e a Linvuu emite um certificado a cada nível concluído.</p>
-          </details>
-        </div>
       </section>
 
       <section className="lv-cta">

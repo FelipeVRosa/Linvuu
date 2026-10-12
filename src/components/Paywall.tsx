@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Botao, BotaoLink } from './Button';
 import { useAuth } from '../lib/AuthContext';
 import { abrir } from '../lib/assinatura';
 import { textos } from '../lib/textos';
@@ -22,15 +23,15 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
       {indisponivel && <p className="erro" role="alert">{T.paywallErro}</p>}
       {usuario ? (
         <div className="lv-hero-botoes">
-          <button type="button" className="btn btn-primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</button>
-          <button type="button" className="btn btn-ghost" onClick={() => assinar('mes-pix')} disabled={ocupado}>{T.mesPix(PRECO_MES_PIX)}</button>
-          <button type="button" className="btn btn-ghost" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</button>
-          <button type="button" className="btn btn-ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</button>
+          <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</Botao>
+          <Botao variante="ghost" onClick={() => assinar('mes-pix')} disabled={ocupado}>{T.mesPix(PRECO_MES_PIX)}</Botao>
+          <Botao variante="ghost" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</Botao>
+          <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</Botao>
         </div>
       ) : (
         <div className="lv-hero-botoes">
-          <Link to={`/cadastro?proximo=${encodeURIComponent(location.pathname)}`} className="btn btn-primary">{T.criar}</Link>
-          <Link to={`/entrar?proximo=${encodeURIComponent(location.pathname)}`} className="btn btn-ghost">{T.jaTenho}</Link>
+          <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(location.pathname)}`} variante="primary">{T.criar}</BotaoLink>
+          <BotaoLink to={`/entrar?proximo=${encodeURIComponent(location.pathname)}`} variante="ghost">{T.jaTenho}</BotaoLink>
         </div>
       )}
       {erro && <p className="erro" role="alert">{erro}</p>}

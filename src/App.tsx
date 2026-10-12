@@ -37,7 +37,7 @@ export default function App() {
     <>
       <a href="#conteudo" className="skip-link">Ir para o conteúdo</a>
       <RolarAoTopo />
-      <BarraTopo />
+      <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />
       <Header />
       <main id="conteudo" tabIndex={-1}>
         <Routes>
@@ -58,7 +58,7 @@ export default function App() {
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </main>
-      <Footer semNovidades={AREA_ALUNO.test(pathname)} />
+      {!AREA_ALUNO.test(pathname) && <Footer />}
     </>
   );
 }

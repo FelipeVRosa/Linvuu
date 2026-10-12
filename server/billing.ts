@@ -4,8 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { Express, Request, Response } from 'express';
 import Stripe from 'stripe';
-import { getApps, initializeApp } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
+import { firebaseAdmin } from './firebase-admin';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -25,8 +25,7 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
   const h = req.headers.authorization || '';
   if (!h.startsWith('Bearer ') || !projeto) return null;
   try {
-    if (!getApps().length) initializeApp({ projectId: projeto });
-    const t = await getAuth().verifyIdToken(h.slice(7));
+    const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7));
     return { uid: t.uid, email: t.email };
   } catch {
     return null;

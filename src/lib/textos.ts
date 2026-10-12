@@ -4,7 +4,7 @@ export const linguaDoCurso = (idioma?: string): Lingua => (idioma === 'br' ? 'en
 
 const pt = {
   olaNome: (nome: string) => `Olá, ${nome}`, ola: 'Olá', acalma: (d: number, t: number) => `Você está no dia ${d} de ${t}. Não precisa terminar tudo hoje: uma sessão já conta.`, msgDia: (n: number, t: number) => `Dia concluído. Você já tem ${n} de ${t}.`, msgAula: 'Aula concluída. Você fechou um bloco inteiro.', tema: 'Tema', claro: 'Claro', escuro: 'Escuro', gramaticaDo: (nome: string) => `Gramática do ${nome.toLowerCase()}`, entrarProgresso: 'Entre na sua conta para salvar o progresso em qualquer aparelho.',
-  marcarConcluido: 'Marcar como concluída', concluidoDia: 'Concluída', recolher: 'Recolher trilha', expandir: 'Mostrar trilha', buscarDia: 'Buscar dia', trilhaAluno: 'Trilha', diasConcluidos: (a: number, b: number) => `${a} de ${b} dias concluídos`, semDias: 'Nenhum dia encontrado.', dia: 'Dia',
+  marcarConcluido: 'Marcar como concluída', concluidoDia: 'Concluída', recolher: 'Recolher trilha', expandir: 'Mostrar trilha', buscarDia: 'Buscar sessão', trilhaAluno: 'Trilha', diasConcluidos: (a: number, b: number) => `${a} de ${b} sessões concluídas`, semDias: 'Nenhuma sessão encontrada.', dia: 'Dia',
   ouvir: 'Ouvir', ainda: 'ouça e repita', resposta: 'Resposta:', refazer: 'Refazer os exercícios', tocarOuvir: 'Toque para ouvir',
   temaAlterado: (t: string) => `Tema alterado para ${t}.`, sonsRotulo: 'Sons de reforço', sonsLig: 'ligados', sonsDesl: 'desligados',
   opcoes: 'Opções', pecas: 'Toque nas peças abaixo', limpar: 'Limpar', escrevaPrivado: 'Escreva aqui (só você vê)', escreva: 'Escreva aqui',
@@ -18,7 +18,7 @@ const pt = {
   rotuloBloco: { intro: 'Introdução', revisao: 'Revisão', producao: 'Fale e escreva', alfabeto: 'Alfabeto', palavras: 'Palavras', dialogo: 'Diálogo', texto: 'Leitura', gramatica: 'Gramática', exercicios: 'Exercícios' },
   // páginas
   inicio: 'Início', cursos: 'Cursos', sessao: 'Dia', carregando: 'Carregando…', semAula: 'Não foi possível carregar esta aula.', tentarDeNovo: 'Tentar de novo', verTrilha: 'Ver a trilha',
-  anterior: (n: number) => `← Dia ${n}`, seguinte: (n: number) => `Dia ${n} →`, navDias: 'Navegar entre dias',
+  anterior: (n: number) => `← Aula ${Math.ceil(n / 4)} · sessão ${(n - 1) % 4 + 1}`, seguinte: (n: number) => `Aula ${Math.ceil(n / 4)} · sessão ${(n - 1) % 4 + 1} →`, rotuloDia: (n: number) => `Aula ${Math.ceil(n / 4)} · sessão ${(n - 1) % 4 + 1}`, navDias: 'Navegar entre sessões',
   kickerAula: (a: number, s: string, t: number, m: number) => `Aula ${a} · sessão ${s} de ${t} · ${m} min`,
   objetivoAula: (o: string) => `Objetivo da aula: ${o}`, emRevisao: 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão e a voz nativa está em gravação (por enquanto o áudio usa a voz do seu navegador).',
   paywallT: (n: number, c: string) => `Você terminou as ${n} aulas grátis de ${c}.`,
@@ -43,7 +43,7 @@ const en: typeof pt = {
   acertou: (c, t) => `You got ${c} of ${t} right`, bloco: (i, t, m) => `Block ${i} of ${t} · ~${m} min`,
   rotuloBloco: { intro: 'Introduction', revisao: 'Review', producao: 'Speak and write', alfabeto: 'Alphabet', palavras: 'Words', dialogo: 'Dialogue', texto: 'Reading', gramatica: 'Grammar', exercicios: 'Exercises' },
   inicio: 'Home', cursos: 'Courses', sessao: 'Session', carregando: 'Loading…', semAula: 'We could not load this lesson.', tentarDeNovo: 'Try again', verTrilha: 'See the course map',
-  anterior: (n) => `← Session ${n}`, seguinte: (n) => `Session ${n} →`, navDias: 'Move between sessions',
+  anterior: (n) => `← Lesson ${Math.ceil(n / 4)} · session ${(n - 1) % 4 + 1}`, seguinte: (n) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1) % 4 + 1} →`, rotuloDia: (n) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1) % 4 + 1}`, navDias: 'Move between sessions',
   kickerAula: (a, s, t, m) => `Lesson ${a} · session ${s} of ${t} · ${m} min`,
   objetivoAula: (o) => `Lesson goal: ${o}`, emRevisao: "Lesson under review: the content is written and ready to study, but it is still being reviewed and the recorded voices are in progress (for now the audio may use your browser's voice).",
   paywallT: (n, c) => `You have finished the ${n} free sessions of ${c}.`,

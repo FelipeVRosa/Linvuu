@@ -17,7 +17,7 @@ const pt = {
   acertou: (c: number, t: number) => `Você acertou ${c} de ${t}`, bloco: (i: number, t: number, m: number) => `Bloco ${i} de ${t} · ~${m} min`,
   rotuloBloco: { intro: 'Introdução', revisao: 'Revisão', producao: 'Fale e escreva', alfabeto: 'Alfabeto', palavras: 'Palavras', dialogo: 'Diálogo', texto: 'Leitura', gramatica: 'Gramática', exercicios: 'Exercícios' },
   // páginas
-  inicio: 'Início', cursos: 'Cursos', sessao: 'Dia', carregando: 'Carregando…', semAula: 'Não foi possível carregar esta aula. Recarregue a página.', verTrilha: 'Ver a trilha',
+  inicio: 'Início', cursos: 'Cursos', sessao: 'Dia', carregando: 'Carregando…', semAula: 'Não foi possível carregar esta aula.', tentarDeNovo: 'Tentar de novo', verTrilha: 'Ver a trilha',
   anterior: (n: number) => `← Dia ${n}`, seguinte: (n: number) => `Dia ${n} →`, navDias: 'Navegar entre dias',
   kickerAula: (a: number, s: string, t: number, m: number) => `Aula ${a} · sessão ${s} de ${t} · ${m} min`,
   objetivoAula: (o: string) => `Objetivo da aula: ${o}`, emRevisao: 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão e a voz nativa está em gravação (por enquanto o áudio usa a voz do seu navegador).',
@@ -42,7 +42,7 @@ const en: typeof pt = {
   provisorio: "Temporary audio: this passage uses your browser's voice. The recording is coming soon.",
   acertou: (c, t) => `You got ${c} of ${t} right`, bloco: (i, t, m) => `Block ${i} of ${t} · ~${m} min`,
   rotuloBloco: { intro: 'Introduction', revisao: 'Review', producao: 'Speak and write', alfabeto: 'Alphabet', palavras: 'Words', dialogo: 'Dialogue', texto: 'Reading', gramatica: 'Grammar', exercicios: 'Exercises' },
-  inicio: 'Home', cursos: 'Courses', sessao: 'Session', carregando: 'Loading…', semAula: 'We could not load this lesson. Reload the page.', verTrilha: 'See the course map',
+  inicio: 'Home', cursos: 'Courses', sessao: 'Session', carregando: 'Loading…', semAula: 'We could not load this lesson.', tentarDeNovo: 'Try again', verTrilha: 'See the course map',
   anterior: (n) => `← Session ${n}`, seguinte: (n) => `Session ${n} →`, navDias: 'Move between sessions',
   kickerAula: (a, s, t, m) => `Lesson ${a} · session ${s} of ${t} · ${m} min`,
   objetivoAula: (o) => `Lesson goal: ${o}`, emRevisao: "Lesson under review: the content is written and ready to study, but it is still being reviewed and the recorded voices are in progress (for now the audio may use your browser's voice).",

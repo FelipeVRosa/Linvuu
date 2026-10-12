@@ -200,14 +200,12 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
    primitivos: cores de marca em tokens.css (imutáveis);
    --sem-*: intenções (fundo, texto, borda, ação, foco). Só esta camada muda por tema;
    --cmp-*: uso em componente; consome apenas --sem-*.
-   --aa-*: nomes antigos, apelidos de --sem-* para as regras abaixo. */
+   Regras da área usam só --sem-* e --cmp-*. */
 .area-aluno{
   --sem-bg:#EFEBE1; --sem-superficie:#F5F1E8; --sem-superficie-2:#E6E0D2;
   --sem-texto:#1D1F1C; --sem-texto-2:rgba(29,31,28,.68); --sem-borda:rgba(29,31,28,.14);
   --sem-acao:#1E3B2F; --sem-acao-texto:#F5F1E8; --sem-destaque:#B7791F; --sem-foco:#B7791F; --sem-foco-halo:rgba(183,121,31,.25);
   --cmp-tema-indicador:var(--sem-acao); --cmp-campo:var(--sem-superficie-2); --cmp-cartao:var(--sem-superficie);
-  --aa-bg:var(--sem-bg); --aa-bg-2:var(--sem-superficie-2); --aa-linha:var(--sem-borda);
-  --aa-texto:var(--sem-texto); --aa-muted:var(--sem-texto-2); --aa-ok:var(--sem-acao); --aa-ocre:var(--sem-destaque); --aa-marca-fundo:var(--sem-acao-texto);
   display:grid;grid-template-columns:320px minmax(0,1fr);min-height:calc(100vh - 120px);
   align-items:start;transition:grid-template-columns var(--dur-2) var(--ease),background-color var(--dur-2) var(--ease);
 }
@@ -218,8 +216,6 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
   --sem-texto:#F5F1E8; --sem-texto-2:rgba(245,241,232,.72); --sem-borda:rgba(237,232,220,.14);
   --sem-acao:#9CCBB0; --sem-acao-texto:#18211C; --sem-destaque:#D9A441; --sem-foco:#D9A441; --sem-foco-halo:rgba(217,164,65,.25);
   --cmp-tema-indicador:var(--sem-acao); --cmp-campo:var(--sem-superficie-2); --cmp-cartao:var(--sem-superficie);
-  --aa-bg:var(--sem-bg); --aa-bg-2:var(--sem-superficie-2); --aa-linha:var(--sem-borda);
-  --aa-texto:var(--sem-texto); --aa-muted:var(--sem-texto-2); --aa-ok:var(--sem-acao); --aa-ocre:var(--sem-destaque); --aa-marca-fundo:var(--sem-acao-texto);
   --papel:var(--elev-1); --papel-claro:var(--elev-2); --grafite:#EDE8DC; --papel-escuro:var(--elev-2); --surface:var(--elev-2); --quente:var(--elev-2); --bg:var(--elev-1);
   --border:rgba(237,232,220,.16); --border-strong:rgba(237,232,220,.32); --linha:rgba(237,232,220,.16); --linha-forte:rgba(237,232,220,.32);
   --text:#EDE8DC; --muted:rgba(237,232,220,.74); --faint:rgba(237,232,220,.6); --ink:#EDE8DC;
@@ -228,17 +224,17 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .area-aluno[data-recolhida]{grid-template-columns:56px minmax(0,1fr)}
 .aa-lateral{
   position:sticky;top:0;align-self:stretch;max-height:100vh;overflow:auto;
-  background:var(--aa-bg);color:var(--aa-texto);border-right:1px solid var(--aa-linha);
+  background:var(--sem-bg);color:var(--sem-texto);border-right:1px solid var(--sem-borda);
 }
 .aa-topo{display:flex;align-items:flex-start;gap:12px;padding:20px 16px 12px}
 .aa-titulo{flex:1;min-width:0;display:grid;gap:4px}
-.aa-kicker{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--aa-muted)}
+.aa-kicker{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--sem-texto-2)}
 .aa-titulo strong{font-size:18px;line-height:1.3;font-weight:700}
 .aa-recolher{
-  flex:none;width:32px;height:32px;border-radius:8px;border:1px solid var(--aa-linha);
-  background:transparent;color:var(--aa-texto);font-size:18px;line-height:1;cursor:pointer;
+  flex:none;width:32px;height:32px;border-radius:8px;border:1px solid var(--sem-borda);
+  background:transparent;color:var(--sem-texto);font-size:18px;line-height:1;cursor:pointer;
 }
-.aa-recolher:hover{background:var(--aa-bg-2)}
+.aa-recolher:hover{background:var(--sem-superficie-2)}
 .area-aluno[data-recolhida] .aa-topo{flex-direction:column;align-items:center;padding:16px 8px}
 .area-aluno[data-recolhida] .aa-titulo{display:none}
 .aa-corpo{padding:0 16px 24px;display:grid;gap:16px}
@@ -249,18 +245,18 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .area-aluno .traco-linha{stroke:var(--sem-destaque)}
 @keyframes traco-desenhar{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 .traco-desenhar .traco-linha{stroke-dasharray:1;animation:traco-desenhar var(--dur-traco) var(--ease-caneta) both}
-.aa-contagem{font-size:13px;color:var(--aa-muted)}
-.aa-acalma{margin:4px 0 0;font-size:14px;line-height:1.5;color:var(--aa-texto)}
+.aa-contagem{font-size:13px;color:var(--sem-texto-2)}
+.aa-acalma{margin:4px 0 0;font-size:14px;line-height:1.5;color:var(--sem-texto)}
 .aa-linha-acoes{display:grid;gap:10px}
 /* Toggle: a bolinha de destaque desliza com mola. O ativo fica sobre a cor de ação, nunca em creme sobre escuro. */
-.aa-tema{position:relative;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--aa-linha);border-radius:999px;padding:3px;background:var(--cmp-campo)}
+.aa-tema{position:relative;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--sem-borda);border-radius:999px;padding:3px;background:var(--cmp-campo)}
 .aa-tema::before{content:"";position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:999px;background:var(--cmp-tema-indicador);transition:transform var(--dur-2) var(--ease-mola)}
 .aa-tema[data-ativo="escuro"]::before{transform:translateX(100%)}
-.aa-tema button{position:relative;z-index:1;border:0;background:transparent;color:var(--aa-texto);font:inherit;font-size:14px;font-weight:600;padding:7px 10px;border-radius:999px;cursor:pointer;transition:color var(--dur-2) var(--ease)}
+.aa-tema button{position:relative;z-index:1;border:0;background:transparent;color:var(--sem-texto);font:inherit;font-size:14px;font-weight:600;padding:7px 10px;border-radius:999px;cursor:pointer;transition:color var(--dur-2) var(--ease)}
 .aa-tema button[aria-pressed="true"]{color:var(--sem-acao-texto)}
-.aa-sons{justify-self:start;font-size:13px;font-weight:600;color:var(--aa-muted);background:none;border:1px solid var(--aa-linha);border-radius:999px;padding:5px 12px;cursor:pointer}
-.aa-sons[aria-pressed="true"]{color:var(--aa-texto);border-color:var(--sem-destaque)}
-.aa-gramatica{font-size:14px;font-weight:600;color:var(--aa-texto);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--aa-ocre)}
+.aa-sons{justify-self:start;font-size:13px;font-weight:600;color:var(--sem-texto-2);background:none;border:1px solid var(--sem-borda);border-radius:999px;padding:5px 12px;cursor:pointer}
+.aa-sons[aria-pressed="true"]{color:var(--sem-texto);border-color:var(--sem-destaque)}
+.aa-gramatica{font-size:14px;font-weight:600;color:var(--sem-texto);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--sem-destaque)}
 /* Alvos de toque de pelo menos 44 px em telas de toque (WCAG 2.5.5). No desktop o visual segue o mesmo. */
 @media (pointer:coarse){
   .area-aluno .aa-tema button,.area-aluno .aa-sons,.area-aluno .aa-recolher{min-height:44px}
@@ -268,43 +264,43 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
   .area-aluno .aa-gramatica{display:inline-block;min-height:44px;line-height:44px}
 }
 .aa-busca input{
-  width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--aa-linha);
-  background:var(--cmp-campo);color:var(--aa-texto);font:inherit;font-size:14px;
+  width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--sem-borda);
+  background:var(--cmp-campo);color:var(--sem-texto);font:inherit;font-size:14px;
 }
-.aa-busca input::placeholder{color:var(--aa-muted)}
-.aa-busca input:focus{outline:2px solid var(--aa-ocre);outline-offset:1px}
-.aa-grupo{border-top:1px solid var(--aa-linha)}
+.aa-busca input::placeholder{color:var(--sem-texto-2)}
+.aa-busca input:focus{outline:2px solid var(--sem-destaque);outline-offset:1px}
+.aa-grupo{border-top:1px solid var(--sem-borda)}
 .aa-grupo-topo{
   width:100%;display:flex;align-items:center;gap:10px;padding:14px 4px;background:none;border:0;
-  color:var(--aa-texto);font:inherit;font-weight:600;text-align:left;cursor:pointer;
+  color:var(--sem-texto);font:inherit;font-weight:600;text-align:left;cursor:pointer;
 }
 /* Ocre nunca é texto (MARCA §3): o hover sublinha em ocre, o texto continua o mesmo. */
 .aa-grupo-topo:hover .aa-grupo-t{text-decoration:underline;text-decoration-color:var(--sem-destaque);text-underline-offset:4px;text-decoration-thickness:2px}
 .aa-grupo-t{flex:1;min-width:0;font-size:15px;line-height:1.3}
-.aa-grupo-t small{display:block;font-size:12px;font-weight:500;color:var(--aa-muted);margin-bottom:2px}
-.aa-grupo-n{font-size:12px;color:var(--aa-muted);font-variant-numeric:tabular-nums}
-.aa-seta{transition:transform .15s;font-size:18px;color:var(--aa-muted)}
+.aa-grupo-t small{display:block;font-size:12px;font-weight:500;color:var(--sem-texto-2);margin-bottom:2px}
+.aa-grupo-n{font-size:12px;color:var(--sem-texto-2);font-variant-numeric:tabular-nums}
+.aa-seta{transition:transform .15s;font-size:18px;color:var(--sem-texto-2)}
 .aa-seta.aberta{transform:rotate(90deg)}
 .aa-lista{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:2px}
 .aa-dia{
   position:relative;display:grid;grid-template-columns:18px 30px 1fr;gap:8px;align-items:center;
-  padding:9px 10px 9px 6px;border-radius:8px;color:var(--aa-texto);text-decoration:none;font-size:14px;line-height:1.3;
+  padding:9px 10px 9px 6px;border-radius:8px;color:var(--sem-texto);text-decoration:none;font-size:14px;line-height:1.3;
 }
 .aa-dia{transition:background-color var(--dur-1) var(--ease)}
-.aa-dia:hover{background:var(--aa-bg-2)}
-.aa-dia.atual{background:var(--aa-bg-2)}
-.aa-dia.atual::before{content:"";position:absolute;left:-16px;top:6px;bottom:6px;width:3px;border-radius:2px;background:var(--aa-ocre)}
+.aa-dia:hover{background:var(--sem-superficie-2)}
+.aa-dia.atual{background:var(--sem-superficie-2)}
+.aa-dia.atual::before{content:"";position:absolute;left:-16px;top:6px;bottom:6px;width:3px;border-radius:2px;background:var(--sem-destaque)}
 .aa-marca{
-  width:18px;height:18px;border-radius:50%;border:1.5px solid var(--aa-muted);display:grid;place-items:center;
-  font-size:11px;font-weight:700;color:var(--aa-marca-fundo);
+  width:18px;height:18px;border-radius:50%;border:1.5px solid var(--sem-texto-2);display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:var(--sem-acao-texto);
 }
-.aa-dia.feito .aa-marca{background:var(--aa-ok);border-color:var(--aa-ok);color:#fff}
+.aa-dia.feito .aa-marca{background:var(--sem-acao);border-color:var(--sem-acao);color:#fff}
 .area-aluno[data-tema="escuro"] .aa-dia.feito .aa-marca{color:#18211C}
-.aa-dia-n{font-variant-numeric:tabular-nums;color:var(--aa-muted);font-size:13px}
+.aa-dia-n{font-variant-numeric:tabular-nums;color:var(--sem-texto-2);font-size:13px}
 .aa-dia-t{display:grid;gap:2px;min-width:0}
-.aa-dia-t small{font-size:12px;color:var(--aa-muted)}
+.aa-dia-t small{font-size:12px;color:var(--sem-texto-2)}
 .aa-dia.atual .aa-dia-t{font-weight:600}
-.aa-vazio{padding:12px 6px;color:var(--aa-muted);font-size:14px}
+.aa-vazio{padding:12px 6px;color:var(--sem-texto-2);font-size:14px}
 /* Troca de aula: a página entra com fade curto (a aula é remontada por chave em AreaAluno). */
 @keyframes aa-entrada{from{opacity:0}to{opacity:1}}
 .aa-conteudo{min-width:0;position:relative;background:var(--papel);color:var(--grafite);animation:aa-entrada var(--dur-2) var(--ease) both}
@@ -321,7 +317,7 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .area-aluno[data-tema="escuro"] .btn-ok{color:#9CCBB0;border-color:#9CCBB0}
 @media(max-width:900px){
   .area-aluno,.area-aluno[data-recolhida]{grid-template-columns:1fr}
-  .aa-lateral{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--aa-linha)}
+  .aa-lateral{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--sem-borda)}
   .area-aluno[data-recolhida] .aa-topo{flex-direction:row;align-items:center;padding:14px 16px}
   .area-aluno[data-recolhida] .aa-titulo{display:grid}
   .aa-leitura{padding:28px var(--pad) 64px}
@@ -353,6 +349,8 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
   .area-aluno{--sem-acao:#1D1F1C;--sem-acao-texto:#F5F1E8;--sem-destaque:#1D1F1C;--sem-foco:#1D1F1C}
   .area-aluno[data-tema="escuro"]{--sem-acao:#EDE8DC;--sem-acao-texto:#18211C;--sem-destaque:#EDE8DC;--sem-foco:#EDE8DC}
 }
+/* Caixa de tarefa ("Agora é com você"): o fundo claro fixo de styles.css deixava o texto claro do escuro invisível. */
+.area-aluno[data-tema="escuro"] .callout-tarefa{background:var(--sem-superficie-2);border-left-color:var(--sem-destaque)}
 /* Movimento reduzido: sem animação de entrada, de traço ou de mola. */
 @media (prefers-reduced-motion:reduce){
   .area-aluno,.area-aluno *,.area-aluno *::before,.area-aluno *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

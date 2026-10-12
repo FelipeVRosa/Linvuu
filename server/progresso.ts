@@ -1,17 +1,16 @@
 // Progresso das aulas na conta do aluno (users/{uid}.licoesCompletas, formato "idioma:dia").
 // Só o servidor escreve esse campo (as regras do Firestore não deixam o navegador alterá-lo).
 import type { Express, Request, Response } from 'express';
-import { getApps, initializeApp } from 'firebase-admin/app';
 import { FieldValue, getFirestore } from 'firebase-admin/firestore';
 import { usuario } from './billing';
+import { firebaseAdmin, projetoFirebase } from './firebase-admin';
 
-const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
+const projeto = projetoFirebase;
 const COLECAO = 'users';
 const IDIOMA = /^[a-z]{2,3}$/;
 
 function db() {
-  if (!getApps().length) initializeApp({ projectId: projeto });
-  return getFirestore();
+  return getFirestore(firebaseAdmin());
 }
 
 export function registrarProgresso(app: Express) {

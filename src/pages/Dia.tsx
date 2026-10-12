@@ -33,7 +33,7 @@ export default function Dia() {
   useEffect(() => {
     if (!valido || bloqueado || decidindo) { setAula(null); return; }
     setAula(null); setErro(false);
-    carregarAula(curso!.id, dia).then(setAula).catch((e: unknown) => {
+    carregarAula(curso!.id, dia).then((a) => { try { sessionStorage.removeItem('linvuu:recarregou-aula'); } catch { /* ok */ } setAula(a); }).catch((e: unknown) => {
       console.error('Falha ao carregar a aula', curso!.id, dia, e);
       // Arquivo de aula que não existe mais depois de uma publicação nova: uma recarga resolve. Só uma vez, para não entrar em laço.
       const msg = String((e as Error)?.message ?? e);

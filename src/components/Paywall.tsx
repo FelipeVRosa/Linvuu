@@ -4,7 +4,7 @@ import { Botao, BotaoLink } from './Button';
 import { useAuth } from '../lib/AuthContext';
 import { abrir } from '../lib/assinatura';
 import { textos } from '../lib/textos';
-import { AULAS_GRATIS, PRECO_MENSAL, PRECO_MES_PIX, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import type { Plano } from '../lib/assinatura';
 
 export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
@@ -22,12 +22,17 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
       <p>{T.paywallP(PRECO_MENSAL)}</p>
       {indisponivel && <p className="erro" role="alert">{T.paywallErro}</p>}
       {usuario ? (
-        <div className="lv-hero-botoes">
-          <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</Botao>
-          <Botao variante="ghost" onClick={() => assinar('mes-pix')} disabled={ocupado}>{T.mesPix(PRECO_MES_PIX)}</Botao>
-          <Botao variante="ghost" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</Botao>
-          <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</Botao>
-        </div>
+        <>
+          <div className="lv-hero-botoes">
+            <Botao variante="primary" onClick={() => assinar('mensal')} disabled={ocupado}>{ocupado ? T.abrindo : T.assinar(PRECO_MENSAL)}</Botao>
+            <Botao variante="primary" onClick={() => assinar('trimestral-pix')} disabled={ocupado}>{T.trimPix(PRECO_TRIMESTRAL_PIX)}</Botao>
+          </div>
+          <p className="nota">{T.exAluno(PRECO_EX_ALUNO)}</p>
+          <div className="lv-hero-botoes">
+            <Botao variante="ghost" onClick={() => assinar('trimestral')} disabled={ocupado}>{T.tres(PRECO_TRIMESTRAL)}</Botao>
+            <Botao variante="ghost" onClick={() => assinar('anual')} disabled={ocupado}>{T.anual(PRECO_ANUAL)}</Botao>
+          </div>
+        </>
       ) : (
         <div className="lv-hero-botoes">
           <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(location.pathname)}`} variante="primary">{T.criar}</BotaoLink>

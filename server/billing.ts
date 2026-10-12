@@ -14,9 +14,9 @@ let precoCache: string | null = process.env.STRIPE_PRICE_ID || null;
 
 const PRECO_CENTAVOS = 13900;
 const PRECO_TRIMESTRAL = 41700; // 3 x R$ 139, pagamento único (cartão ou boleto), sem renovação automática
-const PRECO_MES_PIX = 16000; // primeiro mês, só Pix, uma vez por cliente
 const PRECO_TRIMESTRAL_PIX = 29190; // 30% de desconto sobre R$ 417 (41700 x 0,7), só no Pix, pagamento único
-const PLANOS_PACOTE = ['trimestral', 'trimestral-pix', 'mes-pix'];
+const PRECO_ANUAL = 99900; // 12 meses, pagamento único (cartão ou boleto), sem renovação automática
+const PLANOS_PACOTE = ['trimestral', 'trimestral-pix', 'anual'];
 const somaMeses = (t: number, m: number) => { const d = new Date(t * 1000); d.setMonth(d.getMonth() + m); return Math.floor(d.getTime() / 1000); };
 
 export const cobrancaConfigurada = () => !!(stripe && projeto);
@@ -58,7 +58,7 @@ async function acesso(u: { uid: string; email?: string }): Promise<Acesso> {
   ]);
   const s = subs.data.find((x) => x.status === 'active' || x.status === 'trialing');
   const agora = Math.floor(Date.now() / 1000);
-  const pacotes = sessoes.data.filter((x) => x.mode === 'payment' && PLANOS_PACOTE.includes(String(x.metadata?.plano)) && x.payment_status === 'paid').map((x) => somaMeses(x.created, x.metadata?.plano === 'mes-pix' ? 1 : 3));
+  const pacotes = sessoes.data.filter((x) => x.mode === 'payment' && PLANOS_PACOTE.includes(String(x.metadata?.plano)) && x.payment_status === 'paid').map((x) => somaMeses(x.created, x.metadata?.plano === 'anual' ? 12 : 3));
   const ate = pacotes.length ? Math.max(...pacotes) : null;
   if (s) return { ativa: true, via: 'assinatura', status: s.status, cancelaEm: s.cancel_at_period_end ? s.items.data[0]?.current_period_end ?? null : null, ate: null };
   if (ate && ate > agora) return { ativa: true, via: 'trimestral', status: 'paid', cancelaEm: null, ate };
@@ -119,21 +119,17 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     try {
       const base = urlBase();
       const plano = req.body?.plano;
-      const pix = plano === 'mes-pix' || plano === 'trimestral-pix';
-      const pacote = plano === 'trimestral' || pix;
+      if (!['mensal', 'trimestral', 'trimestral-pix', 'anual'].includes(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
+      const pix = plano === 'trimestral-pix';
+      const anual = plano === 'anual';
+      const pacote = plano === 'trimestral' || pix || anual;
       const c = await cliente(u);
-      if (plano === 'mes-pix') {
-        const hist = await stripe!.checkout.sessions.list({ customer: c, limit: 30 });
-        if (hist.data.some((x) => x.metadata?.plano === 'mes-pix' && x.payment_status === 'paid')) {
-          res.status(409).json({ error: 'O primeiro mês no Pix vale só uma vez. Escolha outro plano.' }); return;
-        }
-      }
       const comum = { customer: c, locale: 'pt-BR' as const, success_url: `${base}/assinatura?ok=1`, cancel_url: `${base}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
       const s = pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
             payment_method_options: { pix: { expires_after_seconds: 86400 } },
-            line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: plano === 'mes-pix' ? PRECO_MES_PIX : PRECO_TRIMESTRAL_PIX, product_data: { name: plano === 'mes-pix' ? 'Linvuu: 1 mês de acesso (primeiro mês, Pix)' : 'Linvuu: 3 meses de acesso (Pix, 30% de desconto)' } } }],
+            line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: PRECO_TRIMESTRAL_PIX, product_data: { name: 'Linvuu: 3 meses de acesso (Pix, 30% de desconto)' } } }],
             metadata: { plano, uid: u.uid },
             custom_text: { submit: { message: 'Pagamento único por Pix, sem renovação automática. O QR code aparece na tela seguinte. Reembolso integral em até 7 dias.' } },
           })
@@ -141,8 +137,8 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['card', 'boleto'],
             payment_method_options: { boleto: { expires_after_days: 3 } },
-            line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: PRECO_TRIMESTRAL, product_data: { name: 'Linvuu: 3 meses de acesso' } } }],
-            metadata: { plano: 'trimestral', uid: u.uid },
+            line_items: [{ quantity: 1, price_data: { currency: 'brl', unit_amount: anual ? PRECO_ANUAL : PRECO_TRIMESTRAL, product_data: { name: anual ? 'Linvuu: 12 meses de acesso' : 'Linvuu: 3 meses de acesso' } } }],
+            metadata: { plano: anual ? 'anual' : 'trimestral', uid: u.uid },
             custom_text: { submit: { message: 'Pagamento único, sem renovação automática, com reembolso integral em até 7 dias.' } },
           })
         : await stripe!.checkout.sessions.create({

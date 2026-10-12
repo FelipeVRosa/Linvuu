@@ -37,7 +37,7 @@ export default function App() {
     <>
       <a href="#conteudo" className="skip-link">Ir para o conteúdo</a>
       <RolarAoTopo />
-      <BarraTopo />
+      <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />
       <Header />
       <main id="conteudo" tabIndex={-1}>
         <Routes>

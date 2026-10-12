@@ -33,8 +33,11 @@ const AMOSTRA: Record<string, { nome: string; frase: string; aula: Aula }> = {
   it: { nome: 'Italiano', frase: 'Buongiorno. Un caffè, per favore.', aula: it1 as Aula },
   fr: { nome: 'Francês', frase: 'Bonjour. Un café, s’il vous plaît.', aula: fr1 as Aula },
 };
-const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0);
-const PADRAO = NO_AR.find((c) => c.status === 'disponivel')?.id ?? NO_AR[0]?.id;
+// Inglês abre selecionado e o russo fica por último.
+const ORDEM = ['en', 'es', 'de', 'fr', 'it', 'ru'];
+const pos = (id: string) => (ORDEM.includes(id) ? ORDEM.indexOf(id) : ORDEM.length);
+const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0).sort((a, b) => pos(a.id) - pos(b.id));
+const PADRAO = NO_AR[0]?.id;
 
 const FOTOS = [
   { src: '/fotos/comece.jpg', alt: 'Mãos usando um tablet sobre uma mesa de madeira' },

@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 
@@ -50,7 +50,6 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{PRECO_MENSAL}<span> por mês</span></p>
                   <p>Cartão, renovação automática. Cancele quando quiser.</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Assinar'}</button>
-                  <p className="nota">Ex-aluno? {PRECO_EX_ALUNO} por mês, para sempre. Os primeiros 50 usam o cupom VALEEVA50 no checkout.</p>
                 </div>
                 <div className="lv-plano">
                   <h3>3 meses</h3>

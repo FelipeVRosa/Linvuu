@@ -53,7 +53,7 @@ function Termos() {
         <h2>O que a Linvuu oferece</h2>
         <p>Cursos de idiomas e de outras áreas, em texto, áudio e exercícios. Algumas aulas estão em produção ou em revisão e podem mudar. Cada aula mostra o seu status.</p>
         <h2>Resultados</h2>
-        <p>A Linvuu entrega método e conteúdo. <strong>Não garantimos fluência, nível de proficiência ou prazo para atingi-los.</strong> O resultado depende do seu tempo de estudo e da prática fora do site.</p>
+        <p>A Linvuu entrega um método e um conteúdo para você estudar. Seu avanço depende do tempo que você dedica e da prática fora do site.</p>
         <h2>Sua conta</h2>
         <p>Você é responsável por manter a senha em segurança e por usar dados verdadeiros no cadastro. Podemos suspender contas usadas para fraude ou abuso.</p>
         <h2>Uso do conteúdo</h2>

@@ -58,6 +58,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const [acertos, setAcertos] = useState<Record<string, boolean>>({});
   const [fim, setFim] = useState(false);
   const navTeclado = useRef(false); // true depois de um Tab: o Enter passa a agir no botão em foco
+  const errosSeguidos = useRef(0); // erros em sequência: o som de erro fica mais baixo a cada um, sem virar alarme
   const ex = itens[i];
   const corrigiveis = itens.filter((x) => x.tipo !== 'producao');
 
@@ -69,13 +70,14 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     else ok = norm(texto) === norm(ex.respostaEsperada ?? '');
     setAcertos((a) => ({ ...a, [ex.id]: ok }));
     setRes(ok ? 'ok' : 'erro');
-    if (!ok) somErro();
+    errosSeguidos.current = ok ? 0 : errosSeguidos.current + 1;
+    if (!ok) somErro(errosSeguidos.current);
   };
   const avancar = () => {
     setEscolha(null); setOrdem([]); setTexto(''); setRes(null);
     if (i + 1 >= itens.length) setFim(true); else setI(i + 1);
   };
-  const recomecar = () => { setI(0); setAcertos({}); setFim(false); setEscolha(null); setOrdem([]); setTexto(''); setRes(null); };
+  const recomecar = () => { errosSeguidos.current = 0; setI(0); setAcertos({}); setFim(false); setEscolha(null); setOrdem([]); setTexto(''); setRes(null); };
 
   const comOpcoes = ex.opcoes && ex.gabarito !== undefined && ex.tipo !== 'sentence-ordering';
   const pode = ex.tipo === 'producao' ? true : ex.tipo === 'sentence-ordering' ? ordem.length > 0 : comOpcoes ? escolha !== null : texto.trim() !== '';

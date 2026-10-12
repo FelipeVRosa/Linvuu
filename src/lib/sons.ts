@@ -71,8 +71,10 @@ export function somConcluido() {
   ]);
 }
 
-/** Resposta errada: 300 Hz descendo a 200 Hz em 150 ms, -18 dB. Não é alarme. */
-export function somErro() {
+/** Resposta errada: 300 Hz descendo a 200 Hz em 150 ms, -18 dB. Não é alarme.
+ *  `sequencia` é o número de erros seguidos (1 = primeiro). Cada erro seguido baixa 3 dB, até -24 dB. */
+export function somErro(sequencia = 1) {
   if (!sonsLigados()) return;
-  emitir([{ freq: 300, freqFim: 200, inicio: 0, duracao: 0.15, pico: -18, tipo: 'triangle' }]);
+  const degraus = Math.min(Math.max(sequencia, 1), 3) - 1;
+  emitir([{ freq: 300, freqFim: 200, inicio: 0, duracao: 0.15, pico: -18 - 3 * degraus, tipo: 'triangle' }]);
 }

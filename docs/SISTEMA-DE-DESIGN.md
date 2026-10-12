@@ -10,7 +10,7 @@ Os tokens ficam em três camadas, da mais estável à mais local. Componentes de
 2. **Intenção** (`--sem-*`, em `src/redesign.css`, dentro de `.area-aluno`): `--sem-bg`, `--sem-superficie`, `--sem-superficie-2`, `--sem-texto`, `--sem-texto-2`, `--sem-borda`, `--sem-acao`, `--sem-acao-texto`, `--sem-destaque`, `--sem-foco`, `--sem-foco-halo`.
 3. **Componente** (`--cmp-*`): `--cmp-tema-indicador`, `--cmp-campo`, `--cmp-cartao`. Um componente novo ganha um `--cmp-*` que aponta para `--sem-*`.
 
-Os nomes `--aa-*` são apelidos antigos apontando para as camadas acima. Não criar código novo com eles.
+Os nomes `--aa-*` foram removidos: as regras da área usam só `--sem-*` e `--cmp-*`.
 
 ## Temas
 
@@ -47,7 +47,7 @@ Com `prefers-reduced-motion: reduce`, as durações vão para 0,01 ms. O traço 
 - Gerados com Web Audio, sem arquivos de áudio (`src/lib/sons.ts`).
   - Clique ao trocar tema: 40 ms, 800 Hz, -20 dB.
   - Dia concluído: arpejo Dó-Mi-Sol, 90 ms cada nota, -15 dB.
-  - Resposta errada: 300 Hz descendo a 200 Hz, 150 ms, -18 dB.
+  - Resposta errada: 300 Hz descendo a 200 Hz, 150 ms, -18 dB; cada erro seguido baixa 3 dB, até -24 dB.
 - Áudio é reforço, nunca barreira. Quem não ouve perde só o reforço.
 - Os sons se calam enquanto a voz ou a gravação da aula estiver tocando (`audioTocando()` em `src/lib/audio.ts`).
 

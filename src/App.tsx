@@ -58,7 +58,7 @@ export default function App() {
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </main>
-      <Footer semNovidades={AREA_ALUNO.test(pathname)} />
+      {!AREA_ALUNO.test(pathname) && <Footer />}
     </>
   );
 }

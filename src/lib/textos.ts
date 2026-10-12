@@ -24,7 +24,7 @@ const pt = {
   paywallT: (n: number, c: string) => `Você terminou as ${n} aulas grátis de ${c}.`,
   paywallP: (p: string) => `Para continuar, assine a Linvuu: ${p} por mês, todos os cursos, cancele quando quiser. Se não gostar, devolvemos o valor em até 7 dias.`,
   paywallErro: 'Não conseguimos confirmar sua assinatura agora. Recarregue a página em instantes.', abrindo: 'Abrindo…', assinar: (p: string) => `Assinar por ${p}/mês`,
-  tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => `3 meses por ${p} no Pix · economize R$ 125`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, exAluno: (p: string) => `Ex-aluno? ${p} por mês, para sempre, na assinatura mensal. Os primeiros 50 usam o cupom VALEEVA50 no checkout.`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
+  tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => `3 meses por ${p} no Pix · economize R$ 125`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
   voltarBtn: 'Voltar', voceEstaEm: 'Você está em',
 };
 
@@ -49,7 +49,7 @@ const en: typeof pt = {
   paywallT: (n, c) => `You have finished the ${n} free sessions of ${c}.`,
   paywallP: (p) => `To continue, subscribe to Linvuu: ${p} per month, all courses, cancel any time. If you do not like it, we refund you within 7 days. Payment page and legal terms are in Portuguese.`,
   paywallErro: 'We could not confirm your subscription right now. Reload the page in a moment.', abrindo: 'Opening…', assinar: (p) => `Subscribe for ${p}/month`,
-  tres: (p) => `3 months for ${p} (card or boleto)`, trimPix: (p) => `3 months for ${p} by Pix · save R$ 125`, anual: (p) => `Prefer yearly? 12 months for ${p}`, exAluno: (p) => `Former student? ${p} per month, for life, on the monthly plan. The first 50 use code VALEEVA50 at checkout.`, criar: 'Create an account to subscribe', jaTenho: 'I already have an account', termos: 'Terms and refunds (Portuguese)',
+  tres: (p) => `3 months for ${p} (card or boleto)`, trimPix: (p) => `3 months for ${p} by Pix · save R$ 125`, anual: (p) => `Prefer yearly? 12 months for ${p}`, criar: 'Create an account to subscribe', jaTenho: 'I already have an account', termos: 'Terms and refunds (Portuguese)',
   voltarBtn: 'Back', voceEstaEm: 'You are here',
 };
 

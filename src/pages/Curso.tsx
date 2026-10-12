@@ -1,5 +1,5 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, STATUS_CURSO, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Bandeira } from '../components/Bandeira';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -36,7 +36,6 @@ export default function Curso() {
           <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em>{curso.nomeNativo}</em>}</h1>
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
-            <span className={`pill pill-${curso.status}`}>{STATUS_CURSO[curso.status]}</span>
             <><span>Sessões de ~30 min</span><span>Começa do zero</span></>
             {stats && <span>{stats.publicadas} de {stats.total} sessões no ar</span>}
             {['ru', 'de', 'en'].includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">Gramática do {curso.nome.toLowerCase()} →</Link>}

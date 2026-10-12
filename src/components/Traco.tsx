@@ -46,15 +46,17 @@ interface Props {
   trilha?: boolean;
   className?: string;
   rotulo?: string;
+  /** true: o traço desenha de novo (use com `key` para reiniciar a animação). */
+  animar?: boolean;
 }
 
-export function Traco({ valor = 1, altura = 14, semente = 5, trilha = false, className, rotulo }: Props) {
+export function Traco({ valor = 1, altura = 14, semente = 5, trilha = false, className, rotulo, animar = false }: Props) {
   const v = Math.min(1, Math.max(0.04, valor));
   return (
-    <svg className={`traco${className ? ` ${className}` : ''}`} viewBox={`0 0 ${LARGURA} ${altura}`} preserveAspectRatio="none" height={altura} width="100%"
+    <svg className={`traco${animar ? ' traco-desenhar' : ''}${className ? ` ${className}` : ''}`} viewBox={`0 0 ${LARGURA} ${altura}`} preserveAspectRatio="none" height={altura} width="100%"
       role={rotulo ? 'img' : undefined} aria-label={rotulo} aria-hidden={rotulo ? undefined : true} focusable="false">
       {trilha && <line x1="2" x2={LARGURA - 2} y1={altura / 2} y2={altura / 2} className="traco-trilha" vectorEffect="non-scaling-stroke" />}
-      <path d={caminho(LARGURA * v, altura, semente)} className="traco-linha" vectorEffect="non-scaling-stroke" fill="none" />
+      <path d={caminho(LARGURA * v, altura, semente)} pathLength={1} className="traco-linha" vectorEffect="non-scaling-stroke" fill="none" />
     </svg>
   );
 }

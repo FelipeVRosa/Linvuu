@@ -28,7 +28,11 @@ function RolarAoTopo() {
   return null;
 }
 
+// Páginas de dia da área do aluno (/curso/:id/dia/:n): sem bloco de newsletter no rodapé.
+const AREA_ALUNO = /^\/curso\/[^/]+\/dia\//;
+
 export default function App() {
+  const { pathname } = useLocation();
   return (
     <>
       <a href="#conteudo" className="skip-link">Ir para o conteúdo</a>
@@ -54,7 +58,7 @@ export default function App() {
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer semNovidades={AREA_ALUNO.test(pathname)} />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
 import { falar, falarLista, parar, temVoz } from '../lib/audio';
 import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
+import { somErro } from '../lib/sons';
 
 /** O site explica em português. O campo `en` (e, no futuro, `es`) fica nos dados e só aparece quando houver o seletor de idioma de explicação. */
 const MOSTRAR_INGLES = false;
@@ -68,6 +69,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     else ok = norm(texto) === norm(ex.respostaEsperada ?? '');
     setAcertos((a) => ({ ...a, [ex.id]: ok }));
     setRes(ok ? 'ok' : 'erro');
+    if (!ok) somErro();
   };
   const avancar = () => {
     setEscolha(null); setOrdem([]); setTexto(''); setRes(null);

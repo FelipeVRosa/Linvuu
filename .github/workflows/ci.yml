@@ -22,6 +22,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
+        run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)
         run: npm audit --omit=dev --audit-level=high
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)

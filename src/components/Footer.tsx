@@ -5,19 +5,22 @@ import { useT } from '../i18n';
 import { Redes } from './Redes';
 import { Newsletter } from './Newsletter';
 
-export function Footer() {
+/** Rodapé do site. Nas páginas da área do aluno (`semNovidades`) o bloco de newsletter não aparece. */
+export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
   const t = useT();
   return (
     <footer className="lv-foot">
-      <div className="lv-foot-news" id="novidades">
-        <div className="lv-foot-news-in">
-          <div>
-            <h2>{t.rodape.novidadesTitulo}</h2>
-            <p>{t.rodape.novidadesTexto}</p>
+      {!semNovidades && (
+        <div className="lv-foot-news" id="novidades">
+          <div className="lv-foot-news-in">
+            <div>
+              <h2>{t.rodape.novidadesTitulo}</h2>
+              <p>{t.rodape.novidadesTexto}</p>
+            </div>
+            <Newsletter origem="rodape" />
           </div>
-          <Newsletter origem="rodape" />
         </div>
-      </div>
+      )}
       <div className="lv-foot-in">
         <div className="lv-foot-brand">
           <img src="/brand/linvuu-wordmark-papel.svg" alt="Linvuu" width="104" height="33" />

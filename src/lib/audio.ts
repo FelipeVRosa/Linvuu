@@ -29,6 +29,10 @@ const indice = (idioma: string) => {
 let atual: HTMLAudioElement | null = null;
 let cancelar = 0;
 
+/** Áudio da aula em andamento (gravação ou voz do navegador). Os sons de reforço se calam nesse caso. */
+export const audioTocando = (): boolean =>
+  (!!atual && !atual.paused && !atual.ended) || (typeof speechSynthesis !== 'undefined' && speechSynthesis.speaking);
+
 export const parar = () => {
   cancelar++;
   atual?.pause(); atual = null;

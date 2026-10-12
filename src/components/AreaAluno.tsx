@@ -1,10 +1,12 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { DIAS, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
 import { salvarDiaConta, sincronizarConta } from '../lib/progressoConta';
 import { useAuth } from '../lib/AuthContext';
 import { textos } from '../lib/textos';
+import { definirSons, EVENTO_SONS, somClique, somConcluido, sonsLigados } from '../lib/sons';
+import { Traco } from './Traco';
 
 export type Tema = 'claro' | 'escuro';
 const CHAVE_TEMA = 'linvuu:tema-aluno';
@@ -25,13 +27,29 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   const [busca, setBusca] = useState('');
   const [abertos, setAbertos] = useState<Record<number, boolean>>({});
   const [tema, setTema] = useState<Tema>(lerTema);
+  const [avisoTema, setAvisoTema] = useState('');
+  const [sons, setSons] = useState(sonsLigados);
+  // Ao concluir um dia, o traço da barra desenha de novo. A primeira leitura (ao abrir a página) não desenha.
+  const [desenho, setDesenho] = useState(0);
+  const anterior = useRef<number | null>(null);
 
   useEffect(() => {
-    const sync = () => setConcluidos(diasConcluidos(idioma));
+    const sync = () => {
+      const novos = diasConcluidos(idioma);
+      setConcluidos(novos);
+      if (anterior.current !== null && novos.length > anterior.current) setDesenho((d) => d + 1);
+      anterior.current = novos.length;
+    };
     sync();
     window.addEventListener('linvuu:dias', sync);
     return () => window.removeEventListener('linvuu:dias', sync);
   }, [idioma]);
+
+  useEffect(() => {
+    const sync = () => setSons(sonsLigados());
+    window.addEventListener(EVENTO_SONS, sync);
+    return () => window.removeEventListener(EVENTO_SONS, sync);
+  }, []);
 
   // Quem entrou na conta traz o progresso de outros aparelhos.
   useEffect(() => {
@@ -40,7 +58,16 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
   const escolherTema = (t: Tema) => {
     setTema(t);
+    setAvisoTema(T.temaAlterado(t === 'escuro' ? 'escuro' : 'claro'));
     try { localStorage.setItem(CHAVE_TEMA, t); } catch { /* sem armazenamento */ }
+    somClique();
+  };
+
+  const alternarSons = () => {
+    const novo = !sons;
+    definirSons(novo);
+    setSons(novo);
+    if (novo) somClique();
   };
 
   const grupoAtual = grupos.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
@@ -73,6 +100,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
   return (
     <div className="area-aluno" data-recolhida={recolhida || undefined} data-tema={tema}>
+      <p className="sr-only" role="status" aria-live="polite">{avisoTema}</p>
       <aside className="aa-lateral" aria-label={T.trilhaAluno}>
         <div className="aa-topo">
           <div className="aa-titulo">
@@ -88,17 +116,18 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
           <div className="aa-corpo">
             <div className="aa-progresso">
               <div className="aa-barra" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={concluidos.length} aria-label={T.diasConcluidos(concluidos.length, total)}>
-                <span style={{ width: `${pct}%` }} />
+                <Traco key={desenho} valor={pct / 100} altura={14} semente={7} trilha animar={desenho > 0} />
               </div>
               <span className="aa-contagem">{T.diasConcluidos(concluidos.length, total)}</span>
               <p className="aa-acalma">{T.acalma(dia, total)}</p>
             </div>
 
             <div className="aa-linha-acoes">
-              <div className="aa-tema" role="group" aria-label={T.tema}>
+              <div className="aa-tema" role="group" aria-label={T.tema} data-ativo={tema}>
                 <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}>{T.claro}</button>
                 <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}>{T.escuro}</button>
               </div>
+              <button type="button" className="aa-sons" aria-pressed={sons} onClick={alternarSons}>{T.sonsRotulo}: {sons ? T.sonsLig : T.sonsDesl}</button>
               {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)} →</Link>}
             </div>
 
@@ -133,7 +162,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         )}
       </aside>
 
-      <div className="aa-conteudo">{children}</div>
+      <div className="aa-conteudo" key={`${idioma}-${dia}`}>{children}</div>
     </div>
   );
 }
@@ -161,6 +190,7 @@ export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
     const grupo = gruposDoCurso(idioma).find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
     const aulaFechada = !!grupo && Array.from({ length: grupo.dias[1] - grupo.dias[0] + 1 }, (_, k) => grupo.dias[0] + k).every((n) => feitos.has(n));
     setAviso(aulaFechada ? T.msgAula : T.msgDia(feitos.size, total));
+    somConcluido();
   };
 
   return (

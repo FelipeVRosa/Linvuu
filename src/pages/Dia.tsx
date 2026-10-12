@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { Sessao } from '../components/Sessao';
+import { AreaAluno, MarcarDia } from '../components/AreaAluno';
 import { usePageTitle } from '../lib/usePageTitle';
 import { Paywall } from '../components/Paywall';
 import { useAssinatura } from '../lib/assinatura';
@@ -41,7 +42,9 @@ export default function Dia() {
   const fase = aula && FASES.find((f) => f.id === aula.fase);
 
   return (
-    <div className="pagina">
+    <div className="pagina pagina-aluno">
+    <AreaAluno idioma={curso!.id} nome={curso!.nome} dia={dia}>
+    <div className="aa-leitura">
       <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: T.inicio, para: '/' }, { rotulo: T.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `${T.sessao} ${dia}` }]} />
 
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome} indisponivel={ass.indisponivel} />}
@@ -82,13 +85,15 @@ export default function Dia() {
             </div>
           )}
 
-          <nav className="dia-nav" aria-label={T.navDias}>
+          <nav className="dia-nav aa-nav" aria-label={T.navDias}>
             {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>{T.anterior(dia - 1)}</Link> : <span />}
-            <Link to={`/curso/${curso!.id}`}>{T.verTrilha}</Link>
+            <MarcarDia idioma={curso!.id} dia={dia} />
             {dia < total ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>{T.seguinte(dia + 1)}</Link> : <span />}
           </nav>
         </>
       )}
+    </div>
+    </AreaAluno>
     </div>
   );
 }

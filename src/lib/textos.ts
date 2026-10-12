@@ -3,6 +3,7 @@ export type Lingua = 'pt' | 'en';
 export const linguaDoCurso = (idioma?: string): Lingua => (idioma === 'br' ? 'en' : 'pt');
 
 const pt = {
+  marcarConcluido: 'Marcar como concluída', concluidoDia: 'Concluída', recolher: 'Recolher trilha', expandir: 'Mostrar trilha', buscarDia: 'Buscar dia', trilhaAluno: 'Trilha', diasConcluidos: (a: number, b: number) => `${a} de ${b} dias concluídos`, semDias: 'Nenhum dia encontrado.', dia: 'Dia',
   ouvir: 'Ouvir', ainda: 'ouça e repita', resposta: 'Resposta:', refazer: 'Refazer os exercícios', tocarOuvir: 'Toque para ouvir',
   opcoes: 'Opções', pecas: 'Toque nas peças abaixo', limpar: 'Limpar', escrevaPrivado: 'Escreva aqui (só você vê)', escreva: 'Escreva aqui',
   certo: 'Certo.', errou: 'Não foi dessa vez. Resposta:', compare: 'Compare com um exemplo:', verExemplo: 'Ver exemplo', verificar: 'Verificar',
@@ -26,6 +27,7 @@ const pt = {
 };
 
 const en: typeof pt = {
+  marcarConcluido: 'Mark as complete', concluidoDia: 'Completed', recolher: 'Collapse course map', expandir: 'Show course map', buscarDia: 'Search day', trilhaAluno: 'Course map', diasConcluidos: (a, b) => `${a} of ${b} days completed`, semDias: 'No day found.', dia: 'Day',
   ouvir: 'Listen', ainda: 'listen and repeat', resposta: 'Answer:', refazer: 'Redo the exercises', tocarOuvir: 'Tap to listen',
   opcoes: 'Options', pecas: 'Tap the pieces below', limpar: 'Clear', escrevaPrivado: 'Write here (only you can see it)', escreva: 'Write here',
   certo: 'Correct.', errou: 'Not this time. Answer:', compare: 'Compare with a sample answer:', verExemplo: 'Show example', verificar: 'Check',

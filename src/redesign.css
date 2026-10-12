@@ -261,6 +261,12 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .aa-sons{justify-self:start;font-size:13px;font-weight:600;color:var(--aa-muted);background:none;border:1px solid var(--aa-linha);border-radius:999px;padding:5px 12px;cursor:pointer}
 .aa-sons[aria-pressed="true"]{color:var(--aa-texto);border-color:var(--sem-destaque)}
 .aa-gramatica{font-size:14px;font-weight:600;color:var(--aa-texto);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--aa-ocre)}
+/* Alvos de toque de pelo menos 44 px em telas de toque (WCAG 2.5.5). No desktop o visual segue o mesmo. */
+@media (pointer:coarse){
+  .area-aluno .aa-tema button,.area-aluno .aa-sons,.area-aluno .aa-recolher{min-height:44px}
+  .area-aluno .aa-sons{padding:10px 14px}
+  .area-aluno .aa-gramatica{display:inline-block;min-height:44px;line-height:44px}
+}
 .aa-busca input{
   width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--aa-linha);
   background:var(--cmp-campo);color:var(--aa-texto);font:inherit;font-size:14px;
@@ -336,8 +342,9 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 /* Modo de cores forçadas (alto contraste do sistema): bordas e foco vêm do sistema, sem sombra. */
 @media (forced-colors:active){
   .area-aluno .aa-tema,.area-aluno .aa-busca input,.area-aluno .aa-recolher,.area-aluno .aa-sons{border:1px solid CanvasText}
-  .area-aluno .aa-tema::before{background:Highlight}
-  .area-aluno .aa-tema button[aria-pressed="true"]{color:HighlightText}
+  .area-aluno .aa-tema::before{display:none}
+  .area-aluno .aa-tema button[aria-pressed="true"]{background:Highlight;color:HighlightText}
+  .area-aluno .aa-sons[aria-pressed="true"]{border-color:Highlight}
   .area-aluno .aa-dia.atual::before,.area-aluno .traco-linha{background:CanvasText;stroke:CanvasText}
   .area-aluno :focus-visible{outline:2px solid Highlight;box-shadow:none}
 }

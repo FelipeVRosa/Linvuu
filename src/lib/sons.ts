@@ -1,6 +1,7 @@
 // Sons de reforço da área do aluno, gerados no navegador (Web Audio, sem arquivos).
 // Desligados por padrão. A escolha fica neste aparelho. Áudio é reforço, nunca barreira:
 // quem não ouve perde só o reforço, nunca informação.
+import { audioTocando } from './audio';
 
 const CHAVE = 'linvuu:sons';
 export const EVENTO_SONS = 'linvuu:sons';
@@ -32,6 +33,8 @@ interface Nota { freq: number; freqFim?: number; inicio: number; duracao: number
 const amp = (db: number) => Math.pow(10, db / 20);
 
 function emitir(notas: Nota[]) {
+  // Reforço nunca concorre com a aula: se a voz ou a gravação estiver tocando, o som não sai.
+  if (audioTocando()) return;
   const c = ctx();
   if (!c) return;
   const agora = c.currentTime;

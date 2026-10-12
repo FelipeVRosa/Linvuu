@@ -36,7 +36,8 @@ Com `prefers-reduced-motion: reduce`, as durações vão para 0,01 ms. O traço 
 - Contraste medido pelo validador. Texto: mínimo 4,5:1. Elementos não textuais (foco, progresso): mínimo 3:1.
 - Foco: `:focus-visible` com contorno de 2 px em `--sem-foco` e halo `--sem-foco-halo`.
 - `prefers-contrast: more`: bordas e texto reforçados.
-- `forced-colors: active`: usa `CanvasText` e `Highlight` do sistema.
+- Alvos de toque de 44 px em `pointer: coarse` (seletor, botão de sons, recolher, link da gramática).
+- `forced-colors: active`: usa `CanvasText` e `Highlight` do sistema. A opção ativa do seletor vira `Highlight`.
 - `monochrome`: o progresso não depende só de cor, há também a contagem em texto.
 - Ruído do fundo escuro (`::after`, opacidade 0,012) não recebe foco nem clique.
 
@@ -48,6 +49,7 @@ Com `prefers-reduced-motion: reduce`, as durações vão para 0,01 ms. O traço 
   - Dia concluído: arpejo Dó-Mi-Sol, 90 ms cada nota, -15 dB.
   - Resposta errada: 300 Hz descendo a 200 Hz, 150 ms, -18 dB.
 - Áudio é reforço, nunca barreira. Quem não ouve perde só o reforço.
+- Os sons se calam enquanto a voz ou a gravação da aula estiver tocando (`audioTocando()` em `src/lib/audio.ts`).
 
 ## Validação
 

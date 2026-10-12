@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido } from './server/billing';
+import { registrarProgresso } from './server/progresso';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
@@ -29,6 +30,7 @@ async function startServer() {
 
   registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
   registrarLivroProtegido(app);
+  registrarProgresso(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

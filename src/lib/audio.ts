@@ -1,5 +1,8 @@
 // Áudio das aulas. Ordem: MP3 salvo no site (public/audio/<idioma>/<hash>.mp3, listado em index.json) → voz do navegador (provisória).
 // Nome do arquivo = hash do texto SEM acento tônico (o acento é só gráfico). A lista vem de content/audio/<idioma>-gravar.csv.
+// Áudio de sessão paga não fica em public/: sai de /api/audio, com o token de login (ver audioPrivado).
+import { carregarAuth } from './firebase';
+import { api } from './api';
 const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
 const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', br: 'pt-BR' };
 
@@ -42,14 +45,39 @@ const vozDoNavegador = (texto: string, idioma: string) => new Promise<void>((ok)
   speechSynthesis.speak(u);
 });
 
+const privados = new Map<string, Promise<string | null>>();
+/** Token do login, se houver. Falha de Auth não impede a tentativa: o servidor é quem decide o acesso. */
+const tokenDoLogin = async (): Promise<string | null> => {
+  try {
+    const { auth } = await carregarAuth();
+    return (await auth.currentUser?.getIdToken()) ?? null;
+  } catch { return null; }
+};
+/** Áudio de sessão paga: baixa pela API (com o token de login, se houver) e devolve um endereço local. null = sem acesso ou sem arquivo. */
+const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
+  const chave = `${idioma}/${h}`;
+  if (!privados.has(chave)) {
+    privados.set(chave, (async () => {
+      try {
+        const token = await tokenDoLogin();
+        const r = await fetch(api(`/api/audio/${idioma}/${h}.mp3`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+        return r.ok ? URL.createObjectURL(await r.blob()) : null;
+      } catch { return null; }
+    })().then((url) => { if (!url) privados.delete(chave); return url; }));
+  }
+  return privados.get(chave)!;
+};
+
 /** Toca um texto com o token `minha` (se `parar()` for chamado, o token muda e a fala é abandonada). */
 async function tocar(texto: string, idioma: string, minha: number) {
   const h = hashTexto(texto);
-  const tem = (await indice(idioma)).has(h);
+  const publico = (await indice(idioma)).has(h);
   if (minha !== cancelar) return;
-  if (tem) {
+  const origem = publico ? `${BASE}/${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
+  if (minha !== cancelar) return;
+  if (origem) {
     try {
-      const a = new Audio(`${BASE}/${idioma}/${h}.mp3`);
+      const a = new Audio(origem);
       atual = a;
       await new Promise<void>((ok, erro) => { a.onended = () => ok(); a.onerror = () => erro(new Error('sem arquivo')); a.play().then(() => avisar('gravacao')).catch(erro); });
       return;

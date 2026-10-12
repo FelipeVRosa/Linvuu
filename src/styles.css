@@ -542,6 +542,11 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .passos li{counter-increment:passo;position:relative;padding-left:46px;min-height:32px;display:flex;align-items:center}
 .passos li::before{content:counter(passo);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--idioma-bg);color:var(--idioma);font-weight:700;font-size:14px;display:grid;place-items:center}
 
+/* Navegação das partes da sessão: fileira horizontal, sem contador externo (o número já vem dentro do botão). */
+.passos-nav{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 16px;padding:0}
+.passos-nav li{margin:0;padding:0;display:block;min-height:0}
+.passos-nav li::before{content:none}
+
 /* Títulos com fonte de personalidade; cartão de aula com áudio de verdade */
 .hero-h1,.section-h2,.hoje h2{font-family:var(--font-display);font-weight:600;letter-spacing:-.03em}
 .hero-h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04}

@@ -21,7 +21,7 @@ const somaMeses = (t: number, m: number) => { const d = new Date(t * 1000); d.se
 
 export const cobrancaConfigurada = () => !!(stripe && projeto);
 
-async function usuario(req: Request): Promise<{ uid: string; email?: string } | null> {
+export async function usuario(req: Request): Promise<{ uid: string; email?: string } | null> {
   const h = req.headers.authorization || '';
   if (!h.startsWith('Bearer ') || !projeto) return null;
   try {
@@ -89,6 +89,23 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
       } catch (e) { console.error('aula', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
     }
     res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8'));
+  });
+
+  // Áudio das sessões depois da 8ª: arquivos em server/audio-privado (fora de public/). Mesma regra do texto:
+  // só sai para quem tem assinatura ativa. Em desenvolvimento sem cobrança configurada, libera para testar.
+  app.get('/api/audio/:idioma/:arquivo', async (req: Request, res: Response) => {
+    const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
+    if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
+    const arq = path.resolve(process.cwd(), 'server', 'audio-privado', idioma, arquivo);
+    if (!fs.existsSync(arq)) { res.status(404).end(); return; }
+    const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
+    if (!livre) {
+      const u = await guarda(req, res); if (!u) return;
+      try {
+        if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
+      } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
+    }
+    res.set('Cache-Control', 'private, max-age=3600').type('audio/mpeg').sendFile(arq);
   });
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {

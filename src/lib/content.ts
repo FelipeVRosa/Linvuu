@@ -31,7 +31,6 @@ export interface Aula extends DiaMestre {
 export const CURSOS = cursosJson.cursos as Curso[];
 export const FASES = trilhaJson.fases as Fase[];
 export const DIAS = trilhaJson.dias as DiaMestre[];
-export const TITULO_TRILHA = trilhaJson.titulo;
 const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[] }>;
 
 /** Título e objetivo do dia para um curso (alguns idiomas têm aulas próprias no lugar do texto-mestre). */

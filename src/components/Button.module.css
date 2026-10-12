@@ -1,0 +1,34 @@
+/* Botão da identidade Linvuu, em CSS Modules. Mesma aparência de .btn / .btn-primary / .btn-ghost de styles.css e redesign.css.
+   O primário lê --btn-primary-* para acompanhar o modo escuro da área do aluno (definido em redesign.css). */
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;padding:14px 26px;
+  font-size:15px;font-weight:600;line-height:1;text-decoration:none;
+  border:1.5px solid transparent;border-radius:var(--r-control);
+  box-shadow:none;cursor:pointer;
+  transition:transform .12s ease,box-shadow .12s ease,border-color .12s,background .12s,color .12s;
+}
+.btn:hover:not(:disabled){transform:translateY(-3px);box-shadow:0 6px 0 var(--ink)}
+.btn:active:not(:disabled){transform:translateY(0);box-shadow:none}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+@media (prefers-reduced-motion:reduce){
+  .btn:hover:not(:disabled){transform:none}
+}
+
+.primary{
+  background:var(--btn-primary-bg,var(--verde-floresta));
+  color:var(--btn-primary-fg,var(--papel));
+  border:1px solid var(--btn-primary-bg,var(--verde-floresta));
+}
+.primary:hover:not(:disabled){
+  background:var(--btn-primary-hover,var(--verde-900));
+  border-color:var(--btn-primary-hover,var(--verde-900));
+}
+
+.ghost{
+  background:var(--papel-claro);
+  color:var(--text);
+  border-color:var(--border-strong);
+}
+.ghost:hover:not(:disabled){border-color:var(--text)}

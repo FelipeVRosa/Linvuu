@@ -276,7 +276,7 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
     <div className="sessao">
       {voz === false && <p className="nota">{idioma === 'br' ? `Your browser has no Portuguese voice installed, so the audio buttons may be silent. Install a Brazilian Portuguese voice in your device settings.` : <>Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</>}</p>}
       {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
-      <ol className="passos" aria-label={T.blocosSessao}>
+      <ol className="passos-nav" aria-label={T.blocosSessao}>
         {sessao.blocos.map((x, k) => (
           <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {T.rotuloBloco[x.tipo]}</button></li>
         ))}
@@ -291,8 +291,8 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
           : <button type="button" className="btn btn-primary" onClick={() => setCompleta(true)}>{completa ? T.concluida : T.concluir}</button>}
       </div>
-      {completa && idx === total - 1 && (
-        <p className="concluida" role="status">{T.concluidaNav} {proximo && <Link to={proximo}>{T.proxSessao}</Link>}</p>
+      {idx === total - 1 && (completa || proximo) && (
+        <p className="concluida" role="status">{completa && T.concluidaNav} {proximo && <Link to={proximo}>{T.proxSessao}</Link>}</p>
       )}
     </div>
   );

@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_MENSAL, PRECO_MES_PIX, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 
@@ -50,12 +50,7 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{PRECO_MENSAL}<span> por mês</span></p>
                   <p>Cartão, renovação automática. Cancele quando quiser.</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Assinar'}</button>
-                </div>
-                <div className="lv-plano">
-                  <h3>Primeiro mês no Pix</h3>
-                  <p className="lv-plano-preco">{PRECO_MES_PIX}<span> pagamento único, uma vez por conta</span></p>
-                  <p>Um mês de acesso a todos os cursos, pago por Pix. Sem renovação automática.</p>
-                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'mes-pix')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar o primeiro mês no Pix'}</button>
+                  <p className="nota">Ex-aluno? {PRECO_EX_ALUNO} por mês, para sempre. Os primeiros 50 usam o cupom VALEEVA50 no checkout.</p>
                 </div>
                 <div className="lv-plano">
                   <h3>3 meses</h3>
@@ -64,6 +59,12 @@ export default function Assinatura() {
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'trimestral-pix')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses no Pix'}</button>
                   <p className="lv-plano-preco">{PRECO_TRIMESTRAL}<span> no cartão ou boleto, pagamento único</span></p>
                   <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'trimestral')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 3 meses no cartão ou boleto'}</button>
+                </div>
+                <div className="lv-plano">
+                  <h3>12 meses</h3>
+                  <p className="lv-plano-preco">{PRECO_ANUAL}<span> no cartão ou boleto, pagamento único</span></p>
+                  <p>Um ano de acesso a todos os cursos. Sem renovação automática.</p>
+                  <button type="button" className="btn btn-ghost" onClick={() => ir('checkout', 'anual')} disabled={ocupado}>{ocupado ? 'Abrindo…' : 'Pagar 12 meses'}</button>
                 </div>
               </div>
             </>

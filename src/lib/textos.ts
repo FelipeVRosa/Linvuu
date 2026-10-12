@@ -3,6 +3,7 @@ export type Lingua = 'pt' | 'en';
 export const linguaDoCurso = (idioma?: string): Lingua => (idioma === 'br' ? 'en' : 'pt');
 
 const pt = {
+  olaNome: (nome: string) => `Olá, ${nome}`, ola: 'Olá', acalma: (d: number, t: number) => `Você está no dia ${d} de ${t}. Não precisa terminar tudo hoje: uma sessão já conta.`, msgDia: (n: number, t: number) => `Dia concluído. Você já tem ${n} de ${t}.`, msgAula: 'Aula concluída. Você fechou um bloco inteiro.', tema: 'Tema', claro: 'Claro', escuro: 'Escuro', gramaticaDo: (nome: string) => `Gramática do ${nome.toLowerCase()}`, entrarProgresso: 'Entre na sua conta para salvar o progresso em qualquer aparelho.',
   marcarConcluido: 'Marcar como concluída', concluidoDia: 'Concluída', recolher: 'Recolher trilha', expandir: 'Mostrar trilha', buscarDia: 'Buscar dia', trilhaAluno: 'Trilha', diasConcluidos: (a: number, b: number) => `${a} de ${b} dias concluídos`, semDias: 'Nenhum dia encontrado.', dia: 'Dia',
   ouvir: 'Ouvir', ainda: 'ouça e repita', resposta: 'Resposta:', refazer: 'Refazer os exercícios', tocarOuvir: 'Toque para ouvir',
   opcoes: 'Opções', pecas: 'Toque nas peças abaixo', limpar: 'Limpar', escrevaPrivado: 'Escreva aqui (só você vê)', escreva: 'Escreva aqui',
@@ -27,6 +28,7 @@ const pt = {
 };
 
 const en: typeof pt = {
+  olaNome: (nome: string) => `Hi, ${nome}`, ola: 'Hi', acalma: (d: number, t: number) => `You are on day ${d} of ${t}. You don't have to finish everything today: one session already counts.`, msgDia: (n: number, t: number) => `Day completed. You now have ${n} of ${t}.`, msgAula: 'Lesson completed. You finished a full block.', tema: 'Theme', claro: 'Light', escuro: 'Dark', gramaticaDo: (nome: string) => `${nome} grammar`, entrarProgresso: 'Sign in to save your progress on any device.',
   marcarConcluido: 'Mark as complete', concluidoDia: 'Completed', recolher: 'Collapse course map', expandir: 'Show course map', buscarDia: 'Search day', trilhaAluno: 'Course map', diasConcluidos: (a, b) => `${a} of ${b} days completed`, semDias: 'No day found.', dia: 'Day',
   ouvir: 'Listen', ainda: 'listen and repeat', resposta: 'Answer:', refazer: 'Redo the exercises', tocarOuvir: 'Tap to listen',
   opcoes: 'Options', pecas: 'Tap the pieces below', limpar: 'Clear', escrevaPrivado: 'Write here (only you can see it)', escreva: 'Write here',

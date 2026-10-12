@@ -21,7 +21,7 @@ const somaMeses = (t: number, m: number) => { const d = new Date(t * 1000); d.se
 
 export const cobrancaConfigurada = () => !!(stripe && projeto);
 
-async function usuario(req: Request): Promise<{ uid: string; email?: string } | null> {
+export async function usuario(req: Request): Promise<{ uid: string; email?: string } | null> {
   const h = req.headers.authorization || '';
   if (!h.startsWith('Bearer ') || !projeto) return null;
   try {

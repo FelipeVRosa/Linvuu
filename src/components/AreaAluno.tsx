@@ -2,11 +2,20 @@ import { useEffect, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { DIAS, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
+import { salvarDiaConta, sincronizarConta } from '../lib/progressoConta';
+import { useAuth } from '../lib/AuthContext';
 import { textos } from '../lib/textos';
 
-/** Trilha lateral escura da área do aluno: progresso, aulas em grupos recolhíveis, busca e o dia atual destacado. */
+export type Tema = 'claro' | 'escuro';
+const CHAVE_TEMA = 'linvuu:tema-aluno';
+const lerTema = (): Tema => {
+  try { return localStorage.getItem(CHAVE_TEMA) === 'escuro' ? 'escuro' : 'claro'; } catch { return 'claro'; }
+};
+
+/** Trilha lateral da área do aluno: saudação, progresso, aulas recolhíveis, busca, tema e atalho para a gramática. */
 export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nome: string; dia: number; children: ReactNode }) {
   const T = textos(idioma);
+  const { usuario } = useAuth();
   const stats = statusDoCurso(idioma);
   const grupos = gruposDoCurso(idioma);
   const total = stats?.total ?? 0;
@@ -15,6 +24,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   const [recolhida, setRecolhida] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 900);
   const [busca, setBusca] = useState('');
   const [abertos, setAbertos] = useState<Record<number, boolean>>({});
+  const [tema, setTema] = useState<Tema>(lerTema);
 
   useEffect(() => {
     const sync = () => setConcluidos(diasConcluidos(idioma));
@@ -23,13 +33,24 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     return () => window.removeEventListener('linvuu:dias', sync);
   }, [idioma]);
 
+  // Quem entrou na conta traz o progresso de outros aparelhos.
+  useEffect(() => {
+    if (usuario) sincronizarConta(idioma);
+  }, [usuario, idioma]);
+
+  const escolherTema = (t: Tema) => {
+    setTema(t);
+    try { localStorage.setItem(CHAVE_TEMA, t); } catch { /* sem armazenamento */ }
+  };
+
   const grupoAtual = grupos.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
   const estaAberto = (aula: number) => abertos[aula] ?? aula === grupoAtual?.aula;
   const pct = total ? Math.round((concluidos.length / total) * 100) : 0;
   const termo = busca.trim().toLowerCase();
   const encontrados = termo ? DIAS.filter((m) => m.dia <= total && diaDoCurso(idioma, m).titulo.toLowerCase().includes(termo)) : [];
-
   const numerosDo = (g: { dias: [number, number] }) => Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k);
+  const primeiroNome = usuario?.nome.split(/\s+/)[0];
+  const temGramatica = ['ru', 'de', 'en'].includes(idioma);
 
   const linha = (n: number) => {
     const m = DIAS[n - 1];
@@ -43,19 +64,19 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         <Link to={`/curso/${idioma}/dia/${n}`} className={`aa-dia ${atual ? 'atual' : ''} ${feito ? 'feito' : ''}`} aria-current={atual ? 'page' : undefined}>
           <span className="aa-marca" aria-hidden="true">{feito ? '✓' : ''}</span>
           <span className="aa-dia-n">{n}</span>
-          <span className="aa-dia-t">{d.titulo}<small>{STATUS_AULA[st]}</small></span>
+          <span className="aa-dia-t">{d.titulo}<small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small></span>
         </Link>
       </li>
     );
   };
 
   return (
-    <div className="area-aluno" data-recolhida={recolhida || undefined}>
+    <div className="area-aluno" data-recolhida={recolhida || undefined} data-tema={tema}>
       <aside className="aa-lateral" aria-label={T.trilhaAluno}>
         <div className="aa-topo">
           <div className="aa-titulo">
-            <span className="aa-kicker">{T.trilhaAluno}</span>
-            <strong>{nome}</strong>
+            <span className="aa-kicker">{T.trilhaAluno} · {nome}</span>
+            <strong>{primeiroNome ? T.olaNome(primeiroNome) : T.ola}</strong>
           </div>
           <button type="button" className="aa-recolher" aria-expanded={!recolhida} onClick={() => setRecolhida((x) => !x)} aria-label={recolhida ? T.expandir : T.recolher}>
             {recolhida ? '»' : '«'}
@@ -69,6 +90,15 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
                 <span style={{ width: `${pct}%` }} />
               </div>
               <span className="aa-contagem">{T.diasConcluidos(concluidos.length, total)}</span>
+              <p className="aa-acalma">{T.acalma(dia, total)}</p>
+            </div>
+
+            <div className="aa-linha-acoes">
+              <div className="aa-tema" role="group" aria-label={T.tema}>
+                <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}>{T.claro}</button>
+                <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}>{T.escuro}</button>
+              </div>
+              {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)} →</Link>}
             </div>
 
             <label className="aa-busca">
@@ -94,11 +124,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
                     </span>
                     <span className={`aa-seta ${estaAberto(g.aula) ? 'aberta' : ''}`} aria-hidden="true">›</span>
                   </button>
-                  {estaAberto(g.aula) && (
-                    <ol className="aa-lista">
-                      {numerosDo(g).map((n) => linha(n))}
-                    </ol>
-                  )}
+                  {estaAberto(g.aula) && <ol className="aa-lista">{numerosDo(g).map((n) => linha(n))}</ol>}
                 </section>
               ))
             )}
@@ -111,19 +137,38 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   );
 }
 
-/** Botão de conclusão do dia: marca e desmarca, e mostra o estado na hora. */
+/** Botão de conclusão do dia: marca e desmarca, salva na conta quando há login e mostra um reforço curto. */
 export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
   const T = textos(idioma);
+  const { usuario } = useAuth();
   const [feito, setFeito] = useState(false);
+  const [aviso, setAviso] = useState<string | null>(null);
   useEffect(() => {
     const sync = () => setFeito(diaConcluido(idioma, dia));
     sync();
     window.addEventListener('linvuu:dias', sync);
     return () => window.removeEventListener('linvuu:dias', sync);
   }, [idioma, dia]);
+
+  const clicar = () => {
+    const novo = !feito;
+    marcarDia(idioma, dia, novo);
+    if (usuario) salvarDiaConta(idioma, dia, novo);
+    if (!novo) { setAviso(null); return; }
+    const total = statusDoCurso(idioma)?.total ?? 0;
+    const feitos = new Set([...diasConcluidos(idioma), dia]);
+    const grupo = gruposDoCurso(idioma).find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
+    const aulaFechada = !!grupo && Array.from({ length: grupo.dias[1] - grupo.dias[0] + 1 }, (_, k) => grupo.dias[0] + k).every((n) => feitos.has(n));
+    setAviso(aulaFechada ? T.msgAula : T.msgDia(feitos.size, total));
+  };
+
   return (
-    <button type="button" className={`btn ${feito ? 'btn-ok' : 'btn-primary'} aa-marcar`} aria-pressed={feito} onClick={() => marcarDia(idioma, dia, !feito)}>
-      {feito ? `✓ ${T.concluidoDia}` : T.marcarConcluido}
-    </button>
+    <div className="aa-marcar-bloco">
+      <button type="button" className={`btn ${feito ? 'btn-ok' : 'btn-primary'} aa-marcar`} aria-pressed={feito} onClick={clicar}>
+        {feito ? `✓ ${T.concluidoDia}` : T.marcarConcluido}
+      </button>
+      {aviso && <p className="aa-aviso" role="status">{aviso}</p>}
+      {!usuario && <p className="aa-aviso-leve">{T.entrarProgresso}</p>}
+    </div>
   );
 }

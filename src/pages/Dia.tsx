@@ -47,7 +47,7 @@ export default function Dia() {
     });
   }, [valido, curso, dia, bloqueado, decidindo]);
 
-  usePageTitle(aula ? `Dia ${dia}: ${aula.titulo} · ${curso!.nome}` : undefined);
+  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined);
   if (!valido) return <NaoEncontrada />;
 
   const fase = aula && FASES.find((f) => f.id === aula.fase);
@@ -56,7 +56,7 @@ export default function Dia() {
     <div className="pagina pagina-aluno">
     <AreaAluno idioma={curso!.id} nome={curso!.nome} dia={dia}>
     <div className="aa-leitura">
-      <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: T.inicio, para: '/' }, { rotulo: T.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `${T.sessao} ${dia}` }]} />
+      <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: T.inicio, para: '/' }, { rotulo: T.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
 
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome} indisponivel={ass.indisponivel} />}
       {erro && (

@@ -34,8 +34,8 @@ export default function Portugues() {
             <Link to="/curso/br" className="btn btn-ghost">See all lessons · Ver todas as aulas</Link>
           </div>
           <p className="nota">
-            <span lang="pt-BR">As primeiras {SESSOES_GRATIS} sessões são grátis. Depois, {PRECO_MENSAL} por mês, com todos os cursos da Linvuu.</span>{' '}
-            <span lang="en">The first {SESSOES_GRATIS} sessions are free. After that, {PRECO_MENSAL} per month (about the price of a card charge in reais), all Linvuu courses included.</span>
+            <span lang="pt-BR">As 2 primeiras aulas ({SESSOES_GRATIS} sessões) são grátis. Depois, {PRECO_MENSAL} por mês, com todos os cursos da Linvuu.</span>{' '}
+            <span lang="en">The first 2 lessons ({SESSOES_GRATIS} sessions) are free. After that, {PRECO_MENSAL} per month (about the price of a card charge in reais), all Linvuu courses included.</span>
           </p>
         </div>
       </header>

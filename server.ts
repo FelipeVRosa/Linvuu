@@ -7,11 +7,16 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido } from './server/billing';
 import { registrarProgresso } from './server/progresso';
+import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
 
 dotenv.config();
+
+// Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
+process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
+process.on('uncaughtException', (e) => { console.error('[Linvuu] erro não capturado:', e.message); });
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -22,6 +27,7 @@ async function startServer() {
   const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   const producao = process.env.NODE_ENV === 'production';
+  if (producao && !credencialConfigurada()) console.error('[Linvuu] ATENÇÃO: Firebase Admin sem credencial. Login no servidor, progresso e áreas pagas ficam indisponíveis até definir FIREBASE_SERVICE_ACCOUNT_JSON.');
   registrarSeguranca(app, producao);
   app.use(express.json({ limit: '10kb' }));
 

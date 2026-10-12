@@ -27,10 +27,12 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
   try {
     const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7));
     return { uid: t.uid, email: t.email };
-  } catch {
+  } catch (e) {
+    if (e instanceof Error && /sem credencial/.test(e.message) && !avisouCredencial) { avisouCredencial = true; console.error('[Linvuu]', e.message); }
     return null;
   }
 }
+let avisouCredencial = false;
 
 async function preco(): Promise<string> {
   if (precoCache) return precoCache;
@@ -54,7 +56,7 @@ async function acesso(u: { uid: string; email?: string }): Promise<Acesso> {
   const c = await cliente(u);
   const [subs, sessoes] = await Promise.all([
     stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 }),
-    stripe!.checkout.sessions.list({ customer: c, limit: 30 }),
+    stripe!.checkout.sessions.list({ customer: c, status: 'complete', limit: 100 }),
   ]);
   const s = subs.data.find((x) => x.status === 'active' || x.status === 'trialing');
   const agora = Math.floor(Date.now() / 1000);

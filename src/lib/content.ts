@@ -77,15 +77,22 @@ export const INICIO_POR_NIVEL: Record<string, { dia: number; aviso?: string }> =
 
 // Só as sessões grátis (1 a 8) vão dentro do site. As demais ficam no servidor e só saem para quem tem assinatura.
 const aulas = import.meta.glob('../../content/idiomas/*/dia-00{1,2,3,4,5,6,7,8}.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;
+/** Uma nova tentativa para falhas de rede ou de arquivo (o pedaço do código pode falhar por uma queda de conexão). */
+const comNovaTentativa = async <T,>(f: () => Promise<T>): Promise<T> => {
+  try { return await f(); } catch { await new Promise((ok) => setTimeout(ok, 400)); return f(); }
+};
+
 export const carregarAula = async (idioma: string, dia: number): Promise<Aula> => {
   const key = `../../content/idiomas/${idioma}/dia-${String(dia).padStart(3, '0')}.json`;
-  if (aulas[key]) return aulas[key]();
+  if (aulas[key]) return comNovaTentativa(() => aulas[key]());
   if (dia <= SESSOES_GRATIS) throw new Error('aula não encontrada');
-  const { auth } = await carregarAuth();
-  const token = await auth.currentUser?.getIdToken();
-  const r = await fetch(api(`/api/aula/${idioma}/${dia}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
-  if (!r.ok) throw new Error('aula não encontrada');
-  return r.json();
+  return comNovaTentativa(async () => {
+    const { auth } = await carregarAuth();
+    const token = await auth.currentUser?.getIdToken();
+    const r = await fetch(api(`/api/aula/${idioma}/${dia}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+    if (!r.ok) throw new Error(`aula não encontrada (${r.status})`);
+    return r.json();
+  });
 };
 
 /** Cursos listados na vitrine (o curso de português para estrangeiros fica fora até ter aulas). */

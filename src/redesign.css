@@ -351,6 +351,9 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 }
 /* Caixa de tarefa ("Agora é com você"): o fundo claro fixo de styles.css deixava o texto claro do escuro invisível. */
 .area-aluno[data-tema="escuro"] .callout-tarefa{background:var(--sem-superficie-2);border-left-color:var(--sem-destaque)}
+.area-aluno[data-tema="escuro"] .comparacao{background:var(--sem-superficie-2);border-left-color:var(--sem-acao);color:var(--sem-texto)}
+.area-aluno[data-tema="escuro"] .erros .errado{color:#f2a79b}
+.area-aluno[data-tema="escuro"] .erros .certo{color:var(--sem-acao)}
 /* Movimento reduzido: sem animação de entrada, de traço ou de mola. */
 @media (prefers-reduced-motion:reduce){
   .area-aluno,.area-aluno *,.area-aluno *::before,.area-aluno *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}

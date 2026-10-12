@@ -33,7 +33,18 @@ export default function Dia() {
   useEffect(() => {
     if (!valido || bloqueado || decidindo) { setAula(null); return; }
     setAula(null); setErro(false);
-    carregarAula(curso!.id, dia).then(setAula).catch(() => setErro(true));
+    carregarAula(curso!.id, dia).then(setAula).catch((e: unknown) => {
+      console.error('Falha ao carregar a aula', curso!.id, dia, e);
+      // Arquivo de aula que não existe mais depois de uma publicação nova: uma recarga resolve. Só uma vez, para não entrar em laço.
+      const msg = String((e as Error)?.message ?? e);
+      const recarregou = (() => { try { return sessionStorage.getItem('linvuu:recarregou-aula'); } catch { return '1'; } })();
+      if (/Failed to fetch dynamically imported module|Loading chunk|Importing a module script failed/i.test(msg) && !recarregou) {
+        try { sessionStorage.setItem('linvuu:recarregou-aula', '1'); } catch { /* sem armazenamento: recarrega mesmo assim */ }
+        window.location.reload();
+        return;
+      }
+      setErro(true);
+    });
   }, [valido, curso, dia, bloqueado, decidindo]);
 
   usePageTitle(aula ? `Dia ${dia}: ${aula.titulo} · ${curso!.nome}` : undefined);
@@ -48,7 +59,12 @@ export default function Dia() {
       <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: T.inicio, para: '/' }, { rotulo: T.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: `${T.sessao} ${dia}` }]} />
 
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.id === 'br' ? 'Brazilian Portuguese' : curso!.nome} indisponivel={ass.indisponivel} />}
-      {erro && <p className="vazio">{T.semAula}</p>}
+      {erro && (
+        <div className="vazio">
+          <p>{T.semAula}</p>
+          <button type="button" className="btn btn-ghost" onClick={() => window.location.reload()}>{T.tentarDeNovo}</button>
+        </div>
+      )}
       {!aula && !erro && !bloqueado && <p className="resultado" role="status">{T.carregando}</p>}
 
       {aula && (

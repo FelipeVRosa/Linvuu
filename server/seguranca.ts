@@ -87,6 +87,7 @@ export function registrarSeguranca(app: Express, producao: boolean) {
   app.use('/api', cors);
   app.use('/api/billing', limitar('billing', 30, 60_000));
   app.use('/api/aula', limitar('aula', 120, 60_000));
+  app.use('/api/audio', limitar('audio', 600, 60_000));
   app.use('/api', limitar('api', 300, 60_000));
 }
 

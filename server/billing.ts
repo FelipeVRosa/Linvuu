@@ -90,6 +90,26 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8'));
   });
 
+  // Gramática por tópico: os tópicos das 2 primeiras aulas (sessões 1 a 8) são abertos; os demais só saem para quem tem assinatura ativa.
+  app.get('/api/gramatica/:idioma', async (req: Request, res: Response) => {
+    const idioma = String(req.params.idioma);
+    if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
+    const arq = path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
+    if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
+    const pacote = JSON.parse(fs.readFileSync(arq, 'utf8')) as { categorias: string[]; topicos: { dia: number; categoria: string }[] };
+    let completo = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
+    if (!completo) {
+      const u = await usuario(req);
+      if (u) {
+        try { completo = (await acesso(u)).ativa; } catch (e) { console.error('gramatica', e); }
+      }
+    }
+    const abertos = pacote.topicos.filter((t) => t.dia <= 8);
+    const topicos = completo ? pacote.topicos : abertos;
+    const categorias = pacote.categorias.filter((c) => topicos.some((t) => t.categoria === c));
+    res.set('Cache-Control', 'private, no-store').json({ ...pacote, categorias, topicos, completo, bloqueados: pacote.topicos.length - topicos.length });
+  });
+
   // Áudio das sessões depois da 8ª: arquivos em server/audio-privado (fora de public/). Mesma regra do texto:
   // só sai para quem tem assinatura ativa. Em desenvolvimento sem cobrança configurada, libera para testar.
   app.get('/api/audio/:idioma/:arquivo', async (req: Request, res: Response) => {

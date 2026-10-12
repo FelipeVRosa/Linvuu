@@ -47,14 +47,15 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   const estaAberto = (aula: number) => abertos[aula] ?? aula === grupoAtual?.aula;
   const pct = total ? Math.round((concluidos.length / total) * 100) : 0;
   const termo = busca.trim().toLowerCase();
-  const encontrados = termo ? DIAS.filter((m) => m.dia <= total && diaDoCurso(idioma, m).titulo.toLowerCase().includes(termo)) : [];
+  const todosOsDias = Array.from({ length: total }, (_, k) => k + 1);
+  const encontrados = termo ? todosOsDias.filter((n) => diaDoCurso(idioma, DIAS[n - 1] ?? { dia: n, fase: 0, nivel: 'a2' as const, titulo: '', objetivo: '' }).titulo.toLowerCase().includes(termo)) : [];
   const numerosDo = (g: { dias: [number, number] }) => Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k);
   const primeiroNome = usuario?.nome.split(/\s+/)[0];
   const temGramatica = ['ru', 'de', 'en'].includes(idioma);
 
   const linha = (n: number) => {
-    const m = DIAS[n - 1];
-    if (!m) return null;
+    // A trilha-mestre tem 120 dias; cursos com aulas escritas vão além (ex.: russo, 312). Mesmo fallback de Curso.tsx.
+    const m = DIAS[n - 1] ?? { dia: n, fase: Math.ceil(n / 10), nivel: 'a2' as const, titulo: '', objetivo: '' };
     const d = diaDoCurso(idioma, m);
     const st = stats?.status[n - 1] ?? 'planejada';
     const feito = concluidos.includes(n);
@@ -108,7 +109,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
             {termo ? (
               <ol className="aa-lista">
-                {encontrados.map((m) => linha(m.dia))}
+                {encontrados.map((n) => linha(n))}
                 {encontrados.length === 0 && <li className="aa-vazio">{T.semDias}</li>}
               </ol>
             ) : (

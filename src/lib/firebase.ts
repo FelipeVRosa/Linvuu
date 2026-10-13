@@ -1,4 +1,4 @@
-import { T } from '../i18n';
+import { LOCALE, T } from '../i18n';
 import { Capacitor } from '@capacitor/core';
 // Firebase (Authentication + Firestore). As chaves vêm de variáveis VITE_FIREBASE_* (ver docs/AUTENTICACAO.md).
 // Sem elas, o login fica desativado e o site continua funcionando.
@@ -38,6 +38,8 @@ export function carregarAuth() {
       const auth = m.getAuth(app);
       if (emuladorAuth) m.connectAuthEmulator(auth, `http://${emuladorAuth}`, { disableWarnings: true });
       try { await m.setPersistence(auth, m.browserLocalPersistence); } catch { /* segue com a persistência padrão */ }
+      // E-mails do Firebase (nova senha) e janelas do Google no idioma do site.
+      auth.languageCode = LOCALE.codigo;
       return { auth, m };
     })();
   }

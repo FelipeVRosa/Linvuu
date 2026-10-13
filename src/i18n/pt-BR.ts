@@ -11,7 +11,7 @@ export const ptBR = {
     anterior: 'anterior', proximo: 'próximo', verMais: 'Ver mais', verMenos: 'Ver menos', aguarde: 'Aguarde…', abrindo: 'Abrindo…',
     paginaInicial: 'Linvuu, página inicial', menu: 'Menu', principal: 'Principal',
   },
-  barra: { novidades: 'Receber novidades', duvidas: 'Dúvidas', contato: 'Contato', idioma: 'Idioma do site e das explicações' },
+  barra: { novidades: 'Receber novidades', duvidas: 'Dúvidas', contato: 'Contato', idioma: 'Idioma do site e das explicações', atalhos: 'Atalhos' },
   nav: { cursos: 'Cursos', gramatica: 'Gramática', metodo: 'Método', preco: 'Preço', precoAssinatura: 'Preço e assinatura', duvidas: 'Dúvidas', avaliacoes: 'Avaliações', todos: 'Todos os cursos', entrar: 'Entrar', comecar: 'Começar grátis', assinatura: 'Assinatura', sair: 'Sair', contaDe: (n: string) => `Conta de ${n}` },
   hero: {
     kicker: 'Idiomas para quem fala português',
@@ -163,6 +163,7 @@ export const ptBR = {
     'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Libere pop-ups e tente de novo.', 'auth/network-request-failed': 'Sem conexão. Verifique a internet e tente de novo.',
     'auth/unauthorized-domain': 'Este endereço ainda não foi autorizado para login.', 'auth/operation-not-allowed': 'Este tipo de login ainda não foi ativado.', 'auth/admin-restricted-operation': 'O cadastro por e-mail está desativado neste momento.',
     'auth/password-does-not-meet-requirements': 'A senha não atende às regras de segurança. Use letras maiúsculas e minúsculas, número e símbolo.', 'auth/configuration-not-found': 'O login por e-mail ainda não foi configurado.',
+    entreConta: 'Entre na sua conta para continuar.', pagamentoIndisponivel: 'O pagamento está indisponível no momento. Tente de novo em instantes.',
     padrao: 'Não foi possível concluir. Tente de novo.', compraApp: 'A compra ainda não está disponível neste aplicativo.',
   } as Record<string, string>,
   naoEncontrada: { titulo: 'Página não encontrada', texto: 'O endereço não existe ou mudou de lugar.', inicio: 'Voltar ao início', cursos: 'Ver cursos' },

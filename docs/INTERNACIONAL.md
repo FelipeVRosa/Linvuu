@@ -38,3 +38,8 @@ Pix só no Brasil. Fora, cartão. O provedor de pagamento deve ser escolhido já
   4. Rotas e busca: `/en/…` e `/es/…`, `hreflang` e sitemap por idioma.
   5. Revisão por nativos de inglês e espanhol (tradução automática só como rascunho).
 - **Áudio:** não muda, porque o áudio é só do idioma estudado.
+
+## Estado em outubro de 2026 (PR #220)
+- Site em três idiomas no ar: `/` (português), `/en` (inglês), `/es` (espanhol). Textos em `src/i18n/`.
+- Tradução das aulas: `node scripts/i18n-aulas.mjs extrair <curso> <en|es> <aula> <pasta>` lista os textos de explicação; a tradução volta com `juntar` e `npm run aulas` gera as sessões traduzidas. `node scripts/i18n-aulas.mjs estado` mostra o progresso.
+- Revisão completa e próximos passos: `docs/REVISAO-GERAL.md`.

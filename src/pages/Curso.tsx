@@ -5,7 +5,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
 import { OutroIdioma } from '../components/OutroIdioma';
 import { SITE_URL } from '../config/site';
-import { LOCALE, urlEm, useT } from '../i18n';
+import { LOCALE, LOCALES, urlEm, useT } from '../i18n';
 import { gratis } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
@@ -15,7 +15,7 @@ export default function Curso() {
   const [params] = useSearchParams();
   const t = useT();
   const curso = getCurso(id);
-  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao);
+  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo));
   if (!curso) return <NaoEncontrada />;
   if (curso.id === 'br') return LOCALE.codigo === 'pt-BR' ? <OutroIdioma para="en" /> : <CursoBr />;
 

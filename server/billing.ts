@@ -43,16 +43,43 @@ async function preco(): Promise<string> {
   return (precoCache = p.id);
 }
 
-async function cliente(u: { uid: string; email?: string }): Promise<string> {
-  const r = await stripe!.customers.search({ query: `metadata['uid']:'${u.uid}'` });
-  if (r.data[0]) return r.data[0].id;
-  return (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } })).id;
+// A busca de clientes do Stripe é «eventualmente consistente»: um cliente recém-criado pode levar até um minuto para
+// aparecer. Sem memória, dois cliques seguidos em «Assinar» criavam dois clientes para a mesma pessoa. O id fica guardado
+// por uid (e o pedido em andamento é compartilhado), e a busca só acontece uma vez por processo.
+const clientes = new Map<string, Promise<string>>();
+function cliente(u: { uid: string; email?: string }): Promise<string> {
+  const guardado = clientes.get(u.uid);
+  if (guardado) return guardado;
+  const p = (async () => {
+    const r = await stripe!.customers.search({ query: `metadata['uid']:'${u.uid}'` });
+    if (r.data[0]) return r.data[0].id;
+    return (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
+  })();
+  clientes.set(u.uid, p);
+  p.catch(() => clientes.delete(u.uid));
+  return p;
 }
 
 type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | null; status: string | null; cancelaEm: number | null; ate: number | null };
 
+// Cada sessão paga e cada áudio pago perguntam se o acesso está ativo. Sem memória, eram 3 chamadas ao Stripe por arquivo
+// de áudio (dezenas por sessão), o que estoura o limite da API e deixa o site lento. A resposta vale 60 segundos por pessoa.
+const ACESSO_MS = 60_000;
+const acessos = new Map<string, { ate: number; p: Promise<Acesso> }>();
+setInterval(() => { const t = Date.now(); for (const [k, v] of acessos) if (v.ate < t) acessos.delete(k); }, 5 * 60_000).unref();
+/** Acesso com memória curta; `renovar` ignora a memória (tela de assinatura e volta do pagamento). */
+function acesso(u: { uid: string; email?: string }, renovar = false): Promise<Acesso> {
+  const t = Date.now();
+  const m = acessos.get(u.uid);
+  if (m && m.ate > t && !renovar) return m.p;
+  const p = consultarAcesso(u);
+  acessos.set(u.uid, { ate: t + ACESSO_MS, p });
+  p.catch(() => acessos.delete(u.uid));
+  return p;
+}
+
 /** Acesso = assinatura mensal ativa OU pacote de 3 meses pago (Pix e boleto só contam depois de pagos). Stripe é a fonte da verdade. */
-async function acesso(u: { uid: string; email?: string }): Promise<Acesso> {
+async function consultarAcesso(u: { uid: string; email?: string }): Promise<Acesso> {
   const c = await cliente(u);
   const [subs, sessoes] = await Promise.all([
     stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 }),
@@ -138,7 +165,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/billing/status', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
     try {
-      res.json(await acesso(u));
+      res.set('Cache-Control', 'private, no-store').json(await acesso(u, true));
     } catch (e) { console.error('billing/status', e); res.status(500).json({ error: 'Não foi possível consultar a assinatura.' }); }
   });
 
@@ -152,7 +179,10 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
       const anual = plano === 'anual';
       const pacote = plano === 'trimestral' || pix || anual;
       const c = await cliente(u);
-      const comum = { customer: c, locale: 'pt-BR' as const, success_url: `${base}/assinatura?ok=1`, cancel_url: `${base}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
+      // idioma do site (pt, en, es): o checkout do Stripe e a volta para o site ficam no mesmo idioma
+      const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
+      const prefixo = idioma ? `/${idioma}` : '';
+      const comum = { customer: c, locale: (idioma ?? 'pt-BR') as 'pt-BR' | 'en' | 'es', success_url: `${base}${prefixo}/assinatura?ok=1`, cancel_url: `${base}${prefixo}/assinatura`, client_reference_id: u.uid, allow_promotion_codes: true };
       const s = pix
         ? await stripe!.checkout.sessions.create({
             ...comum, mode: 'payment', allowed_payment_method_types: ['pix'],
@@ -181,7 +211,8 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.post('/api/billing/portal', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
     try {
-      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), return_url: `${urlBase()}/assinatura` });
+      const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
+      const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase()}${idioma ? `/${idioma}` : ''}/assinatura` });
       res.json({ url: s.url });
     } catch (e) { console.error('billing/portal', e); res.status(500).json({ error: 'Não foi possível abrir o portal.' }); }
   });
@@ -193,7 +224,8 @@ export function registrarLivroProtegido(app: Express) {
     if (!cobrancaConfigurada()) { res.status(503).json({ error: 'Indisponível no momento.' }); return; }
     const u = await usuario(req);
     if (!u) { res.status(401).json({ error: 'Entre na sua conta.' }); return; }
-    const a = await acesso(u);
+    let a: Acesso;
+    try { a = await acesso(u); } catch (e) { console.error('livro', e); res.status(503).json({ error: 'Indisponível no momento.' }); return; }
     if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('X-Robots-Tag', 'noindex, nofollow');

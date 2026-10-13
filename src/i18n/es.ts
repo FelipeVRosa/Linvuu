@@ -12,7 +12,7 @@ export const es: Dicionario = {
     anterior: 'anterior', proximo: 'siguiente', verMais: 'Ver más', verMenos: 'Ver menos', aguarde: 'Espera…', abrindo: 'Abriendo…',
     paginaInicial: 'Linvuu, página de inicio', menu: 'Menú', principal: 'Principal',
   },
-  barra: { novidades: 'Recibir novedades', duvidas: 'Preguntas', contato: 'Contacto', idioma: 'Idioma del sitio y de las explicaciones' },
+  barra: { novidades: 'Recibir novedades', duvidas: 'Preguntas', contato: 'Contacto', idioma: 'Idioma del sitio y de las explicaciones', atalhos: 'Accesos rápidos' },
   nav: { cursos: 'Cursos', gramatica: 'Gramática', metodo: 'Método', preco: 'Precio', precoAssinatura: 'Precio y suscripción', duvidas: 'Preguntas', avaliacoes: 'Opiniones', todos: 'Todos los cursos', entrar: 'Entrar', comecar: 'Empezar gratis', assinatura: 'Suscripción', sair: 'Salir', contaDe: (n: string) => `Cuenta de ${n}` },
   hero: {
     kicker: 'Idiomas explicados en español',
@@ -164,6 +164,7 @@ export const es: Dicionario = {
     'auth/popup-blocked': 'El navegador bloqueó la ventana de Google. Permite las ventanas emergentes y vuelve a intentarlo.', 'auth/network-request-failed': 'Sin conexión. Revisa internet y vuelve a intentarlo.',
     'auth/unauthorized-domain': 'Esta dirección todavía no está autorizada para iniciar sesión.', 'auth/operation-not-allowed': 'Este tipo de inicio de sesión todavía no está activado.', 'auth/admin-restricted-operation': 'El registro por correo está desactivado en este momento.',
     'auth/password-does-not-meet-requirements': 'La contraseña no cumple las reglas de seguridad. Usa mayúsculas y minúsculas, un número y un símbolo.', 'auth/configuration-not-found': 'El inicio de sesión por correo todavía no está configurado.',
+    entreConta: 'Entra en tu cuenta para continuar.', pagamentoIndisponivel: 'El pago no está disponible en este momento. Inténtalo de nuevo en unos instantes.',
     padrao: 'No pudimos completarlo. Inténtalo de nuevo.', compraApp: 'La compra todavía no está disponible en esta aplicación.',
   },
   naoEncontrada: { titulo: 'Página no encontrada', texto: 'Esta dirección no existe o ha cambiado de lugar.', inicio: 'Volver al inicio', cursos: 'Ver cursos' },

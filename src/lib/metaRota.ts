@@ -8,9 +8,9 @@ import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
   cursos: CursoMeta[];
-  indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string> }> }>;
+  indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
-export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[]; locale?: Locale };
+export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[]; locale?: Locale; /** idiomas em que a página existe (hreflang); padrão: os três */ em?: Locale['codigo'][] };
 
 export function carregarDadosMeta(raiz: string): DadosMeta | null {
   try {
@@ -20,7 +20,7 @@ export function carregarDadosMeta(raiz: string): DadosMeta | null {
     for (const l of ['en', 'es']) {
       const f = path.join(raiz, 'content', `indice.${l}.json`);
       if (!fs.existsSync(f)) continue;
-      for (const [id, t] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')) as Record<string, { g: Record<string, string> }>)) if (indice[id]) (indice[id].tr ??= {})[l] = t;
+      for (const [id, t] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')) as Record<string, { g: Record<string, string>; aulas?: number[] }>)) if (indice[id]) (indice[id].tr ??= {})[l] = t;
     }
     return { cursos, indice };
   } catch {
@@ -70,7 +70,6 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
     '/cursos': { titulo: tx.cursos },
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
-    '/brazilian-portuguese': { titulo: tx.pt, descricao: tx.ptD },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/assinatura': { titulo: tx.assinatura, semIndice: true },
@@ -86,12 +85,22 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const c = curso(m[1]);
     if (!c) return naoEncontrada(p, loc);
     const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
+    const aulas = d.indice[c.id]?.grupos?.length ?? 0;
     return {
       status: 200, caminho: p, titulo: tx.curso(c.nome), descricao: c.descricao,
       // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca
       semIndice: c.status === 'em-breve' || c.id === loc.cursoOculto || undefined,
+      em: LOCALES.filter((l) => l.cursoOculto !== c.id).map((l) => l.codigo),
       jsonld: [
-        { '@context': 'https://schema.org', '@type': 'Course', name: tx.cursoJ(c.nome), description: c.descricao, inLanguage: loc.codigo, url, provider: { '@type': 'Organization', name: 'Linvuu', url: SITE } },
+        // Dados de curso do Google (Course info): provedor, oferta (2 aulas grátis, depois assinatura) e instância online no ritmo do aluno.
+        {
+          '@context': 'https://schema.org', '@type': 'Course', name: tx.cursoJ(c.nome), description: c.descricao, inLanguage: loc.codigo, url,
+          teaches: c.id === 'br' ? 'Brazilian Portuguese' : c.nome, educationalLevel: 'A1–B1 (CEFR)', isAccessibleForFree: false,
+          ...(aulas ? { coursePrerequisites: 'None', timeRequired: `PT${aulas * 2}H` } : {}),
+          provider: { '@type': 'Organization', name: 'Linvuu', sameAs: SITE },
+          offers: [{ '@type': 'Offer', category: 'Subscription', price: 139, priceCurrency: 'BRL', url: `${SITE}${loc.prefixo}/assinatura` }],
+          hasCourseInstance: [{ '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: 'PT30M', courseSchedule: { '@type': 'Schedule', repeatFrequency: 'Daily', repeatCount: aulas * 4 } }],
+        },
         { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${SITE}${loc.prefixo}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
       ],
     };
@@ -105,7 +114,10 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const g = d.indice[m[1]].grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
     if (!g) return { status: 200, caminho: p, titulo: tx.sessao(n, c.nome), descricao: `${c.nome}, ${tx.sessao(n, c.nome)}.` };
     const t = tituloAula(m[1], g.aula, g.titulo);
-    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: c.id === loc.cursoOculto || undefined };
+    // A sessão só existe de verdade num idioma quando a explicação está nele: o original ou a tradução daquela aula.
+    // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
+    const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
+    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo) };
   }
   m = p.match(/^\/gramatica(?:\/([^/]+))?$/);
   if (m) {
@@ -140,7 +152,8 @@ export function aplicarMeta(html: string, m: MetaRota, site: string): string {
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
   // uma versão por idioma + x-default (português)
-  const alternativos = [...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), `<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`].join('\n    ');
+  const em = m.semIndice && !m.em ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
+  const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), ...(em.some((l) => l.codigo === 'pt-BR') ? [`<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`] : [])].join('\n    ') : '';
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');

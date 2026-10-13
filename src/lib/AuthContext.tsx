@@ -1,6 +1,7 @@
 import { createContext, ReactNode, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { authConfigurado, carregarAuth } from './firebase';
 import { garantirPerfil } from './perfil';
+import { comPrefixo } from '../i18n';
 
 export interface Usuario { uid: string; nome: string; email: string; foto: string | null }
 
@@ -76,7 +77,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     },
     recuperarSenha: async (email) => {
       const { auth, m } = await carregarAuth();
-      await m.sendPasswordResetEmail(auth, email.trim());
+      // depois de criar a nova senha, o link do e-mail traz a pessoa de volta para «Entrar», no idioma em que ela estava
+      await m.sendPasswordResetEmail(auth, email.trim(), { url: `${window.location.origin}${comPrefixo('/entrar')}` }).catch((e) => {
+        // domínio fora da lista autorizada do Firebase: manda o e-mail sem o link de volta
+        if (/continue-uri/.test((e as { code?: string })?.code ?? '')) return m.sendPasswordResetEmail(auth, email.trim());
+        throw e;
+      });
     },
     sair: async () => {
       const { auth, m } = await carregarAuth();

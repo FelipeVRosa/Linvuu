@@ -78,8 +78,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-variation-settings:var(--fraunc
 .lv-grade{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha-forte);border-left:1px solid var(--linha-forte)}
 .lv-card{display:flex;flex-direction:column;gap:6px;padding:28px;background:var(--papel);color:var(--grafite);text-decoration:none;border-right:1px solid var(--linha-forte);border-bottom:1px solid var(--linha-forte);border-radius:0;box-shadow:none;transition:background .15s}
 .lv-card:hover{background:var(--papel-claro)}
-.lv-card:hover h3{text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:6px;text-decoration-thickness:2px}
-.lv-card h3{font-size:28px;margin:10px 0 0}
+.lv-card:hover .lv-card-t{text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:6px;text-decoration-thickness:2px}
+.lv-card .lv-card-t{font-size:28px;line-height:1.15;margin:10px 0 0}
 .lv-nativo{font-size:17px;color:var(--grafite-65);min-height:1.4em}
 .lv-card p{margin:10px 0 18px;font-size:15px;line-height:1.5;color:var(--grafite-80);flex:1;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .lv-card-meta{font-size:13px;color:var(--grafite-65);border-top:1px solid var(--linha);padding-top:12px}

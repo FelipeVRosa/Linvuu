@@ -23,7 +23,9 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
   const { usuario, configurado, entrarComGoogle, entrarComEmail, criarConta, recuperarSenha } = useAuth();
   const nav = useNavigate();
   const [params] = useSearchParams();
-  const destino = params.get('proximo')?.startsWith('/') ? params.get('proximo')! : '/';
+  // Só caminhos internos (evita redirecionar para outro site com ?proximo=//site-falso.com).
+  const pedido = params.get('proximo') ?? '';
+  const destino = /^\/(?![\/\\])/.test(pedido) ? pedido : '/';
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');

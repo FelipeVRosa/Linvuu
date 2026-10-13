@@ -1,4 +1,4 @@
-import { T } from '../i18n';
+import { LOCALE, T } from '../i18n';
 import { useCallback, useEffect, useState } from 'react';
 import { useAuth } from './AuthContext';
 import { carregarAuth } from './firebase';
@@ -15,14 +15,16 @@ async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
   const token = await auth.currentUser?.getIdToken();
   const r = await fetch(api(`/api/billing/${caminho}`), { method: metodo, headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(corpo ? { 'Content-Type': 'application/json' } : {}) }, body: corpo ? JSON.stringify(corpo) : undefined });
   const j = await r.json().catch(() => ({}));
-  if (!r.ok) throw new Error(j.error || 'Erro');
+  // a mensagem sai no idioma do site (o servidor responde em português)
+  if (!r.ok) throw new Error(r.status === 401 ? T.erros.entreConta : r.status === 503 ? T.erros.pagamentoIndisponivel : r.status === 429 ? T.erros['auth/too-many-requests'] : T.erros.padrao);
   return j;
 }
 
 export type Plano = 'mensal' | 'trimestral' | 'trimestral-pix' | 'anual';
 export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
   if (!compraNoAppDisponivel()) throw new Error(T.erros.compraApp);
-  const j = await chamar(tipo, 'POST', plano ? { plano } : undefined);
+  const idioma = LOCALE.explicacao === 'pt' ? undefined : LOCALE.explicacao;
+  const j = await chamar(tipo, 'POST', { ...(plano ? { plano } : {}), ...(idioma ? { idioma } : {}) });
   if (j.url) window.location.href = j.url;
 }
 

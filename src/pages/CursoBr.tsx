@@ -11,7 +11,7 @@ import { LOCALE, useT } from '../i18n';
 export default function CursoBr() {
   const t = useT();
   const c = t.cursoBr;
-  usePageTitle(c.tituloSeo, c.descSeo);
+  usePageTitle(c.tituloSeo, c.descSeo, ['en', 'es']);
   const grupos = gruposDoCurso('br');
   const stats = statusDoCurso('br');
   const cob = coberturaDoCurso('br');

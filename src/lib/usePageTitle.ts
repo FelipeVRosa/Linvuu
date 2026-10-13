@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
-import { caminhoEm } from '../i18n/locales';
+import { caminhoEm, type CodigoLocale } from '../i18n/locales';
 
 const meta = (sel: string, attr: string, valor: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(sel);
@@ -15,8 +15,12 @@ const link = (rel: string, href: string, hreflang?: string) => {
   el.href = href;
 };
 
-/** Título, descrição, canonical, versões em outros idiomas (hreflang) e Open Graph de cada página. */
-export function usePageTitle(titulo?: string, descricao?: string) {
+/**
+ * Título, descrição, canonical, versões em outros idiomas (hreflang) e Open Graph de cada página.
+ * `idiomas`: em quais idiomas a página existe (padrão: os três). As sessões passam [] porque a versão traduzida depende da
+ * aula; para elas, as alternativas ficam no sitemap.xml.
+ */
+export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es']) {
   const t = useT();
   useEffect(() => {
     const tit = titulo ? `${titulo} · Linvuu` : t.meta.titulo;
@@ -29,7 +33,10 @@ export function usePageTitle(titulo?: string, descricao?: string) {
     meta('meta[property="og:url"]', 'property=og:url', SITE_URL + caminho);
     meta('meta[property="og:locale"]', 'property=og:locale', LOCALE.og);
     link('canonical', SITE_URL + caminho);
-    for (const l of LOCALES) link('alternate', SITE_URL + caminhoEm(l.codigo, caminho), l.codigo);
-    link('alternate', SITE_URL + caminhoEm('pt-BR', caminho), 'x-default');
-  }, [titulo, descricao, t]);
+    document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+    if (idiomas.length > 1) {
+      for (const l of LOCALES.filter((x) => idiomas.includes(x.codigo))) link('alternate', SITE_URL + caminhoEm(l.codigo, caminho), l.codigo);
+      if (idiomas.includes('pt-BR')) link('alternate', SITE_URL + caminhoEm('pt-BR', caminho), 'x-default');
+    }
+  }, [titulo, descricao, t, idiomas.join()]);
 }

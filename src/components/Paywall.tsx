@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Botao, BotaoLink } from './Button';
 import { useAuth } from '../lib/AuthContext';
 import { abrir } from '../lib/assinatura';
@@ -10,6 +10,7 @@ import type { Plano } from '../lib/assinatura';
 export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
+  const { pathname } = useLocation(); // caminho sem o prefixo de idioma (/en, /es)
   const [ocupado, setOcupado] = useState(false);
   const [erro, setErro] = useState('');
   const assinar = async (plano: Plano) => {
@@ -35,8 +36,8 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
         </>
       ) : (
         <div className="lv-hero-botoes">
-          <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(location.pathname)}`} variante="primary">{T.criar}</BotaoLink>
-          <BotaoLink to={`/entrar?proximo=${encodeURIComponent(location.pathname)}`} variante="ghost">{T.jaTenho}</BotaoLink>
+          <BotaoLink to={`/cadastro?proximo=${encodeURIComponent(pathname)}`} variante="primary">{T.criar}</BotaoLink>
+          <BotaoLink to={`/entrar?proximo=${encodeURIComponent(pathname)}`} variante="ghost">{T.jaTenho}</BotaoLink>
         </div>
       )}
       {erro && <p className="erro" role="alert">{erro}</p>}

@@ -38,7 +38,7 @@ export default function Cursos() {
       <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>
       <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
       {lista.length > 0
-        ? <div className="curso-grid">{lista.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
+        ? <div className="curso-grid">{lista.map((c) => <CursoCard key={c.id} curso={c} nivel={2} />)}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
     </div>
   );

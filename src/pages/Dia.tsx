@@ -46,7 +46,7 @@ export default function Dia() {
     });
   }, [valido, curso, dia, bloqueado, decidindo]);
 
-  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined);
+  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined, undefined, []);
   if (!valido) return <NaoEncontrada />;
   if (curso!.id === 'br' && LOCALE.codigo === 'pt-BR') return <OutroIdioma para="en" />;
 

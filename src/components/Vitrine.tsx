@@ -21,9 +21,10 @@ export function Vitrine() {
                 {l.subtitulo && <p>{l.subtitulo}</p>}
               </>
             );
-            if (l.link?.startsWith('/')) return <Link key={l.titulo} className="livro" role="listitem" to={l.link}>{corpo}</Link>;
+            // o item da lista é o <div>; o link fica dentro (role="listitem" não é permitido em <a>)
+            if (l.link?.startsWith('/')) return <div key={l.titulo} role="listitem"><Link className="livro" to={l.link}>{corpo}</Link></div>;
             return l.link
-              ? <a key={l.titulo} className="livro" role="listitem" href={l.link} target="_blank" rel="noopener noreferrer">{corpo}</a>
+              ? <div key={l.titulo} role="listitem"><a className="livro" href={l.link} target="_blank" rel="noopener noreferrer">{corpo}</a></div>
               : <div key={l.titulo} className="livro" role="listitem">{corpo}</div>;
           })
         : Array.from({ length: VAZIOS }, (_, i) => (

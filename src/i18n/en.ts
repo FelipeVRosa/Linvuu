@@ -12,7 +12,7 @@ export const en: Dicionario = {
     anterior: 'previous', proximo: 'next', verMais: 'Read more', verMenos: 'Show less', aguarde: 'Please wait…', abrindo: 'Opening…',
     paginaInicial: 'Linvuu, home page', menu: 'Menu', principal: 'Main',
   },
-  barra: { novidades: 'Get updates', duvidas: 'FAQ', contato: 'Contact', idioma: 'Language of the site and of the explanations' },
+  barra: { novidades: 'Get updates', duvidas: 'FAQ', contato: 'Contact', idioma: 'Language of the site and of the explanations', atalhos: 'Shortcuts' },
   nav: { cursos: 'Courses', gramatica: 'Grammar', metodo: 'Method', preco: 'Pricing', precoAssinatura: 'Pricing and subscription', duvidas: 'FAQ', avaliacoes: 'Reviews', todos: 'All courses', entrar: 'Sign in', comecar: 'Start free', assinatura: 'Subscription', sair: 'Sign out', contaDe: (n: string) => `${n}'s account` },
   hero: {
     kicker: 'Languages explained in English',
@@ -164,6 +164,7 @@ export const en: Dicionario = {
     'auth/popup-blocked': 'Your browser blocked the Google window. Allow pop-ups and try again.', 'auth/network-request-failed': 'No connection. Check your internet and try again.',
     'auth/unauthorized-domain': 'This address has not been authorised for sign-in yet.', 'auth/operation-not-allowed': 'This sign-in method has not been enabled yet.', 'auth/admin-restricted-operation': 'Sign-up by e-mail is disabled right now.',
     'auth/password-does-not-meet-requirements': 'The password does not meet the security rules. Use upper and lower case letters, a number and a symbol.', 'auth/configuration-not-found': 'E-mail sign-in has not been configured yet.',
+    entreConta: 'Sign in to your account to continue.', pagamentoIndisponivel: 'Payments are unavailable right now. Try again in a moment.',
     padrao: 'We could not finish that. Try again.', compraApp: 'Purchases are not available in this app yet.',
   },
   naoEncontrada: { titulo: 'Page not found', texto: 'This address does not exist or has moved.', inicio: 'Back to the home page', cursos: 'See courses' },

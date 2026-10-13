@@ -171,7 +171,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
 
 /** Explicações em «PASSO 1: … PASSO 2: …» viram uma lista numerada; as demais ficam como parágrafo. */
 function Explicacao({ texto }: { texto: string }) {
-  const partes = texto.split(/\s*(?:PASSO|STEP) \d+:\s*/);
+  const partes = texto.split(/\s*(?:PASSO|PASO|STEP) \d+:\s*/);
   if (partes.length < 3) return <p>{texto}</p>;
   const intro = partes[0].trim();
   return (

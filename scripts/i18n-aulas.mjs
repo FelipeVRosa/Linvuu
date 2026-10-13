@@ -136,7 +136,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (src.length !== tr.length) { console.error(`tamanhos diferentes: ${src.length} × ${tr.length}`); process.exit(1); }
     const arq = path.join(dirI18n(id, l), `aula-${pad(n)}.json`);
     const mapa = lerJson(arq, {});
-    src.forEach((t, i) => { if (typeof tr[i] === 'string' && tr[i] !== t) mapa[t] = tr[i]; });
+    src.forEach((t, i) => { if (typeof tr[i] === 'string') mapa[t] = tr[i]; });
     escrever(arq, mapa);
     const { faltam } = traduzirAula(aula, id, l);
     console.log(`${Object.keys(mapa).length} textos em ${path.relative(raiz, arq)}; sem tradução: ${faltam.length}${faltam.length ? `\n  ${faltam.slice(0, 8).join('\n  ')}` : ''}`);

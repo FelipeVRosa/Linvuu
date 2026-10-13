@@ -38,17 +38,17 @@ export default aula({
       alfabeto(10, [
         ['Part 1 — A to G', [
           ['A', 'a', 'name: «á» (like «ah»)', '/a/', 'amigo', 'friend', 'á'], ['B', 'b', 'name: «bê» (like «bay»)', '/be/', 'bom', 'good', 'bê'], ['C', 'c', 'name: «cê» (like «say»)', '/se/', 'casa', 'house', 'cê'],
-          ['D', 'd', 'name: «dê» (like «day»)', '/de/', 'dia', 'day', 'dê'], ['E', 'e', 'name: «é» (like «eh»)', '/ɛ/', 'escola', 'school', 'é'], ['F', 'f', 'name: «éfe» (EH-fee)', '/ˈɛfi/', 'família', 'family', 'éfe'],
+          ['D', 'd', 'name: «dê» (like «day»)', '/de/', 'dia', 'day', 'dê'], ['E', 'e', 'name: «é» (like «eh»)', '/ɛ/', 'escola', 'school', 'é'], ['F', 'f', 'name: «efe» (EH-fee, open e)', '/ˈɛfi/', 'família', 'family', 'éfe'],
           ['G', 'g', 'name: «gê» (like «zhay»)', '/ʒe/', 'gato', 'cat', 'gê'],
         ]],
         ['Part 2 — H to N', [
           ['H', 'h', 'name: «agá» (ah-GAH); the letter is silent', '/aˈga/', 'hotel', 'hotel', 'agá'], ['I', 'i', 'name: «i» (like «ee»)', '/i/', 'ilha', 'island', 'i'], ['J', 'j', 'name: «jota» (ZHOH-tah)', '/ˈʒɔta/', 'janeiro', 'January', 'jota'],
-          ['K', 'k', 'name: «cá» (kah); only in foreign words', '/ka/', 'quilo', 'kilo (written with qu)', 'cá'], ['L', 'l', 'name: «éle» (EH-lee)', '/ˈɛli/', 'livro', 'book', 'éle'], ['M', 'm', 'name: «ême» (EH~-mee)', '/ˈẽmi/', 'mãe', 'mother', 'ême'],
+          ['K', 'k', 'name: «cá» (kah); only in foreign words and abbreviations', '/ka/', 'kiwi', 'kiwi', 'cá'], ['L', 'l', 'name: «ele» (EH-lee, open e)', '/ˈɛli/', 'livro', 'book', 'éle'], ['M', 'm', 'name: «eme» (EH~-mee)', '/ˈẽmi/', 'mãe', 'mother', 'ême'],
           ['N', 'n', 'name: «ene» (EH-nee)', '/ˈɛni/', 'nome', 'name', 'ene'],
         ]],
         ['Part 3 — O to V', [
           ['O', 'o', 'name: «ó» (like «aw»)', '/ɔ/', 'obrigado', 'thank you (man)', 'ó'], ['P', 'p', 'name: «pê» (like «pay»)', '/pe/', 'pão', 'bread', 'pê'], ['Q', 'q', 'name: «quê» (like «kay»); always followed by u', '/ke/', 'queijo', 'cheese', 'quê'],
-          ['R', 'r', 'name: «érre» (EH-hee)', '/ˈɛʁi/', 'rua', 'street', 'érre'], ['S', 's', 'name: «ésse» (EH-see)', '/ˈɛsi/', 'sol', 'sun', 'ésse'], ['T', 't', 'name: «tê» (like «tay»)', '/te/', 'tarde', 'afternoon', 'tê'],
+          ['R', 'r', 'name: «erre» (EH-hee, open e)', '/ˈɛʁi/', 'rua', 'street', 'érre'], ['S', 's', 'name: «esse» (EH-see, open e)', '/ˈɛsi/', 'sol', 'sun', 'ésse'], ['T', 't', 'name: «tê» (like «tay»)', '/te/', 'tarde', 'afternoon', 'tê'],
           ['U', 'u', 'name: «u» (like «oo»)', '/u/', 'uva', 'grape', 'u'], ['V', 'v', 'name: «vê» (like «vay»)', '/ve/', 'vinho', 'wine', 'vê'],
         ]],
         ['Part 4 — W, X, Y, Z', [
@@ -56,7 +56,7 @@ export default aula({
           ['Y', 'y', 'name: «ípsilon» (EEP-see-lon); foreign words', '/ˈipsilõ/', 'yoga', 'yoga', 'ípsilon'], ['Z', 'z', 'name: «zê» (like «zay»)', '/ze/', 'zero', 'zero', 'zê'],
         ]],
       ]),
-      gramatica(8, 'Spelling out loud and the accented letters', "STEP 1: in Brazil people spell names constantly: on the phone, at the bank, at a hotel, for a delivery. You say the letter names above, in order. STEP 2: a few letters have a different name from English: «e» is «é», «g» is «gê» (ZHAY), «h» is «agá», «j» is «jota», «r» is «érre», «x» is «xis» and «y» is «ípsilon». STEP 3: Portuguese also writes letters with marks, and each mark has a job: «á é í ó ú» show the stressed syllable; «â ê ô» show the stressed syllable and a closed sound; «ã õ» show a nasal vowel; «à» appears only in a contraction (you will see it later); «ç» (cê cedilha) is the sound «s» before a, o, u: «obrigado» is no help, but «açaí» is. STEP 4: to give your e-mail you say «arroba» for @ and «ponto» for the dot: «ana ponto silva arroba exemplo ponto com».", {
+      gramatica(8, 'Spelling out loud and the accented letters', "STEP 1: in Brazil people spell names constantly: on the phone, at the bank, at a hotel, for a delivery. You say the letter names above, in order. STEP 2: a few letters have a different name from English: «e» is «é», «g» is «gê» (ZHAY), «h» is «agá», «j» is «jota», «r» is «erre», «x» is «xis» and «y» is «ípsilon». STEP 3: Portuguese also writes letters with marks, and each mark has a job: «á é í ó ú» show the stressed syllable; «â ê ô» show the stressed syllable and a closed sound; «ã õ» show a nasal vowel; «à» appears only in a contraction (you will see it later); «ç» (cê cedilha) sounds like «s» and only appears before a, o, u: «açaí», «coração», «açúcar». STEP 4: to give your e-mail you say «arroba» for @ and «ponto» for the dot: «ana ponto silva arroba exemplo ponto com».", {
         tag: 'Pronunciation',
         comparacao: "English spelling often hides the sound; Portuguese spelling is far more regular. Once you know the rules (next sessions), you can read almost any word aloud correctly. Mind the letter names, which you will hear all the time: «g» is not «gee», «e» is not «ee», «i» is not «eye».",
         tabela: [
@@ -68,7 +68,7 @@ export default aula({
         ],
         erros: [['saying «jee» for the letter g', 'gê', 'The Portuguese «g» is named «zhay»: «gê».'], ['reading «h» as in «hotel» in English', '(silent)', '«Hotel» and «hoje» start with a silent h. Say «oh-TEH-oo» and «OH-zhee».'], ['saying «ee» for the letter e', 'é', 'The name of the letter e is «é» (eh).']],
       }),
-      producao(8, 'Spell your first name and your last name aloud with the Portuguese letter names. Then spell the word «Brasil» (bê, érre, á, ésse, i, éle). Finish with: «Meu nome é… (your name). Obrigado/Obrigada.»'),
+      producao(8, 'Spell your first name and your last name aloud with the Portuguese letter names. Then spell the word «Brasil» (bê, erre, á, esse, i, ele). Finish with: «Meu nome é… (your name). Obrigado/Obrigada.»'),
     ]),
     sessao('S3', 'Vowels, nasal sounds and stress', [
       revisao(3, 'Spell your name again, then spell «obrigado», «tchau» and «bom dia» with the Portuguese letter names.'),
@@ -79,9 +79,9 @@ export default aula({
         ['nenhum', 'neh-NYOO~', 'none, not any', ''], ['dia', 'DJEE-ah', 'day', ''], ['noite', 'NOY-tchee', 'night', ''], ['Brasil', 'brah-ZEE-oo', 'Brazil', ''],
         ['hoje', 'OH-zhee', 'today', ''], ['xícara', 'SHEE-kah-rah', 'cup', ''],
       ]),
-      gramatica(9, 'The nasal vowels and where the stress falls', "STEP 1: Portuguese has five oral vowels (a, e, i, o, u), pronounced clearly and without the English «glide»: «a» as in «father», «i» as in «see». STEP 2: the vowels also come in a nasal version. The air goes through the nose and the vowel gets a «nasal» color, without a clear «n» or «m» sound afterwards. You write them with a tilde («ã», «õ») or with «m» or «n» after the vowel: «mãe, pão, bom, sim, bem, um, onde». STEP 3: stress. If a word has an accent mark, stress that syllable: «café, você, último». Without a mark, the stress is on the last syllable when the word ends in «r, l, z, i, u» (or a nasal ending): «falar, Brasil, feliz, aqui». In all other words it is on the second to last syllable: «casa, amigo, obrigado, tarde». STEP 4: unstressed vowels at the end of a word are weak: the final «e» sounds like a short «ee» («noite» = NOY-tchee) and the final «o» sounds like «oo» («obrigado» ends in «doo»).", {
+      gramatica(9, 'The nasal vowels and where the stress falls', "STEP 1: Portuguese has five oral vowels (a, e, i, o, u), pronounced clearly and without the English «glide»: «a» as in «father», «i» as in «see». STEP 2: the vowels also come in a nasal version. The air goes through the nose and the vowel gets a «nasal» color, without a clear «n» or «m» sound afterwards. You write them with a tilde («ã», «õ») or with «m» or «n» after the vowel: «mãe, pão, bom, sim, bem, um, onde». STEP 3: stress. If a word has an accent mark, stress that syllable: «café, você, último». Without a mark, the stress is on the last syllable when the word ends in «r, l, z, i, u» or in «im, om, um, ã, ão»: «falar, Brasil, feliz, aqui, jardim, irmã». In all other words it is on the second to last syllable, including words in «-em» and «-ens»: «casa, amigo, obrigado, tarde, homem, viagem». STEP 4: unstressed vowels at the end of a word are weak: the final «e» sounds like a short «ee» («noite» = NOY-tchee) and the final «o» sounds like «oo» («obrigado» ends in «doo»).", {
         tag: 'Pronunciation',
-        comparacao: "English has nasal vowels only as a side effect of an «n» or «m» in words like «sing» or «can't». Portuguese uses them to tell words apart: «mama» (she breastfeeds) is not «mamã» (mom, oral variant), «pão» (bread) is not «pau» (stick). Do not add an «n» sound at the end of «bom», «sim» and «não»: just nasalize the vowel.",
+        comparacao: "English has nasal vowels only as a side effect of an «n» or «m» in words like «sing» or «can't». Portuguese uses them to tell words apart: «pão» (bread) is not «pau» (stick), «mão» (hand) is not «mau» (bad), «lã» (wool) is not «lá» (there). Do not add an «n» sound at the end of «bom», «sim» and «não»: just nasalize the vowel.",
         tabela: [
           { spelling: 'ã, õ', how_to_say: 'nasal vowel (the tilde is the nasal mark)', examples: 'maçã, limões, mãe' },
           { spelling: 'ão', how_to_say: 'a nasal «ow»', examples: 'pão, coração, não' },

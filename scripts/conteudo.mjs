@@ -3,6 +3,7 @@
 //   node scripts/conteudo.mjs --check  só valida (usado em `npm run content:check`)
 import fs from 'node:fs';
 import path from 'node:path';
+import { LINGUAS, aulaTemTraducao, fonteDe, titulosDe, mapaDa } from './i18n-aulas.mjs';
 
 const root = path.resolve(import.meta.dirname, '..', 'content');
 const trilha = JSON.parse(fs.readFileSync(path.join(root, 'trilha.json'), 'utf8'));
@@ -12,6 +13,8 @@ const STATUS = ['planejada', 'em-producao', 'publicada'];
 const pad = (n) => String(n).padStart(3, '0');
 const erros = [];
 const indice = { cursos: {} };
+// Títulos e aulas traduzidas, um arquivo por idioma (o site carrega só o do idioma escolhido).
+const traducoes = {};
 
 for (const c of cursos.filter((x) => x.area === 'idiomas')) {
   const dir = path.join(root, 'idiomas', c.id);
@@ -48,7 +51,29 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     const m = trilha.dias[d.dia - 1] ?? { titulo: null, objetivo: null };
     if (aula.titulo !== m.titulo || aula.objetivo !== m.objetivo) sobrescritos[d.dia] = { t: aula.titulo, o: aula.objetivo };
   }
+  // Títulos e aulas traduzidas para inglês e espanhol (a trilha mostra os títulos no idioma do site).
+  const tr = {};
+  const dirAulas = path.join(dir, 'aulas');
+  const fontes = fs.existsSync(dirAulas) ? fs.readdirSync(dirAulas).filter((f) => /^aula-\d+\.json$/.test(f)).sort().map((f) => JSON.parse(fs.readFileSync(path.join(dirAulas, f), 'utf8'))) : [];
+  for (const l of LINGUAS) {
+    if (fonteDe(c.id) === l) continue;
+    const titulos = titulosDe(c.id, l);
+    const t = { aulas: [], g: {}, s: {} };
+    for (const a of fontes) {
+      const mapa = aulaTemTraducao(c.id, l, a.aula) ? mapaDa(c.id, l, a.aula) : titulos;
+      if (aulaTemTraducao(c.id, l, a.aula)) t.aulas.push(a.aula);
+      const ta = mapa[a.titulo];
+      if (ta) t.g[a.aula] = ta;
+      a.sessoes.forEach((s, i) => { const ts = mapa[s.titulo]; if (ta || ts) t.s[(a.aula - 1) * 4 + i + 1] = `${ta ?? a.titulo}: ${ts ?? s.titulo}`; });
+    }
+    if (t.aulas.length || Object.keys(t.g).length) tr[l] = t;
+  }
+  for (const [l, t] of Object.entries(tr)) (traducoes[l] ??= {})[c.id] = t;
+  // Amostra da Home: os blocos da 1ª sessão (sem carregar a aula inteira no site).
+  const s1 = fontes[0]?.sessoes[0];
   indice.cursos[c.id] = {
+    fonte: fonteDe(c.id),
+    ...(s1 ? { amostra: { min: s1.duracaoMin, blocos: s1.blocos.map((b) => [b.tipo, b.min]) } } : {}),
     total: status.length,
     publicadas: status.filter((s) => s === 'publicada').length,
     emProducao: status.filter((s) => s === 'em-producao').length,
@@ -58,6 +83,9 @@ for (const c of cursos.filter((x) => x.area === 'idiomas')) {
     grupos: Object.values(grupos),
   };
 }
-if (!check) fs.writeFileSync(path.join(root, 'indice.json'), JSON.stringify(indice) + '\n');
+if (!check) {
+  fs.writeFileSync(path.join(root, 'indice.json'), JSON.stringify(indice) + '\n');
+  for (const l of LINGUAS) fs.writeFileSync(path.join(root, `indice.${l}.json`), JSON.stringify(traducoes[l] ?? {}) + '\n');
+}
 if (erros.length) { console.error(erros.join('\n')); process.exit(1); }
 console.log(`ok: ${Object.keys(indice.cursos).length} idiomas × ${trilha.dias.length} dias`);

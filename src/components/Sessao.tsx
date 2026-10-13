@@ -5,11 +5,16 @@ import { falar, falarLista, parar, temVoz } from '../lib/audio';
 import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 import { somErro } from '../lib/sons';
+import { LOCALE, dicionario } from '../i18n';
+import colunasJson from '../../content/colunas.json';
 
-/** O site explica em português. O campo `en` (e, no futuro, `es`) fica nos dados e só aparece quando houver o seletor de idioma de explicação. */
-const MOSTRAR_INGLES = false;
+const COLUNAS = colunasJson as Record<string, Record<string, string>>;
+
 const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
 const ROTULO_COLUNA: Record<string, string> = { termina_em: 'Termina em', forca_na: 'Força na', masc_sg: 'Masculino singular', fem_sg: 'Feminino singular', masc_pl: 'Masculino plural', fem_pl: 'Feminino plural', yo: 'yo', el_ella_usted: 'él / ella / usted', nosotros: 'nosotros', vosotros: 'vosotros', ellos_ustedes: 'ellos / ellas / ustedes', usa_se: 'Usa-se', infinito: 'Infinito', italiano: 'Em italiano', traducao: 'Tradução', quando: 'Quando', equivale: 'Em português', construcao: 'Construção', observacao: 'Observação', singolare: 'Singular', grafia: 'Grafia', interrogativo: 'Interrogativo', lui_lei: 'lui / lei', cor: 'Cor', se_clausola: 'Cláusula com «se»', consequencia: 'Consequência', precisa: 'Você precisa', use: 'Use', parece: 'Parece', significa: 'Significa', masculino_plural: 'Masculino plural', feminino_plural: 'Feminino plural', positivo: 'Positivo', prep_cui: 'Preposição + cui', ordinal: 'Ordinal', termo: 'Termo', contexto: 'Contexto', recurso: 'Recurso', festa: 'Festa', estrategia: 'Estratégia', passato_prossimo: 'Passato prossimo', com_pronome: 'Com pronome', forca: 'Força', duas_frases: 'Duas frases', com_che: 'Com «che»', suposicao: 'Suposição', original: 'Original', relato: 'Relato', attiva: 'Voz ativa', resposta_igual: 'Resposta (também)', resposta_oposta: 'Resposta (nem)', momento: 'Momento', principal: 'Principal', simultaneo: 'Ao mesmo tempo', anterior: 'Antes', lei: 'Lei (cortesia)', tu: 'tu', parlare: 'parlare', vendere: 'vendere', dormire: 'dormire', finire: 'finire', partire: 'partire', prendere: 'prendere', credere: 'credere', scrivere: 'scrivere', alzarsi: 'alzarsi', divertirsi: 'divertirsi', pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', auxiliar: 'Auxiliar', participio: 'Particípio passado', padrao: 'Padrão', modal: 'Modal', sentido: 'Sentido', wo: 'Wo? (onde: dativo)', wohin: 'Wohin? (para onde: acusativo)', zu: 'zu (até)', frase: 'Frase', alemao: 'Em alemão', informal: 'Informal', oficial: 'Oficial (24 h)', artigo: 'Artigo', definido: 'Definido', indefinido: 'Indefinido', negativo: 'Negativo', pos1: '1ª posição', pos2: '2ª posição (verbo)', resto: 'Resto', masc_neutro: 'Masculino e neutro', fem_plural: 'Feminino e plural', combinacao: 'Combinação', som: 'Som', resposta: 'Resposta', haben: 'haben', sein: 'sein', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino', como: 'Como', erro: 'Erro comum', formal: 'Formal', afirmativa: 'Afirmativa', negativa: 'Negativa', estrutura: 'Estrutura', expressao: 'Expressão', possuidor: 'Possuidor', escrita: 'Escrita', conta: 'Conta', fala: 'Como se diz', partitivo: 'Partitivo', quantidade: 'Quantidade', meio: 'Meio', tonico: 'Pronome tônico', objeto: 'Objeto', pessoa: 'Pessoa', vouloir: 'vouloir (querer)', pouvoir: 'pouvoir (poder)', devoir: 'devoir (dever)', savoir: 'savoir (saber)', nota: 'Nota', motivo: 'Motivo', formula: 'Fórmula', base: 'Base', parler: 'parler', finir: 'finir', etre: 'être', aller: 'aller', imparfait: 'Imparfait', pc: 'Passé composé', tempo: 'Tempo', parte: 'Parte', presente: 'Presente', com_pronomes: 'Com pronomes', fato: 'Fato', definicao: 'Definição', quem: 'Quem fala', pedido: 'Pedido', problema: 'Problema', operacao: 'Operação', fase: 'Fase', etapa: 'Etapa', negacao: 'Negação', registro: 'Tipo', conector: 'Conector', acao: 'Ação', prep: 'Preposição', costume: 'Costume', gatilho: 'Gatilho', modo: 'Modo', conjuncao: 'Conjunção', secao: 'Seção', valor: 'Valor', gerondio: 'Gérondif', ativa: 'Voz ativa', passiva: 'Voz passiva', direto: 'Discurso direto', indireto: 'Discurso indireto', connaitre: 'connaître', voir: 'voir', croire: 'croire', mettre: 'mettre' };
+const humanizar = (c: string) => c.charAt(0).toUpperCase() + c.slice(1).replace(/_/g, ' ');
+/** Cabeçalho de coluna no idioma do site; chaves que são palavras do idioma estudado (ex.: «haben», «parlare») aparecem como estão. */
+const rotuloColuna = (c: string) => (LOCALE.explicacao === 'pt' ? ROTULO_COLUNA[c] : COLUNAS[LOCALE.explicacao]?.[c]) ?? humanizar(c);
 
 function Audio({ texto, idioma, rotulo }: { texto: string; idioma: string; rotulo?: string }) {
   rotulo = rotulo ?? textos(idioma).ouvir;
@@ -28,7 +33,7 @@ function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
       {unicos.map((p) => (
         <li key={p.ru}>
           <div><strong lang={idioma} className="ru">{p.ru}</strong><span className="translit">{p.translit}</span></div>
-          <div className="trad">{p.pt}{MOSTRAR_INGLES && p.en && <small> · {p.en}</small>}{p.ainda && <span className="ainda" title={`Tem letras que você ainda vai aprender (${p.ainda.join(', ')}). Por enquanto, ouça e repita.`}>{T.ainda}</span>}</div>
+          <div className="trad">{p.pt}{p.ainda && <span className="ainda" title={T.aindaDica(p.ainda.join(', '))}>{T.ainda}</span>}</div>
           <Audio texto={p.audio ?? p.ru} idioma={idioma} />
         </li>
       ))}
@@ -41,8 +46,8 @@ export function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
   return (
     <div className="tabela-rolagem">
       <table className="tabela">
-        <thead><tr>{cols.map((c) => <th key={c}>{ROTULO_COLUNA[c] ?? (c.charAt(0).toUpperCase() + c.slice(1).replace(/_/g, ' '))}</th>)}</tr></thead>
-        <tbody>{linhas.map((l, i) => <tr key={i}>{cols.map((c) => <td key={c} lang={c === 'pt' ? 'pt' : undefined}>{l[c]}</td>)}</tr>)}</tbody>
+        <thead><tr>{cols.map((c) => <th key={c}>{rotuloColuna(c)}</th>)}</tr></thead>
+        <tbody>{linhas.map((l, i) => <tr key={i}>{cols.map((c) => <td key={c}>{l[c]}</td>)}</tr>)}</tbody>
       </table>
     </div>
   );
@@ -123,7 +128,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
 
   return (
     <div className="exercicio">
-      <span className="ex-n">Exercício {i + 1} de {itens.length}</span>
+      <span className="ex-n">{T.exercicio(i + 1, itens.length)}</span>
       <p className="ex-enunciado">{ex.enunciado}</p>
       {ex.audio && <div className="ex-audio"><Audio texto={ex.audio} idioma={idioma} /> <span>{T.tocarOuvir}</span></div>}
       {comOpcoes && (
@@ -131,7 +136,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           {ex.opcoes!.map((o) => (
             <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}</button>
           ))}
-          <small className="ex-dica">Teclado: tecle 1 a {ex.opcoes!.length} para escolher e Enter para verificar.</small>
+          <small className="ex-dica">{T.teclado(ex.opcoes!.length)}</small>
         </div>
       )}
       {ex.tipo === 'sentence-ordering' && (
@@ -146,7 +151,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       {!comOpcoes && ex.tipo !== 'sentence-ordering' && (
         ex.tipo === 'producao'
           ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
-          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? 'Escreva em cirílico' : T.escreva} lang={idioma} />
+          : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
       )}
       {res && (
         <div className={`ex-feedback ${res}`} role="status">
@@ -177,13 +182,15 @@ function Explicacao({ texto }: { texto: string }) {
   );
 }
 
-export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string }) {
+/** `explicacao`: língua em que o bloco está escrito (quando a sessão ainda não foi traduzida, o rótulo acompanha o texto). */
+export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
+  const rotuloComparacao = explicacao && explicacao !== LOCALE.explicacao ? dicionario(explicacao === 'pt' ? 'pt-BR' : explicacao as 'en' | 'es').player.emPortugues : T.emPortugues;
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
       <Explicacao texto={b.explicacao} />
-      {b.comparacao && <p className="callout comparacao"><strong>{T.emPortugues}</strong> {b.comparacao}</p>}
+      {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
       {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}
       {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
@@ -197,7 +204,7 @@ export function Gramatica({ b, idioma }: { b: Extract<Bloco, { tipo: 'gramatica'
   );
 }
 
-function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
+function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
@@ -216,8 +223,8 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
           <h3 className="bloco-sub">{g.nome}</h3>
           <ul className="letras">{g.letras.map((l) => (
             <li key={l.maiuscula}>
-              <span className="letra" lang={idioma}>{l.maiuscula} {l.minuscula}{l.nome && <> <Audio texto={l.nome} idioma={idioma} rotulo={`Ouvir o nome da letra ${l.maiuscula}`} /></>}</span>
-              <span className="ipa">{l.ipa || 'sem som próprio'}</span>
+              <span className="letra" lang={idioma}>{l.maiuscula} {l.minuscula}{l.nome && <> <Audio texto={l.nome} idioma={idioma} rotulo={T.nomeLetra(l.maiuscula)} /></>}</span>
+              <span className="ipa">{l.ipa || T.semSom}</span>
               <span className="som-txt">{l.som}</span>
               <span className="letra-ex"><span lang={idioma}>{l.exemplo}</span> · {l.exemploPt} <Audio texto={l.exemplo} idioma={idioma} /></span>
             </li>
@@ -236,7 +243,7 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
           <label className="check"><input type="checkbox" checked={trad} onChange={(e) => setTrad(e.target.checked)} /> {T.mostrarTrad}</label>
         </div>
         <ul className="dialogo">{b.linhas.map((l, i) => (
-          <li key={i}><span className="quem">{l.personagem}</span><div><span lang={idioma} className="ru">{l.ru}</span>{trad && <small className="trad">{l.pt}</small>}</div><Audio texto={l.audio ?? l.ru} idioma={idioma} /></li>
+          <li key={i}><span className="quem">{l.rotulo ?? l.personagem}</span><div><span lang={idioma} className="ru">{l.ru}</span>{trad && <small className="trad">{l.pt}</small>}</div><Audio texto={l.audio ?? l.ru} idioma={idioma} /></li>
         ))}</ul>
       </section>
     );
@@ -253,12 +260,12 @@ function Conteudo({ b, idioma }: { b: Bloco; idioma: string }) {
         {b.perguntas.map((p) => <details key={p.pergunta} className="pergunta"><summary lang={idioma}>{p.pergunta}</summary><p lang={idioma}>{p.resposta}</p></details>)}
       </section>
     );
-    case 'gramatica': return <Gramatica b={b} idioma={idioma} />;
+    case 'gramatica': return <Gramatica b={b} idioma={idioma} explicacao={explicacao} />;
     case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} />;
   }
 }
 
-export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string; nomeIdioma?: string }) {
+export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma, explicacao }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
@@ -278,7 +285,7 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
 
   return (
     <div className="sessao">
-      {voz === false && <p className="nota">{idioma === 'br' ? `Your browser has no Portuguese voice installed, so the audio buttons may be silent. Install a Brazilian Portuguese voice in your device settings.` : <>Seu navegador não tem voz em {nomeIdioma ?? 'esse idioma'} instalada, então os botões de áudio podem ficar mudos. Instale a voz do idioma nas configurações do aparelho. As gravações com voz nativa ainda estão em produção.</>}</p>}
+      {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
       {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
       <ol className="passos-nav" aria-label={T.blocosSessao}>
         {sessao.blocos.map((x, k) => (
@@ -287,7 +294,7 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma }: { sessao: 
       </ol>
       <div className="bloco">
         <div className="bloco-topo"><h2>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
-        <Conteudo key={idx} b={b} idioma={idioma} />
+        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
       </div>
       <div className="sessao-nav">
         <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>

@@ -4,6 +4,7 @@ import { useAuth } from '../lib/AuthContext';
 import { googleAtivo, mensagemDeErro } from '../lib/firebase';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
+import { useT } from '../i18n';
 
 const GoogleG = () => (
   <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
@@ -16,7 +17,9 @@ const GoogleG = () => (
 
 export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
   const cadastro = modo === 'cadastro';
-  usePageTitle(cadastro ? 'Cadastre-se' : 'Entrar');
+  const t = useT();
+  const c = t.conta;
+  usePageTitle(cadastro ? c.cadastroT : c.entrarT);
   const { usuario, configurado, entrarComGoogle, entrarComEmail, criarConta, recuperarSenha } = useAuth();
   const nav = useNavigate();
   const [params] = useSearchParams();
@@ -39,55 +42,55 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
     executar(() => (cadastro ? criarConta(nome, email, senha) : entrarComEmail(email, senha)));
   };
   const esqueci = () => {
-    if (!email.trim()) { setErro('Digite seu e-mail acima para receber o link de nova senha.'); return; }
-    executar(async () => { await recuperarSenha(email); setAviso('Se existir uma conta com esse e-mail, enviamos o link para criar uma nova senha.'); });
+    if (!email.trim()) { setErro(c.digiteEmail); return; }
+    executar(async () => { await recuperarSenha(email); setAviso(c.linkEnviado); });
   };
   const outra = cadastro ? '/entrar' : '/cadastro';
 
   return (
     <div className="conta">
       <div className="conta-card">
-        <h1>{cadastro ? 'Crie sua conta grátis' : 'Entre na sua conta'}</h1>
-        <p className="conta-sub">{cadastro ? 'Salve seu progresso e continue de onde parou.' : 'Bom te ver de novo.'}</p>
+        <h1>{cadastro ? c.criarH : c.entrarH}</h1>
+        <p className="conta-sub">{cadastro ? c.criarSub : c.entrarSub}</p>
 
         {!configurado && (
-          <p className="conta-aviso" role="status">O login ainda não foi ativado neste ambiente.</p>
+          <p className="conta-aviso" role="status">{c.semLogin}</p>
         )}
 
         {googleAtivo && (
           <>
             <button type="button" className="btn btn-google" disabled={!configurado || ocupado} onClick={() => executar(entrarComGoogle)}>
-              <GoogleG /> Continuar com Google
+              <GoogleG /> {c.google}
             </button>
-            <div className="conta-ou"><span>ou com e-mail</span></div>
+            <div className="conta-ou"><span>{c.ou}</span></div>
           </>
         )}
 
         <form onSubmit={enviar} noValidate={false}>
           {cadastro && (
             <div className="search-field">
-              <label htmlFor="c-nome">Nome</label>
+              <label htmlFor="c-nome">{c.nome}</label>
               <input id="c-nome" autoComplete="name" value={nome} onChange={(e) => setNome(e.target.value)} required disabled={!configurado} />
             </div>
           )}
           <div className="search-field">
-            <label htmlFor="c-email">E-mail</label>
+            <label htmlFor="c-email">{c.email}</label>
             <input id="c-email" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={!configurado} />
           </div>
           <div className="search-field">
-            <label htmlFor="c-senha">Senha</label>
+            <label htmlFor="c-senha">{c.senha}</label>
             <input id="c-senha" type="password" autoComplete={cadastro ? 'new-password' : 'current-password'} minLength={6} value={senha} onChange={(e) => setSenha(e.target.value)} required disabled={!configurado} />
-            {cadastro && <small>Mínimo de 6 caracteres.</small>}
+            {cadastro && <small>{c.minimo}</small>}
           </div>
           {erro && <p className="conta-erro" role="alert">{erro}</p>}
           {aviso && <p className="conta-ok" role="status">{aviso}</p>}
-          <button type="submit" className="btn btn-primary btn-cheio" disabled={!configurado || ocupado}>{ocupado ? 'Aguarde…' : cadastro ? 'Criar conta' : 'Entrar'}</button>
-          {!cadastro && <button type="button" className="link conta-esqueci" onClick={esqueci} disabled={!configurado || ocupado}>Esqueci minha senha</button>}
+          <button type="submit" className="btn btn-primary btn-cheio" disabled={!configurado || ocupado}>{ocupado ? t.geral.aguarde : cadastro ? c.criarBtn : c.entrarBtn}</button>
+          {!cadastro && <button type="button" className="link conta-esqueci" onClick={esqueci} disabled={!configurado || ocupado}>{c.esqueci}</button>}
         </form>
 
-        {cadastro && <p className="conta-aceite">Ao criar a conta, você concorda com os <Link to="/termos">Termos de uso</Link> e a <Link to="/privacidade">Política de privacidade</Link>.</p>}
-        <p className="conta-troca">{cadastro ? 'Já tem conta?' : 'Ainda não tem conta?'} <Link to={`${outra}${destino !== '/' ? `?proximo=${encodeURIComponent(destino)}` : ''}`}>{cadastro ? 'Entrar' : 'Cadastre-se grátis'}</Link></p>
-        <p className="conta-ajuda">Precisa de ajuda? <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a></p>
+        {cadastro && <p className="conta-aceite">{c.aceite[0]} <Link to="/termos">{c.aceite[1]}</Link> {c.aceite[2]} <Link to="/privacidade">{c.aceite[3]}</Link>.</p>}
+        <p className="conta-troca">{cadastro ? c.jaTem : c.naoTem} <Link to={`${outra}${destino !== '/' ? `?proximo=${encodeURIComponent(destino)}` : ''}`}>{cadastro ? c.entrarBtn : c.cadastreGratis}</Link></p>
+        <p className="conta-ajuda">{c.ajuda} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a></p>
       </div>
     </div>
   );

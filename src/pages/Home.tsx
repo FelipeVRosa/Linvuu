@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CURSOS_ATIVOS, statusDoCurso } from '../lib/content';
+import { LOCALE } from '../i18n';
 import { falar } from '../lib/audio';
 import { CursoCard } from '../components/CursoCard';
 import { Faq } from '../components/Faq';
@@ -16,34 +17,21 @@ import { useT } from '../i18n';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL, EMAIL_OFICIAL } from '../config/site';
 import { REDES } from '../config/social';
-import en1 from '../../content/idiomas/en/aulas/aula-001.json';
-import ru1 from '../../content/idiomas/ru/aulas/aula-001.json';
-import de1 from '../../content/idiomas/de/aulas/aula-001.json';
-import fr1 from '../../content/idiomas/fr/aulas/aula-001.json';
-import it1 from '../../content/idiomas/it/aulas/aula-001.json';
-import es1 from '../../content/idiomas/es/aulas/aula-001.json';
 
-type Aula = { titulo: string; sessoes: { titulo: string; duracaoMin: number; blocos: { tipo: string; min: number }[] }[] };
 // Frase de amostra de cada curso: a mesma situação (pedir um café) em cada idioma.
-const AMOSTRA: Record<string, { nome: string; frase: string; aula: Aula }> = {
-  en: { nome: 'Inglês', frase: 'Hello. A coffee, please.', aula: en1 as Aula },
-  ru: { nome: 'Russo', frase: 'Здравствуйте. Мне кофе, пожалуйста.', aula: ru1 as Aula },
-  de: { nome: 'Alemão', frase: 'Guten Tag. Einen Kaffee, bitte.', aula: de1 as Aula },
-  es: { nome: 'Espanhol', frase: 'Hola. Un café, por favor.', aula: es1 as Aula },
-  it: { nome: 'Italiano', frase: 'Buongiorno. Un caffè, per favore.', aula: it1 as Aula },
-  fr: { nome: 'Francês', frase: 'Bonjour. Un café, s’il vous plaît.', aula: fr1 as Aula },
+const AMOSTRA: Record<string, { frase: string; lang: string }> = {
+  en: { frase: 'Hello. A coffee, please.', lang: 'en' },
+  ru: { frase: 'Здравствуйте. Мне кофе, пожалуйста.', lang: 'ru' },
+  de: { frase: 'Guten Tag. Einen Kaffee, bitte.', lang: 'de' },
+  es: { frase: 'Hola. Un café, por favor.', lang: 'es' },
+  it: { frase: 'Buongiorno. Un caffè, per favore.', lang: 'it' },
+  fr: { frase: 'Bonjour. Un café, s’il vous plaît.', lang: 'fr' },
+  br: { frase: 'Oi, bom dia. Um café, por favor.', lang: 'pt-BR' },
 };
-// Inglês abre selecionado e o russo fica por último.
-const ORDEM = ['en', 'es', 'de', 'fr', 'it', 'ru'];
-const pos = (id: string) => (ORDEM.includes(id) ? ORDEM.indexOf(id) : ORDEM.length);
-const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0).sort((a, b) => pos(a.id) - pos(b.id));
+// A vitrine já vem na ordem pensada para cada público (src/i18n/locales.ts): o primeiro abre selecionado.
+const NO_AR = CURSOS_ATIVOS.filter((c) => AMOSTRA[c.id] && (statusDoCurso(c.id)?.publicadas ?? 0) > 0);
 const PADRAO = NO_AR[0]?.id;
-
-const FOTOS = [
-  { src: '/fotos/comece.jpg', alt: 'Mãos usando um tablet sobre uma mesa de madeira' },
-  { src: '/fotos/imersao.jpg', alt: 'Pessoas lendo em uma livraria com estantes de livros' },
-  { src: '/fotos/pratica.jpg', alt: 'Homem escrevendo em um caderno' },
-];
+const FOTOS = ['/fotos/comece.jpg', '/fotos/imersao.jpg', '/fotos/pratica.jpg'];
 
 export default function Home() {
   usePageTitle();
@@ -51,7 +39,7 @@ export default function Home() {
   const [lang, setLang] = useState(PADRAO);
   const [tocando, setTocando] = useState(false);
   const amostra = lang ? AMOSTRA[lang] : undefined;
-  const sessao = amostra?.aula.sessoes[0];
+  const sessao = lang ? statusDoCurso(lang)?.amostra : undefined;
   const aulasNoAr = NO_AR.map((c) => `${c.nome} (${Math.floor((statusDoCurso(c.id)?.publicadas ?? 0) / 4)})`).join(', ');
 
   const ouvir = async () => {
@@ -66,42 +54,42 @@ export default function Home() {
         <div className="lv-hero-in">
           <div className="lv-hero-main">
             <p className="lv-kicker">{t.hero.kicker}</p>
-            <h1>Pare de colecionar apps. Comece a falar o idioma.</h1>
+            <h1>{t.hero.titulo}</h1>
             <p className="lv-hero-sub">{t.hero.sub}</p>
             <div className="lv-hero-botoes">
-              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-primary">Fazer as 2 primeiras aulas grátis</Link>
-              <Link to="/cursos" className="lv-link-claro">Ver os cursos →</Link>
+              <Link to={lang ? `/curso/${lang}/dia/1` : '/cursos'} className="btn btn-primary">{t.hero.botao}</Link>
+              <Link to="/cursos" className="lv-link-claro">{t.hero.verCursos}</Link>
             </div>
-            <p className="lv-hero-nota">Sem cartão para começar. Depois da 2ª aula, R$ 139/mês. Aulas já no ar: {aulasNoAr}.</p>
+            <p className="lv-hero-nota">{t.hero.nota(aulasNoAr)}</p>
           </div>
 
           {amostra && sessao && lang && (
-            <aside className="lv-amostra" aria-label="Exemplo de uma sessão">
-              <div className="lv-abas" role="tablist" aria-label="Idioma do exemplo">
+            <aside className="lv-amostra" aria-label={t.hero.amostraRotulo}>
+              <div className="lv-abas" role="tablist" aria-label={t.hero.amostraAbas}>
                 {NO_AR.map((c) => (
                   <button key={c.id} type="button" role="tab" aria-selected={lang === c.id} className={lang === c.id ? 'on' : ''} onClick={() => setLang(c.id)}>{c.nome}</button>
                 ))}
               </div>
-              <p className="lv-am-pt">Olá. Um café, por favor.</p>
+              <p className="lv-am-pt" lang={LOCALE.codigo}>{t.hero.amostraFrase}</p>
               <div className="lv-am-alvo">
-                <p lang={lang}>{amostra.frase}</p>
-                <button type="button" className={`lv-play${tocando ? ' tocando' : ''}`} aria-label={`Ouvir: ${amostra.frase}`} onClick={ouvir}>
+                <p lang={amostra.lang}>{amostra.frase}</p>
+                <button type="button" className={`lv-play${tocando ? ' tocando' : ''}`} aria-label={`${t.hero.ouvir}: ${amostra.frase}`} onClick={ouvir}>
                   <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor" /></svg>
                 </button>
               </div>
-              <p className="lv-am-meta">Aula 1 · sessão 1 de 4 · {sessao.duracaoMin} minutos</p>
+              <p className="lv-am-meta">{t.hero.amostraMeta(sessao.min)}</p>
               <ol className="lv-am-lista">
-                {sessao.blocos.map((b, i) => (
-                  <li key={i}><span>{ROTULO_BLOCO[b.tipo as keyof typeof ROTULO_BLOCO]}</span><small>{b.min} min</small></li>
+                {[...sessao.blocos.filter(([tipo]) => tipo !== 'revisao'), ...sessao.blocos.filter(([tipo]) => tipo === 'revisao')].map(([tipo, min], i) => (
+                  <li key={i}><span>{ROTULO_BLOCO[tipo as keyof typeof ROTULO_BLOCO]}</span><small>{min} min</small></li>
                 ))}
               </ol>
-              <Traco valor={0.12} altura={12} semente={7} trilha rotulo="Início do caminho" />
+              <Traco valor={0.12} altura={12} semente={7} trilha rotulo={t.hero.inicioCaminho} />
             </aside>
           )}
         </div>
       </section>
 
-      <section className="lv-prova" aria-label="Por que a Linvuu">
+      <section className="lv-prova" aria-label={t.provaRotulo}>
         <ul>
           {t.prova.map((x) => <li key={x.t}><strong>{x.t}</strong><span>{x.d}</span></li>)}
         </ul>
@@ -119,7 +107,7 @@ export default function Home() {
         <h2 id="h-metodo">{t.metodo.titulo} {t.metodo.destaque}</h2>
         <p className="lv-sec-sub">{t.metodo.sub}</p>
         <div className="lv-fotos">
-          {FOTOS.map((f) => <img key={f.src} src={f.src} alt={f.alt} width="1000" height="750" loading="lazy" decoding="async" />)}
+          {FOTOS.map((src, i) => <img key={src} src={src} alt={t.metodo.fotos[i]} width="1000" height="750" loading="lazy" decoding="async" />)}
         </div>
         <div className="lv-passos">
           {t.metodo.passos.map((m) => (
@@ -130,8 +118,8 @@ export default function Home() {
 
       {CARTA.paragrafos.length > 0 && CARTA.assinatura && (
         <section className="lv-sec" aria-labelledby="h-carta">
-          <p className="lv-kicker lv-kicker-esc">Quem faz a Linvuu</p>
-          <h2 id="h-carta" className="sr-only">Carta</h2>
+          <p className="lv-kicker lv-kicker-esc">{t.carta.kicker}</p>
+          <h2 id="h-carta" className="sr-only">{t.carta.titulo}</h2>
           <div className="lv-carta">{CARTA.paragrafos.map((p, i) => <p key={i}>{p}</p>)}<p className="lv-carta-ass">{CARTA.assinatura}</p></div>
         </section>
       )}
@@ -153,13 +141,14 @@ export default function Home() {
       )}
 
       <section className="lv-sec" id="portugues" aria-labelledby="h-pt-est">
-        <p className="lv-kicker lv-kicker-esc">Português para estrangeiros · Portuguese for foreigners</p>
-        <h2 id="h-pt-est">Português como língua estrangeira <em lang="en">Portuguese as a Foreign Language</em></h2>
-        <p className="lv-sec-sub" lang="pt-BR">Para quem não fala português: o curso de português do Brasil do A1 ao B1, com aulas explicadas em inglês.</p>
-        <p className="lv-sec-sub" lang="en">For people who do not speak Portuguese yet: Brazilian Portuguese from A1 to B1, with every lesson explained in English.</p>
+        <p className="lv-kicker lv-kicker-esc">{t.portuguesHome.kicker}</p>
+        <h2 id="h-pt-est">{t.portuguesHome.titulo}</h2>
+        <p className="lv-sec-sub">{t.portuguesHome.texto}</p>
         <div className="lv-hero-botoes">
-          <Link to="/portugues" className="btn btn-primary">Conhecer o curso · About the course</Link>
-          <Link to="/curso/br/dia/1" className="btn btn-ghost">Start lesson 1 free</Link>
+          <Link to="/portugues" className="btn btn-primary">{t.portuguesHome.botao}</Link>
+          {LOCALE.codigo === 'pt-BR'
+            ? <a href="/en/portugues" hrefLang="en" className="btn btn-ghost">{t.portuguesHome.botao2}</a>
+            : <Link to="/curso/br/dia/1" className="btn btn-ghost">{t.portuguesHome.botao2}</Link>}
         </div>
       </section>
 
@@ -182,7 +171,7 @@ export default function Home() {
         '@context': 'https://schema.org',
         '@graph': [
           { '@type': 'EducationalOrganization', name: 'Linvuu', url: SITE_URL, logo: `${SITE_URL}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, sameAs: REDES.filter((r) => r.url).map((r) => r.url) },
-          { '@type': 'WebSite', name: 'Linvuu', url: SITE_URL, inLanguage: 'pt-BR' },
+          { '@type': 'WebSite', name: 'Linvuu', url: SITE_URL, inLanguage: LOCALE.codigo },
           { '@type': 'FAQPage', mainEntity: t.faqItens.map((i) => ({ '@type': 'Question', name: i.p, acceptedAnswer: { '@type': 'Answer', text: i.r } })) },
         ],
       }} />

@@ -5,6 +5,7 @@ import { carregarAuth } from '../lib/firebase';
 import { api } from '../lib/api';
 import { usePageTitle } from '../lib/usePageTitle';
 import { PRECO_MENSAL, PRECO_TRIMESTRAL } from '../config/planos';
+import { LOCALE, T } from '../i18n';
 
 type Estado = 'carregando' | 'liberado' | 'entrar' | 'assinar' | 'indisponivel';
 
@@ -49,6 +50,7 @@ export default function LivroGramatica() {
 
   return (
     <main className="lv-folha" style={{ maxWidth: 760, margin: '0 auto', padding: '48px 20px' }}>
+      {LOCALE.codigo !== 'pt-BR' && <p className="nota" lang={LOCALE.codigo}>{T.livro.indisponivelIdioma}</p>}
       <p className="lv-eyebrow">Livro · Russo · A1–A2</p>
       <h1 className="lv-h1">A gramática russa que faltava para o estudante brasileiro.</h1>
       <p className="lv-lead">Dez aulas, do gênero dos substantivos ao genitivo, explicadas em português, com exemplos em frases curtas, quadros-resumo e exercícios com gabarito. Pensada para quem tem dificuldade com gramática e quer entender a lógica das terminações, não só decorar tabelas.</p>

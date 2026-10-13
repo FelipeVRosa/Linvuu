@@ -1,9 +1,11 @@
 import { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { Chevron } from './Icones';
+import { useT } from '../i18n';
 
 /** Fileira rolável com setas. Sem rotação automática (não rouba o controle do usuário). */
 export function Carrossel({ children, rotulo }: { children: ReactNode; rotulo: string }) {
   const ref = useRef<HTMLDivElement>(null);
+  const t = useT();
   const [pode, setPode] = useState({ esq: false, dir: false });
 
   const medir = useCallback(() => {
@@ -27,9 +29,9 @@ export function Carrossel({ children, rotulo }: { children: ReactNode; rotulo: s
 
   return (
     <div className="carrossel">
-      <button type="button" className="seta seta-esq" aria-label={`${rotulo}: anterior`} disabled={!pode.esq} onClick={() => rolar(-1)}><Chevron dir="left" /></button>
+      <button type="button" className="seta seta-esq" aria-label={`${rotulo}: ${t.geral.anterior}`} disabled={!pode.esq} onClick={() => rolar(-1)}><Chevron dir="left" /></button>
       <div className="carrossel-trilho" ref={ref} role="list" aria-label={rotulo} tabIndex={0}>{children}</div>
-      <button type="button" className="seta seta-dir" aria-label={`${rotulo}: próximo`} disabled={!pode.dir} onClick={() => rolar(1)}><Chevron /></button>
+      <button type="button" className="seta seta-dir" aria-label={`${rotulo}: ${t.geral.proximo}`} disabled={!pode.dir} onClick={() => rolar(1)}><Chevron /></button>
     </div>
   );
 }

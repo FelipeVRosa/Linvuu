@@ -1,3 +1,4 @@
+import { T } from '../i18n';
 import { Capacitor } from '@capacitor/core';
 // Firebase (Authentication + Firestore). As chaves vêm de variáveis VITE_FIREBASE_* (ver docs/AUTENTICACAO.md).
 // Sem elas, o login fica desativado e o site continua funcionando.
@@ -59,27 +60,9 @@ export function carregarDb() {
   return dbCache;
 }
 
-const ERROS: Record<string, string> = {
-  'auth/invalid-credential': 'E-mail ou senha incorretos.',
-  'auth/wrong-password': 'E-mail ou senha incorretos.',
-  'auth/user-not-found': 'E-mail ou senha incorretos.',
-  'auth/invalid-email': 'Esse e-mail não parece válido.',
-  'auth/email-already-in-use': 'Já existe uma conta com esse e-mail. Tente entrar.',
-  'auth/weak-password': 'Use uma senha com pelo menos 6 caracteres.',
-  'auth/missing-password': 'Digite a senha.',
-  'auth/too-many-requests': 'Muitas tentativas. Espere um pouco e tente de novo.',
-  'auth/popup-closed-by-user': 'A janela do Google foi fechada antes de terminar.',
-  'auth/cancelled-popup-request': 'A janela do Google foi fechada antes de terminar.',
-  'auth/popup-blocked': 'O navegador bloqueou a janela do Google. Libere pop-ups e tente de novo.',
-  'auth/network-request-failed': 'Sem conexão. Verifique a internet e tente de novo.',
-  'auth/unauthorized-domain': 'Este endereço ainda não foi autorizado para login.',
-  'auth/operation-not-allowed': 'Este tipo de login ainda não foi ativado.',
-  'auth/admin-restricted-operation': 'O cadastro por e-mail está desativado neste momento.',
-  'auth/password-does-not-meet-requirements': 'A senha não atende às regras de segurança. Use letras maiúsculas e minúsculas, número e símbolo.',
-  'auth/configuration-not-found': 'O login por e-mail ainda não foi configurado.',
-};
+const ERROS = T.erros;
 export const mensagemDeErro = (e: unknown) => {
   const code = (e as { code?: string })?.code ?? '';
   if (!ERROS[code]) console.warn('[linvuu] erro de login:', code || e);
-  return ERROS[code] ?? `Não foi possível concluir. Tente de novo em instantes.${code ? ` (código: ${code})` : ''}`;
+  return ERROS[code] ?? `${ERROS.padrao}${code ? ` (${code})` : ''}`;
 };

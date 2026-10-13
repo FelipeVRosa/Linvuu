@@ -1,84 +1,129 @@
 // Título, descrição e endereço de cada rota, para o servidor entregar o HTML já com as metatags certas
 // (o WhatsApp, o Facebook e outros robôs não executam JavaScript; sem isto, todo link mostraria o texto da página inicial).
+// Vale para os três idiomas do site: / (português), /en e /es.
 import fs from 'node:fs';
 import path from 'node:path';
+import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
 
+type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
-  cursos: { id: string; nome: string; descricao: string; status?: string }[];
-  indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[] }>;
+  cursos: CursoMeta[];
+  indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string> }> }>;
 };
-export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[] };
+export type MetaRota = { status: number; titulo?: string; descricao?: string; caminho: string; semIndice?: boolean; jsonld?: object[]; locale?: Locale };
 
 export function carregarDadosMeta(raiz: string): DadosMeta | null {
   try {
     const cursos = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'cursos.json'), 'utf8')).cursos;
     const indice = JSON.parse(fs.readFileSync(path.join(raiz, 'content', 'indice.json'), 'utf8')).cursos;
+    // títulos traduzidos (content/indice.en.json, indice.es.json) entram no índice de cada curso
+    for (const l of ['en', 'es']) {
+      const f = path.join(raiz, 'content', `indice.${l}.json`);
+      if (!fs.existsSync(f)) continue;
+      for (const [id, t] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')) as Record<string, { g: Record<string, string> }>)) if (indice[id]) (indice[id].tr ??= {})[l] = t;
+    }
     return { cursos, indice };
   } catch {
     return null;
   }
 }
 
+const TX = {
+  'pt-BR': {
+    cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Cadastre-se', assinatura: 'Assinatura', priv: 'Política de privacidade', privD: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.', termos: 'Termos de uso', termosD: 'Regras de uso do site e dos cursos da Linvuu.',
+    pt: 'Português para estrangeiros · Brazilian Portuguese', ptD: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês ou espanhol. 62 aulas.',
+    curso: (n: string) => `${n}: curso para quem fala português, do zero ao B1`, cursoJ: (n: string) => `${n} para quem fala português`, inicio: 'Início',
+    aula: (a: number, t: string, n: string) => `Aula ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, aula ${a} (${t}), sessão ${s} de ${tot}: explicação em português, áudio em cada frase e exercícios com correção.`,
+    sessao: (s: number, n: string) => `Sessão ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string) => `Gramática de ${n.toLowerCase()} explicada em português, tópico por tópico, com tabelas, exemplos e erros comuns.`, nao: 'Página não encontrada',
+  },
+  en: {
+    cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
+    pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
+    curso: (n: string) => `${n} for English speakers, from zero to B1`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
+    aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in English, with audio for every sentence and exercises.`,
+    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar`, gramD: (n: string) => `${n} grammar explained in English, topic by topic, with tables, examples and common mistakes.`, nao: 'Page not found',
+  },
+  es: {
+    cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Regístrate', assinatura: 'Suscripción', priv: 'Política de privacidad', privD: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', termos: 'Términos de uso', termosD: 'Reglas de uso del sitio y de los cursos de Linvuu.',
+    pt: 'Portugués de Brasil para hispanohablantes, de A1 a B1', ptD: 'Aprende portugués de Brasil de cero a B1 en 62 lecciones explicadas en español, con audio, diálogos, gramática y ejercicios.',
+    curso: (n: string) => `${n} para hispanohablantes, de cero a B1`, cursoJ: (n: string) => `${n} para hispanohablantes`, inicio: 'Inicio',
+    aula: (a: number, t: string, n: string) => `Lección ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, lección ${a} (${t}), sesión ${s} de ${tot}: explicado en español, con audio en cada frase y ejercicios.`,
+    sessao: (s: number, n: string) => `Sesión ${s} · ${n}`, gram: 'Gramática', gramC: (n: string) => `Gramática: ${n.toLowerCase()}`, gramD: (n: string) => `Gramática de ${n.toLowerCase()} explicada en español, tema por tema, con tablas, ejemplos y errores frecuentes.`, nao: 'Página no encontrada',
+  },
+} as const;
+const HOME = {
+  'pt-BR': { titulo: undefined, descricao: undefined },
+  en: { titulo: 'Languages explained in English', descricao: 'Learn Brazilian Portuguese, Spanish, German, French, Italian and Russian with lessons explained in English. 30-minute sessions, audio for every sentence and exercises corrected on the spot. 2 free lessons.' },
+  es: { titulo: 'Idiomas explicados en español', descricao: 'Aprende portugués de Brasil, inglés, alemán, francés, italiano y ruso con lecciones explicadas en español. Sesiones de 30 minutos, audio en cada frase y ejercicios corregidos al instante. 2 lecciones gratis.' },
+};
+
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
-  const p = (pathname.replace(/\/+$/, '') || '/');
-  if (p === '/') return { status: 200, caminho: '/' };
+  const loc = localeDoCaminho(pathname);
+  const r = metaSemLocale(semPrefixo(pathname.replace(/\/+$/, '') || '/'), d, loc);
+  return { ...r, caminho: caminhoEm(loc.codigo, r.caminho), locale: loc };
+}
+
+function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
+  const tx = TX[loc.codigo];
+  const ex = loc.explicacao;
+  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo] };
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
-    '/cursos': { titulo: 'Cursos' },
-    '/portugues': { titulo: 'Português como língua estrangeira · Portuguese as a Foreign Language', descricao: 'Curso de português do Brasil para estrangeiros, do A1 ao B1, com aulas explicadas em inglês. Brazilian Portuguese for English speakers, A1 to B1, 62 lessons.' },
-    '/brazilian-portuguese': { titulo: 'Brazilian Portuguese for English speakers · Português como língua estrangeira', descricao: 'Learn Brazilian Portuguese from A1 to B1 in 62 lessons explained in English. Curso de português do Brasil para estrangeiros.' },
-    '/entrar': { titulo: 'Entrar', semIndice: true },
-    '/cadastro': { titulo: 'Cadastre-se', semIndice: true },
-    '/assinatura': { titulo: 'Assinatura', semIndice: true },
-    '/privacidade': { titulo: 'Política de privacidade', descricao: 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.' },
-    '/termos': { titulo: 'Termos de uso', descricao: 'Regras de uso do site e dos cursos da Linvuu.' },
+    '/cursos': { titulo: tx.cursos },
+    '/portugues': { titulo: tx.pt, descricao: tx.ptD },
+    '/brazilian-portuguese': { titulo: tx.pt, descricao: tx.ptD },
+    '/entrar': { titulo: tx.entrar, semIndice: true },
+    '/cadastro': { titulo: tx.cadastro, semIndice: true },
+    '/assinatura': { titulo: tx.assinatura, semIndice: true },
+    '/privacidade': { titulo: tx.priv, descricao: tx.privD },
+    '/termos': { titulo: tx.termos, descricao: tx.termosD },
   };
   if (fixas[p]) return { status: 200, caminho: p, ...fixas[p] };
   if (!d) return { status: 200, caminho: p }; // sem dados: entrega a página padrão, sem inventar nada
-  let m = p.match(/^\/curso\/br$/);
-  if (m) return { status: 200, caminho: p, titulo: 'Brazilian Portuguese for English speakers: A1 to B1', descricao: 'Brazilian Portuguese in 62 lessons explained in English, with audio, dialogues, grammar and exercises. Português do Brasil para estrangeiros.' };
-  m = p.match(/^\/curso\/br\/dia\/(\d+)$/);
-  if (m && d) { const n = Number(m[1]); const total = d.indice.br?.total ?? 0; if (n < 1 || n > total) return naoEncontrada(p); const g = d.indice.br.grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]); return { status: 200, caminho: p, titulo: g ? `Lesson ${g.aula}: ${g.titulo} · Brazilian Portuguese` : `Session ${n} · Brazilian Portuguese`, descricao: g ? `Brazilian Portuguese, lesson ${g.aula} (${g.titulo}), session ${n} of ${total}: explained in English, with audio and exercises.` : `Brazilian Portuguese, session ${n} of ${total}.` }; }
-  m = p.match(/^\/curso\/([^/]+)$/);
+  const curso = (id: string) => { const c = d.cursos.find((x) => x.id === id); return c ? { ...c, ...(c.i18n?.[loc.codigo] ?? {}) } : undefined; };
+  const tituloAula = (id: string, aula: number, original: string) => ((d.indice[id]?.fonte ?? 'pt') === ex ? original : d.indice[id]?.tr?.[ex]?.g[aula] ?? original);
+  let m = p.match(/^\/curso\/([^/]+)$/);
   if (m) {
-    const c = d.cursos.find((x) => x.id === m![1]);
-    if (!c) return naoEncontrada(p);
-    const url = `${SITE}${p}`;
+    const c = curso(m[1]);
+    if (!c) return naoEncontrada(p, loc);
+    const url = `${SITE}${caminhoEm(loc.codigo, p)}`;
     return {
-      status: 200, caminho: p, titulo: `${c.nome}: curso de ${c.nome.toLowerCase()} do zero`, descricao: c.descricao,
-      semIndice: c.status === 'em-breve' || undefined,
+      status: 200, caminho: p, titulo: tx.curso(c.nome), descricao: c.descricao,
+      // o curso escrito para o próprio público deste idioma (ex.: inglês no site em inglês) não entra na busca
+      semIndice: c.status === 'em-breve' || c.id === loc.cursoOculto || undefined,
       jsonld: [
-        { '@context': 'https://schema.org', '@type': 'Course', name: `${c.nome} para quem fala português`, description: c.descricao, inLanguage: 'pt-BR', url, provider: { '@type': 'Organization', name: 'Linvuu', url: SITE } },
-        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Início', item: SITE }, { '@type': 'ListItem', position: 2, name: 'Cursos', item: `${SITE}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
+        { '@context': 'https://schema.org', '@type': 'Course', name: tx.cursoJ(c.nome), description: c.descricao, inLanguage: loc.codigo, url, provider: { '@type': 'Organization', name: 'Linvuu', url: SITE } },
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: tx.cursos, item: `${SITE}${loc.prefixo}/cursos` }, { '@type': 'ListItem', position: 3, name: c.nome, item: url }] },
       ],
     };
   }
   m = p.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
   if (m) {
-    const c = d.cursos.find((x) => x.id === m![1]);
+    const c = curso(m[1]);
     const n = Number(m[2]);
     const total = d.indice[m[1]]?.total ?? 0;
-    if (!c || n < 1 || n > total) return naoEncontrada(p);
+    if (!c || n < 1 || n > total) return naoEncontrada(p, loc);
     const g = d.indice[m[1]].grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
-    return g
-      ? { status: 200, caminho: p, titulo: `Aula ${g.aula}: ${g.titulo} · ${c.nome}`, descricao: `${c.nome}, aula ${g.aula} (${g.titulo}), sessão ${n} de ${total}: explicação em português, áudio em cada frase e exercícios com correção.` }
-      : { status: 200, caminho: p, titulo: `Sessão ${n} · ${c.nome}`, descricao: `${c.nome}, sessão ${n} de ${total}.` };
+    if (!g) return { status: 200, caminho: p, titulo: tx.sessao(n, c.nome), descricao: `${c.nome}, ${tx.sessao(n, c.nome)}.` };
+    const t = tituloAula(m[1], g.aula, g.titulo);
+    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: c.id === loc.cursoOculto || undefined };
   }
   m = p.match(/^\/gramatica(?:\/([^/]+))?$/);
   if (m) {
-    if (!m[1]) return { status: 200, caminho: p, titulo: 'Gramática' };
-    const c = d.cursos.find((x) => x.id === m![1]);
-    return c ? { status: 200, caminho: p, titulo: `Gramática do ${c.nome.toLowerCase()}`, descricao: `Gramática do ${c.nome.toLowerCase()} explicada em português, tópico por tópico, com tabelas, exemplos e erros comuns.` } : naoEncontrada(p);
+    if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
+    const c = curso(m[1]);
+    return c ? { status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome) } : naoEncontrada(p, loc);
   }
-  return naoEncontrada(p);
+  return naoEncontrada(p, loc);
 }
 
 const SITE = 'https://linvuu.com.br';
-const naoEncontrada = (p: string): MetaRota => ({ status: 404, caminho: p, titulo: 'Página não encontrada', semIndice: true });
+const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 export function aplicarMeta(html: string, m: MetaRota, site: string): string {
   let out = html;
   const troca = (re: RegExp, valor: string) => { out = out.replace(re, (_t, a: string, b: string) => a + valor + b); };
+  const loc = m.locale ?? LOCALES[0];
   if (m.titulo) {
     const tit = esc(`${m.titulo} · Linvuu`);
     out = out.replace(/<title>[^<]*<\/title>/, () => `<title>${tit}</title>`);
@@ -90,9 +135,13 @@ export function aplicarMeta(html: string, m: MetaRota, site: string): string {
     troca(/(<meta property="og:description" content=")[^"]*(")/, desc);
   }
   const url = esc(site + m.caminho);
+  troca(/(<html lang=")[^"]*(")/, loc.codigo);
+  troca(/(<meta property="og:locale" content=")[^"]*(")/, loc.og);
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
-  troca(/(<link rel="alternate" hreflang="pt-BR" href=")[^"]*(")/, url);
+  // uma versão por idioma + x-default (português)
+  const alternativos = [...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), `<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`].join('\n    ');
+  out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');

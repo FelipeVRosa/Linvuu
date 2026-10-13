@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { authConfigurado, carregarDb } from '../lib/firebase';
 import { EMAIL_OFICIAL } from '../config/site';
-import { useT } from '../i18n';
+import { LOCALE, useT } from '../i18n';
 
 const EMAIL_OK = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -21,12 +21,12 @@ export function Newsletter({ origem }: { origem: string }) {
     setAviso(''); setEstado('enviando');
     try {
       const { db, f } = await carregarDb();
-      await f.addDoc(f.collection(db, 'newsletter'), { email: email.trim().toLowerCase(), origem, criadoEm: f.serverTimestamp() });
+      await f.addDoc(f.collection(db, 'newsletter'), { email: email.trim().toLowerCase(), origem: `${origem}-${LOCALE.explicacao}`, criadoEm: f.serverTimestamp() });
       setEstado('ok');
     } catch { setEstado('erro'); }
   };
 
-  if (!authConfigurado) return <p className="news-nota"><a href={`mailto:${EMAIL_OFICIAL}?subject=Quero%20receber%20novidades`}>{EMAIL_OFICIAL}</a></p>;
+  if (!authConfigurado) return <p className="news-nota"><a href={`mailto:${EMAIL_OFICIAL}?subject=${encodeURIComponent(t.newsletter.assunto)}`}>{EMAIL_OFICIAL}</a></p>;
   if (estado === 'ok') return <p className="news-ok" role="status">{t.newsletter.ok}</p>;
   return (
     <form className="news" onSubmit={enviar} noValidate>

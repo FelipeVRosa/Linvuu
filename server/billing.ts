@@ -80,7 +80,11 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/aula/:idioma/:n', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma), n = Number(req.params.n);
     if (!/^[a-z]{2}$/.test(idioma) || !Number.isInteger(n) || n < 1 || n > 999) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
-    const arq = path.join(process.cwd(), 'content', 'idiomas', idioma, `dia-${String(n).padStart(3, '0')}.json`);
+    // ?l=en|es: a mesma sessão com a explicação traduzida (content/idiomas/<id>/<l>/dia-NNN.json), quando existir.
+    const l = String(req.query.l ?? '');
+    const nome = `dia-${String(n).padStart(3, '0')}.json`;
+    const traduzido = /^(en|es)$/.test(l) ? path.join(process.cwd(), 'content', 'idiomas', idioma, l, nome) : '';
+    const arq = traduzido && fs.existsSync(traduzido) ? traduzido : path.join(process.cwd(), 'content', 'idiomas', idioma, nome);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Aula não encontrada.' }); return; }
     const livre = n <= 8 || (process.env.NODE_ENV !== 'production' && !cobrancaConfigurada());
     if (!livre) {
@@ -96,7 +100,9 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/gramatica/:idioma', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma);
     if (!/^[a-z]{2}$/.test(idioma)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    const arq = path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
+    const l = String(req.query.l ?? '');
+    const traduzida = /^(en|es)$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
+    const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
     const pacote = JSON.parse(fs.readFileSync(arq, 'utf8')) as { categorias: string[]; topicos: { dia: number; categoria: string }[] };
     let completo = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();

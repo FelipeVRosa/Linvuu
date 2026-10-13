@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../lib/usePageTitle';
+import { useT } from '../i18n';
 
 export default function NaoEncontrada() {
-  usePageTitle('Página não encontrada');
+  const t = useT();
+  usePageTitle(t.naoEncontrada.titulo);
   return (
     <div className="pagina">
-      <h1 className="pagina-h1">Página não encontrada</h1>
-      <p className="lead">O endereço não existe ou mudou de lugar.</p>
-      <p><Link to="/" className="btn btn-primary">Voltar ao início</Link> <Link to="/cursos" className="btn btn-ghost">Ver cursos</Link></p>
+      <h1 className="pagina-h1">{t.naoEncontrada.titulo}</h1>
+      <p className="lead">{t.naoEncontrada.texto}</p>
+      <p><Link to="/" className="btn btn-primary">{t.naoEncontrada.inicio}</Link> <Link to="/cursos" className="btn btn-ghost">{t.naoEncontrada.cursos}</Link></p>
     </div>
   );
 }

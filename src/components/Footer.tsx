@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CURSOS_ATIVOS } from '../lib/content';
+import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
 import { EMAIL_OFICIAL } from '../config/site';
 import { useT } from '../i18n';
 import { Redes } from './Redes';
@@ -29,20 +29,20 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         </div>
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
-          <Link to="/cursos">Todos os cursos</Link>
-          <Link to="/gramatica/en">Gramática</Link>
-          <Link to="/portugues">Português para estrangeiros</Link>
-          <Link to="/#metodo">Método</Link>
-          <Link to="/#faq">Dúvidas</Link>
-          <a href={`mailto:${EMAIL_OFICIAL}`}>Contato</a>
+          <Link to="/cursos">{t.nav.todos}</Link>
+          <Link to={`/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`}>{t.nav.gramatica}</Link>
+          <Link to="/portugues">{t.rodape.portugues}</Link>
+          <Link to="/#metodo">{t.nav.metodo}</Link>
+          <Link to="/#faq">{t.nav.duvidas}</Link>
+          <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>
         </nav>
-        <nav aria-label="Idiomas">
-          <h2>Idiomas</h2>
+        <nav aria-label={t.rodape.idiomas}>
+          <h2>{t.rodape.idiomas}</h2>
           {CURSOS_ATIVOS.map((c) => <Link key={c.id} to={`/curso/${c.id}`}>{c.nome}</Link>)}
         </nav>
       </div>
       <div className="lv-foot-base">
-        <span>© 2026 Linvuu. Todos os direitos reservados.</span>
+        <span>{t.rodape.direitos}</span>
         <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link></span>
         <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>
       </div>

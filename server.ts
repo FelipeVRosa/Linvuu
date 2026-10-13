@@ -54,6 +54,8 @@ async function startServer() {
         if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
+        // sitemap e robots: o Google relê com frequência; uma hora de cache basta
+        else if (/(sitemap\.xml|robots\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
       },
     }));
     // Cada rota recebe o HTML com título, descrição e endereço próprios (prévia de compartilhamento correta) e o status certo (404 de verdade).

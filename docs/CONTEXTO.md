@@ -75,3 +75,8 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - **Stripe:** webhook (status no Firestore) e chaves live só no lançamento.
 - **Áudio:** rodar o workflow «Gerar áudios» com idioma `br` (frases corrigidas nas aulas 1 e 2).
 - **Marketing:** escrever a carta do professor (`src/config/carta.ts`) e reunir depoimentos com autorização.
+
+## Material de referência recebido
+- **«Gramática do italiano para brasileiros» (Falando com o Mundo, 25 páginas)**, enviado pelo Felipe em outubro de 2026. É um e-book comercial com licença individual (marca d'água «Licenciado para Aluno … Protegido por Eduzz»), então **não entra no repositório** (que é público) nem no site. Uso permitido: só conferir fatos e a ordem dos tópicos, como os outros livros (`docs/PLANO-PORTUGUES.md`, «Fontes e regra legal»).
+- **Tópicos do e-book:** alfabeto; saudações; números, dias e meses; horas; perguntas; família; pronomes pessoais, reflexivos e possessivos; singular e plural; artigos definidos e indefinidos; preposições; comparativos e superlativos; advérbios de frequência; o verbo essere; principais irregulares.
+- **Conferência:** os 20 tópicos do e-book já estão no curso de italiano da Linvuu (aulas 1 a 26 e 31). O curso vai além, até o B1.

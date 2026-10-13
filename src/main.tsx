@@ -17,11 +17,19 @@ window.addEventListener('vite:preloadError', (e) => {
   window.location.reload();
 });
 import { AuthProvider } from './lib/AuthContext';
+import { LOCALE, localeLembrado, urlEm } from './i18n';
+import { carregarTraducoes } from './lib/content';
 
-createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+// Quem já escolheu outro idioma na barra do topo volta a ele ao abrir um endereço sem prefixo (ex.: um link compartilhado).
+const lembrado = localeLembrado();
+if (lembrado && lembrado !== LOCALE.codigo && !LOCALE.prefixo) window.location.replace(urlEm(lembrado));
+document.documentElement.lang = LOCALE.codigo;
+
+// Em inglês e espanhol, os títulos traduzidos das aulas chegam antes da primeira tela (um arquivo pequeno, só do idioma escolhido).
+carregarTraducoes().finally(() => createRoot(document.getElementById('root')!).render(
+  <BrowserRouter basename={LOCALE.prefixo || undefined}>
     <AuthProvider>
       <App />
     </AuthProvider>
   </BrowserRouter>
-);
+));

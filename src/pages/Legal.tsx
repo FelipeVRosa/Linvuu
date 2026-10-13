@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { EMAIL_OFICIAL } from '../config/site';
+import { LOCALE, urlEm, useT } from '../i18n';
 
 const ATUALIZADO = '8 de outubro de 2026';
 
-function Privacidade() {
+function PrivacidadePt() {
   return (
     <>
       <h1 className="pagina-h1">Política de privacidade</h1>
@@ -15,7 +16,7 @@ function Privacidade() {
         <h2>Quais dados coletamos</h2>
         <ul>
           <li><strong>Conta:</strong> nome, e-mail e senha. A senha é guardada pelo serviço de autenticação do Google (Firebase Authentication); a Linvuu não tem acesso a ela em texto.</li>
-          <li><strong>Progresso:</strong> pontos (XP), sequência de estudo e aulas concluídas, guardados na sua conta. Parte do progresso também fica salva no seu navegador.</li>
+          <li><strong>Progresso:</strong> sessões concluídas, guardadas na sua conta. Parte do progresso também fica salva no seu navegador.</li>
           <li><strong>Newsletter:</strong> o e-mail que você informar, somente se você marcar a caixa de consentimento.</li>
           <li><strong>Pagamento:</strong> se você assinar, os dados do cartão são digitados direto no Stripe, que processa o pagamento. A Linvuu não vê nem guarda o número do cartão; guardamos apenas o vínculo entre a sua conta e a assinatura (identificador do cliente no Stripe) e o status dela.</li>
           <li><strong>Dados técnicos:</strong> registros do servidor (como endereço IP e tipo de navegador), necessários para o site funcionar e se manter seguro.</li>
@@ -43,7 +44,7 @@ function Privacidade() {
   );
 }
 
-function Termos() {
+function TermosPt() {
   return (
     <>
       <h1 className="pagina-h1">Termos de uso</h1>
@@ -73,13 +74,156 @@ function Termos() {
   );
 }
 
+function PrivacyEn() {
+  return (
+    <>
+      <h1 className="pagina-h1">Privacy policy</h1>
+      <p className="resultado">Last updated: 8 October 2026</p>
+      <div className="texto-legal">
+        <p>This policy explains what data Linvuu collects, why, and what your rights are under Brazil's General Data Protection Law (LGPD, Law 13.709/2018). Contact: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <h2>What we collect</h2>
+        <ul>
+          <li><strong>Account:</strong> name, e-mail and password. The password is stored by Google's authentication service (Firebase Authentication); Linvuu never sees it in plain text.</li>
+          <li><strong>Progress:</strong> completed sessions, stored in your account. Part of your progress is also saved in your browser.</li>
+          <li><strong>Newsletter:</strong> the e-mail you give us, only if you tick the consent box.</li>
+          <li><strong>Payment:</strong> if you subscribe, you type your card details directly into Stripe, which processes the payment. Linvuu never sees or stores your card number; we only keep the link between your account and your subscription (the Stripe customer ID) and its status.</li>
+          <li><strong>Technical data:</strong> server logs (such as IP address and browser type), needed to keep the site working and secure.</li>
+        </ul>
+        <p>The site currently uses <strong>no advertising cookies and no visitor analytics</strong>. If that changes, this page will be updated first and we will ask for your consent.</p>
+        <h2>What we use it for</h2>
+        <ul>
+          <li>Creating and keeping your account, saving your progress and processing your subscription (performing the service you asked for).</li>
+          <li>Sending Linvuu news (consent; you can unsubscribe at any time).</li>
+          <li>Protecting the site against abuse and fixing errors (legitimate interest).</li>
+        </ul>
+        <h2>Who we share it with</h2>
+        <p>We use providers to run the site: Google (Firebase: authentication and database), Stripe (payments) and our hosting provider (Render). They process data on our behalf. We do not sell your data.</p>
+        <h2>How long we keep it</h2>
+        <p>As long as your account exists or until you ask us to delete it. Newsletter data is kept until you unsubscribe.</p>
+        <h2>Your rights</h2>
+        <p>You can ask us to confirm that we process your data, and to access, correct, delete or port it, ask who we share it with, and withdraw your consent. Write to <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. You may also complain to Brazil's data protection authority (ANPD) or to the authority of your country.</p>
+        <h2>Minors</h2>
+        <p>If you are under 18, use the site with the knowledge of a parent or guardian.</p>
+        <h2>Changes</h2>
+        <p>We may update this policy. The date at the top shows the latest version.</p>
+      </div>
+    </>
+  );
+}
+
+function TermsEn() {
+  return (
+    <>
+      <h1 className="pagina-h1">Terms of use</h1>
+      <p className="resultado">Last updated: 8 October 2026</p>
+      <div className="texto-legal">
+        <p>By using the Linvuu site or creating an account you agree to these terms. Questions: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <h2>What Linvuu offers</h2>
+        <p>Language courses in text, audio and exercises. Some lessons are in production or under review and may change; each lesson shows its status.</p>
+        <h2>Results</h2>
+        <p>Linvuu gives you a method and content to study. Your progress depends on the time you put in and on practice outside the site.</p>
+        <h2>Your account</h2>
+        <p>You are responsible for keeping your password safe and for giving true information when you sign up. We may suspend accounts used for fraud or abuse.</p>
+        <h2>Use of the content</h2>
+        <p>The texts, audio, exercises, design and the Linvuu brand belong to Linvuu. <strong>All rights reserved.</strong> You may study for personal use. You may not copy, resell or redistribute the content without written permission.</p>
+        <h2>Paid plan and refunds</h2>
+        <p>The first two lessons of every course are free. To continue there is a monthly subscription of R$ 139 (Brazilian reais), charged every month until you cancel. The price and payment method are shown before you buy; your card issuer converts the currency and may charge its own fees.</p>
+        <p><strong>3-month package:</strong> you can also pay R$ 417 once and have access for 3 months. It does not renew automatically.</p>
+        <p><strong>7-day refund:</strong> you can ask for a full refund within 7 days of subscribing, without giving a reason, by writing to <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p><strong>Cancelling the monthly subscription:</strong> cancel whenever you like, with no fee. Access continues until the end of the period already paid and there are no further charges.</p>
+        <h2>Availability</h2>
+        <p>We work to keep the site online, but it may be unavailable for maintenance or because of failures beyond our control.</p>
+        <h2>Changes and jurisdiction</h2>
+        <p>We may update these terms; the date at the top shows the latest version. Brazilian law applies, without prejudice to the consumer rights of your country of residence.</p>
+        <p>See also the <Link to="/privacidade">Privacy policy</Link>.</p>
+      </div>
+    </>
+  );
+}
+
+function PrivacidadEs() {
+  return (
+    <>
+      <h1 className="pagina-h1">Política de privacidad</h1>
+      <p className="resultado">Última actualización: 8 de octubre de 2026</p>
+      <div className="texto-legal">
+        <p>Esta política explica qué datos recoge Linvuu, para qué y cuáles son tus derechos según la Ley General de Protección de Datos de Brasil (LGPD, Ley 13.709/2018). Contacto: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <h2>Qué datos recogemos</h2>
+        <ul>
+          <li><strong>Cuenta:</strong> nombre, correo electrónico y contraseña. La contraseña la guarda el servicio de autenticación de Google (Firebase Authentication); Linvuu nunca la ve en texto.</li>
+          <li><strong>Progreso:</strong> sesiones completadas, guardadas en tu cuenta. Parte del progreso también se guarda en tu navegador.</li>
+          <li><strong>Boletín:</strong> el correo que nos des, solo si marcas la casilla de consentimiento.</li>
+          <li><strong>Pago:</strong> si te suscribes, escribes los datos de la tarjeta directamente en Stripe, que procesa el pago. Linvuu no ve ni guarda el número de tu tarjeta; solo guardamos el vínculo entre tu cuenta y tu suscripción (el identificador de cliente en Stripe) y su estado.</li>
+          <li><strong>Datos técnicos:</strong> registros del servidor (como la dirección IP y el tipo de navegador), necesarios para que el sitio funcione y sea seguro.</li>
+        </ul>
+        <p>Hoy el sitio <strong>no usa cookies de publicidad ni herramientas de análisis de visitas</strong>. Si eso cambia, actualizaremos esta página antes y te pediremos consentimiento.</p>
+        <h2>Para qué los usamos</h2>
+        <ul>
+          <li>Crear y mantener tu cuenta, guardar tu progreso y procesar tu suscripción (prestar el servicio que pediste).</li>
+          <li>Enviarte novedades de Linvuu (consentimiento; puedes darte de baja cuando quieras).</li>
+          <li>Proteger el sitio contra abusos y corregir fallos (interés legítimo).</li>
+        </ul>
+        <h2>Con quién los compartimos</h2>
+        <p>Usamos proveedores para operar el sitio: Google (Firebase: autenticación y base de datos), Stripe (pagos) y nuestro proveedor de alojamiento (Render). Tratan los datos en nuestro nombre. No vendemos tus datos.</p>
+        <h2>Cuánto tiempo los guardamos</h2>
+        <p>Mientras exista tu cuenta o hasta que pidas eliminarla. Los datos del boletín se guardan hasta que te des de baja.</p>
+        <h2>Tus derechos</h2>
+        <p>Puedes pedir la confirmación de que tratamos tus datos, el acceso, la corrección, la eliminación y la portabilidad, saber con quién los compartimos y retirar tu consentimiento. Escribe a <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>. También puedes reclamar ante la autoridad brasileña de protección de datos (ANPD) o ante la de tu país.</p>
+        <h2>Menores de edad</h2>
+        <p>Si tienes menos de 18 años, usa el sitio con el conocimiento de tu madre, padre o tutor.</p>
+        <h2>Cambios</h2>
+        <p>Podemos actualizar esta política. La fecha de arriba indica la versión más reciente.</p>
+      </div>
+    </>
+  );
+}
+
+function TerminosEs() {
+  return (
+    <>
+      <h1 className="pagina-h1">Términos de uso</h1>
+      <p className="resultado">Última actualización: 8 de octubre de 2026</p>
+      <div className="texto-legal">
+        <p>Al usar el sitio de Linvuu o crear una cuenta, aceptas estos términos. Dudas: <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <h2>Qué ofrece Linvuu</h2>
+        <p>Cursos de idiomas en texto, audio y ejercicios. Algunas lecciones están en producción o en revisión y pueden cambiar; cada lección muestra su estado.</p>
+        <h2>Resultados</h2>
+        <p>Linvuu te da un método y un contenido para estudiar. Tu avance depende del tiempo que dediques y de la práctica fuera del sitio.</p>
+        <h2>Tu cuenta</h2>
+        <p>Eres responsable de mantener segura tu contraseña y de usar datos verdaderos al registrarte. Podemos suspender cuentas usadas para fraude o abuso.</p>
+        <h2>Uso del contenido</h2>
+        <p>Los textos, audios, ejercicios, el diseño y la marca Linvuu pertenecen a Linvuu. <strong>Todos los derechos reservados.</strong> Puedes estudiar para uso personal. No está permitido copiar, revender ni redistribuir el contenido sin autorización por escrito.</p>
+        <h2>Plan de pago y reembolso</h2>
+        <p>Las dos primeras lecciones de cada curso son gratis. Para continuar hay una suscripción mensual de R$ 139 (reales brasileños), cobrada cada mes hasta que canceles. El precio y la forma de pago aparecen antes de la compra; el emisor de tu tarjeta hace la conversión y puede cobrar sus propias comisiones.</p>
+        <p><strong>Paquete de 3 meses:</strong> también puedes pagar R$ 417 de una vez y tener acceso durante 3 meses. No se renueva automáticamente.</p>
+        <p><strong>Reembolso en 7 días:</strong> puedes pedir el reembolso completo en los 7 días siguientes a la suscripción, sin dar explicaciones, escribiendo a <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>
+        <p><strong>Cancelación de la suscripción mensual:</strong> cancelas cuando quieras, sin penalización. El acceso continúa hasta el final del periodo ya pagado y no hay nuevos cobros.</p>
+        <h2>Disponibilidad</h2>
+        <p>Trabajamos para mantener el sitio en línea, pero puede no estar disponible por mantenimiento o por fallos ajenos a nosotros.</p>
+        <h2>Cambios y jurisdicción</h2>
+        <p>Podemos actualizar estos términos; la fecha de arriba indica la versión más reciente. Se aplica la ley brasileña, sin perjuicio de los derechos del consumidor de tu país de residencia.</p>
+        <p>Consulta también la <Link to="/privacidade">Política de privacidad</Link>.</p>
+      </div>
+    </>
+  );
+}
+
+const TEXTOS = {
+  'pt-BR': { privacidade: PrivacidadePt, termos: TermosPt },
+  en: { privacidade: PrivacyEn, termos: TermsEn },
+  es: { privacidade: PrivacidadEs, termos: TerminosEs },
+};
+
 export function Legal({ tipo }: { tipo: 'privacidade' | 'termos' }) {
-  const titulo = tipo === 'privacidade' ? 'Política de privacidade' : 'Termos de uso';
-  usePageTitle(titulo, tipo === 'privacidade' ? 'Quais dados a Linvuu coleta, para quê e quais são os seus direitos pela LGPD.' : 'Regras de uso do site e dos cursos da Linvuu.');
+  const t = useT();
+  const titulo = tipo === 'privacidade' ? t.legal.privacidade : t.legal.termos;
+  usePageTitle(titulo, tipo === 'privacidade' ? t.legal.descPriv : t.legal.descTermos);
+  const Texto = TEXTOS[LOCALE.codigo][tipo];
   return (
     <div className="pagina">
-      <Navegacao pai="/" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: titulo }]} />
-      {tipo === 'privacidade' ? <Privacidade /> : <Termos />}
+      <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: titulo }]} />
+      {t.legal.aviso && <p className="nota">{t.legal.aviso} <a href={urlEm('pt-BR')} hrefLang="pt-BR" lang="pt-BR">Versão em português</a></p>}
+      <Texto />
     </div>
   );
 }

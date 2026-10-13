@@ -4,7 +4,7 @@
 import { carregarAuth } from './firebase';
 import { api } from './api';
 const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
-const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', br: 'pt-BR' };
+const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
 
 /** O que a voz lê e o que entra no hash: sem acento tônico (U+0301). Mantenha igual a scripts/aulas.mjs. */
 export const textoParaAudio = (t: string) => t.normalize('NFC').replace(/\u0301/g, '').trim();

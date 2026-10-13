@@ -1,19 +1,20 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import Home from './pages/Home';
 import Cursos from './pages/Cursos';
-import Curso from './pages/Curso';
-import Portugues from './pages/Portugues';
-import Dia from './pages/Dia';
-import Conta from './pages/Conta';
-import Assinatura from './pages/Assinatura';
-import { Legal } from './pages/Legal';
-import Gramatica from './pages/Gramatica';
-import LivroGramatica from './pages/LivroGramatica';
+const Curso = lazy(() => import('./pages/Curso'));
+const Portugues = lazy(() => import('./pages/Portugues'));
+const Dia = lazy(() => import('./pages/Dia'));
+const Conta = lazy(() => import('./pages/Conta'));
+const Assinatura = lazy(() => import('./pages/Assinatura'));
+const Legal = lazy(() => import('./pages/Legal').then((m) => ({ default: m.Legal })));
+const Gramatica = lazy(() => import('./pages/Gramatica'));
+const LivroGramatica = lazy(() => import('./pages/LivroGramatica'));
 import { BarraTopo } from './components/BarraTopo';
 import NaoEncontrada from './pages/NaoEncontrada';
+import { useT } from './i18n';
 
 function RolarAoTopo() {
   const { pathname, hash } = useLocation();
@@ -33,13 +34,15 @@ const AREA_ALUNO = /^\/curso\/[^/]+\/dia\//;
 
 export default function App() {
   const { pathname } = useLocation();
+  const t = useT();
   return (
     <>
-      <a href="#conteudo" className="skip-link">Ir para o conteúdo</a>
+      <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
       <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />
       <Header />
       <main id="conteudo" tabIndex={-1}>
+        <Suspense fallback={<p className="resultado pagina" role="status">{t.geral.carregando}</p>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
@@ -57,6 +60,7 @@ export default function App() {
           <Route path="/termos" element={<Legal tipo="termos" />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
+        </Suspense>
       </main>
       {!AREA_ALUNO.test(pathname) && <Footer />}
     </>

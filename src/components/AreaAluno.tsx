@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { DIAS, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
+import { DIAS, IDIOMAS_GRAMATICA, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
 import { salvarDiaConta, sincronizarConta } from '../lib/progressoConta';
 import { useAuth } from '../lib/AuthContext';
@@ -58,7 +58,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
   const escolherTema = (t: Tema) => {
     setTema(t);
-    setAvisoTema(T.temaAlterado(t === 'escuro' ? 'escuro' : 'claro'));
+    setAvisoTema(T.temaAlterado(t === 'escuro' ? T.escuro : T.claro));
     try { localStorage.setItem(CHAVE_TEMA, t); } catch { /* sem armazenamento */ }
     somClique();
   };
@@ -78,7 +78,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   const encontrados = termo ? todosOsDias.filter((n) => diaDoCurso(idioma, DIAS[n - 1] ?? { dia: n, fase: 0, nivel: 'a2' as const, titulo: '', objetivo: '' }).titulo.toLowerCase().includes(termo)) : [];
   const numerosDo = (g: { dias: [number, number] }) => Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k);
   const primeiroNome = usuario?.nome.split(/\s+/)[0];
-  const temGramatica = ['ru', 'de', 'en'].includes(idioma);
+  const temGramatica = IDIOMAS_GRAMATICA.includes(idioma);
 
   const linha = (n: number) => {
     // A trilha-mestre tem 120 dias; cursos com aulas escritas vão além (ex.: russo, 312). Mesmo fallback de Curso.tsx.
@@ -146,7 +146,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
                 <section key={g.aula} className="aa-grupo">
                   <button type="button" className="aa-grupo-topo" aria-expanded={estaAberto(g.aula)} onClick={() => setAbertos((x) => ({ ...x, [g.aula]: !estaAberto(g.aula) }))}>
                     <span className="aa-grupo-t">
-                      <small>Aula {g.aula}</small>
+                      <small>{T.aula(g.aula)}</small>
                       {g.titulo}
                     </span>
                     <span className="aa-grupo-n">

@@ -4,11 +4,13 @@ import { CURSOS_ATIVOS as CURSOS } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
+import { useT } from '../i18n';
 
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
 
 export default function Cursos() {
-  usePageTitle('Cursos');
+  const t = useT();
+  usePageTitle(t.cursosPagina.titulo);
   const [params, setParams] = useSearchParams();
   const q = params.get('q') ?? '';
 
@@ -25,19 +27,19 @@ export default function Cursos() {
 
   return (
     <div className="pagina">
-      <Navegacao pai="/" trilha={[{ rotulo: 'Início', para: '/' }, { rotulo: 'Cursos' }]} />
-      <h1 className="pagina-h1">Todos os cursos</h1>
+      <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />
+      <h1 className="pagina-h1">{t.cursosPagina.titulo}</h1>
       <div className="filtros">
         <div className="search-field filtro-busca">
-          <label htmlFor="q">Buscar</label>
-          <input id="q" type="search" value={q} placeholder="Ex.: russo, francês" onChange={(e) => set('q', e.target.value)} />
+          <label htmlFor="q">{t.cursosPagina.buscar}</label>
+          <input id="q" type="search" value={q} placeholder={t.cursosPagina.exemplo} onChange={(e) => set('q', e.target.value)} />
         </div>
       </div>
-      <p className="nota"><Link to="/portugues">Português para estrangeiros · Portuguese as a Foreign Language →</Link></p>
-      <p className="resultado" aria-live="polite">{lista.length} {lista.length === 1 ? 'curso' : 'cursos'}</p>
+      <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>
+      <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
       {lista.length > 0
         ? <div className="curso-grid">{lista.map((c) => <CursoCard key={c.id} curso={c} />)}</div>
-        : <p className="vazio">Nenhum curso encontrado para "{q}". Tente outra palavra ou <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>limpe os filtros</button>.</p>}
+        : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
     </div>
   );
 }

@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
 import { LIVROS } from '../config/livros';
 import { Carrossel } from './Carrossel';
+import { useT } from '../i18n';
 
 const VAZIOS = 2;
 
 export function Vitrine() {
   const itens = LIVROS.length ? LIVROS : null;
+  const t = useT();
   return (
-    <Carrossel rotulo="Livros da Linvuu">
+    <Carrossel rotulo={t.livros.rotulo}>
       {itens
         ? itens.map((l) => {
-            const capa = l.capa ? <img src={l.capa} srcSet={`${l.capa} 600w, ${l.capa.replace('-600', '-900')} 900w`} sizes="(max-width: 700px) 240px, 300px" alt={`Capa do livro de ${l.titulo}, Coleção Linvuu`} width={600} height={842} loading="lazy" decoding="async" /> : <span className="capa-vazia" />;
+            const capa = l.capa ? <img src={l.capa} srcSet={`${l.capa} 600w, ${l.capa.replace('-600', '-900')} 900w`} sizes="(max-width: 700px) 240px, 300px" alt={t.livros.capa(l.titulo)} width={600} height={842} loading="lazy" decoding="async" /> : <span className="capa-vazia" />;
             const corpo = (
               <>
                 <div className="livro-capa">{capa}</div>

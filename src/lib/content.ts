@@ -5,6 +5,8 @@ import cursosJson from '../../content/cursos.json';
 import indiceJson from '../../content/indice.json';
 import type { InfoAula, SessaoAula } from './aulas';
 import { api } from './api';
+import { LOCALE, T } from '../i18n';
+import type { Explicacao } from '../i18n/locales';
 
 export type StatusCurso = 'disponivel' | 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
@@ -28,26 +30,56 @@ export interface Aula extends DiaMestre {
   responsavel: string | null;
 }
 
-export const CURSOS = cursosJson.cursos as Curso[];
+const CURSOS_BASE = cursosJson.cursos as (Curso & { i18n?: Record<string, { nome: string; descricao: string }> })[];
+/** Cursos com nome e descrição no idioma do site. */
+export const CURSOS: Curso[] = CURSOS_BASE.map(({ i18n, ...c }) => ({ ...c, ...(i18n?.[LOCALE.codigo] ?? {}) }));
 export const FASES = trilhaJson.fases as Fase[];
 export const DIAS = trilhaJson.dias as DiaMestre[];
-const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[] }>;
+type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, string> };
+/** Traduções dos títulos e lista de aulas traduzidas do idioma do site (content/indice.<en|es>.json), carregadas antes de abrir o site. */
+let TRADUCOES: Record<string, Traducao> = {};
+const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
+export async function carregarTraducoes() {
+  const f = ARQUIVOS_TR[`../../content/indice.${LOCALE.explicacao}.json`];
+  if (f) TRADUCOES = await f().catch(() => ({}));
+}
+const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
+
+/** Língua em que as explicações do curso foram escritas (o curso de português para estrangeiros foi escrito em inglês). */
+export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
+const traducao = (id: string): Traducao | undefined => (fonteDoCurso(id) === LOCALE.explicacao ? undefined : TRADUCOES[id]);
+/** Quantas aulas do curso estão explicadas no idioma do site (todas, quando o curso foi escrito nele). */
+export const coberturaDoCurso = (id: string) => {
+  const total = INDICE[id]?.grupos?.length ?? 0;
+  if (fonteDoCurso(id) === LOCALE.explicacao) return { traduzidas: total, total, reserva: LOCALE.explicacao };
+  return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
+};
+/** A aula tem explicação no idioma do site? */
+export const aulaTraduzida = (id: string, aula: number) => fonteDoCurso(id) === LOCALE.explicacao || !!traducao(id)?.aulas.includes(aula);
 
 /** Título e objetivo do dia para um curso (alguns idiomas têm aulas próprias no lugar do texto-mestre). */
 export const diaDoCurso = (id: string, d: DiaMestre) => {
   const o = INDICE[id]?.sobrescritos[d.dia];
-  return { ...d, titulo: o?.t ?? d.titulo, objetivo: o?.o ?? d.objetivo };
+  const tr = traducao(id)?.s[d.dia];
+  // «Aula 3, sessão 2 de 4 · 30 min» é gerado pelo script das aulas; aqui sai no idioma do site.
+  const m = o?.o.match(/^Aula (\d+), sessão (\d+) de (\d+) · (\d+) min$/);
+  const objetivo = m ? T.player.kickerAula(Number(m[1]), m[2], Number(m[3]), Number(m[4])) : o?.o ?? d.objetivo;
+  return { ...d, titulo: tr ?? o?.t ?? d.titulo, objetivo };
 };
 
 export const getCurso = (id?: string) => CURSOS.find((c) => c.id === id);
 export const statusDoCurso = (id: string) => INDICE[id];
-/** Aulas escritas do curso (cada uma com 4 sessões = 4 dias). */
-export const gruposDoCurso = (id: string) => INDICE[id]?.grupos ?? [];
+/** Aulas escritas do curso (cada uma com 4 sessões = 4 dias), com o título no idioma do site quando houver. */
+export const gruposDoCurso = (id: string) => {
+  const g = INDICE[id]?.grupos ?? [];
+  const tr = traducao(id);
+  return tr ? g.map((x) => ({ ...x, titulo: tr.g[x.aula] ?? x.titulo })) : g;
+};
 const ORDEM_NIVEL = ['zero', 'a1', 'a2', 'b1', 'b2', 'c1'];
-export const NIVEL_LABEL: Record<string, string> = { zero: 'Iniciando do zero', a1: 'Básico · A1', a2: 'Básico · A2', b1: 'Intermediário · B1', b2: 'Intermediário · B2', c1: 'Avançado · C1' };
-export const NIVEL_CURTO: Record<string, string> = { zero: 'Zero', a1: 'A1', a2: 'A2', b1: 'B1' };
-export const STATUS_CURSO: Record<StatusCurso, string> = { disponivel: 'Disponível', 'em-producao': 'Em produção', 'em-breve': 'Em breve', 'em-planejamento': 'Em planejamento' };
-export const STATUS_AULA: Record<StatusAula, string> = { planejada: 'Planejada', 'em-producao': 'Em produção', publicada: 'Publicada' };
+export const NIVEL_LABEL: Record<string, string> = T.nivel.label;
+export const NIVEL_CURTO: Record<string, string> = T.nivel.curto;
+export const STATUS_CURSO = T.status.curso as Record<StatusCurso, string>;
+export const STATUS_AULA = T.status.aula as Record<StatusAula, string>;
 
 /** Dia sugerido para começar conforme o nível, calculado a partir das aulas reais de cada idioma. */
 export function inicioDoNivel(id: string, nivel: string): { dia: number; aviso?: string } | undefined {
@@ -56,13 +88,13 @@ export function inicioDoNivel(id: string, nivel: string): { dia: number; aviso?:
   if (nivel === 'zero') return { dia: 1 };
   const pedido = ORDEM_NIVEL.indexOf(nivel);
   const alvo = g.find((x) => ORDEM_NIVEL.indexOf(x.nivel ?? 'zero') >= pedido);
-  const nome = id ? (getCurso(id)?.nome ?? 'curso') : 'curso';
+  const nome = getCurso(id)?.nome ?? id;
   if (!alvo) {
     const ult = g.filter((x) => x.nivel === g[g.length - 1].nivel)[0];
-    return { dia: ult.dias[0], aviso: `O curso de ${nome} ainda não tem aulas de ${NIVEL_CURTO[nivel] ?? nivel.toUpperCase()}. O bloco mais avançado, ${NIVEL_CURTO[ult.nivel ?? ''] ?? ''}, começa na aula ${ult.aula}; use-o como revisão.` };
+    return { dia: ult.dias[0], aviso: T.nivel.semNivel(nome, NIVEL_CURTO[nivel] ?? nivel.toUpperCase(), NIVEL_CURTO[ult.nivel ?? ''] ?? '', ult.aula) };
   }
   if (ORDEM_NIVEL.indexOf(alvo.nivel ?? 'zero') > pedido) return { dia: 1 };
-  return { dia: alvo.dias[0], aviso: alvo.aula > 1 ? `O bloco ${NIVEL_CURTO[nivel] ?? ''} começa na aula ${alvo.aula}. As aulas anteriores revisam o que vem antes, se você sentir falta.` : undefined };
+  return { dia: alvo.dias[0], aviso: alvo.aula > 1 ? T.nivel.blocoComeca(NIVEL_CURTO[nivel] ?? '', alvo.aula) : undefined };
 }
 
 /** Dia sugerido para começar conforme o nível. A trilha é para iniciantes. */
@@ -76,24 +108,35 @@ export const INICIO_POR_NIVEL: Record<string, { dia: number; aviso?: string }> =
 };
 
 // Só as sessões grátis (1 a 8) vão dentro do site. As demais ficam no servidor e só saem para quem tem assinatura.
-const aulas = import.meta.glob('../../content/idiomas/*/dia-00{1,2,3,4,5,6,7,8}.json', { import: 'default' }) as Record<string, () => Promise<Aula>>;
+// Cada curso tem a versão escrita (dia-NNN.json) e as versões com a explicação traduzida (<en|es>/dia-NNN.json).
+const aulas = import.meta.glob(['../../content/idiomas/*/dia-00{1,2,3,4,5,6,7,8}.json', '../../content/idiomas/*/{en,es}/dia-00{1,2,3,4,5,6,7,8}.json'], { import: 'default' }) as Record<string, () => Promise<Aula>>;
 /** Uma nova tentativa para falhas de rede ou de arquivo (o pedaço do código pode falhar por uma queda de conexão). */
 const comNovaTentativa = async <T,>(f: () => Promise<T>): Promise<T> => {
   try { return await f(); } catch { await new Promise((ok) => setTimeout(ok, 400)); return f(); }
 };
 
-export const carregarAula = async (idioma: string, dia: number): Promise<Aula> => {
-  const key = `../../content/idiomas/${idioma}/dia-${String(dia).padStart(3, '0')}.json`;
-  if (aulas[key]) return comNovaTentativa(() => aulas[key]());
+/** Carrega a sessão com a explicação no idioma do site; sem tradução, devolve a versão escrita (com `semTraducao`). */
+export const carregarAula = async (idioma: string, dia: number): Promise<Aula & { semTraducao?: Explicacao }> => {
+  const nnn = String(dia).padStart(3, '0');
+  const pasta = fonteDoCurso(idioma) === LOCALE.explicacao ? '' : `${LOCALE.explicacao}/`;
+  const grupo = INDICE[idioma]?.grupos?.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
+  const traduzida = !pasta || (grupo ? aulaTraduzida(idioma, grupo.aula) : false);
+  const key = `../../content/idiomas/${idioma}/${traduzida ? pasta : ''}dia-${nnn}.json`;
+  const marcar = (a: Aula) => (traduzida ? a : { ...a, semTraducao: fonteDoCurso(idioma) });
+  if (aulas[key]) return marcar(await comNovaTentativa(() => aulas[key]()));
   if (dia <= SESSOES_GRATIS) throw new Error('aula não encontrada');
   return comNovaTentativa(async () => {
     const { auth } = await carregarAuth();
     const token = await auth.currentUser?.getIdToken();
-    const r = await fetch(api(`/api/aula/${idioma}/${dia}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+    const r = await fetch(api(`/api/aula/${idioma}/${dia}${traduzida && pasta ? `?l=${LOCALE.explicacao}` : ''}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
     if (!r.ok) throw new Error(`aula não encontrada (${r.status})`);
-    return r.json();
+    return marcar(await r.json());
   });
 };
 
-/** Cursos listados na vitrine (o curso de português para estrangeiros fica fora até ter aulas). */
-export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== 'br');
+/** Cursos da vitrine no idioma do site: cada público vê os idiomas que não são o seu, na ordem pensada para ele. */
+export const CURSOS_ATIVOS = CURSOS.filter((c) => c.id !== LOCALE.cursoOculto).sort((a, b) => LOCALE.ordem.indexOf(a.id) - LOCALE.ordem.indexOf(b.id));
+/** O curso é para outro público (ex.: o curso de inglês, escrito para quem fala português, visto por quem escolheu o site em inglês). */
+export const cursoDeOutroPublico = (id: string) => id === LOCALE.cursoOculto;
+/** Cursos com a aba Gramática (gerada das aulas por scripts/gramatica.mjs). */
+export const IDIOMAS_GRAMATICA = ['en', 'es', 'de', 'fr', 'it', 'ru', 'br'];

@@ -1,3 +1,4 @@
+import { T } from '../i18n';
 import { useCallback, useEffect, useState } from 'react';
 import { useAuth } from './AuthContext';
 import { carregarAuth } from './firebase';
@@ -20,7 +21,7 @@ async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
 
 export type Plano = 'mensal' | 'trimestral' | 'trimestral-pix' | 'anual';
 export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
-  if (!compraNoAppDisponivel()) throw new Error('A compra ainda não está disponível neste aplicativo.');
+  if (!compraNoAppDisponivel()) throw new Error(T.erros.compraApp);
   const j = await chamar(tipo, 'POST', plano ? { plano } : undefined);
   if (j.url) window.location.href = j.url;
 }

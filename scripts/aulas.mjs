@@ -3,6 +3,7 @@
 //   node scripts/aulas.mjs ru
 import fs from 'node:fs';
 import path from 'node:path';
+import { LINGUAS, aulaTemTraducao, fonteDe, titulosDe, traduzirAula } from './i18n-aulas.mjs';
 
 const id = process.argv[2] ?? 'ru';
 const raiz = path.resolve(import.meta.dirname, '..');
@@ -48,6 +49,39 @@ for (const a of aulas) {
     });
     usados.add(dia);
   });
+}
+
+// 1b) as mesmas sessões com a explicação em inglês e espanhol (content/idiomas/<id>/<en|es>/dia-NNN.json), para as aulas já traduzidas.
+// Aulas sem tradução não geram arquivo: o site mostra a versão escrita e avisa o aluno.
+const OBJETIVO = { en: (a, i, t, m) => `Lesson ${a}, session ${i} of ${t} · ${m} min`, es: (a, i, t, m) => `Lección ${a}, sesión ${i} de ${t} · ${m} min` };
+for (const l of LINGUAS) {
+  if (fonteDe(id) === l) continue;
+  const dirL = path.join(dirIdioma, l);
+  fs.rmSync(dirL, { recursive: true, force: true });
+  const titulos = titulosDe(id, l);
+  let n = 0;
+  ensinadas.clear();
+  for (const original of aulas) {
+    if (!aulaTemTraducao(id, l, original.aula)) { original.sessoes.forEach((s) => anotar(s)); continue; } // mantém o registro das letras ensinadas
+    const { aula: a, faltam } = traduzirAula(original, id, l);
+    if (faltam.length) console.warn(`aviso ${id}/${l} aula ${a.aula}: ${faltam.length} textos de explicação sem tradução (ex.: «${faltam[0].slice(0, 60)}»)`);
+    fs.mkdirSync(dirL, { recursive: true });
+    a.sessoes.forEach((s, i) => {
+      const d = (a.aula - 1) * 4 + i + 1;
+      const m = trilha.dias[d - 1] ?? { fase: Math.ceil(d / 10), nivel: a.nivel };
+      escrever(path.join(dirL, `dia-${pad(d)}.json`), {
+        idioma: id, explicacao: l, dia: d, fase: m.fase, nivel: a.nivel ?? m.nivel, status: a.status,
+        titulo: `${titulos[original.titulo] ?? a.titulo}: ${titulos[original.sessoes[i].titulo] ?? s.titulo}`,
+        objetivo: OBJETIVO[l](a.aula, i + 1, a.sessoes.length, s.duracaoMin),
+        aula: { numero: a.aula, titulo: titulos[original.titulo] ?? a.titulo, objetivo: a.objetivo, sessoes: a.sessoes.length, duracaoTotalMin: a.duracaoTotalMin, nivel: a.nivel },
+        sessao: anotar(s),
+        origem: `content/idiomas/${id}/aulas/${arquivos[a.aula - 1]}`,
+        responsavel: null,
+      });
+      n++;
+    });
+  }
+  if (n) console.log(`${id} → ${l}: ${n} sessões traduzidas`);
 }
 
 // 2) dias do material antigo que sobraram (mapeamento por aulas do roteiro antigo) voltam ao texto-mestre

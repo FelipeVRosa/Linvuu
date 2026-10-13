@@ -61,3 +61,17 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - Páginas de termos e privacidade (modelo inicial, precisa de revisão jurídica e dos dados da empresa).
 - Pendente de revisão: ver `docs/REVISAO-RU-AULAS.md` (diálogo da aula 1 com russo pouco natural, negação na aula 7).
 - Progresso por conta (Firestore), áudio nativo, pagamento, termos e privacidade: ainda não feitos.
+
+## Estado (rodada 14, outubro de 2026)
+- **Três idiomas no site:** `/` português, `/en` inglês, `/es` espanhol (PR #220, mergeado). Textos em `src/i18n/`. A explicação das aulas é traduzida por mapas em `content/idiomas/<id>/i18n/<en|es>/` (`scripts/i18n-aulas.mjs`); o idioma estudado e o áudio não mudam.
+- **Traduzido até agora:** títulos de todas as aulas e sessões (EN e ES) e as aulas 1 e 2 do português para hispanofalantes (`br` → `es`). Próximo: aulas 1 e 2 (grátis) dos outros cursos em EN e ES, depois o A1 do alemão e do russo.
+- **Revisão:** a técnica passou (build, segurança, acessibilidade axe sem violações, `npm audit` limpo). Conteúdo: só as aulas 1 e 2 do português revisadas a fundo; o resto precisa de revisão por nativo. Detalhes em `docs/REVISAO-GERAL.md`.
+- **PR #221 (aberto):** cache do acesso no Stripe, cliente sem duplicar, checkout no idioma do site, redirecionamento aberto fechado no login, compressão, SEO (sitemap em 3 idiomas com hreflang, noindex em sessão não traduzida, 301), `render.yaml`, workflow `manter-acordado.yml`.
+
+## Pendências do Felipe (fora do código)
+- **Search Console:** «Não foi possível buscar o sitemap». O Felipe usa proteção contra robôs: liberar robôs verificados (Googlebot) e as rotas `/sitemap.xml` e `/robots.txt`; testar com «Inspeção de URL → Testar URL publicado». Se a proteção barrar o GitHub, apagar `.github/workflows/manter-acordado.yml` (ou usar plano do Render sem hibernação). Depois, reenviar `https://linvuu.com.br/sitemap.xml`.
+- **Google Cloud / Firebase:** restringir a chave da API a `linvuu.com.br/*` e `localhost`; alerta de orçamento; ativar App Check; conferir domínios autorizados (`linvuu.com.br`, `localhost`); publicar `firestore.rules`.
+- **Render:** plano sem hibernação e Health Check Path `/healthz`.
+- **Stripe:** webhook (status no Firestore) e chaves live só no lançamento.
+- **Áudio:** rodar o workflow «Gerar áudios» com idioma `br` (frases corrigidas nas aulas 1 e 2).
+- **Marketing:** escrever a carta do professor (`src/config/carta.ts`) e reunir depoimentos com autorização.

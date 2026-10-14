@@ -46,6 +46,15 @@ async function startServer() {
   // 7. Vite Middleware Integration (Dev) or Static dist (Prod)
   // -------------------------------------------------------------
   if (process.env.NODE_ENV === 'production') {
+    // sitemap.xml e robots.txt: rota explícita ANTES do express.static e do catch-all. Saem do dist como arquivo puro, com o tipo certo, e nunca
+    // viram o HTML da SPA (o Search Console recusa um sitemap que chega como text/html).
+    const arquivoEstatico = (nome: string, tipo: string) => (_req: Request, res: Response) => {
+      const arq = path.resolve(__dirname, 'dist', nome);
+      if (!fs.existsSync(arq)) { res.status(404).type('text/plain; charset=utf-8').send('Not found'); return; }
+      res.set({ 'Content-Type': tipo, 'Cache-Control': 'public, max-age=3600', 'X-Content-Type-Options': 'nosniff' }).send(fs.readFileSync(arq));
+    };
+    app.get('/sitemap.xml', arquivoEstatico('sitemap.xml', 'application/xml; charset=utf-8'));
+    app.get('/robots.txt', arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'));
     // index: false — a página inicial também passa pelo catch-all abaixo, que coloca as metatags (sem isso, «/» saía sem hreflang).
     app.use(express.static(path.resolve(__dirname, 'dist'), {
       index: false,

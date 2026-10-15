@@ -20,8 +20,93 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa mais de vinte phrasal verbs frequentes na vida cotidiana e no trabalho (turn on/off, pick up, fill out, find out, figure out, put off, call off, run out of, look forward to), sabe quando o objeto pode ir no meio e coloca o pronome no lugar certo nos verbos separáveis (turn it off, pick them up)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Resolvendo problemas antes da apresentação",
+        "contexto": "Faltam quinze minutos para a apresentação de resultados em Toronto. Lucas e Sarah estão na sala de reunião ajustando os equipamentos.",
+        "linhas": [
+          {
+            "personagem": "Lucas",
+            "ru": "— Sarah, the projector is off. How do I turn it on?",
+            "pt": "— Sarah, o projetor está desligado. Como eu o ligo?",
+            "audio": "Sarah, the projector is off. How do I turn it on?"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Here's the remote — just press the green button. Oh, wait: the screen is too bright because of the sun. Could you close the blinds, or turn the front lights off?",
+            "pt": "— Aqui está o controle remoto — é só apertar o botão verde. Ah, espere: a tela está clara demais por causa do sol. Você poderia fechar as persianas, ou apagar as luzes da frente?",
+            "audio": "Here's the remote — just press the green button. Oh, wait: the screen is too bright because of the sun. Could you close the blinds, or turn the front lights off?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Sure, I'll turn them off right now. By the way, did you find out why the client wanted to put off the meeting yesterday?",
+            "pt": "— Claro, vou apagá-las agora mesmo. Aliás, você descobriu por que o cliente quis adiar a reunião ontem?",
+            "audio": "Sure, I'll turn them off right now. By the way, did you find out why the client wanted to put off the meeting yesterday?"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Yes! Their director was stuck at the airport in Chicago, so they asked to move it to today. Luckily, they didn't call it off!",
+            "pt": "— Sim! O diretor deles ficou preso no aeroporto em Chicago, então pediram para mudar para hoje. Por sorte, não cancelaram!",
+            "audio": "Yes! Their director was stuck at the airport in Chicago, so they asked to move it to today. Luckily, they didn't call it off!"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Phew! Look, we've run out of printed handouts — there are only three copies on the table.",
+            "pt": "— Ufa! Olha, acabaram os nossos folhetos impressos — só tem três cópias na mesa.",
+            "audio": "Phew! Look, we've run out of printed handouts — there are only three copies on the table."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Don't worry, I'll print five more copies and bring them in. Also, please ask the visitors to fill out this feedback form before they leave.",
+            "pt": "— Não se preocupe, vou imprimir mais cinco cópias e trazê-las. Além disso, por favor peça aos visitantes para preencherem este formulário de avaliação antes de saírem.",
+            "audio": "Don't worry, I'll print five more copies and bring them in. Also, please ask the visitors to fill out this feedback form before they leave."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Got it! I'm really looking forward to closing this deal today!",
+            "pt": "— Combinado! Estou muito ansioso para fechar este negócio hoje!",
+            "audio": "Got it! I'm really looking forward to closing this deal today!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: A regra dos separáveis: se o objeto for um PRONOME (me, you, him, her, it, us, them), ele entra no meio. Se o objeto for um substantivo (the light), você tem liberdade para colocá-lo depois ou no meio (Turn off the light = Turn the light off). Mas se você trocar the light pelo pronome it (ou the lights por them), o pronome entra no meio: Turn it off! / Turn them off! (nunca Turn off it). PASSO 2: Nos inseparáveis (como look for, look after, wait for), nada entra no meio. Quando a segunda palavra é uma preposição de ligação (for, after, into), o bloco não se separa, nem com pronome: I'm looking for my keys → I'm looking for them (nunca looking them for). PASSO 3: Em look forward to (“estar ansioso por / aguardar com expectativa”), o to é uma preposição e pede -ing (Capítulo 17). Essa expressão fecha muitos e-mails profissionais em inglês, e o verbo seguinte leva -ing: I look forward to meeting you / I'm looking forward to working with you (nunca look forward to meet).",
+        "comparacao": "Em português, não temos verbos partidos em dois pedaços com um objeto no meio. Por isso, quem fala português comete erros clássicos ao usar phrasal verbs:",
+        "tabela": [
+          {
+            "portugues": "Desligue-o! / Pegue-os!",
+            "ingles": "Turn it off! / Pick them up!",
+            "evite": "Turn off it! / Pick up them!"
+          },
+          {
+            "portugues": "Estou procurando minhas chaves.",
+            "ingles": "I'm looking for my keys.",
+            "evite": "I'm looking my keys / looking for it. (keys = plural them!)"
+          },
+          {
+            "portugues": "Estou ansioso para viajar!",
+            "ingles": "I'm looking forward to traveling!",
+            "evite": "I'm looking forward to travel!"
+          },
+          {
+            "portugues": "Acabou o café!",
+            "ingles": "We've run out of coffee!",
+            "evite": "The coffee finished / ended!"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "wake up",
@@ -83,7 +168,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Phrasal verbs: verbo + partícula",
         "explicacao": "PASSO 1: um phrasal verb é um VERBO + uma PARTÍCULA (up, down, on, off, out, in, away) que juntos têm um significado próprio: «turn on» (ligar). PASSO 2: o sentido muda com a partícula: «turn on» (ligar), «turn off» (desligar), «turn up» (aumentar), «turn down» (diminuir ou recusar). PASSO 3: SEPARÁVEIS: o objeto pode ir entre o verbo e a partícula: «Turn the TV on» ou «Turn on the TV». PASSO 4: se o objeto for um PRONOME, ele DEVE ficar no meio: «Turn it on», nunca «Turn on it». PASSO 5: INSEPARÁVEIS: o verbo e a partícula ficam juntos: «look after the children», «look after them». PASSO 6: sem objeto, o phrasal verb é intransitivo: «Wake up!», «Sit down.»",
         "comparacao": "em português «ligar a TV» e «desligar a TV» são verbos diferentes. Em inglês o mesmo verbo muda com a partícula: «turn on» e «turn off». Aprenda o conjunto, não o verbo sozinho.",
@@ -135,12 +220,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 8 ações da sua manhã usando phrasal verbs: wake up, get up, put on, turn off…"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte uma experiência sua usando o present perfect e o passado simples."
       }
     ]

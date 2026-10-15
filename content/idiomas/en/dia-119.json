@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "been",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "Been to e gone to",
         "explicacao": "PASSO 1: «have been to» = foi e VOLTOU: «I have been to Paris.» (estive em Paris) PASSO 2: «has gone to» = foi e AINDA ESTÁ lá: «She has gone to Paris.» (ela foi para Paris e ainda não voltou). PASSO 3: pergunta: «Where have you been?» (onde você esteve?). PASSO 4: não confunda com o passado simples: «I went to Paris in 2020.» (fato com tempo definido).",
         "comparacao": "em português «ela foi a Paris» é ambíguo (voltou ou não?). O inglês separa: «has been to» (voltou) e «has gone to» (está lá).",
@@ -95,38 +95,248 @@
         "tag": "Been x gone"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "My travel experiences / Minhas experiências de viagem",
-        "ru": "I love traveling. I have visited five countries: Argentina, Chile, the United States, Portugal and Japan. I have been to Japan twice, and I have eaten sushi in Tokyo. I have never been to Africa, but I would like to go. My brother has been to Egypt and he has seen the pyramids. He has gone to Canada this month, so he isn't here now. Have you ever traveled abroad?",
-        "pt": "Eu adoro viajar. Já visitei cinco países: Argentina, Chile, Estados Unidos, Portugal e Japão. Estive no Japão duas vezes e comi sushi em Tóquio. Nunca estive na África, mas gostaria de ir. Meu irmão esteve no Egito e viu as pirâmides. Ele foi para o Canadá este mês, então não está aqui agora. Você já viajou para o exterior?",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "How many countries has the person visited?",
-            "resposta": "Five."
+            "ru": "Have you ever been to London? — Yes, I've been there twice!",
+            "translit": "",
+            "pt": "Você já esteve em Londres? — Sim, já estive lá duas vezes!",
+            "en": "",
+            "audio": "Have you ever been to London? — Yes, I've been there twice!"
           },
           {
-            "pergunta": "Has the person been to Africa?",
-            "resposta": "No, never."
+            "ru": "I've never tried Indian food, but I'd love to!",
+            "translit": "",
+            "pt": "Nunca experimentei comida indiana, mas adoraria!",
+            "en": "",
+            "audio": "I've never tried Indian food, but I'd love to!"
           },
           {
-            "pergunta": "What has the brother seen?",
-            "resposta": "The pyramids."
+            "ru": "Don't worry, I've already sent the contract to the client.",
+            "translit": "",
+            "pt": "Não se preocupe, já enviei o contrato para o cliente.",
+            "en": "",
+            "audio": "Don't worry, I've already sent the contract to the client."
           },
           {
-            "pergunta": "Where is the brother now?",
-            "resposta": "In Canada."
+            "ru": "Have you finished the presentation yet? — Not yet!",
+            "translit": "",
+            "pt": "Você já terminou a apresentação? — Ainda não!",
+            "en": "",
+            "audio": "Have you finished the presentation yet? — Not yet!"
+          },
+          {
+            "ru": "She has just left the office — you can still catch her at the elevator!",
+            "translit": "",
+            "pt": "Ela acabou de sair do escritório — você ainda consegue pegá-la no elevador!",
+            "en": "",
+            "audio": "She has just left the office — you can still catch her at the elevator!"
+          },
+          {
+            "ru": "Where is David? — He's gone to the coffee shop downstairs.",
+            "translit": "",
+            "pt": "Onde está o David? — Ele foi à cafeteria lá embaixo (e ainda está lá).",
+            "en": "",
+            "audio": "Where is David? — He's gone to the coffee shop downstairs."
+          },
+          {
+            "ru": "We've had four meetings so far this week!",
+            "translit": "",
+            "pt": "Tivemos quatro reuniões até agora nesta semana!",
+            "en": "",
+            "audio": "We've had four meetings so far this week!"
+          },
+          {
+            "ru": "I've seen that movie before; I watched it two years ago.",
+            "translit": "",
+            "pt": "Já vi esse filme antes; assisti a ele há dois anos.",
+            "en": "",
+            "audio": "I've seen that movie before; I watched it two years ago."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "___ you ever ___ to South Africa? (Did… go / Have… been)",
+            "respostaEsperada": "Have… been",
+            "id": "en-030-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I ___ the report to Sarah yesterday afternoon.",
+            "opcoes": [
+              "have sent",
+              "sent"
+            ],
+            "gabarito": "sent",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "We've ___ had lunch, so we aren't hungry right now.",
+            "opcoes": [
+              "already",
+              "yet"
+            ],
+            "gabarito": "already",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Has the flight from Miami arrived ___?",
+            "opcoes": [
+              "already",
+              "yet"
+            ],
+            "gabarito": "yet",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister has never ___ snow in her life!",
+            "opcoes": [
+              "saw",
+              "seen"
+            ],
+            "gabarito": "seen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Is Lucas at his desk? — No, he's ___ to the bank. He'll be back at three.",
+            "opcoes": [
+              "been",
+              "gone"
+            ],
+            "gabarito": "gone",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ did you buy your car? — I bought it in 2024.",
+            "opcoes": [
+              "When",
+              "How long"
+            ],
+            "gabarito": "When",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I haven't read the new contract ___.",
+            "opcoes": [
+              "already",
+              "yet"
+            ],
+            "gabarito": "yet",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-108a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (lose) my office badge! Can you open the door for me?",
+            "respostaEsperada": "have lost",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (lose) my office badge last Monday, so I got a new one on Tuesday.",
+            "respostaEsperada": "lost",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ you ever eaten Thai food? — Yes, I have! I tried it in Bangkok two years ago.",
+            "respostaEsperada": "Have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Have you ever ___ (eat) Thai food? — Yes, I have! I tried it in Bangkok two years ago.",
+            "respostaEsperada": "eaten",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Have you ever eaten Thai food? — Yes, I ___! I tried it in Bangkok two years ago.",
+            "respostaEsperada": "have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-203c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Have you ever eaten Thai food? — Yes, I have! I ___ (try) it in Bangkok two years ago.",
+            "respostaEsperada": "tried",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-203d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "She ___ (just / arrive) at the airport; she's waiting for her luggage right now.",
+            "respostaEsperada": "has just arrived",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We ___ (not / receive) the invoice from the supplier yet.",
+            "respostaEsperada": "haven't received",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look! Thomas ___ (already / sign) all the documents!",
+            "respostaEsperada": "has already signed",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "When ___ they move to Toronto?",
+            "respostaEsperada": "did",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "When did they ___ (move) to Toronto?",
+            "respostaEsperada": "move",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (drink) three cups of coffee so far this morning!",
+            "respostaEsperada": "have drunk",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-030-L-208a"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 5 frases sobre as suas experiências de viagem, com «have been», «have never» e «twice»."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Diga 3 lugares onde você já esteve e 2 aonde nunca foi."
       }
     ]

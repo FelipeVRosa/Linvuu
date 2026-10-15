@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -198,13 +198,140 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale 1 minuto sobre o que talvez aconteça na sua semana, com might e maybe."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Faça pedidos educados e dê respostas gentis em voz alta."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga duas habilidades que você sabe fazer (I can…) e uma que você não sabe fazer (I can't…), uma habilidade que você tinha na infância (I could…) e faça um pedido bem educado a um colega usando Could you…, please?.",
+            "respostaEsperada": "I can swim and I can cook Italian food, but I can't play the guitar. Could you send me the meeting link, please?",
+            "id": "en-029-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique para um colega novo no seu trabalho uma coisa que é proibida (You mustn't / can't…), uma coisa que é obrigatória (You have to…) e uma coisa que não é necessária (You don't have to…).",
+            "respostaEsperada": "In our office, you mustn't share client data, you have to wear your badge, and you don't have to wear a suit on Fridays.",
+            "id": "en-029-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Dê dois conselhos (You should… / You shouldn't…) para um amigo estrangeiro que vai visitar a sua cidade pela primeira vez.",
+            "respostaEsperada": "When you visit Rio, you should definitely go to Christ the Redeemer, and you shouldn't walk alone late at night.",
+            "id": "en-029-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um convite com Let's… e uma sugestão negativa com Let's not… para o fim de semana.",
+            "respostaEsperada": "Let's go to the Italian restaurant tonight, and let's not talk about work!",
+            "id": "en-029-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My husband cans cook very well, and I know swim.",
+            "respostaEsperada": "My husband can cook very well, and I can swim.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Does she can come to the meeting tomorrow morning?",
+            "respostaEsperada": "Can she come to the meeting tomorrow morning?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: You must to wear a badge in the building, and you should to arrive early.",
+            "respostaEsperada": "You must",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: You mustn't come to the office on Saturday — it's completely optional!",
+            "respostaEsperada": "You don't have to come to the office on Saturday — it's completely optional!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She doesn't has to work tonight.",
+            "respostaEsperada": "She doesn't have to work tonight.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Let's to take a taxi, and not be late!",
+            "respostaEsperada": "Let's take a taxi and not be late!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-029-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Could you send me the report when you have a moment, please?",
+            "respostaEsperada": "OK",
+            "id": "en-029-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os dois erros mais perigosos deste capítulo são colocar to depois de verbos modais (dizendo I can to go, You should to study, I must to leave) e usar mustn't achando que significa “não precisa”. Antes de negar uma obrigação, faça sempre a pergunta de segurança: “É proibido fazer (mustn't / can't) ou só não precisa fazer (don't have to)?”. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I can to speak English. / You should to go.",
+            "certo": "I can speak English. / You should go.",
+            "motivo": "Verbos modais (can, could, should, must) não levam to depois deles."
+          },
+          {
+            "errado": "He cans help. / Do you can help?",
+            "certo": "He can help. / Can you help?",
+            "motivo": "Modais nunca levam -s e nunca usam o auxiliar do / does."
+          },
+          {
+            "errado": "I know drive. / I know to swim.",
+            "certo": "I can drive. / I can swim.",
+            "motivo": "“Saber fazer” uma habilidade prática em inglês é can, nunca know + verbo."
+          },
+          {
+            "errado": "You mustn't pay; it's free!",
+            "certo": "You don't have to pay; it's free!",
+            "motivo": "Mustn't significa “é proibido”; para dizer “não é necessário”, use don't have to."
+          },
+          {
+            "errado": "She doesn't has to go.",
+            "certo": "She doesn't have to go.",
+            "motivo": "Após doesn't, o verbo volta para have (sem -s)."
+          },
+          {
+            "errado": "Let's to go! / Let's don't wait!",
+            "certo": "Let's go! / Let's not wait!",
+            "motivo": "Let's é seguido de verbo puro sem to, e sua negativa é Let's not."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 8. Complete com Present Simple ou Present Continuous: Right now, Lucas ____ (wear) a yellow helmet because he ____ (walk) inside the factory, and he ____ (know) all the safety rules. 2. Do Capítulo 7. Corrija: Can you give me an advice and some informations about the factory? 3. Do Capítulo 6. Como você diz: “A fábrica abre de segunda a sexta, das 7h30 às 17h15”?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Usar can, could, should, must sem colocar to ou -s depois deles. Diferenciar You mustn't do it (proibido) de You don't have to do it (não precisa). · Dar conselhos com should, fazer pedidos educados com Could you… e convidar com Let's."
       }
     ]
   },

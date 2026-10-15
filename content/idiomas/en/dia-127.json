@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "move",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "Do passado para o presente",
         "explicacao": "PASSO 1: combine os dois tempos para contar uma história: «I moved here in 2019. I have lived here for five years.» PASSO 2: o simples diz QUANDO começou; o present perfect diz que CONTINUA. PASSO 3: «I came to Brazil in 2010 and I have worked here since then.» PASSO 4: «since then» = desde então. PASSO 5: pergunte: «When did you move here?» (simples) e «How long have you lived here?» (present perfect).",
         "comparacao": "em português a mesma frase diz «mudei em 2019 e moro aqui há cinco anos». Em inglês os dois tempos aparecem: simples (quando) e present perfect (há quanto tempo).",
@@ -91,38 +91,320 @@
         "tag": "Simples e perfect"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "My life in the city / A minha vida na cidade",
-        "ru": "My name is Paul. I moved to this city in 2018, so I have lived here for about six years. I have worked at the same company since 2019. My colleague Sam has been my friend since the first day. I have known my neighbor for three years, and we have played football together every Sunday since last spring. I love this city, but I haven't been back to my hometown since last Christmas.",
-        "pt": "Meu nome é Paul. Mudei para esta cidade em 2018, então moro aqui há cerca de seis anos. Trabalho na mesma empresa desde 2019. O meu colega Sam é meu amigo desde o primeiro dia. Conheço o meu vizinho há três anos e jogamos futebol juntos todo domingo desde a primavera passada. Adoro esta cidade, mas não volto à minha cidade natal desde o último Natal.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "How long has Paul lived in the city?",
-            "resposta": "About six years."
+            "ru": "How long have you been working at this company?",
+            "translit": "",
+            "pt": "Há quanto tempo você trabalha nesta empresa?",
+            "en": "",
+            "audio": "How long have you been working at this company?"
           },
           {
-            "pergunta": "Since when has he worked at the company?",
-            "resposta": "Since 2019."
+            "ru": "I've been waiting for the bus for twenty minutes!",
+            "translit": "",
+            "pt": "Estou esperando o ônibus há vinte minutos!",
+            "en": "",
+            "audio": "I've been waiting for the bus for twenty minutes!"
           },
           {
-            "pergunta": "How long has he known his neighbor?",
-            "resposta": "For three years."
+            "ru": "We've known each other for more than ten years.",
+            "translit": "",
+            "pt": "Nós nos conhecemos há mais de dez anos.",
+            "en": "",
+            "audio": "We've known each other for more than ten years."
           },
           {
-            "pergunta": "When was he last in his hometown?",
-            "resposta": "Last Christmas."
+            "ru": "Sorry I'm late! Have you been waiting long?",
+            "translit": "",
+            "pt": "Desculpe o atraso! Você está esperando há muito tempo?",
+            "en": "",
+            "audio": "Sorry I'm late! Have you been waiting long?"
+          },
+          {
+            "ru": "It's been raining nonstop since yesterday morning.",
+            "translit": "",
+            "pt": "Está chovendo sem parar desde ontem de manhã.",
+            "en": "",
+            "audio": "It's been raining nonstop since yesterday morning."
+          },
+          {
+            "ru": "What have you been doing lately?",
+            "translit": "",
+            "pt": "O que você tem feito ultimamente?",
+            "en": "",
+            "audio": "What have you been doing lately?"
+          },
+          {
+            "ru": "I've had this laptop for four years, and it still works great.",
+            "translit": "",
+            "pt": "Tenho este notebook há quatro anos, e ele ainda funciona bem.",
+            "en": "",
+            "audio": "I've had this laptop for four years, and it still works great."
+          },
+          {
+            "ru": "She's been learning English for two years, and she speaks really well.",
+            "translit": "",
+            "pt": "Ela estuda inglês há dois anos e fala muito bem.",
+            "en": "",
+            "audio": "She's been learning English for two years, and she speaks really well."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I ___ in this apartment since 2021.",
+            "opcoes": [
+              "live",
+              "'ve lived"
+            ],
+            "gabarito": "'ve lived",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "We ___ for the client for half an hour!",
+            "opcoes": [
+              "are waiting",
+              "'ve been waiting"
+            ],
+            "gabarito": "'ve been waiting",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "We've been waiting for the client ___ half an hour.",
+            "opcoes": [
+              "for",
+              "since"
+            ],
+            "gabarito": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "She has worked at the bank ___ she graduated from university.",
+            "opcoes": [
+              "for",
+              "since"
+            ],
+            "gabarito": "since",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-104a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "How long ___ you ___ your best friend? (do… know / have… known)",
+            "respostaEsperada": "have… known",
+            "id": "en-032-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My parents have been married ___ thirty years.",
+            "opcoes": [
+              "for",
+              "since"
+            ],
+            "gabarito": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I've ___ three cups of coffee this morning.",
+            "opcoes": [
+              "drunk",
+              "been drinking"
+            ],
+            "gabarito": "drunk",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Look outside! It ___ since lunchtime.",
+            "opcoes": [
+              "rains",
+              "'s been raining"
+            ],
+            "gabarito": "'s been raining",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-108a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Lucas ___ in Rio for five years, from 2015 to 2020. Now he lives in São Paulo.",
+            "opcoes": [
+              "lived",
+              "has lived"
+            ],
+            "gabarito": "lived",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-109a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "How long ___ you ___ this phone? (do… have / have… had)",
+            "respostaEsperada": "have… had",
+            "id": "en-032-L-110"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "It ___ (rain) since six o'clock this morning!",
+            "respostaEsperada": "has been raining (ou 's been raining)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "It has been raining (ou 's been raining) ___ six o'clock this morning!",
+            "respostaEsperada": "since",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My parents ___ (be) married for thirty years.",
+            "respostaEsperada": "have been (ou 've been)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My parents have been (ou 've been) married ___ thirty years.",
+            "respostaEsperada": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "How long ___ Sarah been working on this report? She looks exhausted!",
+            "respostaEsperada": "has",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "How long has Sarah ___ (work) on this report? She looks exhausted!",
+            "respostaEsperada": "been working",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (know) David for a very long time.",
+            "respostaEsperada": "have known (ou 've known)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I have known (ou 've known) David ___ a very long time.",
+            "respostaEsperada": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-204b"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "They ___ (travel) around Europe ___ three weeks, and they ___ (visit) six countries so far.",
+            "respostaEsperada": "have been traveling",
+            "id": "en-032-L-205"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Why are your hands dirty? — I ___ (fix) my bike in the garage!",
+            "respostaEsperada": "'ve been fixing",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My sister ___ (have) her dog since she moved to her new house.",
+            "respostaEsperada": "has had",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My sister has had her dog ___ she moved to her new house.",
+            "respostaEsperada": "since",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (wait) here for twenty minutes, and the bus hasn't arrived yet.",
+            "respostaEsperada": "have been waiting (ou 've been waiting)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I have been waiting (ou 've been waiting) here ___ twenty minutes, and the bus hasn't arrived yet.",
+            "respostaEsperada": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I haven't seen Lucas ___ Friday. He's been away for three days.",
+            "respostaEsperada": "since",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-209a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I haven't seen Lucas since Friday. He's been away ___ three days.",
+            "respostaEsperada": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-209b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I ___ (know) Sarah since 2021, and we 've been (ou have been) on the same team for two years.",
+            "respostaEsperada": "'ve known (ou have known)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-210a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I 've known (ou have known) Sarah ___ 2021, and we 've been (ou have been) on the same team for two years.",
+            "respostaEsperada": "since",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-210b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I 've known (ou have known) Sarah since 2021, and we ___ (be) on the same team for two years.",
+            "respostaEsperada": "'ve been (ou have been)",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-210c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I 've known (ou have known) Sarah since 2021, and we 've been (ou have been) on the same team ___ two years.",
+            "respostaEsperada": "for",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-032-L-210d"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 6 frases sobre a sua vida usando 3 vezes o passado simples e 3 vezes o present perfect com for/since."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Faça a pergunta «How long have you…?» para 3 verbos diferentes."
       }
     ]

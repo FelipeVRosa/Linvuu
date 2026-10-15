@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -202,14 +202,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto comparando duas pessoas que você conhece."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Compare duas cidades que você conhece usando dois adjetivos curtos (bigger, colder, safer, cheaper) e dois longos (more expensive, more modern, more dangerous).",
+            "respostaEsperada": "São Paulo is bigger and colder than Rio, and it's also more expensive and more modern than my hometown.",
+            "id": "en-026-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas frases no superlativo dizendo qual é o melhor restaurante da sua cidade (the best… in…) e qual é o lugar mais bonito que você conhece (the most beautiful…).",
+            "respostaEsperada": "In my opinion, the Italian restaurant near my office is the best restaurant in my neighborhood, and Fernando de Noronha is the most beautiful place in Brazil.",
+            "id": "en-026-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Compare dois celulares, carros ou ferramentas de trabalho usando much better than e not as… as.",
+            "respostaEsperada": "My new laptop is much better than my old one; the old one wasn't as fast as this one.",
+            "id": "en-026-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique um problema em um quarto de hotel usando uma frase com too + adjetivo e outra com not + adjetivo + enough.",
+            "respostaEsperada": "The hotel room was too noisy at night, and the bed wasn't comfortable enough.",
+            "id": "en-026-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Your English is more good now than last year, and you speak more fast!",
+            "respostaEsperada": "Your English is better now than last year, and you speak faster!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: This laptop is more cheaper that that one on the shelf.",
+            "respostaEsperada": "This laptop is cheaper than that one on the shelf.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She is the most nicest person of our team.",
+            "respostaEsperada": "She is the nicest person in our team.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The room wasn't enough warm, and the bed was very small to sleep.",
+            "respostaEsperada": "The room wasn't warm enough, and the bed was too small to sleep in.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Rio is as hot like Fortaleza in the summer.",
+            "respostaEsperada": "Rio is as hot as Fortaleza in the summer.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: This is the more important project of the company.",
+            "respostaEsperada": "This is the most important project in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-026-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The subway is much faster and more convenient than taking a taxi at rush hour.",
+            "respostaEsperada": "OK",
+            "id": "en-026-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente é usar more com adjetivos curtos ou irregulares (dizendo more good, more bad, more cheap, more easy) e colocar enough antes do adjetivo como fazemos com “bastante” em português (dizendo enough big em vez de big enough). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "more good / more bad",
+            "certo": "better / worse",
+            "motivo": "Good e bad são irregulares e nunca aceitam more nem -er."
+          },
+          {
+            "errado": "more cheap / more big / more easy",
+            "certo": "cheaper / bigger / easier",
+            "motivo": "Adjetivos curtos e terminados em -y formam o comparativo com -er / -ier."
+          },
+          {
+            "errado": "more cheaper / the most biggest",
+            "certo": "cheaper / the biggest",
+            "motivo": "Nunca junte more/most com -er/-est na mesma palavra."
+          },
+          {
+            "errado": "bigger that / better that",
+            "certo": "bigger than / better than",
+            "motivo": "“Do que” na comparação é sempre than, nunca that."
+          },
+          {
+            "errado": "so good like / as good like",
+            "certo": "as good as",
+            "motivo": "Comparação de igualdade usa as + adj + as."
+          },
+          {
+            "errado": "enough big / enough fast",
+            "certo": "big enough / fast enough",
+            "motivo": "Enough vem sempre depois de adjetivos e advérbios!"
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Compare 3 pares de coisas e diga o melhor e o pior de cada grupo."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 11. Passe para o passado simples: We go to the store, see two laptops, and buy the cheaper one. → Yesterday we ____ to the store, ____ two laptops, and ____ the cheaper one. 2. Do Capítulo 10 e 12. Complete: Last night the restaurant ____ (was / were) ____ (crowded) than usual, and ____ (there was / there were) a long line outside. 3. Do Capítulo 9 e 12. Dê um conselho usando should e um comparativo: “Sua mala está pesada demais; você deveria levar uma bolsa menor.”"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Comparar duas opções usando -er than, more… than, better e worse sem dizer “more good” ou “than/that” trocados. Destacar o nº 1 de um grupo com the best, the biggest, the most important seguidos de in ou of. Usar as… as, too + adjetivo e adjetivo + enough na ordem exata."
       }
     ]
   },

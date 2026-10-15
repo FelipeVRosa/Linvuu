@@ -20,8 +20,111 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você diz há quanto tempo mora, trabalha ou conhece alguém com o Present Perfect Simple (I've lived) e o Present Perfect Continuous (I've been working), deixa de lado o erro brasileiro “I live here since…”, diferencia for (duração) de since (ponto de partida) e pergunta How long…? com segurança."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Entrevista para uma promoção interna",
+        "contexto": "Marina conversa com o diretor de operações, Richard, durante uma entrevista para liderar a equipe de design em Boston.",
+        "linhas": [
+          {
+            "personagem": "Richard",
+            "ru": "— Thanks for coming in, Marina. Let's start with your career here at the agency. How long have you worked with us?",
+            "pt": "— Obrigado por vir, Marina. Vamos começar pela sua carreira aqui na agência. Há quanto tempo você trabalha conosco?",
+            "audio": "Thanks for coming in, Marina. Let's start with your career here at the agency. How long have you worked with us?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I've worked here for three years, Richard. I joined the Boston team right after my master's degree.",
+            "pt": "— Trabalho aqui há três anos, Richard. Entrei na equipe de Boston logo depois do meu mestrado.",
+            "audio": "I've worked here for three years, Richard. I joined the Boston team right after my master's degree."
+          },
+          {
+            "personagem": "Richard",
+            "ru": "— And how long have you been living in Boston?",
+            "pt": "— E há quanto tempo você mora em Boston?",
+            "audio": "And how long have you been living in Boston?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I've been living here since 2022. Before that, I lived in São Paulo for ten years.",
+            "pt": "— Moro aqui desde 2022. Antes disso, morei dez anos em São Paulo.",
+            "audio": "I've been living here since 2022. Before that, I lived in São Paulo for ten years."
+          },
+          {
+            "personagem": "Richard",
+            "ru": "— And how long have you known Kevin, our lead developer?",
+            "pt": "— E há quanto tempo você conhece o Kevin, nosso desenvolvedor líder?",
+            "audio": "And how long have you known Kevin, our lead developer?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I've known him since college! We studied together in São Paulo, and we've been close friends for over ten years.",
+            "pt": "— Conheço desde a faculdade! Estudamos juntos em São Paulo, e somos amigos próximos há mais de dez anos.",
+            "audio": "I've known him since college! We studied together in São Paulo, and we've been close friends for over ten years."
+          },
+          {
+            "personagem": "Richard",
+            "ru": "— What have you been working on lately?",
+            "pt": "— Em que você tem trabalhado ultimamente?",
+            "audio": "What have you been working on lately?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— For the last two months, I've been leading the new mobile app project. My team has been testing the interface all week, and we've already completed eighty percent of the work.",
+            "pt": "— Nos últimos dois meses, tenho liderado o projeto do novo aplicativo. Minha equipe tem testado a interface a semana toda, e já concluímos oitenta por cento do trabalho.",
+            "audio": "For the last two months, I've been leading the new mobile app project. My team has been testing the interface all week, and we've already completed eighty percent of the work."
+          },
+          {
+            "personagem": "Richard",
+            "ru": "— You look a bit tired today! Have you been working late this week?",
+            "pt": "— Você parece um pouco cansada hoje! Tem trabalhado até tarde esta semana?",
+            "audio": "You look a bit tired today! Have you been working late this week?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— A little! I've been drinking a lot of coffee since Monday, to be honest. We want everything ready for Friday's launch.",
+            "pt": "— Um pouco! Tenho tomado muito café desde segunda-feira, para ser sincera. Queremos tudo pronto para o lançamento de sexta.",
+            "audio": "A little! I've been drinking a lot of coffee since Monday, to be honest. We want everything ready for Friday's launch."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: A Lei da Linha do Tempo (passado → presente). Quando você mede há quanto tempo uma situação vem acontecendo até hoje, o Present Simple (I live) e o Present Continuous (I'm waiting) não servem: eles só enxergam o agora. Para ligar o passado ao presente, use have / has + 3ª coluna (I've lived) ou have / has been + -ing (I've been waiting). PASSO 2: O “há” de duração até hoje é for, nunca have nem ago. PASSO 3: “Moro aqui há três anos” (continua morando hoje) → for three years, com Present Perfect. PASSO 4: “Mudei para cá há três anos” (o fato aconteceu lá atrás e acabou) → three years ago, com Past Simple: I moved here three years ago. PASSO 5: For também aparece em outros tempos. Com o Past Simple, for mede um período já encerrado (I lived there for four years); com o Present Simple, indica o tamanho de um hábito (I run for an hour every morning). O que muda é o tempo verbal, e é ele que diz ao ouvinte se a situação continua ou terminou.",
+        "comparacao": "Em português, usamos o presente simples com “há / faz” ou “desde” para tudo o que começou no passado e continua hoje (“Moro aqui há cinco anos”, “Sou casado desde 2020”, “Estou esperando há meia hora”). Traduzida palavra por palavra, essa estrutura gera o erro mais conhecido do nível A2:",
+        "tabela": [
+          {
+            "portugues": "Moro aqui há cinco anos.",
+            "ingles": "I've lived (ou I've been living) here for five years.",
+            "evite": "I live here for five years / have five years."
+          },
+          {
+            "portugues": "Trabalho aqui desde 2022.",
+            "ingles": "I've worked (ou I've been working) here since 2022.",
+            "evite": "I work here since 2022."
+          },
+          {
+            "portugues": "Estou esperando há vinte minutos!",
+            "ingles": "I've been waiting for twenty minutes!",
+            "evite": "I'm waiting for twenty minutes!"
+          },
+          {
+            "portugues": "Há quanto tempo você o conhece?",
+            "ingles": "How long have you known him?",
+            "evite": "How long do you know / have you been knowing him?"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "for",
@@ -83,7 +186,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "For e since",
         "explicacao": "PASSO 1: para algo que COMEÇOU no passado e CONTINUA agora, use o present perfect: «I have lived here for five years.» PASSO 2: «for» + DURAÇÃO (quanto tempo): «for two weeks», «for a long time». PASSO 3: «since» + PONTO DE INÍCIO (quando começou): «since 2020», «since Monday», «since I was a child». PASSO 4: pergunta: «How long have you lived here?» PASSO 5: verbos de estado (live, know, work, be, have) funcionam bem aqui: «I have known her for ten years.» PASSO 6: o português usa o PRESENTE: «moro aqui há cinco anos». O inglês exige o present perfect: «I have lived here for five years», não «I live here for five years».",
         "comparacao": "em português dizemos «moro aqui há cinco anos» (presente). Em inglês, o presente seria errado: «I have lived here for five years». É um dos erros mais comuns do brasileiro.",
@@ -130,12 +233,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga há quanto tempo você mora na sua cidade, estuda inglês, conhece o seu melhor amigo e trabalha no seu emprego."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 3 coisas que acabaram de acontecer e 3 que você já fez hoje."
       }
     ]

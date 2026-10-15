@@ -20,8 +20,121 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve uma cena em andamento no passado interrompida por outro fato, usando o Past Continuous (was / were + -ing) com when e while; conta o que já tinha acontecido antes de outro momento passado, com o Past Perfect (had + 3ª coluna); e fala de hábitos antigos com used to, sem confundi-lo com be used to e get used to."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O imprevisto a caminho do aeroporto",
+        "contexto": "Lucas conta para Sarah e Emma, no escritório em Toronto, por que quase perdeu o voo de volta de Montreal na noite anterior.",
+        "linhas": [
+          {
+            "personagem": "Sarah",
+            "ru": "— Lucas, you look exhausted! What happened last night on your way back from Montreal?",
+            "pt": "— Lucas, você parece exausto! O que aconteceu ontem à noite na sua volta de Montreal?",
+            "audio": "Lucas, you look exhausted! What happened last night on your way back from Montreal?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— It was a crazy evening, Sarah! At six o'clock, I was having dinner near the client's office when the airline sent me an alert: they had changed my gate!",
+            "pt": "— Foi uma noite maluca, Sarah! Às seis horas, eu estava jantando perto do escritório do cliente quando a companhia aérea me mandou um alerta: tinham mudado meu portão!",
+            "audio": "It was a crazy evening, Sarah! At six o'clock, I was having dinner near the client's office when the airline sent me an alert: they had changed my gate!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Oh, no! Were you already at the airport when you got the message?",
+            "pt": "— Ah, não! Você já estava no aeroporto quando recebeu a mensagem?",
+            "audio": "Oh, no! Were you already at the airport when you got the message?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— No, I wasn't! While I was taking a taxi to the airport, it started snowing heavily, and the traffic stopped completely.",
+            "pt": "— Não, não estava! Enquanto eu pegava um táxi para o aeroporto, começou a nevar forte, e o trânsito parou completamente.",
+            "audio": "No, I wasn't! While I was taking a taxi to the airport, it started snowing heavily, and the traffic stopped completely."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— How stressful! Did you make the flight?",
+            "pt": "— Que estressante! Você conseguiu pegar o voo?",
+            "audio": "How stressful! Did you make the flight?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Barely! When I finally arrived at the gate, the other passengers had already boarded, and the crew was closing the door!",
+            "pt": "— Por um triz! Quando finalmente cheguei ao portão, os outros passageiros já tinham embarcado, e a tripulação estava fechando a porta!",
+            "audio": "Barely! When I finally arrived at the gate, the other passengers had already boarded, and the crew was closing the door!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Thank goodness you made it! You travel so much now, Lucas. Did you use to travel this much in your old job in Brazil?",
+            "pt": "— Ainda bem que você conseguiu! Você viaja tanto agora, Lucas. Você costumava viajar tanto assim no seu antigo emprego no Brasil?",
+            "audio": "Thank goodness you made it! You travel so much now, Lucas. Did you use to travel this much in your old job in Brazil?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— No, I didn't use to travel at all! I used to work in the same office every single day. I used to hate flying, but now I love it.",
+            "pt": "— Não, eu não costumava viajar nada! Eu trabalhava no mesmo escritório todos os dias. Eu odiava voar, mas agora adoro.",
+            "audio": "No, I didn't use to travel at all! I used to work in the same office every single day. I used to hate flying, but now I love it."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— And the snow? Are you used to it yet?",
+            "pt": "— E a neve? Você já está acostumado?",
+            "audio": "And the snow? Are you used to it yet?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Not really! Back in Brazil I used to drive in heavy rain all the time, but I'm still getting used to driving on ice!",
+            "pt": "— Ainda não! No Brasil eu dirigia sob chuva forte o tempo todo, mas ainda estou me acostumando a dirigir no gelo!",
+            "audio": "Not really! Back in Brazil I used to drive in heavy rain all the time, but I'm still getting used to driving on ice!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Used to só existe no passado. Para “costumo” no presente, use usually. Muitos brasileiros tiram o -d de used to para dizer “Eu costumo trabalhar aqui” (I use to work here). Essa estrutura não existe: no presente, use o advérbio usually (I usually work here). Reserve used to + verbo para hábitos ou estados do passado que já não acontecem hoje (I used to live there / I used to have long hair). PASSO 2: Com did / didn't, o -d de used to cai. Como o auxiliar did já carrega o passado, aplica-se a Lei da Gangorra do Capítulo 11: Did you use to…? e I didn't use to…. Se não quiser pensar nisso, use never used to: I never used to like tea. PASSO 3: I used to do não é I'm used to doing. Em I used to drive, o to faz parte do infinitivo. Em I'm used to driving, o to é uma preposição, e por isso vem seguido de -ing ou de um substantivo (I'm used to the cold).",
+        "comparacao": "O pretérito imperfeito do português (“eu trabalhava, eu fazia, eu odiava”) serve tanto para dizer o que estava acontecendo numa hora exata (“Ontem às seis eu jantava”) quanto para falar de uma rotina antiga (“Quando eu era criança, eu jogava futebol”). O inglês separa essas ideias em estruturas diferentes, e daí nascem as armadilhas:",
+        "tabela": [
+          {
+            "portugues": "Eu morava no Rio (hoje não moro mais).",
+            "ingles": "I used to live in Rio.",
+            "evite": "I was living in Rio (para uma situação antiga, sem hora marcada)."
+          },
+          {
+            "portugues": "Quando eu era criança, eu jogava futebol.",
+            "ingles": "When I was a kid, I used to play (ou played) soccer.",
+            "evite": "I was playing soccer when I was a kid."
+          },
+          {
+            "portugues": "Hoje em dia eu costumo acordar às sete.",
+            "ingles": "Nowadays I usually wake up at seven.",
+            "evite": "Nowadays I use to wake up at seven. (Used to só existe no passado.)"
+          },
+          {
+            "portugues": "Você costumava fumar?",
+            "ingles": "Did you use to smoke?",
+            "evite": "Did you used to smoke?"
+          },
+          {
+            "portugues": "Estou acostumado a trabalhar sob pressão.",
+            "ingles": "I'm used to working under pressure.",
+            "evite": "I'm used to work under pressure."
+          },
+          {
+            "portugues": "Quando cheguei à estação, o trem já tinha saído.",
+            "ingles": "When I got to the station, the train had already left.",
+            "evite": "When I got to the station, the train already left. (não marca o “antes”)"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "first",
@@ -83,7 +196,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Organizar uma história",
         "explicacao": "PASSO 1: uma boa história tem começo, meio e fim. Use conectores: «First, I woke up. Then I had breakfast. After that, I went to work. Finally, I came home.» PASSO 2: «suddenly» introduz algo inesperado: «Suddenly, the phone rang.» PASSO 3: vírgula depois do conector no começo da frase: «First, …», «Then, …» PASSO 4: «when» e «because» ligam ideias: «I was late because I missed the bus.», «When I arrived, the class started.» PASSO 5: «so» mostra consequência: «I was tired, so I went to bed.» PASSO 6: não repita «and then» em todas as frases. Varie.",
         "comparacao": "em português usamos «primeiro, depois, em seguida, por fim». O inglês tem os equivalentes diretos: first, then, after that, finally.",
@@ -135,12 +248,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte o seu último dia útil em 5 frases com first, then, after that e finally."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 5 irregulares e o passado deles. Faça uma pergunta com «Did you…?»"
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -199,14 +199,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Conte em 1 minuto o último dia especial que você teve, com data e adjetivos."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga em que cidade e em que ano você nasceu, e onde e quando um familiar seu nasceu (I was born… / My… was born…).",
+            "respostaEsperada": "I was born in São José dos Campos in 1992, and my wife was born in São Paulo in 1994.",
+            "id": "en-019-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte onde você estava ontem de manhã (yesterday morning), ontem à tarde (yesterday afternoon) e ontem à noite (last night).",
+            "respostaEsperada": "Yesterday morning I was at the office, yesterday afternoon I was in a meeting, and last night I was at home with my family.",
+            "id": "en-019-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva a última viagem, festa ou evento a que você foi usando It was…, There was…, There were… e uma frase negativa com wasn't / weren't.",
+            "respostaEsperada": "Last month I was at a conference in Rio. It was amazing, there were a lot of great speakers, there was free coffee all day, and the hotel wasn't expensive.",
+            "id": "en-019-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Faça três perguntas para um colega sobre o fim de semana passado usando How was…?, Where were you…? e Were there…?.",
+            "respostaEsperada": "How was your weekend? Where were you on Saturday night? Were there many people at the restaurant?",
+            "id": "en-019-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Where did you were yesterday night?",
+            "respostaEsperada": "Where were you last night?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I born in São Paulo in 1993, and my sister borned in 1996.",
+            "respostaEsperada": "I was born in São Paulo in 1993, and my sister was born in 1996.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: In the party last Saturday had many peoples and great music.",
+            "respostaEsperada": "At the party last Saturday, there were a lot of people and great music.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We was very tired after the meeting ago two hours.",
+            "respostaEsperada": "We were very tired after the meeting two hours ago.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Did the hotel be near the subway station?",
+            "respostaEsperada": "Was the hotel near the subway station?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: In last week, the weather was terrible.",
+            "respostaEsperada": "Last week, the weather was terrible.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-019-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: There wasn't much traffic this morning, so I was at the office on time.",
+            "respostaEsperada": "OK",
+            "id": "en-019-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os três erros que mais denunciam a interferência do português neste ponto são dizer I born sem o verbo was, misturar did com was/were (Where did you were? / Did it was good?) e dizer yesterday night em vez de last night. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I born in 1995. / Where you born?",
+            "certo": "I was born in 1995. / Where were you born?",
+            "motivo": "“Nascer” em inglês exige sempre a estrutura passiva was / were born."
+          },
+          {
+            "errado": "We was tired. / You was there.",
+            "certo": "We were tired. / You were there.",
+            "motivo": "You, we, they exigem sempre were, nunca was."
+          },
+          {
+            "errado": "Did you were at home? / Did it be good?",
+            "certo": "Were you at home? / Was it good?",
+            "motivo": "O verbo to be no passado não usa o auxiliar did; basta inverter Was / Were."
+          },
+          {
+            "errado": "Had many people at the event.",
+            "certo": "There were a lot of people at the event.",
+            "motivo": "“Havia / Tinha” (existência no passado) é There was / There were, nunca had."
+          },
+          {
+            "errado": "yesterday night",
+            "certo": "last night",
+            "motivo": "Dizemos yesterday morning / afternoon / evening, mas “ontem à noite” é last night."
+          },
+          {
+            "errado": "ago two days / I arrived has two days",
+            "certo": "two days ago / I arrived two days ago",
+            "motivo": "Ago fica sempre depois da medida de tempo; o há do português não vira has."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Conte onde você estava ontem e como foi o dia."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 9. Complete com mustn't ou don't have to: You ____ forget your passport when you travel abroad, and you ____ print the boarding pass if you have it on your phone. 2. Do Capítulo 8 e 10. Compare o presente e o passado: Today I'm in Boston, and there's a lot of traffic. → Last week I ____ in Chicago, and ____ a lot of traffic. 3. Do Capítulo 7 e 10. Por que dizemos There was some good news yesterday (com was), mas There were a few questions after the talk (com were)?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Contar onde eu estava e como foi um evento, viagem ou fim de semana usando was, were, wasn't, weren't. · Descrever o que havia em um lugar com there was e there were sem usar “had”. · Dizer quando e onde nasci com I was born e usar last night e ago sem erros."
       }
     ]
   },

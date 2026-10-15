@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você compara produtos, cidades e projetos usando -er / more… than (sem dizer “more good” ou “more big”), aponta o melhor ou o maior de um grupo com o superlativo (the -est / the most), faz comparações de igualdade com as… as e diferencia excesso (too) de suficiência (enough)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Escolhendo o novo escritório da empresa",
+        "contexto": "Lucas, Sarah e Emma analisam três opções de imóveis comerciais em Toronto para a expansão da equipe.",
+        "linhas": [
+          {
+            "personagem": "Emma",
+            "ru": "— So, guys, we visited three offices this week. Which one do you think is the best option for our team?",
+            "pt": "— Então, pessoal, visitamos três escritórios nesta semana. Qual deles vocês acham que é a melhor opção para a nossa equipe?",
+            "audio": "So, guys, we visited three offices this week. Which one do you think is the best option for our team?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Well, the office on King Street is bigger than the one near the park, and it's much closer to the subway.",
+            "pt": "— Bem, o escritório da King Street é maior do que o perto do parque, e é muito mais perto do metrô.",
+            "audio": "Well, the office on King Street is bigger than the one near the park, and it's much closer to the subway."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— That's true, Lucas, but King Street is also more expensive. The rent is $1,500 higher per month!",
+            "pt": "— É verdade, Lucas, mas o da King Street também é mais caro. O aluguel é 1.500 dólares mais alto por mês!",
+            "audio": "That's true, Lucas, but King Street is also more expensive. The rent is $1,500 higher per month!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— What about the park office? It's cheaper and quieter than King Street, isn't it?",
+            "pt": "— E quanto ao escritório do parque? É mais barato e mais silencioso do que o da King Street, não é?",
+            "audio": "What about the park office? It's cheaper and quieter than King Street, isn't it?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Yes, it is, but the meeting room isn't big enough for twenty people. And the internet connection there isn't as fast as on King Street.",
+            "pt": "— Sim, é, mas a sala de reunião não é grande o suficiente para vinte pessoas. E a conexão de internet lá não é tão rápida quanto na King Street.",
+            "audio": "Yes, it is, but the meeting room isn't big enough for twenty people. And the internet connection there isn't as fast as on King Street."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— What about the third option, by the harbor? That building is the newest and the most modern of the three.",
+            "pt": "— E a terceira opção, perto do porto? Aquele prédio é o mais novo e o mais moderno dos três.",
+            "audio": "What about the third option, by the harbor? That building is the newest and the most modern of the three."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— I agree, but it's too far from the airport, and it's the most expensive of all. It's way over our budget.",
+            "pt": "— Concordo, mas é longe demais do aeroporto, e é o mais caro de todos. Passa muito do nosso orçamento.",
+            "audio": "I agree, but it's too far from the airport, and it's the most expensive of all. It's way over our budget."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Then King Street is definitely the best choice. It's more convenient for everyone, and it's large enough for our team to grow.",
+            "pt": "— Então a King Street é definitivamente a melhor escolha. É mais prática para todo mundo, e é grande o bastante para a nossa equipe crescer.",
+            "audio": "Then King Street is definitely the best choice. It's more convenient for everyone, and it's large enough for our team to grow."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Adjetivos curtos não usam more: eles ganham -er no final. Em inglês, nunca diga more cheap, more big ou more fast; diga cheaper, bigger, faster. E nunca duplique a marca de comparação dizendo more cheaper ou more better! PASSO 2: “Do que” na comparação é sempre than, nunca that. Por causa do “que” em português, muitos brasileiros escrevem bigger that. Grave: depois de comparativo, a palavra é sempre than (dén). PASSO 3: A diferença vital entre very (muito), too (demais = problema!) e enough (suficiente). PASSO 4: It's very expensive = É muito caro (mas talvez eu compre). PASSO 5: It's too expensive = É caro demais (passou do limite; não dá para comprar!). PASSO 6: It's big enough = É grande o suficiente (atenção à posição: enough vem depois do adjetivo, mas antes do substantivo: big enough × enough space!).",
+        "comparacao": "Em português, usamos a palavra “mais” para praticamente todos os adjetivos (“mais barato, mais rápido, mais caro”), usamos “que” na comparação (“maior que”), “tão… como” na igualdade e “muito” tanto para intensidade positiva quanto para excesso. Veja as quatro armadilhas que isso cria:",
+        "tabela": [
+          {
+            "portugues": "Este hotel é mais barato que aquele.",
+            "ingles": "This hotel is cheaper than that one.",
+            "evite": "more cheap that that one"
+          },
+          {
+            "portugues": "Seu inglês está melhor agora!",
+            "ingles": "Your English is better now!",
+            "evite": "more good / more better"
+          },
+          {
+            "portugues": "Não é tão caro como eu pensava.",
+            "ingles": "It isn't as expensive as I thought.",
+            "evite": "so expensive like I thought"
+          },
+          {
+            "portugues": "Este sapato é pequeno demais (não serve).",
+            "ingles": "These shoes are too small (not big enough).",
+            "evite": "very small / enough big"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "bigger",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Comparativos",
         "explicacao": "PASSO 1: adjetivo CURTO (1 sílaba) + -er + than: «tall → taller than», «cheap → cheaper than». PASSO 2: terminado em -e, só -r: «large → larger». PASSO 3: consoante-vogal-consoante dobra: «big → bigger», «hot → hotter». PASSO 4: terminado em -y troca por -ier: «easy → easier», «happy → happier». PASSO 5: adjetivo LONGO (2 ou mais sílabas, exceto -y): «more» + adjetivo + than: «more expensive than», «more interesting than». PASSO 6: irregulares: good → better, bad → worse, far → farther/further. PASSO 7: «than» é «do que»: «São Paulo is bigger than Curitiba.»",
         "comparacao": "em português «mais … do que» vale para todos: «mais alto», «mais caro». O inglês divide: curto leva -er, longo leva «more». Nunca os dois juntos.",
@@ -140,12 +231,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Compare 6 pares: dois lugares, duas pessoas, dois objetos."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga uma decisão na hora, um plano e uma previsão sobre o fim de semana."
       }
     ]

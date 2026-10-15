@@ -20,8 +20,111 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve onde estava, como foi uma viagem, um evento ou o clima no passado usando was e were (sem misturar com o auxiliar did), fala do que havia em um lugar com there was / there were, diz onde e quando nasceu com I was born e usa os marcadores de tempo passado (yesterday, last, ago)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "De volta ao escritório depois da conferência",
+        "contexto": "É segunda-feira de manhã em Boston. Kevin encontra Marina na copa logo após a viagem dela para uma conferência em Chicago.",
+        "linhas": [
+          {
+            "personagem": "Kevin",
+            "ru": "— Welcome back, Marina! How was the conference in Chicago last week?",
+            "pt": "— Bem-vinda de volta, Marina! Como foi a conferência em Chicago na semana passada?",
+            "audio": "Welcome back, Marina! How was the conference in Chicago last week?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Thanks, Kevin! It was fantastic, but it was exhausting. There were over five hundred people at the event!",
+            "pt": "— Obrigada, Kevin! Foi fantástica, mas foi cansativa. Havia mais de quinhentas pessoas no evento!",
+            "audio": "Thanks, Kevin! It was fantastic, but it was exhausting. There were over five hundred people at the event!"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Wow, that's huge! Were the presentations good?",
+            "pt": "— Uau, é enorme! As apresentações foram boas?",
+            "audio": "Wow, that's huge! Were the presentations good?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Yes, they were. The keynote speaker on Thursday afternoon was brilliant.",
+            "pt": "— Sim, foram. O palestrante principal na quinta-feira à tarde foi brilhante.",
+            "audio": "Yes, they were. The keynote speaker on Thursday afternoon was brilliant."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— And how was the hotel? Was it near the convention center?",
+            "pt": "— E como era o hotel? Ficava perto do centro de convenções?",
+            "audio": "And how was the hotel? Was it near the convention center?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— No, it wasn't very close, unfortunately. It was about twenty minutes away by taxi, and there was a lot of traffic every morning.",
+            "pt": "— Não, não ficava muito perto, infelizmente. Ficava a uns vinte minutos de táxi, e tinha muito trânsito todas as manhãs.",
+            "audio": "No, it wasn't very close, unfortunately. It was about twenty minutes away by taxi, and there was a lot of traffic every morning."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— What about the weather? Was it freezing in Chicago?",
+            "pt": "— E quanto ao clima? Estava congelando em Chicago?",
+            "audio": "What about the weather? Was it freezing in Chicago?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Actually, we were really lucky! It wasn't cold at all on Thursday and Friday — it was sunny and around sixty-five degrees.",
+            "pt": "— Na verdade, demos muita sorte! Não fez frio nenhum na quinta e na sexta — estava ensolarado e uns 65 graus (Fahrenheit, cerca de 18 °C).",
+            "audio": "Actually, we were really lucky! It wasn't cold at all on Thursday and Friday — it was sunny and around sixty-five degrees."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Nice! By the way, where were you yesterday evening? I called you around seven, and you weren't online.",
+            "pt": "— Legal! Aliás, onde você estava ontem à noite? Te liguei lá pelas sete e você não estava online.",
+            "audio": "Nice! By the way, where were you yesterday evening? I called you around seven, and you weren't online."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Oh, I was on the plane back to Boston last night! My flight was delayed for three hours.",
+            "pt": "— Ah, eu estava no avião de volta para Boston ontem à noite! Meu voo atrasou por três horas.",
+            "audio": "Oh, I was on the plane back to Boston last night! My flight was delayed for three hours."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Was e were funcionam sozinhos: não use did / didn't com eles. Assim como am, is, are no presente, was e were fazem a negativa sozinhos (wasn't / weren't) e pulam para antes do sujeito na pergunta (Was it good? / Were you there?). Não diga Did you were ou Did it was! PASSO 2: “Eu nasci” exige sempre was / were born. Em inglês, nascer é uma estrutura passiva (“fui dado à luz”). Nunca diga I born in Brazil; diga sempre I was born in Brazil (Where were you born?). PASSO 3: “Ontem à noite” é last night, e “atrás/há” é ago no fim. Em português dizemos “ontem à noite” e “há dois dias”. Em inglês, todas as partes de ontem usam yesterday (yesterday morning / afternoon / evening), exceto a noite, que é sempre last night (nunca yesterday night). E para contar tempo para trás a partir de agora, coloque ago depois do período: two days ago, ten minutes ago (nunca ago two days).",
+        "comparacao": "Em português, temos o pretérito perfeito (“eu fui / eu estive”) e o pretérito imperfeito (“eu era / eu estava”), além de dizermos “Eu nasci” como um verbo ativo e “Tinha muita gente” com o verbo ter. Veja as quatro armadilhas que isso cria em inglês:",
+        "tabela": [
+          {
+            "portugues": "Nós estávamos cansados ontem.",
+            "ingles": "We were tired yesterday.",
+            "evite": "We was tired yesterday."
+          },
+          {
+            "portugues": "Você estava em casa ontem à noite?",
+            "ingles": "Were you at home last night?",
+            "evite": "Did you was / Did you be at home yesterday night?"
+          },
+          {
+            "portugues": "Eu nasci em 1995 em Recife.",
+            "ingles": "I was born in 1995 in Recife.",
+            "evite": "I born / I borned in 1995."
+          },
+          {
+            "portugues": "Tinha / Havia muita gente na festa.",
+            "ingles": "There were a lot of people at the party.",
+            "evite": "Had many people / There was many people."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "was",
@@ -83,7 +186,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Was e were",
         "explicacao": "PASSO 1: «was» e «were» são o passado de «am/is/are». PASSO 2: «was» vai com I, he, she, it: «I was tired.», «She was at home.» PASSO 3: «were» vai com you, we, they: «We were at school.» PASSO 4: negativa: «wasn't» e «weren't»: «He wasn't at work.» PASSO 5: pergunta: inverta: «Were you at home?», «Was it good?» Resposta curta: «Yes, I was.», «No, they weren't.» PASSO 6: marcadores: yesterday, last night, last week, two days ago. PASSO 7: «ago» vem DEPOIS do tempo: «two days ago», nunca «ago two days».",
         "comparacao": "em português o passado de «ser/estar» varia muito (era, foi, estava, esteve). O inglês tem só duas formas: «was» e «were». O contexto diz se foi «era» ou «foi».",
@@ -130,12 +233,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga onde você estava ontem à noite, na semana passada e há dois anos."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 3 planos seus com «going to» e como está o tempo hoje."
       }
     ]

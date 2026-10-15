@@ -20,8 +20,100 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você narra acontecimentos passados com verbos regulares (-ed) pronunciando corretamente os três sons finais (t, d, id), domina os verbos irregulares mais frequentes da língua inglesa (went, took, had, saw, made, bought, left, met) e faz perguntas e negativas com did e didn't sem duplicar o passado."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O que você fez no fim de semana?",
+        "contexto": "Lucas conversa com a colega Sarah na segunda-feira de manhã enquanto esperam o elevador no escritório.",
+        "linhas": [
+          {
+            "personagem": "Sarah",
+            "ru": "— Morning, Lucas! Did you have a good weekend? What did you do?",
+            "pt": "— Bom dia, Lucas! Você teve um bom fim de semana? O que você fez?",
+            "audio": "Morning, Lucas! Did you have a good weekend? What did you do?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Morning, Sarah! Yes, I did. On Saturday, I took the train to Niagara Falls with a friend from Brazil.",
+            "pt": "— Bom dia, Sarah! Tive, sim. No sábado, peguei o trem para as Cataratas do Niágara com um amigo do Brasil.",
+            "audio": "Morning, Sarah! Yes, I did. On Saturday, I took the train to Niagara Falls with a friend from Brazil."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Oh, nice! How long did the train take?",
+            "pt": "— Ah, que legal! Quanto tempo levou o trem?",
+            "audio": "Oh, nice! How long did the train take?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— It took about two hours. We left Toronto at eight in the morning and arrived there around ten.",
+            "pt": "— Levou umas duas horas. Saímos de Toronto às oito da manhã e chegamos lá por volta das dez.",
+            "audio": "It took about two hours. We left Toronto at eight in the morning and arrived there around ten."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Did you take the boat tour near the falls?",
+            "pt": "— Vocês fizeram o passeio de barco perto das cataratas?",
+            "audio": "Did you take the boat tour near the falls?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— No, we didn't. We wanted to go on the boat, but the line was huge! So we walked along the river, took a lot of photos, and had lunch at a great restaurant with a view.",
+            "pt": "— Não. Queríamos ir no barco, mas a fila estava imensa! Então caminhamos ao longo do rio, tiramos muitas fotos e almoçamos em um restaurante ótimo com vista.",
+            "audio": "No, we didn't. We wanted to go on the boat, but the line was huge! So we walked along the river, took a lot of photos, and had lunch at a great restaurant with a view."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— What did you do on Sunday? Did you go out too?",
+            "pt": "— O que você fez no domingo? Saiu também?",
+            "audio": "What did you do on Sunday? Did you go out too?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— No, I didn't go anywhere on Sunday. It rained all afternoon, so I stayed at the hotel, watched a movie, and called my family. What about you?",
+            "pt": "— Não, não fui a lugar nenhum no domingo. Choveu a tarde inteira, então fiquei no hotel, assisti a um filme e liguei para a minha família. E você?",
+            "audio": "No, I didn't go anywhere on Sunday. It rained all afternoon, so I stayed at the hotel, watched a movie, and called my family. What about you?"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— I met my sister for brunch on Sunday, and we bought a birthday gift for our mom.",
+            "pt": "— Encontrei minha irmã para um brunch no domingo, e compramos um presente de aniversário para a nossa mãe.",
+            "audio": "I met my sister for brunch on Sunday, and we bought a birthday gift for our mom."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: A Lei da Gangorra: se tem did / didn't, o verbo principal fica na forma base. Em português, mantemos o verbo no passado na negativa (“Eu não fui”) e na pergunta (“Você foi?”). Em inglês, só pode haver uma marca de passado por frase. Na afirmativa, a marca fica no verbo (I went / I worked). Na pergunta e na negativa, o auxiliar did / didn't rouba a marca de passado para si, e o verbo principal volta à forma base (Did you go? / I didn't go — e não Did you went? ou I didn't went!). PASSO 2: O segredo sonoro do -ed: você quase nunca pronuncia a letra e! O brasileiro tende a ler toda terminação -ed como uma sílaba extra (“uó-kêd”, “plêi-êd”). Na vida real, a letra e é muda em quase todos os verbos regulares! Só pronunciamos a sílaba extra -id quando o verbo já termina no som de T ou D (want → wanted, need → needed, decide → decided). Nos demais, o -ed gruda direto na consoante anterior como um sopro de t (worked = uârkt) ou de d (called = kóld).",
+        "comparacao": "Ao contar histórias no passado em inglês, o falante de português enfrenta três armadilhas principais:",
+        "tabela": [
+          {
+            "portugues": "Você foi à festa ontem?",
+            "ingles": "Did you go to the party yesterday?",
+            "evite": "Did you went to the party?"
+          },
+          {
+            "portugues": "Eu não vi a sua mensagem.",
+            "ingles": "I didn't see your message.",
+            "evite": "I didn't saw your message."
+          },
+          {
+            "portugues": "Pronunciar o -e- de todos os -ed.",
+            "ingles": "walked (uókt), called (kóld — 1 sílaba!).",
+            "evite": "uó-kêd / có-lêd (só tem -id após t ou d!)."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "work",
@@ -83,7 +175,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "O passado simples regular",
         "explicacao": "PASSO 1: para falar de algo terminado, acrescente -ed ao verbo: «work → worked». O passado é IGUAL para todas as pessoas: «I worked», «she worked», «they worked». PASSO 2: verbo terminado em -e, só -d: «live → lived», «like → liked». PASSO 3: consoante + y vira -ied: «study → studied», «try → tried». Mas vogal + y só -ed: «play → played». PASSO 4: verbo curto terminado em consoante-vogal-consoante dobra: «stop → stopped», «plan → planned». PASSO 5: use marcadores: yesterday, last year, in 2020, two days ago. PASSO 6: o passado simples fala de algo ACABADO: «I lived in Rio for five years» (e já não moro).",
         "comparacao": "em português o passado muda com a pessoa («trabalhei», «trabalhou», «trabalharam»). O inglês usa uma forma só, «worked», para todas.",
@@ -140,12 +232,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 6 coisas que você fez ontem usando verbos regulares."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte como foi o seu último fim de semana, com «was» e «were»."
       }
     ]

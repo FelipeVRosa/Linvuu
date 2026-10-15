@@ -4,7 +4,7 @@
 // onde estão os perfis dos dois autores.
 import { EMAIL_OFICIAL, SITE_URL } from './site.ts';
 
-export const WHATSAPP_NUMERO = '';
+export const WHATSAPP_NUMERO = '5512996332770';
 export const WHATSAPP_MENSAGEM = 'Olá! Vim pelo site da Linvuu e queria tirar uma dúvida.';
 export const LINKEDIN_EMPRESA = '';
 

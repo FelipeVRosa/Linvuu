@@ -15,13 +15,105 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você identifica substantivos incontáveis que não têm plural nem recebem a / an (information, advice, news, furniture, luggage), escolhe entre some e any, entre much, many e a lot of, entre a little e a few, e faz perguntas com How much…? e How many…?."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Preparando um jantar no apartamento",
+          "contexto": "Marina e seu colega Kevin estão na cozinha do apartamento dela em Boston conferindo o que falta comprar no supermercado antes da chegada dos amigos.",
+          "linhas": [
+            {
+              "personagem": "Marina",
+              "ru": "— Kevin, let's check the fridge before we go to the supermarket. Do we have any cheese for the pasta?",
+              "pt": "— Kevin, vamos checar a geladeira antes de irmos ao supermercado. Temos queijo para o macarrão?",
+              "audio": "Kevin, let's check the fridge before we go to the supermarket. Do we have any cheese for the pasta?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Let me see… We have some parmesan, and there are a few tomatoes in the drawer, but we don't have any garlic or olive oil.",
+              "pt": "— Deixe-me ver… Temos um pouco de parmesão, e há alguns tomates na gaveta, mas não temos alho nem azeite de oliva.",
+              "audio": "Let me see… We have some parmesan, and there are a few tomatoes in the drawer, but we don't have any garlic or olive oil."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— OK, I'll put those on the list. How much pasta do we have in the cabinet?",
+              "pt": "— Certo, vou colocar esses na lista. Quanto macarrão temos no armário?",
+              "audio": "OK, I'll put those on the list. How much pasta do we have in the cabinet?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Only a little — maybe half a box. We need two more boxes because eight people are coming tonight.",
+              "pt": "— Só um pouco — talvez meia caixa. Precisamos de mais duas caixas porque oito pessoas vêm hoje à noite.",
+              "audio": "Only a little — maybe half a box. We need two more boxes because eight people are coming tonight."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Right! And how many bottles of wine should we buy?",
+              "pt": "— Verdade! E quantas garrafas de vinho devemos comprar?",
+              "audio": "Right! And how many bottles of wine should we buy?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Three or four bottles. By the way, do you have any news about Sarah's flight?",
+              "pt": "— Três ou quatro garrafas. Aliás, você tem alguma notícia sobre o voo da Sarah?",
+              "audio": "Three or four bottles. By the way, do you have any news about Sarah's flight?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Yes, I have good news! She just sent me a message. She had a lot of luggage, so she took a taxi from the airport.",
+              "pt": "— Sim, tenho uma boa notícia! Ela acabou de me mandar mensagem. Ela estava com muita bagagem, então pegou um táxi do aeroporto.",
+              "audio": "Yes, I have good news! She just sent me a message. She had a lot of luggage, so she took a taxi from the airport."
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Awesome. Oh, can you give me some advice on the dessert? Should I make a chocolate cake or buy some ice cream?",
+              "pt": "— Ótimo. Ah, você pode me dar um conselho sobre a sobremesa? Devo fazer um bolo de chocolate ou comprar sorvete?",
+              "audio": "Awesome. Oh, can you give me some advice on the dessert? Should I make a chocolate cake or buy some ice cream?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Here's a piece of advice: buy ice cream! We don't have much time before seven!",
+              "pt": "— Aqui vai um conselho: compre sorvete! Não temos muito tempo antes das sete!",
+              "audio": "Here's a piece of advice: buy ice cream! We don't have much time before seven!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Fale 4 frases sobre a sua família: o que cada pessoa tem e de quem são as coisas."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Os incontáveis mais traiçoeiros (sem a / an e sem -s). Grave estas dez palavras que são contáveis em português, mas incontáveis e sempre singulares em inglês: PASSO 2: information (informação/informações) PASSO 3: advice (conselho/conselhos) PASSO 4: news (notícia/notícias — termina em s, mas é singular: The news is good!) PASSO 5: furniture (móvel/móveis) PASSO 6: luggage / baggage (bagagem/malas) PASSO 7: equipment (equipamento/equipamentos) PASSO 8: homework / housework (lição de casa / tarefas domésticas) PASSO 9: work (trabalho — para “um emprego”, diga a job!) PASSO 10: money (dinheiro — contamos dollars/reais, mas money é incontável: Money is…) PASSO 11: bread (pão — para “um pão”, diga a bread roll ou a loaf of bread!) PASSO 12: Como contar o que é incontável? Use um “recipiente” (a piece of…). Quando quiser especificar “um conselho”, “uma informação”, “um móvel” ou “dois pães”, coloque uma unidade contável na frente com of: PASSO 13: a piece of advice / two pieces of information / a piece of furniture PASSO 14: a glass of water / two cups of coffee / a bottle of wine / a slice of bread / a bar of chocolate",
+          "comparacao": "Em português, dizemos tranquilamente “Preciso de umas informações”, “Me dá um conselho”, “Tenho duas notícias boas”, “Comprei móveis novos”. Em inglês, essas palavras são incontáveis (uncountable) — tratadas como uma massa indivisível, exatamente como água ou arroz. Veja as quatro armadilhas que você precisa desarmar:",
+          "tabela": [
+            {
+              "portugues": "Preciso de algumas informações.",
+              "ingles": "I need some information.",
+              "evite": "I need some informations."
+            },
+            {
+              "portugues": "Posso te dar um conselho?",
+              "ingles": "Can I give you some advice (ou a piece of advice)?",
+              "evite": "Can I give you an advice?"
+            },
+            {
+              "portugues": "As notícias são ótimas!",
+              "ingles": "The news is great!",
+              "evite": "The news are great!"
+            },
+            {
+              "portugues": "Quantas pessoas vêm?",
+              "ingles": "How many people are coming?",
+              "evite": "How much people are coming?"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "bread",
@@ -83,7 +175,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Contáveis e incontáveis",
           "explicacao": "PASSO 1: CONTÁVEIS você conta um a um: «an egg, two eggs», «a sandwich, three sandwiches». Eles têm plural e aceitam «a/an». PASSO 2: INCONTÁVEIS são massa ou líquido, sem plural: water, milk, coffee, bread, rice, juice. Nunca «a water» nem «waters» para a coisa em si. PASSO 3: para contar um incontável, use uma medida: «a glass of water», «a cup of coffee», «a slice of bread», «a bowl of rice». PASSO 4: o verbo de incontável é singular: «The milk is cold.» PASSO 5: «a lot of» serve para os dois: «a lot of eggs», «a lot of water». PASSO 6: «much» e «many»: «many» com contáveis, «much» com incontáveis, mais em frases negativas e perguntas: «How many eggs?», «How much milk?»",
           "comparacao": "em português quase tudo tem plural («pães», «águas», «cafés»). Em inglês, «bread», «water», «milk» e «rice» não se contam: não existe «breads» para o alimento.",
@@ -135,8 +227,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 4 coisas que você come ou bebe e quais são contáveis: «I eat eggs. I drink coffee.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Fale 4 frases sobre a sua família: o que cada pessoa tem e de quem são as coisas."
         }
       ]
     },
@@ -146,13 +243,37 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Diga se é contável ou incontável: egg, milk, sandwich, rice, juice, apple."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como os quantificadores mudam conforme o tipo de substantivo e o tipo de frase: PASSO 2: COM CONTÁVEIS NO PLURAL COM INCONTÁVEIS NO TIPO DE FRASE (TOMATOES, BOTTLES, SINGULAR (CHEESE, TIME, FRIENDS) MONEY, ADVICE) PASSO 3: COM CONTÁVEIS NO PLURAL COM INCONTÁVEIS NO TIPO DE FRASE (TOMATOES, BOTTLES, SINGULAR (CHEESE, TIME, FRIENDS) MONEY, ADVICE) PASSO 4: Pergunta de How many bottles do we How much pasta do we quantidade (“Quantos / need? have? Quanto?”) PASSO 5: Perguntas: PASSO 6: Quando trocamos some por any? PASSO 7: Qual expressão para “muito(s)” funciona tanto para contáveis quanto para incontáveis sem você precisar pensar?",
+          "tabela": [
+            {
+              "c1": "Negativa (“nenhum / nada de”)",
+              "c2": "We don't have any tomatoes.",
+              "c3": "We don't have any cheese."
+            },
+            {
+              "c1": "Pergunta (“algum?”)",
+              "c2": "Do we have any tomatoes?",
+              "c3": "Do we have any cheese?"
+            },
+            {
+              "c1": "Grande quantidade (“muitos / muito”)",
+              "c2": "many friends / a lot of friends",
+              "c3": "much time / a lot of time"
+            },
+            {
+              "c1": "Pequena quantidade (“alguns / um pouco”)",
+              "c2": "a few minutes / a few friends",
+              "c3": "a little time / a little milk"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "some",
@@ -200,7 +321,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Some, any e a lot of",
           "explicacao": "PASSO 1: «some» em frases AFIRMATIVAS, com incontáveis e contáveis no plural: «I have some milk.», «She has some eggs.» PASSO 2: «any» em NEGATIVAS e PERGUNTAS: «I don't have any milk.», «Do you have any eggs?» PASSO 3: nas negativas, «any» = nenhum: «There isn't any bread.» PASSO 4: exceção: em ofertas e pedidos, use «some»: «Would you like some coffee?» PASSO 5: «a lot of» = muito: «I drink a lot of water.» Em frases negativas, prefira «much/many»: «I don't eat much meat.» PASSO 6: não use «some/any» com singular contável: «a sandwich» (nunca «some sandwich»).",
           "comparacao": "em português «algum/nenhum» muda de forma. O inglês usa «some» para o positivo e «any» para negativa e pergunta; a palavra muda, o sentido de quantidade vem junto.",
@@ -247,9 +368,21 @@
           "tag": "Quantidade"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Contáveis × Incontáveis: Contáveis têm singular e plural (a bottle / three bottles). Incontáveis (líquidos, grãos e a lista information, advice, news, furniture, luggage, bread, money, time, traffic, work) não têm plural, não aceitam a / an e usam verbo no singular (is / has). PASSO 2: Some × Any: PASSO 3: some = em frases afirmativas (I need some advice) e em ofertas ou pedidos onde esperamos um “sim” (Would you like some coffee? / Can I get some water?). PASSO 4: any = em frases negativas (I don't have any cash) e na maioria das perguntas (Do you have any questions?). PASSO 5: Muito(s) (many / much / a lot of): PASSO 6: many + contáveis no plural (many people, many emails). PASSO 7: much + incontáveis (much time, much money, much traffic) — usado principalmente em negativas e perguntas (I don't have much time). PASSO 8: a lot of / lots of + qualquer um dos dois (é a forma mais natural nas frases afirmativas: We have a lot of work and a lot of meetings). PASSO 9: Pouco(s) (a few / a little):a few + plural (a few days, a few questions); a little + incontável (a little water, a little help). PASSO 10: Perguntas:How many + plural? | How much + incontável (ou para perguntar preço: How much is this?).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Diga o que há e o que não há na sua geladeira: «There is some milk. There aren't any eggs.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga se é contável ou incontável: egg, milk, sandwich, rice, juice, apple."
         }
       ]
     },
@@ -259,13 +392,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Complete: «I have ___ bread. I don't have ___ milk. Do you have ___ eggs?»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "menu",
@@ -306,7 +434,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "I'd like: o pedido educado",
           "explicacao": "PASSO 1: «I'd like» = «eu gostaria». É o jeito educado de pedir: «I'd like a coffee, please.» PASSO 2: «I want» existe, mas soa seco num restaurante. Prefira «I'd like». PASSO 3: a pergunta do garçom: «What would you like?» ou «Can I get you something?» PASSO 4: peça a conta: «Can I have the bill, please?» PASSO 5: sempre feche com «please» e «thank you».",
           "comparacao": "em português dizemos «queria um café». O inglês traduz com «I'd like», nunca «I want» em atendimento.",
@@ -343,7 +471,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "At the café / No café",
           "contexto": "Um cliente pede o café da manhã.",
           "linhas": [
@@ -386,9 +514,305 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Can I ask you for a piece of advice?",
+              "translit": "",
+              "pt": "Posso te pedir um conselho?",
+              "en": "",
+              "audio": "Can I ask you for a piece of advice?"
+            },
+            {
+              "ru": "Could you send me some information about the course?",
+              "translit": "",
+              "pt": "Você poderia me enviar algumas informações sobre o curso?",
+              "en": "",
+              "audio": "Could you send me some information about the course?"
+            },
+            {
+              "ru": "I have good news: I got a new job!",
+              "translit": "",
+              "pt": "Tenho uma ótima notícia: consegui um emprego novo!",
+              "en": "",
+              "audio": "I have good news: I got a new job!"
+            },
+            {
+              "ru": "We don't have much time — our train leaves in ten minutes.",
+              "translit": "",
+              "pt": "Não temos muito tempo — nosso trem sai daqui a dez minutos.",
+              "en": "",
+              "audio": "We don't have much time — our train leaves in ten minutes."
+            },
+            {
+              "ru": "How many people are coming to the meeting today?",
+              "translit": "",
+              "pt": "Quantas pessoas vêm para a reunião hoje?",
+              "en": "",
+              "audio": "How many people are coming to the meeting today?"
+            },
+            {
+              "ru": "How much money do we need for the taxi?",
+              "translit": "",
+              "pt": "De quanto dinheiro precisamos para o táxi?",
+              "en": "",
+              "audio": "How much money do we need for the taxi?"
+            },
+            {
+              "ru": "I speak a little Spanish and a few words in German.",
+              "translit": "",
+              "pt": "Falo um pouco de espanhol e algumas palavras em alemão.",
+              "en": "",
+              "audio": "I speak a little Spanish and a few words in German."
+            },
+            {
+              "ru": "Would you like some more coffee? — Just a little, thanks!",
+              "translit": "",
+              "pt": "Você aceita mais um pouco de café? — Só um pouquinho, obrigado!",
+              "en": "",
+              "audio": "Would you like some more coffee? — Just a little, thanks!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Can you give me ___ before the interview?",
+              "opcoes": [
+                "an advice",
+                "some advice"
+              ],
+              "gabarito": "some advice",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "All the ___ on the website is up to date.",
+              "opcoes": [
+                "information",
+                "informations"
+              ],
+              "gabarito": "information",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "All the information on the website ___ up to date.",
+              "opcoes": [
+                "is",
+                "are"
+              ],
+              "gabarito": "is",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How ___ luggage do you have, and how many bags are you checking?",
+              "opcoes": [
+                "much",
+                "many"
+              ],
+              "gabarito": "much",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How much luggage do you have, and how ___ bags are you checking?",
+              "opcoes": [
+                "much",
+                "many"
+              ],
+              "gabarito": "many",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We don't have ___ milk left in the fridge.",
+              "opcoes": [
+                "some",
+                "any"
+              ],
+              "gabarito": "any",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Would you like ___ tea or a few cookies?",
+              "opcoes": [
+                "some",
+                "any"
+              ],
+              "gabarito": "some",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Would you like some tea or ___ cookies?",
+              "opcoes": [
+                "a few",
+                "a little"
+              ],
+              "gabarito": "a few",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-105b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I have ___ questions about the contract.",
+              "opcoes": [
+                "a little",
+                "a few"
+              ],
+              "gabarito": "a few",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "There isn't ___ traffic on Sundays, so it takes a little time.",
+              "opcoes": [
+                "many",
+                "much"
+              ],
+              "gabarito": "much",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "There isn't much traffic on Sundays, so it takes ___ time.",
+              "opcoes": [
+                "a few",
+                "a little"
+              ],
+              "gabarito": "a little",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How ___ people work in your department?",
+              "opcoes": [
+                "much",
+                "many"
+              ],
+              "gabarito": "many",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I only have ___ cash with me. Is there an ATM near here?",
+              "respostaEsperada": "a little",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— How ___ emails do you receive every day? — A lot! Maybe a hundred a day.",
+              "respostaEsperada": "many",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— How many emails do you receive every day? — ___! Maybe a hundred a day.",
+              "respostaEsperada": "A lot",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Let me give you a ___ of advice: don't take too much luggage on a short trip!",
+              "respostaEsperada": "piece",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Let me give you a piece of advice: don't take too ___ luggage on a short trip!",
+              "respostaEsperada": "much",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We only need ___ tomatoes (poucos) and a little olive oil (pouco) for the salad.",
+              "respostaEsperada": "a few",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We only need a few tomatoes (poucos) and ___ olive oil (pouco) for the salad.",
+              "respostaEsperada": "a little",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Could I have a ___ of water and two slices of bread, please?",
+              "respostaEsperada": "glass",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Could I have a glass of water and two ___ of bread, please?",
+              "respostaEsperada": "slices",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Do you have ___ news about the project? — Yes, I have some great news!",
+              "respostaEsperada": "any",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Do you have any news about the project? — Yes, I have ___ great news!",
+              "respostaEsperada": "some",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Hurry up! We don't have ___ time before the presentation starts.",
+              "respostaEsperada": "much",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She speaks English very well, and she only makes ___ mistakes.",
+              "respostaEsperada": "a few",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-208a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Faça o seu pedido num café em voz alta, do cumprimento à conta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «I have ___ bread. I don't have ___ milk. Do you have ___ eggs?»"
         }
       ]
     },
@@ -398,13 +822,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Diga 3 coisas que você tem, 2 que você não tem e faça 1 pergunta com «Do you have any…?»"
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -583,12 +1002,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Encene com voz alta um pedido completo: garçom e cliente. Troque os papéis."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Monte uma lista do que há e do que não há na sua geladeira agora usando some, a few, a little e don't have any.",
+              "respostaEsperada": "In my fridge, there's some milk, a little butter, and a few eggs, but we don't have any cheese or vegetables.",
+              "id": "en-008-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva frases usando corretamente os incontáveis information, advice, news e furniture (com verbo no singular ou com a piece of).",
+              "respostaEsperada": "I need some information about the flight. My boss gave me a great piece of advice. The news is very good today, and the office furniture is new.",
+              "id": "en-008-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Faça uma pergunta com How much e uma com How many para organizar uma viagem ou um churrasco com amigos.",
+              "respostaEsperada": "How many people are coming to the barbecue, and how much meat should we buy?",
+              "id": "en-008-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ofereça algo para um visitante beber usando Would you like some…? e escreva a resposta aceitando “só um pouquinho” (Just a little, please).",
+              "respostaEsperada": "Would you like some coffee? — Yes, just a little, please!",
+              "id": "en-008-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I need some informations about the hotel, and can you give me an advice?",
+              "respostaEsperada": "I need some information about the hotel, and can you give me some advice (ou a piece of advice)?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The news about the economy are very good today!",
+              "respostaEsperada": "The news about the economy is very good today!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: How much people are there in the meeting room?",
+              "respostaEsperada": "How many people are there in the meeting room?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: We don't have some bread, so I'm going to buy two breads at the bakery.",
+              "respostaEsperada": "We don't have any bread, so I'm going to buy two bread rolls (ou two loaves of bread) at the bakery.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She has a few money and a little friends in this city.",
+              "respostaEsperada": "She has a little money and a few friends in this city.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My sister bought three new furnitures for her living room.",
+              "respostaEsperada": "My sister bought three new pieces of furniture for her living room.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-008-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: We don't have much time, so let's just ask a few questions.",
+              "respostaEsperada": "OK",
+              "id": "en-008-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais marcante de falantes de português, até mesmo em níveis mais altos, é colocar -s ou a / an em information, advice, news, furniture, luggage, bread, work. Grave este alerta mental: se você estiver prestes a dizer an advice, some informations ou two breads, freia na hora e troque por some advice / a piece of advice, some information e two bread rolls / two slices of bread! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "some informations / an information",
+              "certo": "some information / a piece of information",
+              "motivo": "Information é incontável em inglês."
+            },
+            {
+              "errado": "an advice / two advices",
+              "certo": "some advice / a piece of advice / two pieces of advice",
+              "motivo": "Advice é incontável; nunca leva an nem - s."
+            },
+            {
+              "errado": "The news are good.",
+              "certo": "The news is good.",
+              "motivo": "Apesar do -s final, news é incontável e singular (it is)."
+            },
+            {
+              "errado": "How much people / How much emails?",
+              "certo": "How many people / How many emails?",
+              "motivo": "Pessoas e e-mails são contáveis no plural e exigem How many."
+            },
+            {
+              "errado": "I don't have some money.",
+              "certo": "I don't have any money.",
+              "motivo": "Frases negativas com n't pedem any, nunca some."
+            },
+            {
+              "errado": "I bought two breads.",
+              "certo": "I bought two bread rolls / two loaves of bread.",
+              "motivo": "Bread é a massa incontável; conta-se por pãezinhos (rolls), fatias (slices) ou pães de forma (loaves)."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 6. Complete com in, on, at ou --: Our flight is ____ Friday, May 1st, ____ 8:45 a.m., so let's meet ____ tomorrow morning ____ 6:30! 2. Do Capítulo 5. Passe para a negativa e para a pergunta: She has a lot of work on Mondays. 3. Do Capítulo 4 e 7. Por que dizemos There is a lot of traffic today (com is), mas There are a lot of cars today (com are)?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Usar information, advice, news, furniture, luggage sem colocar -s ou a / an e conjugando o verbo no singular (is). · Escolher automaticamente entre How much e How many, e entre a little e a few. · Fazer perguntas e negativas com any e ofertas educadas com Would you like some…?."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você pede comida e bebida num café em inglês. Próxima aula: can e can't."
+  "notasParaOAluno": "Você pede comida e bebida num café em inglês. Próxima aula: can e can't.",
+  "geradaDoLivro": true
 }

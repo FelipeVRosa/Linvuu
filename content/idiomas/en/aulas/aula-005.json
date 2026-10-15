@@ -15,13 +15,111 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você faz pedidos educados em cafés, restaurantes e lojas usando Can I get…?, I'll have… e I'd like… (sem soar rude com “I want”), aponta objetos perto e longe no singular e no plural (this, that, these, those), e forma plurais regulares e os sete plurais irregulares essenciais (people, men, women, children)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Pedido rápido em um café em nova york",
+          "contexto": "Lucas entra em uma cafeteria movimentada perto do metrô às 8h30 da manhã para tomar café e levar um lanche para o escritório.",
+          "linhas": [
+            {
+              "personagem": "Barista",
+              "ru": "— Hi there! What can I get started for you today?",
+              "pt": "— Olá! O que posso preparar para você hoje?",
+              "audio": "Hi there! What can I get started for you today?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Hi! Can I get a medium latte with oat milk, please?",
+              "pt": "— Oi! Você me vê um latte médio com leite de aveia, por favor?",
+              "audio": "Hi! Can I get a medium latte with oat milk, please?"
+            },
+            {
+              "personagem": "Barista",
+              "ru": "— Sure thing! Hot or iced?",
+              "pt": "— Com certeza! Quente ou gelado?",
+              "audio": "Sure thing! Hot or iced?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Hot, please. And how much are those sandwiches on the top shelf over there?",
+              "pt": "— Quente, por favor. E quanto custam aqueles sanduíches na prateleira de cima lá atrás?",
+              "audio": "Hot, please. And how much are those sandwiches on the top shelf over there?"
+            },
+            {
+              "personagem": "Barista",
+              "ru": "— Those are eight fifty each. We have turkey, cheese, and roast beef.",
+              "pt": "— Aqueles custam oito e cinquenta cada. Temos de peito de peru, queijo e rosbife.",
+              "audio": "Those are eight fifty each. We have turkey, cheese, and roast beef."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— That sounds great. I'll have a turkey sandwich, and I'd also like two of these chocolate cookies right here.",
+              "pt": "— Parece ótimo. Vou querer um sanduíche de peru, e gostaria também de dois destes cookies de chocolate bem aqui.",
+              "audio": "That sounds great. I'll have a turkey sandwich, and I'd also like two of these chocolate cookies right here."
+            },
+            {
+              "personagem": "Barista",
+              "ru": "— Got it. Look — there are a lot of people in line today, so the kitchen is a bit busy, but your sandwich will be ready in two minutes. Is this for here or to go?",
+              "pt": "— Anotado. Olha — tem muitas pessoas na fila hoje, então a cozinha está um pouco corrida, mas seu sanduíche fica pronto em dois minutos. É para comer aqui ou para viagem?",
+              "audio": "Got it. Look — there are a lot of people in line today, so the kitchen is a bit busy, but your sandwich will be ready in two minutes. Is this for here or to go?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— To go, please.",
+              "pt": "— Para viagem, por favor.",
+              "audio": "To go, please."
+            },
+            {
+              "personagem": "Barista",
+              "ru": "— Your total is twenty-one seventy-five. You can tap your card right here on the screen.",
+              "pt": "— Seu total dá vinte e um e setenta e cinco. Você pode aproximar seu cartão bem aqui na tela.",
+              "audio": "Your total is twenty-one seventy-five. You can tap your card right here on the screen."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Here you go. Have a great day!",
+              "pt": "— Aqui está. Tenha um ótimo dia!",
+              "audio": "Here you go. Have a great day!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Diga 5 frases com o presente simples sobre a sua rotina, usando «always», «usually» ou «never»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: “I want” no balcão soa rude. Com garçons e atendentes, substitua “I want” pela tríade educada: Can I get…? (ou Can I have…?), I'll have… (“Eu vou querer…”) e I'd like… (“Eu gostaria de…”). PASSO 2: Para reagir ao que a outra pessoa acabou de dizer, o natural é That. Quando alguém te dá uma notícia, diz um preço ou faz uma sugestão, essa ideia está “lá com a pessoa”, então reagimos com That: That's awesome!, That makes sense!, That's expensive!. PASSO 3: Plurais irregulares proíbem -s. Palavras como person, man, woman e child têm plurais próprios (people, men, women, children) e nunca recebem -s no final.",
+          "comparacao": "Em um balcão no Brasil, dizemos “Eu quero um café”, “Eu vou querer o salmão” ou “Me dá uma água”. Se você traduzir isso ao pé da letra em inglês, cai em quatro armadilhas imediatas:",
+          "tabela": [
+            {
+              "portugues": "Eu quero um café, por favor.",
+              "ingles": "Can I get a coffee, please? / I'd like a coffee.",
+              "evite": "I want a coffee. / Give me a coffee."
+            },
+            {
+              "portugues": "Eu vou querer o sanduíche.",
+              "ingles": "I'll have the sandwich, please.",
+              "evite": "I will want the sandwich."
+            },
+            {
+              "portugues": "(Reagindo:) Isto é ótimo!",
+              "ingles": "That's great! / That sounds great!",
+              "evite": "This is great! (para o que o outro disse)"
+            },
+            {
+              "portugues": "Três mulheres e duas crianças.",
+              "ingles": "Three women and two children.",
+              "evite": "Three womans and two childs."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "book",
@@ -90,7 +188,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Os artigos: a, an e the",
           "explicacao": "PASSO 1: «a» e «an» significam «um» e «uma». Só se usam com coisas contáveis no SINGULAR: «a book», «an apple». PASSO 2: a escolha entre «a» e «an» depende do SOM, não da letra. Som de consoante pede «a» (a book, a university, porque «university» começa com som de «iú»); som de vogal pede «an» (an apple, an umbrella, an hour, porque o «h» de «hour» não soa). PASSO 3: «the» significa «o, a, os, as» e vale para singular e plural. Use quando quem fala e quem ouve já sabem de qual coisa se trata: «I have a dog. The dog is big.» PASSO 4: no plural não existe «a»: «I have books» (alguns livros) ou «I have the books» (aqueles livros). PASSO 5: para falar de algo em geral, use o plural ou o incontável SEM artigo: «I like music», «Dogs are friendly». PASSO 6: profissões e identidades no singular pedem «a/an»: «She is a teacher».",
           "comparacao": "o português costuma usar artigo para generalizar («as pessoas gostam DA música»). O inglês não usa: «People like music.» Já a profissão, que em português dispensa artigo («ela é professora»), em inglês leva «a/an»: «She is a teacher».",
@@ -142,8 +240,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 6 frases sobre objetos que você tem agora, com a/an e the: «I have a phone. I have an umbrella. The phone is new.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga 5 frases com o presente simples sobre a sua rotina, usando «always», «usually» ou «never»."
         }
       ]
     },
@@ -153,13 +256,33 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva «a» ou «an» antes de cada palavra: ___ apple, ___ book, ___ umbrella, ___ hour, ___ university, ___ pen."
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare os pares abaixo observando a distância (perto vs. longe) e a quantidade (um vs. vários): PASSO 2: Perguntas: PASSO 3: Quais duas palavras usamos para apenas 1 item (com is)? E quais duas usamos para 2 ou mais itens (com are)? PASSO 4: Na Cena, por que a palavra sandwich virou sandwiches (com -es), enquanto cookie virou apenas cookies (com -s)?",
+          "tabela": [
+            {
+              "c1": "This coffee is hot. (1 item perto)",
+              "c2": "That sandwich over there looks good. (1 item longe)"
+            },
+            {
+              "c1": "These cookies right here are fresh. (2+ itens perto)",
+              "c2": "Those tables outside are free. (2+ itens longe)"
+            },
+            {
+              "c1": "How much is this shirt?",
+              "c2": "How much is that jacket?"
+            },
+            {
+              "c1": "How much are these shoes?",
+              "c2": "How much are those glasses?"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "man",
@@ -200,7 +323,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 10,
           "titulo": "Como formar o plural",
           "explicacao": "PASSO 1: a regra geral é acrescentar -s: book → books, pen → pens. PASSO 2: depois de s, ss, sh, ch, x e z, acrescente -es: bus → buses, class → classes, watch → watches, box → boxes. Ouve-se uma sílaba extra (/ɪz/). PASSO 3: consoante + y vira -ies: city → cities, baby → babies. Vogal + y só ganha -s: day → days, key → keys. PASSO 4: muitas palavras em -f ou -fe viram -ves: knife → knives, leaf → leaves. PASSO 5: alguns plurais são irregulares e precisam ser decorados: man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth. Alguns não mudam: fish, sheep. PASSO 6: «people» já é plural («people ARE», nunca «peoples» para pessoas). PASSO 7: o -s do plural soa /s/ depois de som sem voz (books), /z/ depois de som com voz (pens, keys) e /ɪz/ depois de s, sh, ch, x, z (boxes).",
           "comparacao": "em português o plural também é -s (e -es), mas o artigo, o adjetivo e o verbo concordam. Em inglês, o adjetivo não muda: «two big books».",
@@ -291,9 +414,21 @@
           "tag": "Substantivos"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Tríade dos Pedidos: No balcão, peça com Can I get [item], please?; na mesa decidindo do cardápio, use I'll have [item], please; em qualquer situação polida, I'd like [item], please. PASSO 2: Demonstrativos (Apontar): PASSO 3: Perto (Aqui): Singular = this (dês) | Plural = these (dííz). PASSO 4: Longe (Lá / O que o outro disse): Singular = that (dét) | Plural = those (dôuz). PASSO 5: Plurais Regulares: Regra geral +s (cars, days); após -s, -sh, -ch, -x, -z, -o, adicione -es (boxes, buses, sandwiches, watches, potatoes); após consoante + y, troque por -ies (city → cities, company → companies); após -f / -fe, troque por -ves (wife → wives, shelf → shelves, knife → knives). PASSO 6: Os 7 Plurais Irregulares (Sem -s!):person → people, man → men, woman → women (atenção ao som: uú-man no singular e uí-min no plural!), child → children, foot → feet, tooth → teeth, mouse → mice.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga o plural de: box, city, man, child, day, knife, person. Depois faça 3 frases com os plurais: «I have two boxes. I have three children. I like big cities.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva «a» ou «an» antes de cada palavra: ___ apple, ___ book, ___ umbrella, ___ hour, ___ university, ___ pen."
         }
       ]
     },
@@ -303,13 +438,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Diga o plural de: watch, baby, woman, key, bus."
-        },
-        {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "Apontar: this, that, these e those",
           "explicacao": "PASSO 1: «this» (singular) e «these» (plural) apontam o que está PERTO de quem fala: «This is my phone.», «These are my keys.» PASSO 2: «that» (singular) e «those» (plural) apontam o que está LONGE: «That is your bag.», «Those are my books.» PASSO 3: o verbo concorda: «this/that + is», «these/those + are». PASSO 4: a pronúncia faz diferença: «this» /ðɪs/ (i curto) e «these» /ðiːz/ (i longo). PASSO 5: perguntas: «What's this?», «What are those?», «Is this your bag?», «Are these your keys?». PASSO 6: «that is» pode virar «that's»; «this is» não costuma contrair.",
           "comparacao": "o português tem TRÊS graus («este», «esse», «aquele»). O inglês tem DOIS: «this» (perto) e «that» (não perto). Tanto «esse» quanto «aquele» viram «that».",
@@ -348,7 +478,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Is this your phone? / Este celular é seu?",
           "contexto": "Ana encontra objetos esquecidos e fala com Chris.",
           "linhas": [
@@ -391,9 +521,280 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Can I get a large black coffee to go, please?",
+              "translit": "",
+              "pt": "Você me vê um café preto grande para viagem, por favor?",
+              "en": "",
+              "audio": "Can I get a large black coffee to go, please?"
+            },
+            {
+              "ru": "I'll have the chicken salad and a bottle of still water.",
+              "translit": "",
+              "pt": "Vou querer a salada de frango e uma garrafa de água sem gás.",
+              "en": "",
+              "audio": "I'll have the chicken salad and a bottle of still water."
+            },
+            {
+              "ru": "How much are those backpacks on the top shelf?",
+              "translit": "",
+              "pt": "Quanto custam aquelas mochilas na prateleira de cima?",
+              "en": "",
+              "audio": "How much are those backpacks on the top shelf?"
+            },
+            {
+              "ru": "These muffins right here look delicious!",
+              "translit": "",
+              "pt": "Estes muffins bem aqui parecem deliciosos!",
+              "en": "",
+              "audio": "These muffins right here look delicious!"
+            },
+            {
+              "ru": "— Anything else? — No, I'm good, thanks. That's all.",
+              "translit": "",
+              "pt": "— Mais alguma coisa? — Não, estou bem, obrigado. É só isso.",
+              "en": "",
+              "audio": "— Anything else? — No, I'm good, thanks. That's all."
+            },
+            {
+              "ru": "There are ten people in our team — five men and five women.",
+              "translit": "",
+              "pt": "Há dez pessoas na nossa equipe — cinco homens e cinco mulheres.",
+              "en": "",
+              "audio": "There are ten people in our team — five men and five women."
+            },
+            {
+              "ru": "Excuse me, could we get the check, please?",
+              "translit": "",
+              "pt": "Com licença, você poderia nos trazer a conta, por favor?",
+              "en": "",
+              "audio": "Excuse me, could we get the check, please?"
+            },
+            {
+              "ru": "You can tap your card right here on the screen.",
+              "translit": "",
+              "pt": "Você pode aproximar seu cartão bem aqui na tela.",
+              "en": "",
+              "audio": "You can tap your card right here on the screen."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— What would you like to drink? — ___ an iced tea, please.",
+              "opcoes": [
+                "I will want",
+                "I'll have"
+              ],
+              "gabarito": "I'll have",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How much ___ sunglasses right here, and how much is that watch over there?",
+              "opcoes": [
+                "is this",
+                "are these"
+              ],
+              "gabarito": "are these",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How much are these sunglasses right here, and how much ___ watch over there?",
+              "opcoes": [
+                "is that",
+                "are those"
+              ],
+              "gabarito": "is that",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— The flight to Miami is only $300 today! — Wow, ___ is a great price!",
+              "opcoes": [
+                "this",
+                "that"
+              ],
+              "gabarito": "that",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How many ___ work in these two companies?",
+              "opcoes": [
+                "person",
+                "people"
+              ],
+              "gabarito": "people",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "How many people work in these two ___?",
+              "opcoes": [
+                "companys",
+                "companies"
+              ],
+              "gabarito": "companies",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-104b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My brother has two ___, and our two wives are teachers.",
+              "opcoes": [
+                "childs",
+                "children"
+              ],
+              "gabarito": "children",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My brother has two children, and our two ___ are teachers.",
+              "opcoes": [
+                "wifes",
+                "wives"
+              ],
+              "gabarito": "wives",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-105b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Can I get a bottle of ___ water, please?",
+              "opcoes": [
+                "gas",
+                "sparkling"
+              ],
+              "gabarito": "sparkling",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Anything else for you? — No, ___, thanks!",
+              "opcoes": [
+                "I'm good",
+                "I want nothing"
+              ],
+              "gabarito": "I'm good",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Where ___ my new jeans?",
+              "opcoes": [
+                "is",
+                "are"
+              ],
+              "gabarito": "are",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I'd like two ___ (sandwich) and three boxes of tea, please.",
+              "respostaEsperada": "sandwiches",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I'd like two sandwiches and three ___ (box) of tea, please.",
+              "respostaEsperada": "boxes",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "How much are ___ shoes right here in my hand?",
+              "respostaEsperada": "these",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Who is ___ man standing over there by the door?",
+              "respostaEsperada": "that",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "There are four ___ (woman) and three men in the meeting room.",
+              "respostaEsperada": "women",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "There are four women and three ___ (man) in the meeting room.",
+              "respostaEsperada": "men",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Big ___ (city) usually have good subways.",
+              "respostaEsperada": "cities",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Put the books on those two ___ (shelf), please.",
+              "respostaEsperada": "shelves",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— The meeting is canceled! — ___'s great news!",
+              "respostaEsperada": "That",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ cookies right here are for you, and those ones over there are for Sarah.",
+              "respostaEsperada": "These",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "These cookies right here are for you, and ___ ones over there are for Sarah.",
+              "respostaEsperada": "those",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-208b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 6,
+          "min": 4,
           "enunciado": "Aponte para 4 objetos perto de você e 4 longe e diga: «This is…», «These are…», «That is…», «Those are…»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o plural de: watch, baby, woman, key, bus."
         }
       ]
     },
@@ -403,13 +804,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva o plural de: book, box, city, man, child, person, day."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -595,12 +991,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale por 1 minuto sobre os objetos da sua mesa: o que são, quantos há, quais estão perto e quais estão longe."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Peça em um café um cappuccino médio quente e dois destes croissants de chocolate aqui para viagem.",
+              "respostaEsperada": "Can I get a medium hot cappuccino and two of these chocolate croissants to go, please?",
+              "id": "en-005-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Pergunte a um vendedor quanto custam aquelas garrafas de vinho lá longe (over there) e diga que vai levar uma por $18.50 (escreva o preço por extenso).",
+              "respostaEsperada": "Excuse me, how much are those bottles of wine over there? I'll take one for eighteen fifty.",
+              "id": "en-005-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase usando people, children e cities.",
+              "respostaEsperada": "A lot of people and children live in big cities.",
+              "id": "en-005-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga ao garçom que você está satisfeito (I'm good, thanks) e peça a conta educadamente.",
+              "respostaEsperada": "I'm good, thanks! Could we get the check, please?",
+              "id": "en-005-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Give me a coffee with milk, and I want two sandwichs, please!",
+              "respostaEsperada": "Can I get a coffee with milk, and I'd like two sandwiches, please?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: This shoes right here are very comfortable, but that ones over there are small.",
+              "respostaEsperada": "These shoes right here are very comfortable, but those ones over there are small.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: There are three womans and four mans waiting for the elevator.",
+              "respostaEsperada": "There are three women and four men waiting for the elevator.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: How much is those backpacks on the top shelf?",
+              "respostaEsperada": "How much are those backpacks on the top shelf?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Can I get a water with gas, please?",
+              "respostaEsperada": "Can I get a sparkling water, please?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: How many boxs do those two persons have?",
+              "respostaEsperada": "How many boxes do those two people have?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-005-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: I'll have the grilled salmon and a sparkling water, please.",
+              "respostaEsperada": "OK",
+              "id": "en-005-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais comum em lojas e restaurantes é misturar singular e plural nos demonstrativos (dizendo this shoes em vez de these shoes) e esquecer que people, women, men e children já são plurais (dizendo peoples ou womans). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "I want a coffee. / Give me a tea.",
+              "certo": "Can I get a coffee, please? / I'd like a tea.",
+              "motivo": "“I want” e “Give me” soam como ordens rudes no balcão."
+            },
+            {
+              "errado": "I will want the steak.",
+              "certo": "I'll have the steak, please.",
+              "motivo": "Para escolher do cardápio, o natural é I'll have (ou I'll go with)."
+            },
+            {
+              "errado": "This shoes are nice.",
+              "certo": "These shoes are nice.",
+              "motivo": "Shoes é plural, exigindo o plural these (perto) ou those (longe)."
+            },
+            {
+              "errado": "Three womans and two childs.",
+              "certo": "Three women and two children.",
+              "motivo": "Plurais irregulares nunca recebem -s."
+            },
+            {
+              "errado": "Water with gas.",
+              "certo": "Sparkling water.",
+              "motivo": "Gas nos EUA significa gasolina; água com gás é sparkling water."
+            },
+            {
+              "errado": "— I passed the test! — This is great!",
+              "certo": "— That's great!",
+              "motivo": "Ao reagir ao que o outro acabou de dizer, usamos That; This soa como se você falasse de algo seu."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 1. Passe estas três frases inteiras para o plural (lembrando que a / an somem no plural!): (a) This is a new company. (b) That woman is an executive. (c) This child is hungry. 2. Do Capítulo 1. Como você pergunta a idade de alguém e como responde que tem 29 anos? 3. Pronúncia. Qual é a diferença de som final entre this (1 coisa) e these (2 ou mais coisas)?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Fazer qualquer pedido em um café ou restaurante sem usar “I want” e sabendo pedir água com ou sem gás (sparkling / still). · Apontar itens perto e longe acertando de primeira this, that, these, those. Usar people, men, women, children no plural com o verbo are."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você nomeia e aponta as coisas ao redor. Próxima aula: a casa e o «there is / there are»."
+  "notasParaOAluno": "Você nomeia e aponta as coisas ao redor. Próxima aula: a casa e o «there is / there are».",
+  "geradaDoLivro": true
 }

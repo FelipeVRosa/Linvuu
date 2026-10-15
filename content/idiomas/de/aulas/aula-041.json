@@ -15,13 +15,83 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você diz “de quem” com genitivo (das Haus des Mannes), com von (das Auto von Tom) e com o nome próprio (Toms Auto), declina os substantivos masculinos fracos (den Studenten) e usa wegen, trotz e innerhalb."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "A festa da lena",
+          "contexto": "Na festa, Camila e Jonas tentam descobrir de quem são as coisas.",
+          "linhas": [
+            {
+              "personagem": "Camila",
+              "ru": "— Wessen Jacke ist das?",
+              "pt": "— De quem é essa jaqueta?",
+              "audio": "Wessen Jacke ist das?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Das ist Toms Jacke. Die Tasche gehört Lena.",
+              "pt": "— É a jaqueta do Tom. A bolsa é da Lena.",
+              "audio": "Das ist Toms Jacke. Die Tasche gehört Lena."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Und wem gehört das Auto vor der Tür?",
+              "pt": "— E de quem é o carro em frente à porta?",
+              "audio": "Und wem gehört das Auto vor der Tür?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters.",
+              "pt": "— É o carro do vizinho. Ele não vem hoje, por causa do tempo.",
+              "audio": "Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?",
+              "pt": "— Apesar da chuva, há muitos convidados! Você conhece aquele estudante ali?",
+              "audio": "Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche.",
+              "pt": "— Conheço, é o colega do Tom. Ele está ajudando a Lena na cozinha.",
+              "audio": "Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o quadro dos artigos nos quatro casos de memória."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: A ordem também muda: no genitivo, o dono vem depois da coisa (das Haus meines Vaters), mas com o nome próprio ele vem antes (Toms Haus). PASSO 2: Há mais uma armadilha: alguns substantivos masculinos ganham -n em todos os casos, menos no nominativo (der Student, den Studenten). O português não tem nada parecido. PASSO 3: nome próprio vem antes (Toms Auto). Substantivo comum vem depois (das Auto des Nachbarn).",
+          "comparacao": "O português usa uma só palavra, “de”: “o carro do Tom”, “a casa de meus pais”, “o carro do vizinho”. O alemão usa três caminhos.",
+          "tabela": [
+            {
+              "portugues": "o carro do Tom",
+              "ingles": "Toms Auto / das Auto von Tom"
+            },
+            {
+              "portugues": "a casa do vizinho",
+              "ingles": "das Haus des Nachbarn"
+            },
+            {
+              "portugues": "os amigos dos meus pais",
+              "ingles": "die Freunde meiner Eltern"
+            },
+            {
+              "portugues": "vejo o estudante",
+              "ingles": "ich sehe den Studenten"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "der Besitzer",
@@ -83,7 +153,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "O genitivo, passo a passo",
           "explicacao": "PASSO 1: o GENITIVO responde a «wessen?» (de quem?) e mostra POSSE ou pertencimento: «das Auto meines Vaters» (o carro do meu pai). PASSO 2: o possuidor vem DEPOIS da coisa possuída (ao contrário do inglês): «das Auto meines Vaters», e não «meines Vaters Auto». PASSO 3: artigos no genitivo: masculino «des», feminino «der», neutro «des», plural «der»; indefinidos: «eines», «einer», «eines». PASSO 4: o substantivo MASCULINO e NEUTRO ganha «-(e)s»: «des Mannes», «des Kindes», «des Autos»; feminino e plural não mudam: «der Frau», «der Kinder». PASSO 5: com NOMES PRÓPRIOS, acrescente «-s», sem apóstrofo e sem artigo, ANTES da coisa: «Annas Auto», «Pauls Buch». PASSO 6: na fala, é comum trocar o genitivo por «von» + dativo: «das Auto von meinem Vater».",
           "comparacao": "o português usa «de» («o carro do meu pai»). O alemão usa o genitivo, com «des/der» e um «-s» no substantivo masculino e neutro, ou «von» + dativo na fala.",
@@ -158,8 +228,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga 6 frases de posse: «Das ist das Auto meines Vaters. Das ist Annas Handy. Das ist die Tasche der Frau.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o quadro dos artigos nos quatro casos de memória."
         }
       ]
     },
@@ -169,13 +244,45 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 6 frases de posse, duas com nomes próprios."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como o dono aparece. PASSO 2: Observe também o masculino fraco. PASSO 3: Perguntas: PASSO 4: Que artigo marca o genitivo do masculino e do neutro? E do feminino e do plural? PASSO 5: O que acontece com o substantivo masculino ou neutro no genitivo? Student e Nachbar mudam como Tisch? Onde está a diferença?",
+          "tabela": [
+            {
+              "c1": "Tom",
+              "c2": "Toms Auto / das Auto von Tom"
+            },
+            {
+              "c1": "der Mann",
+              "c2": "das Haus des Mannes"
+            },
+            {
+              "c1": "die Frau",
+              "c2": "die Tasche der Frau"
+            },
+            {
+              "c1": "das Kind",
+              "c2": "das Spielzeug des Kindes"
+            },
+            {
+              "c1": "die Eltern",
+              "c2": "die Freunde der Eltern"
+            },
+            {
+              "c1": "mein Vater",
+              "c2": "das Auto meines Vaters"
+            },
+            {
+              "c1": "meine Mutter",
+              "c2": "die Tasche meiner Mutter"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "die Hauptstadt",
@@ -237,7 +344,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Genitivo com adjetivos e em expressões de tempo e lugar",
           "explicacao": "PASSO 1: com adjetivo, a terminação é «-en» em todos os gêneros: «das Auto meines alten Vaters», «die Tasche der netten Frau». PASSO 2: o genitivo aparece em muitas EXPRESSÕES de tempo e lugar: «am Anfang des Jahres» (no começo do ano), «am Ende des Monats» (no fim do mês), «in der Mitte der Stadt» (no centro da cidade), «am Rand der Straße» (à beira da rua). PASSO 3: com um nome de lugar: «die Hauptstadt des Landes» (a capital do país), «die Größe des Zimmers». PASSO 4: «Name» e os masculinos fracos fazem o genitivo em «-ns» e «-en»: «des Namens», «des Studenten».",
           "tabela": [
@@ -282,8 +389,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga 6 frases com genitivo, tempo e lugar: «Am Anfang des Jahres … In der Mitte der Stadt … Die Hauptstadt des Landes …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 6 frases de posse, duas com nomes próprios."
         }
       ]
     },
@@ -293,13 +405,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases com genitivo e 2 com «von» + dativo."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Wegen, während, trotz: preposições do genitivo",
           "explicacao": "PASSO 1: três preposições muito comuns pedem GENITIVO: «wegen» (por causa de), «während» (durante) e «trotz» (apesar de). PASSO 2: «wegen des Wetters» (por causa do tempo), «während des Urlaubs» (durante as férias), «trotz des Regens» (apesar da chuva). PASSO 3: com plural ou feminino, só muda o artigo: «wegen der Kinder», «während der Arbeit», «trotz der Verspätung». PASSO 4: na conversa, muita gente usa o DATIVO («wegen dem Wetter»); na escrita e nas provas, use o genitivo. PASSO 5: lembre que «während» também pode ser conjunção («Während ich arbeite, …»), mas aí o verbo vai para o fim.",
           "tabela": [
@@ -335,7 +442,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Warum bist du zu spät? / Por que você está atrasado?",
           "contexto": "Dois amigos se encontram; um deles chega atrasado.",
           "linhas": [
@@ -390,9 +497,243 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Wessen Auto ist das?",
+              "translit": "",
+              "pt": "De quem é esse carro?",
+              "en": "",
+              "audio": "Wessen Auto ist das?"
+            },
+            {
+              "ru": "Das ist Toms Auto.",
+              "translit": "",
+              "pt": "É o carro do Tom.",
+              "en": "",
+              "audio": "Das ist Toms Auto."
+            },
+            {
+              "ru": "Das ist das Haus meiner Eltern.",
+              "translit": "",
+              "pt": "É a casa dos meus pais.",
+              "en": "",
+              "audio": "Das ist das Haus meiner Eltern."
+            },
+            {
+              "ru": "Der Freund von Lena kocht heute.",
+              "translit": "",
+              "pt": "O amigo da Lena cozinha hoje.",
+              "en": "",
+              "audio": "Der Freund von Lena kocht heute."
+            },
+            {
+              "ru": "Wegen des Wetters bleibe ich zu Hause.",
+              "translit": "",
+              "pt": "Por causa do tempo, fico em casa.",
+              "en": "",
+              "audio": "Wegen des Wetters bleibe ich zu Hause."
+            },
+            {
+              "ru": "Ich kenne den Studenten.",
+              "translit": "",
+              "pt": "Conheço o estudante.",
+              "en": "",
+              "audio": "Ich kenne den Studenten."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "das Haus ___ Mannes",
+              "opcoes": [
+                "des",
+                "der"
+              ],
+              "gabarito": "des",
+              "explicacao": "Veja a chave comentada no livro: des",
+              "id": "de-041-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "die Tasche ___ Frau",
+              "opcoes": [
+                "des",
+                "der"
+              ],
+              "gabarito": "der",
+              "explicacao": "Veja a chave comentada no livro: der",
+              "id": "de-041-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "das Spielzeug ___ Kindes",
+              "opcoes": [
+                "des",
+                "der"
+              ],
+              "gabarito": "des",
+              "explicacao": "Veja a chave comentada no livro: des",
+              "id": "de-041-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "die Freunde ___ Eltern",
+              "opcoes": [
+                "des",
+                "der"
+              ],
+              "gabarito": "der",
+              "explicacao": "Veja a chave comentada no livro: der",
+              "id": "de-041-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ Auto (o carro do Tom):",
+              "opcoes": [
+                "Tom",
+                "Toms"
+              ],
+              "gabarito": "Toms",
+              "explicacao": "Veja a chave comentada no livro: Toms",
+              "id": "de-041-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "wegen ___ Wetters",
+              "opcoes": [
+                "des",
+                "der"
+              ],
+              "gabarito": "des",
+              "explicacao": "Veja a chave comentada no livro: des",
+              "id": "de-041-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich sehe den ___",
+              "opcoes": [
+                "Student",
+                "Studenten"
+              ],
+              "gabarito": "Studenten",
+              "explicacao": "Veja a chave comentada no livro: Studenten",
+              "id": "de-041-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: das Auto ___ (mein Vater) · die Tasche meiner Mutter (meine Mutter)",
+              "respostaEsperada": "meines Vaters",
+              "explicacao": "Veja a chave comentada no livro: meines Vaters, meiner Mutter",
+              "id": "de-041-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: das Auto meines Vaters (mein Vater) · die Tasche ___ (meine Mutter)",
+              "respostaEsperada": "meiner Mutter",
+              "explicacao": "Veja a chave comentada no livro: meines Vaters, meiner Mutter",
+              "id": "de-041-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: das Haus ___ (die Eltern) · das Zimmer des Studenten (der Student)",
+              "respostaEsperada": "der Eltern",
+              "explicacao": "Veja a chave comentada no livro: der Eltern, des Studenten",
+              "id": "de-041-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: das Haus der Eltern (die Eltern) · das Zimmer ___ (der Student)",
+              "respostaEsperada": "des Studenten",
+              "explicacao": "Veja a chave comentada no livro: der Eltern, des Studenten",
+              "id": "de-041-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: wegen ___ (das Wetter) · trotz des Regens (der Regen) · innerhalb der Stadt (die Stadt)",
+              "respostaEsperada": "des Wetters",
+              "explicacao": "Veja a chave comentada no livro: des Wetters, des Regens, der Stadt",
+              "id": "de-041-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: wegen des Wetters (das Wetter) · trotz ___ (der Regen) · innerhalb der Stadt (die Stadt)",
+              "respostaEsperada": "des Regens",
+              "explicacao": "Veja a chave comentada no livro: des Wetters, des Regens, der Stadt",
+              "id": "de-041-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passe o possuidor ou complemento entre parênteses para o Genitivo: wegen des Wetters (das Wetter) · trotz des Regens (der Regen) · innerhalb ___ (die Stadt)",
+              "respostaEsperada": "der Stadt",
+              "explicacao": "Veja a chave comentada no livro: des Wetters, des Regens, der Stadt",
+              "id": "de-041-L-203c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Forme a posse com nomes próprios (-s antes ou von depois): Tom → ___ Haus · Lena → Lenas Tasche · Max → das Auto von Max",
+              "respostaEsperada": "Toms",
+              "explicacao": "Veja a chave comentada no livro: Toms Haus, Lenas Tasche, das Auto von Max",
+              "id": "de-041-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Forme a posse com nomes próprios (-s antes ou von depois): Tom → Toms Haus · Lena → ___ Tasche · Max → das Auto von Max",
+              "respostaEsperada": "Lenas",
+              "explicacao": "Veja a chave comentada no livro: Toms Haus, Lenas Tasche, das Auto von Max",
+              "id": "de-041-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Forme a posse com nomes próprios (-s antes ou von depois): Tom → Toms Haus · Lena → Lenas Tasche · Max → das Auto ___ Max",
+              "respostaEsperada": "von",
+              "explicacao": "Veja a chave comentada no livro: Toms Haus, Lenas Tasche, das Auto von Max",
+              "id": "de-041-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com os substantivos masculinos fracos (n-Deklination): Ich helfe dem ___ (Kunde). · Ich kenne den Kollegen (Kollege) und den Nachbarn (Nachbar). · Das ist die Bedeutung des Namens (Name).",
+              "respostaEsperada": "Kunden",
+              "explicacao": "Veja a chave comentada no livro: dem Kunden, den Kollegen, den Nachbarn, des Namens",
+              "id": "de-041-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com os substantivos masculinos fracos (n-Deklination): Ich helfe dem Kunden (Kunde). · Ich kenne den ___ (Kollege) und den Nachbarn (Nachbar). · Das ist die Bedeutung des Namens (Name).",
+              "respostaEsperada": "Kollegen",
+              "explicacao": "Veja a chave comentada no livro: dem Kunden, den Kollegen, den Nachbarn, des Namens",
+              "id": "de-041-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com os substantivos masculinos fracos (n-Deklination): Ich helfe dem Kunden (Kunde). · Ich kenne den Kollegen (Kollege) und den ___ (Nachbar). · Das ist die Bedeutung des Namens (Name).",
+              "respostaEsperada": "Nachbarn",
+              "explicacao": "Veja a chave comentada no livro: dem Kunden, den Kollegen, den Nachbarn, des Namens",
+              "id": "de-041-L-205c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com os substantivos masculinos fracos (n-Deklination): Ich helfe dem Kunden (Kunde). · Ich kenne den Kollegen (Kollege) und den Nachbarn (Nachbar). · Das ist die Bedeutung des ___ (Name).",
+              "respostaEsperada": "Namens",
+              "explicacao": "Veja a chave comentada no livro: dem Kunden, den Kollegen, den Nachbarn, des Namens",
+              "id": "de-041-L-205d"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Dê 6 motivos e contrastes em voz alta com «wegen», «während» e «trotz»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 4 frases com genitivo e 2 com «von» + dativo."
         }
       ]
     },
@@ -402,13 +743,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 8 frases de genitivo e preposições do genitivo."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -599,12 +935,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se falando de posse, de tempo e de motivos com o genitivo."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Diga de quem são quatro objetos usando o Genitivo (Das ist das Auto meines Bruders / die Tasche meiner Schwester…) e dois usando nomes próprios com -s (Toms Fahrrad…).",
+              "respostaEsperada": "Das ist das Auto meines Bruders. Hier liegt die Tasche meiner Schwester. Das ist das Büro der Chefin. Dort steht das Haus unserer Großeltern. Das ist Camilas Laptop und Jonas' Fahrrad.",
+              "id": "de-041-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases usando as preposições de genitivo wegen, trotz e während.",
+              "respostaEsperada": "Wegen des Regens bleiben wir heute zu Hause. Trotz der Kälte gehen wir spazieren. Während des Deutschkurses sprechen wir nur Deutsch.",
+              "id": "de-041-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases usando substantivos da n-Deklination (der Student, der Kunde, der Kollege, der Nachbar) no Acusativo ou no Dativo.",
+              "respostaEsperada": "Ich treffe heute meinen neuen Kollegen. Die Verkäuferin hilft dem Kunden sofort. Kennst du den neuen Studenten aus Brasilien?",
+              "id": "de-041-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist das Haus der Mann.",
+              "respostaEsperada": "Das ist das Haus des Mannes.",
+              "explicacao": "Das ist das Haus des Mannes.",
+              "id": "de-041-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist Tom's Auto.",
+              "respostaEsperada": "Das ist Toms Auto.",
+              "explicacao": "Das ist Toms Auto. (sem apóstrofo)",
+              "id": "de-041-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich sehe den Student.",
+              "respostaEsperada": "Ich sehe den Studenten.",
+              "explicacao": "Ich sehe den Studenten.",
+              "id": "de-041-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Die Tasche von Lenas.",
+              "respostaEsperada": "Die Tasche von Lena.",
+              "explicacao": "Die Tasche von Lena. (von + nome sem -s)",
+              "id": "de-041-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wegen das Wetter bleibe ich hier.",
+              "respostaEsperada": "Wegen des Wetters bleibe ich hier.",
+              "explicacao": "Wegen des Wetters bleibe ich hier.",
+              "id": "de-041-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das Auto des Frau.",
+              "respostaEsperada": "Das Auto der Frau.",
+              "explicacao": "Das Auto der Frau.",
+              "id": "de-041-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Das ist das Auto meines Vaters.",
+              "respostaEsperada": "OK",
+              "id": "de-041-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é colocar apóstrofo no nome próprio (Tom's Auto, copiando o inglês, quando em alemão é Toms Auto sem apóstrofo), esquecer o - s/-es no próprio substantivo masculino/neutro no genitivo (des Mann em vez de des Mannes) e esquecer o -n/-en da n-Deklination (den Student em vez de den Studenten). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 13. Complete: das Haus des ____ (alt) Mannes. die Tasche der ____ (jung) Frau. Do capítulo 12. Complete: Das Auto meines Bruders ist ____ (groß) als mein Auto. Do capítulo 11. Complete: Das ist das Haus ____ (mein) Eltern."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Pergunto Wessen …? e respondo com Toms …, … meines Vaters ou … von …. · Digo wegen des Wetters e trotz des Regens e declino der Student nos quatro casos."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você usa o genitivo na posse e nas preposições mais comuns. Próxima aula: perguntas e pronomes indefinidos."
+  "notasParaOAluno": "Você usa o genitivo na posse e nas preposições mais comuns. Próxima aula: perguntas e pronomes indefinidos.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,81 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Leia em voz alta 5 frases das aulas 21 a 45 que você acha difíceis."
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você coloca na ordem certa os dois objetos (Ich gebe es ihm), os complementos de tempo, modo e lugar (Ich fahre morgen mit dem Zug nach Berlin) e o nicht, e sabe onde o verbo fica em cada tipo de frase."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "O presente de aniversário",
+          "contexto": "Os amigos se reúnem no aniversário de Camila.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Alles Gute zum Geburtstag, Camila! Ich schenke dir dieses Buch.",
+              "pt": "— Feliz aniversário, Camila! Estou te dando este livro.",
+              "audio": "Alles Gute zum Geburtstag, Camila! Ich schenke dir dieses Buch."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Das ist lieb! Hast du es selbst ausgesucht?",
+              "pt": "— Que gentileza! Você mesmo escolheu?",
+              "audio": "Das ist lieb! Hast du es selbst ausgesucht?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ja, ich habe es letzte Woche in Berlin gekauft. Meine Schwester hat es mir empfohlen.",
+              "pt": "— Sim, comprei semana passada em Berlim. Minha irmã me recomendou.",
+              "audio": "Ja, ich habe es letzte Woche in Berlin gekauft. Meine Schwester hat es mir empfohlen."
+            },
+            {
+              "personagem": "Lena",
+              "ru": "— Und ich gebe dir morgen mein Geschenk. Ich habe es noch nicht eingepackt.",
+              "pt": "— E eu te dou amanhã o meu presente. Ainda não embrulhei.",
+              "audio": "Und ich gebe dir morgen mein Geschenk. Ich habe es noch nicht eingepackt."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ihr seid so lieb. Heute Abend zeige ich es meiner Mutter im Videoanruf.",
+              "pt": "— Vocês são muito queridos. Hoje à noite eu mostro para minha mãe na chamada de vídeo.",
+              "audio": "Ihr seid so lieb. Heute Abend zeige ich es meiner Mutter im Videoanruf."
+            }
+          ]
         },
         {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 5,
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: o alemão pede a ordem dos pronomes e dos substantivos, e uma ordem para os complementos (tempo, modo, lugar). O português mistura os dois.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Dei o livro a ela.",
+              "ingles": "Ich habe ihr das Buch gegeben."
+            },
+            {
+              "portugues": "Dei-o a ela.",
+              "ingles": "Ich habe es ihr gegeben."
+            },
+            {
+              "portugues": "Dei-o ao menino.",
+              "ingles": "Ich habe es dem Kind gegeben."
+            },
+            {
+              "portugues": "Vou amanhã de trem a Berlim.",
+              "ingles": "Ich fahre morgen mit dem Zug nach Berlin."
+            },
+            {
+              "portugues": "Moro em Berlim há dois anos.",
+              "ingles": "Ich wohne seit zwei Jahren in Berlin."
+            }
+          ],
+          "tag": "Armadilha"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 10,
           "titulo": "O A2 inteiro em uma tabela",
           "explicacao": "Esta tabela resume as aulas 21 a 45. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.",
           "tabela": [
@@ -115,8 +183,13 @@
         },
         {
           "tipo": "producao",
-          "min": 10,
+          "min": 7,
           "enunciado": "Conte em 10 frases, em voz alta, um dia importante da sua vida: o que aconteceu (Perfekt e Präteritum), com quem, por quê (weil), o que você achou e o que fará depois (werden)."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Leia em voz alta 5 frases das aulas 21 a 45 que você acha difíceis."
         }
       ]
     },
@@ -126,83 +199,22 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Releia o e-mail e o diálogo abaixo em voz alta antes de começar."
-        },
-        {
-          "tipo": "texto",
-          "min": 10,
-          "titulo": "Eine E-Mail an eine Sprachschule / Um e-mail a uma escola de idiomas",
-          "ru": "Sehr geehrte Damen und Herren, ich heiße Tom Weber und wohne seit einem Jahr in München. Ich möchte mich für den Deutschkurs im Oktober anmelden, weil ich bald in Deutschland arbeiten werde. Könnten Sie mir bitte sagen, wann der Kurs beginnt und was er kostet? Ich würde gern abends lernen, weil ich tagsüber arbeiten muss. Vielen Dank für Ihre Antwort. Mit freundlichen Grüßen, Tom Weber",
-          "pt": "Prezados senhores, meu nome é Tom Weber e moro há um ano em Munique. Gostaria de me inscrever no curso de alemão de outubro, porque logo vou trabalhar na Alemanha. Os senhores poderiam me dizer quando o curso começa e quanto custa? Gostaria de estudar à noite, porque preciso trabalhar durante o dia. Muito obrigado pela resposta. Atenciosamente, Tom Weber",
-          "perguntas": [
-            {
-              "pergunta": "Seit wann wohnt Tom in München?",
-              "resposta": "Seit einem Jahr"
-            },
-            {
-              "pergunta": "Warum möchte er den Kurs machen?",
-              "resposta": "Weil er bald in Deutschland arbeiten wird"
-            },
-            {
-              "pergunta": "Wann möchte er lernen?",
-              "resposta": "Abends"
-            },
-            {
-              "pergunta": "Was möchte er wissen?",
-              "resposta": "Wann der Kurs beginnt und was er kostet"
-            }
-          ]
-        },
-        {
-          "tipo": "dialogo",
-          "min": 10,
-          "titulo": "Im Büro / No escritório",
-          "contexto": "Dois colegas conversam sobre o fim de semana.",
-          "linhas": [
-            {
-              "personagem": "Lea",
-              "ru": "— Hallo Paul! Wie war dein Wochenende?",
-              "pt": "— Oi, Paul! Como foi o seu fim de semana?",
-              "audio": "Hallo Paul! Wie war dein Wochenende?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Sehr schön! Ich bin mit meiner Familie nach Hamburg gefahren.",
-              "pt": "— Muito bom! Fui com a minha família a Hamburgo.",
-              "audio": "Sehr schön! Ich bin mit meiner Familie nach Hamburg gefahren."
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Seid ihr mit dem Zug gefahren?",
-              "pt": "— Vocês foram de trem?",
-              "audio": "Seid ihr mit dem Zug gefahren?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Ja, und wir haben meine Tante besucht. Sie wohnt seit zwei Jahren dort.",
-              "pt": "— Sim, e visitamos a minha tia. Ela mora lá há dois anos.",
-              "audio": "Ja, und wir haben meine Tante besucht. Sie wohnt seit zwei Jahren dort."
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Und das Wetter?",
-              "pt": "— E o tempo?",
-              "audio": "Und das Wetter?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Trotz des Regens haben wir einen langen Spaziergang gemacht.",
-              "pt": "— Apesar da chuva fizemos uma longa caminhada.",
-              "audio": "Trotz des Regens haben wir einen langen Spaziergang gemacht."
-            }
-          ]
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as frases. PASSO 2: Perguntas: PASSO 3: Nas frases 1 e 3, quem vem primeiro, a pessoa (dativo) ou a coisa (acusativo)? PASSO 4: Na frase 2, es é acusativo e dem Kind é dativo. Qual vem primeiro? E na frase 4, onde ficou o es em relação ao ihm? PASSO 5: Na frase 5, a ordem é “quando?”, “como?”, “para onde?”. Você reconhece as três respostas? PASSO 6: Na frase 6, o nicht ficou perto do começo do trecho final, ou do fim? O que vem depois dele?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 9,
           "enunciado": "Responda em voz alta: onde Paul esteve, como foi, quem visitou e como estava o tempo."
+        },
+        {
+          "tipo": "revisao",
+          "min": 9,
+          "enunciado": "Releia o e-mail e o diálogo abaixo em voz alta antes de começar."
         }
       ]
     },
@@ -212,13 +224,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 3 erros que você ainda comete no A2 e a forma certa."
-        },
-        {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 10,
           "titulo": "Os 14 erros mais comuns do A2 (parte 2)",
           "explicacao": "Leia cada par em voz alta: primeiro o errado, depois o certo.",
           "erros": [
@@ -296,9 +303,233 @@
           "tag": "Revisão"
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Ich gebe dem Kind das Buch.",
+              "translit": "",
+              "pt": "Dou o livro à criança.",
+              "en": "",
+              "audio": "Ich gebe dem Kind das Buch."
+            },
+            {
+              "ru": "Ich gebe es ihm.",
+              "translit": "",
+              "pt": "Eu dou isso a ele.",
+              "en": "",
+              "audio": "Ich gebe es ihm."
+            },
+            {
+              "ru": "Ich fahre morgen mit dem Zug nach Berlin.",
+              "translit": "",
+              "pt": "Vou amanhã de trem a Berlim.",
+              "en": "",
+              "audio": "Ich fahre morgen mit dem Zug nach Berlin."
+            },
+            {
+              "ru": "Ich wohne seit zwei Jahren in Berlin.",
+              "translit": "",
+              "pt": "Moro em Berlim há dois anos.",
+              "en": "",
+              "audio": "Ich wohne seit zwei Jahren in Berlin."
+            },
+            {
+              "ru": "Ich habe es ihm gestern gegeben.",
+              "translit": "",
+              "pt": "Dei isso a ele ontem.",
+              "en": "",
+              "audio": "Ich habe es ihm gestern gegeben."
+            },
+            {
+              "ru": "Tom kommt heute nicht.",
+              "translit": "",
+              "pt": "O Tom não vem hoje.",
+              "en": "",
+              "audio": "Tom kommt heute nicht."
+            },
+            {
+              "ru": "Ich habe das Buch nicht gelesen.",
+              "translit": "",
+              "pt": "Não li o livro.",
+              "en": "",
+              "audio": "Ich habe das Buch nicht gelesen."
+            },
+            {
+              "ru": "Ich habe keine Zeit, deshalb komme ich nicht.",
+              "translit": "",
+              "pt": "Não tenho tempo, por isso não vou.",
+              "en": "",
+              "audio": "Ich habe keine Zeit, deshalb komme ich nicht."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Ich gebe dem Kind das Buch",
+                "Ich gebe das Buch dem Kind"
+              ],
+              "gabarito": "Ich gebe dem Kind das Buch",
+              "explicacao": "Veja a chave comentada no livro: (a) (a pessoa antes da coisa)",
+              "id": "de-046-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Ich gebe es dem Kind",
+                "Ich gebe dem Kind es"
+              ],
+              "gabarito": "Ich gebe es dem Kind",
+              "explicacao": "Veja a chave comentada no livro: (a) (pronome antes do substantivo)",
+              "id": "de-046-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Ich gebe es ihm",
+                "Ich gebe ihm es"
+              ],
+              "gabarito": "Ich gebe es ihm",
+              "explicacao": "Veja a chave comentada no livro: (a) (acusativo antes do dativo)",
+              "id": "de-046-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Ich fahre morgen mit dem Zug nach Berlin",
+                "Ich fahre nach Berlin mit dem Zug morgen"
+              ],
+              "gabarito": "Ich fahre morgen mit dem Zug nach Berlin",
+              "explicacao": "Veja a chave comentada no livro: (a) (tempo, modo, lugar)",
+              "id": "de-046-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Ich habe das Buch nicht gelesen",
+                "Ich habe das Buch gelesen nicht"
+              ],
+              "gabarito": "Ich habe das Buch nicht gelesen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-046-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Er ist nicht müde",
+                "Er ist müde nicht"
+              ],
+              "gabarito": "Er ist nicht müde",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-046-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich habe keine Zeit, ___ komme ich nicht.",
+              "opcoes": [
+                "deshalb",
+                "weil"
+              ],
+              "gabarito": "deshalb",
+              "explicacao": "Veja a chave comentada no livro: deshalb (weil mandaria o verbo para o fim)",
+              "id": "de-046-L-107"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Coloque na ordem: Ich / dem Mann / das Buch / gebe.",
+              "respostaEsperada": "Ich gebe dem Mann das Buch",
+              "id": "de-046-L-201"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Coloque na ordem: Ich / habe / ihm / gestern / es / gegeben.",
+              "respostaEsperada": "Ich habe es ihm gestern gegeben",
+              "id": "de-046-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Coloque na ordem: Wir / sind / am Samstag / mit dem Auto / nach Wien / gefahren.",
+              "respostaEsperada": "Wir sind am Samstag mit dem Auto nach Wien gefahren",
+              "id": "de-046-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Troque os objetos por pronomes: Ich gebe dem Kind das Buch.",
+              "respostaEsperada": "Ich gebe es ihm (ou, trocando só um: Ich gebe es dem Kind / Ich gebe ihm das Buch)",
+              "id": "de-046-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Troque os objetos por pronomes: Ich zeige das Foto meiner Mutter.",
+              "respostaEsperada": "Ich zeige es meiner Mutter (ou, trocando os dois: Ich zeige es ihr)",
+              "id": "de-046-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Troque os objetos por pronomes: Ich schenke meiner Schwester ein Buch.",
+              "respostaEsperada": "Ich schenke ihr ein Buch (ou, trocando os dois: Ich schenke es ihr)",
+              "id": "de-046-L-206"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ponha nicht no lugar certo: Ich habe das Buch gelesen.",
+              "respostaEsperada": "Ich habe das Buch nicht gelesen",
+              "id": "de-046-L-207"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ponha nicht no lugar certo: Ich kann heute kommen.",
+              "respostaEsperada": "Ich kann heute nicht kommen",
+              "id": "de-046-L-208"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ponha nicht no lugar certo: Er arbeitet in Wien.",
+              "respostaEsperada": "Er arbeitet nicht in Wien",
+              "id": "de-046-L-209"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ponha nicht no lugar certo: Ich kenne ihn.",
+              "respostaEsperada": "Ich kenne ihn nicht",
+              "id": "de-046-L-210"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com deshalb, trotzdem ou außerdem: Es regnet, ___ gehen wir spazieren.",
+              "respostaEsperada": "trotzdem",
+              "explicacao": "Veja a chave comentada no livro: trotzdem",
+              "id": "de-046-L-211a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com deshalb, trotzdem ou außerdem: Ich bin müde, ___ gehe ich nach Hause.",
+              "respostaEsperada": "deshalb",
+              "explicacao": "Veja a chave comentada no livro: deshalb",
+              "id": "de-046-L-212a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 10,
+          "min": 7,
           "enunciado": "Escreva um e-mail de cerca de 60 palavras a uma escola ou empresa: apresente-se, peça informações, dê um motivo com «weil» e agradeça. Depois leia-o em voz alta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 3 erros que você ainda comete no A2 e a forma certa."
         }
       ]
     },
@@ -308,13 +539,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Releia o mapa e escolha os 3 pontos em que você ainda erra."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -510,12 +736,104 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Sprechen, em 3 partes: (1) conte um acontecimento do passado; (2) faça e responda perguntas a partir de palavras-chave (Wohnung, Arzt, Reise, Arbeit, Wetter); (3) peça uma informação com educação («Können Sie mir sagen, wann …? Ich hätte gern …»)."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases com dois objetos, uma com dois substantivos, uma com pronome e substantivo, uma com dois pronomes.",
+              "respostaEsperada": "Ich schicke dem Kunden die Rechnung (dois substantivos). Ich schicke sie dem Kunden (pronome + substantivo). Ich schicke sie ihm (dois pronomes: Akk. + Dat.).",
+              "id": "de-046-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases com tempo, modo e lugar (Ich fahre …, Wir gehen …).",
+              "respostaEsperada": "Ich fahre morgen früh mit der U-Bahn ins Büro. Wir fliegen im Juli mit dem Flugzeug nach München. Sie geht heute Abend zu Fuß nach Hause.",
+              "id": "de-046-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases negativas com nicht, uma com particípio, uma com adjetivo e uma com lugar.",
+              "respostaEsperada": "Ich habe die E-Mail noch nicht gelesen (particípio). Die Wohnung ist nicht teuer (adjetivo). Wir fahren dieses Jahr nicht nach Berlin (lugar).",
+              "id": "de-046-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva dois pares de frases ligadas por deshalb e trotzdem.",
+              "respostaEsperada": "Ich muss morgen früh aufstehen, deshalb gehe ich jetzt ins Bett. Das Wetter ist heute kalt, trotzdem essen wir draußen im Garten.",
+              "id": "de-046-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich gebe das Buch ihm.",
+              "respostaEsperada": "Ich gebe ihm das Buch.",
+              "explicacao": "Ich gebe ihm das Buch.",
+              "id": "de-046-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich gebe ihm es.",
+              "respostaEsperada": "Ich gebe es ihm.",
+              "explicacao": "Ich gebe es ihm.",
+              "id": "de-046-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich fahre nach Berlin morgen.",
+              "respostaEsperada": "Ich fahre morgen nach Berlin.",
+              "explicacao": "Ich fahre morgen nach Berlin.",
+              "id": "de-046-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe nicht das Buch gelesen.",
+              "respostaEsperada": "Ich habe das Buch nicht gelesen.",
+              "explicacao": "Ich habe das Buch nicht gelesen.",
+              "id": "de-046-L-c04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich habe es ihm gestern gegeben.",
+              "respostaEsperada": "OK",
+              "id": "de-046-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich bin müde, deshalb ich gehe nach Hause.",
+              "respostaEsperada": "Ich bin müde, deshalb gehe ich nach Hause.",
+              "explicacao": "Ich bin müde, deshalb gehe ich nach Hause.",
+              "id": "de-046-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich kann kommen nicht heute.",
+              "respostaEsperada": "Ich kann heute nicht kommen.",
+              "explicacao": "Ich kann heute nicht kommen.",
+              "id": "de-046-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é pôr o pronome depois do substantivo, ou trocar a ordem dos dois pronomes: Ich gebe dem Kind es, Ich gebe ihm es. O segundo é seguir a ordem do português nos complementos: Ich wohne in Berlin seit zwei Jahren. O terceiro é deixar o nicht depois do particípio ou do infinitivo: Ich habe das Buch gelesen nicht. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 24. Complete: Ich weiß nicht, ob er morgen ____. (mitkommen) Do capítulo 17. Complete: Er ____ mich morgen ____. (anrufen) Do capítulo 9. Complete: Ich gebe ____ das Buch. (sie, dativo)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Digo Ich gebe es ihm sem trocar a ordem. · Conto uma viagem com tempo, modo e lugar na ordem certa. · Coloco o nicht num lugar que soa certo."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fechou o A2 do alemão: 46 aulas. Repita o simulado até acertar quase tudo antes de seguir para o B1."
+  "notasParaOAluno": "Você fechou o A2 do alemão: 46 aulas. Repita o simulado até acertar quase tudo antes de seguir para o B1.",
+  "geradaDoLivro": true
 }

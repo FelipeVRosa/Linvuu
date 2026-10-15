@@ -15,13 +15,89 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você diz “para quem” e “a quem” com dem, der, mir, dir, ihm e ihr, e usa os verbos que pedem dativo (helfen, gefallen, gehören) sem trocar pelo acusativo."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Um presente de aniversário",
+          "contexto": "Jonas e Camila escolhem um presente para uma amiga.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Lena hat morgen Geburtstag. Was schenken wir ihr?",
+              "pt": "— A Lena faz aniversário amanhã. O que damos a ela?",
+              "audio": "Lena hat morgen Geburtstag. Was schenken wir ihr?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt.",
+              "pt": "— Vou dar um livro a ela. Com certeza ela vai gostar do livro.",
+              "audio": "Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer.",
+              "pt": "— Boa ideia! Vou te mostrar uma loja. O vendedor de lá sempre nos ajuda.",
+              "audio": "Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Danke! Das ist nett von dir.",
+              "pt": "— Obrigada! Que gentileza sua.",
+              "audio": "Danke! Das ist nett von dir."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Gern! Und wie geht es dir heute?",
+              "pt": "— De nada! E como você está hoje?",
+              "audio": "Gern! Und wie geht es dir heute?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Mir geht es gut. Und dir?",
+              "pt": "— Estou bem. E você?",
+              "audio": "Mir geht es gut. Und dir?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Mir auch.",
+              "pt": "— Eu também.",
+              "audio": "Mir auch."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o quadro dos artigos no nominativo e no acusativo, nos quatro gêneros."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: helfen, danken, gehören, gefallen, antworten: todos dativo. Memorize a lista como um bloco só.",
+          "comparacao": "O dativo é o caso do “a quem” e “para quem”. Em português, ele aparece em “dou a ele”, “dou-lhe”, “me dá”. Mas há três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Ajudo você.",
+              "ingles": "Ich helfe dir."
+            },
+            {
+              "portugues": "O livro pertence a mim.",
+              "ingles": "Das Buch gehört mir."
+            },
+            {
+              "portugues": "Eu gosto do livro.",
+              "ingles": "Das Buch gefällt mir."
+            },
+            {
+              "portugues": "Dou o livro ao homem.",
+              "ingles": "Ich gebe dem Mann das Buch."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "der Brief",
@@ -83,7 +159,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "O dativo, passo a passo",
           "explicacao": "PASSO 1: o DATIVO responde a «wem?» (a quem?). Ele marca a pessoa que RECEBE, ouve ou se beneficia da ação, o OBJETO INDIRETO: «Ich gebe dem Kind einen Apfel»: o que eu dou é «einen Apfel» (acusativo, o objeto direto), e quem recebe é «dem Kind» (dativo). PASSO 2: artigos definidos no dativo: masculino «dem», feminino «der», neutro «dem», plural «den». PASSO 3: artigos indefinidos: masculino «einem», feminino «einer», neutro «einem»; o plural não tem «ein» (com «kein»: «keinen»). PASSO 4: no PLURAL, o substantivo ganha «-n»: «den Kindern», «den Freunden» (exceto os que já terminam em -n ou -s: «den Eltern», «den Autos»). PASSO 5: truque: masculino e neutro são IGUAIS no dativo (dem, einem); e o feminino «der» é igual ao do genitivo. PASSO 6: compare as três colunas na tabela e leia em voz alta, por coluna.",
           "comparacao": "em português o objeto indireto vem com «a» ou «para» («dou a maçã ao menino»). Em alemão a preposição desaparece e o artigo muda: «dem Kind».",
@@ -175,8 +251,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga 6 frases em que você dá, mostra ou manda algo a alguém: «Ich gebe dem … / der … / den … Kindern …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o quadro dos artigos no nominativo e no acusativo, nos quatro gêneros."
         }
       ]
     },
@@ -186,13 +267,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva o dativo dos artigos definidos e indefinidos e 4 exemplos."
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe o objeto indireto. PASSO 2: Perguntas: PASSO 3: Qual artigo vira dem? Quais? PASSO 4: O que acontece com die (feminino)? E no plural? PASSO 5: O que acontece com o substantivo no plural? PASSO 6: Qual objeto vem primeiro: o dativo (pessoa) ou o acusativo (das Buch)?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 6,
           "itens": [
             {
               "ru": "schenken",
@@ -254,7 +338,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "Os pronomes no dativo, passo a passo",
           "explicacao": "PASSO 1: os pronomes pessoais também têm forma de dativo: mir (a mim), dir (a você), ihm (a ele, a ela-coisa), ihr (a ela), uns (a nós), euch (a vocês), ihnen (a eles), Ihnen (ao senhor, à senhora). PASSO 2: eles servem para trocar «dem Mann», «der Frau», «den Kindern» e evitar a repetição: «Ich gebe dem Mann das Buch» → «Ich gebe ihm das Buch.» PASSO 3: compare as três colunas da tabela: nominativo («ich»), acusativo («mich») e dativo («mir»): cuidado, «uns» e «euch» são iguais no acusativo e no dativo. PASSO 4: estes verbos costumam levar DOIS objetos (dativo + acusativo): geben, schenken, schicken, zeigen, erzählen, leihen, anbieten, empfehlen. PASSO 5: «wünschen» é típico: «Ich wünsche dir einen schönen Tag.»",
           "exemplos": [
@@ -337,9 +421,21 @@
           "tag": "Pronomes"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Com dois substantivos, vem primeiro a pessoa (dativo): Ich gebe dem Kind das Buch.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Troque o destinatário por um pronome em voz alta: «Ich gebe dem Mann das Buch → Ich gebe ihm das Buch», com 6 frases suas."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva o dativo dos artigos definidos e indefinidos e 4 exemplos."
         }
       ]
     },
@@ -349,13 +445,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os pronomes nos três casos para as nove pessoas."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Dativo e acusativo na mesma frase: a ordem, passo a passo",
           "explicacao": "PASSO 1: se a frase tem DOIS SUBSTANTIVOS, o dativo vem primeiro: «Ich gebe dem Kind den Ball.» PASSO 2: se um deles é PRONOME, o pronome vem primeiro: «Ich gebe ihm den Ball» (dativo pronome + acusativo substantivo) e «Ich gebe ihn dem Kind» (acusativo pronome + dativo substantivo). PASSO 3: se OS DOIS são pronomes, o ACUSATIVO vem primeiro: «Ich gebe ihn ihm.» PASSO 4: lembre do dativo plural com «-n»: «den Kindern».",
           "tabela": [
@@ -392,7 +483,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Geschenke / Presentes",
           "contexto": "Dois amigos falam dos presentes de aniversário.",
           "linhas": [
@@ -459,9 +550,229 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Ich helfe dir.",
+              "translit": "",
+              "pt": "Eu ajudo você.",
+              "en": "",
+              "audio": "Ich helfe dir."
+            },
+            {
+              "ru": "Das gehört mir.",
+              "translit": "",
+              "pt": "Isso é meu.",
+              "en": "",
+              "audio": "Das gehört mir."
+            },
+            {
+              "ru": "Das gefällt mir.",
+              "translit": "",
+              "pt": "Eu gosto disso.",
+              "en": "",
+              "audio": "Das gefällt mir."
+            },
+            {
+              "ru": "Wie geht es dir? / Mir geht es gut.",
+              "translit": "",
+              "pt": "Como vai você? / Vou bem.",
+              "en": "",
+              "audio": "Wie geht es dir? / Mir geht es gut."
+            },
+            {
+              "ru": "Mir ist kalt.",
+              "translit": "",
+              "pt": "Estou com frio.",
+              "en": "",
+              "audio": "Mir ist kalt."
+            },
+            {
+              "ru": "Ich schenke dir ein Buch.",
+              "translit": "",
+              "pt": "Dou um livro de presente para você.",
+              "en": "",
+              "audio": "Ich schenke dir ein Buch."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich gebe ___ Mann das Buch.",
+              "opcoes": [
+                "dem",
+                "den"
+              ],
+              "gabarito": "dem",
+              "explicacao": "Veja a chave comentada no livro: dem",
+              "id": "de-026-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich gebe ___ Frau das Buch.",
+              "opcoes": [
+                "die",
+                "der"
+              ],
+              "gabarito": "der",
+              "explicacao": "Veja a chave comentada no livro: der",
+              "id": "de-026-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich gebe ___ Kind das Buch.",
+              "opcoes": [
+                "dem",
+                "der"
+              ],
+              "gabarito": "dem",
+              "explicacao": "Veja a chave comentada no livro: dem",
+              "id": "de-026-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich helfe ___ Kindern.",
+              "opcoes": [
+                "die",
+                "den"
+              ],
+              "gabarito": "den",
+              "explicacao": "Veja a chave comentada no livro: den",
+              "id": "de-026-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich helfe ___.",
+              "opcoes": [
+                "dich",
+                "dir"
+              ],
+              "gabarito": "dir",
+              "explicacao": "Veja a chave comentada no livro: dir",
+              "id": "de-026-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das Buch gehört ___.",
+              "opcoes": [
+                "mich",
+                "mir"
+              ],
+              "gabarito": "mir",
+              "explicacao": "Veja a chave comentada no livro: mir",
+              "id": "de-026-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ gehört das Buch?",
+              "opcoes": [
+                "Wen",
+                "Wem"
+              ],
+              "gabarito": "Wem",
+              "explicacao": "Veja a chave comentada no livro: Wem",
+              "id": "de-026-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Wir danken ___ (er). · Ich schenke ihr (sie, ela) ein Buch.",
+              "respostaEsperada": "ihm",
+              "explicacao": "Veja a chave comentada no livro: ihm, ihr",
+              "id": "de-026-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Wir danken ihm (er). · Ich schenke ___ (sie, ela) ein Buch.",
+              "respostaEsperada": "ihr",
+              "explicacao": "Veja a chave comentada no livro: ihm, ihr",
+              "id": "de-026-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Die Wohnung gefällt ___ (wir) sehr. · Ich antworte Ihnen (Sie, formal) sofort.",
+              "respostaEsperada": "uns",
+              "explicacao": "Veja a chave comentada no livro: uns, Ihnen",
+              "id": "de-026-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Die Wohnung gefällt uns (wir) sehr. · Ich antworte ___ (Sie, formal) sofort.",
+              "respostaEsperada": "Ihnen",
+              "explicacao": "Veja a chave comentada no livro: uns, Ihnen",
+              "id": "de-026-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Der Lehrer hilft ___ (sie, eles). · Wie geht es euch (ihr, vocês)?",
+              "respostaEsperada": "ihnen",
+              "explicacao": "Veja a chave comentada no livro: ihnen, euch",
+              "id": "de-026-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Der Lehrer hilft ihnen (sie, eles). · Wie geht es ___ (ihr, vocês)?",
+              "respostaEsperada": "euch",
+              "explicacao": "Veja a chave comentada no livro: ihnen, euch",
+              "id": "de-026-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Ich schenke ___ Frau (f.) eine Blume. · Ich zeige dem Kind (n.) den Park.",
+              "respostaEsperada": "der",
+              "explicacao": "Veja a chave comentada no livro: der Frau, dem Kind",
+              "id": "de-026-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Ich schenke der Frau (f.) eine Blume. · Ich zeige ___ Kind (n.) den Park.",
+              "respostaEsperada": "dem",
+              "explicacao": "Veja a chave comentada no livro: der Frau, dem Kind",
+              "id": "de-026-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Wir geben ___ Kindern (pl.) Wasser. · Das Auto gehört dem Lehrer (m.).",
+              "respostaEsperada": "den",
+              "explicacao": "Veja a chave comentada no livro: den Kindern, dem Lehrer",
+              "id": "de-026-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Wir geben den Kindern (pl.) Wasser. · Das Auto gehört ___ Lehrer (m.).",
+              "respostaEsperada": "dem",
+              "explicacao": "Veja a chave comentada no livro: den Kindern, dem Lehrer",
+              "id": "de-026-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Ich schicke ___ Chef (m.) die E-Mail und antworte der Kollegin (f.).",
+              "respostaEsperada": "dem",
+              "explicacao": "Veja a chave comentada no livro: dem Chef, der Kollegin",
+              "id": "de-026-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com o artigo definido no dativo (dem, der, den): Ich schicke dem Chef (m.) die E-Mail und antworte ___ Kollegin (f.).",
+              "respostaEsperada": "der",
+              "explicacao": "Veja a chave comentada no livro: dem Chef, der Kollegin",
+              "id": "de-026-L-206b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga a quem você dá presente em aniversários: «Ich schenke meiner Mutter … Ich schenke ihr … Ich gebe es ihr.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva os pronomes nos três casos para as nove pessoas."
         }
       ]
     },
@@ -471,13 +782,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 6 frases com dois objetos (dativo e acusativo), duas delas com pronomes."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -668,12 +974,70 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando a quem você dá, manda ou mostra coisas, primeiro com substantivos, depois com pronomes."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco frases contando o que você vai dar de presente (Ich schenke … einen/eine/ein …) para dem Bruder, der Mutter, dem Kind, den Eltern e dir.",
+              "respostaEsperada": "Ich schenke dem Bruder einen Rucksack. Ich schenke der Mutter eine Tasche. Ich schenke dem Kind ein Spielzeug. Ich schenke den Eltern eine Reise. Ich schenke dir ein Buch.",
+              "id": "de-026-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um mini-diálogo de quatro falas pedindo ajuda (Kannst du mir bitte helfen?) e perguntando como a pessoa está (Wie geht es dir?).",
+              "respostaEsperada": "Modelo de diálogo: — Hallo Jonas! Wie geht es dir heute?— Hallo Camila! Mir geht es gut, danke. Und dir?— Auch gut! Aber der Tisch ist schwer. Kannst du mir bitte helfen?— Ja, klar! Ich helfe dir gern.",
+              "id": "de-026-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas perguntas e respostas com Wem gehört …? e três frases com gefallen, schmecken e passen.",
+              "respostaEsperada": "— Wem gehört der Schlüssel? — Er gehört mir. / — Wem gehört die Tasche? — Sie gehört der Lehrerin. / Die Stadt München gefällt mir sehr gut. Die Pizza schmeckt uns super. Die Jacke passt dir perfekt!",
+              "id": "de-026-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich helfe dich.",
+              "respostaEsperada": "Ich helfe dir.",
+              "explicacao": "Ich helfe dir.",
+              "id": "de-026-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich schenke dem Frau eine Blume.",
+              "respostaEsperada": "Ich schenke der Frau eine Blume.",
+              "explicacao": "Ich schenke der Frau eine Blume.",
+              "id": "de-026-L-c04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich danke dir.",
+              "respostaEsperada": "OK",
+              "id": "de-026-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é usar o acusativo com verbos que exigem dativo em alemão (Ich helfe dich / Ich danke dich em vez de Ich helfe dir / Ich danke dir) ou inverter a lógica de gefallen e gehören (Ich gehöre das Buch em vez de Das Buch gehört mir). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 8. Complete com o acusativo: Ich kaufe ____ Tisch. Ich liebe ____ (du). Wir brauchen ____ Stuhl (m.). Do capítulo 7. Diga a data: Wann hat Lena Geburtstag? Am ____ Mai (12). Do capítulo 6. Negue: Ich helfe dir. Das Buch gefällt mir."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Digo Ich helfe dir, Das gehört mir e Das gefällt mir. · Respondo Mir geht es gut e escolho entre dem, der, den sem recorrer à tabela."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você forma o dativo dos artigos e dos pronomes e sabe a ordem das palavras. Próxima aula: os verbos que pedem dativo."
+  "notasParaOAluno": "Você forma o dativo dos artigos e dos pronomes e sabe a ordem das palavras. Próxima aula: os verbos que pedem dativo.",
+  "geradaDoLivro": true
 }

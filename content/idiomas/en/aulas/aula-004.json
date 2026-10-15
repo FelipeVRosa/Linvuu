@@ -15,13 +15,105 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você descreve sua rotina, seu trabalho e seus hábitos sem esquecer o -s da terceira pessoa (he, she, it), faz perguntas com do e does, nega com don't e doesn't, responde de forma curta e posiciona always, usually e never no lugar exato da frase."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Café da manhã na copa da empresa",
+          "contexto": "Lucas e sua colega britânica Chloe conversam na copa do escritório em Toronto antes da primeira reunião do dia.",
+          "linhas": [
+            {
+              "personagem": "Chloe",
+              "ru": "— Morning, Lucas! You're here early today. What time do you usually start work?",
+              "pt": "— Bom dia, Lucas! Você chegou cedo hoje. A que horas você costuma começar a trabalhar?",
+              "audio": "Morning, Lucas! You're here early today. What time do you usually start work?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Hi, Chloe! Back in Brazil, I usually start at nine, so I get up at seven. Here in Toronto, I wake up at six thirty because of the time difference.",
+              "pt": "— Oi, Chloe! Lá no Brasil, normalmente começo às nove, então acordo às sete. Aqui em Toronto, acordo às seis e meia por causa do fuso horário.",
+              "audio": "Hi, Chloe! Back in Brazil, I usually start at nine, so I get up at seven. Here in Toronto, I wake up at six thirty because of the time difference."
+            },
+            {
+              "personagem": "Chloe",
+              "ru": "— Do you drink coffee in the morning?",
+              "pt": "— Você toma café de manhã?",
+              "audio": "Do you drink coffee in the morning?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Yes, I do! I always have a big cup of black coffee before I check my emails. What about you?",
+              "pt": "— Tomo, sim! Sempre tomo uma xícara grande de café preto antes de checar meus e-mails. E você?",
+              "audio": "Yes, I do! I always have a big cup of black coffee before I check my emails. What about you?"
+            },
+            {
+              "personagem": "Chloe",
+              "ru": "— I don't drink coffee at all. It makes me too anxious, so I always drink green tea.",
+              "pt": "— Eu não tomo café de jeito nenhum. Me deixa ansiosa demais, então sempre tomo chá verde.",
+              "audio": "I don't drink coffee at all. It makes me too anxious, so I always drink green tea."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— And what about your husband, Dan? Does he work near here?",
+              "pt": "— E quanto ao seu marido, o Dan? Ele trabalha perto daqui?",
+              "audio": "And what about your husband, Dan? Does he work near here?"
+            },
+            {
+              "personagem": "Chloe",
+              "ru": "— No, he doesn't. He works from home most days. He teaches graphic design online and finishes around five.",
+              "pt": "— Não. Ele trabalha de casa na maioria dos dias. Ele dá aula de design gráfico online e termina lá pelas cinco.",
+              "audio": "No, he doesn't. He works from home most days. He teaches graphic design online and finishes around five."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— That's nice! Does he cook dinner during the week?",
+              "pt": "— Que legal! Ele faz o jantar durante a semana?",
+              "audio": "That's nice! Does he cook dinner during the week?"
+            },
+            {
+              "personagem": "Chloe",
+              "ru": "— Yes, he does! He loves cooking, so he usually makes dinner, and I do the dishes. We never order delivery on weekdays.",
+              "pt": "— Faz, sim! Ele adora cozinhar, então normalmente faz o jantar, e eu lavo a louça. Nunca pedimos entrega nos dias de semana.",
+              "audio": "Yes, he does! He loves cooking, so he usually makes dinner, and I do the dishes. We never order delivery on weekdays."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Diga a sua idade, o seu país e a sua nacionalidade em inglês, sem olhar."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: O -s só existe para he, she, it e só na frase afirmativa. Na pergunta (Does she work?) e na negativa (She doesn't work), o auxiliar does / doesn't já carrega o -s, e o verbo principal volta obrigatoriamente à forma simples! Nunca coloque dois -s na mesma frase. PASSO 2: Perguntas e negativas exigem do / does / don't / doesn't. Para todos os verbos comuns (exceto to be e modais como can), o inglês convoca o auxiliar do (I, you, we, they) ou does (he, she, it). PASSO 3: Always, usually e never vêm antes do verbo principal. Em português dizemos “Eu tomo sempre café”; em inglês, nunca separe o verbo do seu objeto: diga I always drink coffee (e não I drink always coffee). E lembre-se: never já é negativo, portanto nunca use don't junto com never.",
+          "comparacao": "Em português, cada pessoa tem uma terminação própria no verbo (eu trabalho, tu trabalhas, ele trabalha, nós trabalhamos). Por isso, para fazer uma pergunta em português, basta mudar a entonação da voz (“Você trabalha aqui?”), e para negar basta colocar “não” antes do verbo (“Ele não trabalha”). O inglês funciona de outro jeito e cria quatro armadilhas clássicas:",
+          "tabela": [
+            {
+              "portugues": "Você mora aqui?",
+              "ingles": "Do you live here?",
+              "evite": "You live here?"
+            },
+            {
+              "portugues": "Ela trabalha aos sábados?",
+              "ingles": "Does she work on Saturdays?",
+              "evite": "Does she works on Saturdays?"
+            },
+            {
+              "portugues": "Meu irmão não gosta de chá.",
+              "ingles": "My brother doesn't like tea.",
+              "evite": "My brother don't like / no likes tea."
+            },
+            {
+              "portugues": "Eu tomo sempre café. / Não como nunca carne.",
+              "ingles": "I always drink coffee. / I never eat meat.",
+              "evite": "I drink always coffee. / I don't never eat meat."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "work",
@@ -83,7 +175,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "O presente simples: rotina, hábitos e fatos",
           "explicacao": "PASSO 1: o presente simples serve para rotina («I work every day»), hábito («I drink coffee in the morning») e fatos permanentes («They live in Rio»). PASSO 2: com «I», «you», «we» e «they» o verbo fica na forma básica, sem nada acrescentado: I work, you work, we work, they work. PASSO 3: o verbo principal NÃO leva «to be» junto. Não diga «I am work», nem «we are live». PASSO 4: idiomas vêm sem artigo: «I speak English», não «I speak the English». PASSO 5: expressões de tempo que acompanham esse tempo verbal: every day, every week, on Mondays, in the morning, at night.",
           "comparacao": "em português o presente também descreve rotina («eu trabalho todo dia»), mas o inglês reserva o presente simples para rotinas, hábitos e fatos. Para o que acontece AGORA, usa outro tempo (você verá mais adiante).",
@@ -130,8 +222,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 5 frases sobre a sua rotina com I ou we: «I work… I study… I drink… I speak… I live…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga a sua idade, o seu país e a sua nacionalidade em inglês, sem olhar."
         }
       ]
     },
@@ -141,13 +238,37 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases da sessão anterior e troque «I» por «they»."
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como o verbo se comporta nos dois grupos de pessoas: PASSO 2: Perguntas: PASSO 3: O que acontece com os verbos work, study e have na afirmativa do Grupo 2 (he, she, it)? PASSO 4: O que acontece com o verbo eat e com o verbo live quando entram doesn't e Does no Grupo 2?",
+          "tabela": [
+            {
+              "c1": "I work at a fintech.",
+              "c2": "She works at a hospital."
+            },
+            {
+              "c1": "They study at night.",
+              "c2": "He studies at night."
+            },
+            {
+              "c1": "We have two meetings today.",
+              "c2": "The company has two offices."
+            },
+            {
+              "c1": "We don't eat meat.",
+              "c2": "He doesn't eat meat."
+            },
+            {
+              "c1": "Do you live near here? — Yes, I do.",
+              "c2": "Does she live near here? — No, she doesn't."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "wake up",
@@ -188,7 +309,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 10,
           "titulo": "O -s da terceira pessoa",
           "explicacao": "PASSO 1: com «he», «she» e «it», o verbo recebe -s: I work → he works; you live → she lives. PASSO 2: a ortografia muda em alguns casos. Depois de s, sh, ch, x, z e na maioria dos verbos em o, acrescente -es: watch → watches, wash → washes, go → goes, do → does. Consoante + y vira -ies: study → studies. Vogal + y só ganha -s: play → plays. O verbo «have» é irregular: he HAS. PASSO 3: o -s soa de três jeitos. Depois de som sem voz: /s/ (works, eats). Depois de som com voz: /z/ (lives, plays). Depois de s, sh, ch, x, z: /ɪz/, uma sílaba a mais (watches, washes). PASSO 4: esquecer o -s é o erro mais comum de quem fala português, porque no português o verbo muda em todas as pessoas. Em inglês, a única mudança é essa.",
           "comparacao": "o português conjuga todas as pessoas («trabalho, trabalhas, trabalha…»). O inglês deixou quase tudo para trás: sobra só o -s de he, she e it.",
@@ -268,9 +389,21 @@
           "tag": "Verbos"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Quando usar o Present Simple: Para rotinas, hábitos repetidos, fatos permanentes e horários fixos (I work in tech, The train leaves at eight). PASSO 2: Afirmativa: PASSO 3: I, you, we, they → verbo puro (work, live, have). PASSO 4: he, she, it → verbo com -s (works, lives), -es após -s, -sh, -ch, -x, -o (watches, finishes, goes, does), -ies após consoante + y (studies, tries), e o irregular has. PASSO 5: Negativa:don't (I, you, we, they) ou doesn't (he, she, it) + verbo simples sem -s (I don't work / She doesn't work / He doesn't have). PASSO 6: Pergunta e Resposta Curta:(Wh-) + do / does + sujeito + verbo simples? (Where do you work? / Does he have a car? — Yes, he does. / No, he doesn't). PASSO 7: Advérbios de frequência (always, usually, often, sometimes, rarely, never): Ficam antes do verbo comum (I always get up early) e depois do verbo to be (He is always on time).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Descreva a rotina de uma pessoa da sua família com «he» ou «she»: «She wakes up at… She works… He eats… He goes…» (pelo menos 5 frases)."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 4 frases da sessão anterior e troque «I» por «they»."
         }
       ]
     },
@@ -280,13 +413,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Escreva 3 frases com «he» ou «she», cuidando do -s."
-        },
-        {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 9,
           "titulo": "Don't, doesn't, do e does",
           "explicacao": "PASSO 1: a negativa usa «don't» (do not) com I, you, we, they e «doesn't» (does not) com he, she, it, seguidos do verbo na forma BÁSICA: «I don't work», «She doesn't work». PASSO 2: o -s passa a ficar no «does»; por isso o verbo principal volta à forma básica: NUNCA «She doesn't works». PASSO 3: a pergunta de sim ou não começa com «do» ou «does»: «Do you work here?», «Does he live in Rio?». O verbo principal também fica na forma básica. PASSO 4: respostas curtas: «Yes, I do.» / «No, I don't.» / «Yes, she does.» / «No, he doesn't.» PASSO 5: perguntas com palavra interrogativa: palavra + do/does + sujeito + verbo. «Where do you live?», «What does she do?» («What do you do?» pergunta a profissão.) PASSO 6: com «to be» NÃO se usa do/does: «Are you tired?», não «Do you are tired?».",
           "comparacao": "em português basta colocar «não» antes do verbo e mudar a entonação para perguntar. Em inglês, entra um verbo auxiliar (do/does) que faz a negativa e a pergunta, e o verbo principal fica na forma básica.",
@@ -338,7 +466,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 7,
+          "min": 5,
           "titulo": "Where do you live? / Onde você mora?",
           "contexto": "Sarah e Ben conversam num evento.",
           "linhas": [
@@ -381,9 +509,362 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "What time do you usually get up on weekdays?",
+              "translit": "",
+              "pt": "A que horas você costuma acordar nos dias de semana?",
+              "en": "",
+              "audio": "What time do you usually get up on weekdays?"
+            },
+            {
+              "ru": "I work from home three days a week.",
+              "translit": "",
+              "pt": "Trabalho de casa três dias por semana.",
+              "en": "",
+              "audio": "I work from home three days a week."
+            },
+            {
+              "ru": "My brother works in finance and travels a lot.",
+              "translit": "",
+              "pt": "Meu irmão trabalha na área financeira e viaja bastante.",
+              "en": "",
+              "audio": "My brother works in finance and travels a lot."
+            },
+            {
+              "ru": "She doesn't drink coffee, so she always orders tea.",
+              "translit": "",
+              "pt": "Ela não toma café, então sempre pede chá.",
+              "en": "",
+              "audio": "She doesn't drink coffee, so she always orders tea."
+            },
+            {
+              "ru": "Does the meeting start at nine or nine thirty?",
+              "translit": "",
+              "pt": "A reunião começa às nove ou às nove e meia?",
+              "en": "",
+              "audio": "Does the meeting start at nine or nine thirty?"
+            },
+            {
+              "ru": "How often do you check your work emails at night?",
+              "translit": "",
+              "pt": "Com que frequência você checa seus e-mails de trabalho à noite?",
+              "en": "",
+              "audio": "How often do you check your work emails at night?"
+            },
+            {
+              "ru": "We hardly ever eat out from Monday to Thursday.",
+              "translit": "",
+              "pt": "Quase nunca comemos fora de segunda a quinta.",
+              "en": "",
+              "audio": "We hardly ever eat out from Monday to Thursday."
+            },
+            {
+              "ru": "He has a lot of experience, and he speaks three languages.",
+              "translit": "",
+              "pt": "Ele tem muita experiência e fala três idiomas.",
+              "en": "",
+              "audio": "He has a lot of experience, and he speaks three languages."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My sister ___ at an international bank, and she has two kids.",
+              "opcoes": [
+                "work",
+                "works"
+              ],
+              "gabarito": "works",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My sister works at an international bank, and she ___ two kids.",
+              "opcoes": [
+                "have",
+                "has"
+              ],
+              "gabarito": "has",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ your husband work on Saturdays?",
+              "opcoes": [
+                "Do",
+                "Does"
+              ],
+              "gabarito": "Does",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Does your husband ___ on Saturdays?",
+              "opcoes": [
+                "work",
+                "works"
+              ],
+              "gabarito": "work",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lucas ___ coffee at night because he doesn't sleep well.",
+              "opcoes": [
+                "don't drink",
+                "doesn't drink"
+              ],
+              "gabarito": "doesn't drink",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lucas doesn't drink coffee at night because he ___ well.",
+              "opcoes": [
+                "don't sleep",
+                "doesn't sleep"
+              ],
+              "gabarito": "doesn't sleep",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Where ___ your parents live?",
+              "opcoes": [
+                "do",
+                "does"
+              ],
+              "gabarito": "do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Where do your parents ___?",
+              "opcoes": [
+                "live",
+                "lives"
+              ],
+              "gabarito": "live",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-104b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ my emails before breakfast, and I am never late.",
+              "opcoes": [
+                "always check",
+                "check always"
+              ],
+              "gabarito": "always check",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I always check my emails before breakfast, and I ___ late.",
+              "opcoes": [
+                "am never",
+                "never am"
+              ],
+              "gabarito": "am never",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-105b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Does Chloe work from home? — No, she ___.",
+              "opcoes": [
+                "doesn't",
+                "don't"
+              ],
+              "gabarito": "doesn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Dan ___ graphic design and finishes around five.",
+              "opcoes": [
+                "teachs",
+                "teaches"
+              ],
+              "gabarito": "teaches",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Dan teaches graphic design and ___ around five.",
+              "opcoes": [
+                "finishs",
+                "finishes"
+              ],
+              "gabarito": "finishes",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We ___ order delivery on weekdays.",
+              "opcoes": [
+                "never",
+                "don't never"
+              ],
+              "gabarito": "never",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Chloe ___ (not / drink) coffee; she prefers green tea.",
+              "respostaEsperada": "doesn't drink",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Chloe doesn't drink coffee; she ___ (prefer) green tea.",
+              "respostaEsperada": "prefers",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What time ___ the store open on Sundays?",
+              "respostaEsperada": "does",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What time does the store ___ (open) on Sundays?",
+              "respostaEsperada": "open",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My brother ___ (study) English every night and watches series without subtitles.",
+              "respostaEsperada": "studies",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My brother studies English every night and ___ (watch) series without subtitles.",
+              "respostaEsperada": "watches",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ you have any brothers or sisters? — Yes, I do.",
+              "respostaEsperada": "Do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Do you ___ (have) any brothers or sisters? — Yes, I do.",
+              "respostaEsperada": "have",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Do you have any brothers or sisters? — Yes, I ___.",
+              "respostaEsperada": "do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Our company ___ (have) offices in São Paulo and Toronto, but it doesn't have an office in Miami.",
+              "respostaEsperada": "has",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Our company has offices in São Paulo and Toronto, but it ___ (not / have) an office in Miami.",
+              "respostaEsperada": "doesn't have",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where ___ your wife work, and what does she do?",
+              "respostaEsperada": "does",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where does your wife ___ (work), and what does she do?",
+              "respostaEsperada": "work",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where does your wife work, and what ___ she do?",
+              "respostaEsperada": "does",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where does your wife work, and what does she ___ (do)?",
+              "respostaEsperada": "do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-206d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I ___ (usually / go) to the gym three times a week.",
+              "respostaEsperada": "usually go",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He ___ (say) he doesn't like cold weather.",
+              "respostaEsperada": "says",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He says he ___ (not / like) cold weather.",
+              "respostaEsperada": "doesn't like",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-208b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Responda em voz alta: Where do you live? What do you do? Do you speak English? Do you study every day? Does your friend work?"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 3 frases com «he» ou «she», cuidando do -s."
         }
       ]
     },
@@ -392,68 +873,6 @@
       "titulo": "Frequência e revisão da aula 4",
       "duracaoMin": 30,
       "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Diga a negativa e a pergunta de: «She works in a bank.»"
-        },
-        {
-          "tipo": "gramatica",
-          "min": 8,
-          "titulo": "Advérbios de frequência",
-          "explicacao": "PASSO 1: os advérbios dizem com que frequência algo acontece: always (sempre), usually (geralmente), often (frequentemente), sometimes (às vezes), never (nunca). PASSO 2: eles ficam ANTES do verbo principal: «I always eat breakfast», «She never drinks coffee». PASSO 3: mas ficam DEPOIS do verbo «to be»: «He is always late», «We are never tired». PASSO 4: «never» já é negativo; não use outro «not»: «I never work on Sundays», nunca «I don't never work».",
-          "comparacao": "em português o advérbio é flexível («sempre como…» ou «como sempre…»). Em inglês, a posição é bem mais fixa.",
-          "tabela": [
-            {
-              "adverbio": "always",
-              "pronuncia": "ólueiz",
-              "exemplo": "I always eat breakfast.",
-              "pt": "Eu sempre tomo café da manhã."
-            },
-            {
-              "adverbio": "usually",
-              "pronuncia": "iúzhuali",
-              "exemplo": "She usually works at home.",
-              "pt": "Ela geralmente trabalha em casa."
-            },
-            {
-              "adverbio": "often",
-              "pronuncia": "ófen",
-              "exemplo": "We often watch TV.",
-              "pt": "Nós frequentemente assistimos TV."
-            },
-            {
-              "adverbio": "sometimes",
-              "pronuncia": "sâmtaimz",
-              "exemplo": "He sometimes drinks tea.",
-              "pt": "Ele às vezes bebe chá."
-            },
-            {
-              "adverbio": "never",
-              "pronuncia": "néver",
-              "exemplo": "They never eat meat.",
-              "pt": "Eles nunca comem carne."
-            }
-          ],
-          "erros": [
-            {
-              "errado": "I eat always breakfast.",
-              "certo": "I always eat breakfast.",
-              "motivo": "O advérbio vem antes do verbo principal."
-            },
-            {
-              "errado": "He always is late.",
-              "certo": "He is always late.",
-              "motivo": "Com «to be», o advérbio vem depois."
-            },
-            {
-              "errado": "I don't never work on Sundays.",
-              "certo": "I never work on Sundays.",
-              "motivo": "«never» já nega; não acrescente «don't»."
-            }
-          ],
-          "tag": "Advérbios"
-        },
         {
           "tipo": "exercicios",
           "min": 12,
@@ -605,12 +1024,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale por 1 minuto sobre a sua rotina, com pelo menos 3 advérbios de frequência. Depois faça duas perguntas com «do» ou «does» a alguém."
+          "tipo": "exercicios",
+          "min": 10,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Conte quatro coisas da sua rotina de segunda a sexta usando I usually…, I always…, I don't… e I never….",
+              "respostaEsperada": "On weekdays, I usually wake up at six thirty, I always drink black coffee, I don't watch TV in the morning, and I never work after seven p.m.",
+              "id": "en-004-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte quatro coisas sobre a rotina de uma pessoa próxima (my husband, my wife, my sister, my boss) usando a 3ª pessoa (works, has, studies, doesn't…).",
+              "respostaEsperada": "My wife works at a tech company, she has a lot of meetings, she studies French twice a week, and she doesn't work on Saturdays.",
+              "id": "en-004-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três perguntas com What time, Where e How often para conhecer a rotina de um colega novo.",
+              "respostaEsperada": "What time do you usually finish work? Where do you have lunch? How often do you work from home?",
+              "id": "en-004-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga quantas vezes por semana ou por mês você faz duas atividades usando once a week, twice a week ou three times a month.",
+              "respostaEsperada": "I go to the gym three times a week, and I visit my parents twice a month.",
+              "id": "en-004-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Does your boss lives in São Paulo or he lives in Rio?",
+              "respostaEsperada": "Does your boss live in São Paulo, or does he live in Rio?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My sister don't likes to work on weekends.",
+              "respostaEsperada": "My sister doesn't like to work on weekends.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She have a new car, and she drive to work every day.",
+              "respostaEsperada": "She has a new car, and she drives to work every day.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I drink always a cup of coffee when I arrive at the office.",
+              "respostaEsperada": "I always drink a cup of coffee when I arrive at the office.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Where you work, and what time you start?",
+              "respostaEsperada": "Where do you work, and what time do you start?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I don't never check my work emails on Sundays.",
+              "respostaEsperada": "I never check my work emails on Sundays.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-004-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He doesn't have time for lunch on Mondays, so he usually eats a sandwich at his desk.",
+              "respostaEsperada": "OK",
+              "id": "en-004-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais comum no Present Simple tem duas faces: esquecer o -s na afirmativa de he, she, it (dizendo She work ou He have) e duplicar o -s na pergunta ou na negativa (dizendo Does she works? ou He doesn't has). Lembre-se da regra da gangorra: quando does ou doesn't entram na frase, o -s do verbo principal desaparece! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "She work at a bank. / He have a car.",
+              "certo": "She works at a bank. / He has a car.",
+              "motivo": "Na afirmativa, he, she, it exigem -s (e have vira has)."
+            },
+            {
+              "errado": "Does she works here?",
+              "certo": "Does she work here?",
+              "motivo": "O auxiliar Does já carrega o -s; o verbo principal fica simples."
+            },
+            {
+              "errado": "He don't like tea. / He doesn't likes tea.",
+              "certo": "He doesn't like tea.",
+              "motivo": "Com he, she, it usa-se doesn't + verbo simples sem -s."
+            },
+            {
+              "errado": "You work here? / Where you live?",
+              "certo": "Do you work here? / Where do you live?",
+              "motivo": "Perguntas no presente exigem o auxiliar do ou does antes do sujeito."
+            },
+            {
+              "errado": "I drink always coffee.",
+              "certo": "I always drink coffee.",
+              "motivo": "Advérbios curtos de frequência vêm antes do verbo principal."
+            },
+            {
+              "errado": "I don't never eat meat.",
+              "certo": "I never eat meat.",
+              "motivo": "Never já é negativo; o inglês padrão não aceita dupla negação."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Retorno. 1. Do Capítulo 4. Como você pergunta “Tem uma estação de metrô perto daqui?” e diz “Tem dois cafés nesta rua, em frente ao banco”? 2. Do Capítulo 3. Complete: Marina loves ____ (dela) job, and ____ (do irmão dela) office is on the fifth floor. 3. Do Capítulo 1 e 5. Qual é a diferença de estrutura entre Are you tired? e Do you work here?? Por que a primeira não usa do?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Falar da rotina de uma 3ª pessoa (he, she, it) acertando works, studies, watches, has. · Fazer perguntas com Do / Does e negar com don't / doesn't deixando o verbo principal na forma simples. Usar always, usually, never e once / twice a week na posição natural da frase."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala da sua rotina e faz perguntas sobre a rotina dos outros. Próxima aula: artigos, plural e as coisas ao redor (this, that, there is)."
+  "notasParaOAluno": "Você fala da sua rotina e faz perguntas sobre a rotina dos outros. Próxima aula: artigos, plural e as coisas ao redor (this, that, there is).",
+  "geradaDoLivro": true
 }

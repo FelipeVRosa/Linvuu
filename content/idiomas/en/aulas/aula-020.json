@@ -15,13 +15,100 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você narra acontecimentos passados com verbos regulares (-ed) pronunciando corretamente os três sons finais (t, d, id), domina os verbos irregulares mais frequentes da língua inglesa (went, took, had, saw, made, bought, left, met) e faz perguntas e negativas com did e didn't sem duplicar o passado."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "O que você fez no fim de semana?",
+          "contexto": "Lucas conversa com a colega Sarah na segunda-feira de manhã enquanto esperam o elevador no escritório.",
+          "linhas": [
+            {
+              "personagem": "Sarah",
+              "ru": "— Morning, Lucas! Did you have a good weekend? What did you do?",
+              "pt": "— Bom dia, Lucas! Você teve um bom fim de semana? O que você fez?",
+              "audio": "Morning, Lucas! Did you have a good weekend? What did you do?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Morning, Sarah! Yes, I did. On Saturday, I took the train to Niagara Falls with a friend from Brazil.",
+              "pt": "— Bom dia, Sarah! Tive, sim. No sábado, peguei o trem para as Cataratas do Niágara com um amigo do Brasil.",
+              "audio": "Morning, Sarah! Yes, I did. On Saturday, I took the train to Niagara Falls with a friend from Brazil."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Oh, nice! How long did the train take?",
+              "pt": "— Ah, que legal! Quanto tempo levou o trem?",
+              "audio": "Oh, nice! How long did the train take?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— It took about two hours. We left Toronto at eight in the morning and arrived there around ten.",
+              "pt": "— Levou umas duas horas. Saímos de Toronto às oito da manhã e chegamos lá por volta das dez.",
+              "audio": "It took about two hours. We left Toronto at eight in the morning and arrived there around ten."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Did you take the boat tour near the falls?",
+              "pt": "— Vocês fizeram o passeio de barco perto das cataratas?",
+              "audio": "Did you take the boat tour near the falls?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— No, we didn't. We wanted to go on the boat, but the line was huge! So we walked along the river, took a lot of photos, and had lunch at a great restaurant with a view.",
+              "pt": "— Não. Queríamos ir no barco, mas a fila estava imensa! Então caminhamos ao longo do rio, tiramos muitas fotos e almoçamos em um restaurante ótimo com vista.",
+              "audio": "No, we didn't. We wanted to go on the boat, but the line was huge! So we walked along the river, took a lot of photos, and had lunch at a great restaurant with a view."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— What did you do on Sunday? Did you go out too?",
+              "pt": "— O que você fez no domingo? Saiu também?",
+              "audio": "What did you do on Sunday? Did you go out too?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— No, I didn't go anywhere on Sunday. It rained all afternoon, so I stayed at the hotel, watched a movie, and called my family. What about you?",
+              "pt": "— Não, não fui a lugar nenhum no domingo. Choveu a tarde inteira, então fiquei no hotel, assisti a um filme e liguei para a minha família. E você?",
+              "audio": "No, I didn't go anywhere on Sunday. It rained all afternoon, so I stayed at the hotel, watched a movie, and called my family. What about you?"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— I met my sister for brunch on Sunday, and we bought a birthday gift for our mom.",
+              "pt": "— Encontrei minha irmã para um brunch no domingo, e compramos um presente de aniversário para a nossa mãe.",
+              "audio": "I met my sister for brunch on Sunday, and we bought a birthday gift for our mom."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conte como foi o seu último fim de semana, com «was» e «were»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: A Lei da Gangorra: se tem did / didn't, o verbo principal fica na forma base. Em português, mantemos o verbo no passado na negativa (“Eu não fui”) e na pergunta (“Você foi?”). Em inglês, só pode haver uma marca de passado por frase. Na afirmativa, a marca fica no verbo (I went / I worked). Na pergunta e na negativa, o auxiliar did / didn't rouba a marca de passado para si, e o verbo principal volta à forma base (Did you go? / I didn't go — e não Did you went? ou I didn't went!). PASSO 2: O segredo sonoro do -ed: você quase nunca pronuncia a letra e! O brasileiro tende a ler toda terminação -ed como uma sílaba extra (“uó-kêd”, “plêi-êd”). Na vida real, a letra e é muda em quase todos os verbos regulares! Só pronunciamos a sílaba extra -id quando o verbo já termina no som de T ou D (want → wanted, need → needed, decide → decided). Nos demais, o -ed gruda direto na consoante anterior como um sopro de t (worked = uârkt) ou de d (called = kóld).",
+          "comparacao": "Ao contar histórias no passado em inglês, o falante de português enfrenta três armadilhas principais:",
+          "tabela": [
+            {
+              "portugues": "Você foi à festa ontem?",
+              "ingles": "Did you go to the party yesterday?",
+              "evite": "Did you went to the party?"
+            },
+            {
+              "portugues": "Eu não vi a sua mensagem.",
+              "ingles": "I didn't see your message.",
+              "evite": "I didn't saw your message."
+            },
+            {
+              "portugues": "Pronunciar o -e- de todos os -ed.",
+              "ingles": "walked (uókt), called (kóld — 1 sílaba!).",
+              "evite": "uó-kêd / có-lêd (só tem -id após t ou d!)."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "work",
@@ -83,7 +170,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "O passado simples regular",
           "explicacao": "PASSO 1: para falar de algo terminado, acrescente -ed ao verbo: «work → worked». O passado é IGUAL para todas as pessoas: «I worked», «she worked», «they worked». PASSO 2: verbo terminado em -e, só -d: «live → lived», «like → liked». PASSO 3: consoante + y vira -ied: «study → studied», «try → tried». Mas vogal + y só -ed: «play → played». PASSO 4: verbo curto terminado em consoante-vogal-consoante dobra: «stop → stopped», «plan → planned». PASSO 5: use marcadores: yesterday, last year, in 2020, two days ago. PASSO 6: o passado simples fala de algo ACABADO: «I lived in Rio for five years» (e já não moro).",
           "comparacao": "em português o passado muda com a pessoa («trabalhei», «trabalhou», «trabalharam»). O inglês usa uma forma só, «worked», para todas.",
@@ -140,8 +227,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 6 coisas que você fez ontem usando verbos regulares."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Conte como foi o seu último fim de semana, com «was» e «were»."
         }
       ]
     },
@@ -151,13 +243,47 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Dê o passado de: live, try, stop, play, want, open."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como funcionam os verbos regulares e irregulares nas três colunas abaixo: PASSO 2: Perguntas: PASSO 3: Na coluna da Negativa e na coluna da Pergunta, existe alguma diferença entre um verbo regular (work) e um verbo irregular (go, have)? PASSO 4: Por que na frase What did you do? a palavra did aparece junto com do? Qual é a função de cada uma?",
+          "tabela": [
+            {
+              "c1": "work (regular)",
+              "c2": "She worked yesterday.",
+              "c3": "She didn't work yesterday.",
+              "c4": "Did she work yesterday?"
+            },
+            {
+              "c1": "arrive (regular)",
+              "c2": "We arrived at ten.",
+              "c3": "We didn't arrive late.",
+              "c4": "What time did you arrive?"
+            },
+            {
+              "c1": "go (irregular)",
+              "c2": "I went to Niagara Falls.",
+              "c3": "I didn't go on Sunday.",
+              "c4": "Where did you go?"
+            },
+            {
+              "c1": "have (irregular)",
+              "c2": "They had lunch together.",
+              "c3": "They didn't have dinner.",
+              "c4": "Did they have a good time?"
+            },
+            {
+              "c1": "buy (irregular)",
+              "c2": "He bought a new laptop.",
+              "c3": "He didn't buy a tablet.",
+              "c4": "How much did he pay?"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "watched",
@@ -205,7 +331,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Os três sons do -ed",
           "explicacao": "PASSO 1: o -ed NÃO se lê sempre igual. Há três sons. PASSO 2: som /t/: depois de sons surdos (p, k, f, s, ch, sh): «watched /uótcht/», «cooked /cúkt/», «stopped /stópt/». PASSO 3: som /d/: depois de sons sonoros (b, g, v, z, l, m, n, r e vogais): «cleaned /kliind/», «played /plêid/», «listened /lísend/». PASSO 4: som /id/: depois de t ou d: «wanted /uóntid/», «needed /níidid/». Aqui o -ed vira UMA sílaba nova. PASSO 5: erro de brasileiro: pronunciar sempre «ed» como sílaba: «walk-ed». Diga «walked /uókt/», uma sílaba só. PASSO 6: treino: ouça os exemplos e repita.",
           "comparacao": "em português toda sílaba termina em vogal na fala natural, então o brasileiro tende a acrescentar um «i» no fim: «walki», «workedi». Segure a língua nos sons /t/ e /d/ sem soltar vogal.",
@@ -246,9 +372,21 @@
           "tag": "Pronúncia do -ed"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Forma Única para Todas as Pessoas: No Past Simple, I, you, he, she, it, we, they usam exatamente a mesma forma! PASSO 2: Afirmativa: PASSO 3: Regulares (+ed): Regra geral +ed (worked, stayed, watched); terminados em -e levam só +d (arrived, lived, liked); consoante + y vira -ied (study → studied, try → tried, mas play → played, stay → stayed); CVC tônico dobra a consoante (stop → stopped, plan → planned). PASSO 4: Irregulares: Mudam de forma na afirmativa (go → went, take → took, have → had, see → saw, make → made). PASSO 5: Negativa (Para regulares e irregulares):Sujeito + didn't + verbo na forma base (I didn't work / I didn't go / She didn't have). PASSO 6: Pergunta e Resposta Curta:(Wh-) + did + sujeito + verbo na forma base? (Did you like it? — Yes, I did. / No, I didn't. | Where did you stay?). (Lembrete do Cap. 10: was / were não usam did!).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Leia em voz alta 12 passados e classifique cada um em /t/, /d/ ou /id/."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Dê o passado de: live, try, stop, play, want, open."
         }
       ]
     },
@@ -258,13 +396,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Diga o som do -ed de: watched, played, wanted, cooked, cleaned, needed."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "did",
@@ -305,7 +438,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "Didn't e did: o verbo volta ao normal",
           "explicacao": "PASSO 1: negativa: «didn't» + verbo SIMPLES: «I didn't work.» PASSO 2: pergunta: «Did» + sujeito + verbo SIMPLES: «Did you work yesterday?» PASSO 3: resposta curta: «Yes, I did.» / «No, I didn't.» PASSO 4: o passado fica só no «did/didn't»: depois dele o verbo NÃO leva -ed: «I didn't worked» está errado. PASSO 5: com perguntas: «What did you do?», «Where did she go?», «When did they arrive?»",
           "comparacao": "em português a negativa e a pergunta mantêm o verbo no passado («não trabalhei», «você trabalhou?»). Em inglês o passado vai para o «did», e o verbo volta simples.",
@@ -351,34 +484,337 @@
           "tag": "Did"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "A busy Saturday / Um sábado cheio",
-          "ru": "Last Saturday, I woke up early. I cleaned my apartment and I cooked lunch. After lunch, I called my mother and we talked for an hour. Then I visited my friend Lara. We watched a movie and we laughed a lot. I didn't study, and I didn't go to the gym. At night, I was very tired, so I stayed at home and listened to music.",
-          "pt": "No sábado passado, acordei cedo. Limpei o apartamento e cozinhei o almoço. Depois do almoço, liguei para a minha mãe e conversamos por uma hora. Depois visitei a minha amiga Lara. Assistimos a um filme e rimos muito. Não estudei e não fui à academia. À noite, estava muito cansado, então fiquei em casa e ouvi música.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "What did the person cook?",
-              "resposta": "Lunch."
+              "ru": "What did you do last weekend?",
+              "translit": "",
+              "pt": "O que você fez no fim de semana passado?",
+              "en": "",
+              "audio": "What did you do last weekend?"
             },
             {
-              "pergunta": "Who did the person call?",
-              "resposta": "Their mother."
+              "ru": "We left at eight in the morning and arrived at ten.",
+              "translit": "",
+              "pt": "Saímos às oito da manhã e chegamos às dez.",
+              "en": "",
+              "audio": "We left at eight in the morning and arrived at ten."
             },
             {
-              "pergunta": "What did they do with Lara?",
-              "resposta": "They watched a movie and laughed a lot."
+              "ru": "I didn't see your email yesterday — sorry about that!",
+              "translit": "",
+              "pt": "Não vi o seu e-mail ontem — desculpe por isso!",
+              "en": "",
+              "audio": "I didn't see your email yesterday — sorry about that!"
             },
             {
-              "pergunta": "Did the person study?",
-              "resposta": "No, they didn't."
+              "ru": "How much did you pay for the flight tickets?",
+              "translit": "",
+              "pt": "Quanto você pagou pelas passagens aéreas?",
+              "en": "",
+              "audio": "How much did you pay for the flight tickets?"
+            },
+            {
+              "ru": "She bought a new laptop and sent the report last night.",
+              "translit": "",
+              "pt": "Ela comprou um notebook novo e enviou o relatório ontem à noite.",
+              "en": "",
+              "audio": "She bought a new laptop and sent the report last night."
+            },
+            {
+              "ru": "Did you have a good time in Montreal? — Yes, we did!",
+              "translit": "",
+              "pt": "Vocês se divertiram em Montreal? — Sim, nos divertimos!",
+              "en": "",
+              "audio": "Did you have a good time in Montreal? — Yes, we did!"
+            },
+            {
+              "ru": "I wanted to call you, but my phone battery died.",
+              "translit": "",
+              "pt": "Eu quis te ligar, mas a bateria do meu celular acabou.",
+              "en": "",
+              "audio": "I wanted to call you, but my phone battery died."
+            },
+            {
+              "ru": "He read the contract carefully and signed it this morning.",
+              "translit": "",
+              "pt": "Ele leu o contrato com cuidado e o assinou hoje de manhã.",
+              "en": "",
+              "audio": "He read the contract carefully and signed it this morning."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Yesterday we ___ to an Italian restaurant and ate great pasta.",
+              "opcoes": [
+                "went",
+                "goed"
+              ],
+              "gabarito": "went",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Yesterday we went to an Italian restaurant and ___ great pasta.",
+              "opcoes": [
+                "eat",
+                "ate"
+              ],
+              "gabarito": "ate",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-101b"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "___ you ___ the email to the client this morning? (Did… send / Did… sent)",
+              "respostaEsperada": "Did… send",
+              "id": "en-020-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ the movie last night because I was very tired.",
+              "opcoes": [
+                "didn't watch",
+                "didn't watched"
+              ],
+              "gabarito": "didn't watch",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I didn't watch the movie last night because I ___ very tired.",
+              "opcoes": [
+                "was",
+                "did be"
+              ],
+              "gabarito": "was",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-103b"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Where ___ Sarah ___ her new jacket? (did… buy / bought)",
+              "respostaEsperada": "did… buy",
+              "id": "en-020-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Qual destes verbos tem o -ed pronunciado como uma sílaba extra -id? (worked / called / wanted)",
+              "respostaEsperada": "wanted",
+              "id": "en-020-L-105"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Qual destes verbos tem o -ed pronunciado com som seco de t (1 sílaba)? (needed / stopped / lived)",
+              "respostaEsperada": "stopped",
+              "id": "en-020-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "He ___ the report last night and told me about the problem.",
+              "opcoes": [
+                "read",
+                "readed"
+              ],
+              "gabarito": "read",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "He read the report last night and ___ me about the problem.",
+              "opcoes": [
+                "said",
+                "told"
+              ],
+              "gabarito": "told",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Did they arrive on time? — Yes, they ___.",
+              "opcoes": [
+                "arrived",
+                "did"
+              ],
+              "gabarito": "did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What time ___ you leave the office yesterday evening?",
+              "respostaEsperada": "did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What time did you ___ (leave) the office yesterday evening?",
+              "respostaEsperada": "leave",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I ___ (try) to call you ten minutes ago, but you didn't answer.",
+              "respostaEsperada": "tried",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I tried to call you ten minutes ago, but you ___ (not / answer).",
+              "respostaEsperada": "didn't answer",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We ___ (take) a taxi to the airport because it rained a lot this morning.",
+              "respostaEsperada": "took",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We took a taxi to the airport because it ___ (rain) a lot this morning.",
+              "respostaEsperada": "rained",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She ___ (not / go) to the gym last night; she stayed home and made dinner.",
+              "respostaEsperada": "didn't go",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She didn't go to the gym last night; she ___ (stay) home and made dinner.",
+              "respostaEsperada": "stayed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She didn't go to the gym last night; she stayed home and ___ (make) dinner.",
+              "respostaEsperada": "made",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ Lucas have lunch with the client on Friday? — Yes, he did.",
+              "respostaEsperada": "Did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Did Lucas ___ (have) lunch with the client on Friday? — Yes, he did.",
+              "respostaEsperada": "have",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Did Lucas have lunch with the client on Friday? — Yes, he ___.",
+              "respostaEsperada": "did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-205c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My brother ___ (lose) his wallet last week, but somebody found it and gave it back!",
+              "respostaEsperada": "lost",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My brother lost his wallet last week, but somebody ___ (find) it and gave it back!",
+              "respostaEsperada": "found",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My brother lost his wallet last week, but somebody found it and ___ (give) it back!",
+              "respostaEsperada": "gave",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where ___ you meet your best friend, and when did you start working here?",
+              "respostaEsperada": "did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where did you ___ (meet) your best friend, and when did you start working here?",
+              "respostaEsperada": "meet",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where did you meet your best friend, and when ___ you start working here?",
+              "respostaEsperada": "did",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-207c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where did you meet your best friend, and when did you ___ (start) working here?",
+              "respostaEsperada": "start",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-207d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "They ___ (see) the presentation, thought about the proposal, and decided to sign the contract.",
+              "respostaEsperada": "saw",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "They saw the presentation, ___ (think) about the proposal, and decided to sign the contract.",
+              "respostaEsperada": "thought",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "They saw the presentation, thought about the proposal, and ___ (decide) to sign the contract.",
+              "respostaEsperada": "decided",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-208c"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva 5 frases sobre o seu último sábado, incluindo uma negativa com «didn't»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o som do -ed de: watched, played, wanted, cooked, cleaned, needed."
         }
       ]
     },
@@ -388,13 +824,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Conte o seu dia de ontem, do acordar ao dormir."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -570,12 +1001,130 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Conte em 1 minuto um dia que você nunca esqueceu, com 6 verbos regulares."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Conte quatro coisas que você fez ontem (yesterday) usando pelo menos três verbos irregulares (woke up, had, went, took, made, saw, bought).",
+              "respostaEsperada": "Yesterday I woke up at six thirty, had black coffee, went to the office by subway, and made dinner at night.",
+              "id": "en-020-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte duas coisas que você não fez no fim de semana passado usando I didn't….",
+              "respostaEsperada": "Last weekend, I didn't work and I didn't watch TV.",
+              "id": "en-020-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três perguntas com What time did you…?, Where did you…? e Did you…? para perguntar a um amigo sobre as últimas férias dele.",
+              "respostaEsperada": "Where did you go on your last vacation? What time did your flight leave? Did you like the hotel?",
+              "id": "en-020-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase que combine um verbo de ação no passado (went, arrived, called) com o verbo was / were (ex.: “Quisemos entrar, mas a fila estava enorme”).",
+              "respostaEsperada": "We wanted to buy the tickets, but the line was too long.",
+              "id": "en-020-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Did you went to the meeting yesterday morning?",
+              "respostaEsperada": "Did you go to the meeting yesterday morning?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I didn't saw your message because I lefted my phone in the car.",
+              "respostaEsperada": "I didn't see your message because I left my phone in the car.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Where you bought that backpack, and how much did you paid?",
+              "respostaEsperada": "Where did you buy that backpack, and how much did you pay?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She studyed English all weekend and taked a test on Monday.",
+              "respostaEsperada": "She studied English all weekend and took a test on Monday.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Did the flight was on time last night?",
+              "respostaEsperada": "Was the flight on time last night?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: He no called me yesterday.",
+              "respostaEsperada": "He didn't call me yesterday.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-020-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: We left the hotel at eight, took the subway, and arrived at the office on time.",
+              "respostaEsperada": "OK",
+              "id": "en-020-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais importante a eliminar do seu inglês é o duplo passado (Did you went? / I didn't saw / How much did you paid?). Crie este reflexo automático: escreveu ou falou did ou didn't? O verbo seguinte fica obrigatoriamente na forma base do presente! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Did you went there?",
+              "certo": "Did you go there?",
+              "motivo": "Did já marca o passado; o verbo principal volta à forma base (go)."
+            },
+            {
+              "errado": "I didn't saw him. / She didn't told me.",
+              "certo": "I didn't see him. / She didn't tell me.",
+              "motivo": "Após didn't, o verbo fica sempre na forma base (see, tell)."
+            },
+            {
+              "errado": "I lefted / I buyed / I taked.",
+              "certo": "I left / I bought / I took.",
+              "motivo": "Verbos irregulares não recebem -ed."
+            },
+            {
+              "errado": "Where you went yesterday?",
+              "certo": "Where did you go yesterday?",
+              "motivo": "Perguntas no passado exigem o auxiliar did antes do sujeito."
+            },
+            {
+              "errado": "Did you were tired?",
+              "certo": "Were you tired?",
+              "motivo": "O verbo to be (was / were) não usa did."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 10 e 11. Complete escolhendo entre was / were e did: (a) Where ____ you born? (b) Where ____ you grow up? (c) ____ the movie good? (d) ____ you like the movie? 2. Pronúncia do -ed. Separe estes 6 verbos nas três gavetas de som final (t, d ou id): worked, wanted, called, watched, needed, arrived. 3. Do Capítulo 6 e 10. Como você diz em inglês: “Eu saí do escritório às seis e meia da tarde na sexta-feira passada”?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Contar o que fiz ontem, no fim de semana ou nas férias usando verbos regulares e os irregulares essenciais. · Fazer perguntas com Did…? e negativas com didn't sem dizer “did went” ou “didn't saw”. Pronunciar worked, walked, watched, called, arrived sem criar uma sílaba - ed extra."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conta o que fez ontem, com a pronúncia certa do -ed. Próxima aula: verbos irregulares."
+  "notasParaOAluno": "Você conta o que fez ontem, com a pronúncia certa do -ed. Próxima aula: verbos irregulares.",
+  "geradaDoLivro": true
 }

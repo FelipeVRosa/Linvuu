@@ -15,13 +15,148 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 5 substantivos que você já conhece e diga se cada um é masculino, feminino ou neutro."
+          "tipo": "intro",
+          "min": 1,
+          "texto": "(ou: como saber, em três segundos, se uma palavra russa é masculina, feminina ou neutra)"
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 4,
+          "titulo": "Antes de mais nada: o que é um substantivo? e mais 2",
+          "explicacao": "PASSO 1: Antes de mais nada: o que é um substantivo?. Você já ouviu a palavra \"substantivo\" mil vezes na escola. Mas vou refrescar sua memória, porque isso importa para o que vem agora. Substantivo é a palavra que nomeia. Nomeia coisas, pessoas, lugares, ideias, sentimentos. Casa. Mapa. Cachorro. Amizade. Café. Brasil. É o \"quem\" ou o \"quê\" de qualquer frase. Se você consegue apontar para algo e dar um nome, esse nome é um substantivo. Em português, a gente nem pensa muito nisso. A gente aprendeu a língua tão naturalmente que substantivo é só uma palavra entre outras. Mas quando você aprende uma língua nova, precisa entender o que é um substantivo, porque ele é a base de tudo. E, no russo, o substantivo tem uma propriedade que vai determinar tudo o que vem depois: o gênero. PASSO 2: A primeira boa notícia: o russo não tem artigos. Aqui você respira aliviado. O russo não tem artigos. Nem definidos (o, a, os, as), nem indefinidos (um, uma, uns, umas). Nada. Em português, a gente diz \"o mapa\" ou \"a casa\". O artigo faz parte da palavra. Em russo, não. Дом pode significar \"casa\", \"a casa\" ou \"uma casa\". O contexto decide. Você não precisa se preocupar com artigo nenhum. Zero. Mas isso traz um problema. Em português, quem manda no gênero do substantivo é o artigo. Veja o teste: o mapa novo ✔ — e nunca \"o mapa nova\" ❌ a casa nova ✔ — e nunca \"a casa novo\" ❌ Repare que a palavra \"mapa\" termina em -a. Em português, você poderia pensar que é feminina. Mas não é. O artigo \"o\" é que manda. Do mesmo jeito, \"casa\" termina em -a, e o artigo \"a\" confirma o feminino. Em português, a última letra não é a autoridade. A autoridade é o artigo. Agora, a pergunta inevitável: se em russo não existe artigo, quem manda no gênero? PASSO 3: Quem manda no gênero russo: a última letra. Resposta direta: a última letra da palavra. É ela que determina o gênero. Sem artigo, sem exceção, sem discussão. E aqui vem a segunda novidade: o russo tem três gêneros, não dois. • 1. Masculino — ele (он) • 2. Feminino — ela (она) • 3. Neutro — ele/ela (оно) — é o \"it\" do inglês, onde moram as coisas, os objetos, os conceitos. Você já ouviu falar que o russo tem \"gênero neutro\"? É isso. Uma terceira caixa onde as palavras que não são nem masculinas nem femininas vão parar.",
+          "tag": "Livro"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "A tabela mestra: o gênero pela terminação · O protocolo de três segundos",
+          "explicacao": "A tabela mestra: o gênero pela terminação. Aqui está a regra que resolve 95% dos casos. Olhe a última letra. Aplique a tabela. Pronto. É só isso. Terminou em consoante? Masculino. Terminou em -а ou -я? Feminino. Terminou em -о, -е ou -мя? Neutro. Terminou em -ь? Você precisa consultar o dicionário — e vou te explicar por quê daqui a pouco. O protocolo de três segundos. Para qualquer palavra nova que você encontrar, faça isso: • 1. Olhe a última letra. • 2. Aplique a regra: Consoante ou -й → masculino -а ou -я → feminino -о, -е ou -мя → neutro -ь → dicionário • 3. Anote a palavra junto com o gênero. Sempre. Nunca decore uma palavra russa sem o gênero. O flashcard certo não é \"дом = casa\". É \"дом = casa (masculino)\". O gênero vem junto, sempre — porque, como você vai ver na próxima aula, o adjetivo depende disso. Parece simples? É simples. Mas tem algumas armadilhas. E é sobre elas que vamos falar agora.",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "A tabela mestra: o gênero pela terminação",
+              "linhas": [
+                {
+                  "SE A PALAVRA TERMINA EM...": "Consoante (qualquer uma, exceto -й e -ь)",
+                  "GÊNERO": "MASCULINO",
+                  "EXEMPLOS": "дом (casa), стол (mesa), парк (parque), город (cidade), кот (gato), друг (amigo), брат (irmão), чай (chá), музей (museu), словарь (dicionário), день (dia), рубль (rublo), урок (aula), журнал (revista), билет (bilhete), телефон (telefone), студент (estudante), врач (médico), хлеб (pão), сыр (queijo), банан (banana), апельсин (laranja), зонт (guarda-chuva)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-й (i breve)",
+                  "GÊNERO": "MASCULINO",
+                  "EXEMPLOS": "музей (museu), случай (caso), герой (herói), попугай (papagaio), чай (chá), трамвай (bonde), сарай (galpão), муравей (formiga), соловей (rouxinol)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-а",
+                  "GÊNERO": "FEMININO",
+                  "EXEMPLOS": "книга (livro), собака (cachorro/cachorra), лампа (lâmpada), гитара (guitarra), страна (país), машина (carro), сестра (irmã), подруга (amiga), карта (mapa), рука (mão), нога (perna), голова (cabeça), вода (água), еда (comida), зима (inverno), весна (primavera), школа (escola), работа (trabalho), газета (jornal), комната (quarto), квартира (apartamento), семья (família)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-я",
+                  "GÊNERO": "FEMININO",
+                  "EXEMPLOS": "семья (família), деревня (vila), тётя (tia), неделя (semana), земля (terra), заря (aurora), судья (juiz), статья (artigo), свинья (porca), кухня (cozinha), баня (sauna)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-о",
+                  "GÊNERO": "NEUTRO",
+                  "EXEMPLOS": "окно (janela), метро (metrô), кино (cinema), пиво (cerveja), слово (palavra), молоко (leite), письмо (carta), мясо (carne), масло (manteiga), золото (ouro), серебро (prata), яблоко (maçã), озеро (lago), небо (céu), утро (manhã), дело (negócio), место (lugar), число (número), лицо (rosto)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-е",
+                  "GÊNERO": "NEUTRO",
+                  "EXEMPLOS": "море (mar), лето (verão), платье (vestido), упражнение (exercício), время (tempo), поле (campo), здание (edifício), здоровье (saúde), счастье (felicidade), воскресенье (domingo), варенье (geleia), печенье (biscoito)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-мя",
+                  "GÊNERO": "NEUTRO",
+                  "EXEMPLOS": "имя (nome), время (tempo, hora), знамя (estandarte), семя (semente), пламя (chama), бремя (fardo), племя (tribo), стремя (estribo), темя (topo da cabeça), вымя (úbere)"
+                },
+                {
+                  "SE A PALAVRA TERMINA EM...": "-ь (sinal brando)",
+                  "GÊNERO": "MASCULINO ou FEMININO",
+                  "EXEMPLOS": "dia (день, masc.) / noite (ночь, fem.); dicionário (словарь, masc.) / caderno (тетрадь, fem.); rublo (рубль, masc.) / porta (дверь, fem.); cavalo (конь, masc.) / mãe (мать, fem.); convidado (гость, masc.) / praça (площадь, fem.); professor (учитель, masc.) / amor (любовь, fem.); carro (автомобиль, masc.) / cama (кровать, fem.)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "ARMADILHA Nº 1 — O sinal brando (-ь) e mais 2",
+          "explicacao": "PASSO 1: ARMADILHA Nº 1 — O sinal brando (-ь). O -ь (chamado de \"sinal brando\" ou \"мягкий знак\") é a pedra no sapato do estudante de russo. Ele não tem som próprio. Ele não é uma vogal, não é uma consoante. Ele é um sinal que amolece a consoante anterior. Pense nele como um \"tempero\" que muda a textura do som, mas não acrescenta nada. O problema é que, para o gênero, ele é ambíguo. Alguns substantivos terminados em -ь são masculinos. Outros são femininos. Não tem regra. Não tem lógica. Você tem que consultar o dicionário. Veja: Como saber? Só olhando no dicionário. Mas não desespere. Com o tempo, você vai ouvir o gênero, porque os adjetivos que acompanham a palavra entregam o jogo. Um russo diz большо́й день (\"um grande dia\") e больша́я ночь (\"uma grande noite\"). A terminação do adjetivo diz se é masculino ou feminino. Mas isso é assunto da próxima aula. Por enquanto, grave isto: -ь é dicionário. Não tente adivinhar. Consulte. E anote o gênero junto com a palavra. PASSO 2: ARMADILHA Nº 2 — O -мя. Palavras terminadas em -мя são neutras. Sempre. E são poucas: cerca de dez em toda a língua russa. Você não precisa decorar todas de uma vez. As duas mais usadas são: имя (ímia) — nome вре́мя (vrémia) — tempo, hora As outras (знамя, семя, пламя, стремя, племя, темя, бремя, вымя, полымя) são menos frequentes. Mas a regra é a mesma: -мя = neutro. Você acabou de aprender a regra para todas elas de uma vez. É disso que serve uma regra: funciona até com palavras que você nunca viu. PASSO 3: ARMADILHA Nº 3 — A celebridade кофе. Aqui está a exceção mais famosa da língua russa. Ко́фе (kófi) — café. Termina em -е. Pela regra, deveria ser neutro. Mas é masculino. Por quê? História. A palavra entrou no russo como кофий (kófii), que era masculino. Com o tempo, a palavra encolheu para кофе, mas o gênero ficou. É um fóssil linguístico. Guarde: вку́сный ко́фе (café gostoso). Não \"вкусное кофе\". É masculino. (Gramáticas modernas toleram o neutro em contextos informais, mas o masculino é a forma clássica, a recomendada. Use o masculino.)",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "ARMADILHA Nº 1 — O sinal brando (-ь)",
+              "linhas": [
+                {
+                  "MASCULINO (-Ь)": "день (dia)",
+                  "FEMININO (-Ь)": "ночь (noite)"
+                },
+                {
+                  "MASCULINO (-Ь)": "словарь (dicionário)",
+                  "FEMININO (-Ь)": "тетрадь (caderno)"
+                },
+                {
+                  "MASCULINO (-Ь)": "рубль (rublo)",
+                  "FEMININO (-Ь)": "дверь (porta)"
+                },
+                {
+                  "MASCULINO (-Ь)": "конь (cavalo)",
+                  "FEMININO (-Ь)": "мать (mãe)"
+                },
+                {
+                  "MASCULINO (-Ь)": "гость (convidado)",
+                  "FEMININO (-Ь)": "площадь (praça)"
+                },
+                {
+                  "MASCULINO (-Ь)": "учитель (professor)",
+                  "FEMININO (-Ь)": "любовь (amor)"
+                },
+                {
+                  "MASCULINO (-Ь)": "автомобиль (automóvel)",
+                  "FEMININO (-Ь)": "кровать (cama)"
+                },
+                {
+                  "MASCULINO (-Ь)": "медведь (urso)",
+                  "FEMININO (-Ь)": "мышь (rato)"
+                },
+                {
+                  "MASCULINO (-Ь)": "голубь (pombo)",
+                  "FEMININO (-Ь)": "морковь (cenoura)"
+                },
+                {
+                  "MASCULINO (-Ь)": "лось (alce)",
+                  "FEMININO (-Ь)": "лошадь (cavalo)"
+                },
+                {
+                  "MASCULINO (-Ь)": "путь (caminho)",
+                  "FEMININO (-Ь)": "ночь (noite)"
+                },
+                {
+                  "MASCULINO (-Ь)": "камень (pedra)",
+                  "FEMININO (-Ь)": "соль (sal)"
+                },
+                {
+                  "MASCULINO (-Ь)": "корень (raiz)",
+                  "FEMININO (-Ь)": "пыль (poeira)"
+                },
+                {
+                  "MASCULINO (-Ь)": "уровень (nível)",
+                  "FEMININO (-Ь)": "мебель (móvel)"
+                },
+                {
+                  "MASCULINO (-Ь)": "стиль (estilo)",
+                  "FEMININO (-Ь)": "цель (meta)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 6,
           "titulo": "O russo não tem artigos",
           "explicacao": "Em português dizemos «o livro» e «um livro». Em russo não existe «o», «a», «um» nem «uma»: a palavra «книга» pode significar «o livro» ou «um livro», e o contexto decide. Por isso, de cada substantivo você precisa guardar o gênero (masculino, feminino ou neutro). É o gênero que manda no adjetivo, no possessivo e no verbo no passado.",
           "comparacao": "o/a/um/uma + substantivo. Em russo só aparece o substantivo.",
@@ -50,7 +185,7 @@
         },
         {
           "tipo": "palavras",
-          "min": 10,
+          "min": 5,
           "itens": [
             {
               "ru": "день",
@@ -126,8 +261,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga em voz alta o gênero de 10 palavras que você já conhece: «дом — masculino», «книга — feminino», «окно — neutro»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 5 substantivos que você já conhece e diga se cada um é masculino, feminino ou neutro."
         }
       ]
     },
@@ -137,13 +277,295 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o gênero de: дом, книга, окно, день, ночь, имя."
+          "titulo": "ARMADILHA Nº 4 — Substantivos em -а/-я que são masculinos e mais 3",
+          "explicacao": "PASSO 1: ARMADILHA Nº 4 — Substantivos em -а/-я que são masculinos. Nem toda palavra terminada em -а ou -я é feminina. Existem exceções — e elas são importantes porque designam pessoas do sexo masculino. па́па (pápa) — papai де́душка (diédushka) — vovô дя́дя (diádia) — tio мужчи́на (muzhchína) — homem ю́ноша (iúnosha) — jovem, rapaz судья́ (sudiá) — juiz ста́роста (stárasta) — líder de grupo, monitor во́евода (vóivoda) — comandante militar (histórico) влади́ка (vladíka) — senhor, soberano Ники́та (Nikíta) — Nikita (nome masculino) Илья́ (Iliá) — Ilya (nome masculino) Лёва (Liova) — Liova (diminutivo de Lev) Са́ша (Sásha) — Sasha (diminutivo de Aleksandr ou Aleksandra) Же́ня (Zhénia) — Zhenia (diminutivo de Evgenii ou Evgeniia) Todas terminam em -а ou -я, mas são masculinas, porque designam homens. A regra da terminação vale para a maioria, mas o significado vale para os seres animados. É uma exceção que você usa todo dia — então grave. PASSO 2: ARMADILHA Nº 5 — дитя, a criança. Дитя́ (ditiá) — criança. É a única palavra neutra que designa uma pessoa. Todas as outras palavras que designam pessoas são masculinas ou femininas. Дитя é a exceção única. Vale a pena saber porque é uma palavra comum. PASSO 3: ARMADILHA Nº 6 — Substantivos de dois gêneros. Algumas palavras podem ser masculinas ou femininas, dependendo do sexo da pessoa que designam: сирота́ (sirrotá) — órfão ou órfã у́мница (úmnitsa) — menino ou menina inteligente пья́ница (piánitsa) — bêbado ou bêbada о́бжора (óbzhora) — guloso ou gulosa бродя́га (bradiága) — vagabundo ou vagabunda самоуби́йца (samoubiítsa) — suicida (homem ou mulher) A palavra não muda; o adjetivo que a acompanha é que revela o gênero. Mas isso é assunto da próxima aula. PASSO 4: ARMADILHA Nº 7 — Estrangeirismos. Palavras estrangeiras que entram no russo às vezes não seguem as regras. As principais: Terminadas em -и, -у, -ю → geralmente neutras: такси́ (táxi), меню́ (menu), кенгуру́ (canguru), киви́ (kiwi), желе́ (geleia), кафе́ (café, mas cuidado — o кофе é masculino e o кафе é neutro!), метро́ (metrô), кино́ (cinema), пальто́ (casaco), бюро́ (escritório) Terminadas em consoante, mas designando mulheres → femininas: ле́ди (lady), Мэ́ри (Mary), Ма́ргарет (Margaret), Э́лен (Ellen) Terminadas em -о e designando pessoas do sexo masculino → masculinas: маэ́стро (maestro), импреса́рио (empresário), Токи́о (Tóquio, cidade — nome masculino no russo?) Cada caso é um caso. Mas o mais comum é: estrangeirismo em vogal diferente de -а/-я → neutro.",
+          "tag": "Livro"
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 5,
+          "titulo": "A GRANDE DIVERGÊNCIA: português vs. russo",
+          "explicacao": "A GRANDE DIVERGÊNCIA: português vs. russo. Aqui mora a confusão número um do estudante brasileiro. Ela raramente é avisada com clareza. Por isso, vamos direto ao ponto: O gênero do português não vale nada em russo. Veja a tabela. À esquerda, o gênero em português. À direita, o gênero em russo. Repare que quase nunca coincidem. A doutrina desta aula, em uma frase: O gênero do português não vale nada em russo. Quando os dois coincidem, ótimo — é sorte. Quando divergem, manda o russo. Дом é masculino porque em russo é masculino. Ponto final. Isso não é um detalhe. É a diferença entre falar russo e falar português com palavras russas. Você está estudando outra língua. As regras são dela, não suas.",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "A GRANDE DIVERGÊNCIA: português vs. russo",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "a casa",
+                  "RUSSO": "дом",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a mesa",
+                  "RUSSO": "стол",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a cidade",
+                  "RUSSO": "город",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a porta",
+                  "RUSSO": "дверь",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "a noite",
+                  "RUSSO": "ночь",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o livro",
+                  "RUSSO": "книга",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o caderno",
+                  "RUSSO": "тетрадь",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o cachorro",
+                  "RUSSO": "собака",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o gato",
+                  "RUSSO": "кошка",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o nome",
+                  "RUSSO": "имя",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o vinho",
+                  "RUSSO": "вино",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o mar",
+                  "RUSSO": "море",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o tempo",
+                  "RUSSO": "время",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a palavra",
+                  "RUSSO": "слово",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a família",
+                  "RUSSO": "семья",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o amigo",
+                  "RUSSO": "друг",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o chá",
+                  "RUSSO": "чай",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o mapa",
+                  "RUSSO": "карта",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o problema",
+                  "RUSSO": "проблема",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a dor",
+                  "RUSSO": "боль",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o dia",
+                  "RUSSO": "день",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "a mão",
+                  "RUSSO": "рука",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o leite",
+                  "RUSSO": "молоко",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a carne",
+                  "RUSSO": "мясо",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o jornal",
+                  "RUSSO": "газета",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o carro",
+                  "RUSSO": "машина",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a árvore",
+                  "RUSSO": "дерево",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o ouro",
+                  "RUSSO": "золото",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a prata",
+                  "RUSSO": "серебро",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o céu",
+                  "RUSSO": "небо",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o campo",
+                  "RUSSO": "поле",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a saúde",
+                  "RUSSO": "здоровье",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a felicidade",
+                  "RUSSO": "счастье",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o exercício",
+                  "RUSSO": "упражнение",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "o edifício",
+                  "RUSSO": "здание",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "neutro",
+                  "COINCIDEM?": "❌"
+                },
+                {
+                  "PORTUGUÊS": "a semana",
+                  "RUSSO": "неделя",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "a terra",
+                  "RUSSO": "земля",
+                  "GÊNERO EM PORTUGUÊS": "feminino",
+                  "GÊNERO EM RUSSO": "feminino",
+                  "COINCIDEM?": "✔"
+                },
+                {
+                  "PORTUGUÊS": "o juiz",
+                  "RUSSO": "судья",
+                  "GÊNERO EM PORTUGUÊS": "masculino",
+                  "GÊNERO EM RUSSO": "masculino",
+                  "COINCIDEM?": "✔"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 9,
           "titulo": "O gênero pela terminação",
           "explicacao": "Olhe a última letra do substantivo no singular. Masculino: termina em consoante (стол, дом), em -й (музей) ou em -ь (день, словарь). Feminino: termina em -а ou -я (книга, неделя), ou em -ь (ночь, тетрадь). Neutro: termina em -о, -е ou -мя (окно, море, имя, время). Passo a passo: (1) olhe a última letra; (2) se ela for -ь, consulte a lista ou o dicionário; (3) confira se há um sufixo que denuncia o gênero (-тель, -ость, -ие...). Dois cuidados: (1) palavras em -ь podem ser masculinas ou femininas e não há regra, então decore o gênero junto com a palavra; (2) homens com final em -а ou -я são masculinos: папа, дедушка, дядя, мужчина.",
           "comparacao": "o gênero português também se decora («o dia», «a noite»), mas o russo quase sempre mostra o gênero na terminação. Cuidado: o gênero russo nem sempre bate com o português (книга é feminino, «livro» é masculino; письмо é neutro, «carta» é feminina).",
@@ -230,7 +652,7 @@
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "неделя",
@@ -292,8 +714,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga com o possessivo certo: «мой дом», «моя неделя», «моё море», «мой день», «моя ночь»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o gênero de: дом, книга, окно, день, ночь, имя."
         }
       ]
     },
@@ -303,13 +730,1166 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o plural que você já sabe: друг, брат, сестра, ребёнок, человек."
+          "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+          "explicacao": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar. Esta seção costuma faltar nas gramáticas, mas é a que você mais vai usar. O cérebro do brasileiro tem um \"piloto automático\" que associa o gênero português ao substantivo. Quando você vê \"livro\", seu cérebro pensa masculino. Quando vê \"casa\", pensa feminino. Isso é inevitável — é a sua língua materna funcionando. O problema: em russo, esse piloto automático te trai. E te trai feio. Aqui está uma lista das palavras que o brasileiro quase sempre erra o gênero na primeira tentativa. Grave estas. Elas vão te economizar meses de confusão. ð´ O brasileiro pensa MASCULINO, mas em russo é FEMININO ð´ O brasileiro pensa FEMININO, mas em russo é MASCULINO ð´ O brasileiro pensa MASCULINO, mas em russo é NEUTRO ð´ O brasileiro pensa FEMININO, mas em russo é NEUTRO ð´ O caso mais cruel: o brasileiro pensa NEUTRO, mas em russo é MASCULINO ou FEMININO O português não tem gênero neutro. Então o brasileiro não tem \"piloto automático\" para o neutro — e quando encontra uma palavra russa neutra, o cérebro busca uma referência e erra. Aqui estão os casos mais comuns: Essas são as palavras que mais aparecem em textos de nível iniciante e que mais fazem o brasileiro errar. Grave-as.",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "o livro",
+                  "RUSSO": "кни́га",
+                  "TRADUÇÃO": "livro",
+                  "POR QUE VOCÊ VAI ERRAR": "\"livro\" é masculino em português, mas кни́га termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o carro",
+                  "RUSSO": "маши́на",
+                  "TRADUÇÃO": "carro",
+                  "POR QUE VOCÊ VAI ERRAR": "маши́на termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o mapa",
+                  "RUSSO": "ка́рта",
+                  "TRADUÇÃO": "mapa",
+                  "POR QUE VOCÊ VAI ERRAR": "ка́рта termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o jornal",
+                  "RUSSO": "газе́та",
+                  "TRADUÇÃO": "jornal",
+                  "POR QUE VOCÊ VAI ERRAR": "газе́та termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o problema",
+                  "RUSSO": "пробле́ма",
+                  "TRADUÇÃO": "problema",
+                  "POR QUE VOCÊ VAI ERRAR": "пробле́ма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o sistema",
+                  "RUSSO": "систе́ма",
+                  "TRADUÇÃO": "sistema",
+                  "POR QUE VOCÊ VAI ERRAR": "систе́ма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o tema",
+                  "RUSSO": "те́ма",
+                  "TRADUÇÃO": "tema",
+                  "POR QUE VOCÊ VAI ERRAR": "те́ма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o dia (não, dia é masculino)",
+                  "RUSSO": "—",
+                  "TRADUÇÃO": "—",
+                  "POR QUE VOCÊ VAI ERRAR": "(esse acerta)"
+                },
+                {
+                  "PORTUGUÊS": "o programa",
+                  "RUSSO": "програ́мма",
+                  "TRADUÇÃO": "programa",
+                  "POR QUE VOCÊ VAI ERRAR": "програ́мма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o drama",
+                  "RUSSO": "дра́ма",
+                  "TRADUÇÃO": "drama",
+                  "POR QUE VOCÊ VAI ERRAR": "дра́ма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o clima",
+                  "RUSSO": "кли́мат",
+                  "TRADUÇÃO": "clima",
+                  "POR QUE VOCÊ VAI ERRAR": "кли́мат termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o telegrama",
+                  "RUSSO": "телегра́мма",
+                  "TRADUÇÃO": "telegrama",
+                  "POR QUE VOCÊ VAI ERRAR": "телегра́мма termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o telefonema",
+                  "RUSSO": "—",
+                  "TRADUÇÃO": "—",
+                  "POR QUE VOCÊ VAI ERRAR": "(em russo é звонок, masculino)"
+                },
+                {
+                  "PORTUGUÊS": "o cinema (local)",
+                  "RUSSO": "кинотеа́тр",
+                  "TRADUÇÃO": "cinema (local)",
+                  "POR QUE VOCÊ VAI ERRAR": "кинотеа́тр termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "o cinema (arte)",
+                  "RUSSO": "кино́",
+                  "TRADUÇÃO": "cinema (arte)",
+                  "POR QUE VOCÊ VAI ERRAR": "кино́ termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o rádio",
+                  "RUSSO": "ра́дио",
+                  "TRADUÇÃO": "rádio",
+                  "POR QUE VOCÊ VAI ERRAR": "ра́дио termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o foto",
+                  "RUSSO": "фотогра́фия",
+                  "TRADUÇÃO": "foto",
+                  "POR QUE VOCÊ VAI ERRAR": "фотогра́фия termina em -я → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o sofá",
+                  "RUSSO": "дива́н",
+                  "TRADUÇÃO": "sofá",
+                  "POR QUE VOCÊ VAI ERRAR": "дива́н termina em consoante → masculino (esse acerta)"
+                },
+                {
+                  "PORTUGUÊS": "o piano",
+                  "RUSSO": "роя́ль / пиани́но",
+                  "TRADUÇÃO": "piano",
+                  "POR QUE VOCÊ VAI ERRAR": "роя́ль é -ь (masc.); пиани́но é -о (neutro)"
+                },
+                {
+                  "PORTUGUÊS": "o sapato",
+                  "RUSSO": "ту́фля",
+                  "TRADUÇÃO": "sapato",
+                  "POR QUE VOCÊ VAI ERRAR": "ту́фля termina em -я → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o planeta",
+                  "RUSSO": "плане́та",
+                  "TRADUÇÃO": "planeta",
+                  "POR QUE VOCÊ VAI ERRAR": "плане́та termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o cometa",
+                  "RUSSO": "коме́та",
+                  "TRADUÇÃO": "cometa",
+                  "POR QUE VOCÊ VAI ERRAR": "коме́та termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o poeta",
+                  "RUSSO": "поэ́т",
+                  "TRADUÇÃO": "poeta",
+                  "POR QUE VOCÊ VAI ERRAR": "поэ́т termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o atleta",
+                  "RUSSO": "атле́т",
+                  "TRADUÇÃO": "atleta",
+                  "POR QUE VOCÊ VAI ERRAR": "атле́т termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o idioma",
+                  "RUSSO": "язы́к",
+                  "TRADUÇÃO": "idioma",
+                  "POR QUE VOCÊ VAI ERRAR": "язы́к termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "o turista",
+                  "RUSSO": "тури́ст",
+                  "TRADUÇÃO": "turista",
+                  "POR QUE VOCÊ VAI ERRAR": "тури́ст termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o dentista",
+                  "RUSSO": "стомато́лог",
+                  "TRADUÇÃO": "dentista",
+                  "POR QUE VOCÊ VAI ERRAR": "стомато́лог termina em consoante → masculino"
+                }
+              ]
+            },
+            {
+              "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "a casa",
+                  "RUSSO": "дом",
+                  "TRADUÇÃO": "casa",
+                  "POR QUE VOCÊ VAI ERRAR": "дом termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a mesa",
+                  "RUSSO": "стол",
+                  "TRADUÇÃO": "mesa",
+                  "POR QUE VOCÊ VAI ERRAR": "стол termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a cidade",
+                  "RUSSO": "го́род",
+                  "TRADUÇÃO": "cidade",
+                  "POR QUE VOCÊ VAI ERRAR": "го́род termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a dor",
+                  "RUSSO": "боль",
+                  "TRADUÇÃO": "dor",
+                  "POR QUE VOCÊ VAI ERRAR": "боль termina em -ь → dicionário (é feminino, você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a cor",
+                  "RUSSO": "цвет",
+                  "TRADUÇÃO": "cor",
+                  "POR QUE VOCÊ VAI ERRAR": "цвет termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a flor",
+                  "RUSSO": "цвето́к",
+                  "TRADUÇÃO": "flor",
+                  "POR QUE VOCÊ VAI ERRAR": "цвето́к termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a árvore",
+                  "RUSSO": "де́рево",
+                  "TRADUÇÃO": "árvore",
+                  "POR QUE VOCÊ VAI ERRAR": "де́рево termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a cadeira",
+                  "RUSSO": "стул",
+                  "TRADUÇÃO": "cadeira",
+                  "POR QUE VOCÊ VAI ERRAR": "стул termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a viagem",
+                  "RUSSO": "путеше́ствие",
+                  "TRADUÇÃO": "viagem",
+                  "POR QUE VOCÊ VAI ERRAR": "путеше́ствие termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a paisagem",
+                  "RUSSO": "пейза́ж",
+                  "TRADUÇÃO": "paisagem",
+                  "POR QUE VOCÊ VAI ERRAR": "пейза́ж termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a mensagem",
+                  "RUSSO": "сообще́ние",
+                  "TRADUÇÃO": "mensagem",
+                  "POR QUE VOCÊ VAI ERRAR": "сообще́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a personagem",
+                  "RUSSO": "персона́ж",
+                  "TRADUÇÃO": "personagem",
+                  "POR QUE VOCÊ VAI ERRAR": "персона́ж termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a vantagem",
+                  "RUSSO": "преиму́щество",
+                  "TRADUÇÃO": "vantagem",
+                  "POR QUE VOCÊ VAI ERRAR": "преиму́щество termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a garagem",
+                  "RUSSO": "гараж",
+                  "TRADUÇÃO": "garagem",
+                  "POR QUE VOCÊ VAI ERRAR": "гараж termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a coragem",
+                  "RUSSO": "сме́лость",
+                  "TRADUÇÃO": "coragem",
+                  "POR QUE VOCÊ VAI ERRAR": "сме́лость termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a imagem",
+                  "RUSSO": "о́браз",
+                  "TRADUÇÃO": "imagem",
+                  "POR QUE VOCÊ VAI ERRAR": "о́браз termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a ordem",
+                  "RUSSO": "прика́з",
+                  "TRADUÇÃO": "ordem",
+                  "POR QUE VOCÊ VAI ERRAR": "прика́з termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a carne",
+                  "RUSSO": "мясо",
+                  "TRADUÇÃO": "carne",
+                  "POR QUE VOCÊ VAI ERRAR": "мясо termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a noite",
+                  "RUSSO": "ночь",
+                  "TRADUÇÃO": "noite",
+                  "POR QUE VOCÊ VAI ERRAR": "ночь termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a tarde",
+                  "RUSSO": "день",
+                  "TRADUÇÃO": "tarde (parte do dia)",
+                  "POR QUE VOCÊ VAI ERRAR": "день termina em -ь → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a manhã",
+                  "RUSSO": "у́тро",
+                  "TRADUÇÃO": "manhã",
+                  "POR QUE VOCÊ VAI ERRAR": "у́тро termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a tarde (período)",
+                  "RUSSO": "ве́чер",
+                  "TRADUÇÃO": "tarde/noite (período)",
+                  "POR QUE VOCÊ VAI ERRAR": "ве́чер termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a semana",
+                  "RUSSO": "неде́ля",
+                  "TRADUÇÃO": "semana",
+                  "POR QUE VOCÊ VAI ERRAR": "неде́ля termina em -я → feminino (você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a hora",
+                  "RUSSO": "час",
+                  "TRADUÇÃO": "hora",
+                  "POR QUE VOCÊ VAI ERRAR": "час termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a vez",
+                  "RUSSO": "раз",
+                  "TRADUÇÃO": "vez",
+                  "POR QUE VOCÊ VAI ERRAR": "раз termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a metade",
+                  "RUSSO": "полови́на",
+                  "TRADUÇÃO": "metade",
+                  "POR QUE VOCÊ VAI ERRAR": "полови́на termina em -а → feminino (você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a parte",
+                  "RUSSO": "часть",
+                  "TRADUÇÃO": "parte",
+                  "POR QUE VOCÊ VAI ERRAR": "часть termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a arte",
+                  "RUSSO": "иску́сство",
+                  "TRADUÇÃO": "arte",
+                  "POR QUE VOCÊ VAI ERRAR": "иску́сство termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a fé",
+                  "RUSSO": "ве́ра",
+                  "TRADUÇÃO": "fé",
+                  "POR QUE VOCÊ VAI ERRAR": "ве́ра termina em -а → feminino (você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a paz",
+                  "RUSSO": "мир",
+                  "TRADUÇÃO": "paz",
+                  "POR QUE VOCÊ VAI ERRAR": "мир termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a voz",
+                  "RUSSO": "го́лос",
+                  "TRADUÇÃO": "voz",
+                  "POR QUE VOCÊ VAI ERRAR": "го́лос termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a luz",
+                  "RUSSO": "свет",
+                  "TRADUÇÃO": "luz",
+                  "POR QUE VOCÊ VAI ERRAR": "свет termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a cruz",
+                  "RUSSO": "крест",
+                  "TRADUÇÃO": "cruz",
+                  "POR QUE VOCÊ VAI ERRAR": "крест termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a saúde",
+                  "RUSSO": "здоро́вье",
+                  "TRADUÇÃO": "saúde",
+                  "POR QUE VOCÊ VAI ERRAR": "здоро́вье termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a sorte",
+                  "RUSSO": "уда́ча",
+                  "TRADUÇÃO": "sorte",
+                  "POR QUE VOCÊ VAI ERRAR": "уда́ча termina em -а → feminino (você acerta)"
+                }
+              ]
+            },
+            {
+              "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "o nome",
+                  "RUSSO": "и́мя",
+                  "TRADUÇÃO": "nome",
+                  "POR QUE VOCÊ VAI ERRAR": "и́мя termina em -мя → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o tempo",
+                  "RUSSO": "вре́мя",
+                  "TRADUÇÃO": "tempo",
+                  "POR QUE VOCÊ VAI ERRAR": "вре́мя termina em -мя → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o vinho",
+                  "RUSSO": "вино́",
+                  "TRADUÇÃO": "vinho",
+                  "POR QUE VOCÊ VAI ERRAR": "вино́ termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o leite",
+                  "RUSSO": "молоко́",
+                  "TRADUÇÃO": "leite",
+                  "POR QUE VOCÊ VAI ERRAR": "молоко́ termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o ouro",
+                  "RUSSO": "зо́лото",
+                  "TRADUÇÃO": "ouro",
+                  "POR QUE VOCÊ VAI ERRAR": "зо́лото termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o céu",
+                  "RUSSO": "не́бо",
+                  "TRADUÇÃO": "céu",
+                  "POR QUE VOCÊ VAI ERRAR": "не́бо termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o mar",
+                  "RUSSO": "мо́ре",
+                  "TRADUÇÃO": "mar",
+                  "POR QUE VOCÊ VAI ERRAR": "мо́ре termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o campo",
+                  "RUSSO": "по́ле",
+                  "TRADUÇÃO": "campo",
+                  "POR QUE VOCÊ VAI ERRAR": "по́ле termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o edifício",
+                  "RUSSO": "зда́ние",
+                  "TRADUÇÃO": "edifício",
+                  "POR QUE VOCÊ VAI ERRAR": "зда́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o exercício",
+                  "RUSSO": "упражне́ние",
+                  "TRADUÇÃO": "exercício",
+                  "POR QUE VOCÊ VAI ERRAR": "упражне́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o coração",
+                  "RUSSO": "се́рдце",
+                  "TRADUÇÃO": "coração",
+                  "POR QUE VOCÊ VAI ERRAR": "се́рдце termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o sol",
+                  "RUSSO": "со́лнце",
+                  "TRADUÇÃO": "sol",
+                  "POR QUE VOCÊ VAI ERRAR": "со́лнце termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o óleo",
+                  "RUSSO": "ма́сло",
+                  "TRADUÇÃO": "óleo",
+                  "POR QUE VOCÊ VAI ERRAR": "ма́сло termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o açúcar",
+                  "RUSSO": "са́хар",
+                  "TRADUÇÃO": "açúcar",
+                  "POR QUE VOCÊ VAI ERRAR": "са́хар termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o pão",
+                  "RUSSO": "хлеб",
+                  "TRADUÇÃO": "pão",
+                  "POR QUE VOCÊ VAI ERRAR": "хлеб termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o queijo",
+                  "RUSSO": "сыр",
+                  "TRADUÇÃO": "queijo",
+                  "POR QUE VOCÊ VAI ERRAR": "сыр termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o ovo",
+                  "RUSSO": "яйцо́",
+                  "TRADUÇÃO": "ovo",
+                  "POR QUE VOCÊ VAI ERRAR": "яйцо́ termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o osso",
+                  "RUSSO": "кость",
+                  "TRADUÇÃO": "osso",
+                  "POR QUE VOCÊ VAI ERRAR": "кость termina em -ь → feminino (você vai errar o gênero, mas pelo menos erra a terminação)"
+                },
+                {
+                  "PORTUGUÊS": "o sangue",
+                  "RUSSO": "кровь",
+                  "TRADUÇÃO": "sangue",
+                  "POR QUE VOCÊ VAI ERRAR": "кровь termina em -ь → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o dever",
+                  "RUSSO": "долг",
+                  "TRADUÇÃO": "dever",
+                  "POR QUE VOCÊ VAI ERRAR": "долг termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o prazer",
+                  "RUSSO": "удово́льствие",
+                  "TRADUÇÃO": "prazer",
+                  "POR QUE VOCÊ VAI ERRAR": "удово́льствие termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o sofrimento",
+                  "RUSSO": "страда́ние",
+                  "TRADUÇÃO": "sofrimento",
+                  "POR QUE VOCÊ VAI ERRAR": "страда́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o sentimento",
+                  "RUSSO": "чу́вство",
+                  "TRADUÇÃO": "sentimento",
+                  "POR QUE VOCÊ VAI ERRAR": "чу́вство termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o pensamento",
+                  "RUSSO": "мысль",
+                  "TRADUÇÃO": "pensamento",
+                  "POR QUE VOCÊ VAI ERRAR": "мысль termina em -ь → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o conhecimento",
+                  "RUSSO": "зна́ние",
+                  "TRADUÇÃO": "conhecimento",
+                  "POR QUE VOCÊ VAI ERRAR": "зна́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o movimento",
+                  "RUSSO": "движе́ние",
+                  "TRADUÇÃO": "movimento",
+                  "POR QUE VOCÊ VAI ERRAR": "движе́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o momento",
+                  "RUSSO": "моме́нт",
+                  "TRADUÇÃO": "momento",
+                  "POR QUE VOCÊ VAI ERRAR": "моме́нт termina em consoante → masculino (esse acerta!)"
+                },
+                {
+                  "PORTUGUÊS": "o instante",
+                  "RUSSO": "мгнове́ние",
+                  "TRADUÇÃO": "instante",
+                  "POR QUE VOCÊ VAI ERRAR": "мгнове́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "o silêncio",
+                  "RUSSO": "тишина́",
+                  "TRADUÇÃO": "silêncio",
+                  "POR QUE VOCÊ VAI ERRAR": "тишина́ termina em -а → feminino"
+                },
+                {
+                  "PORTUGUÊS": "o ruído",
+                  "RUSSO": "шум",
+                  "TRADUÇÃO": "ruído",
+                  "POR QUE VOCÊ VAI ERRAR": "шум termina em consoante → masculino (esse acerta!)"
+                }
+              ]
+            },
+            {
+              "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "a palavra",
+                  "RUSSO": "сло́во",
+                  "TRADUÇÃO": "palavra",
+                  "POR QUE VOCÊ VAI ERRAR": "сло́во termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a carne",
+                  "RUSSO": "мясо",
+                  "TRADUÇÃO": "carne",
+                  "POR QUE VOCÊ VAI ERRAR": "мясо termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a árvore",
+                  "RUSSO": "де́рево",
+                  "TRADUÇÃO": "árvore",
+                  "POR QUE VOCÊ VAI ERRAR": "де́рево termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a saúde",
+                  "RUSSO": "здоро́вье",
+                  "TRADUÇÃO": "saúde",
+                  "POR QUE VOCÊ VAI ERRAR": "здоро́вье termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a felicidade",
+                  "RUSSO": "сча́стье",
+                  "TRADUÇÃO": "felicidade",
+                  "POR QUE VOCÊ VAI ERRAR": "сча́стье termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a sorte",
+                  "RUSSO": "—",
+                  "TRADUÇÃO": "—",
+                  "POR QUE VOCÊ VAI ERRAR": "(em russo é удача, feminino — você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a viagem",
+                  "RUSSO": "путеше́ствие",
+                  "TRADUÇÃO": "viagem",
+                  "POR QUE VOCÊ VAI ERRAR": "путеше́ствие termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a mensagem",
+                  "RUSSO": "сообще́ние",
+                  "TRADUÇÃO": "mensagem",
+                  "POR QUE VOCÊ VAI ERRAR": "сообще́ние termina em -е → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a vantagem",
+                  "RUSSO": "преиму́щество",
+                  "TRADUÇÃO": "vantagem",
+                  "POR QUE VOCÊ VAI ERRAR": "преиму́щество termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a arte",
+                  "RUSSO": "иску́сство",
+                  "TRADUÇÃO": "arte",
+                  "POR QUE VOCÊ VAI ERRAR": "иску́сство termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a luz",
+                  "RUSSO": "свет",
+                  "TRADUÇÃO": "luz",
+                  "POR QUE VOCÊ VAI ERRAR": "свет termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a cor",
+                  "RUSSO": "цвет",
+                  "TRADUÇÃO": "cor",
+                  "POR QUE VOCÊ VAI ERRAR": "цвет termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a dor",
+                  "RUSSO": "боль",
+                  "TRADUÇÃO": "dor",
+                  "POR QUE VOCÊ VAI ERRAR": "боль termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a paz",
+                  "RUSSO": "мир",
+                  "TRADUÇÃO": "paz",
+                  "POR QUE VOCÊ VAI ERRAR": "мир termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a voz",
+                  "RUSSO": "го́лос",
+                  "TRADUÇÃO": "voz",
+                  "POR QUE VOCÊ VAI ERRAR": "го́лос termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a metade",
+                  "RUSSO": "полови́на",
+                  "TRADUÇÃO": "metade",
+                  "POR QUE VOCÊ VAI ERRAR": "полови́на termina em -а → feminino (você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a parte",
+                  "RUSSO": "часть",
+                  "TRADUÇÃO": "parte",
+                  "POR QUE VOCÊ VAI ERRAR": "часть termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a noite",
+                  "RUSSO": "ночь",
+                  "TRADUÇÃO": "noite",
+                  "POR QUE VOCÊ VAI ERRAR": "ночь termina em -ь → feminino (você acerta por sorte)"
+                },
+                {
+                  "PORTUGUÊS": "a manhã",
+                  "RUSSO": "у́тро",
+                  "TRADUÇÃO": "manhã",
+                  "POR QUE VOCÊ VAI ERRAR": "у́тро termina em -о → neutro"
+                },
+                {
+                  "PORTUGUÊS": "a tarde",
+                  "RUSSO": "ве́чер",
+                  "TRADUÇÃO": "tarde",
+                  "POR QUE VOCÊ VAI ERRAR": "ве́чер termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a hora",
+                  "RUSSO": "час",
+                  "TRADUÇÃO": "hora",
+                  "POR QUE VOCÊ VAI ERRAR": "час termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a vez",
+                  "RUSSO": "раз",
+                  "TRADUÇÃO": "vez",
+                  "POR QUE VOCÊ VAI ERRAR": "раз termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a fé",
+                  "RUSSO": "ве́ра",
+                  "TRADUÇÃO": "fé",
+                  "POR QUE VOCÊ VAI ERRAR": "ве́ра termina em -а → feminino (você acerta)"
+                },
+                {
+                  "PORTUGUÊS": "a cruz",
+                  "RUSSO": "крест",
+                  "TRADUÇÃO": "cruz",
+                  "POR QUE VOCÊ VAI ERRAR": "крест termina em consoante → masculino"
+                },
+                {
+                  "PORTUGUÊS": "a flor",
+                  "RUSSO": "цвето́к",
+                  "TRADUÇÃO": "flor",
+                  "POR QUE VOCÊ VAI ERRAR": "цвето́к termina em consoante → masculino"
+                }
+              ]
+            },
+            {
+              "titulo": "O TERREMOTO DO BRASILEIRO: as palavras que você VAI errar",
+              "linhas": [
+                {
+                  "PORTUGUÊS": "o problema",
+                  "RUSSO": "пробле́ма",
+                  "TRADUÇÃO": "problema",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o tema",
+                  "RUSSO": "те́ма",
+                  "TRADUÇÃO": "tema",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o sistema",
+                  "RUSSO": "систе́ма",
+                  "TRADUÇÃO": "sistema",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o programa",
+                  "RUSSO": "програ́мма",
+                  "TRADUÇÃO": "programa",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o drama",
+                  "RUSSO": "дра́ма",
+                  "TRADUÇÃO": "drama",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o mapa",
+                  "RUSSO": "ка́рта",
+                  "TRADUÇÃO": "mapa",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o planeta",
+                  "RUSSO": "плане́та",
+                  "TRADUÇÃO": "planeta",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o cometa",
+                  "RUSSO": "коме́та",
+                  "TRADUÇÃO": "cometa",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o telegrama",
+                  "RUSSO": "телегра́мма",
+                  "TRADUÇÃO": "telegrama",
+                  "GÊNERO EM RUSSO": "feminino"
+                },
+                {
+                  "PORTUGUÊS": "o idioma",
+                  "RUSSO": "язы́к",
+                  "TRADUÇÃO": "idioma",
+                  "GÊNERO EM RUSSO": "masculino"
+                },
+                {
+                  "PORTUGUÊS": "o clima",
+                  "RUSSO": "кли́мат",
+                  "TRADUÇÃO": "clima",
+                  "GÊNERO EM RUSSO": "masculino"
+                }
+              ]
+            }
+          ]
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 5,
+          "titulo": "Vocabulário de partida: 40 palavras (e seus gêneros) · Quadro-resumo · gênero dos substant",
+          "explicacao": "Vocabulário de partida: 40 palavras (e seus gêneros). Aqui está uma lista de palavras comuns para você treinar. Repare nos gêneros. Repare nas divergências com o português. Masculino (termina em consoante ou -й) Feminino (termina em -а ou -я) Neutro (termina em -о, -е ou -мя) O quarteto do -ь (para treinar o dicionário) Quadro-resumo · gênero dos substantivos",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "Vocabulário de partida: 40 palavras (e seus gêneros)",
+              "linhas": [
+                {
+                  "RUSSO": "дом",
+                  "TRANSLITERAÇÃO": "dom",
+                  "TRADUÇÃO": "casa (fem. em português!)"
+                },
+                {
+                  "RUSSO": "стол",
+                  "TRANSLITERAÇÃO": "stol",
+                  "TRADUÇÃO": "mesa (fem. em português!)"
+                },
+                {
+                  "RUSSO": "парк",
+                  "TRANSLITERAÇÃO": "park",
+                  "TRADUÇÃO": "parque"
+                },
+                {
+                  "RUSSO": "город",
+                  "TRANSLITERAÇÃO": "górat",
+                  "TRADUÇÃO": "cidade (fem. em português!)"
+                },
+                {
+                  "RUSSO": "кот",
+                  "TRANSLITERAÇÃO": "kot",
+                  "TRADUÇÃO": "gato"
+                },
+                {
+                  "RUSSO": "друг",
+                  "TRANSLITERAÇÃO": "druk",
+                  "TRADUÇÃO": "amigo"
+                },
+                {
+                  "RUSSO": "брат",
+                  "TRANSLITERAÇÃO": "brat",
+                  "TRADUÇÃO": "irmão"
+                },
+                {
+                  "RUSSO": "чай",
+                  "TRANSLITERAÇÃO": "tchái",
+                  "TRADUÇÃO": "chá"
+                },
+                {
+                  "RUSSO": "кофе",
+                  "TRANSLITERAÇÃO": "kófi",
+                  "TRADUÇÃO": "café (a exceção famosa — masculino!)"
+                },
+                {
+                  "RUSSO": "музей",
+                  "TRANSLITERAÇÃO": "muziéi",
+                  "TRADUÇÃO": "museu"
+                },
+                {
+                  "RUSSO": "словарь",
+                  "TRANSLITERAÇÃO": "slavár",
+                  "TRADUÇÃO": "dicionário"
+                },
+                {
+                  "RUSSO": "день",
+                  "TRANSLITERAÇÃO": "dien",
+                  "TRADUÇÃO": "dia"
+                },
+                {
+                  "RUSSO": "рубль",
+                  "TRANSLITERAÇÃO": "rubl",
+                  "TRADUÇÃO": "rublo"
+                },
+                {
+                  "RUSSO": "урок",
+                  "TRANSLITERAÇÃO": "urók",
+                  "TRADUÇÃO": "lição, aula"
+                },
+                {
+                  "RUSSO": "студент",
+                  "TRANSLITERAÇÃO": "studént",
+                  "TRADUÇÃO": "estudante"
+                },
+                {
+                  "RUSSO": "врач",
+                  "TRANSLITERAÇÃO": "vratch",
+                  "TRADUÇÃO": "médico"
+                },
+                {
+                  "RUSSO": "хлеб",
+                  "TRANSLITERAÇÃO": "khleb",
+                  "TRADUÇÃO": "pão"
+                },
+                {
+                  "RUSSO": "сыр",
+                  "TRANSLITERAÇÃO": "syr",
+                  "TRADUÇÃO": "queijo"
+                },
+                {
+                  "RUSSO": "банан",
+                  "TRANSLITERAÇÃO": "banán",
+                  "TRADUÇÃO": "banana (fem. em português!)"
+                },
+                {
+                  "RUSSO": "апельсин",
+                  "TRANSLITERAÇÃO": "apelsín",
+                  "TRADUÇÃO": "laranja (fem. em português!)"
+                },
+                {
+                  "RUSSO": "телефон",
+                  "TRANSLITERAÇÃO": "telefón",
+                  "TRADUÇÃO": "telefone"
+                },
+                {
+                  "RUSSO": "билет",
+                  "TRANSLITERAÇÃO": "biliét",
+                  "TRADUÇÃO": "bilhete"
+                },
+                {
+                  "RUSSO": "журнал",
+                  "TRANSLITERAÇÃO": "zhurnál",
+                  "TRADUÇÃO": "revista (fem. em português!)"
+                }
+              ]
+            },
+            {
+              "titulo": "Vocabulário de partida: 40 palavras (e seus gêneros)",
+              "linhas": [
+                {
+                  "RUSSO": "книга",
+                  "TRANSLITERAÇÃO": "kníga",
+                  "TRADUÇÃO": "livro (masc. em português!)"
+                },
+                {
+                  "RUSSO": "собака",
+                  "TRANSLITERAÇÃO": "sabáka",
+                  "TRADUÇÃO": "cachorro/cachorra (masc. em português!)"
+                },
+                {
+                  "RUSSO": "лампа",
+                  "TRANSLITERAÇÃO": "lámpa",
+                  "TRADUÇÃO": "lâmpada"
+                },
+                {
+                  "RUSSO": "гитара",
+                  "TRANSLITERAÇÃO": "gitára",
+                  "TRADUÇÃO": "guitarra"
+                },
+                {
+                  "RUSSO": "страна",
+                  "TRANSLITERAÇÃO": "strána",
+                  "TRADUÇÃO": "país"
+                },
+                {
+                  "RUSSO": "семья",
+                  "TRANSLITERAÇÃO": "simiá",
+                  "TRADUÇÃO": "família"
+                },
+                {
+                  "RUSSO": "подруга",
+                  "TRANSLITERAÇÃO": "padrúga",
+                  "TRADUÇÃO": "amiga"
+                },
+                {
+                  "RUSSO": "машина",
+                  "TRANSLITERAÇÃO": "machína",
+                  "TRADUÇÃO": "carro (masc. em português!)"
+                },
+                {
+                  "RUSSO": "карта",
+                  "TRANSLITERAÇÃO": "kárta",
+                  "TRADUÇÃO": "mapa (masc. em português!)"
+                },
+                {
+                  "RUSSO": "тетрадь",
+                  "TRANSLITERAÇÃO": "tetrát",
+                  "TRADUÇÃO": "caderno (masc. em português!)"
+                },
+                {
+                  "RUSSO": "ночь",
+                  "TRANSLITERAÇÃO": "notch",
+                  "TRADUÇÃO": "noite"
+                },
+                {
+                  "RUSSO": "дверь",
+                  "TRANSLITERAÇÃO": "dvér",
+                  "TRADUÇÃO": "porta"
+                },
+                {
+                  "RUSSO": "газета",
+                  "TRANSLITERAÇÃO": "gaziéta",
+                  "TRADUÇÃO": "jornal (masc. em português!)"
+                },
+                {
+                  "RUSSO": "проблема",
+                  "TRANSLITERAÇÃO": "prabléma",
+                  "TRADUÇÃO": "problema (masc. em português!)"
+                },
+                {
+                  "RUSSO": "школа",
+                  "TRANSLITERAÇÃO": "shkóla",
+                  "TRADUÇÃO": "escola"
+                },
+                {
+                  "RUSSO": "рука",
+                  "TRANSLITERAÇÃO": "ruká",
+                  "TRADUÇÃO": "mão"
+                },
+                {
+                  "RUSSO": "вода",
+                  "TRANSLITERAÇÃO": "vadá",
+                  "TRADUÇÃO": "água"
+                },
+                {
+                  "RUSSO": "голова",
+                  "TRANSLITERAÇÃO": "galavá",
+                  "TRADUÇÃO": "cabeça"
+                }
+              ]
+            },
+            {
+              "titulo": "Vocabulário de partida: 40 palavras (e seus gêneros)",
+              "linhas": [
+                {
+                  "RUSSO": "метро",
+                  "TRANSLITERAÇÃO": "metró",
+                  "TRADUÇÃO": "metrô"
+                },
+                {
+                  "RUSSO": "кино",
+                  "TRANSLITERAÇÃO": "kinó",
+                  "TRADUÇÃO": "cinema"
+                },
+                {
+                  "RUSSO": "слово",
+                  "TRANSLITERAÇÃO": "slóva",
+                  "TRADUÇÃO": "palavra (fem. em português!)"
+                },
+                {
+                  "RUSSO": "имя",
+                  "TRANSLITERAÇÃO": "ímiá",
+                  "TRADUÇÃO": "nome (masc. em português!)"
+                },
+                {
+                  "RUSSO": "время",
+                  "TRANSLITERAÇÃO": "vrémia",
+                  "TRADUÇÃO": "tempo, hora (masc. em português!)"
+                },
+                {
+                  "RUSSO": "вино",
+                  "TRANSLITERAÇÃO": "vinó",
+                  "TRADUÇÃO": "vinho (masc. em português!)"
+                },
+                {
+                  "RUSSO": "пиво",
+                  "TRANSLITERAÇÃO": "píva",
+                  "TRADUÇÃO": "cerveja (fem. em português!)"
+                },
+                {
+                  "RUSSO": "море",
+                  "TRANSLITERAÇÃO": "mórie",
+                  "TRADUÇÃO": "mar (masc. em português!)"
+                },
+                {
+                  "RUSSO": "окно",
+                  "TRANSLITERAÇÃO": "aknó",
+                  "TRADUÇÃO": "janela"
+                },
+                {
+                  "RUSSO": "письмо",
+                  "TRANSLITERAÇÃO": "pismó",
+                  "TRADUÇÃO": "carta (fem. em português!)"
+                },
+                {
+                  "RUSSO": "молоко",
+                  "TRANSLITERAÇÃO": "malakó",
+                  "TRADUÇÃO": "leite (masc. em português!)"
+                },
+                {
+                  "RUSSO": "упражнение",
+                  "TRANSLITERAÇÃO": "uprazhnéniie",
+                  "TRADUÇÃO": "exercício (masc. em português!)"
+                },
+                {
+                  "RUSSO": "мясо",
+                  "TRANSLITERAÇÃO": "miása",
+                  "TRADUÇÃO": "carne (fem. em português!)"
+                },
+                {
+                  "RUSSO": "дерево",
+                  "TRANSLITERAÇÃO": "diérieva",
+                  "TRADUÇÃO": "árvore (fem. em português!)"
+                },
+                {
+                  "RUSSO": "здоровье",
+                  "TRANSLITERAÇÃO": "zdaróviie",
+                  "TRADUÇÃO": "saúde (fem. em português!)"
+                },
+                {
+                  "RUSSO": "счастье",
+                  "TRANSLITERAÇÃO": "shchástiie",
+                  "TRADUÇÃO": "felicidade (fem. em português!)"
+                },
+                {
+                  "RUSSO": "небо",
+                  "TRANSLITERAÇÃO": "niéba",
+                  "TRADUÇÃO": "céu (masc. em português!)"
+                },
+                {
+                  "RUSSO": "поле",
+                  "TRANSLITERAÇÃO": "pólie",
+                  "TRADUÇÃO": "campo (masc. em português!)"
+                }
+              ]
+            },
+            {
+              "titulo": "Vocabulário de partida: 40 palavras (e seus gêneros)",
+              "linhas": [
+                {
+                  "MASCULINO (-Ь)": "день (dia)",
+                  "FEMININO (-Ь)": "ночь (noite)"
+                },
+                {
+                  "MASCULINO (-Ь)": "словарь (dicionário)",
+                  "FEMININO (-Ь)": "тетрадь (caderno)"
+                },
+                {
+                  "MASCULINO (-Ь)": "рубль (rublo)",
+                  "FEMININO (-Ь)": "дверь (porta)"
+                },
+                {
+                  "MASCULINO (-Ь)": "гость (convidado)",
+                  "FEMININO (-Ь)": "площадь (praça)"
+                },
+                {
+                  "MASCULINO (-Ь)": "учитель (professor)",
+                  "FEMININO (-Ь)": "любовь (amor)"
+                },
+                {
+                  "MASCULINO (-Ь)": "автомобиль (automóvel)",
+                  "FEMININO (-Ь)": "кровать (cama)"
+                },
+                {
+                  "MASCULINO (-Ь)": "медведь (urso)",
+                  "FEMININO (-Ь)": "мышь (rato)"
+                },
+                {
+                  "MASCULINO (-Ь)": "голубь (pombo)",
+                  "FEMININO (-Ь)": "морковь (cenoura)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 9,
           "titulo": "O plural regular",
           "explicacao": "Masculino: consoante + -ы (стол → столы); -й e -ь viram -и (музей → музеи, словарь → словари). Feminino: -а vira -ы; -я e -ь viram -и (книга → книги, неделя → недели, ночь → ночи). Neutro: -о vira -а e -е vira -я (окно → окна, море → моря). Regra de ortografia: depois de г, к, х, ж, ч, ш, щ nunca se escreve -ы, e sim -и (книга → книги, ручка → ручки). Você já viu irregulares: друг → друзья, брат → братья, ребёнок → дети, человек → люди.",
           "comparacao": "em português o plural quase sempre é um -s. Em russo a terminação muda e depende do gênero.",
@@ -366,7 +1946,7 @@
         },
         {
           "tipo": "texto",
-          "min": 8,
+          "min": 5,
           "titulo": "Моя комната / Meu quarto",
           "ru": "Это моя комната. Здесь есть окна, столы и книги. Окна большие, а столы маленькие. Я люблю читать здесь.",
           "pt": "Este é o meu quarto. Aqui há janelas, mesas e livros. As janelas são grandes e as mesas são pequenas. Eu gosto de ler aqui.",
@@ -387,8 +1967,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga o plural de «книга, стол, окно, ручка, неделя» e a frase «У меня есть книги и ручки.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o plural que você já sabe: друг, брат, сестра, ребёнок, человек."
         }
       ]
     },
@@ -398,13 +1983,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 3 palavras de cada gênero com o possessivo: мой …, моя …, моё …"
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 13,
           "itens": [
             {
               "tipo": "multiple-choice",
@@ -569,11 +2149,215 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Grave-se: diga 6 palavras com o possessivo certo e depois as mesmas no plural."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 3 palavras de cada gênero com o possessivo: мой …, моя …, моё …"
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Identifique o gênero лампа (lâmpada) — ___",
+              "respostaEsperada": "fem",
+              "explicacao": "fem.",
+              "id": "ru-011-L-101"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Identifique o gênero парк (parque) — ___",
+              "respostaEsperada": "masc",
+              "explicacao": "masc.",
+              "id": "ru-011-L-102"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Identifique o gênero вино (vinho) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-103"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Identifique o gênero кино (cinema) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Classifique na coluna certa: Coloque as palavras nas colunas corretas: дом, книга, слово, чай, ночь, время, стол, лампа, море, друг, подруга, метро, карта, письмо, автомобиль.",
+              "respostaEsperada": "Masculino: дом, чай, стол, друг, автомобиль Feminino: книга, ночь, лампа, подруга, карта Neutro: слово, время, море, метро, письмо",
+              "id": "ru-011-L-200"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Termina em consoante ou -й → gênero ___.",
+              "respostaEsperada": "masculino",
+              "explicacao": "masculino",
+              "id": "ru-011-L-301"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Termina em -а ou -я → gênero ___.",
+              "respostaEsperada": "feminino",
+              "explicacao": "feminino",
+              "id": "ru-011-L-302"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Termina em -о, -е ou -мя → gênero ___.",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-303"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Termina em -ь → preciso consultar o ___.",
+              "respostaEsperada": "dicionário",
+              "explicacao": "dicionário",
+              "id": "ru-011-L-304"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete as regras:  Termina em -мя → gênero ______________ (são cerca de ____ palavras).",
+              "respostaEsperada": "neutro (cerca de 10)",
+              "id": "ru-011-L-305"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete as regras:  кофе é uma exceção: é ______________, apesar de terminar em ____.",
+              "respostaEsperada": "masculino; -е",
+              "id": "ru-011-L-306"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Detetive de gênero новый дом → дом é ___ (a pista: -ый)",
+              "respostaEsperada": "masculino",
+              "explicacao": "masculino",
+              "id": "ru-011-L-401"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Detetive de gênero старая книга → книга é ___ (a pista: -ая)",
+              "respostaEsperada": "feminino",
+              "explicacao": "feminino",
+              "id": "ru-011-L-402"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Detetive de gênero новое слово → слово é ___ (a pista: -ое)",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-403"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Detetive de gênero большая собака → собака é ___",
+              "respostaEsperada": "feminino",
+              "explicacao": "feminino",
+              "id": "ru-011-L-404"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Verdadeiro ou falso: ( ) Em russo, \"casa\" (дом) é feminino, como em português. ( ) \"Cidade\" (город) é masculino em russo, ao contrário do português. ( ) \"Cachorro\" (собака) é feminino em russo. ( ) \"Família\" (семья) é feminino em russo, como em português. ( ) \"Palavra\" (слово) é neutro em russo. ( ) \"Vinho\" (вино) é masculino em russo. ( ) \"Dia\" (день) é masculino em russo. ( ) \"Noite\" (ночь) é masculino em russo. ( ) \"Café\" (кофе) é neutro em russo. ( ) \"Tempo\" (время) é masculino em russo. ( ) \"Livro\" (книга) é feminino em russo. ( ) \"Carro\" (машина) é feminino em russo.",
+              "respostaEsperada": "1. F (é masculino) — 2. V — 3. V — 4. V — 5. V — 6. F (é neutro) — 7. V — 8. F (é feminino) — 9. F (é masculino) — 10. F (é neutro, -мя) — 11. V — 12. V",
+              "id": "ru-011-L-500"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Desafio (regra aplicada a palavras nunca vistas) знамя (estandarte) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-601"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Desafio (regra aplicada a palavras nunca vistas) семя (semente) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-602"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Desafio (regra aplicada a palavras nunca vistas) пламя (chama) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-603"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Desafio (regra aplicada a palavras nunca vistas) бремя (fardo) — ___",
+              "respostaEsperada": "neutro",
+              "explicacao": "neutro",
+              "id": "ru-011-L-604"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "casa (m) — ___",
+              "respostaEsperada": "дом",
+              "explicacao": "дом",
+              "id": "ru-011-L-701"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "mesa (f em português, m em russo) — ___",
+              "respostaEsperada": "стол",
+              "explicacao": "стол",
+              "id": "ru-011-L-702"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "livro (m em português, f em russo) — ___",
+              "respostaEsperada": "книга",
+              "explicacao": "книга",
+              "id": "ru-011-L-703"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "cachorro (m em português, f em russo) — ___",
+              "respostaEsperada": "собака",
+              "explicacao": "собака",
+              "id": "ru-011-L-704"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "Resumo de bolso",
+          "explicacao": "PASSO 1: • 1. O russo não tem artigos. Quem manda no gênero é a última letra. PASSO 2: • 2. São três gêneros: masculino, feminino e neutro. PASSO 3: • 3. Regra geral: PASSO 4: Consoante ou -й → masculino PASSO 5: -а ou -я → feminino PASSO 6: -о, -е ou -мя → neutro PASSO 7: -ь → dicionário PASSO 8: • 4. Armadilhas: PASSO 9: -ь é ambíguo (dicionário) PASSO 10: -мя é sempre neutro (cerca de 10 palavras) PASSO 11: кофе é masculino (exceção famosa) PASSO 12: -а/-я que designam machos são masculinos (папа, дядя, дедушка) PASSO 13: дитя é o único neutro que designa pessoa PASSO 14: Estrangeirismos em -и, -у, -ю são neutros (такси, меню) PASSO 15: • 5. O gênero do português não vale nada em russo. Quando os dois coincidem, é sorte. Quando divergem, manda o russo. PASSO 16: • 6. O piloto automático do brasileiro te trai. Palavras como livro, carro, mapa, jornal, problema, nome, tempo, vinho, mar, palavra, leite, árvore, saúde, felicidade — todas têm gênero diferente em russo. Grave-as. PASSO 17: • 7. Decore toda palavra nova junto com seu gênero. Sempre. \"m\", \"f\" ou \"n\" ao lado.",
+          "tabelas": [
+            {
+              "linhas": [
+                {
+                  "GÊNERO": "ONILUCSAM",
+                  "TERMINAÇÃO NO SINGULAR": "consoante · ь · й",
+                  "EXEMPLO (SINGULAR → PLURAL)": "сто́л → столы́ учи́тель → учителя́ музе́й → музе́и"
+                },
+                {
+                  "GÊNERO": "ONINIMEF",
+                  "TERMINAÇÃO NO SINGULAR": "а · я · ь",
+                  "EXEMPLO (SINGULAR → PLURAL)": "кни́га → кни́ги неде́ля → неде́ли но́чь → но́чи"
+                },
+                {
+                  "GÊNERO": "ORTUEN",
+                  "TERMINAÇÃO NO SINGULAR": "о · е",
+                  "EXEMPLO (SINGULAR → PLURAL)": "окно́ → о́кна мо́ре → моря́"
+                }
+              ]
+            }
+          ],
+          "tag": "Resumo"
         }
       ]
     }
   ],
-  "notasParaOAluno": "Agora você descobre o gênero de quase qualquer palavra e forma o plural. Próxima aula: o adjetivo e a concordância."
+  "notasParaOAluno": "Agora você descobre o gênero de quase qualquer palavra e forma o plural. Próxima aula: o adjetivo e a concordância.",
+  "geradaDoLivro": true
 }

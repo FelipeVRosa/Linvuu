@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você expressa fatos que sempre acontecem (Zero Conditional) e condições reais no futuro (First Conditional) sem colocar will dentro da cláusula com if, when, as soon as, until ou before, e usa unless (“a menos que”) e in case (“para o caso de”) com naturalidade."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Fechando o cronograma de lançamento",
+          "contexto": "Lucas, Sarah e o desenvolvedor Kevin alinham os últimos detalhes para o lançamento da nova plataforma na sexta-feira.",
+          "linhas": [
+            {
+              "personagem": "Sarah",
+              "ru": "— Kevin, are we ready for Friday's launch? What happens if the server gets too much traffic at the same time?",
+              "pt": "— Kevin, estamos prontos para o lançamento de sexta-feira? O que acontece se o servidor receber tráfego demais ao mesmo tempo?",
+              "audio": "Kevin, are we ready for Friday's launch? What happens if the server gets too much traffic at the same time?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Don't worry, Sarah. If the traffic goes over ten thousand users, our backup server turns on automatically.",
+              "pt": "— Não se preocupe, Sarah. Se o tráfego passar de dez mil usuários, nosso servidor reserva liga automaticamente.",
+              "audio": "Don't worry, Sarah. If the traffic goes over ten thousand users, our backup server turns on automatically."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— That's great. And when will the new version be available in the app store?",
+              "pt": "— Que ótimo. E quando a nova versão estará disponível na loja de aplicativos?",
+              "audio": "That's great. And when will the new version be available in the app store?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— As soon as Emma approves the final design today, I'll upload the files. If everything goes well this afternoon, the app will be live tomorrow morning!",
+              "pt": "— Assim que a Emma aprovar o design final hoje, eu subo os arquivos. Se tudo correr bem hoje à tarde, o aplicativo estará no ar amanhã de manhã!",
+              "audio": "As soon as Emma approves the final design today, I'll upload the files. If everything goes well this afternoon, the app will be live tomorrow morning!"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Awesome. I'll call the marketing team as soon as I get the confirmation from you.",
+              "pt": "— Perfeito. Vou ligar para a equipe de marketing assim que eu receber a confirmação de você.",
+              "audio": "Awesome. I'll call the marketing team as soon as I get the confirmation from you."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— What if the client asks for last-minute changes today?",
+              "pt": "— E se o cliente pedir alterações de última hora hoje?",
+              "audio": "What if the client asks for last-minute changes today?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— We won't change anything today unless there is a critical bug! If we change the code now, we'll delay the whole launch.",
+              "pt": "— Não vamos mudar nada hoje, a menos que haja um erro crítico! Se mudarmos o código agora, atrasaremos o lançamento inteiro.",
+              "audio": "We won't change anything today unless there is a critical bug! If we change the code now, we'll delay the whole launch."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Agreed. I'll stay at the office until we finish the final test tonight, just in case you need any help!",
+              "pt": "— Combinado. Vou ficar no escritório até terminarmos o teste final hoje à noite, só para o caso de você precisar de alguma ajuda!",
+              "audio": "Agreed. I'll stay at the office until we finish the final test tonight, just in case you need any help!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Use 5 phrasal verbs para contar o seu fim de semana."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Depois de if, when, as soon as, until, unless, before, after, in case, não se usa will. Mesmo que a ação vá acontecer amanhã ou no ano que vem, a metade da frase que começa com uma dessas palavras fica no Present Simple (If you need, When she arrives, As soon as it stops). O futuro (will / 'll / won't, be going to ou o imperativo) fica na cláusula de resultado. PASSO 2: No Present Simple depois de if / when, não esqueça o -s de he, she, it! Em português dizemos “Se ele ligar / Quando ela chegar”, que parecem infinitivos. Em inglês é Present Simple puro, portanto exige -s na 3ª pessoa: If he calls, When she arrives, If it rains (e não If he call ou If it rain).",
+          "comparacao": "Em português, quando falamos de uma condição futura, usamos formas especiais (“Se chover amanhã / Quando eu chegar lá / Assim que ele ligar”). Como o inglês não tem futuro do subjuntivo, o brasileiro cai em duas armadilhas opostas: ou tenta enfiar will depois do if / when, ou esquece o -s da 3ª pessoa (he, she, it). Veja como desarmar esses erros:",
+          "tabela": [
+            {
+              "portugues": "Se chover amanhã, ficaremos em casa.",
+              "ingles": "If it rains tomorrow, we'll stay home.",
+              "evite": "If it will rain / If rain tomorrow…"
+            },
+            {
+              "portugues": "Te ligo quando eu chegar no hotel.",
+              "ingles": "I'll call you when I arrive at the hotel.",
+              "evite": "when I will arrive at the hotel"
+            },
+            {
+              "portugues": "Assim que ela terminar, ela te avisa.",
+              "ingles": "As soon as she finishes, she'll let you know.",
+              "evite": "As soon as she finish / will finish…"
+            },
+            {
+              "portugues": "Só fico a menos que você vá também.",
+              "ingles": "I won't stay unless you go too.",
+              "evite": "unless you don't go (unless já é negativo)"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "flight",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Pedir e perguntar em viagem",
           "explicacao": "PASSO 1: no balcão: «I'd like to check in, please.», «Here is my passport.» PASSO 2: pergunte: «What time does the flight leave?», «Which gate is it?» PASSO 3: no hotel: «I have a reservation under the name Silva.» (reserva em nome de), «Is breakfast included?» PASSO 4: problemas: «There is a problem with my room.», «The air conditioning doesn't work.» PASSO 5: peça: «Could I have a late check-out?» PASSO 6: «luggage» e «baggage» são incontáveis: «my luggage», «a piece of luggage», nunca «luggages».",
           "comparacao": "em português «bagagens» é plural comum. Em inglês, «luggage» é incontável: «My luggage is heavy», «two pieces of luggage».",
@@ -131,8 +217,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Faça o check-in do aeroporto e depois o do hotel, em voz alta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Use 5 phrasal verbs para contar o seu fim de semana."
         }
       ]
     },
@@ -142,13 +233,23 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Peça 3 coisas num hotel com «Could I have…?»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare os dois tipos de condicionais reais nas tabelas abaixo: PASSO 2: WHEN) PASSO 3: Zero Conditional Present Simple:If Present Simple:the Leis da ciência, regras fixas PASSO 4: E compare estas quatro palavras que substituem ou refinam o if e o when: PASSO 5: Perguntas: PASSO 6: Qual é a diferença prática de comportamento entre I'll buy some water if I get thirsty e I'll buy some water in case I get thirsty? Em qual delas você compra a água agora mesmo, antes de sentir sede? PASSO 7: O que muda na pontuação quando a frase começa com If / When em comparação a quando o if / when fica no meio da frase?",
+          "tabela": [
+            {
+              "c1": "First Conditional (Possibilidade real no futuro)",
+              "c2": "Present Simple:If everything goes well today,",
+              "c3": "will / won't (ou Imperativo / Modal): the app will be live tomorrow!",
+              "c4": "Planos, negociações, avisos e consequências reais para uma situação específica futura."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "if",
@@ -196,7 +297,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "If + presente, will + verbo",
           "explicacao": "PASSO 1: o primeiro condicional fala de possibilidade REAL no futuro: «If it rains tomorrow, we will stay at the hotel.» PASSO 2: a estrutura: «If + presente simples, will + verbo». PASSO 3: depois do «if» NUNCA use «will»: «If I will go» está errado. PASSO 4: pode inverter a ordem; se o «if» vier no fim, sem vírgula: «We will stay at the hotel if it rains.» PASSO 5: «unless» = a menos que (se não): «I won't go unless you come.» PASSO 6: pergunta: «What will you do if the flight is cancelled?» PASSO 7: no resultado, vale também o imperativo e «can/should»: «If you are lost, call me.», «If you feel sick, you should rest.»",
           "comparacao": "em português usamos o futuro do subjuntivo: «se chover, ficaremos». O inglês usa o PRESENTE depois do «if»: «If it rains, we will stay». Não use «will» depois de «if».",
@@ -243,9 +344,21 @@
           "tag": "Primeiro condicional"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Zero Conditional (Verdade Geral / Rotina Fixa = Present Simple + Present Simple): PASSO 2: If / When you heat ice, it melts. | If I drink coffee at night, I don't sleep well. PASSO 3: First Conditional (Futuro Real = If + Present Simple → will / can / Imperativo): PASSO 4: Com will / won't:If you send the contract today, I'll sign it tomorrow. PASSO 5: Com Imperativo / Modal:If you have any questions, call me (ou you can call me)! PASSO 6: Conectores de tempo no futuro (sempre seguidos de Present Simple, sem will): PASSO 7: when (quando), as soon as (assim que), until (até que), before (antes que), after (depois que): I'll wait here until you finish / Call me as soon as you land. PASSO 8: Unless vs. In case: PASSO 9: unless + verbo afirmativo = “a menos que / se não” (You won't pass unless you study). PASSO 10: in case + Present Simple = “para o caso de / por precaução” (Write down the password in case you forget it).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Complete 6 frases suas: «If it rains this weekend, I will…», «If I have money, I will…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Peça 3 coisas num hotel com «Could I have…?»"
         }
       ]
     },
@@ -255,13 +368,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Complete: «If I ___ (miss) the bus, I ___ (take) a taxi.»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "lost",
@@ -302,7 +410,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Pedir ajuda de forma educada",
           "explicacao": "PASSO 1: comece com «Excuse me» e use «Could you tell me…?»: «Could you tell me where the station is?» PASSO 2: dentro da pergunta educada, a ordem é de AFIRMAÇÃO: «where the station is» (não «where is the station»). PASSO 3: «Do you know…?» também funciona: «Do you know what time the bus leaves?» PASSO 4: agradeça: «Thanks a lot.», «That's very helpful.»",
           "comparacao": "em português «você sabe onde fica a estação?» mantém a ordem normal. Em inglês, a pergunta dentro de outra pergunta vira afirmação: «Do you know where the station IS?»",
@@ -332,7 +440,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "At the hotel / No hotel",
           "contexto": "Maria faz o check-in e pede ajuda.",
           "linhas": [
@@ -375,9 +483,325 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "If I have time this afternoon, I'll review your presentation.",
+              "translit": "",
+              "pt": "Se eu tiver tempo hoje à tarde, reviso a sua apresentação.",
+              "en": "",
+              "audio": "If I have time this afternoon, I'll review your presentation."
+            },
+            {
+              "ru": "What will happen if we miss the connection in Miami?",
+              "translit": "",
+              "pt": "O que vai acontecer se perdermos a conexão em Miami?",
+              "en": "",
+              "audio": "What will happen if we miss the connection in Miami?"
+            },
+            {
+              "ru": "I'll text you as soon as the plane lands, I promise!",
+              "translit": "",
+              "pt": "Te mando mensagem assim que o avião pousar, prometo!",
+              "en": "",
+              "audio": "I'll text you as soon as the plane lands, I promise!"
+            },
+            {
+              "ru": "Please stay on the line until the operator answers.",
+              "translit": "",
+              "pt": "Por favor, aguarde na linha até que o atendente atenda.",
+              "en": "",
+              "audio": "Please stay on the line until the operator answers."
+            },
+            {
+              "ru": "We won't finish on time unless everybody helps.",
+              "translit": "",
+              "pt": "Não terminaremos no prazo a menos que todo mundo ajude.",
+              "en": "",
+              "audio": "We won't finish on time unless everybody helps."
+            },
+            {
+              "ru": "Take a snack with you in case you get hungry on the train.",
+              "translit": "",
+              "pt": "Leve um lanche com você para o caso de sentir fome no trem.",
+              "en": "",
+              "audio": "Take a snack with you in case you get hungry on the train."
+            },
+            {
+              "ru": "If you need anything at all, just let me know!",
+              "translit": "",
+              "pt": "Se você precisar de qualquer coisa, é só me avisar!",
+              "en": "",
+              "audio": "If you need anything at all, just let me know!"
+            },
+            {
+              "ru": "If I drink too much coffee, my heart beats fast.",
+              "translit": "",
+              "pt": "Se eu tomo café demais, meu coração bate rápido.",
+              "en": "",
+              "audio": "If I drink too much coffee, my heart beats fast."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If it ___ tomorrow morning, we 'll hold the event indoors.",
+              "opcoes": [
+                "rains",
+                "will rain"
+              ],
+              "gabarito": "rains",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If it rains tomorrow morning, we ___ the event indoors.",
+              "opcoes": [
+                "hold",
+                "'ll hold"
+              ],
+              "gabarito": "'ll hold",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'll send you the address as soon as I ___ to the hotel.",
+              "opcoes": [
+                "get",
+                "will get"
+              ],
+              "gabarito": "get",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If Sarah ___ before noon, please tell her I'm in Room 4.",
+              "opcoes": [
+                "call",
+                "calls"
+              ],
+              "gabarito": "calls",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If Sarah calls before noon, please ___ her I'm in Room 4.",
+              "opcoes": [
+                "tell",
+                "will tell"
+              ],
+              "gabarito": "tell",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We won't sign the contract unless they ___ us a discount.",
+              "opcoes": [
+                "give",
+                "don't give"
+              ],
+              "gabarito": "give",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'll stay at the office until the client ___.",
+              "opcoes": [
+                "arrives",
+                "will arrive"
+              ],
+              "gabarito": "arrives",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Take a printed copy of the slides ___ the Wi-Fi doesn't work!",
+              "opcoes": [
+                "if",
+                "in case"
+              ],
+              "gabarito": "in case",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ I see Lucas at lunch today, I'll give him your message.",
+              "opcoes": [
+                "When",
+                "Until"
+              ],
+              "gabarito": "When",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If you mix blue and yellow, you ___ green.",
+              "opcoes": [
+                "get",
+                "will get"
+              ],
+              "gabarito": "get",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If we ___ (not / hurry), we 'll miss the nine o'clock train!",
+              "respostaEsperada": "don't hurry",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If we don't hurry, we ___ (miss) the nine o'clock train!",
+              "respostaEsperada": "'ll miss",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What ___ you do if the flight is canceled tonight?",
+              "respostaEsperada": "will",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What will you ___ (do) if the flight is canceled tonight?",
+              "respostaEsperada": "do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "What will you do if the flight ___ (be) canceled tonight?",
+              "respostaEsperada": "is",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-202c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I ___ (call) you as soon as my meeting ends.",
+              "respostaEsperada": "'ll call",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I 'll call you ___ (assim que) my meeting ends.",
+              "respostaEsperada": "as soon as",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I 'll call you as soon as my meeting ___ (end).",
+              "respostaEsperada": "ends",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-203c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Don't worry, I ___ (not / leave) the building until you get here.",
+              "respostaEsperada": "won't leave",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Don't worry, I won't leave the building ___ (até que) you get here.",
+              "respostaEsperada": "until",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Don't worry, I won't leave the building until you ___ (get) here.",
+              "respostaEsperada": "get",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "You won't improve your speaking ___ (a menos que) you practice out loud every day.",
+              "respostaEsperada": "unless",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "You won't improve your speaking unless you ___ (practice) out loud every day.",
+              "respostaEsperada": "practice",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Write down my phone number ___ (para o caso de) your phone battery dies.",
+              "respostaEsperada": "in case",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Write down my phone number in case your phone battery ___ (die).",
+              "respostaEsperada": "dies",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "When Marina ___ (travel) on business, she always stays at the same hotel.",
+              "respostaEsperada": "travels",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "When Marina travels on business, she always ___ (stay) at the same hotel.",
+              "respostaEsperada": "stays",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ (Se) she doesn't answer the phone, send her a text message.",
+              "respostaEsperada": "If",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If she ___ (not / answer) the phone, send her a text message.",
+              "respostaEsperada": "doesn't answer",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-208b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Escreva 5 frases sobre uma viagem que você quer fazer, com 2 condicionais."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «If I ___ (miss) the bus, I ___ (take) a taxi.»"
         }
       ]
     },
@@ -387,13 +811,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Planeje uma viagem em voz alta: aeroporto, hotel e dois «if»."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -570,12 +989,130 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Conte em 1 minuto uma viagem dos sonhos e o que fará se algo der errado."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase no Zero Conditional contando o que sempre acontece com você quando dorme pouco ou toma café à noite (If / When I…, I…).",
+              "respostaEsperada": "If I sleep less than six hours, I feel tired all day.",
+              "id": "en-036-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases no First Conditional sobre os seus planos para o fim de semana dependendo do clima (If it's sunny… / If it rains…).",
+              "respostaEsperada": "If it's sunny this weekend, I'll go to the park; if it rains, I'll stay home and watch a movie.",
+              "id": "en-036-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma promessa profissional usando as soon as e outra usando until.",
+              "respostaEsperada": "I'll send you the report as soon as I finish it, and I'll stay online until you check all the numbers.",
+              "id": "en-036-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Reescreva a frase We'll be late if we don't take a taxi now usando unless, e escreva uma frase com in case.",
+              "respostaEsperada": "We'll be late unless we take a taxi now. / I'll take my charger with me in case my battery dies.",
+              "id": "en-036-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If the client will approve the budget today, we start the project tomorrow.",
+              "respostaEsperada": "If the client approves the budget today, we'll start the project tomorrow.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'll let you know as soon as the package will arrive.",
+              "respostaEsperada": "I'll let you know as soon as the package arrives.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If he have any questions, he'll call us.",
+              "respostaEsperada": "If he has any questions, he'll call us.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: We'll go to the beach tomorrow unless it doesn't rain.",
+              "respostaEsperada": "We'll go to the beach tomorrow unless it rains.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wait here until I will come back from the bank!",
+              "respostaEsperada": "Wait here until I come back from the bank!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If it rain tonight, we'll order pizza at home.",
+              "respostaEsperada": "If it rains tonight, we'll order pizza at home.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-036-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: I'll send you the updated spreadsheet as soon as I finish checking the numbers.",
+              "respostaEsperada": "OK",
+              "id": "en-036-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os três erros mais comuns com condicionais e conectores de tempo no futuro são: colocar will na cláusula de if / when / as soon as / until (If it will rain / When I will arrive), esquecer o -s de 3ª pessoa depois de if / when (If he call / When she arrive) e colocar don't depois de unless (unless you don't go). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "If it will rain tomorrow, I'll stay home.",
+              "certo": "If it rains tomorrow, I'll stay home.",
+              "motivo": "Na cláusula introduzida por if, usa-se o Present Simple, e não will."
+            },
+            {
+              "errado": "Call me when you will get there.",
+              "certo": "Call me when you get there.",
+              "motivo": "Após when, as soon as, until, before, after, o futuro é expresso pelo Present Simple."
+            },
+            {
+              "errado": "If she need help, she'll ask.",
+              "certo": "If she needs help, she'll ask.",
+              "motivo": "Como é Present Simple, he, she, it exigem obrigatoriamente -s (needs, calls, rains)."
+            },
+            {
+              "errado": "If rain tomorrow…",
+              "certo": "If it rains tomorrow…",
+              "motivo": "O clima pede o sujeito it depois do if."
+            },
+            {
+              "errado": "unless you don't study",
+              "certo": "unless you study",
+              "motivo": "Unless já significa “if… not” (“a menos que”); o verbo depois dele vem na afirmativa."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 20. Transforme em uma pergunta indireta: What happens if we miss the flight? → Do you know what ____ if we miss the flight? 2. Do Capítulo 19. Complete com although ou despite: ____ the rain, we'll go out tonight; ____ it's cold, we have warm coats! 3. Do Capítulo 13 e 21. Explique por que em I don't know if he will come tomorrow podemos usar will depois de if, mas em If he comes tomorrow, we'll have lunch não podemos! (Dica: na 1ª frase, o “if” é uma condição ou significa apenas “se = whether” em uma dúvida indireta?)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Montar frases com If, When, As soon as e Until sobre o futuro usando o Present Simple na condição e will apenas no resultado. · Lembrar do sujeito it e do -s de 3ª pessoa depois de if / when (If it rains / When she arrives). · Usar unless com verbo afirmativo e diferenciar if de in case."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você viaja e resolve problemas em inglês. Próxima aula: saúde."
+  "notasParaOAluno": "Você viaja e resolve problemas em inglês. Próxima aula: saúde.",
+  "geradaDoLivro": true
 }

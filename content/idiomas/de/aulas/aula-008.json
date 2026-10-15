@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa aufstehen, anrufen, einkaufen, mitkommen, abfahren com o prefixo no fim da frase, reconhece os verbos inseparáveis (verstehen, besuchen, bekommen) e não separa o que não deve ser separado."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Indo às compras",
+          "contexto": "Jonas vai ao mercado. Camila resolve ir junto, mas antes liga para o irmão.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Camila, ich kaufe heute ein. Kommst du mit?",
+              "pt": "— Camila, eu faço compras hoje. Você vem junto?",
+              "audio": "Camila, ich kaufe heute ein. Kommst du mit?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, gern. Wann fahren wir ab?",
+              "pt": "— Sim, com prazer. Quando a gente sai?",
+              "audio": "Ja, gern. Wann fahren wir ab?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus.",
+              "pt": "— O ônibus sai às dez horas. A gente desce na Marienplatz.",
+              "audio": "Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein.",
+              "pt": "— Um momento, primeiro eu ligo para o Pedro. Oi, Pedro! A gente vai às compras hoje.",
+              "audio": "Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein."
+            },
+            {
+              "personagem": "Pedro",
+              "ru": "— Kein Problem. Wann kommst du zurück?",
+              "pt": "— Sem problema. Quando você volta?",
+              "audio": "Kein Problem. Wann kommst du zurück?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+              "pt": "— Preciso estar de volta às seis horas. A Lena vai nos visitar.",
+              "audio": "Ich muss um sechs Uhr zurückkommen. Lena besucht uns."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Los, steig ein! Der Bus kommt jetzt an.",
+              "pt": "— Vamos, entre! O ônibus está chegando.",
+              "audio": "Los, steig ein! Der Bus kommt jetzt an."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Warte, Jonas! Ich vergesse immer meine Tasche.",
+              "pt": "— Espere, Jonas! Eu sempre esqueço minha bolsa.",
+              "audio": "Warte, Jonas! Ich vergesse immer meine Tasche."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «sein» e de «haben» de memória."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: prefixo separável vai para o fim. Be-, ge-, er-, ver-, ent-, emp- ficam colados.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Eu ligo para você.",
+              "ingles": "Ich rufe dich an."
+            },
+            {
+              "portugues": "Você vem junto?",
+              "ingles": "Kommst du mit?"
+            },
+            {
+              "portugues": "O ônibus sai às dez.",
+              "ingles": "Der Bus fährt um zehn Uhr ab."
+            },
+            {
+              "portugues": "Eu entendo você.",
+              "ingles": "Ich verstehe dich."
+            },
+            {
+              "portugues": "Eu visito a minha avó.",
+              "ingles": "Ich besuche meine Oma."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 10,
+          "min": 7,
           "itens": [
             {
               "ru": "aufstehen",
@@ -97,7 +183,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "Verbos separáveis: o prefixo vai para o fim",
           "explicacao": "Muitos verbos alemães têm um prefixo que se separa: «aufstehen» (levantar-se). No presente, o verbo conjugado fica na 2ª posição e o PREFIXO vai para o FIM da frase: «Ich stehe um sieben Uhr auf.» No infinitivo, ou com um verbo modal, o verbo fica inteiro: «Ich möchte um sieben Uhr aufstehen.» Prefixos separáveis comuns: auf-, an-, ein-, mit-, ab-, fern-, aus-, zurück-. Outros prefixos NÃO se separam: be-, ge-, er-, ver-, zer-, ent-, emp-: «Ich besuche meine Oma» (besuchen).",
           "comparacao": "em português o verbo não se parte. Em alemão o prefixo vai para o fim da frase e a frase fica «emoldurada» entre o verbo e o prefixo.",
@@ -149,8 +235,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga: «Ich stehe um sieben Uhr auf. Ich rufe meine Mutter an. Wir kaufen ein.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 6 formas de «sein» e de «haben» de memória."
         }
       ]
     },
@@ -160,13 +251,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 4 frases com um verbo separável."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe os verbos. PASSO 2: Perguntas: PASSO 3: Na frase 1, onde está auf? E o verbo stehe? PASSO 4: Na frase 4, com o modal, o que acontece com aufstehen? Compare com o capítulo 15. PASSO 5: Na frase 5, onde está auf? PASSO 6: Nas frases 6 e 7, os prefixos ver- e be- se separam? PASSO 7: Na frase 2, o verbo é fährt. Que vogal você reconhece? (capítulo 16)",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "der Morgen",
@@ -228,7 +322,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Verbos com a → ä e como dizer quando",
           "explicacao": "Alguns verbos trocam «a» por «ä» no «du» e no «er / sie / es»: fahren (du fährst), schlafen (du schläfst), laufen (du läufst), waschen (du wäschst), tragen (du trägst). Para dizer QUANDO: «um» + hora (um sieben Uhr), «am» + parte do dia (am Morgen, am Mittag, am Abend; mas «in der Nacht»), «von … bis» (von neun bis siebzehn Uhr), «jeden Tag» e os advérbios «morgens, mittags, abends, nachts» (para o que se repete).",
           "tabelas": [
@@ -314,8 +408,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga: «Morgens trinke ich Kaffee. Um acht Uhr fahre ich zur Arbeit. Abends sehe ich fern. In der Nacht schlafe ich.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 4 frases com um verbo separável."
         }
       ]
     },
@@ -325,13 +424,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva a sua rotina em 5 frases, com horas."
-        },
-        {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 9,
           "titulo": "Mein Tag / Meu dia",
           "contexto": "Dois colegas falam da rotina.",
           "linhas": [
@@ -398,30 +492,205 @@
           ]
         },
         {
-          "tipo": "texto",
-          "min": 10,
-          "titulo": "Ein Tag von Mia / Um dia da Mia",
-          "ru": "Mia steht um sieben Uhr auf. Dann duscht sie und frühstückt. Um acht Uhr fährt sie zur Arbeit. Sie arbeitet von neun bis siebzehn Uhr. Am Abend kauft sie ein und sieht fern. Sie ruft oft ihre Eltern an. In der Nacht schläft sie gut.",
-          "pt": "Mia se levanta às sete horas. Depois toma banho e café da manhã. Às oito vai para o trabalho. Ela trabalha das nove às dezessete. À noite faz compras e vê televisão. Ela liga com frequência para os pais. À noite dorme bem.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "Wann steht Mia auf?",
-              "resposta": "Um sieben Uhr"
+              "ru": "Ich rufe dich später an.",
+              "translit": "",
+              "pt": "Eu ligo para você depois.",
+              "en": "",
+              "audio": "Ich rufe dich später an."
             },
             {
-              "pergunta": "Wann arbeitet Mia?",
-              "resposta": "Von neun bis siebzehn Uhr"
+              "ru": "Kommst du mit?",
+              "translit": "",
+              "pt": "Você vem junto?",
+              "en": "",
+              "audio": "Kommst du mit?"
             },
             {
-              "pergunta": "Was macht Mia am Abend?",
-              "resposta": "Sie kauft ein und sieht fern"
+              "ru": "Der Bus kommt jetzt an.",
+              "translit": "",
+              "pt": "O ônibus está chegando agora.",
+              "en": "",
+              "audio": "Der Bus kommt jetzt an."
+            },
+            {
+              "ru": "Wann fängt der Film an?",
+              "translit": "",
+              "pt": "Quando começa o filme?",
+              "en": "",
+              "audio": "Wann fängt der Film an?"
+            },
+            {
+              "ru": "Mach bitte die Tür zu!",
+              "translit": "",
+              "pt": "Feche a porta, por favor!",
+              "en": "",
+              "audio": "Mach bitte die Tür zu!"
+            },
+            {
+              "ru": "Ich verstehe das nicht.",
+              "translit": "",
+              "pt": "Eu não entendo isso.",
+              "en": "",
+              "audio": "Ich verstehe das nicht."
+            },
+            {
+              "ru": "Nimm deine Tasche mit!",
+              "translit": "",
+              "pt": "Leve a sua bolsa!",
+              "en": "",
+              "audio": "Nimm deine Tasche mit!"
+            },
+            {
+              "ru": "Räum bitte auf!",
+              "translit": "",
+              "pt": "Arrume, por favor!",
+              "en": "",
+              "audio": "Räum bitte auf!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está certa?",
+              "opcoes": [
+                "Ich anrufe dich",
+                "Ich rufe dich an"
+              ],
+              "gabarito": "Ich rufe dich an",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-008-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Der Bus ___ um zehn Uhr ab.",
+              "opcoes": [
+                "fährt",
+                "fahrt"
+              ],
+              "gabarito": "fährt",
+              "explicacao": "Veja a chave comentada no livro: fährt",
+              "id": "de-008-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ du mit?",
+              "opcoes": [
+                "Kommst",
+                "Mitkommst"
+              ],
+              "gabarito": "Kommst",
+              "explicacao": "Veja a chave comentada no livro: Kommst",
+              "id": "de-008-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual verbo é separável?",
+              "opcoes": [
+                "verstehen",
+                "einkaufen",
+                "besuchen"
+              ],
+              "gabarito": "einkaufen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-008-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual verbo é inseparável?",
+              "opcoes": [
+                "aussteigen",
+                "bekommen",
+                "mitnehmen"
+              ],
+              "gabarito": "bekommen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-008-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich muss früh ___.",
+              "opcoes": [
+                "aufstehen",
+                "stehen auf"
+              ],
+              "gabarito": "aufstehen",
+              "explicacao": "Veja a chave comentada no livro: aufstehen",
+              "id": "de-008-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich ___ dich nicht.",
+              "opcoes": [
+                "verstehe",
+                "stehe"
+              ],
+              "gabarito": "verstehe",
+              "explicacao": "Veja a chave comentada no livro: verstehe",
+              "id": "de-008-L-107"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conjugue o verbo separável anrufen no presente: ich ___ … ___ · du ___ … ___ · er ___ … ___ · wir ___ … ___ · ihr ___ … ___",
+              "respostaEsperada": "ich rufe … an, du rufst … an, er ruft … an, wir rufen … an, ihr ruft … an",
+              "id": "de-008-L-201"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Er ___ mich heute Abend ___ (anrufen). · Wir ___ im Supermarkt ___ (einkaufen).",
+              "respostaEsperada": "Er ruft mich heute Abend an. Wir kaufen im Supermarkt ein",
+              "id": "de-008-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Du ___ abends gern ___ (fernsehen). · Der Zug ___ um acht Uhr ___ (abfahren). · Wann ___ der Kurs ___ (anfangen)?",
+              "respostaEsperada": "Du siehst abends gern fern. Der Zug fährt um acht Uhr ab. Wann fängt der Kurs an?",
+              "id": "de-008-L-203"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich ___ (verstehen) die Frage nicht, aber der Lehrer erklärt (erklären) alles.",
+              "respostaEsperada": "verstehe",
+              "explicacao": "Veja a chave comentada no livro: verstehe, erklärt",
+              "id": "de-008-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich verstehe (verstehen) die Frage nicht, aber der Lehrer ___ (erklären) alles.",
+              "respostaEsperada": "erklärt",
+              "explicacao": "Veja a chave comentada no livro: verstehe, erklärt",
+              "id": "de-008-L-204b"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Reescreva com o verbo modal indicado e escreva o imperativo: Ich stehe früh auf. (müssen) → ___ · Wir kaufen heute ein. (wollen) → ___ · Kommst du mit? (können) → ___",
+              "respostaEsperada": "Ich muss früh aufstehen. Wir wollen heute einkaufen. Kannst du mitkommen?",
+              "id": "de-008-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Reescreva com o verbo modal indicado e escreva o imperativo: Imperativo: aufstehen (du: ___! / ihr: ___! / Sie: ___!) · mitkommen (du: ___!) · aufräumen (du: ___!)",
+              "respostaEsperada": "Steh auf! Steht auf! Stehen Sie auf! Komm mit! Räum auf!",
+              "id": "de-008-L-206"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Conte em voz alta o seu dia, da hora em que você se levanta até a hora em que dorme."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva a sua rotina em 5 frases, com horas."
         }
       ]
     },
@@ -431,13 +700,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases com verbos separáveis e uma hora."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "multiple-choice",
@@ -604,12 +868,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando o seu dia inteiro."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco frases contando a sua rotina diária com verbos separáveis (aufstehen, abfahren, ankommen, einkaufen, zurückkommen, fernsehen).",
+              "respostaEsperada": "Ich stehe jeden Tag um sieben Uhr auf. Um acht Uhr fahre ich mit dem Bus ab. Um halb neun komme ich im Büro an. Am Nachmittag kaufe ich im Supermarkt ein und komme um neunzehn Uhr zurück.",
+              "id": "de-008-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três pedidos em casa usando o imperativo de verbos separáveis (Mach bitte … zu! / Räum … auf! / Nimm … mit!).",
+              "respostaEsperada": "Mach bitte das Fenster zu! Räum bitte dein Zimmer auf! Nimm bitte deinen Regenschirm mit!",
+              "id": "de-008-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um diálogo de quatro falas combinando de ir ao mercado ou ao cinema junto com um amigo (Kommst du mit? / Wann fahren wir ab?).",
+              "respostaEsperada": "Modelo de diálogo: — Hallo Jonas! Ich gehe jetzt ins Kino. Kommst du mit?— Ja, sehr gern! Wann fängt der Film an?— Er fängt um zwanzig Uhr an. Wir fahren um halb acht mit der U-Bahn ab.— Super, ich nehme meine Jacke mit!",
+              "id": "de-008-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich anrufe dich später.",
+              "respostaEsperada": "Ich rufe dich später an.",
+              "explicacao": "Ich rufe dich später an.",
+              "id": "de-008-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wir steigen aus am Marienplatz.",
+              "respostaEsperada": "Wir steigen am Marienplatz aus.",
+              "explicacao": "Wir steigen am Marienplatz aus.",
+              "id": "de-008-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Mitkommst du?",
+              "respostaEsperada": "Kommst du mit?",
+              "explicacao": "Kommst du mit?",
+              "id": "de-008-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich muss früh stehe auf.",
+              "respostaEsperada": "Ich muss früh aufstehen.",
+              "explicacao": "Ich muss früh aufstehen.",
+              "id": "de-008-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er stehst um sieben Uhr auf.",
+              "respostaEsperada": "Er steht um sieben Uhr auf.",
+              "explicacao": "Er steht um sieben Uhr auf.",
+              "id": "de-008-L-c05"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich besuche meine Oma.",
+              "respostaEsperada": "OK",
+              "id": "de-008-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Der Bus abfährt um zehn Uhr.",
+              "respostaEsperada": "Der Bus fährt um zehn Uhr ab.",
+              "explicacao": "Der Bus fährt um zehn Uhr ab.",
+              "id": "de-008-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é deixar o prefixo colado ao verbo conjugado (Ich anrufe dich em vez de Ich rufe dich an), colocar o prefixo no meio da frase em vez de no fim (Wir steigen aus am Marienplatz), separar verbos inseparáveis (be-, ge-, er-, ver-, ent-, emp-) ou separar depois de verbo modal. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 16. Complete: Er ____ (essen) gern Kuchen. Do capítulo 15. Complete: Ich ____ (müssen) früh aufstehen. Do capítulo 14. Complete: Das ist die Jacke des ____ (Student)."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Conto a minha rotina com verbos separáveis. · Faço um convite com Kommst du mit? e sei quando não devo separar o verbo."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conta o seu dia. Próxima aula: a cidade e como chegar a um lugar."
+  "notasParaOAluno": "Você conta o seu dia. Próxima aula: a cidade e como chegar a um lugar.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,104 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você descreve e especifica pessoas, coisas e lugares usando orações relativas (who, which, that, where, whose) sabendo quando pode omitir o pronome, e conecta ideias com precisão usando conectores de causa, resultado e contraste (because, because of, so, although, though, however, despite / in spite of)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Contratando o novo fornecedor de logística",
+          "contexto": "Lucas e Emma analisam propostas de empresas de logística para a operação da empresa no Canadá.",
+          "linhas": [
+            {
+              "personagem": "Emma",
+              "ru": "— Lucas, did you talk to the consultant who called us from Vancouver yesterday?",
+              "pt": "— Lucas, você falou com o consultor que nos ligou de Vancouver ontem?",
+              "audio": "Lucas, did you talk to the consultant who called us from Vancouver yesterday?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Yes, I did! He's the specialist whose company handles logistics for several tech startups in Canada.",
+              "pt": "— Falei, sim! Ele é o especialista cuja empresa cuida da logística de várias startups de tecnologia no Canadá.",
+              "audio": "Yes, I did! He's the specialist whose company handles logistics for several tech startups in Canada."
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— What did you think of the proposal that he sent us this morning?",
+              "pt": "— O que você achou da proposta que ele nos enviou hoje de manhã?",
+              "audio": "What did you think of the proposal that he sent us this morning?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Although their price is a bit higher than the others, their delivery system is much faster.",
+              "pt": "— Embora o preço deles seja um pouco mais alto do que o dos outros, o sistema de entrega deles é muito mais rápido.",
+              "audio": "Although their price is a bit higher than the others, their delivery system is much faster."
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— That's important. Last month we lost two clients because of the delays with our old supplier!",
+              "pt": "— Isso é importante. No mês passado perdemos dois clientes por causa dos atrasos com o nosso antigo fornecedor!",
+              "audio": "That's important. Last month we lost two clients because of the delays with our old supplier!"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Exactly. We also visited the warehouse where they store the products, and everything is automated. However, they require a two-year contract.",
+              "pt": "— Exatamente. Também visitamos o galpão onde eles armazenam os produtos, e tudo é automatizado. No entanto, eles exigem um contrato de dois anos.",
+              "audio": "Exactly. We also visited the warehouse where they store the products, and everything is automated. However, they require a two-year contract."
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Despite the two-year commitment, I think they're our best option. The software which they use tracks every package in real time.",
+              "pt": "— Apesar do compromisso de dois anos, acho que eles são a nossa melhor opção. O software que eles usam rastreia cada pacote em tempo real.",
+              "audio": "Despite the two-year commitment, I think they're our best option. The software which they use tracks every package in real time."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— I agree. Their service is reliable, so we won't have any headaches during the holiday season!",
+              "pt": "— Concordo. O serviço deles é confiável, então não teremos dores de cabeça durante a temporada de festas!",
+              "audio": "I agree. Their service is reliable, so we won't have any headaches during the holiday season!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Reclame de um serviço com passiva e peça uma solução."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Para pessoas, não se usa which; e what não funciona como relativo depois de substantivo. Falando de um ser humano (the woman, the client, the guy), use who ou that (não the woman which). Depois de um substantivo, também não use what: the thing what I need está errado; diga the thing that I need (ou simplesmente what I need, sem substantivo antes). PASSO 2: Although e but não aparecem na mesma frase. Em português falado, às vezes alguém começa com “Embora…” e, no meio, coloca um “mas”. Em inglês, se você abriu a frase com Although / Even though (“Embora / Mesmo que”), a segunda metade vem direto depois da vírgula, sem but.",
+          "comparacao": "Em português, usamos a palavra “que” para tudo (“o homem que ligou, o carro que comprei”), às vezes repetimos o pronome na fala (“o cara que ele trabalha comigo”), misturamos “embora… mas” na mesma frase e confundimos “porque” com “por causa de”. Veja as armadilhas:",
+          "tabela": [
+            {
+              "portugues": "A mulher que trabalha aqui é médica.",
+              "ingles": "The woman who (ou that) works here is a doctor.",
+              "evite": "The woman which / what works here…"
+            },
+            {
+              "portugues": "O cara que ele trabalha comigo.",
+              "ingles": "The guy who works with me.",
+              "evite": "The guy who he works with me. (o pronome he repete o sujeito)"
+            },
+            {
+              "portugues": "O lugar que eu moro é tranquilo.",
+              "ingles": "The place where I live is quiet. (ou The place I live in…)",
+              "evite": "The place that I live is quiet."
+            },
+            {
+              "portugues": "Embora estivesse frio, mas nós saímos.",
+              "ingles": "Although it was cold, we went out.",
+              "evite": "Although it was cold, but we went out."
+            },
+            {
+              "portugues": "Atrasamos por causa que choveu.",
+              "ingles": "We were late because it rained / because of the rain.",
+              "evite": "because of it rained / because the rain"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "who",
@@ -83,7 +174,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Orações relativas que identificam",
           "explicacao": "PASSO 1: a oração relativa diz QUAL pessoa ou coisa você quer dizer: «The man who lives next door is a doctor.» PASSO 2: «who» é para PESSOAS: «the woman who called me». PASSO 3: «which» é para COISAS: «the book which I read». PASSO 4: «that» serve para pessoas e coisas, e é muito comum em inglês falado: «the book that I read», «the man that lives next door». PASSO 5: «where» = lugar: «the city where I was born». PASSO 6: «whose» = de quem, cujo: «the girl whose bag was stolen». PASSO 7: o pronome relativo NÃO se repete com o pronome pessoal: «The man who he lives…» está errado.",
           "comparacao": "em português usamos «que», «quem», «onde» e «cujo». Em inglês, escolhemos pela função: who (pessoa), which (coisa), that (os dois), where (lugar), whose (posse). Nunca repita o pronome pessoal depois do relativo.",
@@ -140,8 +231,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Descreva 5 pessoas ou coisas com orações relativas: «A teacher is a person who…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Reclame de um serviço com passiva e peça uma solução."
         }
       ]
     },
@@ -151,13 +247,25 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Complete: «The woman ___ called me. The book ___ I read. The city ___ I live.»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe nas duas tabelas abaixo quando podemos omitir (tirar) o pronome relativo e como os conectores exigem estruturas diferentes: PASSO 2: E compare os conectores de Causa e Contraste: PASSO 3: Perguntas: PASSO 4: Olhe para The proposal (that) he sent us: por que na fala natural os nativos costumam tirar o that e dizer direto The proposal he sent us? PASSO 5: Qual é a diferença gramatical entre o que vem depois de Although e o que vem depois de Despite / In spite of?",
+          "tabela": [
+            {
+              "c1": "The consultant who called us is from Vancouver.",
+              "c2": "The consultant (who/that) we hired is from Vancouver."
+            },
+            {
+              "c1": "The software which tracks the packages is new.",
+              "c2": "The software (that/which) they use is new."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "object",
@@ -205,7 +313,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Sujeito ou objeto?",
           "explicacao": "PASSO 1: o pronome relativo pode ser SUJEITO ou OBJETO da oração relativa. PASSO 2: se for SUJEITO (vem logo antes do verbo), NÃO pode ser omitido: «The man who called me» (who = sujeito de called). PASSO 3: se for OBJETO (depois dele vem outro sujeito), pode ser omitido: «The book (that) I read» (I = sujeito, that = objeto). PASSO 4: o truque: se depois do pronome aparece um sujeito (I, she, they, Maria), pode omitir. Se aparece o verbo direto, mantenha. PASSO 5: com preposição, a preposição fica no fim: «the man (who) I talked to», «the chair (that) I sat on». PASSO 6: «whose» e «where» não se omitem.",
           "comparacao": "em português o «que» nunca some: «o livro que eu li». Em inglês, quando o relativo é objeto, ele pode desaparecer: «the book I read».",
@@ -247,9 +355,21 @@
           "tag": "Omissão do relativo"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Os pronomes relativos: PASSO 2: who (ou that) → para Pessoas (the woman who lives next door). PASSO 3: which (ou that) → para Coisas, Empresas e Ideias (the laptop that/which I bought). PASSO 4: where → para Lugares onde algo acontece (the hotel where we stayed). PASSO 5: whose → para Posse (“cujo/cuja” — seguido de substantivo: the client whose company is in Toronto). PASSO 6: Omissão: se depois de who / which / that vier um novo sujeito (I, you, he, we, Sarah), você pode omitir o pronome: The book (that) I'm reading is great! Com preposição, ela vai para o fim: The hotel (that) we stayed at. PASSO 7: Conectores de Causa e Resultado: PASSO 8: because (ou since / as) + Sujeito + Verbo (“porque/já que”: Since you're here, let's start). PASSO 9: because of (ou due to) + Substantivo (“por causa de”: because of the rain / due to the delay). PASSO 10: so (ou therefore formal) + Resultado (“então / portanto”: It rained, so we took a taxi). PASSO 11: Conectores de Contraste: PASSO 12: although / even though + Sujeito + Verbo (“embora / mesmo que”: Although it was late, he called me). PASSO 13: despite / in spite of + Substantivo ou -ing (“apesar de”: Despite the rain / In spite of being tired, he came; despite não leva of). PASSO 14: however (“no entanto / porém” — abre uma nova frase seguida de vírgula): The price is high. However, the quality is excellent.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Escreva 6 frases com relativas: 3 com o pronome omitido e 3 em que ele não pode ser omitido."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «The woman ___ called me. The book ___ I read. The city ___ I live.»"
         }
       ]
     },
@@ -259,13 +379,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Defina em inglês: «um garçom», «um restaurante», «um colega»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "waiter",
@@ -306,7 +421,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Definir palavras",
           "explicacao": "PASSO 1: para definir uma palavra, use: «A waiter is a person who serves food.» PASSO 2: coisas: «A dictionary is a book that explains words.» PASSO 3: lugares: «A restaurant is a place where you eat.» PASSO 4: use isso para explicar palavras que você não sabe: «It's a thing that you use to…» PASSO 5: útil em provas e conversas: se esquecer a palavra, descreva-a.",
           "comparacao": "em português «é uma pessoa que serve comida» tem a mesma lógica. A vantagem do inglês é usar a definição para contornar uma palavra esquecida.",
@@ -344,7 +459,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "I forgot the word / Esqueci a palavra",
           "contexto": "Lara tenta explicar uma palavra a Tom.",
           "linhas": [
@@ -387,9 +502,246 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "The woman who interviewed me yesterday was very friendly.",
+              "translit": "",
+              "pt": "A mulher que me entrevistou ontem foi muito simpática.",
+              "en": "",
+              "audio": "The woman who interviewed me yesterday was very friendly."
+            },
+            {
+              "ru": "Have you found the keys you lost this morning?",
+              "translit": "",
+              "pt": "Você achou as chaves que perdeu hoje de manhã? (com that omitido)",
+              "en": "",
+              "audio": "Have you found the keys you lost this morning?"
+            },
+            {
+              "ru": "This is the café where we always have lunch on Fridays.",
+              "translit": "",
+              "pt": "Este é o café onde sempre almoçamos às sextas-feiras.",
+              "en": "",
+              "audio": "This is the café where we always have lunch on Fridays."
+            },
+            {
+              "ru": "I have a colleague whose wife works at the Canadian embassy.",
+              "translit": "",
+              "pt": "Tenho um colega cuja esposa trabalha na embaixada canadense.",
+              "en": "",
+              "audio": "I have a colleague whose wife works at the Canadian embassy."
+            },
+            {
+              "ru": "Even though the test was hard, everybody passed!",
+              "translit": "",
+              "pt": "Mesmo que a prova tenha sido difícil, todo mundo passou!",
+              "en": "",
+              "audio": "Even though the test was hard, everybody passed!"
+            },
+            {
+              "ru": "The flight was canceled because of the heavy snow.",
+              "translit": "",
+              "pt": "O voo foi cancelado por causa da neve forte.",
+              "en": "",
+              "audio": "The flight was canceled because of the heavy snow."
+            },
+            {
+              "ru": "Despite having a headache, she finished the presentation.",
+              "translit": "",
+              "pt": "Apesar de estar com dor de cabeça, ela terminou a apresentação.",
+              "en": "",
+              "audio": "Despite having a headache, she finished the presentation."
+            },
+            {
+              "ru": "The hotel was expensive. However, the location was perfect.",
+              "translit": "",
+              "pt": "O hotel era caro. No entanto, a localização era perfeita.",
+              "en": "",
+              "audio": "The hotel was expensive. However, the location was perfect."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The architect ___ designed our new office is from Chicago.",
+              "opcoes": [
+                "who",
+                "which"
+              ],
+              "gabarito": "who",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This is the hotel ___ we stayed last summer.",
+              "opcoes": [
+                "which",
+                "where"
+              ],
+              "gabarito": "where",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "She's the manager ___ team won the innovation award.",
+              "opcoes": [
+                "who's",
+                "whose"
+              ],
+              "gabarito": "whose",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ it was raining heavily, they went for a run in the park.",
+              "opcoes": [
+                "Although",
+                "Despite"
+              ],
+              "gabarito": "Although",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ the heavy rain, they went for a run in the park.",
+              "opcoes": [
+                "Although",
+                "Despite"
+              ],
+              "gabarito": "Despite",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Our flight was delayed ___ the bad weather.",
+              "opcoes": [
+                "because",
+                "because of"
+              ],
+              "gabarito": "because of",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-106a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Em qual destas duas frases podemos omitir that? (a) The email that arrived this morning is urgent. (b) The email that you sent me this morning is urgent.",
+              "respostaEsperada": "Na frase (b)The email (that) you sent me, porque logo depois de that vem o novo sujeito you",
+              "id": "en-045-L-107"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The meeting finished late, ___ was a problem for everyone.",
+              "opcoes": [
+                "what",
+                "which"
+              ],
+              "gabarito": "which",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-108a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The hotel was expensive. The food was amazing, ___!",
+              "opcoes": [
+                "though",
+                "although"
+              ],
+              "gabarito": "though",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-109a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Do you know the guy ___ is talking to Sarah by the elevator?",
+              "respostaEsperada": "who",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The restaurant ___ we had dinner last night was fantastic!",
+              "respostaEsperada": "where",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I need to talk to the client ___ contract expires next month.",
+              "respostaEsperada": "whose",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We couldn't have the video call ___ the internet connection was down.",
+              "respostaEsperada": "because",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "All the trains were delayed ___ the strike.",
+              "respostaEsperada": "because of",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ he has a lot of experience, he didn't get the job.",
+              "respostaEsperada": "Although",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ being very tired, Lucas helped me finish the spreadsheet.",
+              "respostaEsperada": "Despite",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The apartment is small. ___, it's right next to the subway station, so I'm going to rent it!",
+              "respostaEsperada": "However",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The apartment is small. However, it's right next to the subway station, ___ I'm going to rent it!",
+              "respostaEsperada": "so",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I was really tired last night, ___ I went to bed at nine thirty.",
+              "respostaEsperada": "so",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-209a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Defina em voz alta 8 palavras sem dizê-las: «It's a person who… It's a place where…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Defina em inglês: «um garçom», «um restaurante», «um colega»."
         }
       ]
     },
@@ -399,13 +751,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Defina 5 objetos da sua casa sem dizer o nome."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -587,12 +934,142 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Descreva em 1 minuto a sua casa, o seu bairro e as pessoas que moram lá, com orações relativas."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva uma pessoa importante na sua vida com who, um objeto que você usa todo dia omitindo o that (ex.: The laptop I use…) e um lugar que você adora com where.",
+              "respostaEsperada": "My wife is the person who supports me every day, the laptop I use for work is very fast, and the café where we met is downtown.",
+              "id": "en-045-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase usando whose (“cujo/cuja”) sobre um amigo ou colega.",
+              "respostaEsperada": "I have a friend whose brother lives in Tokyo.",
+              "id": "en-045-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva a mesma ideia de contraste de dois jeitos: primeiro começando com Although + sujeito + verbo, e depois começando com Despite + substantivo / -ing.",
+              "respostaEsperada": "Although the traffic was terrible, we arrived on time. = Despite the terrible traffic, we arrived on time.",
+              "id": "en-045-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva a mesma ideia de causa de dois jeitos: primeiro com because + sujeito + verbo, e depois com because of + substantivo.",
+              "respostaEsperada": "We canceled the picnic because it was raining. = We canceled the picnic because of the rain.",
+              "id": "en-045-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The man which called you this morning is waiting in the lobby.",
+              "respostaEsperada": "The man who",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Although the hotel was expensive, but we decided to stay there.",
+              "respostaEsperada": "Although the hotel was expensive, we decided to stay there.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Despite of the traffic jam, we arrived at the airport on time.",
+              "respostaEsperada": "Despite the traffic jam",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: We stayed at the office until late because the rain.",
+              "respostaEsperada": "We stayed at the office until late because of the rain.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The girl who she works at the front desk speaks four languages.",
+              "respostaEsperada": "The girl who works at the front desk speaks four languages.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Everything what he said in the meeting was true!",
+              "respostaEsperada": "Everything",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Because the rain, the match was postponed.",
+              "respostaEsperada": "Because of the rain, the match was postponed.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-045-L-c07"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The software that we use at work makes our routine much easier.",
+              "respostaEsperada": "OK",
+              "id": "en-045-L-c08"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os quatro erros mais frequentes neste capítulo são: usar which para pessoas (the man which em vez de the man who / that), colocar of depois de despite (despite of em vez de despite ou in spite of), juntar although com but na mesma frase e repetir o pronome pessoal depois de who / that (the woman who she lives here). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "The woman which helped me…",
+              "certo": "The woman who (ou that) helped me…",
+              "motivo": "Which é para coisas; para pessoas, use who ou that."
+            },
+            {
+              "errado": "The guy who he works with me…",
+              "certo": "The guy who works with me…",
+              "motivo": "Who já é o sujeito do verbo; não repita he / she / they logo depois."
+            },
+            {
+              "errado": "Despite of the delay…",
+              "certo": "Despite the delay… / In spite of the delay…",
+              "motivo": "Despite não leva a preposição of."
+            },
+            {
+              "errado": "Although it was cold, but I went.",
+              "certo": "Although it was cold, I went.",
+              "motivo": "Although já faz o contraste da frase inteira; não se acrescenta but."
+            },
+            {
+              "errado": "because the traffic / because of it rained",
+              "certo": "because of the traffic / because it rained",
+              "motivo": "Because of pede substantivo; because pede Sujeito + Verbo."
+            },
+            {
+              "errado": "Everything what you need…",
+              "certo": "Everything that you need… / What you need…",
+              "motivo": "What não funciona como relativo depois de um substantivo ou de everything."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 17. Por que em In spite of having a headache o verbo have entrou com -ing? (Lembre-se da Lei de Ouro das Preposições do Cap. 17!). 2. Do Capítulo 16. Complete: When I arrived at the restaurant where we had a reservation, my friends ____ (already / order) dinner! 3. Do Capítulo 15. Transforme usando o Present Perfect: “Eu trabalho na empresa que fica na King Street há quatro anos.”"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Conectar frases com who, which, that, where, whose sem usar which para pessoas e sem repetir pronomes. Usar although / even though (com verbo) e despite / in spite of (com substantivo ou -ing) sem colocar but nem “despite of”. · Diferenciar automaticamente because (com verbo) de because of (com substantivo)."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você descreve e especifica com orações relativas. Próxima aula: relativas explicativas e redução."
+  "notasParaOAluno": "Você descreve e especifica com orações relativas. Próxima aula: relativas explicativas e redução.",
+  "geradaDoLivro": true
 }

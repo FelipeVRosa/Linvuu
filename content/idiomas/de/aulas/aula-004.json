@@ -15,13 +15,76 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você monta frases afirmativas com o verbo sempre no lugar certo, mesmo quando começa a frase por heute, jetzt ou hier."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Planos para a noite",
+          "contexto": "Tom e Camila combinam a noite na cozinha do albergue.",
+          "linhas": [
+            {
+              "personagem": "Tom",
+              "ru": "— Heute koche ich. Du kochst morgen.",
+              "pt": "— Hoje cozinho eu. Você cozinha amanhã.",
+              "audio": "Heute koche ich. Du kochst morgen."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Gern! Jetzt lerne ich noch Deutsch.",
+              "pt": "— Com prazer! Agora ainda estudo alemão.",
+              "audio": "Gern! Jetzt lerne ich noch Deutsch."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Dann trinken wir später Tee.",
+              "pt": "— Então tomamos chá mais tarde.",
+              "audio": "Dann trinken wir später Tee."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, gern. Hier trinkt man abends oft Tee, oder?",
+              "pt": "— Sim, com prazer. Aqui se toma chá à noite com frequência, não é?",
+              "audio": "Ja, gern. Hier trinkt man abends oft Tee, oder?"
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Ja, in Irland auch!",
+              "pt": "— Sim, na Irlanda também!",
+              "audio": "Ja, in Irland auch!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «sein» de memória."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: conte as posições. Um bloco, o verbo. Sempre nessa ordem.",
+          "comparacao": "Em português, a ordem é flexível mas o sujeito costuma abrir a frase: “Hoje eu moro em Munique.” A mesma ordem em alemão dá Heute ich wohne in München, que está errado. Em alemão, o verbo não larga a segunda posição. Quando algo diferente do sujeito abre a frase, o sujeito vai para depois do verbo.",
+          "tabela": [
+            {
+              "portugues": "Hoje eu moro em Berlim.",
+              "ingles": "Heute wohne ich in Berlin.",
+              "evite": "Heute ich wohne in Berlin."
+            },
+            {
+              "portugues": "Agora estudamos alemão.",
+              "ingles": "Jetzt lernen wir Deutsch.",
+              "evite": "Jetzt wir lernen Deutsch."
+            },
+            {
+              "portugues": "Ali trabalha a Maria.",
+              "ingles": "Dort arbeitet Maria.",
+              "evite": "Dort Maria arbeitet."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 10,
+          "min": 7,
           "itens": [
             {
               "ru": "wohnen",
@@ -97,7 +160,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "O presente regular: raiz + terminação",
           "explicacao": "Quase todos os verbos alemães terminam em -en no infinitivo. Tire o -en para achar a raiz e acrescente as terminações: -e, -st, -t, -en, -t, -en. Se a raiz termina em -t ou -d (arbeiten, finden), entra um -e- antes de -st e de -t, para facilitar a pronúncia: du arbeitest, er arbeitet. Se a raiz termina em -s, -ß ou -z (heißen, reisen), o «du» perde o -s da terminação: du heißt, du reist. As formas «wir», «sie» e «Sie» são iguais ao infinitivo.",
           "comparacao": "em português cada pessoa tem uma terminação própria (falo, falas, fala...). Em alemão, são só cinco terminações, e «wir», «sie» e «Sie» repetem o infinitivo.",
@@ -155,8 +218,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga: «Ich wohne in … Ich arbeite … Ich lerne Deutsch. Du lernst auch Deutsch.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 6 formas de «sein» de memória."
         }
       ]
     },
@@ -166,13 +234,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conjugue em voz alta «wohnen» e «arbeiten» nas seis formas."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Leia as quatro frases e observe onde estão o verbo e o sujeito. PASSO 2: Perguntas: PASSO 3: Qual palavra não muda de lugar em nenhuma das quatro? PASSO 4: O que acontece com Tom quando outra coisa abre a frase? PASSO 5: Na frase 4, quantas palavras vêm antes do verbo?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "heute",
@@ -234,7 +305,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "O verbo na segunda posição, perguntas e negação",
           "explicacao": "O verbo conjugado fica sempre na 2ª posição. Se a frase começa por outro termo (hoje, amanhã), o sujeito vai para depois do verbo: «Heute arbeite ich.» Nas perguntas de sim ou não, o verbo vem em 1º lugar: «Wohnst du in Berlin?» Nas perguntas com palavra interrogativa, a palavra vem em 1º e o verbo em 2º: «Wo wohnst du?» A negação «nicht» vai depois do verbo («Ich arbeite nicht») ou antes do que se nega («Ich wohne nicht in Berlin»). Para dizer que gosta de fazer algo, use «gern» depois do verbo: «Ich lerne gern Deutsch».",
           "tabelas": [
@@ -325,8 +396,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga: «Heute arbeite ich. Wo wohnst du? Ich lerne gern Deutsch.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Conjugue em voz alta «wohnen» e «arbeiten» nas seis formas."
         }
       ]
     },
@@ -336,13 +412,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 perguntas em alemão com palavras interrogativas diferentes."
-        },
-        {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 9,
           "titulo": "Wo wohnst du? / Onde você mora?",
           "contexto": "Dois colegas conversam no intervalo.",
           "linhas": [
@@ -403,30 +474,182 @@
           ]
         },
         {
-          "tipo": "texto",
-          "min": 10,
-          "titulo": "Mia und Jonas / Mia e Jonas",
-          "ru": "Ich heiße Mia. Ich wohne in München. Ich arbeite hier und ich lerne gern Sprachen. Heute lerne ich Portugiesisch. Jonas arbeitet in Hamburg. Er wohnt dort und spielt oft Musik. Wir lernen zusammen.",
-          "pt": "Eu me chamo Mia. Moro em Munique. Trabalho aqui e gosto de aprender idiomas. Hoje aprendo português. Jonas trabalha em Hamburgo. Ele mora lá e toca música com frequência. Nós aprendemos juntos.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "Wo wohnt Mia?",
-              "resposta": "In München"
+              "ru": "Heute lerne ich Deutsch.",
+              "translit": "",
+              "pt": "Hoje estudo alemão.",
+              "en": "",
+              "audio": "Heute lerne ich Deutsch."
             },
             {
-              "pergunta": "Was lernt Mia heute?",
-              "resposta": "Portugiesisch"
+              "ru": "Jetzt wohne ich in …",
+              "translit": "",
+              "pt": "Agora moro em …",
+              "en": "",
+              "audio": "Jetzt wohne ich in …"
             },
             {
-              "pergunta": "Wo arbeitet Jonas?",
-              "resposta": "In Hamburg"
+              "ru": "Dann kochen wir zusammen.",
+              "translit": "",
+              "pt": "Depois cozinhamos juntos.",
+              "en": "",
+              "audio": "Dann kochen wir zusammen."
+            },
+            {
+              "ru": "Hier wohnt Tom.",
+              "translit": "",
+              "pt": "Aqui mora o Tom.",
+              "en": "",
+              "audio": "Hier wohnt Tom."
+            },
+            {
+              "ru": "Ich trinke gern Kaffee.",
+              "translit": "",
+              "pt": "Gosto de tomar café.",
+              "en": "",
+              "audio": "Ich trinke gern Kaffee."
+            },
+            {
+              "ru": "Morgen spiele ich Fußball.",
+              "translit": "",
+              "pt": "Amanhã jogo futebol.",
+              "en": "",
+              "audio": "Morgen spiele ich Fußball."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Heute ich wohne in Berlin",
+                "Heute wohne ich in Berlin"
+              ],
+              "gabarito": "Heute wohne ich in Berlin",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-004-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Jetzt Camila lernt Deutsch",
+                "Jetzt lernt Camila Deutsch"
+              ],
+              "gabarito": "Jetzt lernt Camila Deutsch",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-004-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
+              "opcoes": [
+                "Dann wir kochen",
+                "Dann kochen wir"
+              ],
+              "gabarito": "Dann kochen wir",
+              "explicacao": "Veja a chave comentada no livro: (b). Em todos, o verbo está na posição 2",
+              "id": "de-004-L-103"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Qual é a posição 1 em Tom und Camila kochen heute?",
+              "respostaEsperada": "Tom und Camila, um bloco só com três palavras",
+              "id": "de-004-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Quantos blocos vêm antes do verbo em Heute Abend kocht Tom?",
+              "respostaEsperada": "Um bloco, Heute Abend",
+              "id": "de-004-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Onde entra a palavra gern para dizer “Eu gosto de beber chá”?",
+              "opcoes": [
+                "Ich gern trinke Tee",
+                "Ich trinke gern Tee"
+              ],
+              "gabarito": "Ich trinke gern Tee",
+              "explicacao": "Veja a chave comentada no livro: (b) Ich trinke gern Tee",
+              "id": "de-004-L-106"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Heute / ich / Kaffee / trinke. → ___",
+              "respostaEsperada": "Heute trinke ich Kaffee",
+              "id": "de-004-L-201"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Dort / Tom / arbeitet. → ___",
+              "respostaEsperada": "Dort arbeitet Tom",
+              "explicacao": "Veja a chave comentada no livro: Dort arbeitet Tom",
+              "id": "de-004-L-202a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Dann / wir / zusammen / lernen. → ___",
+              "respostaEsperada": "Dann lernen wir zusammen",
+              "id": "de-004-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Hier / Camila / wohnt / gern. → ___",
+              "respostaEsperada": "Hier wohnt Camila gern",
+              "id": "de-004-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Am Abend / ich / Musik / höre. → ___",
+              "respostaEsperada": "Am Abend höre ich Musik",
+              "id": "de-004-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Morgen / wir / nach Berlin / fahren. → ___",
+              "respostaEsperada": "Morgen fahren wir nach Berlin",
+              "id": "de-004-L-206"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute ___ (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später kochst (kochen) du.",
+              "respostaEsperada": "spielt",
+              "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+              "id": "de-004-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute spielt (spielen) Tom Fußball. · Jetzt ___ (hören) wir Musik. · Später kochst (kochen) du.",
+              "respostaEsperada": "hören",
+              "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+              "id": "de-004-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute spielt (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später ___ (kochen) du.",
+              "respostaEsperada": "kochst",
+              "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+              "id": "de-004-L-207c"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Conte em voz alta onde você mora, onde trabalha e o que você aprende."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 4 perguntas em alemão com palavras interrogativas diferentes."
         }
       ]
     },
@@ -436,13 +659,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases: onde mora, onde trabalha, o que aprende e uma pergunta."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -606,12 +824,91 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando onde você mora, onde trabalha e o que você aprende, e faça duas perguntas."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva a frase Ich wohne in Recife de três modos diferentes, começando por Heute, Jetzt e Hier.",
+              "respostaEsperada": "Heute wohne ich in Recife. / Jetzt wohne ich in Recife. / Hier wohne ich in Recife.",
+              "id": "de-004-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco frases sobre o seu dia, cada uma começando por um bloco diferente: Heute, Jetzt, Dann, Hier e Dort.",
+              "respostaEsperada": "Heute arbeite ich viel. Jetzt lerne ich Deutsch. Dann trinke ich gern Kaffee. Hier wohne ich sehr gern. Dort spielt Tom Fußball.",
+              "id": "de-004-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Reescreva três informações da Cena do capítulo 2 começando por Heute, Jetzt e In München.",
+              "respostaEsperada": "Heute kochen Tom und Camila zusammen. Jetzt lernt Camila Deutsch. In München wohnt Tom gern.",
+              "id": "de-004-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Heute ich lerne Deutsch.",
+              "respostaEsperada": "Heute lerne ich Deutsch.",
+              "explicacao": "Heute lerne ich Deutsch.",
+              "id": "de-004-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Dann wir kochen zusammen.",
+              "respostaEsperada": "Dann kochen wir zusammen.",
+              "explicacao": "Dann kochen wir zusammen.",
+              "id": "de-004-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Hier Tom wohnt.",
+              "respostaEsperada": "Hier wohnt Tom.",
+              "explicacao": "Hier wohnt Tom.",
+              "id": "de-004-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Jetzt Tom und Camila kochen.",
+              "respostaEsperada": "Jetzt kochen Tom und Camila.",
+              "explicacao": "Jetzt kochen Tom und Camila.",
+              "id": "de-004-L-c04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich trinke gern Kaffee.",
+              "respostaEsperada": "OK",
+              "id": "de-004-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Morgen ich spiele Fußball.",
+              "respostaEsperada": "Morgen spiele ich Fußball.",
+              "explicacao": "Morgen spiele ich Fußball.",
+              "id": "de-004-L-c06"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é deixar o sujeito colado no começo depois de um advérbio de tempo ou lugar: Heute ich lerne. Parece natural porque o português faz assim, mas em alemão o verbo é um imã fixo na Posição 2 e o sujeito vai para depois dele (inversão). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 2. Complete com o verbo na forma certa dentro de frases maiores: Heute ____ (arbeiten) er in München. · Jetzt ____ (wohnen) ihr in Berlin. · Dann ____ (haben) wir Hunger. · Hier ____ (sein) du richtig. Do capítulo 1. Diga em voz alta o som da primeira letra: Wasser, Zeit, Sonne."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Começo uma frase por Heute e coloco o verbo logo depois. · Reconheço o bloco da posição 1 em Tom und Camila kochen. Percebo na hora que Dann wir kochen está errado."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conjuga os verbos regulares e monta frases e perguntas. Próxima aula: família, «haben» e possessivos."
+  "notasParaOAluno": "Você conjuga os verbos regulares e monta frases e perguntas. Próxima aula: família, «haben» e possessivos.",
+  "geradaDoLivro": true
 }

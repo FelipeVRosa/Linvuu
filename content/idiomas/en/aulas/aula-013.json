@@ -15,13 +15,116 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você sabe quando o segundo verbo pede to + infinitivo (want to go, decide to stay) e quando pede - ing (enjoy working, finish reading, thanks for helping); expressa finalidade com to, sem “for study”; usa os pronomes de objeto (me, him, her, it, us, them) e os reflexivos (myself, by myself); e diz “quero que você faça…” com want you to…."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Organizando o treinamento da equipe",
+          "contexto": "Marina e Kevin conversam no fim da tarde sobre o novo curso de liderança e a divisão das tarefas da semana.",
+          "linhas": [
+            {
+              "personagem": "Kevin",
+              "ru": "— Marina, have you finished reviewing the slides for Friday's workshop?",
+              "pt": "— Marina, você já terminou de revisar os slides para o workshop de sexta?",
+              "audio": "Marina, have you finished reviewing the slides for Friday's workshop?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Almost! I really enjoy creating training material, so I decided to add a few practical exercises.",
+              "pt": "— Quase! Eu gosto muito de criar material de treinamento, então decidi acrescentar alguns exercícios práticos.",
+              "audio": "Almost! I really enjoy creating training material, so I decided to add a few practical exercises."
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— That's a great idea. Do you want me to check the numbers on the last page for you?",
+              "pt": "— Ótima ideia. Você quer que eu confira os números da última página para você?",
+              "audio": "That's a great idea. Do you want me to check the numbers on the last page for you?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Yes, please! Thank you for helping me, Kevin. I'm tired of looking at spreadsheets all day!",
+              "pt": "— Sim, por favor! Obrigada por me ajudar, Kevin. Estou cansada de olhar planilhas o dia inteiro!",
+              "audio": "Yes, please! Thank you for helping me, Kevin. I'm tired of looking at spreadsheets all day!"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— No problem. Send them to me, and I'll look at them before leaving the office.",
+              "pt": "— Sem problema. Envie para mim, e eu dou uma olhada antes de sair do escritório.",
+              "audio": "No problem. Send them to me, and I'll look at them before leaving the office."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Awesome. By the way, is Sarah coming to Boston next month to take the leadership course?",
+              "pt": "— Perfeito. Aliás, a Sarah vem a Boston no mês que vem para fazer o curso de liderança?",
+              "audio": "Awesome. By the way, is Sarah coming to Boston next month to take the leadership course?"
+            },
+            {
+              "personagem": "Lucas (chegando à mesa)",
+              "ru": "— Yes, she is! I spoke to her ten minutes ago. She promised to book her flight tonight, and she asked us to reserve a hotel room for her.",
+              "pt": "— Vem, sim! Falei com ela dez minutos atrás. Ela prometeu reservar o voo hoje à noite e pediu para reservarmos um quarto de hotel para ela.",
+              "audio": "Yes, she is! I spoke to her ten minutes ago. She promised to book her flight tonight, and she asked us to reserve a hotel room for her."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Great! Let's not forget to send her the hotel link. Last time, David tried to book the hotel by himself and chose the wrong neighborhood!",
+              "pt": "— Ótimo! Não vamos esquecer de enviar o link do hotel para ela. Da última vez, o David tentou reservar o hotel sozinho e escolheu o bairro errado!",
+              "audio": "Great! Let's not forget to send her the hotel link. Last time, David tried to book the hotel by himself and chose the wrong neighborhood!"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Good idea. And before we go, don't forget to lock the cabinet where we keep the tablets.",
+              "pt": "— Boa ideia. E antes de irmos, não esqueça de trancar o armário onde guardamos os tablets.",
+              "audio": "Good idea. And before we go, don't forget to lock the cabinet where we keep the tablets."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Don't worry, I remember locking it ten minutes ago.",
+              "pt": "— Pode deixar, eu lembro de ter trancado há dez minutos.",
+              "audio": "Don't worry, I remember locking it ten minutes ago."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conte a sua rotina de um dia comum e diga uma coisa que você nunca faz."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Depois de qualquer preposição, o verbo leva -ing. Depois de for, of, in, at, about, with, without, before, after, by, instead of, não se usa o infinitivo: Thanks for calling, good at speaking, thinking about moving, without saying goodbye, before going. Atenção a um caso traiçoeiro: em look forward to e be used to, o to é preposição, e por isso vem -ing: I'm looking forward to seeing you. PASSO 2: Finalidade (“para fazer algo”) é to + verbo, nunca for. Quando responde “com qual objetivo?” usando um verbo (“Vim aprender inglês / Liguei para avisar”), use apenas to + verbo: I came here to learn English, I called to tell you. Já for + substantivo é correto: I came here for a course. PASSO 3: Depois de want, need, would like, não use “that”: use pessoa + to + verbo. Para “Quero que você faça / Preciso que ela envie”, a fórmula é verbo + pessoa (me, you, him, her, us, them) + to + verbo: I want you to see this, She asked me to wait. Com ask e tell, é a mesma estrutura no dia a dia (Tell him to call me).",
+          "comparacao": "Em português, o segundo verbo vai para o infinitivo quase sempre: depois de qualquer verbo (“terminei de ler, gosto de viajar”), depois de qualquer preposição (“obrigado por ajudar, antes de sair”) e depois de “para” indicando finalidade (“vim para estudar”). Para pedir algo a alguém, usamos “que” + subjuntivo (“quero que você vá”), e, nas respostas, deixamos o verbo sem objeto (“— Gostou do filme? — Gostei!”). Em inglês isso gera cinco armadilhas:",
+          "tabela": [
+            {
+              "portugues": "Obrigado por me ajudar / Antes de sair.",
+              "ingles": "Thanks for helping me / Before leaving.",
+              "evite": "Thanks for help me / Before to leave."
+            },
+            {
+              "portugues": "Vim para o Canadá para estudar.",
+              "ingles": "I came to Canada to study.",
+              "evite": "for study / for to study"
+            },
+            {
+              "portugues": "Terminei de ler o relatório.",
+              "ingles": "I finished reading the report.",
+              "evite": "I finished to read the report."
+            },
+            {
+              "portugues": "Quero que você venha comigo.",
+              "ingles": "I want you to come with me.",
+              "evite": "I want that you come with me."
+            },
+            {
+              "portugues": "— Gostou da ideia? — Gostei!",
+              "ingles": "— Did you like the idea? — Yes, I liked it!",
+              "evite": "Yes, I liked! (falta o objeto it)"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "like",
@@ -83,7 +186,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Dizer o que você gosta",
           "explicacao": "PASSO 1: «like» (gostar), «love» (adorar), «hate» (detestar), «enjoy» (curtir). PASSO 2: com substantivo, sem preposição: «I like music.» (não «I like OF music»). PASSO 3: com he/she/it, acrescente -s: «She loves football.» PASSO 4: negativa com «don't/doesn't»: «I don't like horror movies.» PASSO 5: pergunta: «Do you like pizza?», «Does he like sports?» Resposta curta: «Yes, I do.» / «No, I don't.» PASSO 6: para generalizar, use o plural SEM artigo: «I like dogs.», «I love movies.»",
           "comparacao": "em português «gostar» pede «de» («gosto DE música»). Em inglês, não existe preposição: «I like music». E para generalizar usamos o plural sem artigo, não «os cachorros».",
@@ -130,8 +233,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 3 coisas que você ama, 2 que você detesta e 2 que não gosta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Conte a sua rotina de um dia comum e diga uma coisa que você nunca faz."
         }
       ]
     },
@@ -141,13 +249,33 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Faça uma pergunta com «Do you like…?» e responda com «Yes, I do.» ou «No, I don't.»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como os verbos se dividem quanto ao que vem logo depois deles: PASSO 2: Perguntas: PASSO 3: Se um verbo expressa desejo ou plano apontando para a frente (want, plan, decide, hope, promise, need), ele pede to ou -ing? PASSO 4: Por que em I enjoy working não se diz I enjoy to work, enquanto com like, love, hate, start podemos usar os dois (I like working / I like to work)? PASSO 5: Em quais dos exemplos o to aparece como parte do infinitivo e em quais ele não existe, porque a palavra anterior é uma preposição?",
+          "tabela": [
+            {
+              "c1": "I want / need / would like to speak to you.",
+              "c2": "I enjoy / don't mind / can't stand working here."
+            },
+            {
+              "c1": "We decided / planned / chose to stay at a hotel.",
+              "c2": "Have you finished / stopped reading the file?"
+            },
+            {
+              "c1": "She promised / agreed / offered to help us.",
+              "c2": "He kept / avoided talking about the problem."
+            },
+            {
+              "c1": "Don't forget to lock the door!",
+              "c2": "We're thinking about / interested in buying a house. (preposição)"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "read",
@@ -195,7 +323,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Like + verbo com -ing",
           "explicacao": "PASSO 1: depois de like, love, hate e enjoy, o segundo verbo ganha -ing: «I like reading.», «She loves cooking.» PASSO 2: regras do -ing: verbo simples + ing (read → reading); verbo terminado em -e perde o -e (make → making); verbo curto terminado em consoante dobra a última (run → running, swim → swimming). PASSO 3: negativa: «I don't like running.» PASSO 4: pergunta: «Do you like traveling?» PASSO 5: «would like to + verbo» é outra coisa: «I'd like to travel» (queria viajar, desejo). PASSO 6: não use «to» + verbo depois de like/love com sentido geral de gosto: «I like to read» também existe, mas «I like reading» é o mais natural para hobbies.",
           "comparacao": "em português usamos o infinitivo: «gosto de ler». O inglês usa o -ing: «I like reading». Pense: gostar de uma ATIVIDADE = -ing.",
@@ -241,9 +369,21 @@
           "tag": "Gerúndio"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Quando usar -ing: PASSO 2: Depois de preposição:before leaving, after eating, without asking, good at cooking, interested in learning, tired of waiting, thanks for coming, how about going…? PASSO 3: Como sujeito da frase:Learning English is great! / Working from home saves time. PASSO 4: Depois de certos verbos. Memorize E-F-M-A-K-S: enjoy (curtir), finish (terminar de), mind (importar-se), avoid (evitar), keep (continuar fazendo), suggest (sugerir). Também: miss, practice, can't stand, give up, recommend. PASSO 5: Quando usar to + verbo: PASSO 6: Depois de verbos de desejo, plano e decisão:want, need, would like ('d like), hope, plan, decide, choose, promise, offer, agree, refuse, learn, expect, manage. PASSO 7: Depois de adjetivos:It's easy to use / I'm happy to help / Nice to meet you. PASSO 8: Para indicar finalidade:I went to the bank to talk to the manager. PASSO 9: Verbo + pessoa + to:I want you to help me / Ask him to call me / Tell her not to worry. PASSO 10: Verbos que aceitam os dois sem mudar o sentido:like, love, hate, prefer, start, begin, continue (I love traveling = I love to travel). Com would, só existe to: I'd like to travel. PASSO 11: Verbos que mudam de sentido:stop, remember, forget, try (veja o item 5.2).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Diga 6 coisas que você gosta de fazer, com verbo + -ing."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Faça uma pergunta com «Do you like…?» e responda com «Yes, I do.» ou «No, I don't.»"
         }
       ]
     },
@@ -253,13 +393,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Dê o -ing de: play, make, run, write, sit."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "me",
@@ -300,7 +435,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Pronomes de objeto",
           "explicacao": "PASSO 1: depois do verbo, o pronome muda: I → me, you → you, he → him, she → her, it → it, we → us, they → them. PASSO 2: «She likes ME.» (nunca «She likes I»). PASSO 3: depois de preposição também: «with me», «for you», «to him», «about them». PASSO 4: o pronome de sujeito vem ANTES do verbo, o de objeto DEPOIS. PASSO 5: «Do you like him?» «Yes, I like him a lot.»",
           "comparacao": "em português «me», «te», «o/a», «nos», «os/as» vêm antes ou depois do verbo. O inglês usa sempre DEPOIS do verbo, e eles se parecem pouco com o sujeito (he → him).",
@@ -357,7 +492,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Hobbies / Passatempos",
           "contexto": "Mia e Chris falam do que gostam.",
           "linhas": [
@@ -400,9 +535,325 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Thank you so much for helping me with this report!",
+              "translit": "",
+              "pt": "Muito obrigado por me ajudar com este relatório!",
+              "en": "",
+              "audio": "Thank you so much for helping me with this report!"
+            },
+            {
+              "ru": "Have you finished reading the contract yet?",
+              "translit": "",
+              "pt": "Você já terminou de ler o contrato?",
+              "en": "",
+              "audio": "Have you finished reading the contract yet?"
+            },
+            {
+              "ru": "I really enjoy working with international teams.",
+              "translit": "",
+              "pt": "Eu gosto muito de trabalhar com equipes internacionais.",
+              "en": "",
+              "audio": "I really enjoy working with international teams."
+            },
+            {
+              "ru": "We decided to postpone the meeting until Monday.",
+              "translit": "",
+              "pt": "Decidimos adiar a reunião para segunda-feira.",
+              "en": "",
+              "audio": "We decided to postpone the meeting until Monday."
+            },
+            {
+              "ru": "Do you want me to pick you up at the airport?",
+              "translit": "",
+              "pt": "Você quer que eu te busque no aeroporto?",
+              "en": "",
+              "audio": "Do you want me to pick you up at the airport?"
+            },
+            {
+              "ru": "She asked us not to share the link before Friday.",
+              "translit": "",
+              "pt": "Ela pediu para não compartilharmos o link antes de sexta.",
+              "en": "",
+              "audio": "She asked us not to share the link before Friday."
+            },
+            {
+              "ru": "— Did you like the presentation? — Yes, I loved it!",
+              "translit": "",
+              "pt": "— Você gostou da apresentação? — Sim, adorei!",
+              "en": "",
+              "audio": "— Did you like the presentation? — Yes, I loved it!"
+            },
+            {
+              "ru": "Did you paint the apartment by yourself?",
+              "translit": "",
+              "pt": "Você pintou o apartamento sozinho(a)?",
+              "en": "",
+              "audio": "Did you paint the apartment by yourself?"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Do you enjoy ___ in a big city?",
+              "opcoes": [
+                "living",
+                "to live"
+              ],
+              "gabarito": "living",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I came to Boston ___ a leadership course.",
+              "opcoes": [
+                "for take",
+                "to take"
+              ],
+              "gabarito": "to take",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Thank you for ___ me back so quickly!",
+              "opcoes": [
+                "call",
+                "calling"
+              ],
+              "gabarito": "calling",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Have you finished ___ the presentation?",
+              "opcoes": [
+                "preparing",
+                "to prepare"
+              ],
+              "gabarito": "preparing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My boss wants ___ the client tomorrow morning.",
+              "opcoes": [
+                "that I call",
+                "me to call"
+              ],
+              "gabarito": "me to call",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Did you see my new glasses? — Yes, I saw ___ on the kitchen table!",
+              "opcoes": [
+                "it",
+                "them"
+              ],
+              "gabarito": "them",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Please don't forget ___ the lights before leaving the room.",
+              "opcoes": [
+                "to turn off",
+                "turning off"
+              ],
+              "gabarito": "to turn off",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Nobody helped me with the project; I did it all by ___.",
+              "opcoes": [
+                "me",
+                "myself"
+              ],
+              "gabarito": "myself",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-108a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ a new language takes time and daily practice.",
+              "opcoes": [
+                "Learn",
+                "Learning"
+              ],
+              "gabarito": "Learning",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-109a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My boss let me ___ from home on Friday.",
+              "opcoes": [
+                "work",
+                "to work"
+              ],
+              "gabarito": "work",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-110a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We decided ___ (rent) a car instead of taking the bus.",
+              "respostaEsperada": "to rent",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We decided to rent a car instead of ___ (take) the bus.",
+              "respostaEsperada": "taking",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She is very good at ___ (negotiate) with suppliers, and she promised to help us.",
+              "respostaEsperada": "negotiating",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She is very good at negotiating with suppliers, and she promised ___ (help) us.",
+              "respostaEsperada": "to help",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I don't mind ___ (work) late tonight, but I need to leave by eight.",
+              "respostaEsperada": "working",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I don't mind working late tonight, but I need ___ (leave) by eight.",
+              "respostaEsperada": "to leave",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He stopped ___ (drink) soda last year because he wanted to lose weight.",
+              "respostaEsperada": "drinking",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He stopped drinking soda last year because he wanted ___ (lose) weight.",
+              "respostaEsperada": "to lose",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where is Emma? I need to talk to ___ (ela) before the meeting starts.",
+              "respostaEsperada": "her",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "These files are confidential. Please don't send ___ (eles) to anyone outside our team.",
+              "respostaEsperada": "them",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Lucas and Sarah have known ___ (um ao outro) for five years, and they built the system themselves.",
+              "respostaEsperada": "each other",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Lucas and Sarah have known each other for five years, and they built the system ___ (eles mesmos).",
+              "respostaEsperada": "themselves",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Before ___ (leave) the office, please remember to turn off the air conditioner.",
+              "respostaEsperada": "leaving",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Before leaving the office, please remember ___ (turn) off the air conditioner.",
+              "respostaEsperada": "to turn",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He left the restaurant without ___ (pay) the bill!",
+              "respostaEsperada": "paying",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-209a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The wifi isn't working. Have you tried ___ (restart) the router?",
+              "respostaEsperada": "restarting",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-210a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "That funny video made ___ (nós) laugh a lot!",
+              "respostaEsperada": "us",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-211a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "That funny video made us ___ (laugh) a lot!",
+              "respostaEsperada": "laugh",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-211b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I'd like ___ (book) a table for two, please.",
+              "respostaEsperada": "to book",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-212a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Responda em voz alta: «Who do you like? Who do you call every day?» Use «him, her, them»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Dê o -ing de: play, make, run, write, sit."
         }
       ]
     },
@@ -412,13 +863,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Fale de 3 hobbies que você ama e 1 que odeia, com -ing."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -594,12 +1040,158 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre os seus hobbies e com quem você os faz."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases sobre coisas que você curte fazer (I enjoy…-ing) ou não se importa de fazer (I don't mind…-ing), e duas sobre coisas que você decidiu ou planeja fazer (I decided to… / I plan to…).",
+              "respostaEsperada": "I enjoy cooking on weekends and I don't mind waking up early. This year I decided to study German and I plan to visit Berlin.",
+              "id": "en-013-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Agradeça a alguém por algo usando Thank you for…-ing, diga em que você é bom usando I'm good at…-ing e ofereça ajuda usando I'm happy to….",
+              "respostaEsperada": "Thank you for sending me the files so quickly! I'm good at organizing projects, and I'm happy to help with the presentation.",
+              "id": "en-013-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um pedido dizendo o que você quer que outra pessoa faça, usando I want you to… ou Could you ask him/her to…?.",
+              "respostaEsperada": "I want you to review this contract before three o'clock, please.",
+              "id": "en-013-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte algo que você aprendeu ou fez totalmente sozinho, usando by myself.",
+              "respostaEsperada": "I learned how to edit videos by myself!",
+              "id": "en-013-L-p04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase que comece com um verbo em -ing como sujeito (Working from home…, Learning English…).",
+              "respostaEsperada": "Working from home saves a lot of time in traffic.",
+              "id": "en-013-L-p05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I enjoy to travel, and I'm thinking about to visit Lisbon next year.",
+              "respostaEsperada": "I enjoy traveling, and I'm thinking about visiting Lisbon next year.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She went to the supermarket for buy some milk and bread.",
+              "respostaEsperada": "She went to the supermarket to buy some milk and bread.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I want that you send me the updated figures before noon.",
+              "respostaEsperada": "I want you to send me the updated figures before noon.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: — Did you like the new Italian restaurant? — Yes, I liked very much!",
+              "respostaEsperada": "— Did you like the new Italian restaurant? — Yes, I liked it very much!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: When I finished to write the email, I sent to she.",
+              "respostaEsperada": "When I finished writing the email, I sent it to her.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: He left the meeting without to say goodbye to we.",
+              "respostaEsperada": "He left the meeting without saying goodbye to us.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My manager suggested to have the meeting online.",
+              "respostaEsperada": "My manager suggested having the meeting online.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-013-L-c07"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Thank you for waiting for me — I'm ready to go now!",
+              "respostaEsperada": "OK",
+              "id": "en-013-L-c08"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os erros mais persistentes deste capítulo na fala de brasileiros são: usar for + verbo para finalidade (I came here for study em vez de to study), usar to depois de preposição ou depois de enjoy / finish (before to leave / I enjoy to PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "I came here for study English.",
+              "certo": "I came here to study English.",
+              "motivo": "Finalidade (“para + verbo”) é sempre to + verbo, e não for."
+            },
+            {
+              "errado": "Thanks for help / Before to go.",
+              "certo": "Thanks for helping / Before going.",
+              "motivo": "Depois de qualquer preposição (for, before, after, without, of, at, in), o verbo leva - ing."
+            },
+            {
+              "errado": "I enjoy to cook / I finished to read.",
+              "certo": "I enjoy cooking / I finished reading.",
+              "motivo": "Enjoy, finish, mind, avoid, keep, suggest pedem -ing."
+            },
+            {
+              "errado": "I want that you help me.",
+              "certo": "I want you to help me.",
+              "motivo": "Want, need, would like usam pessoa + to + verbo, e não that."
+            },
+            {
+              "errado": "She suggested to have lunch.",
+              "certo": "She suggested having lunch.",
+              "motivo": "Suggest pede -ing (ou suggested that we have lunch)."
+            },
+            {
+              "errado": "— Did you like the movie? — I liked!",
+              "certo": "— Yes, I liked it! (ou Yes, I did!)",
+              "motivo": "Verbos transitivos como like, love, buy, find pedem objeto (it / them)."
+            },
+            {
+              "errado": "Give the file to she / Come with I.",
+              "certo": "Give the file to her / Come with me.",
+              "motivo": "Depois de verbo e de preposição entram os pronomes de objeto (me, him, her, us, them)."
+            },
+            {
+              "errado": "Work here is great.",
+              "certo": "Working here is great.",
+              "motivo": "Quando uma ação é o sujeito da frase, usa-se - ing."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 16 e 17. Explique por que dizemos I used to live here (verbo base), mas I'm used to living here (com -ing). Qual regra deste capítulo explica o -ing? 2. Do Capítulo 14 e 15. Complete: How long ____ you ____ (know) Kevin, and how long ____ you ____ (work) on this app? e Have you finished reading the contract ____? — Yes, I've ____ signed it! (já / acabei de) 3. Diferença de sentido. Qual é a diferença entre He stopped talking to me e He stopped to talk to me?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Colocar -ing depois de preposições (before leaving, thanks for helping) e depois de enjoy / finish. · Expressar finalidade com to + verbo e pedir algo com I want you to…, sem “for” nem “that”. · Usar it e them depois de like, love, buy, send, sem deixar a frase incompleta."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala dos seus gostos e hobbies. Próxima aula: descrever pessoas."
+  "notasParaOAluno": "Você fala dos seus gostos e hobbies. Próxima aula: descrever pessoas.",
+  "geradaDoLivro": true
 }

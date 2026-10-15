@@ -15,13 +15,93 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você fala de situações hipotéticas ou imaginárias no presente/futuro usando a Second Conditional (If I had…, I would… e If I were you…), analisa como o passado teria sido diferente usando a Third Conditional (If I had known…, I would have…) e expressa desejos e arrependimentos com I wish."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Refletindo sobre uma proposta de emprego e o projeto passado",
+          "contexto": "Marina e Lucas tomam um café depois do expediente e conversam sobre uma proposta de trabalho que ela recebeu em Londres e sobre um erro do projeto do mês anterior.",
+          "linhas": [
+            {
+              "personagem": "Lucas",
+              "ru": "— Marina, what are you going to do about that job offer in London? It's a huge opportunity!",
+              "pt": "— Marina, o que você vai fazer sobre aquela proposta de emprego em Londres? É uma oportunidade imensa!",
+              "audio": "Marina, what are you going to do about that job offer in London? It's a huge opportunity!"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— I know, Lucas, but it's a tough decision. If I didn't have a contract with our Boston office until December, I'd accept the offer immediately.",
+              "pt": "— Eu sei, Lucas, mas é uma decisão difícil. Se eu não tivesse um contrato com o nosso escritório de Boston até dezembro, eu aceitaria a proposta imediatamente.",
+              "audio": "I know, Lucas, but it's a tough decision. If I didn't have a contract with our Boston office until December, I'd accept the offer immediately."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— If I were you, I'd talk to Richard tomorrow! If you explained the situation to him, maybe he'd let you transfer to our European branch.",
+              "pt": "— Se eu fosse você, eu falaria com o Richard amanhã! Se você explicasse a situação para ele, talvez ele deixasse você se transferir para a nossa filial europeia.",
+              "audio": "If I were you, I'd talk to Richard tomorrow! If you explained the situation to him, maybe he'd let you transfer to our European branch."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— That's true! If I lived in London, I'd be much closer to my sister in Lisbon. I wish I didn't have to decide so quickly!",
+              "pt": "— É verdade! Se eu morasse em Londres, ficaria muito mais perto da minha irmã em Lisboa. Eu queria não ter que decidir tão rápido!",
+              "audio": "That's true! If I lived in London, I'd be much closer to my sister in Lisbon. I wish I didn't have to decide so quickly!"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— By the way, how did the meeting about last month's delay go?",
+              "pt": "— Aliás, como foi a reunião sobre o atraso do mês passado?",
+              "audio": "By the way, how did the meeting about last month's delay go?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— It went well, but we learned a big lesson. If the supplier had warned us about the problem earlier, we wouldn't have lost those two clients.",
+              "pt": "— Foi bem, mas aprendemos uma grande lição. Se o fornecedor tivesse nos avisado sobre o problema mais cedo, não teríamos perdido aqueles dois clientes.",
+              "audio": "It went well, but we learned a big lesson. If the supplier had warned us about the problem earlier, we wouldn't have lost those two clients."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Exactly. And if we had tested the system in September, we would have found the bug in time. I wish we had started the tests two weeks earlier!",
+              "pt": "— Exatamente. E se tivéssemos testado o sistema em setembro, teríamos encontrado o erro a tempo. Eu bem que queria que tivéssemos começado os testes duas semanas mais cedo!",
+              "audio": "Exactly. And if we had tested the system in September, we would have found the bug in time. I wish we had started the tests two weeks earlier!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conte uma história com past perfect: algo que já tinha acontecido antes."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: A regra continua valendo: não se usa would na cláusula do If. Assim como o will não aparece depois do if na First Conditional (Cap. 21), o would também não entra na cláusula do If da Second e da Third Conditional. Depois do If, vem um tempo do passado (Past Simple para hipóteses de hoje; Past Perfect had + 3ª para hipóteses sobre o passado). PASSO 2: O segredo do “passo para trás no tempo”: Em inglês, sempre que queremos mostrar que algo é imaginário, irreal ou contrário à realidade (depois de If imaginário ou depois de I wish), damos um passo para trás no tempo verbal: PASSO 3: Se o desejo ou hipótese é sobre HOJE (Presente) → o verbo dá um passo para trás e vai para o Passado Simples (I don't have time today → If I had time today / I wish I had time today). PASSO 4: Se o desejo ou hipótese é sobre ONTEM (Passado já encerrado) → o verbo dá mais um passo para trás e vai para o Past Perfect (had + 3ª coluna) (I didn't know yesterday → If I had known yesterday / I wish I had known yesterday).",
+          "comparacao": "Em português, dizemos “Se eu tivesse tempo” (pretérito imperfeito do subjuntivo), “Se eu fosse você” e “Se você tivesse me ligado, eu teria ido”. Ao passar para o inglês, o brasileiro cai em quatro armadilhas clássicas:",
+          "tabela": [
+            {
+              "portugues": "Se eu tivesse mais tempo, viajaria mais.",
+              "ingles": "If I had more time, I'd travel more.",
+              "evite": "If I would have more time…"
+            },
+            {
+              "portugues": "Se eu fosse você, não compraria isso.",
+              "ingles": "If I were you, I wouldn't buy that.",
+              "evite": "If I was you, I don't buy that. (no padrão culto, were)."
+            },
+            {
+              "portugues": "Se eu soubesse (ontem), teria te ajudado.",
+              "ingles": "If I had known, I would have helped you.",
+              "evite": "If I knew yesterday / If I would have known…"
+            },
+            {
+              "portugues": "Queria falar alemão fluentemente!",
+              "ingles": "I wish I spoke (ou could speak) German!",
+              "evite": "I wish I speak German!"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "would",
@@ -83,7 +163,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "O segundo condicional",
           "explicacao": "PASSO 1: o segundo condicional fala de situações IRREAIS ou muito IMPROVÁVEIS no presente ou no futuro: «If I won the lottery, I would travel the world.» PASSO 2: a estrutura: «If + passado simples, would + verbo simples». PASSO 3: o «passado» depois do «if» não é passado de tempo: é uma marca de irrealidade. PASSO 4: com o verbo «be», use «were» para todas as pessoas (formal): «If I were rich…», «If she were here…» No dia a dia, «was» também aparece. PASSO 5: «If I were you, I would…» dá conselho: «If I were you, I would talk to him.» PASSO 6: negativa: «wouldn't»: «I wouldn't do that.» PASSO 7: pergunta: «What would you do if you won the lottery?» PASSO 8: compare com o primeiro condicional (real): «If I win, I will travel.» (possível) × «If I won, I would travel.» (improvável).",
           "comparacao": "em português usamos o imperfeito do subjuntivo e o futuro do pretérito: «se eu ganhasse, viajaria». O inglês faz o mesmo com «If + passado, would + verbo». O que muda é a forma, não a ideia.",
@@ -131,8 +211,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Complete 5 frases: «If I won the lottery, I would…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Conte uma história com past perfect: algo que já tinha acontecido antes."
         }
       ]
     },
@@ -142,13 +227,35 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Dê 2 conselhos com «If I were you, I would…»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare as três condicionais lado a lado na mesma situação (ter tempo para ajudar): PASSO 2: Perguntas: PASSO 3: Na frase da 3rd Conditional acima, por que apareceu had had duas vezes seguidas (If I had had time)? Qual é a função do primeiro had e qual é a função do segundo had? PASSO 4: Na 2nd Conditional, qual palavra usamos para o verbo to be depois de I, he, she, it em If I were you / If she were here?",
+          "tabela": [
+            {
+              "c1": "1st Conditional (Cap. 21: real no futuro)",
+              "c2": "If I have time tomorrow, (Present Simple)",
+              "c3": "I'll help you. (will)",
+              "c4": "Possível e real: Acho bem provável que eu tenha tempo amanhã!"
+            },
+            {
+              "c1": "2nd Conditional (Imaginária hoje/futuro)",
+              "c2": "If I had time right now, (Past Simple)",
+              "c3": "I'd help you. (would / wouldn't + verbo)",
+              "c4": "Imaginário hoje: Na realidade eu não tenho tempo agora, mas estou imaginando o contrário!"
+            },
+            {
+              "c1": "3rd Conditional (Imaginária no passado)",
+              "c2": "If I had had time yesterday, (Past Perfect: had + 3ª)",
+              "c3": "I would have helped you. (would have + 3ª)",
+              "c4": "Passado irreversível: Ontem já passou, eu não tive tempo e não pude ajudar."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "real",
@@ -196,7 +303,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Real × imaginário",
           "explicacao": "PASSO 1: pergunte-se: a situação é POSSÍVEL de acontecer? Se sim, primeiro condicional («If it rains, I will stay home»). PASSO 2: se for IMPROVÁVEL, IMPOSSÍVEL ou só um sonho, use o segundo («If I were a bird, I would fly»). PASSO 3: o mesmo assunto muda de tom: «If I have time, I will help you.» (talvez eu tenha) × «If I had time, I would help you.» (eu não tenho, mas gostaria). PASSO 4: «unless» e «as long as» seguem a regra do primeiro: presente depois deles. PASSO 5: para dar conselho, use «If I were you, I would…» ou «Why don't you…?» PASSO 6: pergunta típica de entrevista: «Where would you like to be in five years?»",
           "comparacao": "em português a mesma estrutura serve para os dois («se eu tiver», «se eu tivesse»). Em inglês, escolha o tempo pelo grau de realidade: presente (real) ou passado (irreal).",
@@ -233,9 +340,21 @@
           "tag": "Condicionais"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Second Conditional (Hipótese Irreal no Presente/Futuro): PASSO 2: Fórmula:If + Past Simple, would ('d) / wouldn't (ou could / might) + verbo nu. PASSO 3: If I won the lottery, I'd travel around the world. | What would you do if you lost your passport?. PASSO 4: Com o verbo to be: Usa-se were para todas as pessoas (If I were you, I'd accept the job / If she were here, she'd know what to do — embora was apareça na fala informal, If I were you é a forma fixa dos conselhos). PASSO 5: Third Conditional (Hipótese sobre o Passado — “Se tivesse… teria…”): PASSO 6: Fórmula:If + had / hadn't + 3ª coluna, would / wouldn't (ou could) + have + 3ª coluna. PASSO 7: If you had called me earlier, I would have picked you up at the station. PASSO 8: Desejos e Arrependimentos com I wish (“Eu bem que queria / Quem me dera”): PASSO 9: Desejo sobre o PRESENTE:I wish + Past Simple / could (I wish I lived near the beach / I wish I could speak French / I wish it weren't so cold today). PASSO 10: Arrependimento sobre o PASSADO:I wish + had / hadn't + 3ª coluna (I wish I had studied harder / I wish I hadn't eaten so much last night!).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Escreva 3 pares: uma frase real e uma imaginária sobre o mesmo assunto."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Dê 2 conselhos com «If I were you, I would…»"
         }
       ]
     },
@@ -245,13 +364,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Dê um conselho a um amigo que está sem tempo para estudar, com «If I were you»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "wish",
@@ -292,7 +406,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Wish + passado",
           "explicacao": "PASSO 1: «I wish + passado simples» expressa um desejo sobre algo que não é verdade agora: «I wish I had more time.» (não tenho). PASSO 2: com «be», use «were»: «I wish I were taller.» PASSO 3: «I wish I could…» fala de uma habilidade que não tem: «I wish I could speak French.» PASSO 4: «If only» é mais forte: «If only I had more money!» PASSO 5: não use «will» nem «would» para si próprio depois de «wish»: «I wish I would» está errado.",
           "comparacao": "em português «queria ter mais tempo» e «quem me dera ter mais tempo» expressam o mesmo. Em inglês, «I wish I had more time» ou «If only I had more time».",
@@ -331,7 +445,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "If I were you / Se eu fosse você",
           "contexto": "Mia pede conselho a Chris.",
           "linhas": [
@@ -374,9 +488,301 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "If I were you, I'd talk to the manager right away.",
+              "translit": "",
+              "pt": "Se eu fosse você, falaria com o gerente imediatamente.",
+              "en": "",
+              "audio": "If I were you, I'd talk to the manager right away."
+            },
+            {
+              "ru": "What would you do if you won a million dollars?",
+              "translit": "",
+              "pt": "O que você faria se ganhasse um milhão de dólares?",
+              "en": "",
+              "audio": "What would you do if you won a million dollars?"
+            },
+            {
+              "ru": "If we had more budget, we could hire two more designers.",
+              "translit": "",
+              "pt": "Se tivéssemos mais orçamento, poderíamos contratar mais dois designers.",
+              "en": "",
+              "audio": "If we had more budget, we could hire two more designers."
+            },
+            {
+              "ru": "If I had known you were in town, I would have invited you for dinner!",
+              "translit": "",
+              "pt": "Se eu soubesse (tivesse sabido) que você estava na cidade, teria te convidado para jantar!",
+              "en": "",
+              "audio": "If I had known you were in town, I would have invited you for dinner!"
+            },
+            {
+              "ru": "We wouldn't have missed the flight if we had left the hotel earlier.",
+              "translit": "",
+              "pt": "Não teríamos perdido o voo se tivéssemos saído do hotel mais cedo.",
+              "en": "",
+              "audio": "We wouldn't have missed the flight if we had left the hotel earlier."
+            },
+            {
+              "ru": "I wish I had more free time during the week.",
+              "translit": "",
+              "pt": "Eu bem que queria ter mais tempo livre durante a semana.",
+              "en": "",
+              "audio": "I wish I had more free time during the week."
+            },
+            {
+              "ru": "I wish I could work from the beach every Friday!",
+              "translit": "",
+              "pt": "Quem me dera poder trabalhar da praia toda sexta-feira!",
+              "en": "",
+              "audio": "I wish I could work from the beach every Friday!"
+            },
+            {
+              "ru": "I really wish I had started learning English ten years ago.",
+              "translit": "",
+              "pt": "Eu queria muito ter começado a aprender inglês dez anos atrás.",
+              "en": "",
+              "audio": "I really wish I had started learning English ten years ago."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If I ___ you, I wouldn't rent that apartment — it's too noisy!",
+              "opcoes": [
+                "was",
+                "were"
+              ],
+              "gabarito": "were",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If I were you, I ___ that apartment — it's too noisy!",
+              "opcoes": [
+                "wouldn't rent",
+                "didn't rent"
+              ],
+              "gabarito": "wouldn't rent",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If we ___ closer to the office, we wouldn't spend so much time in traffic.",
+              "opcoes": [
+                "live",
+                "lived"
+              ],
+              "gabarito": "lived",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "What ___ you do if you lost your laptop on a trip?",
+              "opcoes": [
+                "will",
+                "would"
+              ],
+              "gabarito": "would",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "What would you do if you ___ your laptop on a trip?",
+              "opcoes": [
+                "lost",
+                "would lose"
+              ],
+              "gabarito": "lost",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If she ___ the email yesterday, she would have come to the meeting.",
+              "opcoes": [
+                "saw",
+                "had seen"
+              ],
+              "gabarito": "had seen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "If she had seen the email yesterday, she ___ to the meeting.",
+              "opcoes": [
+                "came",
+                "would have come"
+              ],
+              "gabarito": "would have come",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-104b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "They wouldn't have made that mistake if they ___ our instructions.",
+              "opcoes": [
+                "followed",
+                "had followed"
+              ],
+              "gabarito": "had followed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I don't speak Spanish, but I wish I ___ it!",
+              "opcoes": [
+                "speak",
+                "spoke"
+              ],
+              "gabarito": "spoke",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'm exhausted today. I wish I ___ to bed so late last night!",
+              "opcoes": [
+                "didn't go",
+                "hadn't gone"
+              ],
+              "gabarito": "hadn't gone",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ you have a wonderful weekend!",
+              "opcoes": [
+                "wish",
+                "hope"
+              ],
+              "gabarito": "hope",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If I ___ (have) her phone number, I 'd call her right now. (mas não tenho agora)",
+              "respostaEsperada": "had",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If I had her phone number, I ___ (call) her right now. (mas não tenho agora)",
+              "respostaEsperada": "'d call",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If Lucas ___ (not / live) in Brazil, he 'd apply for the job in Toronto. (hipótese hoje)",
+              "respostaEsperada": "didn't live",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If Lucas didn't live in Brazil, he ___ (apply) for the job in Toronto. (hipótese hoje)",
+              "respostaEsperada": "'d apply",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If you ___ (tell) me about the problem yesterday, I would have helped you fix it! (passado irreversível)",
+              "respostaEsperada": "had told",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If you had told me about the problem yesterday, I ___ (help) you fix it! (passado irreversível)",
+              "respostaEsperada": "would have helped",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We ___ (not / get) lost last night if we had used the GPS. (passado irreversível)",
+              "respostaEsperada": "wouldn't have gotten (UK: got)",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We wouldn't have gotten (UK: got) lost last night if we ___ (use) the GPS. (passado irreversível)",
+              "respostaEsperada": "had used",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "It's raining so hard today! I wish I ___ (have) my umbrella with me right now.",
+              "respostaEsperada": "had",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I failed the test last week. I really wish I ___ (study) harder for it!",
+              "respostaEsperada": "had studied",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If I ___ (be) you, I wouldn't buy that car; it's way too expensive.",
+              "respostaEsperada": "were",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If I were you, I ___ (not / buy) that car; it's way too expensive.",
+              "respostaEsperada": "wouldn't buy",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If the flight ___ (not / be) delayed yesterday, we would have arrived in time for dinner.",
+              "respostaEsperada": "hadn't been",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "If the flight hadn't been delayed yesterday, we ___ (arrive) in time for dinner.",
+              "respostaEsperada": "would have arrived",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-208b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Escreva 5 desejos seus com «I wish» e 3 conselhos com «If I were you»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Dê um conselho a um amigo que está sem tempo para estudar, com «If I were you»."
         }
       ]
     },
@@ -386,13 +792,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Diga o que você faria se ganhasse na loteria e dê um conselho a um amigo."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -573,12 +974,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre a vida que você teria se pudesse mudar uma coisa."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Dê dois conselhos a um amigo usando a estrutura clássica If I were you, I'd… / I wouldn't….",
+              "respostaEsperada": "If I were you, I'd accept the job offer, and I wouldn't worry about moving.",
+              "id": "en-041-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte duas coisas que você faria se tivesse mais tempo livre ou se morasse em outro país (If I had… / If I lived…, I'd…).",
+              "respostaEsperada": "If I had more free time, I'd learn how to play the cello, and if I lived in Italy, I'd eat pasta every day.",
+              "id": "en-041-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Reflita sobre um fato do passado que teria sido diferente usando a Third Conditional (If I had / hadn't…, I would / wouldn't have…).",
+              "respostaEsperada": "If I hadn't studied English, I wouldn't have gotten my current job.",
+              "id": "en-041-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um desejo sobre o seu presente (I wish I…) e um arrependimento sobre algo do passado (I wish I had / hadn't…).",
+              "respostaEsperada": "I wish I lived closer to the beach, and I wish I had started saving money ten years ago.",
+              "id": "en-041-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If I would have more money right now, I would buy a new apartment.",
+              "respostaEsperada": "If I had more money right now, I would buy a new apartment.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If you would have called me yesterday, I would have picked you up.",
+              "respostaEsperada": "If you had called me yesterday, I would have picked you up.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I wish I know how to play the piano!",
+              "respostaEsperada": "I wish I knew how to play the piano!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: If I knew yesterday that she was sick, I would have visited her.",
+              "respostaEsperada": "If I had known yesterday that she was sick, I would have visited her.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I forgot my jacket! I wish I brought it with me this morning.",
+              "respostaEsperada": "I forgot my jacket! I wish I had brought it with me this morning.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I wish you pass your driving test tomorrow!",
+              "respostaEsperada": "I hope you pass your driving test tomorrow!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-041-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: If we had left ten minutes earlier, we wouldn't have missed the train.",
+              "respostaEsperada": "OK",
+              "id": "en-041-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os três erros mais comuns nas condicionais hipotéticas são: colocar would ou would have dentro da cláusula do If (If I would have time / If I would have known), usar o Past Simple em vez do Past Perfect (had + 3ª) para falar do passado irreversível (If I knew yesterday, I would have told you; o certo é If I had known yesterday) e usar o presente depois de I wish (I wish I have em vez de I wish I had). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "If I would have time, I'd go.",
+              "certo": "If I had time, I'd go.",
+              "motivo": "Na cláusula do If, use o Past Simple (had), e não would."
+            },
+            {
+              "errado": "If you would have told me, I'd have helped.",
+              "certo": "If you had told me, I'd have helped.",
+              "motivo": "Na Third Conditional, a cláusula do If exige had + 3ª coluna, e não would have."
+            },
+            {
+              "errado": "If I knew yesterday, I would have gone.",
+              "certo": "If I had known yesterday, I would have gone.",
+              "motivo": "Em português dizemos “Se eu soubesse ontem”, mas como é passado encerrado, o inglês exige If I had known."
+            },
+            {
+              "errado": "I wish I have more time today.",
+              "certo": "I wish I had more time today.",
+              "motivo": "Desejos irreais no presente após I wish exigem o verbo no Passado (had, lived, could)."
+            },
+            {
+              "errado": "I wish I studied harder last year.",
+              "certo": "I wish I had studied harder last year.",
+              "motivo": "Arrependimentos sobre o passado após I wish exigem had + 3ª coluna."
+            },
+            {
+              "errado": "I would of gone.",
+              "certo": "I would have (would've) gone.",
+              "motivo": "O som 've (ãv) é a contração de have, e não da preposição of."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 21 e 22. Compare: (a) If I find your keys, I'll call you. (b) If I found a wallet on the street, I'd give it to the police. (c) If I had found your keys yesterday, I would have called you. Qual delas é uma promessa real para hoje, qual é uma hipótese imaginária e qual é sobre ontem? 2. Do Capítulo 20. Adicione a question tag: You would accept that job in London, ____? 3. Do Capítulo 16 e 22. Na frase If I'd known, I'd have told you, expanda os dois 'd: qual é had e qual é would?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Falar de situações hipotéticas hoje usando If + Past Simple e would, incluindo If I were you. · Analisar o passado dizendo o que teria acontecido com If + had + 3ª coluna e would have + 3ª coluna sem usar would na parte do If. · Expressar desejos sobre o presente (I wish I had/could…) e arrependimentos sobre o passado (I wish I had/hadn't…)."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você imagina situações e dá conselhos. Próxima aula: terceiro condicional e arrependimentos."
+  "notasParaOAluno": "Você imagina situações e dá conselhos. Próxima aula: terceiro condicional e arrependimentos.",
+  "geradaDoLivro": true
 }

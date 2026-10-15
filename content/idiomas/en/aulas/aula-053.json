@@ -15,13 +15,104 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você escolhe a palavra certa para a intensidade (a bit, quite, very, really, extremely), usa absolutely com adjetivos fortes (amazing, terrible), diferencia so de such, não confunde very com too e diz “gosto muito” com verbos sem separar o verbo do objeto."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Como foi o hotel?",
+          "contexto": "Emma volta de uma viagem a Boston e conta a Oliver como foi a hospedagem.",
+          "linhas": [
+            {
+              "personagem": "Oliver",
+              "ru": "— Welcome back! How was the hotel in Boston?",
+              "pt": "— Bem-vinda de volta! Como foi o hotel em Boston?",
+              "audio": "Welcome back! How was the hotel in Boston?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— It was really nice, but a bit small, and the room was quite noisy at night.",
+              "pt": "— Foi muito bom, mas um pouco pequeno, e o quarto era bastante barulhento à noite.",
+              "audio": "It was really nice, but a bit small, and the room was quite noisy at night."
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— Was it expensive?",
+              "pt": "— Era caro?",
+              "audio": "Was it expensive?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Pretty expensive, yes, but not too expensive for a week downtown. And the location was absolutely perfect.",
+              "pt": "— Bem caro, sim, mas não caro demais para uma semana no centro. E a localização era absolutamente perfeita.",
+              "audio": "Pretty expensive, yes, but not too expensive for a week downtown. And the location was absolutely perfect."
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— What about the food?",
+              "pt": "— E a comida?",
+              "audio": "What about the food?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— The breakfast was so good! It was such a big buffet that I couldn't try everything. And the staff were extremely friendly.",
+              "pt": "— O café da manhã era tão bom! Era um buffet tão grande que eu não consegui experimentar tudo. E os funcionários eram extremamente simpáticos.",
+              "audio": "The breakfast was so good! It was such a big buffet that I couldn't try everything. And the staff were extremely friendly."
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— Did you sleep well?",
+              "pt": "— Você dormiu bem?",
+              "audio": "Did you sleep well?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Not very well. The street was too noisy, and the walls aren't thick enough. But I enjoyed the city very much.",
+              "pt": "— Não muito bem. A rua era barulhenta demais, e as paredes não são grossas o suficiente. Mas eu gostei muito da cidade.",
+              "audio": "Not very well. The street was too noisy, and the walls aren't thick enough. But I enjoyed the city very much."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Fale do que você terá feito até o fim do ano e do que estará fazendo amanhã às 8h."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Much não é um “muito” para adjetivos. Com adjetivos e advérbios use very ou really: very hot, really fast. Much aparece com verbos negativos e perguntas (I don't like it much), com comparativos (much better) e com substantivos incontáveis (too much money). PASSO 2: Too traz um problema. Em português, “demais” pode ser só intensidade (“ela é legal demais”), mas too carrega a ideia de mais do que o necessário: too hot = quente a ponto de incomodar. Para elogiar, use so, really ou extremely. PASSO 3: Adjetivos fortes não aceitam very. Palavras como amazing, terrible, huge, exhausted já têm a intensidade dentro delas. Dizemos absolutely amazing ou really terrible, e não very amazing.",
+          "comparacao": "Em português, “muito” serve para tudo: “muito bom”, “muito calor”, “gosto muito”, “muita gente”, “muito mais”. O inglês tem uma palavra para cada situação, e usar much no lugar errado soa estranho. Veja o que costuma escorregar:",
+          "tabela": [
+            {
+              "portugues": "Está muito calor!",
+              "ingles": "It's very hot! / It's really hot!",
+              "evite": "It's much hot!"
+            },
+            {
+              "portugues": "Eu gosto muito disso.",
+              "ingles": "I like it a lot. / I really like it.",
+              "evite": "I like it very. / I like much."
+            },
+            {
+              "portugues": "Que filme tão bom!",
+              "ingles": "What a good movie! / It's such a good movie!",
+              "evite": "It's so a good movie!"
+            },
+            {
+              "portugues": "O filme foi maravilhoso.",
+              "ingles": "The movie was absolutely wonderful.",
+              "evite": "The movie was very wonderful."
+            },
+            {
+              "portugues": "Estou feliz demais. (= muito feliz)",
+              "ingles": "I'm so happy! / I'm really happy!",
+              "evite": "I'm too happy!"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "so",
@@ -83,7 +174,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "So + adjetivo, such + (a) + substantivo",
           "explicacao": "PASSO 1: «so» vem antes de ADJETIVO ou ADVÉRBIO: «The film was so good.» «She speaks so fast.» PASSO 2: «such» vem antes de SUBSTANTIVO (com ou sem adjetivo): «It was such a good film.» PASSO 3: com singular contável: «such a/an + (adjetivo) + substantivo»: «such a long day.» PASSO 4: com plural ou incontável, sem artigo: «such good friends», «such good weather». PASSO 5: resultado com «that»: «It was so cold that we stayed home.» «It was such a cold day that we stayed home.» PASSO 6: «so much / so many» + substantivo: «so much noise», «so many people». PASSO 7: em português «tão» serve para os dois casos; em inglês você escolhe pela classe da palavra seguinte.",
           "comparacao": "em português dizemos «tão bom» e «um dia tão longo» com a mesma palavra «tão». Em inglês: «so good», mas «such a long day».",
@@ -135,8 +226,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Descreva 5 coisas do seu dia usando «so» e «such»: o trânsito, o tempo, uma refeição."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Fale do que você terá feito até o fim do ano e do que estará fazendo amanhã às 8h."
         }
       ]
     },
@@ -146,13 +242,31 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Complete: «It was ___ cold day. The soup was ___ hot. They are ___ nice people.»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como a intensidade sobe da esquerda para a direita nas duas linhas abaixo, e repare no que cada palavra “aceita”: PASSO 2: E compare as três frases: PASSO 3: This coffee is very hot. (quente, mas dá para beber) PASSO 4: This coffee is too hot. (não dá para beber agora) PASSO 5: This coffee is hot enough. (está na temperatura certa) PASSO 6: Perguntas: PASSO 7: Qual das palavras da tabela não combina com good nem com hot, mas combina com amazing? PASSO 8: Em qual das três frases do café há um problema?",
+          "tabela": [
+            {
+              "c1": "Adjetivo comum (good)",
+              "c2": "a bit good",
+              "c3": "quite good / pretty good",
+              "c4": "very good / really good",
+              "c5": "extremely good"
+            },
+            {
+              "c1": "Adjetivo forte (amazing)",
+              "c2": "",
+              "c3": "",
+              "c4": "really amazing",
+              "c5": "absolutely amazing"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "too",
@@ -200,7 +314,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Too + adjetivo, adjetivo + enough",
           "explicacao": "PASSO 1: «too» = demais (problema): «It's too expensive.» PASSO 2: «too» vem ANTES do adjetivo: «too heavy», «too late». PASSO 3: «enough» = suficiente. Com adjetivo, vem DEPOIS: «She is old enough.» PASSO 4: com substantivo, vem ANTES: «We have enough time.» PASSO 5: negativa: «not + adjetivo + enough» = insuficiente: «It's not big enough.» PASSO 6: com infinitivo: «too tired to drive», «strong enough to lift it.» PASSO 7: «too much» + incontável, «too many» + contável: «too much noise», «too many cars». PASSO 8: não diga «very enough» nem «too much expensive».",
           "comparacao": "em português «demais» vem depois («caro demais»); em inglês «too» vem antes: «too expensive». E «enough» vem depois do adjetivo: «grande o bastante», «big enough».",
@@ -251,9 +365,21 @@
           "tag": "Excesso e suficiência"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Com adjetivos e advérbios comuns (good, hot, fast, slowly): PASSO 2: a bit / a little = um pouco: a bit tired. PASSO 3: quite / pretty / fairly = bastante, razoavelmente: quite good, pretty expensive. PASSO 4: very / really = muito: very good, really fast. PASSO 5: extremely = extremamente: extremely important. PASSO 6: Com adjetivos fortes (amazing, terrible, huge, exhausted, delicious, freezing): absolutely ou really, sem very. PASSO 7: So e such (tão): PASSO 8: so + adjetivo ou advérbio:so good, so quickly. PASSO 9: such + (a / an) + (adjetivo) + substantivo:such a good idea, such nice people. PASSO 10: Too e enough (revisão do capítulo 12):too + adjetivo = demais, com problema; adjetivo + enough = o suficiente. PASSO 11: Com verbos:I really like it, I like it a lot, I like it very much. Em negativas: I don't like it very much.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Diga 8 frases sobre limites: o que é caro demais, longe demais, e o que é bom o bastante para você."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «It was ___ cold day. The soup was ___ hot. They are ___ nice people.»"
         }
       ]
     },
@@ -263,13 +389,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Reescreva: «A casa é pequena demais.» e «Ele tem idade suficiente.»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "a few",
@@ -310,7 +431,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "A few, a little, few, little",
           "explicacao": "PASSO 1: «a few» + contável plural (alguns, o suficiente): «a few friends.» PASSO 2: «a little» + incontável (um pouco): «a little time.» PASSO 3: sem «a», o sentido é NEGATIVO: «few friends» (quase nenhum), «little time» (pouquíssimo). PASSO 4: «plenty of» e «a lot of» servem para os dois: «plenty of time», «a lot of people». PASSO 5: «several» + plural: vários. PASSO 6: «much» e «many» aparecem em negativas e perguntas: «How much money?» «There aren't many.»",
           "comparacao": "em português «poucos amigos» e «alguns amigos» mudam o tom. Em inglês, a presença do «a» faz essa diferença: «a few friends» (positivo) × «few friends» (quase nenhum).",
@@ -357,7 +478,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Planning a trip / Planejando a viagem",
           "contexto": "Sarah e Tom planejam uma viagem.",
           "linhas": [
@@ -400,9 +521,226 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "It was a really good meeting, and the team was extremely helpful.",
+              "translit": "",
+              "pt": "Foi uma reunião muito boa, e a equipe ajudou muito.",
+              "en": "",
+              "audio": "It was a really good meeting, and the team was extremely helpful."
+            },
+            {
+              "ru": "The hotel was a bit expensive, but the location was absolutely perfect.",
+              "translit": "",
+              "pt": "O hotel era um pouco caro, mas a localização era absolutamente perfeita.",
+              "en": "",
+              "audio": "The hotel was a bit expensive, but the location was absolutely perfect."
+            },
+            {
+              "ru": "I'm absolutely exhausted after that flight.",
+              "translit": "",
+              "pt": "Estou absolutamente exausto depois desse voo.",
+              "en": "",
+              "audio": "I'm absolutely exhausted after that flight."
+            },
+            {
+              "ru": "It's such a good idea!",
+              "translit": "",
+              "pt": "Que ideia tão boa!",
+              "en": "",
+              "audio": "It's such a good idea!"
+            },
+            {
+              "ru": "I was so tired that I fell asleep on the sofa.",
+              "translit": "",
+              "pt": "Eu estava tão cansado que adormeci no sofá.",
+              "en": "",
+              "audio": "I was so tired that I fell asleep on the sofa."
+            },
+            {
+              "ru": "This coffee is too hot to drink.",
+              "translit": "",
+              "pt": "Este café está quente demais para beber.",
+              "en": "",
+              "audio": "This coffee is too hot to drink."
+            },
+            {
+              "ru": "Is the room quiet enough to work in?",
+              "translit": "",
+              "pt": "O quarto é silencioso o bastante para trabalhar?",
+              "en": "",
+              "audio": "Is the room quiet enough to work in?"
+            },
+            {
+              "ru": "I like this city very much, and I miss my friends a lot.",
+              "translit": "",
+              "pt": "Gosto muito desta cidade, e sinto muita falta dos meus amigos.",
+              "en": "",
+              "audio": "I like this city very much, and I miss my friends a lot."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The food was ___ delicious!",
+              "opcoes": [
+                "absolutely",
+                "very"
+              ],
+              "gabarito": "absolutely",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "It's ___ hot today. Can you turn on the air conditioning?",
+              "opcoes": [
+                "much",
+                "very"
+              ],
+              "gabarito": "very",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "She's ___ a nice person!",
+              "opcoes": [
+                "so",
+                "such"
+              ],
+              "gabarito": "such",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I like jazz ___.",
+              "opcoes": [
+                "very much",
+                "much"
+              ],
+              "gabarito": "very much",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This soup is ___ salty to eat.",
+              "opcoes": [
+                "too",
+                "very"
+              ],
+              "gabarito": "too",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The room isn't ___ for six people.",
+              "opcoes": [
+                "big enough",
+                "enough big"
+              ],
+              "gabarito": "big enough",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "It was ___ cold that we stayed home.",
+              "opcoes": [
+                "so",
+                "such"
+              ],
+              "gabarito": "so",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I need ___ time to finish the report.",
+              "opcoes": [
+                "enough",
+                "enough of"
+              ],
+              "gabarito": "enough",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "It was ___ a long meeting that everyone was tired.",
+              "respostaEsperada": "such",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The meeting was ___ long that everyone was tired.",
+              "respostaEsperada": "so",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "This jacket is ___ small. I can't wear it.",
+              "respostaEsperada": "too",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The room isn't warm ___.",
+              "respostaEsperada": "enough",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We don't have ___ chairs for everyone.",
+              "respostaEsperada": "enough",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He is ___ a kind person!",
+              "respostaEsperada": "such",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "She speaks ___ quickly that I can't understand her.",
+              "respostaEsperada": "so",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The soup is ___ hot to eat.",
+              "respostaEsperada": "too",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-208a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Escreva 5 frases sobre sua cidade com «a few», «a little», «plenty of» e «too many»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Reescreva: «A casa é pequena demais.» e «Ele tem idade suficiente.»"
         }
       ]
     },
@@ -412,13 +750,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Descreva sua cidade usando so, such, too e enough."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -598,12 +931,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto descrevendo uma viagem usando so, such, too e enough."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva um hotel ou restaurante onde você já esteve, usando really, a bit e absolutely em frases diferentes.",
+              "respostaEsperada": "The hotel was really clean, a bit noisy, and the breakfast was absolutely delicious.",
+              "id": "en-053-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga que uma bolsa que você viu é cara demais e que não é grande o suficiente para o seu laptop.",
+              "respostaEsperada": "This bag is too expensive, and it isn't big enough for my laptop.",
+              "id": "en-053-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Explique por que você estava cansado ontem usando so… that.",
+              "respostaEsperada": "I was so tired yesterday that I went to bed at eight.",
+              "id": "en-053-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga que você gosta de um lugar, de duas maneiras diferentes (a lot e very much).",
+              "respostaEsperada": "I like this place a lot. / I like this place very much.",
+              "id": "en-053-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The movie was very fantastic!",
+              "respostaEsperada": "The movie was absolutely fantastic!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: It's much cold today.",
+              "respostaEsperada": "It's very cold today.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She is so a good teacher.",
+              "respostaEsperada": "She is such a good teacher.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I like very much this restaurant.",
+              "respostaEsperada": "I like this restaurant very much.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'm too happy to see you!",
+              "respostaEsperada": "I'm so happy to see you!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The bed isn't enough comfortable.",
+              "respostaEsperada": "The bed isn't comfortable enough.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-053-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The concert was absolutely wonderful.",
+              "respostaEsperada": "OK",
+              "id": "en-053-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais frequente é usar very com adjetivos fortes (very fantastic, very terrible) e usar much no lugar de very com adjetivos (much hot, much good). Em segundo lugar, aparece o too usado como elogio. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "very fantastic / very terrible",
+              "certo": "absolutely fantastic / really terrible",
+              "motivo": "Adjetivos fortes já são “muito”; use absolutely ou really."
+            },
+            {
+              "errado": "much hot / much good",
+              "certo": "very hot / very good",
+              "motivo": "Com adjetivos e advérbios, a palavra é very (ou really)."
+            },
+            {
+              "errado": "so a good teacher",
+              "certo": "such a good teacher / so good",
+              "motivo": "Such vem antes de substantivo (a … teacher); so vem direto antes do adjetivo."
+            },
+            {
+              "errado": "I like very much this restaurant.",
+              "certo": "I like this restaurant very much.",
+              "motivo": "Very much não se coloca entre o verbo e o objeto."
+            },
+            {
+              "errado": "I'm too happy to see you!",
+              "certo": "I'm so happy to see you!",
+              "motivo": "Too indica excesso com problema; para alegria, use so ou really."
+            },
+            {
+              "errado": "enough comfortable",
+              "certo": "comfortable enough",
+              "motivo": "Enough vem depois do adjetivo."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 26. Corrija a ordem: I like very much this song. 2. Do Capítulo 12. Complete: This jacket is ____ small for me. It isn't ____. (big enough / too) 3. Do Capítulo 11 e 27. Passe para o passado: The hotel is quite expensive, but the staff are really friendly."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Escolher entre very, really, quite, a bit e extremely e usar absolutely só com adjetivos fortes. · Dizer so good e such a good idea sem trocar um pelo outro. · Dizer “gosto muito” sem separar o verbo do objeto e sem usar too como elogio."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você gradua intensidade e quantidade com precisão. Próxima aula: conectores de contraste e causa."
+  "notasParaOAluno": "Você gradua intensidade e quantidade com precisão. Próxima aula: conectores de contraste e causa.",
+  "geradaDoLivro": true
 }

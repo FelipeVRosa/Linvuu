@@ -15,13 +15,120 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa mein, dein, sein, ihr, unser, euer, Ihr com o final certo, escolhe entre sein e ihr sem confundir dono e coisa, e usa dieser, welcher, jeder, alle e os indefinidos man, jemand, niemand, etwas, nichts, alles."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "A foto da família",
+          "contexto": "Camila mostra uma foto no celular. Jonas pergunta quem é quem.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Wer ist das auf dem Foto?",
+              "pt": "— Quem é esse na foto?",
+              "audio": "Wer ist das auf dem Foto?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro.",
+              "pt": "— É a minha família. Este é o meu pai, esta é a minha mãe e este é o meu irmão Pedro.",
+              "audio": "Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Und diese Frau?",
+              "pt": "— E essa mulher?",
+              "audio": "Und diese Frau?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Das ist meine Tante. Ihr Mann ist Arzt.",
+              "pt": "— É a minha tia. O marido dela é médico.",
+              "audio": "Das ist meine Tante. Ihr Mann ist Arzt."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Wo wohnt deine Familie?",
+              "pt": "— Onde mora a sua família?",
+              "audio": "Wo wohnt deine Familie?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo.",
+              "pt": "— Os meus pais moram em Recife. O meu irmão estuda em São Paulo.",
+              "audio": "Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Welches Foto gefällt dir am besten?",
+              "pt": "— De qual foto você mais gosta?",
+              "audio": "Welches Foto gefällt dir am besten?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Dieses Foto. Hier sind alle zusammen.",
+              "pt": "— Desta foto. Aqui estão todos juntos.",
+              "audio": "Dieses Foto. Hier sind alle zusammen."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Meine Familie wohnt auch weit weg.",
+              "pt": "— A minha família também mora longe.",
+              "audio": "Meine Familie wohnt auch weit weg."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 4 frases com verbos regulares no presente."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Outra diferença: o alemão não usa artigo antes do possessivo. “O meu pai” é mein Vater, nunca der mein Vater. PASSO 2: o dono escolhe a raiz. A coisa possuída escolhe o final.",
+          "comparacao": "O português diz “seu” e “sua” para tudo: “seu pai” pode ser o pai dele, dela, de você ou deles. O possessivo concorda só com a coisa possuída. O alemão concorda com duas coisas.",
+          "tabela": [
+            {
+              "portugues": "o pai dele",
+              "ingles": "sein Vater",
+              "evite": "Tom"
+            },
+            {
+              "portugues": "o pai dela",
+              "ingles": "ihr Vater",
+              "evite": "Lena"
+            },
+            {
+              "portugues": "a mãe dele",
+              "ingles": "seine Mutter",
+              "evite": "Tom"
+            },
+            {
+              "portugues": "a mãe dela",
+              "ingles": "ihre Mutter",
+              "evite": "Lena"
+            },
+            {
+              "portugues": "o seu pai (tu)",
+              "ingles": "dein Vater",
+              "evite": "você, amigo"
+            },
+            {
+              "portugues": "o seu pai (formal)",
+              "ingles": "Ihr Vater",
+              "evite": "o senhor"
+            },
+            {
+              "portugues": "o pai de vocês",
+              "ingles": "euer Vater",
+              "evite": "vocês"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 12,
+          "min": 8,
           "itens": [
             {
               "ru": "die Familie",
@@ -111,7 +218,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Haben e o objeto direto",
           "explicacao": "«Haben» (ter) é irregular. O objeto direto de «haben» vai para o acusativo. No masculino singular, «ein» vira «einen» e «kein» vira «keinen»; no feminino, no neutro e no plural nada muda: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe ein Kind. Ich habe keine Kinder».",
           "comparacao": "em português o objeto direto não muda de forma. Em alemão, o masculino muda: «ein Bruder» (quem é) vira «einen Bruder» (o que se tem).",
@@ -197,8 +304,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe keine Kinder.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 4 frases com verbos regulares no presente."
         }
       ]
     },
@@ -208,13 +320,38 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «haben» de memória."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe os finais de mein. PASSO 2: Agora observe o dono. PASSO 3: Tom und seine Mutter. Lena und ihr Vater. PASSO 4: Camila und ihr Bruder. PASSO 5: Perguntas: PASSO 6: Os finais de mein lembram quais palavras que você já conhece? PASSO 7: O que decide entre sein e ihr? PASSO 8: O que decide entre seine e sein?",
+          "tabela": [
+            {
+              "c1": "Nominativo",
+              "c2": "Das ist mein Bruder.",
+              "c3": "Das ist meine Schwester.",
+              "c4": "Das ist mein Kind.",
+              "c5": "Das sind meine Eltern."
+            },
+            {
+              "c1": "Acusativo",
+              "c2": "Ich sehe meinen Bruder.",
+              "c3": "Ich sehe meine Schwester.",
+              "c4": "Ich sehe mein Kind.",
+              "c5": "Ich sehe meine Eltern."
+            },
+            {
+              "c1": "Dativo",
+              "c2": "Ich helfe meinem Bruder.",
+              "c3": "Ich helfe meiner Schwester.",
+              "c4": "Ich helfe meinem Kind.",
+              "c5": "Ich helfe meinen Eltern."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "alt",
@@ -276,7 +413,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Mein, dein, sein...: os possessivos",
           "explicacao": "Os possessivos concordam com a COISA possuída (gênero e número) e não com o dono: «mein Vater», «meine Mutter», «mein Kind», «meine Eltern». Eles têm as terminações de «ein»: sem terminação no masculino e no neutro, -e no feminino e no plural. «Sein» é «dele» e «ihr» é «dela» (e também «deles»); «Ihr», com maiúscula, é o «seu» formal. Atenção: «unser» e «euer» perdem o -e- antes da terminação: unsere, eure.",
           "tabela": [
@@ -339,8 +476,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga: «Das ist mein Vater. Das ist meine Mutter. Das sind meine Eltern. Mein Bruder ist jung.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva as 6 formas de «haben» de memória."
         }
       ]
     },
@@ -350,13 +492,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os possessivos de «ich», «du» e «wir» com «Vater» e «Mutter»."
-        },
-        {
           "tipo": "palavras",
-          "min": 11,
+          "min": 8,
           "itens": [
             {
               "ru": "null",
@@ -439,7 +576,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Números de 11 a 20 e a idade",
           "explicacao": "De 13 a 19 os números se formam com a base + «-zehn»: dreizehn, vierzehn, fünfzehn... Atenção: 16 = sechzehn (perde o -s) e 17 = siebzehn (perde o -en). 11 (elf) e 12 (zwölf) são especiais; 20 é zwanzig. Para dizer a idade: «Ich bin zwanzig Jahre alt» ou só «Ich bin zwanzig». Pergunta: «Wie alt bist du?».",
           "exemplos": [
@@ -498,7 +635,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 6,
+          "min": 4,
           "titulo": "Wie alt bist du? / Quantos anos você tem?",
           "contexto": "Dois colegas de curso conversam.",
           "linhas": [
@@ -539,6 +676,260 @@
               "audio": "Mein Bruder ist siebzehn und meine Schwester ist zwölf."
             }
           ]
+        },
+        {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Das ist mein Bruder.",
+              "translit": "",
+              "pt": "Este é meu irmão.",
+              "en": "",
+              "audio": "Das ist mein Bruder."
+            },
+            {
+              "ru": "Wie ist Ihr Name? / Mein Name ist …",
+              "translit": "",
+              "pt": "Qual é o seu nome? / Meu nome é …",
+              "en": "",
+              "audio": "Wie ist Ihr Name? / Mein Name ist …"
+            },
+            {
+              "ru": "Meine Eltern wohnen in …",
+              "translit": "",
+              "pt": "Meus pais moram em …",
+              "en": "",
+              "audio": "Meine Eltern wohnen in …"
+            },
+            {
+              "ru": "Welches Buch gefällt dir?",
+              "translit": "",
+              "pt": "De qual livro você gosta?",
+              "en": "",
+              "audio": "Welches Buch gefällt dir?"
+            },
+            {
+              "ru": "Dieses hier, bitte.",
+              "translit": "",
+              "pt": "Este aqui, por favor.",
+              "en": "",
+              "audio": "Dieses hier, bitte."
+            },
+            {
+              "ru": "Jeden Tag lerne ich Deutsch.",
+              "translit": "",
+              "pt": "Todo dia estudo alemão.",
+              "en": "",
+              "audio": "Jeden Tag lerne ich Deutsch."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist ___ Bruder.",
+              "opcoes": [
+                "mein",
+                "meine"
+              ],
+              "gabarito": "mein",
+              "explicacao": "Veja a chave comentada no livro: mein (masculino)",
+              "id": "de-005-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Tom und ___ Mutter.",
+              "opcoes": [
+                "sein",
+                "seine",
+                "ihre"
+              ],
+              "gabarito": "seine",
+              "explicacao": "Veja a chave comentada no livro: seine (dono Tom, coisa feminina)",
+              "id": "de-005-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lena und ___ Vater.",
+              "opcoes": [
+                "sein",
+                "ihr",
+                "ihre"
+              ],
+              "gabarito": "ihr",
+              "explicacao": "Veja a chave comentada no livro: ihr (dona Lena, coisa masculina)",
+              "id": "de-005-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Camila und ___ Bruder.",
+              "opcoes": [
+                "ihr",
+                "ihre"
+              ],
+              "gabarito": "ihr",
+              "explicacao": "Veja a chave comentada no livro: ihr (dona Camila)",
+              "id": "de-005-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich sehe ___ Bruder.",
+              "opcoes": [
+                "mein",
+                "meinen"
+              ],
+              "gabarito": "meinen",
+              "explicacao": "Veja a chave comentada no livro: meinen (acusativo masculino)",
+              "id": "de-005-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich helfe ___ Mutter.",
+              "opcoes": [
+                "meine",
+                "meiner"
+              ],
+              "gabarito": "meiner",
+              "explicacao": "Veja a chave comentada no livro: meiner (dativo feminino)",
+              "id": "de-005-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ Frau ist meine Tante.",
+              "opcoes": [
+                "Dieser",
+                "Diese"
+              ],
+              "gabarito": "Diese",
+              "explicacao": "Veja a chave comentada no livro: Diese (feminino)",
+              "id": "de-005-L-107"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Hast du ein Auto (n.)? — Nein, ich habe ___.",
+              "opcoes": [
+                "kein",
+                "keins"
+              ],
+              "gabarito": "keins",
+              "explicacao": "Veja a chave comentada no livro: keins (pronome substituto neutro sem substantivo)",
+              "id": "de-005-L-108"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → ___ Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+              "respostaEsperada": "mein",
+              "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+              "id": "de-005-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → ___ Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+              "respostaEsperada": "deine",
+              "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+              "id": "de-005-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → ___ Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+              "respostaEsperada": "unser",
+              "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+              "id": "de-005-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → ___ Kinder (pl.) · Sie → Ihr Name (m.)",
+              "respostaEsperada": "eure",
+              "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+              "id": "de-005-L-201d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → ___ Name (m.)",
+              "respostaEsperada": "Ihr",
+              "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+              "id": "de-005-L-201e"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Decline o possessivo no caso exigido pelo verbo: Ich suche ___ Schlüssel (mein, m., Acusativo).",
+              "respostaEsperada": "meinen",
+              "explicacao": "Veja a chave comentada no livro: meinen Schlüssel",
+              "id": "de-005-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Decline o possessivo no caso exigido pelo verbo: Ich gebe ___ Mutter (mein, f., Dativo) ein Buch.",
+              "respostaEsperada": "meiner",
+              "explicacao": "Veja a chave comentada no livro: meiner Mutter",
+              "id": "de-005-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Decline o possessivo no caso exigido pelo verbo: Wir besuchen ___ Eltern (unser, pl., Acusativo).",
+              "respostaEsperada": "unsere",
+              "explicacao": "Veja a chave comentada no livro: unsere Eltern",
+              "id": "de-005-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Decline o possessivo no caso exigido pelo verbo: Er hilft ___ Kind (sein, n., Dativo).",
+              "respostaEsperada": "seinem",
+              "explicacao": "Veja a chave comentada no livro: seinem Kind",
+              "id": "de-005-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+              "respostaEsperada": "Dieser",
+              "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+              "id": "de-005-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe ___ Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+              "respostaEsperada": "diesen",
+              "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+              "id": "de-005-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). ___ Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+              "respostaEsperada": "Diese",
+              "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+              "id": "de-005-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe ___ Mann (Dat.).",
+              "respostaEsperada": "diesem",
+              "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+              "id": "de-005-L-206d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Ist das dein Schlüssel (m.)? — Ja, das ist ___! / — Hast du ein Fahrrad (n.)? — Nein, ich habe keins!",
+              "respostaEsperada": "meiner",
+              "explicacao": "Veja a chave comentada no livro: meiner / keins",
+              "id": "de-005-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Ist das dein Schlüssel (m.)? — Ja, das ist meiner! / — Hast du ein Fahrrad (n.)? — Nein, ich habe ___!",
+              "respostaEsperada": "keins",
+              "explicacao": "Veja a chave comentada no livro: meiner / keins",
+              "id": "de-005-L-207b"
+            }
+          ]
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva os possessivos de «ich», «du» e «wir» com «Vater» e «Mutter»."
         }
       ]
     },
@@ -548,34 +939,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva sua idade e a de 3 pessoas da sua família, por extenso, em alemão."
-        },
-        {
-          "tipo": "texto",
-          "min": 5,
-          "titulo": "Meine Familie / Minha família",
-          "ru": "Das ist meine Familie. Ich habe einen Bruder und eine Schwester. Mein Bruder heißt Max. Er ist zwölf Jahre alt. Meine Schwester heißt Lisa. Sie ist fünfzehn. Wir haben keinen Hund, aber eine Katze.",
-          "pt": "Esta é a minha família. Tenho um irmão e uma irmã. Meu irmão se chama Max. Ele tem doze anos. Minha irmã se chama Lisa. Ela tem quinze. Não temos um cachorro, mas temos um gato.",
-          "perguntas": [
-            {
-              "pergunta": "Wie heißt der Bruder?",
-              "resposta": "Max"
-            },
-            {
-              "pergunta": "Wie alt ist Lisa?",
-              "resposta": "Fünfzehn"
-            },
-            {
-              "pergunta": "Haben sie einen Hund?",
-              "resposta": "Nein, sie haben eine Katze"
-            }
-          ]
-        },
-        {
           "tipo": "exercicios",
-          "min": 15,
+          "min": 13,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -751,12 +1116,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se apresentando a sua família: quem tem, os nomes e as idades."
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva seis frases sobre a sua família usando pelo menos quatro possessivos diferentes (mein, meine, sein, ihr, unser).",
+              "respostaEsperada": "Mein Vater heißt Carlos und meine Mutter heißt Ana. Ich habe eine Schwester: ihr Mann arbeitet in Curitiba. Ich habe auch einen Bruder: seine Frau ist Ärztin. Unsere Großeltern wohnen in Minas Gerais.",
+              "id": "de-005-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três perguntas com Welcher / Welche / Welches e três frases com jeder ou alle.",
+              "respostaEsperada": "Welcher Kurs beginnt heute? / Welche Tasche kaufst du? / Welches Buch liest du? / Jeden Tag trinke ich Kaffee. Jede Woche rufe ich meine Mutter an. Alle Freunde kommen heute Abend.",
+              "id": "de-005-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um mini-diálogo de cinco falas mostrando uma foto de família no celular, no estilo da Cena.",
+              "respostaEsperada": "Modelo de diálogo: — Wer ist das auf dem Foto?— Das ist meine Schwester Julia und das ist ihr Mann.— Und wer ist dieses Kind?— Das ist ihr Sohn Leo. Er ist vier Jahre alt.— Ein sehr schönes Foto! Eure Familie ist sehr sympathisch.",
+              "id": "de-005-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist der mein Bruder.",
+              "respostaEsperada": "Das ist mein Bruder.",
+              "explicacao": "Das ist mein Bruder. (sem artigo)",
+              "id": "de-005-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Tom und sein Mutter.",
+              "respostaEsperada": "Tom und seine Mutter.",
+              "explicacao": "Tom und seine Mutter. (Mutter é feminino)",
+              "id": "de-005-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Lena und seine Vater.",
+              "respostaEsperada": "Lena und ihr Vater.",
+              "explicacao": "Lena und ihr Vater. (dona Lena)",
+              "id": "de-005-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich suche mein Schlüssel.",
+              "respostaEsperada": "Ich suche meinen Schlüssel.",
+              "explicacao": "Ich suche meinen Schlüssel. (acusativo masculino)",
+              "id": "de-005-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich helfe mein Mutter.",
+              "respostaEsperada": "Ich helfe meiner Mutter.",
+              "explicacao": "Ich helfe meiner Mutter. (dativo feminino)",
+              "id": "de-005-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wir besuchen unser Eltern.",
+              "respostaEsperada": "Wir besuchen unsere Eltern.",
+              "explicacao": "Wir besuchen unsere Eltern. (plural)",
+              "id": "de-005-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Das ist meine Tante.",
+              "respostaEsperada": "OK",
+              "id": "de-005-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é trocar dono e coisa (Lena und sein Vater em vez de ihr Vater) ou colocar artigo antes do possessivo (der mein Bruder, hábito do português “o meu irmão” que é proibido em alemão). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Retorno. Do capítulo 10. Complete: Ich wohne bei ____ Eltern (mein). Ich fahre mit ____ Bruder (mein). Das ist für ____ Mutter (mein). Do capítulo 9. Complete: Ich helfe ____ (er). Das Buch gehört ____ (sie, feminino). Do capítulo 8. Complete: Ich liebe ____ Vater (mein)."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Apresento minha família com mein/meine e distingo sein (dele) de ihr (dela) pelo dono. · Pergunto Welcher/Welche/Welches …? e respondo Das ist meiner / keins."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala da sua família, da idade e do que tem. Próxima aula: números, horas e dias."
+  "notasParaOAluno": "Você fala da sua família, da idade e do que tem. Próxima aula: números, horas e dias.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,106 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Leia em voz alta o alfabeto e as combinações ei, ie, eu, au, sch, ch, sp, st."
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você faz perguntas de sim ou não e perguntas com wer, was, wo, woher, wohin, wann e wie, e responde com frases completas."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Primeiro dia no curso",
+          "contexto": "Camila está na sala de aula. A professora faz a chamada. Ao lado, senta Jonas.",
+          "linhas": [
+            {
+              "personagem": "Lehrerin",
+              "ru": "— Guten Morgen! Wer ist Camila?",
+              "pt": "— Bom dia! Quem é Camila?",
+              "audio": "Guten Morgen! Wer ist Camila?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Das bin ich.",
+              "pt": "— Sou eu.",
+              "audio": "Das bin ich."
+            },
+            {
+              "personagem": "Lehrerin",
+              "ru": "— Woher kommen Sie, Camila?",
+              "pt": "— De onde a senhora vem, Camila?",
+              "audio": "Woher kommen Sie, Camila?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Aus Brasilien. Ich wohne jetzt in München.",
+              "pt": "— Do Brasil. Agora moro em Munique.",
+              "audio": "Aus Brasilien. Ich wohne jetzt in München."
+            },
+            {
+              "personagem": "Lehrerin",
+              "ru": "— Sprechen Sie Englisch?",
+              "pt": "— A senhora fala inglês?",
+              "audio": "Sprechen Sie Englisch?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, ein bisschen.",
+              "pt": "— Sim, um pouquinho.",
+              "audio": "Ja, ein bisschen."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Hallo, ich bin Jonas. Wo wohnst du?",
+              "pt": "— Oi, eu sou o Jonas. Onde você mora?",
+              "audio": "Hallo, ich bin Jonas. Wo wohnst du?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich wohne in Schwabing.",
+              "pt": "— Moro em Schwabing.",
+              "audio": "Ich wohne in Schwabing."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Cool! Ich auch. Trinken wir nachher Kaffee?",
+              "pt": "— Legal! Eu também. Vamos tomar um café depois?",
+              "audio": "Cool! Ich auch. Trinken wir nachher Kaffee?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Gern!",
+              "pt": "— Vamos!",
+              "audio": "Gern!"
+            }
+          ]
         },
         {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 5,
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Há uma segunda armadilha. O português tem “onde” para três ideias. O alemão separa: PASSO 2: wo parado, wohin com movimento para lá, woher com movimento de lá.",
+          "comparacao": "Em português, uma pergunta de sim ou não pode ser só uma afirmação com a voz subindo: “Você mora em Munique?” Em alemão, o verbo vai para a primeira posição: Wohnst du in München?",
+          "tabela": [
+            {
+              "portugues": "onde (lugar)",
+              "ingles": "wo",
+              "evite": "Wo wohnst du?"
+            },
+            {
+              "portugues": "aonde, para onde",
+              "ingles": "wohin",
+              "evite": "Wohin gehst du?"
+            },
+            {
+              "portugues": "de onde",
+              "ingles": "woher",
+              "evite": "Woher kommst du?"
+            }
+          ],
+          "tag": "Armadilha"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 10,
           "titulo": "Tudo o que você já sabe, em uma tabela",
           "explicacao": "Esta tabela resume as aulas 1 a 9 em uma linha por ponto. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.",
           "tabela": [
@@ -125,8 +218,13 @@
         },
         {
           "tipo": "producao",
-          "min": 10,
+          "min": 7,
           "enunciado": "Apresente-se em 8 frases, em voz alta: nome, origem, idade, família, onde mora, o que come, a hora em que se levanta e como vai ao trabalho."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Leia em voz alta o alfabeto e as combinações ei, ie, eu, au, sch, ch, sp, st."
         }
       ]
     },
@@ -136,111 +234,43 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Releia o texto e o diálogo abaixo em voz alta antes de começar."
-        },
-        {
-          "tipo": "texto",
-          "min": 10,
-          "titulo": "Ana in Berlin / Ana em Berlim",
-          "ru": "Ich heiße Ana. Ich komme aus Brasilien und wohne jetzt in Berlin. Ich bin fünfundzwanzig Jahre alt. Ich habe einen Bruder und eine Schwester. Morgens stehe ich um sieben Uhr auf und frühstücke: Ich esse ein Brot mit Käse und trinke einen Kaffee. Um acht Uhr fahre ich zur Arbeit. Am Abend gehe ich oft ins Kino. Am Wochenende lerne ich Deutsch.",
-          "pt": "Eu me chamo Ana. Venho do Brasil e agora moro em Berlim. Tenho vinte e cinco anos. Tenho um irmão e uma irmã. De manhã me levanto às sete e tomo café da manhã: como um pão com queijo e bebo um café. Às oito vou para o trabalho. À noite vou com frequência ao cinema. No fim de semana estudo alemão.",
-          "perguntas": [
+          "tipo": "gramatica",
+          "min": 12,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare as perguntas e as respostas. PASSO 2: Perguntas: PASSO 3: Onde está o verbo nas perguntas sem palavra interrogativa? PASSO 4: Onde está o verbo nas perguntas com palavra interrogativa? Na resposta, o sujeito pode sumir?",
+          "tabela": [
             {
-              "pergunta": "Woher kommt Ana?",
-              "resposta": "Aus Brasilien"
+              "c1": "Wohnst du in Berlin?",
+              "c2": "Ja, ich wohne in Berlin."
             },
             {
-              "pergunta": "Wie alt ist Ana?",
-              "resposta": "Fünfundzwanzig"
+              "c1": "Wo wohnst du?",
+              "c2": "Ich wohne in Berlin."
             },
             {
-              "pergunta": "Was trinkt Ana morgens?",
-              "resposta": "Einen Kaffee"
+              "c1": "Kommt Tom aus Irland?",
+              "c2": "Ja, er kommt aus Irland."
             },
             {
-              "pergunta": "Wann fährt Ana zur Arbeit?",
-              "resposta": "Um acht Uhr"
+              "c1": "Woher kommt Tom?",
+              "c2": "Er kommt aus Irland."
             },
             {
-              "pergunta": "Wohin geht Ana am Abend oft?",
-              "resposta": "Ins Kino"
+              "c1": "Lernt ihr Deutsch?",
+              "c2": "Nein, wir lernen Englisch."
             }
-          ]
-        },
-        {
-          "tipo": "dialogo",
-          "min": 10,
-          "titulo": "Im Café / No café",
-          "contexto": "Dois amigos tomam um café.",
-          "linhas": [
-            {
-              "personagem": "Lea",
-              "ru": "— Hallo, Paul! Wie geht’s?",
-              "pt": "— Oi, Paul! Como vai?",
-              "audio": "Hallo, Paul! Wie geht’s?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Gut, danke! Und dir?",
-              "pt": "— Bem, obrigado! E você?",
-              "audio": "Gut, danke! Und dir?"
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Auch gut. Was möchtest du trinken?",
-              "pt": "— Também bem. O que você quer beber?",
-              "audio": "Auch gut. Was möchtest du trinken?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Ich möchte einen Kaffee. Und du?",
-              "pt": "— Eu quero um café. E você?",
-              "audio": "Ich möchte einen Kaffee. Und du?"
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Ich nehme einen Tee und ein Stück Kuchen.",
-              "pt": "— Eu pego um chá e um pedaço de bolo.",
-              "audio": "Ich nehme einen Tee und ein Stück Kuchen."
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Wie spät ist es? Ich arbeite um halb drei.",
-              "pt": "— Que horas são? Eu trabalho às duas e meia.",
-              "audio": "Wie spät ist es? Ich arbeite um halb drei."
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Es ist zehn nach zwei. Du hast noch Zeit.",
-              "pt": "— São duas e dez. Você ainda tem tempo.",
-              "audio": "Es ist zehn nach zwei. Du hast noch Zeit."
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Gut! Am Samstag gehe ich ins Kino. Kommst du mit?",
-              "pt": "— Ótimo! No sábado vou ao cinema. Você vem junto?",
-              "audio": "Gut! Am Samstag gehe ich ins Kino. Kommst du mit?"
-            },
-            {
-              "personagem": "Lea",
-              "ru": "— Ja, gern! Um wie viel Uhr?",
-              "pt": "— Sim, com prazer! A que horas?",
-              "audio": "Ja, gern! Um wie viel Uhr?"
-            },
-            {
-              "personagem": "Paul",
-              "ru": "— Um acht Uhr. Tschüs!",
-              "pt": "— Às oito. Tchau!",
-              "audio": "Um acht Uhr. Tschüs!"
-            }
-          ]
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 9,
           "enunciado": "Responda em voz alta às perguntas do texto e do diálogo, como se fosse você."
+        },
+        {
+          "tipo": "revisao",
+          "min": 9,
+          "enunciado": "Releia o texto e o diálogo abaixo em voz alta antes de começar."
         }
       ]
     },
@@ -250,13 +280,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 3 erros que você já cometeu em alemão e a forma certa."
-        },
-        {
           "tipo": "gramatica",
-          "min": 15,
+          "min": 10,
           "titulo": "Os 10 erros mais comuns de quem fala português",
           "explicacao": "Estes dez erros aparecem com mais frequência em quem fala português. Corrigir só esses já deixa o seu alemão muito mais natural. Leia cada par em voz alta: primeiro o errado (para reconhecer o som estranho), depois o certo.",
           "erros": [
@@ -314,9 +339,198 @@
           "tag": "Revisão"
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Wie heißt du? / Wie heißen Sie?",
+              "translit": "",
+              "pt": "Como você se chama? / Como o senhor se chama?",
+              "en": "",
+              "audio": "Wie heißt du? / Wie heißen Sie?"
+            },
+            {
+              "ru": "Woher kommen Sie?",
+              "translit": "",
+              "pt": "De onde o senhor vem?",
+              "en": "",
+              "audio": "Woher kommen Sie?"
+            },
+            {
+              "ru": "Wo wohnst du?",
+              "translit": "",
+              "pt": "Onde você mora?",
+              "en": "",
+              "audio": "Wo wohnst du?"
+            },
+            {
+              "ru": "Was machst du?",
+              "translit": "",
+              "pt": "O que você faz?",
+              "en": "",
+              "audio": "Was machst du?"
+            },
+            {
+              "ru": "Sprechen Sie Englisch?",
+              "translit": "",
+              "pt": "O senhor fala inglês?",
+              "en": "",
+              "audio": "Sprechen Sie Englisch?"
+            },
+            {
+              "ru": "Was bedeutet das?",
+              "translit": "",
+              "pt": "O que isso significa?",
+              "en": "",
+              "audio": "Was bedeutet das?"
+            },
+            {
+              "ru": "Wie sagt man … auf Deutsch?",
+              "translit": "",
+              "pt": "Como se diz … em alemão?",
+              "en": "",
+              "audio": "Wie sagt man … auf Deutsch?"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ wohnst du?",
+              "opcoes": [
+                "Wo",
+                "Wohin",
+                "Woher"
+              ],
+              "gabarito": "Wo",
+              "explicacao": "Veja a chave comentada no livro: Wo",
+              "id": "de-010-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ gehst du heute?",
+              "opcoes": [
+                "Wo",
+                "Wohin",
+                "Woher"
+              ],
+              "gabarito": "Wohin",
+              "explicacao": "Veja a chave comentada no livro: Wohin",
+              "id": "de-010-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ kommt Tom?",
+              "opcoes": [
+                "Wo",
+                "Wohin",
+                "Woher"
+              ],
+              "gabarito": "Woher",
+              "explicacao": "Veja a chave comentada no livro: Woher",
+              "id": "de-010-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ ist das? (resposta: uma pessoa, Camila)",
+              "opcoes": [
+                "Wer",
+                "Was"
+              ],
+              "gabarito": "Wer",
+              "explicacao": "Veja a chave comentada no livro: Wer (pessoa)",
+              "id": "de-010-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ machst du heute?",
+              "opcoes": [
+                "Wer",
+                "Was"
+              ],
+              "gabarito": "Was",
+              "explicacao": "Veja a chave comentada no livro: Was (coisa/atividade)",
+              "id": "de-010-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual das três é pergunta de sim ou não?",
+              "opcoes": [
+                "Wo wohnst du?",
+                "Wohnst du hier?",
+                "Woher kommt Tom?"
+              ],
+              "gabarito": "Wohnst du hier?",
+              "explicacao": "Veja a chave comentada no livro: (b), o verbo abre a frase",
+              "id": "de-010-L-106"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as perguntas conjugando o verbo: ___ du Deutsch? (lernen) · Wo wohnt Camila? (wohnen)",
+              "respostaEsperada": "Lernst",
+              "explicacao": "Veja a chave comentada no livro: Lernst, wohnt",
+              "id": "de-010-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as perguntas conjugando o verbo: Lernst du Deutsch? (lernen) · Wo ___ Camila? (wohnen)",
+              "respostaEsperada": "wohnt",
+              "explicacao": "Veja a chave comentada no livro: Lernst, wohnt",
+              "id": "de-010-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as perguntas conjugando o verbo: Woher ___ ihr? (kommen) · Wohnen Sie in München? (wohnen)",
+              "respostaEsperada": "kommt",
+              "explicacao": "Veja a chave comentada no livro: kommt, Wohnen",
+              "id": "de-010-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as perguntas conjugando o verbo: Woher kommt ihr? (kommen) · ___ Sie in München? (wohnen)",
+              "respostaEsperada": "Wohnen",
+              "explicacao": "Veja a chave comentada no livro: kommt, Wohnen",
+              "id": "de-010-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tom arbeitet heute. → ___",
+              "respostaEsperada": "Arbeitet Tom heute?",
+              "explicacao": "Veja a chave comentada no livro: Arbeitet Tom heute?",
+              "id": "de-010-L-203a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Du trinkst gern Kaffee. → ___",
+              "respostaEsperada": "Trinkst du gern Kaffee?",
+              "id": "de-010-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Sie wohnen in Berlin. → ___",
+              "respostaEsperada": "Wohnen Sie in Berlin?",
+              "id": "de-010-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Relacione a pergunta com a resposta adequada: (1) Wer ist das? · (2) Was machst du? · (3) Wie alt bist du? · (4) Woher kommst du? · (5) Wo wohnst du? Respostas: (a) In Schwabing. · (b) Ich bin 28 Jahre alt. · (c) Das ist Jonas. · (d) Aus Brasilien. · (e) Ich lerne Deutsch.",
+              "respostaEsperada": "Ligações: 1c, 2e, 3b, 4d, 5a",
+              "id": "de-010-L-206"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 10,
+          "min": 7,
           "enunciado": "Leia cada erro em voz alta e diga a forma certa. Depois grave 5 frases suas, sem nenhum desses erros."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 3 erros que você já cometeu em alemão e a forma certa."
         }
       ]
     },
@@ -326,13 +540,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Releia o mapa de revisão e escolha os 3 pontos em que você ainda erra."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "multiple-choice",
@@ -535,12 +744,91 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se: apresentação completa de 1 minuto, com tudo o que você aprendeu no bloco."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva quatro perguntas para um novo colega usando du: uma com wie, uma com woher, uma com wo e uma com was.",
+              "respostaEsperada": "Wie heißt du? / Woher kommst du? / Wo wohnst du jetzt? / Was machst du hier in München?",
+              "id": "de-010-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva as suas próprias respostas completas para essas quatro perguntas.",
+              "respostaEsperada": "Ich heiße Lucas. / Ich komme aus Brasilien. / Ich wohne jetzt in München. / Ich lerne Deutsch und arbeite hier.",
+              "id": "de-010-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um diálogo de seis falas entre você e um colega no primeiro dia de curso de alemão.",
+              "respostaEsperada": "Modelo de diálogo: — Hallo! Ich bin Lucas. Wie heißt du?— Hallo Lucas! Ich heiße Anna. Woher kommst du?— Ich komme aus Brasilien. Und du, kommst du aus Deutschland?— Nein, ich komme aus Österreich, aber ich wohne jetzt hier.— Cool! Trinken wir nachher zusammen Kaffee?— Ja, sehr gern!",
+              "id": "de-010-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wo du wohnst?",
+              "respostaEsperada": "Wo wohnst du?",
+              "explicacao": "Wo wohnst du?",
+              "id": "de-010-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wohnen du in Berlin?",
+              "respostaEsperada": "Wohnst du in Berlin?",
+              "explicacao": "Wohnst du in Berlin? (o verbo concorda com du)",
+              "id": "de-010-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Woher du kommst?",
+              "respostaEsperada": "Woher kommst du?",
+              "explicacao": "Woher kommst du?",
+              "id": "de-010-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wo gehst du heute?",
+              "respostaEsperada": "Wohin gehst du heute?",
+              "explicacao": "Wohin gehst du heute?",
+              "id": "de-010-L-c04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Wer wohnt hier?",
+              "respostaEsperada": "OK",
+              "id": "de-010-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Was ist Tom?",
+              "respostaEsperada": "Wer ist Tom?",
+              "explicacao": "Wer ist Tom?",
+              "id": "de-010-L-c06"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é usar wo para tudo (esquecendo que destino pede wohin e origem pede woher) ou deixar o sujeito antes do verbo na pergunta (Wo du wohnst? em vez de Wo wohnst du?). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 3. Reordene em frases afirmativas, começando pela primeira palavra: (a) Heute / lernen / wir / Deutsch. (b) Dann / Camila / trinkt / Kaffee. (c) Hier / Tom / wohnt. Do capítulo 2. Escreva a forma certa: du (wohnen), er (kommen), ihr (lernen), Sie (arbeiten). Do capítulo 1. Diga em voz alta: Wo, Woher, Warum, Wer, Wie. Qual é o som do w? E do ie?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Pergunto nome, origem, moradia e atividade. · Escolho entre wo, wohin e woher. · Transformo afirmações em perguntas de sim ou não."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fechou o primeiro bloco do alemão: 10 aulas, 20 horas. Revise por alguns dias antes de seguir para os casos."
+  "notasParaOAluno": "Você fechou o primeiro bloco do alemão: 10 aulas, 20 horas. Revise por alguns dias antes de seguir para os casos.",
+  "geradaDoLivro": true
 }

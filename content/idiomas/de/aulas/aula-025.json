@@ -15,11 +15,6 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases com objeto direto (acusativo): «Ich esse den Käse…»."
-        },
-        {
           "tipo": "palavras",
           "min": 8,
           "itens": [
@@ -131,6 +126,11 @@
           "tipo": "producao",
           "min": 3,
           "enunciado": "Diga: «Der Mann liest. Ich sehe den Mann. Ich helfe dem Mann. Das ist das Auto des Mannes.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva 4 frases com objeto direto (acusativo): «Ich esse den Käse…»."
         }
       ]
     },
@@ -139,11 +139,6 @@
       "titulo": "O quadro dos artigos",
       "duracaoMin": 30,
       "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva de memória o artigo definido no nominativo e no acusativo, nos quatro gêneros."
-        },
         {
           "tipo": "palavras",
           "min": 8,
@@ -311,6 +306,11 @@
           "tipo": "producao",
           "min": 3,
           "enunciado": "Leia o quadro dos artigos em voz alta, por coluna: «der, den, dem, des; die, die, der, der; das, das, dem, des»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva de memória o artigo definido no nominativo e no acusativo, nos quatro gêneros."
         }
       ]
     },
@@ -319,11 +319,6 @@
       "titulo": "Os pronomes e o diálogo",
       "duracaoMin": 30,
       "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os pronomes pessoais no nominativo: eu, tu, ele, ela, nós, vós, eles."
-        },
         {
           "tipo": "gramatica",
           "min": 12,
@@ -463,6 +458,11 @@
           "tipo": "producao",
           "min": 3,
           "enunciado": "Diga: «Das Handy gehört mir. Ich gebe ihr den Schlüssel. Ich gebe es meinem Bruder.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva os pronomes pessoais no nominativo: eu, tu, ele, ela, nós, vós, eles."
         }
       ]
     },
@@ -472,13 +472,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases, uma em cada caso: nominativo, acusativo, dativo e genitivo."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 13,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -681,11 +676,62 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Grave-se explicando, com exemplos seus, o que é nominativo, acusativo, dativo e genitivo."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 4 frases, uma em cada caso: nominativo, acusativo, dativo e genitivo."
+        },
+        {
+          "tipo": "exercicios",
+          "min": 6,
+          "itens": [
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe ein Hund.",
+              "respostaEsperada": "Ich habe einen Hund.",
+              "explicacao": "Ich habe einen Hund.",
+              "id": "de-025-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist einen Tisch.",
+              "respostaEsperada": "Das ist ein Tisch.",
+              "explicacao": "Das ist ein Tisch. (depois de sein, nominativo)",
+              "id": "de-025-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er hat keine Auto.",
+              "respostaEsperada": "Er hat kein Auto.",
+              "explicacao": "Er hat kein Auto. (Auto é neutro.)",
+              "id": "de-025-L-c06"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 2,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é esquecer o -en do masculino no objeto direto (Ich habe ein Hund em vez de einen Hund) ou colocar acusativo depois do verbo sein (Das ist einen Tisch em vez de ein Tisch). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 7. Complete: Der Tisch kostet ____ Euro (20). Die Lampe kostet ____ Euro (8). Der Kurs beginnt um ____ Uhr (4h). Do capítulo 6. Negue: Ich kaufe einen Tisch. Ich suche eine Lampe. Ich habe ein Auto. Do capítulo 5. Diga o artigo: ____ Schrank, ____ Lampe, ____ Fenster, ____ Stühle."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Digo Ich kaufe den Tisch e Ich habe einen Hund sem pensar. · Troco um objeto masculino por ihn e pergunto por uma pessoa-objeto com Wen."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você tem o quadro dos quatro casos. Próximas aulas: o dativo, em passos pequenos."
+  "notasParaOAluno": "Você tem o quadro dos quatro casos. Próximas aulas: o dativo, em passos pequenos.",
+  "geradaDoLivro": true
 }

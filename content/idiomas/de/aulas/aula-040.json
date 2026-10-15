@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você fala do futuro com o presente + palavra de tempo, usa werden + infinitivo para prometer, prever e supor, usa werden no sentido de “tornar-se” e pergunta Was hast du vor?"
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Planos para o verão",
+          "contexto": "Jonas pergunta a Camila o que ela fará nas férias.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Camila, was machst du im Sommer?",
+              "pt": "— Camila, o que você vai fazer no verão?",
+              "audio": "Camila, was machst du im Sommer?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich fliege nach Brasilien. Ich besuche meine Familie in Recife.",
+              "pt": "— Vou voar para o Brasil. Vou visitar a minha família em Recife.",
+              "audio": "Ich fliege nach Brasilien. Ich besuche meine Familie in Recife."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Wie lange wirst du bleiben?",
+              "pt": "— Quanto tempo você vai ficar?",
+              "audio": "Wie lange wirst du bleiben?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Vier Wochen. Ich werde meine Oma besuchen und viel schlafen. Pedro holt mich am Flughafen ab.",
+              "pt": "— Quatro semanas. Vou visitar a minha avó e dormir bastante. O Pedro me busca no aeroporto.",
+              "audio": "Vier Wochen. Ich werde meine Oma besuchen und viel schlafen. Pedro holt mich am Flughafen ab."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Wow! Und was wirst du in Recife essen?",
+              "pt": "— Uau! E o que você vai comer em Recife?",
+              "audio": "Wow! Und was wirst du in Recife essen?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Tapioca, natürlich! Und du? Was hast du vor?",
+              "pt": "— Tapioca, claro! E você? O que você tem planejado?",
+              "audio": "Tapioca, natürlich! Und du? Was hast du vor?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ich werde in München bleiben und arbeiten. Aber im Herbst fahre ich nach Wien.",
+              "pt": "— Vou ficar em Munique e trabalhar. Mas no outono vou para Viena.",
+              "audio": "Ich werde in München bleiben und arbeiten. Aber im Herbst fahre ich nach Wien."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Das wird bestimmt schön!",
+              "pt": "— Com certeza vai ser lindo!",
+              "audio": "Das wird bestimmt schön!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 8 pedidos e conselhos educados com würde, hätte, wäre e könnte."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Morgen fahre ich é o futuro de todos os dias. Werden + infinitivo no fim para promessa, previsão e suposição. Gehen + infinitivo não é futuro.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Amanhã eu vou para Berlim.",
+              "ingles": "Morgen fahre ich nach Berlin."
+            },
+            {
+              "portugues": "Eu vou ligar para você. (promessa)",
+              "ingles": "Ich werde dich anrufen."
+            },
+            {
+              "portugues": "Vai ficar frio.",
+              "ingles": "Es wird kalt."
+            },
+            {
+              "portugues": "Ele vai ser médico.",
+              "ingles": "Er wird Arzt."
+            },
+            {
+              "portugues": "Vai ser lindo!",
+              "ingles": "Das wird bestimmt schön!"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "werden",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "Werden: tornar-se e futuro, passo a passo",
           "explicacao": "PASSO 1: «werden» é irregular: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. PASSO 2: como VERBO PRINCIPAL, «werden» significa TORNAR-SE, FICAR: «Es wird kalt» (está ficando frio), «Ich werde Lehrer» (vou ser professor), «Er wird müde.» PASSO 3: como AUXILIAR do futuro, «werden» + infinitivo no FIM forma o FUTUR I: «Ich werde morgen arbeiten.» PASSO 4: a frase continua emoldurada: «werden» na 2ª posição e o infinitivo no fim. PASSO 5: pergunta: «Wirst du kommen?»; negação: «Ich werde nicht kommen.» PASSO 6: com verbo separável, o infinitivo inteiro vai ao fim: «Ich werde früh aufstehen.»",
           "comparacao": "o português usa o futuro simples («eu trabalharei») ou «vou + infinitivo» («vou trabalhar»). O alemão usa «werden + infinitivo», parecido com o segundo.",
@@ -135,8 +221,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga 6 frases com «werden»: «Es wird kalt. Ich werde Lehrer. Ich werde morgen … arbeiten.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 8 pedidos e conselhos educados com würde, hätte, wäre e könnte."
         }
       ]
     },
@@ -146,13 +237,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «werden» e 4 frases no Futur I."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as frases. PASSO 2: Perguntas: PASSO 3: Na frase 1, há werden? O que dá a ideia de futuro? PASSO 4: Na frase 2, onde estão werde e bleiben? Compare com o capítulo 15. PASSO 5: Na frase 3, abholen aparece inteiro ou separado? Compare com o capítulo 17. PASSO 6: Nas frases 5 e 6, existe um infinitivo no fim? O que wird quer dizer ali? PASSO 7: Compare ich werde e du wirst. Que vogal mudou? Lembra do capítulo 16?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "wahrscheinlich",
@@ -214,7 +308,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Quando usar o Futur I",
           "explicacao": "PASSO 1: na CONVERSA, o alemão usa muitas vezes o PRESENTE com um marcador de tempo para o futuro: «Morgen fahre ich nach Berlin.» Isso é totalmente natural. PASSO 2: o «Futur I» aparece para: (a) PROMESSAS e INTENÇÕES firmes: «Ich werde dir helfen.»; (b) PREVISÕES: «Es wird morgen regnen.»; (c) SUPOSIÇÕES sobre o presente, com «wohl», «wahrscheinlich»: «Er wird wohl krank sein» (ele deve estar doente); (d) quando faltar um marcador de tempo e o sentido pedir: «Wir werden sehen» (veremos). PASSO 3: se há marcador de tempo (morgen, nächste Woche, bald), use o presente. PASSO 4: o Futur I combina com «bestimmt», «wahrscheinlich», «wohl».",
           "tabela": [
@@ -255,8 +349,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Faça uma promessa, uma previsão e uma suposição em voz alta: «Ich werde … Morgen wird es … Er wird wohl …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva as 6 formas de «werden» e 4 frases no Futur I."
         }
       ]
     },
@@ -266,13 +365,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 6 frases sobre o seu futuro: três no presente com marcador de tempo e três no Futur I."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Falar de planos",
           "explicacao": "PASSO 1: para planos, use o presente com marcador de tempo: «Nächste Woche fange ich einen Sprachkurs an.» PASSO 2: «wollen» expressa a vontade: «Ich will Arzt werden.» PASSO 3: «werden» confirma o resultado esperado: «Ich werde Arzt.» PASSO 4: «hoffen» e «glauben» ajudam: «Ich hoffe, dass ich eine Stelle finde.» PASSO 5: use «bald», «später», «irgendwann» para suavizar o prazo.",
           "tabela": [
@@ -297,7 +391,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Pläne für die Zukunft / Planos para o futuro",
           "contexto": "Dois amigos falam do que vão fazer depois do curso.",
           "linhas": [
@@ -358,9 +452,254 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Morgen fahre ich nach Berlin.",
+              "translit": "",
+              "pt": "Amanhã vou para Berlim.",
+              "en": "",
+              "audio": "Morgen fahre ich nach Berlin."
+            },
+            {
+              "ru": "Was hast du vor?",
+              "translit": "",
+              "pt": "O que você vai fazer?",
+              "en": "",
+              "audio": "Was hast du vor?"
+            },
+            {
+              "ru": "Ich werde dich anrufen.",
+              "translit": "",
+              "pt": "Eu vou ligar para você.",
+              "en": "",
+              "audio": "Ich werde dich anrufen."
+            },
+            {
+              "ru": "Es wird kalt.",
+              "translit": "",
+              "pt": "Está ficando frio.",
+              "en": "",
+              "audio": "Es wird kalt."
+            },
+            {
+              "ru": "Er wird Arzt.",
+              "translit": "",
+              "pt": "Ele vai ser médico.",
+              "en": "",
+              "audio": "Er wird Arzt."
+            },
+            {
+              "ru": "Das wird bestimmt schön!",
+              "translit": "",
+              "pt": "Com certeza vai ser lindo!",
+              "en": "",
+              "audio": "Das wird bestimmt schön!"
+            },
+            {
+              "ru": "Ich werde es nicht vergessen.",
+              "translit": "",
+              "pt": "Não vou esquecer.",
+              "en": "",
+              "audio": "Ich werde es nicht vergessen."
+            },
+            {
+              "ru": "Nächstes Jahr fliege ich nach Brasilien.",
+              "translit": "",
+              "pt": "Ano que vem vou para o Brasil.",
+              "en": "",
+              "audio": "Nächstes Jahr fliege ich nach Brasilien."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Morgen ___ ich nach Berlin.",
+              "opcoes": [
+                "fahre",
+                "bin gefahren"
+              ],
+              "gabarito": "fahre",
+              "explicacao": "Veja a chave comentada no livro: fahre",
+              "id": "de-040-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich ___ dich anrufen.",
+              "opcoes": [
+                "werde",
+                "wirde"
+              ],
+              "gabarito": "werde",
+              "explicacao": "Veja a chave comentada no livro: werde",
+              "id": "de-040-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Du ___ lange bleiben.",
+              "opcoes": [
+                "wirst",
+                "wirdst"
+              ],
+              "gabarito": "wirst",
+              "explicacao": "Veja a chave comentada no livro: wirst",
+              "id": "de-040-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Er ___ müde sein.",
+              "opcoes": [
+                "wird",
+                "wirdt"
+              ],
+              "gabarito": "wird",
+              "explicacao": "Veja a chave comentada no livro: wird",
+              "id": "de-040-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Ich werde anrufen dich",
+                "Ich werde dich anrufen"
+              ],
+              "gabarito": "Ich werde dich anrufen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-040-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Wir ___ nächste Woche nach Wien fahren.",
+              "opcoes": [
+                "werden",
+                "werdet"
+              ],
+              "gabarito": "werden",
+              "explicacao": "Veja a chave comentada no livro: werden",
+              "id": "de-040-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Hast du Lust, heute Abend ___?",
+              "opcoes": [
+                "mitkommen",
+                "mitzukommen"
+              ],
+              "gabarito": "mitzukommen",
+              "explicacao": "Veja a chave comentada no livro: mitzukommen (com Lust haben, usa-se -zu- no meio do verbo separável)",
+              "id": "de-040-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich ___, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden",
+              "respostaEsperada": "werde",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich werde, du ___, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden",
+              "respostaEsperada": "wirst",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich werde, du wirst, er/sie/es ___, wir werden, ihr werdet, sie/Sie werden",
+              "respostaEsperada": "wird",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich werde, du wirst, er/sie/es wird, wir ___, ihr werdet, sie/Sie werden",
+              "respostaEsperada": "werden",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich werde, du wirst, er/sie/es wird, wir werden, ihr ___, sie/Sie werden",
+              "respostaEsperada": "werdet",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201e"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue o verbo werden no presente: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie ___",
+              "respostaEsperada": "werden",
+              "explicacao": "Veja a chave comentada no livro: werde, wirst, wird, werden, werdet, werden",
+              "id": "de-040-L-201f"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ich fahre nach Berlin. → Ich ___ nach Berlin ___. · Wir kaufen ein. → Wir ___ ___.",
+              "respostaEsperada": "werde … fahren; werden einkaufen",
+              "id": "de-040-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Er ruft mich an. → Er ___ mich ___. · Sie bleibt zu Hause. → Sie ___ zu Hause ___.",
+              "respostaEsperada": "wird … anrufen; wird … bleiben",
+              "id": "de-040-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ich werde nächste Woche arbeiten. → Nächste Woche ___ ich. · Du wirst bald anrufen. → Bald ___ du ___.",
+              "respostaEsperada": "arbeite; rufst … an",
+              "id": "de-040-L-204"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Es ___ schon dunkel und kalt. · Mein Bruder wird nächstes Jahr Arzt.",
+              "respostaEsperada": "wird",
+              "explicacao": "Veja a chave comentada no livro: wird, wird",
+              "id": "de-040-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Es wird schon dunkel und kalt. · Mein Bruder ___ nächstes Jahr Arzt.",
+              "respostaEsperada": "wird",
+              "explicacao": "Veja a chave comentada no livro: wird, wird",
+              "id": "de-040-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe vor, im Sommer nach Deutschland ___ (fliegen). · Es ist wichtig, früh aufzustehen (aufstehen). · Vergiss nicht, mich anzurufen (anrufen)!",
+              "respostaEsperada": "zu fliegen",
+              "explicacao": "Veja a chave comentada no livro: zu fliegen, aufzustehen, anzurufen",
+              "id": "de-040-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe vor, im Sommer nach Deutschland zu fliegen (fliegen). · Es ist wichtig, früh ___ (aufstehen). · Vergiss nicht, mich anzurufen (anrufen)!",
+              "respostaEsperada": "aufzustehen",
+              "explicacao": "Veja a chave comentada no livro: zu fliegen, aufzustehen, anzurufen",
+              "id": "de-040-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe vor, im Sommer nach Deutschland zu fliegen (fliegen). · Es ist wichtig, früh aufzustehen (aufstehen). · Vergiss nicht, mich ___ (anrufen)!",
+              "respostaEsperada": "anzurufen",
+              "explicacao": "Veja a chave comentada no livro: zu fliegen, aufzustehen, anzurufen",
+              "id": "de-040-L-206c"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Conte os seus planos para o próximo ano em 8 frases, com «werden», «wollen» e o presente com marcador de tempo."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 6 frases sobre o seu futuro: três no presente com marcador de tempo e três no Futur I."
         }
       ]
     },
@@ -370,13 +709,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva um pequeno texto de 6 frases sobre o seu futuro."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -553,12 +887,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se falando dos seus planos, promessas e previsões para o próximo ano."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco frases sobre os seus planos para o próximo mês ou ano: três com Presente + palavra de tempo e duas com werden + Infinitiv.",
+              "respostaEsperada": "Nächsten Monat fahre ich ans Meer. In zwei Wochen besuche ich meine Eltern. Am Samstag koche ich für meine Freunde. Ich werde im Urlaub jeden Tag schwimmen und ich werde viel lesen.",
+              "id": "de-040-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três previsões para o futuro usando Es wird bestimmt … ou Er/Sie wird wohl ….",
+              "respostaEsperada": "Morgen wird das Wetter bestimmt schön sein. Der Kurs wird bestimmt sehr interessant! Jonas wird jetzt wohl noch im Büro sein.",
+              "id": "de-040-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases sobre os seus planos e intenções usando Ich habe vor, … zu …, Ich habe Lust, … zu … e Es ist wichtig, … zu ….",
+              "respostaEsperada": "Ich habe vor, nächstes Jahr in Deutschland zu studieren. Hast du Lust, heute Abend ins Restaurant mitzukommen? Es ist sehr wichtig, jeden Tag neue Wörter zu lernen.",
+              "id": "de-040-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich gehe nach Berlin fahren morgen.",
+              "respostaEsperada": "Morgen fahre ich nach Berlin.",
+              "explicacao": "Morgen fahre ich nach Berlin.",
+              "id": "de-040-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich werde anrufen dich.",
+              "respostaEsperada": "Ich werde dich anrufen.",
+              "explicacao": "Ich werde dich anrufen.",
+              "id": "de-040-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Du wirdst bleiben.",
+              "respostaEsperada": "Du wirst bleiben.",
+              "explicacao": "Du wirst bleiben.",
+              "id": "de-040-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er wird ein Arzt.",
+              "respostaEsperada": "Er wird Arzt.",
+              "explicacao": "Er wird Arzt.",
+              "id": "de-040-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wir werden fahren morgen nach Wien.",
+              "respostaEsperada": "Wir werden morgen nach Wien fahren.",
+              "explicacao": "Wir werden morgen nach Wien fahren.",
+              "id": "de-040-L-c05"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Es wird kalt.",
+              "respostaEsperada": "OK",
+              "id": "de-040-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Pedro wird mich holen ab.",
+              "respostaEsperada": "Pedro wird mich abholen.",
+              "explicacao": "Pedro wird mich abholen.",
+              "id": "de-040-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é decalcar o “vou + infinitivo” do português usando gehen (Ich gehe morgen arbeiten em vez de Morgen arbeite ich / Ich werde morgen arbeiten), esquecer de mandar o infinitivo para o fim com werden ou esquecer onde usar (e onde não usar) o zu antes do infinitivo. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 20. Complete: Ich freue ____ auf den Sommer. Do capítulo 19. Complete: Er ____ gestern nicht kommen. (können, pretérito) Do capítulo 18. Complete: Ich ____ gestern viel ____. (lesen, Perfekt)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Conto os meus planos para as férias com o presente e com vorhaben + zu. · Faço uma promessa ou previsão com Ich werde … / Es wird … sem usar gehen."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala do futuro. Próxima aula: o genitivo."
+  "notasParaOAluno": "Você fala do futuro. Próxima aula: o genitivo.",
+  "geradaDoLivro": true
 }

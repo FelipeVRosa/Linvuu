@@ -15,13 +15,87 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você nega frases com nicht ou kein sem hesitar, sabe onde pôr o nicht e responde a perguntas negativas com doch ou nein."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Um convite recusado",
+          "contexto": "Jonas quer sair com Camila, mas ela está ocupada.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Hallo Camila! Hast du heute Abend Zeit?",
+              "pt": "— Oi, Camila! Você tem tempo hoje à noite?",
+              "audio": "Hallo Camila! Hast du heute Abend Zeit?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Leider nicht. Ich habe keine Zeit, ich lerne noch.",
+              "pt": "— Infelizmente não. Não tenho tempo, ainda estou estudando.",
+              "audio": "Leider nicht. Ich habe keine Zeit, ich lerne noch."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Schade! Und morgen?",
+              "pt": "— Que pena! E amanhã?",
+              "audio": "Schade! Und morgen?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball.",
+              "pt": "— Amanhã tenho tempo. Mas não jogo futebol bem.",
+              "audio": "Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Kein Problem! Wir spielen nicht Fußball, wir trinken Tee.",
+              "pt": "— Sem problema! Não vamos jogar futebol, vamos tomar chá.",
+              "audio": "Kein Problem! Wir spielen nicht Fußball, wir trinken Tee."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Super! Ich bin keine Sportlerin.",
+              "pt": "— Ótimo! Não sou atleta.",
+              "audio": "Super! Ich bin keine Sportlerin."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o acusativo de «der Mann», «die Frau», «das Kind» e «die Kinder», com artigo definido."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Há uma segunda armadilha. Em português, “não tenho nada” e “não tenho tempo nunca” usam “não” junto de outra palavra negativa. Em alemão não: Ich habe nichts.Ich habe nie Zeit. Sem nicht. PASSO 2: tem ein na frase afirmativa? Troque por kein. Não tem ein? Use nicht.",
+          "comparacao": "O português tem um único “não”, sempre antes do verbo: “Não moro em Berlim. Não tenho carro. Não tenho tempo.” O alemão divide o trabalho em duas palavras e tira o “não” da frente do verbo.",
+          "tabela": [
+            {
+              "portugues": "Não moro em Berlim.",
+              "ingles": "Ich wohne nicht in Berlin.",
+              "evite": "nega o verbo ou o lugar: nicht"
+            },
+            {
+              "portugues": "Não tenho carro.",
+              "ingles": "Ich habe kein Auto.",
+              "evite": "nega um substantivo sem artigo ou com ein: kein"
+            },
+            {
+              "portugues": "Não tenho tempo.",
+              "ingles": "Ich habe keine Zeit.",
+              "evite": "idem: kein"
+            },
+            {
+              "portugues": "Não é grande.",
+              "ingles": "Es ist nicht groß.",
+              "evite": "nega adjetivo: nicht"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "brauchen",
@@ -83,7 +157,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "Os pronomes no acusativo, passo a passo",
           "explicacao": "PASSO 1: o OBJETO DIRETO é o que sofre a ação: em «Ich sehe den Mann», quem eu vejo é «den Mann». PASSO 2: para não repetir a palavra, trocamos o objeto por um pronome: «Ich sehe den Mann» → «Ich sehe ihn.» PASSO 3: o pronome segue o GÊNERO da palavra trocada: «der Tisch» → «ihn»; «die Lampe» → «sie»; «das Buch» → «es»; «die Bücher» → «sie». PASSO 4: para pessoas, os pronomes de «eu» e «tu» mudam de forma: «ich» → «mich», «du» → «dich». PASSO 5: cuidado com «sie» (ela, eles) e «Sie» (o senhor, a senhora): o contexto e a maiúscula mostram qual é qual. Lembre-se de que só o masculino muda no artigo (den); nos pronomes, mudam todos: ich → mich, du → dich, er → ihn, wir → uns, ihr → euch.",
           "comparacao": "o português também troca o pronome («eu vejo ele», «eu vejo você»). Em alemão cada pronome tem uma forma própria no acusativo, e a escolha depende do gênero da palavra.",
@@ -164,8 +238,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Troque os objetos por pronomes em voz alta: «Ich sehe den Mann → Ich sehe ihn», com 5 frases suas."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o acusativo de «der Mann», «die Frau», «das Kind» e «die Kinder», com artigo definido."
         }
       ]
     },
@@ -175,13 +254,41 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva os pronomes no acusativo para as 9 pessoas."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare cada par. PASSO 2: Perguntas: PASSO 3: Quando ein ou nada vira kein? PASSO 4: Quando aparece nicht? PASSO 5: Onde está o nicht quando a frase não tem adjetivo nem lugar?",
+          "tabela": [
+            {
+              "c1": "Ich habe ein Auto.",
+              "c2": "Ich habe kein Auto."
+            },
+            {
+              "c1": "Das ist eine Lampe.",
+              "c2": "Das ist keine Lampe."
+            },
+            {
+              "c1": "Ich habe Zeit.",
+              "c2": "Ich habe keine Zeit."
+            },
+            {
+              "c1": "Tom wohnt in Berlin.",
+              "c2": "Tom wohnt nicht in Berlin."
+            },
+            {
+              "c1": "Das Zimmer ist groß.",
+              "c2": "Das Zimmer ist nicht groß."
+            },
+            {
+              "c1": "Camila kommt.",
+              "c2": "Camila kommt nicht."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "der Hunger",
@@ -243,7 +350,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "«Kein» e «keine»: negar um substantivo, passo a passo",
           "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS. Use-o no lugar de «ein» ou quando o substantivo não tem artigo: «Ich habe ein Auto» → «Ich habe kein Auto.»; «Ich habe Zeit» → «Ich habe keine Zeit.» PASSO 2: «kein» tem as terminações de «ein»: masculino: kein (nominativo) e keinen (acusativo); feminino: keine; neutro: kein; plural: keine. PASSO 3: expressões fixas com «haben»: «Ich habe keinen Hunger», «keinen Durst», «keine Zeit», «keine Lust», «keine Ahnung» (não faço ideia). PASSO 4: lembre que o objeto direto masculino ganha -en: «keinen Hunger», «keinen Kaffee».",
           "tabela": [
@@ -288,8 +395,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga 6 coisas que você não tem: «Ich habe keinen / keine / kein …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva os pronomes no acusativo para as 9 pessoas."
         }
       ]
     },
@@ -299,13 +411,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 5 frases com «kein», «keine» e «keinen»."
-        },
-        {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "gar nicht",
@@ -353,7 +460,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "«Nicht»: onde colocar, e como responder com «doch»",
           "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS; «nicht» nega TODO O RESTO: o verbo, a frase inteira, um adjetivo ou um advérbio. PASSO 2: se nega a frase inteira, «nicht» vai para o FIM: «Ich arbeite heute nicht.» PASSO 3: se nega um adjetivo ou advérbio, vai ANTES dele: «Das Buch ist nicht teuer.» PASSO 4: com verbo separável, «nicht» vem antes do prefixo: «Ich stehe nicht auf.» PASSO 5: com modais, vem antes do infinitivo: «Ich kann nicht kommen.» PASSO 6: se alguém pergunta de forma NEGATIVA («Hast du keine Zeit?»), a resposta é «DOCH» para dizer «sim, tenho» e «Nein» para dizer «não, não tenho». «Doch» é a palavra que contradiz uma negação.",
           "tabela": [
@@ -407,7 +514,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 7,
+          "min": 5,
           "titulo": "Hast du Zeit? / Você tem tempo?",
           "contexto": "Dois amigos combinam um jantar.",
           "linhas": [
@@ -456,9 +563,167 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Ich verstehe nicht.",
+              "translit": "",
+              "pt": "Não entendo.",
+              "en": "",
+              "audio": "Ich verstehe nicht."
+            },
+            {
+              "ru": "Ich weiß nicht.",
+              "translit": "",
+              "pt": "Não sei.",
+              "en": "",
+              "audio": "Ich weiß nicht."
+            },
+            {
+              "ru": "Ich habe keine Zeit.",
+              "translit": "",
+              "pt": "Não tenho tempo.",
+              "en": "",
+              "audio": "Ich habe keine Zeit."
+            },
+            {
+              "ru": "Das ist kein Problem.",
+              "translit": "",
+              "pt": "Não é problema.",
+              "en": "",
+              "audio": "Das ist kein Problem."
+            },
+            {
+              "ru": "Noch nicht.",
+              "translit": "",
+              "pt": "Ainda não.",
+              "en": "",
+              "audio": "Noch nicht."
+            },
+            {
+              "ru": "Ich habe keinen Hunger.",
+              "translit": "",
+              "pt": "Não estou com fome.",
+              "en": "",
+              "audio": "Ich habe keinen Hunger."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Ich habe ___ Auto.",
+              "respostaEsperada": "kein (neutro)",
+              "id": "de-014-L-101"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Das ist ___ Lampe.",
+              "respostaEsperada": "keine (feminino)",
+              "id": "de-014-L-102"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Tom wohnt ___ in Berlin.",
+              "respostaEsperada": "nicht (lugar)",
+              "id": "de-014-L-103"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Wir haben ___ Kinder.",
+              "respostaEsperada": "keine (plural)",
+              "id": "de-014-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Das Zimmer ist ___ groß.",
+              "respostaEsperada": "nicht (adjetivo)",
+              "id": "de-014-L-105"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Camila ist ___ Lehrerin.",
+              "respostaEsperada": "keine (profissão)",
+              "id": "de-014-L-106"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich habe ein Auto. → ___",
+              "respostaEsperada": "Ich habe kein Auto",
+              "id": "de-014-L-201"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Das ist eine Wohnung. → ___",
+              "respostaEsperada": "Das ist keine Wohnung",
+              "id": "de-014-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Tom kommt heute. → ___",
+              "respostaEsperada": "Tom kommt heute nicht",
+              "id": "de-014-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich wohne in Berlin. → ___",
+              "respostaEsperada": "Ich wohne nicht in Berlin",
+              "id": "de-014-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Das Zimmer ist neu. → ___",
+              "respostaEsperada": "Das Zimmer ist nicht neu",
+              "id": "de-014-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich habe Zeit. → ___",
+              "respostaEsperada": "Ich habe keine Zeit",
+              "id": "de-014-L-206"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich bin Lehrer. → ___",
+              "respostaEsperada": "Ich bin kein Lehrer",
+              "id": "de-014-L-207"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Kommst du nicht? (você vai, sim!) → ___, ich komme!",
+              "respostaEsperada": "Doch",
+              "explicacao": "Veja a chave comentada no livro: Doch",
+              "id": "de-014-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Wohnst du nicht in Berlin? (você realmente não mora lá) → ___, ich wohne in München.",
+              "respostaEsperada": "Nein",
+              "explicacao": "Veja a chave comentada no livro: Nein",
+              "id": "de-014-L-209a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Hast du keine Zeit? (você tem tempo, sim!) → ___, ich habe Zeit!",
+              "respostaEsperada": "Doch",
+              "explicacao": "Veja a chave comentada no livro: Doch",
+              "id": "de-014-L-210a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 2,
+          "min": 1,
           "enunciado": "Responda em voz alta com «doch» ou «nein»: «Hast du keine Zeit? Hast du keinen Hunger? Arbeitest du nicht?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 5 frases com «kein», «keine» e «keinen»."
         }
       ]
     },
@@ -468,13 +733,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases: um pronome no acusativo, um «kein», um «nicht» e uma resposta com «doch»."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -656,12 +916,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se: diga 4 coisas que você não tem, 3 que você não faz e responda a duas perguntas negativas com «doch»."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco frases negativas verdadeiras sobre você: duas com kein / keine, duas com nicht e uma com nie (“nunca”).",
+              "respostaEsperada": "Ich habe kein Fahrrad. Ich habe heute keine Zeit. Ich wohne nicht in Hamburg. Meine Wohnung ist nicht groß. Ich trinke nie Bier.",
+              "id": "de-014-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Responda às três perguntas negativas: Hast du kein Auto? / Lernst du nicht Deutsch? / Hast du heute keine Zeit?",
+              "respostaEsperada": "— Hast du kein Auto? — Doch, ich habe ein Auto! (ou: Nein, ich habe kein Auto.) / — Lernst du nicht Deutsch? — Doch, ich lerne jeden Tag Deutsch! / — Hast du heute keine Zeit? — Nein, heute habe ich leider keine Zeit.",
+              "id": "de-014-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um diálogo de quatro falas recusando um convite para hoje à noite (Leider habe ich heute keine Zeit…) e propondo amanhã.",
+              "respostaEsperada": "Modelo de diálogo: — Hallo Anna! Hast du heute Abend Zeit? Gehen wir ins Kino? — Leider nicht! Heute habe ich keine Zeit, ich arbeite noch.— Schade! Und morgen Abend?— Morgen arbeite ich nicht. Morgen habe ich Zeit!",
+              "id": "de-014-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich nicht wohne in Berlin.",
+              "respostaEsperada": "Ich wohne nicht in Berlin.",
+              "explicacao": "Ich wohne nicht in Berlin.",
+              "id": "de-014-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe nicht Auto.",
+              "respostaEsperada": "Ich habe kein Auto.",
+              "explicacao": "Ich habe kein Auto.",
+              "id": "de-014-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist nicht eine Lampe.",
+              "respostaEsperada": "Das ist keine Lampe.",
+              "explicacao": "Das ist keine Lampe.",
+              "id": "de-014-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe kein Zeit.",
+              "respostaEsperada": "Ich habe keine Zeit.",
+              "explicacao": "Ich habe keine Zeit. (Zeit é feminino.)",
+              "id": "de-014-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich bin nicht Lehrerin.",
+              "respostaEsperada": "Ich bin keine Lehrerin.",
+              "explicacao": "Ich bin keine Lehrerin.",
+              "id": "de-014-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Heute ich arbeite nicht.",
+              "respostaEsperada": "Heute arbeite ich nicht.",
+              "explicacao": "Heute arbeite ich nicht. (verbo na posição 2)",
+              "id": "de-014-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Er kommt nicht.",
+              "respostaEsperada": "OK",
+              "id": "de-014-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é copiar o “não” antes do verbo (Ich nicht wohne) ou dizer nicht ein em vez de kein (Das ist nicht ein Tisch). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 5. Complete com o plural: Das sind keine ____ (Tisch). Das sind keine ____ (Haus). Das sind keine ____ (Frau). Do capítulo 4. Transforme em pergunta: Du hast kein Auto.Er kommt nicht. Do capítulo 3. Comece por Morgen: Ich komme nicht."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Digo Ich habe keine Zeit e Ich verstehe nicht. · Escolho kein ou nicht olhando para a frase afirmativa e respondo Doch quando discordo da negação."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você troca objetos por pronomes e nega corretamente. Próxima aula: compras e roupas."
+  "notasParaOAluno": "Você troca objetos por pronomes e nega corretamente. Próxima aula: compras e roupas.",
+  "geradaDoLivro": true
 }

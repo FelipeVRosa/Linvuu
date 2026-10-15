@@ -67,7 +67,7 @@ jobs:
         with:
           name: audio-${{ env.IDIOMA }}
           path: public/audio/${{ env.IDIOMA }}
-          retention-days: 30
+          retention-days: 1
       - name: Salvar no GitHub (só nas execuções manuais)
         if: github.event_name == 'workflow_dispatch' && always()
         run: |

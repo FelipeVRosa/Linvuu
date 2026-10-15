@@ -64,6 +64,8 @@ export const es: Dicionario = {
   ],
   cta: { titulo: 'Tu primera sesión dura 30 minutos.', texto: 'Empieza ahora: 2 lecciones gratis, sin tarjeta y sin instalar nada.', primario: 'Empezar gratis', secundario: 'Ver todos los cursos' },
   rodape: {
+    eConj: 'y',
+    criadaPor: 'Creada por',
     frase: 'Idiomas enseñados paso a paso, explicados en español.', novidadesTitulo: 'Recibe novedades', novidadesTexto: 'Nuevas lecciones, idiomas y libros. Sin spam.',
     termos: 'Términos de uso', privacidade: 'Política de privacidad', idiomas: 'Idiomas', portugues: 'Portugués de Brasil', contato: 'Contacto', direitos: '© 2026 Linvuu. Todos los derechos reservados.',
   },

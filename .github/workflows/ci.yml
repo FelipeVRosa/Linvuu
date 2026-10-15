@@ -25,6 +25,7 @@ jobs:
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)
-        run: npm audit --omit=dev --audit-level=high
+        run: |
+          for i in 1 2 3; do npm audit --omit=dev --audit-level=high && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)
         run: npm run testar:seguranca

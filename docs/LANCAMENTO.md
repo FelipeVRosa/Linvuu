@@ -1,9 +1,9 @@
 # Plano de lançamento: app Linvuu (Android e iOS) e site
 
-Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. Dono: Instituto Renascimento (conta de organização, com CNPJ). Responsável técnico pelo repositório: Felipe.
+Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. Dono: Linvuu (conta de organização, com CNPJ). Responsável técnico pelo repositório: Felipe.
 
 ## 1. Decisões já tomadas
-- **Conta de organização** na Google Play (e na Apple Developer, depois) em nome do Instituto Renascimento, com CNPJ. Criada **no momento do lançamento**, não antes.
+- **Conta de organização** na Google Play (e na Apple Developer, depois) em nome da Linvuu, com CNPJ. Criada **no momento do lançamento**, não antes.
 - **Compra no app: decidido (10/10/2026).** A primeira versão vende assinatura dentro do app pelo Google Play Billing, e o site continua vendendo pelo Stripe. O acesso vale pelas duas origens. Detalhes em `docs/COBRANCA-APP.md`.
 - **Stripe** continua sendo o meio de pagamento do site. Chaves live só na data de lançamento.
 - **Idiomas:** português primeiro; inglês e espanhol da interface depois (`docs/FUTURAS-MUDANCAS.md`).
@@ -76,7 +76,7 @@ Versão 2, 10/10/2026. Substitui as recomendações anteriores de publicação. 
 
 ## 7. Marca e material da loja
 - Nome do app: "Linvuu". Descrição sem promessas de fluência ou prazo, sem "oficial", sem emoji, sem bandeiras.
-- Desenvolvedor: Instituto Renascimento (ou nome fantasia que conste no CNPJ).
+- Desenvolvedor: Linvuu (conforme o CNPJ).
 - Para cada item de marca: aprovação sua antes de publicar.
 
 ## 8. Riscos

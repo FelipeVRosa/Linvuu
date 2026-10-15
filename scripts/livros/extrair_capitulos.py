@@ -300,10 +300,10 @@ def capitulos_do_pdf(pdf, limite=90):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--pdf', required=True); ap.add_argument('--idioma', required=True); ap.add_argument('--caps', required=True)
-    ap.add_argument('--saida', default='content/livros')
+    ap.add_argument('--saida', default='content/livros'); ap.add_argument('--limite', type=int, default=90, help='quantas páginas do PDF examinar (livros inteiros: use o total)')
     a = ap.parse_args()
     pdf = pdfplumber.open(a.pdf)
-    ini = capitulos_do_pdf(pdf)
+    ini = capitulos_do_pdf(pdf, a.limite)
     if not ini: sys.exit('não achei os inícios de capítulo')
     ordem = sorted(ini)
     for n in [int(x) for x in a.caps.split(',')]:

@@ -16,10 +16,14 @@ const textoParaAudio = (t) => t.normalize('NFC').replace(/́/g, '').trim();
 const hashTexto = (t) => { let h = 0x811c9dc5; for (const c of new TextEncoder().encode(textoParaAudio(t))) { h ^= c; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(16).padStart(8, '0'); };
 const csv = (v) => `"${String(v).replace(/"/g, '""')}"`;
 
-const dir = path.join(raiz, 'content', 'livros');
+// --privado: capítulos 3 em diante (content/livros-privado). Vão para <idioma>-livro-privado-gravar.csv e NÃO entram em
+// gerar-audios.mjs, porque o áudio deles só pode sair do servidor para assinantes (server/audio-privado), nunca de public/.
+const privado = args.privado === 'true';
+const dir = path.join(raiz, 'content', privado ? 'livros-privado' : 'livros');
 for (const id of fs.readdirSync(dir).sort()) {
   if (args.idioma && args.idioma !== id) continue;
-  const caps = fs.readdirSync(path.join(dir, id)).filter((f) => /^cap-\d+\.json$/.test(f)).sort();
+  if (!fs.statSync(path.join(dir, id)).isDirectory()) continue;
+  const caps = fs.readdirSync(path.join(dir, id)).filter((f) => /^cap-\d+\.json$/.test(f) && (!privado || Number(f.match(/\d+/)[0]) > 2)).sort();
   if (!caps.length) continue;
   const vistos = new Map();
   for (const f of caps) {
@@ -32,7 +36,7 @@ for (const id of fs.readdirSync(dir).sort()) {
   }
   const linhas = ['arquivo,texto,voz,primeiro_uso,vezes_usado', ...[...vistos.values()].map((v) => [v.arq, csv(v.texto), v.voz, csv(v.onde), v.vezes].join(','))];
   fs.mkdirSync(path.join(raiz, 'content', 'audio'), { recursive: true });
-  fs.writeFileSync(path.join(raiz, 'content', 'audio', `${id}-livro-gravar.csv`), linhas.join('\n') + '\n');
+  fs.writeFileSync(path.join(raiz, 'content', 'audio', `${id}-livro${privado ? '-privado' : ''}-gravar.csv`), linhas.join('\n') + '\n');
   const car = [...vistos.values()].reduce((x, v) => x + v.texto.length, 0);
   console.log(`${id}: ${vistos.size} frases para gravar (${car} caracteres) em ${caps.length} capítulos`);
 }

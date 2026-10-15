@@ -1,0 +1,627 @@
+# Capítulo 28: Como as palavras se formam e as que enganam: compostas, prefixos, sufixos e falsos amigos
+
+*Nível A2 · páginas 449–478 do livro*
+
+Meta do capítulo. Ao final, você forma palavras compostas na ordem certa (*a coffee cup*, *a bus stop*), escreve medidas como adjetivo (*a ten-minute walk*), reconhece prefixos e sufixos que multiplicam o seu vocabulário (*unhappy, helpful, agreement*) e evita os falsos amigos mais caros (*actually, eventually, pretend, library, parents*).
+
+
+## 1. Cena: procurando apartamento
+
+Marina vai se mudar para Toronto e conta a Lucas como está a procura por um apartamento.
+
+**Cena**
+
+**Lucas:** *So, did you find an apartment?*  
+**Marina:** *Actually, I found two. One has two bedrooms and a big living room, but it’s a twenty-minute walk from the subway.*  
+**Lucas:** *And the other one?*  
+**Marina:** *It’s a one-bedroom apartment with a dishwasher and a balcony. The rent is two hundred dollars higher, but it’s next to a bus stop.*  
+**Lucas:** *Does the building have a parking lot?*  
+**Marina:** *Yes, but I don’t have a car, so I don’t mind. I’m going to see the first one on Saturday. Can you come with me?*  
+**Lucas:** *Sure! I can attend the viewing, and I’ll help you read the contract.*  
+**Marina:** *Thanks! Eventually I’ll have to choose one, but I want to see both.*  
+
+Em português: Então, você achou um apartamento? / Na verdade, achei dois. Um tem dois quartos e uma sala grande, mas fica a vinte minutos a pé do metrô. / E o outro? / É um apartamento de um quarto, com lava-louças e varanda. O aluguel é duzentos dólares mais alto, mas fica ao lado de um ponto de ônibus. / O prédio tem estacionamento? / Tem, mas eu não tenho carro, então tanto faz. Vou ver o primeiro no sábado. Você pode ir comigo? / Claro! Posso comparecer à visita e te ajudo a ler o contrato. / Obrigada! No fim das contas vou ter que escolher um, mas quero ver os dois.
+
+Repare em quatro coisas. As compostas têm a coisa no fim e a explicação na frente (*bus stop*, *parking lot*, *living room*). As medidas viram adjetivo sem plural (*a twenty-minute walk*, *a one-bedroom apartment*). E duas palavras parecem portuguesas e não são: *actually* (na verdade) e *eventually* (no fim das contas).
+
+
+## 2. A armadilha do português
+
+Em português, juntamos ideias com “de”: “ponto de ônibus”, “passeio de vinte minutos”, “apartamento de dois quartos”. O inglês junta as palavras diretamente, sem *of*, e a ordem se inverte. Além disso, muitas palavras inglesas parecem portuguesas e significam outra coisa.
+
+| O HÁBITO DO PORTUGUÊS | COMO O INGLÊS PENSA (CERTO) | O ERRO TÍPICO A EVITAR |
+|---|---|---|
+| ponto de ônibus | *a bus stop* | ~~a stop of bus~~ |
+| um passeio de vinte minutos | *a twenty-minute walk* | ~~a twenty-minutes walk~~ |
+| um apartamento de dois quartos | *a two-bedroom apartment* | ~~a two-bedrooms apartment~~ |
+| Atualmente moro em Recife. | *Currently I live in Recife.* / *I live in Recife these days.* | ~~Actually I live in Recife.~~ |
+| Eu pretendo estudar fora. | *I intend to study abroad.* | I ~~pretend to study abroad.~~ |
+
+1. O último elemento é a coisa; o primeiro é o tipo. Um *bus stop* é um ponto (stop) de ônibus (bus), e não um ônibus de ponto. Se você inverter, o significado muda ou desaparece.
+
+2. Medidas como adjetivo ficam no singular, com hífen. Em português, “de vinte minutos” pode ser plural. Em inglês, o número já indica a quantidade, e o substantivo da medida fica no singular: *a ten-minute walk*, mas *The walk is ten minutes* (aqui não é adjetivo, e a palavra vai ao plural).
+
+3. Alguns falsos amigos mudam o sentido da frase inteira. Em ~~Actually I live in Recife~~ você quis dizer “atualmente”, mas o inglês entende “na verdade”. O ouvinte fica esperando uma correção que não vem.
+
+
+## 3. Descubra você mesmo
+
+Observe as palavras compostas e repare onde está o plural:
+
+| COMPOSTA | PLURAL | O QUE É |
+|---|---|---|
+| *a coffee cup* | *two coffee cups* | uma xícara de café (o objeto) |
+| *a bus stop* | *three bus stops* | um ponto de ônibus |
+| *a toothbrush* | *two toothbrushes* | uma escova de dentes |
+| *a credit card* | *four credit cards* | um cartão de crédito |
+
+E compare as duas medidas:
+
+| ANTES DE UM SUBSTANTIVO (ADJETIVO) | SOZINHA (COM VERBO) |
+|---|---|
+| *a ten-minute walk* | *The walk is ten minutes.* |
+| *a five-year-old child* | *The child is five years old.* |
+| *a two-bedroom apartment* | *The apartment has two bedrooms.* |
+
+Perguntas:
+
+1. Em *two coffee cups*, qual das duas palavras recebe o *-s* do plural?
+
+2. Quando a medida vem antes do substantivo (*a ten-minute walk*), a palavra *minute* fica no singular ou no plural?
+
+Se você notou que só a última palavra vai ao plural (*coffee cups*, não ~~coffees cup~~) e que a medida vira adjetivo e fica no singular (*ten-minute*), você já domina a parte de formação.
+
+
+## 4. Em 30 segundos
+
+**Em 30 Segundos**
+
+1. Composta = tipo + coisa: a primeira palavra diz o tipo ou a finalidade, a última é a coisa: *a shoe shop*, *a coffee cup*, *an office building*.
+
+2. Plural só na última palavra:*two shoe shops*, *three bus stops*. A primeira palavra fica no singular.
+
+3. Medida antes de substantivo = adjetivo no singular, com hífen:*a ten-minute walk*, *a two-bedroom apartment*, *a five-year-old child*.
+
+4. Prefixos e sufixos formam palavras novas:*un-* e *dis-* negam (*unhappy, dislike*); *re-* repete (*rewrite*); *-er / -or* indica quem faz (*worker, visitor*); *- less* e *-ful* indicam sem e cheio de (*careless, helpful*); *-ly* forma advérbios (*quickly*).
+
+5. Falsos amigos:*actually* = na verdade; *eventually* = no fim das contas; *pretend* = fingir; *library* = biblioteca; *parents* = pais.
+
+
+## 5. Por dentro
+
+
+### 5.1 Compostas úteis para a vida real
+
+Aprenda as compostas em grupos, como bloco, e não palavra por palavra:
+
+| CONTEXTO | COMPOSTAS |
+|---|---|
+| Casa | *bedroom* (quarto), *bathroom* (banheiro), *living room* (sala), *dishwasher* (lava-louças), *washing machine* (máquina de lavar), *front door* (porta da frente), *parking lot* (estacionamento) |
+| Trabalho | *meeting room* (sala de reunião), *business card* (cartão de visita), *phone number* (número de telefone), *job interview* (entrevista de emprego), *office building* (prédio comercial) |
+| Viagem | *bus stop* (ponto de ônibus), *train station* (estação de trem), *boarding pass* (cartão de embarque), *credit card* (cartão de crédito), *traffic jam* (engarrafamento) |
+| Cidade | *shopping mall* (shopping), *post office* (correio), *police station* (delegacia), *shoe shop* (loja de sapatos), *supermarket* (supermercado) |
+
+Como escrever. O inglês não tem regra firme: algumas compostas vêm juntas (*bedroom, toothbrush, sunglasses*), outras separadas (*bus stop, living room, credit card*), e outras com hífen (*check-in, ten-minute*). Na dúvida, consulte um dicionário, e na fala isso não faz diferença, porque o som é o mesmo.
+
+Cuidado com o significado.*A coffee cup* é a xícara que serve para café, mesmo vazia. *A cup of coffee* é a xícara cheia, a bebida. Compare: *I need a new coffee cup* (o objeto) × *I need a cup of coffee* (a bebida).
+
+
+### 5.2 Medidas como adjetivo
+
+A medida (tempo, idade, tamanho, número de quartos) vira um adjetivo composto, com hífen e no singular, quando vem antes do substantivo:
+
+| ANTES DO SUBSTANTIVO (ADJETIVO) | COM VERBO (SEM HÍFEN, COM PLURAL) |
+|---|---|
+| *a ten-minute break* | *The break is ten minutes long.* |
+| *a two-hour meeting* | *The meeting lasts two hours.* |
+| *a three-bedroom house* | *The house has three bedrooms.* |
+| *a six-month contract* | *The contract is for six months.* |
+| *a thirty-year-old engineer* | *The engineer is thirty years old.* |
+
+
+### 5.3 Prefixos e sufixos que multiplicam o vocabulário
+
+Quem aprende *happy* aprende também *unhappy*, *happiness* e *happily*. As combinações mais úteis:
+
+| MARCA | O QUE FAZ | EXEMPLOS |
+|---|---|---|
+| *un-* / *dis-* / *in-* | nega ou inverte | *unhappy, unable, disagree, dislike, incorrect* |
+| *re-* | faz de novo | *rewrite, redo, restart, reopen* |
+| *-er* / *-or* | quem faz | *worker, teacher, manager, visitor, actor* |
+| *-ness* | forma o substantivo de um adjetivo | *happiness, kindness, sadness* |
+| *-ful* / *-less* | cheio de / sem | *helpful, careful, careless, homeless* |
+| *-ment* | forma substantivos de verbos | *agreement, payment, movement* |
+| *-able* | que se pode | *comfortable, readable, reliable* |
+| *-ly* | forma advérbios | *quickly, carefully, slowly* |
+
+Os cognatos que ajudam. Muitas palavras terminadas em *-tion* correspondem a “-ção” (*information, communication*), em *-sion* a “-são” (*decision, television*), em *-ity* a “-idade” (*possibility, quality*) e em *-ous* a “-oso” (*famous, nervous*). A pronúncia muda muito, então ouça cada uma no áudio.
+
+
+### 5.4 Falsos amigos: o guia dos mais caros
+
+Falso amigo é a palavra que parece portuguesa e significa outra coisa. Estes são os mais caros no dia a dia:
+
+| PALAVRA INGLESA | SIGNIFICA | NÃO SIGNIFICA | COMO DIZER O OUTRO SENTIDO |
+|---|---|---|---|
+| *actually* | na verdade, de fato | atualmente | *currently*, *these days*, *nowadays* |
+| *eventually* | no fim das contas, por fim | eventualmente | *occasionally*, *sometimes*, *possibly* |
+| *pretend* | fingir | pretender | *intend to*, *plan to* |
+| *library* | biblioteca | livraria | *bookstore* (US), *bookshop* (UK) |
+| *parents* | pais (mãe e pai) | parentes | *relatives* |
+| *realize* | perceber, dar-se conta | realizar | *carry out*, *do*, *hold* (uma reunião) |
+| *attend* | comparecer, assistir (aula, reunião) | atender | *answer*, *serve*, *help* |
+| *assist* | ajudar | assistir (TV) | *watch* |
+| *college* | faculdade | colégio | *school*, *high school* |
+| *costume* | fantasia | costume (hábito) | *habit*, *custom* |
+| *lecture* | palestra, aula expositiva | leitura | *reading* |
+| *fabric* | tecido | fábrica | *factory* |
+| *novel* | romance (livro) | novela (TV) | *soap opera* |
+| *exquisite* | requintado, delicado | esquisito | *strange*, *weird* |
+| *sensible* | sensato | sensível | *sensitive* |
+| *sympathetic* | compreensivo, solidário | simpático | *nice*, *friendly* |
+| *comprehensive* | abrangente, completo | compreensivo | *understanding* |
+| *exit* | saída | êxito | *success* |
+| *push* / *pull* | empurrar / puxar | (ao contrário) | olhe a porta: *push* é empurrar, *pull* é puxar |
+| *support* | apoiar, apoio | suportar (aguentar) | *stand*, *bear*: *I can’t stand it* |
+| *resume* / *résumé* | retomar / currículo | resumo | *summary* |
+
+> **Atenção** *Realize* tem outros usos, mas o principal é “perceber”.*I realized I was late* = percebi que estava atrasado. Em frases como *realize a dream* (realizar um sonho), a palavra existe, mas é formal e pouco usada. Para “realizar um evento” ou “realizar uma tarefa”, use *hold*, *do* ou *carry out*.
+
+> **Atenção** Como o seu ouvido vai escutar no áudio: nas compostas, a força cai na primeira palavra, e a segunda encolhe: *bedroom* soa como bé-drum. *bus stop* soa como bás-stop, com a força em bus. *sunglasses* soa como sân-glé-sis. Já nos falsos amigos, preste atenção ao som: *pretend* soa como pri-ténd, e *eventually* como i-vén-chu-a-li.
+
+
+## 6. Frases de ouro
+
+| INGLÊS | PORTUGUÊS NATURAL |
+|---|---|
+| *The apartment is a ten-minute walk from the subway.* | O apartamento fica a dez minutos a pé do metrô. |
+| *It’s a two-bedroom apartment with a dishwasher.* | É um apartamento de dois quartos com lava- louças. |
+| *Actually, I don’t know the answer.* | Na verdade, eu não sei a resposta. |
+| *I currently live in São Paulo.* | Atualmente moro em São Paulo. |
+| *Eventually, we found a solution.* | No fim das contas, encontramos uma solução. |
+| *I intend to start a new course next year.* | Pretendo começar um novo curso no ano que vem. |
+| *My parents live in Recife, and my relatives live in Salvador.* | Meus pais moram em Recife, e meus parentes moram em Salvador. |
+| *I couldn’t attend the meeting because I was sick.* | Não pude comparecer à reunião porque estava doente. |
+
+
+## 7. Treino em quatro degraus
+
+**Treino**
+
+Degrau 1. Reconheça. Escolha a opção correta entre parênteses.
+
+1. We took a ____ walk to the station. (ten-minute / ten-minutes)
+2. They live in a ____ apartment. (two-bedroom / two-bedrooms)
+3. There are two ____ near my house. (bus stops / buses stop)
+4. The word actually means ____. (na verdade / atualmente)
+5. Pretendo viajar em dezembro: “I ____ to travel in December.” (intend / pretend)
+6. Meus pais moram em Recife: “My ____ live in Recife.” (parents / relatives)
+7. I want to buy a book. I’m going to the ____. (library / bookstore)
+8. Para abrir esta porta com a placa “PUXE”, eu preciso ____. (push / pull)
+
+Degrau 2. Complete. Escreva a composta ou o adjetivo composto que corresponde à descrição.
+
+1. Um passeio de dez minutos = a ____ walk.
+2. Uma xícara para café (o objeto) = a ____.
+3. Um apartamento com três quartos = a ____ apartment.
+4. Uma criança de cinco anos = a ____ child.
+5. Um cartão de negócios = a ____.
+6. Uma loja de sapatos = a ____ shop.
+7. Duas salas de reunião = two ____.
+8. Um feriado de duas semanas = a ____ holiday.
+
+Degrau 3. Produza. Escreva frases completas em inglês para cada situação.
+
+1. Descreva a sua casa ou apartamento usando uma medida como adjetivo (*a … - bedroom apartment*) e uma composta da tabela.
+2. Diga quanto tempo você leva a pé até um lugar, usando *a … -minute walk*.
+3. Diga que você mora atualmente em uma cidade, sem usar *actually*.
+4. Escreva uma frase usando *parents* e outra usando *relatives*.
+
+Degrau 4. Corrija o erro típico. Seis frases têm erros de falsos amigos ou de composição e uma está certa. Corrija as seis erradas e aponte a certa.
+
+1. Actually I live in Salvador, but next year I’ll move.
+2. I pretend to study abroad next year.
+3. She works at the library, selling new books.
+4. We realized the meeting yesterday.
+5. I’ll invite all my parents to the party.
+6. My mother watches a novel every night.
+7. I couldn’t attend the meeting because I was sick.
+
+
+## 8. O erro típico
+
+O erro mais caro deste capítulo é traduzir uma palavra pelo som (*actually* = atualmente, *pretend* = pretender, *parents* = parentes) e inverter a ordem das compostas (~~a stop of bus~~, ~~a coffees cup~~).
+
+**Erros Típicos**
+
+| ERRADO | CERTO | POR QUÊ |
+|---|---|---|
+| ~~Actually I live in Salvador.~~ | *Currently I live in Salvador.* | *Actually* significa “na verdade”, e não “atualmente”. |
+| ~~I pretend to study abroad.~~ | *I intend to study abroad.* | *Pretend* é “fingir”; “pretender” é *intend*. |
+| ~~She works at the library, selling new books.~~ | *She works at a bookstore, selling new books.* | *Library* é biblioteca; livraria é *bookstore*. |
+| ~~We realized the meeting yesterday.~~ | *We held the meeting yesterday.* | *Realize* é “perceber”; para “realizar” uma reunião, use *hold*. |
+| ~~I’ll invite all my parents.~~ | *I’ll invite all my relatives.* | *Parents* são só pai e mãe; parentes em geral são *relatives*. |
+| ~~My mother watches a novel every night.~~ | *My mother watches a soap opera every night.* | *Novel* é um romance (livro); novela de TV é *soap opera*. |
+| ~~a ten-minutes walk / a stop of bus~~ | *a ten-minute walk / a bus stop* | Medida como adjetivo fica no singular; a composta vai direto, sem *of*. |
+
+
+## 9. Retorno
+
+1. Do Capítulo 12. Complete: *The apartment isn’t ____ for four people (big), and the rent is ____ than our budget (high).*
+
+2. Do Capítulo 27. Reescreva com *so… that*: *The apartment was very expensive. We didn’t rent it.*
+
+3. Do Capítulo 18. Reescreva com o pronome no lugar certo: *Please turn off the lights.* (use *them*)
+
+| QUANDO | O QUE FAZER |
+|---|---|
+| Dia 1 | Leia a Cena em voz alta e sublinhe as compostas (*bus stop, living room, parking lot*) e as medidas (*twenty-minute walk*). |
+| Dia 3 | Faça uma lista de 10 compostas do seu dia a dia, com o artigo: *a …*, e escreva o plural de cada uma. |
+| Dia 7 | Refaça o Degrau 4 sem consultar o gabarito. |
+| Dia 14 | Grave um áudio de 1 minuto descrevendo uma casa ou apartamento (quartos, distância a pé, aluguel), usando pelo menos duas compostas e uma medida como adjetivo. |
+
+
+## 10. Resumo e “já consigo”
+
+**Resumo E “Já Consigo”**
+
+Compostas: tipo + coisa (*a bus stop*, *a coffee cup*), com plural só na última palavra (*two bus stops*).
+
+Medidas antes de substantivo: adjetivo no singular, com hífen (*a ten-minute walk*, *a two-bedroom apartment*).
+
+Prefixos e sufixos:*un- / dis-* (negam), *re-* (repete), *-er / -or* (quem faz), *-ful / -less*, *-ness*, *-ment*, *-ly*.
+
+Falsos amigos:*actually* = na verdade, *eventually* = no fim das contas, *pretend* = fingir, *library* = biblioteca, *parents* = pais, *attend* = comparecer, *realize* = perceber.
+
+Já consigo?
+
+Formar compostas na ordem certa e colocar o plural na palavra certa. Escrever medidas como adjetivo, no singular e com hífen.
+
+Evitar os falsos amigos mais comuns, dizendo *currently*, *intend*, *relatives*, *bookstore* e *soap opera* quando preciso.
+
+
+## Glossário do capítulo 28
+
+| INGLÊS | PORTUGUÊS |
+|---|---|
+| *bedroom* / *bathroom* | quarto / banheiro |
+| *living room* | sala de estar |
+| *dishwasher* | lava-louças |
+| *parking lot* | estacionamento |
+| *bus stop* | ponto de ônibus |
+| *a ten-minute walk* | um passeio a pé de dez minutos |
+| *rent* | aluguel |
+| *viewing* | visita (a um imóvel) |
+| *contract* | contrato |
+| *actually* / *currently* | na verdade / atualmente |
+| *eventually* | no fim das contas |
+| *pretend* / *intend* | fingir / pretender |
+| *library* / *bookstore* | biblioteca / livraria |
+| *parents* / *relatives* | pais / parentes |
+| *attend* | comparecer, assistir (aula, reunião) |
+| *soap opera* | novela (TV) |
+| *fabric* / *factory* | tecido / fábrica |
+
+
+## Chave comentada do capítulo 28
+
+**Chave Comentada**
+
+Degrau 1. 1 ten-minute (medida como adjetivo, no singular, com hífen). 2 two-bedroom (idem). 3 bus stops (composta; plural na última palavra). 4 na verdade (*actually* é falso amigo). 5 intend (*pretend* é “fingir”). 6 parents (*parents* = pais; *relatives* = parentes). 7 bookstore (*library* é biblioteca). 8 pull (“puxe” = *pull*; *push* é “empurre”).
+
+Degrau 2. 1 ten-minute. 2 coffee cup. 3 three-bedroom. 4 five-year-old. 5 business card. 6 shoe (shop). 7 meeting rooms (o plural vai para a última palavra). 8 two-week.
+
+Degrau 3. Modelo: 1. *I live in a two-bedroom apartment with a small balcony and a dishwasher.* 2. *The station is a fifteen-minute walk from my house.* 3. *I currently live in Curitiba. / These days I live in Curitiba.* 4. *My parents live in Recife. / I have a lot of relatives in Minas Gerais.*
+
+Degrau 4.
+
+1. *Currently I live in Salvador, but next year I’ll move.* (*Actually* = na verdade.) 2. *I intend to study abroad next year.* (*Pretend* = fingir.) 3. *She works at a bookstore, selling new books.* (*Library* = biblioteca.) 4. *We held the meeting yesterday.* (Para “realizar” uma reunião, use *hold*.) 5. *I’ll invite all my relatives to the party.* (*Parents* = pais.) 6. *My mother watches a soap opera every night.* (*Novel* = romance em livro.) 7. Está certa. (*Attend* = comparecer.) Retorno. 1. *big enough*, *higher* (*The apartment isn’t big enough for four people, and the rent is higher than our budget.*). 2. *The apartment was so expensive that we didn’t rent it.* 3. *Please turn them off.*
+
+Esta parte é de consulta, não de leitura. Cada tabela remete ao capítulo em que o assunto é explicado, e é nele que você aprende; aqui você confere.
+
+
+## Verbos irregulares
+
+Estes são os verbos irregulares que o livro usa. A segunda coluna é o passado simples (capítulo 11). A terceira é o particípio, usado no Present Perfect (capítulos 14 e 15), no Past Perfect (capítulo 16), na voz passiva (capítulo 23) e nos modais do passado (capítulo 25). Onde há duas formas, a primeira é a mais usada.
+
+| INFINITIVO | PASSADO | PARTICÍPIO | SIGNIFICADO |
+|---|---|---|---|
+| *be* | *was / were* | *been* | ser, estar |
+| *become* | *became* | *become* | tornar-se |
+| *begin* | *began* | *begun* | começar |
+| *break* | *broke* | *broken* | quebrar |
+| *bring* | *brought* | *brought* | trazer |
+| *build* | *built* | *built* | construir |
+| *buy* | *bought* | *bought* | comprar |
+| *choose* | *chose* | *chosen* | escolher |
+| *come* | *came* | *come* | vir |
+| *cut* | *cut* | *cut* | cortar |
+| *do* | *did* | *done* | fazer |
+| *drink* | *drank* | *drunk* | beber |
+| *drive* | *drove* | *driven* | dirigir |
+| *eat* | *ate* | *eaten* | comer |
+| *feel* | *felt* | *felt* | sentir |
+| *find* | *found* | *found* | achar, encontrar |
+| *forget* | *forgot* | *forgotten* | esquecer |
+| *get* | *got* | *got* | conseguir, chegar, ficar |
+| *give* | *gave* | *given* | dar |
+| *go* | *went* | *gone / been* | ir |
+| *grow* | *grew* | *grown* | crescer |
+| *have* | *had* | *had* | ter |
+| *keep* | *kept* | *kept* | manter, guardar |
+| *know* | *knew* | *known* | saber, conhecer |
+| *leave* | *left* | *left* | sair, deixar |
+| *let* | *let* | *let* | deixar, permitir |
+| *lose* | *lost* | *lost* | perder |
+| *make* | *made* | *made* | fazer, fabricar |
+| *meet* | *met* | *met* | encontrar, conhecer |
+| *pay* | *paid* | *paid* | pagar |
+| *put* | *put* | *put* | pôr |
+| *read* | *read* | *read* | ler (no passado, pronuncia-se “réd”) |
+| *ring* | *rang* | *rung* | tocar (campainha, telefone) |
+| *run* | *ran* | *run* | correr |
+| *say* | *said* | *said* | dizer |
+| *see* | *saw* | *seen* | ver |
+| *send* | *sent* | *sent* | enviar |
+| *sing* | *sang* | *sung* | cantar |
+| *sit* | *sat* | *sat* | sentar |
+| *sleep* | *slept* | *slept* | dormir |
+| *speak* | *spoke* | *spoken* | falar |
+| *spend* | *spent* | *spent* | gastar, passar (tempo) |
+| *stand* | *stood* | *stood* | ficar de pé |
+| *steal* | *stole* | *stolen* | roubar |
+| *swim* | *swam* | *swum* | nadar |
+| *take* | *took* | *taken* | pegar, levar |
+| *tell* | *told* | *told* | contar, dizer a alguém |
+| *think* | *thought* | *thought* | pensar, achar |
+| *wake up* | *woke up* | *woken up* | acordar |
+| *win* | *won* | *won* | ganhar |
+| *write* | *wrote* | *written* | escrever |
+
+
+## Mapa dos tempos verbais
+
+| TEMPO | FORMA | EXEMPLO | CAP. |
+|---|---|---|---|
+| Present Simple | verbo base; *-s* com *he, she, it* | *She works here.* | 5 |
+| Present Continuous | *am / is / are* + *-ing* | *I’m working now.* | 8 |
+| Past Simple | verbo + *-ed* ou 2ª coluna | *I worked. / I went.* | 10, 11 |
+| Future com *going to* | *am / is / are going to* + verbo base | *We’re going to travel.* | 13 |
+| Future com *will* | *will* + verbo base | *I’ll call you.* | 13 |
+| Present Perfect | *have / has* + 3ª coluna | *I’ve seen it.* | 14 |
+| Present Perfect Continuous | *have / has been* + *-ing* | *I’ve been waiting.* | 15 |
+| Past Continuous | *was / were* + *-ing* | *I was cooking.* | 16 |
+| Past Perfect | *had* + 3ª coluna | *I had already left.* | 16 |
+| Hábito no passado | *used to* + verbo base | *I used to smoke.* | 16 |
+| Voz passiva | *be* + 3ª coluna | *It was stolen.* | 23 |
+
+
+## Pronomes
+
+| SUJEITO | OBJETO | POSSESSIVO (ANTES DO NOME) | POSSESSIVO (SOZINHO) | REFLEXIVO |
+|---|---|---|---|---|
+| *I* | *me* | *my* | *mine* | *myself* |
+| *you* | *you* | *your* | *yours* | *yourself* |
+| *he* | *him* | *his* | *his* | *himself* |
+| *she* | *her* | *her* | *hers* | *herself* |
+| *it* | *it* | *its* |  | *itself* |
+| *we* | *us* | *our* | *ours* | *ourselves* |
+| *they* | *them* | *their* | *theirs* | *themselves* |
+
+Os possessivos estão no capítulo 3. Os pronomes de objeto e os reflexivos estão no capítulo 17.
+
+
+## Verbos modais
+
+| MODAL | IDEIA PRINCIPAL | EXEMPLO | CAP. |
+|---|---|---|---|
+| *can* | habilidade, permissão | *I can swim.* | 9 |
+| *could* | habilidade no passado, pedido educado | *Could you help me?* | 9 |
+| *must* | obrigação forte, dedução | *You must wear a helmet.* | 9, 25 |
+| *have to* | obrigação externa | *I have to work on Saturday.* | 9 |
+| *should* | conselho | *You should rest.* | 9 |
+| *might* | possibilidade | *It might rain.* | 13 |
+| *will* | decisão, promessa, previsão | *I’ll help you.* | 13 |
+| *would* | resultado de uma hipótese | *I would go if I could.* | 22 |
+| *may, can’t, must have, might have* | dedução e certeza | *He must have forgotten.* | 25 |
+
+Depois de um modal, o verbo vem na forma base, sem *to* e sem *-s*.
+
+
+## Procure pelo seu erro
+
+Procure a frase que parece com a sua. A tabela leva ao capítulo que explica o erro e mostra o que fazer. As frases erradas são típicas de brasileiros, e estão riscadas.
+
+
+### Frase simples e vocabulário básico
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~I have 28 years old.~~ | *I’m 28 (years old).* | idade combina com *to be* | 1 |
+| ~~Is cold today.~~ | *It’s cold today.* | o sujeito *it* é obrigatório | 1 |
+| ~~I’m engineer.~~ | *I’m an engineer.* | profissão pede *a* ou *an* | 1 |
+| ~~This shoes are nice.~~ | *These shoes are nice.* | plural pede *these* e *those* | 2 |
+| ~~I want a coffee.~~ | *I’d like a coffee. / Can I get a coffee?* | *I want* soa como ordem no balcão | 2 |
+| ~~Marina loves his husband.~~ | *Marina loves her husband.* | o possessivo concorda com o dono | 3 |
+| ~~Two importants projects.~~ | *Two important projects.* | adjetivo não varia | 3 |
+| ~~Has a bank near here?~~ | *Is there a bank near here?* | “tem” é *there is* | 4 |
+| ~~in the bus / in the third floor~~ | *on the bus / on the third floor* | *on* para transporte coletivo e andar | 4 |
+
+
+### Presente, horas e quantidades
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~She work at a bank.~~ | *She works at a bank.* | *-s* na 3ª pessoa | 5 |
+| ~~Does she works here?~~ | *Does she work here?* | o *-s* fica no auxiliar | 5 |
+| ~~He don’t like tea.~~ | *He doesn’t like tea.* | *doesn’t* com *he, she, it* | 5 |
+| ~~in Monday~~ | *on Monday* | dia da semana pede *on* | 6 |
+| ~~in the night~~ | *at night* | *at night* é fixo | 6 |
+| ~~some informations / an advice~~ | *some information / some advice* | incontáveis não têm plural | 7 |
+| ~~The news are good.~~ | *The news is good.* | *news* é singular | 7 |
+| ~~I’m needing help.~~ | *I need help.* | verbos de estado não usam *-ing* | 8 |
+| ~~I working now.~~ | *I’m working now.* | *-ing* pede *am / is / are* | 8 |
+
+
+### Modais, passado e comparações
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~I can to speak English.~~ | *I can speak English.* | sem *to* depois de modal | 9 |
+| ~~He cans help. / Do you can help?~~ | *He can help. / Can you help?* | modal não leva *-s* nem *do* | 9 |
+| ~~I born in 1995.~~ | *I was born in 1995.* | “nascer” é *was / were born* | 10 |
+| ~~We was tired.~~ | *We were tired.* | *were* com *you, we, they* | 10 |
+| ~~Did you were at home?~~ | *Were you at home?* | *to be* no passado não usa *did* | 10 |
+| ~~Did you went there?~~ | *Did you go there?* | *did* já marca o passado | 11 |
+| ~~I buyed / I taked~~ | *I bought / I took* | irregular não recebe *-ed* | 11 |
+| ~~more good / more cheap~~ | *better / cheaper* | adjetivo curto usa *-er* | 12 |
+| ~~enough big~~ | *big enough* | *enough* vem depois do adjetivo | 12 |
+
+
+### Futuro, perfeito e passado
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~Tomorrow I go to São Paulo.~~ | *Tomorrow I’m going to São Paulo.* | plano pede *going to* ou Present Continuous | 13 |
+| ~~I will to send it.~~ | *I’ll send it.* | sem *to* depois de *will* | 13 |
+| ~~I have seen him yesterday.~~ | *I saw him yesterday.* | data fechada pede Past Simple | 14 |
+| ~~Have you ever went to Paris?~~ | *Have you ever been to Paris?* | Present Perfect usa a 3ª coluna | 14 |
+| ~~I live here for ten years.~~ | *I’ve lived here for ten years.* | situação que continua pede Present Perfect | 15 |
+| ~~How long are you in Brazil?~~ | *How long have you been in Brazil?* | *how long* pede Present Perfect | 15 |
+| ~~Did you used to work here?~~ | *Did you use to work here?* | *did* tira o *-d* de *used* | 16 |
+
+
+### Verbos juntos, phrasal verbs, ligações e perguntas
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~I came here for study.~~ | *I came here to study.* | finalidade é *to* + verbo | 17 |
+| ~~Thanks for help. / Before to go.~~ | *Thanks for helping. / Before going.* | depois de preposição, *-ing* | 17 |
+| ~~I enjoy to cook.~~ | *I enjoy cooking.* | *enjoy* pede *-ing* | 17 |
+| ~~Turn off it!~~ | *Turn it off!* | o pronome entra no meio | 18 |
+| ~~The woman which helped me~~ | *The woman who helped me* | *who* para pessoas | 19 |
+| ~~Despite of the delay~~ | *Despite the delay* | *despite* não leva *of* | 19 |
+| ~~Do you know where is the bank?~~ | *Do you know where the bank is?* | pergunta indireta tem ordem afirmativa | 20 |
+| ~~Who did break the window?~~ | *Who broke the window?* | *who* sujeito não usa *did* | 20 |
+
+
+### Condições, hipóteses, passiva, discurso indireto e dedução
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~If it will rain, I’ll stay.~~ | *If it rains, I’ll stay.* | sem *will* depois de *if* | 21 |
+| ~~Call me when you will arrive.~~ | *Call me when you arrive.* | sem *will* depois de *when* | 21 |
+| ~~If I would have time…~~ | *If I had time…* | sem *would* na cláusula do *if* | 22 |
+| ~~If I knew yesterday…~~ | *If I had known yesterday…* | passado encerrado pede *had* + 3ª coluna | 22 |
+| ~~My bag stole at the airport.~~ | *My bag was stolen at the airport.* | passiva leva *be* | 23 |
+| ~~The room is been cleaned.~~ | *The room is being cleaned.* | *being*, não *been* | 23 |
+| ~~She said me that…~~ | *She told me that…* | *tell* leva pessoa; *say* não | 24 |
+| ~~She said she will call.~~ | *She said she would call.* | *will* recua para *would* | 24 |
+| ~~That mustn’t be true!~~ | *That can’t be true!* | dedução negativa é *can’t* | 25 |
+| ~~He must forgot the address.~~ | *He must have forgotten the address.* | *must have* + 3ª coluna | 25 |
+
+
+### Ordem das palavras, intensidade e falsos amigos
+
+| ERRO | CERTO | EM POUCAS PALAVRAS | CAP. |
+|---|---|---|---|
+| ~~I bought yesterday a new phone.~~ | *I bought a new phone yesterday.* | o tempo não fica entre o verbo e o objeto | 26 |
+| ~~She speaks very well English.~~ | *She speaks English very well.* | verbo e objeto andam juntos | 26 |
+| ~~She explained me the rules.~~ | *She explained the rules to me.* | *explain* só aceita *to* | 26 |
+| ~~I gave him it.~~ | *I gave it to him.* | com *it* e *them*, a pessoa vai com *to* | 26 |
+| ~~very fantastic / very terrible~~ | *absolutely fantastic / really terrible* | adjetivo forte não aceita *very* | 27 |
+| ~~much hot / much good~~ | *very hot / very good* | *much* não vai com adjetivo | 27 |
+| ~~so a good teacher~~ | *such a good teacher* | *such* antes de substantivo | 27 |
+| ~~I’m too happy to see you!~~ | *I’m so happy to see you!* | *too* indica excesso com problema | 27 |
+| ~~a ten-minutes walk~~ | *a ten-minute walk* | medida como adjetivo fica no singular | 28 |
+| ~~Actually I live in Recife.~~ | *Currently I live in Recife.* | *actually* é “na verdade” | 28 |
+| ~~I pretend to travel.~~ | *I intend to travel.* | *pretend* é “fingir” | 28 |
+| ~~I’ll invite all my parents.~~ (querendo dizer parentes) | *I’ll invite all my relatives.* | *parents* são só pai e mãe | 28 |
+
+
+## Glossário dos termos gramaticais
+
+Os termos da escola brasileira vêm na primeira coluna. Quando o livro dá nome próprio a uma ideia, isso vem dito na terceira.
+
+| PORTUGUÊS ESCOLAR | INGLÊS | OBSERVAÇÃO |
+|---|---|---|
+| substantivo | noun | contável ou incontável (capítulo 7) |
+| artigo | article | *a / an* e *the* |
+| adjetivo | adjective | vem antes do substantivo e não varia (capítulo 3) |
+| advérbio | adverb | muitos terminam em *-ly* |
+| pronome pessoal | personal pronoun | *I, you, he…* |
+| pronome possessivo | possessive | *my / mine* (capítulo 3) |
+| pronome relativo | relative pronoun | *who, which, that* (capítulo 19) |
+| preposição | preposition | *in, on, at* (capítulo 6) |
+| conjunção | conjunction | *and, but, because* (capítulo 19) |
+| verbo | verb |  |
+| verbo auxiliar | auxiliary verb | *do, have, be* ajudam o verbo principal |
+| verbo modal | modal verb | *can, must, should*; sem *-s* e sem *to* (capítulo 9) |
+| infinitivo | infinitive | forma base, com ou sem *to* |
+| gerúndio | *-ing* form | no livro: o verbo com *-ing*; faz papel de substantivo depois de preposição (capítulo 17) |
+| particípio | past participle | a 3ª coluna dos irregulares (capítulo 14) |
+| voz passiva | passive voice | *be* + particípio (capítulo 23) |
+| discurso indireto | reported speech | o tempo recua (capítulo 24) |
+| Present Simple | presente simples | hábitos e fatos (capítulo 5) |
+| Present Continuous | presente contínuo | agora e planos combinados (capítulos 8 e 13) |
+| Past Simple | passado simples | fato fechado no passado (capítulo 11) |
+| Present Perfect | pretérito perfeito composto | passado com ligação com o presente (capítulos 14 e 15) |
+| Past Perfect | mais-que-perfeito | passado antes de outro passado (capítulo 16) |
+| condicional | conditional | Zero e First: capítulo 21. Second e Third: capítulo 22 |
+| contável | countable | pode ir ao plural (capítulo 7) |
+| incontável | uncountable | não tem plural (capítulo 7) |
+| phrasal verb | phrasal verb | verbo + partícula, com sentido próprio (capítulo 18) |
+| question tag | question tag | “né?” em inglês: *isn’t it?* (capítulo 20) |
+| schwa | schwa | o som fraco “ə” das sílabas sem acento |
+| objeto direto / indireto | direct / indirect object | *gave him the book*: *him* é o indireto e *the book* é o direto (capítulo 26) |
+| advérbio de frequência | adverb of frequency | *always, usually, never*; ficam antes do verbo principal (capítulo 26) |
+| intensificador | intensifier | *very, really, quite, extremely*, que aumentam ou diminuem a força de um adjetivo (capítulo 27) |
+| palavra composta | compound word | duas palavras formando uma ideia, como *bus stop* (capítulo 28) |
+| prefixo / sufixo | prefix / suffix | *un-*, *re-* no começo; *-er*, *-ness* no fim (capítulo 28) |
+| falso amigo | false friend | palavra parecida com o português e de sentido diferente (capítulo 28) |
+
+
+## Mapa de revisão
+
+Use este mapa a cada quatro capítulos, ou quando um erro voltar. Para cada capítulo, há um teste de dois minutos. Faça o teste sem olhar o livro. Se errar, abra o capítulo e refaça o Degrau 4.
+
+| CAP. | TEMA | TESTE DE DOIS MINUTOS |
+|---|---|---|
+| 1 | Primeiro contato | Apresente-se: nome, origem, profissão e idade. Diga *It’s cold* e *It’s late*. |
+| 2 | Demonstrativos e plurais | Peça um café e um prato. Diga *this*, *that*, *these* e *those* com quatro objetos. |
+| 3 | Pessoas e posses | Fale de três pessoas da família com *his* e *her*. Diga *Lucas’s laptop* e *This laptop is mine*. |
+| 4 | There is / there are | Descreva o que há na sua rua com *There is* e *There are*. Diga onde fica o banco. |
+| 5 | Present Simple | Conte a sua rotina em seis frases. Faça uma pergunta e uma negativa com *she*. |
+| 6 | Horas, datas e números | Diga a hora atual, a data de hoje e o seu horário de trabalho com *in, on, at*. |
+| 7 | Contáveis e incontáveis | Complete: *some ___ / a ___ of advice*. Diga *How much* e *How many* com dois alimentos. |
+| 8 | Present Continuous | Diga o que você está fazendo agora. Diferencie *I work* de *I’m working*. |
+| 9 | Modais e imperativo | Faça um pedido com *Could you*, dê um conselho com *should* e diga uma proibição com *mustn’t*. |
+| 10 | Passado de to be | Diga onde você estava ontem. Diga *I was born in…* e pergunte a mesma coisa. |
+| 11 | Past Simple | Conte o seu fim de semana em cinco frases. Faça uma pergunta e uma negativa no passado. |
+| 12 | Comparativos e superlativos | Compare dois celulares. Diga *the best* e *too expensive*. |
+| 13 | Planos e previsões | Diga um plano com *going to*, uma decisão com *I’ll* e uma possibilidade com *might*. |
+| 14 | Present Perfect I | Pergunte *Have you ever…?* e responda. Use *already* e *yet*. |
+| 15 | Present Perfect II | Diga há quanto tempo você mora na sua cidade com *for* e *since*. Pergunte *How long…?*. |
+| 16 | Past Continuous, Past Perfect, used to | Diga o que fazia às 8 da noite de ontem. Diga como era a sua vida há dez anos com *used to*. |
+| 17 | -ing ou to; objeto e reflexivo | Complete: *I enjoy ___ / I want ___*. Diga *Thanks for ___* e *He did it by himself*. |
+| 18 | Phrasal verbs | Diga *Turn it off*, *Pick me up* e *Fill it out* em frases completas. |
+| 19 | Relativos e conectores | Una duas frases com *who* e duas com *although* e *so*. |
+| 20 | Perguntas naturais | Transforme *Where is the station?* em pergunta indireta. Feche uma frase com *isn’t it?*. |
+| 21 | Zero e First Conditionals | Complete: *If it rains, ___* e *Call me when ___*. Diga *unless* em uma frase. |
+| 22 | Second e Third Conditionals | Diga o que faria se ganhasse na loteria. Diga um arrependimento com *I wish* e com *If I had…*. |
+| 23 | Voz passiva e causativa | Passe para a passiva: *They cleaned the room*. Diga que você mandou cortar o cabelo. |
+| 24 | Discurso indireto | Conte o que alguém disse com *told me* e *said*. Relate a pergunta *Where do you live?*. |
+| 25 | Dedução e modais no passado | Diga *He must be tired* e *He can’t be at home*. Diga *I should have called*. |
+| 26 | Ordem dos complementos e advérbios | Diga *I gave him the book* de duas maneiras. Corrija ~~I eat often pizza~~ e ~~She explained me the rules~~. |
+| 27 | Intensidade | Diga “muito bom” e “absolutamente incrível”. Complete: *It’s ____ a good idea* e *It’s ____ hot to drink*. |
+| 28 | Compostas e falsos amigos | Diga “um passeio de vinte minutos” e “ponto de ônibus” em inglês. Para que serve *currently*? E *intend*? |
+
+COLEÇÃO LINVUU
+
+Explicação clara, no Gramática prática, com Exercícios com seu idioma tabelas gabarito
+
+A Linvuu é uma plataforma de idiomas feita para quem fala português: explicação clara, no seu idioma, e prática desde a primeira aula. Este livro acompanha o curso online e serve para estudar e para consultar.
+
+Material de estudo da Linvuu. O certificado de nível é emitido pela Linvuu e não é uma certificação oficial.
+
+linvuu.com.br

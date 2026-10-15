@@ -17,7 +17,8 @@ dotenv.config();
 
 // Uma falha assíncrona esquecida não pode derrubar o site: registra e segue.
 process.on('unhandledRejection', (e) => { console.error('[Linvuu] promessa rejeitada sem tratamento:', e instanceof Error ? e.message : e); });
-process.on('uncaughtException', (e) => { console.error('[Linvuu] erro não capturado:', e.message); });
+// Depois de uma exceção não capturada o processo fica em estado incerto: registra e sai, e o Render sobe outro.
+process.on('uncaughtException', (e) => { console.error('[Linvuu] erro não capturado:', e.message); setTimeout(() => process.exit(1), 200).unref(); });
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

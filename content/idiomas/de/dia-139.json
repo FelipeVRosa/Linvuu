@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "As comparações no dia a dia",
         "explicacao": "PASSO 1: «mehr» e «weniger» comparam quantidades: «Ich habe mehr Zeit als du», «Er hat weniger Geld.» PASSO 2: «immer» + comparativo = cada vez mais: «Es wird immer kälter.» PASSO 3: «gern, lieber, am liebsten» são a mesma família de «gut, besser, am besten»: gosto, prefiro, mais gosto. PASSO 4: o comparativo também vai antes do substantivo e recebe terminação: «ein größeres Haus», «die besseren Schuhe». PASSO 5: igualdade e diferença: «so … wie» (tão … quanto) e «anders als» (diferente de).",
         "tabela": [
@@ -50,7 +50,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Zwei Städte / Duas cidades",
         "contexto": "Dois amigos comparam Berlim e Hamburgo.",
         "linhas": [
@@ -117,13 +117,179 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Das ist größer als das.",
+            "translit": "",
+            "pt": "Isto é maior que aquilo.",
+            "en": "",
+            "audio": "Das ist größer als das."
+          },
+          {
+            "ru": "Welches gefällt dir besser?",
+            "translit": "",
+            "pt": "De qual você gosta mais?",
+            "en": "",
+            "audio": "Welches gefällt dir besser?"
+          },
+          {
+            "ru": "Das ist zu teuer.",
+            "translit": "",
+            "pt": "É caro demais.",
+            "en": "",
+            "audio": "Das ist zu teuer."
+          },
+          {
+            "ru": "Das ist nicht so teuer wie das.",
+            "translit": "",
+            "pt": "Não é tão caro quanto aquilo.",
+            "en": "",
+            "audio": "Das ist nicht so teuer wie das."
+          },
+          {
+            "ru": "Ich finde das schöner.",
+            "translit": "",
+            "pt": "Acho isso mais bonito.",
+            "en": "",
+            "audio": "Ich finde das schöner."
+          },
+          {
+            "ru": "Am liebsten trinke ich Tee.",
+            "translit": "",
+            "pt": "O que mais gosto de beber é chá.",
+            "en": "",
+            "audio": "Am liebsten trinke ich Tee."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "klein → comparativo:",
+            "opcoes": [
+              "kleiner",
+              "kleinr"
+            ],
+            "gabarito": "kleiner",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-035-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "groß → comparativo:",
+            "opcoes": [
+              "großer",
+              "größer"
+            ],
+            "gabarito": "größer",
+            "explicacao": "Veja a chave comentada no livro: (b), com trema",
+            "id": "de-035-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "alt → superlativo:",
+            "opcoes": [
+              "am ältsten",
+              "am ältesten"
+            ],
+            "gabarito": "am ältesten",
+            "explicacao": "Veja a chave comentada no livro: (b), com -esten depois de t",
+            "id": "de-035-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "gut → comparativo:",
+            "opcoes": [
+              "guter",
+              "besser"
+            ],
+            "gabarito": "besser",
+            "explicacao": "Veja a chave comentada no livro: (b), irregular",
+            "id": "de-035-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Tom ist größer ___ Lena.",
+            "opcoes": [
+              "als",
+              "wie"
+            ],
+            "gabarito": "als",
+            "explicacao": "Veja a chave comentada no livro: als",
+            "id": "de-035-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Lena ist so alt ___ Tom.",
+            "opcoes": [
+              "als",
+              "wie"
+            ],
+            "gabarito": "wie",
+            "explicacao": "Veja a chave comentada no livro: wie",
+            "id": "de-035-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: schnell → ___, ___ · jung → ___, ___ · kalt → ___, ___",
+            "respostaEsperada": "schneller, am schnellsten; jünger, am jüngsten; kälter, am kältesten",
+            "id": "de-035-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: teuer → ___, ___ · hoch → ___, ___",
+            "respostaEsperada": "teurer, am teuersten; höher, am höchsten",
+            "id": "de-035-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: gut → ___, ___ · gern → ___, ___ · viel → ___, ___",
+            "respostaEsperada": "besser, am besten; lieber, am liebsten; mehr, am meisten",
+            "id": "de-035-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Die Wohnung in München ist teurer ___ meine Wohnung in Recife.",
+            "respostaEsperada": "als",
+            "explicacao": "Veja a chave comentada no livro: als",
+            "id": "de-035-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Er ist genau so alt ___ ich.",
+            "respostaEsperada": "wie",
+            "explicacao": "Veja a chave comentada no livro: wie",
+            "id": "de-035-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Der Bus ist nicht so schnell ___ der Zug, aber er ist billiger als das Taxi.",
+            "respostaEsperada": "wie",
+            "explicacao": "Veja a chave comentada no livro: wie / als",
+            "id": "de-035-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Der Bus ist nicht so schnell wie der Zug, aber er ist billiger ___ das Taxi.",
+            "respostaEsperada": "als",
+            "explicacao": "Veja a chave comentada no livro: wie / als",
+            "id": "de-035-L-206b"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Compare em voz alta duas cidades que você conhece: tamanho, preço, clima e o que você prefere."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva uma comparação com cada forma: -er … als, so … wie, am -sten e der -ste."
       }
     ]

@@ -20,8 +20,38 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Observe os finais de mein. PASSO 2: Agora observe o dono. PASSO 3: Tom und seine Mutter. Lena und ihr Vater. PASSO 4: Camila und ihr Bruder. PASSO 5: Perguntas: PASSO 6: Os finais de mein lembram quais palavras que você já conhece? PASSO 7: O que decide entre sein e ihr? PASSO 8: O que decide entre seine e sein?",
+        "tabela": [
+          {
+            "c1": "Nominativo",
+            "c2": "Das ist mein Bruder.",
+            "c3": "Das ist meine Schwester.",
+            "c4": "Das ist mein Kind.",
+            "c5": "Das sind meine Eltern."
+          },
+          {
+            "c1": "Acusativo",
+            "c2": "Ich sehe meinen Bruder.",
+            "c3": "Ich sehe meine Schwester.",
+            "c4": "Ich sehe mein Kind.",
+            "c5": "Ich sehe meine Eltern."
+          },
+          {
+            "c1": "Dativo",
+            "c2": "Ich helfe meinem Bruder.",
+            "c3": "Ich helfe meiner Schwester.",
+            "c4": "Ich helfe meinem Kind.",
+            "c5": "Ich helfe meinen Eltern."
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 7,
         "itens": [
           {
             "ru": "alt",
@@ -83,7 +113,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 10,
         "titulo": "Mein, dein, sein...: os possessivos",
         "explicacao": "Os possessivos concordam com a COISA possuída (gênero e número) e não com o dono: «mein Vater», «meine Mutter», «mein Kind», «meine Eltern». Eles têm as terminações de «ein»: sem terminação no masculino e no neutro, -e no feminino e no plural. «Sein» é «dele» e «ihr» é «dela» (e também «deles»); «Ihr», com maiúscula, é o «seu» formal. Atenção: «unser» e «euer» perdem o -e- antes da terminação: unsere, eure.",
         "tabela": [
@@ -146,12 +176,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Diga: «Das ist mein Vater. Das ist meine Mutter. Das sind meine Eltern. Mein Bruder ist jung.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva as 6 formas de «haben» de memória."
       }
     ]

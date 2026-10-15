@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -221,14 +221,87 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se dizendo o artigo, o singular e o plural de 6 palavras."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva seis frases descrevendo o seu quarto ou escritório com Hier ist ein/eine … e Der/Die/Das … ist … (use groß, klein, neu, alt, schön).",
+            "respostaEsperada": "Hier ist ein Bett. Das Bett ist groß. Dort ist ein Tisch. Der Tisch ist neu. Da ist eine Lampe. Die Lampe ist sehr schön.",
+            "id": "de-003-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva seis substantivos essenciais do cotidiano com artigo e plural (ex.: der Schlüssel, die Zeitung, das Buch, die Wohnung, der Stuhl, das Auto).",
+            "respostaEsperada": "der Schlüssel, die Schlüssel; die Zeitung, die Zeitungen; das Buch, die Bücher; die Wohnung, die Wohnungen; der Stuhl, die Stühle; das Auto, die Autos.",
+            "id": "de-003-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Forme três palavras compostas e indique o artigo de cada uma: der Kaffee + die Tasse, das Haus + die Tür, die Zeitung + der Artikel (com -s- de ligação).",
+            "respostaEsperada": "Compostos: die Kaffeetasse (gênero da última parte: die Tasse), die Haustür (die Tür), der Zeitungsartikel (der Artikel).",
+            "id": "de-003-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist eine Tisch.",
+            "respostaEsperada": "Das ist ein Tisch.",
+            "explicacao": "Das ist ein Tisch. (Tisch é masculino: ein.)",
+            "id": "de-003-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Die Fenster ist groß.",
+            "respostaEsperada": "Das Fenster ist groß.",
+            "explicacao": "Das Fenster ist groß. (Fenster é neutro.)",
+            "id": "de-003-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Der Lampe ist neu.",
+            "respostaEsperada": "Die Lampe ist neu.",
+            "explicacao": "Die Lampe ist neu.",
+            "id": "de-003-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Die Autoen sind neu.",
+            "respostaEsperada": "Die Autos sind neu.",
+            "explicacao": "Die Autos sind neu. (plural em -s.)",
+            "id": "de-003-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich bin eine Lehrerin.",
+            "respostaEsperada": "Ich bin Lehrerin.",
+            "explicacao": "Ich bin Lehrerin. (profissão sem artigo.)",
+            "id": "de-003-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Die Küche ist hier.",
+            "respostaEsperada": "OK",
+            "id": "de-003-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é trazer o gênero do português (die Haus para “a casa”, der Sonne para “o sol”) ou colocar artigo antes de profissão depois de sein (Ich bin eine Lehrerin). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases com «das ist ein / eine / kein» e «das sind»."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 4. Transforme em pergunta de sim ou não: Das ist ein Tisch. Das sind Stühle. Tom ist Lehrer. Do capítulo 3. Reescreva começando por Heute: Der Tisch ist neu.Die Lampe ist alt. Do capítulo 2. Troque o substantivo pelo pronome (er, sie, es): Der Tisch ist neu. Die Lampe ist alt. Das Bett ist groß."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Digo der Tisch, nunca só Tisch. · Uso Das ist ein/eine … para apontar algo. · Escolho er, sie ou es conforme o gênero e formo o plural de palavras comuns."
       }
     ]
   },

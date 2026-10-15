@@ -20,8 +20,87 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você liga duas frases com um pronome relativo (der, die, das, den), escolhe a forma pelo gênero da palavra anterior e pela função dentro da segunda frase, manda o verbo para o fim e põe as vírgulas."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "No achados e perdidos",
+        "contexto": "Camila perdeu a mochila no trem e foi ao setor de achados e perdidos da estação.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe.",
+            "pt": "— Bom dia. Estou procurando uma mochila que esqueci ontem no trem.",
+            "audio": "Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe."
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Wie sieht er aus?",
+            "pt": "— Como ela é?",
+            "audio": "Wie sieht er aus?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war.",
+            "pt": "— É preta e tem uma listra vermelha. Na mochila tem um livro que eu ainda preciso ler, uma jaqueta de que eu gosto muito e a minha câmera, que não foi barata.",
+            "audio": "Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war."
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat.",
+            "pt": "— Então nós a temos. Esta é a mochila que um homem trouxe hoje cedo.",
+            "audio": "Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken.",
+            "pt": "— Maravilha! Onde está o homem que a encontrou? Quero agradecer a ele.",
+            "audio": "Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken."
+          },
+          {
+            "personagem": "Mitarbeiter",
+            "ru": "— Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben.",
+            "pt": "— Ele já foi embora, mas deixou o nome anotado. A senhora pode escrever a ele.",
+            "audio": "Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: no português, o “que” é o mesmo para tudo. Em alemão, olhe duas vezes: o gênero da palavra anterior escolhe a família (der, die, das, die), e a função do pronome na segunda frase escolhe o caso.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "O homem que mora aqui é médico.",
+            "ingles": "Der Mann, der hier wohnt, ist Arzt."
+          },
+          {
+            "portugues": "O homem que eu conheço é médico.",
+            "ingles": "Der Mann, den ich kenne, ist Arzt."
+          },
+          {
+            "portugues": "A mulher que mora aqui é médica.",
+            "ingles": "Die Frau, die hier wohnt, ist Ärztin."
+          },
+          {
+            "portugues": "A mulher que eu conheço é médica.",
+            "ingles": "Die Frau, die ich kenne, ist Ärztin."
+          },
+          {
+            "portugues": "O livro que eu li é bom.",
+            "ingles": "Das Buch, das ich gelesen habe, ist gut."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "der Gast",
@@ -83,7 +162,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "A oração relativa, passo a passo",
         "explicacao": "PASSO 1: uma ORAÇÃO RELATIVA descreve um substantivo: «Der Mann, der dort steht, ist mein Chef» (o homem QUE está ali é o meu chefe). PASSO 2: ela começa com um PRONOME RELATIVO, que tem a forma do ARTIGO DEFINIDO: der (m), die (f), das (n), die (plural). PASSO 3: o GÊNERO e o NÚMERO do relativo são os do substantivo que ele descreve (o antecedente): «Mann» é masculino → «der»; «Frau» é feminino → «die». PASSO 4: o CASO do relativo vem da sua função DENTRO da relativa; nesta aula, ele é o SUJEITO (nominativo). PASSO 5: o verbo conjugado vai para o FIM da relativa, como em «weil» e «dass». PASSO 6: a relativa vem logo DEPOIS do substantivo e entre VÍRGULAS: «Der Mann, der dort steht, ist mein Chef.»",
         "comparacao": "o português usa «que» para todos os gêneros («o homem que», «a mulher que»). O alemão usa der, die, das, die, e o verbo vai para o fim.",
@@ -134,12 +213,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Descreva 6 pessoas ou coisas em voz alta: «Der Mann, der … Die Frau, die … Das Kind, das …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 8 frases do A2 de que você mais gosta: Perfekt, dativo, weil, dass e wenn."
       }
     ]

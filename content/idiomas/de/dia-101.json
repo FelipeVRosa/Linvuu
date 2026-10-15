@@ -20,8 +20,89 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você diz “para quem” e “a quem” com dem, der, mir, dir, ihm e ihr, e usa os verbos que pedem dativo (helfen, gefallen, gehören) sem trocar pelo acusativo."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Um presente de aniversário",
+        "contexto": "Jonas e Camila escolhem um presente para uma amiga.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Lena hat morgen Geburtstag. Was schenken wir ihr?",
+            "pt": "— A Lena faz aniversário amanhã. O que damos a ela?",
+            "audio": "Lena hat morgen Geburtstag. Was schenken wir ihr?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt.",
+            "pt": "— Vou dar um livro a ela. Com certeza ela vai gostar do livro.",
+            "audio": "Ich schenke ihr ein Buch. Das Buch gefällt ihr bestimmt."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer.",
+            "pt": "— Boa ideia! Vou te mostrar uma loja. O vendedor de lá sempre nos ajuda.",
+            "audio": "Gute Idee! Ich zeige dir einen Laden. Der Verkäufer dort hilft uns immer."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Danke! Das ist nett von dir.",
+            "pt": "— Obrigada! Que gentileza sua.",
+            "audio": "Danke! Das ist nett von dir."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gern! Und wie geht es dir heute?",
+            "pt": "— De nada! E como você está hoje?",
+            "audio": "Gern! Und wie geht es dir heute?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Mir geht es gut. Und dir?",
+            "pt": "— Estou bem. E você?",
+            "audio": "Mir geht es gut. Und dir?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Mir auch.",
+            "pt": "— Eu também.",
+            "audio": "Mir auch."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: helfen, danken, gehören, gefallen, antworten: todos dativo. Memorize a lista como um bloco só.",
+        "comparacao": "O dativo é o caso do “a quem” e “para quem”. Em português, ele aparece em “dou a ele”, “dou-lhe”, “me dá”. Mas há três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Ajudo você.",
+            "ingles": "Ich helfe dir."
+          },
+          {
+            "portugues": "O livro pertence a mim.",
+            "ingles": "Das Buch gehört mir."
+          },
+          {
+            "portugues": "Eu gosto do livro.",
+            "ingles": "Das Buch gefällt mir."
+          },
+          {
+            "portugues": "Dou o livro ao homem.",
+            "ingles": "Ich gebe dem Mann das Buch."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "der Brief",
@@ -83,7 +164,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O dativo, passo a passo",
         "explicacao": "PASSO 1: o DATIVO responde a «wem?» (a quem?). Ele marca a pessoa que RECEBE, ouve ou se beneficia da ação, o OBJETO INDIRETO: «Ich gebe dem Kind einen Apfel»: o que eu dou é «einen Apfel» (acusativo, o objeto direto), e quem recebe é «dem Kind» (dativo). PASSO 2: artigos definidos no dativo: masculino «dem», feminino «der», neutro «dem», plural «den». PASSO 3: artigos indefinidos: masculino «einem», feminino «einer», neutro «einem»; o plural não tem «ein» (com «kein»: «keinen»). PASSO 4: no PLURAL, o substantivo ganha «-n»: «den Kindern», «den Freunden» (exceto os que já terminam em -n ou -s: «den Eltern», «den Autos»). PASSO 5: truque: masculino e neutro são IGUAIS no dativo (dem, einem); e o feminino «der» é igual ao do genitivo. PASSO 6: compare as três colunas na tabela e leia em voz alta, por coluna.",
         "comparacao": "em português o objeto indireto vem com «a» ou «para» («dou a maçã ao menino»). Em alemão a preposição desaparece e o artigo muda: «dem Kind».",
@@ -175,12 +256,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 6 frases em que você dá, mostra ou manda algo a alguém: «Ich gebe dem … / der … / den … Kindern …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o quadro dos artigos no nominativo e no acusativo, nos quatro gêneros."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -208,14 +208,100 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se explicando como se formam 6 palavras alemãs que você acabou de aprender."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Crie cinco palavras compostas com as palavras que você já conhece (Haus, Tür, Tisch, Zimmer, Küche, Kaffee, Tasse, Arbeit), com o artigo e o significado.",
+            "respostaEsperada": "die Küchentür (porta da cozinha), das Arbeitszimmer (escritório/quarto de trabalho), der Kaffeetisch (mesa de café), der Hausschlüssel (chave de casa), die Teetasse (xícara de chá).",
+            "id": "de-063-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva a sua casa em cinco frases, usando pelo menos quatro palavras compostas (Ich wohne in einer 3-Zimmer-Wohnung. Ich habe eine …).",
+            "respostaEsperada": "Ich wohne in einer hellen 3-Zimmer-Wohnung im Stadtzentrum. In meinem Arbeitszimmer steht ein großer Schreibtisch. In der Küche haben wir einen neuen Kühlschrank und eine Kaffeemaschine. Im Keller gibt es auch einen Fahrradraum.",
+            "id": "de-063-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase com cada um destes falsos amigos: bekommen, Gift, Rock, Dose.",
+            "respostaEsperada": "Wann bekommst du deinen neuen Pass? / Vorsicht, diese Pflanze ist Gift für Katzen! / Im Sommer trägt sie gern einen leichten Rock. / Ich kaufe im Supermarkt eine Dose Suppe.",
+            "id": "de-063-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma conversa curta, no estilo da Cena, para perguntar sobre um aluguel (preço, Kaution, visita).",
+            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Ich rufe wegen der Wohnungsanzeige im Internet an.— Guten Tag! Ja, die Zweizimmerwohnung ist noch frei. Die Monatsmiete beträgt 700 Euro.— Und wie hoch ist die Mietkaution?— Zwei Monatsmieten. Kommen Sie doch morgen um sechzehn Uhr zur Wohnungsbesichtigung!",
+            "id": "de-063-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das Handtasche ist neu.",
+            "respostaEsperada": "Die Handtasche ist neu.",
+            "explicacao": "Die Handtasche ist neu.",
+            "id": "de-063-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich werde morgen einen Brief.",
+            "respostaEsperada": "Ich bekomme morgen einen Brief.",
+            "explicacao": "Ich bekomme morgen einen Brief.",
+            "id": "de-063-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das Gift ist für dich zum Geburtstag.",
+            "respostaEsperada": "Das Geschenk ist für dich zum Geburtstag.",
+            "explicacao": "Das Geschenk ist für dich zum Geburtstag.",
+            "id": "de-063-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Mein Neffe geht auf die Gymnasium.",
+            "respostaEsperada": "Mein Neffe geht auf das Gymnasium.",
+            "explicacao": "Mein Neffe geht auf das Gymnasium. (das Gymnasium é neutro; depois de auf com movimento, acusativo.)",
+            "id": "de-063-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das Kinder Zimmer ist klein.",
+            "respostaEsperada": "Das Kinderzimmer ist klein.",
+            "explicacao": "Das Kinderzimmer ist klein.",
+            "id": "de-063-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich bekomme eine Mail von meinem Chef.",
+            "respostaEsperada": "OK",
+            "id": "de-063-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Die Dosis ist leer.",
+            "respostaEsperada": "Die Dose ist leer.",
+            "explicacao": "Die Dose ist leer.",
+            "id": "de-063-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é pegar o artigo da primeira parte: das Handtasche. O segundo é cair no falso amigo: Ich werde einen Brief quando se quer dizer “recebo”, ou ein Gift quando se quer dizer “um presente”. O terceiro é separar as partes de uma palavra composta, como no português: Kinder Zimmer. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 10 palavras de formação diferente (composto, prefixo, sufixo) e explique cada uma."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 26. Complete: Ich habe ____ ____ gestern gegeben. (es, ihm) Do capítulo 25. Complete: Das ist die Wohnung, ____ ich suche. (der, die) Do capítulo 18. Complete: Ich habe einen Brief ____. (bekommen, Perfekt)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Leio uma palavra composta nova da direita para a esquerda. · Digo o artigo certo de qualquer composto. · Evito cinco falsos amigos nas minhas frases."
       }
     ]
   },

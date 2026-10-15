@@ -20,29 +20,8 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "texto",
-        "min": 5,
-        "titulo": "Mein Frühstück / Meu café da manhã",
-        "ru": "Ich frühstücke um sieben Uhr. Ich trinke einen Kaffee und esse ein Brot mit Butter und Käse. Mein Bruder isst einen Apfel und trinkt Tee. Er isst nicht gern Eier. Am Wochenende frühstücken wir zusammen.",
-        "pt": "Tomo café da manhã às sete horas. Bebo um café e como um pão com manteiga e queijo. Meu irmão come uma maçã e bebe chá. Ele não gosta de comer ovos. No fim de semana tomamos café da manhã juntos.",
-        "perguntas": [
-          {
-            "pergunta": "Wann frühstückt der Autor?",
-            "resposta": "Um sieben Uhr"
-          },
-          {
-            "pergunta": "Was trinkt der Bruder?",
-            "resposta": "Tee"
-          },
-          {
-            "pergunta": "Wann frühstücken sie zusammen?",
-            "resposta": "Am Wochenende"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 15,
+        "min": 13,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -220,14 +199,73 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se contando o que você come e bebe no café da manhã e fazendo um pedido de restaurante."
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva cinco itens da sua lista de compras ou trabalho com Ich brauche …, usando dois masculinos (einen Laptop, einen Schlüssel), um feminino (eine Tasche), um neutro (ein Buch) e um plural (Bücher).",
+            "respostaEsperada": "Ich brauche einen Laptop, einen Schlüssel, eine Tasche, ein Buch und Bücher für den Kurs.",
+            "id": "de-007-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma conversa de brechó ou loja de seis falas entre você e um vendedor (Ich suche einen/eine … / Wie viel kostet …? / Ich nehme den/die …).",
+            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Ich suche einen Rucksack und eine Jacke.— Hier ist ein Rucksack. Er ist fast neu.— Wie viel kostet der Rucksack?— Er kostet fünfzehn Euro. Und die Jacke kostet zwanzig Euro.— Super, ich nehme den Rucksack und die Jacke!— Vielen Dank!",
+            "id": "de-007-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três perguntas diretas: duas com Wen (pessoas) e uma com Was (coisa), com suas respectivas respostas.",
+            "respostaEsperada": "— Wen besuchst du morgen? — Ich besuche meinen Bruder. / — Wen kennst du hier in München? — Ich kenne Jonas und Lena. / — Was suchst du? — Ich suche meinen Schlüssel.",
+            "id": "de-007-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich kaufe der Tisch.",
+            "respostaEsperada": "Ich kaufe den Tisch.",
+            "explicacao": "Ich kaufe den Tisch.",
+            "id": "de-007-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich suche den Lampe.",
+            "respostaEsperada": "Ich suche die Lampe.",
+            "explicacao": "Ich suche die Lampe.",
+            "id": "de-007-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich brauche er.",
+            "respostaEsperada": "Ich brauche ihn.",
+            "explicacao": "Ich brauche ihn.",
+            "id": "de-007-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich suche eine Lampe.",
+            "respostaEsperada": "OK",
+            "id": "de-007-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é esquecer o -en do masculino no objeto direto (Ich habe ein Hund em vez de einen Hund) ou colocar acusativo depois do verbo sein (Das ist einen Tisch em vez de ein Tisch). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases sobre o que você come e bebe no café da manhã."
+        "min": 3,
+        "enunciado": "Retorno. Do capítulo 7. Complete: Der Tisch kostet ____ Euro (20). Die Lampe kostet ____ Euro (8). Der Kurs beginnt um ____ Uhr (4h). Do capítulo 6. Negue: Ich kaufe einen Tisch. Ich suche eine Lampe. Ich habe ein Auto. Do capítulo 5. Diga o artigo: ____ Schrank, ____ Lampe, ____ Fenster, ____ Stühle."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Digo Ich kaufe den Tisch e Ich habe einen Hund sem pensar. · Troco um objeto masculino por ihn e pergunto por uma pessoa-objeto com Wen."
       }
     ]
   },

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Sufixos de substantivos e adjetivos",
         "explicacao": "PASSO 1: os SUFIXOS indicam o tipo de palavra e o gênero. PASSO 2: substantivos FEMININOS: «-UNG» (die Wohnung, die Meinung), «-HEIT» e «-KEIT» (die Freiheit, die Möglichkeit), «-SCHAFT» (die Freundschaft), «-TION» (die Information). PASSO 3: substantivos de PESSOAS: «-ER» (der Lehrer), «-IN» (die Lehrerin). PASSO 4: DIMINUTIVOS: «-CHEN» e «-LEIN» (sempre neutros): «das Mädchen», «das Büchlein». PASSO 5: ADJETIVOS: «-LICH» (freundlich), «-IG» (ruhig), «-BAR» (lösbar), «-LOS» (arbeitslos), «-VOLL» (sinnvoll), «-ISCH» (typisch), e o prefixo «UN-» (negação): «unmöglich». PASSO 6: com essas regras, você deduz o gênero e o sentido de palavras novas.",
         "tabela": [
@@ -60,7 +60,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Wortbildung im Deutschkurs / Formação de palavras no curso",
         "contexto": "Uma professora e dois alunos brincam com palavras.",
         "linhas": [
@@ -115,13 +115,237 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich rufe wegen der Wohnungsanzeige an.",
+            "translit": "",
+            "pt": "Estou ligando por causa do anúncio.",
+            "en": "",
+            "audio": "Ich rufe wegen der Wohnungsanzeige an."
+          },
+          {
+            "ru": "Wie hoch ist die Kaution?",
+            "translit": "",
+            "pt": "De quanto é a caução?",
+            "en": "",
+            "audio": "Wie hoch ist die Kaution?"
+          },
+          {
+            "ru": "Ich bekomme morgen einen Brief.",
+            "translit": "",
+            "pt": "Amanhã eu recebo uma carta.",
+            "en": "",
+            "audio": "Ich bekomme morgen einen Brief."
+          },
+          {
+            "ru": "Sie trägt einen roten Rock.",
+            "translit": "",
+            "pt": "Ela usa uma saia vermelha.",
+            "en": "",
+            "audio": "Sie trägt einen roten Rock."
+          },
+          {
+            "ru": "Vorsicht, das ist Gift!",
+            "translit": "",
+            "pt": "Cuidado, isto é veneno!",
+            "en": "",
+            "audio": "Vorsicht, das ist Gift!"
+          },
+          {
+            "ru": "Ich kaufe eine Dose Tomaten.",
+            "translit": "",
+            "pt": "Compro uma lata de tomates.",
+            "en": "",
+            "audio": "Ich kaufe eine Dose Tomaten."
+          },
+          {
+            "ru": "Mein Opa bekommt eine Rente.",
+            "translit": "",
+            "pt": "Meu avô recebe aposentadoria.",
+            "en": "",
+            "audio": "Mein Opa bekommt eine Rente."
+          },
+          {
+            "ru": "Mein Neffe geht auf das Gymnasium.",
+            "translit": "",
+            "pt": "Meu sobrinho estuda no Gymnasium (escola secundária).",
+            "en": "",
+            "audio": "Mein Neffe geht auf das Gymnasium."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Qual é o artigo de Handtasche (Hand + Tasche)? (der, die, das)",
+            "respostaEsperada": "die (die Tasche)",
+            "id": "de-063-L-101"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Qual é o artigo de Kinderzimmer? (der, die, das)",
+            "respostaEsperada": "das (das Zimmer)",
+            "id": "de-063-L-102"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Qual é o artigo de Haustür? (der, die, das)",
+            "respostaEsperada": "die (die Tür)",
+            "id": "de-063-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "O que significa Gift? (presente, veneno)",
+            "respostaEsperada": "veneno",
+            "id": "de-063-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "O que significa bekommen? (receber, tornar-se)",
+            "respostaEsperada": "receber",
+            "id": "de-063-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Saia em alemão:",
+            "opcoes": [
+              "der Rock",
+              "die Rente"
+            ],
+            "gabarito": "der Rock",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-063-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual sufixo marca “sem”?",
+            "opcoes": [
+              "-los",
+              "-bar"
+            ],
+            "gabarito": "-los",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-063-L-107"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: die Hand + die Tasche =",
+            "respostaEsperada": "die Handtasche",
+            "id": "de-063-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: der Winter + die Jacke =",
+            "respostaEsperada": "die Winterjacke",
+            "id": "de-063-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: die Arbeit + die Zeit =",
+            "respostaEsperada": "die Arbeitszeit",
+            "id": "de-063-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: der Geburtstag + das Geschenk =",
+            "respostaEsperada": "das Geburtstagsgeschenk",
+            "id": "de-063-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: die Küche + der Tisch =",
+            "respostaEsperada": "der Küchentisch",
+            "id": "de-063-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a palavra composta com o artigo: der Zahn + der Arzt =",
+            "respostaEsperada": "der Zahnarzt",
+            "id": "de-063-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Forme a palavra pedida: wohnen → die ___ (-ung)",
+            "respostaEsperada": "Wohnung",
+            "explicacao": "Veja a chave comentada no livro: Wohnung",
+            "id": "de-063-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Forme a palavra pedida: verkaufen → o homem que vende: der ___ (-er); a mulher: die Verkäuferin",
+            "respostaEsperada": "Verkäufer",
+            "explicacao": "Veja a chave comentada no livro: Verkäufer, Verkäuferin",
+            "id": "de-063-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Forme a palavra pedida: verkaufen → o homem que vende: der Verkäufer (-er); a mulher: die ___",
+            "respostaEsperada": "Verkäuferin",
+            "explicacao": "Veja a chave comentada no livro: Verkäufer, Verkäuferin",
+            "id": "de-063-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Forme a palavra pedida: krank → die ___ (-heit)",
+            "respostaEsperada": "Krankheit",
+            "explicacao": "Veja a chave comentada no livro: Krankheit",
+            "id": "de-063-L-209a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Forme a palavra pedida: die Arbeit → “sem trabalho”: ___ (-los)",
+            "respostaEsperada": "arbeitslos",
+            "explicacao": "Veja a chave comentada no livro: arbeitslos",
+            "id": "de-063-L-210a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Escolha o falso amigo: Ich ___ zu Weihnachten einen Pullover.",
+            "opcoes": [
+              "bekomme",
+              "werde"
+            ],
+            "gabarito": "bekomme",
+            "explicacao": "Veja a chave comentada no livro: bekomme (werde seria “tornar-se”)",
+            "id": "de-063-L-211"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Escolha o falso amigo: Ich kaufe eine ___ Tomaten.",
+            "opcoes": [
+              "Dose",
+              "Dosis"
+            ],
+            "gabarito": "Dose",
+            "explicacao": "Veja a chave comentada no livro: Dose (a lata)",
+            "id": "de-063-L-212"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Escolha o falso amigo: Vorsicht! Das ist ___!",
+            "opcoes": [
+              "Gift",
+              "Geschenk"
+            ],
+            "gabarito": "Gift",
+            "explicacao": "Veja a chave comentada no livro: Gift",
+            "id": "de-063-L-213"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Forme 6 palavras novas com sufixos e diga o artigo de cada: «die Freundschaft, die Möglichkeit, die Wohnung …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 8 verbos com prefixo e o Partizip II de cada um."
       }
     ]

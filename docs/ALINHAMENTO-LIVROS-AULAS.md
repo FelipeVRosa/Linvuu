@@ -89,3 +89,12 @@ Os 28 capítulos em inglês têm a mesma estrutura de 10 seções (cena, armadil
 **Revisão dos autores:** o PR de cada lote lista as aulas alteradas. Nada é apagado, pois as sessões antigas continuam no histórico do Git.
 
 **Depois do inglês:** o mesmo gerador, com um arquivo de mapa por idioma, para espanhol, alemão, francês e italiano.
+
+## 9. Alemão (15/10/2026)
+
+Fonte: `Linvuu_Alemao_final.pdf` (28 capítulos A1–A2 mais apêndices e vocabulário oficial). O livro tem a mesma estrutura de 12 seções do inglês (cena, armadilha, descubra, em 30 segundos, por dentro, frases de ouro, treino em quatro degraus, erro típico, retorno, resumo, glossário e chave comentada).
+
+- **Extração:** `scripts/livros/extrair_pdf_de.py` lê o PDF (títulos 34,5 pt, seções 21 pt, tabelas em retângulos) e grava `content/livros-privado/de/cap-NN.json` e `.md`. Capítulos 1 e 2 já eram públicos e foram mantidos como estão.
+- **Mapa:** `content/livros-privado/de/alinhamento.json` cruza as 72 aulas do site com os 28 capítulos. Cada aula usa um capítulo. O capítulo 4 (perguntas) ficou na aula 10 e o 23 (conectores) na aula 57 por falta de aula própria no site; as aulas B1/B2 sem capítulo seguem só com o conteúdo do site. Os autores podem reordenar.
+- **Geração:** `scripts/livros/gerar_aulas_de.py --aulas …` (rodar sobre o estado original de `content/idiomas/de`, com `git checkout` antes de repetir). Aula dona recebe as quatro sessões completas; as de reforço dividem entre si os degraus 3 e 4 (produção só na dona, correções em rodízio).
+- **Exercícios:** múltipla escolha quando o livro traz (a)(b)(c) ou (der, die, das); lacuna corrigível quando a chave dá uma resposta curta por lacuna; escrita livre, com resposta-modelo, nos demais casos.

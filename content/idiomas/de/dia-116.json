@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -213,14 +213,94 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se descrevendo a sua casa: onde as coisas estão e para onde você as leva."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva seu trajeto de casa até o trabalho ou curso em quatro frases usando aus, mit, zu/zum, in, nach.",
+            "respostaEsperada": "Ich gehe um acht Uhr aus dem Haus. Dann gehe ich zu Fuß zur Haltestelle. Ich fahre mit dem Bus in die Stadt und gehe ins Büro.",
+            "id": "de-029-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga onde estão quatro objetos do seu quarto usando liegt, steht, hängt + auf, neben, unter, an (Dativo), e depois diga onde você os coloca usando Ich lege / Ich stelle (Acusativo).",
+            "respostaEsperada": "Parado (Dativo):Der Laptop liegt auf dem Tisch. Die Lampe steht neben dem Bett. Die Tasche liegt unter dem Stuhl. Das Bild hängt an der Wand.Movimento (Acusativo):Ich lege den Laptop auf den Tisch. Ich stelle die Lampe neben das Bett.",
+            "id": "de-029-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique a um amigo como chegar à estação ou à sua casa em quatro frases (Gehen Sie geradeaus, dann nach links…).",
+            "respostaEsperada": "Sie gehen hier geradeaus bis zur Bank. Dann gehen Sie nach rechts. Die Haltestelle ist vor dem Supermarkt. Mit dem Bus fahren Sie fünf Minuten bis zum Bahnhof.",
+            "id": "de-029-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich gehe in der Küche.",
+            "respostaEsperada": "Ich gehe in die Küche.",
+            "explicacao": "Ich gehe in die Küche. (movimento)",
+            "id": "de-029-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich bin in die Küche.",
+            "respostaEsperada": "Ich bin in der Küche.",
+            "explicacao": "Ich bin in der Küche. (parado)",
+            "id": "de-029-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich fahre mit den Bus.",
+            "respostaEsperada": "Ich fahre mit dem Bus.",
+            "explicacao": "Ich fahre mit dem Bus.",
+            "id": "de-029-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist für du.",
+            "respostaEsperada": "Das ist für dich.",
+            "explicacao": "Das ist für dich.",
+            "id": "de-029-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich gehe zu Hause.",
+            "respostaEsperada": "Ich gehe nach Hause.",
+            "explicacao": "Ich gehe nach Hause.",
+            "id": "de-029-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich lerne seit ein Monat Deutsch.",
+            "respostaEsperada": "Ich lerne seit einem Monat Deutsch.",
+            "explicacao": "Ich lerne seit einem Monat Deutsch.",
+            "id": "de-029-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich gehe zum Arzt.",
+            "respostaEsperada": "OK",
+            "id": "de-029-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é ignorar a diferença entre parado (wo? → Dativo) e movimento (wohin? → Acusativo) depois das 9 preposições espaciais, ou misturar nach, zu e in ao dizer “vou para”. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 6 frases: 3 com Wo? (dativo) e 3 com Wohin? (acusativo)."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 9. Complete com o pronome no dativo: Das Geschenk gehört ____ (ich). Er hilft ____ (wir). Depois diga: Wem gehört das Buch? Do capítulo 8. Complete: für ____ Mann, ohne ____ Tisch (m.). Do capítulo 7. Complete: Der Kurs beginnt um ____ Uhr (4h). Am ____ Mai (12) habe ich Geburtstag."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Escolho entre nach, zu e in para ir a um lugar. · Digo in der Küche e in die Küche na situação certa e explico como chegar a algum lugar."
       }
     ]
   },

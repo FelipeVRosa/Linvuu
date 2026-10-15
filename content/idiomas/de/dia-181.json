@@ -20,8 +20,81 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você coloca na ordem certa os dois objetos (Ich gebe es ihm), os complementos de tempo, modo e lugar (Ich fahre morgen mit dem Zug nach Berlin) e o nicht, e sabe onde o verbo fica em cada tipo de frase."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O presente de aniversário",
+        "contexto": "Os amigos se reúnem no aniversário de Camila.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Alles Gute zum Geburtstag, Camila! Ich schenke dir dieses Buch.",
+            "pt": "— Feliz aniversário, Camila! Estou te dando este livro.",
+            "audio": "Alles Gute zum Geburtstag, Camila! Ich schenke dir dieses Buch."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist lieb! Hast du es selbst ausgesucht?",
+            "pt": "— Que gentileza! Você mesmo escolheu?",
+            "audio": "Das ist lieb! Hast du es selbst ausgesucht?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, ich habe es letzte Woche in Berlin gekauft. Meine Schwester hat es mir empfohlen.",
+            "pt": "— Sim, comprei semana passada em Berlim. Minha irmã me recomendou.",
+            "audio": "Ja, ich habe es letzte Woche in Berlin gekauft. Meine Schwester hat es mir empfohlen."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Und ich gebe dir morgen mein Geschenk. Ich habe es noch nicht eingepackt.",
+            "pt": "— E eu te dou amanhã o meu presente. Ainda não embrulhei.",
+            "audio": "Und ich gebe dir morgen mein Geschenk. Ich habe es noch nicht eingepackt."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ihr seid so lieb. Heute Abend zeige ich es meiner Mutter im Videoanruf.",
+            "pt": "— Vocês são muito queridos. Hoje à noite eu mostro para minha mãe na chamada de vídeo.",
+            "audio": "Ihr seid so lieb. Heute Abend zeige ich es meiner Mutter im Videoanruf."
+          }
+        ]
+      },
+      {
         "tipo": "gramatica",
-        "min": 15,
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: o alemão pede a ordem dos pronomes e dos substantivos, e uma ordem para os complementos (tempo, modo, lugar). O português mistura os dois.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Dei o livro a ela.",
+            "ingles": "Ich habe ihr das Buch gegeben."
+          },
+          {
+            "portugues": "Dei-o a ela.",
+            "ingles": "Ich habe es ihr gegeben."
+          },
+          {
+            "portugues": "Dei-o ao menino.",
+            "ingles": "Ich habe es dem Kind gegeben."
+          },
+          {
+            "portugues": "Vou amanhã de trem a Berlim.",
+            "ingles": "Ich fahre morgen mit dem Zug nach Berlin."
+          },
+          {
+            "portugues": "Moro em Berlim há dois anos.",
+            "ingles": "Ich wohne seit zwei Jahren in Berlin."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
         "titulo": "O A2 inteiro em uma tabela",
         "explicacao": "Esta tabela resume as aulas 21 a 45. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.",
         "tabela": [
@@ -115,12 +188,12 @@
       },
       {
         "tipo": "producao",
-        "min": 10,
+        "min": 7,
         "enunciado": "Conte em 10 frases, em voz alta, um dia importante da sua vida: o que aconteceu (Perfekt e Präteritum), com quem, por quê (weil), o que você achou e o que fará depois (werden)."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Leia em voz alta 5 frases das aulas 21 a 45 que você acha difíceis."
       }
     ]

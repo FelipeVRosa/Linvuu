@@ -20,8 +20,83 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você liga duas frases com weil, dass, wenn, als e ob mandando o verbo conjugado para o fim, escolhe entre wenn, als e wann para o “quando” do português e transforma uma pergunta direta em pergunta indireta (Ich weiß nicht, wann er kommt)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "A trilha de sábado",
+        "contexto": "Lena, Camila e Jonas combinam uma caminhada para o fim de semana. Tom ainda não confirmou.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Weißt du, ob Tom am Samstag mitkommt?",
+            "pt": "— Você sabe se o Tom vai no sábado?",
+            "audio": "Weißt du, ob Tom am Samstag mitkommt?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss.",
+            "pt": "— Não sei. Quando liguei para ele ontem, ele disse que ainda tem que trabalhar.",
+            "audio": "Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Schade. Wenn er nicht kommt, fahren wir zu dritt.",
+            "pt": "— Que pena. Se ele não vier, a gente vai em três.",
+            "audio": "Schade. Wenn er nicht kommt, fahren wir zu dritt."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Und wenn es regnet?",
+            "pt": "— E se chover?",
+            "audio": "Und wenn es regnet?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere.",
+            "pt": "— Se chover, a gente fica em casa, porque eu não gosto de caminhar na chuva.",
+            "audio": "Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich frage ihn noch einmal, wann er Zeit hat.",
+            "pt": "— Vou perguntar de novo a ele quando ele tem tempo.",
+            "audio": "Ich frage ihn noch einmal, wann er Zeit hat."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: wann só pergunta (direta ou indireta). Wenn é o “quando” que se repete, ou que ainda vai acontecer, e também o “se”. Als é o “quando” de um acontecimento único no passado.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Quando você vem? (pergunta)",
+            "ingles": "Wann kommst du?"
+          },
+          {
+            "portugues": "Quando eu tenho tempo, eu ligo. (sempre)",
+            "ingles": "Wenn ich Zeit habe, rufe ich an."
+          },
+          {
+            "portugues": "Quando eu cheguei, ele já estava lá.",
+            "ingles": "Als ich ankam, war er schon da."
+          },
+          {
+            "portugues": "Não sei quando ele chega.",
+            "ingles": "Ich weiß nicht, wann er ankommt."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "weil",
@@ -83,7 +158,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Weil: o verbo vai para o fim, passo a passo",
         "explicacao": "PASSO 1: «weil» (porque) abre uma frase SUBORDINADA: ela depende de outra. PASSO 2: REGRA PRINCIPAL: na frase subordinada, o verbo CONJUGADO vai para o FIM: «Ich bleibe zu Hause, weil ich krank bin.» PASSO 3: a VÍRGULA antes de «weil» é obrigatória. PASSO 4: se houver verbo separável, o prefixo se junta ao verbo no fim: «weil ich früh aufstehe». Com Perfekt, o auxiliar fica no fim absoluto: «weil ich Fieber gehabt habe». Com modal: «weil ich arbeiten muss.» PASSO 5: se a subordinada ABRE a frase, a principal começa pelo VERBO (porque a subordinada inteira conta como a primeira posição): «Weil ich krank bin, bleibe ich zu Hause.» PASSO 6: diferença para «denn»: «denn» (pois) é uma conjunção normal e não muda a ordem: «Ich bleibe zu Hause, denn ich bin krank.»",
         "comparacao": "em português a ordem das palavras não muda depois de «porque» («porque eu estou doente»). Em alemão, depois de «weil», o verbo conjugado vai para o FIM.",
@@ -134,12 +209,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Dê 6 motivos em voz alta com «weil»: «Ich lerne Deutsch, weil … Ich bin müde, weil …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com os modais e o verbo principal no fim da frase."
       }
     ]

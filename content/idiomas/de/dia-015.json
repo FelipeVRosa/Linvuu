@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 9,
         "titulo": "Wo wohnst du? / Onde você mora?",
         "contexto": "Dois colegas conversam no intervalo.",
         "linhas": [
@@ -82,34 +82,181 @@
         ]
       },
       {
-        "tipo": "texto",
-        "min": 10,
-        "titulo": "Mia und Jonas / Mia e Jonas",
-        "ru": "Ich heiße Mia. Ich wohne in München. Ich arbeite hier und ich lerne gern Sprachen. Heute lerne ich Portugiesisch. Jonas arbeitet in Hamburg. Er wohnt dort und spielt oft Musik. Wir lernen zusammen.",
-        "pt": "Eu me chamo Mia. Moro em Munique. Trabalho aqui e gosto de aprender idiomas. Hoje aprendo português. Jonas trabalha em Hamburgo. Ele mora lá e toca música com frequência. Nós aprendemos juntos.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "Wo wohnt Mia?",
-            "resposta": "In München"
+            "ru": "Heute lerne ich Deutsch.",
+            "translit": "",
+            "pt": "Hoje estudo alemão.",
+            "en": "",
+            "audio": "Heute lerne ich Deutsch."
           },
           {
-            "pergunta": "Was lernt Mia heute?",
-            "resposta": "Portugiesisch"
+            "ru": "Jetzt wohne ich in …",
+            "translit": "",
+            "pt": "Agora moro em …",
+            "en": "",
+            "audio": "Jetzt wohne ich in …"
           },
           {
-            "pergunta": "Wo arbeitet Jonas?",
-            "resposta": "In Hamburg"
+            "ru": "Dann kochen wir zusammen.",
+            "translit": "",
+            "pt": "Depois cozinhamos juntos.",
+            "en": "",
+            "audio": "Dann kochen wir zusammen."
+          },
+          {
+            "ru": "Hier wohnt Tom.",
+            "translit": "",
+            "pt": "Aqui mora o Tom.",
+            "en": "",
+            "audio": "Hier wohnt Tom."
+          },
+          {
+            "ru": "Ich trinke gern Kaffee.",
+            "translit": "",
+            "pt": "Gosto de tomar café.",
+            "en": "",
+            "audio": "Ich trinke gern Kaffee."
+          },
+          {
+            "ru": "Morgen spiele ich Fußball.",
+            "translit": "",
+            "pt": "Amanhã jogo futebol.",
+            "en": "",
+            "audio": "Morgen spiele ich Fußball."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Heute ich wohne in Berlin",
+              "Heute wohne ich in Berlin"
+            ],
+            "gabarito": "Heute wohne ich in Berlin",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-004-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Jetzt Camila lernt Deutsch",
+              "Jetzt lernt Camila Deutsch"
+            ],
+            "gabarito": "Jetzt lernt Camila Deutsch",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-004-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Dann wir kochen",
+              "Dann kochen wir"
+            ],
+            "gabarito": "Dann kochen wir",
+            "explicacao": "Veja a chave comentada no livro: (b). Em todos, o verbo está na posição 2",
+            "id": "de-004-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Qual é a posição 1 em Tom und Camila kochen heute?",
+            "respostaEsperada": "Tom und Camila, um bloco só com três palavras",
+            "id": "de-004-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Quantos blocos vêm antes do verbo em Heute Abend kocht Tom?",
+            "respostaEsperada": "Um bloco, Heute Abend",
+            "id": "de-004-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Onde entra a palavra gern para dizer “Eu gosto de beber chá”?",
+            "opcoes": [
+              "Ich gern trinke Tee",
+              "Ich trinke gern Tee"
+            ],
+            "gabarito": "Ich trinke gern Tee",
+            "explicacao": "Veja a chave comentada no livro: (b) Ich trinke gern Tee",
+            "id": "de-004-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Heute / ich / Kaffee / trinke. → ___",
+            "respostaEsperada": "Heute trinke ich Kaffee",
+            "id": "de-004-L-201"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Dort / Tom / arbeitet. → ___",
+            "respostaEsperada": "Dort arbeitet Tom",
+            "explicacao": "Veja a chave comentada no livro: Dort arbeitet Tom",
+            "id": "de-004-L-202a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Dann / wir / zusammen / lernen. → ___",
+            "respostaEsperada": "Dann lernen wir zusammen",
+            "id": "de-004-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Hier / Camila / wohnt / gern. → ___",
+            "respostaEsperada": "Hier wohnt Camila gern",
+            "id": "de-004-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Am Abend / ich / Musik / höre. → ___",
+            "respostaEsperada": "Am Abend höre ich Musik",
+            "id": "de-004-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Monte a frase afirmativa começando pela primeira palavra destacada: Morgen / wir / nach Berlin / fahren. → ___",
+            "respostaEsperada": "Morgen fahren wir nach Berlin",
+            "id": "de-004-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute ___ (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später kochst (kochen) du.",
+            "respostaEsperada": "spielt",
+            "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+            "id": "de-004-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute spielt (spielen) Tom Fußball. · Jetzt ___ (hören) wir Musik. · Später kochst (kochen) du.",
+            "respostaEsperada": "hören",
+            "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+            "id": "de-004-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue o verbo mantendo a Posição 2: Heute spielt (spielen) Tom Fußball. · Jetzt hören (hören) wir Musik. · Später ___ (kochen) du.",
+            "respostaEsperada": "kochst",
+            "explicacao": "Veja a chave comentada no livro: spielt, hören, kochst",
+            "id": "de-004-L-207c"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Conte em voz alta onde você mora, onde trabalha e o que você aprende."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 4 perguntas em alemão com palavras interrogativas diferentes."
       }
     ]

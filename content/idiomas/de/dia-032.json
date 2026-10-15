@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -188,14 +188,94 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se contando o seu dia inteiro."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva cinco frases contando a sua rotina diária com verbos separáveis (aufstehen, abfahren, ankommen, einkaufen, zurückkommen, fernsehen).",
+            "respostaEsperada": "Ich stehe jeden Tag um sieben Uhr auf. Um acht Uhr fahre ich mit dem Bus ab. Um halb neun komme ich im Büro an. Am Nachmittag kaufe ich im Supermarkt ein und komme um neunzehn Uhr zurück.",
+            "id": "de-008-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três pedidos em casa usando o imperativo de verbos separáveis (Mach bitte … zu! / Räum … auf! / Nimm … mit!).",
+            "respostaEsperada": "Mach bitte das Fenster zu! Räum bitte dein Zimmer auf! Nimm bitte deinen Regenschirm mit!",
+            "id": "de-008-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo de quatro falas combinando de ir ao mercado ou ao cinema junto com um amigo (Kommst du mit? / Wann fahren wir ab?).",
+            "respostaEsperada": "Modelo de diálogo: — Hallo Jonas! Ich gehe jetzt ins Kino. Kommst du mit?— Ja, sehr gern! Wann fängt der Film an?— Er fängt um zwanzig Uhr an. Wir fahren um halb acht mit der U-Bahn ab.— Super, ich nehme meine Jacke mit!",
+            "id": "de-008-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich anrufe dich später.",
+            "respostaEsperada": "Ich rufe dich später an.",
+            "explicacao": "Ich rufe dich später an.",
+            "id": "de-008-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wir steigen aus am Marienplatz.",
+            "respostaEsperada": "Wir steigen am Marienplatz aus.",
+            "explicacao": "Wir steigen am Marienplatz aus.",
+            "id": "de-008-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Mitkommst du?",
+            "respostaEsperada": "Kommst du mit?",
+            "explicacao": "Kommst du mit?",
+            "id": "de-008-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich muss früh stehe auf.",
+            "respostaEsperada": "Ich muss früh aufstehen.",
+            "explicacao": "Ich muss früh aufstehen.",
+            "id": "de-008-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Er stehst um sieben Uhr auf.",
+            "respostaEsperada": "Er steht um sieben Uhr auf.",
+            "explicacao": "Er steht um sieben Uhr auf.",
+            "id": "de-008-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich besuche meine Oma.",
+            "respostaEsperada": "OK",
+            "id": "de-008-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Der Bus abfährt um zehn Uhr.",
+            "respostaEsperada": "Der Bus fährt um zehn Uhr ab.",
+            "explicacao": "Der Bus fährt um zehn Uhr ab.",
+            "id": "de-008-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é deixar o prefixo colado ao verbo conjugado (Ich anrufe dich em vez de Ich rufe dich an), colocar o prefixo no meio da frase em vez de no fim (Wir steigen aus am Marienplatz), separar verbos inseparáveis (be-, ge-, er-, ver-, ent-, emp-) ou separar depois de verbo modal. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases com verbos separáveis e uma hora."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 16. Complete: Er ____ (essen) gern Kuchen. Do capítulo 15. Complete: Ich ____ (müssen) früh aufstehen. Do capítulo 14. Complete: Das ist die Jacke des ____ (Student)."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Conto a minha rotina com verbos separáveis. · Faço um convite com Kommst du mit? e sei quando não devo separar o verbo."
       }
     ]
   },

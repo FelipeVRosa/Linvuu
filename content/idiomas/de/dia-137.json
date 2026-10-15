@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve com adjetivos depois de sein, compara com -er … als e so … wie, forma o superlativo com am … -sten e usa as formas irregulares besser, mehr, lieber."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Duas casas",
+        "contexto": "Camila está em dúvida entre dois apartamentos.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Welche Wohnung gefällt dir besser?",
+            "pt": "— De qual apartamento você gosta mais?",
+            "audio": "Welche Wohnung gefällt dir besser?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Die Wohnung in Schwabing ist größer als die Wohnung in Pasing. Aber sie ist auch teurer.",
+            "pt": "— O de Schwabing é maior que o de Pasing. Mas também é mais caro.",
+            "audio": "Die Wohnung in Schwabing ist größer als die Wohnung in Pasing. Aber sie ist auch teurer."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wie viel kostet sie?",
+            "pt": "— Quanto custa?",
+            "audio": "Wie viel kostet sie?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Neunhundert Euro. Die andere kostet nur siebenhundert.",
+            "pt": "— Novecentos euros. O outro custa só setecentos.",
+            "audio": "Neunhundert Euro. Die andere kostet nur siebenhundert."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Dann ist die Wohnung in Pasing billiger. Aber ist sie so hell wie die Wohnung in Schwabing?",
+            "pt": "— Então o de Pasing é mais barato. Mas ele é tão claro quanto o de Schwabing?",
+            "audio": "Dann ist die Wohnung in Pasing billiger. Aber ist sie so hell wie die Wohnung in Schwabing?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Nein, sie ist nicht so hell. Für mich ist Licht am wichtigsten.",
+            "pt": "— Não, não é tão claro. Para mim, luz é o mais importante.",
+            "audio": "Nein, sie ist nicht so hell. Für mich ist Licht am wichtigsten."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Dann ist die Entscheidung leicht.",
+            "pt": "— Então a decisão é fácil.",
+            "audio": "Dann ist die Entscheidung leicht."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja. Schwabing ist teurer, aber auch viel schöner.",
+            "pt": "— Sim. Schwabing é mais caro, mas também muito mais bonito.",
+            "audio": "Ja. Schwabing ist teurer, aber auch viel schöner."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: comparação de diferença usa als. Comparação de igualdade usa wie.",
+        "comparacao": "O português compara com palavras soltas: “mais caro que”, “tão claro quanto”. O alemão cola um final ao adjetivo e usa duas palavrinhas diferentes para comparar.",
+        "tabela": [
+          {
+            "portugues": "mais velho que",
+            "ingles": "älter als"
+          },
+          {
+            "portugues": "tão velho quanto",
+            "ingles": "so alt wie"
+          },
+          {
+            "portugues": "o mais velho",
+            "ingles": "am ältesten"
+          },
+          {
+            "portugues": "mais bonito",
+            "ingles": "schöner"
+          },
+          {
+            "portugues": "melhor",
+            "ingles": "besser"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "schnell",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O comparativo, passo a passo",
         "explicacao": "PASSO 1: para dizer «mais … do que», acrescente «-er» ao adjetivo e use «als» para o segundo termo: «Berlin ist größer als München.» PASSO 2: muitos adjetivos curtos ganham TREMA: alt → älter; jung → jünger; groß → größer; stark → stärker; warm → wärmer; kalt → kälter. PASSO 3: adjetivos em «-el», «-er» e «-eu» perdem o «e»: teuer → teurer; dunkel → dunkler. PASSO 4: IRREGULARES, que você precisa decorar: gut → besser; viel → mehr; gern → lieber; hoch → höher; nah → näher. PASSO 5: igualdade: «so … wie»: «Er ist so groß wie ich.» PASSO 6: diferença não dita: «Es wird kälter» (está ficando mais frio).",
         "comparacao": "o português usa «mais» + adjetivo («mais rápido»). O alemão acrescenta «-er» ao próprio adjetivo («schneller») e usa «als» para «do que».",
@@ -150,12 +241,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Compare 6 coisas em voz alta: «Der Zug ist schneller als der Bus. Berlin ist größer als …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as formas de um adjetivo antes do substantivo nas três famílias, com um exemplo."
       }
     ]

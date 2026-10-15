@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Mais conectores, passo a passo",
         "explicacao": "PASSO 1: «AUSSERDEM» (além disso) acrescenta uma ideia: «Ich habe keine Zeit. Außerdem bin ich müde.» PASSO 2: «SONST» (senão, caso contrário) expressa a alternativa: «Beeil dich, sonst verpasst du den Zug.» PASSO 3: «ALLERDINGS», «JEDOCH» e «DAGEGEN» contrastam: «Er ist nett. Allerdings ist er manchmal spät.» PASSO 4: todos esses conectores, quando abrem a frase, levam o verbo logo depois (2ª posição). PASSO 5: se ficarem no meio da frase, a posição do verbo continua na 2ª: «Er ist allerdings manchmal spät.» PASSO 6: com «aber» e «denn» (conjunções coordenativas), a ordem normal se mantém; «aber» e «denn» NÃO ocupam a 1ª posição.",
         "tabela": [
@@ -55,7 +55,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Pro und Contra / Prós e contras",
         "contexto": "Dois colegas discutem uma viagem de fim de semana.",
         "linhas": [
@@ -110,13 +110,217 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich bin müde, aber glücklich.",
+            "translit": "",
+            "pt": "Estou cansado, mas feliz.",
+            "en": "",
+            "audio": "Ich bin müde, aber glücklich."
+          },
+          {
+            "ru": "Kaffee oder Tee?",
+            "translit": "",
+            "pt": "Café ou chá?",
+            "en": "",
+            "audio": "Kaffee oder Tee?"
+          },
+          {
+            "ru": "Ich trinke keinen Kaffee, sondern Tee.",
+            "translit": "",
+            "pt": "Não bebo café, e sim chá.",
+            "en": "",
+            "audio": "Ich trinke keinen Kaffee, sondern Tee."
+          },
+          {
+            "ru": "Ich bleibe zu Hause, denn ich bin krank.",
+            "translit": "",
+            "pt": "Fico em casa, pois estou doente.",
+            "en": "",
+            "audio": "Ich bleibe zu Hause, denn ich bin krank."
+          },
+          {
+            "ru": "Ich stehe auf und frühstücke.",
+            "translit": "",
+            "pt": "Levanto e tomo café da manhã.",
+            "en": "",
+            "audio": "Ich stehe auf und frühstücke."
+          },
+          {
+            "ru": "Entweder heute oder morgen.",
+            "translit": "",
+            "pt": "Ou hoje ou amanhã.",
+            "en": "",
+            "audio": "Entweder heute oder morgen."
+          },
+          {
+            "ru": "Ich esse nicht nur Pasta, sondern auch Pizza.",
+            "translit": "",
+            "pt": "Eu como não só massa, como também pizza.",
+            "en": "",
+            "audio": "Ich esse nicht nur Pasta, sondern auch Pizza."
+          },
+          {
+            "ru": "Du kommst auch, oder?",
+            "translit": "",
+            "pt": "Você vem também, né?",
+            "en": "",
+            "audio": "Du kommst auch, oder?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich bin müde, ___ ich komme mit.",
+            "opcoes": [
+              "aber",
+              "sondern"
+            ],
+            "gabarito": "aber",
+            "explicacao": "Veja a chave comentada no livro: aber",
+            "id": "de-057-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich trinke keinen Kaffee, ___ Tee.",
+            "opcoes": [
+              "aber",
+              "sondern"
+            ],
+            "gabarito": "sondern",
+            "explicacao": "Veja a chave comentada no livro: sondern",
+            "id": "de-057-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Kommst du mit ___ bleibst du hier?",
+            "opcoes": [
+              "oder",
+              "denn"
+            ],
+            "gabarito": "oder",
+            "explicacao": "Veja a chave comentada no livro: oder",
+            "id": "de-057-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich bleibe zu Hause, ___ ich bin krank.",
+            "opcoes": [
+              "denn",
+              "und"
+            ],
+            "gabarito": "denn",
+            "explicacao": "Veja a chave comentada no livro: denn",
+            "id": "de-057-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              "Ich bin müde, denn habe ich viel gearbeitet",
+              "Ich bin müde, denn ich habe viel gearbeitet"
+            ],
+            "gabarito": "Ich bin müde, denn ich habe viel gearbeitet",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-057-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              "Ich stehe auf und gehe zur Arbeit",
+              "Ich stehe auf und zur Arbeit gehe"
+            ],
+            "gabarito": "Ich stehe auf und gehe zur Arbeit",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-057-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Antes de qual conector a vírgula é obrigatória?",
+            "opcoes": [
+              "und",
+              "aber"
+            ],
+            "gabarito": "aber",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-057-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com aber, sondern, denn, oder ou und: Ich bin nicht müde, ___ hungrig.",
+            "respostaEsperada": "sondern",
+            "explicacao": "Veja a chave comentada no livro: sondern",
+            "id": "de-057-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com aber, sondern, denn, oder ou und: Ich möchte gern kommen, ___ ich habe heute leider keine Zeit.",
+            "respostaEsperada": "aber",
+            "explicacao": "Veja a chave comentada no livro: aber",
+            "id": "de-057-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com aber, sondern, denn, oder ou und: Wir können im Restaurant essen gehen ___ zu Hause kochen.",
+            "respostaEsperada": "oder",
+            "explicacao": "Veja a chave comentada no livro: oder",
+            "id": "de-057-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com aber, sondern, denn, oder ou und: Ich gehe jetzt nach Hause, ___ es ist schon sehr spät.",
+            "respostaEsperada": "denn",
+            "explicacao": "Veja a chave comentada no livro: denn",
+            "id": "de-057-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com aber, sondern, denn, oder ou und: Er steht um sieben Uhr auf ___ frühstückt in der Küche.",
+            "respostaEsperada": "und",
+            "explicacao": "Veja a chave comentada no livro: und",
+            "id": "de-057-L-205a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Una as frases e complete os conectores duplos: Una com aber: Ich bin müde. Ich komme mit. → ___",
+            "respostaEsperada": "Ich bin müde, aber ich komme mit",
+            "id": "de-057-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Una as frases e complete os conectores duplos: Una com und omitindo o sujeito repetido: Ich stehe auf. Ich gehe zur Arbeit. → ___",
+            "respostaEsperada": "Ich stehe auf und gehe zur Arbeit",
+            "id": "de-057-L-207"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Una as frases e complete os conectores duplos: Una com sondern: Ich trinke keinen Kaffee. Ich trinke Tee. → ___",
+            "respostaEsperada": "Ich trinke keinen Kaffee, sondern Tee",
+            "id": "de-057-L-208"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Una as frases e complete os conectores duplos: Conectores duplos: Ich esse ___ nur Pasta, ___ auch Pizza. · ___ heute ___ morgen!",
+            "respostaEsperada": "nicht … sondern / Entweder … oder",
+            "id": "de-057-L-209"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Discuta em voz alta os prós e contras de um plano, com obwohl, trotzdem, deshalb, außerdem e sonst."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com «deshalb», «deswegen» e «weil»."
       }
     ]

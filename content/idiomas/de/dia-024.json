@@ -20,70 +20,8 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "dialogo",
-        "min": 9,
-        "titulo": "Wann hast du Zeit? / Quando você tem tempo?",
-        "contexto": "Dois amigos marcam um encontro.",
-        "linhas": [
-          {
-            "personagem": "Lara",
-            "ru": "— Hallo Tom! Hast du am Montag Zeit?",
-            "pt": "— Oi, Tom! Você tem tempo na segunda?",
-            "audio": "Hallo Tom! Hast du am Montag Zeit?"
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— Am Montag? Nein, am Montag arbeite ich bis achtzehn Uhr.",
-            "pt": "— Na segunda? Não, na segunda trabalho até as dezoito horas.",
-            "audio": "Am Montag? Nein, am Montag arbeite ich bis achtzehn Uhr."
-          },
-          {
-            "personagem": "Lara",
-            "ru": "— Und am Dienstag?",
-            "pt": "— E na terça?",
-            "audio": "Und am Dienstag?"
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— Am Dienstag habe ich um siebzehn Uhr Zeit.",
-            "pt": "— Na terça tenho tempo às dezessete horas.",
-            "audio": "Am Dienstag habe ich um siebzehn Uhr Zeit."
-          },
-          {
-            "personagem": "Lara",
-            "ru": "— Gut! Ich komme um halb sechs. Okay?",
-            "pt": "— Ótimo! Eu chego às cinco e meia. Pode ser?",
-            "audio": "Gut! Ich komme um halb sechs. Okay?"
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— Okay! Wie spät ist es jetzt?",
-            "pt": "— Pode! Que horas são agora?",
-            "audio": "Okay! Wie spät ist es jetzt?"
-          },
-          {
-            "personagem": "Lara",
-            "ru": "— Es ist zehn nach vier.",
-            "pt": "— São quatro e dez.",
-            "audio": "Es ist zehn nach vier."
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— Dann bis Dienstag! Tschüs!",
-            "pt": "— Então até terça! Tchau!",
-            "audio": "Dann bis Dienstag! Tschüs!"
-          },
-          {
-            "personagem": "Lara",
-            "ru": "— Tschüs!",
-            "pt": "— Tchau!",
-            "audio": "Tschüs!"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 11,
+        "min": 12,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -237,14 +175,99 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se: diga a hora, o dia de hoje e a data do seu aniversário."
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três compromissos da sua semana com dia (Am …), hora (um … Uhr) e atividade: Am Montag um 18 Uhr habe ich Deutschkurs.",
+            "respostaEsperada": "Am Montag um achtzehn Uhr habe ich Deutschkurs. Am Mittwoch um halb neun arbeite ich im Büro. Am Freitag um zwanzig Uhr koche ich mit Freunden.",
+            "id": "de-006-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva a data do seu aniversário (Ich habe am … Geburtstag) e a sua idade por extenso.",
+            "respostaEsperada": "Ich habe am fünfzehnten August Geburtstag. Ich bin dreißig Jahre alt.",
+            "id": "de-006-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva por extenso estes três preços: 4,50 €, 19,90 € e 350 €.",
+            "respostaEsperada": "4,50 € = vier Euro fünfzig. 19,90 € = neunzehn Euro neunzig. 350 € = dreihundertfünfzig Euro.",
+            "id": "de-006-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Es ist halb drei.",
+            "respostaEsperada": "Es ist halb vier.",
+            "explicacao": "Es ist halb vier. (3h30 é meia hora antes das quatro.)",
+            "id": "de-006-L-c01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: ein und zwanzig",
+            "respostaEsperada": "einundzwanzig, tudo junto.",
+            "id": "de-006-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Heute ist montag.",
+            "respostaEsperada": "Heute ist Montag.",
+            "explicacao": "Heute ist Montag.",
+            "id": "de-006-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Am Mai habe ich Geburtstag.",
+            "respostaEsperada": "Im Mai habe ich Geburtstag.",
+            "explicacao": "Im Mai habe ich Geburtstag. (meses usam im)",
+            "id": "de-006-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich bin 28 Jahre.",
+            "respostaEsperada": "Ich bin achtundzwanzig Jahre alt.",
+            "explicacao": "Ich bin achtundzwanzig Jahre alt.",
+            "id": "de-006-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: dreizig",
+            "respostaEsperada": "dreißig, com ß.",
+            "id": "de-006-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Der Kurs beginnt am vier Uhr.",
+            "respostaEsperada": "Der Kurs beginnt um vier Uhr.",
+            "explicacao": "Der Kurs beginnt um vier Uhr. (horas usam um)",
+            "id": "de-006-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Heute ist Dienstag.",
+            "respostaEsperada": "OK",
+            "id": "de-006-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é ler halb drei como 3h30 (chegando uma hora atrasado!) e trocar as preposições de tempo (um para horas, am para dias e datas, im para meses e estações). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva uma frase com um dia da semana, um mês e uma hora."
+        "min": 3,
+        "enunciado": "Retorno. Do capítulo 6. Negue: Der Kurs ist am Montag. Ich habe Zeit. Es ist halb drei. Do capítulo 5. Escreva o plural: drei ____ (Tisch), vier ____ (Haus), fünf ____ (Frau). Do capítulo 4. Faça a pergunta: Der Kurs beginnt um vier Uhr. → Wann …?Ich bin achtundzwanzig. → Wie …?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Conto até 100 sem olhar e leio qualquer hora no relógio sem cair na armadilha do halb. · Digo minha data de aniversário e minha idade e pergunto quanto algo custa."
       }
     ]
   },

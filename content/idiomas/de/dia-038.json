@@ -20,110 +20,42 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "texto",
-        "min": 10,
-        "titulo": "Ana in Berlin / Ana em Berlim",
-        "ru": "Ich heiße Ana. Ich komme aus Brasilien und wohne jetzt in Berlin. Ich bin fünfundzwanzig Jahre alt. Ich habe einen Bruder und eine Schwester. Morgens stehe ich um sieben Uhr auf und frühstücke: Ich esse ein Brot mit Käse und trinke einen Kaffee. Um acht Uhr fahre ich zur Arbeit. Am Abend gehe ich oft ins Kino. Am Wochenende lerne ich Deutsch.",
-        "pt": "Eu me chamo Ana. Venho do Brasil e agora moro em Berlim. Tenho vinte e cinco anos. Tenho um irmão e uma irmã. De manhã me levanto às sete e tomo café da manhã: como um pão com queijo e bebo um café. Às oito vou para o trabalho. À noite vou com frequência ao cinema. No fim de semana estudo alemão.",
-        "perguntas": [
+        "tipo": "gramatica",
+        "min": 12,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare as perguntas e as respostas. PASSO 2: Perguntas: PASSO 3: Onde está o verbo nas perguntas sem palavra interrogativa? PASSO 4: Onde está o verbo nas perguntas com palavra interrogativa? Na resposta, o sujeito pode sumir?",
+        "tabela": [
           {
-            "pergunta": "Woher kommt Ana?",
-            "resposta": "Aus Brasilien"
+            "c1": "Wohnst du in Berlin?",
+            "c2": "Ja, ich wohne in Berlin."
           },
           {
-            "pergunta": "Wie alt ist Ana?",
-            "resposta": "Fünfundzwanzig"
+            "c1": "Wo wohnst du?",
+            "c2": "Ich wohne in Berlin."
           },
           {
-            "pergunta": "Was trinkt Ana morgens?",
-            "resposta": "Einen Kaffee"
+            "c1": "Kommt Tom aus Irland?",
+            "c2": "Ja, er kommt aus Irland."
           },
           {
-            "pergunta": "Wann fährt Ana zur Arbeit?",
-            "resposta": "Um acht Uhr"
+            "c1": "Woher kommt Tom?",
+            "c2": "Er kommt aus Irland."
           },
           {
-            "pergunta": "Wohin geht Ana am Abend oft?",
-            "resposta": "Ins Kino"
+            "c1": "Lernt ihr Deutsch?",
+            "c2": "Nein, wir lernen Englisch."
           }
-        ]
-      },
-      {
-        "tipo": "dialogo",
-        "min": 10,
-        "titulo": "Im Café / No café",
-        "contexto": "Dois amigos tomam um café.",
-        "linhas": [
-          {
-            "personagem": "Lea",
-            "ru": "— Hallo, Paul! Wie geht’s?",
-            "pt": "— Oi, Paul! Como vai?",
-            "audio": "Hallo, Paul! Wie geht’s?"
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Gut, danke! Und dir?",
-            "pt": "— Bem, obrigado! E você?",
-            "audio": "Gut, danke! Und dir?"
-          },
-          {
-            "personagem": "Lea",
-            "ru": "— Auch gut. Was möchtest du trinken?",
-            "pt": "— Também bem. O que você quer beber?",
-            "audio": "Auch gut. Was möchtest du trinken?"
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Ich möchte einen Kaffee. Und du?",
-            "pt": "— Eu quero um café. E você?",
-            "audio": "Ich möchte einen Kaffee. Und du?"
-          },
-          {
-            "personagem": "Lea",
-            "ru": "— Ich nehme einen Tee und ein Stück Kuchen.",
-            "pt": "— Eu pego um chá e um pedaço de bolo.",
-            "audio": "Ich nehme einen Tee und ein Stück Kuchen."
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Wie spät ist es? Ich arbeite um halb drei.",
-            "pt": "— Que horas são? Eu trabalho às duas e meia.",
-            "audio": "Wie spät ist es? Ich arbeite um halb drei."
-          },
-          {
-            "personagem": "Lea",
-            "ru": "— Es ist zehn nach zwei. Du hast noch Zeit.",
-            "pt": "— São duas e dez. Você ainda tem tempo.",
-            "audio": "Es ist zehn nach zwei. Du hast noch Zeit."
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Gut! Am Samstag gehe ich ins Kino. Kommst du mit?",
-            "pt": "— Ótimo! No sábado vou ao cinema. Você vem junto?",
-            "audio": "Gut! Am Samstag gehe ich ins Kino. Kommst du mit?"
-          },
-          {
-            "personagem": "Lea",
-            "ru": "— Ja, gern! Um wie viel Uhr?",
-            "pt": "— Sim, com prazer! A que horas?",
-            "audio": "Ja, gern! Um wie viel Uhr?"
-          },
-          {
-            "personagem": "Paul",
-            "ru": "— Um acht Uhr. Tschüs!",
-            "pt": "— Às oito. Tchau!",
-            "audio": "Um acht Uhr. Tschüs!"
-          }
-        ]
+        ],
+        "tag": "Descubra"
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 9,
         "enunciado": "Responda em voz alta às perguntas do texto e do diálogo, como se fosse você."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 9,
         "enunciado": "Releia o texto e o diálogo abaixo em voz alta antes de começar."
       }
     ]

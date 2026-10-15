@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 15,
+        "min": 10,
         "titulo": "Os 14 erros mais comuns do A2 (parte 2)",
         "explicacao": "Leia cada par em voz alta: primeiro o errado, depois o certo.",
         "erros": [
@@ -99,13 +99,232 @@
         "tag": "Revisão"
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich gebe dem Kind das Buch.",
+            "translit": "",
+            "pt": "Dou o livro à criança.",
+            "en": "",
+            "audio": "Ich gebe dem Kind das Buch."
+          },
+          {
+            "ru": "Ich gebe es ihm.",
+            "translit": "",
+            "pt": "Eu dou isso a ele.",
+            "en": "",
+            "audio": "Ich gebe es ihm."
+          },
+          {
+            "ru": "Ich fahre morgen mit dem Zug nach Berlin.",
+            "translit": "",
+            "pt": "Vou amanhã de trem a Berlim.",
+            "en": "",
+            "audio": "Ich fahre morgen mit dem Zug nach Berlin."
+          },
+          {
+            "ru": "Ich wohne seit zwei Jahren in Berlin.",
+            "translit": "",
+            "pt": "Moro em Berlim há dois anos.",
+            "en": "",
+            "audio": "Ich wohne seit zwei Jahren in Berlin."
+          },
+          {
+            "ru": "Ich habe es ihm gestern gegeben.",
+            "translit": "",
+            "pt": "Dei isso a ele ontem.",
+            "en": "",
+            "audio": "Ich habe es ihm gestern gegeben."
+          },
+          {
+            "ru": "Tom kommt heute nicht.",
+            "translit": "",
+            "pt": "O Tom não vem hoje.",
+            "en": "",
+            "audio": "Tom kommt heute nicht."
+          },
+          {
+            "ru": "Ich habe das Buch nicht gelesen.",
+            "translit": "",
+            "pt": "Não li o livro.",
+            "en": "",
+            "audio": "Ich habe das Buch nicht gelesen."
+          },
+          {
+            "ru": "Ich habe keine Zeit, deshalb komme ich nicht.",
+            "translit": "",
+            "pt": "Não tenho tempo, por isso não vou.",
+            "en": "",
+            "audio": "Ich habe keine Zeit, deshalb komme ich nicht."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich gebe dem Kind das Buch",
+              "Ich gebe das Buch dem Kind"
+            ],
+            "gabarito": "Ich gebe dem Kind das Buch",
+            "explicacao": "Veja a chave comentada no livro: (a) (a pessoa antes da coisa)",
+            "id": "de-046-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich gebe es dem Kind",
+              "Ich gebe dem Kind es"
+            ],
+            "gabarito": "Ich gebe es dem Kind",
+            "explicacao": "Veja a chave comentada no livro: (a) (pronome antes do substantivo)",
+            "id": "de-046-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich gebe es ihm",
+              "Ich gebe ihm es"
+            ],
+            "gabarito": "Ich gebe es ihm",
+            "explicacao": "Veja a chave comentada no livro: (a) (acusativo antes do dativo)",
+            "id": "de-046-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich fahre morgen mit dem Zug nach Berlin",
+              "Ich fahre nach Berlin mit dem Zug morgen"
+            ],
+            "gabarito": "Ich fahre morgen mit dem Zug nach Berlin",
+            "explicacao": "Veja a chave comentada no livro: (a) (tempo, modo, lugar)",
+            "id": "de-046-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich habe das Buch nicht gelesen",
+              "Ich habe das Buch gelesen nicht"
+            ],
+            "gabarito": "Ich habe das Buch nicht gelesen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-046-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Er ist nicht müde",
+              "Er ist müde nicht"
+            ],
+            "gabarito": "Er ist nicht müde",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-046-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich habe keine Zeit, ___ komme ich nicht.",
+            "opcoes": [
+              "deshalb",
+              "weil"
+            ],
+            "gabarito": "deshalb",
+            "explicacao": "Veja a chave comentada no livro: deshalb (weil mandaria o verbo para o fim)",
+            "id": "de-046-L-107"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Coloque na ordem: Ich / dem Mann / das Buch / gebe.",
+            "respostaEsperada": "Ich gebe dem Mann das Buch",
+            "id": "de-046-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Coloque na ordem: Ich / habe / ihm / gestern / es / gegeben.",
+            "respostaEsperada": "Ich habe es ihm gestern gegeben",
+            "id": "de-046-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Coloque na ordem: Wir / sind / am Samstag / mit dem Auto / nach Wien / gefahren.",
+            "respostaEsperada": "Wir sind am Samstag mit dem Auto nach Wien gefahren",
+            "id": "de-046-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Troque os objetos por pronomes: Ich gebe dem Kind das Buch.",
+            "respostaEsperada": "Ich gebe es ihm (ou, trocando só um: Ich gebe es dem Kind / Ich gebe ihm das Buch)",
+            "id": "de-046-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Troque os objetos por pronomes: Ich zeige das Foto meiner Mutter.",
+            "respostaEsperada": "Ich zeige es meiner Mutter (ou, trocando os dois: Ich zeige es ihr)",
+            "id": "de-046-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Troque os objetos por pronomes: Ich schenke meiner Schwester ein Buch.",
+            "respostaEsperada": "Ich schenke ihr ein Buch (ou, trocando os dois: Ich schenke es ihr)",
+            "id": "de-046-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ponha nicht no lugar certo: Ich habe das Buch gelesen.",
+            "respostaEsperada": "Ich habe das Buch nicht gelesen",
+            "id": "de-046-L-207"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ponha nicht no lugar certo: Ich kann heute kommen.",
+            "respostaEsperada": "Ich kann heute nicht kommen",
+            "id": "de-046-L-208"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ponha nicht no lugar certo: Er arbeitet in Wien.",
+            "respostaEsperada": "Er arbeitet nicht in Wien",
+            "id": "de-046-L-209"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ponha nicht no lugar certo: Ich kenne ihn.",
+            "respostaEsperada": "Ich kenne ihn nicht",
+            "id": "de-046-L-210"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com deshalb, trotzdem ou außerdem: Es regnet, ___ gehen wir spazieren.",
+            "respostaEsperada": "trotzdem",
+            "explicacao": "Veja a chave comentada no livro: trotzdem",
+            "id": "de-046-L-211a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com deshalb, trotzdem ou außerdem: Ich bin müde, ___ gehe ich nach Hause.",
+            "respostaEsperada": "deshalb",
+            "explicacao": "Veja a chave comentada no livro: deshalb",
+            "id": "de-046-L-212a"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 10,
+        "min": 7,
         "enunciado": "Escreva um e-mail de cerca de 60 palavras a uma escola ou empresa: apresente-se, peça informações, dê um motivo com «weil» e agradeça. Depois leia-o em voz alta."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 3 erros que você ainda comete no A2 e a forma certa."
       }
     ]

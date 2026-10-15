@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "ankreuzen",
@@ -83,7 +83,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 5,
         "titulo": "As frases das provas e dos livros",
         "explicacao": "Os livros e as provas de alemão, do A1 ao B1, dão as instruções no imperativo formal. Aprender estas frases agora evita que você erre uma questão só por não entender o que pedem. Todas seguem o que você viu: verbo primeiro, «Sie» depois, prefixo separável no fim.",
         "tabela": [
@@ -124,7 +124,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 7,
+        "min": 5,
         "titulo": "Im Unterricht / Na aula",
         "contexto": "A professora dá instruções à turma.",
         "linhas": [
@@ -173,13 +173,253 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Sprechen Sie bitte langsam!",
+            "translit": "",
+            "pt": "Fale devagar, por favor.",
+            "en": "",
+            "audio": "Sprechen Sie bitte langsam!"
+          },
+          {
+            "ru": "Nimm das Messer!",
+            "translit": "",
+            "pt": "Pegue a faca!",
+            "en": "",
+            "audio": "Nimm das Messer!"
+          },
+          {
+            "ru": "Hilf mir bitte!",
+            "translit": "",
+            "pt": "Me ajude, por favor!",
+            "en": "",
+            "audio": "Hilf mir bitte!"
+          },
+          {
+            "ru": "Gib mir das Salz!",
+            "translit": "",
+            "pt": "Me passe o sal!",
+            "en": "",
+            "audio": "Gib mir das Salz!"
+          },
+          {
+            "ru": "Sei vorsichtig!",
+            "translit": "",
+            "pt": "Tome cuidado!",
+            "en": "",
+            "audio": "Sei vorsichtig!"
+          },
+          {
+            "ru": "Iss nicht so schnell!",
+            "translit": "",
+            "pt": "Não coma tão rápido!",
+            "en": "",
+            "audio": "Iss nicht so schnell!"
+          },
+          {
+            "ru": "Seid bitte leise!",
+            "translit": "",
+            "pt": "Façam silêncio, por favor.",
+            "en": "",
+            "audio": "Seid bitte leise!"
+          },
+          {
+            "ru": "Gehen wir!",
+            "translit": "",
+            "pt": "Vamos!",
+            "en": "",
+            "audio": "Gehen wir!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Du ___ Deutsch.",
+            "opcoes": [
+              "sprichst",
+              "sprechst"
+            ],
+            "gabarito": "sprichst",
+            "explicacao": "Veja a chave comentada no livro: sprichst",
+            "id": "de-013-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Er ___ einen Kaffee.",
+            "opcoes": [
+              "nimmt",
+              "nehmt"
+            ],
+            "gabarito": "nimmt",
+            "explicacao": "Veja a chave comentada no livro: nimmt",
+            "id": "de-013-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wir ___ nach Berlin.",
+            "opcoes": [
+              "fahren",
+              "fähren"
+            ],
+            "gabarito": "fahren",
+            "explicacao": "Veja a chave comentada no livro: fahren (wir não muda)",
+            "id": "de-013-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ mir bitte!",
+            "opcoes": [
+              "Hilf",
+              "Helf"
+            ],
+            "gabarito": "Hilf",
+            "explicacao": "Veja a chave comentada no livro: Hilf",
+            "id": "de-013-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Sie langsam!",
+            "opcoes": [
+              "Sprich",
+              "Sprechen"
+            ],
+            "gabarito": "Sprechen",
+            "explicacao": "Veja a chave comentada no livro: Sprechen",
+            "id": "de-013-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ihr ___ zu laut.",
+            "opcoes": [
+              "sprecht",
+              "sprichst"
+            ],
+            "gabarito": "sprecht",
+            "explicacao": "Veja a chave comentada no livro: sprecht (ihr não muda)",
+            "id": "de-013-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está certa?",
+            "opcoes": [
+              "Du lest das Buch",
+              "Du liest das Buch"
+            ],
+            "gabarito": "Du liest das Buch",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-013-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: nehmen: ich ___, du nimmst, er nimmt, wir nehmen, ihr nehmt",
+            "respostaEsperada": "nehme",
+            "explicacao": "Veja a chave comentada no livro: nehme, nimmst, nimmt, nehmen, nehmt",
+            "id": "de-013-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: nehmen: ich nehme, du ___, er nimmt, wir nehmen, ihr nehmt",
+            "respostaEsperada": "nimmst",
+            "explicacao": "Veja a chave comentada no livro: nehme, nimmst, nimmt, nehmen, nehmt",
+            "id": "de-013-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: nehmen: ich nehme, du nimmst, er ___, wir nehmen, ihr nehmt",
+            "respostaEsperada": "nimmt",
+            "explicacao": "Veja a chave comentada no livro: nehme, nimmst, nimmt, nehmen, nehmt",
+            "id": "de-013-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: nehmen: ich nehme, du nimmst, er nimmt, wir ___, ihr nehmt",
+            "respostaEsperada": "nehmen",
+            "explicacao": "Veja a chave comentada no livro: nehme, nimmst, nimmt, nehmen, nehmt",
+            "id": "de-013-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: nehmen: ich nehme, du nimmst, er nimmt, wir nehmen, ihr ___",
+            "respostaEsperada": "nehmt",
+            "explicacao": "Veja a chave comentada no livro: nehme, nimmst, nimmt, nehmen, nehmt",
+            "id": "de-013-L-201e"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conjugue os verbos fortes nas pessoas indicadas: fahren: du ___, er ___, wir ___ · essen: du ___, er ___, ihr ___",
+            "respostaEsperada": "fährst, fährt, fahren; isst, isst, esst",
+            "id": "de-013-L-202"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as frases no presente: Er ___ (geben) mir das Salz. · Du siehst (sehen) den Film. · Sie (ela) schläft (schlafen) am Sonntag lange. · Ich weiß (wissen) das nicht.",
+            "respostaEsperada": "gibt",
+            "explicacao": "Veja a chave comentada no livro: gibt, siehst, schläft, weiß",
+            "id": "de-013-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as frases no presente: Er gibt (geben) mir das Salz. · Du ___ (sehen) den Film. · Sie (ela) schläft (schlafen) am Sonntag lange. · Ich weiß (wissen) das nicht.",
+            "respostaEsperada": "siehst",
+            "explicacao": "Veja a chave comentada no livro: gibt, siehst, schläft, weiß",
+            "id": "de-013-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as frases no presente: Er gibt (geben) mir das Salz. · Du siehst (sehen) den Film. · Sie (ela) ___ (schlafen) am Sonntag lange. · Ich weiß (wissen) das nicht.",
+            "respostaEsperada": "schläft",
+            "explicacao": "Veja a chave comentada no livro: gibt, siehst, schläft, weiß",
+            "id": "de-013-L-203c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete as frases no presente: Er gibt (geben) mir das Salz. · Du siehst (sehen) den Film. · Sie (ela) schläft (schlafen) am Sonntag lange. · Ich ___ (wissen) das nicht.",
+            "respostaEsperada": "weiß",
+            "explicacao": "Veja a chave comentada no livro: gibt, siehst, schläft, weiß",
+            "id": "de-013-L-203d"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o imperativo nas três formas (du, ihr, Sie): kommen: ___! / ___! / ___! · warten: ___! / ___! / ___!",
+            "respostaEsperada": "Komm! Kommt! Kommen Sie! / Warte! Wartet! Warten Sie!",
+            "id": "de-013-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o imperativo nas três formas (du, ihr, Sie): essen: ___! / ___! / ___! · geben: ___! / ___! / ___! · sein: ___! / ___! / ___!",
+            "respostaEsperada": "Iss! Esst! Essen Sie! / Gib! Gebt! Geben Sie! / Sei! Seid! Seien Sie!",
+            "id": "de-013-L-205"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o imperativo nas três formas (du, ihr, Sie): Negue o imperativo: Komm! → ___! / Iss das! → Iss das nicht!!",
+            "respostaEsperada": "Komm nicht!",
+            "explicacao": "Veja a chave comentada no livro: Komm nicht! / Iss das nicht!",
+            "id": "de-013-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o imperativo nas três formas (du, ihr, Sie): Negue o imperativo: Komm! → Komm nicht!! / Iss das! → ___!",
+            "respostaEsperada": "Iss das nicht!",
+            "explicacao": "Veja a chave comentada no livro: Komm nicht! / Iss das nicht!",
+            "id": "de-013-L-206b"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 2,
+        "min": 1,
         "enunciado": "Leia em voz alta 5 instruções da tabela e faça o que elas pedem."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o imperativo de «lesen», «nehmen» e «sprechen» em «du», «ihr» e «Sie»."
       }
     ]

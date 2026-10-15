@@ -20,8 +20,124 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você se apresenta, diz de onde é e onde mora, escolhe entre du e Sie sem medo e conjuga qualquer verbo regular no presente."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Na cozinha do albergue",
+        "contexto": "Camila encontra Tom na cozinha. Depois, o gerente passa para ver se está tudo bem.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Hallo! Ich bin Tom. Wie heißt du?",
+            "pt": "— Oi! Eu sou o Tom. Como você se chama?",
+            "audio": "Hallo! Ich bin Tom. Wie heißt du?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich heiße Camila. Woher kommst du?",
+            "pt": "— Eu me chamo Camila. De onde você é?",
+            "audio": "Ich heiße Camila. Woher kommst du?"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ich komme aus Irland, aber ich wohne jetzt in München. Und du?",
+            "pt": "— Sou da Irlanda, mas agora moro em Munique. E você?",
+            "audio": "Ich komme aus Irland, aber ich wohne jetzt in München. Und du?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich komme aus Brasilien. Ich lerne hier Deutsch.",
+            "pt": "— Sou do Brasil. Estou aprendendo alemão aqui.",
+            "audio": "Ich komme aus Brasilien. Ich lerne hier Deutsch."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Toll! Hast du Hunger? Kochen wir zusammen?",
+            "pt": "— Que legal! Você está com fome? Vamos cozinhar juntos?",
+            "audio": "Toll! Hast du Hunger? Kochen wir zusammen?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, gern!",
+            "pt": "— Vamos, com prazer!",
+            "audio": "Ja, gern!"
+          },
+          {
+            "personagem": "Herr Weber",
+            "ru": "— Guten Abend, Frau Souza. Wohnen Sie gern hier?",
+            "pt": "— Boa noite, senhora Souza. A senhora gosta de morar aqui?",
+            "audio": "Guten Abend, Frau Souza. Wohnen Sie gern hier?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, sehr gern.",
+            "pt": "— Sim, muito.",
+            "audio": "Ja, sehr gern."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Sie com S maiúsculo é “você” formal. sie com s minúsculo é “ela” ou “eles”. Quem decide é o verbo e o contexto.",
+        "comparacao": "O português deixa quatro portas abertas que o alemão mantém fechadas.",
+        "tabela": [
+          {
+            "portugues": "ich",
+            "ingles": "eu",
+            "evite": "falando de si"
+          },
+          {
+            "portugues": "du",
+            "ingles": "tu, você informal",
+            "evite": "uma pessoa próxima"
+          },
+          {
+            "portugues": "er",
+            "ingles": "ele",
+            "evite": "um homem, ou coisa masculina"
+          },
+          {
+            "portugues": "sie",
+            "ingles": "ela",
+            "evite": "uma mulher, ou coisa feminina"
+          },
+          {
+            "portugues": "es",
+            "ingles": "ele, ela, “isso”",
+            "evite": "coisa neutra, clima"
+          },
+          {
+            "portugues": "wir",
+            "ingles": "nós",
+            "evite": "você e outros"
+          },
+          {
+            "portugues": "ihr",
+            "ingles": "vocês informal",
+            "evite": "várias pessoas próximas"
+          },
+          {
+            "portugues": "sie",
+            "ingles": "eles, elas",
+            "evite": "várias pessoas ou coisas"
+          },
+          {
+            "portugues": "Sie",
+            "ingles": "você, vocês formal",
+            "evite": "estranho, chefe, cliente"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 10,
+        "min": 7,
         "itens": [
           {
             "ru": "heißen",
@@ -97,7 +213,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "A ordem da frase e as primeiras perguntas",
         "explicacao": "O verbo conjugado fica sempre na SEGUNDA posição da frase afirmativa e das perguntas com palavra interrogativa: «Ich heiße Anna.», «Wie heißt du?», «Woher kommst du?». A pergunta de sim ou não começa pelo verbo: «Heißt du Anna?». Os pronomes pessoais são: ich, du, er, sie, es, wir, ihr, sie e Sie (formal).",
         "comparacao": "em português o verbo também vem logo depois do sujeito, mas o alemão fixa o verbo na segunda posição mesmo quando outro termo abre a frase.",
@@ -134,12 +250,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga: «Ich heiße … Ich komme aus Brasilien.» Depois pergunte: «Wie heißt du? Woher kommst du?»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Leia em voz alta as saudações da aula anterior e as combinações «ei, ie, sch, ch»."
       }
     ]

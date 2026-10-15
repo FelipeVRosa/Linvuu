@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 11,
+        "min": 8,
         "itens": [
           {
             "ru": "null",
@@ -104,7 +104,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 5,
         "titulo": "Números de 11 a 20 e a idade",
         "explicacao": "De 13 a 19 os números se formam com a base + «-zehn»: dreizehn, vierzehn, fünfzehn... Atenção: 16 = sechzehn (perde o -s) e 17 = siebzehn (perde o -en). 11 (elf) e 12 (zwölf) são especiais; 20 é zwanzig. Para dizer a idade: «Ich bin zwanzig Jahre alt» ou só «Ich bin zwanzig». Pergunta: «Wie alt bist du?».",
         "exemplos": [
@@ -163,7 +163,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 6,
+        "min": 4,
         "titulo": "Wie alt bist du? / Quantos anos você tem?",
         "contexto": "Dois colegas de curso conversam.",
         "linhas": [
@@ -206,8 +206,257 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Das ist mein Bruder.",
+            "translit": "",
+            "pt": "Este é meu irmão.",
+            "en": "",
+            "audio": "Das ist mein Bruder."
+          },
+          {
+            "ru": "Wie ist Ihr Name? / Mein Name ist …",
+            "translit": "",
+            "pt": "Qual é o seu nome? / Meu nome é …",
+            "en": "",
+            "audio": "Wie ist Ihr Name? / Mein Name ist …"
+          },
+          {
+            "ru": "Meine Eltern wohnen in …",
+            "translit": "",
+            "pt": "Meus pais moram em …",
+            "en": "",
+            "audio": "Meine Eltern wohnen in …"
+          },
+          {
+            "ru": "Welches Buch gefällt dir?",
+            "translit": "",
+            "pt": "De qual livro você gosta?",
+            "en": "",
+            "audio": "Welches Buch gefällt dir?"
+          },
+          {
+            "ru": "Dieses hier, bitte.",
+            "translit": "",
+            "pt": "Este aqui, por favor.",
+            "en": "",
+            "audio": "Dieses hier, bitte."
+          },
+          {
+            "ru": "Jeden Tag lerne ich Deutsch.",
+            "translit": "",
+            "pt": "Todo dia estudo alemão.",
+            "en": "",
+            "audio": "Jeden Tag lerne ich Deutsch."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das ist ___ Bruder.",
+            "opcoes": [
+              "mein",
+              "meine"
+            ],
+            "gabarito": "mein",
+            "explicacao": "Veja a chave comentada no livro: mein (masculino)",
+            "id": "de-005-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Tom und ___ Mutter.",
+            "opcoes": [
+              "sein",
+              "seine",
+              "ihre"
+            ],
+            "gabarito": "seine",
+            "explicacao": "Veja a chave comentada no livro: seine (dono Tom, coisa feminina)",
+            "id": "de-005-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Lena und ___ Vater.",
+            "opcoes": [
+              "sein",
+              "ihr",
+              "ihre"
+            ],
+            "gabarito": "ihr",
+            "explicacao": "Veja a chave comentada no livro: ihr (dona Lena, coisa masculina)",
+            "id": "de-005-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Camila und ___ Bruder.",
+            "opcoes": [
+              "ihr",
+              "ihre"
+            ],
+            "gabarito": "ihr",
+            "explicacao": "Veja a chave comentada no livro: ihr (dona Camila)",
+            "id": "de-005-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich sehe ___ Bruder.",
+            "opcoes": [
+              "mein",
+              "meinen"
+            ],
+            "gabarito": "meinen",
+            "explicacao": "Veja a chave comentada no livro: meinen (acusativo masculino)",
+            "id": "de-005-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich helfe ___ Mutter.",
+            "opcoes": [
+              "meine",
+              "meiner"
+            ],
+            "gabarito": "meiner",
+            "explicacao": "Veja a chave comentada no livro: meiner (dativo feminino)",
+            "id": "de-005-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Frau ist meine Tante.",
+            "opcoes": [
+              "Dieser",
+              "Diese"
+            ],
+            "gabarito": "Diese",
+            "explicacao": "Veja a chave comentada no livro: Diese (feminino)",
+            "id": "de-005-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Hast du ein Auto (n.)? — Nein, ich habe ___.",
+            "opcoes": [
+              "kein",
+              "keins"
+            ],
+            "gabarito": "keins",
+            "explicacao": "Veja a chave comentada no livro: keins (pronome substituto neutro sem substantivo)",
+            "id": "de-005-L-108"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → ___ Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+            "respostaEsperada": "mein",
+            "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+            "id": "de-005-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → ___ Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+            "respostaEsperada": "deine",
+            "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+            "id": "de-005-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → ___ Haus (n.) · ihr → eure Kinder (pl.) · Sie → Ihr Name (m.)",
+            "respostaEsperada": "unser",
+            "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+            "id": "de-005-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → ___ Kinder (pl.) · Sie → Ihr Name (m.)",
+            "respostaEsperada": "eure",
+            "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+            "id": "de-005-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Coloque o possessivo correto no Nominativo conforme o dono indicado: ich → mein Auto (n.) · du → deine Lampe (f.) · wir → unser Haus (n.) · ihr → eure Kinder (pl.) · Sie → ___ Name (m.)",
+            "respostaEsperada": "Ihr",
+            "explicacao": "Veja a chave comentada no livro: mein Auto, deine Lampe, unser Haus, eure Kinder, Ihr Name",
+            "id": "de-005-L-201e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Decline o possessivo no caso exigido pelo verbo: Ich suche ___ Schlüssel (mein, m., Acusativo).",
+            "respostaEsperada": "meinen",
+            "explicacao": "Veja a chave comentada no livro: meinen Schlüssel",
+            "id": "de-005-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Decline o possessivo no caso exigido pelo verbo: Ich gebe ___ Mutter (mein, f., Dativo) ein Buch.",
+            "respostaEsperada": "meiner",
+            "explicacao": "Veja a chave comentada no livro: meiner Mutter",
+            "id": "de-005-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Decline o possessivo no caso exigido pelo verbo: Wir besuchen ___ Eltern (unser, pl., Acusativo).",
+            "respostaEsperada": "unsere",
+            "explicacao": "Veja a chave comentada no livro: unsere Eltern",
+            "id": "de-005-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Decline o possessivo no caso exigido pelo verbo: Er hilft ___ Kind (sein, n., Dativo).",
+            "respostaEsperada": "seinem",
+            "explicacao": "Veja a chave comentada no livro: seinem Kind",
+            "id": "de-005-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+            "respostaEsperada": "Dieser",
+            "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+            "id": "de-005-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe ___ Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+            "respostaEsperada": "diesen",
+            "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+            "id": "de-005-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). ___ Lampe (Nom.) ist neu. Ich helfe diesem Mann (Dat.).",
+            "respostaEsperada": "Diese",
+            "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+            "id": "de-005-L-206c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Dieser Tisch (Nom.) ist schön. Ich kaufe diesen Tisch (Akk.). Diese Lampe (Nom.) ist neu. Ich helfe ___ Mann (Dat.).",
+            "respostaEsperada": "diesem",
+            "explicacao": "Veja a chave comentada no livro: Dieser Tisch, diesen Tisch, Diese Lampe, diesem Mann",
+            "id": "de-005-L-206d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Ist das dein Schlüssel (m.)? — Ja, das ist ___! / — Hast du ein Fahrrad (n.)? — Nein, ich habe keins!",
+            "respostaEsperada": "meiner",
+            "explicacao": "Veja a chave comentada no livro: meiner / keins",
+            "id": "de-005-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Ist das dein Schlüssel (m.)? — Ja, das ist meiner! / — Hast du ein Fahrrad (n.)? — Nein, ich habe ___!",
+            "respostaEsperada": "keins",
+            "explicacao": "Veja a chave comentada no livro: meiner / keins",
+            "id": "de-005-L-207b"
+          }
+        ]
+      },
+      {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva os possessivos de «ich», «du» e «wir» com «Vater» e «Mutter»."
       }
     ]

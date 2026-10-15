@@ -20,8 +20,38 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Observe o mesmo adjetivo em três situações. PASSO 2: Perguntas: PASSO 3: Em que linhas o masculino termina em -er? PASSO 4: Em que linhas o neutro termina em -es? PASSO 5: Onde está o -en do plural? PASSO 6: O que as palavras der, die, das mostram que ein não mostra?",
+        "tabela": [
+          {
+            "c1": "Com der/die/das",
+            "c2": "der neue Tisch",
+            "c3": "die neue Lampe",
+            "c4": "das neue Bett",
+            "c5": "die neuen Stühle"
+          },
+          {
+            "c1": "Com ein/kein/mein",
+            "c2": "ein neuer Tisch",
+            "c3": "eine neue Lampe",
+            "c4": "ein neues Bett",
+            "c5": "keine neuen Stühle"
+          },
+          {
+            "c1": "Sem artigo",
+            "c2": "kalter Kaffee",
+            "c3": "kalte Milch",
+            "c4": "kaltes Wasser",
+            "c5": "kalte Getränke"
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 6,
         "itens": [
           {
             "ru": "süß",
@@ -83,7 +113,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 8,
         "titulo": "Dativo e genitivo: tudo «-en»",
         "explicacao": "PASSO 1: no DATIVO, depois de der, die, das, a terminação é «-en» em TODOS os gêneros e no plural: «dem großen Mann», «der kleinen Frau», «dem neuen Auto», «den großen Kindern». PASSO 2: no GENITIVO, a terminação também é «-en»: «des großen Mannes», «der kleinen Frau», «des neuen Autos», «der großen Kinder». PASSO 3: resuma assim: só há «-e» em quatro lugares (nominativo singular nos três gêneros e acusativo feminino e neutro); todo o resto é «-en». PASSO 4: use-os depois das preposições do dativo e das de duas vias: «mit dem neuen Auto», «in der kleinen Küche».",
         "tabela": [
@@ -131,13 +161,20 @@
         "tag": "Adjetivos e possessivos"
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Em 30 segundos",
+        "explicacao": "PASSO 1: Faça três perguntas, nesta ordem.",
+        "tag": "Resumo"
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Descreva 6 frases com preposições e adjetivos: «Ich fahre mit dem neuen Auto. Ich wohne in der kleinen Wohnung …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva o adjetivo declinado (nominativo e acusativo) com «der», «die», «das» e «die»."
       }
     ]

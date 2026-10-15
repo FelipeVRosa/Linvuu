@@ -35,7 +35,9 @@ def cena_bloco(S):
     if not d: return None
     ctx = limpa(S['cena'][0]['texto']) if S['cena'][0]['t'] == 'p' else ''
     trad = next((limpa(b['texto']) for b in S['cena'] if b['t'] == 'p' and b['texto'].startswith('Em português')), '')
-    pt = [x.strip() for x in trad.replace('Em português:', '').split(' / ')]
+    pt = [x.strip() for x in trad.replace('Em português:', '').replace(' // ', ' / ').split(' / ')]
+    nd = sum(len(b['falas']) for b in S['cena'] if b['t'] == 'dialogo')
+    if len(pt) == nd: pt = pt[:len(d['falas'])]  # várias cenas no capítulo: a tradução vem junta
     if len(pt) != len(d['falas']): pt = [''] * len(d['falas']); relatorio.append('tradução da cena não alinhou')
     return {'tipo': 'dialogo', 'min': 6, 'titulo': re.sub(r'^Cena:\s*', '', H.get('cena', 'Cena')).capitalize(), 'contexto': ctx,
             'linhas': [{'personagem': f['quem'], 'ru': '— ' + limpa(f['texto']), 'pt': ('— ' + p) if p else '', 'audio': limpa(f['texto'])} for f, p in zip(d['falas'], pt)]}

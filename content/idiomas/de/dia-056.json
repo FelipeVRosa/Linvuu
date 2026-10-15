@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -203,14 +203,94 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se: diga 4 coisas que você não tem, 3 que você não faz e responda a duas perguntas negativas com «doch»."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva cinco frases negativas verdadeiras sobre você: duas com kein / keine, duas com nicht e uma com nie (“nunca”).",
+            "respostaEsperada": "Ich habe kein Fahrrad. Ich habe heute keine Zeit. Ich wohne nicht in Hamburg. Meine Wohnung ist nicht groß. Ich trinke nie Bier.",
+            "id": "de-014-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Responda às três perguntas negativas: Hast du kein Auto? / Lernst du nicht Deutsch? / Hast du heute keine Zeit?",
+            "respostaEsperada": "— Hast du kein Auto? — Doch, ich habe ein Auto! (ou: Nein, ich habe kein Auto.) / — Lernst du nicht Deutsch? — Doch, ich lerne jeden Tag Deutsch! / — Hast du heute keine Zeit? — Nein, heute habe ich leider keine Zeit.",
+            "id": "de-014-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo de quatro falas recusando um convite para hoje à noite (Leider habe ich heute keine Zeit…) e propondo amanhã.",
+            "respostaEsperada": "Modelo de diálogo: — Hallo Anna! Hast du heute Abend Zeit? Gehen wir ins Kino? — Leider nicht! Heute habe ich keine Zeit, ich arbeite noch.— Schade! Und morgen Abend?— Morgen arbeite ich nicht. Morgen habe ich Zeit!",
+            "id": "de-014-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich nicht wohne in Berlin.",
+            "respostaEsperada": "Ich wohne nicht in Berlin.",
+            "explicacao": "Ich wohne nicht in Berlin.",
+            "id": "de-014-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich habe nicht Auto.",
+            "respostaEsperada": "Ich habe kein Auto.",
+            "explicacao": "Ich habe kein Auto.",
+            "id": "de-014-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist nicht eine Lampe.",
+            "respostaEsperada": "Das ist keine Lampe.",
+            "explicacao": "Das ist keine Lampe.",
+            "id": "de-014-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich habe kein Zeit.",
+            "respostaEsperada": "Ich habe keine Zeit.",
+            "explicacao": "Ich habe keine Zeit. (Zeit é feminino.)",
+            "id": "de-014-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich bin nicht Lehrerin.",
+            "respostaEsperada": "Ich bin keine Lehrerin.",
+            "explicacao": "Ich bin keine Lehrerin.",
+            "id": "de-014-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Heute ich arbeite nicht.",
+            "respostaEsperada": "Heute arbeite ich nicht.",
+            "explicacao": "Heute arbeite ich nicht. (verbo na posição 2)",
+            "id": "de-014-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Er kommt nicht.",
+            "respostaEsperada": "OK",
+            "id": "de-014-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é copiar o “não” antes do verbo (Ich nicht wohne) ou dizer nicht ein em vez de kein (Das ist nicht ein Tisch). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases: um pronome no acusativo, um «kein», um «nicht» e uma resposta com «doch»."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 5. Complete com o plural: Das sind keine ____ (Tisch). Das sind keine ____ (Haus). Das sind keine ____ (Frau). Do capítulo 4. Transforme em pergunta: Du hast kein Auto.Er kommt nicht. Do capítulo 3. Comece por Morgen: Ich komme nicht."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Digo Ich habe keine Zeit e Ich verstehe nicht. · Escolho kein ou nicht olhando para a frase afirmativa e respondo Doch quando discordo da negação."
       }
     ]
   },

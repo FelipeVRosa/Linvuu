@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Dar conselhos e sugestões com educação",
         "explicacao": "PASSO 1: para aconselhar: «An deiner Stelle würde ich …» (no seu lugar eu …) ou «Du solltest …» (você deveria …). PASSO 2: para sugerir: «Wie wäre es mit …?» (que tal …?) + dativo: «Wie wäre es mit einem Kaffee?»; ou «Wir könnten …» (poderíamos …). PASSO 3: para aceitar: «Das wäre schön!», «Gute Idee!». PASSO 4: para recusar com educação: «Ich würde gern, aber …» (eu gostaria, mas …).",
         "tabela": [
@@ -50,7 +50,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Ein Rat / Um conselho",
         "contexto": "Dois amigos conversam sobre o cansaço.",
         "linhas": [
@@ -111,13 +111,294 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Könnten Sie mir helfen?",
+            "translit": "",
+            "pt": "O senhor poderia me ajudar?",
+            "en": "",
+            "audio": "Könnten Sie mir helfen?"
+          },
+          {
+            "ru": "Ich hätte gern einen Kaffee.",
+            "translit": "",
+            "pt": "Eu gostaria de um café.",
+            "en": "",
+            "audio": "Ich hätte gern einen Kaffee."
+          },
+          {
+            "ru": "Würden Sie bitte warten?",
+            "translit": "",
+            "pt": "O senhor poderia esperar, por favor?",
+            "en": "",
+            "audio": "Würden Sie bitte warten?"
+          },
+          {
+            "ru": "Du solltest mehr schlafen.",
+            "translit": "",
+            "pt": "Você deveria dormir mais.",
+            "en": "",
+            "audio": "Du solltest mehr schlafen."
+          },
+          {
+            "ru": "An deiner Stelle würde ich fahren.",
+            "translit": "",
+            "pt": "No seu lugar, eu iria.",
+            "en": "",
+            "audio": "An deiner Stelle würde ich fahren."
+          },
+          {
+            "ru": "Wir könnten ins Kino gehen.",
+            "translit": "",
+            "pt": "A gente poderia ir ao cinema.",
+            "en": "",
+            "audio": "Wir könnten ins Kino gehen."
+          },
+          {
+            "ru": "Wie wäre es mit einem Kaffee?",
+            "translit": "",
+            "pt": "Que tal um café?",
+            "en": "",
+            "audio": "Wie wäre es mit einem Kaffee?"
+          },
+          {
+            "ru": "Ich wäre gern in Rio.",
+            "translit": "",
+            "pt": "Eu gostaria de estar no Rio.",
+            "en": "",
+            "audio": "Ich wäre gern in Rio."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Sie mir helfen?",
+            "opcoes": [
+              "Könnten",
+              "Konnten"
+            ],
+            "gabarito": "Könnten",
+            "explicacao": "Veja a chave comentada no livro: Könnten",
+            "id": "de-039-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich ___ gern einen Tee.",
+            "opcoes": [
+              "hätte",
+              "hatte"
+            ],
+            "gabarito": "hätte",
+            "explicacao": "Veja a chave comentada no livro: hätte",
+            "id": "de-039-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Sie bitte warten?",
+            "opcoes": [
+              "Würden",
+              "Wurden"
+            ],
+            "gabarito": "Würden",
+            "explicacao": "Veja a chave comentada no livro: Würden",
+            "id": "de-039-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Du ___ mehr schlafen.",
+            "opcoes": [
+              "solltest",
+              "solltet"
+            ],
+            "gabarito": "solltest",
+            "explicacao": "Veja a chave comentada no livro: solltest",
+            "id": "de-039-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é mais educado?",
+            "opcoes": [
+              "Kannst du mir helfen?",
+              "Könntest du mir helfen?"
+            ],
+            "gabarito": "Könntest du mir helfen?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-039-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              "Ich würde haben gern einen Kaffee",
+              "Ich hätte gern einen Kaffee"
+            ],
+            "gabarito": "Ich hätte gern einen Kaffee",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-039-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich ___ gern in Rio.",
+            "opcoes": [
+              "wäre",
+              "war"
+            ],
+            "gabarito": "wäre",
+            "explicacao": "Veja a chave comentada no livro: wäre",
+            "id": "de-039-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: haben (Konjunktiv II): ich ___, du hättest, er hätte, wir hätten, ihr hättet",
+            "respostaEsperada": "hätte",
+            "explicacao": "Veja a chave comentada no livro: hätte, hättest, hätte, hätten, hättet",
+            "id": "de-039-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: haben (Konjunktiv II): ich hätte, du ___, er hätte, wir hätten, ihr hättet",
+            "respostaEsperada": "hättest",
+            "explicacao": "Veja a chave comentada no livro: hätte, hättest, hätte, hätten, hättet",
+            "id": "de-039-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: haben (Konjunktiv II): ich hätte, du hättest, er ___, wir hätten, ihr hättet",
+            "respostaEsperada": "hätte",
+            "explicacao": "Veja a chave comentada no livro: hätte, hättest, hätte, hätten, hättet",
+            "id": "de-039-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: haben (Konjunktiv II): ich hätte, du hättest, er hätte, wir ___, ihr hättet",
+            "respostaEsperada": "hätten",
+            "explicacao": "Veja a chave comentada no livro: hätte, hättest, hätte, hätten, hättet",
+            "id": "de-039-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: haben (Konjunktiv II): ich hätte, du hättest, er hätte, wir hätten, ihr ___",
+            "respostaEsperada": "hättet",
+            "explicacao": "Veja a chave comentada no livro: hätte, hättest, hätte, hätten, hättet",
+            "id": "de-039-L-201e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: sein (Konjunktiv II): ich ___, du wärst, er wäre, wir wären, Sie wären",
+            "respostaEsperada": "wäre",
+            "explicacao": "Veja a chave comentada no livro: wäre, wärst, wäre, wären, wären",
+            "id": "de-039-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: sein (Konjunktiv II): ich wäre, du ___, er wäre, wir wären, Sie wären",
+            "respostaEsperada": "wärst",
+            "explicacao": "Veja a chave comentada no livro: wäre, wärst, wäre, wären, wären",
+            "id": "de-039-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: sein (Konjunktiv II): ich wäre, du wärst, er ___, wir wären, Sie wären",
+            "respostaEsperada": "wäre",
+            "explicacao": "Veja a chave comentada no livro: wäre, wärst, wäre, wären, wären",
+            "id": "de-039-L-202c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: sein (Konjunktiv II): ich wäre, du wärst, er wäre, wir ___, Sie wären",
+            "respostaEsperada": "wären",
+            "explicacao": "Veja a chave comentada no livro: wäre, wärst, wäre, wären, wären",
+            "id": "de-039-L-202d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue hätte e wäre nas pessoas indicadas: sein (Konjunktiv II): ich wäre, du wärst, er wäre, wir wären, Sie ___",
+            "respostaEsperada": "wären",
+            "explicacao": "Veja a chave comentada no livro: wäre, wärst, wäre, wären, wären",
+            "id": "de-039-L-202e"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Transforme cada frase direta em um pedido educado no Konjunktiv II: Hilf mir! (du) → ___?",
+            "respostaEsperada": "Könntest du mir bitte helfen?",
+            "id": "de-039-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Transforme cada frase direta em um pedido educado no Konjunktiv II: Mach das Fenster zu! (du, com würden) → ___?",
+            "respostaEsperada": "Würdest du bitte das Fenster zumachen?",
+            "id": "de-039-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Transforme cada frase direta em um pedido educado no Konjunktiv II: Ich will einen Kaffee. → ___.",
+            "respostaEsperada": "Ich hätte gern einen Kaffee (ou Ich möchte einen Kaffee)",
+            "id": "de-039-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Transforme cada frase direta em um pedido educado no Konjunktiv II: Sagen Sie mir die Zeit! (Sie) → ___?",
+            "respostaEsperada": "Könnten Sie mir bitte die Uhrzeit sagen?",
+            "id": "de-039-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conselho: Du ___ früher schlafen gehen. (sollen) · An deiner Stelle würde ich heute zu Hause bleiben. (werden)",
+            "respostaEsperada": "solltest",
+            "explicacao": "Veja a chave comentada no livro: solltest, würde",
+            "id": "de-039-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conselho: Du solltest früher schlafen gehen. (sollen) · An deiner Stelle ___ ich heute zu Hause bleiben. (werden)",
+            "respostaEsperada": "würde",
+            "explicacao": "Veja a chave comentada no livro: solltest, würde",
+            "id": "de-039-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sugestão: Wir ___ heute Abend ins Kino gehen. (können) · Wie wäre es mit einem Spaziergang? (sein)",
+            "respostaEsperada": "könnten",
+            "explicacao": "Veja a chave comentada no livro: könnten, wäre",
+            "id": "de-039-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sugestão: Wir könnten heute Abend ins Kino gehen. (können) · Wie ___ es mit einem Spaziergang? (sein)",
+            "respostaEsperada": "wäre",
+            "explicacao": "Veja a chave comentada no livro: könnten, wäre",
+            "id": "de-039-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Passado vs. Konjunktiv II: Gestern ___ ich leider nicht kommen. / Könntest du morgen vielleicht kommen? (konnte ou könntest?)",
+            "respostaEsperada": "konnte",
+            "explicacao": "Veja a chave comentada no livro: konnte, Könntest",
+            "id": "de-039-L-209a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Passado vs. Konjunktiv II: Gestern konnte ich leider nicht kommen. / ___ du morgen vielleicht kommen? (konnte ou könntest?)",
+            "respostaEsperada": "Könntest",
+            "explicacao": "Veja a chave comentada no livro: konnte, Könntest",
+            "id": "de-039-L-209b"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Dê 3 conselhos a um amigo e faça 3 sugestões de programa, com «würde», «solltest» e «Wie wäre es mit …?»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva uma frase com cada forma: würde, hätte, wäre, könnte e sollte."
       }
     ]

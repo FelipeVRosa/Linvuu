@@ -1,0 +1,332 @@
+# Capítulo 19: Pretérito: war, hatte, modais e histórias (A2)
+
+*Nível a2 · páginas 223–236 do livro*
+
+Meta do capítulo. Ao final, você usa war, hatte e os modais no pretérito na fala, forma o pretérito dos verbos regulares, reconhece os mais comuns dos irregulares (ging, kam, sah, fuhr) e sabe quando usar Präteritum e quando usar Perfekt.
+
+
+## 1. Cena: ontem foi um dia cansativo
+
+Jonas pergunta a Camila por que ela estava com cara de cansada. Depois, o diário dela.
+
+**Cena**
+
+**Jonas:** Warst du gestern müde?  
+**Camila:** Ja, sehr müde. Ich hatte viel Arbeit. Ich konnte nicht schlafen.  
+**Jonas:** Musstest du lange arbeiten?  
+**Camila:** Ja, ich musste bis zehn Uhr arbeiten. Ich wollte früh gehen, aber ich durfte nicht.  
+
+Camilas Tagebuch. Gestern war ein langer Tag. Ich stand um sechs Uhr auf und fuhr mit dem Bus zur Arbeit. Im Büro arbeitete ich lange. Am Abend kam Jonas, und wir kochten zusammen. Dann sah ich einen Film und schlief schnell ein.
+
+Em português: Você estava cansada ontem? / Sim, muito. Eu tinha muito trabalho. Não consegui dormir. / Você teve de trabalhar muito tempo? / Sim, tive de trabalhar até as dez. Eu queria sair cedo, mas não pude. Diário da Camila. Ontem foi um dia longo. Acordei às seis, peguei o ônibus para o trabalho. No escritório trabalhei bastante. À noite o Jonas chegou e cozinhamos juntos. Depois vi um filme e adormeci rápido.
+
+Repare: no diálogo, war, hatte, konnte, musste, wollte, durfte. No diário, verbos como stand … auf, fuhr, arbeitete, kam, kochten, sah, schlief … ein, sem haben nem sein ao lado.
+
+
+## 2. A armadilha do português
+
+Três armadilhas.
+
+1. 1. Dois passados que não são o seu. O português separa “fui, comi” (acabou) de “era, comia” (rotina, cenário). O alemão não faz essa divisão: ich war serve para “fui”, “era” e “estava”. O contexto diz qual.
+2. 2. O -te chega a todo mundo, menos aos irregulares. Os verbos regulares ganham -te (machen → machte). Os irregulares mudam a vogal e não ganham -te (gehen → ging, e não gehte).
+3. 3. Fala e escrita pedem tempos diferentes. Você não conta o que fez no jantar com Ich ging nach Hause, e sim com o Perfekt (capítulo 18). Mas war, hatte e os modais ficam no pretérito até na fala: Ich war müde.
+
+| PORTUGUÊS | ALEMÃO |
+|---|---|
+| Eu estava cansada. | Ich war müde. |
+| Eu tinha muito trabalho. | Ich hatte viel Arbeit. |
+| Eu não consegui dormir. | Ich konnte nicht schlafen. |
+| Eu tive de trabalhar. | Ich musste arbeiten. |
+| Ela foi para casa. | Sie ging nach Hause. |
+
+**Atenção**
+
+war, hatte, konnte, musste, wollte, durfte funcionam na fala. Os outros verbos no pretérito aparecem sobretudo em histórias e textos.
+
+
+## 3. Descubra você mesmo
+
+Observe os pares.
+
+1. 1. Ich bin heute müde. / Ich war gestern müde.
+2. 2. Ich habe Zeit. / Ich hatte keine Zeit.
+3. 3. Ich kann nicht kommen. / Ich konnte nicht kommen.
+4. 4. Wir müssen arbeiten. / Wir mussten arbeiten.
+5. 5. Er macht das Fenster zu. / Er machte das Fenster zu.
+6. 6. Sie geht nach Hause. / Sie ging nach Hause.
+7. 7. Ich wohne in Recife. / Ich wohnte in Recife.
+
+Perguntas:
+
+Compare ich war e er war, ich hatte e er hatte. O que você nota?
+
+Em können → konnte e müssen → musste, o que acontece com o ä, ö, ü?
+
+Em machte, wohnte, qual sufixo aparece? E em ging? Na frase 5, onde está zu?
+
+Se você notou que ich = er, que o modal perde o trema e ganha -te, que os regulares têm te e ging não, descobriu a regra.
+
+
+## 4. Em 30 segundos
+
+**Em 30 segundos**
+
+1. 1. Quando usar:sein, haben e os modais, no pretérito, na fala e na escrita. Para os outros verbos, na fala, Perfekt (capítulo 18). Em histórias e textos, pretérito.
+2. 2. Os verbos mais importantes:
+
+|  | SEIN | HABEN | KÖNNEN | MÜSSEN | WOLLEN |
+|---|---|---|---|---|---|
+| ich | war | hatte | konnte | musste | wollte |
+| du | warst | hattest | konntest | musstest | wolltest |
+| er, sie, es | war | hatte | konnte | musste | wollte |
+| wir | waren | hatten | konnten | mussten | wollten |
+| ihr | wart | hattet | konntet | musstet | wolltet |
+| sie, Sie | waren | hatten | konnten | mussten | wollten |
+
+3. 3. Outros modais:sollen → sollte, dürfen → durfte, mögen → mochte. Sem trema. Möchten não tem pretérito: use wollte.
+4. 4. Regulares: radical + -te. machen → machte, kaufen → kaufte, wohnen → wohnte, kochen → kochte. Radicais em -t ou -d ganham -ete: arbeiten → arbeitete, warten → wartete.
+5. 5. Irregulares: a vogal muda e não há -te. ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen.
+6. 6. Ich = er em qualquer verbo do pretérito: sem terminação.
+7. 7. Separáveis: o prefixo vai para o fim. Ich stand um sechs Uhr auf.Inseparáveis: sem mudança. Ich besuchte meine Oma.
+8. 8. Com modal: pretérito do modal na posição 2, infinitivo no fim. Ich musste lange arbeiten.
+9. 9. Os irregulares mais frequentes (para reconhecer):
+
+| INFINITIVO | PRETÉRITO | INFINITIVO | PRETÉRITO |
+|---|---|---|---|
+| gehen | ging | essen | aß |
+| kommen | kam | trinken | trank |
+| sehen | sah | schlafen | schlief |
+| fahren | fuhr | lesen | las |
+| bleiben | blieb | laufen | lief |
+| geben | gab | fliegen | flog |
+| finden | fand | stehen | stand |
+| schreiben | schrieb | nehmen | nahm |
+| sprechen | sprach | wissen | wusste |
+| bringen | brachte | denken | dachte |
+
+
+## 5. Por dentro
+
+Perfekt ou pretérito? Pense assim.
+
+| SITUAÇÃO | ESCOLHA |
+|---|---|
+| Conversa, sein, haben, modais | Präteritum: Ich war, ich hatte, ich konnte |
+| Conversa, outros verbos | Perfekt: Ich habe gegessen |
+| História, notícia, livro, diário | Präteritum: Er ging, sie sah |
+
+No sul da Alemanha, na Áustria e na Suíça, a fala usa mais o Perfekt, até para histórias. No norte, o pretérito aparece mais.
+
+O quarteto. No capítulo 18, você aprendeu o trio (infinitivo, 3ª pessoa, particípio). Agora ele vira um quarteto: gehen — geht — ging — ist gegangen. Essen — isst — aß — hat gegessen. Os dicionários trazem as quatro formas.
+
+Cuidado com konnte e könnte. O pretérito do modal não tem trema: Ich konnte = eu pude, eu consegui. Ich könnte (com trema) é outro tempo, o Konjunktiv II (capítulo 22), que significa “poderia”. Não troque um pelo outro.
+
+Es war einmal. É o “era uma vez” dos contos de fadas: Es war einmal ein König … Você o verá em muitos livros infantis.
+
+Haben e sein no Perfekt.Ich habe gehabt e ich bin gewesen existem, mas quase ninguém diz. Use hatte e war.
+
+Subordinadas. No capítulo 24, o verbo no pretérito vai para o fim: weil ich müde war.
+
+Wissen.Wissen → wusste muda a vogal e ainda leva o -te. É um verbo “misto”, como bringen → brachte e denken → dachte. Aprenda os três de cor.
+
+
+## 6. Frases de ouro
+
+| ALEMÃO | PORTUGUÊS |
+|---|---|
+| Wo warst du gestern? | Onde você estava ontem? |
+| Ich hatte keine Zeit. | Eu não tinha tempo. |
+| Ich konnte nicht kommen. | Eu não pude vir. |
+| Wir mussten lange warten. | Tivemos de esperar muito. |
+| Er wollte nach Hause gehen. | Ele queria ir para casa. |
+| Sie ging nach Hause. | Ela foi para casa. |
+| Es war einmal ein König. | Era uma vez um rei. |
+| Ich wusste das nicht. | Eu não sabia disso. |
+
+
+## 7. Treino em quatro degraus
+
+**Treino**
+
+Degrau 1. Reconheça.
+
+1. 1. Gestern ____ ich müde. (bin, war)
+2. 2. Wir ____ keine Zeit. (hatten, hatte)
+3. 3. Er ____ nicht kommen. (konnte, konntet)
+4. 4. Du ____ lange arbeiten. (musstest, musst)
+5. 5. Pretérito de gehen: (gegangen, ging)
+6. 6. Pretérito de machen: (machte, mache)
+7. 7. Qual está certa? (a) Er stand um sieben Uhr auf. (b) Er aufstand um sieben Uhr.
+
+Degrau 2. Complete.
+
+Conjugue sein e haben no Präteritum:
+
+1. 1. sein: ich ____, du ____, er ____, wir ____, ihr ____
+2. 2. haben: ich ____, du ____, er ____, wir ____, ihr ____
+
+Passe as frases do presente para o Präteritum (como fazemos na fala com sein, haben e modais):
+
+1. 1. Ich bin müde. → ____ · Wir haben keine Zeit. → ____
+2. 2. Er kann nicht kommen. → ____ · Ihr müsst lange warten. → ____
+3. 3. Sie will nach Hause gehen. → ____ · Du darfst nicht bleiben. → ____
+
+Escreva o Präteritum dos verbos regulares e troque o Perfekt pelo Präteritum nos irregulares:
+
+1. 1. kaufen → ich ____ · wohnen → ich ____ · arbeiten → ich ____ · kochen → wir ____ · fragen → er ____
+2. 2. Er ist nach Hause gegangen. → Er ____ nach Hause. · Sie hat einen Film gesehen. → Sie ____ einen Film. · Wir sind nach Berlin gefahren. → Wir ____ nach Berlin. · Ich habe viel gelesen. → Ich ____ viel.
+
+Degrau 3. Produza.
+
+1. 1. Escreva quatro frases contando como foi o seu dia de ontem usando war, hatte, konnte e musste.
+2. 2. Escreva um mini-diário de quatro linhas no estilo do diário da Camila usando o Präteritum (Gestern war ein langer Tag. Ich stand um … auf und fuhr …).
+3. 3. Escreva o início de uma história de três frases começando por Es war einmal ….
+
+Degrau 4. Corrija o erro típico. Uma delas está certa.
+
+1. 1. Ich habe gestern müde gewesen.
+2. 2. Ich hattest keine Zeit.
+3. 3. Er konnten nicht kommen.
+4. 4. Ich musste lange arbeiteten.
+5. 5. Sie gehte nach Hause.
+6. 6. Wir mussten lange warten.
+7. 7. Er aufstand um sieben Uhr.
+
+
+## 8. O erro típico
+
+O erro que mais custa caro é colocar -te num verbo irregular (gehte, kommte, sahte em vez de ging, kam, sah), colocar terminação em ich ou er/sie/es no Präteritum (er konnten / er gingt) ou manter o trema nos modais no Präteritum (könnte/müsste têm trema no Konjunktiv II, mas no passado real são konnte / musste sem trema!).
+
+**Erros típicos**
+
+**Errado certo por quê**
+
+Sie gehte / Er Sie ging / Er kam Verbos fortes mudam a vogal da raiz e nunca levam kommte -te no Präteritum.
+
+Ich hattest / Er Ich hatte / Er konnte No Präteritum, ich = er/sie/es (sem terminação -t ou konnten / Er gingt / Er ging -st!).
+
+**Errado certo por quê**
+
+Ich musste lange Ich musste lange Conjugamos apenas o modal (musste); o verbo no arbeiteten. arbeiten. final fica no infinitivo!
+
+Gestern könnte ich Gestern konnte ich No Präteritum (“ontem não pude”), os modais nicht kommen. nicht kommen. perdem o trema (konnte, musste, durfte, mochte).
+
+Er aufstand um Er stand um sieben Nos verbos separáveis, o prefixo continua indo para sieben Uhr. Uhr auf. o fim no Präteritum.
+
+**Atenção**
+
+regular = radical + -te. Irregular = vogal nova, sem -te. Ich = er. E konnte (pude) não é könnte (poderia).
+
+
+## 9. Retorno
+
+Do capítulo 18. Complete: Gestern ____ ich nach Berlin ____. (fahren, Perfekt)
+
+Do capítulo 17. Complete: Ich ____ morgen früh ____. (aufstehen)
+
+Do capítulo 16. Complete: Er ____ (sprechen) sehr schnell.
+
+Do capítulo 15. Complete: Du ____ (dürfen) hier nicht parken.
+
+Do capítulo 14. Complete: Das ist das Buch meines ____ (Kollege).
+
+| QUANDO | O QUE FAZER |
+|---|---|
+| Dia 1 | Leia o diário da Camila em voz alta e troque as atividades. |
+| Dia 3 | Escreva de memória o pretérito dos seis modais. |
+| Dia 7 | Refaça o Degrau 4 sem a chave. |
+| Dia 14 | Escreva o seu próprio diário de ontem, em cinco linhas. |
+
+
+## 10. Resumo e “já consigo”
+
+**Resumo e “já consigo”**
+
+War, hatte e os modais (konnte, musste, wollte, sollte, durfte): usam o pretérito (Präteritum) mesmo na fala cotidiana.
+
+Regulares: radical + -te (machte, arbeitete). Irregulares: vogal nova, sem -te (ging, kam, sah, fuhr, gab).
+
+Ich = er/sie/es, sempre iguais no Präteritum.
+
+Outros verbos: Perfekt na fala; Präteritum em histórias, notícias e textos escritos.
+
+Já consigo?
+
+Conto como me senti (Ich war…) e o que tive ou não consegui fazer (Ich hatte / musste / konnte…).
+
+Entendo uma pequena história em Präteritum e escolho entre Perfekt e Präteritum conforme a situação.
+
+
+## Glossário do capítulo 19
+
+| ALEMÃO | PORTUGUÊS |
+|---|---|
+| sein — war | ser, estar |
+| haben — hatte | ter |
+| können — konnte | poder, conseguir |
+| müssen — musste | ter de |
+| wollen — wollte | querer |
+| sollen — sollte | dever |
+| dürfen — durfte | poder (permissão) |
+| mögen — mochte | gostar de |
+| gehen — ging | ir |
+| kommen — kam | vir |
+| sehen — sah | ver |
+| essen — aß | comer |
+| trinken — trank | beber |
+| fahren — fuhr | ir (de veículo) |
+| bleiben — blieb | ficar |
+| geben — gab | dar |
+| finden — fand | achar |
+| schreiben — schrieb | escrever |
+| sprechen — sprach | falar |
+| nehmen — nahm | pegar |
+| stehen — stand | estar de pé |
+| schlafen — schlief | dormir |
+| lesen — las | ler |
+| laufen — lief | correr |
+| fliegen — flog | voar |
+| wissen — wusste | saber (um fato) |
+| bringen — brachte | trazer, levar |
+| denken — dachte | pensar |
+| machen — machte | fazer |
+| kaufen — kaufte | comprar |
+| wohnen — wohnte | morar |
+| arbeiten — arbeitete | trabalhar |
+| kochen — kochte | cozinhar |
+| fragen — fragte | perguntar |
+| das Tagebuch | diário |
+| das Büro | escritório |
+| die Arbeit | trabalho |
+| müde | cansado |
+| zusammen | juntos |
+| einmal | uma vez |
+| der König | rei |
+| der Kollege | colega |
+
+
+## Chave comentada do capítulo 19
+
+**Chave comentada**
+
+Degrau 1. 1 war. 2 hatten. 3 konnte. 4 musstest. 5 ging. 6 machte. 7 (a).
+
+Degrau 2. 1 war, warst, war, waren, wart. 2 hatte, hattest, hatte, hatten, hattet. 3 Ich war müde. Wir hatten keine Zeit. 4 Er konnte nicht kommen. Ihr musstet lange warten. 5 Sie wollte nach Hause gehen. Du durftest nicht bleiben. 6 kaufte, wohnte, arbeitete, kochten, fragte. 7 Er ging nach Hause. Sie sah einen Film. Wir fuhren nach Berlin. Ich las viel.
+
+Degrau 3 (Respostas-modelo).
+
+1. 1. Gestern war ich sehr müde, denn ich hatte viel Arbeit im Büro. Ich musste bis neunzehn Uhr bleiben und konnte am Abend nicht zum Sport gehen.
+2. 2. Gestern war ein schöner Tag. Ich stand um sieben Uhr auf, trank einen Kaffee und fuhr mit der U-Bahn in die Stadt. Dort traf ich meine Freunde, und wir aßen zusammen im Restaurant.
+3. 3. Es war einmal ein junger Mann. Er wohnte in einer kleinen Stadt, aber er wollte die Welt sehen. Eines Tages nahm er seinen Rucksack und ging los.
+
+Degrau 4.
+
+1. 1. Ich war gestern müde.
+2. 2. Ich hatte keine Zeit.
+3. 3. Er konnte nicht kommen.
+4. 4. Ich musste lange arbeiten.
+5. 5. Sie ging nach Hause.
+6. 6. Está certa.
+7. 7. Er stand um sieben Uhr auf.
+
+Retorno. Capítulo 18: bin … gefahren. Capítulo 17: stehe … auf. Capítulo 16: spricht. Capítulo 15: darfst. Capítulo 14: Kollegen.

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "As outras seis preposições de duas vias",
         "explicacao": "PASSO 1: as seis restantes seguem a mesma regra: hinter (atrás de), neben (ao lado de), über (acima de, sobre), unter (embaixo de), vor (na frente de), zwischen (entre). PASSO 2: «Wo?» pede dativo: «Die Tasche steht vor der Tür.» PASSO 3: «Wohin?» pede acusativo: «Ich stelle die Tasche vor die Tür.» PASSO 4: «zwischen» pede um plural ou dois itens: «zwischen den Büchern» (Wo?), «zwischen die Bücher» (Wohin?).",
         "tabela": [
@@ -60,7 +60,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Wo ist …? / Onde está …?",
         "contexto": "Dois colegas arrumam a sala.",
         "linhas": [
@@ -127,13 +127,281 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Wie komme ich zum Bahnhof?",
+            "translit": "",
+            "pt": "Como chego à estação?",
+            "en": "",
+            "audio": "Wie komme ich zum Bahnhof?"
+          },
+          {
+            "ru": "Ich fahre mit dem Bus.",
+            "translit": "",
+            "pt": "Vou de ônibus.",
+            "en": "",
+            "audio": "Ich fahre mit dem Bus."
+          },
+          {
+            "ru": "Ich gehe nach Hause.",
+            "translit": "",
+            "pt": "Estou indo para casa.",
+            "en": "",
+            "audio": "Ich gehe nach Hause."
+          },
+          {
+            "ru": "Ich bin zu Hause.",
+            "translit": "",
+            "pt": "Estou em casa.",
+            "en": "",
+            "audio": "Ich bin zu Hause."
+          },
+          {
+            "ru": "Das ist für dich.",
+            "translit": "",
+            "pt": "Isto é para você.",
+            "en": "",
+            "audio": "Das ist für dich."
+          },
+          {
+            "ru": "Ich lerne seit drei Monaten Deutsch.",
+            "translit": "",
+            "pt": "Estudo alemão há três meses.",
+            "en": "",
+            "audio": "Ich lerne seit drei Monaten Deutsch."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich fahre mit ___ Bus.",
+            "opcoes": [
+              "dem",
+              "den"
+            ],
+            "gabarito": "dem",
+            "explicacao": "Veja a chave comentada no livro: dem (mit pede dativo)",
+            "id": "de-029-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das Geschenk ist für ___.",
+            "opcoes": [
+              "dir",
+              "dich"
+            ],
+            "gabarito": "dich",
+            "explicacao": "Veja a chave comentada no livro: dich (für pede acusativo)",
+            "id": "de-029-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich gehe in ___ Küche.",
+            "opcoes": [
+              "der",
+              "die"
+            ],
+            "gabarito": "die",
+            "explicacao": "Veja a chave comentada no livro: die (movimento)",
+            "id": "de-029-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich bin in ___ Küche.",
+            "opcoes": [
+              "der",
+              "die"
+            ],
+            "gabarito": "der",
+            "explicacao": "Veja a chave comentada no livro: der (parado)",
+            "id": "de-029-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich komme aus ___ Schule.",
+            "opcoes": [
+              "der",
+              "die"
+            ],
+            "gabarito": "der",
+            "explicacao": "Veja a chave comentada no livro: der (aus pede dativo)",
+            "id": "de-029-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das Buch liegt auf ___ Tisch.",
+            "opcoes": [
+              "dem",
+              "den"
+            ],
+            "gabarito": "dem",
+            "explicacao": "Veja a chave comentada no livro: dem (wo?)",
+            "id": "de-029-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich lege das Buch auf ___ Tisch.",
+            "opcoes": [
+              "dem",
+              "den"
+            ],
+            "gabarito": "den",
+            "explicacao": "Veja a chave comentada no livro: den (wohin?)",
+            "id": "de-029-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "“Moro aqui há um ano (e continuo morando)”: Ich wohne ___ einem Jahr hier.",
+            "opcoes": [
+              "seit",
+              "vor"
+            ],
+            "gabarito": "seit",
+            "explicacao": "Veja a chave comentada no livro: seit",
+            "id": "de-029-L-108"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = ___ · in + dem = im · zu + der = zur · von + dem = vom · in + das = ins · an + dem = am",
+            "respostaEsperada": "zum",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = zum · in + dem = ___ · zu + der = zur · von + dem = vom · in + das = ins · an + dem = am",
+            "respostaEsperada": "im",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = zum · in + dem = im · zu + der = ___ · von + dem = vom · in + das = ins · an + dem = am",
+            "respostaEsperada": "zur",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = zum · in + dem = im · zu + der = zur · von + dem = ___ · in + das = ins · an + dem = am",
+            "respostaEsperada": "vom",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = zum · in + dem = im · zu + der = zur · von + dem = vom · in + das = ___ · an + dem = am",
+            "respostaEsperada": "ins",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva as contrações obrigatórias do dia a dia: zu + dem = zum · in + dem = im · zu + der = zur · von + dem = vom · in + das = ins · an + dem = ___",
+            "respostaEsperada": "am",
+            "explicacao": "Veja a chave comentada no livro: zum, im, zur, vom, ins, am",
+            "id": "de-029-L-201f"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Ich gehe jetzt ___ Hause. · Heute Abend bin ich zu Hause.",
+            "respostaEsperada": "nach",
+            "explicacao": "Veja a chave comentada no livro: nach, zu",
+            "id": "de-029-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Ich gehe jetzt nach Hause. · Heute Abend bin ich ___ Hause.",
+            "respostaEsperada": "zu",
+            "explicacao": "Veja a chave comentada no livro: nach, zu",
+            "id": "de-029-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Morgen fahre ich ___ Berlin und gehe zum Arzt.",
+            "respostaEsperada": "nach",
+            "explicacao": "Veja a chave comentada no livro: nach, zum",
+            "id": "de-029-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Morgen fahre ich nach Berlin und gehe ___ Arzt.",
+            "respostaEsperada": "zum",
+            "explicacao": "Veja a chave comentada no livro: nach, zum",
+            "id": "de-029-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Ich wohne ___ drei Monaten in München (presente!). · Ich kam vor drei Monaten in München an (passado!). · Ich bleibe für eine Woche in Wien.",
+            "respostaEsperada": "seit",
+            "explicacao": "Veja a chave comentada no livro: seit, vor, für",
+            "id": "de-029-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Ich wohne seit drei Monaten in München (presente!). · Ich kam ___ drei Monaten in München an (passado!). · Ich bleibe für eine Woche in Wien.",
+            "respostaEsperada": "vor",
+            "explicacao": "Veja a chave comentada no livro: seit, vor, für",
+            "id": "de-029-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a preposição correta (nach, zu/zum, in, seit, vor, für): Ich wohne seit drei Monaten in München (presente!). · Ich kam vor drei Monaten in München an (passado!). · Ich bleibe ___ eine Woche in Wien.",
+            "respostaEsperada": "für",
+            "explicacao": "Veja a chave comentada no livro: seit, vor, für",
+            "id": "de-029-L-204c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o artigo no caso exigido pela preposição: mit ___ Freund (m.) · ohne das Auto (n.) · für die Lehrerin (f.) · nach dem Kurs (m.) · gegenüber dem Bahnhof (m.)",
+            "respostaEsperada": "dem",
+            "explicacao": "Veja a chave comentada no livro: dem Freund, das Auto, die Lehrerin, dem Kurs, dem Bahnhof",
+            "id": "de-029-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o artigo no caso exigido pela preposição: mit dem Freund (m.) · ohne ___ Auto (n.) · für die Lehrerin (f.) · nach dem Kurs (m.) · gegenüber dem Bahnhof (m.)",
+            "respostaEsperada": "das",
+            "explicacao": "Veja a chave comentada no livro: dem Freund, das Auto, die Lehrerin, dem Kurs, dem Bahnhof",
+            "id": "de-029-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o artigo no caso exigido pela preposição: mit dem Freund (m.) · ohne das Auto (n.) · für ___ Lehrerin (f.) · nach dem Kurs (m.) · gegenüber dem Bahnhof (m.)",
+            "respostaEsperada": "die",
+            "explicacao": "Veja a chave comentada no livro: dem Freund, das Auto, die Lehrerin, dem Kurs, dem Bahnhof",
+            "id": "de-029-L-205c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o artigo no caso exigido pela preposição: mit dem Freund (m.) · ohne das Auto (n.) · für die Lehrerin (f.) · nach ___ Kurs (m.) · gegenüber dem Bahnhof (m.)",
+            "respostaEsperada": "dem",
+            "explicacao": "Veja a chave comentada no livro: dem Freund, das Auto, die Lehrerin, dem Kurs, dem Bahnhof",
+            "id": "de-029-L-205d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o artigo no caso exigido pela preposição: mit dem Freund (m.) · ohne das Auto (n.) · für die Lehrerin (f.) · nach dem Kurs (m.) · gegenüber ___ Bahnhof (m.)",
+            "respostaEsperada": "dem",
+            "explicacao": "Veja a chave comentada no livro: dem Freund, das Auto, die Lehrerin, dem Kurs, dem Bahnhof",
+            "id": "de-029-L-205e"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga onde 6 objetos da sua casa estão e para onde você os leva, com as seis preposições."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as nove preposições de duas vias e a regra de ouro (Wo? × Wohin?)."
       }
     ]

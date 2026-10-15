@@ -20,8 +20,75 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa war, hatte e os modais no pretérito na fala, forma o pretérito dos verbos regulares, reconhece os mais comuns dos irregulares (ging, kam, sah, fuhr) e sabe quando usar Präteritum e quando usar Perfekt."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Ontem foi um dia cansativo",
+        "contexto": "Jonas pergunta a Camila por que ela estava com cara de cansada. Depois, o diário dela.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Warst du gestern müde?",
+            "pt": "— Você estava cansada ontem?",
+            "audio": "Warst du gestern müde?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, sehr müde. Ich hatte viel Arbeit. Ich konnte nicht schlafen.",
+            "pt": "— Sim, muito. Eu tinha muito trabalho. Não consegui dormir.",
+            "audio": "Ja, sehr müde. Ich hatte viel Arbeit. Ich konnte nicht schlafen."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Musstest du lange arbeiten?",
+            "pt": "— Você teve de trabalhar muito tempo?",
+            "audio": "Musstest du lange arbeiten?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, ich musste bis zehn Uhr arbeiten. Ich wollte früh gehen, aber ich durfte nicht.",
+            "pt": "— Sim, tive de trabalhar até as dez. Eu queria sair cedo, mas não pude. Diário da Camila. Ontem foi um dia longo. Acordei às seis, peguei o ônibus para o trabalho. No escritório trabalhei bastante. À noite o Jonas chegou e cozinhamos juntos. Depois vi um filme e adormeci rápido.",
+            "audio": "Ja, ich musste bis zehn Uhr arbeiten. Ich wollte früh gehen, aber ich durfte nicht."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: war, hatte, konnte, musste, wollte, durfte funcionam na fala. Os outros verbos no pretérito aparecem sobretudo em histórias e textos.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Eu estava cansada.",
+            "ingles": "Ich war müde."
+          },
+          {
+            "portugues": "Eu tinha muito trabalho.",
+            "ingles": "Ich hatte viel Arbeit."
+          },
+          {
+            "portugues": "Eu não consegui dormir.",
+            "ingles": "Ich konnte nicht schlafen."
+          },
+          {
+            "portugues": "Eu tive de trabalhar.",
+            "ingles": "Ich musste arbeiten."
+          },
+          {
+            "portugues": "Ela foi para casa.",
+            "ingles": "Sie ging nach Hause."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "früher",
@@ -83,7 +150,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Sein e haben no Präteritum, passo a passo",
         "explicacao": "PASSO 1: «Präteritum» é outra forma do passado, mais usada na ESCRITA e em textos. PASSO 2: com «sein» e «haben», a CONVERSA também usa o Präteritum, em vez do Perfekt: dizemos «Ich war müde», não «Ich bin müde gewesen»; dizemos «Ich hatte Fieber», não «Ich habe Fieber gehabt». PASSO 3: as formas de «sein»: ich war, du warst, er war, wir waren, ihr wart, sie waren. PASSO 4: as formas de «haben»: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. PASSO 5: note que «ich» e «er» são IGUAIS (war, hatte), como nos modais do presente.",
         "comparacao": "o português tem o pretérito imperfeito: «eu estava cansado», «eu tinha febre». Em alemão, «war» e «hatte» fazem esse trabalho.",
@@ -158,12 +225,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 6 frases sobre ontem e sobre a sua infância com «war» e «hatte»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases no Perfekt, com «haben» e com «sein»."
       }
     ]

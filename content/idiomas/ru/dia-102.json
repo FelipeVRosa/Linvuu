@@ -20,8 +20,313 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "A distinção crucial: lugar (instrumental) vs. movimento (acusativo)",
+        "explicacao": "A distinção crucial: lugar (instrumental) vs. movimento (acusativo). Aqui está uma armadilha que pega todo brasileiro. As preposições НАД, ПОД, ЗА e МЕ́ЖДУ mudam de caso conforme o sentido: Lugar (repouso) → instrumental.\nMovimento → acusativo. Veja: A regra: • Lugar (onde está) → instrumental. • Movimento (para onde vai) → acusativo. Isso é parecido com o que você já viu com В e НА na Aula 7 (onde → prepositivo; para onde → acusativo). Aqui é a mesma lógica: onde → instrumental; para onde → acusativo. Compare com В e НА (Aula 7): Repare: o acusativo é sempre o caso do movimento. O caso do repouso muda: prepositivo com В/НА, instrumental com НАД/ПОД/ЗА/МЕ́ЖДУ.",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "A distinção crucial: lugar (instrumental) vs. movimento (acusativo)",
+            "linhas": [
+              {
+                "Frase": "O gato está embaixo da mesa.",
+                "Sentido": "Lugar",
+                "Caso": "Instrumental",
+                "Exemplo": "Кот под столо́м."
+              },
+              {
+                "Frase": "O gato corre para debaixo da mesa.",
+                "Sentido": "Movimento",
+                "Caso": "Acusativo",
+                "Exemplo": "Кот бежи́т под стол."
+              },
+              {
+                "Frase": "O quadro está por cima da mesa.",
+                "Sentido": "Lugar",
+                "Caso": "Instrumental",
+                "Exemplo": "Карти́на над столо́м."
+              },
+              {
+                "Frase": "Ele pendura o quadro por cima da mesa.",
+                "Sentido": "Movimento",
+                "Caso": "Acusativo",
+                "Exemplo": "Он ве́шает карти́ну над стол."
+              },
+              {
+                "Frase": "A casa está atrás do jardim.",
+                "Sentido": "Lugar",
+                "Caso": "Instrumental",
+                "Exemplo": "Дом за са́дом."
+              },
+              {
+                "Frase": "Ele vai para trás do jardim.",
+                "Sentido": "Movimento",
+                "Caso": "Acusativo",
+                "Exemplo": "Он идёт за сад."
+              }
+            ]
+          },
+          {
+            "titulo": "A distinção crucial: lugar (instrumental) vs. movimento (acusativo)",
+            "linhas": [
+              {
+                "Sentido": "Onde (lugar)",
+                "Com В/НА": "Prepositivo",
+                "Com НАД/ПОД/ЗА/МЕ́ЖДУ": "Instrumental"
+              },
+              {
+                "Sentido": "Para onde (movimento)",
+                "Com В/НА": "Acusativo",
+                "Com НАД/ПОД/ЗА/МЕ́ЖДУ": "Acusativo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "A regra da tesourinha do instrumental · A tabela mestra do instrumental",
+        "explicacao": "A regra da tesourinha do instrumental. Agora, as terminações. A tesourinha funciona como sempre: 1. Encontre a forma do nominativo (a palavra \"de dicionário\").\n2. Aplique a terminação do instrumental, que depende do gênero.\n3. Pronto. O substantivo está no instrumental. As terminações do instrumental são: Repare: • Masculino e neutro em -о/-е recebem -ОМ/-ЕМ. • Feminino em -а/-я recebem -ОЙ/-ЕЙ (ou -ОЮ/-ЕЮ, formas mais arcaicas). • Feminino em -ь recebe -ЬЮ. • Neutro em -мя recebe -ЕНЕМ. A grande diferença do instrumental em relação aos outros casos: o masculino e o neutro recebem -ОМ/-ЕМ (não -У, não -Е). É uma terminação única. A tabela mestra do instrumental. Aqui está a tabela que resolve tudo: Atenção às regras ortográficas: Depois das letras ж, ч, ш, щ, ц, quando a terminação é -ОМ/-ОЙ sem acento, escreve-se -ЕМ/-ЕЙ: • това́рищ → това́рищем (não \"това́рищом\") • врач → врачо́м (com acento, fica -ом) • муж → му́жем (não \"мужом\") • ноша → но́шей Isso é o que Dolenga menciona quando fala da raiz terminada em ж, ч, ш, ц, п.",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "A regra da tesourinha do instrumental",
+            "linhas": [
+              {
+                "Gênero / Terminação": "Masculino em consoante",
+                "Instrumental singular": "-ОМ",
+                "Exemplo": "стол → столо́м, дом → до́мом"
+              },
+              {
+                "Gênero / Terminação": "Masculino em -й",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "музе́й → музе́ем, геро́й → геро́ем"
+              },
+              {
+                "Gênero / Terminação": "Masculino em -ь",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "слова́рь → словарём, учи́тель → учи́телем"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -а",
+                "Instrumental singular": "-ОЙ (ou -ОЮ)",
+                "Exemplo": "кни́га → кни́гой, ко́мната → ко́мнатой"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -я",
+                "Instrumental singular": "-ЕЙ (ou -ЕЮ)",
+                "Exemplo": "семья́ → семьёй, дере́вня → дере́вней"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ь",
+                "Instrumental singular": "-ЬЮ",
+                "Exemplo": "ночь → но́чью, дверь → две́рью"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ия",
+                "Instrumental singular": "-ИЕЙ",
+                "Exemplo": "Росси́я → Росси́ей"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -о",
+                "Instrumental singular": "-ОМ",
+                "Exemplo": "окно́ → окно́м, сло́во → сло́вом"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -е",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "мо́ре → мо́рем, пла́тье → пла́тьем"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -мя",
+                "Instrumental singular": "-ЕНЕМ",
+                "Exemplo": "вре́мя → вре́менем, и́мя → и́менем"
+              }
+            ]
+          },
+          {
+            "titulo": "A tabela mestra do instrumental",
+            "linhas": [
+              {
+                "Gênero / Terminação": "Masculino em consoante",
+                "Instrumental singular": "-ОМ",
+                "Exemplo": "стол → столо́м"
+              },
+              {
+                "Gênero / Terminação": "Masculino em -й",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "музе́й → музе́ем"
+              },
+              {
+                "Gênero / Terminação": "Masculino em -ь",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "учи́тель → учи́телем"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -а",
+                "Instrumental singular": "-ОЙ",
+                "Exemplo": "кни́га → кни́гой"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -я",
+                "Instrumental singular": "-ЕЙ",
+                "Exemplo": "семья́ → семьёй"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ь",
+                "Instrumental singular": "-ЬЮ",
+                "Exemplo": "ночь → но́чью"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ия",
+                "Instrumental singular": "-ИЕЙ",
+                "Exemplo": "Росси́я → Росси́ей"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -о",
+                "Instrumental singular": "-ОМ",
+                "Exemplo": "окно́ → окно́м"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -е",
+                "Instrumental singular": "-ЕМ",
+                "Exemplo": "мо́ре → мо́рем"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -мя",
+                "Instrumental singular": "-ЕНЕМ",
+                "Exemplo": "вре́мя → вре́менем"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "A variação С / СО · Os pronomes pessoais no instrumental",
+        "explicacao": "A variação С / СО. A preposição с (com) tem uma variação ortográfica: • С → antes de consoantes (menos as duas consoantes específicas): с дру́гом, с ма́мой, с учи́телем. • СО → antes de palavras que começam com с + consoante ou com мн-, вс-, вс-: со мной, со стака́ном, со стола́, со всеми́. Exemplos: Por quê? Eufonia de novo. С дру́гом soaria normal. С мной soaria estranho (с + м). Por isso, o russo insere -о- para separar: со мной. Os pronomes pessoais no instrumental. Assim como no dativo, os pronomes pessoais têm formas especiais no instrumental. Você precisa decorar. Atenção à regra do \"н\": Quando o pronome он, она́, оно́, они́ vem depois de uma preposição, ele recebe um н- no início: • с ним (com ele) • с ней (com ela) • с ни́ми (com eles) • о нём (sobre ele — prepositivo) • к нему́ (para ele — dativo) Mas quando o pronome não vem depois de preposição, fica sem o н: • его́ (dele — sem preposição) • её (dela — sem preposição) • их (deles — sem preposição) Exemplos:",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "A variação С / СО",
+            "linhas": [
+              {
+                "Russo": "со мной",
+                "Tradução": "comigo"
+              },
+              {
+                "Russo": "со тобо́й? — Não. É с тобо́й (т é consoante simples).",
+                "Tradução": ""
+              },
+              {
+                "Russo": "со стака́ном",
+                "Tradução": "com o copo"
+              },
+              {
+                "Russo": "со стола́",
+                "Tradução": "da mesa"
+              },
+              {
+                "Russo": "со всеми́",
+                "Tradução": "com todos"
+              },
+              {
+                "Russo": "со мно́й",
+                "Tradução": "comigo"
+              },
+              {
+                "Russo": "со льдом",
+                "Tradução": "com gelo"
+              },
+              {
+                "Russo": "со смета́ной",
+                "Tradução": "com creme azedo"
+              }
+            ]
+          },
+          {
+            "titulo": "Os pronomes pessoais no instrumental",
+            "linhas": [
+              {
+                "Nominativo": "я",
+                "Instrumental": "мной",
+                "Tradução": "comigo"
+              },
+              {
+                "Nominativo": "ты",
+                "Instrumental": "тобо́й",
+                "Tradução": "contigo"
+              },
+              {
+                "Nominativo": "он",
+                "Instrumental": "им (ним depois de preposição)",
+                "Tradução": "com ele"
+              },
+              {
+                "Nominativo": "она́",
+                "Instrumental": "ей (ней depois de preposição)",
+                "Tradução": "com ela"
+              },
+              {
+                "Nominativo": "оно́",
+                "Instrumental": "им (ним depois de preposição)",
+                "Tradução": "com ele/ela (neutro)"
+              },
+              {
+                "Nominativo": "мы",
+                "Instrumental": "на́ми",
+                "Tradução": "conosco"
+              },
+              {
+                "Nominativo": "вы",
+                "Instrumental": "ва́ми",
+                "Tradução": "convosco"
+              },
+              {
+                "Nominativo": "они́",
+                "Instrumental": "и́ми (ни́ми depois de preposição)",
+                "Tradução": "com eles/elas"
+              },
+              {
+                "Nominativo": "себя́",
+                "Instrumental": "собо́й",
+                "Tradução": "consigo mesmo"
+              }
+            ]
+          },
+          {
+            "titulo": "Os pronomes pessoais no instrumental",
+            "linhas": [
+              {
+                "Russo": "Я иду́ с ним.",
+                "Tradução": "Vou com ele."
+              },
+              {
+                "Russo": "Я говорю́ с ней.",
+                "Tradução": "Falo com ela."
+              },
+              {
+                "Russo": "Он живёт с ни́ми.",
+                "Tradução": "Ele mora com eles."
+              },
+              {
+                "Russo": "Я ду́маю о нём.",
+                "Tradução": "Penso nele."
+              },
+              {
+                "Russo": "Я люблю́ его́.",
+                "Tradução": "Amo ele."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 4,
         "itens": [
           {
             "ru": "зима",
@@ -83,7 +388,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 8,
         "titulo": "Quando usar o instrumental",
         "explicacao": "Cinco usos principais. (1) Companhia, com «с»: «с другом». (2) Instrumento ou meio, SEM preposição: «писать ручкой», «есть ложкой». (3) Profissão com «работать» e «быть»: «Я работаю врачом», «Он хочет быть учителем». (4) Tempo: «утром, днём, вечером, ночью» e as estações «зимой, весной, летом, осенью». (5) Lugar, com as preposições «над» (acima), «под» (embaixo), «перед» (diante), «за» (atrás) e «между» (entre), e também «рядом с» (ao lado de): «Лампа стоит над столом».",
         "tabelas": [
@@ -160,12 +465,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga: «Зимой я читаю. Летом я гуляю. Я работаю учителем. Лампа стоит над столом.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o instrumental de: брат, мама, друг, подруга, дети."
       }
     ]

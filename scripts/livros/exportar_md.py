@@ -7,7 +7,7 @@ import argparse, json, pathlib
 def celula(t): return t.replace('|', '\\|').replace('\n', ' ')
 
 def capitulo_md(c):
-    L = [f"# Capítulo {c['n']}: {c['titulo']}", '', f"*Nível {c.get('nivel','')} · páginas {c['paginas'][0]}–{c['paginas'][1]} do livro*", '']
+    L = [f"# Capítulo {c['n']}: {c['titulo']}", '', f"*Nível {c.get('nivel','')}" + (f" · páginas {c['paginas'][0]}–{c['paginas'][1]} do livro" if c.get('paginas') else '') + '*', '']
     lista = False
     for b in c['blocos']:
         t = b['t']

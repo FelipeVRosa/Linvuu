@@ -20,8 +20,322 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "(ou: o caso do lugar — e o segredinho dos lugares abertos e fechados)"
+      },
+      {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 4,
+        "titulo": "Uma cena que você já viveu (ou vai viver) · O que é o caso prepositivo? (e por que ele tem",
+        "explicacao": "Uma cena que você já viveu (ou vai viver). Você já sabe conjugar verbos, usar o passado, o futuro e o caso acusativo. Agora imagine outra cena. Você está na Rússia. Quer dizer que está no quarto. Você pensa: \"quarto em russo é ко́мната. Vou dizer я в ко́мната.\" A pessoa te olha com uma cara estranha e corrige: — Я в ко́мнате. Você olha. É a mesma palavra. Ко́мната. Mas agora termina em -е, não em -а. Você pensa: \"Por quê? Eu já mudei essa palavra para o acusativo antes (ко́мнату). Agora mudou de novo? Quantas formas essa palavra tem?\" Isso acontece com todo estudante de russo. E acontece porque você acabou de encontrar o caso prepositivo. Parece mais um caso complicado. Não é. Cinco minutos de leitura atenta e você vai entender o segredinho que resolve tudo. O que é o caso prepositivo? (e por que ele tem esse nome). Antes de qualquer coisa, uma pergunta: por que esse caso se chama prepositivo? Grava isto: O caso prepositivo é o único caso do russo que NUNCA aparece sozinho. Ele sempre vem depois de uma preposição. É por isso que ele se chama prepositivo. O nome vem de preposição. É o caso \"da preposição\". Ele não existe sem ela. Nunca. Em nenhuma frase. Em nenhum contexto. Enquanto o nominativo pode aparecer sozinho (это дом), o acusativo pode aparecer sozinho (я вижу дом), o prepositivo sempre vem com uma preposição antes. Sempre. E para que ele serve? Aqui está a resposta: O caso prepositivo serve para dizer ONDE as coisas estão. É o caso do lugar. Quando você quer dizer \"estou no quarto\", \"moro na Rússia\", \"o livro está na mesa\", \"trabalho na fábrica\" — em todas essas frases, o substantivo vai para o caso prepositivo. É o caso do \"onde\". Simples assim.",
+        "tag": "Livro"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O segredinho: lugares abertos e lugares fechados",
+        "explicacao": "O segredinho: lugares abertos e lugares fechados. Agora vem a parte mais encantadora. Preste atenção, porque aqui está a chave de tudo. O russo tem duas preposições principais para dizer \"onde\": В e НА. As duas significam \"em\" ou \"no/na\". Mas o russo escolhe entre elas com base em uma lógica muito simples: В → para lugares FECHADOS. Lugares onde você pode entrar dentro. Lugares que têm paredes, portas, um interior. НА → para lugares ABERTOS, AMPLOS. Lugares onde você está sobre, em cima, na superfície. O teste mágico: pergunte a si mesmo: Dá para entrar dentro? SIM → В (loja, quarto, cinema, teatro, casa, escola, fábrica, restaurante, museu...). NÃO, é um lugar amplo, aberto → НА (praça, rua, parque, estação, mercado, montanha, rio...). Veja como funciona: Repare: • Комната (quarto) — dá para entrar dentro → В. • Магазин (loja) — dá para entrar dentro → В. • Площадь (praça) — é ampla, aberta → НА. • Улица (rua) — é aberta → НА. • Работа (trabalho) — não é um lugar físico, é uma atividade → НА. • Урок (aula) — não é um lugar, é um evento → НА. • Концерт (concerto) — não é um lugar, é um evento → НА. A regra geral: dá para entrar dentro? Se sim, é В. Se é amplo, aberto ou é um evento/atividade, é НА.",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "O segredinho: lugares abertos e lugares fechados",
+            "linhas": [
+              {
+                "Lugar": "Ко́мната (quarto)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в ко́мнате. (Estou no quarto.)"
+              },
+              {
+                "Lugar": "Магази́н (loja)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в магази́не. (Estou na loja.)"
+              },
+              {
+                "Lugar": "Кино́ (cinema)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в кино́. (Estou no cinema.)"
+              },
+              {
+                "Lugar": "Шко́ла (escola)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в шко́ле. (Estou na escola.)"
+              },
+              {
+                "Lugar": "Больни́ца (hospital)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в больни́це. (Estou no hospital.)"
+              },
+              {
+                "Lugar": "Теа́тр (teatro)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я в теа́тре. (Estou no teatro.)"
+              },
+              {
+                "Lugar": "По́чта (correio)",
+                "Dá para entrar dentro?": "Sim",
+                "Preposição": "В",
+                "Exemplo": "Я на по́чте? — Cuidado! Isso é exceção. Vamos ver depois."
+              },
+              {
+                "Lugar": "Пло́щадь (praça)",
+                "Dá para entrar dentro?": "Não — é amplo",
+                "Preposição": "НА",
+                "Exemplo": "Я на пло́щади. (Estou na praça.)"
+              },
+              {
+                "Lugar": "У́лица (rua)",
+                "Dá para entrar dentro?": "Não — é aberto",
+                "Preposição": "НА",
+                "Exemplo": "Я на у́лице. (Estou na rua.)"
+              },
+              {
+                "Lugar": "Парк (parque)",
+                "Dá para entrar dentro?": "Não — é aberto",
+                "Preposição": "НА",
+                "Exemplo": "Я в па́рке? — Cuidado! Parque é fechado? Não. Mas o russo usa В. Exceção. Vamos ver depois."
+              },
+              {
+                "Lugar": "Вокза́л (estação)",
+                "Dá para entrar dentro?": "Não — originalmente era aberto",
+                "Preposição": "НА",
+                "Exemplo": "Я на вокза́ле. (Estou na estação.)"
+              },
+              {
+                "Lugar": "Ры́нок (mercado)",
+                "Dá para entrar dentro?": "Não — é aberto",
+                "Preposição": "НА",
+                "Exemplo": "Я на ры́нке. (Estou no mercado.)"
+              },
+              {
+                "Lugar": "Уро́к (aula)",
+                "Dá para entrar dentro?": "Não — é um evento",
+                "Preposição": "НА",
+                "Exemplo": "Я на уро́ке. (Estou na aula.)"
+              },
+              {
+                "Lugar": "Рабо́та (trabalho)",
+                "Dá para entrar dentro?": "Não — é uma atividade",
+                "Preposição": "НА",
+                "Exemplo": "Я на рабо́те. (Estou no trabalho.)"
+              },
+              {
+                "Lugar": "Конце́рт (concerto)",
+                "Dá para entrar dentro?": "Não — é um evento",
+                "Preposição": "НА",
+                "Exemplo": "Я на конце́рте. (Estou no concerto.)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "A ponte com o português: В = no/na",
+        "explicacao": "A ponte com o português: В = no/na. Aqui está a coisa mais bonita. Nós já fazemos isso em português sem perceber. Em português, dizemos: • Estou no quarto. (em + o quarto) • Estou na loja. (em + a loja) • Estou no cinema. (em + o cinema) • Estou na praça. (em + a praça) Nós contraímos \"em + o\" em \"no\", e \"em + a\" em \"na\". É automático. Em russo, a lógica é parecida. A preposição В funciona como o nosso \"no/na\". Ela é o \"em\" contraído. E a preposição НА também funciona como \"no/na\", mas com uma nuance de \"sobre, em cima\". Compare: Repare: não existe \"в + o\" ou \"в + a\" em russo. É sempre в sozinho, sem contração. Mas a ideia é a mesma do português. Você só precisa escolher entre В (fechado) e НА (aberto/evento).",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "A ponte com o português: В = no/na",
+            "linhas": [
+              {
+                "Português": "Estou no quarto.",
+                "Russo": "Я в ко́мнате.",
+                "Literalmente": "Estou em quarto."
+              },
+              {
+                "Português": "Estou na loja.",
+                "Russo": "Я в магази́не.",
+                "Literalmente": "Estou em loja."
+              },
+              {
+                "Português": "Estou no cinema.",
+                "Russo": "Я в кино́.",
+                "Literalmente": "Estou em cinema."
+              },
+              {
+                "Português": "Estou na praça.",
+                "Russo": "Я на пло́щади.",
+                "Literalmente": "Estou sobre praça."
+              },
+              {
+                "Português": "Estou na rua.",
+                "Russo": "Я на у́лице.",
+                "Literalmente": "Estou sobre rua."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "As 4 principais preposições do prepositivo",
+        "explicacao": "As 4 principais preposições do prepositivo. O caso prepositivo é regido por quatro preposições principais. Vamos conhecer cada uma. 1. В (em, dentro) Uso: lugares fechados, onde você pode entrar dentro.\nPergunta: Где? (Onde?)\nExemplos: Variação ortográfica: ВО. Antes de palavras que começam com в ou com duas consoantes, usa-se ВО em vez de В: Por quê? Eufonia. O russo não gosta de certos encontros consonânticos. ВВладивостоке soaria mal. Por isso insere-se um -о- para separar. 2. НА (em, sobre) Uso: lugares abertos, amplos, ou eventos/atividades.\nPergunta: Где? (Onde?)\nExemplos: Repare: на também aparece com lugares que \"não fazem sentido\" (почта, работа, урок, концерт). Porque a lógica não é só \"aberto vs. fechado\". A lógica também inclui eventos, atividades, superfícies. E há exceções históricas. Vamos ver depois. 3. О (sobre, a respeito de) Uso: falar sobre algo, a respeito de algo.\nPergunta: О ком? О чём? (Sobre quem? Sobre o quê?)\nExemplos: Variação ortográfica: ОБ e ОБО. • О → antes de consoante: о кни́ге, о рабо́те, о теа́тре. • ОБ → antes de vogal: об Ива́не, об А́нне, об э́том, об о́сени. • ОБО → antes de palavras que começam com duas consoantes ou com as consoantes мн-, вс-, вс-, etc.: обо мне, обо всём, обо льде. Exemplos: Por quê? Eufonia de novo. О Иване soaria mal. О мне também. Por isso o russo insere об ou обо para separar. 4. ПРИ (junto a, na presença de, no tempo de) Uso: raro no dia a dia, mas aparece em contextos formais, históricos ou de proximidade.\nExemplos: ПРИ tem três significados: • Junto a, ao lado de: при университе́те (junto à universidade). • Na presença de: при де́тях (na presença das crianças). • No tempo de: при царе́ (no tempo do tsar).",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "Я в ко́мнате.",
+                "Tradução": "Estou no quarto."
+              },
+              {
+                "Russo": "Я в магази́не.",
+                "Tradução": "Estou na loja."
+              },
+              {
+                "Russo": "Я в кино́.",
+                "Tradução": "Estou no cinema."
+              },
+              {
+                "Russo": "Я в шко́ле.",
+                "Tradução": "Estou na escola."
+              },
+              {
+                "Russo": "Я в Москве́.",
+                "Tradução": "Estou em Moscou."
+              },
+              {
+                "Russo": "Я в Росси́и.",
+                "Tradução": "Estou na Rússia."
+              },
+              {
+                "Russo": "Он в теа́тре.",
+                "Tradução": "Ele está no teatro."
+              }
+            ]
+          },
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "Я во Владивосто́ке.",
+                "Tradução": "Estou em Vladivostok."
+              },
+              {
+                "Russo": "Я во Фра́нции.",
+                "Tradução": "Estou na França."
+              },
+              {
+                "Russo": "Он во дворе́.",
+                "Tradução": "Ele está no pátio."
+              }
+            ]
+          },
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "Я на пло́щади.",
+                "Tradução": "Estou na praça."
+              },
+              {
+                "Russo": "Я на у́лице.",
+                "Tradução": "Estou na rua."
+              },
+              {
+                "Russo": "Я на вокза́ле.",
+                "Tradução": "Estou na estação."
+              },
+              {
+                "Russo": "Я на ры́нке.",
+                "Tradução": "Estou no mercado."
+              },
+              {
+                "Russo": "Я на рабо́те.",
+                "Tradução": "Estou no trabalho."
+              },
+              {
+                "Russo": "Я на уро́ке.",
+                "Tradução": "Estou na aula."
+              },
+              {
+                "Russo": "Я на конце́рте.",
+                "Tradução": "Estou no concerto."
+              },
+              {
+                "Russo": "Я на по́чте.",
+                "Tradução": "Estou no correio."
+              },
+              {
+                "Russo": "Я на Се́верном по́люсе.",
+                "Tradução": "Estou no Polo Norte."
+              }
+            ]
+          },
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "Я говорю́ о кни́ге.",
+                "Tradução": "Falo sobre o livro."
+              },
+              {
+                "Russo": "Мы говори́м о рабо́те.",
+                "Tradução": "Falamos sobre o trabalho."
+              },
+              {
+                "Russo": "Он ду́мает о ней.",
+                "Tradução": "Ele pensa nela."
+              },
+              {
+                "Russo": "Я чита́ю о Росси́и.",
+                "Tradução": "Leio sobre a Rússia."
+              }
+            ]
+          },
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "Я говорю́ о ма́ме.",
+                "Tradução": "Falo sobre a mamãe."
+              },
+              {
+                "Russo": "Я говорю́ об Ива́не.",
+                "Tradução": "Falo sobre Ivan."
+              },
+              {
+                "Russo": "Я говорю́ обо мне.",
+                "Tradução": "Falo sobre mim."
+              }
+            ]
+          },
+          {
+            "titulo": "As 4 principais preposições do prepositivo",
+            "linhas": [
+              {
+                "Russo": "При царе́ Никола́е...",
+                "Tradução": "No tempo do tsar Nicolau..."
+              },
+              {
+                "Russo": "При Петре́ I...",
+                "Tradução": "No tempo de Pedro I..."
+              },
+              {
+                "Russo": "При университе́те есть библиоте́ка.",
+                "Tradução": "Junto à universidade há uma biblioteca."
+              },
+              {
+                "Russo": "Не говори́те э́то при де́тях.",
+                "Tradução": "Não diga isso na presença das crianças."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
         "titulo": "в e на: escolher pela imagem do lugar",
         "explicacao": "Os dois significam «em», mas o russo escolhe pela imagem. «В» = dentro de um espaço fechado ou delimitado: в доме, в комнате, в сумке, и também países e cidades (в России, в Москве). «На» = sobre uma superfície (на столе, на полу, на стене), em um lugar visto como espaço aberto (на улице, на площади, на море) ou em um evento e atividade (на работе, на уроке, на концерте). A palavra depois de в/на vai para o preposicional (-е, -и): в доме, на столе. Alguns masculinos curtos têm preposicional em -у quando respondem «где?»: в шкафу, в саду, в лесу, на полу, на мосту.",
         "comparacao": "em português usamos «em / na / no» para tudo. Em russo, a escolha entre в e на depende da imagem do lugar: dentro, em cima, espaço aberto ou evento.",
@@ -78,7 +392,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 4,
         "itens": [
           {
             "ru": "пол",
@@ -140,12 +454,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Diga: «Книга на столе. Я в России. Деньги в сумке. Я на работе.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Escreva 4 frases com «в» + lugar, como «Я живу в …»."
       }
     ]

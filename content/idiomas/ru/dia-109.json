@@ -20,8 +20,549 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "(ou: a segunda metade do caso mais famoso do russo)"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "Onde você está agora · O genitivo plural: as terminações",
+        "explicacao": "Onde você está agora. Você aprendeu, na Aula 10, o genitivo singular — o \"de\" e a negação. Você já sabe dizer: • У меня́ нет кни́ги. (Não tenho livro.) • Э́то дом ма́мы. (É a casa da mamãe.) • У меня́ нет вре́мени. (Não tenho tempo.) Agora, a segunda metade. Nesta aula, você vai aprender: • O genitivo plural — como dizer \"não tenho livros\" (нет книг). • Os números — como dizer \"dois livros\" (две кни́ги), \"cinco livros\" (пять книг). • As preposições do genitivo — без, для, до, из, от, у. E depois desta aula, você terminou a gramática essencial do russo. Você terá visto os 6 casos. Vou explicar isso no final. O genitivo plural: as terminações. O genitivo plural tem uma lógica parecida com a do singular, mas com terminações diferentes. Vou começar pelas quatro regras principais: Vou explicar cada caso com exemplos.",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "O genitivo plural: as terminações",
+            "linhas": [
+              {
+                "Gênero / Terminação": "Masculino duro (consoante)",
+                "Genitivo plural": "-ОВ",
+                "Exemplo": "стол → столо́в, дом → домо́в"
+              },
+              {
+                "Gênero / Terminação": "Masculino brando (-ь, -й)",
+                "Genitivo plural": "-ЕЙ",
+                "Exemplo": "учи́тель → учителе́й, музе́й → музе́ев"
+              },
+              {
+                "Gênero / Terminação": "Masculino em ж, ч, ш, щ",
+                "Genitivo plural": "-ЕЙ",
+                "Exemplo": "врач → враче́й, това́рищ → това́рищей"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -а",
+                "Genitivo plural": "sem terminação",
+                "Exemplo": "кни́га → книг, ма́ма → мам"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -я",
+                "Genitivo plural": "-Ь",
+                "Exemplo": "семья́ → семе́й, дере́вня → дереве́нь"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ь",
+                "Genitivo plural": "-ЕЙ",
+                "Exemplo": "дверь → двере́й, ночь → ноче́й"
+              },
+              {
+                "Gênero / Terminação": "Feminino em -ия",
+                "Genitivo plural": "-ИЙ",
+                "Exemplo": "Росси́я → Росси́й, Мари́я → Мари́й"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -о",
+                "Genitivo plural": "sem terminação",
+                "Exemplo": "окно́ → о́кон, сло́во → слов"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -е",
+                "Genitivo plural": "-ЕЙ",
+                "Exemplo": "мо́ре → море́й, пла́тье → пла́тьев"
+              },
+              {
+                "Gênero / Terminação": "Neutro em -мя",
+                "Genitivo plural": "-ЁН",
+                "Exemplo": "вре́мя → времён, и́мя → имён"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O masculino no genitivo plural",
+        "explicacao": "O masculino no genitivo plural. Masculino duro → -ОВ Repare: adiciona-se -ОВ ao final da palavra. É a regra mais comum do masculino. Atenção aos irregulares: друг → друзе́й (não \"другов\"). Брат → бра́тьев (não \"братов\"). São exceções que você vai decorar. Masculino brando (-ь, -й) → -ЕЙ Repare: o -ь ou -й desaparece e entra -ЕЙ. Masculino em ж, ч, ш, щ → -ЕЙ Repare: depois de ж, ч, ш, щ, a terminação é -ЕЙ (não -ОВ).",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "O masculino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "стол",
+                "Genitivo plural": "столо́в",
+                "Tradução": "mesas"
+              },
+              {
+                "Nominativo singular": "дом",
+                "Genitivo plural": "домо́в",
+                "Tradução": "casas"
+              },
+              {
+                "Nominativo singular": "го́род",
+                "Genitivo plural": "городо́в",
+                "Tradução": "cidades"
+              },
+              {
+                "Nominativo singular": "студе́нт",
+                "Genitivo plural": "студе́нтов",
+                "Tradução": "estudantes"
+              },
+              {
+                "Nominativo singular": "друг",
+                "Genitivo plural": "друзе́й (irregular)",
+                "Tradução": "amigos"
+              },
+              {
+                "Nominativo singular": "брат",
+                "Genitivo plural": "бра́тьев (irregular)",
+                "Tradução": "irmãos"
+              },
+              {
+                "Nominativo singular": "кот",
+                "Genitivo plural": "кото́в",
+                "Tradução": "gatos"
+              },
+              {
+                "Nominativo singular": "телефо́н",
+                "Genitivo plural": "телефо́нов",
+                "Tradução": "telefones"
+              },
+              {
+                "Nominativo singular": "магази́н",
+                "Genitivo plural": "магази́нов",
+                "Tradução": "lojas"
+              },
+              {
+                "Nominativo singular": "биле́т",
+                "Genitivo plural": "биле́тов",
+                "Tradução": "bilhetes"
+              }
+            ]
+          },
+          {
+            "titulo": "O masculino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "учи́тель",
+                "Genitivo plural": "учителе́й",
+                "Tradução": "professores"
+              },
+              {
+                "Nominativo singular": "слова́рь",
+                "Genitivo plural": "словаре́й",
+                "Tradução": "dicionários"
+              },
+              {
+                "Nominativo singular": "медве́дь",
+                "Genitivo plural": "медве́дей",
+                "Tradução": "ursos"
+              },
+              {
+                "Nominativo singular": "музе́й",
+                "Genitivo plural": "музе́ев",
+                "Tradução": "museus"
+              },
+              {
+                "Nominativo singular": "геро́й",
+                "Genitivo plural": "геро́ев",
+                "Tradução": "heróis"
+              }
+            ]
+          },
+          {
+            "titulo": "O masculino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "врач",
+                "Genitivo plural": "враче́й",
+                "Tradução": "médicos"
+              },
+              {
+                "Nominativo singular": "това́рищ",
+                "Genitivo plural": "това́рищей",
+                "Tradução": "camaradas"
+              },
+              {
+                "Nominativo singular": "нож",
+                "Genitivo plural": "ноже́й",
+                "Tradução": "facas"
+              },
+              {
+                "Nominativo singular": "ключ",
+                "Genitivo plural": "ключе́й",
+                "Tradução": "chaves"
+              },
+              {
+                "Nominativo singular": "эта́ж",
+                "Genitivo plural": "этаже́й",
+                "Tradução": "andares"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O feminino no genitivo plural",
+        "explicacao": "O feminino no genitivo plural. Feminino em -а → sem terminação Repare: o -а desaparece. A palavra fica igual à raiz. Sem terminação nenhuma. CUIDADO: este é o plural mais frequente do feminino, mas nem sempre é assim tão simples. Veja a seção 11.6 sobre a vogal eufônica. Feminino em -я → -Ь Repare: o -я desaparece e entra -Ь (sinal brando). Ou uma vogal eufônica aparece (ver 11.6). Feminino em -ь → -ЕЙ Repare: o -ь desaparece e entra -ЕЙ. Feminino em -ия → -ИЙ Repare: o -я desaparece e entra -ИЙ (com dois \"i\"s).",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "O feminino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "кни́га",
+                "Genitivo plural": "книг",
+                "Tradução": "livros"
+              },
+              {
+                "Nominativo singular": "ма́ма",
+                "Genitivo plural": "мам",
+                "Tradução": "mães"
+              },
+              {
+                "Nominativo singular": "ла́мпа",
+                "Genitivo plural": "ламп",
+                "Tradução": "lâmpadas"
+              },
+              {
+                "Nominativo singular": "рабо́та",
+                "Genitivo plural": "рабо́т",
+                "Tradução": "trabalhos"
+              },
+              {
+                "Nominativo singular": "шко́ла",
+                "Genitivo plural": "школ",
+                "Tradução": "escolas"
+              },
+              {
+                "Nominativo singular": "маши́на",
+                "Genitivo plural": "маши́н",
+                "Tradução": "carros"
+              },
+              {
+                "Nominativo singular": "ко́мната",
+                "Genitivo plural": "ко́мнат",
+                "Tradução": "quartos"
+              },
+              {
+                "Nominativo singular": "вода́",
+                "Genitivo plural": "вод",
+                "Tradução": "águas"
+              }
+            ]
+          },
+          {
+            "titulo": "O feminino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "семья́",
+                "Genitivo plural": "семе́й",
+                "Tradução": "famílias"
+              },
+              {
+                "Nominativo singular": "дере́вня",
+                "Genitivo plural": "дереве́нь",
+                "Tradução": "vilas"
+              },
+              {
+                "Nominativo singular": "тётя",
+                "Genitivo plural": "тётей (irregular)",
+                "Tradução": "tias"
+              },
+              {
+                "Nominativo singular": "неде́ля",
+                "Genitivo plural": "неде́ль",
+                "Tradução": "semanas"
+              },
+              {
+                "Nominativo singular": "земля́",
+                "Genitivo plural": "земе́ль",
+                "Tradução": "terras"
+              }
+            ]
+          },
+          {
+            "titulo": "O feminino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "дверь",
+                "Genitivo plural": "двере́й",
+                "Tradução": "portas"
+              },
+              {
+                "Nominativo singular": "ночь",
+                "Genitivo plural": "ноче́й",
+                "Tradução": "noites"
+              },
+              {
+                "Nominativo singular": "тетра́дь",
+                "Genitivo plural": "тетра́дей",
+                "Tradução": "cadernos"
+              },
+              {
+                "Nominativo singular": "пло́щадь",
+                "Genitivo plural": "площаде́й",
+                "Tradução": "praças"
+              },
+              {
+                "Nominativo singular": "крова́ть",
+                "Genitivo plural": "крова́тей",
+                "Tradução": "camas"
+              }
+            ]
+          },
+          {
+            "titulo": "O feminino no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "Росси́я",
+                "Genitivo plural": "Росси́й",
+                "Tradução": "Rússias"
+              },
+              {
+                "Nominativo singular": "Мари́я",
+                "Genitivo plural": "Мари́й",
+                "Tradução": "Marias"
+              },
+              {
+                "Nominativo singular": "А́нглия",
+                "Genitivo plural": "А́нглий",
+                "Tradução": "Inglaterras"
+              },
+              {
+                "Nominativo singular": "исто́рия",
+                "Genitivo plural": "исто́рий",
+                "Tradução": "histórias"
+              },
+              {
+                "Nominativo singular": "компа́ния",
+                "Genitivo plural": "компа́ний",
+                "Tradução": "companhias"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O neutro no genitivo plural",
+        "explicacao": "O neutro no genitivo plural. Neutro em -о → sem terminação Repare: o -о desaparece. Às vezes aparece uma vogal eufônica (о́кон, пи́сем — ver 11.6). Neutro em -е → -ЕЙ Repare: o -е desaparece e entra -ЕЙ (ou -ИЙ depois de \"i\" — упражнений). Neutro em -мя → -ЁН Repare: essas 10 palavras são neutras e terminam em -мя. No genitivo plural, viram -ЁН (com o \"ё\" tônico).",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "O neutro no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "окно́",
+                "Genitivo plural": "о́кон",
+                "Tradução": "janelas"
+              },
+              {
+                "Nominativo singular": "сло́во",
+                "Genitivo plural": "слов",
+                "Tradução": "palavras"
+              },
+              {
+                "Nominativo singular": "молоко́",
+                "Genitivo plural": "моло́к",
+                "Tradução": "leites"
+              },
+              {
+                "Nominativo singular": "письмо́",
+                "Genitivo plural": "пи́сем",
+                "Tradução": "cartas"
+              },
+              {
+                "Nominativo singular": "ме́сто",
+                "Genitivo plural": "мест",
+                "Tradução": "lugares"
+              },
+              {
+                "Nominativo singular": "де́ло",
+                "Genitivo plural": "дел",
+                "Tradução": "negócios"
+              }
+            ]
+          },
+          {
+            "titulo": "O neutro no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "мо́ре",
+                "Genitivo plural": "море́й",
+                "Tradução": "mares"
+              },
+              {
+                "Nominativo singular": "пла́тье",
+                "Genitivo plural": "пла́тьев",
+                "Tradução": "vestidos"
+              },
+              {
+                "Nominativo singular": "упражне́ние",
+                "Genitivo plural": "упражне́ний",
+                "Tradução": "exercícios"
+              },
+              {
+                "Nominativo singular": "зна́ние",
+                "Genitivo plural": "зна́ний",
+                "Tradução": "conhecimentos"
+              },
+              {
+                "Nominativo singular": "зда́ние",
+                "Genitivo plural": "зда́ний",
+                "Tradução": "edifícios"
+              }
+            ]
+          },
+          {
+            "titulo": "O neutro no genitivo plural",
+            "linhas": [
+              {
+                "Nominativo singular": "вре́мя",
+                "Genitivo plural": "времён",
+                "Tradução": "tempos"
+              },
+              {
+                "Nominativo singular": "и́мя",
+                "Genitivo plural": "имён",
+                "Tradução": "nomes"
+              },
+              {
+                "Nominativo singular": "зна́мя",
+                "Genitivo plural": "знамён",
+                "Tradução": "estandartes"
+              },
+              {
+                "Nominativo singular": "се́мя",
+                "Genitivo plural": "семя́н",
+                "Tradução": "sementes"
+              },
+              {
+                "Nominativo singular": "пле́мя",
+                "Genitivo plural": "племён",
+                "Tradução": "tribos"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "A vogal eufônica: o segredo do plural feminino e neutro",
+        "explicacao": "A vogal eufônica: o segredo do plural feminino e neutro. Aqui está uma das regras que mais confundem o aluno — mas que é previsível quando você entende a lógica. Quando a raiz termina em duas consoantes, insere-se uma vogal (о ou е) entre elas, no genitivo plural, para facilitar a pronúncia. A lógica: o russo não gosta de encontros consonânticos difíceis no final da palavra. Então, ele insere uma vogal. Exemplos com o \"о\": Exemplos com o \"е\": A regra prática: • Depois de к, г, х, ж, ч, ш, щ → geralmente -ЕК ou -ЕК (кошек, девочек). • Depois de outras consoantes → geralmente -ОК ou -ОК (палок, окон). Mas atenção: há exceções. Se você tiver dúvida, consulte o dicionário. As palavras mais usadas você vai acabar decorando. Exemplos em frases:",
+        "tag": "Livro",
+        "tabelas": [
+          {
+            "titulo": "A vogal eufônica: o segredo do plural feminino e neutro",
+            "linhas": [
+              {
+                "Nominativo singular": "ко́шка",
+                "Genitivo plural": "ко́шек",
+                "Tradução": "gatos",
+                "O que aconteceu": "к + ш + к → inseriu \"е\""
+              },
+              {
+                "Nominativo singular": "па́лка",
+                "Genitivo plural": "па́лок",
+                "Tradução": "bastões",
+                "O que aconteceu": "л + к → inseriu \"о\""
+              },
+              {
+                "Nominativo singular": "сестра́",
+                "Genitivo plural": "сестёр",
+                "Tradução": "irmãs",
+                "O que aconteceu": "с + т + р → inseriu \"ё\""
+              },
+              {
+                "Nominativo singular": "земля́",
+                "Genitivo plural": "земе́ль",
+                "Tradução": "terras",
+                "O que aconteceu": "м + л → inseriu \"е\""
+              },
+              {
+                "Nominativo singular": "окно́",
+                "Genitivo plural": "о́кон",
+                "Tradução": "janelas",
+                "O que aconteceu": "к + н → inseriu \"о\""
+              },
+              {
+                "Nominativo singular": "письмо́",
+                "Genitivo plural": "пи́сем",
+                "Tradução": "cartas",
+                "O que aconteceu": "с + м → inseriu \"е\""
+              }
+            ]
+          },
+          {
+            "titulo": "A vogal eufônica: o segredo do plural feminino e neutro",
+            "linhas": [
+              {
+                "Nominativo singular": "де́вочка",
+                "Genitivo plural": "де́вочек",
+                "Tradução": "meninas"
+              },
+              {
+                "Nominativo singular": "ко́шка",
+                "Genitivo plural": "ко́шек",
+                "Tradução": "gatos"
+              },
+              {
+                "Nominativo singular": "ба́бушка",
+                "Genitivo plural": "ба́бушек",
+                "Tradução": "avós"
+              },
+              {
+                "Nominativo singular": "де́вушка",
+                "Genitivo plural": "де́вушек",
+                "Tradução": "moças"
+              }
+            ]
+          },
+          {
+            "titulo": "A vogal eufônica: o segredo do plural feminino e neutro",
+            "linhas": [
+              {
+                "Russo": "У меня́ нет ко́шек.",
+                "Tradução": "Não tenho gatos."
+              },
+              {
+                "Russo": "У меня́ нет сестёр.",
+                "Tradução": "Não tenho irmãs."
+              },
+              {
+                "Russo": "У меня́ нет ба́бушек.",
+                "Tradução": "Não tenho avós."
+              },
+              {
+                "Russo": "Нет о́кон.",
+                "Tradução": "Não há janelas."
+              },
+              {
+                "Russo": "Нет пи́сем.",
+                "Tradução": "Não há cartas."
+              }
+            ]
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 12,
+        "min": 7,
         "itens": [
           {
             "ru": "тринадцать",
@@ -111,7 +652,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 3,
         "titulo": "Os numerais se somam",
         "explicacao": "Os numerais russos se formam somando, da maior parte para a menor: 21 = двадцать один; 35 = тридцать пять; 148 = сто сорок восемь. De 13 a 19 acrescenta-se -надцать à base (тринадцать). As dezenas de 50 a 80 têm um -ь- no meio: пятьдесят, шестьдесят, семьдесят, восемьдесят. Atenção a 40 (сорок) e 90 (девяносто), que são especiais. Centenas: сто, двести, триста, четыреста, пятьсот, шестьсот, семьсот, восемьсот, девятьсот.",
         "exemplos": [
@@ -166,12 +707,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Conte de 10 em 10 até 100 e diga: «двадцать пять, тридцать семь, сорок девять, сто двадцать»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Escreva em russo os números de 1 a 20 de memória."
       }
     ]

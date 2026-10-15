@@ -1,0 +1,898 @@
+# Capítulo 4: Os verbos no presente
+
+*Nível a1*
+
+(ou: a raiz intocável — como decorar um verbo e saber seis)
+
+
+## 4.1 O que é um verbo? O teste do "acontecer"
+
+Antes de qualquer tabela, a pergunta fundamental: o que é um verbo?
+
+Verbo é a palavra que expressa ação, estado ou ocorrência. É aquilo que a pessoa faz, é ou está. E há um teste infalível para reconhecê-lo — o teste do "acontecer":
+
+- "Eu ___ em casa." → moro, estou, fico → verbo.
+- "Ele ___ russo." → fala, estuda, aprende → verbo.
+- "Nós ___ livros." → lemos, compramos, escrevemos → verbo.
+
+O verbo é a espinha dorsal da frase. Sem verbo, não há ação. Sem verbo, não há frase completa. Você já sabe dizer "Э́то но́вый дом" (isto é uma casa nova). Mas ainda não sabe dizer "Eu construo uma casa nova" ou "Ele mora numa casa nova". Isso é assunto desta aula.
+
+E a boa notícia? O verbo russo é muito mais regular do que você imagina. Muito mais do que o substantivo ou o adjetivo. As exceções são poucas, e as regras são consistentes. Você vai ver.
+
+
+## 4.2 O que é um pronome pessoal do caso reto? (a verdade simples e sem medo)
+
+Antes de conjugar qualquer verbo, você precisa saber com o que ele se conjuga. E isso significa conhecer os pronomes pessoais do caso reto.
+
+Eu sei que "pronome pessoal do caso reto" soa como um monstro gramatical. Mas eu prometo: é a coisa mais simples do mundo. Vou desmontar o nome:
+
+- Pronome = palavra que substitui um nome. Em vez de "o João", você diz "ele". Em vez de "a Maria", você diz "ela".
+- Pessoal = refere-se a pessoas (ou coisas personificadas).
+- Caso reto = está "reto", ou seja, na função de sujeito da frase. É quem faz a ação.
+
+Em português, os pronomes pessoais do caso reto são:
+
+| Singular | Plural |
+|---|---|
+| eu | nós |
+| tu / você | vós / vocês |
+| ele / ela | eles / elas |
+
+Em russo, são:
+
+| Singular | Plural |
+|---|---|
+| я (eu) | мы (nós) |
+| ты (tu/você — informal) | вы (vós/vocês — formal ou plural) |
+| он (ele) / она́ (ela) / оно́ (ele/ela — neutro) | они́ (eles/elas) |
+
+É só isso. Você já usou "eu, você, ele, ela" a vida inteira. Em russo, é a mesma coisa. Você só precisa aprender as palavras correspondentes. Sem terror, sem decoreba absurda. Cinco minutos de atenção resolvem.
+
+Detalhes importantes:
+
+1. Ты vs. вы. Em russo, ты é usado com amigos, familiares, crianças, pessoas íntimas. Вы é usado com estranhos, pessoas mais velhas, autoridades, e sempre no plural. É a diferença entre "você" (informal) e "o senhor / a senhora / vocês" (formal ou plural).
+2. Он, она́, оно́. Em russo, tudo tem gênero — até objetos. Então, "mesa" (стол) é masculino → он; "casa" (дом) é masculino → он; "livro" (кни́га) é feminino → она́; "janela" (окно́) é neutro → оно́. Isso assusta no começo, mas você já aprendeu na Aula 2 que o gênero é determinado pela última letra. Agora você só aplica: se o substantivo é masculino, use он; se é feminino, она́; se é neutro, оно́.
+3. Они́. Uma única forma para os três gêneros no plural. Não importa se são "eles" ou "elas". É sempre они́.
+
+
+## 4.3 O que é conjugação? (a explicação mais clara que você vai ler)
+
+Antes de qualquer coisa, uma pergunta que ninguém faz e que todo mundo deveria fazer: o que é conjugar um verbo?
+
+Em português, conjugar é mudar a forma do verbo para combinar com o sujeito da frase. Veja:
+
+| Sujeito | Verbo "falar" |
+|---|---|
+| eu | falo |
+| tu | falas |
+| ele / ela | fala |
+| nós | falamos |
+| vós | falais |
+| eles / elas | falam |
+
+Repare: a raiz fal- é sempre a mesma. Só a terminação muda: -o, -as, -a, -amos, -ais, -am. Você nunca escreveu "falo" e depois "falas" pensando "inventei uma raiz nova". Você só trocou a terminação. Isso é conjugar.
+
+Outro exemplo:
+
+| Sujeito | Verbo "estudar" |
+|---|---|
+| eu | estudo |
+| tu | estudas |
+| ele / ela | estuda |
+| nós | estudamos |
+| vós | estudais |
+| eles / elas | estudam |
+
+Mesma lógica: raiz estud-, terminação muda.
+
+Agora em russo. O princípio é exatamente o mesmo. Você tem uma raiz (que carrega o significado) e uma terminação (que carrega a pessoa). A raiz nunca muda. A terminação muda.
+
+ЧИТА- + -Ю = чита́ю (eu leio)
+ЧИТА- + -ЕШЬ = чита́ешь (tu lês)
+ЧИТА- + -ЕТ = чита́ет (ele/ela lê)
+ЧИТА- + -ЕМ = чита́ем (nós lemos)
+ЧИТА- + -ЕТЕ = чита́ете (vós/vocês leem)
+ЧИТА- + -ЮТ = чита́ют (eles/elas leem)
+
+A raiz ЧИТА- nunca mudou. Só a terminação. Sempre. É a mesma lógica do português. A diferença é que as terminações russas são mais "compridas" — e é isso que assusta o aluno iniciante. Mas a mecânica é idêntica.
+
+Você acabou de aprender a conjugar um verbo russo. É isso. O resto é prática.
+
+
+## 4.4 A "tesourinha do verbo": o método que ninguém ensina
+
+Assim como fizemos com o adjetivo (Aula 3), vamos aplicar a tesourinha ao verbo. Grava isto:
+
+Todo verbo russo é um LEGO de duas peças: RAIZ (intocável) + TERMINAÇÃO (móvel).
+
+E o método é sempre o mesmo:
+
+1. Encontre o infinitivo (a forma "de dicionário", que termina em -ТЬ ou -ТИ ou -ЧЬ).
+2. Corte a terminação do infinitivo (-ТЬ, -ТИ, -ЧЬ). Você tem a raiz.
+3. Cole a terminação pessoal (-Ю, -ЕШЬ, -ЕТ, -ЕМ, -ЕТЕ, -ЮТ ou -Ю, -ИШЬ, -ИТ, -ИМ, -ИТЕ, -ЯТ).
+Pronto. O verbo está conjugado.
+
+Veja na prática com чита́ть (ler):
+
+1. Infinitivo: чита́ть
+2. Corte -ТЬ: чита́ (raiz)
+3. Cole as terminações: чита́ + ю = чита́ю (eu leio)
+
+E com говори́ть (falar):
+
+1. Infinitivo: говори́ть
+2. Corte -ТЬ: говор- (raiz — atenção, a vogal da raiz muda: говори- → говор-)
+3. Cole as terminações: говор + ю = говорю́ (eu falo)
+
+Repare: no verbo говори́ть, a vogal -и- aparece na raiz (говор-и-ть) mas some nas formas conjugadas (говор-ю). Isso é normal. Os verbos da 2ª conjugação (que terminam em -ить) geralmente perdem o -и- da raiz na 1ª pessoa do singular e usam terminações diferentes (-ишь, -ит, -им, -ите, -ят) nas outras pessoas.
+
+Por que isso é revolucionário? Porque ninguém explica que o verbo russo é um LEGO. Todos os livros dão a tabela e mandam decorar. Você vai ensinar o aluno a construir.
+
+
+## 4.5 O infinitivo russo: as três terminações
+
+Em russo, o infinitivo (a forma "de dicionário") termina em três coisas diferentes:
+
+| Terminação | Frequência | Exemplos |
+|---|---|---|
+| -ТЬ | A maioria esmagadora | чита́ть, говори́ть, писа́ть, жить, знать, понима́ть, рабо́тать, люби́ть, смотре́ть, слу́шать |
+| -ТИ | Grupo pequeno | идти́, нести́, вести́, расти́, найти́ |
+| -ЧЬ | Grupo ainda menor | мочь, печь, течь, бере́чь, лечь |
+
+A boa notícia: você não precisa se preocupar com -ТИ e -ЧЬ agora. São minoria. A imensa maioria dos verbos termina em -ТЬ, e é isso que vamos estudar nesta aula.
+
+
+## 4.6 As duas conjugações: a lógica por trás
+
+Aqui está o ponto que nenhum dos cinco livros explica com clareza. Vou explicar.
+
+Em russo, os verbos se dividem em duas conjugações. E a diferença entre elas está nas terminações pessoais:
+
+1ª CONJUGAÇÃO:
+
+| Pessoa | Terminação | Exemplo: чита́ть |
+|---|---|---|
+| я | -Ю | чита́ю |
+| ты | -ЕШЬ | чита́ешь |
+| он / она́ / оно́ | -ЕТ | чита́ет |
+| мы | -ЕМ | чита́ем |
+| вы | -ЕТЕ | чита́ете |
+| они́ | -ЮТ | чита́ют |
+
+2ª CONJUGAÇÃO:
+
+| Pessoa | Terminação | Exemplo: говори́ть |
+|---|---|---|
+| я | -Ю | говорю́ |
+| ты | -ИШЬ | говори́шь |
+| он / она́ / оно́ | -ИТ | говори́т |
+| мы | -ИМ | говори́м |
+| вы | -ИТЕ | говори́те |
+| они́ | -ЯТ | говоря́т |
+
+Como decidir qual conjugação usar? Olhe a terminação do infinitivo:
+
+- Verbos em -ать, -ять, -еть → geralmente 1ª conjugação.
+- Verbos em -ить → geralmente 2ª conjugação.
+
+Exemplos:
+
+- чита́ть (ler) → termina em -ать → 1ª conjugação → чита́ю, чита́ешь, чита́ет...
+- гуля́ть (passear) → -ять → 1ª conjugação → гуля́ю, гуля́ешь, гуля́ет...
+- боле́ть (doer) → -еть → 1ª conjugação → боле́ю, боле́ешь, боле́ет...
+- говори́ть (falar) → -ить → 2ª conjugação → говорю́, говори́шь, говори́т...
+- люби́ть (amar) → -ить → 2ª conjugação → люблю́, лю́бишь, лю́бит...
+- звони́ть (telefonar) → -ить → 2ª conjugação → звоню́, звони́шь, звони́т...
+
+Atenção: há exceções. Alguns verbos em -ать, -ять, -еть pertencem à 2ª conjugação. São apenas onze — e eu vou listá-los mais adiante.
+
+
+## 4.7 Os quatro tipos de verbo no presente
+
+Para facilitar a memorização, vou apresentar os quatro tipos de verbo do presente, baseados na classificação do Penguin (que é a mais clara de todas):
+
+Tipo 1 — ЗНАТЬ (o mais comum)
+
+Verbos em -ать, -ять, -еть que seguem as terminações -ю, -ешь, -ет, -ем, -ете, -ют.
+
+| Infinitivo | Raiz | я | ты | он | мы | вы | они́ |
+|---|---|---|---|---|---|---|---|
+| зна- | знать (saber) | зна́ю | зна́ешь | зна́ет | зна́ем | зна́ете | зна́ют |
+| чита́- | чита́ть (ler) | чита́ю | чита́ешь | чита́ет | чита́ем | чита́ете | чита́ют |
+| рабо́та- | рабо́тать (trabalhar) | рабо́таю | рабо́таешь | рабо́тает | рабо́таем | рабо́таете | рабо́тают |
+| понимá- | понима́ть (entender) | понима́ю | понима́ешь | понима́ет | понима́ем | понима́ете | понима́ют |
+| гуля́- | гуля́ть (passear) | гуля́ю | гуля́ешь | гуля́ет | гуля́ем | гуля́ете | гуля́ют |
+| слу́ша- | слу́шать (escutar) | слу́шаю | слу́шаешь | слу́шает | слу́шаем | слу́шаете | слу́шают |
+| дéла- | де́лать (fazer) | де́лаю | де́лаешь | де́лает | де́лаем | де́лаете | де́лают |
+| изуча́- | изуча́ть (estudar) | изуча́ю | изуча́ешь | изуча́ет | изуча́ем | изуча́ете | изуча́ют |
+
+Tipo 2 — ГОВОРИТЬ (verbos em -ить)
+
+Verbos em -ить que seguem as terminações -ю, -ишь, -ит, -им, -ите, -ят.
+
+| Infinitivo | Raiz | я | ты | он | мы | вы | они́ |
+|---|---|---|---|---|---|---|---|
+| говор- | говори́ть (falar) | говорю́ | говори́шь | говори́т | говори́м | говори́те | говоря́т |
+| звон- | звони́ть (telefonar) | звоню́ | звони́шь | звони́т | звони́м | звони́те | звоня́т |
+| люб- | люби́ть (amar) | люблю́ | лю́бишь | лю́бит | лю́бим | лю́бите | лю́бят |
+| смотр- | смотре́ть (olhar) | смотрю́ | смо́тришь | смо́трит | смо́трим | смо́трите | смо́трят |
+| сид- | сиде́ть (estar sentado) | сижу́ | сиди́шь | сиди́т | сиди́м | сиди́те | сидя́т |
+| уч- | учи́ть (ensinar, aprender) | учу́ | у́чишь | у́чит | у́чим | у́чите | у́чат |
+
+Tipo 1B — ЖИТЬ (verbos com raiz terminando em consoante)
+
+Verbos que têm a raiz terminando em consoante e seguem terminações parecidas com a 1ª conjugação, mas com -у na 1ª pessoa do singular (em vez de -ю).
+
+| Infinitivo | Raiz | я | ты | он | мы | вы | они́ |
+|---|---|---|---|---|---|---|---|
+| жив- | жить (morar) | живу́ | живёшь | живёт | живём | живёте | живу́т |
+| пис- | писа́ть (escrever) | пишу́ | пи́шешь | пи́шет | пи́шем | пи́шете | пи́шут |
+| ид- | идти́ (ir a pé) | иду́ | идёшь | идёт | идём | идёте | иду́т |
+| ед- | е́хать (ir de veículo) | е́ду | е́дешь | е́дет | е́дем | е́дете | е́дут |
+| зов- | звать (chamar) | зову́ | зовёшь | зовёт | зовём | зовёте | зову́т |
+
+Atenção: quando a tônica cai na terminação, a letra е vira ё (живёшь, живёт, живём, живёте). Isso não muda a terminação, só a pronúncia. É uma regra ortográfica do russo.
+
+Tipo 2B — verbos irregulares (poucos, mas importantes)
+
+- хоте́ть (querer): хочу́, хо́чешь, хо́чет, хоти́м, хоти́те, хотя́т — este verbo é mistura das duas conjugações.
+- есть (comer): ем, ешь, ест, еди́м, еди́те, едя́т.
+- пить (beber): пью, пьёшь, пьёт, пьём, пьёте, пью́т.
+- дать (dar): дам, дашь, даст, дади́м, дади́те, даду́т.
+
+
+## 4.8 As exceções: os 11 verbos em -ать/-ять/-еть que vão para a 2ª conjugação
+
+Aqui está a lista que só a Shotropa tem e que nenhum dos outros livros mostra. São onze verbos que terminam em -ать, -ять ou -еть, mas que não seguem a 1ª conjugação. Eles seguem a 2ª.
+
+| Verbo | Tradução | я | ты | он | мы | вы | они́ |
+|---|---|---|---|---|---|---|---|
+| смотре́ть | olhar | смотрю́ | смо́тришь | смо́трит | смо́трим | смо́трите | смо́трят |
+| ви́деть | ver | ви́жу | ви́дишь | ви́дит | ви́дим | ви́дите | ви́дят |
+| ненави́деть | odiar | ненави́жу | ненави́дишь | ненави́дит | ненави́дим | ненави́дите | ненави́дят |
+| верте́ть | girar | верчу́ | ве́ртишь | ве́ртит | ве́ртим | ве́ртите | ве́ртят |
+| оби́деть | ofender | оби́жу | оби́дишь | оби́дит | оби́дим | оби́дите | оби́дят |
+| зави́сеть | depender | зави́шу | зави́сишь | зави́сит | зави́сим | зави́сите | зави́сят |
+| терпе́ть | suportar | терплю́ | те́рпишь | те́рпит | те́рпим | те́рпите | те́рпят |
+| дыша́ть | respirar | дышу́ | ды́шишь | ды́шит | ды́шим | ды́шите | ды́шат |
+| слы́шать | ouvir | слы́шу | слы́шишь | слы́шит | слы́шим | слы́шите | слы́шат |
+| держа́ть | segurar | держу́ | де́ржишь | де́ржит | де́ржим | де́ржите | де́ржат |
+| гнать | perseguir | гоню́ | го́нишь | го́нит | го́ним | го́ните | го́нят |
+
+Como memorizar? Uma dica: quase todos esses verbos têm uma conotação de percepção (ver, ouvir, olhar, respirar) ou sentimento (odiar, ofender, suportar). Não é uma regra absoluta, mas ajuda. Grave-os.
+
+
+## 4.9 O acento que passeia (ou fica quieto)
+
+Assim como no adjetivo, o acento do verbo pode se mover — ou ficar no mesmo lugar. Veja:
+
+1. Acento fixo na raiz (mais comum na 1ª conjugação):
+
+| Infinitivo | я | ты | он |
+|---|---|---|---|
+| зна́ть | зна́ю | зна́ешь | зна́ет |
+| чита́ть | чита́ю | чита́ешь | чита́ет |
+| рабо́тать | рабо́таю | рабо́таешь | рабо́тает |
+| де́лать | де́лаю | де́лаешь | де́лает |
+
+2. Acento fixo na terminação (comum na 2ª conjugação):
+
+| Infinitivo | я | ты | он |
+|---|---|---|---|
+| говори́ть | говорю́ | говори́шь | говори́т |
+| звони́ть | звоню́ | звони́шь | звони́т |
+| люби́ть | люблю́ | лю́бишь | лю́бит |
+| смотре́ть | смотрю́ | смо́тришь | смо́трит |
+
+3. Acento que passeia (minoria):
+
+| Infinitivo | я | ты | он |
+|---|---|---|---|
+| жить | живу́ | живёшь | живёт |
+| писа́ть | пишу́ | пи́шешь | пи́шет |
+| хоте́ть | хочу́ | хо́чешь | хо́чет |
+
+O que fazer? Não tente adivinhar. Copie a forma da tabela. Com o tempo, seu ouvido assume o comando. E lembre-se: se o verbo contém ё, a tônica cai sempre no ё. Por isso живёшь, живёт, живём, живёте.
+
+
+## 4.10 O verbo SER (быть): a ausência mais famosa da língua russa
+
+Aqui está a maior fonte de confusão para o brasileiro. Preste atenção.
+
+Em russo, o verbo SER (быть) não existe no presente do indicativo.
+
+Em português, a gente diz:
+
+- Eu sou brasileiro.
+- Ele é médico.
+- Nós somos estudantes.
+
+Em russo, o verbo desaparece:
+
+- Я брази́лец. (Eu brasileiro.)
+- Он врач. (Ele médico.)
+- Мы студе́нты. (Nós estudantes.)
+
+O verbo "ser" simplesmente não aparece. O contexto faz o trabalho dele. É como se a frase fosse "Eu brasileiro", "Ele médico". O russo não sente falta nenhuma disso.
+
+Mas atenção: há uma exceção. A 3ª pessoa do singular do verbo быть — есть — sobrevive com um significado especial: "há", "existe", "tem". É essa forma que você vai usar na construção de "ter" (próxima seção).
+
+
+## 4.11 Como dizer "eu tenho", "você tem", "ele tem"
+
+Aqui está uma das maiores diferenças entre o português e o russo, e uma das primeiras coisas que você vai querer dizer. Preste atenção.
+
+Em russo, o verbo "ter" não existe.
+
+Não há um verbo equivalente a "ter" como em português. Em vez disso, o russo usa uma construção que, traduzida literalmente, significa "junto a mim há":
+
+У меня́ есть кни́га. = Eu tenho um livro. (Literalmente: "Em mim há um livro".)
+
+Vou desmontar a fórmula:
+
+- У = preposição que significa "junto a", "em casa de", "na posse de".
+- меня́ = "mim" (forma especial do pronome "eu" usada depois de у).
+- есть = "há", "existe" (a forma sobrevivente do verbo ser).
+- кни́га = "livro" (o objeto possuído).
+
+A estrutura é sempre a mesma. Veja com todos os pronomes:
+
+| Russo | Tradução |
+|---|---|
+| У меня́ есть кни́га. | Eu tenho um livro. |
+| У тебя́ есть вре́мя? | Você tem tempo? |
+| У него́ есть маши́на. | Ele tem um carro. |
+| У неё есть ко́шка. | Ela tem um gato. |
+| У нас есть дом. | Nós temos uma casa. |
+| У вас есть де́ньги? | Vocês têm dinheiro? |
+| У них есть де́ти. | Eles têm filhos. |
+
+Repare na mudança do pronome depois de у:
+
+| Pronome normal | Depois de у |
+|---|---|
+| я | у меня́ |
+| ты | у тебя́ |
+| он | у него́ |
+| она́ | у неё |
+| мы | у нас |
+| вы | у вас |
+| они́ | у них |
+
+Por que меняется? É uma questão gramatical que você vai entender mais adiante, quando estudarmos os casos. Por enquanto, memorize as formas como uma fórmula. É assim que se diz. Ponto final.
+
+A boa notícia: a fórmula é fixa. Sempre у + forma especial + есть + objeto. Não tem mistério.
+
+A palavra "есть" pode ser omitida?
+
+Sim, em contextos informais ou quando a posse é óbvia:
+
+- У меня́ кни́га. (Tenho um livro.)
+- У тебя́ вре́мя? (Você tem tempo?)
+
+Mas, em geral, use есть enquanto você está aprendendo. Os russos entendem perfeitamente e você não corre o risco de soar estranho.
+
+Como negar:
+
+Para dizer "não tenho", o russo usa нет em vez de есть:
+
+- У меня́ нет кни́ги. (Eu não tenho livro.)
+- У тебя́ нет вре́мени? (Você não tem tempo?)
+- У него́ нет маши́ны. (Ele não tem carro.)
+
+Atenção: a palavra depois de нет muda de forma — isso é assunto para uma aula futura. Por enquanto, memorize os exemplos mais comuns:
+
+| Afirmativo | Negativo |
+|---|---|
+| У меня́ есть кни́га. | У меня́ нет кни́ги. |
+| У меня́ есть вре́мя. | У меня́ нет вре́мени. |
+| У меня́ есть маши́на. | У меня́ нет маши́ны. |
+| У меня́ есть де́ньги. | У меня́ нет де́нег. |
+
+A lógica é: quando é afirmativo, use есть + objeto normal; quando é negativo, use нет + objeto "modificado". Você vai aprender a modificar mais adiante, mas já pode decorar essas fórmulas prontas.
+
+
+## 4.12 Frases completas: os primeiros diálogos
+
+Agora que você sabe os pronomes pessoais, as duas conjugações, a ausência do verbo ser e a construção de "ter", você pode formar frases completas.
+
+Diálogo 1 — Na aula:
+
+— Что ты де́лаешь? (O que você está fazendo?)
+— Я чита́ю кни́гу. (Eu estou lendo um livro.)
+— А он? (E ele?)
+— Он пи́шет упражне́ние. (Ele está escrevendo um exercício.)
+— А они́? (E eles?)
+— Они́ говоря́т по-ру́сски. (Eles estão falando russo.)
+
+Diálogo 2 — Em casa:
+
+— Где ты живёшь? (Onde você mora?)
+— Я живу́ в Москве́. (Eu moro em Moscou.)
+— А твоя́ семья́? (E sua família?)
+— Они́ живу́т в Санкт-Петербу́рге. (Eles moram em São Petersburgo.)
+
+Diálogo 3 — No trabalho:
+
+— Кто э́то? (Quem é este?)
+— Э́то мой друг. Он рабо́тает здесь. (É meu amigo. Ele trabalha aqui.)
+— Он зна́ет ру́сский язы́к? (Ele sabe russo?)
+— Да, немно́го. (Sim, um pouco.)
+
+Diálogo 4 — O verbo "ter":
+
+— У тебя́ есть вре́мя? (Você tem tempo?)
+— Да, есть. А что? (Sim, tenho. Por quê?)
+— У меня́ есть вопро́с. (Eu tenho uma pergunta.)
+— Хорошо́, спра́шивай. (Está bem, pergunta.)
+
+Diálogo 5 — Apresentando-se:
+
+— Приве́т! Как тебя́ зову́т? (Olá! Como você se chama?)
+— Меня́ зову́т Ива́н. А тебя́? (Eu me chamo Ivan. E você?)
+— Меня́ зову́т Мари́я. Я изуча́ю ру́сский язы́к. (Eu me chamo Maria. Eu estudo russo.)
+— Я то́же изуча́ю ру́сский. (Eu também estudo russo.)
+
+Nota: "Как тебя́ зову́т?" literalmente é "Como te chamam?" — o verbo звать (chamar) está na 3ª pessoa do plural. A resposta é Меня́ зову́т... ("Chamam-me..."). É a fórmula fixa para "Como você se chama?" em russo. Memorize como bloco.
+
+
+## 4.13 EXERCÍCIOS
+
+Exercício 1 — Identifique a raiz
+
+Para cada verbo, escreva a raiz (corte -ТЬ, -ТИ ou -ЧЬ).
+
+1. чита́ть → raiz ____
+2. говори́ть → raiz ____
+3. рабо́тать → raiz ____
+4. жить → raiz ____
+5. знать → raiz ____
+6. люби́ть → raiz ____
+7. смотре́ть → raiz ____
+8. писа́ть → raiz ____
+9. идти́ → raiz ____
+10. мочь → raiz ____
+
+Exercício 2 — Identifique a conjugação
+
+Diga se o verbo é da 1ª ou 2ª conjugação (e se é exceção).
+
+1. чита́ть → ____
+2. говори́ть → ____
+3. жить → ____
+4. знать → ____
+5. люби́ть → ____
+6. смотре́ть → ____ (atenção: exceção!)
+7. рабо́тать → ____
+8. ви́деть → ____ (atenção: exceção!)
+9. понима́ть → ____
+10. слы́шать → ____ (atenção: exceção!)
+
+Exercício 3 — Conjugue
+
+Para cada verbo, escreva todas as seis formas.
+
+1. чита́ть: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+2. говори́ть: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+3. жить: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+4. рабо́тать: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+5. люби́ть: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+6. знать: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+7. писа́ть: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+8. смотре́ть: я ____, ты ____, он ____, мы ____, вы ____, они́ ____
+
+Exercício 4 — Complete as frases
+
+Use o verbo entre parênteses na pessoa correta.
+
+1. Я ____ по-ру́сски. (говори́ть)
+2. Ты ____ кни́гу. (чита́ть)
+3. Он ____ в Москве́. (жить)
+4. Мы ____ на уро́ке. (рабо́тать)
+5. Они́ ____ ру́сский язы́к. (изуча́ть)
+6. Она́ ____ э́ту кни́гу. (люби́ть)
+7. Вы ____ хорошо́. (понима́ть)
+8. Я ____ в Санкт-Петербу́рге. (жить)
+9. Ты ____ э́то сло́во? (знать)
+10. Он ____ по-англи́йски. (говори́ть)
+11. Мы ____ фильм. (смотре́ть)
+12. Они́ ____ в Москве́. (рабо́тать)
+
+Exercício 5 — Traduza para o russo
+
+1. Eu moro em Moscou. → ____
+2. Você fala russo? → ____
+3. Ele lê um livro. → ____
+4. Nós trabalhamos aqui. → ____
+5. Eles moram na Rússia. → ____
+6. Eu amo este livro. → ____
+7. Ela entende russo. → ____
+8. Você (formal) fala inglês? → ____
+9. Nós estudamos juntos. → ____
+10. Eles telefonam todos os dias. → ____
+11. Eu escrevo uma carta. → ____
+12. Nós olhamos o filme. → ____
+
+Exercício 6 — O verbo "ter"
+
+Traduza para o russo usando a construção "у + pronome + есть".
+
+1. Eu tenho um livro. → ____
+2. Você tem tempo? → ____
+3. Ele tem um carro. → ____
+4. Ela tem um gato. → ____
+5. Nós temos uma casa. → ____
+6. Eles têm filhos. → ____
+7. Você (formal) tem dinheiro? → ____
+8. Eu tenho um amigo. → ____
+9. Ele tem uma pergunta. → ____
+10. Nós temos um cão. → ____
+
+Exercício 7 — Negação do verbo "ter"
+
+Traduza para o russo usando a construção "у + pronome + нет".
+
+1. Eu não tenho tempo. → ____
+2. Você não tem livro? → ____
+3. Ele não tem carro. → ____
+4. Ela não tem gato. → ____
+5. Nós não temos casa. → ____
+6. Eles não têm filhos. → ____
+7. Você (formal) não tem dinheiro? → ____
+8. Eu não tenho amigo. → ____
+9. Ele não tem pergunta. → ____
+10. Nós não temos cão. → ____
+
+Exercício 8 — Escolha a forma correta
+
+Escolha entre есть (afirmativo) e нет (negativo).
+
+1. У меня́ ____ кни́га. (tenho)
+2. У тебя́ ____ вре́мени? (não tem)
+3. У него́ ____ маши́на. (tem)
+4. У неё ____ ко́шки. (não tem)
+5. У нас ____ дом. (temos)
+6. У вас ____ де́нег? (não têm)
+7. У них ____ де́ти. (têm)
+8. У меня́ ____ вопро́са. (não tenho)
+
+Exercício 9 — Complete o diálogo
+
+— Приве́т! Что ты ____? (де́лать)
+— Я ____ кни́гу. (чита́ть)
+— А что ____ твой брат? (де́лать)
+— Он ____ в компью́тере. (рабо́тать)
+— А где ____ твои́ роди́тели? (жить)
+— Они́ ____ в Москве́. (жить)
+— Ты ____ по-ру́сски? (говори́ть)
+— Да, немно́го. Я ____ ру́сский язы́к. (изуча́ть)
+— У тебя́ ____ слова́рь? (ter)
+— Да, ____. (ter)
+
+Exercício 10 — Traduza o diálogo
+
+— Olá! O que você está fazendo?
+— Estou lendo um livro. E você?
+— Estou trabalhando. Eu moro em Moscou.
+— Onde você mora?
+— Eu moro em São Petersburgo. Eu tenho uma casa lá.
+— Você fala russo?
+— Sim, um pouco. Estou estudando.
+— Você tem um dicionário?
+— Sim, tenho.
+
+Exercício 11 — Produza
+
+Escreva 5 frases sobre você, usando verbos no presente.
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
+Exercício 12 — Desafio
+
+Escreva 5 frases usando "у меня́ есть" (eu tenho) e 3 frases usando "у меня́ нет" (eu não tenho).
+
+Tenho:
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
+Não tenho:
+
+1. 
+2. 
+3. 
+
+
+## 4.14 GABARITO
+
+Exercício 1:
+
+1. чита- — 2. говор- — 3. работа- — 4. жив- — 5. зна- — 6. люб- — 7. смотр- — 8. пис- — 9. ид- — 10. мог-
+
+Exercício 2:
+
+1. 1ª — 2. 2ª — 3. 1ª (irregular) — 4. 1ª — 5. 2ª — 6. 2ª (exceção!) — 7. 1ª — 8. 2ª (exceção!) — 9. 1ª — 10. 2ª (exceção!)
+
+Exercício 3:
+
+1. чита́ю, чита́ешь, чита́ет, чита́ем, чита́ете, чита́ют
+2. говорю́, говори́шь, говори́т, говори́м, говори́те, говоря́т
+3. живу́, живёшь, живёт, живём, живёте, живу́т
+4. рабо́таю, рабо́таешь, рабо́тает, рабо́таем, рабо́таете, рабо́тают
+5. люблю́, лю́бишь, лю́бит, лю́бим, лю́бите, лю́бят
+6. зна́ю, зна́ешь, зна́ет, зна́ем, зна́ете, зна́ют
+7. пишу́, пи́шешь, пи́шет, пи́шем, пи́шете, пи́шут
+8. смотрю́, смо́тришь, смо́трит, смо́трим, смо́трите, смо́трят
+
+Exercício 4:
+
+1. говорю́ — 2. чита́ешь — 3. живёт — 4. рабо́таем — 5. изуча́ют — 6. лю́бит — 7. понима́ете — 8. живу́ — 9. зна́ешь — 10. говори́т — 11. смо́трим — 12. рабо́тают
+
+Exercício 5:
+
+1. Я живу́ в Москве́. — 2. Ты говори́шь по-ру́сски? — 3. Он чита́ет кни́гу. — 4. Мы рабо́таем здесь. — 5. Они́ живу́т в Росси́и. — 6. Я люблю́ э́ту кни́гу. — 7. Она́ понима́ет по-ру́сски. — 8. Вы говори́те по-англи́йски? — 9. Мы изуча́ем вме́сте. — 10. Они́ звоня́т ка́ждый день. — 11. Я пишу́ письмо́. — 12. Мы смо́трим фильм.
+
+Exercício 6:
+
+1. У меня́ есть кни́га. — 2. У тебя́ есть вре́мя? — 3. У него́ есть маши́на. — 4. У неё есть ко́шка. — 5. У нас есть дом. — 6. У них есть де́ти. — 7. У вас есть де́ньги? — 8. У меня́ есть друг. — 9. У него́ есть вопро́с. — 10. У нас есть соба́ка.
+
+Exercício 7:
+
+1. У меня́ нет вре́мени. — 2. У тебя́ нет кни́ги? — 3. У него́ нет маши́ны. — 4. У неё нет ко́шки. — 5. У нас нет до́ма. — 6. У них нет дете́й. — 7. У вас нет де́нег? — 8. У меня́ нет дру́га. — 9. У него́ нет вопро́са. — 10. У нас нет соба́ки.
+
+Exercício 8:
+
+1. есть — 2. нет — 3. есть — 4. нет — 5. есть — 6. нет — 7. есть — 8. нет
+
+Exercício 9:
+де́лаешь, чита́ю, де́лает, рабо́тает, живу́т, живу́т, говори́шь, изуча́ю, есть, есть
+
+Exercício 10:
+— Приве́т! Что ты де́лаешь?
+— Я чита́ю кни́гу. А ты?
+— Я рабо́таю. Я живу́ в Москве́.
+— Где ты живёшь?
+— Я живу́ в Санкт-Петербу́рге. У меня́ там дом.
+— Ты говори́шь по-ру́сски?
+— Да, немно́го. Я изуча́ю.
+— У тебя́ есть слова́рь?
+— Да, есть.
+
+Exercício 11:
+Resposta pessoal. Verifique se o verbo está conjugado corretamente.
+
+Exercício 12:
+Resposta pessoal.
+
+
+## 4.12 — OS ADVÉRBIOS: as palavras que nunca mudam
+
+Antes de fechar esta aula, preciso te apresentar uma classe de palavras que vai te dar um alívio enorme: os advérbios.
+
+Eu vou ser direto com você: o advérbio é a classe de palavras mais fácil do russo inteiro. E eu não estou exagerando. Você vai entender por quê em três minutos.
+
+O que é um advérbio?
+
+Advérbio é a palavra que modifica o verbo. Ela diz como, quando, onde ou com que frequência a ação acontece.
+
+Em português, você já usa advérbios o tempo todo:
+
+- Eu leio rapidamente. (como?)
+- Nós chegamos hoje. (quando?)
+- Ele mora aqui. (onde?)
+- Ela sempre estuda. (com que frequência?)
+
+Rapidamente, hoje, aqui, sempre — são advérbios. Eles se grudam no verbo e dizem como, quando, onde a ação acontece.
+
+A grande notícia: o advérbio é INVARIÁVEL
+
+Agora, preste atenção nesta palavra: invariável.
+
+Se você nunca ouviu essa palavra, não se preocupe. Vou explicar detalhadamente.
+
+Invariável significa: não muda. Nunca. Por nenhum motivo.
+
+Vou provar isso com exemplos concretos.
+
+Prova 1: o advérbio não muda com o gênero
+
+Pegue o advérbio "hoje" em português. Ele muda se quem fala é homem ou mulher?
+
+- Eu (homem) estou feliz hoje.
+- Eu (mulher) estou feliz hoje.
+
+Não. "Hoje" é hoje para os dois. Não existe "hoja" para mulher, nem "hojo" para homem.
+
+A mesma coisa em russo. O advérbio сего́дня (hoje) é sempre сего́дня. Não importa se quem fala é homem, mulher, criança ou adulto:
+
+| Russo | Tradução |
+|---|---|
+| Я чита́ю сего́дня. | Eu (homem) leio hoje. |
+| Я чита́ю сего́дня. | Eu (mulher) leio hoje. |
+| Он чита́ет сего́дня. | Ele lê hoje. |
+| Она́ чита́ет сего́дня. | Ela lê hoje. |
+
+Сего́дня é a mesma palavra em todas as frases. Ela não muda.
+
+Prova 2: o advérbio não muda com o número
+
+Pegue o advérbio "aqui". Ele muda se uma pessoa ou várias pessoas estão aqui?
+
+- Eu estou aqui.
+- Nós estamos aqui.
+
+Não. "Aqui" é aqui para um ou para mil. Não existe "aquis" para plural, nem "aqui" para singular.
+
+A mesma coisa em russo. O advérbio здесь (aqui) é sempre здесь:
+
+| Russo | Tradução |
+|---|---|
+| Я здесь. | Eu estou aqui. |
+| Мы здесь. | Nós estamos aqui. |
+| Он здесь. | Ele está aqui. |
+| Они́ здесь. | Eles estão aqui. |
+
+Здесь é a mesma palavra. Sempre. Não importa quantas pessoas.
+
+Prova 3: o advérbio não muda com o tempo
+
+Pegue o advérbio "ontem". Ele muda se você está falando do passado, presente ou futuro?
+
+- Ontem eu li um livro.
+- Ontem eu leio um livro. (frase estranha, mas o advérbio é o mesmo)
+- Ontem é ontem.
+
+Não. "Ontem" é ontem. Ontem não vira "antontem" nem "ontens". É uma palavra fixa.
+
+Em russo, a mesma coisa. O advérbio вчера́ (ontem) é sempre вчера́:
+
+| Russo | Tradução |
+|---|---|
+| Вчера́ я чита́л. | Ontem eu li. (homem) |
+| Вчера́ я чита́ла. | Ontem eu li. (mulher) |
+| Вчера́ мы чита́ли. | Ontem nós lemos. |
+| Сего́дня я чита́ю. | Hoje eu leio. |
+| За́втра я бу́ду чита́ть. | Amanhã eu vou ler. |
+
+Вчера́ é a mesma palavra nas três frases. Ela não muda com o tempo do verbo.
+
+A regra de ouro do advérbio
+
+Grava isto:
+
+O advérbio é uma palavra congelada. Ele não muda com gênero, número, pessoa, tempo ou caso. É sempre a mesma forma, em qualquer frase, com qualquer sujeito, em qualquer contexto.
+
+É por isso que o advérbio é a classe mais fácil do russo. Enquanto os substantivos, adjetivos e verbos se flexionam (mudam de forma), os advérbios ficam parados. Sempre.
+
+Se você gosta de decorar, decore os advérbios. Não tem pegadinha. Não tem exceção. Não tem conjugação. É a única classe do russo em que você pode decorar uma palavra e usá-la para sempre sem medo.
+
+Alguns advérbios essenciais
+
+Aqui estão os advérbios mais usados no dia a dia. Repare que todos são invariáveis.
+
+Tempo
+
+| Russo | Transliteração | Tradução |
+|---|---|---|
+| сейча́с | sieitchás | agora |
+| сего́дня | sivódnia | hoje |
+| за́втра | záftra | amanhã |
+| вчера́ | ftchirá | ontem |
+| всегда́ | fsiegdá | sempre |
+| никогда́ | nikagdá | nunca |
+| ча́сто | tchásta | frequentemente |
+| ре́дко | riédka | raramente |
+| у́тром | útram | de manhã |
+| днём | dniom | de dia |
+| ве́чером | viétchieram | à noite |
+
+Lugar
+
+| Russo | Transliteração | Tradução |
+|---|---|---|
+| здесь | zdies | aqui |
+| тут | tut | aqui (sinônimo) |
+| там | tam | lá |
+| до́ма | dóma | em casa |
+| домо́й | damói | para casa (movimento) |
+
+Modo
+
+| Russo | Transliteração | Tradução |
+|---|---|---|
+| хорошо́ | kharachó | bem |
+| пло́хо | plókha | mal |
+| быстро | býstra | rapidamente |
+| ме́дленно | miédlienna | lentamente |
+| пра́вильно | právilna | corretamente |
+| непра́вильно | nepravilna | incorretamente |
+
+Como usar os advérbios nas frases
+
+A posição do advérbio é flexível. Geralmente:
+
+- Advérbio de tempo → antes do verbo ou no início da frase.
+- Advérbio de lugar → depois do verbo.
+- Advérbio de modo → depois do verbo.
+
+Exemplos:
+
+| Russo | Tradução |
+|---|---|
+| Я сейча́с чита́ю. | Eu agora estou lendo. |
+| Сего́дня он рабо́тает. | Hoje ele trabalha. |
+| Я чита́ю здесь. | Eu leio aqui. |
+| Он живёт там. | Ele mora lá. |
+| Она́ хорошо́ говори́т по-ру́сски. | Ela fala bem russo. |
+| Он ме́дленно чита́ет. | Ele lê lentamente. |
+
+Repare: o advérbio nunca muda de forma, independentemente da frase. Хорошо́ é sempre хорошо́. Сего́дня é sempre сего́дня. Здесь é sempre здесь. Você não precisa pensar em gênero, número, pessoa ou tempo. É só colocar a palavra e pronto.
+
+Comparação com o português: você já faz isso sem perceber
+
+Em português, o advérbio também é invariável. Repare:
+
+- Eu falo bem.
+- Ela fala bem.
+- Nós falamos bem.
+- Eles falam bem.
+
+Bem é sempre bem. Não existe "bema" para mulher nem "bens" para plural. É a mesma lógica do russo.
+
+A diferença: em português, muitos advérbios são formados a partir de adjetivos com o sufixo "-mente" (lento → lentamente, rápido → rapidamente). Em russo, muitos advérbios são formados a partir de adjetivos trocando-se a terminação por -о ou -е:
+
+| Adjetivo (masc.) | Advérbio |
+|---|---|
+| хоро́ший (bom) | хорошо́ (bem) |
+| плохо́й (ruim) | пло́хо (mal) |
+| бы́стрый (rápido) | бы́стро (rapidamente) |
+| ме́дленный (lento) | ме́дленно (lentamente) |
+| пра́вильный (correto) | пра́вильно (corretamente) |
+
+Mas atenção: essa é só a origem do advérbio. Uma vez formado, ele fica parado. Хорошо́ não vira хороша́ para mulher nem хорошо́ para plural. É sempre хорошо́. Ponto final.
+
+Uma observação importante: advérbio vs. adjetivo neutro
+
+Cuidado para não confundir advérbio com adjetivo neutro. Eles podem ter a mesma forma, mas funções diferentes:
+
+- Он хорошо́ говори́т. (Ele fala bem.) → хорошо́ é advérbio, modifica o verbo говори́т.
+- Э́то хоро́шее вино́. (Isto é um vinho bom.) → хоро́шее é adjetivo neutro, modifica o substantivo вино́.
+
+A diferença está na função: se modifica verbo, é advérbio; se modifica substantivo, é adjetivo. E o contexto deixa isso claro.
+
+Exercício rápido
+
+Complete com o advérbio adequado.
+
+1. Я ____ чита́ю. (agora)
+2. Он ____ рабо́тает. (hoje)
+3. Мы бу́дем ____ в Москве́. (amanhã)
+4. Я был ____ в теа́тре. (ontem)
+5. Она́ живёт ____. (lá)
+6. Он ____ чита́ет. (aqui)
+7. Я ____. (em casa)
+8. Она́ ____ говори́т по-ру́сски. (bem)
+9. Он ____ чита́ет. (lentamente)
+10. Они́ ____ рабо́тают. (sempre)
+
+Gabarito:
+
+1. сейча́с — 2. сего́дня — 3. за́втра — 4. вчера́ — 5. там — 6. здесь (ou тут) — 7. до́ма — 8. хорошо́ — 9. ме́дленно — 10. всегда́
+
+
+## Resumo de bolso — os advérbios
+
+1. Advérbio é a palavra que modifica o verbo (diz como, quando, onde, com que frequência).
+2. O advérbio é invariável. Não muda com gênero, número, pessoa, tempo ou caso.
+3. "Hoje" é hoje para homem, mulher, criança, adulto, ontem, amanhã. Sempre.
+4. "Aqui" é aqui para uma pessoa ou mil pessoas. Sempre.
+5. "Bem" é bem para qualquer sujeito. Sempre.
+6. Se você gosta de decorar, decore os advérbios. São a classe mais fácil do russo. Não tem conjugação, não tem declinação, não tem pegadinha. É só usar.
+7. Os mais essenciais: сейча́с, сего́дня, за́втра, вчера́, всегда́, никогда́, здесь, там, до́ма, хорошо́, пло́хо, быстро, ме́дленно.

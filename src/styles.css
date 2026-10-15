@@ -47,7 +47,7 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .mega-todos{display:block;margin-top:10px;padding:8px 10px;font-weight:600;color:var(--accent-dark)}
 .nav-busca{flex:1;position:relative;display:flex;min-width:180px}
 .nav-busca input{width:100%;padding:10px 44px 10px 18px;border:1.5px solid var(--border-strong);border-radius:var(--r-pill);background:var(--papel-claro)}
-.nav-busca input:focus{border-color:var(--text);outline:none}
+.nav-busca input:focus{border-color:var(--text)}
 .nav-busca button{position:absolute;right:4px;top:4px;bottom:4px;width:36px;border:0;border-radius:50%;background:transparent;color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center}
 .nav-links{display:flex;gap:2px}
 .nav-item{padding:8px 14px;border-radius:var(--r-pill);font-weight:600;font-size:16px;color:var(--muted)}
@@ -70,7 +70,7 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .search-field{display:flex;flex-direction:column;gap:6px;min-width:0}
 .search-field label{font-size:13px;font-weight:600;color:var(--muted)}
 .search-field select,.search-field input{width:100%;padding:12px 16px;background:var(--papel-claro);border:1.5px solid var(--border-strong);border-radius:var(--r-pill);font-size:15px}
-.search-field select:focus,.search-field input:focus{border-color:var(--text);outline:none}
+.search-field select:focus,.search-field input:focus{border-color:var(--text)}
 .hoje{color:var(--text);padding:28px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--papel-claro);box-shadow:0 8px 28px rgba(15,20,23,.06)}
 .hoje-kicker{font-size:13px;font-weight:700;color:var(--faint);letter-spacing:.06em;text-transform:uppercase}
 .hoje h2{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1.25;margin:8px 0}
@@ -435,7 +435,7 @@ em{font-style:normal;color:var(--faint);font-weight:500}
 .barra-topo a:hover{text-decoration:underline}
 .barra-idiomas{display:flex;align-items:center;gap:2px;margin-right:auto}
 .barra-idiomas>svg{margin-right:6px;color:var(--text-muted,currentColor);flex:none}
-.barra-topo .barra-idioma{padding:5px 10px;border-radius:999px;font-weight:600;color:var(--text);text-decoration:none;line-height:1.2}
+.barra-topo .barra-idioma{padding:11px 12px;border-radius:999px;font-weight:600;color:var(--text);text-decoration:none;line-height:1.2}
 .barra-topo a.barra-idioma:hover{background:var(--surface);text-decoration:none}
 .barra-idioma.on{background:var(--text);color:var(--papel-claro);font-weight:700}
 .barra-links{display:flex;align-items:center;gap:22px}

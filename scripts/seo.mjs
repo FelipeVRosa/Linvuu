@@ -42,5 +42,5 @@ for (const g of grupos) for (const c of g.em) {
 }
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml);
-fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /entrar\nDisallow: /cadastro\nDisallow: /assinatura\nDisallow: /livro/\nDisallow: /api/\nDisallow: /en/entrar\nDisallow: /en/cadastro\nDisallow: /en/assinatura\nDisallow: /es/entrar\nDisallow: /es/cadastro\nDisallow: /es/assinatura\n\nSitemap: ${SITE}/sitemap.xml\n`);
+fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /livro/\nDisallow: /api/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log(`sitemap: ${linhas.length} endereços em 3 idiomas`);

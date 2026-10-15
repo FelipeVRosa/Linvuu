@@ -3,9 +3,9 @@
 .lvr{--lvr-serif:'Newsreader Variable',Georgia,serif;--lvr-est:'Literata Variable',Georgia,serif;--lvr-ferrugem:#8C2F1E;--lvr-aviso:#F2DED6;--lvr-linha:rgba(29,31,28,.16);--lvr-zebra:#EAE4D6;--lvr-zebra-2:#FAF8F2}
 .lvr .lv-hero-botoes{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
 .lvr-topo{max-width:760px;margin:0 0 32px}
-.lvr-nota{font-size:14px;opacity:.8;margin:12px 0 0}
+.lvr-nota{font-size:14px;color:var(--grafite-65);margin:12px 0 0}
 .lvr-trilha{font-size:14px;margin:0 0 20px;color:var(--muted,rgba(29,31,28,.7))}
-.lvr-trilha a{color:inherit;text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:3px}
+.lvr-trilha a{display:inline-block;padding:6px 2px;color:inherit;text-decoration:underline;text-decoration-color:var(--ocre);text-underline-offset:3px}
 .lvr-rodape{margin:32px 0 0}
 .lvr-sub{max-width:62ch;margin:0 0 20px;color:var(--muted,rgba(29,31,28,.75))}
 
@@ -20,14 +20,14 @@
 /* página do livro */
 .lvr-livro-topo{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:40px;align-items:start;margin:0 0 48px}
 .lvr-autoria{margin:12px 0 0;font-size:15px}
-.lvr-autoria a{color:var(--verde-floresta);text-decoration-color:var(--ocre);text-underline-offset:3px}
+.lvr-autoria a,.lvr-p a{color:var(--verde-floresta);text-decoration:underline;text-decoration-thickness:1.5px;text-decoration-color:var(--ocre);text-underline-offset:3px}
 .lvr-sumario{list-style:none;margin:0;padding:0;max-width:820px;border-top:1px solid var(--lvr-linha)}
 .lvr-sumario li{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--lvr-linha)}
 .lvr-sum-n{font-family:var(--lvr-serif);font-size:24px;color:var(--lvr-ferrugem);font-variant-numeric:tabular-nums}
 .lvr-sum-t{font-size:17px;line-height:1.35}
 .lvr-sum-t a{color:var(--verde-floresta);font-weight:600;text-decoration-color:var(--ocre);text-underline-offset:4px}
-.lvr-sum-t small{opacity:.7}
-.lvr-sum-tag{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;opacity:.6;white-space:nowrap}
+.lvr-sum-t small{color:var(--grafite-65)}
+.lvr-sum-tag{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--grafite-65);white-space:nowrap}
 .lvr-sum-aberto{opacity:1;color:var(--verde-floresta)}
 
 /* capítulo */
@@ -35,7 +35,7 @@
 .lvr-artigo{max-width:720px;font-size:18px;line-height:1.65}
 .lvr-cab{margin:0 0 28px;padding:0 0 24px;border-bottom:1px solid var(--lvr-linha)}
 .lvr-titulo{font-family:var(--lvr-serif);font-variation-settings:normal;font-weight:400;font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-.02em;margin:6px 0 12px;color:var(--verde-floresta)}
-.lvr-info{margin:0;font-size:14px;opacity:.75}
+.lvr-info{margin:0;font-size:14px;color:var(--grafite-65)}
 .lvr-meta{font-size:20px;line-height:1.5;margin:0 0 28px;padding:0 0 0 18px;border-left:3px solid var(--ocre)}
 .lvr-h2{font-family:var(--lvr-serif);font-variation-settings:normal;font-weight:400;font-size:clamp(24px,3.4vw,32px);line-height:1.2;color:var(--verde-floresta);margin:56px 0 14px;scroll-margin-top:84px}
 .lvr-h3{font-family:var(--lvr-serif);font-variation-settings:normal;font-weight:500;font-size:22px;margin:32px 0 10px}
@@ -86,7 +86,7 @@
 .lvr-lateral li a:hover{opacity:1;color:var(--verde-floresta);box-shadow:inset 2px 0 0 var(--ocre)}
 .lvr-fim{margin:64px 0 0;padding:28px 0 0;border-top:1px solid var(--lvr-linha)}
 .lvr-fim .lvr-h2{margin-top:0}
-.lvr-direitos{margin:28px 0 0;font-size:13px;line-height:1.5;opacity:.7}
+.lvr-direitos{margin:28px 0 0;font-size:13px;line-height:1.5;color:var(--grafite-65)}
 
 @media (max-width:960px){
   .lvr-leitura{grid-template-columns:minmax(0,1fr)}

@@ -65,6 +65,7 @@ async function startServer() {
         else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
         // sitemap e robots: o Google relê com frequência; uma hora de cache basta
+        else if (/\.(webp|png|jpe?g|svg|woff2?)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=2592000');
         else if (/(sitemap\.xml|robots\.txt)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=3600');
       },
     }));
@@ -75,6 +76,9 @@ async function startServer() {
     app.get('/assets/*', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
     app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, '/en/portugues'); });
+    // Endereços antigos ou digitados à mão que davam 404.
+    app.get('/metodo', (_req: Request, res: Response) => { res.redirect(301, '/#metodo'); });
+    app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
     app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response) => { res.redirect(301, `/en${req.path}`); });
     app.get('*', (req: Request, res: Response) => {

@@ -9,6 +9,8 @@ import { definirSons, EVENTO_SONS, somClique, somConcluido, sonsLigados } from '
 import { Traco } from './Traco';
 
 export type Tema = 'claro' | 'escuro';
+/** Na trilha, o título da aula já aparece no grupo: a sessão não precisa repeti-lo. */
+const semPrefixo = (titulo: string, prefixo?: string) => (prefixo && titulo.startsWith(`${prefixo}: `) ? titulo.slice(prefixo.length + 2) : titulo);
 const CHAVE_TEMA = 'linvuu:tema-aluno';
 const lerTema = (): Tema => {
   try { return localStorage.getItem(CHAVE_TEMA) === 'escuro' ? 'escuro' : 'claro'; } catch { return 'claro'; }
@@ -92,7 +94,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         <Link to={`/curso/${idioma}/dia/${n}`} className={`aa-dia ${atual ? 'atual' : ''} ${feito ? 'feito' : ''}`} aria-current={atual ? 'page' : undefined}>
           <span className="aa-marca" aria-hidden="true">{feito ? '✓' : ''}</span>
           <span className="aa-dia-n">{n}</span>
-          <span className="aa-dia-t">{d.titulo}<small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small></span>
+          <span className="aa-dia-t">{semPrefixo(d.titulo, grupos.find((g) => n >= g.dias[0] && n <= g.dias[1])?.titulo)}<small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small></span>
         </Link>
       </li>
     );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CURSOS_ATIVOS, statusDoCurso } from '../lib/content';
+import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, statusDoCurso } from '../lib/content';
 import { LOCALE } from '../i18n';
 import { falar } from '../lib/audio';
 import { CursoCard } from '../components/CursoCard';
@@ -17,6 +17,7 @@ import { useT } from '../i18n';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL, EMAIL_OFICIAL } from '../config/site';
 import { REDES } from '../config/social';
+import { COMECAR } from '../lib/comecar';
 
 // Frase de amostra de cada curso: a mesma situação (pedir um café) em cada idioma.
 const AMOSTRA: Record<string, { frase: string; lang: string }> = {
@@ -41,6 +42,9 @@ export default function Home() {
   const amostra = lang ? AMOSTRA[lang] : undefined;
   const sessao = lang ? statusDoCurso(lang)?.amostra : undefined;
   const aulasNoAr = NO_AR.map((c) => `${c.nome} (${Math.floor((statusDoCurso(c.id)?.publicadas ?? 0) / 4)})`).join(', ');
+
+  const comecar = COMECAR[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR'];
+  const destinos = { cursos: '/cursos', gramatica: `/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'en'}`, livros: '/livros', duvidas: '/#faq' };
 
   const ouvir = async () => {
     if (!lang || !amostra) return;
@@ -93,6 +97,26 @@ export default function Home() {
         <ul>
           {t.prova.map((x) => <li key={x.t}><strong>{x.t}</strong><span>{x.d}</span></li>)}
         </ul>
+      </section>
+
+      <section className="lv-sec" id="como-comecar" aria-labelledby="h-comecar">
+        <p className="lv-kicker lv-kicker-esc">{comecar.kicker}</p>
+        <h2 id="h-comecar">{comecar.titulo}</h2>
+        <p className="lv-sec-sub">{comecar.lead}</p>
+        <ol className="lv-passos lv-passos-4">
+          {comecar.passos.map((m) => (
+            <li key={m.n}><span className="lv-num" aria-hidden="true">{m.n}</span><h3>{m.t}</h3><p>{m.d}</p></li>
+          ))}
+        </ol>
+        <h3 className="lv-mapa-t">{comecar.mapaTitulo}</h3>
+        <ul className="lv-mapa">
+          {comecar.mapa.filter((x) => !x.soPt || LOCALE.codigo === 'pt-BR').map((x) => (
+            <li key={x.id}>
+              <Link to={destinos[x.id]}><strong>{x.t}</strong><span>{x.d}</span></Link>
+            </li>
+          ))}
+        </ul>
+        <p className="lv-dica">{comecar.dica}</p>
       </section>
 
       <section className="lv-sec" id="cursos" aria-labelledby="h-cursos">

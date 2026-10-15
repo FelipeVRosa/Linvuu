@@ -15,13 +15,110 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você faz perguntas diretas com a preposição no fim (Who are you talking to?); diferencia perguntas de sujeito (Who called?) de perguntas de objeto (Who did you call?); faz perguntas indiretas educadas sem inverter a ordem (Could you tell me where the station is?); confirma informações com question tags (isn't it? / don't you?); e concorda com So do I e Neither do I."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Networking no intervalo da conferência",
+          "contexto": "Marina conversa com um executivo suíço, Oliver, durante o coffee break de um congresso internacional em Boston.",
+          "linhas": [
+            {
+              "personagem": "Oliver",
+              "ru": "— Excuse me, this seat isn't taken, is it?",
+              "pt": "— Com licença, este lugar não está ocupado, está?",
+              "audio": "Excuse me, this seat isn't taken, is it?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— No, it isn't. Please go ahead! Great event today, isn't it?",
+              "pt": "— Não, não está. Pode sentar! Ótimo evento hoje, não é?",
+              "audio": "No, it isn't. Please go ahead! Great event today, isn't it?"
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— Yes, it really is. I'm Oliver, by the way. Where do you come from?",
+              "pt": "— Sim, realmente. Sou o Oliver, aliás. De onde você vem?",
+              "audio": "Yes, it really is. I'm Oliver, by the way. Where do you come from?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— I'm Marina. I'm from Brazil, but I live here in Boston now. Which company do you work for, Oliver?",
+              "pt": "— Sou a Marina. Sou do Brasil, mas moro aqui em Boston agora. Para qual empresa você trabalha, Oliver?",
+              "audio": "I'm Marina. I'm from Brazil, but I live here in Boston now. Which company do you work for, Oliver?"
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— I work for a medical tech company in Zurich. Who was that speaker talking to on stage right before the break?",
+              "pt": "— Trabalho para uma empresa de tecnologia médica em Zurique. Com quem aquele palestrante estava falando no palco, logo antes do intervalo?",
+              "audio": "I work for a medical tech company in Zurich. Who was that speaker talking to on stage right before the break?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— That was Dr. Chen. She leads the AI lab at MIT.",
+              "pt": "— Aquela era a Dra. Chen. Ela lidera o laboratório de IA no MIT.",
+              "audio": "That was Dr. Chen. She leads the AI lab at MIT."
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— Oh, really? Do you know what time her afternoon workshop starts?",
+              "pt": "— Ah, é mesmo? Você sabe a que horas começa o workshop dela à tarde?",
+              "audio": "Oh, really? Do you know what time her afternoon workshop starts?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Let me check the app… It starts at two thirty. By the way, could you tell me where the main auditorium is? I haven't been to that wing yet.",
+              "pt": "— Deixe-me ver no aplicativo… Começa às duas e meia. Aliás, você poderia me dizer onde fica o auditório principal? Ainda não fui àquela ala.",
+              "audio": "Let me check the app… It starts at two thirty. By the way, could you tell me where the main auditorium is? I haven't been to that wing yet."
+            },
+            {
+              "personagem": "Oliver",
+              "ru": "— Neither have I! Look, my colleague Anna is coming. Let's ask her. She knows who organized the schedule.",
+              "pt": "— Eu também não! Olha, minha colega Anna está vindo. Vamos perguntar para ela. Ela sabe quem organizou a programação.",
+              "audio": "Neither have I! Look, my colleague Anna is coming. Let's ask her. She knows who organized the schedule."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Fale de hábitos que você quer mudar, usando stop, try e remember."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Pergunta indireta: depois de Could you tell me… / Do you know… / I wonder…, o resto volta à ordem de frase afirmativa. Numa pergunta direta, invertemos o verbo ou usamos do/does/did (Where is the station? / What time does it start?). Mas, quando há uma introdução educada na frente, a pergunta já foi feita na primeira metade. A segunda metade segue a ordem sujeito + verbo e não leva do / does / did: PASSO 2: Direta: Where is the station? → indireta: Could you tell me where the station is? (e não where is the station). PASSO 3: Direta: What time does the bank open? → indireta: Do you know what time the bank opens? (sem does, e com -s em opens). PASSO 4: O “né?” do inglês muda conforme o verbo da frase. Se a frase tem are, a tag usa aren't; se tem Present Simple, usa don't / doesn't; se tem Past Simple, usa didn't. Não existe um isn't it? universal. PASSO 5: Preposição no fim. A palavra interrogativa (Who, What, Where, Which) abre a pergunta e a preposição (from, to, for, with, about, at) fica no final, junto do verbo: Where are you from?, Who is this gift for?, What are you looking at?",
+          "comparacao": "Em português, a preposição abre a pergunta (“Com quem você está falando? Para qual empresa você trabalha?”); nas perguntas indiretas, a ordem das palavras não muda (“Você sabe onde está a Sarah?”); uma única expressão confirma tudo (“né? / não é?”); e “Eu também não” serve para qualquer frase negativa. Em inglês, isso gera cinco armadilhas:",
+          "tabela": [
+            {
+              "portugues": "Com quem você estava falando?",
+              "ingles": "Who were you talking to?",
+              "evite": "With who were you talking? / Who were you talking?"
+            },
+            {
+              "portugues": "Quem ligou para você?",
+              "ingles": "Who called you? (sujeito: sem did)",
+              "evite": "Who did call you?"
+            },
+            {
+              "portugues": "Você sabe onde está a Sarah?",
+              "ingles": "Do you know where Sarah is?",
+              "evite": "Do you know where is Sarah?"
+            },
+            {
+              "portugues": "Você trabalha aqui, não é?",
+              "ingles": "You work here, don't you?",
+              "evite": "You work here, isn't it?"
+            },
+            {
+              "portugues": "— Não gosto de frio. — Eu também!",
+              "ingles": "— I don't like cold weather. — Neither do I (ou Me neither)!",
+              "evite": "Me too! (Me too concorda com frases afirmativas)"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "depend on",
@@ -83,7 +180,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Verbos com preposição fixa",
           "explicacao": "PASSO 1: muitos verbos ingleses pedem uma preposição que nem sempre coincide com o português. PASSO 2: aprenda o par: «depend ON», «listen TO», «wait FOR», «look AT», «pay FOR», «believe IN», «talk ABOUT». PASSO 3: alguns verbos que em português levam preposição, em inglês NÃO levam: «ask something», «enter a room», «discuss a topic», «marry someone», «answer a question». PASSO 4: depois da preposição, use -ing: «I'm thinking about moving.», «Thanks for helping.» PASSO 5: «think of» (lembrar, ter uma ideia) × «think about» (refletir): «What do you think of it?» × «I'm thinking about it.» PASSO 6: não precisa decorar a lista inteira: aprenda os pares dentro de frases.",
           "comparacao": "em português «esperar» não pede preposição, «pagar» e «assistir» pedem outras. Em inglês, «wait FOR», «pay FOR», e «watch» (sem preposição). Aprender o par evita erros previsíveis.",
@@ -135,8 +232,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Faça 8 frases com os verbos desta sessão, cada um com a preposição certa."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Fale de hábitos que você quer mudar, usando stop, try e remember."
         }
       ]
     },
@@ -146,13 +248,29 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Complete: «I'm waiting ___ the bus. She listens ___ music. It depends ___ you.»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare os dois tipos de pergunta com Who e What: PASSO 2: Agora observe as question tags: PASSO 3: Perguntas: PASSO 4: Por que em Who called Lucas? e What happened? não usamos did? PASSO 5: O que acontece com a tag quando a frase é positiva e quando é negativa? PASSO 6: Se a frase começa com I'm (I'm late), qual é a tag? (Dica: não existe “amn't I”.)",
+          "tabela": [
+            {
+              "c1": "Who did Lucas call? — He called Sarah.",
+              "c2": "Who called Lucas? — Sarah called him."
+            },
+            {
+              "c1": "What did you buy? — I bought a laptop.",
+              "c2": "What happened last night? — The lights went out."
+            },
+            {
+              "c1": "Who do you work with? — With Kevin.",
+              "c2": "Who works in this room? — Marina works here."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "afraid of",
@@ -200,7 +318,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Adjetivos com preposição",
           "explicacao": "PASSO 1: «afraid OF», «proud OF», «tired OF» (cansado de, enjoado): «I'm afraid of spiders.» PASSO 2: «interested IN», «good AT», «bad AT», «keen ON»: «She is good at math.» PASSO 3: «worried ABOUT», «excited ABOUT», «angry ABOUT» (a coisa), «angry WITH» (a pessoa): «I'm angry with him about it.» PASSO 4: «different FROM» (americano), «similar TO», «married TO», «surprised AT/BY»: «She is married to a doctor.» PASSO 5: depois da preposição, -ing ou substantivo: «I'm good at cooking.» PASSO 6: «tired of» = farto de; «tired from» = cansado por causa de: «I'm tired from working.» (cansaço físico).",
           "comparacao": "em português «bom em», «interessado em» e «cansado de» também levam preposição, mas nem sempre a mesma. Em inglês, «good AT» (não «good in»), «interested IN», «tired OF».",
@@ -251,9 +369,21 @@
           "tag": "Adjetivos + preposição"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Preposição no fim da pergunta: PASSO 2: Where are you from? | Who are you waiting for? | Who were you talking to? | What are you looking at / for? | What is the movie about? | Who did you go with? PASSO 3: Em conversa rápida: Who with? / What for? / Where to? PASSO 4: Perguntas de sujeito (sem do / does / did): PASSO 5: Para saber quem praticou a ação ou o que aconteceu, vá direto ao verbo: Who called? / Who broke the glass? / What happened? / Who wants coffee? (no presente, 3ª pessoa com -s). PASSO 6: Perguntas indiretas (Could you tell me… / Do you know…): PASSO 7: Com palavra interrogativa: ordem afirmativa, sem do/does/did: Do you know where she lives? / Could you tell me what time the flight leaves? PASSO 8: Sem palavra interrogativa (sim ou não): use if (ou whether) + sujeito + verbo: Do you know if the bank is open? / Could you tell me if she received my email? PASSO 9: Question tags: PASSO 10: Espelho (+ → – | – → +):You're Brazilian, aren't you? | She works here, doesn't she? | You went there, didn't you? | He hasn't arrived, has he? | You can swim, can't you? PASSO 11: Exceção:I'm on the list, aren't I?",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Faça 8 frases sobre você com adjetivos + preposição: afraid of, good at, interested in, proud of."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «I'm waiting ___ the bus. She listens ___ music. It depends ___ you.»"
         }
       ]
     },
@@ -263,13 +393,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Diga 5 frases sobre você com adjetivos + preposição."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "reason for",
@@ -310,7 +435,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "Substantivos com preposição",
           "explicacao": "PASSO 1: «reason FOR»: «What is the reason for the delay?» PASSO 2: «answer TO», «solution TO», «key TO»: «The key to success is practice.» PASSO 3: «problem WITH», «trouble WITH»: «I have a problem with my phone.» PASSO 4: «increase IN», «decrease IN», «change IN»: «There was an increase in prices.» PASSO 5: «cause OF», «effect ON»: «The effect of stress on health.» PASSO 6: «difference BETWEEN»: «the difference between A and B.»",
           "comparacao": "em português «razão para», «resposta a», «problema com» também levam preposição, mas «aumento de/em» e «chave para» variam. Em inglês, aprenda cada par como uma unidade.",
@@ -361,34 +486,283 @@
           "tag": "Substantivos + preposição"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "My new job / O meu novo emprego",
-          "ru": "I am very excited about my new job. I'm good at working with people, and I'm interested in learning new things. I was afraid of changing companies, but I believe in taking risks. My boss is proud of my work, and she depends on me to solve problems. I'm thinking about taking an English course because I need to talk to clients. There is only one problem with the job: the commute is long, so I listen to music on the bus.",
-          "pt": "Estou muito animado com o meu novo emprego. Sou bom em trabalhar com pessoas e tenho interesse em aprender coisas novas. Tinha medo de mudar de empresa, mas acredito em correr riscos. Minha chefe tem orgulho do meu trabalho e conta comigo para resolver problemas. Estou pensando em fazer um curso de inglês porque preciso falar com clientes. Só há um problema no emprego: o trajeto é longo, então ouço música no ônibus.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "What is the person excited about?",
-              "resposta": "The new job."
+              "ru": "Who are you waiting for? — I'm waiting for Sarah.",
+              "translit": "",
+              "pt": "Quem você está esperando? — Estou esperando a Sarah.",
+              "en": "",
+              "audio": "Who are you waiting for? — I'm waiting for Sarah."
             },
             {
-              "pergunta": "What was the person afraid of?",
-              "resposta": "Changing companies."
+              "ru": "Which department does your brother work in?",
+              "translit": "",
+              "pt": "Em qual departamento o seu irmão trabalha?",
+              "en": "",
+              "audio": "Which department does your brother work in?"
             },
             {
-              "pergunta": "Who is proud of the person's work?",
-              "resposta": "The boss."
+              "ru": "What happened at the meeting this morning?",
+              "translit": "",
+              "pt": "O que aconteceu na reunião hoje de manhã?",
+              "en": "",
+              "audio": "What happened at the meeting this morning?"
             },
             {
-              "pergunta": "What does the person do on the bus?",
-              "resposta": "Listens to music."
+              "ru": "Who left this notebook on the conference table?",
+              "translit": "",
+              "pt": "Quem deixou este caderno na mesa de conferência?",
+              "en": "",
+              "audio": "Who left this notebook on the conference table?"
+            },
+            {
+              "ru": "Could you tell me where the nearest restroom is, please?",
+              "translit": "",
+              "pt": "Você poderia me dizer onde fica o banheiro mais próximo, por favor?",
+              "en": "",
+              "audio": "Could you tell me where the nearest restroom is, please?"
+            },
+            {
+              "ru": "Do you know what time the store closes on Saturdays?",
+              "translit": "",
+              "pt": "Você sabe a que horas a loja fecha aos sábados?",
+              "en": "",
+              "audio": "Do you know what time the store closes on Saturdays?"
+            },
+            {
+              "ru": "You've already sent the invoice, haven't you?",
+              "translit": "",
+              "pt": "Você já enviou a fatura, não enviou?",
+              "en": "",
+              "audio": "You've already sent the invoice, haven't you?"
+            },
+            {
+              "ru": "— I haven't had lunch yet. — Neither have I! Let's go now.",
+              "translit": "",
+              "pt": "— Ainda não almocei. — Eu também não! Vamos agora.",
+              "en": "",
+              "audio": "— I haven't had lunch yet. — Neither have I! Let's go now."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Who were you talking ___ on the phone just now?",
+              "opcoes": [
+                "to",
+                "[sem preposição]"
+              ],
+              "gabarito": "to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Who ___ you this morning? — My boss called me!",
+              "opcoes": [
+                "called",
+                "did call"
+              ],
+              "gabarito": "called",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ this morning? — I called my boss.",
+              "opcoes": [
+                "Who did you call",
+                "Who called"
+              ],
+              "gabarito": "Who did you call",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Could you tell me where ___?",
+              "opcoes": [
+                "is the train station",
+                "the train station is"
+              ],
+              "gabarito": "the train station is",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Do you know what time ___?",
+              "opcoes": [
+                "does the meeting start",
+                "the meeting starts"
+              ],
+              "gabarito": "the meeting starts",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Marina works in Boston, ___?",
+              "opcoes": [
+                "isn't it",
+                "doesn't she"
+              ],
+              "gabarito": "doesn't she",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "You didn't see my keys, ___?",
+              "opcoes": [
+                "did you",
+                "didn't you"
+              ],
+              "gabarito": "did you",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— I don't work on Saturdays. — ___!",
+              "opcoes": [
+                "Me too",
+                "Neither do I"
+              ],
+              "gabarito": "Neither do I",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-108a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ my coffee from the fridge?!",
+              "opcoes": [
+                "Who drank",
+                "Who did drink"
+              ],
+              "gabarito": "Who drank",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-109a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "You haven't seen my keys anywhere, ___?",
+              "opcoes": [
+                "have you",
+                "haven't you"
+              ],
+              "gabarito": "have you",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-110a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I'm looking for my badge.” → “What are you looking ___?”",
+              "respostaEsperada": "for",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“She went to Chicago with Lucas.” → “Who did she go to Chicago ___?”",
+              "respostaEsperada": "with",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Pergunta indireta: “Where does Kevin live?” → “Do you know where ___?”",
+              "respostaEsperada": "Kevin lives",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Pergunta indireta: “Is the pharmacy open?” → “Could you tell me if ___?”",
+              "respostaEsperada": "the pharmacy is open",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tag: It's a beautiful day today, ___?",
+              "respostaEsperada": "isn't it",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tag: You've met Thomas before, ___?",
+              "respostaEsperada": "haven't you",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tag: I'm in the right room, ___?",
+              "respostaEsperada": "aren't I",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— I love Italian food! — ___ do I! / — I've never been to Japan. — Neither have I!",
+              "respostaEsperada": "So",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— I love Italian food! — So do I! / — I've never been to Japan. — ___ have I!",
+              "respostaEsperada": "Neither",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tag: You're coming to the conference tomorrow, ___?",
+              "respostaEsperada": "aren't you",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-209a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tag: Lucas went to Chicago last week, ___?",
+              "respostaEsperada": "didn't he",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-210a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— I'm writing an email. — Who are you writing ___?",
+              "respostaEsperada": "to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-211a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Somebody left a message on your desk. — Really? Who ___ (leave) it?",
+              "respostaEsperada": "left",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-212a"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva um texto de 6 frases sobre o seu trabalho ou estudo, usando 5 preposições dependentes."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga 5 frases sobre você com adjetivos + preposição."
         }
       ]
     },
@@ -398,13 +772,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Descreva o que você faz, o que teme e no que é bom, usando as preposições certas."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -581,12 +950,158 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre as suas habilidades, os seus medos e os seus interesses."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas perguntas com preposição no fim (Who… with? / What… about? / Which company… for?).",
+              "respostaEsperada": "Who are you traveling with? What is that book about?",
+              "id": "en-050-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma pergunta sobre o sujeito (“Quem enviou este e-mail?”) e uma sobre o objeto (“Para quem você enviou este e-mail?”).",
+              "respostaEsperada": "Sujeito: Who sent this email? | Objeto: Who did you send this email to?",
+              "id": "en-050-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Transforme em perguntas indiretas educadas, começando com Could you tell me…: (a) Where is Gate 14? (b) What time does the flight board?",
+              "respostaEsperada": "(a) Could you tell me where Gate 14 is, please? (b) Could you tell me what time the flight boards, please?",
+              "id": "en-050-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases com question tags: uma no presente, uma no passado e uma negativa com tag positiva.",
+              "respostaEsperada": "You live in São Paulo, don't you? / You called him yesterday, didn't you? / She hasn't arrived yet, has she?",
+              "id": "en-050-L-p04"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Responda a duas frases de um colega usando So… e Neither…: (a) I love this city. (b) I can't speak German.",
+              "respostaEsperada": "(a) So do I! (b) Neither can I! (ou Me neither!)",
+              "id": "en-050-L-p05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Do you know where is the meeting room?",
+              "respostaEsperada": "Do you know where the meeting room is?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Could you tell me what time does the bank open?",
+              "respostaEsperada": "Could you tell me what time the bank opens?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Who did call you during the presentation?",
+              "respostaEsperada": "Who called you during the presentation?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: You work with Lucas, isn't it?",
+              "respostaEsperada": "You work with Lucas, don't you?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: — I don't like waking up at five a.m. — Me too!",
+              "respostaEsperada": "— I don't like waking up at five a.m. — Neither do I!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: What are you waiting? Let's go!",
+              "respostaEsperada": "What are you waiting for? Let's go!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She doesn't work here, doesn't she?",
+              "respostaEsperada": "She doesn't work here, does she?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-050-L-c07"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Could you tell me if there's an ATM near here?",
+              "respostaEsperada": "OK",
+              "id": "en-050-L-c08"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais comum de estudantes intermediários em viagens e reuniões é manter a inversão da pergunta direta dentro de uma pergunta indireta (Do you know where is the station?, Could you tell me what time does it start?) e usar “isn't it?” como tag para tudo. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Do you know where is the bank?",
+              "certo": "Do you know where the bank is?",
+              "motivo": "Em perguntas indiretas, a ordem volta a ser afirmativa (sujeito + verbo)."
+            },
+            {
+              "errado": "Tell me what time does it start.",
+              "certo": "Tell me what time it starts.",
+              "motivo": "Perguntas indiretas não levam o auxiliar do/does/did."
+            },
+            {
+              "errado": "Who did break the window?",
+              "certo": "Who broke the window?",
+              "motivo": "Quando Who ou What é o sujeito da ação, não se usa do/does/did."
+            },
+            {
+              "errado": "You like coffee, isn't it?",
+              "certo": "You like coffee, don't you?",
+              "motivo": "A tag repete o auxiliar do verbo da frase (like → don't you)."
+            },
+            {
+              "errado": "She doesn't work here, doesn't she?",
+              "certo": "She doesn't work here, does she?",
+              "motivo": "Frase negativa pede tag positiva."
+            },
+            {
+              "errado": "— I can't swim. — Me too!",
+              "certo": "— Me neither! / Neither can I!",
+              "motivo": "Para concordar com uma frase negativa, use Me neither ou Neither + aux + I."
+            },
+            {
+              "errado": "Who are you waiting?",
+              "certo": "Who are you waiting for?",
+              "motivo": "Wait for exige a preposição for no fim da pergunta."
+            },
+            {
+              "errado": "What are you talking? / Who did you go?",
+              "certo": "What are you talking about? / Who did you go with?",
+              "motivo": "A preposição do verbo não pode sumir no fim da pergunta."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 19. Complete com who, which, where ou whose: The speaker ____ workshop starts at 2:30 works at the lab ____ they develop AI systems. 2. Do Capítulo 17 e 18. Corrija: Thank you for help me, and I want that you come to the meeting! Depois responda: na pergunta What are you looking for?, por que, ao responder com pronome para my keys, dizemos I'm looking for them e não I'm looking them for? 3. Do Capítulo 14 e 15. Complete as tags: (a) You've worked here for three years, ____? (b) You've been to London before, ____? (c) She hasn't sent the file yet, ____?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Fazer perguntas indiretas educadas (Could you tell me where the station is?) sem inverter o verbo nem usar do/does/did. · Perguntar Who called? / What happened? sem did e manter a preposição no fim (Who are you waiting for?). · Usar question tags variadas e concordar com frases negativas com Me neither! / Neither do I!."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você escolhe a preposição certa em vez de traduzir do português. Próxima aula: dedução com modais."
+  "notasParaOAluno": "Você escolhe a preposição certa em vez de traduzir do português. Próxima aula: dedução com modais.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você descreve ações que estão acontecendo neste exato momento e situações temporárias da sua vida usando o Present Continuous (am / is / are + verbo-ing), aplica as três regras de ortografia do -ing, escolhe sem hesitar entre I work (rotina) e I'm working (agora/temporário), e reconhece os verbos de estado (know, want, need, like, understand), que no uso do dia a dia não aceitam -ing."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Videochamada no meio de uma viagem de trabalho",
+          "contexto": "Lucas está no saguão do hotel em Toronto esperando um táxi e recebe uma chamada de vídeo da esposa, Mariana, que está em São Paulo.",
+          "linhas": [
+            {
+              "personagem": "Mariana",
+              "ru": "— Hi, love! Can you talk right now, or are you in a meeting?",
+              "pt": "— Oi, amor! Você pode falar agora ou está em reunião?",
+              "audio": "Hi, love! Can you talk right now, or are you in a meeting?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Hi! I can talk for a few minutes. I'm sitting in the hotel lobby right now, and I'm waiting for a taxi to the airport.",
+              "pt": "— Oi! Posso falar por alguns minutos. Estou sentado no saguão do hotel agora mesmo e estou esperando um táxi para o aeroporto.",
+              "audio": "Hi! I can talk for a few minutes. I'm sitting in the hotel lobby right now, and I'm waiting for a taxi to the airport."
+            },
+            {
+              "personagem": "Mariana",
+              "ru": "— Wait — why are you going to the airport today? You usually fly back on Fridays!",
+              "pt": "— Espere — por que você está indo para o aeroporto hoje? Você normalmente volta de avião às sextas-feiras!",
+              "audio": "Wait — why are you going to the airport today? You usually fly back on Fridays!"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— I know, but this week we're visiting a client in Montreal. Sarah and David are coming with me — look, they're checking out at the front desk right now.",
+              "pt": "— Eu sei, mas nesta semana estamos visitando um cliente em Montreal. A Sarah e o David estão vindo comigo — olha, eles estão fechando a conta na recepção agora mesmo.",
+              "audio": "I know, but this week we're visiting a client in Montreal. Sarah and David are coming with me — look, they're checking out at the front desk right now."
+            },
+            {
+              "personagem": "Mariana",
+              "ru": "— Oh, I see! Is it still snowing in Toronto?",
+              "pt": "— Ah, entendi! Ainda está nevando em Toronto?",
+              "audio": "Oh, I see! Is it still snowing in Toronto?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— No, it isn't snowing today, thank goodness. The sun is shining, but it's freezing outside! What are you guys doing at home?",
+              "pt": "— Não, hoje não está nevando, ainda bem. O sol está brilhando, mas está congelando lá fora! O que vocês estão fazendo em casa?",
+              "audio": "No, it isn't snowing today, thank goodness. The sun is shining, but it's freezing outside! What are you guys doing at home?"
+            },
+            {
+              "personagem": "Mariana",
+              "ru": "— Leo is doing his homework at the kitchen table, and I'm making dinner. Do you want to say hi to him?",
+              "pt": "— O Leo está fazendo a lição de casa na mesa da cozinha, e eu estou fazendo o jantar. Você quer dar um oi para ele?",
+              "audio": "Leo is doing his homework at the kitchen table, and I'm making dinner. Do you want to say hi to him?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— I'd love to, but the taxi is arriving. Tell him hi for me! Talk to you tonight!",
+              "pt": "— Eu adoraria, mas o táxi está chegando. Mande um beijo para ele! Falo com você hoje à noite!",
+              "audio": "I'd love to, but the taxi is arriving. Tell him hi for me! Talk to you tonight!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Compre uma roupa em voz alta: peça, tamanho, preço e decisão."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: O verbo -ing nunca anda sozinho: ele exige am / is / are. Um verbo com - ing sem o verbo to be antes dele não é um tempo verbal em inglês! Diga sempre I'm working, She's studying, Are you listening? (e não I working ou She studying). PASSO 2: Os Verbos de Estado (State Verbs) quase nunca aceitam -ing. Em português dizemos “Estou querendo”, “Estou precisando”, “Estou gostando”, “Estou sabendo”. Em inglês, verbos que expressam estados mentais, sentimentos, posse e necessidades não são ações físicas e por isso usam sempre o Present Simple, mesmo que seja neste exato segundo (right now): PASSO 3: Mente e opinião:know (saber/conhecer), understand (entender), believe (acreditar), remember (lembrar), forget (esquecer), mean (significar), think (= achar/opinar). PASSO 4: Desejo e sentimento:want (querer), need (precisar), prefer (preferir), like (gostar), love (amar), hate (odiar). PASSO 5: Posse e percepção:have (= possuir: I have a car), belong (pertencer), see (ver), hear (ouvir), smell (ter cheiro), taste (ter gosto), seem (parecer).",
+          "comparacao": "Em português falado, cometemos três vícios quando passamos para o inglês: usamos o presente simples para ações do momento (“Onde você vai agora?”), colocamos gerúndio em verbos mentais e de desejo (“Estou precisando de ajuda, estou querendo um café, estou entendendo tudo”), ou engolimos o verbo to be antes do -ing. Veja a diferença:",
+          "tabela": [
+            {
+              "portugues": "O que você está fazendo? — Eu trabalhando.",
+              "ingles": "What are you doing? — I'm working.",
+              "evite": "What you doing? — I working."
+            },
+            {
+              "portugues": "Estou precisando de ajuda agora.",
+              "ingles": "I need help right now.",
+              "evite": "I'm needing help right now."
+            },
+            {
+              "portugues": "Estou entendendo a regra!",
+              "ingles": "I understand the rule! / I get it!",
+              "evite": "I'm understanding the rule!"
+            },
+            {
+              "portugues": "Eu normalmente tomo café, mas hoje tomo chá.",
+              "ingles": "I usually drink coffee, but today I'm drinking tea.",
+              "evite": "…but today I drink tea."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "now",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "O presente contínuo",
           "explicacao": "PASSO 1: usamos o presente contínuo para o que acontece AGORA: «I am studying.», «She is eating.» PASSO 2: a estrutura é «to be» (am/is/are) + verbo com -ing. PASSO 3: as regras do -ing da aula 13: study → studying, make → making, run → running. PASSO 4: contrações: «I'm studying», «She's eating», «They're sleeping». PASSO 5: palavras que indicam o momento: now, right now, at the moment, today. PASSO 6: não esqueça o «to be»: «She eating» está errado em inglês, mesmo que em português «ela comendo» soe natural na fala. PASSO 7: o contínuo mostra algo em andamento, que vai acabar.",
           "comparacao": "em português usamos «estar + -ndo» («estou estudando»). O inglês faz idêntico: «to be + -ing». Isso é um acerto direto: «estou estudando» = «I am studying».",
@@ -130,8 +216,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 5 coisas que está fazendo agora ou que as pessoas ao seu redor estão fazendo."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Compre uma roupa em voz alta: peça, tamanho, preço e decisão."
         }
       ]
     },
@@ -141,13 +232,33 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Dê o -ing de: write, sit, sleep, make, play, run."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare lado a lado o Present Simple (Capítulo 5) e o Present Continuous (Capítulo 8): PASSO 2: Perguntas: PASSO 3: Quais palavras de tempo costumam chamar o Present Simple e quais chamam o Present Continuous? PASSO 4: Olhe para a ortografia de make → making, sit → sitting e wait → waiting: por que make perdeu o -e e sit dobrou o -t, mas wait não dobrou? PASSO 5: Se você percebeu que expressões de frequência (usually, every day, on Fridays) pedem Present Simple, enquanto expressões do momento ou da fase atual (now, right now, at the moment, today, this week, these days)",
+          "tabela": [
+            {
+              "c1": "Lucas lives in São Paulo. (mora lá permanentemente)",
+              "c2": "He is staying at a hotel in Toronto this week. (temporário)"
+            },
+            {
+              "c1": "What do you do? (= Qual é a sua profissão?)",
+              "c2": "What are you doing right now? (= O que está fazendo agora?)"
+            },
+            {
+              "c1": "It snows a lot in Canada in winter. (fato geral)",
+              "c2": "Look outside! It is snowing right now! (neste instante)"
+            },
+            {
+              "c1": "She doesn't work on Saturdays. (hábito)",
+              "c2": "She isn't working today; she's on vacation. (hoje)"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "wait",
@@ -195,7 +306,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Negativa, pergunta e resposta curta",
           "explicacao": "PASSO 1: negativa: «am/is/are + not + verbo-ing»: «I'm not working.», «She isn't eating.», «They aren't waiting.» PASSO 2: pergunta: inverta o «to be»: «Are you working?», «Is she eating?» PASSO 3: com palavra de pergunta: «What are you doing?» → «I'm studying.» PASSO 4: resposta curta: «Yes, I am.» / «No, I'm not.» / «Yes, she is.» / «No, they aren't.» PASSO 5: não use «do/does» nesse tempo. PASSO 6: pergunta típica ao telefone: «What are you doing?» (o que você está fazendo?).",
           "comparacao": "em português «Você está trabalhando?» usa «estar». Em inglês, o «to be» vai ao começo: «Are you working?».",
@@ -241,9 +352,21 @@
           "tag": "Contínuo"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Fórmula do Present Continuous:am / is / are + verbo com -ing. PASSO 2: Afirmativa:I'm working, He's / She's / It's working, You're / We're / They're working. PASSO 3: Negativa:I'm not working, He isn't working, They aren't working. PASSO 4: Pergunta e Resposta Curta:Are you working now? — Yes, I am. / No, I'm not. | What is she doing?. PASSO 5: Quando usar: PASSO 6: Ação em andamento agora:right now, at the moment, Look!, Listen! (I'm waiting for a taxi). PASSO 7: Fase temporária no presente:today, this week, this month, these days, currently (I'm taking a course this month). PASSO 8: Posição do corpo no momento: Em português dizemos “Estou sentado / em pé / deitado”; em inglês usa-se -ing: I'm sitting / I'm standing / I'm lying on the sofa (e para roupas no corpo: She's wearing a blue dress!). PASSO 9: As 3 Regras de Escrita do -ing: PASSO 10: Termina em -e mudo → corta o -e (make → making, write → writing, come → coming, have → having, arrive → arriving). (Se terminar em - ie, vira -ying: lie → lying). PASSO 11: Terminado em 1 Consoante + 1 Vogal + 1 Consoante (CVC) com a última sílaba forte → dobra a consoante (sit → sitting, run → running, stop → stopping, get → getting, swim → swimming, plan → planning, begin → beginning — exceto w, x, y: play → playing, fix → fixing, snow → snowing). Se a última sílaba é fraca, não dobra: visit → visiting. PASSO 12: Todos os demais → apenas adicione -ing (work → working, study → studying, wait → waiting). PASSO 13: Em geral, sem -ing (State Verbs):know, understand, want, need, prefer, like, love, believe, remember, have (possuir).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Faça 4 perguntas com «What are you doing?» e «Is she…?» e responda com resposta curta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Dê o -ing de: write, sit, sleep, make, play, run."
         }
       ]
     },
@@ -253,13 +376,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Diga o que 3 pessoas estão fazendo agora e o que NÃO estão fazendo."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "usually",
@@ -300,7 +418,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "Presente simples x presente contínuo",
           "explicacao": "PASSO 1: o PRESENTE SIMPLES é para rotina e fatos: «I work every day.», «She plays football on Saturdays.» PASSO 2: o PRESENTE CONTÍNUO é para o que acontece agora ou nesta fase: «I'm working now.», «She's playing football today.» PASSO 3: pistas do simples: always, usually, every day, on Mondays. PASSO 4: pistas do contínuo: now, right now, at the moment, today, this week. PASSO 5: verbos de estado normalmente NÃO usam o contínuo: «I know», «I like», «I want», «I have» (posse). Diga «I know her», não «I am knowing her»; «I like it», não «I am liking it».",
           "comparacao": "em português o presente («eu trabalho») cobre rotina e agora, e «estou trabalhando» cobre o momento. Em inglês, as duas formas são mais separadas: rotina = simples, agora = contínuo.",
@@ -351,34 +469,324 @@
           "tag": "Simples x contínuo"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "A phone call / Um telefonema",
-          "ru": "Hello Tom, it's Ana. What are you doing? I'm not working today. I'm at home. I'm cooking dinner and my brother is watching TV. It's raining now, so we aren't going out. I usually go out on Fridays, but today is different. Are you free? Come and eat with us!",
-          "pt": "Olá Tom, é a Ana. O que você está fazendo? Hoje não estou trabalhando. Estou em casa. Estou fazendo o jantar e meu irmão está assistindo TV. Está chovendo agora, então não vamos sair. Geralmente saio às sextas, mas hoje é diferente. Você está livre? Venha comer com a gente!",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "What is Ana doing?",
-              "resposta": "She is cooking dinner."
+              "ru": "Can you talk right now, or are you working?",
+              "translit": "",
+              "pt": "Você pode falar agora ou está trabalhando?",
+              "en": "",
+              "audio": "Can you talk right now, or are you working?"
             },
             {
-              "pergunta": "What is her brother doing?",
-              "resposta": "He is watching TV."
+              "ru": "I'm sitting in the lobby and waiting for my taxi.",
+              "translit": "",
+              "pt": "Estou sentado no saguão e esperando meu táxi.",
+              "en": "",
+              "audio": "I'm sitting in the lobby and waiting for my taxi."
             },
             {
-              "pergunta": "Why aren't they going out?",
-              "resposta": "Because it is raining."
+              "ru": "What are you guys doing this week?",
+              "translit": "",
+              "pt": "O que vocês estão fazendo nesta semana?",
+              "en": "",
+              "audio": "What are you guys doing this week?"
             },
             {
-              "pergunta": "What does Ana usually do on Fridays?",
-              "resposta": "She usually goes out."
+              "ru": "I usually work from home, but today I'm working at the office.",
+              "translit": "",
+              "pt": "Normalmente trabalho de casa, mas hoje estou trabalhando no escritório.",
+              "en": "",
+              "audio": "I usually work from home, but today I'm working at the office."
+            },
+            {
+              "ru": "She's having lunch with a client at the moment.",
+              "translit": "",
+              "pt": "Ela está almoçando com um cliente neste momento.",
+              "en": "",
+              "audio": "She's having lunch with a client at the moment."
+            },
+            {
+              "ru": "I'm sorry, I don't understand what you mean.",
+              "translit": "",
+              "pt": "Desculpe, não estou entendendo o que você quer dizer.",
+              "en": "",
+              "audio": "I'm sorry, I don't understand what you mean."
+            },
+            {
+              "ru": "Do you need any help with those boxes right now?",
+              "translit": "",
+              "pt": "Você está precisando de alguma ajuda com essas caixas agora?",
+              "en": "",
+              "audio": "Do you need any help with those boxes right now?"
+            },
+            {
+              "ru": "Who is that guy standing by the window wearing a black suit?",
+              "translit": "",
+              "pt": "Quem é aquele cara em pé perto da janela usando um terno preto?",
+              "en": "",
+              "audio": "Who is that guy standing by the window wearing a black suit?"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Look! It ___ outside right now!",
+              "opcoes": [
+                "rains",
+                "is raining"
+              ],
+              "gabarito": "is raining",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I can't answer the phone right now because I ___ a shower.",
+              "opcoes": [
+                "have",
+                "'m having"
+              ],
+              "gabarito": "'m having",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sorry, I ___ the Wi-Fi password, and I don't remember the receptionist's name.",
+              "opcoes": [
+                "don't know",
+                "'m not knowing"
+              ],
+              "gabarito": "don't know",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sorry, I don't know the Wi-Fi password, and I ___ the receptionist's name.",
+              "opcoes": [
+                "don't remember",
+                "'m not remembering"
+              ],
+              "gabarito": "don't remember",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Marina usually ___ the subway, but today she is taking a taxi.",
+              "opcoes": [
+                "takes",
+                "is taking"
+              ],
+              "gabarito": "takes",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Marina usually takes the subway, but today she ___ a taxi.",
+              "opcoes": [
+                "takes",
+                "is taking"
+              ],
+              "gabarito": "is taking",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-104b"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "— What ___ your brother ___? — He's an architect, but right now he ___ for a new job. (does… do / is… doing) (looks / is looking)",
+              "respostaEsperada": "does… do, is looking",
+              "id": "en-016-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Be quiet, please! The baby ___.",
+              "opcoes": [
+                "sleeps",
+                "is sleeping"
+              ],
+              "gabarito": "is sleeping",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ a coffee right now! Do you want one too?",
+              "opcoes": [
+                "want",
+                "'m wanting"
+              ],
+              "gabarito": "want",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I want a coffee right now! Do you ___ one too?",
+              "opcoes": [
+                "want",
+                "wanting"
+              ],
+              "gabarito": "want",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Look at Sarah! She ___ a beautiful green jacket today.",
+              "opcoes": [
+                "wears",
+                "is wearing"
+              ],
+              "gabarito": "is wearing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Where is Lucas? — He ___ (sit) in the café across the street and having breakfast.",
+              "respostaEsperada": "is sitting",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Where is Lucas? — He is sitting in the café across the street and ___ (have) breakfast.",
+              "respostaEsperada": "having",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We ___ (not / work) on Saturdays, so right now we are relaxing at the beach.",
+              "respostaEsperada": "don't work",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We don't work on Saturdays, so right now we ___ (relax) at the beach.",
+              "respostaEsperada": "are relaxing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I ___ (need) to talk to Emma right now. Do you know where she is?",
+              "respostaEsperada": "need",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I need to talk to Emma right now. ___ you know where she is?",
+              "respostaEsperada": "Do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I need to talk to Emma right now. Do you ___ (know) where she is?",
+              "respostaEsperada": "know",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-203c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— What ___ you writing? — I 'm writing an email to our supplier in China.",
+              "respostaEsperada": "are",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— What are you ___ (write)? — I 'm writing an email to our supplier in China.",
+              "respostaEsperada": "writing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— What are you writing? — I ___ (write) an email to our supplier in China.",
+              "respostaEsperada": "'m writing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My sister ___ (live) in Rio, but this month she is staying with us in São Paulo.",
+              "respostaEsperada": "lives",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My sister lives in Rio, but this month she ___ (stay) with us in São Paulo.",
+              "respostaEsperada": "is staying",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Listen! Somebody ___ (knock) on the door.",
+              "respostaEsperada": "is knocking",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He ___ (have) a new laptop, and right now he is using it for the presentation.",
+              "respostaEsperada": "has",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "He has a new laptop, and right now he ___ (use) it for the presentation.",
+              "respostaEsperada": "is using",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-207b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Why ___ they running? Because the train is leaving right now!",
+              "respostaEsperada": "are",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Why are they ___ (run)? Because the train is leaving right now!",
+              "respostaEsperada": "running",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Why are they running? Because the train ___ (leave) right now!",
+              "respostaEsperada": "is leaving",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-208c"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva 5 frases: 3 do que você está fazendo agora e 2 da sua rotina, sem misturar os tempos."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o que 3 pessoas estão fazendo agora e o que NÃO estão fazendo."
         }
       ]
     },
@@ -388,13 +796,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Diga o que você faz todo dia e o que você está fazendo agora."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -570,12 +973,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Descreva em 1 minuto o que acontece ao seu redor agora, pessoa por pessoa."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva três coisas que estão acontecendo ao seu redor neste exato momento (incluindo a sua posição com I'm sitting / standing e o que você está vestindo com I'm wearing).",
+              "respostaEsperada": "Right now, I'm sitting at my desk, I'm wearing a blue t-shirt and jeans, and I'm studying English.",
+              "id": "en-016-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases de contraste usando a estrutura: I usually [Present Simple], but today / this week I'm [Present Continuous].",
+              "respostaEsperada": "I usually drink coffee in the morning, but today I'm drinking tea. I usually work at the office, but this week I'm working from home.",
+              "id": "en-016-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase dizendo o que você está precisando (I need…) e querendo (I want…) agora mesmo, sem cair na armadilha do -ing.",
+              "respostaEsperada": "Right now, I need some help with this report, and I want a cup of water.",
+              "id": "en-016-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Explique a diferença entre as perguntas What do you do? e What are you doing? dando um exemplo de resposta para cada uma.",
+              "respostaEsperada": "What do you do? pergunta a profissão (I'm an engineer); What are you doing? pergunta a ação do momento (I'm reading a book).",
+              "id": "en-016-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I working from home today because it raining a lot outside.",
+              "respostaEsperada": "I'm working from home today because it's raining a lot outside.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Are you understanding this contract? I'm needing your help right now!",
+              "respostaEsperada": "Do you understand this contract? I need your help right now!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She is having two brothers, and she is wanting a new car.",
+              "respostaEsperada": "She has two brothers, and she wants a new car.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Look! They are makeing dinner and siting at the kitchen table.",
+              "respostaEsperada": "Look! They are making dinner and sitting at the kitchen table.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I usually am waking up at seven, but today I wake up at nine.",
+              "respostaEsperada": "I usually wake up at seven, but today I'm waking up at nine.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: What you are doing right now?",
+              "respostaEsperada": "What are you doing right now?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-016-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He usually drinks black coffee, but today he's having green tea.",
+              "respostaEsperada": "OK",
+              "id": "en-016-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais entrega o falante brasileiro em reuniões em inglês é dizer I'm needing, I'm wanting ou Are you understanding?, traduzindo o nosso gerúndio afetivo (“Estou precisando, estou querendo, está entendendo?”). Grave na memória: need, want, understand, know, like, prefer não recebem -ing no uso do dia a dia! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "I working now. / She studying.",
+              "certo": "I'm working now. / She's studying.",
+              "motivo": "O -ing exige obrigatoriamente o verbo to be (am, is, are) antes dele."
+            },
+            {
+              "errado": "I'm needing some help right now.",
+              "certo": "I need some help right now.",
+              "motivo": "Need e want são verbos de estado e usam sempre o Present Simple."
+            },
+            {
+              "errado": "Are you understanding me?",
+              "certo": "Do you understand me? / Are you following me?",
+              "motivo": "Understand e know não aceitam -ing."
+            },
+            {
+              "errado": "She is having a new car.",
+              "certo": "She has a new car.",
+              "motivo": "Have no sentido de possuir é estado; só aceita -ing em atividades (having lunch)."
+            },
+            {
+              "errado": "makeing / siting / studing",
+              "certo": "making / sitting / studying",
+              "motivo": "Corta o -e (making), dobra em CVC (sitting) e mantém o -y antes de -ing (studying!)."
+            },
+            {
+              "errado": "What you are doing?",
+              "certo": "What are you doing?",
+              "motivo": "Na pergunta, am / is / are vêm antes do sujeito."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 7. Complete: Can you give me ____ (alguns conselhos)? I don't have ____ (muito tempo), and I only have ____ (algumas perguntas). 2. Do Capítulo 6. Diga em inglês: “Nosso voo sai na quarta-feira, 14 de outubro, às quinze para as oito da manhã.” 3. Do Capítulo 5 e 8. Por que em study → studies o y vira -ies, mas em study → studying o y permanece intacto? (Dica: pense em como ficaria a palavra studiing.)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Dizer o que estou fazendo agora e o que é temporário nesta semana sem esquecer am / is / are antes do -ing. · Alternar na mesma frase entre minha rotina (I usually…) e o que estou fazendo hoje (but today I'm…-ing). · Expressar necessidades, desejos e compreensão no momento presente com I need, I want, I understand, I know (sem -ing)."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você diz o que está fazendo agora. Próxima aula: tempo e clima."
+  "notasParaOAluno": "Você diz o que está fazendo agora. Próxima aula: tempo e clima.",
+  "geradaDoLivro": true
 }

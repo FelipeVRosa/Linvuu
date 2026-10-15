@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você relata o que um cliente, chefe ou amigo disse usando o discurso indireto (Reported Speech) com o recuo de tempo verbal (am/is → was, will → would, can → could, have/did → had), distingue say de tell e relata perguntas e pedidos (asked me if… / told me to…)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Passando o resumo da reunião com o cliente",
+          "contexto": "Marina não pôde participar da chamada de manhã com o cliente suíço Oliver, então o colega Kevin conta para ela tudo o que foi dito.",
+          "linhas": [
+            {
+              "personagem": "Marina",
+              "ru": "— Kevin, how did the call with Oliver go this morning? What did he say about our new design?",
+              "pt": "— Kevin, como foi a chamada com o Oliver hoje de manhã? O que ele disse sobre o nosso novo design?",
+              "audio": "Kevin, how did the call with Oliver go this morning? What did he say about our new design?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— It went really well, Marina! He said that he loved the new layout, and he told me that his team was testing the prototype right now.",
+              "pt": "— Foi muito bem, Marina! Ele disse que adorou o novo layout, e me contou que a equipe dele estava testando o protótipo agora.",
+              "audio": "It went really well, Marina! He said that he loved the new layout, and he told me that his team was testing the prototype right now."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— That's great news! Did he say when they would launch the product in Europe?",
+              "pt": "— Que ótima notícia! Ele disse quando eles lançariam o produto na Europa?",
+              "audio": "That's great news! Did he say when they would launch the product in Europe?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— He said they would probably launch it in March, because they needed a few more weeks to translate the manual.",
+              "pt": "— Ele disse que provavelmente o lançariam em março, porque precisavam de mais algumas semanas para traduzir o manual.",
+              "audio": "He said they would probably launch it in March, because they needed a few more weeks to translate the manual."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Did he ask anything about the budget?",
+              "pt": "— Ele perguntou alguma coisa sobre o orçamento?",
+              "audio": "Did he ask anything about the budget?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Yes! He asked me if we could include the training sessions in the package, and he asked what time you would be available for a quick call tomorrow.",
+              "pt": "— Sim! Ele me perguntou se nós poderíamos incluir as sessões de treinamento no pacote, e perguntou a que horas você estaria disponível para uma chamada rápida amanhã.",
+              "audio": "Yes! He asked me if we could include the training sessions in the package, and he asked what time you would be available for a quick call tomorrow."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Perfect. What else did he say before ending the call?",
+              "pt": "— Perfeito. O que mais ele disse antes de encerrar a chamada?",
+              "audio": "Perfect. What else did he say before ending the call?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— He told us to send him the final contract by Friday, and he asked us not to share the prototype screenshots on social media yet!",
+              "pt": "— Ele nos disse para enviarmos o contrato final até sexta-feira, e nos pediu para não compartilharmos as capturas de tela do protótipo nas redes sociais ainda!",
+              "audio": "He told us to send him the final contract by Friday, and he asked us not to share the prototype screenshots on social media yet!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Descreva a sua família com relativas explicativas e comentários com «which»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Say × tell: PASSO 2: say / said foca nas palavras ditas e não leva pessoa logo depois: He said (that) he was tired. (Se quiser colocar a pessoa depois de said, use a preposição to: He said to me that…). PASSO 3: tell / told foca em quem ouviu e pede uma pessoa (me, you, him, her, us, them, Sarah) logo depois, sem to: He told me (that) he was tired (e não He told that… nem He told to me). PASSO 4: Perguntas relatadas seguem a mesma regra das perguntas indiretas (Capítulo 20). Quando você relata uma pergunta (He asked me…), ela deixa de ser uma pergunta direta: o ponto de interrogação some, o auxiliar do / does / did some e a ordem volta a ser Sujeito + Verbo (He asked where I lived / She asked if I was ready).",
+          "comparacao": "Em português, misturamos “dizer” e “contar” com a preposição “para” (“Ele disse para mim / Ele me contou que…”) e, quando relatamos uma pergunta ou um pedido, usamos “que” + subjuntivo (“Ele pediu que eu enviasse”). Veja as quatro armadilhas que você precisa desarmar em inglês:",
+          "tabela": [
+            {
+              "portugues": "Ela disse para mim que estava ocupada.",
+              "ingles": "She told me (ou said to me) she was busy.",
+              "evite": "She said me / She told to me…"
+            },
+            {
+              "portugues": "Ele disse que estava ocupado.",
+              "ingles": "He said (that) he was busy.",
+              "evite": "He told that he was busy. (Told exige uma pessoa!)"
+            },
+            {
+              "portugues": "Ela perguntou onde estava o Lucas.",
+              "ingles": "She asked where Lucas was.",
+              "evite": "She asked where was Lucas."
+            },
+            {
+              "portugues": "O chefe pediu que eu chegasse cedo.",
+              "ingles": "The boss asked me to arrive early.",
+              "evite": "asked that I arrive early"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "say",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Discurso indireto: recuar um tempo",
           "explicacao": "PASSO 1: no discurso DIRETO você repete as palavras: «I am tired,» she said. No INDIRETO, você conta com suas palavras: «She said (that) she was tired.» PASSO 2: o verbo recua um passo no tempo: presente → passado («am → was»), passado → past perfect («went → had gone»), will → would, can → could. PASSO 3: ajuste os pronomes: «I» muda para «she/he» conforme quem falou. PASSO 4: ajuste os marcadores: «today → that day», «tomorrow → the next day», «yesterday → the day before», «here → there», «now → then». PASSO 5: «say» não leva pessoa direta: «She said that…», «She said to me that…». PASSO 6: «tell» leva a pessoa: «She told me that…» PASSO 7: se o fato continua verdadeiro, o recuo é opcional: «She said she is tired» (e ainda está).",
           "comparacao": "em português também recuamos: «ele disse que estava cansado» (de «estou»). Em inglês, o mesmo ajuste é regra: «He said he was tired». A diferença mais importante é «say» (sem pessoa) × «tell» (com pessoa).",
@@ -131,8 +217,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Conte em voz alta o que 5 pessoas disseram a você hoje, com «said» e «told me»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Descreva a sua família com relativas explicativas e comentários com «which»."
         }
       ]
     },
@@ -142,13 +233,42 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Passe para o indireto: «I am happy», «I will go», «I saw him»."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare o que a pessoa falou ao vivo (Discurso Direto) com como contamos isso depois (Discurso Indireto / Reported Speech): PASSO 2: Perguntas: PASSO 3: Por que a palavra that (“que”) aparece entre parênteses em She said (that) she worked in Boston? PASSO 4: Olhe para as duas últimas linhas: o que são would e could quando relatamos uma frase no passado?",
+          "tabela": [
+            {
+              "c1": "“I work in Boston.” (Present Simple)",
+              "c2": "She said (that) she worked in Boston.",
+              "c3": "Presente → Passado (work → worked)"
+            },
+            {
+              "c1": "“I'm waiting for Lucas.” (Present Continuous)",
+              "c2": "She told me (that) she was waiting for Lucas.",
+              "c3": "am/is/are → was/were"
+            },
+            {
+              "c1": "“I'll call you tomorrow.” (will)",
+              "c2": "She said (that) she would call me the next day.",
+              "c3": "will → would"
+            },
+            {
+              "c1": "“I can help you.” (can)",
+              "c2": "She told me (that) she could help me.",
+              "c3": "can → could"
+            },
+            {
+              "c1": "“I sent the file” / “I've sent the file.”",
+              "c2": "She said (that) she had sent the file.",
+              "c3": "Passado / Present Perfect → had + 3ª"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "that day",
@@ -196,7 +316,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Ajustar tempo, lugar e pronomes",
           "explicacao": "PASSO 1: marcadores: today → that day; tomorrow → the next day / the following day; yesterday → the day before; now → then; here → there; this → that; next week → the following week; last year → the year before; ago → before. PASSO 2: exemplo completo: «I'll see you here tomorrow,» he said. → He said he would see me there the next day. PASSO 3: «I → he/she», «my → his/her», «you → me/him/her» conforme quem conta. PASSO 4: o contexto manda: se você está no mesmo lugar e dia quando conta, pode manter «here» e «today»: «She said she would call me today.» (hoje ainda). PASSO 5: verbos modais: must → had to, may → might, should e would e could e might não mudam.",
           "comparacao": "em português também mudamos «amanhã» para «no dia seguinte» e «aqui» para «lá», mas muitas vezes sem pensar. Em inglês, faça isso conscientemente, sobretudo na escrita.",
@@ -242,9 +362,21 @@
           "tag": "Ajustes"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Say vs. Tell: PASSO 2: say / said + (that) + frase: sem pessoa (She said she was ready). PASSO 3: tell / told + PESSOA + (that) + frase: com pessoa obrigatória e sem to (She told me she was ready). PASSO 4: O passo para trás (backshift) depois de said / told / asked: PASSO 5: am / is → was | are → were PASSO 6: Present Simple (work / has) → Past Simple (worked / had) PASSO 7: Present Continuous (is working) → Past Continuous (was working) PASSO 8: Past Simple (went) / Present Perfect (has gone) → Past Perfect (had gone) PASSO 9: will → would | can → could | have to / must → had to(Nota: se o fato relatado continua sendo uma verdade permanente hoje, você também pode manter no presente: He said he lives in Brazil ou lived — ambos estão certos!). PASSO 10: Relatando Perguntas (asked): Ordem Sujeito + Verbo (sem do/does/did!): PASSO 11: Com Wh-:He asked me where I worked / what time the meeting started. PASSO 12: De Sim/Não (usa if ou whether):She asked if I liked the design / if we had received the file. PASSO 13: Relatando pedidos e ordens (told / asked / reminded + pessoa + (not) to + verbo): PASSO 14: “Wait here!” → He told me to wait there. PASSO 15: “Please don't be late!” → She asked us not to be late. PASSO 16: “Don't forget your passport!” → She reminded me not to forget my passport.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Passe para o indireto 6 frases que alguém disse: «I'm tired today.», «I'll call you tomorrow.», «I went there yesterday.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Passe para o indireto: «I am happy», «I will go», «I saw him»."
         }
       ]
     },
@@ -254,13 +386,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Passe para o indireto: «We will arrive tomorrow», «I can't come now»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "message",
@@ -301,7 +428,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Verbos de relato",
           "explicacao": "PASSO 1: além de say/tell, há verbos que já indicam a intenção: «She promised to call.», «He admitted that he was wrong.», «They refused to help.», «She agreed to come.» PASSO 2: «promise/agree/refuse + to + verbo»: «He refused to pay.» PASSO 3: «admit/explain/announce + that»: «She explained that the office was closed.» PASSO 4: use-os para soar natural e variado, em vez de repetir «said» o tempo todo.",
           "comparacao": "em português «prometeu que ligaria» e «prometeu ligar» são ambos possíveis. Em inglês, «promised to call» é a forma mais curta e natural.",
@@ -343,7 +470,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Passing a message / Passando um recado",
           "contexto": "Sarah conta a Ben o que Maria disse ao telefone.",
           "linhas": [
@@ -392,9 +519,299 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "She told me she was in a meeting and would call me back later.",
+              "translit": "",
+              "pt": "Ela me disse que estava em reunião e que me ligaria de volta mais tarde.",
+              "en": "",
+              "audio": "She told me she was in a meeting and would call me back later."
+            },
+            {
+              "ru": "He said he had already sent the invoice to the finance team.",
+              "translit": "",
+              "pt": "Ele disse que já tinha enviado a fatura para a equipe financeira.",
+              "en": "",
+              "audio": "He said he had already sent the invoice to the finance team."
+            },
+            {
+              "ru": "They told us they couldn't come to the dinner on Friday.",
+              "translit": "",
+              "pt": "Eles nos disseram que não poderiam vir ao jantar na sexta-feira.",
+              "en": "",
+              "audio": "They told us they couldn't come to the dinner on Friday."
+            },
+            {
+              "ru": "The receptionist asked me if I had a reservation.",
+              "translit": "",
+              "pt": "A recepcionista me perguntou se eu tinha reserva.",
+              "en": "",
+              "audio": "The receptionist asked me if I had a reservation."
+            },
+            {
+              "ru": "Lucas asked where we were going to have lunch.",
+              "translit": "",
+              "pt": "O Lucas perguntou onde nós íamos almoçar.",
+              "en": "",
+              "audio": "Lucas asked where we were going to have lunch."
+            },
+            {
+              "ru": "My doctor told me to drink more water and get some rest.",
+              "translit": "",
+              "pt": "Meu médico me disse para beber mais água e descansar um pouco.",
+              "en": "",
+              "audio": "My doctor told me to drink more water and get some rest."
+            },
+            {
+              "ru": "She asked us not to make any noise during the recording.",
+              "translit": "",
+              "pt": "Ela nos pediu para não fazermos barulho durante a gravação.",
+              "en": "",
+              "audio": "She asked us not to make any noise during the recording."
+            },
+            {
+              "ru": "To tell you the truth, I didn't expect that result!",
+              "translit": "",
+              "pt": "Para te dizer a verdade, eu não esperava esse resultado!",
+              "en": "",
+              "audio": "To tell you the truth, I didn't expect that result!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sarah ___ me that she was working from home today.",
+              "opcoes": [
+                "said",
+                "told"
+              ],
+              "gabarito": "told",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sarah told me that she ___ working from home today.",
+              "opcoes": [
+                "is",
+                "was"
+              ],
+              "gabarito": "was",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lucas ___ that he would send the presentation before noon.",
+              "opcoes": [
+                "said",
+                "told"
+              ],
+              "gabarito": "said",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lucas said that he ___ send the presentation before noon.",
+              "opcoes": [
+                "will",
+                "would"
+              ],
+              "gabarito": "would",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The client asked me ___ we could deliver the project earlier.",
+              "opcoes": [
+                "if",
+                "that"
+              ],
+              "gabarito": "if",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The client asked me if we ___ deliver the project earlier.",
+              "opcoes": [
+                "can",
+                "could"
+              ],
+              "gabarito": "could",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "She asked me where ___.",
+              "opcoes": [
+                "did I live",
+                "I lived"
+              ],
+              "gabarito": "I lived",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Emma told us ___ for her in the lobby.",
+              "opcoes": [
+                "to wait",
+                "that wait"
+              ],
+              "gabarito": "to wait",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "He asked me ___ anyone about the new contract yet.",
+              "opcoes": [
+                "not to tell",
+                "to don't tell"
+              ],
+              "gabarito": "not to tell",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Can you ___ the difference between these two photos?",
+              "opcoes": [
+                "say",
+                "tell"
+              ],
+              "gabarito": "tell",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Yesterday morning, David said he ___ the report the day before.",
+              "opcoes": [
+                "finished",
+                "had finished"
+              ],
+              "gabarito": "had finished",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I'm very busy right now.” → Marina ___ that she was very busy.",
+              "respostaEsperada": "said",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I'm very busy right now.” → Marina said that she ___ very busy.",
+              "respostaEsperada": "was",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“We'll help you with the boxes.” → They ___ me that they would help me with the boxes.",
+              "respostaEsperada": "told",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“We'll help you with the boxes.” → They told me that they ___ help me with the boxes.",
+              "respostaEsperada": "would",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I can't open this file.” → Kevin ___ us that he couldn't open the file.",
+              "respostaEsperada": "told",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I can't open this file.” → Kevin told us that he ___ open the file.",
+              "respostaEsperada": "couldn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I've already booked the flight.” → Lucas ___ that he had already booked the flight.",
+              "respostaEsperada": "said",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I've already booked the flight.” → Lucas said that he ___ already booked the flight.",
+              "respostaEsperada": "had",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“I've already booked the flight.” → Lucas said that he had already ___ the flight.",
+              "respostaEsperada": "booked",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“Where is the main auditorium?” → Oliver asked Marina where the main auditorium ___.",
+              "respostaEsperada": "was",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“Do you speak German?” → The interviewer asked me ___ I spoke German. (use if)",
+              "respostaEsperada": "if",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "“Do you speak German?” → The interviewer asked me if I ___ German. (use if)",
+              "respostaEsperada": "spoke",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-206b"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "“Please sign this document.” → The lawyer asked me ___ ___ the document.",
+              "respostaEsperada": "to sign",
+              "id": "en-047-L-207"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "“Don't forget your passport!” → My wife reminded me ___ ___ ___ my passport.",
+              "respostaEsperada": "not to forget",
+              "id": "en-047-L-208"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Conte a um colega o recado que alguém deixou, com 5 frases no indireto."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Passe para o indireto: «We will arrive tomorrow», «I can't come now»."
         }
       ]
     },
@@ -404,13 +821,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Conte em voz alta o que as últimas 3 pessoas que falaram com você disseram."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -590,12 +1002,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Conte em 1 minuto uma conversa recente que você teve, usando o discurso indireto."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Conte duas coisas que um colega ou familiar disse a você ontem: uma usando He/She said (that)… e outra usando He/She told me (that)… (aplicando o passo para trás no verbo!).",
+              "respostaEsperada": "Yesterday my boss said that the meeting was canceled, and my wife told me that she would arrive home at seven.",
+              "id": "en-047-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Relate uma pergunta com Wh- e uma pergunta de Sim/Não (com if) que alguém fez para você recentemente (asked me where/what… / asked me if…).",
+              "respostaEsperada": "A colleague asked me where I had bought my backpack, and he asked me if I could send him the link.",
+              "id": "en-047-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Relate um pedido afirmativo e um pedido negativo que alguém fez a você usando asked / told me to… e asked / told me not to….",
+              "respostaEsperada": "My doctor told me to exercise three times a week, and he asked me not to drink coffee after 6 p.m.",
+              "id": "en-047-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase usando tell the truth e outra usando say goodbye.",
+              "respostaEsperada": "Always tell the truth, and don't forget to say goodbye before leaving!",
+              "id": "en-047-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She said me that she will travel to London next week.",
+              "respostaEsperada": "She told me",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: He told that he was very tired after the flight.",
+              "respostaEsperada": "He said",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My boss told to me to send the spreadsheet today.",
+              "respostaEsperada": "My boss told me to send the spreadsheet today.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The security guard asked me what was my name.",
+              "respostaEsperada": "The security guard asked me what my name was.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She asked me that I help her with the presentation.",
+              "respostaEsperada": "She asked me to help her with the presentation.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The teacher told us to don't use our phones during the test.",
+              "respostaEsperada": "The teacher told us not to use our phones during the test.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-047-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He told me he had already spoken to the director about the budget.",
+              "respostaEsperada": "OK",
+              "id": "en-047-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os três erros mais comuns neste capítulo são: trocar say e tell ou colocar to depois de tell (She said me / He told that / He told to me), esquecer de recuar o verbo para o passado quando a frase começa com said / told (He said he will go em vez de He said he would go) e manter a ordem de pergunta direta depois de asked (He asked where was the bank em vez de He asked where the bank was). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "She said me that… / He told to me…",
+              "certo": "She told me that… / He said (that)…",
+              "motivo": "Tell exige pessoa direta sem to (told me); say não leva pessoa direta (said that)."
+            },
+            {
+              "errado": "He told that he was late.",
+              "certo": "He said (that) he was late. / He told us…",
+              "motivo": "Told pede uma pessoa antes de that: é preciso dizer a quem foi dito."
+            },
+            {
+              "errado": "She said she will call me.",
+              "certo": "She said she would call me.",
+              "motivo": "Após said / told no passado, will recua para would e can recua para could."
+            },
+            {
+              "errado": "He asked me where did I work.",
+              "certo": "He asked me where I worked.",
+              "motivo": "Perguntas relatadas têm ordem afirmativa (Sujeito + Verbo no passado, sem did)."
+            },
+            {
+              "errado": "She asked me that I wait.",
+              "certo": "She asked me to wait.",
+              "motivo": "Pedidos relatados usam asked/told + pessoa + to + verbo, e não that."
+            },
+            {
+              "errado": "He told me to don't worry.",
+              "certo": "He told me not to worry.",
+              "motivo": "Na negativa com infinitivo, a ordem padrão é not to + verbo."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 23 e 24. Una discurso indireto com voz passiva: “A Emma me disse que o contrato tinha sido assinado” (Emma told me that the contract had been signed). Agora faça o mesmo para: “O cliente disse que o pagamento seria enviado amanhã.” 2. Do Capítulo 22. Complete: If you had told me the truth yesterday, I ____ (not / be) angry! 3. Do Capítulo 20 e 24. Compare: Could you tell me where she is? (Cap. 20, presente) e He asked me where she was. (Cap. 24, passado). Qual regra de ordem de palavras as duas frases têm em comum?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Usar said (sem pessoa) e told me / told us (com pessoa e sem to) sem confundir os dois. · Relatar o que alguém disse recuando os verbos (was, would, could, had done). · Relatar perguntas com asked me if / where… na ordem afirmativa e pedidos com told / asked me (not) to…."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conta o que outras pessoas disseram. Próxima aula: perguntas e ordens no discurso indireto."
+  "notasParaOAluno": "Você conta o que outras pessoas disseram. Próxima aula: perguntas e ordens no discurso indireto.",
+  "geradaDoLivro": true
 }

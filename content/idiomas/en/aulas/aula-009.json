@@ -15,13 +15,105 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você expressa habilidades, permissões e pedidos educados com can e could (inclusive habilidade no passado: I could swim at five), dá conselhos com should, diferencia proibição (mustn't / can't) de ausência de obrigação (don't have to), e usa o imperativo e Let's para instruções e convites."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Regras de segurança e almoço na fábrica",
+          "contexto": "Lucas visita a fábrica de um cliente em Chicago com a engenheira norte-americana Rachel.",
+          "linhas": [
+            {
+              "personagem": "Rachel",
+              "ru": "— Welcome to our Chicago plant, Lucas! Before we go inside, could you put on this yellow helmet and these safety glasses, please?",
+              "pt": "— Bem-vindo à nossa fábrica de Chicago, Lucas! Antes de entrarmos, você poderia colocar este capacete amarelo e estes óculos de proteção, por favor?",
+              "audio": "Welcome to our Chicago plant, Lucas! Before we go inside, could you put on this yellow helmet and these safety glasses, please?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Sure, no problem! Can I take photos inside the factory?",
+              "pt": "— Claro, sem problema! Posso tirar fotos dentro da fábrica?",
+              "audio": "Sure, no problem! Can I take photos inside the factory?"
+            },
+            {
+              "personagem": "Rachel",
+              "ru": "— Sorry, you can't take photos in the production area — it's a strict company rule. You must keep your phone in your pocket there.",
+              "pt": "— Desculpe, você não pode tirar fotos na área de produção — é uma regra rígida da empresa. Você deve manter seu celular no bolso lá.",
+              "audio": "Sorry, you can't take photos in the production area — it's a strict company rule. You must keep your phone in your pocket there."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Got it. And do I have to wear ear protection too?",
+              "pt": "— Entendi. E eu tenho que usar proteção auricular também?",
+              "audio": "Got it. And do I have to wear ear protection too?"
+            },
+            {
+              "personagem": "Rachel",
+              "ru": "— No, you don't have to wear it in this section because the machines aren't running right now.",
+              "pt": "— Não, você não precisa usar nesta seção porque as máquinas não estão funcionando agora.",
+              "audio": "No, you don't have to wear it in this section because the machines aren't running right now."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— By the way, Rachel, I have a free afternoon tomorrow. What should I see in Chicago?",
+              "pt": "— Aliás, Rachel, tenho a tarde livre amanhã. O que eu deveria conhecer em Chicago?",
+              "audio": "By the way, Rachel, I have a free afternoon tomorrow. What should I see in Chicago?"
+            },
+            {
+              "personagem": "Rachel",
+              "ru": "— You should definitely take the architecture boat tour on the river! It's amazing. You shouldn't miss it.",
+              "pt": "— Você definitivamente deveria fazer o passeio de barco de arquitetura pelo rio! É incrível. Você não deveria perder.",
+              "audio": "You should definitely take the architecture boat tour on the river! It's amazing. You shouldn't miss it."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— That sounds great! Do I have to book the ticket in advance?",
+              "pt": "— Parece ótimo! Eu tenho que reservar o ingresso com antecedência?",
+              "audio": "That sounds great! Do I have to book the ticket in advance?"
+            },
+            {
+              "personagem": "Rachel",
+              "ru": "— Yes, you should buy it online tonight. Now, let's grab some lunch at the cafeteria! Please watch your step on the stairs.",
+              "pt": "— Sim, você deveria comprar online hoje à noite. Agora, vamos almoçar no refeitório! Por favor, cuidado com o degrau na escada.",
+              "audio": "Yes, you should buy it online tonight. Now, let's grab some lunch at the cafeteria! Please watch your step on the stairs."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Faça um pedido num café em voz alta, com «I'd like», «some» e «any»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: As 3 Leis de Ferro dos Verbos Modais (can, could, must, should, would): PASSO 2: Lei 1 — Sem -s nunca:He can swim, She should go, It must be here (e não cans, shoulds, musts). PASSO 3: Lei 2 — Sem to depois deles: O verbo seguinte vem sempre “nu”, sem to (I can help, You should rest, We must leave — e não can to help, must to leave). PASSO 4: Lei 3 — Sem do / does / don't: Eles mesmos fazem a negativa (can't, couldn't, mustn't, shouldn't) e pulam para a frente na pergunta (Can you…? / Should I…?). PASSO 5: Habilidade prática (“saber fazer”) é can, nunca know. Em inglês, nunca diga I know swim ou I know speak English. Para habilidades aprendidas (nadar, dirigir, cozinhar, tocar instrumento, falar idiomas), use sempre can: I can swim, She can speak three languages (ou know how to: I know how to drive). PASSO 6: O abismo entre mustn't (Proibido!) e don't have to (Não precisa!). Na afirmativa, must e have to são parecidos (“ter que / dever”). Mas na negativa eles se separam completamente: PASSO 7: You mustn't [do] (ou You can't [do]) = É proibido! Não faça! (You mustn't smoke on the plane). PASSO 8: You don't have to [do] = Não é necessário / É opcional (Today is Sunday, so I don't have to wake up early).",
+          "comparacao": "Em português, dizemos “Eu sei nadar”, “Ele pode ir”, “Eu devo estudar” e “Você não precisa pagar”. Ao passar para o inglês, surgem quatro armadilhas perigosas:",
+          "tabela": [
+            {
+              "portugues": "Eu sei dirigir / nadar / cozinhar.",
+              "ingles": "I can drive / swim / cook.",
+              "evite": "I know drive / I know to swim."
+            },
+            {
+              "portugues": "Ela pode ajudar? — Sim, ela pode.",
+              "ingles": "Can she help? — Yes, she can.",
+              "evite": "Does she can help? / She cans help."
+            },
+            {
+              "portugues": "Eu devo ir agora.",
+              "ingles": "I must go / I have to go now.",
+              "evite": "I must to go now."
+            },
+            {
+              "portugues": "A entrada é grátis; você não precisa pagar.",
+              "ingles": "It's free; you don't have to pay.",
+              "evite": "You mustn't pay. (Isso significa “É proibido pagar”!)"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "swim",
@@ -83,7 +175,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Can e can't",
           "explicacao": "PASSO 1: «can» expressa habilidade: «I can swim.» (sei nadar / consigo nadar). PASSO 2: «can» é igual para TODAS as pessoas, sem «-s»: «He can swim», nunca «He cans». PASSO 3: depois de «can», o verbo fica na forma simples, sem «to»: «She can cook», nunca «She can to cook». PASSO 4: negativa: «can't» (cannot): «I can't drive.» PASSO 5: pergunta: inverta, sem «do»: «Can you swim?» Resposta curta: «Yes, I can.» / «No, I can't.» PASSO 6: na fala, «can» é fraco («kn»), e «can't» é forte e longo («cént»). Ouça a diferença nos exemplos.",
           "comparacao": "em português usamos «saber» (sei nadar) ou «conseguir» (consigo abrir). O inglês usa um só verbo, «can», para os dois.",
@@ -130,8 +222,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 4 coisas que você sabe fazer e 2 que não sabe: «I can cook. I can't drive.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Faça um pedido num café em voz alta, com «I'd like», «some» e «any»."
         }
       ]
     },
@@ -141,13 +238,37 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Diga 3 frases com «can» e 3 com «can't» sobre pessoas que você conhece."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare o grau de força e a função de cada estrutura abaixo: PASSO 2: Perguntas: PASSO 3: Se um amigo está com dor de cabeça, você usa You must see a doctor ou You should see a doctor para dar um conselho sem parecer autoritário? PASSO 4: Por que na frase Don't forget your passport! não existe a palavra you antes do verbo?",
+          "tabela": [
+            {
+              "c1": "Can you help me? × Could you help me, please?",
+              "c2": "Pedido direto (entre amigos) × Pedido mais polido e educado (Could)."
+            },
+            {
+              "c1": "You should take the boat tour. / You shouldn't work so late.",
+              "c2": "Conselho amigável / recomendação (“Você deveria / não deveria”)."
+            },
+            {
+              "c1": "You must wear a helmet. / I have to be at the airport at six.",
+              "c2": "Obrigação / regra necessária (“Você deve / Eu tenho que”)."
+            },
+            {
+              "c1": "You mustn't take photos here. × You don't have to wear a tie.",
+              "c2": "Proibição (“É proibido tirar fotos”) × Opcional (“Não precisa usar gravata”)."
+            },
+            {
+              "c1": "Watch your step! / Don't forget your passport! / Let's grab lunch!",
+              "c2": "Ordem/instrução direta (Imperativo) / Convite para nós dois (Let's)."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "open",
@@ -195,7 +316,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Can para pedir e para pedir permissão",
           "explicacao": "PASSO 1: «Can you…?» pede algo a OUTRA pessoa: «Can you help me?» PASSO 2: «Can I…?» pede PERMISSÃO para você mesmo: «Can I sit here?» PASSO 3: resposta: «Sure.», «Of course.» (claro), «Sorry, I can't.» PASSO 4: para ser mais educado, «Could you…?» e «Could I…?» (mais formal). PASSO 5: «please» no fim suaviza: «Can you open the window, please?» PASSO 6: não confunda «Can you help me?» (pedido) com «Can you help?» (você consegue ajudar?). O contexto decide.",
           "comparacao": "em português «pode abrir a janela?» e «posso sentar?» usam «poder». O inglês usa «can» (e «could» para soar mais educado).",
@@ -236,9 +357,21 @@
           "tag": "Pedidos"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Habilidade, Permissão e Pedidos (can / could): PASSO 2: can / can't + verbo nu: habilidade (“saber fazer”: I can drive) e permissão (Can I sit here? / You can't park here). PASSO 3: Could you [verbo], please? / Could I…?: a forma mais educada e universal para pedir algo a qualquer pessoa (Could you send me the link, please?). PASSO 4: Conselho e Recomendação (should / shouldn't): PASSO 5: should / shouldn't + verbo nu: “deveria / não deveria” (You should get some rest / What should I do?). Com opinião: I think you should… e na negativa I don't think you should…. PASSO 6: Obrigação, Proibição e Opcional (must vs. have to): PASSO 7: Obrigação:have to / has to (o mais comum no dia a dia: I have to work, She has to leave) e must (regras escritas, leis ou ênfase pessoal: Passengers must show their ID). PASSO 8: Proibição (Não pode!):mustn't ou can't (You mustn't tell anyone / You can't smoke here). PASSO 9: Ausência de obrigação (Não precisa!):don't have to / doesn't have to (You don't have to pay; it's free!). PASSO 10: Imperativo e Let's: PASSO 11: Afirmativo: Verbo puro sem sujeito (Come in! / Turn left / Please sit down). PASSO 12: Negativo:Don't + verbo puro (Don't worry! / Don't be late!). PASSO 13: Sugestão para o grupo (“Vamos…”):Let's + verbo puro (Let's take a break! | Negativa: Let's not + verbo: Let's not wait outside).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Faça 5 pedidos em voz alta, usando «Can you…?», «Can I…?» e «Could you…?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga 3 frases com «can» e 3 com «can't» sobre pessoas que você conhece."
         }
       ]
     },
@@ -248,13 +381,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Complete: «She ___ swim. He ___ drive. ___ you cook?»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "well",
@@ -295,7 +423,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "Como dizer o quanto você sabe",
           "explicacao": "PASSO 1: «well» vem DEPOIS do verbo: «I can swim well.» PASSO 2: «very well» = muito bem. «a little» = um pouco: «I can speak a little English.» PASSO 3: «I can speak Portuguese and English.», sem artigo antes do idioma. PASSO 4: pergunta: «Can you speak Spanish?» → «Yes, a little.» PASSO 5: «good» é adjetivo (She is a good cook); «well» é advérbio (She cooks well). Não troque.",
           "comparacao": "em português «cozinha bem» e «é boa cozinheira» são duas ideias; o inglês as separa: «cooks well» (advérbio) e «a good cook» (adjetivo).",
@@ -331,34 +459,259 @@
           "tag": "Habilidade"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "What can Kate do? / O que a Kate sabe fazer?",
-          "ru": "Kate is my cousin. She can speak three languages: Portuguese, English and a little Spanish. She can play the guitar very well and she can sing. She can't drive, but she can ride a bike. Her brother Dan can cook and he can swim, but he can't dance. I can't play the guitar, but I can dance.",
-          "pt": "Kate é minha prima. Ela fala três idiomas: português, inglês e um pouco de espanhol. Toca violão muito bem e canta. Não sabe dirigir, mas anda de bicicleta. O irmão dela, Dan, cozinha e nada, mas não dança. Eu não toco violão, mas danço.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "How many languages can Kate speak?",
-              "resposta": "Three."
+              "ru": "Could you send me that file when you have a minute, please?",
+              "translit": "",
+              "pt": "Você poderia me enviar aquele arquivo quando tiver um minuto, por favor?",
+              "en": "",
+              "audio": "Could you send me that file when you have a minute, please?"
             },
             {
-              "pergunta": "Can Kate drive?",
-              "resposta": "No, she can't."
+              "ru": "Can you speak Spanish, or just English and Portuguese?",
+              "translit": "",
+              "pt": "Você sabe falar espanhol, ou só inglês e português?",
+              "en": "",
+              "audio": "Can you speak Spanish, or just English and Portuguese?"
             },
             {
-              "pergunta": "What can Dan do?",
-              "resposta": "He can cook and swim."
+              "ru": "You should definitely try the local food — it's delicious!",
+              "translit": "",
+              "pt": "Você definitivamente deveria experimentar a comida local — é deliciosa!",
+              "en": "",
+              "audio": "You should definitely try the local food — it's delicious!"
             },
             {
-              "pergunta": "Can Dan dance?",
-              "resposta": "No, he can't."
+              "ru": "You look exhausted. You shouldn't work so late every night.",
+              "translit": "",
+              "pt": "Você parece exausto. Você não deveria trabalhar até tão tarde toda noite.",
+              "en": "",
+              "audio": "You look exhausted. You shouldn't work so late every night."
+            },
+            {
+              "ru": "We have to be at the airport two hours before the flight.",
+              "translit": "",
+              "pt": "Temos que estar no aeroporto duas horas antes do voo.",
+              "en": "",
+              "audio": "We have to be at the airport two hours before the flight."
+            },
+            {
+              "ru": "You don't have to print the ticket; you can show it on your phone.",
+              "translit": "",
+              "pt": "Você não precisa imprimir a passagem; pode mostrar no celular.",
+              "en": "",
+              "audio": "You don't have to print the ticket; you can show it on your phone."
+            },
+            {
+              "ru": "You mustn't share your password with anyone.",
+              "translit": "",
+              "pt": "Você não pode (é proibido) compartilhar sua senha com ninguém.",
+              "en": "",
+              "audio": "You mustn't share your password with anyone."
+            },
+            {
+              "ru": "Don't worry about the traffic — let's take the subway!",
+              "translit": "",
+              "pt": "Não se preocupe com o trânsito — vamos pegar o metrô!",
+              "en": "",
+              "audio": "Don't worry about the traffic — let's take the subway!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My sister ___ three languages, and she can drive very well.",
+              "opcoes": [
+                "can speak",
+                "cans speak"
+              ],
+              "gabarito": "can speak",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My sister can speak three languages, and she ___ very well.",
+              "opcoes": [
+                "can drive",
+                "knows drive"
+              ],
+              "gabarito": "can drive",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ you open the window, please? It's hot in here.",
+              "opcoes": [
+                "Do can",
+                "Could"
+              ],
+              "gabarito": "Could",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The museum is free on Sundays, so you ___ pay for the ticket!",
+              "opcoes": [
+                "mustn't",
+                "don't have to"
+              ],
+              "gabarito": "don't have to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This is a hospital: you ___ smoke anywhere inside the building.",
+              "opcoes": [
+                "don't have to",
+                "mustn't"
+              ],
+              "gabarito": "mustn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "What ___ I do to improve my pronunciation?",
+              "opcoes": [
+                "should",
+                "should to"
+              ],
+              "gabarito": "should",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Emma ___ wake up at five tomorrow for her flight.",
+              "opcoes": [
+                "have to",
+                "has to"
+              ],
+              "gabarito": "has to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— ___ I have to wear a suit to the conference? — No, you don't.",
+              "opcoes": [
+                "Do",
+                "Must"
+              ],
+              "gabarito": "Do",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Do I have to wear a suit to the conference? — No, you ___.",
+              "opcoes": [
+                "don't",
+                "mustn't"
+              ],
+              "gabarito": "don't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "It's raining a lot! ___ wait outside; let's go into that café!",
+              "opcoes": [
+                "Don't",
+                "Not"
+              ],
+              "gabarito": "Don't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-108a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "It's raining a lot! Don't wait outside; ___ go into that café!",
+              "opcoes": [
+                "let's",
+                "let's to"
+              ],
+              "gabarito": "let's",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-108b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ you repeat that more slowly, please? (pedido bem educado) I didn't catch the last word.",
+              "respostaEsperada": "Could",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "You ___ drink so much coffee at night if you want to sleep well!",
+              "respostaEsperada": "shouldn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tomorrow is a holiday, so we ___ go to the office!",
+              "respostaEsperada": "don't have to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Passengers ___ fasten their seat belts during takeoff. (obrigação, sem usar have)",
+              "respostaEsperada": "must",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Lucas ___ leave the meeting early today because he has a dentist appointment.",
+              "respostaEsperada": "has to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Keep this document secret: you ___ show it to our competitors! (proibição, com must)",
+              "respostaEsperada": "mustn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ take a five-minute break and grab some coffee!",
+              "respostaEsperada": "Let's",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ forget to lock the door when you leave the apartment.",
+              "respostaEsperada": "Don't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-208a"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva 5 frases sobre o que você e uma pessoa que conhece sabem e não sabem fazer."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «She ___ swim. He ___ drive. ___ you cook?»"
         }
       ]
     },
@@ -368,13 +721,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Diga o que você sabe fazer bem, o que sabe um pouco e o que não sabe."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -550,12 +898,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Descreva em 1 minuto o que você sabe fazer e o que gostaria de aprender."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Diga duas habilidades que você sabe fazer (I can…) e uma que você não sabe fazer (I can't…), uma habilidade que você tinha na infância (I could…) e faça um pedido bem educado a um colega usando Could you…, please?.",
+              "respostaEsperada": "I can swim and I can cook Italian food, but I can't play the guitar. Could you send me the meeting link, please?",
+              "id": "en-009-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Explique para um colega novo no seu trabalho uma coisa que é proibida (You mustn't / can't…), uma coisa que é obrigatória (You have to…) e uma coisa que não é necessária (You don't have to…).",
+              "respostaEsperada": "In our office, you mustn't share client data, you have to wear your badge, and you don't have to wear a suit on Fridays.",
+              "id": "en-009-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Dê dois conselhos (You should… / You shouldn't…) para um amigo estrangeiro que vai visitar a sua cidade pela primeira vez.",
+              "respostaEsperada": "When you visit Rio, you should definitely go to Christ the Redeemer, and you shouldn't walk alone late at night.",
+              "id": "en-009-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um convite com Let's… e uma sugestão negativa com Let's not… para o fim de semana.",
+              "respostaEsperada": "Let's go to the Italian restaurant tonight, and let's not talk about work!",
+              "id": "en-009-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My husband cans cook very well, and I know swim.",
+              "respostaEsperada": "My husband can cook very well, and I can swim.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Does she can come to the meeting tomorrow morning?",
+              "respostaEsperada": "Can she come to the meeting tomorrow morning?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: You must to wear a badge in the building, and you should to arrive early.",
+              "respostaEsperada": "You must",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: You mustn't come to the office on Saturday — it's completely optional!",
+              "respostaEsperada": "You don't have to come to the office on Saturday — it's completely optional!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She doesn't has to work tonight.",
+              "respostaEsperada": "She doesn't have to work tonight.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Let's to take a taxi, and not be late!",
+              "respostaEsperada": "Let's take a taxi and not be late!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-009-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Could you send me the report when you have a moment, please?",
+              "respostaEsperada": "OK",
+              "id": "en-009-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os dois erros mais perigosos deste capítulo são colocar to depois de verbos modais (dizendo I can to go, You should to study, I must to leave) e usar mustn't achando que significa “não precisa”. Antes de negar uma obrigação, faça sempre a pergunta de segurança: “É proibido fazer (mustn't / can't) ou só não precisa fazer (don't have to)?”. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "I can to speak English. / You should to go.",
+              "certo": "I can speak English. / You should go.",
+              "motivo": "Verbos modais (can, could, should, must) não levam to depois deles."
+            },
+            {
+              "errado": "He cans help. / Do you can help?",
+              "certo": "He can help. / Can you help?",
+              "motivo": "Modais nunca levam -s e nunca usam o auxiliar do / does."
+            },
+            {
+              "errado": "I know drive. / I know to swim.",
+              "certo": "I can drive. / I can swim.",
+              "motivo": "“Saber fazer” uma habilidade prática em inglês é can, nunca know + verbo."
+            },
+            {
+              "errado": "You mustn't pay; it's free!",
+              "certo": "You don't have to pay; it's free!",
+              "motivo": "Mustn't significa “é proibido”; para dizer “não é necessário”, use don't have to."
+            },
+            {
+              "errado": "She doesn't has to go.",
+              "certo": "She doesn't have to go.",
+              "motivo": "Após doesn't, o verbo volta para have (sem -s)."
+            },
+            {
+              "errado": "Let's to go! / Let's don't wait!",
+              "certo": "Let's go! / Let's not wait!",
+              "motivo": "Let's é seguido de verbo puro sem to, e sua negativa é Let's not."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 8. Complete com Present Simple ou Present Continuous: Right now, Lucas ____ (wear) a yellow helmet because he ____ (walk) inside the factory, and he ____ (know) all the safety rules. 2. Do Capítulo 7. Corrija: Can you give me an advice and some informations about the factory? 3. Do Capítulo 6. Como você diz: “A fábrica abre de segunda a sexta, das 7h30 às 17h15”?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Usar can, could, should, must sem colocar to ou -s depois deles. Diferenciar You mustn't do it (proibido) de You don't have to do it (não precisa). · Dar conselhos com should, fazer pedidos educados com Could you… e convidar com Let's."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala do que sabe fazer e faz pedidos com «can». Próxima aula: imperativo e direções."
+  "notasParaOAluno": "Você fala do que sabe fazer e faz pedidos com «can». Próxima aula: imperativo e direções.",
+  "geradaDoLivro": true
 }

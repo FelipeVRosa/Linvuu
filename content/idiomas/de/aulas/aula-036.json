@@ -15,13 +15,83 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você liga duas frases com weil, dass, wenn, als e ob mandando o verbo conjugado para o fim, escolhe entre wenn, als e wann para o “quando” do português e transforma uma pergunta direta em pergunta indireta (Ich weiß nicht, wann er kommt)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "A trilha de sábado",
+          "contexto": "Lena, Camila e Jonas combinam uma caminhada para o fim de semana. Tom ainda não confirmou.",
+          "linhas": [
+            {
+              "personagem": "Lena",
+              "ru": "— Weißt du, ob Tom am Samstag mitkommt?",
+              "pt": "— Você sabe se o Tom vai no sábado?",
+              "audio": "Weißt du, ob Tom am Samstag mitkommt?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss.",
+              "pt": "— Não sei. Quando liguei para ele ontem, ele disse que ainda tem que trabalhar.",
+              "audio": "Ich weiß es nicht. Als ich ihn gestern angerufen habe, hat er gesagt, dass er noch arbeiten muss."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Schade. Wenn er nicht kommt, fahren wir zu dritt.",
+              "pt": "— Que pena. Se ele não vier, a gente vai em três.",
+              "audio": "Schade. Wenn er nicht kommt, fahren wir zu dritt."
+            },
+            {
+              "personagem": "Lena",
+              "ru": "— Und wenn es regnet?",
+              "pt": "— E se chover?",
+              "audio": "Und wenn es regnet?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere.",
+              "pt": "— Se chover, a gente fica em casa, porque eu não gosto de caminhar na chuva.",
+              "audio": "Wenn es regnet, bleiben wir zu Hause, weil ich im Regen nicht gern wandere."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich frage ihn noch einmal, wann er Zeit hat.",
+              "pt": "— Vou perguntar de novo a ele quando ele tem tempo.",
+              "audio": "Ich frage ihn noch einmal, wann er Zeit hat."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 6 frases com os modais e o verbo principal no fim da frase."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: wann só pergunta (direta ou indireta). Wenn é o “quando” que se repete, ou que ainda vai acontecer, e também o “se”. Als é o “quando” de um acontecimento único no passado.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Quando você vem? (pergunta)",
+              "ingles": "Wann kommst du?"
+            },
+            {
+              "portugues": "Quando eu tenho tempo, eu ligo. (sempre)",
+              "ingles": "Wenn ich Zeit habe, rufe ich an."
+            },
+            {
+              "portugues": "Quando eu cheguei, ele já estava lá.",
+              "ingles": "Als ich ankam, war er schon da."
+            },
+            {
+              "portugues": "Não sei quando ele chega.",
+              "ingles": "Ich weiß nicht, wann er ankommt."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "weil",
@@ -83,7 +153,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "Weil: o verbo vai para o fim, passo a passo",
           "explicacao": "PASSO 1: «weil» (porque) abre uma frase SUBORDINADA: ela depende de outra. PASSO 2: REGRA PRINCIPAL: na frase subordinada, o verbo CONJUGADO vai para o FIM: «Ich bleibe zu Hause, weil ich krank bin.» PASSO 3: a VÍRGULA antes de «weil» é obrigatória. PASSO 4: se houver verbo separável, o prefixo se junta ao verbo no fim: «weil ich früh aufstehe». Com Perfekt, o auxiliar fica no fim absoluto: «weil ich Fieber gehabt habe». Com modal: «weil ich arbeiten muss.» PASSO 5: se a subordinada ABRE a frase, a principal começa pelo VERBO (porque a subordinada inteira conta como a primeira posição): «Weil ich krank bin, bleibe ich zu Hause.» PASSO 6: diferença para «denn»: «denn» (pois) é uma conjunção normal e não muda a ordem: «Ich bleibe zu Hause, denn ich bin krank.»",
           "comparacao": "em português a ordem das palavras não muda depois de «porque» («porque eu estou doente»). Em alemão, depois de «weil», o verbo conjugado vai para o FIM.",
@@ -134,8 +204,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Dê 6 motivos em voz alta com «weil»: «Ich lerne Deutsch, weil … Ich bin müde, weil …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 6 frases com os modais e o verbo principal no fim da frase."
         }
       ]
     },
@@ -145,13 +220,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 6 frases com «weil», três com a subordinada no fim e três com a subordinada no começo."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as frases. PASSO 2: Perguntas: PASSO 3: Nas frases 1, 3 e 4, em que posição está o verbo da segunda parte (bin, kommt)? Compare com Ich bin krank. PASSO 4: Nas frases 2, 5 e 6, a parte com o conector vem na frente. O que vem logo depois da vírgula: o sujeito ou o verbo? PASSO 5: Nas frases 5 e 6, os dois “quando” do português viraram wenn e als. Em qual deles o fato já aconteceu uma vez, no passado? PASSO 6: Há vírgula antes de weil, dass e ob? E depois da parte que abre a frase?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "sagen",
@@ -213,7 +291,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Dass: o «que» da frase subordinada, passo a passo",
           "explicacao": "PASSO 1: «dass» (que) liga verbos de pensar, dizer, saber e esperar a uma frase subordinada: «Ich glaube, dass er kommt.» PASSO 2: a REGRA é a mesma de «weil»: verbo conjugado no FIM e vírgula antes. PASSO 3: verbos que costumam vir antes de «dass»: sagen, glauben, denken, meinen, wissen, hoffen. PASSO 4: «wissen» é irregular: ich weiß, du weißt, er weiß, wir wissen. PASSO 5: depois de adjetivos e expressões: «Es ist schade, dass …», «Ich bin sicher, dass …», «Ich freue mich, dass …». PASSO 6: ATENÇÃO À GRAFIA: «dass» (conjunção, com «ss») não é «das» (artigo ou pronome): «Das Buch, das ich lese, ist gut» × «Ich glaube, dass er kommt».",
           "tabela": [
@@ -263,8 +341,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga 6 frases com «dass»: «Ich glaube, dass … Ich hoffe, dass … Ich weiß, dass …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 6 frases com «weil», três com a subordinada no fim e três com a subordinada no começo."
         }
       ]
     },
@@ -274,13 +357,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases com «weil» e 4 com «dass», cada uma com o verbo no fim."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Juntando weil e dass",
           "explicacao": "PASSO 1: as duas conjunções seguem a mesma ordem: sujeito, complementos e, no FIM, o verbo conjugado. PASSO 2: com mais de um verbo, o conjugado fica por último: «weil ich nicht kommen kann» (modal por último), «dass ich ihn gesehen habe» (auxiliar por último). PASSO 3: perguntas «Warum …?» pedem resposta com «weil»: «Warum kommst du nicht? — Weil ich arbeiten muss.» PASSO 4: a resposta curta «Weil …» pode ficar sem a frase principal.",
           "tabela": [
@@ -305,7 +383,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Warum kommst du nicht? / Por que você não vem?",
           "contexto": "Dois amigos falam de uma festa.",
           "linhas": [
@@ -360,9 +438,253 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Ich komme nicht, weil ich krank bin.",
+              "translit": "",
+              "pt": "Não vou, porque estou doente.",
+              "en": "",
+              "audio": "Ich komme nicht, weil ich krank bin."
+            },
+            {
+              "ru": "Ich glaube, dass es klappt.",
+              "translit": "",
+              "pt": "Acho que vai dar certo.",
+              "en": "",
+              "audio": "Ich glaube, dass es klappt."
+            },
+            {
+              "ru": "Wenn du Zeit hast, ruf mich an.",
+              "translit": "",
+              "pt": "Se você tiver tempo, me liga.",
+              "en": "",
+              "audio": "Wenn du Zeit hast, ruf mich an."
+            },
+            {
+              "ru": "Als ich klein war, wohnte ich in Recife.",
+              "translit": "",
+              "pt": "Quando eu era pequeno, morava em Recife.",
+              "en": "",
+              "audio": "Als ich klein war, wohnte ich in Recife."
+            },
+            {
+              "ru": "Weißt du, ob Tom mitkommt?",
+              "translit": "",
+              "pt": "Você sabe se o Tom vai?",
+              "en": "",
+              "audio": "Weißt du, ob Tom mitkommt?"
+            },
+            {
+              "ru": "Kannst du mir sagen, wo der Bahnhof ist?",
+              "translit": "",
+              "pt": "Pode me dizer onde fica a estação?",
+              "en": "",
+              "audio": "Kannst du mir sagen, wo der Bahnhof ist?"
+            },
+            {
+              "ru": "Ich weiß nicht, wann der Kurs beginnt.",
+              "translit": "",
+              "pt": "Não sei quando o curso começa.",
+              "en": "",
+              "audio": "Ich weiß nicht, wann der Kurs beginnt."
+            },
+            {
+              "ru": "Ich wusste nicht, dass du hier wohnst.",
+              "translit": "",
+              "pt": "Eu não sabia que você morava aqui.",
+              "en": "",
+              "audio": "Ich wusste nicht, dass du hier wohnst."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich weiß nicht, ___ er kommt.",
+              "opcoes": [
+                "ob",
+                "dass"
+              ],
+              "gabarito": "ob",
+              "explicacao": "Veja a chave comentada no livro: ob (dúvida de sim ou não)",
+              "id": "de-036-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich glaube, ___ er krank ist.",
+              "opcoes": [
+                "ob",
+                "dass"
+              ],
+              "gabarito": "dass",
+              "explicacao": "Veja a chave comentada no livro: dass (glauben + fato)",
+              "id": "de-036-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ ich ein Kind war, wohnte ich in Recife.",
+              "opcoes": [
+                "Wenn",
+                "Als"
+              ],
+              "gabarito": "Als",
+              "explicacao": "Veja a chave comentada no livro: Als (uma vez, no passado)",
+              "id": "de-036-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ du Zeit hast, ruf mich an.",
+              "opcoes": [
+                "Wenn",
+                "Als"
+              ],
+              "gabarito": "Wenn",
+              "explicacao": "Veja a chave comentada no livro: Wenn (“se” de condição)",
+              "id": "de-036-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Weil ich bin müde, gehe ich nach Hause",
+                "Weil ich müde bin, gehe ich nach Hause"
+              ],
+              "gabarito": "Weil ich müde bin, gehe ich nach Hause",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-036-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Weißt du, wann der Zug fährt?",
+                "Weißt du, wann fährt der Zug?"
+              ],
+              "gabarito": "Weißt du, wann der Zug fährt?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-036-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Ich bleibe zu Hause, weil ich muss arbeiten",
+                "Ich bleibe zu Hause, weil ich arbeiten muss"
+              ],
+              "gabarito": "Ich bleibe zu Hause, weil ich arbeiten muss",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-036-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: Ich komme nicht, ___ ich krank bin.",
+              "respostaEsperada": "weil",
+              "explicacao": "Veja a chave comentada no livro: weil",
+              "id": "de-036-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: Er sagt, ___ er keine Zeit hat.",
+              "respostaEsperada": "dass",
+              "explicacao": "Veja a chave comentada no livro: dass",
+              "id": "de-036-L-202a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: ___ es morgen regnet, bleiben wir hier.",
+              "respostaEsperada": "Wenn (morgen é futuro, “se”)",
+              "id": "de-036-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: ___ ich gestern nach Hause kam, war Tom schon da.",
+              "respostaEsperada": "Als (aconteceu uma vez)",
+              "id": "de-036-L-204"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: Ich frage ihn, ___ er Zeit hat (sim ou não).",
+              "respostaEsperada": "ob",
+              "explicacao": "Veja a chave comentada no livro: ob",
+              "id": "de-036-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: Ich weiß nicht, ___ der Kurs beginnt (pergunta pela hora).",
+              "respostaEsperada": "wann",
+              "explicacao": "Veja a chave comentada no livro: wann",
+              "id": "de-036-L-206a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete com weil, dass, wenn, als, ob ou wann: Immer ___ ich Tom besucht habe, hat er gekocht.",
+              "respostaEsperada": "wenn (repetição, mesmo no passado)",
+              "id": "de-036-L-207"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com weil: Ich bleibe zu Hause. Ich bin krank.",
+              "respostaEsperada": "Ich bleibe zu Hause, weil ich krank bin",
+              "id": "de-036-L-208"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com weil: Ich gehe nach Hause. Ich bin müde. (comece pela parte com weil)",
+              "respostaEsperada": "Weil ich müde bin, gehe ich nach Hause",
+              "id": "de-036-L-209"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Transforme em pergunta indireta, começando por Ich weiß nicht, …: Wo wohnt Tom?",
+              "respostaEsperada": "Ich weiß nicht, wo Tom wohnt",
+              "id": "de-036-L-210"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Transforme em pergunta indireta, começando por Ich weiß nicht, …: Kommt Lena heute?",
+              "respostaEsperada": "Ich weiß nicht, ob Lena heute kommt",
+              "id": "de-036-L-211"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Coloque as palavras na ordem certa: Ich glaube, / dass / er / früh / aufstehen. (use o presente de aufstehen)",
+              "respostaEsperada": "Ich glaube, dass er früh aufsteht",
+              "id": "de-036-L-212"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Coloque as palavras na ordem certa: Ich bin nicht hungrig, / weil / ich / schon / gegessen / habe.",
+              "respostaEsperada": "Ich bin nicht hungrig, weil ich schon gegessen habe",
+              "id": "de-036-L-213"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ich lerne intensiv Deutsch, ___ in München ___ (arbeiten).",
+              "respostaEsperada": "um … zu arbeiten",
+              "id": "de-036-L-214"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Die Lehrerin spricht langsam, ___ alle Studenten sie gut ___ (verstehen).",
+              "respostaEsperada": "damit … verstehen",
+              "id": "de-036-L-215"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Responda em voz alta com «weil»: «Warum lernst du Deutsch? Warum bist du müde? Warum kommst du (nicht)?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 4 frases com «weil» e 4 com «dass», cada uma com o verbo no fim."
         }
       ]
     },
@@ -372,13 +694,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva um pequeno texto de 6 frases com «weil» e «dass»."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -549,12 +866,77 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se explicando em voz alta por que você estuda alemão, por que está cansado ou feliz, e o que você acha e espera."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases com weil sobre o que você faz e por quê (Ich lerne Deutsch, weil …).",
+              "respostaEsperada": "Ich lerne Deutsch, weil ich in Deutschland studieren möchte. Ich trinke morgens Kaffee, weil ich sonst müde bin. Ich fahre mit dem Zug, weil das Auto kaputt ist.",
+              "id": "de-036-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases com wenn sobre o que você faz quando chove ou quando está cansado.",
+              "respostaEsperada": "Wenn es am Wochenende regnet, bleibe ich zu Hause und lese ein Buch. Wenn ich abends müde bin, gehe ich früh ins Bett.",
+              "id": "de-036-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases com als, sobre um dia do seu passado (Als ich …).",
+              "respostaEsperada": "Als ich achtzehn Jahre alt war, machte ich meine erste Reise allein. Als ich gestern im Büro ankam, wartete mein Chef schon auf mich.",
+              "id": "de-036-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Faça três perguntas indiretas a um colega, começando por Weißt du, … ou Kannst du mir sagen, ….",
+              "respostaEsperada": "Weißt du, wann der Deutschkurs heute beginnt? Kannst du mir sagen, wo hier ein Geldautomat ist? Weißt du, ob Lena heute Abend zur Party mitkommt?",
+              "id": "de-036-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich bleibe zu Hause, weil ich bin krank.",
+              "respostaEsperada": "Ich bleibe zu Hause, weil ich krank bin.",
+              "explicacao": "Ich bleibe zu Hause, weil ich krank bin.",
+              "id": "de-036-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wenn ich ein Kind war, wohnte ich in Recife.",
+              "respostaEsperada": "Als ich ein Kind war, wohnte ich in Recife.",
+              "explicacao": "Als ich ein Kind war, wohnte ich in Recife.",
+              "id": "de-036-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Weil ich früh muss aufstehen, gehe ich früh ins Bett.",
+              "respostaEsperada": "Weil ich früh aufstehen muss, gehe ich früh ins Bett.",
+              "explicacao": "Weil ich früh aufstehen muss, gehe ich früh ins Bett.",
+              "id": "de-036-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é deixar o verbo no meio: weil ich bin krank. O ouvido português não sente a falta de nada. O segundo erro é esquecer a inversão quando a subordinada abre a frase: Wenn es regnet, wir bleiben zu Hause. O terceiro é usar wenn para tudo, como o “quando” e o “se” do português: para o passado de um acontecimento único, é als; para a pergunta de sim ou não, é ob. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 23. Complete: Ich bleibe zu Hause, ____ ich bin krank. (denn, weil: qual mantém a ordem?) Do capítulo 20. Complete: Ich freue ____ auf das Wochenende. Do capítulo 19. Complete: Gestern ____ ich sehr müde. (sein, pretérito)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Explico por que faço algo com weil e mando o verbo para o fim. · Escolho entre wenn, als e wann. · Transformo Wo wohnt er? em Ich weiß nicht, wo er wohnt."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você monta frases com weil e dass. Próxima aula: wenn, ob e as perguntas indiretas."
+  "notasParaOAluno": "Você monta frases com weil e dass. Próxima aula: wenn, ob e as perguntas indiretas.",
+  "geradaDoLivro": true
 }

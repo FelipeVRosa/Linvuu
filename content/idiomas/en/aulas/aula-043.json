@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa a voz passiva (be + 3ª coluna) no presente, no passado, no Present Perfect e no futuro para destacar o que foi feito sem precisar dizer quem fez (como no nosso “aluga-se / consertaram / foi enviado”), introduz o autor da ação com by quando necessário e usa a estrutura causativa (have / get something done) para falar de serviços contratados (“cortei o cabelo / consertei o carro”)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Reforma do escritório e atualização do sistema",
+          "contexto": "Lucas e Emma conversam sobre as obras na recepção do prédio e o status dos contratos enviados aos clientes.",
+          "linhas": [
+            {
+              "personagem": "Lucas",
+              "ru": "— Emma, why is the main entrance closed this morning?",
+              "pt": "— Emma, por que a entrada principal está fechada hoje de manhã?",
+              "audio": "Emma, why is the main entrance closed this morning?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— The lobby is being painted today, and the old glass doors are being replaced! Everything will be finished by Friday.",
+              "pt": "— O saguão está sendo pintado hoje, e as portas de vidro antigas estão sendo substituídas! Tudo estará terminado até sexta-feira.",
+              "audio": "The lobby is being painted today, and the old glass doors are being replaced! Everything will be finished by Friday."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Oh, that's great. Those doors were installed twenty years ago, weren't they?",
+              "pt": "— Ah, que ótimo. Aquelas portas foram instaladas vinte anos atrás, não foram?",
+              "audio": "Oh, that's great. Those doors were installed twenty years ago, weren't they?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Yes, they were! The building was designed by a famous Canadian architect in 2005, and it hasn't been renovated since then.",
+              "pt": "— Sim, foram! O prédio foi projetado por um arquiteto canadense famoso em 2005, e não é reformado desde então.",
+              "audio": "Yes, they were! The building was designed by a famous Canadian architect in 2005, and it hasn't been renovated since then."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— By the way, have the new client contracts been signed yet?",
+              "pt": "— Aliás, os novos contratos dos clientes já foram assinados?",
+              "audio": "By the way, have the new client contracts been signed yet?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Two of them were signed yesterday afternoon, and the third one will be sent to the director today.",
+              "pt": "— Dois deles foram assinados ontem à tarde, e o terceiro será enviado ao diretor hoje.",
+              "audio": "Two of them were signed yesterday afternoon, and the third one will be sent to the director today."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Awesome. Oh, I love your hair, Emma! Did you change the cut?",
+              "pt": "— Perfeito. Ah, adorei o seu cabelo, Emma! Você mudou o corte?",
+              "audio": "Awesome. Oh, I love your hair, Emma! Did you change the cut?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Thanks! Yes, I got my hair cut yesterday evening at that salon across the street. And I'm having my laptop fixed this afternoon because the screen is flickering!",
+              "pt": "— Obrigada! Sim, cortei o cabelo ontem à noite naquele salão do outro lado da rua. E vou mandar consertar meu notebook hoje à tarde porque a tela está piscando!",
+              "audio": "Thanks! Yes, I got my hair cut yesterday evening at that salon across the street. And I'm having my laptop fixed this afternoon because the screen is flickering!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conte uma oportunidade perdida com terceiro condicional e «should have»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Quando não sabemos quem fez, ou não importa quem fez, o inglês usa a voz passiva. No trabalho, na ciência e nas notícias, o que importa é o que aconteceu com o projeto, o voo, o pacote ou o pagamento. Basta colocar a coisa afetada no início da frase + o verbo to be no tempo desejado + o verbo principal na 3ª coluna (Particípio Passado). PASSO 2: Quem praticou a ação na passiva é introduzido por by, e não por for. Por causa do português “feito por ela”, muitos brasileiros dizem made for her (que significa “feito para ela”). Para indicar o autor na voz passiva, use by: The report was written by Lucas.",
+          "comparacao": "Em português, costumamos evitar a voz passiva com verbos sem sujeito expresso (“Roubaram meu celular! / Já resolveram o problema / Aqui fala-se inglês”) e dizemos “Eu cortei o cabelo / Eu pintei a casa” mesmo quando contratamos um profissional. Em inglês, isso gera quatro armadilhas:",
+          "tabela": [
+            {
+              "portugues": "Roubaram meu celular ontem!",
+              "ingles": "My phone was stolen yesterday! (ou Someone stole my phone!)",
+              "evite": "Stole my phone yesterday! (falta o sujeito)"
+            },
+            {
+              "portugues": "Este carro foi feito na Alemanha.",
+              "ingles": "This car was made in Germany.",
+              "evite": "This car made / was make in Germany."
+            },
+            {
+              "portugues": "O livro foi escrito por Machado.",
+              "ingles": "The book was written by Machado.",
+              "evite": "written for Machado (a autoria na passiva usa by)."
+            },
+            {
+              "portugues": "Vou cortar o cabelo amanhã (no salão).",
+              "ingles": "I'm going to get (ou have) my hair cut tomorrow.",
+              "evite": "I'm going to cut my hair (soa como se você mesmo fosse cortar)."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "is made",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "A voz passiva",
           "explicacao": "PASSO 1: na voz ATIVA o sujeito faz a ação: «Marie Curie discovered radium.» Na PASSIVA, o foco vai para o objeto: «Radium was discovered by Marie Curie.» PASSO 2: a estrutura é «be + particípio passado»: «is made», «was built», «will be done». PASSO 3: o «be» marca o tempo: presente (is/are + particípio), passado (was/were + particípio), futuro (will be + particípio). PASSO 4: use a passiva quando o agente é DESCONHECIDO, ÓBVIO ou NÃO IMPORTA: «My bike was stolen.» (não sei quem). PASSO 5: use «by + agente» só quando for informação nova ou importante: «The Mona Lisa was painted by Leonardo.» PASSO 6: nunca use «do/does» na passiva: «Coffee is grown in Brazil», não «Coffee does grown».",
           "comparacao": "em português a passiva com «ser + particípio» («foi construído») existe, mas costumamos usar «se» («vende-se», «fala-se»). Em inglês, não existe o «se» apassivador: use «be + particípio».",
@@ -130,8 +216,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Transforme 5 frases ativas em passivas: «They sell cars here.», «Someone broke the window.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Conte uma oportunidade perdida com terceiro condicional e «should have»."
         }
       ]
     },
@@ -141,13 +232,42 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Diga o particípio de: make, build, write, steal, speak, grow, sell, do."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como, na voz passiva, o verbo principal fica na 3ª coluna (made, sent, built, stolen), e quem muda de tempo é apenas o verbo to be: PASSO 2: Perguntas: PASSO 3: O que todas as frases da coluna da direita (voz passiva) têm em comum no último verbo? PASSO 4: Compare estas duas frases sobre o carro do Lucas: PASSO 5: Frase A: Lucas washed his car on Sunday. PASSO 6: Frase B: Lucas had his car washed (ou got his car washed) on Sunday. Em qual das duas o próprio Lucas pegou o balde e a mangueira na garagem, e em qual ele levou o carro ao lava-rápido?",
+          "tabela": [
+            {
+              "c1": "Present Simple",
+              "c2": "They clean the offices every night.",
+              "c3": "The offices are cleaned every night."
+            },
+            {
+              "c1": "Present Continuous",
+              "c2": "They are painting the lobby today.",
+              "c3": "The lobby is being painted today."
+            },
+            {
+              "c1": "Past Simple",
+              "c2": "Someone stole my bike last night.",
+              "c3": "My bike was stolen last night."
+            },
+            {
+              "c1": "Present Perfect",
+              "c2": "Have they sent the invitations yet?",
+              "c3": "Have the invitations been sent yet?"
+            },
+            {
+              "c1": "Futuro / Modais",
+              "c2": "We will / must finish it by Friday.",
+              "c3": "It will / must be finished by Friday."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "grow",
@@ -195,7 +315,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Negativa e pergunta",
           "explicacao": "PASSO 1: negativa: «be + not + particípio»: «The room isn't cleaned every day.», «The flight wasn't canceled.» PASSO 2: pergunta: inverta o «be»: «Is English spoken here?», «Was the package delivered?» PASSO 3: com palavra de pergunta: «When was the bridge built?», «Where is coffee grown?» PASSO 4: pergunta sobre o agente: «Who was this book written by?» (ou «Who wrote this book?»). PASSO 5: «get» também forma passiva informal: «My phone got stolen.» PASSO 6: respostas curtas: «Yes, it is.» / «No, it wasn't.»",
           "comparacao": "em português «não foi entregue» e «foi entregue?» mantêm o «ser». Em inglês, o auxiliar «be» faz a negativa e a pergunta: «wasn't delivered», «Was it delivered?».",
@@ -236,9 +356,21 @@
           "tag": "Passiva: negativa e pergunta"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Voz passiva: objeto + verbo TO BE (no tempo certo) + 3ª coluna (particípio passado): PASSO 2: Presente (“é feito / fala-se”):am / is / are + 3ª coluna (English is spoken here / The cars are made in Brazil). PASSO 3: Sendo feito agora:am / is / are + being + 3ª coluna (My car is being repaired right now). PASSO 4: Passado (“foi feito”):was / were + 3ª coluna (The bridge was built in 1990 / The emails were sent yesterday). PASSO 5: Present Perfect (“já foi feito”):have / has + been + 3ª coluna (The problem has already been solved). PASSO 6: Futuro e Modais (“será / deve / pode ser feito”):will / must / can / should + be + 3ª coluna (The contract will be signed tomorrow / This can be done online). PASSO 7: Autor da ação: Se quiser mencionar quem fez, use by (designed by an architect). PASSO 8: Causativa: serviços profissionais (have / get + coisa + 3ª coluna): PASSO 9: Quando você contrata/pede para alguém fazer um serviço para você (cortar o cabelo, consertar o carro/celular, pintar a casa, revisar um documento), use have ou get (mais comum na fala) + o objeto + a 3ª coluna: PASSO 10: I got my hair cut yesterday (“Cortei o cabelo”). PASSO 11: Where did you get your phone fixed? (“Onde você mandou consertar seu celular?”).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Faça 6 perguntas na passiva sobre produtos e lugares: «Where is coffee grown?», «When was the telephone invented?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o particípio de: make, build, write, steal, speak, grow, sell, do."
         }
       ]
     },
@@ -248,13 +380,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Transforme em passiva: «They build a bridge», «Someone cleaned the room»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "first",
@@ -295,7 +422,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "A passiva em processos",
           "explicacao": "PASSO 1: a passiva é comum para explicar COMO algo é feito, quando importa o processo e não quem faz: «First, the beans are picked. Then they are washed and dried.» PASSO 2: use conectores de sequência: first, then, after that, finally. PASSO 3: passado em histórias de produtos: «The cheese was produced in 1950.» PASSO 4: evite misturar ativo e passivo sem necessidade.",
           "comparacao": "em português usamos o «se» («lavam-se os grãos»). Em inglês, o processo vem em «be + particípio»: «the beans are washed».",
@@ -332,34 +459,258 @@
           "tag": "Processos"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "How coffee is made / Como o café é feito",
-          "ru": "Coffee is grown in many countries, and Brazil is the largest producer in the world. First, the coffee beans are picked by hand or by machine. Then they are washed and dried in the sun. After that, they are sent to factories, where they are roasted and packed. Finally, the coffee is sold in shops and supermarkets all over the world. In Brazil, coffee has been grown since the 18th century, and it will be produced for many more years.",
-          "pt": "O café é cultivado em muitos países, e o Brasil é o maior produtor do mundo. Primeiro, os grãos são colhidos à mão ou por máquina. Depois são lavados e secos ao sol. Em seguida, são enviados às fábricas, onde são torrados e embalados. Por fim, o café é vendido em lojas e supermercados no mundo todo. No Brasil, o café é cultivado desde o século XVIII e continuará a ser produzido por muitos anos.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "Where is coffee grown?",
-              "resposta": "In many countries; Brazil is the largest producer."
+              "ru": "My flight was canceled because of the storm.",
+              "translit": "",
+              "pt": "Meu voo foi cancelado por causa da tempestade.",
+              "en": "",
+              "audio": "My flight was canceled because of the storm."
             },
             {
-              "pergunta": "What happens after the beans are picked?",
-              "resposta": "They are washed and dried."
+              "ru": "Has the invoice been paid yet? — Yes, it was paid on Monday.",
+              "translit": "",
+              "pt": "A fatura já foi paga? — Sim, foi paga na segunda-feira.",
+              "en": "",
+              "audio": "Has the invoice been paid yet? — Yes, it was paid on Monday."
             },
             {
-              "pergunta": "Where are the beans roasted and packed?",
-              "resposta": "In factories."
+              "ru": "The new software is being tested by our IT team right now.",
+              "translit": "",
+              "pt": "O software novo está sendo testado pela nossa equipe de TI agora.",
+              "en": "",
+              "audio": "The new software is being tested by our IT team right now."
             },
             {
-              "pergunta": "Since when has coffee been grown in Brazil?",
-              "resposta": "Since the 18th century."
+              "ru": "All packages will be delivered before Friday afternoon.",
+              "translit": "",
+              "pt": "Todos os pacotes serão entregues antes de sexta-feira à tarde.",
+              "en": "",
+              "audio": "All packages will be delivered before Friday afternoon."
+            },
+            {
+              "ru": "Portuguese is spoken in Brazil, Portugal, and several African countries.",
+              "translit": "",
+              "pt": "Fala-se português no Brasil, em Portugal e em vários países africanos.",
+              "en": "",
+              "audio": "Portuguese is spoken in Brazil, Portugal, and several African countries."
+            },
+            {
+              "ru": "What time are we supposed to be at the airport?",
+              "translit": "",
+              "pt": "A que horas é para nós estarmos no aeroporto?",
+              "en": "",
+              "audio": "What time are we supposed to be at the airport?"
+            },
+            {
+              "ru": "I need to get my passport renewed before our trip to Europe!",
+              "translit": "",
+              "pt": "Preciso renovar meu passaporte antes da nossa viagem para a Europa!",
+              "en": "",
+              "audio": "I need to get my passport renewed before our trip to Europe!"
+            },
+            {
+              "ru": "Where did you get your laptop fixed? They did a great job!",
+              "translit": "",
+              "pt": "Onde você mandou consertar seu notebook? Fizeram um ótimo trabalho!",
+              "en": "",
+              "audio": "Where did you get your laptop fixed? They did a great job!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This bridge ___ in 1985 by a French engineer.",
+              "opcoes": [
+                "built",
+                "was built"
+              ],
+              "gabarito": "was built",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This bridge was built in 1985 ___ a French engineer.",
+              "opcoes": [
+                "by",
+                "for"
+              ],
+              "gabarito": "by",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "All the hotel rooms ___ every morning between nine and noon.",
+              "opcoes": [
+                "clean",
+                "are cleaned"
+              ],
+              "gabarito": "are cleaned",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Look! The street outside ___ right now.",
+              "opcoes": [
+                "is repairing",
+                "is being repaired"
+              ],
+              "gabarito": "is being repaired",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Have the new computers ___ to the office yet?",
+              "opcoes": [
+                "delivered",
+                "been delivered"
+              ],
+              "gabarito": "been delivered",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The final decision ___ tomorrow morning by the board.",
+              "opcoes": [
+                "will make",
+                "will be made"
+              ],
+              "gabarito": "will be made",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I love your hair! Where did you ___?",
+              "opcoes": [
+                "cut it",
+                "get it cut"
+              ],
+              "gabarito": "get it cut",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My wallet ___ on the subway last night!",
+              "opcoes": [
+                "stole",
+                "was stolen"
+              ],
+              "gabarito": "was stolen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We ___ to wear our badges at all times inside the building.",
+              "opcoes": [
+                "are supposed",
+                "suppose"
+              ],
+              "gabarito": "are supposed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coffee ___ (grow) in Brazil and Colombia, and it is exported all over the world. (Present Simple)",
+              "respostaEsperada": "is grown",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Coffee is grown in Brazil and Colombia, and it ___ (export) all over the world. (Present Simple)",
+              "respostaEsperada": "is exported",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Two hundred people ___ (hire) by our company last year. (Past Simple)",
+              "respostaEsperada": "were hired",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We can't use the meeting room right now because it ___ (clean). (Present Continuous)",
+              "respostaEsperada": "is being cleaned",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Don't worry! The bug ___ (already / fix) by Kevin. (Present Perfect)",
+              "respostaEsperada": "has already been fixed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "This form must ___ (sign) by the director before five p.m. (Modal must)",
+              "respostaEsperada": "be signed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "When ___ the email sent to the client? — It was sent ten minutes ago! (Past Simple)",
+              "respostaEsperada": "was",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "When was the email ___ (send) to the client? — It was sent ten minutes ago! (Past Simple)",
+              "respostaEsperada": "sent",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "When was the email sent to the client? — It ___ (send) ten minutes ago! (Past Simple)",
+              "respostaEsperada": "was sent",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My car air conditioner isn't working. I need to ___ (get / it / fix) before summer!",
+              "respostaEsperada": "get it fixed",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Marina didn't paint her apartment herself; she ___ (have / it / paint) last month.",
+              "respostaEsperada": "had it painted",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-208a"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Descreva em 6 frases na passiva como um produto que você conhece é feito."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Transforme em passiva: «They build a bridge», «Someone cleaned the room»."
         }
       ]
     },
@@ -369,13 +720,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Explique em voz alta como um produto é feito, usando a passiva e first, then, finally."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -552,12 +898,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre um produto ou uma tradição brasileira e como ela é feita."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases na voz passiva no presente contando o que é produzido ou falado no seu país ou na sua empresa (is made / are produced / is spoken).",
+              "respostaEsperada": "In Brazil, Portuguese is spoken everywhere, and a lot of coffee and airplanes are produced here.",
+              "id": "en-043-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases na voz passiva no passado contando algo famoso que foi construído, inventado ou escrito (usando was / were + 3ª coluna + by).",
+              "respostaEsperada": "Brasília was designed by Oscar Niemeyer and Lúcio Costa, and the telephone was invented by Alexander Graham Bell.",
+              "id": "en-043-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte algo que já foi resolvido hoje no seu trabalho usando o Present Perfect passivo (has already been…) e algo que será feito amanhã (will be…).",
+              "respostaEsperada": "The budget has already been approved today, and the contracts will be signed tomorrow morning.",
+              "id": "en-043-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte dois serviços que você contratou recentemente ou vai contratar usando I got my [objeto] + 3ª coluna (ex.: cabelo, carro, celular, dentes).",
+              "respostaEsperada": "I got my hair cut last week, and I need to get my car washed this weekend.",
+              "id": "en-043-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My phone stole at the train station yesterday afternoon!",
+              "respostaEsperada": "My phone was stolen at the train station yesterday afternoon!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: This presentation was prepare for Lucas last night. (querendo dizer que o Lucas é o autor!).",
+              "respostaEsperada": "This presentation was prepared by Lucas last night.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The new system is been tested right now.",
+              "respostaEsperada": "The new system is being tested right now.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: All the contracts have already sent to the clients.",
+              "respostaEsperada": "All the contracts have already been sent to the clients.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'm going to cut my hair at the barbershop this afternoon.",
+              "respostaEsperada": "I'm going to get",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Where did this photo took?",
+              "respostaEsperada": "Where was this photo taken?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-043-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The problem has already been solved, and the client was notified this morning.",
+              "respostaEsperada": "OK",
+              "id": "en-043-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os quatro erros mais comuns neste capítulo são: esquecer o verbo to be na voz passiva (My car stole, The email has sent), confundir being (sendo) com been (sido), usar for em vez de by para o autor e dizer “I cut my hair” quando na verdade foi ao salão (I got my hair cut). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "My bag stole at the airport!",
+              "certo": "My bag was stolen at the airport!",
+              "motivo": "A bolsa sofreu a ação; pede a passiva (was stolen)."
+            },
+            {
+              "errado": "The report has already sent.",
+              "certo": "The report has already been sent.",
+              "motivo": "No Present Perfect passivo, been vem entre has e a 3ª coluna."
+            },
+            {
+              "errado": "The room is been cleaned now.",
+              "certo": "The room is being cleaned now.",
+              "motivo": "Após am / is / are (“está sendo”), usa-se being (bí-in), e não been."
+            },
+            {
+              "errado": "The book was written for Jorge Amado.",
+              "certo": "The book was written by Jorge Amado.",
+              "motivo": "O autor da ação na voz passiva é sempre introduzido por by."
+            },
+            {
+              "errado": "I'll cut my hair at the salon tomorrow.",
+              "certo": "I'll get (ou have) my hair cut tomorrow.",
+              "motivo": "Serviço feito por um profissional usa a causativa get/have + objeto + 3ª coluna."
+            },
+            {
+              "errado": "The accident was happened yesterday.",
+              "certo": "The accident happened yesterday.",
+              "motivo": "Verbos sem objeto (happen, arrive, die, go) não têm voz passiva."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 22 e 23. Una a Second Conditional com a voz passiva: “Se o contrato fosse assinado hoje, começaríamos amanhã” (If the contract were signed today, we'd start tomorrow). Agora faça o mesmo para: “Se o voo fosse cancelado, ficaríamos no hotel.” 2. Do Capítulo 10 e 23. Lembra de I was born in 1995 (Cap. 10)? Agora você sabe por que ela é assim: é uma voz passiva. Faça a pergunta: “Onde este carro foi fabricado?” (Where ____ this car ____?). 3. Do Capítulo 14 e 23. Passe da ativa para a passiva: Someone has already paid the bill. → The bill ____ already ____ ____."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Usar a voz passiva em todos os tempos verbais (is done, was done, is being done, has been done, will be done) sem esquecer o verbo to be e usando by para o autor. · Falar de serviços profissionais no salão, na oficina ou na assistência usando get / have + objeto + 3ª coluna (I got my hair cut). · Usar be supposed to para falar do que era esperado ou combinado."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você descreve processos e fatos sem dizer quem os fez. Próxima aula: passiva com modais, perfect e «have something done»."
+  "notasParaOAluno": "Você descreve processos e fatos sem dizer quem os fez. Próxima aula: passiva com modais, perfect e «have something done».",
+  "geradaDoLivro": true
 }

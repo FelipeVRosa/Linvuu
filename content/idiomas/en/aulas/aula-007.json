@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você indica posse sem confundir his (“dele”) com her (“dela”), usa os pronomes independentes (mine, yours, hers, ours, theirs), aplica o caso possessivo 's para pessoas e tempo (Sarah's laptop, today's meeting), e posiciona adjetivos antes do substantivo sem colocá-los no plural (two new reports)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Antes da reunião na sala de vidro",
+          "contexto": "Lucas e sua colega canadense Sarah estão organizando a mesa da sala de conferências antes da chegada dos diretores.",
+          "linhas": [
+            {
+              "personagem": "Sarah",
+              "ru": "— Lucas, whose black notebook is this on the corner of the table? Is it yours?",
+              "pt": "",
+              "audio": "Lucas, whose black notebook is this on the corner of the table? Is it yours?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Let me see… No, it isn't mine. Mine is blue, and it's right here in my backpack. Wait — is it David's notebook? He was in this room ten minutes ago.",
+              "pt": "",
+              "audio": "Let me see… No, it isn't mine. Mine is blue, and it's right here in my backpack. Wait — is it David's notebook? He was in this room ten minutes ago."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Oh, you're right! It's his. Look, his business card is inside.",
+              "pt": "",
+              "audio": "Oh, you're right! It's his. Look, his business card is inside."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— And what about Emma? Where is her laptop? Today's presentation is on her computer!",
+              "pt": "",
+              "audio": "And what about Emma? Where is her laptop? Today's presentation is on her computer!"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Don't worry, her laptop is already connected to the big screen. She's in her office with her new assistant right now.",
+              "pt": "",
+              "audio": "Don't worry, her laptop is already connected to the big screen. She's in her office with her new assistant right now."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Great. By the way, is that your brother in this photo on your phone screen?",
+              "pt": "",
+              "audio": "Great. By the way, is that your brother in this photo on your phone screen?"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— No, that's my sister's husband, Mark! They live in Vancouver with their two small kids.",
+              "pt": "",
+              "audio": "No, that's my sister's husband, Mark! They live in Vancouver with their two small kids."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— What a nice family! Oh, here comes Emma with our printed reports.",
+              "pt": "",
+              "audio": "What a nice family! Oh, here comes Emma with our printed reports."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Descreva a sua casa em voz alta com «there is», «there are» e duas preposições de lugar."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: your é só “de você”; para uma 3ª pessoa, olhe para o dono (his = dele / her = dela). Em português, como “marido” é masculino, o brasileiro é tentado a dizer his husband para o marido da Ana. Em inglês, objetos não têm gênero: se a dona é mulher (she), tudo o que pertence a ela leva her (her husband, her father, her car). Se o dono é homem (he), tudo leva his (his wife, his mother, his house). PASSO 2: Possessivo não leva the na frente. Em português dizemos “o meu celular”, “a nossa equipe”. Em inglês, o artigo e o possessivo não andam juntos: diga apenas my phone, our team (nunca the my phone). PASSO 3: Adjetivos vêm antes do substantivo e nunca mudam de forma. Nunca coloque -s em um adjetivo em inglês: diga one new project e ten new projects (e não ten news projects).",
+          "comparacao": "Em português, a palavra “seu / sua” é ambígua (pode significar de você, dele, dela ou deles), o adjetivo vai depois do nome e recebe plural (“relatórios importantes”), e usamos a preposição “de” para tudo (“o carro do Pedro”). Veja como o inglês resolve essas quatro armadilhas:",
+          "tabela": [
+            {
+              "portugues": "A Ana ama seu marido (o marido dela).",
+              "ingles": "Ana loves her husband.",
+              "evite": "Ana loves your / his husband."
+            },
+            {
+              "portugues": "O carro da minha irmã.",
+              "ingles": "My sister's car.",
+              "evite": "The car of my sister."
+            },
+            {
+              "portugues": "Duas reuniões importantes.",
+              "ingles": "Two important meetings.",
+              "evite": "Two meetings importants."
+            },
+            {
+              "portugues": "O meu carro é preto, e o seu?",
+              "ingles": "My car is black. What about yours?",
+              "evite": "The my car… What about the your?"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "mother",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Possessivos: my, your, his, her, our, their",
           "explicacao": "PASSO 1: o possessivo concorda com o DONO, não com a coisa: «his mother» (a mãe DELE), «her mother» (a mãe DELA). PASSO 2: a lista: my (meu/minha), your (seu/sua, de você), his (dele), her (dela), our (nosso), their (deles/delas). PASSO 3: o possessivo vem ANTES do substantivo e nunca leva artigo: «my brother», não «the my brother». PASSO 4: ele não muda no plural: «my sisters», «our sons». PASSO 5: cuidado com «its» (de algo): «The cat likes its food.» PASSO 6: «Whose book is this?» = De quem é este livro? Resposta: «It's my book.»",
           "comparacao": "em português «seu/sua» é ambíguo (dele? dela? de você?) e concorda com a coisa («sua mãe»). O inglês escolhe pelo dono: «his mother» ou «her mother».",
@@ -140,8 +226,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Apresente 4 pessoas da sua família: «This is my mother. Her name is…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Descreva a sua casa em voz alta com «there is», «there are» e duas preposições de lugar."
         }
       ]
     },
@@ -151,13 +242,41 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Complete: «___ name is Ana (dela). ___ car is old (dele). ___ house is big (nossa).»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare as duas colunas de possessivos abaixo: PASSO 2: Perguntas: PASSO 3: Qual é a diferença visual entre as palavras da Coluna A (que precisam de um substantivo logo depois) e as da Coluna B (que ficam sozinhas no fim da frase)? PASSO 4: Na Cena, como Sarah perguntou “De quem é este caderno?” e como disse “o marido da minha irmã”?",
+          "tabela": [
+            {
+              "c1": "This is my notebook.",
+              "c2": "This notebook is mine."
+            },
+            {
+              "c1": "Is this your phone?",
+              "c2": "Is this phone yours?"
+            },
+            {
+              "c1": "That is his badge.",
+              "c2": "That badge is his."
+            },
+            {
+              "c1": "This is her office.",
+              "c2": "This office is hers."
+            },
+            {
+              "c1": "This is our presentation.",
+              "c2": "This presentation is ours."
+            },
+            {
+              "c1": "Those are their bags.",
+              "c2": "Those bags are theirs."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "parents",
@@ -205,7 +324,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "'s: o dono vem antes",
           "explicacao": "PASSO 1: para dizer que algo é de uma pessoa, coloque o dono ANTES e junte «'s»: «Ana's car» (o carro da Ana). PASSO 2: a ordem é o inverso do português: dono + coisa. «my brother's wife» (a esposa do meu irmão). PASSO 3: com plural terminado em -s, só o apóstrofo: «my parents' house» (a casa dos meus pais). PASSO 4: plural irregular leva 's: «the children's room». PASSO 5: não use «of» para pessoas: «the car of Ana» soa estranho. PASSO 6: cuidado: «'s» também pode ser «is» (He's tall) ou posse (Tom's car). O sentido decide.",
           "comparacao": "em português dizemos «o carro DA Ana» (coisa + de + dono). O inglês faz o contrário: «Ana's car» (dono + 's + coisa).",
@@ -251,9 +370,21 @@
           "tag": "Posse"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Possessivos com substantivo vs. Sozinhos: PASSO 2: Com nome depois:my (meu), your (seu, de você ou de vocês), his (dele), her (dela), its (dele/dela para empresa/coisa — sem apóstrofo!), our (nosso), their (deles/delas). PASSO 3: Sozinhos (sem nome depois):mine, yours, his, hers, ours, theirs (My phone is dead; can I use yours?). PASSO 4: O Genitivo 's (Dono + 's + Coisa): PASSO 5: Pessoas, animais, países e tempo: use 's (Sarah's laptop, my brother's car, Brazil's economy, today's meeting, yesterday's news). Se o plural já termina em -s, ponha só o apóstrofo no fim: my parents' house. PASSO 6: Coisas inanimadas: use substantivo + substantivo (the room key, the computer screen) ou of (the end of the movie, the name of the street). PASSO 7: Ordem e Invariabilidade dos Adjetivos: O adjetivo vem antes do substantivo e não tem plural. Se houver dois adjetivos, a opinião vem antes do fato (tamanho/idade/cor/origem): a nice big room, an amazing new Canadian company.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Diga de quem são 5 coisas: «This is Ana's car. That is my brother's dog…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «___ name is Ana (dela). ___ car is old (dele). ___ house is big (nossa).»"
         }
       ]
     },
@@ -263,13 +394,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Diga em inglês: «a casa dos meus pais», «o cachorro da Ana», «a esposa dele»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "have",
@@ -310,7 +436,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "Have e has: o que você tem",
           "explicacao": "PASSO 1: «have» é TER. Com I, you, we, they: «I have two sisters.» PASSO 2: com he, she, it, use «has»: «She has a brother.» PASSO 3: negativa com «do/does + have» (o verbo volta a «have»): «I don't have a car.», «She doesn't have a dog.» PASSO 4: pergunta: «Do you have a brother?», «Does he have a car?» PASSO 5: resposta curta: «Yes, I do.», «No, she doesn't.» PASSO 6: não diga «She doesn't has». Depois de «does/doesn't» o verbo é sempre «have». PASSO 7: não confunda com existência: «There is a dog» (existe) x «I have a dog» (é meu).",
           "comparacao": "em português «ter» serve para posse e para existência («tem um cachorro na sala»). O inglês separa: «have/has» é posse; «there is/are» é existência.",
@@ -356,34 +482,287 @@
           "tag": "Have"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "My family / A minha família",
-          "ru": "My name is Lara. I have a small family. My father is a doctor and my mother is a teacher. I have one brother. His name is Tom. Tom has a dog. The dog's name is Max. My parents' house is big, but my apartment is small. I don't have a car. My brother has a car. I like my family.",
-          "pt": "Meu nome é Lara. Tenho uma família pequena. Meu pai é médico e minha mãe é professora. Tenho um irmão. O nome dele é Tom. Tom tem um cachorro. O nome do cachorro é Max. A casa dos meus pais é grande, mas meu apartamento é pequeno. Eu não tenho carro. Meu irmão tem carro. Eu gosto da minha família.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "What does Lara's father do?",
-              "resposta": "He is a doctor."
+              "ru": "Whose phone is this on the table? — It's mine!",
+              "translit": "",
+              "pt": "De quem é este celular na mesa? — É meu!",
+              "en": "",
+              "audio": "Whose phone is this on the table? — It's mine!"
             },
             {
-              "pergunta": "Who is Tom?",
-              "resposta": "Lara's brother."
+              "ru": "My laptop battery is dead. Can I use yours for a minute?",
+              "translit": "",
+              "pt": "A bateria do meu notebook acabou. Posso usar o seu por um minuto?",
+              "en": "",
+              "audio": "My laptop battery is dead. Can I use yours for a minute?"
             },
             {
-              "pergunta": "What is the dog's name?",
-              "resposta": "Max."
+              "ru": "Emma is in her office with her new assistant.",
+              "translit": "",
+              "pt": "A Emma está no escritório dela com o novo assistente dela.",
+              "en": "",
+              "audio": "Emma is in her office with her new assistant."
             },
             {
-              "pergunta": "Does Lara have a car?",
-              "resposta": "No, she doesn't."
+              "ru": "What time is today's meeting with David's team?",
+              "translit": "",
+              "pt": "A que horas é a reunião de hoje com a equipe do David?",
+              "en": "",
+              "audio": "What time is today's meeting with David's team?"
+            },
+            {
+              "ru": "My parents' house is in a quiet old neighborhood.",
+              "translit": "",
+              "pt": "A casa dos meus pais fica em um bairro antigo e tranquilo.",
+              "en": "",
+              "audio": "My parents' house is in a quiet old neighborhood."
+            },
+            {
+              "ru": "We have two important presentations this afternoon.",
+              "translit": "",
+              "pt": "Temos duas apresentações importantes hoje à tarde.",
+              "en": "",
+              "audio": "We have two important presentations this afternoon."
+            },
+            {
+              "ru": "He's a very good friend of mine from college.",
+              "translit": "",
+              "pt": "Ele é um grande amigo meu da faculdade.",
+              "en": "",
+              "audio": "He's a very good friend of mine from college."
+            },
+            {
+              "ru": "The company is launching its new product next month.",
+              "translit": "",
+              "pt": "A empresa vai lançar o novo produto dela no mês que vem.",
+              "en": "",
+              "audio": "The company is launching its new product next month."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sarah is talking to ___ husband on her phone.",
+              "opcoes": [
+                "his",
+                "her"
+              ],
+              "gabarito": "her",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Sarah is talking to her husband on ___ phone.",
+              "opcoes": [
+                "her",
+                "hers"
+              ],
+              "gabarito": "her",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-101b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— ___ keys are these? — They aren't mine; I think they're Lucas's.",
+              "opcoes": [
+                "Who's",
+                "Whose"
+              ],
+              "gabarito": "Whose",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Whose keys are these? — They aren't ___; I think they're Lucas's.",
+              "opcoes": [
+                "my",
+                "mine"
+              ],
+              "gabarito": "mine",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "This is ___ house; my mother and father love this street.",
+              "opcoes": [
+                "my parents'",
+                "my parent's"
+              ],
+              "gabarito": "my parents'",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We have three ___ in our team.",
+              "opcoes": [
+                "news engineers",
+                "new engineers"
+              ],
+              "gabarito": "new engineers",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Toronto is famous for ___ winter, and it's a great city.",
+              "opcoes": [
+                "its",
+                "it's"
+              ],
+              "gabarito": "its",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Toronto is famous for its winter, and ___ a great city.",
+              "opcoes": [
+                "its",
+                "it's"
+              ],
+              "gabarito": "its",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-105b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Where is ___ report? I need it for the meeting.",
+              "opcoes": [
+                "the report of today",
+                "today's report"
+              ],
+              "gabarito": "today's report",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lucas is ___ from Brazil.",
+              "opcoes": [
+                "a friend of me",
+                "a friend of mine"
+              ],
+              "gabarito": "a friend of mine",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Where is ___?",
+              "opcoes": [
+                "the door of the kitchen",
+                "the kitchen door"
+              ],
+              "gabarito": "the kitchen door",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My sister loves ___ job, and her husband works at the same bank.",
+              "respostaEsperada": "her",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My sister loves her job, and ___ husband works at the same bank.",
+              "respostaEsperada": "her",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "David forgot ___ umbrella, so I gave him mine.",
+              "respostaEsperada": "his",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "David forgot his umbrella, so I gave him ___ (o meu).",
+              "respostaEsperada": "mine",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ jacket is that on the chair? — It's Emma's.",
+              "respostaEsperada": "Whose",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Whose jacket is that on the chair? — It's ___ (da Emma, com 's).",
+              "respostaEsperada": "Emma's",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We are in ___ meeting room. Where are the other teams? Are they in theirs?",
+              "respostaEsperada": "our",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We are in our meeting room. Where are the other teams? Are they in ___ (nas delas)?",
+              "respostaEsperada": "theirs",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "This is a photo of my two brothers and ___ wives.",
+              "respostaEsperada": "their",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The company is expanding ___ operations in Latin America.",
+              "respostaEsperada": "its",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My coffee is cold. How is ___ (o seu)?",
+              "respostaEsperada": "yours",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Have you seen ___ (o relatório de ontem)?",
+              "respostaEsperada": "yesterday's report",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-208a"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva 5 frases sobre a sua família com «have/has», um possessivo e um 's."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga em inglês: «a casa dos meus pais», «o cachorro da Ana», «a esposa dele»."
         }
       ]
     },
@@ -393,13 +772,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Fale 4 frases sobre o que as pessoas da sua família têm ou não têm."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -576,12 +950,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre a sua família: quem são, o que têm, de quem são as coisas."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Diga o nome de um amigo e de uma amiga sua e fale a profissão do marido/esposa ou irmão/irmã de cada um usando his, her e 's.",
+              "respostaEsperada": "My friend Carla loves her job, and her husband's name is Bruno. My friend Pedro lives in Rio, and his sister's husband is an architect.",
+              "id": "en-007-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Pergunte de quem é aquele carregador (charger) na mesa e responda que não é seu (mine), que é da Sarah (hers / Sarah's).",
+              "respostaEsperada": "Whose charger is that on the table? — It isn't mine; it's Sarah's (it's hers).",
+              "id": "en-007-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva dois objetos da sua mesa usando dois adjetivos juntos antes de cada substantivo no plural (ex.: opinião + cor/tamanho/idade).",
+              "respostaEsperada": "I have two great new laptops and three small black notebooks on my desk.",
+              "id": "en-007-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma frase diferenciando my parents (“meus pais”) de my relatives (“meus parentes”).",
+              "respostaEsperada": "My parents live in São Paulo, and my relatives live in Minas Gerais.",
+              "id": "en-007-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Julia is in Dublin with his boyfriend and your brother.",
+              "respostaEsperada": "Julia is in Dublin with her boyfriend and her brother.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The car of my father is in the garage of my parents.",
+              "respostaEsperada": "My father's car is in my parents' garage.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: We have two importants meetings with our news clients today.",
+              "respostaEsperada": "We have two important meetings with our new clients today.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: — Who's laptop is this? — It's the mine!",
+              "respostaEsperada": "— Whose laptop is this? — It's mine!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: He is a colleague of me at the bank.",
+              "respostaEsperada": "He is a colleague of mine at the bank.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The company changed it's name last year.",
+              "respostaEsperada": "The company changed its name last year.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-007-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: My sister's apartment is in a nice quiet neighborhood.",
+              "respostaEsperada": "OK",
+              "id": "en-007-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais frequente deste capítulo é escolher his ou her olhando para a coisa possuída em vez de olhar para o dono (dizendo Marina loves his father porque “pai” é masculino). Lembre-se: se a dona é a Marina (she), o pai dela é her father, o irmão dela é her brother e o filho dela é her son! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Marina loves his husband.",
+              "certo": "Marina loves her husband.",
+              "motivo": "A dona é Marina (she), logo usa-se her mesmo antes de palavras masculinas."
+            },
+            {
+              "errado": "The laptop of Lucas.",
+              "certo": "Lucas's laptop.",
+              "motivo": "Posse de pessoas em inglês usa Dono + 's + Coisa."
+            },
+            {
+              "errado": "Two importants projects.",
+              "certo": "Two important projects.",
+              "motivo": "Adjetivos em inglês vêm antes do nome e nunca levam -s."
+            },
+            {
+              "errado": "It's the mine. / The my car.",
+              "certo": "It's mine. / My car.",
+              "motivo": "Possessivos em inglês nunca aceitam o artigo the na frente."
+            },
+            {
+              "errado": "A friend of me.",
+              "certo": "A friend of mine.",
+              "motivo": "Na estrutura “um amigo meu”, usa-se of + pronome independente (mine, hers, ours)."
+            },
+            {
+              "errado": "The company changed it's logo.",
+              "certo": "The company changed its logo.",
+              "motivo": "its (sem apóstrofo) é possessivo; it's (com apóstrofo) significa it is."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 2. Como você pede educadamente um café com leite de aveia para viagem e pergunta quanto custam aqueles cookies lá na prateleira? 2. Do Capítulo 2. Qual é o plural de person, woman, child, city e shelf? 3. Do Capítulo 1. Por que dizemos an hour e an MBA, mas a university?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Falar da família e dos pertences de um homem (his) e de uma mulher (her) sem trocar os dois. Perguntar Whose…? e responder com mine, yours, hers, ours ou Name's. Usar dois adjetivos antes de um substantivo plural sem colocar -s nos adjetivos."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você apresenta a sua família e fala do que cada pessoa tem. Próxima aula: comida e pedidos."
+  "notasParaOAluno": "Você apresenta a sua família e fala do que cada pessoa tem. Próxima aula: comida e pedidos.",
+  "geradaDoLivro": true
 }

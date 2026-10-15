@@ -15,13 +15,93 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa mais de vinte phrasal verbs frequentes na vida cotidiana e no trabalho (turn on/off, pick up, fill out, find out, figure out, put off, call off, run out of, look forward to), sabe quando o objeto pode ir no meio e coloca o pronome no lugar certo nos verbos separáveis (turn it off, pick them up)."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Resolvendo problemas antes da apresentação",
+          "contexto": "Faltam quinze minutos para a apresentação de resultados em Toronto. Lucas e Sarah estão na sala de reunião ajustando os equipamentos.",
+          "linhas": [
+            {
+              "personagem": "Lucas",
+              "ru": "— Sarah, the projector is off. How do I turn it on?",
+              "pt": "— Sarah, o projetor está desligado. Como eu o ligo?",
+              "audio": "Sarah, the projector is off. How do I turn it on?"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Here's the remote — just press the green button. Oh, wait: the screen is too bright because of the sun. Could you close the blinds, or turn the front lights off?",
+              "pt": "— Aqui está o controle remoto — é só apertar o botão verde. Ah, espere: a tela está clara demais por causa do sol. Você poderia fechar as persianas, ou apagar as luzes da frente?",
+              "audio": "Here's the remote — just press the green button. Oh, wait: the screen is too bright because of the sun. Could you close the blinds, or turn the front lights off?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Sure, I'll turn them off right now. By the way, did you find out why the client wanted to put off the meeting yesterday?",
+              "pt": "— Claro, vou apagá-las agora mesmo. Aliás, você descobriu por que o cliente quis adiar a reunião ontem?",
+              "audio": "Sure, I'll turn them off right now. By the way, did you find out why the client wanted to put off the meeting yesterday?"
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Yes! Their director was stuck at the airport in Chicago, so they asked to move it to today. Luckily, they didn't call it off!",
+              "pt": "— Sim! O diretor deles ficou preso no aeroporto em Chicago, então pediram para mudar para hoje. Por sorte, não cancelaram!",
+              "audio": "Yes! Their director was stuck at the airport in Chicago, so they asked to move it to today. Luckily, they didn't call it off!"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Phew! Look, we've run out of printed handouts — there are only three copies on the table.",
+              "pt": "— Ufa! Olha, acabaram os nossos folhetos impressos — só tem três cópias na mesa.",
+              "audio": "Phew! Look, we've run out of printed handouts — there are only three copies on the table."
+            },
+            {
+              "personagem": "Sarah",
+              "ru": "— Don't worry, I'll print five more copies and bring them in. Also, please ask the visitors to fill out this feedback form before they leave.",
+              "pt": "— Não se preocupe, vou imprimir mais cinco cópias e trazê-las. Além disso, por favor peça aos visitantes para preencherem este formulário de avaliação antes de saírem.",
+              "audio": "Don't worry, I'll print five more copies and bring them in. Also, please ask the visitors to fill out this feedback form before they leave."
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Got it! I'm really looking forward to closing this deal today!",
+              "pt": "— Combinado! Estou muito ansioso para fechar este negócio hoje!",
+              "audio": "Got it! I'm really looking forward to closing this deal today!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Conte uma experiência sua usando o present perfect e o passado simples."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: A regra dos separáveis: se o objeto for um PRONOME (me, you, him, her, it, us, them), ele entra no meio. Se o objeto for um substantivo (the light), você tem liberdade para colocá-lo depois ou no meio (Turn off the light = Turn the light off). Mas se você trocar the light pelo pronome it (ou the lights por them), o pronome entra no meio: Turn it off! / Turn them off! (nunca Turn off it). PASSO 2: Nos inseparáveis (como look for, look after, wait for), nada entra no meio. Quando a segunda palavra é uma preposição de ligação (for, after, into), o bloco não se separa, nem com pronome: I'm looking for my keys → I'm looking for them (nunca looking them for). PASSO 3: Em look forward to (“estar ansioso por / aguardar com expectativa”), o to é uma preposição e pede -ing (Capítulo 17). Essa expressão fecha muitos e-mails profissionais em inglês, e o verbo seguinte leva -ing: I look forward to meeting you / I'm looking forward to working with you (nunca look forward to meet).",
+          "comparacao": "Em português, não temos verbos partidos em dois pedaços com um objeto no meio. Por isso, quem fala português comete erros clássicos ao usar phrasal verbs:",
+          "tabela": [
+            {
+              "portugues": "Desligue-o! / Pegue-os!",
+              "ingles": "Turn it off! / Pick them up!",
+              "evite": "Turn off it! / Pick up them!"
+            },
+            {
+              "portugues": "Estou procurando minhas chaves.",
+              "ingles": "I'm looking for my keys.",
+              "evite": "I'm looking my keys / looking for it. (keys = plural them!)"
+            },
+            {
+              "portugues": "Estou ansioso para viajar!",
+              "ingles": "I'm looking forward to traveling!",
+              "evite": "I'm looking forward to travel!"
+            },
+            {
+              "portugues": "Acabou o café!",
+              "ingles": "We've run out of coffee!",
+              "evite": "The coffee finished / ended!"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "wake up",
@@ -83,7 +163,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Phrasal verbs: verbo + partícula",
           "explicacao": "PASSO 1: um phrasal verb é um VERBO + uma PARTÍCULA (up, down, on, off, out, in, away) que juntos têm um significado próprio: «turn on» (ligar). PASSO 2: o sentido muda com a partícula: «turn on» (ligar), «turn off» (desligar), «turn up» (aumentar), «turn down» (diminuir ou recusar). PASSO 3: SEPARÁVEIS: o objeto pode ir entre o verbo e a partícula: «Turn the TV on» ou «Turn on the TV». PASSO 4: se o objeto for um PRONOME, ele DEVE ficar no meio: «Turn it on», nunca «Turn on it». PASSO 5: INSEPARÁVEIS: o verbo e a partícula ficam juntos: «look after the children», «look after them». PASSO 6: sem objeto, o phrasal verb é intransitivo: «Wake up!», «Sit down.»",
           "comparacao": "em português «ligar a TV» e «desligar a TV» são verbos diferentes. Em inglês o mesmo verbo muda com a partícula: «turn on» e «turn off». Aprenda o conjunto, não o verbo sozinho.",
@@ -135,8 +215,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 8 ações da sua manhã usando phrasal verbs: wake up, get up, put on, turn off…"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Conte uma experiência sua usando o present perfect e o passado simples."
         }
       ]
     },
@@ -146,13 +231,32 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Complete: «Turn ___ the lights. Put ___ your shoes. Take ___ your coat.»"
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare o comportamento dos três grupos de phrasal verbs na tabela abaixo: PASSO 2: Perguntas: PASSO 3: Como você responde usando pronome: “Can you fill out this form?” → “Sure, I'll fill ____ ____ right now!”? PASSO 4: Por que dizemos Take your shoes off → Take them off (no meio), mas Get off the bus → Get off it (depois)?",
+          "tabela": [
+            {
+              "c1": "Tipo 1: Separáveis (turn on/off, put on, take off, pick up, fill out, put off, call off, give back)",
+              "c2": "Aceita as 2 posições: Turn off the TV. = Turn the TV off. Pick up the kids. = Pick the kids up.",
+              "c3": "No meio:Turn it off. (e não Turn off it) Pick them up. (e não Pick up them)"
+            },
+            {
+              "c1": "Tipo 2: Inseparáveis (look for, look after, get on/off, run into, deal with, run out of, look forward to)",
+              "c2": "Só depois: I'm looking for my badge.She looks after her mom.",
+              "c3": "Depois:I'm looking for it.She looks after her."
+            },
+            {
+              "c1": "Tipo 3: Sem objeto (Intransitivos) (wake up, get up, sit down, stand up, come back, go out, break down)",
+              "c2": "Não têm objeto: What time do you get up?The car broke down on the highway.",
+              "c3": "(Sempre juntos, sem objeto)."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "look for",
@@ -200,7 +304,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Mais phrasal verbs de todo dia",
           "explicacao": "PASSO 1: «look for» = procurar (algo que perdeu); «look at» = olhar; «look after» = cuidar de; «look up» = pesquisar. PASSO 2: «pick up» = pegar do chão, buscar alguém: «I'll pick you up at six.» PASSO 3: «give up» = desistir: «Don't give up!» PASSO 4: «find out» = descobrir uma informação: «I found out the answer.» PASSO 5: «go out» = sair (para se divertir): «We go out on Fridays.» PASSO 6: «come in» = entrar, «come back» = voltar, «come over» = aparecer em casa. PASSO 7: o mesmo phrasal verb pode ter vários sentidos: «pick up» = pegar do chão OU aprender algo rápido («pick up a language»).",
           "comparacao": "em português «descobrir», «desistir» e «procurar» são verbos únicos. Em inglês são frases fixas de duas palavras: «find out», «give up», «look for».",
@@ -256,9 +360,21 @@
           "tag": "Uso diário"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: O que é um Phrasal Verb: É a união de um verbo com uma partícula (up, down, on, off, in, out, away, back) que cria um significado novo — muitas vezes mais natural na fala do que o verbo formal equivalente. PASSO 2: O pronome no meio (separáveis): PASSO 3: Com substantivo: Put on your jacket = Put your jacket on. PASSO 4: Com pronome (me, you, him, her, it, us, them): no meio → Put it on! / Take them off! / Pick me up! / Turn it down! / Throw it away!. PASSO 5: Inseparáveis e de três palavras (objeto sempre no fim): PASSO 6: look for (procurar), look after (cuidar de), deal with (lidar com), run into (encontrar por acaso), run out of (ficar sem / acabar), get along with (dar-se bem com), look forward to + -ing (aguardar ansiosamente por). PASSO 7: Dica prática: ao aprender um phrasal verb separável, grave-o já com it no meio: turn it off, pick it up, fill it out, figure it out. Assim a posição certa sai automática na hora de falar.",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Use 6 phrasal verbs em frases suas: look for, look at, pick up, give up, find out, go out."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «Turn ___ the lights. Put ___ your shoes. Take ___ your coat.»"
         }
       ]
     },
@@ -268,13 +384,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Substitua pelo phrasal verb: «desistir», «descobrir», «procurar», «buscar alguém»."
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "come in",
@@ -315,7 +426,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Reagir e pedir com phrasal verbs",
           "explicacao": "PASSO 1: imperativos com phrasal verbs são muito comuns: «Come in!», «Sit down!», «Hurry up!», «Calm down!» PASSO 2: para soar educado, acrescente «please» ou use «Could you…?»: «Could you turn the music down, please?» PASSO 3: respostas: «Sure, I'll turn it down.» PASSO 4: perguntas: «Can you pick me up?», «Did you find out?»",
           "comparacao": "em português «calma» e «vamos logo» são expressões curtas. Em inglês, «calm down» e «hurry up» fazem o mesmo papel, mas podem soar bruscos se faltar educação.",
@@ -349,7 +460,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Getting ready / Preparando-se para sair",
           "contexto": "Lara e Tom se arrumam.",
           "linhas": [
@@ -392,9 +503,224 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "It's dark in here — could you turn the lights on, please?",
+              "translit": "",
+              "pt": "Está escuro aqui — você poderia acender as luzes, por favor?",
+              "en": "",
+              "audio": "It's dark in here — could you turn the lights on, please?"
+            },
+            {
+              "ru": "What time should I pick you up at the hotel tomorrow?",
+              "translit": "",
+              "pt": "A que horas devo te buscar no hotel amanhã?",
+              "en": "",
+              "audio": "What time should I pick you up at the hotel tomorrow?"
+            },
+            {
+              "ru": "Don't worry about the problem; we'll figure it out!",
+              "translit": "",
+              "pt": "Não se preocupe com o problema; vamos dar um jeito de resolver!",
+              "en": "",
+              "audio": "Don't worry about the problem; we'll figure it out!"
+            },
+            {
+              "ru": "Please fill out this form and hand it in at the front desk.",
+              "translit": "",
+              "pt": "Por favor, preencha este formulário e entregue na recepção.",
+              "en": "",
+              "audio": "Please fill out this form and hand it in at the front desk."
+            },
+            {
+              "ru": "We had to put the meeting off until next Wednesday.",
+              "translit": "",
+              "pt": "Tivemos que adiar a reunião para a próxima quarta-feira.",
+              "en": "",
+              "audio": "We had to put the meeting off until next Wednesday."
+            },
+            {
+              "ru": "Oh no, my phone is about to run out of battery!",
+              "translit": "",
+              "pt": "Ah não, meu celular está prestes a ficar sem bateria!",
+              "en": "",
+              "audio": "Oh no, my phone is about to run out of battery!"
+            },
+            {
+              "ru": "I ran into an old colleague at the airport yesterday!",
+              "translit": "",
+              "pt": "Encontrei por acaso um ex-colega no aeroporto ontem!",
+              "en": "",
+              "audio": "I ran into an old colleague at the airport yesterday!"
+            },
+            {
+              "ru": "I'm really looking forward to working with your team.",
+              "translit": "",
+              "pt": "Estou muito ansioso(a) para trabalhar com a sua equipe.",
+              "en": "",
+              "audio": "I'm really looking forward to working with your team."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The TV is too loud! Can you please ___?",
+              "opcoes": [
+                "turn down it",
+                "turn it down"
+              ],
+              "gabarito": "turn it down",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Your wet shoes are dirty — please ___ before coming inside!",
+              "opcoes": [
+                "take them off",
+                "take off them"
+              ],
+              "gabarito": "take them off",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I can't find my office badge; I've been ___ for ten minutes!",
+              "opcoes": [
+                "looking it for",
+                "looking for it"
+              ],
+              "gabarito": "looking for it",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The client is sick, so we need to ___ until Friday.",
+              "opcoes": [
+                "put off the meeting",
+                "look after the meeting"
+              ],
+              "gabarito": "put off the meeting",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Did you ___ how much the new software costs?",
+              "opcoes": [
+                "find out",
+                "fill out"
+              ],
+              "gabarito": "find out",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "We need to stop at a gas station because we're ___ gas!",
+              "opcoes": [
+                "running into",
+                "running out of"
+              ],
+              "gabarito": "running out of",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'm really looking forward to ___ you in person next week!",
+              "opcoes": [
+                "meet",
+                "meeting"
+              ],
+              "gabarito": "meeting",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Don't throw those boxes ___ — we need them!",
+              "opcoes": [
+                "away",
+                "up"
+              ],
+              "gabarito": "away",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Can you turn off (the air conditioner)? → Can you ___?",
+              "respostaEsperada": "turn it off",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I'll pick up (Sarah) at the train station. → I'll ___ at the train station.",
+              "respostaEsperada": "pick her up",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Please fill out (these two forms). → Please ___.",
+              "respostaEsperada": "fill them out",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "They had to call off (the conference). → They had to ___.",
+              "respostaEsperada": "call it off",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I'm looking for (my glasses). → I'm ___.",
+              "respostaEsperada": "looking for them",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I don't know how this app works, but I'll figure ___ out!",
+              "respostaEsperada": "it",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-206a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "We've run ___ ___ milk; can you buy some on your way home?",
+              "respostaEsperada": "out of",
+              "id": "en-034-L-207"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "We're really looking forward ___ ___ (have) a few days off next month!",
+              "respostaEsperada": "to having",
+              "id": "en-034-L-208"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Escreva um diálogo de 6 falas entre duas pessoas se preparando para sair, usando 5 phrasal verbs."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Substitua pelo phrasal verb: «desistir», «descobrir», «procurar», «buscar alguém»."
         }
       ]
     },
@@ -404,13 +730,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Conte a sua manhã de hoje usando 6 phrasal verbs."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -588,12 +909,147 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Descreva em 1 minuto um dia comum usando 8 phrasal verbs diferentes."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva a sua rotina de manhã e à noite usando quatro phrasal verbs (wake up, get up, put on, take off, turn on, turn off), colocando pelo menos um pronome no meio (it / them).",
+              "respostaEsperada": "Every morning I wake up at six thirty, get up at seven, put on my running shoes, and turn on the coffee machine. At night, I take my shoes off and turn the TV off (turn it off) at eleven.",
+              "id": "en-034-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas frases de trabalho usando set up (agendar/configurar), put off (adiar) ou call off (cancelar).",
+              "respostaEsperada": "Let's set up a video call for tomorrow morning; we shouldn't put it off again.",
+              "id": "en-034-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte algo que acabou na sua casa ou escritório usando We've run out of… e algo que você descobriu recentemente usando I found out that….",
+              "respostaEsperada": "We've run out of printer paper at the office, and I just found out that the store is closed today.",
+              "id": "en-034-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva a frase perfeita de encerramento para um e-mail profissional usando I look forward to + -ing….",
+              "respostaEsperada": "I look forward to hearing from you soon, and I'm looking forward to working with your team!",
+              "id": "en-034-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Your phone is ringing — are you going to pick up it?",
+              "respostaEsperada": "Your phone is ringing — are you going to pick it up?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Here is the registration form: please fill out it and give back it to me.",
+              "respostaEsperada": "Here is the registration form: please fill it out and give it back to me.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'm looking forward to see you at the conference on Monday!",
+              "respostaEsperada": "I'm looking forward to seeing you at the conference on Monday!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The coffee finished in the kitchen! Can you buy some more? (use run out of!).",
+              "respostaEsperada": "We've run out of coffee in the kitchen! Can you buy some more?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Where are my keys? I'm looking them for everywhere!",
+              "respostaEsperada": "Where are my keys? I'm looking for them everywhere!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: It's very hot in the car; please take off it (your jacket)!",
+              "respostaEsperada": "It's very hot in the car; please take it off!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'll call back you in five minutes, okay?",
+              "respostaEsperada": "I'll call you back in five minutes, okay?",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-034-L-c07"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Don't worry about the technical issue — our engineers will figure it out soon.",
+              "respostaEsperada": "OK",
+              "id": "en-034-L-c08"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os três erros que mais denunciam a falta de prática com phrasal verbs são deixar o pronome no final de um verbo separável (Turn off it / Pick up me / Fill out it em vez de Turn it off / Pick me up / Fill it out), usar infinitivo depois de look forward to (look forward to meet you em vez de look forward to meeting you) e separar look for (look it for em vez de look for it). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Turn off it! / Turn on them!",
+              "certo": "Turn it off! / Turn them on!",
+              "motivo": "Nos separáveis, os pronomes (it, them, me, her) entram no meio."
+            },
+            {
+              "errado": "Can you pick up me at eight?",
+              "certo": "Can you pick me up at eight?",
+              "motivo": "Pronome objeto (me) vai sempre entre pick e up."
+            },
+            {
+              "errado": "Please fill out it.",
+              "certo": "Please fill it out.",
+              "motivo": "Fill out é separável; o pronome it entra no meio."
+            },
+            {
+              "errado": "I'm looking my keys / looking them for.",
+              "certo": "I'm looking for my keys / looking for them.",
+              "motivo": "“Procurar” exige a preposição for e é inseparável (look for them)."
+            },
+            {
+              "errado": "I look forward to see you.",
+              "certo": "I look forward to seeing you.",
+              "motivo": "O to em look forward to é preposição e exige -ing."
+            },
+            {
+              "errado": "My battery ended / finished.",
+              "certo": "My battery died / I ran out of battery.",
+              "motivo": "Em inglês natural, a bateria dies ou nós run out of battery / coffee / time."
+            },
+            {
+              "errado": "I'll call back you later.",
+              "certo": "I'll call you back later.",
+              "motivo": "Call back é separável: o pronome (you) entra no meio."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 17 e 18. Explique por que, tanto em Before leaving, turn the lights off quanto em I look forward to hearing from you, o verbo termina em -ing. 2. Do Capítulo 15 e 18. Una o Present Perfect Continuous com um phrasal verb: como você diz “Estou procurando minhas chaves há vinte minutos”? 3. Substituição. Qual phrasal verb os nativos usam na fala no lugar de: (a) postpone a meeting; (b) cancel an event; (c) discover the price; (d) solve a problem?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Colocar it, them, me, you, him, her automaticamente no meio dos phrasal verbs separáveis (turn it off, pick me up, figure it out). Usar find out, figure out, put off, call off, set up, run out of em conversas de trabalho e viagens. · Encerrar conversas e e-mails com I'm looking forward to + -ing sem errar o gerúndio."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você entende e usa os phrasal verbs do dia a dia. Próxima aula: mais phrasal verbs."
+  "notasParaOAluno": "Você entende e usa os phrasal verbs do dia a dia. Próxima aula: mais phrasal verbs.",
+  "geradaDoLivro": true
 }

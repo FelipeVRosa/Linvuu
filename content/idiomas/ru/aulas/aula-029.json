@@ -15,13 +15,13 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva de memória as seis perguntas dos casos (кто? кого? кому? кого? кем? о ком?)."
+          "tipo": "intro",
+          "min": 1,
+          "texto": "(ou: o mapa mestre — como juntar possessivo + adjetivo + substantivo em qualquer frase sem travar)"
         },
         {
           "tipo": "gramatica",
-          "min": 20,
+          "min": 19,
           "titulo": "Os seis casos: substantivos",
           "explicacao": "Este é o quadro que organiza tudo: seis casos × três gêneros × singular e plural. Leia por colunas: cada coluna (masculino, feminino, neutro, plural) tem o seu padrão. Regra de ouro do acusativo: se é inanimado (coisa), o acusativo é igual ao nominativo no masculino, no neutro e no plural; no feminino, -а vira -у. Se é animado (pessoa ou animal), o acusativo é igual ao genitivo no masculino e no plural. O preposicional vem sempre com preposição (в, на, о, при) e, no plural, termina em -ах ou -ях. Exemplos: стол (m), книга (f), окно (n).",
           "tabelas": [
@@ -126,6 +126,11 @@
           "tipo": "producao",
           "min": 5,
           "enunciado": "Decline em voz alta, nos seis casos, a palavra «книга» no singular e no plural."
+        },
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva de memória as seis perguntas dos casos (кто? кого? кому? кого? кем? о ком?)."
         }
       ]
     },
@@ -135,13 +140,123 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os seis casos de «стол» no singular."
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "O Nominativo Plural Regular e os 3 Grupos de Irregulares e mais 3",
+          "explicacao": "PASSO 1: O Nominativo Plural Regular e os 3 Grupos de Irregulares. No Nominativo Plural, masculinos e femininos terminam em -Ы (duro) ou -И (brando e após as 7 letras г, к, х, ж, ч, ш, щ), e neutros trocam -о/-е por -А / -Я: PASSO 2: Os Possessivos, Demonstrativos e a Pergunta ЧЕЙ? (De quem?) PASSO 3: O Mapa Mestre: Adjetivos e Possessivos nos 6 Casos PASSO 4: Quadro-resumo · adjetivos e possessivos nos 6 casos",
+          "tag": "Livro",
+          "tabelas": [
+            {
+              "titulo": "O Nominativo Plural Regular e os 3 Grupos de Irregulares",
+              "linhas": [
+                {
+                  "GRUPO": "Regulares + 7 Letras",
+                  "SINGULAR → PLURAL": "стол → столы́ · кни́га → кни́ги · окно́ → о́кна · мо́ре → моря́",
+                  "TRADUÇÃO E REGRA": "Mesa, livro (7 letras: г+и), janela, mar"
+                },
+                {
+                  "GRUPO": "1. Masculinos em -А́ / -Я́ tônico",
+                  "SINGULAR → PLURAL": "дом → дома́ · го́род → города́ · глаз → глаза́ · па́спорт → паспорта́ · по́езд → поезда́ · ве́чер → вечера́ · учи́тель → учителя́",
+                  "TRADUÇÃO E REGRA": "Casas, cidades, olhos, passaportes, trens, noites, professores"
+                },
+                {
+                  "GRUPO": "2. Plurais em -ЬЯ",
+                  "SINGULAR → PLURAL": "друг → друзья́ · брат → бра́тья · сын → сыновья́ · стул → сту́лья · де́рево → дере́вья · муж → мужья́",
+                  "TRADUÇÃO E REGRA": "Amigos, irmãos, filhos, cadeiras, árvores, maridos"
+                },
+                {
+                  "GRUPO": "3. Especiais Indispensáveis",
+                  "SINGULAR → PLURAL": "челове́к → лю́ди · ребёнок → де́ти · мать → ма́тери · дочь → до́чери · я́блоко → я́блоки · вре́мя → времена́ · и́мя → имена́",
+                  "TRADUÇÃO E REGRA": "Pessoas, crianças/filhos, mães, filhas, maçãs, tempos, nomes"
+                }
+              ]
+            },
+            {
+              "titulo": "Os Possessivos, Demonstrativos e a Pergunta ЧЕЙ? (De quem?)",
+              "linhas": [
+                {
+                  "SIGNIFICADO": "De quem?",
+                  "MASCULINO": "Чей дом?",
+                  "FEMININO": "Чья кни́га?",
+                  "NEUTRO": "Чьё окно́?",
+                  "PLURAL": "Чьи ключи́?"
+                },
+                {
+                  "SIGNIFICADO": "meu / teu / seu (próprio)",
+                  "MASCULINO": "мой / твой / свой",
+                  "FEMININO": "моя́ / твоя́ / своя́",
+                  "NEUTRO": "моё / твоё / своё",
+                  "PLURAL": "мои́ / твои́ / свои́"
+                },
+                {
+                  "SIGNIFICADO": "nosso / vosso (seu formal)",
+                  "MASCULINO": "наш / ваш",
+                  "FEMININO": "на́ша / ва́ша",
+                  "NEUTRO": "на́ше / ва́ше",
+                  "PLURAL": "на́ши / ва́ши"
+                },
+                {
+                  "SIGNIFICADO": "dele / dela / deles (Invariáveis!)",
+                  "MASCULINO": "его́ / её / их",
+                  "FEMININO": "его́ / её / их",
+                  "NEUTRO": "его́ / её / их",
+                  "PLURAL": "его́ / её / их"
+                },
+                {
+                  "SIGNIFICADO": "este / aquele",
+                  "MASCULINO": "э́тот / тот",
+                  "FEMININO": "э́та / та",
+                  "NEUTRO": "э́то / то",
+                  "PLURAL": "э́ти / те"
+                }
+              ]
+            },
+            {
+              "titulo": "O Mapa Mestre: Adjetivos e Possessivos nos 6 Casos",
+              "linhas": [
+                {
+                  "CASO": ".MON",
+                  "MASCULINO E NEUTRO": "Masc: -ый/-ой/-ий (мой, наш, э́тот) Neut: -ое/-ее (моё, на́ше, э́то)",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-АЯ / -ЯЯ (моя,́ на́ша, э́та)",
+                  "PLURAL (TODOS OS GÊNEROS)": "-ЫЕ / -ИЕ (мои,́ на́ши, э́ти)"
+                },
+                {
+                  "CASO": ".SUCA",
+                  "MASCULINO E NEUTRO": "Inan. = Nom. · Anim. = -ОГО / -ЕГО",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-УЮ / -ЮЮ (мою,́ на́шу, э́ту)",
+                  "PLURAL (TODOS OS GÊNEROS)": "Inan. = Nom. · Anim. = -ЫХ / -ИХ"
+                },
+                {
+                  "CASO": ".NEG",
+                  "MASCULINO E NEUTRO": "-ОГО / -ЕГО (моего,́ на́шего, э́того)",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-ОЙ / -ЕЙ (мое́й, на́шей, э́той)",
+                  "PLURAL (TODOS OS GÊNEROS)": "-ЫХ / -ИХ (мои́х, на́ших, э́тих)"
+                },
+                {
+                  "CASO": ".TAD",
+                  "MASCULINO E NEUTRO": "-ОМУ / -ЕМУ (моему,́ на́шему, э́тому)",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-ОЙ / -ЕЙ (мое́й, на́шей, э́той)",
+                  "PLURAL (TODOS OS GÊNEROS)": "-ЫМ / -ИМ (мои́м, на́шим, э́тим)"
+                },
+                {
+                  "CASO": ".TSNI",
+                  "MASCULINO E NEUTRO": "-ЫМ / -ИМ (мои́м, на́шим, э́тим)",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-ОЙ / -ЕЙ (мое́й, на́шей, э́той)",
+                  "PLURAL (TODOS OS GÊNEROS)": "-ЫМИ / -ИМИ (мои́ми, на́шими, э́тими)"
+                },
+                {
+                  "CASO": ".PERP",
+                  "MASCULINO E NEUTRO": "-ОМ / -ЕМ (в моём, на́шем, э́том)",
+                  "FEMININO (ATALHO: 4 CASOS EM -ОЙ/-ЕЙ!)": "-ОЙ / -ЕЙ (в мое́й, на́шей, э́той)",
+                  "PLURAL (TODOS OS GÊNEROS)": "-ЫХ / -ИХ (в мои́х, на́ших, э́тих)"
+                }
+              ]
+            }
+          ]
         },
         {
           "tipo": "gramatica",
-          "min": 20,
+          "min": 16,
           "titulo": "Os seis casos: adjetivos e possessivos",
           "explicacao": "O adjetivo e o possessivo mudam junto com o substantivo e sempre concordam com ele em gênero, número e caso. Um truque: as terminações do adjetivo são parecidas com a pergunta do caso («какой? какого? какому? каким? о каком?»). O acusativo segue a mesma regra dos substantivos: inanimado = nominativo; animado masculino e plural animado = genitivo. Preposicional: -ом / -ой / -ом / -ых.",
           "exemplos": [
@@ -281,8 +396,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga: «Я читаю новую книгу. Я иду с моим другом. Я звоню моей маме. Я живу в большом городе.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva os seis casos de «стол» no singular."
         }
       ]
     },
@@ -291,11 +411,6 @@
       "titulo": "Pronomes e preposições",
       "duracaoMin": 30,
       "blocos": [
-        {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva os pronomes pessoais no dativo e no instrumental."
-        },
         {
           "tipo": "gramatica",
           "min": 12,
@@ -415,6 +530,11 @@
           "tipo": "producao",
           "min": 5,
           "enunciado": "Diga 5 frases, cada uma com um caso diferente e uma preposição diferente."
+        },
+        {
+          "tipo": "revisao",
+          "min": 5,
+          "enunciado": "Escreva os pronomes pessoais no dativo e no instrumental."
         }
       ]
     },
@@ -424,13 +544,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva uma frase para cada um dos seis casos."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 13,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -623,11 +738,103 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Grave-se dizendo 6 frases, cada uma com um caso diferente."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva uma frase para cada um dos seis casos."
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "fill-gap",
+              "enunciado": "дом → ___",
+              "respostaEsperada": "дома",
+              "explicacao": "дома́",
+              "id": "ru-029-L-101"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "го́род → ___",
+              "respostaEsperada": "города",
+              "explicacao": "города́",
+              "id": "ru-029-L-102"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "друг → ___",
+              "respostaEsperada": "друзья",
+              "explicacao": "друзья́",
+              "id": "ru-029-L-103"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "брат → ___",
+              "respostaEsperada": "братья",
+              "explicacao": "бра́тья",
+              "id": "ru-029-L-104"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "стул → ___",
+              "respostaEsperada": "стулья",
+              "explicacao": "сту́лья",
+              "id": "ru-029-L-105"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "ребёнок → ___",
+              "respostaEsperada": "дети",
+              "explicacao": "де́ти",
+              "id": "ru-029-L-106"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "челове́к → ___",
+              "respostaEsperada": "люди",
+              "explicacao": "лю́ди",
+              "id": "ru-029-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "па́спорт → ___",
+              "respostaEsperada": "паспорта",
+              "explicacao": "паспорта́",
+              "id": "ru-029-L-108"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Decline \"моя́ но́вая маши́на\" nos 6 casos:  Вот ____ (Nom.).",
+              "respostaEsperada": "моя́ но́вая маши́на",
+              "id": "ru-029-L-201"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Decline \"моя́ но́вая маши́на\" nos 6 casos:  Я ви́жу ____ (Acus.).",
+              "respostaEsperada": "мою́ но́вую маши́ну",
+              "id": "ru-029-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Decline \"моя́ но́вая маши́на\" nos 6 casos:  У меня́ нет ____ (Gen.).",
+              "respostaEsperada": "мое́й но́вой маши́ны",
+              "id": "ru-029-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Decline \"моя́ но́вая маши́на\" nos 6 casos:  Я иду́ к ____ (Dat.).",
+              "respostaEsperada": "мое́й но́вой маши́не",
+              "id": "ru-029-L-204"
+            }
+          ]
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você tem o quadro completo dos casos e sabe consultá-lo. O resto é prática."
+  "notasParaOAluno": "Você tem o quadro completo dos casos e sabe consultá-lo. O resto é prática.",
+  "geradaDoLivro": true
 }

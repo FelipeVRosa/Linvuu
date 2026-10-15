@@ -15,13 +15,75 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa war, hatte e os modais no pretérito na fala, forma o pretérito dos verbos regulares, reconhece os mais comuns dos irregulares (ging, kam, sah, fuhr) e sabe quando usar Präteritum e quando usar Perfekt."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Ontem foi um dia cansativo",
+          "contexto": "Jonas pergunta a Camila por que ela estava com cara de cansada. Depois, o diário dela.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Warst du gestern müde?",
+              "pt": "— Você estava cansada ontem?",
+              "audio": "Warst du gestern müde?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, sehr müde. Ich hatte viel Arbeit. Ich konnte nicht schlafen.",
+              "pt": "— Sim, muito. Eu tinha muito trabalho. Não consegui dormir.",
+              "audio": "Ja, sehr müde. Ich hatte viel Arbeit. Ich konnte nicht schlafen."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Musstest du lange arbeiten?",
+              "pt": "— Você teve de trabalhar muito tempo?",
+              "audio": "Musstest du lange arbeiten?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, ich musste bis zehn Uhr arbeiten. Ich wollte früh gehen, aber ich durfte nicht.",
+              "pt": "— Sim, tive de trabalhar até as dez. Eu queria sair cedo, mas não pude. Diário da Camila. Ontem foi um dia longo. Acordei às seis, peguei o ônibus para o trabalho. No escritório trabalhei bastante. À noite o Jonas chegou e cozinhamos juntos. Depois vi um filme e adormeci rápido.",
+              "audio": "Ja, ich musste bis zehn Uhr arbeiten. Ich wollte früh gehen, aber ich durfte nicht."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 6 frases no Perfekt, com «haben» e com «sein»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: war, hatte, konnte, musste, wollte, durfte funcionam na fala. Os outros verbos no pretérito aparecem sobretudo em histórias e textos.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Eu estava cansada.",
+              "ingles": "Ich war müde."
+            },
+            {
+              "portugues": "Eu tinha muito trabalho.",
+              "ingles": "Ich hatte viel Arbeit."
+            },
+            {
+              "portugues": "Eu não consegui dormir.",
+              "ingles": "Ich konnte nicht schlafen."
+            },
+            {
+              "portugues": "Eu tive de trabalhar.",
+              "ingles": "Ich musste arbeiten."
+            },
+            {
+              "portugues": "Ela foi para casa.",
+              "ingles": "Sie ging nach Hause."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "früher",
@@ -83,7 +145,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Sein e haben no Präteritum, passo a passo",
           "explicacao": "PASSO 1: «Präteritum» é outra forma do passado, mais usada na ESCRITA e em textos. PASSO 2: com «sein» e «haben», a CONVERSA também usa o Präteritum, em vez do Perfekt: dizemos «Ich war müde», não «Ich bin müde gewesen»; dizemos «Ich hatte Fieber», não «Ich habe Fieber gehabt». PASSO 3: as formas de «sein»: ich war, du warst, er war, wir waren, ihr wart, sie waren. PASSO 4: as formas de «haben»: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. PASSO 5: note que «ich» e «er» são IGUAIS (war, hatte), como nos modais do presente.",
           "comparacao": "o português tem o pretérito imperfeito: «eu estava cansado», «eu tinha febre». Em alemão, «war» e «hatte» fazem esse trabalho.",
@@ -158,8 +220,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 6 frases sobre ontem e sobre a sua infância com «war» e «hatte»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 6 frases no Perfekt, com «haben» e com «sein»."
         }
       ]
     },
@@ -169,13 +236,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «war» e de «hatte» e uma frase com cada."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe os pares. PASSO 2: Perguntas: PASSO 3: Compare ich war e er war, ich hatte e er hatte. O que você nota? PASSO 4: Em können → konnte e müssen → musste, o que acontece com o ä, ö, ü? PASSO 5: Em machte, wohnte, qual sufixo aparece? E em ging? Na frase 5, onde está zu?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "wollen",
@@ -237,7 +307,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Konnte, musste, wollte, durfte, sollte",
           "explicacao": "PASSO 1: os modais também usam o Präteritum na conversa: «Ich konnte nicht kommen», «Ich musste arbeiten». PASSO 2: a forma é: raiz + «-te» + terminações, e o TREMA SOME: können → konnte; müssen → musste; dürfen → durfte; sollen → sollte; wollen → wollte. PASSO 3: as terminações: ich -te, du -test, er -te, wir -ten, ihr -tet, sie -ten (ich e er são iguais). PASSO 4: o segundo verbo continua no INFINITIVO, no fim: «Ich wollte kommen, aber ich musste arbeiten.» PASSO 5: aprenda o contraste «muss nicht» × «darf nicht»: «Du musst nicht kommen» = você não precisa vir; «Du darfst nicht kommen» = você não pode vir (é proibido).",
           "exemplos": [
@@ -306,8 +376,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Conte 5 coisas que você queria fazer ontem mas não conseguiu, com «wollte … aber musste / konnte nicht»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva as 6 formas de «war» e de «hatte» e uma frase com cada."
         }
       ]
     },
@@ -317,13 +392,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva as formas de konnte, musste, wollte, durfte e sollte com «ich» e «du»."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Como escolher, e as formas que você vai ler",
           "explicacao": "PASSO 1: na CONVERSA, use o Perfekt para quase todos os verbos e o Präteritum para «sein», «haben» e os modais. PASSO 2: nos TEXTOS (notícias, histórias, livros), quase todos os verbos aparecem no Präteritum. No A2 você só precisa RECONHECER estas formas, não produzi-las. PASSO 3: as formas mais comuns são fortes e irregulares: gehen → ging; kommen → kam; sehen → sah; fahren → fuhr; essen → aß; trinken → trank; schreiben → schrieb; lesen → las; sprechen → sprach; nehmen → nahm; geben → gab; finden → fand. PASSO 4: os verbos regulares fazem raiz + «-te»: machen → machte; spielen → spielte; kaufen → kaufte.",
           "tabela": [
@@ -392,7 +462,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Warum warst du nicht da? / Por que você não estava lá?",
           "contexto": "Dois amigos conversam sobre ontem à noite.",
           "linhas": [
@@ -459,9 +529,278 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Wo warst du gestern?",
+              "translit": "",
+              "pt": "Onde você estava ontem?",
+              "en": "",
+              "audio": "Wo warst du gestern?"
+            },
+            {
+              "ru": "Ich hatte keine Zeit.",
+              "translit": "",
+              "pt": "Eu não tinha tempo.",
+              "en": "",
+              "audio": "Ich hatte keine Zeit."
+            },
+            {
+              "ru": "Ich konnte nicht kommen.",
+              "translit": "",
+              "pt": "Eu não pude vir.",
+              "en": "",
+              "audio": "Ich konnte nicht kommen."
+            },
+            {
+              "ru": "Wir mussten lange warten.",
+              "translit": "",
+              "pt": "Tivemos de esperar muito.",
+              "en": "",
+              "audio": "Wir mussten lange warten."
+            },
+            {
+              "ru": "Er wollte nach Hause gehen.",
+              "translit": "",
+              "pt": "Ele queria ir para casa.",
+              "en": "",
+              "audio": "Er wollte nach Hause gehen."
+            },
+            {
+              "ru": "Sie ging nach Hause.",
+              "translit": "",
+              "pt": "Ela foi para casa.",
+              "en": "",
+              "audio": "Sie ging nach Hause."
+            },
+            {
+              "ru": "Es war einmal ein König.",
+              "translit": "",
+              "pt": "Era uma vez um rei.",
+              "en": "",
+              "audio": "Es war einmal ein König."
+            },
+            {
+              "ru": "Ich wusste das nicht.",
+              "translit": "",
+              "pt": "Eu não sabia disso.",
+              "en": "",
+              "audio": "Ich wusste das nicht."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Gestern ___ ich müde.",
+              "opcoes": [
+                "bin",
+                "war"
+              ],
+              "gabarito": "war",
+              "explicacao": "Veja a chave comentada no livro: war",
+              "id": "de-024-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Wir ___ keine Zeit.",
+              "opcoes": [
+                "hatten",
+                "hatte"
+              ],
+              "gabarito": "hatten",
+              "explicacao": "Veja a chave comentada no livro: hatten",
+              "id": "de-024-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Er ___ nicht kommen.",
+              "opcoes": [
+                "konnte",
+                "konntet"
+              ],
+              "gabarito": "konnte",
+              "explicacao": "Veja a chave comentada no livro: konnte",
+              "id": "de-024-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Du ___ lange arbeiten.",
+              "opcoes": [
+                "musstest",
+                "musst"
+              ],
+              "gabarito": "musstest",
+              "explicacao": "Veja a chave comentada no livro: musstest",
+              "id": "de-024-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Pretérito de gehen: (gegangen, ging)",
+              "respostaEsperada": "ging",
+              "id": "de-024-L-105"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Pretérito de machen: (machte, mache)",
+              "respostaEsperada": "machte",
+              "id": "de-024-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Er stand um sieben Uhr auf",
+                "Er aufstand um sieben Uhr"
+              ],
+              "gabarito": "Er stand um sieben Uhr auf",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-024-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: sein: ich ___, du warst, er war, wir waren, ihr wart",
+              "respostaEsperada": "war",
+              "explicacao": "Veja a chave comentada no livro: war, warst, war, waren, wart",
+              "id": "de-024-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: sein: ich war, du ___, er war, wir waren, ihr wart",
+              "respostaEsperada": "warst",
+              "explicacao": "Veja a chave comentada no livro: war, warst, war, waren, wart",
+              "id": "de-024-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: sein: ich war, du warst, er ___, wir waren, ihr wart",
+              "respostaEsperada": "war",
+              "explicacao": "Veja a chave comentada no livro: war, warst, war, waren, wart",
+              "id": "de-024-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: sein: ich war, du warst, er war, wir ___, ihr wart",
+              "respostaEsperada": "waren",
+              "explicacao": "Veja a chave comentada no livro: war, warst, war, waren, wart",
+              "id": "de-024-L-201d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: sein: ich war, du warst, er war, wir waren, ihr ___",
+              "respostaEsperada": "wart",
+              "explicacao": "Veja a chave comentada no livro: war, warst, war, waren, wart",
+              "id": "de-024-L-201e"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: haben: ich ___, du hattest, er hatte, wir hatten, ihr hattet",
+              "respostaEsperada": "hatte",
+              "explicacao": "Veja a chave comentada no livro: hatte, hattest, hatte, hatten, hattet",
+              "id": "de-024-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: haben: ich hatte, du ___, er hatte, wir hatten, ihr hattet",
+              "respostaEsperada": "hattest",
+              "explicacao": "Veja a chave comentada no livro: hatte, hattest, hatte, hatten, hattet",
+              "id": "de-024-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: haben: ich hatte, du hattest, er ___, wir hatten, ihr hattet",
+              "respostaEsperada": "hatte",
+              "explicacao": "Veja a chave comentada no livro: hatte, hattest, hatte, hatten, hattet",
+              "id": "de-024-L-202c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: haben: ich hatte, du hattest, er hatte, wir ___, ihr hattet",
+              "respostaEsperada": "hatten",
+              "explicacao": "Veja a chave comentada no livro: hatte, hattest, hatte, hatten, hattet",
+              "id": "de-024-L-202d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue sein e haben no Präteritum: haben: ich hatte, du hattest, er hatte, wir hatten, ihr ___",
+              "respostaEsperada": "hattet",
+              "explicacao": "Veja a chave comentada no livro: hatte, hattest, hatte, hatten, hattet",
+              "id": "de-024-L-202e"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Ich bin müde. → ___ · Wir haben keine Zeit. → ___",
+              "respostaEsperada": "Ich war müde. Wir hatten keine Zeit",
+              "id": "de-024-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Er kann nicht kommen. → ___ · Ihr müsst lange warten. → ___",
+              "respostaEsperada": "Er konnte nicht kommen. Ihr musstet lange warten",
+              "id": "de-024-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Sie will nach Hause gehen. → ___ · Du darfst nicht bleiben. → ___",
+              "respostaEsperada": "Sie wollte nach Hause gehen. Du durftest nicht bleiben",
+              "id": "de-024-L-205"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "kaufen → ich ___ · wohnen → ich wohnte · arbeiten → ich arbeitete · kochen → wir kochten · fragen → er fragte",
+              "respostaEsperada": "kaufte",
+              "explicacao": "Veja a chave comentada no livro: kaufte, wohnte, arbeitete, kochten, fragte",
+              "id": "de-024-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "kaufen → ich kaufte · wohnen → ich ___ · arbeiten → ich arbeitete · kochen → wir kochten · fragen → er fragte",
+              "respostaEsperada": "wohnte",
+              "explicacao": "Veja a chave comentada no livro: kaufte, wohnte, arbeitete, kochten, fragte",
+              "id": "de-024-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "kaufen → ich kaufte · wohnen → ich wohnte · arbeiten → ich ___ · kochen → wir kochten · fragen → er fragte",
+              "respostaEsperada": "arbeitete",
+              "explicacao": "Veja a chave comentada no livro: kaufte, wohnte, arbeitete, kochten, fragte",
+              "id": "de-024-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "kaufen → ich kaufte · wohnen → ich wohnte · arbeiten → ich arbeitete · kochen → wir ___ · fragen → er fragte",
+              "respostaEsperada": "kochten",
+              "explicacao": "Veja a chave comentada no livro: kaufte, wohnte, arbeitete, kochten, fragte",
+              "id": "de-024-L-206d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "kaufen → ich kaufte · wohnen → ich wohnte · arbeiten → ich arbeitete · kochen → wir kochten · fragen → er ___",
+              "respostaEsperada": "fragte",
+              "explicacao": "Veja a chave comentada no livro: kaufte, wohnte, arbeitete, kochten, fragte",
+              "id": "de-024-L-206e"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Er ist nach Hause gegangen. → Er ___ nach Hause. · Sie hat einen Film gesehen. → Sie ___ einen Film. · Wir sind nach Berlin gefahren. → Wir ___ nach Berlin. · Ich habe viel gelesen. → Ich ___ viel.",
+              "respostaEsperada": "Er ging nach Hause. Sie sah einen Film. Wir fuhren nach Berlin. Ich las viel",
+              "id": "de-024-L-207"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Conte uma noite em que você não pôde sair, com «war», «hatte», «musste», «wollte» e «konnte nicht»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as formas de konnte, musste, wollte, durfte e sollte com «ich» e «du»."
         }
       ]
     },
@@ -471,13 +810,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 6 frases sobre a sua infância e a sua semana passada, com war, hatte e os modais no Präteritum."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -669,12 +1003,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando como foi a sua semana passada, com war, hatte e os modais no Präteritum."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva quatro frases contando como foi o seu dia de ontem usando war, hatte, konnte e musste.",
+              "respostaEsperada": "Gestern war ich sehr müde, denn ich hatte viel Arbeit im Büro. Ich musste bis neunzehn Uhr bleiben und konnte am Abend nicht zum Sport gehen.",
+              "id": "de-024-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um mini-diário de quatro linhas no estilo do diário da Camila usando o Präteritum (Gestern war ein langer Tag. Ich stand um … auf und fuhr …).",
+              "respostaEsperada": "Gestern war ein schöner Tag. Ich stand um sieben Uhr auf, trank einen Kaffee und fuhr mit der U-Bahn in die Stadt. Dort traf ich meine Freunde, und wir aßen zusammen im Restaurant.",
+              "id": "de-024-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva o início de uma história de três frases começando por Es war einmal ….",
+              "respostaEsperada": "Es war einmal ein junger Mann. Er wohnte in einer kleinen Stadt, aber er wollte die Welt sehen. Eines Tages nahm er seinen Rucksack und ging los.",
+              "id": "de-024-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe gestern müde gewesen.",
+              "respostaEsperada": "Ich war gestern müde.",
+              "explicacao": "Ich war gestern müde.",
+              "id": "de-024-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich hattest keine Zeit.",
+              "respostaEsperada": "Ich hatte keine Zeit.",
+              "explicacao": "Ich hatte keine Zeit.",
+              "id": "de-024-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er konnten nicht kommen.",
+              "respostaEsperada": "Er konnte nicht kommen.",
+              "explicacao": "Er konnte nicht kommen.",
+              "id": "de-024-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich musste lange arbeiteten.",
+              "respostaEsperada": "Ich musste lange arbeiten.",
+              "explicacao": "Ich musste lange arbeiten.",
+              "id": "de-024-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Sie gehte nach Hause.",
+              "respostaEsperada": "Sie ging nach Hause.",
+              "explicacao": "Sie ging nach Hause.",
+              "id": "de-024-L-c05"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Wir mussten lange warten.",
+              "respostaEsperada": "OK",
+              "id": "de-024-L-c06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er aufstand um sieben Uhr.",
+              "respostaEsperada": "Er stand um sieben Uhr auf.",
+              "explicacao": "Er stand um sieben Uhr auf.",
+              "id": "de-024-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é colocar -te num verbo irregular (gehte, kommte, sahte em vez de ging, kam, sah), colocar terminação em ich ou er/sie/es no Präteritum (er konnten / er gingt) ou manter o trema nos modais no Präteritum (könnte/müsste têm trema no Konjunktiv II, mas no passado real são konnte / musste sem trema!). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 18. Complete: Gestern ____ ich nach Berlin ____. (fahren, Perfekt) Do capítulo 17. Complete: Ich ____ morgen früh ____. (aufstehen) Do capítulo 16. Complete: Er ____ (sprechen) sehr schnell."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Conto como me senti (Ich war…) e o que tive ou não consegui fazer (Ich hatte / musste / konnte…). · Entendo uma pequena história em Präteritum e escolho entre Perfekt e Präteritum conforme a situação."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conta o passado com war, hatte e os modais e reconhece o Präteritum dos textos. Próximas aulas: o dativo, em passos pequenos."
+  "notasParaOAluno": "Você conta o passado com war, hatte e os modais e reconhece o Präteritum dos textos. Próximas aulas: o dativo, em passos pequenos.",
+  "geradaDoLivro": true
 }

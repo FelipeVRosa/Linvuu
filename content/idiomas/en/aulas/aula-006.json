@@ -15,13 +15,105 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você descreve o que existe no seu bairro, hotel ou escritório usando there is / there are (abandonando de vez o vício brasileiro de usar “have” para existência), domina a regra de ouro do funil para as preposições de lugar (in, on, at) e usa as preposições de localização espacial (next to, across from, between) para pedir e dar direções na rua."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Conhecendo o novo escritório e a vizinhança",
+          "contexto": "Marina acabou de ser contratada em uma agência de design em Boston. No primeiro dia, seu colega norte-americano Kevin mostra o andar e dá dicas sobre o bairro.",
+          "linhas": [
+            {
+              "personagem": "Kevin",
+              "ru": "— So, Marina, welcome to the third floor! This is our main workspace.",
+              "pt": "— Então, Marina, bem-vinda ao terceiro andar! Este é o nosso espaço principal de trabalho.",
+              "audio": "So, Marina, welcome to the third floor! This is our main workspace."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Thanks, Kevin! It's really bright. Are there any private phone booths on this floor for client calls?",
+              "pt": "— Obrigada, Kevin! É bem iluminado. Tem cabines telefônicas privativas neste andar para ligações com clientes?",
+              "audio": "Thanks, Kevin! It's really bright. Are there any private phone booths on this floor for client calls?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Yes, there are! There are four soundproof booths right over there, next to the glass meeting room.",
+              "pt": "— Sim, tem! Há quatro cabines à prova de som bem ali, ao lado da sala de reunião de vidro.",
+              "audio": "Yes, there are! There are four soundproof booths right over there, next to the glass meeting room."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Oh, that's great. And is there a kitchen or a coffee machine nearby?",
+              "pt": "— Ah, que ótimo. E tem uma cozinha ou máquina de café por perto?",
+              "audio": "Oh, that's great. And is there a kitchen or a coffee machine nearby?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Of course! There's a big lounge at the end of the hall, between the elevators and the restrooms. There's free coffee, tea, and fruit on the counter all day.",
+              "pt": "— Claro! Tem uma copa grande no fim do corredor, entre os elevadores e os banheiros. Tem café, chá e frutas grátis no balcão o dia todo.",
+              "audio": "Of course! There's a big lounge at the end of the hall, between the elevators and the restrooms. There's free coffee, tea, and fruit on the counter all day."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Awesome. What about lunch? Are there any good places to eat on this street?",
+              "pt": "— Perfeito. E quanto ao almoço? Tem lugares bons para comer nesta rua?",
+              "audio": "Awesome. What about lunch? Are there any good places to eat on this street?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Plenty! There's an amazing Italian restaurant right across from our building, and there's a pharmacy on the corner of Boylston Street and Clarendon.",
+              "pt": "— Muitos! Tem um restaurante italiano incrível bem em frente ao nosso prédio, e tem uma farmácia na esquina da Boylston Street com a Clarendon.",
+              "audio": "Plenty! There's an amazing Italian restaurant right across from our building, and there's a pharmacy on the corner of Boylston Street and Clarendon."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Is there a subway station near here, by the way?",
+              "pt": "— Aliás, tem uma estação de metrô perto daqui?",
+              "audio": "Is there a subway station near here, by the way?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Yes, Copley Station is just two blocks away. You turn left outside the building, go straight ahead, and it's on your right!",
+              "pt": "— Sim, a Copley Station fica a apenas dois quarteirões daqui. Você vira à esquerda saindo do prédio, segue reto em frente, e ela fica à sua direita!",
+              "audio": "Yes, Copley Station is just two blocks away. You turn left outside the building, go straight ahead, and it's on your right!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Diga o plural de: box, city, child, knife. Depois diga «this», «that», «these» ou «those» para 4 objetos perto de você."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: “Tem / Existe” nunca é have / has; é sempre There is / There are. O verbo have exige um dono antes dele (I have a car, The office has four booths). Quando você começa a frase apontando a existência de algo em um lugar, use obrigatoriamente There is (singular) e There are (plural). PASSO 2: O Funil de Lugar (IN → ON → AT). Em vez de traduzir “em”, visualize a geometria do lugar: PASSO 3: IN (Dentro de 3D / Fronteiras amplas): países, cidades, bairros, salas fechadas, dentro de bolsas/gavetas e dentro de carros/táxis (in Brazil, in Boston, in the kitchen, in my bag, in a taxi). PASSO 4: ON (Superfície 2D / Linhas / Andares / Coletivos): em cima de mesas/telas/paredes, nomes de ruas/avenidas, andares de prédio e transportes em que se anda no corredor (on the table, on the screen, on Boylston Street, on the 3rd floor, on the bus/train/plane). PASSO 5: AT (Ponto exato no mapa / Função institucional): endereços com número, pontos de encontro e locais pela sua função (at 500 Boylston Street, at the door, at the bus stop, at home, at work, at school, at the airport).",
+          "comparacao": "Em português falado, usamos o verbo “ter” para dizer que algo existe em um lugar (“Tem um banco nesta rua”, “Não tem vagas aqui”). Além disso, temos uma única preposição curinga (“em / no / na”) para dizer no Brasil, no terceiro andar, na mesa e no trabalho. Veja as quatro armadilhas que isso cria:",
+          "tabela": [
+            {
+              "portugues": "Tem uma farmácia perto daqui?",
+              "ingles": "Is there a pharmacy near here?",
+              "evite": "Has a pharmacy near here? / Have a pharmacy…?"
+            },
+            {
+              "portugues": "Tem muitos restaurantes nesta rua.",
+              "ingles": "There are a lot of restaurants on this street.",
+              "evite": "Have many restaurants in this street."
+            },
+            {
+              "portugues": "Estou no 3º andar / no ônibus.",
+              "ingles": "I'm on the third floor / on the bus.",
+              "evite": "in the third floor / in the bus"
+            },
+            {
+              "portugues": "O banco fica em frente ao hotel.",
+              "ingles": "The bank is across from (UK: opposite) the hotel.",
+              "evite": "in front of the hotel (quando é do outro lado da rua!)"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "living room",
@@ -83,7 +175,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "There is e there are: dizer o que existe",
           "explicacao": "PASSO 1: para dizer que algo EXISTE em um lugar, use «there is» (um só, ou incontável) e «there are» (mais de um): «There is a sofa in the living room.», «There are two beds in the bedroom.» PASSO 2: o verbo concorda com o que vem DEPOIS: «There is a book and two pens» (o verbo acompanha o primeiro item), mas «There are two pens and a book». PASSO 3: negativa: «There isn't a TV.», «There aren't any chairs.» PASSO 4: pergunta: «Is there a kitchen?», «Are there two bathrooms?» Resposta curta: «Yes, there is.» / «No, there isn't.» / «Yes, there are.» / «No, there aren't.» PASSO 5: na fala, «there is» vira «there's». PASSO 6: não existe «has» nem «have» com esse sentido. Não diga «Has a sofa in the room».",
           "comparacao": "em português usamos «tem» («tem um sofá na sala») ou «há». O inglês exige o «there» e muda entre singular e plural: «there is / there are». «Has» e «have» servem para posse, não para existência.",
@@ -130,8 +222,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Descreva a sua casa em voz alta com 5 frases: «There is a… There are two… There isn't a…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o plural de: box, city, child, knife. Depois diga «this», «that», «these» ou «those» para 4 objetos perto de você."
         }
       ]
     },
@@ -141,13 +238,33 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Faça 3 frases com «there is», 2 com «there are» e 1 pergunta com «Is there…?»."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe como there is e there are mudam na afirmativa, na negativa e na pergunta: PASSO 2: Perguntas: PASSO 3: O que acontece com a ordem de there is e there are quando fazemos uma pergunta? PASSO 4: Compare estas duas frases da Cena: “There's a restaurant across from our building” vs. “There's a bus stop in front of our building”. Em qual delas é preciso atravessar a rua?",
+          "tabela": [
+            {
+              "c1": "There's a subway station nearby.",
+              "c2": "There are four phone booths on this floor."
+            },
+            {
+              "c1": "There's free coffee on the counter.",
+              "c2": "There are a lot of cafés on this street."
+            },
+            {
+              "c1": "There isn't a bank on this block.",
+              "c2": "There aren't any free tables outside."
+            },
+            {
+              "c1": "Is there an ATM near here? — Yes, there is. / No, there isn't.",
+              "c2": "Are there any good restaurants nearby? — Yes, there are. / No, there aren't."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "in",
@@ -209,7 +326,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 11,
           "titulo": "In, on, at e as outras preposições de lugar",
           "explicacao": "PASSO 1: «in» é DENTRO de um espaço: «in the kitchen», «in a box», «in Brazil», «in São Paulo». PASSO 2: «on» é SOBRE uma superfície: «on the table», «on the wall», «on the floor». PASSO 3: «at» é um PONTO ou um local de atividade: «at home», «at work», «at school», «at the door», «at the bus stop». PASSO 4: as outras ficam ao redor do objeto: «under the bed» (embaixo), «next to the sofa» (ao lado), «between the chair and the table» (entre), «behind the door» (atrás), «in front of the TV» (na frente). PASSO 5: expressões fixas que NÃO levam artigo: «at home», «at work», «at school», «in bed», «in class». PASSO 6: pergunta e resposta: «Where is the cat?» → «It's under the table.»",
           "comparacao": "em português «em» serve para quase tudo («em casa», «na mesa», «no Brasil»). O inglês separa: «at home», «on the table», «in Brazil».",
@@ -280,9 +397,21 @@
           "tag": "Preposições"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Existência (“Tem / Há”): PASSO 2: Singular / Incontável: Afirmativa = There's (There is) | Negativa = There isn't | Pergunta = Is there…? (Yes, there is / No, there isn't). PASSO 3: Plural: Afirmativa = There are | Negativa = There aren't any… | Pergunta = Are there any…? (Yes, there are / No, there aren't). PASSO 4: Bússola IN / ON / AT para Lugares: PASSO 5: IN = País, cidade, bairro, cômodo fechado, carro/táxi (in São Paulo, in the room, in a car). PASSO 6: ON = Superfície, parede, tela, rua sem número, andar de prédio, ônibus/trem/avião (on the desk, on Main Street, on the 2nd floor, on the plane). PASSO 7: AT = Ponto exato, endereço com número, função (at the door, at the corner, at home, at work, at the station). PASSO 8: Mapa de Localização e Direções: PASSO 9: next to (ao lado de), between X and Y (entre X e Y), across from / opposite (em frente, do outro lado da rua), in front of (na frente de, na mesma calçada), behind (atrás de), near / close to (perto de), far from (longe de). PASSO 10: Direções:Go straight ahead (siga reto), Turn left / right (vire à esquerda/direita), It's on your left / right (fica à sua esquerda/direita).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 6,
+          "min": 4,
           "enunciado": "Diga onde estão 6 coisas do cômodo onde você está: «The phone is on the table. The bag is next to the chair…»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Faça 3 frases com «there is», 2 com «there are» e 1 pergunta com «Is there…?»."
         }
       ]
     },
@@ -292,13 +421,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Complete em voz alta: «The key is ___ the table. I am ___ home. The cat is ___ the bed.»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 4,
           "itens": [
             {
               "ru": "big",
@@ -339,7 +463,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 6,
           "titulo": "O adjetivo vem antes e não muda",
           "explicacao": "PASSO 1: em inglês o adjetivo vem ANTES do substantivo: «a big kitchen», «a small bedroom». PASSO 2: ele NÃO muda no plural nem no gênero: «a big house», «two big houses» (nunca «bigs»). PASSO 3: com «to be», o adjetivo vem depois do verbo: «The kitchen is big.» PASSO 4: para descrever, junte tudo: «There is a big kitchen and a small bathroom.»",
           "comparacao": "em português o adjetivo costuma vir DEPOIS («uma cozinha grande») e concorda em gênero e número («casas grandes»). O inglês coloca antes e nunca flexiona.",
@@ -375,34 +499,322 @@
           "tag": "Adjetivos e possessivos"
         },
         {
-          "tipo": "texto",
-          "min": 8,
-          "titulo": "My apartment / O meu apartamento",
-          "ru": "I live in a small apartment in a big city. There is a living room, a kitchen, a bedroom and a bathroom. The living room is nice. There is a sofa and a table in the living room. The kitchen is small, but there is a window. There is a lamp next to my bed. I like my apartment.",
-          "pt": "Moro num apartamento pequeno numa cidade grande. Há uma sala, uma cozinha, um quarto e um banheiro. A sala é agradável. Há um sofá e uma mesa na sala. A cozinha é pequena, mas há uma janela. Há uma lâmpada ao lado da minha cama. Eu gosto do meu apartamento.",
-          "perguntas": [
+          "tipo": "palavras",
+          "min": 4,
+          "itens": [
             {
-              "pergunta": "Where does the person live?",
-              "resposta": "In a small apartment in a big city."
+              "ru": "Excuse me, is there an ATM near here?",
+              "translit": "",
+              "pt": "Com licença, tem um caixa eletrônico perto daqui?",
+              "en": "",
+              "audio": "Excuse me, is there an ATM near here?"
             },
             {
-              "pergunta": "How many rooms are there?",
-              "resposta": "Four: a living room, a kitchen, a bedroom and a bathroom."
+              "ru": "There are two meeting rooms on the fourth floor.",
+              "translit": "",
+              "pt": "Há duas salas de reunião no quarto andar.",
+              "en": "",
+              "audio": "There are two meeting rooms on the fourth floor."
             },
             {
-              "pergunta": "Is the kitchen big?",
-              "resposta": "No, it isn't. It is small."
+              "ru": "There isn't any coffee left in the kitchen.",
+              "translit": "",
+              "pt": "Não sobrou nada de café na cozinha.",
+              "en": "",
+              "audio": "There isn't any coffee left in the kitchen."
             },
             {
-              "pergunta": "What is next to the bed?",
-              "resposta": "A lamp."
+              "ru": "The hotel is right across from the train station.",
+              "translit": "",
+              "pt": "O hotel fica bem em frente à (do outro lado da rua da) estação de trem.",
+              "en": "",
+              "audio": "The hotel is right across from the train station."
+            },
+            {
+              "ru": "My office is between the pharmacy and the bookstore.",
+              "translit": "",
+              "pt": "Meu escritório fica entre a farmácia e a livraria.",
+              "en": "",
+              "audio": "My office is between the pharmacy and the bookstore."
+            },
+            {
+              "ru": "I'm on the train right now; I'll be at work in ten minutes.",
+              "translit": "",
+              "pt": "Estou no trem agora; estarei no trabalho em dez minutos.",
+              "en": "",
+              "audio": "I'm on the train right now; I'll be at work in ten minutes."
+            },
+            {
+              "ru": "Go straight ahead for two blocks and turn left at the light.",
+              "translit": "",
+              "pt": "Siga reto por dois quarteirões e vire à esquerda no semáforo.",
+              "en": "",
+              "audio": "Go straight ahead for two blocks and turn left at the light."
+            },
+            {
+              "ru": "You can't miss it — it's right there on your right!",
+              "translit": "",
+              "pt": "Não tem erro — fica bem à sua direita!",
+              "en": "",
+              "audio": "You can't miss it — it's right there on your right!"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ a good coffee shop on this street?",
+              "opcoes": [
+                "Has",
+                "Is there"
+              ],
+              "gabarito": "Is there",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ any private offices on the second floor.",
+              "opcoes": [
+                "There aren't",
+                "Don't have"
+              ],
+              "gabarito": "There aren't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "There aren't any private offices ___ the second floor.",
+              "opcoes": [
+                "in",
+                "on"
+              ],
+              "gabarito": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-102b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'm ___ the bus right now, and my brother is in a taxi.",
+              "opcoes": [
+                "in",
+                "on"
+              ],
+              "gabarito": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'm on the bus right now, and my brother is ___ a taxi.",
+              "opcoes": [
+                "in",
+                "on"
+              ],
+              "gabarito": "in",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-103b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The pharmacy is ___ the bank and the supermarket.",
+              "opcoes": [
+                "between",
+                "among"
+              ],
+              "gabarito": "between",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Cross the street! The museum is ___ our hotel.",
+              "opcoes": [
+                "in front of",
+                "across from"
+              ],
+              "gabarito": "across from",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "The pharmacy is right ___ the bank.",
+              "opcoes": [
+                "next",
+                "next to"
+              ],
+              "gabarito": "next to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I saw the news ___ my phone while I was at home.",
+              "opcoes": [
+                "in",
+                "on"
+              ],
+              "gabarito": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-107a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I saw the news on my phone while I was ___ home.",
+              "opcoes": [
+                "at",
+                "in"
+              ],
+              "gabarito": "at",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-107b"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Go straight ahead and turn right; the bank is ___ your left.",
+              "opcoes": [
+                "in",
+                "on"
+              ],
+              "gabarito": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-108a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ a supermarket near your apartment? — Yes, there's one right next to the bank.",
+              "respostaEsperada": "Is there",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Is there a supermarket near your apartment? — Yes, ___ one right next to the bank.",
+              "respostaEsperada": "there's",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Is there a supermarket near your apartment? — Yes, there's one right ___ the bank.",
+              "respostaEsperada": "next to",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ twenty people waiting at the reception desk.",
+              "respostaEsperada": "There are",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "There are twenty people waiting ___ the reception desk.",
+              "respostaEsperada": "at",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My apartment is ___ the fifth floor at 120 Park Avenue in New York.",
+              "respostaEsperada": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My apartment is on the fifth floor ___ 120 Park Avenue in New York.",
+              "respostaEsperada": "at",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-203b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "My apartment is on the fifth floor at 120 Park Avenue ___ New York.",
+              "respostaEsperada": "in",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-203c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ any messages for me on my phone? — No, there aren't any.",
+              "respostaEsperada": "Are there",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Are there any messages for me ___ my phone? — No, there aren't any.",
+              "respostaEsperada": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-204b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Are there any messages for me on my phone? — No, ___ any.",
+              "respostaEsperada": "there aren't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-204c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The printer is ___ the desk, between the computer and the lamp.",
+              "respostaEsperada": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The printer is on the desk, ___ the computer and the lamp.",
+              "respostaEsperada": "between",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-205b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Look across the avenue: ___ a beautiful park right across from our office building.",
+              "respostaEsperada": "there's",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Look across the avenue: there's a beautiful park right ___ our office building.",
+              "respostaEsperada": "across from",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ a subway station in my neighborhood, so I go to work by bus.",
+              "respostaEsperada": "There isn't",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Sorry, I can't talk right now — I'm ___ the plane!",
+              "respostaEsperada": "on",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-208a"
             }
           ]
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Escreva 5 frases sobre a sua casa, com um adjetivo, um «there is/are» e uma preposição de lugar. Depois leia em voz alta."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete em voz alta: «The key is ___ the table. I am ___ home. The cat is ___ the bed.»"
         }
       ]
     },
@@ -412,13 +824,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Descreva em voz alta o cômodo onde você está: o que há, onde está cada coisa."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -596,12 +1003,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Descreva em 1 minuto a sua casa ideal: cômodos, móveis e onde cada coisa fica."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva a sua rua ou o seu bairro usando duas frases afirmativas (There's… / There are…) e uma negativa (There isn't… / There aren't any…).",
+              "respostaEsperada": "On my street, there's a great bakery and there are two pharmacies, but there isn't a subway station.",
+              "id": "en-006-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga em que cidade você mora (in), em que rua (on) e em qual andar (on), e onde você está neste exato momento (at home / at work).",
+              "respostaEsperada": "I live in São Paulo, on Paulista Avenue, on the eighth floor, and I'm at home right now.",
+              "id": "en-006-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Explique onde ficam três objetos na sua sala ou mesa usando on, in, next to e between.",
+              "respostaEsperada": "My laptop is on the desk, between my monitor and my coffee mug, and my keys are in my backpack next to the chair.",
+              "id": "en-006-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Dê direções de duas frases para um turista ir da porta do seu prédio até uma farmácia ou estação próxima (Go straight ahead… / Turn… / It's on your…).",
+              "respostaEsperada": "Go straight ahead for two blocks and turn right at the traffic light. The pharmacy is on your left, right across from the bank.",
+              "id": "en-006-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Has a good restaurant near the hotel?",
+              "respostaEsperada": "Is there a good restaurant near the hotel? (ou close to the hotel). “Tem” de existência pede Is there, nunca Has.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: In my street have many trees and two bakeries.",
+              "respostaEsperada": "On my street, there are many trees and two bakeries.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My office is in the third floor, in Main Street.",
+              "respostaEsperada": "My office is on the third floor, on Main Street.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I'm in the bus right now, looking at the map in my phone.",
+              "respostaEsperada": "I'm on the bus right now, looking at the map on my phone.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Cross the avenue: the bank is in front of the subway station!",
+              "respostaEsperada": "Cross the avenue: the bank is across from the subway station!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Don't have any free chairs in the meeting room.",
+              "respostaEsperada": "There aren't any free chairs in the meeting room.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-006-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: There's a pharmacy on the corner, right next to the bank.",
+              "respostaEsperada": "OK",
+              "id": "en-006-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais frequente deste capítulo é começar frases em inglês com Has… ou Have… para dizer “Tem / Existem” (como em In my city has many parks). Em inglês, um lugar como In my city não é sujeito de have: use sempre In my city, there are many parks (ou transforme a cidade em sujeito sem in: My city has many parks). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Has a bank near here?",
+              "certo": "Is there a bank near here?",
+              "motivo": "Existência (“Tem/Há”) usa There is / There are, nunca have / has."
+            },
+            {
+              "errado": "In my street has two cafés.",
+              "certo": "There are two cafés on my street.",
+              "motivo": "There are concorda com o plural (two cafés), e rua usa on."
+            },
+            {
+              "errado": "in the third floor / in the bus",
+              "certo": "on the third floor / on the bus",
+              "motivo": "Andares de prédio e transportes coletivos exigem on."
+            },
+            {
+              "errado": "in my phone / in Instagram",
+              "certo": "on my phone / on Instagram",
+              "motivo": "Telas, sites, redes sociais e aplicativos exigem sempre on."
+            },
+            {
+              "errado": "There is two cafés on this street.",
+              "certo": "There are two cafés on this street.",
+              "motivo": "O verbo concorda com o que existe: dois cafés pedem There are."
+            },
+            {
+              "errado": "in front of (do outro lado da rua)",
+              "certo": "across from (UK: opposite)",
+              "motivo": "in front of é na mesma calçada; do outro lado da rua é across from."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 3. Traduza sem cair na armadilha do português: “A Marina está na sala dela com o chefe novo dela; aquele notebook na mesa é dela.” 2. Do Capítulo 2. Qual é o plural de person, child, woman e box, e como eles ficam depois de There are? 3. Do Capítulo 1. Como você diz em inglês “Está frio aqui dentro” e “Tenho 30 anos”, sem usar have e sem esquecer o sujeito?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Dizer o que existe ou não existe no meu bairro, hotel ou trabalho usando There is / There are sem falar “have”. Acertar de primeira on the third floor, on the bus, on my phone, in Brazil e at home / at work. · Pedir e dar direções curtas na rua usando across from, next to, on the corner, go straight e turn left / right."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você descreve a sua casa e diz onde as coisas estão. Próxima aula: família e posse."
+  "notasParaOAluno": "Você descreve a sua casa e diz onde as coisas estão. Próxima aula: família e posse.",
+  "geradaDoLivro": true
 }

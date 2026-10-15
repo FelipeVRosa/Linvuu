@@ -15,13 +15,117 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Soletre o seu nome em inglês e diga as saudações da aula 1."
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você se apresenta no trabalho, em viagens ou na imigração usando o verbo to be (am, is, are) com as contrações faladas (I'm, you're, he's, isn't, aren't), aplica a regra dos artigos (a, an, the e quando não usar artigo), nunca deixa a frase sem sujeito (It's cold) e fala de idade e sensações físicas sem usar o verbo “ter”."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 6,
+          "titulo": "Check-in no coworking em Toronto",
+          "contexto": "Lucas acabou de chegar a um espaço de coworking em Toronto para uma semana de reuniões internacionais e faz o cadastro na recepção.",
+          "linhas": [
+            {
+              "personagem": "Receptionist",
+              "ru": "— Good morning! Welcome to HubWork. Are you here for the global tech event?",
+              "pt": "— Bom dia! Bem-vindo ao HubWork. Você está aqui para o evento global de tecnologia?",
+              "audio": "Good morning! Welcome to HubWork. Are you here for the global tech event?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Morning! Yes, I am. Actually, I'm here for the whole week.",
+              "pt": "— Bom dia! Estou, sim. Na verdade, estou aqui pela semana inteira.",
+              "audio": "Morning! Yes, I am. Actually, I'm here for the whole week."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Great! What's your full name, please?",
+              "pt": "— Ótimo! Qual é o seu nome completo, por favor?",
+              "audio": "Great! What's your full name, please?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— It's Lucas Mendes.",
+              "pt": "— É Lucas Mendes.",
+              "audio": "It's Lucas Mendes."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Got it. And where are you from, Lucas?",
+              "pt": "— Entendi. E de onde você é, Lucas?",
+              "audio": "Got it. And where are you from, Lucas?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— I'm originally from Brazil, from São Paulo, but I'm in Toronto on business right now.",
+              "pt": "— Sou originalmente do Brasil, de São Paulo, mas estou em Toronto a negócios agora.",
+              "audio": "I'm originally from Brazil, from São Paulo, but I'm in Toronto on business right now."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Nice! Is this your first time in Canada?",
+              "pt": "— Legal! É a sua primeira vez no Canadá?",
+              "audio": "Nice! Is this your first time in Canada?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— Yes, it is. The city is amazing, but it's a bit cold for me today, to be honest!",
+              "pt": "— Sim, é. A cidade é incrível, mas está um pouco frio para mim hoje, para ser sincero!",
+              "audio": "Yes, it is. The city is amazing, but it's a bit cold for me today, to be honest!"
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Haha, it's only ten degrees outside! What do you do, by the way? Are you a software engineer?",
+              "pt": "— Haha, está só dez graus lá fora! O que você faz, aliás? Você é engenheiro de software?",
+              "audio": "Haha, it's only ten degrees outside! What do you do, by the way? Are you a software engineer?"
+            },
+            {
+              "personagem": "Lucas",
+              "ru": "— No, I'm not an engineer. I'm a product manager at an international fintech.",
+              "pt": "— Não, não sou engenheiro. Sou gerente de produto em uma fintech internacional.",
+              "audio": "No, I'm not an engineer. I'm a product manager at an international fintech."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Awesome. Your visitor badge is ready. The Wi-Fi password is on the back, and coffee is free in the kitchen!",
+              "pt": "— Perfeito. Seu crachá de visitante está pronto. A senha do Wi-Fi está atrás, e o café é gratuito na cozinha!",
+              "audio": "Awesome. Your visitor badge is ready. The Wi-Fi password is on the back, and coffee is free in the kitchen!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 7,
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Repare na cena: um único verbo em inglês (am / is / are) resolve o nosso «ser» e o nosso «estar», a profissão no singular pede «a» ou «an» (a product manager, an engineer) e, para falar do clima, entra o sujeito obrigatório «it» (it's a bit cold). PASSO 2: Idade e sensações usam to be, nunca have. Em inglês, idade, fome (hungry), sede (thirsty), frio (cold), calor (hot), sono (sleepy), medo (afraid) e razão (You're right) são estados do corpo, expressos com am / is / are. PASSO 3: Profissão no singular exige a ou an. Em português dizemos “Sou médico, ela é arquiteta”. Em inglês, nunca deixe a profissão no singular sem artigo: I'm a doctor, She's an architect. PASSO 4: Nenhuma frase começa direto em is sem sujeito. Para clima, hora, distância ou situação, coloque sempre It's na frente (It's ten degrees, It's Lucas).",
+          "comparacao": "em português dizemos «tenho 30 anos», «estou com fome», «sou médico» e «está frio» sem sujeito. Traduzir ao pé da letra leva a quatro erros: usar «have» para idade e sensações, esquecer «a/an», começar a frase em «is» e deixar o «it» de fora.",
+          "tabela": [
+            {
+              "portugues": "Tenho 30 anos. / Estou com fome.",
+              "ingles": "I'm 30 (years old). / I'm hungry.",
+              "evite": "I have 30 years. / I have hunger."
+            },
+            {
+              "portugues": "Sou gerente de produto.",
+              "ingles": "I'm a product manager.",
+              "evite": "I'm product manager."
+            },
+            {
+              "portugues": "Está frio hoje. / É tarde.",
+              "ingles": "It's cold today. / It's late.",
+              "evite": "Is cold today. / Is late."
+            },
+            {
+              "portugues": "Eu amo o café. / Moro no Brasil.",
+              "ingles": "I love coffee. / I live in Brazil.",
+              "evite": "I love the coffee. / in the Brazil"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 4,
           "itens": [
             {
               "ru": "I",
@@ -76,7 +180,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "To be: ser e estar",
           "explicacao": "PASSO 1: «to be» é «ser» e também «estar». «I am a doctor» (sou médico) e «I am tired» (estou cansado) usam o mesmo verbo. PASSO 2: em inglês o sujeito é obrigatório. Em português você pode dizer «sou brasileiro»; em inglês é «I am Brazilian», nunca «am Brazilian». PASSO 3: o verbo muda com o sujeito: I am; you are; he, she, it is; we are; you are; they are. PASSO 4: «you» serve para uma pessoa ou várias, e para tratamento formal ou informal: não existe «tu», «você» e «o senhor» separados. PASSO 5: antes de uma profissão ou identidade no singular, use «a» (antes de som de consoante) ou «an» (antes de som de vogal): a doctor, a student, an engineer. PASSO 6: fale com a contração, como os nativos: I'm, you're, he's, she's, it's, we're, they're.",
           "comparacao": "em português o verbo já mostra quem é o sujeito, então o pronome some («sou», «somos»). Em inglês o verbo muda pouco, e por isso o sujeito precisa aparecer.",
@@ -155,8 +259,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga em voz alta, trocando o sujeito: «I am Brazilian. You are my friend. He is a doctor. She is tired. We are here. They are students.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 1,
+          "enunciado": "Soletre o seu nome em inglês e diga as saudações da aula 1."
         }
       ]
     },
@@ -166,13 +275,47 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma."
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as três colunas: afirmativa contraída, negativa e pergunta com resposta curta. PASSO 2: Olhe a posição do verbo (am / is / are) quando a afirmação vira pergunta: ele salta para antes da pessoa. PASSO 3: Olhe as respostas curtas afirmativas (Yes, I am / Yes, he is / Yes, it is): o verbo não se contrai no final. Nunca diga «Yes, I'm» nem «Yes, it's».",
+          "tabela": [
+            {
+              "afirmativa": "I'm a manager.",
+              "negativa": "I'm not an engineer.",
+              "resposta": "Are you ready? — Yes, I am. / No, I'm not."
+            },
+            {
+              "afirmativa": "He's from São Paulo.",
+              "negativa": "He isn't from Rio.",
+              "resposta": "Is he here on business? — Yes, he is. / No, he isn't."
+            },
+            {
+              "afirmativa": "She's an executive.",
+              "negativa": "She isn't a director.",
+              "resposta": "Is she at the hotel? — Yes, she is."
+            },
+            {
+              "afirmativa": "It's cold outside.",
+              "negativa": "It isn't raining.",
+              "resposta": "Is it free? — Yes, it is. / No, it isn't."
+            },
+            {
+              "afirmativa": "We're in Toronto.",
+              "negativa": "We aren't late.",
+              "resposta": "Are we in Room 2? — Yes, we are."
+            },
+            {
+              "afirmativa": "They're from Canada.",
+              "negativa": "They aren't hungry.",
+              "resposta": "Are they developers? — No, they aren't."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 3,
           "itens": [
             {
               "ru": "happy",
@@ -234,7 +377,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "Dizer «não»: am not, is not, are not",
           "explicacao": "PASSO 1: para negar, coloque «not» depois do «to be»: «I am not tired», «She is not here», «They are not ready». PASSO 2: na fala e na escrita informal use a contração. Há duas maneiras para «he», «she», «it», «you», «we» e «they»: «He is not» → «He isn't» ou «He's not»; «You are not» → «You aren't» ou «You're not». As duas estão certas. PASSO 3: com «I» só se usa uma contração: «I'm not». A forma «amn't» não faz parte do inglês padrão. PASSO 4: o «not» fica sempre depois do verbo. Não diga «He not is happy». PASSO 5: «no» (não, como resposta) e «not» (negação do verbo) são palavras diferentes: «No, I'm not tired.»",
           "comparacao": "em português a negação vem ANTES do verbo («não estou cansado»). Em inglês, com «to be», ela vem DEPOIS («I am not tired»).",
@@ -290,9 +433,55 @@
           "tag": "Verbos"
         },
         {
+          "tipo": "gramatica",
+          "min": 7,
+          "titulo": "A regra completa de a, an e the",
+          "explicacao": "PASSO 1: Veja como decidir em dois segundos qual artigo usar (ou quando deixar sem artigo). O som decide, não a letra: «a university», «an hour». PASSO 2: As 3 formas de to be no presente:am (só com I), is (com 1 pessoa ou coisa: he, she, it), are (com you e plurais: we, they). Na fala, contraia sempre: I'm, you're, he's, she's, it's, we're, they're. PASSO 3: Artigo indefinido (a vs. an): A escolha depende do som inicial da palavra seguinte: a antes de som de consoante (a manager, a university — som de iu); an antes de som de vogal (an engineer, an hour — o h é mudo). PASSO 4: Artigo definido (the) vs. Zero artigo: Use the para coisas específicas (the Wi-Fi password in this room). Não use the para falar de coisas em geral (Coffee is great, I love music) nem antes de nomes de pessoas, cidades e da maioria dos países (Brazil, Canada, exceto plurais/uniões como the US, the UK).",
+          "tabela": [
+            {
+              "regra": "a + som de consoante",
+              "exemplo": "a laptop, a hotel, a university, a European country",
+              "motivo": "university e European começam com o som consonantal iu, por isso exigem a."
+            },
+            {
+              "regra": "an + som de vogal",
+              "exemplo": "an office, an idea, an umbrella, an hour, an MBA",
+              "motivo": "hour tem h mudo (áu-ãr) e a sigla MBA começa com som de é (êm-bi-êi)."
+            },
+            {
+              "regra": "the (específico / único)",
+              "exemplo": "The meeting is at ten. Close the door, please.",
+              "motivo": "Tanto quem fala quanto quem ouve sabem exatamente de qual reunião e de qual porta se trata."
+            },
+            {
+              "regra": "Zero artigo (geral e próprio)",
+              "exemplo": "I like coffee. Life is good. She works in Brazil, at home.",
+              "motivo": "Coisas em geral (coffee, life), países no singular (Brazil) e expressões fixas (at home, at work, go to bed) não levam the."
+            }
+          ],
+          "erros": [
+            {
+              "errado": "an university / a hour",
+              "certo": "a university / an hour",
+              "motivo": "a/an seguem o som inicial (iu é consoante; o h de hour é mudo)."
+            },
+            {
+              "errado": "I live in the Brazil.",
+              "certo": "I live in Brazil.",
+              "motivo": "Países no singular não levam o artigo the."
+            }
+          ],
+          "tag": "Artigos"
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Responda em voz alta, com frases inteiras: Você está cansado? Você está com fome? Você está atrasado? Use «I'm» ou «I'm not»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma."
         }
       ]
     },
@@ -302,13 +491,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Transforme em negativa: «I am happy. She is here. They are students.»"
-        },
-        {
           "tipo": "palavras",
-          "min": 4,
+          "min": 2,
           "itens": [
             {
               "ru": "student",
@@ -342,7 +526,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 5,
           "titulo": "Perguntas com to be e respostas curtas",
           "explicacao": "PASSO 1: para perguntar «sim ou não», inverta: o verbo vem ANTES do sujeito. «You are tired» → «Are you tired?»; «He is a doctor» → «Is he a doctor?». PASSO 2: responda com uma resposta curta: «Yes, I am.» / «No, I'm not.» / «Yes, he is.» / «No, they aren't.». Na resposta afirmativa NÃO se contrai: «Yes, I am», nunca «Yes, I'm». PASSO 3: perguntas com palavra interrogativa: palavra + verbo + sujeito. «What is your name?» (qual é o seu nome?), «Where are you from?» (de onde você é?), «How are you?» (como você está?), «Who is she?» (quem é ela?). PASSO 4: na fala, «What's» e «Where's» são comuns.",
           "comparacao": "em português basta mudar a entonação («você está cansado?»). Em inglês, a ordem das palavras muda: o verbo sobe para o começo.",
@@ -389,7 +573,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 4,
           "titulo": "Nice to meet you / Prazer em conhecer",
           "contexto": "Emma e Jake se encontram numa sala de aula.",
           "linhas": [
@@ -438,9 +622,213 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 5,
+          "itens": [
+            {
+              "ru": "Hi! I'm Lucas, and I'm here on business.",
+              "translit": "",
+              "pt": "Olá! Sou o Lucas e estou aqui a trabalho.",
+              "en": "",
+              "audio": "Hi! I'm Lucas, and I'm here on business."
+            },
+            {
+              "ru": "Where are you from originally?",
+              "translit": "",
+              "pt": "De onde você é originalmente?",
+              "en": "",
+              "audio": "Where are you from originally?"
+            },
+            {
+              "ru": "What do you do? — I'm a product manager.",
+              "translit": "",
+              "pt": "O que você faz? — Sou gerente de produto.",
+              "en": "",
+              "audio": "What do you do? — I'm a product manager."
+            },
+            {
+              "ru": "How old is your daughter? — She's seven.",
+              "translit": "",
+              "pt": "Quantos anos tem sua filha? — Ela tem sete.",
+              "en": "",
+              "audio": "How old is your daughter? — She's seven."
+            },
+            {
+              "ru": "Are you hungry, or just thirsty?",
+              "translit": "",
+              "pt": "Você está com fome ou só com sede?",
+              "en": "",
+              "audio": "Are you hungry, or just thirsty?"
+            },
+            {
+              "ru": "Sorry, I'm in a hurry right now!",
+              "translit": "",
+              "pt": "Desculpe, estou com pressa agora mesmo!",
+              "en": "",
+              "audio": "Sorry, I'm in a hurry right now!"
+            },
+            {
+              "ru": "It's really cold outside today, isn't it?",
+              "translit": "",
+              "pt": "Está bem frio lá fora hoje, não está?",
+              "en": "",
+              "audio": "It's really cold outside today, isn't it?"
+            },
+            {
+              "ru": "You're right! The Wi-Fi is really fast here.",
+              "translit": "",
+              "pt": "Você tem razão! O Wi-Fi é muito rápido aqui.",
+              "en": "",
+              "audio": "You're right! The Wi-Fi is really fast here."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 12,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "She ___ from Canada.",
+              "opcoes": [
+                "is",
+                "are",
+                "am"
+              ],
+              "gabarito": "is",
+              "explicacao": "she pede «is».",
+              "id": "en-002-g01"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "She is ___ architect.",
+              "opcoes": [
+                "an",
+                "a"
+              ],
+              "gabarito": "an",
+              "explicacao": "architect começa com som de vogal.",
+              "id": "en-002-g02"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My brother is studying at ___ university.",
+              "opcoes": [
+                "a",
+                "an"
+              ],
+              "gabarito": "a",
+              "explicacao": "university começa com o som consonantal «iu».",
+              "id": "en-002-g03"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— ___ thirty years old? — No, I'm not. I'm twenty-eight!",
+              "opcoes": [
+                "Are you",
+                "Have you"
+              ],
+              "gabarito": "Are you",
+              "explicacao": "idade usa to be, nunca have.",
+              "id": "en-002-g04"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— Is the hotel near the subway? — Yes, ___!",
+              "opcoes": [
+                "it is",
+                "it's"
+              ],
+              "gabarito": "it is",
+              "explicacao": "a resposta curta afirmativa nunca contrai.",
+              "id": "en-002-g05"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ very hot in Rio today.",
+              "opcoes": [
+                "It's",
+                "Is"
+              ],
+              "gabarito": "It's",
+              "explicacao": "clima exige o sujeito «It».",
+              "id": "en-002-g06"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "My meeting is in ___ hour.",
+              "opcoes": [
+                "an",
+                "a"
+              ],
+              "gabarito": "an",
+              "explicacao": "hour tem h mudo: som de vogal.",
+              "id": "en-002-g07"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ your parents at home right now?",
+              "opcoes": [
+                "Are",
+                "Is"
+              ],
+              "gabarito": "Are",
+              "explicacao": "your parents = they, plural.",
+              "id": "en-002-g08"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Hi! My name ___ Rafael, and I ___ from Brazil. (is / 'm)",
+              "respostaEsperada": "is 'm",
+              "explicacao": "Brasil, no singular, não leva «the».",
+              "id": "en-002-g09"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— ___ you hungry? — No, I ___ not, thanks.",
+              "respostaEsperada": "Are am",
+              "explicacao": "sem contração na resposta com «am not».",
+              "id": "en-002-g10"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Where ___ the keys? They ___ on the table.",
+              "respostaEsperada": "are are",
+              "explicacao": "keys = they, plural.",
+              "id": "en-002-g11"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ cold in this room! (use a contração)",
+              "respostaEsperada": "It's",
+              "explicacao": "sujeito neutro «It».",
+              "id": "en-002-g12"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Is Lucas in Toronto on vacation? — No, he ___.",
+              "respostaEsperada": "isn't",
+              "explicacao": "resposta curta negativa.",
+              "id": "en-002-g13"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Are your coworkers ready for the call? — Yes, they ___.",
+              "respostaEsperada": "are",
+              "explicacao": "a resposta afirmativa não contrai.",
+              "id": "en-002-g14"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 4,
+          "min": 1,
           "enunciado": "Faça as perguntas em voz alta e responda por você: «What's your name? Where are you from? Are you a student? Are you tired?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 1,
+          "enunciado": "Transforme em negativa: «I am happy. She is here. They are students.»"
         }
       ]
     },
@@ -450,13 +838,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva uma frase afirmativa, uma negativa e uma pergunta com «to be» sobre você."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 19,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -640,16 +1023,122 @@
               "enunciado": "Escreva 4 frases em inglês: quem você é, de onde é, como está agora e uma frase negativa.",
               "respostaEsperada": "I am Felipe. I am from Brazil. I am tired. I am not a doctor.",
               "id": "en-002-e16"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Apresente-se dizendo seu nome, de qual cidade e país você é e qual é a sua profissão (com a ou an).",
+              "respostaEsperada": "Hi, I'm Lucas. I'm from São Paulo, Brazil, and I'm a software engineer.",
+              "id": "en-002-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga a sua idade e a idade de um familiar seu (sem usar o verbo have).",
+              "respostaEsperada": "I'm 30 years old, and my sister is 27.",
+              "id": "en-002-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Diga que hoje está frio (ou quente) na sua cidade e que você está com fome e com pressa.",
+              "respostaEsperada": "It's hot in my city today, and I'm hungry and in a hurry.",
+              "id": "en-002-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Faça duas perguntas com o verbo to be para um colega novo no trabalho e escreva as respostas curtas (uma afirmativa e uma negativa).",
+              "respostaEsperada": "Are you from Rio? Yes, I am. Is the meeting at ten? No, it isn't.",
+              "id": "en-002-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I have 32 years, and I'm project manager in São Paulo.",
+              "respostaEsperada": "I'm 32, and I'm a project manager in São Paulo.",
+              "explicacao": "idade usa to be e profissão exige «a».",
+              "id": "en-002-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Is very cold outside today, so I have cold!",
+              "respostaEsperada": "It's very cold outside today, so I'm cold!",
+              "explicacao": "sujeito «It» e sensação com to be.",
+              "id": "en-002-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: My sister is an university student in the Brazil.",
+              "respostaEsperada": "My sister is a university student in Brazil.",
+              "explicacao": "«a university» e sem «the» antes de Brazil.",
+              "id": "en-002-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: — Are they in a hurry? — Yes, they're!",
+              "respostaEsperada": "— Are they in a hurry? — Yes, they are!",
+              "explicacao": "resposta curta afirmativa não contrai.",
+              "id": "en-002-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: The coffee is a great drink, and I'm at the home now.",
+              "respostaEsperada": "Coffee is a great drink, and I'm at home now.",
+              "explicacao": "sem «the» para coisas em geral e em «at home».",
+              "id": "en-002-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She has afraid of flying.",
+              "respostaEsperada": "She is afraid of flying.",
+              "explicacao": "«ter medo» é be afraid.",
+              "id": "en-002-c06"
             }
           ]
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro mais persistente do brasileiro no nível básico é usar o verbo have para idade e sensações e engolir o sujeito It no início da frase. Em português, “Tenho 25 anos” e “Está chovendo” soam naturais; em inglês, diga sempre I'm 25 e It's raining. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "I have 28 years old.",
+              "certo": "I'm 28 (years old).",
+              "motivo": "Idade em inglês é estado (to be), nunca posse (have)."
+            },
+            {
+              "errado": "Is cold today.",
+              "certo": "It's cold today.",
+              "motivo": "O sujeito neutro It é obrigatório para clima e hora."
+            },
+            {
+              "errado": "I'm engineer.",
+              "certo": "I'm an engineer.",
+              "motivo": "Profissão no singular exige sempre a ou an."
+            },
+            {
+              "errado": "Yes, I'm. / Yes, it's.",
+              "certo": "Yes, I am. / Yes, it is.",
+              "motivo": "nunca se contrai o verbo no fim de uma resposta curta afirmativa."
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Fale: apresente-se em 5 frases (nome, origem, profissão ou estudo, como você está, uma frase negativa). Depois faça duas perguntas a um colega."
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1) Como se diz «Está frio» em inglês, e qual palavra obrigatória abre a frase? 2) Por que «a university», mas «an umbrella» e «an hour»? 3) Quando alguém pergunta «What do you do?», o que a pessoa quer saber e como você responde?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Apresentar meu nome, origem, idade e profissão sem esquecer a / an e sem usar have para idade. · Fazer perguntas com Am / Is / Are e responder com respostas curtas sem contrair no final afirmativo. · Usar o sujeito obrigatório It's para falar de clima, horas e situações. Refaça o degrau 4 daqui a 7 dias, sem olhar a correção."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala de si com o verbo mais importante do inglês. Próxima aula: apresentações, países, números e idade."
+  "notasParaOAluno": "Você fala de si com o verbo mais importante do inglês. Próxima aula: apresentações, países, números e idade.",
+  "geradaDoLivro": true
 }

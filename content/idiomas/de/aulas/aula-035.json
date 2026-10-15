@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você descreve com adjetivos depois de sein, compara com -er … als e so … wie, forma o superlativo com am … -sten e usa as formas irregulares besser, mehr, lieber."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Duas casas",
+          "contexto": "Camila está em dúvida entre dois apartamentos.",
+          "linhas": [
+            {
+              "personagem": "Jonas",
+              "ru": "— Welche Wohnung gefällt dir besser?",
+              "pt": "— De qual apartamento você gosta mais?",
+              "audio": "Welche Wohnung gefällt dir besser?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Die Wohnung in Schwabing ist größer als die Wohnung in Pasing. Aber sie ist auch teurer.",
+              "pt": "— O de Schwabing é maior que o de Pasing. Mas também é mais caro.",
+              "audio": "Die Wohnung in Schwabing ist größer als die Wohnung in Pasing. Aber sie ist auch teurer."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Wie viel kostet sie?",
+              "pt": "— Quanto custa?",
+              "audio": "Wie viel kostet sie?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Neunhundert Euro. Die andere kostet nur siebenhundert.",
+              "pt": "— Novecentos euros. O outro custa só setecentos.",
+              "audio": "Neunhundert Euro. Die andere kostet nur siebenhundert."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Dann ist die Wohnung in Pasing billiger. Aber ist sie so hell wie die Wohnung in Schwabing?",
+              "pt": "— Então o de Pasing é mais barato. Mas ele é tão claro quanto o de Schwabing?",
+              "audio": "Dann ist die Wohnung in Pasing billiger. Aber ist sie so hell wie die Wohnung in Schwabing?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Nein, sie ist nicht so hell. Für mich ist Licht am wichtigsten.",
+              "pt": "— Não, não é tão claro. Para mim, luz é o mais importante.",
+              "audio": "Nein, sie ist nicht so hell. Für mich ist Licht am wichtigsten."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Dann ist die Entscheidung leicht.",
+              "pt": "— Então a decisão é fácil.",
+              "audio": "Dann ist die Entscheidung leicht."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja. Schwabing ist teurer, aber auch viel schöner.",
+              "pt": "— Sim. Schwabing é mais caro, mas também muito mais bonito.",
+              "audio": "Ja. Schwabing ist teurer, aber auch viel schöner."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as formas de um adjetivo antes do substantivo nas três famílias, com um exemplo."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: comparação de diferença usa als. Comparação de igualdade usa wie.",
+          "comparacao": "O português compara com palavras soltas: “mais caro que”, “tão claro quanto”. O alemão cola um final ao adjetivo e usa duas palavrinhas diferentes para comparar.",
+          "tabela": [
+            {
+              "portugues": "mais velho que",
+              "ingles": "älter als"
+            },
+            {
+              "portugues": "tão velho quanto",
+              "ingles": "so alt wie"
+            },
+            {
+              "portugues": "o mais velho",
+              "ingles": "am ältesten"
+            },
+            {
+              "portugues": "mais bonito",
+              "ingles": "schöner"
+            },
+            {
+              "portugues": "melhor",
+              "ingles": "besser"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "schnell",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "O comparativo, passo a passo",
           "explicacao": "PASSO 1: para dizer «mais … do que», acrescente «-er» ao adjetivo e use «als» para o segundo termo: «Berlin ist größer als München.» PASSO 2: muitos adjetivos curtos ganham TREMA: alt → älter; jung → jünger; groß → größer; stark → stärker; warm → wärmer; kalt → kälter. PASSO 3: adjetivos em «-el», «-er» e «-eu» perdem o «e»: teuer → teurer; dunkel → dunkler. PASSO 4: IRREGULARES, que você precisa decorar: gut → besser; viel → mehr; gern → lieber; hoch → höher; nah → näher. PASSO 5: igualdade: «so … wie»: «Er ist so groß wie ich.» PASSO 6: diferença não dita: «Es wird kälter» (está ficando mais frio).",
           "comparacao": "o português usa «mais» + adjetivo («mais rápido»). O alemão acrescenta «-er» ao próprio adjetivo («schneller») e usa «als» para «do que».",
@@ -150,8 +236,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Compare 6 coisas em voz alta: «Der Zug ist schneller als der Bus. Berlin ist größer als …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as formas de um adjetivo antes do substantivo nas três famílias, com um exemplo."
         }
       ]
     },
@@ -161,13 +252,67 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o comparativo de 10 adjetivos, com os irregulares."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as três formas. PASSO 2: Observe as frases. PASSO 3: Tom ist größer als Lena. PASSO 4: Lena ist so alt wie Tom. PASSO 5: Tom ist nicht so alt wie Jonas. Tom läuft schnell. PASSO 6: Perguntas: PASSO 7: Que final marca o comparativo? E o superlativo? PASSO 8: Quando aparece -esten em vez de -sten? PASSO 9: Quais adjetivos mudam por completo? PASSO 10: Schnell muda quando descreve um verbo?",
+          "tabela": [
+            {
+              "c1": "klein",
+              "c2": "kleiner",
+              "c3": "am kleinsten"
+            },
+            {
+              "c1": "schnell",
+              "c2": "schneller",
+              "c3": "am schnellsten"
+            },
+            {
+              "c1": "billig",
+              "c2": "billiger",
+              "c3": "am billigsten"
+            },
+            {
+              "c1": "groß",
+              "c2": "größer",
+              "c3": "am größten"
+            },
+            {
+              "c1": "alt",
+              "c2": "älter",
+              "c3": "am ältesten"
+            },
+            {
+              "c1": "jung",
+              "c2": "jünger",
+              "c3": "am jüngsten"
+            },
+            {
+              "c1": "teuer",
+              "c2": "teurer",
+              "c3": "am teuersten"
+            },
+            {
+              "c1": "gut",
+              "c2": "besser",
+              "c3": "am besten"
+            },
+            {
+              "c1": "viel",
+              "c2": "mehr",
+              "c3": "am meisten"
+            },
+            {
+              "c1": "gern",
+              "c2": "lieber",
+              "c3": "am liebsten"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "am schnellsten",
@@ -229,7 +374,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "O superlativo, passo a passo",
           "explicacao": "PASSO 1: para dizer «o mais …», há DUAS formas. FORMA 1: «am» + adjetivo + «-sten», para o predicado: «Der Zug ist am schnellsten.» FORMA 2: «der/die/das» + adjetivo + «-ste» + substantivo, quando vem o substantivo (com a terminação de adjetivo!): «der schnellste Zug», «die schönste Stadt», «das beste Essen». PASSO 2: adjetivos em -d, -t, -s, -ß, -z, -sch ganham «-esten»: am ältesten, am heißesten. PASSO 3: o trema vem junto: am ältesten, am größten, am stärksten. PASSO 4: irregulares: gut → am besten; viel → am meisten; gern → am liebsten; hoch → am höchsten; nah → am nächsten. PASSO 5: a frase típica: «Im Sommer ist es am wärmsten.» PASSO 6: mostre o grupo com «von» ou «der»: «der schönste von allen».",
           "exemplos": [
@@ -308,8 +453,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga 6 superlativos em voz alta: «Der Zug ist am schnellsten. Das ist die schönste Stadt …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva o comparativo de 10 adjetivos, com os irregulares."
         }
       ]
     },
@@ -319,13 +469,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva uma comparação com cada forma: -er … als, so … wie, am -sten e der -ste."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "As comparações no dia a dia",
           "explicacao": "PASSO 1: «mehr» e «weniger» comparam quantidades: «Ich habe mehr Zeit als du», «Er hat weniger Geld.» PASSO 2: «immer» + comparativo = cada vez mais: «Es wird immer kälter.» PASSO 3: «gern, lieber, am liebsten» são a mesma família de «gut, besser, am besten»: gosto, prefiro, mais gosto. PASSO 4: o comparativo também vai antes do substantivo e recebe terminação: «ein größeres Haus», «die besseren Schuhe». PASSO 5: igualdade e diferença: «so … wie» (tão … quanto) e «anders als» (diferente de).",
           "tabela": [
@@ -354,7 +499,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Zwei Städte / Duas cidades",
           "contexto": "Dois amigos comparam Berlim e Hamburgo.",
           "linhas": [
@@ -421,9 +566,180 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Das ist größer als das.",
+              "translit": "",
+              "pt": "Isto é maior que aquilo.",
+              "en": "",
+              "audio": "Das ist größer als das."
+            },
+            {
+              "ru": "Welches gefällt dir besser?",
+              "translit": "",
+              "pt": "De qual você gosta mais?",
+              "en": "",
+              "audio": "Welches gefällt dir besser?"
+            },
+            {
+              "ru": "Das ist zu teuer.",
+              "translit": "",
+              "pt": "É caro demais.",
+              "en": "",
+              "audio": "Das ist zu teuer."
+            },
+            {
+              "ru": "Das ist nicht so teuer wie das.",
+              "translit": "",
+              "pt": "Não é tão caro quanto aquilo.",
+              "en": "",
+              "audio": "Das ist nicht so teuer wie das."
+            },
+            {
+              "ru": "Ich finde das schöner.",
+              "translit": "",
+              "pt": "Acho isso mais bonito.",
+              "en": "",
+              "audio": "Ich finde das schöner."
+            },
+            {
+              "ru": "Am liebsten trinke ich Tee.",
+              "translit": "",
+              "pt": "O que mais gosto de beber é chá.",
+              "en": "",
+              "audio": "Am liebsten trinke ich Tee."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "klein → comparativo:",
+              "opcoes": [
+                "kleiner",
+                "kleinr"
+              ],
+              "gabarito": "kleiner",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-035-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "groß → comparativo:",
+              "opcoes": [
+                "großer",
+                "größer"
+              ],
+              "gabarito": "größer",
+              "explicacao": "Veja a chave comentada no livro: (b), com trema",
+              "id": "de-035-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "alt → superlativo:",
+              "opcoes": [
+                "am ältsten",
+                "am ältesten"
+              ],
+              "gabarito": "am ältesten",
+              "explicacao": "Veja a chave comentada no livro: (b), com -esten depois de t",
+              "id": "de-035-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "gut → comparativo:",
+              "opcoes": [
+                "guter",
+                "besser"
+              ],
+              "gabarito": "besser",
+              "explicacao": "Veja a chave comentada no livro: (b), irregular",
+              "id": "de-035-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Tom ist größer ___ Lena.",
+              "opcoes": [
+                "als",
+                "wie"
+              ],
+              "gabarito": "als",
+              "explicacao": "Veja a chave comentada no livro: als",
+              "id": "de-035-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Lena ist so alt ___ Tom.",
+              "opcoes": [
+                "als",
+                "wie"
+              ],
+              "gabarito": "wie",
+              "explicacao": "Veja a chave comentada no livro: wie",
+              "id": "de-035-L-106"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: schnell → ___, ___ · jung → ___, ___ · kalt → ___, ___",
+              "respostaEsperada": "schneller, am schnellsten; jünger, am jüngsten; kälter, am kältesten",
+              "id": "de-035-L-201"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: teuer → ___, ___ · hoch → ___, ___",
+              "respostaEsperada": "teurer, am teuersten; höher, am höchsten",
+              "id": "de-035-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva o comparativo e o superlativo (am … -sten) de cada palavra: gut → ___, ___ · gern → ___, ___ · viel → ___, ___",
+              "respostaEsperada": "besser, am besten; lieber, am liebsten; mehr, am meisten",
+              "id": "de-035-L-203"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Die Wohnung in München ist teurer ___ meine Wohnung in Recife.",
+              "respostaEsperada": "als",
+              "explicacao": "Veja a chave comentada no livro: als",
+              "id": "de-035-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Er ist genau so alt ___ ich.",
+              "respostaEsperada": "wie",
+              "explicacao": "Veja a chave comentada no livro: wie",
+              "id": "de-035-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Der Bus ist nicht so schnell ___ der Zug, aber er ist billiger als das Taxi.",
+              "respostaEsperada": "wie",
+              "explicacao": "Veja a chave comentada no livro: wie / als",
+              "id": "de-035-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete as comparações com als (diferença) ou wie (igualdade): Der Bus ist nicht so schnell wie der Zug, aber er ist billiger ___ das Taxi.",
+              "respostaEsperada": "als",
+              "explicacao": "Veja a chave comentada no livro: wie / als",
+              "id": "de-035-L-206b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Compare em voz alta duas cidades que você conhece: tamanho, preço, clima e o que você prefere."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva uma comparação com cada forma: -er … als, so … wie, am -sten e der -ste."
         }
       ]
     },
@@ -433,13 +749,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 6 frases de comparação e 4 de superlativo."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "multiple-choice",
@@ -631,12 +942,98 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se comparando duas cidades, duas comidas e duas pessoas, com «als», «so … wie» e superlativos."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Compare duas cidades que você conhece em cinco frases usando größer als, teurer als, wärmer als, nicht so … wie e am schönsten.",
+              "respostaEsperada": "São Paulo ist viel größer als Florianópolis. Aber die Wohnungen in São Paulo sind auch teurer als dort. Im Winter ist Rio wärmer als Curitiba. Berlin ist nicht so alt wie Rom, aber für mich ist München am schönsten!",
+              "id": "de-035-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva suas preferências de comida, bebida ou lazer usando a tríade gern — lieber — am liebsten.",
+              "respostaEsperada": "Am Morgen trinke ich gern Tee, lieber trinke ich Kaffee und am liebsten trinke ich frischen Orangensaft. Am Wochenende lese ich gern, aber noch lieber koche ich für Freunde.",
+              "id": "de-035-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um mini-diálogo de quatro falas comparando dois apartamentos ou dois notebooks em uma loja.",
+              "respostaEsperada": "Modelo de diálogo: — Welcher Laptop gefällt dir besser?— Dieser hier ist schneller und leichter als der andere, aber er ist auch viel teurer.— Ist der billigere Laptop genauso gut wie dieser?— Ja, für meine Arbeit ist er gut genug und nicht zu teuer!",
+              "id": "de-035-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Tom ist größer wie Lena.",
+              "respostaEsperada": "Tom ist größer als Lena.",
+              "explicacao": "Tom ist größer als Lena.",
+              "id": "de-035-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Lena ist so alt als Tom.",
+              "respostaEsperada": "Lena ist so alt wie Tom.",
+              "explicacao": "Lena ist so alt wie Tom.",
+              "id": "de-035-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist mehr schön.",
+              "respostaEsperada": "Das ist schöner.",
+              "explicacao": "Das ist schöner.",
+              "id": "de-035-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Er läuft schnelle.",
+              "respostaEsperada": "Er läuft schnell.",
+              "explicacao": "Er läuft schnell. (advérbio sem final)",
+              "id": "de-035-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist am guten.",
+              "respostaEsperada": "Das ist am besten.",
+              "explicacao": "Das ist am besten.",
+              "id": "de-035-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Meine Wohnung ist teuerer.",
+              "respostaEsperada": "Meine Wohnung ist teurer.",
+              "explicacao": "Meine Wohnung ist teurer.",
+              "id": "de-035-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich trinke am liebsten Tee.",
+              "respostaEsperada": "OK",
+              "id": "de-035-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é usar mehr + adjetivo (mehr schön em vez de schöner, decalcando o português “mais bonito”) e trocar als por wie (größer wie em vez de größer als). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 11. Complete: Mein Bruder ist älter ____ ich. Unser Auto ist größer ____ euer Auto. Depois monte: Lena und ____ Vater (ihr, sein) wohnen in München. Do capítulo 10. Complete: Ich wohne in ____ Wohnung in Schwabing (die). Do capítulo 9. Diga: Das Buch gefällt mir ____ (besser)."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Comparo duas coisas com -er als e so … wie. · Digo o que prefiro com gern, lieber, am liebsten e uso zu para “demais” (zu teuer)."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você compara pessoas e coisas. Próxima aula: as frases subordinadas com weil e dass."
+  "notasParaOAluno": "Você compara pessoas e coisas. Próxima aula: as frases subordinadas com weil e dass.",
+  "geradaDoLivro": true
 }

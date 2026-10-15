@@ -15,13 +15,87 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você liga duas frases com um pronome relativo (der, die, das, den), escolhe a forma pelo gênero da palavra anterior e pela função dentro da segunda frase, manda o verbo para o fim e põe as vírgulas."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "No achados e perdidos",
+          "contexto": "Camila perdeu a mochila no trem e foi ao setor de achados e perdidos da estação.",
+          "linhas": [
+            {
+              "personagem": "Camila",
+              "ru": "— Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe.",
+              "pt": "— Bom dia. Estou procurando uma mochila que esqueci ontem no trem.",
+              "audio": "Guten Tag. Ich suche einen Rucksack, den ich gestern im Zug vergessen habe."
+            },
+            {
+              "personagem": "Mitarbeiter",
+              "ru": "— Wie sieht er aus?",
+              "pt": "— Como ela é?",
+              "audio": "Wie sieht er aus?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war.",
+              "pt": "— É preta e tem uma listra vermelha. Na mochila tem um livro que eu ainda preciso ler, uma jaqueta de que eu gosto muito e a minha câmera, que não foi barata.",
+              "audio": "Er ist schwarz und hat einen roten Streifen. Im Rucksack sind ein Buch, das ich noch lesen muss, eine Jacke, die ich sehr mag, und meine Kamera, die nicht billig war."
+            },
+            {
+              "personagem": "Mitarbeiter",
+              "ru": "— Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat.",
+              "pt": "— Então nós a temos. Esta é a mochila que um homem trouxe hoje cedo.",
+              "audio": "Dann haben wir ihn. Das ist der Rucksack, den ein Mann heute früh gebracht hat."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken.",
+              "pt": "— Maravilha! Onde está o homem que a encontrou? Quero agradecer a ele.",
+              "audio": "Wunderbar! Wo ist der Mann, der ihn gefunden hat? Ich möchte ihm danken."
+            },
+            {
+              "personagem": "Mitarbeiter",
+              "ru": "— Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben.",
+              "pt": "— Ele já foi embora, mas deixou o nome anotado. A senhora pode escrever a ele.",
+              "audio": "Er ist schon weg, aber er hat seinen Namen aufgeschrieben. Sie können ihm schreiben."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 8 frases do A2 de que você mais gosta: Perfekt, dativo, weil, dass e wenn."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: no português, o “que” é o mesmo para tudo. Em alemão, olhe duas vezes: o gênero da palavra anterior escolhe a família (der, die, das, die), e a função do pronome na segunda frase escolhe o caso.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "O homem que mora aqui é médico.",
+              "ingles": "Der Mann, der hier wohnt, ist Arzt."
+            },
+            {
+              "portugues": "O homem que eu conheço é médico.",
+              "ingles": "Der Mann, den ich kenne, ist Arzt."
+            },
+            {
+              "portugues": "A mulher que mora aqui é médica.",
+              "ingles": "Die Frau, die hier wohnt, ist Ärztin."
+            },
+            {
+              "portugues": "A mulher que eu conheço é médica.",
+              "ingles": "Die Frau, die ich kenne, ist Ärztin."
+            },
+            {
+              "portugues": "O livro que eu li é bom.",
+              "ingles": "Das Buch, das ich gelesen habe, ist gut."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "der Gast",
@@ -83,7 +157,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "A oração relativa, passo a passo",
           "explicacao": "PASSO 1: uma ORAÇÃO RELATIVA descreve um substantivo: «Der Mann, der dort steht, ist mein Chef» (o homem QUE está ali é o meu chefe). PASSO 2: ela começa com um PRONOME RELATIVO, que tem a forma do ARTIGO DEFINIDO: der (m), die (f), das (n), die (plural). PASSO 3: o GÊNERO e o NÚMERO do relativo são os do substantivo que ele descreve (o antecedente): «Mann» é masculino → «der»; «Frau» é feminino → «die». PASSO 4: o CASO do relativo vem da sua função DENTRO da relativa; nesta aula, ele é o SUJEITO (nominativo). PASSO 5: o verbo conjugado vai para o FIM da relativa, como em «weil» e «dass». PASSO 6: a relativa vem logo DEPOIS do substantivo e entre VÍRGULAS: «Der Mann, der dort steht, ist mein Chef.»",
           "comparacao": "o português usa «que» para todos os gêneros («o homem que», «a mulher que»). O alemão usa der, die, das, die, e o verbo vai para o fim.",
@@ -134,8 +208,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Descreva 6 pessoas ou coisas em voz alta: «Der Mann, der … Die Frau, die … Das Kind, das …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 8 frases do A2 de que você mais gosta: Perfekt, dativo, weil, dass e wenn."
         }
       ]
     },
@@ -145,13 +224,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o quadro dos relativos no nominativo e 4 frases."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as frases. PASSO 2: Perguntas: PASSO 3: Nas frases 1 e 2, o homem é o mesmo. Por que o pronome muda de der para den? Quem faz a ação em cada frase? PASSO 4: Nas frases 3 e 4, a forma é a mesma (die). Por que não muda? PASSO 5: Em que posição está o verbo depois do pronome relativo (wohnt, kenne, muss)? PASSO 6: Há vírgula antes do pronome relativo? E depois da oração, na frase 1?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "der Erfolg",
@@ -213,7 +295,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Relativas com mais verbos, passo a passo",
           "explicacao": "PASSO 1: a relativa pode ter qualquer tempo: Perfekt: «Die Frau, die gestern angerufen hat, ist meine Tante» (o auxiliar vai por último). PASSO 2: com modal: «Der Student, der arbeiten muss, kommt nicht.» PASSO 3: com verbo separável: «Der Zug, der um acht Uhr abfährt, ist voll» (o prefixo se junta ao verbo no fim). PASSO 4: com «sein»: «Das Kind, das müde ist, schläft.» PASSO 5: a principal fica «partida» pela relativa: «Der Mann, der dort steht, ist mein Chef» (a principal continua depois da relativa, com o verbo na 2ª posição da sua própria parte).",
           "tabela": [
@@ -254,8 +336,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Faça 6 frases com relativas em tempos diferentes: «Die Frau, die gestern … hat. Der Zug, der um … abfährt.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva o quadro dos relativos no nominativo e 4 frases."
         }
       ]
     },
@@ -265,13 +352,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 6 frases com relativas no presente, no Perfekt e com modal."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Usar relativas para identificar pessoas",
           "explicacao": "PASSO 1: para IDENTIFICAR alguém, use a relativa em vez de uma frase solta: «Wer ist die Frau, die dort steht?» PASSO 2: uma relativa pode explicar vários detalhes: «Das ist Anna, die neue Kollegin, die seit Montag bei uns arbeitet» (duas relativas ligadas). PASSO 3: as relativas dão naturalidade e fluidez: em vez de «Das ist Paul. Er lacht immer laut.», diga «Das ist Paul, der immer laut lacht.» PASSO 4: lembre das preposições do B1: «der Mann, der …» ainda é sujeito.",
           "tabela": [
@@ -296,7 +378,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Wer ist das? / Quem é?",
           "contexto": "Dois amigos observam as pessoas de uma festa.",
           "linhas": [
@@ -351,9 +433,266 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Das ist der Mann, der hier wohnt.",
+              "translit": "",
+              "pt": "Este é o homem que mora aqui.",
+              "en": "",
+              "audio": "Das ist der Mann, der hier wohnt."
+            },
+            {
+              "ru": "Das ist der Rucksack, den ich suche.",
+              "translit": "",
+              "pt": "Esta é a mochila que estou procurando.",
+              "en": "",
+              "audio": "Das ist der Rucksack, den ich suche."
+            },
+            {
+              "ru": "Die Frau, die dort sitzt, ist meine Chefin.",
+              "translit": "",
+              "pt": "A mulher que está sentada ali é minha chefe.",
+              "en": "",
+              "audio": "Die Frau, die dort sitzt, ist meine Chefin."
+            },
+            {
+              "ru": "Ich habe ein Buch, das ich nicht verstehe.",
+              "translit": "",
+              "pt": "Tenho um livro que não entendo.",
+              "en": "",
+              "audio": "Ich habe ein Buch, das ich nicht verstehe."
+            },
+            {
+              "ru": "Das sind die Leute, die ich gestern getroffen habe.",
+              "translit": "",
+              "pt": "São as pessoas que encontrei ontem.",
+              "en": "",
+              "audio": "Das sind die Leute, die ich gestern getroffen habe."
+            },
+            {
+              "ru": "Der Zug, der um acht abfährt, ist voll.",
+              "translit": "",
+              "pt": "O trem que sai às oito está lotado.",
+              "en": "",
+              "audio": "Der Zug, der um acht abfährt, ist voll."
+            },
+            {
+              "ru": "Das ist alles, was ich weiß.",
+              "translit": "",
+              "pt": "Isso é tudo o que eu sei.",
+              "en": "",
+              "audio": "Das ist alles, was ich weiß."
+            },
+            {
+              "ru": "Wo ist die Jacke, die ich gekauft habe?",
+              "translit": "",
+              "pt": "Onde está a jaqueta que comprei?",
+              "en": "",
+              "audio": "Wo ist die Jacke, die ich gekauft habe?"
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist der Mann, ___ dort wohnt.",
+              "opcoes": [
+                "der",
+                "den"
+              ],
+              "gabarito": "der",
+              "explicacao": "Veja a chave comentada no livro: der (o homem mora: sujeito)",
+              "id": "de-047-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist der Mann, ___ ich kenne.",
+              "opcoes": [
+                "der",
+                "den"
+              ],
+              "gabarito": "den",
+              "explicacao": "Veja a chave comentada no livro: den (o homem é conhecido: objeto, masculino)",
+              "id": "de-047-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist die Frau, ___ ich kenne.",
+              "opcoes": [
+                "die",
+                "den"
+              ],
+              "gabarito": "die",
+              "explicacao": "Veja a chave comentada no livro: die (feminino não muda)",
+              "id": "de-047-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist das Buch, ___ ich lese.",
+              "opcoes": [
+                "das",
+                "dass"
+              ],
+              "gabarito": "das",
+              "explicacao": "Veja a chave comentada no livro: das (pronome relativo, um só s)",
+              "id": "de-047-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das sind die Leute, ___ im Haus wohnen.",
+              "opcoes": [
+                "die",
+                "den"
+              ],
+              "gabarito": "die",
+              "explicacao": "Veja a chave comentada no livro: die (plural, sujeito)",
+              "id": "de-047-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Der Film, den ich gesehen habe, ist gut",
+                "Der Film den ich gesehen habe ist gut"
+              ],
+              "gabarito": "Der Film, den ich gesehen habe, ist gut",
+              "explicacao": "Veja a chave comentada no livro: (a) (as vírgulas fecham a oração)",
+              "id": "de-047-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Das ist das Buch, das ich muss lesen",
+                "Das ist das Buch, das ich lesen muss"
+              ],
+              "gabarito": "Das ist das Buch, das ich lesen muss",
+              "explicacao": "Veja a chave comentada no livro: (b) (o verbo conjugado fica por último)",
+              "id": "de-047-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Das ist der Rucksack, ___ ich suche.",
+              "respostaEsperada": "den",
+              "explicacao": "Veja a chave comentada no livro: den",
+              "id": "de-047-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Das ist die Kamera, ___ nicht billig war.",
+              "respostaEsperada": "die",
+              "explicacao": "Veja a chave comentada no livro: die",
+              "id": "de-047-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Das ist das Café, ___ um acht Uhr öffnet.",
+              "respostaEsperada": "das",
+              "explicacao": "Veja a chave comentada no livro: das",
+              "id": "de-047-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Ich kenne den Mann, ___ im Café arbeitet.",
+              "respostaEsperada": "der",
+              "explicacao": "Veja a chave comentada no livro: der",
+              "id": "de-047-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Wo ist die Jacke, ___ ich gestern gekauft habe?",
+              "respostaEsperada": "die",
+              "explicacao": "Veja a chave comentada no livro: die",
+              "id": "de-047-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Das sind die Kinder, ___ nebenan wohnen.",
+              "respostaEsperada": "die",
+              "explicacao": "Veja a chave comentada no livro: die",
+              "id": "de-047-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com der, die, das, den ou was: Das ist alles, ___ ich weiß.",
+              "respostaEsperada": "was",
+              "explicacao": "Veja a chave comentada no livro: was",
+              "id": "de-047-L-207a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com um pronome relativo: Ich habe einen Freund. Er wohnt in Wien.",
+              "respostaEsperada": "Ich habe einen Freund, der in Wien wohnt",
+              "id": "de-047-L-208"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com um pronome relativo: Das ist der Tisch. Ich habe ihn gekauft.",
+              "respostaEsperada": "Das ist der Tisch, den ich gekauft habe",
+              "id": "de-047-L-209"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com um pronome relativo: Das ist die Lampe. Sie war billig.",
+              "respostaEsperada": "Das ist die Lampe, die billig war",
+              "id": "de-047-L-210"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com um pronome relativo: Wo ist das Buch? Ich muss es lesen.",
+              "respostaEsperada": "Wo ist das Buch, das ich lesen muss?",
+              "id": "de-047-L-211"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Una as frases com um pronome relativo: Wie heißt die Frau? Du hast sie gestern gesehen.",
+              "respostaEsperada": "Wie heißt die Frau, die du gestern gesehen hast?",
+              "id": "de-047-L-212"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das ist der Nachbar, ___ ich gestern geholfen habe. (helfen pede Dativo!)",
+              "respostaEsperada": "dem",
+              "explicacao": "Veja a chave comentada no livro: dem",
+              "id": "de-047-L-213a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das sind die Freunde, mit ___ (Dat. pl.) wir in den Urlaub fahren.",
+              "respostaEsperada": "denen",
+              "explicacao": "Veja a chave comentada no livro: denen",
+              "id": "de-047-L-214a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das ist die Firma, in ___ (Dat. fem., wo?) mein Bruder arbeitet, und da kommt der Bus, auf den (Akk. masc., warten auf) ich warte.",
+              "respostaEsperada": "der",
+              "explicacao": "Veja a chave comentada no livro: der / den",
+              "id": "de-047-L-215a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das ist die Firma, in der (Dat. fem., wo?) mein Bruder arbeitet, und da kommt der Bus, auf ___ (Akk. masc., warten auf) ich warte.",
+              "respostaEsperada": "den",
+              "explicacao": "Veja a chave comentada no livro: der / den",
+              "id": "de-047-L-215b"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Descreva em voz alta 4 pessoas da sua vida, cada uma com uma oração relativa."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva 6 frases com relativas no presente, no Perfekt e com modal."
         }
       ]
     },
@@ -363,13 +702,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva um pequeno texto de 6 frases descrevendo pessoas, com pelo menos 4 relativas."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -526,12 +860,77 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se descrevendo pessoas da sua família e do trabalho com orações relativas."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva três coisas que você tem em casa com uma oração relativa (Ich habe ein Sofa, das …).",
+              "respostaEsperada": "Ich habe ein Sofa, das sehr bequem ist. Hier liegt ein Buch, das ich letzte Woche gekauft habe. Das ist die Kaffeemaschine, die jeden Morgen frischen Kaffee macht.",
+              "id": "de-047-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Descreva três pessoas que você conhece (Ich habe eine Freundin, die …, Ich kenne einen Mann, den …).",
+              "respostaEsperada": "Ich habe eine Freundin, die in Wien Medizin studiert. Ich kenne einen Kollegen, den alle im Büro sehr mögen. Das ist der Nachbar, dem ich oft im Garten helfe.",
+              "id": "de-047-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete com uma frase sua: Das ist alles, was …",
+              "respostaEsperada": "Das ist alles, was ich für meine Reise brauche.",
+              "id": "de-047-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um pequeno diálogo para descrever um objeto perdido, no estilo da Cena, com pelo menos quatro orações relativas.",
+              "respostaEsperada": "Modelo de diálogo: — Guten Tag! Ich suche eine Tasche, die ich heute Morgen im Bus vergessen habe.— Wie sieht die Tasche aus, die Sie suchen?— Es ist eine braune Ledertasche, in der mein Laptop und ein Kalender sind.— Moment! Ist das der Kalender, den der Busfahrer hier abgegeben hat?",
+              "id": "de-047-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist der Mann, der ich kenne.",
+              "respostaEsperada": "Das ist der Mann, den ich kenne.",
+              "explicacao": "Das ist der Mann, den ich kenne.",
+              "id": "de-047-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich suche einen Rucksack, den ist schwarz.",
+              "respostaEsperada": "Ich suche einen Rucksack, der schwarz ist.",
+              "explicacao": "Ich suche einen Rucksack, der schwarz ist. (Rucksack é o sujeito de ist)",
+              "id": "de-047-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Das ist alles, das ich weiß.",
+              "respostaEsperada": "Das ist alles, was ich weiß.",
+              "explicacao": "Das ist alles, was ich weiß.",
+              "id": "de-047-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é copiar o “que” do português e usar sempre a mesma palavra (der para tudo, ou dass): die Frau, dass ich kenne. O segundo erro é esquecer o caso: dizer der Mann, der ich kenne quando o homem é objeto (den). O terceiro é deixar o verbo no meio: das Buch, das ich muss lesen. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 24. Complete: Ich bleibe zu Hause, weil ich krank ____. (sein) Do capítulo 18. Complete: Er ____ den Rucksack ____. (finden, Perfekt) Do capítulo 13. Complete: Ich suche einen ____ Rucksack. (schwarz)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Descrevo um objeto com das ich …, der …, die …. · Escolho entre der e den olhando a função. · Ponho as vírgulas e o verbo no fim."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você descreve pessoas e coisas com orações relativas. Próxima aula: o relativo no acusativo."
+  "notasParaOAluno": "Você descreve pessoas e coisas com orações relativas. Próxima aula: o relativo no acusativo.",
+  "geradaDoLivro": true
 }

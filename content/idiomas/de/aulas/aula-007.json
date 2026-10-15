@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você distingue quem faz e quem recebe a ação, usa den, einen e keinen no masculino sem hesitar e troca o objeto por ihn, sie ou es."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "No brechó",
+          "contexto": "Camila e Jonas procuram móveis para o quarto.",
+          "linhas": [
+            {
+              "personagem": "Camila",
+              "ru": "— Ich suche einen Tisch.",
+              "pt": "— Estou procurando uma mesa.",
+              "audio": "Ich suche einen Tisch."
+            },
+            {
+              "personagem": "Verkäufer",
+              "ru": "— Hier ist ein Tisch. Der Tisch ist alt, aber schön.",
+              "pt": "— Aqui tem uma mesa. A mesa é velha, mas bonita.",
+              "audio": "Hier ist ein Tisch. Der Tisch ist alt, aber schön."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Wie viel kostet der Tisch?",
+              "pt": "— Quanto custa a mesa?",
+              "audio": "Wie viel kostet der Tisch?"
+            },
+            {
+              "personagem": "Verkäufer",
+              "ru": "— Zwanzig Euro.",
+              "pt": "— Vinte euros.",
+              "audio": "Zwanzig Euro."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe.",
+              "pt": "— Ótimo, vou comprar a mesa. E também preciso de uma luminária.",
+              "audio": "Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe."
+            },
+            {
+              "personagem": "Verkäufer",
+              "ru": "— Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?",
+              "pt": "— A luminária custa oito euros. A senhora precisa de uma cadeira também?",
+              "audio": "Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Nein danke, ich habe schon einen Stuhl.",
+              "pt": "— Não, obrigada, já tenho uma cadeira.",
+              "audio": "Nein danke, ich habe schon einen Stuhl."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ich trage den Tisch!",
+              "pt": "— Eu carrego a mesa!",
+              "audio": "Ich trage den Tisch!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva a data de hoje e a hora de agora em alemão."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: O alemão marca a função no artigo. Mas só no masculino. Isso dá duas armadilhas: PASSO 2: só o masculino muda. Então só pergunte se a palavra é der. Se não for, nada acontece.",
+          "comparacao": "O português descobre quem é sujeito e quem é objeto pela posição: “o homem vê o cachorro” e “o cachorro vê o homem” são diferentes porque a ordem muda. Os artigos “o” e “a” não mudam.",
+          "tabela": [
+            {
+              "portugues": "masculino",
+              "ingles": "der Tisch",
+              "evite": "den Tisch"
+            },
+            {
+              "portugues": "feminino",
+              "ingles": "die Lampe",
+              "evite": "die Lampe"
+            },
+            {
+              "portugues": "neutro",
+              "ingles": "das Bett",
+              "evite": "das Bett"
+            },
+            {
+              "portugues": "plural",
+              "ingles": "die Stühle",
+              "evite": "die Stühle"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 10,
+          "min": 7,
           "itens": [
             {
               "ru": "das Brot",
@@ -111,7 +197,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "O acusativo: o objeto direto muda só no masculino",
           "explicacao": "O alemão tem quatro casos. Por agora você precisa de dois: o NOMINATIVO (quem faz a ação) e o ACUSATIVO (o objeto direto: o que se come, bebe, compra ou tem). A única diferença entre os dois está no MASCULINO singular: der → den, ein → einen, kein → keinen. Feminino, neutro e plural ficam iguais. Verbos que pedem acusativo: essen, trinken, kaufen, haben, nehmen, möchten, lesen, sehen.",
           "comparacao": "o português não muda o artigo: «o queijo» é igual como sujeito ou como objeto. O alemão muda só o masculino: «der Käse» (sujeito) × «den Käse» (objeto).",
@@ -157,8 +243,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga: «Ich esse den Käse. Ich trinke einen Saft. Ich esse die Suppe. Ich esse ein Brot.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva a data de hoje e a hora de agora em alemão."
         }
       ]
     },
@@ -168,13 +259,41 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva 4 frases com «Ich esse / Ich trinke» e um alimento no acusativo."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Compare as frases. PASSO 2: Perguntas: PASSO 3: Qual gênero muda de forma quando passa de sujeito a objeto? PASSO 4: O que acontece com ein no masculino? PASSO 5: Quem é o sujeito em Ich kaufe den Tisch? E o objeto?",
+          "tabela": [
+            {
+              "c1": "Der Tisch ist alt.",
+              "c2": "Ich kaufe den Tisch."
+            },
+            {
+              "c1": "Die Lampe ist neu.",
+              "c2": "Ich kaufe die Lampe."
+            },
+            {
+              "c1": "Das Buch ist gut.",
+              "c2": "Ich kaufe das Buch."
+            },
+            {
+              "c1": "Die Stühle sind alt.",
+              "c2": "Ich kaufe die Stühle."
+            },
+            {
+              "c1": "Ein Hund ist hier.",
+              "c2": "Ich habe einen Hund."
+            },
+            {
+              "c1": "Eine Katze ist hier.",
+              "c2": "Ich habe eine Katze."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "essen",
@@ -236,7 +355,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Verbos que trocam e por i ou ie",
           "explicacao": "Um grupo de verbos muito usados troca a vogal «e» por «i» ou «ie» no «du» e no «er / sie / es»: essen → du isst, er isst. Os outros pronomes são regulares. Em «nehmen» a consoante também muda (nimmst, nimmt). Aprenda cada um desses verbos junto com o seu «du» e o seu «er».",
           "tabela": [
@@ -311,8 +430,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga: «Ich lese ein Buch. Du liest eine Zeitung. Er isst einen Apfel. Sie nimmt einen Kaffee.»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva 4 frases com «Ich esse / Ich trinke» e um alimento no acusativo."
         }
       ]
     },
@@ -322,13 +446,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva as 6 formas de «essen» e de «lesen» de memória."
-        },
-        {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 8,
           "titulo": "Möchten e a moldura da frase",
           "explicacao": "«Ich möchte» é «eu gostaria» ou «eu quero» (mais educado que «wollen»). O verbo modal fica na 2ª posição, e o outro verbo vai para o FIM, no infinitivo: «Ich möchte einen Kaffee trinken.» É a «moldura» da frase. Se o sentido já está claro, o segundo verbo pode ficar de fora: «Ich möchte einen Kaffee.» Para pedir: «Ich nehme …», «Ich möchte …», «Die Rechnung, bitte» e «Zahlen, bitte».",
           "comparacao": "em português «eu gostaria de beber um café» mantém os verbos juntos. Em alemão, o segundo verbo vai para o fim: «Ich möchte einen Kaffee trinken».",
@@ -375,7 +494,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Im Restaurant / No restaurante",
           "contexto": "Dois clientes e um garçom.",
           "linhas": [
@@ -442,9 +561,236 @@
           ]
         },
         {
-          "tipo": "producao",
+          "tipo": "palavras",
           "min": 3,
+          "itens": [
+            {
+              "ru": "Ich suche einen Tisch.",
+              "translit": "",
+              "pt": "Estou procurando uma mesa.",
+              "en": "",
+              "audio": "Ich suche einen Tisch."
+            },
+            {
+              "ru": "Ich brauche einen Stuhl.",
+              "translit": "",
+              "pt": "Preciso de uma cadeira.",
+              "en": "",
+              "audio": "Ich brauche einen Stuhl."
+            },
+            {
+              "ru": "Ich kaufe den Tisch.",
+              "translit": "",
+              "pt": "Vou comprar a mesa.",
+              "en": "",
+              "audio": "Ich kaufe den Tisch."
+            },
+            {
+              "ru": "Ich habe keinen Hunger.",
+              "translit": "",
+              "pt": "Não estou com fome.",
+              "en": "",
+              "audio": "Ich habe keinen Hunger."
+            },
+            {
+              "ru": "Gibt es hier einen Supermarkt?",
+              "translit": "",
+              "pt": "Tem um supermercado aqui?",
+              "en": "",
+              "audio": "Gibt es hier einen Supermarkt?"
+            },
+            {
+              "ru": "Ich liebe dich.",
+              "translit": "",
+              "pt": "Eu te amo.",
+              "en": "",
+              "audio": "Ich liebe dich."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich kaufe ___ Tisch.",
+              "opcoes": [
+                "der",
+                "den"
+              ],
+              "gabarito": "den",
+              "explicacao": "Veja a chave comentada no livro: den",
+              "id": "de-007-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ Tisch ist neu.",
+              "opcoes": [
+                "Der",
+                "Den"
+              ],
+              "gabarito": "Der",
+              "explicacao": "Veja a chave comentada no livro: Der (sujeito)",
+              "id": "de-007-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich suche ___ Schlüssel (m.).",
+              "opcoes": [
+                "der",
+                "den"
+              ],
+              "gabarito": "den",
+              "explicacao": "Veja a chave comentada no livro: den (Schlüssel é masculino)",
+              "id": "de-007-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Wir brauchen ___ Auto (n.).",
+              "opcoes": [
+                "ein",
+                "einen"
+              ],
+              "gabarito": "ein",
+              "explicacao": "Veja a chave comentada no livro: ein (neutro não muda)",
+              "id": "de-007-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Er hat ___ Hund (m.).",
+              "opcoes": [
+                "ein",
+                "einen"
+              ],
+              "gabarito": "einen",
+              "explicacao": "Veja a chave comentada no livro: einen",
+              "id": "de-007-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Das ist ___ Stuhl (m.).",
+              "opcoes": [
+                "ein",
+                "einen"
+              ],
+              "gabarito": "ein",
+              "explicacao": "Veja a chave comentada no livro: ein (depois de sein, nominativo)",
+              "id": "de-007-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "___ besuchst du am Wochenende?",
+              "opcoes": [
+                "Wer",
+                "Wen"
+              ],
+              "gabarito": "Wen",
+              "explicacao": "Veja a chave comentada no livro: Wen",
+              "id": "de-007-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich liebe ___ (du). · Tom sucht mich (ich).",
+              "respostaEsperada": "dich",
+              "explicacao": "Veja a chave comentada no livro: dich, mich",
+              "id": "de-007-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich liebe dich (du). · Tom sucht ___ (ich).",
+              "respostaEsperada": "mich",
+              "explicacao": "Veja a chave comentada no livro: dich, mich",
+              "id": "de-007-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Camila kennt ___ (er). · Wir besuchen sie (sie, plural). · Hörst du uns (wir)?",
+              "respostaEsperada": "ihn",
+              "explicacao": "Veja a chave comentada no livro: ihn, sie, uns",
+              "id": "de-007-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Camila kennt ihn (er). · Wir besuchen ___ (sie, plural). · Hörst du uns (wir)?",
+              "respostaEsperada": "sie",
+              "explicacao": "Veja a chave comentada no livro: ihn, sie, uns",
+              "id": "de-007-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Camila kennt ihn (er). · Wir besuchen sie (sie, plural). · Hörst du ___ (wir)?",
+              "respostaEsperada": "uns",
+              "explicacao": "Veja a chave comentada no livro: ihn, sie, uns",
+              "id": "de-007-L-202c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Substitua o objeto destacado pelo pronome correspondente (ihn, sie, es): Ich kaufe den Computer. → Ich kaufe ___.",
+              "respostaEsperada": "ihn",
+              "explicacao": "Veja a chave comentada no livro: Ich kaufe ihn",
+              "id": "de-007-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Substitua o objeto destacado pelo pronome correspondente (ihn, sie, es): Ich bezahle die Rechnung. → Ich bezahle ___.",
+              "respostaEsperada": "sie",
+              "explicacao": "Veja a chave comentada no livro: Ich bezahle sie",
+              "id": "de-007-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Substitua o objeto destacado pelo pronome correspondente (ihn, sie, es): Ich lese das Formular. → Ich lese ___.",
+              "respostaEsperada": "es",
+              "explicacao": "Veja a chave comentada no livro: Ich lese es",
+              "id": "de-007-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com ein, eine, einen ou kein, keine, keinen: Ich habe ___ Hund (m.), eine Katze (f.) und ein Auto (n.).",
+              "respostaEsperada": "einen",
+              "explicacao": "Veja a chave comentada no livro: einen Hund, eine Katze, ein Auto",
+              "id": "de-007-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com ein, eine, einen ou kein, keine, keinen: Ich habe einen Hund (m.), ___ Katze (f.) und ein Auto (n.).",
+              "respostaEsperada": "eine",
+              "explicacao": "Veja a chave comentada no livro: einen Hund, eine Katze, ein Auto",
+              "id": "de-007-L-206b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com ein, eine, einen ou kein, keine, keinen: Ich habe einen Hund (m.), eine Katze (f.) und ___ Auto (n.).",
+              "respostaEsperada": "ein",
+              "explicacao": "Veja a chave comentada no livro: einen Hund, eine Katze, ein Auto",
+              "id": "de-007-L-206c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com ein, eine, einen ou kein, keine, keinen: Heute habe ich ___ Termin (m.) und keine Zeit (f.).",
+              "respostaEsperada": "keinen",
+              "explicacao": "Veja a chave comentada no livro: keinen Termin, keine Zeit",
+              "id": "de-007-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Complete com ein, eine, einen ou kein, keine, keinen: Heute habe ich keinen Termin (m.) und ___ Zeit (f.).",
+              "respostaEsperada": "keine",
+              "explicacao": "Veja a chave comentada no livro: keinen Termin, keine Zeit",
+              "id": "de-007-L-207b"
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 2,
           "enunciado": "Faça um pedido em voz alta: uma bebida, um prato e «Die Rechnung, bitte»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 6 formas de «essen» e de «lesen» de memória."
         }
       ]
     },
@@ -454,34 +800,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases sobre o que você come e bebe no café da manhã."
-        },
-        {
-          "tipo": "texto",
-          "min": 5,
-          "titulo": "Mein Frühstück / Meu café da manhã",
-          "ru": "Ich frühstücke um sieben Uhr. Ich trinke einen Kaffee und esse ein Brot mit Butter und Käse. Mein Bruder isst einen Apfel und trinkt Tee. Er isst nicht gern Eier. Am Wochenende frühstücken wir zusammen.",
-          "pt": "Tomo café da manhã às sete horas. Bebo um café e como um pão com manteiga e queijo. Meu irmão come uma maçã e bebe chá. Ele não gosta de comer ovos. No fim de semana tomamos café da manhã juntos.",
-          "perguntas": [
-            {
-              "pergunta": "Wann frühstückt der Autor?",
-              "resposta": "Um sieben Uhr"
-            },
-            {
-              "pergunta": "Was trinkt der Bruder?",
-              "resposta": "Tee"
-            },
-            {
-              "pergunta": "Wann frühstücken sie zusammen?",
-              "resposta": "Am Wochenende"
-            }
-          ]
-        },
-        {
           "tipo": "exercicios",
-          "min": 15,
+          "min": 13,
           "itens": [
             {
               "tipo": "multiple-choice",
@@ -659,12 +979,77 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando o que você come e bebe no café da manhã e fazendo um pedido de restaurante."
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva cinco itens da sua lista de compras ou trabalho com Ich brauche …, usando dois masculinos (einen Laptop, einen Schlüssel), um feminino (eine Tasche), um neutro (ein Buch) e um plural (Bücher).",
+              "respostaEsperada": "Ich brauche einen Laptop, einen Schlüssel, eine Tasche, ein Buch und Bücher für den Kurs.",
+              "id": "de-007-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva uma conversa de brechó ou loja de seis falas entre você e um vendedor (Ich suche einen/eine … / Wie viel kostet …? / Ich nehme den/die …).",
+              "respostaEsperada": "Modelo de diálogo: — Guten Tag! Ich suche einen Rucksack und eine Jacke.— Hier ist ein Rucksack. Er ist fast neu.— Wie viel kostet der Rucksack?— Er kostet fünfzehn Euro. Und die Jacke kostet zwanzig Euro.— Super, ich nehme den Rucksack und die Jacke!— Vielen Dank!",
+              "id": "de-007-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três perguntas diretas: duas com Wen (pessoas) e uma com Was (coisa), com suas respectivas respostas.",
+              "respostaEsperada": "— Wen besuchst du morgen? — Ich besuche meinen Bruder. / — Wen kennst du hier in München? — Ich kenne Jonas und Lena. / — Was suchst du? — Ich suche meinen Schlüssel.",
+              "id": "de-007-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich kaufe der Tisch.",
+              "respostaEsperada": "Ich kaufe den Tisch.",
+              "explicacao": "Ich kaufe den Tisch.",
+              "id": "de-007-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich suche den Lampe.",
+              "respostaEsperada": "Ich suche die Lampe.",
+              "explicacao": "Ich suche die Lampe.",
+              "id": "de-007-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich brauche er.",
+              "respostaEsperada": "Ich brauche ihn.",
+              "explicacao": "Ich brauche ihn.",
+              "id": "de-007-L-c05"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich suche eine Lampe.",
+              "respostaEsperada": "OK",
+              "id": "de-007-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é esquecer o -en do masculino no objeto direto (Ich habe ein Hund em vez de einen Hund) ou colocar acusativo depois do verbo sein (Das ist einen Tisch em vez de ein Tisch). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Retorno. Do capítulo 7. Complete: Der Tisch kostet ____ Euro (20). Die Lampe kostet ____ Euro (8). Der Kurs beginnt um ____ Uhr (4h). Do capítulo 6. Negue: Ich kaufe einen Tisch. Ich suche eine Lampe. Ich habe ein Auto. Do capítulo 5. Diga o artigo: ____ Schrank, ____ Lampe, ____ Fenster, ____ Stühle."
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Digo Ich kaufe den Tisch e Ich habe einen Hund sem pensar. · Troco um objeto masculino por ihn e pergunto por uma pessoa-objeto com Wen."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você pede comida e bebida e usa o objeto direto. Próxima aula: a sua rotina."
+  "notasParaOAluno": "Você pede comida e bebida e usa o objeto direto. Próxima aula: a sua rotina.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,99 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você conta o que fez ontem com haben ou sein + particípio, forma o particípio de verbos regulares, irregulares, separáveis e inseparáveis, e escolhe entre haben e sein."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "O que você fez ontem?",
+          "contexto": "Lena encontra Camila no café e pergunta como foi o dia anterior.",
+          "linhas": [
+            {
+              "personagem": "Lena",
+              "ru": "— Hallo Camila! Was hast du gestern gemacht?",
+              "pt": "— Oi, Camila! O que você fez ontem?",
+              "audio": "Hallo Camila! Was hast du gestern gemacht?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen.",
+              "pt": "— Eu acordei cedo. Depois liguei para o Pedro. A gente conversou bastante.",
+              "audio": "Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen."
+            },
+            {
+              "personagem": "Lena",
+              "ru": "— Und danach?",
+              "pt": "— E depois?",
+              "audio": "Und danach?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft.",
+              "pt": "— O Jonas e eu fomos para o centro. A gente fez compras. Eu comprei um livro.",
+              "audio": "Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft."
+            },
+            {
+              "personagem": "Lena",
+              "ru": "— Seid ihr ins Museum gegangen?",
+              "pt": "— Vocês foram ao museu?",
+              "audio": "Seid ihr ins Museum gegangen?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen.",
+              "pt": "— Fomos! A gente viu muitos quadros. Mas eu esqueci a minha bolsa.",
+              "audio": "Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen."
+            },
+            {
+              "personagem": "Lena",
+              "ru": "— Oh nein! Hast du sie gefunden?",
+              "pt": "— Ai, não! Você achou?",
+              "audio": "Oh nein! Hast du sie gefunden?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht.",
+              "pt": "— Sim, o Jonas achou. A gente voltou para casa e cozinhou massa.",
+              "audio": "Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «haben» no presente e 4 frases com «Ich habe …» no presente."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: passado da fala = auxiliar na posição 2 + particípio no fim. Movimento ou mudança = sein.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Ontem eu comi pizza.",
+              "ingles": "Gestern habe ich Pizza gegessen."
+            },
+            {
+              "portugues": "Eu liguei para o Pedro.",
+              "ingles": "Ich habe Pedro angerufen."
+            },
+            {
+              "portugues": "Eu acordei cedo.",
+              "ingles": "Ich bin früh aufgestanden."
+            },
+            {
+              "portugues": "Fomos ao museu.",
+              "ingles": "Wir sind ins Museum gegangen."
+            },
+            {
+              "portugues": "O que você fez?",
+              "ingles": "Was hast du gemacht?"
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "gestern",
@@ -83,7 +169,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "O Perfekt, passo a passo",
           "explicacao": "PASSO 1: o Perfekt é o passado da CONVERSA e das mensagens: «Ich habe Deutsch gelernt» (eu estudei alemão). PASSO 2: ele tem DOIS elementos: o auxiliar «haben», conjugado, na 2ª posição, e o PARTIZIP II, no FIM da frase (a moldura que você já conhece dos modais). PASSO 3: o Partizip II dos verbos regulares é «ge-» + raiz + «-t»: machen → gemacht; lernen → gelernt; spielen → gespielt; kaufen → gekauft; kochen → gekocht; hören → gehört (sem o «ge-» extra: «hören» já começa com h, e o «ge» entra: ge-hör-t). PASSO 4: conjugue «haben»: ich habe, du hast, er hat, wir haben, ihr habt, sie haben. PASSO 5: pergunta de sim ou não: «Hast du schon gegessen?» e resposta: «Ja, schon» ou «Nein, noch nicht». PASSO 6: use as palavras de tempo do passado: gestern, letzte Woche, letztes Jahr.",
           "comparacao": "o português tem «eu tenho feito» (que não é o passado comum) e «eu fiz». O Perfekt alemão faz o trabalho do «eu fiz»: auxiliar + particípio no fim.",
@@ -145,8 +231,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga 5 coisas que você fez ontem: «Gestern habe ich … gemacht / gekocht / gehört …»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 6 formas de «haben» no presente e 4 frases com «Ich habe …» no presente."
         }
       ]
     },
@@ -156,13 +247,16 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva o Partizip II de 8 verbos regulares: machen, lernen, spielen, kaufen, kochen, hören, wohnen, tanzen."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe as frases. PASSO 2: Perguntas: PASSO 3: Onde estão haben e sein na frase? E o particípio? PASSO 4: Quase todos os particípios começam com ge-. Em quais frases o ge- está “escondido”? Onde ele aparece? PASSO 5: Nas frases 4 e 5, que verbos usam sein? O que aufstehen e kommen têm em comum? Compare gekocht e getrunken. Qual termina em -t e qual termina em - en?",
+          "tabela": [],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "studieren",
@@ -224,7 +318,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Casos especiais do Partizip II regular",
           "explicacao": "PASSO 1: se a raiz termina em -t ou -d, o particípio ganha «-et» para ficar pronunciável: arbeiten → gearbeitet; warten → gewartet. PASSO 2: os verbos em «-ieren» NÃO levam «ge-»: studieren → studiert; telefonieren → telefoniert; reparieren → repariert. PASSO 3: os verbos com prefixo INSEPARÁVEL (be-, ge-, er-, ver-, ent-, emp-, zer-) também NÃO levam «ge-»: besuchen → besucht; bezahlen → bezahlt; verkaufen → verkauft; erklären → erklärt. PASSO 4: regra de bolso: se o verbo começa por be-, er-, ver-, ent- ou ge-, ou termina em -ieren, ele não leva «ge-» no particípio.",
           "tabela": [
@@ -290,8 +384,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Diga 6 frases sobre a última semana, com um verbo de cada grupo: -ieren, be-, ver-, er- e raiz em -t."
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva o Partizip II de 8 verbos regulares: machen, lernen, spielen, kaufen, kochen, hören, wohnen, tanzen."
         }
       ]
     },
@@ -301,13 +400,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva o Partizip II de studieren, besuchen, bezahlen, arbeiten e warten."
-        },
-        {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "einkaufen",
@@ -355,7 +449,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Verbos separáveis regulares: o «ge-» vai para o meio",
           "explicacao": "PASSO 1: o verbo separável tem prefixo + raiz: «einkaufen» = ein + kaufen. PASSO 2: no Partizip II, o «ge-» entra ENTRE o prefixo e a raiz: ein + ge + kauft → «eingekauft»; auf + ge + räumt → «aufgeräumt»; ab + ge + holt → «abgeholt»; an + ge + meldet → «angemeldet» (raiz em -d: +et). PASSO 3: na frase, o particípio inteiro vai para o fim: «Ich habe heute eingekauft.» PASSO 4: compare com o presente: «Ich kaufe heute ein» (prefixo no fim) × «Ich habe heute eingekauft» (particípio no fim).",
           "tabela": [
@@ -406,7 +500,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 9,
+          "min": 6,
           "titulo": "Was hast du gestern gemacht? / O que você fez ontem?",
           "contexto": "Dois amigos contam o dia anterior.",
           "linhas": [
@@ -465,6 +559,256 @@
               "audio": "Ja, ich habe sie vom Bahnhof abgeholt."
             }
           ]
+        },
+        {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Was hast du gestern gemacht?",
+              "translit": "",
+              "pt": "O que você fez ontem?",
+              "en": "",
+              "audio": "Was hast du gestern gemacht?"
+            },
+            {
+              "ru": "Ich habe Pizza gegessen.",
+              "translit": "",
+              "pt": "Eu comi pizza.",
+              "en": "",
+              "audio": "Ich habe Pizza gegessen."
+            },
+            {
+              "ru": "Ich bin früh aufgestanden.",
+              "translit": "",
+              "pt": "Eu acordei cedo.",
+              "en": "",
+              "audio": "Ich bin früh aufgestanden."
+            },
+            {
+              "ru": "Wir sind nach Berlin gefahren.",
+              "translit": "",
+              "pt": "Fomos para Berlim.",
+              "en": "",
+              "audio": "Wir sind nach Berlin gefahren."
+            },
+            {
+              "ru": "Er hat mich angerufen.",
+              "translit": "",
+              "pt": "Ele me ligou.",
+              "en": "",
+              "audio": "Er hat mich angerufen."
+            },
+            {
+              "ru": "Ich habe dich nicht verstanden.",
+              "translit": "",
+              "pt": "Eu não entendi você.",
+              "en": "",
+              "audio": "Ich habe dich nicht verstanden."
+            },
+            {
+              "ru": "Hast du das gewusst?",
+              "translit": "",
+              "pt": "Você sabia disso?",
+              "en": "",
+              "audio": "Hast du das gewusst?"
+            },
+            {
+              "ru": "Ich habe es vergessen.",
+              "translit": "",
+              "pt": "Eu esqueci.",
+              "en": "",
+              "audio": "Ich habe es vergessen."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está certa?",
+              "opcoes": [
+                "Ich habe gegangen",
+                "Ich bin gegangen"
+              ],
+              "gabarito": "Ich bin gegangen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-021-L-101"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Wir ___ Kaffee getrunken.",
+              "opcoes": [
+                "haben",
+                "sind"
+              ],
+              "gabarito": "haben",
+              "explicacao": "Veja a chave comentada no livro: haben",
+              "id": "de-021-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Er ___ nach Hause gekommen.",
+              "opcoes": [
+                "hat",
+                "ist"
+              ],
+              "gabarito": "ist",
+              "explicacao": "Veja a chave comentada no livro: ist",
+              "id": "de-021-L-103"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Particípio de machen: (gemacht, gemachen)",
+              "respostaEsperada": "gemacht",
+              "id": "de-021-L-104"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Particípio de besuchen: (gebesucht, besucht)",
+              "respostaEsperada": "besucht",
+              "id": "de-021-L-105"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Particípio de anrufen: (geanrufen, angerufen)",
+              "respostaEsperada": "angerufen",
+              "id": "de-021-L-106"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Particípio de essen: (gegessen, geesst)",
+              "respostaEsperada": "gegessen",
+              "id": "de-021-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: lernen → ___ · arbeiten → gearbeitet · sehen → gesehen · schlafen → geschlafen",
+              "respostaEsperada": "gelernt",
+              "explicacao": "Veja a chave comentada no livro: gelernt, gearbeitet, gesehen, geschlafen",
+              "id": "de-021-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: lernen → gelernt · arbeiten → ___ · sehen → gesehen · schlafen → geschlafen",
+              "respostaEsperada": "gearbeitet",
+              "explicacao": "Veja a chave comentada no livro: gelernt, gearbeitet, gesehen, geschlafen",
+              "id": "de-021-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: lernen → gelernt · arbeiten → gearbeitet · sehen → ___ · schlafen → geschlafen",
+              "respostaEsperada": "gesehen",
+              "explicacao": "Veja a chave comentada no livro: gelernt, gearbeitet, gesehen, geschlafen",
+              "id": "de-021-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: lernen → gelernt · arbeiten → gearbeitet · sehen → gesehen · schlafen → ___",
+              "respostaEsperada": "geschlafen",
+              "explicacao": "Veja a chave comentada no livro: gelernt, gearbeitet, gesehen, geschlafen",
+              "id": "de-021-L-201d"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: einkaufen → ___ · verstehen → verstanden · studieren → studiert · bleiben → geblieben",
+              "respostaEsperada": "eingekauft",
+              "explicacao": "Veja a chave comentada no livro: eingekauft, verstanden, studiert, geblieben",
+              "id": "de-021-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: einkaufen → eingekauft · verstehen → ___ · studieren → studiert · bleiben → geblieben",
+              "respostaEsperada": "verstanden",
+              "explicacao": "Veja a chave comentada no livro: eingekauft, verstanden, studiert, geblieben",
+              "id": "de-021-L-202b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: einkaufen → eingekauft · verstehen → verstanden · studieren → ___ · bleiben → geblieben",
+              "respostaEsperada": "studiert",
+              "explicacao": "Veja a chave comentada no livro: eingekauft, verstanden, studiert, geblieben",
+              "id": "de-021-L-202c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Escreva o Partizip II de cada verbo: einkaufen → eingekauft · verstehen → verstanden · studieren → studiert · bleiben → ___",
+              "respostaEsperada": "geblieben",
+              "explicacao": "Veja a chave comentada no livro: eingekauft, verstanden, studiert, geblieben",
+              "id": "de-021-L-202d"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases do presente para o Perfekt: Ich koche Pasta. → ___",
+              "respostaEsperada": "Ich habe Pasta gekocht",
+              "id": "de-021-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases do presente para o Perfekt: Du isst einen Apfel. → ___",
+              "respostaEsperada": "Du hast einen Apfel gegessen",
+              "id": "de-021-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases do presente para o Perfekt: Wir fahren nach Berlin. → ___",
+              "respostaEsperada": "Wir sind nach Berlin gefahren",
+              "id": "de-021-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases do presente para o Perfekt: Er steht um sieben Uhr auf. → ___",
+              "respostaEsperada": "Er ist um sieben Uhr aufgestanden",
+              "id": "de-021-L-206"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Passe as frases do presente para o Perfekt: Sie ruft mich an. → ___",
+              "respostaEsperada": "Sie hat mich angerufen",
+              "id": "de-021-L-207"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich ___ gestern viel gelesen. · Sie (ela) ist in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr habt Pizza gegessen.",
+              "respostaEsperada": "habe",
+              "explicacao": "Veja a chave comentada no livro: habe, ist, sind, habt",
+              "id": "de-021-L-208a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe gestern viel gelesen. · Sie (ela) ___ in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr habt Pizza gegessen.",
+              "respostaEsperada": "ist",
+              "explicacao": "Veja a chave comentada no livro: habe, ist, sind, habt",
+              "id": "de-021-L-208b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe gestern viel gelesen. · Sie (ela) ist in die Stadt gefahren. · Wir ___ zu Hause geblieben. · Ihr habt Pizza gegessen.",
+              "respostaEsperada": "sind",
+              "explicacao": "Veja a chave comentada no livro: habe, ist, sind, habt",
+              "id": "de-021-L-208c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich habe gestern viel gelesen. · Sie (ela) ist in die Stadt gefahren. · Wir sind zu Hause geblieben. · Ihr ___ Pizza gegessen.",
+              "respostaEsperada": "habt",
+              "explicacao": "Veja a chave comentada no livro: habe, ist, sind, habt",
+              "id": "de-021-L-208d"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Was machst du? → ___? / Wohin fährst du? → ___?",
+              "respostaEsperada": "Was hast du gemacht? / Wohin bist du gefahren?",
+              "id": "de-021-L-209"
+            }
+          ]
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva o Partizip II de studieren, besuchen, bezahlen, arbeiten e warten."
         }
       ]
     },
@@ -474,34 +818,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 5 frases no Perfekt sobre o seu último fim de semana, só com verbos regulares."
-        },
-        {
-          "tipo": "texto",
-          "min": 5,
-          "titulo": "Mein Samstag / O meu sábado",
-          "ru": "Gestern habe ich Hausaufgaben gemacht. Ich habe Musik gehört und Pasta gekocht. Am Nachmittag habe ich eingekauft und meine Oma besucht. Am Abend habe ich lange telefoniert. Ich habe nicht gearbeitet.",
-          "pt": "Ontem fiz a lição de casa. Ouvi música e cozinhei macarrão. À tarde fiz compras e visitei a minha avó. À noite telefonei por muito tempo. Não trabalhei.",
-          "perguntas": [
-            {
-              "pergunta": "Was hat der Autor gekocht?",
-              "resposta": "Pasta"
-            },
-            {
-              "pergunta": "Wen hat er besucht?",
-              "resposta": "Seine Oma"
-            },
-            {
-              "pergunta": "Hat er gearbeitet?",
-              "resposta": "Nein, er hat nicht gearbeitet"
-            }
-          ]
-        },
-        {
           "tipo": "exercicios",
-          "min": 15,
+          "min": 13,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -679,12 +997,71 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se contando o que você fez ontem, no Perfekt, só com verbos regulares."
+          "tipo": "exercicios",
+          "min": 9,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Conte o seu dia de ontem em cinco frases no Perfekt: três com haben (gearbeitet, gekocht, angerufen…) e duas com sein (aufgestanden, gefahren, gegangen…).",
+              "respostaEsperada": "Gestern bin ich um sieben Uhr aufgestanden. Ich habe Kaffee getrunken und im Büro gearbeitet. Am Nachmittag habe ich meine Mutter angerufen. Um achtzehn Uhr bin ich nach Hause gefahren und habe ein Buch gelesen.",
+              "id": "de-021-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases sobre o que você fez no último fim de semana (Am Wochenende bin ich … / habe ich …).",
+              "respostaEsperada": "Am Wochenende bin ich mit Freunden ins Kino gegangen. Am Sonntag sind wir zu Hause geblieben und haben zusammen gekocht.",
+              "id": "de-021-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um diálogo curto de quatro falas perguntando a um amigo como foi o fim de semana dele.",
+              "respostaEsperada": "Modelo de diálogo: — Hallo Lena! Was hast du am Wochenende gemacht?— Ich bin nach Hamburg gefahren und habe meinen Bruder besucht. Und du?— Ich bin in München geblieben. Ich habe eingekauft und einen Film gesehen.— Schön! Hat dir der Film gefallen?",
+              "id": "de-021-L-p03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich habe gegangen nach Hause.",
+              "respostaEsperada": "Ich bin nach Hause gegangen.",
+              "explicacao": "Ich bin nach Hause gegangen.",
+              "id": "de-021-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Wir haben das Buch gelest.",
+              "respostaEsperada": "Wir haben das Buch gelesen.",
+              "explicacao": "Wir haben das Buch gelesen.",
+              "id": "de-021-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Du hast gestern gearbeit.",
+              "respostaEsperada": "Du hast gestern gearbeitet.",
+              "explicacao": "Du hast gestern gearbeitet.",
+              "id": "de-021-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é usar haben com verbos de deslocamento ou mudança de estado (Ich habe gegangen / Er hat gefahren em vez de Ich bin gegangen / Er ist gefahren), esquecer de mandar o particípio para o fim da frase ou colocar ge- no lugar errado nos verbos separáveis e inseparáveis. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Retorno. Do capítulo 17. Complete: Ich ____ dich später ____. (anrufen) Do capítulo 16. Complete: Du ____ (nehmen) den Bus. Do capítulo 15. Complete: Wir ____ heute nicht kommen. (können)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Conto o que fiz ontem usando haben e sein na moldura verbal. · Pergunto a um colega o que ele fez e escolho o auxiliar certo sem hesitar."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você conta o passado com verbos regulares. Próxima aula: os particípios irregulares."
+  "notasParaOAluno": "Você conta o passado com verbos regulares. Próxima aula: os particípios irregulares.",
+  "geradaDoLivro": true
 }

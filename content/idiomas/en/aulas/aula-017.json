@@ -15,13 +15,105 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você fala de planos e intenções com be going to, de compromissos já agendados com o Present Continuous (I'm meeting a client tomorrow), toma decisões espontâneas, faz ofertas e promessas com will (I'll, won't), e expressa possibilidades futuras com may e might."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "Sexta-feira à tarde no escritório",
+          "contexto": "Marina e Kevin conversam no fim do expediente de sexta-feira sobre os planos para o fim de semana e a agenda de segunda-feira.",
+          "linhas": [
+            {
+              "personagem": "Kevin",
+              "ru": "— Marina, it's almost five thirty! What are you doing this weekend? Do you have any plans?",
+              "pt": "— Marina, são quase cinco e meia! O que você vai fazer neste fim de semana? Tem algum plano?",
+              "audio": "Marina, it's almost five thirty! What are you doing this weekend? Do you have any plans?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Yes! Tomorrow morning I'm having breakfast with my friend Julia at eight thirty — we booked a table at that French bakery downtown.",
+              "pt": "— Sim! Amanhã de manhã vou tomar café com a minha amiga Julia às oito e meia — reservamos uma mesa naquela padaria francesa no centro.",
+              "audio": "Yes! Tomorrow morning I'm having breakfast with my friend Julia at eight thirty — we booked a table at that French bakery downtown."
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Oh, nice! What are you going to do in the afternoon?",
+              "pt": "— Ah, que legal! O que você vai fazer à tarde?",
+              "audio": "Oh, nice! What are you going to do in the afternoon?"
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— I'm going to buy a winter coat because next week is going to be freezing. Look at the dark clouds outside — it's going to rain in a few minutes!",
+              "pt": "— Vou comprar um casaco de inverno porque a semana que vem vai ser congelante. Olha as nuvens escuras lá fora — vai chover em alguns minutos!",
+              "audio": "I'm going to buy a winter coat because next week is going to be freezing. Look at the dark clouds outside — it's going to rain in a few minutes!"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Oh, no! I forgot my umbrella at home.",
+              "pt": "— Ah, não! Esqueci meu guarda-chuva em casa.",
+              "audio": "Oh, no! I forgot my umbrella at home."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— Don't worry, Kevin! I have an extra umbrella in my locker. I'll lend it to you!",
+              "pt": "— Não se preocupe, Kevin! Tenho um guarda-chuva extra no meu armário. Eu te empresto!",
+              "audio": "Don't worry, Kevin! I have an extra umbrella in my locker. I'll lend it to you!"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— Really? Thank you so much! I'll bring it back on Monday morning, I promise.",
+              "pt": "— Sério? Muito obrigado! Eu trago de volta na segunda de manhã, prometo.",
+              "audio": "Really? Thank you so much! I'll bring it back on Monday morning, I promise."
+            },
+            {
+              "personagem": "Marina",
+              "ru": "— No problem! By the way, are you coming to the team dinner on Saturday night?",
+              "pt": "— Sem problema! Aliás, você vem ao jantar da equipe no sábado à noite?",
+              "audio": "No problem! By the way, are you coming to the team dinner on Saturday night?"
+            },
+            {
+              "personagem": "Kevin",
+              "ru": "— I'm not sure yet. My sister might visit us from New York, so I might stay home with her. I'll text you tomorrow to let you know!",
+              "pt": "— Ainda não tenho certeza. Minha irmã talvez nos visite vindo de Nova York, então pode ser que eu fique em casa com ela. Te mando mensagem amanhã para avisar!",
+              "audio": "I'm not sure yet. My sister might visit us from New York, so I might stay home with her. I'll text you tomorrow to let you know!"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Diga o que você faz todo dia e o que está fazendo agora, sem misturar os tempos."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: Evite o Present Simple para planos pessoais futuros. Em inglês, The flight leaves at 8 a.m. tomorrow está certo porque é o horário fixo de um avião. Mas para o que você vai fazer amanhã, nunca diga Tomorrow I work late; diga PASSO 2: Tomorrow I'm working late ou I'm going to work late. PASSO 3: Decidiu no segundo em que abriu a boca? Use I'll (nunca going to nem presente). Quando você oferece ajuda (I'll help you), promete algo (I'll send it right now) ou escolhe no restaurante (I'll have the salmon), essa decisão nasceu no momento da fala, então o inglês exige I'll (contração de I will). Se você usar I'm going to help you, parece que já estava planejando ajudar desde ontem! PASSO 4: Will e might são verbos modais: proibido usar to ou -s depois deles. Assim como can e should (Capítulo 9), nunca diga I will to go ou It might to rain; diga sempre I'll go e It might rain.",
+          "comparacao": "Em português falado, usamos o presente simples (“Amanhã eu viajo para São Paulo, à noite eu te ligo”) ou colocamos “vou” em praticamente tudo. Quando o brasileiro passa para o inglês, surgem quatro armadilhas clássicas:",
+          "tabela": [
+            {
+              "portugues": "Amanhã eu viajo para Londres.",
+              "ingles": "Tomorrow I'm flying (ou I'm going to fly) to London.",
+              "evite": "Tomorrow I fly to London. (Presente simples é só para tabela de horários!)"
+            },
+            {
+              "portugues": "O telefone está tocando! Eu atendo!",
+              "ingles": "The phone is ringing! I'll get it!",
+              "evite": "I get it! / I'm going to get it!"
+            },
+            {
+              "portugues": "Eu vou te ligar amanhã, prometo.",
+              "ingles": "I'll call you tomorrow, I promise.",
+              "evite": "I will to call you tomorrow."
+            },
+            {
+              "portugues": "Acho que não vai chover.",
+              "ingles": "I don't think it'll rain.",
+              "evite": "I think it doesn't rain."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "sunny",
@@ -83,7 +175,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "Falar do clima com «it»",
           "explicacao": "PASSO 1: o sujeito do clima é sempre «it»: «It is sunny.», «It is cold.» PASSO 2: verbos de clima: «It rains.» (chove, hábito), «It is raining.» (está chovendo agora), «It snows.» PASSO 3: pergunta: «What is the weather like?» → «It is hot and sunny.» PASSO 4: «How is the weather?» também serve. PASSO 5: temperatura: «It is 25 degrees.» (graus Celsius; os EUA usam Fahrenheit: 77°F). PASSO 6: não existe «Makes cold» nem «Is cold» sem sujeito: o inglês exige «it».",
           "comparacao": "em português dizemos «está frio», «faz sol», «chove» sem sujeito. O inglês sempre exige o sujeito «it»: «It is cold.», «It is sunny.», «It is raining.»",
@@ -135,8 +227,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga como está o tempo hoje e em 3 cidades que você conhece."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga o que você faz todo dia e o que está fazendo agora, sem misturar os tempos."
         }
       ]
     },
@@ -146,13 +243,37 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 4,
-          "enunciado": "Diga 5 tipos de clima em inglês e o mês em que cada um é comum na sua cidade."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe nas quatro situações abaixo por que cada falante escolheu uma estrutura diferente de futuro: PASSO 2: Perguntas: PASSO 3: Na estrutura I'm going to buy, qual palavra muda se o sujeito for she ou they? PASSO 4: Qual é a contração afirmativa e qual é a contração negativa de will?",
+          "tabela": [
+            {
+              "c1": "1. Plano decidido antes",
+              "c2": "I'm going to buy a new car next month.",
+              "c3": "Ela já pesquisou e decidiu isso antes de conversar com você."
+            },
+            {
+              "c1": "2. Compromisso na agenda",
+              "c2": "We are meeting the director at 3 p.m. tomorrow.",
+              "c3": "Há outra pessoa envolvida, hora marcada e convite na agenda."
+            },
+            {
+              "c1": "3. Decisão na hora / Oferta",
+              "c2": "— My bag is so heavy! — Wait, I'll carry it for you!",
+              "c3": "Ele não planejou carregar a bolsa ontem; decidiu ajudar ao ver a cena."
+            },
+            {
+              "c1": "4. Evidência visual × Opinião",
+              "c2": "Look! He's going to fall! × I think Brazil will win in 2030.",
+              "c3": "Na 1ª você vê a cena acontecendo agora (going to); na 2ª é uma opinião (will)."
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
             {
               "ru": "spring",
@@ -200,7 +321,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 9,
           "titulo": "As estações: in the + estação",
           "explicacao": "PASSO 1: estações levam «in the»: «in the summer», «in the winter». PASSO 2: nos EUA, outono é «fall», e no Reino Unido, «autumn». Aqui o curso usa o inglês americano: «fall». PASSO 3: estações NÃO têm letra maiúscula (ao contrário de dias e meses): «summer», não «Summer». PASSO 4: «My favorite season is winter.» PASSO 5: lembre que o Brasil e os EUA têm estações INVERTIDAS: dezembro é verão aqui e inverno lá. Cuide ao falar com estrangeiros: diga «summer in Brazil» ou «summer in the US». PASSO 6: «It is hot in the summer.»",
           "comparacao": "em português «no verão» usa «em» + artigo. O inglês usa «in the»: «in the summer». Note a diferença com meses: «in June» (sem «the»).",
@@ -246,9 +367,21 @@
           "tag": "Estações"
         },
         {
+          "tipo": "gramatica",
+          "min": 4,
+          "titulo": "Em 30 segundos",
+          "explicacao": "PASSO 1: Intenções, Planos e Evidências Visuais (am / is / are + going to + verbo): PASSO 2: Plano já decidido:I'm going to study German next year / What are you going to do tonight?. PASSO 3: Previsão com sinal visível agora:Look at the traffic! We're going to be late!. PASSO 4: Compromissos Marcados na Agenda (Present Continuous = am / is / are + - ing): PASSO 5: Quando já há hora, local, passagem ou outra pessoa combinada: I'm flying to Rio on Friday / What are you doing this weekend?. (Com os verbos go e come, costuma-se preferir I'm going / I'm coming a “going to go/come”.) PASSO 6: Decisões na Hora, Ofertas, Promessas e Opiniões (will / 'll / won't + verbo nu): PASSO 7: Na hora / Oferta / Promessa:I'll get the door! / I'll send you the file now / I won't tell anyone, I promise. PASSO 8: Previsão por opinião: Com I think, I'm sure, probably, definitely (I think she'll love the gift / I don't think it'll rain). PASSO 9: Possibilidade / “Talvez” (may / might + verbo nu): PASSO 10: Indica uma possibilidade no futuro (talvez sim, talvez não): I might go to the party / It might rain later / I might not have time. May tem o mesmo uso; na fala do dia a dia, might é mais comum. PASSO 11: Horários Oficiais (Present Simple): Usado para voos, trens, aulas e lojas (The train leaves at 9:15 tomorrow).",
+          "tag": "Resumo"
+        },
+        {
           "tipo": "producao",
-          "min": 8,
+          "min": 6,
           "enunciado": "Diga a sua estação favorita, por quê, e como é o tempo em cada estação no Brasil."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Diga 5 tipos de clima em inglês e o mês em que cada um é comum na sua cidade."
         }
       ]
     },
@@ -258,13 +391,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 4,
-          "enunciado": "Complete: «___ is hot in the summer. It ___ raining now. I like the ___ (inverno).»"
-        },
-        {
           "tipo": "palavras",
-          "min": 5,
+          "min": 3,
           "itens": [
             {
               "ru": "going to",
@@ -305,7 +433,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 8,
+          "min": 5,
           "titulo": "Going to: o que vou fazer",
           "explicacao": "PASSO 1: para planos próximos, use «be + going to + verbo»: «I am going to study tonight.» PASSO 2: a estrutura é «am/is/are + going to + verbo simples»: «She is going to travel next week.» PASSO 3: negativa: «I'm not going to work.», «They aren't going to come.» PASSO 4: pergunta: «Are you going to travel?» → «Yes, I am.» PASSO 5: palavras de futuro: tomorrow, tonight, next week, next month, this weekend. PASSO 6: na fala, «going to» vira «gonna»: «I'm gonna study.» Entenda, mas na escrita use «going to».",
           "comparacao": "em português «vou estudar» usa «ir + infinitivo». O inglês faz idêntico: «am going to + verbo». É um acerto direto: «vou viajar» = «I am going to travel».",
@@ -352,7 +480,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 8,
+          "min": 5,
           "titulo": "Weekend plans / Planos de fim de semana",
           "contexto": "Kate e Dan combinam o fim de semana.",
           "linhas": [
@@ -401,9 +529,221 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "What are you doing tonight? — I'm having dinner with Sarah.",
+              "translit": "",
+              "pt": "O que você vai fazer hoje à noite? — Vou jantar com a Sarah.",
+              "en": "",
+              "audio": "What are you doing tonight? — I'm having dinner with Sarah."
+            },
+            {
+              "ru": "We're going to launch the new app next month.",
+              "translit": "",
+              "pt": "Vamos lançar o aplicativo novo no mês que vem.",
+              "en": "",
+              "audio": "We're going to launch the new app next month."
+            },
+            {
+              "ru": "Look at the time! We're going to miss our flight!",
+              "translit": "",
+              "pt": "Olha a hora! Vamos perder o nosso voo!",
+              "en": "",
+              "audio": "Look at the time! We're going to miss our flight!"
+            },
+            {
+              "ru": "Don't worry about the report — I'll help you finish it!",
+              "translit": "",
+              "pt": "Não se preocupe com o relatório — eu te ajudo a terminar!",
+              "en": "",
+              "audio": "Don't worry about the report — I'll help you finish it!"
+            },
+            {
+              "ru": "I'll call you back in ten minutes, I promise.",
+              "translit": "",
+              "pt": "Eu te ligo de volta daqui a dez minutos, prometo.",
+              "en": "",
+              "audio": "I'll call you back in ten minutes, I promise."
+            },
+            {
+              "ru": "I don't think the meeting will take very long.",
+              "translit": "",
+              "pt": "Acho que a reunião não vai demorar muito.",
+              "en": "",
+              "audio": "I don't think the meeting will take very long."
+            },
+            {
+              "ru": "Take a jacket with you — it might get cold in the evening.",
+              "translit": "",
+              "pt": "Leve uma jaqueta com você — pode ser que esfrie à noite.",
+              "en": "",
+              "audio": "Take a jacket with you — it might get cold in the evening."
+            },
+            {
+              "ru": "We probably won't have time to visit the museum today.",
+              "translit": "",
+              "pt": "Provavelmente não teremos tempo de visitar o museu hoje.",
+              "en": "",
+              "audio": "We probably won't have time to visit the museum today."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "— My coffee is cold! — Sorry about that! I ___ you a hot cup right now.",
+              "opcoes": [
+                "am going to bring",
+                "'ll bring"
+              ],
+              "gabarito": "'ll bring",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-101a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Look at that guy texting while walking! He ___ into the glass door!",
+              "opcoes": [
+                "will walk",
+                "is going to walk"
+              ],
+              "gabarito": "is going to walk",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-102a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ the dentist tomorrow morning at ten; my appointment is confirmed.",
+              "opcoes": [
+                "am seeing",
+                "see"
+              ],
+              "gabarito": "am seeing",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-103a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Don't worry, your secret is safe with me. I ___ anyone!",
+              "opcoes": [
+                "don't tell",
+                "won't tell"
+              ],
+              "gabarito": "won't tell",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-104a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I'm not sure about Sunday. I ___ stay home and rest.",
+              "opcoes": [
+                "might",
+                "might to"
+              ],
+              "gabarito": "might",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-105a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Our train to Montreal ___ at 7:45 tomorrow morning.",
+              "opcoes": [
+                "leaves",
+                "leave"
+              ],
+              "gabarito": "leaves",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-106a"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "I ___ it will rain this afternoon; the sky is completely clear.",
+              "opcoes": [
+                "don't think",
+                "won't think"
+              ],
+              "gabarito": "don't think",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-107a"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "What ___ you ___ do after you graduate? (are… going to / will… to)",
+              "respostaEsperada": "are… going to",
+              "id": "en-017-L-108"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— I can't open this PDF file! — Wait a second, I ___ (send) it to you again right now. (oferta na hora)",
+              "respostaEsperada": "'ll send",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "We already bought the tickets: we ___ (fly) to Lisbon next Friday at nine p.m.! (compromisso agendado)",
+              "respostaEsperada": "are flying",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-202a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Look at the traffic jam on the avenue! We ___ (be) late for the presentation! (evidência visual)",
+              "respostaEsperada": "are going to be",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-203a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— What are your plans for next year? — I ___ (start) an MBA in Finance. (plano decidido antes)",
+              "respostaEsperada": "am going to start",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-204a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "The forecast for Saturday is uncertain: it ___ (rain), so take an umbrella just in case. (possibilidade, com might)",
+              "respostaEsperada": "might rain",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-205a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I promise I ___ (not / be) late for dinner tonight! (promessa)",
+              "respostaEsperada": "won't be",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-206a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I don't think she ___ (like) this hotel; it's too noisy. (opinião com I don't think)",
+              "respostaEsperada": "will like",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-207a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "They ___ (probably / arrive) around midnight. (will + probably)",
+              "respostaEsperada": "will probably arrive",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-208a"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Diga 5 planos seus para o fim de semana com «going to»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Complete: «___ is hot in the summer. It ___ raining now. I like the ___ (inverno).»"
         }
       ]
     },
@@ -413,13 +753,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Descreva o clima de hoje e o que você vai fazer amanhã."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -598,12 +933,135 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Fale 1 minuto sobre o clima de amanhã e o seu plano para o dia."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Conte dois planos que você já decidiu para este mês ou este ano usando I'm going to… e um que você não vai fazer usando I'm not going to….",
+              "respostaEsperada": "This year I'm going to take an English exam and I'm going to save money, and I'm not going to buy a new car.",
+              "id": "en-017-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conte dois compromissos com hora marcada na sua agenda para amanhã ou para o fim de semana usando o Present Continuous (I'm meeting / I'm having / I'm going…).",
+              "respostaEsperada": "Tomorrow morning I'm having a call with my boss at ten, and on Saturday night I'm having dinner with my friends at eight.",
+              "id": "en-017-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Responda a estas duas falas de um colega fazendo uma oferta espontânea na hora com I'll…: (a) “I forgot my wallet at home!” (b) “These boxes are too heavy for me!”.",
+              "respostaEsperada": "(a) Don't worry, I'll pay for your lunch! (b) Wait, I'll help you carry them!",
+              "id": "en-017-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva duas coisas que talvez você faça nas próximas férias usando I might….",
+              "respostaEsperada": "On my next vacation, I might travel to the south of Brazil, or I might visit Buenos Aires.",
+              "id": "en-017-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Tomorrow I travel to Rio for a conference.",
+              "respostaEsperada": "Tomorrow I'm traveling (ou I'm going to travel) to Rio for a conference.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: — The phone is ringing! — Wait, I get it!",
+              "respostaEsperada": "— The phone is ringing! — Wait, I'll get it!",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c02"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I will to call you tomorrow morning, I promise.",
+              "respostaEsperada": "I'll call",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: She going to buy a new laptop next week.",
+              "respostaEsperada": "She's going to buy a new laptop next week.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: We might to be a little late for the meeting today.",
+              "respostaEsperada": "We might be a little late for the meeting today.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c05"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: I think it doesn't rain tomorrow.",
+              "respostaEsperada": "I don't think it'll rain (ou it's going to rain) tomorrow.",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "en-017-L-c06"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Look at those dark clouds — it's going to rain in a few minutes!",
+              "respostaEsperada": "OK",
+              "id": "en-017-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: Os três erros mais comuns de brasileiros ao falar do futuro são usar o presente simples para planos pessoais (dizendo Tomorrow I go to the doctor), esquecer o verbo to be antes de going to (dizendo I going to travel) e colocar to depois de will ou might (dizendo I will to call you / It might to rain). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [
+            {
+              "errado": "Tomorrow I go to São Paulo.",
+              "certo": "Tomorrow I'm going to São Paulo.",
+              "motivo": "Planos pessoais futuros usam Present Continuous ou going to, nunca Present Simple."
+            },
+            {
+              "errado": "— I'm thirsty. — I bring you some water!",
+              "certo": "— I'll bring you some water!",
+              "motivo": "Decisões e ofertas feitas no momento da fala exigem I'll (will)."
+            },
+            {
+              "errado": "I will to send / It might to rain.",
+              "certo": "I'll send / It might rain.",
+              "motivo": "Will e might são modais e não aceitam to depois deles."
+            },
+            {
+              "errado": "She going to study tonight.",
+              "certo": "She's going to study tonight.",
+              "motivo": "A estrutura be going to exige sempre am / is / are antes de going."
+            },
+            {
+              "errado": "I think it doesn't rain tomorrow.",
+              "certo": "I don't think it'll rain tomorrow.",
+              "motivo": "Para o futuro, usamos will e a negativa vem em I don't think. (I think he won't come é compreendido, mas I don't think he'll come é a forma mais comum.)"
+            },
+            {
+              "errado": "in two days ago (para o futuro)",
+              "certo": "in two days (= daqui a 2 dias)",
+              "motivo": "in + tempo aponta para o futuro (“daqui a”); ago aponta só para o passado!"
+            }
+          ],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. 1. Do Capítulo 12. Complete: This apartment is ____ (bigger / more big) than mine, but it isn't ____ (close enough / enough close) to the subway. 2. Do Capítulo 11 e 13. Compare passado e futuro: Yesterday I went to the bank, and tomorrow I ____ to the bank. / Last week she didn't work, and next week she ____ work. 3. Do Capítulo 6 e 13. Qual é a diferença de significado entre two days ago e in two days? Qual tempo verbal cada uma exige?"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Falar dos meus planos e compromissos para o fim de semana usando I'm going to… e o Present Continuous sem usar o presente simples puro. · Reagir na hora oferecendo ajuda ou prometendo algo com I'll… e I won't…. · Expressar incerteza sobre o futuro com I might… sem colocar to depois."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você fala do clima e do que vai fazer. Próxima aula: revisão e simulado do A1."
+  "notasParaOAluno": "Você fala do clima e do que vai fazer. Próxima aula: revisão e simulado do A1.",
+  "geradaDoLivro": true
 }

@@ -15,13 +15,95 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Meta da aula. Ao final das quatro sessões, você usa können, müssen, wollen, sollen, dürfen e möchten com o infinitivo no fim da frase, distingue nicht müssen de nicht dürfen e usa lassen."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 4,
+          "titulo": "No café",
+          "contexto": "Camila e Jonas pedem alguma coisa para beber e comer.",
+          "linhas": [
+            {
+              "personagem": "Kellner",
+              "ru": "— Guten Tag! Was möchten Sie trinken?",
+              "pt": "— Bom dia! O que os senhores gostariam de beber?",
+              "audio": "Guten Tag! Was möchten Sie trinken?"
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?",
+              "pt": "— Quero um café, por favor. Meu amigo quer um chá. Ele pode ter leite também?",
+              "audio": "Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?"
+            },
+            {
+              "personagem": "Kellner",
+              "ru": "— Natürlich. Möchten Sie auch etwas essen?",
+              "pt": "— Claro. Gostariam de comer alguma coisa também?",
+              "audio": "Natürlich. Möchten Sie auch etwas essen?"
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Ja, wir wollen Kuchen. Was können Sie empfehlen?",
+              "pt": "— Sim, queremos bolo. O que o senhor recomenda?",
+              "audio": "Ja, wir wollen Kuchen. Was können Sie empfehlen?"
+            },
+            {
+              "personagem": "Kellner",
+              "ru": "— Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+              "pt": "— Vocês precisam experimentar o bolo de maçã. É fresquinho.",
+              "audio": "Sie müssen den Apfelkuchen probieren. Er ist frisch."
+            },
+            {
+              "personagem": "Jonas",
+              "ru": "— Darf ich mit Karte bezahlen?",
+              "pt": "— Posso pagar com cartão?",
+              "audio": "Darf ich mit Karte bezahlen?"
+            },
+            {
+              "personagem": "Kellner",
+              "ru": "— Leider nicht. Sie müssen bar bezahlen.",
+              "pt": "— Infelizmente não. Precisam pagar em dinheiro.",
+              "audio": "Leider nicht. Sie müssen bar bezahlen."
+            },
+            {
+              "personagem": "Camila",
+              "ru": "— Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich.",
+              "pt": "— Sem problema. Jonas, você não precisa pagar. Hoje pago eu.",
+              "audio": "Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich."
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva as 6 formas de «möchten» e 3 frases com «Ich möchte … + verbo no fim»."
+          "titulo": "A armadilha do português",
+          "explicacao": "PASSO 1: nicht müssen = não precisa. Nicht dürfen = proibido. Trocá-los muda o sentido.",
+          "comparacao": "Três armadilhas.",
+          "tabela": [
+            {
+              "portugues": "Quero comer bolo.",
+              "ingles": "Ich will Kuchen essen."
+            },
+            {
+              "portugues": "Não preciso vir.",
+              "ingles": "Ich muss nicht kommen."
+            },
+            {
+              "portugues": "Não posso vir (proibido).",
+              "ingles": "Ich darf nicht kommen."
+            },
+            {
+              "portugues": "Preciso ir para casa.",
+              "ingles": "Ich muss nach Hause."
+            }
+          ],
+          "tag": "Armadilha"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "schwimmen",
@@ -83,7 +165,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 14,
+          "min": 10,
           "titulo": "Können: o primeiro verbo modal, passo a passo",
           "explicacao": "Um verbo MODAL ajuda outro verbo a dizer «poder», «saber», «dever», «querer». Vamos montar o primeiro, «können». PASSO 1: «können» diz o que você sabe ou consegue fazer: «Ich kann schwimmen» = eu sei nadar. PASSO 2: conjugue «können»; ele é irregular no singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie können. PASSO 3: o segundo verbo vai para o FIM da frase, no infinitivo: «Ich kann gut schwimmen.» A frase fica «emoldurada»: o modal na 2ª posição e o infinitivo no fim. PASSO 4: para perguntar, o modal vai para o começo: «Kannst du schwimmen?» PASSO 5: para negar, «nicht» vem antes do verbo que está no fim: «Ich kann nicht schwimmen.» REGRA DE BOLSO: «ich» e «er» são IGUAIS (kann) e nunca levam -t.",
           "comparacao": "o português também usa «saber» ou «poder» + infinitivo («eu sei nadar»). A diferença é só a posição: em alemão o infinitivo vai sempre para o FIM da frase, não fica ao lado do modal.",
@@ -154,8 +236,13 @@
         },
         {
           "tipo": "producao",
-          "min": 3,
+          "min": 2,
           "enunciado": "Diga 5 coisas que você sabe fazer e 2 que não sabe: «Ich kann … / Ich kann nicht …»."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as 6 formas de «möchten» e 3 frases com «Ich möchte … + verbo no fim»."
         }
       ]
     },
@@ -165,13 +252,37 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
+          "tipo": "gramatica",
           "min": 5,
-          "enunciado": "Escreva uma frase com cada pessoa de «können» (ich, du, er, wir, ihr, sie)."
+          "titulo": "Descubra você mesmo",
+          "explicacao": "PASSO 1: Observe a moldura. PASSO 2: Observe também o verbo können. PASSO 3: Perguntas: PASSO 4: Onde está o modal na frase? E o verbo principal? PASSO 5: Compare ich kann e er kann. O que você nota? Qual a diferença entre as frases 4 e 5?",
+          "tabela": [
+            {
+              "c1": "du",
+              "c2": "kannst"
+            },
+            {
+              "c1": "er, sie, es",
+              "c2": "kann"
+            },
+            {
+              "c1": "wir",
+              "c2": "können"
+            },
+            {
+              "c1": "ihr",
+              "c2": "könnt"
+            },
+            {
+              "c1": "sie, Sie",
+              "c2": "können"
+            }
+          ],
+          "tag": "Descubra"
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 7,
           "itens": [
             {
               "ru": "wiederholen",
@@ -233,7 +344,7 @@
         },
         {
           "tipo": "gramatica",
-          "min": 12,
+          "min": 10,
           "titulo": "Pedir ajuda e esclarecimentos",
           "explicacao": "«Kannst du …?» (informal) e «Können Sie …?» (formal) são o jeito mais comum de pedir alguma coisa. O verbo principal vai para o FIM, no infinitivo. Aprenda estas frases de sala de aula: elas servem em qualquer conversa com um alemão e já aparecem nas provas de A1. Lembre-se de que «langsamer» quer dizer «mais devagar».",
           "tabela": [
@@ -290,8 +401,13 @@
         },
         {
           "tipo": "producao",
-          "min": 5,
+          "min": 4,
           "enunciado": "Finja que você não entendeu e peça ajuda em voz alta: «Wie bitte? Können Sie das wiederholen? Können Sie bitte langsamer sprechen?»"
+        },
+        {
+          "tipo": "revisao",
+          "min": 4,
+          "enunciado": "Escreva uma frase com cada pessoa de «können» (ich, du, er, wir, ihr, sie)."
         }
       ]
     },
@@ -301,13 +417,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva as frases de sala de aula da sessão anterior de memória."
-        },
-        {
           "tipo": "gramatica",
-          "min": 10,
+          "min": 7,
           "titulo": "Convidar com «möchten» e «können»",
           "explicacao": "Para convidar alguém, use «Möchtest du …?» (informal) ou «Möchten Sie …?» (formal), ou «Kannst du …?» quando é um pedido («Kannst du um acht Uhr kommen?»). Para ACEITAR: «Ja, gern!», «Gute Idee!», «Ja, das kann ich.» Para RECUSAR com educação, diga «leider» (infelizmente) e dê o motivo: «Nein, leider nicht. Ich muss arbeiten.» Comece sempre pela palavra que responde: «Ja» ou «Nein».",
           "tabela": [
@@ -336,7 +447,7 @@
         },
         {
           "tipo": "dialogo",
-          "min": 10,
+          "min": 7,
           "titulo": "Eine Einladung / Um convite",
           "contexto": "Dois amigos combinam de ir ao cinema.",
           "linhas": [
@@ -391,9 +502,204 @@
           ]
         },
         {
+          "tipo": "palavras",
+          "min": 3,
+          "itens": [
+            {
+              "ru": "Ich möchte einen Kaffee, bitte.",
+              "translit": "",
+              "pt": "Quero um café, por favor.",
+              "en": "",
+              "audio": "Ich möchte einen Kaffee, bitte."
+            },
+            {
+              "ru": "Kannst du mir helfen?",
+              "translit": "",
+              "pt": "Você pode me ajudar?",
+              "en": "",
+              "audio": "Kannst du mir helfen?"
+            },
+            {
+              "ru": "Ich muss nach Hause.",
+              "translit": "",
+              "pt": "Preciso ir para casa.",
+              "en": "",
+              "audio": "Ich muss nach Hause."
+            },
+            {
+              "ru": "Darf ich hier sitzen?",
+              "translit": "",
+              "pt": "Posso sentar aqui?",
+              "en": "",
+              "audio": "Darf ich hier sitzen?"
+            },
+            {
+              "ru": "Das darfst du nicht!",
+              "translit": "",
+              "pt": "Isso você não pode!",
+              "en": "",
+              "audio": "Das darfst du nicht!"
+            },
+            {
+              "ru": "Ich kann nicht kommen.",
+              "translit": "",
+              "pt": "Não posso vir.",
+              "en": "",
+              "audio": "Ich kann nicht kommen."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 7,
+          "itens": [
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ich ___ heute arbeiten.",
+              "opcoes": [
+                "muss",
+                "musst"
+              ],
+              "gabarito": "muss",
+              "explicacao": "Veja a chave comentada no livro: muss",
+              "id": "de-011-L-101"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Du ___ nicht kommen. (musst, darfst) — “você não precisa vir”",
+              "respostaEsperada": "musst",
+              "id": "de-011-L-102"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Er ___ gut kochen.",
+              "opcoes": [
+                "kann",
+                "kannst"
+              ],
+              "gabarito": "kann",
+              "explicacao": "Veja a chave comentada no livro: kann",
+              "id": "de-011-L-103"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Wir ___ Kuchen essen.",
+              "opcoes": [
+                "will",
+                "wollen"
+              ],
+              "gabarito": "wollen",
+              "explicacao": "Veja a chave comentada no livro: wollen",
+              "id": "de-011-L-104"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Ihr ___ hier nicht parken.",
+              "opcoes": [
+                "darf",
+                "dürft"
+              ],
+              "gabarito": "dürft",
+              "explicacao": "Veja a chave comentada no livro: dürft",
+              "id": "de-011-L-105"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está certa?",
+              "opcoes": [
+                "Ich kann sprechen Deutsch",
+                "Ich kann Deutsch sprechen"
+              ],
+              "gabarito": "Ich kann Deutsch sprechen",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-011-L-106"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Du musst nicht kommen significa",
+              "opcoes": [
+                "não pode",
+                "não precisa"
+              ],
+              "gabarito": "não precisa",
+              "explicacao": "Veja a chave comentada no livro.",
+              "id": "de-011-L-107"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich ___, du kannst, er kann, wir können",
+              "respostaEsperada": "kann",
+              "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+              "id": "de-011-L-201a"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du ___, er kann, wir können",
+              "respostaEsperada": "kannst",
+              "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+              "id": "de-011-L-201b"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du kannst, er ___, wir können",
+              "respostaEsperada": "kann",
+              "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+              "id": "de-011-L-201c"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du kannst, er kann, wir ___",
+              "respostaEsperada": "können",
+              "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+              "id": "de-011-L-201d"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Conjugue os verbos modais nas pessoas pedidas: müssen: ich ___, du ___, wir ___ · wollen: ich ___, er ___, ihr ___",
+              "respostaEsperada": "muss, musst, müssen; will, will, wollt",
+              "id": "de-011-L-202"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Complete as frases com o modal indicado: Ich ___ (möchten) einen Tee trinken. · Sie ___ (wollen) am Wochenende nach Berlin fahren. · Wir ___ (müssen) für die Prüfung lernen.",
+              "respostaEsperada": "möchte, wollen (ou will, se Sie for “ela”), müssen",
+              "id": "de-011-L-203"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Tom kommt heute Abend. (können) → ___",
+              "respostaEsperada": "Tom kann heute Abend kommen",
+              "id": "de-011-L-204"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Wir gehen morgen ins Kino. (wollen) → ___",
+              "respostaEsperada": "Wir wollen morgen ins Kino gehen",
+              "id": "de-011-L-205"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Du hilfst mir bei der Arbeit. (können, em forma de pergunta) → ___",
+              "respostaEsperada": "Kannst du mir bei der Arbeit helfen?",
+              "id": "de-011-L-206"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Negue dizendo “não preciso”: Ich muss heute arbeiten. → ___",
+              "respostaEsperada": "Ich muss heute nicht arbeiten",
+              "id": "de-011-L-207"
+            }
+          ]
+        },
+        {
           "tipo": "producao",
-          "min": 5,
+          "min": 3,
           "enunciado": "Convide alguém em voz alta, aceite um convite e recuse outro com um motivo."
+        },
+        {
+          "tipo": "revisao",
+          "min": 3,
+          "enunciado": "Escreva as frases de sala de aula da sessão anterior de memória."
         }
       ]
     },
@@ -403,13 +709,8 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Escreva 4 frases: uma habilidade, um pedido de ajuda, um convite e uma recusa com motivo."
-        },
-        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "fill-gap",
@@ -587,12 +888,83 @@
           ]
         },
         {
-          "tipo": "producao",
-          "min": 5,
-          "enunciado": "Grave-se: diga o que sabe e não sabe fazer, peça ajuda e faça um convite."
+          "tipo": "exercicios",
+          "min": 8,
+          "itens": [
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva quatro frases sobre o que você sabe/pode e não pode fazer (Ich kann gut …, aber ich kann nicht …).",
+              "respostaEsperada": "Ich kann gut kochen und schwimmen. Ich kann schon ein bisschen Deutsch sprechen, aber ich kann noch nicht perfekt schreiben. Morgen kann ich leider nicht zum Kurs kommen.",
+              "id": "de-011-L-p01"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três frases sobre o que você precisa fazer nesta semana (Diese Woche muss ich …).",
+              "respostaEsperada": "Diese Woche muss ich viel arbeiten. Am Mittwoch muss ich zum Arzt gehen. Am Freitag muss ich meine Wohnung putzen.",
+              "id": "de-011-L-p02"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva três regras de convivência ou de trânsito usando Man darf hier nicht … / Du darfst nicht ….",
+              "respostaEsperada": "Hier darf man nicht rauchen. Du darfst vor der Bank nicht parken. Im Museum darf man nicht fotografieren.",
+              "id": "de-011-L-p03"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva um diálogo de café de cinco falas entre você e o garçom usando möchten, können, müssen e dürfen.",
+              "respostaEsperada": "Modelo de diálogo: — Guten Tag! Was möchten Sie bestellen?— Ich möchte einen Kaffee und ein Stück Apfelkuchen, bitte.— Gern! Möchten Sie den Kaffee mit Milch?— Ja, bitte. Kann ich hier mit Karte bezahlen?— Ja, natürlich, Sie können mit Karte bezahlen.",
+              "id": "de-011-L-p04"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich kann sprechen Deutsch.",
+              "respostaEsperada": "Ich kann Deutsch sprechen.",
+              "explicacao": "Ich kann Deutsch sprechen.",
+              "id": "de-011-L-c01"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Du musst hier nicht parken.",
+              "respostaEsperada": "Du darfst hier nicht parken.",
+              "explicacao": "Du darfst hier nicht parken.",
+              "id": "de-011-L-c03"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Corrija: Ich möchte zu essen einen Kuchen.",
+              "respostaEsperada": "Ich möchte einen Kuchen essen.",
+              "explicacao": "Ich möchte einen Kuchen essen.",
+              "id": "de-011-L-c05"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich muss nach Hause.",
+              "respostaEsperada": "OK",
+              "id": "de-011-L-c07"
+            }
+          ]
+        },
+        {
+          "tipo": "gramatica",
+          "min": 3,
+          "titulo": "O erro típico do brasileiro",
+          "explicacao": "PASSO 1: O erro que mais custa caro é colocar o infinitivo logo depois do modal (Ich kann sprechen Deutsch em vez de Ich kann Deutsch sprechen), colocar -t na 3ª pessoa do singular do modal (er kannt em vez de er kann) e trocar nicht müssen (não precisa) por nicht dürfen (proibido). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+          "erros": [],
+          "tag": "Erro típico"
+        },
+        {
+          "tipo": "revisao",
+          "min": 2,
+          "enunciado": "Retorno. Do capítulo 14. Complete: Ich muss den ____ (Student) fragen. Do capítulo 13. Complete: Ich möchte einen ____ (neu) Tisch kaufen. Do capítulo 12. Complete: Ich kann Deutsch ____ (gut) als du sprechen. (comparativo)"
+        },
+        {
+          "tipo": "intro",
+          "min": 1,
+          "texto": "Já consigo? Peço algo com Ich möchte …, bitte. · Digo o que preciso, posso e quero fazer respeitando a moldura verbal. · Sei quando usar nicht dürfen (proibido) e nicht müssen (opcional)."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você sabe dizer o que consegue fazer, pedir ajuda e convidar. Próxima aula: müssen, wollen e dürfen."
+  "notasParaOAluno": "Você sabe dizer o que consegue fazer, pedir ajuda e convidar. Próxima aula: müssen, wollen e dürfen.",
+  "geradaDoLivro": true
 }

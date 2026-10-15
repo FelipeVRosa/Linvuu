@@ -3,6 +3,7 @@ import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
 import { EMAIL_OFICIAL } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
+import { ContatoIcones } from './IconesContato';
 import { Newsletter } from './Newsletter';
 
 /** Rodapé do site. Nas páginas da área do aluno (`semNovidades`) o bloco de newsletter não aparece. */
@@ -25,17 +26,17 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         <div className="lv-foot-brand">
           <img src="/brand/linvuu-wordmark-papel.svg" alt="Linvuu" width="104" height="33" />
           <p>{t.rodape.frase}</p>
-          <div id="redes"><Redes /></div>
+          <div id="redes"><ContatoIcones /><Redes /></div>
         </div>
         <nav aria-label="Linvuu">
           <h2>Linvuu</h2>
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={`/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`}>{t.nav.gramatica}</Link>
           <Link to="/portugues">{t.rodape.portugues}</Link>
-          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link></>}
+          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link><Link to="/por-que-linvuu">Por que estudar com a Linvuu?</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
-          <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>
+          {LOCALE.codigo === 'pt-BR' ? <Link to="/contato">{t.rodape.contato}</Link> : <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>}
         </nav>
         <nav aria-label={t.rodape.idiomas}>
           <h2>{t.rodape.idiomas}</h2>

@@ -16,6 +16,8 @@ const LivrosIndice = lazy(() => import('./pages/Livros').then((m) => ({ default:
 const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroPagina })));
 const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
 const Sobre = lazy(() => import('./pages/Sobre'));
+const PorQue = lazy(() => import('./pages/PorQue'));
+const Contato = lazy(() => import('./pages/Contato'));
 import { BarraTopo } from './components/BarraTopo';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
@@ -63,6 +65,8 @@ export default function App() {
           <Route path="/livros/:id" element={<LivroPagina />} />
           <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/por-que-linvuu" element={<PorQue />} />
+          <Route path="/contato" element={<Contato />} />
           <Route path="/assinatura" element={<Assinatura />} />
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />

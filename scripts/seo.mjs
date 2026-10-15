@@ -15,18 +15,12 @@ const fonte = (id) => indice[id]?.fonte ?? 'pt';
 /** Caminhos (sem prefixo) e em quais idiomas cada um entra. */
 const grupos = [];
 const todos = (c) => LOCALES.map((l) => l.c);
-for (const p of ['/', '/cursos', '/portugues', '/privacidade', '/termos']) grupos.push({ p, em: todos() });
-for (const c of cursos.filter((x) => x.area === 'idiomas' && x.status !== 'em-breve')) {
-  const em = LOCALES.filter((l) => l.oculto !== c.id).map((l) => l.c);
-  grupos.push({ p: `/curso/${c.id}`, em }, { p: `/gramatica/${c.id}`, em });
-  for (const g of indice[c.id]?.grupos ?? []) for (let d = g.dias[0]; d <= g.dias[1]; d++) {
-    // a sessão entra no idioma quando a explicação está nele: o original, ou a tradução daquela aula
-    const emDia = LOCALES.filter((l) => l.oculto !== c.id && (fonte(c.id) === l.l || tr[l.l]?.[c.id]?.aulas?.includes(g.aula))).map((l) => l.c);
-    if (emDia.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: emDia });
-  }
-}
+// Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. A página central entra nos três idiomas;
+// o resto é em português. Cursos e sessões de aula seguem acessíveis por links e rastreáveis, mas não são enviados: a sessão
+// só entrega título e descrição a quem não roda JavaScript, e 1.848 páginas assim num domínio novo diluem a qualidade do site.
+grupos.push({ p: '/', em: todos() });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   const caps = fs.readdirSync(path.join(dirLivros, id)).map((f) => f.match(/^cap-(\d+)\.json$/)?.[1]).filter(Boolean).map(Number).sort((a, b) => a - b);

@@ -35,7 +35,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Auditoria de dependências (3 tentativas: o registro do npm às vezes devolve 504)
+      - name: Auditoria de dependências (3 tentativas, pois o registro do npm às vezes devolve 504)
         run: |
           for i in 1 2 3; do npm audit --audit-level=moderate && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Assinaturas dos pacotes

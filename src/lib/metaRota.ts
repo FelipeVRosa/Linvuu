@@ -4,9 +4,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
+import { EMAIL_OFICIAL } from '../config/site.ts';
+import { AUTORES, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
+  livros: Record<string, { sumario: ItemSumario[]; caps: Record<number, CapituloLivro> }>;
   cursos: CursoMeta[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
 };
@@ -22,10 +25,27 @@ export function carregarDadosMeta(raiz: string): DadosMeta | null {
       if (!fs.existsSync(f)) continue;
       for (const [id, t] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')) as Record<string, { g: Record<string, string>; aulas?: number[] }>)) if (indice[id]) (indice[id].tr ??= {})[l] = t;
     }
-    return { cursos, indice };
+    return { cursos, indice, livros: carregarLivros(raiz) };
   } catch {
     return null;
   }
+}
+
+/** Sumário e capítulos de amostra de cada livro (content/livros/<idioma>/). */
+function carregarLivros(raiz: string): DadosMeta['livros'] {
+  const out: DadosMeta['livros'] = {};
+  for (const m of LIVROS_META) {
+    const dir = path.join(raiz, 'content', 'livros', m.id);
+    if (!fs.existsSync(dir)) continue;
+    const caps: Record<number, CapituloLivro> = {};
+    for (const f of fs.readdirSync(dir)) {
+      const n = f.match(/^cap-(\d+)\.json$/)?.[1];
+      if (n) caps[Number(n)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    }
+    const fs0 = path.join(dir, 'sumario.json');
+    out[m.id] = { sumario: fs.existsSync(fs0) ? JSON.parse(fs.readFileSync(fs0, 'utf8')) : [], caps };
+  }
+  return out;
 }
 
 const TX = {
@@ -66,7 +86,32 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
 function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   const tx = TX[loc.codigo];
   const ex = loc.explicacao;
-  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo] };
+  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao()] };
+  // Livros e página Sobre: só em português (nos outros idiomas a página existe, mas não entra na busca)
+  const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
+  if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
+  if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: 'Gramática prática de inglês, espanhol, alemão, francês e italiano para quem fala português, do zero ao A2. Leia os dois primeiros capítulos de cada livro, com áudio.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
+  let lm = p.match(/^\/livros\/([^/]+)$/);
+  if (lm) {
+    const l = livroMeta(lm[1]);
+    if (!l) return naoEncontrada(p, loc);
+    const url = `${SITE}/livros/${l.id}`;
+    const caps = Object.values(d?.livros[l.id]?.caps ?? {}).sort((a, b) => a.n - b.n);
+    return { status: 200, caminho: p, titulo: tituloLivro(l), descricao: l.descricao, ...livroBase, jsonld: [
+      { '@context': 'https://schema.org', '@type': 'Book', '@id': `${url}#livro`, name: tituloLivro(l), url, inLanguage: 'pt-BR', about: l.nome, image: `${SITE}/livros/${l.id}-a1-a2-v1-900.webp`, educationalLevel: 'A1–A2 (CEFR)', author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID }, description: l.descricao, hasPart: caps.map((c) => ({ '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url: `${url}/capitulo/${c.n}`, isAccessibleForFree: true })) },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: url }] },
+    ] };
+  }
+  lm = p.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
+  if (lm) {
+    const l = livroMeta(lm[1]); const c = d?.livros[lm[1]]?.caps[Number(lm[2])];
+    if (!l || !c) return naoEncontrada(p, loc);
+    const url = `${SITE}/livros/${l.id}/capitulo/${c.n}`;
+    return { status: 200, caminho: p, titulo: `Capítulo ${c.n}: ${c.titulo} · ${l.nome}`, descricao: `${l.nome}, capítulo ${c.n} do livro de gramática prática da Coleção Linvuu: ${c.titulo}. Leitura grátis, com áudio.`, ...livroBase, jsonld: [
+      { '@context': 'https://schema.org', '@type': 'Chapter', name: `Capítulo ${c.n}: ${c.titulo}`, position: c.n, url, inLanguage: 'pt-BR', isAccessibleForFree: true, educationalLevel: c.nivel || undefined, timeRequired: `PT${minutosDeLeitura(c)}M`, isPartOf: { '@type': 'Book', name: tituloLivro(l), url: `${SITE}/livros/${l.id}` }, author: AUTORES.map((a) => ({ '@type': 'Person', name: a.nome, url: `${SITE}/sobre#${a.id}` })), publisher: { '@id': ORG_ID } },
+      { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Livros', item: `${SITE}/livros` }, { '@type': 'ListItem', position: 2, name: l.nome, item: `${SITE}/livros/${l.id}` }, { '@type': 'ListItem', position: 3, name: `Capítulo ${c.n}`, item: url }] },
+    ] };
+  }
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
     '/cursos': { titulo: tx.cursos },
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
@@ -147,9 +192,18 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     const home = HOME[loc.codigo];
     corpo = cabeca(home.titulo ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`));
   } else {
+    const ml = base.match(/^\/livros\/([^/]+)$/), mcl = base.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
+    if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + li(LIVROS_META.map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
+    else if (ml && livroMeta(ml[1])) {
+      const l = livroMeta(ml[1])!; const lv = d?.livros[l.id];
+      corpo = cabeca(tituloLivro(l), l.descricao) + `<p>Por ${AUTORES.map((a) => esc(a.nome)).join(' e ')}.</p><h2>Sumário</h2><ol>${(lv?.sumario ?? []).map((x) => `<li>${lv?.caps[x.n] ? `<a href="/livros/${l.id}/capitulo/${x.n}">${esc(x.titulo)}</a>` : esc(x.titulo)}</li>`).join('')}</ol>`;
+    } else if (mcl && d?.livros[mcl[1]]?.caps[Number(mcl[2])]) {
+      const c = d.livros[mcl[1]].caps[Number(mcl[2])];
+      corpo = cabeca(`Capítulo ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(' e ')}</p>` + capituloParaHtml(c, livroMeta(mcl[1])?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">Voltar ao livro</a></p>`;
+    }
     const mc = base.match(/^\/curso\/([^/]+)$/);
     const md = base.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
-    if (mc) {
+    if (corpo) { /* livros */ } else if (mc) {
       const c = visiveis.find((x) => x.id === mc[1]);
       const grupos = d?.indice[mc[1]]?.grupos ?? [];
       const tr = d?.indice[mc[1]]?.tr?.[loc.explicacao]?.g;
@@ -165,6 +219,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
 }
 
 const SITE = 'https://linvuu.com.br';
+const ORG_ID = `${SITE}/#organizacao`;
+const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'Organization', '@id': ORG_ID, name: 'Linvuu', alternateName: ['Instituto Valeeva Rosa'], url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@id': `${SITE}/sobre#${a.id}` })) });
+const pessoa = (a: (typeof AUTORES)[number]) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': ORG_ID }, knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 

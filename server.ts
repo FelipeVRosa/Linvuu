@@ -57,6 +57,7 @@ async function startServer() {
     app.get('/robots.txt', arquivoEstatico('robots.txt', 'text/plain; charset=utf-8'));
     // index: false — a página inicial também passa pelo catch-all abaixo, que coloca as metatags (sem isso, «/» saía sem hreflang).
     app.use(express.static(path.resolve(__dirname, 'dist'), {
+      redirect: false, // /livros é também uma pasta de capas em dist/: sem isto o express responderia 301 para /livros/
       index: false,
       setHeaders: (res, arquivo) => {
         // MP3 tem o nome do hash do texto: nunca muda, pode ficar em cache por um ano. A lista (index.json) muda e fica 5 minutos.

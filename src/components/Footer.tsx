@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
 import { EMAIL_OFICIAL } from '../config/site';
-import { useT } from '../i18n';
+import { LOCALE, useT } from '../i18n';
 import { Redes } from './Redes';
 import { Newsletter } from './Newsletter';
 
@@ -32,6 +32,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={`/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`}>{t.nav.gramatica}</Link>
           <Link to="/portugues">{t.rodape.portugues}</Link>
+          {LOCALE.codigo === 'pt-BR' && <><Link to="/livros">Livros</Link><Link to="/sobre">Quem somos</Link></>}
           <Link to="/#metodo">{t.nav.metodo}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           <a href={`mailto:${EMAIL_OFICIAL}`}>{t.rodape.contato}</a>

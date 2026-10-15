@@ -12,6 +12,10 @@ const Assinatura = lazy(() => import('./pages/Assinatura'));
 const Legal = lazy(() => import('./pages/Legal').then((m) => ({ default: m.Legal })));
 const Gramatica = lazy(() => import('./pages/Gramatica'));
 const LivroGramatica = lazy(() => import('./pages/LivroGramatica'));
+const LivrosIndice = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivrosIndice })));
+const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroPagina })));
+const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
+const Sobre = lazy(() => import('./pages/Sobre'));
 import { BarraTopo } from './components/BarraTopo';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
@@ -55,6 +59,10 @@ export default function App() {
           <Route path="/gramatica" element={<Gramatica />} />
           <Route path="/gramatica/:id" element={<Gramatica />} />
           <Route path="/livro/gramatica-ru" element={<LivroGramatica />} />
+          <Route path="/livros" element={<LivrosIndice />} />
+          <Route path="/livros/:id" element={<LivroPagina />} />
+          <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
+          <Route path="/sobre" element={<Sobre />} />
           <Route path="/assinatura" element={<Assinatura />} />
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />

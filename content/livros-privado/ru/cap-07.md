@@ -1,4 +1,4 @@
-# Capítulo 7: O caso prepositivo
+# Capítulo 7: O CASO PREPOSITIVO
 
 *Nível a1*
 
@@ -59,7 +59,7 @@ NÃO, é um lugar amplo, aberto → НА (praça, rua, parque, estação, mercad
 
 Veja como funciona:
 
-| Lugar | Dá para entrar dentro? | Preposição | Exemplo |
+| LUGAR | DÁ PARA ENTRAR DENTRO? | PREPOSIÇÃO | EXEMPLO |
 |---|---|---|---|
 | Ко́мната (quarto) | Sim | В | Я в ко́мнате. (Estou no quarto.) |
 | Магази́н (loja) | Sim | В | Я в магази́не. (Estou na loja.) |
@@ -67,10 +67,10 @@ Veja como funciona:
 | Шко́ла (escola) | Sim | В | Я в шко́ле. (Estou na escola.) |
 | Больни́ца (hospital) | Sim | В | Я в больни́це. (Estou no hospital.) |
 | Теа́тр (teatro) | Sim | В | Я в теа́тре. (Estou no teatro.) |
-| По́чта (correio) | Sim | В | Я на по́чте? — Cuidado! Isso é exceção. Vamos ver depois. |
+| По́чта (correio) | Exceção histórica | НА | Я на по́чте. (Estou no correio — usa НА!) |
 | Пло́щадь (praça) | Não — é amplo | НА | Я на пло́щади. (Estou na praça.) |
 | У́лица (rua) | Não — é aberto | НА | Я на у́лице. (Estou na rua.) |
-| Парк (parque) | Não — é aberto | НА | Я в па́рке? — Cuidado! Parque é fechado? Não. Mas o russo usa В. Exceção. Vamos ver depois. |
+| Парк / Сад / Лес (parque/jardim/floresta) | Sim (área arborizada) | В | Я в па́рке. (Estou no parque — usa В!) |
 | Вокза́л (estação) | Não — originalmente era aberto | НА | Я на вокза́ле. (Estou na estação.) |
 | Ры́нок (mercado) | Não — é aberto | НА | Я на ры́нке. (Estou no mercado.) |
 | Уро́к (aula) | Não — é um evento | НА | Я на уро́ке. (Estou na aula.) |
@@ -79,13 +79,19 @@ Veja como funciona:
 
 Repare:
 
-- Комната (quarto) — dá para entrar dentro → В.
-- Магазин (loja) — dá para entrar dentro → В.
-- Площадь (praça) — é ampla, aberta → НА.
-- Улица (rua) — é aberta → НА.
-- Работа (trabalho) — não é um lugar físico, é uma atividade → НА.
-- Урок (aula) — não é um lugar, é um evento → НА.
-- Концерт (concerto) — não é um lugar, é um evento → НА.
+Комната (quarto) — dá para entrar dentro → В.
+
+Магазин (loja) — dá para entrar dentro → В.
+
+Площадь (praça) — é ampla, aberta → НА.
+
+Улица (rua) — é aberta → НА.
+
+Работа (trabalho) — não é um lugar físico, é uma atividade → НА.
+
+Урок (aula) — não é um lugar, é um evento → НА.
+
+Концерт (concerto) — não é um lugar, é um evento → НА.
 
 A regra geral: dá para entrar dentro? Se sim, é В. Se é amplo, aberto ou é um evento/atividade, é НА.
 
@@ -96,10 +102,13 @@ Aqui está a coisa mais bonita. Nós já fazemos isso em português sem perceber
 
 Em português, dizemos:
 
-- Estou no quarto. (em + o quarto)
-- Estou na loja. (em + a loja)
-- Estou no cinema. (em + o cinema)
-- Estou na praça. (em + a praça)
+Estou no quarto. (em + o quarto)
+
+Estou na loja. (em + a loja)
+
+Estou no cinema. (em + o cinema)
+
+Estou na praça. (em + a praça)
 
 Nós contraímos "em + o" em "no", e "em + a" em "na". É automático.
 
@@ -107,7 +116,7 @@ Em russo, a lógica é parecida. A preposição В funciona como o nosso "no/na"
 
 Compare:
 
-| Português | Russo | Literalmente |
+| PORTUGUÊS | RUSSO | LITERALMENTE |
 |---|---|---|
 | Estou no quarto. | Я в ко́мнате. | Estou em quarto. |
 | Estou na loja. | Я в магази́не. | Estou em loja. |
@@ -122,13 +131,11 @@ Repare: não existe "в + o" ou "в + a" em russo. É sempre в sozinho, sem con
 
 O caso prepositivo é regido por quatro preposições principais. Vamos conhecer cada uma.
 
-1. В (em, dentro)
+1. 1. В (em, dentro)
 
-Uso: lugares fechados, onde você pode entrar dentro.
-Pergunta: Где? (Onde?)
-Exemplos:
+Uso: lugares fechados, onde você pode entrar dentro. Pergunta: Где? (Onde?) Exemplos:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я в ко́мнате. | Estou no quarto. |
 | Я в магази́не. | Estou na loja. |
@@ -140,7 +147,7 @@ Exemplos:
 
 Variação ortográfica: ВО. Antes de palavras que começam com в ou com duas consoantes, usa-se ВО em vez de В:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я во Владивосто́ке. | Estou em Vladivostok. |
 | Я во Фра́нции. | Estou na França. |
@@ -148,13 +155,11 @@ Variação ortográfica: ВО. Antes de palavras que começam com в ou com duas
 
 Por quê? Eufonia. O russo não gosta de certos encontros consonânticos. ВВладивостоке soaria mal. Por isso insere-se um -о- para separar.
 
-2. НА (em, sobre)
+2. 2. НА (em, sobre)
 
-Uso: lugares abertos, amplos, ou eventos/atividades.
-Pergunta: Где? (Onde?)
-Exemplos:
+Uso: lugares abertos, amplos, ou eventos/atividades. Pergunta: Где? (Onde?) Exemplos:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я на пло́щади. | Estou na praça. |
 | Я на у́лице. | Estou na rua. |
@@ -168,13 +173,11 @@ Exemplos:
 
 Repare: на também aparece com lugares que "não fazem sentido" (почта, работа, урок, концерт). Porque a lógica não é só "aberto vs. fechado". A lógica também inclui eventos, atividades, superfícies. E há exceções históricas. Vamos ver depois.
 
-3. О (sobre, a respeito de)
+3. 3. О (sobre, a respeito de)
 
-Uso: falar sobre algo, a respeito de algo.
-Pergunta: О ком? О чём? (Sobre quem? Sobre o quê?)
-Exemplos:
+Uso: falar sobre algo, a respeito de algo. Pergunta: О ком? О чём? (Sobre quem? Sobre o quê?) Exemplos:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я говорю́ о кни́ге. | Falo sobre o livro. |
 | Мы говори́м о рабо́те. | Falamos sobre o trabalho. |
@@ -183,13 +186,15 @@ Exemplos:
 
 Variação ortográfica: ОБ e ОБО.
 
-- О → antes de consoante: о кни́ге, о рабо́те, о теа́тре.
-- ОБ → antes de vogal: об Ива́не, об А́нне, об э́том, об о́сени.
-- ОБО → antes de palavras que começam com duas consoantes ou com as consoantes мн-, вс-, вс-, etc.: обо мне, обо всём, обо льде.
+О → antes de consoante: о кни́ге, о рабо́те, о теа́тре.
+
+ОБ → antes de vogal: об Ива́не, об А́нне, об э́том, об о́сени.
+
+ОБО → antes de palavras que começam com duas consoantes ou com as consoantes мн-, вс-, вс-, etc.: обо мне, обо всём, обо льде.
 
 Exemplos:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я говорю́ о ма́ме. | Falo sobre a mamãe. |
 | Я говорю́ об Ива́не. | Falo sobre Ivan. |
@@ -197,12 +202,11 @@ Exemplos:
 
 Por quê? Eufonia de novo. О Иване soaria mal. О мне também. Por isso o russo insere об ou обо para separar.
 
-4. ПРИ (junto a, na presença de, no tempo de)
+4. 4. ПРИ (junto a, na presença de, no tempo de)
 
-Uso: raro no dia a dia, mas aparece em contextos formais, históricos ou de proximidade.
-Exemplos:
+Uso: raro no dia a dia, mas aparece em contextos formais, históricos ou de proximidade. Exemplos:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | При царе́ Никола́е... | No tempo do tsar Nicolau... |
 | При Петре́ I... | No tempo de Pedro I... |
@@ -211,9 +215,9 @@ Exemplos:
 
 ПРИ tem três significados:
 
-1. Junto a, ao lado de: при университе́те (junto à universidade).
-2. Na presença de: при де́тях (na presença das crianças).
-3. No tempo de: при царе́ (no tempo do tsar).
+1. 1. Junto a, ao lado de: при университе́те (junto à universidade).
+2. 2. Na presença de: при де́тях (na presença das crianças).
+3. 3. No tempo de: при царе́ (no tempo do tsar).
 
 
 ## 7.6 A regra da tesourinha do prepositivo
@@ -222,13 +226,13 @@ Agora, a mecânica. Como o substantivo muda quando vai para o prepositivo?
 
 A tesourinha funciona como sempre:
 
-1. Encontre a forma do nominativo (a palavra "de dicionário").
-2. Aplique a terminação do prepositivo, que depende do gênero e da terminação.
-3. Pronto. O substantivo está no prepositivo.
+1. 1. Encontre a forma do nominativo (a palavra "de dicionário").
+2. 2. Aplique a terminação do prepositivo, que depende do gênero e da terminação.
+3. 3. Pronto. O substantivo está no prepositivo.
 
 As terminações do prepositivo são:
 
-| Gênero / Terminação | Prepositivo singular | Exemplo |
+| GÊNERO / TERMINAÇÃO | PREPOSITIVO SINGULAR | EXEMPLO |
 |---|---|---|
 | Masculino em consoante (duro) | -Е | стол → столé, дом → до́ме, го́род → го́роде |
 | Masculino em -й | -Е | музе́й → музе́е, геро́й → геро́е |
@@ -252,7 +256,7 @@ O masculino é o mais fácil: sempre -Е. Não importa se termina em consoante, 
 
 Masculino em consoante
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | стол | столé | mesa |
 | дом | до́ме | casa |
@@ -267,7 +271,7 @@ Atenção à tônica: стол → столé (tônica na terminação). До́�
 
 Masculino em -ь
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | слова́рь | словаре́ | dicionário |
 | день | дне | dia |
@@ -279,7 +283,7 @@ Repare: o -ь desaparece e entra -е. Sempre.
 
 Masculino em -й
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | музе́й | музе́е | museu |
 | геро́й | геро́е | herói |
@@ -294,7 +298,7 @@ O feminino é um pouco mais complexo, porque depende da terminação.
 
 Feminino em -а
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | ко́мната | ко́мнате | quarto |
 | кни́га | кни́ге | livro |
@@ -307,7 +311,7 @@ Repare: o -а desaparece e entra -е.
 
 Feminino em -я
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | семья́ | семье́ | família |
 | дере́вня | дере́вне | vila |
@@ -321,7 +325,7 @@ Feminino em -ь → terminação -И
 
 Aqui está a exceção. O feminino em -ь recebe -И, não -е.
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | ночь | но́чи | noite |
 | дверь | две́ри | porta |
@@ -336,7 +340,7 @@ Feminino em -ия → terminação -ИИ
 
 Palavras em -ия recebem -ии (dois "i"s).
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | Росси́я | Росси́и | Rússia |
 | А́нглия | А́нглии | Inglaterra |
@@ -354,7 +358,7 @@ O neutro é o mais simples. Duas regras.
 
 Neutro em -о
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | окно́ | окне́ | janela |
 | сло́во | сло́ве | palavra |
@@ -367,7 +371,7 @@ Repare: o -о vira -е. Sempre.
 
 Neutro em -е
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | мо́ре | мо́ре | mar |
 | пла́тье | пла́тье | vestido |
@@ -377,9 +381,11 @@ Neutro em -е
 
 Repare: palavras em -е geralmente ficam iguais. Mas palavras em -ие (com "i" antes do "e") recebem -ии:
 
-- упражне́ние → упражне́нии
-- зна́ние → зна́нии
-- зда́ние → зда́нии
+упражне́ние → упражне́нии
+
+зна́ние → зна́нии
+
+зда́ние → зда́нии
 
 Por quê? Mesma lógica de -ия → -ии.
 
@@ -387,7 +393,7 @@ Neutro em -мя → terminação -ЕНИ
 
 Palavras neutras terminadas em -мя recebem -ени.
 
-| Nominativo | Prepositivo | Tradução |
+| NOMINATIVO | PREPOSITIVO | TRADUÇÃO |
 |---|---|---|
 | вре́мя | вре́мени | tempo |
 | и́мя | и́мени | nome |
@@ -402,7 +408,7 @@ Repare: são cerca de 10 palavras. Você já as conhece da Aula 2. Elas são neu
 
 Aqui está a tabela que resolve tudo:
 
-| Gênero / Terminação | Terminação do prepositivo | Exemplo |
+| GÊNERO / TERMINAÇÃO | TERMINAÇÃO DO PREPOSITIVO | EXEMPLO |
 |---|---|---|
 | Masculino em consoante | -Е | стол → столé |
 | Masculino em -й | -Е | музе́й → музе́е |
@@ -429,7 +435,7 @@ O russo distingue entre onde (lugar) e para onde (movimento). E essa distinção
 
 Compare:
 
-| Pergunta | Resposta | Caso | Por quê |
+| PERGUNTA | RESPOSTA | CASO | POR QUÊ |
 |---|---|---|---|
 | Где ты? | Я в ко́мнате. | Prepositivo | Estou no quarto (lugar). |
 | Куда ты идёшь? | Я иду́ в ко́мнату. | Acusativo | Estou indo para o quarto (movimento). |
@@ -440,16 +446,19 @@ Compare:
 
 A regra:
 
-- В + prepositivo = "em/no/na" (onde).
-- В + acusativo = "para" (para onde).
-- НА + prepositivo = "em/no/na" (onde).
-- НА + acusativo = "para" (para onde).
+В + prepositivo = "em/no/na" (onde).
+
+В + acusativo = "para" (para onde).
+
+НА + prepositivo = "em/no/na" (onde).
+
+НА + acusativo = "para" (para onde).
 
 É a mesma preposição, mas o caso muda conforme o sentido. Se é lugar, prepositivo. Se é movimento, acusativo.
 
 Exemplos práticos:
 
-| Russo | Tradução | Caso |
+| RUSSO | TRADUÇÃO | CASO |
 |---|---|---|
 | Я в шко́ле. | Estou na escola. | Prepositivo (onde). |
 | Я иду́ в шко́лу. | Vou para a escola. | Acusativo (para onde). |
@@ -463,11 +472,11 @@ Exemplos práticos:
 
 ## 7.12 As exceções: os irregulares em -У/-Ю
 
-Aqui está o ponto que só o Penguin explica com clareza. Existem alguns substantivos masculinos que, no prepositivo, em vez de -Е, recebem -У (ou -Ю). Mas atenção: só quando a preposição é В ou НА. Com О, eles voltam para -Е.
+Aqui está um ponto que costuma ser pouco explicado. Existem alguns substantivos masculinos que, no prepositivo, em vez de -Е, recebem -У (ou -Ю). Mas atenção: só quando a preposição é В ou НА. Com О, eles voltam para -Е.
 
 Lista dos irregulares mais comuns:
 
-| Nominativo | Prepositivo (com В/НА) | Tradução |
+| NOMINATIVO | PREPOSITIVO (COM В/НА) | TRADUÇÃO |
 |---|---|---|
 | лес | в лесу́ | na floresta |
 | сад | в саду́ | no jardim |
@@ -486,7 +495,7 @@ Repare: a terminação é -У (sempre acentuada). E só funciona com В e НА.
 
 Compare:
 
-| Com В/НА (lugar) | Com О (a respeito de) |
+| COM В/НА (LUGAR) | COM О (A RESPEITO DE) |
 |---|---|
 | в лесу́ (na floresta) | о ле́се (sobre a floresta) |
 | в саду́ (no jardim) | о са́де (sobre o jardim) |
@@ -496,7 +505,7 @@ A regra: quando В/НА indicam lugar, esses substantivos usam -У. Quando О in
 
 Exemplos em frases:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я гуля́ю в лесу́. | Passeio na floresta. |
 | Мы говори́м о ле́се. | Falamos sobre a floresta. |
@@ -506,75 +515,76 @@ Exemplos em frases:
 | Я ду́маю о го́де. | Penso sobre o ano. |
 
 
+## 7.12B Tabelas de apoio: Adjetivos, Possessivos, Pronomes e Transportes no Prepositivo
+
+| GÊNERO / NÚMERO | ADJETIVOS NO PREPOSITIVO | POSSESSIVOS E DEMONSTRATIVOS | EXEMPLO COMPLETO |
+|---|---|---|---|
+| Masculino e Neutro | -ОМ / -ЕМ | в моём, твоём, на́шем, ва́шем, э́том | Я живу́ в э́том большо́м до́ме. |
+| Feminino | -ОЙ / -ЕЙ | в мое́й, твое́й, на́шей, ва́шей, э́той | Она́ живёт в мое́й но́вой кварти́ре. |
+| Plural (Todos) | -ЫХ / -ИХ | в мои́х, твои́х, на́ших, ва́ших, э́тих | Лю́ди живу́т в больши́х города́х. |
+
+Pronomes com О (sobre): обо мне · о тебе́ · о нём · о ней · о нас · о вас · о них. Meios de transporte (НА + Prepositivo): е́хать на авто́бусе, на метро́, на маши́не, на по́езде, на такси́; лете́ть на самолёте.
+
+
 ## 7.13 Os erros que o brasileiro VAI cometer no prepositivo
 
 Erro 1 — Usar o acusativo em vez do prepositivo
 
-❌ Errado: Я в ко́мнату (querendo dizer "estou no quarto").
-✅ Correto: Я в ко́мнате.
+❌ Errado: Я в ко́мнату (querendo dizer "estou no quarto"). ✅ Correto: Я в ко́мнате.
 
 O brasileiro aprendeu o acusativo primeiro (Aula 6) e tende a usar a terminação de acusativo em tudo. Mas "estou no quarto" é lugar, não movimento. É prepositivo.
 
 Erro 2 — Não usar preposição nenhuma
 
-❌ Errado: Я ко́мнате.
-✅ Correto: Я в ко́мнате.
+❌ Errado: Я ко́мнате. ✅ Correto: Я в ко́мнате.
 
 O caso prepositivo nunca aparece sozinho. Ele sempre vem com uma preposição (В, НА, О, ПРИ). Sem preposição, não existe prepositivo.
 
 Erro 3 — Usar В em vez de НА (e vice-versa)
 
-❌ Errado: Я в пло́щади.
-✅ Correto: Я на пло́щади.
+❌ Errado: Я в пло́щади. ✅ Correto: Я на пло́щади.
 
 Praça é lugar aberto. Vai com НА. A regra dos lugares abertos vs. fechados resolve 90% disso.
 
 Erro 4 — Esquecer que o feminino em -ь recebe -И, não -Е
 
-❌ Errado: Я в но́че.
-✅ Correto: Я в но́чи.
+❌ Errado: Я в но́че. ✅ Correto: Я в но́чи.
 
 O feminino em -ь é uma exceção: recebe -И. Sempre.
 
 Erro 5 — Esquecer que -ия recebe -ии
 
-❌ Errado: Я в Росси́е.
-✅ Correto: Я в Росси́и.
+❌ Errado: Я в Росси́е. ✅ Correto: Я в Росси́и.
 
 Palavras em -ия recebem -ии (dois "i"s).
 
 Erro 6 — Usar О quando a palavra começa com vogal
 
-❌ Errado: Я говорю́ о Ива́не.
-✅ Correto: Я говорю́ об Ива́не.
+❌ Errado: Я говорю́ о Ива́не. ✅ Correto: Я говорю́ об Ива́не.
 
 Antes de vogal, О vira ОБ. É uma questão de eufonia.
 
 Erro 7 — Usar ОБ em vez de ОБО
 
-❌ Errado: Я говорю́ об мне.
-✅ Correto: Я говорю́ обо мне.
+❌ Errado: Я говорю́ об мне. ✅ Correto: Я говорю́ обо мне.
 
 Antes de palavras que começam com duas consoantes ou com МН-, ВС-, usa-se ОБО.
 
 Erro 8 — Esquecer que -мя recebe -ени
 
-❌ Errado: Я в вре́мя.
-✅ Correto: Я во вре́мени.
+❌ Errado: Я в вре́мя. ✅ Correto: Я во вре́мени.
 
 Palavras em -мя recebem -ени no prepositivo. E В vira ВО antes de ВРЕМЕНИ.
 
 Erro 9 — Confundir "onde" e "para onde"
 
-❌ Errado: Я иду́ в ко́мнате (querendo dizer "vou para o quarto").
-✅ Correto: Я иду́ в ко́мнату.
+❌ Errado: Я иду́ в ко́мнате (querendo dizer "vou para o quarto"). ✅ Correto: Я иду́ в ко́мнату.
 
 "Vou para o quarto" é movimento → acusativo. "Estou no quarto" é lugar → prepositivo.
 
 Erro 10 — Usar -у/-ю com О
 
-❌ Errado: Я говорю́ о лесу́.
-✅ Correto: Я говорю́ о ле́се.
+❌ Errado: Я говорю́ о лесу́. ✅ Correto: Я говорю́ о ле́се.
 
 Os irregulares em -у/-ю só funcionam com В/НА. Com О, voltam para -е.
 
@@ -583,7 +593,7 @@ Os irregulares em -у/-ю só funcionam com В/НА. Com О, voltam para -е.
 
 Agora, frases reais para você ver o prepositivo em ação:
 
-| Russo | Tradução | Preposição |
+| RUSSO | TRADUÇÃO | PREPOSIÇÃO |
 |---|---|---|
 | Я в ко́мнате. | Estou no quarto. | В |
 | Он в магази́не. | Ele está na loja. | В |
@@ -604,192 +614,247 @@ Agora, frases reais para você ver o prepositivo em ação:
 
 ## 7.15 EXERCÍCIOS
 
-Exercício 1 — Escolha В ou НА
+EXERCÍCIO 1 — ESCOLHA В OU НА
 
 Escolha a preposição correta (В ou НА) para cada lugar.
 
-1. ___ магази́не (loja)
-2. ___ пло́щади (praça)
-3. ___ ко́мнате (quarto)
-4. ___ у́лице (rua)
-5. ___ шко́ле (escola)
-6. ___ вокза́ле (estação)
-7. ___ теа́тре (teatro)
-8. ___ ры́нке (mercado)
-9. ___ больни́це (hospital)
-10. ___ рабо́те (trabalho)
+1. 1. ___ магази́не (loja)
+2. 2. ___ пло́щади (praça)
+3. 3. ___ ко́мнате (quarto)
+4. 4. ___ у́лице (rua)
+5. 5. ___ шко́ле (escola)
+6. 6. ___ вокза́ле (estação)
+7. 7. ___ теа́тре (teatro)
+8. 8. ___ ры́нке (mercado)
+9. 9. ___ больни́це (hospital)
+10. 10. ___ рабо́те (trabalho)
 
-Exercício 2 — Coloque no prepositivo
+EXERCÍCIO 2 — COLOQUE NO PREPOSITIVO
 
 Transforme as palavras abaixo no prepositivo (com a preposição correta).
 
-1. кни́га → в ____
-2. дом → в ____
-3. окно́ → в ____
-4. ночь → в ____
-5. семья́ → в ____
-6. стол → на ____
-7. пло́щадь → на ____
-8. мо́ре → в ____
-9. Росси́я → в ____
-10. вре́мя → во ____
-11. ко́мната → в ____
-12. у́лица → на ____
+1. 1. кни́га → в ____
+2. 2. дом → в ____
+3. 3. окно́ → в ____
+4. 4. ночь → в ____
+5. 5. семья́ → в ____
+6. 6. стол → на ____
+7. 7. пло́щадь → на ____
+8. 8. мо́ре → в ____
+9. 9. Росси́я → в ____
+10. 10. вре́мя → во ____
+11. 11. ко́мната → в ____
+12. 12. у́лица → на ____
 
-Exercício 3 — Complete as frases
+EXERCÍCIO 3 — COMPLETE AS FRASES
 
 Use o substantivo entre parênteses no prepositivo, com a preposição correta (В ou НА).
 
-1. Я живу́ ___ (Москва́).
-2. Он рабо́тает ___ (заво́д).
-3. Мы отдыха́ем ___ (парк)? — Atenção! Parque em russo é "fechado", usa В.
-4. Она́ на ___ (у́лица).
-5. Кни́га лежи́т ___ (стол).
-6. Я в ___ (ко́мната).
-7. Мы в ___ (Росси́я).
-8. Дети́ игра́ют ___ (пло́щадь).
-9. Он в ___ (шко́ла).
-10. Мы говори́м о ___ (рабо́та).
+1. 1. Я живу́ ___ (Москва́).
+2. 2. Он рабо́тает ___ (заво́д — fábrica; usa НА).
+3. 3. Мы отдыха́ем ___ (парк — parque; usa В).
+4. 4. Она́ на ___ (у́лица).
+5. 5. Кни́га лежи́т ___ (стол).
+6. 6. Я в ___ (ко́мната).
+7. 7. Мы в ___ (Росси́я).
+8. 8. Дети́ игра́ют ___ (пло́щадь).
+9. 9. Он в ___ (шко́ла).
+10. 10. Мы говори́м о ___ (рабо́та).
 
-Exercício 4 — Escolha a variação correta (О, ОБ, ОБО)
+EXERCÍCIO 4 — ESCOLHA A VARIAÇÃO CORRETA (О, ОБ, ОБО)
 
 Escolha a preposição correta para "sobre".
 
-1. Я говорю́ ___ кни́ге.
-2. Я говорю́ ___ Ива́не.
-3. Я говорю́ ___ мне.
-4. Я говорю́ ___ теа́тре.
-5. Я говорю́ ___ э́том.
-6. Я говорю́ ___ А́нне.
-7. Я говорю́ ___ ма́ме.
-8. Я говорю́ ___ отце́.
-9. Я говорю́ ___ университе́те.
-10. Я говорю́ ___ всём.
+1. 1. Я говорю́ ___ кни́ге.
+2. 2. Я говорю́ ___ Ива́не.
+3. 3. Я говорю́ ___ мне.
+4. 4. Я говорю́ ___ теа́тре.
+5. 5. Я говорю́ ___ э́том.
+6. 6. Я говорю́ ___ А́нне.
+7. 7. Я говорю́ ___ ма́ме.
+8. 8. Я говорю́ ___ отце́.
+9. 9. Я говорю́ ___ университе́те.
+10. 10. Я говорю́ ___ всём.
 
-Exercício 5 — Escolha prepositivo ou acusativo
+EXERCÍCIO 5 — ESCOLHA PREPOSITIVO OU ACUSATIVO
 
 Complete com a forma correta do substantivo entre parênteses (atenção ao sentido: onde = prepositivo; para onde = acusativo).
 
-1. Я иду́ в ____. (шко́ла)
-2. Я в ____. (шко́ла)
-3. Он идёт в ____. (магази́н)
-4. Он в ____. (магази́н)
-5. Мы идём на ____. (пло́щадь)
-6. Мы на ____. (пло́щадь)
-7. Она́ идёт в ____. (ко́мната)
-8. Она́ в ____. (ко́мната)
+1. 1. Я иду́ в ____. (шко́ла)
+2. 2. Я в ____. (шко́ла)
+3. 3. Он идёт в ____. (магази́н)
+4. 4. Он в ____. (магази́н)
+5. 5. Мы идём на ____. (пло́щадь)
+6. 6. Мы на ____. (пло́щадь)
+7. 7. Она́ идёт в ____. (ко́мната)
+8. 8. Она́ в ____. (ко́мната)
 
-Exercício 6 — Complete com a terminação correta
+EXERCÍCIO 6 — COMPLETE COM A TERMINAÇÃO CORRETA
 
 Complete as palavras no prepositivo.
 
-1. Я живу́ в Москв__.
-2. Он в магазин__.
-3. Она́ в ко́мнат__.
-4. Я в Росси́__.
-5. Кни́га на стол__.
-6. Мы на пло́щад__.
-7. Он в Сиби́р__.
-8. Она́ в но́ч__? — Estranho, mas para fixar: prefiro uma frase melhor. Я ду́маю о но́ч__ (penso sobre a noite).
-9. Он в словар__.
-10. Мы говори́м о рабо́т__.
+1. 1. Я живу́ в Москв__.
+2. 2. Он в магазин__.
+3. 3. Она́ в ко́мнат__.
+4. 4. Я в Росси́__.
+5. 5. Кни́га на стол__.
+6. 6. Мы на пло́щад__.
+7. 7. Он в Сиби́р__.
+8. 8. Я ду́маю о но́ч__ (penso sobre a noite).
+9. 9. Он в словар__.
+10. 10. Мы говори́м о рабо́т__.
 
-Exercício 7 — Traduza para o russo
+EXERCÍCIO 7 — TRADUZA PARA O RUSSO
 
-1. Estou no quarto. → ____
-2. Ele está na loja. → ____
-3. Nós moramos em Moscou. → ____
-4. Ela está na praça. → ____
-5. O livro está na mesa. → ____
-6. Falo sobre o livro. → ____
-7. Penso em você. → ____ (формально)
-8. Estamos na aula. → ____
-9. Eles estão no teatro. → ____
-10. Moro na Rússia. → ____
+1. 1. Estou no quarto. → ____
+2. 2. Ele está na loja. → ____
+3. 3. Nós moramos em Moscou. → ____
+4. 4. Ela está na praça. → ____
+5. 5. O livro está na mesa. → ____
+6. 6. Falo sobre o livro. → ____
+7. 7. Penso em você. → ____ (формально)
+8. 8. Estamos na aula. → ____
+9. 9. Eles estão no teatro. → ____
+10. 10. Moro na Rússia. → ____
 
-Exercício 8 — Encontre e corrija o erro
+EXERCÍCIO 8 — ENCONTRE E CORRIJA O ERRO
 
 Cada frase tem um erro de prepositivo. Identifique e corrija.
 
-1. Я в ко́мнату. (querendo dizer "estou no quarto")
-2. Я живу́ в Росси́е.
-3. Он на магази́не.
-4. Мы в пло́щади.
-5. Я говорю́ о Ива́не.
-6. Я в но́че.
-7. Я во вре́мя (querendo dizer "no tempo").
-8. Он в ле́се. (querendo dizer "na floresta", com sentido de estar fisicamente)
+1. 1. Я в ко́мнату. (querendo dizer "estou no quarto")
+2. 2. Я живу́ в Росси́е.
+3. 3. Он на магази́не.
+4. 4. Мы в пло́щади.
+5. 5. Я говорю́ о Ива́не.
+6. 6. Я в но́че.
+7. 7. Я во вре́мя (querendo dizer "no tempo").
+8. 8. Он в ле́се. (querendo dizer "na floresta", com sentido de estar fisicamente)
 
-Exercício 9 — Desafio
+EXERCÍCIO 9 — DESAFIO
 
 Escreva 10 frases usando В ou НА + prepositivo, sobre lugares onde você costuma estar.
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
-10. 
+1.
+
+2. 3.
+
+4. 5.
+
+6.
+
+7.
+
+8. 9.
+
+10.
 
 
 ## 7.16 GABARITO
 
-Exercício 1:
+EXERCÍCIO 1:
 
-1. В — 2. НА — 3. В — 4. НА — 5. В — 6. НА — 7. В — 8. НА — 9. В — 10. НА
+1. 1. В — 2. НА — 3. В — 4. НА — 5. В — 6. НА — 7. В — 8. НА — 9. В — 10. НА
 
-Exercício 2:
+EXERCÍCIO 2:
 
-1. в кни́ге — 2. в до́ме — 3. в окне́ — 4. в но́чи — 5. в семье́ — 6. на столе́ — 7. на пло́щади — 8. в мо́ре — 9. в Росси́и — 10. во вре́мени — 11. в ко́мнате — 12. на у́лице
+1. 1. в кни́ге — 2. в до́ме — 3. в окне́ — 4. в но́чи — 5. в семье́ — 6. на столе́ — 7. на пло́щади — 8. в мо́ре — 9. в Росси́и — 10. во вре́мени — 11. в ко́мнате — 12. на у́лице
 
-Exercício 3:
+EXERCÍCIO 3:
 
-1. в Москве́ — 2. на заво́де? Cuidado: заво́д é fechado, mas o russo usa НА quando pensa em "trabalhar em". Aqui, na verdade, é на заво́де. Exceção comum. Aceite as duas, mas o padrão é НА. — 3. в па́рке — 4. на у́лице — 5. на столе́ — 6. в ко́мнате — 7. в Росси́и — 8. на пло́щади — 9. в шко́ле — 10. о рабо́те
+1. 1. в Москве́ — 2. на заво́де (fábrica usa tradicionalmente НА). — 3. в па́рке —
+4. 4. на у́лице — 5. на столе́ — 6. в ко́мнате — 7. в Росси́и — 8. на пло́щади —
+9. 9. в шко́ле — 10. о рабо́те
 
-Exercício 4:
+EXERCÍCIO 4:
 
-1. о — 2. об — 3. обо — 4. о — 5. об — 6. об — 7. о — 8. об — 9. об — 10. обо
+1. 1. о — 2. об — 3. обо — 4. о — 5. об — 6. об — 7. о — 8. об — 9. об — 10. обо
 
-Exercício 5:
+EXERCÍCIO 5:
 
-1. в шко́лу (movimento → acusativo) — 2. в шко́ле (lugar → prepositivo) — 3. в магази́н — 4. в магази́не — 5. на пло́щадь — 6. на пло́щади — 7. в ко́мнату — 8. в ко́мнате
+1. 1. в шко́лу (movimento → acusativo) — 2. в шко́ле (lugar → prepositivo) — 3. в магази́н — 4. в магази́не — 5. на пло́щадь — 6. на пло́щади — 7. в ко́мнату — 8. в ко́мнате
 
-Exercício 6:
+EXERCÍCIO 6:
 
-1. Москве́ — 2. магази́не — 3. ко́мнате — 4. Росси́и — 5. столе́ — 6. пло́щади — 7. Сиби́ри — 8. но́чи — 9. словаре́ — 10. рабо́те
+1. 1. Москве́ — 2. магази́не — 3. ко́мнате — 4. Росси́и — 5. столе́ — 6. пло́щади — 7. Сиби́ри — 8. но́чи — 9. словаре́ — 10. рабо́те
 
-Exercício 7:
+EXERCÍCIO 7:
 
-1. Я в ко́мнате. — 2. Он в магази́не. — 3. Мы живём в Москве́. — 4. Она́ на пло́щади. — 5. Кни́га на столе́. — 6. Я говорю́ о кни́ге. — 7. Я ду́маю о вас. — 8. Мы на уро́ке. — 9. Они́ в теа́тре. — 10. Я живу́ в Росси́и.
+1. 1. Я в ко́мнате. — 2. Он в магази́не. — 3. Мы живём в Москве́. — 4. Она́ на пло́щади. — 5. Кни́га на столе́. — 6. Я говорю́ о кни́ге. — 7. Я ду́маю о вас. — 8. Мы на уро́ке. — 9. Они́ в теа́тре. — 10. Я живу́ в Росси́и.
 
-Exercício 8:
+EXERCÍCIO 8:
 
-1. Я в ко́мнате. (lugar → prepositivo)
-2. Я живу́ в Росси́и. (-ия → -ии)
-3. Он в магази́не. (loja é fechada → В)
-4. Мы на пло́щади. (praça é aberta → НА)
-5. Я говорю́ об Ива́не. (vogal → ОБ)
-6. Я ду́маю о но́чи. (o -и no feminino em -ь; e com О, o contexto é "a respeito")
-7. Я во вре́мени. (-мя → -ени; ВО antes de ВР-)
-8. Он в лесу́. (irregular em -у com В/НА; aqui é lugar físico, então -у)
+1. 1. Я в ко́мнате. (lugar → prepositivo)
+2. 2. Я живу́ в Росси́и. (-ия → -ии)
+3. 3. Он в магази́не. (loja é fechada → В)
+4. 4. Мы на пло́щади. (praça é aberta → НА)
+5. 5. Я говорю́ об Ива́не. (vogal → ОБ)
+6. 6. Я ду́маю о но́чи. (o -и no feminino em -ь; e com О, o contexto é "a respeito")
+7. 7. Я во вре́мени. (-мя → -ени; ВО antes de ВР-)
+8. 8. Он в лесу́. (irregular em -у com В/НА; aqui é lugar físico, então -у)
 
-Exercício 9:
-Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.
+Exercício 9: Resposta pessoal. Verifique se aplicou В/НА + prepositivo corretamente.
 
 
 ## 7.17 RESUMO DE BOLSO — AULA 7
 
-1. O caso prepositivo é o único caso do russo que sempre vem depois de uma preposição. É por isso que se chama prepositivo.
-2. Ele serve para dizer ONDE as coisas estão. É o caso do lugar.
-3. As duas preposições principais são В e НА. As duas significam "em/no/na".
-4. O segredinho: В para lugares fechados (dá para entrar dentro); НА para lugares abertos ou eventos (praça, rua, aula, trabalho, concerto).
-5. A ponte com o português: В = em + a / em + o (no/na). Estou no quarto → я в ко́мнате.
-6. As 4 preposições: В (em), НА (em/sobre), О/ОБ/ОБО (sobre, a respeito de), ПРИ (junto a, no tempo de).
-7. Terminações do prepositivo: Masculino: -Е (sempre).
-8. Onde vs. para onde: Где? (onde) → prepositivo (я в ко́мнате).
-9. Irregulares em -У/-Ю: com В/НА, alguns substantivos masculinos recebem -У (в лесу́, в саду́, на полу́). Com О, voltam para -Е (о ле́се).
-10. Erros do brasileiro: usar acusativo em vez de prepositivo; esquecer a preposição; trocar В por НА; esquecer -И no feminino em -ь; trocar О por ОБ; confundir "onde" com "para onde".
+1. 1. O caso prepositivo é o único caso do russo que sempre vem depois de uma preposição. É por isso que se chama prepositivo.
+2. 2. Ele serve para dizer ONDE as coisas estão. É o caso do lugar.
+3. 3. As duas preposições principais são В e НА. As duas significam "em/no/na".
+4. 4. O segredinho: В para lugares fechados (dá para entrar dentro); НА para lugares abertos ou eventos (praça, rua, aula, trabalho, concerto).
+5. 5. A ponte com o português: В = em + a / em + o (no/na). Estou no quarto → я в ко́мнате.
+6. 6. As 4 preposições: В (em), НА (em/sobre), О/ОБ/ОБО (sobre, a respeito de), ПРИ (junto a, no tempo de).
+7. 7. Terminações do prepositivo:
+
+Masculino: -Е (sempre).
+
+Feminino em -а/-я: -Е.
+
+Feminino em -ь: -И.
+
+Feminino em -ия: -ИИ.
+
+Neutro em -о/-е: -Е.
+
+Neutro em -ие: -ИИ.
+
+Neutro em -мя: -ЕНИ.
+
+8. 8. Onde vs. para onde:
+
+Где? (onde) → prepositivo (я в ко́мнате).
+
+Куда? (para onde) → acusativo (я иду́ в ко́мнату).
+
+9. 9. Irregulares em -У/-Ю: com В/НА, alguns substantivos masculinos recebem -У (в лесу́, в саду́, на полу́). Com О, voltam para -Е (о ле́се).
+10. 10. Erros do brasileiro: usar acusativo em vez de prepositivo; esquecer a preposição; trocar В por НА; esquecer -И no feminino em -ь; trocar О por ОБ; confundir "onde" com "para onde".
+
+TERMINAÇÕES DOS SUBSTANTIVOS | EXEMPLOS
+
+| NOMINATIVO | PREPOSICIONAL |
+|---|---|
+| ONILUCSAM | consoante + е | Это дом | Я живу́ в до́ме. |
+
+| й → е | Это музе́й | Я рабо́таю в музе́е. |
+|---|---|---|
+| ь → е | Это словарь | Я смотрю́ сло́во в словаре́. |
+| ONINIMEF | а → е | Это фи́рма | Я рабо́таю в фи́рме. |
+
+| я → е | Это дере́вня | Я живу́ в дере́вне. |
+|---|---|---|
+| ь → и | Это жизнь | Я ду́маю о жи́зни. |
+| ия → ии | Это Росси́я | Я живу́ в Росси́и. |
+| ORTUEN | о → е | Это о́зеро | Ры́ба живёт в о́зере. |
+
+| е → е | Это мо́ре | Я ду́маю о мо́ре. |
+|---|---|---|
+| ие → ии | Это упражне́ние | В упражне́нии есть оши́бка. |
+| LARULP | cons., а, о → ах | Это города́ | Лю́ди живу́т в города́х. |
+
+| Это фи́рмы | Лю́ди рабо́тают в фи́рмах. |
+|---|---|
+| й, ь, е, я → ях | Это дере́вни | Лю́ди живу́т в дере́внях. |
+
+Это музе́и | Лю́ди рабо́тают в музе́ях.
+
+
+## Quadro-resumo · caso preposicional

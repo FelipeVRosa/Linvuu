@@ -1,8 +1,10 @@
-# Capítulo 10: Genitivo i: o "de" e a negação
+# Capítulo 10: GENITIVO I: O "DE" E A NEGAÇÃO
 
-*Nível a1*
+*Nível a2*
 
-(ou: o caso da origem — e a primeira metade do caso mais famoso do russo)
+(ou: o caso da origem — e a primeira metade do caso mais famoso do
+
+russo)
 
 
 ## 10.1 Uma cena que você já viveu (ou vai viver)
@@ -15,8 +17,8 @@ Você olha. É a mesma palavra. Де́ньги. Mas agora está де́нег —
 
 Isso acontece com todo estudante de russo quando encontra o genitivo pela primeira vez. E é aqui que muitos desistem. Eu vou te dizer honestamente: este é o caso mais complexo do russo. Mas nesta aula eu vou fazer duas coisas:
 
-1. Vou te explicar o genitivo de forma tão clara que ele vai parecer simples.
-2. Vou dividir o genitivo em duas aulas, para você não desistir no meio.
+1. 1. Vou te explicar o genitivo de forma tão clara que ele vai parecer simples.
+2. 2. Vou dividir o genitivo em duas aulas, para você não desistir no meio.
 
 Esta é a Aula 10 — Genitivo I: o "de" e a negação. Só isso. Sem plural, sem números, sem preposições. Isso fica para a Aula 11.
 
@@ -25,7 +27,7 @@ E antes de começarmos, uma tranquilização: você está terminando a parte cha
 
 ## 10.2 Antes de mais nada: o que significa "genitivo"?
 
-Vou te contar um segredo etimológico que nenhum dos cinco livros que analisei conta. Preste atenção, porque isso vai fazer o caso fazer sentido.
+Vamos a uma curiosidade etimológica que ajuda a entender o caso. Preste atenção, porque isso vai fazer o caso fazer sentido.
 
 A palavra genitivo vem do latim genitivus, que vem do verbo gignere — que significa "gerar", "dar à luz". E gignere vem de genesis — origem, nascimento, começo.
 
@@ -35,11 +37,15 @@ Quando você diz "o livro de Ivan", você está dizendo que o livro tem origem e
 
 Em português, o genitivo se expressa com a preposição "de":
 
-- O livro de Ivan.
-- A casa de minha mãe.
-- O nome do menino.
-- O centro da cidade.
-- A cor do mar.
+O livro de Ivan.
+
+A casa de minha mãe.
+
+O nome do menino.
+
+O centro da cidade.
+
+A cor do mar.
 
 Repare: em todas essas frases, o "de" indica posse, pertença, origem. É isso que o genitivo faz em russo. É o caso da posse. O caso do "de".
 
@@ -52,19 +58,21 @@ Antes de qualquer tabela, vamos fazer a ponte. Em português, o genitivo se expr
 
 Forma 1 — com "de":
 
-- O livro de Ivan.
-- A casa de minha mãe.
+O livro de Ivan.
+
+A casa de minha mãe.
 
 Forma 2 — com apóstrofo + s (em inglês, e às vezes em português com nomes próprios):
 
-- Ivan's book (inglês).
-- A casa da Maria (português).
+Ivan's book (inglês).
+
+A casa da Maria (português).
 
 Em russo, a Forma 1 é a regra. E o "de" não é uma palavra separada — é uma terminação que se adiciona ao substantivo.
 
 Compare:
 
-| Português | Russo |
+| PORTUGUÊS | RUSSO |
 |---|---|
 | O livro de Ivan. | Кни́га Ива́на. |
 | A casa de minha mãe. | Дом ма́мы. |
@@ -81,13 +89,13 @@ Repare: em russo, não existe a palavra "de". O que existe é uma mudança na te
 
 Agora, as terminações. A tesourinha funciona como sempre:
 
-1. Encontre a forma do nominativo (a palavra "de dicionário").
-2. Aplique a terminação do genitivo, que depende do gênero e da terminação.
-3. Pronto. O substantivo está no genitivo.
+1. 1. Encontre a forma do nominativo (a palavra "de dicionário").
+2. 2. Aplique a terminação do genitivo, que depende do gênero e da terminação.
+3. 3. Pronto. O substantivo está no genitivo.
 
 As terminações do genitivo singular são:
 
-| Gênero / Terminação | Genitivo singular | Exemplo |
+| GÊNERO / TERMINAÇÃO | GENITIVO SINGULAR | EXEMPLO |
 |---|---|---|
 | Masculino em consoante | -А | стол → стола́, дом → до́ма |
 | Masculino em -й | -Я | музе́й → музе́я, геро́й → геро́я |
@@ -102,9 +110,11 @@ As terminações do genitivo singular são:
 
 Repare:
 
-- Masculino e neutro recebem -А/-Я.
-- Feminino recebe -Ы/-И (ou -ИИ depois de -ия).
-- Neutro em -мя recebe -ЕНИ.
+Masculino e neutro recebem -А/-Я.
+
+Feminino recebe -Ы/-И (ou -ИИ depois de -ия).
+
+Neutro em -мя recebe -ЕНИ.
 
 É isso. Simples assim. Vamos ver cada caso em detalhe.
 
@@ -113,7 +123,7 @@ Repare:
 
 Masculino em consoante → -А
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | стол | стола́ | mesa |
 | дом | до́ма | casa |
@@ -122,7 +132,6 @@ Masculino em consoante → -А
 | брат | бра́та | irmão |
 | друг | дру́га | amigo |
 | студе́нт | студе́нта | estudante |
-| учи́тель → não, учитель é em -ь |  |  |
 | врач | врача́ | médico |
 | телефо́н | телефо́на | telefone |
 | магази́н | магази́на | loja |
@@ -132,7 +141,7 @@ Repare: o -А é adicionado ao final da palavra.
 
 Masculino em -й → -Я
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | музе́й | музе́я | museu |
 | геро́й | геро́я | herói |
@@ -142,7 +151,7 @@ Repare: o -й desaparece e entra -Я.
 
 Masculino em -ь → -Я
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | слова́рь | словаря́ | dicionário |
 | учи́тель | учи́теля | professor |
@@ -159,9 +168,8 @@ Atenção ao acento: сло́варь → словаря́ (tônica na terminaç
 
 Feminino em -а → -Ы (ou -И depois de г, к, х, ж, ч, ш, щ)
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
-| кни́га → não, кни́га é em -а depois de г? Não. Кни́га é em -а. Vamos refazer. |  |  |
 | кни́га | кни́ги (depois de г) | livro |
 | ма́ма | ма́мы | mãe |
 | ла́мпа | ла́мпы | lâmpada |
@@ -173,7 +181,7 @@ Feminino em -а → -Ы (ou -И depois de г, к, х, ж, ч, ш, щ)
 
 Atenção às letras г, к, х, ж, ч, ш, щ: depois delas, a terminação é -И (não -Ы). Isso é uma regra ortográfica do russo:
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | кни́га | кни́ги | livro |
 | рука́ | руки́ | mão |
@@ -183,7 +191,7 @@ Atenção às letras г, к, х, ж, ч, ш, щ: depois delas, a terminação é
 
 Feminino em -я → -И
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | семья́ | семьи́ | família |
 | дере́вня | дере́вни | vila |
@@ -195,7 +203,7 @@ Repare: o -я desaparece e entra -И.
 
 Feminino em -ь → -И
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | ночь | но́чи | noite |
 | дверь | две́ри | porta |
@@ -208,7 +216,7 @@ Repare: o -ь desaparece e entra -И.
 
 Feminino em -ия → -ИИ
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | Росси́я | Росси́и | Rússia |
 | Мари́я | Мари́и | Maria |
@@ -224,7 +232,7 @@ Repare: o -я desaparece e entra -ИИ (dois "i"s).
 
 Neutro em -о → -А
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | окно́ | окна́ | janela |
 | сло́во | сло́ва | palavra |
@@ -238,7 +246,7 @@ Repare: o -о vira -А.
 
 Neutro em -е → -Я
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | мо́ре | мо́ря | mar |
 | пла́тье | пла́тья | vestido |
@@ -250,7 +258,7 @@ Repare: o -е vira -Я.
 
 Neutro em -мя → -ЕНИ
 
-| Nominativo | Genitivo | Tradução |
+| NOMINATIVO | GENITIVO | TRADUÇÃO |
 |---|---|---|
 | вре́мя | вре́мени | tempo |
 | и́мя | и́мени | nome |
@@ -265,7 +273,7 @@ Repare: são cerca de 10 palavras. Você já as conhece desde a Aula 2. Elas sã
 
 Aqui está a tabela que resolve tudo:
 
-| Gênero / Terminação | Genitivo singular | Exemplo |
+| GÊNERO / TERMINAÇÃO | GENITIVO SINGULAR | EXEMPLO |
 |---|---|---|
 | Masculino em consoante | -А | друг → дру́га |
 | Masculino em -й | -Я | музе́й → музе́я |
@@ -279,6 +287,14 @@ Aqui está a tabela que resolve tudo:
 | Neutro em -мя | -ЕНИ | вре́мя → вре́мени |
 
 A grande diferença: o masculino e o neutro recebem -А/-Я; o feminino recebe -Ы/-И.
+
+
+## 10.8B Tabelas de apoio: Adjetivos e Possessivos no Genitivo Singular
+
+| GÊNERO NO GENITIVO SINGULAR | ADJETIVO NO GENITIVO | POSSESSIVOS E DEMONSTRATIVOS | EXEMPLO COMPLETO |
+|---|---|---|---|
+| Masculino e Neutro | -ОГО / -ЕГО (soa -óva/-iéva) | моего́, твоего́, на́шего, ва́шего, э́того | маши́на моего́ ста́ршего бра́та · нет вре́мени |
+| Feminino | -ОЙ / -ЕЙ | мое́й, твое́й, на́шей, ва́шей, э́той | У меня́ нет э́той но́вой кни́ги. |
 
 
 ## 10.9 A primeira aplicação: a NEGAÇÃO ("não tenho")
@@ -299,7 +315,7 @@ Repare: кни́га virou кни́ги. É o genitivo singular.
 
 Compare:
 
-| Afirmativo (есть + nominativo) | Negativo (нет + genitivo) |
+| AFIRMATIVO (ЕСТЬ + NOMINATIVO) | NEGATIVO (НЕТ + GENITIVO) |
 |---|---|
 | У меня́ есть кни́га. | У меня́ нет кни́ги. |
 | У меня́ есть вре́мя. | У меня́ нет вре́мени. |
@@ -318,7 +334,7 @@ A pergunta: por que o genitivo? Porque "não tenho" significa que a coisa não t
 
 Frases completas com "não tenho"
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | У меня́ нет вре́мени. | Não tenho tempo. |
 | У тебя́ нет де́нег. | Você não tem dinheiro. |
@@ -342,7 +358,7 @@ A segunda aplicação do genitivo é a posse. É o "de" português.
 
 Compare:
 
-| Português | Russo |
+| PORTUGUÊS | RUSSO |
 |---|---|
 | O livro de Ivan. | Кни́га Ива́на. |
 | A casa de minha mãe. | Дом ма́мы. |
@@ -357,11 +373,11 @@ Repare: em russo, o primeiro substantivo (o objeto possuído) fica no nominativo
 
 Estrutura:
 
-[Objeto possuído — nominativo] + [possuidor — genitivo]
+\[Objeto possuído — nominativo\] + \[possuidor — genitivo\]
 
 Exemplos em frases completas:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Э́то кни́га Ива́на. | Este é o livro de Ivan. |
 | Э́то дом ма́мы. | Esta é a casa da mamãe. |
@@ -381,7 +397,7 @@ E a pergunta mágica: "de quem é?" A resposta vai para o genitivo. "O livro de 
 
 A palavra нет também pode ser usada sem у меня. É o "não há", "não existe":
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Нет вре́мени. | Não há tempo. |
 | Нет де́нег. | Não há dinheiro. |
@@ -394,7 +410,7 @@ Repare: o objeto ainda vai para o genitivo. Нет всегда pede genitivo. S
 
 Em contexto:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | — Есть хлеб? | — Tem pão? |
 | — Нет хле́ба. | — Não tem pão. |
@@ -406,50 +422,43 @@ Em contexto:
 
 Erro 1 — Usar o nominativo em vez do genitivo depois de "нет"
 
-❌ Errado: У меня́ нет кни́га.
-✅ Correto: У меня́ нет кни́ги.
+❌ Errado: У меня́ нет кни́га. ✅ Correto: У меня́ нет кни́ги.
 
 Нет sempre pede genitivo. Sempre. Sem exceção.
 
 Erro 2 — Esquecer que o feminino em -а vira -ы (ou -и depois de г, к, х, ж, ч, ш, щ)
 
-❌ Errado: У меня́ нет кни́гы.
-✅ Correto: У меня́ нет кни́ги. (кни́га tem г antes do -а, então é -и)
+❌ Errado: У меня́ нет кни́гы. ✅ Correto: У меня́ нет кни́ги. (кни́га tem г antes do -а, então é -и)
 
 Erro 3 — Esquecer que o feminino em -я vira -и
 
-❌ Errado: У меня́ нет семья́.
-✅ Correto: У меня́ нет семьи́.
+❌ Errado: У меня́ нет семья́. ✅ Correto: У меня́ нет семьи́.
 
 Erro 4 — Esquecer que o feminino em -ь vira -и
 
-❌ Errado: У меня́ нет дверь.
-✅ Correto: У меня́ нет две́ри.
+❌ Errado: У меня́ нет дверь. ✅ Correto: У меня́ нет две́ри.
 
 Erro 5 — Esquecer que -ия vira -ии
 
-❌ Errado: Э́то центр Росси́и? Não, se for "Rússia", é Росси́и mesmo. Mas cuidado com outras palavras:
-❌ Errado: Э́то центр Росси́е.
-✅ Correto: Э́то центр Росси́и.
+❌ Errado: Э́то центр Росси́е. ✅ Correto: Э́то центр Росси́и (-ия vira sempre -ии).
 
 Erro 6 — Esquecer que -мя vira -мени
 
-❌ Errado: У меня́ нет вре́мя.
-✅ Correto: У меня́ нет вре́мени.
+❌ Errado: У меня́ нет вре́мя. ✅ Correto: У меня́ нет вре́мени.
 
 Erro 7 — Confundir o genitivo com o acusativo animado
 
 No masculino animado, o genitivo e o acusativo têm a mesma forma (-а/-я). Por isso, às vezes é fácil confundir. Mas a função é diferente:
 
-- Acusativo: o objeto da ação. Я ви́жу дру́га. (Vejo o amigo.)
-- Genitivo: a posse ou a negação. У меня́ нет дру́га. (Não tenho amigo.)
+Acusativo: o objeto da ação. Я ви́жу дру́га. (Vejo o amigo.)
+
+Genitivo: a posse ou a negação. У меня́ нет дру́га. (Não tenho amigo.)
 
 A forma é a mesma, mas o contexto é diferente. Não se preocupe em distinguir agora. Só saiba que, depois de нет, é sempre genitivo.
 
 Erro 8 — Esquecer que o possessor vai no genitivo, não o objeto possuído
 
-❌ Errado: Ива́н кни́га (querendo dizer "o livro de Ivan").
-✅ Correto: Кни́га Ива́на.
+❌ Errado: Ива́н кни́га (querendo dizer "o livro de Ivan"). ✅ Correto: Кни́га Ива́на.
 
 O objeto possuído (кни́га) fica no nominativo. O possuidor (Ива́н) fica no genitivo (Ива́на).
 
@@ -457,23 +466,27 @@ Erro 9 — Esquecer que a preposição "de" em português pode ter outros sentid
 
 Em português, "de" pode significar muitas coisas:
 
-- Posse: "o livro de Ivan".
-- Origem: "sou de São Paulo".
-- Material: "mesa de madeira".
-- Assunto: "falo de música".
+Posse: "o livro de Ivan".
+
+Origem: "sou de São Paulo".
+
+Material: "mesa de madeira".
+
+Assunto: "falo de música".
 
 Em russo, cada sentido tem uma estrutura diferente. O genitivo cobre a posse e a origem. Mas "mesa de madeira" não vai para o genitivo (é outra estrutura). Por enquanto, foque no genitivo de posse.
 
 Erro 10 — Acentuar errado
 
-❌ Errado: У меня́ нет кни́га. (sem mudar)
-✅ Correto: У меня́ нет кни́ги.
+❌ Errado: У меня́ нет кни́га. (sem mudar) ✅ Correto: У меня́ нет кни́ги.
 
 Mas atenção ao acento em algumas palavras:
 
-- окно́ → окна́ (o acento muda)
-- вода́ → воды́ (o acento muda)
-- рука́ → руки́ (o acento muda)
+окно́ → окна́ (o acento muda)
+
+вода́ → воды́ (o acento muda)
+
+рука́ → руки́ (o acento muda)
 
 Não há regra fixa. Você precisa ouvir e memorizar.
 
@@ -482,7 +495,7 @@ Não há regra fixa. Você precisa ouvir e memorizar.
 
 Agora, frases reais para você ver o genitivo em ação:
 
-| Russo | Tradução | Tipo |
+| RUSSO | TRADUÇÃO | TIPO |
 |---|---|---|
 | У меня́ нет вре́мени. | Não tenho tempo. | Negação |
 | У тебя́ нет де́нег. | Você não tem dinheiro. | Negação |
@@ -502,172 +515,195 @@ Agora, frases reais para você ver o genitivo em ação:
 
 ## 10.14 EXERCÍCIOS
 
-Exercício 1 — Coloque no genitivo
+EXERCÍCIO 1 — COLOQUE NO GENITIVO
 
 Transforme as palavras abaixo no genitivo singular.
 
-1. друг → ____
-2. кни́га → ____
-3. окно́ → ____
-4. семья́ → ____
-5. слова́рь → ____
-6. ночь → ____
-7. музе́й → ____
-8. вре́мя → ____
-9. маши́на → ____
-10. мо́ре → ____
-11. Росси́я → ____
-12. врач → ____
-13. дверь → ____
-14. студе́нт → ____
-15. письмо́ → ____
+1. 1. друг → ____
+2. 2. кни́га → ____
+3. 3. окно́ → ____
+4. 4. семья́ → ____
+5. 5. слова́рь → ____
+6. 6. ночь → ____
+7. 7. музе́й → ____
+8. 8. вре́мя → ____
+9. 9. маши́на → ____
+10. 10. мо́ре → ____
+11. 11. Росси́я → ____
+12. 12. врач → ____
+13. 13. дверь → ____
+14. 14. студе́нт → ____
+15. 15. письмо́ → ____
 
-Exercício 2 — Complete com "нет" + genitivo
+EXERCÍCIO 2 — COMPLETE COM "НЕТ" + GENITIVO
 
 Transforme as frases afirmativas em negativas.
 
-1. У меня́ есть кни́га. → У меня́ нет ____.
-2. У меня́ есть вре́мя. → У меня́ нет ____.
-3. У меня́ есть друг. → У меня́ нет ____.
-4. У меня́ есть маши́на. → У меня́ нет ____.
-5. У меня́ есть брат. → У меня́ нет ____.
-6. У меня́ есть соба́ка. → У меня́ нет ____.
-7. У меня́ есть дом. → У меня́ нет ____.
-8. У меня́ есть рабо́та. → У меня́ нет ____.
-9. У меня́ есть слова́рь. → У меня́ нет ____.
-10. У меня́ есть де́ньги. → У меня́ нет ____.
+1. 1. У меня́ есть кни́га. → У меня́ нет ____.
+2. 2. У меня́ есть вре́мя. → У меня́ нет ____.
+3. 3. У меня́ есть друг. → У меня́ нет ____.
+4. 4. У меня́ есть маши́на. → У меня́ нет ____.
+5. 5. У меня́ есть брат. → У меня́ нет ____.
+6. 6. У меня́ есть соба́ка. → У меня́ нет ____.
+7. 7. У меня́ есть дом. → У меня́ нет ____.
+8. 8. У меня́ есть рабо́та. → У меня́ нет ____.
+9. 9. У меня́ есть слова́рь. → У меня́ нет ____.
+10. 10. У меня́ есть де́ньги. → У меня́ нет ____.
 
-Exercício 3 — Complete com "есть" (nominativo) ou "нет" (genitivo)
+EXERCÍCIO 3 — COMPLETE COM "ЕСТЬ" (NOMINATIVO) OU "НЕТ" (GENITIVO)
 
 Escolha a estrutura correta conforme o sentido.
 
-1. У меня́ ___ кни́га. (tenho)
-2. У меня́ ___ вре́мени. (não tenho)
-3. У тебя́ ___ маши́на? (tens?)
-4. У него́ ___ дру́га. (não tem)
-5. У нас ___ дом. (temos)
-6. У вас ___ де́нег? (não têm?)
-7. У них ___ де́ти. (têm)
-8. У меня́ ___ вопро́са. (não tenho)
+1. 1. У меня́ ___ кни́га. (tenho)
+2. 2. У меня́ ___ вре́мени. (não tenho)
+3. 3. У тебя́ ___ маши́на? (tens?)
+4. 4. У него́ ___ дру́га. (não tem)
+5. 5. У нас ___ дом. (temos)
+6. 6. У вас ___ де́нег? (não têm?)
+7. 7. У них ___ де́ти. (têm)
+8. 8. У меня́ ___ вопро́са. (não tenho)
 
-Exercício 4 — Complete com o possessor no genitivo
+EXERCÍCIO 4 — COMPLETE COM O POSSESSOR NO GENITIVO
 
 Complete as frases com o substantivo entre parênteses no genitivo.
 
-1. Э́то кни́га ___. (Ива́н)
-2. Э́то дом ___. (ма́ма)
-3. Э́то и́мя ___. (ма́льчик)
-4. Э́то центр ___. (го́род)
-5. Э́то цвет ___. (мо́ре)
-6. Э́то му́зыка ___. (компози́тор)
-7. Э́то кры́ша ___. (дом)
-8. Э́то дверь ___. (ко́мната)
-9. Э́то слова́рь ___. (студе́нт)
-10. Э́то маши́на ___. (врач)
+1. 1. Э́то кни́га ___. (Ива́н)
+2. 2. Э́то дом ___. (ма́ма)
+3. 3. Э́то и́мя ___. (ма́льчик)
+4. 4. Э́то центр ___. (го́род)
+5. 5. Э́то цвет ___. (мо́ре)
+6. 6. Э́то му́зыка ___. (компози́тор)
+7. 7. Э́то кры́ша ___. (дом)
+8. 8. Э́то дверь ___. (ко́мната)
+9. 9. Э́то слова́рь ___. (студе́нт)
+10. 10. Э́то маши́на ___. (врач)
 
-Exercício 5 — Traduza para o russo
+EXERCÍCIO 5 — TRADUZA PARA O RUSSO
 
-1. Não tenho tempo. → ____
-2. Não tenho dinheiro. → ____
-3. Não tenho amigo. → ____
-4. Não tenho carro. → ____
-5. Este é o livro de Ivan. → ____
-6. Esta é a casa da mamãe. → ____
-7. Este é o centro da cidade. → ____
-8. Esta é a cor do mar. → ____
-9. Não há pão. → ____
-10. Não há água. → ____
+1. 1. Não tenho tempo. → ____
+2. 2. Não tenho dinheiro. → ____
+3. 3. Não tenho amigo. → ____
+4. 4. Não tenho carro. → ____
+5. 5. Este é o livro de Ivan. → ____
+6. 6. Esta é a casa da mamãe. → ____
+7. 7. Este é o centro da cidade. → ____
+8. 8. Esta é a cor do mar. → ____
+9. 9. Não há pão. → ____
+10. 10. Não há água. → ____
 
-Exercício 6 — Encontre e corrija o erro
+EXERCÍCIO 6 — ENCONTRE E CORRIJA O ERRO
 
 Cada frase tem um erro de genitivo. Identifique e corrija.
 
-1. У меня́ нет кни́га. → ____
-2. У меня́ нет вре́мя. → ____
-3. У меня́ нет дру́г. → ____
-4. Э́то Ива́н кни́га. → ____
-5. У меня́ нет семья́. → ____
-6. У меня́ нет дверь. → ____
-7. Э́то центр го́род. → ____
-8. У меня́ нет маши́на. → ____
+1. 1. У меня́ нет кни́га. → ____
+2. 2. У меня́ нет вре́мя. → ____
+3. 3. У меня́ нет дру́г. → ____
+4. 4. Э́то Ива́н кни́га. → ____
+5. 5. У меня́ нет семья́. → ____
+6. 6. У меня́ нет дверь. → ____
+7. 7. Э́то центр го́род. → ____
+8. 8. У меня́ нет маши́на. → ____
 
-Exercício 7 — Preencha com o caso correto (nominativo ou genitivo)
+EXERCÍCIO 7 — PREENCHA COM O CASO CORRETO (NOMINATIVO OU GENITIVO)
 
 Complete com a forma correta do substantivo entre parênteses.
 
-1. У меня́ есть ___. (кни́га — nominativo)
-2. У меня́ нет ___. (кни́га — genitivo)
-3. Э́то дом ___. (ма́ма — genitivo)
-4. У тебя́ есть ___? (соба́ка — nominativo)
-5. У меня́ нет ___. (соба́ка — genitivo)
-6. Э́то слова́рь ___. (студе́нт — genitivo)
-7. У меня́ есть ___. (вре́мя — nominativo)
-8. У меня́ нет ___. (вре́мя — genitivo)
+1. 1. У меня́ есть ___. (кни́га — nominativo)
+2. 2. У меня́ нет ___. (кни́га — genitivo)
+3. 3. Э́то дом ___. (ма́ма — genitivo)
+4. 4. У тебя́ есть ___? (соба́ка — nominativo)
+5. 5. У меня́ нет ___. (соба́ка — genitivo)
+6. 6. Э́то слова́рь ___. (студе́нт — genitivo)
+7. 7. У меня́ есть ___. (вре́мя — nominativo)
+8. 8. У меня́ нет ___. (вре́мя — genitivo)
 
-Exercício 8 — Desafio
+EXERCÍCIO 8 — DESAFIO
 
 Escreva 8 frases usando o genitivo (para "não tenho" ou para posse).
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
+1. 2.
+
+3. 4.
+
+5. 6.
+
+7. 8.
 
 
 ## 10.15 GABARITO
 
-Exercício 1:
+EXERCÍCIO 1:
 
-1. дру́га — 2. кни́ги — 3. окна́ — 4. семьи́ — 5. словаря́ — 6. но́чи — 7. музе́я — 8. вре́мени — 9. маши́ны — 10. мо́ря — 11. Росси́и — 12. врача́ — 13. две́ри — 14. студе́нта — 15. письма́
+1. 1. дру́га — 2. кни́ги — 3. окна́ — 4. семьи́ — 5. словаря́ — 6. но́чи — 7. музе́я — 8. вре́мени — 9. маши́ны — 10. мо́ря — 11. Росси́и — 12. врача́ — 13. две́ри — 14. студе́нта — 15. письма́
 
-Exercício 2:
+EXERCÍCIO 2:
 
-1. кни́ги — 2. вре́мени — 3. дру́га — 4. маши́ны — 5. бра́та — 6. соба́ки — 7. до́ма — 8. рабо́ты — 9. словаря́ — 10. де́нег
+1. 1. кни́ги — 2. вре́мени — 3. дру́га — 4. маши́ны — 5. бра́та — 6. соба́ки — 7. до́ма — 8. рабо́ты — 9. словаря́ — 10. де́нег
 
-Exercício 3:
+EXERCÍCIO 3:
 
-1. есть — 2. нет — 3. есть — 4. нет — 5. есть — 6. нет — 7. есть — 8. нет
+1. 1. есть — 2. нет — 3. есть — 4. нет — 5. есть — 6. нет — 7. есть — 8. нет
 
-Exercício 4:
+EXERCÍCIO 4:
 
-1. Ива́на — 2. ма́мы — 3. ма́льчика — 4. го́рода — 5. мо́ря — 6. компози́тора — 7. до́ма — 8. ко́мнаты — 9. студе́нта — 10. врача́
+1. 1. Ива́на — 2. ма́мы — 3. ма́льчика — 4. го́рода — 5. мо́ря — 6. компози́тора — 7. до́ма — 8. ко́мнаты — 9. студе́нта — 10. врача́
 
-Exercício 5:
+EXERCÍCIO 5:
 
-1. У меня́ нет вре́мени. — 2. У меня́ нет де́нег. — 3. У меня́ нет дру́га. — 4. У меня́ нет маши́ны. — 5. Э́то кни́га Ива́на. — 6. Э́то дом ма́мы. — 7. Э́то центр го́рода. — 8. Э́то цвет мо́ря. — 9. Нет хле́ба. — 10. Нет воды́.
+1. 1. У меня́ нет вре́мени. — 2. У меня́ нет де́нег. — 3. У меня́ нет дру́га. — 4. У меня́ нет маши́ны. — 5. Э́то кни́га Ива́на. — 6. Э́то дом ма́мы. — 7. Э́то центр го́рода. — 8. Э́то цвет мо́ря. — 9. Нет хле́ба. — 10. Нет воды́.
 
-Exercício 6:
+EXERCÍCIO 6:
 
-1. У меня́ нет кни́ги. (genitivo)
-2. У меня́ нет вре́мени. (-мя → -мени)
-3. У меня́ нет дру́га. (genitivo)
-4. Э́то кни́га Ива́на. (o possuidor vai no genitivo)
-5. У меня́ нет семьи́. (genitivo)
-6. У меня́ нет две́ри. (feminino em -ь → -и)
-7. Э́то центр го́рода. (genitivo)
-8. У меня́ нет маши́ны. (genitivo)
+1. 1. У меня́ нет кни́ги. (genitivo)
+2. 2. У меня́ нет вре́мени. (-мя → -мени)
+3. 3. У меня́ нет дру́га. (genitivo)
+4. 4. Э́то кни́га Ива́на. (o possuidor vai no genitivo)
+5. 5. У меня́ нет семьи́. (genitivo)
+6. 6. У меня́ нет две́ри. (feminino em -ь → -и)
+7. 7. Э́то центр го́рода. (genitivo)
+8. 8. У меня́ нет маши́ны. (genitivo)
 
-Exercício 7:
+EXERCÍCIO 7:
 
-1. кни́га (nominativo) — 2. кни́ги (genitivo) — 3. ма́мы (genitivo) — 4. соба́ка (nominativo) — 5. соба́ки (genitivo) — 6. студе́нта (genitivo) — 7. вре́мя (nominativo) — 8. вре́мени (genitivo)
+1. 1. кни́га (nominativo) — 2. кни́ги (genitivo) — 3. ма́мы (genitivo) — 4. соба́ка (nominativo) — 5. соба́ки (genitivo) — 6. студе́нта (genitivo) — 7. вре́мя (nominativo) — 8. вре́мени (genitivo)
 
-Exercício 8:
-Resposta pessoal. Verifique se aplicou o genitivo corretamente.
+Exercício 8: Resposta pessoal. Verifique se aplicou o genitivo corretamente.
 
 
 ## 10.16 RESUMO DE BOLSO — AULA 10
 
-1. O genitivo vem de "gênesis" — origem, nascimento. É o caso da posse, de quem pertence, de quem gera.
-2. O genitivo corresponde ao "de" em português: o livro de Ivan, a casa de mamãe.
-3. Terminações do genitivo singular: Masculino em consoante: -А (друг → дру́га)
-4. Primeira aplicação: a NEGAÇÃO. Есть (tenho) + nominativo: У меня́ есть кни́га.
-5. Segunda aplicação: a POSSE. Objeto possuído — nominativo + possuidor — genitivo: Кни́га Ива́на.
-6. Нет sempre pede genitivo. Sempre. Sem exceção.
-7. Erros do brasileiro: usar nominativo depois de нет; esquecer -и depois de г, к, х, ж, ч, ш, щ; esquecer -мя → -мени; confundir genitivo com acusativo animado; colocar o objeto possuído no genitivo.
+1. 1. O genitivo vem de "gênesis" — origem, nascimento. É o caso da posse, de quem pertence, de quem gera.
+2. 2. O genitivo corresponde ao "de" em português: o livro de Ivan, a casa de mamãe.
+3. 3. Terminações do genitivo singular:
+
+Masculino em consoante: -А (друг → дру́га)
+
+Masculino em -й/-ь: -Я (учи́тель → учи́теля)
+
+Feminino em -а: -Ы (кни́га → кни́ги; depois de г, к, х, ж, ч, ш, щ → -И)
+
+Feminino em -я/-ь: -И (семья́ → семьи́, ночь → но́чи)
+
+Feminino em -ия: -ИИ (Росси́я → Росси́и)
+
+Neutro em -о: -А (окно́ → окна́)
+
+Neutro em -е: -Я (мо́ре → мо́ря)
+
+Neutro em -мя: -ЕНИ (вре́мя → вре́мени)
+
+4. 4. Primeira aplicação: a NEGAÇÃO.
+
+Есть (tenho) + nominativo: У меня́ есть кни́га.
+
+Нет (não tenho) + genitivo: У меня́ нет кни́ги.
+
+5. 5. Segunda aplicação: a POSSE.
+
+Objeto possuído — nominativo + possuidor — genitivo: Кни́га Ива́на.
+
+6. 6. Нет sempre pede genitivo. Sempre. Sem exceção.
+7. 7. Erros do brasileiro: usar nominativo depois de нет; esquecer -и depois de г, к, х, ж, ч, ш, щ; esquecer -мя → -мени; confundir genitivo com acusativo animado; colocar o objeto possuído no genitivo.
 
 
 ## 10.17 A tranquilização: você está terminando a parte difícil
@@ -676,12 +712,17 @@ Antes de fechar esta aula, uma pausa. Preste atenção no que eu vou te dizer.
 
 Você está terminando a parte chata do russo. A gramática essencial acaba aqui. Você já aprendeu:
 
-- O alfabeto.
-- O gênero dos substantivos.
-- O gênero dos adjetivos.
-- Os verbos no presente, no passado e no futuro.
-- Os casos nominativo, acusativo, prepositivo, dativo e instrumental.
-- E agora a primeira metade do genitivo.
+O alfabeto.
+
+O gênero dos substantivos.
+
+O gênero dos adjetivos.
+
+Os verbos no presente, no passado e no futuro.
+
+Os casos nominativo, acusativo, prepositivo, dativo e instrumental.
+
+E agora a primeira metade do genitivo.
 
 Falta só uma coisa: a segunda metade do genitivo (plural, números, preposições). E é isso que vamos fazer na Aula 11.
 
@@ -690,3 +731,11 @@ Depois disso, você já terá os 6 casos do russo. E o que vem depois não é ma
 O erro do estudante de russo é achar que o avançado é difícil. Difícil no russo é a estrutura básica. Porque é abstrata, cheia de regras, cheia de exceções. Depois que você domina a estrutura, todo o resto flui. Você já tem a estrutura. Você já vai ver.
 
 Falta uma aula. Uma aula em duas partes. E depois, o russo será seu.
+
+| GÊNERO | TERMINAÇÃO NO GENITIVO SINGULAR | EXEMPLO |
+|---|---|---|
+| .TUEN/.CSAM | cons., о → а · й, ь, е → я | Adjetivo: -ого / -его | нет моего́ но́вого па́спорта · словаря́ |
+| ONINIMEF | а → ы (г,к,х,ж,ч,ш,щ → и) · я, ь → и | Adjetivo: -ой / -ей | нет мое́й но́вой маши́ны · кни́ги |
+
+
+## Quadro-resumo · caso genitivo singular

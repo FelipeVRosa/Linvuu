@@ -1,7 +1,7 @@
 """Gera as sessões das aulas de russo a partir do livro (content/livros-privado/ru). Mesma regra: aula dona = 4 sessões; reforço = exercícios na sessão 4.
 Uso: python3 -I scripts/livros/gerar_aulas_ru.py --aulas 11,12 [--seco]"""
 import json, re, argparse
-ap = argparse.ArgumentParser(); ap.add_argument('--aulas', required=True); ap.add_argument('--seco', action='store_true'); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--aulas', required=True); ap.add_argument('--seco', action='store_true'); ap.add_argument('--base', default='ce852157^', help='commit com as sessões originais do site (antes da geração)'); a = ap.parse_args()
 PRIV = 'content/livros-privado/ru'; ali = json.load(open(f'{PRIV}/alinhamento.json'))
 aula_cap = {r['aula']: r['capitulos'][0] for r in ali['aulas']}
 cap_aulas = {}
@@ -56,42 +56,57 @@ def agrupa(corpo, alvo=2600):
         cur.append(s); w += sw
     if cur: gr.append(cur)
     return [bloco_grupo(g) for g in gr if any(paras(x['b']) or tabelas(x['b']) for x in g)]
+def split_num(txt):
+    """quebra 'N. a — N+1. b' em [a, b] seguindo a numeração sequencial."""
+    pos, k, ini = [], 1, 0
+    while True:
+        m = re.search(rf'(?<![\d\w]){k}\.\s', txt[ini:])
+        if not m: break
+        pos.append((ini + m.start(), ini + m.end())); ini += m.end(); k += 1
+    if not pos: return [re.sub(r'^\d+\.\s*', '', txt.strip())]
+    out = []
+    for i, (a_, b_) in enumerate(pos):
+        seg = txt[b_:(pos[i + 1][0] if i + 1 < len(pos) else len(txt))]
+        out.append(seg.strip().rstrip('—·').strip())
+    return out
+def plano(bs):
+    """textos soltos de um grupo de blocos (item, p, li)."""
+    return [b['texto'] for b in bs if b['t'] in ('item', 'p', 'li')]
 def exercicios(S, pref):
-    ex = next((s for s in S if s['titulo'].upper().startswith('EXERC')), None); gb = next((s for s in S if s['titulo'].upper().startswith('GABARITO')), None)
+    ex = next((s for s in S if re.match(r'^EXERC', s['titulo'], re.I)), None); gb = next((s for s in S if re.match(r'^GABARITO', s['titulo'], re.I)), None)
     if not ex: return [], 0, 0
     gabs, cur = {}, None
     for b in (gb['b'] if gb else []):
-        m = re.match(r'^Exercício\s+(\d+)', b.get('texto', '')) if b['t'] == 'p' else None
-        if m: cur = int(m.group(1)); gabs[cur] = []
-        elif cur is not None: gabs[cur].append(b)
+        m = re.match(r'^EXERC[ÍI]CIO\s+(\d+)\s*:?\s*(.*)$', b.get('texto', ''), re.I) if b['t'] == 'p' else None
+        if m:
+            cur = int(m.group(1)); gabs[cur] = [m.group(2)] if m.group(2) else []
+        elif cur is not None and b['t'] in ('item', 'p', 'li'): gabs[cur].append(b['texto'])
     grupos, cur = [], None
     for b in ex['b']:
-        m = re.match(r'^Exercício\s+(\d+)\s*[—-]\s*(.*)', b.get('texto', '')) if b['t'] == 'p' else None
-        if m: cur = {'n': int(m.group(1)), 'tit': m.group(2), 'inst': '', 'itens': [], 'resto': []}; grupos.append(cur)
+        m = re.match(r'^EXERC[ÍI]CIO\s+(\d+)\s*[—-]\s*(.*)', b.get('texto', ''), re.I) if b['t'] == 'p' else None
+        if m: cur = {'n': int(m.group(1)), 'tit': m.group(2).strip().capitalize(), 'inst': '', 'itens': []}; grupos.append(cur)
         elif cur is not None:
-            if b['t'] == 'item': cur['itens'].append(b['texto'])
+            if b['t'] == 'item': cur.setdefault('raw', []).append(b['texto'])
+            elif b['t'] == 'p' and cur.get('raw') and not re.match(r'^EXERC', b['texto'], re.I): cur['raw'].append(b['texto'])
             elif b['t'] == 'p' and not cur['inst'] and not cur['itens']: cur['inst'] = b['texto']
-            else: cur['resto'].append(b)
+    for g in grupos: g['itens'] = [x for x in split_num(' '.join(g.get('raw', []))) if x] if g.get('raw') else []
     out, auto, livre = [], 0, 0
     for g in grupos:
-        gtxt = ' '.join(x.get('texto', '') for x in gabs.get(g['n'], []))
-        if g['itens']:
-            if len(gabs.get(g['n'], [])) == 1 and gabs[g['n']][0]['t'] == 'item':
-                res = re.split(r'\s—\s\d+\.\s', gabs[g['n']][0]['texto'])
-            else: res = [x['texto'] for x in gabs.get(g['n'], []) if x['t'] == 'item']
-            for i, t in enumerate(g['itens']):
-                r = res[i].strip() if len(res) == len(g['itens']) else ''
-                resp = re.sub(r'\s*\(.*$', '', r).strip(' .')
-                ident = f'{pref}-{g["n"]}{i+1:02d}'
-                if '____' in t and resp and len(resp) < 40:
-                    enun = re.sub(r'_{3,}', '___', t); pre = enun.split('___')[0].split('→')[-1].strip()
-                    if pre and resp.lower().startswith(pre.lower()): resp = resp[len(pre):].strip()
-                    inst = g['inst'] if len(g['inst']) <= 70 else g['tit']
-                    out.append({'tipo': 'fill-gap', 'enunciado': f'{inst} {enun}'.strip(), 'respostaEsperada': resp.replace('\u0301', ''), 'explicacao': r or 'Veja o gabarito no livro.', 'id': ident, '_g': g['n']}); auto += 1
-                else:
-                    out.append({'tipo': 'producao', 'enunciado': f'{g["tit"]}: {g["inst"]} {t}'.strip(), 'respostaEsperada': r, 'id': ident, '_g': g['n']}); livre += 1
-        else:
-            out.append({'tipo': 'producao', 'enunciado': f'{g["tit"]}: {g["inst"]}'.strip(), 'respostaEsperada': gtxt[:300], 'id': f'{pref}-{g["n"]}00'}); livre += 1
+        txt = ' '.join(gabs.get(g['n'], []))
+        res = split_num(txt) if txt else []
+        for i, t in enumerate(g['itens']):
+            r = res[i] if len(res) == len(g['itens']) else ''
+            resp = re.sub(r'\s*\(.*$', '', r).strip(' .')
+            ident = f'{pref}-{g["n"]}{i+1:02d}'
+            if len(re.findall(r'_{3,}', t)) == 1 and resp and len(resp) < 40:
+                enun = re.sub(r'_{3,}', '___', t); pre = enun.split('___')[0].split('→')[-1].strip()
+                if pre and resp.lower().startswith(pre.lower()): resp = resp[len(pre):].strip()
+                inst = g['inst'] if len(g['inst']) <= 70 else g['tit']
+                out.append({'tipo': 'fill-gap', 'enunciado': f'{inst} {enun}'.strip(), 'respostaEsperada': resp.replace('\u0301', ''), 'explicacao': r or 'Veja o gabarito no livro.', 'id': ident, '_g': g['n']}); auto += 1
+            else:
+                out.append({'tipo': 'producao', 'enunciado': f'{g["tit"]}: {g["inst"]} {t}'.strip(), 'respostaEsperada': r, 'id': ident, '_g': g['n']}); livre += 1
+        if not g['itens']:
+            out.append({'tipo': 'producao', 'enunciado': f'{g["tit"]}: {g["inst"]}'.strip(), 'respostaEsperada': txt[:300], 'id': f'{pref}-{g["n"]}00', '_g': g['n']}); livre += 1
     return out, auto, livre
 def escolhe(ex, cap):
     auto = [e for e in ex if e['tipo'] == 'fill-gap']; livre = [e for e in ex if e['tipo'] != 'fill-gap'][:4]
@@ -113,13 +128,19 @@ def aplica(aula):
     cn = aula_cap[aula]; dono = cap_aulas[cn][0] == aula
     c = json.load(open(f'{PRIV}/cap-{cn:02d}.json')); intro, S = secoes(c)
     pref = f'ru-{aula:03d}-L'; dias = [4 * (aula - 1) + 1 + i for i in range(4)]
-    D = [json.load(open(f'content/idiomas/ru/dia-{n:03d}.json')) for n in dias]
-    ex, au, li = exercicios(S, pref); ex = escolhe(ex, 24 if dono else 12)
+    import subprocess
+    D = [json.loads(subprocess.check_output(['git', 'show', f'{a.base}:content/idiomas/ru/dia-{n:03d}.json'])) for n in dias]
+    ex, au, li = exercicios(S, pref)
+    if dono: ex = escolhe(ex, 24)
+    else:
+        usados = {e['id'] for e in escolhe(exercicios(S, pref)[0], 24)}
+        resto = [e for e in ex if e['id'] not in usados]
+        ex = escolhe(resto if len(resto) >= 6 else ex, 12)
     rel_n = len(ex)
     exb = {'tipo': 'exercicios', 'min': 12, 'itens': ex} if ex else None
     novos = [[], [], [], []]
     if dono:
-        corpo = [s for s in S if not re.match(r'^(EXERC|GABARITO|RESUMO|O que vem|Como estudar)', s['titulo'], re.I)]
+        corpo = [s for s in S if not re.match(r'^(EXERC|GABARITO|RESUMO|O que vem|Como estudar|Fale de verdade|Fonte e cr)', s['titulo'], re.I)]
         blocos = agrupa(corpo)
         if intro and any(b['t'] == 'p' for b in intro): blocos.insert(0, {'tipo': 'intro', 'min': 1, 'texto': ' '.join(paras(intro))})
         peso = [len(b.get('explicacao', '')) + 400 * len(b.get('tabelas', [])) for b in blocos]; tot = sum(peso) or 1; acc = 0

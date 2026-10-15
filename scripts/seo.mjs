@@ -25,6 +25,15 @@ for (const c of cursos.filter((x) => x.area === 'idiomas' && x.status !== 'em-br
     if (emDia.length) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: emDia });
   }
 }
+// Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
+grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+const dirLivros = path.join(raiz, 'content', 'livros');
+if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
+  const caps = fs.readdirSync(path.join(dirLivros, id)).map((f) => f.match(/^cap-(\d+)\.json$/)?.[1]).filter(Boolean).map(Number).sort((a, b) => a - b);
+  if (!caps.length) continue;
+  grupos.push({ p: `/livros/${id}`, em: ['pt-BR'] });
+  for (const n of caps) grupos.push({ p: `/livros/${id}/capitulo/${n}`, em: ['pt-BR'] });
+}
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 const linhas = [];
 for (const g of grupos) for (const c of g.em) {

@@ -70,7 +70,10 @@ const sintetizar = async (texto, g, arquivo) => {
 async function main() {
   const csv = path.join(raiz, 'content', 'audio', `${idioma}-gravar.csv`);
   if (!fs.existsSync(csv)) { console.error(`não achei ${path.relative(raiz, csv)}; rode npm run aulas`); process.exit(1); }
-  const linhas = lerCsv(fs.readFileSync(csv, 'utf8'));
+  let linhas = lerCsv(fs.readFileSync(csv, 'utf8'));
+  // textos dos livros (scripts/livros/audio-livros.mjs): mesma pasta de MP3, sem repetir o que já está na lista
+  const csvLivro = path.join(raiz, 'content', 'audio', `${idioma}-livro-gravar.csv`);
+  if (fs.existsSync(csvLivro)) { const ja = new Set(linhas.map((l) => l.arquivo)); linhas = linhas.concat(lerCsv(fs.readFileSync(csvLivro, 'utf8')).filter((l) => !ja.has(l.arquivo))); }
   fs.mkdirSync(dir, { recursive: true });
   const existe = (l) => fs.existsSync(path.join(dir, l.arquivo));
   let pendentes = linhas.filter((l) => refazer.has(l.arquivo.replace('.mp3', '')) || !existe(l));

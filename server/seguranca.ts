@@ -45,12 +45,33 @@ export function cabecalhos(producao: boolean) {
 
 type Janela = { n: number; ate: number };
 /** Limite por IP e por grupo de rotas (memória do processo; o Render roda uma instância). */
+// Faixas oficiais da Cloudflare (https://www.cloudflare.com/ips/). O cabeçalho CF-Connecting-IP só vale quando a conexão vem delas;
+// de outro jeito qualquer pessoa poderia forjá-lo para fugir do limite de requisições.
+const CF_V4 = ['173.245.48.0/20', '103.21.244.0/22', '103.22.200.0/22', '103.31.4.0/22', '141.101.64.0/18', '108.162.192.0/18', '190.93.240.0/20', '188.114.96.0/20', '197.234.240.0/22', '198.41.128.0/17', '162.158.0.0/15', '104.16.0.0/13', '104.24.0.0/14', '172.64.0.0/13', '131.0.72.0/22'];
+const CF_V6 = ['2400:cb00:', '2606:4700:', '2803:f800:', '2405:b500:', '2405:8100:', '2c0f:f248:', '2a06:98c0:', '2a06:98c1:', '2a06:98c2:', '2a06:98c3:', '2a06:98c4:', '2a06:98c5:', '2a06:98c6:', '2a06:98c7:'];
+const v4 = (ip: string) => ip.split('.').reduce((a, b) => (a * 256 + Number(b)) >>> 0, 0);
+export function ehCloudflare(ip: string): boolean {
+  const i = ip.replace(/^::ffff:/i, '').toLowerCase();
+  if (/^\d+\.\d+\.\d+\.\d+$/.test(i)) {
+    const n = v4(i);
+    return CF_V4.some((c) => { const [base, bits] = c.split('/'); const m = bits === '0' ? 0 : (~0 << (32 - Number(bits))) >>> 0; return ((n & m) >>> 0) === ((v4(base) & m) >>> 0); });
+  }
+  return CF_V6.some((p) => i.startsWith(p));
+}
+/** IP do visitante: com a Cloudflare na frente, req.ip é o da borda dela; o do visitante vem em CF-Connecting-IP. */
+export function ipDoVisitante(req: Request): string {
+  const cf = req.headers['cf-connecting-ip'];
+  const dele = typeof cf === 'string' ? cf.trim() : '';
+  const hop = req.ip ?? '';
+  return dele && /^[0-9a-f.:]+$/i.test(dele) && ehCloudflare(hop) ? dele : hop;
+}
+
 export function limitar(grupo: string, max: number, janelaMs: number) {
   const mapa = new Map<string, Janela>();
   setInterval(() => { const t = Date.now(); for (const [k, v] of mapa) if (v.ate < t) mapa.delete(k); }, 60_000).unref();
   return (req: Request, res: Response, next: NextFunction) => {
     const t = Date.now();
-    const chave = `${grupo}:${req.ip}`;
+    const chave = `${grupo}:${ipDoVisitante(req)}`;
     let j = mapa.get(chave);
     if (!j || j.ate < t) { j = { n: 0, ate: t + janelaMs }; mapa.set(chave, j); }
     j.n++;

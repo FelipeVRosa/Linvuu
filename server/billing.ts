@@ -66,16 +66,29 @@ type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | null; status:
 // de áudio (dezenas por sessão), o que estoura o limite da API e deixa o site lento. A resposta vale 60 segundos por pessoa.
 const ACESSO_MS = 60_000;
 const acessos = new Map<string, { ate: number; p: Promise<Acesso> }>();
-setInterval(() => { const t = Date.now(); for (const [k, v] of acessos) if (v.ate < t) acessos.delete(k); }, 5 * 60_000).unref();
+const renovou = new Map<string, number>();
+setInterval(() => { const t = Date.now(); for (const [k, v] of acessos) if (v.ate < t) acessos.delete(k); for (const [k, v] of renovou) if (t - v > 60_000) renovou.delete(k); }, 5 * 60_000).unref();
 /** Acesso com memória curta; `renovar` ignora a memória (tela de assinatura e volta do pagamento). */
 function acesso(u: { uid: string; email?: string }, renovar = false): Promise<Acesso> {
   const t = Date.now();
   const m = acessos.get(u.uid);
-  if (m && m.ate > t && !renovar) return m.p;
+  // «renovar» ignora a memória, mas no máximo uma vez a cada 10 s por pessoa (cada renovação custa 2 chamadas ao Stripe).
+  const pode = renovar && t - (renovou.get(u.uid) ?? 0) > 10_000;
+  if (m && m.ate > t && !pode) return m.p;
+  if (pode) renovou.set(u.uid, t);
   const p = consultarAcesso(u);
   acessos.set(u.uid, { ate: t + ACESSO_MS, p });
   p.catch(() => acessos.delete(u.uid));
   return p;
+}
+
+/** Pacote reembolsado (total ou parcial) ou em disputa não dá mais acesso: o status «pago» da sessão não muda depois do reembolso. */
+function cobrancaDevolvida(x: Stripe.Checkout.Session): boolean {
+  const pi = x.payment_intent;
+  if (!pi || typeof pi === 'string') return false;
+  const ch = pi.latest_charge;
+  if (!ch || typeof ch === 'string') return false;
+  return ch.refunded || ch.amount_refunded > 0 || ch.disputed;
 }
 
 /** Acesso = assinatura mensal ativa OU pacote de 3 meses pago (Pix e boleto só contam depois de pagos). Stripe é a fonte da verdade. */
@@ -83,11 +96,11 @@ async function consultarAcesso(u: { uid: string; email?: string }): Promise<Aces
   const c = await cliente(u);
   const [subs, sessoes] = await Promise.all([
     stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 }),
-    stripe!.checkout.sessions.list({ customer: c, status: 'complete', limit: 100 }),
+    stripe!.checkout.sessions.list({ customer: c, status: 'complete', limit: 100, expand: ['data.payment_intent.latest_charge'] }),
   ]);
   const s = subs.data.find((x) => x.status === 'active' || x.status === 'trialing');
   const agora = Math.floor(Date.now() / 1000);
-  const pacotes = sessoes.data.filter((x) => x.mode === 'payment' && PLANOS_PACOTE.includes(String(x.metadata?.plano)) && x.payment_status === 'paid').map((x) => somaMeses(x.created, x.metadata?.plano === 'anual' ? 12 : 3));
+  const pacotes = sessoes.data.filter((x) => x.mode === 'payment' && PLANOS_PACOTE.includes(String(x.metadata?.plano)) && x.payment_status === 'paid' && !cobrancaDevolvida(x)).map((x) => somaMeses(x.created, x.metadata?.plano === 'anual' ? 12 : 3));
   const ate = pacotes.length ? Math.max(...pacotes) : null;
   if (s) return { ativa: true, via: 'assinatura', status: s.status, cancelaEm: s.cancel_at_period_end ? s.items.data[0]?.current_period_end ?? null : null, ate: null };
   if (ate && ate > agora) return { ativa: true, via: 'trimestral', status: 'paid', cancelaEm: null, ate };
@@ -120,7 +133,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
         if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
       } catch (e) { console.error('aula', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
     }
-    res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8'));
+    try { res.set('Cache-Control', 'private, no-store').type('json').send(fs.readFileSync(arq, 'utf8')); } catch (e) { console.error('aula/leitura', e); res.status(500).json({ error: 'Não foi possível abrir a aula.' }); }
   });
 
   // Gramática por tópico: os tópicos das 2 primeiras aulas (sessões 1 a 8) são abertos; os demais só saem para quem tem assinatura ativa.
@@ -131,7 +144,8 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     const traduzida = /^(en|es)$/.test(l) ? path.join(process.cwd(), 'content', 'gramatica', `${idioma}.${l}.json`) : '';
     const arq = traduzida && fs.existsSync(traduzida) ? traduzida : path.join(process.cwd(), 'content', 'gramatica', `${idioma}.json`);
     if (!fs.existsSync(arq)) { res.status(404).json({ error: 'Não encontrado.' }); return; }
-    const pacote = JSON.parse(fs.readFileSync(arq, 'utf8')) as { categorias: string[]; topicos: { dia: number; categoria: string }[] };
+    let pacote: { categorias: string[]; topicos: { dia: number; categoria: string }[] };
+    try { pacote = JSON.parse(fs.readFileSync(arq, 'utf8')); } catch (e) { console.error('gramatica/leitura', e); res.status(500).json({ error: 'Não foi possível abrir a gramática.' }); return; }
     let completo = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!completo) {
       const u = await usuario(req);
@@ -229,6 +243,6 @@ export function registrarLivroProtegido(app: Express) {
     if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('X-Robots-Tag', 'noindex, nofollow');
-    res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8'));
+    try { res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
   });
 }

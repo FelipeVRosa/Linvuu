@@ -578,3 +578,6 @@ a.livro:focus-visible{outline:2px solid var(--ocre);outline-offset:6px}
 .hero-link{display:inline-flex;align-items:center;min-height:44px;color:var(--papel-claro);font-weight:600;text-decoration:underline;text-underline-offset:4px}
 .hero-link:hover{color:#ff8a4c}
 .hero-link:focus-visible{outline:3px solid #ff8a4c;outline-offset:3px;border-radius:4px}
+
+/* Enquanto a página carrega, o espaço dela já está reservado: sem isso o rodapé aparecia no alto e despencava (CLS). */
+.carga{min-height:90vh}

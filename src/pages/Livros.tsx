@@ -193,7 +193,7 @@ export function LivroCapitulo() {
   useEffect(() => { parar(); setCap(undefined); if (m) { carregarCapitulo(m.id, num).then(setCap); carregarSumario(m.id).then((x) => setTotal(x.length)); } return () => parar(); }, [m, num]);
   if (!m || !CAPITULOS_GRATIS.includes(num as 1 | 2)) return <NaoEncontrada />;
   if (cap === null) return <NaoEncontrada />;
-  if (!cap) return <div className="pagina lvr"><p className="lvr-sub" role="status">Carregando o capítulo…</p></div>;
+  if (!cap) return <div className="pagina lvr carga"><p className="lvr-sub" role="status">Carregando o capítulo…</p></div>;
   const secoes = sumarioDe(cap);
   const prox = CAPITULOS_GRATIS.find((x) => x === num + 1);
   return (

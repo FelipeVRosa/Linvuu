@@ -46,7 +46,7 @@ export default function App() {
       <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />
       <Header />
       <main id="conteudo" tabIndex={-1}>
-        <Suspense fallback={<p className="resultado pagina" role="status">{t.geral.carregando}</p>}>
+        <Suspense fallback={<p className="resultado pagina carga" role="status">{t.geral.carregando}</p>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />

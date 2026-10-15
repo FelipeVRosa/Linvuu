@@ -20,8 +20,117 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você se apresenta no trabalho, em viagens ou na imigração usando o verbo to be (am, is, are) com as contrações faladas (I'm, you're, he's, isn't, aren't), aplica a regra dos artigos (a, an, the e quando não usar artigo), nunca deixa a frase sem sujeito (It's cold) e fala de idade e sensações físicas sem usar o verbo “ter”."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "Check-in no coworking em Toronto",
+        "contexto": "Lucas acabou de chegar a um espaço de coworking em Toronto para uma semana de reuniões internacionais e faz o cadastro na recepção.",
+        "linhas": [
+          {
+            "personagem": "Receptionist",
+            "ru": "— Good morning! Welcome to HubWork. Are you here for the global tech event?",
+            "pt": "— Bom dia! Bem-vindo ao HubWork. Você está aqui para o evento global de tecnologia?",
+            "audio": "Good morning! Welcome to HubWork. Are you here for the global tech event?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Morning! Yes, I am. Actually, I'm here for the whole week.",
+            "pt": "— Bom dia! Estou, sim. Na verdade, estou aqui pela semana inteira.",
+            "audio": "Morning! Yes, I am. Actually, I'm here for the whole week."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Great! What's your full name, please?",
+            "pt": "— Ótimo! Qual é o seu nome completo, por favor?",
+            "audio": "Great! What's your full name, please?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— It's Lucas Mendes.",
+            "pt": "— É Lucas Mendes.",
+            "audio": "It's Lucas Mendes."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Got it. And where are you from, Lucas?",
+            "pt": "— Entendi. E de onde você é, Lucas?",
+            "audio": "Got it. And where are you from, Lucas?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— I'm originally from Brazil, from São Paulo, but I'm in Toronto on business right now.",
+            "pt": "— Sou originalmente do Brasil, de São Paulo, mas estou em Toronto a negócios agora.",
+            "audio": "I'm originally from Brazil, from São Paulo, but I'm in Toronto on business right now."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Nice! Is this your first time in Canada?",
+            "pt": "— Legal! É a sua primeira vez no Canadá?",
+            "audio": "Nice! Is this your first time in Canada?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Yes, it is. The city is amazing, but it's a bit cold for me today, to be honest!",
+            "pt": "— Sim, é. A cidade é incrível, mas está um pouco frio para mim hoje, para ser sincero!",
+            "audio": "Yes, it is. The city is amazing, but it's a bit cold for me today, to be honest!"
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Haha, it's only ten degrees outside! What do you do, by the way? Are you a software engineer?",
+            "pt": "— Haha, está só dez graus lá fora! O que você faz, aliás? Você é engenheiro de software?",
+            "audio": "Haha, it's only ten degrees outside! What do you do, by the way? Are you a software engineer?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— No, I'm not an engineer. I'm a product manager at an international fintech.",
+            "pt": "— Não, não sou engenheiro. Sou gerente de produto em uma fintech internacional.",
+            "audio": "No, I'm not an engineer. I'm a product manager at an international fintech."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Awesome. Your visitor badge is ready. The Wi-Fi password is on the back, and coffee is free in the kitchen!",
+            "pt": "— Perfeito. Seu crachá de visitante está pronto. A senha do Wi-Fi está atrás, e o café é gratuito na cozinha!",
+            "audio": "Awesome. Your visitor badge is ready. The Wi-Fi password is on the back, and coffee is free in the kitchen!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Repare na cena: um único verbo em inglês (am / is / are) resolve o nosso «ser» e o nosso «estar», a profissão no singular pede «a» ou «an» (a product manager, an engineer) e, para falar do clima, entra o sujeito obrigatório «it» (it's a bit cold). PASSO 2: Idade e sensações usam to be, nunca have. Em inglês, idade, fome (hungry), sede (thirsty), frio (cold), calor (hot), sono (sleepy), medo (afraid) e razão (You're right) são estados do corpo, expressos com am / is / are. PASSO 3: Profissão no singular exige a ou an. Em português dizemos “Sou médico, ela é arquiteta”. Em inglês, nunca deixe a profissão no singular sem artigo: I'm a doctor, She's an architect. PASSO 4: Nenhuma frase começa direto em is sem sujeito. Para clima, hora, distância ou situação, coloque sempre It's na frente (It's ten degrees, It's Lucas).",
+        "comparacao": "em português dizemos «tenho 30 anos», «estou com fome», «sou médico» e «está frio» sem sujeito. Traduzir ao pé da letra leva a quatro erros: usar «have» para idade e sensações, esquecer «a/an», começar a frase em «is» e deixar o «it» de fora.",
+        "tabela": [
+          {
+            "portugues": "Tenho 30 anos. / Estou com fome.",
+            "ingles": "I'm 30 (years old). / I'm hungry.",
+            "evite": "I have 30 years. / I have hunger."
+          },
+          {
+            "portugues": "Sou gerente de produto.",
+            "ingles": "I'm a product manager.",
+            "evite": "I'm product manager."
+          },
+          {
+            "portugues": "Está frio hoje. / É tarde.",
+            "ingles": "It's cold today. / It's late.",
+            "evite": "Is cold today. / Is late."
+          },
+          {
+            "portugues": "Eu amo o café. / Moro no Brasil.",
+            "ingles": "I love coffee. / I live in Brazil.",
+            "evite": "I love the coffee. / in the Brazil"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 4,
         "itens": [
           {
             "ru": "I",
@@ -76,7 +185,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 8,
         "titulo": "To be: ser e estar",
         "explicacao": "PASSO 1: «to be» é «ser» e também «estar». «I am a doctor» (sou médico) e «I am tired» (estou cansado) usam o mesmo verbo. PASSO 2: em inglês o sujeito é obrigatório. Em português você pode dizer «sou brasileiro»; em inglês é «I am Brazilian», nunca «am Brazilian». PASSO 3: o verbo muda com o sujeito: I am; you are; he, she, it is; we are; you are; they are. PASSO 4: «you» serve para uma pessoa ou várias, e para tratamento formal ou informal: não existe «tu», «você» e «o senhor» separados. PASSO 5: antes de uma profissão ou identidade no singular, use «a» (antes de som de consoante) ou «an» (antes de som de vogal): a doctor, a student, an engineer. PASSO 6: fale com a contração, como os nativos: I'm, you're, he's, she's, it's, we're, they're.",
         "comparacao": "em português o verbo já mostra quem é o sujeito, então o pronome some («sou», «somos»). Em inglês o verbo muda pouco, e por isso o sujeito precisa aparecer.",
@@ -155,12 +264,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga em voz alta, trocando o sujeito: «I am Brazilian. You are my friend. He is a doctor. She is tired. We are here. They are students.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 1,
         "enunciado": "Soletre o seu nome em inglês e diga as saudações da aula 1."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 4,
+        "min": 2,
         "itens": [
           {
             "ru": "student",
@@ -55,7 +55,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 5,
         "titulo": "Perguntas com to be e respostas curtas",
         "explicacao": "PASSO 1: para perguntar «sim ou não», inverta: o verbo vem ANTES do sujeito. «You are tired» → «Are you tired?»; «He is a doctor» → «Is he a doctor?». PASSO 2: responda com uma resposta curta: «Yes, I am.» / «No, I'm not.» / «Yes, he is.» / «No, they aren't.». Na resposta afirmativa NÃO se contrai: «Yes, I am», nunca «Yes, I'm». PASSO 3: perguntas com palavra interrogativa: palavra + verbo + sujeito. «What is your name?» (qual é o seu nome?), «Where are you from?» (de onde você é?), «How are you?» (como você está?), «Who is she?» (quem é ela?). PASSO 4: na fala, «What's» e «Where's» são comuns.",
         "comparacao": "em português basta mudar a entonação («você está cansado?»). Em inglês, a ordem das palavras muda: o verbo sobe para o começo.",
@@ -102,7 +102,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 8,
+        "min": 4,
         "titulo": "Nice to meet you / Prazer em conhecer",
         "contexto": "Emma e Jake se encontram numa sala de aula.",
         "linhas": [
@@ -151,13 +151,212 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 5,
+        "itens": [
+          {
+            "ru": "Hi! I'm Lucas, and I'm here on business.",
+            "translit": "",
+            "pt": "Olá! Sou o Lucas e estou aqui a trabalho.",
+            "en": "",
+            "audio": "Hi! I'm Lucas, and I'm here on business."
+          },
+          {
+            "ru": "Where are you from originally?",
+            "translit": "",
+            "pt": "De onde você é originalmente?",
+            "en": "",
+            "audio": "Where are you from originally?"
+          },
+          {
+            "ru": "What do you do? — I'm a product manager.",
+            "translit": "",
+            "pt": "O que você faz? — Sou gerente de produto.",
+            "en": "",
+            "audio": "What do you do? — I'm a product manager."
+          },
+          {
+            "ru": "How old is your daughter? — She's seven.",
+            "translit": "",
+            "pt": "Quantos anos tem sua filha? — Ela tem sete.",
+            "en": "",
+            "audio": "How old is your daughter? — She's seven."
+          },
+          {
+            "ru": "Are you hungry, or just thirsty?",
+            "translit": "",
+            "pt": "Você está com fome ou só com sede?",
+            "en": "",
+            "audio": "Are you hungry, or just thirsty?"
+          },
+          {
+            "ru": "Sorry, I'm in a hurry right now!",
+            "translit": "",
+            "pt": "Desculpe, estou com pressa agora mesmo!",
+            "en": "",
+            "audio": "Sorry, I'm in a hurry right now!"
+          },
+          {
+            "ru": "It's really cold outside today, isn't it?",
+            "translit": "",
+            "pt": "Está bem frio lá fora hoje, não está?",
+            "en": "",
+            "audio": "It's really cold outside today, isn't it?"
+          },
+          {
+            "ru": "You're right! The Wi-Fi is really fast here.",
+            "translit": "",
+            "pt": "Você tem razão! O Wi-Fi é muito rápido aqui.",
+            "en": "",
+            "audio": "You're right! The Wi-Fi is really fast here."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 12,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "She ___ from Canada.",
+            "opcoes": [
+              "is",
+              "are",
+              "am"
+            ],
+            "gabarito": "is",
+            "explicacao": "she pede «is».",
+            "id": "en-002-g01"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "She is ___ architect.",
+            "opcoes": [
+              "an",
+              "a"
+            ],
+            "gabarito": "an",
+            "explicacao": "architect começa com som de vogal.",
+            "id": "en-002-g02"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My brother is studying at ___ university.",
+            "opcoes": [
+              "a",
+              "an"
+            ],
+            "gabarito": "a",
+            "explicacao": "university começa com o som consonantal «iu».",
+            "id": "en-002-g03"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— ___ thirty years old? — No, I'm not. I'm twenty-eight!",
+            "opcoes": [
+              "Are you",
+              "Have you"
+            ],
+            "gabarito": "Are you",
+            "explicacao": "idade usa to be, nunca have.",
+            "id": "en-002-g04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Is the hotel near the subway? — Yes, ___!",
+            "opcoes": [
+              "it is",
+              "it's"
+            ],
+            "gabarito": "it is",
+            "explicacao": "a resposta curta afirmativa nunca contrai.",
+            "id": "en-002-g05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ very hot in Rio today.",
+            "opcoes": [
+              "It's",
+              "Is"
+            ],
+            "gabarito": "It's",
+            "explicacao": "clima exige o sujeito «It».",
+            "id": "en-002-g06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My meeting is in ___ hour.",
+            "opcoes": [
+              "an",
+              "a"
+            ],
+            "gabarito": "an",
+            "explicacao": "hour tem h mudo: som de vogal.",
+            "id": "en-002-g07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ your parents at home right now?",
+            "opcoes": [
+              "Are",
+              "Is"
+            ],
+            "gabarito": "Are",
+            "explicacao": "your parents = they, plural.",
+            "id": "en-002-g08"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hi! My name ___ Rafael, and I ___ from Brazil. (is / 'm)",
+            "respostaEsperada": "is 'm",
+            "explicacao": "Brasil, no singular, não leva «the».",
+            "id": "en-002-g09"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ you hungry? — No, I ___ not, thanks.",
+            "respostaEsperada": "Are am",
+            "explicacao": "sem contração na resposta com «am not».",
+            "id": "en-002-g10"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Where ___ the keys? They ___ on the table.",
+            "respostaEsperada": "are are",
+            "explicacao": "keys = they, plural.",
+            "id": "en-002-g11"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ cold in this room! (use a contração)",
+            "respostaEsperada": "It's",
+            "explicacao": "sujeito neutro «It».",
+            "id": "en-002-g12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Is Lucas in Toronto on vacation? — No, he ___.",
+            "respostaEsperada": "isn't",
+            "explicacao": "resposta curta negativa.",
+            "id": "en-002-g13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Are your coworkers ready for the call? — Yes, they ___.",
+            "respostaEsperada": "are",
+            "explicacao": "a resposta afirmativa não contrai.",
+            "id": "en-002-g14"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 4,
+        "min": 1,
         "enunciado": "Faça as perguntas em voz alta e responda por você: «What's your name? Where are you from? Are you a student? Are you tired?»"
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 1,
         "enunciado": "Transforme em negativa: «I am happy. She is here. They are students.»"
       }
     ]

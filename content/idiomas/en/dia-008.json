@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 19,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -205,18 +205,118 @@
             "enunciado": "Escreva 4 frases em inglês: quem você é, de onde é, como está agora e uma frase negativa.",
             "respostaEsperada": "I am Felipe. I am from Brazil. I am tired. I am not a doctor.",
             "id": "en-002-e16"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Apresente-se dizendo seu nome, de qual cidade e país você é e qual é a sua profissão (com a ou an).",
+            "respostaEsperada": "Hi, I'm Lucas. I'm from São Paulo, Brazil, and I'm a software engineer.",
+            "id": "en-002-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga a sua idade e a idade de um familiar seu (sem usar o verbo have).",
+            "respostaEsperada": "I'm 30 years old, and my sister is 27.",
+            "id": "en-002-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga que hoje está frio (ou quente) na sua cidade e que você está com fome e com pressa.",
+            "respostaEsperada": "It's hot in my city today, and I'm hungry and in a hurry.",
+            "id": "en-002-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Faça duas perguntas com o verbo to be para um colega novo no trabalho e escreva as respostas curtas (uma afirmativa e uma negativa).",
+            "respostaEsperada": "Are you from Rio? Yes, I am. Is the meeting at ten? No, it isn't.",
+            "id": "en-002-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I have 32 years, and I'm project manager in São Paulo.",
+            "respostaEsperada": "I'm 32, and I'm a project manager in São Paulo.",
+            "explicacao": "idade usa to be e profissão exige «a».",
+            "id": "en-002-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Is very cold outside today, so I have cold!",
+            "respostaEsperada": "It's very cold outside today, so I'm cold!",
+            "explicacao": "sujeito «It» e sensação com to be.",
+            "id": "en-002-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My sister is an university student in the Brazil.",
+            "respostaEsperada": "My sister is a university student in Brazil.",
+            "explicacao": "«a university» e sem «the» antes de Brazil.",
+            "id": "en-002-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: — Are they in a hurry? — Yes, they're!",
+            "respostaEsperada": "— Are they in a hurry? — Yes, they are!",
+            "explicacao": "resposta curta afirmativa não contrai.",
+            "id": "en-002-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The coffee is a great drink, and I'm at the home now.",
+            "respostaEsperada": "Coffee is a great drink, and I'm at home now.",
+            "explicacao": "sem «the» para coisas em geral e em «at home».",
+            "id": "en-002-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She has afraid of flying.",
+            "respostaEsperada": "She is afraid of flying.",
+            "explicacao": "«ter medo» é be afraid.",
+            "id": "en-002-c06"
           }
         ]
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais persistente do brasileiro no nível básico é usar o verbo have para idade e sensações e engolir o sujeito It no início da frase. Em português, “Tenho 25 anos” e “Está chovendo” soam naturais; em inglês, diga sempre I'm 25 e It's raining. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I have 28 years old.",
+            "certo": "I'm 28 (years old).",
+            "motivo": "Idade em inglês é estado (to be), nunca posse (have)."
+          },
+          {
+            "errado": "Is cold today.",
+            "certo": "It's cold today.",
+            "motivo": "O sujeito neutro It é obrigatório para clima e hora."
+          },
+          {
+            "errado": "I'm engineer.",
+            "certo": "I'm an engineer.",
+            "motivo": "Profissão no singular exige sempre a ou an."
+          },
+          {
+            "errado": "Yes, I'm. / Yes, it's.",
+            "certo": "Yes, I am. / Yes, it is.",
+            "motivo": "nunca se contrai o verbo no fim de uma resposta curta afirmativa."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Fale: apresente-se em 5 frases (nome, origem, profissão ou estudo, como você está, uma frase negativa). Depois faça duas perguntas a um colega."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva uma frase afirmativa, uma negativa e uma pergunta com «to be» sobre você."
+        "min": 2,
+        "enunciado": "Retorno. 1) Como se diz «Está frio» em inglês, e qual palavra obrigatória abre a frase? 2) Por que «a university», mas «an umbrella» e «an hour»? 3) Quando alguém pergunta «What do you do?», o que a pessoa quer saber e como você responde?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Apresentar meu nome, origem, idade e profissão sem esquecer a / an e sem usar have para idade. · Fazer perguntas com Am / Is / Are e responder com respostas curtas sem contrair no final afirmativo. · Usar o sujeito obrigatório It's para falar de clima, horas e situações. Refaça o degrau 4 daqui a 7 dias, sem olhar a correção."
       }
     ]
   },

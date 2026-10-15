@@ -20,8 +20,37 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Observe como os quantificadores mudam conforme o tipo de substantivo e o tipo de frase: PASSO 2: COM CONTÁVEIS NO PLURAL COM INCONTÁVEIS NO TIPO DE FRASE (TOMATOES, BOTTLES, SINGULAR (CHEESE, TIME, FRIENDS) MONEY, ADVICE) PASSO 3: COM CONTÁVEIS NO PLURAL COM INCONTÁVEIS NO TIPO DE FRASE (TOMATOES, BOTTLES, SINGULAR (CHEESE, TIME, FRIENDS) MONEY, ADVICE) PASSO 4: Pergunta de How many bottles do we How much pasta do we quantidade (“Quantos / need? have? Quanto?”) PASSO 5: Perguntas: PASSO 6: Quando trocamos some por any? PASSO 7: Qual expressão para “muito(s)” funciona tanto para contáveis quanto para incontáveis sem você precisar pensar?",
+        "tabela": [
+          {
+            "c1": "Negativa (“nenhum / nada de”)",
+            "c2": "We don't have any tomatoes.",
+            "c3": "We don't have any cheese."
+          },
+          {
+            "c1": "Pergunta (“algum?”)",
+            "c2": "Do we have any tomatoes?",
+            "c3": "Do we have any cheese?"
+          },
+          {
+            "c1": "Grande quantidade (“muitos / muito”)",
+            "c2": "many friends / a lot of friends",
+            "c3": "much time / a lot of time"
+          },
+          {
+            "c1": "Pequena quantidade (“alguns / um pouco”)",
+            "c2": "a few minutes / a few friends",
+            "c3": "a little time / a little milk"
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 6,
+        "min": 4,
         "itens": [
           {
             "ru": "some",
@@ -69,7 +98,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Some, any e a lot of",
         "explicacao": "PASSO 1: «some» em frases AFIRMATIVAS, com incontáveis e contáveis no plural: «I have some milk.», «She has some eggs.» PASSO 2: «any» em NEGATIVAS e PERGUNTAS: «I don't have any milk.», «Do you have any eggs?» PASSO 3: nas negativas, «any» = nenhum: «There isn't any bread.» PASSO 4: exceção: em ofertas e pedidos, use «some»: «Would you like some coffee?» PASSO 5: «a lot of» = muito: «I drink a lot of water.» Em frases negativas, prefira «much/many»: «I don't eat much meat.» PASSO 6: não use «some/any» com singular contável: «a sandwich» (nunca «some sandwich»).",
         "comparacao": "em português «algum/nenhum» muda de forma. O inglês usa «some» para o positivo e «any» para negativa e pergunta; a palavra muda, o sentido de quantidade vem junto.",
@@ -116,13 +145,20 @@
         "tag": "Quantidade"
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Em 30 segundos",
+        "explicacao": "PASSO 1: Contáveis × Incontáveis: Contáveis têm singular e plural (a bottle / three bottles). Incontáveis (líquidos, grãos e a lista information, advice, news, furniture, luggage, bread, money, time, traffic, work) não têm plural, não aceitam a / an e usam verbo no singular (is / has). PASSO 2: Some × Any: PASSO 3: some = em frases afirmativas (I need some advice) e em ofertas ou pedidos onde esperamos um “sim” (Would you like some coffee? / Can I get some water?). PASSO 4: any = em frases negativas (I don't have any cash) e na maioria das perguntas (Do you have any questions?). PASSO 5: Muito(s) (many / much / a lot of): PASSO 6: many + contáveis no plural (many people, many emails). PASSO 7: much + incontáveis (much time, much money, much traffic) — usado principalmente em negativas e perguntas (I don't have much time). PASSO 8: a lot of / lots of + qualquer um dos dois (é a forma mais natural nas frases afirmativas: We have a lot of work and a lot of meetings). PASSO 9: Pouco(s) (a few / a little):a few + plural (a few days, a few questions); a little + incontável (a little water, a little help). PASSO 10: Perguntas:How many + plural? | How much + incontável (ou para perguntar preço: How much is this?).",
+        "tag": "Resumo"
+      },
+      {
         "tipo": "producao",
-        "min": 8,
+        "min": 6,
         "enunciado": "Diga o que há e o que não há na sua geladeira: «There is some milk. There aren't any eggs.»"
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Diga se é contável ou incontável: egg, milk, sandwich, rice, juice, apple."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -197,14 +197,154 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto sobre os seus hobbies e com quem você os faz."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas frases sobre coisas que você curte fazer (I enjoy…-ing) ou não se importa de fazer (I don't mind…-ing), e duas sobre coisas que você decidiu ou planeja fazer (I decided to… / I plan to…).",
+            "respostaEsperada": "I enjoy cooking on weekends and I don't mind waking up early. This year I decided to study German and I plan to visit Berlin.",
+            "id": "en-013-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Agradeça a alguém por algo usando Thank you for…-ing, diga em que você é bom usando I'm good at…-ing e ofereça ajuda usando I'm happy to….",
+            "respostaEsperada": "Thank you for sending me the files so quickly! I'm good at organizing projects, and I'm happy to help with the presentation.",
+            "id": "en-013-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um pedido dizendo o que você quer que outra pessoa faça, usando I want you to… ou Could you ask him/her to…?.",
+            "respostaEsperada": "I want you to review this contract before three o'clock, please.",
+            "id": "en-013-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte algo que você aprendeu ou fez totalmente sozinho, usando by myself.",
+            "respostaEsperada": "I learned how to edit videos by myself!",
+            "id": "en-013-L-p04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase que comece com um verbo em -ing como sujeito (Working from home…, Learning English…).",
+            "respostaEsperada": "Working from home saves a lot of time in traffic.",
+            "id": "en-013-L-p05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I enjoy to travel, and I'm thinking about to visit Lisbon next year.",
+            "respostaEsperada": "I enjoy traveling, and I'm thinking about visiting Lisbon next year.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She went to the supermarket for buy some milk and bread.",
+            "respostaEsperada": "She went to the supermarket to buy some milk and bread.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I want that you send me the updated figures before noon.",
+            "respostaEsperada": "I want you to send me the updated figures before noon.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: — Did you like the new Italian restaurant? — Yes, I liked very much!",
+            "respostaEsperada": "— Did you like the new Italian restaurant? — Yes, I liked it very much!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: When I finished to write the email, I sent to she.",
+            "respostaEsperada": "When I finished writing the email, I sent it to her.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: He left the meeting without to say goodbye to we.",
+            "respostaEsperada": "He left the meeting without saying goodbye to us.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My manager suggested to have the meeting online.",
+            "respostaEsperada": "My manager suggested having the meeting online.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-013-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Thank you for waiting for me — I'm ready to go now!",
+            "respostaEsperada": "OK",
+            "id": "en-013-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os erros mais persistentes deste capítulo na fala de brasileiros são: usar for + verbo para finalidade (I came here for study em vez de to study), usar to depois de preposição ou depois de enjoy / finish (before to leave / I enjoy to PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I came here for study English.",
+            "certo": "I came here to study English.",
+            "motivo": "Finalidade (“para + verbo”) é sempre to + verbo, e não for."
+          },
+          {
+            "errado": "Thanks for help / Before to go.",
+            "certo": "Thanks for helping / Before going.",
+            "motivo": "Depois de qualquer preposição (for, before, after, without, of, at, in), o verbo leva - ing."
+          },
+          {
+            "errado": "I enjoy to cook / I finished to read.",
+            "certo": "I enjoy cooking / I finished reading.",
+            "motivo": "Enjoy, finish, mind, avoid, keep, suggest pedem -ing."
+          },
+          {
+            "errado": "I want that you help me.",
+            "certo": "I want you to help me.",
+            "motivo": "Want, need, would like usam pessoa + to + verbo, e não that."
+          },
+          {
+            "errado": "She suggested to have lunch.",
+            "certo": "She suggested having lunch.",
+            "motivo": "Suggest pede -ing (ou suggested that we have lunch)."
+          },
+          {
+            "errado": "— Did you like the movie? — I liked!",
+            "certo": "— Yes, I liked it! (ou Yes, I did!)",
+            "motivo": "Verbos transitivos como like, love, buy, find pedem objeto (it / them)."
+          },
+          {
+            "errado": "Give the file to she / Come with I.",
+            "certo": "Give the file to her / Come with me.",
+            "motivo": "Depois de verbo e de preposição entram os pronomes de objeto (me, him, her, us, them)."
+          },
+          {
+            "errado": "Work here is great.",
+            "certo": "Working here is great.",
+            "motivo": "Quando uma ação é o sujeito da frase, usa-se - ing."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Fale de 3 hobbies que você ama e 1 que odeia, com -ing."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 16 e 17. Explique por que dizemos I used to live here (verbo base), mas I'm used to living here (com -ing). Qual regra deste capítulo explica o -ing? 2. Do Capítulo 14 e 15. Complete: How long ____ you ____ (know) Kevin, and how long ____ you ____ (work) on this app? e Have you finished reading the contract ____? — Yes, I've ____ signed it! (já / acabei de) 3. Diferença de sentido. Qual é a diferença entre He stopped talking to me e He stopped to talk to me?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Colocar -ing depois de preposições (before leaving, thanks for helping) e depois de enjoy / finish. · Expressar finalidade com to + verbo e pedir algo com I want you to…, sem “for” nem “that”. · Usar it e them depois de like, love, buy, send, sem deixar a frase incompleta."
       }
     ]
   },

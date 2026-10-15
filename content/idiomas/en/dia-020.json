@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -207,14 +207,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale por 1 minuto sobre os objetos da sua mesa: o que são, quantos há, quais estão perto e quais estão longe."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Peça em um café um cappuccino médio quente e dois destes croissants de chocolate aqui para viagem.",
+            "respostaEsperada": "Can I get a medium hot cappuccino and two of these chocolate croissants to go, please?",
+            "id": "en-005-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Pergunte a um vendedor quanto custam aquelas garrafas de vinho lá longe (over there) e diga que vai levar uma por $18.50 (escreva o preço por extenso).",
+            "respostaEsperada": "Excuse me, how much are those bottles of wine over there? I'll take one for eighteen fifty.",
+            "id": "en-005-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase usando people, children e cities.",
+            "respostaEsperada": "A lot of people and children live in big cities.",
+            "id": "en-005-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga ao garçom que você está satisfeito (I'm good, thanks) e peça a conta educadamente.",
+            "respostaEsperada": "I'm good, thanks! Could we get the check, please?",
+            "id": "en-005-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Give me a coffee with milk, and I want two sandwichs, please!",
+            "respostaEsperada": "Can I get a coffee with milk, and I'd like two sandwiches, please?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: This shoes right here are very comfortable, but that ones over there are small.",
+            "respostaEsperada": "These shoes right here are very comfortable, but those ones over there are small.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: There are three womans and four mans waiting for the elevator.",
+            "respostaEsperada": "There are three women and four men waiting for the elevator.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: How much is those backpacks on the top shelf?",
+            "respostaEsperada": "How much are those backpacks on the top shelf?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Can I get a water with gas, please?",
+            "respostaEsperada": "Can I get a sparkling water, please?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: How many boxs do those two persons have?",
+            "respostaEsperada": "How many boxes do those two people have?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-005-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: I'll have the grilled salmon and a sparkling water, please.",
+            "respostaEsperada": "OK",
+            "id": "en-005-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais comum em lojas e restaurantes é misturar singular e plural nos demonstrativos (dizendo this shoes em vez de these shoes) e esquecer que people, women, men e children já são plurais (dizendo peoples ou womans). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I want a coffee. / Give me a tea.",
+            "certo": "Can I get a coffee, please? / I'd like a tea.",
+            "motivo": "“I want” e “Give me” soam como ordens rudes no balcão."
+          },
+          {
+            "errado": "I will want the steak.",
+            "certo": "I'll have the steak, please.",
+            "motivo": "Para escolher do cardápio, o natural é I'll have (ou I'll go with)."
+          },
+          {
+            "errado": "This shoes are nice.",
+            "certo": "These shoes are nice.",
+            "motivo": "Shoes é plural, exigindo o plural these (perto) ou those (longe)."
+          },
+          {
+            "errado": "Three womans and two childs.",
+            "certo": "Three women and two children.",
+            "motivo": "Plurais irregulares nunca recebem -s."
+          },
+          {
+            "errado": "Water with gas.",
+            "certo": "Sparkling water.",
+            "motivo": "Gas nos EUA significa gasolina; água com gás é sparkling water."
+          },
+          {
+            "errado": "— I passed the test! — This is great!",
+            "certo": "— That's great!",
+            "motivo": "Ao reagir ao que o outro acabou de dizer, usamos That; This soa como se você falasse de algo seu."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva o plural de: book, box, city, man, child, person, day."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 1. Passe estas três frases inteiras para o plural (lembrando que a / an somem no plural!): (a) This is a new company. (b) That woman is an executive. (c) This child is hungry. 2. Do Capítulo 1. Como você pergunta a idade de alguém e como responde que tem 29 anos? 3. Pronúncia. Qual é a diferença de som final entre this (1 coisa) e these (2 ou mais coisas)?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Fazer qualquer pedido em um café ou restaurante sem usar “I want” e sabendo pedir água com ou sem gás (sparkling / still). · Apontar itens perto e longe acertando de primeira this, that, these, those. Usar people, men, women, children no plural com o verbo are."
       }
     ]
   },

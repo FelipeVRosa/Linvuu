@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você fala de planos e intenções com be going to, de compromissos já agendados com o Present Continuous (I'm meeting a client tomorrow), toma decisões espontâneas, faz ofertas e promessas com will (I'll, won't), e expressa possibilidades futuras com may e might."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Sexta-feira à tarde no escritório",
+        "contexto": "Marina e Kevin conversam no fim do expediente de sexta-feira sobre os planos para o fim de semana e a agenda de segunda-feira.",
+        "linhas": [
+          {
+            "personagem": "Kevin",
+            "ru": "— Marina, it's almost five thirty! What are you doing this weekend? Do you have any plans?",
+            "pt": "— Marina, são quase cinco e meia! O que você vai fazer neste fim de semana? Tem algum plano?",
+            "audio": "Marina, it's almost five thirty! What are you doing this weekend? Do you have any plans?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Yes! Tomorrow morning I'm having breakfast with my friend Julia at eight thirty — we booked a table at that French bakery downtown.",
+            "pt": "— Sim! Amanhã de manhã vou tomar café com a minha amiga Julia às oito e meia — reservamos uma mesa naquela padaria francesa no centro.",
+            "audio": "Yes! Tomorrow morning I'm having breakfast with my friend Julia at eight thirty — we booked a table at that French bakery downtown."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Oh, nice! What are you going to do in the afternoon?",
+            "pt": "— Ah, que legal! O que você vai fazer à tarde?",
+            "audio": "Oh, nice! What are you going to do in the afternoon?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I'm going to buy a winter coat because next week is going to be freezing. Look at the dark clouds outside — it's going to rain in a few minutes!",
+            "pt": "— Vou comprar um casaco de inverno porque a semana que vem vai ser congelante. Olha as nuvens escuras lá fora — vai chover em alguns minutos!",
+            "audio": "I'm going to buy a winter coat because next week is going to be freezing. Look at the dark clouds outside — it's going to rain in a few minutes!"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Oh, no! I forgot my umbrella at home.",
+            "pt": "— Ah, não! Esqueci meu guarda-chuva em casa.",
+            "audio": "Oh, no! I forgot my umbrella at home."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Don't worry, Kevin! I have an extra umbrella in my locker. I'll lend it to you!",
+            "pt": "— Não se preocupe, Kevin! Tenho um guarda-chuva extra no meu armário. Eu te empresto!",
+            "audio": "Don't worry, Kevin! I have an extra umbrella in my locker. I'll lend it to you!"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Really? Thank you so much! I'll bring it back on Monday morning, I promise.",
+            "pt": "— Sério? Muito obrigado! Eu trago de volta na segunda de manhã, prometo.",
+            "audio": "Really? Thank you so much! I'll bring it back on Monday morning, I promise."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— No problem! By the way, are you coming to the team dinner on Saturday night?",
+            "pt": "— Sem problema! Aliás, você vem ao jantar da equipe no sábado à noite?",
+            "audio": "No problem! By the way, are you coming to the team dinner on Saturday night?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— I'm not sure yet. My sister might visit us from New York, so I might stay home with her. I'll text you tomorrow to let you know!",
+            "pt": "— Ainda não tenho certeza. Minha irmã talvez nos visite vindo de Nova York, então pode ser que eu fique em casa com ela. Te mando mensagem amanhã para avisar!",
+            "audio": "I'm not sure yet. My sister might visit us from New York, so I might stay home with her. I'll text you tomorrow to let you know!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Evite o Present Simple para planos pessoais futuros. Em inglês, The flight leaves at 8 a.m. tomorrow está certo porque é o horário fixo de um avião. Mas para o que você vai fazer amanhã, nunca diga Tomorrow I work late; diga PASSO 2: Tomorrow I'm working late ou I'm going to work late. PASSO 3: Decidiu no segundo em que abriu a boca? Use I'll (nunca going to nem presente). Quando você oferece ajuda (I'll help you), promete algo (I'll send it right now) ou escolhe no restaurante (I'll have the salmon), essa decisão nasceu no momento da fala, então o inglês exige I'll (contração de I will). Se você usar I'm going to help you, parece que já estava planejando ajudar desde ontem! PASSO 4: Will e might são verbos modais: proibido usar to ou -s depois deles. Assim como can e should (Capítulo 9), nunca diga I will to go ou It might to rain; diga sempre I'll go e It might rain.",
+        "comparacao": "Em português falado, usamos o presente simples (“Amanhã eu viajo para São Paulo, à noite eu te ligo”) ou colocamos “vou” em praticamente tudo. Quando o brasileiro passa para o inglês, surgem quatro armadilhas clássicas:",
+        "tabela": [
+          {
+            "portugues": "Amanhã eu viajo para Londres.",
+            "ingles": "Tomorrow I'm flying (ou I'm going to fly) to London.",
+            "evite": "Tomorrow I fly to London. (Presente simples é só para tabela de horários!)"
+          },
+          {
+            "portugues": "O telefone está tocando! Eu atendo!",
+            "ingles": "The phone is ringing! I'll get it!",
+            "evite": "I get it! / I'm going to get it!"
+          },
+          {
+            "portugues": "Eu vou te ligar amanhã, prometo.",
+            "ingles": "I'll call you tomorrow, I promise.",
+            "evite": "I will to call you tomorrow."
+          },
+          {
+            "portugues": "Acho que não vai chover.",
+            "ingles": "I don't think it'll rain.",
+            "evite": "I think it doesn't rain."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "sunny",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Falar do clima com «it»",
         "explicacao": "PASSO 1: o sujeito do clima é sempre «it»: «It is sunny.», «It is cold.» PASSO 2: verbos de clima: «It rains.» (chove, hábito), «It is raining.» (está chovendo agora), «It snows.» PASSO 3: pergunta: «What is the weather like?» → «It is hot and sunny.» PASSO 4: «How is the weather?» também serve. PASSO 5: temperatura: «It is 25 degrees.» (graus Celsius; os EUA usam Fahrenheit: 77°F). PASSO 6: não existe «Makes cold» nem «Is cold» sem sujeito: o inglês exige «it».",
         "comparacao": "em português dizemos «está frio», «faz sol», «chove» sem sujeito. O inglês sempre exige o sujeito «it»: «It is cold.», «It is sunny.», «It is raining.»",
@@ -135,12 +232,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga como está o tempo hoje e em 3 cidades que você conhece."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga o que você faz todo dia e o que está fazendo agora, sem misturar os tempos."
       }
     ]

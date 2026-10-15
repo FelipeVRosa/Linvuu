@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve sua rotina, seu trabalho e seus hábitos sem esquecer o -s da terceira pessoa (he, she, it), faz perguntas com do e does, nega com don't e doesn't, responde de forma curta e posiciona always, usually e never no lugar exato da frase."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Café da manhã na copa da empresa",
+        "contexto": "Lucas e sua colega britânica Chloe conversam na copa do escritório em Toronto antes da primeira reunião do dia.",
+        "linhas": [
+          {
+            "personagem": "Chloe",
+            "ru": "— Morning, Lucas! You're here early today. What time do you usually start work?",
+            "pt": "— Bom dia, Lucas! Você chegou cedo hoje. A que horas você costuma começar a trabalhar?",
+            "audio": "Morning, Lucas! You're here early today. What time do you usually start work?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Hi, Chloe! Back in Brazil, I usually start at nine, so I get up at seven. Here in Toronto, I wake up at six thirty because of the time difference.",
+            "pt": "— Oi, Chloe! Lá no Brasil, normalmente começo às nove, então acordo às sete. Aqui em Toronto, acordo às seis e meia por causa do fuso horário.",
+            "audio": "Hi, Chloe! Back in Brazil, I usually start at nine, so I get up at seven. Here in Toronto, I wake up at six thirty because of the time difference."
+          },
+          {
+            "personagem": "Chloe",
+            "ru": "— Do you drink coffee in the morning?",
+            "pt": "— Você toma café de manhã?",
+            "audio": "Do you drink coffee in the morning?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Yes, I do! I always have a big cup of black coffee before I check my emails. What about you?",
+            "pt": "— Tomo, sim! Sempre tomo uma xícara grande de café preto antes de checar meus e-mails. E você?",
+            "audio": "Yes, I do! I always have a big cup of black coffee before I check my emails. What about you?"
+          },
+          {
+            "personagem": "Chloe",
+            "ru": "— I don't drink coffee at all. It makes me too anxious, so I always drink green tea.",
+            "pt": "— Eu não tomo café de jeito nenhum. Me deixa ansiosa demais, então sempre tomo chá verde.",
+            "audio": "I don't drink coffee at all. It makes me too anxious, so I always drink green tea."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— And what about your husband, Dan? Does he work near here?",
+            "pt": "— E quanto ao seu marido, o Dan? Ele trabalha perto daqui?",
+            "audio": "And what about your husband, Dan? Does he work near here?"
+          },
+          {
+            "personagem": "Chloe",
+            "ru": "— No, he doesn't. He works from home most days. He teaches graphic design online and finishes around five.",
+            "pt": "— Não. Ele trabalha de casa na maioria dos dias. Ele dá aula de design gráfico online e termina lá pelas cinco.",
+            "audio": "No, he doesn't. He works from home most days. He teaches graphic design online and finishes around five."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— That's nice! Does he cook dinner during the week?",
+            "pt": "— Que legal! Ele faz o jantar durante a semana?",
+            "audio": "That's nice! Does he cook dinner during the week?"
+          },
+          {
+            "personagem": "Chloe",
+            "ru": "— Yes, he does! He loves cooking, so he usually makes dinner, and I do the dishes. We never order delivery on weekdays.",
+            "pt": "— Faz, sim! Ele adora cozinhar, então normalmente faz o jantar, e eu lavo a louça. Nunca pedimos entrega nos dias de semana.",
+            "audio": "Yes, he does! He loves cooking, so he usually makes dinner, and I do the dishes. We never order delivery on weekdays."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O -s só existe para he, she, it e só na frase afirmativa. Na pergunta (Does she work?) e na negativa (She doesn't work), o auxiliar does / doesn't já carrega o -s, e o verbo principal volta obrigatoriamente à forma simples! Nunca coloque dois -s na mesma frase. PASSO 2: Perguntas e negativas exigem do / does / don't / doesn't. Para todos os verbos comuns (exceto to be e modais como can), o inglês convoca o auxiliar do (I, you, we, they) ou does (he, she, it). PASSO 3: Always, usually e never vêm antes do verbo principal. Em português dizemos “Eu tomo sempre café”; em inglês, nunca separe o verbo do seu objeto: diga I always drink coffee (e não I drink always coffee). E lembre-se: never já é negativo, portanto nunca use don't junto com never.",
+        "comparacao": "Em português, cada pessoa tem uma terminação própria no verbo (eu trabalho, tu trabalhas, ele trabalha, nós trabalhamos). Por isso, para fazer uma pergunta em português, basta mudar a entonação da voz (“Você trabalha aqui?”), e para negar basta colocar “não” antes do verbo (“Ele não trabalha”). O inglês funciona de outro jeito e cria quatro armadilhas clássicas:",
+        "tabela": [
+          {
+            "portugues": "Você mora aqui?",
+            "ingles": "Do you live here?",
+            "evite": "You live here?"
+          },
+          {
+            "portugues": "Ela trabalha aos sábados?",
+            "ingles": "Does she work on Saturdays?",
+            "evite": "Does she works on Saturdays?"
+          },
+          {
+            "portugues": "Meu irmão não gosta de chá.",
+            "ingles": "My brother doesn't like tea.",
+            "evite": "My brother don't like / no likes tea."
+          },
+          {
+            "portugues": "Eu tomo sempre café. / Não como nunca carne.",
+            "ingles": "I always drink coffee. / I never eat meat.",
+            "evite": "I drink always coffee. / I don't never eat meat."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "work",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "O presente simples: rotina, hábitos e fatos",
         "explicacao": "PASSO 1: o presente simples serve para rotina («I work every day»), hábito («I drink coffee in the morning») e fatos permanentes («They live in Rio»). PASSO 2: com «I», «you», «we» e «they» o verbo fica na forma básica, sem nada acrescentado: I work, you work, we work, they work. PASSO 3: o verbo principal NÃO leva «to be» junto. Não diga «I am work», nem «we are live». PASSO 4: idiomas vêm sem artigo: «I speak English», não «I speak the English». PASSO 5: expressões de tempo que acompanham esse tempo verbal: every day, every week, on Mondays, in the morning, at night.",
         "comparacao": "em português o presente também descreve rotina («eu trabalho todo dia»), mas o inglês reserva o presente simples para rotinas, hábitos e fatos. Para o que acontece AGORA, usa outro tempo (você verá mais adiante).",
@@ -130,12 +227,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 5 frases sobre a sua rotina com I ou we: «I work… I study… I drink… I speak… I live…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga a sua idade, o seu país e a sua nacionalidade em inglês, sem olhar."
       }
     ]

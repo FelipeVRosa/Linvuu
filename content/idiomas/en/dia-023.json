@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "big",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "O adjetivo vem antes e não muda",
         "explicacao": "PASSO 1: em inglês o adjetivo vem ANTES do substantivo: «a big kitchen», «a small bedroom». PASSO 2: ele NÃO muda no plural nem no gênero: «a big house», «two big houses» (nunca «bigs»). PASSO 3: com «to be», o adjetivo vem depois do verbo: «The kitchen is big.» PASSO 4: para descrever, junte tudo: «There is a big kitchen and a small bathroom.»",
         "comparacao": "em português o adjetivo costuma vir DEPOIS («uma cozinha grande») e concorda em gênero e número («casas grandes»). O inglês coloca antes e nunca flexiona.",
@@ -98,38 +98,321 @@
         "tag": "Adjetivos e possessivos"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "My apartment / O meu apartamento",
-        "ru": "I live in a small apartment in a big city. There is a living room, a kitchen, a bedroom and a bathroom. The living room is nice. There is a sofa and a table in the living room. The kitchen is small, but there is a window. There is a lamp next to my bed. I like my apartment.",
-        "pt": "Moro num apartamento pequeno numa cidade grande. Há uma sala, uma cozinha, um quarto e um banheiro. A sala é agradável. Há um sofá e uma mesa na sala. A cozinha é pequena, mas há uma janela. Há uma lâmpada ao lado da minha cama. Eu gosto do meu apartamento.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "Where does the person live?",
-            "resposta": "In a small apartment in a big city."
+            "ru": "Excuse me, is there an ATM near here?",
+            "translit": "",
+            "pt": "Com licença, tem um caixa eletrônico perto daqui?",
+            "en": "",
+            "audio": "Excuse me, is there an ATM near here?"
           },
           {
-            "pergunta": "How many rooms are there?",
-            "resposta": "Four: a living room, a kitchen, a bedroom and a bathroom."
+            "ru": "There are two meeting rooms on the fourth floor.",
+            "translit": "",
+            "pt": "Há duas salas de reunião no quarto andar.",
+            "en": "",
+            "audio": "There are two meeting rooms on the fourth floor."
           },
           {
-            "pergunta": "Is the kitchen big?",
-            "resposta": "No, it isn't. It is small."
+            "ru": "There isn't any coffee left in the kitchen.",
+            "translit": "",
+            "pt": "Não sobrou nada de café na cozinha.",
+            "en": "",
+            "audio": "There isn't any coffee left in the kitchen."
           },
           {
-            "pergunta": "What is next to the bed?",
-            "resposta": "A lamp."
+            "ru": "The hotel is right across from the train station.",
+            "translit": "",
+            "pt": "O hotel fica bem em frente à (do outro lado da rua da) estação de trem.",
+            "en": "",
+            "audio": "The hotel is right across from the train station."
+          },
+          {
+            "ru": "My office is between the pharmacy and the bookstore.",
+            "translit": "",
+            "pt": "Meu escritório fica entre a farmácia e a livraria.",
+            "en": "",
+            "audio": "My office is between the pharmacy and the bookstore."
+          },
+          {
+            "ru": "I'm on the train right now; I'll be at work in ten minutes.",
+            "translit": "",
+            "pt": "Estou no trem agora; estarei no trabalho em dez minutos.",
+            "en": "",
+            "audio": "I'm on the train right now; I'll be at work in ten minutes."
+          },
+          {
+            "ru": "Go straight ahead for two blocks and turn left at the light.",
+            "translit": "",
+            "pt": "Siga reto por dois quarteirões e vire à esquerda no semáforo.",
+            "en": "",
+            "audio": "Go straight ahead for two blocks and turn left at the light."
+          },
+          {
+            "ru": "You can't miss it — it's right there on your right!",
+            "translit": "",
+            "pt": "Não tem erro — fica bem à sua direita!",
+            "en": "",
+            "audio": "You can't miss it — it's right there on your right!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ a good coffee shop on this street?",
+            "opcoes": [
+              "Has",
+              "Is there"
+            ],
+            "gabarito": "Is there",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ any private offices on the second floor.",
+            "opcoes": [
+              "There aren't",
+              "Don't have"
+            ],
+            "gabarito": "There aren't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "There aren't any private offices ___ the second floor.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-102b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I'm ___ the bus right now, and my brother is in a taxi.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I'm on the bus right now, and my brother is ___ a taxi.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-103b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The pharmacy is ___ the bank and the supermarket.",
+            "opcoes": [
+              "between",
+              "among"
+            ],
+            "gabarito": "between",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Cross the street! The museum is ___ our hotel.",
+            "opcoes": [
+              "in front of",
+              "across from"
+            ],
+            "gabarito": "across from",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The pharmacy is right ___ the bank.",
+            "opcoes": [
+              "next",
+              "next to"
+            ],
+            "gabarito": "next to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I saw the news ___ my phone while I was at home.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I saw the news on my phone while I was ___ home.",
+            "opcoes": [
+              "at",
+              "in"
+            ],
+            "gabarito": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-107b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Go straight ahead and turn right; the bank is ___ your left.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-108a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ a supermarket near your apartment? — Yes, there's one right next to the bank.",
+            "respostaEsperada": "Is there",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Is there a supermarket near your apartment? — Yes, ___ one right next to the bank.",
+            "respostaEsperada": "there's",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Is there a supermarket near your apartment? — Yes, there's one right ___ the bank.",
+            "respostaEsperada": "next to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ twenty people waiting at the reception desk.",
+            "respostaEsperada": "There are",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "There are twenty people waiting ___ the reception desk.",
+            "respostaEsperada": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My apartment is ___ the fifth floor at 120 Park Avenue in New York.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My apartment is on the fifth floor ___ 120 Park Avenue in New York.",
+            "respostaEsperada": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My apartment is on the fifth floor at 120 Park Avenue ___ New York.",
+            "respostaEsperada": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-203c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ any messages for me on my phone? — No, there aren't any.",
+            "respostaEsperada": "Are there",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Are there any messages for me ___ my phone? — No, there aren't any.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Are there any messages for me on my phone? — No, ___ any.",
+            "respostaEsperada": "there aren't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-204c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The printer is ___ the desk, between the computer and the lamp.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The printer is on the desk, ___ the computer and the lamp.",
+            "respostaEsperada": "between",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look across the avenue: ___ a beautiful park right across from our office building.",
+            "respostaEsperada": "there's",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look across the avenue: there's a beautiful park right ___ our office building.",
+            "respostaEsperada": "across from",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ a subway station in my neighborhood, so I go to work by bus.",
+            "respostaEsperada": "There isn't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sorry, I can't talk right now — I'm ___ the plane!",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-208a"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 5 frases sobre a sua casa, com um adjetivo, um «there is/are» e uma preposição de lugar. Depois leia em voz alta."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Complete em voz alta: «The key is ___ the table. I am ___ home. The cat is ___ the bed.»"
       }
     ]

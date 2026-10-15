@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve o que existe no seu bairro, hotel ou escritório usando there is / there are (abandonando de vez o vício brasileiro de usar “have” para existência), domina a regra de ouro do funil para as preposições de lugar (in, on, at) e usa as preposições de localização espacial (next to, across from, between) para pedir e dar direções na rua."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Conhecendo o novo escritório e a vizinhança",
+        "contexto": "Marina acabou de ser contratada em uma agência de design em Boston. No primeiro dia, seu colega norte-americano Kevin mostra o andar e dá dicas sobre o bairro.",
+        "linhas": [
+          {
+            "personagem": "Kevin",
+            "ru": "— So, Marina, welcome to the third floor! This is our main workspace.",
+            "pt": "— Então, Marina, bem-vinda ao terceiro andar! Este é o nosso espaço principal de trabalho.",
+            "audio": "So, Marina, welcome to the third floor! This is our main workspace."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Thanks, Kevin! It's really bright. Are there any private phone booths on this floor for client calls?",
+            "pt": "— Obrigada, Kevin! É bem iluminado. Tem cabines telefônicas privativas neste andar para ligações com clientes?",
+            "audio": "Thanks, Kevin! It's really bright. Are there any private phone booths on this floor for client calls?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Yes, there are! There are four soundproof booths right over there, next to the glass meeting room.",
+            "pt": "— Sim, tem! Há quatro cabines à prova de som bem ali, ao lado da sala de reunião de vidro.",
+            "audio": "Yes, there are! There are four soundproof booths right over there, next to the glass meeting room."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Oh, that's great. And is there a kitchen or a coffee machine nearby?",
+            "pt": "— Ah, que ótimo. E tem uma cozinha ou máquina de café por perto?",
+            "audio": "Oh, that's great. And is there a kitchen or a coffee machine nearby?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Of course! There's a big lounge at the end of the hall, between the elevators and the restrooms. There's free coffee, tea, and fruit on the counter all day.",
+            "pt": "— Claro! Tem uma copa grande no fim do corredor, entre os elevadores e os banheiros. Tem café, chá e frutas grátis no balcão o dia todo.",
+            "audio": "Of course! There's a big lounge at the end of the hall, between the elevators and the restrooms. There's free coffee, tea, and fruit on the counter all day."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Awesome. What about lunch? Are there any good places to eat on this street?",
+            "pt": "— Perfeito. E quanto ao almoço? Tem lugares bons para comer nesta rua?",
+            "audio": "Awesome. What about lunch? Are there any good places to eat on this street?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Plenty! There's an amazing Italian restaurant right across from our building, and there's a pharmacy on the corner of Boylston Street and Clarendon.",
+            "pt": "— Muitos! Tem um restaurante italiano incrível bem em frente ao nosso prédio, e tem uma farmácia na esquina da Boylston Street com a Clarendon.",
+            "audio": "Plenty! There's an amazing Italian restaurant right across from our building, and there's a pharmacy on the corner of Boylston Street and Clarendon."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Is there a subway station near here, by the way?",
+            "pt": "— Aliás, tem uma estação de metrô perto daqui?",
+            "audio": "Is there a subway station near here, by the way?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Yes, Copley Station is just two blocks away. You turn left outside the building, go straight ahead, and it's on your right!",
+            "pt": "— Sim, a Copley Station fica a apenas dois quarteirões daqui. Você vira à esquerda saindo do prédio, segue reto em frente, e ela fica à sua direita!",
+            "audio": "Yes, Copley Station is just two blocks away. You turn left outside the building, go straight ahead, and it's on your right!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: “Tem / Existe” nunca é have / has; é sempre There is / There are. O verbo have exige um dono antes dele (I have a car, The office has four booths). Quando você começa a frase apontando a existência de algo em um lugar, use obrigatoriamente There is (singular) e There are (plural). PASSO 2: O Funil de Lugar (IN → ON → AT). Em vez de traduzir “em”, visualize a geometria do lugar: PASSO 3: IN (Dentro de 3D / Fronteiras amplas): países, cidades, bairros, salas fechadas, dentro de bolsas/gavetas e dentro de carros/táxis (in Brazil, in Boston, in the kitchen, in my bag, in a taxi). PASSO 4: ON (Superfície 2D / Linhas / Andares / Coletivos): em cima de mesas/telas/paredes, nomes de ruas/avenidas, andares de prédio e transportes em que se anda no corredor (on the table, on the screen, on Boylston Street, on the 3rd floor, on the bus/train/plane). PASSO 5: AT (Ponto exato no mapa / Função institucional): endereços com número, pontos de encontro e locais pela sua função (at 500 Boylston Street, at the door, at the bus stop, at home, at work, at school, at the airport).",
+        "comparacao": "Em português falado, usamos o verbo “ter” para dizer que algo existe em um lugar (“Tem um banco nesta rua”, “Não tem vagas aqui”). Além disso, temos uma única preposição curinga (“em / no / na”) para dizer no Brasil, no terceiro andar, na mesa e no trabalho. Veja as quatro armadilhas que isso cria:",
+        "tabela": [
+          {
+            "portugues": "Tem uma farmácia perto daqui?",
+            "ingles": "Is there a pharmacy near here?",
+            "evite": "Has a pharmacy near here? / Have a pharmacy…?"
+          },
+          {
+            "portugues": "Tem muitos restaurantes nesta rua.",
+            "ingles": "There are a lot of restaurants on this street.",
+            "evite": "Have many restaurants in this street."
+          },
+          {
+            "portugues": "Estou no 3º andar / no ônibus.",
+            "ingles": "I'm on the third floor / on the bus.",
+            "evite": "in the third floor / in the bus"
+          },
+          {
+            "portugues": "O banco fica em frente ao hotel.",
+            "ingles": "The bank is across from (UK: opposite) the hotel.",
+            "evite": "in front of the hotel (quando é do outro lado da rua!)"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "living room",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "There is e there are: dizer o que existe",
         "explicacao": "PASSO 1: para dizer que algo EXISTE em um lugar, use «there is» (um só, ou incontável) e «there are» (mais de um): «There is a sofa in the living room.», «There are two beds in the bedroom.» PASSO 2: o verbo concorda com o que vem DEPOIS: «There is a book and two pens» (o verbo acompanha o primeiro item), mas «There are two pens and a book». PASSO 3: negativa: «There isn't a TV.», «There aren't any chairs.» PASSO 4: pergunta: «Is there a kitchen?», «Are there two bathrooms?» Resposta curta: «Yes, there is.» / «No, there isn't.» / «Yes, there are.» / «No, there aren't.» PASSO 5: na fala, «there is» vira «there's». PASSO 6: não existe «has» nem «have» com esse sentido. Não diga «Has a sofa in the room».",
         "comparacao": "em português usamos «tem» («tem um sofá na sala») ou «há». O inglês exige o «there» e muda entre singular e plural: «there is / there are». «Has» e «have» servem para posse, não para existência.",
@@ -130,12 +227,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva a sua casa em voz alta com 5 frases: «There is a… There are two… There isn't a…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga o plural de: box, city, child, knife. Depois diga «this», «that», «these» ou «those» para 4 objetos perto de você."
       }
     ]

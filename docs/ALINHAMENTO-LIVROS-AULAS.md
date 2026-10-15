@@ -70,3 +70,22 @@ Aula 2 (sessões 5 a 8) com o capítulo 1 do livro, para os autores aprovarem o 
 3. **Marca d'água e limite por conta** nessa rota, para desencorajar cópia.
 4. **Aprovação do piloto**, depois as 62 aulas em lotes por nível: A1, A2 e B1.
 5. **Repetir para os outros idiomas**, na ordem de maturidade dos livros: espanhol, alemão, francês, italiano. O russo e o português para estrangeiros dependem dos livros.
+
+## 8. Plano de execução em lotes (v2, 15/10/2026)
+
+Os 28 capítulos em inglês têm a mesma estrutura de 10 seções (cena, armadilha, descubra, em 30 segundos, por dentro, frases de ouro, treino em quatro degraus, erro típico, retorno, resumo). Por isso um gerador único (`scripts/livros/gerar_aulas.py`) monta as sessões a partir do capítulo, e o trabalho humano fica só na revisão.
+
+**Regra de dono.** Cada capítulo alimenta várias aulas (ex.: o 9 alimenta 4). A primeira aula da lista em `alinhamento.json` é a **dona** e recebe as quatro sessões completas, como no piloto. As demais são **reforço**: recebem só retorno, degraus 3 e 4 e erro típico do capítulo, como revisão espaçada, sem repetir a cena nem a regra.
+
+**Lotes, um PR por lote.**
+1. A1, aulas 3 a 17.
+2. A2, aulas 19 a 36.
+3. B1, aulas 39 a 60.
+4. Aulas novas: capítulo 26 e perguntas naturais do 20.
+5. Capítulos novos no livro: sons, saúde, trabalho, escrita, mídia.
+
+**Verificação automática em cada lote:** `content:check`, build, renderização no celular de todas as sessões do lote e um relatório de exercícios que não puderam ser corrigidos automaticamente (esses viram escrita livre com resposta-modelo).
+
+**Revisão dos autores:** o PR de cada lote lista as aulas alteradas. Nada é apagado, pois as sessões antigas continuam no histórico do Git.
+
+**Depois do inglês:** o mesmo gerador, com um arquivo de mapa por idioma, para espanhol, alemão, francês e italiano.

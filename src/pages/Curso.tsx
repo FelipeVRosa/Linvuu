@@ -79,7 +79,7 @@ export default function Curso() {
                   <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
                     <span className="dia-n">{d.dia}</span>
                     <span className="dia-t">{d.titulo}<small>{d.objetivo} · {gratis(d.dia) ? t.cursoPagina.gratis : t.cursoPagina.assinantes}</small></span>
-                    <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>
+                    {st !== 'publicada' && <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>}
                   </Link>
                 </li>
               );
@@ -105,7 +105,7 @@ export default function Curso() {
                   <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
                     <span className="dia-n">{d.dia}</span>
                     <span className="dia-t">{d.titulo}<small>{d.objetivo}</small></span>
-                    <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>
+                    {st !== 'publicada' && <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>}
                   </Link>
                 </li>
               );

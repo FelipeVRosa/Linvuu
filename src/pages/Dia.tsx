@@ -75,7 +75,7 @@ export default function Dia() {
             </span>
             <h1 className="pagina-h1">{aula.titulo}</h1>
             <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : T.objetivoDia(aula.objetivo)}</p>
-            <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>
+            {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>
 
           {aula.semTraducao && <p className="nota nota-traducao" role="note">{T.semTraducao(t.linguas[aula.semTraducao])}</p>}

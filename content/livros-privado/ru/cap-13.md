@@ -13,25 +13,25 @@ Na Aula 5 e no Vocabulário Oficial no fim deste livro, você notou que quase to
 
 Enquanto o português tem dezenas de tempos verbais complexos, o russo tem apenas três tempos (Passado, Presente e Futuro), mas olha para qualquer ação com duas lentes diferentes:
 
-1. 1. Imperfectivo (НСВ — Несоверше́нный вид) = O FILME (Processo, Rotina, Duração): Foca na ação acontecendo, repetindo-se todo dia ou durando um tempo, sem importar se terminou ou não. Corresponde ao nosso "eulia/estava lendo/costumavaler".
-2. 2. Perfectivo (СВ — Соверше́нный вид) = A FOTOGRAFIA (Resultado Único Concluído): Foca no ponto final, na missão cumprida, no resultado pronto de uma única ocasião. Corresponde ao nosso "euliolivrointeiro/jáescreviacarta/ compreiobilhete".
+1. 1. Imperfectivo (НСВ — Несоверше́нный вид) = O FILME (Processo, Rotina, Duração): Foca na ação acontecendo, repetindo-se todo dia ou durando um tempo, sem importar se terminou ou não. Corresponde ao nosso "eu lia / estava lendo / costumava ler".
+2. 2. Perfectivo (СВ — Соверше́нный вид) = A FOTOGRAFIA (Resultado Único Concluído): Foca no ponto final, na missão cumprida, no resultado pronto de uma única ocasião. Corresponde ao nosso "eu li o livro inteiro / já escrevi a carta / comprei o bilhete".
 
 
 ## 13.2 A Bússola de Escolha: Imperfectivo (НСВ) vs. Perfectivo (СВ)
 
-| CRITÉRIO | 1. IMPERFECTIVO (НСВ) — O FILME (ЧИТА́ТЬ, ДЕ́ЛАТЬ, ПОКУПА́ТЬ) | 2. PERFECTIVO (СВ) — A FOTOGRAFIA (ПРОЧИТА́ТЬ, СДЕ́ЛАТЬ, КУПИ́ТЬ) |
+| CRITÉRIO | 1. IMPERFECT́IVO (НСВ) — O F́ILME (ЧИТА́ТЬ, ДЕЛАТЬ, ПОКУПАТЬ) | 2. PERFECT́IVO (СВ)́ — A FOTOGRAFIA (ПРОЧИТАТЬ, СДЕЛАТЬ, КУПИ́ТЬ) |
 |---|---|---|
 | O que expressa? | Processo / Duração (por 2 horas, o dia todo) Repetição / Hábito (sempre, todo dia, frequentemente) O fato geral ("Você já leu Tolstói alguma vez?") | Resultado concluído ("Pronto, terminei!") Ação única e pontual (uma vez, de repente) Sequência de eventos ("Acordei, tomei café e saí") |
-| Palavras- ímã (Gatilhos) | всегда́ (sempre) · ча́сто (frequentemente) · обы́чно (normalmente) · ка́ждый день (todo dia) · до́лго (por muito tempo) · весь день (o dia inteiro) | уже́ (já) · наконе́ц (fifinalmente) · вдруг (de repente) · сра́зу (imediatamente) · весь / всю / всё (tudo/inteiro) |
-| No PRESENTE | Existe! (Ячита́юкни́гусейча́с.) | NÃO EXISTE! (Ninguém conclui algo no meio do agora!) |
-| No PASSADO | Вчера́ ячита́лкни́гудвачаса́. (Ontem fifiquei lendo por 2h — processo.) | Вчера́ япрочита́лвсюкни́гу! (Ontem li o livro inteiro — concluído!) |
-| No FUTURO | Futuro Composto (бу́ду + inf. НСВ): За́втраябу́дучита́ть.(Vou ler / estarei lendo.) | Futuro Simples (conjuga o verbo СВ!): За́втраяпрочита́юэ́тустатью́! (Vou ler até o fifim!) |
+| Palavras- ímã (Gatilhos) | всегда́ (sempre) · ча́сто (frequentemente) · обыч́но (normalmente) · ка́ждый день (todo dia) · до́лго (por muito tempo) · весь день (o dia inteiro) | уже́ (já) · наконе́ц (finalmente) · вдруг (de repente) · сра́зу (imediatamente) · весь / всю / всё (tudo/inteiro) |
+| No PRESENTE | Existe! (Я чита́ю кни́гу сейча́с.) | NÃO EXISTE! (Ninguém conclui algo no meio do agora!) |
+| No PASSADO | Вчера́ я чита́л кни́гу два часа́. (Ontem fiquei lendo por 2h — processo.) | Вчера́ я прочита́л всю кни́гу! (Ontem li o livro inteiro — concluído!) |
+| No FUTURO | Futuro Composto (бу́ду + inf. НСВ): За́втра я бу́ду чита́ть. (Vou ler / estarei lendo.) | Futuro Simples (conjuga o verbo СВ!): За́втра я прочита́ю э́ту статью!́ (Vou ler até o fim!) |
 
-A grande sacada do Futuro Simples (Perfectivo): Como o verbo Perfectivo (сде́лать,прочита́ть,написа́ть,купи́ть) não tem presente, quando você aplica a tesourinha do presente nele, o resultado significa FUTURO CONCLUÍDO (e jamais usa бу́ду!):
+A grande sacada do Futuro Simples (Perfectivo): Como o verbo Perfectivo (сде́лать, прочита́ть, написа́ть, купи́ть) não tem presente, quando você aplica a tesourinha do presente nele, o resultado significa FUTURO CONCLUÍDO (e jamais usa бу́ду!):
 
-де́лать (НСВ): я де́лаю (eu faço agora) · я бу́ду де́лать (vou fazer / trabalhar nisso).
+де́лать (НСВ):я де́лаю (eu faço agora) · я бу́ду де́лать (vou fazer / trabalhar nisso).
 
-сде́лать (СВ): я сде́лаю (eu farei / vou deixar pronto!) · ты сде́лаешь · он сде́лает.
+сде́лать (СВ):я сде́лаю (eu farei / vou deixar pronto!) · ты сде́лаешь · он сде́лает.
 
 
 ## 13.3 Os 20 Pares Aspectuais Mais Importantes do Exame ТБУ (A2)
@@ -42,19 +42,19 @@ A grande sacada do Futuro Simples (Perfectivo): Como o verbo Perfectivo (сде�
 
 | чита́ть (чита́ю) | прочита́ть (прочита́ю, прочита́ют) | ler |
 |---|---|---|
-| писа́ть (пишу́) | написа́ть (напишу́, напи́шут) | escrever |
-| смотре́ть (смотрю́) · слу́шать | посмотре́ть · послу́шать | assistir/olhar · escutar |
+| писа́ть (пишу)́ | написа́ть (напишу,́ напи́шут) | escrever |
+| смотре́ть (смотрю)́ · слу́шать | посмотре́ть · послу́шать | assistir/olhar · escutar |
 | гото́вить (гото́влю) · о́бедать | пригото́вить · пообе́дать | preparar/cozinhar · almoçar |
-| пи́ть (пью) · е́сть (ем) · учи́ть | вы́пить (вы́пью) · съе́сть (съем) · вы́учить | beber · comer · aprender |
-| 2. Mudando o Sufixo Interno (-ать/-ять ↔ -ить/-нуть) | покупа́ть (покупа́ю) | купи́ть (куплю́, ку́пят) | comprar |
+| пи́ть (пью) · е́сть (ем) · учи́ть | вып́ить (вы́пью) · съе́сть (съем) · выу́чить | beber · comer · aprender |
+| 2. Mudando o Sufixo Interno (-ать/-ять ↔ -ить/-нуть) | покупа́ть (покупа́ю) | купи́ть (куплю,́ ку́пят) | comprar |
 
-| реша́ть (реша́ю) · отве́чать | реши́ть (решу́) · отве́тить (отве́чу) | resolver/decidir · responder |
+| реша́ть (реша́ю) · отве́чать | реши́ть (решу)́ · отве́тить (отве́чу) | resolver/decidir · responder |
 |---|---|---|
-| получа́ть (получа́ю) · встреча́ть | получи́ть (получу́) · встре́тить (встре́чу) | receber · encontrar |
-| открыва́ть · закрыва́ть | откры́ть (откро́ю) · закры́ть (закро́ю) | abrir · fechar |
-| начина́ть · зака́нчивать | нача́ть (начну́) · зако́нчить (зако́нчу) | começar · terminar |
-| понима́ть · отдыха́ть · дава́ть | поня́ть (пойму́) · отдохну́ть · дать (дам, даду́т) | entender · descansar · dar |
-| 3. Raízes Diferentes (O Trio Rei) | говори́ть · брать (беру́) · класть | сказа́ть (скажу́, ска́жут) · взять (возьму́) · положи́ть | dizer/falar · pegar · colocar |
+| получа́ть (получа́ю) · встреча́ть | получи́ть (получу)́ · встре́тить (встре́чу) | receber · encontrar |
+| открыва́ть · закрыва́ть | открыт́ь (откро́ю) · закрыт́ь (закро́ю) | abrir · fechar |
+| начина́ть · зака́нчивать | нача́ть (начну)́ · зако́нчить (зако́нчу) | começar · terminar |
+| понима́ть · отдыха́ть · дава́ть | поня́ть (пойму)́ · отдохну́ть · дать (дам, даду́т) | entender · descansar · dar |
+| 3. Raízes Diferentes (O Trio Rei) | говори́ть · брать (беру)́ · класть | сказа́ть (скажу,́ ска́жут) · взять (возьму)́ · положи́ть | dizer/falar · pegar · colocar |
 
 
 ## 13.4 Os Verbos Reflexivos (-СЯ e -СЬ): como funcionam
@@ -63,21 +63,21 @@ Muitos verbos russos terminam na partícula reflexiva -СЯ / -СЬ (contração
 
 A Regra Automática (-СЯ vs. -СЬ):
 
-Depois de consoante, -й ou -ь → cole -СЯ: он у́чится,мы у́чимся,они́ у́чатся,он учи́лся.
+Depois de consoante, -й ou -ь → cole -СЯ: он у́чится, мы у́чимся, они́ у́чатся, он учи́лся.
 
-Depois de vogal → cole -СЬ: я учу́сь,вы у́читесь,она́ учи́лась,они́ учи́лись.
+Depois de vogal → cole -СЬ: я учу́сь, вы у́читесь, она́ учи́лась, они́ учи́лись.
 
 
-## 13.5 O Imperativo: ordens, pedidos, conselhos e convites (Дава́й / Дава́йте)
+## 13.5 O Imperativo: ordens, pedidos, conselhos e convites (Дав й / Дав йте)
 
 Para pedir algo a um amigo (ты) ou a alguém formal/plural (вы, acrescentando -те):
 
 | REGRA (CORTE A TERMINAÇÃO DE ОНИ NO PRESENTE) | PARA ТЫ (INFORMAL) | PARA ВЫ (FORMAL OU PLURAL: +ТЕ) | EXEMPLOS MAIS USADOS NA VIDA REAL |
 |---|---|---|---|
 | 1. Raiz termina em VOGAL → +Й (чита́-ют, де́ла-ют, ду́ма-ют) | Чита́й! Де́лай! | Чита́йте! Де́лайте! | Слу́шай(те)! (Escute!) · Отдыха́й(те)! (Descanse!) · Не опа́здывай(те)! (Não se atrase!) |
-| 2. Raiz termina em CONSOANTE → +И (говор-я́т, ска́ж-ут, пи́ш-ут, иду́т) | Говори́! Скажи́! | Говори́те! Скажи́те! | Скажи́те, пожа́луйста... (Diga-me, por favor...) · Покажи́(те)! (Mostre!) · Помоги́(те)! (Ajude!) · Иди́(те)! (Vá!) · Подожди́(те)! (Espere!) |
+| 2. Raiz termina em CONSOANTE → +И (говор-ят́, ска́ж-ут, пи́ш-ут, иду́т) | Говори!́ Скажи!́ | Говори́те! Скажи́те! | Скажи́те, пожа́луйста... (Diga-me, por favor...) · Покажи(́те)! (Mostre!) · Помоги(́те)! (Ajude!) · Иди(́те)! (Vá!) · Подожди(́те)! (Espere!) |
 | 3. Raiz em consoante com acento fixo → +Ь | Отве́ть! · Вста́нь! | Отве́тьте! · Вста́ньте! | Познако́мьтесь! (Conheça / Muito prazer!) · Бу́дьте здоро́вы! (Saúde!) |
-| 4. Convite "Vamos..." (Дава́й / Дава́йте) | Дава́й + Inf. НСВ ou 1ª pl. СВ | Дава́йте + Inf. НСВ ou 1ª pl. СВ | Дава́йте рабо́тать! (Vamos trabalhar!) · Дава́й пойдём в кафе́! (Vamos ao café!) |
+| 4. Convite "Vamos..." (Дава́й / Дава́йте) | Дава́й + Inf. НСВ ou 1ª pl. СВ | Дава́йте + Inf. НСВ ou 1ª pl. СВ | Дава́йте рабо́тать! (Vamos trabalhar!) · Дава́й пойдём в кафе!́ (Vamos ao café!) |
 
 
 ## 13.6 EXERCÍCIOS
@@ -117,7 +117,7 @@ Exercício 3: 1. -сь / -сь / -ся — 2. -ся / -ся — 3. Скажи́�
 | TEMPO | IMPERFECTIVO (НСВ — PROCESSO / HÁBITO) | PERFECTIVO (СВ — RESULTADO ÚNICO CONCLUÍDO) |
 |---|---|---|
 | ODASSAP | я чита́л(а) · покупа́л(а) (lia / comprava) | я прочита́л(а) · купи́л(а) (li tudo / comprei) |
-| ETNESERP | я чита́ю · покупа́ю (estou lendo / compro) | Nãoexistenopresente |
+| ETNESERP | я чита́ю · покупа́ю (estou lendo / compro) | Não existe no presente |
 | ORUTUF | я бу́ду чита́ть · бу́ду покупа́ть | я прочита́ю · куплю́ (lerei tudo / comprarei) |
 
 

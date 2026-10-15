@@ -336,16 +336,16 @@ Espera — elas não mudam? Na verdade, não mudam no singular. Мать é ма
 
 | NOMINATIVO | ACUSATIVO (OBJETO DIRETO) | PRONÚNCIA | EXEMPLO PRÁTICO |
 |---|---|---|---|
-| я / ты | меня́ / тебя́ | miniá / tibiá | Ты понима́ешь меня́? · Я люблю́ тебя́. |
-| он (оно́) / она́ | его́ / её | ivó / iió | Я зна́ю его́. · Он ви́дит её. |
+| я / ты | меня́ / тебя́ | miniá / tibiá | Ты понима́ешь меня?́ · Я люблю́ тебя.́ |
+| он (оно́) / она́ | его́ / её | ivó / iió | Я зна́ю его.́ · Он ви́дит её. |
 | мы / вы / они́ | нас / вас / их | nas / vas / ikh | Они́ ждут нас. · Мы зна́ем их. |
 
 | GÊNERO NO ACUSATIVO | ADJETIVO NO ACUSATIVO | POSSESSIVOS E DEMONSTRATIVOS | EXEMPLO COMPLETO |
 |---|---|---|---|
 | Masc. Inanimado | NÃO MUDA (-ый / -ой / -ий) | мой, твой, наш, ваш, э́тот | Я ви́жу э́тот но́вый дом. |
 | Masc. Animado | -ОГО / -ЕГО (soa -óva/-iéva) | моего́, твоего́, на́шего, ва́шего, э́того | Я зна́ю твоего́ но́вого дру́га. |
-| Feminino | -УЮ / -ЮЮ | мою́, твою́, на́шу, ва́шу, э́ту | Я чита́ю мою́ но́вую кни́гу. |
-| Neutro | NÃO MUDA (-ое / -ее) | моё, твоё, на́ше, ва́ше, э́то | Я пью холо́дное молоко́. |
+| Feminino | -УЮ / -ЮЮ | мою́, твою́, на́шу, ва́шу, э́ту | Я чита́ю мою́ но́вую книѓу. |
+| Neutro | NÃO MUDA (-ое / -ее) | моё, твоё, на́ше, ва́ше, э́то | Я пью холо́дное молоко.́ |
 
 
 ## 6.11 Os erros que o brasileiro VAI cometer no acusativo
@@ -596,7 +596,7 @@ NEUTRO: NUNCA MUDA.
 
 | inanimado | consoante · й | não muda | дом → дом стол → стол |
 |---|---|---|---|
-| ONINIMEF | sempre | а | muda para у | кни́га → кни́гу |
+| ONINIMEF | sempre | а | muda para у | книѓа → книѓу |
 
 | sempre | я | muda para ю | тётя → тётю |
 |---|---|---|---|

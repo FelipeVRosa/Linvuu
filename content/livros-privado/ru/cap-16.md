@@ -32,7 +32,7 @@ Como estudar com ele
 
 1. 1. Leia primeiro a Parte 1. Números, dias, meses, família, profissões, cores e lugares da cidade aparecem em quase toda prova, e é mais fácil memorizar por tema do que em ordem alfabética.
 2. 2. Use a Parte 2 como consulta e como checklist. Passe os olhos na lista e marque as palavras que você ainda não reconhece. Essas são as que valem estudo.
-3. 3. Aprenda cada verbo com o par de aspecto (делать /сделать). O primeiro é o imperfectivo, o segundo, o perfectivo. Os dois contam como a mesma palavra na lista.
+3. 3. Aprenda cada verbo com o par de aspecto (делать / сделать). O primeiro é o imperfectivo, o segundo, o perfectivo. Os dois contam como a mesma palavra na lista.
 4. 4. Fixe o acento. O russo escreve sem marcar o acento, mas ele muda a pronúncia e, às vezes, o significado. Treine em voz alta.
 5. 5. Os apêndices ajudam a vocabulário e a gramática. Sinônimos e antônimos ampliam o vocabulário em pares, e os termos linguísticos ajudam a entender as instruções da prova.
 6. 6. Pratique ouvindo. Na Linvuu (linvuu.com.br) você encontra áudios e exercícios para treinar esses temas.

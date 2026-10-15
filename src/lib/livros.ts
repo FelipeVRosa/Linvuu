@@ -26,6 +26,7 @@ export const LIVROS_META: MetaLivro[] = [
   { id: 'es', nome: 'Espanhol', saudacao: 'Hola', lang: 'es', descricao: 'Gramática prática do espanhol para quem fala português, do zero ao A2. Cada capítulo parte de uma armadilha que o português cria, dos falsos amigos ao ser e estar.' },
   { id: 'de', nome: 'Alemão', saudacao: 'Hallo', lang: 'de', descricao: 'Gramática prática do alemão para quem fala português, do zero ao A2: sons, casos, ordem da frase e os erros que brasileiros mais cometem.' },
   { id: 'fr', nome: 'Francês', saudacao: 'Bonjour', lang: 'fr', descricao: 'Gramática prática do francês para quem fala português, do zero ao A2: da pronúncia e da ortografia ao passé composé, explicados em português.' },
+  { id: 'ru', nome: 'Russo', saudacao: 'Привет', lang: 'ru', descricao: 'Gramática prática do russo para quem fala português, do alfabeto ao A2: gênero, casos, verbos e as armadilhas que o português cria, explicados em português.' },
   { id: 'it', nome: 'Italiano', saudacao: 'Ciao', lang: 'it', descricao: 'Gramática prática do italiano para quem fala português, do zero ao A2, com atenção às semelhanças que enganam e às diferenças que ninguém avisa.' },
 ];
 export const livroMeta = (id: string) => LIVROS_META.find((l) => l.id === id);

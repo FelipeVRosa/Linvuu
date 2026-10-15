@@ -316,7 +316,7 @@ Exemplos práticos:
 
 | RUSSO | TRADUÇÃO |
 |---|---|
-| Я люблю́ тебя́. | Eu amo você. |
+| Я люблю́ тебя.́ | Eu amo você. |
 | Ты мне нра́вишься. | Você me agrada. (Gosto de você, mas menos intenso.) |
 | Я люблю́ ру́сский язы́к. | Eu amo a língua russa. (sentimento profundo) |
 | Мне нра́вится ру́сский язы́к. | Eu gosto da língua russa. (prazer de aprender) |
@@ -353,7 +353,7 @@ Repare: a forma de ну́жно concorda com a coisa (o objeto da necessidade), 
 
 ну́жны — quando o substantivo é plural.
 
-Mas a pessoa está sempre no dativo. Мне ну́жно — a mim é necessário. A necessidade acontece a você.
+Mas a pessoa está sempre no dativo.Мне ну́жно — a mim é necessário. A necessidade acontece a você.
 
 НА́ДО — precisar (sinônimo de ну́жно)
 
@@ -517,10 +517,10 @@ Aqui está a tabela que resolve tudo:
 | GÊNERO / NÚMERO | SUBSTANTIVO | ADJETIVO NO DATIVO | POSSESSIVOS E DEMONSTRATIVOS | EXEMPLO COMPLETO |
 |---|---|---|---|---|
 | Masculino e Neutro | -У / -Ю | -ОМУ / -ЕМУ | моему́, твоему́, на́шему, ва́шему, э́тому | Я звоню́ моему́ лу́чшему дру́гу. |
-| Feminino | -Е / -И / -ИИ | -ОЙ / -ЕЙ | мое́й, твое́й, на́шей, ва́шей, э́той | Он помога́ет свое́й сестре́. |
+| Feminino | -Е / -И / -ИИ | -ОЙ / -ЕЙ | мое́й, твое́й, на́шей, ва́шей, э́той | Он помога́ет свое́й сестре.́ |
 | Plural (Todos) | -АМ / -ЯМ | -ЫМ / -ИМ | мои́м, твои́м, на́шим, ва́шим, э́тим | Мы пи́шем на́шим друзья́м. |
 
-Preposições do Dativo: К (КО) = movimento em direção a uma pessoa ou médico (идти́ к врачу́,е́хать к дру́гу,ко мне). ПО = ao longo de, por meio de, matéria (гуля́ть по у́лице /по го́роду,говори́ть по телефо́ну,кни́га по исто́рии).
+Preposições do Dativo:К (КО) = movimento em direção a uma pessoa ou médico (идти́ к врачу́, е́хать к дру́гу, ко мне). ПО = ao longo de, por meio de, matéria (гулят́ь по у́лице / по го́роду, говори́ть по телефо́ну, кни́га по исто́рии).
 
 
 ## 8.11 A grande diferença do dativo
@@ -729,9 +729,9 @@ Escolha o verbo correto e conjugue-o.
 7. 7. Мне ___ (agradar) ко́фе.
 8. 8. Она́ ___ (amar) свою́ соба́ку.
 9. 9. Им ___ (agradar) э́тот фильм.
-10. 10. Я ___ (amar) тебя́.
+10. 10. Я ___ (amar) тебя.́
 
-EXERCÍCIO 5 — COMPLETE COM НУЖНО, НУЖЕН, НУЖНА́ OU НУ́ЖНЫ
+EXERĆÍCIO 5 — COMPLETE COM НУЖНО, НУЖЕН, НУЖНА́ OU НУЖНЫ
 
 1. 1. Мне ___ рабо́тать.
 2. 2. Мне ___ по́мощь. (feminino)

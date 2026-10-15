@@ -246,9 +246,7 @@ Observações importantes:
 
 1. 1. A raiz é sempre a mesma. НОВ-, СТАР-, БОЛЬШ-, МАЛЕНЬК-, ХОРОШ-, ПЛОХ-, КРАСИВ-, РУССК-, СИН-, ХОЛОДН-, ГОРЯЧ-, ДОРОГ-, ДЕШЁВ-, МОЛОД-, УМН-, ВКУСН-, СЛАДК-, БЕЛ-, ЧЁРН-.
 2. 2. A terminação muda conforme o gênero. E você só precisa decorar a masculina.
-3. 3. A tônica pode mudar. Большо́й → больша́я (a tônica se move). Дорого́й → дорога́я (a tônica se move). У́мный → у́мная (a tônica fica no mesmo lugar).
-
-Isso não afeta a terminação, mas afeta a pronúncia.
+3. 3. A tônica pode mudar. Большо́й → больша́я (a tônica se move). Дорого́й → дорога́я (a tônica se move). У́мный → у́мная (a tônica fica no mesmo lugar). Isso não afeta a terminação, mas afeta a pronúncia.
 
 
 ## 3.7 A "família do синий" — a única exceção real
@@ -363,9 +361,7 @@ Uma palavra, um mundo: э́то (éta — "isto é / este é"). Ela nunca muda, 
 
 O seu primeiro diálogo em russo:
 
-— Что э́то? (Chto éta? — O que é isto?) — Э́то кни́га. (Éta kníga. — É um livro.)
-
-— Кака́я кни́га? (Kakáia kníga? — Que livro?) — Но́вая. (Nóvaia. — Novo.)
+— Что э́то? (Chto éta? — O que é isto?) — Э́то кни́га. (Éta kníga. — É um livro.) — Кака́я кни́га? (Kakáia kníga? — Que livro?) — Но́вая. (Nóvaia. — Novo.)
 
 E frases cheias, com tudo o que você aprendeu:
 
@@ -599,9 +595,7 @@ Traduza.
 
 EXERCÍCIO 10 — DESAFIO FINAL
 
-Olhe ao seu redor. Escolha 5 objetos e descreva-os em russo, usando "Э́то +
-
-adjetivo + substantivo".
+Olhe ao seu redor. Escolha 5 objetos e descreva-os em russo, usando "Э́то + adjetivo + substantivo".
 
 Modelo: Э́то но́вый компью́тер. Э́то холо́дная вода́.
 
@@ -641,7 +635,7 @@ EXERCÍCIO 4:
 
 1. 1. но́вый дом (дом é masculino) — 2. си́нее мо́ре (neutro) — 3. больша́я соба́ка (fem.) — 4. ма́ленькая ко́шка (fem.) — 5. дорога́я кни́га (fem.; note a mudança de acento) — 6. но́вое вре́мя (-мя = neutro) — 7. у́мная соба́ка (fem.) — 8. си́няя кни́га (fem. da família do синий) — 9. ру́сский язы́к (masc.) — 10. хоро́ший день (masc.; -ИЙ ortográfico)
 
-EXERCÍCIO 5 (RESPOSTAS -MODELO):
+EXERCÍCIO 5 (RESPOSTAS-MODELO):
 
 1. 1. но́вый дом — 2. краси́вая гита́ра — 3. вку́сное пи́во — 4. си́нее мо́ре —
 5. 5. дорого́й ко́фе — 6. у́мная соба́ка — 7. большо́й го́род — 8. дешёвая маши́на
@@ -689,11 +683,11 @@ Exercício 10: Resposta pessoal.
 
 | MASCULINO | RADICAL | FEMININO | NEUTRO | PLURAL |
 |---|---|---|---|---|
-| большо́й | больш- | больша́я | большо́е | больши́е |
+| большо́й | больш- | больша́я | большо́е | большие́ |
 | но́вый | нов- | но́вая | но́вое | но́вые |
 | ста́рый | стар- | ста́рая | ста́рое | ста́рые |
 | хоро́ший | хорош- | хоро́шая | хоро́шее | хоро́шие |
-| дорого́й | дорог- | дорога́я | дорого́е | дороги́е |
+| дорого́й | дорог- | дорога́я | дорого́е | дорогие́ |
 | си́ний | син- | си́няя | си́нее | си́ние |
 
 

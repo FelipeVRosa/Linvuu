@@ -2,7 +2,7 @@ name: App Android (APK de teste)
 on:
   workflow_dispatch:
   pull_request:
-    paths: ['android/**', 'capacitor.config.ts', 'src/**', 'public/**', 'scripts/app-android.mjs', 'package*.json']
+    paths: ['android/**', 'capacitor.config.ts', 'scripts/app-android.mjs']
 permissions:
   contents: read
 jobs:
@@ -30,8 +30,9 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
+        continue-on-error: true # se a cota de armazenamento do GitHub estiver cheia, o APK compilou mesmo assim
         with:
           name: linvuu-debug-apk
           path: android/app/build/outputs/apk/debug/*.apk
-          retention-days: 2
+          retention-days: 1
           if-no-files-found: error

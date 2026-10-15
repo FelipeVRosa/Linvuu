@@ -4,6 +4,7 @@
 import { COMECAR } from './comecar.ts';
 import fs from 'node:fs';
 import path from 'node:path';
+import { SESSOES_GRATIS, SESSOES_POR_AULA } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, POR_QUE } from './institucional.ts';
@@ -12,6 +13,7 @@ import { AUTORES, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, ti
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
+  raiz?: string;
   livros: Record<string, { sumario: ItemSumario[]; caps: Record<number, CapituloLivro> }>;
   cursos: CursoMeta[];
   indice: Record<string, { total: number; grupos?: { aula: number; titulo: string; dias: [number, number] }[]; fonte?: string; tr?: Record<string, { g: Record<string, string>; aulas?: number[] }> }>;
@@ -28,7 +30,7 @@ export function carregarDadosMeta(raiz: string): DadosMeta | null {
       if (!fs.existsSync(f)) continue;
       for (const [id, t] of Object.entries(JSON.parse(fs.readFileSync(f, 'utf8')) as Record<string, { g: Record<string, string>; aulas?: number[] }>)) if (indice[id]) (indice[id].tr ??= {})[l] = t;
     }
-    return { cursos, indice, livros: carregarLivros(raiz) };
+    return { raiz, cursos, indice, livros: carregarLivros(raiz) };
   } catch {
     return null;
   }
@@ -167,7 +169,14 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // A sessão só existe de verdade num idioma quando a explicação está nele: o original ou a tradução daquela aula.
     // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
     const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
-    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo) };
+    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+      // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
+      jsonld: n <= SESSOES_GRATIS ? [{
+        '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: tx.aulaD(c.nome, g.aula, t, n, total), url: `${SITE}${caminhoEm(loc.codigo, p)}`,
+        inLanguage: loc.codigo, learningResourceType: 'Lesson', educationalLevel: 'A1 (CEFR)', teaches: c.nome, timeRequired: 'PT30M', isAccessibleForFree: true,
+        isPartOf: { '@type': 'Course', name: tx.cursoJ(c.nome), url: `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}` }, provider: { '@id': ORG_ID },
+      }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: tx.inicio, item: `${SITE}${loc.prefixo || '/'}` }, { '@type': 'ListItem', position: 2, name: c.nome, item: `${SITE}${caminhoEm(loc.codigo, `/curso/${c.id}`)}` }, { '@type': 'ListItem', position: 3, name: tx.sessao(n, c.nome), item: `${SITE}${caminhoEm(loc.codigo, p)}` }] }] : undefined };
   }
   m = p.match(/^\/gramatica(?:\/([^/]+))?$/);
   if (m) {
@@ -216,7 +225,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
       corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.map((g) => a(`/curso/${mc[1]}/dia/${g.dias[0]}`, `${tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]}`)));
     } else if (md) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
+      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.titulo, m.descricao);
     }
@@ -226,6 +235,33 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));
   const menu = loc.codigo === 'pt-BR' ? '<nav aria-label="Principal"><a href="/cursos">Cursos</a> · <a href="/livros">Livros</a> · <a href="/sobre">Quem somos</a> · <a href="/por-que-linvuu">Por que estudar com a Linvuu?</a> · <a href="/contato">Contato</a> · <a href="/privacidade">Privacidade</a></nav>' : '';
   return corpo ? `<main data-prerender>${menu}${corpo}</main>` : '';
+}
+
+/** Sessão de aula grátis (dias 1 a SESSOES_GRATIS) em HTML simples para quem não executa JavaScript. O que é pago nunca passa por aqui. */
+type Bloco = Record<string, any>;
+const cacheAulas = new Map<string, any>();
+function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): string {
+  if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
+  const aulaN = Math.ceil(dia / SESSOES_POR_AULA), idx = (dia - 1) % SESSOES_POR_AULA;
+  const f = path.join(d.raiz, 'content', 'idiomas', curso, 'aulas', `aula-${String(aulaN).padStart(3, '0')}.json`);
+  let aula = cacheAulas.get(f);
+  if (!aula) { try { aula = JSON.parse(fs.readFileSync(f, 'utf8')); cacheAulas.set(f, aula); } catch { return ''; } }
+  const sessao = aula.sessoes?.[idx];
+  if (!sessao) return '';
+  const t = (x: unknown) => esc(String(x ?? ''));
+  const paras = (x: string) => String(x ?? '').split(/\s*PASSO \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
+  const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
+  const partes: string[] = [`<p>${t(aula.objetivo)}</p>`];
+  for (const b of sessao.blocos as Bloco[]) {
+    if (b.tipo === 'intro' || b.tipo === 'revisao') partes.push(`<p>${t(b.texto ?? b.enunciado)}</p>`);
+    else if (b.tipo === 'palavras') partes.push(`<h2>Vocabulário</h2>${tab(b.itens.map((i: Bloco) => ({ [curso]: i.ru, pronúncia: i.translit, português: i.pt })))}`);
+    else if (b.tipo === 'alfabeto') partes.push(`<h2>Alfabeto e sons</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab(g.letras.map((l: Bloco) => ({ letra: `${l.maiuscula} ${l.minuscula}`, som: l.som, exemplo: l.exemplo, tradução: l.exemploPt })))}`).join(''));
+    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>Em português:</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(e.pt)}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}${b.erros ? `<h3>Erros comuns</h3><ul>${b.erros.map((e: Bloco) => `<li>${t(e.errado)} → ${t(e.certo)}. ${t(e.motivo)}</li>`).join('')}</ul>` : ''}`);
+    else if (b.tipo === 'dialogo') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.contexto)}</p><ul>${b.linhas.map((l: Bloco) => `<li><strong>${t(l.personagem)}:</strong> ${t(l.ru)} <em>${t(l.pt)}</em></li>`).join('')}</ul>`);
+    else if (b.tipo === 'texto') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.ru)}</p><p>${t(b.pt)}</p>`);
+    else if (b.tipo === 'producao') partes.push(`<p><strong>Pratique:</strong> ${t(b.enunciado)}</p>`);
+  }
+  return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
 }
 
 const SITE = 'https://linvuu.com.br';

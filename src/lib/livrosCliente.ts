@@ -1,7 +1,7 @@
 // Leitura dos capítulos e sumários no navegador (o Vite separa cada capítulo em um arquivo pequeno, baixado só quando alguém abre a página).
 import type { CapituloLivro, ItemSumario } from './livros';
 
-const capitulos = import.meta.glob('../../content/livros/*/cap-*.json', { import: 'default' }) as Record<string, () => Promise<CapituloLivro>>;
+const capitulos = import.meta.glob('../../content/livros/*/cap-0[12].json', { import: 'default' }) as Record<string, () => Promise<CapituloLivro>>;
 const sumarios = import.meta.glob('../../content/livros/*/sumario.json', { import: 'default' }) as Record<string, () => Promise<ItemSumario[]>>;
 
 export const carregarCapitulo = async (id: string, n: number): Promise<CapituloLivro | null> => {

@@ -913,16 +913,16 @@ Três leis ortográficas explicam 90% das aparentes "exceções" nos substantivo
 
 | REGRA | LETRAS GATILHO | PROIBIDO | ESCREVE- SE | EXEMPLOS NO LIVRO |
 |---|---|---|---|---|
-| 1. Regra das 7 Letras | Г, К, Х, Ж, Ч, Ш, Щ | ❌ Ы | ✅ И | кни́га → кни́ги · ру́сский |
+| 1. Regra das 7 Letras | Г, К, Х, Ж, Ч, Ш, Щ | ❌ Ы | ✅ И | книѓа → книѓи · рус́ский |
 | 2. Regra das 5 Sibilantes | Ж, Ч, Ш, Щ, Ц | ❌ О (átono) | ✅ Е | хоро́шее · му́жем (mas врачо́м) |
 | 3. Regra das 8 Letras | Г, К, Х, Ж, Ч, Ш, Щ, Ц | ❌ Я / Ю | ✅ А / У | учу́ · молча́т |
 
-| FAMÍLIA | LETRAS | EXEMPLOS -CHAVE |
+| FAMÍLIA | LETRAS | EXEMPLOS-CHAVE |
 |---|---|---|
 | SACITNÊDI | А · К · М · О · Т | ма́ма · кот · дом · там |
 | SAGIMA SASLAF | В (v) · Е (ié) · Н (n) · Р (r) · С (s) · У (u) · Х (kh) | вода́ · нет · нос · рука́ · рестора́н · у́тро · хорошо́ |
 | SARUD SIAGOV | А · О · У · Э · Ы | ма́ма · молоко́ (malakó) · у́тро · э́то · мы |
-| SADNARB SIAGOV | Я (iá) · Ё (ió) · Ю (iú) · Е (ié) · И (i) | я · ёлка · юг · не́бо · кни́га |
+| SADNARB SIAGOV | Я (iá) · Ё (ió) · Ю (iú) · Е (ié) · И (i) | я · ёлка · юг · не́бо · книѓа |
 | SIANIS / SETNAIHC | Ж · Ц · Ч · Ш · Щ · Ь · Ъ | журна́л · центр · чай · шко́ла · борщ · день |
 
 

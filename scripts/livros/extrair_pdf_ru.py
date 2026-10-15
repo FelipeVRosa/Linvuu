@@ -5,6 +5,15 @@ import pdfplumber
 logging.getLogger('pdfminer').setLevel(logging.ERROR)
 ap = argparse.ArgumentParser(); ap.add_argument('--pdf', required=True); ap.add_argument('--saida', required=True); ap.add_argument('--ini', type=int, default=1); ap.add_argument('--fim', type=int, default=9999); a = ap.parse_args()
 pdf = pdfplumber.open(a.pdf)
+# correções do texto do PDF oficial a avisar ao revisor (resto de uma autocorreção no meio da frase)
+
+VOG = 'аеёиоуыэюяАЕЁИОУЫЭЮЯ'
+def conserta_acento(t):
+    """O PDF às vezes põe o acento tônico na consoante seguinte à vogal (кни́га sai книѓа):
+    desloca a marca para a vogal imediatamente anterior."""
+    t = t.replace('\u0453', 'г\u0301').replace('\u045c', 'к\u0301')
+    return re.sub(r'([%s])([бвгджзклмнпрстфхцчшщйьъБВГДЖЗКЛМНПРСТФХЦЧШЩ])\u0301' % VOG, lambda m: m.group(1) + '\u0301' + m.group(2), t)
+CORRECOES = {'; mês (месяц? não, mês é месяц, consoante)': ''}
 FOOT = re.compile(r'^(LINVUU\s*·|L\s*I\s*N\s*V\s*U\s*U)')
 def juntaespacado(s):  # "S E A PA L AV RA" (títulos com espaçamento) -> mantém como está
     return s
@@ -12,21 +21,41 @@ import unicodedata
 def texto_linha(chars):
     """Remonta o texto de uma linha: cada acento (marca combinante, largura zero) vai para a letra sob ele; espaços vêm das lacunas."""
     marcas = [c for c in chars if unicodedata.combining(c['text'][:1]) or c['text'] == '\u0301']
-    bases = sorted([c for c in chars if c not in marcas and c['text'].strip() != ''], key=lambda c: (round(c['x0'], 1)))
+    bases = sorted([c for c in chars if c not in marcas], key=lambda c: (round(c['x0'], 1)))
     anexos = {id(b): '' for b in bases}
     for m in marcas:
         if not bases: break
         b = min(bases, key=lambda c: 0 if c['x0'] - 0.6 <= m['x0'] <= c['x1'] + 0.6 else min(abs(m['x0'] - c['x0']), abs(m['x0'] - c['x1'])) + 100)
         anexos[id(b)] += m['text']
+    import statistics
+    reais = [b for b in bases if b['text'].strip() != '']
+    gaps = [reais[i + 1]['x0'] - reais[i]['x1'] for i in range(len(reais) - 1)]
+    lim = (statistics.median(gaps) if gaps else 0) + 1.2
     out, prev = '', None
     for b in bases:
-        if prev is not None and b['x0'] - prev['x1'] > 1.2: out += ' '
+        if b['text'].strip() == '':
+            if out and not out.endswith(' '): out += ' '
+            continue
+        if prev is not None and b['x0'] - prev['x1'] > lim and not out.endswith(' '): out += ' '
         t = b['text'].replace('\u0453', 'г\u0301').replace('\u045c', 'к\u0301')
         out += t + anexos[id(b)]; prev = b
     return out
+def funde_acentos(pg):
+    """Devolve uma página cujos 'chars' já trazem cada acento colado na letra sob ele."""
+    chars = pg.chars; marcas = [c for c in chars if unicodedata.combining(c['text'][:1]) or c['text'] == '\u0301']
+    if not marcas: return pg
+    ids = {id(m) for m in marcas}; bases = [dict(c) for c in chars if id(c) not in ids]
+    for m in marcas:
+        cand = [b for b in bases if b['text'].strip() and abs(b['top'] - m['top']) < 12 and b['x0'] - 0.6 <= m['x0'] <= b['x1'] + 0.6]
+        if not cand: cand = [b for b in bases if b['text'].strip() and abs(b['top'] - m['top']) < 12]
+        if not cand: continue
+        b = min(cand, key=lambda b: abs((b['x0'] + b['x1']) / 2 - m['x0']))
+        b['text'] += m['text']
+    for b in bases: b['text'] = b['text'].replace('\u0453', 'г\u0301').replace('\u045c', 'к\u0301')
+    novo = pg.filter(lambda o: True); objs = dict(novo.objects); objs['char'] = bases; novo._objects = objs
+    return novo
 def texto_area(pg):
-    ls = pg.extract_text_lines(return_chars=True)
-    return ' '.join(texto_linha(l['chars']) for l in ls).strip()
+    return ' '.join(l['text'] for l in funde_acentos(pg).extract_text_lines()).strip()
 def tabelas_da_pagina(pg):
     """Tabelas desenhadas como retângulos preenchidos (células). Devolve lista de (bbox, linhas de texto)."""
     cel = [r for r in pg.rects if 20 < r['x1'] - r['x0'] < 485 and r['bottom'] - r['top'] > 8]
@@ -56,7 +85,7 @@ def pagina(pg):
         if o['object_type'] != 'char': return True
         cx, cy = (o['x0'] + o['x1']) / 2, (o['top'] + o['bottom']) / 2
         return not any(c['x0'] <= cx <= c['x1'] and c['top'] <= cy <= c['bottom'] for c in cels)
-    resto = pg.filter(fora)
+    resto = funde_acentos(pg.filter(fora))
     els = []
     linhas = resto.extract_text_lines(return_chars=True)
     # fragmentos de títulos (letra acentuada em linha própria) voltam para a linha do título
@@ -68,7 +97,7 @@ def pagina(pg):
             alvo['chars'] = alvo['chars'] + l['chars']; l['_m'] = True
     for l in linhas:
         if l.get('_m'): continue
-        size = round(max(c['size'] for c in l['chars']), 1); txt = texto_linha(l['chars']).strip()
+        size = round(max(c['size'] for c in l['chars']), 1); txt = l['text'].strip()
         if not txt or size < 7 or FOOT.match(txt): continue
         els.append({'k': 'l', 'top': l['top'], 'bottom': l['bottom'], 'x0': l['x0'], 'size': size, 'texto': txt})
     for bb, rows, _ in tabs:
@@ -131,7 +160,13 @@ for c in list(caps):  # o apêndice de vocabulário vira o capítulo 16 (não é
         c['blocos'] = c['blocos'][:i]; caps.append(ap_)
 for c in caps:
     for b in c['blocos']:
-        if 'texto' in b: b['texto'] = b['texto'].replace('of icial', 'oficial')
+        if 'texto' in b: b['texto'] = conserta_acento(b['texto'].replace('of icial', 'oficial'))
+        for l_ in b.get('linhas', []):
+            for j_ in range(len(l_)): l_[j_] = conserta_acento(l_[j_])
+        for k_, v_ in CORRECOES.items():
+            if 'texto' in b: b['texto'] = b['texto'].replace(k_, v_)
+            for l_ in b.get('linhas', []):
+                for j_ in range(len(l_)): l_[j_] = l_[j_].replace(k_, v_)
 for c in caps:
     for b in c['blocos']: b.pop('_x', None)
     json.dump(c, open(f"{a.saida}/cap-{c['n']:02d}.json", 'w'), ensure_ascii=False, indent=1)

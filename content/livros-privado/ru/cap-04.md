@@ -17,9 +17,7 @@ Verbo é a palavra que expressa ação, estado ou ocorrência. É aquilo que a p
 
 "Nós ___ livros." → lemos, compramos, escrevemos → verbo.
 
-O verbo é a espinha dorsal da frase. Sem verbo, não há ação. Sem verbo, não há frase completa. Você já sabe dizer "Э́то но́вый дом" (isto é uma casa nova). Mas
-
-ainda não sabe dizer "Eu construo uma casa nova" ou "Ele mora numa casa nova". Isso é assunto desta aula.
+O verbo é a espinha dorsal da frase. Sem verbo, não há ação. Sem verbo, não há frase completa. Você já sabe dizer "Э́то но́вый дом" (isto é uma casa nova). Mas ainda não sabe dizer "Eu construo uma casa nova" ou "Ele mora numa casa nova". Isso é assunto desta aula.
 
 E a boa notícia? O verbo russo é muito mais regular do que você imagina. Muito mais do que o substantivo ou o adjetivo. As exceções são poucas, e as regras são consistentes. Você vai ver.
 
@@ -146,7 +144,7 @@ E com говори́ть (falar):
 
 говор + ите = говори́те (vós falais / vocês falam)
 
-говор + ят = говоря́т (eles falam)
+говор + ят = говорят́ (eles falam)
 
 Repare: no verbo говори́ть, a vogal -и- aparece na raiz (говор-и-ть) mas some nas formas conjugadas (говор-ю). Isso é normal. Os verbos da 2ª conjugação (que terminam em -ить) geralmente perdem o -и- da raiz na 1ª pessoa do singular e usam terminações diferentes (-ишь, -ит, -им, -ите, -ят) nas outras pessoas.
 
@@ -192,7 +190,7 @@ Em russo, os verbos se dividem em duas conjugações. E a diferença entre elas 
 | он / она́ / оно́ | -ИТ | говори́т |
 | мы | -ИМ | говори́м |
 | вы | -ИТЕ | говори́те |
-| они́ | -ЯТ | говоря́т |
+| они́ | -ЯТ | говорят́ |
 
 Como decidir qual conjugação usar? Olhe a terminação do infinitivo:
 
@@ -204,7 +202,7 @@ Exemplos:
 
 чита́ть (ler) → termina em -ать → 1ª conjugação → чита́ю, чита́ешь, чита́ет...
 
-гуля́ть (passear) → -ять → 1ª conjugação → гуля́ю, гуля́ешь, гуля́ет...
+гулят́ь (passear) → -ять → 1ª conjugação → гуля́ю, гуля́ешь, гуля́ет...
 
 боле́ть (doer) → -еть → 1ª conjugação → боле́ю, боле́ешь, боле́ет...
 
@@ -231,7 +229,7 @@ Verbos em -ать, -ять, -еть que seguem as terminações -ю, -ешь, -�
 | чита́- | чита́ть (ler) | чита́ю | чита́ешь | чита́ет | чита́ем | чита́ете | чита́ют |
 | рабо́та- | рабо́тать (trabalhar) | рабо́таю | рабо́таешь | рабо́тает | рабо́таем | рабо́таете | рабо́тают |
 | понимá- | понима́ть (entender) | понима́ю | понима́ешь | понима́ет | понима́ем | понима́ете | понима́ют |
-| гуля́- | гуля́ть (passear) | гуля́ю | гуля́ешь | гуля́ет | гуля́ем | гуля́ете | гуля́ют |
+| гуля-́ | гулят́ь (passear) | гуля́ю | гуля́ешь | гуля́ет | гуля́ем | гуля́ете | гуля́ют |
 | слу́ша- | слу́шать (escutar) | слу́шаю | слу́шаешь | слу́шает | слу́шаем | слу́шаете | слу́шают |
 | дéла- | де́лать (fazer) | де́лаю | де́лаешь | де́лает | де́лаем | де́лаете | де́лают |
 | изуча́- | изуча́ть (estudar) | изуча́ю | изуча́ешь | изуча́ет | изуча́ем | изуча́ете | изуча́ют |
@@ -242,11 +240,11 @@ Verbos em -ить que seguem as terminações -ю, -ишь, -ит, -им, -ит�
 
 | INFINITIVO | RAIZ | Я | ТЫ | ОН | МЫ | ВЫ | ОНИ́ |
 |---|---|---|---|---|---|---|---|
-| говор- | говори́ть (falar) | говорю́ | говори́шь | говори́т | говори́м | говори́те | говоря́т |
-| звон- | звони́ть (telefonar) | звоню́ | звони́шь | звони́т | звони́м | звони́те | звоня́т |
+| говор- | говори́ть (falar) | говорю́ | говори́шь | говори́т | говори́м | говори́те | говорят́ |
+| звон- | звони́ть (telefonar) | звоню́ | звони́шь | звони́т | звони́м | звони́те | звонят́ |
 | люб- | люби́ть (amar) | люблю́ | лю́бишь | лю́бит | лю́бим | лю́бите | лю́бят |
 | смотр- | смотре́ть (olhar) | смотрю́ | смо́тришь | смо́трит | смо́трим | смо́трите | смо́трят |
-| сид- | сиде́ть (estar sentado) | сижу́ | сиди́шь | сиди́т | сиди́м | сиди́те | сидя́т |
+| сид- | сиде́ть (estar sentado) | сижу́ | сиди́шь | сиди́т | сиди́м | сиди́те | сидят́ |
 | уч- | учи́ть (ensinar, aprender) | учу́ | у́чишь | у́чит | у́чим | у́чите | у́чат |
 
 Tipo 1B — ЖИТЬ (verbos com raiz terminando em consoante)
@@ -265,9 +263,9 @@ Atenção: quando a tônica cai na terminação, a letra е vira ё (живёш�
 
 Tipo 2B — verbos irregulares (poucos, mas importantes)
 
-хоте́ть (querer): хочу́, хо́чешь, хо́чет, хоти́м, хоти́те, хотя́т — este verbo é mistura das duas conjugações.
+хоте́ть (querer): хочу́, хо́чешь, хо́чет, хоти́м, хоти́те, хотят́ — este verbo é mistura das duas conjugações.
 
-есть (comer): ем, ешь, ест, еди́м, еди́те, едя́т.
+есть (comer): ем, ешь, ест, еди́м, еди́те, едят́.
 
 пить (beber): пью, пьёшь, пьёт, пьём, пьёте, пью́т.
 
@@ -441,17 +439,15 @@ Agora que você sabe os pronomes pessoais, as duas conjugações, a ausência do
 
 Diálogo 1 — Na aula:
 
-— Что ты де́лаешь? (O que você está fazendo?) — Я чита́ю кни́гу. (Eu estou lendo um livro.) — А он? (E ele?) — Он пи́шет упражне́ние. (Ele está escrevendo um exercício.) — А они́? (E eles?) — Они́ говоря́т по-ру́сски. (Eles estão falando russo.)
+— Что ты де́лаешь? (O que você está fazendo?) — Я чита́ю кни́гу. (Eu estou lendo um livro.) — А он? (E ele?) — Он пи́шет упражне́ние. (Ele está escrevendo um exercício.) — А они́? (E eles?) — Они́ говорят́ по-ру́сски. (Eles estão falando russo.)
 
 Diálogo 2 — Em casa:
 
-— Где ты живёшь? (Onde você mora?) — Я живу́ в Москве́. (Eu moro em Moscou.) — А твоя́ семья́? (E sua família?) — Они́ живу́т в Санкт-Петербу́рге. (Eles moram em São Petersburgo.)
+— Где ты живёшь? (Onde você mora?) — Я живу́ в Москве́. (Eu moro em Moscou.) — А твоя́ семья?́ (E sua família?) — Они́ живу́т в Санкт-Петербу́рге. (Eles moram em São Petersburgo.)
 
 Diálogo 3 — No trabalho:
 
-— Кто э́то? (Quem é este?) — Э́то мой друг. Он рабо́тает здесь. (É meu amigo. Ele trabalha aqui.)
-
-— Он зна́ет ру́сский язы́к? (Ele sabe russo?) — Да, немно́го. (Sim, um pouco.)
+— Кто э́то? (Quem é este?) — Э́то мой друг. Он рабо́тает здесь. (É meu amigo. Ele trabalha aqui.) — Он зна́ет ру́сский язы́к? (Ele sabe russo?) — Да, немно́го. (Sim, um pouco.)
 
 Diálogo 4 — O verbo "ter":
 
@@ -459,7 +455,7 @@ Diálogo 4 — O verbo "ter":
 
 Diálogo 5 — Apresentando-se:
 
-— Приве́т! Как тебя́ зову́т? (Olá! Como você se chama?) — Меня́ зову́т Ива́н. А тебя́? (Eu me chamo Ivan. E você?) — Меня́ зову́т Мари́я. Я изуча́ю ру́сский язы́к. (Eu me chamo Maria. Eu estudo russo.) — Я то́же изуча́ю ру́сский. (Eu também estudo russo.)
+— Приве́т! Как тебя́ зову́т? (Olá! Como você se chama?) — Меня́ зову́т Ива́н. А тебя?́ (Eu me chamo Ivan. E você?) — Меня́ зову́т Мари́я. Я изуча́ю ру́сский язы́к. (Eu me chamo Maria. Eu estudo russo.) — Я то́же изуча́ю ру́сский. (Eu também estudo russo.)
 
 Nota: "Как тебя́ зову́т?" literalmente é "Como te chamam?" — o verbo звать (chamar) está na 3ª pessoa do plural. A resposta é Меня́ зову́т... ("Chamam- me..."). É a fórmula fixa para "Como você se chama?" em russo. Memorize como bloco.
 
@@ -639,7 +635,7 @@ EXERCÍCIO 2:
 EXERCÍCIO 3:
 
 1. 1. чита́ю, чита́ешь, чита́ет, чита́ем, чита́ете, чита́ют
-2. 2. говорю́, говори́шь, говори́т, говори́м, говори́те, говоря́т
+2. 2. говорю́, говори́шь, говори́т, говори́м, говори́те, говорят́
 3. 3. живу́, живёшь, живёт, живём, живёте, живу́т
 4. 4. рабо́таю, рабо́таешь, рабо́тает, рабо́таем, рабо́таете, рабо́тают
 5. 5. люблю́, лю́бишь, лю́бит, лю́бим, лю́бите, лю́бят
@@ -655,7 +651,7 @@ EXERCÍCIO 5:
 
 1. 1. Я живу́ в Москве́. — 2. Ты говори́шь по-ру́сски? — 3. Он чита́ет кни́гу. —
 4. 4. Мы рабо́таем здесь. — 5. Они́ живу́т в Росси́и. — 6. Я люблю́ э́ту кни́гу. — 7. Она́ понима́ет по-ру́сски. — 8. Вы говори́те по-англи́йски? —
-9. 9. Мы изуча́ем вме́сте. — 10. Они́ звоня́т ка́ждый день. — 11. Я пишу́ письмо́. — 12. Мы смо́трим фильм.
+9. 9. Мы изуча́ем вме́сте. — 10. Они́ звонят́ ка́ждый день. — 11. Я пишу́ письмо́. — 12. Мы смо́трим фильм.
 
 EXERCÍCIO 6:
 
@@ -797,8 +793,8 @@ Tempo
 |---|---|---|
 | сейча́с | sieitchás | agora |
 | сего́дня | sivódnia | hoje |
-| за́втра | záftftra | amanhã |
-| вчера́ | ftftchirá | ontem |
+| за́втра | záftra | amanhã |
+| вчера́ | ftchirá | ontem |
 | всегда́ | fsiegdá | sempre |
 | никогда́ | nikagdá | nunca |
 | ча́сто | tchásta | frequentemente |
@@ -883,9 +879,7 @@ Cuidado para não confundir advérbio com adjetivo neutro. Eles podem ter a mesm
 
 Он хорошо́ говори́т. (Ele fala bem.) → хорошо́ é advérbio, modifica o verbo говори́т.
 
-Э́то хоро́шее вино́. (Isto é um vinho bom.) → хоро́шее é adjetivo neutro,
-
-modifica o substantivo вино́.
+Э́то хоро́шее вино́. (Isto é um vinho bom.) → хоро́шее é adjetivo neutro, modifica o substantivo вино́.
 
 A diferença está na função: se modifica verbo, é advérbio; se modifica substantivo, é adjetivo. E o contexto deixa isso claro.
 
@@ -924,9 +918,9 @@ Resumo de bolso — os advérbios
 
 | MUDANÇA NA RAIZ | INFINITIVO | 1ª PESSOA (Я) | 2ª PESSOA (ТЫ) / 3ª PL. (ОНИ) |
 |---|---|---|---|
-| Б, П, В, Ф, М → +Л | люби́ть · гото́вить · спать | я люблю́ · гото́влю · сплю | ты лю́бишь · гото́вишь · спишь |
+| Б, П, В, Ф, М → +Л | люби́ть · гото́вить · спать | я люблю́ · гото́влю · сплю | ты люб́ишь · гото́вишь · спишь |
 | Д, З, Г → Ж | ви́деть · сиде́ть · ходи́ть | я ви́жу · сижу́ · хожу́ | ты ви́дишь · сиди́шь · хо́дишь |
-| С, Х → Ш | писа́ть · проси́ть | я пишу́ · прошу́ | ты пи́шешь · про́сишь |
+| С, Х → Ш | писа́ть · проси́ть | я пишу́ · прошу́ | ты пи́шешь · прос́ишь |
 | Т, К → Ч | плати́ть · мочь | я плачу́ · могу́ | ты пла́тишь · мо́жешь |
 
 | PESSOA | PRONOME | 1ª CONJUGAÇÃO (-АТЬ / -ЯТЬ / -ЕТЬ) | 2ª CONJUGAÇÃO (-ИТЬ + 11 EXCEÇÕES) |

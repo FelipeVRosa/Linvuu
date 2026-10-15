@@ -415,7 +415,7 @@ Repare: o objeto depois de для vai no genitivo.
 | из университе́та | da universidade |
 | из до́ма | de casa |
 
-Repare: из indica origem (de onde vem algo). Não confunda com от, que indica afastamento de alguém.
+Repare:из indica origem (de onde vem algo). Não confunda com от, que indica afastamento de alguém.
 
 ОТ — de (afastamento)
 
@@ -427,7 +427,7 @@ Repare: из indica origem (de onde vem algo). Não confunda com от, que indic
 | от меня́ | de mim |
 | от тебя́ | de ti |
 
-Repare: от é usado com pessoas (afastamento). Из é usado com lugares (origem).
+Repare:от é usado com pessoas (afastamento). Из é usado com lugares (origem).
 
 У — junto a, em casa de
 
@@ -439,7 +439,7 @@ Repare: от é usado com pessoas (afastamento). Из é usado com lugares (orig
 | у врача́ | no médico |
 | у окна́ | junto à janela |
 
-Repare: у já é seu conhecido das frases com "ter" (у меня́ есть). Aqui, é usado no sentido de "junto a", "na casa de".
+Repare:у já é seu conhecido das frases com "ter" (у меня́ есть). Aqui, é usado no sentido de "junto a", "na casa de".
 
 О́КОЛО — perto de
 
@@ -494,7 +494,7 @@ Exemplos em frases:
 | Ско́лько у вас де́нег? | Quanto dinheiro vocês têm? |
 | У меня́ не́сколько вопро́сов. | Tenho algumas perguntas. |
 
-A regra: мно́го, ма́ло, немно́го, ско́лько, сто́лько, не́сколько sempre pedem genitivo.
+A regra:мно́го, ма́ло, немно́го, ско́лько, сто́лько, не́сколько sempre pedem genitivo.
 
 E o genitivo singular ou plural? Depende da palavra:
 
@@ -511,7 +511,7 @@ Palavras contáveis (кни́га, стол, дом) → genitivo plural (мно
 |---|---|---|---|
 | Genitivo Plural | -ЫХ / -ИХ (para todos os gêneros!) | мои́х, твои́х, на́ших, ва́ших, э́тих | мно́го но́вых книг · нет мои́х ста́рых друзе́й |
 
-| TIPO DE LUGAR / PESSOA | 1. ГДЕ? (ONDE ESTÁ?) | 2. КУДА́? (PARA ONDE VAI?) | 3. ОТКУ́ДА? (DE ONDE VEM? — GENITIVO!) |
+| TIPO DE LUGAR / PESSOA | 1. ГДЕ? (ONDE ESTÁ?) | 2. КУДА́? (PARA ONDE VAI?) | 3. ОТКУДА? (DE ONDE VEM? — GENITIV́O!) |
 |---|---|---|---|
 | Lugar Fechado (В → ИЗ) | в шко́ле · в Росси́и | в шко́лу · в Росси́ю | ИЗ шко́лы · ИЗ Росси́и |
 | Lugar Aberto / Evento (НА → С) | на рабо́те · на конце́рте | на рабо́ту · на конце́рт | С рабо́ты · С конце́рта |
@@ -631,7 +631,7 @@ EXERCÍCIO 2 — COMPLETE COM "НЕТ" + GENITIVO PLURAL
 Transforme as frases afirmativas em negativas (plural).
 
 1. 1. У меня́ есть кни́ги. → У меня́ нет ____.
-2. 2. У меня́ есть друзья́. → У меня́ нет ____.
+2. 2. У меня́ есть друзья.́ → У меня́ нет ____.
 3. 3. У меня́ есть де́ньги. → У меня́ нет ____.
 4. 4. У меня́ есть де́ти. → У меня́ нет ____.
 5. 5. У меня́ есть сестры́. → У меня́ нет ____.
@@ -665,7 +665,7 @@ Complete com БЕЗ, ДЛЯ, ДО, ИЗ, ОТ, У, О́КОЛО, КРО́МЕ ou
 5. 5. Э́то письмо́ ___ дру́га. (de)
 6. 6. Я живу́ ___ ма́мы. (na casa da)
 7. 7. ___ до́ма есть парк. (perto de)
-8. 8. ___ меня́, все здесь. (exceto eu)
+8. 8. ___ меня,́ все здесь. (exceto eu)
 9. 9. ___ рабо́ты я отдыха́ю. (depois)
 10. 10. Я живу́ ___ окна́. (junto à)
 
@@ -740,9 +740,7 @@ EXERCÍCIO 3:
 
 EXERCÍCIO 4:
 
-1. 1. без — 2. для — 3. до — 4. из — 5. от — 6. у — 7. О́коло — 8. Кро́ме — 9.
-
-По́сле — 10. у
+1. 1. без — 2. для — 3. до — 4. из — 5. от — 6. у — 7. О́коло — 8. Кро́ме — 9. По́сле — 10. у
 
 EXERCÍCIO 5:
 
@@ -802,7 +800,7 @@ Neutro em -мя: -ЁН (времён)
 
 O último número decide (два́дцать одна́ кни́га, два́дцать две кни́ги, два́дцать пять книг)
 
-5. 5. Gênero do número 2: два (masculino/neutro), две (feminino).
+5. 5. Gênero do número 2:два (masculino/neutro), две (feminino).
 6. 6. Preposições do genitivo: без, для, до, из, от, у, о́коло, кро́ме, по́сле.
 7. 7. Quantidade: мно́го, ма́ло, немно́го, ско́лько, сто́лько, не́сколько + genitivo.
 8. 8. Erros do brasileiro: esquecer que 5+ pede genitivo plural; esquecer que 2-4 pede genitivo singular; esquecer a vogal eufônica; usar -ОВ em palavras que pedem -ЕЙ; esquecer que as preposições pedem genitivo.
@@ -881,7 +879,7 @@ A partir daqui, o seu caminho é:
 | GÊNERO | TERMINAÇÃO NO GENITIVO PLURAL | EXEMPLO |
 |---|---|---|
 | ONILUCSAM | duro → -ов · й → -ев · ь, ж,ч,ш,щ → -ей | Adjetivo: -ых / -их | пять но́вых столо́в · музе́ев · враче́й |
-| .TUEN/.MEF | -а, -о → zero · -ь, -е → -ей · -ия, -ие → -ий | Adjetivo: -ых / -их | мно́го ру́сских книг · о́кон · ноче́й · зда́ний |
+| .TUEN/.MEF | -а, -о → zero · -ь, -е → -ей · -ия, -ие → -ий | Adjetivo: -ых / -их | мно́го рус́ских книг · о́кон · ноче́й · зда́ний |
 
 
 ## Quadro-resumo · caso genitivo plural

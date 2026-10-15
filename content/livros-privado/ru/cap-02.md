@@ -59,7 +59,7 @@ Aqui está a regra que resolve 95% dos casos. Olhe a última letra. Aplique a ta
 | -о | NEUTRO | окно (janela), метро (metrô), кино (cinema), пиво (cerveja), слово (palavra), молоко (leite), письмо (carta), мясо (carne), масло (manteiga), золото (ouro), серебро (prata), яблоко (maçã), озеро (lago), небо (céu), утро (manhã), дело (negócio), место (lugar), число (número), лицо (rosto) |
 | -е | NEUTRO | море (mar), лето (verão), платье (vestido), упражнение (exercício), время (tempo), поле (campo), здание (edifício), здоровье (saúde), счастье (felicidade), воскресенье (domingo), варенье (geleia), печенье (biscoito) |
 | -мя | NEUTRO | имя (nome), время (tempo, hora), знамя (estandarte), семя (semente), пламя (chama), бремя (fardo), племя (tribo), стремя (estribo), темя (topo da cabeça), вымя (úbere) |
-| -ь (sinal brando) | MASCULINO ou FEMININO | dia (день, masc.) / noite (ночь, fem.); dicionário (словарь, masc.) / caderno (тетрадь, fem.); rublo (рубль, masc.) / porta (дверь, fem.); cavalo (конь, masc.) / mãe (мать, fem.); convidado (гость, masc.) / praça (площадь, fem.); professor (учитель, masc.) / amor (любовь, fem.); carro (автомобиль, masc.) / cama (кровать, fem.); mês (месяц? não, mês é месяц, consoante) |
+| -ь (sinal brando) | MASCULINO ou FEMININO | dia (день, masc.) / noite (ночь, fem.); dicionário (словарь, masc.) / caderno (тетрадь, fem.); rublo (рубль, masc.) / porta (дверь, fem.); cavalo (конь, masc.) / mãe (мать, fem.); convidado (гость, masc.) / praça (площадь, fem.); professor (учитель, masc.) / amor (любовь, fem.); carro (автомобиль, masc.) / cama (кровать, fem.) |
 
 É só isso. Terminou em consoante? Masculino. Terminou em -а ou -я? Feminino. Terminou em -о, -е ou -мя? Neutro. Terminou em -ь? Você precisa consultar o dicionário — e vou te explicar por quê daqui a pouco.
 
@@ -193,7 +193,7 @@ Algumas palavras podem ser masculinas ou femininas, dependendo do sexo da pessoa
 
 о́бжора (óbzhora) — guloso ou gulosa
 
-бродя́га (bradiága) — vagabundo ou vagabunda
+бродяѓа (bradiága) — vagabundo ou vagabunda
 
 самоуби́йца (samoubiítsa) — suicida (homem ou mulher)
 
@@ -797,7 +797,7 @@ Estrangeirismos em -и, -у, -ю são neutros (такси, меню)
 | GÊNERO | TERMINAÇÃO NO SINGULAR | EXEMPLO (SINGULAR → PLURAL) |
 |---|---|---|
 | ONILUCSAM | consoante · ь · й | сто́л → столы́ учи́тель → учителя́ музе́й → музе́и |
-| ONINIMEF | а · я · ь | кни́га → кни́ги неде́ля → неде́ли но́чь → но́чи |
+| ONINIMEF | а · я · ь | книѓа → книѓи неде́ля → неде́ли но́чь → но́чи |
 | ORTUEN | о · е | окно́ → о́кна мо́ре → моря́ |
 
 

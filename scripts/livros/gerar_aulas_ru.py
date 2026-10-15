@@ -96,11 +96,19 @@ def exercicios(S, pref):
         res = split_num(txt) if txt else []
         for i, t in enumerate(g['itens']):
             r = res[i] if len(res) == len(g['itens']) else ''
+            r = re.split(r'\s*Explica[çc][ãa]o\s*:', r)[0].strip() if r else r
             resp = re.sub(r'\s*\(.*$', '', r).strip(' .')
+            resp = re.sub(r'(?<=\w)-$', '', resp)
             ident = f'{pref}-{g["n"]}{i+1:02d}'
-            if len(re.findall(r'_{3,}', t)) == 1 and resp and len(resp) < 40:
-                enun = re.sub(r'_{3,}', '___', t); pre = enun.split('___')[0].split('→')[-1].strip()
+            if len(re.findall(r'_{3,}', t)) == 1 and resp and len(resp) < 40 and len(resp.split()) <= 2 and not re.search(r'["→]', resp):
+                enun = re.sub(r'_{3,}', '___', t)
+                if len(re.sub(r'[\W_]', '', t.replace('_', ''))) < 2: continue  # só o espaço em branco: não dá para corrigir sozinho
+                pre = enun.split('___')[0].split('→')[-1].strip()
                 if pre and resp.lower().startswith(pre.lower()): resp = resp[len(pre):].strip()
+                sa = lambda x: x.replace('\u0301', '').lower()
+                pw, rw = sa(pre).split(), sa(resp).split()
+                if pw and len(rw) > 1 and pw[-1] == rw[0]: resp = resp.split(None, 1)[1]
+                if re.search(r'\((Nom|Acus|Gen|Dat|Inst|Prep)\.\)', enun) and len(resp.split()) >= 3: continue  # sem o modelo do livro, a resposta única não é dedutível
                 inst = g['inst'] if len(g['inst']) <= 70 else g['tit']
                 out.append({'tipo': 'fill-gap', 'enunciado': f'{inst} {enun}'.strip(), 'respostaEsperada': resp.replace('\u0301', ''), 'explicacao': r or 'Veja o gabarito no livro.', 'id': ident, '_g': g['n']}); auto += 1
             else:
@@ -135,7 +143,9 @@ def aplica(aula):
     else:
         usados = {e['id'] for e in escolhe(exercicios(S, pref)[0], 24)}
         resto = [e for e in ex if e['id'] not in usados]
-        ex = escolhe(resto if len(resto) >= 6 else ex, 12)
+        k = max(0, cap_aulas[cn].index(aula) - 1)
+        resto = resto[k * 12:(k + 1) * 12]
+        ex = escolhe(resto, 12) if len(resto) >= 6 else []
     rel_n = len(ex)
     exb = {'tipo': 'exercicios', 'min': 12, 'itens': ex} if ex else None
     novos = [[], [], [], []]

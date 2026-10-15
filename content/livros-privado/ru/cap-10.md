@@ -99,7 +99,7 @@ As terminações do genitivo singular são:
 |---|---|---|
 | Masculino em consoante | -А | стол → стола́, дом → до́ма |
 | Masculino em -й | -Я | музе́й → музе́я, геро́й → геро́я |
-| Masculino em -ь | -Я | слова́рь → словаря́, учи́тель → учи́теля |
+| Masculino em -ь | -Я | слова́рь → словаря,́ учи́тель → учи́теля |
 | Feminino em -а | -Ы (ou -И depois de г, к, х, ж, ч, ш, щ) | кни́га → кни́ги, ма́ма → ма́мы |
 | Feminino em -я | -И | семья́ → семьи́, дере́вня → дере́вни |
 | Feminino em -ь | -И | ночь → но́чи, дверь → две́ри |
@@ -294,7 +294,7 @@ A grande diferença: o masculino e o neutro recebem -А/-Я; o feminino recebe -
 | GÊNERO NO GENITIVO SINGULAR | ADJETIVO NO GENITIVO | POSSESSIVOS E DEMONSTRATIVOS | EXEMPLO COMPLETO |
 |---|---|---|---|
 | Masculino e Neutro | -ОГО / -ЕГО (soa -óva/-iéva) | моего́, твоего́, на́шего, ва́шего, э́того | маши́на моего́ ста́ршего бра́та · нет вре́мени |
-| Feminino | -ОЙ / -ЕЙ | мое́й, твое́й, на́шей, ва́шей, э́той | У меня́ нет э́той но́вой кни́ги. |
+| Feminino | -ОЙ / -ЕЙ | мое́й, твое́й, на́шей, ва́шей, э́той | У меня́ нет э́той но́вой книѓи. |
 
 
 ## 10.9 A primeira aplicação: a NEGAÇÃO ("não tenho")
@@ -432,7 +432,7 @@ Erro 2 — Esquecer que o feminino em -а vira -ы (ou -и depois de г, к, х,
 
 Erro 3 — Esquecer que o feminino em -я vira -и
 
-❌ Errado: У меня́ нет семья́. ✅ Correto: У меня́ нет семьи́.
+❌ Errado: У меня́ нет семья.́ ✅ Correto: У меня́ нет семьи́.
 
 Erro 4 — Esquecer que o feminino em -ь vira -и
 
@@ -599,7 +599,7 @@ Cada frase tem um erro de genitivo. Identifique e corrija.
 2. 2. У меня́ нет вре́мя. → ____
 3. 3. У меня́ нет дру́г. → ____
 4. 4. Э́то Ива́н кни́га. → ____
-5. 5. У меня́ нет семья́. → ____
+5. 5. У меня́ нет семья.́ → ____
 6. 6. У меня́ нет дверь. → ____
 7. 7. Э́то центр го́род. → ____
 8. 8. У меня́ нет маши́на. → ____
@@ -735,7 +735,7 @@ Falta uma aula. Uma aula em duas partes. E depois, o russo será seu.
 | GÊNERO | TERMINAÇÃO NO GENITIVO SINGULAR | EXEMPLO |
 |---|---|---|
 | .TUEN/.CSAM | cons., о → а · й, ь, е → я | Adjetivo: -ого / -его | нет моего́ но́вого па́спорта · словаря́ |
-| ONINIMEF | а → ы (г,к,х,ж,ч,ш,щ → и) · я, ь → и | Adjetivo: -ой / -ей | нет мое́й но́вой маши́ны · кни́ги |
+| ONINIMEF | а → ы (г,к,х,ж,ч,ш,щ → и) · я, ь → и | Adjetivo: -ой / -ей | нет мое́й но́вой маши́ны · книѓи |
 
 
 ## Quadro-resumo · caso genitivo singular

@@ -64,6 +64,8 @@ export const en: Dicionario = {
   ],
   cta: { titulo: 'Your first session takes 30 minutes.', texto: 'Start now: 2 free lessons, no card, nothing to install.', primario: 'Start free', secundario: 'See all courses' },
   rodape: {
+    eConj: 'and',
+    criadaPor: 'Created by',
     frase: 'Languages taught step by step, explained in English.', novidadesTitulo: 'Get updates', novidadesTexto: 'New lessons, languages and books. No spam.',
     termos: 'Terms of use', privacidade: 'Privacy policy', idiomas: 'Languages', portugues: 'Brazilian Portuguese', contato: 'Contact', direitos: '© 2026 Linvuu. All rights reserved.',
   },

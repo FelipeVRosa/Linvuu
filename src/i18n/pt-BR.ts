@@ -63,6 +63,8 @@ export const ptBR = {
   ],
   cta: { titulo: 'Sua primeira sessão leva 30 minutos.', texto: 'Comece agora: 2 aulas grátis, sem cartão e sem instalar nada.', primario: 'Começar grátis', secundario: 'Ver todos os cursos' },
   rodape: {
+    eConj: 'e',
+    criadaPor: 'Criada por',
     frase: 'Idiomas ensinados passo a passo, para quem fala português.', novidadesTitulo: 'Receba novidades', novidadesTexto: 'Novas aulas, idiomas e livros. Sem spam.',
     termos: 'Termos de uso', privacidade: 'Política de privacidade', idiomas: 'Idiomas', portugues: 'Português para estrangeiros', contato: 'Contato', direitos: '© 2026 Linvuu. Todos os direitos reservados.',
   },

@@ -26,6 +26,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
         <div className="lv-foot-brand">
           <img src="/brand/linvuu-wordmark-papel.svg" alt="Linvuu" width="104" height="33" />
           <p>{t.rodape.frase}</p>
+          <p className="lv-foot-autoria">{t.rodape.criadaPor} <strong>Felipe Nascimento Rosa</strong> {t.rodape.eConj} <strong>Luiza Nascimento Rosa</strong>.</p>
           <div id="redes"><ContatoIcones /><Redes /></div>
         </div>
         <nav aria-label="Linvuu">

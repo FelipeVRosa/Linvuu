@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -217,14 +217,100 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Sprechen, em 3 partes: (1) conte um acontecimento do passado; (2) faça e responda perguntas a partir de palavras-chave (Wohnung, Arzt, Reise, Arbeit, Wetter); (3) peça uma informação com educação («Können Sie mir sagen, wann …? Ich hätte gern …»)."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases com dois objetos, uma com dois substantivos, uma com pronome e substantivo, uma com dois pronomes.",
+            "respostaEsperada": "Ich schicke dem Kunden die Rechnung (dois substantivos). Ich schicke sie dem Kunden (pronome + substantivo). Ich schicke sie ihm (dois pronomes: Akk. + Dat.).",
+            "id": "de-046-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases com tempo, modo e lugar (Ich fahre …, Wir gehen …).",
+            "respostaEsperada": "Ich fahre morgen früh mit der U-Bahn ins Büro. Wir fliegen im Juli mit dem Flugzeug nach München. Sie geht heute Abend zu Fuß nach Hause.",
+            "id": "de-046-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases negativas com nicht, uma com particípio, uma com adjetivo e uma com lugar.",
+            "respostaEsperada": "Ich habe die E-Mail noch nicht gelesen (particípio). Die Wohnung ist nicht teuer (adjetivo). Wir fahren dieses Jahr nicht nach Berlin (lugar).",
+            "id": "de-046-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva dois pares de frases ligadas por deshalb e trotzdem.",
+            "respostaEsperada": "Ich muss morgen früh aufstehen, deshalb gehe ich jetzt ins Bett. Das Wetter ist heute kalt, trotzdem essen wir draußen im Garten.",
+            "id": "de-046-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich gebe das Buch ihm.",
+            "respostaEsperada": "Ich gebe ihm das Buch.",
+            "explicacao": "Ich gebe ihm das Buch.",
+            "id": "de-046-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich gebe ihm es.",
+            "respostaEsperada": "Ich gebe es ihm.",
+            "explicacao": "Ich gebe es ihm.",
+            "id": "de-046-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich fahre nach Berlin morgen.",
+            "respostaEsperada": "Ich fahre morgen nach Berlin.",
+            "explicacao": "Ich fahre morgen nach Berlin.",
+            "id": "de-046-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich habe nicht das Buch gelesen.",
+            "respostaEsperada": "Ich habe das Buch nicht gelesen.",
+            "explicacao": "Ich habe das Buch nicht gelesen.",
+            "id": "de-046-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich habe es ihm gestern gegeben.",
+            "respostaEsperada": "OK",
+            "id": "de-046-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich bin müde, deshalb ich gehe nach Hause.",
+            "respostaEsperada": "Ich bin müde, deshalb gehe ich nach Hause.",
+            "explicacao": "Ich bin müde, deshalb gehe ich nach Hause.",
+            "id": "de-046-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich kann kommen nicht heute.",
+            "respostaEsperada": "Ich kann heute nicht kommen.",
+            "explicacao": "Ich kann heute nicht kommen.",
+            "id": "de-046-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é pôr o pronome depois do substantivo, ou trocar a ordem dos dois pronomes: Ich gebe dem Kind es, Ich gebe ihm es. O segundo é seguir a ordem do português nos complementos: Ich wohne in Berlin seit zwei Jahren. O terceiro é deixar o nicht depois do particípio ou do infinitivo: Ich habe das Buch gelesen nicht. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Releia o mapa e escolha os 3 pontos em que você ainda erra."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 24. Complete: Ich weiß nicht, ob er morgen ____. (mitkommen) Do capítulo 17. Complete: Er ____ mich morgen ____. (anrufen) Do capítulo 9. Complete: Ich gebe ____ das Buch. (sie, dativo)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Digo Ich gebe es ihm sem trocar a ordem. · Conto uma viagem com tempo, modo e lugar na ordem certa. · Coloco o nicht num lugar que soa certo."
       }
     ]
   },

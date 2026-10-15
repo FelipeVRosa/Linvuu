@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Combinações de letras que mudam o som",
         "explicacao": "Algumas letras juntas formam um som próprio. A regra vale sempre. Uma vogal seguida de uma consoante simples costuma ser longa (Tal, Name); seguida de duas consoantes iguais, costuma ser curta (Ball, Kette). O «ch» tem dois sons: suave («ç») depois de e, i, ä, ö, ü, l, n, r; áspero («rr» carioca) depois de a, o, u e au. As combinações «sp» e «st» no início de uma palavra soam «xp» e «xt».",
         "comparacao": "em português «ei» e «ie» não existem como sons próprios, e o «ch» soa como «x». No alemão, «ei» é «ai», «ie» é um «i» longo, «sch» é «x» e «ch» é «ç» ou «rr».",
@@ -108,7 +108,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "ich",
@@ -169,13 +169,289 @@
         ]
       },
       {
-        "tipo": "producao",
+        "tipo": "palavras",
         "min": 3,
+        "itens": [
+          {
+            "ru": "Ich heiße …",
+            "translit": "",
+            "pt": "Eu me chamo …",
+            "en": "",
+            "audio": "Ich heiße …"
+          },
+          {
+            "ru": "Wie schreibt man das?",
+            "translit": "",
+            "pt": "Como se escreve isso?",
+            "en": "",
+            "audio": "Wie schreibt man das?"
+          },
+          {
+            "ru": "Buchstabieren Sie das bitte.",
+            "translit": "",
+            "pt": "Soletre isso, por favor.",
+            "en": "",
+            "audio": "Buchstabieren Sie das bitte."
+          },
+          {
+            "ru": "Noch einmal, bitte.",
+            "translit": "",
+            "pt": "Mais uma vez, por favor.",
+            "en": "",
+            "audio": "Noch einmal, bitte."
+          },
+          {
+            "ru": "Langsamer, bitte.",
+            "translit": "",
+            "pt": "Mais devagar, por favor.",
+            "en": "",
+            "audio": "Langsamer, bitte."
+          },
+          {
+            "ru": "Wie spricht man das aus?",
+            "translit": "",
+            "pt": "Como se pronuncia isso?",
+            "en": "",
+            "audio": "Wie spricht man das aus?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wein começa com som de",
+            "opcoes": [
+              "v",
+              "f",
+              "u"
+            ],
+            "gabarito": "v",
+            "explicacao": "Veja a chave comentada no livro: (a): w soa v",
+            "id": "de-001-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Vater começa com som de",
+            "opcoes": [
+              "v",
+              "f"
+            ],
+            "gabarito": "f",
+            "explicacao": "Veja a chave comentada no livro: (b): v soa f",
+            "id": "de-001-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Zeit começa com",
+            "opcoes": [
+              "z de “zebra”",
+              "ts"
+            ],
+            "gabarito": "ts",
+            "explicacao": "Veja a chave comentada no livro: (b): z soa ts",
+            "id": "de-001-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O s de Sonne soa",
+            "opcoes": [
+              "como z",
+              "como s de “sol”"
+            ],
+            "gabarito": "como z",
+            "explicacao": "Veja a chave comentada no livro: (a): s antes de vogal soa z",
+            "id": "de-001-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O ie de Tier soa",
+            "opcoes": [
+              "como i longo",
+              "como “ié”"
+            ],
+            "gabarito": "como i longo",
+            "explicacao": "Veja a chave comentada no livro: (a): ie é i longo",
+            "id": "de-001-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O eu de heute soa",
+            "opcoes": [
+              "como “eu”",
+              "como “oi”"
+            ],
+            "gabarito": "como “oi”",
+            "explicacao": "Veja a chave comentada no livro: (b): eu soa oi",
+            "id": "de-001-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O ch de ich e Milch é",
+            "opcoes": [
+              "suave, soprado no céu da boca",
+              "áspero, na garganta como em Buch"
+            ],
+            "gabarito": "suave, soprado no céu da boca",
+            "explicacao": "Veja a chave comentada no livro: (a): depois de i e de consoante (Milch), o ch é suave",
+            "id": "de-001-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O final -er de Vater e Wasser soa na fala como",
+            "opcoes": [
+              "“êr” forte",
+              "um “a” curto e relaxado (“fá-ta”, “vá-ssa”)"
+            ],
+            "gabarito": "um “a” curto e relaxado (“fá-ta”, “vá-ssa”)",
+            "explicacao": "Veja a chave comentada no livro: (b): -er final soa como um a curto",
+            "id": "de-001-L-108"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → ___ · W → we · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
+            "respostaEsperada": "jot",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → ___ · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
+            "respostaEsperada": "we",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → ___ · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
+            "respostaEsperada": "vau",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → ___ · H → ha · Ä → A-Umlaut · ß → Eszett",
+            "respostaEsperada": "zet",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ___ · Ä → A-Umlaut · ß → Eszett",
+            "respostaEsperada": "ha",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ha · Ä → ___ · ß → Eszett",
+            "respostaEsperada": "A-Umlaut",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201f"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → ___",
+            "respostaEsperada": "Eszett",
+            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
+            "id": "de-001-L-201g"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: B__r (cerveja, “bía”)",
+            "respostaEsperada": "Bier",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-202"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: m__n (meu, “máin”)",
+            "respostaEsperada": "mein",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: T__r (animal, “tía”)",
+            "respostaEsperada": "Tier",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-204"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: Z__t (tempo, “tsáit”)",
+            "respostaEsperada": "Zeit",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-205"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: L__be (amor, “lí-be”)",
+            "respostaEsperada": "Liebe",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: kl__n (pequeno, “kláin”)",
+            "respostaEsperada": "klein",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-207"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: Br__f (carta, “bríf”)",
+            "respostaEsperada": "Brief",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-208"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva a palavra completa: Arb__t (trabalho, “ár-bait”)",
+            "respostaEsperada": "Arbeit",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-001-L-209"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com sch, sp ou st: ___ule (escola) · Sport (esporte) · Stadt (cidade) · Straße (rua)",
+            "respostaEsperada": "Sch",
+            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
+            "id": "de-001-L-210a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com sch, sp ou st: Schule (escola) · ___ort (esporte) · Stadt (cidade) · Straße (rua)",
+            "respostaEsperada": "Sp",
+            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
+            "id": "de-001-L-210b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com sch, sp ou st: Schule (escola) · Sport (esporte) · ___adt (cidade) · Straße (rua)",
+            "respostaEsperada": "St",
+            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
+            "id": "de-001-L-210c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com sch, sp ou st: Schule (escola) · Sport (esporte) · Stadt (cidade) · ___raße (rua)",
+            "respostaEsperada": "St",
+            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
+            "id": "de-001-L-210d"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 2,
         "enunciado": "Leia em voz alta: «ich, Schule, Sport, Eis, Bier, Euro, Deutsch, Apfel»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Leia as 10 palavras da sessão anterior em voz alta."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Os reflexivos na rotina e na conversa",
         "explicacao": "PASSO 1: na rotina, o alemão usa muitos reflexivos: sich waschen, sich duschen, sich anziehen, sich beeilen, sich ausruhen. PASSO 2: quando a ação é RECÍPROCA, os pronomes «uns», «euch» e «sich» (plural) significam «um ao outro»: «Wir treffen uns», «Sie sehen sich jeden Tag». PASSO 3: perguntas: «Freust du dich auf das Wochenende?», «Wann treffen wir uns?» PASSO 4: o pronome reflexivo tem lugar fixo: depois do verbo (ou do sujeito, se o sujeito vier depois): «Freut er sich?»",
         "tabela": [
@@ -46,7 +46,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Der Morgen / A manhã",
         "contexto": "Dois amigos falam da rotina matinal.",
         "linhas": [
@@ -101,13 +101,268 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich freue mich auf das Wochenende.",
+            "translit": "",
+            "pt": "Estou animado para o fim de semana.",
+            "en": "",
+            "audio": "Ich freue mich auf das Wochenende."
+          },
+          {
+            "ru": "Wir treffen uns um zehn Uhr.",
+            "translit": "",
+            "pt": "A gente se encontra às dez.",
+            "en": "",
+            "audio": "Wir treffen uns um zehn Uhr."
+          },
+          {
+            "ru": "Ich interessiere mich für Musik.",
+            "translit": "",
+            "pt": "Eu me interesso por música.",
+            "en": "",
+            "audio": "Ich interessiere mich für Musik."
+          },
+          {
+            "ru": "Beeil dich!",
+            "translit": "",
+            "pt": "Se apresse!",
+            "en": "",
+            "audio": "Beeil dich!"
+          },
+          {
+            "ru": "Worauf wartest du?",
+            "translit": "",
+            "pt": "O que você está esperando?",
+            "en": "",
+            "audio": "Worauf wartest du?"
+          },
+          {
+            "ru": "Ich denke oft an dich.",
+            "translit": "",
+            "pt": "Eu penso muito em você.",
+            "en": "",
+            "audio": "Ich denke oft an dich."
+          },
+          {
+            "ru": "Setzen Sie sich bitte!",
+            "translit": "",
+            "pt": "Sente-se, por favor!",
+            "en": "",
+            "audio": "Setzen Sie sich bitte!"
+          },
+          {
+            "ru": "Ich habe mich verspätet.",
+            "translit": "",
+            "pt": "Eu me atrasei.",
+            "en": "",
+            "audio": "Ich habe mich verspätet."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich freue ___ auf das Wochenende.",
+            "opcoes": [
+              "mich",
+              "mir"
+            ],
+            "gabarito": "mich",
+            "explicacao": "Veja a chave comentada no livro: mich",
+            "id": "de-038-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Du musst ___ beeilen.",
+            "opcoes": [
+              "dich",
+              "dir"
+            ],
+            "gabarito": "dich",
+            "explicacao": "Veja a chave comentada no livro: dich",
+            "id": "de-038-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wir treffen ___ um zehn Uhr.",
+            "opcoes": [
+              "uns",
+              "sich"
+            ],
+            "gabarito": "uns",
+            "explicacao": "Veja a chave comentada no livro: uns",
+            "id": "de-038-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Er interessiert ___ für Musik.",
+            "opcoes": [
+              "sich",
+              "ihn"
+            ],
+            "gabarito": "sich",
+            "explicacao": "Veja a chave comentada no livro: sich",
+            "id": "de-038-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich warte ___ den Bus.",
+            "opcoes": [
+              "auf",
+              "an"
+            ],
+            "gabarito": "auf",
+            "explicacao": "Veja a chave comentada no livro: auf",
+            "id": "de-038-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich denke ___ meine Oma.",
+            "opcoes": [
+              "an",
+              "auf"
+            ],
+            "gabarito": "an",
+            "explicacao": "Veja a chave comentada no livro: an",
+            "id": "de-038-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ wartest du?",
+            "opcoes": [
+              "Worauf",
+              "Woran"
+            ],
+            "gabarito": "Worauf",
+            "explicacao": "Veja a chave comentada no livro: Worauf",
+            "id": "de-038-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch): Ihr freut ___. · Sie setzt sich. · Wir erinnern uns. · Du ziehst dich schnell an. · Ich wasche mir (Dativo!) die Hände.",
+            "respostaEsperada": "euch",
+            "explicacao": "Veja a chave comentada no livro: euch, sich, uns, dich, mir",
+            "id": "de-038-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch): Ihr freut euch. · Sie setzt ___. · Wir erinnern uns. · Du ziehst dich schnell an. · Ich wasche mir (Dativo!) die Hände.",
+            "respostaEsperada": "sich",
+            "explicacao": "Veja a chave comentada no livro: euch, sich, uns, dich, mir",
+            "id": "de-038-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch): Ihr freut euch. · Sie setzt sich. · Wir erinnern ___. · Du ziehst dich schnell an. · Ich wasche mir (Dativo!) die Hände.",
+            "respostaEsperada": "uns",
+            "explicacao": "Veja a chave comentada no livro: euch, sich, uns, dich, mir",
+            "id": "de-038-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch): Ihr freut euch. · Sie setzt sich. · Wir erinnern uns. · Du ziehst ___ schnell an. · Ich wasche mir (Dativo!) die Hände.",
+            "respostaEsperada": "dich",
+            "explicacao": "Veja a chave comentada no livro: euch, sich, uns, dich, mir",
+            "id": "de-038-L-201d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch): Ihr freut euch. · Sie setzt sich. · Wir erinnern uns. · Du ziehst dich schnell an. · Ich wasche ___ (Dativo!) die Hände.",
+            "respostaEsperada": "mir",
+            "explicacao": "Veja a chave comentada no livro: euch, sich, uns, dich, mir",
+            "id": "de-038-L-201e"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ich freue mich. → ___ · Wir treffen uns. → ___ · Er beeilt sich. → ___",
+            "respostaEsperada": "Ich habe mich gefreut. Wir haben uns getroffen. Er hat sich beeilt",
+            "id": "de-038-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Imperativo: sich setzen (du: ___! / ihr: ___! / Sie: ___!) · sich beeilen (du: ___!)",
+            "respostaEsperada": "Setz dich! Setzt euch! Setzen Sie sich! Beeil dich!",
+            "id": "de-038-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte ___ meinen Bruder (Akk.). · Er denkt an seine Familie (Akk.). · Wir sprechen über das Wochenende (Akk.).",
+            "respostaEsperada": "auf",
+            "explicacao": "Veja a chave comentada no livro: auf, an, über",
+            "id": "de-038-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte auf meinen Bruder (Akk.). · Er denkt ___ seine Familie (Akk.). · Wir sprechen über das Wochenende (Akk.).",
+            "respostaEsperada": "an",
+            "explicacao": "Veja a chave comentada no livro: auf, an, über",
+            "id": "de-038-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte auf meinen Bruder (Akk.). · Er denkt an seine Familie (Akk.). · Wir sprechen ___ das Wochenende (Akk.).",
+            "respostaEsperada": "über",
+            "explicacao": "Veja a chave comentada no livro: auf, an, über",
+            "id": "de-038-L-204c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie fragt ___ dem Weg (Dat.). · Ich träume von einem Urlaub (Dat.). · Ich habe Angst vor dem Hund (Dat.).",
+            "respostaEsperada": "nach",
+            "explicacao": "Veja a chave comentada no livro: nach, von, vor",
+            "id": "de-038-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie fragt nach dem Weg (Dat.). · Ich träume ___ einem Urlaub (Dat.). · Ich habe Angst vor dem Hund (Dat.).",
+            "respostaEsperada": "von",
+            "explicacao": "Veja a chave comentada no livro: nach, von, vor",
+            "id": "de-038-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Sie fragt nach dem Weg (Dat.). · Ich träume von einem Urlaub (Dat.). · Ich habe Angst ___ dem Hund (Dat.).",
+            "respostaEsperada": "vor",
+            "explicacao": "Veja a chave comentada no livro: nach, von, vor",
+            "id": "de-038-L-205c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte auf den Bus. → Ich warte ___. · Ich denke an das Konzert. → Ich denke daran. · Wir sprechen über das Projekt. → Wir sprechen darüber.",
+            "respostaEsperada": "darauf",
+            "explicacao": "Veja a chave comentada no livro: darauf, daran, darüber",
+            "id": "de-038-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte auf den Bus. → Ich warte darauf. · Ich denke an das Konzert. → Ich denke ___. · Wir sprechen über das Projekt. → Wir sprechen darüber.",
+            "respostaEsperada": "daran",
+            "explicacao": "Veja a chave comentada no livro: darauf, daran, darüber",
+            "id": "de-038-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich warte auf den Bus. → Ich warte darauf. · Ich denke an das Konzert. → Ich denke daran. · Wir sprechen über das Projekt. → Wir sprechen ___.",
+            "respostaEsperada": "darüber",
+            "explicacao": "Veja a chave comentada no livro: darauf, daran, darüber",
+            "id": "de-038-L-206c"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva a sua manhã em 8 frases, com pelo menos 5 verbos reflexivos."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva uma lista de 8 verbos reflexivos com a preposição, quando houver."
       }
     ]

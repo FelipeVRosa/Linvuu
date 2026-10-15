@@ -20,8 +20,106 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você faz perguntas de sim ou não e perguntas com wer, was, wo, woher, wohin, wann e wie, e responde com frases completas."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Primeiro dia no curso",
+        "contexto": "Camila está na sala de aula. A professora faz a chamada. Ao lado, senta Jonas.",
+        "linhas": [
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Guten Morgen! Wer ist Camila?",
+            "pt": "— Bom dia! Quem é Camila?",
+            "audio": "Guten Morgen! Wer ist Camila?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das bin ich.",
+            "pt": "— Sou eu.",
+            "audio": "Das bin ich."
+          },
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Woher kommen Sie, Camila?",
+            "pt": "— De onde a senhora vem, Camila?",
+            "audio": "Woher kommen Sie, Camila?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Aus Brasilien. Ich wohne jetzt in München.",
+            "pt": "— Do Brasil. Agora moro em Munique.",
+            "audio": "Aus Brasilien. Ich wohne jetzt in München."
+          },
+          {
+            "personagem": "Lehrerin",
+            "ru": "— Sprechen Sie Englisch?",
+            "pt": "— A senhora fala inglês?",
+            "audio": "Sprechen Sie Englisch?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, ein bisschen.",
+            "pt": "— Sim, um pouquinho.",
+            "audio": "Ja, ein bisschen."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Hallo, ich bin Jonas. Wo wohnst du?",
+            "pt": "— Oi, eu sou o Jonas. Onde você mora?",
+            "audio": "Hallo, ich bin Jonas. Wo wohnst du?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich wohne in Schwabing.",
+            "pt": "— Moro em Schwabing.",
+            "audio": "Ich wohne in Schwabing."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Cool! Ich auch. Trinken wir nachher Kaffee?",
+            "pt": "— Legal! Eu também. Vamos tomar um café depois?",
+            "audio": "Cool! Ich auch. Trinken wir nachher Kaffee?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gern!",
+            "pt": "— Vamos!",
+            "audio": "Gern!"
+          }
+        ]
+      },
+      {
         "tipo": "gramatica",
-        "min": 15,
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Há uma segunda armadilha. O português tem “onde” para três ideias. O alemão separa: PASSO 2: wo parado, wohin com movimento para lá, woher com movimento de lá.",
+        "comparacao": "Em português, uma pergunta de sim ou não pode ser só uma afirmação com a voz subindo: “Você mora em Munique?” Em alemão, o verbo vai para a primeira posição: Wohnst du in München?",
+        "tabela": [
+          {
+            "portugues": "onde (lugar)",
+            "ingles": "wo",
+            "evite": "Wo wohnst du?"
+          },
+          {
+            "portugues": "aonde, para onde",
+            "ingles": "wohin",
+            "evite": "Wohin gehst du?"
+          },
+          {
+            "portugues": "de onde",
+            "ingles": "woher",
+            "evite": "Woher kommst du?"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
         "titulo": "Tudo o que você já sabe, em uma tabela",
         "explicacao": "Esta tabela resume as aulas 1 a 9 em uma linha por ponto. Releia uma linha por vez e diga um exemplo seu em voz alta. Se algo parecer estranho, volte à aula indicada ou abra o tópico na aba Gramática.",
         "tabela": [
@@ -125,12 +223,12 @@
       },
       {
         "tipo": "producao",
-        "min": 10,
+        "min": 7,
         "enunciado": "Apresente-se em 8 frases, em voz alta: nome, origem, idade, família, onde mora, o que come, a hora em que se levanta e como vai ao trabalho."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Leia em voz alta o alfabeto e as combinações ei, ie, eu, au, sch, ch, sp, st."
       }
     ]

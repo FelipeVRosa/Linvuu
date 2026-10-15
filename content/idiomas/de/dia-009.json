@@ -20,8 +20,108 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você aprende cada substantivo com seu artigo e seu plural, identifica o gênero por pistas e usa ein/eine e der/die/das sem trocar o artigo pelo do português."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O quarto novo",
+        "contexto": "Jonas ajuda Camila a conhecer o apartamento compartilhado.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Hier ist das Zimmer. Da ist ein Bett und dort ist ein Tisch.",
+            "pt": "— Aqui é o quarto. Lá tem uma cama e ali, uma mesa.",
+            "audio": "Hier ist das Zimmer. Da ist ein Bett und dort ist ein Tisch."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wie schön! Ist das eine Lampe?",
+            "pt": "— Que bonito! Isso é uma luminária?",
+            "audio": "Wie schön! Ist das eine Lampe?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, das ist die Lampe. Und da ist das Fenster. Es ist groß.",
+            "pt": "— Sim, é a luminária. E ali está a janela. É grande.",
+            "audio": "Ja, das ist die Lampe. Und da ist das Fenster. Es ist groß."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wo ist der Schrank?",
+            "pt": "— E onde fica o armário?",
+            "audio": "Und wo ist der Schrank?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Der Schrank ist dort. Er ist neu.",
+            "pt": "— O armário está ali. É novo.",
+            "audio": "Der Schrank ist dort. Er ist neu."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und die Küche?",
+            "pt": "— E a cozinha?",
+            "audio": "Und die Küche?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Sie ist hier. Die Stühle sind alt, aber der Tisch ist neu.",
+            "pt": "— Está aqui. As cadeiras são velhas, mas a mesa é nova.",
+            "audio": "Sie ist hier. Die Stühle sind alt, aber der Tisch ist neu."
+          }
+        ]
+      },
+      {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O português não tem neutro. O alemão tem três gêneros: der (masculino), die (feminino) e das (neutro). No plural, o artigo é sempre die. PASSO 2: nunca aprenda Tisch. Aprenda der Tisch.",
+        "comparacao": "O gênero do alemão não acompanha o do português. Se a palavra é “o” em português, não assuma der. O gênero é parte da palavra e precisa ser aprendido junto.",
+        "tabela": [
+          {
+            "portugues": "o sol",
+            "ingles": "die Sonne",
+            "evite": "masculino vira feminino"
+          },
+          {
+            "portugues": "a lua",
+            "ingles": "der Mond",
+            "evite": "feminino vira masculino"
+          },
+          {
+            "portugues": "o leite",
+            "ingles": "die Milch",
+            "evite": "masculino vira feminino"
+          },
+          {
+            "portugues": "a casa",
+            "ingles": "das Haus",
+            "evite": "feminino vira neutro"
+          },
+          {
+            "portugues": "o carro",
+            "ingles": "das Auto",
+            "evite": "masculino vira neutro"
+          },
+          {
+            "portugues": "a chave",
+            "ingles": "der Schlüssel",
+            "evite": "feminino vira masculino"
+          },
+          {
+            "portugues": "a mesa",
+            "ingles": "der Tisch",
+            "evite": "feminino vira masculino"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 10,
         "titulo": "Der, die, das: os três gêneros",
         "explicacao": "Em alemão todo substantivo tem gênero: masculino (der), feminino (die) ou neutro (das). O gênero não segue o português: «das Mädchen» (a menina) é neutro. Por isso, decore sempre o artigo junto com a palavra. TODO substantivo é escrito com letra MAIÚSCULA, em qualquer lugar da frase. Há pistas pela terminação, com exceções: -ung, -heit, -keit, -schaft, -tion, -ie e a maioria das palavras em -e são femininas; -er, -ling e -ismus são masculinas; -chen, -lein, -um e -ment são neutras. Dias da semana, meses e estações do ano são masculinos.",
         "comparacao": "o português também tem masculino e feminino, mas o alemão tem um terceiro gênero (o neutro) e o gênero muitas vezes não coincide: «das Kind» (a criança) é neutro.",
@@ -88,7 +188,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "der Mann",
@@ -150,12 +250,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga em voz alta o artigo e a palavra: «der Mann, die Frau, das Kind, der Tisch, die Lampe, das Buch»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 5 palavras que você já aprendeu em alemão."
       }
     ]

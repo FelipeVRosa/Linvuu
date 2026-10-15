@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -178,14 +178,73 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se descrevendo pessoas da sua família e do trabalho com orações relativas."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva três coisas que você tem em casa com uma oração relativa (Ich habe ein Sofa, das …).",
+            "respostaEsperada": "Ich habe ein Sofa, das sehr bequem ist. Hier liegt ein Buch, das ich letzte Woche gekauft habe. Das ist die Kaffeemaschine, die jeden Morgen frischen Kaffee macht.",
+            "id": "de-047-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva três pessoas que você conhece (Ich habe eine Freundin, die …, Ich kenne einen Mann, den …).",
+            "respostaEsperada": "Ich habe eine Freundin, die in Wien Medizin studiert. Ich kenne einen Kollegen, den alle im Büro sehr mögen. Das ist der Nachbar, dem ich oft im Garten helfe.",
+            "id": "de-047-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Complete com uma frase sua: Das ist alles, was …",
+            "respostaEsperada": "Das ist alles, was ich für meine Reise brauche.",
+            "id": "de-047-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um pequeno diálogo para descrever um objeto perdido, no estilo da Cena, com pelo menos quatro orações relativas.",
+            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Ich suche eine Tasche, die ich heute Morgen im Bus vergessen habe.— Wie sieht die Tasche aus, die Sie suchen?— Es ist eine braune Ledertasche, in der mein Laptop und ein Kalender sind.— Moment! Ist das der Kalender, den der Busfahrer hier abgegeben hat?",
+            "id": "de-047-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist der Mann, der ich kenne.",
+            "respostaEsperada": "Das ist der Mann, den ich kenne.",
+            "explicacao": "Das ist der Mann, den ich kenne.",
+            "id": "de-047-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich suche einen Rucksack, den ist schwarz.",
+            "respostaEsperada": "Ich suche einen Rucksack, der schwarz ist.",
+            "explicacao": "Ich suche einen Rucksack, der schwarz ist. (Rucksack é o sujeito de ist)",
+            "id": "de-047-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist alles, das ich weiß.",
+            "respostaEsperada": "Das ist alles, was ich weiß.",
+            "explicacao": "Das ist alles, was ich weiß.",
+            "id": "de-047-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é copiar o “que” do português e usar sempre a mesma palavra (der para tudo, ou dass): die Frau, dass ich kenne. O segundo erro é esquecer o caso: dizer der Mann, der ich kenne quando o homem é objeto (den). O terceiro é deixar o verbo no meio: das Buch, das ich muss lesen. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva um pequeno texto de 6 frases descrevendo pessoas, com pelo menos 4 relativas."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 24. Complete: Ich bleibe zu Hause, weil ich krank ____. (sein) Do capítulo 18. Complete: Er ____ den Rucksack ____. (finden, Perfekt) Do capítulo 13. Complete: Ich suche einen ____ Rucksack. (schwarz)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Descrevo um objeto com das ich …, der …, die …. · Escolho entre der e den olhando a função. · Ponho as vírgulas e o verbo no fim."
       }
     ]
   },

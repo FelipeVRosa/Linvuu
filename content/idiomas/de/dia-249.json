@@ -20,8 +20,93 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você lê uma palavra composta da direita para a esquerda e descobre o gênero pela última parte, reconhece os prefixos e sufixos mais úteis (un-, -ung, -er, -heit, -keit, -lich, -los) e evita os falsos amigos mais comuns (bekommen, Gift, Rock, Dose, Art, Rente, Konkurs, Gymnasium)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Procurando apartamento",
+        "contexto": "Camila liga para uma proprietária por causa de um anúncio.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Guten Tag, ich rufe wegen der Wohnungsanzeige an. Ist die Wohnung noch frei?",
+            "pt": "— Bom dia, estou ligando por causa do anúncio do apartamento. O apartamento ainda está livre?",
+            "audio": "Guten Tag, ich rufe wegen der Wohnungsanzeige an. Ist die Wohnung noch frei?"
+          },
+          {
+            "personagem": "Vermieterin",
+            "ru": "— Ja. Sie hat zwei Zimmer, eine Küche und einen Balkon. Die Miete beträgt sechshundertfünfzig Euro im Monat.",
+            "pt": "— Sim. Tem dois cômodos, uma cozinha e uma varanda. O aluguel é de seiscentos e cinquenta euros por mês.",
+            "audio": "Ja. Sie hat zwei Zimmer, eine Küche und einen Balkon. Die Miete beträgt sechshundertfünfzig Euro im Monat."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wie hoch ist die Kaution?",
+            "pt": "— E de quanto é a caução?",
+            "audio": "Und wie hoch ist die Kaution?"
+          },
+          {
+            "personagem": "Vermieterin",
+            "ru": "— Drei Monatsmieten. Sie bekommen sie zurück, wenn Sie ausziehen und alles in Ordnung ist.",
+            "pt": "— Três aluguéis mensais. A senhora recebe de volta quando se mudar e estiver tudo em ordem.",
+            "audio": "Drei Monatsmieten. Sie bekommen sie zurück, wenn Sie ausziehen und alles in Ordnung ist."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut. Gibt es einen Kellerraum für mein Fahrrad?",
+            "pt": "— Ótimo. Tem um depósito no porão para a minha bicicleta?",
+            "audio": "Gut. Gibt es einen Kellerraum für mein Fahrrad?"
+          },
+          {
+            "personagem": "Vermieterin",
+            "ru": "— Ja, im Haus gibt es einen Fahrradkeller. Kommen Sie doch morgen um zehn Uhr zur Besichtigung.",
+            "pt": "— Sim, na casa tem um bicicletário no porão. Venha amanhã às dez para a visita.",
+            "audio": "Ja, im Haus gibt es einen Fahrradkeller. Kommen Sie doch morgen um zehn Uhr zur Besichtigung."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das passt. Vielen Dank!",
+            "pt": "— Combinado. Muito obrigada!",
+            "audio": "Das passt. Vielen Dank!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: leia a palavra composta da direita para a esquerda. A última parte diz o que é; as de antes dizem que tipo. O artigo vem da última parte.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "anúncio de apartamento",
+            "ingles": "die Wohnungsanzeige"
+          },
+          {
+            "portugues": "chave da porta de casa",
+            "ingles": "der Haustürschlüssel"
+          },
+          {
+            "portugues": "bolsa de mão",
+            "ingles": "die Handtasche"
+          },
+          {
+            "portugues": "xícara de café",
+            "ingles": "die Kaffeetasse"
+          },
+          {
+            "portugues": "quarto de criança",
+            "ingles": "das Kinderzimmer"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "das Wort",
@@ -83,7 +168,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Palavras compostas, passo a passo",
         "explicacao": "PASSO 1: o alemão forma palavras NOVAS juntando duas ou mais: «Haus» + «Tür» → «Haustür» (porta da casa). A primeira palavra diz o TIPO, a última diz O QUE É: «die Tür» é a base. PASSO 2: o GÊNERO e o PLURAL do composto são os da ÚLTIMA palavra: «das Haus» + «die Tür» → «DIE Haustür» (feminino); «die Hand» + «das Tuch» → «DAS Handtuch». PASSO 3: às vezes entra um ELEMENTO DE LIGAÇÃO: «-s», «-n», «-en», «-e»: «Wohnung-s-schlüssel», «Hunde-hütte». Regra prática: depois de palavras em «-ung», «-heit», «-keit», «-schaft», «-tion», usa-se «-s». PASSO 4: para LER um composto longo, divida de TRÁS PARA A FRENTE: «Haustürschlüssel» = a chave (Schlüssel) da porta (Tür) da casa (Haus). PASSO 5: os compostos são escritos juntos, em uma só palavra.",
         "comparacao": "o português junta palavras com «de» («chave da porta»). O alemão as cola numa palavra só, e o gênero é o da última.",
@@ -135,12 +220,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Forme 6 compostos e diga o artigo de cada um: «Haus + Tür → die Haustür …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases no discurso indireto."
       }
     ]

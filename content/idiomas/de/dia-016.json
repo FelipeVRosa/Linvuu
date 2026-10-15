@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -185,14 +185,87 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se contando onde você mora, onde trabalha e o que você aprende, e faça duas perguntas."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva a frase Ich wohne in Recife de três modos diferentes, começando por Heute, Jetzt e Hier.",
+            "respostaEsperada": "Heute wohne ich in Recife. / Jetzt wohne ich in Recife. / Hier wohne ich in Recife.",
+            "id": "de-004-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva cinco frases sobre o seu dia, cada uma começando por um bloco diferente: Heute, Jetzt, Dann, Hier e Dort.",
+            "respostaEsperada": "Heute arbeite ich viel. Jetzt lerne ich Deutsch. Dann trinke ich gern Kaffee. Hier wohne ich sehr gern. Dort spielt Tom Fußball.",
+            "id": "de-004-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Reescreva três informações da Cena do capítulo 2 começando por Heute, Jetzt e In München.",
+            "respostaEsperada": "Heute kochen Tom und Camila zusammen. Jetzt lernt Camila Deutsch. In München wohnt Tom gern.",
+            "id": "de-004-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Heute ich lerne Deutsch.",
+            "respostaEsperada": "Heute lerne ich Deutsch.",
+            "explicacao": "Heute lerne ich Deutsch.",
+            "id": "de-004-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Dann wir kochen zusammen.",
+            "respostaEsperada": "Dann kochen wir zusammen.",
+            "explicacao": "Dann kochen wir zusammen.",
+            "id": "de-004-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Hier Tom wohnt.",
+            "respostaEsperada": "Hier wohnt Tom.",
+            "explicacao": "Hier wohnt Tom.",
+            "id": "de-004-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Jetzt Tom und Camila kochen.",
+            "respostaEsperada": "Jetzt kochen Tom und Camila.",
+            "explicacao": "Jetzt kochen Tom und Camila.",
+            "id": "de-004-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich trinke gern Kaffee.",
+            "respostaEsperada": "OK",
+            "id": "de-004-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Morgen ich spiele Fußball.",
+            "respostaEsperada": "Morgen spiele ich Fußball.",
+            "explicacao": "Morgen spiele ich Fußball.",
+            "id": "de-004-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é deixar o sujeito colado no começo depois de um advérbio de tempo ou lugar: Heute ich lerne. Parece natural porque o português faz assim, mas em alemão o verbo é um imã fixo na Posição 2 e o sujeito vai para depois dele (inversão). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases: onde mora, onde trabalha, o que aprende e uma pergunta."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 2. Complete com o verbo na forma certa dentro de frases maiores: Heute ____ (arbeiten) er in München. · Jetzt ____ (wohnen) ihr in Berlin. · Dann ____ (haben) wir Hunger. · Hier ____ (sein) du richtig. Do capítulo 1. Diga em voz alta o som da primeira letra: Wasser, Zeit, Sonne."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Começo uma frase por Heute e coloco o verbo logo depois. · Reconheço o bloco da posição 1 em Tom und Camila kochen. Percebo na hora que Dann wir kochen está errado."
       }
     ]
   },

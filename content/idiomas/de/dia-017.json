@@ -20,8 +20,120 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa mein, dein, sein, ihr, unser, euer, Ihr com o final certo, escolhe entre sein e ihr sem confundir dono e coisa, e usa dieser, welcher, jeder, alle e os indefinidos man, jemand, niemand, etwas, nichts, alles."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "A foto da família",
+        "contexto": "Camila mostra uma foto no celular. Jonas pergunta quem é quem.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Wer ist das auf dem Foto?",
+            "pt": "— Quem é esse na foto?",
+            "audio": "Wer ist das auf dem Foto?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro.",
+            "pt": "— É a minha família. Este é o meu pai, esta é a minha mãe e este é o meu irmão Pedro.",
+            "audio": "Das ist meine Familie. Das ist mein Vater, das ist meine Mutter und das ist mein Bruder Pedro."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und diese Frau?",
+            "pt": "— E essa mulher?",
+            "audio": "Und diese Frau?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist meine Tante. Ihr Mann ist Arzt.",
+            "pt": "— É a minha tia. O marido dela é médico.",
+            "audio": "Das ist meine Tante. Ihr Mann ist Arzt."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wo wohnt deine Familie?",
+            "pt": "— Onde mora a sua família?",
+            "audio": "Wo wohnt deine Familie?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo.",
+            "pt": "— Os meus pais moram em Recife. O meu irmão estuda em São Paulo.",
+            "audio": "Meine Eltern wohnen in Recife. Mein Bruder studiert in São Paulo."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Welches Foto gefällt dir am besten?",
+            "pt": "— De qual foto você mais gosta?",
+            "audio": "Welches Foto gefällt dir am besten?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Dieses Foto. Hier sind alle zusammen.",
+            "pt": "— Desta foto. Aqui estão todos juntos.",
+            "audio": "Dieses Foto. Hier sind alle zusammen."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Meine Familie wohnt auch weit weg.",
+            "pt": "— A minha família também mora longe.",
+            "audio": "Meine Familie wohnt auch weit weg."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Outra diferença: o alemão não usa artigo antes do possessivo. “O meu pai” é mein Vater, nunca der mein Vater. PASSO 2: o dono escolhe a raiz. A coisa possuída escolhe o final.",
+        "comparacao": "O português diz “seu” e “sua” para tudo: “seu pai” pode ser o pai dele, dela, de você ou deles. O possessivo concorda só com a coisa possuída. O alemão concorda com duas coisas.",
+        "tabela": [
+          {
+            "portugues": "o pai dele",
+            "ingles": "sein Vater",
+            "evite": "Tom"
+          },
+          {
+            "portugues": "o pai dela",
+            "ingles": "ihr Vater",
+            "evite": "Lena"
+          },
+          {
+            "portugues": "a mãe dele",
+            "ingles": "seine Mutter",
+            "evite": "Tom"
+          },
+          {
+            "portugues": "a mãe dela",
+            "ingles": "ihre Mutter",
+            "evite": "Lena"
+          },
+          {
+            "portugues": "o seu pai (tu)",
+            "ingles": "dein Vater",
+            "evite": "você, amigo"
+          },
+          {
+            "portugues": "o seu pai (formal)",
+            "ingles": "Ihr Vater",
+            "evite": "o senhor"
+          },
+          {
+            "portugues": "o pai de vocês",
+            "ingles": "euer Vater",
+            "evite": "vocês"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 12,
+        "min": 8,
         "itens": [
           {
             "ru": "die Familie",
@@ -111,7 +223,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Haben e o objeto direto",
         "explicacao": "«Haben» (ter) é irregular. O objeto direto de «haben» vai para o acusativo. No masculino singular, «ein» vira «einen» e «kein» vira «keinen»; no feminino, no neutro e no plural nada muda: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe ein Kind. Ich habe keine Kinder».",
         "comparacao": "em português o objeto direto não muda de forma. Em alemão, o masculino muda: «ein Bruder» (quem é) vira «einen Bruder» (o que se tem).",
@@ -197,12 +309,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga: «Ich habe einen Bruder. Ich habe eine Schwester. Ich habe keine Kinder.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 4 frases com verbos regulares no presente."
       }
     ]

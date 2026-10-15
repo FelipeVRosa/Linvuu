@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "multiple-choice",
@@ -224,14 +224,87 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se: apresentação completa de 1 minuto, com tudo o que você aprendeu no bloco."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva quatro perguntas para um novo colega usando du: uma com wie, uma com woher, uma com wo e uma com was.",
+            "respostaEsperada": "Wie heißt du? / Woher kommst du? / Wo wohnst du jetzt? / Was machst du hier in München?",
+            "id": "de-010-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva as suas próprias respostas completas para essas quatro perguntas.",
+            "respostaEsperada": "Ich heiße Lucas. / Ich komme aus Brasilien. / Ich wohne jetzt in München. / Ich lerne Deutsch und arbeite hier.",
+            "id": "de-010-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo de seis falas entre você e um colega no primeiro dia de curso de alemão.",
+            "respostaEsperada": "Modelo de diálogo: — Hallo! Ich bin Lucas. Wie heißt du?— Hallo Lucas! Ich heiße Anna. Woher kommst du?— Ich komme aus Brasilien. Und du, kommst du aus Deutschland?— Nein, ich komme aus Österreich, aber ich wohne jetzt hier.— Cool! Trinken wir nachher zusammen Kaffee?— Ja, sehr gern!",
+            "id": "de-010-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wo du wohnst?",
+            "respostaEsperada": "Wo wohnst du?",
+            "explicacao": "Wo wohnst du?",
+            "id": "de-010-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wohnen du in Berlin?",
+            "respostaEsperada": "Wohnst du in Berlin?",
+            "explicacao": "Wohnst du in Berlin? (o verbo concorda com du)",
+            "id": "de-010-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Woher du kommst?",
+            "respostaEsperada": "Woher kommst du?",
+            "explicacao": "Woher kommst du?",
+            "id": "de-010-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wo gehst du heute?",
+            "respostaEsperada": "Wohin gehst du heute?",
+            "explicacao": "Wohin gehst du heute?",
+            "id": "de-010-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Wer wohnt hier?",
+            "respostaEsperada": "OK",
+            "id": "de-010-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Was ist Tom?",
+            "respostaEsperada": "Wer ist Tom?",
+            "explicacao": "Wer ist Tom?",
+            "id": "de-010-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é usar wo para tudo (esquecendo que destino pede wohin e origem pede woher) ou deixar o sujeito antes do verbo na pergunta (Wo du wohnst? em vez de Wo wohnst du?). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Releia o mapa de revisão e escolha os 3 pontos em que você ainda erra."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 3. Reordene em frases afirmativas, começando pela primeira palavra: (a) Heute / lernen / wir / Deutsch. (b) Dann / Camila / trinkt / Kaffee. (c) Hier / Tom / wohnt. Do capítulo 2. Escreva a forma certa: du (wohnen), er (kommen), ihr (lernen), Sie (arbeiten). Do capítulo 1. Diga em voz alta: Wo, Woher, Warum, Wer, Wie. Qual é o som do w? E do ie?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Pergunto nome, origem, moradia e atividade. · Escolho entre wo, wohin e woher. · Transformo afirmações em perguntas de sim ou não."
       }
     ]
   },

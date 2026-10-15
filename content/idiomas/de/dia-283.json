@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Mais partículas, passo a passo",
         "explicacao": "PASSO 1: «DENN» suaviza uma pergunta: «Wie geht es dir denn?» (como você está, afinal?). PASSO 2: «EIGENTLICH» significa «na verdade»: «Was machst du eigentlich?» PASSO 3: «WOHL» expressa suposição: «Er ist wohl krank.» PASSO 4: «SCHON» tranquiliza: «Das wird schon klappen» (vai dar certo, não se preocupe). PASSO 5: «ABER» marca surpresa: «Das ist aber nett!» (que gentil!). PASSO 6: «RUHIG» dá permissão tranquila: «Du kannst ruhig früher gehen.» PASSO 7: «VIELLEICHT» em exclamação: «Das war vielleicht ein Tag!» (que dia aquele!). PASSO 8: use as partículas na fala, não na escrita formal.",
         "tabela": [
@@ -65,7 +65,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Ein Gespräch unter Freunden / Uma conversa entre amigos",
         "contexto": "Dois amigos conversam de forma descontraída.",
         "linhas": [
@@ -120,13 +120,223 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Komm doch mit!",
+            "translit": "",
+            "pt": "Vem com a gente, vai.",
+            "en": "",
+            "audio": "Komm doch mit!"
+          },
+          {
+            "ru": "Warte mal!",
+            "translit": "",
+            "pt": "Espera aí!",
+            "en": "",
+            "audio": "Warte mal!"
+          },
+          {
+            "ru": "Moment mal!",
+            "translit": "",
+            "pt": "Peraí! / Um momento!",
+            "en": "",
+            "audio": "Moment mal!"
+          },
+          {
+            "ru": "Kommen Sie doch herein!",
+            "translit": "",
+            "pt": "Entre, por favor!",
+            "en": "",
+            "audio": "Kommen Sie doch herein!"
+          },
+          {
+            "ru": "Das ist aber nett von dir!",
+            "translit": "",
+            "pt": "Que gentil da sua parte!",
+            "en": "",
+            "audio": "Das ist aber nett von dir!"
+          },
+          {
+            "ru": "Was machst du denn hier?",
+            "translit": "",
+            "pt": "O que você está fazendo aqui, afinal?",
+            "en": "",
+            "audio": "Was machst du denn hier?"
+          },
+          {
+            "ru": "Du weißt ja, ich bin müde.",
+            "translit": "",
+            "pt": "Você sabe, né? Estou cansado.",
+            "en": "",
+            "audio": "Du weißt ja, ich bin müde."
+          },
+          {
+            "ru": "Das schaffst du schon!",
+            "translit": "",
+            "pt": "Você vai conseguir, pode confiar!",
+            "en": "",
+            "audio": "Das schaffst du schon!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Komm ___ mit, es wird lustig!",
+            "opcoes": [
+              "doch",
+              "denn"
+            ],
+            "gabarito": "doch",
+            "explicacao": "Veja a chave comentada no livro: doch (convite)",
+            "id": "de-071-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wie heißt du ___?",
+            "opcoes": [
+              "denn",
+              "mal"
+            ],
+            "gabarito": "denn",
+            "explicacao": "Veja a chave comentada no livro: denn (curiosidade em pergunta)",
+            "id": "de-071-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Das Café sieht ___ teuer aus!",
+            "opcoes": [
+              "aber",
+              "mal"
+            ],
+            "gabarito": "aber",
+            "explicacao": "Veja a chave comentada no livro: aber (surpresa)",
+            "id": "de-071-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Warte ___, ich habe noch Münzen.",
+            "opcoes": [
+              "mal",
+              "ja"
+            ],
+            "gabarito": "mal",
+            "explicacao": "Veja a chave comentada no livro: mal (pedido leve)",
+            "id": "de-071-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Du weißt ___, ich esse kein Fleisch.",
+            "opcoes": [
+              "ja",
+              "mal"
+            ],
+            "gabarito": "ja",
+            "explicacao": "Veja a chave comentada no livro: ja (você já sabe; mal não cabe)",
+            "id": "de-071-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é o pedido mais amável?",
+            "opcoes": [
+              "Komm her!",
+              "Komm doch mal her!"
+            ],
+            "gabarito": "Komm doch mal her!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-071-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual está certa?",
+            "opcoes": [
+              "Ich komme gleich ja",
+              "Ich komme ja gleich"
+            ],
+            "gabarito": "Ich komme ja gleich",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-071-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pergunta curiosa: Wo warst du ___ gestern?",
+            "respostaEsperada": "denn",
+            "explicacao": "Veja a chave comentada no livro: denn",
+            "id": "de-071-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pedido suave: Kannst du mir ___ helfen?",
+            "respostaEsperada": "mal",
+            "explicacao": "Veja a chave comentada no livro: mal",
+            "id": "de-071-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "“Você sabe disso”: Du hast ___ Zeit, oder?",
+            "respostaEsperada": "doch",
+            "explicacao": "Veja a chave comentada no livro: doch",
+            "id": "de-071-L-203a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Surpresa com o preço: Das Hotel ist ___ teuer!",
+            "respostaEsperada": "aber (também é possível ja, com um tom de quem constata)",
+            "id": "de-071-L-204"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Resignação: Der Zug ist weg. Dann nehmen wir ___ den Bus.",
+            "respostaEsperada": "halt ou eben",
+            "explicacao": "Veja a chave comentada no livro: halt ou eben",
+            "id": "de-071-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tranquilizar: Keine Sorge, du schaffst das ___.",
+            "respostaEsperada": "schon",
+            "explicacao": "Veja a chave comentada no livro: schon",
+            "id": "de-071-L-206a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Lembrar: Du weißt ___, ich bin Vegetarier.",
+            "respostaEsperada": "ja (também é possível doch)",
+            "id": "de-071-L-207"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Traduza para o alemão, com uma partícula: “Espera aí!”",
+            "respostaEsperada": "Warte mal! (ou: Moment mal!)",
+            "id": "de-071-L-208"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Traduza para o alemão, com uma partícula: “Vem com a gente, vai!”",
+            "respostaEsperada": "Komm doch mit!",
+            "id": "de-071-L-209"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Traduza para o alemão, com uma partícula: “O que você está fazendo aqui, afinal?”",
+            "respostaEsperada": "Was machst du denn hier?",
+            "id": "de-071-L-210"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Converse em voz alta com um amigo de forma descontraída, usando «denn», «eigentlich», «wohl», «schon», «aber» e «ruhig»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com «doch», «mal», «ja», «eben» e «halt»."
       }
     ]

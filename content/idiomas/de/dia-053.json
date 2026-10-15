@@ -20,8 +20,87 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você nega frases com nicht ou kein sem hesitar, sabe onde pôr o nicht e responde a perguntas negativas com doch ou nein."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Um convite recusado",
+        "contexto": "Jonas quer sair com Camila, mas ela está ocupada.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Hallo Camila! Hast du heute Abend Zeit?",
+            "pt": "— Oi, Camila! Você tem tempo hoje à noite?",
+            "audio": "Hallo Camila! Hast du heute Abend Zeit?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Leider nicht. Ich habe keine Zeit, ich lerne noch.",
+            "pt": "— Infelizmente não. Não tenho tempo, ainda estou estudando.",
+            "audio": "Leider nicht. Ich habe keine Zeit, ich lerne noch."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Schade! Und morgen?",
+            "pt": "— Que pena! E amanhã?",
+            "audio": "Schade! Und morgen?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball.",
+            "pt": "— Amanhã tenho tempo. Mas não jogo futebol bem.",
+            "audio": "Morgen habe ich Zeit. Aber ich spiele nicht gut Fußball."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Kein Problem! Wir spielen nicht Fußball, wir trinken Tee.",
+            "pt": "— Sem problema! Não vamos jogar futebol, vamos tomar chá.",
+            "audio": "Kein Problem! Wir spielen nicht Fußball, wir trinken Tee."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Super! Ich bin keine Sportlerin.",
+            "pt": "— Ótimo! Não sou atleta.",
+            "audio": "Super! Ich bin keine Sportlerin."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Há uma segunda armadilha. Em português, “não tenho nada” e “não tenho tempo nunca” usam “não” junto de outra palavra negativa. Em alemão não: Ich habe nichts.Ich habe nie Zeit. Sem nicht. PASSO 2: tem ein na frase afirmativa? Troque por kein. Não tem ein? Use nicht.",
+        "comparacao": "O português tem um único “não”, sempre antes do verbo: “Não moro em Berlim. Não tenho carro. Não tenho tempo.” O alemão divide o trabalho em duas palavras e tira o “não” da frente do verbo.",
+        "tabela": [
+          {
+            "portugues": "Não moro em Berlim.",
+            "ingles": "Ich wohne nicht in Berlin.",
+            "evite": "nega o verbo ou o lugar: nicht"
+          },
+          {
+            "portugues": "Não tenho carro.",
+            "ingles": "Ich habe kein Auto.",
+            "evite": "nega um substantivo sem artigo ou com ein: kein"
+          },
+          {
+            "portugues": "Não tenho tempo.",
+            "ingles": "Ich habe keine Zeit.",
+            "evite": "idem: kein"
+          },
+          {
+            "portugues": "Não é grande.",
+            "ingles": "Es ist nicht groß.",
+            "evite": "nega adjetivo: nicht"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "brauchen",
@@ -83,7 +162,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Os pronomes no acusativo, passo a passo",
         "explicacao": "PASSO 1: o OBJETO DIRETO é o que sofre a ação: em «Ich sehe den Mann», quem eu vejo é «den Mann». PASSO 2: para não repetir a palavra, trocamos o objeto por um pronome: «Ich sehe den Mann» → «Ich sehe ihn.» PASSO 3: o pronome segue o GÊNERO da palavra trocada: «der Tisch» → «ihn»; «die Lampe» → «sie»; «das Buch» → «es»; «die Bücher» → «sie». PASSO 4: para pessoas, os pronomes de «eu» e «tu» mudam de forma: «ich» → «mich», «du» → «dich». PASSO 5: cuidado com «sie» (ela, eles) e «Sie» (o senhor, a senhora): o contexto e a maiúscula mostram qual é qual. Lembre-se de que só o masculino muda no artigo (den); nos pronomes, mudam todos: ich → mich, du → dich, er → ihn, wir → uns, ihr → euch.",
         "comparacao": "o português também troca o pronome («eu vejo ele», «eu vejo você»). Em alemão cada pronome tem uma forma própria no acusativo, e a escolha depende do gênero da palavra.",
@@ -164,12 +243,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Troque os objetos por pronomes em voz alta: «Ich sehe den Mann → Ich sehe ihn», com 5 frases suas."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o acusativo de «der Mann», «die Frau», «das Kind» e «die Kinder», com artigo definido."
       }
     ]

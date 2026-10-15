@@ -20,8 +20,29 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare os pares. PASSO 2: Observe também estas frases. PASSO 3: Ich fahre mit dem Bus. PASSO 4: Das Geschenk ist für dich. PASSO 5: Ich gehe zum Arzt. PASSO 6: Ich komme aus der Schule. Ich gehe ohne ihn. PASSO 7: Perguntas: PASSO 8: Que caso aparece com wo? E com wohin? PASSO 9: Depois de mit, aus e zu, que caso vem? E depois de für e ohne? Zum é a junção de quais duas palavras?",
+        "tabela": [
+          {
+            "c1": "Ich bin in der Küche.",
+            "c2": "Ich gehe in die Küche."
+          },
+          {
+            "c1": "Das Buch liegt auf dem Tisch.",
+            "c2": "Ich lege das Buch auf den Tisch."
+          },
+          {
+            "c1": "Die Lampe steht neben dem Bett.",
+            "c2": "Ich stelle die Lampe neben das Bett."
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 7,
         "itens": [
           {
             "ru": "das Dach",
@@ -83,7 +104,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 10,
         "titulo": "As nove preposições de duas vias: a regra de ouro",
         "explicacao": "PASSO 1: nove preposições mudam de caso conforme a pergunta: an, auf, hinter, in, neben, über, unter, vor, zwischen. PASSO 2: REGRA DE OURO: se a pergunta é WO? (onde, SEM movimento), use o DATIVO; se é WOHIN? (para onde, COM movimento), use o ACUSATIVO. PASSO 3: nesta sessão, as três mais comuns: «in» (dentro de), «an» (junto de, encostado em), «auf» (sobre, em cima de). PASSO 4: contrações: in dem = im; an dem = am; in das = ins; an das = ans; auf das = aufs. PASSO 5: só o masculino muda entre os dois casos: Wo? «dem», Wohin? «den»; feminino: Wo? «der», Wohin? «die»; neutro: Wo? «dem», Wohin? «das». PASSO 6: cuidado: «Ich bin im Garten» (estado) × «Ich gehe in den Garten» (movimento).",
         "comparacao": "o português usa preposições diferentes («no jardim» × «ao jardim»). O alemão usa a MESMA preposição («in») e deixa o caso mostrar se há movimento.",
@@ -143,12 +164,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Descreva uma sala em voz alta, primeiro onde as coisas estão (Wo?) e depois para onde você as leva (Wohin?)."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva «im Park, in den Park, in der Schule, in die Schule, im Kino, ins Kino» e uma frase com cada."
       }
     ]

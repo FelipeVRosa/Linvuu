@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "dialogo",
-        "min": 7,
+        "min": 4,
         "titulo": "Im Schwimmbad / Na piscina",
         "contexto": "Um funcionário explica as regras a um visitante.",
         "linhas": [
@@ -71,7 +71,7 @@
       },
       {
         "tipo": "exercicios",
-        "min": 13,
+        "min": 9,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -227,13 +227,58 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Grave-se: diga o que você tem que fazer, o que você quer fazer e o que você pode ou não pode fazer num lugar público."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva uma frase com cada um dos 4 modais que você já conhece: können, müssen, wollen e dürfen."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Er kannt kommen.",
+            "respostaEsperada": "Er kann kommen.",
+            "explicacao": "Er kann kommen. (ich = er, sem -t)",
+            "id": "de-012-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wir können nicht gehen nach Hause.",
+            "respostaEsperada": "Wir können nicht nach Hause gehen.",
+            "explicacao": "Wir können nicht nach Hause gehen.",
+            "id": "de-012-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Du willst helfen mir?",
+            "respostaEsperada": "Willst du mir helfen?",
+            "explicacao": "Willst du mir helfen?",
+            "id": "de-012-L-c06"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é colocar o infinitivo logo depois do modal (Ich kann sprechen Deutsch em vez de Ich kann Deutsch sprechen), colocar -t na 3ª pessoa do singular do modal (er kannt em vez de er kann) e trocar nicht müssen (não precisa) por nicht dürfen (proibido). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 14. Complete: Ich muss den ____ (Student) fragen. Do capítulo 13. Complete: Ich möchte einen ____ (neu) Tisch kaufen. Do capítulo 12. Complete: Ich kann Deutsch ____ (gut) als du sprechen. (comparativo)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Peço algo com Ich möchte …, bitte. · Digo o que preciso, posso e quero fazer respeitando a moldura verbal. · Sei quando usar nicht dürfen (proibido) e nicht müssen (opcional)."
       }
     ]
   },

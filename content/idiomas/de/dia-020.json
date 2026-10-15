@@ -20,29 +20,8 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "texto",
-        "min": 5,
-        "titulo": "Meine Familie / Minha família",
-        "ru": "Das ist meine Familie. Ich habe einen Bruder und eine Schwester. Mein Bruder heißt Max. Er ist zwölf Jahre alt. Meine Schwester heißt Lisa. Sie ist fünfzehn. Wir haben keinen Hund, aber eine Katze.",
-        "pt": "Esta é a minha família. Tenho um irmão e uma irmã. Meu irmão se chama Max. Ele tem doze anos. Minha irmã se chama Lisa. Ela tem quinze. Não temos um cachorro, mas temos um gato.",
-        "perguntas": [
-          {
-            "pergunta": "Wie heißt der Bruder?",
-            "resposta": "Max"
-          },
-          {
-            "pergunta": "Wie alt ist Lisa?",
-            "resposta": "Fünfzehn"
-          },
-          {
-            "pergunta": "Haben sie einen Hund?",
-            "resposta": "Nein, sie haben eine Katze"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 15,
+        "min": 13,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -218,14 +197,94 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se apresentando a sua família: quem tem, os nomes e as idades."
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva seis frases sobre a sua família usando pelo menos quatro possessivos diferentes (mein, meine, sein, ihr, unser).",
+            "respostaEsperada": "Mein Vater heißt Carlos und meine Mutter heißt Ana. Ich habe eine Schwester: ihr Mann arbeitet in Curitiba. Ich habe auch einen Bruder: seine Frau ist Ärztin. Unsere Großeltern wohnen in Minas Gerais.",
+            "id": "de-005-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três perguntas com Welcher / Welche / Welches e três frases com jeder ou alle.",
+            "respostaEsperada": "Welcher Kurs beginnt heute? / Welche Tasche kaufst du? / Welches Buch liest du? / Jeden Tag trinke ich Kaffee. Jede Woche rufe ich meine Mutter an. Alle Freunde kommen heute Abend.",
+            "id": "de-005-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um mini-diálogo de cinco falas mostrando uma foto de família no celular, no estilo da Cena.",
+            "respostaEsperada": "Modelo de diálogo: — Wer ist das auf dem Foto?— Das ist meine Schwester Julia und das ist ihr Mann.— Und wer ist dieses Kind?— Das ist ihr Sohn Leo. Er ist vier Jahre alt.— Ein sehr schönes Foto! Eure Familie ist sehr sympathisch.",
+            "id": "de-005-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist der mein Bruder.",
+            "respostaEsperada": "Das ist mein Bruder.",
+            "explicacao": "Das ist mein Bruder. (sem artigo)",
+            "id": "de-005-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Tom und sein Mutter.",
+            "respostaEsperada": "Tom und seine Mutter.",
+            "explicacao": "Tom und seine Mutter. (Mutter é feminino)",
+            "id": "de-005-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Lena und seine Vater.",
+            "respostaEsperada": "Lena und ihr Vater.",
+            "explicacao": "Lena und ihr Vater. (dona Lena)",
+            "id": "de-005-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich suche mein Schlüssel.",
+            "respostaEsperada": "Ich suche meinen Schlüssel.",
+            "explicacao": "Ich suche meinen Schlüssel. (acusativo masculino)",
+            "id": "de-005-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich helfe mein Mutter.",
+            "respostaEsperada": "Ich helfe meiner Mutter.",
+            "explicacao": "Ich helfe meiner Mutter. (dativo feminino)",
+            "id": "de-005-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wir besuchen unser Eltern.",
+            "respostaEsperada": "Wir besuchen unsere Eltern.",
+            "explicacao": "Wir besuchen unsere Eltern. (plural)",
+            "id": "de-005-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Das ist meine Tante.",
+            "respostaEsperada": "OK",
+            "id": "de-005-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é trocar dono e coisa (Lena und sein Vater em vez de ihr Vater) ou colocar artigo antes do possessivo (der mein Bruder, hábito do português “o meu irmão” que é proibido em alemão). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva sua idade e a de 3 pessoas da sua família, por extenso, em alemão."
+        "min": 3,
+        "enunciado": "Retorno. Do capítulo 10. Complete: Ich wohne bei ____ Eltern (mein). Ich fahre mit ____ Bruder (mein). Das ist für ____ Mutter (mein). Do capítulo 9. Complete: Ich helfe ____ (er). Das Buch gehört ____ (sie, feminino). Do capítulo 8. Complete: Ich liebe ____ Vater (mein)."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Apresento minha família com mein/meine e distingo sein (dele) de ihr (dela) pelo dono. · Pergunto Welcher/Welche/Welches …? e respondo Das ist meiner / keins."
       }
     ]
   },

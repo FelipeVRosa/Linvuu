@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 9,
         "titulo": "Mein Tag / Meu dia",
         "contexto": "Dois colegas falam da rotina.",
         "linhas": [
@@ -88,34 +88,204 @@
         ]
       },
       {
-        "tipo": "texto",
-        "min": 10,
-        "titulo": "Ein Tag von Mia / Um dia da Mia",
-        "ru": "Mia steht um sieben Uhr auf. Dann duscht sie und frühstückt. Um acht Uhr fährt sie zur Arbeit. Sie arbeitet von neun bis siebzehn Uhr. Am Abend kauft sie ein und sieht fern. Sie ruft oft ihre Eltern an. In der Nacht schläft sie gut.",
-        "pt": "Mia se levanta às sete horas. Depois toma banho e café da manhã. Às oito vai para o trabalho. Ela trabalha das nove às dezessete. À noite faz compras e vê televisão. Ela liga com frequência para os pais. À noite dorme bem.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "Wann steht Mia auf?",
-            "resposta": "Um sieben Uhr"
+            "ru": "Ich rufe dich später an.",
+            "translit": "",
+            "pt": "Eu ligo para você depois.",
+            "en": "",
+            "audio": "Ich rufe dich später an."
           },
           {
-            "pergunta": "Wann arbeitet Mia?",
-            "resposta": "Von neun bis siebzehn Uhr"
+            "ru": "Kommst du mit?",
+            "translit": "",
+            "pt": "Você vem junto?",
+            "en": "",
+            "audio": "Kommst du mit?"
           },
           {
-            "pergunta": "Was macht Mia am Abend?",
-            "resposta": "Sie kauft ein und sieht fern"
+            "ru": "Der Bus kommt jetzt an.",
+            "translit": "",
+            "pt": "O ônibus está chegando agora.",
+            "en": "",
+            "audio": "Der Bus kommt jetzt an."
+          },
+          {
+            "ru": "Wann fängt der Film an?",
+            "translit": "",
+            "pt": "Quando começa o filme?",
+            "en": "",
+            "audio": "Wann fängt der Film an?"
+          },
+          {
+            "ru": "Mach bitte die Tür zu!",
+            "translit": "",
+            "pt": "Feche a porta, por favor!",
+            "en": "",
+            "audio": "Mach bitte die Tür zu!"
+          },
+          {
+            "ru": "Ich verstehe das nicht.",
+            "translit": "",
+            "pt": "Eu não entendo isso.",
+            "en": "",
+            "audio": "Ich verstehe das nicht."
+          },
+          {
+            "ru": "Nimm deine Tasche mit!",
+            "translit": "",
+            "pt": "Leve a sua bolsa!",
+            "en": "",
+            "audio": "Nimm deine Tasche mit!"
+          },
+          {
+            "ru": "Räum bitte auf!",
+            "translit": "",
+            "pt": "Arrume, por favor!",
+            "en": "",
+            "audio": "Räum bitte auf!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está certa?",
+            "opcoes": [
+              "Ich anrufe dich",
+              "Ich rufe dich an"
+            ],
+            "gabarito": "Ich rufe dich an",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-008-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Der Bus ___ um zehn Uhr ab.",
+            "opcoes": [
+              "fährt",
+              "fahrt"
+            ],
+            "gabarito": "fährt",
+            "explicacao": "Veja a chave comentada no livro: fährt",
+            "id": "de-008-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ du mit?",
+            "opcoes": [
+              "Kommst",
+              "Mitkommst"
+            ],
+            "gabarito": "Kommst",
+            "explicacao": "Veja a chave comentada no livro: Kommst",
+            "id": "de-008-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual verbo é separável?",
+            "opcoes": [
+              "verstehen",
+              "einkaufen",
+              "besuchen"
+            ],
+            "gabarito": "einkaufen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-008-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual verbo é inseparável?",
+            "opcoes": [
+              "aussteigen",
+              "bekommen",
+              "mitnehmen"
+            ],
+            "gabarito": "bekommen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-008-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich muss früh ___.",
+            "opcoes": [
+              "aufstehen",
+              "stehen auf"
+            ],
+            "gabarito": "aufstehen",
+            "explicacao": "Veja a chave comentada no livro: aufstehen",
+            "id": "de-008-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich ___ dich nicht.",
+            "opcoes": [
+              "verstehe",
+              "stehe"
+            ],
+            "gabarito": "verstehe",
+            "explicacao": "Veja a chave comentada no livro: verstehe",
+            "id": "de-008-L-107"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conjugue o verbo separável anrufen no presente: ich ___ … ___ · du ___ … ___ · er ___ … ___ · wir ___ … ___ · ihr ___ … ___",
+            "respostaEsperada": "ich rufe … an, du rufst … an, er ruft … an, wir rufen … an, ihr ruft … an",
+            "id": "de-008-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Er ___ mich heute Abend ___ (anrufen). · Wir ___ im Supermarkt ___ (einkaufen).",
+            "respostaEsperada": "Er ruft mich heute Abend an. Wir kaufen im Supermarkt ein",
+            "id": "de-008-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Du ___ abends gern ___ (fernsehen). · Der Zug ___ um acht Uhr ___ (abfahren). · Wann ___ der Kurs ___ (anfangen)?",
+            "respostaEsperada": "Du siehst abends gern fern. Der Zug fährt um acht Uhr ab. Wann fängt der Kurs an?",
+            "id": "de-008-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ (verstehen) die Frage nicht, aber der Lehrer erklärt (erklären) alles.",
+            "respostaEsperada": "verstehe",
+            "explicacao": "Veja a chave comentada no livro: verstehe, erklärt",
+            "id": "de-008-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich verstehe (verstehen) die Frage nicht, aber der Lehrer ___ (erklären) alles.",
+            "respostaEsperada": "erklärt",
+            "explicacao": "Veja a chave comentada no livro: verstehe, erklärt",
+            "id": "de-008-L-204b"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Reescreva com o verbo modal indicado e escreva o imperativo: Ich stehe früh auf. (müssen) → ___ · Wir kaufen heute ein. (wollen) → ___ · Kommst du mit? (können) → ___",
+            "respostaEsperada": "Ich muss früh aufstehen. Wir wollen heute einkaufen. Kannst du mitkommen?",
+            "id": "de-008-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Reescreva com o verbo modal indicado e escreva o imperativo: Imperativo: aufstehen (du: ___! / ihr: ___! / Sie: ___!) · mitkommen (du: ___!) · aufräumen (du: ___!)",
+            "respostaEsperada": "Steh auf! Steht auf! Stehen Sie auf! Komm mit! Räum auf!",
+            "id": "de-008-L-206"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Conte em voz alta o seu dia, da hora em que você se levanta até a hora em que dorme."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva a sua rotina em 5 frases, com horas."
       }
     ]

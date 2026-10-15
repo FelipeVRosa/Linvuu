@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você conta o que fez ontem com haben ou sein + particípio, forma o particípio de verbos regulares, irregulares, separáveis e inseparáveis, e escolhe entre haben e sein."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O que você fez ontem?",
+        "contexto": "Lena encontra Camila no café e pergunta como foi o dia anterior.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Hallo Camila! Was hast du gestern gemacht?",
+            "pt": "— Oi, Camila! O que você fez ontem?",
+            "audio": "Hallo Camila! Was hast du gestern gemacht?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen.",
+            "pt": "— Eu acordei cedo. Depois liguei para o Pedro. A gente conversou bastante.",
+            "audio": "Ich bin früh aufgestanden. Dann habe ich Pedro angerufen. Wir haben lange gesprochen."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Und danach?",
+            "pt": "— E depois?",
+            "audio": "Und danach?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft.",
+            "pt": "— O Jonas e eu fomos para o centro. A gente fez compras. Eu comprei um livro.",
+            "audio": "Jonas und ich sind in die Stadt gefahren. Wir haben eingekauft. Ich habe ein Buch gekauft."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Seid ihr ins Museum gegangen?",
+            "pt": "— Vocês foram ao museu?",
+            "audio": "Seid ihr ins Museum gegangen?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen.",
+            "pt": "— Fomos! A gente viu muitos quadros. Mas eu esqueci a minha bolsa.",
+            "audio": "Ja! Wir haben viele Bilder gesehen. Aber ich habe meine Tasche vergessen."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Oh nein! Hast du sie gefunden?",
+            "pt": "— Ai, não! Você achou?",
+            "audio": "Oh nein! Hast du sie gefunden?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht.",
+            "pt": "— Sim, o Jonas achou. A gente voltou para casa e cozinhou massa.",
+            "audio": "Ja, Jonas hat sie gefunden. Wir sind nach Hause gekommen und haben Pasta gekocht."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: passado da fala = auxiliar na posição 2 + particípio no fim. Movimento ou mudança = sein.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Ontem eu comi pizza.",
+            "ingles": "Gestern habe ich Pizza gegessen."
+          },
+          {
+            "portugues": "Eu liguei para o Pedro.",
+            "ingles": "Ich habe Pedro angerufen."
+          },
+          {
+            "portugues": "Eu acordei cedo.",
+            "ingles": "Ich bin früh aufgestanden."
+          },
+          {
+            "portugues": "Fomos ao museu.",
+            "ingles": "Wir sind ins Museum gegangen."
+          },
+          {
+            "portugues": "O que você fez?",
+            "ingles": "Was hast du gemacht?"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "gestern",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O Perfekt, passo a passo",
         "explicacao": "PASSO 1: o Perfekt é o passado da CONVERSA e das mensagens: «Ich habe Deutsch gelernt» (eu estudei alemão). PASSO 2: ele tem DOIS elementos: o auxiliar «haben», conjugado, na 2ª posição, e o PARTIZIP II, no FIM da frase (a moldura que você já conhece dos modais). PASSO 3: o Partizip II dos verbos regulares é «ge-» + raiz + «-t»: machen → gemacht; lernen → gelernt; spielen → gespielt; kaufen → gekauft; kochen → gekocht; hören → gehört (sem o «ge-» extra: «hören» já começa com h, e o «ge» entra: ge-hör-t). PASSO 4: conjugue «haben»: ich habe, du hast, er hat, wir haben, ihr habt, sie haben. PASSO 5: pergunta de sim ou não: «Hast du schon gegessen?» e resposta: «Ja, schon» ou «Nein, noch nicht». PASSO 6: use as palavras de tempo do passado: gestern, letzte Woche, letztes Jahr.",
         "comparacao": "o português tem «eu tenho feito» (que não é o passado comum) e «eu fiz». O Perfekt alemão faz o trabalho do «eu fiz»: auxiliar + particípio no fim.",
@@ -145,12 +236,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 5 coisas que você fez ontem: «Gestern habe ich … gemacht / gekocht / gehört …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as 6 formas de «haben» no presente e 4 frases com «Ich habe …» no presente."
       }
     ]

@@ -20,8 +20,83 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você diz “de quem” com genitivo (das Haus des Mannes), com von (das Auto von Tom) e com o nome próprio (Toms Auto), declina os substantivos masculinos fracos (den Studenten) e usa wegen, trotz e innerhalb."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "A festa da lena",
+        "contexto": "Na festa, Camila e Jonas tentam descobrir de quem são as coisas.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Wessen Jacke ist das?",
+            "pt": "— De quem é essa jaqueta?",
+            "audio": "Wessen Jacke ist das?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist Toms Jacke. Die Tasche gehört Lena.",
+            "pt": "— É a jaqueta do Tom. A bolsa é da Lena.",
+            "audio": "Das ist Toms Jacke. Die Tasche gehört Lena."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wem gehört das Auto vor der Tür?",
+            "pt": "— E de quem é o carro em frente à porta?",
+            "audio": "Und wem gehört das Auto vor der Tür?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters.",
+            "pt": "— É o carro do vizinho. Ele não vem hoje, por causa do tempo.",
+            "audio": "Das ist das Auto des Nachbarn. Er kommt heute nicht, wegen des Wetters."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?",
+            "pt": "— Apesar da chuva, há muitos convidados! Você conhece aquele estudante ali?",
+            "audio": "Trotz des Regens sind viele Gäste da! Kennst du den Studenten dort?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche.",
+            "pt": "— Conheço, é o colega do Tom. Ele está ajudando a Lena na cozinha.",
+            "audio": "Ja, das ist der Kollege von Tom. Er hilft Lena in der Küche."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: A ordem também muda: no genitivo, o dono vem depois da coisa (das Haus meines Vaters), mas com o nome próprio ele vem antes (Toms Haus). PASSO 2: Há mais uma armadilha: alguns substantivos masculinos ganham -n em todos os casos, menos no nominativo (der Student, den Studenten). O português não tem nada parecido. PASSO 3: nome próprio vem antes (Toms Auto). Substantivo comum vem depois (das Auto des Nachbarn).",
+        "comparacao": "O português usa uma só palavra, “de”: “o carro do Tom”, “a casa de meus pais”, “o carro do vizinho”. O alemão usa três caminhos.",
+        "tabela": [
+          {
+            "portugues": "o carro do Tom",
+            "ingles": "Toms Auto / das Auto von Tom"
+          },
+          {
+            "portugues": "a casa do vizinho",
+            "ingles": "das Haus des Nachbarn"
+          },
+          {
+            "portugues": "os amigos dos meus pais",
+            "ingles": "die Freunde meiner Eltern"
+          },
+          {
+            "portugues": "vejo o estudante",
+            "ingles": "ich sehe den Studenten"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "der Besitzer",
@@ -83,7 +158,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O genitivo, passo a passo",
         "explicacao": "PASSO 1: o GENITIVO responde a «wessen?» (de quem?) e mostra POSSE ou pertencimento: «das Auto meines Vaters» (o carro do meu pai). PASSO 2: o possuidor vem DEPOIS da coisa possuída (ao contrário do inglês): «das Auto meines Vaters», e não «meines Vaters Auto». PASSO 3: artigos no genitivo: masculino «des», feminino «der», neutro «des», plural «der»; indefinidos: «eines», «einer», «eines». PASSO 4: o substantivo MASCULINO e NEUTRO ganha «-(e)s»: «des Mannes», «des Kindes», «des Autos»; feminino e plural não mudam: «der Frau», «der Kinder». PASSO 5: com NOMES PRÓPRIOS, acrescente «-s», sem apóstrofo e sem artigo, ANTES da coisa: «Annas Auto», «Pauls Buch». PASSO 6: na fala, é comum trocar o genitivo por «von» + dativo: «das Auto von meinem Vater».",
         "comparacao": "o português usa «de» («o carro do meu pai»). O alemão usa o genitivo, com «des/der» e um «-s» no substantivo masculino e neutro, ou «von» + dativo na fala.",
@@ -158,12 +233,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 6 frases de posse: «Das ist das Auto meines Vaters. Das ist Annas Handy. Das ist die Tasche der Frau.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o quadro dos artigos nos quatro casos de memória."
       }
     ]

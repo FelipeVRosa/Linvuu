@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você fala do futuro com o presente + palavra de tempo, usa werden + infinitivo para prometer, prever e supor, usa werden no sentido de “tornar-se” e pergunta Was hast du vor?"
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Planos para o verão",
+        "contexto": "Jonas pergunta a Camila o que ela fará nas férias.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Camila, was machst du im Sommer?",
+            "pt": "— Camila, o que você vai fazer no verão?",
+            "audio": "Camila, was machst du im Sommer?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich fliege nach Brasilien. Ich besuche meine Familie in Recife.",
+            "pt": "— Vou voar para o Brasil. Vou visitar a minha família em Recife.",
+            "audio": "Ich fliege nach Brasilien. Ich besuche meine Familie in Recife."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wie lange wirst du bleiben?",
+            "pt": "— Quanto tempo você vai ficar?",
+            "audio": "Wie lange wirst du bleiben?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Vier Wochen. Ich werde meine Oma besuchen und viel schlafen. Pedro holt mich am Flughafen ab.",
+            "pt": "— Quatro semanas. Vou visitar a minha avó e dormir bastante. O Pedro me busca no aeroporto.",
+            "audio": "Vier Wochen. Ich werde meine Oma besuchen und viel schlafen. Pedro holt mich am Flughafen ab."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wow! Und was wirst du in Recife essen?",
+            "pt": "— Uau! E o que você vai comer em Recife?",
+            "audio": "Wow! Und was wirst du in Recife essen?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Tapioca, natürlich! Und du? Was hast du vor?",
+            "pt": "— Tapioca, claro! E você? O que você tem planejado?",
+            "audio": "Tapioca, natürlich! Und du? Was hast du vor?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich werde in München bleiben und arbeiten. Aber im Herbst fahre ich nach Wien.",
+            "pt": "— Vou ficar em Munique e trabalhar. Mas no outono vou para Viena.",
+            "audio": "Ich werde in München bleiben und arbeiten. Aber im Herbst fahre ich nach Wien."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das wird bestimmt schön!",
+            "pt": "— Com certeza vai ser lindo!",
+            "audio": "Das wird bestimmt schön!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Morgen fahre ich é o futuro de todos os dias. Werden + infinitivo no fim para promessa, previsão e suposição. Gehen + infinitivo não é futuro.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Amanhã eu vou para Berlim.",
+            "ingles": "Morgen fahre ich nach Berlin."
+          },
+          {
+            "portugues": "Eu vou ligar para você. (promessa)",
+            "ingles": "Ich werde dich anrufen."
+          },
+          {
+            "portugues": "Vai ficar frio.",
+            "ingles": "Es wird kalt."
+          },
+          {
+            "portugues": "Ele vai ser médico.",
+            "ingles": "Er wird Arzt."
+          },
+          {
+            "portugues": "Vai ser lindo!",
+            "ingles": "Das wird bestimmt schön!"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "werden",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Werden: tornar-se e futuro, passo a passo",
         "explicacao": "PASSO 1: «werden» é irregular: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. PASSO 2: como VERBO PRINCIPAL, «werden» significa TORNAR-SE, FICAR: «Es wird kalt» (está ficando frio), «Ich werde Lehrer» (vou ser professor), «Er wird müde.» PASSO 3: como AUXILIAR do futuro, «werden» + infinitivo no FIM forma o FUTUR I: «Ich werde morgen arbeiten.» PASSO 4: a frase continua emoldurada: «werden» na 2ª posição e o infinitivo no fim. PASSO 5: pergunta: «Wirst du kommen?»; negação: «Ich werde nicht kommen.» PASSO 6: com verbo separável, o infinitivo inteiro vai ao fim: «Ich werde früh aufstehen.»",
         "comparacao": "o português usa o futuro simples («eu trabalharei») ou «vou + infinitivo» («vou trabalhar»). O alemão usa «werden + infinitivo», parecido com o segundo.",
@@ -135,12 +226,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 6 frases com «werden»: «Es wird kalt. Ich werde Lehrer. Ich werde morgen … arbeiten.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 8 pedidos e conselhos educados com würde, hätte, wäre e könnte."
       }
     ]

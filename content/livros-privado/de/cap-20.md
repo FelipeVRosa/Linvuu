@@ -1,0 +1,334 @@
+# Capítulo 20: Verbos reflexivos e verbos com preposição (A2)
+
+*Nível a2 · páginas 236–249 do livro*
+
+Meta do capítulo. Ao final, você usa mich, dich, sich, uns, euch na posição certa, aprende cerca de quinze verbos com preposição fixa (warten auf, denken an, sich freuen auf) e responde com darauf, daran, darüber e pergunta com worauf, woran, worüber.
+
+
+## 1. Cena: planos para o fim de semana
+
+Camila, Lena, Jonas e Tom combinam o fim de semana.
+
+**Cena**
+
+**Lena:** Hallo Camila! Freust du dich auf das Wochenende?  
+**Camila:** Ja, sehr! Ich interessiere mich für die Ausstellung im Museum. Wartest du auch auf Tom?  
+**Lena:** Ja, wir treffen uns um zehn Uhr am Bahnhof. Du kommst auch, oder?  
+**Camila:** Natürlich. Aber ich muss mich beeilen. Ich ziehe mich nur schnell an.  
+**Jonas:** Denkst du an deine Jacke? Es ist kalt!  
+**Camila:** Danke, Jonas! Ich denke daran.  
+**Tom:** Hallo! Entschuldigt bitte, ich habe mich verspätet. Worüber sprecht ihr?  
+**Lena:** Wir sprechen über das Wochenende. Freust du dich auch darauf?  
+**Tom:** Ja! Ich freue mich sehr darauf.  
+
+Em português: Oi, Camila! Você está animada para o fim de semana? / Muito! Eu me interesso pela exposição no museu. Você também está esperando o Tom? / Sim, a gente se encontra às dez na estação. Você vem também, né? / Claro. Mas preciso me apressar. Só vou me vestir rápido. / Você está lembrando da sua jaqueta? Está frio! / Obrigada, Jonas! Estou lembrando. / Oi! Desculpem, eu me atrasei. Sobre o que vocês estão falando? / Estamos falando do fim de semana. Você também está animado? / Sim! Estou muito animado.
+
+Repare: o pronome (dich, mich, uns) vem logo depois do verbo, e cada verbo tem a sua preposição (freuen auf, interessieren für, warten auf, denken an, sprechen über).
+
+
+## 2. A armadilha do português
+
+Três armadilhas.
+
+1. 1. O pronome acompanha o sujeito. Em alemão, ele sempre combina: ich freue mich, du freust dich, er freut sich, wir freuen uns. O aluno costuma fixar mich e usar para todos, como se fosse uma palavra só.
+2. 2. A preposição não é a sua. “Esperar” não tem preposição em português, mas warten pede auf. “Pensar em” vira denken an. “Sonhar com” vira träumen von. Traduzir a preposição dá o erro.
+3. 3. O sich é obrigatório. Em português, muitos verbos funcionam com ou sem “se” (“a gente se encontra”, “a gente encontra”). Em alemão, sich treffen e sich verspäten sempre levam o sich. Aprenda cada verbo já com ele.
+
+| PORTUGUÊS | ALEMÃO |
+|---|---|
+| Eu estou animado para o fim de semana. | Ich freue mich auf das Wochenende. |
+| Eu espero o ônibus. | Ich warte auf den Bus. |
+| Eu penso em você. | Ich denke an dich. |
+| A gente se encontra às dez. | Wir treffen uns um zehn Uhr. |
+| Sobre o que vocês falam? | Worüber sprecht ihr? |
+
+**Atenção**
+
+o pronome reflexivo combina com o sujeito. A preposição é do verbo, não do português.
+
+
+## 3. Descubra você mesmo
+
+Observe as frases.
+
+1. 1. Ich freue mich. Du freust dich. Er freut sich. Wir freuen uns. Ihr freut euch. Sie freuen sich.
+2. 2. Ich warte auf den Bus. / Worauf wartest du? / Ich warte darauf.
+3. 3. Ich denke an meine Oma. / Woran denkst du? / Ich denke an sie.
+4. 4. Ich muss mich beeilen.
+5. 5. Ich habe mich gefreut.
+6. 6. Setz dich! / Setzen Sie sich!
+
+Perguntas:
+
+Na frase 1, que pronome combina com ich? E com er, sie e Sie?
+
+Na frase 4, onde está mich? Compare com o capítulo 15.
+
+Na frase 5, qual é o auxiliar? Compare com o capítulo 18.
+
+Na frase 2, como se forma worauf e darauf?
+
+Na frase 3, quando você usa an sie? E quando usa daran?
+
+Se você notou que o pronome acompanha o sujeito, que ele fica antes do infinitivo na moldura e que darauf e worauf vieram de da/wo + auf, descobriu a regra.
+
+
+## 4. Em 30 segundos
+
+**Em 30 segundos**
+
+1. 1. Pronomes reflexivos (acusativo):
+
+| SUJEITO | PRONOME |
+|---|---|
+| ich | mich |
+| du | dich |
+| er, sie, es | sich |
+| wir | uns |
+| ihr | euch |
+| sie, Sie | sich |
+
+2. 2. Posição: logo depois do verbo conjugado. Ich freue mich. Em perguntas, depois do sujeito: Freust du dich? Com modal, antes do infinitivo: Ich muss mich beeilen. Com separável, o prefixo vai para o fim: Ich ziehe mich an.
+3. 3. Imperativo:Setz dich! Setzt euch! Setzen Sie sich! Beeil dich!
+4. 4. Perfekt: sempre com haben. Ich habe mich gefreut.
+5. 5. Dativo: quando já há um objeto no acusativo, o pronome fica no dativo (mir, dir; nas outras pessoas é igual). Ich wasche mir die Hände. Ich kaufe mir ein Buch.
+6. 6. Recíproco:Wir sehen uns. Wir treffen uns. = um ao outro.
+7. 7. Verbo + preposição fixa: aprenda tudo junto.
+
+| VERBO + PREPOSIÇÃO | CASO | SENTIDO |
+|---|---|---|
+| warten auf | acusativo | esperar |
+| denken an | acusativo | pensar em |
+| sich freuen auf | acusativo | estar animado (futuro) |
+| sich freuen über | acusativo | alegrar-se com (agora, passado) |
+| sich interessieren für | acusativo | interessar-se por |
+| sprechen über | acusativo | falar sobre |
+| sich erinnern an | acusativo | lembrar-se de |
+| sich ärgern über | acusativo | irritar-se com |
+| aufpassen auf | acusativo | prestar atenção em, cuidar de |
+| sich kümmern um | acusativo | cuidar de |
+| fragen nach | dativo | perguntar por |
+| träumen von | dativo | sonhar com |
+| erzählen von | dativo | contar sobre |
+| Angst haben vor | dativo | ter medo de |
+| teilnehmen an | dativo | participar de |
+
+8. 8. Para coisas: pergunta com wo(r) + preposição. Resposta com da(r) + preposição. Worauf wartest du? Ich warte darauf.
+9. 9. Para pessoas: preposição + wen/wem na pergunta; preposição + pronome na resposta. Auf wen wartest du? Auf ihn.
+
+
+## 5. Por dentro
+
+Como saber a preposição. Não há truque. Aprenda cada verbo com a preposição e o caso, como um bloco: warten auf + Akk. Faça cartões: de um lado o português, do outro o bloco inteiro.
+
+O r de ligação. Se a preposição começa com vogal, entra um r entre da/wo e ela: darauf, daran, darüber, woran, worauf, worüber. Se começa com consoante, não entra: davon, dafür, dazu, wovon, wofür.
+
+Coisa ou pessoa?Darauf e worüber só servem para coisas. Para pessoas, use a preposição + pronome: Ich warte auf ihn (não darauf). Auf wen wartest du? (não worauf).
+
+Freuen auf ou freuen über.Ich freue mich auf das Wochenende (ainda vai chegar). Ich freue mich über das Geschenk (já recebi).
+
+Reflexivo ou não. Muitos verbos existem nos dois modos, com sentidos diferentes. Ich wasche das Auto (outra coisa). Ich wasche mich (a mim mesmo). Ich ziehe das Kind an (visto outra pessoa). Ich ziehe mich an (me visto).
+
+“Sich” também para Sie.Setzen Sie sich! O sich serve para er, sie, es, sie e Sie.
+
+Subordinadas. No capítulo 24, o pronome reflexivo continua logo depois do sujeito: weil ich mich freue.
+
+
+## 6. Frases de ouro
+
+| ALEMÃO | PORTUGUÊS |
+|---|---|
+| Ich freue mich auf das Wochenende. | Estou animado para o fim de semana. |
+| Wir treffen uns um zehn Uhr. | A gente se encontra às dez. |
+| Ich interessiere mich für Musik. | Eu me interesso por música. |
+| Beeil dich! | Se apresse! |
+| Worauf wartest du? | O que você está esperando? |
+| Ich denke oft an dich. | Eu penso muito em você. |
+| Setzen Sie sich bitte! | Sente-se, por favor! |
+| Ich habe mich verspätet. | Eu me atrasei. |
+
+
+## 7. Treino em quatro degraus
+
+**Treino**
+
+Degrau 1. Reconheça.
+
+1. 1. Ich freue ____ auf das Wochenende. (mich, mir)
+2. 2. Du musst ____ beeilen. (dich, dir)
+3. 3. Wir treffen ____ um zehn Uhr. (uns, sich)
+4. 4. Er interessiert ____ für Musik. (sich, ihn)
+5. 5. Ich warte ____ den Bus. (auf, an)
+6. 6. Ich denke ____ meine Oma. (an, auf)
+7. 7. ____ wartest du? (Worauf, Woran)
+
+Degrau 2. Complete.
+
+Complete com o pronome reflexivo correto (mich, dich, sich, uns, euch):
+
+1. 1. Ihr freut ____. · Sie setzt ____. · Wir erinnern ____. · Du ziehst ____ schnell an. · Ich wasche ____ (Dativo!) die Hände.
+
+Passe para o Perfekt (lembre-se de que verbos reflexivos usam sempre haben!) e escreva o imperativo:
+
+1. 1. Ich freue mich. → ____ · Wir treffen uns. → ____ · Er beeilt sich. → ____
+2. 2. Imperativo: sich setzen (du: ____! / ihr: ____! / Sie: ____!) · sich beeilen (du: ____!)
+
+Complete com a preposição exigida pelo verbo e depois substitua a coisa por da(r) + preposição:
+
+1. 1. Ich warte ____ meinen Bruder (Akk.). · Er denkt ____ seine Familie (Akk.). · Wir sprechen ____ das Wochenende (Akk.).
+2. 2. Sie fragt ____ dem Weg (Dat.). · Ich träume ____ einem Urlaub (Dat.). · Ich habe Angst ____ dem Hund (Dat.).
+3. 3. Ich warte auf den Bus. → Ich warte ____. · Ich denke an das Konzert. → Ich denke ____. · Wir sprechen über das Projekt. → Wir sprechen ____.
+
+Degrau 3. Produza.
+
+1. 1. Escreva quatro frases sobre você usando sich freuen auf, sich freuen über, sich interessieren für e träumen von.
+2. 2. Escreva a sua rotina matinal usando três verbos reflexivos (Ich stehe auf, ich wasche mich / putze mir die Zähne, ich ziehe mich an, ich beeile mich).
+3. 3. Escreva três pares de pergunta e resposta usando Worauf / Darauf, Woran / Daran e Worüber / Darüber.
+
+Degrau 4. Corrija o erro típico. Uma delas está certa.
+
+1. 1. Ich freue mir auf das Wochenende.
+2. 2. Du musst dich beeilen.
+3. 3. Ich warte den Bus.
+4. 4. Er denkt auf seine Familie.
+5. 5. Ich bin mich gefreut.
+6. 6. Wo wartest du auf?
+7. 7. Setz mich!
+
+
+## 8. O erro típico
+
+O erro que mais custa caro é traduzir a preposição do português (warten sem auf, denken in em vez de denken an, träumen mit em vez de träumen von), usar sein no Perfekt de verbos reflexivos (Ich bin mich gefreut) ou usar darauf / worauf para pessoas.
+
+**Erros típicos**
+
+**Errado certo por quê**
+
+Ich warte den Bus. Ich warte auf den Em alemão, warten exige obrigatoriamente auf +
+
+Bus. Acusativo.
+
+Ich denke in dich / Ich denke an dich / “Pensar em” é denken an + Akk.; “sonhar com” é träume mit dir. träume von dir. träumen von + Dat..
+
+Ich bin mich gefreut / Ich habe mich Todos os verbos reflexivos formam o Perfekt com verspätet. gefreut / verspätet. haben, sem exceção!
+
+Wo wartest du auf? Worauf wartest du? Para coisas, junta-se wo(r) + preposição numa
+
+palavra só (worauf, woran, worüber).
+
+Ich warte auf Tom → Ich warte auf ihn. Darauf / worauf só servem para coisas; para Ich warte darauf. pessoas, usa-se preposição + pronome (auf ihn, an
+
+sie).
+
+**Atenção**
+
+verbo + preposição + caso, tudo junto. O pronome reflexivo acompanha sempre o sujeito.
+
+
+## 9. Retorno
+
+Do capítulo 19. Complete: Ich ____ gestern keine Zeit. (haben, pretérito)
+
+Do capítulo 18. Complete: Sie ____ gestern nach Hause ____. (gehen, Perfekt)
+
+Do capítulo 17. Complete: Er ____ mich später ____. (anrufen)
+
+Do capítulo 16. Complete: Sie ____ (lesen) ein Buch.
+
+Do capítulo 15. Complete: Wir ____ jetzt gehen. (müssen)
+
+| QUANDO | O QUE FAZER |
+|---|---|
+| Dia 1 | Leia a Cena em voz alta, trocando os planos. |
+| Dia 3 | Escreva cinco verbos com preposição e caso de memória. |
+| Dia 7 | Refaça o Degrau 4 sem a chave. |
+| Dia 14 | Combine um encontro em voz alta, usando pelo menos três reflexivos. |
+
+
+## 10. Resumo e “já consigo”
+
+**Resumo e “já consigo”**
+
+O pronome reflexivo combina com o sujeito: mich, dich, sich, uns, euch, sich (no Dativo com objeto extra: mir, dir).
+
+Posição: logo após o verbo conjugado; antes do infinitivo na moldura.
+
+Perfekt reflexivo: sempre com haben (Ich habe mich gefreut).
+
+Verbo + preposição + caso: aprenda como bloco (warten auf + Akk., denken an + Akk., sprechen über + Akk., sich interessieren für + Akk., träumen von + Dat., fragen nach + Dat.).
+
+Coisas: darauf, daran, darüber / worauf, woran, worüber. Pessoas: auf ihn, an sie / auf wen, an wen.
+
+Já consigo?
+
+Combino um encontro com Wir treffen uns … e digo do que gosto e pelo que me interesso.
+
+Faço uma pergunta com Worauf, Woran, Worüber e respondo com darauf, daran, darüber.
+
+
+## Glossário do capítulo 20
+
+| ALEMÃO | PORTUGUÊS |
+|---|---|
+| sich freuen (auf, über) | alegrar-se, estar animado |
+| sich treffen | encontrar-se |
+| sich setzen | sentar-se |
+| sich fühlen | sentir-se |
+| sich beeilen | apressar-se |
+| sich ausruhen | descansar |
+| sich entschuldigen | desculpar-se |
+| sich anziehen (zieht an) | vestir-se |
+| sich waschen (wäscht) | lavar-se |
+| sich vorstellen (stellt vor) | apresentar-se |
+| sich verspäten | atrasar-se |
+| sich interessieren für | interessar-se por |
+| sich erinnern an | lembrar-se de |
+| sich ärgern über | irritar-se com |
+| sich kümmern um | cuidar de |
+| warten auf | esperar |
+| denken an | pensar em |
+| sprechen über | falar sobre |
+| aufpassen auf | prestar atenção em |
+| fragen nach | perguntar por |
+| träumen von | sonhar com |
+| erzählen von | contar sobre |
+| teilnehmen an (nimmt teil) | participar de |
+| Angst haben vor | ter medo de |
+| das Wochenende | fim de semana |
+| die Ausstellung | exposição |
+| der Bahnhof | estação |
+| die Jacke | jaqueta |
+| kalt | frio |
+| oft | muitas vezes |
+| der Urlaub | férias |
+| der Weg | caminho |
+| die Hand (die Hände) | mão |
+| die Familie | família |
+| das Konzert | show |
+
+
+## Chave comentada do capítulo 20
+
+**Chave comentada**
+
+Degrau 1. 1 mich. 2 dich. 3 uns. 4 sich. 5 auf. 6 an. 7 Worauf.
+
+Degrau 2. 1 euch, sich, uns, dich, mir. 2 Ich habe mich gefreut. Wir haben uns getroffen. Er hat sich beeilt. 3 Setz dich! Setzt euch! Setzen Sie sich! Beeil dich! 4 auf, an, über. 5 nach, von, vor. 6 darauf, daran, darüber.
+
+Degrau 3 (Respostas-modelo).
+
+1. 1. Ich freue mich schon sehr auf meinen Urlaub. Ich freue mich über das schöne Wetter heute. Ich interessiere mich für deutsche Literatur und Geschichte. Ich träume von einer Reise nach Wien.
+2. 2. Am Morgen stehe ich um sieben Uhr auf. Ich wasche mich schnell und putze mir die Zähne. Dann ziehe ich mich an und beeile mich, denn der Bus fährt um halb acht.
+3. 3. — Worauf wartest du? — Ich warte auf das Paket. Ja, ich warte schon lange darauf! / — Woran denkst du? — Ich denke an meine Prüfung. Ich denke jeden Tag daran. / — Worüber sprecht ihr? — Wir sprechen über den neuen Film. Wir sprechen sehr gern darüber.
+
+Degrau 4.
+
+1. 1. Ich freue mich auf das Wochenende.
+2. 2. Está certa.
+3. 3. Ich warte auf den Bus.
+4. 4. Er denkt an seine Familie.
+5. 5. Ich habe mich gefreut.
+6. 6. Worauf wartest du?
+7. 7. Setz dich!
+
+Retorno. Capítulo 19: hatte. Capítulo 18: ist … gegangen (ou sind … gegangen, se for sie plural). Capítulo 17: ruft … an. Capítulo 16: liest (ou lesen, se for sie plural ou Sie). Capítulo 15: müssen.

@@ -20,8 +20,93 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você liga duas frases com und, aber, oder, denn e sondern sem mexer na ordem das palavras, sabe quando um “mas” português vira aber e quando vira sondern, e omite o sujeito repetido."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Onde jantar?",
+        "contexto": "Lena, Camila e Jonas decidem o que fazer à noite.",
+        "linhas": [
+          {
+            "personagem": "Lena",
+            "ru": "— Wollen wir heute Abend kochen oder essen gehen?",
+            "pt": "— A gente quer cozinhar hoje à noite ou sair para comer?",
+            "audio": "Wollen wir heute Abend kochen oder essen gehen?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich bin müde, aber ich habe Hunger.",
+            "pt": "— Estou cansada, mas estou com fome.",
+            "audio": "Ich bin müde, aber ich habe Hunger."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich möchte nicht kochen, sondern lieber essen gehen. Dort ist ein neues Restaurant, und es ist nicht teuer.",
+            "pt": "— Eu não quero cozinhar, e sim sair para comer. Tem um restaurante novo lá, e não é caro.",
+            "audio": "Ich möchte nicht kochen, sondern lieber essen gehen. Dort ist ein neues Restaurant, und es ist nicht teuer."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut, denn ich möchte heute nicht kochen.",
+            "pt": "— Ótimo, porque hoje eu não quero cozinhar.",
+            "audio": "Gut, denn ich möchte heute nicht kochen."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Ich komme mit, aber ich kann nur bis zehn Uhr bleiben.",
+            "pt": "— Eu vou junto, mas só posso ficar até as dez.",
+            "audio": "Ich komme mit, aber ich kann nur bis zehn Uhr bleiben."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Kein Problem. Wir gehen um sieben Uhr und kommen um zehn zurück.",
+            "pt": "— Sem problema. A gente sai às sete e volta às dez.",
+            "audio": "Kein Problem. Wir gehen um sieben Uhr und kommen um zehn zurück."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Oder wir bleiben länger und nehmen ein Taxi.",
+            "pt": "— Ou a gente fica mais tempo e pega um táxi.",
+            "audio": "Oder wir bleiben länger und nehmen ein Taxi."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: aber contrasta, sondern corrige uma negativa. Depois de denn, a ordem é normal: sujeito, verbo.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Estou cansada, mas vou junto.",
+            "ingles": "Ich bin müde, aber ich komme mit."
+          },
+          {
+            "portugues": "Não bebo café, e sim chá.",
+            "ingles": "Ich trinke keinen Kaffee, sondern Tee."
+          },
+          {
+            "portugues": "Fico em casa, pois estou doente.",
+            "ingles": "Ich bleibe zu Hause, denn ich bin krank."
+          },
+          {
+            "portugues": "Você vem ou fica?",
+            "ingles": "Kommst du mit oder bleibst du hier?"
+          },
+          {
+            "portugues": "Levanto e tomo café.",
+            "ingles": "Ich stehe auf und frühstücke."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "obwohl",
@@ -83,7 +168,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Obwohl e trotzdem: a mesma ideia, duas estruturas",
         "explicacao": "PASSO 1: as duas palavras expressam CONCESSÃO («apesar de»): a ação acontece mesmo com um obstáculo. PASSO 2: «OBWOHL» é uma CONJUNÇÃO subordinativa: o verbo conjugado vai para o FIM: «Obwohl es regnet, gehe ich spazieren» (embora esteja chovendo, vou passear). PASSO 3: «TROTZDEM» é um ADVÉRBIO conectivo: ocupa a 1ª posição da frase e o verbo vem logo depois, na 2ª: «Es regnet. Trotzdem gehe ich spazieren.» PASSO 4: use «obwohl» para ligar as duas ideias em UMA frase; use «trotzdem» para ligar duas frases. PASSO 5: «trotz» + genitivo é preposição (aula 41): «trotz des Regens». PASSO 6: um truque: «obwohl» = «weil» de sentido oposto: ambas mandam o verbo para o fim.",
         "comparacao": "o português usa «embora» (subjuntivo) e «mesmo assim». O alemão faz o mesmo, mas a ordem das palavras muda: depois de «obwohl», o verbo vai para o fim; depois de «trotzdem», o verbo vem logo em seguida.",
@@ -126,12 +211,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 6 frases de concessão em voz alta: «Obwohl … , … Es … . Trotzdem …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com «um … zu», «damit», «ohne … zu» e «statt … zu»."
       }
     ]

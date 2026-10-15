@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "Brasilien",
@@ -83,7 +83,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 5,
         "titulo": "Nacionalidades",
         "explicacao": "Para dizer a nacionalidade, o feminino costuma acrescentar -in ao masculino: der Brasilianer → die Brasilianerin. A maioria dos países não leva artigo: «Ich komme aus Brasilien» (exceção que você verá mais adiante: «die Schweiz»). Os idiomas também não: «Ich spreche Deutsch» (sprechen: ich spreche, du sprichst — irregular).",
         "exemplos": [
@@ -142,7 +142,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 9,
+        "min": 6,
         "titulo": "Wer bist du? / Quem é você?",
         "contexto": "Dois estudantes se conhecem num curso de alemão.",
         "linhas": [
@@ -203,8 +203,233 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich komme aus Brasilien.",
+            "translit": "",
+            "pt": "Sou do Brasil.",
+            "en": "",
+            "audio": "Ich komme aus Brasilien."
+          },
+          {
+            "ru": "Ich wohne in …",
+            "translit": "",
+            "pt": "Moro em …",
+            "en": "",
+            "audio": "Ich wohne in …"
+          },
+          {
+            "ru": "Ich lerne Deutsch.",
+            "translit": "",
+            "pt": "Estou aprendendo alemão.",
+            "en": "",
+            "audio": "Ich lerne Deutsch."
+          },
+          {
+            "ru": "Ich bin … Jahre alt.",
+            "translit": "",
+            "pt": "Tenho … anos.",
+            "en": "",
+            "audio": "Ich bin … Jahre alt."
+          },
+          {
+            "ru": "Sind Sie Herr Weber?",
+            "translit": "",
+            "pt": "O senhor é o senhor Weber?",
+            "en": "",
+            "audio": "Sind Sie Herr Weber?"
+          },
+          {
+            "ru": "Darf ich du sagen?",
+            "translit": "",
+            "pt": "Posso tratar você por du?",
+            "en": "",
+            "audio": "Darf ich du sagen?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Maria mora em Berlim: ___ wohnt in Berlin.",
+            "opcoes": [
+              "er",
+              "sie",
+              "es"
+            ],
+            "gabarito": "sie",
+            "explicacao": "Veja a chave comentada no livro: sie (Maria é ela)",
+            "id": "de-002-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Tom e eu cozinhamos: ___ kochen.",
+            "opcoes": [
+              "wir",
+              "ihr",
+              "sie"
+            ],
+            "gabarito": "wir",
+            "explicacao": "Veja a chave comentada no livro: wir (Tom e eu)",
+            "id": "de-002-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Você fala com o gerente do hotel: ___ sind hier richtig.",
+            "opcoes": [
+              "du",
+              "ihr",
+              "Sie"
+            ],
+            "gabarito": "Sie",
+            "explicacao": "Veja a chave comentada no livro: Sie (formal)",
+            "id": "de-002-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Você fala com dois amigos: ___ habt Zeit.",
+            "opcoes": [
+              "du",
+              "ihr",
+              "Sie"
+            ],
+            "gabarito": "ihr",
+            "explicacao": "Veja a chave comentada no livro: ihr (duas pessoas, informal)",
+            "id": "de-002-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Você fala com um colega de classe da sua idade: ___ lernst Deutsch.",
+            "opcoes": [
+              "du",
+              "ihr",
+              "Sie"
+            ],
+            "gabarito": "du",
+            "explicacao": "Veja a chave comentada no livro: du (uma pessoa, informal)",
+            "id": "de-002-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual forma completa Du ___ in München?",
+            "opcoes": [
+              "arbeitst",
+              "arbeitest",
+              "arbeitet"
+            ],
+            "gabarito": "arbeitest",
+            "explicacao": "Veja a chave comentada no livro: (b) arbeitest",
+            "id": "de-002-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz “Eu tenho 28 anos” em alemão?",
+            "opcoes": [
+              "Ich habe 28 Jahre",
+              "Ich bin 28 Jahre alt"
+            ],
+            "gabarito": "Ich bin 28 Jahre alt",
+            "explicacao": "Veja a chave comentada no livro: (b) Ich bin 28 Jahre alt",
+            "id": "de-002-L-107"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Complete as terminações dos verbos regulares no presente: ich lern__ Deutsch · du wohn__ in Köln · er komm__ aus Spanien",
+            "respostaEsperada": "ich lerne, du wohnst, er kommt",
+            "id": "de-002-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Complete as terminações dos verbos regulares no presente: wir lern__ zusammen · ihr arbeit__ viel · Sie wohn__ in Wien · du heiß__ Jonas",
+            "respostaEsperada": "wir lernen, ihr arbeitet, Sie wohnen, du heißt",
+            "id": "de-002-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Complete as terminações dos verbos regulares no presente: du wart__ (warten) · er find__ (finden) · du tanz__ (tanzen)",
+            "respostaEsperada": "du wartest, er findet, du tanzt",
+            "id": "de-002-L-203"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Ich ___ müde. · Du bist hier richtig. · Tom ist aus Irland.",
+            "respostaEsperada": "bin",
+            "explicacao": "Veja a chave comentada no livro: bin, bist, ist",
+            "id": "de-002-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Ich bin müde. · Du ___ hier richtig. · Tom ist aus Irland.",
+            "respostaEsperada": "bist",
+            "explicacao": "Veja a chave comentada no livro: bin, bist, ist",
+            "id": "de-002-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Ich bin müde. · Du bist hier richtig. · Tom ___ aus Irland.",
+            "respostaEsperada": "ist",
+            "explicacao": "Veja a chave comentada no livro: bin, bist, ist",
+            "id": "de-002-L-204c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Wir ___ Freunde. · Ihr seid zu spät. · Sind Sie Frau Weber?",
+            "respostaEsperada": "sind",
+            "explicacao": "Veja a chave comentada no livro: sind, seid, Sind",
+            "id": "de-002-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Wir sind Freunde. · Ihr ___ zu spät. · Sind Sie Frau Weber?",
+            "respostaEsperada": "seid",
+            "explicacao": "Veja a chave comentada no livro: sind, seid, Sind",
+            "id": "de-002-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de sein (ser/estar): Wir sind Freunde. · Ihr seid zu spät. · ___ Sie Frau Weber?",
+            "respostaEsperada": "Sind",
+            "explicacao": "Veja a chave comentada no livro: sind, seid, Sind",
+            "id": "de-002-L-205c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de haben (ter): Ich ___ Hunger. · Hast du Zeit? · Camila hat Durst. · Wir haben eine Wohnung.",
+            "respostaEsperada": "habe",
+            "explicacao": "Veja a chave comentada no livro: habe, Hast, hat, haben",
+            "id": "de-002-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de haben (ter): Ich habe Hunger. · ___ du Zeit? · Camila hat Durst. · Wir haben eine Wohnung.",
+            "respostaEsperada": "Hast",
+            "explicacao": "Veja a chave comentada no livro: habe, Hast, hat, haben",
+            "id": "de-002-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de haben (ter): Ich habe Hunger. · Hast du Zeit? · Camila ___ Durst. · Wir haben eine Wohnung.",
+            "respostaEsperada": "hat",
+            "explicacao": "Veja a chave comentada no livro: habe, Hast, hat, haben",
+            "id": "de-002-L-206c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Complete com a forma correta de haben (ter): Ich habe Hunger. · Hast du Zeit? · Camila hat Durst. · Wir ___ eine Wohnung.",
+            "respostaEsperada": "haben",
+            "explicacao": "Veja a chave comentada no livro: habe, Hast, hat, haben",
+            "id": "de-002-L-206d"
+          }
+        ]
+      },
+      {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as 6 formas de «sein» de memória."
       }
     ]

@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você distingue quem faz e quem recebe a ação, usa den, einen e keinen no masculino sem hesitar e troca o objeto por ihn, sie ou es."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "No brechó",
+        "contexto": "Camila e Jonas procuram móveis para o quarto.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Ich suche einen Tisch.",
+            "pt": "— Estou procurando uma mesa.",
+            "audio": "Ich suche einen Tisch."
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Hier ist ein Tisch. Der Tisch ist alt, aber schön.",
+            "pt": "— Aqui tem uma mesa. A mesa é velha, mas bonita.",
+            "audio": "Hier ist ein Tisch. Der Tisch ist alt, aber schön."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Wie viel kostet der Tisch?",
+            "pt": "— Quanto custa a mesa?",
+            "audio": "Wie viel kostet der Tisch?"
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Zwanzig Euro.",
+            "pt": "— Vinte euros.",
+            "audio": "Zwanzig Euro."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe.",
+            "pt": "— Ótimo, vou comprar a mesa. E também preciso de uma luminária.",
+            "audio": "Gut, ich kaufe den Tisch. Und ich brauche auch eine Lampe."
+          },
+          {
+            "personagem": "Verkäufer",
+            "ru": "— Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?",
+            "pt": "— A luminária custa oito euros. A senhora precisa de uma cadeira também?",
+            "audio": "Die Lampe kostet acht Euro. Brauchen Sie auch einen Stuhl?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Nein danke, ich habe schon einen Stuhl.",
+            "pt": "— Não, obrigada, já tenho uma cadeira.",
+            "audio": "Nein danke, ich habe schon einen Stuhl."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ich trage den Tisch!",
+            "pt": "— Eu carrego a mesa!",
+            "audio": "Ich trage den Tisch!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O alemão marca a função no artigo. Mas só no masculino. Isso dá duas armadilhas: PASSO 2: só o masculino muda. Então só pergunte se a palavra é der. Se não for, nada acontece.",
+        "comparacao": "O português descobre quem é sujeito e quem é objeto pela posição: “o homem vê o cachorro” e “o cachorro vê o homem” são diferentes porque a ordem muda. Os artigos “o” e “a” não mudam.",
+        "tabela": [
+          {
+            "portugues": "masculino",
+            "ingles": "der Tisch",
+            "evite": "den Tisch"
+          },
+          {
+            "portugues": "feminino",
+            "ingles": "die Lampe",
+            "evite": "die Lampe"
+          },
+          {
+            "portugues": "neutro",
+            "ingles": "das Bett",
+            "evite": "das Bett"
+          },
+          {
+            "portugues": "plural",
+            "ingles": "die Stühle",
+            "evite": "die Stühle"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 10,
+        "min": 7,
         "itens": [
           {
             "ru": "das Brot",
@@ -111,7 +202,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "O acusativo: o objeto direto muda só no masculino",
         "explicacao": "O alemão tem quatro casos. Por agora você precisa de dois: o NOMINATIVO (quem faz a ação) e o ACUSATIVO (o objeto direto: o que se come, bebe, compra ou tem). A única diferença entre os dois está no MASCULINO singular: der → den, ein → einen, kein → keinen. Feminino, neutro e plural ficam iguais. Verbos que pedem acusativo: essen, trinken, kaufen, haben, nehmen, möchten, lesen, sehen.",
         "comparacao": "o português não muda o artigo: «o queijo» é igual como sujeito ou como objeto. O alemão muda só o masculino: «der Käse» (sujeito) × «den Käse» (objeto).",
@@ -157,12 +248,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga: «Ich esse den Käse. Ich trinke einen Saft. Ich esse die Suppe. Ich esse ein Brot.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva a data de hoje e a hora de agora em alemão."
       }
     ]

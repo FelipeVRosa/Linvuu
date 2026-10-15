@@ -20,98 +20,6 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "palavras",
-        "min": 6,
-        "itens": [
-          {
-            "ru": "Hallo",
-            "translit": "hálo",
-            "pt": "olá",
-            "en": "hello",
-            "audio": "Hallo"
-          },
-          {
-            "ru": "Guten Morgen",
-            "translit": "gúten mórguen",
-            "pt": "bom dia (de manhã)",
-            "en": "good morning",
-            "audio": "Guten Morgen"
-          },
-          {
-            "ru": "Guten Tag",
-            "translit": "gúten tak",
-            "pt": "bom dia, boa tarde",
-            "en": "good day",
-            "audio": "Guten Tag"
-          },
-          {
-            "ru": "Guten Abend",
-            "translit": "gúten ábent",
-            "pt": "boa noite (ao chegar)",
-            "en": "good evening",
-            "audio": "Guten Abend"
-          },
-          {
-            "ru": "Tschüs",
-            "translit": "tchüs",
-            "pt": "tchau",
-            "en": "bye",
-            "audio": "Tschüs"
-          },
-          {
-            "ru": "Danke / Bitte",
-            "translit": "dánke / bíte",
-            "pt": "obrigado / por favor, de nada",
-            "en": "thanks / please",
-            "audio": "Danke / Bitte"
-          }
-        ]
-      },
-      {
-        "tipo": "dialogo",
-        "min": 7,
-        "titulo": "Hallo! Wie geht’s? / Oi! Como vai?",
-        "contexto": "Duas pessoas se encontram na rua.",
-        "linhas": [
-          {
-            "personagem": "Anna",
-            "ru": "— Hallo, Ben!",
-            "pt": "— Oi, Ben!",
-            "audio": "Hallo, Ben!"
-          },
-          {
-            "personagem": "Ben",
-            "ru": "— Hallo, Anna! Wie geht’s?",
-            "pt": "— Oi, Anna! Como vai?",
-            "audio": "Hallo, Anna! Wie geht’s?"
-          },
-          {
-            "personagem": "Anna",
-            "ru": "— Gut, danke! Und dir?",
-            "pt": "— Bem, obrigada! E você?",
-            "audio": "Gut, danke! Und dir?"
-          },
-          {
-            "personagem": "Ben",
-            "ru": "— Auch gut, danke.",
-            "pt": "— Também bem, obrigado.",
-            "audio": "Auch gut, danke."
-          },
-          {
-            "personagem": "Anna",
-            "ru": "— Tschüs, Ben!",
-            "pt": "— Tchau, Ben!",
-            "audio": "Tschüs, Ben!"
-          },
-          {
-            "personagem": "Ben",
-            "ru": "— Tschüs, Anna!",
-            "pt": "— Tchau, Anna!",
-            "audio": "Tschüs, Anna!"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
         "min": 12,
         "itens": [
@@ -253,9 +161,88 @@
         ]
       },
       {
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Soletre seu nome e sobrenome em voz alta usando os nomes alemães das letras (Modelo: Bruno = be – er – u – en – o).",
+            "respostaEsperada": "Lucas Silva = el – u – ce – a – es / es – i – el – vau – a.",
+            "id": "de-001-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Soletre estas três cidades alemãs: Berlin, Köln e München.",
+            "respostaEsperada": "Berlin = be – e – er – el – i – en. Köln = ka – ö – el – en. München = em – ü – en – ce",
+            "id": "de-001-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo completo de recepção (5 falas) no estilo da Cena: o recepcionista cumprimenta e pergunta seu nome, você responde, ele pede para repetir (Wie bitte? / Buchstabieren Sie das bitte), você soletra e ele agradece.",
+            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Wie heißen Sie?— Guten Tag. Ich heiße Lucas Silva.— Wie bitte? Buchstabieren Sie das bitte.— L-U-C-A-S, S-I-L-V-A.— Danke, Herr Silva. Willkommen in Berlin!",
+            "id": "de-001-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Vater lido como “váter”.",
+            "respostaEsperada": "v soa f e -er soa a curto: “fá-ta”.",
+            "id": "de-001-L-c01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Jahr lido como “jár”, como em “já”.",
+            "respostaEsperada": "j soa i: “iár”.",
+            "id": "de-001-L-c02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Sport lido como “sport”, com s de “sol”.",
+            "respostaEsperada": "sp no início soa “xp”: “xport”.",
+            "id": "de-001-L-c03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Zeit lido como “zeit”.",
+            "respostaEsperada": "ei soa ai e z soa ts: “tsait”.",
+            "id": "de-001-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Tag lido como “tági”.",
+            "respostaEsperada": "Sem vogal no fim, g final soa k: “tak”.",
+            "id": "de-001-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Sonne lido como “sone”, com s de “sol”.",
+            "respostaEsperada": "s antes de vogal soa z: “zone”.",
+            "id": "de-001-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: heute lido como “rêute”.",
+            "respostaEsperada": "h é sopro leve e eu soa oi: “hói-te”.",
+            "id": "de-001-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é trocar v e w. Sem ele, você ainda é entendido. Com ele, vira outra palavra (Wein = vinho vs. fein = fino; Wetter = clima vs. Vetter = primo). O segundo erro mais comum é colocar um “i” fantasma depois de consoantes finais (Tag lido como “tági” em vez de “tak”). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
+      },
+      {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Leia as combinações «ei, ie, eu, au, sch, st, sp, ch» com uma palavra de exemplo cada."
+        "min": 3,
+        "enunciado": "Retorno. O capítulo 1 é o primeiro, e por isso o Retorno olha para a frente. A ideia é voltar a estes sons em intervalos, não de uma vez. Nos capítulos 2, 3 e 4, o Retorno voltará aos sons deste capítulo com palavras novas."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Soletro meu nome com os nomes alemães das letras. · Leio Wasser, Vater, Zeit, Jahr, Sonne e Schule sem errar a primeira letra. · Peço “Wie bitte?” e “Noch einmal, bitte.” sem travar e explico a diferença entre Wein e fein."
       }
     ]
   },

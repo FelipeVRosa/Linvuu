@@ -20,8 +20,95 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa können, müssen, wollen, sollen, dürfen e möchten com o infinitivo no fim da frase, distingue nicht müssen de nicht dürfen e usa lassen."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "No café",
+        "contexto": "Camila e Jonas pedem alguma coisa para beber e comer.",
+        "linhas": [
+          {
+            "personagem": "Kellner",
+            "ru": "— Guten Tag! Was möchten Sie trinken?",
+            "pt": "— Bom dia! O que os senhores gostariam de beber?",
+            "audio": "Guten Tag! Was möchten Sie trinken?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?",
+            "pt": "— Quero um café, por favor. Meu amigo quer um chá. Ele pode ter leite também?",
+            "audio": "Ich möchte einen Kaffee, bitte. Mein Freund möchte einen Tee. Kann er auch Milch haben?"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Natürlich. Möchten Sie auch etwas essen?",
+            "pt": "— Claro. Gostariam de comer alguma coisa também?",
+            "audio": "Natürlich. Möchten Sie auch etwas essen?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, wir wollen Kuchen. Was können Sie empfehlen?",
+            "pt": "— Sim, queremos bolo. O que o senhor recomenda?",
+            "audio": "Ja, wir wollen Kuchen. Was können Sie empfehlen?"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Sie müssen den Apfelkuchen probieren. Er ist frisch.",
+            "pt": "— Vocês precisam experimentar o bolo de maçã. É fresquinho.",
+            "audio": "Sie müssen den Apfelkuchen probieren. Er ist frisch."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Darf ich mit Karte bezahlen?",
+            "pt": "— Posso pagar com cartão?",
+            "audio": "Darf ich mit Karte bezahlen?"
+          },
+          {
+            "personagem": "Kellner",
+            "ru": "— Leider nicht. Sie müssen bar bezahlen.",
+            "pt": "— Infelizmente não. Precisam pagar em dinheiro.",
+            "audio": "Leider nicht. Sie müssen bar bezahlen."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich.",
+            "pt": "— Sem problema. Jonas, você não precisa pagar. Hoje pago eu.",
+            "audio": "Kein Problem. Jonas, du musst nicht bezahlen. Heute zahle ich."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: nicht müssen = não precisa. Nicht dürfen = proibido. Trocá-los muda o sentido.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Quero comer bolo.",
+            "ingles": "Ich will Kuchen essen."
+          },
+          {
+            "portugues": "Não preciso vir.",
+            "ingles": "Ich muss nicht kommen."
+          },
+          {
+            "portugues": "Não posso vir (proibido).",
+            "ingles": "Ich darf nicht kommen."
+          },
+          {
+            "portugues": "Preciso ir para casa.",
+            "ingles": "Ich muss nach Hause."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "schwimmen",
@@ -83,7 +170,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Können: o primeiro verbo modal, passo a passo",
         "explicacao": "Um verbo MODAL ajuda outro verbo a dizer «poder», «saber», «dever», «querer». Vamos montar o primeiro, «können». PASSO 1: «können» diz o que você sabe ou consegue fazer: «Ich kann schwimmen» = eu sei nadar. PASSO 2: conjugue «können»; ele é irregular no singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie können. PASSO 3: o segundo verbo vai para o FIM da frase, no infinitivo: «Ich kann gut schwimmen.» A frase fica «emoldurada»: o modal na 2ª posição e o infinitivo no fim. PASSO 4: para perguntar, o modal vai para o começo: «Kannst du schwimmen?» PASSO 5: para negar, «nicht» vem antes do verbo que está no fim: «Ich kann nicht schwimmen.» REGRA DE BOLSO: «ich» e «er» são IGUAIS (kann) e nunca levam -t.",
         "comparacao": "o português também usa «saber» ou «poder» + infinitivo («eu sei nadar»). A diferença é só a posição: em alemão o infinitivo vai sempre para o FIM da frase, não fica ao lado do modal.",
@@ -154,12 +241,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 5 coisas que você sabe fazer e 2 que não sabe: «Ich kann … / Ich kann nicht …»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as 6 formas de «möchten» e 3 frases com «Ich möchte … + verbo no fim»."
       }
     ]

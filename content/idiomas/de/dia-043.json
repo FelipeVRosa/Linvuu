@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Convidar com «möchten» e «können»",
         "explicacao": "Para convidar alguém, use «Möchtest du …?» (informal) ou «Möchten Sie …?» (formal), ou «Kannst du …?» quando é um pedido («Kannst du um acht Uhr kommen?»). Para ACEITAR: «Ja, gern!», «Gute Idee!», «Ja, das kann ich.» Para RECUSAR com educação, diga «leider» (infelizmente) e dê o motivo: «Nein, leider nicht. Ich muss arbeiten.» Comece sempre pela palavra que responde: «Ja» ou «Nein».",
         "tabela": [
@@ -50,7 +50,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Eine Einladung / Um convite",
         "contexto": "Dois amigos combinam de ir ao cinema.",
         "linhas": [
@@ -105,13 +105,203 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich möchte einen Kaffee, bitte.",
+            "translit": "",
+            "pt": "Quero um café, por favor.",
+            "en": "",
+            "audio": "Ich möchte einen Kaffee, bitte."
+          },
+          {
+            "ru": "Kannst du mir helfen?",
+            "translit": "",
+            "pt": "Você pode me ajudar?",
+            "en": "",
+            "audio": "Kannst du mir helfen?"
+          },
+          {
+            "ru": "Ich muss nach Hause.",
+            "translit": "",
+            "pt": "Preciso ir para casa.",
+            "en": "",
+            "audio": "Ich muss nach Hause."
+          },
+          {
+            "ru": "Darf ich hier sitzen?",
+            "translit": "",
+            "pt": "Posso sentar aqui?",
+            "en": "",
+            "audio": "Darf ich hier sitzen?"
+          },
+          {
+            "ru": "Das darfst du nicht!",
+            "translit": "",
+            "pt": "Isso você não pode!",
+            "en": "",
+            "audio": "Das darfst du nicht!"
+          },
+          {
+            "ru": "Ich kann nicht kommen.",
+            "translit": "",
+            "pt": "Não posso vir.",
+            "en": "",
+            "audio": "Ich kann nicht kommen."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ich ___ heute arbeiten.",
+            "opcoes": [
+              "muss",
+              "musst"
+            ],
+            "gabarito": "muss",
+            "explicacao": "Veja a chave comentada no livro: muss",
+            "id": "de-011-L-101"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Du ___ nicht kommen. (musst, darfst) — “você não precisa vir”",
+            "respostaEsperada": "musst",
+            "id": "de-011-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Er ___ gut kochen.",
+            "opcoes": [
+              "kann",
+              "kannst"
+            ],
+            "gabarito": "kann",
+            "explicacao": "Veja a chave comentada no livro: kann",
+            "id": "de-011-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Wir ___ Kuchen essen.",
+            "opcoes": [
+              "will",
+              "wollen"
+            ],
+            "gabarito": "wollen",
+            "explicacao": "Veja a chave comentada no livro: wollen",
+            "id": "de-011-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Ihr ___ hier nicht parken.",
+            "opcoes": [
+              "darf",
+              "dürft"
+            ],
+            "gabarito": "dürft",
+            "explicacao": "Veja a chave comentada no livro: dürft",
+            "id": "de-011-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está certa?",
+            "opcoes": [
+              "Ich kann sprechen Deutsch",
+              "Ich kann Deutsch sprechen"
+            ],
+            "gabarito": "Ich kann Deutsch sprechen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-011-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Du musst nicht kommen significa",
+            "opcoes": [
+              "não pode",
+              "não precisa"
+            ],
+            "gabarito": "não precisa",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "de-011-L-107"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich ___, du kannst, er kann, wir können",
+            "respostaEsperada": "kann",
+            "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+            "id": "de-011-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du ___, er kann, wir können",
+            "respostaEsperada": "kannst",
+            "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+            "id": "de-011-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du kannst, er ___, wir können",
+            "respostaEsperada": "kann",
+            "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+            "id": "de-011-L-201c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Conjugue os verbos modais nas pessoas pedidas: können: ich kann, du kannst, er kann, wir ___",
+            "respostaEsperada": "können",
+            "explicacao": "Veja a chave comentada no livro: kann, kannst, kann, können",
+            "id": "de-011-L-201d"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conjugue os verbos modais nas pessoas pedidas: müssen: ich ___, du ___, wir ___ · wollen: ich ___, er ___, ihr ___",
+            "respostaEsperada": "muss, musst, müssen; will, will, wollt",
+            "id": "de-011-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Complete as frases com o modal indicado: Ich ___ (möchten) einen Tee trinken. · Sie ___ (wollen) am Wochenende nach Berlin fahren. · Wir ___ (müssen) für die Prüfung lernen.",
+            "respostaEsperada": "möchte, wollen (ou will, se Sie for “ela”), müssen",
+            "id": "de-011-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Tom kommt heute Abend. (können) → ___",
+            "respostaEsperada": "Tom kann heute Abend kommen",
+            "id": "de-011-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Wir gehen morgen ins Kino. (wollen) → ___",
+            "respostaEsperada": "Wir wollen morgen ins Kino gehen",
+            "id": "de-011-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Du hilfst mir bei der Arbeit. (können, em forma de pergunta) → ___",
+            "respostaEsperada": "Kannst du mir bei der Arbeit helfen?",
+            "id": "de-011-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Negue dizendo “não preciso”: Ich muss heute arbeiten. → ___",
+            "respostaEsperada": "Ich muss heute nicht arbeiten",
+            "id": "de-011-L-207"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Convide alguém em voz alta, aceite um convite e recuse outro com um motivo."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as frases de sala de aula da sessão anterior de memória."
       }
     ]

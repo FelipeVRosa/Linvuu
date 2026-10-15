@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Ein, eine, kein: o artigo indefinido e o negativo",
         "explicacao": "«Ein» e «eine» são o «um» e a «uma»: ein Mann, eine Frau, ein Kind. No plural não há artigo indefinido: «Das sind Bücher». Para negar um substantivo, use «kein» (ou «keine»), que tem as mesmas terminações de «ein»: «Das ist kein Tisch» (isto não é uma mesa). Para «isto é» usa-se «das ist» no singular e «das sind» no plural.",
         "tabela": [
@@ -66,7 +66,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 10,
+        "min": 7,
         "titulo": "Was ist das? / O que é isto?",
         "contexto": "Dois amigos apontam objetos numa sala.",
         "linhas": [
@@ -121,13 +121,322 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Was ist das?",
+            "translit": "",
+            "pt": "O que é isso?",
+            "en": "",
+            "audio": "Was ist das?"
+          },
+          {
+            "ru": "Das ist ein Buch.",
+            "translit": "",
+            "pt": "Isto é um livro.",
+            "en": "",
+            "audio": "Das ist ein Buch."
+          },
+          {
+            "ru": "Das sind Bücher.",
+            "translit": "",
+            "pt": "Estes são livros.",
+            "en": "",
+            "audio": "Das sind Bücher."
+          },
+          {
+            "ru": "Wie heißt das auf Deutsch?",
+            "translit": "",
+            "pt": "Como se diz isso em alemão?",
+            "en": "",
+            "audio": "Wie heißt das auf Deutsch?"
+          },
+          {
+            "ru": "Der, die oder das?",
+            "translit": "",
+            "pt": "Qual é o artigo?",
+            "en": "",
+            "audio": "Der, die oder das?"
+          },
+          {
+            "ru": "Ich bin Lehrerin.",
+            "translit": "",
+            "pt": "Sou professora.",
+            "en": "",
+            "audio": "Ich bin Lehrerin."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Zeitung",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Veja a chave comentada no livro: die (-ung)",
+            "id": "de-003-L-101"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Mädchen",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "das",
+            "explicacao": "Veja a chave comentada no livro: das (-chen)",
+            "id": "de-003-L-102"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Lehrer",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "Veja a chave comentada no livro: der (-er, pessoa)",
+            "id": "de-003-L-103"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Wohnung",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "die",
+            "explicacao": "Veja a chave comentada no livro: die (-ung)",
+            "id": "de-003-L-104"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Montag",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "der",
+            "explicacao": "Veja a chave comentada no livro: der (dia da semana)",
+            "id": "de-003-L-105"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ Brötchen",
+            "opcoes": [
+              "der",
+              "die",
+              "das"
+            ],
+            "gabarito": "das",
+            "explicacao": "Veja a chave comentada no livro: das (-chen)",
+            "id": "de-003-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural de Kind:",
+            "opcoes": [
+              "Kinde",
+              "Kinder",
+              "Kinden"
+            ],
+            "gabarito": "Kinder",
+            "explicacao": "Veja a chave comentada no livro: (b) Kinder",
+            "id": "de-003-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural de Frau:",
+            "opcoes": [
+              "Fraue",
+              "Frauen",
+              "Fraus"
+            ],
+            "gabarito": "Frauen",
+            "explicacao": "Veja a chave comentada no livro: (b) Frauen",
+            "id": "de-003-L-108"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural de Auto:",
+            "opcoes": [
+              "Auten",
+              "Autoe",
+              "Autos"
+            ],
+            "gabarito": "Autos",
+            "explicacao": "Veja a chave comentada no livro: (c) Autos",
+            "id": "de-003-L-109"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Lampe. → Die Lampe ist neu.",
+            "respostaEsperada": "eine",
+            "explicacao": "Veja a chave comentada no livro: eine Lampe / Die Lampe",
+            "id": "de-003-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist eine Lampe. → ___ Lampe ist neu.",
+            "respostaEsperada": "Die",
+            "explicacao": "Veja a chave comentada no livro: eine Lampe / Die Lampe",
+            "id": "de-003-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Tisch. → Der Tisch ist modern.",
+            "respostaEsperada": "ein",
+            "explicacao": "Veja a chave comentada no livro: ein Tisch / Der Tisch",
+            "id": "de-003-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ein Tisch. → ___ Tisch ist modern.",
+            "respostaEsperada": "Der",
+            "explicacao": "Veja a chave comentada no livro: ein Tisch / Der Tisch",
+            "id": "de-003-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Fenster. → Das Fenster ist groß.",
+            "respostaEsperada": "ein",
+            "explicacao": "Veja a chave comentada no livro: ein Fenster / Das Fenster",
+            "id": "de-003-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ein Fenster. → ___ Fenster ist groß.",
+            "respostaEsperada": "Das",
+            "explicacao": "Veja a chave comentada no livro: ein Fenster / Das Fenster",
+            "id": "de-003-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Schlüssel. → Der Schlüssel ist klein.",
+            "respostaEsperada": "ein",
+            "explicacao": "Veja a chave comentada no livro: ein Schlüssel / Der Schlüssel",
+            "id": "de-003-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ein Schlüssel. → ___ Schlüssel ist klein.",
+            "respostaEsperada": "Der",
+            "explicacao": "Veja a chave comentada no livro: ein Schlüssel / Der Schlüssel",
+            "id": "de-003-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Wohnung. → Die Wohnung ist schön.",
+            "respostaEsperada": "eine",
+            "explicacao": "Veja a chave comentada no livro: eine Wohnung / Die Wohnung",
+            "id": "de-003-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist eine Wohnung. → ___ Wohnung ist schön.",
+            "respostaEsperada": "Die",
+            "explicacao": "Veja a chave comentada no livro: eine Wohnung / Die Wohnung",
+            "id": "de-003-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ___ Bett. → Das Bett ist alt.",
+            "respostaEsperada": "ein",
+            "explicacao": "Veja a chave comentada no livro: ein Bett / Das Bett",
+            "id": "de-003-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Das ist ein Bett. → ___ Bett ist alt.",
+            "respostaEsperada": "Das",
+            "explicacao": "Veja a chave comentada no livro: ein Bett / Das Bett",
+            "id": "de-003-L-206b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → ___ · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Tage",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → die Tage · die Stadt → ___ · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Städte",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → die Tage · die Stadt → die Städte · das Haus → ___ · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Häuser",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → ___ · der Lehrer → die Lehrer · das Auto → die Autos",
+            "respostaEsperada": "die Schulen",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → ___ · das Auto → die Autos",
+            "respostaEsperada": "die Lehrer",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207e"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Plural: der Tag → die Tage · die Stadt → die Städte · das Haus → die Häuser · die Schule → die Schulen · der Lehrer → die Lehrer · das Auto → ___",
+            "respostaEsperada": "die Autos",
+            "explicacao": "Veja a chave comentada no livro: Plurais: die Tage, die Städte, die Häuser, die Schulen, die Lehrer, die Autos",
+            "id": "de-003-L-207f"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Feminino: der Lehrer → die ___ · der Student → die Studentin · der Arzt → die Ärztin",
+            "respostaEsperada": "Lehrerin",
+            "explicacao": "Veja a chave comentada no livro: Femininos: die Lehrerin, die Studentin, die Ärztin",
+            "id": "de-003-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Feminino: der Lehrer → die Lehrerin · der Student → die ___ · der Arzt → die Ärztin",
+            "respostaEsperada": "Studentin",
+            "explicacao": "Veja a chave comentada no livro: Femininos: die Lehrerin, die Studentin, die Ärztin",
+            "id": "de-003-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva o plural com die e o feminino das profissões: Feminino: der Lehrer → die Lehrerin · der Student → die Studentin · der Arzt → die ___",
+            "respostaEsperada": "Ärztin",
+            "explicacao": "Veja a chave comentada no livro: Femininos: die Lehrerin, die Studentin, die Ärztin",
+            "id": "de-003-L-208c"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Aponte 5 objetos da sua casa e diga: «Das ist ein … / eine … / Das sind …»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o plural de 6 palavras que você já conhece."
       }
     ]

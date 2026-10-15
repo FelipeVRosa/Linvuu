@@ -20,8 +20,102 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você escolhe a preposição certa e o caso que ela pede, diferencia wo de wohin nas preposições de dois casos e usa as contrações im, am, zum, zur e vom."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Como chegar à estação",
+        "contexto": "Camila pede orientação na rua.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Entschuldigung, wie komme ich zum Bahnhof?",
+            "pt": "— Com licença, como chego à estação?",
+            "audio": "Entschuldigung, wie komme ich zum Bahnhof?"
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Sie gehen hier geradeaus und dann nach links. Der Bahnhof ist gegenüber dem Rathaus.",
+            "pt": "— A senhora segue reto aqui e depois vira à esquerda. A estação fica em frente à prefeitura.",
+            "audio": "Sie gehen hier geradeaus und dann nach links. Der Bahnhof ist gegenüber dem Rathaus."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Und wie lange dauert es mit dem Bus?",
+            "pt": "— E quanto tempo leva de ônibus?",
+            "audio": "Und wie lange dauert es mit dem Bus?"
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Mit dem Bus zehn Minuten. Die Haltestelle ist vor der Bank.",
+            "pt": "— De ônibus, dez minutos. O ponto fica na frente do banco.",
+            "audio": "Mit dem Bus zehn Minuten. Die Haltestelle ist vor der Bank."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Danke! Ich wohne erst seit einer Woche hier.",
+            "pt": "— Obrigada! Moro aqui só há uma semana.",
+            "audio": "Danke! Ich wohne erst seit einer Woche hier."
+          },
+          {
+            "personagem": "Passant",
+            "ru": "— Willkommen in München!",
+            "pt": "— Bem-vinda a Munique!",
+            "audio": "Willkommen in München!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O alemão escolhe pela situação e pede um caso depois da preposição. PASSO 2: O “para” do português vira nach, zu, in ou für, conforme o destino. E “estudo há três meses” usa o presente em alemão, nunca um passado. PASSO 3: preposição não chega sozinha. Ela vem com um caso. Aprenda os dois juntos.",
+        "comparacao": "O português usa as mesmas preposições, “em”, “a”, “para”, “de” e “com”, para muita coisa.",
+        "tabela": [
+          {
+            "portugues": "Estou na cozinha.",
+            "ingles": "Ich bin in der Küche.",
+            "evite": "lugar parado: dativo"
+          },
+          {
+            "portugues": "Vou para a cozinha.",
+            "ingles": "Ich gehe in die Küche.",
+            "evite": "movimento: acusativo"
+          },
+          {
+            "portugues": "Vou para Berlim.",
+            "ingles": "Ich fahre nach Berlin.",
+            "evite": "cidade: nach"
+          },
+          {
+            "portugues": "Vou ao médico.",
+            "ingles": "Ich gehe zum Arzt.",
+            "evite": "pessoa: zu"
+          },
+          {
+            "portugues": "Vou ao supermercado.",
+            "ingles": "Ich gehe in den Supermarkt.",
+            "evite": "lugar fechado: in"
+          },
+          {
+            "portugues": "Vou de ônibus.",
+            "ingles": "Ich fahre mit dem Bus.",
+            "evite": "meio de transporte: mit + dativo"
+          },
+          {
+            "portugues": "Estudo há três meses.",
+            "ingles": "Ich lerne seit drei Monaten Deutsch.",
+            "evite": "seit + dativo + presente"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "der Fluss",
@@ -83,7 +177,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Durch, für, gegen, ohne, um: sempre acusativo",
         "explicacao": "PASSO 1: cinco preposições pedem SEMPRE o acusativo: durch (através de), für (para, por), gegen (contra; por volta de), ohne (sem) e um (em volta de; às, nas horas). Decore-as em fila: durch, für, gegen, ohne, um. PASSO 2: lembre que no acusativo só o masculino muda (den, einen, keinen). PASSO 3: contrações comuns: durch das = durchs, für das = fürs, um das = ums. PASSO 4: «gegen» também aproxima horas: «Wir kommen gegen acht Uhr» (por volta das oito).",
         "tabela": [
@@ -129,12 +223,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga: «Wir gehen durch den Wald. Das Geschenk ist für meine Mutter. Ich trinke Kaffee ohne Zucker.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as sete preposições do dativo e uma frase com cada uma."
       }
     ]

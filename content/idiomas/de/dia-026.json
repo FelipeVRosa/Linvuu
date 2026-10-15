@@ -20,8 +20,41 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare as frases. PASSO 2: Perguntas: PASSO 3: Qual gênero muda de forma quando passa de sujeito a objeto? PASSO 4: O que acontece com ein no masculino? PASSO 5: Quem é o sujeito em Ich kaufe den Tisch? E o objeto?",
+        "tabela": [
+          {
+            "c1": "Der Tisch ist alt.",
+            "c2": "Ich kaufe den Tisch."
+          },
+          {
+            "c1": "Die Lampe ist neu.",
+            "c2": "Ich kaufe die Lampe."
+          },
+          {
+            "c1": "Das Buch ist gut.",
+            "c2": "Ich kaufe das Buch."
+          },
+          {
+            "c1": "Die Stühle sind alt.",
+            "c2": "Ich kaufe die Stühle."
+          },
+          {
+            "c1": "Ein Hund ist hier.",
+            "c2": "Ich habe einen Hund."
+          },
+          {
+            "c1": "Eine Katze ist hier.",
+            "c2": "Ich habe eine Katze."
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 7,
         "itens": [
           {
             "ru": "essen",
@@ -83,7 +116,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 10,
         "titulo": "Verbos que trocam e por i ou ie",
         "explicacao": "Um grupo de verbos muito usados troca a vogal «e» por «i» ou «ie» no «du» e no «er / sie / es»: essen → du isst, er isst. Os outros pronomes são regulares. Em «nehmen» a consoante também muda (nimmst, nimmt). Aprenda cada um desses verbos junto com o seu «du» e o seu «er».",
         "tabela": [
@@ -158,12 +191,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Diga: «Ich lese ein Buch. Du liest eine Zeitung. Er isst einen Apfel. Sie nimmt einen Kaffee.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 4 frases com «Ich esse / Ich trinke» e um alimento no acusativo."
       }
     ]

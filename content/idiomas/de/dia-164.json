@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -212,14 +212,94 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se falando de posse, de tempo e de motivos com o genitivo."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga de quem são quatro objetos usando o Genitivo (Das ist das Auto meines Bruders / die Tasche meiner Schwester…) e dois usando nomes próprios com -s (Toms Fahrrad…).",
+            "respostaEsperada": "Das ist das Auto meines Bruders. Hier liegt die Tasche meiner Schwester. Das ist das Büro der Chefin. Dort steht das Haus unserer Großeltern. Das ist Camilas Laptop und Jonas' Fahrrad.",
+            "id": "de-041-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases usando as preposições de genitivo wegen, trotz e während.",
+            "respostaEsperada": "Wegen des Regens bleiben wir heute zu Hause. Trotz der Kälte gehen wir spazieren. Während des Deutschkurses sprechen wir nur Deutsch.",
+            "id": "de-041-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases usando substantivos da n-Deklination (der Student, der Kunde, der Kollege, der Nachbar) no Acusativo ou no Dativo.",
+            "respostaEsperada": "Ich treffe heute meinen neuen Kollegen. Die Verkäuferin hilft dem Kunden sofort. Kennst du den neuen Studenten aus Brasilien?",
+            "id": "de-041-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist das Haus der Mann.",
+            "respostaEsperada": "Das ist das Haus des Mannes.",
+            "explicacao": "Das ist das Haus des Mannes.",
+            "id": "de-041-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das ist Tom's Auto.",
+            "respostaEsperada": "Das ist Toms Auto.",
+            "explicacao": "Das ist Toms Auto. (sem apóstrofo)",
+            "id": "de-041-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich sehe den Student.",
+            "respostaEsperada": "Ich sehe den Studenten.",
+            "explicacao": "Ich sehe den Studenten.",
+            "id": "de-041-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Die Tasche von Lenas.",
+            "respostaEsperada": "Die Tasche von Lena.",
+            "explicacao": "Die Tasche von Lena. (von + nome sem -s)",
+            "id": "de-041-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wegen das Wetter bleibe ich hier.",
+            "respostaEsperada": "Wegen des Wetters bleibe ich hier.",
+            "explicacao": "Wegen des Wetters bleibe ich hier.",
+            "id": "de-041-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Das Auto des Frau.",
+            "respostaEsperada": "Das Auto der Frau.",
+            "explicacao": "Das Auto der Frau.",
+            "id": "de-041-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Das ist das Auto meines Vaters.",
+            "respostaEsperada": "OK",
+            "id": "de-041-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é colocar apóstrofo no nome próprio (Tom's Auto, copiando o inglês, quando em alemão é Toms Auto sem apóstrofo), esquecer o - s/-es no próprio substantivo masculino/neutro no genitivo (des Mann em vez de des Mannes) e esquecer o -n/-en da n-Deklination (den Student em vez de den Studenten). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 8 frases de genitivo e preposições do genitivo."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 13. Complete: das Haus des ____ (alt) Mannes. die Tasche der ____ (jung) Frau. Do capítulo 12. Complete: Das Auto meines Bruders ist ____ (groß) als mein Auto. Do capítulo 11. Complete: Das ist das Haus ____ (mein) Eltern."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Pergunto Wessen …? e respondo com Toms …, … meines Vaters ou … von …. · Digo wegen des Wetters e trotz des Regens e declino der Student nos quatro casos."
       }
     ]
   },

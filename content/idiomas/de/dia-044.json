@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -199,14 +199,79 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se: diga o que sabe e não sabe fazer, peça ajuda e faça um convite."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva quatro frases sobre o que você sabe/pode e não pode fazer (Ich kann gut …, aber ich kann nicht …).",
+            "respostaEsperada": "Ich kann gut kochen und schwimmen. Ich kann schon ein bisschen Deutsch sprechen, aber ich kann noch nicht perfekt schreiben. Morgen kann ich leider nicht zum Kurs kommen.",
+            "id": "de-011-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases sobre o que você precisa fazer nesta semana (Diese Woche muss ich …).",
+            "respostaEsperada": "Diese Woche muss ich viel arbeiten. Am Mittwoch muss ich zum Arzt gehen. Am Freitag muss ich meine Wohnung putzen.",
+            "id": "de-011-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três regras de convivência ou de trânsito usando Man darf hier nicht … / Du darfst nicht ….",
+            "respostaEsperada": "Hier darf man nicht rauchen. Du darfst vor der Bank nicht parken. Im Museum darf man nicht fotografieren.",
+            "id": "de-011-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo de café de cinco falas entre você e o garçom usando möchten, können, müssen e dürfen.",
+            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Was möchten Sie bestellen?— Ich möchte einen Kaffee und ein Stück Apfelkuchen, bitte.— Gern! Möchten Sie den Kaffee mit Milch?— Ja, bitte. Kann ich hier mit Karte bezahlen?— Ja, natürlich, Sie können mit Karte bezahlen.",
+            "id": "de-011-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich kann sprechen Deutsch.",
+            "respostaEsperada": "Ich kann Deutsch sprechen.",
+            "explicacao": "Ich kann Deutsch sprechen.",
+            "id": "de-011-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Du musst hier nicht parken.",
+            "respostaEsperada": "Du darfst hier nicht parken.",
+            "explicacao": "Du darfst hier nicht parken.",
+            "id": "de-011-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich möchte zu essen einen Kuchen.",
+            "respostaEsperada": "Ich möchte einen Kuchen essen.",
+            "explicacao": "Ich möchte einen Kuchen essen.",
+            "id": "de-011-L-c05"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich muss nach Hause.",
+            "respostaEsperada": "OK",
+            "id": "de-011-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é colocar o infinitivo logo depois do modal (Ich kann sprechen Deutsch em vez de Ich kann Deutsch sprechen), colocar -t na 3ª pessoa do singular do modal (er kannt em vez de er kann) e trocar nicht müssen (não precisa) por nicht dürfen (proibido). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 4 frases: uma habilidade, um pedido de ajuda, um convite e uma recusa com motivo."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 14. Complete: Ich muss den ____ (Student) fragen. Do capítulo 13. Complete: Ich möchte einen ____ (neu) Tisch kaufen. Do capítulo 12. Complete: Ich kann Deutsch ____ (gut) als du sprechen. (comparativo)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Peço algo com Ich möchte …, bitte. · Digo o que preciso, posso e quero fazer respeitando a moldura verbal. · Sei quando usar nicht dürfen (proibido) e nicht müssen (opcional)."
       }
     ]
   },

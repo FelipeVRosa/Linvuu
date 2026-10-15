@@ -20,8 +20,129 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você conjuga sprechen, essen, geben, nehmen, lesen, sehen, helfen, fahren, schlafen sem cair na armadilha do du e do er, e dá ordens, conselhos e pedidos com o imperativo para du, ihr e Sie."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Cozinhando juntos",
+        "contexto": "Camila e Jonas fazem massa. Lena chega. Depois o vizinho bate na porta.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Camila, ich lese die Anleitung. Du nimmst die Tomaten.",
+            "pt": "— Camila, eu leio a receita. Você pega os tomates.",
+            "audio": "Camila, ich lese die Anleitung. Du nimmst die Tomaten."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gut. Und ich möchte ein Messer.",
+            "pt": "— Certo. E eu quero uma faca.",
+            "audio": "Gut. Und ich möchte ein Messer."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Hier, nimm das Messer! Und schneide die Zwiebel, bitte.",
+            "pt": "— Aqui, pegue a faca! E corte a cebola, por favor.",
+            "audio": "Hier, nimm das Messer! Und schneide die Zwiebel, bitte."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Siehst du? Ich schneide schnell!",
+            "pt": "— Viu? Eu corto rápido!",
+            "audio": "Siehst du? Ich schneide schnell!"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Super! Aber sei vorsichtig!",
+            "pt": "— Ótimo! Mas tome cuidado!",
+            "audio": "Super! Aber sei vorsichtig!"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Hallo! Was macht ihr?",
+            "pt": "— Oi! O que vocês estão fazendo?",
+            "audio": "Hallo! Was macht ihr?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir kochen. Lena, hilf mir bitte! Gib mir das Salz.",
+            "pt": "— Estamos cozinhando. Lena, me ajude, por favor! Me passe o sal.",
+            "audio": "Wir kochen. Lena, hilf mir bitte! Gib mir das Salz."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Isst du auch Pasta, Lena?",
+            "pt": "— Você também come massa, Lena?",
+            "audio": "Isst du auch Pasta, Lena?"
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Ja, gern. Ich esse viel, aber danach schlafe ich auf dem Sofa!",
+            "pt": "— Sim, com prazer. Eu como muito, mas depois durmo no sofá!",
+            "audio": "Ja, gern. Ich esse viel, aber danach schlafe ich auf dem Sofa!"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Das stimmt. Du schläfst immer sofort.",
+            "pt": "— Verdade. Você sempre dorme na hora.",
+            "audio": "Das stimmt. Du schläfst immer sofort."
+          },
+          {
+            "personagem": "Herr Weber",
+            "ru": "— Entschuldigung! Seid bitte leise. Es ist schon spät.",
+            "pt": "— Com licença! Façam silêncio, por favor. Já é tarde.",
+            "audio": "Entschuldigung! Seid bitte leise. Es ist schon spät."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Oh, Entschuldigung, Herr Weber! Möchten Sie Pasta? Nehmen Sie einen Teller!",
+            "pt": "— Ah, desculpe, Sr. Weber! O senhor aceita massa? Pegue um prato!",
+            "audio": "Oh, Entschuldigung, Herr Weber! Möchten Sie Pasta? Nehmen Sie einen Teller!"
+          },
+          {
+            "personagem": "Herr Weber",
+            "ru": "— Nein, danke. Gute Nacht.",
+            "pt": "— Não, obrigado. Boa noite.",
+            "audio": "Nein, danke. Gute Nacht."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: a vogal muda só em du e er/sie/es. Em ich, wir, ihr, sie o verbo fica como no infinitivo.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Você fala alemão.",
+            "ingles": "Du sprichst Deutsch."
+          },
+          {
+            "portugues": "Ela pega o ônibus.",
+            "ingles": "Sie nimmt den Bus."
+          },
+          {
+            "portugues": "Fale devagar! (você)",
+            "ingles": "Sprich langsam!"
+          },
+          {
+            "portugues": "Falem devagar! (vocês)",
+            "ingles": "Sprecht langsam!"
+          },
+          {
+            "portugues": "Fale devagar! (o senhor)",
+            "ingles": "Sprechen Sie langsam!"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "Platz nehmen",
@@ -83,7 +204,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Imperativo com «Sie» e com «wir», passo a passo",
         "explicacao": "O imperativo serve para pedir, dar instruções, convidar e mandar. Começamos pela forma de CORTESIA, que você ouve em lojas, escolas e provas. PASSO 1: tome o infinitivo («öffnen») e coloque «Sie» depois: «Öffnen Sie das Buch.» Ou seja, o verbo vem em PRIMEIRO lugar e «Sie» logo atrás. PASSO 2: verbos separáveis: o prefixo vai para o FIM: «Hören Sie zu.», «Stehen Sie auf.» PASSO 3: «bitte» deixa o pedido educado e pode ir em vários lugares: «Öffnen Sie bitte das Buch.» PASSO 4: a forma «wir» convida a fazer algo juntos (vamos): «Gehen wir!», «Fangen wir an!» PASSO 5: para negar, use «nicht» no fim: «Rauchen Sie nicht!»",
         "comparacao": "o português muda o final do verbo («abra», «escute»). Em alemão o imperativo formal é igual ao infinitivo; o que o diferencia é a ORDEM: verbo primeiro, «Sie» depois.",
@@ -140,12 +261,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Dê 5 instruções em voz alta como se fosse um professor: «Öffnen Sie …, Lesen Sie …, Schreiben Sie …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as formas de «müssen», «wollen» e «dürfen» no «ich» e no «du»."
       }
     ]

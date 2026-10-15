@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa aufstehen, anrufen, einkaufen, mitkommen, abfahren com o prefixo no fim da frase, reconhece os verbos inseparáveis (verstehen, besuchen, bekommen) e não separa o que não deve ser separado."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Indo às compras",
+        "contexto": "Jonas vai ao mercado. Camila resolve ir junto, mas antes liga para o irmão.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Camila, ich kaufe heute ein. Kommst du mit?",
+            "pt": "— Camila, eu faço compras hoje. Você vem junto?",
+            "audio": "Camila, ich kaufe heute ein. Kommst du mit?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, gern. Wann fahren wir ab?",
+            "pt": "— Sim, com prazer. Quando a gente sai?",
+            "audio": "Ja, gern. Wann fahren wir ab?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus.",
+            "pt": "— O ônibus sai às dez horas. A gente desce na Marienplatz.",
+            "audio": "Der Bus fährt um zehn Uhr ab. Wir steigen am Marienplatz aus."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein.",
+            "pt": "— Um momento, primeiro eu ligo para o Pedro. Oi, Pedro! A gente vai às compras hoje.",
+            "audio": "Moment, ich rufe zuerst Pedro an. Hallo Pedro! Wir kaufen heute ein."
+          },
+          {
+            "personagem": "Pedro",
+            "ru": "— Kein Problem. Wann kommst du zurück?",
+            "pt": "— Sem problema. Quando você volta?",
+            "audio": "Kein Problem. Wann kommst du zurück?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ich muss um sechs Uhr zurückkommen. Lena besucht uns.",
+            "pt": "— Preciso estar de volta às seis horas. A Lena vai nos visitar.",
+            "audio": "Ich muss um sechs Uhr zurückkommen. Lena besucht uns."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Los, steig ein! Der Bus kommt jetzt an.",
+            "pt": "— Vamos, entre! O ônibus está chegando.",
+            "audio": "Los, steig ein! Der Bus kommt jetzt an."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Warte, Jonas! Ich vergesse immer meine Tasche.",
+            "pt": "— Espere, Jonas! Eu sempre esqueço minha bolsa.",
+            "audio": "Warte, Jonas! Ich vergesse immer meine Tasche."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: prefixo separável vai para o fim. Be-, ge-, er-, ver-, ent-, emp- ficam colados.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Eu ligo para você.",
+            "ingles": "Ich rufe dich an."
+          },
+          {
+            "portugues": "Você vem junto?",
+            "ingles": "Kommst du mit?"
+          },
+          {
+            "portugues": "O ônibus sai às dez.",
+            "ingles": "Der Bus fährt um zehn Uhr ab."
+          },
+          {
+            "portugues": "Eu entendo você.",
+            "ingles": "Ich verstehe dich."
+          },
+          {
+            "portugues": "Eu visito a minha avó.",
+            "ingles": "Ich besuche meine Oma."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 10,
+        "min": 7,
         "itens": [
           {
             "ru": "aufstehen",
@@ -97,7 +188,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 8,
         "titulo": "Verbos separáveis: o prefixo vai para o fim",
         "explicacao": "Muitos verbos alemães têm um prefixo que se separa: «aufstehen» (levantar-se). No presente, o verbo conjugado fica na 2ª posição e o PREFIXO vai para o FIM da frase: «Ich stehe um sieben Uhr auf.» No infinitivo, ou com um verbo modal, o verbo fica inteiro: «Ich möchte um sieben Uhr aufstehen.» Prefixos separáveis comuns: auf-, an-, ein-, mit-, ab-, fern-, aus-, zurück-. Outros prefixos NÃO se separam: be-, ge-, er-, ver-, zer-, ent-, emp-: «Ich besuche meine Oma» (besuchen).",
         "comparacao": "em português o verbo não se parte. Em alemão o prefixo vai para o fim da frase e a frase fica «emoldurada» entre o verbo e o prefixo.",
@@ -149,12 +240,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga: «Ich stehe um sieben Uhr auf. Ich rufe meine Mutter an. Wir kaufen ein.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as 6 formas de «sein» e de «haben» de memória."
       }
     ]

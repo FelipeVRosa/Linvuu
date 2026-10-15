@@ -20,8 +20,76 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você monta frases afirmativas com o verbo sempre no lugar certo, mesmo quando começa a frase por heute, jetzt ou hier."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Planos para a noite",
+        "contexto": "Tom e Camila combinam a noite na cozinha do albergue.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Heute koche ich. Du kochst morgen.",
+            "pt": "— Hoje cozinho eu. Você cozinha amanhã.",
+            "audio": "Heute koche ich. Du kochst morgen."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Gern! Jetzt lerne ich noch Deutsch.",
+            "pt": "— Com prazer! Agora ainda estudo alemão.",
+            "audio": "Gern! Jetzt lerne ich noch Deutsch."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Dann trinken wir später Tee.",
+            "pt": "— Então tomamos chá mais tarde.",
+            "audio": "Dann trinken wir später Tee."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Ja, gern. Hier trinkt man abends oft Tee, oder?",
+            "pt": "— Sim, com prazer. Aqui se toma chá à noite com frequência, não é?",
+            "audio": "Ja, gern. Hier trinkt man abends oft Tee, oder?"
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Ja, in Irland auch!",
+            "pt": "— Sim, na Irlanda também!",
+            "audio": "Ja, in Irland auch!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: conte as posições. Um bloco, o verbo. Sempre nessa ordem.",
+        "comparacao": "Em português, a ordem é flexível mas o sujeito costuma abrir a frase: “Hoje eu moro em Munique.” A mesma ordem em alemão dá Heute ich wohne in München, que está errado. Em alemão, o verbo não larga a segunda posição. Quando algo diferente do sujeito abre a frase, o sujeito vai para depois do verbo.",
+        "tabela": [
+          {
+            "portugues": "Hoje eu moro em Berlim.",
+            "ingles": "Heute wohne ich in Berlin.",
+            "evite": "Heute ich wohne in Berlin."
+          },
+          {
+            "portugues": "Agora estudamos alemão.",
+            "ingles": "Jetzt lernen wir Deutsch.",
+            "evite": "Jetzt wir lernen Deutsch."
+          },
+          {
+            "portugues": "Ali trabalha a Maria.",
+            "ingles": "Dort arbeitet Maria.",
+            "evite": "Dort Maria arbeitet."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 10,
+        "min": 7,
         "itens": [
           {
             "ru": "wohnen",
@@ -97,7 +165,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "O presente regular: raiz + terminação",
         "explicacao": "Quase todos os verbos alemães terminam em -en no infinitivo. Tire o -en para achar a raiz e acrescente as terminações: -e, -st, -t, -en, -t, -en. Se a raiz termina em -t ou -d (arbeiten, finden), entra um -e- antes de -st e de -t, para facilitar a pronúncia: du arbeitest, er arbeitet. Se a raiz termina em -s, -ß ou -z (heißen, reisen), o «du» perde o -s da terminação: du heißt, du reist. As formas «wir», «sie» e «Sie» são iguais ao infinitivo.",
         "comparacao": "em português cada pessoa tem uma terminação própria (falo, falas, fala...). Em alemão, são só cinco terminações, e «wir», «sie» e «Sie» repetem o infinitivo.",
@@ -155,12 +223,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga: «Ich wohne in … Ich arbeite … Ich lerne Deutsch. Du lernst auch Deutsch.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva as 6 formas de «sein» de memória."
       }
     ]

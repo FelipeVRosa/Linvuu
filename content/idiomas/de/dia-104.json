@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -212,14 +212,66 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se contando a quem você dá, manda ou mostra coisas, primeiro com substantivos, depois com pronomes."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva cinco frases contando o que você vai dar de presente (Ich schenke … einen/eine/ein …) para dem Bruder, der Mutter, dem Kind, den Eltern e dir.",
+            "respostaEsperada": "Ich schenke dem Bruder einen Rucksack. Ich schenke der Mutter eine Tasche. Ich schenke dem Kind ein Spielzeug. Ich schenke den Eltern eine Reise. Ich schenke dir ein Buch.",
+            "id": "de-026-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um mini-diálogo de quatro falas pedindo ajuda (Kannst du mir bitte helfen?) e perguntando como a pessoa está (Wie geht es dir?).",
+            "respostaEsperada": "Modelo de diálogo: — Hallo Jonas! Wie geht es dir heute?— Hallo Camila! Mir geht es gut, danke. Und dir?— Auch gut! Aber der Tisch ist schwer. Kannst du mir bitte helfen?— Ja, klar! Ich helfe dir gern.",
+            "id": "de-026-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas perguntas e respostas com Wem gehört …? e três frases com gefallen, schmecken e passen.",
+            "respostaEsperada": "— Wem gehört der Schlüssel? — Er gehört mir. / — Wem gehört die Tasche? — Sie gehört der Lehrerin. / Die Stadt München gefällt mir sehr gut. Die Pizza schmeckt uns super. Die Jacke passt dir perfekt!",
+            "id": "de-026-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich helfe dich.",
+            "respostaEsperada": "Ich helfe dir.",
+            "explicacao": "Ich helfe dir.",
+            "id": "de-026-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich schenke dem Frau eine Blume.",
+            "respostaEsperada": "Ich schenke der Frau eine Blume.",
+            "explicacao": "Ich schenke der Frau eine Blume.",
+            "id": "de-026-L-c04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Ich danke dir.",
+            "respostaEsperada": "OK",
+            "id": "de-026-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é usar o acusativo com verbos que exigem dativo em alemão (Ich helfe dich / Ich danke dich em vez de Ich helfe dir / Ich danke dir) ou inverter a lógica de gefallen e gehören (Ich gehöre das Buch em vez de Das Buch gehört mir). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 6 frases com dois objetos (dativo e acusativo), duas delas com pronomes."
+        "min": 2,
+        "enunciado": "Retorno. Do capítulo 8. Complete com o acusativo: Ich kaufe ____ Tisch. Ich liebe ____ (du). Wir brauchen ____ Stuhl (m.). Do capítulo 7. Diga a data: Wann hat Lena Geburtstag? Am ____ Mai (12). Do capítulo 6. Negue: Ich helfe dir. Das Buch gefällt mir."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Digo Ich helfe dir, Das gehört mir e Das gefällt mir. · Respondo Mir geht es gut e escolho entre dem, der, den sem recorrer à tabela."
       }
     ]
   },

@@ -20,8 +20,93 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você pede com educação (Könnten Sie …? Würden Sie …?), diz o que gostaria (Ich hätte gern …, Ich würde gern …), dá conselhos (Du solltest …, An deiner Stelle würde ich …) e sugere (Wir könnten …, Wie wäre es mit …?)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "No hotel e na rua",
+        "contexto": "Jonas faz o check-in em Viena. Depois, Camila dá um conselho a Lena.",
+        "linhas": [
+          {
+            "personagem": "Rezeption",
+            "ru": "— Guten Tag! Was kann ich für Sie tun?",
+            "pt": "— Bom dia! Em que posso ajudá-lo?",
+            "audio": "Guten Tag! Was kann ich für Sie tun?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Guten Tag! Ich hätte gern ein Zimmer für zwei Nächte.",
+            "pt": "— Bom dia! Eu gostaria de um quarto para duas noites.",
+            "audio": "Guten Tag! Ich hätte gern ein Zimmer für zwei Nächte."
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Gern. Hätten Sie lieber ein Zimmer mit Frühstück?",
+            "pt": "— Com prazer. O senhor preferiria um quarto com café da manhã?",
+            "audio": "Gern. Hätten Sie lieber ein Zimmer mit Frühstück?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Ja, bitte. Wo kann ich parken?",
+            "pt": "— Sim, por favor. Onde posso estacionar?",
+            "audio": "Ja, bitte. Wo kann ich parken?"
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Dort hinten. Könnten Sie bitte hier unterschreiben?",
+            "pt": "— Lá atrás. O senhor poderia assinar aqui?",
+            "audio": "Dort hinten. Könnten Sie bitte hier unterschreiben?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Gern. Könnten Sie mir auch einen Stadtplan geben?",
+            "pt": "— Com prazer. O senhor poderia me dar também um mapa da cidade?",
+            "audio": "Gern. Könnten Sie mir auch einen Stadtplan geben?"
+          },
+          {
+            "personagem": "Rezeption",
+            "ru": "— Natürlich. Hier, bitte.",
+            "pt": "— Claro. Aqui está.",
+            "audio": "Natürlich. Hier, bitte."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: pedido educado = Konjunktiv II. Ich will e Gib mir são ordens. Konnte ≠ könnte.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Eu gostaria de um café.",
+            "ingles": "Ich hätte gern einen Kaffee."
+          },
+          {
+            "portugues": "O senhor poderia me ajudar?",
+            "ingles": "Könnten Sie mir helfen?"
+          },
+          {
+            "portugues": "O senhor poderia esperar?",
+            "ingles": "Würden Sie bitte warten?"
+          },
+          {
+            "portugues": "Você deveria dormir mais.",
+            "ingles": "Du solltest mehr schlafen."
+          },
+          {
+            "portugues": "No seu lugar, eu iria.",
+            "ingles": "An deiner Stelle würde ich fahren."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "höflich",
@@ -83,7 +168,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "Würde + infinitivo, passo a passo",
         "explicacao": "PASSO 1: o Konjunktiv II serve para ser EDUCADO e para falar de DESEJOS e do que não é real. No A2 você usa só poucas formas. PASSO 2: a forma mais útil é «würde» + infinitivo no FIM: «Ich würde gern ins Kino gehen» (eu gostaria de ir ao cinema). PASSO 3: conjugue «würde»: ich würde, du würdest, er würde, wir würden, ihr würdet, sie würden. PASSO 4: para PEDIR com educação: «Würdest du mir helfen?» (informal), «Würden Sie bitte das Fenster schließen?» (formal). PASSO 5: «gern» reforça o desejo: «Ich würde gern …». PASSO 6: compare os graus de cortesia: «Kannst du mir helfen?» (normal) < «Könntest du mir helfen?» (educado) < «Würdest du mir helfen?» (muito educado).",
         "comparacao": "o português usa o futuro do pretérito («eu gostaria», «você poderia»). O alemão faz o mesmo com «würde» + infinitivo e com poucas formas curtas (hätte, wäre, könnte).",
@@ -140,12 +225,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Diga 6 desejos e pedidos educados: «Ich würde gern … Würdest du mir …? Würden Sie bitte …?»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com «reflexivos» e 4 com «wenn»."
       }
     ]

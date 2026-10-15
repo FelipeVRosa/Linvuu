@@ -20,8 +20,72 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você escolhe o final certo do adjetivo antes do substantivo (ein großer Tisch, der große Tisch, kalter Kaffee), usando um método de três perguntas em vez de decorar tabelas."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Fotos e móveis",
+        "contexto": "Camila mostra o quarto e uma foto de casa.",
+        "linhas": [
+          {
+            "personagem": "Jonas",
+            "ru": "— Du hast ein schönes Zimmer!",
+            "pt": "— Você tem um quarto bonito!",
+            "audio": "Du hast ein schönes Zimmer!"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Danke! Ich habe einen neuen Tisch und eine kleine Lampe.",
+            "pt": "— Obrigada! Tenho uma mesa nova e uma luminária pequena.",
+            "audio": "Danke! Ich habe einen neuen Tisch und eine kleine Lampe."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und wer ist der junge Mann auf dem Foto?",
+            "pt": "— E quem é o rapaz da foto?",
+            "audio": "Und wer ist der junge Mann auf dem Foto?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist mein jüngerer Bruder Pedro.",
+            "pt": "— É o meu irmão mais novo, o Pedro.",
+            "audio": "Das ist mein jüngerer Bruder Pedro."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Und das Haus dort?",
+            "pt": "— E a casa ali?",
+            "audio": "Und das Haus dort?"
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das ist unser altes Haus, mit dem großen Garten und den bunten Blumen.",
+            "pt": "— É a nossa casa antiga, com o jardim grande e as flores coloridas.",
+            "audio": "Das ist unser altes Haus, mit dem großen Garten und den bunten Blumen."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wie schön! Du hast eine tolle Familie.",
+            "pt": "— Que bonito! Você tem uma família ótima.",
+            "audio": "Wie schön! Du hast eine tolle Familie."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: sem artigo ou sem sinal de gênero e caso, o adjetivo assume o papel. Com sinal, o adjetivo descansa no -e ou no -en.",
+        "comparacao": "O português põe o adjetivo depois do substantivo e muda só gênero e número: “mesa nova, mesas novas”. O alemão põe o adjetivo antes e muda gênero, número, caso e depende de qual artigo vem antes.",
+        "tabela": [],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "modern",
@@ -83,7 +147,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O adjetivo antes do substantivo, passo a passo",
         "explicacao": "PASSO 1: depois de «sein», o adjetivo NÃO muda: «Der Mann ist groß». PASSO 2: ANTES do substantivo, ele recebe uma TERMINAÇÃO: «der große Mann». PASSO 3: depois do artigo definido (der, die, das), só existem duas terminações: «-e» e «-en». PASSO 4: no NOMINATIVO singular, é sempre «-e»: der große Mann, die kleine Frau, das neue Auto. No plural, «-en»: die großen Kinder. PASSO 5: no ACUSATIVO, só o MASCULINO muda: «den großen Mann» (-en); feminino e neutro continuam «-e»: «die kleine Frau», «das neue Auto»; o plural continua «-en». PASSO 6: a terminação mostra o caso que o artigo já mostrou: o adjetivo só «reforça» quando o artigo não bastar.",
         "comparacao": "o português muda o adjetivo por gênero e número («o homem alto», «as mulheres altas»). O alemão muda também por CASO, mas depois de der/die/das as terminações são só duas: -e e -en.",
@@ -148,12 +212,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Descreva 6 pessoas ou coisas com artigo definido e adjetivo: «Der freundliche Mann … Das neue Auto … Die kleinen Kinder …»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva o quadro dos artigos definidos nos quatro casos de memória."
       }
     ]

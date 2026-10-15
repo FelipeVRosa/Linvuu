@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 6,
+        "min": 4,
         "itens": [
           {
             "ru": "gar nicht",
@@ -69,7 +69,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "«Nicht»: onde colocar, e como responder com «doch»",
         "explicacao": "PASSO 1: «kein» nega SUBSTANTIVOS; «nicht» nega TODO O RESTO: o verbo, a frase inteira, um adjetivo ou um advérbio. PASSO 2: se nega a frase inteira, «nicht» vai para o FIM: «Ich arbeite heute nicht.» PASSO 3: se nega um adjetivo ou advérbio, vai ANTES dele: «Das Buch ist nicht teuer.» PASSO 4: com verbo separável, «nicht» vem antes do prefixo: «Ich stehe nicht auf.» PASSO 5: com modais, vem antes do infinitivo: «Ich kann nicht kommen.» PASSO 6: se alguém pergunta de forma NEGATIVA («Hast du keine Zeit?»), a resposta é «DOCH» para dizer «sim, tenho» e «Nein» para dizer «não, não tenho». «Doch» é a palavra que contradiz uma negação.",
         "tabela": [
@@ -123,7 +123,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 7,
+        "min": 5,
         "titulo": "Hast du Zeit? / Você tem tempo?",
         "contexto": "Dois amigos combinam um jantar.",
         "linhas": [
@@ -172,13 +172,166 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Ich verstehe nicht.",
+            "translit": "",
+            "pt": "Não entendo.",
+            "en": "",
+            "audio": "Ich verstehe nicht."
+          },
+          {
+            "ru": "Ich weiß nicht.",
+            "translit": "",
+            "pt": "Não sei.",
+            "en": "",
+            "audio": "Ich weiß nicht."
+          },
+          {
+            "ru": "Ich habe keine Zeit.",
+            "translit": "",
+            "pt": "Não tenho tempo.",
+            "en": "",
+            "audio": "Ich habe keine Zeit."
+          },
+          {
+            "ru": "Das ist kein Problem.",
+            "translit": "",
+            "pt": "Não é problema.",
+            "en": "",
+            "audio": "Das ist kein Problem."
+          },
+          {
+            "ru": "Noch nicht.",
+            "translit": "",
+            "pt": "Ainda não.",
+            "en": "",
+            "audio": "Noch nicht."
+          },
+          {
+            "ru": "Ich habe keinen Hunger.",
+            "translit": "",
+            "pt": "Não estou com fome.",
+            "en": "",
+            "audio": "Ich habe keinen Hunger."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Ich habe ___ Auto.",
+            "respostaEsperada": "kein (neutro)",
+            "id": "de-014-L-101"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Das ist ___ Lampe.",
+            "respostaEsperada": "keine (feminino)",
+            "id": "de-014-L-102"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Tom wohnt ___ in Berlin.",
+            "respostaEsperada": "nicht (lugar)",
+            "id": "de-014-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Wir haben ___ Kinder.",
+            "respostaEsperada": "keine (plural)",
+            "id": "de-014-L-104"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Das Zimmer ist ___ groß.",
+            "respostaEsperada": "nicht (adjetivo)",
+            "id": "de-014-L-105"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Camila ist ___ Lehrerin.",
+            "respostaEsperada": "keine (profissão)",
+            "id": "de-014-L-106"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich habe ein Auto. → ___",
+            "respostaEsperada": "Ich habe kein Auto",
+            "id": "de-014-L-201"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Das ist eine Wohnung. → ___",
+            "respostaEsperada": "Das ist keine Wohnung",
+            "id": "de-014-L-202"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Tom kommt heute. → ___",
+            "respostaEsperada": "Tom kommt heute nicht",
+            "id": "de-014-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich wohne in Berlin. → ___",
+            "respostaEsperada": "Ich wohne nicht in Berlin",
+            "id": "de-014-L-204"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Das Zimmer ist neu. → ___",
+            "respostaEsperada": "Das Zimmer ist nicht neu",
+            "id": "de-014-L-205"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich habe Zeit. → ___",
+            "respostaEsperada": "Ich habe keine Zeit",
+            "id": "de-014-L-206"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Passe as frases para a forma negativa usando kein / keine ou nicht: Ich bin Lehrer. → ___",
+            "respostaEsperada": "Ich bin kein Lehrer",
+            "id": "de-014-L-207"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Kommst du nicht? (você vai, sim!) → ___, ich komme!",
+            "respostaEsperada": "Doch",
+            "explicacao": "Veja a chave comentada no livro: Doch",
+            "id": "de-014-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wohnst du nicht in Berlin? (você realmente não mora lá) → ___, ich wohne in München.",
+            "respostaEsperada": "Nein",
+            "explicacao": "Veja a chave comentada no livro: Nein",
+            "id": "de-014-L-209a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Hast du keine Zeit? (você tem tempo, sim!) → ___, ich habe Zeit!",
+            "respostaEsperada": "Doch",
+            "explicacao": "Veja a chave comentada no livro: Doch",
+            "id": "de-014-L-210a"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 2,
+        "min": 1,
         "enunciado": "Responda em voz alta com «doch» ou «nein»: «Hast du keine Zeit? Hast du keinen Hunger? Arbeitest du nicht?»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 5 frases com «kein», «keine» e «keinen»."
       }
     ]

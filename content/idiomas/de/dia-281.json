@@ -20,8 +20,102 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você reconhece as partículas mais comuns da fala (doch, mal, ja, eben, halt, denn, aber, schon), sabe o que cada uma faz no tom da frase e usa mal, doch e denn para soar menos seco, sem mudar a gramática."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O trem atrasado",
+        "contexto": "Camila, Jonas e Lena esperam o trem na plataforma. Ele está atrasado.",
+        "linhas": [
+          {
+            "personagem": "Camila",
+            "ru": "— Der Zug hat vierzig Minuten Verspätung. Was machen wir denn jetzt?",
+            "pt": "— O trem está quarenta minutos atrasado. O que a gente faz agora, então?",
+            "audio": "Der Zug hat vierzig Minuten Verspätung. Was machen wir denn jetzt?"
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Wir warten halt. Das ist die Bahn, das weißt du ja.",
+            "pt": "— A gente espera, fazer o quê. É a ferrovia, você sabe como é.",
+            "audio": "Wir warten halt. Das ist die Bahn, das weißt du ja."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Komm, trinken wir doch einen Kaffee. Da vorne ist ein Café.",
+            "pt": "— Vem, a gente toma um café. Tem um café ali na frente.",
+            "audio": "Komm, trinken wir doch einen Kaffee. Da vorne ist ein Café."
+          },
+          {
+            "personagem": "Camila",
+            "ru": "— Das Café sieht aber teuer aus.",
+            "pt": "— O café parece caro, hein.",
+            "audio": "Das Café sieht aber teuer aus."
+          },
+          {
+            "personagem": "Jonas",
+            "ru": "— Dann nehmen wir eben Kaffee aus dem Automaten. Warte mal, ich habe noch Münzen.",
+            "pt": "— Então a gente pega um café na máquina. Espera aí, ainda tenho umas moedas.",
+            "audio": "Dann nehmen wir eben Kaffee aus dem Automaten. Warte mal, ich habe noch Münzen."
+          },
+          {
+            "personagem": "Lena",
+            "ru": "— Siehst du, es geht doch. Und keine Sorge, der Zug kommt schon.",
+            "pt": "— Viu? Dá certo, sim. E não se preocupe, o trem chega.",
+            "audio": "Siehst du, es geht doch. Und keine Sorge, der Zug kommt schon."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: o português não oferece uma palavra para cada partícula. Aprenda o efeito (convite, resignação, surpresa) e a frase inteira, não a tradução da partícula.",
+        "comparacao": "Três armadilhas.",
+        "tabela": [
+          {
+            "portugues": "Vem com a gente, vai.",
+            "ingles": "Komm doch mit!",
+            "evite": "convite"
+          },
+          {
+            "portugues": "Espera aí.",
+            "ingles": "Warte mal!",
+            "evite": "pedido leve"
+          },
+          {
+            "portugues": "Você sabe, né? Estou cansado.",
+            "ingles": "Du weißt ja, ich bin müde.",
+            "evite": "você já sabe disso"
+          },
+          {
+            "portugues": "Então a gente fica aqui, fazer o quê.",
+            "ingles": "Dann bleiben wir halt hier.",
+            "evite": "resignação"
+          },
+          {
+            "portugues": "O que você está fazendo aqui, afinal?",
+            "ingles": "Was machst du denn hier?",
+            "evite": "curiosidade"
+          },
+          {
+            "portugues": "Que caro, hein!",
+            "ingles": "Das ist aber teuer!",
+            "evite": "surpresa"
+          },
+          {
+            "portugues": "Você vai conseguir, pode confiar.",
+            "ingles": "Das schaffst du schon.",
+            "evite": "tranquilizar"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "bis dahin",
@@ -83,7 +177,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 14,
+        "min": 10,
         "titulo": "O Futur II, passo a passo",
         "explicacao": "PASSO 1: o FUTUR II usa «WERDEN» (conjugado) + PARTIZIP II + «HABEN» ou «SEIN» (infinitivo, no fim): «Er wird das Buch gelesen haben», «Er wird angekommen sein.» PASSO 2: USO 1: um fato que estará CONCLUÍDO em um momento do futuro: «Bis morgen werde ich es geschafft haben» (até amanhã terei conseguido). PASSO 3: USO 2: uma SUPOSIÇÃO sobre o PASSADO, com «wohl», «wahrscheinlich», «vermutlich»: «Er wird wohl krank gewesen sein» (ele deve ter estado doente). PASSO 4: a escolha entre «haben» e «sein» é a do Perfekt (movimento e mudança de estado → «sein»). PASSO 5: na prática, o Futur II aparece pouco na fala; a suposição é seu uso mais comum. PASSO 6: compare: Futur I («Er wird kommen»: vai vir) × Futur II («Er wird gekommen sein»: terá vindo, ou deve ter vindo).",
         "comparacao": "o português tem o futuro do pretérito composto («terá feito») e as suposições sobre o passado («ele deve ter feito»). O alemão usa o Futur II: werden + Partizip II + haben/sein.",
@@ -130,12 +224,12 @@
       },
       {
         "tipo": "producao",
-        "min": 3,
+        "min": 2,
         "enunciado": "Faça 6 frases de Futur II em voz alta: «Bis morgen werde ich … gemacht haben. Er wird wohl … gewesen sein.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 6 frases com adjetivos substantivados."
       }
     ]

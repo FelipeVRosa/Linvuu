@@ -20,29 +20,8 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "texto",
-        "min": 5,
-        "titulo": "Mein Samstag / O meu sábado",
-        "ru": "Gestern habe ich Hausaufgaben gemacht. Ich habe Musik gehört und Pasta gekocht. Am Nachmittag habe ich eingekauft und meine Oma besucht. Am Abend habe ich lange telefoniert. Ich habe nicht gearbeitet.",
-        "pt": "Ontem fiz a lição de casa. Ouvi música e cozinhei macarrão. À tarde fiz compras e visitei a minha avó. À noite telefonei por muito tempo. Não trabalhei.",
-        "perguntas": [
-          {
-            "pergunta": "Was hat der Autor gekocht?",
-            "resposta": "Pasta"
-          },
-          {
-            "pergunta": "Wen hat er besucht?",
-            "resposta": "Seine Oma"
-          },
-          {
-            "pergunta": "Hat er gearbeitet?",
-            "resposta": "Nein, er hat nicht gearbeitet"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 15,
+        "min": 13,
         "itens": [
           {
             "tipo": "fill-gap",
@@ -220,14 +199,67 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Grave-se contando o que você fez ontem, no Perfekt, só com verbos regulares."
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Conte o seu dia de ontem em cinco frases no Perfekt: três com haben (gearbeitet, gekocht, angerufen…) e duas com sein (aufgestanden, gefahren, gegangen…).",
+            "respostaEsperada": "Gestern bin ich um sieben Uhr aufgestanden. Ich habe Kaffee getrunken und im Büro gearbeitet. Am Nachmittag habe ich meine Mutter angerufen. Um achtzehn Uhr bin ich nach Hause gefahren und habe ein Buch gelesen.",
+            "id": "de-021-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases sobre o que você fez no último fim de semana (Am Wochenende bin ich … / habe ich …).",
+            "respostaEsperada": "Am Wochenende bin ich mit Freunden ins Kino gegangen. Am Sonntag sind wir zu Hause geblieben und haben zusammen gekocht.",
+            "id": "de-021-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva um diálogo curto de quatro falas perguntando a um amigo como foi o fim de semana dele.",
+            "respostaEsperada": "Modelo de diálogo: — Hallo Lena! Was hast du am Wochenende gemacht?— Ich bin nach Hamburg gefahren und habe meinen Bruder besucht. Und du?— Ich bin in München geblieben. Ich habe eingekauft und einen Film gesehen.— Schön! Hat dir der Film gefallen?",
+            "id": "de-021-L-p03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Ich habe gegangen nach Hause.",
+            "respostaEsperada": "Ich bin nach Hause gegangen.",
+            "explicacao": "Ich bin nach Hause gegangen.",
+            "id": "de-021-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Wir haben das Buch gelest.",
+            "respostaEsperada": "Wir haben das Buch gelesen.",
+            "explicacao": "Wir haben das Buch gelesen.",
+            "id": "de-021-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Du hast gestern gearbeit.",
+            "respostaEsperada": "Du hast gestern gearbeitet.",
+            "explicacao": "Du hast gestern gearbeitet.",
+            "id": "de-021-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais custa caro é usar haben com verbos de deslocamento ou mudança de estado (Ich habe gegangen / Er hat gefahren em vez de Ich bin gegangen / Er ist gefahren), esquecer de mandar o particípio para o fim da frase ou colocar ge- no lugar errado nos verbos separáveis e inseparáveis. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 5 frases no Perfekt sobre o seu último fim de semana, só com verbos regulares."
+        "min": 3,
+        "enunciado": "Retorno. Do capítulo 17. Complete: Ich ____ dich später ____. (anrufen) Do capítulo 16. Complete: Du ____ (nehmen) den Bus. Do capítulo 15. Complete: Wir ____ heute nicht kommen. (können)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Conto o que fiz ontem usando haben e sein na moldura verbal. · Pergunto a um colega o que ele fez e escolho o auxiliar certo sem hesitar."
       }
     ]
   },

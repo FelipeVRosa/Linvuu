@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você expressa habilidades, permissões e pedidos educados com can e could (inclusive habilidade no passado: I could swim at five), dá conselhos com should, diferencia proibição (mustn't / can't) de ausência de obrigação (don't have to), e usa o imperativo e Let's para instruções e convites."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Regras de segurança e almoço na fábrica",
+        "contexto": "Lucas visita a fábrica de um cliente em Chicago com a engenheira norte-americana Rachel.",
+        "linhas": [
+          {
+            "personagem": "Rachel",
+            "ru": "— Welcome to our Chicago plant, Lucas! Before we go inside, could you put on this yellow helmet and these safety glasses, please?",
+            "pt": "— Bem-vindo à nossa fábrica de Chicago, Lucas! Antes de entrarmos, você poderia colocar este capacete amarelo e estes óculos de proteção, por favor?",
+            "audio": "Welcome to our Chicago plant, Lucas! Before we go inside, could you put on this yellow helmet and these safety glasses, please?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Sure, no problem! Can I take photos inside the factory?",
+            "pt": "— Claro, sem problema! Posso tirar fotos dentro da fábrica?",
+            "audio": "Sure, no problem! Can I take photos inside the factory?"
+          },
+          {
+            "personagem": "Rachel",
+            "ru": "— Sorry, you can't take photos in the production area — it's a strict company rule. You must keep your phone in your pocket there.",
+            "pt": "— Desculpe, você não pode tirar fotos na área de produção — é uma regra rígida da empresa. Você deve manter seu celular no bolso lá.",
+            "audio": "Sorry, you can't take photos in the production area — it's a strict company rule. You must keep your phone in your pocket there."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Got it. And do I have to wear ear protection too?",
+            "pt": "— Entendi. E eu tenho que usar proteção auricular também?",
+            "audio": "Got it. And do I have to wear ear protection too?"
+          },
+          {
+            "personagem": "Rachel",
+            "ru": "— No, you don't have to wear it in this section because the machines aren't running right now.",
+            "pt": "— Não, você não precisa usar nesta seção porque as máquinas não estão funcionando agora.",
+            "audio": "No, you don't have to wear it in this section because the machines aren't running right now."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— By the way, Rachel, I have a free afternoon tomorrow. What should I see in Chicago?",
+            "pt": "— Aliás, Rachel, tenho a tarde livre amanhã. O que eu deveria conhecer em Chicago?",
+            "audio": "By the way, Rachel, I have a free afternoon tomorrow. What should I see in Chicago?"
+          },
+          {
+            "personagem": "Rachel",
+            "ru": "— You should definitely take the architecture boat tour on the river! It's amazing. You shouldn't miss it.",
+            "pt": "— Você definitivamente deveria fazer o passeio de barco de arquitetura pelo rio! É incrível. Você não deveria perder.",
+            "audio": "You should definitely take the architecture boat tour on the river! It's amazing. You shouldn't miss it."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— That sounds great! Do I have to book the ticket in advance?",
+            "pt": "— Parece ótimo! Eu tenho que reservar o ingresso com antecedência?",
+            "audio": "That sounds great! Do I have to book the ticket in advance?"
+          },
+          {
+            "personagem": "Rachel",
+            "ru": "— Yes, you should buy it online tonight. Now, let's grab some lunch at the cafeteria! Please watch your step on the stairs.",
+            "pt": "— Sim, você deveria comprar online hoje à noite. Agora, vamos almoçar no refeitório! Por favor, cuidado com o degrau na escada.",
+            "audio": "Yes, you should buy it online tonight. Now, let's grab some lunch at the cafeteria! Please watch your step on the stairs."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: As 3 Leis de Ferro dos Verbos Modais (can, could, must, should, would): PASSO 2: Lei 1 — Sem -s nunca:He can swim, She should go, It must be here (e não cans, shoulds, musts). PASSO 3: Lei 2 — Sem to depois deles: O verbo seguinte vem sempre “nu”, sem to (I can help, You should rest, We must leave — e não can to help, must to leave). PASSO 4: Lei 3 — Sem do / does / don't: Eles mesmos fazem a negativa (can't, couldn't, mustn't, shouldn't) e pulam para a frente na pergunta (Can you…? / Should I…?). PASSO 5: Habilidade prática (“saber fazer”) é can, nunca know. Em inglês, nunca diga I know swim ou I know speak English. Para habilidades aprendidas (nadar, dirigir, cozinhar, tocar instrumento, falar idiomas), use sempre can: I can swim, She can speak three languages (ou know how to: I know how to drive). PASSO 6: O abismo entre mustn't (Proibido!) e don't have to (Não precisa!). Na afirmativa, must e have to são parecidos (“ter que / dever”). Mas na negativa eles se separam completamente: PASSO 7: You mustn't [do] (ou You can't [do]) = É proibido! Não faça! (You mustn't smoke on the plane). PASSO 8: You don't have to [do] = Não é necessário / É opcional (Today is Sunday, so I don't have to wake up early).",
+        "comparacao": "Em português, dizemos “Eu sei nadar”, “Ele pode ir”, “Eu devo estudar” e “Você não precisa pagar”. Ao passar para o inglês, surgem quatro armadilhas perigosas:",
+        "tabela": [
+          {
+            "portugues": "Eu sei dirigir / nadar / cozinhar.",
+            "ingles": "I can drive / swim / cook.",
+            "evite": "I know drive / I know to swim."
+          },
+          {
+            "portugues": "Ela pode ajudar? — Sim, ela pode.",
+            "ingles": "Can she help? — Yes, she can.",
+            "evite": "Does she can help? / She cans help."
+          },
+          {
+            "portugues": "Eu devo ir agora.",
+            "ingles": "I must go / I have to go now.",
+            "evite": "I must to go now."
+          },
+          {
+            "portugues": "A entrada é grátis; você não precisa pagar.",
+            "ingles": "It's free; you don't have to pay.",
+            "evite": "You mustn't pay. (Isso significa “É proibido pagar”!)"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "swim",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Can e can't",
         "explicacao": "PASSO 1: «can» expressa habilidade: «I can swim.» (sei nadar / consigo nadar). PASSO 2: «can» é igual para TODAS as pessoas, sem «-s»: «He can swim», nunca «He cans». PASSO 3: depois de «can», o verbo fica na forma simples, sem «to»: «She can cook», nunca «She can to cook». PASSO 4: negativa: «can't» (cannot): «I can't drive.» PASSO 5: pergunta: inverta, sem «do»: «Can you swim?» Resposta curta: «Yes, I can.» / «No, I can't.» PASSO 6: na fala, «can» é fraco («kn»), e «can't» é forte e longo («cént»). Ouça a diferença nos exemplos.",
         "comparacao": "em português usamos «saber» (sei nadar) ou «conseguir» (consigo abrir). O inglês usa um só verbo, «can», para os dois.",
@@ -130,12 +227,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 4 coisas que você sabe fazer e 2 que não sabe: «I can cook. I can't drive.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Faça um pedido num café em voz alta, com «I'd like», «some» e «any»."
       }
     ]

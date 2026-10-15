@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você indica posse sem confundir his (“dele”) com her (“dela”), usa os pronomes independentes (mine, yours, hers, ours, theirs), aplica o caso possessivo 's para pessoas e tempo (Sarah's laptop, today's meeting), e posiciona adjetivos antes do substantivo sem colocá-los no plural (two new reports)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Antes da reunião na sala de vidro",
+        "contexto": "Lucas e sua colega canadense Sarah estão organizando a mesa da sala de conferências antes da chegada dos diretores.",
+        "linhas": [
+          {
+            "personagem": "Sarah",
+            "ru": "— Lucas, whose black notebook is this on the corner of the table? Is it yours?",
+            "pt": "",
+            "audio": "Lucas, whose black notebook is this on the corner of the table? Is it yours?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Let me see… No, it isn't mine. Mine is blue, and it's right here in my backpack. Wait — is it David's notebook? He was in this room ten minutes ago.",
+            "pt": "",
+            "audio": "Let me see… No, it isn't mine. Mine is blue, and it's right here in my backpack. Wait — is it David's notebook? He was in this room ten minutes ago."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Oh, you're right! It's his. Look, his business card is inside.",
+            "pt": "",
+            "audio": "Oh, you're right! It's his. Look, his business card is inside."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— And what about Emma? Where is her laptop? Today's presentation is on her computer!",
+            "pt": "",
+            "audio": "And what about Emma? Where is her laptop? Today's presentation is on her computer!"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Don't worry, her laptop is already connected to the big screen. She's in her office with her new assistant right now.",
+            "pt": "",
+            "audio": "Don't worry, her laptop is already connected to the big screen. She's in her office with her new assistant right now."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Great. By the way, is that your brother in this photo on your phone screen?",
+            "pt": "",
+            "audio": "Great. By the way, is that your brother in this photo on your phone screen?"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— No, that's my sister's husband, Mark! They live in Vancouver with their two small kids.",
+            "pt": "",
+            "audio": "No, that's my sister's husband, Mark! They live in Vancouver with their two small kids."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— What a nice family! Oh, here comes Emma with our printed reports.",
+            "pt": "",
+            "audio": "What a nice family! Oh, here comes Emma with our printed reports."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: your é só “de você”; para uma 3ª pessoa, olhe para o dono (his = dele / her = dela). Em português, como “marido” é masculino, o brasileiro é tentado a dizer his husband para o marido da Ana. Em inglês, objetos não têm gênero: se a dona é mulher (she), tudo o que pertence a ela leva her (her husband, her father, her car). Se o dono é homem (he), tudo leva his (his wife, his mother, his house). PASSO 2: Possessivo não leva the na frente. Em português dizemos “o meu celular”, “a nossa equipe”. Em inglês, o artigo e o possessivo não andam juntos: diga apenas my phone, our team (nunca the my phone). PASSO 3: Adjetivos vêm antes do substantivo e nunca mudam de forma. Nunca coloque -s em um adjetivo em inglês: diga one new project e ten new projects (e não ten news projects).",
+        "comparacao": "Em português, a palavra “seu / sua” é ambígua (pode significar de você, dele, dela ou deles), o adjetivo vai depois do nome e recebe plural (“relatórios importantes”), e usamos a preposição “de” para tudo (“o carro do Pedro”). Veja como o inglês resolve essas quatro armadilhas:",
+        "tabela": [
+          {
+            "portugues": "A Ana ama seu marido (o marido dela).",
+            "ingles": "Ana loves her husband.",
+            "evite": "Ana loves your / his husband."
+          },
+          {
+            "portugues": "O carro da minha irmã.",
+            "ingles": "My sister's car.",
+            "evite": "The car of my sister."
+          },
+          {
+            "portugues": "Duas reuniões importantes.",
+            "ingles": "Two important meetings.",
+            "evite": "Two meetings importants."
+          },
+          {
+            "portugues": "O meu carro é preto, e o seu?",
+            "ingles": "My car is black. What about yours?",
+            "evite": "The my car… What about the your?"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "mother",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Possessivos: my, your, his, her, our, their",
         "explicacao": "PASSO 1: o possessivo concorda com o DONO, não com a coisa: «his mother» (a mãe DELE), «her mother» (a mãe DELA). PASSO 2: a lista: my (meu/minha), your (seu/sua, de você), his (dele), her (dela), our (nosso), their (deles/delas). PASSO 3: o possessivo vem ANTES do substantivo e nunca leva artigo: «my brother», não «the my brother». PASSO 4: ele não muda no plural: «my sisters», «our sons». PASSO 5: cuidado com «its» (de algo): «The cat likes its food.» PASSO 6: «Whose book is this?» = De quem é este livro? Resposta: «It's my book.»",
         "comparacao": "em português «seu/sua» é ambíguo (dele? dela? de você?) e concorda com a coisa («sua mãe»). O inglês escolhe pelo dono: «his mother» ou «her mother».",
@@ -140,12 +231,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Apresente 4 pessoas da sua família: «This is my mother. Her name is…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva a sua casa em voz alta com «there is», «there are» e duas preposições de lugar."
       }
     ]

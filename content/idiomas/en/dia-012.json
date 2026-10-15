@@ -20,33 +20,8 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "texto",
-        "min": 6,
-        "titulo": "Maria and Tom / Maria e Tom",
-        "ru": "Maria is from Brazil. She is twenty-five years old. She is a teacher. Her friend Tom is from the United States. He is twenty-seven. They are in London today. They are happy.",
-        "pt": "Maria é do Brasil. Ela tem vinte e cinco anos. Ela é professora. O amigo dela, Tom, é dos Estados Unidos. Ele tem vinte e sete anos. Eles estão em Londres hoje. Eles estão felizes.",
-        "perguntas": [
-          {
-            "pergunta": "Where is Maria from?",
-            "resposta": "She is from Brazil."
-          },
-          {
-            "pergunta": "How old is Tom?",
-            "resposta": "He is twenty-seven."
-          },
-          {
-            "pergunta": "Is Maria a teacher?",
-            "resposta": "Yes, she is."
-          },
-          {
-            "pergunta": "Where are they today?",
-            "resposta": "They are in London."
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 14,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -201,14 +176,111 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale por 1 minuto: apresente-se e apresente um amigo. Diga nome, idade, país, nacionalidade e como cada um está hoje."
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga o dia e o mês do seu aniversário (on…) e o ano em que você nasceu (in…), escrevendo a data e o ano por extenso.",
+            "respostaEsperada": "My birthday is on August 22nd (twenty-second), and I was born in 1992 (nineteen ninety-two).",
+            "id": "en-003-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva quatro compromissos da sua semana dizendo o dia da semana (on…) e a hora exata (at…) usando half past, a quarter past e a quarter to.",
+            "respostaEsperada": "On Monday, I have a meeting at half past nine. On Wednesday, I have an English class at a quarter past seven. On Thursday, I have a dentist appointment at a quarter to four. On Friday, I finish work at five o'clock.",
+            "id": "en-003-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase usando this evening e next week (lembrando da regra de zero preposição!).",
+            "respostaEsperada": "I'm free this evening, and I'm traveling to Chicago next week.",
+            "id": "en-003-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Faça uma pergunta a um atendente confirmando se o preço é $14 ou $40 (fourteen vs. forty).",
+            "respostaEsperada": "Excuse me, did you say fourteen dollars or forty dollars?",
+            "id": "en-003-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The meeting is in Wednesday, in two o'clock in the afternoon.",
+            "respostaEsperada": "The meeting is on Wednesday, at two o'clock in the afternoon.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My birthday is in October 22 of 1995.",
+            "respostaEsperada": "My birthday is on October 22nd, 1995.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: See you on next Friday in the night!",
+            "respostaEsperada": "See you next Friday night!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The store has open from 9 a.m. at 8 p.m., and the jacket costs fourty dollars.",
+            "respostaEsperada": "The store is open from 9 a.m. to 8 p.m., and the jacket costs forty dollars.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: What time is it? — Is a quarter to five!",
+            "respostaEsperada": "What time is it? — It's a quarter to five!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I have a call in this afternoon with the team.",
+            "respostaEsperada": "I have a call this afternoon with the team.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Our flight leaves on Tuesday, May 3rd, at a quarter to seven in the morning.",
+            "respostaEsperada": "OK",
+            "id": "en-003-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente de brasileiros ao agendar reuniões é usar in antes de dias da semana e datas (dizendo in Monday ou in May 5th) e colocar on / in antes de next, last, this (dizendo on next week ou in this afternoon). Grave a regra: se tem Dia na jogada (seja o nome do dia como Monday, seja o número do dia como May 5th), a preposição é sempre on! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "in Monday / in Friday morning",
+            "certo": "on Monday / on Friday morning",
+            "motivo": "Qualquer expressão que contenha o dia da semana exige on."
+          },
+          {
+            "errado": "in May 10 / in May ten",
+            "certo": "on May 10th (tenth)",
+            "motivo": "Mês sozinho usa in (in May), mas quando entra o dia vira data e exige on + ordinal."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Releia os possessivos (my, your, his, her, our, their) e diga uma frase com cada um."
+        "min": 3,
+        "enunciado": "Retorno. 1. Do Capítulo 5. Complete: What time ____ (do / does) your husband ____ (finish / finishes) work on Fridays? — He usually ____ (finish / finishes) at five. 2. Do Capítulo 4 e 6. Una o funil de Lugar (Cap. 4) com o funil de Tempo (Cap. 6): qual preposição (in, on, at) usamos para (a) cidades e meses; (b) andares, ruas e dias da semana; (c) trabalho/casa e horas exatas? 3. Do Capítulo 3. Como dizemos “a reunião de hoje” e “o voo de amanhã” usando 's?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Marcar ou remarcar uma consulta ou reunião dizendo o dia da semana (on), a data ordinal (October 16th) e a hora (at). · Dizer as horas tanto no formato digital quanto com half past, a quarter past e a quarter to. · Distinguir no ouvido e na fala 13–19 (-TEEN) de 30–90 (-ty) e ler preços e anos com fluidez."
       }
     ]
   },

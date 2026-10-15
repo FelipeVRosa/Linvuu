@@ -20,8 +20,111 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você faz pedidos educados em cafés, restaurantes e lojas usando Can I get…?, I'll have… e I'd like… (sem soar rude com “I want”), aponta objetos perto e longe no singular e no plural (this, that, these, those), e forma plurais regulares e os sete plurais irregulares essenciais (people, men, women, children)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Pedido rápido em um café em nova york",
+        "contexto": "Lucas entra em uma cafeteria movimentada perto do metrô às 8h30 da manhã para tomar café e levar um lanche para o escritório.",
+        "linhas": [
+          {
+            "personagem": "Barista",
+            "ru": "— Hi there! What can I get started for you today?",
+            "pt": "— Olá! O que posso preparar para você hoje?",
+            "audio": "Hi there! What can I get started for you today?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Hi! Can I get a medium latte with oat milk, please?",
+            "pt": "— Oi! Você me vê um latte médio com leite de aveia, por favor?",
+            "audio": "Hi! Can I get a medium latte with oat milk, please?"
+          },
+          {
+            "personagem": "Barista",
+            "ru": "— Sure thing! Hot or iced?",
+            "pt": "— Com certeza! Quente ou gelado?",
+            "audio": "Sure thing! Hot or iced?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Hot, please. And how much are those sandwiches on the top shelf over there?",
+            "pt": "— Quente, por favor. E quanto custam aqueles sanduíches na prateleira de cima lá atrás?",
+            "audio": "Hot, please. And how much are those sandwiches on the top shelf over there?"
+          },
+          {
+            "personagem": "Barista",
+            "ru": "— Those are eight fifty each. We have turkey, cheese, and roast beef.",
+            "pt": "— Aqueles custam oito e cinquenta cada. Temos de peito de peru, queijo e rosbife.",
+            "audio": "Those are eight fifty each. We have turkey, cheese, and roast beef."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— That sounds great. I'll have a turkey sandwich, and I'd also like two of these chocolate cookies right here.",
+            "pt": "— Parece ótimo. Vou querer um sanduíche de peru, e gostaria também de dois destes cookies de chocolate bem aqui.",
+            "audio": "That sounds great. I'll have a turkey sandwich, and I'd also like two of these chocolate cookies right here."
+          },
+          {
+            "personagem": "Barista",
+            "ru": "— Got it. Look — there are a lot of people in line today, so the kitchen is a bit busy, but your sandwich will be ready in two minutes. Is this for here or to go?",
+            "pt": "— Anotado. Olha — tem muitas pessoas na fila hoje, então a cozinha está um pouco corrida, mas seu sanduíche fica pronto em dois minutos. É para comer aqui ou para viagem?",
+            "audio": "Got it. Look — there are a lot of people in line today, so the kitchen is a bit busy, but your sandwich will be ready in two minutes. Is this for here or to go?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— To go, please.",
+            "pt": "— Para viagem, por favor.",
+            "audio": "To go, please."
+          },
+          {
+            "personagem": "Barista",
+            "ru": "— Your total is twenty-one seventy-five. You can tap your card right here on the screen.",
+            "pt": "— Seu total dá vinte e um e setenta e cinco. Você pode aproximar seu cartão bem aqui na tela.",
+            "audio": "Your total is twenty-one seventy-five. You can tap your card right here on the screen."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Here you go. Have a great day!",
+            "pt": "— Aqui está. Tenha um ótimo dia!",
+            "audio": "Here you go. Have a great day!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: “I want” no balcão soa rude. Com garçons e atendentes, substitua “I want” pela tríade educada: Can I get…? (ou Can I have…?), I'll have… (“Eu vou querer…”) e I'd like… (“Eu gostaria de…”). PASSO 2: Para reagir ao que a outra pessoa acabou de dizer, o natural é That. Quando alguém te dá uma notícia, diz um preço ou faz uma sugestão, essa ideia está “lá com a pessoa”, então reagimos com That: That's awesome!, That makes sense!, That's expensive!. PASSO 3: Plurais irregulares proíbem -s. Palavras como person, man, woman e child têm plurais próprios (people, men, women, children) e nunca recebem -s no final.",
+        "comparacao": "Em um balcão no Brasil, dizemos “Eu quero um café”, “Eu vou querer o salmão” ou “Me dá uma água”. Se você traduzir isso ao pé da letra em inglês, cai em quatro armadilhas imediatas:",
+        "tabela": [
+          {
+            "portugues": "Eu quero um café, por favor.",
+            "ingles": "Can I get a coffee, please? / I'd like a coffee.",
+            "evite": "I want a coffee. / Give me a coffee."
+          },
+          {
+            "portugues": "Eu vou querer o sanduíche.",
+            "ingles": "I'll have the sandwich, please.",
+            "evite": "I will want the sandwich."
+          },
+          {
+            "portugues": "(Reagindo:) Isto é ótimo!",
+            "ingles": "That's great! / That sounds great!",
+            "evite": "This is great! (para o que o outro disse)"
+          },
+          {
+            "portugues": "Três mulheres e duas crianças.",
+            "ingles": "Three women and two children.",
+            "evite": "Three womans and two childs."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "book",
@@ -90,7 +193,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Os artigos: a, an e the",
         "explicacao": "PASSO 1: «a» e «an» significam «um» e «uma». Só se usam com coisas contáveis no SINGULAR: «a book», «an apple». PASSO 2: a escolha entre «a» e «an» depende do SOM, não da letra. Som de consoante pede «a» (a book, a university, porque «university» começa com som de «iú»); som de vogal pede «an» (an apple, an umbrella, an hour, porque o «h» de «hour» não soa). PASSO 3: «the» significa «o, a, os, as» e vale para singular e plural. Use quando quem fala e quem ouve já sabem de qual coisa se trata: «I have a dog. The dog is big.» PASSO 4: no plural não existe «a»: «I have books» (alguns livros) ou «I have the books» (aqueles livros). PASSO 5: para falar de algo em geral, use o plural ou o incontável SEM artigo: «I like music», «Dogs are friendly». PASSO 6: profissões e identidades no singular pedem «a/an»: «She is a teacher».",
         "comparacao": "o português costuma usar artigo para generalizar («as pessoas gostam DA música»). O inglês não usa: «People like music.» Já a profissão, que em português dispensa artigo («ela é professora»), em inglês leva «a/an»: «She is a teacher».",
@@ -142,12 +245,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 6 frases sobre objetos que você tem agora, com a/an e the: «I have a phone. I have an umbrella. The phone is new.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 5 frases com o presente simples sobre a sua rotina, usando «always», «usually» ou «never»."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -198,14 +198,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto sobre a sua família: quem são, o que têm, de quem são as coisas."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga o nome de um amigo e de uma amiga sua e fale a profissão do marido/esposa ou irmão/irmã de cada um usando his, her e 's.",
+            "respostaEsperada": "My friend Carla loves her job, and her husband's name is Bruno. My friend Pedro lives in Rio, and his sister's husband is an architect.",
+            "id": "en-007-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Pergunte de quem é aquele carregador (charger) na mesa e responda que não é seu (mine), que é da Sarah (hers / Sarah's).",
+            "respostaEsperada": "Whose charger is that on the table? — It isn't mine; it's Sarah's (it's hers).",
+            "id": "en-007-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva dois objetos da sua mesa usando dois adjetivos juntos antes de cada substantivo no plural (ex.: opinião + cor/tamanho/idade).",
+            "respostaEsperada": "I have two great new laptops and three small black notebooks on my desk.",
+            "id": "en-007-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase diferenciando my parents (“meus pais”) de my relatives (“meus parentes”).",
+            "respostaEsperada": "My parents live in São Paulo, and my relatives live in Minas Gerais.",
+            "id": "en-007-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Julia is in Dublin with his boyfriend and your brother.",
+            "respostaEsperada": "Julia is in Dublin with her boyfriend and her brother.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The car of my father is in the garage of my parents.",
+            "respostaEsperada": "My father's car is in my parents' garage.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We have two importants meetings with our news clients today.",
+            "respostaEsperada": "We have two important meetings with our new clients today.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: — Who's laptop is this? — It's the mine!",
+            "respostaEsperada": "— Whose laptop is this? — It's mine!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: He is a colleague of me at the bank.",
+            "respostaEsperada": "He is a colleague of mine at the bank.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The company changed it's name last year.",
+            "respostaEsperada": "The company changed its name last year.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: My sister's apartment is in a nice quiet neighborhood.",
+            "respostaEsperada": "OK",
+            "id": "en-007-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente deste capítulo é escolher his ou her olhando para a coisa possuída em vez de olhar para o dono (dizendo Marina loves his father porque “pai” é masculino). Lembre-se: se a dona é a Marina (she), o pai dela é her father, o irmão dela é her brother e o filho dela é her son! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "Marina loves his husband.",
+            "certo": "Marina loves her husband.",
+            "motivo": "A dona é Marina (she), logo usa-se her mesmo antes de palavras masculinas."
+          },
+          {
+            "errado": "The laptop of Lucas.",
+            "certo": "Lucas's laptop.",
+            "motivo": "Posse de pessoas em inglês usa Dono + 's + Coisa."
+          },
+          {
+            "errado": "Two importants projects.",
+            "certo": "Two important projects.",
+            "motivo": "Adjetivos em inglês vêm antes do nome e nunca levam -s."
+          },
+          {
+            "errado": "It's the mine. / The my car.",
+            "certo": "It's mine. / My car.",
+            "motivo": "Possessivos em inglês nunca aceitam o artigo the na frente."
+          },
+          {
+            "errado": "A friend of me.",
+            "certo": "A friend of mine.",
+            "motivo": "Na estrutura “um amigo meu”, usa-se of + pronome independente (mine, hers, ours)."
+          },
+          {
+            "errado": "The company changed it's logo.",
+            "certo": "The company changed its logo.",
+            "motivo": "its (sem apóstrofo) é possessivo; it's (com apóstrofo) significa it is."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Fale 4 frases sobre o que as pessoas da sua família têm ou não têm."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 2. Como você pede educadamente um café com leite de aveia para viagem e pergunta quanto custam aqueles cookies lá na prateleira? 2. Do Capítulo 2. Qual é o plural de person, woman, child, city e shelf? 3. Do Capítulo 1. Por que dizemos an hour e an MBA, mas a university?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Falar da família e dos pertences de um homem (his) e de uma mulher (her) sem trocar os dois. Perguntar Whose…? e responder com mine, yours, hers, ours ou Name's. Usar dois adjetivos antes de um substantivo plural sem colocar -s nos adjetivos."
       }
     ]
   },

@@ -20,8 +20,41 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare as duas colunas de possessivos abaixo: PASSO 2: Perguntas: PASSO 3: Qual é a diferença visual entre as palavras da Coluna A (que precisam de um substantivo logo depois) e as da Coluna B (que ficam sozinhas no fim da frase)? PASSO 4: Na Cena, como Sarah perguntou “De quem é este caderno?” e como disse “o marido da minha irmã”?",
+        "tabela": [
+          {
+            "c1": "This is my notebook.",
+            "c2": "This notebook is mine."
+          },
+          {
+            "c1": "Is this your phone?",
+            "c2": "Is this phone yours?"
+          },
+          {
+            "c1": "That is his badge.",
+            "c2": "That badge is his."
+          },
+          {
+            "c1": "This is her office.",
+            "c2": "This office is hers."
+          },
+          {
+            "c1": "This is our presentation.",
+            "c2": "This presentation is ours."
+          },
+          {
+            "c1": "Those are their bags.",
+            "c2": "Those bags are theirs."
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 6,
+        "min": 4,
         "itens": [
           {
             "ru": "parents",
@@ -69,7 +102,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "'s: o dono vem antes",
         "explicacao": "PASSO 1: para dizer que algo é de uma pessoa, coloque o dono ANTES e junte «'s»: «Ana's car» (o carro da Ana). PASSO 2: a ordem é o inverso do português: dono + coisa. «my brother's wife» (a esposa do meu irmão). PASSO 3: com plural terminado em -s, só o apóstrofo: «my parents' house» (a casa dos meus pais). PASSO 4: plural irregular leva 's: «the children's room». PASSO 5: não use «of» para pessoas: «the car of Ana» soa estranho. PASSO 6: cuidado: «'s» também pode ser «is» (He's tall) ou posse (Tom's car). O sentido decide.",
         "comparacao": "em português dizemos «o carro DA Ana» (coisa + de + dono). O inglês faz o contrário: «Ana's car» (dono + 's + coisa).",
@@ -115,13 +148,20 @@
         "tag": "Posse"
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Em 30 segundos",
+        "explicacao": "PASSO 1: Possessivos com substantivo vs. Sozinhos: PASSO 2: Com nome depois:my (meu), your (seu, de você ou de vocês), his (dele), her (dela), its (dele/dela para empresa/coisa — sem apóstrofo!), our (nosso), their (deles/delas). PASSO 3: Sozinhos (sem nome depois):mine, yours, his, hers, ours, theirs (My phone is dead; can I use yours?). PASSO 4: O Genitivo 's (Dono + 's + Coisa): PASSO 5: Pessoas, animais, países e tempo: use 's (Sarah's laptop, my brother's car, Brazil's economy, today's meeting, yesterday's news). Se o plural já termina em -s, ponha só o apóstrofo no fim: my parents' house. PASSO 6: Coisas inanimadas: use substantivo + substantivo (the room key, the computer screen) ou of (the end of the movie, the name of the street). PASSO 7: Ordem e Invariabilidade dos Adjetivos: O adjetivo vem antes do substantivo e não tem plural. Se houver dois adjetivos, a opinião vem antes do fato (tamanho/idade/cor/origem): a nice big room, an amazing new Canadian company.",
+        "tag": "Resumo"
+      },
+      {
         "tipo": "producao",
-        "min": 8,
+        "min": 6,
         "enunciado": "Diga de quem são 5 coisas: «This is Ana's car. That is my brother's dog…»"
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Complete: «___ name is Ana (dela). ___ car is old (dele). ___ house is big (nossa).»"
       }
     ]

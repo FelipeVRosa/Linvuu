@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "have",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "Have e has: o que você tem",
         "explicacao": "PASSO 1: «have» é TER. Com I, you, we, they: «I have two sisters.» PASSO 2: com he, she, it, use «has»: «She has a brother.» PASSO 3: negativa com «do/does + have» (o verbo volta a «have»): «I don't have a car.», «She doesn't have a dog.» PASSO 4: pergunta: «Do you have a brother?», «Does he have a car?» PASSO 5: resposta curta: «Yes, I do.», «No, she doesn't.» PASSO 6: não diga «She doesn't has». Depois de «does/doesn't» o verbo é sempre «have». PASSO 7: não confunda com existência: «There is a dog» (existe) x «I have a dog» (é meu).",
         "comparacao": "em português «ter» serve para posse e para existência («tem um cachorro na sala»). O inglês separa: «have/has» é posse; «there is/are» é existência.",
@@ -108,38 +108,286 @@
         "tag": "Have"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "My family / A minha família",
-        "ru": "My name is Lara. I have a small family. My father is a doctor and my mother is a teacher. I have one brother. His name is Tom. Tom has a dog. The dog's name is Max. My parents' house is big, but my apartment is small. I don't have a car. My brother has a car. I like my family.",
-        "pt": "Meu nome é Lara. Tenho uma família pequena. Meu pai é médico e minha mãe é professora. Tenho um irmão. O nome dele é Tom. Tom tem um cachorro. O nome do cachorro é Max. A casa dos meus pais é grande, mas meu apartamento é pequeno. Eu não tenho carro. Meu irmão tem carro. Eu gosto da minha família.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "What does Lara's father do?",
-            "resposta": "He is a doctor."
+            "ru": "Whose phone is this on the table? — It's mine!",
+            "translit": "",
+            "pt": "De quem é este celular na mesa? — É meu!",
+            "en": "",
+            "audio": "Whose phone is this on the table? — It's mine!"
           },
           {
-            "pergunta": "Who is Tom?",
-            "resposta": "Lara's brother."
+            "ru": "My laptop battery is dead. Can I use yours for a minute?",
+            "translit": "",
+            "pt": "A bateria do meu notebook acabou. Posso usar o seu por um minuto?",
+            "en": "",
+            "audio": "My laptop battery is dead. Can I use yours for a minute?"
           },
           {
-            "pergunta": "What is the dog's name?",
-            "resposta": "Max."
+            "ru": "Emma is in her office with her new assistant.",
+            "translit": "",
+            "pt": "A Emma está no escritório dela com o novo assistente dela.",
+            "en": "",
+            "audio": "Emma is in her office with her new assistant."
           },
           {
-            "pergunta": "Does Lara have a car?",
-            "resposta": "No, she doesn't."
+            "ru": "What time is today's meeting with David's team?",
+            "translit": "",
+            "pt": "A que horas é a reunião de hoje com a equipe do David?",
+            "en": "",
+            "audio": "What time is today's meeting with David's team?"
+          },
+          {
+            "ru": "My parents' house is in a quiet old neighborhood.",
+            "translit": "",
+            "pt": "A casa dos meus pais fica em um bairro antigo e tranquilo.",
+            "en": "",
+            "audio": "My parents' house is in a quiet old neighborhood."
+          },
+          {
+            "ru": "We have two important presentations this afternoon.",
+            "translit": "",
+            "pt": "Temos duas apresentações importantes hoje à tarde.",
+            "en": "",
+            "audio": "We have two important presentations this afternoon."
+          },
+          {
+            "ru": "He's a very good friend of mine from college.",
+            "translit": "",
+            "pt": "Ele é um grande amigo meu da faculdade.",
+            "en": "",
+            "audio": "He's a very good friend of mine from college."
+          },
+          {
+            "ru": "The company is launching its new product next month.",
+            "translit": "",
+            "pt": "A empresa vai lançar o novo produto dela no mês que vem.",
+            "en": "",
+            "audio": "The company is launching its new product next month."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Sarah is talking to ___ husband on her phone.",
+            "opcoes": [
+              "his",
+              "her"
+            ],
+            "gabarito": "her",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Sarah is talking to her husband on ___ phone.",
+            "opcoes": [
+              "her",
+              "hers"
+            ],
+            "gabarito": "her",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-101b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— ___ keys are these? — They aren't mine; I think they're Lucas's.",
+            "opcoes": [
+              "Who's",
+              "Whose"
+            ],
+            "gabarito": "Whose",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Whose keys are these? — They aren't ___; I think they're Lucas's.",
+            "opcoes": [
+              "my",
+              "mine"
+            ],
+            "gabarito": "mine",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-102b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "This is ___ house; my mother and father love this street.",
+            "opcoes": [
+              "my parents'",
+              "my parent's"
+            ],
+            "gabarito": "my parents'",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "We have three ___ in our team.",
+            "opcoes": [
+              "news engineers",
+              "new engineers"
+            ],
+            "gabarito": "new engineers",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Toronto is famous for ___ winter, and it's a great city.",
+            "opcoes": [
+              "its",
+              "it's"
+            ],
+            "gabarito": "its",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Toronto is famous for its winter, and ___ a great city.",
+            "opcoes": [
+              "its",
+              "it's"
+            ],
+            "gabarito": "its",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-105b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where is ___ report? I need it for the meeting.",
+            "opcoes": [
+              "the report of today",
+              "today's report"
+            ],
+            "gabarito": "today's report",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Lucas is ___ from Brazil.",
+            "opcoes": [
+              "a friend of me",
+              "a friend of mine"
+            ],
+            "gabarito": "a friend of mine",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Where is ___?",
+            "opcoes": [
+              "the door of the kitchen",
+              "the kitchen door"
+            ],
+            "gabarito": "the kitchen door",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-108a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My sister loves ___ job, and her husband works at the same bank.",
+            "respostaEsperada": "her",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My sister loves her job, and ___ husband works at the same bank.",
+            "respostaEsperada": "her",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "David forgot ___ umbrella, so I gave him mine.",
+            "respostaEsperada": "his",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "David forgot his umbrella, so I gave him ___ (o meu).",
+            "respostaEsperada": "mine",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ jacket is that on the chair? — It's Emma's.",
+            "respostaEsperada": "Whose",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Whose jacket is that on the chair? — It's ___ (da Emma, com 's).",
+            "respostaEsperada": "Emma's",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-203b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We are in ___ meeting room. Where are the other teams? Are they in theirs?",
+            "respostaEsperada": "our",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We are in our meeting room. Where are the other teams? Are they in ___ (nas delas)?",
+            "respostaEsperada": "theirs",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-204b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "This is a photo of my two brothers and ___ wives.",
+            "respostaEsperada": "their",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The company is expanding ___ operations in Latin America.",
+            "respostaEsperada": "its",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "My coffee is cold. How is ___ (o seu)?",
+            "respostaEsperada": "yours",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Have you seen ___ (o relatório de ontem)?",
+            "respostaEsperada": "yesterday's report",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-007-L-208a"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 5 frases sobre a sua família com «have/has», um possessivo e um 's."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Diga em inglês: «a casa dos meus pais», «o cachorro da Ana», «a esposa dele»."
       }
     ]

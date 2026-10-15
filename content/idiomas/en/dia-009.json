@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você diz as horas de dois jeitos (digital e tradicional com past e to), fala dias da semana, meses e datas usando números ordinais (May 14th), aplica sem hesitar o funil de tempo (in, on, at e quando não usar preposição), e distingue ao ouvido e na fala os números de 13 a 19 dos de 30 a 90, sem confundir thirteen (13) com thirty (30)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Remarcando uma reunião e reservando o voo",
+        "contexto": "Marina liga para a recepção de uma clínica odontológica em Boston e depois confere sua passagem com o colega Kevin.",
+        "linhas": [
+          {
+            "personagem": "Receptionist",
+            "ru": "— Good afternoon, Smile Dental Clinic. How can I help you?",
+            "pt": "— Boa tarde, Clínica Smile Dental. Como posso ajudar?",
+            "audio": "Good afternoon, Smile Dental Clinic. How can I help you?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Hi! I have an appointment with Dr. Miller on Wednesday, October 14th, at a quarter past three, but I need to reschedule it.",
+            "pt": "— Oi! Tenho uma consulta com o Dr. Miller na quarta-feira, 14 de outubro, às três e quinze, mas preciso remarcar.",
+            "audio": "Hi! I have an appointment with Dr. Miller on Wednesday, October 14th, at a quarter past three, but I need to reschedule it."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Let me check the calendar. Is Friday, October 16th good for you? We have an opening at ten thirty in the morning, or at a quarter to five in the afternoon.",
+            "pt": "— Deixe-me checar a agenda. Sexta-feira, 16 de outubro, fica bom para você? Temos um horário vago às dez e meia da manhã, ou às quinze para as cinco da tarde.",
+            "audio": "Let me check the calendar. Is Friday, October 16th good for you? We have an opening at ten thirty in the morning, or at a quarter to five in the afternoon."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— A quarter to five on Friday works great for me!",
+            "pt": "— Quinze para as cinco na sexta funciona muito bem para mim!",
+            "audio": "A quarter to five on Friday works great for me!"
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Perfect. You're all set for Friday, October 16th, at four forty-five p.m.",
+            "pt": "— Perfeito. Tudo confirmado para sexta-feira, 16 de outubro, às 16h45.",
+            "audio": "Perfect. You're all set for Friday, October 16th, at four forty-five p.m."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Thank you! Bye! … Kevin, when is our conference in Chicago? Is it in November?",
+            "pt": "— Obrigada! Tchau! … Kevin, quando é a nossa conferência em Chicago? É em novembro?",
+            "audio": "Thank you! Bye! … Kevin, when is our conference in Chicago? Is it in November?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Yes! It starts on Monday, November 2nd. Our flight leaves at seven fifteen a.m., from Gate 13.",
+            "pt": "— Sim! Começa na segunda-feira, 2 de novembro. Nosso voo sai às 7h15 da manhã, do Portão 13.",
+            "audio": "Yes! It starts on Monday, November 2nd. Our flight leaves at seven fifteen a.m., from Gate 13."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Wait — Gate 13 or Gate 30?",
+            "pt": "— Espere — Portão 13 ou Portão 30?",
+            "audio": "Wait — Gate 13 or Gate 30?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Thirteen: one-three! And the hotel is $180 a night, so for three nights it's $540.",
+            "pt": "— Treze: um-três! E o hotel custa 180 dólares por noite, então por três noites dá 540 dólares.",
+            "audio": "Thirteen: one-three! And the hotel is $180 a night, so for three nights it's $540."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O Funil de Tempo (IN → ON → AT). É a mesma lógica geométrica do Capítulo 4: PASSO 2: IN (Períodos longos): meses (in October), estações (in summer), anos (in 1998, in 2026), décadas/séculos (in the 90s) e 3 partes do dia (in the morning, in the afternoon, in the evening). PASSO 3: ON (1 dia específico ou data com dia): dias da semana (on Monday, on Fridays), datas completas (on October 14th, on my birthday, on Christmas Day) e dia + parte do dia (on Friday morning). PASSO 4: AT (Hora exata no relógio e pontos curtos): todas as horas (at 3 p.m., at 10:30, at noon, at midnight) e a exceção at night (“à noite”, na madrugada). PASSO 5: Datas exigem número ordinal (1st, 2nd, 3rd, 4th…) e preposição on. Em português só o dia 1º é ordinal (“primeiro de maio, dois de maio”). Em inglês, todos os dias do mês são ordinais: May first (1st), May second (2nd), May third (3rd), May fourth (4th), May fourteenth (14th). PASSO 6: Não se usa preposição antes de this, next, last, every, today, tomorrow, yesterday. Diga I have a call this afternoon, See you next Friday, I work every day (não coloque in, on ou at antes dessas palavras!).",
+        "comparacao": "Em português, dizemos “na segunda”, “em outubro”, “às três”, escrevemos datas na ordem dia/mês/ano (02/11/2026 = 2 de novembro), dizemos “dia dois de novembro” com número cardinal, e usamos ponto para milhar (1.500) e vírgula para centavos (12,50). Veja as quatro armadilhas que isso cria em inglês:",
+        "tabela": [
+          {
+            "portugues": "A reunião é na segunda às 9h.",
+            "ingles": "The meeting is on Monday at 9 a.m.",
+            "evite": "in Monday in 9 a.m."
+          },
+          {
+            "portugues": "Nasci em 14 de maio de 1995.",
+            "ingles": "I was born on May 14th, 1995.",
+            "evite": "in May 14 of 1995"
+          },
+          {
+            "portugues": "03/04 nos EUA vs. no Brasil.",
+            "ingles": "Nos EUA, 03/04 = March 4th (mês/dia!).",
+            "evite": "Ler 03/04 americano achando que é 3 de abril."
+          },
+          {
+            "portugues": "Te vejo na próxima semana.",
+            "ingles": "See you next week. (sem preposição!)",
+            "evite": "See you in the next week."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 6,
+        "min": 5,
         "itens": [
           {
             "ru": "Nice to meet you",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 10,
+        "min": 7,
         "titulo": "Apresentar-se e apresentar alguém; os possessivos",
         "explicacao": "PASSO 1: para se apresentar: «I'm Anna» ou «My name is Anna». PASSO 2: para apresentar outra pessoa: «This is my friend Tom.» (use «this is» para uma pessoa; no plural, «these are»). PASSO 3: «How are you?» é uma saudação, não uma pergunta médica. A resposta normal é curta: «I'm fine, thanks. And you?». PASSO 4: os possessivos ficam ANTES do substantivo e não têm artigo antes: my, your, his, her, its, our, their. PASSO 5: a escolha entre «his» e «her» depende de QUEM é o dono, não da coisa possuída: «his book» (o livro dele) e «her book» (o livro dela). Em português, «seu livro» pode ser de ele, ela ou você; em inglês isso nunca fica ambíguo.",
         "comparacao": "em português o possessivo concorda com a coisa («minha casa», «meu carro») e leva artigo («a minha casa»). Em inglês, my, your, his, her, our e their não mudam com a coisa e vêm sem artigo: my house, my car.",
@@ -144,51 +241,13 @@
         "tag": "Pronomes"
       },
       {
-        "tipo": "dialogo",
-        "min": 5,
-        "titulo": "This is my friend / Este é meu amigo",
-        "contexto": "Lucy apresenta Tom a Mia.",
-        "linhas": [
-          {
-            "personagem": "Lucy",
-            "ru": "— Mia, this is my friend Tom. Tom, this is Mia.",
-            "pt": "— Mia, este é meu amigo Tom. Tom, esta é a Mia.",
-            "audio": "Mia, this is my friend Tom. Tom, this is Mia."
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— Hi, Mia. Nice to meet you.",
-            "pt": "— Oi, Mia. Prazer em conhecê-la.",
-            "audio": "Hi, Mia. Nice to meet you."
-          },
-          {
-            "personagem": "Mia",
-            "ru": "— Nice to meet you, too. How are you?",
-            "pt": "— Prazer também. Como você está?",
-            "audio": "Nice to meet you, too. How are you?"
-          },
-          {
-            "personagem": "Tom",
-            "ru": "— I'm fine, thanks. And you?",
-            "pt": "— Estou bem, obrigado. E você?",
-            "audio": "I'm fine, thanks. And you?"
-          },
-          {
-            "personagem": "Mia",
-            "ru": "— I'm fine, thank you.",
-            "pt": "— Estou bem, obrigada.",
-            "audio": "I'm fine, thank you."
-          }
-        ]
-      },
-      {
         "tipo": "producao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Apresente em voz alta um amigo (real ou inventado): «This is my friend… His/Her name is… He/She is from…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Responda em voz alta: What is your name? Where are you from? Are you tired?"
       }
     ]

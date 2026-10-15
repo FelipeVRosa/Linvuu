@@ -20,63 +20,6 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 8,
-        "titulo": "Advérbios de frequência",
-        "explicacao": "PASSO 1: os advérbios dizem com que frequência algo acontece: always (sempre), usually (geralmente), often (frequentemente), sometimes (às vezes), never (nunca). PASSO 2: eles ficam ANTES do verbo principal: «I always eat breakfast», «She never drinks coffee». PASSO 3: mas ficam DEPOIS do verbo «to be»: «He is always late», «We are never tired». PASSO 4: «never» já é negativo; não use outro «not»: «I never work on Sundays», nunca «I don't never work».",
-        "comparacao": "em português o advérbio é flexível («sempre como…» ou «como sempre…»). Em inglês, a posição é bem mais fixa.",
-        "tabela": [
-          {
-            "adverbio": "always",
-            "pronuncia": "ólueiz",
-            "exemplo": "I always eat breakfast.",
-            "pt": "Eu sempre tomo café da manhã."
-          },
-          {
-            "adverbio": "usually",
-            "pronuncia": "iúzhuali",
-            "exemplo": "She usually works at home.",
-            "pt": "Ela geralmente trabalha em casa."
-          },
-          {
-            "adverbio": "often",
-            "pronuncia": "ófen",
-            "exemplo": "We often watch TV.",
-            "pt": "Nós frequentemente assistimos TV."
-          },
-          {
-            "adverbio": "sometimes",
-            "pronuncia": "sâmtaimz",
-            "exemplo": "He sometimes drinks tea.",
-            "pt": "Ele às vezes bebe chá."
-          },
-          {
-            "adverbio": "never",
-            "pronuncia": "néver",
-            "exemplo": "They never eat meat.",
-            "pt": "Eles nunca comem carne."
-          }
-        ],
-        "erros": [
-          {
-            "errado": "I eat always breakfast.",
-            "certo": "I always eat breakfast.",
-            "motivo": "O advérbio vem antes do verbo principal."
-          },
-          {
-            "errado": "He always is late.",
-            "certo": "He is always late.",
-            "motivo": "Com «to be», o advérbio vem depois."
-          },
-          {
-            "errado": "I don't never work on Sundays.",
-            "certo": "I never work on Sundays.",
-            "motivo": "«never» já nega; não acrescente «don't»."
-          }
-        ],
-        "tag": "Advérbios"
-      },
-      {
         "tipo": "exercicios",
         "min": 12,
         "itens": [
@@ -227,14 +170,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale por 1 minuto sobre a sua rotina, com pelo menos 3 advérbios de frequência. Depois faça duas perguntas com «do» ou «does» a alguém."
+        "tipo": "exercicios",
+        "min": 10,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Conte quatro coisas da sua rotina de segunda a sexta usando I usually…, I always…, I don't… e I never….",
+            "respostaEsperada": "On weekdays, I usually wake up at six thirty, I always drink black coffee, I don't watch TV in the morning, and I never work after seven p.m.",
+            "id": "en-004-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte quatro coisas sobre a rotina de uma pessoa próxima (my husband, my wife, my sister, my boss) usando a 3ª pessoa (works, has, studies, doesn't…).",
+            "respostaEsperada": "My wife works at a tech company, she has a lot of meetings, she studies French twice a week, and she doesn't work on Saturdays.",
+            "id": "en-004-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três perguntas com What time, Where e How often para conhecer a rotina de um colega novo.",
+            "respostaEsperada": "What time do you usually finish work? Where do you have lunch? How often do you work from home?",
+            "id": "en-004-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga quantas vezes por semana ou por mês você faz duas atividades usando once a week, twice a week ou three times a month.",
+            "respostaEsperada": "I go to the gym three times a week, and I visit my parents twice a month.",
+            "id": "en-004-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Does your boss lives in São Paulo or he lives in Rio?",
+            "respostaEsperada": "Does your boss live in São Paulo, or does he live in Rio?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My sister don't likes to work on weekends.",
+            "respostaEsperada": "My sister doesn't like to work on weekends.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She have a new car, and she drive to work every day.",
+            "respostaEsperada": "She has a new car, and she drives to work every day.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I drink always a cup of coffee when I arrive at the office.",
+            "respostaEsperada": "I always drink a cup of coffee when I arrive at the office.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Where you work, and what time you start?",
+            "respostaEsperada": "Where do you work, and what time do you start?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I don't never check my work emails on Sundays.",
+            "respostaEsperada": "I never check my work emails on Sundays.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-004-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He doesn't have time for lunch on Mondays, so he usually eats a sandwich at his desk.",
+            "respostaEsperada": "OK",
+            "id": "en-004-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais comum no Present Simple tem duas faces: esquecer o -s na afirmativa de he, she, it (dizendo She work ou He have) e duplicar o -s na pergunta ou na negativa (dizendo Does she works? ou He doesn't has). Lembre-se da regra da gangorra: quando does ou doesn't entram na frase, o -s do verbo principal desaparece! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "She work at a bank. / He have a car.",
+            "certo": "She works at a bank. / He has a car.",
+            "motivo": "Na afirmativa, he, she, it exigem -s (e have vira has)."
+          },
+          {
+            "errado": "Does she works here?",
+            "certo": "Does she work here?",
+            "motivo": "O auxiliar Does já carrega o -s; o verbo principal fica simples."
+          },
+          {
+            "errado": "He don't like tea. / He doesn't likes tea.",
+            "certo": "He doesn't like tea.",
+            "motivo": "Com he, she, it usa-se doesn't + verbo simples sem -s."
+          },
+          {
+            "errado": "You work here? / Where you live?",
+            "certo": "Do you work here? / Where do you live?",
+            "motivo": "Perguntas no presente exigem o auxiliar do ou does antes do sujeito."
+          },
+          {
+            "errado": "I drink always coffee.",
+            "certo": "I always drink coffee.",
+            "motivo": "Advérbios curtos de frequência vêm antes do verbo principal."
+          },
+          {
+            "errado": "I don't never eat meat.",
+            "certo": "I never eat meat.",
+            "motivo": "Never já é negativo; o inglês padrão não aceita dupla negação."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Diga a negativa e a pergunta de: «She works in a bank.»"
+        "min": 3,
+        "enunciado": "Retorno. 1. Do Capítulo 4. Como você pergunta “Tem uma estação de metrô perto daqui?” e diz “Tem dois cafés nesta rua, em frente ao banco”? 2. Do Capítulo 3. Complete: Marina loves ____ (dela) job, and ____ (do irmão dela) office is on the fifth floor. 3. Do Capítulo 1 e 5. Qual é a diferença de estrutura entre Are you tired? e Do you work here?? Por que a primeira não usa do?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Falar da rotina de uma 3ª pessoa (he, she, it) acertando works, studies, watches, has. · Fazer perguntas com Do / Does e negar com don't / doesn't deixando o verbo principal na forma simples. Usar always, usually, never e once / twice a week na posição natural da frase."
       }
     ]
   },

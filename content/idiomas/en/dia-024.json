@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -199,14 +199,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Descreva em 1 minuto a sua casa ideal: cômodos, móveis e onde cada coisa fica."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva a sua rua ou o seu bairro usando duas frases afirmativas (There's… / There are…) e uma negativa (There isn't… / There aren't any…).",
+            "respostaEsperada": "On my street, there's a great bakery and there are two pharmacies, but there isn't a subway station.",
+            "id": "en-006-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga em que cidade você mora (in), em que rua (on) e em qual andar (on), e onde você está neste exato momento (at home / at work).",
+            "respostaEsperada": "I live in São Paulo, on Paulista Avenue, on the eighth floor, and I'm at home right now.",
+            "id": "en-006-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique onde ficam três objetos na sua sala ou mesa usando on, in, next to e between.",
+            "respostaEsperada": "My laptop is on the desk, between my monitor and my coffee mug, and my keys are in my backpack next to the chair.",
+            "id": "en-006-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Dê direções de duas frases para um turista ir da porta do seu prédio até uma farmácia ou estação próxima (Go straight ahead… / Turn… / It's on your…).",
+            "respostaEsperada": "Go straight ahead for two blocks and turn right at the traffic light. The pharmacy is on your left, right across from the bank.",
+            "id": "en-006-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Has a good restaurant near the hotel?",
+            "respostaEsperada": "Is there a good restaurant near the hotel? (ou close to the hotel). “Tem” de existência pede Is there, nunca Has.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: In my street have many trees and two bakeries.",
+            "respostaEsperada": "On my street, there are many trees and two bakeries.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My office is in the third floor, in Main Street.",
+            "respostaEsperada": "My office is on the third floor, on Main Street.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I'm in the bus right now, looking at the map in my phone.",
+            "respostaEsperada": "I'm on the bus right now, looking at the map on my phone.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Cross the avenue: the bank is in front of the subway station!",
+            "respostaEsperada": "Cross the avenue: the bank is across from the subway station!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Don't have any free chairs in the meeting room.",
+            "respostaEsperada": "There aren't any free chairs in the meeting room.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-006-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: There's a pharmacy on the corner, right next to the bank.",
+            "respostaEsperada": "OK",
+            "id": "en-006-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente deste capítulo é começar frases em inglês com Has… ou Have… para dizer “Tem / Existem” (como em In my city has many parks). Em inglês, um lugar como In my city não é sujeito de have: use sempre In my city, there are many parks (ou transforme a cidade em sujeito sem in: My city has many parks). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "Has a bank near here?",
+            "certo": "Is there a bank near here?",
+            "motivo": "Existência (“Tem/Há”) usa There is / There are, nunca have / has."
+          },
+          {
+            "errado": "In my street has two cafés.",
+            "certo": "There are two cafés on my street.",
+            "motivo": "There are concorda com o plural (two cafés), e rua usa on."
+          },
+          {
+            "errado": "in the third floor / in the bus",
+            "certo": "on the third floor / on the bus",
+            "motivo": "Andares de prédio e transportes coletivos exigem on."
+          },
+          {
+            "errado": "in my phone / in Instagram",
+            "certo": "on my phone / on Instagram",
+            "motivo": "Telas, sites, redes sociais e aplicativos exigem sempre on."
+          },
+          {
+            "errado": "There is two cafés on this street.",
+            "certo": "There are two cafés on this street.",
+            "motivo": "O verbo concorda com o que existe: dois cafés pedem There are."
+          },
+          {
+            "errado": "in front of (do outro lado da rua)",
+            "certo": "across from (UK: opposite)",
+            "motivo": "in front of é na mesma calçada; do outro lado da rua é across from."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Descreva em voz alta o cômodo onde você está: o que há, onde está cada coisa."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 3. Traduza sem cair na armadilha do português: “A Marina está na sala dela com o chefe novo dela; aquele notebook na mesa é dela.” 2. Do Capítulo 2. Qual é o plural de person, child, woman e box, e como eles ficam depois de There are? 3. Do Capítulo 1. Como você diz em inglês “Está frio aqui dentro” e “Tenho 30 anos”, sem usar have e sem esquecer o sujeito?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Dizer o que existe ou não existe no meu bairro, hotel ou trabalho usando There is / There are sem falar “have”. Acertar de primeira on the third floor, on the bus, on my phone, in Brazil e at home / at work. · Pedir e dar direções curtas na rua usando across from, next to, on the corner, go straight e turn left / right."
       }
     ]
   },

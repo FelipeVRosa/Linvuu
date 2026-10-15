@@ -20,8 +20,116 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você sabe quando o segundo verbo pede to + infinitivo (want to go, decide to stay) e quando pede - ing (enjoy working, finish reading, thanks for helping); expressa finalidade com to, sem “for study”; usa os pronomes de objeto (me, him, her, it, us, them) e os reflexivos (myself, by myself); e diz “quero que você faça…” com want you to…."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Organizando o treinamento da equipe",
+        "contexto": "Marina e Kevin conversam no fim da tarde sobre o novo curso de liderança e a divisão das tarefas da semana.",
+        "linhas": [
+          {
+            "personagem": "Kevin",
+            "ru": "— Marina, have you finished reviewing the slides for Friday's workshop?",
+            "pt": "— Marina, você já terminou de revisar os slides para o workshop de sexta?",
+            "audio": "Marina, have you finished reviewing the slides for Friday's workshop?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Almost! I really enjoy creating training material, so I decided to add a few practical exercises.",
+            "pt": "— Quase! Eu gosto muito de criar material de treinamento, então decidi acrescentar alguns exercícios práticos.",
+            "audio": "Almost! I really enjoy creating training material, so I decided to add a few practical exercises."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— That's a great idea. Do you want me to check the numbers on the last page for you?",
+            "pt": "— Ótima ideia. Você quer que eu confira os números da última página para você?",
+            "audio": "That's a great idea. Do you want me to check the numbers on the last page for you?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Yes, please! Thank you for helping me, Kevin. I'm tired of looking at spreadsheets all day!",
+            "pt": "— Sim, por favor! Obrigada por me ajudar, Kevin. Estou cansada de olhar planilhas o dia inteiro!",
+            "audio": "Yes, please! Thank you for helping me, Kevin. I'm tired of looking at spreadsheets all day!"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— No problem. Send them to me, and I'll look at them before leaving the office.",
+            "pt": "— Sem problema. Envie para mim, e eu dou uma olhada antes de sair do escritório.",
+            "audio": "No problem. Send them to me, and I'll look at them before leaving the office."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Awesome. By the way, is Sarah coming to Boston next month to take the leadership course?",
+            "pt": "— Perfeito. Aliás, a Sarah vem a Boston no mês que vem para fazer o curso de liderança?",
+            "audio": "Awesome. By the way, is Sarah coming to Boston next month to take the leadership course?"
+          },
+          {
+            "personagem": "Lucas (chegando à mesa)",
+            "ru": "— Yes, she is! I spoke to her ten minutes ago. She promised to book her flight tonight, and she asked us to reserve a hotel room for her.",
+            "pt": "— Vem, sim! Falei com ela dez minutos atrás. Ela prometeu reservar o voo hoje à noite e pediu para reservarmos um quarto de hotel para ela.",
+            "audio": "Yes, she is! I spoke to her ten minutes ago. She promised to book her flight tonight, and she asked us to reserve a hotel room for her."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Great! Let's not forget to send her the hotel link. Last time, David tried to book the hotel by himself and chose the wrong neighborhood!",
+            "pt": "— Ótimo! Não vamos esquecer de enviar o link do hotel para ela. Da última vez, o David tentou reservar o hotel sozinho e escolheu o bairro errado!",
+            "audio": "Great! Let's not forget to send her the hotel link. Last time, David tried to book the hotel by himself and chose the wrong neighborhood!"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Good idea. And before we go, don't forget to lock the cabinet where we keep the tablets.",
+            "pt": "— Boa ideia. E antes de irmos, não esqueça de trancar o armário onde guardamos os tablets.",
+            "audio": "Good idea. And before we go, don't forget to lock the cabinet where we keep the tablets."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Don't worry, I remember locking it ten minutes ago.",
+            "pt": "— Pode deixar, eu lembro de ter trancado há dez minutos.",
+            "audio": "Don't worry, I remember locking it ten minutes ago."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Depois de qualquer preposição, o verbo leva -ing. Depois de for, of, in, at, about, with, without, before, after, by, instead of, não se usa o infinitivo: Thanks for calling, good at speaking, thinking about moving, without saying goodbye, before going. Atenção a um caso traiçoeiro: em look forward to e be used to, o to é preposição, e por isso vem -ing: I'm looking forward to seeing you. PASSO 2: Finalidade (“para fazer algo”) é to + verbo, nunca for. Quando responde “com qual objetivo?” usando um verbo (“Vim aprender inglês / Liguei para avisar”), use apenas to + verbo: I came here to learn English, I called to tell you. Já for + substantivo é correto: I came here for a course. PASSO 3: Depois de want, need, would like, não use “that”: use pessoa + to + verbo. Para “Quero que você faça / Preciso que ela envie”, a fórmula é verbo + pessoa (me, you, him, her, us, them) + to + verbo: I want you to see this, She asked me to wait. Com ask e tell, é a mesma estrutura no dia a dia (Tell him to call me).",
+        "comparacao": "Em português, o segundo verbo vai para o infinitivo quase sempre: depois de qualquer verbo (“terminei de ler, gosto de viajar”), depois de qualquer preposição (“obrigado por ajudar, antes de sair”) e depois de “para” indicando finalidade (“vim para estudar”). Para pedir algo a alguém, usamos “que” + subjuntivo (“quero que você vá”), e, nas respostas, deixamos o verbo sem objeto (“— Gostou do filme? — Gostei!”). Em inglês isso gera cinco armadilhas:",
+        "tabela": [
+          {
+            "portugues": "Obrigado por me ajudar / Antes de sair.",
+            "ingles": "Thanks for helping me / Before leaving.",
+            "evite": "Thanks for help me / Before to leave."
+          },
+          {
+            "portugues": "Vim para o Canadá para estudar.",
+            "ingles": "I came to Canada to study.",
+            "evite": "for study / for to study"
+          },
+          {
+            "portugues": "Terminei de ler o relatório.",
+            "ingles": "I finished reading the report.",
+            "evite": "I finished to read the report."
+          },
+          {
+            "portugues": "Quero que você venha comigo.",
+            "ingles": "I want you to come with me.",
+            "evite": "I want that you come with me."
+          },
+          {
+            "portugues": "— Gostou da ideia? — Gostei!",
+            "ingles": "— Did you like the idea? — Yes, I liked it!",
+            "evite": "Yes, I liked! (falta o objeto it)"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "like",
@@ -83,7 +191,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Dizer o que você gosta",
         "explicacao": "PASSO 1: «like» (gostar), «love» (adorar), «hate» (detestar), «enjoy» (curtir). PASSO 2: com substantivo, sem preposição: «I like music.» (não «I like OF music»). PASSO 3: com he/she/it, acrescente -s: «She loves football.» PASSO 4: negativa com «don't/doesn't»: «I don't like horror movies.» PASSO 5: pergunta: «Do you like pizza?», «Does he like sports?» Resposta curta: «Yes, I do.» / «No, I don't.» PASSO 6: para generalizar, use o plural SEM artigo: «I like dogs.», «I love movies.»",
         "comparacao": "em português «gostar» pede «de» («gosto DE música»). Em inglês, não existe preposição: «I like music». E para generalizar usamos o plural sem artigo, não «os cachorros».",
@@ -130,12 +238,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 3 coisas que você ama, 2 que você detesta e 2 que não gosta."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte a sua rotina de um dia comum e diga uma coisa que você nunca faz."
       }
     ]

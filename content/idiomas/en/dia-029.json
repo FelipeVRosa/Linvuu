@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você identifica substantivos incontáveis que não têm plural nem recebem a / an (information, advice, news, furniture, luggage), escolhe entre some e any, entre much, many e a lot of, entre a little e a few, e faz perguntas com How much…? e How many…?."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Preparando um jantar no apartamento",
+        "contexto": "Marina e seu colega Kevin estão na cozinha do apartamento dela em Boston conferindo o que falta comprar no supermercado antes da chegada dos amigos.",
+        "linhas": [
+          {
+            "personagem": "Marina",
+            "ru": "— Kevin, let's check the fridge before we go to the supermarket. Do we have any cheese for the pasta?",
+            "pt": "— Kevin, vamos checar a geladeira antes de irmos ao supermercado. Temos queijo para o macarrão?",
+            "audio": "Kevin, let's check the fridge before we go to the supermarket. Do we have any cheese for the pasta?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Let me see… We have some parmesan, and there are a few tomatoes in the drawer, but we don't have any garlic or olive oil.",
+            "pt": "— Deixe-me ver… Temos um pouco de parmesão, e há alguns tomates na gaveta, mas não temos alho nem azeite de oliva.",
+            "audio": "Let me see… We have some parmesan, and there are a few tomatoes in the drawer, but we don't have any garlic or olive oil."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— OK, I'll put those on the list. How much pasta do we have in the cabinet?",
+            "pt": "— Certo, vou colocar esses na lista. Quanto macarrão temos no armário?",
+            "audio": "OK, I'll put those on the list. How much pasta do we have in the cabinet?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Only a little — maybe half a box. We need two more boxes because eight people are coming tonight.",
+            "pt": "— Só um pouco — talvez meia caixa. Precisamos de mais duas caixas porque oito pessoas vêm hoje à noite.",
+            "audio": "Only a little — maybe half a box. We need two more boxes because eight people are coming tonight."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Right! And how many bottles of wine should we buy?",
+            "pt": "— Verdade! E quantas garrafas de vinho devemos comprar?",
+            "audio": "Right! And how many bottles of wine should we buy?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Three or four bottles. By the way, do you have any news about Sarah's flight?",
+            "pt": "— Três ou quatro garrafas. Aliás, você tem alguma notícia sobre o voo da Sarah?",
+            "audio": "Three or four bottles. By the way, do you have any news about Sarah's flight?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Yes, I have good news! She just sent me a message. She had a lot of luggage, so she took a taxi from the airport.",
+            "pt": "— Sim, tenho uma boa notícia! Ela acabou de me mandar mensagem. Ela estava com muita bagagem, então pegou um táxi do aeroporto.",
+            "audio": "Yes, I have good news! She just sent me a message. She had a lot of luggage, so she took a taxi from the airport."
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Awesome. Oh, can you give me some advice on the dessert? Should I make a chocolate cake or buy some ice cream?",
+            "pt": "— Ótimo. Ah, você pode me dar um conselho sobre a sobremesa? Devo fazer um bolo de chocolate ou comprar sorvete?",
+            "audio": "Awesome. Oh, can you give me some advice on the dessert? Should I make a chocolate cake or buy some ice cream?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Here's a piece of advice: buy ice cream! We don't have much time before seven!",
+            "pt": "— Aqui vai um conselho: compre sorvete! Não temos muito tempo antes das sete!",
+            "audio": "Here's a piece of advice: buy ice cream! We don't have much time before seven!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Os incontáveis mais traiçoeiros (sem a / an e sem -s). Grave estas dez palavras que são contáveis em português, mas incontáveis e sempre singulares em inglês: PASSO 2: information (informação/informações) PASSO 3: advice (conselho/conselhos) PASSO 4: news (notícia/notícias — termina em s, mas é singular: The news is good!) PASSO 5: furniture (móvel/móveis) PASSO 6: luggage / baggage (bagagem/malas) PASSO 7: equipment (equipamento/equipamentos) PASSO 8: homework / housework (lição de casa / tarefas domésticas) PASSO 9: work (trabalho — para “um emprego”, diga a job!) PASSO 10: money (dinheiro — contamos dollars/reais, mas money é incontável: Money is…) PASSO 11: bread (pão — para “um pão”, diga a bread roll ou a loaf of bread!) PASSO 12: Como contar o que é incontável? Use um “recipiente” (a piece of…). Quando quiser especificar “um conselho”, “uma informação”, “um móvel” ou “dois pães”, coloque uma unidade contável na frente com of: PASSO 13: a piece of advice / two pieces of information / a piece of furniture PASSO 14: a glass of water / two cups of coffee / a bottle of wine / a slice of bread / a bar of chocolate",
+        "comparacao": "Em português, dizemos tranquilamente “Preciso de umas informações”, “Me dá um conselho”, “Tenho duas notícias boas”, “Comprei móveis novos”. Em inglês, essas palavras são incontáveis (uncountable) — tratadas como uma massa indivisível, exatamente como água ou arroz. Veja as quatro armadilhas que você precisa desarmar:",
+        "tabela": [
+          {
+            "portugues": "Preciso de algumas informações.",
+            "ingles": "I need some information.",
+            "evite": "I need some informations."
+          },
+          {
+            "portugues": "Posso te dar um conselho?",
+            "ingles": "Can I give you some advice (ou a piece of advice)?",
+            "evite": "Can I give you an advice?"
+          },
+          {
+            "portugues": "As notícias são ótimas!",
+            "ingles": "The news is great!",
+            "evite": "The news are great!"
+          },
+          {
+            "portugues": "Quantas pessoas vêm?",
+            "ingles": "How many people are coming?",
+            "evite": "How much people are coming?"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "bread",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Contáveis e incontáveis",
         "explicacao": "PASSO 1: CONTÁVEIS você conta um a um: «an egg, two eggs», «a sandwich, three sandwiches». Eles têm plural e aceitam «a/an». PASSO 2: INCONTÁVEIS são massa ou líquido, sem plural: water, milk, coffee, bread, rice, juice. Nunca «a water» nem «waters» para a coisa em si. PASSO 3: para contar um incontável, use uma medida: «a glass of water», «a cup of coffee», «a slice of bread», «a bowl of rice». PASSO 4: o verbo de incontável é singular: «The milk is cold.» PASSO 5: «a lot of» serve para os dois: «a lot of eggs», «a lot of water». PASSO 6: «much» e «many»: «many» com contáveis, «much» com incontáveis, mais em frases negativas e perguntas: «How many eggs?», «How much milk?»",
         "comparacao": "em português quase tudo tem plural («pães», «águas», «cafés»). Em inglês, «bread», «water», «milk» e «rice» não se contam: não existe «breads» para o alimento.",
@@ -135,12 +232,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Diga 4 coisas que você come ou bebe e quais são contáveis: «I eat eggs. I drink coffee.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale 4 frases sobre a sua família: o que cada pessoa tem e de quem são as coisas."
       }
     ]

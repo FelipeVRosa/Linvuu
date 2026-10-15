@@ -20,8 +20,33 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare os pares abaixo observando a distância (perto vs. longe) e a quantidade (um vs. vários): PASSO 2: Perguntas: PASSO 3: Quais duas palavras usamos para apenas 1 item (com is)? E quais duas usamos para 2 ou mais itens (com are)? PASSO 4: Na Cena, por que a palavra sandwich virou sandwiches (com -es), enquanto cookie virou apenas cookies (com -s)?",
+        "tabela": [
+          {
+            "c1": "This coffee is hot. (1 item perto)",
+            "c2": "That sandwich over there looks good. (1 item longe)"
+          },
+          {
+            "c1": "These cookies right here are fresh. (2+ itens perto)",
+            "c2": "Those tables outside are free. (2+ itens longe)"
+          },
+          {
+            "c1": "How much is this shirt?",
+            "c2": "How much is that jacket?"
+          },
+          {
+            "c1": "How much are these shoes?",
+            "c2": "How much are those glasses?"
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "man",
@@ -62,7 +87,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 15,
+        "min": 10,
         "titulo": "Como formar o plural",
         "explicacao": "PASSO 1: a regra geral é acrescentar -s: book → books, pen → pens. PASSO 2: depois de s, ss, sh, ch, x e z, acrescente -es: bus → buses, class → classes, watch → watches, box → boxes. Ouve-se uma sílaba extra (/ɪz/). PASSO 3: consoante + y vira -ies: city → cities, baby → babies. Vogal + y só ganha -s: day → days, key → keys. PASSO 4: muitas palavras em -f ou -fe viram -ves: knife → knives, leaf → leaves. PASSO 5: alguns plurais são irregulares e precisam ser decorados: man → men, woman → women, child → children, person → people, foot → feet, tooth → teeth. Alguns não mudam: fish, sheep. PASSO 6: «people» já é plural («people ARE», nunca «peoples» para pessoas). PASSO 7: o -s do plural soa /s/ depois de som sem voz (books), /z/ depois de som com voz (pens, keys) e /ɪz/ depois de s, sh, ch, x, z (boxes).",
         "comparacao": "em português o plural também é -s (e -es), mas o artigo, o adjetivo e o verbo concordam. Em inglês, o adjetivo não muda: «two big books».",
@@ -153,13 +178,20 @@
         "tag": "Substantivos"
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Em 30 segundos",
+        "explicacao": "PASSO 1: Tríade dos Pedidos: No balcão, peça com Can I get [item], please?; na mesa decidindo do cardápio, use I'll have [item], please; em qualquer situação polida, I'd like [item], please. PASSO 2: Demonstrativos (Apontar): PASSO 3: Perto (Aqui): Singular = this (dês) | Plural = these (dííz). PASSO 4: Longe (Lá / O que o outro disse): Singular = that (dét) | Plural = those (dôuz). PASSO 5: Plurais Regulares: Regra geral +s (cars, days); após -s, -sh, -ch, -x, -z, -o, adicione -es (boxes, buses, sandwiches, watches, potatoes); após consoante + y, troque por -ies (city → cities, company → companies); após -f / -fe, troque por -ves (wife → wives, shelf → shelves, knife → knives). PASSO 6: Os 7 Plurais Irregulares (Sem -s!):person → people, man → men, woman → women (atenção ao som: uú-man no singular e uí-min no plural!), child → children, foot → feet, tooth → teeth, mouse → mice.",
+        "tag": "Resumo"
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Diga o plural de: box, city, man, child, day, knife, person. Depois faça 3 frases com os plurais: «I have two boxes. I have three children. I like big cities.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva «a» ou «an» antes de cada palavra: ___ apple, ___ book, ___ umbrella, ___ hour, ___ university, ___ pen."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -200,13 +200,140 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte em 1 minuto a última roupa que você comprou ou quer comprar."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva as roupas que você está usando e diga um preço em dólares."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Monte uma lista do que há e do que não há na sua geladeira agora usando some, a few, a little e don't have any.",
+            "respostaEsperada": "In my fridge, there's some milk, a little butter, and a few eggs, but we don't have any cheese or vegetables.",
+            "id": "en-015-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva frases usando corretamente os incontáveis information, advice, news e furniture (com verbo no singular ou com a piece of).",
+            "respostaEsperada": "I need some information about the flight. My boss gave me a great piece of advice. The news is very good today, and the office furniture is new.",
+            "id": "en-015-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Faça uma pergunta com How much e uma com How many para organizar uma viagem ou um churrasco com amigos.",
+            "respostaEsperada": "How many people are coming to the barbecue, and how much meat should we buy?",
+            "id": "en-015-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Ofereça algo para um visitante beber usando Would you like some…? e escreva a resposta aceitando “só um pouquinho” (Just a little, please).",
+            "respostaEsperada": "Would you like some coffee? — Yes, just a little, please!",
+            "id": "en-015-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I need some informations about the hotel, and can you give me an advice?",
+            "respostaEsperada": "I need some information about the hotel, and can you give me some advice (ou a piece of advice)?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The news about the economy are very good today!",
+            "respostaEsperada": "The news about the economy is very good today!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: How much people are there in the meeting room?",
+            "respostaEsperada": "How many people are there in the meeting room?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We don't have some bread, so I'm going to buy two breads at the bakery.",
+            "respostaEsperada": "We don't have any bread, so I'm going to buy two bread rolls (ou two loaves of bread) at the bakery.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She has a few money and a little friends in this city.",
+            "respostaEsperada": "She has a little money and a few friends in this city.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My sister bought three new furnitures for her living room.",
+            "respostaEsperada": "My sister bought three new pieces of furniture for her living room.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-015-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: We don't have much time, so let's just ask a few questions.",
+            "respostaEsperada": "OK",
+            "id": "en-015-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais marcante de falantes de português, até mesmo em níveis mais altos, é colocar -s ou a / an em information, advice, news, furniture, luggage, bread, work. Grave este alerta mental: se você estiver prestes a dizer an advice, some informations ou two breads, freia na hora e troque por some advice / a piece of advice, some information e two bread rolls / two slices of bread! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "some informations / an information",
+            "certo": "some information / a piece of information",
+            "motivo": "Information é incontável em inglês."
+          },
+          {
+            "errado": "an advice / two advices",
+            "certo": "some advice / a piece of advice / two pieces of advice",
+            "motivo": "Advice é incontável; nunca leva an nem - s."
+          },
+          {
+            "errado": "The news are good.",
+            "certo": "The news is good.",
+            "motivo": "Apesar do -s final, news é incontável e singular (it is)."
+          },
+          {
+            "errado": "How much people / How much emails?",
+            "certo": "How many people / How many emails?",
+            "motivo": "Pessoas e e-mails são contáveis no plural e exigem How many."
+          },
+          {
+            "errado": "I don't have some money.",
+            "certo": "I don't have any money.",
+            "motivo": "Frases negativas com n't pedem any, nunca some."
+          },
+          {
+            "errado": "I bought two breads.",
+            "certo": "I bought two bread rolls / two loaves of bread.",
+            "motivo": "Bread é a massa incontável; conta-se por pãezinhos (rolls), fatias (slices) ou pães de forma (loaves)."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 6. Complete com in, on, at ou --: Our flight is ____ Friday, May 1st, ____ 8:45 a.m., so let's meet ____ tomorrow morning ____ 6:30! 2. Do Capítulo 5. Passe para a negativa e para a pergunta: She has a lot of work on Mondays. 3. Do Capítulo 4 e 7. Por que dizemos There is a lot of traffic today (com is), mas There are a lot of cars today (com are)?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Usar information, advice, news, furniture, luggage sem colocar -s ou a / an e conjugando o verbo no singular (is). · Escolher automaticamente entre How much e How many, e entre a little e a few. · Fazer perguntas e negativas com any e ofertas educadas com Would you like some…?."
       }
     ]
   },

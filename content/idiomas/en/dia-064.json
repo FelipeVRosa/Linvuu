@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -197,14 +197,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Descreva em 1 minuto o que acontece ao seu redor agora, pessoa por pessoa."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva três coisas que estão acontecendo ao seu redor neste exato momento (incluindo a sua posição com I'm sitting / standing e o que você está vestindo com I'm wearing).",
+            "respostaEsperada": "Right now, I'm sitting at my desk, I'm wearing a blue t-shirt and jeans, and I'm studying English.",
+            "id": "en-016-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas frases de contraste usando a estrutura: I usually [Present Simple], but today / this week I'm [Present Continuous].",
+            "respostaEsperada": "I usually drink coffee in the morning, but today I'm drinking tea. I usually work at the office, but this week I'm working from home.",
+            "id": "en-016-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase dizendo o que você está precisando (I need…) e querendo (I want…) agora mesmo, sem cair na armadilha do -ing.",
+            "respostaEsperada": "Right now, I need some help with this report, and I want a cup of water.",
+            "id": "en-016-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique a diferença entre as perguntas What do you do? e What are you doing? dando um exemplo de resposta para cada uma.",
+            "respostaEsperada": "What do you do? pergunta a profissão (I'm an engineer); What are you doing? pergunta a ação do momento (I'm reading a book).",
+            "id": "en-016-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I working from home today because it raining a lot outside.",
+            "respostaEsperada": "I'm working from home today because it's raining a lot outside.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Are you understanding this contract? I'm needing your help right now!",
+            "respostaEsperada": "Do you understand this contract? I need your help right now!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She is having two brothers, and she is wanting a new car.",
+            "respostaEsperada": "She has two brothers, and she wants a new car.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Look! They are makeing dinner and siting at the kitchen table.",
+            "respostaEsperada": "Look! They are making dinner and sitting at the kitchen table.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I usually am waking up at seven, but today I wake up at nine.",
+            "respostaEsperada": "I usually wake up at seven, but today I'm waking up at nine.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: What you are doing right now?",
+            "respostaEsperada": "What are you doing right now?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-016-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He usually drinks black coffee, but today he's having green tea.",
+            "respostaEsperada": "OK",
+            "id": "en-016-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro que mais entrega o falante brasileiro em reuniões em inglês é dizer I'm needing, I'm wanting ou Are you understanding?, traduzindo o nosso gerúndio afetivo (“Estou precisando, estou querendo, está entendendo?”). Grave na memória: need, want, understand, know, like, prefer não recebem -ing no uso do dia a dia! PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I working now. / She studying.",
+            "certo": "I'm working now. / She's studying.",
+            "motivo": "O -ing exige obrigatoriamente o verbo to be (am, is, are) antes dele."
+          },
+          {
+            "errado": "I'm needing some help right now.",
+            "certo": "I need some help right now.",
+            "motivo": "Need e want são verbos de estado e usam sempre o Present Simple."
+          },
+          {
+            "errado": "Are you understanding me?",
+            "certo": "Do you understand me? / Are you following me?",
+            "motivo": "Understand e know não aceitam -ing."
+          },
+          {
+            "errado": "She is having a new car.",
+            "certo": "She has a new car.",
+            "motivo": "Have no sentido de possuir é estado; só aceita -ing em atividades (having lunch)."
+          },
+          {
+            "errado": "makeing / siting / studing",
+            "certo": "making / sitting / studying",
+            "motivo": "Corta o -e (making), dobra em CVC (sitting) e mantém o -y antes de -ing (studying!)."
+          },
+          {
+            "errado": "What you are doing?",
+            "certo": "What are you doing?",
+            "motivo": "Na pergunta, am / is / are vêm antes do sujeito."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Diga o que você faz todo dia e o que você está fazendo agora."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 7. Complete: Can you give me ____ (alguns conselhos)? I don't have ____ (muito tempo), and I only have ____ (algumas perguntas). 2. Do Capítulo 6. Diga em inglês: “Nosso voo sai na quarta-feira, 14 de outubro, às quinze para as oito da manhã.” 3. Do Capítulo 5 e 8. Por que em study → studies o y vira -ies, mas em study → studying o y permanece intacto? (Dica: pense em como ficaria a palavra studiing.)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Dizer o que estou fazendo agora e o que é temporário nesta semana sem esquecer am / is / are antes do -ing. · Alternar na mesma frase entre minha rotina (I usually…) e o que estou fazendo hoje (but today I'm…-ing). · Expressar necessidades, desejos e compreensão no momento presente com I need, I want, I understand, I know (sem -ing)."
       }
     ]
   },

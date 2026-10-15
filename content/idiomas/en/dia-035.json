@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "well",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "Como dizer o quanto você sabe",
         "explicacao": "PASSO 1: «well» vem DEPOIS do verbo: «I can swim well.» PASSO 2: «very well» = muito bem. «a little» = um pouco: «I can speak a little English.» PASSO 3: «I can speak Portuguese and English.», sem artigo antes do idioma. PASSO 4: pergunta: «Can you speak Spanish?» → «Yes, a little.» PASSO 5: «good» é adjetivo (She is a good cook); «well» é advérbio (She cooks well). Não troque.",
         "comparacao": "em português «cozinha bem» e «é boa cozinheira» são duas ideias; o inglês as separa: «cooks well» (advérbio) e «a good cook» (adjetivo).",
@@ -98,38 +98,258 @@
         "tag": "Habilidade"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "What can Kate do? / O que a Kate sabe fazer?",
-        "ru": "Kate is my cousin. She can speak three languages: Portuguese, English and a little Spanish. She can play the guitar very well and she can sing. She can't drive, but she can ride a bike. Her brother Dan can cook and he can swim, but he can't dance. I can't play the guitar, but I can dance.",
-        "pt": "Kate é minha prima. Ela fala três idiomas: português, inglês e um pouco de espanhol. Toca violão muito bem e canta. Não sabe dirigir, mas anda de bicicleta. O irmão dela, Dan, cozinha e nada, mas não dança. Eu não toco violão, mas danço.",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "How many languages can Kate speak?",
-            "resposta": "Three."
+            "ru": "Could you send me that file when you have a minute, please?",
+            "translit": "",
+            "pt": "Você poderia me enviar aquele arquivo quando tiver um minuto, por favor?",
+            "en": "",
+            "audio": "Could you send me that file when you have a minute, please?"
           },
           {
-            "pergunta": "Can Kate drive?",
-            "resposta": "No, she can't."
+            "ru": "Can you speak Spanish, or just English and Portuguese?",
+            "translit": "",
+            "pt": "Você sabe falar espanhol, ou só inglês e português?",
+            "en": "",
+            "audio": "Can you speak Spanish, or just English and Portuguese?"
           },
           {
-            "pergunta": "What can Dan do?",
-            "resposta": "He can cook and swim."
+            "ru": "You should definitely try the local food — it's delicious!",
+            "translit": "",
+            "pt": "Você definitivamente deveria experimentar a comida local — é deliciosa!",
+            "en": "",
+            "audio": "You should definitely try the local food — it's delicious!"
           },
           {
-            "pergunta": "Can Dan dance?",
-            "resposta": "No, he can't."
+            "ru": "You look exhausted. You shouldn't work so late every night.",
+            "translit": "",
+            "pt": "Você parece exausto. Você não deveria trabalhar até tão tarde toda noite.",
+            "en": "",
+            "audio": "You look exhausted. You shouldn't work so late every night."
+          },
+          {
+            "ru": "We have to be at the airport two hours before the flight.",
+            "translit": "",
+            "pt": "Temos que estar no aeroporto duas horas antes do voo.",
+            "en": "",
+            "audio": "We have to be at the airport two hours before the flight."
+          },
+          {
+            "ru": "You don't have to print the ticket; you can show it on your phone.",
+            "translit": "",
+            "pt": "Você não precisa imprimir a passagem; pode mostrar no celular.",
+            "en": "",
+            "audio": "You don't have to print the ticket; you can show it on your phone."
+          },
+          {
+            "ru": "You mustn't share your password with anyone.",
+            "translit": "",
+            "pt": "Você não pode (é proibido) compartilhar sua senha com ninguém.",
+            "en": "",
+            "audio": "You mustn't share your password with anyone."
+          },
+          {
+            "ru": "Don't worry about the traffic — let's take the subway!",
+            "translit": "",
+            "pt": "Não se preocupe com o trânsito — vamos pegar o metrô!",
+            "en": "",
+            "audio": "Don't worry about the traffic — let's take the subway!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister ___ three languages, and she can drive very well.",
+            "opcoes": [
+              "can speak",
+              "cans speak"
+            ],
+            "gabarito": "can speak",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister can speak three languages, and she ___ very well.",
+            "opcoes": [
+              "can drive",
+              "knows drive"
+            ],
+            "gabarito": "can drive",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-101b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ you open the window, please? It's hot in here.",
+            "opcoes": [
+              "Do can",
+              "Could"
+            ],
+            "gabarito": "Could",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The museum is free on Sundays, so you ___ pay for the ticket!",
+            "opcoes": [
+              "mustn't",
+              "don't have to"
+            ],
+            "gabarito": "don't have to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "This is a hospital: you ___ smoke anywhere inside the building.",
+            "opcoes": [
+              "don't have to",
+              "mustn't"
+            ],
+            "gabarito": "mustn't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "What ___ I do to improve my pronunciation?",
+            "opcoes": [
+              "should",
+              "should to"
+            ],
+            "gabarito": "should",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Emma ___ wake up at five tomorrow for her flight.",
+            "opcoes": [
+              "have to",
+              "has to"
+            ],
+            "gabarito": "has to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— ___ I have to wear a suit to the conference? — No, you don't.",
+            "opcoes": [
+              "Do",
+              "Must"
+            ],
+            "gabarito": "Do",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Do I have to wear a suit to the conference? — No, you ___.",
+            "opcoes": [
+              "don't",
+              "mustn't"
+            ],
+            "gabarito": "don't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-107b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "It's raining a lot! ___ wait outside; let's go into that café!",
+            "opcoes": [
+              "Don't",
+              "Not"
+            ],
+            "gabarito": "Don't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-108a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "It's raining a lot! Don't wait outside; ___ go into that café!",
+            "opcoes": [
+              "let's",
+              "let's to"
+            ],
+            "gabarito": "let's",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-108b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ you repeat that more slowly, please? (pedido bem educado) I didn't catch the last word.",
+            "respostaEsperada": "Could",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "You ___ drink so much coffee at night if you want to sleep well!",
+            "respostaEsperada": "shouldn't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tomorrow is a holiday, so we ___ go to the office!",
+            "respostaEsperada": "don't have to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Passengers ___ fasten their seat belts during takeoff. (obrigação, sem usar have)",
+            "respostaEsperada": "must",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lucas ___ leave the meeting early today because he has a dentist appointment.",
+            "respostaEsperada": "has to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Keep this document secret: you ___ show it to our competitors! (proibição, com must)",
+            "respostaEsperada": "mustn't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ take a five-minute break and grab some coffee!",
+            "respostaEsperada": "Let's",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ forget to lock the door when you leave the apartment.",
+            "respostaEsperada": "Don't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-009-L-208a"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva 5 frases sobre o que você e uma pessoa que conhece sabem e não sabem fazer."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Complete: «She ___ swim. He ___ drive. ___ you cook?»"
       }
     ]

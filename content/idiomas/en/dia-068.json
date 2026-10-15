@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -200,14 +200,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto sobre o clima de amanhã e o seu plano para o dia."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Conte dois planos que você já decidiu para este mês ou este ano usando I'm going to… e um que você não vai fazer usando I'm not going to….",
+            "respostaEsperada": "This year I'm going to take an English exam and I'm going to save money, and I'm not going to buy a new car.",
+            "id": "en-017-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte dois compromissos com hora marcada na sua agenda para amanhã ou para o fim de semana usando o Present Continuous (I'm meeting / I'm having / I'm going…).",
+            "respostaEsperada": "Tomorrow morning I'm having a call with my boss at ten, and on Saturday night I'm having dinner with my friends at eight.",
+            "id": "en-017-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Responda a estas duas falas de um colega fazendo uma oferta espontânea na hora com I'll…: (a) “I forgot my wallet at home!” (b) “These boxes are too heavy for me!”.",
+            "respostaEsperada": "(a) Don't worry, I'll pay for your lunch! (b) Wait, I'll help you carry them!",
+            "id": "en-017-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas coisas que talvez você faça nas próximas férias usando I might….",
+            "respostaEsperada": "On my next vacation, I might travel to the south of Brazil, or I might visit Buenos Aires.",
+            "id": "en-017-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Tomorrow I travel to Rio for a conference.",
+            "respostaEsperada": "Tomorrow I'm traveling (ou I'm going to travel) to Rio for a conference.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: — The phone is ringing! — Wait, I get it!",
+            "respostaEsperada": "— The phone is ringing! — Wait, I'll get it!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I will to call you tomorrow morning, I promise.",
+            "respostaEsperada": "I'll call",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She going to buy a new laptop next week.",
+            "respostaEsperada": "She's going to buy a new laptop next week.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We might to be a little late for the meeting today.",
+            "respostaEsperada": "We might be a little late for the meeting today.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I think it doesn't rain tomorrow.",
+            "respostaEsperada": "I don't think it'll rain (ou it's going to rain) tomorrow.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-017-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Look at those dark clouds — it's going to rain in a few minutes!",
+            "respostaEsperada": "OK",
+            "id": "en-017-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os três erros mais comuns de brasileiros ao falar do futuro são usar o presente simples para planos pessoais (dizendo Tomorrow I go to the doctor), esquecer o verbo to be antes de going to (dizendo I going to travel) e colocar to depois de will ou might (dizendo I will to call you / It might to rain). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "Tomorrow I go to São Paulo.",
+            "certo": "Tomorrow I'm going to São Paulo.",
+            "motivo": "Planos pessoais futuros usam Present Continuous ou going to, nunca Present Simple."
+          },
+          {
+            "errado": "— I'm thirsty. — I bring you some water!",
+            "certo": "— I'll bring you some water!",
+            "motivo": "Decisões e ofertas feitas no momento da fala exigem I'll (will)."
+          },
+          {
+            "errado": "I will to send / It might to rain.",
+            "certo": "I'll send / It might rain.",
+            "motivo": "Will e might são modais e não aceitam to depois deles."
+          },
+          {
+            "errado": "She going to study tonight.",
+            "certo": "She's going to study tonight.",
+            "motivo": "A estrutura be going to exige sempre am / is / are antes de going."
+          },
+          {
+            "errado": "I think it doesn't rain tomorrow.",
+            "certo": "I don't think it'll rain tomorrow.",
+            "motivo": "Para o futuro, usamos will e a negativa vem em I don't think. (I think he won't come é compreendido, mas I don't think he'll come é a forma mais comum.)"
+          },
+          {
+            "errado": "in two days ago (para o futuro)",
+            "certo": "in two days (= daqui a 2 dias)",
+            "motivo": "in + tempo aponta para o futuro (“daqui a”); ago aponta só para o passado!"
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Descreva o clima de hoje e o que você vai fazer amanhã."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 12. Complete: This apartment is ____ (bigger / more big) than mine, but it isn't ____ (close enough / enough close) to the subway. 2. Do Capítulo 11 e 13. Compare passado e futuro: Yesterday I went to the bank, and tomorrow I ____ to the bank. / Last week she didn't work, and next week she ____ work. 3. Do Capítulo 6 e 13. Qual é a diferença de significado entre two days ago e in two days? Qual tempo verbal cada uma exige?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Falar dos meus planos e compromissos para o fim de semana usando I'm going to… e o Present Continuous sem usar o presente simples puro. · Reagir na hora oferecendo ajuda ou prometendo algo com I'll… e I won't…. · Expressar incerteza sobre o futuro com I might… sem colocar to depois."
       }
     ]
   },

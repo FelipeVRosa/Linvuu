@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "zero",
@@ -104,7 +104,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 13,
+        "min": 9,
         "titulo": "Números de 11 a 20 e a idade",
         "explicacao": "PASSO 1: de 13 a 19 os números terminam em «-teen», e a sílaba forte é a ÚLTIMA: thirTEEN, fourTEEN, fifTEEN. PASSO 2: os números das dezenas terminam em «-ty», e a sílaba forte é a PRIMEIRA: THIRty, FORty, FIFty. Esse é o erro de escuta mais comum: thirTEEN (13) × THIRty (30). PASSO 3: para a idade, o inglês usa «to be», não «ter»: «I am 20» ou «I am 20 years old». NUNCA «I have 20 years». PASSO 4: a pergunta é «How old are you?» (literalmente «quão velho você é?»).",
         "comparacao": "em português a idade usa «ter» («tenho 20 anos»); em inglês, o verbo é «to be» («I am 20»). «I have 20 years» é o erro típico do brasileiro.",
@@ -185,13 +185,356 @@
         "tag": "Números"
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Excuse me, what time is it? — It's a quarter to four.",
+            "translit": "",
+            "pt": "Com licença, que horas são? — São quinze para as quatro.",
+            "en": "",
+            "audio": "Excuse me, what time is it? — It's a quarter to four."
+          },
+          {
+            "ru": "What time does our flight leave tomorrow morning?",
+            "translit": "",
+            "pt": "A que horas o nosso voo sai amanhã de manhã?",
+            "en": "",
+            "audio": "What time does our flight leave tomorrow morning?"
+          },
+          {
+            "ru": "I have a doctor's appointment on Wednesday at ten thirty.",
+            "translit": "",
+            "pt": "Tenho uma consulta médica na quarta- feira às dez e meia.",
+            "en": "",
+            "audio": "I have a doctor's appointment on Wednesday at ten thirty."
+          },
+          {
+            "ru": "My birthday is on May 21st, and I was born in 1994.",
+            "translit": "",
+            "pt": "Meu aniversário é no dia 21 de maio, e eu nasci em 1994.",
+            "en": "",
+            "audio": "My birthday is on May 21st, and I was born in 1994."
+          },
+          {
+            "ru": "The office is open from Monday to Friday, from 9 a.m. to 6 p.m.",
+            "translit": "",
+            "pt": "O escritório abre de segunda a sexta, das 9h às 18h.",
+            "en": "",
+            "audio": "The office is open from Monday to Friday, from 9 a.m. to 6 p.m."
+          },
+          {
+            "ru": "Are you free this afternoon, or next Monday?",
+            "translit": "",
+            "pt": "Você está livre hoje à tarde, ou na próxima segunda-feira?",
+            "en": "",
+            "audio": "Are you free this afternoon, or next Monday?"
+          },
+          {
+            "ru": "The train leaves in fifteen minutes from Platform 14.",
+            "translit": "",
+            "pt": "O trem sai daqui a quinze minutos da Plataforma 14.",
+            "en": "",
+            "audio": "The train leaves in fifteen minutes from Platform 14."
+          },
+          {
+            "ru": "Wait — did you say fifteen dollars or fifty dollars?",
+            "translit": "",
+            "pt": "Espere — você disse quinze dólares ou cinquenta dólares?",
+            "en": "",
+            "audio": "Wait — did you say fifteen dollars or fifty dollars?"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Our presentation is ___ Monday at two thirty in the afternoon.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Our presentation is on Monday ___ two thirty in the afternoon.",
+            "opcoes": [
+              "at",
+              "on"
+            ],
+            "gabarito": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-101b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Our presentation is on Monday at two thirty ___ the afternoon.",
+            "opcoes": [
+              "in",
+              "at"
+            ],
+            "gabarito": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-101c"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister was born ___ July, on July 3rd, in 1998.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister was born in July, ___ July 3rd, in 1998.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-102b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My sister was born in July, on July 3rd, ___ 1998.",
+            "opcoes": [
+              "in",
+              "on"
+            ],
+            "gabarito": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-102c"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I usually read ___ night, and I never work [sem preposição] next Sunday.",
+            "opcoes": [
+              "in",
+              "at"
+            ],
+            "gabarito": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I usually read at night, and I never work ___ next Sunday.",
+            "opcoes": [
+              "on",
+              "[sem preposição]"
+            ],
+            "gabarito": "[sem preposição]",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-103b"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "It's 4:45 → It's a quarter ___ five.",
+            "opcoes": [
+              "past",
+              "to"
+            ],
+            "gabarito": "to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "It's 8:30 → It's half ___ eight.",
+            "opcoes": [
+              "past",
+              "to"
+            ],
+            "gabarito": "past",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-105a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "How do you spell the number 40? (fourty / forty)",
+            "respostaEsperada": "forty",
+            "id": "en-003-L-106"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "In the US, the date 05/12/2026 means ___.",
+            "opcoes": [
+              "May 12th",
+              "December 5th"
+            ],
+            "gabarito": "May 12th",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The meeting starts ___ ten minutes!",
+            "opcoes": [
+              "in",
+              "ago"
+            ],
+            "gabarito": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-108a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Are you busy ___ tomorrow morning? Let's have coffee at ten o'clock!",
+            "respostaEsperada": "--",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Are you busy -- tomorrow morning? Let's have coffee ___ ten o'clock!",
+            "respostaEsperada": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-201b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The conference is ___ November: it starts on November 1st and ends on November 4th.",
+            "respostaEsperada": "in",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The conference is in November: it starts ___ November 1st and ends on November 4th.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-202b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The conference is in November: it starts on November 1st and ends ___ November 4th.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-202c"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 2:15 de dois jeitos: It's ___ = It's a ___ ___ two.",
+            "respostaEsperada": "two fifteen, quarter past",
+            "id": "en-003-L-203"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 6:50 de dois jeitos: It's ___ = It's ten ___ ___.",
+            "respostaEsperada": "six fifty, to seven",
+            "id": "en-003-L-204"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva os ordinais por extenso: 1st = ___, 2nd = second, 3rd = third, 5th = fifth, 21st = twenty-first.",
+            "respostaEsperada": "first",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva os ordinais por extenso: 1st = first, 2nd = ___, 3rd = third, 5th = fifth, 21st = twenty-first.",
+            "respostaEsperada": "second",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-205b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva os ordinais por extenso: 1st = first, 2nd = second, 3rd = ___, 5th = fifth, 21st = twenty-first.",
+            "respostaEsperada": "third",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-205c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva os ordinais por extenso: 1st = first, 2nd = second, 3rd = third, 5th = ___, 21st = twenty-first.",
+            "respostaEsperada": "fifth",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-205d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Escreva os ordinais por extenso: 1st = first, 2nd = second, 3rd = third, 5th = fifth, 21st = ___.",
+            "respostaEsperada": "twenty-first",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-205e"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o ano por extenso: 1985 = ___; 2026 = ___.",
+            "respostaEsperada": "nineteen eighty-five; twenty twenty-six",
+            "id": "en-003-L-206"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We work ___ nine to six on weekdays, and we relax on Sundays.",
+            "respostaEsperada": "from",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We work from nine ___ six on weekdays, and we relax on Sundays.",
+            "respostaEsperada": "to",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-207b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We work from nine to six ___ weekdays, and we relax on Sundays.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-207c"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We work from nine to six on weekdays, and we relax ___ Sundays.",
+            "respostaEsperada": "on",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-207d"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look! Our flight is ___ Gate 18 (escreva por extenso: eighteen), not Gate 80 (eighty).",
+            "respostaEsperada": "at",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look! Our flight is at Gate 18 (escreva por extenso: ___), not Gate 80 (eighty).",
+            "respostaEsperada": "eighteen",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Look! Our flight is at Gate 18 (escreva por extenso: eighteen), not Gate 80 (___).",
+            "respostaEsperada": "eighty",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-003-L-208c"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte de 0 a 20 em voz alta, depois de trás para frente. Diga a sua idade e a de três pessoas conhecidas: «My mother is…, my friend is…»."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Diga os países da sessão anterior com a nacionalidade correspondente: Brazil, Brazilian; Spain, Spanish…"
       }
     ]

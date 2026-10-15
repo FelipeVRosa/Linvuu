@@ -20,8 +20,110 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você faz perguntas diretas com a preposição no fim (Who are you talking to?); diferencia perguntas de sujeito (Who called?) de perguntas de objeto (Who did you call?); faz perguntas indiretas educadas sem inverter a ordem (Could you tell me where the station is?); confirma informações com question tags (isn't it? / don't you?); e concorda com So do I e Neither do I."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Networking no intervalo da conferência",
+        "contexto": "Marina conversa com um executivo suíço, Oliver, durante o coffee break de um congresso internacional em Boston.",
+        "linhas": [
+          {
+            "personagem": "Oliver",
+            "ru": "— Excuse me, this seat isn't taken, is it?",
+            "pt": "— Com licença, este lugar não está ocupado, está?",
+            "audio": "Excuse me, this seat isn't taken, is it?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— No, it isn't. Please go ahead! Great event today, isn't it?",
+            "pt": "— Não, não está. Pode sentar! Ótimo evento hoje, não é?",
+            "audio": "No, it isn't. Please go ahead! Great event today, isn't it?"
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— Yes, it really is. I'm Oliver, by the way. Where do you come from?",
+            "pt": "— Sim, realmente. Sou o Oliver, aliás. De onde você vem?",
+            "audio": "Yes, it really is. I'm Oliver, by the way. Where do you come from?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I'm Marina. I'm from Brazil, but I live here in Boston now. Which company do you work for, Oliver?",
+            "pt": "— Sou a Marina. Sou do Brasil, mas moro aqui em Boston agora. Para qual empresa você trabalha, Oliver?",
+            "audio": "I'm Marina. I'm from Brazil, but I live here in Boston now. Which company do you work for, Oliver?"
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— I work for a medical tech company in Zurich. Who was that speaker talking to on stage right before the break?",
+            "pt": "— Trabalho para uma empresa de tecnologia médica em Zurique. Com quem aquele palestrante estava falando no palco, logo antes do intervalo?",
+            "audio": "I work for a medical tech company in Zurich. Who was that speaker talking to on stage right before the break?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— That was Dr. Chen. She leads the AI lab at MIT.",
+            "pt": "— Aquela era a Dra. Chen. Ela lidera o laboratório de IA no MIT.",
+            "audio": "That was Dr. Chen. She leads the AI lab at MIT."
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— Oh, really? Do you know what time her afternoon workshop starts?",
+            "pt": "— Ah, é mesmo? Você sabe a que horas começa o workshop dela à tarde?",
+            "audio": "Oh, really? Do you know what time her afternoon workshop starts?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Let me check the app… It starts at two thirty. By the way, could you tell me where the main auditorium is? I haven't been to that wing yet.",
+            "pt": "— Deixe-me ver no aplicativo… Começa às duas e meia. Aliás, você poderia me dizer onde fica o auditório principal? Ainda não fui àquela ala.",
+            "audio": "Let me check the app… It starts at two thirty. By the way, could you tell me where the main auditorium is? I haven't been to that wing yet."
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— Neither have I! Look, my colleague Anna is coming. Let's ask her. She knows who organized the schedule.",
+            "pt": "— Eu também não! Olha, minha colega Anna está vindo. Vamos perguntar para ela. Ela sabe quem organizou a programação.",
+            "audio": "Neither have I! Look, my colleague Anna is coming. Let's ask her. She knows who organized the schedule."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Pergunta indireta: depois de Could you tell me… / Do you know… / I wonder…, o resto volta à ordem de frase afirmativa. Numa pergunta direta, invertemos o verbo ou usamos do/does/did (Where is the station? / What time does it start?). Mas, quando há uma introdução educada na frente, a pergunta já foi feita na primeira metade. A segunda metade segue a ordem sujeito + verbo e não leva do / does / did: PASSO 2: Direta: Where is the station? → indireta: Could you tell me where the station is? (e não where is the station). PASSO 3: Direta: What time does the bank open? → indireta: Do you know what time the bank opens? (sem does, e com -s em opens). PASSO 4: O “né?” do inglês muda conforme o verbo da frase. Se a frase tem are, a tag usa aren't; se tem Present Simple, usa don't / doesn't; se tem Past Simple, usa didn't. Não existe um isn't it? universal. PASSO 5: Preposição no fim. A palavra interrogativa (Who, What, Where, Which) abre a pergunta e a preposição (from, to, for, with, about, at) fica no final, junto do verbo: Where are you from?, Who is this gift for?, What are you looking at?",
+        "comparacao": "Em português, a preposição abre a pergunta (“Com quem você está falando? Para qual empresa você trabalha?”); nas perguntas indiretas, a ordem das palavras não muda (“Você sabe onde está a Sarah?”); uma única expressão confirma tudo (“né? / não é?”); e “Eu também não” serve para qualquer frase negativa. Em inglês, isso gera cinco armadilhas:",
+        "tabela": [
+          {
+            "portugues": "Com quem você estava falando?",
+            "ingles": "Who were you talking to?",
+            "evite": "With who were you talking? / Who were you talking?"
+          },
+          {
+            "portugues": "Quem ligou para você?",
+            "ingles": "Who called you? (sujeito: sem did)",
+            "evite": "Who did call you?"
+          },
+          {
+            "portugues": "Você sabe onde está a Sarah?",
+            "ingles": "Do you know where Sarah is?",
+            "evite": "Do you know where is Sarah?"
+          },
+          {
+            "portugues": "Você trabalha aqui, não é?",
+            "ingles": "You work here, don't you?",
+            "evite": "You work here, isn't it?"
+          },
+          {
+            "portugues": "— Não gosto de frio. — Eu também!",
+            "ingles": "— I don't like cold weather. — Neither do I (ou Me neither)!",
+            "evite": "Me too! (Me too concorda com frases afirmativas)"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "depend on",
@@ -83,7 +185,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Verbos com preposição fixa",
         "explicacao": "PASSO 1: muitos verbos ingleses pedem uma preposição que nem sempre coincide com o português. PASSO 2: aprenda o par: «depend ON», «listen TO», «wait FOR», «look AT», «pay FOR», «believe IN», «talk ABOUT». PASSO 3: alguns verbos que em português levam preposição, em inglês NÃO levam: «ask something», «enter a room», «discuss a topic», «marry someone», «answer a question». PASSO 4: depois da preposição, use -ing: «I'm thinking about moving.», «Thanks for helping.» PASSO 5: «think of» (lembrar, ter uma ideia) × «think about» (refletir): «What do you think of it?» × «I'm thinking about it.» PASSO 6: não precisa decorar a lista inteira: aprenda os pares dentro de frases.",
         "comparacao": "em português «esperar» não pede preposição, «pagar» e «assistir» pedem outras. Em inglês, «wait FOR», «pay FOR», e «watch» (sem preposição). Aprender o par evita erros previsíveis.",
@@ -135,12 +237,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Faça 8 frases com os verbos desta sessão, cada um com a preposição certa."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale de hábitos que você quer mudar, usando stop, try e remember."
       }
     ]

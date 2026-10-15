@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -202,13 +202,140 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte em 1 minuto uma conversa recente com perguntas, ordens e pedidos no indireto."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Relate uma conversa curta, com perguntas, pedidos e ordens."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Conte duas coisas que um colega ou familiar disse a você ontem: uma usando He/She said (that)… e outra usando He/She told me (that)… (aplicando o passo para trás no verbo!).",
+            "respostaEsperada": "Yesterday my boss said that the meeting was canceled, and my wife told me that she would arrive home at seven.",
+            "id": "en-048-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Relate uma pergunta com Wh- e uma pergunta de Sim/Não (com if) que alguém fez para você recentemente (asked me where/what… / asked me if…).",
+            "respostaEsperada": "A colleague asked me where I had bought my backpack, and he asked me if I could send him the link.",
+            "id": "en-048-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Relate um pedido afirmativo e um pedido negativo que alguém fez a você usando asked / told me to… e asked / told me not to….",
+            "respostaEsperada": "My doctor told me to exercise three times a week, and he asked me not to drink coffee after 6 p.m.",
+            "id": "en-048-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase usando tell the truth e outra usando say goodbye.",
+            "respostaEsperada": "Always tell the truth, and don't forget to say goodbye before leaving!",
+            "id": "en-048-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She said me that she will travel to London next week.",
+            "respostaEsperada": "She told me",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: He told that he was very tired after the flight.",
+            "respostaEsperada": "He said",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My boss told to me to send the spreadsheet today.",
+            "respostaEsperada": "My boss told me to send the spreadsheet today.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The security guard asked me what was my name.",
+            "respostaEsperada": "The security guard asked me what my name was.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She asked me that I help her with the presentation.",
+            "respostaEsperada": "She asked me to help her with the presentation.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The teacher told us to don't use our phones during the test.",
+            "respostaEsperada": "The teacher told us not to use our phones during the test.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-048-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: He told me he had already spoken to the director about the budget.",
+            "respostaEsperada": "OK",
+            "id": "en-048-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os três erros mais comuns neste capítulo são: trocar say e tell ou colocar to depois de tell (She said me / He told that / He told to me), esquecer de recuar o verbo para o passado quando a frase começa com said / told (He said he will go em vez de He said he would go) e manter a ordem de pergunta direta depois de asked (He asked where was the bank em vez de He asked where the bank was). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "She said me that… / He told to me…",
+            "certo": "She told me that… / He said (that)…",
+            "motivo": "Tell exige pessoa direta sem to (told me); say não leva pessoa direta (said that)."
+          },
+          {
+            "errado": "He told that he was late.",
+            "certo": "He said (that) he was late. / He told us…",
+            "motivo": "Told pede uma pessoa antes de that: é preciso dizer a quem foi dito."
+          },
+          {
+            "errado": "She said she will call me.",
+            "certo": "She said she would call me.",
+            "motivo": "Após said / told no passado, will recua para would e can recua para could."
+          },
+          {
+            "errado": "He asked me where did I work.",
+            "certo": "He asked me where I worked.",
+            "motivo": "Perguntas relatadas têm ordem afirmativa (Sujeito + Verbo no passado, sem did)."
+          },
+          {
+            "errado": "She asked me that I wait.",
+            "certo": "She asked me to wait.",
+            "motivo": "Pedidos relatados usam asked/told + pessoa + to + verbo, e não that."
+          },
+          {
+            "errado": "He told me to don't worry.",
+            "certo": "He told me not to worry.",
+            "motivo": "Na negativa com infinitivo, a ordem padrão é not to + verbo."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 23 e 24. Una discurso indireto com voz passiva: “A Emma me disse que o contrato tinha sido assinado” (Emma told me that the contract had been signed). Agora faça o mesmo para: “O cliente disse que o pagamento seria enviado amanhã.” 2. Do Capítulo 22. Complete: If you had told me the truth yesterday, I ____ (not / be) angry! 3. Do Capítulo 20 e 24. Compare: Could you tell me where she is? (Cap. 20, presente) e He asked me where she was. (Cap. 24, passado). Qual regra de ordem de palavras as duas frases têm em comum?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Usar said (sem pessoa) e told me / told us (com pessoa e sem to) sem confundir os dois. · Relatar o que alguém disse recuando os verbos (was, would, could, had done). · Relatar perguntas com asked me if / where… na ordem afirmativa e pedidos com told / asked me (not) to…."
       }
     ]
   },

@@ -20,8 +20,42 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Descubra você mesmo",
+        "explicacao": "PASSO 1: Compare o termômetro de certeza no Presente e no Passado: PASSO 2: Perguntas: PASSO 3: Quando alguém diz I should have studied harder for the test, a pessoa estudou bastante ou não estudou o suficiente e agora está arrependida? PASSO 4: Quando alguém diz I shouldn't have drunk that third espresso last night!, a pessoa bebeu ou não bebeu o terceiro expresso?",
+        "tabela": [
+          {
+            "c1": "Quase certeza de que SIM (“Deve ser / Deve ter…”)",
+            "c2": "She must be at home; the lights are on.",
+            "c3": "She must have arrived home; her car is outside."
+          },
+          {
+            "c1": "Possibilidade (“Pode ser que…”)",
+            "c2": "He might / may / could be in traffic right now.",
+            "c3": "He might / may / could have missed the bus."
+          },
+          {
+            "c1": "Quase certeza de que NÃO (“Não pode ser / Impossível!”)",
+            "c2": "That can't be Lucas! He's in Brazil right now!",
+            "c3": "Lucas can't have sent this; his laptop is broken!"
+          },
+          {
+            "c1": "Arrependimento / Crítica (“Deveria / Não deveria ter feito”)",
+            "c2": "(No presente = conselho simples:You should take a taxi)",
+            "c3": "I should have taken a taxi! I shouldn't have said that!"
+          },
+          {
+            "c1": "Oportunidade não usada (“Poderia ter feito, mas não fez”)",
+            "c2": "(No presente = possibilidade: We could go by train)",
+            "c3": "You could have stayed at my house! Why did you pay for a hotel?"
+          }
+        ],
+        "tag": "Descubra"
+      },
+      {
         "tipo": "palavras",
-        "min": 6,
+        "min": 4,
         "itens": [
           {
             "ru": "must have",
@@ -69,7 +103,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Deduzir sobre o passado",
         "explicacao": "PASSO 1: use «modal + have + particípio» para deduzir o passado: «The lights are off. They must have gone to bed.» PASSO 2: «can't have» = quase impossível ter acontecido: «He can't have known. Nobody told him.» PASSO 3: «might/may/could have» = talvez tenha acontecido: «She might have forgotten.» PASSO 4: ação em andamento no passado: «must have been + -ing»: «They must have been sleeping.» PASSO 5: compare com a aula 42: «should have» é arrependimento; aqui o foco é a dedução. PASSO 6: a evidência vem primeiro: descreva o que você vê, e depois conclua.",
         "comparacao": "em português «deve ter saído» e «não pode ter sido» fazem o mesmo trabalho. Em inglês: «must have left», «can't have been».",
@@ -120,13 +154,20 @@
         "tag": "Dedução no passado"
       },
       {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Em 30 segundos",
+        "explicacao": "PASSO 1: Deduções sobre o Presente (Modal + be / verbo nu ou be + -ing): PASSO 2: must = Tenho quase certeza de que SIM (You've been driving all day — you must be tired! / She must be working late). PASSO 3: might / may / could = TALVEZ (possibilidade: I don't know where Sarah is; she might be at lunch). PASSO 4: can't = Tenho quase certeza de que NÃO / É impossível (That restaurant can't be good; it's always empty!). PASSO 5: Deduções sobre o Passado (Modal + have + 3ª coluna): PASSO 6: must have + 3ª = Deve ter acontecido (I can't find my wallet! I must have left it at the café!). PASSO 7: might / may / could have + 3ª = Pode ter acontecido (They might have gotten stuck in traffic). PASSO 8: can't / couldn't have + 3ª = Não pode ter acontecido (She can't have gone home yet; her bag is still here!). PASSO 9: Arrependimento, Crítica e Alternativa no Passado (should / could + have + 3ª coluna): PASSO 10: should have + 3ª = Deveria ter feito (e não fez): You should have called me!. PASSO 11: shouldn't have + 3ª = Não deveria ter feito (mas fez): I shouldn't have bought these shoes. PASSO 12: could have + 3ª = Poderia ter feito (tinha a opção, mas não fez): We could have taken the train.",
+        "tag": "Resumo"
+      },
+      {
         "tipo": "producao",
-        "min": 8,
+        "min": 6,
         "enunciado": "Faça 6 deduções sobre o passado olhando evidências: uma xícara vazia, uma janela quebrada, um bilhete na mesa."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Faça 3 deduções com «must be», 2 com «can't be» e 2 com «might be»."
       }
     ]

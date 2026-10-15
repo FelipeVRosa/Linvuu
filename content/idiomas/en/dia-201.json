@@ -20,8 +20,105 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você faz deduções lógicas sobre o presente usando must be (“deve ser/estar”), might / could be (“pode ser que seja/esteja”) e can't be (“não pode ser!”), e analisa situações do passado expressando arrependimento, crítica, possibilidade ou certeza com should have, could have, must have e can't have + 3ª coluna."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "O mistério do pacote na recepção e o atraso do david",
+        "contexto": "Lucas e Sarah estão na recepção do escritório tentando descobrir de quem é uma caixa que acabou de chegar e por que o colega David ainda não apareceu para a reunião das 9h.",
+        "linhas": [
+          {
+            "personagem": "Sarah",
+            "ru": "— Lucas, look at this big box at the front desk. There's no name on the label. Whose box is this?",
+            "pt": "— Lucas, olha esta caixa grande na recepção. Não tem nome na etiqueta. De quem é esta caixa?",
+            "audio": "Lucas, look at this big box at the front desk. There's no name on the label. Whose box is this?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Well, it has a logo from an audio equipment store, so it must be for the marketing team! They're recording a podcast today.",
+            "pt": "— Bem, tem a logo de uma loja de equipamentos de áudio, então deve ser para a equipe de marketing! Eles vão gravar um podcast hoje.",
+            "audio": "Well, it has a logo from an audio equipment store, so it must be for the marketing team! They're recording a podcast today."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Wait — it can't be for marketing! The marketing team is working from home all week.",
+            "pt": "— Espere — não pode ser para o marketing! A equipe de marketing está trabalhando de casa a semana toda.",
+            "audio": "Wait — it can't be for marketing! The marketing team is working from home all week."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Oh, you're right! Then it might be for Kevin. He said he needed new headphones.",
+            "pt": "— Ah, você tem razão! Então pode ser que seja para o Kevin. Ele disse que precisava de fones de ouvido novos.",
+            "audio": "Oh, you're right! Then it might be for Kevin. He said he needed new headphones."
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Speaking of the team, where is David? It's nine twenty, and he's never late!",
+            "pt": "— Falando na equipe, onde está o David? São nove e vinte, e ele nunca se atrasa!",
+            "audio": "Speaking of the team, where is David? It's nine twenty, and he's never late!"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— He must have gotten stuck in traffic, or he might have forgotten that we changed the meeting to nine o'clock!",
+            "pt": "— Ele deve ter pegado trânsito, ou pode ter esquecido que mudamos a reunião para as nove horas!",
+            "audio": "He must have gotten stuck in traffic, or he might have forgotten that we changed the meeting to nine o'clock!"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— He can't have forgotten — I sent him a reminder on WhatsApp last night!",
+            "pt": "— Ele não pode ter esquecido — mandei um lembrete para ele no WhatsApp ontem à noite!",
+            "audio": "He can't have forgotten — I sent him a reminder on WhatsApp last night!"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Wait, look at my phone: he just texted me! His car broke down on the highway!",
+            "pt": "— Espere, olha meu celular: ele acabou de me mandar mensagem! O carro dele quebrou na rodovia!",
+            "audio": "Wait, look at my phone: he just texted me! His car broke down on the highway!"
+          },
+          {
+            "personagem": "Sarah",
+            "ru": "— Oh, poor David! He should have taken the subway today — the traffic is terrible, and he could have arrived here in twenty minutes!",
+            "pt": "— Ah, coitado do David! Ele deveria ter pegado o metrô hoje — o trânsito está terrível, e ele poderia ter chegado aqui em vinte minutos!",
+            "audio": "Oh, poor David! He should have taken the subway today — the traffic is terrible, and he could have arrived here in twenty minutes!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Na dedução lógica (“tenho quase certeza de que não é”), o oposto de must be é can't be. No Capítulo 9 vimos que must significa obrigação e mustn't significa proibição. Mas quando usamos must como dedução lógica (“Você trabalhou 12 horas, então deve estar exausto” = You must be exhausted), a dedução contrária (“Você acabou de almoçar, então não pode estar com fome!”) é You can't be hungry! (e não You mustn't be hungry). PASSO 2: Modal no passado = modal + HAVE + 3ª coluna. Depois de should, could, must, might, o verbo não vai direto para o passado simples (I should went, He must forgot). A ponte para o passado de qualquer modal é have + 3ª coluna (particípio passado): should have gone, must have forgotten, could have helped.",
+        "comparacao": "Em português, dizemos “Não pode ser verdade” ou “Não deve ser verdade” para a dedução negativa, e, para o passado, dizemos “Eu devia ter ido / Ele deve ter esquecido” usando o infinitivo (“ir / esquecer”) ou o particípio (“ido / esquecido”). Veja as quatro armadilhas que você precisa evitar em inglês:",
+        "tabela": [
+          {
+            "portugues": "Isso não pode ser verdade (impossível).",
+            "ingles": "That can't be true!",
+            "evite": "That mustn't be true! (mustn't é proibição)"
+          },
+          {
+            "portugues": "Eu deveria ter ligado para você ontem.",
+            "ingles": "I should have called you yesterday.",
+            "evite": "I should called / should have call you."
+          },
+          {
+            "portugues": "Ele deve ter esquecido a reunião.",
+            "ingles": "He must have forgotten the meeting.",
+            "evite": "He must forgot the meeting."
+          },
+          {
+            "portugues": "Escrever “should of” por causa do som.",
+            "ingles": "I should have (should've) gone.",
+            "evite": "I should of gone."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "must be",
@@ -83,7 +180,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Deduzir com os modais",
         "explicacao": "PASSO 1: use «must» quando você tem QUASE CERTEZA, por causa de evidências: «She is crying. She must be sad.» PASSO 2: use «can't» quando você tem QUASE CERTEZA de que NÃO é verdade: «He can't be at home. His car isn't here.» PASSO 3: use «might/may/could» quando é apenas POSSÍVEL: «He might be at work.» PASSO 4: estrutura: «modal + be + adjetivo/substantivo» ou «modal + verbo»: «She must know the answer.» PASSO 5: a negativa de «must» NÃO é «mustn't» (proibição); para dedução, use «can't»: «He can't be 40» (ele não pode ter 40). PASSO 6: para ação em andamento: «modal + be + -ing»: «They must be sleeping.»",
         "comparacao": "em português «deve ser» (quase certo) e «não pode ser» (impossível) têm uso parecido. Em inglês, a negativa de «must be» é «can't be», nunca «mustn't be».",
@@ -135,12 +232,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Veja 5 situações imaginárias (alguém chorando, uma casa escura, um carro na garagem) e deduza com must, can't e might."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale do que você teme, no que é bom e o que lhe interessa."
       }
     ]

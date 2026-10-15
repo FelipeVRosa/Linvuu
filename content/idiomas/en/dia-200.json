@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -198,14 +198,154 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto sobre as suas habilidades, os seus medos e os seus interesses."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas perguntas com preposição no fim (Who… with? / What… about? / Which company… for?).",
+            "respostaEsperada": "Who are you traveling with? What is that book about?",
+            "id": "en-050-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma pergunta sobre o sujeito (“Quem enviou este e-mail?”) e uma sobre o objeto (“Para quem você enviou este e-mail?”).",
+            "respostaEsperada": "Sujeito: Who sent this email? | Objeto: Who did you send this email to?",
+            "id": "en-050-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Transforme em perguntas indiretas educadas, começando com Could you tell me…: (a) Where is Gate 14? (b) What time does the flight board?",
+            "respostaEsperada": "(a) Could you tell me where Gate 14 is, please? (b) Could you tell me what time the flight boards, please?",
+            "id": "en-050-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva três frases com question tags: uma no presente, uma no passado e uma negativa com tag positiva.",
+            "respostaEsperada": "You live in São Paulo, don't you? / You called him yesterday, didn't you? / She hasn't arrived yet, has she?",
+            "id": "en-050-L-p04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Responda a duas frases de um colega usando So… e Neither…: (a) I love this city. (b) I can't speak German.",
+            "respostaEsperada": "(a) So do I! (b) Neither can I! (ou Me neither!)",
+            "id": "en-050-L-p05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Do you know where is the meeting room?",
+            "respostaEsperada": "Do you know where the meeting room is?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Could you tell me what time does the bank open?",
+            "respostaEsperada": "Could you tell me what time the bank opens?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Who did call you during the presentation?",
+            "respostaEsperada": "Who called you during the presentation?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: You work with Lucas, isn't it?",
+            "respostaEsperada": "You work with Lucas, don't you?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: — I don't like waking up at five a.m. — Me too!",
+            "respostaEsperada": "— I don't like waking up at five a.m. — Neither do I!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: What are you waiting? Let's go!",
+            "respostaEsperada": "What are you waiting for? Let's go!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She doesn't work here, doesn't she?",
+            "respostaEsperada": "She doesn't work here, does she?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-050-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Could you tell me if there's an ATM near here?",
+            "respostaEsperada": "OK",
+            "id": "en-050-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais comum de estudantes intermediários em viagens e reuniões é manter a inversão da pergunta direta dentro de uma pergunta indireta (Do you know where is the station?, Could you tell me what time does it start?) e usar “isn't it?” como tag para tudo. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "Do you know where is the bank?",
+            "certo": "Do you know where the bank is?",
+            "motivo": "Em perguntas indiretas, a ordem volta a ser afirmativa (sujeito + verbo)."
+          },
+          {
+            "errado": "Tell me what time does it start.",
+            "certo": "Tell me what time it starts.",
+            "motivo": "Perguntas indiretas não levam o auxiliar do/does/did."
+          },
+          {
+            "errado": "Who did break the window?",
+            "certo": "Who broke the window?",
+            "motivo": "Quando Who ou What é o sujeito da ação, não se usa do/does/did."
+          },
+          {
+            "errado": "You like coffee, isn't it?",
+            "certo": "You like coffee, don't you?",
+            "motivo": "A tag repete o auxiliar do verbo da frase (like → don't you)."
+          },
+          {
+            "errado": "She doesn't work here, doesn't she?",
+            "certo": "She doesn't work here, does she?",
+            "motivo": "Frase negativa pede tag positiva."
+          },
+          {
+            "errado": "— I can't swim. — Me too!",
+            "certo": "— Me neither! / Neither can I!",
+            "motivo": "Para concordar com uma frase negativa, use Me neither ou Neither + aux + I."
+          },
+          {
+            "errado": "Who are you waiting?",
+            "certo": "Who are you waiting for?",
+            "motivo": "Wait for exige a preposição for no fim da pergunta."
+          },
+          {
+            "errado": "What are you talking? / Who did you go?",
+            "certo": "What are you talking about? / Who did you go with?",
+            "motivo": "A preposição do verbo não pode sumir no fim da pergunta."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Descreva o que você faz, o que teme e no que é bom, usando as preposições certas."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 19. Complete com who, which, where ou whose: The speaker ____ workshop starts at 2:30 works at the lab ____ they develop AI systems. 2. Do Capítulo 17 e 18. Corrija: Thank you for help me, and I want that you come to the meeting! Depois responda: na pergunta What are you looking for?, por que, ao responder com pronome para my keys, dizemos I'm looking for them e não I'm looking them for? 3. Do Capítulo 14 e 15. Complete as tags: (a) You've worked here for three years, ____? (b) You've been to London before, ____? (c) She hasn't sent the file yet, ____?"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Fazer perguntas indiretas educadas (Could you tell me where the station is?) sem inverter o verbo nem usar do/does/did. · Perguntar Who called? / What happened? sem did e manter a preposição no fim (Who are you waiting for?). · Usar question tags variadas e concordar com frases negativas com Me neither! / Neither do I!."
       }
     ]
   },

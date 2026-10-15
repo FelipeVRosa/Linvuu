@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -198,14 +198,136 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto sobre seu dia usando collocations e uma expressão idiomática."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva a sua casa ou apartamento usando uma medida como adjetivo (a … - bedroom apartment) e uma composta da tabela.",
+            "respostaEsperada": "I live in a two-bedroom apartment with a small balcony and a dishwasher.",
+            "id": "en-060-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga quanto tempo você leva a pé até um lugar, usando a … -minute walk.",
+            "respostaEsperada": "The station is a fifteen-minute walk from my house.",
+            "id": "en-060-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga que você mora atualmente em uma cidade, sem usar actually.",
+            "respostaEsperada": "I currently live in Curitiba. / These days I live in Curitiba.",
+            "id": "en-060-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase usando parents e outra usando relatives.",
+            "respostaEsperada": "My parents live in Recife. / I have a lot of relatives in Minas Gerais.",
+            "id": "en-060-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Actually I live in Salvador, but next year I'll move.",
+            "respostaEsperada": "Currently I live in Salvador, but next year I'll move.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I pretend to study abroad next year.",
+            "respostaEsperada": "I intend to study abroad next year.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She works at the library, selling new books.",
+            "respostaEsperada": "She works at a bookstore, selling new books.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We realized the meeting yesterday.",
+            "respostaEsperada": "We held the meeting yesterday.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I'll invite all my parents to the party.",
+            "respostaEsperada": "I'll invite all my relatives to the party.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: My mother watches a novel every night.",
+            "respostaEsperada": "My mother watches a soap opera every night.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-060-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: I couldn't attend the meeting because I was sick.",
+            "respostaEsperada": "OK",
+            "id": "en-060-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais caro deste capítulo é traduzir uma palavra pelo som (actually = atualmente, pretend = pretender, parents = parentes) e inverter a ordem das compostas (a stop of bus, a coffees cup). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "Actually I live in Salvador.",
+            "certo": "Currently I live in Salvador.",
+            "motivo": "Actually significa “na verdade”, e não “atualmente”."
+          },
+          {
+            "errado": "I pretend to study abroad.",
+            "certo": "I intend to study abroad.",
+            "motivo": "Pretend é “fingir”; “pretender” é intend."
+          },
+          {
+            "errado": "She works at the library, selling new books.",
+            "certo": "She works at a bookstore, selling new books.",
+            "motivo": "Library é biblioteca; livraria é bookstore."
+          },
+          {
+            "errado": "We realized the meeting yesterday.",
+            "certo": "We held the meeting yesterday.",
+            "motivo": "Realize é “perceber”; para “realizar” uma reunião, use hold."
+          },
+          {
+            "errado": "I'll invite all my parents.",
+            "certo": "I'll invite all my relatives.",
+            "motivo": "Parents são só pai e mãe; parentes em geral são relatives."
+          },
+          {
+            "errado": "My mother watches a novel every night.",
+            "certo": "My mother watches a soap opera every night.",
+            "motivo": "Novel é um romance (livro); novela de TV é soap opera."
+          },
+          {
+            "errado": "a ten-minutes walk / a stop of bus",
+            "certo": "a ten-minute walk / a bus stop",
+            "motivo": "Medida como adjetivo fica no singular; a composta vai direto, sem of."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Conte um dia seu usando 5 collocations."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 12. Complete: The apartment isn't ____ for four people (big), and the rent is ____ than our budget (high). 2. Do Capítulo 27. Reescreva com so… that: The apartment was very expensive. We didn't rent it. 3. Do Capítulo 18. Reescreva com o pronome no lugar certo: Please turn off the lights. (use them)"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Formar compostas na ordem certa e colocar o plural na palavra certa. Escrever medidas como adjetivo, no singular e com hífen. · Evitar os falsos amigos mais comuns, dizendo currently, intend, relatives, bookstore e soap opera quando preciso."
       }
     ]
   },

@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você usa a voz passiva (be + 3ª coluna) no presente, no passado, no Present Perfect e no futuro para destacar o que foi feito sem precisar dizer quem fez (como no nosso “aluga-se / consertaram / foi enviado”), introduz o autor da ação com by quando necessário e usa a estrutura causativa (have / get something done) para falar de serviços contratados (“cortei o cabelo / consertei o carro”)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Reforma do escritório e atualização do sistema",
+        "contexto": "Lucas e Emma conversam sobre as obras na recepção do prédio e o status dos contratos enviados aos clientes.",
+        "linhas": [
+          {
+            "personagem": "Lucas",
+            "ru": "— Emma, why is the main entrance closed this morning?",
+            "pt": "— Emma, por que a entrada principal está fechada hoje de manhã?",
+            "audio": "Emma, why is the main entrance closed this morning?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— The lobby is being painted today, and the old glass doors are being replaced! Everything will be finished by Friday.",
+            "pt": "— O saguão está sendo pintado hoje, e as portas de vidro antigas estão sendo substituídas! Tudo estará terminado até sexta-feira.",
+            "audio": "The lobby is being painted today, and the old glass doors are being replaced! Everything will be finished by Friday."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Oh, that's great. Those doors were installed twenty years ago, weren't they?",
+            "pt": "— Ah, que ótimo. Aquelas portas foram instaladas vinte anos atrás, não foram?",
+            "audio": "Oh, that's great. Those doors were installed twenty years ago, weren't they?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Yes, they were! The building was designed by a famous Canadian architect in 2005, and it hasn't been renovated since then.",
+            "pt": "— Sim, foram! O prédio foi projetado por um arquiteto canadense famoso em 2005, e não é reformado desde então.",
+            "audio": "Yes, they were! The building was designed by a famous Canadian architect in 2005, and it hasn't been renovated since then."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— By the way, have the new client contracts been signed yet?",
+            "pt": "— Aliás, os novos contratos dos clientes já foram assinados?",
+            "audio": "By the way, have the new client contracts been signed yet?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Two of them were signed yesterday afternoon, and the third one will be sent to the director today.",
+            "pt": "— Dois deles foram assinados ontem à tarde, e o terceiro será enviado ao diretor hoje.",
+            "audio": "Two of them were signed yesterday afternoon, and the third one will be sent to the director today."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Awesome. Oh, I love your hair, Emma! Did you change the cut?",
+            "pt": "— Perfeito. Ah, adorei o seu cabelo, Emma! Você mudou o corte?",
+            "audio": "Awesome. Oh, I love your hair, Emma! Did you change the cut?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Thanks! Yes, I got my hair cut yesterday evening at that salon across the street. And I'm having my laptop fixed this afternoon because the screen is flickering!",
+            "pt": "— Obrigada! Sim, cortei o cabelo ontem à noite naquele salão do outro lado da rua. E vou mandar consertar meu notebook hoje à tarde porque a tela está piscando!",
+            "audio": "Thanks! Yes, I got my hair cut yesterday evening at that salon across the street. And I'm having my laptop fixed this afternoon because the screen is flickering!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Quando não sabemos quem fez, ou não importa quem fez, o inglês usa a voz passiva. No trabalho, na ciência e nas notícias, o que importa é o que aconteceu com o projeto, o voo, o pacote ou o pagamento. Basta colocar a coisa afetada no início da frase + o verbo to be no tempo desejado + o verbo principal na 3ª coluna (Particípio Passado). PASSO 2: Quem praticou a ação na passiva é introduzido por by, e não por for. Por causa do português “feito por ela”, muitos brasileiros dizem made for her (que significa “feito para ela”). Para indicar o autor na voz passiva, use by: The report was written by Lucas.",
+        "comparacao": "Em português, costumamos evitar a voz passiva com verbos sem sujeito expresso (“Roubaram meu celular! / Já resolveram o problema / Aqui fala-se inglês”) e dizemos “Eu cortei o cabelo / Eu pintei a casa” mesmo quando contratamos um profissional. Em inglês, isso gera quatro armadilhas:",
+        "tabela": [
+          {
+            "portugues": "Roubaram meu celular ontem!",
+            "ingles": "My phone was stolen yesterday! (ou Someone stole my phone!)",
+            "evite": "Stole my phone yesterday! (falta o sujeito)"
+          },
+          {
+            "portugues": "Este carro foi feito na Alemanha.",
+            "ingles": "This car was made in Germany.",
+            "evite": "This car made / was make in Germany."
+          },
+          {
+            "portugues": "O livro foi escrito por Machado.",
+            "ingles": "The book was written by Machado.",
+            "evite": "written for Machado (a autoria na passiva usa by)."
+          },
+          {
+            "portugues": "Vou cortar o cabelo amanhã (no salão).",
+            "ingles": "I'm going to get (ou have) my hair cut tomorrow.",
+            "evite": "I'm going to cut my hair (soa como se você mesmo fosse cortar)."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "is made",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "A voz passiva",
         "explicacao": "PASSO 1: na voz ATIVA o sujeito faz a ação: «Marie Curie discovered radium.» Na PASSIVA, o foco vai para o objeto: «Radium was discovered by Marie Curie.» PASSO 2: a estrutura é «be + particípio passado»: «is made», «was built», «will be done». PASSO 3: o «be» marca o tempo: presente (is/are + particípio), passado (was/were + particípio), futuro (will be + particípio). PASSO 4: use a passiva quando o agente é DESCONHECIDO, ÓBVIO ou NÃO IMPORTA: «My bike was stolen.» (não sei quem). PASSO 5: use «by + agente» só quando for informação nova ou importante: «The Mona Lisa was painted by Leonardo.» PASSO 6: nunca use «do/does» na passiva: «Coffee is grown in Brazil», não «Coffee does grown».",
         "comparacao": "em português a passiva com «ser + particípio» («foi construído») existe, mas costumamos usar «se» («vende-se», «fala-se»). Em inglês, não existe o «se» apassivador: use «be + particípio».",
@@ -130,12 +221,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Transforme 5 frases ativas em passivas: «They sell cars here.», «Someone broke the window.»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte uma oportunidade perdida com terceiro condicional e «should have»."
       }
     ]

@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -203,13 +203,147 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale 1 minuto defendendo uma ideia com firstly, in addition, however e in conclusion."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale 1 minuto sobre vantagens e desvantagens de morar em uma cidade grande, com conectores."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva uma pessoa importante na sua vida com who, um objeto que você usa todo dia omitindo o that (ex.: The laptop I use…) e um lugar que você adora com where.",
+            "respostaEsperada": "My wife is the person who supports me every day, the laptop I use for work is very fast, and the café where we met is downtown.",
+            "id": "en-054-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva uma frase usando whose (“cujo/cuja”) sobre um amigo ou colega.",
+            "respostaEsperada": "I have a friend whose brother lives in Tokyo.",
+            "id": "en-054-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva a mesma ideia de contraste de dois jeitos: primeiro começando com Although + sujeito + verbo, e depois começando com Despite + substantivo / -ing.",
+            "respostaEsperada": "Although the traffic was terrible, we arrived on time. = Despite the terrible traffic, we arrived on time.",
+            "id": "en-054-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva a mesma ideia de causa de dois jeitos: primeiro com because + sujeito + verbo, e depois com because of + substantivo.",
+            "respostaEsperada": "We canceled the picnic because it was raining. = We canceled the picnic because of the rain.",
+            "id": "en-054-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The man which called you this morning is waiting in the lobby.",
+            "respostaEsperada": "The man who",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Although the hotel was expensive, but we decided to stay there.",
+            "respostaEsperada": "Although the hotel was expensive, we decided to stay there.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Despite of the traffic jam, we arrived at the airport on time.",
+            "respostaEsperada": "Despite the traffic jam",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We stayed at the office until late because the rain.",
+            "respostaEsperada": "We stayed at the office until late because of the rain.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The girl who she works at the front desk speaks four languages.",
+            "respostaEsperada": "The girl who works at the front desk speaks four languages.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Everything what he said in the meeting was true!",
+            "respostaEsperada": "Everything",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: Because the rain, the match was postponed.",
+            "respostaEsperada": "Because of the rain, the match was postponed.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-054-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The software that we use at work makes our routine much easier.",
+            "respostaEsperada": "OK",
+            "id": "en-054-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os quatro erros mais frequentes neste capítulo são: usar which para pessoas (the man which em vez de the man who / that), colocar of depois de despite (despite of em vez de despite ou in spite of), juntar although com but na mesma frase e repetir o pronome pessoal depois de who / that (the woman who she lives here). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "The woman which helped me…",
+            "certo": "The woman who (ou that) helped me…",
+            "motivo": "Which é para coisas; para pessoas, use who ou that."
+          },
+          {
+            "errado": "The guy who he works with me…",
+            "certo": "The guy who works with me…",
+            "motivo": "Who já é o sujeito do verbo; não repita he / she / they logo depois."
+          },
+          {
+            "errado": "Despite of the delay…",
+            "certo": "Despite the delay… / In spite of the delay…",
+            "motivo": "Despite não leva a preposição of."
+          },
+          {
+            "errado": "Although it was cold, but I went.",
+            "certo": "Although it was cold, I went.",
+            "motivo": "Although já faz o contraste da frase inteira; não se acrescenta but."
+          },
+          {
+            "errado": "because the traffic / because of it rained",
+            "certo": "because of the traffic / because it rained",
+            "motivo": "Because of pede substantivo; because pede Sujeito + Verbo."
+          },
+          {
+            "errado": "Everything what you need…",
+            "certo": "Everything that you need… / What you need…",
+            "motivo": "What não funciona como relativo depois de um substantivo ou de everything."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 17. Por que em In spite of having a headache o verbo have entrou com -ing? (Lembre-se da Lei de Ouro das Preposições do Cap. 17!). 2. Do Capítulo 16. Complete: When I arrived at the restaurant where we had a reservation, my friends ____ (already / order) dinner! 3. Do Capítulo 15. Transforme usando o Present Perfect: “Eu trabalho na empresa que fica na King Street há quatro anos.”"
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Conectar frases com who, which, that, where, whose sem usar which para pessoas e sem repetir pronomes. Usar although / even though (com verbo) e despite / in spite of (com substantivo ou -ing) sem colocar but nem “despite of”. · Diferenciar automaticamente because (com verbo) de because of (com substantivo)."
       }
     ]
   },

@@ -20,8 +20,104 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você descreve e especifica pessoas, coisas e lugares usando orações relativas (who, which, that, where, whose) sabendo quando pode omitir o pronome, e conecta ideias com precisão usando conectores de causa, resultado e contraste (because, because of, so, although, though, however, despite / in spite of)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Contratando o novo fornecedor de logística",
+        "contexto": "Lucas e Emma analisam propostas de empresas de logística para a operação da empresa no Canadá.",
+        "linhas": [
+          {
+            "personagem": "Emma",
+            "ru": "— Lucas, did you talk to the consultant who called us from Vancouver yesterday?",
+            "pt": "— Lucas, você falou com o consultor que nos ligou de Vancouver ontem?",
+            "audio": "Lucas, did you talk to the consultant who called us from Vancouver yesterday?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Yes, I did! He's the specialist whose company handles logistics for several tech startups in Canada.",
+            "pt": "— Falei, sim! Ele é o especialista cuja empresa cuida da logística de várias startups de tecnologia no Canadá.",
+            "audio": "Yes, I did! He's the specialist whose company handles logistics for several tech startups in Canada."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— What did you think of the proposal that he sent us this morning?",
+            "pt": "— O que você achou da proposta que ele nos enviou hoje de manhã?",
+            "audio": "What did you think of the proposal that he sent us this morning?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Although their price is a bit higher than the others, their delivery system is much faster.",
+            "pt": "— Embora o preço deles seja um pouco mais alto do que o dos outros, o sistema de entrega deles é muito mais rápido.",
+            "audio": "Although their price is a bit higher than the others, their delivery system is much faster."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— That's important. Last month we lost two clients because of the delays with our old supplier!",
+            "pt": "— Isso é importante. No mês passado perdemos dois clientes por causa dos atrasos com o nosso antigo fornecedor!",
+            "audio": "That's important. Last month we lost two clients because of the delays with our old supplier!"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Exactly. We also visited the warehouse where they store the products, and everything is automated. However, they require a two-year contract.",
+            "pt": "— Exatamente. Também visitamos o galpão onde eles armazenam os produtos, e tudo é automatizado. No entanto, eles exigem um contrato de dois anos.",
+            "audio": "Exactly. We also visited the warehouse where they store the products, and everything is automated. However, they require a two-year contract."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Despite the two-year commitment, I think they're our best option. The software which they use tracks every package in real time.",
+            "pt": "— Apesar do compromisso de dois anos, acho que eles são a nossa melhor opção. O software que eles usam rastreia cada pacote em tempo real.",
+            "audio": "Despite the two-year commitment, I think they're our best option. The software which they use tracks every package in real time."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— I agree. Their service is reliable, so we won't have any headaches during the holiday season!",
+            "pt": "— Concordo. O serviço deles é confiável, então não teremos dores de cabeça durante a temporada de festas!",
+            "audio": "I agree. Their service is reliable, so we won't have any headaches during the holiday season!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Para pessoas, não se usa which; e what não funciona como relativo depois de substantivo. Falando de um ser humano (the woman, the client, the guy), use who ou that (não the woman which). Depois de um substantivo, também não use what: the thing what I need está errado; diga the thing that I need (ou simplesmente what I need, sem substantivo antes). PASSO 2: Although e but não aparecem na mesma frase. Em português falado, às vezes alguém começa com “Embora…” e, no meio, coloca um “mas”. Em inglês, se você abriu a frase com Although / Even though (“Embora / Mesmo que”), a segunda metade vem direto depois da vírgula, sem but.",
+        "comparacao": "Em português, usamos a palavra “que” para tudo (“o homem que ligou, o carro que comprei”), às vezes repetimos o pronome na fala (“o cara que ele trabalha comigo”), misturamos “embora… mas” na mesma frase e confundimos “porque” com “por causa de”. Veja as armadilhas:",
+        "tabela": [
+          {
+            "portugues": "A mulher que trabalha aqui é médica.",
+            "ingles": "The woman who (ou that) works here is a doctor.",
+            "evite": "The woman which / what works here…"
+          },
+          {
+            "portugues": "O cara que ele trabalha comigo.",
+            "ingles": "The guy who works with me.",
+            "evite": "The guy who he works with me. (o pronome he repete o sujeito)"
+          },
+          {
+            "portugues": "O lugar que eu moro é tranquilo.",
+            "ingles": "The place where I live is quiet. (ou The place I live in…)",
+            "evite": "The place that I live is quiet."
+          },
+          {
+            "portugues": "Embora estivesse frio, mas nós saímos.",
+            "ingles": "Although it was cold, we went out.",
+            "evite": "Although it was cold, but we went out."
+          },
+          {
+            "portugues": "Atrasamos por causa que choveu.",
+            "ingles": "We were late because it rained / because of the rain.",
+            "evite": "because of it rained / because the rain"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "who",
@@ -83,7 +179,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Orações relativas que identificam",
         "explicacao": "PASSO 1: a oração relativa diz QUAL pessoa ou coisa você quer dizer: «The man who lives next door is a doctor.» PASSO 2: «who» é para PESSOAS: «the woman who called me». PASSO 3: «which» é para COISAS: «the book which I read». PASSO 4: «that» serve para pessoas e coisas, e é muito comum em inglês falado: «the book that I read», «the man that lives next door». PASSO 5: «where» = lugar: «the city where I was born». PASSO 6: «whose» = de quem, cujo: «the girl whose bag was stolen». PASSO 7: o pronome relativo NÃO se repete com o pronome pessoal: «The man who he lives…» está errado.",
         "comparacao": "em português usamos «que», «quem», «onde» e «cujo». Em inglês, escolhemos pela função: who (pessoa), which (coisa), that (os dois), where (lugar), whose (posse). Nunca repita o pronome pessoal depois do relativo.",
@@ -140,12 +236,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva 5 pessoas ou coisas com orações relativas: «A teacher is a person who…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Reclame de um serviço com passiva e peça uma solução."
       }
     ]

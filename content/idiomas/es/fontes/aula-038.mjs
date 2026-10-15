@@ -79,6 +79,7 @@ export default aula({
         ditado('Quisiera reservar una habitación doble', 'Escreva: Quisiera reservar una habitación doble. Pedido educado de viagem.'), ditado('Ayer fuimos al cine y comimos pizza', 'Escreva: Ayer fuimos al cine y comimos pizza. Indefinido de «ir» e «comer».'), ditado('La casa donde vivo es pequeña', 'Escreva: La casa donde vivo es pequeña. «Donde» como relativo, sem til.'),
         livre('Escreva em espanhol: Quando eu era criança, morava no campo. Ontem fui ao cinema. Se tiver tempo, ligo para você. Moro aqui há dois anos.', 'Cuando era niño, vivía en el campo. Ayer fui al cine. Si tengo tiempo, te llamo. Vivo aquí desde hace dos años.'),
         livre('Escreva em espanhol: Trabalho numa empresa pequena. Faz um ano que trabalho aqui. Antes trabalhava numa loja.', 'Trabajo en una empresa pequeña. Llevo un año trabajando aquí. Antes trabajaba en una tienda.'),
+        lacuna('Ayer, cuando llegué, todos ___ . (dormir)', ['dormían', 'durmieron', 'duermen'], 'dormían', 'Cenário de fundo no passado: imperfecto.'),
       ]),
       producao(5, 'Releia os itens que você errou e diga a regra de cada um em voz alta. Depois refaça só esses itens.'),
     ]),

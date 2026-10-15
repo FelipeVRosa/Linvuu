@@ -90,6 +90,7 @@ export default aula({
         ordem('Ordene: «No creo que sea verdad.»', ['No', 'creo', 'que', 'sea', 'verdad.'], 'No creo que sea verdad.', '«No creo que» + subjuntivo.'),
         ditado('Cuando llegues, avísame', 'Escreva: Cuando llegues, avísame.'), ditado('No creo que haya terminado todavía', 'Escreva: No creo que haya terminado todavía.'),
         livre('Escreva em espanhol: Se eu tivesse mais tempo, estudaria mais. Ele disse que chegaria às oito.', 'Si tuviera más tiempo, estudiaría más. Dijo que llegaría a las ocho.'),
+        lacuna('Si me lo ___ dicho, habría pagado de otra forma. (hubieran)', ['habrían', 'hubieran', 'han'], 'hubieran', 'Hipótese impossível no passado: «si» + pluscuamperfecto de subjuntivo.'),
       ]),
       producao(5, 'Releia os itens que você errou, diga a regra de cada um em voz alta e invente uma frase nova para cada regra.'),
     ]),

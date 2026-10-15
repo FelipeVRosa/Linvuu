@@ -24,19 +24,20 @@ export default function Sobre() {
             <li key={a.id} id={a.id} className="lvr-cena" style={{ margin: 0 }}>
               <h3 className="lvr-h3" style={{ margin: '0 0 6px' }}>{a.nome}</h3>
               <p className="lvr-p" style={{ margin: 0, fontSize: 16 }}>Autoria, revisão e adaptação dos livros e das aulas.</p>
+              <p className="lvr-p" style={{ margin: '8px 0 0', fontSize: 15 }}><a href={a.links[0]} rel="me noopener" target="_blank">LinkedIn</a> · <a href={a.links[1]} rel="me noopener" target="_blank">Facebook</a></p>
             </li>
           ))}
         </ul>
         <p className="lvr-p">Os dois são matemáticos de formação, com experiência em linguística, ensino de idiomas, inteligência artificial, teoria dos números e álgebra linear. Essa formação aparece no jeito de ensinar: regras explicadas com precisão, exemplos que testam a regra e atenção ao erro que cada estudante realmente comete.</p>
 
         <h2 className="lvr-h2">De onde vem a Linvuu</h2>
-        <p className="lvr-p">A Linvuu continua, em formato digital, o trabalho do Instituto Valeeva Rosa, escola de idiomas de Felipe. A experiência de sala de aula, com alunos reais e os erros que se repetem de turma em turma, é a base dos livros.</p>
+        <p className="lvr-p">A Linvuu nasceu da experiência de sala de aula dos autores, com alunos reais e os erros que se repetem de turma em turma. Essa experiência é a base dos livros e das aulas.</p>
 
         <h2 className="lvr-h2">O método</h2>
         <p className="lvr-p"><strong>Parte do português.</strong> Cada capítulo começa por um hábito seu que o outro idioma não aceita, como dizer “tenho 30 anos” em inglês ou ler uma palavra francesa letra por letra. Quem sabe qual é o hábito corrige o erro em semanas, e não em anos.</p>
         <p className="lvr-p"><strong>Explica na sua língua.</strong> A explicação é em português, com a regra completa, as exceções e o erro típico. O idioma estudado aparece em frases curtas, diálogos e tabelas.</p>
         <p className="lvr-p"><strong>Tem som em cada frase.</strong> Os diálogos, as frases prontas e o vocabulário têm áudio, para treinar a pronúncia desde o primeiro dia.</p>
-        <p className="lvr-p"><strong>Foi revisto por falantes nativos.</strong> Os livros contaram com a colaboração de mais de 30 falantes nativos dos idiomas ensinados.</p>
+        <p className="lvr-p"><strong>Revisto por quem fala o idioma.</strong> Os livros contaram com a colaboração de professores e falantes nativos dos idiomas ensinados.</p>
 
         <h2 className="lvr-h2">Transparência sobre o áudio</h2>
         <p className="lvr-p">As vozes do site são geradas por síntese de voz. Estamos migrando para vozes neurais de maior qualidade. Quando houver gravações de falantes nativos, o site avisará.</p>

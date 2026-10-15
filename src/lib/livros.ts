@@ -3,8 +3,8 @@
 // e o sumário completo em content/livros/<idioma>/sumario.json. O livro inteiro fica na plataforma, só para assinantes.
 
 export const AUTORES = [
-  { id: 'felipe', nome: 'Felipe Nascimento Rosa' },
-  { id: 'luiza', nome: 'Luiza Nascimento Rosa' },
+  { id: 'felipe', nome: 'Felipe Nascimento Rosa', links: ['https://www.linkedin.com/in/felipenrosaa/', 'https://www.facebook.com/felipepcrosa'] },
+  { id: 'luiza', nome: 'Luiza Nascimento Rosa', links: ['https://www.linkedin.com/in/luizanrosaa/', 'https://www.facebook.com/luiza.costa.nascimento.2025'] },
 ] as const;
 
 export const CAPITULOS_GRATIS = [1, 2] as const;

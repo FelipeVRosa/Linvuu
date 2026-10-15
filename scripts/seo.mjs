@@ -28,6 +28,12 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
   grupos.push({ p: `/livros/${id}`, em: ['pt-BR'] });
   for (const n of caps) grupos.push({ p: `/livros/${id}/capitulo/${n}`, em: ['pt-BR'] });
 }
+// Aulas grátis (dias 1 a 8 de cada curso, só em português): texto completo no HTML e dados de recurso educacional, então entram no sitemap.
+// Excluídos: o curso escrito para o próprio público (br, que não aparece em português) e cursos sem explicação em português.
+for (const c of cursos.filter((x) => x.status !== 'em-breve' && x.id !== 'br' && fonte(x.id) === 'pt')) {
+  grupos.push({ p: `/curso/${c.id}`, em: ['pt-BR'] });
+  for (let d = 1; d <= 8; d++) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: ['pt-BR'] });
+}
 const url = (c, p) => { const l = LOCALES.find((x) => x.c === c); return `${SITE}${l.p ? (p === '/' ? l.p : l.p + p) : p}`; };
 const linhas = [];
 for (const g of grupos) for (const c of g.em) {

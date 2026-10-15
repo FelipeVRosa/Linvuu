@@ -1,4 +1,4 @@
-# Capítulo 5: O passado e o futuro
+# Capítulo 5: O PASSADO E O FUTURO
 
 *Nível a1*
 
@@ -9,7 +9,7 @@
 
 Você já sabe conjugar verbos no presente. Sabe a tesourinha. Sabe os pronomes. Sabe os advérbios (вчера, сегодня, завтра). Agora falta o passo final: falar do que aconteceu e do que vai acontecer.
 
-Mas antes, uma verdade importante que nenhum dos cinco livros que analisei explica com honestidade:
+Mas antes, uma verdade importante que raramente é dita com honestidade:
 
 O passado russo descreve um passado inacabado. Ele não fala de uma ação que terminou, fechou, acabou. Ele fala de uma ação que estava acontecendo, que se repetia, que durava. É o "eu lia", "eu trabalhava", "eu morava" do português. Um passado em andamento, sem ponto final.
 
@@ -32,7 +32,7 @@ Agora, o passado usa a mesma tesourinha, mas com uma diferença: a terminação 
 
 As terminações de passado são quatro:
 
-| Gênero / Número | Terminação | Exemplo com ЧИТА- |
+| GÊNERO / NÚMERO | TERMINAÇÃO | EXEMPLO COM ЧИТА- |
 |---|---|---|
 | Masculino (singular) | -Л | чита́л |
 | Feminino (singular) | -ЛА | чита́ла |
@@ -52,40 +52,56 @@ Compare:
 
 PRESENTE (concorda com a pessoa):
 
-- Я чита́ю. (Eu leio.)
-- Ты чита́ешь. (Você lê.)
-- Он чита́ет. (Ele lê.)
-- Она́ чита́ет. (Ela lê.)
-- Мы чита́ем. (Nós lemos.)
+Я чита́ю. (Eu leio.)
+
+Ты чита́ешь. (Você lê.)
+
+Он чита́ет. (Ele lê.)
+
+Она́ чита́ет. (Ela lê.)
+
+Мы чита́ем. (Nós lemos.)
 
 PASSADO (concorda com o gênero):
 
-- Я чита́л. (Eu lia — se eu sou homem.)
-- Я чита́ла. (Eu lia — se eu sou mulher.)
-- Ты чита́л. (Você lia — se você é homem.)
-- Ты чита́ла. (Você lia — se você é mulher.)
-- Он чита́л. (Ele lia — masculino.)
-- Она́ чита́ла. (Ela lia — feminino.)
-- Оно́ чита́ло. (Ele/ela lia — neutro.)
-- Мы чита́ли. (Nós líamos — não importa o gênero.)
-- Вы чита́ли. (Vocês liam — não importa o gênero.)
-- Они́ чита́ли. (Eles liam — não importa o gênero.)
+Я чита́л. (Eu lia — se eu sou homem.)
+
+Я чита́ла. (Eu lia — se eu sou mulher.)
+
+Ты чита́л. (Você lia — se você é homem.)
+
+Ты чита́ла. (Você lia — se você é mulher.)
+
+Он чита́л. (Ele lia — masculino.)
+
+Она́ чита́ла. (Ela lia — feminino.)
+
+Оно́ чита́ло. (Ele/ela lia — neutro.)
+
+Мы чита́ли. (Nós líamos — não importa o gênero.)
+
+Вы чита́ли. (Vocês liam — não importa o gênero.)
+
+Они́ чита́ли. (Eles liam — não importa o gênero.)
 
 Repare: no singular, a terminação muda com o gênero. No plural, é sempre -ЛИ, não importa o gênero.
 
 Isso significa que:
 
-- Se você é homem e diz "eu lia", é я чита́л.
-- Se você é mulher e diz "eu lia", é я чита́ла.
-- Nunca se diz "я чита́ла" se você é homem.
-- Nunca se diz "я чита́л" se você é mulher.
+Se você é homem e diz "eu lia", é я чита́л.
+
+Se você é mulher e diz "eu lia", é я чита́ла.
+
+Nunca se diz "я чита́ла" se você é homem.
+
+Nunca se diz "я чита́л" se você é mulher.
 
 É automático. Você não pensa "sou homem, vou usar -л". Você simplesmente usa a forma que combina com você.
 
 
 ## 5.4 A pergunta mais comum: "se um homem pergunta para uma mulher, é -Л ou -ЛА?"
 
-Esta é a dúvida que todo aluno tem e que nenhum dos cinco livros responde. Vou responder agora, com clareza absoluta.
+Esta é a dúvida que todo aluno tem. Vamos respondê-la com clareza.
 
 A regra é uma só, e vale sempre:
 
@@ -119,15 +135,13 @@ O homem responde com -Л, porque ele é homem. Concorda com ele mesmo.
 
 Situação 3 — Um homem pergunta a outro homem:
 
-— Ты чита́л вчера́? (Você lia ontem?)
-— Да, я чита́л. (Sim, eu lia.)
+— Ты чита́л вчера́? (Você lia ontem?) — Да, я чита́л. (Sim, eu lia.)
 
 Os dois usam -Л, porque os dois são homens.
 
 Situação 4 — Uma mulher pergunta a outra mulher:
 
-— Ты чита́ла вчера́? (Você lia ontem?)
-— Да, я чита́ла. (Sim, eu lia.)
+— Ты чита́ла вчера́? (Você lia ontem?) — Да, я чита́ла. (Sim, eu lia.)
 
 As duas usam -ЛА, porque as duas são mulheres.
 
@@ -137,7 +151,7 @@ A terminação do passado não pertence a quem fala. Pertence a quem é o sujeit
 
 Mais exemplos para fixar:
 
-| Fala | Sujeito | Terminação | Por quê |
+| FALA | SUJEITO | TERMINAÇÃO | POR QUÊ |
 |---|---|---|---|
 | Um homem diz: Я чита́л. | Eu (homem) | -Л | O sujeito é homem. |
 | Uma mulher diz: Я чита́ла. | Eu (mulher) | -ЛА | O sujeito é mulher. |
@@ -152,10 +166,13 @@ Repare no último par: um homem falando de uma mulher usa -ЛА (o sujeito é el
 
 Outro exemplo, com o verbo быть:
 
-- Um homem diz: Я был до́ма. (Eu estava em casa.)
-- Uma mulher diz: Я была́ до́ма. (Eu estava em casa.)
-- Um homem pergunta a uma mulher: Ты была́ до́ма? (Você estava em casa?)
-- Uma mulher pergunta a um homem: Ты был до́ма? (Você estava em casa?)
+Um homem diz: Я был до́ма. (Eu estava em casa.)
+
+Uma mulher diz: Я была́ до́ма. (Eu estava em casa.)
+
+Um homem pergunta a uma mulher: Ты была́ до́ма? (Você estava em casa?)
+
+Uma mulher pergunta a um homem: Ты был до́ма? (Você estava em casa?)
 
 Sempre a mesma lógica: a terminação segue o sujeito, não o falante.
 
@@ -166,7 +183,7 @@ Vamos aplicar a tesourinha em oito verbos regulares. Repare nas traduções: tod
 
 ЧИТАТЬ (ler) — Raiz: ЧИТА-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | чита́л | eu lia (homem) |
 | Feminino | чита́ла | eu lia (mulher) |
@@ -175,7 +192,7 @@ Vamos aplicar a tesourinha em oito verbos regulares. Repare nas traduções: tod
 
 ГОВОРИТЬ (falar) — Raiz: ГОВОР-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | говори́л | eu falava (homem) |
 | Feminino | говори́ла | eu falava (mulher) |
@@ -184,7 +201,7 @@ Vamos aplicar a tesourinha em oito verbos regulares. Repare nas traduções: tod
 
 РАБОТАТЬ (trabalhar) — Raiz: РАБОТА-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | рабо́тал | eu trabalhava (homem) |
 | Feminino | рабо́тала | eu trabalhava (mulher) |
@@ -193,7 +210,7 @@ Vamos aplicar a tesourinha em oito verbos regulares. Repare nas traduções: tod
 
 ЖИТЬ (morar) — Raiz: ЖИ-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | жил | eu morava (homem) |
 | Feminino | жила́ | eu morava (mulher) |
@@ -204,7 +221,7 @@ Atenção: жить é irregular — no feminino, a tônica vai para o final: ж
 
 ЗНАТЬ (saber) — Raiz: ЗНА-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | знал | eu sabia (homem) |
 | Feminino | зна́ла | eu sabia (mulher) |
@@ -213,7 +230,7 @@ Atenção: жить é irregular — no feminino, a tônica vai para o final: ж
 
 ЛЮБИТЬ (amar) — Raiz: ЛЮБ-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | люби́л | eu amava (homem) |
 | Feminino | люби́ла | eu amava (mulher) |
@@ -222,7 +239,7 @@ Atenção: жить é irregular — no feminino, a tônica vai para o final: ж
 
 СМОТРЕТЬ (olhar) — Raiz: СМОТРЕ-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | смотре́л | eu olhava (homem) |
 | Feminino | смотре́ла | eu olhava (mulher) |
@@ -231,7 +248,7 @@ Atenção: жить é irregular — no feminino, a tônica vai para o final: ж
 
 ПИСАТЬ (escrever) — Raiz: ПИСА-
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | писа́л | eu escrevia (homem) |
 | Feminino | писа́ла | eu escrevia (mulher) |
@@ -245,7 +262,7 @@ Existem alguns verbos que não seguem a regra. Vou listar os principais.
 
 БЫТЬ (ser, estar) — o mais importante
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | был | eu era / eu estava (homem) |
 | Feminino | была́ | eu era / eu estava (mulher) |
@@ -256,7 +273,7 @@ Este é o verbo que você usa quando quer dizer "eu estava em casa" (Я был �
 
 ИДТИ (ir a pé) — o mais famoso dos irregulares
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | шёл | eu ia (homem) |
 | Feminino | шла | eu ia (mulher) |
@@ -267,7 +284,7 @@ Atenção: o verbo идти vira шёл no passado. A raiz é completamente dife
 
 МОЧЬ (poder)
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | мог | eu podia (homem) |
 | Feminino | могла́ | eu podia (mulher) |
@@ -276,7 +293,7 @@ Atenção: o verbo идти vira шёл no passado. A raiz é completamente dife
 
 ЕСТЬ (comer)
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | ел | eu comia (homem) |
 | Feminino | е́ла | eu comia (mulher) |
@@ -285,7 +302,7 @@ Atenção: o verbo идти vira шёл no passado. A raiz é completamente dife
 
 ПИТЬ (beber)
 
-| Gênero | Forma | Tradução |
+| GÊNERO | FORMA | TRADUÇÃO |
 |---|---|---|
 | Masculino | пил | eu bebia (homem) |
 | Feminino | пила́ | eu bebia (mulher) |
@@ -297,29 +314,25 @@ Atenção: o verbo идти vira шёл no passado. A raiz é completamente dife
 
 Erro 1 — Usar a terminação da pessoa em vez do gênero
 
-❌ Errado: Я чита́ю вчера́.
-✅ Correto: Я чита́л вчера́. (homem) / Я чита́ла вчера́. (mulher)
+❌ Errado: Я чита́ю вчера́. ✅ Correto: Я чита́л вчера́. (homem) / Я чита́ла вчера́. (mulher)
 
 O brasileiro instintivamente pensa "eu lia" e procura a forma "eu" do passado. Não existe. O passado não tem pessoa. Tem gênero.
 
 Erro 2 — Usar -л para mulher
 
-❌ Errado: Она́ чита́л вчера́.
-✅ Correto: Она́ чита́ла вчера́.
+❌ Errado: Она́ чита́л вчера́. ✅ Correto: Она́ чита́ла вчера́.
 
 Se o sujeito é mulher, a terminação é -ла, sempre.
 
 Erro 3 — Usar -л para plural
 
-❌ Errado: Они́ чита́л вчера́.
-✅ Correto: Они́ чита́ли вчера́.
+❌ Errado: Они́ чита́л вчера́. ✅ Correto: Они́ чита́ли вчера́.
 
 Se o sujeito é plural, a terminação é -ли, sempre. Não importa o gênero.
 
 Erro 4 — Achar que "я был" é "eu sou"
 
-❌ Errado: Я был брази́лец, pensando que isso significa "eu sou brasileiro".
-✅ Correto: Я брази́лец (presente — sem verbo). Я был брази́лец (passado — eu era brasileiro).
+❌ Errado: Я был брази́лец, pensando que isso significa "eu sou brasileiro". ✅ Correto: Я брази́лец (presente — sem verbo). Я был брази́лец (passado — eu era brasileiro).
 
 "Я был" significa "eu era / eu estava". Nunca significa "eu sou". Para "eu sou", o verbo não aparece: "я брази́лец".
 
@@ -329,15 +342,13 @@ Se você é mulher, nunca diga "я был". Diga "я была́". Sempre.
 
 Erro 6 — Esquecer que o идти vira шёл
 
-❌ Errado: Я идти́л вчера́. (Não existe.)
-✅ Correto: Я шёл вчера́. (Eu ia ontem.)
+❌ Errado: Я идти́л вчера́. (Não existe.) ✅ Correto: Я шёл вчера́. (Eu ia ontem.)
 
 O verbo идти é irregular. A raiz muda completamente no passado.
 
 Erro 7 — Usar a terminação do próprio gênero ao perguntar para outra pessoa
 
-❌ Errado: Um homem perguntar a uma mulher "Ты чита́л?" (usando -л porque ele é homem).
-✅ Correto: Um homem perguntar a uma mulher "Ты чита́ла?" (usando -ла porque ela é mulher).
+❌ Errado: Um homem perguntar a uma mulher "Ты чита́л?" (usando -л porque ele é homem). ✅ Correto: Um homem perguntar a uma mulher "Ты чита́ла?" (usando -ла porque ela é mulher).
 
 Este é o erro mais sutil. O brasileiro tende a usar a terminação do próprio gênero ao fazer a pergunta. Mas a terminação segue o sujeito, não quem pergunta. Se um homem pergunta a uma mulher, ele usa -ла (porque ela é mulher). Se uma mulher pergunta a um homem, ela usa -л (porque ele é homem).
 
@@ -346,7 +357,7 @@ Este é o erro mais sutil. O brasileiro tende a usar a terminação do próprio 
 
 Agora, frases reais com advérbios de tempo. Repare nas traduções: todas descrevem ações em andamento ou repetidas.
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Вчера́ я чита́л кни́гу. | Ontem eu lia um livro. (homem) |
 | Вчера́ я чита́ла кни́гу. | Ontem eu lia um livro. (mulher) |
@@ -378,7 +389,7 @@ Este futuro descreve ações que vão se desenrolar, que se repetirão, que dura
 
 Antes de qualquer coisa, você precisa saber conjugar быть no futuro. São seis formas. Só isso.
 
-| Pronome | Forma | Transliteração |
+| PRONOME | FORMA | TRANSLITERAÇÃO |
 |---|---|---|
 | я | бу́ду | búdu |
 | ты | бу́дешь | búdiêch |
@@ -398,7 +409,7 @@ Agora, a fórmula:
 
 Veja na prática com читать:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | Я бу́ду чита́ть. | Eu vou ler. |
 | Ты бу́дешь чита́ть. | Tu vais ler. |
@@ -418,57 +429,87 @@ Vamos aplicar com seis verbos diferentes:
 
 ГОВОРИТЬ (falar)
 
-- Я бу́ду говори́ть.
-- Ты бу́дешь говори́ть.
-- Он бу́дет говори́ть.
-- Мы бу́дем говори́ть.
-- Вы бу́дете говори́ть.
-- Они́ бу́дут говори́ть.
+Я бу́ду говори́ть.
+
+Ты бу́дешь говори́ть.
+
+Он бу́дет говори́ть.
+
+Мы бу́дем говори́ть.
+
+Вы бу́дете говори́ть.
+
+Они́ бу́дут говори́ть.
 
 РАБОТАТЬ (trabalhar)
 
-- Я бу́ду рабо́тать.
-- Ты бу́дешь рабо́тать.
-- Он бу́дет рабо́тать.
-- Мы бу́дем рабо́тать.
-- Вы бу́дете рабо́тать.
-- Они́ бу́дут рабо́тать.
+Я бу́ду рабо́тать.
+
+Ты бу́дешь рабо́тать.
+
+Он бу́дет рабо́тать.
+
+Мы бу́дем рабо́тать.
+
+Вы бу́дете рабо́тать.
+
+Они́ бу́дут рабо́тать.
 
 ЖИТЬ (morar)
 
-- Я бу́ду жить.
-- Ты бу́дешь жить.
-- Он бу́дет жить.
-- Мы бу́дем жить.
-- Вы бу́дете жить.
-- Они́ бу́дут жить.
+Я бу́ду жить.
+
+Ты бу́дешь жить.
+
+Он бу́дет жить.
+
+Мы бу́дем жить.
+
+Вы бу́дете жить.
+
+Они́ бу́дут жить.
 
 ЗНАТЬ (saber)
 
-- Я бу́ду знать.
-- Ты бу́дешь знать.
-- Он бу́дет знать.
-- Мы бу́дем знать.
-- Вы бу́дете знать.
-- Они́ бу́дут знать.
+Я бу́ду знать.
+
+Ты бу́дешь знать.
+
+Он бу́дет знать.
+
+Мы бу́дем знать.
+
+Вы бу́дете знать.
+
+Они́ бу́дут знать.
 
 ЛЮБИТЬ (amar)
 
-- Я бу́ду люби́ть.
-- Ты бу́дешь люби́ть.
-- Он бу́дет люби́ть.
-- Мы бу́дем люби́ть.
-- Вы бу́дете люби́ть.
-- Они́ бу́дут люби́ть.
+Я бу́ду люби́ть.
+
+Ты бу́дешь люби́ть.
+
+Он бу́дет люби́ть.
+
+Мы бу́дем люби́ть.
+
+Вы бу́дете люби́ть.
+
+Они́ бу́дут люби́ть.
 
 ПИСАТЬ (escrever)
 
-- Я бу́ду писа́ть.
-- Ты бу́дешь писа́ть.
-- Он бу́дет писа́ть.
-- Мы бу́дем писа́ть.
-- Вы бу́дете писа́ть.
-- Они́ бу́дут писа́ть.
+Я бу́ду писа́ть.
+
+Ты бу́дешь писа́ть.
+
+Он бу́дет писа́ть.
+
+Мы бу́дем писа́ть.
+
+Вы бу́дете писа́ть.
+
+Они́ бу́дут писа́ть.
 
 Repare: o infinitivo nunca muda. писа́ть é sempre писа́ть. люби́ть é sempre люби́ть. Sem conjugação, sem gênero, sem nada. É só colar.
 
@@ -477,36 +518,31 @@ Repare: o infinitivo nunca muda. писа́ть é sempre писа́ть. люб
 
 Erro 1 — Conjugar o segundo verbo também
 
-❌ Errado: Я бу́ду чита́ю.
-✅ Correto: Я бу́ду чита́ть.
+❌ Errado: Я бу́ду чита́ю. ✅ Correto: Я бу́ду чита́ть.
 
 O segundo verbo fica no infinitivo. Sempre. O brasileiro vai querer conjugar os dois. Não faça isso.
 
 Erro 2 — Dizer "буду быть"
 
-❌ Errado: Я бу́ду быть.
-✅ Correto: Я бу́ду. (Eu estarei.)
+❌ Errado: Я бу́ду быть. ✅ Correto: Я бу́ду. (Eu estarei.)
 
 O verbo быть não se repete. Se você quer dizer "eu estarei", basta я бу́ду. Se você quer dizer "eu estarei em casa", é я бу́ду до́ма (sem быть).
 
 Erro 3 — Esquecer que o futuro não tem gênero
 
-❌ Errado: Uma mulher pensar "я бу́ду чита́ла".
-✅ Correto: Я бу́ду чита́ть.
+❌ Errado: Uma mulher pensar "я бу́ду чита́ла". ✅ Correto: Я бу́ду чита́ть.
 
 O futuro não tem gênero. É uma das coisas mais bonitas do russo. Я бу́ду чита́ть serve para homem e mulher. Não existe "я бу́ду чита́ла". Nunca.
 
 Erro 4 — Colocar o быть depois do verbo
 
-❌ Errado: Я чита́ть бу́ду.
-✅ Correto: Я бу́ду чита́ть.
+❌ Errado: Я чита́ть бу́ду. ✅ Correto: Я бу́ду чита́ть.
 
 A ordem normal é быть + infinitivo. Em contextos muito específicos, é possível inverter, mas é raro. Use sempre a ordem normal.
 
 Erro 5 — Usar быть no presente
 
-❌ Errado: Я есть чита́ть.
-✅ Correto: Я бу́ду чита́ть.
+❌ Errado: Я есть чита́ть. ✅ Correto: Я бу́ду чита́ть.
 
 O быть no presente não existe. No futuro, é буду. Não misture.
 
@@ -515,7 +551,7 @@ O быть no presente não existe. No futuro, é буду. Não misture.
 
 Agora, frases reais:
 
-| Russo | Tradução |
+| RUSSO | TRADUÇÃO |
 |---|---|
 | За́втра я бу́ду чита́ть. | Amanhã eu vou ler. |
 | Я бу́ду говори́ть по-ру́сски. | Eu vou falar russo. |
@@ -528,15 +564,17 @@ Agora, frases reais:
 
 Repare na negação: basta colocar не antes de буду:
 
-- Я не бу́ду чита́ть. (Eu não vou ler.)
-- Он не бу́дет говори́ть. (Ele não vai falar.)
-- Мы не бу́дем рабо́тать. (Nós não vamos trabalhar.)
+Я не бу́ду чита́ть. (Eu não vou ler.)
+
+Он не бу́дет говори́ть. (Ele não vai falar.)
+
+Мы не бу́дем рабо́тать. (Nós não vamos trabalhar.)
 
 PARTE 3 — OS TRÊS TEMPOS JUNTOS
 
 Agora, você vê o sistema funcionando. Mesmo verbo, três tempos:
 
-| Tempo | Russo | Tradução |
+| TEMPO | RUSSO | TRADUÇÃO |
 |---|---|---|
 | Passado (homem) | Вчера́ я чита́л. | Ontem eu lia. |
 | Passado (mulher) | Вчера́ я чита́ла. | Ontem eu lia. |
@@ -545,7 +583,7 @@ Agora, você vê o sistema funcionando. Mesmo verbo, três tempos:
 
 Mesmo verbo, três tempos:
 
-| Tempo | Russo | Tradução |
+| TEMPO | RUSSO | TRADUÇÃO |
 |---|---|---|
 | Passado (homem) | Вчера́ я говори́л по-ру́сски. | Ontem eu falava russo. |
 | Passado (mulher) | Вчера́ я говори́ла по-ру́сски. | Ontem eu falava russo. |
@@ -557,134 +595,134 @@ Mesmo verbo, três tempos:
 
 ## 5.15 EXERCÍCIOS
 
-Exercício 1 — Isole a raiz
+EXERCÍCIO 1 — ISOLE A RAIZ
 
 Para cada verbo, escreva a raiz (corte -ТЬ).
 
-1. чита́ть → raiz ____
-2. говори́ть → raiz ____
-3. рабо́тать → raiz ____
-4. жить → raiz ____
-5. знать → raiz ____
-6. люби́ть → raiz ____
-7. смотре́ть → raiz ____
-8. писа́ть → raiz ____
+1. 1. чита́ть → raiz ____
+2. 2. говори́ть → raiz ____
+3. 3. рабо́тать → raiz ____
+4. 4. жить → raiz ____
+5. 5. знать → raiz ____
+6. 6. люби́ть → raiz ____
+7. 7. смотре́ть → raiz ____
+8. 8. писа́ть → raiz ____
 
-Exercício 2 — Conjugue no passado
+EXERCÍCIO 2 — CONJUGUE NO PASSADO
 
 Para cada verbo, escreva as quatro formas de passado.
 
-1. чита́ть: masc ____, fem ____, neutro ____, plural ____
-2. говори́ть: masc ____, fem ____, neutro ____, plural ____
-3. рабо́тать: masc ____, fem ____, neutro ____, plural ____
-4. жить: masc ____, fem ____, neutro ____, plural ____
-5. знать: masc ____, fem ____, neutro ____, plural ____
+1. 1. чита́ть: masc ____, fem ____, neutro ____, plural ____
+2. 2. говори́ть: masc ____, fem ____, neutro ____, plural ____
+3. 3. рабо́тать: masc ____, fem ____, neutro ____, plural ____
+4. 4. жить: masc ____, fem ____, neutro ____, plural ____
+5. 5. знать: masc ____, fem ____, neutro ____, plural ____
 
-Exercício 3 — Complete com o passado correto
+EXERCÍCIO 3 — COMPLETE COM O PASSADO CORRETO
 
 Use o verbo entre parênteses na forma correta de passado (atenção ao gênero).
 
-1. Вчера́ я ____ кни́гу. (чита́ть) — homem falando
-2. Вчера́ она́ ____ по-ру́сски. (говори́ть)
-3. Мы ____ в Москве́. (рабо́тать)
-4. Он ____ в Санкт-Петербу́рге. (жить)
-5. Я ____ до́ма. (быть) — mulher falando
-6. Они́ ____ в теа́тре. (быть)
-7. Она́ ____ в Пари́же. (быть)
-8. Я ____ э́то сло́во. (знать) — homem falando
-9. Я ____ э́то сло́во. (не знать) — mulher falando
-10. Он ____ э́ту кни́гу. (люби́ть)
+1. 1. Вчера́ я ____ кни́гу. (чита́ть) — homem falando
+2. 2. Вчера́ она́ ____ по-ру́сски. (говори́ть)
+3. 3. Мы ____ в Москве́. (рабо́тать)
+4. 4. Он ____ в Санкт-Петербу́рге. (жить)
+5. 5. Я ____ до́ма. (быть) — mulher falando
+6. 6. Они́ ____ в теа́тре. (быть)
+7. 7. Она́ ____ в Пари́же. (быть)
+8. 8. Я ____ э́то сло́во. (знать) — homem falando
+9. 9. Я ____ э́то сло́во. (не знать) — mulher falando
+10. 10. Он ____ э́ту кни́гу. (люби́ть)
 
-Exercício 4 — Quem pergunta, quem responde?
+EXERCÍCIO 4 — QUEM PERGUNTA, QUEM RESPONDE?
 
 Complete com -Л ou -ЛА conforme o gênero do SUJEITO.
 
-1. Um homem pergunta a uma mulher: — Ты чита́____ вчера́?
-2. Uma mulher pergunta a um homem: — Ты чита́____ вчера́?
-3. Um homem pergunta a outro homem: — Ты чита́____ вчера́?
-4. Uma mulher pergunta a outra mulher: — Ты чита́____ вчера́?
-5. Um homem fala de uma mulher: — Она́ чита́____ вчера́.
-6. Uma mulher fala de um homem: — Он чита́____ вчера́.
-7. Um homem responde sobre si mesmo: — Да, я чита́____.
-8. Uma mulher responde sobre si mesma: — Да, я чита́____.
+1. 1. Um homem pergunta a uma mulher: — Ты чита́____ вчера́?
+2. 2. Uma mulher pergunta a um homem: — Ты чита́____ вчера́?
+3. 3. Um homem pergunta a outro homem: — Ты чита́____ вчера́?
+4. 4. Uma mulher pergunta a outra mulher: — Ты чита́____ вчера́?
+5. 5. Um homem fala de uma mulher: — Она́ чита́____ вчера́.
+6. 6. Uma mulher fala de um homem: — Он чита́____ вчера́.
+7. 7. Um homem responde sobre si mesmo: — Да, я чита́____.
+8. 8. Uma mulher responde sobre si mesma: — Да, я чита́____.
 
-Exercício 5 — Conjugue no futuro
+EXERCÍCIO 5 — CONJUGUE NO FUTURO
 
 Complete com a forma correta de быть no futuro + infinitivo.
 
-1. Я ____ чита́ть. (быть)
-2. Ты ____ говори́ть. (быть)
-3. Он ____ рабо́тать. (быть)
-4. Мы ____ жить. (быть)
-5. Вы ____ знать. (быть)
-6. Они́ ____ люби́ть. (быть)
-7. Я ____ писа́ть. (быть)
-8. Она́ ____ смотре́ть. (быть)
+1. 1. Я ____ чита́ть. (быть)
+2. 2. Ты ____ говори́ть. (быть)
+3. 3. Он ____ рабо́тать. (быть)
+4. 4. Мы ____ жить. (быть)
+5. 5. Вы ____ знать. (быть)
+6. 6. Они́ ____ люби́ть. (быть)
+7. 7. Я ____ писа́ть. (быть)
+8. 8. Она́ ____ смотре́ть. (быть)
 
-Exercício 6 — Traduza para o russo
+EXERCÍCIO 6 — TRADUZA PARA O RUSSO
 
-1. Ontem eu lia um livro. (homem)
-2. Ontem ela trabalhava em casa.
-3. Nós morávamos em Moscou.
-4. Eu estava em casa. (mulher)
-5. Eles estavam no teatro.
-6. Amanhã eu vou ler.
-7. Nós vamos trabalhar juntos.
-8. Ele vai falar russo.
-9. Eu não vou trabalhar amanhã.
-10. Ela vai morar em Moscou.
+1. 1. Ontem eu lia um livro. (homem)
+2. 2. Ontem ela trabalhava em casa.
+3. 3. Nós morávamos em Moscou.
+4. 4. Eu estava em casa. (mulher)
+5. 5. Eles estavam no teatro.
+6. 6. Amanhã eu vou ler.
+7. 7. Nós vamos trabalhar juntos.
+8. 8. Ele vai falar russo.
+9. 9. Eu não vou trabalhar amanhã.
+10. 10. Ela vai morar em Moscou.
 
-Exercício 7 — Escolha o tempo correto
+EXERCÍCIO 7 — ESCOLHA O TEMPO CORRETO
 
 Complete com o verbo no tempo adequado (presente, passado ou futuro).
 
-1. Сего́дня я ____ кни́гу. (чита́ть)
-2. Вчера́ я ____ кни́гу. (чита́ть) — homem
-3. За́втра я ____ кни́гу. (чита́ть)
-4. Сего́дня она́ ____ по-ру́сски. (говори́ть)
-5. Вчера́ она́ ____ по-ру́сски. (говори́ть)
-6. За́втра она́ ____ по-ру́сски. (говори́ть)
-7. Сейча́с мы ____. (рабо́тать)
-8. Вчера́ мы ____. (рабо́тать)
-9. За́втра мы ____. (рабо́тать)
+1. 1. Сего́дня я ____ кни́гу. (чита́ть)
+2. 2. Вчера́ я ____ кни́гу. (чита́ть) — homem
+3. 3. За́втра я ____ кни́гу. (чита́ть)
+4. 4. Сего́дня она́ ____ по-ру́сски. (говори́ть)
+5. 5. Вчера́ она́ ____ по-ру́сски. (говори́ть)
+6. 6. За́втра она́ ____ по-ру́сски. (говори́ть)
+7. 7. Сейча́с мы ____. (рабо́тать)
+8. 8. Вчера́ мы ____. (рабо́тать)
+9. 9. За́втра мы ____. (рабо́тать)
 
-Exercício 8 — Desafio dos três tempos
+EXERCÍCIO 8 — DESAFIO DOS TRÊS TEMPOS
 
 Escreva a mesma frase nos três tempos (passado, presente, futuro) com o verbo indicado.
 
 Modelo: читать (homem)
 
-- Passado: Вчера́ я чита́л.
-- Presente: Сего́дня я чита́ю.
-- Futuro: За́втра я бу́ду чита́ть.
-1. говори́ть (homem): ____, ____, ____
-2. рабо́тать (mulher): ____, ____, ____
-3. жить (homem): ____, ____, ____
-4. знать (mulher): ____, ____, ____
-5. люби́ть (homem): ____, ____, ____
+Passado: Вчера́ я чита́л.
 
-Exercício 9 — Traduza o diálogo
+Presente: Сего́дня я чита́ю.
 
-— O que você fazia ontem?
-— Ontem eu trabalhava.
-— E o que você vai fazer amanhã?
-— Amanhã eu vou ler um livro. E você?
-— Eu vou falar russo com meus amigos.
-— Você sabe russo?
-— Sim, um pouco. Ontem eu estudava.
+Futuro: За́втра я бу́ду чита́ть.
 
-Exercício 10 — Produza
+1. 1. говори́ть (homem): ____, ____, ____
+2. 2. рабо́тать (mulher): ____, ____, ____
+3. 3. жить (homem): ____, ____, ____
+4. 4. знать (mulher): ____, ____, ____
+5. 5. люби́ть (homem): ____, ____, ____
+
+EXERCÍCIO 9 — TRADUZA O DIÁLOGO
+
+— O que você fazia ontem? — Ontem eu trabalhava. — E o que você vai fazer amanhã? — Amanhã eu vou ler um livro. E você? — Eu vou falar russo com meus amigos. — Você sabe russo? — Sim, um pouco. Ontem eu estudava.
+
+EXERCÍCIO 10 — PRODUZA
 
 Escreva 6 frases sobre a sua vida: 2 no passado, 2 no presente, 2 no futuro.
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+1.
 
-Exercício 11 — Desafio final
+2.
+
+3.
+
+4. 5.
+
+6.
+
+EXERCÍCIO 11 — DESAFIO FINAL
 
 Complete o texto com o verbo no tempo correto (presente, passado ou futuro).
 
@@ -697,91 +735,85 @@ Complete o texto com o verbo no tempo correto (presente, passado ou futuro).
 
 ## 5.16 GABARITO
 
-Exercício 1:
+EXERCÍCIO 1:
 
-1. чита- — 2. говор- — 3. работа- — 4. жи- — 5. зна- — 6. люб- — 7. смотре- — 8. писа-
+1. 1. чита- — 2. говор- — 3. работа- — 4. жи- — 5. зна- — 6. люб- — 7. смотре- —
+8. 8. писа-
 
-Exercício 2:
+EXERCÍCIO 2:
 
-1. чита́л, чита́ла, чита́ло, чита́ли
-2. говори́л, говори́ла, говори́ло, говори́ли
-3. рабо́тал, рабо́тала, рабо́тало, рабо́тали
-4. жил, жила́, жи́ло, жи́ли
-5. знал, зна́ла, зна́ло, зна́ли
+1. 1. чита́л, чита́ла, чита́ло, чита́ли
+2. 2. говори́л, говори́ла, говори́ло, говори́ли
+3. 3. рабо́тал, рабо́тала, рабо́тало, рабо́тали
+4. 4. жил, жила́, жи́ло, жи́ли
+5. 5. знал, зна́ла, зна́ло, зна́ли
 
-Exercício 3:
+EXERCÍCIO 3:
 
-1. чита́л — 2. говори́ла — 3. рабо́тали — 4. жил — 5. была́ — 6. бы́ли — 7. была́ — 8. знал — 9. не зна́ла — 10. люби́л
+1. 1. чита́л — 2. говори́ла — 3. рабо́тали — 4. жил — 5. была́ — 6. бы́ли — 7. была́ — 8. знал — 9. не зна́ла — 10. люби́л
 
-Exercício 4:
+EXERCÍCIO 4:
 
-1. ла — 2. л — 3. л — 4. ла — 5. ла — 6. л — 7. л — 8. ла
+1. 1. ла — 2. л — 3. л — 4. ла — 5. ла — 6. л — 7. л — 8. ла
 
 Explicação: o sujeito manda. Na frase 1, o sujeito é "ты" dirigido a uma mulher → -ла. Na frase 2, o sujeito é "ты" dirigido a um homem → -л. E assim por diante.
 
-Exercício 5:
+EXERCÍCIO 5:
 
-1. бу́ду — 2. бу́дешь — 3. бу́дет — 4. бу́дем — 5. бу́дете — 6. бу́дут — 7. бу́ду — 8. бу́дет
+1. 1. бу́ду — 2. бу́дешь — 3. бу́дет — 4. бу́дем — 5. бу́дете — 6. бу́дут — 7. бу́ду — 8. бу́дет
 
-Exercício 6:
+EXERCÍCIO 6:
 
-1. Вчера́ я чита́л кни́гу. — 2. Вчера́ она́ рабо́тала до́ма. — 3. Мы жи́ли в Москве́. — 4. Я была́ до́ма. — 5. Они́ бы́ли в теа́тре. — 6. За́втра я бу́ду чита́ть. — 7. Мы бу́дем рабо́тать вме́сте. — 8. Он бу́дет говори́ть по-ру́сски. — 9. Я не бу́ду рабо́тать за́втра. — 10. Она́ бу́дет жить в Москве́.
+1. 1. Вчера́ я чита́л кни́гу. — 2. Вчера́ она́ рабо́тала до́ма. — 3. Мы жи́ли в Москве́. — 4. Я была́ до́ма. — 5. Они́ бы́ли в теа́тре. — 6. За́втра я бу́ду чита́ть. — 7. Мы бу́дем рабо́тать вме́сте. — 8. Он бу́дет говори́ть по- ру́сски. — 9. Я не бу́ду рабо́тать за́втра. — 10. Она́ бу́дет жить в Москве́.
 
-Exercício 7:
+EXERCÍCIO 7:
 
-1. чита́ю — 2. чита́л — 3. бу́ду чита́ть — 4. говори́т — 5. говори́ла — 6. бу́дет говори́ть — 7. рабо́таем — 8. рабо́тали — 9. бу́дем рабо́тать
+1. 1. чита́ю — 2. чита́л — 3. бу́ду чита́ть — 4. говори́т — 5. говори́ла — 6. бу́дет говори́ть — 7. рабо́таем — 8. рабо́тали — 9. бу́дем рабо́тать
 
-Exercício 8:
+EXERCÍCIO 8:
 
-1. Вчера́ я говори́л / Сего́дня я говорю́ / За́втра я бу́ду говори́ть.
-2. Вчера́ я рабо́тала / Сего́дня я рабо́таю / За́втра я бу́ду рабо́тать.
-3. Вчера́ я жил / Сего́дня я живу́ / За́втра я бу́ду жить.
-4. Вчера́ я зна́ла / Сего́дня я зна́ю / За́втра я бу́ду знать.
-5. Вчера́ я люби́л / Сего́дня я люблю́ / За́втра я бу́ду люби́ть.
+1. 1. Вчера́ я говори́л / Сего́дня я говорю́ / За́втра я бу́ду говори́ть.
+2. 2. Вчера́ я рабо́тала / Сего́дня я рабо́таю / За́втра я бу́ду рабо́тать.
+3. 3. Вчера́ я жил / Сего́дня я живу́ / За́втра я бу́ду жить.
+4. 4. Вчера́ я зна́ла / Сего́дня я зна́ю / За́втра я бу́ду знать.
+5. 5. Вчера́ я люби́л / Сего́дня я люблю́ / За́втра я бу́ду люби́ть.
 
-Exercício 9:
-— Что ты де́лал вчера́? (ou де́лала, se quem pergunta sabe que é mulher)
-— Вчера́ я рабо́тал. (homem) / рабо́тала (mulher)
-— А что ты бу́дешь де́лать за́втра?
-— За́втра я бу́ду чита́ть кни́гу. А ты?
-— Я бу́ду говори́ть по-ру́сски с мои́ми друзья́ми.
-— Ты зна́ешь ру́сский?
-— Да, немно́го. Вчера́ я изуча́л. (homem) / изуча́ла (mulher)
+Exercício 9: — Что ты де́лал вчера́? (ou де́лала, se quem pergunta sabe que é mulher) — Вчера́ я рабо́тал. (homem) / рабо́тала (mulher) — А что ты бу́дешь де́лать за́втра? — За́втра я бу́ду чита́ть кни́гу. А ты? — Я бу́ду говори́ть по-ру́сски с мои́ми друзья́ми. — Ты зна́ешь ру́сский? — Да, немно́го. Вчера́ я изуча́л. (homem) / изуча́ла (mulher)
 
-Exercício 10:
-Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.
+Exercício 10: Resposta pessoal. Verifique o gênero no passado e o uso de буду no futuro.
 
-Exercício 11:
-чита́л, чита́ю, бу́ду чита́ть; рабо́тала, рабо́тает, бу́дет рабо́тать; живём, жи́ли, бу́дем жить.
+Exercício 11: чита́л, чита́ю, бу́ду чита́ть; рабо́тала, рабо́тает, бу́дет рабо́тать; живём, жи́ли, бу́дем жить.
 
 
 ## 5.17 RESUMO DE BOLSO — AULA 5
 
 PASSADO:
 
-1. Corte -ТЬ do infinitivo. Você tem a raiz.
-2. Cole a terminação de passado.
-3. As terminações são: -Л (masc.), -ЛА (fem.), -ЛО (neutro), -ЛИ (plural).
-4. A grande diferença: o passado não concorda com a pessoa. Concorda com o gênero do sujeito.
-5. Se você é homem e diz "eu lia", é я чита́л. Se você é mulher, é я чита́ла.
-6. A pergunta crucial: se um homem pergunta a uma mulher, ele usa -ЛА (porque o sujeito é ela, mulher). Se uma mulher pergunta a um homem, ela usa -Л (porque o sujeito é ele, homem). A terminação segue o sujeito, não quem fala.
-7. Irregulares: быть → был/была́/бы́ло/бы́ли; идти → шёл/шла/шло/шли; мочь → мог/могла́/могло́/могли́; есть → ел/е́ла/е́ло/е́ли.
+1. 1. Corte -ТЬ do infinitivo. Você tem a raiz.
+2. 2. Cole a terminação de passado.
+3. 3. As terminações são: -Л (masc.), -ЛА (fem.), -ЛО (neutro), -ЛИ (plural).
+4. 4. A grande diferença: o passado não concorda com a pessoa. Concorda com o gênero do sujeito.
+5. 5. Se você é homem e diz "eu lia", é я чита́л. Se você é mulher, é я чита́ла.
+6. 6. A pergunta crucial: se um homem pergunta a uma mulher, ele usa -ЛА (porque o sujeito é ela, mulher). Se uma mulher pergunta a um homem, ela usa -Л (porque o sujeito é ele, homem). A terminação segue o sujeito, não quem fala.
+7. 7. Irregulares: быть → был/была́/бы́ло/бы́ли; идти → шёл/шла/шло/шли; мочь → мог/могла́/могло́/могли́; есть → ел/е́ла/е́ло/е́ли.
 
 FUTURO:
 
-1. Conjugue быть no futuro: бу́ду, бу́дешь, бу́дет, бу́дем, бу́дете, бу́дут.
-2. Cole o infinitivo do verbo principal.
-3. Pronto.
-4. O verbo principal não muda. Nunca.
-5. O futuro não tem gênero. Я бу́ду чита́ть serve para homem e mulher.
-6. Nunca diga "бу́ду быть". Basta "бу́ду".
-7. Negação: не antes de буду. Я не бу́ду чита́ть.
+1. 1. Conjugue быть no futuro: бу́ду, бу́дешь, бу́дет, бу́дем, бу́дете, бу́дут.
+2. 2. Cole o infinitivo do verbo principal.
+3. 3. Pronto.
+4. 4. O verbo principal não muda. Nunca.
+5. 5. O futuro não tem gênero. Я бу́ду чита́ть serve para homem e mulher.
+6. 6. Nunca diga "бу́ду быть". Basta "бу́ду".
+7. 7. Negação: не antes de буду. Я не бу́ду чита́ть.
 
 OS TRÊS TEMPOS JUNTOS:
 
-- Вчера́ я чита́л / чита́ла. (passado em andamento)
-- Сего́дня я чита́ю. (presente)
-- За́втра я бу́ду чита́ть. (futuro incerto)
+Вчера́ я чита́л / чита́ла. (passado em andamento)
+
+Сего́дня я чита́ю. (presente)
+
+За́втра я бу́ду чита́ть. (futuro incerto)
 
 É isso. Você agora pode contar a vida: o que fazia ontem, o que faz hoje, o que vai fazer amanhã.
 
@@ -791,3 +823,18 @@ OS TRÊS TEMPOS JUNTOS:
 Na próxima aula, você vai aprender o que fazer com o objeto da ação. Por que, ao dizer "eu leio o livro", o russo diz я чита́ю кни́гу — e a palavra livro muda de terminação?
 
 As terminações dos substantivos vão começar a se mover. E você vai entender exatamente para onde, e por quê. Spoiler: tem a ver com ação. E não é mistério nenhum.
+
+| SUJEITO | PASSADO (RAIZ + GÊNERO) | PRESENTE (RAIZ + PESSOA) | FUTURO COMPOSTO (БУ́ДУ + INFINITIVO) |
+|---|---|---|---|
+| RALUGNIS | Masculino (я, ты, он) | чита́л · был | я чита́ю · ты чита́ешь · он чита́ет | я бу́ду / ты бу́дешь / он бу́дет чита́ть |
+
+| Feminino (я, ты, она́) | чита́ла · была́ | я чита́ю · ты чита́ешь · она́ чита́ет | я бу́ду / ты бу́дешь / она́ бу́дет чита́ть |
+|---|---|---|---|
+| Neutro (оно́) | чита́ло · бы́ло | оно́ чита́ет | оно́ бу́дет чита́ть |
+
+| SUJEITO | PASSADO (RAIZ + GÊNERO) | PRESENTE (RAIZ + PESSOA) | FUTURO COMPOSTO (БУ́ДУ + INFINITIVO) |
+|---|---|---|---|
+| LARULP | Todos (мы, вы, они́) | чита́ли · бы́ли | мы чита́ем · вы чита́ете · они́ чита́ют | мы бу́дем / вы бу́дете / они́ бу́дут чита́ть |
+
+
+## Quadro-resumo · passado, presente e futuro

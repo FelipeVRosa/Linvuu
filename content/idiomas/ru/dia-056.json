@@ -198,25 +198,28 @@
         "min": 8,
         "itens": [
           {
-            "tipo": "fill-gap",
-            "enunciado": "Identifique o gênero e diga se muda дом (casa) → gênero ___, tem alma? ___, muda? ___",
+            "tipo": "producao",
+            "enunciado": "Identifique o gênero e diga se muda: Para cada palavra, diga o gênero (masc., fem., neutro), se tem alma ou não (só para masculino) e se muda no acusativo. дом (casa) → gênero ____, tem alma? ____, muda? ____",
             "respostaEsperada": "masc., não tem alma, não muda",
-            "explicacao": "masc., não tem alma, não muda",
             "id": "ru-014-L-101"
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Identifique o gênero e diga se muda кни́га (livro) → gênero ___, muda? ___",
+            "tipo": "producao",
+            "enunciado": "Identifique o gênero e diga se muda: Para cada palavra, diga o gênero (masc., fem., neutro), se tem alma ou não (só para masculino) e se muda no acusativo. кни́га (livro) → gênero ____, muda? ____",
             "respostaEsperada": "fem., muda",
-            "explicacao": "fem., muda",
             "id": "ru-014-L-102"
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Identifique o gênero e diga se muda друг (amigo) → gênero ___, tem alma? ___, muda? ___",
+            "tipo": "producao",
+            "enunciado": "Identifique o gênero e diga se muda: Para cada palavra, diga o gênero (masc., fem., neutro), se tem alma ou não (só para masculino) e se muda no acusativo. друг (amigo) → gênero ____, tem alma? ____, muda? ____",
             "respostaEsperada": "masc., tem alma, muda",
-            "explicacao": "masc., tem alma, muda",
             "id": "ru-014-L-103"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Identifique o gênero e diga se muda: Para cada palavra, diga o gênero (masc., fem., neutro), se tem alma ou não (só para masculino) e se muda no acusativo. окно́ (janela) → gênero ____, muda? ____",
+            "respostaEsperada": "neutro, não muda",
+            "id": "ru-014-L-104"
           },
           {
             "tipo": "fill-gap",
@@ -241,6 +244,13 @@
           },
           {
             "tipo": "fill-gap",
+            "enunciado": "Transforme as palavras abaixo no acusativo (se mudarem). окно́ → ___",
+            "respostaEsperada": "окно",
+            "explicacao": "окно́",
+            "id": "ru-014-L-204"
+          },
+          {
+            "tipo": "fill-gap",
             "enunciado": "Use o substantivo entre parênteses no acusativo. Я чита́ю ___. (кни́га)",
             "respostaEsperada": "книгу",
             "explicacao": "кни́гу",
@@ -262,24 +272,10 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Responda à pergunta mágica го́род (cidade) → tem alma? ___, acusativo: ___",
-            "respostaEsperada": "não, город",
-            "explicacao": "não, го́род",
-            "id": "ru-014-L-401"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Responda à pergunta mágica учи́тель (professor) → tem alma? ___, acusativo: ___",
-            "respostaEsperada": "sim, учителя",
-            "explicacao": "sim, учи́теля",
-            "id": "ru-014-L-402"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Responda à pergunta mágica музе́й (museu) → tem alma? ___, acusativo: ___",
-            "respostaEsperada": "não, музей",
-            "explicacao": "não, музе́й",
-            "id": "ru-014-L-403"
+            "enunciado": "Use o substantivo entre parênteses no acusativo. Мы пьём ___. (вода́)",
+            "respostaEsperada": "воду",
+            "explicacao": "во́ду",
+            "id": "ru-014-L-304"
           },
           {
             "tipo": "fill-gap",
@@ -304,6 +300,13 @@
           },
           {
             "tipo": "fill-gap",
+            "enunciado": "Nós bebemos água. → ___",
+            "respostaEsperada": "Мы пьём воду",
+            "explicacao": "Мы пьём во́ду.",
+            "id": "ru-014-L-504"
+          },
+          {
+            "tipo": "fill-gap",
             "enunciado": "Cada frase tem um erro de acusativo. Identifique e corrija. Я ви́жу кни́га. → ___",
             "respostaEsperada": "Я вижу книгу",
             "explicacao": "Я ви́жу кни́гу. (fem. muda)",
@@ -324,16 +327,11 @@
             "id": "ru-014-L-603"
           },
           {
-            "tipo": "producao",
-            "enunciado": "Encontre e corrija o erro: Cada frase tem um erro de acusativo. Identifique e corrija. Я ви́жу соба́ку. (está correta?)",
-            "respostaEsperada": "Está correta. Соба́ка é feminino, muda para соба́ку.",
-            "id": "ru-014-L-606"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Encontre e corrija o erro: Cada frase tem um erro de acusativo. Identifique e corrija. Я ви́жу врача́. (está correta?)",
-            "respostaEsperada": "Está correta. Врач é masculino animado, muda para врача́.",
-            "id": "ru-014-L-607"
+            "tipo": "fill-gap",
+            "enunciado": "Cada frase tem um erro de acusativo. Identifique e corrija. Я ви́жу окна́. → ___",
+            "respostaEsperada": "Я вижу окно",
+            "explicacao": "Я ви́жу окно́. (neutro não muda)",
+            "id": "ru-014-L-604"
           },
           {
             "tipo": "fill-gap",
@@ -350,16 +348,18 @@
             "id": "ru-014-L-702"
           },
           {
-            "tipo": "producao",
-            "enunciado": "Produza: Escreva 5 frases sobre o que você vê, lê, ama ou conhece, usando o acusativo.",
-            "respostaEsperada": "",
-            "id": "ru-014-L-801"
+            "tipo": "fill-gap",
+            "enunciado": "Desafio друг → ___",
+            "respostaEsperada": "Я вижу друга",
+            "explicacao": "Я ви́жу дру́га.",
+            "id": "ru-014-L-703"
           },
           {
-            "tipo": "producao",
-            "enunciado": "Produza: Escreva 5 frases sobre o que você vê, lê, ama ou conhece, usando o acusativo.",
-            "respostaEsperada": "",
-            "id": "ru-014-L-802"
+            "tipo": "fill-gap",
+            "enunciado": "Desafio окно́ → ___",
+            "respostaEsperada": "Я вижу окно",
+            "explicacao": "Я ви́жу окно́.",
+            "id": "ru-014-L-704"
           }
         ]
       },
@@ -367,8 +367,51 @@
         "tipo": "gramatica",
         "min": 3,
         "titulo": "Resumo de bolso",
-        "explicacao": "PASSO 1: • O caso acusativo é o caso da AÇÃO. É o caso do objeto: aquilo que é visto, lido, falado, comido, amado, escrito. PASSO 2: • Para os russos, só seres humanos e animais têm alma. Isso determina quem muda e quem não muda no acusativo. PASSO 3: • A regra em três linhas: FEMININO: SEMPRE MUDA. (а→у, я→ю, ь não muda) PASSO 4: • A pergunta mágica: casa tem alma? Não → não muda. Amigo tem alma? Sim → muda. PASSO 5: • Feminino em -а → -у (кни́га → кни́гу). PASSO 6: • Feminino em -я → -ю (семья́ → семью́). PASSO 7: • Feminino em -ь → não muda (ночь → ночь). PASSO 8: • Masculino inanimado → não muda (дом → дом). PASSO 9: • Masculino animado terminado em consoante → +а (друг → дру́га). PASSO 10: • Masculino animado terminado em -ь ou -й → -я (медве́дь → медве́дя; геро́й → геро́я). PASSO 11: • Neutro → nunca muda (окно́ → окно́; мо́ре → мо́ре; вре́мя → вре́мя).",
-        "tabelas": [],
+        "explicacao": "PASSO 1: • 1. O caso acusativo é o caso da AÇÃO. É o caso do objeto: aquilo que é visto, lido, falado, comido, amado, escrito. PASSO 2: • 2. Para os russos, só seres humanos e animais têm alma. Isso determina quem muda e quem não muda no acusativo. PASSO 3: • 3. A regra em três linhas: PASSO 4: FEMININO: SEMPRE MUDA. (а→у, я→ю, ь não muda) PASSO 5: MASCULINO: PERGUNTE \"TEM ALMA?\". Se tem, soma -а/-я. Se não tem, não muda. PASSO 6: NEUTRO: NUNCA MUDA. PASSO 7: • 4. A pergunta mágica: casa tem alma? Não → não muda. Amigo tem alma? Sim → muda. PASSO 8: • 5. Feminino em -а → -у (кни́га → кни́гу). PASSO 9: • 6. Feminino em -я → -ю (семья́ → семью́). PASSO 10: • 7. Feminino em -ь → não muda (ночь → ночь). PASSO 11: • 8. Masculino inanimado → não muda (дом → дом). PASSO 12: • 9. Masculino animado terminado em consoante → +а (друг → дру́га). PASSO 13: • 10. Masculino animado terminado em -ь ou -й → -я (медве́дь → медве́дя; геро́й → геро́я). PASSO 14: • 11. Neutro → nunca muda (окно́ → окно́; мо́ре → мо́ре; вре́мя → вре́мя). PASSO 15: inanimado | qualquer | igual ao nominativo | столы́ → столы́ города́ → города́",
+        "tabelas": [
+          {
+            "linhas": [
+              {
+                "GÊNERO": "ONILUCSAM",
+                "TERMINAÇÃO NO NOMINATIVO": "animado",
+                "TERMINAÇÃO NO ACUSATIVO": "consoante + а · ь",
+                "EXEMPLO": "muda: а · я"
+              }
+            ]
+          },
+          {
+            "linhas": [
+              {
+                "inanimado": "ONINIMEF",
+                "consoante · й": "sempre",
+                "não muda": "а",
+                "дом → дом стол → стол": "muda para у"
+              }
+            ]
+          },
+          {
+            "linhas": [
+              {
+                "sempre": "sempre",
+                "я": "ь",
+                "muda para ю": "não muda",
+                "тётя → тётю": "мать → мать"
+              },
+              {
+                "sempre": "ORTUEN",
+                "я": "sempre",
+                "muda para ю": "о · е",
+                "тётя → тётю": "nunca muda"
+              },
+              {
+                "sempre": "LARULP",
+                "я": "animado",
+                "muda para ю": "consoante · ь · а",
+                "тётя → тётю": "+ ов · ей · sem terminação"
+              }
+            ]
+          }
+        ],
         "tag": "Resumo"
       }
     ]

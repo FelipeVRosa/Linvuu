@@ -80,7 +80,7 @@ async function startServer() {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       const m = metaDaRota(req.path, dadosMeta);
-      res.status(m.status).type('html').send(aplicarMeta(htmlBase, m, SITE_URL));
+      res.status(m.status).type('html').send(aplicarMeta(htmlBase, m, SITE_URL, dadosMeta));
     });
   } else {
     const vite = await createViteServer({

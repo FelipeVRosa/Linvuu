@@ -128,11 +128,47 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   return naoEncontrada(p, loc);
 }
 
+
+/**
+ * Conteúdo mínimo dentro de <div id="root"> para quem não executa JavaScript (ou ainda não renderizou):
+ * título, descrição e links reais. O React substitui tudo isto ao carregar, então o visitante não vê diferença.
+ */
+export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): string {
+  if (m.status !== 200 || m.semIndice) return '';
+  const tx = TX[loc.codigo];
+  const a = (href: string, texto: string) => `<a href="${esc(caminhoEm(loc.codigo, href))}">${esc(texto)}</a>`;
+  const li = (itens: string[]) => (itens.length ? `<ul>${itens.map((i) => `<li>${i}</li>`).join('')}</ul>` : '');
+  const cabeca = (t: string, desc?: string) => `<h1>${esc(t)}</h1>${desc ? `<p>${esc(desc)}</p>` : ''}`;
+  const nome = (c: CursoMeta) => ({ ...c, ...(c.i18n?.[loc.codigo] ?? {}) });
+  const visiveis = (d?.cursos ?? []).filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto).map(nome);
+  const base = semPrefixo(m.caminho);
+  let corpo = '';
+  if (base === '/' || base === '/cursos') {
+    const home = HOME[loc.codigo];
+    corpo = cabeca(home.titulo ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`));
+  } else {
+    const mc = base.match(/^\/curso\/([^/]+)$/);
+    const md = base.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
+    if (mc) {
+      const c = visiveis.find((x) => x.id === mc[1]);
+      const grupos = d?.indice[mc[1]]?.grupos ?? [];
+      const tr = d?.indice[mc[1]]?.tr?.[loc.explicacao]?.g;
+      const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
+      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.map((g) => a(`/curso/${mc[1]}/dia/${g.dias[0]}`, `${tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]}`)));
+    } else if (md) {
+      corpo = cabeca(m.titulo ?? '', m.descricao) + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
+    } else if (m.titulo) {
+      corpo = cabeca(m.titulo, m.descricao);
+    }
+  }
+  return corpo ? `<main data-prerender>${corpo}</main>` : '';
+}
+
 const SITE = 'https://linvuu.com.br';
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-export function aplicarMeta(html: string, m: MetaRota, site: string): string {
+export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMeta | null = null): string {
   let out = html;
   const troca = (re: RegExp, valor: string) => { out = out.replace(re, (_t, a: string, b: string) => a + valor + b); };
   const loc = m.locale ?? LOCALES[0];
@@ -157,6 +193,8 @@ export function aplicarMeta(html: string, m: MetaRota, site: string): string {
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
+  const conteudo = conteudoRota(m, d, loc);
+  if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${conteudo}</div>`);
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
   return out;
 }

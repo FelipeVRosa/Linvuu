@@ -73,7 +73,8 @@ export default function Dia() {
             <span className="kicker-pagina">
               {aula.aula ? T.kickerAula(aula.aula.numero, aula.sessao?.sessao.replace('S', '') ?? '', aula.aula.sessoes, aula.sessao?.duracaoMin ?? 30) : T.kickerDia(dia, total, fase?.titulo ?? '', NIVEL_LABEL[aula.nivel])}
             </span>
-            <h1 className="pagina-h1">{aula.titulo}</h1>
+            {aula.aula && <p className="kicker-aula-titulo">{aula.aula.titulo}</p>}
+            <h1 className="pagina-h1">{aula.aula && aula.titulo.startsWith(`${aula.aula.titulo}: `) ? aula.titulo.slice(aula.aula.titulo.length + 2) : aula.titulo}</h1>
             <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : T.objetivoDia(aula.objetivo)}</p>
             {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>

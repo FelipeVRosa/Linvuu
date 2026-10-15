@@ -191,13 +191,13 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       <h3 className="bloco-sub">{b.titulo}</h3>
       <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
-      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span><small className="trad">{e.pt}</small></li>)}</ul>}
+      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span> <Audio texto={e.ru} idioma={idioma} /><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}
       {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo}</span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>

@@ -20,8 +20,104 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você escolhe a palavra certa para a intensidade (a bit, quite, very, really, extremely), usa absolutely com adjetivos fortes (amazing, terrible), diferencia so de such, não confunde very com too e diz “gosto muito” com verbos sem separar o verbo do objeto."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Como foi o hotel?",
+        "contexto": "Emma volta de uma viagem a Boston e conta a Oliver como foi a hospedagem.",
+        "linhas": [
+          {
+            "personagem": "Oliver",
+            "ru": "— Welcome back! How was the hotel in Boston?",
+            "pt": "— Bem-vinda de volta! Como foi o hotel em Boston?",
+            "audio": "Welcome back! How was the hotel in Boston?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— It was really nice, but a bit small, and the room was quite noisy at night.",
+            "pt": "— Foi muito bom, mas um pouco pequeno, e o quarto era bastante barulhento à noite.",
+            "audio": "It was really nice, but a bit small, and the room was quite noisy at night."
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— Was it expensive?",
+            "pt": "— Era caro?",
+            "audio": "Was it expensive?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Pretty expensive, yes, but not too expensive for a week downtown. And the location was absolutely perfect.",
+            "pt": "— Bem caro, sim, mas não caro demais para uma semana no centro. E a localização era absolutamente perfeita.",
+            "audio": "Pretty expensive, yes, but not too expensive for a week downtown. And the location was absolutely perfect."
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— What about the food?",
+            "pt": "— E a comida?",
+            "audio": "What about the food?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— The breakfast was so good! It was such a big buffet that I couldn't try everything. And the staff were extremely friendly.",
+            "pt": "— O café da manhã era tão bom! Era um buffet tão grande que eu não consegui experimentar tudo. E os funcionários eram extremamente simpáticos.",
+            "audio": "The breakfast was so good! It was such a big buffet that I couldn't try everything. And the staff were extremely friendly."
+          },
+          {
+            "personagem": "Oliver",
+            "ru": "— Did you sleep well?",
+            "pt": "— Você dormiu bem?",
+            "audio": "Did you sleep well?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Not very well. The street was too noisy, and the walls aren't thick enough. But I enjoyed the city very much.",
+            "pt": "— Não muito bem. A rua era barulhenta demais, e as paredes não são grossas o suficiente. Mas eu gostei muito da cidade.",
+            "audio": "Not very well. The street was too noisy, and the walls aren't thick enough. But I enjoyed the city very much."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Much não é um “muito” para adjetivos. Com adjetivos e advérbios use very ou really: very hot, really fast. Much aparece com verbos negativos e perguntas (I don't like it much), com comparativos (much better) e com substantivos incontáveis (too much money). PASSO 2: Too traz um problema. Em português, “demais” pode ser só intensidade (“ela é legal demais”), mas too carrega a ideia de mais do que o necessário: too hot = quente a ponto de incomodar. Para elogiar, use so, really ou extremely. PASSO 3: Adjetivos fortes não aceitam very. Palavras como amazing, terrible, huge, exhausted já têm a intensidade dentro delas. Dizemos absolutely amazing ou really terrible, e não very amazing.",
+        "comparacao": "Em português, “muito” serve para tudo: “muito bom”, “muito calor”, “gosto muito”, “muita gente”, “muito mais”. O inglês tem uma palavra para cada situação, e usar much no lugar errado soa estranho. Veja o que costuma escorregar:",
+        "tabela": [
+          {
+            "portugues": "Está muito calor!",
+            "ingles": "It's very hot! / It's really hot!",
+            "evite": "It's much hot!"
+          },
+          {
+            "portugues": "Eu gosto muito disso.",
+            "ingles": "I like it a lot. / I really like it.",
+            "evite": "I like it very. / I like much."
+          },
+          {
+            "portugues": "Que filme tão bom!",
+            "ingles": "What a good movie! / It's such a good movie!",
+            "evite": "It's so a good movie!"
+          },
+          {
+            "portugues": "O filme foi maravilhoso.",
+            "ingles": "The movie was absolutely wonderful.",
+            "evite": "The movie was very wonderful."
+          },
+          {
+            "portugues": "Estou feliz demais. (= muito feliz)",
+            "ingles": "I'm so happy! / I'm really happy!",
+            "evite": "I'm too happy!"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "so",
@@ -83,7 +179,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "So + adjetivo, such + (a) + substantivo",
         "explicacao": "PASSO 1: «so» vem antes de ADJETIVO ou ADVÉRBIO: «The film was so good.» «She speaks so fast.» PASSO 2: «such» vem antes de SUBSTANTIVO (com ou sem adjetivo): «It was such a good film.» PASSO 3: com singular contável: «such a/an + (adjetivo) + substantivo»: «such a long day.» PASSO 4: com plural ou incontável, sem artigo: «such good friends», «such good weather». PASSO 5: resultado com «that»: «It was so cold that we stayed home.» «It was such a cold day that we stayed home.» PASSO 6: «so much / so many» + substantivo: «so much noise», «so many people». PASSO 7: em português «tão» serve para os dois casos; em inglês você escolhe pela classe da palavra seguinte.",
         "comparacao": "em português dizemos «tão bom» e «um dia tão longo» com a mesma palavra «tão». Em inglês: «so good», mas «such a long day».",
@@ -135,12 +231,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva 5 coisas do seu dia usando «so» e «such»: o trânsito, o tempo, uma refeição."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale do que você terá feito até o fim do ano e do que estará fazendo amanhã às 8h."
       }
     ]

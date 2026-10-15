@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -199,14 +199,126 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto de um mistério que você viveu e como deduziu a resposta."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Faça três deduções sobre o presente: uma com must be, uma com might be e uma com can't be.",
+            "respostaEsperada": "You worked all day, so you must be tired; Sarah isn't here yet, so she might be in traffic; and that coat can't be mine because mine is black!",
+            "id": "en-051-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte uma coisa que você se arrepende de não ter feito na semana passada (I should have…) e uma que se arrepende de ter feito (I shouldn't have…).",
+            "respostaEsperada": "Last week I should have gone to the gym more often, and I shouldn't have spent so much money on delivery.",
+            "id": "en-051-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Você chegou em casa e viu que a janela estava aberta e seu gato sumiu: faça uma dedução com must have + 3ª coluna e uma com might have + 3ª coluna.",
+            "respostaEsperada": "My cat must have jumped out of the window, and it might have gone into the neighbor's garden!",
+            "id": "en-051-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga para um amigo uma alternativa melhor que ele poderia ter usado na viagem dele com You could have + 3ª coluna.",
+            "respostaEsperada": "You could have booked the flight two months ago for half the price!",
+            "id": "en-051-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She just ran 10 kilometers, so she must to be very thirsty!",
+            "respostaEsperada": "She just ran 10 kilometers, so she must be very thirsty!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: That news mustn't be true — it's completely impossible!",
+            "respostaEsperada": "That news can't be true — it's completely impossible!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I should called you yesterday, I'm so sorry!",
+            "respostaEsperada": "I should have called you yesterday, I'm so sorry!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: He must forgot our meeting this morning.",
+            "respostaEsperada": "He must have forgotten our meeting this morning.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: You should of told me that you needed a ride to the airport!",
+            "respostaEsperada": "You should have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I shouldn't have eat so much pasta at dinner last night.",
+            "respostaEsperada": "I shouldn't have eaten so much pasta at dinner last night.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: You must have been really happy when you got the promotion!",
+            "respostaEsperada": "OK",
+            "id": "en-051-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: Os três erros mais comuns com os modais de dedução e de passado são: usar mustn't be para dedução negativa (o certo para “não pode ser verdade” é can't be), esquecer o have ou colocar a 2ª coluna depois do modal no passado (I should went / He must forgot em vez de I should have gone / He must have forgotten) e escrever should of em vez de should have / should've. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "That mustn't be true!",
+            "certo": "That can't be true!",
+            "motivo": "Na dedução lógica negativa (“é impossível que seja”), usa-se can't be."
+          },
+          {
+            "errado": "I should called you yesterday.",
+            "certo": "I should have called you yesterday.",
+            "motivo": "Modais não aceitam verbo no passado direto depois deles; exigem have + 3ª coluna."
+          },
+          {
+            "errado": "He must forgot the address.",
+            "certo": "He must have forgotten the address.",
+            "motivo": "Dedução sobre o passado exige must have + 3ª coluna (forgotten)."
+          },
+          {
+            "errado": "I shouldn't have eat that.",
+            "certo": "I shouldn't have eaten that.",
+            "motivo": "Após have, o verbo vai obrigatoriamente para a 3ª coluna (eaten)."
+          },
+          {
+            "errado": "You could of told me!",
+            "certo": "You could have (could've) told me!",
+            "motivo": "O som 've (ãv) é a contração do verbo have, e não da preposição of."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Faça deduções sobre 3 situações imaginárias, no presente e no passado."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 9 e 25. Compare os dois sentidos de must: (a) Passengers must show their passport at the gate. (b) You worked for 14 hours today — you must be exhausted! Qual frase expressa uma regra/obrigação e qual expressa uma dedução lógica? E qual é a negativa de cada uma? 2. Do Capítulo 22 e 25. Compare: If you had told me, I would have helped you vs. Why didn't you tell me? I could have helped you!. 3. Do Capítulo 24. Relate esta frase: Sarah: “David must be stuck in traffic.” → Sarah said that…."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Fazer deduções sobre o presente usando must be, might be e can't be. · Fazer deduções sobre o passado usando must have, might have e can't have + 3ª coluna. · Expressar arrependimentos e alternativas no passado com should have, shouldn't have e could have + 3ª coluna entendendo as contrações faladas (should've / could've / must've)."
       }
     ]
   },

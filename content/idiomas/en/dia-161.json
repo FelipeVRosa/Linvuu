@@ -20,8 +20,93 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você fala de situações hipotéticas ou imaginárias no presente/futuro usando a Second Conditional (If I had…, I would… e If I were you…), analisa como o passado teria sido diferente usando a Third Conditional (If I had known…, I would have…) e expressa desejos e arrependimentos com I wish."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Refletindo sobre uma proposta de emprego e o projeto passado",
+        "contexto": "Marina e Lucas tomam um café depois do expediente e conversam sobre uma proposta de trabalho que ela recebeu em Londres e sobre um erro do projeto do mês anterior.",
+        "linhas": [
+          {
+            "personagem": "Lucas",
+            "ru": "— Marina, what are you going to do about that job offer in London? It's a huge opportunity!",
+            "pt": "— Marina, o que você vai fazer sobre aquela proposta de emprego em Londres? É uma oportunidade imensa!",
+            "audio": "Marina, what are you going to do about that job offer in London? It's a huge opportunity!"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— I know, Lucas, but it's a tough decision. If I didn't have a contract with our Boston office until December, I'd accept the offer immediately.",
+            "pt": "— Eu sei, Lucas, mas é uma decisão difícil. Se eu não tivesse um contrato com o nosso escritório de Boston até dezembro, eu aceitaria a proposta imediatamente.",
+            "audio": "I know, Lucas, but it's a tough decision. If I didn't have a contract with our Boston office until December, I'd accept the offer immediately."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— If I were you, I'd talk to Richard tomorrow! If you explained the situation to him, maybe he'd let you transfer to our European branch.",
+            "pt": "— Se eu fosse você, eu falaria com o Richard amanhã! Se você explicasse a situação para ele, talvez ele deixasse você se transferir para a nossa filial europeia.",
+            "audio": "If I were you, I'd talk to Richard tomorrow! If you explained the situation to him, maybe he'd let you transfer to our European branch."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— That's true! If I lived in London, I'd be much closer to my sister in Lisbon. I wish I didn't have to decide so quickly!",
+            "pt": "— É verdade! Se eu morasse em Londres, ficaria muito mais perto da minha irmã em Lisboa. Eu queria não ter que decidir tão rápido!",
+            "audio": "That's true! If I lived in London, I'd be much closer to my sister in Lisbon. I wish I didn't have to decide so quickly!"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— By the way, how did the meeting about last month's delay go?",
+            "pt": "— Aliás, como foi a reunião sobre o atraso do mês passado?",
+            "audio": "By the way, how did the meeting about last month's delay go?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— It went well, but we learned a big lesson. If the supplier had warned us about the problem earlier, we wouldn't have lost those two clients.",
+            "pt": "— Foi bem, mas aprendemos uma grande lição. Se o fornecedor tivesse nos avisado sobre o problema mais cedo, não teríamos perdido aqueles dois clientes.",
+            "audio": "It went well, but we learned a big lesson. If the supplier had warned us about the problem earlier, we wouldn't have lost those two clients."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Exactly. And if we had tested the system in September, we would have found the bug in time. I wish we had started the tests two weeks earlier!",
+            "pt": "— Exatamente. E se tivéssemos testado o sistema em setembro, teríamos encontrado o erro a tempo. Eu bem que queria que tivéssemos começado os testes duas semanas mais cedo!",
+            "audio": "Exactly. And if we had tested the system in September, we would have found the bug in time. I wish we had started the tests two weeks earlier!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: A regra continua valendo: não se usa would na cláusula do If. Assim como o will não aparece depois do if na First Conditional (Cap. 21), o would também não entra na cláusula do If da Second e da Third Conditional. Depois do If, vem um tempo do passado (Past Simple para hipóteses de hoje; Past Perfect had + 3ª para hipóteses sobre o passado). PASSO 2: O segredo do “passo para trás no tempo”: Em inglês, sempre que queremos mostrar que algo é imaginário, irreal ou contrário à realidade (depois de If imaginário ou depois de I wish), damos um passo para trás no tempo verbal: PASSO 3: Se o desejo ou hipótese é sobre HOJE (Presente) → o verbo dá um passo para trás e vai para o Passado Simples (I don't have time today → If I had time today / I wish I had time today). PASSO 4: Se o desejo ou hipótese é sobre ONTEM (Passado já encerrado) → o verbo dá mais um passo para trás e vai para o Past Perfect (had + 3ª coluna) (I didn't know yesterday → If I had known yesterday / I wish I had known yesterday).",
+        "comparacao": "Em português, dizemos “Se eu tivesse tempo” (pretérito imperfeito do subjuntivo), “Se eu fosse você” e “Se você tivesse me ligado, eu teria ido”. Ao passar para o inglês, o brasileiro cai em quatro armadilhas clássicas:",
+        "tabela": [
+          {
+            "portugues": "Se eu tivesse mais tempo, viajaria mais.",
+            "ingles": "If I had more time, I'd travel more.",
+            "evite": "If I would have more time…"
+          },
+          {
+            "portugues": "Se eu fosse você, não compraria isso.",
+            "ingles": "If I were you, I wouldn't buy that.",
+            "evite": "If I was you, I don't buy that. (no padrão culto, were)."
+          },
+          {
+            "portugues": "Se eu soubesse (ontem), teria te ajudado.",
+            "ingles": "If I had known, I would have helped you.",
+            "evite": "If I knew yesterday / If I would have known…"
+          },
+          {
+            "portugues": "Queria falar alemão fluentemente!",
+            "ingles": "I wish I spoke (ou could speak) German!",
+            "evite": "I wish I speak German!"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "would",
@@ -83,7 +168,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "O segundo condicional",
         "explicacao": "PASSO 1: o segundo condicional fala de situações IRREAIS ou muito IMPROVÁVEIS no presente ou no futuro: «If I won the lottery, I would travel the world.» PASSO 2: a estrutura: «If + passado simples, would + verbo simples». PASSO 3: o «passado» depois do «if» não é passado de tempo: é uma marca de irrealidade. PASSO 4: com o verbo «be», use «were» para todas as pessoas (formal): «If I were rich…», «If she were here…» No dia a dia, «was» também aparece. PASSO 5: «If I were you, I would…» dá conselho: «If I were you, I would talk to him.» PASSO 6: negativa: «wouldn't»: «I wouldn't do that.» PASSO 7: pergunta: «What would you do if you won the lottery?» PASSO 8: compare com o primeiro condicional (real): «If I win, I will travel.» (possível) × «If I won, I would travel.» (improvável).",
         "comparacao": "em português usamos o imperfeito do subjuntivo e o futuro do pretérito: «se eu ganhasse, viajaria». O inglês faz o mesmo com «If + passado, would + verbo». O que muda é a forma, não a ideia.",
@@ -131,12 +216,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Complete 5 frases: «If I won the lottery, I would…»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte uma história com past perfect: algo que já tinha acontecido antes."
       }
     ]

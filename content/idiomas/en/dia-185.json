@@ -20,8 +20,99 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você relata o que um cliente, chefe ou amigo disse usando o discurso indireto (Reported Speech) com o recuo de tempo verbal (am/is → was, will → would, can → could, have/did → had), distingue say de tell e relata perguntas e pedidos (asked me if… / told me to…)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Passando o resumo da reunião com o cliente",
+        "contexto": "Marina não pôde participar da chamada de manhã com o cliente suíço Oliver, então o colega Kevin conta para ela tudo o que foi dito.",
+        "linhas": [
+          {
+            "personagem": "Marina",
+            "ru": "— Kevin, how did the call with Oliver go this morning? What did he say about our new design?",
+            "pt": "— Kevin, como foi a chamada com o Oliver hoje de manhã? O que ele disse sobre o nosso novo design?",
+            "audio": "Kevin, how did the call with Oliver go this morning? What did he say about our new design?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— It went really well, Marina! He said that he loved the new layout, and he told me that his team was testing the prototype right now.",
+            "pt": "— Foi muito bem, Marina! Ele disse que adorou o novo layout, e me contou que a equipe dele estava testando o protótipo agora.",
+            "audio": "It went really well, Marina! He said that he loved the new layout, and he told me that his team was testing the prototype right now."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— That's great news! Did he say when they would launch the product in Europe?",
+            "pt": "— Que ótima notícia! Ele disse quando eles lançariam o produto na Europa?",
+            "audio": "That's great news! Did he say when they would launch the product in Europe?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— He said they would probably launch it in March, because they needed a few more weeks to translate the manual.",
+            "pt": "— Ele disse que provavelmente o lançariam em março, porque precisavam de mais algumas semanas para traduzir o manual.",
+            "audio": "He said they would probably launch it in March, because they needed a few more weeks to translate the manual."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Did he ask anything about the budget?",
+            "pt": "— Ele perguntou alguma coisa sobre o orçamento?",
+            "audio": "Did he ask anything about the budget?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— Yes! He asked me if we could include the training sessions in the package, and he asked what time you would be available for a quick call tomorrow.",
+            "pt": "— Sim! Ele me perguntou se nós poderíamos incluir as sessões de treinamento no pacote, e perguntou a que horas você estaria disponível para uma chamada rápida amanhã.",
+            "audio": "Yes! He asked me if we could include the training sessions in the package, and he asked what time you would be available for a quick call tomorrow."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Perfect. What else did he say before ending the call?",
+            "pt": "— Perfeito. O que mais ele disse antes de encerrar a chamada?",
+            "audio": "Perfect. What else did he say before ending the call?"
+          },
+          {
+            "personagem": "Kevin",
+            "ru": "— He told us to send him the final contract by Friday, and he asked us not to share the prototype screenshots on social media yet!",
+            "pt": "— Ele nos disse para enviarmos o contrato final até sexta-feira, e nos pediu para não compartilharmos as capturas de tela do protótipo nas redes sociais ainda!",
+            "audio": "He told us to send him the final contract by Friday, and he asked us not to share the prototype screenshots on social media yet!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: Say × tell: PASSO 2: say / said foca nas palavras ditas e não leva pessoa logo depois: He said (that) he was tired. (Se quiser colocar a pessoa depois de said, use a preposição to: He said to me that…). PASSO 3: tell / told foca em quem ouviu e pede uma pessoa (me, you, him, her, us, them, Sarah) logo depois, sem to: He told me (that) he was tired (e não He told that… nem He told to me). PASSO 4: Perguntas relatadas seguem a mesma regra das perguntas indiretas (Capítulo 20). Quando você relata uma pergunta (He asked me…), ela deixa de ser uma pergunta direta: o ponto de interrogação some, o auxiliar do / does / did some e a ordem volta a ser Sujeito + Verbo (He asked where I lived / She asked if I was ready).",
+        "comparacao": "Em português, misturamos “dizer” e “contar” com a preposição “para” (“Ele disse para mim / Ele me contou que…”) e, quando relatamos uma pergunta ou um pedido, usamos “que” + subjuntivo (“Ele pediu que eu enviasse”). Veja as quatro armadilhas que você precisa desarmar em inglês:",
+        "tabela": [
+          {
+            "portugues": "Ela disse para mim que estava ocupada.",
+            "ingles": "She told me (ou said to me) she was busy.",
+            "evite": "She said me / She told to me…"
+          },
+          {
+            "portugues": "Ele disse que estava ocupado.",
+            "ingles": "He said (that) he was busy.",
+            "evite": "He told that he was busy. (Told exige uma pessoa!)"
+          },
+          {
+            "portugues": "Ela perguntou onde estava o Lucas.",
+            "ingles": "She asked where Lucas was.",
+            "evite": "She asked where was Lucas."
+          },
+          {
+            "portugues": "O chefe pediu que eu chegasse cedo.",
+            "ingles": "The boss asked me to arrive early.",
+            "evite": "asked that I arrive early"
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "say",
@@ -83,7 +174,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Discurso indireto: recuar um tempo",
         "explicacao": "PASSO 1: no discurso DIRETO você repete as palavras: «I am tired,» she said. No INDIRETO, você conta com suas palavras: «She said (that) she was tired.» PASSO 2: o verbo recua um passo no tempo: presente → passado («am → was»), passado → past perfect («went → had gone»), will → would, can → could. PASSO 3: ajuste os pronomes: «I» muda para «she/he» conforme quem falou. PASSO 4: ajuste os marcadores: «today → that day», «tomorrow → the next day», «yesterday → the day before», «here → there», «now → then». PASSO 5: «say» não leva pessoa direta: «She said that…», «She said to me that…». PASSO 6: «tell» leva a pessoa: «She told me that…» PASSO 7: se o fato continua verdadeiro, o recuo é opcional: «She said she is tired» (e ainda está).",
         "comparacao": "em português também recuamos: «ele disse que estava cansado» (de «estou»). Em inglês, o mesmo ajuste é regra: «He said he was tired». A diferença mais importante é «say» (sem pessoa) × «tell» (com pessoa).",
@@ -131,12 +222,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Conte em voz alta o que 5 pessoas disseram a você hoje, com «said» e «told me»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Descreva a sua família com relativas explicativas e comentários com «which»."
       }
     ]

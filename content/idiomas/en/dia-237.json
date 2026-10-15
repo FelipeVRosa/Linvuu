@@ -20,8 +20,104 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Meta da aula. Ao final das quatro sessões, você forma palavras compostas na ordem certa (a coffee cup, a bus stop), escreve medidas como adjetivo (a ten-minute walk), reconhece prefixos e sufixos que multiplicam o seu vocabulário (unhappy, helpful, agreement) e evita os falsos amigos mais caros (actually, eventually, pretend, library, parents)."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Procurando apartamento",
+        "contexto": "Marina vai se mudar para Toronto e conta a Lucas como está a procura por um apartamento.",
+        "linhas": [
+          {
+            "personagem": "Lucas",
+            "ru": "— So, did you find an apartment?",
+            "pt": "— Então, você achou um apartamento?",
+            "audio": "So, did you find an apartment?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Actually, I found two. One has two bedrooms and a big living room, but it's a twenty-minute walk from the subway.",
+            "pt": "— Na verdade, achei dois. Um tem dois quartos e uma sala grande, mas fica a vinte minutos a pé do metrô.",
+            "audio": "Actually, I found two. One has two bedrooms and a big living room, but it's a twenty-minute walk from the subway."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— And the other one?",
+            "pt": "— E o outro?",
+            "audio": "And the other one?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— It's a one-bedroom apartment with a dishwasher and a balcony. The rent is two hundred dollars higher, but it's next to a bus stop.",
+            "pt": "— É um apartamento de um quarto, com lava-louças e varanda. O aluguel é duzentos dólares mais alto, mas fica ao lado de um ponto de ônibus.",
+            "audio": "It's a one-bedroom apartment with a dishwasher and a balcony. The rent is two hundred dollars higher, but it's next to a bus stop."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Does the building have a parking lot?",
+            "pt": "— O prédio tem estacionamento?",
+            "audio": "Does the building have a parking lot?"
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Yes, but I don't have a car, so I don't mind. I'm going to see the first one on Saturday. Can you come with me?",
+            "pt": "— Tem, mas eu não tenho carro, então tanto faz. Vou ver o primeiro no sábado. Você pode ir comigo?",
+            "audio": "Yes, but I don't have a car, so I don't mind. I'm going to see the first one on Saturday. Can you come with me?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Sure! I can attend the viewing, and I'll help you read the contract.",
+            "pt": "— Claro! Posso comparecer à visita e te ajudo a ler o contrato.",
+            "audio": "Sure! I can attend the viewing, and I'll help you read the contract."
+          },
+          {
+            "personagem": "Marina",
+            "ru": "— Thanks! Eventually I'll have to choose one, but I want to see both.",
+            "pt": "— Obrigada! No fim das contas vou ter que escolher um, mas quero ver os dois.",
+            "audio": "Thanks! Eventually I'll have to choose one, but I want to see both."
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "A armadilha do português",
+        "explicacao": "PASSO 1: O último elemento é a coisa; o primeiro é o tipo. Um bus stop é um ponto (stop) de ônibus (bus), e não um ônibus de ponto. Se você inverter, o significado muda ou desaparece. PASSO 2: Medidas como adjetivo ficam no singular, com hífen. Em português, “de vinte minutos” pode ser plural. Em inglês, o número já indica a quantidade, e o substantivo da medida fica no singular: a ten-minute walk, mas The walk is ten minutes (aqui não é adjetivo, e a palavra vai ao plural). PASSO 3: Alguns falsos amigos mudam o sentido da frase inteira. Em Actually I live in Recife você quis dizer “atualmente”, mas o inglês entende “na verdade”. O ouvinte fica esperando uma correção que não vem.",
+        "comparacao": "Em português, juntamos ideias com “de”: “ponto de ônibus”, “passeio de vinte minutos”, “apartamento de dois quartos”. O inglês junta as palavras diretamente, sem of, e a ordem se inverte. Além disso, muitas palavras inglesas parecem portuguesas e significam outra coisa.",
+        "tabela": [
+          {
+            "portugues": "ponto de ônibus",
+            "ingles": "a bus stop",
+            "evite": "a stop of bus"
+          },
+          {
+            "portugues": "um passeio de vinte minutos",
+            "ingles": "a twenty-minute walk",
+            "evite": "a twenty-minutes walk"
+          },
+          {
+            "portugues": "um apartamento de dois quartos",
+            "ingles": "a two-bedroom apartment",
+            "evite": "a two-bedrooms apartment"
+          },
+          {
+            "portugues": "Atualmente moro em Recife.",
+            "ingles": "Currently I live in Recife. / I live in Recife these days.",
+            "evite": "Actually I live in Recife."
+          },
+          {
+            "portugues": "Eu pretendo estudar fora.",
+            "ingles": "I intend to study abroad.",
+            "evite": "I pretend to study abroad."
+          }
+        ],
+        "tag": "Armadilha"
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "make a decision",
@@ -83,7 +179,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 9,
         "titulo": "Make, do, take, have",
         "explicacao": "PASSO 1: «make» é para criar ou produzir: «make a cake», «make a decision», «make a mistake», «make money», «make a phone call». PASSO 2: «do» é para tarefas e atividades: «do homework», «do the dishes», «do exercise», «do a job», «do business». PASSO 3: «take» é para tomar, levar ou gastar: «take a break», «take a photo», «take a bus», «take time». PASSO 4: «have» é para comer, beber, ter experiência: «have breakfast», «have a shower», «have fun», «have a problem». PASSO 5: não traduza palavra por palavra: «fazer uma pergunta» é «ask a question», não «make a question». PASSO 6: aprenda em blocos, não palavra solta.",
         "comparacao": "em português usamos «fazer» para quase tudo: fazer a lição, fazer uma pausa, fazer uma decisão. Em inglês cada bloco pede um verbo: do homework, take a break, make a decision.",
@@ -131,12 +227,12 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Escreva 8 frases curtas sobre o seu dia usando make, do, take e have."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale de um problema social e como resolvê-lo, com should e If I were."
       }
     ]

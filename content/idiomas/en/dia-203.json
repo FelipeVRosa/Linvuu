@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "mystery",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 6,
         "titulo": "Argumentar com evidências",
         "explicacao": "PASSO 1: use «must», «can't» e «might» em sequência para construir o raciocínio. PASSO 2: «It can't have been a stranger, because the dog didn't bark.» PASSO 3: «It must have been someone who knew the house.» PASSO 4: «It might have been the neighbor, but we can't be sure.» PASSO 5: conclua: «So the thief must be someone we know.»",
         "comparacao": "em português encadeamos «deve», «não pode» e «talvez» sem pensar. Em inglês, cada um tem forma própria: must (certeza), can't (impossível), might (possível).",
@@ -95,38 +95,225 @@
         "tag": "Raciocínio"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "The mystery of the missing cake / O mistério do bolo sumido",
-        "ru": "When I came home, the cake that I had made was gone. The kitchen window was open, and there were small footprints on the floor. It can't have been a thief, because nothing else was missing. It might have been a neighbor, but the door was locked. The footprints were small, so it must have been a child or an animal. My dog was sleeping in the garden, so it can't have been him. Then I saw my little nephew, with chocolate on his face. He must have eaten it!",
-        "pt": "Quando cheguei em casa, o bolo que eu tinha feito tinha sumido. A janela da cozinha estava aberta e havia pequenas pegadas no chão. Não pode ter sido um ladrão, porque nada mais faltava. Pode ter sido um vizinho, mas a porta estava trancada. As pegadas eram pequenas, então deve ter sido uma criança ou um animal. Meu cachorro dormia no jardim, então não pode ter sido ele. Então vi o meu sobrinho com chocolate no rosto. Ele deve ter comido!",
-        "perguntas": [
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
           {
-            "pergunta": "What was missing?",
-            "resposta": "The cake."
+            "ru": "You've been traveling for twelve hours — you must be exhausted!",
+            "translit": "",
+            "pt": "Você está viajando há doze horas — deve estar exausto!",
+            "en": "",
+            "audio": "You've been traveling for twelve hours — you must be exhausted!"
           },
           {
-            "pergunta": "Why can't it have been a thief?",
-            "resposta": "Nothing else was missing."
+            "ru": "That can't be the right address; there's no office building here!",
+            "translit": "",
+            "pt": "Esse não pode ser o endereço certo; não há nenhum prédio comercial aqui!",
+            "en": "",
+            "audio": "That can't be the right address; there's no office building here!"
           },
           {
-            "pergunta": "Why can't it have been the dog?",
-            "resposta": "He was sleeping in the garden."
+            "ru": "Where is Marina? — I'm not sure; she might be in a meeting.",
+            "translit": "",
+            "pt": "Onde está a Marina? — Não tenho certeza; ela pode estar em reunião.",
+            "en": "",
+            "audio": "Where is Marina? — I'm not sure; she might be in a meeting."
           },
           {
-            "pergunta": "Who must have eaten it?",
-            "resposta": "The nephew."
+            "ru": "I can't find my sunglasses. I must have left them at the restaurant!",
+            "translit": "",
+            "pt": "Não consigo achar meus óculos de sol. Devo tê- los deixado no restaurante!",
+            "en": "",
+            "audio": "I can't find my sunglasses. I must have left them at the restaurant!"
+          },
+          {
+            "ru": "You should have told me you were coming to São Paulo!",
+            "translit": "",
+            "pt": "Você deveria ter me avisado que vinha para São Paulo!",
+            "en": "",
+            "audio": "You should have told me you were coming to São Paulo!"
+          },
+          {
+            "ru": "I shouldn't have drunk coffee at nine p.m. — I couldn't sleep at all!",
+            "translit": "",
+            "pt": "Eu não deveria ter tomado café às nove da noite — não consegui dormir nada!",
+            "en": "",
+            "audio": "I shouldn't have drunk coffee at nine p.m. — I couldn't sleep at all!"
+          },
+          {
+            "ru": "Why did you walk in the rain? I could have given you a ride!",
+            "translit": "",
+            "pt": "Por que você caminhou na chuva? Eu poderia ter te dado uma carona!",
+            "en": "",
+            "audio": "Why did you walk in the rain? I could have given you a ride!"
+          },
+          {
+            "ru": "He can't have read the contract yet; I sent it two minutes ago!",
+            "translit": "",
+            "pt": "Ele não pode ter lido o contrato ainda; enviei há dois minutos!",
+            "en": "",
+            "audio": "He can't have read the contract yet; I sent it two minutes ago!"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Look at that huge diamond ring! It ___ cost a fortune!",
+            "opcoes": [
+              "must",
+              "can't"
+            ],
+            "gabarito": "must",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "That guy over there ___ be Lucas — Lucas is in Toronto this week!",
+            "opcoes": [
+              "mustn't",
+              "can't"
+            ],
+            "gabarito": "can't",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "— Why isn't Sarah answering her phone? — I don't know; she ___ be driving right now.",
+            "opcoes": [
+              "might",
+              "can't"
+            ],
+            "gabarito": "might",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "We took the wrong highway! We ___ turned left at the traffic light!",
+            "opcoes": [
+              "should have",
+              "should"
+            ],
+            "gabarito": "should have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "I can't find my umbrella anywhere. I ___ left it on the train this morning.",
+            "opcoes": [
+              "must have",
+              "should have"
+            ],
+            "gabarito": "must have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "My stomach hurts. I ___ eaten that second slice of cake last night!",
+            "opcoes": [
+              "couldn't have",
+              "shouldn't have"
+            ],
+            "gabarito": "shouldn't have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-106a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Why did you pay $100 for a taxi? You ___ taken the airport express train for $10!",
+            "opcoes": [
+              "could have",
+              "must have"
+            ],
+            "gabarito": "could have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-107a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Emma ___ sent this email yesterday — she didn't have internet access on the plane!",
+            "opcoes": [
+              "mustn't have",
+              "can't have"
+            ],
+            "gabarito": "can't have",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-108a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "You haven't eaten anything since breakfast! You ___ starving!",
+            "respostaEsperada": "must be",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Don't buy that jacket without trying it on first; it ___ (talvez seja, com might) too small for you.",
+            "respostaEsperada": "might be",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "They just moved into a mansion by the beach. They ___ broke! (impossível que estejam sem dinheiro)",
+            "respostaEsperada": "can't be",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The streets are completely wet this morning. It ___ (rain) during the night! (certeza lógica)",
+            "respostaEsperada": "must have rained",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I failed the interview because I wasn't prepared. I ___ (prepare) better answers! (arrependimento)",
+            "respostaEsperada": "should have prepared",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I'm so tired today! I ___ (stay) up watching series until 2 a.m. last night! (arrependimento negativo)",
+            "respostaEsperada": "shouldn't have stayed",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Where did Kevin go? — I'm not sure; he ___ (go) to the cafeteria downstairs. (possibilidade, com might have)",
+            "respostaEsperada": "might have gone",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Why didn't you ask me for help? I ___ (help) you finish the spreadsheet in ten minutes! (alternativa possível)",
+            "respostaEsperada": "could have helped",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-051-L-208a"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 4,
         "enunciado": "Escreva um mistério de 6 frases e resolva-o com must have, can't have e might have."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Deduza: «O chão está molhado. As luzes estão acesas. A porta está aberta.»"
       }
     ]

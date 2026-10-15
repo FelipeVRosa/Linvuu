@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 13,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -202,13 +202,163 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Fale 1 minuto sobre o que você tem feito na última semana e o que já concluiu."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Explique em voz alta o que você tem feito ultimamente e há quanto tempo."
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Diga há quanto tempo você mora na sua cidade atual: uma frase com for e outra com since.",
+            "respostaEsperada": "I've been living in São José dos Campos for six years. I've lived here since 2020.",
+            "id": "en-039-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga há quanto tempo você estuda inglês (I've been studying English…) e há quanto tempo trabalha na sua área ou empresa atual.",
+            "respostaEsperada": "I've been studying English for two years, and I've been working in tech since 2021.",
+            "id": "en-039-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva duas frases com verbos de estado (know, have): há quanto tempo você conhece um amigo e há quanto tempo tem seu celular ou carro (I've known… / I've had…).",
+            "respostaEsperada": "I've known my best friend Bruno for fifteen years, and I've had my car since last year.",
+            "id": "en-039-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Conte duas atividades às quais você vem se dedicando ultimamente (Lately, I've been…-ing).",
+            "respostaEsperada": "Lately, I've been studying English three hours a day, and I've been working on a new project.",
+            "id": "en-039-L-p04"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Faça duas perguntas com How long have you…? para entrevistar um candidato a uma vaga de emprego.",
+            "respostaEsperada": "How long have you been working in project management? How long have you been using this software?",
+            "id": "en-039-L-p05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I live in São José dos Campos since 2018.",
+            "respostaEsperada": "I've lived (ou I've been living) in São José dos Campos since 2018.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I am waiting for the doctor for forty minutes!",
+            "respostaEsperada": "I've been waiting for the doctor for forty minutes!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: How long are you here at the airport?",
+            "respostaEsperada": "How long have you been here at the airport?",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: We have been knowing each other for ten years.",
+            "respostaEsperada": "We have known each other for ten years.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She works at our company have three years.",
+            "respostaEsperada": "She has worked",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I've been writing five reports this morning!",
+            "respostaEsperada": "I've written five reports this morning!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She has been having that car since last year.",
+            "respostaEsperada": "She has had that car since last year.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-039-L-c07"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: I've been working on this project for two months, and I'm really enjoying it.",
+            "respostaEsperada": "OK",
+            "id": "en-039-L-c08"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 2,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente dos brasileiros ao falar da própria vida e carreira é usar o presente simples ou contínuo para algo que vem do passado até hoje: I live here for five years, I work here since 2021, I'm waiting for two hours. Crie um alarme mental: entrou for (há X tempo) ou since (desde X) numa situação que continua agora? Então o verbo vai para o Present Perfect: I've lived / I've been living, I've worked / I've been working, I've been waiting. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "I live here for ten years.",
+            "certo": "I've lived (ou I've been living) here for ten years.",
+            "motivo": "Situação que começou no passado e continua hoje pede Present Perfect, não Present Simple."
+          },
+          {
+            "errado": "I'm waiting here since 2 p.m.",
+            "certo": "I've been waiting here since 2 p.m.",
+            "motivo": "O Present Continuous não mede duração desde o passado. Use have/has been - ing."
+          },
+          {
+            "errado": "How long are you in Brazil?",
+            "certo": "How long have you been in Brazil?",
+            "motivo": "Perguntas com How long sobre uma situação que continua usam Present Perfect."
+          },
+          {
+            "errado": "I work here have two years / two years ago.",
+            "certo": "I've worked here for two years.",
+            "motivo": "O “há” de duração até hoje é for, e não have nem ago."
+          },
+          {
+            "errado": "I've been knowing her since 2020.",
+            "certo": "I've known her since 2020.",
+            "motivo": "Know, be, have [posse] são verbos de estado e não aceitam -ing."
+          },
+          {
+            "errado": "since three years",
+            "certo": "for three years",
+            "motivo": "Período contado (três anos) pede for. Since só aceita ponto de partida (since 2023)."
+          },
+          {
+            "errado": "I've been sending ten emails today.",
+            "certo": "I've sent ten emails today.",
+            "motivo": "Quantidade concluída (ten emails) pede Present Perfect Simple."
+          },
+          {
+            "errado": "I've been having this car for five years.",
+            "certo": "I've had this car for five years.",
+            "motivo": "Have no sentido de possuir é verbo de estado. Já em I've been having lunch (atividade), serve."
+          }
+        ],
+        "tag": "Erro típico"
+      },
+      {
+        "tipo": "revisao",
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 14 e 15. Qual é a diferença entre I've already read the book (Cap. 14) e I've been reading the book (Cap. 15)? Em qual das duas você já terminou o livro? 2. Do Capítulo 11 e 15. Explique a diferença entre David worked at the bank for five years e David has worked at the bank for five years. Em qual delas ele ainda trabalha lá hoje? 3. Do Capítulo 8, 10 e 15. Complete: I started this job three years ____. = I've had this job ____ three years. Depois explique por que dizemos I've been having lunch (atividade), mas I've had this car for five years (posse)."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Dizer há quanto tempo moro na minha cidade e trabalho na minha empresa sem usar “I live / I work”. · Escolher entre for (período) e since (início) e perguntar How long have you…?. Usar I've been, I've known, I've had sem -ing em verbos de estado e I've been -ing em atividades em curso."
       }
     ]
   },

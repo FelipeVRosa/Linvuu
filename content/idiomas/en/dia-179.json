@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 3,
         "itens": [
           {
             "ru": "waiter",
@@ -62,7 +62,7 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 5,
         "titulo": "Definir palavras",
         "explicacao": "PASSO 1: para definir uma palavra, use: «A waiter is a person who serves food.» PASSO 2: coisas: «A dictionary is a book that explains words.» PASSO 3: lugares: «A restaurant is a place where you eat.» PASSO 4: use isso para explicar palavras que você não sabe: «It's a thing that you use to…» PASSO 5: útil em provas e conversas: se esquecer a palavra, descreva-a.",
         "comparacao": "em português «é uma pessoa que serve comida» tem a mesma lógica. A vantagem do inglês é usar a definição para contornar uma palavra esquecida.",
@@ -100,7 +100,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 8,
+        "min": 5,
         "titulo": "I forgot the word / Esqueci a palavra",
         "contexto": "Lara tenta explicar uma palavra a Tom.",
         "linhas": [
@@ -143,13 +143,245 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "The woman who interviewed me yesterday was very friendly.",
+            "translit": "",
+            "pt": "A mulher que me entrevistou ontem foi muito simpática.",
+            "en": "",
+            "audio": "The woman who interviewed me yesterday was very friendly."
+          },
+          {
+            "ru": "Have you found the keys you lost this morning?",
+            "translit": "",
+            "pt": "Você achou as chaves que perdeu hoje de manhã? (com that omitido)",
+            "en": "",
+            "audio": "Have you found the keys you lost this morning?"
+          },
+          {
+            "ru": "This is the café where we always have lunch on Fridays.",
+            "translit": "",
+            "pt": "Este é o café onde sempre almoçamos às sextas-feiras.",
+            "en": "",
+            "audio": "This is the café where we always have lunch on Fridays."
+          },
+          {
+            "ru": "I have a colleague whose wife works at the Canadian embassy.",
+            "translit": "",
+            "pt": "Tenho um colega cuja esposa trabalha na embaixada canadense.",
+            "en": "",
+            "audio": "I have a colleague whose wife works at the Canadian embassy."
+          },
+          {
+            "ru": "Even though the test was hard, everybody passed!",
+            "translit": "",
+            "pt": "Mesmo que a prova tenha sido difícil, todo mundo passou!",
+            "en": "",
+            "audio": "Even though the test was hard, everybody passed!"
+          },
+          {
+            "ru": "The flight was canceled because of the heavy snow.",
+            "translit": "",
+            "pt": "O voo foi cancelado por causa da neve forte.",
+            "en": "",
+            "audio": "The flight was canceled because of the heavy snow."
+          },
+          {
+            "ru": "Despite having a headache, she finished the presentation.",
+            "translit": "",
+            "pt": "Apesar de estar com dor de cabeça, ela terminou a apresentação.",
+            "en": "",
+            "audio": "Despite having a headache, she finished the presentation."
+          },
+          {
+            "ru": "The hotel was expensive. However, the location was perfect.",
+            "translit": "",
+            "pt": "O hotel era caro. No entanto, a localização era perfeita.",
+            "en": "",
+            "audio": "The hotel was expensive. However, the location was perfect."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The architect ___ designed our new office is from Chicago.",
+            "opcoes": [
+              "who",
+              "which"
+            ],
+            "gabarito": "who",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-101a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "This is the hotel ___ we stayed last summer.",
+            "opcoes": [
+              "which",
+              "where"
+            ],
+            "gabarito": "where",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-102a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "She's the manager ___ team won the innovation award.",
+            "opcoes": [
+              "who's",
+              "whose"
+            ],
+            "gabarito": "whose",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-103a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ it was raining heavily, they went for a run in the park.",
+            "opcoes": [
+              "Although",
+              "Despite"
+            ],
+            "gabarito": "Although",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-104a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "___ the heavy rain, they went for a run in the park.",
+            "opcoes": [
+              "Although",
+              "Despite"
+            ],
+            "gabarito": "Despite",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-105a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Our flight was delayed ___ the bad weather.",
+            "opcoes": [
+              "because",
+              "because of"
+            ],
+            "gabarito": "because of",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-106a"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Em qual destas duas frases podemos omitir that? (a) The email that arrived this morning is urgent. (b) The email that you sent me this morning is urgent.",
+            "respostaEsperada": "Na frase (b)The email (that) you sent me, porque logo depois de that vem o novo sujeito you",
+            "id": "en-045-L-107"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The meeting finished late, ___ was a problem for everyone.",
+            "opcoes": [
+              "what",
+              "which"
+            ],
+            "gabarito": "which",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-108a"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "The hotel was expensive. The food was amazing, ___!",
+            "opcoes": [
+              "though",
+              "although"
+            ],
+            "gabarito": "though",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-109a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Do you know the guy ___ is talking to Sarah by the elevator?",
+            "respostaEsperada": "who",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-201a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The restaurant ___ we had dinner last night was fantastic!",
+            "respostaEsperada": "where",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-202a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I need to talk to the client ___ contract expires next month.",
+            "respostaEsperada": "whose",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-203a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We couldn't have the video call ___ the internet connection was down.",
+            "respostaEsperada": "because",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-204a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "All the trains were delayed ___ the strike.",
+            "respostaEsperada": "because of",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-205a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ he has a lot of experience, he didn't get the job.",
+            "respostaEsperada": "Although",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-206a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ being very tired, Lucas helped me finish the spreadsheet.",
+            "respostaEsperada": "Despite",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-207a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The apartment is small. ___, it's right next to the subway station, so I'm going to rent it!",
+            "respostaEsperada": "However",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-208a"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "The apartment is small. However, it's right next to the subway station, ___ I'm going to rent it!",
+            "respostaEsperada": "so",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-208b"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "I was really tired last night, ___ I went to bed at nine thirty.",
+            "respostaEsperada": "so",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-045-L-209a"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
+        "min": 3,
         "enunciado": "Defina em voz alta 8 palavras sem dizê-las: «It's a person who… It's a place where…»"
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 3,
         "enunciado": "Defina em inglês: «um garçom», «um restaurante», «um colega»."
       }
     ]

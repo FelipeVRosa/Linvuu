@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 16,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -201,14 +201,131 @@
         ]
       },
       {
-        "tipo": "producao",
-        "min": 5,
-        "enunciado": "Fale 1 minuto descrevendo uma viagem usando so, such, too e enough."
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "producao",
+            "enunciado": "Descreva um hotel ou restaurante onde você já esteve, usando really, a bit e absolutely em frases diferentes.",
+            "respostaEsperada": "The hotel was really clean, a bit noisy, and the breakfast was absolutely delicious.",
+            "id": "en-053-L-p01"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga que uma bolsa que você viu é cara demais e que não é grande o suficiente para o seu laptop.",
+            "respostaEsperada": "This bag is too expensive, and it isn't big enough for my laptop.",
+            "id": "en-053-L-p02"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Explique por que você estava cansado ontem usando so… that.",
+            "respostaEsperada": "I was so tired yesterday that I went to bed at eight.",
+            "id": "en-053-L-p03"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Diga que você gosta de um lugar, de duas maneiras diferentes (a lot e very much).",
+            "respostaEsperada": "I like this place a lot. / I like this place very much.",
+            "id": "en-053-L-p04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The movie was very fantastic!",
+            "respostaEsperada": "The movie was absolutely fantastic!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c01"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: It's much cold today.",
+            "respostaEsperada": "It's very cold today.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: She is so a good teacher.",
+            "respostaEsperada": "She is such a good teacher.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I like very much this restaurant.",
+            "respostaEsperada": "I like this restaurant very much.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: I'm too happy to see you!",
+            "respostaEsperada": "I'm so happy to see you!",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Corrija: The bed isn't enough comfortable.",
+            "respostaEsperada": "The bed isn't comfortable enough.",
+            "explicacao": "Veja a chave comentada no livro.",
+            "id": "en-053-L-c06"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: The concert was absolutely wonderful.",
+            "respostaEsperada": "OK",
+            "id": "en-053-L-c07"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "O erro típico do brasileiro",
+        "explicacao": "PASSO 1: O erro mais frequente é usar very com adjetivos fortes (very fantastic, very terrible) e usar much no lugar de very com adjetivos (much hot, much good). Em segundo lugar, aparece o too usado como elogio. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
+        "erros": [
+          {
+            "errado": "very fantastic / very terrible",
+            "certo": "absolutely fantastic / really terrible",
+            "motivo": "Adjetivos fortes já são “muito”; use absolutely ou really."
+          },
+          {
+            "errado": "much hot / much good",
+            "certo": "very hot / very good",
+            "motivo": "Com adjetivos e advérbios, a palavra é very (ou really)."
+          },
+          {
+            "errado": "so a good teacher",
+            "certo": "such a good teacher / so good",
+            "motivo": "Such vem antes de substantivo (a … teacher); so vem direto antes do adjetivo."
+          },
+          {
+            "errado": "I like very much this restaurant.",
+            "certo": "I like this restaurant very much.",
+            "motivo": "Very much não se coloca entre o verbo e o objeto."
+          },
+          {
+            "errado": "I'm too happy to see you!",
+            "certo": "I'm so happy to see you!",
+            "motivo": "Too indica excesso com problema; para alegria, use so ou really."
+          },
+          {
+            "errado": "enough comfortable",
+            "certo": "comfortable enough",
+            "motivo": "Enough vem depois do adjetivo."
+          }
+        ],
+        "tag": "Erro típico"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Descreva sua cidade usando so, such, too e enough."
+        "min": 2,
+        "enunciado": "Retorno. 1. Do Capítulo 26. Corrija a ordem: I like very much this song. 2. Do Capítulo 12. Complete: This jacket is ____ small for me. It isn't ____. (big enough / too) 3. Do Capítulo 11 e 27. Passe para o passado: The hotel is quite expensive, but the staff are really friendly."
+      },
+      {
+        "tipo": "intro",
+        "min": 1,
+        "texto": "Já consigo? Escolher entre very, really, quite, a bit e extremely e usar absolutely só com adjetivos fortes. · Dizer so good e such a good idea sem trocar um pelo outro. · Dizer “gosto muito” sem separar o verbo do objeto e sem usar too como elogio."
       }
     ]
   },

@@ -492,3 +492,13 @@ html[data-tema-aluno="escuro"] .lv-logo img{content:url(/brand/linvuu-wordmark-p
 @supports(padding:max(0px)){
   .lv-head-in,.barra-topo-in{padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
 }
+
+/* ===== App Android: abas embaixo e área segura do topo (só com data-plataforma="nativo") ===== */
+.lv-tabbar{display:none}
+html[data-plataforma="nativo"] .lv-head{padding-top:env(safe-area-inset-top,0px)}
+html[data-plataforma="nativo"] body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+html[data-plataforma="nativo"] .lv-tabbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(5,1fr);align-items:center;min-height:64px;padding:4px 6px env(safe-area-inset-bottom,0px);background:var(--papel);border-top:1px solid var(--linha-forte)}
+.lv-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:48px;color:var(--fg-3);font-size:11px;font-weight:600;text-decoration:none}
+.lv-tab.on,.lv-tab-estudar{color:var(--verde-floresta)}
+.lv-tab-pilula{width:40px;height:26px;border-radius:var(--r-pill);background:var(--verde-floresta);color:var(--papel);display:grid;place-items:center}
+html[data-tema-aluno="escuro"] .lv-tabbar{background:oklch(20% 0.014 155);border-color:rgba(237,232,220,.16)}

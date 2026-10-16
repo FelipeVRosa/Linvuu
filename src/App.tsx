@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
+import { Capacitor } from '@capacitor/core';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -19,6 +20,7 @@ const Sobre = lazy(() => import('./pages/Sobre'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
 import { BarraTopo } from './components/BarraTopo';
+import { BarraInferior } from './components/BarraInferior';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
 
@@ -37,6 +39,9 @@ function RolarAoTopo() {
 
 // Páginas de dia da área do aluno (/curso/:id/dia/:n): sem bloco de newsletter no rodapé.
 const AREA_ALUNO = /^\/curso\/[^/]+\/dia\//;
+// Dentro do app Android: sem a barra de idiomas do topo e sem o rodapé longo; navegação por abas embaixo.
+const NATIVO = Capacitor.isNativePlatform();
+if (NATIVO && typeof document !== 'undefined') document.documentElement.dataset.plataforma = 'nativo';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -45,7 +50,7 @@ export default function App() {
     <>
       <a href="#conteudo" className="skip-link">{t.geral.pular}</a>
       <RolarAoTopo />
-      <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />
+      {!NATIVO && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
       <main id="conteudo" tabIndex={-1}>
         <Suspense fallback={<p className="resultado pagina carga" role="status">{t.geral.carregando}</p>}>
@@ -74,7 +79,8 @@ export default function App() {
         </Routes>
         </Suspense>
       </main>
-      {!AREA_ALUNO.test(pathname) && <Footer />}
+      {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
+      {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
     </>
   );
 }

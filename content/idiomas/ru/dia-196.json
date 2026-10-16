@@ -37,6 +37,24 @@
             "id": "ru-049-e01"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Olá. Estou com dor de garganta. O que a senhora recomenda?»",
+            "opcoes": [
+              "горло.",
+              "Здравствуйте.",
+              "посоветуете?",
+              "Что",
+              "вы",
+              "болит",
+              "У",
+              "меня"
+            ],
+            "gabarito": "Здравствуйте. У меня болит горло. Что вы посоветуете?",
+            "explicacao": "Escreva: Здравствуйте. У меня болит горло. Что вы посоветуете?",
+            "id": "ru-049-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
             "audio": "Принимайте таблетки два раза в день",
@@ -51,6 +69,15 @@
           },
           {
             "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Здравствуйте. У меня болит горло. Что вы посоветуете?",
+            "respostaEsperada": "Здравствуйте. У меня болит горло. Что вы посоветуете?",
+            "explicacao": "Olá. Estou com dor de garganta. O que a senhora recomenda?",
+            "id": "ru-049-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
             "audio": "Идите прямо до светофора",
             "opcoes": [
@@ -61,6 +88,19 @@
             "gabarito": "Идите прямо до светофора",
             "explicacao": "Hören: direções.",
             "id": "ru-049-e03"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Quanto custam?»",
+            "opcoes": [
+              "стоят?",
+              "они",
+              "Сколько"
+            ],
+            "gabarito": "Сколько они стоят?",
+            "explicacao": "Escreva: Сколько они стоят?",
+            "id": "ru-049-x03",
+            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -83,6 +123,15 @@
             "id": "ru-049-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Сколько они стоят?",
+            "respostaEsperada": "Сколько они стоят?",
+            "explicacao": "Quanto custam?",
+            "id": "ru-049-x04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Leia: «Сдаётся двухкомнатная квартира, 35 000 руб. в месяц, с мебелью.» O que se oferece?",
             "opcoes": [
@@ -93,6 +142,24 @@
             "gabarito": "Apartamento de dois cômodos mobiliado",
             "explicacao": "Lesen: anúncio.",
             "id": "ru-049-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Está bem, levo. Preciso também de um copo de água.»",
+            "opcoes": [
+              "нужен",
+              "воды.",
+              "я",
+              "ещё",
+              "Хорошо,",
+              "стакан",
+              "беру.",
+              "Мне"
+            ],
+            "gabarito": "Хорошо, я беру. Мне ещё нужен стакан воды.",
+            "explicacao": "Escreva: Хорошо, я беру. Мне ещё нужен стакан воды.",
+            "id": "ru-049-x05",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -107,6 +174,15 @@
             "id": "ru-049-e07"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Хорошо, я беру. Мне ещё нужен стакан воды.",
+            "respostaEsperada": "Хорошо, я беру. Мне ещё нужен стакан воды.",
+            "explicacao": "Está bem, levo. Preciso também de um copo de água.",
+            "id": "ru-049-x06",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Leia: «Если будет дождь, мы останемся дома.» A ideia é:",
             "opcoes": [
@@ -117,6 +193,23 @@
             "gabarito": "se chover, ficamos em casa",
             "explicacao": "Lesen: если + futuro.",
             "id": "ru-049-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Через неделю я еду в Москву",
+            "opcoes": [
+              "я",
+              "Москву",
+              "в",
+              "неделю",
+              "еду",
+              "Через"
+            ],
+            "gabarito": "Через неделю я еду в Москву",
+            "explicacao": "Escreva: Через неделю я еду в Москву",
+            "id": "ru-049-x07",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -131,6 +224,23 @@
             "id": "ru-049-e09"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Принимайте таблетки два раза в день",
+            "opcoes": [
+              "день",
+              "таблетки",
+              "два",
+              "в",
+              "раза",
+              "Принимайте"
+            ],
+            "gabarito": "Принимайте таблетки два раза в день",
+            "explicacao": "Escreva: Принимайте таблетки два раза в день",
+            "id": "ru-049-x08",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Мне нужна ___ куртка. (quente)",
             "opcoes": [
@@ -143,6 +253,21 @@
             "id": "ru-049-e10"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Идите прямо до светофора",
+            "opcoes": [
+              "Идите",
+              "до",
+              "светофора",
+              "прямо"
+            ],
+            "gabarito": "Идите прямо до светофора",
+            "explicacao": "Escreva: Идите прямо до светофора",
+            "id": "ru-049-x09",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Он звонит ___. (a mim)",
             "opcoes": [
@@ -153,6 +278,22 @@
             "gabarito": "мне",
             "explicacao": "«звонить» + dativo.",
             "id": "ru-049-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Я хочу, чтобы ты пришёл",
+            "opcoes": [
+              "хочу,",
+              "пришёл",
+              "ты",
+              "чтобы",
+              "Я"
+            ],
+            "gabarito": "Я хочу, чтобы ты пришёл",
+            "explicacao": "Escreva: Я хочу, чтобы ты пришёл",
+            "id": "ru-049-x10",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -179,6 +320,15 @@
             "id": "ru-049-e13"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Через неделю я еду в Москву",
+            "respostaEsperada": "Через неделю я еду в Москву",
+            "explicacao": "Escreva: Через неделю я еду в Москву",
+            "id": "ru-049-x11",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Я играю на гитаре.»",
             "opcoes": [
@@ -192,6 +342,15 @@
             "id": "ru-049-e14"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Принимайте таблетки два раза в день",
+            "respostaEsperada": "Принимайте таблетки два раза в день",
+            "explicacao": "Escreva: Принимайте таблетки два раза в день",
+            "id": "ru-049-x12",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Мы помогаем друг другу.»",
             "opcoes": [
@@ -203,6 +362,15 @@
             "gabarito": "Мы помогаем друг другу.",
             "explicacao": "«друг другу» (dativo).",
             "id": "ru-049-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Идите прямо до светофора",
+            "respostaEsperada": "Идите прямо до светофора",
+            "explicacao": "Escreva: Идите прямо до светофора",
+            "id": "ru-049-x13",
+            "complemento": true
           },
           {
             "tipo": "producao",

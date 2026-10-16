@@ -63,6 +63,24 @@
             "id": "fr-058-e03"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Não se preocupe, ela será transferida automaticamente.»",
+            "opcoes": [
+              "vous",
+              "inquiétez",
+              "pas,",
+              "Ne",
+              "ils",
+              "seront",
+              "automatiquement.",
+              "transférés"
+            ],
+            "gabarito": "Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "explicacao": "Escreva: Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "id": "fr-058-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Pourriez-vous changer ma chambre",
@@ -77,6 +95,15 @@
             "respostaEsperada": "Mes bagages ne sont pas arrivés",
             "explicacao": "Escreva: Mes bagages ne sont pas arrivés.",
             "id": "fr-058-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "respostaEsperada": "Ne vous inquiétez pas, ils seront transférés automatiquement.",
+            "explicacao": "Não se preocupe, ela será transferida automaticamente.",
+            "id": "fr-058-x02",
+            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -109,6 +136,27 @@
             "gabarito": "par",
             "explicacao": "Agente.",
             "id": "fr-058-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Poderia me dar um comprovante para o reembolso do táxi?»",
+            "opcoes": [
+              "Pourriez-vous",
+              "justificatif",
+              "pour",
+              "le",
+              "remboursement",
+              "me",
+              "?",
+              "un",
+              "taxi",
+              "donner",
+              "du"
+            ],
+            "gabarito": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "explicacao": "Escreva: Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "id": "fr-058-x03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -145,6 +193,15 @@
             "gabarito": "perdus",
             "explicacao": "Concordância.",
             "id": "fr-058-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "respostaEsperada": "Pourriez-vous me donner un justificatif pour le remboursement du taxi ?",
+            "explicacao": "Poderia me dar um comprovante para o reembolso do táxi?",
+            "id": "fr-058-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -184,6 +241,21 @@
           },
           {
             "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Claro, aqui está o seu comprovante.»",
+            "opcoes": [
+              "justificatif.",
+              "Bien",
+              "sûr,",
+              "voici",
+              "votre"
+            ],
+            "gabarito": "Bien sûr, voici votre justificatif.",
+            "explicacao": "Escreva: Bien sûr, voici votre justificatif.",
+            "id": "fr-058-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Le vol a été annulé par la compagnie.»",
             "opcoes": [
               "Le",
@@ -214,6 +286,15 @@
             "id": "fr-058-e16"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Bien sûr, voici votre justificatif.",
+            "respostaEsperada": "Bien sûr, voici votre justificatif.",
+            "explicacao": "Claro, aqui está o seu comprovante.",
+            "id": "fr-058-x06",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Meu voo foi cancelado. Gostaria de ser reembolsado. Poderia me dar um comprovante?",
             "respostaEsperada": "Mon vol a été annulé. Je voudrais être remboursé. Pourriez-vous me donner un justificatif ?",
@@ -242,6 +323,21 @@
             "gabarito": "pouvez",
             "explicacao": "Com «vous», «pouvoir» faz «pouvez».",
             "id": "fr-058-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le comptoir»?",
+            "audio": "le comptoir",
+            "opcoes": [
+              "o balcão",
+              "por (sentimento)",
+              "um reembolso",
+              "ser perdido"
+            ],
+            "gabarito": "o balcão",
+            "explicacao": "«le comptoir» = o balcão.",
+            "id": "fr-058-x07",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -281,6 +377,21 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "O que significa «une réclamation»?",
+            "audio": "une réclamation",
+            "opcoes": [
+              "uma conexão",
+              "por (sentimento)",
+              "uma reclamação",
+              "por (agente)"
+            ],
+            "gabarito": "uma reclamação",
+            "explicacao": "«une réclamation» = uma reclamação.",
+            "id": "fr-058-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
               "Les bagages ont été retrouvés.",
@@ -317,6 +428,21 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "O que significa «une carte d'embarquement»?",
+            "audio": "une carte d'embarquement",
+            "opcoes": [
+              "por (agente)",
+              "um cartão de embarque",
+              "ser atrasado",
+              "o balcão"
+            ],
+            "gabarito": "um cartão de embarque",
+            "explicacao": "«une carte d'embarquement» = um cartão de embarque.",
+            "id": "fr-058-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "Como dizer «O voo será cancelado»?",
             "opcoes": [
               "Le vol sera annulé.",
@@ -343,6 +469,21 @@
             "gabarito": "Mes bagages ont été perdus par la compagnie.",
             "explicacao": "Passiva com agente: «par».",
             "id": "fr-058-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «être annulé»?",
+            "audio": "être annulé",
+            "opcoes": [
+              "ser atrasado",
+              "ser reembolsado",
+              "uma reclamação",
+              "ser cancelado"
+            ],
+            "gabarito": "ser cancelado",
+            "explicacao": "«être annulé» = ser cancelado.",
+            "id": "fr-058-x10",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

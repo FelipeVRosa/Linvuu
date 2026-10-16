@@ -471,14 +471,6 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "I see your point, but I disagree",
-              "respostaEsperada": "I see your point, but I disagree",
-              "explicacao": "Escreva: I see your point, but I disagree.",
-              "id": "en-055-e03"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "That's true. However, you earn more money, too.",
               "respostaEsperada": "That's true. However, you earn more money, too.",
               "explicacao": "É verdade. Porém, você também ganha mais.",
@@ -486,13 +478,12 @@
               "complemento": true
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "I don't think it is a good idea",
-              "respostaEsperada": "I don't think it is a good idea.",
-              "explicacao": "Eu não acho que seja uma boa ideia.",
-              "id": "en-055-r01",
-              "complemento": true
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I see your point, but I disagree",
+              "respostaEsperada": "I see your point, but I disagree",
+              "explicacao": "Escreva: I see your point, but I disagree.",
+              "id": "en-055-e03"
             },
             {
               "tipo": "sentence-ordering",
@@ -513,12 +504,13 @@
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Neither do I",
-              "respostaEsperada": "Neither do I",
-              "explicacao": "Escreva: neither do I.",
-              "id": "en-055-e04"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I don't think it is a good idea",
+              "respostaEsperada": "I don't think it is a good idea.",
+              "explicacao": "Eu não acho que seja uma boa ideia.",
+              "id": "en-055-r01",
+              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -530,16 +522,12 @@
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Como responder «I love pizza.» concordando?",
-              "opcoes": [
-                "So do I.",
-                "Neither do I.",
-                "So I do."
-              ],
-              "gabarito": "So do I.",
-              "explicacao": "Afirmativa: so.",
-              "id": "en-055-e05"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Neither do I",
+              "respostaEsperada": "Neither do I",
+              "explicacao": "Escreva: neither do I.",
+              "id": "en-055-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -558,27 +546,6 @@
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Como responder «I don't like it.» concordando?",
-              "opcoes": [
-                "Neither do I.",
-                "So do I.",
-                "Neither I do."
-              ],
-              "gabarito": "Neither do I.",
-              "explicacao": "Negativa: neither.",
-              "id": "en-055-e06"
-            },
-            {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "So do I",
-              "respostaEsperada": "So do I.",
-              "explicacao": "Eu também.",
-              "id": "en-055-r02",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Exactly! I can't stand noise, either.",
@@ -589,15 +556,15 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Qual frase está correta?",
+              "enunciado": "Como responder «I love pizza.» concordando?",
               "opcoes": [
-                "I don't think it's a good idea.",
-                "I think it isn't a good idea.",
-                "I am not think it is good."
+                "So do I.",
+                "Neither do I.",
+                "So I do."
               ],
-              "gabarito": "I don't think it's a good idea.",
-              "explicacao": "Negue o verbo think.",
-              "id": "en-055-e07"
+              "gabarito": "So do I.",
+              "explicacao": "Afirmativa: so.",
+              "id": "en-055-e05"
             },
             {
               "tipo": "sentence-ordering",
@@ -619,15 +586,15 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Qual frase está correta?",
+              "enunciado": "Como responder «I don't like it.» concordando?",
               "opcoes": [
-                "I agree with you.",
-                "I am agree with you.",
-                "I agree you."
+                "Neither do I.",
+                "So do I.",
+                "Neither I do."
               ],
-              "gabarito": "I agree with you.",
-              "explicacao": "agree with.",
-              "id": "en-055-e08"
+              "gabarito": "Neither do I.",
+              "explicacao": "Negativa: neither.",
+              "id": "en-055-e06"
             },
             {
               "tipo": "audio-recognition",
@@ -639,16 +606,13 @@
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "I ___ your point, but I disagree. (vejo)",
-              "opcoes": [
-                "see",
-                "look",
-                "watch"
-              ],
-              "gabarito": "see",
-              "explicacao": "I see your point.",
-              "id": "en-055-e09"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "So do I",
+              "respostaEsperada": "So do I.",
+              "explicacao": "Eu também.",
+              "id": "en-055-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -666,25 +630,16 @@
               "complemento": true
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "I see your point, but I disagree",
-              "respostaEsperada": "I see your point, but I disagree.",
-              "explicacao": "Entendo seu ponto, mas discordo.",
-              "id": "en-055-r03",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "I can swim. — So ___ I. (também)",
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
               "opcoes": [
-                "can",
-                "do",
-                "am"
+                "I don't think it's a good idea.",
+                "I think it isn't a good idea.",
+                "I am not think it is good."
               ],
-              "gabarito": "can",
-              "explicacao": "Mesmo auxiliar.",
-              "id": "en-055-e10"
+              "gabarito": "I don't think it's a good idea.",
+              "explicacao": "Negue o verbo think.",
+              "id": "en-055-e07"
             },
             {
               "tipo": "multiple-choice",
@@ -702,16 +657,16 @@
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "I've been there. — So ___ I.",
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está correta?",
               "opcoes": [
-                "have",
-                "do",
-                "am"
+                "I agree with you.",
+                "I am agree with you.",
+                "I agree you."
               ],
-              "gabarito": "have",
-              "explicacao": "Mesmo auxiliar.",
-              "id": "en-055-e11"
+              "gabarito": "I agree with you.",
+              "explicacao": "agree with.",
+              "id": "en-055-e08"
             },
             {
               "tipo": "multiple-choice",
@@ -730,15 +685,15 @@
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "I don't like it. — ___ do I.",
+              "enunciado": "I ___ your point, but I disagree. (vejo)",
               "opcoes": [
-                "Neither",
-                "So",
-                "Either"
+                "see",
+                "look",
+                "watch"
               ],
-              "gabarito": "Neither",
-              "explicacao": "Negativa.",
-              "id": "en-055-e12"
+              "gabarito": "see",
+              "explicacao": "I see your point.",
+              "id": "en-055-e09"
             },
             {
               "tipo": "multiple-choice",
@@ -758,10 +713,10 @@
             {
               "tipo": "repeat",
               "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "Neither do I",
-              "respostaEsperada": "Neither do I.",
-              "explicacao": "Eu também não.",
-              "id": "en-055-r04",
+              "audio": "I see your point, but I disagree",
+              "respostaEsperada": "I see your point, but I disagree.",
+              "explicacao": "Entendo seu ponto, mas discordo.",
+              "id": "en-055-r03",
               "complemento": true
             },
             {
@@ -777,6 +732,131 @@
               "gabarito": "pessoalmente",
               "explicacao": "«personally» = pessoalmente.",
               "id": "en-055-x13",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I can swim. — So ___ I. (também)",
+              "opcoes": [
+                "can",
+                "do",
+                "am"
+              ],
+              "gabarito": "can",
+              "explicacao": "Mesmo auxiliar.",
+              "id": "en-055-e10"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «I think»?",
+              "audio": "I think",
+              "opcoes": [
+                "pessoalmente",
+                "eu acho",
+                "eu acredito",
+                "tenho certeza"
+              ],
+              "gabarito": "eu acho",
+              "explicacao": "«I think» = eu acho.",
+              "id": "en-055-x14",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I've been there. — So ___ I.",
+              "opcoes": [
+                "have",
+                "do",
+                "am"
+              ],
+              "gabarito": "have",
+              "explicacao": "Mesmo auxiliar.",
+              "id": "en-055-e11"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "I don't think it is a good idea",
+              "opcoes": [
+                "good",
+                "don't",
+                "I",
+                "idea",
+                "think",
+                "is",
+                "it",
+                "a"
+              ],
+              "gabarito": "I don't think it is a good idea",
+              "explicacao": "Escreva: I don't think it is a good idea",
+              "id": "en-055-x15",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "So do I",
+              "opcoes": [
+                "I",
+                "do",
+                "So"
+              ],
+              "gabarito": "So do I",
+              "explicacao": "Escreva: So do I",
+              "id": "en-055-x16",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "I don't like it. — ___ do I.",
+              "opcoes": [
+                "Neither",
+                "So",
+                "Either"
+              ],
+              "gabarito": "Neither",
+              "explicacao": "Negativa.",
+              "id": "en-055-e12"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "I see your point, but I disagree",
+              "opcoes": [
+                "I",
+                "your",
+                "see",
+                "I",
+                "but",
+                "point,",
+                "disagree"
+              ],
+              "gabarito": "I see your point, but I disagree",
+              "explicacao": "Escreva: I see your point, but I disagree",
+              "id": "en-055-x17",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Neither do I",
+              "respostaEsperada": "Neither do I.",
+              "explicacao": "Eu também não.",
+              "id": "en-055-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Neither do I",
+              "opcoes": [
+                "I",
+                "Neither",
+                "do"
+              ],
+              "gabarito": "Neither do I",
+              "explicacao": "Escreva: Neither do I",
+              "id": "en-055-x18",
               "complemento": true
             },
             {
@@ -797,6 +877,15 @@
               "id": "en-055-e13"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I don't think it is a good idea",
+              "respostaEsperada": "I don't think it is a good idea",
+              "explicacao": "Escreva: I don't think it is a good idea",
+              "id": "en-055-x19",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «I'm not so sure about that.»",
               "opcoes": [
@@ -812,18 +901,12 @@
               "id": "en-055-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «I think»?",
-              "audio": "I think",
-              "opcoes": [
-                "pessoalmente",
-                "eu acho",
-                "eu acredito",
-                "tenho certeza"
-              ],
-              "gabarito": "eu acho",
-              "explicacao": "«I think» = eu acho.",
-              "id": "en-055-x14",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "So do I",
+              "respostaEsperada": "So do I",
+              "explicacao": "Escreva: So do I",
+              "id": "en-055-x20",
               "complemento": true
             },
             {

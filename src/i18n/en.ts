@@ -102,7 +102,7 @@ export const en: Dicionario = {
     ouvir: 'Listen', ainda: 'listen and repeat', aindaDica: (l: string) => `This word has letters you have not learned yet (${l}). For now, listen and repeat.`, resposta: 'Answer:', refazer: 'Redo the exercises', tocarOuvir: 'Tap to listen',
     temaAlterado: (t: string) => `Theme changed to ${t}.`, sonsRotulo: 'Feedback sounds', sonsLig: 'on', sonsDesl: 'off',
     opcoes: 'Options', pecas: 'Tap the pieces below', limpar: 'Clear', escrevaPrivado: 'Write here (only you can see it)', escreva: 'Write here', escrevaCirilico: 'Write in Cyrillic',
-    certo: 'Correct.', errou: 'Not this time. Answer:', compare: 'Compare with a sample answer:', mostrarResposta: 'Show answer', verExemplo: 'Show example', verificar: 'Check',
+    certo: 'Correct.', errou: 'Not this time. Answer:', compare: 'Compare with a sample answer:', avisoMedicao: 'Help us improve the lessons: may we record, with no name or e-mail, which exercises you get right or wrong?', medicaoSim: 'Yes, record', medicaoNao: 'No, thanks', medicaoSaiba: 'How it works', mostrarResposta: 'Show answer', verExemplo: 'Show example', verificar: 'Check',
     verResultado: 'See result', proximo: 'Next', emPortugues: 'Compare with English:', erros: 'Common mistakes', revisao: 'Review.', suaVez: 'Your turn.',
     esconder: 'Hide example', ouvirExplicacao: 'Listen to the explanation', ouvirDialogo: 'Listen to the whole dialogue', parar: 'Stop', mostrarTrad: 'Show translation', ouvirTexto: 'Listen to the text',
     perguntas: 'Questions', blocosSessao: 'Session blocks', voltar: 'Back', continuar: 'Continue', concluir: 'Finish session', concluida: 'Session complete',

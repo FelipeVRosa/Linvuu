@@ -478,14 +478,6 @@
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "The text is about learning English",
-              "respostaEsperada": "The text is about learning English",
-              "explicacao": "Escreva: the text is about learning English.",
-              "id": "en-061-e03"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Estou um pouco nervosa. O que devo fazer primeiro?»",
               "opcoes": [
@@ -503,6 +495,14 @@
               "explicacao": "Escreva: I'm a little nervous. What should I do first?",
               "id": "en-061-x03",
               "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "The text is about learning English",
+              "respostaEsperada": "The text is about learning English",
+              "explicacao": "Escreva: the text is about learning English.",
+              "id": "en-061-e03"
             },
             {
               "tipo": "audio-recognition",
@@ -559,18 +559,6 @@
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Para achar um número específico, você usa…",
-              "opcoes": [
-                "scan",
-                "skim",
-                "repeat"
-              ],
-              "gabarito": "scan",
-              "explicacao": "scan = específico.",
-              "id": "en-061-e05"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Use expressões como: First of all, next e finally.»",
               "opcoes": [
@@ -591,15 +579,15 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Para a ideia geral, você usa…",
+              "enunciado": "Para achar um número específico, você usa…",
               "opcoes": [
-                "skim",
                 "scan",
-                "translate"
+                "skim",
+                "repeat"
               ],
-              "gabarito": "skim",
-              "explicacao": "skim = geral.",
-              "id": "en-061-e06"
+              "gabarito": "scan",
+              "explicacao": "scan = específico.",
+              "id": "en-061-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -612,15 +600,15 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Qual frase está correta?",
+              "enunciado": "Para a ideia geral, você usa…",
               "opcoes": [
-                "What does «freezing» mean?",
-                "What means «freezing»?",
-                "What does «freezing» means?"
+                "skim",
+                "scan",
+                "translate"
               ],
-              "gabarito": "What does «freezing» mean?",
-              "explicacao": "does + mean.",
-              "id": "en-061-e07"
+              "gabarito": "skim",
+              "explicacao": "skim = geral.",
+              "id": "en-061-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -641,15 +629,15 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "Qual frase abre uma apresentação?",
+              "enunciado": "Qual frase está correta?",
               "opcoes": [
-                "Today I'm going to talk about…",
-                "Today I go talk…",
-                "I talk today of…"
+                "What does «freezing» mean?",
+                "What means «freezing»?",
+                "What does «freezing» means?"
               ],
-              "gabarito": "Today I'm going to talk about…",
-              "explicacao": "going to.",
-              "id": "en-061-e08"
+              "gabarito": "What does «freezing» mean?",
+              "explicacao": "does + mean.",
+              "id": "en-061-e07"
             },
             {
               "tipo": "audio-recognition",
@@ -659,6 +647,18 @@
               "explicacao": "E se eu não entender uma pergunta?",
               "id": "en-061-x10",
               "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase abre uma apresentação?",
+              "opcoes": [
+                "Today I'm going to talk about…",
+                "Today I go talk…",
+                "I talk today of…"
+              ],
+              "gabarito": "Today I'm going to talk about…",
+              "explicacao": "going to.",
+              "id": "en-061-e08"
             },
             {
               "tipo": "sentence-ordering",
@@ -678,15 +678,6 @@
               "complemento": true
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "Today I am going to talk about English",
-              "respostaEsperada": "Today I am going to talk about English.",
-              "explicacao": "Hoje eu vou falar sobre o inglês.",
-              "id": "en-061-r02",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Just say: Could you repeat that, please?",
@@ -696,16 +687,13 @@
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "The text is ___ learning English. (sobre)",
-              "opcoes": [
-                "about",
-                "on of",
-                "to"
-              ],
-              "gabarito": "about",
-              "explicacao": "is about.",
-              "id": "en-061-e09"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Today I am going to talk about English",
+              "respostaEsperada": "Today I am going to talk about English.",
+              "explicacao": "Hoje eu vou falar sobre o inglês.",
+              "id": "en-061-r02",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -725,15 +713,15 @@
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "___ of all, listening. (antes de tudo)",
+              "enunciado": "The text is ___ learning English. (sobre)",
               "opcoes": [
-                "First",
-                "Final",
-                "One"
+                "about",
+                "on of",
+                "to"
               ],
-              "gabarito": "First",
-              "explicacao": "First of all.",
-              "id": "en-061-e10"
+              "gabarito": "about",
+              "explicacao": "is about.",
+              "id": "en-061-e09"
             },
             {
               "tipo": "audio-recognition",
@@ -746,15 +734,15 @@
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "___, thank you for listening. (por fim)",
+              "enunciado": "___ of all, listening. (antes de tudo)",
               "opcoes": [
-                "Finally",
+                "First",
                 "Final",
-                "At last of"
+                "One"
               ],
-              "gabarito": "Finally",
-              "explicacao": "Finally.",
-              "id": "en-061-e11"
+              "gabarito": "First",
+              "explicacao": "First of all.",
+              "id": "en-061-e10"
             },
             {
               "tipo": "multiple-choice",
@@ -772,13 +760,16 @@
               "complemento": true
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "The text is about learning English",
-              "respostaEsperada": "The text is about learning English.",
-              "explicacao": "O texto é sobre aprender inglês.",
-              "id": "en-061-r03",
-              "complemento": true
+              "tipo": "fill-gap",
+              "enunciado": "___, thank you for listening. (por fim)",
+              "opcoes": [
+                "Finally",
+                "Final",
+                "At last of"
+              ],
+              "gabarito": "Finally",
+              "explicacao": "Finally.",
+              "id": "en-061-e11"
             },
             {
               "tipo": "multiple-choice",
@@ -796,18 +787,6 @@
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "To ___ up, practice every day. (resumir)",
-              "opcoes": [
-                "sum",
-                "add",
-                "say"
-              ],
-              "gabarito": "sum",
-              "explicacao": "To sum up.",
-              "id": "en-061-e12"
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «title»?",
               "audio": "title",
@@ -823,6 +802,15 @@
               "complemento": true
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The text is about learning English",
+              "respostaEsperada": "The text is about learning English.",
+              "explicacao": "O texto é sobre aprender inglês.",
+              "id": "en-061-r03",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «finally»?",
               "audio": "finally",
@@ -835,6 +823,33 @@
               "gabarito": "por fim",
               "explicacao": "«finally» = por fim.",
               "id": "en-061-x18",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "To ___ up, practice every day. (resumir)",
+              "opcoes": [
+                "sum",
+                "add",
+                "say"
+              ],
+              "gabarito": "sum",
+              "explicacao": "To sum up.",
+              "id": "en-061-e12"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «main idea»?",
+              "audio": "main idea",
+              "opcoes": [
+                "antes de tudo",
+                "ideia principal",
+                "apresentar",
+                "título"
+              ],
+              "gabarito": "ideia principal",
+              "explicacao": "«main idea» = ideia principal.",
+              "id": "en-061-x19",
               "complemento": true
             },
             {
@@ -854,17 +869,33 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «main idea»?",
-              "audio": "main idea",
+              "enunciado": "O que significa «detail»?",
+              "audio": "detail",
               "opcoes": [
-                "antes de tudo",
-                "ideia principal",
-                "apresentar",
+                "quem fala",
+                "contexto",
+                "detalhe",
                 "título"
               ],
-              "gabarito": "ideia principal",
-              "explicacao": "«main idea» = ideia principal.",
-              "id": "en-061-x19",
+              "gabarito": "detalhe",
+              "explicacao": "«detail» = detalhe.",
+              "id": "en-061-x20",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Could you repeat that please",
+              "opcoes": [
+                "repeat",
+                "Could",
+                "please",
+                "that",
+                "you"
+              ],
+              "gabarito": "Could you repeat that please",
+              "explicacao": "Escreva: Could you repeat that please",
+              "id": "en-061-x21",
               "complemento": true
             },
             {
@@ -885,18 +916,22 @@
               "id": "en-061-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «detail»?",
-              "audio": "detail",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Today I am going to talk about English",
               "opcoes": [
-                "quem fala",
-                "contexto",
-                "detalhe",
-                "título"
+                "going",
+                "talk",
+                "Today",
+                "I",
+                "English",
+                "to",
+                "am",
+                "about"
               ],
-              "gabarito": "detalhe",
-              "explicacao": "«detail» = detalhe.",
-              "id": "en-061-x20",
+              "gabarito": "Today I am going to talk about English",
+              "explicacao": "Escreva: Today I am going to talk about English",
+              "id": "en-061-x22",
               "complemento": true
             },
             {

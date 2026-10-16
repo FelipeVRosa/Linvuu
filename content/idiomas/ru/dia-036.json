@@ -36,6 +36,29 @@
             "id": "ru-009-e01"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Oi! O que você está fazendo?»",
+            "opcoes": [
+              "Привет!",
+              "делаешь?",
+              "Что",
+              "ты"
+            ],
+            "gabarito": "Привет! Что ты делаешь?",
+            "explicacao": "Escreva: Привет! Что ты делаешь?",
+            "id": "ru-009-x01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Привет! Что ты делаешь?",
+            "respostaEsperada": "Привет! Что ты делаешь?",
+            "explicacao": "Oi! O que você está fazendo?",
+            "id": "ru-009-x02",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Я слушаю ___. (música)",
             "opcoes": [
@@ -46,6 +69,31 @@
             "gabarito": "музыку",
             "explicacao": "музыка → музыку.",
             "id": "ru-009-e02"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Oi! Estou lendo um livro. E você?»",
+            "opcoes": [
+              "Привет!",
+              "книгу.",
+              "А",
+              "читаю",
+              "Я",
+              "ты?"
+            ],
+            "gabarito": "Привет! Я читаю книгу. А ты?",
+            "explicacao": "Escreva: Привет! Я читаю книгу. А ты?",
+            "id": "ru-009-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Привет! Я читаю книгу. А ты?",
+            "respostaEsperada": "Привет! Я читаю книгу. А ты?",
+            "explicacao": "Oi! Estou lendo um livro. E você?",
+            "id": "ru-009-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -60,6 +108,30 @@
             "id": "ru-009-e03"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Estou ouvindo música e descansando.»",
+            "opcoes": [
+              "и",
+              "Я",
+              "отдыхаю.",
+              "слушаю",
+              "музыку"
+            ],
+            "gabarito": "Я слушаю музыку и отдыхаю.",
+            "explicacao": "Escreva: Я слушаю музыку и отдыхаю.",
+            "id": "ru-009-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Я слушаю музыку и отдыхаю.",
+            "respostaEsperada": "Я слушаю музыку и отдыхаю.",
+            "explicacao": "Estou ouvindo música e descansando.",
+            "id": "ru-009-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Мы ___ русский язык. (estudamos)",
             "opcoes": [
@@ -70,6 +142,28 @@
             "gabarito": "изучаем",
             "explicacao": "мы → -ем.",
             "id": "ru-009-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Você gosta de música?»",
+            "opcoes": [
+              "музыку?",
+              "Ты",
+              "любишь"
+            ],
+            "gabarito": "Ты любишь музыку?",
+            "explicacao": "Escreva: Ты любишь музыку?",
+            "id": "ru-009-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ты любишь музыку?",
+            "respostaEsperada": "Ты любишь музыку?",
+            "explicacao": "Você gosta de música?",
+            "id": "ru-009-x08",
+            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -86,6 +180,31 @@
           },
           {
             "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, muito! E você, gosta de cinema?»",
+            "opcoes": [
+              "кино?",
+              "очень!",
+              "ты",
+              "Да,",
+              "А",
+              "любишь"
+            ],
+            "gabarito": "Да, очень! А ты любишь кино?",
+            "explicacao": "Escreva: Да, очень! А ты любишь кино?",
+            "id": "ru-009-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Да, очень! А ты любишь кино?",
+            "respostaEsperada": "Да, очень! А ты любишь кино?",
+            "explicacao": "Sim, muito! E você, gosta de cinema?",
+            "id": "ru-009-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Eu gosto de café.»",
             "opcoes": [
               "кофе",
@@ -95,6 +214,21 @@
             "gabarito": "Я люблю кофе.",
             "explicacao": "«Кофе» não muda.",
             "id": "ru-009-e06"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, gosto de assistir a filmes.»",
+            "opcoes": [
+              "люблю",
+              "смотреть",
+              "фильмы.",
+              "я",
+              "Да,"
+            ],
+            "gabarito": "Да, я люблю смотреть фильмы.",
+            "explicacao": "Escreva: Да, я люблю смотреть фильмы.",
+            "id": "ru-009-x11",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -109,6 +243,30 @@
             "id": "ru-009-e07"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Да, я люблю смотреть фильмы.",
+            "respostaEsperada": "Да, я люблю смотреть фильмы.",
+            "explicacao": "Sim, gosto de assistir a filmes.",
+            "id": "ru-009-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «фильм»?",
+            "audio": "фильм",
+            "opcoes": [
+              "filme",
+              "assistir, olhar",
+              "café (bebida)",
+              "fazer"
+            ],
+            "gabarito": "filme",
+            "explicacao": "«фильм» = filme.",
+            "id": "ru-009-x13",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -121,12 +279,72 @@
             "id": "ru-009-e08"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «говорить»?",
+            "audio": "говорить",
+            "opcoes": [
+              "pão",
+              "fazer",
+              "falar",
+              "entender"
+            ],
+            "gabarito": "falar",
+            "explicacao": "«говорить» = falar.",
+            "id": "ru-009-x14",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «вода»?",
+            "audio": "вода",
+            "opcoes": [
+              "filme",
+              "água",
+              "entender",
+              "falar"
+            ],
+            "gabarito": "água",
+            "explicacao": "«вода» = água.",
+            "id": "ru-009-x15",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva em cirílico.",
             "audio": "Я слушаю музыку",
             "respostaEsperada": "Я слушаю музыку",
             "explicacao": "Verbo + acusativo.",
             "id": "ru-009-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «спорт»?",
+            "audio": "спорт",
+            "opcoes": [
+              "café (bebida)",
+              "entender",
+              "esporte",
+              "passear, caminhar"
+            ],
+            "gabarito": "esporte",
+            "explicacao": "«спорт» = esporte.",
+            "id": "ru-009-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «делать»?",
+            "audio": "делать",
+            "opcoes": [
+              "cinema",
+              "fazer",
+              "descansar",
+              "sopa"
+            ],
+            "gabarito": "fazer",
+            "explicacao": "«делать» = fazer.",
+            "id": "ru-009-x17",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -141,6 +359,35 @@
             "id": "ru-009-e10"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «кофе»?",
+            "audio": "кофе",
+            "opcoes": [
+              "café (bebida)",
+              "fazer",
+              "filme",
+              "ler"
+            ],
+            "gabarito": "café (bebida)",
+            "explicacao": "«кофе» = café (bebida).",
+            "id": "ru-009-x18",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Что ты делаешь?",
+            "opcoes": [
+              "делаешь?",
+              "Что",
+              "ты"
+            ],
+            "gabarito": "Что ты делаешь?",
+            "explicacao": "Escreva: Что ты делаешь?",
+            "id": "ru-009-x19",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Ela lê um livro.»",
             "opcoes": [
@@ -151,6 +398,29 @@
             "gabarito": "Она читает книгу.",
             "explicacao": "Sujeito + verbo + objeto.",
             "id": "ru-009-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Я слушаю музыку",
+            "opcoes": [
+              "слушаю",
+              "музыку",
+              "Я"
+            ],
+            "gabarito": "Я слушаю музыку",
+            "explicacao": "Escreva: Я слушаю музыку",
+            "id": "ru-009-x20",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Что ты делаешь?",
+            "respostaEsperada": "Что ты делаешь?",
+            "explicacao": "Escreva: Что ты делаешь?",
+            "id": "ru-009-x21",
+            "complemento": true
           },
           {
             "tipo": "producao",

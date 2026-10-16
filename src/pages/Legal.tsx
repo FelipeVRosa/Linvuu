@@ -21,7 +21,8 @@ function PrivacidadePt() {
           <li><strong>Pagamento:</strong> se você assinar, os dados do cartão são digitados direto no Stripe, que processa o pagamento. A Linvuu não vê nem guarda o número do cartão; guardamos apenas o vínculo entre a sua conta e a assinatura (identificador do cliente no Stripe) e o status dela.</li>
           <li><strong>Dados técnicos:</strong> registros do servidor (como endereço IP e tipo de navegador), necessários para o site funcionar e se manter seguro.</li>
         </ul>
-        <p>Hoje o site <strong>não usa cookies de publicidade nem ferramentas de análise de visitas</strong>. Se isso mudar, esta página será atualizada antes e pediremos o seu consentimento.</p>
+        <p>O site <strong>não usa cookies de publicidade nem ferramentas de análise de terceiros</strong>.</p>
+        <p><strong>Medição do aprendizado (opcional):</strong> se você aceitar o aviso que aparece nos exercícios, guardamos um identificador aleatório neste navegador e registramos, nos nossos servidores, quais exercícios você acertou ou errou e quando concluiu uma sessão. Não registramos nome, e-mail nem as suas respostas, e esse identificador não é ligado à sua conta. Usamos só para melhorar as aulas e saber se os alunos evoluem. Se recusar, nada é registrado. Para parar ou apagar, escreva para o contato abaixo informando o dia aproximado de uso; sem o identificador não conseguimos localizar os seus registros, por isso, ao recusar, o identificador é apagado do navegador.</p>
         <h2>Para que usamos</h2>
         <ul>
           <li>Criar e manter a sua conta, salvar o seu progresso e processar a sua assinatura (execução do serviço que você pediu).</li>
@@ -89,7 +90,8 @@ function PrivacyEn() {
           <li><strong>Payment:</strong> if you subscribe, you type your card details directly into Stripe, which processes the payment. Linvuu never sees or stores your card number; we only keep the link between your account and your subscription (the Stripe customer ID) and its status.</li>
           <li><strong>Technical data:</strong> server logs (such as IP address and browser type), needed to keep the site working and secure.</li>
         </ul>
-        <p>The site currently uses <strong>no advertising cookies and no visitor analytics</strong>. If that changes, this page will be updated first and we will ask for your consent.</p>
+        <p>The site uses <strong>no advertising cookies and no third-party analytics</strong>.</p>
+        <p><strong>Learning measurement (optional):</strong> if you accept the notice shown in the exercises, we store a random identifier in this browser and record on our servers which exercises you got right or wrong and when you finished a session. We do not record your name, e-mail or your answers, and the identifier is not linked to your account. We use it only to improve the lessons and to see whether students progress. If you decline, nothing is recorded, and the identifier is removed from your browser.</p>
         <h2>What we use it for</h2>
         <ul>
           <li>Creating and keeping your account, saving your progress and processing your subscription (performing the service you asked for).</li>
@@ -156,7 +158,8 @@ function PrivacidadEs() {
           <li><strong>Pago:</strong> si te suscribes, escribes los datos de la tarjeta directamente en Stripe, que procesa el pago. Linvuu no ve ni guarda el número de tu tarjeta; solo guardamos el vínculo entre tu cuenta y tu suscripción (el identificador de cliente en Stripe) y su estado.</li>
           <li><strong>Datos técnicos:</strong> registros del servidor (como la dirección IP y el tipo de navegador), necesarios para que el sitio funcione y sea seguro.</li>
         </ul>
-        <p>Hoy el sitio <strong>no usa cookies de publicidad ni herramientas de análisis de visitas</strong>. Si eso cambia, actualizaremos esta página antes y te pediremos consentimiento.</p>
+        <p>El sitio <strong>no usa cookies de publicidad ni herramientas de análisis de terceros</strong>.</p>
+        <p><strong>Medición del aprendizaje (opcional):</strong> si aceptas el aviso que aparece en los ejercicios, guardamos un identificador aleatorio en este navegador y registramos en nuestros servidores qué ejercicios aciertas o fallas y cuándo terminas una sesión. No registramos tu nombre, correo ni tus respuestas, y el identificador no se vincula a tu cuenta. Lo usamos solo para mejorar las clases y saber si los alumnos progresan. Si lo rechazas, no se registra nada y el identificador se borra del navegador.</p>
         <h2>Para qué los usamos</h2>
         <ul>
           <li>Crear y mantener tu cuenta, guardar tu progreso y procesar tu suscripción (prestar el servicio que pediste).</li>

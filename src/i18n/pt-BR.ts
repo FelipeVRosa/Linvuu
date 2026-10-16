@@ -101,7 +101,7 @@ export const ptBR = {
     ouvir: 'Ouvir', ainda: 'ouça e repita', aindaDica: (l: string) => `Tem letras que você ainda vai aprender (${l}). Por enquanto, ouça e repita.`, resposta: 'Resposta:', refazer: 'Refazer os exercícios', tocarOuvir: 'Toque para ouvir',
     temaAlterado: (t: string) => `Tema alterado para ${t}.`, sonsRotulo: 'Sons de reforço', sonsLig: 'ligados', sonsDesl: 'desligados',
     opcoes: 'Opções', pecas: 'Toque nas peças abaixo', limpar: 'Limpar', escrevaPrivado: 'Escreva aqui (só você vê)', escreva: 'Escreva aqui', escrevaCirilico: 'Escreva em cirílico',
-    certo: 'Certo.', errou: 'Não foi dessa vez. Resposta:', compare: 'Compare com um exemplo:', mostrarResposta: 'Mostrar resposta', verExemplo: 'Ver exemplo', verificar: 'Verificar',
+    certo: 'Certo.', errou: 'Não foi dessa vez. Resposta:', compare: 'Compare com um exemplo:', avisoMedicao: 'Ajude a melhorar as aulas: posso registrar, sem nome nem e-mail, quais exercícios você acerta e erra?', medicaoSim: 'Pode registrar', medicaoNao: 'Não, obrigado', medicaoSaiba: 'Como funciona', mostrarResposta: 'Mostrar resposta', verExemplo: 'Ver exemplo', verificar: 'Verificar',
     verResultado: 'Ver resultado', proximo: 'Próximo', emPortugues: 'Compare com o português:', erros: 'Erros comuns', revisao: 'Revisão.', suaVez: 'Agora é com você.',
     esconder: 'Esconder exemplo', ouvirExplicacao: 'Ouvir explicação', ouvirDialogo: 'Ouvir o diálogo todo', parar: 'Parar', mostrarTrad: 'Mostrar tradução', ouvirTexto: 'Ouvir o texto',
     perguntas: 'Perguntas', blocosSessao: 'Blocos da sessão', voltar: 'Voltar', continuar: 'Continuar', concluir: 'Concluir sessão', concluida: 'Sessão concluída',

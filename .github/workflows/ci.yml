@@ -22,12 +22,14 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Verificar tipos TypeScript
-        run: npm run lint
+        run: npm run lint && npm run lint:apk
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
       - name: Testar isolamento do progresso
         run: npm run testar:progresso
-      - run: npm run build
+      - run: npm run build:website
+      - run: npm run build:apk
+      - run: npm run testar:plataformas
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)

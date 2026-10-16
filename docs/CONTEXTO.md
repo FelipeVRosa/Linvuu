@@ -3,7 +3,9 @@
 Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
 
 ## O que é
-Linvuu: idiomas e STEM em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
+Linvuu: idiomas em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
+
+Atualização de 16/10/2026: foco somente em idiomas, website e Android. Arquitetura atual em `docs/WEBSITE.md` e `docs/APK.md`; as rodadas históricas abaixo contêm estados antigos.
 
 ## Onde cada coisa fica
 | O quê | Onde | Observação |

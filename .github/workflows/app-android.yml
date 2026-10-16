@@ -2,7 +2,7 @@ name: App Android (APK de teste)
 on:
   workflow_dispatch:
   pull_request:
-    paths: ['android/**', 'capacitor.config.ts', 'scripts/app-android.mjs']
+    paths: ['android/**', 'src/**', 'content/**', 'public/**', 'scripts/**', 'package*.json', 'vite.config.ts', 'capacitor.config.ts', '.github/workflows/app-android.yml']
 permissions:
   contents: read
 jobs:

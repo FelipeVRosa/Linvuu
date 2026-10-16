@@ -1,26 +1,25 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { Capacitor } from '@capacitor/core';
+import { APK } from './plataforma';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import Home from './pages/Home';
+
+import Home from '@plataforma/Home';
 import Cursos from './pages/Cursos';
 const Curso = lazy(() => import('./pages/Curso'));
 const Portugues = lazy(() => import('./pages/Portugues'));
 const Dia = lazy(() => import('./pages/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
-const Assinatura = lazy(() => import('./pages/Assinatura'));
-const Legal = lazy(() => import('./pages/Legal').then((m) => ({ default: m.Legal })));
+const Assinatura = lazy(() => import('@plataforma/Assinatura'));
+const Legal = lazy(() => import('@plataforma/Legal').then((m) => ({ default: m.Legal })));
 const Gramatica = lazy(() => import('./pages/Gramatica'));
-const LivroGramatica = lazy(() => import('./pages/LivroGramatica'));
+const LivroGramatica = lazy(() => import('@plataforma/LivroGramatica'));
 const LivrosIndice = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivrosIndice })));
 const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroPagina })));
 const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
-import { BarraTopo } from './components/BarraTopo';
-import { BarraInferior } from './components/BarraInferior';
+import { BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
 
@@ -40,7 +39,7 @@ function RolarAoTopo() {
 // Páginas de dia da área do aluno (/curso/:id/dia/:n): sem bloco de newsletter no rodapé.
 const AREA_ALUNO = /^\/curso\/[^/]+\/dia\//;
 // Dentro do app Android: sem a barra de idiomas do topo e sem o rodapé longo; navegação por abas embaixo.
-const NATIVO = Capacitor.isNativePlatform();
+const NATIVO = APK;
 if (NATIVO && typeof document !== 'undefined') document.documentElement.dataset.plataforma = 'nativo';
 
 export default function App() {

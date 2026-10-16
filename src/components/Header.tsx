@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
+import { APK } from '../plataforma';
 import { useT } from '../i18n';
 
 // Gramática: o primeiro curso da vitrine que tem a aba de gramática.
@@ -40,7 +41,7 @@ export function Header() {
           <Link to="/cursos">{t.nav.cursos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/assinatura">{t.nav.preco}</Link>
+          <Link to="/assinatura">{APK ? t.nav.assinatura : t.nav.preco}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
         </nav>
 
@@ -80,7 +81,7 @@ export function Header() {
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/assinatura">{t.nav.precoAssinatura}</Link>
+          <Link to="/assinatura">{APK ? t.nav.assinatura : t.nav.precoAssinatura}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">

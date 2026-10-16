@@ -159,7 +159,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-variation-settings:var(--fraunc
 .lv-carta-ass{font-family:'Caveat',cursive;font-size:30px;color:var(--verde-floresta);margin:20px 0 0}
 @media(max-width:800px){.lv-fotos{grid-template-columns:1fr}}
 
-.paywall{border:1px solid var(--verde,#1E3B2F);border-radius:0;padding:28px;margin:24px 0;background:#fff}
+.paywall{border:1px solid var(--verde,#1E3B2F);border-radius:0;padding:28px;margin:24px 0;background:var(--papel-claro)}
 .area-aluno[data-tema="escuro"] .paywall{background:var(--papel-claro);border-color:var(--border-strong)}
 .area-aluno[data-tema="escuro"] .paywall .erro{color:#E9A08A}
 .paywall h2{margin:0 0 8px}
@@ -167,8 +167,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-variation-settings:var(--fraunc
 .link-btn{background:none;border:0;padding:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit}
 
 .lv-planos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:20px auto 0 0;max-width:760px}
-.lv-plano{border:1px solid rgba(29,31,28,.25);border-radius:0;padding:28px;background:#fff;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
-.lv-plano-dest{border-color:#1E3B2F;border-width:2px}
+.lv-plano{border:1px solid var(--linha-forte);border-radius:0;padding:28px;background:var(--papel-claro);display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.lv-plano-dest{border-color:var(--verde-floresta);border-width:2px}
 .lv-plano h3{margin:0}
 .lv-plano-preco{font-family:'Newsreader Variable',serif;font-size:2.2rem;margin:0}
 .lv-plano-preco span{font-size:1rem;font-family:inherit}
@@ -297,7 +297,7 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
   width:18px;height:18px;border-radius:50%;border:1.5px solid var(--sem-texto-2);display:grid;place-items:center;
   font-size:11px;font-weight:700;color:var(--sem-acao-texto);
 }
-.aa-dia.feito .aa-marca{background:var(--sem-acao);border-color:var(--sem-acao);color:#fff}
+.aa-dia.feito .aa-marca{background:var(--sem-acao);border-color:var(--sem-acao);color:var(--sem-acao-texto,var(--papel))}
 .area-aluno[data-tema="escuro"] .aa-dia.feito .aa-marca{color:#18211C}
 .aa-dia-n{font-variant-numeric:tabular-nums;color:var(--sem-texto-2);font-size:13px}
 .aa-dia-t{display:grid;gap:2px;min-width:0}
@@ -470,4 +470,25 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
   .passos-nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding:2px 20px 6px;scroll-snap-type:x proximity}
   .passos-nav::-webkit-scrollbar{display:none}
   .passos-nav li{flex:none;scroll-snap-align:start}
+}
+
+/* ===== Tema escuro da aula também no topo da página ===== */
+html[data-tema-aluno="escuro"] body{background:oklch(15% 0.012 155)}
+html[data-tema-aluno="escuro"] .barra-topo,
+html[data-tema-aluno="escuro"] .lv-head,
+html[data-tema-aluno="escuro"] .lv-mobile{background:oklch(20% 0.014 155);color:#EDE8DC;border-color:rgba(237,232,220,.16)}
+html[data-tema-aluno="escuro"] .barra-topo a,
+html[data-tema-aluno="escuro"] .lv-nav a,
+html[data-tema-aluno="escuro"] .lv-entrar,
+html[data-tema-aluno="escuro"] .lv-burger,
+html[data-tema-aluno="escuro"] .lv-mobile a:not(.btn){color:#EDE8DC}
+html[data-tema-aluno="escuro"] .barra-idioma.on{background:#EDE8DC;color:#18211C}
+html[data-tema-aluno="escuro"] .lv-head-cta{background:#9CCBB0;border-color:#9CCBB0;color:#18211C}
+html[data-tema-aluno="escuro"] .lv-logo img{content:url(/brand/linvuu-wordmark-papel.svg)}
+
+/* ===== Celular e app: áreas seguras (notch e barra de gestos) ===== */
+.barra-topo{padding-top:env(safe-area-inset-top,0px)}
+.foot,.lv-cta{padding-bottom:env(safe-area-inset-bottom,0px)}
+@supports(padding:max(0px)){
+  .lv-head-in,.barra-topo-in{padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
 }

@@ -692,20 +692,6 @@
               "id": "it-012-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Luca! Como vai?»",
-              "opcoes": [
-                "Come",
-                "Luca!",
-                "Ciao,",
-                "stai?"
-              ],
-              "gabarito": "Ciao, Luca! Come stai?",
-              "explicacao": "Escreva: Ciao, Luca! Come stai?",
-              "id": "it-012-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Faccio colazione alle sette",
@@ -722,12 +708,22 @@
               "id": "it-012-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ciao, Luca! Come stai?",
-              "respostaEsperada": "Ciao, Luca! Come stai?",
-              "explicacao": "Oi, Luca! Como vai?",
-              "id": "it-012-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Saio com a Chiara. Vamos ao cinema. Você vem com a gente?»",
+              "opcoes": [
+                "Andiamo",
+                "con",
+                "con",
+                "al",
+                "cinema.",
+                "Vieni",
+                "Chiara.",
+                "noi?",
+                "Esco"
+              ],
+              "gabarito": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+              "explicacao": "Escreva: Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+              "id": "it-012-x01",
               "complemento": true
             },
             {
@@ -737,6 +733,15 @@
               "respostaEsperada": "Bevo un caffè",
               "explicacao": "Escreva: Bevo un caffè.",
               "id": "it-012-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ciao, Luca! Come stai?",
+              "respostaEsperada": "Ciao, Luca! Come stai?",
+              "explicacao": "Oi, Luca! Como vai?",
+              "id": "it-012-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -763,24 +768,6 @@
               "id": "it-012-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vou bem, obrigado. E você? O que faz hoje à noite?»",
-              "opcoes": [
-                "Sto",
-                "tu?",
-                "bene,",
-                "stasera?",
-                "Cosa",
-                "fai",
-                "grazie.",
-                "E"
-              ],
-              "gabarito": "Sto bene, grazie. E tu? Cosa fai stasera?",
-              "explicacao": "Escreva: Sto bene, grazie. E tu? Cosa fai stasera?",
-              "id": "it-012-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -791,6 +778,15 @@
               "gabarito": "Oggi fa freddo.",
               "explicacao": "Clima: «fare».",
               "id": "it-012-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+              "respostaEsperada": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
+              "explicacao": "Saio com a Chiara. Vamos ao cinema. Você vem com a gente?",
+              "id": "it-012-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -817,15 +813,6 @@
               "id": "it-012-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sto bene, grazie. E tu? Cosa fai stasera?",
-              "respostaEsperada": "Sto bene, grazie. E tu? Cosa fai stasera?",
-              "explicacao": "Vou bem, obrigado. E você? O que faz hoje à noite?",
-              "id": "it-012-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Loro ___ dal Brasile. (venire)",
               "opcoes": [
@@ -836,6 +823,15 @@
               "gabarito": "vengono",
               "explicacao": "«Loro vengono».",
               "id": "it-012-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sto bene, grazie. E tu? Cosa fai stasera?",
+              "respostaEsperada": "Sto bene, grazie. E tu? Cosa fai stasera?",
+              "explicacao": "Vou bem, obrigado. E você? O que faz hoje à noite?",
+              "id": "it-012-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -850,6 +846,25 @@
               "id": "it-012-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Perfeito! Você me ajuda a escolher o filme?»",
+              "opcoes": [
+                "film?",
+                "mano",
+                "a",
+                "il",
+                "dai",
+                "scegliere",
+                "Perfetto!",
+                "Mi",
+                "una"
+              ],
+              "gabarito": "Perfetto! Mi dai una mano a scegliere il film?",
+              "explicacao": "Escreva: Perfetto! Mi dai una mano a scegliere il film?",
+              "id": "it-012-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Io ___ un bicchiere d'acqua. (bere)",
               "opcoes": [
@@ -860,25 +875,6 @@
               "gabarito": "bevo",
               "explicacao": "«Io bevo».",
               "id": "it-012-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Saio com a Chiara. Vamos ao cinema. Você vem com a gente?»",
-              "opcoes": [
-                "Andiamo",
-                "con",
-                "con",
-                "al",
-                "cinema.",
-                "Vieni",
-                "Chiara.",
-                "noi?",
-                "Esco"
-              ],
-              "gabarito": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
-              "explicacao": "Escreva: Esco con Chiara. Andiamo al cinema. Vieni con noi?",
-              "id": "it-012-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -907,19 +903,19 @@
               "id": "it-012-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
-              "respostaEsperada": "Esco con Chiara. Andiamo al cinema. Vieni con noi?",
-              "explicacao": "Saio com a Chiara. Vamos ao cinema. Você vem com a gente?",
-              "id": "it-012-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Eu saio com os amigos. Vamos ao cinema e bebemos um café.",
               "respostaEsperada": "Esco con gli amici. Andiamo al cinema e beviamo un caffè.",
               "id": "it-012-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Perfetto! Mi dai una mano a scegliere il film?",
+              "respostaEsperada": "Perfetto! Mi dai una mano a scegliere il film?",
+              "explicacao": "Perfeito! Você me ajuda a escolher o filme?",
+              "id": "it-012-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -934,6 +930,15 @@
               "id": "it-012-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sì, vengo volentieri. A che ora?",
+              "respostaEsperada": "Sì, vengo volentieri. A che ora?",
+              "explicacao": "Sim, vou com prazer. A que horas?",
+              "id": "it-012-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Marco ___ la spesa. (faz)",
               "opcoes": [
@@ -944,22 +949,6 @@
               "gabarito": "fa",
               "explicacao": "Com «lui», «fare» é «fa».",
               "id": "it-012-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, vou com prazer. A que horas?»",
-              "opcoes": [
-                "vengo",
-                "Sì,",
-                "A",
-                "che",
-                "volentieri.",
-                "ora?"
-              ],
-              "gabarito": "Sì, vengo volentieri. A che ora?",
-              "explicacao": "Escreva: Sì, vengo volentieri. A che ora?",
-              "id": "it-012-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -986,6 +975,21 @@
               "id": "it-012-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «l'ufficio»?",
+              "audio": "l'ufficio",
+              "opcoes": [
+                "o escritório",
+                "a noitada, a noite",
+                "o cinema",
+                "estar bem"
+              ],
+              "gabarito": "o escritório",
+              "explicacao": "«l'ufficio» = o escritório.",
+              "id": "it-012-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Loro ___ molta acqua. (bebem)",
               "opcoes": [
@@ -996,15 +1000,6 @@
               "gabarito": "bevono",
               "explicacao": "Com «loro», «bere» é «bevono».",
               "id": "it-012-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sì, vengo volentieri. A che ora?",
-              "respostaEsperada": "Sì, vengo volentieri. A che ora?",
-              "explicacao": "Sim, vou com prazer. A que horas?",
-              "id": "it-012-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -1031,6 +1026,15 @@
               "id": "it-012-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Alle otto. Dopo il film beviamo qualcosa.",
+              "respostaEsperada": "Alle otto. Dopo il film beviamo qualcosa.",
+              "explicacao": "Às oito. Depois do filme tomamos alguma coisa.",
+              "id": "it-012-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se pergunta «Como se diz «obrigado»?»",
               "opcoes": [
@@ -1043,20 +1047,18 @@
               "id": "it-012-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Às oito. Depois do filme tomamos alguma coisa.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «arrivare»?",
+              "audio": "arrivare",
               "opcoes": [
-                "film",
-                "il",
-                "Dopo",
-                "Alle",
-                "otto.",
-                "qualcosa.",
-                "beviamo"
+                "a noitada, a noite",
+                "praticar esporte",
+                "chegar",
+                "tomar café da manhã"
               ],
-              "gabarito": "Alle otto. Dopo il film beviamo qualcosa.",
-              "explicacao": "Escreva: Alle otto. Dopo il film beviamo qualcosa.",
-              "id": "it-012-x09",
+              "gabarito": "chegar",
+              "explicacao": "«arrivare» = chegar.",
+              "id": "it-012-x06",
               "complemento": true
             },
             {
@@ -1084,15 +1086,6 @@
               "gabarito": "Noi facciamo una passeggiata insieme.",
               "explicacao": "Com «noi», «fare» é «facciamo».",
               "id": "it-012-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Alle otto. Dopo il film beviamo qualcosa.",
-              "respostaEsperada": "Alle otto. Dopo il film beviamo qualcosa.",
-              "explicacao": "Às oito. Depois do filme tomamos alguma coisa.",
-              "id": "it-012-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

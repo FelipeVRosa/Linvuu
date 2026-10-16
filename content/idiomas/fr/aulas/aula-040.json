@@ -470,6 +470,14 @@
               "id": "fr-040-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Il a dit qu'il était fatigué",
+              "respostaEsperada": "Il a dit qu'il était fatigué",
+              "explicacao": "Escreva: Il a dit qu'il était fatigué.",
+              "id": "fr-040-e04"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Então, o que o chefe disse na reunião?»",
               "opcoes": [
@@ -493,27 +501,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Il a dit qu'il était fatigué",
-              "respostaEsperada": "Il a dit qu'il était fatigué",
-              "explicacao": "Escreva: Il a dit qu'il était fatigué.",
-              "id": "fr-040-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Elle a demandé si j'avais mangé",
               "respostaEsperada": "Elle a demandé si j'avais mangé",
               "explicacao": "Escreva: Elle a demandé si j'avais mangé.",
               "id": "fr-040-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Alors, qu'est-ce que le patron a dit à la réunion ?",
-              "respostaEsperada": "Alors, qu'est-ce que le patron a dit à la réunion ?",
-              "explicacao": "Então, o que o chefe disse na reunião?",
-              "id": "fr-040-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -536,6 +527,15 @@
               "id": "fr-040-e07"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Alors, qu'est-ce que le patron a dit à la réunion ?",
+              "respostaEsperada": "Alors, qu'est-ce que le patron a dit à la réunion ?",
+              "explicacao": "Então, o que o chefe disse na reunião?",
+              "id": "fr-040-x02",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Il a dit: «Je viendrai.» → indireto:",
               "opcoes": [
@@ -546,25 +546,6 @@
               "gabarito": "Il a dit qu'il viendrait.",
               "explicacao": "Futuro → condicional.",
               "id": "fr-040-e08"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Disse que estava contente com os nossos resultados.»",
-              "opcoes": [
-                "était",
-                "content",
-                "a",
-                "de",
-                "dit",
-                "résultats.",
-                "Il",
-                "nos",
-                "qu'il"
-              ],
-              "gabarito": "Il a dit qu'il était content de nos résultats.",
-              "explicacao": "Escreva: Il a dit qu'il était content de nos résultats.",
-              "id": "fr-040-x03",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -591,6 +572,35 @@
               "id": "fr-040-e10"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Il a dit qu'il était content de nos résultats.",
+              "respostaEsperada": "Il a dit qu'il était content de nos résultats.",
+              "explicacao": "Disse que estava contente com os nossos resultados.",
+              "id": "fr-040-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E o bônus? Falou disso?»",
+              "opcoes": [
+                "la",
+                "parlé",
+                "?",
+                "en",
+                "prime",
+                "Il",
+                "pour",
+                "a",
+                "?",
+                "Et"
+              ],
+              "gabarito": "Et pour la prime ? Il en a parlé ?",
+              "explicacao": "Escreva: Et pour la prime ? Il en a parlé ?",
+              "id": "fr-040-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Il a dit qu'il ___ fini. (já tinha)",
               "opcoes": [
@@ -601,15 +611,6 @@
               "gabarito": "avait",
               "explicacao": "Plus-que-parfait.",
               "id": "fr-040-e11"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Il a dit qu'il était content de nos résultats.",
-              "respostaEsperada": "Il a dit qu'il était content de nos résultats.",
-              "explicacao": "Disse que estava contente com os nossos resultados.",
-              "id": "fr-040-x04",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -636,6 +637,15 @@
               "id": "fr-040-e13"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Et pour la prime ? Il en a parlé ?",
+              "respostaEsperada": "Et pour la prime ? Il en a parlé ?",
+              "explicacao": "E o bônus? Falou disso?",
+              "id": "fr-040-x04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Elle a demandé ___ je voulais. (o que)",
               "opcoes": [
@@ -646,26 +656,6 @@
               "gabarito": "ce que",
               "explicacao": "Pergunta indireta.",
               "id": "fr-040-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E o bônus? Falou disso?»",
-              "opcoes": [
-                "la",
-                "parlé",
-                "?",
-                "en",
-                "prime",
-                "Il",
-                "pour",
-                "a",
-                "?",
-                "Et"
-              ],
-              "gabarito": "Et pour la prime ? Il en a parlé ?",
-              "explicacao": "Escreva: Et pour la prime ? Il en a parlé ?",
-              "id": "fr-040-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -698,19 +688,31 @@
               "id": "fr-040-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Et pour la prime ? Il en a parlé ?",
-              "respostaEsperada": "Et pour la prime ? Il en a parlé ?",
-              "explicacao": "E o bônus? Falou disso?",
-              "id": "fr-040-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Ele disse que estava cansado. Ela perguntou se eu vinha. Ele prometeu me ligar.",
               "respostaEsperada": "Il a dit qu'il était fatigué. Elle a demandé si je venais. Il a promis de m'appeler.",
               "id": "fr-040-e17"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Prometeu nos dar uma resposta na semana que vem.»",
+              "opcoes": [
+                "Il",
+                "de",
+                "a",
+                "réponse",
+                "une",
+                "donner",
+                "la",
+                "prochaine.",
+                "semaine",
+                "promis",
+                "nous"
+              ],
+              "gabarito": "Il a promis de nous donner une réponse la semaine prochaine.",
+              "explicacao": "Escreva: Il a promis de nous donner une réponse la semaine prochaine.",
+              "id": "fr-040-x05",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -737,27 +739,6 @@
               "id": "fr-040-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Prometeu nos dar uma resposta na semana que vem.»",
-              "opcoes": [
-                "Il",
-                "de",
-                "a",
-                "réponse",
-                "une",
-                "donner",
-                "la",
-                "prochaine.",
-                "semaine",
-                "promis",
-                "nous"
-              ],
-              "gabarito": "Il a promis de nous donner une réponse la semaine prochaine.",
-              "explicacao": "Escreva: Il a promis de nous donner une réponse la semaine prochaine.",
-              "id": "fr-040-x07",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Elle demande ___ tu viens. (se)",
               "opcoes": [
@@ -768,6 +749,24 @@
               "gabarito": "si",
               "explicacao": "Pergunta sim/não indireta: «si».",
               "id": "fr-040-e20"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Il a promis de nous donner une réponse la semaine prochaine.",
+              "respostaEsperada": "Il a promis de nous donner une réponse la semaine prochaine.",
+              "explicacao": "Prometeu nos dar uma resposta na semana que vem.",
+              "id": "fr-040-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Il a demandé si quelqu'un avait des questions ?",
+              "respostaEsperada": "Il a demandé si quelqu'un avait des questions ?",
+              "explicacao": "Perguntou se alguém tinha dúvidas?",
+              "id": "fr-040-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -794,15 +793,6 @@
               "id": "fr-040-e22"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Il a promis de nous donner une réponse la semaine prochaine.",
-              "respostaEsperada": "Il a promis de nous donner une réponse la semaine prochaine.",
-              "explicacao": "Prometeu nos dar uma resposta na semana que vem.",
-              "id": "fr-040-x08",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Il a dit : « J'ai fini. »» em discurso indireto:",
               "opcoes": [
@@ -813,6 +803,21 @@
               "gabarito": "Il a dit qu'il avait fini.",
               "explicacao": "Passé composé → plus-que-parfait.",
               "id": "fr-040-e23"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «dire que»?",
+              "audio": "dire que",
+              "opcoes": [
+                "aconselhar",
+                "pedir para",
+                "era, estava",
+                "dizer que"
+              ],
+              "gabarito": "dizer que",
+              "explicacao": "«dire que» = dizer que.",
+              "id": "fr-040-x07",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -839,25 +844,6 @@
               "id": "fr-040-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perguntou se alguém tinha dúvidas?»",
-              "opcoes": [
-                "questions",
-                "des",
-                "a",
-                "si",
-                "quelqu'un",
-                "avait",
-                "?",
-                "Il",
-                "demandé"
-              ],
-              "gabarito": "Il a demandé si quelqu'un avait des questions ?",
-              "explicacao": "Escreva: Il a demandé si quelqu'un avait des questions ?",
-              "id": "fr-040-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "No discurso indireto no passado, «demain» vira:",
               "opcoes": [
@@ -868,6 +854,21 @@
               "gabarito": "le lendemain",
               "explicacao": "«Demain» → «le lendemain».",
               "id": "fr-040-e26"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «rapporter»?",
+              "audio": "rapporter",
+              "opcoes": [
+                "relatar",
+                "tinha terminado",
+                "pedir para",
+                "prometer"
+              ],
+              "gabarito": "relatar",
+              "explicacao": "«rapporter» = relatar.",
+              "id": "fr-040-x08",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -882,15 +883,6 @@
               "gabarito": "Elle a répondu qu'elle viendrait.",
               "explicacao": "Futuro → condicional.",
               "id": "fr-040-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Il a demandé si quelqu'un avait des questions ?",
-              "respostaEsperada": "Il a demandé si quelqu'un avait des questions ?",
-              "explicacao": "Perguntou se alguém tinha dúvidas?",
-              "id": "fr-040-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

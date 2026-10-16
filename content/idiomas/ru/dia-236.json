@@ -37,28 +37,17 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olhe, esta casa foi construída no ano passado.»",
+            "enunciado": "Monte a frase: «E a loja ao lado já está aberta?»",
             "opcoes": [
-              "в",
-              "построен",
-              "Смотри,",
-              "этот",
-              "прошлом",
-              "дом",
-              "году."
+              "уже",
+              "А",
+              "открыт?",
+              "магазин",
+              "рядом"
             ],
-            "gabarito": "Смотри, этот дом построен в прошлом году.",
-            "explicacao": "Escreva: Смотри, этот дом построен в прошлом году.",
+            "gabarito": "А магазин рядом уже открыт?",
+            "explicacao": "Escreva: А магазин рядом уже открыт?",
             "id": "ru-059-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Смотри, этот дом построен в прошлом году.",
-            "respostaEsperada": "Смотри, этот дом построен в прошлом году.",
-            "explicacao": "Olhe, esta casa foi construída no ano passado.",
-            "id": "ru-059-x02",
             "complemento": true
           },
           {
@@ -74,30 +63,12 @@
             "id": "ru-059-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «É bonita. Dizem que foi construída por uma firma alemã.»",
-            "opcoes": [
-              "построен",
-              "Он",
-              "что",
-              "он",
-              "немецкой",
-              "фирмой.",
-              "красивый.",
-              "Говорят,"
-            ],
-            "gabarito": "Он красивый. Говорят, что он построен немецкой фирмой.",
-            "explicacao": "Escreva: Он красивый. Говорят, что он построен немецкой фирмой.",
-            "id": "ru-059-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Он красивый. Говорят, что он построен немецкой фирмой.",
-            "respostaEsperada": "Он красивый. Говорят, что он построен немецкой фирмой.",
-            "explicacao": "É bonita. Dizem que foi construída por uma firma alemã.",
-            "id": "ru-059-x04",
+            "audio": "А магазин рядом уже открыт?",
+            "respostaEsperada": "А магазин рядом уже открыт?",
+            "explicacao": "E a loja ao lado já está aberta?",
+            "id": "ru-059-x02",
             "complemento": true
           },
           {
@@ -111,42 +82,6 @@
             "gabarito": "написано",
             "explicacao": "«письмо» é neutro.",
             "id": "ru-059-e03"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E a loja ao lado já está aberta?»",
-            "opcoes": [
-              "уже",
-              "А",
-              "открыт?",
-              "магазин",
-              "рядом"
-            ],
-            "gabarito": "А магазин рядом уже открыт?",
-            "explicacao": "Escreva: А магазин рядом уже открыт?",
-            "id": "ru-059-x05",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "А магазин рядом уже открыт?",
-            "respostaEsperada": "А магазин рядом уже открыт?",
-            "explicacao": "E a loja ao lado já está aberta?",
-            "id": "ru-059-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Дом ___ рабочими. (construído)",
-            "opcoes": [
-              "построен",
-              "строится",
-              "построил"
-            ],
-            "gabarito": "построен",
-            "explicacao": "Particípio curto + instrumental.",
-            "id": "ru-059-e04"
           },
           {
             "tipo": "sentence-ordering",
@@ -165,7 +100,16 @@
             ],
             "gabarito": "Нет, он ещё закрыт. Говорят, что его откроют в мае.",
             "explicacao": "Escreva: Нет, он ещё закрыт. Говорят, что его откроют в мае.",
-            "id": "ru-059-x07",
+            "id": "ru-059-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Смотри, этот дом построен в прошлом году.",
+            "respostaEsperada": "Смотри, этот дом построен в прошлом году.",
+            "explicacao": "Olhe, esta casa foi construída no ano passado.",
+            "id": "ru-059-r01",
             "complemento": true
           },
           {
@@ -174,58 +118,20 @@
             "audio": "Нет, он ещё закрыт. Говорят, что его откроют в мае.",
             "respostaEsperada": "Нет, он ещё закрыт. Говорят, что его откроют в мае.",
             "explicacao": "Não, ainda está fechada. Dizem que vão abri-la em maio.",
-            "id": "ru-059-x08",
+            "id": "ru-059-x04",
             "complemento": true
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Дом ___. (está sendo construída)",
+            "enunciado": "Дом ___ рабочими. (construído)",
             "opcoes": [
-              "строится",
               "построен",
-              "строит"
+              "строится",
+              "построил"
             ],
-            "gabarito": "строится",
-            "explicacao": "Imperfectivo: -ся.",
-            "id": "ru-059-e05"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Parece-me que aqui será um bom bairro.»",
-            "opcoes": [
-              "кажется,",
-              "район.",
-              "будет",
-              "хороший",
-              "что",
-              "Мне",
-              "здесь"
-            ],
-            "gabarito": "Мне кажется, что здесь будет хороший район.",
-            "explicacao": "Escreva: Мне кажется, что здесь будет хороший район.",
-            "id": "ru-059-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Мне кажется, что здесь будет хороший район.",
-            "respostaEsperada": "Мне кажется, что здесь будет хороший район.",
-            "explicacao": "Parece-me que aqui será um bom bairro.",
-            "id": "ru-059-x10",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___, что завтра будет дождь. (dizem)",
-            "opcoes": [
-              "Говорят",
-              "Говорит",
-              "Говорил"
-            ],
-            "gabarito": "Говорят",
-            "explicacao": "3ª pessoa do plural indefinida.",
-            "id": "ru-059-e06"
+            "gabarito": "построен",
+            "explicacao": "Particípio curto + instrumental.",
+            "id": "ru-059-e04"
           },
           {
             "tipo": "sentence-ordering",
@@ -244,8 +150,20 @@
             ],
             "gabarito": "Да. Здесь нельзя шуметь после десяти, так сказано в правилах.",
             "explicacao": "Escreva: Да. Здесь нельзя шуметь после десяти, так сказано в правилах.",
-            "id": "ru-059-x11",
+            "id": "ru-059-x05",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Дом ___. (está sendo construída)",
+            "opcoes": [
+              "строится",
+              "построен",
+              "строит"
+            ],
+            "gabarito": "строится",
+            "explicacao": "Imperfectivo: -ся.",
+            "id": "ru-059-e05"
           },
           {
             "tipo": "audio-recognition",
@@ -253,57 +171,17 @@
             "audio": "Да. Здесь нельзя шуметь после десяти, так сказано в правилах.",
             "respostaEsperada": "Да. Здесь нельзя шуметь после десяти, так сказано в правилах.",
             "explicacao": "Sim. Aqui não se pode fazer barulho depois das dez, está dito nas regras.",
-            "id": "ru-059-x12",
+            "id": "ru-059-x06",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "«Здесь не курят» significa:",
-            "opcoes": [
-              "aqui não se fuma",
-              "ele não fuma",
-              "eu não fumo"
-            ],
-            "gabarito": "aqui não se fuma",
-            "explicacao": "Indefinido.",
-            "id": "ru-059-e07"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ótimo. Então tenho vontade de me mudar para cá.»",
-            "opcoes": [
-              "мне",
-              "переехать",
-              "хочется",
-              "сюда.",
-              "Тогда",
-              "Отлично."
-            ],
-            "gabarito": "Отлично. Тогда мне хочется переехать сюда.",
-            "explicacao": "Escreva: Отлично. Тогда мне хочется переехать сюда.",
-            "id": "ru-059-x13",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Он красивый. Говорят, что он построен немецкой фирмой.",
+            "respostaEsperada": "Он красивый. Говорят, что он построен немецкой фирмой.",
+            "explicacao": "É bonita. Dizem que foi construída por uma firma alemã.",
+            "id": "ru-059-r02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Отлично. Тогда мне хочется переехать сюда.",
-            "respostaEsperada": "Отлично. Тогда мне хочется переехать сюда.",
-            "explicacao": "Ótimo. Então tenho vontade de me mudar para cá.",
-            "id": "ru-059-x14",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "«Мне не спится» significa:",
-            "opcoes": [
-              "não consigo dormir",
-              "não durmo nunca",
-              "durmo muito"
-            ],
-            "gabarito": "não consigo dormir",
-            "explicacao": "Impessoal.",
-            "id": "ru-059-e08"
           },
           {
             "tipo": "sentence-ordering",
@@ -319,8 +197,20 @@
             ],
             "gabarito": "Мне тоже! Письмо с заявкой уже написано.",
             "explicacao": "Escreva: Мне тоже! Письмо с заявкой уже написано.",
-            "id": "ru-059-x15",
+            "id": "ru-059-x07",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___, что завтра будет дождь. (dizem)",
+            "opcoes": [
+              "Говорят",
+              "Говорит",
+              "Говорил"
+            ],
+            "gabarito": "Говорят",
+            "explicacao": "3ª pessoa do plural indefinida.",
+            "id": "ru-059-e06"
           },
           {
             "tipo": "audio-recognition",
@@ -328,7 +218,100 @@
             "audio": "Мне тоже! Письмо с заявкой уже написано.",
             "respostaEsperada": "Мне тоже! Письмо с заявкой уже написано.",
             "explicacao": "Eu também! A carta com o pedido já está escrita.",
-            "id": "ru-059-x16",
+            "id": "ru-059-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Здесь не курят» significa:",
+            "opcoes": [
+              "aqui não se fuma",
+              "ele não fuma",
+              "eu não fumo"
+            ],
+            "gabarito": "aqui não se fuma",
+            "explicacao": "Indefinido.",
+            "id": "ru-059-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «куплен»?",
+            "audio": "куплен",
+            "opcoes": [
+              "feito",
+              "não consigo dormir",
+              "comprado",
+              "batem"
+            ],
+            "gabarito": "comprado",
+            "explicacao": "«куплен» = comprado.",
+            "id": "ru-059-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «говорят»?",
+            "audio": "говорят",
+            "opcoes": [
+              "feito",
+              "dizem",
+              "parece-me",
+              "escrito"
+            ],
+            "gabarito": "dizem",
+            "explicacao": "«говорят» = dizem.",
+            "id": "ru-059-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Мне не спится» significa:",
+            "opcoes": [
+              "não consigo dormir",
+              "não durmo nunca",
+              "durmo muito"
+            ],
+            "gabarito": "não consigo dormir",
+            "explicacao": "Impessoal.",
+            "id": "ru-059-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «откроют»?",
+            "audio": "откроют",
+            "opcoes": [
+              "aberto",
+              "ser construído",
+              "batem",
+              "abrirão"
+            ],
+            "gabarito": "abrirão",
+            "explicacao": "«откроют» = abrirão.",
+            "id": "ru-059-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Мне кажется, что здесь будет хороший район.",
+            "respostaEsperada": "Мне кажется, что здесь будет хороший район.",
+            "explicacao": "Parece-me que aqui será um bom bairro.",
+            "id": "ru-059-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «здесь не курят»?",
+            "audio": "здесь не курят",
+            "opcoes": [
+              "aqui não se fuma",
+              "comprado",
+              "parece-me",
+              "dizem"
+            ],
+            "gabarito": "aqui não se fuma",
+            "explicacao": "«здесь не курят» = aqui não se fuma.",
+            "id": "ru-059-x12",
             "complemento": true
           },
           {
@@ -345,32 +328,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «куплен»?",
-            "audio": "куплен",
+            "enunciado": "O que significa «мне хочется»?",
+            "audio": "мне хочется",
             "opcoes": [
-              "feito",
-              "não consigo dormir",
-              "comprado",
-              "batem"
+              "aberto",
+              "tenho vontade",
+              "escrito",
+              "feito"
             ],
-            "gabarito": "comprado",
-            "explicacao": "«куплен» = comprado.",
-            "id": "ru-059-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «говорят»?",
-            "audio": "говорят",
-            "opcoes": [
-              "feito",
-              "dizem",
-              "parece-me",
-              "escrito"
-            ],
-            "gabarito": "dizem",
-            "explicacao": "«говорят» = dizem.",
-            "id": "ru-059-x18",
+            "gabarito": "tenho vontade",
+            "explicacao": "«мне хочется» = tenho vontade.",
+            "id": "ru-059-x13",
             "complemento": true
           },
           {
@@ -387,32 +355,42 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «откроют»?",
-            "audio": "откроют",
+            "enunciado": "O que significa «стучат»?",
+            "audio": "стучат",
             "opcoes": [
+              "batem",
               "aberto",
               "ser construído",
-              "batem",
-              "abrirão"
+              "não consigo dormir"
             ],
-            "gabarito": "abrirão",
-            "explicacao": "«откроют» = abrirão.",
-            "id": "ru-059-x19",
+            "gabarito": "batem",
+            "explicacao": "«стучат» = batem.",
+            "id": "ru-059-x14",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «здесь не курят»?",
-            "audio": "здесь не курят",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Отлично. Тогда мне хочется переехать сюда.",
+            "respostaEsperada": "Отлично. Тогда мне хочется переехать сюда.",
+            "explicacao": "Ótimo. Então tenho vontade de me mudar para cá.",
+            "id": "ru-059-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Здесь нельзя шуметь после десяти",
             "opcoes": [
-              "aqui não se fuma",
-              "comprado",
-              "parece-me",
-              "dizem"
+              "Здесь",
+              "нельзя",
+              "десяти",
+              "после",
+              "шуметь"
             ],
-            "gabarito": "aqui não se fuma",
-            "explicacao": "«здесь не курят» = aqui não se fuma.",
-            "id": "ru-059-x20",
+            "gabarito": "Здесь нельзя шуметь после десяти",
+            "explicacao": "Escreva: Здесь нельзя шуметь после десяти",
+            "id": "ru-059-x15",
             "complemento": true
           },
           {
@@ -429,60 +407,6 @@
             "id": "ru-059-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «мне хочется»?",
-            "audio": "мне хочется",
-            "opcoes": [
-              "aberto",
-              "tenho vontade",
-              "escrito",
-              "feito"
-            ],
-            "gabarito": "tenho vontade",
-            "explicacao": "«мне хочется» = tenho vontade.",
-            "id": "ru-059-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «стучат»?",
-            "audio": "стучат",
-            "opcoes": [
-              "batem",
-              "aberto",
-              "ser construído",
-              "não consigo dormir"
-            ],
-            "gabarito": "batem",
-            "explicacao": "«стучат» = batem.",
-            "id": "ru-059-x22",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Мне кажется, что он прав",
-            "respostaEsperada": "Мне кажется, что он прав",
-            "explicacao": "Impessoal.",
-            "id": "ru-059-e12"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Здесь нельзя шуметь после десяти",
-            "opcoes": [
-              "Здесь",
-              "нельзя",
-              "десяти",
-              "после",
-              "шуметь"
-            ],
-            "gabarito": "Здесь нельзя шуметь после десяти",
-            "explicacao": "Escreva: Здесь нельзя шуметь после десяти",
-            "id": "ru-059-x23",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Мне кажется, что он прав",
@@ -495,14 +419,16 @@
             ],
             "gabarito": "Мне кажется, что он прав",
             "explicacao": "Escreva: Мне кажется, что он прав",
-            "id": "ru-059-x24",
+            "id": "ru-059-x16",
             "complemento": true
           },
           {
-            "tipo": "producao",
-            "enunciado": "Escreva 5 frases: uma passiva com particípio curto, uma com -ся, uma com «говорят», uma com «нельзя» e uma com «мне хочется».",
-            "respostaEsperada": "Магазин закрыт. Дом строится. Говорят, что завтра будет дождь. Здесь нельзя курить. Мне хочется спать.",
-            "id": "ru-059-e13"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Мне кажется, что он прав",
+            "respostaEsperada": "Мне кажется, что он прав",
+            "explicacao": "Impessoal.",
+            "id": "ru-059-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -510,8 +436,14 @@
             "audio": "Здесь нельзя шуметь после десяти",
             "respostaEsperada": "Здесь нельзя шуметь после десяти",
             "explicacao": "Escreva: Здесь нельзя шуметь после десяти",
-            "id": "ru-059-x25",
+            "id": "ru-059-x17",
             "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 5 frases: uma passiva com particípio curto, uma com -ся, uma com «говорят», uma com «нельзя» e uma com «мне хочется».",
+            "respostaEsperada": "Магазин закрыт. Дом строится. Говорят, что завтра будет дождь. Здесь нельзя курить. Мне хочется спать.",
+            "id": "ru-059-e13"
           }
         ]
       },

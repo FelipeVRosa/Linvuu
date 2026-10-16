@@ -63,6 +63,14 @@
             "id": "it-034-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Un biglietto per Roma, andata e ritorno",
+            "respostaEsperada": "Un biglietto per Roma, andata e ritorno",
+            "explicacao": "Escreva: Un biglietto per Roma, andata e ritorno.",
+            "id": "it-034-e04"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «la colazione»?",
             "audio": "la colazione",
@@ -80,33 +88,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Un biglietto per Roma, andata e ritorno",
-            "respostaEsperada": "Un biglietto per Roma, andata e ritorno",
-            "explicacao": "Escreva: Un biglietto per Roma, andata e ritorno.",
-            "id": "it-034-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Il volo è in ritardo",
             "respostaEsperada": "Il volo è in ritardo",
             "explicacao": "Escreva: Il volo è in ritardo.",
             "id": "it-034-e05"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il passaporto»?",
-            "audio": "il passaporto",
-            "opcoes": [
-              "o passaporte",
-              "a partida",
-              "a plataforma",
-              "a chave"
-            ],
-            "gabarito": "o passaporte",
-            "explicacao": "«il passaporto» = o passaporte.",
-            "id": "it-034-x02",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -142,17 +127,26 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «la carta d'imbarco»?",
-            "audio": "la carta d'imbarco",
+            "enunciado": "O que significa «il passaporto»?",
+            "audio": "il passaporto",
             "opcoes": [
-              "o atraso",
-              "quarto de casal",
-              "o cartão de embarque",
-              "a chegada"
+              "o passaporte",
+              "a partida",
+              "a plataforma",
+              "a chave"
             ],
-            "gabarito": "o cartão de embarque",
-            "explicacao": "«la carta d'imbarco» = o cartão de embarque.",
-            "id": "it-034-x03",
+            "gabarito": "o passaporte",
+            "explicacao": "«il passaporto» = o passaporte.",
+            "id": "it-034-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "andata e ritorno",
+            "respostaEsperada": "andata e ritorno",
+            "explicacao": "ida e volta",
+            "id": "it-034-r01",
             "complemento": true
           },
           {
@@ -193,17 +187,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «la fermata»?",
-            "audio": "la fermata",
+            "enunciado": "O que significa «la carta d'imbarco»?",
+            "audio": "la carta d'imbarco",
             "opcoes": [
-              "o quarto",
-              "o embarque",
+              "o atraso",
+              "quarto de casal",
               "o cartão de embarque",
-              "a parada"
+              "a chegada"
             ],
-            "gabarito": "a parada",
-            "explicacao": "«la fermata» = a parada.",
-            "id": "it-034-x04",
+            "gabarito": "o cartão de embarque",
+            "explicacao": "«la carta d'imbarco» = o cartão de embarque.",
+            "id": "it-034-x03",
             "complemento": true
           },
           {
@@ -243,21 +237,6 @@
             "id": "it-034-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «l'arrivo»?",
-            "audio": "l'arrivo",
-            "opcoes": [
-              "a estação",
-              "a chave",
-              "o passaporte",
-              "a chegada"
-            ],
-            "gabarito": "a chegada",
-            "explicacao": "«l'arrivo» = a chegada.",
-            "id": "it-034-x05",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «A che ora parte il prossimo treno?»",
             "opcoes": [
@@ -274,6 +253,30 @@
             "id": "it-034-e15"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "la carta d'imbarco",
+            "respostaEsperada": "la carta d'imbarco",
+            "explicacao": "o cartão de embarque",
+            "id": "it-034-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la fermata»?",
+            "audio": "la fermata",
+            "opcoes": [
+              "o quarto",
+              "o embarque",
+              "o cartão de embarque",
+              "a parada"
+            ],
+            "gabarito": "a parada",
+            "explicacao": "«la fermata» = a parada.",
+            "id": "it-034-x04",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Vorrei una camera per due notti.»",
             "opcoes": [
@@ -287,21 +290,6 @@
             "gabarito": "Vorrei una camera per due notti.",
             "explicacao": "Reserva.",
             "id": "it-034-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il ritardo»?",
-            "audio": "il ritardo",
-            "opcoes": [
-              "a chave",
-              "o cartão de embarque",
-              "a plataforma",
-              "o atraso"
-            ],
-            "gabarito": "o atraso",
-            "explicacao": "«il ritardo» = o atraso.",
-            "id": "it-034-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -334,20 +322,18 @@
             "id": "it-034-e19"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Da quale binario parte il treno",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «l'arrivo»?",
+            "audio": "l'arrivo",
             "opcoes": [
-              "binario",
-              "treno",
-              "il",
-              "Da",
-              "quale",
-              "parte"
+              "a estação",
+              "a chave",
+              "o passaporte",
+              "a chegada"
             ],
-            "gabarito": "Da quale binario parte il treno",
-            "explicacao": "Escreva: Da quale binario parte il treno",
-            "id": "it-034-x07",
+            "gabarito": "a chegada",
+            "explicacao": "«l'arrivo» = a chegada.",
+            "id": "it-034-x05",
             "complemento": true
           },
           {
@@ -387,21 +373,6 @@
             "id": "it-034-e22"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Ci vogliono due ore",
-            "opcoes": [
-              "vogliono",
-              "Ci",
-              "ore",
-              "due"
-            ],
-            "gabarito": "Ci vogliono due ore",
-            "explicacao": "Escreva: Ci vogliono due ore",
-            "id": "it-034-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "O que é «il bagaglio a mano»?",
             "opcoes": [
@@ -412,6 +383,30 @@
             "gabarito": "a bagagem de mão",
             "explicacao": "«Bagaglio a mano» é a bagagem de mão.",
             "id": "it-034-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il ritardo»?",
+            "audio": "il ritardo",
+            "opcoes": [
+              "a chave",
+              "o cartão de embarque",
+              "a plataforma",
+              "o atraso"
+            ],
+            "gabarito": "o atraso",
+            "explicacao": "«il ritardo» = o atraso.",
+            "id": "it-034-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il bagaglio a mano",
+            "respostaEsperada": "il bagaglio a mano",
+            "explicacao": "a bagagem de mão",
+            "id": "it-034-r03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -438,21 +433,6 @@
             "id": "it-034-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Vorrei una camera matrimoniale",
-            "opcoes": [
-              "camera",
-              "Vorrei",
-              "una",
-              "matrimoniale"
-            ],
-            "gabarito": "Vorrei una camera matrimoniale",
-            "explicacao": "Escreva: Vorrei una camera matrimoniale",
-            "id": "it-034-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «O voo foi cancelado»?",
             "opcoes": [
@@ -463,6 +443,23 @@
             "gabarito": "Il volo è stato cancellato.",
             "explicacao": "Frase pronta: «è stato cancellato».",
             "id": "it-034-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Da quale binario parte il treno",
+            "opcoes": [
+              "binario",
+              "treno",
+              "il",
+              "Da",
+              "quale",
+              "parte"
+            ],
+            "gabarito": "Da quale binario parte il treno",
+            "explicacao": "Escreva: Da quale binario parte il treno",
+            "id": "it-034-x07",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -477,24 +474,6 @@
             "gabarito": "Ho una valigia da imbarcare.",
             "explicacao": "«Da» + infinitivo indica o que se deve fazer.",
             "id": "it-034-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Un biglietto per Roma, andata e ritorno",
-            "opcoes": [
-              "andata",
-              "ritorno",
-              "per",
-              "Un",
-              "e",
-              "Roma,",
-              "biglietto"
-            ],
-            "gabarito": "Un biglietto per Roma, andata e ritorno",
-            "explicacao": "Escreva: Un biglietto per Roma, andata e ritorno",
-            "id": "it-034-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

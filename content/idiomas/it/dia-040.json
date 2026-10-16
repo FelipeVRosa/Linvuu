@@ -63,23 +63,6 @@
             "id": "it-010-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Giulia, onde está o meu livro de italiano?»",
-            "opcoes": [
-              "italiano?",
-              "libro",
-              "di",
-              "Giulia,",
-              "il",
-              "dov'è",
-              "mio"
-            ],
-            "gabarito": "Giulia, dov'è il mio libro di italiano?",
-            "explicacao": "Escreva: Giulia, dov'è il mio libro di italiano?",
-            "id": "it-010-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Sono nella stazione",
@@ -96,12 +79,20 @@
             "id": "it-010-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Giulia, dov'è il mio libro di italiano?",
-            "respostaEsperada": "Giulia, dov'è il mio libro di italiano?",
-            "explicacao": "Giulia, onde está o meu livro de italiano?",
-            "id": "it-010-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Não está. Olhe, não está na mesa.»",
+            "opcoes": [
+              "tavolo.",
+              "Guarda,",
+              "Non",
+              "c'è",
+              "sul",
+              "non",
+              "c'è."
+            ],
+            "gabarito": "Non c'è. Guarda, non c'è sul tavolo.",
+            "explicacao": "Escreva: Non c'è. Guarda, non c'è sul tavolo.",
+            "id": "it-010-x01",
             "complemento": true
           },
           {
@@ -111,6 +102,15 @@
             "respostaEsperada": "Il libro del professore",
             "explicacao": "Escreva: Il libro del professore.",
             "id": "it-010-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Giulia, dov'è il mio libro di italiano?",
+            "respostaEsperada": "Giulia, dov'è il mio libro di italiano?",
+            "explicacao": "Giulia, onde está o meu livro de italiano?",
+            "id": "it-010-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -137,22 +137,6 @@
             "id": "it-010-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está em cima da mesa, perto da janela.»",
-            "opcoes": [
-              "finestra.",
-              "tavolo,",
-              "È",
-              "alla",
-              "vicino",
-              "sul"
-            ],
-            "gabarito": "È sul tavolo, vicino alla finestra.",
-            "explicacao": "Escreva: È sul tavolo, vicino alla finestra.",
-            "id": "it-010-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «comigo»?",
             "opcoes": [
@@ -163,6 +147,15 @@
             "gabarito": "con me",
             "explicacao": "Depois de preposição, usa-se «me».",
             "id": "it-010-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Non c'è. Guarda, non c'è sul tavolo.",
+            "respostaEsperada": "Non c'è. Guarda, non c'è sul tavolo.",
+            "explicacao": "Não está. Olhe, não está na mesa.",
+            "id": "it-010-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -189,15 +182,6 @@
             "id": "it-010-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "È sul tavolo, vicino alla finestra.",
-            "respostaEsperada": "È sul tavolo, vicino alla finestra.",
-            "explicacao": "Está em cima da mesa, perto da janela.",
-            "id": "it-010-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Vado ___ dottore. (ao médico)",
             "opcoes": [
@@ -208,6 +192,15 @@
             "gabarito": "dal",
             "explicacao": "Com pessoas, «da» + artigo.",
             "id": "it-010-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "È sul tavolo, vicino alla finestra.",
+            "respostaEsperada": "È sul tavolo, vicino alla finestra.",
+            "explicacao": "Está em cima da mesa, perto da janela.",
+            "id": "it-010-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -222,6 +215,21 @@
             "id": "it-010-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «De nada! Agora tem a aula.»",
+            "opcoes": [
+              "Ora",
+              "lezione.",
+              "Prego!",
+              "c'è",
+              "la"
+            ],
+            "gabarito": "Prego! Ora c'è la lezione.",
+            "explicacao": "Escreva: Prego! Ora c'è la lezione.",
+            "id": "it-010-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Tra due ore ___ . (parto)",
             "opcoes": [
@@ -232,23 +240,6 @@
             "gabarito": "parto",
             "explicacao": "«Io parto».",
             "id": "it-010-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não está. Olhe, não está na mesa.»",
-            "opcoes": [
-              "tavolo.",
-              "Guarda,",
-              "Non",
-              "c'è",
-              "sul",
-              "non",
-              "c'è."
-            ],
-            "gabarito": "Non c'è. Guarda, non c'è sul tavolo.",
-            "explicacao": "Escreva: Non c'è. Guarda, non c'è sul tavolo.",
-            "id": "it-010-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -282,19 +273,19 @@
             "id": "it-010-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Non c'è. Guarda, non c'è sul tavolo.",
-            "respostaEsperada": "Non c'è. Guarda, non c'è sul tavolo.",
-            "explicacao": "Não está. Olhe, não está na mesa.",
-            "id": "it-010-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Estou no escritório com dois amigos. O café é para você.",
             "respostaEsperada": "Sono in ufficio con due amici. Il caffè è per te.",
             "id": "it-010-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Prego! Ora c'è la lezione.",
+            "respostaEsperada": "Prego! Ora c'è la lezione.",
+            "explicacao": "De nada! Agora tem a aula.",
+            "id": "it-010-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -309,6 +300,15 @@
             "id": "it-010-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Allora è nello zaino, con i quaderni.",
+            "respostaEsperada": "Allora è nello zaino, con i quaderni.",
+            "explicacao": "Então está na mochila, com os cadernos.",
+            "id": "it-010-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il libro è ___ zaino. (na)",
             "opcoes": [
@@ -319,23 +319,6 @@
             "gabarito": "nello",
             "explicacao": "«In + lo» vira «nello», antes de «z».",
             "id": "it-010-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então está na mochila, com os cadernos.»",
-            "opcoes": [
-              "con",
-              "Allora",
-              "quaderni.",
-              "è",
-              "nello",
-              "zaino,",
-              "i"
-            ],
-            "gabarito": "Allora è nello zaino, con i quaderni.",
-            "explicacao": "Escreva: Allora è nello zaino, con i quaderni.",
-            "id": "it-010-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -362,6 +345,21 @@
             "id": "it-010-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «su»?",
+            "audio": "su",
+            "opcoes": [
+              "do professor",
+              "comigo",
+              "sobre, em cima de",
+              "em cima da mesa"
+            ],
+            "gabarito": "sobre, em cima de",
+            "explicacao": "«su» = sobre, em cima de.",
+            "id": "it-010-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Vengo ___ Roma. (de)",
             "opcoes": [
@@ -372,15 +370,6 @@
             "gabarito": "da",
             "explicacao": "«Da» indica a origem de quem vem.",
             "id": "it-010-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Allora è nello zaino, con i quaderni.",
-            "respostaEsperada": "Allora è nello zaino, con i quaderni.",
-            "explicacao": "Então está na mochila, com os cadernos.",
-            "id": "it-010-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -407,6 +396,15 @@
             "id": "it-010-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ecco, è qui! Grazie, Giulia.",
+            "respostaEsperada": "Ecco, è qui! Grazie, Giulia.",
+            "explicacao": "Aqui está! Obrigado, Giulia.",
+            "id": "it-010-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «tra due ore»?",
             "opcoes": [
@@ -419,18 +417,18 @@
             "id": "it-010-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Aqui está! Obrigado, Giulia.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «con»?",
+            "audio": "con",
             "opcoes": [
-              "qui!",
-              "Giulia.",
-              "Grazie,",
-              "Ecco,",
-              "è"
+              "na loja",
+              "para, por",
+              "com você",
+              "com"
             ],
-            "gabarito": "Ecco, è qui! Grazie, Giulia.",
-            "explicacao": "Escreva: Ecco, è qui! Grazie, Giulia.",
-            "id": "it-010-x09",
+            "gabarito": "com",
+            "explicacao": "«con» = com.",
+            "id": "it-010-x06",
             "complemento": true
           },
           {
@@ -458,15 +456,6 @@
             "gabarito": "Vado dal dottore con Marco.",
             "explicacao": "«Con» não se funde com o nome sem artigo.",
             "id": "it-010-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ecco, è qui! Grazie, Giulia.",
-            "respostaEsperada": "Ecco, è qui! Grazie, Giulia.",
-            "explicacao": "Aqui está! Obrigado, Giulia.",
-            "id": "it-010-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

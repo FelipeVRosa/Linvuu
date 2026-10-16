@@ -387,46 +387,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oleg, você conhece o homem que mora no terceiro andar?»",
-              "opcoes": [
-                "на",
-                "ты",
-                "человека,",
-                "Олег,",
-                "живёт",
-                "этаже?",
-                "третьем",
-                "знаешь",
-                "который"
-              ],
-              "gabarito": "Олег, ты знаешь человека, который живёт на третьем этаже?",
-              "explicacao": "Escreva: Олег, ты знаешь человека, который живёт на третьем этаже?",
-              "id": "ru-053-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Олег, ты знаешь человека, который живёт на третьем этаже?",
-              "respostaEsperada": "Олег, ты знаешь человека, который живёт на третьем этаже?",
-              "explicacao": "Oleg, você conhece o homem que mora no terceiro andar?",
-              "id": "ru-053-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Человек, ___ живёт рядом, мой друг.",
-              "opcoes": [
-                "который",
-                "которая",
-                "которого"
-              ],
-              "gabarito": "который",
-              "explicacao": "Sujeito masculino: который.",
-              "id": "ru-053-e02"
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Sim, é o Andrei. Ele é médico e trabalha no nosso hospital.»",
               "opcoes": [
                 "Да,",
@@ -442,8 +402,20 @@
               ],
               "gabarito": "Да, это Андрей. Он врач, который работает в нашей больнице.",
               "explicacao": "Escreva: Да, это Андрей. Он врач, который работает в нашей больнице.",
-              "id": "ru-053-x03",
+              "id": "ru-053-x01",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Человек, ___ живёт рядом, мой друг.",
+              "opcoes": [
+                "который",
+                "которая",
+                "которого"
+              ],
+              "gabarito": "который",
+              "explicacao": "Sujeito masculino: который.",
+              "id": "ru-053-e02"
             },
             {
               "tipo": "audio-recognition",
@@ -451,7 +423,7 @@
               "audio": "Да, это Андрей. Он врач, который работает в нашей больнице.",
               "respostaEsperada": "Да, это Андрей. Он врач, который работает в нашей больнице.",
               "explicacao": "Sim, é o Andrei. Ele é médico e trabalha no nosso hospital.",
-              "id": "ru-053-x04",
+              "id": "ru-053-x02",
               "complemento": true
             },
             {
@@ -468,28 +440,38 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E a mulher que mora ao lado dele?»",
+              "enunciado": "Monte a frase: «É a esposa dele. É uma professora de que todos gostam.»",
               "opcoes": [
-                "рядом",
-                "А",
-                "с",
-                "живёт",
-                "которая",
-                "ним?",
-                "женщина,"
+                "которую",
+                "все",
+                "его",
+                "Это",
+                "учительница,",
+                "любят.",
+                "жена.",
+                "Она"
               ],
-              "gabarito": "А женщина, которая живёт рядом с ним?",
-              "explicacao": "Escreva: А женщина, которая живёт рядом с ним?",
-              "id": "ru-053-x05",
+              "gabarito": "Это его жена. Она учительница, которую все любят.",
+              "explicacao": "Escreva: Это его жена. Она учительница, которую все любят.",
+              "id": "ru-053-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Олег, ты знаешь человека, который живёт на третьем этаже?",
+              "respostaEsperada": "Олег, ты знаешь человека, который живёт на третьем этаже?",
+              "explicacao": "Oleg, você conhece o homem que mora no terceiro andar?",
+              "id": "ru-053-r01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "А женщина, которая живёт рядом с ним?",
-              "respostaEsperada": "А женщина, которая живёт рядом с ним?",
-              "explicacao": "E a mulher que mora ao lado dele?",
-              "id": "ru-053-x06",
+              "audio": "Это его жена. Она учительница, которую все любят.",
+              "respostaEsperada": "Это его жена. Она учительница, которую все любят.",
+              "explicacao": "É a esposa dele. É uma professora de que todos gostam.",
+              "id": "ru-053-x04",
               "complemento": true
             },
             {
@@ -506,29 +488,16 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É a esposa dele. É uma professora de que todos gostam.»",
+              "enunciado": "Monte a frase: «Me empresta/dá quando terminar de ler?»",
               "opcoes": [
-                "которую",
-                "все",
-                "его",
-                "Это",
-                "учительница,",
-                "любят.",
-                "жена.",
-                "Она"
+                "прочитаешь?",
+                "когда",
+                "Подаришь",
+                "мне,"
               ],
-              "gabarito": "Это его жена. Она учительница, которую все любят.",
-              "explicacao": "Escreva: Это его жена. Она учительница, которую все любят.",
-              "id": "ru-053-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Это его жена. Она учительница, которую все любят.",
-              "respostaEsperada": "Это его жена. Она учительница, которую все любят.",
-              "explicacao": "É a esposa dele. É uma professora de que todos gostam.",
-              "id": "ru-053-x08",
+              "gabarito": "Подаришь мне, когда прочитаешь?",
+              "explicacao": "Escreva: Подаришь мне, когда прочитаешь?",
+              "id": "ru-053-x05",
               "complemento": true
             },
             {
@@ -544,117 +513,22 @@
               "id": "ru-053-e05"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que bons vizinhos! E o livro que você está lendo, é interessante?»",
-              "opcoes": [
-                "которую",
-                "читаешь,",
-                "интересная?",
-                "соседи!",
-                "А",
-                "Какие",
-                "ты",
-                "книга,",
-                "хорошие"
-              ],
-              "gabarito": "Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
-              "explicacao": "Escreva: Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
-              "id": "ru-053-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
-              "respostaEsperada": "Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
-              "explicacao": "Que bons vizinhos! E o livro que você está lendo, é interessante?",
-              "id": "ru-053-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Человек, ___ я знаю, врач.",
-              "opcoes": [
-                "которого",
-                "который",
-                "которому"
-              ],
-              "gabarito": "которого",
-              "explicacao": "Masculino animado: которого.",
-              "id": "ru-053-e06"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito. É um romance que o Andrei me deu.»",
-              "opcoes": [
-                "Андрей.",
-                "роман,",
-                "который",
-                "подарил",
-                "мне",
-                "Очень.",
-                "Это"
-              ],
-              "gabarito": "Очень. Это роман, который мне подарил Андрей.",
-              "explicacao": "Escreva: Очень. Это роман, который мне подарил Андрей.",
-              "id": "ru-053-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Очень. Это роман, который мне подарил Андрей.",
-              "respostaEsperada": "Очень. Это роман, который мне подарил Андрей.",
-              "explicacao": "Muito. É um romance que o Andrei me deu.",
-              "id": "ru-053-x12",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Люди, ___ я знаю, хорошие.",
-              "opcoes": [
-                "которых",
-                "которые",
-                "которым"
-              ],
-              "gabarito": "которых",
-              "explicacao": "Plural animado: которых.",
-              "id": "ru-053-e07"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Me empresta/dá quando terminar de ler?»",
-              "opcoes": [
-                "прочитаешь?",
-                "когда",
-                "Подаришь",
-                "мне,"
-              ],
-              "gabarito": "Подаришь мне, когда прочитаешь?",
-              "explicacao": "Escreva: Подаришь мне, когда прочитаешь?",
-              "id": "ru-053-x13",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Подаришь мне, когда прочитаешь?",
               "respostaEsperada": "Подаришь мне, когда прочитаешь?",
               "explicacao": "Me empresta/dá quando terminar de ler?",
-              "id": "ru-053-x14",
+              "id": "ru-053-x06",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O gênero de «который» vem:",
-              "opcoes": [
-                "do antecedente",
-                "do verbo da principal",
-                "da posição"
-              ],
-              "gabarito": "do antecedente",
-              "explicacao": "Gênero e número: antecedente.",
-              "id": "ru-053-e08"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "А женщина, которая живёт рядом с ним?",
+              "respostaEsperada": "А женщина, которая живёт рядом с ним?",
+              "explicacao": "E a mulher que mora ao lado dele?",
+              "id": "ru-053-r02",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -673,8 +547,20 @@
               ],
               "gabarito": "Конечно! Друзья, которых я знаю давно, всегда дарят хорошие книги.",
               "explicacao": "Escreva: Конечно! Друзья, которых я знаю давно, всегда дарят хорошие книги.",
-              "id": "ru-053-x15",
+              "id": "ru-053-x07",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Человек, ___ я знаю, врач.",
+              "opcoes": [
+                "которого",
+                "который",
+                "которому"
+              ],
+              "gabarito": "которого",
+              "explicacao": "Masculino animado: которого.",
+              "id": "ru-053-e06"
             },
             {
               "tipo": "audio-recognition",
@@ -682,7 +568,100 @@
               "audio": "Конечно! Друзья, которых я знаю давно, всегда дарят хорошие книги.",
               "respostaEsperada": "Конечно! Друзья, которых я знаю давно, всегда дарят хорошие книги.",
               "explicacao": "Claro! Os amigos que conheço há tempo sempre dão bons livros.",
-              "id": "ru-053-x16",
+              "id": "ru-053-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Люди, ___ я знаю, хорошие.",
+              "opcoes": [
+                "которых",
+                "которые",
+                "которым"
+              ],
+              "gabarito": "которых",
+              "explicacao": "Plural animado: которых.",
+              "id": "ru-053-e07"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «дядя»?",
+              "audio": "дядя",
+              "opcoes": [
+                "vestido",
+                "tio",
+                "amigos",
+                "pessoas"
+              ],
+              "gabarito": "tio",
+              "explicacao": "«дядя» = tio.",
+              "id": "ru-053-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «друзья»?",
+              "audio": "друзья",
+              "opcoes": [
+                "pessoas",
+                "vizinho",
+                "amigos",
+                "livro"
+              ],
+              "gabarito": "amigos",
+              "explicacao": "«друзья» = amigos.",
+              "id": "ru-053-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O gênero de «который» vem:",
+              "opcoes": [
+                "do antecedente",
+                "do verbo da principal",
+                "da posição"
+              ],
+              "gabarito": "do antecedente",
+              "explicacao": "Gênero e número: antecedente.",
+              "id": "ru-053-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «соседка»?",
+              "audio": "соседка",
+              "opcoes": [
+                "filme",
+                "vestido",
+                "rapaz",
+                "vizinha"
+              ],
+              "gabarito": "vizinha",
+              "explicacao": "«соседка» = vizinha.",
+              "id": "ru-053-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
+              "respostaEsperada": "Какие хорошие соседи! А книга, которую ты читаешь, интересная?",
+              "explicacao": "Que bons vizinhos! E o livro que você está lendo, é interessante?",
+              "id": "ru-053-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «знать»?",
+              "audio": "знать",
+              "opcoes": [
+                "vestido",
+                "tio",
+                "rapaz",
+                "conhecer, saber"
+              ],
+              "gabarito": "conhecer, saber",
+              "explicacao": "«знать» = conhecer, saber.",
+              "id": "ru-053-x12",
               "complemento": true
             },
             {
@@ -699,32 +678,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «дядя»?",
-              "audio": "дядя",
+              "enunciado": "O que significa «сосед»?",
+              "audio": "сосед",
               "opcoes": [
                 "vestido",
                 "tio",
-                "amigos",
-                "pessoas"
+                "pessoa, homem",
+                "vizinho"
               ],
-              "gabarito": "tio",
-              "explicacao": "«дядя» = tio.",
-              "id": "ru-053-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «друзья»?",
-              "audio": "друзья",
-              "opcoes": [
-                "pessoas",
-                "vizinho",
-                "amigos",
-                "livro"
-              ],
-              "gabarito": "amigos",
-              "explicacao": "«друзья» = amigos.",
-              "id": "ru-053-x18",
+              "gabarito": "vizinho",
+              "explicacao": "«сосед» = vizinho.",
+              "id": "ru-053-x13",
               "complemento": true
             },
             {
@@ -743,32 +707,42 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «соседка»?",
-              "audio": "соседка",
+              "enunciado": "O que significa «девушка»?",
+              "audio": "девушка",
               "opcoes": [
-                "filme",
-                "vestido",
-                "rapaz",
-                "vizinha"
+                "moça",
+                "presentear",
+                "mulher",
+                "tia"
               ],
-              "gabarito": "vizinha",
-              "explicacao": "«соседка» = vizinha.",
-              "id": "ru-053-x19",
+              "gabarito": "moça",
+              "explicacao": "«девушка» = moça.",
+              "id": "ru-053-x14",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «знать»?",
-              "audio": "знать",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Очень. Это роман, который мне подарил Андрей.",
+              "respostaEsperada": "Очень. Это роман, который мне подарил Андрей.",
+              "explicacao": "Muito. É um romance que o Andrei me deu.",
+              "id": "ru-053-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Это человек, который живёт рядом",
               "opcoes": [
-                "vestido",
-                "tio",
-                "rapaz",
-                "conhecer, saber"
+                "живёт",
+                "рядом",
+                "Это",
+                "человек,",
+                "который"
               ],
-              "gabarito": "conhecer, saber",
-              "explicacao": "«знать» = conhecer, saber.",
-              "id": "ru-053-x20",
+              "gabarito": "Это человек, который живёт рядом",
+              "explicacao": "Escreva: Это человек, который живёт рядом",
+              "id": "ru-053-x15",
               "complemento": true
             },
             {
@@ -785,60 +759,6 @@
               "id": "ru-053-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «сосед»?",
-              "audio": "сосед",
-              "opcoes": [
-                "vestido",
-                "tio",
-                "pessoa, homem",
-                "vizinho"
-              ],
-              "gabarito": "vizinho",
-              "explicacao": "«сосед» = vizinho.",
-              "id": "ru-053-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «девушка»?",
-              "audio": "девушка",
-              "opcoes": [
-                "moça",
-                "presentear",
-                "mulher",
-                "tia"
-              ],
-              "gabarito": "moça",
-              "explicacao": "«девушка» = moça.",
-              "id": "ru-053-x22",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Люди, которых я знаю, хорошие",
-              "respostaEsperada": "Люди, которых я знаю, хорошие",
-              "explicacao": "Plural animado: которых.",
-              "id": "ru-053-e12"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Это человек, который живёт рядом",
-              "opcoes": [
-                "живёт",
-                "рядом",
-                "Это",
-                "человек,",
-                "который"
-              ],
-              "gabarito": "Это человек, который живёт рядом",
-              "explicacao": "Escreva: Это человек, который живёт рядом",
-              "id": "ru-053-x23",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Люди, которых я знаю, хорошие",
@@ -851,14 +771,16 @@
               ],
               "gabarito": "Люди, которых я знаю, хорошие",
               "explicacao": "Escreva: Люди, которых я знаю, хорошие",
-              "id": "ru-053-x24",
+              "id": "ru-053-x16",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases com «который» em formas diferentes: sujeito masculino, feminino, plural; objeto feminino e masculino animado.",
-              "respostaEsperada": "Человек, который живёт рядом, мой друг. Женщина, которая работает здесь, моя тётя. Девушки, которые учатся со мной, из Бразилии. Книга, которую я читаю, интересная. Человек, которого я знаю, врач.",
-              "id": "ru-053-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Люди, которых я знаю, хорошие",
+              "respostaEsperada": "Люди, которых я знаю, хорошие",
+              "explicacao": "Plural animado: которых.",
+              "id": "ru-053-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -866,8 +788,14 @@
               "audio": "Это человек, который живёт рядом",
               "respostaEsperada": "Это человек, который живёт рядом",
               "explicacao": "Escreva: Это человек, который живёт рядом",
-              "id": "ru-053-x25",
+              "id": "ru-053-x17",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases com «который» em formas diferentes: sujeito masculino, feminino, plural; objeto feminino e masculino animado.",
+              "respostaEsperada": "Человек, который живёт рядом, мой друг. Женщина, которая работает здесь, моя тётя. Девушки, которые учатся со мной, из Бразилии. Книга, которую я читаю, интересная. Человек, которого я знаю, врач.",
+              "id": "ru-053-e13"
             }
           ]
         },

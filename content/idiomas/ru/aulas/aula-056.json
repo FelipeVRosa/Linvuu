@@ -385,45 +385,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Anna, quero que a senhora envie o relatório hoje.»",
-              "opcoes": [
-                "хочу,",
-                "вы",
-                "отправили",
-                "Анна,",
-                "я",
-                "сегодня.",
-                "отчёт",
-                "чтобы"
-              ],
-              "gabarito": "Анна, я хочу, чтобы вы отправили отчёт сегодня.",
-              "explicacao": "Escreva: Анна, я хочу, чтобы вы отправили отчёт сегодня.",
-              "id": "ru-056-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Анна, я хочу, чтобы вы отправили отчёт сегодня.",
-              "respostaEsperada": "Анна, я хочу, чтобы вы отправили отчёт сегодня.",
-              "explicacao": "Anna, quero que a senhora envie o relatório hoje.",
-              "id": "ru-056-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Мама просит, чтобы я ___. (ligasse)",
-              "opcoes": [
-                "позвонил",
-                "позвоню",
-                "звонить"
-              ],
-              "gabarito": "позвонил",
-              "explicacao": "«чтобы» + passado.",
-              "id": "ru-056-e02"
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Está bem. Vou escrevê-lo para que o senhor o receba até a noite.»",
               "opcoes": [
                 "получили",
@@ -439,8 +400,20 @@
               ],
               "gabarito": "Хорошо. Я напишу его, чтобы вы получили его до вечера.",
               "explicacao": "Escreva: Хорошо. Я напишу его, чтобы вы получили его до вечера.",
-              "id": "ru-056-x03",
+              "id": "ru-056-x01",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Мама просит, чтобы я ___. (ligasse)",
+              "opcoes": [
+                "позвонил",
+                "позвоню",
+                "звонить"
+              ],
+              "gabarito": "позвонил",
+              "explicacao": "«чтобы» + passado.",
+              "id": "ru-056-e02"
             },
             {
               "tipo": "audio-recognition",
@@ -448,7 +421,7 @@
               "audio": "Хорошо. Я напишу его, чтобы вы получили его до вечера.",
               "respostaEsperada": "Хорошо. Я напишу его, чтобы вы получили его до вечера.",
               "explicacao": "Está bem. Vou escrevê-lo para que o senhor o receba até a noite.",
-              "id": "ru-056-x04",
+              "id": "ru-056-x02",
               "complemento": true
             },
             {
@@ -462,44 +435,6 @@
               "gabarito": "позвонить",
               "explicacao": "Mesmo sujeito: infinitivo.",
               "id": "ru-056-e03"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É importante para mim que o cliente o veja a tempo.»",
-              "opcoes": [
-                "важно,",
-                "клиент",
-                "увидел",
-                "его",
-                "Мне",
-                "чтобы",
-                "вовремя."
-              ],
-              "gabarito": "Мне важно, чтобы клиент увидел его вовремя.",
-              "explicacao": "Escreva: Мне важно, чтобы клиент увидел его вовремя.",
-              "id": "ru-056-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Мне важно, чтобы клиент увидел его вовремя.",
-              "respostaEsperada": "Мне важно, чтобы клиент увидел его вовремя.",
-              "explicacao": "É importante para mim que o cliente o veja a tempo.",
-              "id": "ru-056-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Я пишу, чтобы не ___. (esquecer)",
-              "opcoes": [
-                "забыть",
-                "забыл",
-                "забуду"
-              ],
-              "gabarito": "забыть",
-              "explicacao": "«чтобы не» + infinitivo (mesmo sujeito).",
-              "id": "ru-056-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -517,7 +452,16 @@
               ],
               "gabarito": "Я попрошу Игоря, чтобы он помог мне проверить цифры.",
               "explicacao": "Escreva: Я попрошу Игоря, чтобы он помог мне проверить цифры.",
-              "id": "ru-056-x07",
+              "id": "ru-056-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Анна, я хочу, чтобы вы отправили отчёт сегодня.",
+              "respostaEsperada": "Анна, я хочу, чтобы вы отправили отчёт сегодня.",
+              "explicacao": "Anna, quero que a senhora envie o relatório hoje.",
+              "id": "ru-056-r01",
               "complemento": true
             },
             {
@@ -526,60 +470,20 @@
               "audio": "Я попрошу Игоря, чтобы он помог мне проверить цифры.",
               "respostaEsperada": "Я попрошу Игоря, чтобы он помог мне проверить цифры.",
               "explicacao": "Vou pedir ao Igor que me ajude a conferir os números.",
-              "id": "ru-056-x08",
+              "id": "ru-056-x04",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Закрой окно, чтобы не ___ холодно.",
+              "enunciado": "Я пишу, чтобы не ___. (esquecer)",
               "opcoes": [
-                "было",
-                "будет",
-                "бы"
+                "забыть",
+                "забыл",
+                "забуду"
               ],
-              "gabarito": "было",
-              "explicacao": "Impessoal: passado neutro.",
-              "id": "ru-056-e05"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Está bem. E feche a porta para ninguém nos atrapalhar.»",
-              "opcoes": [
-                "дверь,",
-                "не",
-                "Хорошо.",
-                "чтобы",
-                "закройте",
-                "нам",
-                "И",
-                "никто",
-                "мешал."
-              ],
-              "gabarito": "Хорошо. И закройте дверь, чтобы нам никто не мешал.",
-              "explicacao": "Escreva: Хорошо. И закройте дверь, чтобы нам никто не мешал.",
-              "id": "ru-056-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Хорошо. И закройте дверь, чтобы нам никто не мешал.",
-              "respostaEsperada": "Хорошо. И закройте дверь, чтобы нам никто не мешал.",
-              "explicacao": "Está bem. E feche a porta para ninguém nos atrapalhar.",
-              "id": "ru-056-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "___ того чтобы получить визу, нужны документы.",
-              "opcoes": [
-                "Для",
-                "С",
-                "От"
-              ],
-              "gabarito": "Для",
-              "explicacao": "«для того чтобы».",
-              "id": "ru-056-e06"
+              "gabarito": "забыть",
+              "explicacao": "«чтобы не» + infinitivo (mesmo sujeito).",
+              "id": "ru-056-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -597,8 +501,20 @@
               ],
               "gabarito": "Конечно. Я также запишу всё, чтобы ничего не забыть.",
               "explicacao": "Escreva: Конечно. Я также запишу всё, чтобы ничего не забыть.",
-              "id": "ru-056-x11",
+              "id": "ru-056-x05",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Закрой окно, чтобы не ___ холодно.",
+              "opcoes": [
+                "было",
+                "будет",
+                "бы"
+              ],
+              "gabarito": "было",
+              "explicacao": "Impessoal: passado neutro.",
+              "id": "ru-056-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -606,7 +522,53 @@
               "audio": "Конечно. Я также запишу всё, чтобы ничего не забыть.",
               "respostaEsperada": "Конечно. Я также запишу всё, чтобы ничего не забыть.",
               "explicacao": "Claro. Vou também anotar tudo para não esquecer nada.",
-              "id": "ru-056-x12",
+              "id": "ru-056-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Мне важно, чтобы клиент увидел его вовремя.",
+              "respostaEsperada": "Мне важно, чтобы клиент увидел его вовремя.",
+              "explicacao": "É importante para mim que o cliente o veja a tempo.",
+              "id": "ru-056-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Terminaremos, se nada acontecer.»",
+              "opcoes": [
+                "Мы",
+                "не",
+                "если",
+                "случится.",
+                "закончим,",
+                "ничего"
+              ],
+              "gabarito": "Мы закончим, если ничего не случится.",
+              "explicacao": "Escreva: Мы закончим, если ничего не случится.",
+              "id": "ru-056-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ того чтобы получить визу, нужны документы.",
+              "opcoes": [
+                "Для",
+                "С",
+                "От"
+              ],
+              "gabarito": "Для",
+              "explicacao": "«для того чтобы».",
+              "id": "ru-056-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Мы закончим, если ничего не случится.",
+              "respostaEsperada": "Мы закончим, если ничего не случится.",
+              "explicacao": "Terminaremos, se nada acontecer.",
+              "id": "ru-056-x08",
               "complemento": true
             },
             {
@@ -622,30 +584,33 @@
               "id": "ru-056-e07"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ótimo. Quero que terminemos até as seis.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «вовремя»?",
+              "audio": "вовремя",
               "opcoes": [
-                "хочу,",
-                "шести.",
-                "чтобы",
-                "мы",
-                "к",
-                "Отлично.",
-                "закончили",
-                "Я"
+                "aconselhar",
+                "na hora",
+                "para não",
+                "a fim de"
               ],
-              "gabarito": "Отлично. Я хочу, чтобы мы закончили к шести.",
-              "explicacao": "Escreva: Отлично. Я хочу, чтобы мы закончили к шести.",
-              "id": "ru-056-x13",
+              "gabarito": "na hora",
+              "explicacao": "«вовремя» = na hora.",
+              "id": "ru-056-x09",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Отлично. Я хочу, чтобы мы закончили к шести.",
-              "respostaEsperada": "Отлично. Я хочу, чтобы мы закончили к шести.",
-              "explicacao": "Ótimo. Quero que terminemos até as seis.",
-              "id": "ru-056-x14",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «закрыть»?",
+              "audio": "закрыть",
+              "opcoes": [
+                "fechar",
+                "é importante",
+                "a fim de",
+                "é preciso"
+              ],
+              "gabarito": "fechar",
+              "explicacao": "«закрыть» = fechar.",
+              "id": "ru-056-x10",
               "complemento": true
             },
             {
@@ -661,28 +626,42 @@
               "id": "ru-056-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Terminaremos, se nada acontecer.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «советовать / посоветовать»?",
+              "audio": "советовать / посоветовать",
               "opcoes": [
-                "Мы",
-                "не",
-                "если",
-                "случится.",
-                "закончим,",
-                "ничего"
+                "anotar",
+                "aconselhar",
+                "exigir",
+                "adoecer"
               ],
-              "gabarito": "Мы закончим, если ничего не случится.",
-              "explicacao": "Escreva: Мы закончим, если ничего не случится.",
-              "id": "ru-056-x15",
+              "gabarito": "aconselhar",
+              "explicacao": "«советовать / посоветовать» = aconselhar.",
+              "id": "ru-056-x11",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Мы закончим, если ничего не случится.",
-              "respostaEsperada": "Мы закончим, если ничего не случится.",
-              "explicacao": "Terminaremos, se nada acontecer.",
-              "id": "ru-056-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Хорошо. И закройте дверь, чтобы нам никто не мешал.",
+              "respostaEsperada": "Хорошо. И закройте дверь, чтобы нам никто не мешал.",
+              "explicacao": "Está bem. E feche a porta para ninguém nos atrapalhar.",
+              "id": "ru-056-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «записать»?",
+              "audio": "записать",
+              "opcoes": [
+                "anotar",
+                "atrasar-se",
+                "é preciso",
+                "adoecer"
+              ],
+              "gabarito": "anotar",
+              "explicacao": "«записать» = anotar.",
+              "id": "ru-056-x12",
               "complemento": true
             },
             {
@@ -699,32 +678,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «вовремя»?",
-              "audio": "вовремя",
+              "enunciado": "O que significa «заболеть»?",
+              "audio": "заболеть",
               "opcoes": [
-                "aconselhar",
-                "na hora",
-                "para não",
-                "a fim de"
-              ],
-              "gabarito": "na hora",
-              "explicacao": "«вовремя» = na hora.",
-              "id": "ru-056-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «закрыть»?",
-              "audio": "закрыть",
-              "opcoes": [
-                "fechar",
-                "é importante",
+                "adoecer",
+                "anotar",
                 "a fim de",
                 "é preciso"
               ],
-              "gabarito": "fechar",
-              "explicacao": "«закрыть» = fechar.",
-              "id": "ru-056-x18",
+              "gabarito": "adoecer",
+              "explicacao": "«заболеть» = adoecer.",
+              "id": "ru-056-x13",
               "complemento": true
             },
             {
@@ -743,64 +707,6 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «советовать / посоветовать»?",
-              "audio": "советовать / посоветовать",
-              "opcoes": [
-                "anotar",
-                "aconselhar",
-                "exigir",
-                "adoecer"
-              ],
-              "gabarito": "aconselhar",
-              "explicacao": "«советовать / посоветовать» = aconselhar.",
-              "id": "ru-056-x19",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «записать»?",
-              "audio": "записать",
-              "opcoes": [
-                "anotar",
-                "atrasar-se",
-                "é preciso",
-                "adoecer"
-              ],
-              "gabarito": "anotar",
-              "explicacao": "«записать» = anotar.",
-              "id": "ru-056-x20",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escolha.",
-              "audio": "Я запишу всё, чтобы ничего не забыть",
-              "opcoes": [
-                "Я запишу всё, чтобы ничего не забыть",
-                "Я пишу, чтобы не опоздать",
-                "Я хочу, чтобы ты пришёл"
-              ],
-              "gabarito": "Я запишу всё, чтобы ничего не забыть",
-              "explicacao": "«чтобы не» + infinitivo.",
-              "id": "ru-056-e11"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «заболеть»?",
-              "audio": "заболеть",
-              "opcoes": [
-                "adoecer",
-                "anotar",
-                "a fim de",
-                "é preciso"
-              ],
-              "gabarito": "adoecer",
-              "explicacao": "«заболеть» = adoecer.",
-              "id": "ru-056-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
               "enunciado": "O que significa «важно»?",
               "audio": "важно",
               "opcoes": [
@@ -811,16 +717,17 @@
               ],
               "gabarito": "é importante",
               "explicacao": "«важно» = é importante.",
-              "id": "ru-056-x22",
+              "id": "ru-056-x14",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Мне важно, чтобы вы поняли",
-              "respostaEsperada": "Мне важно, чтобы вы поняли",
-              "explicacao": "«чтобы» + passado.",
-              "id": "ru-056-e12"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Отлично. Я хочу, чтобы мы закончили к шести.",
+              "respostaEsperada": "Отлично. Я хочу, чтобы мы закончили к шести.",
+              "explicacao": "Ótimo. Quero que terminemos até as seis.",
+              "id": "ru-056-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -837,8 +744,21 @@
               ],
               "gabarito": "Я запишу всё, чтобы ничего не забыть",
               "explicacao": "Escreva: Я запишу всё, чтобы ничего не забыть",
-              "id": "ru-056-x23",
+              "id": "ru-056-x15",
               "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Я запишу всё, чтобы ничего не забыть",
+              "opcoes": [
+                "Я запишу всё, чтобы ничего не забыть",
+                "Я пишу, чтобы не опоздать",
+                "Я хочу, чтобы ты пришёл"
+              ],
+              "gabarito": "Я запишу всё, чтобы ничего не забыть",
+              "explicacao": "«чтобы не» + infinitivo.",
+              "id": "ru-056-e11"
             },
             {
               "tipo": "sentence-ordering",
@@ -853,14 +773,16 @@
               ],
               "gabarito": "Мне важно, чтобы вы поняли",
               "explicacao": "Escreva: Мне важно, чтобы вы поняли",
-              "id": "ru-056-x24",
+              "id": "ru-056-x16",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases: um desejo, um pedido, uma finalidade, um «чтобы не» e uma com o mesmo sujeito (infinitivo).",
-              "respostaEsperada": "Я хочу, чтобы ты пришёл. Мама просит, чтобы я позвонил. Я учу русский, чтобы работать в России. Я пишу, чтобы не забыть. Я хочу отдохнуть.",
-              "id": "ru-056-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Мне важно, чтобы вы поняли",
+              "respostaEsperada": "Мне важно, чтобы вы поняли",
+              "explicacao": "«чтобы» + passado.",
+              "id": "ru-056-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -868,8 +790,14 @@
               "audio": "Я запишу всё, чтобы ничего не забыть",
               "respostaEsperada": "Я запишу всё, чтобы ничего не забыть",
               "explicacao": "Escreva: Я запишу всё, чтобы ничего не забыть",
-              "id": "ru-056-x25",
+              "id": "ru-056-x17",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases: um desejo, um pedido, uma finalidade, um «чтобы не» e uma com o mesmo sujeito (infinitivo).",
+              "respostaEsperada": "Я хочу, чтобы ты пришёл. Мама просит, чтобы я позвонил. Я учу русский, чтобы работать в России. Я пишу, чтобы не забыть. Я хочу отдохнуть.",
+              "id": "ru-056-e13"
             }
           ]
         },

@@ -63,6 +63,22 @@
             "id": "es-053-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Me parece que es una buena idea",
+            "respostaEsperada": "Me parece que es una buena idea",
+            "explicacao": "Escreva: Me parece que es una buena idea. (indicativo depois de «me parece que»)",
+            "id": "es-053-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "No creo que sea posible",
+            "respostaEsperada": "No creo que sea posible",
+            "explicacao": "Escreva: No creo que sea posible. (subjuntivo «sea»)",
+            "id": "es-053-e05"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «O que você acha de proibir o celular nas escolas?»",
             "opcoes": [
@@ -85,35 +101,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Me parece que es una buena idea",
-            "respostaEsperada": "Me parece que es una buena idea",
-            "explicacao": "Escreva: Me parece que es una buena idea. (indicativo depois de «me parece que»)",
-            "id": "es-053-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "No creo que sea posible",
-            "respostaEsperada": "No creo que sea posible",
-            "explicacao": "Escreva: No creo que sea posible. (subjuntivo «sea»)",
-            "id": "es-053-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Tú qué opinas de prohibir el móvil en los institutos?",
-            "respostaEsperada": "¿Tú qué opinas de prohibir el móvil en los institutos?",
-            "explicacao": "O que você acha de proibir o celular nas escolas?",
-            "id": "es-053-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Tienes razón en parte",
             "respostaEsperada": "Tienes razón en parte",
             "explicacao": "Escreva: Tienes razón en parte. (sem artigo)",
             "id": "es-053-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Ah, no? ¿Y qué propones?",
+            "respostaEsperada": "¿Ah, no? ¿Y qué propones?",
+            "explicacao": "Ah, não? E o que você propõe?",
+            "id": "es-053-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -140,21 +140,6 @@
             "id": "es-053-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ah, não? E o que você propõe?»",
-            "opcoes": [
-              "qué",
-              "¿Ah,",
-              "¿Y",
-              "propones?",
-              "no?"
-            ],
-            "gabarito": "¿Ah, no? ¿Y qué propones?",
-            "explicacao": "Escreva: ¿Ah, no? ¿Y qué propones?",
-            "id": "es-053-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase discorda com suavidade?",
             "opcoes": [
@@ -165,6 +150,15 @@
             "gabarito": "No lo veo así.",
             "explicacao": "As outras duas são concordância.",
             "id": "es-053-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "respostaEsperada": "¿Tú qué opinas de prohibir el móvil en los institutos?",
+            "explicacao": "O que você acha de proibir o celular nas escolas?",
+            "id": "es-053-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -191,15 +185,6 @@
             "id": "es-053-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Ah, no? ¿Y qué propones?",
-            "respostaEsperada": "¿Ah, no? ¿Y qué propones?",
-            "explicacao": "Ah, não? E o que você propõe?",
-            "id": "es-053-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Creo que Marta ___ razón.",
             "opcoes": [
@@ -210,6 +195,15 @@
             "gabarito": "tiene",
             "explicacao": "Afirmação: indicativo.",
             "id": "es-053-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "En mi opinión,…",
+            "respostaEsperada": "En mi opinión,…",
+            "explicacao": "na minha opinião,…",
+            "id": "es-053-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -224,18 +218,6 @@
             "id": "es-053-e13"
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Es mejor que ___ con calma. (nosotros, hablar)",
-            "opcoes": [
-              "hablemos",
-              "hablamos",
-              "hablar"
-            ],
-            "gabarito": "hablemos",
-            "explicacao": "Subjuntivo de «nosotros».",
-            "id": "es-053-e14"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «Isso, sim, me parece razoável.»",
             "opcoes": [
@@ -247,8 +229,20 @@
             ],
             "gabarito": "Eso sí me parece razonable.",
             "explicacao": "Escreva: Eso sí me parece razonable.",
-            "id": "es-053-x05",
+            "id": "es-053-x03",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Es mejor que ___ con calma. (nosotros, hablar)",
+            "opcoes": [
+              "hablemos",
+              "hablamos",
+              "hablar"
+            ],
+            "gabarito": "hablemos",
+            "explicacao": "Subjuntivo de «nosotros».",
+            "id": "es-053-e14"
           },
           {
             "tipo": "fill-gap",
@@ -275,15 +269,6 @@
             "id": "es-053-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Eso sí me parece razonable.",
-            "respostaEsperada": "Eso sí me parece razonable.",
-            "explicacao": "Isso, sim, me parece razoável.",
-            "id": "es-053-x06",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Entiendo tu punto de vista, pero no lo veo así.»",
             "opcoes": [
@@ -303,6 +288,15 @@
             "id": "es-053-e17"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Eso sí me parece razonable.",
+            "respostaEsperada": "Eso sí me parece razonable.",
+            "explicacao": "Isso, sim, me parece razoável.",
+            "id": "es-053-x04",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Es importante que escuchemos a todos.»",
             "opcoes": [
@@ -318,25 +312,19 @@
             "id": "es-053-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "a favor / en contra",
+            "respostaEsperada": "a favor / en contra",
+            "explicacao": "a favor / contra",
+            "id": "es-053-r03",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol: Acho que é uma boa ideia, mas não acho que seja fácil.",
             "respostaEsperada": "Creo que es una buena idea, pero no creo que sea fácil.",
             "id": "es-053-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «el tema»?",
-            "audio": "el tema",
-            "opcoes": [
-              "é melhor que…",
-              "acho que…",
-              "concordo.",
-              "o assunto, o tema"
-            ],
-            "gabarito": "o assunto, o tema",
-            "explicacao": "«el tema» = o assunto, o tema.",
-            "id": "es-053-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -363,6 +351,21 @@
             "id": "es-053-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «el tema»?",
+            "audio": "el tema",
+            "opcoes": [
+              "é melhor que…",
+              "acho que…",
+              "concordo.",
+              "o assunto, o tema"
+            ],
+            "gabarito": "o assunto, o tema",
+            "explicacao": "«el tema» = o assunto, o tema.",
+            "id": "es-053-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Es evidente que ___ un problema. (haber)",
             "opcoes": [
@@ -373,21 +376,6 @@
             "gabarito": "hay",
             "explicacao": "«Es evidente que» afirma um fato: indicativo.",
             "id": "es-053-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «Es raro que…»?",
-            "audio": "Es raro que…",
-            "opcoes": [
-              "é melhor que…",
-              "é estranho que…",
-              "é necessário que…",
-              "na minha opinião,…"
-            ],
-            "gabarito": "é estranho que…",
-            "explicacao": "«Es raro que…» = é estranho que….",
-            "id": "es-053-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -414,6 +402,15 @@
             "id": "es-053-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Es mejor que…",
+            "respostaEsperada": "Es mejor que…",
+            "explicacao": "é melhor que…",
+            "id": "es-053-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual expressão pede subjuntivo?",
             "opcoes": [
@@ -427,17 +424,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «Me parece que…»?",
-            "audio": "Me parece que…",
+            "enunciado": "O que significa «Es raro que…»?",
+            "audio": "Es raro que…",
             "opcoes": [
-              "para mim,…",
-              "me parece que…",
-              "acho que…",
-              "a opinião"
+              "é melhor que…",
+              "é estranho que…",
+              "é necessário que…",
+              "na minha opinião,…"
             ],
-            "gabarito": "me parece que…",
-            "explicacao": "«Me parece que…» = me parece que….",
-            "id": "es-053-x09",
+            "gabarito": "é estranho que…",
+            "explicacao": "«Es raro que…» = é estranho que….",
+            "id": "es-053-x06",
             "complemento": true
           },
           {
@@ -467,21 +464,6 @@
             "gabarito": "No estoy del todo de acuerdo contigo.",
             "explicacao": "Discordância suave.",
             "id": "es-053-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «En mi opinión,…»?",
-            "audio": "En mi opinión,…",
-            "opcoes": [
-              "na minha opinião,…",
-              "é melhor que…",
-              "é necessário que…",
-              "é importante que…"
-            ],
-            "gabarito": "na minha opinião,…",
-            "explicacao": "«En mi opinión,…» = na minha opinião,….",
-            "id": "es-053-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

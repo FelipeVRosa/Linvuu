@@ -456,6 +456,14 @@
               "id": "fr-043-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Le projet auquel je pense",
+              "respostaEsperada": "Le projet auquel je pense",
+              "explicacao": "Escreva: Le projet auquel je pense.",
+              "id": "fr-043-e04"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «l'endroit»?",
               "audio": "l'endroit",
@@ -473,33 +481,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Le projet auquel je pense",
-              "respostaEsperada": "Le projet auquel je pense",
-              "explicacao": "Escreva: Le projet auquel je pense.",
-              "id": "fr-043-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Ce qui me plaît, c'est le calme",
               "respostaEsperada": "Ce qui me plaît, c'est le calme",
               "explicacao": "Escreva: Ce qui me plaît, c'est le calme.",
               "id": "fr-043-e05"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «le moment»?",
-              "audio": "le moment",
-              "opcoes": [
-                "com o qual",
-                "a razão",
-                "o momento",
-                "aquilo a que"
-              ],
-              "gabarito": "o momento",
-              "explicacao": "«le moment» = o momento.",
-              "id": "fr-043-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -535,17 +520,26 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «tout ce que»?",
-              "audio": "tout ce que",
+              "enunciado": "O que significa «le moment»?",
+              "audio": "le moment",
               "opcoes": [
-                "tudo o que",
-                "o que (sujeito)",
-                "a pessoa",
-                "do que, aquilo de que"
+                "com o qual",
+                "a razão",
+                "o momento",
+                "aquilo a que"
               ],
-              "gabarito": "tudo o que",
-              "explicacao": "«tout ce que» = tudo o que.",
-              "id": "fr-043-x03",
+              "gabarito": "o momento",
+              "explicacao": "«le moment» = o momento.",
+              "id": "fr-043-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "ce à quoi",
+              "respostaEsperada": "ce à quoi",
+              "explicacao": "aquilo a que",
+              "id": "fr-043-r01",
               "complemento": true
             },
             {
@@ -586,17 +580,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «la personne»?",
-              "audio": "la personne",
+              "enunciado": "O que significa «tout ce que»?",
+              "audio": "tout ce que",
               "opcoes": [
-                "ao qual",
+                "tudo o que",
+                "o que (sujeito)",
                 "a pessoa",
-                "o momento",
-                "o que (objeto)"
+                "do que, aquilo de que"
               ],
-              "gabarito": "a pessoa",
-              "explicacao": "«la personne» = a pessoa.",
-              "id": "fr-043-x04",
+              "gabarito": "tudo o que",
+              "explicacao": "«tout ce que» = tudo o que.",
+              "id": "fr-043-x03",
               "complemento": true
             },
             {
@@ -636,21 +630,6 @@
               "id": "fr-043-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «ce que»?",
-              "audio": "ce que",
-              "opcoes": [
-                "o que (objeto)",
-                "o que (sujeito)",
-                "aquilo a que",
-                "a razão"
-              ],
-              "gabarito": "o que (objeto)",
-              "explicacao": "«ce que» = o que (objeto).",
-              "id": "fr-043-x05",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Ce dont j'ai besoin, c'est du repos.»",
               "opcoes": [
@@ -667,6 +646,30 @@
               "id": "fr-043-e15"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "tout ce que",
+              "respostaEsperada": "tout ce que",
+              "explicacao": "tudo o que",
+              "id": "fr-043-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la personne»?",
+              "audio": "la personne",
+              "opcoes": [
+                "ao qual",
+                "a pessoa",
+                "o momento",
+                "o que (objeto)"
+              ],
+              "gabarito": "a pessoa",
+              "explicacao": "«la personne» = a pessoa.",
+              "id": "fr-043-x04",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «La table sur laquelle je travaille.»",
               "opcoes": [
@@ -680,21 +683,6 @@
               "gabarito": "La table sur laquelle je travaille.",
               "explicacao": "Preposição + laquelle.",
               "id": "fr-043-e16"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «auquel»?",
-              "audio": "auquel",
-              "opcoes": [
-                "o que (objeto)",
-                "o momento",
-                "a pessoa",
-                "ao qual"
-              ],
-              "gabarito": "ao qual",
-              "explicacao": "«auquel» = ao qual.",
-              "id": "fr-043-x06",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -727,19 +715,18 @@
               "id": "fr-043-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Le stylo avec lequel j'écris",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «ce que»?",
+              "audio": "ce que",
               "opcoes": [
-                "j'écris",
-                "Le",
-                "stylo",
-                "lequel",
-                "avec"
+                "o que (objeto)",
+                "o que (sujeito)",
+                "aquilo a que",
+                "a razão"
               ],
-              "gabarito": "Le stylo avec lequel j'écris",
-              "explicacao": "Escreva: Le stylo avec lequel j'écris",
-              "id": "fr-043-x07",
+              "gabarito": "o que (objeto)",
+              "explicacao": "«ce que» = o que (objeto).",
+              "id": "fr-043-x05",
               "complemento": true
             },
             {
@@ -779,23 +766,6 @@
               "id": "fr-043-e22"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "La façon dont il parle m'agace",
-              "opcoes": [
-                "parle",
-                "La",
-                "il",
-                "façon",
-                "dont",
-                "m'agace"
-              ],
-              "gabarito": "La façon dont il parle m'agace",
-              "explicacao": "Escreva: La façon dont il parle m'agace",
-              "id": "fr-043-x08",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -806,6 +776,30 @@
               "gabarito": "Ce dont je parle est important.",
               "explicacao": "«Parler de» pede «ce dont».",
               "id": "fr-043-e23"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «auquel»?",
+              "audio": "auquel",
+              "opcoes": [
+                "o que (objeto)",
+                "o momento",
+                "a pessoa",
+                "ao qual"
+              ],
+              "gabarito": "ao qual",
+              "explicacao": "«auquel» = ao qual.",
+              "id": "fr-043-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "rien de ce que",
+              "respostaEsperada": "rien de ce que",
+              "explicacao": "nada do que",
+              "id": "fr-043-r03",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -832,22 +826,6 @@
               "id": "fr-043-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Le projet auquel je pense",
-              "opcoes": [
-                "Le",
-                "auquel",
-                "projet",
-                "je",
-                "pense"
-              ],
-              "gabarito": "Le projet auquel je pense",
-              "explicacao": "Escreva: Le projet auquel je pense",
-              "id": "fr-043-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -858,6 +836,22 @@
               "gabarito": "Celui qui travaille réussit.",
               "explicacao": "Sujeito do verbo: «qui».",
               "id": "fr-043-e26"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Le stylo avec lequel j'écris",
+              "opcoes": [
+                "j'écris",
+                "Le",
+                "stylo",
+                "lequel",
+                "avec"
+              ],
+              "gabarito": "Le stylo avec lequel j'écris",
+              "explicacao": "Escreva: Le stylo avec lequel j'écris",
+              "id": "fr-043-x07",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -874,24 +868,6 @@
               "gabarito": "Voici le livre dont je t'ai parlé.",
               "explicacao": "«Parler de» pede «dont».",
               "id": "fr-043-e27"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Ce qui me plaît, c'est le calme",
-              "opcoes": [
-                "calme",
-                "plaît,",
-                "qui",
-                "Ce",
-                "le",
-                "c'est",
-                "me"
-              ],
-              "gabarito": "Ce qui me plaît, c'est le calme",
-              "explicacao": "Escreva: Ce qui me plaît, c'est le calme",
-              "id": "fr-043-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

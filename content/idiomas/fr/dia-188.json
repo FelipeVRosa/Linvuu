@@ -94,6 +94,14 @@
             "id": "fr-047-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "D'abord, je prépare, ensuite je mange",
+            "respostaEsperada": "D'abord, je prépare, ensuite je mange",
+            "explicacao": "Escreva: D'abord, je prépare, ensuite je mange.",
+            "id": "fr-047-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «puisque»?",
             "audio": "puisque",
@@ -107,14 +115,6 @@
             "explicacao": "«puisque» = já que.",
             "id": "fr-047-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "D'abord, je prépare, ensuite je mange",
-            "respostaEsperada": "D'abord, je prépare, ensuite je mange",
-            "explicacao": "Escreva: D'abord, je prépare, ensuite je mange.",
-            "id": "fr-047-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Malgré la pluie, je sors.",
+              "Malgré il pleut, je sors.",
+              "Malgré qu'il pleut, je sors."
+            ],
+            "gabarito": "Malgré la pluie, je sors.",
+            "explicacao": "«Malgré» + substantivo.",
+            "id": "fr-047-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «à cause de»?",
             "audio": "à cause de",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«à cause de» = por causa de.",
             "id": "fr-047-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual frase está correta?",
-            "opcoes": [
-              "Malgré la pluie, je sors.",
-              "Malgré il pleut, je sors.",
-              "Malgré qu'il pleut, je sors."
-            ],
-            "gabarito": "Malgré la pluie, je sors.",
-            "explicacao": "«Malgré» + substantivo.",
-            "id": "fr-047-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -192,6 +192,18 @@
             "id": "fr-047-e11"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "___ la pluie, le match est annulé. (por causa de)",
+            "opcoes": [
+              "À cause de",
+              "Grâce à",
+              "Parce que"
+            ],
+            "gabarito": "À cause de",
+            "explicacao": "Causa negativa.",
+            "id": "fr-047-e12"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «c'est pourquoi»?",
             "audio": "c'est pourquoi",
@@ -205,18 +217,6 @@
             "explicacao": "«c'est pourquoi» = por isso.",
             "id": "fr-047-x04",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___ la pluie, le match est annulé. (por causa de)",
-            "opcoes": [
-              "À cause de",
-              "Grâce à",
-              "Parce que"
-            ],
-            "gabarito": "À cause de",
-            "explicacao": "Causa negativa.",
-            "id": "fr-047-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,6 +243,29 @@
             "id": "fr-047-e14"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Il pleut, donc je reste.»",
+            "opcoes": [
+              "Il",
+              "pleut,",
+              "donc",
+              "je",
+              "reste"
+            ],
+            "gabarito": "Il pleut, donc je reste.",
+            "explicacao": "Consequência.",
+            "id": "fr-047-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "à cause de",
+            "respostaEsperada": "à cause de",
+            "explicacao": "por causa de",
+            "id": "fr-047-r01",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «mais»?",
             "audio": "mais",
@@ -259,20 +282,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Il pleut, donc je reste.»",
-            "opcoes": [
-              "Il",
-              "pleut,",
-              "donc",
-              "je",
-              "reste"
-            ],
-            "gabarito": "Il pleut, donc je reste.",
-            "explicacao": "Consequência.",
-            "id": "fr-047-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Malgré la pluie, je sors.»",
             "opcoes": [
               "Malgré",
@@ -284,21 +293,6 @@
             "gabarito": "Malgré la pluie, je sors.",
             "explicacao": "Concessão.",
             "id": "fr-047-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «d'abord»?",
-            "audio": "d'abord",
-            "opcoes": [
-              "mas",
-              "primeiro",
-              "já que",
-              "porque"
-            ],
-            "gabarito": "primeiro",
-            "explicacao": "«d'abord» = primeiro.",
-            "id": "fr-047-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -319,6 +313,21 @@
             "id": "fr-047-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «d'abord»?",
+            "audio": "d'abord",
+            "opcoes": [
+              "mas",
+              "primeiro",
+              "já que",
+              "porque"
+            ],
+            "gabarito": "primeiro",
+            "explicacao": "«d'abord» = primeiro.",
+            "id": "fr-047-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il travaille beaucoup ; ___ , il a échoué. (no entanto)",
             "opcoes": [
@@ -329,22 +338,6 @@
             "gabarito": "pourtant",
             "explicacao": "«Pourtant» marca oposição forte.",
             "id": "fr-047-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Grâce à toi, j'ai réussi",
-            "opcoes": [
-              "à",
-              "Grâce",
-              "j'ai",
-              "toi,",
-              "réussi"
-            ],
-            "gabarito": "Grâce à toi, j'ai réussi",
-            "explicacao": "Escreva: Grâce à toi, j'ai réussi",
-            "id": "fr-047-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -371,6 +364,22 @@
             "id": "fr-047-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Grâce à toi, j'ai réussi",
+            "opcoes": [
+              "à",
+              "Grâce",
+              "j'ai",
+              "toi,",
+              "réussi"
+            ],
+            "gabarito": "Grâce à toi, j'ai réussi",
+            "explicacao": "Escreva: Grâce à toi, j'ai réussi",
+            "id": "fr-047-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "La ville est chère ; ___ , elle est belle. (em compensação)",
             "opcoes": [
@@ -381,22 +390,6 @@
             "gabarito": "en revanche",
             "explicacao": "«En revanche» marca compensação.",
             "id": "fr-047-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Même s'il pleut, je sors",
-            "opcoes": [
-              "sors",
-              "Même",
-              "pleut,",
-              "je",
-              "s'il"
-            ],
-            "gabarito": "Même s'il pleut, je sors",
-            "explicacao": "Escreva: Même s'il pleut, je sors",
-            "id": "fr-047-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -423,6 +416,22 @@
             "id": "fr-047-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Même s'il pleut, je sors",
+            "opcoes": [
+              "sors",
+              "Même",
+              "pleut,",
+              "je",
+              "s'il"
+            ],
+            "gabarito": "Même s'il pleut, je sors",
+            "explicacao": "Escreva: Même s'il pleut, je sors",
+            "id": "fr-047-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -433,24 +442,6 @@
             "gabarito": "Il pleut ; c'est pourquoi je reste.",
             "explicacao": "«C'est pourquoi» é seguido direto da frase.",
             "id": "fr-047-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Il a étudié, pourtant il a échoué",
-            "opcoes": [
-              "Il",
-              "il",
-              "échoué",
-              "a",
-              "étudié,",
-              "pourtant",
-              "a"
-            ],
-            "gabarito": "Il a étudié, pourtant il a échoué",
-            "explicacao": "Escreva: Il a étudié, pourtant il a échoué",
-            "id": "fr-047-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -483,21 +474,19 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "La ville est chère, en revanche elle est belle",
+            "audio": "Il a étudié, pourtant il a échoué",
             "opcoes": [
-              "belle",
-              "elle",
-              "revanche",
-              "en",
-              "est",
-              "est",
-              "ville",
-              "La",
-              "chère,"
+              "Il",
+              "il",
+              "échoué",
+              "a",
+              "étudié,",
+              "pourtant",
+              "a"
             ],
-            "gabarito": "La ville est chère, en revanche elle est belle",
-            "explicacao": "Escreva: La ville est chère, en revanche elle est belle",
-            "id": "fr-047-x10",
+            "gabarito": "Il a étudié, pourtant il a échoué",
+            "explicacao": "Escreva: Il a étudié, pourtant il a échoué",
+            "id": "fr-047-x09",
             "complemento": true
           },
           {

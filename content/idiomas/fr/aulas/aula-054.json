@@ -489,6 +489,22 @@
               "id": "fr-054-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Je ne te le donne pas",
+              "respostaEsperada": "Je ne te le donne pas",
+              "explicacao": "Escreva: Je ne te le donne pas.",
+              "id": "fr-054-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Je vais te le dire",
+              "respostaEsperada": "Je vais te le dire",
+              "explicacao": "Escreva: Je vais te le dire.",
+              "id": "fr-054-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Marc, você enviou o dossiê à diretora?»",
               "opcoes": [
@@ -511,35 +527,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Je ne te le donne pas",
-              "respostaEsperada": "Je ne te le donne pas",
-              "explicacao": "Escreva: Je ne te le donne pas.",
-              "id": "fr-054-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je vais te le dire",
-              "respostaEsperada": "Je vais te le dire",
-              "explicacao": "Escreva: Je vais te le dire.",
-              "id": "fr-054-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Marc, tu as envoyé le dossier à la directrice ?",
-              "respostaEsperada": "Marc, tu as envoyé le dossier à la directrice ?",
-              "explicacao": "Marc, você enviou o dossiê à diretora?",
-              "id": "fr-054-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Je pense à lui",
               "respostaEsperada": "Je pense à lui",
               "explicacao": "Escreva: Je pense à lui.",
               "id": "fr-054-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Oui, je le lui ai envoyé hier soir.",
+              "respostaEsperada": "Oui, je le lui ai envoyé hier soir.",
+              "explicacao": "Sim, eu o enviei a ela ontem à noite.",
+              "id": "fr-054-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -566,24 +566,6 @@
               "id": "fr-054-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, eu o enviei a ela ontem à noite.»",
-              "opcoes": [
-                "je",
-                "hier",
-                "le",
-                "lui",
-                "ai",
-                "Oui,",
-                "envoyé",
-                "soir."
-              ],
-              "gabarito": "Oui, je le lui ai envoyé hier soir.",
-              "explicacao": "Escreva: Oui, je le lui ai envoyé hier soir.",
-              "id": "fr-054-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -594,6 +576,15 @@
               "gabarito": "Je le lui donne.",
               "explicacao": "Ordem.",
               "id": "fr-054-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Marc, tu as envoyé le dossier à la directrice ?",
+              "respostaEsperada": "Marc, tu as envoyé le dossier à la directrice ?",
+              "explicacao": "Marc, você enviou o dossiê à diretora?",
+              "id": "fr-054-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -620,15 +611,6 @@
               "id": "fr-054-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Oui, je le lui ai envoyé hier soir.",
-              "respostaEsperada": "Oui, je le lui ai envoyé hier soir.",
-              "explicacao": "Sim, eu o enviei a ela ontem à noite.",
-              "id": "fr-054-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Je vais à Paris → J' ___ vais.",
               "opcoes": [
@@ -641,6 +623,15 @@
               "id": "fr-054-e12"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Pas encore. Je vais les lui montrer demain.",
+              "respostaEsperada": "Pas encore. Je vais les lui montrer demain.",
+              "explicacao": "Ainda não. Vou mostrá-las a ele amanhã.",
+              "id": "fr-054-r02",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Du café ? J' ___ veux.",
               "opcoes": [
@@ -651,18 +642,6 @@
               "gabarito": "en",
               "explicacao": "Partitivo.",
               "id": "fr-054-e13"
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Je ___ ai prêté mon livre. (a ele)",
-              "opcoes": [
-                "lui",
-                "leur",
-                "y"
-              ],
-              "gabarito": "lui",
-              "explicacao": "Singular.",
-              "id": "fr-054-e14"
             },
             {
               "tipo": "sentence-ordering",
@@ -682,8 +661,20 @@
               ],
               "gabarito": "Et les photos ? Tu les as montrées au client ?",
               "explicacao": "Escreva: Et les photos ? Tu les as montrées au client ?",
-              "id": "fr-054-x05",
+              "id": "fr-054-x03",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Je ___ ai prêté mon livre. (a ele)",
+              "opcoes": [
+                "lui",
+                "leur",
+                "y"
+              ],
+              "gabarito": "lui",
+              "explicacao": "Singular.",
+              "id": "fr-054-e14"
             },
             {
               "tipo": "sentence-ordering",
@@ -714,19 +705,19 @@
               "id": "fr-054-e16"
             },
             {
+              "tipo": "producao",
+              "enunciado": "Escreva em francês: Eu o enviei a ela ontem. Traga-me um, por favor. Penso nele.",
+              "respostaEsperada": "Je le lui ai envoyé hier. Apporte-m'en un, s'il te plaît. Je pense à lui.",
+              "id": "fr-054-e17"
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Et les photos ? Tu les as montrées au client ?",
               "respostaEsperada": "Et les photos ? Tu les as montrées au client ?",
               "explicacao": "E as fotos? Você as mostrou ao cliente?",
-              "id": "fr-054-x06",
+              "id": "fr-054-x04",
               "complemento": true
-            },
-            {
-              "tipo": "producao",
-              "enunciado": "Escreva em francês: Eu o enviei a ela ontem. Traga-me um, por favor. Penso nele.",
-              "respostaEsperada": "Je le lui ai envoyé hier. Apporte-m'en un, s'il te plaît. Je pense à lui.",
-              "id": "fr-054-e17"
             },
             {
               "tipo": "fill-gap",
@@ -741,6 +732,15 @@
               "id": "fr-054-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "D'accord. Et du café, tu en veux ?",
+              "respostaEsperada": "D'accord. Et du café, tu en veux ?",
+              "explicacao": "Certo. E café, você quer?",
+              "id": "fr-054-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Des pommes ? Il y ___ a trois.",
               "opcoes": [
@@ -751,24 +751,6 @@
               "gabarito": "en",
               "explicacao": "«En» substitui o substantivo quantificado.",
               "id": "fr-054-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ainda não. Vou mostrá-las a ele amanhã.»",
-              "opcoes": [
-                "lui",
-                "Pas",
-                "vais",
-                "Je",
-                "montrer",
-                "encore.",
-                "demain.",
-                "les"
-              ],
-              "gabarito": "Pas encore. Je vais les lui montrer demain.",
-              "explicacao": "Escreva: Pas encore. Je vais les lui montrer demain.",
-              "id": "fr-054-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -795,6 +777,21 @@
               "id": "fr-054-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «moi»?",
+              "audio": "moi",
+              "opcoes": [
+                "nós",
+                "me",
+                "mostrar",
+                "eu (tônico)"
+              ],
+              "gabarito": "eu (tônico)",
+              "explicacao": "«moi» = eu (tônico).",
+              "id": "fr-054-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je m'___ intéresse. (a isso)",
               "opcoes": [
@@ -805,15 +802,6 @@
               "gabarito": "y",
               "explicacao": "«S'intéresser à» pede «y».",
               "id": "fr-054-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Pas encore. Je vais les lui montrer demain.",
-              "respostaEsperada": "Pas encore. Je vais les lui montrer demain.",
-              "explicacao": "Ainda não. Vou mostrá-las a ele amanhã.",
-              "id": "fr-054-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -840,6 +828,15 @@
               "id": "fr-054-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Oui, apporte-m'en un, s'il te plaît !",
+              "respostaEsperada": "Oui, apporte-m'en un, s'il te plaît !",
+              "explicacao": "Sim, traga-me um, por favor!",
+              "id": "fr-054-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é a ordem no imperativo afirmativo?",
               "opcoes": [
@@ -852,21 +849,18 @@
               "id": "fr-054-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Certo. E café, você quer?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «nous»?",
+              "audio": "nous",
               "opcoes": [
-                "en",
-                "café,",
-                "veux",
-                "?",
-                "du",
-                "tu",
-                "D'accord.",
-                "Et"
+                "nós",
+                "devolver",
+                "me",
+                "você (tônico)"
               ],
-              "gabarito": "D'accord. Et du café, tu en veux ?",
-              "explicacao": "Escreva: D'accord. Et du café, tu en veux ?",
-              "id": "fr-054-x09",
+              "gabarito": "nós",
+              "explicacao": "«nous» = nós.",
+              "id": "fr-054-x06",
               "complemento": true
             },
             {
@@ -895,15 +889,6 @@
               "gabarito": "Je vais te le dire demain.",
               "explicacao": "O bloco vem antes do infinitivo.",
               "id": "fr-054-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "D'accord. Et du café, tu en veux ?",
-              "respostaEsperada": "D'accord. Et du café, tu en veux ?",
-              "explicacao": "Certo. E café, você quer?",
-              "id": "fr-054-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

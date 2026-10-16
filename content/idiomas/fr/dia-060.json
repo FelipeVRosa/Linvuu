@@ -63,6 +63,14 @@
             "id": "fr-015-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "J'ai pris le bus",
+            "respostaEsperada": "J'ai pris le bus",
+            "explicacao": "Escreva: J'ai pris le bus.",
+            "id": "fr-015-e04"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «avant-hier»?",
             "audio": "avant-hier",
@@ -80,33 +88,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "J'ai pris le bus",
-            "respostaEsperada": "J'ai pris le bus",
-            "explicacao": "Escreva: J'ai pris le bus.",
-            "id": "fr-015-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Je ne l'ai pas vu",
             "respostaEsperada": "Je ne l'ai pas vu",
             "explicacao": "Escreva: Je ne l'ai pas vu.",
             "id": "fr-015-e05"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «hier»?",
-            "audio": "hier",
-            "opcoes": [
-              "semana passada",
-              "nunca",
-              "ninguém",
-              "ontem"
-            ],
-            "gabarito": "ontem",
-            "explicacao": "«hier» = ontem.",
-            "id": "fr-015-x02",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -130,6 +115,21 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "O que significa «hier»?",
+            "audio": "hier",
+            "opcoes": [
+              "semana passada",
+              "nunca",
+              "ninguém",
+              "ontem"
+            ],
+            "gabarito": "ontem",
+            "explicacao": "«hier» = ontem.",
+            "id": "fr-015-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "Particípio de «prendre»:",
             "opcoes": [
               "pris",
@@ -139,21 +139,6 @@
             "gabarito": "pris",
             "explicacao": "Irregular.",
             "id": "fr-015-e08"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «la semaine dernière»?",
-            "audio": "la semaine dernière",
-            "opcoes": [
-              "primeiro",
-              "por fim",
-              "sempre",
-              "semana passada"
-            ],
-            "gabarito": "semana passada",
-            "explicacao": "«la semaine dernière» = semana passada.",
-            "id": "fr-015-x03",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -180,6 +165,30 @@
             "id": "fr-015-e10"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "la semaine dernière",
+            "respostaEsperada": "la semaine dernière",
+            "explicacao": "semana passada",
+            "id": "fr-015-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la semaine dernière»?",
+            "audio": "la semaine dernière",
+            "opcoes": [
+              "primeiro",
+              "por fim",
+              "sempre",
+              "semana passada"
+            ],
+            "gabarito": "semana passada",
+            "explicacao": "«la semaine dernière» = semana passada.",
+            "id": "fr-015-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Nous ___ mangé. (avoir)",
             "opcoes": [
@@ -190,21 +199,6 @@
             "gabarito": "avons",
             "explicacao": "Nous avons.",
             "id": "fr-015-e11"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «ce matin»?",
-            "audio": "ce matin",
-            "opcoes": [
-              "nada",
-              "esta manhã",
-              "depois",
-              "anteontem"
-            ],
-            "gabarito": "esta manhã",
-            "explicacao": "«ce matin» = esta manhã.",
-            "id": "fr-015-x04",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -231,6 +225,21 @@
             "id": "fr-015-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ce matin»?",
+            "audio": "ce matin",
+            "opcoes": [
+              "nada",
+              "esta manhã",
+              "depois",
+              "anteontem"
+            ],
+            "gabarito": "esta manhã",
+            "explicacao": "«ce matin» = esta manhã.",
+            "id": "fr-015-x04",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je n'ai ___ vu. (ninguém)",
             "opcoes": [
@@ -241,21 +250,6 @@
             "gabarito": "personne",
             "explicacao": "«Personne» = ninguém.",
             "id": "fr-015-e14"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «personne»?",
-            "audio": "personne",
-            "opcoes": [
-              "nada",
-              "semana passada",
-              "nunca",
-              "ninguém"
-            ],
-            "gabarito": "ninguém",
-            "explicacao": "«personne» = ninguém.",
-            "id": "fr-015-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -283,25 +277,25 @@
             "id": "fr-015-e16"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «l'année dernière»?",
-            "audio": "l'année dernière",
-            "opcoes": [
-              "ano passado",
-              "já",
-              "durante",
-              "depois"
-            ],
-            "gabarito": "ano passado",
-            "explicacao": "«l'année dernière» = ano passado.",
-            "id": "fr-015-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Ontem eu comi com Marie. Depois eu não vi ninguém.",
             "respostaEsperada": "Hier, j'ai mangé avec Marie. Puis, je n'ai vu personne.",
             "id": "fr-015-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «personne»?",
+            "audio": "personne",
+            "opcoes": [
+              "nada",
+              "semana passada",
+              "nunca",
+              "ninguém"
+            ],
+            "gabarito": "ninguém",
+            "explicacao": "«personne» = ninguém.",
+            "id": "fr-015-x05",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -328,19 +322,6 @@
             "id": "fr-015-e19"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "J'ai mangé",
-            "opcoes": [
-              "mangé",
-              "J'ai"
-            ],
-            "gabarito": "J'ai mangé",
-            "explicacao": "Escreva: J'ai mangé",
-            "id": "fr-015-x07",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Vous avez ___ ? (terminaram)",
             "opcoes": [
@@ -351,6 +332,30 @@
             "gabarito": "fini",
             "explicacao": "Os verbos em «-ir» regulares fazem o particípio em «-i».",
             "id": "fr-015-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «l'année dernière»?",
+            "audio": "l'année dernière",
+            "opcoes": [
+              "ano passado",
+              "já",
+              "durante",
+              "depois"
+            ],
+            "gabarito": "ano passado",
+            "explicacao": "«l'année dernière» = ano passado.",
+            "id": "fr-015-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il y a deux jours",
+            "respostaEsperada": "il y a deux jours",
+            "explicacao": "há dois dias",
+            "id": "fr-015-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -377,21 +382,6 @@
             "id": "fr-015-e22"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Je n'ai pas fini",
-            "opcoes": [
-              "n'ai",
-              "Je",
-              "fini",
-              "pas"
-            ],
-            "gabarito": "Je n'ai pas fini",
-            "explicacao": "Escreva: Je n'ai pas fini",
-            "id": "fr-015-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o particípio de «voir»?",
             "opcoes": [
@@ -402,6 +392,19 @@
             "gabarito": "vu",
             "explicacao": "«Voir» → «vu».",
             "id": "fr-015-e23"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "J'ai mangé",
+            "opcoes": [
+              "mangé",
+              "J'ai"
+            ],
+            "gabarito": "J'ai mangé",
+            "explicacao": "Escreva: J'ai mangé",
+            "id": "fr-015-x07",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -428,22 +431,6 @@
             "id": "fr-015-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Il y a deux jours",
-            "opcoes": [
-              "deux",
-              "y",
-              "Il",
-              "jours",
-              "a"
-            ],
-            "gabarito": "Il y a deux jours",
-            "explicacao": "Escreva: Il y a deux jours",
-            "id": "fr-015-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como dizer «Eu o vi»?",
             "opcoes": [
@@ -454,6 +441,21 @@
             "gabarito": "Je l'ai vu.",
             "explicacao": "O pronome vai antes do auxiliar.",
             "id": "fr-015-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Je n'ai pas fini",
+            "opcoes": [
+              "n'ai",
+              "Je",
+              "fini",
+              "pas"
+            ],
+            "gabarito": "Je n'ai pas fini",
+            "explicacao": "Escreva: Je n'ai pas fini",
+            "id": "fr-015-x08",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -469,21 +471,6 @@
             "gabarito": "Nous avons visité un musée hier.",
             "explicacao": "«Avoir» + particípio em «-é».",
             "id": "fr-015-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "J'ai pris le bus",
-            "opcoes": [
-              "pris",
-              "le",
-              "bus",
-              "J'ai"
-            ],
-            "gabarito": "J'ai pris le bus",
-            "explicacao": "Escreva: J'ai pris le bus",
-            "id": "fr-015-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

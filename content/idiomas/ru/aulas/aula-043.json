@@ -390,27 +390,15 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boris, onde você conheceu a Olga?»",
+              "enunciado": "Monte a frase: «Vocês se encontram com frequência?»",
               "opcoes": [
-                "вы",
-                "где",
-                "Ольгой?",
-                "с",
-                "Борис,",
-                "познакомились"
+                "часто",
+                "Вы",
+                "встречаетесь?"
               ],
-              "gabarito": "Борис, где вы познакомились с Ольгой?",
-              "explicacao": "Escreva: Борис, где вы познакомились с Ольгой?",
+              "gabarito": "Вы часто встречаетесь?",
+              "explicacao": "Escreva: Вы часто встречаетесь?",
               "id": "ru-043-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Борис, где вы познакомились с Ольгой?",
-              "respostaEsperada": "Борис, где вы познакомились с Ольгой?",
-              "explicacao": "Boris, onde você conheceu a Olga?",
-              "id": "ru-043-x02",
               "complemento": true
             },
             {
@@ -426,29 +414,12 @@
               "id": "ru-043-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Nós nos conhecemos na universidade. Estudávamos juntos.»",
-              "opcoes": [
-                "Мы",
-                "познакомились",
-                "в",
-                "вместе.",
-                "учились",
-                "университете.",
-                "Мы"
-              ],
-              "gabarito": "Мы познакомились в университете. Мы учились вместе.",
-              "explicacao": "Escreva: Мы познакомились в университете. Мы учились вместе.",
-              "id": "ru-043-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Мы познакомились в университете. Мы учились вместе.",
-              "respostaEsperada": "Мы познакомились в университете. Мы учились вместе.",
-              "explicacao": "Nós nos conhecemos na universidade. Estudávamos juntos.",
-              "id": "ru-043-x04",
+              "audio": "Вы часто встречаетесь?",
+              "respostaEsperada": "Вы часто встречаетесь?",
+              "explicacao": "Vocês se encontram com frequência?",
+              "id": "ru-043-x02",
               "complemento": true
             },
             {
@@ -465,24 +436,35 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vocês se encontram com frequência?»",
+              "enunciado": "Monte a frase: «E onde vocês costumam se encontrar?»",
               "opcoes": [
-                "часто",
-                "Вы",
-                "встречаетесь?"
+                "обычно",
+                "вы",
+                "А",
+                "встречаетесь?",
+                "где"
               ],
-              "gabarito": "Вы часто встречаетесь?",
-              "explicacao": "Escreva: Вы часто встречаетесь?",
-              "id": "ru-043-x05",
+              "gabarito": "А где вы обычно встречаетесь?",
+              "explicacao": "Escreva: А где вы обычно встречаетесь?",
+              "id": "ru-043-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Борис, где вы познакомились с Ольгой?",
+              "respostaEsperada": "Борис, где вы познакомились с Ольгой?",
+              "explicacao": "Boris, onde você conheceu a Olga?",
+              "id": "ru-043-r01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Вы часто встречаетесь?",
-              "respostaEsperada": "Вы часто встречаетесь?",
-              "explicacao": "Vocês se encontram com frequência?",
-              "id": "ru-043-x06",
+              "audio": "А где вы обычно встречаетесь?",
+              "respostaEsperada": "А где вы обычно встречаетесь?",
+              "explicacao": "E onde vocês costumam se encontrar?",
+              "id": "ru-043-x04",
               "complemento": true
             },
             {
@@ -496,80 +478,6 @@
               "gabarito": "другу",
               "explicacao": "«помогать» + dativo.",
               "id": "ru-043-e04"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, aos sábados. Nós nos ajudamos.»",
-              "opcoes": [
-                "друг",
-                "помогаем",
-                "Да,",
-                "по",
-                "Мы",
-                "субботам.",
-                "другу."
-              ],
-              "gabarito": "Да, по субботам. Мы помогаем друг другу.",
-              "explicacao": "Escreva: Да, по субботам. Мы помогаем друг другу.",
-              "id": "ru-043-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Да, по субботам. Мы помогаем друг другу.",
-              "respostaEsperada": "Да, по субботам. Мы помогаем друг другу.",
-              "explicacao": "Sim, aos sábados. Nós nos ajudamos.",
-              "id": "ru-043-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Я чувствую ___ хорошо.",
-              "opcoes": [
-                "себя",
-                "себе",
-                "собой"
-              ],
-              "gabarito": "себя",
-              "explicacao": "«чувствовать себя».",
-              "id": "ru-043-e05"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E onde vocês costumam se encontrar?»",
-              "opcoes": [
-                "обычно",
-                "вы",
-                "А",
-                "встречаетесь?",
-                "где"
-              ],
-              "gabarito": "А где вы обычно встречаетесь?",
-              "explicacao": "Escreva: А где вы обычно встречаетесь?",
-              "id": "ru-043-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "А где вы обычно встречаетесь?",
-              "respostaEsperada": "А где вы обычно встречаетесь?",
-              "explicacao": "E onde vocês costumam se encontrar?",
-              "id": "ru-043-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Она ___ приготовила обед. (ela mesma)",
-              "opcoes": [
-                "сама",
-                "сам",
-                "само"
-              ],
-              "gabarito": "сама",
-              "explicacao": "Concorda com «она».",
-              "id": "ru-043-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -588,8 +496,20 @@
               ],
               "gabarito": "В кафе рядом с метро. Оно находится недалеко от дома.",
               "explicacao": "Escreva: В кафе рядом с метро. Оно находится недалеко от дома.",
-              "id": "ru-043-x11",
+              "id": "ru-043-x05",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Я чувствую ___ хорошо.",
+              "opcoes": [
+                "себя",
+                "себе",
+                "собой"
+              ],
+              "gabarito": "себя",
+              "explicacao": "«чувствовать себя».",
+              "id": "ru-043-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -597,57 +517,17 @@
               "audio": "В кафе рядом с метро. Оно находится недалеко от дома.",
               "respostaEsperada": "В кафе рядом с метро. Оно находится недалеко от дома.",
               "explicacao": "Num café perto do metrô. Fica perto de casa.",
-              "id": "ru-043-x12",
+              "id": "ru-043-x06",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "A forma de «они» de «учиться» é:",
-              "opcoes": [
-                "учатся",
-                "учутся",
-                "учатсь"
-              ],
-              "gabarito": "учатся",
-              "explicacao": "«-ся» depois de consoante.",
-              "id": "ru-043-e07"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Fale de você. O que você faz?»",
-              "opcoes": [
-                "Расскажи",
-                "Чем",
-                "ты",
-                "себе.",
-                "занимаешься?",
-                "о"
-              ],
-              "gabarito": "Расскажи о себе. Чем ты занимаешься?",
-              "explicacao": "Escreva: Расскажи о себе. Чем ты занимаешься?",
-              "id": "ru-043-x13",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Мы познакомились в университете. Мы учились вместе.",
+              "respostaEsperada": "Мы познакомились в университете. Мы учились вместе.",
+              "explicacao": "Nós nos conhecemos na universidade. Estudávamos juntos.",
+              "id": "ru-043-r02",
               "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Расскажи о себе. Чем ты занимаешься?",
-              "respostaEsperada": "Расскажи о себе. Чем ты занимаешься?",
-              "explicacao": "Fale de você. O que você faz?",
-              "id": "ru-043-x14",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "«Мы встречаемся» tem sentido:",
-              "opcoes": [
-                "recíproco",
-                "passivo",
-                "futuro"
-              ],
-              "gabarito": "recíproco",
-              "explicacao": "Nós nos encontramos.",
-              "id": "ru-043-e08"
             },
             {
               "tipo": "sentence-ordering",
@@ -663,8 +543,20 @@
               ],
               "gabarito": "Я работаю инженером и сам готовлю обед.",
               "explicacao": "Escreva: Я работаю инженером и сам готовлю обед.",
-              "id": "ru-043-x15",
+              "id": "ru-043-x07",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Она ___ приготовила обед. (ela mesma)",
+              "opcoes": [
+                "сама",
+                "сам",
+                "само"
+              ],
+              "gabarito": "сама",
+              "explicacao": "Concorda com «она».",
+              "id": "ru-043-e06"
             },
             {
               "tipo": "audio-recognition",
@@ -672,7 +564,100 @@
               "audio": "Я работаю инженером и сам готовлю обед.",
               "respostaEsperada": "Я работаю инженером и сам готовлю обед.",
               "explicacao": "Trabalho como engenheiro e eu mesmo preparo o almoço.",
-              "id": "ru-043-x16",
+              "id": "ru-043-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "A forma de «они» de «учиться» é:",
+              "opcoes": [
+                "учатся",
+                "учутся",
+                "учатсь"
+              ],
+              "gabarito": "учатся",
+              "explicacao": "«-ся» depois de consoante.",
+              "id": "ru-043-e07"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «вместе»?",
+              "audio": "вместе",
+              "opcoes": [
+                "juntos",
+                "brigar",
+                "ajudar-se",
+                "vestir-se"
+              ],
+              "gabarito": "juntos",
+              "explicacao": "«вместе» = juntos.",
+              "id": "ru-043-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «встречаться»?",
+              "audio": "встречаться",
+              "opcoes": [
+                "estudar (numa escola)",
+                "encontrar-se",
+                "juntos",
+                "um ao outro"
+              ],
+              "gabarito": "encontrar-se",
+              "explicacao": "«встречаться» = encontrar-se.",
+              "id": "ru-043-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Мы встречаемся» tem sentido:",
+              "opcoes": [
+                "recíproco",
+                "passivo",
+                "futuro"
+              ],
+              "gabarito": "recíproco",
+              "explicacao": "Nós nos encontramos.",
+              "id": "ru-043-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «пара»?",
+              "audio": "пара",
+              "opcoes": [
+                "casal, par",
+                "um ao outro",
+                "estudar (numa escola)",
+                "encontrar-se"
+              ],
+              "gabarito": "casal, par",
+              "explicacao": "«пара» = casal, par.",
+              "id": "ru-043-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Да, по субботам. Мы помогаем друг другу.",
+              "respostaEsperada": "Да, по субботам. Мы помогаем друг другу.",
+              "explicacao": "Sim, aos sábados. Nós nos ajudamos.",
+              "id": "ru-043-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «ссориться»?",
+              "audio": "ссориться",
+              "opcoes": [
+                "juntos",
+                "começar (sozinho)",
+                "ajudar-se",
+                "brigar"
+              ],
+              "gabarito": "brigar",
+              "explicacao": "«ссориться» = brigar.",
+              "id": "ru-043-x12",
               "complemento": true
             },
             {
@@ -689,32 +674,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «вместе»?",
-              "audio": "вместе",
+              "enunciado": "O que significa «помогать друг другу»?",
+              "audio": "помогать друг другу",
               "opcoes": [
-                "juntos",
-                "brigar",
                 "ajudar-se",
-                "vestir-se"
+                "encontro (amoroso)",
+                "conhecer alguém",
+                "encontrar-se"
               ],
-              "gabarito": "juntos",
-              "explicacao": "«вместе» = juntos.",
-              "id": "ru-043-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «встречаться»?",
-              "audio": "встречаться",
-              "opcoes": [
-                "estudar (numa escola)",
-                "encontrar-se",
-                "juntos",
-                "um ao outro"
-              ],
-              "gabarito": "encontrar-se",
-              "explicacao": "«встречаться» = encontrar-se.",
-              "id": "ru-043-x18",
+              "gabarito": "ajudar-se",
+              "explicacao": "«помогать друг другу» = ajudar-se.",
+              "id": "ru-043-x13",
               "complemento": true
             },
             {
@@ -732,32 +702,42 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «пара»?",
-              "audio": "пара",
+              "enunciado": "O que significa «друг друга»?",
+              "audio": "друг друга",
               "opcoes": [
-                "casal, par",
+                "juntos",
                 "um ao outro",
-                "estudar (numa escola)",
-                "encontrar-se"
+                "ajudar-se",
+                "estudar (numa escola)"
               ],
-              "gabarito": "casal, par",
-              "explicacao": "«пара» = casal, par.",
-              "id": "ru-043-x19",
+              "gabarito": "um ao outro",
+              "explicacao": "«друг друга» = um ao outro.",
+              "id": "ru-043-x14",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «ссориться»?",
-              "audio": "ссориться",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Расскажи о себе. Чем ты занимаешься?",
+              "respostaEsperada": "Расскажи о себе. Чем ты занимаешься?",
+              "explicacao": "Fale de você. O que você faz?",
+              "id": "ru-043-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Они говорят друг с другом",
               "opcoes": [
-                "juntos",
-                "começar (sozinho)",
-                "ajudar-se",
-                "brigar"
+                "другом",
+                "Они",
+                "с",
+                "говорят",
+                "друг"
               ],
-              "gabarito": "brigar",
-              "explicacao": "«ссориться» = brigar.",
-              "id": "ru-043-x20",
+              "gabarito": "Они говорят друг с другом",
+              "explicacao": "Escreva: Они говорят друг с другом",
+              "id": "ru-043-x15",
               "complemento": true
             },
             {
@@ -774,60 +754,6 @@
               "id": "ru-043-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «помогать друг другу»?",
-              "audio": "помогать друг другу",
-              "opcoes": [
-                "ajudar-se",
-                "encontro (amoroso)",
-                "conhecer alguém",
-                "encontrar-se"
-              ],
-              "gabarito": "ajudar-se",
-              "explicacao": "«помогать друг другу» = ajudar-se.",
-              "id": "ru-043-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «друг друга»?",
-              "audio": "друг друга",
-              "opcoes": [
-                "juntos",
-                "um ao outro",
-                "ajudar-se",
-                "estudar (numa escola)"
-              ],
-              "gabarito": "um ao outro",
-              "explicacao": "«друг друга» = um ao outro.",
-              "id": "ru-043-x22",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Я учусь в университете",
-              "respostaEsperada": "Я учусь в университете",
-              "explicacao": "Sem objeto direto: учусь.",
-              "id": "ru-043-e12"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Они говорят друг с другом",
-              "opcoes": [
-                "другом",
-                "Они",
-                "с",
-                "говорят",
-                "друг"
-              ],
-              "gabarito": "Они говорят друг с другом",
-              "explicacao": "Escreva: Они говорят друг с другом",
-              "id": "ru-043-x23",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Я учусь в университете",
@@ -839,14 +765,16 @@
               ],
               "gabarito": "Я учусь в университете",
               "explicacao": "Escreva: Я учусь в университете",
-              "id": "ru-043-x24",
+              "id": "ru-043-x16",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases com: учиться, встречаться, друг друга, себя e сам/сама.",
-              "respostaEsperada": "Я учусь в университете. Мы часто встречаемся. Мы помогаем друг другу. Расскажи о себе. Я сама приготовила обед.",
-              "id": "ru-043-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Я учусь в университете",
+              "respostaEsperada": "Я учусь в университете",
+              "explicacao": "Sem objeto direto: учусь.",
+              "id": "ru-043-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -854,8 +782,14 @@
               "audio": "Они говорят друг с другом",
               "respostaEsperada": "Они говорят друг с другом",
               "explicacao": "Escreva: Они говорят друг с другом",
-              "id": "ru-043-x25",
+              "id": "ru-043-x17",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases com: учиться, встречаться, друг друга, себя e сам/сама.",
+              "respostaEsperada": "Я учусь в университете. Мы часто встречаемся. Мы помогаем друг другу. Расскажи о себе. Я сама приготовила обед.",
+              "id": "ru-043-e13"
             }
           ]
         },

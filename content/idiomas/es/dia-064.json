@@ -94,6 +94,14 @@
             "id": "es-016-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "¿Qué te gusta hacer?",
+            "respostaEsperada": "¿Qué te gusta hacer?",
+            "explicacao": "Escreva: ¿Qué te gusta hacer?",
+            "id": "es-016-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «el tiempo libre»?",
             "audio": "el tiempo libre",
@@ -107,14 +115,6 @@
             "explicacao": "«el tiempo libre» = o tempo livre.",
             "id": "es-016-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Qué te gusta hacer?",
-            "respostaEsperada": "¿Qué te gusta hacer?",
-            "explicacao": "Escreva: ¿Qué te gusta hacer?",
-            "id": "es-016-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Eu gosto de cantar»?",
+            "opcoes": [
+              "Me gusta cantar.",
+              "Me gusto cantar.",
+              "Me gusta de cantar."
+            ],
+            "gabarito": "Me gusta cantar.",
+            "explicacao": "Depois de «gustar» vem o infinitivo, sem «de».",
+            "id": "es-016-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «correr»?",
             "audio": "correr",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«correr» = correr.",
             "id": "es-016-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se diz «Eu gosto de cantar»?",
-            "opcoes": [
-              "Me gusta cantar.",
-              "Me gusto cantar.",
-              "Me gusta de cantar."
-            ],
-            "gabarito": "Me gusta cantar.",
-            "explicacao": "Depois de «gustar» vem o infinitivo, sem «de».",
-            "id": "es-016-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -193,6 +193,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Eu toco violão»?",
+            "opcoes": [
+              "Toco la guitarra.",
+              "Juego la guitarra.",
+              "Juego a la guitarra."
+            ],
+            "gabarito": "Toco la guitarra.",
+            "explicacao": "Instrumentos se «tocan».",
+            "id": "es-016-e12"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «odiar»?",
             "audio": "odiar",
             "opcoes": [
@@ -205,18 +217,6 @@
             "explicacao": "«odiar» = odiar.",
             "id": "es-016-x04",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se diz «Eu toco violão»?",
-            "opcoes": [
-              "Toco la guitarra.",
-              "Juego la guitarra.",
-              "Juego a la guitarra."
-            ],
-            "gabarito": "Toco la guitarra.",
-            "explicacao": "Instrumentos se «tocan».",
-            "id": "es-016-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,6 +243,27 @@
             "id": "es-016-e14"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "Prefiero el té ___ café.",
+            "opcoes": [
+              "al",
+              "que el",
+              "a el"
+            ],
+            "gabarito": "al",
+            "explicacao": "Preferir X «a» Y: a + el = al.",
+            "id": "es-016-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "el tiempo libre",
+            "respostaEsperada": "el tiempo libre",
+            "explicacao": "o tempo livre",
+            "id": "es-016-r01",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «pasear»?",
             "audio": "pasear",
@@ -259,18 +280,6 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Prefiero el té ___ café.",
-            "opcoes": [
-              "al",
-              "que el",
-              "a el"
-            ],
-            "gabarito": "al",
-            "explicacao": "Preferir X «a» Y: a + el = al.",
-            "id": "es-016-e15"
-          },
-          {
-            "tipo": "fill-gap",
             "enunciado": "Juego ___ fútbol los domingos.",
             "opcoes": [
               "al",
@@ -280,21 +289,6 @@
             "gabarito": "al",
             "explicacao": "Jugar «a» + esporte: a + el = al.",
             "id": "es-016-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «bastante»?",
-            "audio": "bastante",
-            "opcoes": [
-              "bastante",
-              "ler",
-              "chato, entediante",
-              "a série"
-            ],
-            "gabarito": "bastante",
-            "explicacao": "«bastante» = bastante.",
-            "id": "es-016-x06",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -323,6 +317,21 @@
             "id": "es-016-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «bastante»?",
+            "audio": "bastante",
+            "opcoes": [
+              "bastante",
+              "ler",
+              "chato, entediante",
+              "a série"
+            ],
+            "gabarito": "bastante",
+            "explicacao": "«bastante» = bastante.",
+            "id": "es-016-x06",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «No me gustan las series largas.»",
             "opcoes": [
@@ -336,21 +345,6 @@
             "gabarito": "No me gustan las series largas.",
             "explicacao": "«No» antes do pronome.",
             "id": "es-016-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Me gustan los gatos",
-            "opcoes": [
-              "los",
-              "gustan",
-              "gatos",
-              "Me"
-            ],
-            "gabarito": "Me gustan los gatos",
-            "explicacao": "Escreva: Me gustan los gatos",
-            "id": "es-016-x07",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -371,6 +365,21 @@
             "id": "es-016-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Me gustan los gatos",
+            "opcoes": [
+              "los",
+              "gustan",
+              "gatos",
+              "Me"
+            ],
+            "gabarito": "Me gustan los gatos",
+            "explicacao": "Escreva: Me gustan los gatos",
+            "id": "es-016-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "A nosotros ___ gusta el cine. (pronome)",
             "opcoes": [
@@ -381,22 +390,6 @@
             "gabarito": "nos",
             "explicacao": "O pronome de «nosotros» é «nos».",
             "id": "es-016-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "A Pablo le gusta cantar",
-            "opcoes": [
-              "cantar",
-              "le",
-              "A",
-              "gusta",
-              "Pablo"
-            ],
-            "gabarito": "A Pablo le gusta cantar",
-            "explicacao": "Escreva: A Pablo le gusta cantar",
-            "id": "es-016-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -423,6 +416,22 @@
             "id": "es-016-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "A Pablo le gusta cantar",
+            "opcoes": [
+              "cantar",
+              "le",
+              "A",
+              "gusta",
+              "Pablo"
+            ],
+            "gabarito": "A Pablo le gusta cantar",
+            "explicacao": "Escreva: A Pablo le gusta cantar",
+            "id": "es-016-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O outro diz «Me gusta el cine». Como você concorda?",
             "opcoes": [
@@ -433,20 +442,6 @@
             "gabarito": "A mí también.",
             "explicacao": "Concordar com algo positivo: «A mí también».",
             "id": "es-016-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "A mí tampoco",
-            "opcoes": [
-              "tampoco",
-              "A",
-              "mí"
-            ],
-            "gabarito": "A mí tampoco",
-            "explicacao": "Escreva: A mí tampoco",
-            "id": "es-016-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -475,15 +470,15 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Me encanta bailar",
+            "audio": "A mí tampoco",
             "opcoes": [
-              "bailar",
-              "Me",
-              "encanta"
+              "tampoco",
+              "A",
+              "mí"
             ],
-            "gabarito": "Me encanta bailar",
-            "explicacao": "Escreva: Me encanta bailar",
-            "id": "es-016-x10",
+            "gabarito": "A mí tampoco",
+            "explicacao": "Escreva: A mí tampoco",
+            "id": "es-016-x09",
             "complemento": true
           },
           {

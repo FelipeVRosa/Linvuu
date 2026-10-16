@@ -375,29 +375,20 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vamos discutir o novo projeto. Primeiro, é preciso fazer um plano.»",
+              "enunciado": "Monte a frase: «Além disso, é preciso escolher um prazo. Por exemplo, até sexta.»",
               "opcoes": [
-                "составить",
-                "проект.",
-                "план.",
+                "того,",
+                "Например,",
                 "нужно",
-                "Во-первых,",
-                "Давайте",
-                "обсудим",
-                "новый"
+                "пятницы.",
+                "Кроме",
+                "выбрать",
+                "до",
+                "срок."
               ],
-              "gabarito": "Давайте обсудим новый проект. Во-первых, нужно составить план.",
-              "explicacao": "Escreva: Давайте обсудим новый проект. Во-первых, нужно составить план.",
+              "gabarito": "Кроме того, нужно выбрать срок. Например, до пятницы.",
+              "explicacao": "Escreva: Кроме того, нужно выбрать срок. Например, до пятницы.",
               "id": "ru-067-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Давайте обсудим новый проект. Во-первых, нужно составить план.",
-              "respostaEsperada": "Давайте обсудим новый проект. Во-первых, нужно составить план.",
-              "explicacao": "Vamos discutir o novo projeto. Primeiro, é preciso fazer um plano.",
-              "id": "ru-067-x02",
               "complemento": true
             },
             {
@@ -413,27 +404,12 @@
               "id": "ru-067-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Concordo. Segundo, é preciso distribuir as tarefas.»",
-              "opcoes": [
-                "распределить",
-                "Во-вторых,",
-                "надо",
-                "Согласна.",
-                "задачи."
-              ],
-              "gabarito": "Согласна. Во-вторых, надо распределить задачи.",
-              "explicacao": "Escreva: Согласна. Во-вторых, надо распределить задачи.",
-              "id": "ru-067-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Согласна. Во-вторых, надо распределить задачи.",
-              "respostaEsperada": "Согласна. Во-вторых, надо распределить задачи.",
-              "explicacao": "Concordo. Segundo, é preciso distribuir as tarefas.",
-              "id": "ru-067-x04",
+              "audio": "Кроме того, нужно выбрать срок. Например, до пятницы.",
+              "respostaEsperada": "Кроме того, нужно выбрать срок. Например, до пятницы.",
+              "explicacao": "Além disso, é preciso escolher um prazo. Por exemplo, até sexta.",
+              "id": "ru-067-x02",
               "complemento": true
             },
             {
@@ -447,45 +423,6 @@
               "gabarito": "например",
               "explicacao": "Exemplo.",
               "id": "ru-067-e03"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Além disso, é preciso escolher um prazo. Por exemplo, até sexta.»",
-              "opcoes": [
-                "того,",
-                "Например,",
-                "нужно",
-                "пятницы.",
-                "Кроме",
-                "выбрать",
-                "до",
-                "срок."
-              ],
-              "gabarito": "Кроме того, нужно выбрать срок. Например, до пятницы.",
-              "explicacao": "Escreva: Кроме того, нужно выбрать срок. Например, до пятницы.",
-              "id": "ru-067-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Кроме того, нужно выбрать срок. Например, до пятницы.",
-              "respostaEsperada": "Кроме того, нужно выбрать срок. Например, до пятницы.",
-              "explicacao": "Além disso, é preciso escolher um prazo. Por exemplo, até sexta.",
-              "id": "ru-067-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Это сто рублей, ___ недорого. (ou seja)",
-              "opcoes": [
-                "то есть",
-                "наоборот",
-                "однако"
-              ],
-              "gabarito": "то есть",
-              "explicacao": "Reformulação.",
-              "id": "ru-067-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -504,7 +441,16 @@
               ],
               "gabarito": "С одной стороны, пятница рано. С другой стороны, клиент ждёт.",
               "explicacao": "Escreva: С одной стороны, пятница рано. С другой стороны, клиент ждёт.",
-              "id": "ru-067-x07",
+              "id": "ru-067-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Давайте обсудим новый проект. Во-первых, нужно составить план.",
+              "respostaEsperada": "Давайте обсудим новый проект. Во-первых, нужно составить план.",
+              "explicacao": "Vamos discutir o novo projeto. Primeiro, é preciso fazer um plano.",
+              "id": "ru-067-r01",
               "complemento": true
             },
             {
@@ -513,56 +459,20 @@
               "audio": "С одной стороны, пятница рано. С другой стороны, клиент ждёт.",
               "respostaEsperada": "С одной стороны, пятница рано. С другой стороны, клиент ждёт.",
               "explicacao": "Por um lado, sexta é cedo. Por outro, o cliente espera.",
-              "id": "ru-067-x08",
+              "id": "ru-067-x04",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "С одной стороны, пятница рано. С ___ стороны, клиент ждёт.",
+              "enunciado": "Это сто рублей, ___ недорого. (ou seja)",
               "opcoes": [
-                "другой",
-                "другая",
-                "другую"
-              ],
-              "gabarito": "другой",
-              "explicacao": "«с другой стороны» (genitivo).",
-              "id": "ru-067-e05"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ou seja, a senhora propõe segunda?»",
-              "opcoes": [
-                "То",
-                "понедельник?",
-                "вы",
-                "есть",
-                "предлагаете"
-              ],
-              "gabarito": "То есть вы предлагаете понедельник?",
-              "explicacao": "Escreva: То есть вы предлагаете понедельник?",
-              "id": "ru-067-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "То есть вы предлагаете понедельник?",
-              "respostaEsperada": "То есть вы предлагаете понедельник?",
-              "explicacao": "Ou seja, a senhora propõe segunda?",
-              "id": "ru-067-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Он не устал, ___, он полон сил. (pelo contrário)",
-              "opcoes": [
+                "то есть",
                 "наоборот",
-                "например",
-                "итак"
+                "однако"
               ],
-              "gabarito": "наоборот",
-              "explicacao": "Oposição.",
-              "id": "ru-067-e06"
+              "gabarito": "то есть",
+              "explicacao": "Reformulação.",
+              "id": "ru-067-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -580,8 +490,20 @@
               ],
               "gabarito": "Нет, наоборот: я предлагаю четверг, чтобы мы не спешили.",
               "explicacao": "Escreva: Нет, наоборот: я предлагаю четверг, чтобы мы не спешили.",
-              "id": "ru-067-x11",
+              "id": "ru-067-x05",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "С одной стороны, пятница рано. С ___ стороны, клиент ждёт.",
+              "opcoes": [
+                "другой",
+                "другая",
+                "другую"
+              ],
+              "gabarito": "другой",
+              "explicacao": "«с другой стороны» (genitivo).",
+              "id": "ru-067-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -589,7 +511,50 @@
               "audio": "Нет, наоборот: я предлагаю четверг, чтобы мы не спешили.",
               "respostaEsperada": "Нет, наоборот: я предлагаю четверг, чтобы мы не спешили.",
               "explicacao": "Não, pelo contrário: proponho quinta, para não corrermos.",
-              "id": "ru-067-x12",
+              "id": "ru-067-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Согласна. Во-вторых, надо распределить задачи.",
+              "respostaEsperada": "Согласна. Во-вторых, надо распределить задачи.",
+              "explicacao": "Concordo. Segundo, é preciso distribuir as tarefas.",
+              "id": "ru-067-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Finalmente tudo está claro!»",
+              "opcoes": [
+                "ясно!",
+                "Наконец-то",
+                "всё"
+              ],
+              "gabarito": "Наконец-то всё ясно!",
+              "explicacao": "Escreva: Наконец-то всё ясно!",
+              "id": "ru-067-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Он не устал, ___, он полон сил. (pelo contrário)",
+              "opcoes": [
+                "наоборот",
+                "например",
+                "итак"
+              ],
+              "gabarito": "наоборот",
+              "explicacao": "Oposição.",
+              "id": "ru-067-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Наконец-то всё ясно!",
+              "respostaEsperada": "Наконец-то всё ясно!",
+              "explicacao": "Finalmente tudo está claro!",
+              "id": "ru-067-x08",
               "complemento": true
             },
             {
@@ -605,31 +570,33 @@
               "id": "ru-067-e07"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Está bem. Então, o plano fazemos hoje e o prazo é quinta.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «то есть»?",
+              "audio": "то есть",
               "opcoes": [
-                "четверг.",
-                "а",
-                "план",
-                "Итак,",
-                "Хорошо.",
-                "сегодня,",
-                "готовим",
-                "—",
-                "срок"
+                "por outro lado",
+                "terceiro",
+                "portanto",
+                "ou seja"
               ],
-              "gabarito": "Хорошо. Итак, план готовим сегодня, а срок — четверг.",
-              "explicacao": "Escreva: Хорошо. Итак, план готовим сегодня, а срок — четверг.",
-              "id": "ru-067-x13",
+              "gabarito": "ou seja",
+              "explicacao": "«то есть» = ou seja.",
+              "id": "ru-067-x09",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Хорошо. Итак, план готовим сегодня, а срок — четверг.",
-              "respostaEsperada": "Хорошо. Итак, план готовим сегодня, а срок — четверг.",
-              "explicacao": "Está bem. Então, o plano fazemos hoje e o prazo é quinta.",
-              "id": "ru-067-x14",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «итак»?",
+              "audio": "итак",
+              "opcoes": [
+                "por exemplo",
+                "pelo contrário",
+                "em seguida",
+                "portanto"
+              ],
+              "gabarito": "portanto",
+              "explicacao": "«итак» = portanto.",
+              "id": "ru-067-x10",
               "complemento": true
             },
             {
@@ -645,25 +612,42 @@
               "id": "ru-067-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Finalmente tudo está claro!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «с другой стороны»?",
+              "audio": "с другой стороны",
               "opcoes": [
-                "ясно!",
-                "Наконец-то",
-                "всё"
+                "por fim",
+                "porém",
+                "portanto",
+                "por outro lado"
               ],
-              "gabarito": "Наконец-то всё ясно!",
-              "explicacao": "Escreva: Наконец-то всё ясно!",
-              "id": "ru-067-x15",
+              "gabarito": "por outro lado",
+              "explicacao": "«с другой стороны» = por outro lado.",
+              "id": "ru-067-x11",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Наконец-то всё ясно!",
-              "respostaEsperada": "Наконец-то всё ясно!",
-              "explicacao": "Finalmente tudo está claro!",
-              "id": "ru-067-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "То есть вы предлагаете понедельник?",
+              "respostaEsperada": "То есть вы предлагаете понедельник?",
+              "explicacao": "Ou seja, a senhora propõe segunda?",
+              "id": "ru-067-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «к тому же»?",
+              "audio": "к тому же",
+              "opcoes": [
+                "em geral",
+                "ainda por cima",
+                "mesmo assim",
+                "ou seja"
+              ],
+              "gabarito": "ainda por cima",
+              "explicacao": "«к тому же» = ainda por cima.",
+              "id": "ru-067-x12",
               "complemento": true
             },
             {
@@ -680,32 +664,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «то есть»?",
-              "audio": "то есть",
+              "enunciado": "O que significa «наконец»?",
+              "audio": "наконец",
               "opcoes": [
-                "por outro lado",
-                "terceiro",
-                "portanto",
-                "ou seja"
+                "em geral",
+                "por um lado",
+                "ou seja",
+                "por fim"
               ],
-              "gabarito": "ou seja",
-              "explicacao": "«то есть» = ou seja.",
-              "id": "ru-067-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «итак»?",
-              "audio": "итак",
-              "opcoes": [
-                "por exemplo",
-                "pelo contrário",
-                "em seguida",
-                "portanto"
-              ],
-              "gabarito": "portanto",
-              "explicacao": "«итак» = portanto.",
-              "id": "ru-067-x18",
+              "gabarito": "por fim",
+              "explicacao": "«наконец» = por fim.",
+              "id": "ru-067-x13",
               "complemento": true
             },
             {
@@ -723,32 +692,42 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «с другой стороны»?",
-              "audio": "с другой стороны",
+              "enunciado": "O que significa «в-третьих»?",
+              "audio": "в-третьих",
               "opcoes": [
-                "por fim",
-                "porém",
-                "portanto",
-                "por outro lado"
+                "além disso",
+                "em seguida",
+                "pelo contrário",
+                "terceiro"
               ],
-              "gabarito": "por outro lado",
-              "explicacao": "«с другой стороны» = por outro lado.",
-              "id": "ru-067-x19",
+              "gabarito": "terceiro",
+              "explicacao": "«в-третьих» = terceiro.",
+              "id": "ru-067-x14",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «к тому же»?",
-              "audio": "к тому же",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Хорошо. Итак, план готовим сегодня, а срок — четверг.",
+              "respostaEsperada": "Хорошо. Итак, план готовим сегодня, а срок — четверг.",
+              "explicacao": "Está bem. Então, o plano fazemos hoje e o prazo é quinta.",
+              "id": "ru-067-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "С одной стороны, пятница рано",
               "opcoes": [
-                "em geral",
-                "ainda por cima",
-                "mesmo assim",
-                "ou seja"
+                "стороны,",
+                "рано",
+                "пятница",
+                "С",
+                "одной"
               ],
-              "gabarito": "ainda por cima",
-              "explicacao": "«к тому же» = ainda por cima.",
-              "id": "ru-067-x20",
+              "gabarito": "С одной стороны, пятница рано",
+              "explicacao": "Escreva: С одной стороны, пятница рано",
+              "id": "ru-067-x15",
               "complemento": true
             },
             {
@@ -765,33 +744,17 @@
               "id": "ru-067-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «наконец»?",
-              "audio": "наконец",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Итак, мы договорились",
               "opcoes": [
-                "em geral",
-                "por um lado",
-                "ou seja",
-                "por fim"
+                "договорились",
+                "мы",
+                "Итак,"
               ],
-              "gabarito": "por fim",
-              "explicacao": "«наконец» = por fim.",
-              "id": "ru-067-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «в-третьих»?",
-              "audio": "в-третьих",
-              "opcoes": [
-                "além disso",
-                "em seguida",
-                "pelo contrário",
-                "terceiro"
-              ],
-              "gabarito": "terceiro",
-              "explicacao": "«в-третьих» = terceiro.",
-              "id": "ru-067-x22",
+              "gabarito": "Итак, мы договорились",
+              "explicacao": "Escreva: Итак, мы договорились",
+              "id": "ru-067-x16",
               "complemento": true
             },
             {
@@ -803,33 +766,12 @@
               "id": "ru-067-e12"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
               "audio": "С одной стороны, пятница рано",
-              "opcoes": [
-                "стороны,",
-                "рано",
-                "пятница",
-                "С",
-                "одной"
-              ],
-              "gabarito": "С одной стороны, пятница рано",
+              "respostaEsperada": "С одной стороны, пятница рано",
               "explicacao": "Escreva: С одной стороны, пятница рано",
-              "id": "ru-067-x23",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Итак, мы договорились",
-              "opcoes": [
-                "договорились",
-                "мы",
-                "Итак,"
-              ],
-              "gabarito": "Итак, мы договорились",
-              "explicacao": "Escreva: Итак, мы договорились",
-              "id": "ru-067-x24",
+              "id": "ru-067-x17",
               "complemento": true
             },
             {
@@ -837,15 +779,6 @@
               "enunciado": "Escreva 5 frases com conectores: во-первых, кроме того, с одной стороны, например e итак.",
               "respostaEsperada": "Во-первых, нужен план. Кроме того, это дёшево. С одной стороны, пятница рано. Я люблю фрукты, например, яблоки. Итак, мы договорились.",
               "id": "ru-067-e13"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "С одной стороны, пятница рано",
-              "respostaEsperada": "С одной стороны, пятница рано",
-              "explicacao": "Escreva: С одной стороны, пятница рано",
-              "id": "ru-067-x25",
-              "complemento": true
             }
           ]
         },

@@ -37,25 +37,19 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Há alguém no escritório?»",
+            "enunciado": "Monte a frase: «Não, ninguém. Todos estão na reunião.»",
             "opcoes": [
-              "Ist",
-              "Büro?",
-              "jemand",
-              "im"
+              "der",
+              "in",
+              "niemand.",
+              "Besprechung.",
+              "Nein,",
+              "sind",
+              "Alle"
             ],
-            "gabarito": "Ist jemand im Büro?",
-            "explicacao": "Escreva: Ist jemand im Büro?",
+            "gabarito": "Nein, niemand. Alle sind in der Besprechung.",
+            "explicacao": "Escreva: Nein, niemand. Alle sind in der Besprechung.",
             "id": "de-042-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ist jemand im Büro?",
-            "respostaEsperada": "Ist jemand im Büro?",
-            "explicacao": "Há alguém no escritório?",
-            "id": "de-042-x02",
             "complemento": true
           },
           {
@@ -71,20 +65,12 @@
             "id": "de-042-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, ninguém. Todos estão na reunião.»",
-            "opcoes": [
-              "der",
-              "in",
-              "niemand.",
-              "Besprechung.",
-              "Nein,",
-              "sind",
-              "Alle"
-            ],
-            "gabarito": "Nein, niemand. Alle sind in der Besprechung.",
-            "explicacao": "Escreva: Nein, niemand. Alle sind in der Besprechung.",
-            "id": "de-042-x03",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Nein, niemand. Alle sind in der Besprechung.",
+            "respostaEsperada": "Nein, niemand. Alle sind in der Besprechung.",
+            "explicacao": "Não, ninguém. Todos estão na reunião.",
+            "id": "de-042-x02",
             "complemento": true
           },
           {
@@ -98,53 +84,6 @@
             "gabarito": "ein",
             "explicacao": "Nominativo masculino.",
             "id": "de-042-e03"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Nein, niemand. Alle sind in der Besprechung.",
-            "respostaEsperada": "Nein, niemand. Alle sind in der Besprechung.",
-            "explicacao": "Não, ninguém. Todos estão na reunião.",
-            "id": "de-042-x04",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Quando se volta da reunião?»",
-            "opcoes": [
-              "der",
-              "kommt",
-              "zurück?",
-              "man",
-              "Besprechung",
-              "aus",
-              "Wann"
-            ],
-            "gabarito": "Wann kommt man aus der Besprechung zurück?",
-            "explicacao": "Escreva: Wann kommt man aus der Besprechung zurück?",
-            "id": "de-042-x05",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Was für ___ Film möchtest du sehen?",
-            "opcoes": [
-              "einen",
-              "ein",
-              "einem"
-            ],
-            "gabarito": "einen",
-            "explicacao": "Acusativo masculino.",
-            "id": "de-042-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Wann kommt man aus der Besprechung zurück?",
-            "respostaEsperada": "Wann kommt man aus der Besprechung zurück?",
-            "explicacao": "Quando se volta da reunião?",
-            "id": "de-042-x06",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -161,8 +100,38 @@
             ],
             "gabarito": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
             "explicacao": "Escreva: Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
-            "id": "de-042-x07",
+            "id": "de-042-x03",
             "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ist jemand im Büro?",
+            "respostaEsperada": "Ist jemand im Büro?",
+            "explicacao": "Há alguém no escritório?",
+            "id": "de-042-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
+            "respostaEsperada": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
+            "explicacao": "Não sei nada de preciso. Talvez às dez.",
+            "id": "de-042-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Was für ___ Film möchtest du sehen?",
+            "opcoes": [
+              "einen",
+              "ein",
+              "einem"
+            ],
+            "gabarito": "einen",
+            "explicacao": "Acusativo masculino.",
+            "id": "de-042-e04"
           },
           {
             "tipo": "fill-gap",
@@ -177,12 +146,18 @@
             "id": "de-042-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
-            "respostaEsperada": "Ich weiß nichts Genaues. Vielleicht um zehn Uhr.",
-            "explicacao": "Não sei nada de preciso. Talvez às dez.",
-            "id": "de-042-x08",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Não, não vi ninguém.»",
+            "opcoes": [
+              "Nein,",
+              "habe",
+              "gesehen.",
+              "ich",
+              "niemanden"
+            ],
+            "gabarito": "Nein, ich habe niemanden gesehen.",
+            "explicacao": "Escreva: Nein, ich habe niemanden gesehen.",
+            "id": "de-042-x05",
             "complemento": true
           },
           {
@@ -198,130 +173,22 @@
             "id": "de-042-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você ouviu alguma novidade da chefe?»",
-            "opcoes": [
-              "etwas",
-              "du",
-              "von",
-              "der",
-              "Neues",
-              "gehört?",
-              "Chefin",
-              "Hast"
-            ],
-            "gabarito": "Hast du etwas Neues von der Chefin gehört?",
-            "explicacao": "Escreva: Hast du etwas Neues von der Chefin gehört?",
-            "id": "de-042-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hast du etwas Neues von der Chefin gehört?",
-            "respostaEsperada": "Hast du etwas Neues von der Chefin gehört?",
-            "explicacao": "Você ouviu alguma novidade da chefe?",
-            "id": "de-042-x10",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Mit ___ sprichst du? (quem)",
-            "opcoes": [
-              "wem",
-              "wen",
-              "wer"
-            ],
-            "gabarito": "wem",
-            "explicacao": "«mit» pede dativo.",
-            "id": "de-042-e07"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, não vi ninguém.»",
-            "opcoes": [
-              "Nein,",
-              "habe",
-              "gesehen.",
-              "ich",
-              "niemanden"
-            ],
-            "gabarito": "Nein, ich habe niemanden gesehen.",
-            "explicacao": "Escreva: Nein, ich habe niemanden gesehen.",
-            "id": "de-042-x11",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Für ___ ist das Geschenk? (quem)",
-            "opcoes": [
-              "wen",
-              "wem",
-              "wer"
-            ],
-            "gabarito": "wen",
-            "explicacao": "«für» pede acusativo.",
-            "id": "de-042-e08"
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Nein, ich habe niemanden gesehen.",
             "respostaEsperada": "Nein, ich habe niemanden gesehen.",
             "explicacao": "Não, não vi ninguém.",
-            "id": "de-042-x12",
+            "id": "de-042-x06",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então esperamos. Muita gente só vem mais tarde.»",
-            "opcoes": [
-              "Dann",
-              "warten",
-              "kommen",
-              "Leute",
-              "wir.",
-              "Viele",
-              "erst",
-              "später."
-            ],
-            "gabarito": "Dann warten wir. Viele Leute kommen erst später.",
-            "explicacao": "Escreva: Dann warten wir. Viele Leute kommen erst später.",
-            "id": "de-042-x13",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Wann kommt man aus der Besprechung zurück?",
+            "respostaEsperada": "Wann kommt man aus der Besprechung zurück?",
+            "explicacao": "Quando se volta da reunião?",
+            "id": "de-042-r02",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Ich sehe ___. (ninguém)",
-            "opcoes": [
-              "niemanden",
-              "niemand",
-              "niemandem"
-            ],
-            "gabarito": "niemanden",
-            "explicacao": "Acusativo.",
-            "id": "de-042-e09"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Dann warten wir. Viele Leute kommen erst später.",
-            "respostaEsperada": "Dann warten wir. Viele Leute kommen erst später.",
-            "explicacao": "Então esperamos. Muita gente só vem mais tarde.",
-            "id": "de-042-x14",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "«Was für ein» pergunta por:",
-            "opcoes": [
-              "o tipo",
-              "a quantidade",
-              "a posse"
-            ],
-            "gabarito": "o tipo",
-            "explicacao": "Que tipo de.",
-            "id": "de-042-e10"
           },
           {
             "tipo": "sentence-ordering",
@@ -337,8 +204,20 @@
             ],
             "gabarito": "Gute Idee. Ich hole uns einen Kaffee.",
             "explicacao": "Escreva: Gute Idee. Ich hole uns einen Kaffee.",
-            "id": "de-042-x15",
+            "id": "de-042-x07",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Mit ___ sprichst du? (quem)",
+            "opcoes": [
+              "wem",
+              "wen",
+              "wer"
+            ],
+            "gabarito": "wem",
+            "explicacao": "«mit» pede dativo.",
+            "id": "de-042-e07"
           },
           {
             "tipo": "audio-recognition",
@@ -346,7 +225,112 @@
             "audio": "Gute Idee. Ich hole uns einen Kaffee.",
             "respostaEsperada": "Gute Idee. Ich hole uns einen Kaffee.",
             "explicacao": "Boa ideia. Vou buscar um café para nós.",
-            "id": "de-042-x16",
+            "id": "de-042-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Für ___ ist das Geschenk? (quem)",
+            "opcoes": [
+              "wen",
+              "wem",
+              "wer"
+            ],
+            "gabarito": "wen",
+            "explicacao": "«für» pede acusativo.",
+            "id": "de-042-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «aussuchen»?",
+            "audio": "aussuchen",
+            "opcoes": [
+              "quem (objeto direto)",
+              "escolher, selecionar",
+              "diferente",
+              "tipo, variedade"
+            ],
+            "gabarito": "escolher, selecionar",
+            "explicacao": "«aussuchen» = escolher, selecionar.",
+            "id": "de-042-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich sehe ___. (ninguém)",
+            "opcoes": [
+              "niemanden",
+              "niemand",
+              "niemandem"
+            ],
+            "gabarito": "niemanden",
+            "explicacao": "Acusativo.",
+            "id": "de-042-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «die Wahl»?",
+            "audio": "die Wahl",
+            "opcoes": [
+              "para quem",
+              "tipo",
+              "de quem",
+              "escolha"
+            ],
+            "gabarito": "escolha",
+            "explicacao": "«die Wahl» = escolha.",
+            "id": "de-042-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Was für ein» pergunta por:",
+            "opcoes": [
+              "o tipo",
+              "a quantidade",
+              "a posse"
+            ],
+            "gabarito": "o tipo",
+            "explicacao": "Que tipo de.",
+            "id": "de-042-e10"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «der Typ»?",
+            "audio": "der Typ",
+            "opcoes": [
+              "tipo",
+              "com quem",
+              "quem (sujeito)",
+              "escolha"
+            ],
+            "gabarito": "tipo",
+            "explicacao": "«der Typ» = tipo.",
+            "id": "de-042-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hast du etwas Neues von der Chefin gehört?",
+            "respostaEsperada": "Hast du etwas Neues von der Chefin gehört?",
+            "explicacao": "Você ouviu alguma novidade da chefe?",
+            "id": "de-042-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «wessen»?",
+            "audio": "wessen",
+            "opcoes": [
+              "quem (objeto direto)",
+              "de quem",
+              "escolha",
+              "escolher, selecionar"
+            ],
+            "gabarito": "de quem",
+            "explicacao": "«wessen» = de quem.",
+            "id": "de-042-x12",
             "complemento": true
           },
           {
@@ -363,17 +347,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «aussuchen»?",
-            "audio": "aussuchen",
+            "enunciado": "O que significa «mit wem»?",
+            "audio": "mit wem",
             "opcoes": [
-              "quem (objeto direto)",
-              "escolher, selecionar",
-              "diferente",
-              "tipo, variedade"
+              "a quem (pessoa)",
+              "quem (sujeito)",
+              "a quem (dativo)",
+              "com quem"
             ],
-            "gabarito": "escolher, selecionar",
-            "explicacao": "«aussuchen» = escolher, selecionar.",
-            "id": "de-042-x17",
+            "gabarito": "com quem",
+            "explicacao": "«mit wem» = com quem.",
+            "id": "de-042-x13",
             "complemento": true
           },
           {
@@ -387,36 +371,6 @@
             "gabarito": "vira substantivo (Neues, Gutes)",
             "explicacao": "Maiúscula e -es.",
             "id": "de-042-e12"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «die Wahl»?",
-            "audio": "die Wahl",
-            "opcoes": [
-              "para quem",
-              "tipo",
-              "de quem",
-              "escolha"
-            ],
-            "gabarito": "escolha",
-            "explicacao": "«die Wahl» = escolha.",
-            "id": "de-042-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «der Typ»?",
-            "audio": "der Typ",
-            "opcoes": [
-              "tipo",
-              "com quem",
-              "quem (sujeito)",
-              "escolha"
-            ],
-            "gabarito": "tipo",
-            "explicacao": "«der Typ» = tipo.",
-            "id": "de-042-x19",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -433,32 +387,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «wessen»?",
-            "audio": "wessen",
+            "enunciado": "O que significa «gleich»?",
+            "audio": "gleich",
             "opcoes": [
-              "quem (objeto direto)",
               "de quem",
-              "escolha",
-              "escolher, selecionar"
+              "de quem (autor)",
+              "igual",
+              "a quem (pessoa)"
             ],
-            "gabarito": "de quem",
-            "explicacao": "«wessen» = de quem.",
-            "id": "de-042-x20",
+            "gabarito": "igual",
+            "explicacao": "«gleich» = igual.",
+            "id": "de-042-x14",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «mit wem»?",
-            "audio": "mit wem",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Dann warten wir. Viele Leute kommen erst später.",
+            "respostaEsperada": "Dann warten wir. Viele Leute kommen erst später.",
+            "explicacao": "Então esperamos. Muita gente só vem mais tarde.",
+            "id": "de-042-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Ich habe niemanden gesehen",
             "opcoes": [
-              "a quem (pessoa)",
-              "quem (sujeito)",
-              "a quem (dativo)",
-              "com quem"
+              "habe",
+              "Ich",
+              "gesehen",
+              "niemanden"
             ],
-            "gabarito": "com quem",
-            "explicacao": "«mit wem» = com quem.",
-            "id": "de-042-x21",
+            "gabarito": "Ich habe niemanden gesehen",
+            "explicacao": "Escreva: Ich habe niemanden gesehen",
+            "id": "de-042-x15",
             "complemento": true
           },
           {
@@ -475,44 +438,6 @@
             "id": "de-042-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «gleich»?",
-            "audio": "gleich",
-            "opcoes": [
-              "de quem",
-              "de quem (autor)",
-              "igual",
-              "a quem (pessoa)"
-            ],
-            "gabarito": "igual",
-            "explicacao": "«gleich» = igual.",
-            "id": "de-042-x22",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hast du etwas Neues gehört",
-            "respostaEsperada": "Hast du etwas Neues gehört",
-            "explicacao": "etwas + adjetivo.",
-            "id": "de-042-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Ich habe niemanden gesehen",
-            "opcoes": [
-              "habe",
-              "Ich",
-              "gesehen",
-              "niemanden"
-            ],
-            "gabarito": "Ich habe niemanden gesehen",
-            "explicacao": "Escreva: Ich habe niemanden gesehen",
-            "id": "de-042-x23",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Hast du etwas Neues gehört",
@@ -525,7 +450,24 @@
             ],
             "gabarito": "Hast du etwas Neues gehört",
             "explicacao": "Escreva: Hast du etwas Neues gehört",
-            "id": "de-042-x24",
+            "id": "de-042-x16",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Hast du etwas Neues gehört",
+            "respostaEsperada": "Hast du etwas Neues gehört",
+            "explicacao": "etwas + adjetivo.",
+            "id": "de-042-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich habe niemanden gesehen",
+            "respostaEsperada": "Ich habe niemanden gesehen",
+            "explicacao": "Escreva: Ich habe niemanden gesehen",
+            "id": "de-042-x17",
             "complemento": true
           },
           {

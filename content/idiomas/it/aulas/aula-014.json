@@ -537,24 +537,6 @@
               "id": "it-014-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Davide, a que horas você costuma se levantar?»",
-              "opcoes": [
-                "alzi",
-                "di",
-                "ora",
-                "Davide,",
-                "solito?",
-                "che",
-                "a",
-                "ti"
-              ],
-              "gabarito": "Davide, a che ora ti alzi di solito?",
-              "explicacao": "Escreva: Davide, a che ora ti alzi di solito?",
-              "id": "it-014-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Mi lavo le mani",
@@ -571,12 +553,23 @@
               "id": "it-014-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Davide, a che ora ti alzi di solito?",
-              "respostaEsperada": "Davide, a che ora ti alzi di solito?",
-              "explicacao": "Davide, a que horas você costuma se levantar?",
-              "id": "it-014-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E à noite? Você descansa ou sai com os amigos?»",
+              "opcoes": [
+                "sera?",
+                "la",
+                "Ti",
+                "o",
+                "riposi",
+                "amici?",
+                "esci",
+                "E",
+                "gli",
+                "con"
+              ],
+              "gabarito": "E la sera? Ti riposi o esci con gli amici?",
+              "explicacao": "Escreva: E la sera? Ti riposi o esci con gli amici?",
+              "id": "it-014-x01",
               "complemento": true
             },
             {
@@ -586,6 +579,15 @@
               "respostaEsperada": "Si divertono molto",
               "explicacao": "Escreva: Si divertono molto.",
               "id": "it-014-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Davide, a che ora ti alzi di solito?",
+              "respostaEsperada": "Davide, a che ora ti alzi di solito?",
+              "explicacao": "Davide, a que horas você costuma se levantar?",
+              "id": "it-014-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -612,26 +614,6 @@
               "id": "it-014-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E à noite? Você descansa ou sai com os amigos?»",
-              "opcoes": [
-                "sera?",
-                "la",
-                "Ti",
-                "o",
-                "riposi",
-                "amici?",
-                "esci",
-                "E",
-                "gli",
-                "con"
-              ],
-              "gabarito": "E la sera? Ti riposi o esci con gli amici?",
-              "explicacao": "Escreva: E la sera? Ti riposi o esci con gli amici?",
-              "id": "it-014-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «nunca bebo café»?",
               "opcoes": [
@@ -642,6 +624,15 @@
               "gabarito": "Non bevo mai caffè.",
               "explicacao": "«Non… mai».",
               "id": "it-014-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "E la sera? Ti riposi o esci con gli amici?",
+              "respostaEsperada": "E la sera? Ti riposi o esci con gli amici?",
+              "explicacao": "E à noite? Você descansa ou sai com os amigos?",
+              "id": "it-014-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -668,15 +659,6 @@
               "id": "it-014-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "E la sera? Ti riposi o esci con gli amici?",
-              "respostaEsperada": "E la sera? Ti riposi o esci con gli amici?",
-              "explicacao": "E à noite? Você descansa ou sai com os amigos?",
-              "id": "it-014-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Loro ___ in fretta. (vestirsi)",
               "opcoes": [
@@ -687,6 +669,15 @@
               "gabarito": "si vestono",
               "explicacao": "«Loro si vestono».",
               "id": "it-014-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Volentieri. Ci sentiamo dopo il lavoro.",
+              "respostaEsperada": "Volentieri. Ci sentiamo dopo il lavoro.",
+              "explicacao": "Com prazer. Nos falamos depois do trabalho.",
+              "id": "it-014-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -701,6 +692,21 @@
               "id": "it-014-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «addormentarsi»?",
+              "audio": "addormentarsi",
+              "opcoes": [
+                "adormecer, pegar no sono",
+                "primeiro, depois, depois (de)",
+                "divertir-se",
+                "ficar com raiva"
+              ],
+              "gabarito": "adormecer, pegar no sono",
+              "explicacao": "«addormentarsi» = adormecer, pegar no sono.",
+              "id": "it-014-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Prima mi lavo, ___ mi vesto.",
               "opcoes": [
@@ -711,22 +717,6 @@
               "gabarito": "poi",
               "explicacao": "«Poi» significa depois.",
               "id": "it-014-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Com prazer. Nos falamos depois do trabalho.»",
-              "opcoes": [
-                "Ci",
-                "il",
-                "sentiamo",
-                "lavoro.",
-                "Volentieri.",
-                "dopo"
-              ],
-              "gabarito": "Volentieri. Ci sentiamo dopo il lavoro.",
-              "explicacao": "Escreva: Volentieri. Ci sentiamo dopo il lavoro.",
-              "id": "it-014-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -757,19 +747,25 @@
               "id": "it-014-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Volentieri. Ci sentiamo dopo il lavoro.",
-              "respostaEsperada": "Volentieri. Ci sentiamo dopo il lavoro.",
-              "explicacao": "Com prazer. Nos falamos depois do trabalho.",
-              "id": "it-014-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Eu me levanto às sete. Depois me lavo e tomo café.",
               "respostaEsperada": "Mi alzo alle sette. Poi mi lavo e faccio colazione.",
               "id": "it-014-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «prima, poi, dopo»?",
+              "audio": "prima, poi, dopo",
+              "opcoes": [
+                "adormecer, pegar no sono",
+                "tomar banho (de chuveiro)",
+                "primeiro, depois, depois (de)",
+                "a noite (madrugada)"
+              ],
+              "gabarito": "primeiro, depois, depois (de)",
+              "explicacao": "«prima, poi, dopo» = primeiro, depois, depois (de).",
+              "id": "it-014-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -784,6 +780,15 @@
               "id": "it-014-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "farsi la doccia",
+              "respostaEsperada": "farsi la doccia",
+              "explicacao": "tomar banho (de chuveiro)",
+              "id": "it-014-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "A che ora ___ vesti? (tu)",
               "opcoes": [
@@ -794,21 +799,6 @@
               "gabarito": "ti",
               "explicacao": "Com «tu» o pronome é «ti».",
               "id": "it-014-e19"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «addormentarsi»?",
-              "audio": "addormentarsi",
-              "opcoes": [
-                "adormecer, pegar no sono",
-                "primeiro, depois, depois (de)",
-                "divertir-se",
-                "ficar com raiva"
-              ],
-              "gabarito": "adormecer, pegar no sono",
-              "explicacao": "«addormentarsi» = adormecer, pegar no sono.",
-              "id": "it-014-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -835,6 +825,21 @@
               "id": "it-014-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «riposarsi»?",
+              "audio": "riposarsi",
+              "opcoes": [
+                "descansar",
+                "sentir-se, falar-se",
+                "entediar-se",
+                "a noite (madrugada)"
+              ],
+              "gabarito": "descansar",
+              "explicacao": "«riposarsi» = descansar.",
+              "id": "it-014-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vado a letto ___ dieci. (às)",
               "opcoes": [
@@ -845,21 +850,6 @@
               "gabarito": "alle",
               "explicacao": "Horas se marcam com «a» + artigo: «alle dieci».",
               "id": "it-014-e22"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «prima, poi, dopo»?",
-              "audio": "prima, poi, dopo",
-              "opcoes": [
-                "adormecer, pegar no sono",
-                "tomar banho (de chuveiro)",
-                "primeiro, depois, depois (de)",
-                "a noite (madrugada)"
-              ],
-              "gabarito": "primeiro, depois, depois (de)",
-              "explicacao": "«prima, poi, dopo» = primeiro, depois, depois (de).",
-              "id": "it-014-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -886,6 +876,15 @@
               "id": "it-014-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "prima, poi, dopo",
+              "respostaEsperada": "prima, poi, dopo",
+              "explicacao": "primeiro, depois, depois (de)",
+              "id": "it-014-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -899,17 +898,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «riposarsi»?",
-              "audio": "riposarsi",
+              "enunciado": "O que significa «svegliarsi»?",
+              "audio": "svegliarsi",
               "opcoes": [
-                "descansar",
-                "sentir-se, falar-se",
-                "entediar-se",
-                "a noite (madrugada)"
+                "acordar",
+                "a tarde",
+                "levantar-se",
+                "sentir-se, falar-se"
               ],
-              "gabarito": "descansar",
-              "explicacao": "«riposarsi» = descansar.",
-              "id": "it-014-x09",
+              "gabarito": "acordar",
+              "explicacao": "«svegliarsi» = acordar.",
+              "id": "it-014-x06",
               "complemento": true
             },
             {
@@ -938,21 +937,6 @@
               "gabarito": "Di solito mi sveglio alle sei.",
               "explicacao": "«Di solito» abre a frase e o pronome fica antes do verbo.",
               "id": "it-014-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «svegliarsi»?",
-              "audio": "svegliarsi",
-              "opcoes": [
-                "acordar",
-                "a tarde",
-                "levantar-se",
-                "sentir-se, falar-se"
-              ],
-              "gabarito": "acordar",
-              "explicacao": "«svegliarsi» = acordar.",
-              "id": "it-014-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

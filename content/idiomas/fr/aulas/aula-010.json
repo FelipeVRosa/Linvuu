@@ -500,6 +500,22 @@
               "id": "fr-010-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Je vais au travail en métro",
+              "respostaEsperada": "Je vais au travail en métro",
+              "explicacao": "Escreva: Je vais au travail en métro.",
+              "id": "fr-010-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Ne tournez pas à droite",
+              "respostaEsperada": "Ne tournez pas à droite",
+              "explicacao": "Escreva: Ne tournez pas à droite.",
+              "id": "fr-010-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Com licença, senhor. Para ir à estação, por favor?»",
               "opcoes": [
@@ -523,35 +539,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Je vais au travail en métro",
-              "respostaEsperada": "Je vais au travail en métro",
-              "explicacao": "Escreva: Je vais au travail en métro.",
-              "id": "fr-010-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ne tournez pas à droite",
-              "respostaEsperada": "Ne tournez pas à droite",
-              "explicacao": "Escreva: Ne tournez pas à droite.",
-              "id": "fr-010-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
-              "respostaEsperada": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
-              "explicacao": "Com licença, senhor. Para ir à estação, por favor?",
-              "id": "fr-010-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Elle va chez le médecin",
               "respostaEsperada": "Elle va chez le médecin",
               "explicacao": "Escreva: Elle va chez le médecin.",
               "id": "fr-010-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "C'est facile. Allez tout droit, puis tournez à gauche.",
+              "respostaEsperada": "C'est facile. Allez tout droit, puis tournez à gauche.",
+              "explicacao": "É fácil. Siga em frente, depois vire à esquerda.",
+              "id": "fr-010-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -578,25 +578,6 @@
               "id": "fr-010-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É fácil. Siga em frente, depois vire à esquerda.»",
-              "opcoes": [
-                "gauche.",
-                "facile.",
-                "puis",
-                "à",
-                "tout",
-                "Allez",
-                "C'est",
-                "tournez",
-                "droit,"
-              ],
-              "gabarito": "C'est facile. Allez tout droit, puis tournez à gauche.",
-              "explicacao": "Escreva: C'est facile. Allez tout droit, puis tournez à gauche.",
-              "id": "fr-010-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o imperativo de «tu parles»?",
               "opcoes": [
@@ -607,6 +588,15 @@
               "gabarito": "Parle !",
               "explicacao": "Perde o «s».",
               "id": "fr-010-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+              "respostaEsperada": "Excusez-moi, monsieur. Pour aller à la gare, s'il vous plaît ?",
+              "explicacao": "Com licença, senhor. Para ir à estação, por favor?",
+              "id": "fr-010-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -633,15 +623,6 @@
               "id": "fr-010-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "C'est facile. Allez tout droit, puis tournez à gauche.",
-              "respostaEsperada": "C'est facile. Allez tout droit, puis tournez à gauche.",
-              "explicacao": "É fácil. Siga em frente, depois vire à esquerda.",
-              "id": "fr-010-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Nous ___ partir demain. (vamos)",
               "opcoes": [
@@ -652,6 +633,15 @@
               "gabarito": "allons",
               "explicacao": "«nous allons».",
               "id": "fr-010-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "C'est loin ?",
+              "respostaEsperada": "C'est loin ?",
+              "explicacao": "É longe?",
+              "id": "fr-010-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -666,6 +656,19 @@
               "id": "fr-010-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E depois?»",
+              "opcoes": [
+                "?",
+                "Et",
+                "après"
+              ],
+              "gabarito": "Et après ?",
+              "explicacao": "Escreva: Et après ?",
+              "id": "fr-010-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Tu ___ au café. (vais)",
               "opcoes": [
@@ -676,19 +679,6 @@
               "gabarito": "vas",
               "explicacao": "«tu vas».",
               "id": "fr-010-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E depois?»",
-              "opcoes": [
-                "?",
-                "Et",
-                "après"
-              ],
-              "gabarito": "Et après ?",
-              "explicacao": "Escreva: Et après ?",
-              "id": "fr-010-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -722,19 +712,19 @@
               "id": "fr-010-e16"
             },
             {
+              "tipo": "producao",
+              "enunciado": "Escreva em francês: Amanhã eu vou ao Brasil de avião. Vire à direita.",
+              "respostaEsperada": "Demain, je vais au Brésil en avion. Tournez à droite.",
+              "id": "fr-010-e17"
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Et après ?",
               "respostaEsperada": "Et après ?",
               "explicacao": "E depois?",
-              "id": "fr-010-x06",
+              "id": "fr-010-x04",
               "complemento": true
-            },
-            {
-              "tipo": "producao",
-              "enunciado": "Escreva em francês: Amanhã eu vou ao Brasil de avião. Vire à direita.",
-              "respostaEsperada": "Demain, je vais au Brésil en avion. Tournez à droite.",
-              "id": "fr-010-e17"
             },
             {
               "tipo": "fill-gap",
@@ -749,6 +739,15 @@
               "id": "fr-010-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Tournez à gauche",
+              "respostaEsperada": "Tournez à gauche",
+              "explicacao": "vire à esquerda",
+              "id": "fr-010-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ils ___ en France. (vão)",
               "opcoes": [
@@ -759,19 +758,6 @@
               "gabarito": "vont",
               "explicacao": "Com «ils», «aller» faz «vont».",
               "id": "fr-010-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É longe?»",
-              "opcoes": [
-                "?",
-                "C'est",
-                "loin"
-              ],
-              "gabarito": "C'est loin ?",
-              "explicacao": "Escreva: C'est loin ?",
-              "id": "fr-010-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -798,6 +784,26 @@
               "id": "fr-010-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Não, é a cinco minutos a pé. Boa viagem!»",
+              "opcoes": [
+                "Non,",
+                "cinq",
+                "pied.",
+                "Bon",
+                "à",
+                "c'est",
+                "voyage",
+                "à",
+                "!",
+                "minutes"
+              ],
+              "gabarito": "Non, c'est à cinq minutes à pied. Bon voyage !",
+              "explicacao": "Escreva: Non, c'est à cinq minutes à pied. Bon voyage !",
+              "id": "fr-010-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ à gauche ! (Vire — vous)",
               "opcoes": [
@@ -808,15 +814,6 @@
               "gabarito": "Tournez",
               "explicacao": "O imperativo de «vous» termina em «-ez».",
               "id": "fr-010-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "C'est loin ?",
-              "respostaEsperada": "C'est loin ?",
-              "explicacao": "É longe?",
-              "id": "fr-010-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -843,6 +840,15 @@
               "id": "fr-010-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Prenez la deuxième rue",
+              "respostaEsperada": "Prenez la deuxième rue",
+              "explicacao": "pegue a segunda rua",
+              "id": "fr-010-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é a negação correta de «Je vais partir»?",
               "opcoes": [
@@ -855,23 +861,12 @@
               "id": "fr-010-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, é a cinco minutos a pé. Boa viagem!»",
-              "opcoes": [
-                "Non,",
-                "cinq",
-                "pied.",
-                "Bon",
-                "à",
-                "c'est",
-                "voyage",
-                "à",
-                "!",
-                "minutes"
-              ],
-              "gabarito": "Non, c'est à cinq minutes à pied. Bon voyage !",
-              "explicacao": "Escreva: Non, c'est à cinq minutes à pied. Bon voyage !",
-              "id": "fr-010-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Non, c'est à cinq minutes à pied. Bon voyage !",
+              "respostaEsperada": "Non, c'est à cinq minutes à pied. Bon voyage !",
+              "explicacao": "Não, é a cinco minutos a pé. Boa viagem!",
+              "id": "fr-010-x06",
               "complemento": true
             },
             {
@@ -901,15 +896,6 @@
               "gabarito": "Ils vont à la gare en bus.",
               "explicacao": "«Aller à» + lugar; «en» + veículo.",
               "id": "fr-010-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Non, c'est à cinq minutes à pied. Bon voyage !",
-              "respostaEsperada": "Non, c'est à cinq minutes à pied. Bon voyage !",
-              "explicacao": "Não, é a cinco minutos a pé. Boa viagem!",
-              "id": "fr-010-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

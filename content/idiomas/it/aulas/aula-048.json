@@ -489,24 +489,6 @@
               "id": "it-048-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Paolo, sabe o que Anna me disse ontem?»",
-              "opcoes": [
-                "mi",
-                "ha",
-                "sai",
-                "detto",
-                "Paolo,",
-                "cosa",
-                "ieri?",
-                "Anna"
-              ],
-              "gabarito": "Paolo, sai cosa mi ha detto Anna ieri?",
-              "explicacao": "Escreva: Paolo, sai cosa mi ha detto Anna ieri?",
-              "id": "it-048-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Ha detto che sarebbe venuto il giorno dopo",
@@ -523,12 +505,23 @@
               "id": "it-048-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Paolo, sai cosa mi ha detto Anna ieri?",
-              "respostaEsperada": "Paolo, sai cosa mi ha detto Anna ieri?",
-              "explicacao": "Paolo, sabe o que Anna me disse ontem?",
-              "id": "it-048-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Acrescentou que, se aceitasse, partiria em janeiro.»",
+              "opcoes": [
+                "se",
+                "a",
+                "sarebbe",
+                "Ha",
+                "gennaio.",
+                "avesse",
+                "aggiunto",
+                "accettato,",
+                "partita",
+                "che,"
+              ],
+              "gabarito": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
+              "explicacao": "Escreva: Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
+              "id": "it-048-x01",
               "complemento": true
             },
             {
@@ -538,6 +531,15 @@
               "respostaEsperada": "Ha risposto che non poteva",
               "explicacao": "Escreva: Ha risposto che non poteva.",
               "id": "it-048-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Paolo, sai cosa mi ha detto Anna ieri?",
+              "respostaEsperada": "Paolo, sai cosa mi ha detto Anna ieri?",
+              "explicacao": "Paolo, sabe o que Anna me disse ontem?",
+              "id": "it-048-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -564,23 +566,6 @@
               "id": "it-048-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sério? E o que ela respondeu?»",
-              "opcoes": [
-                "ha",
-                "E",
-                "risposto?",
-                "cosa",
-                "Davvero?",
-                "che",
-                "lei"
-              ],
-              "gabarito": "Davvero? E lei che cosa ha risposto?",
-              "explicacao": "Escreva: Davvero? E lei che cosa ha risposto?",
-              "id": "it-048-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Ele disse que ligaria» em italiano:",
               "opcoes": [
@@ -591,6 +576,15 @@
               "gabarito": "Ha detto che avrebbe telefonato.",
               "explicacao": "Condizionale passato.",
               "id": "it-048-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
+              "respostaEsperada": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
+              "explicacao": "Acrescentou que, se aceitasse, partiria em janeiro.",
+              "id": "it-048-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -617,15 +611,6 @@
               "id": "it-048-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Davvero? E lei che cosa ha risposto?",
-              "respostaEsperada": "Davvero? E lei che cosa ha risposto?",
-              "explicacao": "Sério? E o que ela respondeu?",
-              "id": "it-048-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Mi ha chiesto ___ avevo tempo.",
               "opcoes": [
@@ -636,6 +621,15 @@
               "gabarito": "se",
               "explicacao": "Pergunta sim/não.",
               "id": "it-048-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Davvero? E lei che cosa ha risposto?",
+              "respostaEsperada": "Davvero? E lei che cosa ha risposto?",
+              "explicacao": "Sério? E o que ela respondeu?",
+              "id": "it-048-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -650,6 +644,27 @@
               "id": "it-048-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Ela me prometeu que ligaria assim que decidisse.»",
+              "opcoes": [
+                "Mi",
+                "promesso",
+                "lei",
+                "avrebbe",
+                "chiamato",
+                "ha",
+                "deciso.",
+                "che",
+                "avesse",
+                "appena",
+                "mi"
+              ],
+              "gabarito": "Mi ha promesso che mi avrebbe chiamato lei appena avesse deciso.",
+              "explicacao": "Escreva: Mi ha promesso che mi avrebbe chiamato lei appena avesse deciso.",
+              "id": "it-048-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ha detto che ___ il giorno dopo. (partire)",
               "opcoes": [
@@ -660,23 +675,6 @@
               "gabarito": "sarebbe partito",
               "explicacao": "Futuro visto do passado.",
               "id": "it-048-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E depois pediu um conselho a você?»",
-              "opcoes": [
-                "ti",
-                "consiglio?",
-                "E",
-                "un",
-                "poi",
-                "ha",
-                "chiesto"
-              ],
-              "gabarito": "E poi ti ha chiesto un consiglio?",
-              "explicacao": "Escreva: E poi ti ha chiesto un consiglio?",
-              "id": "it-048-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -709,19 +707,19 @@
               "id": "it-048-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "E poi ti ha chiesto un consiglio?",
-              "respostaEsperada": "E poi ti ha chiesto un consiglio?",
-              "explicacao": "E depois pediu um conselho a você?",
-              "id": "it-048-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Ela disse que estava cansada. Perguntou se eu podia ajudá-la. Pediu-me para esperar.",
               "respostaEsperada": "Ha detto che era stanca. Ha chiesto se potevo aiutarla. Mi ha chiesto di aspettare.",
               "id": "it-048-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Mi ha promesso che mi avrebbe chiamato lei appena avesse deciso.",
+              "respostaEsperada": "Mi ha promesso che mi avrebbe chiamato lei appena avesse deciso.",
+              "explicacao": "Ela me prometeu que ligaria assim que decidisse.",
+              "id": "it-048-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -736,6 +734,15 @@
               "id": "it-048-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "E poi ti ha chiesto un consiglio?",
+              "respostaEsperada": "E poi ti ha chiesto un consiglio?",
+              "explicacao": "E depois pediu um conselho a você?",
+              "id": "it-048-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Mi ha chiesto ___ abitavo. (onde)",
               "opcoes": [
@@ -746,24 +753,6 @@
               "gabarito": "dove",
               "explicacao": "Perguntas com interrogativo mantêm a palavra.",
               "id": "it-048-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Certo. Ela também disse quando partiria?»",
-              "opcoes": [
-                "anche",
-                "Giusto.",
-                "detto",
-                "Ti",
-                "sarebbe",
-                "ha",
-                "quando",
-                "partita?"
-              ],
-              "gabarito": "Giusto. Ti ha anche detto quando sarebbe partita?",
-              "explicacao": "Escreva: Giusto. Ti ha anche detto quando sarebbe partita?",
-              "id": "it-048-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -790,6 +779,21 @@
               "id": "it-048-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il giorno prima»?",
+              "audio": "il giorno prima",
+              "opcoes": [
+                "explicar que",
+                "prometer que",
+                "no dia anterior",
+                "dizer que"
+              ],
+              "gabarito": "no dia anterior",
+              "explicacao": "«il giorno prima» = no dia anterior.",
+              "id": "it-048-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ha risposto ___ non poteva venire. (que)",
               "opcoes": [
@@ -800,15 +804,6 @@
               "gabarito": "che",
               "explicacao": "«Rispondere che» introduz o conteúdo da resposta.",
               "id": "it-048-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Giusto. Ti ha anche detto quando sarebbe partita?",
-              "respostaEsperada": "Giusto. Ti ha anche detto quando sarebbe partita?",
-              "explicacao": "Certo. Ela também disse quando partiria?",
-              "id": "it-048-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -835,6 +830,15 @@
               "id": "it-048-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Giusto. Ti ha anche detto quando sarebbe partita?",
+              "respostaEsperada": "Giusto. Ti ha anche detto quando sarebbe partita?",
+              "explicacao": "Certo. Ela também disse quando partiria?",
+              "id": "it-048-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Ele me aconselhou a descansar»?",
               "opcoes": [
@@ -847,23 +851,18 @@
               "id": "it-048-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Acrescentou que, se aceitasse, partiria em janeiro.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «consigliare di»?",
+              "audio": "consigliare di",
               "opcoes": [
-                "se",
-                "a",
-                "sarebbe",
-                "Ha",
-                "gennaio.",
-                "avesse",
-                "aggiunto",
-                "accettato,",
-                "partita",
-                "che,"
+                "dizer que",
+                "ordenar que",
+                "no dia anterior",
+                "aconselhar a"
               ],
-              "gabarito": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
-              "explicacao": "Escreva: Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
-              "id": "it-048-x09",
+              "gabarito": "aconselhar a",
+              "explicacao": "«consigliare di» = aconselhar a.",
+              "id": "it-048-x06",
               "complemento": true
             },
             {
@@ -894,15 +893,6 @@
               "gabarito": "Ha detto che avrebbe chiamato il giorno dopo.",
               "explicacao": "Futuro relatado: condizionale passato.",
               "id": "it-048-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
-              "respostaEsperada": "Ha aggiunto che, se avesse accettato, sarebbe partita a gennaio.",
-              "explicacao": "Acrescentou que, se aceitasse, partiria em janeiro.",
-              "id": "it-048-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

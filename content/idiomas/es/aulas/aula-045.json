@@ -469,6 +469,14 @@
               "id": "es-045-e04"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Es posible que haya perdido el tren",
+              "respostaEsperada": "Es posible que haya perdido el tren",
+              "explicacao": "Escreva: Es posible que haya perdido el tren. Particípio de «perder»: «perdido».",
+              "id": "es-045-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Espero que hayas llegado bien",
@@ -485,14 +493,6 @@
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Es posible que haya perdido el tren",
-              "respostaEsperada": "Es posible que haya perdido el tren",
-              "explicacao": "Escreva: Es posible que haya perdido el tren. Particípio de «perder»: «perdido».",
-              "id": "es-045-e05"
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se forma o pretérito perfecto de subjuntivo?",
               "opcoes": [
@@ -503,6 +503,15 @@
               "gabarito": "haya (subjuntivo de haber) + particípio",
               "explicacao": "Presente de subjuntivo de «haber» + particípio.",
               "id": "es-045-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "espero que hayas llegado",
+              "respostaEsperada": "espero que hayas llegado",
+              "explicacao": "espero que você tenha chegado",
+              "id": "es-045-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -529,6 +538,18 @@
               "id": "es-045-e08"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "«Cuando hayas terminado» equivale a…",
+              "opcoes": [
+                "quando você tiver terminado",
+                "quando você terminou",
+                "quando você termina"
+              ],
+              "gabarito": "quando você tiver terminado",
+              "explicacao": "É o futuro composto do subjuntivo do português.",
+              "id": "es-045-e09"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Cuando hayas terminado, llámame",
@@ -542,18 +563,6 @@
               "explicacao": "Escreva: Cuando hayas terminado, llámame",
               "id": "es-045-x02",
               "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "«Cuando hayas terminado» equivale a…",
-              "opcoes": [
-                "quando você tiver terminado",
-                "quando você terminou",
-                "quando você termina"
-              ],
-              "gabarito": "quando você tiver terminado",
-              "explicacao": "É o futuro composto do subjuntivo do português.",
-              "id": "es-045-e09"
             },
             {
               "tipo": "multiple-choice",
@@ -580,6 +589,39 @@
               "id": "es-045-e11"
             },
             {
+              "tipo": "fill-gap",
+              "enunciado": "Me alegra que tú ___ venido.",
+              "opcoes": [
+                "hayas",
+                "has",
+                "habías"
+              ],
+              "gabarito": "hayas",
+              "explicacao": "Emoção + perfecto de subjuntivo: «hayas».",
+              "id": "es-045-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "dudo que haya terminado",
+              "respostaEsperada": "dudo que haya terminado",
+              "explicacao": "duvido que tenha terminado",
+              "id": "es-045-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "No creo que ellos ___ llegado todavía.",
+              "opcoes": [
+                "hayan",
+                "han",
+                "habrán"
+              ],
+              "gabarito": "hayan",
+              "explicacao": "Dúvida + perfecto de subjuntivo: «hayan».",
+              "id": "es-045-e13"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Me alegra que hayáis venido",
@@ -594,30 +636,6 @@
               "explicacao": "Escreva: Me alegra que hayáis venido",
               "id": "es-045-x03",
               "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Me alegra que tú ___ venido.",
-              "opcoes": [
-                "hayas",
-                "has",
-                "habías"
-              ],
-              "gabarito": "hayas",
-              "explicacao": "Emoção + perfecto de subjuntivo: «hayas».",
-              "id": "es-045-e12"
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "No creo que ellos ___ llegado todavía.",
-              "opcoes": [
-                "hayan",
-                "han",
-                "habrán"
-              ],
-              "gabarito": "hayan",
-              "explicacao": "Dúvida + perfecto de subjuntivo: «hayan».",
-              "id": "es-045-e13"
             },
             {
               "tipo": "fill-gap",
@@ -644,24 +662,6 @@
               "id": "es-045-e15"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Es posible que haya perdido el tren",
-              "opcoes": [
-                "el",
-                "perdido",
-                "Es",
-                "que",
-                "haya",
-                "tren",
-                "posible"
-              ],
-              "gabarito": "Es posible que haya perdido el tren",
-              "explicacao": "Escreva: Es posible que haya perdido el tren",
-              "id": "es-045-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Cuando ___ terminado, llámame. (tú)",
               "opcoes": [
@@ -686,6 +686,24 @@
               "id": "es-045-e17"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Es posible que haya perdido el tren",
+              "opcoes": [
+                "el",
+                "perdido",
+                "Es",
+                "que",
+                "haya",
+                "tren",
+                "posible"
+              ],
+              "gabarito": "Es posible que haya perdido el tren",
+              "explicacao": "Escreva: Es posible que haya perdido el tren",
+              "id": "es-045-x04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Dudo que él ___ escrito la carta.",
               "opcoes": [
@@ -696,6 +714,15 @@
               "gabarito": "haya",
               "explicacao": "«Dudar que» + perfecto de subjuntivo.",
               "id": "es-045-e18"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "espero que hayas llegado bien",
+              "respostaEsperada": "espero que hayas llegado bien",
+              "explicacao": "espero que você tenha chegado bem",
+              "id": "es-045-r03",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -710,15 +737,6 @@
               "gabarito": "Espero que hayas dormido bien.",
               "explicacao": "Desejo sobre algo que já aconteceu.",
               "id": "es-045-e19"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Espero que hayas llegado bien",
-              "respostaEsperada": "Espero que hayas llegado bien",
-              "explicacao": "Escreva: Espero que hayas llegado bien",
-              "id": "es-045-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -749,6 +767,15 @@
               "id": "es-045-e21"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Espero que hayas llegado bien",
+              "respostaEsperada": "Espero que hayas llegado bien",
+              "explicacao": "Escreva: Espero que hayas llegado bien",
+              "id": "es-045-x05",
+              "complemento": true
+            },
+            {
               "tipo": "producao",
               "enunciado": "Escreva em espanhol: Espero que você tenha chegado bem.",
               "respostaEsperada": "Espero que hayas llegado bien.",
@@ -759,15 +786,6 @@
               "enunciado": "Escreva em espanhol: Não acho que ele tenha entendido.",
               "respostaEsperada": "No creo que haya entendido.",
               "id": "es-045-e23"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "No creo que lo haya visto",
-              "respostaEsperada": "No creo que lo haya visto",
-              "explicacao": "Escreva: No creo que lo haya visto",
-              "id": "es-045-x06",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -782,6 +800,15 @@
               "id": "es-045-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "me sorprende que no haya respondido",
+              "respostaEsperada": "me sorprende que no haya respondido",
+              "explicacao": "me surpreende que não tenha respondido",
+              "id": "es-045-r04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Me alegra que tú ___ venido. (haber)",
               "opcoes": [
@@ -794,6 +821,15 @@
               "id": "es-045-e25"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "No creo que lo haya visto",
+              "respostaEsperada": "No creo que lo haya visto",
+              "explicacao": "Escreva: No creo que lo haya visto",
+              "id": "es-045-x06",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "En cuanto ___ pagado, salimos. (nosotros)",
               "opcoes": [
@@ -804,15 +840,6 @@
               "gabarito": "hayamos",
               "explicacao": "Oração de tempo sobre ação concluída: «hayamos» + particípio.",
               "id": "es-045-e26"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Cuando hayas terminado, llámame",
-              "respostaEsperada": "Cuando hayas terminado, llámame",
-              "explicacao": "Escreva: Cuando hayas terminado, llámame",
-              "id": "es-045-x07",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

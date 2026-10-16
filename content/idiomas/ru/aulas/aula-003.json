@@ -1151,20 +1151,6 @@
               "explicacao": "«Тебя» = informal."
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi! Como você se chama?»",
-              "opcoes": [
-                "зовут?",
-                "Как",
-                "тебя",
-                "Привет!"
-              ],
-              "gabarito": "Привет! Как тебя зовут?",
-              "explicacao": "Escreva: Привет! Как тебя зовут?",
-              "id": "ru-003-x01",
-              "complemento": true
-            },
-            {
               "id": "ru-003-e02",
               "tipo": "multiple-choice",
               "enunciado": "Pergunta formal do nome:",
@@ -1175,6 +1161,15 @@
               ],
               "gabarito": "Как вас зовут?",
               "explicacao": "«Вас» = formal."
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Привет! Как тебя зовут?",
+              "respostaEsperada": "Привет! Как тебя зовут?",
+              "explicacao": "Oi! Como você se chama?",
+              "id": "ru-003-r01",
+              "complemento": true
             },
             {
               "id": "ru-003-e03",
@@ -1189,15 +1184,6 @@
               "explicacao": "«Меня зовут…» = bloco fixo."
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Привет! Как тебя зовут?",
-              "respostaEsperada": "Привет! Как тебя зовут?",
-              "explicacao": "Oi! Como você se chama?",
-              "id": "ru-003-x02",
-              "complemento": true
-            },
-            {
               "id": "ru-003-e04",
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Eu me chamo Ivan.»",
@@ -1210,19 +1196,27 @@
               "explicacao": "Ordem fixa."
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi! Eu me chamo Anna. E você?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «Меня зовут…»?",
+              "audio": "Меня зовут",
               "opcoes": [
-                "зовут",
-                "Привет!",
-                "Меня",
-                "А",
-                "тебя?",
-                "Анна."
+                "Eu me chamo…",
+                "ele",
+                "eu",
+                "Como o senhor se chama?"
               ],
-              "gabarito": "Привет! Меня зовут Анна. А тебя?",
-              "explicacao": "Escreva: Привет! Меня зовут Анна. А тебя?",
-              "id": "ru-003-x03",
+              "gabarito": "Eu me chamo…",
+              "explicacao": "«Меня зовут…» = Eu me chamo….",
+              "id": "ru-003-x01",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Привет! Меня зовут Анна. А тебя?",
+              "respostaEsperada": "Привет! Меня зовут Анна. А тебя?",
+              "explicacao": "Oi! Eu me chamo Anna. E você?",
+              "id": "ru-003-r02",
               "complemento": true
             },
             {
@@ -1251,12 +1245,27 @@
               "explicacao": "Fórmula de cortesia."
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Привет! Меня зовут Анна. А тебя?",
-              "respostaEsperada": "Привет! Меня зовут Анна. А тебя?",
-              "explicacao": "Oi! Eu me chamo Anna. E você?",
-              "id": "ru-003-x04",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Меня зовут Иван. Очень приятно!",
+              "respostaEsperada": "Меня зовут Иван. Очень приятно!",
+              "explicacao": "Eu me chamo Ivan. Muito prazer!",
+              "id": "ru-003-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «Очень приятно»?",
+              "audio": "Очень приятно",
+              "opcoes": [
+                "nós",
+                "eu",
+                "Muito prazer",
+                "Pra mim também"
+              ],
+              "gabarito": "Muito prazer",
+              "explicacao": "«Очень приятно» = Muito prazer.",
+              "id": "ru-003-x02",
               "complemento": true
             },
             {
@@ -1272,21 +1281,6 @@
               "explicacao": "«Мне тоже» = pra mim também."
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu me chamo Ivan. Muito prazer!»",
-              "opcoes": [
-                "Очень",
-                "приятно!",
-                "Иван.",
-                "Меня",
-                "зовут"
-              ],
-              "gabarito": "Меня зовут Иван. Очень приятно!",
-              "explicacao": "Escreva: Меня зовут Иван. Очень приятно!",
-              "id": "ru-003-x05",
-              "complemento": true
-            },
-            {
               "id": "ru-003-e08",
               "tipo": "multiple-choice",
               "enunciado": "Pronome «nós» em russo:",
@@ -1299,6 +1293,15 @@
               "explicacao": "«Мы» = nós."
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Мне тоже очень приятно!",
+              "respostaEsperada": "Мне тоже очень приятно!",
+              "explicacao": "Muito prazer também!",
+              "id": "ru-003-r04",
+              "complemento": true
+            },
+            {
               "id": "ru-003-e09",
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Muito prazer também.»",
@@ -1309,15 +1312,6 @@
               ],
               "gabarito": "Мне тоже приятно.",
               "explicacao": "Ordem fixa."
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Меня зовут Иван. Очень приятно!",
-              "respostaEsperada": "Меня зовут Иван. Очень приятно!",
-              "explicacao": "Eu me chamo Ivan. Muito prazer!",
-              "id": "ru-003-x06",
-              "complemento": true
             },
             {
               "id": "ru-003-e10",

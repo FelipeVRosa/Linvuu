@@ -63,20 +63,6 @@
             "id": "fr-009-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia. O que desejam?»",
-            "opcoes": [
-              "désirez",
-              "?",
-              "Bonjour.",
-              "Vous"
-            ],
-            "gabarito": "Bonjour. Vous désirez ?",
-            "explicacao": "Escreva: Bonjour. Vous désirez ?",
-            "id": "fr-009-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Je ne mange pas de viande",
@@ -93,12 +79,23 @@
             "id": "fr-009-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Bonjour. Vous désirez ?",
-            "respostaEsperada": "Bonjour. Vous désirez ?",
-            "explicacao": "Bom dia. O que desejam?",
-            "id": "fr-009-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Eu gostaria de peixe, por favor. E água.»",
+            "opcoes": [
+              "de",
+              "l'eau.",
+              "voudrais",
+              "Je",
+              "plaît.",
+              "Et",
+              "s'il",
+              "vous",
+              "du",
+              "poisson,"
+            ],
+            "gabarito": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "explicacao": "Escreva: Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "id": "fr-009-x01",
             "complemento": true
           },
           {
@@ -108,6 +105,15 @@
             "respostaEsperada": "L'addition, s'il vous plaît",
             "explicacao": "Escreva: L'addition, s'il vous plaît.",
             "id": "fr-009-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Bonjour. Vous désirez ?",
+            "respostaEsperada": "Bonjour. Vous désirez ?",
+            "explicacao": "Bom dia. O que desejam?",
+            "id": "fr-009-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -134,26 +140,6 @@
             "id": "fr-009-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu gostaria de peixe, por favor. E água.»",
-            "opcoes": [
-              "de",
-              "l'eau.",
-              "voudrais",
-              "Je",
-              "plaît.",
-              "Et",
-              "s'il",
-              "vous",
-              "du",
-              "poisson,"
-            ],
-            "gabarito": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
-            "explicacao": "Escreva: Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
-            "id": "fr-009-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -164,6 +150,15 @@
             "gabarito": "un kilo de pommes",
             "explicacao": "Quantidade + «de».",
             "id": "fr-009-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "respostaEsperada": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
+            "explicacao": "Eu gostaria de peixe, por favor. E água.",
+            "id": "fr-009-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -190,15 +185,6 @@
             "id": "fr-009-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
-            "respostaEsperada": "Je voudrais du poisson, s'il vous plaît. Et de l'eau.",
-            "explicacao": "Eu gostaria de peixe, por favor. E água.",
-            "id": "fr-009-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Il y a ___ eau. (partitivo)",
             "opcoes": [
@@ -209,6 +195,15 @@
             "gabarito": "de l'",
             "explicacao": "Diante de vogal: «de l'».",
             "id": "fr-009-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Moi, je prends de la viande avec des légumes.",
+            "respostaEsperada": "Moi, je prends de la viande avec des légumes.",
+            "explicacao": "Eu tomo carne com legumes.",
+            "id": "fr-009-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -223,6 +218,24 @@
             "id": "fr-009-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «A conta, por favor. Bom apetite, Sophie!»",
+            "opcoes": [
+              "Bon",
+              "L'addition,",
+              "appétit,",
+              "!",
+              "plaît.",
+              "s'il",
+              "vous",
+              "Sophie"
+            ],
+            "gabarito": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "explicacao": "Escreva: L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "id": "fr-009-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Nous ___ un dessert. (tomamos)",
             "opcoes": [
@@ -233,25 +246,6 @@
             "gabarito": "prenons",
             "explicacao": "«nous prenons».",
             "id": "fr-009-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu tomo carne com legumes.»",
-            "opcoes": [
-              "de",
-              "avec",
-              "prends",
-              "la",
-              "légumes.",
-              "je",
-              "Moi,",
-              "viande",
-              "des"
-            ],
-            "gabarito": "Moi, je prends de la viande avec des légumes.",
-            "explicacao": "Escreva: Moi, je prends de la viande avec des légumes.",
-            "id": "fr-009-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -284,19 +278,19 @@
             "id": "fr-009-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Moi, je prends de la viande avec des légumes.",
-            "respostaEsperada": "Moi, je prends de la viande avec des légumes.",
-            "explicacao": "Eu tomo carne com legumes.",
-            "id": "fr-009-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Eu como pão. Eu não bebo leite. Eu gostaria de uma água.",
             "respostaEsperada": "Je mange du pain. Je ne bois pas de lait. Je voudrais de l'eau.",
             "id": "fr-009-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "respostaEsperada": "L'addition, s'il vous plaît. Bon appétit, Sophie !",
+            "explicacao": "A conta, por favor. Bom apetite, Sophie!",
+            "id": "fr-009-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -311,6 +305,15 @@
             "id": "fr-009-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Très bien. Et comme dessert ?",
+            "respostaEsperada": "Très bien. Et comme dessert ?",
+            "explicacao": "Muito bem. E de sobremesa?",
+            "id": "fr-009-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il boit ___ lait. (partitivo)",
             "opcoes": [
@@ -321,22 +324,6 @@
             "gabarito": "du",
             "explicacao": "«Lait» é masculino: «du lait».",
             "id": "fr-009-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Muito bem. E de sobremesa?»",
-            "opcoes": [
-              "Très",
-              "?",
-              "Et",
-              "comme",
-              "dessert",
-              "bien."
-            ],
-            "gabarito": "Très bien. Et comme dessert ?",
-            "explicacao": "Escreva: Très bien. Et comme dessert ?",
-            "id": "fr-009-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -363,6 +350,21 @@
             "id": "fr-009-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «un peu de»?",
+            "audio": "un peu de",
+            "opcoes": [
+              "a carne",
+              "a fruta",
+              "um pouco de",
+              "o pão"
+            ],
+            "gabarito": "um pouco de",
+            "explicacao": "«un peu de» = um pouco de.",
+            "id": "fr-009-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Vous ___ un café ? (tomam)",
             "opcoes": [
@@ -373,15 +375,6 @@
             "gabarito": "prenez",
             "explicacao": "Com «vous», «prendre» faz «prenez».",
             "id": "fr-009-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Très bien. Et comme dessert ?",
-            "respostaEsperada": "Très bien. Et comme dessert ?",
-            "explicacao": "Muito bem. E de sobremesa?",
-            "id": "fr-009-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -408,6 +401,15 @@
             "id": "fr-009-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Nous prenons un peu de fromage, merci.",
+            "respostaEsperada": "Nous prenons un peu de fromage, merci.",
+            "explicacao": "Tomamos um pouco de queijo, obrigada.",
+            "id": "fr-009-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como pedir um café com educação?",
             "opcoes": [
@@ -420,20 +422,18 @@
             "id": "fr-009-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Tomamos um pouco de queijo, obrigada.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «l'eau»?",
+            "audio": "l'eau",
             "opcoes": [
-              "Nous",
-              "fromage,",
-              "de",
-              "peu",
-              "prenons",
-              "un",
-              "merci."
+              "demais",
+              "uma mesa",
+              "a água",
+              "o queijo"
             ],
-            "gabarito": "Nous prenons un peu de fromage, merci.",
-            "explicacao": "Escreva: Nous prenons un peu de fromage, merci.",
-            "id": "fr-009-x09",
+            "gabarito": "a água",
+            "explicacao": "«l'eau» = a água.",
+            "id": "fr-009-x06",
             "complemento": true
           },
           {
@@ -462,15 +462,6 @@
             "gabarito": "Elle boit un peu de lait.",
             "explicacao": "Depois de «un peu», usa-se «de» sem artigo.",
             "id": "fr-009-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Nous prenons un peu de fromage, merci.",
-            "respostaEsperada": "Nous prenons un peu de fromage, merci.",
-            "explicacao": "Tomamos um pouco de queijo, obrigada.",
-            "id": "fr-009-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

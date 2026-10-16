@@ -404,21 +404,6 @@
               "id": "es-018-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia. O que deseja tomar?»",
-              "opcoes": [
-                "desea",
-                "¿Qué",
-                "Buenos",
-                "tomar?",
-                "días."
-              ],
-              "gabarito": "Buenos días. ¿Qué desea tomar?",
-              "explicacao": "Escreva: Buenos días. ¿Qué desea tomar?",
-              "id": "es-018-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
               "audio": "Hoy me he levantado a las seis",
@@ -444,12 +429,23 @@
               "id": "es-018-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenos días. ¿Qué desea tomar?",
-              "respostaEsperada": "Buenos días. ¿Qué desea tomar?",
-              "explicacao": "Bom dia. O que deseja tomar?",
-              "id": "es-018-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Queria um café com leite e uma torrada, por favor.»",
+              "opcoes": [
+                "leche",
+                "por",
+                "y",
+                "con",
+                "tostada,",
+                "favor.",
+                "Quisiera",
+                "un",
+                "una",
+                "café"
+              ],
+              "gabarito": "Quisiera un café con leche y una tostada, por favor.",
+              "explicacao": "Escreva: Quisiera un café con leche y una tostada, por favor.",
+              "id": "es-018-x01",
               "complemento": true
             },
             {
@@ -463,6 +459,15 @@
               "gabarito": "Viu dois filmes",
               "explicacao": "Leitura: «he visto dos películas» é pretérito perfecto de «ver» (aula 17).",
               "id": "es-018-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenos días. ¿Qué desea tomar?",
+              "respostaEsperada": "Buenos días. ¿Qué desea tomar?",
+              "explicacao": "Bom dia. O que deseja tomar?",
+              "id": "es-018-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -489,26 +494,6 @@
               "id": "es-018-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Queria um café com leite e uma torrada, por favor.»",
-              "opcoes": [
-                "leche",
-                "por",
-                "y",
-                "con",
-                "tostada,",
-                "favor.",
-                "Quisiera",
-                "un",
-                "una",
-                "café"
-              ],
-              "gabarito": "Quisiera un café con leche y una tostada, por favor.",
-              "explicacao": "Escreva: Quisiera un café con leche y una tostada, por favor.",
-              "id": "es-018-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Minha irmã e meus pais»?",
               "opcoes": [
@@ -519,6 +504,15 @@
               "gabarito": "Mi hermana y mis padres.",
               "explicacao": "O possessivo concorda com o que é possuído (aula 7).",
               "id": "es-018-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Quisiera un café con leche y una tostada, por favor.",
+              "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
+              "explicacao": "Queria um café com leite e uma torrada, por favor.",
+              "id": "es-018-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -545,15 +539,6 @@
               "id": "es-018-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Quisiera un café con leche y una tostada, por favor.",
-              "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
-              "explicacao": "Queria um café com leite e uma torrada, por favor.",
-              "id": "es-018-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Siga em frente e vire à direita»?",
               "opcoes": [
@@ -564,6 +549,15 @@
               "gabarito": "Siga todo recto y gire a la derecha.",
               "explicacao": "Direções: «derecha» é direita (aula 11).",
               "id": "es-018-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
+              "respostaEsperada": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
+              "explicacao": "Sim, um suco de laranja pequeno. Quanto é?",
+              "id": "es-018-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -578,6 +572,21 @@
               "id": "es-018-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «São quatro euros e cinquenta.»",
+              "opcoes": [
+                "euros",
+                "Son",
+                "cuatro",
+                "con",
+                "cincuenta."
+              ],
+              "gabarito": "Son cuatro euros con cincuenta.",
+              "explicacao": "Escreva: Son cuatro euros con cincuenta.",
+              "id": "es-018-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Nosotros ___ en Madrid. (vivir)",
               "opcoes": [
@@ -588,24 +597,6 @@
               "gabarito": "vivimos",
               "explicacao": "Presente de -ir com «nosotros»: «-imos» (aula 6).",
               "id": "es-018-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, um suco de laranja pequeno. Quanto é?»",
-              "opcoes": [
-                "pequeño.",
-                "¿Cuánto",
-                "Sí,",
-                "es?",
-                "naranja",
-                "un",
-                "de",
-                "zumo"
-              ],
-              "gabarito": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
-              "explicacao": "Escreva: Sí, un zumo de naranja pequeño. ¿Cuánto es?",
-              "id": "es-018-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -632,15 +623,6 @@
               "id": "es-018-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
-              "respostaEsperada": "Sí, un zumo de naranja pequeño. ¿Cuánto es?",
-              "explicacao": "Sim, um suco de laranja pequeno. Quanto é?",
-              "id": "es-018-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Ella ___ a las siete. (levantarse)",
               "opcoes": [
@@ -651,6 +633,15 @@
               "gabarito": "se levanta",
               "explicacao": "Pronome «se» antes do verbo (aula 14).",
               "id": "es-018-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Son cuatro euros con cincuenta.",
+              "respostaEsperada": "Son cuatro euros con cincuenta.",
+              "explicacao": "São quatro euros e cinquenta.",
+              "id": "es-018-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -665,6 +656,15 @@
               "id": "es-018-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Aquí tiene. ¿Puedo pagar con tarjeta?",
+              "respostaEsperada": "Aquí tiene. ¿Puedo pagar con tarjeta?",
+              "explicacao": "Aqui está. Posso pagar com cartão?",
+              "id": "es-018-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Hoy nosotros ___ visto una película.",
               "opcoes": [
@@ -675,21 +675,6 @@
               "gabarito": "hemos",
               "explicacao": "«Haber» com «nosotros» é «hemos» (aula 17).",
               "id": "es-018-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «São quatro euros e cinquenta.»",
-              "opcoes": [
-                "euros",
-                "Son",
-                "cuatro",
-                "con",
-                "cincuenta."
-              ],
-              "gabarito": "Son cuatro euros con cincuenta.",
-              "explicacao": "Escreva: Son cuatro euros con cincuenta.",
-              "id": "es-018-x07",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -721,21 +706,25 @@
               "id": "es-018-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Claro, sem problema.»",
+              "opcoes": [
+                "problema.",
+                "sin",
+                "Claro,"
+              ],
+              "gabarito": "Claro, sin problema.",
+              "explicacao": "Escreva: Claro, sin problema.",
+              "id": "es-018-x05",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "¿Dónde está la estación?",
               "respostaEsperada": "¿Dónde está la estación?",
               "explicacao": "Escreva: ¿Dónde está la estación? Com os dois sinais e os acentos (aulas 1 e 10).",
               "id": "es-018-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Son cuatro euros con cincuenta.",
-              "respostaEsperada": "Son cuatro euros con cincuenta.",
-              "explicacao": "São quatro euros e cinquenta.",
-              "id": "es-018-x08",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -752,6 +741,15 @@
               "id": "es-018-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Perdone, ¿dónde está la estación de tren?",
+              "respostaEsperada": "Perdone, ¿dónde está la estación de tren?",
+              "explicacao": "Com licença, onde fica a estação de trem?",
+              "id": "es-018-r04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Mi hermana ___ en casa. (estar)",
               "opcoes": [
@@ -764,19 +762,12 @@
               "id": "es-018-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Aqui está. Posso pagar com cartão?»",
-              "opcoes": [
-                "Aquí",
-                "¿Puedo",
-                "tarjeta?",
-                "tiene.",
-                "pagar",
-                "con"
-              ],
-              "gabarito": "Aquí tiene. ¿Puedo pagar con tarjeta?",
-              "explicacao": "Escreva: Aquí tiene. ¿Puedo pagar con tarjeta?",
-              "id": "es-018-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Claro, sin problema.",
+              "respostaEsperada": "Claro, sin problema.",
+              "explicacao": "Claro, sem problema.",
+              "id": "es-018-x06",
               "complemento": true
             },
             {
@@ -802,15 +793,6 @@
               "gabarito": "Me levanto a las siete.",
               "explicacao": "Verbo reflexivo: o pronome vem antes do verbo.",
               "id": "es-018-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Aquí tiene. ¿Puedo pagar con tarjeta?",
-              "respostaEsperada": "Aquí tiene. ¿Puedo pagar con tarjeta?",
-              "explicacao": "Aqui está. Posso pagar com cartão?",
-              "id": "es-018-x10",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

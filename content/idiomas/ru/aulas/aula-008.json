@@ -392,27 +392,18 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu moro em Moscou. E você?»",
+              "enunciado": "Monte a frase: «Eu moro no Brasil, em São Paulo.»",
               "opcoes": [
+                "в",
+                "Сан-Паулу.",
+                "Бразилии,",
                 "живу",
                 "в",
-                "ты?",
-                "А",
-                "Москве.",
                 "Я"
               ],
-              "gabarito": "Я живу в Москве. А ты?",
-              "explicacao": "Escreva: Я живу в Москве. А ты?",
+              "gabarito": "Я живу в Бразилии, в Сан-Паулу.",
+              "explicacao": "Escreva: Я живу в Бразилии, в Сан-Паулу.",
               "id": "ru-008-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Я живу в Москве. А ты?",
-              "respostaEsperada": "Я живу в Москве. А ты?",
-              "explicacao": "Eu moro em Moscou. E você?",
-              "id": "ru-008-x02",
               "complemento": true
             },
             {
@@ -428,28 +419,36 @@
               "id": "ru-008-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu moro no Brasil, em São Paulo.»",
-              "opcoes": [
-                "в",
-                "Сан-Паулу.",
-                "Бразилии,",
-                "живу",
-                "в",
-                "Я"
-              ],
-              "gabarito": "Я живу в Бразилии, в Сан-Паулу.",
-              "explicacao": "Escreva: Я живу в Бразилии, в Сан-Паулу.",
-              "id": "ru-008-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Я живу в Бразилии, в Сан-Паулу.",
               "respostaEsperada": "Я живу в Бразилии, в Сан-Паулу.",
               "explicacao": "Eu moro no Brasil, em São Paulo.",
-              "id": "ru-008-x04",
+              "id": "ru-008-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Где ты живёшь?",
+              "respostaEsperada": "Где ты живёшь?",
+              "explicacao": "Onde você mora?",
+              "id": "ru-008-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Que bom! Eu trabalho longe.»",
+              "opcoes": [
+                "я",
+                "Хорошо!",
+                "работаю",
+                "далеко.",
+                "А"
+              ],
+              "gabarito": "Хорошо! А я работаю далеко.",
+              "explicacao": "Escreva: Хорошо! А я работаю далеко.",
+              "id": "ru-008-x03",
               "complemento": true
             },
             {
@@ -463,23 +462,6 @@
               "gabarito": "живём",
               "explicacao": "мы → -ём.",
               "id": "ru-008-e03"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, trabalho num escritório. E você?»",
-              "opcoes": [
-                "Да,",
-                "ты?",
-                "я",
-                "офисе.",
-                "в",
-                "А",
-                "работаю"
-              ],
-              "gabarito": "Да, я работаю в офисе. А ты?",
-              "explicacao": "Escreva: Да, я работаю в офисе. А ты?",
-              "id": "ru-008-x05",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -496,28 +478,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Да, я работаю в офисе. А ты?",
-              "respostaEsperada": "Да, я работаю в офисе. А ты?",
-              "explicacao": "Sim, trabalho num escritório. E você?",
-              "id": "ru-008-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Trabalho numa escola. Sou professora. Fica perto.»",
-              "opcoes": [
-                "Я",
-                "Я",
-                "в",
-                "работаю",
-                "школе.",
-                "Это",
-                "рядом.",
-                "учитель."
-              ],
-              "gabarito": "Я работаю в школе. Я учитель. Это рядом.",
-              "explicacao": "Escreva: Я работаю в школе. Я учитель. Это рядом.",
-              "id": "ru-008-x07",
+              "audio": "Хорошо! А я работаю далеко.",
+              "respostaEsperada": "Хорошо! А я работаю далеко.",
+              "explicacao": "Que bom! Eu trabalho longe.",
+              "id": "ru-008-x04",
               "complemento": true
             },
             {
@@ -534,27 +498,42 @@
               "id": "ru-008-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Я работаю в школе. Я учитель. Это рядом.",
-              "respostaEsperada": "Я работаю в школе. Я учитель. Это рядом.",
-              "explicacao": "Trabalho numa escola. Sou professora. Fica perto.",
-              "id": "ru-008-x08",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «рядом»?",
+              "audio": "рядом",
+              "opcoes": [
+                "Brasil",
+                "loja",
+                "perto",
+                "aula, lição"
+              ],
+              "gabarito": "perto",
+              "explicacao": "«рядом» = perto.",
+              "id": "ru-008-x05",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que bom! Eu trabalho longe.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Я живу в Москве. А ты?",
+              "respostaEsperada": "Я живу в Москве. А ты?",
+              "explicacao": "Eu moro em Moscou. E você?",
+              "id": "ru-008-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «квартира»?",
+              "audio": "квартира",
               "opcoes": [
-                "я",
-                "Хорошо!",
-                "работаю",
-                "далеко.",
-                "А"
+                "longe",
+                "morar, viver",
+                "apartamento",
+                "café (lugar)"
               ],
-              "gabarito": "Хорошо! А я работаю далеко.",
-              "explicacao": "Escreva: Хорошо! А я работаю далеко.",
-              "id": "ru-008-x09",
+              "gabarito": "apartamento",
+              "explicacao": "«квартира» = apartamento.",
+              "id": "ru-008-x06",
               "complemento": true
             },
             {
@@ -571,12 +550,18 @@
               "id": "ru-008-e06"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Хорошо! А я работаю далеко.",
-              "respostaEsperada": "Хорошо! А я работаю далеко.",
-              "explicacao": "Que bom! Eu trabalho longe.",
-              "id": "ru-008-x10",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «работать»?",
+              "audio": "работать",
+              "opcoes": [
+                "em casa",
+                "universidade",
+                "trabalhar",
+                "língua, idioma"
+              ],
+              "gabarito": "trabalhar",
+              "explicacao": "«работать» = trabalhar.",
+              "id": "ru-008-x07",
               "complemento": true
             },
             {
@@ -593,32 +578,41 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «рядом»?",
-              "audio": "рядом",
+              "enunciado": "O que significa «жить»?",
+              "audio": "жить",
               "opcoes": [
-                "Brasil",
-                "loja",
-                "perto",
-                "aula, lição"
+                "aula, lição",
+                "escola",
+                "trabalhar",
+                "morar, viver"
               ],
-              "gabarito": "perto",
-              "explicacao": "«рядом» = perto.",
-              "id": "ru-008-x11",
+              "gabarito": "morar, viver",
+              "explicacao": "«жить» = morar, viver.",
+              "id": "ru-008-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Да, я работаю в офисе. А ты?",
+              "respostaEsperada": "Да, я работаю в офисе. А ты?",
+              "explicacao": "Sim, trabalho num escritório. E você?",
+              "id": "ru-008-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «квартира»?",
-              "audio": "квартира",
+              "enunciado": "O que significa «Бразилия»?",
+              "audio": "Бразилия",
               "opcoes": [
-                "longe",
-                "morar, viver",
-                "apartamento",
-                "café (lugar)"
+                "perto",
+                "aula, lição",
+                "Brasil",
+                "escola"
               ],
-              "gabarito": "apartamento",
-              "explicacao": "«квартира» = apartamento.",
-              "id": "ru-008-x12",
+              "gabarito": "Brasil",
+              "explicacao": "«Бразилия» = Brasil.",
+              "id": "ru-008-x09",
               "complemento": true
             },
             {
@@ -635,32 +629,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «работать»?",
-              "audio": "работать",
+              "enunciado": "O que significa «далеко»?",
+              "audio": "далеко",
               "opcoes": [
-                "em casa",
-                "universidade",
-                "trabalhar",
-                "língua, idioma"
-              ],
-              "gabarito": "trabalhar",
-              "explicacao": "«работать» = trabalhar.",
-              "id": "ru-008-x13",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «жить»?",
-              "audio": "жить",
-              "opcoes": [
-                "aula, lição",
+                "Moscou",
+                "longe",
                 "escola",
-                "trabalhar",
-                "morar, viver"
+                "em casa"
               ],
-              "gabarito": "morar, viver",
-              "explicacao": "«жить» = morar, viver.",
-              "id": "ru-008-x14",
+              "gabarito": "longe",
+              "explicacao": "«далеко» = longe.",
+              "id": "ru-008-x10",
               "complemento": true
             },
             {
@@ -670,21 +649,6 @@
               "respostaEsperada": "Я живу в Москве",
               "explicacao": "Preposicional de Москва: в Москве.",
               "id": "ru-008-e09"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «Бразилия»?",
-              "audio": "Бразилия",
-              "opcoes": [
-                "perto",
-                "aula, lição",
-                "Brasil",
-                "escola"
-              ],
-              "gabarito": "Brasil",
-              "explicacao": "«Бразилия» = Brasil.",
-              "id": "ru-008-x15",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -699,21 +663,6 @@
               "id": "ru-008-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «далеко»?",
-              "audio": "далеко",
-              "opcoes": [
-                "Moscou",
-                "longe",
-                "escola",
-                "em casa"
-              ],
-              "gabarito": "longe",
-              "explicacao": "«далеко» = longe.",
-              "id": "ru-008-x16",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Где ты живёшь?",
@@ -724,7 +673,31 @@
               ],
               "gabarito": "Где ты живёшь?",
               "explicacao": "Escreva: Где ты живёшь?",
-              "id": "ru-008-x17",
+              "id": "ru-008-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Я работаю в школе. Я учитель. Это рядом.",
+              "respostaEsperada": "Я работаю в школе. Я учитель. Это рядом.",
+              "explicacao": "Trabalho numa escola. Sou professora. Fica perto.",
+              "id": "ru-008-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Я живу в Москве",
+              "opcoes": [
+                "живу",
+                "Москве",
+                "Я",
+                "в"
+              ],
+              "gabarito": "Я живу в Москве",
+              "explicacao": "Escreva: Я живу в Москве",
+              "id": "ru-008-x12",
               "complemento": true
             },
             {
@@ -741,27 +714,12 @@
               "id": "ru-008-e11"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Я живу в Москве",
-              "opcoes": [
-                "живу",
-                "Москве",
-                "Я",
-                "в"
-              ],
-              "gabarito": "Я живу в Москве",
-              "explicacao": "Escreva: Я живу в Москве",
-              "id": "ru-008-x18",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Где ты живёшь?",
               "respostaEsperada": "Где ты живёшь?",
               "explicacao": "Escreva: Где ты живёшь?",
-              "id": "ru-008-x19",
+              "id": "ru-008-x13",
               "complemento": true
             },
             {

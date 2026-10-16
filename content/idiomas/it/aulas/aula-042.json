@@ -500,6 +500,22 @@
               "id": "it-042-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Entro venerdì avrò finito il progetto",
+              "respostaEsperada": "Entro venerdì avrò finito il progetto",
+              "explicacao": "Escreva: Entro venerdì avrò finito il progetto.",
+              "id": "it-042-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Chissà dove sarà",
+              "respostaEsperada": "Chissà dove sarà",
+              "explicacao": "Escreva: Chissà dove sarà.",
+              "id": "it-042-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Deve ter ficado presa no trânsito. Sábado à noite é sempre assim.»",
               "opcoes": [
@@ -523,35 +539,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Entro venerdì avrò finito il progetto",
-              "respostaEsperada": "Entro venerdì avrò finito il progetto",
-              "explicacao": "Escreva: Entro venerdì avrò finito il progetto.",
-              "id": "it-042-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Chissà dove sarà",
-              "respostaEsperada": "Chissà dove sarà",
-              "explicacao": "Escreva: Chissà dove sarà.",
-              "id": "it-042-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
-              "respostaEsperada": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
-              "explicacao": "Deve ter ficado presa no trânsito. Sábado à noite é sempre assim.",
-              "id": "it-042-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Avrà perso il treno",
               "respostaEsperada": "Avrà perso il treno",
               "explicacao": "Escreva: Avrà perso il treno.",
               "id": "it-042-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
+              "respostaEsperada": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
+              "explicacao": "Provavelmente sim. Quando tiver carregado o telefone, ela vai nos ligar.",
+              "id": "it-042-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -578,25 +578,6 @@
               "id": "it-042-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Provavelmente sim. Quando tiver carregado o telefone, ela vai nos ligar.»",
-              "opcoes": [
-                "avrà",
-                "Probabilmente",
-                "sì.",
-                "caricato",
-                "il",
-                "ci",
-                "telefono,",
-                "chiamerà.",
-                "Quando"
-              ],
-              "gabarito": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
-              "explicacao": "Escreva: Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
-              "id": "it-042-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Deve estar em casa» (suposição), em italiano:",
               "opcoes": [
@@ -607,6 +588,15 @@
               "gabarito": "Sarà a casa.",
               "explicacao": "Futuro de suposição.",
               "id": "it-042-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
+              "respostaEsperada": "Sarà rimasta bloccata nel traffico. Di sabato sera è sempre così.",
+              "explicacao": "Deve ter ficado presa no trânsito. Sábado à noite é sempre assim.",
+              "id": "it-042-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -633,15 +623,6 @@
               "id": "it-042-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
-              "respostaEsperada": "Probabilmente sì. Quando avrà caricato il telefono, ci chiamerà.",
-              "explicacao": "Provavelmente sim. Quando tiver carregado o telefone, ela vai nos ligar.",
-              "id": "it-042-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Quando ___ mangiato, usciamo. (nós)",
               "opcoes": [
@@ -652,6 +633,15 @@
               "gabarito": "avremo",
               "explicacao": "Futuro anteriore.",
               "id": "it-042-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
+              "respostaEsperada": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
+              "explicacao": "Vamos torcer. Enquanto isso, começamos a comer? Todos devem estar com fome.",
+              "id": "it-042-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -666,6 +656,26 @@
               "id": "it-042-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Olha, o telefone está tocando: é ela! Diz que está subindo.»",
+              "opcoes": [
+                "squilla:",
+                "è",
+                "Ecco,",
+                "sta",
+                "lei!",
+                "il",
+                "Dice",
+                "salendo.",
+                "telefono",
+                "che"
+              ],
+              "gabarito": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+              "explicacao": "Escreva: Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+              "id": "it-042-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Non risponde: ___ finito la batteria.",
               "opcoes": [
@@ -676,24 +686,6 @@
               "gabarito": "avrà",
               "explicacao": "Suposição sobre o passado.",
               "id": "it-042-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vamos torcer. Enquanto isso, começamos a comer? Todos devem estar com fome.»",
-              "opcoes": [
-                "a",
-                "tutti.",
-                "Speriamo.",
-                "cominciamo",
-                "mangiare?",
-                "fame",
-                "Avranno",
-                "Intanto"
-              ],
-              "gabarito": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
-              "explicacao": "Escreva: Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
-              "id": "it-042-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -722,19 +714,19 @@
               "id": "it-042-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
-              "respostaEsperada": "Speriamo. Intanto cominciamo a mangiare? Avranno fame tutti.",
-              "explicacao": "Vamos torcer. Enquanto isso, começamos a comer? Todos devem estar com fome.",
-              "id": "it-042-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Onde estará Luca? Deve ter perdido o trem. Quando ele chegar, vamos comer.",
               "respostaEsperada": "Dove sarà Luca? Avrà perso il treno. Quando sarà arrivato, mangeremo.",
               "id": "it-042-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+              "respostaEsperada": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
+              "explicacao": "Olha, o telefone está tocando: é ela! Diz que está subindo.",
+              "id": "it-042-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -749,6 +741,15 @@
               "id": "it-042-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
+              "respostaEsperada": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
+              "explicacao": "Tudo bem. Assim que ela chegar, brindaremos todos juntos.",
+              "id": "it-042-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Domani a quest'ora ___ già arrivati. (nós)",
               "opcoes": [
@@ -759,24 +760,6 @@
               "gabarito": "saremo",
               "explicacao": "«Arrivare» usa «essere»: futuro «saremo» + particípio.",
               "id": "it-042-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tudo bem. Assim que ela chegar, brindaremos todos juntos.»",
-              "opcoes": [
-                "Va",
-                "arrivata,",
-                "Appena",
-                "tutti",
-                "brinderemo",
-                "sarà",
-                "insieme.",
-                "bene."
-              ],
-              "gabarito": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
-              "explicacao": "Escreva: Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
-              "id": "it-042-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -803,6 +786,27 @@
               "id": "it-042-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Que alívio! Depois que tiver tomado um copo, vai nos contar tudo.»",
+              "opcoes": [
+                "un",
+                "racconterà",
+                "Dopo",
+                "ci",
+                "avrà",
+                "che",
+                "Che",
+                "preso",
+                "bicchiere,",
+                "sollievo!",
+                "tutto."
+              ],
+              "gabarito": "Che sollievo! Dopo che avrà preso un bicchiere, ci racconterà tutto.",
+              "explicacao": "Escreva: Che sollievo! Dopo che avrà preso un bicchiere, ci racconterà tutto.",
+              "id": "it-042-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Non risponde: ___ dimenticato il telefono. (deve ter)",
               "opcoes": [
@@ -813,15 +817,6 @@
               "gabarito": "avrà",
               "explicacao": "Suposição sobre o passado: futuro anterior com «avere».",
               "id": "it-042-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
-              "respostaEsperada": "Va bene. Appena sarà arrivata, brinderemo tutti insieme.",
-              "explicacao": "Tudo bem. Assim que ela chegar, brindaremos todos juntos.",
-              "id": "it-042-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -848,6 +843,15 @@
               "id": "it-042-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sarà una bella storia, vedrai.",
+              "respostaEsperada": "Sarà una bella storia, vedrai.",
+              "explicacao": "Deve ser uma boa história, você vai ver.",
+              "id": "it-042-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «Entro marzo avrò finito il corso»?",
               "opcoes": [
@@ -860,23 +864,12 @@
               "id": "it-042-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olha, o telefone está tocando: é ela! Diz que está subindo.»",
-              "opcoes": [
-                "squilla:",
-                "è",
-                "Ecco,",
-                "sta",
-                "lei!",
-                "il",
-                "Dice",
-                "salendo.",
-                "telefono",
-                "che"
-              ],
-              "gabarito": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
-              "explicacao": "Escreva: Ecco, il telefono squilla: è lei! Dice che sta salendo.",
-              "id": "it-042-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Che sollievo! Dopo che avrà preso un bicchiere, ci racconterà tutto.",
+              "respostaEsperada": "Che sollievo! Dopo che avrà preso un bicchiere, ci racconterà tutto.",
+              "explicacao": "Que alívio! Depois que tiver tomado um copo, vai nos contar tudo.",
+              "id": "it-042-x06",
               "complemento": true
             },
             {
@@ -904,15 +897,6 @@
               "gabarito": "Appena sarò arrivata, ti scriverò.",
               "explicacao": "«Appena» pede futuro anterior para a ação que vem antes.",
               "id": "it-042-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
-              "respostaEsperada": "Ecco, il telefono squilla: è lei! Dice che sta salendo.",
-              "explicacao": "Olha, o telefone está tocando: é ela! Diz que está subindo.",
-              "id": "it-042-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

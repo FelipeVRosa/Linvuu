@@ -63,24 +63,6 @@
             "id": "it-017-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Giorgio! O que você fez no fim de semana?»",
-            "opcoes": [
-              "Ciao,",
-              "hai",
-              "nel",
-              "settimana?",
-              "fine",
-              "Cosa",
-              "fatto",
-              "Giorgio!"
-            ],
-            "gabarito": "Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
-            "explicacao": "Escreva: Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
-            "id": "it-017-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Ho letto un libro",
@@ -97,12 +79,20 @@
             "id": "it-017-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
-            "respostaEsperada": "Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
-            "explicacao": "Oi, Giorgio! O que você fez no fim de semana?",
-            "id": "it-017-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Então vamos juntos ao cinema no próximo sábado!»",
+            "opcoes": [
+              "andiamo",
+              "prossimo!",
+              "sabato",
+              "insieme",
+              "Allora",
+              "cinema",
+              "al"
+            ],
+            "gabarito": "Allora andiamo insieme al cinema sabato prossimo!",
+            "explicacao": "Escreva: Allora andiamo insieme al cinema sabato prossimo!",
+            "id": "it-017-x01",
             "complemento": true
           },
           {
@@ -112,6 +102,15 @@
             "respostaEsperada": "Ha preso il treno stamattina",
             "explicacao": "Escreva: Ha preso il treno stamattina.",
             "id": "it-017-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
+            "respostaEsperada": "Ciao, Giorgio! Cosa hai fatto nel fine settimana?",
+            "explicacao": "Oi, Giorgio! O que você fez no fim de semana?",
+            "id": "it-017-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,21 +137,6 @@
             "id": "it-017-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Que legal! O que vocês comeram?»",
-            "opcoes": [
-              "cosa",
-              "mangiato?",
-              "avete",
-              "Bello!",
-              "Che"
-            ],
-            "gabarito": "Bello! Che cosa avete mangiato?",
-            "explicacao": "Escreva: Bello! Che cosa avete mangiato?",
-            "id": "it-017-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a ordem mais natural?",
             "opcoes": [
@@ -163,6 +147,15 @@
             "gabarito": "Ho già mangiato.",
             "explicacao": "«Già» entre auxiliar e particípio.",
             "id": "it-017-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Allora andiamo insieme al cinema sabato prossimo!",
+            "respostaEsperada": "Allora andiamo insieme al cinema sabato prossimo!",
+            "explicacao": "Então vamos juntos ao cinema no próximo sábado!",
+            "id": "it-017-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -189,15 +182,6 @@
             "id": "it-017-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Bello! Che cosa avete mangiato?",
-            "respostaEsperada": "Bello! Che cosa avete mangiato?",
-            "explicacao": "Que legal! O que vocês comeram?",
-            "id": "it-017-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Loro ___ la casa. (vendere)",
             "opcoes": [
@@ -208,6 +192,15 @@
             "gabarito": "hanno venduto",
             "explicacao": "Particípio em «-uto».",
             "id": "it-017-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Bello! Che cosa avete mangiato?",
+            "respostaEsperada": "Bello! Che cosa avete mangiato?",
+            "explicacao": "Que legal! O que vocês comeram?",
+            "id": "it-017-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -222,6 +215,21 @@
             "id": "it-017-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «già»?",
+            "audio": "già",
+            "opcoes": [
+              "esta manhã",
+              "dizer, dito",
+              "já",
+              "sempre"
+            ],
+            "gabarito": "já",
+            "explicacao": "«già» = já.",
+            "id": "it-017-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Tu ___ aperto la finestra? (já)",
             "opcoes": [
@@ -232,23 +240,6 @@
             "gabarito": "hai già",
             "explicacao": "Pergunta com «già».",
             "id": "it-017-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então vamos juntos ao cinema no próximo sábado!»",
-            "opcoes": [
-              "andiamo",
-              "prossimo!",
-              "sabato",
-              "insieme",
-              "Allora",
-              "cinema",
-              "al"
-            ],
-            "gabarito": "Allora andiamo insieme al cinema sabato prossimo!",
-            "explicacao": "Escreva: Allora andiamo insieme al cinema sabato prossimo!",
-            "id": "it-017-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -278,19 +269,25 @@
             "id": "it-017-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Allora andiamo insieme al cinema sabato prossimo!",
-            "respostaEsperada": "Allora andiamo insieme al cinema sabato prossimo!",
-            "explicacao": "Então vamos juntos ao cinema no próximo sábado!",
-            "id": "it-017-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Ontem eu li um livro e vi um filme. Ainda não escrevi para minha irmã.",
             "respostaEsperada": "Ieri ho letto un libro e ho visto un film. Non ho ancora scritto a mia sorella.",
             "id": "it-017-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ieri sera»?",
+            "audio": "ieri sera",
+            "opcoes": [
+              "ontem à noite",
+              "ainda não",
+              "já",
+              "ver, visto"
+            ],
+            "gabarito": "ontem à noite",
+            "explicacao": "«ieri sera» = ontem à noite.",
+            "id": "it-017-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -305,6 +302,15 @@
             "id": "it-017-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "la settimana scorsa",
+            "respostaEsperada": "la settimana scorsa",
+            "explicacao": "a semana passada",
+            "id": "it-017-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Marco ha ___ un messaggio. (escreveu)",
             "opcoes": [
@@ -315,21 +321,6 @@
             "gabarito": "scritto",
             "explicacao": "Particípio irregular de «scrivere»: «scritto».",
             "id": "it-017-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «già»?",
-            "audio": "già",
-            "opcoes": [
-              "esta manhã",
-              "dizer, dito",
-              "já",
-              "sempre"
-            ],
-            "gabarito": "já",
-            "explicacao": "«già» = já.",
-            "id": "it-017-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -356,6 +347,21 @@
             "id": "it-017-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ieri»?",
+            "audio": "ieri",
+            "opcoes": [
+              "ontem",
+              "ver, visto",
+              "fazer, feito",
+              "há dois dias"
+            ],
+            "gabarito": "ontem",
+            "explicacao": "«ieri» = ontem.",
+            "id": "it-017-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ieri sera ___ dormito molto. (eu)",
             "opcoes": [
@@ -366,21 +372,6 @@
             "gabarito": "ho",
             "explicacao": "Com «io» o auxiliar é «ho».",
             "id": "it-017-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «ieri sera»?",
-            "audio": "ieri sera",
-            "opcoes": [
-              "ontem à noite",
-              "ainda não",
-              "já",
-              "ver, visto"
-            ],
-            "gabarito": "ontem à noite",
-            "explicacao": "«ieri sera» = ontem à noite.",
-            "id": "it-017-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -407,6 +398,15 @@
             "id": "it-017-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "due giorni fa",
+            "respostaEsperada": "due giorni fa",
+            "explicacao": "há dois dias",
+            "id": "it-017-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Ainda não vi o filme»?",
             "opcoes": [
@@ -420,17 +420,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «ieri»?",
-            "audio": "ieri",
+            "enunciado": "O que significa «stamattina»?",
+            "audio": "stamattina",
             "opcoes": [
-              "ontem",
-              "ver, visto",
-              "fazer, feito",
-              "há dois dias"
+              "ontem à noite",
+              "escrever, escrito",
+              "esta manhã",
+              "já"
             ],
-            "gabarito": "ontem",
-            "explicacao": "«ieri» = ontem.",
-            "id": "it-017-x09",
+            "gabarito": "esta manhã",
+            "explicacao": "«stamattina» = esta manhã.",
+            "id": "it-017-x06",
             "complemento": true
           },
           {
@@ -460,21 +460,6 @@
             "gabarito": "Stamattina abbiamo preso il caffè al bar.",
             "explicacao": "Auxiliar «abbiamo» + particípio «preso».",
             "id": "it-017-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «stamattina»?",
-            "audio": "stamattina",
-            "opcoes": [
-              "ontem à noite",
-              "escrever, escrito",
-              "esta manhã",
-              "já"
-            ],
-            "gabarito": "esta manhã",
-            "explicacao": "«stamattina» = esta manhã.",
-            "id": "it-017-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

@@ -38,26 +38,18 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi! Por que você não veio?»",
+            "enunciado": "Monte a frase: «Ora essa! Eu já disse que iria me atrasar.»",
             "opcoes": [
-              "пришёл?",
-              "Ты",
-              "не",
-              "чего",
-              "Привет!"
+              "же",
+              "Здрасте-пожалуйста!",
+              "что",
+              "опоздаю.",
+              "Я",
+              "сказал,"
             ],
-            "gabarito": "Привет! Ты чего не пришёл?",
-            "explicacao": "Escreva: Привет! Ты чего не пришёл?",
+            "gabarito": "Здрасте-пожалуйста! Я же сказал, что опоздаю.",
+            "explicacao": "Escreva: Здрасте-пожалуйста! Я же сказал, что опоздаю.",
             "id": "ru-075-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Привет! Ты чего не пришёл?",
-            "respostaEsperada": "Привет! Ты чего не пришёл?",
-            "explicacao": "Oi! Por que você não veio?",
-            "id": "ru-075-x02",
             "complemento": true
           },
           {
@@ -74,28 +66,28 @@
             "id": "ru-075-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ora essa! Eu já disse que iria me atrasar.»",
-            "opcoes": [
-              "же",
-              "Здрасте-пожалуйста!",
-              "что",
-              "опоздаю.",
-              "Я",
-              "сказал,"
-            ],
-            "gabarito": "Здрасте-пожалуйста! Я же сказал, что опоздаю.",
-            "explicacao": "Escreva: Здрасте-пожалуйста! Я же сказал, что опоздаю.",
-            "id": "ru-075-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Здрасте-пожалуйста! Я же сказал, что опоздаю.",
             "respostaEsperada": "Здрасте-пожалуйста! Я же сказал, что опоздаю.",
             "explicacao": "Ora essa! Eu já disse que iria me atrasar.",
-            "id": "ru-075-x04",
+            "id": "ru-075-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Desculpe, o trânsito estava terrível. Já chego.»",
+            "opcoes": [
+              "жуткая.",
+              "буду.",
+              "Щас",
+              "Извини,",
+              "была",
+              "пробка"
+            ],
+            "gabarito": "Извини, пробка была жуткая. Щас буду.",
+            "explicacao": "Escreva: Извини, пробка была жуткая. Щас буду.",
+            "id": "ru-075-x03",
             "complemento": true
           },
           {
@@ -112,30 +104,35 @@
             "id": "ru-075-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você é demais! Esperamos você uma hora inteira.»",
-            "opcoes": [
-              "целый",
-              "даёшь!",
-              "ты",
-              "час.",
-              "Ну",
-              "Мы",
-              "тебя",
-              "ждали"
-            ],
-            "gabarito": "Ну ты даёшь! Мы ждали тебя целый час.",
-            "explicacao": "Escreva: Ну ты даёшь! Мы ждали тебя целый час.",
-            "id": "ru-075-x05",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Извини, пробка была жуткая. Щас буду.",
+            "respostaEsperada": "Извини, пробка была жуткая. Щас буду.",
+            "explicacao": "Desculpe, o trânsito estava terrível. Já chego.",
+            "id": "ru-075-x04",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ну ты даёшь! Мы ждали тебя целый час.",
-            "respostaEsperada": "Ну ты даёшь! Мы ждали тебя целый час.",
-            "explicacao": "Você é demais! Esperamos você uma hora inteira.",
-            "id": "ru-075-x06",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Привет! Ты чего не пришёл?",
+            "respostaEsperada": "Привет! Ты чего не пришёл?",
+            "explicacao": "Oi! Por que você não veio?",
+            "id": "ru-075-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Eu sei, eu sei. Já estou correndo!»",
+            "opcoes": [
+              "Я",
+              "уже",
+              "бегу!",
+              "Знаю-знаю."
+            ],
+            "gabarito": "Знаю-знаю. Я уже бегу!",
+            "explicacao": "Escreva: Знаю-знаю. Я уже бегу!",
+            "id": "ru-075-x05",
             "complemento": true
           },
           {
@@ -152,28 +149,26 @@
             "id": "ru-075-e04"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Desculpe, o trânsito estava terrível. Já chego.»",
-            "opcoes": [
-              "жуткая.",
-              "буду.",
-              "Щас",
-              "Извини,",
-              "была",
-              "пробка"
-            ],
-            "gabarito": "Извини, пробка была жуткая. Щас буду.",
-            "explicacao": "Escreva: Извини, пробка была жуткая. Щас буду.",
-            "id": "ru-075-x07",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Знаю-знаю. Я уже бегу!",
+            "respostaEsperada": "Знаю-знаю. Я уже бегу!",
+            "explicacao": "Eu sei, eu sei. Já estou correndo!",
+            "id": "ru-075-x06",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Извини, пробка была жуткая. Щас буду.",
-            "respostaEsperada": "Извини, пробка была жуткая. Щас буду.",
-            "explicacao": "Desculpe, o trânsito estava terrível. Já chego.",
-            "id": "ru-075-x08",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Não esqueço, não tenha medo.»",
+            "opcoes": [
+              "Не",
+              "забуду,",
+              "бойся.",
+              "не"
+            ],
+            "gabarito": "Не забуду, не бойся.",
+            "explicacao": "Escreva: Не забуду, не бойся.",
+            "id": "ru-075-x07",
             "complemento": true
           },
           {
@@ -190,28 +185,12 @@
             "id": "ru-075-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Tá bem, vem logo. Hoje tem futebol, afinal.»",
-            "opcoes": [
-              "давай",
-              "ведь",
-              "Ладно,",
-              "футбол.",
-              "Сегодня",
-              "быстрее."
-            ],
-            "gabarito": "Ладно, давай быстрее. Сегодня ведь футбол.",
-            "explicacao": "Escreva: Ладно, давай быстрее. Сегодня ведь футбол.",
-            "id": "ru-075-x09",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Ладно, давай быстрее. Сегодня ведь футбол.",
-            "respostaEsperada": "Ладно, давай быстрее. Сегодня ведь футбол.",
-            "explicacao": "Tá bem, vem logo. Hoje tem futebol, afinal.",
-            "id": "ru-075-x10",
+            "audio": "Не забуду, не бойся.",
+            "respostaEsperada": "Не забуду, не бойся.",
+            "explicacao": "Não esqueço, não tenha medo.",
+            "id": "ru-075-x08",
             "complemento": true
           },
           {
@@ -228,26 +207,42 @@
             "id": "ru-075-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu sei, eu sei. Já estou correndo!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «его»?",
+            "audio": "его",
             "opcoes": [
-              "Я",
-              "уже",
-              "бегу!",
-              "Знаю-знаю."
+              "leite (o = a)",
+              "olá (в mudo)",
+              "você é demais",
+              "dele (г = в)"
             ],
-            "gabarito": "Знаю-знаю. Я уже бегу!",
-            "explicacao": "Escreva: Знаю-знаю. Я уже бегу!",
-            "id": "ru-075-x11",
+            "gabarito": "dele (г = в)",
+            "explicacao": "«его» = dele (г = в).",
+            "id": "ru-075-x09",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Знаю-знаю. Я уже бегу!",
-            "respostaEsperada": "Знаю-знаю. Я уже бегу!",
-            "explicacao": "Eu sei, eu sei. Já estou correndo!",
-            "id": "ru-075-x12",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ну ты даёшь! Мы ждали тебя целый час.",
+            "respostaEsperada": "Ну ты даёшь! Мы ждали тебя целый час.",
+            "explicacao": "Você é demais! Esperamos você uma hora inteira.",
+            "id": "ru-075-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «что»?",
+            "audio": "что",
+            "opcoes": [
+              "vamos, tá bom",
+              "olá (curto)",
+              "terrível",
+              "que (ч = ш)"
+            ],
+            "gabarito": "que (ч = ш)",
+            "explicacao": "«что» = que (ч = ш).",
+            "id": "ru-075-x10",
             "complemento": true
           },
           {
@@ -263,26 +258,33 @@
             "id": "ru-075-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Só não esqueça a carteira.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «сегодня»?",
+            "audio": "сегодня",
             "opcoes": [
-              "не",
-              "кошелёк.",
-              "Только",
-              "забудь"
+              "que (ч = ш)",
+              "hoje (г = в)",
+              "dele (г = в)",
+              "leite (o = a)"
             ],
-            "gabarito": "Только не забудь кошелёк.",
-            "explicacao": "Escreva: Только не забудь кошелёк.",
-            "id": "ru-075-x13",
+            "gabarito": "hoje (г = в)",
+            "explicacao": "«сегодня» = hoje (г = в).",
+            "id": "ru-075-x11",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Только не забудь кошелёк.",
-            "respostaEsperada": "Только не забудь кошелёк.",
-            "explicacao": "Só não esqueça a carteira.",
-            "id": "ru-075-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «не бойся»?",
+            "audio": "не бойся",
+            "opcoes": [
+              "olá (curto)",
+              "não tenha medo",
+              "dele (г = в)",
+              "bem (о = а)"
+            ],
+            "gabarito": "não tenha medo",
+            "explicacao": "«не бойся» = não tenha medo.",
+            "id": "ru-075-x12",
             "complemento": true
           },
           {
@@ -298,26 +300,42 @@
             "id": "ru-075-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não esqueço, não tenha medo.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «конечно»?",
+            "audio": "конечно",
             "opcoes": [
-              "Не",
-              "забуду,",
-              "бойся.",
-              "не"
+              "vamos, tá bom",
+              "você é demais",
+              "claro (чн = шн)",
+              "olá (curto)"
             ],
-            "gabarito": "Не забуду, не бойся.",
-            "explicacao": "Escreva: Не забуду, не бойся.",
-            "id": "ru-075-x15",
+            "gabarito": "claro (чн = шн)",
+            "explicacao": "«конечно» = claro (чн = шн).",
+            "id": "ru-075-x13",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Не забуду, не бойся.",
-            "respostaEsperada": "Не забуду, не бойся.",
-            "explicacao": "Não esqueço, não tenha medo.",
-            "id": "ru-075-x16",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ладно, давай быстрее. Сегодня ведь футбол.",
+            "respostaEsperada": "Ладно, давай быстрее. Сегодня ведь футбол.",
+            "explicacao": "Tá bem, vem logo. Hoje tem futebol, afinal.",
+            "id": "ru-075-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «молоко»?",
+            "audio": "молоко",
+            "opcoes": [
+              "claro (чн = шн)",
+              "hoje (г = в)",
+              "não tenha medo",
+              "leite (o = a)"
+            ],
+            "gabarito": "leite (o = a)",
+            "explicacao": "«молоко» = leite (o = a).",
+            "id": "ru-075-x14",
             "complemento": true
           },
           {
@@ -333,33 +351,18 @@
             "id": "ru-075-e09"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «его»?",
-            "audio": "его",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Ты чего не пришёл",
             "opcoes": [
-              "leite (o = a)",
-              "olá (в mudo)",
-              "você é demais",
-              "dele (г = в)"
+              "Ты",
+              "не",
+              "чего",
+              "пришёл"
             ],
-            "gabarito": "dele (г = в)",
-            "explicacao": "«его» = dele (г = в).",
-            "id": "ru-075-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «что»?",
-            "audio": "что",
-            "opcoes": [
-              "vamos, tá bom",
-              "olá (curto)",
-              "terrível",
-              "que (ч = ш)"
-            ],
-            "gabarito": "que (ч = ш)",
-            "explicacao": "«что» = que (ч = ш).",
-            "id": "ru-075-x18",
+            "gabarito": "Ты чего не пришёл",
+            "explicacao": "Escreva: Ты чего не пришёл",
+            "id": "ru-075-x15",
             "complemento": true
           },
           {
@@ -375,33 +378,30 @@
             "id": "ru-075-e10"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «сегодня»?",
-            "audio": "сегодня",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Щас буду",
             "opcoes": [
-              "que (ч = ш)",
-              "hoje (г = в)",
-              "dele (г = в)",
-              "leite (o = a)"
+              "буду",
+              "Щас"
             ],
-            "gabarito": "hoje (г = в)",
-            "explicacao": "«сегодня» = hoje (г = в).",
-            "id": "ru-075-x19",
+            "gabarito": "Щас буду",
+            "explicacao": "Escreva: Щас буду",
+            "id": "ru-075-x16",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «не бойся»?",
-            "audio": "не бойся",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Сегодня ведь футбол",
             "opcoes": [
-              "olá (curto)",
-              "não tenha medo",
-              "dele (г = в)",
-              "bem (о = а)"
+              "футбол",
+              "Сегодня",
+              "ведь"
             ],
-            "gabarito": "não tenha medo",
-            "explicacao": "«не бойся» = não tenha medo.",
-            "id": "ru-075-x20",
+            "gabarito": "Сегодня ведь футбол",
+            "explicacao": "Escreva: Сегодня ведь футбол",
+            "id": "ru-075-x17",
             "complemento": true
           },
           {
@@ -417,33 +417,40 @@
             "id": "ru-075-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «конечно»?",
-            "audio": "конечно",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Здравствуйте, Борис Иванович",
             "opcoes": [
-              "vamos, tá bom",
-              "você é demais",
-              "claro (чн = шн)",
-              "olá (curto)"
+              "Борис",
+              "Иванович",
+              "Здравствуйте,"
             ],
-            "gabarito": "claro (чн = шн)",
-            "explicacao": "«конечно» = claro (чн = шн).",
-            "id": "ru-075-x21",
+            "gabarito": "Здравствуйте, Борис Иванович",
+            "explicacao": "Escreva: Здравствуйте, Борис Иванович",
+            "id": "ru-075-x18",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «молоко»?",
-            "audio": "молоко",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Только не забудь кошелёк.",
+            "respostaEsperada": "Только не забудь кошелёк.",
+            "explicacao": "Só não esqueça a carteira.",
+            "id": "ru-075-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Молоко и хлеб",
             "opcoes": [
-              "claro (чн = шн)",
-              "hoje (г = в)",
-              "não tenha medo",
-              "leite (o = a)"
+              "хлеб",
+              "Молоко",
+              "и"
             ],
-            "gabarito": "leite (o = a)",
-            "explicacao": "«молоко» = leite (o = a).",
-            "id": "ru-075-x22",
+            "gabarito": "Молоко и хлеб",
+            "explicacao": "Escreva: Молоко и хлеб",
+            "id": "ru-075-x19",
             "complemento": true
           },
           {
@@ -462,29 +469,30 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Ты чего не пришёл",
+            "audio": "Конечно, я согласен",
             "opcoes": [
-              "Ты",
-              "не",
-              "чего",
-              "пришёл"
+              "согласен",
+              "я",
+              "Конечно,"
             ],
-            "gabarito": "Ты чего не пришёл",
-            "explicacao": "Escreva: Ты чего не пришёл",
-            "id": "ru-075-x23",
+            "gabarito": "Конечно, я согласен",
+            "explicacao": "Escreva: Конечно, я согласен",
+            "id": "ru-075-x20",
             "complemento": true
           },
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Щас буду",
+            "audio": "Знаю-знаю, я уже бегу",
             "opcoes": [
-              "буду",
-              "Щас"
+              "бегу",
+              "я",
+              "Знаю-знаю,",
+              "уже"
             ],
-            "gabarito": "Щас буду",
-            "explicacao": "Escreva: Щас буду",
-            "id": "ru-075-x24",
+            "gabarito": "Знаю-знаю, я уже бегу",
+            "explicacao": "Escreva: Знаю-знаю, я уже бегу",
+            "id": "ru-075-x21",
             "complemento": true
           },
           {
@@ -496,31 +504,12 @@
             "id": "ru-075-e13"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Сегодня ведь футбол",
-            "opcoes": [
-              "футбол",
-              "Сегодня",
-              "ведь"
-            ],
-            "gabarito": "Сегодня ведь футбол",
-            "explicacao": "Escreva: Сегодня ведь футбол",
-            "id": "ru-075-x25",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Здравствуйте, Борис Иванович",
-            "opcoes": [
-              "Борис",
-              "Иванович",
-              "Здравствуйте,"
-            ],
-            "gabarito": "Здравствуйте, Борис Иванович",
-            "explicacao": "Escreva: Здравствуйте, Борис Иванович",
-            "id": "ru-075-x26",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ты чего не пришёл",
+            "respostaEsperada": "Ты чего не пришёл",
+            "explicacao": "Escreva: Ты чего не пришёл",
+            "id": "ru-075-x22",
             "complemento": true
           },
           {

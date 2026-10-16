@@ -62,6 +62,18 @@
             "id": "it-018-e03"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Mi piacciono i film italiani.",
+              "Mi piace i film italiani.",
+              "Io piaccio i film italiani."
+            ],
+            "gabarito": "Mi piacciono i film italiani.",
+            "explicacao": "«Piacciono» com plural.",
+            "id": "it-018-e04"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «Bom dia! Sou o Marco, moro no segundo andar. Como a senhora se chama?»",
             "opcoes": [
@@ -83,18 +95,6 @@
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual frase está correta?",
-            "opcoes": [
-              "Mi piacciono i film italiani.",
-              "Mi piace i film italiani.",
-              "Io piaccio i film italiani."
-            ],
-            "gabarito": "Mi piacciono i film italiani.",
-            "explicacao": "«Piacciono» com plural.",
-            "id": "it-018-e04"
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Quanto ___ queste scarpe?",
             "opcoes": [
@@ -105,15 +105,6 @@
             "gabarito": "costano",
             "explicacao": "Plural: «costano».",
             "id": "it-018-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Buongiorno! Sono Marco, abito al secondo piano. Lei come si chiama?",
-            "respostaEsperada": "Buongiorno! Sono Marco, abito al secondo piano. Lei come si chiama?",
-            "explicacao": "Bom dia! Sou o Marco, moro no segundo andar. Como a senhora se chama?",
-            "id": "it-018-x02",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -140,6 +131,15 @@
             "id": "it-018-e07"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Buongiorno! Sono Marco, abito al secondo piano. Lei come si chiama?",
+            "respostaEsperada": "Buongiorno! Sono Marco, abito al secondo piano. Lei come si chiama?",
+            "explicacao": "Bom dia! Sou o Marco, moro no segundo andar. Como a senhora se chama?",
+            "id": "it-018-x02",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Noi ___ al cinema stasera. (andare)",
             "opcoes": [
@@ -150,25 +150,6 @@
             "gabarito": "andiamo",
             "explicacao": "«Noi andiamo».",
             "id": "it-018-e08"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ainda não. Onde fica exatamente? Gosto muito de café.»",
-            "opcoes": [
-              "molto",
-              "ancora.",
-              "piace",
-              "Dov'è",
-              "Mi",
-              "il",
-              "caffè.",
-              "Non",
-              "esattamente?"
-            ],
-            "gabarito": "Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
-            "explicacao": "Escreva: Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
-            "id": "it-018-x03",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -195,6 +176,31 @@
             "id": "it-018-e10"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
+            "respostaEsperada": "Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
+            "explicacao": "Ainda não. Onde fica exatamente? Gosto muito de café.",
+            "id": "it-018-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Lei non è contenta oggi",
+            "opcoes": [
+              "oggi",
+              "non",
+              "contenta",
+              "è",
+              "Lei"
+            ],
+            "gabarito": "Lei non è contenta oggi",
+            "explicacao": "Escreva: Lei non è contenta oggi",
+            "id": "it-018-x03",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -205,15 +211,6 @@
             "gabarito": "Vada dritto e giri a sinistra.",
             "explicacao": "Cortesia com «Lei».",
             "id": "it-018-e11"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
-            "respostaEsperada": "Non ancora. Dov'è esattamente? Mi piace molto il caffè.",
-            "explicacao": "Ainda não. Onde fica exatamente? Gosto muito de café.",
-            "id": "it-018-x04",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -243,6 +240,22 @@
           },
           {
             "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Vorrei un caffè, per favore",
+            "opcoes": [
+              "Vorrei",
+              "un",
+              "favore",
+              "per",
+              "caffè,"
+            ],
+            "gabarito": "Vorrei un caffè, per favore",
+            "explicacao": "Escreva: Vorrei un caffè, per favore",
+            "id": "it-018-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Ieri ho preso l'autobus alle sette.»",
             "opcoes": [
               "Ieri",
@@ -255,25 +268,6 @@
             "gabarito": "Ieri ho preso l'autobus alle sette.",
             "explicacao": "Auxiliar + particípio.",
             "id": "it-018-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Muito obrigada. Vou amanhã de manhã! Quer vir comigo?»",
-            "opcoes": [
-              "mille.",
-              "domani",
-              "me?",
-              "mattina!",
-              "con",
-              "Grazie",
-              "venire",
-              "Vengo",
-              "Vuole"
-            ],
-            "gabarito": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
-            "explicacao": "Escreva: Grazie mille. Vengo domani mattina! Vuole venire con me?",
-            "id": "it-018-x05",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -292,19 +286,27 @@
             "id": "it-018-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
-            "respostaEsperada": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
-            "explicacao": "Muito obrigada. Vou amanhã de manhã! Quer vir comigo?",
-            "id": "it-018-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Eu moro no Brasil. Ontem comprei pão no mercado. Amanhã vou trabalhar.",
             "respostaEsperada": "Abito in Brasile. Ieri ho comprato il pane al mercato. Domani vado a lavorare.",
             "id": "it-018-e17"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Abito a Torino con mia sorella",
+            "opcoes": [
+              "Abito",
+              "Torino",
+              "mia",
+              "sorella",
+              "con",
+              "a"
+            ],
+            "gabarito": "Abito a Torino con mia sorella",
+            "explicacao": "Escreva: Abito a Torino con mia sorella",
+            "id": "it-018-x05",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -331,22 +333,6 @@
             "id": "it-018-e19"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Lei non è contenta oggi",
-            "opcoes": [
-              "oggi",
-              "non",
-              "contenta",
-              "è",
-              "Lei"
-            ],
-            "gabarito": "Lei non è contenta oggi",
-            "explicacao": "Escreva: Lei non è contenta oggi",
-            "id": "it-018-x07",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Mi ___ le scarpe nere. (agradam)",
             "opcoes": [
@@ -357,6 +343,31 @@
             "gabarito": "piacciono",
             "explicacao": "«Scarpe» é plural, então «piacciono».",
             "id": "it-018-e20"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Oggi fa freddo e piove",
+            "opcoes": [
+              "freddo",
+              "piove",
+              "e",
+              "Oggi",
+              "fa"
+            ],
+            "gabarito": "Oggi fa freddo e piove",
+            "explicacao": "Escreva: Oggi fa freddo e piove",
+            "id": "it-018-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
+            "respostaEsperada": "Grazie mille. Vengo domani mattina! Vuole venire con me?",
+            "explicacao": "Muito obrigada. Vou amanhã de manhã! Quer vir comigo?",
+            "id": "it-018-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -383,22 +394,6 @@
             "id": "it-018-e22"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Vorrei un caffè, per favore",
-            "opcoes": [
-              "Vorrei",
-              "un",
-              "favore",
-              "per",
-              "caffè,"
-            ],
-            "gabarito": "Vorrei un caffè, per favore",
-            "explicacao": "Escreva: Vorrei un caffè, per favore",
-            "id": "it-018-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -409,6 +404,15 @@
             "gabarito": "Ho fame.",
             "explicacao": "Sensações usam «avere».",
             "id": "it-018-e23"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Lei non è contenta oggi",
+            "respostaEsperada": "Lei non è contenta oggi",
+            "explicacao": "Escreva: Lei non è contenta oggi",
+            "id": "it-018-x07",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -435,23 +439,6 @@
             "id": "it-018-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Abito a Torino con mia sorella",
-            "opcoes": [
-              "Abito",
-              "Torino",
-              "mia",
-              "sorella",
-              "con",
-              "a"
-            ],
-            "gabarito": "Abito a Torino con mia sorella",
-            "explicacao": "Escreva: Abito a Torino con mia sorella",
-            "id": "it-018-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Sei nadar»?",
             "opcoes": [
@@ -462,6 +449,15 @@
             "gabarito": "So nuotare.",
             "explicacao": "«Sapere» + infinitivo expressa saber fazer.",
             "id": "it-018-e26"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Vorrei un caffè, per favore",
+            "respostaEsperada": "Vorrei un caffè, per favore",
+            "explicacao": "Escreva: Vorrei un caffè, per favore",
+            "id": "it-018-x08",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -480,22 +476,6 @@
             "gabarito": "Ieri sera ho mangiato la pizza con gli amici.",
             "explicacao": "Passato prossimo com «avere» e particípio regular em «-ato».",
             "id": "it-018-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Oggi fa freddo e piove",
-            "opcoes": [
-              "freddo",
-              "piove",
-              "e",
-              "Oggi",
-              "fa"
-            ],
-            "gabarito": "Oggi fa freddo e piove",
-            "explicacao": "Escreva: Oggi fa freddo e piove",
-            "id": "it-018-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

@@ -63,6 +63,22 @@
             "id": "es-032-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "El día en que nos conocimos llovía",
+            "respostaEsperada": "El día en que nos conocimos llovía",
+            "explicacao": "Escreva: El día en que nos conocimos llovía.",
+            "id": "es-032-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "La película que vimos ayer era larga",
+            "respostaEsperada": "La película que vimos ayer era larga",
+            "explicacao": "Escreva: La película que vimos ayer era larga.",
+            "id": "es-032-e05"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "La casa donde vivo es pequeña",
@@ -82,45 +98,18 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "El día en que nos conocimos llovía",
-            "respostaEsperada": "El día en que nos conocimos llovía",
-            "explicacao": "Escreva: El día en que nos conocimos llovía.",
-            "id": "es-032-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "La película que vimos ayer era larga",
-            "respostaEsperada": "La película que vimos ayer era larga",
-            "explicacao": "Escreva: La película que vimos ayer era larga.",
-            "id": "es-032-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "El cine al que vamos está cerca",
             "respostaEsperada": "El cine al que vamos está cerca",
             "explicacao": "Escreva: El cine al que vamos está cerca. «A + el» vira «al».",
             "id": "es-032-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "La chica con la que viajo es de Cádiz",
-            "opcoes": [
-              "con",
-              "viajo",
-              "de",
-              "que",
-              "es",
-              "chica",
-              "Cádiz",
-              "La",
-              "la"
-            ],
-            "gabarito": "La chica con la que viajo es de Cádiz",
-            "explicacao": "Escreva: La chica con la que viajo es de Cádiz",
-            "id": "es-032-x02",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "el libro que leo",
+            "respostaEsperada": "el libro que leo",
+            "explicacao": "o livro que eu leio",
+            "id": "es-032-r01",
             "complemento": true
           },
           {
@@ -162,19 +151,21 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "El libro que leo es muy bueno",
+            "audio": "La chica con la que viajo es de Cádiz",
             "opcoes": [
-              "leo",
-              "libro",
-              "muy",
-              "bueno",
-              "es",
+              "con",
+              "viajo",
+              "de",
               "que",
-              "El"
+              "es",
+              "chica",
+              "Cádiz",
+              "La",
+              "la"
             ],
-            "gabarito": "El libro que leo es muy bueno",
-            "explicacao": "Escreva: El libro que leo es muy bueno",
-            "id": "es-032-x03",
+            "gabarito": "La chica con la que viajo es de Cádiz",
+            "explicacao": "Escreva: La chica con la que viajo es de Cádiz",
+            "id": "es-032-x02",
             "complemento": true
           },
           {
@@ -214,21 +205,12 @@
             "id": "es-032-e12"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "El día en que nos conocimos llovía",
-            "opcoes": [
-              "El",
-              "conocimos",
-              "en",
-              "nos",
-              "llovía",
-              "día",
-              "que"
-            ],
-            "gabarito": "El día en que nos conocimos llovía",
-            "explicacao": "Escreva: El día en que nos conocimos llovía",
-            "id": "es-032-x04",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "el ordenador que compré",
+            "respostaEsperada": "el ordenador que compré",
+            "explicacao": "o computador que comprei (América Latina: la computadora)",
+            "id": "es-032-r02",
             "complemento": true
           },
           {
@@ -242,6 +224,24 @@
             "gabarito": "que",
             "explicacao": "Sujeito plural sem preposição: «que».",
             "id": "es-032-e13"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "El libro que leo es muy bueno",
+            "opcoes": [
+              "leo",
+              "libro",
+              "muy",
+              "bueno",
+              "es",
+              "que",
+              "El"
+            ],
+            "gabarito": "El libro que leo es muy bueno",
+            "explicacao": "Escreva: El libro que leo es muy bueno",
+            "id": "es-032-x03",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -266,24 +266,6 @@
             "gabarito": "en que",
             "explicacao": "Para o tempo, usa-se «en que» depois de «día».",
             "id": "es-032-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "La película que vimos ayer era larga",
-            "opcoes": [
-              "larga",
-              "vimos",
-              "era",
-              "que",
-              "La",
-              "película",
-              "ayer"
-            ],
-            "gabarito": "La película que vimos ayer era larga",
-            "explicacao": "Escreva: La película que vimos ayer era larga",
-            "id": "es-032-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -319,27 +301,36 @@
             "id": "es-032-e17"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "El día en que nos conocimos llovía",
+            "opcoes": [
+              "El",
+              "conocimos",
+              "en",
+              "nos",
+              "llovía",
+              "día",
+              "que"
+            ],
+            "gabarito": "El día en que nos conocimos llovía",
+            "explicacao": "Escreva: El día en que nos conocimos llovía",
+            "id": "es-032-x04",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol: A moça com quem trabalho mora no bairro onde eu nasci.",
             "respostaEsperada": "La chica con la que trabajo vive en el barrio donde nací.",
             "id": "es-032-e18"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "El cine al que vamos está cerca",
-            "opcoes": [
-              "cerca",
-              "está",
-              "El",
-              "al",
-              "vamos",
-              "que",
-              "cine"
-            ],
-            "gabarito": "El cine al que vamos está cerca",
-            "explicacao": "Escreva: El cine al que vamos está cerca",
-            "id": "es-032-x06",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "el restaurante donde cenamos",
+            "respostaEsperada": "el restaurante donde cenamos",
+            "explicacao": "o restaurante onde jantamos (cenar é jantar; «cena» não é cena de filme, que é «escena»)",
+            "id": "es-032-r03",
             "complemento": true
           },
           {
@@ -379,12 +370,21 @@
             "id": "es-032-e21"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "La casa donde vivo es pequeña",
-            "respostaEsperada": "La casa donde vivo es pequeña",
-            "explicacao": "Escreva: La casa donde vivo es pequeña",
-            "id": "es-032-x07",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "La película que vimos ayer era larga",
+            "opcoes": [
+              "larga",
+              "vimos",
+              "era",
+              "que",
+              "La",
+              "película",
+              "ayer"
+            ],
+            "gabarito": "La película que vimos ayer era larga",
+            "explicacao": "Escreva: La película que vimos ayer era larga",
+            "id": "es-032-x05",
             "complemento": true
           },
           {
@@ -424,12 +424,12 @@
             "id": "es-032-e24"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "La chica con la que viajo es de Cádiz",
-            "respostaEsperada": "La chica con la que viajo es de Cádiz",
-            "explicacao": "Escreva: La chica con la que viajo es de Cádiz",
-            "id": "es-032-x08",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "el cine al que vamos",
+            "respostaEsperada": "el cine al que vamos",
+            "explicacao": "o cinema aonde vamos",
+            "id": "es-032-r04",
             "complemento": true
           },
           {
@@ -443,6 +443,24 @@
             "gabarito": "El libro que lo leo es bueno.",
             "explicacao": "O «que» já substitui o objeto; não se repete com «lo».",
             "id": "es-032-e25"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "El cine al que vamos está cerca",
+            "opcoes": [
+              "cerca",
+              "está",
+              "El",
+              "al",
+              "vamos",
+              "que",
+              "cine"
+            ],
+            "gabarito": "El cine al que vamos está cerca",
+            "explicacao": "Escreva: El cine al que vamos está cerca",
+            "id": "es-032-x06",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -472,15 +490,6 @@
             "gabarito": "La persona con quien hablo es mi jefe.",
             "explicacao": "Preposição + «quien» para pessoas.",
             "id": "es-032-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "El libro que leo es muy bueno",
-            "respostaEsperada": "El libro que leo es muy bueno",
-            "explicacao": "Escreva: El libro que leo es muy bueno",
-            "id": "es-032-x09",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

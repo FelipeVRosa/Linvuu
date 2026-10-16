@@ -63,20 +63,6 @@
             "id": "es-008-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia. O que desejam?»",
-            "opcoes": [
-              "¿Qué",
-              "Buenos",
-              "días.",
-              "desean?"
-            ],
-            "gabarito": "Buenos días. ¿Qué desean?",
-            "explicacao": "Escreva: Buenos días. ¿Qué desean?",
-            "id": "es-008-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Quisiera la cuenta",
@@ -93,12 +79,23 @@
             "id": "es-008-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Buenos días. ¿Qué desean?",
-            "respostaEsperada": "Buenos días. ¿Qué desean?",
-            "explicacao": "Bom dia. O que desejam?",
-            "id": "es-008-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Eu queria um café com leite e uma torrada, por favor.»",
+            "opcoes": [
+              "leche",
+              "por",
+              "y",
+              "con",
+              "tostada,",
+              "favor.",
+              "Quisiera",
+              "un",
+              "una",
+              "café"
+            ],
+            "gabarito": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "Escreva: Quisiera un café con leche y una tostada, por favor.",
+            "id": "es-008-x01",
             "complemento": true
           },
           {
@@ -108,6 +105,15 @@
             "respostaEsperada": "Veintiún euros",
             "explicacao": "Escreva: Veintiún euros.",
             "id": "es-008-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Buenos días. ¿Qué desean?",
+            "respostaEsperada": "Buenos días. ¿Qué desean?",
+            "explicacao": "Bom dia. O que desejam?",
+            "id": "es-008-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -134,26 +140,6 @@
             "id": "es-008-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu queria um café com leite e uma torrada, por favor.»",
-            "opcoes": [
-              "leche",
-              "por",
-              "y",
-              "con",
-              "tostada,",
-              "favor.",
-              "Quisiera",
-              "un",
-              "una",
-              "café"
-            ],
-            "gabarito": "Quisiera un café con leche y una tostada, por favor.",
-            "explicacao": "Escreva: Quisiera un café con leche y una tostada, por favor.",
-            "id": "es-008-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a forma mais educada para pedir?",
             "opcoes": [
@@ -164,6 +150,15 @@
             "gabarito": "Quisiera un té.",
             "explicacao": "«Quisiera» é mais educado que «quiero».",
             "id": "es-008-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Quisiera un café con leche y una tostada, por favor.",
+            "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
+            "explicacao": "Eu queria um café com leite e uma torrada, por favor.",
+            "id": "es-008-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -190,15 +185,6 @@
             "id": "es-008-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Quisiera un café con leche y una tostada, por favor.",
-            "respostaEsperada": "Quisiera un café con leche y una tostada, por favor.",
-            "explicacao": "Eu queria um café com leite e uma torrada, por favor.",
-            "id": "es-008-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se pede água num copo?",
             "opcoes": [
@@ -211,6 +197,15 @@
             "id": "es-008-e12"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Muy bien. ¿Algo más?",
+            "respostaEsperada": "Muy bien. ¿Algo más?",
+            "explicacao": "Muito bem. Algo mais?",
+            "id": "es-008-r02",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Yo ___ un café. (querer)",
             "opcoes": [
@@ -221,18 +216,6 @@
             "gabarito": "quiero",
             "explicacao": "Com «yo», «quiero».",
             "id": "es-008-e13"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Ellos ___ la cuenta. (querer)",
-            "opcoes": [
-              "quieren",
-              "quiere",
-              "queremos"
-            ],
-            "gabarito": "quieren",
-            "explicacao": "Com «ellos», «quieren».",
-            "id": "es-008-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -252,8 +235,20 @@
             ],
             "gabarito": "Para mí, un té sin azúcar y un zumo de naranja.",
             "explicacao": "Escreva: Para mí, un té sin azúcar y un zumo de naranja.",
-            "id": "es-008-x05",
+            "id": "es-008-x03",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ellos ___ la cuenta. (querer)",
+            "opcoes": [
+              "quieren",
+              "quiere",
+              "queremos"
+            ],
+            "gabarito": "quieren",
+            "explicacao": "Com «ellos», «quieren».",
+            "id": "es-008-e14"
           },
           {
             "tipo": "fill-gap",
@@ -280,15 +275,6 @@
             "id": "es-008-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Para mí, un té sin azúcar y un zumo de naranja.",
-            "respostaEsperada": "Para mí, un té sin azúcar y un zumo de naranja.",
-            "explicacao": "Para mim, um chá sem açúcar e um suco de laranja.",
-            "id": "es-008-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Hay mucha ___ en el bar. (fila, na Espanha)",
             "opcoes": [
@@ -299,6 +285,15 @@
             "gabarito": "cola",
             "explicacao": "Na Espanha, fila de pessoas é «cola».",
             "id": "es-008-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Para mí, un té sin azúcar y un zumo de naranja.",
+            "respostaEsperada": "Para mí, un té sin azúcar y un zumo de naranja.",
+            "explicacao": "Para mim, um chá sem açúcar e um suco de laranja.",
+            "id": "es-008-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -317,6 +312,15 @@
             "id": "es-008-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "No, nada más, gracias. ¿Nos trae la cuenta?",
+            "respostaEsperada": "No, nada más, gracias. ¿Nos trae la cuenta?",
+            "explicacao": "Não, mais nada, obrigado. A senhora nos traz a conta?",
+            "id": "es-008-r03",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Son siete euros con cuarenta.»",
             "opcoes": [
@@ -329,20 +333,6 @@
             "gabarito": "Son siete euros con cuarenta.",
             "explicacao": "A vírgula se diz «con».",
             "id": "es-008-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Muito bem. Algo mais?»",
-            "opcoes": [
-              "bien.",
-              "¿Algo",
-              "Muy",
-              "más?"
-            ],
-            "gabarito": "Muy bien. ¿Algo más?",
-            "explicacao": "Escreva: Muy bien. ¿Algo más?",
-            "id": "es-008-x07",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -363,6 +353,24 @@
             "id": "es-008-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Aqui estão dez euros. Pode ficar com o troco.»",
+            "opcoes": [
+              "tiene",
+              "el",
+              "cambio.",
+              "euros.",
+              "con",
+              "diez",
+              "Quédese",
+              "Aquí"
+            ],
+            "gabarito": "Aquí tiene diez euros. Quédese con el cambio.",
+            "explicacao": "Escreva: Aquí tiene diez euros. Quédese con el cambio.",
+            "id": "es-008-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Treinta y ___ euros. (um)",
             "opcoes": [
@@ -373,15 +381,6 @@
             "gabarito": "un",
             "explicacao": "«Uno» vira «un» diante de substantivo masculino.",
             "id": "es-008-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Muy bien. ¿Algo más?",
-            "respostaEsperada": "Muy bien. ¿Algo más?",
-            "explicacao": "Muito bem. Algo mais?",
-            "id": "es-008-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -408,6 +407,15 @@
             "id": "es-008-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Son siete euros con cuarenta.",
+            "respostaEsperada": "Son siete euros con cuarenta.",
+            "explicacao": "São sete euros e quarenta.",
+            "id": "es-008-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se escreve 22?",
             "opcoes": [
@@ -420,21 +428,12 @@
             "id": "es-008-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, mais nada, obrigado. A senhora nos traz a conta?»",
-            "opcoes": [
-              "gracias.",
-              "la",
-              "nada",
-              "trae",
-              "cuenta?",
-              "No,",
-              "más,",
-              "¿Nos"
-            ],
-            "gabarito": "No, nada más, gracias. ¿Nos trae la cuenta?",
-            "explicacao": "Escreva: No, nada más, gracias. ¿Nos trae la cuenta?",
-            "id": "es-008-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Aquí tiene diez euros. Quédese con el cambio.",
+            "respostaEsperada": "Aquí tiene diez euros. Quédese con el cambio.",
+            "explicacao": "Aqui estão dez euros. Pode ficar com o troco.",
+            "id": "es-008-x06",
             "complemento": true
           },
           {
@@ -460,15 +459,6 @@
             "gabarito": "quiero",
             "explicacao": "O «e» do radical vira «ie»: «quiero».",
             "id": "es-008-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "No, nada más, gracias. ¿Nos trae la cuenta?",
-            "respostaEsperada": "No, nada más, gracias. ¿Nos trae la cuenta?",
-            "explicacao": "Não, mais nada, obrigado. A senhora nos traz a conta?",
-            "id": "es-008-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

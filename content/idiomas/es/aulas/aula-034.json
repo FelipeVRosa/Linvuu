@@ -475,22 +475,6 @@
               "id": "es-034-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa noite. Em que posso ajudá-lo?»",
-              "opcoes": [
-                "ayudarle?",
-                "Buenas",
-                "puedo",
-                "¿En",
-                "noches.",
-                "qué"
-              ],
-              "gabarito": "Buenas noches. ¿En qué puedo ayudarle?",
-              "explicacao": "Escreva: Buenas noches. ¿En qué puedo ayudarle?",
-              "id": "es-034-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "El vuelo lleva retraso",
@@ -507,12 +491,18 @@
               "id": "es-034-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenas noches. ¿En qué puedo ayudarle?",
-              "respostaEsperada": "Buenas noches. ¿En qué puedo ayudarle?",
-              "explicacao": "Boa noite. Em que posso ajudá-lo?",
-              "id": "es-034-x02",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la reserva»?",
+              "audio": "la reserva",
+              "opcoes": [
+                "a plataforma",
+                "a recepção",
+                "o voo",
+                "a reserva"
+              ],
+              "gabarito": "a reserva",
+              "explicacao": "«la reserva» = a reserva.",
+              "id": "es-034-x01",
               "complemento": true
             },
             {
@@ -522,6 +512,15 @@
               "respostaEsperada": "Quisiera facturar esta maleta",
               "explicacao": "Escreva: Quisiera facturar esta maleta.",
               "id": "es-034-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenas noches. ¿En qué puedo ayudarle?",
+              "respostaEsperada": "Buenas noches. ¿En qué puedo ayudarle?",
+              "explicacao": "Boa noite. Em que posso ajudá-lo?",
+              "id": "es-034-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -548,24 +547,6 @@
               "id": "es-034-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Aqui está. A que horas é o café da manhã?»",
-              "opcoes": [
-                "¿A",
-                "desayuno?",
-                "tiene.",
-                "es",
-                "hora",
-                "qué",
-                "el",
-                "Aquí"
-              ],
-              "gabarito": "Aquí tiene. ¿A qué hora es el desayuno?",
-              "explicacao": "Escreva: Aquí tiene. ¿A qué hora es el desayuno?",
-              "id": "es-034-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «El hotel está completo»?",
               "opcoes": [
@@ -576,6 +557,21 @@
               "gabarito": "O hotel não tem quartos livres.",
               "explicacao": "Falso amigo: «completo» é lotado.",
               "id": "es-034-e09"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la recepción»?",
+              "audio": "la recepción",
+              "opcoes": [
+                "só de ida",
+                "o atraso",
+                "a reserva",
+                "a recepção"
+              ],
+              "gabarito": "a recepção",
+              "explicacao": "«la recepción» = a recepção.",
+              "id": "es-034-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -602,15 +598,6 @@
               "id": "es-034-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Aquí tiene. ¿A qué hora es el desayuno?",
-              "respostaEsperada": "Aquí tiene. ¿A qué hora es el desayuno?",
-              "explicacao": "Aqui está. A que horas é o café da manhã?",
-              "id": "es-034-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "El tren llega ___ las doce y cuarenta.",
               "opcoes": [
@@ -621,6 +608,15 @@
               "gabarito": "a",
               "explicacao": "As horas pedem «a las».",
               "id": "es-034-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Aquí tiene. ¿A qué hora es el desayuno?",
+              "respostaEsperada": "Aquí tiene. ¿A qué hora es el desayuno?",
+              "explicacao": "Aqui está. A que horas é o café da manhã?",
+              "id": "es-034-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -635,6 +631,21 @@
               "id": "es-034-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «el desayuno incluido»?",
+              "audio": "el desayuno incluido",
+              "opcoes": [
+                "a plataforma",
+                "o horário (de trens, de ônibus)",
+                "o quarto duplo",
+                "o café da manhã incluído"
+              ],
+              "gabarito": "o café da manhã incluído",
+              "explicacao": "«el desayuno incluido» = o café da manhã incluído.",
+              "id": "es-034-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Mi maleta no ___ llegado.",
               "opcoes": [
@@ -645,21 +656,6 @@
               "gabarito": "ha",
               "explicacao": "Pretérito perfecto: «ha llegado».",
               "id": "es-034-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Há wifi no quarto?»",
-              "opcoes": [
-                "habitación?",
-                "la",
-                "wifi",
-                "¿Hay",
-                "en"
-              ],
-              "gabarito": "¿Hay wifi en la habitación?",
-              "explicacao": "Escreva: ¿Hay wifi en la habitación?",
-              "id": "es-034-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -690,15 +686,6 @@
               "id": "es-034-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Hay wifi en la habitación?",
-              "respostaEsperada": "¿Hay wifi en la habitación?",
-              "explicacao": "Há wifi no quarto?",
-              "id": "es-034-x06",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Quisiera reservar una habitación doble.»",
               "opcoes": [
@@ -713,10 +700,34 @@
               "id": "es-034-e17"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «el andén»?",
+              "audio": "el andén",
+              "opcoes": [
+                "só de ida",
+                "o café da manhã incluído",
+                "a plataforma",
+                "a recepção"
+              ],
+              "gabarito": "a plataforma",
+              "explicacao": "«el andén» = a plataforma.",
+              "id": "es-034-x04",
+              "complemento": true
+            },
+            {
               "tipo": "producao",
               "enunciado": "Escreva em espanhol: Eu tenho uma reserva no nome de Silva. O café da manhã está incluído?",
               "respostaEsperada": "Tengo una reserva a nombre de Silva. ¿Está incluido el desayuno?",
               "id": "es-034-e18"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Hay wifi en la habitación?",
+              "respostaEsperada": "¿Hay wifi en la habitación?",
+              "explicacao": "Há wifi no quarto?",
+              "id": "es-034-r03",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -729,19 +740,6 @@
               "gabarito": "y",
               "explicacao": "«Ida y vuelta» é a fórmula fixa para ida e volta.",
               "id": "es-034-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perfeito. Muito obrigado.»",
-              "opcoes": [
-                "Muchas",
-                "gracias.",
-                "Perfecto."
-              ],
-              "gabarito": "Perfecto. Muchas gracias.",
-              "explicacao": "Escreva: Perfecto. Muchas gracias.",
-              "id": "es-034-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -768,6 +766,21 @@
               "id": "es-034-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «de ida»?",
+              "audio": "de ida",
+              "opcoes": [
+                "o atraso",
+                "só de ida",
+                "o voo",
+                "a reserva"
+              ],
+              "gabarito": "só de ida",
+              "explicacao": "«de ida» = só de ida.",
+              "id": "es-034-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "La puerta de ___ es la doce.",
               "opcoes": [
@@ -778,15 +791,6 @@
               "gabarito": "embarque",
               "explicacao": "«Puerta de embarque» é o portão de embarque.",
               "id": "es-034-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Perfecto. Muchas gracias.",
-              "respostaEsperada": "Perfecto. Muchas gracias.",
-              "explicacao": "Perfeito. Muito obrigado.",
-              "id": "es-034-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -813,6 +817,15 @@
               "id": "es-034-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Perfecto. Muchas gracias.",
+              "respostaEsperada": "Perfecto. Muchas gracias.",
+              "explicacao": "Perfeito. Muito obrigado.",
+              "id": "es-034-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «el retraso»?",
               "opcoes": [
@@ -826,17 +839,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «la reserva»?",
-              "audio": "la reserva",
+              "enunciado": "O que significa «la habitación doble»?",
+              "audio": "la habitación doble",
               "opcoes": [
-                "a plataforma",
-                "a recepção",
-                "o voo",
-                "a reserva"
+                "o atraso",
+                "só de ida",
+                "o quarto duplo",
+                "o café da manhã incluído"
               ],
-              "gabarito": "a reserva",
-              "explicacao": "«la reserva» = a reserva.",
-              "id": "es-034-x09",
+              "gabarito": "o quarto duplo",
+              "explicacao": "«la habitación doble» = o quarto duplo.",
+              "id": "es-034-x06",
               "complemento": true
             },
             {
@@ -868,21 +881,6 @@
               "gabarito": "¿A qué hora sale el próximo tren a Madrid?",
               "explicacao": "«¿A qué hora…?» pergunta o horário.",
               "id": "es-034-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «la recepción»?",
-              "audio": "la recepción",
-              "opcoes": [
-                "só de ida",
-                "o atraso",
-                "a reserva",
-                "a recepção"
-              ],
-              "gabarito": "a recepção",
-              "explicacao": "«la recepción» = a recepção.",
-              "id": "es-034-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

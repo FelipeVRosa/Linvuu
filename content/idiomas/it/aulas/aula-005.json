@@ -520,24 +520,6 @@
               "id": "it-005-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Giulia, tenho um problema: não tenho a caneta!»",
-              "opcoes": [
-                "problema:",
-                "la",
-                "Giulia,",
-                "non",
-                "ho",
-                "penna!",
-                "un",
-                "ho"
-              ],
-              "gabarito": "Giulia, ho un problema: non ho la penna!",
-              "explicacao": "Escreva: Giulia, ho un problema: non ho la penna!",
-              "id": "it-005-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "l'amica",
@@ -554,12 +536,18 @@
               "id": "it-005-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Giulia, ho un problema: non ho la penna!",
-              "respostaEsperada": "Giulia, ho un problema: non ho la penna!",
-              "explicacao": "Giulia, tenho um problema: não tenho a caneta!",
-              "id": "it-005-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sério? Obrigado! Você é uma amiga fantástica.»",
+              "opcoes": [
+                "Davvero?",
+                "Grazie!",
+                "un'amica",
+                "fantastica.",
+                "Sei"
+              ],
+              "gabarito": "Davvero? Grazie! Sei un'amica fantastica.",
+              "explicacao": "Escreva: Davvero? Grazie! Sei un'amica fantastica.",
+              "id": "it-005-x01",
               "complemento": true
             },
             {
@@ -569,6 +557,15 @@
               "respostaEsperada": "Non c'è una banca",
               "explicacao": "Escreva: Non c'è una banca.",
               "id": "it-005-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Giulia, ho un problema: non ho la penna!",
+              "respostaEsperada": "Giulia, ho un problema: non ho la penna!",
+              "explicacao": "Giulia, tenho um problema: não tenho a caneta!",
+              "id": "it-005-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -595,21 +592,6 @@
               "id": "it-005-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sem problema. Tenho duas canetas.»",
-              "opcoes": [
-                "Ho",
-                "due",
-                "Nessun",
-                "penne.",
-                "problema."
-              ],
-              "gabarito": "Nessun problema. Ho due penne.",
-              "explicacao": "Escreva: Nessun problema. Ho due penne.",
-              "id": "it-005-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o plural de «caffè»?",
               "opcoes": [
@@ -620,6 +602,15 @@
               "gabarito": "caffè",
               "explicacao": "Palavras com acento final não mudam.",
               "id": "it-005-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Davvero? Grazie! Sei un'amica fantastica.",
+              "respostaEsperada": "Davvero? Grazie! Sei un'amica fantastica.",
+              "explicacao": "Sério? Obrigado! Você é uma amiga fantástica.",
+              "id": "it-005-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -646,15 +637,6 @@
               "id": "it-005-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Nessun problema. Ho due penne.",
-              "respostaEsperada": "Nessun problema. Ho due penne.",
-              "explicacao": "Sem problema. Tenho duas canetas.",
-              "id": "it-005-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Ho ___ zaino. (um)",
               "opcoes": [
@@ -665,6 +647,15 @@
               "gabarito": "uno",
               "explicacao": "Antes de «z», o indefinido masculino é «uno».",
               "id": "it-005-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Nessun problema. Ho due penne.",
+              "respostaEsperada": "Nessun problema. Ho due penne.",
+              "explicacao": "Sem problema. Tenho duas canetas.",
+              "id": "it-005-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -679,6 +670,22 @@
               "id": "it-005-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Então estamos prontos para a aula!»",
+              "opcoes": [
+                "lezione!",
+                "pronti",
+                "Allora",
+                "la",
+                "per",
+                "siamo"
+              ],
+              "gabarito": "Allora siamo pronti per la lezione!",
+              "explicacao": "Escreva: Allora siamo pronti per la lezione!",
+              "id": "it-005-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ è la banca? (onde)",
               "opcoes": [
@@ -689,21 +696,6 @@
               "gabarito": "Dov'",
               "explicacao": "«Dov'è la banca?».",
               "id": "it-005-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sério? Obrigado! Você é uma amiga fantástica.»",
-              "opcoes": [
-                "Davvero?",
-                "Grazie!",
-                "un'amica",
-                "fantastica.",
-                "Sei"
-              ],
-              "gabarito": "Davvero? Grazie! Sei un'amica fantastica.",
-              "explicacao": "Escreva: Davvero? Grazie! Sei un'amica fantastica.",
-              "id": "it-005-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -735,19 +727,19 @@
               "id": "it-005-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Davvero? Grazie! Sei un'amica fantastica.",
-              "respostaEsperada": "Davvero? Grazie! Sei un'amica fantastica.",
-              "explicacao": "Sério? Obrigado! Você é uma amiga fantástica.",
-              "id": "it-005-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Na minha cidade não há um cinema, mas há dois bares.",
               "respostaEsperada": "Non c'è un cinema, ma ci sono due bar.",
               "id": "it-005-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Allora siamo pronti per la lezione!",
+              "respostaEsperada": "Allora siamo pronti per la lezione!",
+              "explicacao": "Então estamos prontos para a aula!",
+              "id": "it-005-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -762,6 +754,15 @@
               "id": "it-005-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ecco, una penna blu. Hai anche i libri?",
+              "respostaEsperada": "Ecco, una penna blu. Hai anche i libri?",
+              "explicacao": "Tome, uma caneta azul. Você tem os livros também?",
+              "id": "it-005-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ci sono due ___. (canetas)",
               "opcoes": [
@@ -772,24 +773,6 @@
               "gabarito": "penne",
               "explicacao": "O plural de «-a» é «-e».",
               "id": "it-005-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tome, uma caneta azul. Você tem os livros também?»",
-              "opcoes": [
-                "libri?",
-                "penna",
-                "Ecco,",
-                "Hai",
-                "anche",
-                "blu.",
-                "i",
-                "una"
-              ],
-              "gabarito": "Ecco, una penna blu. Hai anche i libri?",
-              "explicacao": "Escreva: Ecco, una penna blu. Hai anche i libri?",
-              "id": "it-005-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -816,6 +799,21 @@
               "id": "it-005-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «ci sono»?",
+              "audio": "ci sono",
+              "opcoes": [
+                "a janela",
+                "os cafés",
+                "há, tem (vários)",
+                "as amigas"
+              ],
+              "gabarito": "há, tem (vários)",
+              "explicacao": "«ci sono» = há, tem (vários).",
+              "id": "it-005-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Dove ___ i libri? (estão)",
               "opcoes": [
@@ -826,15 +824,6 @@
               "gabarito": "sono",
               "explicacao": "Sujeito plural pede «sono»; para algo conhecido usa-se «essere».",
               "id": "it-005-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ecco, una penna blu. Hai anche i libri?",
-              "respostaEsperada": "Ecco, una penna blu. Hai anche i libri?",
-              "explicacao": "Tome, uma caneta azul. Você tem os livros também?",
-              "id": "it-005-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -861,6 +850,15 @@
               "id": "it-005-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sì, ho i libri e un quaderno.",
+              "respostaEsperada": "Sì, ho i libri e un quaderno.",
+              "explicacao": "Sim, tenho os livros e um caderno.",
+              "id": "it-005-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Há duas janelas»?",
               "opcoes": [
@@ -873,20 +871,18 @@
               "id": "it-005-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, tenho os livros e um caderno.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «le penne»?",
+              "audio": "le penne",
               "opcoes": [
-                "un",
-                "libri",
-                "quaderno.",
-                "e",
-                "Sì,",
-                "i",
-                "ho"
+                "o estudante",
+                "o livro",
+                "a caneta",
+                "as canetas"
               ],
-              "gabarito": "Sì, ho i libri e un quaderno.",
-              "explicacao": "Escreva: Sì, ho i libri e un quaderno.",
-              "id": "it-005-x09",
+              "gabarito": "as canetas",
+              "explicacao": "«le penne» = as canetas.",
+              "id": "it-005-x06",
               "complemento": true
             },
             {
@@ -915,15 +911,6 @@
               "gabarito": "C'è una farmacia vicino a casa.",
               "explicacao": "Singular: «c'è» + artigo indefinido.",
               "id": "it-005-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sì, ho i libri e un quaderno.",
-              "respostaEsperada": "Sì, ho i libri e un quaderno.",
-              "explicacao": "Sim, tenho os livros e um caderno.",
-              "id": "it-005-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

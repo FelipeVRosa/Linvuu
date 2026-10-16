@@ -479,21 +479,6 @@
               "id": "fr-005-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Antoine, onde você trabalha?»",
-              "opcoes": [
-                "où",
-                "?",
-                "tu",
-                "Antoine,",
-                "travailles"
-              ],
-              "gabarito": "Antoine, tu travailles où ?",
-              "explicacao": "Escreva: Antoine, tu travailles où ?",
-              "id": "fr-005-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "J'aime le café",
@@ -510,12 +495,23 @@
               "id": "fr-005-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Antoine, tu travailles où ?",
-              "respostaEsperada": "Antoine, tu travailles où ?",
-              "explicacao": "Antoine, onde você trabalha?",
-              "id": "fr-005-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, gosto muito do meu trabalho. É difícil, mas é interessante.»",
+              "opcoes": [
+                "j'aime",
+                "c'est",
+                "travail.",
+                "C'est",
+                "beaucoup",
+                "intéressant.",
+                "mais",
+                "difficile,",
+                "mon",
+                "Oui,"
+              ],
+              "gabarito": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+              "explicacao": "Escreva: Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+              "id": "fr-005-x01",
               "complemento": true
             },
             {
@@ -525,6 +521,15 @@
               "respostaEsperada": "C'est un bon avocat",
               "explicacao": "Escreva: C'est un bon avocat.",
               "id": "fr-005-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Antoine, tu travailles où ?",
+              "respostaEsperada": "Antoine, tu travailles où ?",
+              "explicacao": "Antoine, onde você trabalha?",
+              "id": "fr-005-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -551,24 +556,6 @@
               "id": "fr-005-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sou médico no hospital. E você?»",
-              "opcoes": [
-                "?",
-                "l'hôpital.",
-                "toi",
-                "suis",
-                "Je",
-                "médecin",
-                "à",
-                "Et"
-              ],
-              "gabarito": "Je suis médecin à l'hôpital. Et toi ?",
-              "explicacao": "Escreva: Je suis médecin à l'hôpital. Et toi ?",
-              "id": "fr-005-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«à + le» forma…",
               "opcoes": [
@@ -579,6 +566,15 @@
               "gabarito": "au",
               "explicacao": "Contração obrigatória.",
               "id": "fr-005-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+              "respostaEsperada": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
+              "explicacao": "Sim, gosto muito do meu trabalho. É difícil, mas é interessante.",
+              "id": "fr-005-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -605,15 +601,6 @@
               "id": "fr-005-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je suis médecin à l'hôpital. Et toi ?",
-              "respostaEsperada": "Je suis médecin à l'hôpital. Et toi ?",
-              "explicacao": "Sou médico no hospital. E você?",
-              "id": "fr-005-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Je parle ___ film. (do)",
               "opcoes": [
@@ -624,6 +611,15 @@
               "gabarito": "du",
               "explicacao": "«de + le = du».",
               "id": "fr-005-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Je suis médecin à l'hôpital. Et toi ?",
+              "respostaEsperada": "Je suis médecin à l'hôpital. Et toi ?",
+              "explicacao": "Sou médico no hospital. E você?",
+              "id": "fr-005-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -638,6 +634,26 @@
               "id": "fr-005-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Eu também gosto do meu trabalho. É uma bela vida!»",
+              "opcoes": [
+                "!",
+                "belle",
+                "aussi,",
+                "une",
+                "travail.",
+                "Moi",
+                "C'est",
+                "j'aime",
+                "mon",
+                "vie"
+              ],
+              "gabarito": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+              "explicacao": "Escreva: Moi aussi, j'aime mon travail. C'est une belle vie !",
+              "id": "fr-005-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "J'ai ___ amis. (amigos)",
               "opcoes": [
@@ -648,25 +664,6 @@
               "gabarito": "des",
               "explicacao": "«Des» é obrigatório.",
               "id": "fr-005-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu sou professora. Meu amigo Paul é engenheiro.»",
-              "opcoes": [
-                "ami",
-                "ingénieur.",
-                "suis",
-                "professeure.",
-                "est",
-                "Paul",
-                "Mon",
-                "Moi,",
-                "je"
-              ],
-              "gabarito": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
-              "explicacao": "Escreva: Moi, je suis professeure. Mon ami Paul est ingénieur.",
-              "id": "fr-005-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -698,19 +695,19 @@
               "id": "fr-005-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
-              "respostaEsperada": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
-              "explicacao": "Eu sou professora. Meu amigo Paul é engenheiro.",
-              "id": "fr-005-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Eu sou estudante. Eu gosto do café. Eu não tenho carro.",
               "respostaEsperada": "Je suis étudiant. J'aime le café. Je n'ai pas de voiture.",
               "id": "fr-005-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+              "respostaEsperada": "Moi aussi, j'aime mon travail. C'est une belle vie !",
+              "explicacao": "Eu também gosto do meu trabalho. É uma bela vida!",
+              "id": "fr-005-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -725,6 +722,15 @@
               "id": "fr-005-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
+              "respostaEsperada": "Moi, je suis professeure. Mon ami Paul est ingénieur.",
+              "explicacao": "Eu sou professora. Meu amigo Paul é engenheiro.",
+              "id": "fr-005-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Elle parle ___ professeur. (do)",
               "opcoes": [
@@ -735,21 +741,6 @@
               "gabarito": "du",
               "explicacao": "«De + le» vira «du».",
               "id": "fr-005-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É um bom trabalho?»",
-              "opcoes": [
-                "un",
-                "?",
-                "travail",
-                "C'est",
-                "bon"
-              ],
-              "gabarito": "C'est un bon travail ?",
-              "explicacao": "Escreva: C'est un bon travail ?",
-              "id": "fr-005-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -776,6 +767,21 @@
               "id": "fr-005-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la voiture»?",
+              "audio": "la voiture",
+              "opcoes": [
+                "advogado",
+                "o carro",
+                "um, uma, uns, umas",
+                "o menino, o garçom"
+              ],
+              "gabarito": "o carro",
+              "explicacao": "«la voiture» = o carro.",
+              "id": "fr-005-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "J'aime ___ maison de Paul. (a)",
               "opcoes": [
@@ -786,15 +792,6 @@
               "gabarito": "la",
               "explicacao": "«Maison» é feminino, e depois de «aimer» o artigo é obrigatório.",
               "id": "fr-005-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "C'est un bon travail ?",
-              "respostaEsperada": "C'est un bon travail ?",
-              "explicacao": "É um bom trabalho?",
-              "id": "fr-005-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -821,6 +818,15 @@
               "id": "fr-005-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "C'est un bon travail ?",
+              "respostaEsperada": "C'est un bon travail ?",
+              "explicacao": "É um bom trabalho?",
+              "id": "fr-005-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -833,23 +839,18 @@
               "id": "fr-005-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, gosto muito do meu trabalho. É difícil, mas é interessante.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «médecin»?",
+              "audio": "médecin",
               "opcoes": [
-                "j'aime",
-                "c'est",
-                "travail.",
-                "C'est",
-                "beaucoup",
-                "intéressant.",
-                "mais",
-                "difficile,",
-                "mon",
-                "Oui,"
+                "o amigo, a amiga",
+                "o livro",
+                "o café",
+                "médico, médica"
               ],
-              "gabarito": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
-              "explicacao": "Escreva: Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
-              "id": "fr-005-x09",
+              "gabarito": "médico, médica",
+              "explicacao": "«médecin» = médico, médica.",
+              "id": "fr-005-x06",
               "complemento": true
             },
             {
@@ -878,15 +879,6 @@
               "gabarito": "Nous parlons des amis de Paul.",
               "explicacao": "«De + les» vira «des».",
               "id": "fr-005-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
-              "respostaEsperada": "Oui, j'aime beaucoup mon travail. C'est difficile, mais c'est intéressant.",
-              "explicacao": "Sim, gosto muito do meu trabalho. É difícil, mas é interessante.",
-              "id": "fr-005-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

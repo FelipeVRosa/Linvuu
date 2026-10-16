@@ -63,27 +63,6 @@
             "id": "es-038-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Camila, é o Hugo. Você está livre no sábado à noite?»",
-            "opcoes": [
-              "Camila,",
-              "soy",
-              "Hugo.",
-              "por",
-              "sábado",
-              "¿Estás",
-              "Hola,",
-              "noche?",
-              "la",
-              "el",
-              "libre"
-            ],
-            "gabarito": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
-            "explicacao": "Escreva: Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
-            "id": "es-038-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
             "audio": "Quedamos a las ocho delante del cine",
@@ -109,12 +88,24 @@
             "id": "es-038-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
-            "respostaEsperada": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
-            "explicacao": "Oi, Camila, é o Hugo. Você está livre no sábado à noite?",
-            "id": "es-038-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Oi, Camila, é o Hugo. Você está livre no sábado à noite?»",
+            "opcoes": [
+              "Camila,",
+              "soy",
+              "Hugo.",
+              "por",
+              "sábado",
+              "¿Estás",
+              "Hola,",
+              "noche?",
+              "la",
+              "el",
+              "libre"
+            ],
+            "gabarito": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "explicacao": "Escreva: Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "id": "es-038-x01",
             "complemento": true
           },
           {
@@ -128,6 +119,15 @@
             "gabarito": "para jantar num restaurante",
             "explicacao": "Leitura: «¿Te apetece ir a cenar?».",
             "id": "es-038-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Creo que sí. ¿Por qué?",
+            "respostaEsperada": "Creo que sí. ¿Por qué?",
+            "explicacao": "Acho que sim. Por quê?",
+            "id": "es-038-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -154,21 +154,6 @@
             "id": "es-038-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Acho que sim. Por quê?»",
-            "opcoes": [
-              "Creo",
-              "sí.",
-              "que",
-              "qué?",
-              "¿Por"
-            ],
-            "gabarito": "Creo que sí. ¿Por qué?",
-            "explicacao": "Escreva: Creo que sí. ¿Por qué?",
-            "id": "es-038-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -179,6 +164,15 @@
             "gabarito": "Gracias por tu ayuda.",
             "explicacao": "Agradecimento pede «por».",
             "id": "es-038-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "respostaEsperada": "Hola, Camila, soy Hugo. ¿Estás libre el sábado por la noche?",
+            "explicacao": "Oi, Camila, é o Hugo. Você está livre no sábado à noite?",
+            "id": "es-038-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -205,15 +199,6 @@
             "id": "es-038-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Creo que sí. ¿Por qué?",
-            "respostaEsperada": "Creo que sí. ¿Por qué?",
-            "explicacao": "Acho que sim. Por quê?",
-            "id": "es-038-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o imperativo de usted do verbo «beber»?",
             "opcoes": [
@@ -224,6 +209,15 @@
             "gabarito": "beba",
             "explicacao": "Verbos em -er: terminação «-a» na forma de usted.",
             "id": "es-038-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Me encantaría. ¿A qué hora quedamos?",
+            "respostaEsperada": "Me encantaría. ¿A qué hora quedamos?",
+            "explicacao": "Eu adoraria. A que horas combinamos?",
+            "id": "es-038-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -238,6 +232,27 @@
             "id": "es-038-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Chama-se La Plaza. Mando para você por mensagem agora mesmo.»",
+            "opcoes": [
+              "por",
+              "Se",
+              "llama",
+              "lo",
+              "mismo.",
+              "Plaza.",
+              "La",
+              "Te",
+              "mando",
+              "mensaje",
+              "ahora"
+            ],
+            "gabarito": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "explicacao": "Escreva: Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "id": "es-038-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ayer ___ al médico. (ir)",
             "opcoes": [
@@ -248,22 +263,6 @@
             "gabarito": "fui",
             "explicacao": "Fato terminado: indefinido de «ir».",
             "id": "es-038-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu adoraria. A que horas combinamos?»",
-            "opcoes": [
-              "hora",
-              "encantaría.",
-              "quedamos?",
-              "¿A",
-              "qué",
-              "Me"
-            ],
-            "gabarito": "Me encantaría. ¿A qué hora quedamos?",
-            "explicacao": "Escreva: Me encantaría. ¿A qué hora quedamos?",
-            "id": "es-038-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -290,15 +289,6 @@
             "id": "es-038-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Me encantaría. ¿A qué hora quedamos?",
-            "respostaEsperada": "Me encantaría. ¿A qué hora quedamos?",
-            "explicacao": "Eu adoraria. A que horas combinamos?",
-            "id": "es-038-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "El libro ___ leo es caro.",
             "opcoes": [
@@ -309,6 +299,15 @@
             "gabarito": "que",
             "explicacao": "Relativo de objeto: «que».",
             "id": "es-038-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "respostaEsperada": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
+            "explicacao": "Chama-se La Plaza. Mando para você por mensagem agora mesmo.",
+            "id": "es-038-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -323,6 +322,15 @@
             "id": "es-038-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Perfecto. ¿Cómo se llama?",
+            "respostaEsperada": "Perfecto. ¿Cómo se llama?",
+            "explicacao": "Perfeito. Como se chama?",
+            "id": "es-038-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Hablo portugués ___ inglés.",
             "opcoes": [
@@ -333,20 +341,6 @@
             "gabarito": "e",
             "explicacao": "O «y» vira «e» antes de som «i».",
             "id": "es-038-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Perfeito. Como se chama?»",
-            "opcoes": [
-              "Perfecto.",
-              "se",
-              "llama?",
-              "¿Cómo"
-            ],
-            "gabarito": "Perfecto. ¿Cómo se llama?",
-            "explicacao": "Escreva: Perfecto. ¿Cómo se llama?",
-            "id": "es-038-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -374,6 +368,25 @@
           },
           {
             "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Desta vez chegarei antes de você, prometo!»",
+            "opcoes": [
+              "prometo!",
+              "tú,",
+              "Esta",
+              "que",
+              "llegaré",
+              "vez",
+              "lo",
+              "¡te",
+              "antes"
+            ],
+            "gabarito": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "explicacao": "Escreva: Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "id": "es-038-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Cuando era pequeño, vivía en el campo.»",
             "opcoes": [
               "Cuando",
@@ -387,15 +400,6 @@
             "gabarito": "Cuando era pequeño, vivía en el campo.",
             "explicacao": "Imperfecto para a infância.",
             "id": "es-038-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Perfecto. ¿Cómo se llama?",
-            "respostaEsperada": "Perfecto. ¿Cómo se llama?",
-            "explicacao": "Perfeito. Como se chama?",
-            "id": "es-038-x08",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -431,6 +435,15 @@
             "id": "es-038-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Gracias. ¿No llegarás tarde, como la última vez?",
+            "respostaEsperada": "Gracias. ¿No llegarás tarde, como la última vez?",
+            "explicacao": "Obrigada. Você não vai chegar tarde, como da última vez?",
+            "id": "es-038-r04",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Quisiera reservar una habitación doble",
@@ -439,24 +452,12 @@
             "id": "es-038-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Chama-se La Plaza. Mando para você por mensagem agora mesmo.»",
-            "opcoes": [
-              "por",
-              "Se",
-              "llama",
-              "lo",
-              "mismo.",
-              "Plaza.",
-              "La",
-              "Te",
-              "mando",
-              "mensaje",
-              "ahora"
-            ],
-            "gabarito": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
-            "explicacao": "Escreva: Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
-            "id": "es-038-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "respostaEsperada": "Esta vez llegaré antes que tú, ¡te lo prometo!",
+            "explicacao": "Desta vez chegarei antes de você, prometo!",
+            "id": "es-038-x06",
             "complemento": true
           },
           {
@@ -474,15 +475,6 @@
             "respostaEsperada": "La casa donde vivo es pequeña",
             "explicacao": "Escreva: La casa donde vivo es pequeña. «Donde» como relativo, sem til.",
             "id": "es-038-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
-            "respostaEsperada": "Se llama La Plaza. Te lo mando por mensaje ahora mismo.",
-            "explicacao": "Chama-se La Plaza. Mando para você por mensagem agora mesmo.",
-            "id": "es-038-x10",
-            "complemento": true
           },
           {
             "tipo": "producao",

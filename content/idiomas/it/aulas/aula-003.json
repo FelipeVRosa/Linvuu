@@ -640,24 +640,6 @@
               "id": "it-003-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, me chamo Elena Rossi. Como a senhora se chama?»",
-              "opcoes": [
-                "mi",
-                "si",
-                "Buongiorno,",
-                "Elena",
-                "chiama?",
-                "Come",
-                "Rossi.",
-                "chiamo"
-              ],
-              "gabarito": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
-              "explicacao": "Escreva: Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
-              "id": "it-003-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Mi chiamo Ana",
@@ -674,12 +656,19 @@
               "id": "it-003-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
-              "respostaEsperada": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
-              "explicacao": "Bom dia, me chamo Elena Rossi. Como a senhora se chama?",
-              "id": "it-003-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Bom dia, senhora. Me chamo Ana. Prazer.»",
+              "opcoes": [
+                "chiamo",
+                "Mi",
+                "Ana.",
+                "signora.",
+                "Buongiorno,",
+                "Piacere."
+              ],
+              "gabarito": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
+              "explicacao": "Escreva: Buongiorno, signora. Mi chiamo Ana. Piacere.",
+              "id": "it-003-x01",
               "complemento": true
             },
             {
@@ -689,6 +678,15 @@
               "respostaEsperada": "Lui ha diciotto anni",
               "explicacao": "Escreva: Lui ha diciotto anni.",
               "id": "it-003-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
+              "respostaEsperada": "Buongiorno, mi chiamo Elena Rossi. Come si chiama?",
+              "explicacao": "Bom dia, me chamo Elena Rossi. Como a senhora se chama?",
+              "id": "it-003-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -715,22 +713,6 @@
               "id": "it-003-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, senhora. Me chamo Ana. Prazer.»",
-              "opcoes": [
-                "chiamo",
-                "Mi",
-                "Ana.",
-                "signora.",
-                "Buongiorno,",
-                "Piacere."
-              ],
-              "gabarito": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
-              "explicacao": "Escreva: Buongiorno, signora. Mi chiamo Ana. Piacere.",
-              "id": "it-003-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual preposição acompanha «Italia»?",
               "opcoes": [
@@ -741,6 +723,15 @@
               "gabarito": "in",
               "explicacao": "País usa «in».",
               "id": "it-003-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
+              "respostaEsperada": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
+              "explicacao": "Bom dia, senhora. Me chamo Ana. Prazer.",
+              "id": "it-003-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -767,15 +758,6 @@
               "id": "it-003-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
-              "respostaEsperada": "Buongiorno, signora. Mi chiamo Ana. Piacere.",
-              "explicacao": "Bom dia, senhora. Me chamo Ana. Prazer.",
-              "id": "it-003-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Noi ___ sedici anni. (temos)",
               "opcoes": [
@@ -786,6 +768,15 @@
               "gabarito": "abbiamo",
               "explicacao": "«noi abbiamo».",
               "id": "it-003-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sto bene, grazie. E Lei?",
+              "respostaEsperada": "Sto bene, grazie. E Lei?",
+              "explicacao": "Vou bem, obrigada. E a senhora?",
+              "id": "it-003-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -800,18 +791,6 @@
               "id": "it-003-e13"
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "___ Ana. (me chamo)",
-              "opcoes": [
-                "Mi chiamo",
-                "Sono chiamo",
-                "Ho"
-              ],
-              "gabarito": "Mi chiamo",
-              "explicacao": "«mi chiamo».",
-              "id": "it-003-e14"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Prazer, Ana. Como vai?»",
               "opcoes": [
@@ -822,8 +801,20 @@
               ],
               "gabarito": "Piacere, Ana. Come sta?",
               "explicacao": "Escreva: Piacere, Ana. Come sta?",
-              "id": "it-003-x05",
+              "id": "it-003-x03",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "___ Ana. (me chamo)",
+              "opcoes": [
+                "Mi chiamo",
+                "Sono chiamo",
+                "Ho"
+              ],
+              "gabarito": "Mi chiamo",
+              "explicacao": "«mi chiamo».",
+              "id": "it-003-e14"
             },
             {
               "tipo": "sentence-ordering",
@@ -854,19 +845,19 @@
               "id": "it-003-e16"
             },
             {
+              "tipo": "producao",
+              "enunciado": "Escreva em italiano: Eu me chamo Carlos. Tenho vinte anos. Moro no Brasil.",
+              "respostaEsperada": "Mi chiamo Carlos. Ho venti anni. Abito in Brasile.",
+              "id": "it-003-e17"
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Piacere, Ana. Come sta?",
               "respostaEsperada": "Piacere, Ana. Come sta?",
               "explicacao": "Prazer, Ana. Como vai?",
-              "id": "it-003-x06",
+              "id": "it-003-x04",
               "complemento": true
-            },
-            {
-              "tipo": "producao",
-              "enunciado": "Escreva em italiano: Eu me chamo Carlos. Tenho vinte anos. Moro no Brasil.",
-              "respostaEsperada": "Mi chiamo Carlos. Ho venti anni. Abito in Brasile.",
-              "id": "it-003-e17"
             },
             {
               "tipo": "fill-gap",
@@ -881,6 +872,15 @@
               "id": "it-003-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Marco, quanti anni hai?",
+              "respostaEsperada": "Marco, quanti anni hai?",
+              "explicacao": "Marco, quantos anos você tem?",
+              "id": "it-003-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Quanti anni ___? (você tem)",
               "opcoes": [
@@ -891,21 +891,6 @@
               "gabarito": "hai",
               "explicacao": "Para «tu», «avere» é «hai».",
               "id": "it-003-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vou bem, obrigada. E a senhora?»",
-              "opcoes": [
-                "Sto",
-                "E",
-                "grazie.",
-                "bene,",
-                "Lei?"
-              ],
-              "gabarito": "Sto bene, grazie. E Lei?",
-              "explicacao": "Escreva: Sto bene, grazie. E Lei?",
-              "id": "it-003-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -932,6 +917,22 @@
               "id": "it-003-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Muito bem, obrigada. Este é o Marco.»",
+              "opcoes": [
+                "Marco.",
+                "grazie.",
+                "bene,",
+                "è",
+                "Molto",
+                "Questo"
+              ],
+              "gabarito": "Molto bene, grazie. Questo è Marco.",
+              "explicacao": "Escreva: Molto bene, grazie. Questo è Marco.",
+              "id": "it-003-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Come ___ chiama? (o senhor)",
               "opcoes": [
@@ -942,15 +943,6 @@
               "gabarito": "si",
               "explicacao": "Na forma de respeito usa-se «si chiama».",
               "id": "it-003-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sto bene, grazie. E Lei?",
-              "respostaEsperada": "Sto bene, grazie. E Lei?",
-              "explicacao": "Vou bem, obrigada. E a senhora?",
-              "id": "it-003-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -977,6 +969,15 @@
               "id": "it-003-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Anche Luca ha diciannove anni.",
+              "respostaEsperada": "Anche Luca ha diciannove anni.",
+              "explicacao": "O Luca também tem dezenove anos.",
+              "id": "it-003-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Moro nos Estados Unidos»?",
               "opcoes": [
@@ -989,19 +990,12 @@
               "id": "it-003-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito bem, obrigada. Este é o Marco.»",
-              "opcoes": [
-                "Marco.",
-                "grazie.",
-                "bene,",
-                "è",
-                "Molto",
-                "Questo"
-              ],
-              "gabarito": "Molto bene, grazie. Questo è Marco.",
-              "explicacao": "Escreva: Molto bene, grazie. Questo è Marco.",
-              "id": "it-003-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Molto bene, grazie. Questo è Marco.",
+              "respostaEsperada": "Molto bene, grazie. Questo è Marco.",
+              "explicacao": "Muito bem, obrigada. Este é o Marco.",
+              "id": "it-003-x06",
               "complemento": true
             },
             {
@@ -1027,15 +1021,6 @@
               "gabarito": "Quanti anni hai?",
               "explicacao": "A idade se pergunta com «avere».",
               "id": "it-003-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Molto bene, grazie. Questo è Marco.",
-              "respostaEsperada": "Molto bene, grazie. Questo è Marco.",
-              "explicacao": "Muito bem, obrigada. Este é o Marco.",
-              "id": "it-003-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

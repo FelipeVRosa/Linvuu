@@ -567,6 +567,14 @@
               "id": "es-031-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Trabajo todos los días",
+              "respostaEsperada": "Trabajo todos los días",
+              "explicacao": "Escreva: Trabajo todos los días. «Todos» concorda com «días».",
+              "id": "es-031-e04"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «deprisa»?",
               "audio": "deprisa",
@@ -584,33 +592,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Trabajo todos los días",
-              "respostaEsperada": "Trabajo todos los días",
-              "explicacao": "Escreva: Trabajo todos los días. «Todos» concorda com «días».",
-              "id": "es-031-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Gracias por tu ayuda",
               "respostaEsperada": "Gracias por tu ayuda",
               "explicacao": "Escreva: Gracias por tu ayuda. Para agradecer, use «por».",
               "id": "es-031-e05"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «para mí»?",
-              "audio": "para mí",
-              "opcoes": [
-                "logo, cedo (não «pronto»)",
-                "demais, excessivo",
-                "bastante, suficiente",
-                "para mim, na minha opinião"
-              ],
-              "gabarito": "para mim, na minha opinião",
-              "explicacao": "«para mí» = para mim, na minha opinião.",
-              "id": "es-031-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -634,6 +619,21 @@
             },
             {
               "tipo": "multiple-choice",
+              "enunciado": "O que significa «para mí»?",
+              "audio": "para mí",
+              "opcoes": [
+                "logo, cedo (não «pronto»)",
+                "demais, excessivo",
+                "bastante, suficiente",
+                "para mim, na minha opinião"
+              ],
+              "gabarito": "para mim, na minha opinião",
+              "explicacao": "«para mí» = para mim, na minha opinião.",
+              "id": "es-031-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
               "enunciado": "Qual é o advérbio de «bueno»?",
               "opcoes": [
                 "bien",
@@ -643,21 +643,6 @@
               "gabarito": "bien",
               "explicacao": "«Bien» é o advérbio de «bueno».",
               "id": "es-031-e08"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «demasiado, demasiada»?",
-              "audio": "demasiado, demasiada",
-              "opcoes": [
-                "todo, toda",
-                "demais, excessivo",
-                "para quê",
-                "por exemplo"
-              ],
-              "gabarito": "demais, excessivo",
-              "explicacao": "«demasiado, demasiada» = demais, excessivo.",
-              "id": "es-031-x03",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -684,6 +669,30 @@
               "id": "es-031-e10"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "un montón de",
+              "respostaEsperada": "un montón de",
+              "explicacao": "um monte de",
+              "id": "es-031-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «demasiado, demasiada»?",
+              "audio": "demasiado, demasiada",
+              "opcoes": [
+                "todo, toda",
+                "demais, excessivo",
+                "para quê",
+                "por exemplo"
+              ],
+              "gabarito": "demais, excessivo",
+              "explicacao": "«demasiado, demasiada» = demais, excessivo.",
+              "id": "es-031-x03",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Estou pronto»?",
               "opcoes": [
@@ -694,21 +703,6 @@
               "gabarito": "Estoy listo.",
               "explicacao": "«Pronto» em espanhol é em breve ou cedo.",
               "id": "es-031-e11"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «un poco de»?",
-              "audio": "un poco de",
-              "opcoes": [
-                "um pouco de",
-                "todo, toda",
-                "finalmente",
-                "pouco"
-              ],
-              "gabarito": "um pouco de",
-              "explicacao": "«un poco de» = um pouco de.",
-              "id": "es-031-x04",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -735,6 +729,21 @@
               "id": "es-031-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «un poco de»?",
+              "audio": "un poco de",
+              "opcoes": [
+                "um pouco de",
+                "todo, toda",
+                "finalmente",
+                "pouco"
+              ],
+              "gabarito": "um pouco de",
+              "explicacao": "«un poco de» = um pouco de.",
+              "id": "es-031-x04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Es ___ caro. (caro demais)",
               "opcoes": [
@@ -745,21 +754,6 @@
               "gabarito": "demasiado",
               "explicacao": "Antes de adjetivo, «demasiado» fica invariável.",
               "id": "es-031-e14"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «por eso»?",
-              "audio": "por eso",
-              "opcoes": [
-                "por exemplo",
-                "para quê",
-                "por isso",
-                "lentamente"
-              ],
-              "gabarito": "por isso",
-              "explicacao": "«por eso» = por isso.",
-              "id": "es-031-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -786,21 +780,6 @@
               "id": "es-031-e16"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «por ejemplo»?",
-              "audio": "por ejemplo",
-              "opcoes": [
-                "demais, excessivo",
-                "finalmente",
-                "depressa",
-                "por exemplo"
-              ],
-              "gabarito": "por exemplo",
-              "explicacao": "«por ejemplo» = por exemplo.",
-              "id": "es-031-x06",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Pago diez euros por el libro.»",
               "opcoes": [
@@ -814,6 +793,21 @@
               "gabarito": "Pago diez euros por el libro.",
               "explicacao": "O preço pede «por».",
               "id": "es-031-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «por eso»?",
+              "audio": "por eso",
+              "opcoes": [
+                "por exemplo",
+                "para quê",
+                "por isso",
+                "lentamente"
+              ],
+              "gabarito": "por isso",
+              "explicacao": "«por eso» = por isso.",
+              "id": "es-031-x05",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -836,23 +830,6 @@
               "id": "es-031-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Hay demasiada gente en el metro",
-              "opcoes": [
-                "gente",
-                "demasiada",
-                "Hay",
-                "metro",
-                "en",
-                "el"
-              ],
-              "gabarito": "Hay demasiada gente en el metro",
-              "explicacao": "Escreva: Hay demasiada gente en el metro",
-              "id": "es-031-x07",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Este regalo es ___ ti. (destinatário)",
               "opcoes": [
@@ -863,6 +840,30 @@
               "gabarito": "para",
               "explicacao": "«Para» indica o destinatário.",
               "id": "es-031-e20"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «por ejemplo»?",
+              "audio": "por ejemplo",
+              "opcoes": [
+                "demais, excessivo",
+                "finalmente",
+                "depressa",
+                "por exemplo"
+              ],
+              "gabarito": "por exemplo",
+              "explicacao": "«por ejemplo» = por exemplo.",
+              "id": "es-031-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "un poco de",
+              "respostaEsperada": "un poco de",
+              "explicacao": "um pouco de",
+              "id": "es-031-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -889,21 +890,6 @@
               "id": "es-031-e22"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Estudio para aprender español",
-              "opcoes": [
-                "aprender",
-                "Estudio",
-                "para",
-                "español"
-              ],
-              "gabarito": "Estudio para aprender español",
-              "explicacao": "Escreva: Estudio para aprender español",
-              "id": "es-031-x08",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "El informe es ___ el lunes. (prazo)",
               "opcoes": [
@@ -914,6 +900,23 @@
               "gabarito": "para",
               "explicacao": "«Para» indica prazo.",
               "id": "es-031-e23"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Hay demasiada gente en el metro",
+              "opcoes": [
+                "gente",
+                "demasiada",
+                "Hay",
+                "metro",
+                "en",
+                "el"
+              ],
+              "gabarito": "Hay demasiada gente en el metro",
+              "explicacao": "Escreva: Hay demasiada gente en el metro",
+              "id": "es-031-x07",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -940,21 +943,6 @@
               "id": "es-031-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Habla lenta y claramente",
-              "opcoes": [
-                "lenta",
-                "Habla",
-                "claramente",
-                "y"
-              ],
-              "gabarito": "Habla lenta y claramente",
-              "explicacao": "Escreva: Habla lenta y claramente",
-              "id": "es-031-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual palavra quer dizer «cedo, logo»?",
               "opcoes": [
@@ -965,6 +953,21 @@
               "gabarito": "pronto",
               "explicacao": "«Pronto» é cedo ou logo; «listo» é pronto, preparado.",
               "id": "es-031-e26"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Estudio para aprender español",
+              "opcoes": [
+                "aprender",
+                "Estudio",
+                "para",
+                "español"
+              ],
+              "gabarito": "Estudio para aprender español",
+              "explicacao": "Escreva: Estudio para aprender español",
+              "id": "es-031-x08",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -980,21 +983,6 @@
               "gabarito": "Estudio español para viajar a Madrid.",
               "explicacao": "«Para» + infinitivo indica finalidade.",
               "id": "es-031-e27"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Trabajo todos los días",
-              "opcoes": [
-                "Trabajo",
-                "días",
-                "los",
-                "todos"
-              ],
-              "gabarito": "Trabajo todos los días",
-              "explicacao": "Escreva: Trabajo todos los días",
-              "id": "es-031-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

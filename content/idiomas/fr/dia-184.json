@@ -63,6 +63,22 @@
             "id": "fr-046-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Je ne pense pas qu'il soit malade",
+            "respostaEsperada": "Je ne pense pas qu'il soit malade",
+            "explicacao": "Escreva: Je ne pense pas qu'il soit malade.",
+            "id": "fr-046-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Avant qu'il parte, je lui parle",
+            "respostaEsperada": "Avant qu'il parte, je lui parle",
+            "explicacao": "Escreva: Avant qu'il parte, je lui parle.",
+            "id": "fr-046-e05"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «Espero que você tenha terminado antes do fim do mês.»",
             "opcoes": [
@@ -85,35 +101,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Je ne pense pas qu'il soit malade",
-            "respostaEsperada": "Je ne pense pas qu'il soit malade",
-            "explicacao": "Escreva: Je ne pense pas qu'il soit malade.",
-            "id": "fr-046-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Avant qu'il parte, je lui parle",
-            "respostaEsperada": "Avant qu'il parte, je lui parle",
-            "explicacao": "Escreva: Avant qu'il parte, je lui parle.",
-            "id": "fr-046-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "J'espère que tu auras fini avant la fin du mois.",
-            "respostaEsperada": "J'espère que tu auras fini avant la fin du mois.",
-            "explicacao": "Espero que você tenha terminado antes do fim do mês.",
-            "id": "fr-046-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Je reste jusqu'à ce que tu viennes",
             "respostaEsperada": "Je reste jusqu'à ce que tu viennes",
             "explicacao": "Escreva: Je reste jusqu'à ce que tu viennes.",
             "id": "fr-046-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "être content que",
+            "respostaEsperada": "être content que",
+            "explicacao": "estar contente que",
+            "id": "fr-046-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -141,21 +141,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «certain»?",
-            "audio": "certain",
-            "opcoes": [
-              "provável",
-              "a menos que",
-              "ter medo que",
-              "certo"
-            ],
-            "gabarito": "certo",
-            "explicacao": "«certain» = certo.",
-            "id": "fr-046-x03",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
               "Je ne pense pas qu'il soit malade.",
@@ -165,6 +150,15 @@
             "gabarito": "Je ne pense pas qu'il soit malade.",
             "explicacao": "Negação: subjuntivo.",
             "id": "fr-046-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "J'espère que tu auras fini avant la fin du mois.",
+            "respostaEsperada": "J'espère que tu auras fini avant la fin du mois.",
+            "explicacao": "Espero que você tenha terminado antes do fim do mês.",
+            "id": "fr-046-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -191,21 +185,6 @@
             "id": "fr-046-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «regretter que»?",
-            "audio": "regretter que",
-            "opcoes": [
-              "estar triste que",
-              "até que",
-              "provável",
-              "lamentar que"
-            ],
-            "gabarito": "lamentar que",
-            "explicacao": "«regretter que» = lamentar que.",
-            "id": "fr-046-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Je suis sûr qu'il ___ . (venir)",
             "opcoes": [
@@ -216,6 +195,15 @@
             "gabarito": "viendra",
             "explicacao": "Certeza.",
             "id": "fr-046-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "avoir peur que",
+            "respostaEsperada": "avoir peur que",
+            "explicacao": "ter medo que",
+            "id": "fr-046-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -230,6 +218,21 @@
             "id": "fr-046-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «certain»?",
+            "audio": "certain",
+            "opcoes": [
+              "provável",
+              "a menos que",
+              "ter medo que",
+              "certo"
+            ],
+            "gabarito": "certo",
+            "explicacao": "«certain» = certo.",
+            "id": "fr-046-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je viens, à moins qu'il ___ un problème.",
             "opcoes": [
@@ -240,21 +243,6 @@
             "gabarito": "y ait",
             "explicacao": "«À moins que» + subjuntivo.",
             "id": "fr-046-e14"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «sans que»?",
-            "audio": "sans que",
-            "opcoes": [
-              "duvidoso",
-              "antes que",
-              "provável",
-              "sem que"
-            ],
-            "gabarito": "sem que",
-            "explicacao": "«sans que» = sem que.",
-            "id": "fr-046-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -286,25 +274,25 @@
             "id": "fr-046-e16"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «avant que»?",
-            "audio": "avant que",
-            "opcoes": [
-              "seguro",
-              "provável",
-              "embora",
-              "antes que"
-            ],
-            "gabarito": "antes que",
-            "explicacao": "«avant que» = antes que.",
-            "id": "fr-046-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Espero que você venha. Não acho que ele esteja doente. Embora chova, eu saio.",
             "respostaEsperada": "J'espère que tu viendras. Je ne pense pas qu'il soit malade. Bien qu'il pleuve, je sors.",
             "id": "fr-046-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «regretter que»?",
+            "audio": "regretter que",
+            "opcoes": [
+              "estar triste que",
+              "até que",
+              "provável",
+              "lamentar que"
+            ],
+            "gabarito": "lamentar que",
+            "explicacao": "«regretter que» = lamentar que.",
+            "id": "fr-046-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -319,6 +307,15 @@
             "id": "fr-046-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "je ne pense pas que",
+            "respostaEsperada": "je ne pense pas que",
+            "explicacao": "não acho que",
+            "id": "fr-046-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je doute qu'il ___ la vérité. (savoir)",
             "opcoes": [
@@ -329,21 +326,6 @@
             "gabarito": "sache",
             "explicacao": "«Douter que» + subjuntivo; «savoir» → «sache».",
             "id": "fr-046-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «évident»?",
-            "audio": "évident",
-            "opcoes": [
-              "duvidar que",
-              "contanto que",
-              "evidente",
-              "estar triste que"
-            ],
-            "gabarito": "evidente",
-            "explicacao": "«évident» = evidente.",
-            "id": "fr-046-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -370,6 +352,21 @@
             "id": "fr-046-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «sans que»?",
+            "audio": "sans que",
+            "opcoes": [
+              "duvidoso",
+              "antes que",
+              "provável",
+              "sem que"
+            ],
+            "gabarito": "sem que",
+            "explicacao": "«sans que» = sem que.",
+            "id": "fr-046-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Après qu'il ___ arrivé, nous avons mangé. (être)",
             "opcoes": [
@@ -380,21 +377,6 @@
             "gabarito": "est",
             "explicacao": "«Après que» pede indicativo.",
             "id": "fr-046-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «sûr»?",
-            "audio": "sûr",
-            "opcoes": [
-              "seguro",
-              "evidente",
-              "antes que",
-              "contanto que"
-            ],
-            "gabarito": "seguro",
-            "explicacao": "«sûr» = seguro.",
-            "id": "fr-046-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -421,6 +403,15 @@
             "id": "fr-046-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "à moins que",
+            "respostaEsperada": "à moins que",
+            "explicacao": "a menos que",
+            "id": "fr-046-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Com o mesmo sujeito, qual frase está correta?",
             "opcoes": [
@@ -433,17 +424,18 @@
             "id": "fr-046-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "J'espère qu'il viendra",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «avant que»?",
+            "audio": "avant que",
             "opcoes": [
-              "viendra",
-              "J'espère",
-              "qu'il"
+              "seguro",
+              "provável",
+              "embora",
+              "antes que"
             ],
-            "gabarito": "J'espère qu'il viendra",
-            "explicacao": "Escreva: J'espère qu'il viendra",
-            "id": "fr-046-x09",
+            "gabarito": "antes que",
+            "explicacao": "«avant que» = antes que.",
+            "id": "fr-046-x06",
             "complemento": true
           },
           {
@@ -470,24 +462,6 @@
             "gabarito": "Je regrette qu'il parte.",
             "explicacao": "«Regretter que» + subjuntivo.",
             "id": "fr-046-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Je ne pense pas qu'il soit malade",
-            "opcoes": [
-              "pense",
-              "soit",
-              "Je",
-              "malade",
-              "qu'il",
-              "ne",
-              "pas"
-            ],
-            "gabarito": "Je ne pense pas qu'il soit malade",
-            "explicacao": "Escreva: Je ne pense pas qu'il soit malade",
-            "id": "fr-046-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

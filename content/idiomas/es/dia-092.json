@@ -63,20 +63,6 @@
             "id": "es-023-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Como ele é? É grande?»",
-            "opcoes": [
-              "¿Es",
-              "es?",
-              "grande?",
-              "¿Cómo"
-            ],
-            "gabarito": "¿Cómo es? ¿Es grande?",
-            "explicacao": "Escreva: ¿Cómo es? ¿Es grande?",
-            "id": "es-023-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Lo he visto en la calle",
@@ -93,12 +79,23 @@
             "id": "es-023-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Cómo es? ¿Es grande?",
-            "respostaEsperada": "¿Cómo es? ¿Es grande?",
-            "explicacao": "Como ele é? É grande?",
-            "id": "es-023-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «É preto e bastante grande. Eu o deixei no assento.»",
+            "opcoes": [
+              "Es",
+              "negro",
+              "asiento.",
+              "bastante",
+              "y",
+              "dejé",
+              "el",
+              "grande.",
+              "en",
+              "Lo"
+            ],
+            "gabarito": "Es negro y bastante grande. Lo dejé en el asiento.",
+            "explicacao": "Escreva: Es negro y bastante grande. Lo dejé en el asiento.",
+            "id": "es-023-x01",
             "complemento": true
           },
           {
@@ -108,6 +105,15 @@
             "respostaEsperada": "¿Me esperas aquí?",
             "explicacao": "Escreva: ¿Me esperas aquí? O pronome fica antes do verbo.",
             "id": "es-023-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Cómo es? ¿Es grande?",
+            "respostaEsperada": "¿Cómo es? ¿Es grande?",
+            "explicacao": "Como ele é? É grande?",
+            "id": "es-023-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -134,26 +140,6 @@
             "id": "es-023-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «É preto e bastante grande. Eu o deixei no assento.»",
-            "opcoes": [
-              "Es",
-              "negro",
-              "asiento.",
-              "bastante",
-              "y",
-              "dejé",
-              "el",
-              "grande.",
-              "en",
-              "Lo"
-            ],
-            "gabarito": "Es negro y bastante grande. Lo dejé en el asiento.",
-            "explicacao": "Escreva: Es negro y bastante grande. Lo dejé en el asiento.",
-            "id": "es-023-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Eu o vi»?",
             "opcoes": [
@@ -164,6 +150,15 @@
             "gabarito": "Lo vi.",
             "explicacao": "O pronome vem antes do verbo e sem hífen.",
             "id": "es-023-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Es negro y bastante grande. Lo dejé en el asiento.",
+            "respostaEsperada": "Es negro y bastante grande. Lo dejé en el asiento.",
+            "explicacao": "É preto e bastante grande. Eu o deixei no assento.",
+            "id": "es-023-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -190,15 +185,6 @@
             "id": "es-023-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Es negro y bastante grande. Lo dejé en el asiento.",
-            "respostaEsperada": "Es negro y bastante grande. Lo dejé en el asiento.",
-            "explicacao": "É preto e bastante grande. Eu o deixei no assento.",
-            "id": "es-023-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «Lo siento»?",
             "opcoes": [
@@ -211,6 +197,15 @@
             "id": "es-023-e12"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Aquí están. ¿Las reconoce?",
+            "respostaEsperada": "Aquí están. ¿Las reconoce?",
+            "explicacao": "Aqui estão. O senhor os reconhece?",
+            "id": "es-023-r02",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «cola» em «la cola del banco»?",
             "opcoes": [
@@ -221,18 +216,6 @@
             "gabarito": "fila",
             "explicacao": "Em espanhol «cola» pode ser a fila.",
             "id": "es-023-e13"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "¿Ves a Ana? — Sí, ___ veo.",
-            "opcoes": [
-              "la",
-              "lo",
-              "le"
-            ],
-            "gabarito": "la",
-            "explicacao": "Ana é feminino singular: «la».",
-            "id": "es-023-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -251,8 +234,20 @@
             ],
             "gabarito": "Son rojas y tienen el cristal izquierdo un poco rayado.",
             "explicacao": "Escreva: Son rojas y tienen el cristal izquierdo un poco rayado.",
-            "id": "es-023-x05",
+            "id": "es-023-x03",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "¿Ves a Ana? — Sí, ___ veo.",
+            "opcoes": [
+              "la",
+              "lo",
+              "le"
+            ],
+            "gabarito": "la",
+            "explicacao": "Ana é feminino singular: «la».",
+            "id": "es-023-e14"
           },
           {
             "tipo": "fill-gap",
@@ -279,15 +274,6 @@
             "id": "es-023-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Son rojas y tienen el cristal izquierdo un poco rayado.",
-            "respostaEsperada": "Son rojas y tienen el cristal izquierdo un poco rayado.",
-            "explicacao": "São vermelhos e têm a lente esquerda um pouco riscada.",
-            "id": "es-023-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Quiero ver___ mañana. (la película)",
             "opcoes": [
@@ -298,6 +284,15 @@
             "gabarito": "la",
             "explicacao": "O pronome se cola ao infinitivo: «verla».",
             "id": "es-023-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Son rojas y tienen el cristal izquierdo un poco rayado.",
+            "respostaEsperada": "Son rojas y tienen el cristal izquierdo un poco rayado.",
+            "explicacao": "São vermelhos e têm a lente esquerda um pouco riscada.",
+            "id": "es-023-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -312,6 +307,15 @@
             "id": "es-023-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
+            "respostaEsperada": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
+            "explicacao": "Sim, são meus. Muito obrigado. E o guarda-chuva?",
+            "id": "es-023-r03",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Lo compré ayer.»",
             "opcoes": [
@@ -322,20 +326,6 @@
             "gabarito": "Lo compré ayer.",
             "explicacao": "O pronome vem antes do verbo conjugado.",
             "id": "es-023-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Aqui estão. O senhor os reconhece?»",
-            "opcoes": [
-              "¿Las",
-              "Aquí",
-              "están.",
-              "reconoce?"
-            ],
-            "gabarito": "Aquí están. ¿Las reconoce?",
-            "explicacao": "Escreva: Aquí están. ¿Las reconoce?",
-            "id": "es-023-x07",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -356,6 +346,21 @@
             "id": "es-023-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la caja»?",
+            "audio": "la caja",
+            "opcoes": [
+              "a caixa",
+              "o guarda-chuva",
+              "acompanhar",
+              "o assento"
+            ],
+            "gabarito": "a caixa",
+            "explicacao": "«la caja» = a caixa.",
+            "id": "es-023-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "¿Tienes las gafas? — Sí, ___ tengo.",
             "opcoes": [
@@ -366,15 +371,6 @@
             "gabarito": "las",
             "explicacao": "«Las gafas» é feminino plural: «las».",
             "id": "es-023-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Aquí están. ¿Las reconoce?",
-            "respostaEsperada": "Aquí están. ¿Las reconoce?",
-            "explicacao": "Aqui estão. O senhor os reconhece?",
-            "id": "es-023-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -401,6 +397,15 @@
             "id": "es-023-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Si aparece, lo guardamos y lo llamamos por teléfono.",
+            "respostaEsperada": "Si aparece, lo guardamos y lo llamamos por teléfono.",
+            "explicacao": "Se aparecer, nós o guardamos e ligamos para o senhor.",
+            "id": "es-023-r04",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "A la señora Ruiz, ___ llamo mañana.",
             "opcoes": [
@@ -413,21 +418,18 @@
             "id": "es-023-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, são meus. Muito obrigado. E o guarda-chuva?»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «buscar»?",
+            "audio": "buscar",
             "opcoes": [
-              "¿Y",
-              "Sí,",
-              "Muchas",
-              "gracias.",
-              "mías.",
-              "paraguas?",
-              "son",
-              "el"
+              "visitar",
+              "quebrado, rasgado",
+              "acompanhar",
+              "procurar, buscar"
             ],
-            "gabarito": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
-            "explicacao": "Escreva: Sí, son mías. Muchas gracias. ¿Y el paraguas?",
-            "id": "es-023-x09",
+            "gabarito": "procurar, buscar",
+            "explicacao": "«buscar» = procurar, buscar.",
+            "id": "es-023-x06",
             "complemento": true
           },
           {
@@ -453,15 +455,6 @@
             "gabarito": "Quiero verla.",
             "explicacao": "O pronome se cola ao infinitivo, sem hífen.",
             "id": "es-023-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
-            "respostaEsperada": "Sí, son mías. Muchas gracias. ¿Y el paraguas?",
-            "explicacao": "Sim, são meus. Muito obrigado. E o guarda-chuva?",
-            "id": "es-023-x10",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",

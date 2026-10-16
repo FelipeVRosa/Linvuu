@@ -63,22 +63,6 @@
             "id": "it-011-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Com licença, senhora, para ir ao centro?»",
-            "opcoes": [
-              "andare",
-              "Scusi,",
-              "in",
-              "per",
-              "centro?",
-              "signora,"
-            ],
-            "gabarito": "Scusi, signora, per andare in centro?",
-            "explicacao": "Escreva: Scusi, signora, per andare in centro?",
-            "id": "it-011-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "La banca è vicino alla posta",
@@ -95,12 +79,22 @@
             "id": "it-011-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Scusi, signora, per andare in centro?",
-            "respostaEsperada": "Scusi, signora, per andare in centro?",
-            "explicacao": "Com licença, senhora, para ir ao centro?",
-            "id": "it-011-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, fica ao lado da igreja, em frente ao museu.»",
+            "opcoes": [
+              "è",
+              "Sì,",
+              "museo.",
+              "accanto",
+              "alla",
+              "chiesa,",
+              "al",
+              "fronte",
+              "di"
+            ],
+            "gabarito": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "explicacao": "Escreva: Sì, è accanto alla chiesa, di fronte al museo.",
+            "id": "it-011-x01",
             "complemento": true
           },
           {
@@ -110,6 +104,15 @@
             "respostaEsperada": "Vado al lavoro in autobus",
             "explicacao": "Escreva: Vado al lavoro in autobus.",
             "id": "it-011-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Scusi, signora, per andare in centro?",
+            "respostaEsperada": "Scusi, signora, per andare in centro?",
+            "explicacao": "Com licença, senhora, para ir ao centro?",
+            "id": "it-011-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -136,25 +139,6 @@
             "id": "it-011-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Siga reto até o semáforo e depois vire à esquerda.»",
-            "opcoes": [
-              "fino",
-              "a",
-              "Vada",
-              "dritto",
-              "poi",
-              "sinistra.",
-              "al",
-              "semaforo,",
-              "giri"
-            ],
-            "gabarito": "Vada dritto fino al semaforo, poi giri a sinistra.",
-            "explicacao": "Escreva: Vada dritto fino al semaforo, poi giri a sinistra.",
-            "id": "it-011-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase usa o transporte corretamente?",
             "opcoes": [
@@ -165,6 +149,15 @@
             "gabarito": "Vado in treno.",
             "explicacao": "«In» sem artigo.",
             "id": "it-011-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "respostaEsperada": "Sì, è accanto alla chiesa, di fronte al museo.",
+            "explicacao": "Sim, fica ao lado da igreja, em frente ao museu.",
+            "id": "it-011-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -191,15 +184,6 @@
             "id": "it-011-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Vada dritto fino al semaforo, poi giri a sinistra.",
-            "respostaEsperada": "Vada dritto fino al semaforo, poi giri a sinistra.",
-            "explicacao": "Siga reto até o semáforo e depois vire à esquerda.",
-            "id": "it-011-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Il museo è ___ dal centro. (longe)",
             "opcoes": [
@@ -210,6 +194,15 @@
             "gabarito": "lontano",
             "explicacao": "«Lontano da».",
             "id": "it-011-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Vada dritto fino al semaforo, poi giri a sinistra.",
+            "respostaEsperada": "Vada dritto fino al semaforo, poi giri a sinistra.",
+            "explicacao": "Siga reto até o semáforo e depois vire à esquerda.",
+            "id": "it-011-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -224,6 +217,21 @@
             "id": "it-011-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la strada»?",
+            "audio": "la strada",
+            "opcoes": [
+              "a pé",
+              "a rua, a estrada",
+              "a estação",
+              "o hospital"
+            ],
+            "gabarito": "a rua, a estrada",
+            "explicacao": "«la strada» = a rua, a estrada.",
+            "id": "it-011-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ci ___ un'ora in treno.",
             "opcoes": [
@@ -234,23 +242,6 @@
             "gabarito": "vuole",
             "explicacao": "Singular: «un'ora».",
             "id": "it-011-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «É longe? Demora muito a pé?»",
-            "opcoes": [
-              "È",
-              "lontano?",
-              "molto",
-              "vuole",
-              "a",
-              "Ci",
-              "piedi?"
-            ],
-            "gabarito": "È lontano? Ci vuole molto a piedi?",
-            "explicacao": "Escreva: È lontano? Ci vuole molto a piedi?",
-            "id": "it-011-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -281,19 +272,25 @@
             "id": "it-011-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "È lontano? Ci vuole molto a piedi?",
-            "respostaEsperada": "È lontano? Ci vuole molto a piedi?",
-            "explicacao": "É longe? Demora muito a pé?",
-            "id": "it-011-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: A farmácia fica em frente ao museu. Siga reto e vire à esquerda.",
             "respostaEsperada": "La farmacia è di fronte al museo. Vada dritto e giri a sinistra.",
             "id": "it-011-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il biglietto»?",
+            "audio": "il biglietto",
+            "opcoes": [
+              "a estação",
+              "o bilhete",
+              "a pé",
+              "o correio"
+            ],
+            "gabarito": "o bilhete",
+            "explicacao": "«il biglietto» = o bilhete.",
+            "id": "it-011-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -308,6 +305,15 @@
             "id": "it-011-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "È lontano? Ci vuole molto a piedi?",
+            "respostaEsperada": "È lontano? Ci vuole molto a piedi?",
+            "explicacao": "É longe? Demora muito a pé?",
+            "id": "it-011-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Vada ___ fino alla piazza. (em frente)",
             "opcoes": [
@@ -318,21 +324,6 @@
             "gabarito": "dritto",
             "explicacao": "«Vada dritto» é «siga em frente».",
             "id": "it-011-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E tem uma farmácia por perto?»",
-            "opcoes": [
-              "vicino?",
-              "E",
-              "farmacia",
-              "una",
-              "c'è"
-            ],
-            "gabarito": "E c'è una farmacia vicino?",
-            "explicacao": "Escreva: E c'è una farmacia vicino?",
-            "id": "it-011-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -359,6 +350,21 @@
             "id": "it-011-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il centro»?",
+            "audio": "il centro",
+            "opcoes": [
+              "o centro",
+              "a rua, a estrada",
+              "o ponto, a parada",
+              "o hospital"
+            ],
+            "gabarito": "o centro",
+            "explicacao": "«il centro» = o centro.",
+            "id": "it-011-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Dove ___ i bagni? (estão)",
             "opcoes": [
@@ -369,15 +375,6 @@
             "gabarito": "sono",
             "explicacao": "Plural: «dove sono».",
             "id": "it-011-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "E c'è una farmacia vicino?",
-            "respostaEsperada": "E c'è una farmacia vicino?",
-            "explicacao": "E tem uma farmácia por perto?",
-            "id": "it-011-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -404,6 +401,15 @@
             "id": "it-011-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "E c'è una farmacia vicino?",
+            "respostaEsperada": "E c'è una farmacia vicino?",
+            "explicacao": "E tem uma farmácia por perto?",
+            "id": "it-011-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se pergunta «Quanto tempo leva?»",
             "opcoes": [
@@ -416,22 +422,18 @@
             "id": "it-011-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, fica ao lado da igreja, em frente ao museu.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «dritto, diritto»?",
+            "audio": "dritto, diritto",
             "opcoes": [
-              "è",
-              "Sì,",
-              "museo.",
-              "accanto",
-              "alla",
-              "chiesa,",
-              "al",
-              "fronte",
-              "di"
+              "o ponto, a parada",
+              "em frente, reto",
+              "o hospital",
+              "o supermercado"
             ],
-            "gabarito": "Sì, è accanto alla chiesa, di fronte al museo.",
-            "explicacao": "Escreva: Sì, è accanto alla chiesa, di fronte al museo.",
-            "id": "it-011-x09",
+            "gabarito": "em frente, reto",
+            "explicacao": "«dritto, diritto» = em frente, reto.",
+            "id": "it-011-x06",
             "complemento": true
           },
           {
@@ -460,15 +462,6 @@
             "gabarito": "La farmacia è accanto alla chiesa.",
             "explicacao": "«Accanto a» + artigo: «alla».",
             "id": "it-011-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sì, è accanto alla chiesa, di fronte al museo.",
-            "respostaEsperada": "Sì, è accanto alla chiesa, di fronte al museo.",
-            "explicacao": "Sim, fica ao lado da igreja, em frente ao museu.",
-            "id": "it-011-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

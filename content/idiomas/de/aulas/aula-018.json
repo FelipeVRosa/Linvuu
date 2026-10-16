@@ -439,27 +439,21 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «O que você faz no fim de semana, Jonas?»",
+              "enunciado": "Monte a frase: «No sábado quero fazer trilha. Com certeza vai estar ensolarado.»",
               "opcoes": [
-                "du",
-                "am",
-                "Wochenende,",
-                "machst",
-                "Jonas?",
-                "Was"
+                "Es",
+                "ich",
+                "will",
+                "ist",
+                "bestimmt",
+                "wandern.",
+                "sonnig.",
+                "Samstag",
+                "Am"
               ],
-              "gabarito": "Was machst du am Wochenende, Jonas?",
-              "explicacao": "Escreva: Was machst du am Wochenende, Jonas?",
+              "gabarito": "Am Samstag will ich wandern. Es ist bestimmt sonnig.",
+              "explicacao": "Escreva: Am Samstag will ich wandern. Es ist bestimmt sonnig.",
               "id": "de-018-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Was machst du am Wochenende, Jonas?",
-              "respostaEsperada": "Was machst du am Wochenende, Jonas?",
-              "explicacao": "O que você faz no fim de semana, Jonas?",
-              "id": "de-018-x02",
               "complemento": true
             },
             {
@@ -475,31 +469,12 @@
               "id": "de-018-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «No sábado quero fazer trilha. Com certeza vai estar ensolarado.»",
-              "opcoes": [
-                "Es",
-                "ich",
-                "will",
-                "ist",
-                "bestimmt",
-                "wandern.",
-                "sonnig.",
-                "Samstag",
-                "Am"
-              ],
-              "gabarito": "Am Samstag will ich wandern. Es ist bestimmt sonnig.",
-              "explicacao": "Escreva: Am Samstag will ich wandern. Es ist bestimmt sonnig.",
-              "id": "de-018-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Am Samstag will ich wandern. Es ist bestimmt sonnig.",
               "respostaEsperada": "Am Samstag will ich wandern. Es ist bestimmt sonnig.",
               "explicacao": "No sábado quero fazer trilha. Com certeza vai estar ensolarado.",
-              "id": "de-018-x04",
+              "id": "de-018-x02",
               "complemento": true
             },
             {
@@ -513,45 +488,6 @@
               "gabarito": "Am liebsten",
               "explicacao": "O máximo: «am liebsten».",
               "id": "de-018-e03"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu não gosto de fazer trilha. Prefiro andar de bicicleta.»",
-              "opcoes": [
-                "wandere",
-                "gern.",
-                "Ich",
-                "lieber",
-                "Rad.",
-                "Ich",
-                "fahre",
-                "nicht"
-              ],
-              "gabarito": "Ich wandere nicht gern. Ich fahre lieber Rad.",
-              "explicacao": "Escreva: Ich wandere nicht gern. Ich fahre lieber Rad.",
-              "id": "de-018-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich wandere nicht gern. Ich fahre lieber Rad.",
-              "respostaEsperada": "Ich wandere nicht gern. Ich fahre lieber Rad.",
-              "explicacao": "Eu não gosto de fazer trilha. Prefiro andar de bicicleta.",
-              "id": "de-018-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Qual frase está certa?",
-              "opcoes": [
-                "Ich koche nicht gern.",
-                "Ich nicht gern koche.",
-                "Ich koche gern nicht."
-              ],
-              "gabarito": "Ich koche nicht gern.",
-              "explicacao": "«nicht gern» depois do verbo.",
-              "id": "de-018-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -569,7 +505,55 @@
               ],
               "gabarito": "Dann können wir mit dem Fahrrad zum See fahren.",
               "explicacao": "Escreva: Dann können wir mit dem Fahrrad zum See fahren.",
-              "id": "de-018-x07",
+              "id": "de-018-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Was machst du am Wochenende, Jonas?",
+              "respostaEsperada": "Was machst du am Wochenende, Jonas?",
+              "explicacao": "O que você faz no fim de semana, Jonas?",
+              "id": "de-018-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Dann können wir mit dem Fahrrad zum See fahren.",
+              "respostaEsperada": "Dann können wir mit dem Fahrrad zum See fahren.",
+              "explicacao": "Então podemos ir de bicicleta ao lago.",
+              "id": "de-018-x04",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual frase está certa?",
+              "opcoes": [
+                "Ich koche nicht gern.",
+                "Ich nicht gern koche.",
+                "Ich koche gern nicht."
+              ],
+              "gabarito": "Ich koche nicht gern.",
+              "explicacao": "«nicht gern» depois do verbo.",
+              "id": "de-018-e04"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, com prazer! Eu levo pão e queijo.»",
+              "opcoes": [
+                "gern!",
+                "und",
+                "Brot",
+                "mit.",
+                "bringe",
+                "Ich",
+                "Käse",
+                "Ja,"
+              ],
+              "gabarito": "Ja, gern! Ich bringe Brot und Käse mit.",
+              "explicacao": "Escreva: Ja, gern! Ich bringe Brot und Käse mit.",
+              "id": "de-018-x05",
               "complemento": true
             },
             {
@@ -587,28 +571,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Dann können wir mit dem Fahrrad zum See fahren.",
-              "respostaEsperada": "Dann können wir mit dem Fahrrad zum See fahren.",
-              "explicacao": "Então podemos ir de bicicleta ao lago.",
-              "id": "de-018-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa ideia! Você tem vontade de fazer um piquenique?»",
-              "opcoes": [
-                "du",
-                "Idee!",
-                "Lust",
-                "auf",
-                "ein",
-                "Picknick?",
-                "Hast",
-                "Gute"
-              ],
-              "gabarito": "Gute Idee! Hast du Lust auf ein Picknick?",
-              "explicacao": "Escreva: Gute Idee! Hast du Lust auf ein Picknick?",
-              "id": "de-018-x09",
+              "audio": "Ja, gern! Ich bringe Brot und Käse mit.",
+              "respostaEsperada": "Ja, gern! Ich bringe Brot und Käse mit.",
+              "explicacao": "Sim, com prazer! Eu levo pão e queijo.",
+              "id": "de-018-x06",
               "complemento": true
             },
             {
@@ -622,54 +588,6 @@
               "gabarito": "Im",
               "explicacao": "Estação: «im».",
               "id": "de-018-e06"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Gute Idee! Hast du Lust auf ein Picknick?",
-              "respostaEsperada": "Gute Idee! Hast du Lust auf ein Picknick?",
-              "explicacao": "Boa ideia! Você tem vontade de fazer um piquenique?",
-              "id": "de-018-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, com prazer! Eu levo pão e queijo.»",
-              "opcoes": [
-                "gern!",
-                "und",
-                "Brot",
-                "mit.",
-                "bringe",
-                "Ich",
-                "Käse",
-                "Ja,"
-              ],
-              "gabarito": "Ja, gern! Ich bringe Brot und Käse mit.",
-              "explicacao": "Escreva: Ja, gern! Ich bringe Brot und Käse mit.",
-              "id": "de-018-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "«Es sind zwanzig Grad» significa:",
-              "opcoes": [
-                "Fazem vinte graus",
-                "Há vinte pessoas",
-                "Faltam vinte graus"
-              ],
-              "gabarito": "Fazem vinte graus",
-              "explicacao": "Temperatura.",
-              "id": "de-018-e07"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ja, gern! Ich bringe Brot und Käse mit.",
-              "respostaEsperada": "Ja, gern! Ich bringe Brot und Käse mit.",
-              "explicacao": "Sim, com prazer! Eu levo pão e queijo.",
-              "id": "de-018-x12",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -688,7 +606,50 @@
               ],
               "gabarito": "Und ich mache einen Salat. Was machen wir bei Regen?",
               "explicacao": "Escreva: Und ich mache einen Salat. Was machen wir bei Regen?",
-              "id": "de-018-x13",
+              "id": "de-018-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich wandere nicht gern. Ich fahre lieber Rad.",
+              "respostaEsperada": "Ich wandere nicht gern. Ich fahre lieber Rad.",
+              "explicacao": "Eu não gosto de fazer trilha. Prefiro andar de bicicleta.",
+              "id": "de-018-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Und ich mache einen Salat. Was machen wir bei Regen?",
+              "respostaEsperada": "Und ich mache einen Salat. Was machen wir bei Regen?",
+              "explicacao": "E eu faço uma salada. O que fazemos se chover?",
+              "id": "de-018-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Es sind zwanzig Grad» significa:",
+              "opcoes": [
+                "Fazem vinte graus",
+                "Há vinte pessoas",
+                "Faltam vinte graus"
+              ],
+              "gabarito": "Fazem vinte graus",
+              "explicacao": "Temperatura.",
+              "id": "de-018-e07"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Combinado! Até sábado!»",
+              "opcoes": [
+                "Bis",
+                "Samstag!",
+                "Einverstanden!"
+              ],
+              "gabarito": "Einverstanden! Bis Samstag!",
+              "explicacao": "Escreva: Einverstanden! Bis Samstag!",
+              "id": "de-018-x09",
               "complemento": true
             },
             {
@@ -706,10 +667,25 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Und ich mache einen Salat. Was machen wir bei Regen?",
-              "respostaEsperada": "Und ich mache einen Salat. Was machen wir bei Regen?",
-              "explicacao": "E eu faço uma salada. O que fazemos se chover?",
-              "id": "de-018-x14",
+              "audio": "Einverstanden! Bis Samstag!",
+              "respostaEsperada": "Einverstanden! Bis Samstag!",
+              "explicacao": "Combinado! Até sábado!",
+              "id": "de-018-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «Rad fahren»?",
+              "audio": "Rad fahren",
+              "opcoes": [
+                "praticar esporte",
+                "andar de bicicleta",
+                "grau (de temperatura)",
+                "temperatura"
+              ],
+              "gabarito": "andar de bicicleta",
+              "explicacao": "«Rad fahren» = andar de bicicleta.",
+              "id": "de-018-x11",
               "complemento": true
             },
             {
@@ -725,28 +701,42 @@
               "id": "de-018-e09"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Se chover, vamos ao cinema.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «das Grad»?",
+              "audio": "das Grad",
               "opcoes": [
-                "gehen",
-                "ins",
-                "Bei",
-                "wir",
-                "Regen",
-                "Kino."
+                "grau (de temperatura)",
+                "passear a pé",
+                "ouvir música",
+                "tempo livre"
               ],
-              "gabarito": "Bei Regen gehen wir ins Kino.",
-              "explicacao": "Escreva: Bei Regen gehen wir ins Kino.",
-              "id": "de-018-x15",
+              "gabarito": "grau (de temperatura)",
+              "explicacao": "«das Grad» = grau (de temperatura).",
+              "id": "de-018-x12",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bei Regen gehen wir ins Kino.",
-              "respostaEsperada": "Bei Regen gehen wir ins Kino.",
-              "explicacao": "Se chover, vamos ao cinema.",
-              "id": "de-018-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Gute Idee! Hast du Lust auf ein Picknick?",
+              "respostaEsperada": "Gute Idee! Hast du Lust auf ein Picknick?",
+              "explicacao": "Boa ideia! Você tem vontade de fazer um piquenique?",
+              "id": "de-018-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «Karten spielen»?",
+              "audio": "Karten spielen",
+              "opcoes": [
+                "jogar cartas",
+                "hobby",
+                "nuvem",
+                "fresco"
+              ],
+              "gabarito": "jogar cartas",
+              "explicacao": "«Karten spielen» = jogar cartas.",
+              "id": "de-018-x13",
               "complemento": true
             },
             {
@@ -762,25 +752,18 @@
               "id": "de-018-e10"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Combinado! Até sábado!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «wandern»?",
+              "audio": "wandern",
               "opcoes": [
-                "Bis",
-                "Samstag!",
-                "Einverstanden!"
+                "tempo (clima)",
+                "jogar cartas",
+                "fazer trilha, caminhar",
+                "ouvir música"
               ],
-              "gabarito": "Einverstanden! Bis Samstag!",
-              "explicacao": "Escreva: Einverstanden! Bis Samstag!",
-              "id": "de-018-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Einverstanden! Bis Samstag!",
-              "respostaEsperada": "Einverstanden! Bis Samstag!",
-              "explicacao": "Combinado! Até sábado!",
-              "id": "de-018-x18",
+              "gabarito": "fazer trilha, caminhar",
+              "explicacao": "«wandern» = fazer trilha, caminhar.",
+              "id": "de-018-x14",
               "complemento": true
             },
             {
@@ -798,17 +781,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «Rad fahren»?",
-              "audio": "Rad fahren",
+              "enunciado": "O que significa «der Regen»?",
+              "audio": "der Regen",
               "opcoes": [
-                "praticar esporte",
-                "andar de bicicleta",
-                "grau (de temperatura)",
-                "temperatura"
+                "chuva",
+                "neve",
+                "tempo livre",
+                "hobby"
               ],
-              "gabarito": "andar de bicicleta",
-              "explicacao": "«Rad fahren» = andar de bicicleta.",
-              "id": "de-018-x19",
+              "gabarito": "chuva",
+              "explicacao": "«der Regen» = chuva.",
+              "id": "de-018-x15",
               "complemento": true
             },
             {
@@ -826,87 +809,6 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Grad»?",
-              "audio": "das Grad",
-              "opcoes": [
-                "grau (de temperatura)",
-                "passear a pé",
-                "ouvir música",
-                "tempo livre"
-              ],
-              "gabarito": "grau (de temperatura)",
-              "explicacao": "«das Grad» = grau (de temperatura).",
-              "id": "de-018-x20",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «Karten spielen»?",
-              "audio": "Karten spielen",
-              "opcoes": [
-                "jogar cartas",
-                "hobby",
-                "nuvem",
-                "fresco"
-              ],
-              "gabarito": "jogar cartas",
-              "explicacao": "«Karten spielen» = jogar cartas.",
-              "id": "de-018-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escolha.",
-              "audio": "Bei Regen gehen wir ins Kino",
-              "opcoes": [
-                "Bei Regen gehen wir ins Kino",
-                "Bei Sonne gehen wir ins Kino",
-                "Bei Regen bleiben wir zu Hause"
-              ],
-              "gabarito": "Bei Regen gehen wir ins Kino",
-              "explicacao": "«bei Regen» = se chover.",
-              "id": "de-018-e13"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «wandern»?",
-              "audio": "wandern",
-              "opcoes": [
-                "tempo (clima)",
-                "jogar cartas",
-                "fazer trilha, caminhar",
-                "ouvir música"
-              ],
-              "gabarito": "fazer trilha, caminhar",
-              "explicacao": "«wandern» = fazer trilha, caminhar.",
-              "id": "de-018-x22",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Regen»?",
-              "audio": "der Regen",
-              "opcoes": [
-                "chuva",
-                "neve",
-                "tempo livre",
-                "hobby"
-              ],
-              "gabarito": "chuva",
-              "explicacao": "«der Regen» = chuva.",
-              "id": "de-018-x23",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Am liebsten reise ich",
-              "respostaEsperada": "Am liebsten reise ich",
-              "explicacao": "am liebsten = o que mais gosto.",
-              "id": "de-018-e14"
-            },
-            {
-              "tipo": "multiple-choice",
               "enunciado": "O que significa «Freunde treffen»?",
               "audio": "Freunde treffen",
               "opcoes": [
@@ -917,7 +819,16 @@
               ],
               "gabarito": "encontrar amigos",
               "explicacao": "«Freunde treffen» = encontrar amigos.",
-              "id": "de-018-x24",
+              "id": "de-018-x16",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bei Regen gehen wir ins Kino.",
+              "respostaEsperada": "Bei Regen gehen wir ins Kino.",
+              "explicacao": "Se chover, vamos ao cinema.",
+              "id": "de-018-r04",
               "complemento": true
             },
             {
@@ -934,7 +845,52 @@
               ],
               "gabarito": "Bei Regen gehen wir ins Kino",
               "explicacao": "Escreva: Bei Regen gehen wir ins Kino",
-              "id": "de-018-x25",
+              "id": "de-018-x17",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Bei Regen gehen wir ins Kino",
+              "opcoes": [
+                "Bei Regen gehen wir ins Kino",
+                "Bei Sonne gehen wir ins Kino",
+                "Bei Regen bleiben wir zu Hause"
+              ],
+              "gabarito": "Bei Regen gehen wir ins Kino",
+              "explicacao": "«bei Regen» = se chover.",
+              "id": "de-018-e13"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Am liebsten reise ich",
+              "opcoes": [
+                "ich",
+                "reise",
+                "Am",
+                "liebsten"
+              ],
+              "gabarito": "Am liebsten reise ich",
+              "explicacao": "Escreva: Am liebsten reise ich",
+              "id": "de-018-x18",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Am liebsten reise ich",
+              "respostaEsperada": "Am liebsten reise ich",
+              "explicacao": "am liebsten = o que mais gosto.",
+              "id": "de-018-e14"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Bei Regen gehen wir ins Kino",
+              "respostaEsperada": "Bei Regen gehen wir ins Kino",
+              "explicacao": "Escreva: Bei Regen gehen wir ins Kino",
+              "id": "de-018-x19",
               "complemento": true
             },
             {

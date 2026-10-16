@@ -63,24 +63,6 @@
             "id": "es-020-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Pablo. Como foi seu fim de semana?»",
-            "opcoes": [
-              "¿Qué",
-              "fin",
-              "Pablo.",
-              "semana?",
-              "de",
-              "tu",
-              "Hola,",
-              "tal"
-            ],
-            "gabarito": "Hola, Pablo. ¿Qué tal tu fin de semana?",
-            "explicacao": "Escreva: Hola, Pablo. ¿Qué tal tu fin de semana?",
-            "id": "es-020-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Ayer vi a Marta",
@@ -97,12 +79,24 @@
             "id": "es-020-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hola, Pablo. ¿Qué tal tu fin de semana?",
-            "respostaEsperada": "Hola, Pablo. ¿Qué tal tu fin de semana?",
-            "explicacao": "Oi, Pablo. Como foi seu fim de semana?",
-            "id": "es-020-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, mas agora tenho uma prova e não programei o despertador.»",
+            "opcoes": [
+              "tengo",
+              "puse",
+              "examen",
+              "no",
+              "despertador.",
+              "pero",
+              "y",
+              "un",
+              "el",
+              "ahora",
+              "Sí,"
+            ],
+            "gabarito": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "explicacao": "Escreva: Sí, pero ahora tengo un examen y no puse el despertador.",
+            "id": "es-020-x01",
             "complemento": true
           },
           {
@@ -112,6 +106,15 @@
             "respostaEsperada": "Mis padres dijeron que sí",
             "explicacao": "Escreva: Mis padres dijeron que sí. Depois do «j» a terminação é «-eron».",
             "id": "es-020-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "respostaEsperada": "Hola, Pablo. ¿Qué tal tu fin de semana?",
+            "explicacao": "Oi, Pablo. Como foi seu fim de semana?",
+            "id": "es-020-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,20 +141,6 @@
             "id": "es-020-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E o que vocês fizeram lá?»",
-            "opcoes": [
-              "¿Y",
-              "allí?",
-              "hicisteis",
-              "qué"
-            ],
-            "gabarito": "¿Y qué hicisteis allí?",
-            "explicacao": "Escreva: ¿Y qué hicisteis allí?",
-            "id": "es-020-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a forma de «ellos» de «decir» no indefinido?",
             "opcoes": [
@@ -162,6 +151,15 @@
             "gabarito": "dijeron",
             "explicacao": "Depois do «j», a terminação é «-eron».",
             "id": "es-020-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "respostaEsperada": "Sí, pero ahora tengo un examen y no puse el despertador.",
+            "explicacao": "Sim, mas agora tenho uma prova e não programei o despertador.",
+            "id": "es-020-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -188,15 +186,6 @@
             "id": "es-020-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Y qué hicisteis allí?",
-            "respostaEsperada": "¿Y qué hicisteis allí?",
-            "explicacao": "E o que vocês fizeram lá?",
-            "id": "es-020-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «largo» em espanhol?",
             "opcoes": [
@@ -207,6 +196,15 @@
             "gabarito": "comprido, longo",
             "explicacao": "Largura é «ancho»; «largo» é comprido ou longo.",
             "id": "es-020-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Y qué hicisteis allí?",
+            "respostaEsperada": "¿Y qué hicisteis allí?",
+            "explicacao": "E o que vocês fizeram lá?",
+            "id": "es-020-r02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -221,6 +219,21 @@
             "id": "es-020-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la película»?",
+            "audio": "la película",
+            "opcoes": [
+              "a reunião",
+              "o filme",
+              "a festa",
+              "o presente"
+            ],
+            "gabarito": "o filme",
+            "explicacao": "«la película» = o filme.",
+            "id": "es-020-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ayer yo ___ a la playa. (ir)",
             "opcoes": [
@@ -231,20 +244,6 @@
             "gabarito": "fui",
             "explicacao": "Com «yo» no indefinido, «ir» vira «fui».",
             "id": "es-020-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você estudou o domingo inteiro?»",
-            "opcoes": [
-              "todo",
-              "domingo?",
-              "el",
-              "¿Estudiaste"
-            ],
-            "gabarito": "¿Estudiaste todo el domingo?",
-            "explicacao": "Escreva: ¿Estudiaste todo el domingo?",
-            "id": "es-020-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -271,15 +270,6 @@
             "id": "es-020-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Estudiaste todo el domingo?",
-            "respostaEsperada": "¿Estudiaste todo el domingo?",
-            "explicacao": "Você estudou o domingo inteiro?",
-            "id": "es-020-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "¿Qué ___ tú ayer? (hacer)",
             "opcoes": [
@@ -290,6 +280,21 @@
             "gabarito": "hiciste",
             "explicacao": "Com «tú», a forma é «hiciste».",
             "id": "es-020-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ser»?",
+            "audio": "ser",
+            "opcoes": [
+              "ser",
+              "comprido, longo",
+              "a festa",
+              "ver"
+            ],
+            "gabarito": "ser",
+            "explicacao": "«ser» = ser.",
+            "id": "es-020-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -304,6 +309,15 @@
             "id": "es-020-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Estudiaste todo el domingo?",
+            "respostaEsperada": "¿Estudiaste todo el domingo?",
+            "explicacao": "Você estudou o domingo inteiro?",
+            "id": "es-020-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Él ___ un café. (pedir)",
             "opcoes": [
@@ -314,23 +328,6 @@
             "gabarito": "pidió",
             "explicacao": "Na terceira pessoa o «e» vira «i».",
             "id": "es-020-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então você teve um fim de semana perfeito.»",
-            "opcoes": [
-              "Entonces",
-              "fin",
-              "semana",
-              "tuviste",
-              "de",
-              "perfecto.",
-              "un"
-            ],
-            "gabarito": "Entonces tuviste un fin de semana perfecto.",
-            "explicacao": "Escreva: Entonces tuviste un fin de semana perfecto.",
-            "id": "es-020-x07",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -360,19 +357,25 @@
             "id": "es-020-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ver»?",
+            "audio": "ver",
+            "opcoes": [
+              "a reunião",
+              "ver",
+              "o copo",
+              "a festa"
+            ],
+            "gabarito": "ver",
+            "explicacao": "«ver» = ver.",
+            "id": "es-020-x05",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol: Ontem fui ao médico e depois fiquei em casa.",
             "respostaEsperada": "Ayer fui al médico y luego estuve en casa.",
             "id": "es-020-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Entonces tuviste un fin de semana perfecto.",
-            "respostaEsperada": "Entonces tuviste un fin de semana perfecto.",
-            "explicacao": "Então você teve um fim de semana perfeito.",
-            "id": "es-020-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -399,6 +402,15 @@
             "id": "es-020-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Entonces tuviste un fin de semana perfecto.",
+            "respostaEsperada": "Entonces tuviste un fin de semana perfecto.",
+            "explicacao": "Então você teve um fim de semana perfeito.",
+            "id": "es-020-r04",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Mi hermano ___ diez horas. (dormir)",
             "opcoes": [
@@ -411,24 +423,18 @@
             "id": "es-020-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, mas agora tenho uma prova e não programei o despertador.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «largo»?",
+            "audio": "largo",
             "opcoes": [
-              "tengo",
-              "puse",
-              "examen",
-              "no",
-              "despertador.",
-              "pero",
-              "y",
-              "un",
-              "el",
-              "ahora",
-              "Sí,"
+              "comprido, longo",
+              "dormir",
+              "o filme",
+              "a festa"
             ],
-            "gabarito": "Sí, pero ahora tengo un examen y no puse el despertador.",
-            "explicacao": "Escreva: Sí, pero ahora tengo un examen y no puse el despertador.",
-            "id": "es-020-x09",
+            "gabarito": "comprido, longo",
+            "explicacao": "«largo» = comprido, longo.",
+            "id": "es-020-x06",
             "complemento": true
           },
           {
@@ -454,15 +460,6 @@
             "gabarito": "vine",
             "explicacao": "O radical é «vin-» e a terminação, «-e».",
             "id": "es-020-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sí, pero ahora tengo un examen y no puse el despertador.",
-            "respostaEsperada": "Sí, pero ahora tengo un examen y no puse el despertador.",
-            "explicacao": "Sim, mas agora tenho uma prova e não programei o despertador.",
-            "id": "es-020-x10",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",

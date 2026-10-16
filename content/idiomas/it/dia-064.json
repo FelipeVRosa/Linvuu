@@ -63,24 +63,6 @@
             "id": "it-016-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Matteo, o que você gosta de fazer no tempo livre?»",
-            "opcoes": [
-              "cosa",
-              "tempo",
-              "fare",
-              "piace",
-              "Matteo,",
-              "libero?",
-              "ti",
-              "nel"
-            ],
-            "gabarito": "Matteo, cosa ti piace fare nel tempo libero?",
-            "explicacao": "Escreva: Matteo, cosa ti piace fare nel tempo libero?",
-            "id": "it-016-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Mi piace leggere",
@@ -97,12 +79,24 @@
             "id": "it-016-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Matteo, cosa ti piace fare nel tempo libero?",
-            "respostaEsperada": "Matteo, cosa ti piace fare nel tempo libero?",
-            "explicacao": "Matteo, o que você gosta de fazer no tempo livre?",
-            "id": "it-016-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Minha irmã também não gosta de esporte. Prefere ouvir música.»",
+            "opcoes": [
+              "lo",
+              "sorella",
+              "piace",
+              "la",
+              "mia",
+              "Preferisce",
+              "sport.",
+              "musica.",
+              "a",
+              "Neanche",
+              "ascoltare"
+            ],
+            "gabarito": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "explicacao": "Escreva: Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "id": "it-016-x01",
             "complemento": true
           },
           {
@@ -112,6 +106,15 @@
             "respostaEsperada": "Gioco a calcio con gli amici",
             "explicacao": "Escreva: Gioco a calcio con gli amici.",
             "id": "it-016-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Matteo, cosa ti piace fare nel tempo libero?",
+            "respostaEsperada": "Matteo, cosa ti piace fare nel tempo libero?",
+            "explicacao": "Matteo, o que você gosta de fazer no tempo livre?",
+            "id": "it-016-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,27 +141,6 @@
             "id": "it-016-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Minha irmã também não gosta de esporte. Prefere ouvir música.»",
-            "opcoes": [
-              "lo",
-              "sorella",
-              "piace",
-              "la",
-              "mia",
-              "Preferisce",
-              "sport.",
-              "musica.",
-              "a",
-              "Neanche",
-              "ascoltare"
-            ],
-            "gabarito": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
-            "explicacao": "Escreva: Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
-            "id": "it-016-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual verbo se usa com instrumentos?",
             "opcoes": [
@@ -169,6 +151,15 @@
             "gabarito": "suonare",
             "explicacao": "«Suono la chitarra».",
             "id": "it-016-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "respostaEsperada": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
+            "explicacao": "Minha irmã também não gosta de esporte. Prefere ouvir música.",
+            "id": "it-016-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -195,15 +186,6 @@
             "id": "it-016-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
-            "respostaEsperada": "Neanche a mia sorella piace lo sport. Preferisce ascoltare la musica.",
-            "explicacao": "Minha irmã também não gosta de esporte. Prefere ouvir música.",
-            "id": "it-016-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Non ___ piacciono i ragni. (a mim)",
             "opcoes": [
@@ -214,6 +196,15 @@
             "gabarito": "mi",
             "explicacao": "«A mim»: «mi».",
             "id": "it-016-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Anche a me! Ti piacciono i concerti?",
+            "respostaEsperada": "Anche a me! Ti piacciono i concerti?",
+            "explicacao": "Eu também! Você gosta de shows?",
+            "id": "it-016-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -228,6 +219,27 @@
             "id": "it-016-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, muito. Sábado tem um show na praça: você vem com a gente?»",
+            "opcoes": [
+              "noi?",
+              "un",
+              "Sì,",
+              "molto.",
+              "piazza:",
+              "vieni",
+              "con",
+              "Sabato",
+              "c'è",
+              "in",
+              "concerto"
+            ],
+            "gabarito": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
+            "explicacao": "Escreva: Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
+            "id": "it-016-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Lei ___ la chitarra. (suonare)",
             "opcoes": [
@@ -238,23 +250,6 @@
             "gabarito": "suona",
             "explicacao": "Instrumento: «suonare».",
             "id": "it-016-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu também! Você gosta de shows?»",
-            "opcoes": [
-              "piacciono",
-              "i",
-              "me!",
-              "Anche",
-              "a",
-              "concerti?",
-              "Ti"
-            ],
-            "gabarito": "Anche a me! Ti piacciono i concerti?",
-            "explicacao": "Escreva: Anche a me! Ti piacciono i concerti?",
-            "id": "it-016-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -284,19 +279,19 @@
             "id": "it-016-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Anche a me! Ti piacciono i concerti?",
-            "respostaEsperada": "Anche a me! Ti piacciono i concerti?",
-            "explicacao": "Eu também! Você gosta de shows?",
-            "id": "it-016-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Eu gosto de ler e de ouvir música. Não gosto de esporte.",
             "respostaEsperada": "Mi piace leggere e ascoltare la musica. Non mi piace lo sport.",
             "id": "it-016-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
+            "respostaEsperada": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
+            "explicacao": "Sim, muito. Sábado tem um show na praça: você vem com a gente?",
+            "id": "it-016-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -311,6 +306,15 @@
             "id": "it-016-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "guardare un film",
+            "respostaEsperada": "guardare un film",
+            "explicacao": "assistir a um filme",
+            "id": "it-016-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ti ___ le mostre? (agradam)",
             "opcoes": [
@@ -321,27 +325,6 @@
             "gabarito": "piacciono",
             "explicacao": "«Mostre» é plural: «piacciono».",
             "id": "it-016-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, muito. Sábado tem um show na praça: você vem com a gente?»",
-            "opcoes": [
-              "noi?",
-              "un",
-              "Sì,",
-              "molto.",
-              "piazza:",
-              "vieni",
-              "con",
-              "Sabato",
-              "c'è",
-              "in",
-              "concerto"
-            ],
-            "gabarito": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
-            "explicacao": "Escreva: Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
-            "id": "it-016-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -368,6 +351,21 @@
             "id": "it-016-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «invece»?",
+            "audio": "invece",
+            "opcoes": [
+              "tocar violão",
+              "por outro lado, já",
+              "preferir",
+              "na minha opinião"
+            ],
+            "gabarito": "por outro lado, já",
+            "explicacao": "«invece» = por outro lado, já.",
+            "id": "it-016-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Preferisco camminare ___ guidare. (a)",
             "opcoes": [
@@ -378,15 +376,6 @@
             "gabarito": "a",
             "explicacao": "Preferire X «a» Y.",
             "id": "it-016-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
-            "respostaEsperada": "Sì, molto. Sabato c'è un concerto in piazza: vieni con noi?",
-            "explicacao": "Sim, muito. Sábado tem um show na praça: você vem com a gente?",
-            "id": "it-016-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -413,6 +402,15 @@
             "id": "it-016-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il tempo libero",
+            "respostaEsperada": "il tempo libero",
+            "explicacao": "o tempo livre",
+            "id": "it-016-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual construção se usa com esportes como o tênis?",
             "opcoes": [
@@ -426,17 +424,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «invece»?",
-            "audio": "invece",
+            "enunciado": "O que significa «giocare a calcio»?",
+            "audio": "giocare a calcio",
             "opcoes": [
-              "tocar violão",
-              "por outro lado, já",
-              "preferir",
-              "na minha opinião"
+              "o passatempo",
+              "também",
+              "jogar futebol",
+              "o time"
             ],
-            "gabarito": "por outro lado, já",
-            "explicacao": "«invece» = por outro lado, já.",
-            "id": "it-016-x09",
+            "gabarito": "jogar futebol",
+            "explicacao": "«giocare a calcio» = jogar futebol.",
+            "id": "it-016-x06",
             "complemento": true
           },
           {
@@ -464,21 +462,6 @@
             "gabarito": "Gli piace suonare la chitarra.",
             "explicacao": "Instrumentos usam «suonare» com artigo.",
             "id": "it-016-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «giocare a calcio»?",
-            "audio": "giocare a calcio",
-            "opcoes": [
-              "o passatempo",
-              "também",
-              "jogar futebol",
-              "o time"
-            ],
-            "gabarito": "jogar futebol",
-            "explicacao": "«giocare a calcio» = jogar futebol.",
-            "id": "it-016-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

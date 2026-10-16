@@ -37,24 +37,15 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá! O que deseja?»",
+            "enunciado": "Monte a frase: «Aqui está. Mais alguma coisa?»",
             "opcoes": [
-              "Что",
-              "вам?",
-              "Здравствуйте!"
+              "Ещё",
+              "что-нибудь?",
+              "Пожалуйста."
             ],
-            "gabarito": "Здравствуйте! Что вам?",
-            "explicacao": "Escreva: Здравствуйте! Что вам?",
+            "gabarito": "Пожалуйста. Ещё что-нибудь?",
+            "explicacao": "Escreva: Пожалуйста. Ещё что-нибудь?",
             "id": "ru-047-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Здравствуйте! Что вам?",
-            "respostaEsperada": "Здравствуйте! Что вам?",
-            "explicacao": "Olá! O que deseja?",
-            "id": "ru-047-x02",
             "complemento": true
           },
           {
@@ -70,30 +61,12 @@
             "id": "ru-047-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá. Preciso de um quilo de maçãs e um litro de leite.»",
-            "opcoes": [
-              "Мне",
-              "яблок",
-              "молока.",
-              "литр",
-              "и",
-              "нужен",
-              "килограмм",
-              "Здравствуйте."
-            ],
-            "gabarito": "Здравствуйте. Мне нужен килограмм яблок и литр молока.",
-            "explicacao": "Escreva: Здравствуйте. Мне нужен килограмм яблок и литр молока.",
-            "id": "ru-047-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Здравствуйте. Мне нужен килограмм яблок и литр молока.",
-            "respostaEsperada": "Здравствуйте. Мне нужен килограмм яблок и литр молока.",
-            "explicacao": "Olá. Preciso de um quilo de maçãs e um litro de leite.",
-            "id": "ru-047-x04",
+            "audio": "Пожалуйста. Ещё что-нибудь?",
+            "respostaEsperada": "Пожалуйста. Ещё что-нибудь?",
+            "explicacao": "Aqui está. Mais alguma coisa?",
+            "id": "ru-047-x02",
             "complemento": true
           },
           {
@@ -109,16 +82,26 @@
             "id": "ru-047-e03"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Здравствуйте! Что вам?",
+            "respostaEsperada": "Здравствуйте! Что вам?",
+            "explicacao": "Olá! O que deseja?",
+            "id": "ru-047-r01",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Aqui está. Mais alguma coisa?»",
+            "enunciado": "Monte a frase: «Sim. Quanto devo?»",
             "opcoes": [
-              "Ещё",
-              "что-нибудь?",
-              "Пожалуйста."
+              "Сколько",
+              "меня?",
+              "Да.",
+              "с"
             ],
-            "gabarito": "Пожалуйста. Ещё что-нибудь?",
-            "explicacao": "Escreva: Пожалуйста. Ещё что-нибудь?",
-            "id": "ru-047-x05",
+            "gabarito": "Да. Сколько с меня?",
+            "explicacao": "Escreva: Да. Сколько с меня?",
+            "id": "ru-047-x03",
             "complemento": true
           },
           {
@@ -136,26 +119,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Пожалуйста. Ещё что-нибудь?",
-            "respostaEsperada": "Пожалуйста. Ещё что-нибудь?",
-            "explicacao": "Aqui está. Mais alguma coisa?",
-            "id": "ru-047-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, um pacote de manteiga e um pouco de queijo.»",
-            "opcoes": [
-              "немного",
-              "пачку",
-              "и",
-              "масла",
-              "сыра.",
-              "Да,"
-            ],
-            "gabarito": "Да, пачку масла и немного сыра.",
-            "explicacao": "Escreva: Да, пачку масла и немного сыра.",
-            "id": "ru-047-x07",
+            "audio": "Да. Сколько с меня?",
+            "respostaEsperada": "Да. Сколько с меня?",
+            "explicacao": "Sim. Quanto devo?",
+            "id": "ru-047-x04",
             "complemento": true
           },
           {
@@ -171,28 +138,42 @@
             "id": "ru-047-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, пачку масла и немного сыра.",
-            "respostaEsperada": "Да, пачку масла и немного сыра.",
-            "explicacao": "Sim, um pacote de manteiga e um pouco de queijo.",
-            "id": "ru-047-x08",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «стакан»?",
+            "audio": "стакан",
+            "opcoes": [
+              "copo",
+              "um pouco",
+              "quanto, quantos",
+              "litro"
+            ],
+            "gabarito": "copo",
+            "explicacao": "«стакан» = copo.",
+            "id": "ru-047-x05",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Duzentos gramas. E algumas broinhas, por favor.»",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Здравствуйте. Мне нужен килограмм яблок и литр молока.",
+            "respostaEsperada": "Здравствуйте. Мне нужен килограмм яблок и литр молока.",
+            "explicacao": "Olá. Preciso de um quilo de maçãs e um litro de leite.",
+            "id": "ru-047-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «грамм»?",
+            "audio": "грамм",
             "opcoes": [
-              "несколько",
-              "пожалуйста.",
-              "И",
-              "граммов.",
-              "булочек,",
-              "Двести"
+              "grama",
+              "quilo",
+              "litro",
+              "pouco, poucos"
             ],
-            "gabarito": "Двести граммов. И несколько булочек, пожалуйста.",
-            "explicacao": "Escreva: Двести граммов. И несколько булочек, пожалуйста.",
-            "id": "ru-047-x09",
+            "gabarito": "grama",
+            "explicacao": "«грамм» = grama.",
+            "id": "ru-047-x06",
             "complemento": true
           },
           {
@@ -208,15 +189,6 @@
             "id": "ru-047-e06"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Двести граммов. И несколько булочек, пожалуйста.",
-            "respostaEsperada": "Двести граммов. И несколько булочек, пожалуйста.",
-            "explicacao": "Duzentos gramas. E algumas broinhas, por favor.",
-            "id": "ru-047-x10",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Много людей» usa o:",
             "opcoes": [
@@ -229,26 +201,18 @@
             "id": "ru-047-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim. Quanto devo?»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «литр»?",
+            "audio": "литр",
             "opcoes": [
-              "Сколько",
-              "меня?",
-              "Да.",
-              "с"
+              "quanto, quantos",
+              "pacote, maço",
+              "um pouco",
+              "litro"
             ],
-            "gabarito": "Да. Сколько с меня?",
-            "explicacao": "Escreva: Да. Сколько с меня?",
-            "id": "ru-047-x11",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да. Сколько с меня?",
-            "respostaEsperada": "Да. Сколько с меня?",
-            "explicacao": "Sim. Quanto devo?",
-            "id": "ru-047-x12",
+            "gabarito": "litro",
+            "explicacao": "«литр» = litro.",
+            "id": "ru-047-x07",
             "complemento": true
           },
           {
@@ -265,32 +229,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «стакан»?",
-            "audio": "стакан",
+            "enunciado": "O que significa «несколько»?",
+            "audio": "несколько",
             "opcoes": [
-              "copo",
-              "um pouco",
+              "alguns, vários",
+              "litro",
               "quanto, quantos",
-              "litro"
+              "garrafa"
             ],
-            "gabarito": "copo",
-            "explicacao": "«стакан» = copo.",
-            "id": "ru-047-x13",
+            "gabarito": "alguns, vários",
+            "explicacao": "«несколько» = alguns, vários.",
+            "id": "ru-047-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, пачку масла и немного сыра.",
+            "respostaEsperada": "Да, пачку масла и немного сыра.",
+            "explicacao": "Sim, um pacote de manteiga e um pouco de queijo.",
+            "id": "ru-047-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «грамм»?",
-            "audio": "грамм",
+            "enunciado": "O que significa «достаточно»?",
+            "audio": "достаточно",
             "opcoes": [
-              "grama",
-              "quilo",
-              "litro",
-              "pouco, poucos"
+              "tanto",
+              "suficiente",
+              "garrafa",
+              "grama"
             ],
-            "gabarito": "grama",
-            "explicacao": "«грамм» = grama.",
-            "id": "ru-047-x14",
+            "gabarito": "suficiente",
+            "explicacao": "«достаточно» = suficiente.",
+            "id": "ru-047-x09",
             "complemento": true
           },
           {
@@ -307,32 +280,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «литр»?",
-            "audio": "литр",
+            "enunciado": "O que significa «сколько»?",
+            "audio": "сколько",
             "opcoes": [
-              "quanto, quantos",
-              "pacote, maço",
-              "um pouco",
-              "litro"
-            ],
-            "gabarito": "litro",
-            "explicacao": "«литр» = litro.",
-            "id": "ru-047-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «несколько»?",
-            "audio": "несколько",
-            "opcoes": [
-              "alguns, vários",
               "litro",
-              "quanto, quantos",
-              "garrafa"
+              "pedaço",
+              "suficiente",
+              "quanto, quantos"
             ],
-            "gabarito": "alguns, vários",
-            "explicacao": "«несколько» = alguns, vários.",
-            "id": "ru-047-x16",
+            "gabarito": "quanto, quantos",
+            "explicacao": "«сколько» = quanto, quantos.",
+            "id": "ru-047-x10",
             "complemento": true
           },
           {
@@ -349,18 +307,27 @@
             "id": "ru-047-e10"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «достаточно»?",
-            "audio": "достаточно",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Дайте, пожалуйста, килограмм яблок",
             "opcoes": [
-              "tanto",
-              "suficiente",
-              "garrafa",
-              "grama"
+              "килограмм",
+              "пожалуйста,",
+              "яблок",
+              "Дайте,"
             ],
-            "gabarito": "suficiente",
-            "explicacao": "«достаточно» = suficiente.",
-            "id": "ru-047-x17",
+            "gabarito": "Дайте, пожалуйста, килограмм яблок",
+            "explicacao": "Escreva: Дайте, пожалуйста, килограмм яблок",
+            "id": "ru-047-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Двести граммов. И несколько булочек, пожалуйста.",
+            "respostaEsperada": "Двести граммов. И несколько булочек, пожалуйста.",
+            "explicacao": "Duzentos gramas. E algumas broinhas, por favor.",
+            "id": "ru-047-r04",
             "complemento": true
           },
           {
@@ -377,44 +344,6 @@
             "id": "ru-047-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «сколько»?",
-            "audio": "сколько",
-            "opcoes": [
-              "litro",
-              "pedaço",
-              "suficiente",
-              "quanto, quantos"
-            ],
-            "gabarito": "quanto, quantos",
-            "explicacao": "«сколько» = quanto, quantos.",
-            "id": "ru-047-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Дайте, пожалуйста, килограмм яблок",
-            "opcoes": [
-              "килограмм",
-              "пожалуйста,",
-              "яблок",
-              "Дайте,"
-            ],
-            "gabarito": "Дайте, пожалуйста, килограмм яблок",
-            "explicacao": "Escreva: Дайте, пожалуйста, килограмм яблок",
-            "id": "ru-047-x19",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Сколько у тебя друзей",
-            "respostaEsperada": "Сколько у тебя друзей",
-            "explicacao": "«сколько» + genitivo plural.",
-            "id": "ru-047-e12"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Сколько у тебя друзей",
@@ -426,8 +355,16 @@
             ],
             "gabarito": "Сколько у тебя друзей",
             "explicacao": "Escreva: Сколько у тебя друзей",
-            "id": "ru-047-x20",
+            "id": "ru-047-x12",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Сколько у тебя друзей",
+            "respostaEsperada": "Сколько у тебя друзей",
+            "explicacao": "«сколько» + genitivo plural.",
+            "id": "ru-047-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -435,7 +372,7 @@
             "audio": "Дайте, пожалуйста, килограмм яблок",
             "respostaEsperada": "Дайте, пожалуйста, килограмм яблок",
             "explicacao": "Escreva: Дайте, пожалуйста, килограмм яблок",
-            "id": "ru-047-x21",
+            "id": "ru-047-x13",
             "complemento": true
           },
           {

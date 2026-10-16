@@ -37,27 +37,18 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Alô, bom dia. Posso falar com a Anna?»",
+            "enunciado": "Monte a frase: «Ela não está em casa agora. O que devo dizer?»",
             "opcoes": [
-              "позвать",
-              "Анну?",
-              "Алло,",
-              "день.",
-              "добрый",
-              "Можно"
+              "дома.",
+              "нет",
+              "передать?",
+              "Что",
+              "сейчас",
+              "Её"
             ],
-            "gabarito": "Алло, добрый день. Можно позвать Анну?",
-            "explicacao": "Escreva: Алло, добрый день. Можно позвать Анну?",
+            "gabarito": "Её сейчас нет дома. Что передать?",
+            "explicacao": "Escreva: Её сейчас нет дома. Что передать?",
             "id": "ru-042-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Алло, добрый день. Можно позвать Анну?",
-            "respostaEsperada": "Алло, добрый день. Можно позвать Анну?",
-            "explicacao": "Alô, bom dia. Posso falar com a Anna?",
-            "id": "ru-042-x02",
             "complemento": true
           },
           {
@@ -73,28 +64,12 @@
             "id": "ru-042-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ela não está em casa agora. O que devo dizer?»",
-            "opcoes": [
-              "дома.",
-              "нет",
-              "передать?",
-              "Что",
-              "сейчас",
-              "Её"
-            ],
-            "gabarito": "Её сейчас нет дома. Что передать?",
-            "explicacao": "Escreva: Её сейчас нет дома. Что передать?",
-            "id": "ru-042-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Её сейчас нет дома. Что передать?",
             "respostaEsperada": "Её сейчас нет дома. Что передать?",
             "explicacao": "Ela não está em casa agora. O que devo dizer?",
-            "id": "ru-042-x04",
+            "id": "ru-042-x02",
             "complemento": true
           },
           {
@@ -111,26 +86,34 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Diga, por favor, que eu liguei.»",
+            "enunciado": "Monte a frase: «Está bem. Como o senhor se chama?»",
             "opcoes": [
-              "Передайте,",
-              "я",
-              "звонил.",
-              "что",
-              "пожалуйста,"
+              "зовут?",
+              "Хорошо.",
+              "вас",
+              "Как"
             ],
-            "gabarito": "Передайте, пожалуйста, что я звонил.",
-            "explicacao": "Escreva: Передайте, пожалуйста, что я звонил.",
-            "id": "ru-042-x05",
+            "gabarito": "Хорошо. Как вас зовут?",
+            "explicacao": "Escreva: Хорошо. Как вас зовут?",
+            "id": "ru-042-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Алло, добрый день. Можно позвать Анну?",
+            "respostaEsperada": "Алло, добрый день. Можно позвать Анну?",
+            "explicacao": "Alô, bom dia. Posso falar com a Anna?",
+            "id": "ru-042-r01",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Передайте, пожалуйста, что я звонил.",
-            "respostaEsperada": "Передайте, пожалуйста, что я звонил.",
-            "explicacao": "Diga, por favor, que eu liguei.",
-            "id": "ru-042-x06",
+            "audio": "Хорошо. Как вас зовут?",
+            "respostaEsperada": "Хорошо. Как вас зовут?",
+            "explicacao": "Está bem. Como o senhor se chama?",
+            "id": "ru-042-x04",
             "complemento": true
           },
           {
@@ -147,25 +130,19 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está bem. Como o senhor se chama?»",
+            "enunciado": "Monte a frase: «Ela chega às sete horas. Ligue mais tarde.»",
             "opcoes": [
-              "зовут?",
-              "Хорошо.",
-              "вас",
-              "Как"
+              "Перезвоните",
+              "позже.",
+              "придёт",
+              "в",
+              "семь",
+              "часов.",
+              "Она"
             ],
-            "gabarito": "Хорошо. Как вас зовут?",
-            "explicacao": "Escreva: Хорошо. Как вас зовут?",
-            "id": "ru-042-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо. Как вас зовут?",
-            "respostaEsperada": "Хорошо. Как вас зовут?",
-            "explicacao": "Está bem. Como o senhor se chama?",
-            "id": "ru-042-x08",
+            "gabarito": "Она придёт в семь часов. Перезвоните позже.",
+            "explicacao": "Escreva: Она придёт в семь часов. Перезвоните позже.",
+            "id": "ru-042-x05",
             "complemento": true
           },
           {
@@ -181,26 +158,34 @@
             "id": "ru-042-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oleg. Sou colega dela.»",
-            "opcoes": [
-              "Я",
-              "Олег.",
-              "коллега.",
-              "её"
-            ],
-            "gabarito": "Олег. Я её коллега.",
-            "explicacao": "Escreva: Олег. Я её коллега.",
-            "id": "ru-042-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Она придёт в семь часов. Перезвоните позже.",
+            "respostaEsperada": "Она придёт в семь часов. Перезвоните позже.",
+            "explicacao": "Ela chega às sete horas. Ligue mais tarde.",
+            "id": "ru-042-x06",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Олег. Я её коллега.",
-            "respostaEsperada": "Олег. Я её коллега.",
-            "explicacao": "Oleg. Sou colega dela.",
-            "id": "ru-042-x10",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Передайте, пожалуйста, что я звонил.",
+            "respostaEsperada": "Передайте, пожалуйста, что я звонил.",
+            "explicacao": "Diga, por favor, que eu liguei.",
+            "id": "ru-042-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Está bem. Até logo!»",
+            "opcoes": [
+              "До",
+              "Хорошо.",
+              "свидания!"
+            ],
+            "gabarito": "Хорошо. До свидания!",
+            "explicacao": "Escreva: Хорошо. До свидания!",
+            "id": "ru-042-x07",
             "complemento": true
           },
           {
@@ -216,29 +201,12 @@
             "id": "ru-042-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ela chega às sete horas. Ligue mais tarde.»",
-            "opcoes": [
-              "Перезвоните",
-              "позже.",
-              "придёт",
-              "в",
-              "семь",
-              "часов.",
-              "Она"
-            ],
-            "gabarito": "Она придёт в семь часов. Перезвоните позже.",
-            "explicacao": "Escreva: Она придёт в семь часов. Перезвоните позже.",
-            "id": "ru-042-x11",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Она придёт в семь часов. Перезвоните позже.",
-            "respostaEsperada": "Она придёт в семь часов. Перезвоните позже.",
-            "explicacao": "Ela chega às sete horas. Ligue mais tarde.",
-            "id": "ru-042-x12",
+            "audio": "Хорошо. До свидания!",
+            "respostaEsperada": "Хорошо. До свидания!",
+            "explicacao": "Está bem. Até logo!",
+            "id": "ru-042-x08",
             "complemento": true
           },
           {
@@ -254,27 +222,33 @@
             "id": "ru-042-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Obrigado. Ligo às oito.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «телефон»?",
+            "audio": "телефон",
             "opcoes": [
-              "восемь.",
-              "позвоню",
-              "в",
-              "Спасибо.",
-              "Я"
+              "escrever",
+              "telefone",
+              "ocupado (linha)",
+              "transmitir, passar"
             ],
-            "gabarito": "Спасибо. Я позвоню в восемь.",
-            "explicacao": "Escreva: Спасибо. Я позвоню в восемь.",
-            "id": "ru-042-x13",
+            "gabarito": "telefone",
+            "explicacao": "«телефон» = telefone.",
+            "id": "ru-042-x09",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Спасибо. Я позвоню в восемь.",
-            "respostaEsperada": "Спасибо. Я позвоню в восемь.",
-            "explicacao": "Obrigado. Ligo às oito.",
-            "id": "ru-042-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «спасибо»?",
+            "audio": "спасибо",
+            "opcoes": [
+              "obrigado",
+              "responder",
+              "chamar (ao telefone)",
+              "ocupado (linha)"
+            ],
+            "gabarito": "obrigado",
+            "explicacao": "«спасибо» = obrigado.",
+            "id": "ru-042-x10",
             "complemento": true
           },
           {
@@ -290,25 +264,42 @@
             "id": "ru-042-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está bem. Até logo!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «писать / написать»?",
+            "audio": "писать / написать",
             "opcoes": [
-              "До",
-              "Хорошо.",
-              "свидания!"
+              "ligar de volta",
+              "escrever",
+              "ouvir",
+              "transmitir, passar"
             ],
-            "gabarito": "Хорошо. До свидания!",
-            "explicacao": "Escreva: Хорошо. До свидания!",
-            "id": "ru-042-x15",
+            "gabarito": "escrever",
+            "explicacao": "«писать / написать» = escrever.",
+            "id": "ru-042-x11",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо. До свидания!",
-            "respostaEsperada": "Хорошо. До свидания!",
-            "explicacao": "Está bem. Até logo!",
-            "id": "ru-042-x16",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Олег. Я её коллега.",
+            "respostaEsperada": "Олег. Я её коллега.",
+            "explicacao": "Oleg. Sou colega dela.",
+            "id": "ru-042-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «занято»?",
+            "audio": "занято",
+            "opcoes": [
+              "escrever",
+              "número",
+              "ocupado (linha)",
+              "obrigado"
+            ],
+            "gabarito": "ocupado (linha)",
+            "explicacao": "«занято» = ocupado (linha).",
+            "id": "ru-042-x12",
             "complemento": true
           },
           {
@@ -325,32 +316,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «телефон»?",
-            "audio": "телефон",
-            "opcoes": [
-              "escrever",
-              "telefone",
-              "ocupado (linha)",
-              "transmitir, passar"
-            ],
-            "gabarito": "telefone",
-            "explicacao": "«телефон» = telefone.",
-            "id": "ru-042-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «спасибо»?",
-            "audio": "спасибо",
+            "enunciado": "O que significa «отвечать / ответить»?",
+            "audio": "отвечать / ответить",
             "opcoes": [
               "obrigado",
-              "responder",
-              "chamar (ao telefone)",
-              "ocupado (linha)"
+              "tchau",
+              "escrever",
+              "responder"
             ],
-            "gabarito": "obrigado",
-            "explicacao": "«спасибо» = obrigado.",
-            "id": "ru-042-x18",
+            "gabarito": "responder",
+            "explicacao": "«отвечать / ответить» = responder.",
+            "id": "ru-042-x13",
             "complemento": true
           },
           {
@@ -367,32 +343,42 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «писать / написать»?",
-            "audio": "писать / написать",
+            "enunciado": "O que significa «передать»?",
+            "audio": "передать",
             "opcoes": [
-              "ligar de volta",
-              "escrever",
-              "ouvir",
-              "transmitir, passar"
+              "em breve",
+              "transmitir, passar",
+              "até amanhã",
+              "escrever"
             ],
-            "gabarito": "escrever",
-            "explicacao": "«писать / написать» = escrever.",
-            "id": "ru-042-x19",
+            "gabarito": "transmitir, passar",
+            "explicacao": "«передать» = transmitir, passar.",
+            "id": "ru-042-x14",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «занято»?",
-            "audio": "занято",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Спасибо. Я позвоню в восемь.",
+            "respostaEsperada": "Спасибо. Я позвоню в восемь.",
+            "explicacao": "Obrigado. Ligo às oito.",
+            "id": "ru-042-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Передайте, пожалуйста, что я звонил",
             "opcoes": [
-              "escrever",
-              "número",
-              "ocupado (linha)",
-              "obrigado"
+              "что",
+              "звонил",
+              "пожалуйста,",
+              "Передайте,",
+              "я"
             ],
-            "gabarito": "ocupado (linha)",
-            "explicacao": "«занято» = ocupado (linha).",
-            "id": "ru-042-x20",
+            "gabarito": "Передайте, пожалуйста, что я звонил",
+            "explicacao": "Escreva: Передайте, пожалуйста, что я звонил",
+            "id": "ru-042-x15",
             "complemento": true
           },
           {
@@ -409,60 +395,6 @@
             "id": "ru-042-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «отвечать / ответить»?",
-            "audio": "отвечать / ответить",
-            "opcoes": [
-              "obrigado",
-              "tchau",
-              "escrever",
-              "responder"
-            ],
-            "gabarito": "responder",
-            "explicacao": "«отвечать / ответить» = responder.",
-            "id": "ru-042-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «передать»?",
-            "audio": "передать",
-            "opcoes": [
-              "em breve",
-              "transmitir, passar",
-              "até amanhã",
-              "escrever"
-            ],
-            "gabarito": "transmitir, passar",
-            "explicacao": "«передать» = transmitir, passar.",
-            "id": "ru-042-x22",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Её сейчас нет дома",
-            "respostaEsperada": "Её сейчас нет дома",
-            "explicacao": "«нет» + genitivo.",
-            "id": "ru-042-e12"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Передайте, пожалуйста, что я звонил",
-            "opcoes": [
-              "что",
-              "звонил",
-              "пожалуйста,",
-              "Передайте,",
-              "я"
-            ],
-            "gabarito": "Передайте, пожалуйста, что я звонил",
-            "explicacao": "Escreva: Передайте, пожалуйста, что я звонил",
-            "id": "ru-042-x23",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Её сейчас нет дома",
@@ -474,14 +406,16 @@
             ],
             "gabarito": "Её сейчас нет дома",
             "explicacao": "Escreva: Её сейчас нет дома",
-            "id": "ru-042-x24",
+            "id": "ru-042-x16",
             "complemento": true
           },
           {
-            "tipo": "producao",
-            "enunciado": "Escreva 5 frases: uma ligação (pedir alguém), um recado, uma mensagem informal, uma abertura formal e uma despedida formal.",
-            "respostaEsperada": "Алло! Можно позвать Анну? Передайте, пожалуйста, что я звонил. Привет! Давай встретимся в шесть. Уважаемый господин Иванов! С уважением, Анна.",
-            "id": "ru-042-e13"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Её сейчас нет дома",
+            "respostaEsperada": "Её сейчас нет дома",
+            "explicacao": "«нет» + genitivo.",
+            "id": "ru-042-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -489,8 +423,14 @@
             "audio": "Передайте, пожалуйста, что я звонил",
             "respostaEsperada": "Передайте, пожалуйста, что я звонил",
             "explicacao": "Escreva: Передайте, пожалуйста, что я звонил",
-            "id": "ru-042-x25",
+            "id": "ru-042-x17",
             "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 5 frases: uma ligação (pedir alguém), um recado, uma mensagem informal, uma abertura formal e uma despedida formal.",
+            "respostaEsperada": "Алло! Можно позвать Анну? Передайте, пожалуйста, что я звонил. Привет! Давай встретимся в шесть. Уважаемый господин Иванов! С уважением, Анна.",
+            "id": "ru-042-e13"
           }
         ]
       },

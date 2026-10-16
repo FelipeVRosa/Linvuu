@@ -378,26 +378,18 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Com licença, como chego ao museu?»",
+              "enunciado": "Monte a frase: «Sim, dobrando a esquina, ao lado da farmácia.»",
               "opcoes": [
-                "пройти",
-                "как",
-                "в",
-                "музей?",
-                "Извините,"
+                "за",
+                "рядом",
+                "углом,",
+                "аптекой.",
+                "Да,",
+                "с"
               ],
-              "gabarito": "Извините, как пройти в музей?",
-              "explicacao": "Escreva: Извините, как пройти в музей?",
+              "gabarito": "Да, за углом, рядом с аптекой.",
+              "explicacao": "Escreva: Да, за углом, рядом с аптекой.",
               "id": "ru-039-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Извините, как пройти в музей?",
-              "respostaEsperada": "Извините, как пройти в музей?",
-              "explicacao": "Com licença, como chego ao museu?",
-              "id": "ru-039-x02",
               "complemento": true
             },
             {
@@ -411,23 +403,6 @@
               "gabarito": "до",
               "explicacao": "«до» + genitivo.",
               "id": "ru-039-e02"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Siga em frente até o semáforo e depois vire à esquerda.»",
-              "opcoes": [
-                "потом",
-                "Идите",
-                "налево.",
-                "прямо",
-                "поверните",
-                "до",
-                "светофора,"
-              ],
-              "gabarito": "Идите прямо до светофора, потом поверните налево.",
-              "explicacao": "Escreva: Идите прямо до светофора, потом поверните налево.",
-              "id": "ru-039-x03",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -444,29 +419,34 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Идите прямо до светофора, потом поверните налево.",
-              "respostaEsperada": "Идите прямо до светофора, потом поверните налево.",
-              "explicacao": "Siga em frente até o semáforo e depois vire à esquerda.",
-              "id": "ru-039-x04",
+              "audio": "Да, за углом, рядом с аптекой.",
+              "respostaEsperada": "Да, за углом, рядом с аптекой.",
+              "explicacao": "Sim, dobrando a esquina, ao lado da farmácia.",
+              "id": "ru-039-x02",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, cinco minutos a pé. O museu fica à direita, em frente ao banco.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Извините, как пройти в музей?",
+              "respostaEsperada": "Извините, как пройти в музей?",
+              "explicacao": "Com licença, como chego ao museu?",
+              "id": "ru-039-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «направо»?",
+              "audio": "направо",
               "opcoes": [
-                "пять",
-                "минут",
-                "Музей",
-                "справа,",
-                "будет",
-                "банка.",
-                "напротив",
-                "Нет,",
-                "пешком."
+                "à direita (movimento)",
+                "passando por",
+                "dobrando a esquina",
+                "cruzamento"
               ],
-              "gabarito": "Нет, пять минут пешком. Музей будет справа, напротив банка.",
-              "explicacao": "Escreva: Нет, пять минут пешком. Музей будет справа, напротив банка.",
-              "id": "ru-039-x05",
+              "gabarito": "à direita (movimento)",
+              "explicacao": "«направо» = à direita (movimento).",
+              "id": "ru-039-x03",
               "complemento": true
             },
             {
@@ -482,15 +462,6 @@
               "id": "ru-039-e04"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Нет, пять минут пешком. Музей будет справа, напротив банка.",
-              "respostaEsperada": "Нет, пять минут пешком. Музей будет справа, напротив банка.",
-              "explicacao": "Não, cinco minutos a pé. O museu fica à direita, em frente ao banco.",
-              "id": "ru-039-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Перейдите ___ дорогу.",
               "opcoes": [
@@ -503,28 +474,42 @@
               "id": "ru-039-e05"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigado! E lá tem ponto de ônibus?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «мимо»?",
+              "audio": "мимо",
               "opcoes": [
-                "есть",
-                "там",
-                "остановка",
-                "автобуса?",
-                "Спасибо!",
-                "А"
+                "atravessar",
+                "dobrando a esquina",
+                "à direita (movimento)",
+                "passando por"
               ],
-              "gabarito": "Спасибо! А там есть остановка автобуса?",
-              "explicacao": "Escreva: Спасибо! А там есть остановка автобуса?",
-              "id": "ru-039-x07",
+              "gabarito": "passando por",
+              "explicacao": "«мимо» = passando por.",
+              "id": "ru-039-x04",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Спасибо! А там есть остановка автобуса?",
-              "respostaEsperada": "Спасибо! А там есть остановка автобуса?",
-              "explicacao": "Obrigado! E lá tem ponto de ônibus?",
-              "id": "ru-039-x08",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Идите прямо до светофора, потом поверните налево.",
+              "respostaEsperada": "Идите прямо до светофора, потом поверните налево.",
+              "explicacao": "Siga em frente até o semáforo e depois vire à esquerda.",
+              "id": "ru-039-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «перейти»?",
+              "audio": "перейти",
+              "opcoes": [
+                "cruzamento",
+                "dobrando a esquina",
+                "atravessar",
+                "ponte"
+              ],
+              "gabarito": "atravessar",
+              "explicacao": "«перейти» = atravessar.",
+              "id": "ru-039-x05",
               "complemento": true
             },
             {
@@ -540,22 +525,6 @@
               "id": "ru-039-e06"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, dobrando a esquina, ao lado da farmácia.»",
-              "opcoes": [
-                "за",
-                "рядом",
-                "углом,",
-                "аптекой.",
-                "Да,",
-                "с"
-              ],
-              "gabarito": "Да, за углом, рядом с аптекой.",
-              "explicacao": "Escreva: Да, за углом, рядом с аптекой.",
-              "id": "ru-039-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Para «vire à esquerda» diga:",
               "opcoes": [
@@ -568,27 +537,18 @@
               "id": "ru-039-e07"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Да, за углом, рядом с аптекой.",
-              "respostaEsperada": "Да, за углом, рядом с аптекой.",
-              "explicacao": "Sim, dobrando a esquina, ao lado da farmácia.",
-              "id": "ru-039-x10",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «направо»?",
-              "audio": "направо",
+              "enunciado": "O que significa «перекрёсток»?",
+              "audio": "перекрёсток",
               "opcoes": [
-                "à direita (movimento)",
-                "passando por",
-                "dobrando a esquina",
-                "cruzamento"
+                "cruzamento",
+                "praça",
+                "rua",
+                "passando por"
               ],
-              "gabarito": "à direita (movimento)",
-              "explicacao": "«направо» = à direita (movimento).",
-              "id": "ru-039-x11",
+              "gabarito": "cruzamento",
+              "explicacao": "«перекрёсток» = cruzamento.",
+              "id": "ru-039-x06",
               "complemento": true
             },
             {
@@ -605,32 +565,41 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «мимо»?",
-              "audio": "мимо",
+              "enunciado": "O que significa «налево»?",
+              "audio": "налево",
               "opcoes": [
-                "atravessar",
-                "dobrando a esquina",
+                "faixa de pedestres",
                 "à direita (movimento)",
-                "passando por"
+                "dobrando a esquina",
+                "à esquerda (movimento)"
               ],
-              "gabarito": "passando por",
-              "explicacao": "«мимо» = passando por.",
-              "id": "ru-039-x12",
+              "gabarito": "à esquerda (movimento)",
+              "explicacao": "«налево» = à esquerda (movimento).",
+              "id": "ru-039-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Нет, пять минут пешком. Музей будет справа, напротив банка.",
+              "respostaEsperada": "Нет, пять минут пешком. Музей будет справа, напротив банка.",
+              "explicacao": "Não, cinco minutos a pé. O museu fica à direita, em frente ao banco.",
+              "id": "ru-039-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «перейти»?",
-              "audio": "перейти",
+              "enunciado": "O que significa «мост»?",
+              "audio": "мост",
               "opcoes": [
-                "cruzamento",
-                "dobrando a esquina",
+                "ponte",
                 "atravessar",
-                "ponte"
+                "semáforo",
+                "rua"
               ],
-              "gabarito": "atravessar",
-              "explicacao": "«перейти» = atravessar.",
-              "id": "ru-039-x13",
+              "gabarito": "ponte",
+              "explicacao": "«мост» = ponte.",
+              "id": "ru-039-x08",
               "complemento": true
             },
             {
@@ -646,21 +615,6 @@
               "id": "ru-039-e09"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «перекрёсток»?",
-              "audio": "перекрёсток",
-              "opcoes": [
-                "cruzamento",
-                "praça",
-                "rua",
-                "passando por"
-              ],
-              "gabarito": "cruzamento",
-              "explicacao": "«перекрёсток» = cruzamento.",
-              "id": "ru-039-x14",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Идите прямо до светофора.»",
               "opcoes": [
@@ -674,33 +628,43 @@
               "id": "ru-039-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «налево»?",
-              "audio": "налево",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Музей будет справа, напротив банка",
               "opcoes": [
-                "faixa de pedestres",
-                "à direita (movimento)",
-                "dobrando a esquina",
-                "à esquerda (movimento)"
+                "справа,",
+                "Музей",
+                "банка",
+                "будет",
+                "напротив"
               ],
-              "gabarito": "à esquerda (movimento)",
-              "explicacao": "«налево» = à esquerda (movimento).",
-              "id": "ru-039-x15",
+              "gabarito": "Музей будет справа, напротив банка",
+              "explicacao": "Escreva: Музей будет справа, напротив банка",
+              "id": "ru-039-x09",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «мост»?",
-              "audio": "мост",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Спасибо! А там есть остановка автобуса?",
+              "respostaEsperada": "Спасибо! А там есть остановка автобуса?",
+              "explicacao": "Obrigado! E lá tem ponto de ônibus?",
+              "id": "ru-039-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Как пройти в музей",
               "opcoes": [
-                "ponte",
-                "atravessar",
-                "semáforo",
-                "rua"
+                "пройти",
+                "музей",
+                "в",
+                "Как"
               ],
-              "gabarito": "ponte",
-              "explicacao": "«мост» = ponte.",
-              "id": "ru-039-x16",
+              "gabarito": "Как пройти в музей",
+              "explicacao": "Escreva: Как пройти в музей",
+              "id": "ru-039-x10",
               "complemento": true
             },
             {
@@ -717,22 +681,6 @@
               "id": "ru-039-e11"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Музей будет справа, напротив банка",
-              "opcoes": [
-                "справа,",
-                "Музей",
-                "банка",
-                "будет",
-                "напротив"
-              ],
-              "gabarito": "Музей будет справа, напротив банка",
-              "explicacao": "Escreva: Музей будет справа, напротив банка",
-              "id": "ru-039-x17",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva em cirílico.",
               "audio": "Как пройти в музей",
@@ -741,27 +689,12 @@
               "id": "ru-039-e12"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Как пройти в музей",
-              "opcoes": [
-                "пройти",
-                "музей",
-                "в",
-                "Как"
-              ],
-              "gabarito": "Как пройти в музей",
-              "explicacao": "Escreva: Как пройти в музей",
-              "id": "ru-039-x18",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Музей будет справа, напротив банка",
               "respostaEsperada": "Музей будет справа, напротив банка",
               "explicacao": "Escreva: Музей будет справа, напротив банка",
-              "id": "ru-039-x19",
+              "id": "ru-039-x11",
               "complemento": true
             },
             {

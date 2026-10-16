@@ -487,27 +487,17 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você já comeu sushi alguma vez?»",
+              "enunciado": "Monte a frase: «Não, nunca. E você?»",
               "opcoes": [
-                "du",
-                "schon",
-                "Sushi",
-                "Hast",
-                "gegessen?",
-                "einmal"
+                "nie.",
+                "du?",
+                "Und",
+                "Nein,",
+                "noch"
               ],
-              "gabarito": "Hast du schon einmal Sushi gegessen?",
-              "explicacao": "Escreva: Hast du schon einmal Sushi gegessen?",
+              "gabarito": "Nein, noch nie. Und du?",
+              "explicacao": "Escreva: Nein, noch nie. Und du?",
               "id": "de-023-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Hast du schon einmal Sushi gegessen?",
-              "respostaEsperada": "Hast du schon einmal Sushi gegessen?",
-              "explicacao": "Você já comeu sushi alguma vez?",
-              "id": "de-023-x02",
               "complemento": true
             },
             {
@@ -523,27 +513,12 @@
               "id": "de-023-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, nunca. E você?»",
-              "opcoes": [
-                "nie.",
-                "du?",
-                "Und",
-                "Nein,",
-                "noch"
-              ],
-              "gabarito": "Nein, noch nie. Und du?",
-              "explicacao": "Escreva: Nein, noch nie. Und du?",
-              "id": "de-023-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Nein, noch nie. Und du?",
               "respostaEsperada": "Nein, noch nie. Und du?",
               "explicacao": "Não, nunca. E você?",
-              "id": "de-023-x04",
+              "id": "de-023-x02",
               "complemento": true
             },
             {
@@ -560,30 +535,52 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, comi sushi em Berlim ano passado.»",
+              "enunciado": "Monte a frase: «Você esteve muitas vezes em Berlim?»",
               "opcoes": [
-                "ich",
-                "Jahr",
-                "letztes",
-                "habe",
-                "gegessen.",
-                "Ja,",
-                "Berlin",
                 "in",
-                "Sushi"
+                "gewesen?",
+                "Bist",
+                "du",
+                "oft",
+                "Berlin"
               ],
-              "gabarito": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
-              "explicacao": "Escreva: Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
-              "id": "de-023-x05",
+              "gabarito": "Bist du oft in Berlin gewesen?",
+              "explicacao": "Escreva: Bist du oft in Berlin gewesen?",
+              "id": "de-023-x03",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
-              "respostaEsperada": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
-              "explicacao": "Sim, comi sushi em Berlim ano passado.",
-              "id": "de-023-x06",
+              "audio": "Bist du oft in Berlin gewesen?",
+              "respostaEsperada": "Bist du oft in Berlin gewesen?",
+              "explicacao": "Você esteve muitas vezes em Berlim?",
+              "id": "de-023-x04",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Hast du schon einmal Sushi gegessen?",
+              "respostaEsperada": "Hast du schon einmal Sushi gegessen?",
+              "explicacao": "Você já comeu sushi alguma vez?",
+              "id": "de-023-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, estive lá três vezes.»",
+              "opcoes": [
+                "bin",
+                "dreimal",
+                "dort",
+                "ich",
+                "gewesen.",
+                "Ja,"
+              ],
+              "gabarito": "Ja, ich bin dreimal dort gewesen.",
+              "explicacao": "Escreva: Ja, ich bin dreimal dort gewesen.",
+              "id": "de-023-x05",
               "complemento": true
             },
             {
@@ -599,28 +596,12 @@
               "id": "de-023-e04"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você esteve muitas vezes em Berlim?»",
-              "opcoes": [
-                "in",
-                "gewesen?",
-                "Bist",
-                "du",
-                "oft",
-                "Berlin"
-              ],
-              "gabarito": "Bist du oft in Berlin gewesen?",
-              "explicacao": "Escreva: Bist du oft in Berlin gewesen?",
-              "id": "de-023-x07",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Bist du oft in Berlin gewesen?",
-              "respostaEsperada": "Bist du oft in Berlin gewesen?",
-              "explicacao": "Você esteve muitas vezes em Berlim?",
-              "id": "de-023-x08",
+              "audio": "Ja, ich bin dreimal dort gewesen.",
+              "respostaEsperada": "Ja, ich bin dreimal dort gewesen.",
+              "explicacao": "Sim, estive lá três vezes.",
+              "id": "de-023-x06",
               "complemento": true
             },
             {
@@ -634,80 +615,6 @@
               "gabarito": "ist",
               "explicacao": "«passieren» usa «sein».",
               "id": "de-023-e05"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, estive lá três vezes.»",
-              "opcoes": [
-                "bin",
-                "dreimal",
-                "dort",
-                "ich",
-                "gewesen.",
-                "Ja,"
-              ],
-              "gabarito": "Ja, ich bin dreimal dort gewesen.",
-              "explicacao": "Escreva: Ja, ich bin dreimal dort gewesen.",
-              "id": "de-023-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Er ist um sieben Uhr ___. (aufstehen)",
-              "opcoes": [
-                "aufgestanden",
-                "geaufstanden",
-                "aufgestehen"
-              ],
-              "gabarito": "aufgestanden",
-              "explicacao": "Separável irregular.",
-              "id": "de-023-e06"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ja, ich bin dreimal dort gewesen.",
-              "respostaEsperada": "Ja, ich bin dreimal dort gewesen.",
-              "explicacao": "Sim, estive lá três vezes.",
-              "id": "de-023-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você foi de trem?»",
-              "opcoes": [
-                "gefahren?",
-                "Bist",
-                "Zug",
-                "mit",
-                "dem",
-                "du"
-              ],
-              "gabarito": "Bist du mit dem Zug gefahren?",
-              "explicacao": "Escreva: Bist du mit dem Zug gefahren?",
-              "id": "de-023-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Quando se usa «sein» no Perfekt?",
-              "opcoes": [
-                "movimento ou mudança de estado, e sein/bleiben",
-                "sempre com verbos irregulares",
-                "com todos os separáveis"
-              ],
-              "gabarito": "movimento ou mudança de estado, e sein/bleiben",
-              "explicacao": "Regra de bolso.",
-              "id": "de-023-e07"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bist du mit dem Zug gefahren?",
-              "respostaEsperada": "Bist du mit dem Zug gefahren?",
-              "explicacao": "Você foi de trem?",
-              "id": "de-023-x12",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -725,7 +632,89 @@
               ],
               "gabarito": "Einmal mit dem Zug und zweimal bin ich geflogen.",
               "explicacao": "Escreva: Einmal mit dem Zug und zweimal bin ich geflogen.",
-              "id": "de-023-x13",
+              "id": "de-023-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Er ist um sieben Uhr ___. (aufstehen)",
+              "opcoes": [
+                "aufgestanden",
+                "geaufstanden",
+                "aufgestehen"
+              ],
+              "gabarito": "aufgestanden",
+              "explicacao": "Separável irregular.",
+              "id": "de-023-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+              "respostaEsperada": "Einmal mit dem Zug und zweimal bin ich geflogen.",
+              "explicacao": "Uma vez de trem e duas vezes eu voei.",
+              "id": "de-023-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+              "respostaEsperada": "Ja, ich habe letztes Jahr in Berlin Sushi gegessen.",
+              "explicacao": "Sim, comi sushi em Berlim ano passado.",
+              "id": "de-023-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Então você precisa vir junto em breve!»",
+              "opcoes": [
+                "du",
+                "mitkommen!",
+                "musst",
+                "bald",
+                "Dann"
+              ],
+              "gabarito": "Dann musst du bald mitkommen!",
+              "explicacao": "Escreva: Dann musst du bald mitkommen!",
+              "id": "de-023-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Quando se usa «sein» no Perfekt?",
+              "opcoes": [
+                "movimento ou mudança de estado, e sein/bleiben",
+                "sempre com verbos irregulares",
+                "com todos os separáveis"
+              ],
+              "gabarito": "movimento ou mudança de estado, e sein/bleiben",
+              "explicacao": "Regra de bolso.",
+              "id": "de-023-e07"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Dann musst du bald mitkommen!",
+              "respostaEsperada": "Dann musst du bald mitkommen!",
+              "explicacao": "Então você precisa vir junto em breve!",
+              "id": "de-023-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Com prazer! Tenho férias em agosto.»",
+              "opcoes": [
+                "Urlaub.",
+                "Ich",
+                "Gern!",
+                "im",
+                "habe",
+                "August"
+              ],
+              "gabarito": "Gern! Ich habe im August Urlaub.",
+              "explicacao": "Escreva: Gern! Ich habe im August Urlaub.",
+              "id": "de-023-x11",
               "complemento": true
             },
             {
@@ -743,27 +732,34 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Einmal mit dem Zug und zweimal bin ich geflogen.",
-              "respostaEsperada": "Einmal mit dem Zug und zweimal bin ich geflogen.",
-              "explicacao": "Uma vez de trem e duas vezes eu voei.",
-              "id": "de-023-x14",
+              "audio": "Gern! Ich habe im August Urlaub.",
+              "respostaEsperada": "Gern! Ich habe im August Urlaub.",
+              "explicacao": "Com prazer! Tenho férias em agosto.",
+              "id": "de-023-x12",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu nunca voei para Berlim.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bist du mit dem Zug gefahren?",
+              "respostaEsperada": "Bist du mit dem Zug gefahren?",
+              "explicacao": "Você foi de trem?",
+              "id": "de-023-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «gewinnen»?",
+              "audio": "gewinnen",
               "opcoes": [
-                "geflogen.",
-                "bin",
-                "nach",
-                "Ich",
-                "nie",
-                "Berlin",
-                "noch"
+                "ganhar",
+                "adormecer",
+                "perder",
+                "esquecer"
               ],
-              "gabarito": "Ich bin noch nie nach Berlin geflogen.",
-              "explicacao": "Escreva: Ich bin noch nie nach Berlin geflogen.",
-              "id": "de-023-x15",
+              "gabarito": "ganhar",
+              "explicacao": "«gewinnen» = ganhar.",
+              "id": "de-023-x13",
               "complemento": true
             },
             {
@@ -779,12 +775,18 @@
               "id": "de-023-e09"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich bin noch nie nach Berlin geflogen.",
-              "respostaEsperada": "Ich bin noch nie nach Berlin geflogen.",
-              "explicacao": "Eu nunca voei para Berlim.",
-              "id": "de-023-x16",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «vergessen»?",
+              "audio": "vergessen",
+              "opcoes": [
+                "esquecer",
+                "ganhar",
+                "adormecer",
+                "perder"
+              ],
+              "gabarito": "esquecer",
+              "explicacao": "«vergessen» = esquecer.",
+              "id": "de-023-x14",
               "complemento": true
             },
             {
@@ -802,27 +804,18 @@
               "id": "de-023-e10"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Então você precisa vir junto em breve!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «aufstehen / aufgestanden»?",
+              "audio": "aufstehen / aufgestanden",
               "opcoes": [
-                "du",
-                "mitkommen!",
-                "musst",
-                "bald",
-                "Dann"
+                "morrer",
+                "crescer",
+                "ganhar",
+                "levantar-se"
               ],
-              "gabarito": "Dann musst du bald mitkommen!",
-              "explicacao": "Escreva: Dann musst du bald mitkommen!",
-              "id": "de-023-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Dann musst du bald mitkommen!",
-              "respostaEsperada": "Dann musst du bald mitkommen!",
-              "explicacao": "Então você precisa vir junto em breve!",
-              "id": "de-023-x18",
+              "gabarito": "levantar-se",
+              "explicacao": "«aufstehen / aufgestanden» = levantar-se.",
+              "id": "de-023-x15",
               "complemento": true
             },
             {
@@ -840,28 +833,57 @@
               "id": "de-023-e11"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Com prazer! Tenho férias em agosto.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «passieren»?",
+              "audio": "passieren",
               "opcoes": [
-                "Urlaub.",
-                "Ich",
-                "Gern!",
-                "im",
-                "habe",
-                "August"
+                "acontecer",
+                "perder",
+                "esquecer",
+                "morrer"
               ],
-              "gabarito": "Gern! Ich habe im August Urlaub.",
-              "explicacao": "Escreva: Gern! Ich habe im August Urlaub.",
-              "id": "de-023-x19",
+              "gabarito": "acontecer",
+              "explicacao": "«passieren» = acontecer.",
+              "id": "de-023-x16",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Gern! Ich habe im August Urlaub.",
-              "respostaEsperada": "Gern! Ich habe im August Urlaub.",
-              "explicacao": "Com prazer! Tenho férias em agosto.",
-              "id": "de-023-x20",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich bin noch nie nach Berlin geflogen.",
+              "respostaEsperada": "Ich bin noch nie nach Berlin geflogen.",
+              "explicacao": "Eu nunca voei para Berlim.",
+              "id": "de-023-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «sterben»?",
+              "audio": "sterben",
+              "opcoes": [
+                "crescer",
+                "ganhar",
+                "acontecer",
+                "morrer"
+              ],
+              "gabarito": "morrer",
+              "explicacao": "«sterben» = morrer.",
+              "id": "de-023-x17",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «verlieren»?",
+              "audio": "verlieren",
+              "opcoes": [
+                "acontecer",
+                "esquecer",
+                "perder",
+                "crescer"
+              ],
+              "gabarito": "perder",
+              "explicacao": "«verlieren» = perder.",
+              "id": "de-023-x18",
               "complemento": true
             },
             {
@@ -878,33 +900,21 @@
               "id": "de-023-e12"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «gewinnen»?",
-              "audio": "gewinnen",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Ich bin noch nie nach Berlin geflogen",
               "opcoes": [
-                "ganhar",
-                "adormecer",
-                "perder",
-                "esquecer"
+                "nach",
+                "geflogen",
+                "Ich",
+                "nie",
+                "noch",
+                "bin",
+                "Berlin"
               ],
-              "gabarito": "ganhar",
-              "explicacao": "«gewinnen» = ganhar.",
-              "id": "de-023-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «vergessen»?",
-              "audio": "vergessen",
-              "opcoes": [
-                "esquecer",
-                "ganhar",
-                "adormecer",
-                "perder"
-              ],
-              "gabarito": "esquecer",
-              "explicacao": "«vergessen» = esquecer.",
-              "id": "de-023-x22",
+              "gabarito": "Ich bin noch nie nach Berlin geflogen",
+              "explicacao": "Escreva: Ich bin noch nie nach Berlin geflogen",
+              "id": "de-023-x19",
               "complemento": true
             },
             {
@@ -916,33 +926,19 @@
               "id": "de-023-e13"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «aufstehen / aufgestanden»?",
-              "audio": "aufstehen / aufgestanden",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Wir sind zu Hause geblieben",
               "opcoes": [
-                "morrer",
-                "crescer",
-                "ganhar",
-                "levantar-se"
+                "zu",
+                "Wir",
+                "sind",
+                "Hause",
+                "geblieben"
               ],
-              "gabarito": "levantar-se",
-              "explicacao": "«aufstehen / aufgestanden» = levantar-se.",
-              "id": "de-023-x23",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «passieren»?",
-              "audio": "passieren",
-              "opcoes": [
-                "acontecer",
-                "perder",
-                "esquecer",
-                "morrer"
-              ],
-              "gabarito": "acontecer",
-              "explicacao": "«passieren» = acontecer.",
-              "id": "de-023-x24",
+              "gabarito": "Wir sind zu Hause geblieben",
+              "explicacao": "Escreva: Wir sind zu Hause geblieben",
+              "id": "de-023-x20",
               "complemento": true
             },
             {

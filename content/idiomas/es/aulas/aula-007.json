@@ -566,22 +566,6 @@
               "id": "es-007-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olhe, Javier, esta é minha família.»",
-              "opcoes": [
-                "es",
-                "Javier,",
-                "Mira,",
-                "mi",
-                "familia.",
-                "esta"
-              ],
-              "gabarito": "Mira, Javier, esta es mi familia.",
-              "explicacao": "Escreva: Mira, Javier, esta es mi familia.",
-              "id": "es-007-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Mi madre se llama Rosa",
@@ -598,12 +582,22 @@
               "id": "es-007-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Mira, Javier, esta es mi familia.",
-              "respostaEsperada": "Mira, Javier, esta es mi familia.",
-              "explicacao": "Olhe, Javier, esta é minha família.",
-              "id": "es-007-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «São meus pais, Rosa e Manuel, e meus avós.»",
+              "opcoes": [
+                "mis",
+                "Manuel,",
+                "abuelos.",
+                "y",
+                "padres,",
+                "Rosa",
+                "y",
+                "Son",
+                "mis"
+              ],
+              "gabarito": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+              "explicacao": "Escreva: Son mis padres, Rosa y Manuel, y mis abuelos.",
+              "id": "es-007-x01",
               "complemento": true
             },
             {
@@ -613,6 +607,15 @@
               "respostaEsperada": "El libro de Ana",
               "explicacao": "Escreva: El libro de Ana.",
               "id": "es-007-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Mira, Javier, esta es mi familia.",
+              "respostaEsperada": "Mira, Javier, esta es mi familia.",
+              "explicacao": "Olhe, Javier, esta é minha família.",
+              "id": "es-007-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -639,21 +642,6 @@
               "id": "es-007-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que bonita! Quem são eles?»",
-              "opcoes": [
-                "son",
-                "bonita!",
-                "¿Quiénes",
-                "ellos?",
-                "¡Qué"
-              ],
-              "gabarito": "¡Qué bonita! ¿Quiénes son ellos?",
-              "explicacao": "Escreva: ¡Qué bonita! ¿Quiénes son ellos?",
-              "id": "es-007-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o plural misto de «hermano / hermana»?",
               "opcoes": [
@@ -664,6 +652,15 @@
               "gabarito": "los hermanos",
               "explicacao": "O masculino plural cobre o grupo misto.",
               "id": "es-007-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+              "respostaEsperada": "Son mis padres, Rosa y Manuel, y mis abuelos.",
+              "explicacao": "São meus pais, Rosa e Manuel, e meus avós.",
+              "id": "es-007-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -690,15 +687,6 @@
               "id": "es-007-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¡Qué bonita! ¿Quiénes son ellos?",
-              "respostaEsperada": "¡Qué bonita! ¿Quiénes son ellos?",
-              "explicacao": "Que bonita! Quem são eles?",
-              "id": "es-007-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual forma é correta?",
               "opcoes": [
@@ -709,6 +697,15 @@
               "gabarito": "tu casa",
               "explicacao": "O possessivo não leva til.",
               "id": "es-007-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¡Qué bonita! ¿Quiénes son ellos?",
+              "respostaEsperada": "¡Qué bonita! ¿Quiénes son ellos?",
+              "explicacao": "Que bonita! Quem são eles?",
+              "id": "es-007-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -723,6 +720,22 @@
               "id": "es-007-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Não, somos seis, com a minha avó.»",
+              "opcoes": [
+                "No,",
+                "mi",
+                "somos",
+                "seis,",
+                "con",
+                "abuela."
+              ],
+              "gabarito": "No, somos seis, con mi abuela.",
+              "explicacao": "Escreva: No, somos seis, con mi abuela.",
+              "id": "es-007-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Es el coche ___ profesor. (do)",
               "opcoes": [
@@ -733,25 +746,6 @@
               "gabarito": "del",
               "explicacao": "De + el = del.",
               "id": "es-007-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «São meus pais, Rosa e Manuel, e meus avós.»",
-              "opcoes": [
-                "mis",
-                "Manuel,",
-                "abuelos.",
-                "y",
-                "padres,",
-                "Rosa",
-                "y",
-                "Son",
-                "mis"
-              ],
-              "gabarito": "Son mis padres, Rosa y Manuel, y mis abuelos.",
-              "explicacao": "Escreva: Son mis padres, Rosa y Manuel, y mis abuelos.",
-              "id": "es-007-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -778,15 +772,6 @@
               "id": "es-007-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Son mis padres, Rosa y Manuel, y mis abuelos.",
-              "respostaEsperada": "Son mis padres, Rosa y Manuel, y mis abuelos.",
-              "explicacao": "São meus pais, Rosa e Manuel, e meus avós.",
-              "id": "es-007-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Tengo un hermano ___ . (mais velho)",
               "opcoes": [
@@ -797,6 +782,15 @@
               "gabarito": "mayor",
               "explicacao": "«Mayor» é o mais velho.",
               "id": "es-007-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "No, somos seis, con mi abuela.",
+              "respostaEsperada": "No, somos seis, con mi abuela.",
+              "explicacao": "Não, somos seis, com a minha avó.",
+              "id": "es-007-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -813,6 +807,15 @@
               "id": "es-007-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sí, tengo un hermano mayor y una hermana menor.",
+              "respostaEsperada": "Sí, tengo un hermano mayor y una hermana menor.",
+              "explicacao": "Sim, tenho um irmão mais velho e uma irmã mais nova.",
+              "id": "es-007-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Tengo dos hermanos y una hermana.»",
               "opcoes": [
@@ -826,25 +829,6 @@
               "gabarito": "Tengo dos hermanos y una hermana.",
               "explicacao": "Tener + quantidade.",
               "id": "es-007-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, tenho um irmão mais velho e uma irmã mais nova.»",
-              "opcoes": [
-                "mayor",
-                "un",
-                "una",
-                "tengo",
-                "Sí,",
-                "hermana",
-                "menor.",
-                "y",
-                "hermano"
-              ],
-              "gabarito": "Sí, tengo un hermano mayor y una hermana menor.",
-              "explicacao": "Escreva: Sí, tengo un hermano mayor y una hermana menor.",
-              "id": "es-007-x07",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -865,6 +849,21 @@
               "id": "es-007-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «el tío»?",
+              "audio": "el tío",
+              "opcoes": [
+                "o tio",
+                "o avô",
+                "a tia",
+                "mais novo(a)"
+              ],
+              "gabarito": "o tio",
+              "explicacao": "«el tío» = o tio.",
+              "id": "es-007-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Esta es ___ hermana, Ana. (sua, de você)",
               "opcoes": [
@@ -875,15 +874,6 @@
               "gabarito": "tu",
               "explicacao": "«Hermana» é singular, então «tu» (sem «s»).",
               "id": "es-007-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sí, tengo un hermano mayor y una hermana menor.",
-              "respostaEsperada": "Sí, tengo un hermano mayor y una hermana menor.",
-              "explicacao": "Sim, tenho um irmão mais velho e uma irmã mais nova.",
-              "id": "es-007-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -910,6 +900,15 @@
               "id": "es-007-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Entonces sois cinco en casa.",
+              "respostaEsperada": "Entonces sois cinco en casa.",
+              "explicacao": "Então vocês são cinco em casa.",
+              "id": "es-007-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «tios e tias» num só plural?",
               "opcoes": [
@@ -922,18 +921,18 @@
               "id": "es-007-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Então vocês são cinco em casa.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la madre»?",
+              "audio": "la madre",
               "opcoes": [
-                "en",
-                "sois",
-                "casa.",
-                "Entonces",
-                "cinco"
+                "a mãe",
+                "o avô",
+                "a tia",
+                "casado, casada"
               ],
-              "gabarito": "Entonces sois cinco en casa.",
-              "explicacao": "Escreva: Entonces sois cinco en casa.",
-              "id": "es-007-x09",
+              "gabarito": "a mãe",
+              "explicacao": "«la madre» = a mãe.",
+              "id": "es-007-x06",
               "complemento": true
             },
             {
@@ -959,15 +958,6 @@
               "gabarito": "solteiro",
               "explicacao": "«Soltero» é solteiro; casado é «casado».",
               "id": "es-007-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Entonces sois cinco en casa.",
-              "respostaEsperada": "Entonces sois cinco en casa.",
-              "explicacao": "Então vocês são cinco em casa.",
-              "id": "es-007-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

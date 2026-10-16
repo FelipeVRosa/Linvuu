@@ -589,25 +589,6 @@
               "id": "fr-003-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, me chamo Claire Martin. Como a senhora se chama?»",
-              "opcoes": [
-                "vous",
-                "je",
-                "?",
-                "Comment",
-                "appelez-vous",
-                "Bonjour,",
-                "m'appelle",
-                "Martin.",
-                "Claire"
-              ],
-              "gabarito": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
-              "explicacao": "Escreva: Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
-              "id": "fr-003-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Je m'appelle Ana",
@@ -624,12 +605,18 @@
               "id": "fr-003-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
-              "respostaEsperada": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
-              "explicacao": "Bom dia, me chamo Claire Martin. Como a senhora se chama?",
-              "id": "fr-003-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Prazer, Ana. Como vai?»",
+              "opcoes": [
+                "Enchantée,",
+                "Ana.",
+                "allez-vous",
+                "Comment",
+                "?"
+              ],
+              "gabarito": "Enchantée, Ana. Comment allez-vous ?",
+              "explicacao": "Escreva: Enchantée, Ana. Comment allez-vous ?",
+              "id": "fr-003-x01",
               "complemento": true
             },
             {
@@ -639,6 +626,15 @@
               "respostaEsperada": "Il a dix-huit ans",
               "explicacao": "Escreva: Il a dix-huit ans.",
               "id": "fr-003-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
+              "respostaEsperada": "Bonjour, je m'appelle Claire Martin. Comment vous appelez-vous ?",
+              "explicacao": "Bom dia, me chamo Claire Martin. Como a senhora se chama?",
+              "id": "fr-003-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -665,22 +661,6 @@
               "id": "fr-003-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, senhora. Me chamo Ana. Prazer.»",
-              "opcoes": [
-                "Ana.",
-                "Enchantée.",
-                "m'appelle",
-                "Je",
-                "madame.",
-                "Bonjour,"
-              ],
-              "gabarito": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
-              "explicacao": "Escreva: Bonjour, madame. Je m'appelle Ana. Enchantée.",
-              "id": "fr-003-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual preposição acompanha «la France»?",
               "opcoes": [
@@ -691,6 +671,15 @@
               "gabarito": "en",
               "explicacao": "País feminino: «en».",
               "id": "fr-003-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Enchantée, Ana. Comment allez-vous ?",
+              "respostaEsperada": "Enchantée, Ana. Comment allez-vous ?",
+              "explicacao": "Prazer, Ana. Como vai?",
+              "id": "fr-003-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -717,15 +706,6 @@
               "id": "fr-003-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
-              "respostaEsperada": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
-              "explicacao": "Bom dia, senhora. Me chamo Ana. Prazer.",
-              "id": "fr-003-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Nous ___ seize ans. (temos)",
               "opcoes": [
@@ -736,6 +716,15 @@
               "gabarito": "avons",
               "explicacao": "«nous avons».",
               "id": "fr-003-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
+              "respostaEsperada": "Bonjour, madame. Je m'appelle Ana. Enchantée.",
+              "explicacao": "Bom dia, senhora. Me chamo Ana. Prazer.",
+              "id": "fr-003-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -750,6 +739,19 @@
               "id": "fr-003-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Bom dia, Ana. Prazer.»",
+              "opcoes": [
+                "Ana.",
+                "Bonjour,",
+                "Enchanté."
+              ],
+              "gabarito": "Bonjour, Ana. Enchanté.",
+              "explicacao": "Escreva: Bonjour, Ana. Enchanté.",
+              "id": "fr-003-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je ___ Ana. (me chamo)",
               "opcoes": [
@@ -760,21 +762,6 @@
               "gabarito": "m'appelle",
               "explicacao": "«je m'appelle».",
               "id": "fr-003-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Prazer, Ana. Como vai?»",
-              "opcoes": [
-                "Enchantée,",
-                "Ana.",
-                "allez-vous",
-                "Comment",
-                "?"
-              ],
-              "gabarito": "Enchantée, Ana. Comment allez-vous ?",
-              "explicacao": "Escreva: Enchantée, Ana. Comment allez-vous ?",
-              "id": "fr-003-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -805,19 +792,19 @@
               "id": "fr-003-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Enchantée, Ana. Comment allez-vous ?",
-              "respostaEsperada": "Enchantée, Ana. Comment allez-vous ?",
-              "explicacao": "Prazer, Ana. Como vai?",
-              "id": "fr-003-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Eu me chamo Carlos. Tenho vinte anos. Moro no Brasil.",
               "respostaEsperada": "Je m'appelle Carlos. J'ai vingt ans. J'habite au Brésil.",
               "id": "fr-003-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Bonjour, Ana. Enchanté.",
+              "respostaEsperada": "Bonjour, Ana. Enchanté.",
+              "explicacao": "Bom dia, Ana. Prazer.",
+              "id": "fr-003-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -832,6 +819,15 @@
               "id": "fr-003-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Je vais bien, merci. Et vous ?",
+              "respostaEsperada": "Je vais bien, merci. Et vous ?",
+              "explicacao": "Vou bem, obrigada. E a senhora?",
+              "id": "fr-003-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Nous habitons ___ Espagne. (em)",
               "opcoes": [
@@ -842,23 +838,6 @@
               "gabarito": "en",
               "explicacao": "«L'Espagne» é feminino: «en Espagne».",
               "id": "fr-003-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Vou bem, obrigada. E a senhora?»",
-              "opcoes": [
-                "bien,",
-                "vais",
-                "vous",
-                "Et",
-                "?",
-                "merci.",
-                "Je"
-              ],
-              "gabarito": "Je vais bien, merci. Et vous ?",
-              "explicacao": "Escreva: Je vais bien, merci. Et vous ?",
-              "id": "fr-003-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -885,6 +864,21 @@
               "id": "fr-003-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «deux»?",
+              "audio": "deux",
+              "opcoes": [
+                "Itália, italiano",
+                "França, francês",
+                "dois",
+                "sete"
+              ],
+              "gabarito": "dois",
+              "explicacao": "«deux» = dois.",
+              "id": "fr-003-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Julie est ___ . (italiana)",
               "opcoes": [
@@ -895,15 +889,6 @@
               "gabarito": "italienne",
               "explicacao": "Feminino de «-ien» é «-ienne».",
               "id": "fr-003-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je vais bien, merci. Et vous ?",
-              "respostaEsperada": "Je vais bien, merci. Et vous ?",
-              "explicacao": "Vou bem, obrigada. E a senhora?",
-              "id": "fr-003-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -930,6 +915,15 @@
               "id": "fr-003-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Très bien, merci. Voici mon ami Paul.",
+              "respostaEsperada": "Très bien, merci. Voici mon ami Paul.",
+              "explicacao": "Muito bem, obrigada. Este é meu amigo Paul.",
+              "id": "fr-003-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -942,20 +936,18 @@
               "id": "fr-003-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito bem, obrigada. Este é meu amigo Paul.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «l'Allemagne, allemand»?",
+              "audio": "l'Allemagne, allemand",
               "opcoes": [
-                "Voici",
-                "Paul.",
-                "merci.",
-                "mon",
-                "ami",
-                "bien,",
-                "Très"
+                "Espanha, espanhol",
+                "quatro",
+                "Alemanha, alemão",
+                "eu me chamo"
               ],
-              "gabarito": "Très bien, merci. Voici mon ami Paul.",
-              "explicacao": "Escreva: Très bien, merci. Voici mon ami Paul.",
-              "id": "fr-003-x09",
+              "gabarito": "Alemanha, alemão",
+              "explicacao": "«l'Allemagne, allemand» = Alemanha, alemão.",
+              "id": "fr-003-x06",
               "complemento": true
             },
             {
@@ -982,15 +974,6 @@
               "gabarito": "Il habite en Italie.",
               "explicacao": "País feminino pede «en».",
               "id": "fr-003-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Très bien, merci. Voici mon ami Paul.",
-              "respostaEsperada": "Très bien, merci. Voici mon ami Paul.",
-              "explicacao": "Muito bem, obrigada. Este é meu amigo Paul.",
-              "id": "fr-003-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

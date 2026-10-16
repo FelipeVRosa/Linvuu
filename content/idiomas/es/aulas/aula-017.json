@@ -612,22 +612,6 @@
               "id": "es-017-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Elena. O que você fez hoje?»",
-              "opcoes": [
-                "has",
-                "hoy?",
-                "¿Qué",
-                "Hola,",
-                "hecho",
-                "Elena."
-              ],
-              "gabarito": "Hola, Elena. ¿Qué has hecho hoy?",
-              "explicacao": "Escreva: Hola, Elena. ¿Qué has hecho hoy?",
-              "id": "es-017-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Hoy he trabajado mucho",
@@ -644,12 +628,22 @@
               "id": "es-017-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Hola, Elena. ¿Qué has hecho hoy?",
-              "respostaEsperada": "Hola, Elena. ¿Qué has hecho hoy?",
-              "explicacao": "Oi, Elena. O que você fez hoje?",
-              "id": "es-017-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Eu sim. Você já esteve na serra?»",
+              "opcoes": [
+                "sí.",
+                "en",
+                "alguna",
+                "¿Has",
+                "Yo",
+                "sierra?",
+                "estado",
+                "la",
+                "vez"
+              ],
+              "gabarito": "Yo sí. ¿Has estado alguna vez en la sierra?",
+              "explicacao": "Escreva: Yo sí. ¿Has estado alguna vez en la sierra?",
+              "id": "es-017-x01",
               "complemento": true
             },
             {
@@ -659,6 +653,15 @@
               "respostaEsperada": "Nunca he estado en Madrid",
               "explicacao": "Escreva: Nunca he estado en Madrid.",
               "id": "es-017-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Hola, Elena. ¿Qué has hecho hoy?",
+              "respostaEsperada": "Hola, Elena. ¿Qué has hecho hoy?",
+              "explicacao": "Oi, Elena. O que você fez hoje?",
+              "id": "es-017-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -685,19 +688,6 @@
               "id": "es-017-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você já comeu?»",
-              "opcoes": [
-                "¿Has",
-                "ya?",
-                "comido"
-              ],
-              "gabarito": "¿Has comido ya?",
-              "explicacao": "Escreva: ¿Has comido ya?",
-              "id": "es-017-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o particípio de «escribir»?",
               "opcoes": [
@@ -708,6 +698,15 @@
               "gabarito": "escrito",
               "explicacao": "Particípio irregular: «escrito».",
               "id": "es-017-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Yo sí. ¿Has estado alguna vez en la sierra?",
+              "respostaEsperada": "Yo sí. ¿Has estado alguna vez en la sierra?",
+              "explicacao": "Eu sim. Você já esteve na serra?",
+              "id": "es-017-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -734,15 +733,6 @@
               "id": "es-017-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Has comido ya?",
-              "respostaEsperada": "¿Has comido ya?",
-              "explicacao": "Você já comeu?",
-              "id": "es-017-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Assisti a um filme»?",
               "opcoes": [
@@ -753,6 +743,15 @@
               "gabarito": "He visto una película.",
               "explicacao": "Filme se «vê»; «asistir a» é estar presente num evento.",
               "id": "es-017-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Has comido ya?",
+              "respostaEsperada": "¿Has comido ya?",
+              "explicacao": "Você já comeu?",
+              "id": "es-017-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -767,6 +766,19 @@
               "id": "es-017-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Combinado, de acordo.»",
+              "opcoes": [
+                "de",
+                "Vale,",
+                "acuerdo."
+              ],
+              "gabarito": "Vale, de acuerdo.",
+              "explicacao": "Escreva: Vale, de acuerdo.",
+              "id": "es-017-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ella ___ vuelto tarde. (haber)",
               "opcoes": [
@@ -777,25 +789,6 @@
               "gabarito": "ha",
               "explicacao": "Com «ella», a forma é «ha».",
               "id": "es-017-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu sim. Você já esteve na serra?»",
-              "opcoes": [
-                "sí.",
-                "en",
-                "alguna",
-                "¿Has",
-                "Yo",
-                "sierra?",
-                "estado",
-                "la",
-                "vez"
-              ],
-              "gabarito": "Yo sí. ¿Has estado alguna vez en la sierra?",
-              "explicacao": "Escreva: Yo sí. ¿Has estado alguna vez en la sierra?",
-              "id": "es-017-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -822,15 +815,6 @@
               "id": "es-017-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Yo sí. ¿Has estado alguna vez en la sierra?",
-              "respostaEsperada": "Yo sí. ¿Has estado alguna vez en la sierra?",
-              "explicacao": "Eu sim. Você já esteve na serra?",
-              "id": "es-017-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "¿Has estado ___ vez en Madrid?",
               "opcoes": [
@@ -841,6 +825,15 @@
               "gabarito": "alguna",
               "explicacao": "«Alguna vez» é a expressão fixa.",
               "id": "es-017-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Vale, de acuerdo.",
+              "respostaEsperada": "Vale, de acuerdo.",
+              "explicacao": "Combinado, de acordo.",
+              "id": "es-017-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -858,6 +851,15 @@
               "id": "es-017-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
+              "respostaEsperada": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
+              "explicacao": "Sim, estive duas vezes. Adoro. E você?",
+              "id": "es-017-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «¿Qué has hecho esta mañana?»",
               "opcoes": [
@@ -870,25 +872,6 @@
               "gabarito": "¿Qué has hecho esta mañana?",
               "explicacao": "O interrogativo abre a pergunta.",
               "id": "es-017-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, estive duas vezes. Adoro. E você?»",
-              "opcoes": [
-                "¿Y",
-                "he",
-                "dos",
-                "veces.",
-                "estado",
-                "Sí,",
-                "encanta.",
-                "Me",
-                "tú?"
-              ],
-              "gabarito": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
-              "explicacao": "Escreva: Sí, he estado dos veces. Me encanta. ¿Y tú?",
-              "id": "es-017-x07",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -909,6 +892,21 @@
               "id": "es-017-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «puesto»?",
+              "audio": "puesto",
+              "opcoes": [
+                "aberto (de abrir)",
+                "escrito (de escribir)",
+                "posto (de poner)",
+                "feito (de hacer)"
+              ],
+              "gabarito": "posto (de poner)",
+              "explicacao": "«puesto» = posto (de poner).",
+              "id": "es-017-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Todavía no he ___ el correo. (escribir)",
               "opcoes": [
@@ -919,15 +917,6 @@
               "gabarito": "escrito",
               "explicacao": "«Escribir» tem particípio irregular: «escrito».",
               "id": "es-017-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
-              "respostaEsperada": "Sí, he estado dos veces. Me encanta. ¿Y tú?",
-              "explicacao": "Sim, estive duas vezes. Adoro. E você?",
-              "id": "es-017-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -954,6 +943,15 @@
               "id": "es-017-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Yo nunca he estado. ¿Vamos este fin de semana?",
+              "respostaEsperada": "Yo nunca he estado. ¿Vamos este fin de semana?",
+              "explicacao": "Eu nunca estive. Vamos neste fim de semana?",
+              "id": "es-017-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o particípio de «ver»?",
               "opcoes": [
@@ -966,22 +964,18 @@
               "id": "es-017-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu nunca estive. Vamos neste fim de semana?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «hecho»?",
+              "audio": "hecho",
               "opcoes": [
-                "de",
-                "he",
-                "estado.",
-                "Yo",
-                "¿Vamos",
-                "este",
-                "fin",
+                "este ano",
                 "nunca",
-                "semana?"
+                "feito (de hacer)",
+                "escrito (de escribir)"
               ],
-              "gabarito": "Yo nunca he estado. ¿Vamos este fin de semana?",
-              "explicacao": "Escreva: Yo nunca he estado. ¿Vamos este fin de semana?",
-              "id": "es-017-x09",
+              "gabarito": "feito (de hacer)",
+              "explicacao": "«hecho» = feito (de hacer).",
+              "id": "es-017-x06",
               "complemento": true
             },
             {
@@ -1007,15 +1001,6 @@
               "gabarito": "Me he levantado.",
               "explicacao": "O pronome vem antes de «haber».",
               "id": "es-017-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Yo nunca he estado. ¿Vamos este fin de semana?",
-              "respostaEsperada": "Yo nunca he estado. ¿Vamos este fin de semana?",
-              "explicacao": "Eu nunca estive. Vamos neste fim de semana?",
-              "id": "es-017-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

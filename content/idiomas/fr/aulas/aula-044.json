@@ -475,23 +475,6 @@
               "id": "fr-044-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Se ao menos eu tivesse ouvido o seu conselho!»",
-              "opcoes": [
-                "seulement",
-                "écouté",
-                "conseil",
-                "Si",
-                "!",
-                "j'avais",
-                "ton"
-              ],
-              "gabarito": "Si seulement j'avais écouté ton conseil !",
-              "explicacao": "Escreva: Si seulement j'avais écouté ton conseil !",
-              "id": "fr-044-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Tu aurais pu me prévenir",
@@ -508,12 +491,24 @@
               "id": "fr-044-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Si seulement j'avais écouté ton conseil !",
-              "respostaEsperada": "Si seulement j'avais écouté ton conseil !",
-              "explicacao": "Se ao menos eu tivesse ouvido o seu conselho!",
-              "id": "fr-044-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, eu deveria. Se eu tivesse esperado, teria tido um preço melhor.»",
+              "opcoes": [
+                "j'avais",
+                "Si",
+                "Oui,",
+                "j'aurais",
+                "j'aurais",
+                "un",
+                "attendu,",
+                "prix.",
+                "eu",
+                "dû.",
+                "meilleur"
+              ],
+              "gabarito": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
+              "explicacao": "Escreva: Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
+              "id": "fr-044-x01",
               "complemento": true
             },
             {
@@ -523,6 +518,15 @@
               "respostaEsperada": "Nous serions partis plus tôt",
               "explicacao": "Escreva: Nous serions partis plus tôt.",
               "id": "fr-044-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Si seulement j'avais écouté ton conseil !",
+              "respostaEsperada": "Si seulement j'avais écouté ton conseil !",
+              "explicacao": "Se ao menos eu tivesse ouvido o seu conselho!",
+              "id": "fr-044-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -549,25 +553,6 @@
               "id": "fr-044-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu tinha dito para você não vender o seu carro.»",
-              "opcoes": [
-                "Je",
-                "ne",
-                "pas",
-                "de",
-                "ta",
-                "voiture.",
-                "vendre",
-                "t'avais",
-                "dit"
-              ],
-              "gabarito": "Je t'avais dit de ne pas vendre ta voiture.",
-              "explicacao": "Escreva: Je t'avais dit de ne pas vendre ta voiture.",
-              "id": "fr-044-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -578,6 +563,15 @@
               "gabarito": "Elle serait venue.",
               "explicacao": "Concordância e auxiliar.",
               "id": "fr-044-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
+              "respostaEsperada": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
+              "explicacao": "Sim, eu deveria. Se eu tivesse esperado, teria tido um preço melhor.",
+              "id": "fr-044-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -604,15 +598,6 @@
               "id": "fr-044-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je t'avais dit de ne pas vendre ta voiture.",
-              "respostaEsperada": "Je t'avais dit de ne pas vendre ta voiture.",
-              "explicacao": "Eu tinha dito para você não vender o seu carro.",
-              "id": "fr-044-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "J'___ réussi si j'avais étudié.",
               "opcoes": [
@@ -623,6 +608,15 @@
               "gabarito": "aurais",
               "explicacao": "Condicional passado.",
               "id": "fr-044-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Je t'avais dit de ne pas vendre ta voiture.",
+              "respostaEsperada": "Je t'avais dit de ne pas vendre ta voiture.",
+              "explicacao": "Eu tinha dito para você não vender o seu carro.",
+              "id": "fr-044-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -637,6 +631,21 @@
               "id": "fr-044-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «j'aurais dû»?",
+              "audio": "j'aurais dû",
+              "opcoes": [
+                "eu poderia ter",
+                "eu deveria ter",
+                "eu teria querido",
+                "se eu tivesse estudado"
+              ],
+              "gabarito": "eu deveria ter",
+              "explicacao": "«j'aurais dû» = eu deveria ter.",
+              "id": "fr-044-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Tu ___ pu m'appeler. (poderia ter)",
               "opcoes": [
@@ -647,24 +656,6 @@
               "gabarito": "aurais",
               "explicacao": "Condicional passado.",
               "id": "fr-044-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você tinha razão. Eu deveria ter esperado um pouco.»",
-              "opcoes": [
-                "dû",
-                "Tu",
-                "attendre",
-                "avais",
-                "peu.",
-                "J'aurais",
-                "un",
-                "raison."
-              ],
-              "gabarito": "Tu avais raison. J'aurais dû attendre un peu.",
-              "explicacao": "Escreva: Tu avais raison. J'aurais dû attendre un peu.",
-              "id": "fr-044-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -695,19 +686,25 @@
               "id": "fr-044-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Tu avais raison. J'aurais dû attendre un peu.",
-              "respostaEsperada": "Tu avais raison. J'aurais dû attendre un peu.",
-              "explicacao": "Você tinha razão. Eu deveria ter esperado um pouco.",
-              "id": "fr-044-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Se eu tivesse estudado, teria passado. Você poderia ter me avisado. Obrigado por ter vindo.",
               "respostaEsperada": "Si j'avais étudié, j'aurais réussi. Tu aurais pu me prévenir. Merci d'être venu.",
               "id": "fr-044-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il aurait fallu»?",
+              "audio": "il aurait fallu",
+              "opcoes": [
+                "eu poderia ter",
+                "teria sido preciso",
+                "se ao menos",
+                "repreender"
+              ],
+              "gabarito": "teria sido preciso",
+              "explicacao": "«il aurait fallu» = teria sido preciso.",
+              "id": "fr-044-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -722,6 +719,15 @@
               "id": "fr-044-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Tu avais raison. J'aurais dû attendre un peu.",
+              "respostaEsperada": "Tu avais raison. J'aurais dû attendre un peu.",
+              "explicacao": "Você tinha razão. Eu deveria ter esperado um pouco.",
+              "id": "fr-044-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Si tu m'___ appelé, je serais venu. (tivesse)",
               "opcoes": [
@@ -732,25 +738,6 @@
               "gabarito": "avais",
               "explicacao": "Depois de «si», usa-se o plus-que-parfait.",
               "id": "fr-044-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você poderia ter conversado com a sua família antes.»",
-              "opcoes": [
-                "pu",
-                "parler",
-                "avec",
-                "avant.",
-                "en",
-                "famille",
-                "ta",
-                "aurais",
-                "Tu"
-              ],
-              "gabarito": "Tu aurais pu en parler avec ta famille avant.",
-              "explicacao": "Escreva: Tu aurais pu en parler avec ta famille avant.",
-              "id": "fr-044-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -777,6 +764,21 @@
               "id": "fr-044-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «reprocher»?",
+              "audio": "reprocher",
+              "opcoes": [
+                "eu teria querido",
+                "repreender",
+                "eu deveria ter",
+                "perdoar"
+              ],
+              "gabarito": "repreender",
+              "explicacao": "«reprocher» = repreender.",
+              "id": "fr-044-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Excusez-moi ___ être en retard. (de)",
               "opcoes": [
@@ -787,15 +789,6 @@
               "gabarito": "d'",
               "explicacao": "«Excusez-moi de» + infinitivo (d' diante de vogal).",
               "id": "fr-044-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Tu aurais pu en parler avec ta famille avant.",
-              "respostaEsperada": "Tu aurais pu en parler avec ta famille avant.",
-              "explicacao": "Você poderia ter conversado com a sua família antes.",
-              "id": "fr-044-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -822,6 +815,15 @@
               "id": "fr-044-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Tu aurais pu en parler avec ta famille avant.",
+              "respostaEsperada": "Tu aurais pu en parler avec ta famille avant.",
+              "explicacao": "Você poderia ter conversado com a sua família antes.",
+              "id": "fr-044-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «Dommage !»?",
               "opcoes": [
@@ -834,24 +836,18 @@
               "id": "fr-044-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, eu deveria. Se eu tivesse esperado, teria tido um preço melhor.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «j'aurais voulu»?",
+              "audio": "j'aurais voulu",
               "opcoes": [
-                "j'avais",
-                "Si",
-                "Oui,",
-                "j'aurais",
-                "j'aurais",
-                "un",
-                "attendu,",
-                "prix.",
-                "eu",
-                "dû.",
-                "meilleur"
+                "agradecer",
+                "contente",
+                "eu teria querido",
+                "pena"
               ],
-              "gabarito": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
-              "explicacao": "Escreva: Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
-              "id": "fr-044-x09",
+              "gabarito": "eu teria querido",
+              "explicacao": "«j'aurais voulu» = eu teria querido.",
+              "id": "fr-044-x06",
               "complemento": true
             },
             {
@@ -880,15 +876,6 @@
               "gabarito": "Nous aurions dû partir plus tôt.",
               "explicacao": "«Aurions dû» + infinitivo.",
               "id": "fr-044-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
-              "respostaEsperada": "Oui, j'aurais dû. Si j'avais attendu, j'aurais eu un meilleur prix.",
-              "explicacao": "Sim, eu deveria. Se eu tivesse esperado, teria tido um preço melhor.",
-              "id": "fr-044-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

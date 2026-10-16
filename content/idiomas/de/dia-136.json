@@ -37,27 +37,20 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Boa noite! O que desejam beber?»",
+            "enunciado": "Monte a frase: «Eu quero água gelada e um chá quente.»",
             "opcoes": [
-              "Sie",
-              "Abend!",
-              "Was",
-              "Guten",
-              "möchten",
-              "trinken?"
+              "Tee.",
+              "möchte",
+              "und",
+              "einen",
+              "kaltes",
+              "Wasser",
+              "Ich",
+              "heißen"
             ],
-            "gabarito": "Guten Abend! Was möchten Sie trinken?",
-            "explicacao": "Escreva: Guten Abend! Was möchten Sie trinken?",
+            "gabarito": "Ich möchte kaltes Wasser und einen heißen Tee.",
+            "explicacao": "Escreva: Ich möchte kaltes Wasser und einen heißen Tee.",
             "id": "de-034-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Guten Abend! Was möchten Sie trinken?",
-            "respostaEsperada": "Guten Abend! Was möchten Sie trinken?",
-            "explicacao": "Boa noite! O que desejam beber?",
-            "id": "de-034-x02",
             "complemento": true
           },
           {
@@ -73,21 +66,12 @@
             "id": "de-034-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu quero água gelada e um chá quente.»",
-            "opcoes": [
-              "Tee.",
-              "möchte",
-              "und",
-              "einen",
-              "kaltes",
-              "Wasser",
-              "Ich",
-              "heißen"
-            ],
-            "gabarito": "Ich möchte kaltes Wasser und einen heißen Tee.",
-            "explicacao": "Escreva: Ich möchte kaltes Wasser und einen heißen Tee.",
-            "id": "de-034-x03",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich möchte kaltes Wasser und einen heißen Tee.",
+            "respostaEsperada": "Ich möchte kaltes Wasser und einen heißen Tee.",
+            "explicacao": "Eu quero água gelada e um chá quente.",
+            "id": "de-034-x02",
             "complemento": true
           },
           {
@@ -101,64 +85,6 @@
             "gabarito": "frisches",
             "explicacao": "Neutro sem artigo: -es.",
             "id": "de-034-e03"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ich möchte kaltes Wasser und einen heißen Tee.",
-            "respostaEsperada": "Ich möchte kaltes Wasser und einen heißen Tee.",
-            "explicacao": "Eu quero água gelada e um chá quente.",
-            "id": "de-034-x04",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Para mim, um suco de laranja fresco, por favor.»",
-            "opcoes": [
-              "bitte.",
-              "einen",
-              "Orangensaft,",
-              "Für",
-              "frischen",
-              "mich"
-            ],
-            "gabarito": "Für mich einen frischen Orangensaft, bitte.",
-            "explicacao": "Escreva: Für mich einen frischen Orangensaft, bitte.",
-            "id": "de-034-x05",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Ich trinke ___ Milch. (fria)",
-            "opcoes": [
-              "kalte",
-              "kalter",
-              "kaltes"
-            ],
-            "gabarito": "kalte",
-            "explicacao": "Feminino sem artigo: -e.",
-            "id": "de-034-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Für mich einen frischen Orangensaft, bitte.",
-            "respostaEsperada": "Für mich einen frischen Orangensaft, bitte.",
-            "explicacao": "Para mim, um suco de laranja fresco, por favor.",
-            "id": "de-034-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Ich habe ___ Freunde. (bons)",
-            "opcoes": [
-              "gute",
-              "guten",
-              "guter"
-            ],
-            "gabarito": "gute",
-            "explicacao": "Plural sem artigo: -e.",
-            "id": "de-034-e05"
           },
           {
             "tipo": "sentence-ordering",
@@ -178,20 +104,17 @@
             ],
             "gabarito": "Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
             "explicacao": "Escreva: Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
-            "id": "de-034-x07",
+            "id": "de-034-x03",
             "complemento": true
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Ich trinke mit ___ Kaffee. (frio)",
-            "opcoes": [
-              "kaltem",
-              "kalten",
-              "kalter"
-            ],
-            "gabarito": "kaltem",
-            "explicacao": "Dativo masculino sem artigo: -em.",
-            "id": "de-034-e06"
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Guten Abend! Was möchten Sie trinken?",
+            "respostaEsperada": "Guten Abend! Was möchten Sie trinken?",
+            "explicacao": "Boa noite! O que desejam beber?",
+            "id": "de-034-r01",
+            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -199,8 +122,20 @@
             "audio": "Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
             "respostaEsperada": "Gern. Und zum Essen? Wir haben frischen Fisch und frisches Gemüse.",
             "explicacao": "Com prazer. E para comer? Temos peixe fresco e legumes frescos.",
-            "id": "de-034-x08",
+            "id": "de-034-x04",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich trinke ___ Milch. (fria)",
+            "opcoes": [
+              "kalte",
+              "kalter",
+              "kaltes"
+            ],
+            "gabarito": "kalte",
+            "explicacao": "Feminino sem artigo: -e.",
+            "id": "de-034-e04"
           },
           {
             "tipo": "sentence-ordering",
@@ -216,20 +151,20 @@
             ],
             "gabarito": "Ich nehme gebratenen Fisch mit frischem Gemüse.",
             "explicacao": "Escreva: Ich nehme gebratenen Fisch mit frischem Gemüse.",
-            "id": "de-034-x09",
+            "id": "de-034-x05",
             "complemento": true
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Ich esse mit ___ Gemüse. (fresco)",
+            "enunciado": "Ich habe ___ Freunde. (bons)",
             "opcoes": [
-              "frischem",
-              "frischen",
-              "frischer"
+              "gute",
+              "guten",
+              "guter"
             ],
-            "gabarito": "frischem",
-            "explicacao": "Dativo neutro sem artigo: -em.",
-            "id": "de-034-e07"
+            "gabarito": "gute",
+            "explicacao": "Plural sem artigo: -e.",
+            "id": "de-034-e05"
           },
           {
             "tipo": "audio-recognition",
@@ -237,58 +172,20 @@
             "audio": "Ich nehme gebratenen Fisch mit frischem Gemüse.",
             "respostaEsperada": "Ich nehme gebratenen Fisch mit frischem Gemüse.",
             "explicacao": "Eu levo peixe frito com legumes frescos.",
-            "id": "de-034-x10",
+            "id": "de-034-x06",
             "complemento": true
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Ich habe viele ___ Bücher. (novos)",
+            "enunciado": "Ich trinke mit ___ Kaffee. (frio)",
             "opcoes": [
-              "neue",
-              "neuen",
-              "neuer"
+              "kaltem",
+              "kalten",
+              "kalter"
             ],
-            "gabarito": "neue",
-            "explicacao": "Depois de «viele»: -e.",
-            "id": "de-034-e08"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu quero uma boa sopa e pão fresco.»",
-            "opcoes": [
-              "und",
-              "möchte",
-              "Suppe",
-              "Ich",
-              "frisches",
-              "gute",
-              "Brot."
-            ],
-            "gabarito": "Ich möchte gute Suppe und frisches Brot.",
-            "explicacao": "Escreva: Ich möchte gute Suppe und frisches Brot.",
-            "id": "de-034-x11",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ich möchte gute Suppe und frisches Brot.",
-            "respostaEsperada": "Ich möchte gute Suppe und frisches Brot.",
-            "explicacao": "Eu quero uma boa sopa e pão fresco.",
-            "id": "de-034-x12",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Sem artigo, o adjetivo usa as terminações de:",
-            "opcoes": [
-              "der, die, das",
-              "ein, eine, ein",
-              "dem, der, den"
-            ],
-            "gabarito": "der, die, das",
-            "explicacao": "Terminações fortes.",
-            "id": "de-034-e09"
+            "gabarito": "kaltem",
+            "explicacao": "Dativo masculino sem artigo: -em.",
+            "id": "de-034-e06"
           },
           {
             "tipo": "sentence-ordering",
@@ -305,7 +202,86 @@
             ],
             "gabarito": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
             "explicacao": "Escreva: Sehr gern. Möchten Sie auch einen gemischten Salat?",
-            "id": "de-034-x13",
+            "id": "de-034-x07",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Für mich einen frischen Orangensaft, bitte.",
+            "respostaEsperada": "Für mich einen frischen Orangensaft, bitte.",
+            "explicacao": "Para mim, um suco de laranja fresco, por favor.",
+            "id": "de-034-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
+            "respostaEsperada": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
+            "explicacao": "Com prazer. Querem também uma salada mista?",
+            "id": "de-034-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich esse mit ___ Gemüse. (fresco)",
+            "opcoes": [
+              "frischem",
+              "frischen",
+              "frischer"
+            ],
+            "gabarito": "frischem",
+            "explicacao": "Dativo neutro sem artigo: -em.",
+            "id": "de-034-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «E muitos cumprimentos ao cozinheiro!»",
+            "opcoes": [
+              "den",
+              "Und",
+              "Koch!",
+              "viele",
+              "Grüße",
+              "an"
+            ],
+            "gabarito": "Und viele Grüße an den Koch!",
+            "explicacao": "Escreva: Und viele Grüße an den Koch!",
+            "id": "de-034-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe viele ___ Bücher. (novos)",
+            "opcoes": [
+              "neue",
+              "neuen",
+              "neuer"
+            ],
+            "gabarito": "neue",
+            "explicacao": "Depois de «viele»: -e.",
+            "id": "de-034-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Sem artigo, o adjetivo usa as terminações de:",
+            "opcoes": [
+              "der, die, das",
+              "ein, eine, ein",
+              "dem, der, den"
+            ],
+            "gabarito": "der, die, das",
+            "explicacao": "Terminações fortes.",
+            "id": "de-034-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Und viele Grüße an den Koch!",
+            "respostaEsperada": "Und viele Grüße an den Koch!",
+            "explicacao": "E muitos cumprimentos ao cozinheiro!",
+            "id": "de-034-x10",
             "complemento": true
           },
           {
@@ -321,28 +297,37 @@
             "id": "de-034-e10"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
-            "respostaEsperada": "Sehr gern. Möchten Sie auch einen gemischten Salat?",
-            "explicacao": "Com prazer. Querem também uma salada mista?",
-            "id": "de-034-x14",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Com prazer. Bom apetite!»",
+            "opcoes": [
+              "mache",
+              "Guten",
+              "ich",
+              "gern.",
+              "Appetit!",
+              "Das"
+            ],
+            "gabarito": "Das mache ich gern. Guten Appetit!",
+            "explicacao": "Escreva: Das mache ich gern. Guten Appetit!",
+            "id": "de-034-x11",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, obrigada. Temos comida suficiente.»",
-            "opcoes": [
-              "danke.",
-              "Wir",
-              "Nein,",
-              "Essen.",
-              "genug",
-              "haben"
-            ],
-            "gabarito": "Nein, danke. Wir haben genug Essen.",
-            "explicacao": "Escreva: Nein, danke. Wir haben genug Essen.",
-            "id": "de-034-x15",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ich möchte gute Suppe und frisches Brot.",
+            "respostaEsperada": "Ich möchte gute Suppe und frisches Brot.",
+            "explicacao": "Eu quero uma boa sopa e pão fresco.",
+            "id": "de-034-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Das mache ich gern. Guten Appetit!",
+            "respostaEsperada": "Das mache ich gern. Guten Appetit!",
+            "explicacao": "Com prazer. Bom apetite!",
+            "id": "de-034-x12",
             "complemento": true
           },
           {
@@ -358,12 +343,18 @@
             "id": "de-034-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Nein, danke. Wir haben genug Essen.",
-            "respostaEsperada": "Nein, danke. Wir haben genug Essen.",
-            "explicacao": "Não, obrigada. Temos comida suficiente.",
-            "id": "de-034-x16",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «kalt»?",
+            "audio": "kalt",
+            "opcoes": [
+              "frio",
+              "vários",
+              "poucos",
+              "alguns"
+            ],
+            "gabarito": "frio",
+            "explicacao": "«kalt» = frio.",
+            "id": "de-034-x13",
             "complemento": true
           },
           {
@@ -379,19 +370,18 @@
             "id": "de-034-e12"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E muitos cumprimentos ao cozinheiro!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «alles»?",
+            "audio": "alles",
             "opcoes": [
-              "den",
-              "Und",
-              "Koch!",
-              "viele",
-              "Grüße",
-              "an"
+              "legumes, verduras",
+              "alguns",
+              "nada",
+              "tudo"
             ],
-            "gabarito": "Und viele Grüße an den Koch!",
-            "explicacao": "Escreva: Und viele Grüße an den Koch!",
-            "id": "de-034-x17",
+            "gabarito": "tudo",
+            "explicacao": "«alles» = tudo.",
+            "id": "de-034-x14",
             "complemento": true
           },
           {
@@ -408,28 +398,42 @@
             "id": "de-034-e13"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Und viele Grüße an den Koch!",
-            "respostaEsperada": "Und viele Grüße an den Koch!",
-            "explicacao": "E muitos cumprimentos ao cozinheiro!",
-            "id": "de-034-x18",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «der Reis»?",
+            "audio": "der Reis",
+            "opcoes": [
+              "arroz",
+              "frio",
+              "tudo",
+              "vários"
+            ],
+            "gabarito": "arroz",
+            "explicacao": "«der Reis» = arroz.",
+            "id": "de-034-x15",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Com prazer. Bom apetite!»",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Nein, danke. Wir haben genug Essen.",
+            "respostaEsperada": "Nein, danke. Wir haben genug Essen.",
+            "explicacao": "Não, obrigada. Temos comida suficiente.",
+            "id": "de-034-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «das Öl»?",
+            "audio": "das Öl",
             "opcoes": [
-              "mache",
-              "Guten",
-              "ich",
-              "gern.",
-              "Appetit!",
-              "Das"
+              "óleo, azeite",
+              "bastante, suficiente",
+              "algo, um pouco de",
+              "quente"
             ],
-            "gabarito": "Das mache ich gern. Guten Appetit!",
-            "explicacao": "Escreva: Das mache ich gern. Guten Appetit!",
-            "id": "de-034-x19",
+            "gabarito": "óleo, azeite",
+            "explicacao": "«das Öl» = óleo, azeite.",
+            "id": "de-034-x16",
             "complemento": true
           },
           {
@@ -446,12 +450,18 @@
             "id": "de-034-e14"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Das mache ich gern. Guten Appetit!",
-            "respostaEsperada": "Das mache ich gern. Guten Appetit!",
-            "explicacao": "Com prazer. Bom apetite!",
-            "id": "de-034-x20",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «wenige»?",
+            "audio": "wenige",
+            "opcoes": [
+              "poucos",
+              "legumes, verduras",
+              "quente",
+              "arroz"
+            ],
+            "gabarito": "poucos",
+            "explicacao": "«wenige» = poucos.",
+            "id": "de-034-x17",
             "complemento": true
           },
           {
@@ -464,32 +474,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «kalt»?",
-            "audio": "kalt",
+            "enunciado": "O que significa «etwas»?",
+            "audio": "etwas",
             "opcoes": [
-              "frio",
-              "vários",
-              "poucos",
-              "alguns"
-            ],
-            "gabarito": "frio",
-            "explicacao": "«kalt» = frio.",
-            "id": "de-034-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «alles»?",
-            "audio": "alles",
-            "opcoes": [
+              "algo, um pouco de",
               "legumes, verduras",
-              "alguns",
               "nada",
-              "tudo"
+              "muitos"
             ],
-            "gabarito": "tudo",
-            "explicacao": "«alles» = tudo.",
-            "id": "de-034-x22",
+            "gabarito": "algo, um pouco de",
+            "explicacao": "«etwas» = algo, um pouco de.",
+            "id": "de-034-x18",
             "complemento": true
           },
           {

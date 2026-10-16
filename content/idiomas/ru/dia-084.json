@@ -36,20 +36,6 @@
             "id": "ru-021-e01"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá! Como o senhor se chama?»",
-            "opcoes": [
-              "зовут?",
-              "Как",
-              "вас",
-              "Здравствуйте!"
-            ],
-            "gabarito": "Здравствуйте! Как вас зовут?",
-            "explicacao": "Escreva: Здравствуйте! Как вас зовут?",
-            "id": "ru-021-x01",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Это ___ книга. (nova)",
             "opcoes": [
@@ -60,27 +46,6 @@
             "gabarito": "новая",
             "explicacao": "книга é feminino.",
             "id": "ru-021-e02"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Здравствуйте! Как вас зовут?",
-            "respostaEsperada": "Здравствуйте! Как вас зовут?",
-            "explicacao": "Olá! Como o senhor se chama?",
-            "id": "ru-021-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Plural de «книга»:",
-            "opcoes": [
-              "книги",
-              "книгы",
-              "книга"
-            ],
-            "gabarito": "книги",
-            "explicacao": "Depois de г: -и.",
-            "id": "ru-021-e03"
           },
           {
             "tipo": "sentence-ordering",
@@ -95,8 +60,20 @@
             ],
             "gabarito": "Здравствуйте! Меня зовут Паоло. А вас?",
             "explicacao": "Escreva: Здравствуйте! Меня зовут Паоло. А вас?",
-            "id": "ru-021-x03",
+            "id": "ru-021-x01",
             "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Plural de «книга»:",
+            "opcoes": [
+              "книги",
+              "книгы",
+              "книга"
+            ],
+            "gabarito": "книги",
+            "explicacao": "Depois de г: -и.",
+            "id": "ru-021-e03"
           },
           {
             "tipo": "fill-gap",
@@ -116,56 +93,17 @@
             "audio": "Здравствуйте! Меня зовут Паоло. А вас?",
             "respostaEsperada": "Здравствуйте! Меня зовут Паоло. А вас?",
             "explicacao": "Olá! Eu me chamo Paolo. E a senhora?",
-            "id": "ru-021-x04",
+            "id": "ru-021-x02",
             "complemento": true
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Я живу в ___. (Moscou)",
-            "opcoes": [
-              "Москве",
-              "Москва",
-              "Москву"
-            ],
-            "gabarito": "Москве",
-            "explicacao": "в + preposicional.",
-            "id": "ru-021-e05"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu me chamo Anna. De onde o senhor é?»",
-            "opcoes": [
-              "зовут",
-              "Анна.",
-              "вы?",
-              "Меня",
-              "Откуда"
-            ],
-            "gabarito": "Меня зовут Анна. Откуда вы?",
-            "explicacao": "Escreva: Меня зовут Анна. Откуда вы?",
-            "id": "ru-021-x05",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Здравствуйте! Как вас зовут?",
+            "respostaEsperada": "Здравствуйте! Как вас зовут?",
+            "explicacao": "Olá! Como o senhor se chama?",
+            "id": "ru-021-r01",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Меня зовут Анна. Откуда вы?",
-            "respostaEsperada": "Меня зовут Анна. Откуда вы?",
-            "explicacao": "Eu me chamo Anna. De onde o senhor é?",
-            "id": "ru-021-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Я читаю ___. (livro)",
-            "opcoes": [
-              "книгу",
-              "книга",
-              "книги"
-            ],
-            "gabarito": "книгу",
-            "explicacao": "Acusativo: -а → -у.",
-            "id": "ru-021-e06"
           },
           {
             "tipo": "sentence-ordering",
@@ -183,7 +121,40 @@
             ],
             "gabarito": "Я из Италии. Я живу в Москве. А вы?",
             "explicacao": "Escreva: Я из Италии. Я живу в Москве. А вы?",
-            "id": "ru-021-x07",
+            "id": "ru-021-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Я живу в ___. (Moscou)",
+            "opcoes": [
+              "Москве",
+              "Москва",
+              "Москву"
+            ],
+            "gabarito": "Москве",
+            "explicacao": "в + preposicional.",
+            "id": "ru-021-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Я читаю ___. (livro)",
+            "opcoes": [
+              "книгу",
+              "книга",
+              "книги"
+            ],
+            "gabarito": "книгу",
+            "explicacao": "Acusativo: -а → -у.",
+            "id": "ru-021-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Я из Италии. Я живу в Москве. А вы?",
+            "respostaEsperada": "Я из Италии. Я живу в Москве. А вы?",
+            "explicacao": "Sou da Itália. Moro em Moscou. E a senhora?",
+            "id": "ru-021-x04",
             "complemento": true
           },
           {
@@ -199,15 +170,6 @@
             "id": "ru-021-e07"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Я из Италии. Я живу в Москве. А вы?",
-            "respostaEsperada": "Я из Италии. Я живу в Москве. А вы?",
-            "explicacao": "Sou da Itália. Moro em Moscou. E a senhora?",
-            "id": "ru-021-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Passado de «работать» (ela):",
             "opcoes": [
@@ -221,20 +183,28 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sou russa. Moro em Moscou. O senhor trabalha?»",
+            "enunciado": "Monte a frase: «Sim, trabalho num escritório. Sou engenheiro.»",
             "opcoes": [
-              "живу",
-              "русская.",
-              "Москве.",
+              "Да,",
+              "инженер.",
               "в",
-              "Я",
-              "работаете?",
-              "Вы",
+              "офисе.",
+              "работаю",
+              "я",
               "Я"
             ],
-            "gabarito": "Я русская. Я живу в Москве. Вы работаете?",
-            "explicacao": "Escreva: Я русская. Я живу в Москве. Вы работаете?",
-            "id": "ru-021-x09",
+            "gabarito": "Да, я работаю в офисе. Я инженер.",
+            "explicacao": "Escreva: Да, я работаю в офисе. Я инженер.",
+            "id": "ru-021-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Меня зовут Анна. Откуда вы?",
+            "respostaEsperada": "Меня зовут Анна. Откуда вы?",
+            "explicacao": "Eu me chamo Anna. De onde o senhor é?",
+            "id": "ru-021-r02",
             "complemento": true
           },
           {
@@ -252,10 +222,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Я русская. Я живу в Москве. Вы работаете?",
-            "respostaEsperada": "Я русская. Я живу в Москве. Вы работаете?",
-            "explicacao": "Sou russa. Moro em Moscou. O senhor trabalha?",
-            "id": "ru-021-x10",
+            "audio": "Да, я работаю в офисе. Я инженер.",
+            "respostaEsperada": "Да, я работаю в офисе. Я инженер.",
+            "explicacao": "Sim, trabalho num escritório. Sou engenheiro.",
+            "id": "ru-021-x06",
             "complemento": true
           },
           {
@@ -272,19 +242,18 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, trabalho num escritório. Sou engenheiro.»",
+            "enunciado": "Monte a frase: «Sim, muito! Eu gosto desta cidade.»",
             "opcoes": [
+              "город.",
               "Да,",
-              "инженер.",
-              "в",
-              "офисе.",
-              "работаю",
-              "я",
-              "Я"
+              "этот",
+              "нравится",
+              "очень!",
+              "Мне"
             ],
-            "gabarito": "Да, я работаю в офисе. Я инженер.",
-            "explicacao": "Escreva: Да, я работаю в офисе. Я инженер.",
-            "id": "ru-021-x11",
+            "gabarito": "Да, очень! Мне нравится этот город.",
+            "explicacao": "Escreva: Да, очень! Мне нравится этот город.",
+            "id": "ru-021-x07",
             "complemento": true
           },
           {
@@ -300,12 +269,21 @@
             "id": "ru-021-e11"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я русская. Я живу в Москве. Вы работаете?",
+            "respostaEsperada": "Я русская. Я живу в Москве. Вы работаете?",
+            "explicacao": "Sou russa. Moro em Moscou. O senhor trabalha?",
+            "id": "ru-021-r03",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Да, я работаю в офисе. Я инженер.",
-            "respostaEsperada": "Да, я работаю в офисе. Я инженер.",
-            "explicacao": "Sim, trabalho num escritório. Sou engenheiro.",
-            "id": "ru-021-x12",
+            "audio": "Да, очень! Мне нравится этот город.",
+            "respostaEsperada": "Да, очень! Мне нравится этот город.",
+            "explicacao": "Sim, muito! Eu gosto desta cidade.",
+            "id": "ru-021-x08",
             "complemento": true
           },
           {
@@ -321,19 +299,6 @@
             "id": "ru-021-e12"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O senhor gosta de Moscou?»",
-            "opcoes": [
-              "Москву?",
-              "любите",
-              "Вы"
-            ],
-            "gabarito": "Вы любите Москву?",
-            "explicacao": "Escreva: Вы любите Москву?",
-            "id": "ru-021-x13",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Сейчас пять ___. (horas)",
             "opcoes": [
@@ -346,12 +311,18 @@
             "id": "ru-021-e13"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Вы любите Москву?",
-            "respostaEsperada": "Вы любите Москву?",
-            "explicacao": "O senhor gosta de Moscou?",
-            "id": "ru-021-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «много»?",
+            "audio": "много",
+            "opcoes": [
+              "muito (Я много читаю)",
+              "pouco (Я мало работаю)",
+              "por isso",
+              "só, apenas"
+            ],
+            "gabarito": "muito (Я много читаю)",
+            "explicacao": "«много» = muito (Я много читаю).",
+            "id": "ru-021-x09",
             "complemento": true
           },
           {
@@ -368,31 +339,6 @@
             "id": "ru-021-e14"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, muito! Eu gosto desta cidade.»",
-            "opcoes": [
-              "город.",
-              "Да,",
-              "этот",
-              "нравится",
-              "очень!",
-              "Мне"
-            ],
-            "gabarito": "Да, очень! Мне нравится этот город.",
-            "explicacao": "Escreva: Да, очень! Мне нравится этот город.",
-            "id": "ru-021-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, очень! Мне нравится этот город.",
-            "respostaEsperada": "Да, очень! Мне нравится этот город.",
-            "explicacao": "Sim, muito! Eu gosto desta cidade.",
-            "id": "ru-021-x16",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Мы ___ быстро. (говорить)",
             "opcoes": [
@@ -406,17 +352,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «много»?",
-            "audio": "много",
+            "enunciado": "O que significa «только»?",
+            "audio": "только",
             "opcoes": [
-              "muito (Я много читаю)",
-              "pouco (Я мало работаю)",
               "por isso",
+              "pouco (Я мало работаю)",
+              "se",
               "só, apenas"
             ],
-            "gabarito": "muito (Я много читаю)",
-            "explicacao": "«много» = muito (Я много читаю).",
-            "id": "ru-021-x17",
+            "gabarito": "só, apenas",
+            "explicacao": "«только» = só, apenas.",
+            "id": "ru-021-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Вы любите Москву?",
+            "respostaEsperada": "Вы любите Москву?",
+            "explicacao": "O senhor gosta de Moscou?",
+            "id": "ru-021-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «поэтому»?",
+            "audio": "поэтому",
+            "opcoes": [
+              "muito (Я много читаю)",
+              "só, apenas",
+              "se",
+              "por isso"
+            ],
+            "gabarito": "por isso",
+            "explicacao": "«поэтому» = por isso.",
+            "id": "ru-021-x11",
             "complemento": true
           },
           {
@@ -432,21 +402,6 @@
             "id": "ru-021-e16"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «только»?",
-            "audio": "только",
-            "opcoes": [
-              "por isso",
-              "pouco (Я мало работаю)",
-              "se",
-              "só, apenas"
-            ],
-            "gabarito": "só, apenas",
-            "explicacao": "«только» = só, apenas.",
-            "id": "ru-021-x18",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Мой брат ___ в школе. (trabalha)",
             "opcoes": [
@@ -457,29 +412,6 @@
             "gabarito": "работает",
             "explicacao": "он → -ет.",
             "id": "ru-021-e17"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «поэтому»?",
-            "audio": "поэтому",
-            "opcoes": [
-              "muito (Я много читаю)",
-              "só, apenas",
-              "se",
-              "por isso"
-            ],
-            "gabarito": "por isso",
-            "explicacao": "«поэтому» = por isso.",
-            "id": "ru-021-x19",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Я живу в Москве и работаю в школе",
-            "respostaEsperada": "Я живу в Москве и работаю в школе",
-            "explicacao": "preposicional + verbos -ть.",
-            "id": "ru-021-e18"
           },
           {
             "tipo": "sentence-ordering",
@@ -497,8 +429,16 @@
             ],
             "gabarito": "Я живу в Москве и работаю в школе",
             "explicacao": "Escreva: Я живу в Москве и работаю в школе",
-            "id": "ru-021-x20",
+            "id": "ru-021-x12",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Я живу в Москве и работаю в школе",
+            "respostaEsperada": "Я живу в Москве и работаю в школе",
+            "explicacao": "preposicional + verbos -ть.",
+            "id": "ru-021-e18"
           },
           {
             "tipo": "producao",

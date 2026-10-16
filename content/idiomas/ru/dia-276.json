@@ -37,30 +37,17 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá, Boris Ivanovich. Escrevo-lhe a respeito da vaga.»",
+            "enunciado": "Monte a frase: «Olá, Anna. A senhora enviou o currículo?»",
             "opcoes": [
-              "поводу",
-              "вам",
-              "вакансии.",
-              "Борис",
-              "пишу",
-              "по",
-              "Иванович.",
+              "Анна.",
+              "резюме?",
               "Здравствуйте,",
-              "Я"
+              "отправили",
+              "Вы"
             ],
-            "gabarito": "Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
-            "explicacao": "Escreva: Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
+            "gabarito": "Здравствуйте, Анна. Вы отправили резюме?",
+            "explicacao": "Escreva: Здравствуйте, Анна. Вы отправили резюме?",
             "id": "ru-069-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
-            "respostaEsperada": "Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
-            "explicacao": "Olá, Boris Ivanovich. Escrevo-lhe a respeito da vaga.",
-            "id": "ru-069-x02",
             "complemento": true
           },
           {
@@ -76,27 +63,12 @@
             "id": "ru-069-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá, Anna. A senhora enviou o currículo?»",
-            "opcoes": [
-              "Анна.",
-              "резюме?",
-              "Здравствуйте,",
-              "отправили",
-              "Вы"
-            ],
-            "gabarito": "Здравствуйте, Анна. Вы отправили резюме?",
-            "explicacao": "Escreva: Здравствуйте, Анна. Вы отправили резюме?",
-            "id": "ru-069-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Здравствуйте, Анна. Вы отправили резюме?",
             "respostaEsperada": "Здравствуйте, Анна. Вы отправили резюме?",
             "explicacao": "Olá, Anna. A senhora enviou o currículo?",
-            "id": "ru-069-x04",
+            "id": "ru-069-x02",
             "complemento": true
           },
           {
@@ -113,27 +85,35 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, anexei-o ao e-mail.»",
+            "enunciado": "Monte a frase: «Está bem. Como a senhora começou a carta?»",
             "opcoes": [
-              "я",
-              "приложила",
-              "его",
-              "к",
-              "Да,",
-              "письму."
+              "вы",
+              "Как",
+              "Хорошо.",
+              "письмо?",
+              "начали"
             ],
-            "gabarito": "Да, я приложила его к письму.",
-            "explicacao": "Escreva: Да, я приложила его к письму.",
-            "id": "ru-069-x05",
+            "gabarito": "Хорошо. Как вы начали письмо?",
+            "explicacao": "Escreva: Хорошо. Как вы начали письмо?",
+            "id": "ru-069-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
+            "respostaEsperada": "Здравствуйте, Борис Иванович. Я пишу вам по поводу вакансии.",
+            "explicacao": "Olá, Boris Ivanovich. Escrevo-lhe a respeito da vaga.",
+            "id": "ru-069-r01",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Да, я приложила его к письму.",
-            "respostaEsperada": "Да, я приложила его к письму.",
-            "explicacao": "Sim, anexei-o ao e-mail.",
-            "id": "ru-069-x06",
+            "audio": "Хорошо. Как вы начали письмо?",
+            "respostaEsperada": "Хорошо. Как вы начали письмо?",
+            "explicacao": "Está bem. Como a senhora começou a carta?",
+            "id": "ru-069-x04",
             "complemento": true
           },
           {
@@ -150,26 +130,15 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está bem. Como a senhora começou a carta?»",
+            "enunciado": "Monte a frase: «E como terminou?»",
             "opcoes": [
-              "вы",
-              "Как",
-              "Хорошо.",
-              "письмо?",
-              "начали"
+              "закончили?",
+              "А",
+              "как"
             ],
-            "gabarito": "Хорошо. Как вы начали письмо?",
-            "explicacao": "Escreva: Хорошо. Как вы начали письмо?",
-            "id": "ru-069-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо. Как вы начали письмо?",
-            "respostaEsperada": "Хорошо. Как вы начали письмо?",
-            "explicacao": "Está bem. Como a senhora começou a carta?",
-            "id": "ru-069-x08",
+            "gabarito": "А как закончили?",
+            "explicacao": "Escreva: А как закончили?",
+            "id": "ru-069-x05",
             "complemento": true
           },
           {
@@ -185,116 +154,22 @@
             "id": "ru-069-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Escrevi: «Prezado Boris Ivanovich! Peço que considere a minha candidatura».»",
-            "opcoes": [
-              "Прошу",
-              "«Уважаемый",
-              "Я",
-              "Борис",
-              "мою",
-              "Иванович!",
-              "кандидатуру».",
-              "написала:",
-              "рассмотреть"
-            ],
-            "gabarito": "Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
-            "explicacao": "Escreva: Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
-            "id": "ru-069-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
-            "respostaEsperada": "Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
-            "explicacao": "Escrevi: «Prezado Boris Ivanovich! Peço que considere a minha candidatura».",
-            "id": "ru-069-x10",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Пишу ___, чтобы рассказать новости. (a você)",
-            "opcoes": [
-              "тебе",
-              "вам",
-              "ты"
-            ],
-            "gabarito": "тебе",
-            "explicacao": "Registro informal.",
-            "id": "ru-069-e06"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E como terminou?»",
-            "opcoes": [
-              "закончили?",
-              "А",
-              "как"
-            ],
-            "gabarito": "А как закончили?",
-            "explicacao": "Escreva: А как закончили?",
-            "id": "ru-069-x11",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "А как закончили?",
             "respostaEsperada": "А как закончили?",
             "explicacao": "E como terminou?",
-            "id": "ru-069-x12",
+            "id": "ru-069-x06",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "A saudação formal é:",
-            "opcoes": [
-              "Уважаемый господин Иванов!",
-              "Привет, Иванов!",
-              "Здорово, Иванов!"
-            ],
-            "gabarito": "Уважаемый господин Иванов!",
-            "explicacao": "Formal.",
-            "id": "ru-069-e07"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: ««Agradeço antecipadamente. Atenciosamente, Anna Lopes».»",
-            "opcoes": [
-              "«Заранее",
-              "Анна",
-              "Лопес».",
-              "вас.",
-              "С",
-              "благодарю",
-              "уважением,"
-            ],
-            "gabarito": "«Заранее благодарю вас. С уважением, Анна Лопес».",
-            "explicacao": "Escreva: «Заранее благодарю вас. С уважением, Анна Лопес».",
-            "id": "ru-069-x13",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, я приложила его к письму.",
+            "respostaEsperada": "Да, я приложила его к письму.",
+            "explicacao": "Sim, anexei-o ao e-mail.",
+            "id": "ru-069-r02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "«Заранее благодарю вас. С уважением, Анна Лопес».",
-            "respostaEsperada": "«Заранее благодарю вас. С уважением, Анна Лопес».",
-            "explicacao": "«Agradeço antecipadamente. Atenciosamente, Anna Lopes».",
-            "id": "ru-069-x14",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "«Обнимаю» é despedida:",
-            "opcoes": [
-              "informal",
-              "formal",
-              "de reunião"
-            ],
-            "gabarito": "informal",
-            "explicacao": "Um abraço.",
-            "id": "ru-069-e08"
           },
           {
             "tipo": "sentence-ordering",
@@ -311,8 +186,20 @@
             ],
             "gabarito": "Отлично. Я прочитаю письмо и позвоню вам завтра.",
             "explicacao": "Escreva: Отлично. Я прочитаю письмо и позвоню вам завтра.",
-            "id": "ru-069-x15",
+            "id": "ru-069-x07",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Пишу ___, чтобы рассказать новости. (a você)",
+            "opcoes": [
+              "тебе",
+              "вам",
+              "ты"
+            ],
+            "gabarito": "тебе",
+            "explicacao": "Registro informal.",
+            "id": "ru-069-e06"
           },
           {
             "tipo": "audio-recognition",
@@ -320,7 +207,100 @@
             "audio": "Отлично. Я прочитаю письмо и позвоню вам завтра.",
             "respostaEsperada": "Отлично. Я прочитаю письмо и позвоню вам завтра.",
             "explicacao": "Ótimo. Vou ler a carta e ligo para a senhora amanhã.",
-            "id": "ru-069-x16",
+            "id": "ru-069-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "A saudação formal é:",
+            "opcoes": [
+              "Уважаемый господин Иванов!",
+              "Привет, Иванов!",
+              "Здорово, Иванов!"
+            ],
+            "gabarito": "Уважаемый господин Иванов!",
+            "explicacao": "Formal.",
+            "id": "ru-069-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «кандидатура»?",
+            "audio": "кандидатура",
+            "opcoes": [
+              "candidatura",
+              "vaga",
+              "analisar",
+              "a respeito de"
+            ],
+            "gabarito": "candidatura",
+            "explicacao": "«кандидатура» = candidatura.",
+            "id": "ru-069-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «вакансия»?",
+            "audio": "вакансия",
+            "opcoes": [
+              "atenciosamente",
+              "vaga",
+              "analisar",
+              "currículo"
+            ],
+            "gabarito": "vaga",
+            "explicacao": "«вакансия» = vaga.",
+            "id": "ru-069-x10",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Обнимаю» é despedida:",
+            "opcoes": [
+              "informal",
+              "formal",
+              "de reunião"
+            ],
+            "gabarito": "informal",
+            "explicacao": "Um abraço.",
+            "id": "ru-069-e08"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «рассмотреть»?",
+            "audio": "рассмотреть",
+            "opcoes": [
+              "candidatura",
+              "a respeito de",
+              "vaga",
+              "analisar"
+            ],
+            "gabarito": "analisar",
+            "explicacao": "«рассмотреть» = analisar.",
+            "id": "ru-069-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
+            "respostaEsperada": "Я написала: «Уважаемый Борис Иванович! Прошу рассмотреть мою кандидатуру».",
+            "explicacao": "Escrevi: «Prezado Boris Ivanovich! Peço que considere a minha candidatura».",
+            "id": "ru-069-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «прикладывать / приложить»?",
+            "audio": "прикладывать / приложить",
+            "opcoes": [
+              "currículo",
+              "anexar",
+              "a respeito de",
+              "vaga"
+            ],
+            "gabarito": "anexar",
+            "explicacao": "«прикладывать / приложить» = anexar.",
+            "id": "ru-069-x12",
             "complemento": true
           },
           {
@@ -337,32 +317,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «кандидатура»?",
-            "audio": "кандидатура",
+            "enunciado": "O que significa «по поводу»?",
+            "audio": "по поводу",
             "opcoes": [
               "candidatura",
-              "vaga",
-              "analisar",
-              "a respeito de"
-            ],
-            "gabarito": "candidatura",
-            "explicacao": "«кандидатура» = candidatura.",
-            "id": "ru-069-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «вакансия»?",
-            "audio": "вакансия",
-            "opcoes": [
-              "atenciosamente",
-              "vaga",
+              "a respeito de",
               "analisar",
               "currículo"
             ],
-            "gabarito": "vaga",
-            "explicacao": "«вакансия» = vaga.",
-            "id": "ru-069-x18",
+            "gabarito": "a respeito de",
+            "explicacao": "«по поводу» = a respeito de.",
+            "id": "ru-069-x13",
             "complemento": true
           },
           {
@@ -380,32 +345,40 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «рассмотреть»?",
-            "audio": "рассмотреть",
+            "enunciado": "O que significa «с уважением»?",
+            "audio": "с уважением",
             "opcoes": [
-              "candidatura",
               "a respeito de",
               "vaga",
-              "analisar"
+              "anexar",
+              "atenciosamente"
             ],
-            "gabarito": "analisar",
-            "explicacao": "«рассмотреть» = analisar.",
-            "id": "ru-069-x19",
+            "gabarito": "atenciosamente",
+            "explicacao": "«с уважением» = atenciosamente.",
+            "id": "ru-069-x14",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «прикладывать / приложить»?",
-            "audio": "прикладывать / приложить",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "«Заранее благодарю вас. С уважением, Анна Лопес».",
+            "respostaEsperada": "«Заранее благодарю вас. С уважением, Анна Лопес».",
+            "explicacao": "«Agradeço antecipadamente. Atenciosamente, Anna Lopes».",
+            "id": "ru-069-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Заранее благодарю вас",
             "opcoes": [
-              "currículo",
-              "anexar",
-              "a respeito de",
-              "vaga"
+              "благодарю",
+              "Заранее",
+              "вас"
             ],
-            "gabarito": "anexar",
-            "explicacao": "«прикладывать / приложить» = anexar.",
-            "id": "ru-069-x20",
+            "gabarito": "Заранее благодарю вас",
+            "explicacao": "Escreva: Заранее благодарю вас",
+            "id": "ru-069-x15",
             "complemento": true
           },
           {
@@ -422,58 +395,6 @@
             "id": "ru-069-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «по поводу»?",
-            "audio": "по поводу",
-            "opcoes": [
-              "candidatura",
-              "a respeito de",
-              "analisar",
-              "currículo"
-            ],
-            "gabarito": "a respeito de",
-            "explicacao": "«по поводу» = a respeito de.",
-            "id": "ru-069-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «с уважением»?",
-            "audio": "с уважением",
-            "opcoes": [
-              "a respeito de",
-              "vaga",
-              "anexar",
-              "atenciosamente"
-            ],
-            "gabarito": "atenciosamente",
-            "explicacao": "«с уважением» = atenciosamente.",
-            "id": "ru-069-x22",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Пишу тебе, чтобы рассказать новости",
-            "respostaEsperada": "Пишу тебе, чтобы рассказать новости",
-            "explicacao": "Registro informal.",
-            "id": "ru-069-e12"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Заранее благодарю вас",
-            "opcoes": [
-              "благодарю",
-              "Заранее",
-              "вас"
-            ],
-            "gabarito": "Заранее благодарю вас",
-            "explicacao": "Escreva: Заранее благодарю вас",
-            "id": "ru-069-x23",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Пишу тебе, чтобы рассказать новости",
@@ -486,14 +407,16 @@
             ],
             "gabarito": "Пишу тебе, чтобы рассказать новости",
             "explicacao": "Escreva: Пишу тебе, чтобы рассказать новости",
-            "id": "ru-069-x24",
+            "id": "ru-069-x16",
             "complemento": true
           },
           {
-            "tipo": "producao",
-            "enunciado": "Escreva 5 frases: uma saudação formal, um motivo, um pedido, uma despedida formal e uma despedida informal.",
-            "respostaEsperada": "Уважаемый Борис Иванович! Я пишу вам по поводу вакансии. Прошу рассмотреть мою кандидатуру. С уважением, Анна Лопес. Обнимаю. Макс.",
-            "id": "ru-069-e13"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Пишу тебе, чтобы рассказать новости",
+            "respostaEsperada": "Пишу тебе, чтобы рассказать новости",
+            "explicacao": "Registro informal.",
+            "id": "ru-069-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -501,8 +424,14 @@
             "audio": "Заранее благодарю вас",
             "respostaEsperada": "Заранее благодарю вас",
             "explicacao": "Escreva: Заранее благодарю вас",
-            "id": "ru-069-x25",
+            "id": "ru-069-x17",
             "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 5 frases: uma saudação formal, um motivo, um pedido, uma despedida formal e uma despedida informal.",
+            "respostaEsperada": "Уважаемый Борис Иванович! Я пишу вам по поводу вакансии. Прошу рассмотреть мою кандидатуру. С уважением, Анна Лопес. Обнимаю. Макс.",
+            "id": "ru-069-e13"
           }
         ]
       },

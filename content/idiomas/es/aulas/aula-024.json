@@ -516,25 +516,6 @@
               "id": "es-024-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Mateo, o que vamos dar de presente à Marta no aniversário dela?»",
-              "opcoes": [
-                "su",
-                "Marta",
-                "le",
-                "a",
-                "para",
-                "regalamos",
-                "cumpleaños?",
-                "Mateo,",
-                "¿qué"
-              ],
-              "gabarito": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
-              "explicacao": "Escreva: Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
-              "id": "es-024-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Le pregunté su apellido",
@@ -551,12 +532,23 @@
               "id": "es-024-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
-              "respostaEsperada": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
-              "explicacao": "Mateo, o que vamos dar de presente à Marta no aniversário dela?",
-              "id": "es-024-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Podemos perguntar ao irmão dela. Ele a conhece muito bem.»",
+              "opcoes": [
+                "Podemos",
+                "a",
+                "su",
+                "conoce",
+                "la",
+                "hermano.",
+                "bien.",
+                "muy",
+                "preguntarle",
+                "Él"
+              ],
+              "gabarito": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+              "explicacao": "Escreva: Podemos preguntarle a su hermano. Él la conoce muy bien.",
+              "id": "es-024-x01",
               "complemento": true
             },
             {
@@ -566,6 +558,15 @@
               "respostaEsperada": "¿Me prestas tu cargador?",
               "explicacao": "Escreva: ¿Me prestas tu cargador? O «me» marca quem pede.",
               "id": "es-024-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
+              "respostaEsperada": "Mateo, ¿qué le regalamos a Marta para su cumpleaños?",
+              "explicacao": "Mateo, o que vamos dar de presente à Marta no aniversário dela?",
+              "id": "es-024-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -592,26 +593,6 @@
               "id": "es-024-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Podemos perguntar ao irmão dela. Ele a conhece muito bem.»",
-              "opcoes": [
-                "Podemos",
-                "a",
-                "su",
-                "conoce",
-                "la",
-                "hermano.",
-                "bien.",
-                "muy",
-                "preguntarle",
-                "Él"
-              ],
-              "gabarito": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
-              "explicacao": "Escreva: Podemos preguntarle a su hermano. Él la conoce muy bien.",
-              "id": "es-024-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -622,6 +603,15 @@
               "gabarito": "Les di el libro a mis amigos.",
               "explicacao": "Objeto indireto plural, antes do verbo, sem hífen.",
               "id": "es-024-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+              "respostaEsperada": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
+              "explicacao": "Podemos perguntar ao irmão dela. Ele a conhece muito bem.",
+              "id": "es-024-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -648,15 +638,6 @@
               "id": "es-024-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
-              "respostaEsperada": "Podemos preguntarle a su hermano. Él la conoce muy bien.",
-              "explicacao": "Podemos perguntar ao irmão dela. Ele a conhece muito bem.",
-              "id": "es-024-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «prestar»?",
               "opcoes": [
@@ -667,6 +648,15 @@
               "gabarito": "emprestar",
               "explicacao": "Pedir emprestado é «pedir prestado».",
               "id": "es-024-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buena idea. Voy a escribirle un mensaje ahora.",
+              "respostaEsperada": "Buena idea. Voy a escribirle un mensaje ahora.",
+              "explicacao": "Boa ideia. Vou escrever uma mensagem para ele agora.",
+              "id": "es-024-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -681,6 +671,21 @@
               "id": "es-024-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «el apellido»?",
+              "audio": "el apellido",
+              "opcoes": [
+                "o cachecol",
+                "oferecer",
+                "o sobrenome",
+                "devolver"
+              ],
+              "gabarito": "o sobrenome",
+              "explicacao": "«el apellido» = o sobrenome.",
+              "id": "es-024-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ escribo a mi madre cada semana. (a ella)",
               "opcoes": [
@@ -691,24 +696,6 @@
               "gabarito": "Le",
               "explicacao": "Objeto indireto de terceira pessoa singular.",
               "id": "es-024-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa ideia. Vou escrever uma mensagem para ele agora.»",
-              "opcoes": [
-                "ahora.",
-                "escribirle",
-                "idea.",
-                "Voy",
-                "mensaje",
-                "Buena",
-                "a",
-                "un"
-              ],
-              "gabarito": "Buena idea. Voy a escribirle un mensaje ahora.",
-              "explicacao": "Escreva: Buena idea. Voy a escribirle un mensaje ahora.",
-              "id": "es-024-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -735,15 +722,6 @@
               "id": "es-024-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buena idea. Voy a escribirle un mensaje ahora.",
-              "respostaEsperada": "Buena idea. Voy a escribirle un mensaje ahora.",
-              "explicacao": "Boa ideia. Vou escrever uma mensagem para ele agora.",
-              "id": "es-024-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Ella ___ dijo la verdad. (a nosotros)",
               "opcoes": [
@@ -754,6 +732,21 @@
               "gabarito": "nos",
               "explicacao": "O pronome átono de «nosotros» é «nos».",
               "id": "es-024-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «explicar»?",
+              "audio": "explicar",
+              "opcoes": [
+                "o aniversário",
+                "devolver",
+                "explicar",
+                "o cachecol"
+              ],
+              "gabarito": "explicar",
+              "explicacao": "«explicar» = explicar.",
+              "id": "es-024-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -768,6 +761,15 @@
               "id": "es-024-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Y a sus padres, ¿les decimos algo?",
+              "respostaEsperada": "Y a sus padres, ¿les decimos algo?",
+              "explicacao": "E aos pais dela, vamos contar alguma coisa?",
+              "id": "es-024-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Le escribí una carta.»",
               "opcoes": [
@@ -779,23 +781,6 @@
               "gabarito": "Le escribí una carta.",
               "explicacao": "Pronome, verbo e objeto direto.",
               "id": "es-024-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E aos pais dela, vamos contar alguma coisa?»",
-              "opcoes": [
-                "Y",
-                "algo?",
-                "padres,",
-                "decimos",
-                "a",
-                "sus",
-                "¿les"
-              ],
-              "gabarito": "Y a sus padres, ¿les decimos algo?",
-              "explicacao": "Escreva: Y a sus padres, ¿les decimos algo?",
-              "id": "es-024-x07",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -817,6 +802,21 @@
               "id": "es-024-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «mostrar»?",
+              "audio": "mostrar",
+              "opcoes": [
+                "pedir emprestado",
+                "o sobrenome",
+                "explicar",
+                "mostrar"
+              ],
+              "gabarito": "mostrar",
+              "explicacao": "«mostrar» = mostrar.",
+              "id": "es-024-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Le ___ un regalo a mi madre. (dar, yo)",
               "opcoes": [
@@ -827,15 +827,6 @@
               "gabarito": "doy",
               "explicacao": "Em «yo», «dar» faz «doy».",
               "id": "es-024-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Y a sus padres, ¿les decimos algo?",
-              "respostaEsperada": "Y a sus padres, ¿les decimos algo?",
-              "explicacao": "E aos pais dela, vamos contar alguma coisa?",
-              "id": "es-024-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -862,6 +853,15 @@
               "id": "es-024-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Perfecto. Entonces mañana compramos el regalo juntos.",
+              "respostaEsperada": "Perfecto. Entonces mañana compramos el regalo juntos.",
+              "explicacao": "Perfeito. Então amanhã compramos o presente juntos.",
+              "id": "es-024-r04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ella ___ preguntó mi nombre. (a mim)",
               "opcoes": [
@@ -874,20 +874,18 @@
               "id": "es-024-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perfeito. Então amanhã compramos o presente juntos.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «pedir prestado»?",
+              "audio": "pedir prestado",
               "opcoes": [
-                "mañana",
-                "Perfecto.",
-                "compramos",
-                "Entonces",
-                "juntos.",
-                "el",
-                "regalo"
+                "pedir emprestado",
+                "devolver",
+                "mostrar",
+                "o apelido (nome informal)"
               ],
-              "gabarito": "Perfecto. Entonces mañana compramos el regalo juntos.",
-              "explicacao": "Escreva: Perfecto. Entonces mañana compramos el regalo juntos.",
-              "id": "es-024-x09",
+              "gabarito": "pedir emprestado",
+              "explicacao": "«pedir prestado» = pedir emprestado.",
+              "id": "es-024-x06",
               "complemento": true
             },
             {
@@ -913,15 +911,6 @@
               "gabarito": "pedir prestado",
               "explicacao": "«Prestar» é emprestar; pedir emprestado é «pedir prestado».",
               "id": "es-024-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Perfecto. Entonces mañana compramos el regalo juntos.",
-              "respostaEsperada": "Perfecto. Entonces mañana compramos el regalo juntos.",
-              "explicacao": "Perfeito. Então amanhã compramos o presente juntos.",
-              "id": "es-024-x10",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

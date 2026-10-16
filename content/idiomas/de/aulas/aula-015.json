@@ -513,27 +513,17 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia! Posso ajudar?»",
+              "enunciado": "Monte a frase: «Sim, estou procurando uma jaqueta.»",
               "opcoes": [
-                "Tag!",
-                "Guten",
+                "suche",
+                "Jacke.",
+                "Ja,",
                 "ich",
-                "helfen?",
-                "Ihnen",
-                "Kann"
+                "eine"
               ],
-              "gabarito": "Guten Tag! Kann ich Ihnen helfen?",
-              "explicacao": "Escreva: Guten Tag! Kann ich Ihnen helfen?",
+              "gabarito": "Ja, ich suche eine Jacke.",
+              "explicacao": "Escreva: Ja, ich suche eine Jacke.",
               "id": "de-015-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Guten Tag! Kann ich Ihnen helfen?",
-              "respostaEsperada": "Guten Tag! Kann ich Ihnen helfen?",
-              "explicacao": "Bom dia! Posso ajudar?",
-              "id": "de-015-x02",
               "complemento": true
             },
             {
@@ -549,27 +539,12 @@
               "id": "de-015-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, estou procurando uma jaqueta.»",
-              "opcoes": [
-                "suche",
-                "Jacke.",
-                "Ja,",
-                "ich",
-                "eine"
-              ],
-              "gabarito": "Ja, ich suche eine Jacke.",
-              "explicacao": "Escreva: Ja, ich suche eine Jacke.",
-              "id": "de-015-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Ja, ich suche eine Jacke.",
               "respostaEsperada": "Ja, ich suche eine Jacke.",
               "explicacao": "Sim, estou procurando uma jaqueta.",
-              "id": "de-015-x04",
+              "id": "de-015-x02",
               "complemento": true
             },
             {
@@ -586,41 +561,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que cor a senhora quer?»",
-              "opcoes": [
-                "Farbe",
-                "Welche",
-                "Sie?",
-                "möchten"
-              ],
-              "gabarito": "Welche Farbe möchten Sie?",
-              "explicacao": "Escreva: Welche Farbe möchten Sie?",
-              "id": "de-015-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Welche Farbe möchten Sie?",
-              "respostaEsperada": "Welche Farbe möchten Sie?",
-              "explicacao": "Que cor a senhora quer?",
-              "id": "de-015-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Was ___ die Schuhe?",
-              "opcoes": [
-                "kosten",
-                "kostet",
-                "koste"
-              ],
-              "gabarito": "kosten",
-              "explicacao": "Plural: kosten.",
-              "id": "de-015-e04"
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Azul ou preta. Quanto custa esta jaqueta aqui?»",
               "opcoes": [
                 "diese",
@@ -634,20 +574,17 @@
               ],
               "gabarito": "Blau oder schwarz. Was kostet diese Jacke hier?",
               "explicacao": "Escreva: Blau oder schwarz. Was kostet diese Jacke hier?",
-              "id": "de-015-x07",
+              "id": "de-015-x03",
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Die Hose ist ___ groß. (demais)",
-              "opcoes": [
-                "zu",
-                "sehr",
-                "so"
-              ],
-              "gabarito": "zu",
-              "explicacao": "«zu» + adjetivo = demais.",
-              "id": "de-015-e05"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Guten Tag! Kann ich Ihnen helfen?",
+              "respostaEsperada": "Guten Tag! Kann ich Ihnen helfen?",
+              "explicacao": "Bom dia! Posso ajudar?",
+              "id": "de-015-r01",
+              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -655,44 +592,20 @@
               "audio": "Blau oder schwarz. Was kostet diese Jacke hier?",
               "respostaEsperada": "Blau oder schwarz. Was kostet diese Jacke hier?",
               "explicacao": "Azul ou preta. Quanto custa esta jaqueta aqui?",
-              "id": "de-015-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Esta jaqueta custa noventa euros.»",
-              "opcoes": [
-                "Diese",
-                "neunzig",
-                "kostet",
-                "Euro.",
-                "Jacke"
-              ],
-              "gabarito": "Diese Jacke kostet neunzig Euro.",
-              "explicacao": "Escreva: Diese Jacke kostet neunzig Euro.",
-              "id": "de-015-x09",
+              "id": "de-015-x04",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Ich nehme ___ Pullover. (este)",
+              "enunciado": "Was ___ die Schuhe?",
               "opcoes": [
-                "diesen",
-                "dieser",
-                "dieses"
+                "kosten",
+                "kostet",
+                "koste"
               ],
-              "gabarito": "diesen",
-              "explicacao": "Objeto direto masculino.",
-              "id": "de-015-e06"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Diese Jacke kostet neunzig Euro.",
-              "respostaEsperada": "Diese Jacke kostet neunzig Euro.",
-              "explicacao": "Esta jaqueta custa noventa euros.",
-              "id": "de-015-x10",
-              "complemento": true
+              "gabarito": "kosten",
+              "explicacao": "Plural: kosten.",
+              "id": "de-015-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -711,20 +624,20 @@
               ],
               "gabarito": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
               "explicacao": "Escreva: Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
-              "id": "de-015-x11",
+              "id": "de-015-x05",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "2,50 € se lê:",
+              "tipo": "fill-gap",
+              "enunciado": "Die Hose ist ___ groß. (demais)",
               "opcoes": [
-                "zwei Euro fünfzig",
-                "fünfzig Euro zwei",
-                "zwei fünfzig Cent"
+                "zu",
+                "sehr",
+                "so"
               ],
-              "gabarito": "zwei Euro fünfzig",
-              "explicacao": "Euro primeiro, depois os centavos.",
-              "id": "de-015-e07"
+              "gabarito": "zu",
+              "explicacao": "«zu» + adjetivo = demais.",
+              "id": "de-015-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -732,8 +645,20 @@
               "audio": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
               "respostaEsperada": "Ja, hier. Sie können sie anprobieren. Die Umkleidekabine ist dort.",
               "explicacao": "Sim, aqui. A senhora pode experimentá-la. O provador é ali.",
-              "id": "de-015-x12",
+              "id": "de-015-x06",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich nehme ___ Pullover. (este)",
+              "opcoes": [
+                "diesen",
+                "dieser",
+                "dieses"
+              ],
+              "gabarito": "diesen",
+              "explicacao": "Objeto direto masculino.",
+              "id": "de-015-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -749,7 +674,50 @@
               ],
               "gabarito": "Sie passt mir gut. Ich nehme sie.",
               "explicacao": "Escreva: Sie passt mir gut. Ich nehme sie.",
-              "id": "de-015-x13",
+              "id": "de-015-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Welche Farbe möchten Sie?",
+              "respostaEsperada": "Welche Farbe möchten Sie?",
+              "explicacao": "Que cor a senhora quer?",
+              "id": "de-015-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Sie passt mir gut. Ich nehme sie.",
+              "respostaEsperada": "Sie passt mir gut. Ich nehme sie.",
+              "explicacao": "Ela serve bem em mim. Eu levo.",
+              "id": "de-015-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "2,50 € se lê:",
+              "opcoes": [
+                "zwei Euro fünfzig",
+                "fünfzig Euro zwei",
+                "zwei fünfzig Cent"
+              ],
+              "gabarito": "zwei Euro fünfzig",
+              "explicacao": "Euro primeiro, depois os centavos.",
+              "id": "de-015-e07"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Com cartão, por favor.»",
+              "opcoes": [
+                "bitte.",
+                "Karte,",
+                "Mit"
+              ],
+              "gabarito": "Mit Karte, bitte.",
+              "explicacao": "Escreva: Mit Karte, bitte.",
+              "id": "de-015-x09",
               "complemento": true
             },
             {
@@ -767,10 +735,25 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Sie passt mir gut. Ich nehme sie.",
-              "respostaEsperada": "Sie passt mir gut. Ich nehme sie.",
-              "explicacao": "Ela serve bem em mim. Eu levo.",
-              "id": "de-015-x14",
+              "audio": "Mit Karte, bitte.",
+              "respostaEsperada": "Mit Karte, bitte.",
+              "explicacao": "Com cartão, por favor.",
+              "id": "de-015-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «der Mantel»?",
+              "audio": "der Mantel",
+              "opcoes": [
+                "caro",
+                "provador",
+                "roupa",
+                "casaco"
+              ],
+              "gabarito": "casaco",
+              "explicacao": "«der Mantel» = casaco.",
+              "id": "de-015-x11",
               "complemento": true
             },
             {
@@ -786,25 +769,42 @@
               "id": "de-015-e09"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Com cartão, por favor.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «bar»?",
+              "audio": "bar",
               "opcoes": [
-                "bitte.",
-                "Karte,",
-                "Mit"
+                "caro",
+                "em dinheiro",
+                "roupa",
+                "provador"
               ],
-              "gabarito": "Mit Karte, bitte.",
-              "explicacao": "Escreva: Mit Karte, bitte.",
-              "id": "de-015-x15",
+              "gabarito": "em dinheiro",
+              "explicacao": "«bar» = em dinheiro.",
+              "id": "de-015-x12",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Mit Karte, bitte.",
-              "respostaEsperada": "Mit Karte, bitte.",
-              "explicacao": "Com cartão, por favor.",
-              "id": "de-015-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Diese Jacke kostet neunzig Euro.",
+              "respostaEsperada": "Diese Jacke kostet neunzig Euro.",
+              "explicacao": "Esta jaqueta custa noventa euros.",
+              "id": "de-015-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «der Pullover»?",
+              "audio": "der Pullover",
+              "opcoes": [
+                "roupa",
+                "caro",
+                "suéter",
+                "pequeno demais"
+              ],
+              "gabarito": "suéter",
+              "explicacao": "«der Pullover» = suéter.",
+              "id": "de-015-x13",
               "complemento": true
             },
             {
@@ -822,32 +822,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Mantel»?",
-              "audio": "der Mantel",
+              "enunciado": "O que significa «die Umkleidekabine»?",
+              "audio": "die Umkleidekabine",
               "opcoes": [
-                "caro",
+                "preço",
+                "casaco",
                 "provador",
-                "roupa",
-                "casaco"
+                "calça"
               ],
-              "gabarito": "casaco",
-              "explicacao": "«der Mantel» = casaco.",
-              "id": "de-015-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «bar»?",
-              "audio": "bar",
-              "opcoes": [
-                "caro",
-                "em dinheiro",
-                "roupa",
-                "provador"
-              ],
-              "gabarito": "em dinheiro",
-              "explicacao": "«bar» = em dinheiro.",
-              "id": "de-015-x18",
+              "gabarito": "provador",
+              "explicacao": "«die Umkleidekabine» = provador.",
+              "id": "de-015-x14",
               "complemento": true
             },
             {
@@ -865,17 +850,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Pullover»?",
-              "audio": "der Pullover",
+              "enunciado": "O que significa «zu groß»?",
+              "audio": "zu groß",
               "opcoes": [
-                "roupa",
-                "caro",
-                "suéter",
-                "pequeno demais"
+                "casaco",
+                "grande demais",
+                "em conta",
+                "suéter"
               ],
-              "gabarito": "suéter",
-              "explicacao": "«der Pullover» = suéter.",
-              "id": "de-015-x19",
+              "gabarito": "grande demais",
+              "explicacao": "«zu groß» = grande demais.",
+              "id": "de-015-x15",
               "complemento": true
             },
             {
@@ -893,44 +878,6 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Umkleidekabine»?",
-              "audio": "die Umkleidekabine",
-              "opcoes": [
-                "preço",
-                "casaco",
-                "provador",
-                "calça"
-              ],
-              "gabarito": "provador",
-              "explicacao": "«die Umkleidekabine» = provador.",
-              "id": "de-015-x20",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «zu groß»?",
-              "audio": "zu groß",
-              "opcoes": [
-                "casaco",
-                "grande demais",
-                "em conta",
-                "suéter"
-              ],
-              "gabarito": "grande demais",
-              "explicacao": "«zu groß» = grande demais.",
-              "id": "de-015-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Haben Sie die Jacke in Größe M",
-              "respostaEsperada": "Haben Sie die Jacke in Größe M",
-              "explicacao": "Pedido de tamanho.",
-              "id": "de-015-e13"
-            },
-            {
-              "tipo": "multiple-choice",
               "enunciado": "O que significa «das T-Shirt»?",
               "audio": "das T-Shirt",
               "opcoes": [
@@ -941,7 +888,16 @@
               ],
               "gabarito": "camiseta",
               "explicacao": "«das T-Shirt» = camiseta.",
-              "id": "de-015-x22",
+              "id": "de-015-x16",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Zahlen Sie bar oder mit Karte?",
+              "respostaEsperada": "Zahlen Sie bar oder mit Karte?",
+              "explicacao": "A senhora paga em dinheiro ou com cartão?",
+              "id": "de-015-r04",
               "complemento": true
             },
             {
@@ -958,20 +914,16 @@
               ],
               "gabarito": "Zahlen Sie bar oder mit Karte?",
               "explicacao": "Escreva: Zahlen Sie bar oder mit Karte?",
-              "id": "de-015-x23",
+              "id": "de-015-x17",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«teuer» é o contrário de:",
-              "opcoes": [
-                "billig",
-                "groß",
-                "klein"
-              ],
-              "gabarito": "billig",
-              "explicacao": "caro × barato.",
-              "id": "de-015-e14"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Haben Sie die Jacke in Größe M",
+              "respostaEsperada": "Haben Sie die Jacke in Größe M",
+              "explicacao": "Pedido de tamanho.",
+              "id": "de-015-e13"
             },
             {
               "tipo": "sentence-ordering",
@@ -988,8 +940,20 @@
               ],
               "gabarito": "Haben Sie die Jacke in Größe M",
               "explicacao": "Escreva: Haben Sie die Jacke in Größe M",
-              "id": "de-015-x24",
+              "id": "de-015-x18",
               "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«teuer» é o contrário de:",
+              "opcoes": [
+                "billig",
+                "groß",
+                "klein"
+              ],
+              "gabarito": "billig",
+              "explicacao": "caro × barato.",
+              "id": "de-015-e14"
             },
             {
               "tipo": "audio-recognition",
@@ -997,7 +961,7 @@
               "audio": "Zahlen Sie bar oder mit Karte?",
               "respostaEsperada": "Zahlen Sie bar oder mit Karte?",
               "explicacao": "Escreva: Zahlen Sie bar oder mit Karte?",
-              "id": "de-015-x25",
+              "id": "de-015-x19",
               "complemento": true
             },
             {

@@ -489,6 +489,22 @@
               "id": "fr-048-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Je trouve que c'est trop cher",
+              "respostaEsperada": "Je trouve que c'est trop cher",
+              "explicacao": "Escreva: Je trouve que c'est trop cher.",
+              "id": "fr-048-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Que penses-tu de ce film",
+              "respostaEsperada": "Que penses-tu de ce film",
+              "explicacao": "Escreva: Que penses-tu de ce film ?",
+              "id": "fr-048-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Você tem razão, mas pode-se organizar reuniões online.»",
               "opcoes": [
@@ -512,35 +528,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Je trouve que c'est trop cher",
-              "respostaEsperada": "Je trouve que c'est trop cher",
-              "explicacao": "Escreva: Je trouve que c'est trop cher.",
-              "id": "fr-048-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Que penses-tu de ce film",
-              "respostaEsperada": "Que penses-tu de ce film",
-              "explicacao": "Escreva: Que penses-tu de ce film ?",
-              "id": "fr-048-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Tu as raison, cependant on peut organiser des réunions en ligne.",
-              "respostaEsperada": "Tu as raison, cependant on peut organiser des réunions en ligne.",
-              "explicacao": "Você tem razão, mas pode-se organizar reuniões online.",
-              "id": "fr-048-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Oui, mais ce n'est pas la même chose",
               "respostaEsperada": "Oui, mais ce n'est pas la même chose",
               "explicacao": "Escreva: Oui, mais ce n'est pas la même chose.",
               "id": "fr-048-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "à mon avis",
+              "respostaEsperada": "à mon avis",
+              "explicacao": "na minha opinião",
+              "id": "fr-048-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -567,27 +567,6 @@
               "id": "fr-048-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, mas não é a mesma coisa que um café juntos.»",
-              "opcoes": [
-                "la",
-                "Oui,",
-                "ce",
-                "mais",
-                "même",
-                "qu'un",
-                "ensemble.",
-                "n'est",
-                "pas",
-                "chose",
-                "café"
-              ],
-              "gabarito": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
-              "explicacao": "Escreva: Oui, mais ce n'est pas la même chose qu'un café ensemble.",
-              "id": "fr-048-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -598,6 +577,15 @@
               "gabarito": "J'ai raison.",
               "explicacao": "«Avoir raison».",
               "id": "fr-048-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Tu as raison, cependant on peut organiser des réunions en ligne.",
+              "respostaEsperada": "Tu as raison, cependant on peut organiser des réunions en ligne.",
+              "explicacao": "Você tem razão, mas pode-se organizar reuniões online.",
+              "id": "fr-048-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -624,15 +612,6 @@
               "id": "fr-048-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
-              "respostaEsperada": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
-              "explicacao": "Sim, mas não é a mesma coisa que um café juntos.",
-              "id": "fr-048-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "___ moi, c'est trop cher. (para)",
               "opcoes": [
@@ -643,6 +622,15 @@
               "gabarito": "Pour",
               "explicacao": "Opinião.",
               "id": "fr-048-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "je trouve que",
+              "respostaEsperada": "je trouve que",
+              "explicacao": "acho que (sensação)",
+              "id": "fr-048-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -657,6 +645,27 @@
               "id": "fr-048-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, mas não é a mesma coisa que um café juntos.»",
+              "opcoes": [
+                "la",
+                "Oui,",
+                "ce",
+                "mais",
+                "même",
+                "qu'un",
+                "ensemble.",
+                "n'est",
+                "pas",
+                "chose",
+                "café"
+              ],
+              "gabarito": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+              "explicacao": "Escreva: Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+              "id": "fr-048-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je ne pense pas qu'il ___ raison. (avoir)",
               "opcoes": [
@@ -667,26 +676,6 @@
               "gabarito": "ait",
               "explicacao": "Subjuntivo.",
               "id": "fr-048-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Completamente, acho que é um bom compromisso.»",
-              "opcoes": [
-                "c'est",
-                "compromis.",
-                "que",
-                "à",
-                "un",
-                "bon",
-                "trouve",
-                "fait,",
-                "je",
-                "Tout"
-              ],
-              "gabarito": "Tout à fait, je trouve que c'est un bon compromis.",
-              "explicacao": "Escreva: Tout à fait, je trouve que c'est un bon compromis.",
-              "id": "fr-048-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -719,19 +708,19 @@
               "id": "fr-048-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Tout à fait, je trouve que c'est un bon compromis.",
-              "respostaEsperada": "Tout à fait, je trouve que c'est un bon compromis.",
-              "explicacao": "Completamente, acho que é um bom compromisso.",
-              "id": "fr-048-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Na minha opinião, o teletrabalho é uma boa ideia, mas acho que se perde o contato. Você tem razão.",
               "respostaEsperada": "À mon avis, le télétravail est une bonne idée, mais je trouve qu'on perd le contact. Tu as raison.",
               "id": "fr-048-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+              "respostaEsperada": "Oui, mais ce n'est pas la même chose qu'un café ensemble.",
+              "explicacao": "Sim, mas não é a mesma coisa que um café juntos.",
+              "id": "fr-048-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -746,6 +735,15 @@
               "id": "fr-048-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "en ce qui me concerne",
+              "respostaEsperada": "en ce qui me concerne",
+              "explicacao": "no que me diz respeito",
+              "id": "fr-048-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je suis ___ le télétravail. (a favor)",
               "opcoes": [
@@ -756,21 +754,6 @@
               "gabarito": "pour",
               "explicacao": "«Pour» = a favor.",
               "id": "fr-048-e19"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «à mon avis»?",
-              "audio": "à mon avis",
-              "opcoes": [
-                "uma desvantagem",
-                "segundo",
-                "segundo eu",
-                "na minha opinião"
-              ],
-              "gabarito": "na minha opinião",
-              "explicacao": "«à mon avis» = na minha opinião.",
-              "id": "fr-048-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -797,6 +780,26 @@
               "id": "fr-048-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Completamente, acho que é um bom compromisso.»",
+              "opcoes": [
+                "c'est",
+                "compromis.",
+                "que",
+                "à",
+                "un",
+                "bon",
+                "trouve",
+                "fait,",
+                "je",
+                "Tout"
+              ],
+              "gabarito": "Tout à fait, je trouve que c'est un bon compromis.",
+              "explicacao": "Escreva: Tout à fait, je trouve que c'est un bon compromis.",
+              "id": "fr-048-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je ne suis pas ___ d'accord. (totalmente)",
               "opcoes": [
@@ -807,21 +810,6 @@
               "gabarito": "tout à fait",
               "explicacao": "«Pas tout à fait» nuança a discordância.",
               "id": "fr-048-e22"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «pour»?",
-              "audio": "pour",
-              "opcoes": [
-                "acho que",
-                "a favor",
-                "para mim",
-                "não exatamente"
-              ],
-              "gabarito": "a favor",
-              "explicacao": "«pour» = a favor.",
-              "id": "fr-048-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -848,6 +836,15 @@
               "id": "fr-048-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "pas du tout",
+              "respostaEsperada": "pas du tout",
+              "explicacao": "de modo algum",
+              "id": "fr-048-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual expressão introduz um contra-argumento?",
               "opcoes": [
@@ -860,18 +857,12 @@
               "id": "fr-048-e25"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «d'après»?",
-              "audio": "d'après",
-              "opcoes": [
-                "segundo",
-                "acho que (sensação)",
-                "segundo eu",
-                "concordo"
-              ],
-              "gabarito": "segundo",
-              "explicacao": "«d'après» = segundo.",
-              "id": "fr-048-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Tout à fait, je trouve que c'est un bon compromis.",
+              "respostaEsperada": "Tout à fait, je trouve que c'est un bon compromis.",
+              "explicacao": "Completamente, acho que é um bom compromisso.",
+              "id": "fr-048-x06",
               "complemento": true
             },
             {
@@ -900,21 +891,6 @@
               "gabarito": "À mon avis, il a raison.",
               "explicacao": "«Avoir raison», não «être».",
               "id": "fr-048-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «je suis d'accord»?",
-              "audio": "je suis d'accord",
-              "opcoes": [
-                "uma desvantagem",
-                "completamente",
-                "de modo algum",
-                "concordo"
-              ],
-              "gabarito": "concordo",
-              "explicacao": "«je suis d'accord» = concordo.",
-              "id": "fr-048-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

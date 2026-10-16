@@ -63,24 +63,6 @@
             "id": "es-046-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Como foi a festa surpresa da Marta?»",
-            "opcoes": [
-              "fiesta",
-              "tal",
-              "salió",
-              "de",
-              "Marta?",
-              "¿Qué",
-              "la",
-              "sorpresa"
-            ],
-            "gabarito": "¿Qué tal salió la fiesta sorpresa de Marta?",
-            "explicacao": "Escreva: ¿Qué tal salió la fiesta sorpresa de Marta?",
-            "id": "es-046-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Quisiera una mesa para dos",
@@ -97,12 +79,18 @@
             "id": "es-046-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Qué tal salió la fiesta sorpresa de Marta?",
-            "respostaEsperada": "¿Qué tal salió la fiesta sorpresa de Marta?",
-            "explicacao": "Como foi a festa surpresa da Marta?",
-            "id": "es-046-x02",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «permitir que»?",
+            "audio": "permitir que",
+            "opcoes": [
+              "a menos que",
+              "era importante que",
+              "antes que",
+              "permitir que"
+            ],
+            "gabarito": "permitir que",
+            "explicacao": "«permitir que» = permitir que.",
+            "id": "es-046-x01",
             "complemento": true
           },
           {
@@ -112,6 +100,15 @@
             "respostaEsperada": "Dudaba que fuera verdad",
             "explicacao": "Escreva: Dudaba que fuera verdad.",
             "id": "es-046-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Qué tal salió la fiesta sorpresa de Marta?",
+            "respostaEsperada": "¿Qué tal salió la fiesta sorpresa de Marta?",
+            "explicacao": "Como foi a festa surpresa da Marta?",
+            "id": "es-046-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,20 +135,6 @@
             "id": "es-046-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E o que vocês disseram a ela?»",
-            "opcoes": [
-              "¿Y",
-              "le",
-              "qué",
-              "dijisteis?"
-            ],
-            "gabarito": "¿Y qué le dijisteis?",
-            "explicacao": "Escreva: ¿Y qué le dijisteis?",
-            "id": "es-046-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a forma de «nosotros» de «hablar» no imperfecto de subjuntivo?",
             "opcoes": [
@@ -162,6 +145,21 @@
             "gabarito": "habláramos",
             "explicacao": "A forma de «nosotros» leva acento escrito antes da terminação.",
             "id": "es-046-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «aconsejar que»?",
+            "audio": "aconsejar que",
+            "opcoes": [
+              "proibir que",
+              "aconselhar que",
+              "sem que",
+              "duvidar que"
+            ],
+            "gabarito": "aconselhar que",
+            "explicacao": "«aconsejar que» = aconselhar que.",
+            "id": "es-046-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -188,15 +186,6 @@
             "id": "es-046-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Y qué le dijisteis?",
-            "respostaEsperada": "¿Y qué le dijisteis?",
-            "explicacao": "E o que vocês disseram a ela?",
-            "id": "es-046-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase expressa um desejo difícil no presente?",
             "opcoes": [
@@ -207,6 +196,15 @@
             "gabarito": "Ojalá tuviera vacaciones.",
             "explicacao": "«Ojalá» pede subjuntivo; com o imperfecto, o desejo é irreal ou difícil agora.",
             "id": "es-046-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Y qué le dijisteis?",
+            "respostaEsperada": "¿Y qué le dijisteis?",
+            "explicacao": "E o que vocês disseram a ela?",
+            "id": "es-046-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -221,6 +219,21 @@
             "id": "es-046-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «sugerir que»?",
+            "audio": "sugerir que",
+            "opcoes": [
+              "sugerir que",
+              "era importante que",
+              "pedir que",
+              "esperar que"
+            ],
+            "gabarito": "sugerir que",
+            "explicacao": "«sugerir que» = sugerir que.",
+            "id": "es-046-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Le pedí que ___ la verdad. (decir)",
             "opcoes": [
@@ -231,21 +244,6 @@
             "gabarito": "dijera",
             "explicacao": "O radical vem de «dijeron».",
             "id": "es-046-e14"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «permitir que»?",
-            "audio": "permitir que",
-            "opcoes": [
-              "a menos que",
-              "era importante que",
-              "antes que",
-              "permitir que"
-            ],
-            "gabarito": "permitir que",
-            "explicacao": "«permitir que» = permitir que.",
-            "id": "es-046-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -272,21 +270,6 @@
             "id": "es-046-e16"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «aconsejar que»?",
-            "audio": "aconsejar que",
-            "opcoes": [
-              "proibir que",
-              "aconselhar que",
-              "sem que",
-              "duvidar que"
-            ],
-            "gabarito": "aconselhar que",
-            "explicacao": "«aconsejar que» = aconselhar que.",
-            "id": "es-046-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Salimos antes de que ___ la lluvia. (empezar)",
             "opcoes": [
@@ -297,6 +280,21 @@
             "gabarito": "empezara",
             "explicacao": "«Antes de que» pede subjuntivo; aqui o contexto está no passado.",
             "id": "es-046-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «como si»?",
+            "audio": "como si",
+            "opcoes": [
+              "como se",
+              "exigir que",
+              "duvidar que",
+              "proibir que"
+            ],
+            "gabarito": "como se",
+            "explicacao": "«como si» = como se.",
+            "id": "es-046-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -311,6 +309,15 @@
             "id": "es-046-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "me alegré de que",
+            "respostaEsperada": "me alegré de que",
+            "explicacao": "fiquei contente por",
+            "id": "es-046-r03",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Me pidió que esperara.»",
             "opcoes": [
@@ -322,21 +329,6 @@
             "gabarito": "Me pidió que esperara.",
             "explicacao": "O pronome «me» vem antes do verbo conjugado.",
             "id": "es-046-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «sugerir que»?",
-            "audio": "sugerir que",
-            "opcoes": [
-              "sugerir que",
-              "era importante que",
-              "pedir que",
-              "esperar que"
-            ],
-            "gabarito": "sugerir que",
-            "explicacao": "«sugerir que» = sugerir que.",
-            "id": "es-046-x07",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -357,6 +349,21 @@
             "id": "es-046-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «querer que»?",
+            "audio": "querer que",
+            "opcoes": [
+              "sem que",
+              "recomendar que",
+              "a menos que",
+              "querer que"
+            ],
+            "gabarito": "querer que",
+            "explicacao": "«querer que» = querer que.",
+            "id": "es-046-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Esperaba que ellos ___ a tiempo. (llegar)",
             "opcoes": [
@@ -367,21 +374,6 @@
             "gabarito": "llegaran",
             "explicacao": "De «llegaron», tira-se «-ron» e põe-se «-ran».",
             "id": "es-046-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «como si»?",
-            "audio": "como si",
-            "opcoes": [
-              "como se",
-              "exigir que",
-              "duvidar que",
-              "proibir que"
-            ],
-            "gabarito": "como se",
-            "explicacao": "«como si» = como se.",
-            "id": "es-046-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -408,6 +400,15 @@
             "id": "es-046-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "en caso de que",
+            "respostaEsperada": "en caso de que",
+            "explicacao": "caso",
+            "id": "es-046-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o imperfecto de subjuntivo de «ir» para «que yo»?",
             "opcoes": [
@@ -421,17 +422,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «querer que»?",
-            "audio": "querer que",
+            "enunciado": "O que significa «sin que»?",
+            "audio": "sin que",
             "opcoes": [
-              "sem que",
-              "recomendar que",
               "a menos que",
-              "querer que"
+              "sugerir que",
+              "oxalá, tomara que",
+              "sem que"
             ],
-            "gabarito": "querer que",
-            "explicacao": "«querer que» = querer que.",
-            "id": "es-046-x09",
+            "gabarito": "sem que",
+            "explicacao": "«sin que» = sem que.",
+            "id": "es-046-x06",
             "complemento": true
           },
           {
@@ -457,21 +458,6 @@
             "gabarito": "o indefinido de «ellos»",
             "explicacao": "Tira-se o «-ron» do indefinido de «ellos».",
             "id": "es-046-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «sin que»?",
-            "audio": "sin que",
-            "opcoes": [
-              "a menos que",
-              "sugerir que",
-              "oxalá, tomara que",
-              "sem que"
-            ],
-            "gabarito": "sem que",
-            "explicacao": "«sin que» = sem que.",
-            "id": "es-046-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

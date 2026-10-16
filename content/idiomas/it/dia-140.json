@@ -63,25 +63,6 @@
             "id": "it-035-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia, senhora. Sente-se. Pode me falar da sua experiência?»",
-            "opcoes": [
-              "della",
-              "Buongiorno,",
-              "signora.",
-              "parlarmi",
-              "Si",
-              "Sua",
-              "esperienza?",
-              "Può",
-              "accomodi."
-            ],
-            "gabarito": "Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
-            "explicacao": "Escreva: Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
-            "id": "it-035-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Sto cercando un lavoro",
@@ -98,12 +79,18 @@
             "id": "it-035-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
-            "respostaEsperada": "Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
-            "explicacao": "Bom dia, senhora. Sente-se. Pode me falar da sua experiência?",
-            "id": "it-035-x02",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il cuoco»?",
+            "audio": "il cuoco",
+            "opcoes": [
+              "o cozinheiro",
+              "o chefe",
+              "o salário",
+              "o advogado"
+            ],
+            "gabarito": "o cozinheiro",
+            "explicacao": "«il cuoco» = o cozinheiro.",
+            "id": "it-035-x01",
             "complemento": true
           },
           {
@@ -113,6 +100,15 @@
             "respostaEsperada": "So lavorare in squadra",
             "explicacao": "Escreva: So lavorare in squadra.",
             "id": "it-035-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
+            "respostaEsperada": "Buongiorno, signora. Si accomodi. Può parlarmi della Sua esperienza?",
+            "explicacao": "Bom dia, senhora. Sente-se. Pode me falar da sua experiência?",
+            "id": "it-035-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -139,24 +135,6 @@
             "id": "it-035-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E agora o que a senhora faz? Mora na Itália?»",
-            "opcoes": [
-              "E",
-              "Vive",
-              "fa?",
-              "Italia?",
-              "cosa",
-              "adesso",
-              "che",
-              "in"
-            ],
-            "gabarito": "E adesso che cosa fa? Vive in Italia?",
-            "explicacao": "Escreva: E adesso che cosa fa? Vive in Italia?",
-            "id": "it-035-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Faculdade» (estudar na universidade):",
             "opcoes": [
@@ -167,6 +145,21 @@
             "gabarito": "studio all'università",
             "explicacao": "«Facoltà» é departamento.",
             "id": "it-035-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il capo»?",
+            "audio": "il capo",
+            "opcoes": [
+              "a reunião",
+              "o horário",
+              "o colega",
+              "o chefe"
+            ],
+            "gabarito": "o chefe",
+            "explicacao": "«il capo» = o chefe.",
+            "id": "it-035-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -193,15 +186,6 @@
             "id": "it-035-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "E adesso che cosa fa? Vive in Italia?",
-            "respostaEsperada": "E adesso che cosa fa? Vive in Italia?",
-            "explicacao": "E agora o que a senhora faz? Mora na Itália?",
-            "id": "it-035-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Lavoro ___ una banca.",
             "opcoes": [
@@ -212,6 +196,15 @@
             "gabarito": "in",
             "explicacao": "Local de trabalho: in.",
             "id": "it-035-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "E adesso che cosa fa? Vive in Italia?",
+            "respostaEsperada": "E adesso che cosa fa? Vive in Italia?",
+            "explicacao": "E agora o que a senhora faz? Mora na Itália?",
+            "id": "it-035-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -226,6 +219,21 @@
             "id": "it-035-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «l'esperienza»?",
+            "audio": "l'esperienza",
+            "opcoes": [
+              "tempo integral",
+              "a reunião",
+              "a experiência",
+              "o advogado"
+            ],
+            "gabarito": "a experiência",
+            "explicacao": "«l'esperienza» = a experiência.",
+            "id": "it-035-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Mi occupo ___ vendite.",
             "opcoes": [
@@ -236,20 +244,6 @@
             "gabarito": "di",
             "explicacao": "«Occuparsi di».",
             "id": "it-035-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sabe trabalhar em equipe?»",
-            "opcoes": [
-              "squadra?",
-              "Sa",
-              "lavorare",
-              "in"
-            ],
-            "gabarito": "Sa lavorare in squadra?",
-            "explicacao": "Escreva: Sa lavorare in squadra?",
-            "id": "it-035-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -281,19 +275,25 @@
             "id": "it-035-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sa lavorare in squadra?",
-            "respostaEsperada": "Sa lavorare in squadra?",
-            "explicacao": "Sabe trabalhar em equipe?",
-            "id": "it-035-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Sou engenheiro. Trabalho numa empresa há dois anos. Antes eu trabalhava em Roma. Estou procurando um trabalho como professor.",
             "respostaEsperada": "Sono ingegnere. Lavoro in una ditta da due anni. Prima lavoravo a Roma. Sto cercando un lavoro come professore.",
             "id": "it-035-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la riunione»?",
+            "audio": "la riunione",
+            "opcoes": [
+              "o horário",
+              "o cozinheiro",
+              "a reunião",
+              "o salário"
+            ],
+            "gabarito": "a reunião",
+            "explicacao": "«la riunione» = a reunião.",
+            "id": "it-035-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -308,6 +308,15 @@
             "id": "it-035-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sa lavorare in squadra?",
+            "respostaEsperada": "Sa lavorare in squadra?",
+            "explicacao": "Sabe trabalhar em equipe?",
+            "id": "it-035-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Mia sorella è ___. (cozinheira)",
             "opcoes": [
@@ -318,21 +327,6 @@
             "gabarito": "cuoca",
             "explicacao": "O feminino de «cuoco» é «cuoca».",
             "id": "it-035-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il cuoco»?",
-            "audio": "il cuoco",
-            "opcoes": [
-              "o cozinheiro",
-              "o chefe",
-              "o salário",
-              "o advogado"
-            ],
-            "gabarito": "o cozinheiro",
-            "explicacao": "«il cuoco» = o cozinheiro.",
-            "id": "it-035-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -359,6 +353,21 @@
             "id": "it-035-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «l'ufficio»?",
+            "audio": "l'ufficio",
+            "opcoes": [
+              "o escritório",
+              "trabalhar em equipe",
+              "tempo integral",
+              "a empresa"
+            ],
+            "gabarito": "o escritório",
+            "explicacao": "«l'ufficio» = o escritório.",
+            "id": "it-035-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Luca è ___ bravo ingegnere. (um)",
             "opcoes": [
@@ -369,21 +378,6 @@
             "gabarito": "un",
             "explicacao": "Com adjetivo, a profissão leva artigo indefinido.",
             "id": "it-035-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il capo»?",
-            "audio": "il capo",
-            "opcoes": [
-              "a reunião",
-              "o horário",
-              "o colega",
-              "o chefe"
-            ],
-            "gabarito": "o chefe",
-            "explicacao": "«il capo» = o chefe.",
-            "id": "it-035-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -410,6 +404,15 @@
             "id": "it-035-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il tempo pieno",
+            "respostaEsperada": "il tempo pieno",
+            "explicacao": "tempo integral",
+            "id": "it-035-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Trabalhei num banco por cinco anos»?",
             "opcoes": [
@@ -423,17 +426,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «l'esperienza»?",
-            "audio": "l'esperienza",
+            "enunciado": "O que significa «il collega»?",
+            "audio": "il collega",
             "opcoes": [
-              "tempo integral",
-              "a reunião",
-              "a experiência",
-              "o advogado"
+              "o colega",
+              "a empresa",
+              "o horário",
+              "o enfermeiro"
             ],
-            "gabarito": "a experiência",
-            "explicacao": "«l'esperienza» = a experiência.",
-            "id": "it-035-x09",
+            "gabarito": "o colega",
+            "explicacao": "«il collega» = o colega.",
+            "id": "it-035-x06",
             "complemento": true
           },
           {
@@ -463,21 +466,6 @@
             "gabarito": "Mi occupo di vendite da due anni.",
             "explicacao": "«Occuparsi di» + «da» para situação atual.",
             "id": "it-035-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «la riunione»?",
-            "audio": "la riunione",
-            "opcoes": [
-              "o horário",
-              "o cozinheiro",
-              "a reunião",
-              "o salário"
-            ],
-            "gabarito": "a reunião",
-            "explicacao": "«la riunione» = a reunião.",
-            "id": "it-035-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

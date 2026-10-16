@@ -380,30 +380,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá. Para onde o senhor quer ir?»",
-              "opcoes": [
-                "ехать?",
-                "Куда",
-                "вы",
-                "хотите",
-                "Здравствуйте."
-              ],
-              "gabarito": "Здравствуйте. Куда вы хотите ехать?",
-              "explicacao": "Escreva: Здравствуйте. Куда вы хотите ехать?",
-              "id": "ru-038-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте. Куда вы хотите ехать?",
-              "respostaEsperada": "Здравствуйте. Куда вы хотите ехать?",
-              "explicacao": "Olá. Para onde o senhor quer ir?",
-              "id": "ru-038-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Para São Petersburgo. Um bilhete, por favor.»",
               "opcoes": [
                 "В",
@@ -414,7 +390,7 @@
               ],
               "gabarito": "В Санкт-Петербург. Один билет, пожалуйста.",
               "explicacao": "Escreva: В Санкт-Петербург. Один билет, пожалуйста.",
-              "id": "ru-038-x03",
+              "id": "ru-038-x01",
               "complemento": true
             },
             {
@@ -435,20 +411,7 @@
               "audio": "В Санкт-Петербург. Один билет, пожалуйста.",
               "respostaEsperada": "В Санкт-Петербург. Один билет, пожалуйста.",
               "explicacao": "Para São Petersburgo. Um bilhete, por favor.",
-              "id": "ru-038-x04",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Para que dia?»",
-              "opcoes": [
-                "какое",
-                "На",
-                "число?"
-              ],
-              "gabarito": "На какое число?",
-              "explicacao": "Escreva: На какое число?",
-              "id": "ru-038-x05",
+              "id": "ru-038-x02",
               "complemento": true
             },
             {
@@ -464,15 +427,6 @@
               "id": "ru-038-e03"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "На какое число?",
-              "respostaEsperada": "На какое число?",
-              "explicacao": "Para que dia?",
-              "id": "ru-038-x06",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Para 15 de maio, ida e volta.»",
               "opcoes": [
@@ -485,20 +439,8 @@
               ],
               "gabarito": "На пятнадцатое мая, туда и обратно.",
               "explicacao": "Escreva: На пятнадцатое мая, туда и обратно.",
-              "id": "ru-038-x07",
+              "id": "ru-038-x03",
               "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Поезд отправляется ___ третьей платформы.",
-              "opcoes": [
-                "с",
-                "из",
-                "от"
-              ],
-              "gabarito": "с",
-              "explicacao": "«с» + genitivo.",
-              "id": "ru-038-e04"
             },
             {
               "tipo": "audio-recognition",
@@ -506,7 +448,16 @@
               "audio": "На пятнадцатое мая, туда и обратно.",
               "respostaEsperada": "На пятнадцатое мая, туда и обратно.",
               "explicacao": "Para 15 de maio, ida e volta.",
-              "id": "ru-038-x08",
+              "id": "ru-038-x04",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте. Куда вы хотите ехать?",
+              "respostaEsperada": "Здравствуйте. Куда вы хотите ехать?",
+              "explicacao": "Olá. Para onde o senhor quer ir?",
+              "id": "ru-038-r01",
               "complemento": true
             },
             {
@@ -527,7 +478,28 @@
               ],
               "gabarito": "Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
               "explicacao": "Escreva: Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
-              "id": "ru-038-x09",
+              "id": "ru-038-x05",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Поезд отправляется ___ третьей платформы.",
+              "opcoes": [
+                "с",
+                "из",
+                "от"
+              ],
+              "gabarito": "с",
+              "explicacao": "«с» + genitivo.",
+              "id": "ru-038-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
+              "respostaEsperada": "Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
+              "explicacao": "Há um trem às oito e meia. Chega às doze e quarenta e cinco.",
+              "id": "ru-038-x06",
               "complemento": true
             },
             {
@@ -543,25 +515,37 @@
               "id": "ru-038-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
-              "respostaEsperada": "Есть поезд в восемь тридцать. Он прибывает в двенадцать сорок пять.",
-              "explicacao": "Há um trem às oito e meia. Chega às doze e quarenta e cinco.",
-              "id": "ru-038-x10",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Ida e volta, seis mil rublos.»",
+              "opcoes": [
+                "шесть",
+                "и",
+                "Туда",
+                "тысяч",
+                "обратно",
+                "рублей."
+              ],
+              "gabarito": "Туда и обратно шесть тысяч рублей.",
+              "explicacao": "Escreva: Туда и обратно шесть тысяч рублей.",
+              "id": "ru-038-x07",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Quanto custa o bilhete?»",
-              "opcoes": [
-                "Сколько",
-                "билет?",
-                "стоит"
-              ],
-              "gabarito": "Сколько стоит билет?",
-              "explicacao": "Escreva: Сколько стоит билет?",
-              "id": "ru-038-x11",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "На какое число?",
+              "respostaEsperada": "На какое число?",
+              "explicacao": "Para que dia?",
+              "id": "ru-038-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Туда и обратно шесть тысяч рублей.",
+              "respostaEsperada": "Туда и обратно шесть тысяч рублей.",
+              "explicacao": "Ida e volta, seis mil rublos.",
+              "id": "ru-038-x08",
               "complemento": true
             },
             {
@@ -577,28 +561,18 @@
               "id": "ru-038-e06"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Сколько стоит билет?",
-              "respostaEsperada": "Сколько стоит билет?",
-              "explicacao": "Quanto custa o bilhete?",
-              "id": "ru-038-x12",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ida e volta, seis mil rublos.»",
+              "enunciado": "Monte a frase: «Da plataforma três. Não se atrase!»",
               "opcoes": [
-                "шесть",
-                "и",
-                "Туда",
-                "тысяч",
-                "обратно",
-                "рублей."
+                "третьей",
+                "Не",
+                "платформы.",
+                "С",
+                "опаздывайте!"
               ],
-              "gabarito": "Туда и обратно шесть тысяч рублей.",
-              "explicacao": "Escreva: Туда и обратно шесть тысяч рублей.",
-              "id": "ru-038-x13",
+              "gabarito": "С третьей платформы. Не опаздывайте!",
+              "explicacao": "Escreva: С третьей платформы. Не опаздывайте!",
+              "id": "ru-038-x09",
               "complemento": true
             },
             {
@@ -616,35 +590,25 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Туда и обратно шесть тысяч рублей.",
-              "respostaEsperada": "Туда и обратно шесть тысяч рублей.",
-              "explicacao": "Ida e volta, seis mil rublos.",
-              "id": "ru-038-x14",
+              "audio": "С третьей платформы. Не опаздывайте!",
+              "respostaEsperada": "С третьей платформы. Не опаздывайте!",
+              "explicacao": "Da plataforma três. Não se atrase!",
+              "id": "ru-038-x10",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Está bem. De que plataforma parte o trem?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «транспорт»?",
+              "audio": "транспорт",
               "opcoes": [
-                "С",
-                "поезд?",
-                "платформы",
-                "какой",
-                "отправляется",
-                "Хорошо."
+                "ponto de ônibus",
+                "avião",
+                "transporte",
+                "ida e volta"
               ],
-              "gabarito": "Хорошо. С какой платформы отправляется поезд?",
-              "explicacao": "Escreva: Хорошо. С какой платформы отправляется поезд?",
-              "id": "ru-038-x15",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Хорошо. С какой платформы отправляется поезд?",
-              "respostaEsperada": "Хорошо. С какой платформы отправляется поезд?",
-              "explicacao": "Está bem. De que plataforma parte o trem?",
-              "id": "ru-038-x16",
+              "gabarito": "transporte",
+              "explicacao": "«транспорт» = transporte.",
+              "id": "ru-038-x11",
               "complemento": true
             },
             {
@@ -660,27 +624,42 @@
               "id": "ru-038-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Da plataforma três. Não se atrase!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «самолёт»?",
+              "audio": "самолёт",
               "opcoes": [
-                "третьей",
-                "Не",
-                "платформы.",
-                "С",
-                "опаздывайте!"
+                "ponto de ônibus",
+                "chegada",
+                "avião",
+                "só ida"
               ],
-              "gabarito": "С третьей платформы. Не опаздывайте!",
-              "explicacao": "Escreva: С третьей платформы. Не опаздывайте!",
-              "id": "ru-038-x17",
+              "gabarito": "avião",
+              "explicacao": "«самолёт» = avião.",
+              "id": "ru-038-x12",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "С третьей платформы. Не опаздывайте!",
-              "respostaEsperada": "С третьей платформы. Не опаздывайте!",
-              "explicacao": "Da plataforma três. Não se atrase!",
-              "id": "ru-038-x18",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Сколько стоит билет?",
+              "respostaEsperada": "Сколько стоит билет?",
+              "explicacao": "Quanto custa o bilhete?",
+              "id": "ru-038-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «туда и обратно»?",
+              "audio": "туда и обратно",
+              "opcoes": [
+                "transporte",
+                "bilhete",
+                "horários",
+                "ida e volta"
+              ],
+              "gabarito": "ida e volta",
+              "explicacao": "«туда и обратно» = ida e volta.",
+              "id": "ru-038-x13",
               "complemento": true
             },
             {
@@ -697,32 +676,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «транспорт»?",
-              "audio": "транспорт",
+              "enunciado": "O que significa «пересадка»?",
+              "audio": "пересадка",
               "opcoes": [
-                "ponto de ônibus",
-                "avião",
-                "transporte",
-                "ida e volta"
+                "ida e volta",
+                "plataforma",
+                "baldeação",
+                "transporte"
               ],
-              "gabarito": "transporte",
-              "explicacao": "«транспорт» = transporte.",
-              "id": "ru-038-x19",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «самолёт»?",
-              "audio": "самолёт",
-              "opcoes": [
-                "ponto de ônibus",
-                "chegada",
-                "avião",
-                "só ida"
-              ],
-              "gabarito": "avião",
-              "explicacao": "«самолёт» = avião.",
-              "id": "ru-038-x20",
+              "gabarito": "baldeação",
+              "explicacao": "«пересадка» = baldeação.",
+              "id": "ru-038-x14",
               "complemento": true
             },
             {
@@ -741,32 +705,56 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «туда и обратно»?",
-              "audio": "туда и обратно",
+              "enunciado": "O que significa «автобус»?",
+              "audio": "автобус",
               "opcoes": [
-                "transporte",
-                "bilhete",
-                "horários",
-                "ida e volta"
+                "trem",
+                "táxi",
+                "ônibus",
+                "ponto de ônibus"
               ],
-              "gabarito": "ida e volta",
-              "explicacao": "«туда и обратно» = ida e volta.",
-              "id": "ru-038-x21",
+              "gabarito": "ônibus",
+              "explicacao": "«автобус» = ônibus.",
+              "id": "ru-038-x15",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Хорошо. С какой платформы отправляется поезд?",
+              "respostaEsperada": "Хорошо. С какой платформы отправляется поезд?",
+              "explicacao": "Está bem. De que plataforma parte o trem?",
+              "id": "ru-038-r04",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «пересадка»?",
-              "audio": "пересадка",
+              "enunciado": "O que significa «билет»?",
+              "audio": "билет",
               "opcoes": [
+                "horários",
                 "ida e volta",
-                "plataforma",
-                "baldeação",
-                "transporte"
+                "bilhete",
+                "ônibus"
               ],
-              "gabarito": "baldeação",
-              "explicacao": "«пересадка» = baldeação.",
-              "id": "ru-038-x22",
+              "gabarito": "bilhete",
+              "explicacao": "«билет» = bilhete.",
+              "id": "ru-038-x16",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Туда и обратно, пожалуйста",
+              "opcoes": [
+                "обратно,",
+                "Туда",
+                "и",
+                "пожалуйста"
+              ],
+              "gabarito": "Туда и обратно, пожалуйста",
+              "explicacao": "Escreva: Туда и обратно, пожалуйста",
+              "id": "ru-038-x17",
               "complemento": true
             },
             {
@@ -783,59 +771,6 @@
               "id": "ru-038-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «автобус»?",
-              "audio": "автобус",
-              "opcoes": [
-                "trem",
-                "táxi",
-                "ônibus",
-                "ponto de ônibus"
-              ],
-              "gabarito": "ônibus",
-              "explicacao": "«автобус» = ônibus.",
-              "id": "ru-038-x23",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «билет»?",
-              "audio": "билет",
-              "opcoes": [
-                "horários",
-                "ida e volta",
-                "bilhete",
-                "ônibus"
-              ],
-              "gabarito": "bilhete",
-              "explicacao": "«билет» = bilhete.",
-              "id": "ru-038-x24",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Один билет до Москвы",
-              "respostaEsperada": "Один билет до Москвы",
-              "explicacao": "«до» + genitivo.",
-              "id": "ru-038-e12"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Туда и обратно, пожалуйста",
-              "opcoes": [
-                "обратно,",
-                "Туда",
-                "и",
-                "пожалуйста"
-              ],
-              "gabarito": "Туда и обратно, пожалуйста",
-              "explicacao": "Escreva: Туда и обратно, пожалуйста",
-              "id": "ru-038-x25",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Один билет до Москвы",
@@ -847,14 +782,16 @@
               ],
               "gabarito": "Один билет до Москвы",
               "explicacao": "Escreva: Один билет до Москвы",
-              "id": "ru-038-x26",
+              "id": "ru-038-x18",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases: como você viaja, o destino do bilhete, ida e volta, o horário do trem e a plataforma.",
-              "respostaEsperada": "Я еду на поезде. Один билет до Москвы. Туда и обратно. Поезд отправляется в девять часов. Он идёт с третьей платформы.",
-              "id": "ru-038-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Один билет до Москвы",
+              "respostaEsperada": "Один билет до Москвы",
+              "explicacao": "«до» + genitivo.",
+              "id": "ru-038-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -862,8 +799,14 @@
               "audio": "Туда и обратно, пожалуйста",
               "respostaEsperada": "Туда и обратно, пожалуйста",
               "explicacao": "Escreva: Туда и обратно, пожалуйста",
-              "id": "ru-038-x27",
+              "id": "ru-038-x19",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases: como você viaja, o destino do bilhete, ida e volta, o horário do trem e a plataforma.",
+              "respostaEsperada": "Я еду на поезде. Один билет до Москвы. Туда и обратно. Поезд отправляется в девять часов. Он идёт с третьей платформы.",
+              "id": "ru-038-e13"
             }
           ]
         },

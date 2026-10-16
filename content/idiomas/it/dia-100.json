@@ -63,24 +63,6 @@
             "id": "it-025-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Fabio, quanto tempo é preciso para chegar a Bolonha?»",
-            "opcoes": [
-              "Bologna?",
-              "Fabio,",
-              "vuole",
-              "ci",
-              "a",
-              "quanto",
-              "arrivare",
-              "per"
-            ],
-            "gabarito": "Fabio, quanto ci vuole per arrivare a Bologna?",
-            "explicacao": "Escreva: Fabio, quanto ci vuole per arrivare a Bologna?",
-            "id": "it-025-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Non ci credo",
@@ -97,12 +79,24 @@
             "id": "it-025-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Fabio, quanto ci vuole per arrivare a Bologna?",
-            "respostaEsperada": "Fabio, quanto ci vuole per arrivare a Bologna?",
-            "explicacao": "Fabio, quanto tempo é preciso para chegar a Bolonha?",
-            "id": "it-025-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Perfeito, topo. Você tem os mapas? Eu não os tenho.»",
+            "opcoes": [
+              "le",
+              "Hai",
+              "sto.",
+              "ci",
+              "mappe?",
+              "non",
+              "ce",
+              "Io",
+              "le",
+              "Perfetto,",
+              "ho."
+            ],
+            "gabarito": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "explicacao": "Escreva: Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "id": "it-025-x01",
             "complemento": true
           },
           {
@@ -112,6 +106,15 @@
             "respostaEsperada": "Ne voglio un po'",
             "explicacao": "Escreva: Ne voglio un po'.",
             "id": "it-025-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Fabio, quanto ci vuole per arrivare a Bologna?",
+            "respostaEsperada": "Fabio, quanto ci vuole per arrivare a Bologna?",
+            "explicacao": "Fabio, quanto tempo é preciso para chegar a Bolonha?",
+            "id": "it-025-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,25 +141,6 @@
             "id": "it-025-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então paramos lá para o almoço. O que acha?»",
-            "opcoes": [
-              "Che",
-              "ci",
-              "fermiamo",
-              "per",
-              "dici?",
-              "il",
-              "ne",
-              "pranzo.",
-              "Allora"
-            ],
-            "gabarito": "Allora ci fermiamo per il pranzo. Che ne dici?",
-            "explicacao": "Escreva: Allora ci fermiamo per il pranzo. Che ne dici?",
-            "id": "it-025-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -167,6 +151,15 @@
             "gabarito": "Ci metto venti minuti.",
             "explicacao": "Tempo de uma pessoa.",
             "id": "it-025-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "respostaEsperada": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
+            "explicacao": "Perfeito, topo. Você tem os mapas? Eu não os tenho.",
+            "id": "it-025-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -193,15 +186,6 @@
             "id": "it-025-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Allora ci fermiamo per il pranzo. Che ne dici?",
-            "respostaEsperada": "Allora ci fermiamo per il pranzo. Che ne dici?",
-            "explicacao": "Então paramos lá para o almoço. O que acha?",
-            "id": "it-025-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Hai fratelli? Sì, ___ ho due.",
             "opcoes": [
@@ -212,6 +196,15 @@
             "gabarito": "ne",
             "explicacao": "Quantidade.",
             "id": "it-025-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Allora ci fermiamo per il pranzo. Che ne dici?",
+            "respostaEsperada": "Allora ci fermiamo per il pranzo. Che ne dici?",
+            "explicacao": "Então paramos lá para o almoço. O que acha?",
+            "id": "it-025-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -226,6 +219,26 @@
             "id": "it-025-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, tenho no celular. Não levamos muito tempo.»",
+            "opcoes": [
+              "mettiamo",
+              "Sì,",
+              "molto.",
+              "telefono.",
+              "ce",
+              "le",
+              "Non",
+              "ci",
+              "ho",
+              "nel"
+            ],
+            "gabarito": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "explicacao": "Escreva: Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "id": "it-025-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Parli del viaggio? Sì, ___ parlo spesso.",
             "opcoes": [
@@ -236,27 +249,6 @@
             "gabarito": "ne",
             "explicacao": "Assunto: parlare di.",
             "id": "it-025-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Perfeito, topo. Você tem os mapas? Eu não os tenho.»",
-            "opcoes": [
-              "le",
-              "Hai",
-              "sto.",
-              "ci",
-              "mappe?",
-              "non",
-              "ce",
-              "Io",
-              "le",
-              "Perfetto,",
-              "ho."
-            ],
-            "gabarito": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
-            "explicacao": "Escreva: Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
-            "id": "it-025-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -285,19 +277,19 @@
             "id": "it-025-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
-            "respostaEsperada": "Perfetto, ci sto. Hai le mappe? Io non ce le ho.",
-            "explicacao": "Perfeito, topo. Você tem os mapas? Eu não os tenho.",
-            "id": "it-025-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Você já esteve em Roma? Sim, estive lá duas vezes. Levo duas horas para chegar lá.",
             "respostaEsperada": "Sei mai stato a Roma? Sì, ci sono stato due volte. Ci metto due ore per arrivarci.",
             "id": "it-025-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "respostaEsperada": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
+            "explicacao": "Sim, tenho no celular. Não levamos muito tempo.",
+            "id": "it-025-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -312,6 +304,15 @@
             "id": "it-025-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "lì, là, qui",
+            "respostaEsperada": "lì, là, qui",
+            "explicacao": "ali, lá, aqui",
+            "id": "it-025-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quante sorelle hai? ___ ho due. (delas)",
             "opcoes": [
@@ -322,26 +323,6 @@
             "gabarito": "Ne",
             "explicacao": "«Ne» indica a quantidade de um conjunto.",
             "id": "it-025-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, tenho no celular. Não levamos muito tempo.»",
-            "opcoes": [
-              "mettiamo",
-              "Sì,",
-              "molto.",
-              "telefono.",
-              "ce",
-              "le",
-              "Non",
-              "ci",
-              "ho",
-              "nel"
-            ],
-            "gabarito": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
-            "explicacao": "Escreva: Sì, ce le ho nel telefono. Non ci mettiamo molto.",
-            "id": "it-025-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -368,6 +349,21 @@
             "id": "it-025-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «pensarci»?",
+            "audio": "pensarci",
+            "opcoes": [
+              "ter opinião sobre",
+              "eu levo (tempo)",
+              "acreditar nisso",
+              "pensar nisso"
+            ],
+            "gabarito": "pensar nisso",
+            "explicacao": "«pensarci» = pensar nisso.",
+            "id": "it-025-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Hai del pane? Sì, ___ ho un po'. (dele)",
             "opcoes": [
@@ -378,15 +374,6 @@
             "gabarito": "ne",
             "explicacao": "«Ne» + quantidade ao responder.",
             "id": "it-025-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
-            "respostaEsperada": "Sì, ce le ho nel telefono. Non ci mettiamo molto.",
-            "explicacao": "Sim, tenho no celular. Não levamos muito tempo.",
-            "id": "it-025-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -413,6 +400,15 @@
             "id": "it-025-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "un po' di",
+            "respostaEsperada": "un po' di",
+            "explicacao": "um pouco de",
+            "id": "it-025-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «São precisas duas horas»?",
             "opcoes": [
@@ -426,17 +422,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «pensarci»?",
-            "audio": "pensarci",
+            "enunciado": "O que significa «crederci»?",
+            "audio": "crederci",
             "opcoes": [
-              "ter opinião sobre",
-              "eu levo (tempo)",
-              "acreditar nisso",
-              "pensar nisso"
+              "estou farto",
+              "demais",
+              "eu o tenho (expressão)",
+              "acreditar nisso"
             ],
-            "gabarito": "pensar nisso",
-            "explicacao": "«pensarci» = pensar nisso.",
-            "id": "it-025-x09",
+            "gabarito": "acreditar nisso",
+            "explicacao": "«crederci» = acreditar nisso.",
+            "id": "it-025-x06",
             "complemento": true
           },
           {
@@ -464,21 +460,6 @@
             "gabarito": "Quanto ci metti per arrivare?",
             "explicacao": "«Ci metti» é o tempo que você leva.",
             "id": "it-025-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «crederci»?",
-            "audio": "crederci",
-            "opcoes": [
-              "estou farto",
-              "demais",
-              "eu o tenho (expressão)",
-              "acreditar nisso"
-            ],
-            "gabarito": "acreditar nisso",
-            "explicacao": "«crederci» = acreditar nisso.",
-            "id": "it-025-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

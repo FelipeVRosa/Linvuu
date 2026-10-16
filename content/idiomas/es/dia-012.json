@@ -63,20 +63,6 @@
             "id": "es-003-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Diego, quantos anos você tem?»",
-            "opcoes": [
-              "¿cuántos",
-              "Diego,",
-              "años",
-              "tienes?"
-            ],
-            "gabarito": "Diego, ¿cuántos años tienes?",
-            "explicacao": "Escreva: Diego, ¿cuántos años tienes?",
-            "id": "es-003-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Me llamo Ana",
@@ -93,12 +79,18 @@
             "id": "es-003-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Diego, ¿cuántos años tienes?",
-            "respostaEsperada": "Diego, ¿cuántos años tienes?",
-            "explicacao": "Diego, quantos anos você tem?",
-            "id": "es-003-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Eu tenho dezenove. E o Carlos?»",
+            "opcoes": [
+              "¿Y",
+              "tengo",
+              "diecinueve.",
+              "Carlos?",
+              "Yo"
+            ],
+            "gabarito": "Yo tengo diecinueve. ¿Y Carlos?",
+            "explicacao": "Escreva: Yo tengo diecinueve. ¿Y Carlos?",
+            "id": "es-003-x01",
             "complemento": true
           },
           {
@@ -108,6 +100,15 @@
             "respostaEsperada": "Tiene dieciocho años",
             "explicacao": "Escreva: Tiene dieciocho años.",
             "id": "es-003-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Diego, ¿cuántos años tienes?",
+            "respostaEsperada": "Diego, ¿cuántos años tienes?",
+            "explicacao": "Diego, quantos anos você tem?",
+            "id": "es-003-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -134,21 +135,6 @@
             "id": "es-003-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Tenho vinte anos. E você?»",
-            "opcoes": [
-              "Tengo",
-              "años.",
-              "¿Y",
-              "veinte",
-              "tú?"
-            ],
-            "gabarito": "Tengo veinte años. ¿Y tú?",
-            "explicacao": "Escreva: Tengo veinte años. ¿Y tú?",
-            "id": "es-003-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se apresenta uma mulher chamada Julia?",
             "opcoes": [
@@ -159,6 +145,15 @@
             "gabarito": "Esta es Julia.",
             "explicacao": "«Esta» é feminino.",
             "id": "es-003-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Yo tengo diecinueve. ¿Y Carlos?",
+            "respostaEsperada": "Yo tengo diecinueve. ¿Y Carlos?",
+            "explicacao": "Eu tenho dezenove. E o Carlos?",
+            "id": "es-003-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -185,15 +180,6 @@
             "id": "es-003-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Tengo veinte años. ¿Y tú?",
-            "respostaEsperada": "Tengo veinte años. ¿Y tú?",
-            "explicacao": "Tenho vinte anos. E você?",
-            "id": "es-003-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Lucía ___ trece años. (tem)",
             "opcoes": [
@@ -204,6 +190,15 @@
             "gabarito": "tiene",
             "explicacao": "«Ella tiene».",
             "id": "es-003-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Tengo veinte años. ¿Y tú?",
+            "respostaEsperada": "Tengo veinte años. ¿Y tú?",
+            "explicacao": "Tenho vinte anos. E você?",
+            "id": "es-003-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -218,6 +213,19 @@
             "id": "es-003-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sim, é verdade!»",
+            "opcoes": [
+              "es",
+              "¡Sí,",
+              "verdad!"
+            ],
+            "gabarito": "¡Sí, es verdad!",
+            "explicacao": "Escreva: ¡Sí, es verdad!",
+            "id": "es-003-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Soy ___ Brasil. (de)",
             "opcoes": [
@@ -228,21 +236,6 @@
             "gabarito": "de",
             "explicacao": "Origem pede «de».",
             "id": "es-003-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu tenho dezenove. E o Carlos?»",
-            "opcoes": [
-              "¿Y",
-              "tengo",
-              "diecinueve.",
-              "Carlos?",
-              "Yo"
-            ],
-            "gabarito": "Yo tengo diecinueve. ¿Y Carlos?",
-            "explicacao": "Escreva: Yo tengo diecinueve. ¿Y Carlos?",
-            "id": "es-003-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -269,15 +262,6 @@
             "id": "es-003-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Yo tengo diecinueve. ¿Y Carlos?",
-            "respostaEsperada": "Yo tengo diecinueve. ¿Y Carlos?",
-            "explicacao": "Eu tenho dezenove. E o Carlos?",
-            "id": "es-003-x06",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Me llamo Ana y tengo veinte años.»",
             "opcoes": [
@@ -294,6 +278,15 @@
             "id": "es-003-e17"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "¡Sí, es verdad!",
+            "respostaEsperada": "¡Sí, es verdad!",
+            "explicacao": "Sim, é verdade!",
+            "id": "es-003-x04",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Ella es brasileña.»",
             "opcoes": [
@@ -306,24 +299,19 @@
             "id": "es-003-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Carlos tiene diecinueve también.",
+            "respostaEsperada": "Carlos tiene diecinueve también.",
+            "explicacao": "O Carlos também tem dezenove.",
+            "id": "es-003-r03",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol: Eu me chamo Carlos. Tenho vinte anos. Vivo no Brasil.",
             "respostaEsperada": "Me llamo Carlos. Tengo veinte años. Vivo en Brasil.",
             "id": "es-003-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O Carlos também tem dezenove.»",
-            "opcoes": [
-              "también.",
-              "Carlos",
-              "diecinueve",
-              "tiene"
-            ],
-            "gabarito": "Carlos tiene diecinueve también.",
-            "explicacao": "Escreva: Carlos tiene diecinueve también.",
-            "id": "es-003-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -350,6 +338,21 @@
             "id": "es-003-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «siete»?",
+            "audio": "siete",
+            "opcoes": [
+              "eu me chamo…",
+              "muito prazer",
+              "dois",
+              "sete"
+            ],
+            "gabarito": "sete",
+            "explicacao": "«siete» = sete.",
+            "id": "es-003-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ella es ___ . (alemã)",
             "opcoes": [
@@ -360,15 +363,6 @@
             "gabarito": "alemana",
             "explicacao": "Nacionalidade em consoante ganha «-a» no feminino e perde o til.",
             "id": "es-003-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Carlos tiene diecinueve también.",
-            "respostaEsperada": "Carlos tiene diecinueve también.",
-            "explicacao": "O Carlos também tem dezenove.",
-            "id": "es-003-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -395,6 +389,15 @@
             "id": "es-003-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Entonces somos todos jóvenes.",
+            "respostaEsperada": "Entonces somos todos jóvenes.",
+            "explicacao": "Então somos todos jovens.",
+            "id": "es-003-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se escreve o número 18?",
             "opcoes": [
@@ -407,17 +410,18 @@
             "id": "es-003-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então somos todos jovens.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «Encantado, encantada.»?",
+            "audio": "Encantado, encantada.",
             "opcoes": [
-              "Entonces",
-              "todos",
-              "somos",
-              "jóvenes."
+              "encantado (homem), encantada (mulher)",
+              "este é… (apresentando um homem)",
+              "Estados Unidos, estadunidense",
+              "esta é… (apresentando uma mulher)"
             ],
-            "gabarito": "Entonces somos todos jóvenes.",
-            "explicacao": "Escreva: Entonces somos todos jóvenes.",
-            "id": "es-003-x09",
+            "gabarito": "encantado (homem), encantada (mulher)",
+            "explicacao": "«Encantado, encantada.» = encantado (homem), encantada (mulher).",
+            "id": "es-003-x06",
             "complemento": true
           },
           {
@@ -444,15 +448,6 @@
             "gabarito": "¿Cómo se llama usted?",
             "explicacao": "Forma formal: «se llama» com «usted».",
             "id": "es-003-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Entonces somos todos jóvenes.",
-            "respostaEsperada": "Entonces somos todos jóvenes.",
-            "explicacao": "Então somos todos jovens.",
-            "id": "es-003-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

@@ -611,21 +611,6 @@
               "id": "es-030-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Pablo. O que você está fazendo?»",
-              "opcoes": [
-                "haciendo?",
-                "¿Qué",
-                "Pablo.",
-                "Hola,",
-                "estás"
-              ],
-              "gabarito": "Hola, Pablo. ¿Qué estás haciendo?",
-              "explicacao": "Escreva: Hola, Pablo. ¿Qué estás haciendo?",
-              "id": "es-030-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Mi padre está durmiendo",
@@ -642,12 +627,16 @@
               "id": "es-030-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Hola, Pablo. ¿Qué estás haciendo?",
-              "respostaEsperada": "Hola, Pablo. ¿Qué estás haciendo?",
-              "explicacao": "Oi, Pablo. O que você está fazendo?",
-              "id": "es-030-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Você já está jantando?»",
+              "opcoes": [
+                "cenando",
+                "¿Estás",
+                "ya?"
+              ],
+              "gabarito": "¿Estás cenando ya?",
+              "explicacao": "Escreva: ¿Estás cenando ya?",
+              "id": "es-030-x01",
               "complemento": true
             },
             {
@@ -657,6 +646,15 @@
               "respostaEsperada": "Acabamos de comer",
               "explicacao": "Escreva: Acabamos de comer.",
               "id": "es-030-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Hola, Pablo. ¿Qué estás haciendo?",
+              "respostaEsperada": "Hola, Pablo. ¿Qué estás haciendo?",
+              "explicacao": "Oi, Pablo. O que você está fazendo?",
+              "id": "es-030-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -683,23 +681,6 @@
               "id": "es-030-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Estou cozinhando. Acabei de chegar em casa.»",
-              "opcoes": [
-                "a",
-                "llegar",
-                "casa.",
-                "Acabo",
-                "Estoy",
-                "de",
-                "cocinando."
-              ],
-              "gabarito": "Estoy cocinando. Acabo de llegar a casa.",
-              "explicacao": "Escreva: Estoy cocinando. Acabo de llegar a casa.",
-              "id": "es-030-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Eu vou comer»?",
               "opcoes": [
@@ -710,6 +691,15 @@
               "gabarito": "Voy a comer.",
               "explicacao": "A preposição «a» é obrigatória.",
               "id": "es-030-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "¿Estás cenando ya?",
+              "respostaEsperada": "¿Estás cenando ya?",
+              "explicacao": "Você já está jantando?",
+              "id": "es-030-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -736,15 +726,6 @@
               "id": "es-030-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Estoy cocinando. Acabo de llegar a casa.",
-              "respostaEsperada": "Estoy cocinando. Acabo de llegar a casa.",
-              "explicacao": "Estou cozinhando. Acabei de chegar em casa.",
-              "id": "es-030-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual palavra quer dizer «jantar»?",
               "opcoes": [
@@ -755,6 +736,15 @@
               "gabarito": "la cena",
               "explicacao": "«Escena» é cena de filme.",
               "id": "es-030-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Estoy cocinando. Acabo de llegar a casa.",
+              "respostaEsperada": "Estoy cocinando. Acabo de llegar a casa.",
+              "explicacao": "Estou cozinhando. Acabei de chegar em casa.",
+              "id": "es-030-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -769,6 +759,27 @@
               "id": "es-030-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Ainda não. Vou jantar daqui a meia hora. E você?»",
+              "opcoes": [
+                "hora.",
+                "¿Y",
+                "no.",
+                "Voy",
+                "de",
+                "dentro",
+                "cenar",
+                "Todavía",
+                "a",
+                "media",
+                "tú?"
+              ],
+              "gabarito": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+              "explicacao": "Escreva: Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+              "id": "es-030-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Mañana ___ a viajar. (nosotros, ir)",
               "opcoes": [
@@ -779,19 +790,6 @@
               "gabarito": "vamos",
               "explicacao": "«Vamos a» + infinitivo: futuro próximo.",
               "id": "es-030-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você já está jantando?»",
-              "opcoes": [
-                "cenando",
-                "¿Estás",
-                "ya?"
-              ],
-              "gabarito": "¿Estás cenando ya?",
-              "explicacao": "Escreva: ¿Estás cenando ya?",
-              "id": "es-030-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -818,15 +816,6 @@
               "id": "es-030-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Estás cenando ya?",
-              "respostaEsperada": "¿Estás cenando ya?",
-              "explicacao": "Você já está jantando?",
-              "id": "es-030-x06",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Estamos mirando la cartelera.»",
               "opcoes": [
@@ -838,6 +827,15 @@
               "gabarito": "Estamos mirando la cartelera.",
               "explicacao": "«Estar» + gerúndio + objeto.",
               "id": "es-030-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+              "respostaEsperada": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
+              "explicacao": "Ainda não. Vou jantar daqui a meia hora. E você?",
+              "id": "es-030-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -855,31 +853,19 @@
               "id": "es-030-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Qué película vais a ver?",
+              "respostaEsperada": "¿Qué película vais a ver?",
+              "explicacao": "Que filme vocês vão ver?",
+              "id": "es-030-r03",
+              "complemento": true
+            },
+            {
               "tipo": "producao",
               "enunciado": "Escreva em espanhol: Acabo de chegar e vou cozinhar agora.",
               "respostaEsperada": "Acabo de llegar y voy a cocinar ahora.",
               "id": "es-030-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ainda não. Vou jantar daqui a meia hora. E você?»",
-              "opcoes": [
-                "hora.",
-                "¿Y",
-                "no.",
-                "Voy",
-                "de",
-                "dentro",
-                "cenar",
-                "Todavía",
-                "a",
-                "media",
-                "tú?"
-              ],
-              "gabarito": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
-              "explicacao": "Escreva: Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
-              "id": "es-030-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -906,6 +892,27 @@
               "id": "es-030-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Estou esperando o ônibus. Vou ao cinema com a Marta.»",
+              "opcoes": [
+                "el",
+                "cine",
+                "Marta.",
+                "ir",
+                "a",
+                "esperando",
+                "Estoy",
+                "con",
+                "autobús.",
+                "Voy",
+                "al"
+              ],
+              "gabarito": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+              "explicacao": "Escreva: Estoy esperando el autobús. Voy a ir al cine con Marta.",
+              "id": "es-030-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Mañana nosotros ___ a viajar a Sevilla. (ir)",
               "opcoes": [
@@ -916,15 +923,6 @@
               "gabarito": "vamos",
               "explicacao": "Com «nosotros», «ir» faz «vamos».",
               "id": "es-030-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
-              "respostaEsperada": "Todavía no. Voy a cenar dentro de media hora. ¿Y tú?",
-              "explicacao": "Ainda não. Vou jantar daqui a meia hora. E você?",
-              "id": "es-030-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -951,6 +949,15 @@
               "id": "es-030-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Vais a cenar después?",
+              "respostaEsperada": "¿Vais a cenar después?",
+              "explicacao": "Vocês vão jantar depois?",
+              "id": "es-030-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase indica futuro próximo?",
               "opcoes": [
@@ -963,24 +970,12 @@
               "id": "es-030-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Estou esperando o ônibus. Vou ao cinema com a Marta.»",
-              "opcoes": [
-                "el",
-                "cine",
-                "Marta.",
-                "ir",
-                "a",
-                "esperando",
-                "Estoy",
-                "con",
-                "autobús.",
-                "Voy",
-                "al"
-              ],
-              "gabarito": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
-              "explicacao": "Escreva: Estoy esperando el autobús. Voy a ir al cine con Marta.",
-              "id": "es-030-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+              "respostaEsperada": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
+              "explicacao": "Estou esperando o ônibus. Vou ao cinema com a Marta.",
+              "id": "es-030-x06",
               "complemento": true
             },
             {
@@ -1009,15 +1004,6 @@
               "gabarito": "Estoy esperando el autobús ahora mismo.",
               "explicacao": "«Estar» + gerúndio indica ação em curso.",
               "id": "es-030-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
-              "respostaEsperada": "Estoy esperando el autobús. Voy a ir al cine con Marta.",
-              "explicacao": "Estou esperando o ônibus. Vou ao cinema com a Marta.",
-              "id": "es-030-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

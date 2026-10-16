@@ -396,29 +396,20 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito obrigado pela atenção. Há perguntas?»",
+              "enunciado": "Monte a frase: «Obrigada. O senhor pode explicar o gráfico mais uma vez?»",
               "opcoes": [
-                "Fragen?",
-                "Vielen",
-                "Haben",
-                "für",
-                "Dank",
+                "Können",
+                "die",
+                "Danke.",
+                "Grafik",
+                "einmal",
+                "noch",
                 "Sie",
-                "Aufmerksamkeit.",
-                "Ihre"
+                "erklären?"
               ],
-              "gabarito": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
-              "explicacao": "Escreva: Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
+              "gabarito": "Danke. Können Sie die Grafik noch einmal erklären?",
+              "explicacao": "Escreva: Danke. Können Sie die Grafik noch einmal erklären?",
               "id": "de-067-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
-              "respostaEsperada": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
-              "explicacao": "Muito obrigado pela atenção. Há perguntas?",
-              "id": "de-067-x02",
               "complemento": true
             },
             {
@@ -434,31 +425,12 @@
               "id": "de-067-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Cem pessoas participaram, metade delas mulheres.»",
-              "opcoes": [
-                "Personen",
-                "haben",
-                "die",
-                "Es",
-                "Hälfte",
-                "Frauen.",
-                "teilgenommen,",
-                "davon",
-                "hundert"
-              ],
-              "gabarito": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
-              "explicacao": "Escreva: Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
-              "id": "de-067-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
-              "respostaEsperada": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
-              "explicacao": "Cem pessoas participaram, metade delas mulheres.",
-              "id": "de-067-x04",
+              "audio": "Danke. Können Sie die Grafik noch einmal erklären?",
+              "respostaEsperada": "Danke. Können Sie die Grafik noch einmal erklären?",
+              "explicacao": "Obrigada. O senhor pode explicar o gráfico mais uma vez?",
+              "id": "de-067-x02",
               "complemento": true
             },
             {
@@ -474,21 +446,29 @@
               "id": "de-067-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
+              "respostaEsperada": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen?",
+              "explicacao": "Muito obrigado pela atenção. Há perguntas?",
+              "id": "de-067-r01",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigada. O senhor pode explicar o gráfico mais uma vez?»",
+              "enunciado": "Monte a frase: «Essa é uma proposta interessante. Muito obrigada!»",
               "opcoes": [
-                "Können",
-                "die",
-                "Danke.",
-                "Grafik",
-                "einmal",
-                "noch",
-                "Sie",
-                "erklären?"
+                "ist",
+                "ein",
+                "interessanter",
+                "Vorschlag.",
+                "Das",
+                "Dank!",
+                "Vielen"
               ],
-              "gabarito": "Danke. Können Sie die Grafik noch einmal erklären?",
-              "explicacao": "Escreva: Danke. Können Sie die Grafik noch einmal erklären?",
-              "id": "de-067-x05",
+              "gabarito": "Das ist ein interessanter Vorschlag. Vielen Dank!",
+              "explicacao": "Escreva: Das ist ein interessanter Vorschlag. Vielen Dank!",
+              "id": "de-067-x03",
               "complemento": true
             },
             {
@@ -506,29 +486,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Danke. Können Sie die Grafik noch einmal erklären?",
-              "respostaEsperada": "Danke. Können Sie die Grafik noch einmal erklären?",
-              "explicacao": "Obrigada. O senhor pode explicar o gráfico mais uma vez?",
-              "id": "de-067-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tenho uma pergunta sobre a conclusão: o que o senhor recomenda?»",
-              "opcoes": [
-                "Frage",
-                "habe",
-                "eine",
-                "zum",
-                "Ich",
-                "empfehlen",
-                "Sie?",
-                "Was",
-                "Schluss:"
-              ],
-              "gabarito": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
-              "explicacao": "Escreva: Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
-              "id": "de-067-x07",
+              "audio": "Das ist ein interessanter Vorschlag. Vielen Dank!",
+              "respostaEsperada": "Das ist ein interessanter Vorschlag. Vielen Dank!",
+              "explicacao": "Essa é uma proposta interessante. Muito obrigada!",
+              "id": "de-067-x04",
               "complemento": true
             },
             {
@@ -544,30 +505,42 @@
               "id": "de-067-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
-              "respostaEsperada": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
-              "explicacao": "Tenho uma pergunta sobre a conclusão: o que o senhor recomenda?",
-              "id": "de-067-x08",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «das Drittel»?",
+              "audio": "das Drittel",
+              "opcoes": [
+                "em comparação com",
+                "gráfico",
+                "por cento",
+                "um terço"
+              ],
+              "gabarito": "um terço",
+              "explicacao": "«das Drittel» = um terço.",
+              "id": "de-067-x05",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Recomendo investir mais em transporte público.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
+              "respostaEsperada": "Es haben hundert Personen teilgenommen, die Hälfte davon Frauen.",
+              "explicacao": "Cem pessoas participaram, metade delas mulheres.",
+              "id": "de-067-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Aufmerksamkeit»?",
+              "audio": "die Aufmerksamkeit",
               "opcoes": [
-                "Ich",
-                "mehr",
-                "Verkehrsmittel",
-                "öffentliche",
-                "in",
-                "zu",
-                "investieren.",
-                "empfehle,"
+                "atenção",
+                "em comparação com",
+                "apresentar",
+                "slide"
               ],
-              "gabarito": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
-              "explicacao": "Escreva: Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
-              "id": "de-067-x09",
+              "gabarito": "atenção",
+              "explicacao": "«die Aufmerksamkeit» = atenção.",
+              "id": "de-067-x06",
               "complemento": true
             },
             {
@@ -583,15 +556,6 @@
               "id": "de-067-e06"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
-              "respostaEsperada": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
-              "explicacao": "Recomendo investir mais em transporte público.",
-              "id": "de-067-x10",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Die Mehrheit» é:",
               "opcoes": [
@@ -604,29 +568,18 @@
               "id": "de-067-e07"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Essa é uma proposta interessante. Muito obrigada!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «vorstellen»?",
+              "audio": "vorstellen",
               "opcoes": [
-                "ist",
-                "ein",
-                "interessanter",
-                "Vorschlag.",
-                "Das",
-                "Dank!",
-                "Vielen"
+                "diagrama",
+                "estrutura, roteiro",
+                "tema",
+                "apresentar"
               ],
-              "gabarito": "Das ist ein interessanter Vorschlag. Vielen Dank!",
-              "explicacao": "Escreva: Das ist ein interessanter Vorschlag. Vielen Dank!",
-              "id": "de-067-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Das ist ein interessanter Vorschlag. Vielen Dank!",
-              "respostaEsperada": "Das ist ein interessanter Vorschlag. Vielen Dank!",
-              "explicacao": "Essa é uma proposta interessante. Muito obrigada!",
-              "id": "de-067-x12",
+              "gabarito": "apresentar",
+              "explicacao": "«vorstellen» = apresentar.",
+              "id": "de-067-x07",
               "complemento": true
             },
             {
@@ -643,32 +596,41 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Drittel»?",
-              "audio": "das Drittel",
+              "enunciado": "O que significa «die Gliederung»?",
+              "audio": "die Gliederung",
               "opcoes": [
+                "um terço",
                 "em comparação com",
-                "gráfico",
-                "por cento",
-                "um terço"
+                "palestra, apresentação",
+                "estrutura, roteiro"
               ],
-              "gabarito": "um terço",
-              "explicacao": "«das Drittel» = um terço.",
-              "id": "de-067-x13",
+              "gabarito": "estrutura, roteiro",
+              "explicacao": "«die Gliederung» = estrutura, roteiro.",
+              "id": "de-067-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
+              "respostaEsperada": "Ich habe eine Frage zum Schluss: Was empfehlen Sie?",
+              "explicacao": "Tenho uma pergunta sobre a conclusão: o que o senhor recomenda?",
+              "id": "de-067-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Aufmerksamkeit»?",
-              "audio": "die Aufmerksamkeit",
+              "enunciado": "O que significa «das Diagramm»?",
+              "audio": "das Diagramm",
               "opcoes": [
-                "atenção",
-                "em comparação com",
                 "apresentar",
-                "slide"
+                "em comparação com",
+                "atenção",
+                "diagrama"
               ],
-              "gabarito": "atenção",
-              "explicacao": "«die Aufmerksamkeit» = atenção.",
-              "id": "de-067-x14",
+              "gabarito": "diagrama",
+              "explicacao": "«das Diagramm» = diagrama.",
+              "id": "de-067-x09",
               "complemento": true
             },
             {
@@ -685,32 +647,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «vorstellen»?",
-              "audio": "vorstellen",
+              "enunciado": "O que significa «die Grafik»?",
+              "audio": "die Grafik",
               "opcoes": [
-                "diagrama",
-                "estrutura, roteiro",
-                "tema",
-                "apresentar"
-              ],
-              "gabarito": "apresentar",
-              "explicacao": "«vorstellen» = apresentar.",
-              "id": "de-067-x15",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Gliederung»?",
-              "audio": "die Gliederung",
-              "opcoes": [
-                "um terço",
+                "resumir",
+                "gráfico",
                 "em comparação com",
-                "palestra, apresentação",
-                "estrutura, roteiro"
+                "maioria"
               ],
-              "gabarito": "estrutura, roteiro",
-              "explicacao": "«die Gliederung» = estrutura, roteiro.",
-              "id": "de-067-x16",
+              "gabarito": "gráfico",
+              "explicacao": "«die Grafik» = gráfico.",
+              "id": "de-067-x10",
               "complemento": true
             },
             {
@@ -730,18 +677,31 @@
               "id": "de-067-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Diagramm»?",
-              "audio": "das Diagramm",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
               "opcoes": [
-                "apresentar",
-                "em comparação com",
-                "atenção",
-                "diagrama"
+                "für",
+                "Haben",
+                "Dank",
+                "Ihre",
+                "Aufmerksamkeit.",
+                "Sie",
+                "Vielen",
+                "Fragen"
               ],
-              "gabarito": "diagrama",
-              "explicacao": "«das Diagramm» = diagrama.",
-              "id": "de-067-x17",
+              "gabarito": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
+              "explicacao": "Escreva: Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
+              "id": "de-067-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
+              "respostaEsperada": "Ich empfehle, mehr in öffentliche Verkehrsmittel zu investieren.",
+              "explicacao": "Recomendo investir mais em transporte público.",
+              "id": "de-067-r04",
               "complemento": true
             },
             {
@@ -758,48 +718,6 @@
               "id": "de-067-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Grafik»?",
-              "audio": "die Grafik",
-              "opcoes": [
-                "resumir",
-                "gráfico",
-                "em comparação com",
-                "maioria"
-              ],
-              "gabarito": "gráfico",
-              "explicacao": "«die Grafik» = gráfico.",
-              "id": "de-067-x18",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
-              "opcoes": [
-                "für",
-                "Haben",
-                "Dank",
-                "Ihre",
-                "Aufmerksamkeit.",
-                "Sie",
-                "Vielen",
-                "Fragen"
-              ],
-              "gabarito": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
-              "explicacao": "Escreva: Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
-              "id": "de-067-x19",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Die Zahl ist um zehn Prozent gestiegen",
-              "respostaEsperada": "Die Zahl ist um zehn Prozent gestiegen",
-              "explicacao": "um + quantidade.",
-              "id": "de-067-e12"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Die Zahl ist um zehn Prozent gestiegen",
@@ -814,8 +732,16 @@
               ],
               "gabarito": "Die Zahl ist um zehn Prozent gestiegen",
               "explicacao": "Escreva: Die Zahl ist um zehn Prozent gestiegen",
-              "id": "de-067-x20",
+              "id": "de-067-x12",
               "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Die Zahl ist um zehn Prozent gestiegen",
+              "respostaEsperada": "Die Zahl ist um zehn Prozent gestiegen",
+              "explicacao": "um + quantidade.",
+              "id": "de-067-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -823,7 +749,7 @@
               "audio": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
               "respostaEsperada": "Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
               "explicacao": "Escreva: Vielen Dank für Ihre Aufmerksamkeit. Haben Sie Fragen",
-              "id": "de-067-x21",
+              "id": "de-067-x13",
               "complemento": true
             },
             {

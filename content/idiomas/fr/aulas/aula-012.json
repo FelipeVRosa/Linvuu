@@ -478,20 +478,6 @@
               "id": "fr-012-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, o que deseja?»",
-              "opcoes": [
-                "vous",
-                "?",
-                "désirez",
-                "Bonjour,"
-              ],
-              "gabarito": "Bonjour, vous désirez ?",
-              "explicacao": "Escreva: Bonjour, vous désirez ?",
-              "id": "fr-012-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Il porte un pantalon noir",
@@ -508,12 +494,17 @@
               "id": "fr-012-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bonjour, vous désirez ?",
-              "respostaEsperada": "Bonjour, vous désirez ?",
-              "explicacao": "Bom dia, o que deseja?",
-              "id": "fr-012-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Custa quarenta e cinco euros.»",
+              "opcoes": [
+                "Elle",
+                "euros.",
+                "coûte",
+                "quarante-cinq"
+              ],
+              "gabarito": "Elle coûte quarante-cinq euros.",
+              "explicacao": "Escreva: Elle coûte quarante-cinq euros.",
+              "id": "fr-012-x01",
               "complemento": true
             },
             {
@@ -523,6 +514,15 @@
               "respostaEsperada": "Je la prends",
               "explicacao": "Escreva: Je la prends.",
               "id": "fr-012-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bonjour, vous désirez ?",
+              "respostaEsperada": "Bonjour, vous désirez ?",
+              "explicacao": "Bom dia, o que deseja?",
+              "id": "fr-012-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -549,22 +549,6 @@
               "id": "fr-012-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia. Estou procurando uma camisa branca.»",
-              "opcoes": [
-                "Bonjour.",
-                "blanche.",
-                "cherche",
-                "chemise",
-                "une",
-                "Je"
-              ],
-              "gabarito": "Bonjour. Je cherche une chemise blanche.",
-              "explicacao": "Escreva: Bonjour. Je cherche une chemise blanche.",
-              "id": "fr-012-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se escreve 200 euros?",
               "opcoes": [
@@ -575,6 +559,15 @@
               "gabarito": "deux cents euros",
               "explicacao": "«Cents» com «s» quando sozinho.",
               "id": "fr-012-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Elle coûte quarante-cinq euros.",
+              "respostaEsperada": "Elle coûte quarante-cinq euros.",
+              "explicacao": "Custa quarenta e cinco euros.",
+              "id": "fr-012-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -601,15 +594,6 @@
               "id": "fr-012-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bonjour. Je cherche une chemise blanche.",
-              "respostaEsperada": "Bonjour. Je cherche une chemise blanche.",
-              "explicacao": "Bom dia. Estou procurando uma camisa branca.",
-              "id": "fr-012-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Il porte ___ pantalon noir. (um)",
               "opcoes": [
@@ -620,6 +604,15 @@
               "gabarito": "un",
               "explicacao": "«Pantalon» é masculino.",
               "id": "fr-012-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bonjour. Je cherche une chemise blanche.",
+              "respostaEsperada": "Bonjour. Je cherche une chemise blanche.",
+              "explicacao": "Bom dia. Estou procurando uma camisa branca.",
+              "id": "fr-012-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -634,6 +627,26 @@
               "id": "fr-012-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Certo, eu levo. Posso pagar com cartão?»",
+              "opcoes": [
+                "carte",
+                "Je",
+                "je",
+                "par",
+                "?",
+                "la",
+                "peux",
+                "prends.",
+                "D'accord,",
+                "payer"
+              ],
+              "gabarito": "D'accord, je la prends. Je peux payer par carte ?",
+              "explicacao": "Escreva: D'accord, je la prends. Je peux payer par carte ?",
+              "id": "fr-012-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je ___ prends. (a camisa)",
               "opcoes": [
@@ -644,20 +657,6 @@
               "gabarito": "la",
               "explicacao": "«Chemise» é feminino.",
               "id": "fr-012-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Qual o seu tamanho?»",
-              "opcoes": [
-                "faites-vous",
-                "Quelle",
-                "?",
-                "taille"
-              ],
-              "gabarito": "Quelle taille faites-vous ?",
-              "explicacao": "Escreva: Quelle taille faites-vous ?",
-              "id": "fr-012-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -689,19 +688,19 @@
               "id": "fr-012-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Quelle taille faites-vous ?",
-              "respostaEsperada": "Quelle taille faites-vous ?",
-              "explicacao": "Qual o seu tamanho?",
-              "id": "fr-012-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Ela tem os olhos azuis. Ele usa uma calça preta. Quanto custa?",
               "respostaEsperada": "Elle a les yeux bleus. Il porte un pantalon noir. Combien ça coûte ?",
               "id": "fr-012-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "D'accord, je la prends. Je peux payer par carte ?",
+              "respostaEsperada": "D'accord, je la prends. Je peux payer par carte ?",
+              "explicacao": "Certo, eu levo. Posso pagar com cartão?",
+              "id": "fr-012-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -716,6 +715,15 @@
               "id": "fr-012-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Quelle taille faites-vous ?",
+              "respostaEsperada": "Quelle taille faites-vous ?",
+              "explicacao": "Qual o seu tamanho?",
+              "id": "fr-012-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Il a les cheveux ___ . (longos)",
               "opcoes": [
@@ -726,22 +734,6 @@
               "gabarito": "longs",
               "explicacao": "«Cheveux» é plural e masculino: «longs».",
               "id": "fr-012-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «O trinta e oito. Quanto custa?»",
-              "opcoes": [
-                "?",
-                "Combien",
-                "Du",
-                "ça",
-                "coûte",
-                "trente-huit."
-              ],
-              "gabarito": "Du trente-huit. Combien ça coûte ?",
-              "explicacao": "Escreva: Du trente-huit. Combien ça coûte ?",
-              "id": "fr-012-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -768,6 +760,21 @@
               "id": "fr-012-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «Je cherche»?",
+              "audio": "Je cherche",
+              "opcoes": [
+                "rosa",
+                "caro demais",
+                "preto",
+                "estou procurando"
+              ],
+              "gabarito": "estou procurando",
+              "explicacao": "«Je cherche» = estou procurando.",
+              "id": "fr-012-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Je ___ une chemise blanche. (procuro)",
               "opcoes": [
@@ -778,15 +785,6 @@
               "gabarito": "cherche",
               "explicacao": "Com «je», os verbos em «-er» terminam em «-e».",
               "id": "fr-012-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Du trente-huit. Combien ça coûte ?",
-              "respostaEsperada": "Du trente-huit. Combien ça coûte ?",
-              "explicacao": "O trinta e oito. Quanto custa?",
-              "id": "fr-012-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -813,6 +811,15 @@
               "id": "fr-012-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Du trente-huit. Combien ça coûte ?",
+              "respostaEsperada": "Du trente-huit. Combien ça coûte ?",
+              "explicacao": "O trinta e oito. Quanto custa?",
+              "id": "fr-012-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como descrever a cor dos olhos?",
               "opcoes": [
@@ -825,17 +832,18 @@
               "id": "fr-012-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Custa quarenta e cinco euros.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «vert»?",
+              "audio": "vert",
               "opcoes": [
-                "Elle",
-                "euros.",
-                "coûte",
-                "quarante-cinq"
+                "verde",
+                "vermelho",
+                "que tamanho?",
+                "a calça"
               ],
-              "gabarito": "Elle coûte quarante-cinq euros.",
-              "explicacao": "Escreva: Elle coûte quarante-cinq euros.",
-              "id": "fr-012-x09",
+              "gabarito": "verde",
+              "explicacao": "«vert» = verde.",
+              "id": "fr-012-x06",
               "complemento": true
             },
             {
@@ -865,15 +873,6 @@
               "gabarito": "Elle a les cheveux longs et noirs.",
               "explicacao": "«Avoir» + artigo definido para o corpo.",
               "id": "fr-012-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Elle coûte quarante-cinq euros.",
-              "respostaEsperada": "Elle coûte quarante-cinq euros.",
-              "explicacao": "Custa quarenta e cinco euros.",
-              "id": "fr-012-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

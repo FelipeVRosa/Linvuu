@@ -408,30 +408,18 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Jonas! Você tem um apartamento novo, é verdade?»",
+              "enunciado": "Monte a frase: «Também há uma varanda grande?»",
               "opcoes": [
-                "stimmt",
-                "Wohnung,",
-                "Du",
-                "eine",
-                "das?",
-                "neue",
-                "Jonas!",
-                "Hallo",
-                "hast"
+                "einen",
+                "es",
+                "großen",
+                "auch",
+                "Gibt",
+                "Balkon?"
               ],
-              "gabarito": "Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
-              "explicacao": "Escreva: Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
+              "gabarito": "Gibt es auch einen großen Balkon?",
+              "explicacao": "Escreva: Gibt es auch einen großen Balkon?",
               "id": "de-033-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
-              "respostaEsperada": "Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
-              "explicacao": "Oi, Jonas! Você tem um apartamento novo, é verdade?",
-              "id": "de-033-x02",
               "complemento": true
             },
             {
@@ -447,21 +435,12 @@
               "id": "de-033-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim! É um apartamento pequeno, mas bonito.»",
-              "opcoes": [
-                "aber",
-                "kleine,",
-                "schöne",
-                "ist",
-                "eine",
-                "Ja!",
-                "Wohnung.",
-                "Es"
-              ],
-              "gabarito": "Ja! Es ist eine kleine, aber schöne Wohnung.",
-              "explicacao": "Escreva: Ja! Es ist eine kleine, aber schöne Wohnung.",
-              "id": "de-033-x03",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Gibt es auch einen großen Balkon?",
+              "respostaEsperada": "Gibt es auch einen großen Balkon?",
+              "explicacao": "Também há uma varanda grande?",
+              "id": "de-033-x02",
               "complemento": true
             },
             {
@@ -475,64 +454,6 @@
               "gabarito": "neues",
               "explicacao": "Nominativo neutro: -es.",
               "id": "de-033-e03"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ja! Es ist eine kleine, aber schöne Wohnung.",
-              "respostaEsperada": "Ja! Es ist eine kleine, aber schöne Wohnung.",
-              "explicacao": "Sim! É um apartamento pequeno, mas bonito.",
-              "id": "de-033-x04",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Também há uma varanda grande?»",
-              "opcoes": [
-                "einen",
-                "es",
-                "großen",
-                "auch",
-                "Gibt",
-                "Balkon?"
-              ],
-              "gabarito": "Gibt es auch einen großen Balkon?",
-              "explicacao": "Escreva: Gibt es auch einen großen Balkon?",
-              "id": "de-033-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Ich habe ein ___ Auto.",
-              "opcoes": [
-                "neues",
-                "neue",
-                "neuen"
-              ],
-              "gabarito": "neues",
-              "explicacao": "Acusativo neutro: -es.",
-              "id": "de-033-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Gibt es auch einen großen Balkon?",
-              "respostaEsperada": "Gibt es auch einen großen Balkon?",
-              "explicacao": "Também há uma varanda grande?",
-              "id": "de-033-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Das ist eine ___ Frau. (pequena)",
-              "opcoes": [
-                "kleine",
-                "kleiner",
-                "kleinen"
-              ],
-              "gabarito": "kleine",
-              "explicacao": "Nominativo feminino: -e.",
-              "id": "de-033-e05"
             },
             {
               "tipo": "sentence-ordering",
@@ -551,20 +472,17 @@
               ],
               "gabarito": "Ja, es gibt einen großen Balkon und einen kleinen Garten.",
               "explicacao": "Escreva: Ja, es gibt einen großen Balkon und einen kleinen Garten.",
-              "id": "de-033-x07",
+              "id": "de-033-x03",
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Ich fahre mit einem ___ Auto.",
-              "opcoes": [
-                "neuen",
-                "neues",
-                "neue"
-              ],
-              "gabarito": "neuen",
-              "explicacao": "Dativo: -en.",
-              "id": "de-033-e06"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
+              "respostaEsperada": "Hallo Jonas! Du hast eine neue Wohnung, stimmt das?",
+              "explicacao": "Oi, Jonas! Você tem um apartamento novo, é verdade?",
+              "id": "de-033-r01",
+              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -572,96 +490,20 @@
               "audio": "Ja, es gibt einen großen Balkon und einen kleinen Garten.",
               "respostaEsperada": "Ja, es gibt einen großen Balkon und einen kleinen Garten.",
               "explicacao": "Sim, há uma varanda grande e um jardim pequeno.",
-              "id": "de-033-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E como são os seus vizinhos?»",
-              "opcoes": [
-                "Und",
-                "deine",
-                "sind",
-                "Nachbarn?",
-                "wie"
-              ],
-              "gabarito": "Und wie sind deine Nachbarn?",
-              "explicacao": "Escreva: Und wie sind deine Nachbarn?",
-              "id": "de-033-x09",
+              "id": "de-033-x04",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Ich wohne mit meinen ___ Freunden. (velhos)",
+              "enunciado": "Ich habe ein ___ Auto.",
               "opcoes": [
-                "alten",
-                "alte",
-                "alter"
+                "neues",
+                "neue",
+                "neuen"
               ],
-              "gabarito": "alten",
-              "explicacao": "Dativo plural: -en.",
-              "id": "de-033-e07"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Und wie sind deine Nachbarn?",
-              "respostaEsperada": "Und wie sind deine Nachbarn?",
-              "explicacao": "E como são os seus vizinhos?",
-              "id": "de-033-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Hast du ein ___ Sofa? (confortável)",
-              "opcoes": [
-                "bequemes",
-                "bequeme",
-                "bequemen"
-              ],
-              "gabarito": "bequemes",
+              "gabarito": "neues",
               "explicacao": "Acusativo neutro: -es.",
-              "id": "de-033-e08"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tenho um vizinho simpático e uma vizinha amável.»",
-              "opcoes": [
-                "und",
-                "Nachbarn",
-                "Nachbarin.",
-                "netten",
-                "eine",
-                "freundliche",
-                "einen",
-                "Ich",
-                "habe"
-              ],
-              "gabarito": "Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
-              "explicacao": "Escreva: Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
-              "id": "de-033-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
-              "respostaEsperada": "Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
-              "explicacao": "Tenho um vizinho simpático e uma vizinha amável.",
-              "id": "de-033-x12",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Depois de «ein», o nominativo masculino leva:",
-              "opcoes": [
-                "-er",
-                "-e",
-                "-en"
-              ],
-              "gabarito": "-er",
-              "explicacao": "ein não tem terminação.",
-              "id": "de-033-e09"
+              "id": "de-033-e04"
             },
             {
               "tipo": "sentence-ordering",
@@ -680,20 +522,20 @@
               ],
               "gabarito": "Das ist toll! Hast du schon die neuen Möbel gekauft?",
               "explicacao": "Escreva: Das ist toll! Hast du schon die neuen Möbel gekauft?",
-              "id": "de-033-x13",
+              "id": "de-033-x05",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Depois de «ein», o nominativo neutro leva:",
+              "tipo": "fill-gap",
+              "enunciado": "Das ist eine ___ Frau. (pequena)",
               "opcoes": [
-                "-es",
-                "-e",
-                "-en"
+                "kleine",
+                "kleiner",
+                "kleinen"
               ],
-              "gabarito": "-es",
-              "explicacao": "ein não tem terminação.",
-              "id": "de-033-e10"
+              "gabarito": "kleine",
+              "explicacao": "Nominativo feminino: -e.",
+              "id": "de-033-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -701,8 +543,20 @@
               "audio": "Das ist toll! Hast du schon die neuen Möbel gekauft?",
               "respostaEsperada": "Das ist toll! Hast du schon die neuen Möbel gekauft?",
               "explicacao": "Que ótimo! Você já comprou os móveis novos?",
-              "id": "de-033-x14",
+              "id": "de-033-x06",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich fahre mit einem ___ Auto.",
+              "opcoes": [
+                "neuen",
+                "neues",
+                "neue"
+              ],
+              "gabarito": "neuen",
+              "explicacao": "Dativo: -en.",
+              "id": "de-033-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -722,20 +576,17 @@
               ],
               "gabarito": "Ja, ich habe ein bequemes Sofa und einen modernen Tisch gekauft.",
               "explicacao": "Escreva: Ja, ich habe ein bequemes Sofa und einen modernen Tisch gekauft.",
-              "id": "de-033-x15",
+              "id": "de-033-x07",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Depois de «einen» (acusativo masculino), o adjetivo leva:",
-              "opcoes": [
-                "-en",
-                "-er",
-                "-es"
-              ],
-              "gabarito": "-en",
-              "explicacao": "O artigo já mostra o caso.",
-              "id": "de-033-e11"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ja! Es ist eine kleine, aber schöne Wohnung.",
+              "respostaEsperada": "Ja! Es ist eine kleine, aber schöne Wohnung.",
+              "explicacao": "Sim! É um apartamento pequeno, mas bonito.",
+              "id": "de-033-r02",
+              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -743,20 +594,20 @@
               "audio": "Ja, ich habe ein bequemes Sofa und einen modernen Tisch gekauft.",
               "respostaEsperada": "Ja, ich habe ein bequemes Sofa und einen modernen Tisch gekauft.",
               "explicacao": "Sim, comprei um sofá confortável e uma mesa moderna.",
-              "id": "de-033-x16",
+              "id": "de-033-x08",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "Depois de «einem», «einer», o adjetivo leva:",
+              "tipo": "fill-gap",
+              "enunciado": "Ich wohne mit meinen ___ Freunden. (velhos)",
               "opcoes": [
-                "-en",
-                "-er",
-                "-e"
+                "alten",
+                "alte",
+                "alter"
               ],
-              "gabarito": "-en",
-              "explicacao": "Dativo: -en.",
-              "id": "de-033-e12"
+              "gabarito": "alten",
+              "explicacao": "Dativo plural: -en.",
+              "id": "de-033-e07"
             },
             {
               "tipo": "sentence-ordering",
@@ -771,22 +622,32 @@
               ],
               "gabarito": "Ich möchte die Wohnung bald sehen!",
               "explicacao": "Escreva: Ich möchte die Wohnung bald sehen!",
-              "id": "de-033-x17",
+              "id": "de-033-x09",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Eu tenho um carro novo.»",
+              "tipo": "fill-gap",
+              "enunciado": "Hast du ein ___ Sofa? (confortável)",
               "opcoes": [
-                "Ich",
-                "habe",
-                "ein",
-                "neues",
-                "Auto"
+                "bequemes",
+                "bequeme",
+                "bequemen"
               ],
-              "gabarito": "Ich habe ein neues Auto.",
-              "explicacao": "Acusativo neutro: ein + -es.",
-              "id": "de-033-e13"
+              "gabarito": "bequemes",
+              "explicacao": "Acusativo neutro: -es.",
+              "id": "de-033-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Depois de «ein», o nominativo masculino leva:",
+              "opcoes": [
+                "-er",
+                "-e",
+                "-en"
+              ],
+              "gabarito": "-er",
+              "explicacao": "ein não tem terminação.",
+              "id": "de-033-e09"
             },
             {
               "tipo": "audio-recognition",
@@ -794,8 +655,20 @@
               "audio": "Ich möchte die Wohnung bald sehen!",
               "respostaEsperada": "Ich möchte die Wohnung bald sehen!",
               "explicacao": "Quero ver o apartamento em breve!",
-              "id": "de-033-x18",
+              "id": "de-033-x10",
               "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Depois de «ein», o nominativo neutro leva:",
+              "opcoes": [
+                "-es",
+                "-e",
+                "-en"
+              ],
+              "gabarito": "-es",
+              "explicacao": "ein não tem terminação.",
+              "id": "de-033-e10"
             },
             {
               "tipo": "sentence-ordering",
@@ -814,7 +687,132 @@
               ],
               "gabarito": "Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
               "explicacao": "Escreva: Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
-              "id": "de-033-x19",
+              "id": "de-033-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Und wie sind deine Nachbarn?",
+              "respostaEsperada": "Und wie sind deine Nachbarn?",
+              "explicacao": "E como são os seus vizinhos?",
+              "id": "de-033-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
+              "respostaEsperada": "Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
+              "explicacao": "Venha no sábado. Então cozinho uma comida gostosa.",
+              "id": "de-033-x12",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Depois de «einen» (acusativo masculino), o adjetivo leva:",
+              "opcoes": [
+                "-en",
+                "-er",
+                "-es"
+              ],
+              "gabarito": "-en",
+              "explicacao": "O artigo já mostra o caso.",
+              "id": "de-033-e11"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «lustig»?",
+              "audio": "lustig",
+              "opcoes": [
+                "alto (volume)",
+                "vizinha",
+                "engraçado",
+                "jovem"
+              ],
+              "gabarito": "engraçado",
+              "explicacao": "«lustig» = engraçado.",
+              "id": "de-033-x13",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Depois de «einem», «einer», o adjetivo leva:",
+              "opcoes": [
+                "-en",
+                "-er",
+                "-e"
+              ],
+              "gabarito": "-en",
+              "explicacao": "Dativo: -en.",
+              "id": "de-033-e12"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «verrückt»?",
+              "audio": "verrückt",
+              "opcoes": [
+                "velho",
+                "simpático, gentil",
+                "colega",
+                "maluco"
+              ],
+              "gabarito": "maluco",
+              "explicacao": "«verrückt» = maluco.",
+              "id": "de-033-x14",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Eu tenho um carro novo.»",
+              "opcoes": [
+                "Ich",
+                "habe",
+                "ein",
+                "neues",
+                "Auto"
+              ],
+              "gabarito": "Ich habe ein neues Auto.",
+              "explicacao": "Acusativo neutro: ein + -es.",
+              "id": "de-033-e13"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «klug»?",
+              "audio": "klug",
+              "opcoes": [
+                "cachorro",
+                "vizinha",
+                "vizinho",
+                "inteligente, esperto"
+              ],
+              "gabarito": "inteligente, esperto",
+              "explicacao": "«klug» = inteligente, esperto.",
+              "id": "de-033-x15",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
+              "respostaEsperada": "Ich habe einen netten Nachbarn und eine freundliche Nachbarin.",
+              "explicacao": "Tenho um vizinho simpático e uma vizinha amável.",
+              "id": "de-033-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «der Hund»?",
+              "audio": "der Hund",
+              "opcoes": [
+                "maluco",
+                "calmo, tranquilo",
+                "cachorro",
+                "engraçado"
+              ],
+              "gabarito": "cachorro",
+              "explicacao": "«der Hund» = cachorro.",
+              "id": "de-033-x16",
               "complemento": true
             },
             {
@@ -831,12 +829,18 @@
               "id": "de-033-e14"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
-              "respostaEsperada": "Komm doch am Samstag. Dann koche ich ein leckeres Essen.",
-              "explicacao": "Venha no sábado. Então cozinho uma comida gostosa.",
-              "id": "de-033-x20",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «laut»?",
+              "audio": "laut",
+              "opcoes": [
+                "casa",
+                "gato",
+                "inteligente, esperto",
+                "alto (volume)"
+              ],
+              "gabarito": "alto (volume)",
+              "explicacao": "«laut» = alto (volume).",
+              "id": "de-033-x17",
               "complemento": true
             },
             {
@@ -849,32 +853,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «lustig»?",
-              "audio": "lustig",
+              "enunciado": "O que significa «die Freunde»?",
+              "audio": "die Freunde",
               "opcoes": [
-                "alto (volume)",
-                "vizinha",
-                "engraçado",
+                "vizinho",
+                "calmo, tranquilo",
+                "amigos",
                 "jovem"
               ],
-              "gabarito": "engraçado",
-              "explicacao": "«lustig» = engraçado.",
-              "id": "de-033-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «verrückt»?",
-              "audio": "verrückt",
-              "opcoes": [
-                "velho",
-                "simpático, gentil",
-                "colega",
-                "maluco"
-              ],
-              "gabarito": "maluco",
-              "explicacao": "«verrückt» = maluco.",
-              "id": "de-033-x22",
+              "gabarito": "amigos",
+              "explicacao": "«die Freunde» = amigos.",
+              "id": "de-033-x18",
               "complemento": true
             },
             {

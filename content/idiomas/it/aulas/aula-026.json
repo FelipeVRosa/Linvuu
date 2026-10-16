@@ -534,19 +534,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
+              "audio": "Sei più veloce di me",
+              "respostaEsperada": "Sei più veloce di me",
+              "explicacao": "Escreva: Sei più veloce di me.",
+              "id": "it-026-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
               "audio": "Sì, ma è anche più caro e più lontano dal centro.",
               "respostaEsperada": "Sì, ma è anche più caro e più lontano dal centro.",
               "explicacao": "Sim, mas também é mais caro e mais longe do centro.",
               "id": "it-026-x02",
               "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sei più veloce di me",
-              "respostaEsperada": "Sei più veloce di me",
-              "explicacao": "Escreva: Sei più veloce di me.",
-              "id": "it-026-e06"
             },
             {
               "tipo": "multiple-choice",
@@ -573,6 +573,18 @@
               "id": "it-026-e08"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual está correta?",
+              "opcoes": [
+                "Costa meno di dieci euro.",
+                "Costa meno che dieci euro.",
+                "Costa meno da dieci euro."
+              ],
+              "gabarito": "Costa meno di dieci euro.",
+              "explicacao": "Com número: di.",
+              "id": "it-026-e09"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Então é melhor visitar o primeiro mais uma vez antes de decidir.»",
               "opcoes": [
@@ -591,18 +603,6 @@
               "explicacao": "Escreva: Allora è meglio visitare ancora il primo prima di decidere.",
               "id": "it-026-x03",
               "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Qual está correta?",
-              "opcoes": [
-                "Costa meno di dieci euro.",
-                "Costa meno che dieci euro.",
-                "Costa meno da dieci euro."
-              ],
-              "gabarito": "Costa meno di dieci euro.",
-              "explicacao": "Com número: di.",
-              "id": "it-026-e09"
             },
             {
               "tipo": "multiple-choice",
@@ -629,15 +629,6 @@
               "id": "it-026-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Allora è meglio visitare ancora il primo prima di decidere.",
-              "respostaEsperada": "Allora è meglio visitare ancora il primo prima di decidere.",
-              "explicacao": "Então é melhor visitar o primeiro mais uma vez antes de decidir.",
-              "id": "it-026-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Luca è alto ___ Marco.",
               "opcoes": [
@@ -648,6 +639,15 @@
               "gabarito": "come",
               "explicacao": "Igualdade.",
               "id": "it-026-e12"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Allora è meglio visitare ancora il primo prima di decidere.",
+              "respostaEsperada": "Allora è meglio visitare ancora il primo prima di decidere.",
+              "explicacao": "Então é melhor visitar o primeiro mais uma vez antes de decidir.",
+              "id": "it-026-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -675,22 +675,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Combinado. Amanhã vamos lá com calma.»",
-              "opcoes": [
-                "calma.",
-                "Domani",
-                "D'accordo.",
-                "andiamo",
-                "ci",
-                "con"
-              ],
-              "gabarito": "D'accordo. Domani ci andiamo con calma.",
-              "explicacao": "Escreva: D'accordo. Domani ci andiamo con calma.",
-              "id": "it-026-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Marco è più giovane di Luca.»",
               "opcoes": [
                 "Marco",
@@ -703,6 +687,30 @@
               "gabarito": "Marco è più giovane di Luca.",
               "explicacao": "Comparativo com di.",
               "id": "it-026-e15"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "D'accordo. Domani ci andiamo con calma.",
+              "respostaEsperada": "D'accordo. Domani ci andiamo con calma.",
+              "explicacao": "Combinado. Amanhã vamos lá com calma.",
+              "id": "it-026-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «così… come»?",
+              "audio": "così… come",
+              "opcoes": [
+                "tão… quanto",
+                "jovem, velho",
+                "muito belo",
+                "melhor (advérbio)"
+              ],
+              "gabarito": "tão… quanto",
+              "explicacao": "«così… come» = tão… quanto.",
+              "id": "it-026-x05",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -718,15 +726,6 @@
               "gabarito": "Questo è il libro più bello.",
               "explicacao": "Superlativo relativo.",
               "id": "it-026-e16"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "D'accordo. Domani ci andiamo con calma.",
-              "respostaEsperada": "D'accordo. Domani ci andiamo con calma.",
-              "explicacao": "Combinado. Amanhã vamos lá com calma.",
-              "id": "it-026-x06",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -747,6 +746,21 @@
               "id": "it-026-e18"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «giovane, vecchio»?",
+              "audio": "giovane, vecchio",
+              "opcoes": [
+                "jovem, velho",
+                "o menos",
+                "o mais",
+                "cômodo, incômodo"
+              ],
+              "gabarito": "jovem, velho",
+              "explicacao": "«giovane, vecchio» = jovem, velho.",
+              "id": "it-026-x06",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Giulia è ___ stanca di Marco. (menos)",
               "opcoes": [
@@ -757,21 +771,6 @@
               "gabarito": "meno",
               "explicacao": "«Meno… di» indica inferioridade.",
               "id": "it-026-e19"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «così… come»?",
-              "audio": "così… come",
-              "opcoes": [
-                "tão… quanto",
-                "jovem, velho",
-                "muito belo",
-                "melhor (advérbio)"
-              ],
-              "gabarito": "tão… quanto",
-              "explicacao": "«così… come» = tão… quanto.",
-              "id": "it-026-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -798,6 +797,21 @@
               "id": "it-026-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «pesante, leggero»?",
+              "audio": "pesante, leggero",
+              "opcoes": [
+                "pesado, leve",
+                "pior (adjetivo)",
+                "alto, baixo",
+                "rápido, lento"
+              ],
+              "gabarito": "pesado, leve",
+              "explicacao": "«pesante, leggero» = pesado, leve.",
+              "id": "it-026-x07",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Sono ___. (cansadíssima)",
               "opcoes": [
@@ -808,21 +822,6 @@
               "gabarito": "stanchissima",
               "explicacao": "Em «-ca» o som duro se mantém com «h»: «stanchissima».",
               "id": "it-026-e22"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «giovane, vecchio»?",
-              "audio": "giovane, vecchio",
-              "opcoes": [
-                "jovem, velho",
-                "o menos",
-                "o mais",
-                "cômodo, incômodo"
-              ],
-              "gabarito": "jovem, velho",
-              "explicacao": "«giovane, vecchio» = jovem, velho.",
-              "id": "it-026-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -850,6 +849,21 @@
             },
             {
               "tipo": "multiple-choice",
+              "enunciado": "O que significa «alto, basso»?",
+              "audio": "alto, basso",
+              "opcoes": [
+                "belíssimo",
+                "tão… quanto",
+                "o menos",
+                "alto, baixo"
+              ],
+              "gabarito": "alto, baixo",
+              "explicacao": "«alto, basso» = alto, baixo.",
+              "id": "it-026-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
               "enunciado": "Como se diz «tão alto quanto Marco»?",
               "opcoes": [
                 "alto come Marco",
@@ -859,21 +873,6 @@
               "gabarito": "alto come Marco",
               "explicacao": "Igualdade: «come» ou «quanto».",
               "id": "it-026-e25"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «pesante, leggero»?",
-              "audio": "pesante, leggero",
-              "opcoes": [
-                "pesado, leve",
-                "pior (adjetivo)",
-                "alto, baixo",
-                "rápido, lento"
-              ],
-              "gabarito": "pesado, leve",
-              "explicacao": "«pesante, leggero» = pesado, leve.",
-              "id": "it-026-x09",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -905,17 +904,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «alto, basso»?",
-              "audio": "alto, basso",
+              "enunciado": "O que significa «meno»?",
+              "audio": "meno",
               "opcoes": [
-                "belíssimo",
                 "tão… quanto",
+                "mais",
                 "o menos",
-                "alto, baixo"
+                "menos"
               ],
-              "gabarito": "alto, baixo",
-              "explicacao": "«alto, basso» = alto, baixo.",
-              "id": "it-026-x10",
+              "gabarito": "menos",
+              "explicacao": "«meno» = menos.",
+              "id": "it-026-x09",
               "complemento": true
             },
             {

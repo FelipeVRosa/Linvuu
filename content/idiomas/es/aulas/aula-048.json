@@ -564,6 +564,22 @@
               "id": "es-048-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Dijo que llegaría al día siguiente",
+              "respostaEsperada": "Dijo que llegaría al día siguiente",
+              "explicacao": "Escreva: Dijo que llegaría al día siguiente.",
+              "id": "es-048-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Me preguntó si ya había comido",
+              "respostaEsperada": "Me preguntó si ya había comido",
+              "explicacao": "Escreva: Me preguntó si ya había comido.",
+              "id": "es-048-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «O que a chefe lhe disse na reunião de ontem?»",
               "opcoes": [
@@ -586,35 +602,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Dijo que llegaría al día siguiente",
-              "respostaEsperada": "Dijo que llegaría al día siguiente",
-              "explicacao": "Escreva: Dijo que llegaría al día siguiente.",
-              "id": "es-048-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Me preguntó si ya había comido",
-              "respostaEsperada": "Me preguntó si ya había comido",
-              "explicacao": "Escreva: Me preguntó si ya había comido.",
-              "id": "es-048-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Qué te dijo la jefa en la reunión de ayer?",
-              "respostaEsperada": "¿Qué te dijo la jefa en la reunión de ayer?",
-              "explicacao": "O que a chefe lhe disse na reunião de ontem?",
-              "id": "es-048-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Comentó que allí hacía mucho frío",
               "respostaEsperada": "Comentó que allí hacía mucho frío",
               "explicacao": "Escreva: Comentó que allí hacía mucho frío.",
               "id": "es-048-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Y te explicó por qué?",
+              "respostaEsperada": "¿Y te explicó por qué?",
+              "explicacao": "E explicou por quê?",
+              "id": "es-048-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -641,21 +641,6 @@
               "id": "es-048-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E explicou por quê?»",
-              "opcoes": [
-                "explicó",
-                "por",
-                "te",
-                "¿Y",
-                "qué?"
-              ],
-              "gabarito": "¿Y te explicó por qué?",
-              "explicacao": "Escreva: ¿Y te explicó por qué?",
-              "id": "es-048-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Com o recuo dos tempos, como fica «He terminado» depois de «Dijo que…»?",
               "opcoes": [
@@ -666,6 +651,15 @@
               "gabarito": "había terminado",
               "explicacao": "O pretérito perfecto vira pluscuamperfecto.",
               "id": "es-048-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "¿Qué te dijo la jefa en la reunión de ayer?",
+              "respostaEsperada": "¿Qué te dijo la jefa en la reunión de ayer?",
+              "explicacao": "O que a chefe lhe disse na reunião de ontem?",
+              "id": "es-048-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -692,15 +686,6 @@
               "id": "es-048-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Y te explicó por qué?",
-              "respostaEsperada": "¿Y te explicó por qué?",
-              "explicacao": "E explicou por quê?",
-              "id": "es-048-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como fica «hoy» no discurso indireto?",
               "opcoes": [
@@ -711,6 +696,15 @@
               "gabarito": "ese día",
               "explicacao": "«Hoy» vira «ese día».",
               "id": "es-048-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¡Qué bien! ¿Y qué le respondiste?",
+              "respostaEsperada": "¡Qué bien! ¿Y qué le respondiste?",
+              "explicacao": "Que bom! E o que você respondeu?",
+              "id": "es-048-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -725,6 +719,21 @@
               "id": "es-048-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «explicar que»?",
+              "audio": "explicar que",
+              "opcoes": [
+                "acrescentar que",
+                "comentar que",
+                "explicar que",
+                "lá"
+              ],
+              "gabarito": "explicar que",
+              "explicacao": "«explicar que» = explicar que.",
+              "id": "es-048-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Explicó que ___ tarde. (llegar, él; com o recuo dos tempos)",
               "opcoes": [
@@ -735,22 +744,6 @@
               "gabarito": "llegaría",
               "explicacao": "Futuro vira condicional.",
               "id": "es-048-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que bom! E o que você respondeu?»",
-              "opcoes": [
-                "le",
-                "qué",
-                "¡Qué",
-                "bien!",
-                "¿Y",
-                "respondiste?"
-              ],
-              "gabarito": "¡Qué bien! ¿Y qué le respondiste?",
-              "explicacao": "Escreva: ¡Qué bien! ¿Y qué le respondiste?",
-              "id": "es-048-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -777,15 +770,6 @@
               "id": "es-048-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¡Qué bien! ¿Y qué le respondiste?",
-              "respostaEsperada": "¡Qué bien! ¿Y qué le respondiste?",
-              "explicacao": "Que bom! E o que você respondeu?",
-              "id": "es-048-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Contó que ___ allí. (ele tinha estado, no dia anterior: estar)",
               "opcoes": [
@@ -796,6 +780,21 @@
               "gabarito": "había estado",
               "explicacao": "Pretérito vira pluscuamperfecto.",
               "id": "es-048-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la semana anterior»?",
+              "audio": "la semana anterior",
+              "opcoes": [
+                "ordenar que",
+                "responder que",
+                "comentar que",
+                "na semana anterior"
+              ],
+              "gabarito": "na semana anterior",
+              "explicacao": "«la semana anterior» = na semana anterior.",
+              "id": "es-048-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -813,6 +812,15 @@
               "id": "es-048-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "el día anterior, la víspera",
+              "respostaEsperada": "el día anterior, la víspera",
+              "explicacao": "no dia anterior, na véspera",
+              "id": "es-048-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Me preguntó si venía.»",
               "opcoes": [
@@ -824,21 +832,6 @@
               "gabarito": "Me preguntó si venía.",
               "explicacao": "Pergunta de sim ou não: «si» e imperfecto.",
               "id": "es-048-e19"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «explicar que»?",
-              "audio": "explicar que",
-              "opcoes": [
-                "acrescentar que",
-                "comentar que",
-                "explicar que",
-                "lá"
-              ],
-              "gabarito": "explicar que",
-              "explicacao": "«explicar que» = explicar que.",
-              "id": "es-048-x07",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -859,6 +852,21 @@
               "id": "es-048-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «comentar que»?",
+              "audio": "comentar que",
+              "opcoes": [
+                "ordenar que",
+                "responder que",
+                "no dia seguinte",
+                "comentar que"
+              ],
+              "gabarito": "comentar que",
+              "explicacao": "«comentar que» = comentar que.",
+              "id": "es-048-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Me preguntó ___ vivía en Madrid.",
               "opcoes": [
@@ -869,21 +877,6 @@
               "gabarito": "si",
               "explicacao": "Pergunta de sim ou não vira indireta com «si».",
               "id": "es-048-e22"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «la semana anterior»?",
-              "audio": "la semana anterior",
-              "opcoes": [
-                "ordenar que",
-                "responder que",
-                "comentar que",
-                "na semana anterior"
-              ],
-              "gabarito": "na semana anterior",
-              "explicacao": "«la semana anterior» = na semana anterior.",
-              "id": "es-048-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -910,6 +903,15 @@
               "id": "es-048-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "al día siguiente",
+              "respostaEsperada": "al día siguiente",
+              "explicacao": "no dia seguinte",
+              "id": "es-048-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como fica «¿Dónde vives?» no discurso indireto?",
               "opcoes": [
@@ -923,17 +925,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «comentar que»?",
-              "audio": "comentar que",
+              "enunciado": "O que significa «preguntar si»?",
+              "audio": "preguntar si",
               "opcoes": [
-                "ordenar que",
-                "responder que",
-                "no dia seguinte",
-                "comentar que"
+                "avisar que",
+                "perguntar se",
+                "então, naquele momento",
+                "convidar para"
               ],
-              "gabarito": "comentar que",
-              "explicacao": "«comentar que» = comentar que.",
-              "id": "es-048-x09",
+              "gabarito": "perguntar se",
+              "explicacao": "«preguntar si» = perguntar se.",
+              "id": "es-048-x06",
               "complemento": true
             },
             {
@@ -959,21 +961,6 @@
               "gabarito": "pedir que",
               "explicacao": "«Pedir que» + subjuntivo introduz um pedido.",
               "id": "es-048-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «preguntar si»?",
-              "audio": "preguntar si",
-              "opcoes": [
-                "avisar que",
-                "perguntar se",
-                "então, naquele momento",
-                "convidar para"
-              ],
-              "gabarito": "perguntar se",
-              "explicacao": "«preguntar si» = perguntar se.",
-              "id": "es-048-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

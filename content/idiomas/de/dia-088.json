@@ -36,23 +36,6 @@
             "id": "de-022-e01"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Jonas! Você viu o Paul ontem?»",
-            "opcoes": [
-              "gestern",
-              "Hast",
-              "Jonas!",
-              "Hallo",
-              "Paul",
-              "du",
-              "gesehen?"
-            ],
-            "gabarito": "Hallo Jonas! Hast du Paul gestern gesehen?",
-            "explicacao": "Escreva: Hallo Jonas! Hast du Paul gestern gesehen?",
-            "id": "de-022-x01",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Partizip II de «essen»:",
             "opcoes": [
@@ -65,30 +48,17 @@
             "id": "de-022-e02"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hallo Jonas! Hast du Paul gestern gesehen?",
-            "respostaEsperada": "Hallo Jonas! Hast du Paul gestern gesehen?",
-            "explicacao": "Oi, Jonas! Você viu o Paul ontem?",
-            "id": "de-022-x02",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, comemos juntos e conversamos bastante.»",
+            "enunciado": "Monte a frase: «O que vocês beberam?»",
             "opcoes": [
-              "zusammen",
-              "gesprochen.",
-              "wir",
-              "haben",
-              "Ja,",
-              "und",
-              "gegessen",
-              "viel"
+              "getrunken?",
+              "ihr",
+              "habt",
+              "Was"
             ],
-            "gabarito": "Ja, wir haben zusammen gegessen und viel gesprochen.",
-            "explicacao": "Escreva: Ja, wir haben zusammen gegessen und viel gesprochen.",
-            "id": "de-022-x03",
+            "gabarito": "Was habt ihr getrunken?",
+            "explicacao": "Escreva: Was habt ihr getrunken?",
+            "id": "de-022-x01",
             "complemento": true
           },
           {
@@ -106,10 +76,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Ja, wir haben zusammen gegessen und viel gesprochen.",
-            "respostaEsperada": "Ja, wir haben zusammen gegessen und viel gesprochen.",
-            "explicacao": "Sim, comemos juntos e conversamos bastante.",
-            "id": "de-022-x04",
+            "audio": "Was habt ihr getrunken?",
+            "respostaEsperada": "Was habt ihr getrunken?",
+            "explicacao": "O que vocês beberam?",
+            "id": "de-022-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hallo Jonas! Hast du Paul gestern gesehen?",
+            "respostaEsperada": "Hallo Jonas! Hast du Paul gestern gesehen?",
+            "explicacao": "Oi, Jonas! Você viu o Paul ontem?",
+            "id": "de-022-r01",
             "complemento": true
           },
           {
@@ -123,41 +102,6 @@
             "gabarito": "getrunken",
             "explicacao": "Grupo 2: i → u.",
             "id": "de-022-e04"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O que vocês beberam?»",
-            "opcoes": [
-              "getrunken?",
-              "ihr",
-              "habt",
-              "Was"
-            ],
-            "gabarito": "Was habt ihr getrunken?",
-            "explicacao": "Escreva: Was habt ihr getrunken?",
-            "id": "de-022-x05",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Partizip II de «schreiben»:",
-            "opcoes": [
-              "geschrieben",
-              "geschreibt",
-              "geschreiben"
-            ],
-            "gabarito": "geschrieben",
-            "explicacao": "Grupo 2: ei → ie.",
-            "id": "de-022-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Was habt ihr getrunken?",
-            "respostaEsperada": "Was habt ihr getrunken?",
-            "explicacao": "O que vocês beberam?",
-            "id": "de-022-x06",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -176,7 +120,28 @@
             ],
             "gabarito": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
             "explicacao": "Escreva: Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
-            "id": "de-022-x07",
+            "id": "de-022-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Partizip II de «schreiben»:",
+            "opcoes": [
+              "geschrieben",
+              "geschreibt",
+              "geschreiben"
+            ],
+            "gabarito": "geschrieben",
+            "explicacao": "Grupo 2: ei → ie.",
+            "id": "de-022-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
+            "respostaEsperada": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
+            "explicacao": "Tomamos chá. O Paul me deu um livro.",
+            "id": "de-022-x04",
             "complemento": true
           },
           {
@@ -192,15 +157,6 @@
             "id": "de-022-e06"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
-            "respostaEsperada": "Wir haben Tee getrunken. Paul hat mir ein Buch gegeben.",
-            "explicacao": "Tomamos chá. O Paul me deu um livro.",
-            "id": "de-022-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Partizip II de «nehmen»:",
             "opcoes": [
@@ -211,55 +167,6 @@
             "gabarito": "genommen",
             "explicacao": "Grupo 2: e → o e consoante dobrada.",
             "id": "de-022-e07"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você já leu o livro?»",
-            "opcoes": [
-              "du",
-              "gelesen?",
-              "Hast",
-              "schon",
-              "Buch",
-              "das"
-            ],
-            "gabarito": "Hast du das Buch schon gelesen?",
-            "explicacao": "Escreva: Hast du das Buch schon gelesen?",
-            "id": "de-022-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Partizip II de «beginnen»:",
-            "opcoes": [
-              "begonnen",
-              "gebeginnen",
-              "begonnt"
-            ],
-            "gabarito": "begonnen",
-            "explicacao": "be-: sem ge-.",
-            "id": "de-022-e08"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hast du das Buch schon gelesen?",
-            "respostaEsperada": "Hast du das Buch schon gelesen?",
-            "explicacao": "Você já leu o livro?",
-            "id": "de-022-x10",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Partizip II de «bringen»:",
-            "opcoes": [
-              "gebracht",
-              "gebringt",
-              "gebrungen"
-            ],
-            "gabarito": "gebracht",
-            "explicacao": "Misto: vogal muda + -t.",
-            "id": "de-022-e09"
           },
           {
             "tipo": "sentence-ordering",
@@ -277,7 +184,16 @@
             ],
             "gabarito": "Nein, noch nicht. Ich habe es gestern nur angesehen.",
             "explicacao": "Escreva: Nein, noch nicht. Ich habe es gestern nur angesehen.",
-            "id": "de-022-x11",
+            "id": "de-022-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ja, wir haben zusammen gegessen und viel gesprochen.",
+            "respostaEsperada": "Ja, wir haben zusammen gegessen und viel gesprochen.",
+            "explicacao": "Sim, comemos juntos e conversamos bastante.",
+            "id": "de-022-r02",
             "complemento": true
           },
           {
@@ -286,68 +202,32 @@
             "audio": "Nein, noch nicht. Ich habe es gestern nur angesehen.",
             "respostaEsperada": "Nein, noch nicht. Ich habe es gestern nur angesehen.",
             "explicacao": "Não, ainda não. Ontem só olhei.",
-            "id": "de-022-x12",
+            "id": "de-022-x06",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Partizip II de «wissen»:",
+            "enunciado": "Partizip II de «beginnen»:",
             "opcoes": [
-              "gewusst",
-              "gewisst",
-              "gewissen"
+              "begonnen",
+              "gebeginnen",
+              "begonnt"
             ],
-            "gabarito": "gewusst",
-            "explicacao": "Misto.",
-            "id": "de-022-e10"
+            "gabarito": "begonnen",
+            "explicacao": "be-: sem ge-.",
+            "id": "de-022-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você também tirou fotos?»",
+            "tipo": "multiple-choice",
+            "enunciado": "Partizip II de «bringen»:",
             "opcoes": [
-              "gemacht?",
-              "Fotos",
-              "du",
-              "Hast",
-              "auch"
+              "gebracht",
+              "gebringt",
+              "gebrungen"
             ],
-            "gabarito": "Hast du auch Fotos gemacht?",
-            "explicacao": "Escreva: Hast du auch Fotos gemacht?",
-            "id": "de-022-x13",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Ich habe einen Roman ___. (ler)",
-            "opcoes": [
-              "gelesen",
-              "gelest",
-              "lesen"
-            ],
-            "gabarito": "gelesen",
-            "explicacao": "Grupo 1.",
-            "id": "de-022-e11"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hast du auch Fotos gemacht?",
-            "respostaEsperada": "Hast du auch Fotos gemacht?",
-            "explicacao": "Você também tirou fotos?",
-            "id": "de-022-x14",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Wir haben Tee ___. (beber)",
-            "opcoes": [
-              "getrunken",
-              "getrinkt",
-              "trinken"
-            ],
-            "gabarito": "getrunken",
-            "explicacao": "Grupo 2.",
-            "id": "de-022-e12"
+            "gabarito": "gebracht",
+            "explicacao": "Misto: vogal muda + -t.",
+            "id": "de-022-e09"
           },
           {
             "tipo": "sentence-ordering",
@@ -367,8 +247,20 @@
             ],
             "gabarito": "Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
             "explicacao": "Escreva: Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
-            "id": "de-022-x15",
+            "id": "de-022-x07",
             "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Partizip II de «wissen»:",
+            "opcoes": [
+              "gewusst",
+              "gewisst",
+              "gewissen"
+            ],
+            "gabarito": "gewusst",
+            "explicacao": "Misto.",
+            "id": "de-022-e10"
           },
           {
             "tipo": "audio-recognition",
@@ -376,7 +268,66 @@
             "audio": "Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
             "respostaEsperada": "Ja, ich habe viele Fotos gemacht. Ich habe sie dir geschickt.",
             "explicacao": "Sim, tirei muitas fotos. Eu as enviei para você.",
-            "id": "de-022-x16",
+            "id": "de-022-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hast du das Buch schon gelesen?",
+            "respostaEsperada": "Hast du das Buch schon gelesen?",
+            "explicacao": "Você já leu o livro?",
+            "id": "de-022-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich habe einen Roman ___. (ler)",
+            "opcoes": [
+              "gelesen",
+              "gelest",
+              "lesen"
+            ],
+            "gabarito": "gelesen",
+            "explicacao": "Grupo 1.",
+            "id": "de-022-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Obrigada! Ainda não as vi.»",
+            "opcoes": [
+              "gesehen.",
+              "Danke!",
+              "Ich",
+              "habe",
+              "noch",
+              "sie",
+              "nicht"
+            ],
+            "gabarito": "Danke! Ich habe sie noch nicht gesehen.",
+            "explicacao": "Escreva: Danke! Ich habe sie noch nicht gesehen.",
+            "id": "de-022-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir haben Tee ___. (beber)",
+            "opcoes": [
+              "getrunken",
+              "getrinkt",
+              "trinken"
+            ],
+            "gabarito": "getrunken",
+            "explicacao": "Grupo 2.",
+            "id": "de-022-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Danke! Ich habe sie noch nicht gesehen.",
+            "respostaEsperada": "Danke! Ich habe sie noch nicht gesehen.",
+            "explicacao": "Obrigada! Ainda não as vi.",
+            "id": "de-022-x10",
             "complemento": true
           },
           {
@@ -393,23 +344,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Obrigada! Ainda não as vi.»",
-            "opcoes": [
-              "gesehen.",
-              "Danke!",
-              "Ich",
-              "habe",
-              "noch",
-              "sie",
-              "nicht"
-            ],
-            "gabarito": "Danke! Ich habe sie noch nicht gesehen.",
-            "explicacao": "Escreva: Danke! Ich habe sie noch nicht gesehen.",
-            "id": "de-022-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Eu vi o filme.»",
             "opcoes": [
               "Ich",
@@ -421,28 +355,6 @@
             "gabarito": "Ich habe den Film gesehen.",
             "explicacao": "Auxiliar na 2ª posição, particípio no fim.",
             "id": "de-022-e14"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Danke! Ich habe sie noch nicht gesehen.",
-            "respostaEsperada": "Danke! Ich habe sie noch nicht gesehen.",
-            "explicacao": "Obrigada! Ainda não as vi.",
-            "id": "de-022-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escolha.",
-            "audio": "Ich habe viele Fotos gemacht",
-            "opcoes": [
-              "Ich habe viele Fotos gemacht",
-              "Ich habe viele Fotos gesehen",
-              "Ich habe viele Bücher gelesen"
-            ],
-            "gabarito": "Ich habe viele Fotos gemacht",
-            "explicacao": "gemacht = regular.",
-            "id": "de-022-e15"
           },
           {
             "tipo": "sentence-ordering",
@@ -457,7 +369,16 @@
             ],
             "gabarito": "Ich habe viele Fotos gemacht",
             "explicacao": "Escreva: Ich habe viele Fotos gemacht",
-            "id": "de-022-x19",
+            "id": "de-022-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hast du auch Fotos gemacht?",
+            "respostaEsperada": "Hast du auch Fotos gemacht?",
+            "explicacao": "Você também tirou fotos?",
+            "id": "de-022-r04",
             "complemento": true
           },
           {
@@ -475,8 +396,21 @@
             ],
             "gabarito": "Wir haben zusammen gegessen und viel gesprochen",
             "explicacao": "Escreva: Wir haben zusammen gegessen und viel gesprochen",
-            "id": "de-022-x20",
+            "id": "de-022-x12",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Ich habe viele Fotos gemacht",
+            "opcoes": [
+              "Ich habe viele Fotos gemacht",
+              "Ich habe viele Fotos gesehen",
+              "Ich habe viele Bücher gelesen"
+            ],
+            "gabarito": "Ich habe viele Fotos gemacht",
+            "explicacao": "gemacht = regular.",
+            "id": "de-022-e15"
           },
           {
             "tipo": "audio-recognition",
@@ -492,7 +426,7 @@
             "audio": "Ich habe viele Fotos gemacht",
             "respostaEsperada": "Ich habe viele Fotos gemacht",
             "explicacao": "Escreva: Ich habe viele Fotos gemacht",
-            "id": "de-022-x21",
+            "id": "de-022-x13",
             "complemento": true
           },
           {

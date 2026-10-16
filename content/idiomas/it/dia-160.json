@@ -94,6 +94,14 @@
             "id": "it-040-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Prese una lanterna e uscì",
+            "respostaEsperada": "Prese una lanterna e uscì",
+            "explicacao": "Escreva: Prese una lanterna e uscì.",
+            "id": "it-040-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «un giorno»?",
             "audio": "un giorno",
@@ -107,14 +115,6 @@
             "explicacao": "«un giorno» = um dia (nos contos).",
             "id": "it-040-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Prese una lanterna e uscì",
-            "respostaEsperada": "Prese una lanterna e uscì",
-            "explicacao": "Escreva: Prese una lanterna e uscì.",
-            "id": "it-040-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "A terceira pessoa do plural de «parlare» no remoto é:",
+            "opcoes": [
+              "parlarono",
+              "parlavano",
+              "parlorono"
+            ],
+            "gabarito": "parlarono",
+            "explicacao": "Terminação -arono.",
+            "id": "it-040-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «infine»?",
             "audio": "infine",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«infine» = por fim.",
             "id": "it-040-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "A terceira pessoa do plural de «parlare» no remoto é:",
-            "opcoes": [
-              "parlarono",
-              "parlavano",
-              "parlorono"
-            ],
-            "gabarito": "parlarono",
-            "explicacao": "Terminação -arono.",
-            "id": "it-040-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -192,6 +192,18 @@
             "id": "it-040-e11"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "Il principe ___ la porta ed entrò. (aprire)",
+            "opcoes": [
+              "aprì",
+              "aprii",
+              "aprirono"
+            ],
+            "gabarito": "aprì",
+            "explicacao": "Terceira pessoa, -ire: -ì.",
+            "id": "it-040-e12"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «poi»?",
             "audio": "poi",
@@ -205,18 +217,6 @@
             "explicacao": "«poi» = depois.",
             "id": "it-040-x04",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Il principe ___ la porta ed entrò. (aprire)",
-            "opcoes": [
-              "aprì",
-              "aprii",
-              "aprirono"
-            ],
-            "gabarito": "aprì",
-            "explicacao": "Terceira pessoa, -ire: -ì.",
-            "id": "it-040-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,6 +243,30 @@
             "id": "it-040-e14"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Il re chiamò i suoi cavalieri.»",
+            "opcoes": [
+              "Il",
+              "re",
+              "chiamò",
+              "i",
+              "suoi",
+              "cavalieri"
+            ],
+            "gabarito": "Il re chiamò i suoi cavalieri.",
+            "explicacao": "Remoto no meio da frase.",
+            "id": "it-040-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "c'era una volta",
+            "respostaEsperada": "c'era una volta",
+            "explicacao": "era uma vez",
+            "id": "it-040-r01",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «il castello»?",
             "audio": "il castello",
@@ -259,21 +283,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Il re chiamò i suoi cavalieri.»",
-            "opcoes": [
-              "Il",
-              "re",
-              "chiamò",
-              "i",
-              "suoi",
-              "cavalieri"
-            ],
-            "gabarito": "Il re chiamò i suoi cavalieri.",
-            "explicacao": "Remoto no meio da frase.",
-            "id": "it-040-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Poi arrivarono i soldati.»",
             "opcoes": [
               "Poi",
@@ -284,21 +293,6 @@
             "gabarito": "Poi arrivarono i soldati.",
             "explicacao": "Verbo antes do sujeito.",
             "id": "it-040-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il bosco»?",
-            "audio": "il bosco",
-            "opcoes": [
-              "o bosque",
-              "um dia (nos contos)",
-              "então",
-              "esperar"
-            ],
-            "gabarito": "o bosque",
-            "explicacao": "«il bosco» = o bosque.",
-            "id": "it-040-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -319,6 +313,21 @@
             "id": "it-040-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il bosco»?",
+            "audio": "il bosco",
+            "opcoes": [
+              "o bosque",
+              "um dia (nos contos)",
+              "então",
+              "esperar"
+            ],
+            "gabarito": "o bosque",
+            "explicacao": "«il bosco» = o bosque.",
+            "id": "it-040-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il re ___ la regina. (viu)",
             "opcoes": [
@@ -329,23 +338,6 @@
             "gabarito": "vide",
             "explicacao": "Remoto irregular de «vedere» com «lui»: «vide».",
             "id": "it-040-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Dante nacque a Firenze nel 1265",
-            "opcoes": [
-              "a",
-              "Firenze",
-              "Dante",
-              "1265",
-              "nel",
-              "nacque"
-            ],
-            "gabarito": "Dante nacque a Firenze nel 1265",
-            "explicacao": "Escreva: Dante nacque a Firenze nel 1265",
-            "id": "it-040-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -372,6 +364,23 @@
             "id": "it-040-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Dante nacque a Firenze nel 1265",
+            "opcoes": [
+              "a",
+              "Firenze",
+              "Dante",
+              "1265",
+              "nel",
+              "nacque"
+            ],
+            "gabarito": "Dante nacque a Firenze nel 1265",
+            "explicacao": "Escreva: Dante nacque a Firenze nel 1265",
+            "id": "it-040-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il cavaliere ___ subito. (partiu)",
             "opcoes": [
@@ -382,21 +391,6 @@
             "gabarito": "partì",
             "explicacao": "Em «-ire», o remoto de «lui» é «-ì».",
             "id": "it-040-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Loro arrivarono la sera",
-            "opcoes": [
-              "Loro",
-              "sera",
-              "la",
-              "arrivarono"
-            ],
-            "gabarito": "Loro arrivarono la sera",
-            "explicacao": "Escreva: Loro arrivarono la sera",
-            "id": "it-040-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -423,6 +417,21 @@
             "id": "it-040-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Loro arrivarono la sera",
+            "opcoes": [
+              "Loro",
+              "sera",
+              "la",
+              "arrivarono"
+            ],
+            "gabarito": "Loro arrivarono la sera",
+            "explicacao": "Escreva: Loro arrivarono la sera",
+            "id": "it-040-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o remoto de «essere» com «loro»?",
             "opcoes": [
@@ -433,24 +442,6 @@
             "gabarito": "furono",
             "explicacao": "Remoto irregular: fui, fu, furono.",
             "id": "it-040-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Il re vide una luce nel bosco",
-            "opcoes": [
-              "vide",
-              "bosco",
-              "una",
-              "nel",
-              "luce",
-              "re",
-              "Il"
-            ],
-            "gabarito": "Il re vide una luce nel bosco",
-            "explicacao": "Escreva: Il re vide una luce nel bosco",
-            "id": "it-040-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -482,17 +473,19 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Un giorno il mugnaio partì",
+            "audio": "Il re vide una luce nel bosco",
             "opcoes": [
-              "mugnaio",
-              "partì",
-              "il",
-              "giorno",
-              "Un"
+              "vide",
+              "bosco",
+              "una",
+              "nel",
+              "luce",
+              "re",
+              "Il"
             ],
-            "gabarito": "Un giorno il mugnaio partì",
-            "explicacao": "Escreva: Un giorno il mugnaio partì",
-            "id": "it-040-x10",
+            "gabarito": "Il re vide una luce nel bosco",
+            "explicacao": "Escreva: Il re vide una luce nel bosco",
+            "id": "it-040-x09",
             "complemento": true
           },
           {

@@ -1,75 +1,174 @@
 import { aula, sessao, intro, revisao, producao, palavras, dialogo, texto, gramatica, exercicios, mc, lacuna, ordem, ouvir, ditado, livre } from '../../../../scripts/dsl-aula.mjs';
 
+const livreE = (e, r, x) => ({ ...livre(e, r), explicacao: x });
+
 export default aula({
   idioma: 'en', numero: 2, titulo: 'Quem sou eu: o verbo to be', nivel: 'a1',
-  objetivo: 'Dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas) e usar as contrações.',
+  objetivo: 'Ouvir e entender apresentações simples e dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas), usando as contrações.',
   nota: 'Você fala de si com o verbo mais importante do inglês. Próxima aula: apresentações, países, números e idade.',
   sessoes: [
-    sessao('S1', 'I am, you are, he is', [
-      revisao(5, 'Soletre o seu nome em inglês e diga as saudações da aula 1.'),
-      palavras(8, [
-        ['I', 'ai', 'eu', ''], ['you', 'iú', 'você, vocês (tu, vós)', ''], ['he', 'hii', 'ele', ''], ['she', 'shii', 'ela', ''], ['it', 'it', 'ele, ela (coisa ou animal)', ''], ['we', 'uii', 'nós', ''], ['they', 'dhêi', 'eles, elas', ''],
+    sessao('S1', 'I am, you are, he is: ser e estar', [
+      dialogo(5, 'First day at school / Primeiro dia na escola', 'Carlos e Maria chegam à primeira aula de inglês e conhecem a professora. Ouça a cena sem olhar a tradução. Depois ouça de novo e repare nas palavras «I\'m», «we are» e «is».', [
+        ['Ms. Green', 'Good morning! I\'m Ms. Green. I\'m a teacher.', 'Bom dia! Eu sou a Ms. Green. Sou professora.'],
+        ['Carlos', 'Good morning, Ms. Green! I\'m Carlos. I\'m a student.', 'Bom dia, Ms. Green! Eu sou o Carlos. Sou estudante.'],
+        ['Maria', 'Hi! I\'m Maria. I\'m a student, too.', 'Oi! Eu sou a Maria. Também sou estudante.'],
+        ['Ms. Green', 'Hello, Maria. Hello, Carlos. You are Brazilian.', 'Olá, Maria. Olá, Carlos. Vocês são brasileiros.'],
+        ['Carlos', 'Yes! I\'m Brazilian. Maria is Brazilian, too.', 'Sim! Eu sou brasileiro. A Maria também é brasileira.'],
+        ['Maria', 'We are happy. We are ready!', 'Estamos felizes. Estamos prontos!'],
+        ['Ms. Green', 'Great! I\'m happy, too.', 'Ótimo! Eu também estou feliz.'],
+        ['Carlos', 'Thank you, Ms. Green.', 'Obrigado, Ms. Green.'],
       ]),
-      gramatica(12, 'To be: ser e estar', 'PASSO 1: «to be» é «ser» e também «estar». «I am a doctor» (sou médico) e «I am tired» (estou cansado) usam o mesmo verbo. PASSO 2: em inglês o sujeito é obrigatório. Em português você pode dizer «sou brasileiro»; em inglês é «I am Brazilian», nunca «am Brazilian». PASSO 3: o verbo muda com o sujeito: I am; you are; he, she, it is; we are; you are; they are. PASSO 4: «you» serve para uma pessoa ou várias, e para tratamento formal ou informal: não existe «tu», «você» e «o senhor» separados. PASSO 5: antes de uma profissão ou identidade no singular, use «a» (antes de som de consoante) ou «an» (antes de som de vogal): a doctor, a student, an engineer. PASSO 6: fale com a contração, como os nativos: I\'m, you\'re, he\'s, she\'s, it\'s, we\'re, they\'re.', {
+      palavras(4, [
+        ['I', 'ai', 'eu', ''], ['you', 'iú', 'você, vocês (tu, vós)', ''], ['he', 'hii', 'ele', ''], ['she', 'shii', 'ela', ''], ['it', 'it', 'ele, ela (coisa ou animal)', ''], ['we', 'uii', 'nós', ''], ['they', 'dhêi', 'eles, elas', ''],
+        ['student', 'stiúdent', 'estudante', ''], ['teacher', 'tíitcher', 'professor, professora', ''], ['doctor', 'dóktor', 'médico, médica', ''], ['engineer', 'enjiníir', 'engenheiro, engenheira', ''],
+        ['Brazilian', 'brazílian', 'brasileiro, brasileira', ''], ['happy', 'rrépi', 'feliz', ''], ['ready', 'rédi', 'pronto, pronta', ''], ['too', 'tuu', 'também', ''], ['and', 'énd', 'e', ''],
+      ]),
+      gramatica(7, 'To be: ser e estar', 'PASSO 1: em inglês, um só verbo faz o papel de «ser» e de «estar». É o «to be». Quando você ouviu «I\'m a teacher», era ser. Quando ouviu «we are happy», era estar. PASSO 2: o verbo muda com quem fala. Com «I», diga «am». Com «he», «she» e «it», diga «is». Com «we», «you» e «they», diga «are». PASSO 3: o sujeito é obrigatório. Em português você diz «sou brasileiro», sem o «eu». Em inglês, diga «I am Brazilian». Nunca diga «am Brazilian». PASSO 4: «you» serve para uma pessoa e para várias. Serve também para tratar alguém de modo formal ou informal. Não existe «tu», «você» e «o senhor» separados. PASSO 5: «it» é para coisas e animais, como em «it is a cat». Cultura: para um professor, use o título e o sobrenome, como «Ms. Green». O «you» continua o mesmo.', {
         tag: 'Verbos',
-        comparacao: 'em português o verbo já mostra quem é o sujeito, então o pronome some («sou», «somos»). Em inglês o verbo muda pouco, e por isso o sujeito precisa aparecer.',
+        comparacao: 'em português o verbo já mostra quem é o sujeito, então o pronome some, como em «sou» e «somos». Em inglês o verbo muda pouco, e por isso o sujeito precisa aparecer.',
+        exemplos: [['I am a teacher.', 'Eu sou professor.'], ['You are Brazilian.', 'Você é brasileiro.'], ['He is a doctor.', 'Ele é médico.'], ['She is happy.', 'Ela está feliz.'], ['It is a cat.', 'É um gato.'], ['We are ready.', 'Nós estamos prontos.'], ['They are students.', 'Eles são estudantes.']],
         tabelas: [
           { titulo: 'to be no presente', linhas: [
-            { sujeito: 'I', verbo: 'am', contracao: 'I\'m', exemplo: 'I am Anna.' }, { sujeito: 'you', verbo: 'are', contracao: 'you\'re', exemplo: 'You are my friend.' }, { sujeito: 'he', verbo: 'is', contracao: 'he\'s', exemplo: 'He is a doctor.' },
-            { sujeito: 'she', verbo: 'is', contracao: 'she\'s', exemplo: 'She is tired.' }, { sujeito: 'it', verbo: 'is', contracao: 'it\'s', exemplo: 'It is a cat.' }, { sujeito: 'we', verbo: 'are', contracao: 'we\'re', exemplo: 'We are in Brazil.' }, { sujeito: 'they', verbo: 'are', contracao: 'they\'re', exemplo: 'They are students.' },
+            { sujeito: 'I', verbo: 'am', contracao: 'I\'m', exemplo: 'I am Anna.' }, { sujeito: 'you', verbo: 'are', contracao: 'you\'re', exemplo: 'You are Brazilian.' }, { sujeito: 'he', verbo: 'is', contracao: 'he\'s', exemplo: 'He is a doctor.' },
+            { sujeito: 'she', verbo: 'is', contracao: 'she\'s', exemplo: 'She is happy.' }, { sujeito: 'it', verbo: 'is', contracao: 'it\'s', exemplo: 'It is a cat.' }, { sujeito: 'we', verbo: 'are', contracao: 'we\'re', exemplo: 'We are ready.' }, { sujeito: 'they', verbo: 'are', contracao: 'they\'re', exemplo: 'They are students.' },
           ] },
         ],
-        erros: [['Am a student.', 'I am a student.', 'O sujeito é obrigatório em inglês.'], ['I are Brazilian.', 'I am Brazilian.', '«am» só combina com «I».'], ['He are tired.', 'He is tired.', 'he, she e it usam «is».'], ['I am doctor.', 'I am a doctor.', 'Profissão no singular leva «a» ou «an».']],
+        erros: [['Am a student.', 'I am a student.', 'O sujeito é obrigatório em inglês.'], ['I are Brazilian.', 'I am Brazilian.', '«am» só combina com «I».'], ['He are happy.', 'He is happy.', 'he, she e it usam «is».'], ['We is ready.', 'We are ready.', 'we, you e they usam «are».']],
       }),
-      producao(5, 'Diga em voz alta, trocando o sujeito: «I am Brazilian. You are my friend. He is a doctor. She is tired. We are here. They are students.»'),
+      gramatica(6, 'A, an e as contrações', 'PASSO 1: antes de uma profissão no singular, use «a» ou «an». Em português não usamos: dizemos «sou professor». Em inglês: «I am a teacher». PASSO 2: o som da palavra seguinte decide. Se ela começa com som de consoante, use «a»: «a teacher», «a student», «a doctor». PASSO 3: se começa com som de vogal, use «an»: «an engineer», «an apple», «an egg». PASSO 4: no plural, não use nenhum dos dois: «we are students». PASSO 5: na fala, os nativos contraem. «I am» vira «I\'m», que soa «aim». «You are» vira «you\'re». «He is» vira «he\'s». Ouça o áudio e repita. PASSO 6: a contração troca uma letra por um apóstrofo. Na escrita formal você pode usar a forma inteira, mas na fala use a curta.', {
+        tag: 'Verbos',
+        comparacao: 'em português dizemos «sou professor», sem artigo. Em inglês, uma profissão no singular sempre leva «a» ou «an».',
+        exemplos: [['I\'m a teacher.', 'Sou professor.'], ['She\'s an engineer.', 'Ela é engenheira.'], ['He\'s a doctor.', 'Ele é médico.'], ['We\'re students.', 'Somos estudantes.'], ['It\'s an egg.', 'É um ovo.'], ['They\'re happy.', 'Eles estão felizes.']],
+        tabela: [
+          { palavra: 'teacher', artigo: 'a', som_inicial: 'consoante (t)', exemplo: 'a teacher' }, { palavra: 'doctor', artigo: 'a', som_inicial: 'consoante (d)', exemplo: 'a doctor' },
+          { palavra: 'engineer', artigo: 'an', som_inicial: 'vogal (e)', exemplo: 'an engineer' }, { palavra: 'apple', artigo: 'an', som_inicial: 'vogal (a)', exemplo: 'an apple' }, { palavra: 'students', artigo: 'nenhum', som_inicial: 'plural', exemplo: 'we are students' },
+        ],
+        erros: [['I am doctor.', 'I am a doctor.', 'Profissão no singular leva «a» ou «an».'], ['She is a engineer.', 'She is an engineer.', '«engineer» começa com som de vogal.'], ['We are a students.', 'We are students.', 'No plural, não se usa «a».']],
+      }),
+      producao(4, 'Diga em voz alta, trocando o sujeito: «I am Brazilian. You are happy. He is a doctor. She is a teacher. We are students. They are ready.» Depois apresente-se como a Maria fez: «Hi! I\'m ... . I\'m a student. I\'m Brazilian.» Diga o seu nome no lugar das reticências.', 'Hi! I\'m Carlos. I\'m a student. I\'m Brazilian.'),
+      revisao(4, 'Soletre o seu nome em inglês e diga as saudações da aula 1: «good morning», «thank you», «please» e «goodbye». Qual é o som do «th» de «thank»?'),
     ]),
     sessao('S2', 'A forma negativa e as contrações', [
-      revisao(5, 'Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma.'),
-      palavras(8, [
-        ['happy', 'rrépi', 'feliz', ''], ['tired', 'táierd', 'cansado', ''], ['hungry', 'hângri', 'com fome', ''], ['busy', 'bízi', 'ocupado', ''], ['ready', 'rédi', 'pronto', ''], ['late', 'lêit', 'atrasado, tarde', ''], ['here', 'híir', 'aqui', ''], ['not', 'nót', 'não (com verbos)', ''],
+      dialogo(4, 'Late again! / Atrasados de novo!', 'Ben chega atrasado ao trabalho e conversa com Kate. Ouça primeiro, depois repare em todas as vezes que aparece «not».', [
+        ['Kate', 'Good morning, Ben! You\'re here!', 'Bom dia, Ben! Você chegou!'], ['Ben', 'Good morning, Kate. Sorry, I\'m late.', 'Bom dia, Kate. Desculpe, estou atrasado.'], ['Kate', 'It\'s okay. I\'m late, too.', 'Tudo bem. Eu também estou atrasada.'],
+        ['Ben', 'I\'m not happy. I\'m tired and hungry.', 'Eu não estou feliz. Estou cansado e com fome.'], ['Kate', 'I\'m not tired. I\'m hungry, too!', 'Eu não estou cansada. Também estou com fome!'], ['Ben', 'We are hungry. We are not ready!', 'Estamos com fome. Não estamos prontos!'],
+        ['Kate', 'Tom is here. He\'s not tired. He\'s ready.', 'O Tom está aqui. Ele não está cansado. Está pronto.'], ['Ben', 'Tom is happy. We are not happy!', 'O Tom está feliz. Nós não estamos felizes!'],
       ]),
-      gramatica(12, 'Dizer «não»: am not, is not, are not', 'PASSO 1: para negar, coloque «not» depois do «to be»: «I am not tired», «She is not here», «They are not ready». PASSO 2: na fala e na escrita informal use a contração. Há duas maneiras para «he», «she», «it», «you», «we» e «they»: «He is not» → «He isn\'t» ou «He\'s not»; «You are not» → «You aren\'t» ou «You\'re not». As duas estão certas. PASSO 3: com «I» só se usa uma contração: «I\'m not». A forma «amn\'t» não faz parte do inglês padrão. PASSO 4: o «not» fica sempre depois do verbo. Não diga «He not is happy». PASSO 5: «no» (não, como resposta) e «not» (negação do verbo) são palavras diferentes: «No, I\'m not tired.»', {
+      palavras(4, [
+        ['tired', 'táierd', 'cansado', ''], ['hungry', 'hângri', 'com fome', ''], ['busy', 'bízi', 'ocupado', ''], ['late', 'lêit', 'atrasado, tarde', ''], ['here', 'híir', 'aqui', ''], ['cold', 'côld', 'frio', ''], ['hot', 'hót', 'quente, calor', ''], ['okay', 'oukêi', 'tudo bem', ''], ['not', 'nót', 'não (com verbos)', ''],
+      ]),
+      gramatica(7, 'Dizer «não»: am not, is not, are not', 'PASSO 1: para dizer «não», coloque «not» depois do «to be». Ouça: «I am not tired». «She is not here». «They are not ready». PASSO 2: em português, a negação vem antes do verbo: «não estou cansado». Em inglês, vem depois do verbo: «I am not tired». PASSO 3: o «not» fica sempre depois do verbo. Não diga «He not is happy». PASSO 4: não confunda «no» e «not». «No» é a resposta: não. «Not» nega o verbo. Diga assim: «No, I am not tired». PASSO 5: repare no diálogo. O Ben disse «we are not ready». Foi o «not» depois de «are».', {
         tag: 'Verbos',
-        comparacao: 'em português a negação vem ANTES do verbo («não estou cansado»). Em inglês, com «to be», ela vem DEPOIS («I am not tired»).',
+        comparacao: 'em português a negação vem ANTES do verbo, como em «não estou cansado». Em inglês, com «to be», ela vem DEPOIS, como em «I am not tired».',
+        exemplos: [['I am not tired.', 'Eu não estou cansado.'], ['She is not here.', 'Ela não está aqui.'], ['They are not ready.', 'Eles não estão prontos.'], ['He is not happy.', 'Ele não está feliz.'], ['We are not late.', 'Nós não estamos atrasados.'], ['No, I am not tired.', 'Não, eu não estou cansado.']],
+        tabela: [
+          { afirmativa: 'I am happy.', negativa: 'I am not happy.', pt: 'Eu não estou feliz.' }, { afirmativa: 'You are busy.', negativa: 'You are not busy.', pt: 'Você não está ocupado.' },
+          { afirmativa: 'He is late.', negativa: 'He is not late.', pt: 'Ele não está atrasado.' }, { afirmativa: 'She is ready.', negativa: 'She is not ready.', pt: 'Ela não está pronta.' },
+          { afirmativa: 'We are hungry.', negativa: 'We are not hungry.', pt: 'Nós não estamos com fome.' }, { afirmativa: 'They are here.', negativa: 'They are not here.', pt: 'Eles não estão aqui.' },
+        ],
+        erros: [['He not is happy.', 'He is not happy.', '«not» vem depois do «to be».'], ['She no is here.', 'She is not here.', 'Use «not», e não «no», para negar o verbo.'], ['I no am tired.', 'I am not tired.', 'A negação vem depois do verbo.']],
+      }),
+      gramatica(7, 'Contrações da negativa, o «it» e estar com fome', 'PASSO 1: na fala, quase ninguém diz «is not». Diz «isn\'t», que soa «ízent». E «are not» vira «aren\'t», que soa «árent». PASSO 2: com «he», «she», «it», «you», «we» e «they» há duas formas certas. «He isn\'t» ou «He\'s not». «You aren\'t» ou «You\'re not». Escolha a que sair mais natural. PASSO 3: com «I» há uma forma só: «I\'m not». A forma «amn\'t» não existe no inglês padrão. PASSO 4: o «it» também serve para falar do tempo. Em português dizemos «está frio», sem sujeito. Em inglês diga «It\'s cold». Nunca «is cold». PASSO 5: para fome, frio, calor e cansaço, use o «to be». Em português dizemos «estou com fome». Em inglês, diga «I\'m hungry». Nunca use «have». Não existe «I have hungry».', {
+        tag: 'Verbos',
+        comparacao: 'em português dizemos «estou com fome» e «está frio» sem sujeito. Em inglês, fome, frio, calor e cansaço usam o «to be», e o sujeito «it» aparece sempre na frase do tempo.',
+        exemplos: [['He isn\'t late.', 'Ele não está atrasado.'], ['You aren\'t busy.', 'Você não está ocupado.'], ['She\'s not ready.', 'Ela não está pronta.'], ['I\'m not tired.', 'Eu não estou cansado.'], ['It\'s cold.', 'Está frio.'], ['It\'s hot.', 'Está calor.'], ['I\'m hungry.', 'Estou com fome.']],
         tabela: [
           { afirmativa: 'I am happy.', negativa: 'I am not happy. / I\'m not happy.', pt: 'Eu não estou feliz.' }, { afirmativa: 'You are busy.', negativa: 'You aren\'t busy. / You\'re not busy.', pt: 'Você não está ocupado.' },
           { afirmativa: 'He is late.', negativa: 'He isn\'t late. / He\'s not late.', pt: 'Ele não está atrasado.' }, { afirmativa: 'She is ready.', negativa: 'She isn\'t ready. / She\'s not ready.', pt: 'Ela não está pronta.' },
           { afirmativa: 'We are hungry.', negativa: 'We aren\'t hungry. / We\'re not hungry.', pt: 'Nós não estamos com fome.' }, { afirmativa: 'They are here.', negativa: 'They aren\'t here. / They\'re not here.', pt: 'Eles não estão aqui.' },
         ],
-        erros: [['He not is happy.', 'He is not happy. / He isn\'t happy.', '«not» vem depois do «to be».'], ['I amn\'t tired.', 'I\'m not tired.', 'Com «I», use «I\'m not».'], ['She no is here.', 'She isn\'t here.', 'Use «not» (ou «n\'t»), não «no», para negar o verbo.']],
+        erros: [['I amn\'t tired.', 'I\'m not tired.', 'Com «I», use «I\'m not».'], ['Is cold today.', 'It\'s cold today.', 'O sujeito «it» é obrigatório na frase do tempo.'], ['I have hungry.', 'I\'m hungry.', 'Fome usa «to be», nunca «have».']],
       }),
-      producao(5, 'Responda em voz alta, com frases inteiras: Você está cansado? Você está com fome? Você está atrasado? Use «I\'m» ou «I\'m not».'),
+      producao(4, 'Responda em voz alta, com frases inteiras: Você está cansado? Você está com fome? Você está atrasado? Use «I\'m» ou «I\'m not». Depois diga se hoje está frio ou calor onde você está, começando com «It\'s».', 'I\'m not tired. I\'m hungry. I\'m not late. It\'s hot.'),
+      revisao(4, 'Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma. Depois diga em voz alta a diferença entre «a teacher» e «an engineer».'),
     ]),
     sessao('S3', 'Perguntas e respostas curtas', [
-      revisao(4, 'Transforme em negativa: «I am happy. She is here. They are students.»'),
-      palavras(4, [
-        ['student', 'stiúdent', 'estudante', ''], ['teacher', 'tíitcher', 'professor, professora', ''], ['doctor', 'dóktor', 'médico, médica', ''], ['from', 'frâm', 'de (origem)', ''],
+      dialogo(5, 'Nice to meet you / Prazer em conhecer', 'Emma e Jake se encontram numa sala de aula. Ouça sem a tradução e conte quantas perguntas aparecem. Depois repare que o verbo vem antes de «you».', [
+        ['Emma', 'Hi! I\'m Emma. What\'s your name?', 'Oi! Eu sou a Emma. Qual é o seu nome?'], ['Jake', 'Hi, Emma. I\'m Jake. Nice to meet you.', 'Oi, Emma. Eu sou o Jake. Prazer em conhecê-la.'], ['Emma', 'Nice to meet you, too. Are you a student?', 'Prazer em conhecê-lo também. Você é estudante?'],
+        ['Jake', 'No, I\'m not. I\'m a teacher. Are you a student?', 'Não. Sou professor. Você é estudante?'], ['Emma', 'Yes, I am. Where are you from?', 'Sou. De onde você é?'], ['Jake', 'I\'m from Canada. And you?', 'Sou do Canadá. E você?'], ['Emma', 'I\'m from Brazil.', 'Sou do Brasil.'],
+        ['Jake', 'Brazil! Great. How are you?', 'Brasil! Ótimo. Como você está?'], ['Emma', 'I\'m fine, thank you. And you?', 'Estou bem, obrigada. E você?'], ['Jake', 'I\'m fine, too. Thank you!', 'Também estou bem. Obrigado!'],
       ]),
-      gramatica(10, 'Perguntas com to be e respostas curtas', 'PASSO 1: para perguntar «sim ou não», inverta: o verbo vem ANTES do sujeito. «You are tired» → «Are you tired?»; «He is a doctor» → «Is he a doctor?». PASSO 2: responda com uma resposta curta: «Yes, I am.» / «No, I\'m not.» / «Yes, he is.» / «No, they aren\'t.». Na resposta afirmativa NÃO se contrai: «Yes, I am», nunca «Yes, I\'m». PASSO 3: perguntas com palavra interrogativa: palavra + verbo + sujeito. «What is your name?» (qual é o seu nome?), «Where are you from?» (de onde você é?), «How are you?» (como você está?), «Who is she?» (quem é ela?). PASSO 4: na fala, «What\'s» e «Where\'s» são comuns.', {
+      palavras(3, [
+        ['what', 'uót', 'o que, qual', ''], ['where', 'uér', 'onde', ''], ['how', 'hau', 'como', ''], ['who', 'huu', 'quem', ''], ['my', 'mai', 'meu, minha', ''], ['your', 'iór', 'seu, sua (de você)', ''], ['name', 'nêim', 'nome', ''], ['friend', 'frénd', 'amigo, amiga', ''],
+        ['from', 'frâm', 'de (origem)', ''], ['fine', 'fáin', 'bem', ''], ['Nice to meet you', 'náis tu miit iú', 'prazer em conhecer você', ''], ['Canada', 'kénada', 'Canadá', ''], ['Brazil', 'brazíl', 'Brasil', ''],
+      ]),
+      gramatica(6, 'Perguntas de sim ou não e respostas curtas', 'PASSO 1: para perguntar «sim ou não», o verbo sobe para o começo. «You are tired» vira «Are you tired?». «He is a doctor» vira «Is he a doctor?». PASSO 2: em português basta mudar a entonação. Em inglês, a ordem das palavras muda. PASSO 3: responda com uma resposta curta. «Yes, I am.» ou «No, I\'m not.». «Yes, he is.» ou «No, he isn\'t.». PASSO 4: na resposta com «yes», não se contrai. Diga «Yes, I am». Nunca «Yes, I\'m». O verbo fica no fim da frase e é forte. PASSO 5: na resposta com «no», pode contrair: «No, I\'m not». «No, they aren\'t».', {
         tag: 'Perguntas',
-        comparacao: 'em português basta mudar a entonação («você está cansado?»). Em inglês, a ordem das palavras muda: o verbo sobe para o começo.',
+        comparacao: 'em português basta mudar a entonação, como em «você está cansado?». Em inglês, a ordem das palavras muda: o verbo sobe para o começo.',
+        exemplos: [['Are you tired?', 'Você está cansado?'], ['Yes, I am.', 'Sim, estou.'], ['No, I\'m not.', 'Não, não estou.'], ['Is he a doctor?', 'Ele é médico?'], ['Yes, he is.', 'Sim, é.'], ['Are they students?', 'Eles são estudantes?'], ['No, they aren\'t.', 'Não, não são.']],
         tabela: [
           { pergunta: 'Are you tired?', sim: 'Yes, I am.', nao: 'No, I\'m not.' }, { pergunta: 'Is he a doctor?', sim: 'Yes, he is.', nao: 'No, he isn\'t.' },
           { pergunta: 'Is she here?', sim: 'Yes, she is.', nao: 'No, she isn\'t.' }, { pergunta: 'Are they students?', sim: 'Yes, they are.', nao: 'No, they aren\'t.' },
         ],
-        erros: [['Yes, I\'m.', 'Yes, I am.', 'A resposta curta afirmativa não se contrai.'], ['Where you are from?', 'Where are you from?', 'Depois da palavra interrogativa, vem o verbo.'], ['You are tired?', 'Are you tired?', 'A forma neutra inverte o verbo e o sujeito.']],
+        erros: [['Yes, I\'m.', 'Yes, I am.', 'A resposta curta com «yes» não se contrai.'], ['You are tired?', 'Are you tired?', 'A forma de pergunta inverte o verbo e o sujeito.'], ['Yes, he\'s.', 'Yes, he is.', 'Com «yes», o verbo fica inteiro no fim da frase.']],
       }),
-      dialogo(8, 'Nice to meet you / Prazer em conhecer', 'Emma e Jake se encontram numa sala de aula.', [
-        ['Emma', 'Hi! I\'m Emma. What\'s your name?', 'Oi! Eu sou a Emma. Qual é o seu nome?'], ['Jake', 'Hi, Emma. I\'m Jake. Nice to meet you.', 'Oi, Emma. Eu sou o Jake. Prazer em conhecê-la.'], ['Emma', 'Nice to meet you, too. Are you a student?', 'Prazer em conhecê-lo também. Você é estudante?'],
-        ['Jake', 'No, I\'m not. I\'m a teacher. Are you a student?', 'Não. Sou professor. Você é estudante?'], ['Emma', 'Yes, I am. Where are you from?', 'Sou. De onde você é?'], ['Jake', 'I\'m from Canada. And you?', 'Sou do Canadá. E você?'], ['Emma', 'I\'m from Brazil.', 'Sou do Brasil.'],
+      gramatica(5, 'Perguntas com What, Where, How e Who', 'PASSO 1: a palavra interrogativa vem primeiro. Depois vem o verbo. Depois, o sujeito. PASSO 2: «what» quer dizer o que ou qual. «What is your name?» quer dizer qual é o seu nome. PASSO 3: «where» quer dizer onde. «Where are you from?» quer dizer de onde você é. PASSO 4: «how» quer dizer como. «How are you?» quer dizer como você está. PASSO 5: «who» quer dizer quem. «Who is she?» quer dizer quem é ela. Na fala, «what is» vira «what\'s», e «where is» vira «where\'s». Cultura: «How are you?» é quase um cumprimento. A resposta normal é «I\'m fine, thank you. And you?».', {
+        tag: 'Perguntas',
+        comparacao: 'em português, a palavra interrogativa vem seguida do sujeito, como em «onde você está?». Em inglês, o verbo vem antes do sujeito: «Where are you?».',
+        exemplos: [['What\'s your name?', 'Qual é o seu nome?'], ['Where are you from?', 'De onde você é?'], ['How are you?', 'Como você está?'], ['Who is she?', 'Quem é ela?'], ['Where is he?', 'Onde ele está?'], ['Who are they?', 'Quem são eles?']],
+        tabela: [
+          { palavra: 'What', ordem: 'What + is + your name?', pt: 'Qual é o seu nome?' }, { palavra: 'Where', ordem: 'Where + are + you + from?', pt: 'De onde você é?' },
+          { palavra: 'How', ordem: 'How + are + you?', pt: 'Como você está?' }, { palavra: 'Who', ordem: 'Who + is + she?', pt: 'Quem é ela?' },
+        ],
+        erros: [['Where you are from?', 'Where are you from?', 'Depois da palavra interrogativa, vem o verbo.'], ['What your name is?', 'What is your name?', 'Verbo antes do sujeito: «is your name».'], ['How you are?', 'How are you?', 'O verbo «are» vem antes do «you».']],
+      }),
+      exercicios(5, [
+        mc('Como transformar «You are tired» em pergunta?', ['Are you tired?', 'You tired are?', 'Do you are tired?'], 'Are you tired?', 'Na pergunta com «to be», o verbo sobe para antes do sujeito.'),
+        mc('Qual é a resposta curta certa, com «sim», para «Is he a doctor?»', ['Yes, he is.', 'Yes, he\'s.', 'Yes, is he.'], 'Yes, he is.', 'A resposta curta com «yes» não se contrai e repete o sujeito.'),
+        mc('O que quer dizer «Where are you from?»', ['De onde você é?', 'Como você está?', 'Quem é você?'], 'De onde você é?', '«Where» é onde, e «from» indica a origem.'),
+        lacuna('___ is your name? (qual é o seu nome?)', ['What', 'Where', 'Who'], 'What', '«What» pergunta o que ou qual. Para nome, use «what».'),
+        lacuna('___ are you from? (de onde você é?)', ['Where', 'What', 'How'], 'Where', '«Where» pergunta o lugar, e «from» dá a origem.'),
+        lacuna('— Are they students? — No, they ___.', ['aren\'t', 'isn\'t', 'amn\'t'], 'aren\'t', 'Com «they», o verbo é «are». A forma negativa é «aren\'t».'),
+        ordem('Ordene: «Are you a student?»', ['Are', 'you', 'a', 'student'], 'Are you a student?', 'Pergunta de sim ou não: o verbo vem primeiro, depois o sujeito.'),
+        ditado('Where are you from', 'Escreva: where are you from. A ordem é palavra interrogativa, verbo e sujeito.'),
       ]),
-      producao(4, 'Faça as perguntas em voz alta e responda por você: «What\'s your name? Where are you from? Are you a student? Are you tired?»'),
+      producao(3, 'Faça as perguntas em voz alta e responda por você: «What\'s your name? Where are you from? Are you a student? How are you?»', 'I\'m Felipe. I\'m from Brazil. Yes, I am. I\'m fine, thank you.'),
+      revisao(3, 'Transforme em negativa: «I am happy. She is here. They are students.» Depois transforme em pergunta: «You are tired. He is busy.»'),
     ]),
-    sessao('S4', 'Revisão e prática da aula 2', [
-      revisao(5, 'Escreva uma frase afirmativa, uma negativa e uma pergunta com «to be» sobre você.'),
-      exercicios(20, [
-        ouvir('I am from Brazil', ['I am from Brazil', 'You are from Brazil', 'He is from Brazil'], 'I am from Brazil', 'Ouça o sujeito: «I am».'), ouvir('She is not tired', ['She is not tired', 'She is tired', 'He is not tired'], 'She is not tired', 'Ouça «not» e o sujeito «she».'), ouvir('Are you a student', ['Are you a student', 'Is he a student', 'Are they students'], 'Are you a student', 'Ouça o verbo no começo e «you».'), ditado('We are happy', 'Escreva: we are happy.'), ditado('He is a doctor', 'Escreva: he is a doctor, com «a».'),
-        mc('Qual forma de «to be» combina com «she»?', ['is', 'are', 'am'], 'is', 'he, she e it usam «is».'), mc('Como responder «Are you tired?» com «sim»?', ['Yes, I am.', 'Yes, I\'m.', 'Yes, I are.'], 'Yes, I am.', 'A resposta curta afirmativa não se contrai.'), mc('Qual frase está correta?', ['She is not a teacher.', 'She not is a teacher.', 'She no is a teacher.'], 'She is not a teacher.', '«not» fica depois do «to be».'), mc('Qual é a contração de «he is»?', ['he\'s', 'his', 'hes\''], 'he\'s', 'A contração usa apóstrofo: he\'s.'),
-        lacuna('I ___ Brazilian. (sou)', ['am', 'is', 'are'], 'am', '«am» só com «I».'), lacuna('They ___ students. (são)', ['are', 'is', 'am'], 'are', '«they» usa «are».'), lacuna('He ___ not here. (não está)', ['is', 'are', 'am'], 'is', '«he» usa «is».'), lacuna('___ you from Brazil? (você é do Brasil?)', ['Are', 'Is', 'Am'], 'Are', 'Pergunta: o verbo vem antes do sujeito.'),
-        ordem('Ordene: «Where are you from?»', ['Where', 'are', 'you', 'from'], 'Where are you from?', 'Palavra interrogativa + verbo + sujeito.'), ordem('Ordene: «She is not happy.»', ['She', 'is', 'not', 'happy'], 'She is not happy.', '«not» depois do verbo.'),
-        livre('Escreva 4 frases em inglês: quem você é, de onde é, como está agora e uma frase negativa.', 'I am Felipe. I am from Brazil. I am tired. I am not a doctor.'),
+    sessao('S4', 'Leitura, revisão e prática da aula 2', [
+      texto(5, 'Who am I? / Quem sou eu?', 'Hello! I\'m Carlos. I\'m a student, and I\'m from Brazil. I\'m not a doctor. I\'m not a teacher. I\'m not tired. I\'m happy. Maria is my friend. She is a doctor. She is busy, and she is not here. We are happy. Thank you!', 'Olá! Eu sou o Carlos. Sou estudante e sou do Brasil. Não sou médico. Não sou professor. Não estou cansado. Estou feliz. A Maria é minha amiga. Ela é médica. Ela está ocupada e não está aqui. Nós estamos felizes. Obrigado!', [
+        ['Carlos é médico?', 'Não. Ele é estudante: «I\'m a student. I\'m not a doctor.»'], ['Quem é a Maria e como ela está?', 'Ela é amiga do Carlos e é médica. Está ocupada e não está aqui.'], ['De onde o Carlos é?', 'Do Brasil: «I\'m from Brazil.»'],
       ]),
-      producao(5, 'Fale: apresente-se em 5 frases (nome, origem, profissão ou estudo, como você está, uma frase negativa). Depois faça duas perguntas a um colega.'),
+      exercicios(17, [
+        ouvir('I am from Brazil', ['I am from Brazil', 'You are from Brazil', 'He is from Brazil'], 'I am from Brazil', 'Ouça o sujeito logo no começo: «I am».'),
+        ouvir('She is not tired', ['She is not tired', 'She is tired', 'He is not tired'], 'She is not tired', 'Ouça «not» depois do verbo e o sujeito «she».'),
+        ouvir('Are you a student', ['Are you a student', 'Is he a student', 'Are they students'], 'Are you a student', 'Ouça o verbo no começo e depois «you»: é pergunta.'),
+        ouvir('He is a teacher', ['He is a teacher', 'She is a teacher', 'He is a doctor'], 'He is a teacher', 'Ouça o sujeito «he» e a profissão «teacher», com o som «ti» no começo.'),
+        ouvir('We are not late', ['We are not late', 'We are late', 'They are not late'], 'We are not late', 'Ouça se aparece «not» depois de «are» e o sujeito «we».'),
+        ouvir('Is she busy', ['Is she busy', 'Is he busy', 'Are you busy'], 'Is she busy', 'Ouça o verbo «is» no começo e o sujeito «she», com o som «shii».'),
+        ouvir('I am hungry and tired', ['I am hungry and tired', 'I am happy and tired', 'I am hungry and busy'], 'I am hungry and tired', 'Ouça as duas palavras que descrevem como a pessoa está: «hungry» e «tired».'),
+        ouvir('Yes, he is', ['Yes, he is', 'Yes, she is', 'No, he isn\'t'], 'Yes, he is', 'Ouça se a resposta começa com «yes» ou «no» e qual é o sujeito.'),
+        ouvir('It is cold', ['It is cold', 'It is hot', 'It is late'], 'It is cold', 'Ouça a última palavra: «cold» é frio, «hot» é calor e «late» é tarde.'),
+        ditado('We are happy', 'Escreva: we are happy. Sujeito «we» com o verbo «are».'),
+        ditado('He is a doctor', 'Escreva: he is a doctor, com o «a» antes da profissão.'),
+        ditado('I am not tired', 'Escreva: i am not tired. O «not» fica depois do «am».'),
+        ditado('What is your name', 'Escreva: what is your name. Palavra interrogativa, verbo e sujeito.'),
+        ditado('Are they ready', 'Escreva: are they ready. O verbo «are» vem antes de «they».'),
+        mc('Qual forma de «to be» combina com «she»?', ['is', 'are', 'am'], 'is', '«he», «she» e «it» usam «is».'),
+        mc('Como responder «Are you tired?» com «sim»?', ['Yes, I am.', 'Yes, I\'m.', 'Yes, I are.'], 'Yes, I am.', 'A resposta curta com «yes» não se contrai, e «am» é a forma de «I».'),
+        mc('Qual frase está correta?', ['She is not a teacher.', 'She not is a teacher.', 'She no is a teacher.'], 'She is not a teacher.', 'O «not» fica depois do «to be», e não se usa «no» para negar o verbo.'),
+        mc('Qual é a contração de «he is»?', ['he\'s', 'his', 'hes\''], 'he\'s', 'A contração usa apóstrofo no lugar da vogal: he\'s.'),
+        mc('Como se diz «Está frio» em inglês?', ['It\'s cold.', 'Is cold.', 'Have cold.'], 'It\'s cold.', 'Em inglês o sujeito não some: usa-se «it». E o frio usa «to be», não «have».'),
+        mc('Qual frase usa o artigo certo?', ['I am a teacher.', 'I am teacher.', 'I am an teacher.'], 'I am a teacher.', 'Profissão no singular leva artigo. «Teacher» começa com som de consoante, então é «a».'),
+        mc('Qual é a contração certa de «they are»?', ['they\'re', 'theyre', 'they\'s'], 'they\'re', 'A contração troca a vogal de «are» por apóstrofo: they\'re.'),
+        lacuna('I ___ Brazilian. (sou)', ['am', 'is', 'are'], 'am', '«am» só combina com «I».'),
+        lacuna('They ___ students. (são)', ['are', 'is', 'am'], 'are', '«they» usa «are».'),
+        lacuna('He ___ not here. (não está)', ['is', 'are', 'am'], 'is', '«he» usa «is».'),
+        lacuna('___ you from Brazil? (você é do Brasil?)', ['Are', 'Is', 'Am'], 'Are', 'Em pergunta, o verbo vem antes do sujeito, e «you» usa «are».'),
+        lacuna('She is ___ engineer. (uma engenheira)', ['an', 'a'], 'an', '«Engineer» começa com som de vogal, então o artigo é «an».'),
+        lacuna('___ cold today! (está frio hoje)', ['It\'s', 'Is', 'He\'s'], 'It\'s', 'O sujeito «it» é obrigatório na frase do tempo.'),
+        lacuna('— Is Tom busy? — No, he ___.', ['isn\'t', 'aren\'t', 'not'], 'isn\'t', 'Com «he», o verbo é «is», e a forma negativa é «isn\'t».'),
+        lacuna('We are ___ ready. (não estamos prontos)', ['not', 'no', 'isn\'t'], 'not', 'O «not» vem depois do «are» e nega o verbo. O «no» não serve aqui.'),
+        ordem('Ordene: «Where are you from?»', ['Where', 'are', 'you', 'from'], 'Where are you from?', 'Palavra interrogativa, depois o verbo, depois o sujeito.'),
+        ordem('Ordene: «She is not happy.»', ['She', 'is', 'not', 'happy'], 'She is not happy.', 'O «not» vem depois do verbo.'),
+        ordem('Ordene: «Is he a doctor?»', ['Is', 'he', 'a', 'doctor'], 'Is he a doctor?', 'Pergunta de sim ou não: o verbo «is» vem antes do sujeito «he».'),
+        livreE('Escreva 4 frases em inglês: quem você é, de onde é, como está agora e uma frase negativa.', 'I am Felipe. I am from Brazil. I am tired. I am not a doctor.', 'Escrever quatro frases seguidas mostra se você domina «am», «is» e «are», o «not» depois do verbo e o sujeito sempre presente.'),
+        livreE('Escreva uma pergunta de sim ou não sobre um amigo e as duas respostas curtas, uma com «yes» e outra com «no».', 'Is Maria a doctor? Yes, she is. No, she isn\'t.', 'Uma pergunta e as duas respostas curtas treinam o verbo no começo da pergunta e a resposta com «yes» sem contração.'),
+        livreE('Escreva em inglês: está frio e você está com fome.', 'It\'s cold. I\'m hungry.', 'O sujeito «it» é obrigatório na frase do tempo, e fome usa «to be», nunca «have».'),
+        livreE('Corrija, escrevendo certo: «Am tired. He no is here.»', 'I am tired. He is not here.', 'Sem sujeito a frase fica errada, e o «not» deve vir depois do verbo. Corrigir erros fixa a regra.'),
+      ]),
+      producao(5, 'Fale: apresente-se em 5 frases, como o Carlos fez no texto: nome, origem, profissão ou estudo, como você está e uma frase negativa. Depois faça duas perguntas a um colega, como a Emma fez.', 'Hello! I\'m Felipe. I\'m from Brazil. I\'m a teacher. I\'m happy. I\'m not tired. Are you a student? Where are you from?'),
+      revisao(3, 'Já consigo? Soletrar o meu nome e cumprimentar como na aula 1. Dizer quem sou, de onde sou e como estou com «am», «is» e «are». Negar com «not». Perguntar com o verbo no começo e responder curto, sem contrair no «yes». Se algum item falhar, refaça a sessão correspondente.'),
     ]),
   ],
 });

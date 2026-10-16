@@ -9,7 +9,7 @@
   "aula": {
     "numero": 2,
     "titulo": "Essere, pronomes e adjetivos",
-    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», e fazer o adjetivo concordar em gênero e número.",
+    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», fazer o adjetivo concordar em gênero e número e perguntar com «chi», «dove» e «come».",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,30 +20,65 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Siamo a Roma! / Estamos em Roma!",
+        "contexto": "Luca e Sara chegam a Roma e encontram os amigos Marco e Giulia. Ouça primeiro. Repare na palavra que aparece o tempo todo: «sono», «sei», «è», «siamo», «siete».",
+        "linhas": [
+          {
+            "personagem": "Luca",
+            "ru": "— Ciao, Sara! Come stai?",
+            "pt": "— Oi, Sara! Como você está?",
+            "audio": "Ciao, Sara! Come stai?"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Sto bene, grazie! Sono contenta. E tu? Sei stanco?",
+            "pt": "— Estou bem, obrigada! Estou contente. E você? Está cansado?",
+            "audio": "Sto bene, grazie! Sono contenta. E tu? Sei stanco?"
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Un po' stanco, ma sono felice. Siamo a Roma!",
+            "pt": "— Um pouco cansado, mas estou feliz. Estamos em Roma!",
+            "audio": "Un po' stanco, ma sono felice. Siamo a Roma!"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Sì, siamo a Roma! E Marco? Dov'è?",
+            "pt": "— Sim, estamos em Roma! E o Marco? Onde está?",
+            "audio": "Sì, siamo a Roma! E Marco? Dov'è?"
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Lui è qui, con Giulia. Ecco, sono là!",
+            "pt": "— Ele está aqui, com a Giulia. Olha, eles estão ali!",
+            "audio": "Lui è qui, con Giulia. Ecco, sono là!"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Ciao, Marco! Ciao, Giulia! Siete stanchi?",
+            "pt": "— Oi, Marco! Oi, Giulia! Vocês estão cansados?",
+            "audio": "Ciao, Marco! Ciao, Giulia! Siete stanchi?"
+          },
+          {
+            "personagem": "Giulia",
+            "ru": "— Un po', ma siamo felici.",
+            "pt": "— Um pouco, mas estamos felizes.",
+            "audio": "Un po', ma siamo felici."
+          },
+          {
+            "personagem": "Marco",
+            "ru": "— Roma è bella! Evviva!",
+            "pt": "— Roma é bonita! Viva!",
+            "audio": "Roma è bella! Evviva!"
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
-          {
-            "ru": "alto, alta",
-            "translit": "álto, álta",
-            "pt": "alto, alta",
-            "en": "",
-            "audio": "alto, alta"
-          },
-          {
-            "ru": "basso, bassa",
-            "translit": "básso, bássa",
-            "pt": "baixo, baixa",
-            "en": "",
-            "audio": "basso, bassa"
-          },
-          {
-            "ru": "simpatico, simpatica",
-            "translit": "simpátiko, simpátika",
-            "pt": "simpático, simpática",
-            "en": "",
-            "audio": "simpatico, simpatica"
-          },
           {
             "ru": "stanco, stanca",
             "translit": "stánko, stánka",
@@ -66,6 +101,13 @@
             "audio": "felice"
           },
           {
+            "ru": "simpatico, simpatica",
+            "translit": "simpátiko, simpátika",
+            "pt": "simpático, simpática",
+            "en": "",
+            "audio": "simpatico, simpatica"
+          },
+          {
             "ru": "gentile",
             "translit": "djentíle",
             "pt": "gentil, amável",
@@ -73,48 +115,88 @@
             "audio": "gentile"
           },
           {
-            "ru": "giovane",
-            "translit": "djóvane",
-            "pt": "jovem",
+            "ru": "pronto, pronta",
+            "translit": "prônto, prônta",
+            "pt": "pronto, preparado",
             "en": "",
-            "audio": "giovane"
+            "audio": "pronto, pronta"
+          },
+          {
+            "ru": "bello, bella",
+            "translit": "béllo, bélla",
+            "pt": "bonito, bonita",
+            "en": "",
+            "audio": "bello, bella"
+          },
+          {
+            "ru": "un po'",
+            "translit": "um pó",
+            "pt": "um pouco",
+            "en": "",
+            "audio": "un po'"
           }
         ]
       },
       {
         "tipo": "gramatica",
-        "min": 12,
-        "titulo": "Essere: o presente e os pronomes",
-        "explicacao": "PASSO 1: o italiano tem um só verbo para «ser» e «estar»: «essere». «Sono italiano» (sou italiano) e «Sono stanco» (estou cansado) usam o mesmo verbo. PASSO 2: o presente é irregular e vale decorar: «io sono», «tu sei», «lui / lei è», «noi siamo», «voi siete», «loro sono». PASSO 3: os pronomes sujeito são «io» (eu), «tu» (tu, você informal), «lui» (ele), «lei» (ela), «noi» (nós), «voi» (vocês, ou tu no plural) e «loro» (eles, elas). PASSO 4: o italiano não tem «você». Com uma pessoa próxima se usa «tu»; com desconhecidos, «Lei», que leva o verbo na forma de «lei»: «Lei è stanco?» (o senhor está cansado?). Escreve-se «Lei» com maiúscula na carta e em textos formais. PASSO 5: como a forma do verbo já mostra a pessoa, o pronome é omitido: «Sono stanco», «Siete contenti?». Ele só aparece para dar ênfase ou contrastar: «Io sono Marco, lui è Luca». PASSO 6: «sono» serve para «io» e para «loro»; o contexto resolve. PASSO 7: o «è» (verbo) leva acento grave. Sem acento, «e» significa «e»: «Marco è alto e simpatico».",
-        "comparacao": "em português usamos dois verbos, «ser» e «estar», e escolhemos entre eles. O italiano só tem «essere»: o contexto decide. E, ao contrário do português, não existe «você»: o tratamento é «tu» ou «Lei».",
+        "min": 7,
+        "titulo": "Os pronomes e o presente de essere",
+        "explicacao": "Você acabou de ouvir «sono», «sei», «è», «siamo» e «siete». São formas do mesmo verbo. PASSO 1: o italiano tem um só verbo para «ser» e para «estar»: «essere». «Sono italiano» quer dizer «sou italiano». «Sono stanco» quer dizer «estou cansado». O verbo é o mesmo, e o contexto mostra o sentido. PASSO 2: os pronomes são sete. «Io» é eu. «Tu» é você, para quem é próximo. «Lui» é ele. «Lei» é ela. «Noi» é nós. «Voi» é vocês. «Loro» é eles ou elas. PASSO 3: o presente de «essere» é irregular, e vale decorar. «Io sono». «Tu sei». «Lui è», «lei è». «Noi siamo». «Voi siete». «Loro sono». PASSO 4: repare que «sono» serve para «io» e para «loro». O contexto resolve. PASSO 5: o «è» da terceira pessoa leva acento. Sem acento, «e» é só a palavra «e»: «Marco è alto e simpatico».",
+        "comparacao": "em português usamos dois verbos, «ser» e «estar», e escolhemos entre eles. O italiano só tem «essere». Quem decide é o contexto: «sono stanco» só pode ser «estou cansado».",
+        "exemplos": [
+          {
+            "ru": "Io sono stanco.",
+            "pt": "Estou cansado."
+          },
+          {
+            "ru": "Tu sei simpatico.",
+            "pt": "Você é simpático."
+          },
+          {
+            "ru": "Lui è gentile.",
+            "pt": "Ele é gentil."
+          },
+          {
+            "ru": "Noi siamo contenti.",
+            "pt": "Estamos contentes."
+          },
+          {
+            "ru": "Voi siete felici.",
+            "pt": "Vocês estão felizes."
+          },
+          {
+            "ru": "Loro sono amici.",
+            "pt": "Eles são amigos."
+          }
+        ],
         "tabela": [
           {
-            "pronome": "io",
+            "pronome": "io (eu)",
             "forma": "sono",
             "exemplo": "Io sono stanco."
           },
           {
-            "pronome": "tu",
+            "pronome": "tu (você, próximo)",
             "forma": "sei",
             "exemplo": "Tu sei simpatico."
           },
           {
-            "pronome": "lui / lei / Lei",
+            "pronome": "lui (ele), lei (ela)",
             "forma": "è",
             "exemplo": "Lei è molto gentile."
           },
           {
-            "pronome": "noi",
+            "pronome": "noi (nós)",
             "forma": "siamo",
             "exemplo": "Noi siamo contenti."
           },
           {
-            "pronome": "voi",
+            "pronome": "voi (vocês)",
             "forma": "siete",
             "exemplo": "Voi siete giovani."
           },
           {
-            "pronome": "loro",
+            "pronome": "loro (eles, elas)",
             "forma": "sono",
             "exemplo": "Loro sono amici."
           }
@@ -133,12 +215,76 @@
           {
             "errado": "Voi siamo amici.",
             "certo": "Voi siete amici.",
-            "motivo": "«Siamo» é de «noi»; «voi» pede «siete»."
+            "motivo": "«Siamo» é de «noi». «Voi» pede «siete»."
           },
           {
             "errado": "Lei e stanca.",
             "certo": "Lei è stanca.",
-            "motivo": "O verbo leva acento; «e» sem acento significa «e»."
+            "motivo": "O verbo leva acento. «E» sem acento significa «e»."
+          }
+        ],
+        "tag": "Verbo essere"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Tu, Lei e voi, e o pronome que some",
+        "explicacao": "PASSO 1: em português dizemos «você» a todo mundo. O italiano não tem «você». PASSO 2: com amigos, família e jovens, usa-se «tu». «Tu sei stanco?» PASSO 3: com desconhecidos, pessoas mais velhas e no trabalho, usa-se «Lei». Você já viu isso na aula 1, em «Come sta?». O verbo fica na forma de «lei»: «Lei è stanco?», o senhor está cansado? PASSO 4: para falar com várias pessoas, usa-se «voi», tanto com amigos quanto com desconhecidos: «Siete stanchi?» PASSO 5: como a forma do verbo já mostra quem fala, o pronome costuma sumir. Diz-se «Sono stanco», e não «Io sono stanco». PASSO 6: o pronome aparece quando você quer destacar ou contrastar: «Io sono Marco, lui è Luca». Cultura: na dúvida entre «tu» e «Lei», use «Lei». É mais seguro.",
+        "comparacao": "o português também omite o pronome às vezes («estou cansado»), mas usa «eu» com mais frequência. O italiano omite quase sempre.",
+        "exemplos": [
+          {
+            "ru": "Sei stanco?",
+            "pt": "Você está cansado? (amigo)"
+          },
+          {
+            "ru": "Lei è stanca?",
+            "pt": "A senhora está cansada?"
+          },
+          {
+            "ru": "Siete stanchi?",
+            "pt": "Vocês estão cansados?"
+          },
+          {
+            "ru": "Sono felice.",
+            "pt": "Estou feliz."
+          },
+          {
+            "ru": "Io sono Marco, lui è Luca.",
+            "pt": "Eu sou o Marco, ele é o Luca."
+          }
+        ],
+        "tabela": [
+          {
+            "situacao": "um amigo",
+            "pronome": "tu",
+            "exemplo": "Sei stanco?"
+          },
+          {
+            "situacao": "um desconhecido ou pessoa mais velha",
+            "pronome": "Lei",
+            "exemplo": "Lei è stanco?"
+          },
+          {
+            "situacao": "várias pessoas",
+            "pronome": "voi",
+            "exemplo": "Siete stanchi?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Lei sei stanco?",
+            "certo": "Lei è stanco?",
+            "motivo": "Com «Lei», o verbo fica na terceira pessoa: «è»."
+          },
+          {
+            "errado": "Voi è stanchi?",
+            "certo": "Voi siete stanchi?",
+            "motivo": "Com «voi», o verbo é «siete»."
+          },
+          {
+            "errado": "Io sono stanco, io sono felice, io sono pronto.",
+            "certo": "Sono stanco, felice e pronto.",
+            "motivo": "O pronome só se repete para destacar. Normalmente some."
           }
         ],
         "tag": "Verbo essere"
@@ -146,12 +292,12 @@
       {
         "tipo": "producao",
         "min": 5,
-        "enunciado": "Diga em voz alta quatro frases sobre você, com «sono»: duas com adjetivos físicos ou de ânimo (alto, basso, stanco, contento) e duas com «io sono» e o seu nome. Depois pergunte a alguém, com «Lei»: «Lei è stanco?»"
+        "enunciado": "Diga em voz alta quatro frases sobre você, com «sono»: duas com adjetivos de ânimo (stanco, contento, felice, pronto) e duas com o seu nome, como em «Sono Felipe». Depois pergunte a alguém, com «Lei»: «Lei è stanco?»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Retome a aula 1: diga em voz alta «Buongiorno! Come sta?», «Ciao! Come stai?» e «Sto bene, grazie. E Lei?». Depois soletre «Italia»."
+        "min": 3,
+        "enunciado": "Retome a aula 1 em voz alta: «Buongiorno! Come sta?», «Ciao! Come stai?» e «Sto bene, grazie. E Lei?». Depois soletre «Italia». Qual é a diferença entre «tu» e «Lei»?"
       }
     ]
   },

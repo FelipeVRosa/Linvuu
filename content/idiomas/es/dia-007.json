@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "profesor, profesora",
@@ -64,7 +64,7 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "Dizer a profissão e fazer perguntas com ser",
-        "explicacao": "PASSO 1: a profissão vem depois de «ser», sem artigo: «Soy médica», «Es profesor». O artigo só aparece se houver um adjetivo ou um complemento: «Es un buen médico.» PASSO 2: muitas profissões mudam no feminino: «-o» vira «-a» («médico, médica»; «ingeniero, ingeniera»), «-or» vira «-ora» («profesor, profesora»). Palavras em «-e» e «-ista» não mudam: «estudiante», «periodista». PASSO 3: a pergunta de sim ou não tem a mesma ordem da frase afirmativa; muda a entonação, e a escrita ganha «¿ ?»: «¿Eres profesor?» A forma de «usted» é «¿Es usted médica?» PASSO 4: palavras interrogativas: «¿Quién es?» (quem), «¿Qué es?» (o que), «¿Cómo es?» (como). O verbo vem logo depois do interrogativo: «¿Quién eres tú?», «¿Cómo es Pablo?» PASSO 5: resposta curta: «Sí, soy profesora.» «No, no soy estudiante.» PASSO 6: «oficina» é falso amigo: significa escritório; oficina de conserto é «taller».",
+        "explicacao": "Ouça: «Soy profesora. ¿Eres profesor?» PASSO 1: a profissão vem depois de «ser», sem artigo: «Soy médica», «Es profesor». O artigo só aparece se houver um adjetivo ou um complemento: «Es un buen médico.» PASSO 2: muitas profissões mudam no feminino: «-o» vira «-a» («médico, médica»; «ingeniero, ingeniera»), «-or» vira «-ora» («profesor, profesora»). Palavras em «-e» e «-ista» não mudam: «estudiante», «periodista». PASSO 3: a pergunta de sim ou não tem a mesma ordem da frase afirmativa; muda a entonação, e a escrita ganha «¿ ?»: «¿Eres profesor?» A forma de «usted» é «¿Es usted médica?» PASSO 4: palavras interrogativas: «¿Quién es?» (quem), «¿Qué es?» (o que), «¿Cómo es?» (como). O verbo vem logo depois do interrogativo: «¿Quién eres tú?», «¿Cómo es Pablo?» PASSO 5: resposta curta: «Sí, soy profesora.» «No, no soy estudiante.» PASSO 6: «oficina» é falso amigo: significa escritório; oficina de conserto é «taller».",
         "comparacao": "em português também dizemos «sou médica» sem artigo, e a pergunta mantém a ordem da afirmação. Em espanhol, a diferença está no «¿» de abertura e no fato de o verbo ir logo depois do interrogativo, sem partículas como o nosso «é que».",
         "tabelas": [
           {
@@ -149,7 +149,7 @@
       },
       {
         "tipo": "dialogo",
-        "min": 8,
+        "min": 6,
         "titulo": "En la escuela / Na escola",
         "contexto": "Marta, a professora, conhece dois alunos novos, Pablo e Sofía.",
         "linhas": [
@@ -188,17 +188,130 @@
             "ru": "— Gracias, Pablo. Tú eres muy simpático.",
             "pt": "— Obrigada, Pablo. Você é muito simpático.",
             "audio": "Gracias, Pablo. Tú eres muy simpático."
+          },
+          {
+            "personagem": "La profesora",
+            "ru": "— Ustedes son muy simpáticos.",
+            "pt": "— Vocês são muito simpáticos.",
+            "audio": "Ustedes son muy simpáticos."
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Gracias, profesora. Mucho gusto.",
+            "pt": "— Obrigado, professora. Muito prazer.",
+            "audio": "Gracias, profesora. Mucho gusto."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Ella es médica",
+            "opcoes": [
+              "Ella es médica",
+              "Ellas son médicas",
+              "Ella es médico"
+            ],
+            "gabarito": "Ella es médica",
+            "explicacao": "Ouça «es» (uma só pessoa) e o final «-a» (feminino).",
+            "id": "es-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "¿Quién es él?",
+            "opcoes": [
+              "¿Quién es él?",
+              "¿Quién eres?",
+              "¿Cómo es él?"
+            ],
+            "gabarito": "¿Quién es él?",
+            "explicacao": "Ouça «quién»: pergunta quem é a pessoa.",
+            "id": "es-002-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Eres muy simpático",
+            "opcoes": [
+              "Eres muy simpático",
+              "Es muy simpático",
+              "Soy muy simpático"
+            ],
+            "gabarito": "Eres muy simpático",
+            "explicacao": "Ouça «eres»: é a forma de «tú».",
+            "id": "es-002-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Soy estudiante",
+            "respostaEsperada": "Soy estudiante",
+            "explicacao": "A profissão vem sem artigo, e o verbo já mostra a pessoa: «Soy estudiante».",
+            "id": "es-002-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Pablo ___ estudiante. (é)",
+            "opcoes": [
+              "es",
+              "eres",
+              "son"
+            ],
+            "gabarito": "es",
+            "explicacao": "Pablo é «él»: forma «es».",
+            "id": "es-002-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ella es ___ . (médica)",
+            "opcoes": [
+              "médica",
+              "médico",
+              "médicas"
+            ],
+            "gabarito": "médica",
+            "explicacao": "Sujeito feminino singular pede «médica».",
+            "id": "es-002-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é o feminino de «camarero»?",
+            "opcoes": [
+              "camarera",
+              "camarero",
+              "camarea"
+            ],
+            "gabarito": "camarera",
+            "explicacao": "Em «-ero», o feminino é «-era».",
+            "id": "es-002-e07"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual pergunta significa «Como é Pablo?»",
+            "opcoes": [
+              "¿Cómo es Pablo?",
+              "¿Quién es Pablo?",
+              "¿Qué es Pablo?"
+            ],
+            "gabarito": "¿Cómo es Pablo?",
+            "explicacao": "«Cómo» pergunta como é a pessoa; «quién», quem é.",
+            "id": "es-002-e08"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Pergunte a um colega imaginário: «¿Quién eres? ¿Eres estudiante? ¿Cómo es Pablo?» e responda com a sua profissão e uma descrição."
+        "min": 4,
+        "enunciado": "Faça uma entrevista sozinho, em voz alta, com as duas vozes. Pergunta: «¿Quién eres? ¿Eres estudiante? ¿Cómo eres?» Resposta com os seus dados: «Soy… Soy… Soy muy…» Depois pergunte sobre outra pessoa: «¿Quién es? ¿Cómo es?»"
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 2,
         "enunciado": "Diga em voz alta: «Soy… No soy… Ella es… Ellos son muy…» com adjetivos da aula."
       }
     ]

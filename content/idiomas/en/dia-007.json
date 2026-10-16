@@ -9,7 +9,7 @@
   "aula": {
     "numero": 2,
     "titulo": "Quem sou eu: o verbo to be",
-    "objetivo": "Dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas) e usar as contrações.",
+    "objetivo": "Ouvir e entender apresentações simples e dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas), usando as contrações.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,91 +20,10 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "palavras",
-        "min": 2,
-        "itens": [
-          {
-            "ru": "student",
-            "translit": "stiúdent",
-            "pt": "estudante",
-            "en": "",
-            "audio": "student"
-          },
-          {
-            "ru": "teacher",
-            "translit": "tíitcher",
-            "pt": "professor, professora",
-            "en": "",
-            "audio": "teacher"
-          },
-          {
-            "ru": "doctor",
-            "translit": "dóktor",
-            "pt": "médico, médica",
-            "en": "",
-            "audio": "doctor"
-          },
-          {
-            "ru": "from",
-            "translit": "frâm",
-            "pt": "de (origem)",
-            "en": "",
-            "audio": "from"
-          }
-        ]
-      },
-      {
-        "tipo": "gramatica",
-        "min": 5,
-        "titulo": "Perguntas com to be e respostas curtas",
-        "explicacao": "PASSO 1: para perguntar «sim ou não», inverta: o verbo vem ANTES do sujeito. «You are tired» → «Are you tired?»; «He is a doctor» → «Is he a doctor?». PASSO 2: responda com uma resposta curta: «Yes, I am.» / «No, I'm not.» / «Yes, he is.» / «No, they aren't.». Na resposta afirmativa NÃO se contrai: «Yes, I am», nunca «Yes, I'm». PASSO 3: perguntas com palavra interrogativa: palavra + verbo + sujeito. «What is your name?» (qual é o seu nome?), «Where are you from?» (de onde você é?), «How are you?» (como você está?), «Who is she?» (quem é ela?). PASSO 4: na fala, «What's» e «Where's» são comuns.",
-        "comparacao": "em português basta mudar a entonação («você está cansado?»). Em inglês, a ordem das palavras muda: o verbo sobe para o começo.",
-        "tabela": [
-          {
-            "pergunta": "Are you tired?",
-            "sim": "Yes, I am.",
-            "nao": "No, I'm not."
-          },
-          {
-            "pergunta": "Is he a doctor?",
-            "sim": "Yes, he is.",
-            "nao": "No, he isn't."
-          },
-          {
-            "pergunta": "Is she here?",
-            "sim": "Yes, she is.",
-            "nao": "No, she isn't."
-          },
-          {
-            "pergunta": "Are they students?",
-            "sim": "Yes, they are.",
-            "nao": "No, they aren't."
-          }
-        ],
-        "erros": [
-          {
-            "errado": "Yes, I'm.",
-            "certo": "Yes, I am.",
-            "motivo": "A resposta curta afirmativa não se contrai."
-          },
-          {
-            "errado": "Where you are from?",
-            "certo": "Where are you from?",
-            "motivo": "Depois da palavra interrogativa, vem o verbo."
-          },
-          {
-            "errado": "You are tired?",
-            "certo": "Are you tired?",
-            "motivo": "A forma neutra inverte o verbo e o sujeito."
-          }
-        ],
-        "tag": "Perguntas"
-      },
-      {
         "tipo": "dialogo",
-        "min": 4,
+        "min": 5,
         "titulo": "Nice to meet you / Prazer em conhecer",
-        "contexto": "Emma e Jake se encontram numa sala de aula.",
+        "contexto": "Emma e Jake se encontram numa sala de aula. Ouça sem a tradução e conte quantas perguntas aparecem. Depois repare que o verbo vem antes de «you».",
         "linhas": [
           {
             "personagem": "Emma",
@@ -147,217 +66,383 @@
             "ru": "— I'm from Brazil.",
             "pt": "— Sou do Brasil.",
             "audio": "I'm from Brazil."
+          },
+          {
+            "personagem": "Jake",
+            "ru": "— Brazil! Great. How are you?",
+            "pt": "— Brasil! Ótimo. Como você está?",
+            "audio": "Brazil! Great. How are you?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— I'm fine, thank you. And you?",
+            "pt": "— Estou bem, obrigada. E você?",
+            "audio": "I'm fine, thank you. And you?"
+          },
+          {
+            "personagem": "Jake",
+            "ru": "— I'm fine, too. Thank you!",
+            "pt": "— Também estou bem. Obrigado!",
+            "audio": "I'm fine, too. Thank you!"
           }
         ]
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 3,
         "itens": [
           {
-            "ru": "Hi! I'm Lucas, and I'm here on business.",
-            "translit": "",
-            "pt": "Olá! Sou o Lucas e estou aqui a trabalho.",
+            "ru": "what",
+            "translit": "uót",
+            "pt": "o que, qual",
             "en": "",
-            "audio": "Hi! I'm Lucas, and I'm here on business."
+            "audio": "what"
           },
           {
-            "ru": "Where are you from originally?",
-            "translit": "",
-            "pt": "De onde você é originalmente?",
+            "ru": "where",
+            "translit": "uér",
+            "pt": "onde",
             "en": "",
-            "audio": "Where are you from originally?"
+            "audio": "where"
           },
           {
-            "ru": "What do you do? — I'm a product manager.",
-            "translit": "",
-            "pt": "O que você faz? — Sou gerente de produto.",
+            "ru": "how",
+            "translit": "hau",
+            "pt": "como",
             "en": "",
-            "audio": "What do you do? — I'm a product manager."
+            "audio": "how"
           },
           {
-            "ru": "How old is your daughter? — She's seven.",
-            "translit": "",
-            "pt": "Quantos anos tem sua filha? — Ela tem sete.",
+            "ru": "who",
+            "translit": "huu",
+            "pt": "quem",
             "en": "",
-            "audio": "How old is your daughter? — She's seven."
+            "audio": "who"
           },
           {
-            "ru": "Are you hungry, or just thirsty?",
-            "translit": "",
-            "pt": "Você está com fome ou só com sede?",
+            "ru": "my",
+            "translit": "mai",
+            "pt": "meu, minha",
             "en": "",
-            "audio": "Are you hungry, or just thirsty?"
+            "audio": "my"
           },
           {
-            "ru": "Sorry, I'm in a hurry right now!",
-            "translit": "",
-            "pt": "Desculpe, estou com pressa agora mesmo!",
+            "ru": "your",
+            "translit": "iór",
+            "pt": "seu, sua (de você)",
             "en": "",
-            "audio": "Sorry, I'm in a hurry right now!"
+            "audio": "your"
           },
           {
-            "ru": "It's really cold outside today, isn't it?",
-            "translit": "",
-            "pt": "Está bem frio lá fora hoje, não está?",
+            "ru": "name",
+            "translit": "nêim",
+            "pt": "nome",
             "en": "",
-            "audio": "It's really cold outside today, isn't it?"
+            "audio": "name"
           },
           {
-            "ru": "You're right! The Wi-Fi is really fast here.",
-            "translit": "",
-            "pt": "Você tem razão! O Wi-Fi é muito rápido aqui.",
+            "ru": "friend",
+            "translit": "frénd",
+            "pt": "amigo, amiga",
             "en": "",
-            "audio": "You're right! The Wi-Fi is really fast here."
+            "audio": "friend"
+          },
+          {
+            "ru": "from",
+            "translit": "frâm",
+            "pt": "de (origem)",
+            "en": "",
+            "audio": "from"
+          },
+          {
+            "ru": "fine",
+            "translit": "fáin",
+            "pt": "bem",
+            "en": "",
+            "audio": "fine"
+          },
+          {
+            "ru": "Nice to meet you",
+            "translit": "náis tu miit iú",
+            "pt": "prazer em conhecer você",
+            "en": "",
+            "audio": "Nice to meet you"
+          },
+          {
+            "ru": "Canada",
+            "translit": "kénada",
+            "pt": "Canadá",
+            "en": "",
+            "audio": "Canada"
+          },
+          {
+            "ru": "Brazil",
+            "translit": "brazíl",
+            "pt": "Brasil",
+            "en": "",
+            "audio": "Brazil"
           }
         ]
       },
       {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Perguntas de sim ou não e respostas curtas",
+        "explicacao": "PASSO 1: para perguntar «sim ou não», o verbo sobe para o começo. «You are tired» vira «Are you tired?». «He is a doctor» vira «Is he a doctor?». PASSO 2: em português basta mudar a entonação. Em inglês, a ordem das palavras muda. PASSO 3: responda com uma resposta curta. «Yes, I am.» ou «No, I'm not.». «Yes, he is.» ou «No, he isn't.». PASSO 4: na resposta com «yes», não se contrai. Diga «Yes, I am». Nunca «Yes, I'm». O verbo fica no fim da frase e é forte. PASSO 5: na resposta com «no», pode contrair: «No, I'm not». «No, they aren't».",
+        "comparacao": "em português basta mudar a entonação, como em «você está cansado?». Em inglês, a ordem das palavras muda: o verbo sobe para o começo.",
+        "exemplos": [
+          {
+            "ru": "Are you tired?",
+            "pt": "Você está cansado?"
+          },
+          {
+            "ru": "Yes, I am.",
+            "pt": "Sim, estou."
+          },
+          {
+            "ru": "No, I'm not.",
+            "pt": "Não, não estou."
+          },
+          {
+            "ru": "Is he a doctor?",
+            "pt": "Ele é médico?"
+          },
+          {
+            "ru": "Yes, he is.",
+            "pt": "Sim, é."
+          },
+          {
+            "ru": "Are they students?",
+            "pt": "Eles são estudantes?"
+          },
+          {
+            "ru": "No, they aren't.",
+            "pt": "Não, não são."
+          }
+        ],
+        "tabela": [
+          {
+            "pergunta": "Are you tired?",
+            "sim": "Yes, I am.",
+            "nao": "No, I'm not."
+          },
+          {
+            "pergunta": "Is he a doctor?",
+            "sim": "Yes, he is.",
+            "nao": "No, he isn't."
+          },
+          {
+            "pergunta": "Is she here?",
+            "sim": "Yes, she is.",
+            "nao": "No, she isn't."
+          },
+          {
+            "pergunta": "Are they students?",
+            "sim": "Yes, they are.",
+            "nao": "No, they aren't."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Yes, I'm.",
+            "certo": "Yes, I am.",
+            "motivo": "A resposta curta com «yes» não se contrai."
+          },
+          {
+            "errado": "You are tired?",
+            "certo": "Are you tired?",
+            "motivo": "A forma de pergunta inverte o verbo e o sujeito."
+          },
+          {
+            "errado": "Yes, he's.",
+            "certo": "Yes, he is.",
+            "motivo": "Com «yes», o verbo fica inteiro no fim da frase."
+          }
+        ],
+        "tag": "Perguntas"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Perguntas com What, Where, How e Who",
+        "explicacao": "PASSO 1: a palavra interrogativa vem primeiro. Depois vem o verbo. Depois, o sujeito. PASSO 2: «what» quer dizer o que ou qual. «What is your name?» quer dizer qual é o seu nome. PASSO 3: «where» quer dizer onde. «Where are you from?» quer dizer de onde você é. PASSO 4: «how» quer dizer como. «How are you?» quer dizer como você está. PASSO 5: «who» quer dizer quem. «Who is she?» quer dizer quem é ela. Na fala, «what is» vira «what's», e «where is» vira «where's». Cultura: «How are you?» é quase um cumprimento. A resposta normal é «I'm fine, thank you. And you?».",
+        "comparacao": "em português, a palavra interrogativa vem seguida do sujeito, como em «onde você está?». Em inglês, o verbo vem antes do sujeito: «Where are you?».",
+        "exemplos": [
+          {
+            "ru": "What's your name?",
+            "pt": "Qual é o seu nome?"
+          },
+          {
+            "ru": "Where are you from?",
+            "pt": "De onde você é?"
+          },
+          {
+            "ru": "How are you?",
+            "pt": "Como você está?"
+          },
+          {
+            "ru": "Who is she?",
+            "pt": "Quem é ela?"
+          },
+          {
+            "ru": "Where is he?",
+            "pt": "Onde ele está?"
+          },
+          {
+            "ru": "Who are they?",
+            "pt": "Quem são eles?"
+          }
+        ],
+        "tabela": [
+          {
+            "palavra": "What",
+            "ordem": "What + is + your name?",
+            "pt": "Qual é o seu nome?"
+          },
+          {
+            "palavra": "Where",
+            "ordem": "Where + are + you + from?",
+            "pt": "De onde você é?"
+          },
+          {
+            "palavra": "How",
+            "ordem": "How + are + you?",
+            "pt": "Como você está?"
+          },
+          {
+            "palavra": "Who",
+            "ordem": "Who + is + she?",
+            "pt": "Quem é ela?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Where you are from?",
+            "certo": "Where are you from?",
+            "motivo": "Depois da palavra interrogativa, vem o verbo."
+          },
+          {
+            "errado": "What your name is?",
+            "certo": "What is your name?",
+            "motivo": "Verbo antes do sujeito: «is your name»."
+          },
+          {
+            "errado": "How you are?",
+            "certo": "How are you?",
+            "motivo": "O verbo «are» vem antes do «you»."
+          }
+        ],
+        "tag": "Perguntas"
+      },
+      {
         "tipo": "exercicios",
-        "min": 12,
+        "min": 5,
         "itens": [
           {
             "tipo": "multiple-choice",
-            "enunciado": "She ___ from Canada.",
+            "enunciado": "Como transformar «You are tired» em pergunta?",
             "opcoes": [
-              "is",
-              "are",
-              "am"
+              "Are you tired?",
+              "You tired are?",
+              "Do you are tired?"
             ],
-            "gabarito": "is",
-            "explicacao": "she pede «is».",
-            "id": "en-002-g01"
+            "gabarito": "Are you tired?",
+            "explicacao": "Na pergunta com «to be», o verbo sobe para antes do sujeito.",
+            "id": "en-002-e01"
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "She is ___ architect.",
+            "enunciado": "Qual é a resposta curta certa, com «sim», para «Is he a doctor?»",
             "opcoes": [
-              "an",
-              "a"
+              "Yes, he is.",
+              "Yes, he's.",
+              "Yes, is he."
             ],
-            "gabarito": "an",
-            "explicacao": "architect começa com som de vogal.",
-            "id": "en-002-g02"
+            "gabarito": "Yes, he is.",
+            "explicacao": "A resposta curta com «yes» não se contrai e repete o sujeito.",
+            "id": "en-002-e02"
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "My brother is studying at ___ university.",
+            "enunciado": "O que quer dizer «Where are you from?»",
             "opcoes": [
-              "a",
-              "an"
+              "De onde você é?",
+              "Como você está?",
+              "Quem é você?"
             ],
-            "gabarito": "a",
-            "explicacao": "university começa com o som consonantal «iu».",
-            "id": "en-002-g03"
+            "gabarito": "De onde você é?",
+            "explicacao": "«Where» é onde, e «from» indica a origem.",
+            "id": "en-002-e03"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "— ___ thirty years old? — No, I'm not. I'm twenty-eight!",
+            "tipo": "fill-gap",
+            "enunciado": "___ is your name? (qual é o seu nome?)",
             "opcoes": [
-              "Are you",
-              "Have you"
+              "What",
+              "Where",
+              "Who"
             ],
-            "gabarito": "Are you",
-            "explicacao": "idade usa to be, nunca have.",
-            "id": "en-002-g04"
+            "gabarito": "What",
+            "explicacao": "«What» pergunta o que ou qual. Para nome, use «what».",
+            "id": "en-002-e04"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "— Is the hotel near the subway? — Yes, ___!",
+            "tipo": "fill-gap",
+            "enunciado": "___ are you from? (de onde você é?)",
             "opcoes": [
-              "it is",
-              "it's"
+              "Where",
+              "What",
+              "How"
             ],
-            "gabarito": "it is",
-            "explicacao": "a resposta curta afirmativa nunca contrai.",
-            "id": "en-002-g05"
+            "gabarito": "Where",
+            "explicacao": "«Where» pergunta o lugar, e «from» dá a origem.",
+            "id": "en-002-e05"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "___ very hot in Rio today.",
+            "tipo": "fill-gap",
+            "enunciado": "— Are they students? — No, they ___.",
             "opcoes": [
-              "It's",
-              "Is"
+              "aren't",
+              "isn't",
+              "amn't"
             ],
-            "gabarito": "It's",
-            "explicacao": "clima exige o sujeito «It».",
-            "id": "en-002-g06"
+            "gabarito": "aren't",
+            "explicacao": "Com «they», o verbo é «are». A forma negativa é «aren't».",
+            "id": "en-002-e06"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "My meeting is in ___ hour.",
-            "opcoes": [
-              "an",
-              "a"
-            ],
-            "gabarito": "an",
-            "explicacao": "hour tem h mudo: som de vogal.",
-            "id": "en-002-g07"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "___ your parents at home right now?",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Are you a student?»",
             "opcoes": [
               "Are",
-              "Is"
+              "you",
+              "a",
+              "student"
             ],
-            "gabarito": "Are",
-            "explicacao": "your parents = they, plural.",
-            "id": "en-002-g08"
+            "gabarito": "Are you a student?",
+            "explicacao": "Pergunta de sim ou não: o verbo vem primeiro, depois o sujeito.",
+            "id": "en-002-e07"
           },
           {
-            "tipo": "fill-gap",
-            "enunciado": "Hi! My name ___ Rafael, and I ___ from Brazil. (is / 'm)",
-            "respostaEsperada": "is 'm",
-            "explicacao": "Brasil, no singular, não leva «the».",
-            "id": "en-002-g09"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "— ___ you hungry? — No, I ___ not, thanks.",
-            "respostaEsperada": "Are am",
-            "explicacao": "sem contração na resposta com «am not».",
-            "id": "en-002-g10"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Where ___ the keys? They ___ on the table.",
-            "respostaEsperada": "are are",
-            "explicacao": "keys = they, plural.",
-            "id": "en-002-g11"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___ cold in this room! (use a contração)",
-            "respostaEsperada": "It's",
-            "explicacao": "sujeito neutro «It».",
-            "id": "en-002-g12"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "— Is Lucas in Toronto on vacation? — No, he ___.",
-            "respostaEsperada": "isn't",
-            "explicacao": "resposta curta negativa.",
-            "id": "en-002-g13"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "— Are your coworkers ready for the call? — Yes, they ___.",
-            "respostaEsperada": "are",
-            "explicacao": "a resposta afirmativa não contrai.",
-            "id": "en-002-g14"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Where are you from",
+            "respostaEsperada": "Where are you from",
+            "explicacao": "Escreva: where are you from. A ordem é palavra interrogativa, verbo e sujeito.",
+            "id": "en-002-e08"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 1,
-        "enunciado": "Faça as perguntas em voz alta e responda por você: «What's your name? Where are you from? Are you a student? Are you tired?»"
+        "min": 3,
+        "enunciado": "Faça as perguntas em voz alta e responda por você: «What's your name? Where are you from? Are you a student? How are you?»",
+        "exemplo": "I'm Felipe. I'm from Brazil. Yes, I am. I'm fine, thank you."
       },
       {
         "tipo": "revisao",
-        "min": 1,
-        "enunciado": "Transforme em negativa: «I am happy. She is here. They are students.»"
+        "min": 3,
+        "enunciado": "Transforme em negativa: «I am happy. She is here. They are students.» Depois transforme em pergunta: «You are tired. He is busy.»"
       }
     ]
   },

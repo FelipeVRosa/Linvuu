@@ -69,6 +69,10 @@ for (const id of idiomas) {
     }
   }
 
+  // 2b) narração das explicações grátis (scripts/narracao-csv.ts): sempre pública
+  const csvNarr = path.join(raiz, 'content', 'audio', `${id}-narracao-gravar.csv`);
+  if (fs.existsSync(csvNarr)) for (const r of lerCsv(csvNarr)) { doCsv.set(r.arquivo, r.texto); publicos.add(r.arquivo); }
+
   // 3) arquivos em disco fora do CSV: públicos só se o nome é o hash exato de um texto gratuito (não há outro texto para comparar);
   //    os demais ficam privados (padrão fechado).
   const emDisco = fs.readdirSync(pasta).filter((f) => f.endsWith('.mp3'));
@@ -78,6 +82,7 @@ for (const id of idiomas) {
     for (const t of livres) if (hashTexto(t) + '.mp3' === f) { publicos.add(f); break; }
   }
 
+  for (const f of [...publicos]) if (!emDisco.includes(f)) publicos.delete(f); // só o que existe em disco
   const privados = emDisco.filter((f) => !publicos.has(f));
   totais.publicos += publicos.size;
   totais.privados += privados.length;

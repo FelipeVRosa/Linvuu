@@ -20,124 +20,58 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "intro",
-        "min": 1,
-        "texto": "Meta da aula. Ao final das quatro sessões, você se apresenta, diz de onde é e onde mora, escolhe entre du e Sie sem medo e conjuga qualquer verbo regular no presente."
-      },
-      {
         "tipo": "dialogo",
-        "min": 4,
-        "titulo": "Na cozinha do albergue",
-        "contexto": "Camila encontra Tom na cozinha. Depois, o gerente passa para ver se está tudo bem.",
+        "min": 5,
+        "titulo": "Hallo! Wie heißt du? / Oi! Como você se chama?",
+        "contexto": "Lea e Paul se conhecem na fila de um curso de idiomas.",
         "linhas": [
           {
-            "personagem": "Tom",
-            "ru": "— Hallo! Ich bin Tom. Wie heißt du?",
-            "pt": "— Oi! Eu sou o Tom. Como você se chama?",
-            "audio": "Hallo! Ich bin Tom. Wie heißt du?"
+            "personagem": "Lea",
+            "ru": "— Hallo! Ich heiße Lea. Wie heißt du?",
+            "pt": "— Oi! Eu me chamo Lea. Como você se chama?",
+            "audio": "Hallo! Ich heiße Lea. Wie heißt du?"
           },
           {
-            "personagem": "Camila",
-            "ru": "— Ich heiße Camila. Woher kommst du?",
-            "pt": "— Eu me chamo Camila. De onde você é?",
-            "audio": "Ich heiße Camila. Woher kommst du?"
+            "personagem": "Paul",
+            "ru": "— Hallo, Lea! Ich heiße Paul.",
+            "pt": "— Oi, Lea! Eu me chamo Paul.",
+            "audio": "Hallo, Lea! Ich heiße Paul."
           },
           {
-            "personagem": "Tom",
-            "ru": "— Ich komme aus Irland, aber ich wohne jetzt in München. Und du?",
-            "pt": "— Sou da Irlanda, mas agora moro em Munique. E você?",
-            "audio": "Ich komme aus Irland, aber ich wohne jetzt in München. Und du?"
+            "personagem": "Lea",
+            "ru": "— Woher kommst du, Paul?",
+            "pt": "— De onde você vem, Paul?",
+            "audio": "Woher kommst du, Paul?"
           },
           {
-            "personagem": "Camila",
-            "ru": "— Ich komme aus Brasilien. Ich lerne hier Deutsch.",
-            "pt": "— Sou do Brasil. Estou aprendendo alemão aqui.",
-            "audio": "Ich komme aus Brasilien. Ich lerne hier Deutsch."
+            "personagem": "Paul",
+            "ru": "— Ich komme aus Brasilien. Und du?",
+            "pt": "— Venho do Brasil. E você?",
+            "audio": "Ich komme aus Brasilien. Und du?"
           },
           {
-            "personagem": "Tom",
-            "ru": "— Toll! Hast du Hunger? Kochen wir zusammen?",
-            "pt": "— Que legal! Você está com fome? Vamos cozinhar juntos?",
-            "audio": "Toll! Hast du Hunger? Kochen wir zusammen?"
+            "personagem": "Lea",
+            "ru": "— Ich komme aus Hamburg.",
+            "pt": "— Venho de Hamburgo.",
+            "audio": "Ich komme aus Hamburg."
           },
           {
-            "personagem": "Camila",
-            "ru": "— Ja, gern!",
-            "pt": "— Vamos, com prazer!",
-            "audio": "Ja, gern!"
+            "personagem": "Paul",
+            "ru": "— Freut mich, Lea!",
+            "pt": "— Muito prazer, Lea!",
+            "audio": "Freut mich, Lea!"
           },
           {
-            "personagem": "Herr Weber",
-            "ru": "— Guten Abend, Frau Souza. Wohnen Sie gern hier?",
-            "pt": "— Boa noite, senhora Souza. A senhora gosta de morar aqui?",
-            "audio": "Guten Abend, Frau Souza. Wohnen Sie gern hier?"
-          },
-          {
-            "personagem": "Camila",
-            "ru": "— Ja, sehr gern.",
-            "pt": "— Sim, muito.",
-            "audio": "Ja, sehr gern."
+            "personagem": "Lea",
+            "ru": "— Freut mich auch, Paul!",
+            "pt": "— Muito prazer também, Paul!",
+            "audio": "Freut mich auch, Paul!"
           }
         ]
       },
       {
-        "tipo": "gramatica",
-        "min": 5,
-        "titulo": "A armadilha do português",
-        "explicacao": "PASSO 1: Sie com S maiúsculo é “você” formal. sie com s minúsculo é “ela” ou “eles”. Quem decide é o verbo e o contexto.",
-        "comparacao": "O português deixa quatro portas abertas que o alemão mantém fechadas.",
-        "tabela": [
-          {
-            "portugues": "ich",
-            "ingles": "eu",
-            "evite": "falando de si"
-          },
-          {
-            "portugues": "du",
-            "ingles": "tu, você informal",
-            "evite": "uma pessoa próxima"
-          },
-          {
-            "portugues": "er",
-            "ingles": "ele",
-            "evite": "um homem, ou coisa masculina"
-          },
-          {
-            "portugues": "sie",
-            "ingles": "ela",
-            "evite": "uma mulher, ou coisa feminina"
-          },
-          {
-            "portugues": "es",
-            "ingles": "ele, ela, “isso”",
-            "evite": "coisa neutra, clima"
-          },
-          {
-            "portugues": "wir",
-            "ingles": "nós",
-            "evite": "você e outros"
-          },
-          {
-            "portugues": "ihr",
-            "ingles": "vocês informal",
-            "evite": "várias pessoas próximas"
-          },
-          {
-            "portugues": "sie",
-            "ingles": "eles, elas",
-            "evite": "várias pessoas ou coisas"
-          },
-          {
-            "portugues": "Sie",
-            "ingles": "você, vocês formal",
-            "evite": "estranho, chefe, cliente"
-          }
-        ],
-        "tag": "Armadilha"
-      },
-      {
         "tipo": "palavras",
-        "min": 7,
+        "min": 4,
         "itens": [
           {
             "ru": "heißen",
@@ -208,6 +142,27 @@
             "pt": "e",
             "en": "and",
             "audio": "und"
+          },
+          {
+            "ru": "ja",
+            "translit": "ia",
+            "pt": "sim",
+            "en": "yes",
+            "audio": "ja"
+          },
+          {
+            "ru": "nein",
+            "translit": "nain",
+            "pt": "não",
+            "en": "no",
+            "audio": "nein"
+          },
+          {
+            "ru": "Freut mich",
+            "translit": "fróit miç",
+            "pt": "muito prazer",
+            "en": "nice to meet you",
+            "audio": "Freut mich"
           }
         ]
       },
@@ -215,48 +170,246 @@
         "tipo": "gramatica",
         "min": 7,
         "titulo": "A ordem da frase e as primeiras perguntas",
-        "explicacao": "O verbo conjugado fica sempre na SEGUNDA posição da frase afirmativa e das perguntas com palavra interrogativa: «Ich heiße Anna.», «Wie heißt du?», «Woher kommst du?». A pergunta de sim ou não começa pelo verbo: «Heißt du Anna?». Os pronomes pessoais são: ich, du, er, sie, es, wir, ihr, sie e Sie (formal).",
-        "comparacao": "em português o verbo também vem logo depois do sujeito, mas o alemão fixa o verbo na segunda posição mesmo quando outro termo abre a frase.",
-        "tabela": [
+        "explicacao": "PASSO 1: ouça «Ich heiße Lea.» e depois «Wie heißt du?». Para dizer o nome, o verbo é «heißen», que quer dizer chamar-se. PASSO 2: em alemão, o verbo conjugado fica sempre na SEGUNDA posição da frase. Em «Ich heiße Lea», o «ich» ocupa a primeira posição, e «heiße» ocupa a segunda. PASSO 3: nas perguntas com palavra interrogativa, essa palavra ocupa o primeiro lugar. Exemplos: «wie», que quer dizer como e se lê «vi», e «woher», que quer dizer de onde e se lê «vô-hér». O verbo continua em segundo: «Wie heißt du?» e «Woher kommst du?». PASSO 4: na pergunta de sim ou não, o verbo vai para o começo: «Heißt du Lea?». Responda «Ja» ou «Nein». PASSO 5: o verbo muda de final conforme a pessoa. Com «ich», termina em «e»: «ich heiße», «ich komme». Com «du», termina em «st»: «du kommst». Em «heißen», o «ß» já faz o som de «s». Por isso se acrescenta só o «t»: «du heißt». PASSO 6: não esqueça o pronome. Em português dizemos só «Venho do Brasil». Em alemão o «ich» é obrigatório: «Ich komme aus Brasilien». PASSO 7: um aviso. Nas palavras «der Name» e «der Vorname», o «der» é um artigo. Você aprende os artigos na aula 3. Por enquanto, repita o «der» junto com a palavra.",
+        "comparacao": "em português o verbo também vem logo depois do sujeito, mas dá para dizer «Venho do Brasil» sem o «eu» e mudar a ordem à vontade. O alemão exige o pronome e fixa o verbo na segunda posição, mesmo quando outra palavra abre a frase.",
+        "tabelas": [
           {
-            "pergunta": "Wie heißt du?",
-            "resposta": "Ich heiße Anna.",
-            "pt": "Como você se chama? Eu me chamo Anna."
+            "titulo": "heißen, chamar-se",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "forma": "heiße",
+                "exemplo": "Ich heiße Lea."
+              },
+              {
+                "pronome": "du",
+                "forma": "heißt",
+                "exemplo": "Wie heißt du?"
+              },
+              {
+                "pronome": "er / sie / es",
+                "forma": "heißt",
+                "exemplo": "Er heißt Paul."
+              },
+              {
+                "pronome": "wir",
+                "forma": "heißen",
+                "exemplo": "Wir heißen Müller."
+              },
+              {
+                "pronome": "ihr",
+                "forma": "heißt",
+                "exemplo": "Wie heißt ihr?"
+              },
+              {
+                "pronome": "sie / Sie",
+                "forma": "heißen",
+                "exemplo": "Wie heißen Sie?"
+              }
+            ]
           },
           {
-            "pergunta": "Wie heißen Sie?",
-            "resposta": "Ich heiße Müller.",
-            "pt": "Como o senhor se chama? Eu me chamo Müller."
+            "titulo": "kommen, vir",
+            "linhas": [
+              {
+                "pronome": "ich",
+                "forma": "komme",
+                "exemplo": "Ich komme aus Brasilien."
+              },
+              {
+                "pronome": "du",
+                "forma": "kommst",
+                "exemplo": "Woher kommst du?"
+              },
+              {
+                "pronome": "er / sie / es",
+                "forma": "kommt",
+                "exemplo": "Sie kommt aus Hamburg."
+              },
+              {
+                "pronome": "wir",
+                "forma": "kommen",
+                "exemplo": "Wir kommen aus Brasilien."
+              },
+              {
+                "pronome": "ihr",
+                "forma": "kommt",
+                "exemplo": "Woher kommt ihr?"
+              },
+              {
+                "pronome": "sie / Sie",
+                "forma": "kommen",
+                "exemplo": "Woher kommen Sie?"
+              }
+            ]
           },
           {
-            "pergunta": "Woher kommst du?",
-            "resposta": "Ich komme aus Brasilien.",
-            "pt": "De onde você vem? Venho do Brasil."
-          },
-          {
-            "pergunta": "Wer ist das?",
-            "resposta": "Das ist Ben.",
-            "pt": "Quem é este? É o Ben."
+            "titulo": "Perguntas e respostas",
+            "linhas": [
+              {
+                "pergunta": "Wie heißt du?",
+                "resposta": "Ich heiße Anna.",
+                "pt": "Como você se chama? Eu me chamo Anna."
+              },
+              {
+                "pergunta": "Wie heißen Sie?",
+                "resposta": "Ich heiße Müller.",
+                "pt": "Como o senhor se chama? Eu me chamo Müller."
+              },
+              {
+                "pergunta": "Woher kommst du?",
+                "resposta": "Ich komme aus Brasilien.",
+                "pt": "De onde você vem? Venho do Brasil."
+              },
+              {
+                "pergunta": "Woher kommen Sie?",
+                "resposta": "Ich komme aus Brasilien.",
+                "pt": "De onde o senhor vem? Venho do Brasil."
+              }
+            ]
           }
         ],
         "erros": [
           {
             "errado": "Ich Anna heiße.",
             "certo": "Ich heiße Anna.",
-            "motivo": "O verbo conjugado fica na segunda posição."
+            "motivo": "O verbo conjugado fica na segunda posição, logo depois do «ich»."
+          },
+          {
+            "errado": "Wie du heißt?",
+            "certo": "Wie heißt du?",
+            "motivo": "Na pergunta com «wie», o verbo vem logo depois da palavra de pergunta."
+          },
+          {
+            "errado": "Du kommen aus Brasilien.",
+            "certo": "Du kommst aus Brasilien.",
+            "motivo": "Com «du», o verbo termina em «st»."
+          },
+          {
+            "errado": "Heiße Anna.",
+            "certo": "Ich heiße Anna.",
+            "motivo": "O pronome «ich» não pode sumir, como pode em português."
           }
         ],
         "tag": "Frase"
       },
       {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Wie heißt du?",
+            "opcoes": [
+              "Wie heißt du?",
+              "Woher kommst du?",
+              "Wie geht’s?"
+            ],
+            "gabarito": "Wie heißt du?",
+            "explicacao": "Você ouve «vi haist du»: a pergunta pelo nome usa o verbo «heißen». «Woher kommst du?» pergunta a origem, e «Wie geht’s?» pergunta como a pessoa está.",
+            "id": "de-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Ich komme aus Brasilien.",
+            "opcoes": [
+              "Ich komme aus Brasilien.",
+              "Ich heiße Paul.",
+              "Ich komme aus Hamburg."
+            ],
+            "gabarito": "Ich komme aus Brasilien.",
+            "explicacao": "A frase tem o verbo «komme» e termina com «Brasilien». «Ich heiße Paul» diz o nome, e «Hamburg» é outra cidade.",
+            "id": "de-002-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich heiße Lea.",
+            "respostaEsperada": "Ich heiße Lea.",
+            "explicacao": "Escreva «heiße» com «ß», que soa como «ss». O verbo vem logo depois do «ich», na segunda posição.",
+            "id": "de-002-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Guten Morgen, Lea!",
+            "respostaEsperada": "Guten Morgen, Lea!",
+            "explicacao": "Retomando a aula 1: «Guten Morgen» é a saudação da manhã, e o nome da pessoa vem depois, separado por vírgula.",
+            "id": "de-002-e04"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ Anna. (heißen)",
+            "opcoes": [
+              "heiße",
+              "heißt",
+              "heißen"
+            ],
+            "gabarito": "heiße",
+            "explicacao": "Com «ich», o verbo termina em «e»: «ich heiße». A forma «heißt» é de «du», «er» ou «ihr».",
+            "id": "de-002-e05"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ aus Brasilien. (kommen)",
+            "opcoes": [
+              "kommst",
+              "komme",
+              "kommt"
+            ],
+            "gabarito": "kommst",
+            "explicacao": "Com «du», o verbo termina em «st»: «du kommst». O final «e» é de «ich», e o final «t» é de «er».",
+            "id": "de-002-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Ich heiße Paul.",
+              "Ich Paul heiße.",
+              "Heiße ich Paul."
+            ],
+            "gabarito": "Ich heiße Paul.",
+            "explicacao": "O verbo conjugado fica na segunda posição, logo depois do «ich». A ordem «Heiße ich Paul?» seria uma pergunta de sim ou não.",
+            "id": "de-002-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «De onde você vem?»",
+            "opcoes": [
+              "kommst",
+              "du",
+              "Woher"
+            ],
+            "gabarito": "Woher kommst du?",
+            "explicacao": "A palavra de pergunta «Woher» vem primeiro, o verbo «kommst» fica em segundo e o «du» vem depois.",
+            "id": "de-002-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Você se chama Lea?»",
+            "opcoes": [
+              "Lea",
+              "du",
+              "Heißt"
+            ],
+            "gabarito": "Heißt du Lea?",
+            "explicacao": "Na pergunta de sim ou não, o verbo abre a frase: «Heißt», depois «du», depois o nome.",
+            "id": "de-002-e09"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 3,
-        "enunciado": "Diga: «Ich heiße … Ich komme aus Brasilien.» Depois pergunte: «Wie heißt du? Woher kommst du?»"
+        "min": 4,
+        "enunciado": "Diga em voz alta: «Hallo! Ich heiße … Ich komme aus Brasilien. Freut mich!». Depois faça as duas perguntas a uma pessoa de verdade ou imaginária: «Wie heißt du? Woher kommst du?». Se puder, grave-se por 20 segundos e ouça."
       },
       {
         "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Leia em voz alta as saudações da aula anterior e as combinações «ei, ie, sch, ch»."
+        "min": 2,
+        "enunciado": "Ouça de novo as saudações da aula anterior e repita: «Hallo», «Guten Morgen», «Guten Tag», «Guten Abend», «Wie geht’s?» e «Tschüs». Depois leia em voz alta «ich», «Schule» e «Buch»."
       }
     ]
   },

@@ -20,8 +20,64 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 6,
+        "titulo": "À la gare / Na estação",
+        "contexto": "Camille encontra Lucas na estação. Ouça: eles perguntam e negam.",
+        "linhas": [
+          {
+            "personagem": "Camille",
+            "ru": "— Bonjour, Lucas ! Tu es fatigué ?",
+            "pt": "— Bom dia, Lucas! Você está cansado?",
+            "audio": "Bonjour, Lucas ! Tu es fatigué ?"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Oui, un peu. Et toi, tu es contente ?",
+            "pt": "— Sim, um pouco. E você, está contente?",
+            "audio": "Oui, un peu. Et toi, tu es contente ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Oui, je suis très contente. Nous sommes en vacances !",
+            "pt": "— Sim, estou muito contente. Estamos de férias!",
+            "audio": "Oui, je suis très contente. Nous sommes en vacances !"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Est-ce que Léa est ici aussi ?",
+            "pt": "— A Léa também está aqui?",
+            "audio": "Est-ce que Léa est ici aussi ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Non, elle n'est pas ici. Elle est à Paris.",
+            "pt": "— Não, ela não está aqui. Está em Paris.",
+            "audio": "Non, elle n'est pas ici. Elle est à Paris."
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Elle est fatiguée ?",
+            "pt": "— Ela está cansada?",
+            "audio": "Elle est fatiguée ?"
+          },
+          {
+            "personagem": "Camille",
+            "ru": "— Non, elle n'est pas fatiguée. Elle est heureuse !",
+            "pt": "— Não, ela não está cansada. Está feliz!",
+            "audio": "Non, elle n'est pas fatiguée. Elle est heureuse !"
+          },
+          {
+            "personagem": "Lucas",
+            "ru": "— Ah, d'accord. On est contents, alors !",
+            "pt": "— Ah, certo. Estamos contentes, então!",
+            "audio": "Ah, d'accord. On est contents, alors !"
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "oui",
@@ -52,20 +108,49 @@
             "audio": "Est-ce que… ?"
           },
           {
-            "ru": "Qui est-ce ?",
-            "translit": "ki és",
-            "pt": "quem é?",
+            "ru": "d'accord",
+            "translit": "dakór",
+            "pt": "certo, de acordo",
             "en": "",
-            "audio": "Qui est-ce ?"
+            "audio": "d'accord"
+          },
+          {
+            "ru": "en vacances",
+            "translit": "ã vakãs",
+            "pt": "de férias",
+            "en": "",
+            "audio": "en vacances"
           }
         ]
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 9,
         "titulo": "Negar com ne… pas e fazer perguntas",
-        "explicacao": "PASSO 1: a negação francesa tem duas partes que envolvem o verbo: «ne» antes e «pas» depois. «Je suis fatigué» → «Je ne suis pas fatigué». PASSO 2: diante de vogal, «ne» vira «n'»: «Il n'est pas ici». PASSO 3: na fala informal, o «ne» some e só se ouve «pas»: «Je suis pas fatigué». Por escrito, use as duas partes. PASSO 4: para perguntar sim ou não, o jeito mais simples é subir a voz no fim: «Tu es fatigué ?». PASSO 5: ou antecipe «est-ce que»: «Est-ce que tu es fatigué ?». PASSO 6: respostas curtas: «Oui, je suis fatigué.» «Non, je ne suis pas fatigué.»",
-        "comparacao": "em português basta «não» antes do verbo. Em francês, a negação envolve o verbo («ne… pas»), e só «pas» costuma aparecer na fala. Para perguntar, o português também sobe a voz; o francês acrescenta «est-ce que».",
+        "explicacao": "Ouça primeiro: «Je suis fatigué» e «Je ne suis pas fatigué». PASSO 1: a negação francesa tem duas partes que envolvem o verbo: «ne» antes e «pas» depois. «Je suis fatigué» vira «Je ne suis pas fatigué». PASSO 2: diante de vogal, «ne» perde o «e»: «Il n'est pas ici». PASSO 3: na fala informal, o «ne» some e só se ouve «pas»: «Je suis pas fatigué». Por escrito, use as duas partes. PASSO 4: para perguntar sim ou não, o jeito mais simples é subir a voz no fim: «Tu es fatigué ?». PASSO 5: ou coloque «est-ce que» no começo: «Est-ce que tu es fatigué ?». Diante de vogal, «que» vira «qu'»: «Est-ce qu'il est ici ?». PASSO 6: respostas curtas: «Oui, je suis fatigué.» «Non, je ne suis pas fatigué.»",
+        "comparacao": "em português basta «não» antes do verbo. Em francês, a negação envolve o verbo, com «ne… pas», e na fala só «pas» costuma aparecer. Para perguntar, o português também sobe a voz; o francês pode ainda acrescentar «est-ce que».",
+        "exemplos": [
+          {
+            "ru": "Je ne suis pas fatigué.",
+            "pt": "Eu não estou cansado."
+          },
+          {
+            "ru": "Il n'est pas ici.",
+            "pt": "Ele não está aqui."
+          },
+          {
+            "ru": "Tu es content ?",
+            "pt": "Você está contente?"
+          },
+          {
+            "ru": "Est-ce que tu es content ?",
+            "pt": "Você está contente?"
+          },
+          {
+            "ru": "Est-ce qu'il est ici ?",
+            "pt": "Ele está aqui?"
+          }
+        ],
         "tabela": [
           {
             "tipo": "afirmativa",
@@ -113,58 +198,103 @@
         "tag": "Negação e interrogação"
       },
       {
-        "tipo": "dialogo",
-        "min": 8,
-        "titulo": "À la gare / Na estação",
-        "contexto": "Camille encontra Lucas na estação.",
-        "linhas": [
+        "tipo": "exercicios",
+        "min": 4,
+        "itens": [
           {
-            "personagem": "Camille",
-            "ru": "— Bonjour, Lucas ! Tu es fatigué ?",
-            "pt": "— Bom dia, Lucas! Você está cansado?",
-            "audio": "Bonjour, Lucas ! Tu es fatigué ?"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Je ne suis pas content",
+            "opcoes": [
+              "Je ne suis pas content",
+              "Je suis content",
+              "Tu n'es pas content"
+            ],
+            "gabarito": "Je ne suis pas content",
+            "explicacao": "Ouça «ne… pas» em volta do verbo e o pronome «je».",
+            "id": "fr-002-e06"
           },
           {
-            "personagem": "Lucas",
-            "ru": "— Oui, un peu. Et toi, tu es contente ?",
-            "pt": "— Sim, um pouco. E você, está contente?",
-            "audio": "Oui, un peu. Et toi, tu es contente ?"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Est-ce que tu es fatigué",
+            "opcoes": [
+              "Est-ce que tu es fatigué",
+              "Tu es fatigué",
+              "Tu n'es pas fatigué"
+            ],
+            "gabarito": "Est-ce que tu es fatigué",
+            "explicacao": "A pergunta começa com «est-ce que» (ésk(e)).",
+            "id": "fr-002-e07"
           },
           {
-            "personagem": "Camille",
-            "ru": "— Oui, je suis très contente. Nous sommes en vacances !",
-            "pt": "— Sim, estou muito contente. Estamos de férias!",
-            "audio": "Oui, je suis très contente. Nous sommes en vacances !"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Il n'est pas ici",
+            "respostaEsperada": "Il n'est pas ici",
+            "explicacao": "Escreva: Il n'est pas ici. «Ne» vira «n'» diante de «est».",
+            "id": "fr-002-e08"
           },
           {
-            "personagem": "Lucas",
-            "ru": "— Est-ce que Léa est ici aussi ?",
-            "pt": "— A Léa também está aqui?",
-            "audio": "Est-ce que Léa est ici aussi ?"
+            "tipo": "fill-gap",
+            "enunciado": "Elle ___ est pas triste. (não)",
+            "opcoes": [
+              "n'",
+              "ne",
+              "na"
+            ],
+            "gabarito": "n'",
+            "explicacao": "Elisão: «ne» perde o «e» diante de vogal.",
+            "id": "fr-002-e09"
           },
           {
-            "personagem": "Camille",
-            "ru": "— Non, elle n'est pas ici. Elle est à Paris.",
-            "pt": "— Não, ela não está aqui. Está em Paris.",
-            "audio": "Non, elle n'est pas ici. Elle est à Paris."
+            "tipo": "fill-gap",
+            "enunciado": "Est-ce ___ tu es fatigué ? (pergunta)",
+            "opcoes": [
+              "que",
+              "qui",
+              "pas"
+            ],
+            "gabarito": "que",
+            "explicacao": "«Est-ce que» introduz a pergunta de sim ou não.",
+            "id": "fr-002-e10"
           },
           {
-            "personagem": "Lucas",
-            "ru": "— Ah, d'accord. On est contents, alors !",
-            "pt": "— Ah, certo. Estamos contentes, então!",
-            "audio": "Ah, d'accord. On est contents, alors !"
+            "tipo": "multiple-choice",
+            "enunciado": "Na fala informal, o que costuma desaparecer na negação?",
+            "opcoes": [
+              "o «ne»",
+              "o «pas»",
+              "o verbo"
+            ],
+            "gabarito": "o «ne»",
+            "explicacao": "Na fala, ouve-se só «pas»: «Je suis pas fatigué». Por escrito, use sempre os dois.",
+            "id": "fr-002-e11"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Ele não é francês.»",
+            "opcoes": [
+              "Il",
+              "n'est",
+              "pas",
+              "français"
+            ],
+            "gabarito": "Il n'est pas français.",
+            "explicacao": "«Ne… pas» envolve o verbo; «ne» vira «n'» diante de «est».",
+            "id": "fr-002-e12"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Responda em voz alta: «Tu es fatigué ? Tu es français ? Est-ce que tu es à Paris ?» Depois pergunte o mesmo a um amigo imaginário."
+        "min": 4,
+        "enunciado": "Responda em voz alta: «Tu es fatigué ? Tu es français ? Est-ce que tu es à Paris ?» Depois faça as mesmas perguntas a um amigo imaginário e invente a resposta dele, com «Oui» ou «Non, … ne … pas»."
       },
       {
         "tipo": "revisao",
-        "min": 4,
-        "enunciado": "Passe para o feminino: «Il est content. Il est petit. Il est brésilien.»"
+        "min": 3,
+        "enunciado": "Passe para o feminino, em voz alta: «Il est content. Il est petit. Il est brésilien. Il est français.»"
       }
     ]
   },

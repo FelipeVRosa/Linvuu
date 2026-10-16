@@ -20,47 +20,64 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 5,
-        "titulo": "Descubra você mesmo",
-        "explicacao": "PASSO 1: Observe o verbo wohnen (morar) e lernen (aprender) com cada pessoa. Depois preencha as lacunas do final. PASSO 2: Perguntas: PASSO 3: O que sobra do verbo quando você tira o final -en de wohnen? PASSO 4: Quais pessoas usam a mesma forma? PASSO 5: Complete: kommen → ich ____, du ____, er ____.",
-        "tabela": [
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Guten Morgen! / Bom dia!",
+        "contexto": "Numa escola de idiomas em Berlim, a professora recebe um aluno novo. Ela o trata de «Sie». Depois ele fala com uma colega, de «du».",
+        "linhas": [
           {
-            "c1": "ich",
-            "c2": "wohne",
-            "c3": "lerne"
+            "personagem": "Lehrerin",
+            "ru": "— Guten Morgen! Sind Sie Herr Silva?",
+            "pt": "— Bom dia! O senhor é o senhor Silva?",
+            "audio": "Guten Morgen! Sind Sie Herr Silva?"
           },
           {
-            "c1": "du",
-            "c2": "wohnst",
-            "c3": "lernst"
+            "personagem": "Paul",
+            "ru": "— Ja, ich bin Paul Silva. Ich bin aus Brasilien.",
+            "pt": "— Sim, eu sou Paul Silva. Sou do Brasil.",
+            "audio": "Ja, ich bin Paul Silva. Ich bin aus Brasilien."
           },
           {
-            "c1": "er, sie, es",
-            "c2": "wohnt",
-            "c3": "lernt"
+            "personagem": "Lehrerin",
+            "ru": "— Freut mich, Herr Silva! Ich bin Frau Becker.",
+            "pt": "— Muito prazer, senhor Silva! Eu sou a senhora Becker.",
+            "audio": "Freut mich, Herr Silva! Ich bin Frau Becker."
           },
           {
-            "c1": "wir",
-            "c2": "wohnen",
-            "c3": "lernen"
+            "personagem": "Paul",
+            "ru": "— Freut mich auch, Frau Becker!",
+            "pt": "— Muito prazer também, senhora Becker!",
+            "audio": "Freut mich auch, Frau Becker!"
           },
           {
-            "c1": "ihr",
-            "c2": "wohnt",
-            "c3": "lernt"
+            "personagem": "Lea",
+            "ru": "— Hallo! Ich bin Lea. Bist du auch hier?",
+            "pt": "— Oi! Eu sou a Lea. Você também está aqui?",
+            "audio": "Hallo! Ich bin Lea. Bist du auch hier?"
           },
           {
-            "c1": "sie, Sie",
-            "c2": "wohnen",
-            "c3": "lernen"
+            "personagem": "Paul",
+            "ru": "— Ja, ich bin hier. Ich bin ein bisschen müde.",
+            "pt": "— Sim, estou aqui. Estou um pouco cansado.",
+            "audio": "Ja, ich bin hier. Ich bin ein bisschen müde."
+          },
+          {
+            "personagem": "Lea",
+            "ru": "— Ich bin auch müde.",
+            "pt": "— Eu também estou cansada.",
+            "audio": "Ich bin auch müde."
+          },
+          {
+            "personagem": "Paul",
+            "ru": "— Wir sind hier. Wir sind glücklich!",
+            "pt": "— Nós estamos aqui. Estamos felizes!",
+            "audio": "Wir sind hier. Wir sind glücklich!"
           }
-        ],
-        "tag": "Descubra"
+        ]
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "müde",
@@ -103,15 +120,58 @@
             "pt": "não",
             "en": "not",
             "audio": "nicht"
+          },
+          {
+            "ru": "Herr",
+            "translit": "hér",
+            "pt": "senhor",
+            "en": "Mr",
+            "audio": "Herr"
+          },
+          {
+            "ru": "Frau",
+            "translit": "frau",
+            "pt": "senhora",
+            "en": "Mrs",
+            "audio": "Frau"
+          },
+          {
+            "ru": "das ist",
+            "translit": "das ist",
+            "pt": "este é, esta é, isto é",
+            "en": "this is",
+            "audio": "das ist"
           }
         ]
       },
       {
         "tipo": "gramatica",
-        "min": 12,
-        "titulo": "Sein: ser e estar, e o tratamento du, ihr e Sie",
-        "explicacao": "«Sein» é ao mesmo tempo «ser» e «estar»: «Ich bin Brasilianer» (sou brasileiro), «Ich bin müde» (estou cansado). É irregular, e é um dos verbos mais importantes. O tratamento: «du» (você, uma pessoa próxima: amigo, família, criança), «ihr» (vocês, várias pessoas próximas) e «Sie» (o senhor, a senhora, os senhores: formal, para um ou vários desconhecidos), sempre com S maiúsculo. Com «Sie», o verbo fica na 3ª pessoa do plural: «Sie sind».",
-        "comparacao": "o português tem dois verbos («ser» e «estar»). O alemão tem um só, «sein», e o contexto diz qual dos dois se quer dizer.",
+        "min": 7,
+        "titulo": "Sein: ser e estar",
+        "explicacao": "PASSO 1: em português temos dois verbos, «ser» e «estar». Em alemão há um só, «sein», que se lê «zain». PASSO 2: «sein» é irregular e muda muito. Ouça as formas: «ich bin», «du bist», «er, sie, es ist», «wir sind», «ihr seid», «sie sind». Atenção: «sind» lê-se «zint» e «seid» lê-se «zait». PASSO 3: use «sein» para dizer quem você é: «Ich bin Brasilianer» ou «Das ist Lea». PASSO 4: use também para dizer como você está ou onde você está: «Ich bin müde» e «Wir sind hier». O contexto mostra se é «ser» ou «estar». PASSO 5: para negar, coloque «nicht» depois do verbo: «Ich bin nicht müde». PASSO 6: na pergunta de sim ou não, o verbo vai para o começo: «Bist du müde?». Responda: «Ja, ich bin müde.» ou «Nein, ich bin nicht müde.»",
+        "comparacao": "o português tem dois verbos, «ser» e «estar». O alemão tem um só, «sein», e o contexto diz qual dos dois se quer dizer. Em compensação, cada pessoa tem uma forma bem diferente, e é preciso decorar.",
+        "exemplos": [
+          {
+            "ru": "Das ist Lea.",
+            "pt": "Esta é a Lea."
+          },
+          {
+            "ru": "Ich bin müde.",
+            "pt": "Estou cansado."
+          },
+          {
+            "ru": "Ich bin nicht müde.",
+            "pt": "Não estou cansado."
+          },
+          {
+            "ru": "Bist du müde?",
+            "pt": "Você está cansado?"
+          },
+          {
+            "ru": "Wir sind hier.",
+            "pt": "Nós estamos aqui."
+          }
+        ],
         "tabelas": [
           {
             "titulo": "sein no presente",
@@ -147,39 +207,185 @@
                 "exemplo": "Sie sind aus Berlin."
               }
             ]
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Ich bist müde.",
+            "certo": "Ich bin müde.",
+            "motivo": "Cada pessoa tem a sua forma. Com «ich», a forma é sempre «bin»."
           },
           {
-            "titulo": "du, ihr ou Sie?",
-            "linhas": [
-              {
-                "pronome": "du",
-                "significado": "uma pessoa próxima",
-                "exemplo": "Wie heißt du?"
-              },
-              {
-                "pronome": "ihr",
-                "significado": "várias pessoas próximas",
-                "exemplo": "Woher kommt ihr?"
-              },
-              {
-                "pronome": "Sie",
-                "significado": "uma ou várias pessoas, formal",
-                "exemplo": "Wie heißen Sie?"
-              }
-            ]
+            "errado": "Wir ist hier.",
+            "certo": "Wir sind hier.",
+            "motivo": "Com «wir», a forma é «sind». A forma «ist» é de «er», «sie» e «es»."
+          },
+          {
+            "errado": "Ich nicht bin müde.",
+            "certo": "Ich bin nicht müde.",
+            "motivo": "O verbo fica na segunda posição, e o «nicht» vem depois dele."
           }
         ],
         "tag": "Verbos"
       },
       {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Você, vocês, o senhor: du, ihr e Sie",
+        "explicacao": "PASSO 1: para falar com UMA pessoa próxima, como amigo, família, criança ou colega jovem, use «du». PASSO 2: para falar com VÁRIAS pessoas próximas, use «ihr». PASSO 3: para falar com alguém que você não conhece bem, ou com respeito, use «Sie», que se lê «zi». Serve para o senhor, a senhora ou os senhores, uma pessoa ou várias. No texto, «Sie» formal sempre começa com S maiúsculo. PASSO 4: com «Sie» o verbo tem a mesma forma de «eles»: «Sie sind» e «Wie heißen Sie?». PASSO 5: na dúvida, use «Sie». A outra pessoa vai lhe oferecer o «du» quando quiser.",
+        "comparacao": "em português, «você» serve para quase todo mundo, e «o senhor» é opcional. Em alemão a escolha entre «du» e «Sie» é obrigatória e muda o verbo da frase inteira.",
+        "tabela": [
+          {
+            "pronome": "du",
+            "significado": "uma pessoa próxima",
+            "exemplo": "Wie heißt du?"
+          },
+          {
+            "pronome": "ihr",
+            "significado": "várias pessoas próximas",
+            "exemplo": "Woher kommt ihr?"
+          },
+          {
+            "pronome": "Sie",
+            "significado": "uma ou várias pessoas, formal",
+            "exemplo": "Wie heißen Sie?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Wie heißt Sie?",
+            "certo": "Wie heißen Sie?",
+            "motivo": "Com «Sie» o verbo fica no plural, mesmo para uma só pessoa."
+          },
+          {
+            "errado": "Sind du müde?",
+            "certo": "Bist du müde?",
+            "motivo": "Com «du», a forma de «sein» é «bist». «Sind» é de «wir» e «sie»."
+          }
+        ],
+        "tag": "Tratamento"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 5,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Du bist müde.",
+            "opcoes": [
+              "Du bist müde.",
+              "Ich bin müde.",
+              "Wir sind müde."
+            ],
+            "gabarito": "Du bist müde.",
+            "explicacao": "Você ouve «du bist»: a forma «bist» vai com «du». «Ich bin» e «wir sind» têm outros sons.",
+            "id": "de-002-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Wir sind glücklich.",
+            "opcoes": [
+              "Wir sind glücklich.",
+              "Ihr seid glücklich.",
+              "Sie ist glücklich."
+            ],
+            "gabarito": "Wir sind glücklich.",
+            "explicacao": "O começo é «vir zint»: com «wir», a forma é «sind». Em «Ihr seid» você ouviria «zait».",
+            "id": "de-002-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich bin müde.",
+            "respostaEsperada": "Ich bin müde.",
+            "explicacao": "Escreva «bin» com «i» e «müde» com «ü». O «ü» é o «u» com a língua de «i», que você treinou na aula 1.",
+            "id": "de-002-e12"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ich ___ Brasilianer. (sein)",
+            "opcoes": [
+              "bin",
+              "bist",
+              "ist"
+            ],
+            "gabarito": "bin",
+            "explicacao": "Com «ich», a forma de «sein» é «bin». A forma «bist» é de «du» e «ist» é de «er».",
+            "id": "de-002-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Du ___ müde. (sein)",
+            "opcoes": [
+              "bist",
+              "bin",
+              "ist"
+            ],
+            "gabarito": "bist",
+            "explicacao": "Com «du», a forma de «sein» é «bist». A forma «bin» é só de «ich».",
+            "id": "de-002-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wir ___ glücklich. (sein)",
+            "opcoes": [
+              "sind",
+              "seid",
+              "ist"
+            ],
+            "gabarito": "sind",
+            "explicacao": "Com «wir», a forma é «sind». A forma «seid» é de «ihr».",
+            "id": "de-002-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Ihr ___ hier. (sein)",
+            "opcoes": [
+              "seid",
+              "sind",
+              "bist"
+            ],
+            "gabarito": "seid",
+            "explicacao": "Com «ihr», vocês, a forma é «seid». É a única que termina em «d» sem ser «sind».",
+            "id": "de-002-e16"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Para falar com um desconhecido, o senhor, use:",
+            "opcoes": [
+              "Sie",
+              "du",
+              "ihr"
+            ],
+            "gabarito": "Sie",
+            "explicacao": "O tratamento formal é «Sie», com S maiúsculo. O «du» fica para pessoas próximas e o «ihr» para várias pessoas próximas.",
+            "id": "de-002-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Para falar com um amigo, use:",
+            "opcoes": [
+              "du",
+              "Sie",
+              "er"
+            ],
+            "gabarito": "du",
+            "explicacao": "O tratamento informal, para uma pessoa próxima, é «du». O «Sie» é formal, e «er» quer dizer ele, não é tratamento direto.",
+            "id": "de-002-e18"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 4,
-        "enunciado": "Diga: «Ich bin müde. Du bist hier. Wir sind glücklich.» Depois pergunte a um amigo e a um desconhecido como se chamam."
+        "min": 3,
+        "enunciado": "Diga em voz alta: «Ich bin müde. Du bist hier. Wir sind glücklich.». Depois faça duas perguntas de sim ou não com «sein»: uma a um amigo, «Bist du müde?», e uma a um desconhecido, «Sind Sie müde?»."
       },
       {
         "tipo": "revisao",
-        "min": 4,
-        "enunciado": "Escreva os pronomes pessoais em alemão: eu, tu, ele, ela, nós, vós, eles."
+        "min": 2,
+        "enunciado": "Olhe as tabelas dos verbos «heißen» e «kommen» da sessão anterior e diga em voz alta os pronomes pessoais com a tradução: «ich», «du», «er», «sie», «es», «wir», «ihr», «sie» e «Sie»."
       }
     ]
   },

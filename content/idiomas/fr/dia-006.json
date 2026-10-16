@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 6,
+        "min": 5,
         "itens": [
           {
             "ru": "content / contente",
@@ -64,15 +64,55 @@
             "pt": "brasileiro / brasileira",
             "en": "",
             "audio": "brésilien / brésilienne"
+          },
+          {
+            "ru": "triste",
+            "translit": "trist",
+            "pt": "triste",
+            "en": "",
+            "audio": "triste"
+          },
+          {
+            "ru": "heureux / heureuse",
+            "translit": "örö / örös",
+            "pt": "feliz",
+            "en": "",
+            "audio": "heureux / heureuse"
           }
         ]
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 11,
         "titulo": "O adjetivo concorda em gênero e número",
-        "explicacao": "PASSO 1: em francês o adjetivo concorda com o substantivo ou com o sujeito. Para o feminino, em geral, acrescenta-se «-e»: «content → contente», «petit → petite». PASSO 2: o «-e» do feminino muda o som, porque a consoante final passa a soar: «petit» (peti) e «petite» (petit). PASSO 3: adjetivos que já terminam em «-e» não mudam: «triste», «jeune», «rouge», «facile». PASSO 4: algumas terminações mudam: «-ien → -ienne» (brésilien, brésilienne), «-eux → -euse» (heureux, heureuse), «-er → -ère» (premier, première). PASSO 5: no plural, acrescenta-se «-s», que não se pronuncia: «petit → petits», «contente → contentes». Se já termina em «-s» ou «-x», fica igual: «français → français». PASSO 6: com «on» o adjetivo pode estar no plural: «On est contents.»",
-        "comparacao": "em português também concordamos o adjetivo («cansado / cansada»), mas o francês quase sempre acrescenta «-e» e muda o som do final. O «-s» do plural fica mudo.",
+        "explicacao": "Ouça primeiro: «petit» e «petite». A diferença é a última letra. PASSO 1: em francês o adjetivo concorda com o sujeito. Se a pessoa é uma mulher, o adjetivo vai para o feminino. Em geral, acrescenta-se «e». «Content» vira «contente». «Petit» vira «petite». PASSO 2: o «e» muda o som. Quando ele aparece, a consoante final passa a soar. «Petit» soa «peti». «Petite» soa «petit». É esse som que mostra o feminino na fala. PASSO 3: adjetivos que já terminam em «e» não mudam: «triste», «jeune», «rouge». PASSO 4: algumas terminações mudam mais. «Brésilien» vira «brésilienne». «Heureux» vira «heureuse». PASSO 5: no plural, acrescenta-se «s», que não se pronuncia. «Petit» vira «petits», mas os dois soam «peti». Se já termina em «s», fica igual: «français», «français». PASSO 6: com «on», o adjetivo pode ir para o plural: «On est contents».",
+        "comparacao": "em português também concordamos o adjetivo: «cansado» e «cansada». Mas, em francês, o final muda o som de uma maneira que o português não tem: o «e» do feminino faz a consoante final soar, e o «s» do plural fica mudo.",
+        "exemplos": [
+          {
+            "ru": "Il est petit.",
+            "pt": "Ele é pequeno."
+          },
+          {
+            "ru": "Elle est petite.",
+            "pt": "Ela é pequena."
+          },
+          {
+            "ru": "Il est français.",
+            "pt": "Ele é francês."
+          },
+          {
+            "ru": "Elle est française.",
+            "pt": "Ela é francesa."
+          },
+          {
+            "ru": "Elle est heureuse.",
+            "pt": "Ela está feliz."
+          },
+          {
+            "ru": "Elles sont contentes.",
+            "pt": "Elas estão contentes."
+          }
+        ],
         "tabela": [
           {
             "regra": "acrescente -e",
@@ -109,7 +149,7 @@
           {
             "errado": "Elle est content.",
             "certo": "Elle est contente.",
-            "motivo": "Feminino: acrescente «-e»."
+            "motivo": "Feminino: acrescente «e»."
           },
           {
             "errado": "Il est brésilienne.",
@@ -130,14 +170,104 @@
         "tag": "Adjetivos e possessivos"
       },
       {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Deux amis / Dois amigos",
+        "ru": "Voici Léa et Hugo. Léa est brésilienne. Elle est grande et très contente. Hugo est français. Il est petit et un peu fatigué. Léa et Hugo sont amis. Ils sont à Paris. Léa n'est pas fatiguée. Elle est heureuse ! Hugo n'est pas triste. Il est content aussi.",
+        "pt": "Aqui estão a Léa e o Hugo. Léa é brasileira. Ela é alta e está muito contente. Hugo é francês. Ele é baixo e está um pouco cansado. Léa e Hugo são amigos. Eles estão em Paris. Léa não está cansada. Ela está feliz! Hugo não está triste. Ele também está contente.",
+        "perguntas": [
+          {
+            "pergunta": "De onde é a Léa?",
+            "resposta": "Ela é brasileira («brésilienne»)."
+          },
+          {
+            "pergunta": "Como está o Hugo?",
+            "resposta": "Um pouco cansado («un peu fatigué»), mas contente."
+          },
+          {
+            "pergunta": "A Léa está cansada?",
+            "resposta": "Não: «Léa n'est pas fatiguée. Elle est heureuse.»"
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 3,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Elle est petite",
+            "opcoes": [
+              "Elle est petite",
+              "Il est petit",
+              "Ils sont petits"
+            ],
+            "gabarito": "Elle est petite",
+            "explicacao": "Ouça o final: «petite» tem o «t» audível; «petit» não.",
+            "id": "fr-002-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Il est français",
+            "opcoes": [
+              "Il est français",
+              "Elle est française",
+              "Ils sont français"
+            ],
+            "gabarito": "Il est français",
+            "explicacao": "Em «française», o «z» final soa. Em «français», não.",
+            "id": "fr-002-e02"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ . (cansada)",
+            "opcoes": [
+              "fatiguée",
+              "fatigué",
+              "fatigués"
+            ],
+            "gabarito": "fatiguée",
+            "explicacao": "Sujeito feminino singular: acrescenta-se «e».",
+            "id": "fr-002-e03"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il est ___ . (brasileiro)",
+            "opcoes": [
+              "brésilien",
+              "brésilienne",
+              "brésiliens"
+            ],
+            "gabarito": "brésilien",
+            "explicacao": "Sujeito masculino singular: forma base.",
+            "id": "fr-002-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual adjetivo não muda no feminino?",
+            "opcoes": [
+              "triste",
+              "petit",
+              "content"
+            ],
+            "gabarito": "triste",
+            "explicacao": "Os adjetivos que já terminam em «e» não mudam.",
+            "id": "fr-002-e05"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 8,
-        "enunciado": "Diga seis frases descrevendo você, um amigo e uma amiga: «Je suis…», «Il est…», «Elle est…» com os adjetivos da aula."
+        "min": 3,
+        "enunciado": "Diga seis frases descrevendo você, um amigo e uma amiga: «Je suis…», «Il est…», «Elle est…», com os adjetivos da aula.",
+        "exemplo": "Je suis brésilien. Il est petit. Elle est contente."
       },
       {
         "tipo": "revisao",
-        "min": 4,
-        "enunciado": "Conjugue «être» de memória, com os seis pronomes."
+        "min": 3,
+        "enunciado": "Conjugue «être» de memória, em voz alta, com os seis pronomes: je, tu, il/elle, nous, vous, ils/elles."
       }
     ]
   },

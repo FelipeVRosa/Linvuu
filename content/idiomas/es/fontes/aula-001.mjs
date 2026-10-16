@@ -6,8 +6,12 @@ export default aula({
   nota: 'Você soletra, lê palavras novas com segurança e cumprimenta em espanhol. Próxima aula: o verbo «ser», os pronomes e os adjetivos.',
   sessoes: [
     sessao('S1', 'O alfabeto e as primeiras saudações', [
-      intro(3, "Você já conhece muito espanhol: hola, gracias, fiesta, siesta, plaza, paella, amigo, adiós. A escrita é regular e muitas palavras parecem com o português, e é exatamente aí que mora o risco: falar um «portunhol» em que as palavras são espanholas e os sons são portugueses. Esta aula ensina os sons que mudam. Ao lado das palavras há uma pronúncia aproximada em letras do português: «h» é um som áspero (como o «r» de «rato» em partes do Brasil); «th» é o som do «th» de «think» em inglês; «nh» e «lh» são os de «ninho» e «filho»; «tch» é o som de «tchau». O acento (á, é) marca a sílaba forte. O áudio usa o espanhol da Espanha. Na América Latina o «th» vira «s»; avisamos quando isso importar. A respelling ajuda, mas não substitui o áudio: ouça sempre antes de repetir."),
-      alfabeto(12, [
+      intro(3, "Vamos começar pelos ouvidos: primeiro você escuta uma cena de café, depois aprende as letras. Você já conhece muito espanhol: hola, gracias, fiesta, siesta, plaza, paella, amigo, adiós. A escrita é regular e muitas palavras parecem com o português, e é exatamente aí que mora o risco: falar um «portunhol» em que as palavras são espanholas e os sons são portugueses. Esta aula ensina os sons que mudam. Ao lado das palavras há uma pronúncia aproximada em letras do português: «h» é um som áspero (como o «r» de «rato» em partes do Brasil); «th» é o som do «th» de «think» em inglês; «nh» e «lh» são os de «ninho» e «filho»; «tch» é o som de «tchau». O acento (á, é) marca a sílaba forte. O áudio usa o espanhol da Espanha. Na América Latina o «th» vira «s»; avisamos quando isso importar. A respelling ajuda, mas não substitui o áudio: ouça sempre antes de repetir."),
+      dialogo(5, 'En el café / No café', 'Clara pede um café a Mateo, o garçom. Só ouça e acompanhe: você já vai reconhecer «hola», «buenos días», «por favor», «gracias», «de nada» e «adiós».', [
+        ['Mateo', '¡Hola! Buenos días.', 'Oi! Bom dia.'], ['Clara', 'Buenos días. Un café, por favor.', 'Bom dia. Um café, por favor.'], ['Mateo', '¿Y un jamón?', 'E um presunto?'], ['Clara', 'No, gracias. Solo un café.', 'Não, obrigada. Só um café.'],
+        ['Mateo', 'Aquí tiene.', 'Aqui está.'], ['Clara', 'Gracias.', 'Obrigada.'], ['Mateo', 'De nada.', 'De nada.'], ['Clara', 'Adiós, hasta luego.', 'Tchau, até logo.'],
+      ]),
+      alfabeto(10, [
         ['Parte 1 — A a G', [
           ['A', 'a', 'nome da letra: «a»', '/a/', 'amigo', 'amigo', 'a'], ['B', 'b', 'nome da letra: «bé»', '/be/', 'bien', 'bem', 'bé'], ['C', 'c', 'nome da letra: «thé» (th como em «think»)', '/θe/', 'casa', 'casa', 'thé'],
           ['D', 'd', 'nome da letra: «dé»', '/de/', 'día', 'dia', 'dé'], ['E', 'e', 'nome da letra: «é»', '/e/', 'escuela', 'escola', 'é'], ['F', 'f', 'nome da letra: «éfe»', '/ˈefe/', 'familia', 'família', 'éfe'],
@@ -28,26 +32,35 @@ export default aula({
           ['Y', 'y', 'nome da letra: «i griéga»', '/i ˈɡrjeɣa/', 'yo', 'eu', 'i griéga'], ['Z', 'z', 'nome da letra: «théta» (th como em «think»)', '/ˈθeta/', 'zapato', 'sapato', 'théta'],
         ]],
       ]),
-      palavras(8, [
+      palavras(6, [
         ['hola', 'ôla', 'oi, olá', ''], ['buenos días', 'buénos días', 'bom dia', ''], ['buenas tardes', 'buénas tárdes', 'boa tarde', ''], ['buenas noches', 'buénas nótches', 'boa noite (ao chegar ou ao se despedir)', ''],
         ['adiós', 'adiós', 'tchau, adeus', ''], ['gracias', 'gráthias', 'obrigado, obrigada', ''], ['por favor', 'por fabór', 'por favor', ''], ['de nada', 'de náda', 'de nada', ''],
       ]),
-      producao(7, 'Soletre em voz alta o seu nome e o seu sobrenome (por exemplo: F-E-L-I-P-E: éfe, é, éle, i, pé, é). Depois diga: «Hola. Buenos días. Gracias. Adiós.»'),
+      producao(6, 'Tarefa em voz alta, em três passos. Primeiro, soletre o seu nome (por exemplo: F-E-L-I-P-E: éfe, é, éle, i, pé, é). Depois soletre o nome da sua cidade. Por fim, faça o papel de Clara do diálogo e diga: «Buenos días. Un café, por favor. Gracias. Adiós.» Repita ouvindo o áudio antes de cada frase.'),
     ]),
     sessao('S2', 'Os sons que mudam: vogais, j, g, c, z, ll, ñ e rr', [
-      revisao(4, 'Soletre o nome da sua cidade em espanhol e diga «hola», «gracias» e «adiós» sem olhar.'),
-      palavras(6, [
+      revisao(3, 'Soletre o nome da sua cidade em espanhol e diga «hola», «gracias» e «adiós» sem olhar.'),
+      palavras(4, [
         ['el jamón', 'el hamón', 'o presunto', ''], ['el queso', 'el késo', 'o queijo', ''], ['el niño', 'el nínho', 'o menino, a criança', ''], ['la calle', 'la cálhe', 'a rua', ''], ['la cena', 'la théna', 'o jantar', ''], ['el zapato', 'el thapáto', 'o sapato', ''],
       ]),
-      gramatica(12, 'Vogais inteiras e as letras j, g, c, z, qu, ll, ñ, rr, h', 'PASSO 1: o espanhol tem cinco vogais (a, e, i, o, u), sempre claras e inteiras. O «e» e o «o» finais não viram «i» e «u»: «leche» soa «létche», não «létchi»; «todo» soa «tôdo», não «tôdu». Não há vogal nasal: em «pan» e «mano» o «n» soa por inteiro, sem o nasal de «pão». PASSO 2: «j», e «g» antes de «e» ou «i», soam como um «h» áspero (parecido com o «r» de «rato» em partes do Brasil): «jamón» (hamón), «gente» (hénte), «jefe» (héfe). Nunca soam «dj». PASSO 3: «g» antes de «a», «o», «u» é duro: «gato», «gusto». Para o som duro antes de «e» e «i», escreve-se «gu» e o «u» não soa: «guerra» (guérra), «guitarra». Se o «u» precisa soar, usa-se o trema: «pingüino». PASSO 4: «c» antes de «a», «o», «u» é «k»: «casa», «copa». Para o «k» antes de «e» e «i», escreve-se «qu», com o «u» mudo: «queso» (késo), «quién» (kién). PASSO 5: «c» antes de «e» e «i», e o «z», soam «th» (como o «th» de «think» em inglês) na Espanha: «cena» (théna), «cielo» (thiélo), «zapato». Na América Latina e no sul da Espanha soam como «s»: «séna». As duas pronúncias são corretas; este curso usa a da Espanha. PASSO 6: «ll» e «y» no início de sílaba: na Espanha soam como um «lh» suave ou um «i» curto: «calle» (cálhe), «llave», «yo» (iô). Em muitas regiões os dois se igualam; na Argentina e no Uruguai soam como o «x» de «xícara». PASSO 7: «ñ» soa «nh»: «España» (espánha), «niño». «ch» soa «tch»: «leche», «chico». PASSO 8: o «h» é mudo: «hotel» (otél), «hola» (ôla). PASSO 9: o «r» no início da palavra e o «rr» são vibrantes fortes: «rojo», «perro». Entre vogais, o «r» simples é uma batida só: «pero». Isso muda o sentido: «pero» (mas) e «perro» (cachorro). PASSO 10: «b» e «v» soam igual, como o «b» de «bola»: «vino» é «bino». PASSO 11: «t» e «d» nunca viram «tch» e «dj», mesmo antes de «i»: «tío» (tío), «día» (dia). PASSO 12: o «s» é sempre «s», nunca «z», nem entre vogais: «casa» é «kása», não «káza».', {
+      gramatica(5, 'Vogais inteiras e as letras j, g, c, qu, z', `Ouça os exemplos antes de ler cada passo. PASSO 1: o espanhol tem cinco vogais: a, e, i, o, u. Elas são sempre claras e inteiras. O «e» final não vira «i»: «leche» soa «létche», não «létchi». O «o» final não vira «u»: «todo» soa «tôdo», não «tôdu». PASSO 2: não existe vogal nasal. Em «pan» e «mano», o «n» soa por inteiro. PASSO 3: a letra «j» soa como um «h» áspero, parecido com o «r» de «rato» em partes do Brasil. «Jamón» soa «hamón». Nunca soa «dj». PASSO 4: o «g» antes de «e» e de «i» soa igual ao «j»: «gente» soa «hénte». Antes de «a», «o» e «u», o «g» é duro, como em «gato». PASSO 5: para o «g» duro antes de «e» e «i», escreve-se «gu», e o «u» não soa: «guitarra» soa «guitárra». PASSO 6: o «c» antes de «a», «o» e «u» soa «k»: «casa». Para o «k» antes de «e» e «i», escreve-se «qu», com o «u» mudo: «queso» soa «késo». PASSO 7: o «c» antes de «e» e «i», e a letra «z», soam «th» na Espanha, como o «th» de «think» em inglês: «cena» soa «théna», «zapato» soa «thapáto». Na América Latina soam como «s». As duas pronúncias estão certas; este curso usa a da Espanha.`, {
         tag: 'Pronúncia',
-        comparacao: 'o português tem quase todos esses sons, e por isso o erro é trocar um som espanhol por um português parecido. As armadilhas são cinco: a vogal final que não reduz («leche», não «létchi»), o «j» que é «h» e não «dj», o «s» de «casa» que não é «z», o «t» e o «d» que não viram «tch» e «dj» antes de «i», e o «rr» vibrante. O «lh» e o «nh» do português existem em espanhol como «ll» e «ñ».',
+        exemplos: [['jamón', 'presunto: o «j» é um h áspero'], ['gente', 'gente: o «g» antes de «e» é um h áspero'], ['gato', 'gato: o «g» antes de «a» é duro'], ['guitarra', 'violão: o «u» de «gui» não soa'], ['queso', 'queijo: o «u» de «que» não soa'], ['cena', 'jantar: «c» antes de «e» soa th'], ['zapato', 'sapato: o «z» soa th']],
+        comparacao: 'em português, «ge» soa «jê» e «ce» soa «sê». Em espanhol, «ge» soa «hê» e «ce» soa «thê» (ou «sê» na América Latina). Quem lê «jamón» como «djamón» ou «gente» como «djênte» fala portunhol.',
         tabela: [
           { grafia: 'j; g + e, i', som: 'h áspero', exemplos: 'jamón, gente, jefe' },
           { grafia: 'g + a, o, u', som: 'g duro', exemplos: 'gato, gusto, gota' },
           { grafia: 'gu + e, i', som: 'g duro (u mudo)', exemplos: 'guerra, guitarra, guiso' },
           { grafia: 'c + a, o, u; qu + e, i', som: 'k', exemplos: 'casa, copa, queso, quién' },
           { grafia: 'c + e, i; z', som: 'th (Espanha); s (América Latina)', exemplos: 'cena, cielo, zapato' },
+        ],
+        erros: [['ler «jamón» como «djamón»', 'hamón', 'O «j» soa como um «h» áspero, nunca «dj».'], ['ler «queso» como «kuêso»', 'késo', 'Em «que» e «qui» o «u» é mudo.'], ['ler «leche» como «létchi»', 'létche', 'A vogal final do espanhol não reduz.']],
+      }),
+      gramatica(5, 'Os sons ll, ñ, ch, h, rr, b, v, d, t e s', `Continue ouvindo primeiro. PASSO 1: «ll» e «y» no começo de sílaba soam como um «lh» suave ou um «i» curto: «calle» soa «cálhe», «yo» soa «iô». Na Argentina soam como o «x» de «xícara». PASSO 2: «ñ» soa «nh»: «niño» soa «nínho», «España» soa «espánha». PASSO 3: «ch» soa «tch»: «leche», «chico». PASSO 4: o «h» é mudo: «hola» soa «ôla», «hotel» soa «otél». PASSO 5: o «r» no começo da palavra e o «rr» são vibrantes fortes: «rojo», «perro». Entre vogais, o «r» simples é uma batida só. Isso muda o sentido: «pero» quer dizer «mas», e «perro» quer dizer «cachorro». PASSO 6: «b» e «v» soam igual, como o «b» de «bola»: «vino» soa «bino». PASSO 7: «t» e «d» nunca viram «tch» e «dj», nem antes de «i»: «tío» e «día» soam duros. PASSO 8: o «s» é sempre «s», nunca «z»: «casa» soa «kása», não «káza».`, {
+        tag: 'Pronúncia',
+        exemplos: [['la calle', 'a rua: o «ll» é um lh suave'], ['el niño', 'a criança: o «ñ» soa nh'], ['la leche', 'o leite: o «ch» soa tch'], ['el hotel', 'o hotel: o «h» é mudo'], ['el perro', 'o cachorro: o «rr» vibra forte'], ['pero', 'mas: o «r» é uma batida só'], ['el vino', 'o vinho: o «v» soa b'], ['la casa', 'a casa: o «s» não vira z']],
+        comparacao: 'o português tem quase todos esses sons, e por isso o erro é trocar um som espanhol por um português parecido. As cinco armadilhas: a vogal final que não reduz, o «j» que é «h» e não «dj», o «s» de «casa» que não é «z», o «t» e o «d» que não viram «tch» e «dj» antes de «i», e o «rr» vibrante. O «lh» e o «nh» do português existem em espanhol como «ll» e «ñ».',
+        tabela: [
           { grafia: 'll; y', som: 'lh suave ou i curto', exemplos: 'calle, llave, yo' },
           { grafia: 'ñ', som: 'nh', exemplos: 'España, niño, mañana' },
           { grafia: 'ch', som: 'tch', exemplos: 'leche, chico, noche' },
@@ -55,16 +68,26 @@ export default aula({
           { grafia: 'r inicial; rr', som: 'vibrante forte', exemplos: 'rojo, perro, carro' },
           { grafia: 'b; v', som: 'o mesmo som de b', exemplos: 'vino, vaca, bien' },
         ],
-        erros: [['ler «jamón» como «djamón»', 'hamón', 'O «j» soa como um «h» áspero, nunca «dj».'], ['ler «queso» como «kuêso»', 'késo', 'Em «que» e «qui» o «u» é mudo.'], ['ler «día» como «djia»', 'día', 'Em espanhol o «d» não vira «dj» antes de «i».'], ['ler «pero» e «perro» da mesma forma', 'péro (batida) e pérro (vibrante)', 'O «rr» vibrante muda a palavra: mas × cachorro.']],
+        erros: [['ler «día» como «djia»', 'día', 'Em espanhol o «d» não vira «dj» antes de «i».'], ['ler «pero» e «perro» da mesma forma', 'péro (batida) e pérro (vibrante)', 'O «rr» vibrante muda a palavra: mas × cachorro.'], ['ler «casa» como «káza»', 'kása', 'O «s» espanhol nunca soa como «z».'], ['ler «hotel» com um h áspero', 'otél', 'O «h» é mudo; o h áspero é do «j».']],
       }),
-      producao(8, 'Diga cinco vezes, devagar e depois mais rápido: «Jorge compra jamón y queso. El perro de Rosa corre por la calle.» Cuide do «j» (h), do «rr» e do «s» de «Rosa» (sem «z»).'),
+      exercicios(7, [
+        ouvir('el queso', ['el queso', 'el beso', 'el peso'], 'el queso', 'Ouça o início: «k» de «que». «Beso» e «peso» começam com «b» e «p».'),
+        ouvir('la cena', ['la cena', 'la pena', 'la vena'], 'la cena', 'O som inicial é «th» (ou «s»), diferente de «p» e «b».'),
+        ouvir('el niño', ['el niño', 'el nido', 'el año'], 'el niño', 'Ouça o «nh» no meio da palavra.'),
+        ouvir('la calle', ['la calle', 'la cara', 'la cal'], 'la calle', 'Ouça o «lh» suave do «ll» e o «e» final inteiro.'),
+        ditado('la calle', 'O som «lh» suave se escreve «ll»: «calle».'), ditado('el jamón', 'O som de h áspero antes de «a» se escreve «j»: «jamón».'),
+        mc('Como se lê «cena» na Espanha?', ['théna', 'kéna', 'tchéna'], 'théna', '«c» antes de «e» soa «th» na Espanha (na América Latina, «s»).'),
+        mc('Como se lê «niño»?', ['nínho', 'níno', 'nínio'], 'nínho', 'A letra «ñ» soa «nh».'),
+        mc('Como se lê «queso»?', ['késo', 'kuéso', 'tchéso'], 'késo', 'Em «que», o «u» é mudo.'),
+      ]),
+      producao(6, 'Ouça a frase e repita em voz alta, primeiro devagar, depois mais rápido, cinco vezes: «Jorge compra jamón y queso. El perro de Rosa corre por la calle.» Cuide do «j» (h áspero), do «rr» vibrante e do «s» de «Rosa» (sem «z»). Depois leia de novo: jamón, gente, queso, cena, zapato, calle, niño, perro.'),
     ]),
     sessao('S3', 'Acento tônico, til, «tú» e «usted»', [
-      revisao(4, 'Leia em voz alta: jamón, gente, queso, cena, zapato, calle, niño, perro. Qual é o som de cada grupo de letras?'),
-      palavras(5, [
+      revisao(2, 'Leia em voz alta: jamón, gente, queso, cena, zapato, calle, niño, perro. Qual é o som de cada grupo de letras?'),
+      palavras(4, [
         ['¿Cómo estás?', 'cómo estás', 'como você está? (tú)', ''], ['¿Cómo está usted?', 'cómo está ustéd', 'como o senhor, a senhora está? (usted)', ''], ['Muy bien, gracias.', 'mui bién, gráthias', 'muito bem, obrigado(a)', ''], ['¿Y tú? ¿Y usted?', 'i tú, i ustéd', 'e você? e o senhor, a senhora?', ''], ['Mucho gusto.', 'mútcho gústo', 'muito prazer', ''], ['Hasta luego.', 'ásta luégo', 'até logo', ''],
       ]),
-      gramatica(8, 'Sílaba forte, til, perguntas e tratamento', 'PASSO 1: palavras terminadas em vogal, «n» ou «s» têm a sílaba forte na penúltima: «casa», «joven», «mesas». Terminadas em outra consoante, na última: «hotel», «ciudad», «español». PASSO 2: quando a palavra foge dessa regra, o til (´) marca a vogal forte: «café», «avión», «inglés», «fútbol», «teléfono». O espanhol só usa o acento agudo; não existem o circunflexo (^) nem a crase. PASSO 3: o til também separa palavras iguais: «tú» (pronome) × «tu» (seu), «él» (ele) × «el» (o), «sí» (sim) × «si» (se). PASSO 4: perguntas e exclamações abrem com ¿ e ¡ e fecham com ? e !: «¿Cómo estás?», «¡Hola!». As palavras interrogativas levam til: «qué», «quién», «dónde», «cómo», «cuándo». PASSO 5: com amigos, família e jovens se usa «tú» («¿Cómo estás?»). Com desconhecidos, pessoas mais velhas e em contextos formais se usa «usted», com o verbo na terceira pessoa («¿Cómo está usted?»). Na Colômbia, por exemplo, «usted» aparece até em família; na dúvida, use «usted». PASSO 6: para vários, a Espanha usa «vosotros» (informal) e «ustedes» (formal). Na América Latina se usa «ustedes» nos dois casos. PASSO 7: cuidado com os falsos amigos, palavras que parecem portuguesas e significam outra coisa; a tabela traz os primeiros.', {
+      gramatica(9, 'Sílaba forte, til, perguntas e tratamento', 'Ouça «café», «hotel» e «teléfono»: cada uma tem uma sílaba mais forte. PASSO 1: palavras terminadas em vogal, «n» ou «s» têm a sílaba forte na penúltima: «casa», «joven», «mesas». Terminadas em outra consoante, na última: «hotel», «ciudad», «español». PASSO 2: quando a palavra foge dessa regra, o til (´) marca a vogal forte: «café», «avión», «inglés», «fútbol», «teléfono». O espanhol só usa o acento agudo; não existem o circunflexo (^) nem a crase. PASSO 3: o til também separa palavras iguais: «tú» (pronome) × «tu» (seu), «él» (ele) × «el» (o), «sí» (sim) × «si» (se). PASSO 4: perguntas e exclamações abrem com ¿ e ¡ e fecham com ? e !: «¿Cómo estás?», «¡Hola!». As palavras interrogativas levam til: «qué», «quién», «dónde», «cómo», «cuándo». PASSO 5: com amigos, família e jovens se usa «tú» («¿Cómo estás?»). Com desconhecidos, pessoas mais velhas e em contextos formais se usa «usted», com o verbo na terceira pessoa («¿Cómo está usted?»). Na Colômbia, por exemplo, «usted» aparece até em família; na dúvida, use «usted». PASSO 6: para vários, a Espanha usa «vosotros» (informal) e «ustedes» (formal). Na América Latina se usa «ustedes» nos dois casos. PASSO 7: cuidado com os falsos amigos, palavras que parecem portuguesas e significam outra coisa; a tabela traz os primeiros.', {
         tag: 'Pronúncia',
         comparacao: 'o português também usa o til agudo, mas o espanhol não tem circunflexo, crase nem acento grave, e escreve «¿» no começo da pergunta, coisa que o português não faz. Em português «você» serve para quase todos; em espanhol a escolha entre «tú» e «usted» muda o verbo.',
         tabelas: [
@@ -86,21 +109,21 @@ export default aula({
         ],
         erros: [['cafe', 'café', 'Termina em vogal, mas a força está na última sílaba; por isso leva til.'], ['telefono', 'teléfono', 'A força está na antepenúltima sílaba; sempre leva til.'], ['¿Como estás?', '¿Cómo estás?', 'O interrogativo «cómo» leva til; sem ele, «como» é «eu como» ou «como».'], ['¿Cómo estás? (a um senhor desconhecido)', '¿Cómo está usted?', 'Com desconhecidos e pessoas mais velhas, use «usted» e o verbo em terceira pessoa.']],
       }),
-      dialogo(8, 'Por la calle / Na rua', 'Pablo cumprimenta o senhor Ruiz, com «usted», e depois a amiga Lucía, com «tú».', [
-        ['Pablo', 'Buenos días, señor Ruiz. ¿Cómo está usted?', 'Bom dia, senhor Ruiz. Como o senhor está?'], ['Señor Ruiz', 'Muy bien, gracias. ¿Y usted?', 'Muito bem, obrigado. E o senhor?'], ['Pablo', 'Bien, gracias. Adiós, señor Ruiz.', 'Bem, obrigado. Tchau, senhor Ruiz.'],
-        ['Lucía', '¡Hola, Pablo! ¿Cómo estás?', 'Oi, Pablo! Como você está?'], ['Pablo', 'Muy bien, gracias. ¿Y tú?', 'Muito bem, obrigado. E você?'], ['Lucía', 'Bien, gracias. Hasta luego.', 'Bem, obrigada. Até logo.'],
+      dialogo(6, 'Por la calle / Na rua', 'Pablo cumprimenta o senhor Ruiz, com «usted», e depois a amiga Lucía, com «tú». Note quando o verbo muda: «está» e «estás».', [
+        ['Pablo', 'Buenos días, señor Ruiz. ¿Cómo está usted?', 'Bom dia, senhor Ruiz. Como o senhor está?'], ['Señor Ruiz', 'Muy bien, gracias. ¿Y usted?', 'Muito bem, obrigado. E o senhor?'], ['Pablo', 'Bien, gracias. Adiós, señor Ruiz.', 'Bem, obrigado. Tchau, senhor Ruiz.'], ['Señor Ruiz', 'Hasta luego, Pablo.', 'Até logo, Pablo.'],
+        ['Lucía', '¡Hola, Pablo! ¿Cómo estás?', 'Oi, Pablo! Como você está?'], ['Pablo', 'Muy bien, gracias. ¿Y tú?', 'Muito bem, obrigado. E você?'], ['Lucía', 'Bien, gracias. Hasta luego.', 'Bem, obrigada. Até logo.'], ['Pablo', '¡Hasta luego, Lucía!', 'Até logo, Lucía!'],
       ]),
-      producao(5, 'Leia em voz alta, com as vogais inteiras: «Buenas tardes. ¿Cómo está usted? — Muy bien, gracias. ¿Y usted?» Depois, com um amigo: «¡Hola! ¿Cómo estás?»'),
+      texto(5, 'Un día de Pablo / Um dia de Pablo', 'Por la mañana, Pablo dice: «Buenos días.» Por la tarde dice: «Buenas tardes.» Por la noche dice: «Buenas noches.» Con su amiga Lucía dice: «¡Hola! ¿Cómo estás?» Con el señor Ruiz dice: «¿Cómo está usted?» Pablo siempre dice «por favor» y «gracias». Es un chico muy educado.', 'De manhã, Pablo diz: «Bom dia.» À tarde diz: «Boa tarde.» À noite diz: «Boa noite.» Com a amiga Lucía diz: «Oi! Como você está?» Com o senhor Ruiz diz: «Como o senhor está?» Pablo sempre diz «por favor» e «obrigado». É um rapaz muito educado.', [
+        ['Que saudação Pablo usa à tarde?', 'Buenas tardes.'], ['Com quem Pablo usa «¿Cómo está usted?», e por quê?', 'Com o senhor Ruiz, porque é um tratamento formal (usted).'], ['Que duas palavras de cortesia Pablo sempre diz?', 'Por favor e gracias.'],
+      ]),
+      producao(4, 'Faça os dois papéis do diálogo em voz alta. Primeiro com um senhor desconhecido: «Buenas tardes. ¿Cómo está usted? — Muy bien, gracias. ¿Y usted?» Depois com uma amiga: «¡Hola! ¿Cómo estás? — Bien, gracias. ¿Y tú?» Mantenha as vogais inteiras e diga «Hasta luego» no fim.'),
     ]),
     sessao('S4', 'Revisão e prática da aula 1', [
-      revisao(5, 'Soletre três palavras do alfabeto de memória e diga as saudações da aula, uma com «tú» e uma com «usted».'),
-      exercicios(20, [
+      revisao(2, 'Soletre três palavras do alfabeto de memória e diga as saudações da aula, uma com «tú» e uma com «usted».'),
+      exercicios(26, [
         ouvir('jamón', ['jamón', 'camón', 'gamón'], 'jamón', 'Ouça o «j», um «h» áspero.'), ouvir('perro', ['pero', 'perro', 'pelo'], 'perro', 'Ouça o «rr» vibrante de «perro».'), ouvir('buenas tardes', ['buenas tardes', 'buenos días', 'buenas noches'], 'buenas tardes', 'Ouça «tardes» e o «s» final.'),
         ditado('buenos días', 'Escreva: buenos días.'), ditado('por favor', 'Escreva: por favor.'), ditado('¿Cómo está usted?', 'Escreva: ¿Cómo está usted?'),
         mc('Como se lê «jamón»?', ['hamón', 'djamón', 'zamón'], 'hamón', 'O «j» soa como um «h» áspero.'),
-        mc('Como se lê «queso»?', ['késo', 'kuéso', 'tchéso'], 'késo', 'Em «que», o «u» é mudo.'),
-        mc('Como se lê «niño»?', ['nínho', 'níno', 'nínio'], 'nínho', 'A letra «ñ» soa «nh».'),
-        mc('Como se lê «cena» na Espanha?', ['théna', 'kéna', 'tchéna'], 'théna', '«c» antes de «e» soa «th» na Espanha (na América Latina, «s»).'),
         mc('Qual destas palavras precisa de til?', ['cafe → café', 'casa → cása', 'mesa → mesá'], 'cafe → café', 'Termina em vogal, mas a força está na última sílaba.'),
         mc('Com um senhor desconhecido, qual pergunta se usa?', ['¿Cómo está usted?', '¿Cómo estás?', '¿Cómo eres?'], '¿Cómo está usted?', 'Com desconhecidos, usa-se «usted».'),
         lacuna('___ días. (bom dia)', ['Buenos', 'Buenas', 'Bueno'], 'Buenos', '«Días» é masculino plural: «buenos días».'), lacuna('___ tardes. (boa tarde)', ['Buenas', 'Buenos', 'Buena'], 'Buenas', '«Tardes» é feminino plural: «buenas tardes».'),
@@ -119,8 +142,17 @@ export default aula({
         ordem('Ordene: «Buenas noches, señor Ruiz.»', ['Buenas', 'noches,', 'señor', 'Ruiz.'], 'Buenas noches, señor Ruiz.', 'Saudação formal com o tratamento «señor».'),
         livre('Escreva em espanhol: Muito prazer. Até logo.', 'Mucho gusto. Hasta luego.'),
         livre('Escreva em espanhol: Como você está? (informal) Muito bem, obrigado.', '¿Cómo estás? Muy bien, gracias.'),
+        ouvir('Hasta luego', ['Hasta luego', 'Adiós', 'Buenas noches'], 'Hasta luego', 'Ouça o «h» mudo de «hasta» e o «g» duro de «luego».'),
+        ouvir('Mucho gusto', ['Mucho gusto', 'Muchas gracias', 'Muy bien'], 'Mucho gusto', 'Ouça o «tch» de «mucho» e o «g» duro de «gusto».'),
+        ouvir('¿Cómo estás?', ['¿Cómo estás?', '¿Cómo está usted?', '¿Cómo está?'], '¿Cómo estás?', 'Ouça o «s» final: é o «tú». Sem ele, seria a forma de «usted».'),
+        ouvir('Muy bien, gracias', ['Muy bien, gracias', 'Muchas gracias', 'Muy buenas tardes'], 'Muy bien, gracias', 'Ouça «bien» e «gracias» com o «th» ou «s» em «gracias».'),
+        ouvir('De nada', ['De nada', 'Por favor', 'Mucho gusto'], 'De nada', 'É a resposta a um «gracias».'),
+        ditado('buenas noches', 'Escreva com «ch» (som tch) e o plural «-es»: «buenas noches».'), ditado('hasta luego', 'O «h» é mudo, mas se escreve: «hasta».'),
+        lacuna('Hola. ¿Cómo ___ usted? (está)', ['está', 'estás', 'eres'], 'está', 'Com «usted», o verbo não leva «-s»: «está».'),
+        lacuna('Mucho ___. (prazer)', ['gusto', 'gracias', 'luego'], 'gusto', '«Mucho gusto» é a frase feita para dizer «muito prazer».'),
+        lacuna('___ luego. (até logo)', ['Hasta', 'Adiós', 'Hola'], 'Hasta', '«Hasta luego» é a despedida mais comum entre pessoas que vão se ver de novo.'),
       ]),
-      producao(5, 'Cumprimente em espanhol um amigo e depois um senhor desconhecido, em voz alta, e despeça-se de cada um.'),
+      producao(2, 'Cumprimente em voz alta um amigo («tú») e depois um senhor desconhecido («usted»), pergunte como estão e despeça-se de cada um.'),
     ]),
   ],
 });

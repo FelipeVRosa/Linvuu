@@ -4,7 +4,7 @@
 import { carregarAuth } from './firebase';
 import { api } from './api';
 const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
-const LANG: Record<string, string> = { ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
+const LANG: Record<string, string> = { pt: 'pt-BR', ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
 
 /** O que a voz lê e o que entra no hash: sem acento tônico (U+0301). Mantenha igual a scripts/aulas.mjs. */
 export const textoParaAudio = (t: string) => t.normalize('NFC').replace(/\u0301/g, '').trim();
@@ -102,6 +102,16 @@ export async function falarLista(textos: string[], idioma = 'ru') {
   for (const t of textos) {
     if (minha !== cancelar) return;
     await tocar(t, idioma, minha);
+  }
+}
+
+/** Narração: cada trecho com a sua voz (português e língua estudada, alternando). */
+export async function falarTrechos(itens: { texto: string; idioma: string }[]) {
+  parar();
+  const minha = cancelar;
+  for (const t of itens) {
+    if (minha !== cancelar) return;
+    await tocar(t.texto, t.idioma, minha);
   }
 }
 

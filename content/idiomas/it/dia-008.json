@@ -9,7 +9,7 @@
   "aula": {
     "numero": 2,
     "titulo": "Essere, pronomes e adjetivos",
-    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», e fazer o adjetivo concordar em gênero e número.",
+    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», fazer o adjetivo concordar em gênero e número e perguntar com «chi», «dove» e «come».",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,71 +20,152 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Pronto? / Alô?",
+        "contexto": "Luca telefona para Sara para saber onde estão os amigos. Ouça primeiro e tente achar, em cada fala, o verbo «essere». Cultura: os italianos atendem ao telefone dizendo «Pronto?».",
+        "linhas": [
+          {
+            "personagem": "Luca",
+            "ru": "— Pronto, Sara? Sono Luca. Come stai?",
+            "pt": "— Alô, Sara? Aqui é o Luca. Como você está?",
+            "audio": "Pronto, Sara? Sono Luca. Come stai?"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Ciao, Luca! Sto bene, grazie. E tu?",
+            "pt": "— Oi, Luca! Estou bem, obrigada. E você?",
+            "audio": "Ciao, Luca! Sto bene, grazie. E tu?"
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Bene, grazie. Dov'è Giulia?",
+            "pt": "— Bem, obrigado. Onde está a Giulia?",
+            "audio": "Bene, grazie. Dov'è Giulia?"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Giulia è qui. È stanca, ma è molto contenta.",
+            "pt": "— A Giulia está aqui. Está cansada, mas muito contente.",
+            "audio": "Giulia è qui. È stanca, ma è molto contenta."
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— E Marco? Dov'è?",
+            "pt": "— E o Marco? Onde está?",
+            "audio": "E Marco? Dov'è?"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Marco è là, con Paolo.",
+            "pt": "— O Marco está ali, com o Paolo.",
+            "audio": "Marco è là, con Paolo."
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Chi è Paolo? Com'è?",
+            "pt": "— Quem é o Paolo? Como ele é?",
+            "audio": "Chi è Paolo? Com'è?"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Paolo è giovane e molto simpatico. Lui e Marco sono felici!",
+            "pt": "— O Paolo é jovem e muito simpático. Ele e o Marco estão felizes!",
+            "audio": "Paolo è giovane e molto simpatico. Lui e Marco sono felici!"
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Perfetto! Ciao, Sara!",
+            "pt": "— Perfeito! Tchau, Sara!",
+            "audio": "Perfetto! Ciao, Sara!"
+          },
+          {
+            "personagem": "Sara",
+            "ru": "— Ciao, Luca! A presto!",
+            "pt": "— Tchau, Luca! Até breve!",
+            "audio": "Ciao, Luca! A presto!"
+          }
+        ]
+      },
+      {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 18,
         "itens": [
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
-            "audio": "Sono stanca",
+            "audio": "Buonasera, come sta?",
             "opcoes": [
-              "Sono stanca",
-              "Sono stanco",
-              "Sei stanca"
+              "Buonasera, come sta?",
+              "Buongiorno, come stai?",
+              "Buonasera, come stai?"
             ],
-            "gabarito": "Sono stanca",
-            "explicacao": "Ouça o final: «-a» é feminino.",
-            "id": "it-002-e01"
+            "gabarito": "Buonasera, come sta?",
+            "explicacao": "Revisão da aula 1: ouça «buonasera» e o final formal «sta».",
+            "id": "it-002-e19"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
-            "audio": "Siete contenti",
+            "audio": "Sei stanca?",
             "opcoes": [
-              "Siete contenti",
-              "Siamo contenti",
-              "Sono contenti"
+              "Sei stanca?",
+              "Sei stanco?",
+              "Sono stanca"
             ],
-            "gabarito": "Siete contenti",
-            "explicacao": "Ouça a diferença entre «siete», «siamo» e «sono».",
-            "id": "it-002-e02"
+            "gabarito": "Sei stanca?",
+            "explicacao": "Ouça o final «a», feminino. E é pergunta: a melodia sobe e o verbo é «sei».",
+            "id": "it-002-e20"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
-            "audio": "Dov'è Giulia",
+            "audio": "Noi siamo felici",
             "opcoes": [
-              "Dov'è Giulia",
-              "Chi è Giulia",
-              "Com'è Giulia"
+              "Noi siamo felici",
+              "Voi siete felici",
+              "Loro sono felici"
             ],
-            "gabarito": "Dov'è Giulia",
-            "explicacao": "Ouça «dov'è», que une «dove» e «è».",
-            "id": "it-002-e03"
+            "gabarito": "Noi siamo felici",
+            "explicacao": "Ouça o começo: «noi» e «siamo» vão juntos.",
+            "id": "it-002-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Giulia è alta",
+            "opcoes": [
+              "Giulia è alta",
+              "Giulia è alto",
+              "Giulia è alte"
+            ],
+            "gabarito": "Giulia è alta",
+            "explicacao": "Ouça o final «a»: o sujeito é feminino e singular.",
+            "id": "it-002-e22"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Noi siamo amici",
             "respostaEsperada": "Noi siamo amici",
-            "explicacao": "Escreva: Noi siamo amici.",
-            "id": "it-002-e04"
+            "explicacao": "Escreva: Noi siamo amici. «Noi» pede «siamo». O «ci» de «amici» soa «tchi».",
+            "id": "it-002-e23"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Lei è molto gentile",
             "respostaEsperada": "Lei è molto gentile",
-            "explicacao": "Escreva: Lei è molto gentile.",
-            "id": "it-002-e05"
+            "explicacao": "Escreva: Lei è molto gentile. O «è» leva acento, e o «g» antes de «e» soa «dj».",
+            "id": "it-002-e24"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Loro sono alti",
-            "respostaEsperada": "Loro sono alti",
-            "explicacao": "Escreva: Loro sono alti.",
-            "id": "it-002-e06"
+            "audio": "Siamo stanchi ma contenti",
+            "respostaEsperada": "Siamo stanchi ma contenti",
+            "explicacao": "Escreva: Siamo stanchi ma contenti. Os dois adjetivos estão no plural masculino, e «stanchi» leva «h».",
+            "id": "it-002-e25"
           },
           {
             "tipo": "multiple-choice",
@@ -96,19 +177,7 @@
             ],
             "gabarito": "siete",
             "explicacao": "«Voi siete».",
-            "id": "it-002-e07"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual é o plural de «gentile»?",
-            "opcoes": [
-              "gentili",
-              "gentile",
-              "gentiles"
-            ],
-            "gabarito": "gentili",
-            "explicacao": "Adjetivos em «-e» fazem plural em «-i».",
-            "id": "it-002-e08"
+            "id": "it-002-e26"
           },
           {
             "tipo": "multiple-choice",
@@ -119,8 +188,8 @@
               "stanchi"
             ],
             "gabarito": "stanche",
-            "explicacao": "Feminino em «-ca» vira «-che».",
-            "id": "it-002-e09"
+            "explicacao": "Feminino em «ca» vira «che», com «h» para manter o som duro.",
+            "id": "it-002-e27"
           },
           {
             "tipo": "multiple-choice",
@@ -131,8 +200,44 @@
               "Voi siete stanco?"
             ],
             "gabarito": "Lei è stanco?",
-            "explicacao": "Tratamento formal: «Lei» com a forma de «lei».",
-            "id": "it-002-e10"
+            "explicacao": "Tratamento formal: «Lei», com o verbo na forma de «lei».",
+            "id": "it-002-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual forma de «essere» serve tanto para «io» quanto para «loro»?",
+            "opcoes": [
+              "sono",
+              "siamo",
+              "sei"
+            ],
+            "gabarito": "sono",
+            "explicacao": "É a única forma repetida. Quem decide é o contexto.",
+            "id": "it-002-e29"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Luca e Sara são simpáticos»?",
+            "opcoes": [
+              "Luca e Sara sono simpatici",
+              "Luca e Sara sono simpatico",
+              "Luca e Sara è simpatici"
+            ],
+            "gabarito": "Luca e Sara sono simpatici",
+            "explicacao": "Dois sujeitos pedem «sono», e o grupo misto pede o masculino plural, «simpatici».",
+            "id": "it-002-e30"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase usa o verbo para «estar»?",
+            "opcoes": [
+              "Sono stanco.",
+              "Sono Marco.",
+              "Sono italiano."
+            ],
+            "gabarito": "Sono stanco.",
+            "explicacao": "O mesmo «sono» quer dizer «estou» com um estado, como cansaço. Com nome ou nacionalidade, quer dizer «sou».",
+            "id": "it-002-e31"
           },
           {
             "tipo": "fill-gap",
@@ -144,7 +249,43 @@
             ],
             "gabarito": "sono",
             "explicacao": "«Io sono».",
-            "id": "it-002-e11"
+            "id": "it-002-e32"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Tu ___ simpatico. (és)",
+            "opcoes": [
+              "sono",
+              "sei",
+              "è"
+            ],
+            "gabarito": "sei",
+            "explicacao": "«Tu sei»: a segunda pessoa do singular de «essere».",
+            "id": "it-002-e33"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Lui ___ molto gentile. (é)",
+            "opcoes": [
+              "è",
+              "sono",
+              "sei"
+            ],
+            "gabarito": "è",
+            "explicacao": "«Lui è»: terceira pessoa do singular.",
+            "id": "it-002-e34"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Noi ___ amici. (somos)",
+            "opcoes": [
+              "siamo",
+              "siete",
+              "sono"
+            ],
+            "gabarito": "siamo",
+            "explicacao": "«Noi siamo».",
+            "id": "it-002-e35"
           },
           {
             "tipo": "fill-gap",
@@ -155,32 +296,44 @@
               "stanchi"
             ],
             "gabarito": "stanca",
-            "explicacao": "Sujeito feminino, adjetivo feminino.",
-            "id": "it-002-e12"
+            "explicacao": "Sujeito feminino, adjetivo feminino. «Molto» não muda.",
+            "id": "it-002-e36"
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Marco e Luca sono ___ . (altos)",
+            "enunciado": "Marco e Giulia sono ___ . (felizes)",
             "opcoes": [
-              "alti",
-              "alto",
-              "alte"
+              "felice",
+              "felicie",
+              "felici"
             ],
-            "gabarito": "alti",
-            "explicacao": "Plural masculino.",
-            "id": "it-002-e13"
+            "gabarito": "felici",
+            "explicacao": "«Felice» termina em «e» e faz plural em «i».",
+            "id": "it-002-e37"
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "___ è Giulia? (onde)",
+            "enunciado": "Giulia è ___ . (baixa)",
             "opcoes": [
-              "Dov'",
-              "Chi",
-              "Com'"
+              "bassa",
+              "basso",
+              "basse"
             ],
-            "gabarito": "Dov'",
-            "explicacao": "«Dov'è Giulia?» pergunta onde.",
-            "id": "it-002-e14"
+            "gabarito": "bassa",
+            "explicacao": "Sujeito feminino singular pede o adjetivo em «a».",
+            "id": "it-002-e38"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Voi ___ giovani. (são)",
+            "opcoes": [
+              "siete",
+              "siamo",
+              "sei"
+            ],
+            "gabarito": "siete",
+            "explicacao": "«Voi siete».",
+            "id": "it-002-e39"
           },
           {
             "tipo": "sentence-ordering",
@@ -195,133 +348,7 @@
             ],
             "gabarito": "Marco e Giulia sono molto contenti.",
             "explicacao": "Sujeito composto, verbo no plural, adjetivo no plural.",
-            "id": "it-002-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Dov'è la casa?»",
-            "opcoes": [
-              "Dov'è",
-              "la",
-              "casa"
-            ],
-            "gabarito": "Dov'è la casa?",
-            "explicacao": "Pergunta com «dov'è».",
-            "id": "it-002-e16"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva em italiano: Eu estou cansado, mas contente. Ela é muito simpática.",
-            "respostaEsperada": "Sono stanco, ma contento. Lei è molto simpatica.",
-            "id": "it-002-e17"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Tu ___ simpatico. (és)",
-            "opcoes": [
-              "sono",
-              "sei",
-              "è"
-            ],
-            "gabarito": "sei",
-            "explicacao": "«Tu sei»: a segunda pessoa do singular de «essere».",
-            "id": "it-002-e18"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Marco e Giulia sono ___. (felizes)",
-            "opcoes": [
-              "felice",
-              "felicie",
-              "felici"
-            ],
-            "gabarito": "felici",
-            "explicacao": "«Felice» termina em «-e» e faz plural em «-i».",
-            "id": "it-002-e19"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Giulia è ___. (baixa)",
-            "opcoes": [
-              "bassa",
-              "basso",
-              "basse"
-            ],
-            "gabarito": "bassa",
-            "explicacao": "Sujeito feminino singular pede o adjetivo em «-a».",
-            "id": "it-002-e20"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___ sono Marco e Luca? (onde)",
-            "opcoes": [
-              "Chi",
-              "Come",
-              "Dove"
-            ],
-            "gabarito": "Dove",
-            "explicacao": "«Dove» pergunta o lugar; o verbo no plural «sono» concorda com dois sujeitos.",
-            "id": "it-002-e21"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Lui ___ molto gentile. (é)",
-            "opcoes": [
-              "è",
-              "sono",
-              "sei"
-            ],
-            "gabarito": "è",
-            "explicacao": "«Lui è»: terceira pessoa do singular.",
-            "id": "it-002-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual verbo italiano traduz «ser» e «estar»?",
-            "opcoes": [
-              "avere",
-              "parlare",
-              "essere"
-            ],
-            "gabarito": "essere",
-            "explicacao": "O italiano tem um só verbo para os dois: «sono italiano» e «sono stanco».",
-            "id": "it-002-e23"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se diz «Onde está Marco?»",
-            "opcoes": [
-              "Dove è Marco?",
-              "Dov'è Marco?",
-              "Dove sei Marco?"
-            ],
-            "gabarito": "Dov'è Marco?",
-            "explicacao": "«Dove» e «è» se contraem em «dov'è».",
-            "id": "it-002-e24"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual é o plural feminino de «stanca»?",
-            "opcoes": [
-              "stanche",
-              "stanchi",
-              "stance"
-            ],
-            "gabarito": "stanche",
-            "explicacao": "Em «-ca» o plural é «-che», mantendo o som duro.",
-            "id": "it-002-e25"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Como tratar um desconhecido, por educação?",
-            "opcoes": [
-              "tu",
-              "Lei",
-              "voi"
-            ],
-            "gabarito": "Lei",
-            "explicacao": "Com desconhecidos usa-se «Lei», com o verbo na forma de «lei» (è).",
-            "id": "it-002-e26"
+            "id": "it-002-e40"
           },
           {
             "tipo": "sentence-ordering",
@@ -335,46 +362,62 @@
               "gentili."
             ],
             "gabarito": "Luca e Giulia sono molto gentili.",
-            "explicacao": "«Molto» não muda; o adjetivo vai no plural.",
-            "id": "it-002-e27"
+            "explicacao": "«Molto» não muda, e o adjetivo vai no plural.",
+            "id": "it-002-e41"
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Dove sono gli amici di Luca?»",
+            "enunciado": "Ordene: «Dove sono Luca e Sara?»",
             "opcoes": [
               "Dove",
               "sono",
-              "gli",
-              "amici",
-              "di",
-              "Luca?"
+              "Luca",
+              "e",
+              "Sara?"
             ],
-            "gabarito": "Dove sono gli amici di Luca?",
-            "explicacao": "A pergunta mantém a ordem; «sono» concorda com «amici».",
-            "id": "it-002-e28"
+            "gabarito": "Dove sono Luca e Sara?",
+            "explicacao": "A pergunta mantém a ordem, e «sono» concorda com os dois nomes.",
+            "id": "it-002-e42"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Com'è Paolo?»",
+            "opcoes": [
+              "Com'è",
+              "Paolo?"
+            ],
+            "gabarito": "Com'è Paolo?",
+            "explicacao": "«Com'è» pergunta como alguém é.",
+            "id": "it-002-e43"
           },
           {
             "tipo": "producao",
-            "enunciado": "Escreva em italiano: Eu estou cansado, mas contente.",
-            "respostaEsperada": "Sono stanco, ma contento.",
-            "id": "it-002-e29"
+            "enunciado": "Escreva em italiano: Eu estou cansado, mas contente. Ela é muito simpática.",
+            "respostaEsperada": "Sono stanco, ma contento. Lei è molto simpatica.",
+            "id": "it-002-e44"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Marco é alto e Giulia é baixa.",
             "respostaEsperada": "Marco è alto e Giulia è bassa.",
-            "id": "it-002-e30"
+            "id": "it-002-e45"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: Nós estamos felizes, mas vocês estão cansados.",
+            "respostaEsperada": "Siamo felici, ma voi siete stanchi.",
+            "id": "it-002-e46"
           }
         ]
       },
       {
         "tipo": "producao",
         "min": 5,
-        "enunciado": "Descreva em voz alta dois amigos imaginários, um homem e uma mulher: como são e como estão hoje. Use «essere», adjetivos e «molto»."
+        "enunciado": "Descreva em voz alta dois amigos imaginários, um homem e uma mulher: como são e como estão hoje. Use «essere», adjetivos e «molto». Depois imagine uma ligação como a do diálogo e faça as perguntas «Dov'è?», «Chi è?» e «Com'è?»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Diga em voz alta uma frase com cada pronome: io, tu, lui, lei, noi, voi, loro, usando «essere» e um adjetivo."
       }
     ]

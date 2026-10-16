@@ -20,75 +20,64 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 14,
-        "titulo": "Vogais puras, consoantes dobradas e acento tônico",
-        "explicacao": "PASSO 1: as vogais italianas são sempre claras e completas. O «e» final de «bene», «latte», «come» soa «e», nunca «i»; o «o» final de «tavolo», «otto» soa «o», nunca «u». É a maior diferença para o português do Brasil, em que «leite» soa «leiti» e «tudo» soa «tudu». PASSO 2: toda consoante dobrada é pronunciada mais longa, com uma pequena pausa antes dela. Muda o significado: «pala» (pá) e «palla» (bola), «caro» (caro) e «carro» (carro), «nono» (nono) e «nonno» (avô), «sera» (noite) e «serra» (estufa). PASSO 3: o acento tônico cai, na maioria das palavras, na penúltima sílaba: «amíco», «mámma», «bélla». Em outras, cai na antepenúltima: «télefono», «albero». PASSO 4: o acento escrito aparece quase só no final das palavras: «città», «caffè», «perché», «università». A vogal final é forte e o acento é grave (`), exceto em «perché», «né», «sé» (agudo). PASSO 5: em monossílabos, o acento distingue palavras: «è» (é, verbo) × «e» (e), «sì» (sim) × «si» (se), «là» (lá) × «la» (a, artigo). PASSO 6: «h» nunca soa: «ho», «hotel», «hanno». «qu» soa «ku» com o «u» audível: «quattro» (kuáttro), «questo» (kuêsto). PASSO 7: o «s» entre vogais pode soar «z» («casa», «rosa») ou «s» (varia por região); ouça o áudio. O «z» soa «ts» ou «dz» («grazie», «zucchero»); não há regra simples, aprenda com o áudio. PASSO 8: com amigos e jovens se usa «tu» («Come stai?»). Com desconhecidos, pessoas mais velhas e no trabalho, usa-se «Lei», que é a terceira pessoa («Come sta?»). Na dúvida, use «Lei».",
-        "comparacao": "em português as vogais finais átonas se reduzem («leite» soa «leiti», «carro» soa «carru») e não há consoantes dobradas audíveis (escrevemos «carro» com rr, mas o som é um só). Em italiano, a vogal final se mantém inteira e a dobra se ouve de verdade.",
-        "tabela": [
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Al bar / No bar",
+        "contexto": "Num bar de Roma, a signora Rossi encontra o barista Paolo e o jovem Luca. Ouça primeiro. Repare em quem usa «Come sta?» e em quem usa «Come stai?».",
+        "linhas": [
           {
-            "padrao": "vogal final",
-            "como": "inteira: e, o, a, i, u",
-            "exemplos": "bene, latte, tavolo, pasta, amici"
+            "personagem": "Paolo",
+            "ru": "— Buongiorno, signora Rossi! Come sta?",
+            "pt": "— Bom dia, senhora Rossi! Como a senhora está?",
+            "audio": "Buongiorno, signora Rossi! Come sta?"
           },
           {
-            "padrao": "consoante dobrada",
-            "como": "mais longa, com pausa antes",
-            "exemplos": "pala/palla, caro/carro, nono/nonno, sera/serra"
+            "personagem": "Signora Rossi",
+            "ru": "— Buongiorno, Paolo! Sto bene, grazie. E Lei?",
+            "pt": "— Bom dia, Paolo! Estou bem, obrigada. E o senhor?",
+            "audio": "Buongiorno, Paolo! Sto bene, grazie. E Lei?"
           },
           {
-            "padrao": "acento tônico",
-            "como": "quase sempre na penúltima sílaba",
-            "exemplos": "amíco, mámma, bélla"
+            "personagem": "Paolo",
+            "ru": "— Bene, grazie. Ecco il caffè.",
+            "pt": "— Bem, obrigado. Aqui está o café.",
+            "audio": "Bene, grazie. Ecco il caffè."
           },
           {
-            "padrao": "acento escrito",
-            "como": "no final da palavra",
-            "exemplos": "città, caffè, perché, università"
+            "personagem": "Signora Rossi",
+            "ru": "— Grazie mille! Ah, ecco Luca! Ciao, Luca! Come stai?",
+            "pt": "— Muito obrigada! Ah, aí vem o Luca! Oi, Luca! Como você está?",
+            "audio": "Grazie mille! Ah, ecco Luca! Ciao, Luca! Come stai?"
           },
           {
-            "padrao": "monossílabos",
-            "como": "o acento distingue",
-            "exemplos": "è/e, sì/si, là/la"
+            "personagem": "Luca",
+            "ru": "— Buongiorno, signora! Sto bene, grazie. E Lei?",
+            "pt": "— Bom dia, senhora! Estou bem, obrigado. E a senhora?",
+            "audio": "Buongiorno, signora! Sto bene, grazie. E Lei?"
           },
           {
-            "padrao": "h",
-            "como": "nunca soa",
-            "exemplos": "ho, hotel, hanno"
+            "personagem": "Signora Rossi",
+            "ru": "— Bene, bene. Paolo, un cappuccino per Luca, per favore?",
+            "pt": "— Bem, bem. Paolo, um cappuccino para o Luca, por favor?",
+            "audio": "Bene, bene. Paolo, un cappuccino per Luca, per favore?"
           },
           {
-            "padrao": "qu",
-            "como": "ku, com o u audível",
-            "exemplos": "quattro, questo, quando"
+            "personagem": "Paolo",
+            "ru": "— Subito! Prego, Luca.",
+            "pt": "— Já! Aqui está, Luca.",
+            "audio": "Subito! Prego, Luca."
+          },
+          {
+            "personagem": "Luca",
+            "ru": "— Grazie, Paolo! Arrivederci, signora Rossi!",
+            "pt": "— Obrigado, Paolo! Tchau, senhora Rossi!",
+            "audio": "Grazie, Paolo! Arrivederci, signora Rossi!"
           }
-        ],
-        "erros": [
-          {
-            "errado": "ler «latte» como «látchi»",
-            "certo": "látte",
-            "motivo": "A vogal final «e» não vira «i» em italiano."
-          },
-          {
-            "errado": "ler «palla» como «pala»",
-            "certo": "pálla (consoante longa)",
-            "motivo": "A dobra muda a palavra: pá × bola."
-          },
-          {
-            "errado": "escrever «citta» sem acento",
-            "certo": "città",
-            "motivo": "O acento grave no final marca a sílaba forte."
-          },
-          {
-            "errado": "ler «hotel» com «h» forte",
-            "certo": "otél",
-            "motivo": "O «h» italiano é mudo."
-          }
-        ],
-        "tag": "Pronúncia"
+        ]
       },
       {
         "tipo": "palavras",
-        "min": 6,
+        "min": 3,
         "itens": [
           {
             "ru": "caffè",
@@ -135,13 +124,303 @@
         ]
       },
       {
-        "tipo": "producao",
+        "tipo": "gramatica",
         "min": 5,
-        "enunciado": "Leia em voz alta, com as vogais inteiras: «Buongiorno! Come sta? — Sto bene, grazie. E Lei?» Depois, com um amigo: «Ciao! Come stai?»"
+        "titulo": "Vogais inteiras e consoantes dobradas",
+        "explicacao": "PASSO 1: as vogais italianas são sempre claras e inteiras. O «e» final de «bene», «latte» e «come» soa «e», nunca «i». O «o» final de «tavolo» e «otto» soa «o», nunca «u». No português do Brasil, «leite» soa «leiti» e «tudo» soa «tudu». Em italiano, não. PASSO 2: toda consoante dobrada é mais longa. Faça uma pequena pausa antes dela. Diga «otto» como «ót-to». PASSO 3: a dobra muda o significado. «Pala» é pá, «palla» é bola. «Caro» é caro, e «carro» é carro. «Nono» é nono, e «nonno» é avô. «Sete» é sede, e «sette» é o número sete. Por isso, ouça com atenção e escreva as duas letras.",
+        "comparacao": "em português as vogais finais fracas se reduzem («leite» soa «leiti», «carro» soa «carru»), e não há consoante dobrada audível: escrevemos «carro» com rr, mas o som é um só. Em italiano a vogal final se mantém inteira e a dobra se ouve de verdade.",
+        "exemplos": [
+          {
+            "ru": "bene",
+            "pt": "bem"
+          },
+          {
+            "ru": "latte",
+            "pt": "leite"
+          },
+          {
+            "ru": "otto",
+            "pt": "oito"
+          },
+          {
+            "ru": "palla",
+            "pt": "bola"
+          },
+          {
+            "ru": "nonno",
+            "pt": "avô"
+          },
+          {
+            "ru": "sette",
+            "pt": "sete"
+          }
+        ],
+        "tabela": [
+          {
+            "padrao": "vogal final",
+            "como": "inteira: e, o, a, i, u",
+            "exemplos": "bene, latte, tavolo, pasta, amici"
+          },
+          {
+            "padrao": "consoante dobrada",
+            "como": "mais longa, com pausa antes",
+            "exemplos": "pala/palla, caro/carro, nono/nonno, sete/sette"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "ler «latte» como «látchi»",
+            "certo": "látte",
+            "motivo": "A vogal final «e» não vira «i» em italiano."
+          },
+          {
+            "errado": "ler «palla» como «pala»",
+            "certo": "pálla (consoante longa)",
+            "motivo": "A dobra muda a palavra: pá ou bola."
+          },
+          {
+            "errado": "escrever «sete» para o número 7",
+            "certo": "sette",
+            "motivo": "O número tem duas letras «t». «Sete» com uma só significa sede."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Acento, h, qu e z",
+        "explicacao": "PASSO 1: a sílaba mais forte da palavra cai, quase sempre, na penúltima: «amíco», «mámma», «bélla». PASSO 2: em algumas palavras ela cai na antepenúltima: «télefono», «álbero». Ouça o áudio e repita. PASSO 3: o acento escrito aparece quase só no fim da palavra, para marcar a vogal forte: «città», «caffè», «perché», «università». PASSO 4: em palavras de uma sílaba, o acento separa duas palavras. «È», com acento, é o verbo «ser, estar». «E», sem acento, é o «e» que liga. «Sì», com acento, é «sim». «Là», com acento, é «lá». PASSO 5: o «h» nunca soa: «ho», «hotel», «hanno». PASSO 6: «qu» soa «ku», com o «u» audível: «quattro» (kuáttro), «questo» (kuêsto). PASSO 7: o «z» soa «ts» ou «dz», conforme a palavra: «grazie» (grátsie), «zucchero» (dzúkkero). Não há regra simples. Aprenda com o áudio.",
+        "comparacao": "o português também tem acento tônico, mas o italiano quase não usa acento escrito. Ele aparece quase só no fim da palavra. E o «h» é mudo nas duas línguas.",
+        "exemplos": [
+          {
+            "ru": "città",
+            "pt": "cidade"
+          },
+          {
+            "ru": "caffè",
+            "pt": "café"
+          },
+          {
+            "ru": "perché",
+            "pt": "por que, porque"
+          },
+          {
+            "ru": "università",
+            "pt": "universidade"
+          },
+          {
+            "ru": "quattro",
+            "pt": "quatro"
+          },
+          {
+            "ru": "hotel",
+            "pt": "hotel"
+          }
+        ],
+        "tabela": [
+          {
+            "padrao": "acento tônico",
+            "como": "quase sempre na penúltima sílaba",
+            "exemplos": "amíco, mámma, bélla"
+          },
+          {
+            "padrao": "acento escrito",
+            "como": "no final da palavra",
+            "exemplos": "città, caffè, perché, università"
+          },
+          {
+            "padrao": "palavras de uma sílaba",
+            "como": "o acento distingue",
+            "exemplos": "è/e, sì/si, là/la"
+          },
+          {
+            "padrao": "h",
+            "como": "nunca soa",
+            "exemplos": "ho, hotel, hanno"
+          },
+          {
+            "padrao": "qu",
+            "como": "ku, com o u audível",
+            "exemplos": "quattro, questo, quando"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "escrever «citta» sem acento",
+            "certo": "città",
+            "motivo": "O acento no fim da palavra marca a sílaba forte."
+          },
+          {
+            "errado": "ler «hotel» com «h» forte",
+            "certo": "otél",
+            "motivo": "O «h» italiano é mudo."
+          },
+          {
+            "errado": "ler «quattro» como «catro»",
+            "certo": "kuáttro",
+            "motivo": "O «u» de «qu» se ouve."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "Tu ou Lei",
+        "explicacao": "PASSO 1: em italiano há duas maneiras de tratar uma pessoa. PASSO 2: «tu» é para amigos, familiares, crianças e jovens. Pergunta-se «Come stai?». PASSO 3: «Lei» é para desconhecidos, pessoas mais velhas e situações de trabalho. Pergunta-se «Come sta?». PASSO 4: aqui, «Lei» não quer dizer «ela». É uma forma de respeito, e o verbo fica na forma de «ela»: «sta». PASSO 5: na dúvida, use «Lei». Ninguém se ofende por você ser educado. Cultura: se a outra pessoa quiser, ela mesma propõe: «Diamoci del tu», que quer dizer «vamos nos tratar por tu».",
+        "comparacao": "no Brasil dizemos «você» a todo mundo. Em italiano, é preciso escolher entre «tu» e «Lei» desde a primeira frase.",
+        "exemplos": [
+          {
+            "ru": "Come stai?",
+            "pt": "Como você está? (amigo)"
+          },
+          {
+            "ru": "Come sta?",
+            "pt": "Como o senhor, a senhora está?"
+          },
+          {
+            "ru": "Sto bene, grazie. E tu?",
+            "pt": "Estou bem, obrigado. E você?"
+          },
+          {
+            "ru": "Sto bene, grazie. E Lei?",
+            "pt": "Estou bem, obrigado. E o senhor, a senhora?"
+          }
+        ],
+        "tabela": [
+          {
+            "situacao": "amigo, família, jovem",
+            "tratamento": "tu",
+            "pergunta": "Come stai?",
+            "resposta": "Sto bene, grazie. E tu?"
+          },
+          {
+            "situacao": "desconhecido, mais velho, trabalho",
+            "tratamento": "Lei",
+            "pergunta": "Come sta?",
+            "resposta": "Sto bene, grazie. E Lei?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Come stai, signora Rossi?",
+            "certo": "Come sta, signora Rossi?",
+            "motivo": "Com uma senhora, usa-se «Lei» e, portanto, «sta»."
+          },
+          {
+            "errado": "Come sta? (a um amigo de infância)",
+            "certo": "Come stai?",
+            "motivo": "Entre amigos, «Lei» soa distante."
+          }
+        ],
+        "tag": "Tratamento"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 5,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "palla",
+            "opcoes": [
+              "pala",
+              "palla",
+              "balla"
+            ],
+            "gabarito": "palla",
+            "explicacao": "Ouça a consoante longa: «palla» tem duas letras «l» e significa bola. «Pala» é pá, com o «l» curto.",
+            "id": "it-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "nonno",
+            "opcoes": [
+              "nono",
+              "nonno",
+              "nonna"
+            ],
+            "gabarito": "nonno",
+            "explicacao": "Ouça o «nn» longo e o «o» final. «Nonna» terminaria em «a» e seria a avó.",
+            "id": "it-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Come sta?",
+            "opcoes": [
+              "Come stai?",
+              "Come sta?",
+              "Chi è?"
+            ],
+            "gabarito": "Come sta?",
+            "explicacao": "Ouça o final: «sta» é a pergunta formal, para o senhor ou a senhora. «Stai» termina em «i».",
+            "id": "it-001-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "sette",
+            "respostaEsperada": "sette",
+            "explicacao": "Escreva: sette. Ouça o «tt» longo: são duas letras «t».",
+            "id": "it-001-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sto bene, grazie",
+            "respostaEsperada": "Sto bene, grazie",
+            "explicacao": "Escreva: Sto bene, grazie. Ouça o «e» final inteiro de «bene» e o «zie» de «grazie».",
+            "id": "it-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como soa o «e» final de «bene»?",
+            "opcoes": [
+              "como «i»",
+              "como «e»",
+              "não soa"
+            ],
+            "gabarito": "como «e»",
+            "explicacao": "As vogais italianas são claras e completas. O «e» final nunca vira «i».",
+            "id": "it-001-e06"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual palavra significa «bola»?",
+            "opcoes": [
+              "pala",
+              "palla",
+              "pallo"
+            ],
+            "gabarito": "palla",
+            "explicacao": "A consoante dobrada muda o sentido: «pala» é pá e «palla» é bola.",
+            "id": "it-001-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Piacere, come sta?»",
+            "opcoes": [
+              "Piacere,",
+              "come",
+              "sta?"
+            ],
+            "gabarito": "Piacere, come sta?",
+            "explicacao": "Com «sta» a pergunta é formal, para o senhor ou a senhora.",
+            "id": "it-001-e08"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Leia em voz alta, com as vogais inteiras: «Buongiorno! Come sta? — Sto bene, grazie. E Lei?» Depois, com um amigo: «Ciao! Come stai? — Bene, grazie. E tu?»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Leia em voz alta: cena, che, gente, spaghetti, scuola, gnocchi, famiglia. Qual é o som de cada grupo de letras?"
       }
     ]

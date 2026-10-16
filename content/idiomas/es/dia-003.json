@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "¿Cómo estás?",
@@ -69,9 +69,9 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 9,
         "titulo": "Sílaba forte, til, perguntas e tratamento",
-        "explicacao": "PASSO 1: palavras terminadas em vogal, «n» ou «s» têm a sílaba forte na penúltima: «casa», «joven», «mesas». Terminadas em outra consoante, na última: «hotel», «ciudad», «español». PASSO 2: quando a palavra foge dessa regra, o til (´) marca a vogal forte: «café», «avión», «inglés», «fútbol», «teléfono». O espanhol só usa o acento agudo; não existem o circunflexo (^) nem a crase. PASSO 3: o til também separa palavras iguais: «tú» (pronome) × «tu» (seu), «él» (ele) × «el» (o), «sí» (sim) × «si» (se). PASSO 4: perguntas e exclamações abrem com ¿ e ¡ e fecham com ? e !: «¿Cómo estás?», «¡Hola!». As palavras interrogativas levam til: «qué», «quién», «dónde», «cómo», «cuándo». PASSO 5: com amigos, família e jovens se usa «tú» («¿Cómo estás?»). Com desconhecidos, pessoas mais velhas e em contextos formais se usa «usted», com o verbo na terceira pessoa («¿Cómo está usted?»). Na Colômbia, por exemplo, «usted» aparece até em família; na dúvida, use «usted». PASSO 6: para vários, a Espanha usa «vosotros» (informal) e «ustedes» (formal). Na América Latina se usa «ustedes» nos dois casos. PASSO 7: cuidado com os falsos amigos, palavras que parecem portuguesas e significam outra coisa; a tabela traz os primeiros.",
+        "explicacao": "Ouça «café», «hotel» e «teléfono»: cada uma tem uma sílaba mais forte. PASSO 1: palavras terminadas em vogal, «n» ou «s» têm a sílaba forte na penúltima: «casa», «joven», «mesas». Terminadas em outra consoante, na última: «hotel», «ciudad», «español». PASSO 2: quando a palavra foge dessa regra, o til (´) marca a vogal forte: «café», «avión», «inglés», «fútbol», «teléfono». O espanhol só usa o acento agudo; não existem o circunflexo (^) nem a crase. PASSO 3: o til também separa palavras iguais: «tú» (pronome) × «tu» (seu), «él» (ele) × «el» (o), «sí» (sim) × «si» (se). PASSO 4: perguntas e exclamações abrem com ¿ e ¡ e fecham com ? e !: «¿Cómo estás?», «¡Hola!». As palavras interrogativas levam til: «qué», «quién», «dónde», «cómo», «cuándo». PASSO 5: com amigos, família e jovens se usa «tú» («¿Cómo estás?»). Com desconhecidos, pessoas mais velhas e em contextos formais se usa «usted», com o verbo na terceira pessoa («¿Cómo está usted?»). Na Colômbia, por exemplo, «usted» aparece até em família; na dúvida, use «usted». PASSO 6: para vários, a Espanha usa «vosotros» (informal) e «ustedes» (formal). Na América Latina se usa «ustedes» nos dois casos. PASSO 7: cuidado com os falsos amigos, palavras que parecem portuguesas e significam outra coisa; a tabela traz os primeiros.",
         "comparacao": "o português também usa o til agudo, mas o espanhol não tem circunflexo, crase nem acento grave, e escreve «¿» no começo da pergunta, coisa que o português não faz. Em português «você» serve para quase todos; em espanhol a escolha entre «tú» e «usted» muda o verbo.",
         "tabelas": [
           {
@@ -166,9 +166,9 @@
       },
       {
         "tipo": "dialogo",
-        "min": 8,
+        "min": 6,
         "titulo": "Por la calle / Na rua",
-        "contexto": "Pablo cumprimenta o senhor Ruiz, com «usted», e depois a amiga Lucía, com «tú».",
+        "contexto": "Pablo cumprimenta o senhor Ruiz, com «usted», e depois a amiga Lucía, com «tú». Note quando o verbo muda: «está» e «estás».",
         "linhas": [
           {
             "personagem": "Pablo",
@@ -189,6 +189,12 @@
             "audio": "Bien, gracias. Adiós, señor Ruiz."
           },
           {
+            "personagem": "Señor Ruiz",
+            "ru": "— Hasta luego, Pablo.",
+            "pt": "— Até logo, Pablo.",
+            "audio": "Hasta luego, Pablo."
+          },
+          {
             "personagem": "Lucía",
             "ru": "— ¡Hola, Pablo! ¿Cómo estás?",
             "pt": "— Oi, Pablo! Como você está?",
@@ -205,17 +211,44 @@
             "ru": "— Bien, gracias. Hasta luego.",
             "pt": "— Bem, obrigada. Até logo.",
             "audio": "Bien, gracias. Hasta luego."
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— ¡Hasta luego, Lucía!",
+            "pt": "— Até logo, Lucía!",
+            "audio": "¡Hasta luego, Lucía!"
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Un día de Pablo / Um dia de Pablo",
+        "ru": "Por la mañana, Pablo dice: «Buenos días.» Por la tarde dice: «Buenas tardes.» Por la noche dice: «Buenas noches.» Con su amiga Lucía dice: «¡Hola! ¿Cómo estás?» Con el señor Ruiz dice: «¿Cómo está usted?» Pablo siempre dice «por favor» y «gracias». Es un chico muy educado.",
+        "pt": "De manhã, Pablo diz: «Bom dia.» À tarde diz: «Boa tarde.» À noite diz: «Boa noite.» Com a amiga Lucía diz: «Oi! Como você está?» Com o senhor Ruiz diz: «Como o senhor está?» Pablo sempre diz «por favor» e «obrigado». É um rapaz muito educado.",
+        "perguntas": [
+          {
+            "pergunta": "Que saudação Pablo usa à tarde?",
+            "resposta": "Buenas tardes."
+          },
+          {
+            "pergunta": "Com quem Pablo usa «¿Cómo está usted?», e por quê?",
+            "resposta": "Com o senhor Ruiz, porque é um tratamento formal (usted)."
+          },
+          {
+            "pergunta": "Que duas palavras de cortesia Pablo sempre diz?",
+            "resposta": "Por favor e gracias."
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Leia em voz alta, com as vogais inteiras: «Buenas tardes. ¿Cómo está usted? — Muy bien, gracias. ¿Y usted?» Depois, com um amigo: «¡Hola! ¿Cómo estás?»"
+        "min": 4,
+        "enunciado": "Faça os dois papéis do diálogo em voz alta. Primeiro com um senhor desconhecido: «Buenas tardes. ¿Cómo está usted? — Muy bien, gracias. ¿Y usted?» Depois com uma amiga: «¡Hola! ¿Cómo estás? — Bien, gracias. ¿Y tú?» Mantenha as vogais inteiras e diga «Hasta luego» no fim."
       },
       {
         "tipo": "revisao",
-        "min": 4,
+        "min": 2,
         "enunciado": "Leia em voz alta: jamón, gente, queso, cena, zapato, calle, niño, perro. Qual é o som de cada grupo de letras?"
       }
     ]

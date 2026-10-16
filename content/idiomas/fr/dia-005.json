@@ -20,8 +20,64 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Le premier jour / O primeiro dia",
+        "contexto": "Hugo e Emma se conhecem no primeiro dia de um curso em Paris. Ouça a cena inteira: você vai ver como eles dizem quem são e como estão.",
+        "linhas": [
+          {
+            "personagem": "Hugo",
+            "ru": "— Bonjour ! Je suis Hugo. Et toi ?",
+            "pt": "— Bom dia! Eu sou o Hugo. E você?",
+            "audio": "Bonjour ! Je suis Hugo. Et toi ?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Salut, Hugo ! Je suis Emma. Tu es français ?",
+            "pt": "— Oi, Hugo! Eu sou a Emma. Você é francês?",
+            "audio": "Salut, Hugo ! Je suis Emma. Tu es français ?"
+          },
+          {
+            "personagem": "Hugo",
+            "ru": "— Oui, je suis français. Et toi, tu es française ?",
+            "pt": "— Sim, sou francês. E você, é francesa?",
+            "audio": "Oui, je suis français. Et toi, tu es française ?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Non, je suis brésilienne !",
+            "pt": "— Não, sou brasileira!",
+            "audio": "Non, je suis brésilienne !"
+          },
+          {
+            "personagem": "Hugo",
+            "ru": "— Super ! Ça va ?",
+            "pt": "— Que legal! Tudo bem?",
+            "audio": "Super ! Ça va ?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Ça va bien, merci. Je suis très contente !",
+            "pt": "— Tudo bem, obrigada. Estou muito contente!",
+            "audio": "Ça va bien, merci. Je suis très contente !"
+          },
+          {
+            "personagem": "Hugo",
+            "ru": "— Moi aussi, je suis content.",
+            "pt": "— Eu também, estou contente.",
+            "audio": "Moi aussi, je suis content."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Nous sommes contents, alors !",
+            "pt": "— Estamos contentes, então!",
+            "audio": "Nous sommes contents, alors !"
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "je",
@@ -50,6 +106,13 @@
             "pt": "ela",
             "en": "",
             "audio": "elle"
+          },
+          {
+            "ru": "on",
+            "translit": "õ",
+            "pt": "a gente",
+            "en": "",
+            "audio": "on"
           },
           {
             "ru": "nous",
@@ -83,10 +146,36 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 11,
         "titulo": "O verbo être: ser e estar",
-        "explicacao": "PASSO 1: «être» é o verbo mais importante: significa «ser» e «estar». PASSO 2: forma: «je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont». PASSO 3: «tu» é informal (amigos, família, crianças); «vous» é formal (desconhecidos, professores, chefes) e também o plural. Na dúvida, use «vous». PASSO 4: «on» significa «a gente» e, na fala, substitui «nous»: «on est contents». Usa a forma de «il»: «on est». PASSO 5: «je» perde o «e» diante de vogal («j'ai», «j'habite»), mas diante de «suis» não: «je suis». PASSO 6: «ils» e «elles» soam igual a «il» e «elle»; o «s» só aparece na ligação: «ils ont» soa «il-zõ».",
-        "comparacao": "o português tem dois verbos («ser» e «estar»); o francês tem um só, «être». O contexto decide: «Je suis fatigué» = estou cansado; «Je suis français» = sou francês. Em português usamos «tu» ou «você»; em francês a escolha entre «tu» e «vous» muda também o verbo.",
+        "explicacao": "Ouça primeiro: «je suis», «tu es», «il est», «nous sommes», «vous êtes», «ils sont». PASSO 1: «être» é o verbo mais importante do francês. Ele quer dizer «ser» e também «estar». PASSO 2: com «je», diga «suis» (süí). «Je suis Hugo.» «Je suis content.» PASSO 3: com «tu», diga «es», que soa «é». Com «il», «elle» e «on», diga «est», que também soa «é». As duas formas se escrevem diferente e soam igual. PASSO 4: com «nous», diga «sommes» (som). Com «vous», diga «êtes» (zét). Com «ils» e «elles», diga «sont» (sõ). PASSO 5: o sujeito é obrigatório. Em português dizemos «sou brasileiro». Em francês, sempre «je suis brésilien». PASSO 6: «tu» é informal: amigos, família, crianças. «Vous» é formal: desconhecidos, professores, chefes. «Vous» também é o plural de «tu». Na dúvida, use «vous». PASSO 7: «on» quer dizer «a gente». Na fala do dia a dia, ele substitui «nous». «On est contents» usa a forma de «il»: «est».",
+        "comparacao": "o português tem dois verbos, «ser» e «estar». O francês tem um só, «être», e o contexto decide: «Je suis fatigué» é «estou cansado»; «Je suis français» é «sou francês». Em português, «você» serve para quase todo mundo. Em francês, a escolha entre «tu» e «vous» muda também o verbo.",
+        "exemplos": [
+          {
+            "ru": "Je suis Hugo.",
+            "pt": "Eu sou o Hugo."
+          },
+          {
+            "ru": "Tu es fatigué.",
+            "pt": "Você está cansado."
+          },
+          {
+            "ru": "Elle est contente.",
+            "pt": "Ela está contente."
+          },
+          {
+            "ru": "Nous sommes amis.",
+            "pt": "Somos amigos."
+          },
+          {
+            "ru": "Vous êtes madame Martin.",
+            "pt": "A senhora é a Madame Martin."
+          },
+          {
+            "ru": "Ils sont ici.",
+            "pt": "Eles estão aqui."
+          }
+        ],
         "tabela": [
           {
             "pronome": "je",
@@ -144,14 +233,63 @@
         "tag": "Verbos"
       },
       {
+        "tipo": "palavras",
+        "min": 2,
+        "itens": [
+          {
+            "ru": "très",
+            "translit": "tré",
+            "pt": "muito",
+            "en": "",
+            "audio": "très"
+          },
+          {
+            "ru": "un peu",
+            "translit": "ẽ pö",
+            "pt": "um pouco",
+            "en": "",
+            "audio": "un peu"
+          },
+          {
+            "ru": "aussi",
+            "translit": "ôsi",
+            "pt": "também",
+            "en": "",
+            "audio": "aussi"
+          },
+          {
+            "ru": "moi aussi",
+            "translit": "muá ôsi",
+            "pt": "eu também",
+            "en": "",
+            "audio": "moi aussi"
+          },
+          {
+            "ru": "ici",
+            "translit": "isi",
+            "pt": "aqui",
+            "en": "",
+            "audio": "ici"
+          },
+          {
+            "ru": "super",
+            "translit": "süpér",
+            "pt": "que legal, ótimo",
+            "en": "",
+            "audio": "super"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Diga em voz alta: «Je suis…» (seu nome), «Je suis…» (como você está) e «Nous sommes…»."
+        "min": 4,
+        "enunciado": "Apresente-se em voz alta: «Bonjour ! Je suis…» (seu nome). Depois diga como você está («Je suis… » com «content» ou «fatigué»). Por fim, apresente você e um amigo: «Nous sommes…»",
+        "exemplo": "Bonjour ! Je suis Felipe. Je suis content. Nous sommes amis."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Soletre o seu nome em francês e diga as saudações da aula 1."
+        "min": 3,
+        "enunciado": "Aula 1: soletre o seu nome em francês, diga as saudações («bonjour», «salut», «bonsoir», «au revoir», «merci») e responda em voz alta: «Ça va ?»"
       }
     ]
   },

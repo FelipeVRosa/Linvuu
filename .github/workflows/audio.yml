@@ -6,9 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       idioma:
-        description: 'Idioma (de, ru, en, es, fr, it, br)'
+        description: 'Idioma (de, ru, en, es, fr, it, br, pt)'
         required: true
         default: 'de'
+      so_gratis:
+        description: 'Só o que aparece nas aulas grátis (dias 1 a 8)? true/false'
+        required: true
+        default: 'true'
       limite:
         description: 'Máximo de áudios novos (0 = todos)'
         required: true
@@ -22,6 +26,7 @@ permissions:
 env:
   IDIOMA: ${{ inputs.idioma || (startsWith(github.ref_name, 'piloto-audio/ru') && 'ru') || 'de' }}
   LIMITE: ${{ inputs.limite }}
+  SO_GRATIS: ${{ inputs.so_gratis || 'false' }}
 
 jobs:
   audio:
@@ -38,14 +43,14 @@ jobs:
       - run: npm ci
       - name: Validar entradas
         run: |
-          case "$IDIOMA" in de|ru|en|es|fr|it|br) ;; *) echo "idioma inválido"; exit 1;; esac
+          case "$IDIOMA" in de|ru|en|es|fr|it|br|pt) ;; *) echo "idioma inválido"; exit 1;; esac
           case "${LIMITE:-0}" in ''|*[!0-9]*) echo "limite inválido"; exit 1;; esac
       - name: Gerar os MP3
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
             node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite=15 --amostra 2>&1 | tee /tmp/saida.txt
           else
-            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="$LIMITE" 2>&1 | tee /tmp/saida.txt
+            node scripts/gerar-audios.mjs --idioma="$IDIOMA" --limite="$LIMITE" --so-gratis="$SO_GRATIS" 2>&1 | tee /tmp/saida.txt
           fi
       - name: Relatório (duração e tamanho de cada MP3)
         if: always()

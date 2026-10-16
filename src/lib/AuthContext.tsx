@@ -2,6 +2,8 @@ import { createContext, ReactNode, useContext, useEffect, useMemo, useRef, useSt
 import { authConfigurado, carregarAuth } from './firebase';
 import { garantirPerfil } from './perfil';
 import { comPrefixo } from '../i18n';
+import { definirUsuarioProgresso } from './progresso';
+import { limparAudioPrivado } from './audio';
 
 export interface Usuario { uid: string; nome: string; email: string; foto: string | null }
 
@@ -40,6 +42,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     carregarAuth().then(({ auth, m }) => {
       if (cancelado) return;
       parar = m.onAuthStateChanged(auth, (u) => {
+        definirUsuarioProgresso(u?.uid ?? null);
+        limparAudioPrivado();
         setUsuario(u ? paraUsuario(u) : null);
         setCarregando(false);
         // Quem já tinha conta mas ficou sem perfil (ex.: falha de rede no cadastro) ganha o perfil no próximo acesso.

@@ -75,6 +75,7 @@ export const ptBR = {
     vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês ou espanhol) →',
   },
   cursoPagina: {
+    continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
     tituloSeo: (nome: string) => `${nome}: curso para quem fala português, do zero ao B1`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Seu ponto de partida: sessão ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para o nível ${nivel}, sugerimos começar pela sessão ${n}: ${t}.`, irPara: (n: number) => `Ir para a sessão ${n}`,
@@ -150,6 +151,7 @@ export const ptBR = {
     exAluno: (p: string) => `Ex-aluno? ${p} por mês nos primeiros 6 meses. Os primeiros 50 usam o cupom LINVUU50 no checkout.`,
     tresMeses: '3 meses', noPix: ' no Pix, pagamento único', pixTxt: '30% de desconto para quem paga por Pix. Sem renovação automática. O QR code aparece na tela seguinte.', pixBtn: 'Pagar 3 meses no Pix',
     cartaoBoleto: ' no cartão ou boleto, pagamento único', tresBtn: 'Pagar 3 meses no cartão ou boleto', dozeMeses: '12 meses', anoTxt: 'Um ano de acesso a todos os cursos. Sem renovação automática.', anoBtn: 'Pagar 12 meses',
+    escolhido: (p: string) => `Plano escolhido: ${p}.`, continuarPagamento: 'Continuar para o pagamento', semConta: 'Para pagar, você cria uma conta grátis no próximo passo. Os preços abaixo já são os finais.', jaTemConta: 'Já tenho conta: entrar',
     termos: 'Termos de uso e reembolso', moeda: '',
   },
   conta: {

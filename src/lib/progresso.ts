@@ -28,3 +28,12 @@ export const marcarDia = (idioma: string, dia: number, feito: boolean) => {
     window.dispatchEvent(new Event('linvuu:dias'));
   } catch { /* navegador sem armazenamento */ }
 };
+
+/** Curso estudado por último neste navegador (pela sessão aberta mais recentemente). */
+export const ultimoCursoEstudado = (): string | undefined => {
+  let melhor: [string, string] | undefined;
+  for (const [k, v] of Object.entries(ler())) {
+    if (v?.em && (!melhor || v.em > melhor[1])) melhor = [k.split(':')[0], v.em];
+  }
+  return melhor?.[0] ?? lerDias()[0]?.split(':')[0];
+};

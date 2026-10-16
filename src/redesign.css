@@ -417,3 +417,30 @@ a.livro:focus-visible{outline:2px solid var(--verde,#1E3B2F);outline-offset:4px}
 .ex-feedback.repita strong{display:block;font-family:var(--font-display);font-size:clamp(22px,3vw,30px);line-height:1.25;margin-bottom:6px}
 
 .aviso-medicao{border:1px solid var(--line,#d9d2c3);border-radius:12px;padding:12px 14px;margin-bottom:16px;font-size:14px;line-height:1.45}.aviso-medicao p{margin:0 0 10px}.aviso-medicao-botoes{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ===== Funil: preços públicos, retomada e curso por nível ===== */
+.lv-assinatura-conta{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.lv-assinatura-conta a{font-weight:600;text-decoration:underline}
+.lv-assinatura-escolhido{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-left:4px solid var(--verde-floresta)}
+.lv-plano-escolhido{outline:3px solid var(--ocre);outline-offset:-3px}
+.lv-retomar{background:var(--verde-floresta);color:var(--papel)}
+.lv-retomar-in{max-width:var(--max);margin:0 auto;padding:16px var(--pad);display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.lv-retomar-kicker{margin:0;font-size:var(--t-small);font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ocre-claro)}
+.lv-retomar-titulo{margin:2px 0 0;font-family:var(--font-display);font-size:clamp(18px,2.2vw,22px);line-height:1.25}
+.lv-retomar-prog{margin:2px 0 0;font-size:var(--t-small);color:var(--fg-sobre-marca-2)}
+.lv-retomar .btn-primary{background:var(--papel);color:var(--verde-floresta);border-color:var(--papel)}
+.lv-retomar .btn-primary:hover{background:var(--papel-claro)}
+.curso-retomar{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin:8px 0 24px}
+.curso-retomar-prog{display:inline-flex;align-items:center;gap:10px;font-size:var(--t-small);color:var(--fg-2)}
+.curso-retomar-barra{display:inline-block;width:120px;height:6px;background:var(--papel-escuro);border-radius:var(--r-pill);overflow:hidden}
+.curso-retomar-barra>span{display:block;height:100%;background:var(--ocre)}
+.curso-nivel{font-family:var(--font-display);font-size:var(--t-h3);font-weight:500;margin:32px 0 12px;padding-top:16px;border-top:1px solid var(--linha-forte);display:flex;align-items:baseline;gap:12px}
+.curso-nivel small{font-family:var(--font-body);font-size:var(--t-small);color:var(--fg-3);font-weight:500}
+.fase-feita{color:var(--ok);font-weight:700}
+.dia-feito .dia-n{color:var(--ok);font-weight:800}
+.dia-feito .dia-t{color:var(--fg-2)}
+.lv-assinatura{max-width:1040px}
+.lv-assinatura .lv-planos{max-width:none;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.lv-plano{background:var(--papel-claro)}
+.lv-plano-preco span{display:block;font-family:var(--font-body);font-size:var(--t-small);color:var(--fg-2);margin-top:2px}
+.lv-plano .btn{width:100%}

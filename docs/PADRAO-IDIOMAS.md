@@ -15,5 +15,8 @@ Meta de cada aula: **40 exercícios**, diálogo, leitura com perguntas e "Repita
 ## Situação (16/10/2026)
 en 46 · es 40 · fr 40 · it 40 · de 41 · ru 38. Diálogo e leitura ainda faltam em parte de es, fr, it, de e ru: são os próximos complementos a escrever.
 
+## Diálogos e leituras
+Vão primeiro para `content/idiomas/<idioma>/pendentes/` (ainda sem áudio). Veja `docs/PENDENTE-AUDIO.md` para ativar quando o áudio existir.
+
 ## Medição (só com consentimento)
 Eventos anônimos de exercício e fim de sessão, `POST /api/evento`. Relatório: `GET /api/metricas?dias=30` com `Authorization: Bearer $METRICAS_TOKEN` (variável de ambiente com 24+ caracteres; sem ela a rota não existe).

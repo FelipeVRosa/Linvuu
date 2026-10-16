@@ -41,7 +41,7 @@ const lerCsv = (arquivo) => {
 };
 
 const idiomas = fs.readdirSync(path.join(raiz, 'content', 'idiomas')).filter((d) => fs.statSync(path.join(raiz, 'content', 'idiomas', d)).isDirectory());
-const totais = { publicos: 0, privados: 0, semCsv: 0, erros: 0 };
+const totais = { publicos: 0, privados: 0, semCsv: 0, erros: 0, promovidos: 0 };
 
 for (const id of idiomas) {
   const pasta = path.join(raiz, 'public', 'audio', id);
@@ -82,6 +82,13 @@ for (const id of idiomas) {
     for (const t of livres) if (hashTexto(t) + '.mp3' === f) { publicos.add(f); break; }
   }
 
+  // 3b) arquivo que estava privado e agora tem texto grátis (a aula 1 ou 2 mudou) volta para a pasta pública
+  const dirPriv = path.join(raiz, 'server', 'audio-privado', id);
+  if (fs.existsSync(dirPriv)) for (const f of [...publicos]) {
+    if (emDisco.includes(f) || !fs.existsSync(path.join(dirPriv, f))) continue;
+    if (!dry) fs.renameSync(path.join(dirPriv, f), path.join(pasta, f));
+    emDisco.push(f); totais.promovidos = (totais.promovidos ?? 0) + 1;
+  }
   for (const f of [...publicos]) if (!emDisco.includes(f)) publicos.delete(f); // só o que existe em disco
   const privados = emDisco.filter((f) => !publicos.has(f));
   totais.publicos += publicos.size;
@@ -97,5 +104,5 @@ for (const id of idiomas) {
   fs.writeFileSync(path.join(pasta, 'index.json'), JSON.stringify([...publicos].map((f) => f.replace('.mp3', '')).sort()) + '\n');
 }
 
-console.log(`\ntotal: ${totais.publicos} públicos, ${totais.privados} privados, ${totais.semCsv} sem texto no CSV, ${totais.erros} erros de hash${dry ? ' (--dry: nada foi movido)' : ''}`);
+console.log(`\ntotal: ${totais.publicos} públicos, ${totais.privados} privados, ${totais.semCsv} sem texto no CSV, ${totais.erros} erros de hash, ${totais.promovidos} voltaram de privado para público${dry ? ' (--dry: nada foi movido)' : ''}`);
 if (totais.erros) process.exit(1);

@@ -15,6 +15,8 @@ import { LOCALE, useT } from '../i18n';
 import { GUIA_SESSAO } from '../lib/comecar';
 
 const CAMADAS = ['comeceAqui', 'imersao', 'pratica'] as const;
+/** No celular, o objetivo e o guia ficam recolhidos para a aula começar logo na primeira tela. */
+const telaLarga = () => typeof window === 'undefined' || window.matchMedia('(min-width: 901px)').matches;
 
 export default function Dia() {
   const { id, n } = useParams();
@@ -76,7 +78,9 @@ export default function Dia() {
             </span>
             {aula.aula && <p className="kicker-aula-titulo">{aula.aula.titulo}</p>}
             <h1 className="pagina-h1">{aula.aula && aula.titulo.startsWith(`${aula.aula.titulo}: `) ? aula.titulo.slice(aula.aula.titulo.length + 2) : aula.titulo}</h1>
-            <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : T.objetivoDia(aula.objetivo)}</p>
+            {telaLarga()
+              ? <p className="lead">{aula.aula ? T.objetivoAula(aula.aula.objetivo) : T.objetivoDia(aula.objetivo)}</p>
+              : <details className="aa-objetivo"><summary>{T.objetivoRotulo}</summary><p>{aula.aula ? aula.aula.objetivo : T.objetivoDia(aula.objetivo)}</p></details>}
             {aula.status !== 'publicada' && <span className={`pill pill-aula-${aula.status}`}>{STATUS_AULA[aula.status]}</span>}
           </header>
 
@@ -88,9 +92,9 @@ export default function Dia() {
           {aula.sessao ? (
             <>
             {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
-              <details className="guia-sessao" open><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
+              <details className="guia-sessao" open={telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
-            <Sessao key={dia} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.semTraducao ?? LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+            <Sessao key={dia} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.semTraducao ?? LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
             </>
           ) : (
             <div className="camadas">

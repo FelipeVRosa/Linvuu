@@ -7,6 +7,7 @@ import { OutroIdioma } from '../components/OutroIdioma';
 import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, urlEm, useT } from '../i18n';
 import { gratis } from '../config/planos';
+import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
 
@@ -15,6 +16,7 @@ export default function Curso() {
   const [params] = useSearchParams();
   const t = useT();
   const curso = getCurso(id);
+  const feitos = useDiasFeitos(curso?.id);
   usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo));
   if (!curso) return <NaoEncontrada />;
   if (curso.id === 'br') return LOCALE.codigo === 'pt-BR' ? <OutroIdioma para="en" /> : <CursoBr />;
@@ -30,6 +32,10 @@ export default function Curso() {
   const fasesRestantes = FASES.filter((f) => f.dias[1] > ultimo);
   const cob = coberturaDoCurso(curso.id);
   const cobertura = t.cursoPagina.cobertura(cob.traduzidas, cob.total, t.linguas[cob.reserva]);
+  const ret = grupos.length ? pontoDeRetomada(curso.id) : undefined;
+  const grupoRet = ret && feitos.size ? grupos.find((x) => ret.dia >= x.dias[0] && ret.dia <= x.dias[1]) : undefined;
+  const aberto = grupoInicio?.aula ?? grupoRet?.aula ?? grupos[0]?.aula;
+  const aulasPorNivel = grupos.reduce<Record<string, number>>((acc, g) => { const k = g.nivel ?? ''; acc[k] = (acc[k] ?? 0) + 1; return acc; }, {});
 
   return (
     <div className="pagina">
@@ -48,6 +54,20 @@ export default function Curso() {
         </div>
       </header>
 
+      {ret && !inicio && (
+        <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
+          <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">
+            {feitos.size ? t.cursoPagina.continuar(ret.dia, ret.titulo) : t.cursoPagina.comecar}
+          </Link>
+          {feitos.size > 0 && (
+            <span className="curso-retomar-prog">
+              <span className="curso-retomar-barra" aria-hidden="true"><span style={{ width: `${Math.round((100 * feitos.size) / ret.total)}%` }} /></span>
+              {t.cursoPagina.feitas(feitos.size, ret.total)}
+            </span>
+          )}
+        </section>
+      )}
+
       {cursoDeOutroPublico(curso.id) && (
         <p className="nota">{t.cursoPagina.naoParaVoce(curso.nome)} <a href={urlEm('pt-BR')} hrefLang="pt-BR">Português →</a></p>
       )}
@@ -62,12 +82,22 @@ export default function Curso() {
         </section>
       )}
       {stats && stats.publicadas < stats.total && <p className="nota">{t.cursoPagina.producao}</p>}
-      {grupos.map((g) => (
-        <details key={g.aula} className="fase-bloco" open={g.aula === (grupoInicio?.aula ?? grupos[0].aula)}>
+      {grupos.map((g, gi) => {
+        const nDias = g.dias[1] - g.dias[0] + 1;
+        const feitasAula = Array.from({ length: nDias }, (_, k) => g.dias[0] + k).filter((n) => feitos.has(n)).length;
+        const novoNivel = g.nivel && g.nivel !== grupos[gi - 1]?.nivel;
+        return (
+        <div key={g.aula}>
+        {novoNivel && (
+          <h2 className="curso-nivel" id={`nivel-${g.nivel}`}>
+            {NIVEL_LABEL[g.nivel!] ?? g.nivel} <small>{t.cursoPagina.aulasNivel(aulasPorNivel[g.nivel!] ?? 0)}</small>
+          </h2>
+        )}
+        <details className="fase-bloco" open={g.aula === aberto}>
           <summary>
             <span className="fase-num">{t.cursoPagina.aula(g.aula)}</span>
             <strong>{g.titulo}</strong>
-            <span className="fase-dias">{t.cursoPagina.sessoes(g.dias[0], g.dias[1])}</span>
+            <span className={`fase-dias ${feitasAula === nDias ? 'fase-feita' : ''}`}>{feitasAula > 0 ? `${feitasAula === nDias ? '✓ ' : ''}${feitasAula}/${nDias} · ` : ''}{t.cursoPagina.sessoes(g.dias[0], g.dias[1])}</span>
           </summary>
           <ol className="dias" start={g.dias[0]}>
             {Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k).map((n) => {
@@ -75,9 +105,9 @@ export default function Curso() {
               const d = diaDoCurso(curso.id, m);
               const st = stats?.status[d.dia - 1] ?? 'planejada';
               return (
-                <li key={d.dia}>
+                <li key={d.dia} className={feitos.has(d.dia) ? 'dia-feito' : undefined}>
                   <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
-                    <span className="dia-n">{d.dia}</span>
+                    <span className="dia-n">{feitos.has(d.dia) ? <span aria-label={t.cursoPagina.concluida}>✓</span> : d.dia}</span>
                     <span className="dia-t">{d.titulo}<small>{d.objetivo} · {gratis(d.dia) ? t.cursoPagina.gratis : t.cursoPagina.assinantes}</small></span>
                     {st !== 'publicada' && <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>}
                   </Link>
@@ -86,7 +116,9 @@ export default function Curso() {
             })}
           </ol>
         </details>
-      ))}
+        </div>
+        );
+      })}
       {fasesRestantes.length > 0 && <h2 className="pagina-h2">{grupos.length ? t.cursoPagina.depois : t.cursoPagina.trilha}</h2>}
       {fasesRestantes.map((f) => (
         <details key={f.id} className="fase-bloco" open={!grupos.length && f.id === faseInicio}>

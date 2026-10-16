@@ -14,6 +14,7 @@ import { CARTA } from '../config/carta';
 import { LIVROS } from '../config/livros';
 import { ROTULO_BLOCO } from '../lib/aulas';
 import { usePageTitle } from '../lib/usePageTitle';
+import { useRetomadaGeral } from '../lib/retomar';
 import { useT } from '../i18n';
 import { JsonLd } from '../components/JsonLd';
 import { SITE_URL, EMAIL_OFICIAL } from '../config/site';
@@ -38,6 +39,7 @@ const FOTOS = ['/fotos/comece.jpg', '/fotos/imersao.jpg', '/fotos/pratica.jpg'];
 export default function Home() {
   usePageTitle();
   const t = useT();
+  const retomada = useRetomadaGeral();
   const [lang, setLang] = useState(PADRAO);
   const [tocando, setTocando] = useState(false);
   const amostra = lang ? AMOSTRA[lang] : undefined;
@@ -55,6 +57,18 @@ export default function Home() {
 
   return (
     <>
+      {retomada && (
+        <section className="lv-retomar" aria-label={t.cursoPagina.retomarKicker(retomada.nome)}>
+          <div className="lv-retomar-in">
+            <div>
+              <p className="lv-retomar-kicker">{t.cursoPagina.retomarKicker(retomada.nome)}</p>
+              <p className="lv-retomar-titulo">{t.cursoPagina.sessaoTitulo(retomada.dia, retomada.titulo)}</p>
+              <p className="lv-retomar-prog">{t.cursoPagina.feitas(retomada.feitos, retomada.total)}</p>
+            </div>
+            <Link to={`/curso/${retomada.idioma}/dia/${retomada.dia}`} className="btn btn-primary">{t.cursoPagina.continuarBtn}</Link>
+          </div>
+        </section>
+      )}
       <section className="lv-hero">
         <div className="lv-hero-in">
           <div className="lv-hero-main">

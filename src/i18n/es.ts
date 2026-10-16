@@ -76,6 +76,7 @@ export const es: Dicionario = {
     vazio: (q: string) => `No encontramos ningún curso para "${q}". Prueba otra palabra o`, limpar: 'borra la búsqueda', portugues: 'Portugués de Brasil para hispanohablantes →',
   },
   cursoPagina: {
+    continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sesión ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar en la sesión ${n}: ${t}`, comecar: 'Empezar por la sesión 1 (gratis)', feitas: (a: number, b: number) => `${a} de ${b} sesiones completadas`, concluida: 'completada', aulasNivel: (n: number) => `${n} lecciones`, retomarKicker: (c: string) => `Continuar ${c}`,
     tituloSeo: (nome: string) => `${nome} para hispanohablantes, de cero a B1`,
     fatos: ['Sesiones de ~30 min', 'Empieza desde cero'], noAr: (a: number, b: number) => `${a} de ${b} sesiones disponibles`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Tu punto de partida: sesión ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para el nivel ${nivel}, te sugerimos empezar por la sesión ${n}: ${t}.`, irPara: (n: number) => `Ir a la sesión ${n}`,
@@ -117,7 +118,7 @@ export const es: Dicionario = {
     anterior: (n: number) => `← ${sessaoDe(n)}`, seguinte: (n: number) => `${sessaoDe(n)} →`, rotuloDia: sessaoDe, navDias: 'Moverse entre sesiones',
     kickerAula: (a: number, s: string, t: number, m: number) => `Lección ${a} · sesión ${s} de ${t} · ${m} min`,
     kickerDia: (d: number, t: number, fase: string, nivel: string) => `Sesión ${d} de ${t} · ${fase} · ${nivel}`,
-    objetivoAula: (o: string) => `Objetivo de la lección: ${o}`, objetivoDia: (o: string) => `Al final de la sesión: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
+    objetivoRotulo: 'Objetivo de la lección', objetivoAula: (o: string) => `Objetivo de la lección: ${o}`, objetivoDia: (o: string) => `Al final de la sesión: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
     emRevisao: 'Lección en revisión: el contenido está escrito y ya puedes estudiarlo, pero todavía se está revisando.',
     naoPublicada: (curso: string) => `Esta lección de ${curso} todavía no está publicada. Su objetivo ya está definido; el audio, el texto y los ejercicios están en producción.`,
     semTraducao: (l: string) => `Esta sesión todavía no está traducida al español, así que sus explicaciones aparecen en ${l}. Las frases, los diálogos y el audio son los mismos.`,
@@ -151,6 +152,7 @@ export const es: Dicionario = {
     exAluno: (p: string) => `¿Exalumno? ${p} al mes durante los primeros 6 meses. Los primeros 50 usan el cupón LINVUU50 al pagar.`,
     tresMeses: '3 meses', noPix: ' con Pix, pago único', pixTxt: '30 % de descuento pagando con Pix (requiere cuenta bancaria en Brasil). Sin renovación automática. El código QR aparece en la pantalla siguiente.', pixBtn: 'Pagar 3 meses con Pix',
     cartaoBoleto: ' con tarjeta, pago único', tresBtn: 'Pagar 3 meses con tarjeta', dozeMeses: '12 meses', anoTxt: 'Un año de acceso a todos los cursos. Sin renovación automática.', anoBtn: 'Pagar 12 meses',
+    escolhido: (p: string) => `Plan elegido: ${p}.`, continuarPagamento: 'Continuar al pago', semConta: 'Para pagar, creas una cuenta gratis en el siguiente paso. Los precios de abajo ya son los finales.', jaTemConta: 'Ya tengo cuenta: entrar',
     termos: 'Términos de uso y reembolso', moeda: ' (reales brasileños)',
   },
   conta: {

@@ -30,6 +30,15 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
   const [abertos, setAbertos] = useState<Record<number, boolean>>({});
   const [tema, setTema] = useState<Tema>(lerTema);
   const [avisoTema, setAvisoTema] = useState('');
+  // O tema da aula vale para a página inteira (cabeçalho e barra do topo), não só para a área do aluno.
+  useEffect(() => {
+    const raiz = document.documentElement;
+    raiz.dataset.temaAluno = tema;
+    const cor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    const antes = cor?.content;
+    if (cor) cor.content = tema === 'escuro' ? '#1A221D' : '#F5F1E8';
+    return () => { delete raiz.dataset.temaAluno; if (cor && antes) cor.content = antes; };
+  }, [tema]);
   const [sons, setSons] = useState(sonsLigados);
   // Ao concluir um dia, o traço da barra desenha de novo. A primeira leitura (ao abrir a página) não desenha.
   const [desenho, setDesenho] = useState(0);
@@ -170,6 +179,20 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 }
 
 /** Botão de conclusão do dia: marca e desmarca, salva na conta quando há login e mostra um reforço curto. */
+/** Marca a sessão (dia) como concluída neste navegador e na conta, toca o som e devolve a mensagem de progresso. */
+export function concluirDia(idioma: string, dia: number, logado: boolean): string {
+  const T = textos(idioma);
+  const jaEstava = diaConcluido(idioma, dia);
+  marcarDia(idioma, dia, true);
+  if (logado) salvarDiaConta(idioma, dia, true);
+  const total = statusDoCurso(idioma)?.total ?? 0;
+  const feitos = new Set([...diasConcluidos(idioma), dia]);
+  const grupo = gruposDoCurso(idioma).find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
+  const aulaFechada = !!grupo && Array.from({ length: grupo.dias[1] - grupo.dias[0] + 1 }, (_, k) => grupo.dias[0] + k).every((n) => feitos.has(n));
+  if (!jaEstava) somConcluido();
+  return aulaFechada ? T.msgAula : T.msgDia(feitos.size, total);
+}
+
 export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
@@ -184,15 +207,8 @@ export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
 
   const clicar = () => {
     const novo = !feito;
-    marcarDia(idioma, dia, novo);
-    if (usuario) salvarDiaConta(idioma, dia, novo);
-    if (!novo) { setAviso(null); return; }
-    const total = statusDoCurso(idioma)?.total ?? 0;
-    const feitos = new Set([...diasConcluidos(idioma), dia]);
-    const grupo = gruposDoCurso(idioma).find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
-    const aulaFechada = !!grupo && Array.from({ length: grupo.dias[1] - grupo.dias[0] + 1 }, (_, k) => grupo.dias[0] + k).every((n) => feitos.has(n));
-    setAviso(aulaFechada ? T.msgAula : T.msgDia(feitos.size, total));
-    somConcluido();
+    if (!novo) { marcarDia(idioma, dia, false); if (usuario) salvarDiaConta(idioma, dia, false); setAviso(null); return; }
+    setAviso(concluirDia(idioma, dia, !!usuario));
   };
 
   return (

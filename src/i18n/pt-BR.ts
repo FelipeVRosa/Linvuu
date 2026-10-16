@@ -75,6 +75,7 @@ export const ptBR = {
     vazio: (q: string) => `Nenhum curso encontrado para "${q}". Tente outra palavra ou`, limpar: 'limpe a busca', portugues: 'Português para estrangeiros (aulas em inglês ou espanhol) →',
   },
   cursoPagina: {
+    continuarBtn: 'Continuar', sessaoTitulo: (n: number, t: string) => `Sessão ${n}: ${t}`, continuar: (n: number, t: string) => `Continuar na sessão ${n}: ${t}`, comecar: 'Começar pela sessão 1 (grátis)', feitas: (a: number, b: number) => `${a} de ${b} sessões concluídas`, concluida: 'concluída', aulasNivel: (n: number) => `${n} aulas`, retomarKicker: (c: string) => `Continuar ${c}`,
     tituloSeo: (nome: string) => `${nome}: curso para quem fala português, do zero ao B1`,
     fatos: ['Sessões de ~30 min', 'Começa do zero'], noAr: (a: number, b: number) => `${a} de ${b} sessões no ar`, gramatica: (nome: string) => `Gramática: ${nome.toLowerCase()} →`,
     partida: (n: number) => `Seu ponto de partida: sessão ${n}`, sugerimos: (nivel: string, n: number, t: string) => `Para o nível ${nivel}, sugerimos começar pela sessão ${n}: ${t}.`, irPara: (n: number) => `Ir para a sessão ${n}`,
@@ -116,7 +117,7 @@ export const ptBR = {
     anterior: (n: number) => `← ${sessaoDe(n)}`, seguinte: (n: number) => `${sessaoDe(n)} →`, rotuloDia: sessaoDe, navDias: 'Navegar entre sessões',
     kickerAula: (a: number, s: string, t: number, m: number) => `Aula ${a} · sessão ${s} de ${t} · ${m} min`,
     kickerDia: (d: number, t: number, fase: string, nivel: string) => `Sessão ${d} de ${t} · ${fase} · ${nivel}`,
-    objetivoAula: (o: string) => `Objetivo da aula: ${o}`, objetivoDia: (o: string) => `Ao final da sessão: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
+    objetivoRotulo: 'Objetivo da aula', objetivoAula: (o: string) => `Objetivo da aula: ${o}`, objetivoDia: (o: string) => `Ao final da sessão: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
     emRevisao: 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão.',
     naoPublicada: (curso: string) => `Esta aula de ${curso} ainda não foi publicada. O objetivo já está definido; o áudio, o texto e os exercícios estão em produção.`,
     semTraducao: (l: string) => `Esta sessão ainda não foi traduzida para o português; as explicações aparecem em ${l}.`,
@@ -150,6 +151,7 @@ export const ptBR = {
     exAluno: (p: string) => `Ex-aluno? ${p} por mês nos primeiros 6 meses. Os primeiros 50 usam o cupom LINVUU50 no checkout.`,
     tresMeses: '3 meses', noPix: ' no Pix, pagamento único', pixTxt: '30% de desconto para quem paga por Pix. Sem renovação automática. O QR code aparece na tela seguinte.', pixBtn: 'Pagar 3 meses no Pix',
     cartaoBoleto: ' no cartão ou boleto, pagamento único', tresBtn: 'Pagar 3 meses no cartão ou boleto', dozeMeses: '12 meses', anoTxt: 'Um ano de acesso a todos os cursos. Sem renovação automática.', anoBtn: 'Pagar 12 meses',
+    escolhido: (p: string) => `Plano escolhido: ${p}.`, continuarPagamento: 'Continuar para o pagamento', semConta: 'Para pagar, você cria uma conta grátis no próximo passo. Os preços abaixo já são os finais.', jaTemConta: 'Já tenho conta: entrar',
     termos: 'Termos de uso e reembolso', moeda: '',
   },
   conta: {

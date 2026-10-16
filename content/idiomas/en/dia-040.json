@@ -50,12 +50,45 @@
             "id": "en-010-e02"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Com licença, onde fica a estação?»",
+            "opcoes": [
+              "Excuse",
+              "me,",
+              "is",
+              "the",
+              "where",
+              "station?"
+            ],
+            "gabarito": "Excuse me, where is the station?",
+            "explicacao": "Escreva: Excuse me, where is the station?",
+            "id": "en-010-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Go straight",
             "respostaEsperada": "Go straight",
             "explicacao": "Escreva: go straight.",
             "id": "en-010-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Excuse me, where is the station?",
+            "respostaEsperada": "Excuse me, where is the station?",
+            "explicacao": "Com licença, onde fica a estação?",
+            "id": "en-010-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Where is the bank",
+            "respostaEsperada": "Where is the bank",
+            "explicacao": "Escreva: where is the bank.",
+            "id": "en-010-e04"
           },
           {
             "tipo": "repeat",
@@ -67,12 +100,23 @@
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Where is the bank",
-            "respostaEsperada": "Where is the bank",
-            "explicacao": "Escreva: where is the bank.",
-            "id": "en-010-e04"
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Siga reto e vire à esquerda no semáforo.»",
+            "opcoes": [
+              "at",
+              "light.",
+              "straight",
+              "traffic",
+              "Go",
+              "left",
+              "the",
+              "turn",
+              "and"
+            ],
+            "gabarito": "Go straight and turn left at the traffic light.",
+            "explicacao": "Escreva: Go straight and turn left at the traffic light.",
+            "id": "en-010-x03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -87,6 +131,15 @@
             "id": "en-010-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Go straight and turn left at the traffic light.",
+            "respostaEsperada": "Go straight and turn left at the traffic light.",
+            "explicacao": "Siga reto e vire à esquerda no semáforo.",
+            "id": "en-010-x04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Siga reto»?",
             "opcoes": [
@@ -97,15 +150,6 @@
             "gabarito": "Go straight.",
             "explicacao": "Imperativo sem -s.",
             "id": "en-010-e06"
-          },
-          {
-            "tipo": "repeat",
-            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-            "audio": "Don't run here",
-            "respostaEsperada": "Don't run here.",
-            "explicacao": "Não corra aqui.",
-            "id": "en-010-r02",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -120,6 +164,19 @@
             "id": "en-010-e07"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «É longe?»",
+            "opcoes": [
+              "it",
+              "far?",
+              "Is"
+            ],
+            "gabarito": "Is it far?",
+            "explicacao": "Escreva: Is it far?",
+            "id": "en-010-x05",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual pergunta está correta?",
             "opcoes": [
@@ -130,6 +187,24 @@
             "gabarito": "Where is the bank?",
             "explicacao": "Where + is + sujeito.",
             "id": "en-010-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Is it far?",
+            "respostaEsperada": "Is it far?",
+            "explicacao": "É longe?",
+            "id": "en-010-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Don't run here",
+            "respostaEsperada": "Don't run here.",
+            "explicacao": "Não corra aqui.",
+            "id": "en-010-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -144,12 +219,17 @@
             "id": "en-010-e09"
           },
           {
-            "tipo": "repeat",
-            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-            "audio": "Where is the bank",
-            "respostaEsperada": "Where is the bank?",
-            "explicacao": "Onde fica o banco?",
-            "id": "en-010-r03",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Muito obrigado.»",
+            "opcoes": [
+              "much.",
+              "Thank",
+              "very",
+              "you"
+            ],
+            "gabarito": "Thank you very much.",
+            "explicacao": "Escreva: Thank you very much.",
+            "id": "en-010-x07",
             "complemento": true
           },
           {
@@ -165,6 +245,15 @@
             "id": "en-010-e10"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Thank you very much.",
+            "respostaEsperada": "Thank you very much.",
+            "explicacao": "Muito obrigado.",
+            "id": "en-010-x08",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "It is ___ Oak Street. (na rua)",
             "opcoes": [
@@ -177,6 +266,30 @@
             "id": "en-010-e11"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Where is the bank",
+            "respostaEsperada": "Where is the bank?",
+            "explicacao": "Onde fica o banco?",
+            "id": "en-010-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «supermarket»?",
+            "audio": "supermarket",
+            "opcoes": [
+              "virar",
+              "atravessar",
+              "supermercado",
+              "esquerda"
+            ],
+            "gabarito": "supermercado",
+            "explicacao": "«supermarket» = supermercado.",
+            "id": "en-010-x09",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "___ go! (vamos)",
             "opcoes": [
@@ -187,6 +300,21 @@
             "gabarito": "Let's",
             "explicacao": "Let's + verbo.",
             "id": "en-010-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «bank»?",
+            "audio": "bank",
+            "opcoes": [
+              "virar",
+              "supermercado",
+              "esquerda",
+              "banco"
+            ],
+            "gabarito": "banco",
+            "explicacao": "«bank» = banco.",
+            "id": "en-010-x10",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -213,6 +341,21 @@
             "gabarito": "Please don't run.",
             "explicacao": "Please + don't + verbo.",
             "id": "en-010-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «pharmacy»?",
+            "audio": "pharmacy",
+            "opcoes": [
+              "direita",
+              "estação",
+              "farmácia",
+              "rua"
+            ],
+            "gabarito": "farmácia",
+            "explicacao": "«pharmacy» = farmácia.",
+            "id": "en-010-x11",
+            "complemento": true
           },
           {
             "tipo": "producao",

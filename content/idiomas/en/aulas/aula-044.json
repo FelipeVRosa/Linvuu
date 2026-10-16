@@ -443,12 +443,42 @@
               "id": "en-044-e02"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Olá, estou ligando por causa de um pedido. Ainda não foi entregue.»",
+              "opcoes": [
+                "yet.",
+                "been",
+                "about",
+                "an",
+                "calling",
+                "delivered",
+                "It",
+                "order.",
+                "hasn't",
+                "Hello,",
+                "I'm"
+              ],
+              "gabarito": "Hello, I'm calling about an order. It hasn't been delivered yet.",
+              "explicacao": "Escreva: Hello, I'm calling about an order. It hasn't been delivered yet.",
+              "id": "en-044-x01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "This can be done online",
               "respostaEsperada": "This can be done online",
               "explicacao": "Escreva: this can be done online.",
               "id": "en-044-e03"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Hello, I'm calling about an order. It hasn't been delivered yet.",
+              "respostaEsperada": "Hello, I'm calling about an order. It hasn't been delivered yet.",
+              "explicacao": "Olá, estou ligando por causa de um pedido. Ainda não foi entregue.",
+              "id": "en-044-x02",
+              "complemento": true
             },
             {
               "tipo": "repeat",
@@ -466,6 +496,22 @@
               "respostaEsperada": "Has the email been sent",
               "explicacao": "Escreva: has the email been sent.",
               "id": "en-044-e04"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sinto muito. Quando foi feito o pedido?»",
+              "opcoes": [
+                "I'm",
+                "When",
+                "was",
+                "sorry.",
+                "ordered?",
+                "it"
+              ],
+              "gabarito": "I'm sorry. When was it ordered?",
+              "explicacao": "Escreva: I'm sorry. When was it ordered?",
+              "id": "en-044-x03",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -492,6 +538,15 @@
               "id": "en-044-e06"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I'm sorry. When was it ordered?",
+              "respostaEsperada": "I'm sorry. When was it ordered?",
+              "explicacao": "Sinto muito. Quando foi feito o pedido?",
+              "id": "en-044-x04",
+              "complemento": true
+            },
+            {
               "tipo": "repeat",
               "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "I had my hair cut",
@@ -513,6 +568,27 @@
               "id": "en-044-e07"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Vou verificar. Sim, estou vendo. O endereço errado foi digitado.»",
+              "opcoes": [
+                "I",
+                "see.",
+                "wrong",
+                "me",
+                "Yes,",
+                "Let",
+                "entered.",
+                "address",
+                "check.",
+                "The",
+                "was"
+              ],
+              "gabarito": "Let me check. Yes, I see. The wrong address was entered.",
+              "explicacao": "Escreva: Let me check. Yes, I see. The wrong address was entered.",
+              "id": "en-044-x05",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -523,6 +599,15 @@
               "gabarito": "I have my car repaired every year.",
               "explicacao": "have + objeto + particípio.",
               "id": "en-044-e08"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Let me check. Yes, I see. The wrong address was entered.",
+              "respostaEsperada": "Let me check. Yes, I see. The wrong address was entered.",
+              "explicacao": "Vou verificar. Sim, estou vendo. O endereço errado foi digitado.",
+              "id": "en-044-x06",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -543,6 +628,21 @@
               "respostaEsperada": "This can be done online.",
               "explicacao": "Isto pode ser feito on-line.",
               "id": "en-044-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «haircut»?",
+              "audio": "haircut",
+              "opcoes": [
+                "instalar",
+                "revisar (carro), serviço",
+                "corte de cabelo",
+                "foi feito (agora)"
+              ],
+              "gabarito": "corte de cabelo",
+              "explicacao": "«haircut» = corte de cabelo.",
+              "id": "en-044-x07",
               "complemento": true
             },
             {
@@ -570,6 +670,21 @@
               "id": "en-044-e11"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «warranty»?",
+              "audio": "warranty",
+              "opcoes": [
+                "corte de cabelo",
+                "garantia",
+                "deve ser feito",
+                "reembolso"
+              ],
+              "gabarito": "garantia",
+              "explicacao": "«warranty» = garantia.",
+              "id": "en-044-x08",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Where do you ___ your hair cut?",
               "opcoes": [
@@ -591,6 +706,21 @@
               "complemento": true
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «complaint»?",
+              "audio": "complaint",
+              "opcoes": [
+                "pode ser feito",
+                "relatório",
+                "quebrado",
+                "reclamação"
+              ],
+              "gabarito": "reclamação",
+              "explicacao": "«complaint» = reclamação.",
+              "id": "en-044-x09",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «The report must be submitted by Friday.»",
               "opcoes": [
@@ -605,6 +735,21 @@
               "gabarito": "The report must be submitted by Friday.",
               "explicacao": "must be + particípio.",
               "id": "en-044-e13"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «should be done»?",
+              "audio": "should be done",
+              "opcoes": [
+                "deveria ser feito",
+                "pode ser feito",
+                "deve ser feito",
+                "reembolso"
+              ],
+              "gabarito": "deveria ser feito",
+              "explicacao": "«should be done» = deveria ser feito.",
+              "id": "en-044-x10",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

@@ -433,6 +433,25 @@
               "id": "en-057-e01"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Obrigada por vir, Ana. Fale sobre você.»",
+              "opcoes": [
+                "Thank",
+                "yourself.",
+                "you",
+                "Ana.",
+                "coming,",
+                "me",
+                "for",
+                "Tell",
+                "about"
+              ],
+              "gabarito": "Thank you for coming, Ana. Tell me about yourself.",
+              "explicacao": "Escreva: Thank you for coming, Ana. Tell me about yourself.",
+              "id": "en-057-x01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
               "audio": "I am good at solving problems",
@@ -448,10 +467,41 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
+              "audio": "Thank you for coming, Ana. Tell me about yourself.",
+              "respostaEsperada": "Thank you for coming, Ana. Tell me about yourself.",
+              "explicacao": "Obrigada por vir, Ana. Fale sobre você.",
+              "id": "en-057-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
               "audio": "Managed a team of five",
               "respostaEsperada": "Managed a team of five",
               "explicacao": "Escreva: managed a team of five.",
               "id": "en-057-e03"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Tell me about yourself",
+              "respostaEsperada": "Tell me about yourself",
+              "explicacao": "Escreva: tell me about yourself.",
+              "id": "en-057-e04"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Quais são seus pontos fortes?»",
+              "opcoes": [
+                "your",
+                "are",
+                "strengths?",
+                "What"
+              ],
+              "gabarito": "What are your strengths?",
+              "explicacao": "Escreva: What are your strengths?",
+              "id": "en-057-x03",
+              "complemento": true
             },
             {
               "tipo": "repeat",
@@ -465,10 +515,11 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Tell me about yourself",
-              "respostaEsperada": "Tell me about yourself",
-              "explicacao": "Escreva: tell me about yourself.",
-              "id": "en-057-e04"
+              "audio": "What are your strengths?",
+              "respostaEsperada": "What are your strengths?",
+              "explicacao": "Quais são seus pontos fortes?",
+              "id": "en-057-x04",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -483,6 +534,26 @@
               "id": "en-057-e05"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sou organizada e trabalho bem em equipe.»",
+              "opcoes": [
+                "work",
+                "organized",
+                "I",
+                "team.",
+                "a",
+                "in",
+                "am",
+                "and",
+                "I",
+                "well"
+              ],
+              "gabarito": "I am organized and I work well in a team.",
+              "explicacao": "Escreva: I am organized and I work well in a team.",
+              "id": "en-057-x05",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -495,12 +566,12 @@
               "id": "en-057-e06"
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "I am good at solving problems",
-              "respostaEsperada": "I am good at solving problems.",
-              "explicacao": "Eu sou bom em resolver problemas.",
-              "id": "en-057-r02",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I am organized and I work well in a team.",
+              "respostaEsperada": "I am organized and I work well in a team.",
+              "explicacao": "Sou organizada e trabalho bem em equipe.",
+              "id": "en-057-x06",
               "complemento": true
             },
             {
@@ -516,6 +587,22 @@
               "id": "en-057-e07"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Por que quer este emprego?»",
+              "opcoes": [
+                "job?",
+                "want",
+                "do",
+                "this",
+                "Why",
+                "you"
+              ],
+              "gabarito": "Why do you want this job?",
+              "explicacao": "Escreva: Why do you want this job?",
+              "id": "en-057-x07",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual resposta é boa para «What are your strengths?»",
               "opcoes": [
@@ -526,6 +613,24 @@
               "gabarito": "I am organized.",
               "explicacao": "Ponto forte.",
               "id": "en-057-e08"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I am good at solving problems",
+              "respostaEsperada": "I am good at solving problems.",
+              "explicacao": "Eu sou bom em resolver problemas.",
+              "id": "en-057-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Why do you want this job?",
+              "respostaEsperada": "Why do you want this job?",
+              "explicacao": "Por que quer este emprego?",
+              "id": "en-057-x08",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -540,12 +645,18 @@
               "id": "en-057-e09"
             },
             {
-              "tipo": "repeat",
-              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
-              "audio": "Tell me about yourself",
-              "respostaEsperada": "Tell me about yourself.",
-              "explicacao": "Fale um pouco sobre você.",
-              "id": "en-057-r03",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «interview»?",
+              "audio": "interview",
+              "opcoes": [
+                "entrevista",
+                "responsabilidades",
+                "habilidades",
+                "contratar"
+              ],
+              "gabarito": "entrevista",
+              "explicacao": "«interview» = entrevista.",
+              "id": "en-057-x09",
               "complemento": true
             },
             {
@@ -561,6 +672,21 @@
               "id": "en-057-e10"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «skills»?",
+              "audio": "skills",
+              "opcoes": [
+                "candidatar-se a",
+                "habilidades",
+                "desafio",
+                "ponto forte"
+              ],
+              "gabarito": "habilidades",
+              "explicacao": "«skills» = habilidades.",
+              "id": "en-057-x10",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I ___ here for five years. (trabalho há)",
               "opcoes": [
@@ -571,6 +697,45 @@
               "gabarito": "have worked",
               "explicacao": "present perfect.",
               "id": "en-057-e11"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «apply for»?",
+              "audio": "apply for",
+              "opcoes": [
+                "entrevista",
+                "formação",
+                "referência",
+                "candidatar-se a"
+              ],
+              "gabarito": "candidatar-se a",
+              "explicacao": "«apply for» = candidatar-se a.",
+              "id": "en-057-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Tell me about yourself",
+              "respostaEsperada": "Tell me about yourself.",
+              "explicacao": "Fale um pouco sobre você.",
+              "id": "en-057-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «reference»?",
+              "audio": "reference",
+              "opcoes": [
+                "desafio",
+                "referência",
+                "ponto forte",
+                "emprego"
+              ],
+              "gabarito": "referência",
+              "explicacao": "«reference» = referência.",
+              "id": "en-057-x12",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -600,6 +765,21 @@
               "id": "en-057-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «bilingual»?",
+              "audio": "bilingual",
+              "opcoes": [
+                "bilíngue",
+                "responsabilidades",
+                "conquista",
+                "experiência"
+              ],
+              "gabarito": "bilíngue",
+              "explicacao": "«bilingual» = bilíngue.",
+              "id": "en-057-x13",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «I have worked here for five years.»",
               "opcoes": [
@@ -614,6 +794,21 @@
               "gabarito": "I have worked here for five years.",
               "explicacao": "present perfect + for.",
               "id": "en-057-e14"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «degree»?",
+              "audio": "degree",
+              "opcoes": [
+                "formação",
+                "diploma",
+                "desafio",
+                "carreira"
+              ],
+              "gabarito": "diploma",
+              "explicacao": "«degree» = diploma.",
+              "id": "en-057-x14",
+              "complemento": true
             },
             {
               "tipo": "producao",

@@ -50,12 +50,37 @@
             "id": "en-029-e02"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Com licença, posso sentar aqui?»",
+            "opcoes": [
+              "here?",
+              "sit",
+              "could",
+              "me,",
+              "I",
+              "Excuse"
+            ],
+            "gabarito": "Excuse me, could I sit here?",
+            "explicacao": "Escreva: Excuse me, could I sit here?",
+            "id": "en-029-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "May I come in",
             "respostaEsperada": "May I come in",
             "explicacao": "Escreva: may I come in.",
             "id": "en-029-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Excuse me, could I sit here?",
+            "respostaEsperada": "Excuse me, could I sit here?",
+            "explicacao": "Com licença, posso sentar aqui?",
+            "id": "en-029-x02",
+            "complemento": true
           },
           {
             "tipo": "repeat",
@@ -73,6 +98,22 @@
             "respostaEsperada": "Can I borrow your pen",
             "explicacao": "Escreva: can I borrow your pen.",
             "id": "en-029-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Claro. O assento está livre.»",
+            "opcoes": [
+              "The",
+              "is",
+              "course.",
+              "seat",
+              "Of",
+              "free."
+            ],
+            "gabarito": "Of course. The seat is free.",
+            "explicacao": "Escreva: Of course. The seat is free.",
+            "id": "en-029-x03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -99,6 +140,15 @@
             "id": "en-029-e06"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Of course. The seat is free.",
+            "respostaEsperada": "Of course. The seat is free.",
+            "explicacao": "Claro. O assento está livre.",
+            "id": "en-029-x04",
+            "complemento": true
+          },
+          {
             "tipo": "repeat",
             "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
             "audio": "Could you open the window, please",
@@ -120,6 +170,20 @@
             "id": "en-029-e07"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Claro, aqui está.»",
+            "opcoes": [
+              "here",
+              "you",
+              "go.",
+              "Sure,"
+            ],
+            "gabarito": "Sure, here you go.",
+            "explicacao": "Escreva: Sure, here you go.",
+            "id": "en-029-x05",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -130,6 +194,15 @@
             "gabarito": "It might rain.",
             "explicacao": "Sem -s, sem to.",
             "id": "en-029-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sure, here you go.",
+            "respostaEsperada": "Sure, here you go.",
+            "explicacao": "Claro, aqui está.",
+            "id": "en-029-x06",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -150,6 +223,26 @@
             "respostaEsperada": "May I come in?",
             "explicacao": "Posso entrar?",
             "id": "en-029-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Meu celular pode descarregar logo. Posso pegar o seu carregador emprestado?»",
+            "opcoes": [
+              "My",
+              "I",
+              "borrow",
+              "might",
+              "die",
+              "phone",
+              "May",
+              "soon.",
+              "charger?",
+              "your"
+            ],
+            "gabarito": "My phone might die soon. May I borrow your charger?",
+            "explicacao": "Escreva: My phone might die soon. May I borrow your charger?",
+            "id": "en-029-x07",
             "complemento": true
           },
           {
@@ -177,6 +270,15 @@
             "id": "en-029-e11"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "My phone might die soon. May I borrow your charger?",
+            "respostaEsperada": "My phone might die soon. May I borrow your charger?",
+            "explicacao": "Meu celular pode descarregar logo. Posso pegar o seu carregador emprestado?",
+            "id": "en-029-x08",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "She ___ be late. (talvez seja)",
             "opcoes": [
@@ -199,6 +301,27 @@
           },
           {
             "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Sinto muito, não tenho. Talvez o condutor tenha.»",
+            "opcoes": [
+              "I'm",
+              "one.",
+              "don't",
+              "the",
+              "conductor",
+              "has",
+              "sorry,",
+              "Maybe",
+              "one.",
+              "have",
+              "I"
+            ],
+            "gabarito": "I'm sorry, I don't have one. Maybe the conductor has one.",
+            "explicacao": "Escreva: I'm sorry, I don't have one. Maybe the conductor has one.",
+            "id": "en-029-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Could you help me, please?»",
             "opcoes": [
               "Could",
@@ -210,6 +333,15 @@
             "gabarito": "Could you help me, please?",
             "explicacao": "Could + sujeito + verbo.",
             "id": "en-029-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "I'm sorry, I don't have one. Maybe the conductor has one.",
+            "respostaEsperada": "I'm sorry, I don't have one. Maybe the conductor has one.",
+            "explicacao": "Sinto muito, não tenho. Talvez o condutor tenha.",
+            "id": "en-029-x10",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

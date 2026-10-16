@@ -16,7 +16,7 @@ window.addEventListener('vite:preloadError', (e) => {
   e.preventDefault();
   window.location.reload();
 });
-import { AuthProvider } from './lib/AuthContext';
+import { useAuth, AuthProvider } from './lib/AuthContext';
 import { LOCALE, localeLembrado, urlEm } from './i18n';
 import { carregarTraducoes } from './lib/content';
 
@@ -25,11 +25,17 @@ const lembrado = localeLembrado();
 if (lembrado && lembrado !== LOCALE.codigo && !LOCALE.prefixo) window.location.replace(urlEm(lembrado));
 document.documentElement.lang = LOCALE.codigo;
 
+function AplicacaoDaConta() {
+  const { usuario, carregando } = useAuth();
+  if (carregando) return null;
+  return <App key={usuario?.uid ?? 'visitante'} />;
+}
+
 // Em inglês e espanhol, os títulos traduzidos das aulas chegam antes da primeira tela (um arquivo pequeno, só do idioma escolhido).
 carregarTraducoes().finally(() => createRoot(document.getElementById('root')!).render(
   <BrowserRouter basename={LOCALE.prefixo || undefined}>
     <AuthProvider>
-      <App />
+      <AplicacaoDaConta />
     </AuthProvider>
   </BrowserRouter>
 ));

@@ -18,7 +18,8 @@
     "testar:medicao": "node --import tsx scripts/testar-medicao.ts",
     "testar:seguranca": "node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts",
     "validar:design": "node scripts/validar-design.mjs",
-    "app:android": "node scripts/app-android.mjs"
+    "app:android": "node scripts/app-android.mjs",
+    "testar:progresso": "node --import tsx scripts/testar-progresso.ts"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.3",

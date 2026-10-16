@@ -50,6 +50,15 @@ const vozDoNavegador = (texto: string, idioma: string) => new Promise<void>((ok)
 });
 
 const privados = new Map<string, Promise<string | null>>();
+let geracaoPrivada = 0;
+/** Revoga blobs e descarta downloads em andamento quando a conta muda. */
+export function limparAudioPrivado() {
+  geracaoPrivada++;
+  parar();
+  for (const p of privados.values()) void p.then((url) => { if (url) URL.revokeObjectURL(url); });
+  privados.clear();
+}
+
 /** Token do login, se houver. Falha de Auth não impede a tentativa: o servidor é quem decide o acesso. */
 const tokenDoLogin = async (): Promise<string | null> => {
   try {
@@ -61,13 +70,17 @@ const tokenDoLogin = async (): Promise<string | null> => {
 const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
   const chave = `${idioma}/${h}`;
   if (!privados.has(chave)) {
-    privados.set(chave, (async () => {
+    const pedido = (async () => {
       try {
+        const geracao = geracaoPrivada;
         const token = await tokenDoLogin();
         const r = await fetch(api(`/api/audio/${idioma}/${h}.mp3`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
-        return r.ok ? URL.createObjectURL(await r.blob()) : null;
+        if (!r.ok) return null;
+        const blob = await r.blob();
+        return geracao === geracaoPrivada ? URL.createObjectURL(blob) : null;
       } catch { return null; }
-    })().then((url) => { if (!url) privados.delete(chave); return url; }));
+    })().then((url) => { if (!url && privados.get(chave) === pedido) privados.delete(chave); return url; });
+    privados.set(chave, pedido);
   }
   return privados.get(chave)!;
 };

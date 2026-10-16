@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { COMUNIDADE } from '../lib/comunidade';
 import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, statusDoCurso } from '../lib/content';
 import { LOCALE } from '../i18n';
 import { falar } from '../lib/audio';
@@ -139,6 +140,21 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {LOCALE.codigo === 'pt-BR' && (
+        <section className="lv-sec" id="comunidade" aria-labelledby="h-comunidade">
+          <p className="lv-kicker lv-kicker-esc">{COMUNIDADE.kicker}</p>
+          <h2 id="h-comunidade">{COMUNIDADE.titulo}</h2>
+          <p className="lv-sec-sub">{COMUNIDADE.lead}</p>
+          <div className="lv-passos">
+            {COMUNIDADE.itens.map((m) => (
+              <div key={m.n}><span className="lv-num" aria-hidden="true">{m.n}</span><h3>{m.t}</h3><p>{m.d}</p></div>
+            ))}
+          </div>
+          <p className="lv-dica">{COMUNIDADE.premium}</p>
+          <div className="lv-hero-botoes"><Link to="/contato" className="btn btn-primary">{COMUNIDADE.botao}</Link></div>
+        </section>
+      )}
 
       {CARTA.paragrafos.length > 0 && CARTA.assinatura && (
         <section className="lv-sec" aria-labelledby="h-carta">

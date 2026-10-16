@@ -63,6 +63,22 @@
             "id": "it-054-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Non sono del tutto d'accordo",
+            "respostaEsperada": "Non sono del tutto d'accordo",
+            "explicacao": "Escreva: Non sono del tutto d'accordo.",
+            "id": "it-054-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Che ne pensi della proposta",
+            "respostaEsperada": "Che ne pensi della proposta",
+            "explicacao": "Escreva: Che ne pensi della proposta.",
+            "id": "it-054-e05"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «O que você acha da proposta de fechar o centro aos carros?»",
             "opcoes": [
@@ -86,35 +102,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Non sono del tutto d'accordo",
-            "respostaEsperada": "Non sono del tutto d'accordo",
-            "explicacao": "Escreva: Non sono del tutto d'accordo.",
-            "id": "it-054-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Che ne pensi della proposta",
-            "respostaEsperada": "Che ne pensi della proposta",
-            "explicacao": "Escreva: Che ne pensi della proposta.",
-            "id": "it-054-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Che ne pensi della proposta di chiudere il centro alle auto?",
-            "respostaEsperada": "Che ne pensi della proposta di chiudere il centro alle auto?",
-            "explicacao": "O que você acha da proposta de fechar o centro aos carros?",
-            "id": "it-054-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Per quanto riguarda il prezzo, è alto",
             "respostaEsperada": "Per quanto riguarda il prezzo, è alto",
             "explicacao": "Escreva: Per quanto riguarda il prezzo, è alto.",
             "id": "it-054-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Capisco, ma temo che molti negozi perdano clienti.",
+            "respostaEsperada": "Capisco, ma temo che molti negozi perdano clienti.",
+            "explicacao": "Entendo, mas temo que muitas lojas percam clientes.",
+            "id": "it-054-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -141,24 +141,6 @@
             "id": "it-054-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Entendo, mas temo que muitas lojas percam clientes.»",
-            "opcoes": [
-              "perdano",
-              "temo",
-              "molti",
-              "Capisco,",
-              "clienti.",
-              "negozi",
-              "che",
-              "ma"
-            ],
-            "gabarito": "Capisco, ma temo che molti negozi perdano clienti.",
-            "explicacao": "Escreva: Capisco, ma temo che molti negozi perdano clienti.",
-            "id": "it-054-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Se o sujeito é o mesmo nas duas partes, use:",
             "opcoes": [
@@ -169,6 +151,15 @@
             "gabarito": "di + infinitivo",
             "explicacao": "«Penso di avere ragione».",
             "id": "it-054-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Che ne pensi della proposta di chiudere il centro alle auto?",
+            "respostaEsperada": "Che ne pensi della proposta di chiudere il centro alle auto?",
+            "explicacao": "O que você acha da proposta de fechar o centro aos carros?",
+            "id": "it-054-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -195,15 +186,6 @@
             "id": "it-054-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Capisco, ma temo che molti negozi perdano clienti.",
-            "respostaEsperada": "Capisco, ma temo che molti negozi perdano clienti.",
-            "explicacao": "Entendo, mas temo que muitas lojas percam clientes.",
-            "id": "it-054-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Non sono sicuro che ___ giusto. (ser)",
             "opcoes": [
@@ -216,6 +198,15 @@
             "id": "it-054-e12"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Mi sembra un buon compromesso.",
+            "respostaEsperada": "Mi sembra un buon compromesso.",
+            "explicacao": "Parece-me um bom meio-termo.",
+            "id": "it-054-r02",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Sono ___ di questa proposta. (a favor)",
             "opcoes": [
@@ -226,18 +217,6 @@
             "gabarito": "a favore",
             "explicacao": "A locução é «a favore di».",
             "id": "it-054-e13"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Capisco il tuo punto di vista, ___ non sono del tutto d'accordo.",
-            "opcoes": [
-              "ma",
-              "perché",
-              "quindi"
-            ],
-            "gabarito": "ma",
-            "explicacao": "Reconhecer e discordar.",
-            "id": "it-054-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -257,8 +236,20 @@
             ],
             "gabarito": "In parte hai ragione. Però chi abita fuori città come fa?",
             "explicacao": "Escreva: In parte hai ragione. Però chi abita fuori città come fa?",
-            "id": "it-054-x05",
+            "id": "it-054-x03",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Capisco il tuo punto di vista, ___ non sono del tutto d'accordo.",
+            "opcoes": [
+              "ma",
+              "perché",
+              "quindi"
+            ],
+            "gabarito": "ma",
+            "explicacao": "Reconhecer e discordar.",
+            "id": "it-054-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -287,19 +278,19 @@
             "id": "it-054-e16"
           },
           {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: Acho que ele tem razão. Não concordo totalmente. Sou contra este projeto.",
+            "respostaEsperada": "Penso che abbia ragione. Non sono del tutto d'accordo. Sono contrario a questo progetto.",
+            "id": "it-054-e17"
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "In parte hai ragione. Però chi abita fuori città come fa?",
             "respostaEsperada": "In parte hai ragione. Però chi abita fuori città come fa?",
             "explicacao": "Em parte você tem razão. Mas quem mora fora da cidade, como faz?",
-            "id": "it-054-x06",
+            "id": "it-054-x04",
             "complemento": true
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva em italiano: Acho que ele tem razão. Não concordo totalmente. Sou contra este projeto.",
-            "respostaEsperada": "Penso che abbia ragione. Non sono del tutto d'accordo. Sono contrario a questo progetto.",
-            "id": "it-054-e17"
           },
           {
             "tipo": "fill-gap",
@@ -314,6 +305,15 @@
             "id": "it-054-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il punto di vista",
+            "respostaEsperada": "il punto di vista",
+            "explicacao": "o ponto de vista",
+            "id": "it-054-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Penso ___ avere ragione. (mesmo sujeito)",
             "opcoes": [
@@ -324,21 +324,6 @@
             "gabarito": "di",
             "explicacao": "Mesmo sujeito: «di» + infinitivo.",
             "id": "it-054-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Parece-me um bom meio-termo.»",
-            "opcoes": [
-              "compromesso.",
-              "Mi",
-              "buon",
-              "un",
-              "sembra"
-            ],
-            "gabarito": "Mi sembra un buon compromesso.",
-            "explicacao": "Escreva: Mi sembra un buon compromesso.",
-            "id": "it-054-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -365,6 +350,21 @@
             "id": "it-054-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «in parte»?",
+            "audio": "in parte",
+            "opcoes": [
+              "em parte",
+              "considerar",
+              "pessoalmente",
+              "parecer"
+            ],
+            "gabarito": "em parte",
+            "explicacao": "«in parte» = em parte.",
+            "id": "it-054-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Sono a ___ di questa idea. (favor)",
             "opcoes": [
@@ -375,15 +375,6 @@
             "gabarito": "favore",
             "explicacao": "«A favore di» + nome.",
             "id": "it-054-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Mi sembra un buon compromesso.",
-            "respostaEsperada": "Mi sembra un buon compromesso.",
-            "explicacao": "Parece-me um bom meio-termo.",
-            "id": "it-054-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -410,6 +401,15 @@
             "id": "it-054-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "a favore di",
+            "respostaEsperada": "a favore di",
+            "explicacao": "a favor de",
+            "id": "it-054-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual verbo se usa na expressão «ter razão»?",
             "opcoes": [
@@ -423,17 +423,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «in parte»?",
-            "audio": "in parte",
+            "enunciado": "O que significa «dubitare»?",
+            "audio": "dubitare",
             "opcoes": [
               "em parte",
-              "considerar",
-              "pessoalmente",
-              "parecer"
+              "estar errado",
+              "duvidar",
+              "a meu ver"
             ],
-            "gabarito": "em parte",
-            "explicacao": "«in parte» = em parte.",
-            "id": "it-054-x09",
+            "gabarito": "duvidar",
+            "explicacao": "«dubitare» = duvidar.",
+            "id": "it-054-x06",
             "complemento": true
           },
           {
@@ -464,21 +464,6 @@
             "gabarito": "Da un lato costa molto, dall'altro è comodo.",
             "explicacao": "«Da un lato… dall'altro» mostra os dois lados.",
             "id": "it-054-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «dubitare»?",
-            "audio": "dubitare",
-            "opcoes": [
-              "em parte",
-              "estar errado",
-              "duvidar",
-              "a meu ver"
-            ],
-            "gabarito": "duvidar",
-            "explicacao": "«dubitare» = duvidar.",
-            "id": "it-054-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

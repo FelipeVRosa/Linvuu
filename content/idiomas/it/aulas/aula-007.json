@@ -521,22 +521,6 @@
               "id": "it-007-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olhe, esta é a minha família.»",
-              "opcoes": [
-                "è",
-                "famiglia.",
-                "Guarda,",
-                "questa",
-                "mia",
-                "la"
-              ],
-              "gabarito": "Guarda, questa è la mia famiglia.",
-              "explicacao": "Escreva: Guarda, questa è la mia famiglia.",
-              "id": "it-007-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Mio padre è medico",
@@ -553,12 +537,18 @@
               "id": "it-007-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Guarda, questa è la mia famiglia.",
-              "respostaEsperada": "Guarda, questa è la mia famiglia.",
-              "explicacao": "Olhe, esta é a minha família.",
-              "id": "it-007-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «A sua família é grande!»",
+              "opcoes": [
+                "famiglia",
+                "tua",
+                "La",
+                "grande!",
+                "è"
+              ],
+              "gabarito": "La tua famiglia è grande!",
+              "explicacao": "Escreva: La tua famiglia è grande!",
+              "id": "it-007-x01",
               "complemento": true
             },
             {
@@ -568,6 +558,15 @@
               "respostaEsperada": "Di chi è",
               "explicacao": "Escreva: Di chi è.",
               "id": "it-007-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Guarda, questa è la mia famiglia.",
+              "respostaEsperada": "Guarda, questa è la mia famiglia.",
+              "explicacao": "Olhe, esta é a minha família.",
+              "id": "it-007-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -594,19 +593,6 @@
               "id": "it-007-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Quem é ele?»",
-              "opcoes": [
-                "è",
-                "Chi",
-                "lui?"
-              ],
-              "gabarito": "Chi è lui?",
-              "explicacao": "Escreva: Chi è lui?",
-              "id": "it-007-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual forma está certa?",
               "opcoes": [
@@ -617,6 +603,15 @@
               "gabarito": "Mio fratello",
               "explicacao": "Parente no singular não leva artigo.",
               "id": "it-007-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "La tua famiglia è grande!",
+              "respostaEsperada": "La tua famiglia è grande!",
+              "explicacao": "A sua família é grande!",
+              "id": "it-007-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -643,15 +638,6 @@
               "id": "it-007-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Chi è lui?",
-              "respostaEsperada": "Chi è lui?",
-              "explicacao": "Quem é ele?",
-              "id": "it-007-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "___ amici sono simpatici. (os meus)",
               "opcoes": [
@@ -662,6 +648,15 @@
               "gabarito": "I miei",
               "explicacao": "Masculino plural: «i miei».",
               "id": "it-007-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Chi è lui?",
+              "respostaEsperada": "Chi è lui?",
+              "explicacao": "Quem é ele?",
+              "id": "it-007-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -676,6 +671,21 @@
               "id": "it-007-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il mio libro»?",
+              "audio": "il mio libro",
+              "opcoes": [
+                "o meu livro",
+                "filho único",
+                "a irmã",
+                "o tio"
+              ],
+              "gabarito": "o meu livro",
+              "explicacao": "«il mio libro» = o meu livro.",
+              "id": "it-007-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Come ___ i tuoi genitori?",
               "opcoes": [
@@ -686,20 +696,6 @@
               "gabarito": "si chiamano",
               "explicacao": "Sujeito plural.",
               "id": "it-007-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E esses, quem são?»",
-              "opcoes": [
-                "chi",
-                "questi",
-                "E",
-                "sono?"
-              ],
-              "gabarito": "E questi chi sono?",
-              "explicacao": "Escreva: E questi chi sono?",
-              "id": "it-007-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -733,19 +729,25 @@
               "id": "it-007-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "E questi chi sono?",
-              "respostaEsperada": "E questi chi sono?",
-              "explicacao": "E esses, quem são?",
-              "id": "it-007-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Os meus avós moram em Napoli. Meu pai é médico.",
               "respostaEsperada": "I miei nonni abitano a Napoli. Mio padre è medico.",
               "id": "it-007-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il papà»?",
+              "audio": "il papà",
+              "opcoes": [
+                "de quem é?",
+                "o avô",
+                "o papai, o pai",
+                "o irmão"
+              ],
+              "gabarito": "o papai, o pai",
+              "explicacao": "«il papà» = o papai, o pai.",
+              "id": "it-007-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -760,6 +762,15 @@
               "id": "it-007-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "E questi chi sono?",
+              "respostaEsperada": "E questi chi sono?",
+              "explicacao": "E esses, quem são?",
+              "id": "it-007-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Le ___ zie abitano a Roma. (as minhas)",
               "opcoes": [
@@ -770,23 +781,6 @@
               "gabarito": "mie",
               "explicacao": "O possessivo concorda com «zie»: feminino plural, «mie».",
               "id": "it-007-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «São os meus irmãos, Luca e Sara.»",
-              "opcoes": [
-                "Luca",
-                "Sono",
-                "e",
-                "miei",
-                "Sara.",
-                "fratelli,",
-                "i"
-              ],
-              "gabarito": "Sono i miei fratelli, Luca e Sara.",
-              "explicacao": "Escreva: Sono i miei fratelli, Luca e Sara.",
-              "id": "it-007-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -813,6 +807,21 @@
               "id": "it-007-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «figlio unico»?",
+              "audio": "figlio unico",
+              "opcoes": [
+                "filho único",
+                "a minha casa",
+                "os pais (pai e mãe)",
+                "a irmã"
+              ],
+              "gabarito": "filho único",
+              "explicacao": "«figlio unico» = filho único.",
+              "id": "it-007-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Hai fratelli ___ sorelle? (ou)",
               "opcoes": [
@@ -823,15 +832,6 @@
               "gabarito": "o",
               "explicacao": "«O» é «ou»: «fratelli o sorelle».",
               "id": "it-007-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sono i miei fratelli, Luca e Sara.",
-              "respostaEsperada": "Sono i miei fratelli, Luca e Sara.",
-              "explicacao": "São os meus irmãos, Luca e Sara.",
-              "id": "it-007-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -858,6 +858,15 @@
               "id": "it-007-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sono i miei fratelli, Luca e Sara.",
+              "respostaEsperada": "Sono i miei fratelli, Luca e Sara.",
+              "explicacao": "São os meus irmãos, Luca e Sara.",
+              "id": "it-007-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «os nossos pais»?",
               "opcoes": [
@@ -870,18 +879,18 @@
               "id": "it-007-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «A sua família é grande!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il fratello»?",
+              "audio": "il fratello",
               "opcoes": [
-                "famiglia",
-                "tua",
-                "La",
-                "grande!",
-                "è"
+                "a tia",
+                "o primo",
+                "o tio",
+                "o irmão"
               ],
-              "gabarito": "La tua famiglia è grande!",
-              "explicacao": "Escreva: La tua famiglia è grande!",
-              "id": "it-007-x09",
+              "gabarito": "o irmão",
+              "explicacao": "«il fratello» = o irmão.",
+              "id": "it-007-x06",
               "complemento": true
             },
             {
@@ -911,15 +920,6 @@
               "gabarito": "I miei nonni abitano vicino a noi.",
               "explicacao": "No plural o possessivo leva artigo: «i miei nonni».",
               "id": "it-007-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "La tua famiglia è grande!",
-              "respostaEsperada": "La tua famiglia è grande!",
-              "explicacao": "A sua família é grande!",
-              "id": "it-007-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

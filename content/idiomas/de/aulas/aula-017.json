@@ -515,26 +515,17 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Qual é o tamanho do apartamento?»",
+              "enunciado": "Monte a frase: «E quanto custa o aluguel?»",
               "opcoes": [
-                "groß",
-                "Wie",
-                "Wohnung?",
-                "ist",
-                "die"
+                "was",
+                "Und",
+                "kostet",
+                "die",
+                "Miete?"
               ],
-              "gabarito": "Wie groß ist die Wohnung?",
-              "explicacao": "Escreva: Wie groß ist die Wohnung?",
+              "gabarito": "Und was kostet die Miete?",
+              "explicacao": "Escreva: Und was kostet die Miete?",
               "id": "de-017-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Wie groß ist die Wohnung?",
-              "respostaEsperada": "Wie groß ist die Wohnung?",
-              "explicacao": "Qual é o tamanho do apartamento?",
-              "id": "de-017-x02",
               "complemento": true
             },
             {
@@ -550,17 +541,12 @@
               "id": "de-017-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tem cinquenta e cinco metros quadrados.»",
-              "opcoes": [
-                "fünfundfünfzig",
-                "hat",
-                "Quadratmeter.",
-                "Sie"
-              ],
-              "gabarito": "Sie hat fünfundfünfzig Quadratmeter.",
-              "explicacao": "Escreva: Sie hat fünfundfünfzig Quadratmeter.",
-              "id": "de-017-x03",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Und was kostet die Miete?",
+              "respostaEsperada": "Und was kostet die Miete?",
+              "explicacao": "E quanto custa o aluguel?",
+              "id": "de-017-x02",
               "complemento": true
             },
             {
@@ -576,98 +562,13 @@
               "id": "de-017-e03"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sie hat fünfundfünfzig Quadratmeter.",
-              "respostaEsperada": "Sie hat fünfundfünfzig Quadratmeter.",
-              "explicacao": "Tem cinquenta e cinco metros quadrados.",
-              "id": "de-017-x04",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Wie groß ist die Wohnung?",
+              "respostaEsperada": "Wie groß ist die Wohnung?",
+              "explicacao": "Qual é o tamanho do apartamento?",
+              "id": "de-017-r01",
               "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E quanto custa o aluguel?»",
-              "opcoes": [
-                "was",
-                "Und",
-                "kostet",
-                "die",
-                "Miete?"
-              ],
-              "gabarito": "Und was kostet die Miete?",
-              "explicacao": "Escreva: Und was kostet die Miete?",
-              "id": "de-017-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Die Wohnung ___ drei Zimmer. (haben)",
-              "opcoes": [
-                "hat",
-                "haben",
-                "hast"
-              ],
-              "gabarito": "hat",
-              "explicacao": "er/sie/es → hat.",
-              "id": "de-017-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Und was kostet die Miete?",
-              "respostaEsperada": "Und was kostet die Miete?",
-              "explicacao": "E quanto custa o aluguel?",
-              "id": "de-017-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Seiscentos euros por mês, mais despesas extras.»",
-              "opcoes": [
-                "im",
-                "Monat,",
-                "plus",
-                "Nebenkosten.",
-                "Sechshundert",
-                "Euro"
-              ],
-              "gabarito": "Sechshundert Euro im Monat, plus Nebenkosten.",
-              "explicacao": "Escreva: Sechshundert Euro im Monat, plus Nebenkosten.",
-              "id": "de-017-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Die Küche ist ___. (pequena)",
-              "opcoes": [
-                "klein",
-                "kleine",
-                "kleiner"
-              ],
-              "gabarito": "klein",
-              "explicacao": "Depois de «sein», o adjetivo não muda.",
-              "id": "de-017-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sechshundert Euro im Monat, plus Nebenkosten.",
-              "respostaEsperada": "Sechshundert Euro im Monat, plus Nebenkosten.",
-              "explicacao": "Seiscentos euros por mês, mais despesas extras.",
-              "id": "de-017-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Ich bin ___ Küche. (na)",
-              "opcoes": [
-                "in der",
-                "im",
-                "in die"
-              ],
-              "gabarito": "in der",
-              "explicacao": "Wo? + «die»: in der.",
-              "id": "de-017-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -687,8 +588,20 @@
               ],
               "gabarito": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
               "explicacao": "Escreva: Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
-              "id": "de-017-x09",
+              "id": "de-017-x03",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Die Wohnung ___ drei Zimmer. (haben)",
+              "opcoes": [
+                "hat",
+                "haben",
+                "hast"
+              ],
+              "gabarito": "hat",
+              "explicacao": "er/sie/es → hat.",
+              "id": "de-017-e04"
             },
             {
               "tipo": "audio-recognition",
@@ -696,56 +609,20 @@
               "audio": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
               "respostaEsperada": "Nein, einen Garten gibt es nicht, aber es gibt einen Balkon.",
               "explicacao": "Não, jardim não há, mas há uma varanda.",
-              "id": "de-017-x10",
+              "id": "de-017-x04",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Ich gehe ___ Bad. (ao)",
+              "enunciado": "Die Küche ist ___. (pequena)",
               "opcoes": [
-                "ins",
-                "im",
-                "in der"
+                "klein",
+                "kleine",
+                "kleiner"
               ],
-              "gabarito": "ins",
-              "explicacao": "Wohin? + «das»: ins.",
-              "id": "de-017-e07"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Posso ver o apartamento?»",
-              "opcoes": [
-                "die",
-                "ich",
-                "Wohnung",
-                "sehen?",
-                "Kann"
-              ],
-              "gabarito": "Kann ich die Wohnung sehen?",
-              "explicacao": "Escreva: Kann ich die Wohnung sehen?",
-              "id": "de-017-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Ich gehe ___ Garten. (ao)",
-              "opcoes": [
-                "in den",
-                "im",
-                "in dem"
-              ],
-              "gabarito": "in den",
-              "explicacao": "Wohin? + «der»: in den.",
-              "id": "de-017-e08"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Kann ich die Wohnung sehen?",
-              "respostaEsperada": "Kann ich die Wohnung sehen?",
-              "explicacao": "Posso ver o apartamento?",
-              "id": "de-017-x12",
-              "complemento": true
+              "gabarito": "klein",
+              "explicacao": "Depois de «sein», o adjetivo não muda.",
+              "id": "de-017-e05"
             },
             {
               "tipo": "sentence-ordering",
@@ -761,7 +638,91 @@
               ],
               "gabarito": "Natürlich. Kommen Sie morgen um zehn Uhr.",
               "explicacao": "Escreva: Natürlich. Kommen Sie morgen um zehn Uhr.",
-              "id": "de-017-x13",
+              "id": "de-017-x05",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich bin ___ Küche. (na)",
+              "opcoes": [
+                "in der",
+                "im",
+                "in die"
+              ],
+              "gabarito": "in der",
+              "explicacao": "Wo? + «die»: in der.",
+              "id": "de-017-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+              "respostaEsperada": "Natürlich. Kommen Sie morgen um zehn Uhr.",
+              "explicacao": "Claro. Venha amanhã às dez horas.",
+              "id": "de-017-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sie hat fünfundfünfzig Quadratmeter.",
+              "respostaEsperada": "Sie hat fünfundfünfzig Quadratmeter.",
+              "explicacao": "Tem cinquenta e cinco metros quadrados.",
+              "id": "de-017-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «das Schlafzimmer»?",
+              "audio": "das Schlafzimmer",
+              "opcoes": [
+                "escuro",
+                "estante",
+                "casa",
+                "quarto de dormir"
+              ],
+              "gabarito": "quarto de dormir",
+              "explicacao": "«das Schlafzimmer» = quarto de dormir.",
+              "id": "de-017-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich gehe ___ Bad. (ao)",
+              "opcoes": [
+                "ins",
+                "im",
+                "in der"
+              ],
+              "gabarito": "ins",
+              "explicacao": "Wohin? + «das»: ins.",
+              "id": "de-017-e07"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich gehe ___ Garten. (ao)",
+              "opcoes": [
+                "in den",
+                "im",
+                "in dem"
+              ],
+              "gabarito": "in den",
+              "explicacao": "Wohin? + «der»: in den.",
+              "id": "de-017-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «hell»?",
+              "audio": "hell",
+              "opcoes": [
+                "claro, iluminado",
+                "quarto, cômodo",
+                "cozinha",
+                "corredor, entrada"
+              ],
+              "gabarito": "claro, iluminado",
+              "explicacao": "«hell» = claro, iluminado.",
+              "id": "de-017-x08",
               "complemento": true
             },
             {
@@ -777,27 +738,42 @@
               "id": "de-017-e09"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Natürlich. Kommen Sie morgen um zehn Uhr.",
-              "respostaEsperada": "Natürlich. Kommen Sie morgen um zehn Uhr.",
-              "explicacao": "Claro. Venha amanhã às dez horas.",
-              "id": "de-017-x14",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Dusche»?",
+              "audio": "die Dusche",
+              "opcoes": [
+                "armário",
+                "chuveiro",
+                "visitar (um imóvel)",
+                "aluguel"
+              ],
+              "gabarito": "chuveiro",
+              "explicacao": "«die Dusche» = chuveiro.",
+              "id": "de-017-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sechshundert Euro im Monat, plus Nebenkosten.",
+              "respostaEsperada": "Sechshundert Euro im Monat, plus Nebenkosten.",
+              "explicacao": "Seiscentos euros por mês, mais despesas extras.",
+              "id": "de-017-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Schlafzimmer»?",
-              "audio": "das Schlafzimmer",
+              "enunciado": "O que significa «die Anzeige»?",
+              "audio": "die Anzeige",
               "opcoes": [
-                "escuro",
                 "estante",
-                "casa",
-                "quarto de dormir"
+                "visitar (um imóvel)",
+                "armário",
+                "anúncio"
               ],
-              "gabarito": "quarto de dormir",
-              "explicacao": "«das Schlafzimmer» = quarto de dormir.",
-              "id": "de-017-x15",
+              "gabarito": "anúncio",
+              "explicacao": "«die Anzeige» = anúncio.",
+              "id": "de-017-x10",
               "complemento": true
             },
             {
@@ -814,17 +790,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «hell»?",
-              "audio": "hell",
+              "enunciado": "O que significa «der Kühlschrank»?",
+              "audio": "der Kühlschrank",
               "opcoes": [
-                "claro, iluminado",
-                "quarto, cômodo",
-                "cozinha",
-                "corredor, entrada"
+                "escuro",
+                "armário",
+                "geladeira",
+                "aluguel"
               ],
-              "gabarito": "claro, iluminado",
-              "explicacao": "«hell» = claro, iluminado.",
-              "id": "de-017-x16",
+              "gabarito": "geladeira",
+              "explicacao": "«der Kühlschrank» = geladeira.",
+              "id": "de-017-x11",
               "complemento": true
             },
             {
@@ -841,32 +817,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Dusche»?",
-              "audio": "die Dusche",
+              "enunciado": "O que significa «der Schrank»?",
+              "audio": "der Schrank",
               "opcoes": [
-                "armário",
-                "chuveiro",
-                "visitar (um imóvel)",
-                "aluguel"
+                "geladeira",
+                "cozinha",
+                "quarto de dormir",
+                "armário"
               ],
-              "gabarito": "chuveiro",
-              "explicacao": "«die Dusche» = chuveiro.",
-              "id": "de-017-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Anzeige»?",
-              "audio": "die Anzeige",
-              "opcoes": [
-                "estante",
-                "visitar (um imóvel)",
-                "armário",
-                "anúncio"
-              ],
-              "gabarito": "anúncio",
-              "explicacao": "«die Anzeige» = anúncio.",
-              "id": "de-017-x18",
+              "gabarito": "armário",
+              "explicacao": "«der Schrank» = armário.",
+              "id": "de-017-x12",
               "complemento": true
             },
             {
@@ -883,18 +844,27 @@
               "id": "de-017-e12"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Kühlschrank»?",
-              "audio": "der Kühlschrank",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Gibt es einen Garten?",
               "opcoes": [
-                "escuro",
-                "armário",
-                "geladeira",
-                "aluguel"
+                "einen",
+                "Gibt",
+                "es",
+                "Garten?"
               ],
-              "gabarito": "geladeira",
-              "explicacao": "«der Kühlschrank» = geladeira.",
-              "id": "de-017-x19",
+              "gabarito": "Gibt es einen Garten?",
+              "explicacao": "Escreva: Gibt es einen Garten?",
+              "id": "de-017-x13",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Kann ich die Wohnung sehen?",
+              "respostaEsperada": "Kann ich die Wohnung sehen?",
+              "explicacao": "Posso ver o apartamento?",
+              "id": "de-017-r04",
               "complemento": true
             },
             {
@@ -911,44 +881,6 @@
               "id": "de-017-e13"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Schrank»?",
-              "audio": "der Schrank",
-              "opcoes": [
-                "geladeira",
-                "cozinha",
-                "quarto de dormir",
-                "armário"
-              ],
-              "gabarito": "armário",
-              "explicacao": "«der Schrank» = armário.",
-              "id": "de-017-x20",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Gibt es einen Garten?",
-              "opcoes": [
-                "einen",
-                "Gibt",
-                "es",
-                "Garten?"
-              ],
-              "gabarito": "Gibt es einen Garten?",
-              "explicacao": "Escreva: Gibt es einen Garten?",
-              "id": "de-017-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Die Miete kostet sechshundert Euro im Monat",
-              "respostaEsperada": "Die Miete kostet sechshundert Euro im Monat",
-              "explicacao": "sechshundert = 600.",
-              "id": "de-017-e14"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Die Miete kostet sechshundert Euro im Monat",
@@ -963,8 +895,16 @@
               ],
               "gabarito": "Die Miete kostet sechshundert Euro im Monat",
               "explicacao": "Escreva: Die Miete kostet sechshundert Euro im Monat",
-              "id": "de-017-x22",
+              "id": "de-017-x14",
               "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Die Miete kostet sechshundert Euro im Monat",
+              "respostaEsperada": "Die Miete kostet sechshundert Euro im Monat",
+              "explicacao": "sechshundert = 600.",
+              "id": "de-017-e14"
             },
             {
               "tipo": "audio-recognition",
@@ -972,7 +912,7 @@
               "audio": "Gibt es einen Garten?",
               "respostaEsperada": "Gibt es einen Garten?",
               "explicacao": "Escreva: Gibt es einen Garten?",
-              "id": "de-017-x23",
+              "id": "de-017-x15",
               "complemento": true
             },
             {

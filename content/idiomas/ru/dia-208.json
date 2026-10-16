@@ -37,27 +37,20 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Boris, traga, por favor, os documentos do escritório.»",
+            "enunciado": "Monte a frase: «Você vai de carro? Você dirige, não é?»",
             "opcoes": [
-              "Борис,",
-              "офиса.",
-              "из",
-              "пожалуйста,",
-              "документы",
-              "принеси,"
+              "машину.",
+              "едешь",
+              "машине?",
+              "Ты",
+              "на",
+              "Ты",
+              "водишь",
+              "ведь"
             ],
-            "gabarito": "Борис, принеси, пожалуйста, документы из офиса.",
-            "explicacao": "Escreva: Борис, принеси, пожалуйста, документы из офиса.",
+            "gabarito": "Ты едешь на машине? Ты ведь водишь машину.",
+            "explicacao": "Escreva: Ты едешь на машине? Ты ведь водишь машину.",
             "id": "ru-052-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Борис, принеси, пожалуйста, документы из офиса.",
-            "respostaEsperada": "Борис, принеси, пожалуйста, документы из офиса.",
-            "explicacao": "Boris, traga, por favor, os documentos do escritório.",
-            "id": "ru-052-x02",
             "complemento": true
           },
           {
@@ -73,29 +66,12 @@
             "id": "ru-052-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está bem. E depois eu os levo ao cliente.»",
-            "opcoes": [
-              "Хорошо.",
-              "их",
-              "клиенту.",
-              "потом",
-              "отвезу",
-              "А",
-              "я"
-            ],
-            "gabarito": "Хорошо. А потом я отвезу их клиенту.",
-            "explicacao": "Escreva: Хорошо. А потом я отвезу их клиенту.",
-            "id": "ru-052-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо. А потом я отвезу их клиенту.",
-            "respostaEsperada": "Хорошо. А потом я отвезу их клиенту.",
-            "explicacao": "Está bem. E depois eu os levo ao cliente.",
-            "id": "ru-052-x04",
+            "audio": "Ты едешь на машине? Ты ведь водишь машину.",
+            "respostaEsperada": "Ты едешь на машине? Ты ведь водишь машину.",
+            "explicacao": "Você vai de carro? Você dirige, não é?",
+            "id": "ru-052-x02",
             "complemento": true
           },
           {
@@ -109,79 +85,6 @@
             "gabarito": "везёт",
             "explicacao": "Veículo, agora: «везти».",
             "id": "ru-052-e03"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você vai de carro? Você dirige, não é?»",
-            "opcoes": [
-              "машину.",
-              "едешь",
-              "машине?",
-              "Ты",
-              "на",
-              "Ты",
-              "водишь",
-              "ведь"
-            ],
-            "gabarito": "Ты едешь на машине? Ты ведь водишь машину.",
-            "explicacao": "Escreva: Ты едешь на машине? Ты ведь водишь машину.",
-            "id": "ru-052-x05",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ты едешь на машине? Ты ведь водишь машину.",
-            "respostaEsperada": "Ты едешь на машине? Ты ведь водишь машину.",
-            "explicacao": "Você vai de carro? Você dirige, não é?",
-            "id": "ru-052-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Я ___ ребёнка в школу. (levo agora, a pé)",
-            "opcoes": [
-              "веду",
-              "вожу",
-              "несу"
-            ],
-            "gabarito": "веду",
-            "explicacao": "Guiar uma pessoa: «вести».",
-            "id": "ru-052-e04"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então pegue um táxi.»",
-            "opcoes": [
-              "Тогда",
-              "такси.",
-              "возьми"
-            ],
-            "gabarito": "Тогда возьми такси.",
-            "explicacao": "Escreva: Тогда возьми такси.",
-            "id": "ru-052-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Тогда возьми такси.",
-            "respostaEsperada": "Тогда возьми такси.",
-            "explicacao": "Então pegue um táxi.",
-            "id": "ru-052-x08",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___, пожалуйста, документы. (traga)",
-            "opcoes": [
-              "Принеси",
-              "Отнеси",
-              "Унеси"
-            ],
-            "gabarito": "Принеси",
-            "explicacao": "«при-» = trazer.",
-            "id": "ru-052-e05"
           },
           {
             "tipo": "sentence-ordering",
@@ -201,7 +104,16 @@
             ],
             "gabarito": "Так и сделаю. Я привезу клиента в офис к трём часам.",
             "explicacao": "Escreva: Так и сделаю. Я привезу клиента в офис к трём часам.",
-            "id": "ru-052-x09",
+            "id": "ru-052-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Борис, принеси, пожалуйста, документы из офиса.",
+            "respostaEsperada": "Борис, принеси, пожалуйста, документы из офиса.",
+            "explicacao": "Boris, traga, por favor, os documentos do escritório.",
+            "id": "ru-052-r01",
             "complemento": true
           },
           {
@@ -210,7 +122,80 @@
             "audio": "Так и сделаю. Я привезу клиента в офис к трём часам.",
             "respostaEsperada": "Так и сделаю. Я привезу клиента в офис к трём часам.",
             "explicacao": "Farei isso. Trarei o cliente ao escritório às três horas.",
-            "id": "ru-052-x10",
+            "id": "ru-052-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Я ___ ребёнка в школу. (levo agora, a pé)",
+            "opcoes": [
+              "веду",
+              "вожу",
+              "несу"
+            ],
+            "gabarito": "веду",
+            "explicacao": "Guiar uma pessoa: «вести».",
+            "id": "ru-052-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Combinado. No caminho ligo para você.»",
+            "opcoes": [
+              "Договорились.",
+              "я",
+              "тебе.",
+              "позвоню",
+              "По",
+              "дороге"
+            ],
+            "gabarito": "Договорились. По дороге я позвоню тебе.",
+            "explicacao": "Escreva: Договорились. По дороге я позвоню тебе.",
+            "id": "ru-052-x05",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___, пожалуйста, документы. (traga)",
+            "opcoes": [
+              "Принеси",
+              "Отнеси",
+              "Унеси"
+            ],
+            "gabarito": "Принеси",
+            "explicacao": "«при-» = trazer.",
+            "id": "ru-052-e05"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Договорились. По дороге я позвоню тебе.",
+            "respostaEsperada": "Договорились. По дороге я позвоню тебе.",
+            "explicacao": "Combinado. No caminho ligo para você.",
+            "id": "ru-052-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Хорошо. А потом я отвезу их клиенту.",
+            "respostaEsperada": "Хорошо. А потом я отвезу их клиенту.",
+            "explicacao": "Está bem. E depois eu os levo ao cliente.",
+            "id": "ru-052-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «зал»?",
+            "audio": "зал",
+            "opcoes": [
+              "sala, salão",
+              "trazer (uma pessoa)",
+              "carro",
+              "óculos"
+            ],
+            "gabarito": "sala, salão",
+            "explicacao": "«зал» = sala, salão.",
+            "id": "ru-052-x07",
             "complemento": true
           },
           {
@@ -226,23 +211,6 @@
             "id": "ru-052-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ótimo! Enquanto isso, levo o chá à sala.»",
-            "opcoes": [
-              "пока",
-              "отнесу",
-              "чай",
-              "Я",
-              "зал.",
-              "Отлично!",
-              "в"
-            ],
-            "gabarito": "Отлично! Я пока отнесу чай в зал.",
-            "explicacao": "Escreva: Отлично! Я пока отнесу чай в зал.",
-            "id": "ru-052-x11",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Идёт фильм» significa:",
             "opcoes": [
@@ -255,28 +223,18 @@
             "id": "ru-052-e07"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Отлично! Я пока отнесу чай в зал.",
-            "respostaEsperada": "Отлично! Я пока отнесу чай в зал.",
-            "explicacao": "Ótimo! Enquanto isso, levo o chá à sala.",
-            "id": "ru-052-x12",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Combinado. No caminho ligo para você.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «унести / увезти»?",
+            "audio": "унести / увезти",
             "opcoes": [
-              "Договорились.",
-              "я",
-              "тебе.",
-              "позвоню",
-              "По",
-              "дороге"
+              "sala, salão",
+              "trazer (de veículo)",
+              "levar até (uma pessoa)",
+              "levar embora"
             ],
-            "gabarito": "Договорились. По дороге я позвоню тебе.",
-            "explicacao": "Escreva: Договорились. По дороге я позвоню тебе.",
-            "id": "ru-052-x13",
+            "gabarito": "levar embora",
+            "explicacao": "«унести / увезти» = levar embora.",
+            "id": "ru-052-x08",
             "complemento": true
           },
           {
@@ -292,27 +250,42 @@
             "id": "ru-052-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Договорились. По дороге я позвоню тебе.",
-            "respostaEsperada": "Договорились. По дороге я позвоню тебе.",
-            "explicacao": "Combinado. No caminho ligo para você.",
-            "id": "ru-052-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «очки»?",
+            "audio": "очки",
+            "opcoes": [
+              "conduzir, guiar",
+              "trazer (nas mãos)",
+              "engarrafamento",
+              "óculos"
+            ],
+            "gabarito": "óculos",
+            "explicacao": "«очки» = óculos.",
+            "id": "ru-052-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Тогда возьми такси.",
+            "respostaEsperada": "Тогда возьми такси.",
+            "explicacao": "Então pegue um táxi.",
+            "id": "ru-052-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «зал»?",
-            "audio": "зал",
+            "enunciado": "O que significa «принести / приносить»?",
+            "audio": "принести / приносить",
             "opcoes": [
-              "sala, salão",
-              "trazer (uma pessoa)",
-              "carro",
-              "óculos"
+              "levar até (de veículo)",
+              "documentos",
+              "conduzir, guiar",
+              "trazer (nas mãos)"
             ],
-            "gabarito": "sala, salão",
-            "explicacao": "«зал» = sala, salão.",
-            "id": "ru-052-x15",
+            "gabarito": "trazer (nas mãos)",
+            "explicacao": "«принести / приносить» = trazer (nas mãos).",
+            "id": "ru-052-x10",
             "complemento": true
           },
           {
@@ -329,32 +302,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «унести / увезти»?",
-            "audio": "унести / увезти",
-            "opcoes": [
-              "sala, salão",
-              "trazer (de veículo)",
-              "levar até (uma pessoa)",
-              "levar embora"
-            ],
-            "gabarito": "levar embora",
-            "explicacao": "«унести / увезти» = levar embora.",
-            "id": "ru-052-x16",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «очки»?",
-            "audio": "очки",
+            "enunciado": "O que significa «привести / приводить»?",
+            "audio": "привести / приводить",
             "opcoes": [
               "conduzir, guiar",
-              "trazer (nas mãos)",
-              "engarrafamento",
-              "óculos"
+              "levar até (de veículo)",
+              "transportar (veículo)",
+              "trazer (uma pessoa)"
             ],
-            "gabarito": "óculos",
-            "explicacao": "«очки» = óculos.",
-            "id": "ru-052-x17",
+            "gabarito": "trazer (uma pessoa)",
+            "explicacao": "«привести / приводить» = trazer (uma pessoa).",
+            "id": "ru-052-x11",
             "complemento": true
           },
           {
@@ -371,49 +329,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «принести / приносить»?",
-            "audio": "принести / приносить",
-            "opcoes": [
-              "levar até (de veículo)",
-              "documentos",
-              "conduzir, guiar",
-              "trazer (nas mãos)"
-            ],
-            "gabarito": "trazer (nas mãos)",
-            "explicacao": "«принести / приносить» = trazer (nas mãos).",
-            "id": "ru-052-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «привести / приводить»?",
-            "audio": "привести / приводить",
-            "opcoes": [
-              "conduzir, guiar",
-              "levar até (de veículo)",
-              "transportar (veículo)",
-              "trazer (uma pessoa)"
-            ],
-            "gabarito": "trazer (uma pessoa)",
-            "explicacao": "«привести / приводить» = trazer (uma pessoa).",
-            "id": "ru-052-x19",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escolha.",
-            "audio": "Я вожу машину уже десять лет",
-            "opcoes": [
-              "Я вожу машину уже десять лет",
-              "Я еду на машине",
-              "Я несу машину"
-            ],
-            "gabarito": "Я вожу машину уже десять лет",
-            "explicacao": "«водить машину» = dirigir.",
-            "id": "ru-052-e11"
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "O que significa «документы»?",
             "audio": "документы",
             "opcoes": [
@@ -424,7 +339,16 @@
             ],
             "gabarito": "documentos",
             "explicacao": "«документы» = documentos.",
-            "id": "ru-052-x20",
+            "id": "ru-052-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Отлично! Я пока отнесу чай в зал.",
+            "respostaEsperada": "Отлично! Я пока отнесу чай в зал.",
+            "explicacao": "Ótimo! Enquanto isso, levo o chá à sala.",
+            "id": "ru-052-r04",
             "complemento": true
           },
           {
@@ -441,16 +365,21 @@
             ],
             "gabarito": "Я вожу машину уже десять лет",
             "explicacao": "Escreva: Я вожу машину уже десять лет",
-            "id": "ru-052-x21",
+            "id": "ru-052-x13",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Дела идут хорошо",
-            "respostaEsperada": "Дела идут хорошо",
-            "explicacao": "Sentido figurado de «идти».",
-            "id": "ru-052-e12"
+            "enunciado": "Ouça e escolha.",
+            "audio": "Я вожу машину уже десять лет",
+            "opcoes": [
+              "Я вожу машину уже десять лет",
+              "Я еду на машине",
+              "Я несу машину"
+            ],
+            "gabarito": "Я вожу машину уже десять лет",
+            "explicacao": "«водить машину» = dirigir.",
+            "id": "ru-052-e11"
           },
           {
             "tipo": "sentence-ordering",
@@ -463,8 +392,16 @@
             ],
             "gabarito": "Дела идут хорошо",
             "explicacao": "Escreva: Дела идут хорошо",
-            "id": "ru-052-x22",
+            "id": "ru-052-x14",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Дела идут хорошо",
+            "respostaEsperada": "Дела идут хорошо",
+            "explicacao": "Sentido figurado de «идти».",
+            "id": "ru-052-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -472,7 +409,7 @@
             "audio": "Я вожу машину уже десять лет",
             "respostaEsperada": "Я вожу машину уже десять лет",
             "explicacao": "Escreva: Я вожу машину уже десять лет",
-            "id": "ru-052-x23",
+            "id": "ru-052-x15",
             "complemento": true
           },
           {

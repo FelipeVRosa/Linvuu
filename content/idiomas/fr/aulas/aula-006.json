@@ -521,6 +521,14 @@
               "id": "fr-006-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "J'ai besoin d'un café",
+              "respostaEsperada": "J'ai besoin d'un café",
+              "explicacao": "Escreva: J'ai besoin d'un café.",
+              "id": "fr-006-e04"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «le père»?",
               "audio": "le père",
@@ -538,33 +546,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "J'ai besoin d'un café",
-              "respostaEsperada": "J'ai besoin d'un café",
-              "explicacao": "Escreva: J'ai besoin d'un café.",
-              "id": "fr-006-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Ma mère s'appelle Rita",
               "respostaEsperada": "Ma mère s'appelle Rita",
               "explicacao": "Escreva: Ma mère s'appelle Rita.",
               "id": "fr-006-e05"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «ton, ta, tes»?",
-              "audio": "ton, ta, tes",
-              "opcoes": [
-                "a criança, o filho",
-                "teu, tua (seu, sua)",
-                "a filha",
-                "dele, dela, seu, sua"
-              ],
-              "gabarito": "teu, tua (seu, sua)",
-              "explicacao": "«ton, ta, tes» = teu, tua (seu, sua).",
-              "id": "fr-006-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -600,17 +585,26 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «la fille»?",
-              "audio": "la fille",
+              "enunciado": "O que significa «ton, ta, tes»?",
+              "audio": "ton, ta, tes",
               "opcoes": [
-                "a filha",
-                "dele, dela, seu, sua",
+                "a criança, o filho",
                 "teu, tua (seu, sua)",
-                "deles, delas"
+                "a filha",
+                "dele, dela, seu, sua"
               ],
-              "gabarito": "a filha",
-              "explicacao": "«la fille» = a filha.",
-              "id": "fr-006-x03",
+              "gabarito": "teu, tua (seu, sua)",
+              "explicacao": "«ton, ta, tes» = teu, tua (seu, sua).",
+              "id": "fr-006-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "mon, ma, mes",
+              "respostaEsperada": "mon, ma, mes",
+              "explicacao": "meu, minha, meus, minhas",
+              "id": "fr-006-r01",
               "complemento": true
             },
             {
@@ -651,17 +645,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «son, sa, ses»?",
-              "audio": "son, sa, ses",
+              "enunciado": "O que significa «la fille»?",
+              "audio": "la fille",
               "opcoes": [
-                "o marido",
-                "a família",
-                "os pais",
-                "dele, dela, seu, sua"
+                "a filha",
+                "dele, dela, seu, sua",
+                "teu, tua (seu, sua)",
+                "deles, delas"
               ],
-              "gabarito": "dele, dela, seu, sua",
-              "explicacao": "«son, sa, ses» = dele, dela, seu, sua.",
-              "id": "fr-006-x04",
+              "gabarito": "a filha",
+              "explicacao": "«la fille» = a filha.",
+              "id": "fr-006-x03",
               "complemento": true
             },
             {
@@ -701,21 +695,6 @@
               "id": "fr-006-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «le grand-père»?",
-              "audio": "le grand-père",
-              "opcoes": [
-                "a esposa, a mulher",
-                "os pais",
-                "o avô",
-                "deles, delas"
-              ],
-              "gabarito": "o avô",
-              "explicacao": "«le grand-père» = o avô.",
-              "id": "fr-006-x05",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Mes parents habitent au Brésil.»",
               "opcoes": [
@@ -730,6 +709,30 @@
               "id": "fr-006-e15"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "ton, ta, tes",
+              "respostaEsperada": "ton, ta, tes",
+              "explicacao": "teu, tua (seu, sua)",
+              "id": "fr-006-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «son, sa, ses»?",
+              "audio": "son, sa, ses",
+              "opcoes": [
+                "o marido",
+                "a família",
+                "os pais",
+                "dele, dela, seu, sua"
+              ],
+              "gabarito": "dele, dela, seu, sua",
+              "explicacao": "«son, sa, ses» = dele, dela, seu, sua.",
+              "id": "fr-006-x04",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Je n'ai pas de frère.»",
               "opcoes": [
@@ -742,21 +745,6 @@
               "gabarito": "Je n'ai pas de frère.",
               "explicacao": "Negação com «de».",
               "id": "fr-006-e16"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «la famille»?",
-              "audio": "la famille",
-              "opcoes": [
-                "a família",
-                "deles, delas",
-                "a filha",
-                "o marido"
-              ],
-              "gabarito": "a família",
-              "explicacao": "«la famille» = a família.",
-              "id": "fr-006-x06",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -789,16 +777,18 @@
               "id": "fr-006-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "J'ai faim",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «le grand-père»?",
+              "audio": "le grand-père",
               "opcoes": [
-                "faim",
-                "J'ai"
+                "a esposa, a mulher",
+                "os pais",
+                "o avô",
+                "deles, delas"
               ],
-              "gabarito": "J'ai faim",
-              "explicacao": "Escreva: J'ai faim",
-              "id": "fr-006-x07",
+              "gabarito": "o avô",
+              "explicacao": "«le grand-père» = o avô.",
+              "id": "fr-006-x05",
               "complemento": true
             },
             {
@@ -838,21 +828,6 @@
               "id": "fr-006-e22"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Mon frère s'appelle Pedro",
-              "opcoes": [
-                "frère",
-                "s'appelle",
-                "Mon",
-                "Pedro"
-              ],
-              "gabarito": "Mon frère s'appelle Pedro",
-              "explicacao": "Escreva: Mon frère s'appelle Pedro",
-              "id": "fr-006-x08",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o possessivo correto para «a minha escola» (école)?",
               "opcoes": [
@@ -863,6 +838,30 @@
               "gabarito": "mon école",
               "explicacao": "Feminino que começa por vogal usa a forma masculina: «mon école».",
               "id": "fr-006-e23"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la famille»?",
+              "audio": "la famille",
+              "opcoes": [
+                "a família",
+                "deles, delas",
+                "a filha",
+                "o marido"
+              ],
+              "gabarito": "a família",
+              "explicacao": "«la famille» = a família.",
+              "id": "fr-006-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "son, sa, ses",
+              "respostaEsperada": "son, sa, ses",
+              "explicacao": "dele, dela, seu, sua",
+              "id": "fr-006-r03",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -889,21 +888,6 @@
               "id": "fr-006-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Nous avons un chien",
-              "opcoes": [
-                "Nous",
-                "chien",
-                "avons",
-                "un"
-              ],
-              "gabarito": "Nous avons un chien",
-              "explicacao": "Escreva: Nous avons un chien",
-              "id": "fr-006-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «a tia»?",
               "opcoes": [
@@ -914,6 +898,19 @@
               "gabarito": "la tante",
               "explicacao": "«Tante» é a tia.",
               "id": "fr-006-e26"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "J'ai faim",
+              "opcoes": [
+                "faim",
+                "J'ai"
+              ],
+              "gabarito": "J'ai faim",
+              "explicacao": "Escreva: J'ai faim",
+              "id": "fr-006-x07",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -928,21 +925,6 @@
               "gabarito": "Mon oncle habite en France.",
               "explicacao": "Possessivo antes do substantivo.",
               "id": "fr-006-e27"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "J'ai besoin d'un café",
-              "opcoes": [
-                "besoin",
-                "J'ai",
-                "d'un",
-                "café"
-              ],
-              "gabarito": "J'ai besoin d'un café",
-              "explicacao": "Escreva: J'ai besoin d'un café",
-              "id": "fr-006-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

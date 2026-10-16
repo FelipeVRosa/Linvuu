@@ -508,19 +508,6 @@
               "id": "it-059-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, posso ajudá-la?»",
-              "opcoes": [
-                "Buongiorno,",
-                "aiutarla?",
-                "posso"
-              ],
-              "gabarito": "Buongiorno, posso aiutarla?",
-              "explicacao": "Escreva: Buongiorno, posso aiutarla?",
-              "id": "it-059-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Vorrei fare un bonifico",
@@ -537,12 +524,24 @@
               "id": "it-059-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buongiorno, posso aiutarla?",
-              "respostaEsperada": "Buongiorno, posso aiutarla?",
-              "explicacao": "Bom dia, posso ajudá-la?",
-              "id": "it-059-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Preciso principalmente dos giga, porque uso muito a internet. Ligo pouco.»",
+              "opcoes": [
+                "internet.",
+                "giga,",
+                "soprattutto",
+                "poco.",
+                "uso",
+                "molto",
+                "perché",
+                "i",
+                "servono",
+                "Chiamo",
+                "Mi"
+              ],
+              "gabarito": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
+              "explicacao": "Escreva: Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
+              "id": "it-059-x01",
               "complemento": true
             },
             {
@@ -552,6 +551,15 @@
               "respostaEsperada": "Dove devo firmare",
               "explicacao": "Escreva: Dove devo firmare.",
               "id": "it-059-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buongiorno, posso aiutarla?",
+              "respostaEsperada": "Buongiorno, posso aiutarla?",
+              "explicacao": "Bom dia, posso ajudá-la?",
+              "id": "it-059-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -578,27 +586,6 @@
               "id": "it-059-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Preciso principalmente dos giga, porque uso muito a internet. Ligo pouco.»",
-              "opcoes": [
-                "internet.",
-                "giga,",
-                "soprattutto",
-                "poco.",
-                "uso",
-                "molto",
-                "perché",
-                "i",
-                "servono",
-                "Chiamo",
-                "Mi"
-              ],
-              "gabarito": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
-              "explicacao": "Escreva: Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
-              "id": "it-059-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "O que é «il banco» em italiano?",
               "opcoes": [
@@ -609,6 +596,15 @@
               "gabarito": "o balcão",
               "explicacao": "O banco é «la banca».",
               "id": "it-059-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
+              "respostaEsperada": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
+              "explicacao": "Preciso principalmente dos giga, porque uso muito a internet. Ligo pouco.",
+              "id": "it-059-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -635,15 +631,6 @@
               "id": "it-059-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
-              "respostaEsperada": "Mi servono soprattutto i giga, perché uso molto internet. Chiamo poco.",
-              "explicacao": "Preciso principalmente dos giga, porque uso muito a internet. Ligo pouco.",
-              "id": "it-059-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "___ il modulo, per favore. (Lei, compilar)",
               "opcoes": [
@@ -654,6 +641,15 @@
               "gabarito": "Compili",
               "explicacao": "Imperativo de Lei.",
               "id": "it-059-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Va bene. Quanto costa al mese?",
+              "respostaEsperada": "Va bene. Quanto costa al mese?",
+              "explicacao": "Tudo bem. Quanto custa por mês?",
+              "id": "it-059-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -668,6 +664,27 @@
               "id": "it-059-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Obrigada. Uma última pergunta: se aqui não há sinal, o que faço?»",
+              "opcoes": [
+                "non",
+                "campo,",
+                "c'è",
+                "Un'ultima",
+                "Grazie.",
+                "cosa",
+                "domanda:",
+                "se",
+                "qui",
+                "faccio?",
+                "che"
+              ],
+              "gabarito": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
+              "explicacao": "Escreva: Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
+              "id": "it-059-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vorrei ___ cento euro. (sacar)",
               "opcoes": [
@@ -678,22 +695,6 @@
               "gabarito": "prelevare",
               "explicacao": "Vocabulário bancário.",
               "id": "it-059-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tudo bem. Quanto custa por mês?»",
-              "opcoes": [
-                "Va",
-                "Quanto",
-                "al",
-                "costa",
-                "bene.",
-                "mese?"
-              ],
-              "gabarito": "Va bene. Quanto costa al mese?",
-              "explicacao": "Escreva: Va bene. Quanto costa al mese?",
-              "id": "it-059-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -722,19 +723,19 @@
               "id": "it-059-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Va bene. Quanto costa al mese?",
-              "respostaEsperada": "Va bene. Quanto costa al mese?",
-              "explicacao": "Tudo bem. Quanto custa por mês?",
-              "id": "it-059-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Preciso de um formulário. Quanto tempo demora? Queria fazer uma transferência.",
               "respostaEsperada": "Mi serve un modulo. Quanto tempo ci vuole? Vorrei fare un bonifico.",
               "id": "it-059-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
+              "respostaEsperada": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
+              "explicacao": "Obrigada. Uma última pergunta: se aqui não há sinal, o que faço?",
+              "id": "it-059-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -749,6 +750,15 @@
               "id": "it-059-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Perfetto. Dove firmo?",
+              "respostaEsperada": "Perfetto. Dove firmo?",
+              "explicacao": "Perfeito. Onde assino?",
+              "id": "it-059-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Per il passaporto ___ una settimana. (é preciso)",
               "opcoes": [
@@ -759,27 +769,6 @@
               "gabarito": "ci vuole",
               "explicacao": "«Una settimana» é singular, e «volerci» marca o tempo necessário.",
               "id": "it-059-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigada. Uma última pergunta: se aqui não há sinal, o que faço?»",
-              "opcoes": [
-                "non",
-                "campo,",
-                "c'è",
-                "Un'ultima",
-                "Grazie.",
-                "cosa",
-                "domanda:",
-                "se",
-                "qui",
-                "faccio?",
-                "che"
-              ],
-              "gabarito": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
-              "explicacao": "Escreva: Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
-              "id": "it-059-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -806,6 +795,21 @@
               "id": "it-059-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «la scheda SIM»?",
+              "audio": "la scheda SIM",
+              "opcoes": [
+                "a fila",
+                "o cartão",
+                "o sinal (de celular)",
+                "o chip (SIM)"
+              ],
+              "gabarito": "o chip (SIM)",
+              "explicacao": "«la scheda SIM» = o chip (SIM).",
+              "id": "it-059-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vorrei fare una ___ da dieci euro. (recarga)",
               "opcoes": [
@@ -816,15 +820,6 @@
               "gabarito": "ricarica",
               "explicacao": "«Ricarica» é a recarga do celular.",
               "id": "it-059-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
-              "respostaEsperada": "Grazie. Un'ultima domanda: se qui non c'è campo, che cosa faccio?",
-              "explicacao": "Obrigada. Uma última pergunta: se aqui não há sinal, o que faço?",
-              "id": "it-059-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -851,6 +846,15 @@
               "id": "it-059-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "la scheda SIM",
+              "respostaEsperada": "la scheda SIM",
+              "explicacao": "o chip (SIM)",
+              "id": "it-059-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o comprovante do pagamento?",
               "opcoes": [
@@ -863,16 +867,18 @@
               "id": "it-059-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perfeito. Onde assino?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il campo»?",
+              "audio": "il campo",
               "opcoes": [
-                "firmo?",
-                "Perfetto.",
-                "Dove"
+                "o sinal (de celular)",
+                "a assinatura",
+                "preencher",
+                "o celular"
               ],
-              "gabarito": "Perfetto. Dove firmo?",
-              "explicacao": "Escreva: Perfetto. Dove firmo?",
-              "id": "it-059-x09",
+              "gabarito": "o sinal (de celular)",
+              "explicacao": "«il campo» = o sinal (de celular).",
+              "id": "it-059-x06",
               "complemento": true
             },
             {
@@ -899,15 +905,6 @@
               "gabarito": "Posso prendere un appuntamento?",
               "explicacao": "Pergunta cortês para marcar horário.",
               "id": "it-059-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Perfetto. Dove firmo?",
-              "respostaEsperada": "Perfetto. Dove firmo?",
-              "explicacao": "Perfeito. Onde assino?",
-              "id": "it-059-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

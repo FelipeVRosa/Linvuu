@@ -384,26 +384,20 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá! O senhor quer alugar um apartamento?»",
+              "enunciado": "Monte a frase: «Sim. Preciso de um apartamento de dois cômodos perto do metrô.»",
               "opcoes": [
-                "Здравствуйте!",
-                "квартиру?",
-                "хотите",
-                "Вы",
-                "снять"
+                "квартира",
+                "нужна",
+                "Мне",
+                "Да.",
+                "недалеко",
+                "двухкомнатная",
+                "метро.",
+                "от"
               ],
-              "gabarito": "Здравствуйте! Вы хотите снять квартиру?",
-              "explicacao": "Escreva: Здравствуйте! Вы хотите снять квартиру?",
+              "gabarito": "Да. Мне нужна двухкомнатная квартира недалеко от метро.",
+              "explicacao": "Escreva: Да. Мне нужна двухкомнатная квартира недалеко от метро.",
               "id": "ru-036-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте! Вы хотите снять квартиру?",
-              "respostaEsperada": "Здравствуйте! Вы хотите снять квартиру?",
-              "explicacao": "Olá! O senhor quer alugar um apartamento?",
-              "id": "ru-036-x02",
               "complemento": true
             },
             {
@@ -419,30 +413,12 @@
               "id": "ru-036-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim. Preciso de um apartamento de dois cômodos perto do metrô.»",
-              "opcoes": [
-                "квартира",
-                "нужна",
-                "Мне",
-                "Да.",
-                "недалеко",
-                "двухкомнатная",
-                "метро.",
-                "от"
-              ],
-              "gabarito": "Да. Мне нужна двухкомнатная квартира недалеко от метро.",
-              "explicacao": "Escreva: Да. Мне нужна двухкомнатная квартира недалеко от метро.",
-              "id": "ru-036-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Да. Мне нужна двухкомнатная квартира недалеко от метро.",
               "respostaEsperada": "Да. Мне нужна двухкомнатная квартира недалеко от метро.",
               "explicacao": "Sim. Preciso de um apartamento de dois cômodos perto do metrô.",
-              "id": "ru-036-x04",
+              "id": "ru-036-x02",
               "complemento": true
             },
             {
@@ -459,24 +435,38 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Quanto custa o aluguel?»",
+              "enunciado": "Monte a frase: «Trinta e cinco mil rublos por mês, mobiliado.»",
               "opcoes": [
-                "аренда?",
-                "Сколько",
-                "стоит"
+                "тысяч",
+                "месяц,",
+                "Тридцать",
+                "мебелью.",
+                "с",
+                "в",
+                "пять",
+                "рублей"
               ],
-              "gabarito": "Сколько стоит аренда?",
-              "explicacao": "Escreva: Сколько стоит аренда?",
-              "id": "ru-036-x05",
+              "gabarito": "Тридцать пять тысяч рублей в месяц, с мебелью.",
+              "explicacao": "Escreva: Тридцать пять тысяч рублей в месяц, с мебелью.",
+              "id": "ru-036-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте! Вы хотите снять квартиру?",
+              "respostaEsperada": "Здравствуйте! Вы хотите снять квартиру?",
+              "explicacao": "Olá! O senhor quer alugar um apartamento?",
+              "id": "ru-036-r01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Сколько стоит аренда?",
-              "respostaEsperada": "Сколько стоит аренда?",
-              "explicacao": "Quanto custa o aluguel?",
-              "id": "ru-036-x06",
+              "audio": "Тридцать пять тысяч рублей в месяц, с мебелью.",
+              "respostaEsperada": "Тридцать пять тысяч рублей в месяц, с мебелью.",
+              "explicacao": "Trinta e cinco mil rublos por mês, mobiliado.",
+              "id": "ru-036-x04",
               "complemento": true
             },
             {
@@ -493,29 +483,17 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Trinta e cinco mil rublos por mês, mobiliado.»",
+              "enunciado": "Monte a frase: «Não, é preciso pagá-las à parte.»",
               "opcoes": [
-                "тысяч",
-                "месяц,",
-                "Тридцать",
-                "мебелью.",
-                "с",
-                "в",
-                "пять",
-                "рублей"
+                "отдельно.",
+                "надо",
+                "Нет,",
+                "платить",
+                "их"
               ],
-              "gabarito": "Тридцать пять тысяч рублей в месяц, с мебелью.",
-              "explicacao": "Escreva: Тридцать пять тысяч рублей в месяц, с мебелью.",
-              "id": "ru-036-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Тридцать пять тысяч рублей в месяц, с мебелью.",
-              "respostaEsperada": "Тридцать пять тысяч рублей в месяц, с мебелью.",
-              "explicacao": "Trinta e cinco mil rublos por mês, mobiliado.",
-              "id": "ru-036-x08",
+              "gabarito": "Нет, их надо платить отдельно.",
+              "explicacao": "Escreva: Нет, их надо платить отдельно.",
+              "id": "ru-036-x05",
               "complemento": true
             },
             {
@@ -531,27 +509,36 @@
               "id": "ru-036-e05"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «As taxas estão incluídas no preço?»",
-              "opcoes": [
-                "цену?",
-                "входят",
-                "в",
-                "Коммунальные",
-                "услуги"
-              ],
-              "gabarito": "Коммунальные услуги входят в цену?",
-              "explicacao": "Escreva: Коммунальные услуги входят в цену?",
-              "id": "ru-036-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Нет, их надо платить отдельно.",
+              "respostaEsperada": "Нет, их надо платить отдельно.",
+              "explicacao": "Não, é preciso pagá-las à parte.",
+              "id": "ru-036-x06",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Коммунальные услуги входят в цену?",
-              "respostaEsperada": "Коммунальные услуги входят в цену?",
-              "explicacao": "As taxas estão incluídas no preço?",
-              "id": "ru-036-x10",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Сколько стоит аренда?",
+              "respostaEsperada": "Сколько стоит аренда?",
+              "explicacao": "Quanto custa o aluguel?",
+              "id": "ru-036-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Claro! Venha às seis horas.»",
+              "opcoes": [
+                "Конечно!",
+                "часов.",
+                "в",
+                "Приходите",
+                "шесть"
+              ],
+              "gabarito": "Конечно! Приходите в шесть часов.",
+              "explicacao": "Escreva: Конечно! Приходите в шесть часов.",
+              "id": "ru-036-x07",
               "complemento": true
             },
             {
@@ -567,27 +554,12 @@
               "id": "ru-036-e06"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, é preciso pagá-las à parte.»",
-              "opcoes": [
-                "отдельно.",
-                "надо",
-                "Нет,",
-                "платить",
-                "их"
-              ],
-              "gabarito": "Нет, их надо платить отдельно.",
-              "explicacao": "Escreva: Нет, их надо платить отдельно.",
-              "id": "ru-036-x11",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Нет, их надо платить отдельно.",
-              "respostaEsperada": "Нет, их надо платить отдельно.",
-              "explicacao": "Não, é preciso pagá-las à parte.",
-              "id": "ru-036-x12",
+              "audio": "Конечно! Приходите в шесть часов.",
+              "respostaEsperada": "Конечно! Приходите в шесть часов.",
+              "explicacao": "Claro! Venha às seis horas.",
+              "id": "ru-036-x08",
               "complemento": true
             },
             {
@@ -603,26 +575,33 @@
               "id": "ru-036-e07"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Posso ver o apartamento amanhã?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «шкаф»?",
+              "audio": "шкаф",
               "opcoes": [
-                "квартиру",
-                "Можно",
-                "завтра?",
-                "посмотреть"
+                "sala de estar",
+                "banheiro",
+                "mesa",
+                "armário"
               ],
-              "gabarito": "Можно посмотреть квартиру завтра?",
-              "explicacao": "Escreva: Можно посмотреть квартиру завтра?",
-              "id": "ru-036-x13",
+              "gabarito": "armário",
+              "explicacao": "«шкаф» = armário.",
+              "id": "ru-036-x09",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Можно посмотреть квартиру завтра?",
-              "respostaEsperada": "Можно посмотреть квартиру завтра?",
-              "explicacao": "Posso ver o apartamento amanhã?",
-              "id": "ru-036-x14",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «гостиная»?",
+              "audio": "гостиная",
+              "opcoes": [
+                "cama",
+                "mesa",
+                "sala de estar",
+                "móveis"
+              ],
+              "gabarito": "sala de estar",
+              "explicacao": "«гостиная» = sala de estar.",
+              "id": "ru-036-x10",
               "complemento": true
             },
             {
@@ -638,27 +617,42 @@
               "id": "ru-036-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Claro! Venha às seis horas.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «дом»?",
+              "audio": "дом",
               "opcoes": [
-                "Конечно!",
-                "часов.",
-                "в",
-                "Приходите",
-                "шесть"
+                "sofá",
+                "abajur, lâmpada",
+                "casa, prédio",
+                "cômodo, quarto"
               ],
-              "gabarito": "Конечно! Приходите в шесть часов.",
-              "explicacao": "Escreva: Конечно! Приходите в шесть часов.",
-              "id": "ru-036-x15",
+              "gabarito": "casa, prédio",
+              "explicacao": "«дом» = casa, prédio.",
+              "id": "ru-036-x11",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Конечно! Приходите в шесть часов.",
-              "respostaEsperada": "Конечно! Приходите в шесть часов.",
-              "explicacao": "Claro! Venha às seis horas.",
-              "id": "ru-036-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Коммунальные услуги входят в цену?",
+              "respostaEsperada": "Коммунальные услуги входят в цену?",
+              "explicacao": "As taxas estão incluídas no preço?",
+              "id": "ru-036-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «лампа»?",
+              "audio": "лампа",
+              "opcoes": [
+                "abajur, lâmpada",
+                "cozinha",
+                "varanda",
+                "sofá"
+              ],
+              "gabarito": "abajur, lâmpada",
+              "explicacao": "«лампа» = abajur, lâmpada.",
+              "id": "ru-036-x12",
               "complemento": true
             },
             {
@@ -675,32 +669,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «шкаф»?",
-              "audio": "шкаф",
+              "enunciado": "O que significa «стул»?",
+              "audio": "стул",
               "opcoes": [
-                "sala de estar",
-                "banheiro",
-                "mesa",
-                "armário"
-              ],
-              "gabarito": "armário",
-              "explicacao": "«шкаф» = armário.",
-              "id": "ru-036-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «гостиная»?",
-              "audio": "гостиная",
-              "opcoes": [
+                "sofá",
+                "móveis",
                 "cama",
-                "mesa",
-                "sala de estar",
-                "móveis"
+                "cadeira"
               ],
-              "gabarito": "sala de estar",
-              "explicacao": "«гостиная» = sala de estar.",
-              "id": "ru-036-x18",
+              "gabarito": "cadeira",
+              "explicacao": "«стул» = cadeira.",
+              "id": "ru-036-x13",
               "complemento": true
             },
             {
@@ -720,32 +699,40 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «дом»?",
-              "audio": "дом",
+              "enunciado": "O que significa «спальня»?",
+              "audio": "спальня",
               "opcoes": [
+                "quarto de dormir",
                 "sofá",
-                "abajur, lâmpada",
-                "casa, prédio",
-                "cômodo, quarto"
+                "varanda",
+                "cadeira"
               ],
-              "gabarito": "casa, prédio",
-              "explicacao": "«дом» = casa, prédio.",
-              "id": "ru-036-x19",
+              "gabarito": "quarto de dormir",
+              "explicacao": "«спальня» = quarto de dormir.",
+              "id": "ru-036-x14",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «лампа»?",
-              "audio": "лампа",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Можно посмотреть квартиру завтра?",
+              "respostaEsperada": "Можно посмотреть квартиру завтра?",
+              "explicacao": "Posso ver o apartamento amanhã?",
+              "id": "ru-036-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Сколько стоит аренда",
               "opcoes": [
-                "abajur, lâmpada",
-                "cozinha",
-                "varanda",
-                "sofá"
+                "Сколько",
+                "аренда",
+                "стоит"
               ],
-              "gabarito": "abajur, lâmpada",
-              "explicacao": "«лампа» = abajur, lâmpada.",
-              "id": "ru-036-x20",
+              "gabarito": "Сколько стоит аренда",
+              "explicacao": "Escreva: Сколько стоит аренда",
+              "id": "ru-036-x15",
               "complemento": true
             },
             {
@@ -762,58 +749,6 @@
               "id": "ru-036-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «стул»?",
-              "audio": "стул",
-              "opcoes": [
-                "sofá",
-                "móveis",
-                "cama",
-                "cadeira"
-              ],
-              "gabarito": "cadeira",
-              "explicacao": "«стул» = cadeira.",
-              "id": "ru-036-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «спальня»?",
-              "audio": "спальня",
-              "opcoes": [
-                "quarto de dormir",
-                "sofá",
-                "varanda",
-                "cadeira"
-              ],
-              "gabarito": "quarto de dormir",
-              "explicacao": "«спальня» = quarto de dormir.",
-              "id": "ru-036-x22",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Квартира на третьем этаже",
-              "respostaEsperada": "Квартира на третьем этаже",
-              "explicacao": "«на» + prepositivo.",
-              "id": "ru-036-e12"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Сколько стоит аренда",
-              "opcoes": [
-                "Сколько",
-                "аренда",
-                "стоит"
-              ],
-              "gabarito": "Сколько стоит аренда",
-              "explicacao": "Escreva: Сколько стоит аренда",
-              "id": "ru-036-x23",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Квартира на третьем этаже",
@@ -825,14 +760,16 @@
               ],
               "gabarito": "Квартира на третьем этаже",
               "explicacao": "Escreva: Квартира на третьем этаже",
-              "id": "ru-036-x24",
+              "id": "ru-036-x16",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases sobre a sua casa: andar, cômodos, um móvel e onde está, e algo que não existe.",
-              "respostaEsperada": "Я живу в квартире. Квартира на пятом этаже. В комнате стоит диван. Лампа стоит на столе. В квартире нет балкона.",
-              "id": "ru-036-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Квартира на третьем этаже",
+              "respostaEsperada": "Квартира на третьем этаже",
+              "explicacao": "«на» + prepositivo.",
+              "id": "ru-036-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -840,8 +777,14 @@
               "audio": "Сколько стоит аренда",
               "respostaEsperada": "Сколько стоит аренда",
               "explicacao": "Escreva: Сколько стоит аренда",
-              "id": "ru-036-x25",
+              "id": "ru-036-x17",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases sobre a sua casa: andar, cômodos, um móvel e onde está, e algo que não existe.",
+              "respostaEsperada": "Я живу в квартире. Квартира на пятом этаже. В комнате стоит диван. Лампа стоит на столе. В квартире нет балкона.",
+              "id": "ru-036-e13"
             }
           ]
         },

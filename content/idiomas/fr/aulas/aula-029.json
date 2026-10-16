@@ -476,23 +476,6 @@
               "id": "fr-029-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Primeiro, quebre quatro ovos em uma tigela.»",
-              "opcoes": [
-                "un",
-                "dans",
-                "D'abord,",
-                "casse",
-                "bol.",
-                "œufs",
-                "quatre"
-              ],
-              "gabarito": "D'abord, casse quatre œufs dans un bol.",
-              "explicacao": "Escreva: D'abord, casse quatre œufs dans un bol.",
-              "id": "fr-029-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Regarde-le",
@@ -509,12 +492,23 @@
               "id": "fr-029-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "D'abord, casse quatre œufs dans un bol.",
-              "respostaEsperada": "D'abord, casse quatre œufs dans un bol.",
-              "explicacao": "Primeiro, quebre quatro ovos em uma tigela.",
-              "id": "fr-029-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Não, não ponha demais. Depois aqueça a frigideira.»",
+              "opcoes": [
+                "chauffer",
+                "n'en",
+                "la",
+                "Non,",
+                "mets",
+                "fais",
+                "pas",
+                "poêle.",
+                "Puis",
+                "trop."
+              ],
+              "gabarito": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+              "explicacao": "Escreva: Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+              "id": "fr-029-x01",
               "complemento": true
             },
             {
@@ -524,6 +518,15 @@
               "respostaEsperada": "Faites comme chez vous",
               "explicacao": "Escreva: Faites comme chez vous.",
               "id": "fr-029-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "D'abord, casse quatre œufs dans un bol.",
+              "respostaEsperada": "D'abord, casse quatre œufs dans un bol.",
+              "explicacao": "Primeiro, quebre quatro ovos em uma tigela.",
+              "id": "fr-029-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -550,23 +553,6 @@
               "id": "fr-029-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bato-os com um garfo?»",
-              "opcoes": [
-                "fourchette",
-                "les",
-                "bats",
-                "une",
-                "?",
-                "avec",
-                "Je"
-              ],
-              "gabarito": "Je les bats avec une fourchette ?",
-              "explicacao": "Escreva: Je les bats avec une fourchette ?",
-              "id": "fr-029-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Me» no imperativo afirmativo:",
               "opcoes": [
@@ -577,6 +563,15 @@
               "gabarito": "moi",
               "explicacao": "«Écoute-moi».",
               "id": "fr-029-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+              "respostaEsperada": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
+              "explicacao": "Não, não ponha demais. Depois aqueça a frigideira.",
+              "id": "fr-029-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -603,15 +598,6 @@
               "id": "fr-029-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je les bats avec une fourchette ?",
-              "respostaEsperada": "Je les bats avec une fourchette ?",
-              "explicacao": "Bato-os com um garfo?",
-              "id": "fr-029-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Il est interdit ___ fumer.",
               "opcoes": [
@@ -622,6 +608,15 @@
               "gabarito": "de",
               "explicacao": "«Interdit de».",
               "id": "fr-029-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Je les bats avec une fourchette ?",
+              "respostaEsperada": "Je les bats avec une fourchette ?",
+              "explicacao": "Bato-os com um garfo?",
+              "id": "fr-029-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -636,6 +631,19 @@
               "id": "fr-029-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E depois?»",
+              "opcoes": [
+                "ensuite",
+                "Et",
+                "?"
+              ],
+              "gabarito": "Et ensuite ?",
+              "explicacao": "Escreva: Et ensuite ?",
+              "id": "fr-029-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ne ___ touchez pas ! (isso)",
               "opcoes": [
@@ -646,25 +654,6 @@
               "gabarito": "le",
               "explicacao": "Pronome antes do verbo.",
               "id": "fr-029-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, bata-os bem. Depois, acrescente um pouco de sal.»",
-              "opcoes": [
-                "bien.",
-                "ajoute",
-                "de",
-                "sel.",
-                "Oui,",
-                "Ensuite,",
-                "bats-les",
-                "peu",
-                "un"
-              ],
-              "gabarito": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
-              "explicacao": "Escreva: Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
-              "id": "fr-029-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -692,19 +681,19 @@
               "id": "fr-029-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
-              "respostaEsperada": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
-              "explicacao": "Sim, bata-os bem. Depois, acrescente um pouco de sal.",
-              "id": "fr-029-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Olhe-o! Não o olhe! Dê-o a mim!",
               "respostaEsperada": "Regarde-le ! Ne le regarde pas ! Donne-le-moi !",
               "id": "fr-029-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Et ensuite ?",
+              "respostaEsperada": "Et ensuite ?",
+              "explicacao": "E depois?",
+              "id": "fr-029-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -719,6 +708,15 @@
               "id": "fr-029-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
+              "respostaEsperada": "Oui, bats-les bien. Ensuite, ajoute un peu de sel.",
+              "explicacao": "Sim, bata-os bem. Depois, acrescente um pouco de sal.",
+              "id": "fr-029-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Lève-___ ! (te)",
               "opcoes": [
@@ -729,20 +727,6 @@
               "gabarito": "toi",
               "explicacao": "No imperativo afirmativo, «te» vira «toi».",
               "id": "fr-029-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ponho muito?»",
-              "opcoes": [
-                "beaucoup",
-                "?",
-                "J'en",
-                "mets"
-              ],
-              "gabarito": "J'en mets beaucoup ?",
-              "explicacao": "Escreva: J'en mets beaucoup ?",
-              "id": "fr-029-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -769,6 +753,27 @@
               "id": "fr-029-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Despeje os ovos e deixe cozinhar três minutos. Está pronto!»",
+              "opcoes": [
+                "C'est",
+                "trois",
+                "prêt",
+                "!",
+                "Verse",
+                "et",
+                "minutes.",
+                "cuire",
+                "œufs",
+                "les",
+                "laisse"
+              ],
+              "gabarito": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+              "explicacao": "Escreva: Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+              "id": "fr-029-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Faites ___ chez vous ! (como)",
               "opcoes": [
@@ -779,15 +784,6 @@
               "gabarito": "comme",
               "explicacao": "«Faites comme chez vous» é a expressão fixa.",
               "id": "fr-029-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "J'en mets beaucoup ?",
-              "respostaEsperada": "J'en mets beaucoup ?",
-              "explicacao": "Ponho muito?",
-              "id": "fr-029-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -814,6 +810,15 @@
               "id": "fr-029-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "J'en mets beaucoup ?",
+              "respostaEsperada": "J'en mets beaucoup ?",
+              "explicacao": "Ponho muito?",
+              "id": "fr-029-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como convidar alguém a sentar (vous)?",
               "opcoes": [
@@ -826,23 +831,12 @@
               "id": "fr-029-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, não ponha demais. Depois aqueça a frigideira.»",
-              "opcoes": [
-                "chauffer",
-                "n'en",
-                "la",
-                "Non,",
-                "mets",
-                "fais",
-                "pas",
-                "poêle.",
-                "Puis",
-                "trop."
-              ],
-              "gabarito": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
-              "explicacao": "Escreva: Non, n'en mets pas trop. Puis fais chauffer la poêle.",
-              "id": "fr-029-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+              "respostaEsperada": "Verse les œufs et laisse cuire trois minutes. C'est prêt !",
+              "explicacao": "Despeje os ovos e deixe cozinhar três minutos. Está pronto!",
+              "id": "fr-029-x06",
               "complemento": true
             },
             {
@@ -871,15 +865,6 @@
               "gabarito": "Mélangez les œufs avec le sucre.",
               "explicacao": "Imperativo de «vous».",
               "id": "fr-029-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
-              "respostaEsperada": "Non, n'en mets pas trop. Puis fais chauffer la poêle.",
-              "explicacao": "Não, não ponha demais. Depois aqueça a frigideira.",
-              "id": "fr-029-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

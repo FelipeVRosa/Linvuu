@@ -36,21 +36,6 @@
             "id": "ru-022-e01"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sasha, você já leu o livro?»",
-            "opcoes": [
-              "Саша,",
-              "книгу?",
-              "ты",
-              "прочитал",
-              "уже"
-            ],
-            "gabarito": "Саша, ты уже прочитал книгу?",
-            "explicacao": "Escreva: Саша, ты уже прочитал книгу?",
-            "id": "ru-022-x01",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Я прочитал книгу» sugere:",
             "opcoes": [
@@ -63,12 +48,17 @@
             "id": "ru-022-e02"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Саша, ты уже прочитал книгу?",
-            "respostaEsperada": "Саша, ты уже прочитал книгу?",
-            "explicacao": "Sasha, você já leu o livro?",
-            "id": "ru-022-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «E a carta, você escreveu?»",
+            "opcoes": [
+              "написал?",
+              "А",
+              "ты",
+              "письмо"
+            ],
+            "gabarito": "А письмо ты написал?",
+            "explicacao": "Escreva: А письмо ты написал?",
+            "id": "ru-022-x01",
             "complemento": true
           },
           {
@@ -84,22 +74,21 @@
             "id": "ru-022-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, ainda estou lendo. Li a noite inteira.»",
-            "opcoes": [
-              "её",
-              "ещё",
-              "я",
-              "вечер.",
-              "Я",
-              "читаю.",
-              "Нет,",
-              "читал",
-              "весь"
-            ],
-            "gabarito": "Нет, я ещё читаю. Я читал её весь вечер.",
-            "explicacao": "Escreva: Нет, я ещё читаю. Я читал её весь вечер.",
-            "id": "ru-022-x03",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Саша, ты уже прочитал книгу?",
+            "respostaEsperada": "Саша, ты уже прочитал книгу?",
+            "explicacao": "Sasha, você já leu o livro?",
+            "id": "ru-022-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "А письмо ты написал?",
+            "respostaEsperada": "А письмо ты написал?",
+            "explicacao": "E a carta, você escreveu?",
+            "id": "ru-022-x02",
             "complemento": true
           },
           {
@@ -115,12 +104,17 @@
             "id": "ru-022-e04"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Нет, я ещё читаю. Я читал её весь вечер.",
-            "respostaEsperada": "Нет, я ещё читаю. Я читал её весь вечер.",
-            "explicacao": "Não, ainda estou lendo. Li a noite inteira.",
-            "id": "ru-022-x04",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Que bom! Você comprou pão?»",
+            "opcoes": [
+              "купил",
+              "хлеб?",
+              "Хорошо!",
+              "Ты"
+            ],
+            "gabarito": "Хорошо! Ты купил хлеб?",
+            "explicacao": "Escreva: Хорошо! Ты купил хлеб?",
+            "id": "ru-022-x03",
             "complemento": true
           },
           {
@@ -134,20 +128,6 @@
             "gabarito": "читал",
             "explicacao": "Duração: imperfectivo.",
             "id": "ru-022-e05"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E a carta, você escreveu?»",
-            "opcoes": [
-              "написал?",
-              "А",
-              "ты",
-              "письмо"
-            ],
-            "gabarito": "А письмо ты написал?",
-            "explicacao": "Escreva: А письмо ты написал?",
-            "id": "ru-022-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -164,10 +144,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "А письмо ты написал?",
-            "respostaEsperada": "А письмо ты написал?",
-            "explicacao": "E a carta, você escreveu?",
-            "id": "ru-022-x06",
+            "audio": "Хорошо! Ты купил хлеб?",
+            "respostaEsperada": "Хорошо! Ты купил хлеб?",
+            "explicacao": "Que bom! Você comprou pão?",
+            "id": "ru-022-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Нет, я ещё читаю. Я читал её весь вечер.",
+            "respostaEsperada": "Нет, я ещё читаю. Я читал её весь вечер.",
+            "explicacao": "Não, ainda estou lendo. Li a noite inteira.",
+            "id": "ru-022-r02",
             "complemento": true
           },
           {
@@ -184,19 +173,15 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, já escrevi a carta e respondi.»",
+            "enunciado": "Monte a frase: «De nada!»",
             "opcoes": [
-              "уже",
-              "Да,",
-              "ответил.",
-              "и",
-              "я",
-              "написал",
-              "письмо"
+              "что!",
+              "Не",
+              "за"
             ],
-            "gabarito": "Да, я уже написал письмо и ответил.",
-            "explicacao": "Escreva: Да, я уже написал письмо и ответил.",
-            "id": "ru-022-x07",
+            "gabarito": "Не за что!",
+            "explicacao": "Escreva: Не за что!",
+            "id": "ru-022-x05",
             "complemento": true
           },
           {
@@ -212,12 +197,21 @@
             "id": "ru-022-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
             "audio": "Да, я уже написал письмо и ответил.",
             "respostaEsperada": "Да, я уже написал письмо и ответил.",
             "explicacao": "Sim, já escrevi a carta e respondi.",
-            "id": "ru-022-x08",
+            "id": "ru-022-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Не за что!",
+            "respostaEsperada": "Не за что!",
+            "explicacao": "De nada!",
+            "id": "ru-022-x06",
             "complemento": true
           },
           {
@@ -233,20 +227,6 @@
             "id": "ru-022-e09"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Que bom! Você comprou pão?»",
-            "opcoes": [
-              "купил",
-              "хлеб?",
-              "Хорошо!",
-              "Ты"
-            ],
-            "gabarito": "Хорошо! Ты купил хлеб?",
-            "explicacao": "Escreva: Хорошо! Ты купил хлеб?",
-            "id": "ru-022-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Что ты сделал?» pergunta por:",
             "opcoes": [
@@ -259,12 +239,18 @@
             "id": "ru-022-e10"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо! Ты купил хлеб?",
-            "respostaEsperada": "Хорошо! Ты купил хлеб?",
-            "explicacao": "Que bom! Você comprou pão?",
-            "id": "ru-022-x10",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «долго»?",
+            "audio": "долго",
+            "opcoes": [
+              "finalmente",
+              "dizer, falar",
+              "por muito tempo",
+              "terminar"
+            ],
+            "gabarito": "por muito tempo",
+            "explicacao": "«долго» = por muito tempo.",
+            "id": "ru-022-x07",
             "complemento": true
           },
           {
@@ -280,19 +266,27 @@
             "id": "ru-022-e11"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, comprei pão e leite.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «весь день»?",
+            "audio": "весь день",
             "opcoes": [
-              "Да,",
-              "я",
-              "купил",
-              "и",
-              "молоко.",
-              "хлеб"
+              "dizer, falar",
+              "encontrar",
+              "pegar",
+              "o dia inteiro"
             ],
-            "gabarito": "Да, я купил хлеб и молоко.",
-            "explicacao": "Escreva: Да, я купил хлеб и молоко.",
-            "id": "ru-022-x11",
+            "gabarito": "o dia inteiro",
+            "explicacao": "«весь день» = o dia inteiro.",
+            "id": "ru-022-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, я купил хлеб и молоко.",
+            "respostaEsperada": "Да, я купил хлеб и молоко.",
+            "explicacao": "Sim, comprei pão e leite.",
+            "id": "ru-022-r04",
             "complemento": true
           },
           {
@@ -309,12 +303,18 @@
             "id": "ru-022-e12"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, я купил хлеб и молоко.",
-            "respostaEsperada": "Да, я купил хлеб и молоко.",
-            "explicacao": "Sim, comprei pão e leite.",
-            "id": "ru-022-x12",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «помогать / помочь»?",
+            "audio": "помогать / помочь",
+            "opcoes": [
+              "pegar",
+              "resolver, decidir",
+              "em uma hora (prazo)",
+              "ajudar"
+            ],
+            "gabarito": "ajudar",
+            "explicacao": "«помогать / помочь» = ajudar.",
+            "id": "ru-022-x09",
             "complemento": true
           },
           {
@@ -329,19 +329,6 @@
             "gabarito": "Он уже написал письмо.",
             "explicacao": "Sujeito + уже + perfectivo + objeto.",
             "id": "ru-022-e13"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «De nada!»",
-            "opcoes": [
-              "что!",
-              "Не",
-              "за"
-            ],
-            "gabarito": "Не за что!",
-            "explicacao": "Escreva: Не за что!",
-            "id": "ru-022-x13",
-            "complemento": true
           },
           {
             "tipo": "producao",

@@ -37,26 +37,16 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Boris, quando você tem férias?»",
+            "enunciado": "Monte a frase: «Você já comprou as passagens?»",
             "opcoes": [
-              "когда",
-              "отпуск?",
-              "Борис,",
-              "тебя",
-              "у"
+              "билеты?",
+              "Ты",
+              "купил",
+              "уже"
             ],
-            "gabarito": "Борис, когда у тебя отпуск?",
-            "explicacao": "Escreva: Борис, когда у тебя отпуск?",
+            "gabarito": "Ты уже купил билеты?",
+            "explicacao": "Escreva: Ты уже купил билеты?",
             "id": "ru-048-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Борис, когда у тебя отпуск?",
-            "respostaEsperada": "Борис, когда у тебя отпуск?",
-            "explicacao": "Boris, quando você tem férias?",
-            "id": "ru-048-x02",
             "complemento": true
           },
           {
@@ -72,31 +62,12 @@
             "id": "ru-048-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Daqui a duas semanas. Vou a Moscou por uma semana.»",
-            "opcoes": [
-              "Я",
-              "в",
-              "Москву",
-              "поеду",
-              "недели.",
-              "две",
-              "неделю.",
-              "на",
-              "Через"
-            ],
-            "gabarito": "Через две недели. Я поеду в Москву на неделю.",
-            "explicacao": "Escreva: Через две недели. Я поеду в Москву на неделю.",
-            "id": "ru-048-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Через две недели. Я поеду в Москву на неделю.",
-            "respostaEsperada": "Через две недели. Я поеду в Москву на неделю.",
-            "explicacao": "Daqui a duas semanas. Vou a Moscou por uma semana.",
-            "id": "ru-048-x04",
+            "audio": "Ты уже купил билеты?",
+            "respostaEsperada": "Ты уже купил билеты?",
+            "explicacao": "Você já comprou as passagens?",
+            "id": "ru-048-x02",
             "complemento": true
           },
           {
@@ -113,25 +84,35 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você já comprou as passagens?»",
+            "enunciado": "Monte a frase: «Você já esteve em Moscou antes?»",
             "opcoes": [
-              "билеты?",
+              "Москве",
+              "раньше?",
+              "в",
               "Ты",
-              "купил",
-              "уже"
+              "бывал"
             ],
-            "gabarito": "Ты уже купил билеты?",
-            "explicacao": "Escreva: Ты уже купил билеты?",
-            "id": "ru-048-x05",
+            "gabarito": "Ты бывал в Москве раньше?",
+            "explicacao": "Escreva: Ты бывал в Москве раньше?",
+            "id": "ru-048-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Борис, когда у тебя отпуск?",
+            "respostaEsperada": "Борис, когда у тебя отпуск?",
+            "explicacao": "Boris, quando você tem férias?",
+            "id": "ru-048-r01",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Ты уже купил билеты?",
-            "respostaEsperada": "Ты уже купил билеты?",
-            "explicacao": "Você já comprou as passagens?",
-            "id": "ru-048-x06",
+            "audio": "Ты бывал в Москве раньше?",
+            "respostaEsperada": "Ты бывал в Москве раньше?",
+            "explicacao": "Você já esteve em Moscou antes?",
+            "id": "ru-048-x04",
             "complemento": true
           },
           {
@@ -148,29 +129,20 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ainda não. Vou comprá-las esta semana.»",
+            "enunciado": "Monte a frase: «E depois das férias você vai direto ao trabalho?»",
             "opcoes": [
+              "отпуска",
+              "сразу",
+              "А",
+              "работу?",
+              "ты",
               "на",
-              "их",
-              "куплю",
-              "Я",
-              "неделе.",
-              "нет.",
-              "Ещё",
-              "этой"
+              "после",
+              "пойдёшь"
             ],
-            "gabarito": "Ещё нет. Я куплю их на этой неделе.",
-            "explicacao": "Escreva: Ещё нет. Я куплю их на этой неделе.",
-            "id": "ru-048-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ещё нет. Я куплю их на этой неделе.",
-            "respostaEsperada": "Ещё нет. Я куплю их на этой неделе.",
-            "explicacao": "Ainda não. Vou comprá-las esta semana.",
-            "id": "ru-048-x08",
+            "gabarito": "А после отпуска ты сразу пойдёшь на работу?",
+            "explicacao": "Escreva: А после отпуска ты сразу пойдёшь на работу?",
+            "id": "ru-048-x05",
             "complemento": true
           },
           {
@@ -186,27 +158,36 @@
             "id": "ru-048-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você já esteve em Moscou antes?»",
-            "opcoes": [
-              "Москве",
-              "раньше?",
-              "в",
-              "Ты",
-              "бывал"
-            ],
-            "gabarito": "Ты бывал в Москве раньше?",
-            "explicacao": "Escreva: Ты бывал в Москве раньше?",
-            "id": "ru-048-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "А после отпуска ты сразу пойдёшь на работу?",
+            "respostaEsperada": "А после отпуска ты сразу пойдёшь на работу?",
+            "explicacao": "E depois das férias você vai direto ao trabalho?",
+            "id": "ru-048-x06",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ты бывал в Москве раньше?",
-            "respostaEsperada": "Ты бывал в Москве раньше?",
-            "explicacao": "Você já esteve em Moscou antes?",
-            "id": "ru-048-x10",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Через две недели. Я поеду в Москву на неделю.",
+            "respostaEsperada": "Через две недели. Я поеду в Москву на неделю.",
+            "explicacao": "Daqui a duas semanas. Vou a Moscou por uma semana.",
+            "id": "ru-048-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «за неделю»?",
+            "audio": "за неделю",
+            "opcoes": [
+              "há (tempo atrás)",
+              "em uma semana (concluído)",
+              "há muito tempo",
+              "antes, mais cedo"
+            ],
+            "gabarito": "em uma semana (concluído)",
+            "explicacao": "«за неделю» = em uma semana (concluído).",
+            "id": "ru-048-x07",
             "complemento": true
           },
           {
@@ -222,24 +203,6 @@
             "id": "ru-048-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, há um ano. Morei lá duas semanas.»",
-            "opcoes": [
-              "там",
-              "Я",
-              "назад.",
-              "Да,",
-              "жил",
-              "две",
-              "недели.",
-              "год"
-            ],
-            "gabarito": "Да, год назад. Я жил там две недели.",
-            "explicacao": "Escreva: Да, год назад. Я жил там две недели.",
-            "id": "ru-048-x11",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Перед сном» significa:",
             "opcoes": [
@@ -252,30 +215,18 @@
             "id": "ru-048-e07"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, год назад. Я жил там две недели.",
-            "respostaEsperada": "Да, год назад. Я жил там две недели.",
-            "explicacao": "Sim, há um ano. Morei lá duas semanas.",
-            "id": "ru-048-x12",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E depois das férias você vai direto ao trabalho?»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «уже»?",
+            "audio": "уже",
             "opcoes": [
-              "отпуска",
-              "сразу",
-              "А",
-              "работу?",
-              "ты",
-              "на",
-              "после",
-              "пойдёшь"
+              "em breve",
+              "por muito tempo",
+              "há muito tempo",
+              "já"
             ],
-            "gabarito": "А после отпуска ты сразу пойдёшь на работу?",
-            "explicacao": "Escreva: А после отпуска ты сразу пойдёшь на работу?",
-            "id": "ru-048-x13",
+            "gabarito": "já",
+            "explicacao": "«уже» = já.",
+            "id": "ru-048-x08",
             "complemento": true
           },
           {
@@ -291,27 +242,42 @@
             "id": "ru-048-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "А после отпуска ты сразу пойдёшь на работу?",
-            "respostaEsperada": "А после отпуска ты сразу пойдёшь на работу?",
-            "explicacao": "E depois das férias você vai direto ao trabalho?",
-            "id": "ru-048-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «сейчас»?",
+            "audio": "сейчас",
+            "opcoes": [
+              "há muito tempo",
+              "em breve",
+              "há pouco",
+              "agora"
+            ],
+            "gabarito": "agora",
+            "explicacao": "«сейчас» = agora.",
+            "id": "ru-048-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ещё нет. Я куплю их на этой неделе.",
+            "respostaEsperada": "Ещё нет. Я куплю их на этой неделе.",
+            "explicacao": "Ainda não. Vou comprá-las esta semana.",
+            "id": "ru-048-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «за неделю»?",
-            "audio": "за неделю",
+            "enunciado": "O que significa «назад»?",
+            "audio": "назад",
             "opcoes": [
+              "antes, mais cedo",
               "há (tempo atrás)",
-              "em uma semana (concluído)",
-              "há muito tempo",
-              "antes, mais cedo"
+              "ainda, mais",
+              "há muito tempo"
             ],
-            "gabarito": "em uma semana (concluído)",
-            "explicacao": "«за неделю» = em uma semana (concluído).",
-            "id": "ru-048-x15",
+            "gabarito": "há (tempo atrás)",
+            "explicacao": "«назад» = há (tempo atrás).",
+            "id": "ru-048-x10",
             "complemento": true
           },
           {
@@ -328,32 +294,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «уже»?",
-            "audio": "уже",
+            "enunciado": "O que significa «позже»?",
+            "audio": "позже",
             "opcoes": [
-              "em breve",
-              "por muito tempo",
+              "ainda não",
+              "há (tempo atrás)",
               "há muito tempo",
-              "já"
+              "depois, mais tarde"
             ],
-            "gabarito": "já",
-            "explicacao": "«уже» = já.",
-            "id": "ru-048-x16",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «сейчас»?",
-            "audio": "сейчас",
-            "opcoes": [
-              "há muito tempo",
-              "em breve",
-              "há pouco",
-              "agora"
-            ],
-            "gabarito": "agora",
-            "explicacao": "«сейчас» = agora.",
-            "id": "ru-048-x17",
+            "gabarito": "depois, mais tarde",
+            "explicacao": "«позже» = depois, mais tarde.",
+            "id": "ru-048-x11",
             "complemento": true
           },
           {
@@ -373,32 +324,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «назад»?",
-            "audio": "назад",
+            "enunciado": "O que significa «на неделю»?",
+            "audio": "на неделю",
             "opcoes": [
               "antes, mais cedo",
-              "há (tempo atrás)",
-              "ainda, mais",
-              "há muito tempo"
+              "em uma semana (concluído)",
+              "por uma semana (planejado)",
+              "há (tempo atrás)"
             ],
-            "gabarito": "há (tempo atrás)",
-            "explicacao": "«назад» = há (tempo atrás).",
-            "id": "ru-048-x18",
+            "gabarito": "por uma semana (planejado)",
+            "explicacao": "«на неделю» = por uma semana (planejado).",
+            "id": "ru-048-x12",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «позже»?",
-            "audio": "позже",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, год назад. Я жил там две недели.",
+            "respostaEsperada": "Да, год назад. Я жил там две недели.",
+            "explicacao": "Sim, há um ano. Morei lá duas semanas.",
+            "id": "ru-048-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Я приехал неделю назад",
             "opcoes": [
-              "ainda não",
-              "há (tempo atrás)",
-              "há muito tempo",
-              "depois, mais tarde"
+              "Я",
+              "назад",
+              "приехал",
+              "неделю"
             ],
-            "gabarito": "depois, mais tarde",
-            "explicacao": "«позже» = depois, mais tarde.",
-            "id": "ru-048-x19",
+            "gabarito": "Я приехал неделю назад",
+            "explicacao": "Escreva: Я приехал неделю назад",
+            "id": "ru-048-x13",
             "complemento": true
           },
           {
@@ -415,44 +375,6 @@
             "id": "ru-048-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «на неделю»?",
-            "audio": "на неделю",
-            "opcoes": [
-              "antes, mais cedo",
-              "em uma semana (concluído)",
-              "por uma semana (planejado)",
-              "há (tempo atrás)"
-            ],
-            "gabarito": "por uma semana (planejado)",
-            "explicacao": "«на неделю» = por uma semana (planejado).",
-            "id": "ru-048-x20",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Я приехал неделю назад",
-            "opcoes": [
-              "Я",
-              "назад",
-              "приехал",
-              "неделю"
-            ],
-            "gabarito": "Я приехал неделю назад",
-            "explicacao": "Escreva: Я приехал неделю назад",
-            "id": "ru-048-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Перед сном я читаю",
-            "respostaEsperada": "Перед сном я читаю",
-            "explicacao": "«перед» + instrumental.",
-            "id": "ru-048-e12"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Перед сном я читаю",
@@ -464,8 +386,16 @@
             ],
             "gabarito": "Перед сном я читаю",
             "explicacao": "Escreva: Перед сном я читаю",
-            "id": "ru-048-x22",
+            "id": "ru-048-x14",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Перед сном я читаю",
+            "respostaEsperada": "Перед сном я читаю",
+            "explicacao": "«перед» + instrumental.",
+            "id": "ru-048-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -473,7 +403,7 @@
             "audio": "Я приехал неделю назад",
             "respostaEsperada": "Я приехал неделю назад",
             "explicacao": "Escreva: Я приехал неделю назад",
-            "id": "ru-048-x23",
+            "id": "ru-048-x15",
             "complemento": true
           },
           {

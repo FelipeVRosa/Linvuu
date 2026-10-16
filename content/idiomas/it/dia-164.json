@@ -102,19 +102,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
+            "audio": "Ce l'ho in borsa",
+            "respostaEsperada": "Ce l'ho in borsa",
+            "explicacao": "Escreva: Ce l'ho in borsa.",
+            "id": "it-041-e06"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
             "audio": "Giulia, hai il caricatore del telefono? Il mio non funziona più.",
             "respostaEsperada": "Giulia, hai il caricatore del telefono? Il mio non funziona più.",
             "explicacao": "Giulia, você tem o carregador do telefone? O meu não funciona mais.",
             "id": "it-041-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ce l'ho in borsa",
-            "respostaEsperada": "Ce l'ho in borsa",
-            "explicacao": "Escreva: Ce l'ho in borsa.",
-            "id": "it-041-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -141,22 +141,6 @@
             "id": "it-041-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Aqui está. Amanhã você o traz de volta, certo?»",
-            "opcoes": [
-              "eh?",
-              "riporti,",
-              "lo",
-              "Eccolo.",
-              "me",
-              "Domani"
-            ],
-            "gabarito": "Eccolo. Domani me lo riporti, eh?",
-            "explicacao": "Escreva: Eccolo. Domani me lo riporti, eh?",
-            "id": "it-041-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Dê-me isso» em italiano:",
             "opcoes": [
@@ -167,6 +151,21 @@
             "gabarito": "Dammelo.",
             "explicacao": "Imperativo com pronomes colados.",
             "id": "it-041-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il trapano»?",
+            "audio": "il trapano",
+            "opcoes": [
+              "diga-me (isso)",
+              "traga-me (ela)",
+              "a furadeira",
+              "colocá-la lá"
+            ],
+            "gabarito": "a furadeira",
+            "explicacao": "«il trapano» = a furadeira.",
+            "id": "it-041-x03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -193,15 +192,6 @@
             "id": "it-041-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Eccolo. Domani me lo riporti, eh?",
-            "respostaEsperada": "Eccolo. Domani me lo riporti, eh?",
-            "explicacao": "Aqui está. Amanhã você o traz de volta, certo?",
-            "id": "it-041-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Le chiavi? Te le ho ___.",
             "opcoes": [
@@ -212,6 +202,21 @@
             "gabarito": "date",
             "explicacao": "Concordância com «le chiavi».",
             "id": "it-041-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «prestare»?",
+            "audio": "prestare",
+            "opcoes": [
+              "entregar",
+              "traga-me (ela)",
+              "o carregador",
+              "emprestar"
+            ],
+            "gabarito": "emprestar",
+            "explicacao": "«prestare» = emprestar.",
+            "id": "it-041-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -238,21 +243,6 @@
             "id": "it-041-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il trapano»?",
-            "audio": "il trapano",
-            "opcoes": [
-              "diga-me (isso)",
-              "traga-me (ela)",
-              "a furadeira",
-              "colocá-la lá"
-            ],
-            "gabarito": "a furadeira",
-            "explicacao": "«il trapano» = a furadeira.",
-            "id": "it-041-x05",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Me lo puoi portare domani?»",
             "opcoes": [
@@ -267,6 +257,30 @@
             "id": "it-041-e15"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Eccolo. Domani me lo riporti, eh?",
+            "respostaEsperada": "Eccolo. Domani me lo riporti, eh?",
+            "explicacao": "Aqui está. Amanhã você o traz de volta, certo?",
+            "id": "it-041-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «regalare»?",
+            "audio": "regalare",
+            "opcoes": [
+              "dar de presente",
+              "traga-me (ela)",
+              "explicá-lo a nós",
+              "diga-me (isso)"
+            ],
+            "gabarito": "dar de presente",
+            "explicacao": "«regalare» = dar de presente.",
+            "id": "it-041-x05",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Glielo spiego io.»",
             "opcoes": [
@@ -277,21 +291,6 @@
             "gabarito": "Glielo spiego io.",
             "explicacao": "Pronome antes do verbo.",
             "id": "it-041-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «prestare»?",
-            "audio": "prestare",
-            "opcoes": [
-              "entregar",
-              "traga-me (ela)",
-              "o carregador",
-              "emprestar"
-            ],
-            "gabarito": "emprestar",
-            "explicacao": "«prestare» = emprestar.",
-            "id": "it-041-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -312,6 +311,21 @@
             "id": "it-041-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «consegnare»?",
+            "audio": "consegnare",
+            "opcoes": [
+              "entregar",
+              "explicá-lo a nós",
+              "emprestar",
+              "devolver"
+            ],
+            "gabarito": "entregar",
+            "explicacao": "«consegnare» = entregar.",
+            "id": "it-041-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "La foto? ___ mostro domani. (a ele, a)",
             "opcoes": [
@@ -322,21 +336,6 @@
             "gabarito": "Gliela",
             "explicacao": "«Gli» + «la» viram «gliela».",
             "id": "it-041-e19"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «regalare»?",
-            "audio": "regalare",
-            "opcoes": [
-              "dar de presente",
-              "traga-me (ela)",
-              "explicá-lo a nós",
-              "diga-me (isso)"
-            ],
-            "gabarito": "dar de presente",
-            "explicacao": "«regalare» = dar de presente.",
-            "id": "it-041-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -363,6 +362,21 @@
             "id": "it-041-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «entro sabato»?",
+            "audio": "entro sabato",
+            "opcoes": [
+              "devolver",
+              "traga-me (ela)",
+              "até sábado",
+              "diga-me (isso)"
+            ],
+            "gabarito": "até sábado",
+            "explicacao": "«entro sabato» = até sábado.",
+            "id": "it-041-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Dammi la penna: ___, per favore. (dê-me-a)",
             "opcoes": [
@@ -373,21 +387,6 @@
             "gabarito": "Dammela",
             "explicacao": "No imperativo, os pronomes se colam ao final.",
             "id": "it-041-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «consegnare»?",
-            "audio": "consegnare",
-            "opcoes": [
-              "entregar",
-              "explicá-lo a nós",
-              "emprestar",
-              "devolver"
-            ],
-            "gabarito": "entregar",
-            "explicacao": "«consegnare» = entregar.",
-            "id": "it-041-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -415,6 +414,21 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "O que significa «spiegarcelo»?",
+            "audio": "spiegarcelo",
+            "opcoes": [
+              "dar de presente",
+              "explicá-lo a nós",
+              "trazer, levar",
+              "devolver"
+            ],
+            "gabarito": "explicá-lo a nós",
+            "explicacao": "«spiegarcelo» = explicá-lo a nós.",
+            "id": "it-041-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "Como se diz «Conte-me isso» (a pessoa e coisa masculinas)?",
             "opcoes": [
               "Raccontami lo.",
@@ -424,21 +438,6 @@
             "gabarito": "Raccontamelo.",
             "explicacao": "No imperativo de «tu», os pronomes combinados vão colados ao verbo.",
             "id": "it-041-e25"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «entro sabato»?",
-            "audio": "entro sabato",
-            "opcoes": [
-              "devolver",
-              "traga-me (ela)",
-              "até sábado",
-              "diga-me (isso)"
-            ],
-            "gabarito": "até sábado",
-            "explicacao": "«entro sabato» = até sábado.",
-            "id": "it-041-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -467,18 +466,18 @@
             "id": "it-041-e27"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «spiegarcelo»?",
-            "audio": "spiegarcelo",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Te lo presto volentieri",
             "opcoes": [
-              "dar de presente",
-              "explicá-lo a nós",
-              "trazer, levar",
-              "devolver"
+              "presto",
+              "Te",
+              "lo",
+              "volentieri"
             ],
-            "gabarito": "explicá-lo a nós",
-            "explicacao": "«spiegarcelo» = explicá-lo a nós.",
-            "id": "it-041-x10",
+            "gabarito": "Te lo presto volentieri",
+            "explicacao": "Escreva: Te lo presto volentieri",
+            "id": "it-041-x09",
             "complemento": true
           },
           {

@@ -630,25 +630,6 @@
               "id": "es-042-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia, senhor Martínez. Entre e sente-se, por favor.»",
-              "opcoes": [
-                "siéntese,",
-                "Pase",
-                "Martínez.",
-                "y",
-                "Buenos",
-                "señor",
-                "días,",
-                "favor.",
-                "por"
-              ],
-              "gabarito": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
-              "explicacao": "Escreva: Buenos días, señor Martínez. Pase y siéntese, por favor.",
-              "id": "es-042-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Que tengas un buen viaje",
@@ -665,12 +646,24 @@
               "id": "es-042-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
-              "respostaEsperada": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
-              "explicacao": "Bom dia, senhor Martínez. Entre e sente-se, por favor.",
-              "id": "es-042-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Perfeito. Diga-me seu nome completo e tenha seu documento à mão.»",
+              "opcoes": [
+                "documento.",
+                "tenga",
+                "nombre",
+                "completo",
+                "a",
+                "mano",
+                "Dígame",
+                "y",
+                "su",
+                "Perfecto.",
+                "su"
+              ],
+              "gabarito": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+              "explicacao": "Escreva: Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+              "id": "es-042-x01",
               "complemento": true
             },
             {
@@ -684,6 +677,15 @@
               "gabarito": "hable",
               "explicacao": "Tire o «-o» de «hablo» e acrescente «-e».",
               "id": "es-042-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
+              "respostaEsperada": "Buenos días, señor Martínez. Pase y siéntese, por favor.",
+              "explicacao": "Bom dia, senhor Martínez. Entre e sente-se, por favor.",
+              "id": "es-042-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -710,24 +712,6 @@
               "id": "es-042-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigado. Quero fazer uma reserva para sexta-feira.»",
-              "opcoes": [
-                "reserva",
-                "hacer",
-                "una",
-                "viernes.",
-                "Quiero",
-                "para",
-                "el",
-                "Gracias."
-              ],
-              "gabarito": "Gracias. Quiero hacer una reserva para el viernes.",
-              "explicacao": "Escreva: Gracias. Quiero hacer una reserva para el viernes.",
-              "id": "es-042-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o subjuntivo de «pensar» para «que nosotros»?",
               "opcoes": [
@@ -738,6 +722,15 @@
               "gabarito": "pensemos",
               "explicacao": "Em -ar e -er, «nosotros» não muda o radical.",
               "id": "es-042-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+              "respostaEsperada": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
+              "explicacao": "Perfeito. Diga-me seu nome completo e tenha seu documento à mão.",
+              "id": "es-042-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -764,15 +757,6 @@
               "id": "es-042-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Gracias. Quiero hacer una reserva para el viernes.",
-              "respostaEsperada": "Gracias. Quiero hacer una reserva para el viernes.",
-              "explicacao": "Obrigado. Quero fazer uma reserva para sexta-feira.",
-              "id": "es-042-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Fale mais devagar» a um senhor, com «usted»?",
               "opcoes": [
@@ -783,6 +767,15 @@
               "gabarito": "Hable más despacio.",
               "explicacao": "A ordem com «usted» usa a forma do subjuntivo.",
               "id": "es-042-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Gracias. Quiero hacer una reserva para el viernes.",
+              "respostaEsperada": "Gracias. Quiero hacer una reserva para el viernes.",
+              "explicacao": "Obrigado. Quero fazer uma reserva para sexta-feira.",
+              "id": "es-042-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -797,6 +790,21 @@
               "id": "es-042-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Muito bem. Até sexta-feira.»",
+              "opcoes": [
+                "Muy",
+                "Hasta",
+                "viernes.",
+                "el",
+                "bien."
+              ],
+              "gabarito": "Muy bien. Hasta el viernes.",
+              "explicacao": "Escreva: Muy bien. Hasta el viernes.",
+              "id": "es-042-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Que nosotros ___ pronto. (ir)",
               "opcoes": [
@@ -807,27 +815,6 @@
               "gabarito": "vayamos",
               "explicacao": "«Ir» usa vay- no subjuntivo.",
               "id": "es-042-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perfeito. Diga-me seu nome completo e tenha seu documento à mão.»",
-              "opcoes": [
-                "documento.",
-                "tenga",
-                "nombre",
-                "completo",
-                "a",
-                "mano",
-                "Dígame",
-                "y",
-                "su",
-                "Perfecto.",
-                "su"
-              ],
-              "gabarito": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
-              "explicacao": "Escreva: Perfecto. Dígame su nombre completo y tenga a mano su documento.",
-              "id": "es-042-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -854,15 +841,6 @@
               "id": "es-042-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
-              "respostaEsperada": "Perfecto. Dígame su nombre completo y tenga a mano su documento.",
-              "explicacao": "Perfeito. Diga-me seu nome completo e tenha seu documento à mão.",
-              "id": "es-042-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Que vosotros ___ algo. (comer)",
               "opcoes": [
@@ -873,6 +851,15 @@
               "gabarito": "comáis",
               "explicacao": "Em -er, o subjuntivo de «vosotros» é «-áis».",
               "id": "es-042-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Muy bien. Hasta el viernes.",
+              "respostaEsperada": "Muy bien. Hasta el viernes.",
+              "explicacao": "Muito bem. Até sexta-feira.",
+              "id": "es-042-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -887,6 +874,15 @@
               "id": "es-042-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+              "respostaEsperada": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
+              "explicacao": "Aqui está. Posso pagar com cartão?",
+              "id": "es-042-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Siéntese aquí, por favor.»",
               "opcoes": [
@@ -898,23 +894,6 @@
               "gabarito": "Siéntese aquí, por favor.",
               "explicacao": "Ordem com «usted».",
               "id": "es-042-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Aqui está. Posso pagar com cartão?»",
-              "opcoes": [
-                "tarjeta?",
-                "¿Puedo",
-                "pagar",
-                "lo",
-                "tiene.",
-                "con",
-                "Aquí"
-              ],
-              "gabarito": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
-              "explicacao": "Escreva: Aquí lo tiene. ¿Puedo pagar con tarjeta?",
-              "id": "es-042-x07",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -936,19 +915,25 @@
               "id": "es-042-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «tenga»?",
+              "audio": "tenga",
+              "opcoes": [
+                "que nós vamos",
+                "sente-se (usted)",
+                "recomendo a você que",
+                "tenha, tome (usted)"
+              ],
+              "gabarito": "tenha, tome (usted)",
+              "explicacao": "«tenga» = tenha, tome (usted).",
+              "id": "es-042-x05",
+              "complemento": true
+            },
+            {
               "tipo": "producao",
               "enunciado": "Escreva o subjuntivo de «hacer» para «yo», «tú» e «nosotros».",
               "respostaEsperada": "haga, hagas, hagamos",
               "id": "es-042-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
-              "respostaEsperada": "Aquí lo tiene. ¿Puedo pagar con tarjeta?",
-              "explicacao": "Aqui está. Posso pagar com cartão?",
-              "id": "es-042-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -975,6 +960,15 @@
               "id": "es-042-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sin prisa. Oiga, ¿el desayuno está incluido?",
+              "respostaEsperada": "Sin prisa. Oiga, ¿el desayuno está incluido?",
+              "explicacao": "Sem pressa. Escute, o café da manhã está incluído?",
+              "id": "es-042-r04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Espero que ella ___ bien. (estar)",
               "opcoes": [
@@ -987,20 +981,18 @@
               "id": "es-042-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sem pressa. Escute, o café da manhã está incluído?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «que tú hagas»?",
+              "audio": "que tú hagas",
               "opcoes": [
-                "Oiga,",
-                "Sin",
-                "incluido?",
-                "está",
-                "desayuno",
-                "¿el",
-                "prisa."
+                "quero que",
+                "que você faça",
+                "prefiro que",
+                "espero que"
               ],
-              "gabarito": "Sin prisa. Oiga, ¿el desayuno está incluido?",
-              "explicacao": "Escreva: Sin prisa. Oiga, ¿el desayuno está incluido?",
-              "id": "es-042-x09",
+              "gabarito": "que você faça",
+              "explicacao": "«que tú hagas» = que você faça.",
+              "id": "es-042-x06",
               "complemento": true
             },
             {
@@ -1026,15 +1018,6 @@
               "gabarito": "pague",
               "explicacao": "Para manter o som, «g» vira «gu» antes de «e».",
               "id": "es-042-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sin prisa. Oiga, ¿el desayuno está incluido?",
-              "respostaEsperada": "Sin prisa. Oiga, ¿el desayuno está incluido?",
-              "explicacao": "Sem pressa. Escute, o café da manhã está incluído?",
-              "id": "es-042-x10",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

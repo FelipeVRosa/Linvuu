@@ -515,25 +515,6 @@
               "id": "fr-004-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia! Me chamo Hugo. Como você se chama?»",
-              "opcoes": [
-                "?",
-                "m'appelle",
-                "Comment",
-                "tu",
-                "!",
-                "Je",
-                "Bonjour",
-                "t'appelles",
-                "Hugo."
-              ],
-              "gabarito": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
-              "explicacao": "Escreva: Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
-              "id": "fr-004-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Je parle un peu français",
@@ -550,12 +531,21 @@
               "id": "fr-004-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
-              "respostaEsperada": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
-              "explicacao": "Bom dia! Me chamo Hugo. Como você se chama?",
-              "id": "fr-004-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Eu também! Você trabalha em Lyon?»",
+              "opcoes": [
+                "Moi",
+                "Lyon",
+                "Tu",
+                "?",
+                "travailles",
+                "!",
+                "à",
+                "aussi"
+              ],
+              "gabarito": "Moi aussi ! Tu travailles à Lyon ?",
+              "explicacao": "Escreva: Moi aussi ! Tu travailles à Lyon ?",
+              "id": "fr-004-x01",
               "complemento": true
             },
             {
@@ -565,6 +555,15 @@
               "respostaEsperada": "Pourquoi tu étudies le français",
               "explicacao": "Escreva: Pourquoi tu étudies le français.",
               "id": "fr-004-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
+              "respostaEsperada": "Bonjour ! Je m'appelle Hugo. Comment tu t'appelles ?",
+              "explicacao": "Bom dia! Me chamo Hugo. Como você se chama?",
+              "id": "fr-004-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -591,21 +590,6 @@
               "id": "fr-004-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Hugo. Me chamo Chloé.»",
-              "opcoes": [
-                "m'appelle",
-                "Chloé.",
-                "Je",
-                "Hugo.",
-                "Salut,"
-              ],
-              "gabarito": "Salut, Hugo. Je m'appelle Chloé.",
-              "explicacao": "Escreva: Salut, Hugo. Je m'appelle Chloé.",
-              "id": "fr-004-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como dizer «eu também não»?",
               "opcoes": [
@@ -616,6 +600,15 @@
               "gabarito": "Moi non plus.",
               "explicacao": "«Moi non plus» responde a uma negativa.",
               "id": "fr-004-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Moi aussi ! Tu travailles à Lyon ?",
+              "respostaEsperada": "Moi aussi ! Tu travailles à Lyon ?",
+              "explicacao": "Eu também! Você trabalha em Lyon?",
+              "id": "fr-004-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -642,15 +635,6 @@
               "id": "fr-004-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Salut, Hugo. Je m'appelle Chloé.",
-              "respostaEsperada": "Salut, Hugo. Je m'appelle Chloé.",
-              "explicacao": "Oi, Hugo. Me chamo Chloé.",
-              "id": "fr-004-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Elle ne ___ pas à Paris. (trabalha)",
               "opcoes": [
@@ -661,6 +645,15 @@
               "gabarito": "travaille",
               "explicacao": "«elle travaille».",
               "id": "fr-004-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Salut, Hugo. Je m'appelle Chloé.",
+              "respostaEsperada": "Salut, Hugo. Je m'appelle Chloé.",
+              "explicacao": "Oi, Hugo. Me chamo Chloé.",
+              "id": "fr-004-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -675,6 +668,21 @@
               "id": "fr-004-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «parler»?",
+              "audio": "parler",
+              "opcoes": [
+                "gostar, amar",
+                "por que",
+                "falar",
+                "onde"
+              ],
+              "gabarito": "falar",
+              "explicacao": "«parler» = falar.",
+              "id": "fr-004-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ habites-tu ? (onde)",
               "opcoes": [
@@ -685,22 +693,6 @@
               "gabarito": "Où",
               "explicacao": "«Où» pergunta o lugar.",
               "id": "fr-004-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Onde você mora?»",
-              "opcoes": [
-                "Où",
-                "que",
-                "habites",
-                "tu",
-                "?",
-                "est-ce"
-              ],
-              "gabarito": "Où est-ce que tu habites ?",
-              "explicacao": "Escreva: Où est-ce que tu habites ?",
-              "id": "fr-004-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -731,19 +723,25 @@
               "id": "fr-004-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Où est-ce que tu habites ?",
-              "respostaEsperada": "Où est-ce que tu habites ?",
-              "explicacao": "Onde você mora?",
-              "id": "fr-004-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Eu moro em Paris. Eu não trabalho em Lyon. Por que você estuda francês?",
               "respostaEsperada": "J'habite à Paris. Je ne travaille pas à Lyon. Pourquoi tu étudies le français ?",
               "id": "fr-004-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «mal»?",
+              "audio": "mal",
+              "opcoes": [
+                "mal",
+                "um pouco",
+                "estudar",
+                "gostar, amar"
+              ],
+              "gabarito": "mal",
+              "explicacao": "«mal» = mal.",
+              "id": "fr-004-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -758,6 +756,15 @@
               "id": "fr-004-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Où est-ce que tu habites ?",
+              "respostaEsperada": "Où est-ce que tu habites ?",
+              "explicacao": "Onde você mora?",
+              "id": "fr-004-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ils ___ la musique. (ouvem)",
               "opcoes": [
@@ -768,24 +775,6 @@
               "gabarito": "écoutent",
               "explicacao": "Com «ils», termina em «-ent».",
               "id": "fr-004-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Moro aqui, na rua Victor Hugo. E você?»",
-              "opcoes": [
-                "Victor",
-                "?",
-                "ici,",
-                "J'habite",
-                "toi",
-                "rue",
-                "Hugo.",
-                "Et"
-              ],
-              "gabarito": "J'habite ici, rue Victor Hugo. Et toi ?",
-              "explicacao": "Escreva: J'habite ici, rue Victor Hugo. Et toi ?",
-              "id": "fr-004-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -812,6 +801,21 @@
               "id": "fr-004-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «danser»?",
+              "audio": "danser",
+              "opcoes": [
+                "estudar",
+                "mal",
+                "dançar",
+                "onde"
+              ],
+              "gabarito": "dançar",
+              "explicacao": "«danser» = dançar.",
+              "id": "fr-004-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "J'aime le café. — Moi ___ . (eu também)",
               "opcoes": [
@@ -822,15 +826,6 @@
               "gabarito": "aussi",
               "explicacao": "Concordância afirmativa: «moi aussi».",
               "id": "fr-004-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "J'habite ici, rue Victor Hugo. Et toi ?",
-              "respostaEsperada": "J'habite ici, rue Victor Hugo. Et toi ?",
-              "explicacao": "Moro aqui, na rua Victor Hugo. E você?",
-              "id": "fr-004-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -857,6 +852,15 @@
               "id": "fr-004-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "J'habite ici, rue Victor Hugo. Et toi ?",
+              "respostaEsperada": "J'habite ici, rue Victor Hugo. Et toi ?",
+              "explicacao": "Moro aqui, na rua Victor Hugo. E você?",
+              "id": "fr-004-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual pergunta usa a inversão formal?",
               "opcoes": [
@@ -869,21 +873,18 @@
               "id": "fr-004-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu também! Você trabalha em Lyon?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «aimer»?",
+              "audio": "aimer",
               "opcoes": [
-                "Moi",
-                "Lyon",
-                "Tu",
-                "?",
-                "travailles",
-                "!",
-                "à",
-                "aussi"
+                "gostar, amar",
+                "como",
+                "onde",
+                "dançar"
               ],
-              "gabarito": "Moi aussi ! Tu travailles à Lyon ?",
-              "explicacao": "Escreva: Moi aussi ! Tu travailles à Lyon ?",
-              "id": "fr-004-x09",
+              "gabarito": "gostar, amar",
+              "explicacao": "«aimer» = gostar, amar.",
+              "id": "fr-004-x06",
               "complemento": true
             },
             {
@@ -911,15 +912,6 @@
               "gabarito": "Nous parlons un peu français.",
               "explicacao": "«Nous» + «-ons»; «un peu» depois do verbo.",
               "id": "fr-004-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Moi aussi ! Tu travailles à Lyon ?",
-              "respostaEsperada": "Moi aussi ! Tu travailles à Lyon ?",
-              "explicacao": "Eu também! Você trabalha em Lyon?",
-              "id": "fr-004-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

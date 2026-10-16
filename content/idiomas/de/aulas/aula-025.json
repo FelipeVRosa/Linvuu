@@ -489,16 +489,17 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Com licença, de quem é este celular?»",
+              "enunciado": "Monte a frase: «O celular? É meu. Obrigado!»",
               "opcoes": [
-                "das",
-                "Entschuldigung,",
-                "gehört",
+                "mir.",
+                "Das",
                 "Handy?",
-                "wem"
+                "gehört",
+                "Danke!",
+                "Es"
               ],
-              "gabarito": "Entschuldigung, wem gehört das Handy?",
-              "explicacao": "Escreva: Entschuldigung, wem gehört das Handy?",
+              "gabarito": "Das Handy? Es gehört mir. Danke!",
+              "explicacao": "Escreva: Das Handy? Es gehört mir. Danke!",
               "id": "de-025-x01",
               "complemento": true
             },
@@ -517,26 +518,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Entschuldigung, wem gehört das Handy?",
-              "respostaEsperada": "Entschuldigung, wem gehört das Handy?",
-              "explicacao": "Com licença, de quem é este celular?",
+              "audio": "Das Handy? Es gehört mir. Danke!",
+              "respostaEsperada": "Das Handy? Es gehört mir. Danke!",
+              "explicacao": "O celular? É meu. Obrigado!",
               "id": "de-025-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «O celular? É meu. Obrigado!»",
-              "opcoes": [
-                "mir.",
-                "Das",
-                "Handy?",
-                "gehört",
-                "Danke!",
-                "Es"
-              ],
-              "gabarito": "Das Handy? Es gehört mir. Danke!",
-              "explicacao": "Escreva: Das Handy? Es gehört mir. Danke!",
-              "id": "de-025-x03",
               "complemento": true
             },
             {
@@ -552,12 +537,28 @@
               "id": "de-025-e03"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Das Handy? Es gehört mir. Danke!",
-              "respostaEsperada": "Das Handy? Es gehört mir. Danke!",
-              "explicacao": "O celular? É meu. Obrigado!",
-              "id": "de-025-x04",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Entschuldigung, wem gehört das Handy?",
+              "respostaEsperada": "Entschuldigung, wem gehört das Handy?",
+              "explicacao": "Com licença, de quem é este celular?",
+              "id": "de-025-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Não, a bolsa é da minha irmã.»",
+              "opcoes": [
+                "gehört",
+                "Tasche",
+                "meiner",
+                "Nein,",
+                "die",
+                "Schwester."
+              ],
+              "gabarito": "Nein, die Tasche gehört meiner Schwester.",
+              "explicacao": "Escreva: Nein, die Tasche gehört meiner Schwester.",
+              "id": "de-025-x03",
               "complemento": true
             },
             {
@@ -573,20 +574,12 @@
               "id": "de-025-e04"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E a bolsa? Ela também é sua?»",
-              "opcoes": [
-                "sie",
-                "auch?",
-                "Gehört",
-                "die",
-                "Tasche?",
-                "dir",
-                "Und"
-              ],
-              "gabarito": "Und die Tasche? Gehört sie dir auch?",
-              "explicacao": "Escreva: Und die Tasche? Gehört sie dir auch?",
-              "id": "de-025-x05",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Nein, die Tasche gehört meiner Schwester.",
+              "respostaEsperada": "Nein, die Tasche gehört meiner Schwester.",
+              "explicacao": "Não, a bolsa é da minha irmã.",
+              "id": "de-025-x04",
               "complemento": true
             },
             {
@@ -602,12 +595,20 @@
               "id": "de-025-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Und die Tasche? Gehört sie dir auch?",
-              "respostaEsperada": "Und die Tasche? Gehört sie dir auch?",
-              "explicacao": "E a bolsa? Ela também é sua?",
-              "id": "de-025-x06",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E a chave? Com certeza é dela.»",
+              "opcoes": [
+                "gehört",
+                "Schlüssel?",
+                "Und",
+                "der",
+                "ihr.",
+                "bestimmt",
+                "Der"
+              ],
+              "gabarito": "Und der Schlüssel? Der gehört bestimmt ihr.",
+              "explicacao": "Escreva: Und der Schlüssel? Der gehört bestimmt ihr.",
+              "id": "de-025-x05",
               "complemento": true
             },
             {
@@ -623,28 +624,12 @@
               "id": "de-025-e06"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, a bolsa é da minha irmã.»",
-              "opcoes": [
-                "gehört",
-                "Tasche",
-                "meiner",
-                "Nein,",
-                "die",
-                "Schwester."
-              ],
-              "gabarito": "Nein, die Tasche gehört meiner Schwester.",
-              "explicacao": "Escreva: Nein, die Tasche gehört meiner Schwester.",
-              "id": "de-025-x07",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Nein, die Tasche gehört meiner Schwester.",
-              "respostaEsperada": "Nein, die Tasche gehört meiner Schwester.",
-              "explicacao": "Não, a bolsa é da minha irmã.",
-              "id": "de-025-x08",
+              "audio": "Und der Schlüssel? Der gehört bestimmt ihr.",
+              "respostaEsperada": "Und der Schlüssel? Der gehört bestimmt ihr.",
+              "explicacao": "E a chave? Com certeza é dela.",
+              "id": "de-025-x06",
               "complemento": true
             },
             {
@@ -660,20 +645,30 @@
               "id": "de-025-e07"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Und die Tasche? Gehört sie dir auch?",
+              "respostaEsperada": "Und die Tasche? Gehört sie dir auch?",
+              "explicacao": "E a bolsa? Ela também é sua?",
+              "id": "de-025-r02",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E a chave? Com certeza é dela.»",
+              "enunciado": "Monte a frase: «Muito bem. E a quem você dá o presente?»",
               "opcoes": [
-                "gehört",
-                "Schlüssel?",
-                "Und",
-                "der",
-                "ihr.",
-                "bestimmt",
-                "Der"
+                "Sehr",
+                "du",
+                "Geschenk?",
+                "gibst",
+                "das",
+                "gut.",
+                "wem",
+                "Und"
               ],
-              "gabarito": "Und der Schlüssel? Der gehört bestimmt ihr.",
-              "explicacao": "Escreva: Und der Schlüssel? Der gehört bestimmt ihr.",
-              "id": "de-025-x09",
+              "gabarito": "Sehr gut. Und wem gibst du das Geschenk?",
+              "explicacao": "Escreva: Sehr gut. Und wem gibst du das Geschenk?",
+              "id": "de-025-x07",
               "complemento": true
             },
             {
@@ -691,10 +686,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Und der Schlüssel? Der gehört bestimmt ihr.",
-              "respostaEsperada": "Und der Schlüssel? Der gehört bestimmt ihr.",
-              "explicacao": "E a chave? Com certeza é dela.",
-              "id": "de-025-x10",
+              "audio": "Sehr gut. Und wem gibst du das Geschenk?",
+              "respostaEsperada": "Sehr gut. Und wem gibst du das Geschenk?",
+              "explicacao": "Muito bem. E a quem você dá o presente?",
+              "id": "de-025-x08",
               "complemento": true
             },
             {
@@ -711,18 +706,19 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, eu dou a chave para ela.»",
+              "enunciado": "Monte a frase: «Que bom! Eu dou um livro para ele.»",
               "opcoes": [
-                "ich",
-                "Schlüssel.",
-                "Ja,",
-                "gebe",
-                "ihr",
-                "den"
+                "schön!",
+                "ein",
+                "ihm",
+                "Wie",
+                "Buch.",
+                "Ich",
+                "schenke"
               ],
-              "gabarito": "Ja, ich gebe ihr den Schlüssel.",
-              "explicacao": "Escreva: Ja, ich gebe ihr den Schlüssel.",
-              "id": "de-025-x11",
+              "gabarito": "Wie schön! Ich schenke ihm ein Buch.",
+              "explicacao": "Escreva: Wie schön! Ich schenke ihm ein Buch.",
+              "id": "de-025-x09",
               "complemento": true
             },
             {
@@ -740,10 +736,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
+              "audio": "Wie schön! Ich schenke ihm ein Buch.",
+              "respostaEsperada": "Wie schön! Ich schenke ihm ein Buch.",
+              "explicacao": "Que bom! Eu dou um livro para ele.",
+              "id": "de-025-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "Ja, ich gebe ihr den Schlüssel.",
               "respostaEsperada": "Ja, ich gebe ihr den Schlüssel.",
               "explicacao": "Sim, eu dou a chave para ela.",
-              "id": "de-025-x12",
+              "id": "de-025-r03",
               "complemento": true
             },
             {
@@ -760,29 +765,16 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito bem. E a quem você dá o presente?»",
+              "enunciado": "Monte a frase: «Ótimo! Ele gosta de ler.»",
               "opcoes": [
-                "Sehr",
-                "du",
-                "Geschenk?",
-                "gibst",
-                "das",
-                "gut.",
-                "wem",
-                "Und"
+                "Super!",
+                "liest",
+                "gern.",
+                "Er"
               ],
-              "gabarito": "Sehr gut. Und wem gibst du das Geschenk?",
-              "explicacao": "Escreva: Sehr gut. Und wem gibst du das Geschenk?",
-              "id": "de-025-x13",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sehr gut. Und wem gibst du das Geschenk?",
-              "respostaEsperada": "Sehr gut. Und wem gibst du das Geschenk?",
-              "explicacao": "Muito bem. E a quem você dá o presente?",
-              "id": "de-025-x14",
+              "gabarito": "Super! Er liest gern.",
+              "explicacao": "Escreva: Super! Er liest gern.",
+              "id": "de-025-x11",
               "complemento": true
             },
             {
@@ -798,22 +790,12 @@
               "id": "de-025-e12"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu dou para o meu irmão. Hoje é aniversário dele.»",
-              "opcoes": [
-                "meinem",
-                "heute",
-                "Geburtstag.",
-                "Ich",
-                "Bruder.",
-                "es",
-                "Er",
-                "hat",
-                "gebe"
-              ],
-              "gabarito": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
-              "explicacao": "Escreva: Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
-              "id": "de-025-x15",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Super! Er liest gern.",
+              "respostaEsperada": "Super! Er liest gern.",
+              "explicacao": "Ótimo! Ele gosta de ler.",
+              "id": "de-025-x12",
               "complemento": true
             },
             {
@@ -829,12 +811,18 @@
               "id": "de-025-e13"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
-              "respostaEsperada": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
-              "explicacao": "Eu dou para o meu irmão. Hoje é aniversário dele.",
-              "id": "de-025-x16",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Tasche»?",
+              "audio": "die Tasche",
+              "opcoes": [
+                "jornal",
+                "bolsa",
+                "nome",
+                "gato"
+              ],
+              "gabarito": "bolsa",
+              "explicacao": "«die Tasche» = bolsa.",
+              "id": "de-025-x13",
               "complemento": true
             },
             {
@@ -852,20 +840,27 @@
               "id": "de-025-e14"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Que bom! Eu dou um livro para ele.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «das Fahrrad»?",
+              "audio": "das Fahrrad",
               "opcoes": [
-                "schön!",
-                "ein",
-                "ihm",
-                "Wie",
-                "Buch.",
-                "Ich",
-                "schenke"
+                "de quem",
+                "chave",
+                "bicicleta",
+                "quem (sujeito)"
               ],
-              "gabarito": "Wie schön! Ich schenke ihm ein Buch.",
-              "explicacao": "Escreva: Wie schön! Ich schenke ihm ein Buch.",
-              "id": "de-025-x17",
+              "gabarito": "bicicleta",
+              "explicacao": "«das Fahrrad» = bicicleta.",
+              "id": "de-025-x14",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+              "respostaEsperada": "Ich gebe es meinem Bruder. Er hat heute Geburtstag.",
+              "explicacao": "Eu dou para o meu irmão. Hoje é aniversário dele.",
+              "id": "de-025-r04",
               "complemento": true
             },
             {
@@ -882,26 +877,18 @@
               "id": "de-025-e15"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Wie schön! Ich schenke ihm ein Buch.",
-              "respostaEsperada": "Wie schön! Ich schenke ihm ein Buch.",
-              "explicacao": "Que bom! Eu dou um livro para ele.",
-              "id": "de-025-x18",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ótimo! Ele gosta de ler.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «wessen»?",
+              "audio": "wessen",
               "opcoes": [
-                "Super!",
-                "liest",
-                "gern.",
-                "Er"
+                "quem (objeto direto)",
+                "de quem",
+                "gato",
+                "bolsa"
               ],
-              "gabarito": "Super! Er liest gern.",
-              "explicacao": "Escreva: Super! Er liest gern.",
-              "id": "de-025-x19",
+              "gabarito": "de quem",
+              "explicacao": "«wessen» = de quem.",
+              "id": "de-025-x15",
               "complemento": true
             },
             {
@@ -913,12 +900,18 @@
               "id": "de-025-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Super! Er liest gern.",
-              "respostaEsperada": "Super! Er liest gern.",
-              "explicacao": "Ótimo! Ele gosta de ler.",
-              "id": "de-025-x20",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Eltern»?",
+              "audio": "die Eltern",
+              "opcoes": [
+                "pais",
+                "gato",
+                "a quem",
+                "cachorro"
+              ],
+              "gabarito": "pais",
+              "explicacao": "«die Eltern» = pais.",
+              "id": "de-025-x16",
               "complemento": true
             },
             {

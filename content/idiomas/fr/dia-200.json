@@ -63,24 +63,6 @@
             "id": "fr-050-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia, Lucas. Fale-me de você, por favor.»",
-            "opcoes": [
-              "Bonjour,",
-              "vous",
-              "vous,",
-              "plaît.",
-              "Parlez-moi",
-              "Lucas.",
-              "s'il",
-              "de"
-            ],
-            "gabarito": "Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
-            "explicacao": "Escreva: Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
-            "id": "fr-050-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Parlez-moi de vous",
@@ -97,12 +79,18 @@
             "id": "fr-050-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
-            "respostaEsperada": "Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
-            "explicacao": "Bom dia, Lucas. Fale-me de você, por favor.",
-            "id": "fr-050-x02",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «un objectif»?",
+            "audio": "un objectif",
+            "opcoes": [
+              "um objetivo",
+              "uma entrevista",
+              "uma equipe",
+              "um recrutador"
+            ],
+            "gabarito": "um objetivo",
+            "explicacao": "«un objectif» = um objetivo.",
+            "id": "fr-050-x01",
             "complemento": true
           },
           {
@@ -112,6 +100,15 @@
             "respostaEsperada": "Ce poste correspond à mon projet professionnel",
             "explicacao": "Escreva: Ce poste correspond à mon projet professionnel.",
             "id": "fr-050-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
+            "respostaEsperada": "Bonjour, Lucas. Parlez-moi de vous, s'il vous plaît.",
+            "explicacao": "Bom dia, Lucas. Fale-me de você, por favor.",
+            "id": "fr-050-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -138,22 +135,6 @@
             "id": "fr-050-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Por que esta vaga lhe interessa?»",
-            "opcoes": [
-              "Pourquoi",
-              "ce",
-              "poste",
-              "intéresse-t-il",
-              "?",
-              "vous"
-            ],
-            "gabarito": "Pourquoi ce poste vous intéresse-t-il ?",
-            "explicacao": "Escreva: Pourquoi ce poste vous intéresse-t-il ?",
-            "id": "fr-050-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -164,6 +145,21 @@
             "gabarito": "Je suis intéressé par ce poste.",
             "explicacao": "«Par».",
             "id": "fr-050-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «une offre d'emploi»?",
+            "audio": "une offre d'emploi",
+            "opcoes": [
+              "uma equipe",
+              "uma vaga",
+              "uma candidatura",
+              "candidatar-se"
+            ],
+            "gabarito": "uma vaga",
+            "explicacao": "«une offre d'emploi» = uma vaga.",
+            "id": "fr-050-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -190,15 +186,6 @@
             "id": "fr-050-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Pourquoi ce poste vous intéresse-t-il ?",
-            "respostaEsperada": "Pourquoi ce poste vous intéresse-t-il ?",
-            "explicacao": "Por que esta vaga lhe interessa?",
-            "id": "fr-050-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "J'ai de l'___ en gestion. (experiência)",
             "opcoes": [
@@ -209,6 +196,15 @@
             "gabarito": "expérience",
             "explicacao": "Singular.",
             "id": "fr-050-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Pourquoi ce poste vous intéresse-t-il ?",
+            "respostaEsperada": "Pourquoi ce poste vous intéresse-t-il ?",
+            "explicacao": "Por que esta vaga lhe interessa?",
+            "id": "fr-050-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -223,6 +219,21 @@
             "id": "fr-050-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «une candidature»?",
+            "audio": "une candidature",
+            "opcoes": [
+              "um cargo",
+              "disponível",
+              "uma candidatura",
+              "a experiência"
+            ],
+            "gabarito": "uma candidatura",
+            "explicacao": "«une candidature» = uma candidatura.",
+            "id": "fr-050-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je ___ heureux de vous rencontrer. (seria)",
             "opcoes": [
@@ -233,22 +244,6 @@
             "gabarito": "serais",
             "explicacao": "Condicional.",
             "id": "fr-050-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Quais são as suas principais qualidades?»",
-            "opcoes": [
-              "sont",
-              "Quelles",
-              "principales",
-              "?",
-              "vos",
-              "qualités"
-            ],
-            "gabarito": "Quelles sont vos principales qualités ?",
-            "explicacao": "Escreva: Quelles sont vos principales qualités ?",
-            "id": "fr-050-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -277,19 +272,25 @@
             "id": "fr-050-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Quelles sont vos principales qualités ?",
-            "respostaEsperada": "Quelles sont vos principales qualités ?",
-            "explicacao": "Quais são as suas principais qualidades?",
-            "id": "fr-050-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Sou formado em gestão e trabalho há três anos em uma empresa. Estou interessado nesta vaga.",
             "respostaEsperada": "Je suis diplômé en gestion et je travaille depuis trois ans dans une entreprise. Je suis intéressé par ce poste.",
             "id": "fr-050-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «une qualité»?",
+            "audio": "une qualité",
+            "opcoes": [
+              "motivado",
+              "uma qualidade",
+              "um recrutador",
+              "um diploma"
+            ],
+            "gabarito": "uma qualidade",
+            "explicacao": "«une qualité» = uma qualidade.",
+            "id": "fr-050-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -304,6 +305,15 @@
             "id": "fr-050-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Quelles sont vos principales qualités ?",
+            "respostaEsperada": "Quelles sont vos principales qualités ?",
+            "explicacao": "Quais são as suas principais qualidades?",
+            "id": "fr-050-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je parle ___ le portugais et l'anglais. (fluentemente)",
             "opcoes": [
@@ -314,25 +324,6 @@
             "gabarito": "couramment",
             "explicacao": "«Couramment» = fluentemente.",
             "id": "fr-050-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sou organizado, autônomo e gosto de trabalhar em equipe.»",
-            "opcoes": [
-              "autonome",
-              "Je",
-              "organisé,",
-              "en",
-              "équipe.",
-              "et",
-              "travailler",
-              "suis",
-              "j'aime"
-            ],
-            "gabarito": "Je suis organisé, autonome et j'aime travailler en équipe.",
-            "explicacao": "Escreva: Je suis organisé, autonome et j'aime travailler en équipe.",
-            "id": "fr-050-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -359,6 +350,21 @@
             "id": "fr-050-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «un stage»?",
+            "audio": "un stage",
+            "opcoes": [
+              "um diploma",
+              "um estágio",
+              "candidatar-se",
+              "uma candidatura"
+            ],
+            "gabarito": "um estágio",
+            "explicacao": "«un stage» = um estágio.",
+            "id": "fr-050-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je souhaiterais ___ ce poste. (obter)",
             "opcoes": [
@@ -369,15 +375,6 @@
             "gabarito": "obtenir",
             "explicacao": "Depois de «souhaiter», usa-se o infinitivo.",
             "id": "fr-050-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Je suis organisé, autonome et j'aime travailler en équipe.",
-            "respostaEsperada": "Je suis organisé, autonome et j'aime travailler en équipe.",
-            "explicacao": "Sou organizado, autônomo e gosto de trabalhar em equipe.",
-            "id": "fr-050-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -404,6 +401,15 @@
             "id": "fr-050-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Je suis organisé, autonome et j'aime travailler en équipe.",
+            "respostaEsperada": "Je suis organisé, autonome et j'aime travailler en équipe.",
+            "explicacao": "Sou organizado, autônomo e gosto de trabalhar em equipe.",
+            "id": "fr-050-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como dizer «Sou formado em direito»?",
             "opcoes": [
@@ -417,17 +423,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «un objectif»?",
-            "audio": "un objectif",
+            "enunciado": "O que significa «un recruteur»?",
+            "audio": "un recruteur",
             "opcoes": [
-              "um objetivo",
-              "uma entrevista",
-              "uma equipe",
-              "um recrutador"
+              "um defeito",
+              "motivado",
+              "um recrutador",
+              "uma qualidade"
             ],
-            "gabarito": "um objetivo",
-            "explicacao": "«un objectif» = um objetivo.",
-            "id": "fr-050-x09",
+            "gabarito": "um recrutador",
+            "explicacao": "«un recruteur» = um recrutador.",
+            "id": "fr-050-x06",
             "complemento": true
           },
           {
@@ -456,21 +462,6 @@
             "gabarito": "Je suis organisé, sérieux et autonome.",
             "explicacao": "Qualidades com «être».",
             "id": "fr-050-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «une offre d'emploi»?",
-            "audio": "une offre d'emploi",
-            "opcoes": [
-              "uma equipe",
-              "uma vaga",
-              "uma candidatura",
-              "candidatar-se"
-            ],
-            "gabarito": "uma vaga",
-            "explicacao": "«une offre d'emploi» = uma vaga.",
-            "id": "fr-050-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

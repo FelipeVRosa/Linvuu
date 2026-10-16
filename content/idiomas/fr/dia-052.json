@@ -63,22 +63,6 @@
             "id": "fr-013-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você gostou do filme?»",
-            "opcoes": [
-              "aimé",
-              "?",
-              "film",
-              "le",
-              "as",
-              "Tu"
-            ],
-            "gabarito": "Tu as aimé le film ?",
-            "explicacao": "Escreva: Tu as aimé le film ?",
-            "id": "fr-013-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Je ne le regarde pas",
@@ -87,21 +71,33 @@
             "id": "fr-013-e04"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Vemos outro filme no fim de semana? Comigo?»",
+            "opcoes": [
+              "?",
+              "regarde",
+              "ce",
+              "autre",
+              "week-end",
+              "un",
+              "?",
+              "moi",
+              "On",
+              "Avec",
+              "film"
+            ],
+            "gabarito": "On regarde un autre film ce week-end ? Avec moi ?",
+            "explicacao": "Escreva: On regarde un autre film ce week-end ? Avec moi ?",
+            "id": "fr-013-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Je vais avec toi",
             "respostaEsperada": "Je vais avec toi",
             "explicacao": "Escreva: Je vais avec toi.",
             "id": "fr-013-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Tu as aimé le film ?",
-            "respostaEsperada": "Tu as aimé le film ?",
-            "explicacao": "Você gostou do filme?",
-            "id": "fr-013-x02",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -124,6 +120,15 @@
             "id": "fr-013-e07"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "On regarde un autre film ce week-end ? Avec moi ?",
+            "respostaEsperada": "On regarde un autre film ce week-end ? Avec moi ?",
+            "explicacao": "Vemos outro filme no fim de semana? Comigo?",
+            "id": "fr-013-x02",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como responder «C'est qui ?»",
             "opcoes": [
@@ -134,20 +139,6 @@
             "gabarito": "C'est moi.",
             "explicacao": "Depois de «c'est», o tônico.",
             "id": "fr-013-e08"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Talvez você tenha razão.»",
-            "opcoes": [
-              "as",
-              "Tu",
-              "raison.",
-              "peut-être"
-            ],
-            "gabarito": "Tu as peut-être raison.",
-            "explicacao": "Escreva: Tu as peut-être raison.",
-            "id": "fr-013-x03",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -174,6 +165,30 @@
             "id": "fr-013-e10"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Tu as aimé le film ?",
+            "respostaEsperada": "Tu as aimé le film ?",
+            "explicacao": "Você gostou do filme?",
+            "id": "fr-013-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le»?",
+            "audio": "le",
+            "opcoes": [
+              "adorar",
+              "o (ele, isso)",
+              "me",
+              "o, a (diante de vogal)"
+            ],
+            "gabarito": "o (ele, isso)",
+            "explicacao": "«le» = o (ele, isso).",
+            "id": "fr-013-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je vais chez ___ . (ele)",
             "opcoes": [
@@ -184,15 +199,6 @@
             "gabarito": "lui",
             "explicacao": "Depois de preposição, tônico.",
             "id": "fr-013-e11"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Tu as peut-être raison.",
-            "respostaEsperada": "Tu as peut-être raison.",
-            "explicacao": "Talvez você tenha razão.",
-            "id": "fr-013-x04",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -219,6 +225,21 @@
             "id": "fr-013-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «facile»?",
+            "audio": "facile",
+            "opcoes": [
+              "fácil",
+              "preferir",
+              "ele, a ele",
+              "te, lhe"
+            ],
+            "gabarito": "fácil",
+            "explicacao": "«facile» = fácil.",
+            "id": "fr-013-x04",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je ne suis pas ___ . (de acordo)",
             "opcoes": [
@@ -229,27 +250,6 @@
             "gabarito": "d'accord",
             "explicacao": "Expressão fixa.",
             "id": "fr-013-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Vemos outro filme no fim de semana? Comigo?»",
-            "opcoes": [
-              "?",
-              "regarde",
-              "ce",
-              "autre",
-              "week-end",
-              "un",
-              "?",
-              "moi",
-              "On",
-              "Avec",
-              "film"
-            ],
-            "gabarito": "On regarde un autre film ce week-end ? Avec moi ?",
-            "explicacao": "Escreva: On regarde un autre film ce week-end ? Avec moi ?",
-            "id": "fr-013-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -279,19 +279,25 @@
             "id": "fr-013-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "On regarde un autre film ce week-end ? Avec moi ?",
-            "respostaEsperada": "On regarde un autre film ce week-end ? Avec moi ?",
-            "explicacao": "Vemos outro filme no fim de semana? Comigo?",
-            "id": "fr-013-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Eu assisto ao filme. Eu o assisto. Eu não o assisto. Eu vou assisti-lo.",
             "respostaEsperada": "Je regarde le film. Je le regarde. Je ne le regarde pas. Je vais le regarder.",
             "id": "fr-013-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «moi»?",
+            "audio": "moi",
+            "opcoes": [
+              "eu, mim",
+              "os, as",
+              "a (ela)",
+              "te, lhe"
+            ],
+            "gabarito": "eu, mim",
+            "explicacao": "«moi» = eu, mim.",
+            "id": "fr-013-x05",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -318,21 +324,6 @@
             "id": "fr-013-e19"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «le»?",
-            "audio": "le",
-            "opcoes": [
-              "adorar",
-              "o (ele, isso)",
-              "me",
-              "o, a (diante de vogal)"
-            ],
-            "gabarito": "o (ele, isso)",
-            "explicacao": "«le» = o (ele, isso).",
-            "id": "fr-013-x07",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Les films ? Je ne ___ regarde pas.",
             "opcoes": [
@@ -343,6 +334,30 @@
             "gabarito": "les",
             "explicacao": "O objeto plural é «les», entre «ne» e o verbo.",
             "id": "fr-013-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «détester»?",
+            "audio": "détester",
+            "opcoes": [
+              "chato",
+              "detestar",
+              "preferir",
+              "a (ela)"
+            ],
+            "gabarito": "detestar",
+            "explicacao": "«détester» = detestar.",
+            "id": "fr-013-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Tu as peut-être raison.",
+            "respostaEsperada": "Tu as peut-être raison.",
+            "explicacao": "Talvez você tenha razão.",
+            "id": "fr-013-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -370,21 +385,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «facile»?",
-            "audio": "facile",
-            "opcoes": [
-              "fácil",
-              "preferir",
-              "ele, a ele",
-              "te, lhe"
-            ],
-            "gabarito": "fácil",
-            "explicacao": "«facile» = fácil.",
-            "id": "fr-013-x08",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "Como dizer «com ela»?",
             "opcoes": [
               "avec elle",
@@ -394,6 +394,21 @@
             "gabarito": "avec elle",
             "explicacao": "Depois de preposição, usa-se «elle».",
             "id": "fr-013-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «les»?",
+            "audio": "les",
+            "opcoes": [
+              "eu, mim",
+              "ele, a ele",
+              "os, as",
+              "te, lhe"
+            ],
+            "gabarito": "os, as",
+            "explicacao": "«les» = os, as.",
+            "id": "fr-013-x07",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -421,21 +436,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «moi»?",
-            "audio": "moi",
-            "opcoes": [
-              "eu, mim",
-              "os, as",
-              "a (ela)",
-              "te, lhe"
-            ],
-            "gabarito": "eu, mim",
-            "explicacao": "«moi» = eu, mim.",
-            "id": "fr-013-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "Qual é a forma de «préférer» para «nous»?",
             "opcoes": [
               "préférons",
@@ -445,6 +445,21 @@
             "gabarito": "préférons",
             "explicacao": "Em «nous», mantém-se «é».",
             "id": "fr-013-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «te»?",
+            "audio": "te",
+            "opcoes": [
+              "te, lhe",
+              "fácil",
+              "detestar",
+              "difícil"
+            ],
+            "gabarito": "te, lhe",
+            "explicacao": "«te» = te, lhe.",
+            "id": "fr-013-x08",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -460,21 +475,6 @@
             "gabarito": "Je les écoute tous les jours.",
             "explicacao": "O pronome «les» fica antes do verbo.",
             "id": "fr-013-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «détester»?",
-            "audio": "détester",
-            "opcoes": [
-              "chato",
-              "detestar",
-              "preferir",
-              "a (ela)"
-            ],
-            "gabarito": "detestar",
-            "explicacao": "«détester» = detestar.",
-            "id": "fr-013-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

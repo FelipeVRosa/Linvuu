@@ -377,46 +377,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «No campo não é nem barulhento nem caro.»",
-              "opcoes": [
-                "dem",
-                "noch",
-                "teuer.",
-                "ist",
-                "weder",
-                "Auf",
-                "es",
-                "laut",
-                "Land"
-              ],
-              "gabarito": "Auf dem Land ist es weder laut noch teuer.",
-              "explicacao": "Escreva: Auf dem Land ist es weder laut noch teuer.",
-              "id": "de-058-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Er kann ___ lesen noch schreiben.",
-              "opcoes": [
-                "weder",
-                "nicht",
-                "kein"
-              ],
-              "gabarito": "weder",
-              "explicacao": "weder … noch.",
-              "id": "de-058-e02"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Auf dem Land ist es weder laut noch teuer.",
-              "respostaEsperada": "Auf dem Land ist es weder laut noch teuer.",
-              "explicacao": "No campo não é nem barulhento nem caro.",
-              "id": "de-058-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Mas lá há não só tranquilidade, mas também menos trabalho.»",
               "opcoes": [
                 "dort",
@@ -433,8 +393,20 @@
               ],
               "gabarito": "Aber dort gibt es nicht nur Ruhe, sondern auch weniger Arbeit.",
               "explicacao": "Escreva: Aber dort gibt es nicht nur Ruhe, sondern auch weniger Arbeit.",
-              "id": "de-058-x03",
+              "id": "de-058-x01",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Er kann ___ lesen noch schreiben.",
+              "opcoes": [
+                "weder",
+                "nicht",
+                "kein"
+              ],
+              "gabarito": "weder",
+              "explicacao": "weder … noch.",
+              "id": "de-058-e02"
             },
             {
               "tipo": "fill-gap",
@@ -454,20 +426,17 @@
               "audio": "Aber dort gibt es nicht nur Ruhe, sondern auch weniger Arbeit.",
               "respostaEsperada": "Aber dort gibt es nicht nur Ruhe, sondern auch weniger Arbeit.",
               "explicacao": "Mas lá há não só tranquilidade, mas também menos trabalho.",
-              "id": "de-058-x04",
+              "id": "de-058-x02",
               "complemento": true
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Ich spreche nicht nur Deutsch, ___ auch Spanisch.",
-              "opcoes": [
-                "sondern",
-                "aber",
-                "und"
-              ],
-              "gabarito": "sondern",
-              "explicacao": "nicht nur … sondern auch.",
-              "id": "de-058-e04"
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Auf dem Land ist es weder laut noch teuer.",
+              "respostaEsperada": "Auf dem Land ist es weder laut noch teuer.",
+              "explicacao": "No campo não é nem barulhento nem caro.",
+              "id": "de-058-r01",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -485,7 +454,28 @@
               ],
               "gabarito": "Sowohl die Stadt als auch das Land haben Vorteile.",
               "explicacao": "Escreva: Sowohl die Stadt als auch das Land haben Vorteile.",
-              "id": "de-058-x05",
+              "id": "de-058-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Ich spreche nicht nur Deutsch, ___ auch Spanisch.",
+              "opcoes": [
+                "sondern",
+                "aber",
+                "und"
+              ],
+              "gabarito": "sondern",
+              "explicacao": "nicht nur … sondern auch.",
+              "id": "de-058-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Sowohl die Stadt als auch das Land haben Vorteile.",
+              "respostaEsperada": "Sowohl die Stadt als auch das Land haben Vorteile.",
+              "explicacao": "Tanto a cidade quanto o campo têm vantagens.",
+              "id": "de-058-x04",
               "complemento": true
             },
             {
@@ -501,29 +491,18 @@
               "id": "de-058-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sowohl die Stadt als auch das Land haben Vorteile.",
-              "respostaEsperada": "Sowohl die Stadt als auch das Land haben Vorteile.",
-              "explicacao": "Tanto a cidade quanto o campo têm vantagens.",
-              "id": "de-058-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «É verdade. Não precisamos decidir já.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Ruhe»?",
+              "audio": "die Ruhe",
               "opcoes": [
-                "Stimmt.",
-                "müssen",
-                "uns",
-                "nicht",
-                "entscheiden.",
-                "sofort",
-                "Wir"
+                "quanto … mais",
+                "tranquilidade",
+                "desvantagem",
+                "é verdade que … mas"
               ],
-              "gabarito": "Stimmt. Wir müssen uns nicht sofort entscheiden.",
-              "explicacao": "Escreva: Stimmt. Wir müssen uns nicht sofort entscheiden.",
-              "id": "de-058-x07",
+              "gabarito": "tranquilidade",
+              "explicacao": "«die Ruhe» = tranquilidade.",
+              "id": "de-058-x05",
               "complemento": true
             },
             {
@@ -539,12 +518,27 @@
               "id": "de-058-e06"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "Stimmt. Wir müssen uns nicht sofort entscheiden.",
               "respostaEsperada": "Stimmt. Wir müssen uns nicht sofort entscheiden.",
               "explicacao": "É verdade. Não precisamos decidir já.",
-              "id": "de-058-x08",
+              "id": "de-058-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Möglichkeit»?",
+              "audio": "die Möglichkeit",
+              "opcoes": [
+                "nem … nem",
+                "vantagem",
+                "ou … ou",
+                "possibilidade"
+              ],
+              "gabarito": "possibilidade",
+              "explicacao": "«die Möglichkeit» = possibilidade.",
+              "id": "de-058-x06",
               "complemento": true
             },
             {
@@ -561,17 +555,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Ruhe»?",
-              "audio": "die Ruhe",
+              "enunciado": "O que significa «zwar … aber»?",
+              "audio": "zwar … aber",
               "opcoes": [
-                "quanto … mais",
-                "tranquilidade",
                 "desvantagem",
-                "é verdade que … mas"
+                "é verdade que … mas",
+                "natureza",
+                "por um lado … por outro"
               ],
-              "gabarito": "tranquilidade",
-              "explicacao": "«die Ruhe» = tranquilidade.",
-              "id": "de-058-x09",
+              "gabarito": "é verdade que … mas",
+              "explicacao": "«zwar … aber» = é verdade que … mas.",
+              "id": "de-058-x07",
               "complemento": true
             },
             {
@@ -588,17 +582,26 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Möglichkeit»?",
-              "audio": "die Möglichkeit",
+              "enunciado": "O que significa «entweder … oder»?",
+              "audio": "entweder … oder",
               "opcoes": [
-                "nem … nem",
-                "vantagem",
+                "oferta",
                 "ou … ou",
-                "possibilidade"
+                "possibilidade",
+                "quanto … mais"
               ],
-              "gabarito": "possibilidade",
-              "explicacao": "«die Möglichkeit» = possibilidade.",
-              "id": "de-058-x10",
+              "gabarito": "ou … ou",
+              "explicacao": "«entweder … oder» = ou … ou.",
+              "id": "de-058-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "sowohl … als auch",
+              "respostaEsperada": "sowohl … als auch",
+              "explicacao": "tanto … quanto",
+              "id": "de-058-r03",
               "complemento": true
             },
             {
@@ -615,32 +618,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «zwar … aber»?",
-              "audio": "zwar … aber",
+              "enunciado": "O que significa «das Leben»?",
+              "audio": "das Leben",
               "opcoes": [
+                "alternativa",
                 "desvantagem",
-                "é verdade que … mas",
-                "natureza",
-                "por um lado … por outro"
+                "vida",
+                "tranquilidade"
               ],
-              "gabarito": "é verdade que … mas",
-              "explicacao": "«zwar … aber» = é verdade que … mas.",
-              "id": "de-058-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «entweder … oder»?",
-              "audio": "entweder … oder",
-              "opcoes": [
-                "oferta",
-                "ou … ou",
-                "possibilidade",
-                "quanto … mais"
-              ],
-              "gabarito": "ou … ou",
-              "explicacao": "«entweder … oder» = ou … ou.",
-              "id": "de-058-x12",
+              "gabarito": "vida",
+              "explicacao": "«das Leben» = vida.",
+              "id": "de-058-x09",
               "complemento": true
             },
             {
@@ -657,17 +645,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Leben»?",
-              "audio": "das Leben",
+              "enunciado": "O que significa «die Natur»?",
+              "audio": "die Natur",
               "opcoes": [
                 "alternativa",
-                "desvantagem",
+                "natureza",
                 "vida",
-                "tranquilidade"
+                "é verdade que … mas"
               ],
-              "gabarito": "vida",
-              "explicacao": "«das Leben» = vida.",
-              "id": "de-058-x13",
+              "gabarito": "natureza",
+              "explicacao": "«die Natur» = natureza.",
+              "id": "de-058-x10",
               "complemento": true
             },
             {
@@ -688,34 +676,6 @@
               "id": "de-058-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Natur»?",
-              "audio": "die Natur",
-              "opcoes": [
-                "alternativa",
-                "natureza",
-                "vida",
-                "é verdade que … mas"
-              ],
-              "gabarito": "natureza",
-              "explicacao": "«die Natur» = natureza.",
-              "id": "de-058-x14",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escolha.",
-              "audio": "Sowohl die Stadt als auch das Land haben Vorteile",
-              "opcoes": [
-                "Sowohl die Stadt als auch das Land haben Vorteile",
-                "Weder die Stadt noch das Land hat Vorteile",
-                "Entweder die Stadt oder das Land"
-              ],
-              "gabarito": "Sowohl die Stadt als auch das Land haben Vorteile",
-              "explicacao": "sowohl … als auch.",
-              "id": "de-058-e12"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Sowohl die Stadt als auch das Land haben Vorteile",
@@ -732,7 +692,16 @@
               ],
               "gabarito": "Sowohl die Stadt als auch das Land haben Vorteile",
               "explicacao": "Escreva: Sowohl die Stadt als auch das Land haben Vorteile",
-              "id": "de-058-x15",
+              "id": "de-058-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "zwar … aber",
+              "respostaEsperada": "zwar … aber",
+              "explicacao": "é verdade que … mas",
+              "id": "de-058-r04",
               "complemento": true
             },
             {
@@ -752,8 +721,21 @@
               ],
               "gabarito": "Auf dem Land ist es weder laut noch teuer",
               "explicacao": "Escreva: Auf dem Land ist es weder laut noch teuer",
-              "id": "de-058-x16",
+              "id": "de-058-x12",
               "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Sowohl die Stadt als auch das Land haben Vorteile",
+              "opcoes": [
+                "Sowohl die Stadt als auch das Land haben Vorteile",
+                "Weder die Stadt noch das Land hat Vorteile",
+                "Entweder die Stadt oder das Land"
+              ],
+              "gabarito": "Sowohl die Stadt als auch das Land haben Vorteile",
+              "explicacao": "sowohl … als auch.",
+              "id": "de-058-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -769,7 +751,7 @@
               "audio": "Sowohl die Stadt als auch das Land haben Vorteile",
               "respostaEsperada": "Sowohl die Stadt als auch das Land haben Vorteile",
               "explicacao": "Escreva: Sowohl die Stadt als auch das Land haben Vorteile",
-              "id": "de-058-x17",
+              "id": "de-058-x13",
               "complemento": true
             },
             {

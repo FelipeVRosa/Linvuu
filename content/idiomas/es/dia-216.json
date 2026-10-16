@@ -63,19 +63,6 @@
             "id": "es-054-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Claro. Como começa?»",
-            "opcoes": [
-              "¿Cómo",
-              "empieza?",
-              "Claro."
-            ],
-            "gabarito": "Claro. ¿Cómo empieza?",
-            "explicacao": "Escreva: Claro. ¿Cómo empieza?",
-            "id": "es-054-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Le escribo para pedir información",
@@ -92,12 +79,23 @@
             "id": "es-054-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Claro. ¿Cómo empieza?",
-            "respostaEsperada": "Claro. ¿Cómo empieza?",
-            "explicacao": "Claro. Como começa?",
-            "id": "es-054-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Isso também não. Coloque «Fico à disposição. Cordiais saudações».»",
+            "opcoes": [
+              "disposición.",
+              "tampoco.",
+              "saludo».",
+              "Pon",
+              "Eso",
+              "«Quedo",
+              "a",
+              "Un",
+              "cordial",
+              "su"
+            ],
+            "gabarito": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "explicacao": "Escreva: Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "id": "es-054-x01",
             "complemento": true
           },
           {
@@ -107,6 +105,15 @@
             "respostaEsperada": "Un cordial saludo",
             "explicacao": "Escreva: Un cordial saludo. (despedida formal)",
             "id": "es-054-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Claro. ¿Cómo empieza?",
+            "respostaEsperada": "Claro. ¿Cómo empieza?",
+            "explicacao": "Claro. Como começa?",
+            "id": "es-054-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -133,23 +140,6 @@
             "id": "es-054-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Diz: «Oi, Carmen. Estou te mandando o relatório».»",
-            "opcoes": [
-              "Pone:",
-              "Carmen.",
-              "Te",
-              "informe».",
-              "el",
-              "mando",
-              "«Hola,"
-            ],
-            "gabarito": "Pone: «Hola, Carmen. Te mando el informe».",
-            "explicacao": "Escreva: Pone: «Hola, Carmen. Te mando el informe».",
-            "id": "es-054-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como dizer «segue em anexo o documento» de forma natural?",
             "opcoes": [
@@ -160,6 +150,15 @@
             "gabarito": "Adjunto el documento.",
             "explicacao": "«Sigue adjunto» é cópia do português.",
             "id": "es-054-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "respostaEsperada": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
+            "explicacao": "Isso também não. Coloque «Fico à disposição. Cordiais saudações».",
+            "id": "es-054-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -186,15 +185,6 @@
             "id": "es-054-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Pone: «Hola, Carmen. Te mando el informe».",
-            "respostaEsperada": "Pone: «Hola, Carmen. Te mando el informe».",
-            "explicacao": "Diz: «Oi, Carmen. Estou te mandando o relatório».",
-            "id": "es-054-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Le ruego que me ___ la fecha. (confirmar)",
             "opcoes": [
@@ -205,6 +195,15 @@
             "gabarito": "confirme",
             "explicacao": "Rogar que + presente de subjuntivo.",
             "id": "es-054-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Pone: «Hola, Carmen. Te mando el informe».",
+            "respostaEsperada": "Pone: «Hola, Carmen. Te mando el informe».",
+            "explicacao": "Diz: «Oi, Carmen. Estou te mandando o relatório».",
+            "id": "es-054-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -219,6 +218,21 @@
             "id": "es-054-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «No he recibido…»?",
+            "audio": "No he recibido…",
+            "opcoes": [
+              "peço-lhe que…",
+              "antecipadamente",
+              "em anexo",
+              "não recebi…"
+            ],
+            "gabarito": "não recebi…",
+            "explicacao": "«No he recibido…» = não recebi….",
+            "id": "es-054-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "___ informarle de que el curso está completo. (Lamento)",
             "opcoes": [
@@ -229,25 +243,6 @@
             "gabarito": "Lamento",
             "explicacao": "«Lamento informarle» é a fórmula de má notícia.",
             "id": "es-054-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Você tem razão. E no final? Eu tinha colocado «Um beijinho».»",
-            "opcoes": [
-              "Tienes",
-              "puesto",
-              "Había",
-              "final?",
-              "al",
-              "razón.",
-              "«Un",
-              "¿Y",
-              "besito»."
-            ],
-            "gabarito": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
-            "explicacao": "Escreva: Tienes razón. ¿Y al final? Había puesto «Un besito».",
-            "id": "es-054-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -274,15 +269,6 @@
             "id": "es-054-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
-            "respostaEsperada": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
-            "explicacao": "Você tem razão. E no final? Eu tinha colocado «Um beijinho».",
-            "id": "es-054-x06",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Quedo a su disposición para cualquier duda.»",
             "opcoes": [
@@ -297,6 +283,21 @@
             "gabarito": "Quedo a su disposición para cualquier duda.",
             "explicacao": "Fórmula de fecho.",
             "id": "es-054-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «el asunto»?",
+            "audio": "el asunto",
+            "opcoes": [
+              "o assunto (do e-mail)",
+              "desculpe o incômodo.",
+              "peço-lhe que…",
+              "não recebi…"
+            ],
+            "gabarito": "o assunto (do e-mail)",
+            "explicacao": "«el asunto» = o assunto (do e-mail).",
+            "id": "es-054-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -316,30 +317,19 @@
             "id": "es-054-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
+            "respostaEsperada": "Tienes razón. ¿Y al final? Había puesto «Un besito».",
+            "explicacao": "Você tem razão. E no final? Eu tinha colocado «Um beijinho».",
+            "id": "es-054-r03",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol (formal): Gostaria de saber se ainda há vagas. Agradeço desde já.",
             "respostaEsperada": "Quisiera saber si todavía quedan plazas. Le agradezco de antemano su atención.",
             "id": "es-054-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Isso também não. Coloque «Fico à disposição. Cordiais saudações».»",
-            "opcoes": [
-              "disposición.",
-              "tampoco.",
-              "saludo».",
-              "Pon",
-              "Eso",
-              "«Quedo",
-              "a",
-              "Un",
-              "cordial",
-              "su"
-            ],
-            "gabarito": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
-            "explicacao": "Escreva: Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
-            "id": "es-054-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -366,6 +356,21 @@
             "id": "es-054-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «adjunto»?",
+            "audio": "adjunto",
+            "opcoes": [
+              "desculpe o incômodo.",
+              "em anexo",
+              "não recebi…",
+              "Atenciosamente,"
+            ],
+            "gabarito": "em anexo",
+            "explicacao": "«adjunto» = em anexo.",
+            "id": "es-054-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quedo a su ___ . (disposição)",
             "opcoes": [
@@ -376,15 +381,6 @@
             "gabarito": "disposición",
             "explicacao": "A fórmula é «Quedo a su disposición».",
             "id": "es-054-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
-            "respostaEsperada": "Eso tampoco. Pon «Quedo a su disposición. Un cordial saludo».",
-            "explicacao": "Isso também não. Coloque «Fico à disposição. Cordiais saudações».",
-            "id": "es-054-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -411,6 +407,15 @@
             "id": "es-054-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Mucho mejor. Gracias.",
+            "respostaEsperada": "Mucho mejor. Gracias.",
+            "explicacao": "Muito melhor. Obrigada.",
+            "id": "es-054-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «adjunto» em um e-mail?",
             "opcoes": [
@@ -423,16 +428,18 @@
             "id": "es-054-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Muito melhor. Obrigada.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «Le confirmo que…»?",
+            "audio": "Le confirmo que…",
             "opcoes": [
-              "mejor.",
-              "Gracias.",
-              "Mucho"
+              "confirmo-lhe que…",
+              "em anexo",
+              "antecipadamente",
+              "escrevo para…"
             ],
-            "gabarito": "Mucho mejor. Gracias.",
-            "explicacao": "Escreva: Mucho mejor. Gracias.",
-            "id": "es-054-x09",
+            "gabarito": "confirmo-lhe que…",
+            "explicacao": "«Le confirmo que…» = confirmo-lhe que….",
+            "id": "es-054-x06",
             "complemento": true
           },
           {
@@ -463,15 +470,6 @@
             "gabarito": "Le escribo para solicitar información sobre el curso.",
             "explicacao": "Abertura típica de e-mail formal.",
             "id": "es-054-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Mucho mejor. Gracias.",
-            "respostaEsperada": "Mucho mejor. Gracias.",
-            "explicacao": "Muito melhor. Obrigada.",
-            "id": "es-054-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

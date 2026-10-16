@@ -471,28 +471,16 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi! Eu sou Lena. Sou estudante. E você?»",
+              "enunciado": "Monte a frase: «Muito prazer! Você é russo?»",
               "opcoes": [
-                "Привет!",
-                "Я",
-                "Лена.",
-                "А",
-                "ты?",
-                "Я",
-                "студентка."
+                "русский?",
+                "Очень",
+                "Ты",
+                "приятно!"
               ],
-              "gabarito": "Привет! Я Лена. Я студентка. А ты?",
-              "explicacao": "Escreva: Привет! Я Лена. Я студентка. А ты?",
+              "gabarito": "Очень приятно! Ты русский?",
+              "explicacao": "Escreva: Очень приятно! Ты русский?",
               "id": "ru-007-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Привет! Я Лена. Я студентка. А ты?",
-              "respostaEsperada": "Привет! Я Лена. Я студентка. А ты?",
-              "explicacao": "Oi! Eu sou Lena. Sou estudante. E você?",
-              "id": "ru-007-x02",
               "complemento": true
             },
             {
@@ -508,29 +496,36 @@
               "id": "ru-007-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Lena! Eu me chamo Marc. Sou engenheiro.»",
-              "opcoes": [
-                "Меня",
-                "Лена!",
-                "зовут",
-                "Привет,",
-                "инженер.",
-                "Я",
-                "Марк."
-              ],
-              "gabarito": "Привет, Лена! Меня зовут Марк. Я инженер.",
-              "explicacao": "Escreva: Привет, Лена! Меня зовут Марк. Я инженер.",
-              "id": "ru-007-x03",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Очень приятно! Ты русский?",
+              "respostaEsperada": "Очень приятно! Ты русский?",
+              "explicacao": "Muito prazer! Você é russo?",
+              "id": "ru-007-x02",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Привет, Лена! Меня зовут Марк. Я инженер.",
-              "respostaEsperada": "Привет, Лена! Меня зовут Марк. Я инженер.",
-              "explicacao": "Oi, Lena! Eu me chamo Marc. Sou engenheiro.",
-              "id": "ru-007-x04",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Привет! Я Лена. Я студентка. А ты?",
+              "respostaEsperada": "Привет! Я Лена. Я студентка. А ты?",
+              "explicacao": "Oi! Eu sou Lena. Sou estudante. E você?",
+              "id": "ru-007-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sou da Rússia. Sou russa.»",
+              "opcoes": [
+                "Я",
+                "из",
+                "русская.",
+                "Я",
+                "России."
+              ],
+              "gabarito": "Я из России. Я русская.",
+              "explicacao": "Escreva: Я из России. Я русская.",
+              "id": "ru-007-x03",
               "complemento": true
             },
             {
@@ -546,29 +541,6 @@
               "id": "ru-007-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito prazer! Você é russo?»",
-              "opcoes": [
-                "русский?",
-                "Очень",
-                "Ты",
-                "приятно!"
-              ],
-              "gabarito": "Очень приятно! Ты русский?",
-              "explicacao": "Escreva: Очень приятно! Ты русский?",
-              "id": "ru-007-x05",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Очень приятно! Ты русский?",
-              "respostaEsperada": "Очень приятно! Ты русский?",
-              "explicacao": "Muito prazer! Você é russo?",
-              "id": "ru-007-x06",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
               "audio": "Откуда ты?",
@@ -582,28 +554,12 @@
               "id": "ru-007-e04"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, não sou russo. Sou brasileiro.»",
-              "opcoes": [
-                "Нет,",
-                "русский.",
-                "бразилец.",
-                "я",
-                "Я",
-                "не"
-              ],
-              "gabarito": "Нет, я не русский. Я бразилец.",
-              "explicacao": "Escreva: Нет, я не русский. Я бразилец.",
-              "id": "ru-007-x07",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Нет, я не русский. Я бразилец.",
-              "respostaEsperada": "Нет, я не русский. Я бразилец.",
-              "explicacao": "Não, não sou russo. Sou brasileiro.",
-              "id": "ru-007-x08",
+              "audio": "Я из России. Я русская.",
+              "respostaEsperada": "Я из России. Я русская.",
+              "explicacao": "Sou da Rússia. Sou russa.",
+              "id": "ru-007-x04",
               "complemento": true
             },
             {
@@ -619,27 +575,42 @@
               "id": "ru-007-e05"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sou do Brasil. E você?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «откуда»?",
+              "audio": "откуда",
               "opcoes": [
-                "Я",
-                "А",
-                "ты?",
-                "Бразилии.",
-                "из"
+                "alemã",
+                "americana",
+                "de onde",
+                "russa"
               ],
-              "gabarito": "Я из Бразилии. А ты?",
-              "explicacao": "Escreva: Я из Бразилии. А ты?",
-              "id": "ru-007-x09",
+              "gabarito": "de onde",
+              "explicacao": "«откуда» = de onde.",
+              "id": "ru-007-x05",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Я из Бразилии. А ты?",
-              "respostaEsperada": "Я из Бразилии. А ты?",
-              "explicacao": "Sou do Brasil. E você?",
-              "id": "ru-007-x10",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Привет, Лена! Меня зовут Марк. Я инженер.",
+              "respostaEsperada": "Привет, Лена! Меня зовут Марк. Я инженер.",
+              "explicacao": "Oi, Lena! Eu me chamo Marc. Sou engenheiro.",
+              "id": "ru-007-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «учитель»?",
+              "audio": "учитель",
+              "opcoes": [
+                "professor",
+                "brasileiro",
+                "americana",
+                "programador(a)"
+              ],
+              "gabarito": "professor",
+              "explicacao": "«учитель» = professor.",
+              "id": "ru-007-x06",
               "complemento": true
             },
             {
@@ -655,18 +626,18 @@
               "id": "ru-007-e06"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sou da Rússia. Sou russa.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «художник»?",
+              "audio": "художник",
               "opcoes": [
-                "Я",
-                "из",
-                "русская.",
-                "Я",
-                "России."
+                "americano",
+                "de onde",
+                "artista, pintor",
+                "de (origem)"
               ],
-              "gabarito": "Я из России. Я русская.",
-              "explicacao": "Escreva: Я из России. Я русская.",
-              "id": "ru-007-x11",
+              "gabarito": "artista, pintor",
+              "explicacao": "«художник» = artista, pintor.",
+              "id": "ru-007-x07",
               "complemento": true
             },
             {
@@ -682,27 +653,42 @@
               "id": "ru-007-e07"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Я из России. Я русская.",
-              "respostaEsperada": "Я из России. Я русская.",
-              "explicacao": "Sou da Rússia. Sou russa.",
-              "id": "ru-007-x12",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «учительница»?",
+              "audio": "учительница",
+              "opcoes": [
+                "brasileiro",
+                "russo",
+                "professora",
+                "alemão"
+              ],
+              "gabarito": "professora",
+              "explicacao": "«учительница» = professora.",
+              "id": "ru-007-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Нет, я не русский. Я бразилец.",
+              "respostaEsperada": "Нет, я не русский. Я бразилец.",
+              "explicacao": "Não, não sou russo. Sou brasileiro.",
+              "id": "ru-007-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «откуда»?",
-              "audio": "откуда",
+              "enunciado": "O que significa «инженер»?",
+              "audio": "инженер",
               "opcoes": [
-                "alemã",
-                "americana",
-                "de onde",
-                "russa"
+                "alemão",
+                "ator",
+                "engenheiro(a)",
+                "jornalista"
               ],
-              "gabarito": "de onde",
-              "explicacao": "«откуда» = de onde.",
-              "id": "ru-007-x13",
+              "gabarito": "engenheiro(a)",
+              "explicacao": "«инженер» = engenheiro(a).",
+              "id": "ru-007-x09",
               "complemento": true
             },
             {
@@ -719,32 +705,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «учитель»?",
-              "audio": "учитель",
+              "enunciado": "O que significa «из»?",
+              "audio": "из",
               "opcoes": [
-                "professor",
-                "brasileiro",
-                "americana",
-                "programador(a)"
-              ],
-              "gabarito": "professor",
-              "explicacao": "«учитель» = professor.",
-              "id": "ru-007-x14",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «художник»?",
-              "audio": "художник",
-              "opcoes": [
+                "de (origem)",
                 "americano",
-                "de onde",
-                "artista, pintor",
-                "de (origem)"
+                "estudante (homem)",
+                "brasileira"
               ],
-              "gabarito": "artista, pintor",
-              "explicacao": "«художник» = artista, pintor.",
-              "id": "ru-007-x15",
+              "gabarito": "de (origem)",
+              "explicacao": "«из» = de (origem).",
+              "id": "ru-007-x10",
               "complemento": true
             },
             {
@@ -754,36 +725,6 @@
               "respostaEsperada": "У меня нет машины",
               "explicacao": "Negação de posse.",
               "id": "ru-007-e09"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «учительница»?",
-              "audio": "учительница",
-              "opcoes": [
-                "brasileiro",
-                "russo",
-                "professora",
-                "alemão"
-              ],
-              "gabarito": "professora",
-              "explicacao": "«учительница» = professora.",
-              "id": "ru-007-x16",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «инженер»?",
-              "audio": "инженер",
-              "opcoes": [
-                "alemão",
-                "ator",
-                "engenheiro(a)",
-                "jornalista"
-              ],
-              "gabarito": "engenheiro(a)",
-              "explicacao": "«инженер» = engenheiro(a).",
-              "id": "ru-007-x17",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -798,21 +739,6 @@
               "id": "ru-007-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «из»?",
-              "audio": "из",
-              "opcoes": [
-                "de (origem)",
-                "americano",
-                "estudante (homem)",
-                "brasileira"
-              ],
-              "gabarito": "de (origem)",
-              "explicacao": "«из» = de (origem).",
-              "id": "ru-007-x18",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Откуда ты?",
@@ -822,7 +748,31 @@
               ],
               "gabarito": "Откуда ты?",
               "explicacao": "Escreva: Откуда ты?",
-              "id": "ru-007-x19",
+              "id": "ru-007-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Я из Бразилии. А ты?",
+              "respostaEsperada": "Я из Бразилии. А ты?",
+              "explicacao": "Sou do Brasil. E você?",
+              "id": "ru-007-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "У меня нет машины",
+              "opcoes": [
+                "У",
+                "меня",
+                "машины",
+                "нет"
+              ],
+              "gabarito": "У меня нет машины",
+              "explicacao": "Escreva: У меня нет машины",
+              "id": "ru-007-x12",
               "complemento": true
             },
             {
@@ -838,27 +788,12 @@
               "id": "ru-007-e11"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "У меня нет машины",
-              "opcoes": [
-                "У",
-                "меня",
-                "машины",
-                "нет"
-              ],
-              "gabarito": "У меня нет машины",
-              "explicacao": "Escreva: У меня нет машины",
-              "id": "ru-007-x20",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Откуда ты?",
               "respostaEsperada": "Откуда ты?",
               "explicacao": "Escreva: Откуда ты?",
-              "id": "ru-007-x21",
+              "id": "ru-007-x13",
               "complemento": true
             },
             {

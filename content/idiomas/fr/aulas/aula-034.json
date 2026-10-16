@@ -500,6 +500,14 @@
               "id": "fr-034-e05"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Il pleut, donc je reste",
+              "respostaEsperada": "Il pleut, donc je reste",
+              "explicacao": "Escreva: Il pleut, donc je reste.",
+              "id": "fr-034-e06"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «parce que»?",
               "audio": "parce que",
@@ -513,14 +521,6 @@
               "explicacao": "«parce que» = porque.",
               "id": "fr-034-x02",
               "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Il pleut, donc je reste",
-              "respostaEsperada": "Il pleut, donc je reste",
-              "explicacao": "Escreva: Il pleut, donc je reste.",
-              "id": "fr-034-e06"
             },
             {
               "tipo": "multiple-choice",
@@ -548,6 +548,18 @@
             },
             {
               "tipo": "multiple-choice",
+              "enunciado": "Responder a «Pourquoi» :",
+              "opcoes": [
+                "Parce que je suis fatigué.",
+                "Pourquoi je suis fatigué.",
+                "Donc je suis fatigué."
+              ],
+              "gabarito": "Parce que je suis fatigué.",
+              "explicacao": "«Parce que».",
+              "id": "fr-034-e09"
+            },
+            {
+              "tipo": "multiple-choice",
               "enunciado": "O que significa «afin de»?",
               "audio": "afin de",
               "opcoes": [
@@ -560,18 +572,6 @@
               "explicacao": "«afin de» = a fim de.",
               "id": "fr-034-x03",
               "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Responder a «Pourquoi» :",
-              "opcoes": [
-                "Parce que je suis fatigué.",
-                "Pourquoi je suis fatigué.",
-                "Donc je suis fatigué."
-              ],
-              "gabarito": "Parce que je suis fatigué.",
-              "explicacao": "«Parce que».",
-              "id": "fr-034-e09"
             },
             {
               "tipo": "multiple-choice",
@@ -598,6 +598,18 @@
               "id": "fr-034-e11"
             },
             {
+              "tipo": "fill-gap",
+              "enunciado": "J'ai deux livres. ___ veux-tu ?",
+              "opcoes": [
+                "Lequel",
+                "Quel",
+                "Que"
+              ],
+              "gabarito": "Lequel",
+              "explicacao": "Escolha entre.",
+              "id": "fr-034-e12"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «à cause de»?",
               "audio": "à cause de",
@@ -611,18 +623,6 @@
               "explicacao": "«à cause de» = por causa de (negativo).",
               "id": "fr-034-x04",
               "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "J'ai deux livres. ___ veux-tu ?",
-              "opcoes": [
-                "Lequel",
-                "Quel",
-                "Que"
-              ],
-              "gabarito": "Lequel",
-              "explicacao": "Escolha entre.",
-              "id": "fr-034-e12"
             },
             {
               "tipo": "fill-gap",
@@ -649,6 +649,29 @@
               "id": "fr-034-e14"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Où est-ce que tu habites ?»",
+              "opcoes": [
+                "Où",
+                "est-ce",
+                "que",
+                "tu",
+                "habites"
+              ],
+              "gabarito": "Où est-ce que tu habites ?",
+              "explicacao": "Forma neutra.",
+              "id": "fr-034-e15"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "à cause de",
+              "respostaEsperada": "à cause de",
+              "explicacao": "por causa de (negativo)",
+              "id": "fr-034-r01",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «qu'est-ce qui»?",
               "audio": "qu'est-ce qui",
@@ -665,20 +688,6 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Ordene: «Où est-ce que tu habites ?»",
-              "opcoes": [
-                "Où",
-                "est-ce",
-                "que",
-                "tu",
-                "habites"
-              ],
-              "gabarito": "Où est-ce que tu habites ?",
-              "explicacao": "Forma neutra.",
-              "id": "fr-034-e15"
-            },
-            {
-              "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Je reste parce qu'il pleut.»",
               "opcoes": [
                 "Je",
@@ -690,21 +699,6 @@
               "gabarito": "Je reste parce qu'il pleut.",
               "explicacao": "Causa.",
               "id": "fr-034-e16"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «mais»?",
-              "audio": "mais",
-              "opcoes": [
-                "mas",
-                "o que (sujeito)",
-                "onde",
-                "qual, que"
-              ],
-              "gabarito": "mas",
-              "explicacao": "«mais» = mas.",
-              "id": "fr-034-x06",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -725,6 +719,21 @@
               "id": "fr-034-e18"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «mais»?",
+              "audio": "mais",
+              "opcoes": [
+                "mas",
+                "o que (sujeito)",
+                "onde",
+                "qual, que"
+              ],
+              "gabarito": "mas",
+              "explicacao": "«mais» = mas.",
+              "id": "fr-034-x06",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Il pleut ; ___ , je sors. (no entanto)",
               "opcoes": [
@@ -735,22 +744,6 @@
               "gabarito": "pourtant",
               "explicacao": "«Pourtant» marca oposição.",
               "id": "fr-034-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Qu'est-ce que tu fais ?",
-              "opcoes": [
-                "fais",
-                "que",
-                "Qu'est-ce",
-                "?",
-                "tu"
-              ],
-              "gabarito": "Qu'est-ce que tu fais ?",
-              "explicacao": "Escreva: Qu'est-ce que tu fais ?",
-              "id": "fr-034-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -777,6 +770,22 @@
               "id": "fr-034-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Qu'est-ce que tu fais ?",
+              "opcoes": [
+                "fais",
+                "que",
+                "Qu'est-ce",
+                "?",
+                "tu"
+              ],
+              "gabarito": "Qu'est-ce que tu fais ?",
+              "explicacao": "Escreva: Qu'est-ce que tu fais ?",
+              "id": "fr-034-x07",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ films aimes-tu ? (quais)",
               "opcoes": [
@@ -787,22 +796,6 @@
               "gabarito": "Quels",
               "explicacao": "«Films» é masculino plural: «quels».",
               "id": "fr-034-e22"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "J'ai réussi grâce à toi",
-              "opcoes": [
-                "réussi",
-                "J'ai",
-                "grâce",
-                "toi",
-                "à"
-              ],
-              "gabarito": "J'ai réussi grâce à toi",
-              "explicacao": "Escreva: J'ai réussi grâce à toi",
-              "id": "fr-034-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -829,6 +822,22 @@
               "id": "fr-034-e24"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "J'ai réussi grâce à toi",
+              "opcoes": [
+                "réussi",
+                "J'ai",
+                "grâce",
+                "toi",
+                "à"
+              ],
+              "gabarito": "J'ai réussi grâce à toi",
+              "explicacao": "Escreva: J'ai réussi grâce à toi",
+              "id": "fr-034-x08",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é a forma formal de «Tu viens ?»",
               "opcoes": [
@@ -839,22 +848,6 @@
               "gabarito": "Viens-tu ?",
               "explicacao": "Inversão: verbo + pronome, com hífen.",
               "id": "fr-034-e25"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Où est-ce que tu vas",
-              "opcoes": [
-                "Où",
-                "est-ce",
-                "vas",
-                "que",
-                "tu"
-              ],
-              "gabarito": "Où est-ce que tu vas",
-              "explicacao": "Escreva: Où est-ce que tu vas",
-              "id": "fr-034-x09",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -888,14 +881,17 @@
             {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
-              "audio": "Parle-t-il français",
+              "audio": "Où est-ce que tu vas",
               "opcoes": [
-                "français",
-                "Parle-t-il"
+                "Où",
+                "est-ce",
+                "vas",
+                "que",
+                "tu"
               ],
-              "gabarito": "Parle-t-il français",
-              "explicacao": "Escreva: Parle-t-il français",
-              "id": "fr-034-x10",
+              "gabarito": "Où est-ce que tu vas",
+              "explicacao": "Escreva: Où est-ce que tu vas",
+              "id": "fr-034-x09",
               "complemento": true
             },
             {

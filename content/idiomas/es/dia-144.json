@@ -63,22 +63,6 @@
             "id": "es-036-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Pablo, é a Marta. Estou te atrapalhando?»",
-            "opcoes": [
-              "Pablo,",
-              "Marta.",
-              "Hola,",
-              "¿Te",
-              "soy",
-              "molesto?"
-            ],
-            "gabarito": "Hola, Pablo, soy Marta. ¿Te molesto?",
-            "explicacao": "Escreva: Hola, Pablo, soy Marta. ¿Te molesto?",
-            "id": "es-036-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Gracias, pero hoy no puedo",
@@ -95,12 +79,24 @@
             "id": "es-036-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hola, Pablo, soy Marta. ¿Te molesto?",
-            "respostaEsperada": "Hola, Pablo, soy Marta. ¿Te molesto?",
-            "explicacao": "Oi, Pablo, é a Marta. Estou te atrapalhando?",
-            "id": "es-036-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «E à noite? Podemos combinar às nove e meia.»",
+            "opcoes": [
+              "a",
+              "quedar",
+              "y",
+              "nueve",
+              "por",
+              "la",
+              "las",
+              "noche?",
+              "media.",
+              "Podemos",
+              "¿Y"
+            ],
+            "gabarito": "¿Y por la noche? Podemos quedar a las nueve y media.",
+            "explicacao": "Escreva: ¿Y por la noche? Podemos quedar a las nueve y media.",
+            "id": "es-036-x01",
             "complemento": true
           },
           {
@@ -110,6 +106,15 @@
             "respostaEsperada": "Nos vemos el sábado",
             "explicacao": "Escreva: Nos vemos el sábado. Sem preposição antes do dia.",
             "id": "es-036-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hola, Pablo, soy Marta. ¿Te molesto?",
+            "respostaEsperada": "Hola, Pablo, soy Marta. ¿Te molesto?",
+            "explicacao": "Oi, Pablo, é a Marta. Estou te atrapalhando?",
+            "id": "es-036-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -136,20 +141,6 @@
             "id": "es-036-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, de jeito nenhum. Diga.»",
-            "opcoes": [
-              "Dime.",
-              "qué",
-              "No,",
-              "va."
-            ],
-            "gabarito": "No, qué va. Dime.",
-            "explicacao": "Escreva: No, qué va. Dime.",
-            "id": "es-036-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -160,6 +151,15 @@
             "gabarito": "¿Te apetece ir al cine?",
             "explicacao": "«Apetecer» funciona como «gustar».",
             "id": "es-036-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "¿Y por la noche? Podemos quedar a las nueve y media.",
+            "respostaEsperada": "¿Y por la noche? Podemos quedar a las nueve y media.",
+            "explicacao": "E à noite? Podemos combinar às nove e meia.",
+            "id": "es-036-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -186,15 +186,6 @@
             "id": "es-036-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "No, qué va. Dime.",
-            "respostaEsperada": "No, qué va. Dime.",
-            "explicacao": "Não, de jeito nenhum. Diga.",
-            "id": "es-036-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Quedamos ___ las ocho.",
             "opcoes": [
@@ -205,6 +196,15 @@
             "gabarito": "a",
             "explicacao": "As horas pedem «a las».",
             "id": "es-036-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "No, qué va. Dime.",
+            "respostaEsperada": "No, qué va. Dime.",
+            "explicacao": "Não, de jeito nenhum. Diga.",
+            "id": "es-036-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -219,6 +219,25 @@
             "id": "es-036-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «À noite sim, me serve. Onde combinamos?»",
+            "opcoes": [
+              "sí",
+              "quedamos?",
+              "la",
+              "noche",
+              "va",
+              "Por",
+              "¿Dónde",
+              "me",
+              "bien."
+            ],
+            "gabarito": "Por la noche sí me va bien. ¿Dónde quedamos?",
+            "explicacao": "Escreva: Por la noche sí me va bien. ¿Dónde quedamos?",
+            "id": "es-036-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Dígale que he ___ . (telefonado)",
             "opcoes": [
@@ -229,27 +248,6 @@
             "gabarito": "llamado",
             "explicacao": "Pretérito perfecto: «he llamado».",
             "id": "es-036-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E à noite? Podemos combinar às nove e meia.»",
-            "opcoes": [
-              "a",
-              "quedar",
-              "y",
-              "nueve",
-              "por",
-              "la",
-              "las",
-              "noche?",
-              "media.",
-              "Podemos",
-              "¿Y"
-            ],
-            "gabarito": "¿Y por la noche? Podemos quedar a las nueve y media.",
-            "explicacao": "Escreva: ¿Y por la noche? Podemos quedar a las nueve y media.",
-            "id": "es-036-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -276,15 +274,6 @@
             "id": "es-036-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Y por la noche? Podemos quedar a las nueve y media.",
-            "respostaEsperada": "¿Y por la noche? Podemos quedar a las nueve y media.",
-            "explicacao": "E à noite? Podemos combinar às nove e meia.",
-            "id": "es-036-x06",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «¿Dónde quedamos el sábado?»",
             "opcoes": [
@@ -296,6 +285,15 @@
             "gabarito": "¿Dónde quedamos el sábado?",
             "explicacao": "Pergunta de lugar e dia.",
             "id": "es-036-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Por la noche sí me va bien. ¿Dónde quedamos?",
+            "respostaEsperada": "Por la noche sí me va bien. ¿Dónde quedamos?",
+            "explicacao": "À noite sim, me serve. Onde combinamos?",
+            "id": "es-036-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -312,29 +310,19 @@
             "id": "es-036-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Delante del cine, en la puerta principal.",
+            "respostaEsperada": "Delante del cine, en la puerta principal.",
+            "explicacao": "Na frente do cinema, na porta principal.",
+            "id": "es-036-r03",
+            "complemento": true
+          },
+          {
             "tipo": "producao",
             "enunciado": "Escreva em espanhol: Oi, aqui é a Ana. Você topa ir ao cinema no sábado? Combinamos às nove.",
             "respostaEsperada": "Hola, soy Ana. ¿Te apetece ir al cine el sábado? Quedamos a las nueve.",
             "id": "es-036-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «À noite sim, me serve. Onde combinamos?»",
-            "opcoes": [
-              "sí",
-              "quedamos?",
-              "la",
-              "noche",
-              "va",
-              "Por",
-              "¿Dónde",
-              "me",
-              "bien."
-            ],
-            "gabarito": "Por la noche sí me va bien. ¿Dónde quedamos?",
-            "explicacao": "Escreva: Por la noche sí me va bien. ¿Dónde quedamos?",
-            "id": "es-036-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -361,6 +349,22 @@
             "id": "es-036-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Perfeito. Então, nos vemos no sábado.»",
+            "opcoes": [
+              "sábado.",
+              "el",
+              "Perfecto.",
+              "nos",
+              "Entonces,",
+              "vemos"
+            ],
+            "gabarito": "Perfecto. Entonces, nos vemos el sábado.",
+            "explicacao": "Escreva: Perfecto. Entonces, nos vemos el sábado.",
+            "id": "es-036-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quedamos ___ las nueve en la plaza.",
             "opcoes": [
@@ -371,15 +375,6 @@
             "gabarito": "a",
             "explicacao": "A hora leva «a las».",
             "id": "es-036-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Por la noche sí me va bien. ¿Dónde quedamos?",
-            "respostaEsperada": "Por la noche sí me va bien. ¿Dónde quedamos?",
-            "explicacao": "À noite sim, me serve. Onde combinamos?",
-            "id": "es-036-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -406,6 +401,15 @@
             "id": "es-036-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Vale. Y si llego tarde, te escribo un mensaje.",
+            "respostaEsperada": "Vale. Y si llego tarde, te escribo un mensaje.",
+            "explicacao": "Combinado. E se eu chegar tarde, escrevo uma mensagem para você.",
+            "id": "es-036-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é uma forma de aceitar um convite?",
             "opcoes": [
@@ -418,20 +422,12 @@
             "id": "es-036-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Na frente do cinema, na porta principal.»",
-            "opcoes": [
-              "puerta",
-              "la",
-              "en",
-              "Delante",
-              "del",
-              "principal.",
-              "cine,"
-            ],
-            "gabarito": "Delante del cine, en la puerta principal.",
-            "explicacao": "Escreva: Delante del cine, en la puerta principal.",
-            "id": "es-036-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Perfecto. Entonces, nos vemos el sábado.",
+            "respostaEsperada": "Perfecto. Entonces, nos vemos el sábado.",
+            "explicacao": "Perfeito. Então, nos vemos no sábado.",
+            "id": "es-036-x06",
             "complemento": true
           },
           {
@@ -461,15 +457,6 @@
             "gabarito": "¿Te apetece ir al cine el sábado?",
             "explicacao": "«Te apetece» + infinitivo.",
             "id": "es-036-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Delante del cine, en la puerta principal.",
-            "respostaEsperada": "Delante del cine, en la puerta principal.",
-            "explicacao": "Na frente do cinema, na porta principal.",
-            "id": "es-036-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

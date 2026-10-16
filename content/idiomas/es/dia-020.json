@@ -63,22 +63,6 @@
             "id": "es-005-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Pablo, há lojas no seu bairro?»",
-            "opcoes": [
-              "en",
-              "barrio?",
-              "tiendas",
-              "¿hay",
-              "tu",
-              "Pablo,"
-            ],
-            "gabarito": "Pablo, ¿hay tiendas en tu barrio?",
-            "explicacao": "Escreva: Pablo, ¿hay tiendas en tu barrio?",
-            "id": "es-005-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "La leche es blanca",
@@ -95,12 +79,17 @@
             "id": "es-005-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Pablo, ¿hay tiendas en tu barrio?",
-            "respostaEsperada": "Pablo, ¿hay tiendas en tu barrio?",
-            "explicacao": "Pablo, há lojas no seu bairro?",
-            "id": "es-005-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «E há um banco?»",
+            "opcoes": [
+              "¿Y",
+              "banco?",
+              "un",
+              "hay"
+            ],
+            "gabarito": "¿Y hay un banco?",
+            "explicacao": "Escreva: ¿Y hay un banco?",
+            "id": "es-005-x01",
             "complemento": true
           },
           {
@@ -110,6 +99,15 @@
             "respostaEsperada": "Los lápices son nuevos",
             "explicacao": "Escreva: Los lápices son nuevos.",
             "id": "es-005-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Pablo, ¿hay tiendas en tu barrio?",
+            "respostaEsperada": "Pablo, ¿hay tiendas en tu barrio?",
+            "explicacao": "Pablo, há lojas no seu bairro?",
+            "id": "es-005-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -136,24 +134,6 @@
             "id": "es-005-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, há muitas lojas e um parque grande.»",
-            "opcoes": [
-              "hay",
-              "parque",
-              "tiendas",
-              "Sí,",
-              "grande.",
-              "muchas",
-              "un",
-              "y"
-            ],
-            "gabarito": "Sí, hay muchas tiendas y un parque grande.",
-            "explicacao": "Escreva: Sí, hay muchas tiendas y un parque grande.",
-            "id": "es-005-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o plural de «canción»?",
             "opcoes": [
@@ -164,6 +144,15 @@
             "gabarito": "canciones",
             "explicacao": "O til some, porque a sílaba forte continua a mesma.",
             "id": "es-005-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "¿Y hay un banco?",
+            "respostaEsperada": "¿Y hay un banco?",
+            "explicacao": "E há um banco?",
+            "id": "es-005-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -190,15 +179,6 @@
             "id": "es-005-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sí, hay muchas tiendas y un parque grande.",
-            "respostaEsperada": "Sí, hay muchas tiendas y un parque grande.",
-            "explicacao": "Sim, há muitas lojas e um parque grande.",
-            "id": "es-005-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual significa «comprido»?",
             "opcoes": [
@@ -209,6 +189,15 @@
             "gabarito": "largo",
             "explicacao": "«Largo» é comprido; «ancho» é largo.",
             "id": "es-005-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sí, hay muchas tiendas y un parque grande.",
+            "respostaEsperada": "Sí, hay muchas tiendas y un parque grande.",
+            "explicacao": "Sim, há muitas lojas e um parque grande.",
+            "id": "es-005-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -223,6 +212,24 @@
             "id": "es-005-e13"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Não, não há. Há uma no centro.»",
+            "opcoes": [
+              "No,",
+              "hay.",
+              "en",
+              "el",
+              "una",
+              "no",
+              "Hay",
+              "centro."
+            ],
+            "gabarito": "No, no hay. Hay una en el centro.",
+            "explicacao": "Escreva: No, no hay. Hay una en el centro.",
+            "id": "es-005-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Hablo ___ profesor. (do)",
             "opcoes": [
@@ -233,20 +240,6 @@
             "gabarito": "del",
             "explicacao": "De + el se contrai em «del».",
             "id": "es-005-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E há um banco?»",
-            "opcoes": [
-              "¿Y",
-              "banco?",
-              "un",
-              "hay"
-            ],
-            "gabarito": "¿Y hay un banco?",
-            "explicacao": "Escreva: ¿Y hay un banco?",
-            "id": "es-005-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -273,15 +266,6 @@
             "id": "es-005-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Y hay un banco?",
-            "respostaEsperada": "¿Y hay un banco?",
-            "explicacao": "E há um banco?",
-            "id": "es-005-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Los ___ son jóvenes. (amigos)",
             "opcoes": [
@@ -292,6 +276,15 @@
             "gabarito": "amigos",
             "explicacao": "O plural masculino cobre o grupo.",
             "id": "es-005-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "No, no hay. Hay una en el centro.",
+            "respostaEsperada": "No, no hay. Hay una en el centro.",
+            "explicacao": "Não, não há. Há uma no centro.",
+            "id": "es-005-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -309,6 +302,15 @@
             "id": "es-005-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sí, hay dos bancos en la plaza.",
+            "respostaEsperada": "Sí, hay dos bancos en la plaza.",
+            "explicacao": "Sim, há dois bancos na praça.",
+            "id": "es-005-r03",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «¿Hay un banco cerca?»",
             "opcoes": [
@@ -320,23 +322,6 @@
             "gabarito": "¿Hay un banco cerca?",
             "explicacao": "A pergunta com hay mantém a ordem.",
             "id": "es-005-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, há dois bancos na praça.»",
-            "opcoes": [
-              "plaza.",
-              "en",
-              "la",
-              "bancos",
-              "hay",
-              "Sí,",
-              "dos"
-            ],
-            "gabarito": "Sí, hay dos bancos en la plaza.",
-            "explicacao": "Escreva: Sí, hay dos bancos en la plaza.",
-            "id": "es-005-x07",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -357,6 +342,21 @@
             "id": "es-005-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «los libros»?",
+            "audio": "los libros",
+            "opcoes": [
+              "a mão",
+              "os livros",
+              "o dia",
+              "os lápis"
+            ],
+            "gabarito": "os livros",
+            "explicacao": "«los libros» = os livros.",
+            "id": "es-005-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Hay dos ___ en la plaza. (bancos)",
             "opcoes": [
@@ -367,15 +367,6 @@
             "gabarito": "bancos",
             "explicacao": "Depois de «dos», o substantivo vai ao plural: «-s» depois de vogal.",
             "id": "es-005-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sí, hay dos bancos en la plaza.",
-            "respostaEsperada": "Sí, hay dos bancos en la plaza.",
-            "explicacao": "Sim, há dois bancos na praça.",
-            "id": "es-005-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -402,6 +393,15 @@
             "id": "es-005-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "¿Hay una oficina de correos?",
+            "respostaEsperada": "¿Hay una oficina de correos?",
+            "explicacao": "Há uma agência dos correios?",
+            "id": "es-005-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o artigo de «ciudad»?",
             "opcoes": [
@@ -414,18 +414,18 @@
             "id": "es-005-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Há uma agência dos correios?»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «el día»?",
+            "audio": "el día",
             "opcoes": [
-              "correos?",
-              "¿Hay",
-              "oficina",
-              "de",
-              "una"
+              "o parque",
+              "a loja",
+              "o dia",
+              "o banco"
             ],
-            "gabarito": "¿Hay una oficina de correos?",
-            "explicacao": "Escreva: ¿Hay una oficina de correos?",
-            "id": "es-005-x09",
+            "gabarito": "o dia",
+            "explicacao": "«el día» = o dia.",
+            "id": "es-005-x06",
             "complemento": true
           },
           {
@@ -451,15 +451,6 @@
             "gabarito": "No hay banco aquí.",
             "explicacao": "A negação é «no hay», com «no» antes do verbo.",
             "id": "es-005-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "¿Hay una oficina de correos?",
-            "respostaEsperada": "¿Hay una oficina de correos?",
-            "explicacao": "Há uma agência dos correios?",
-            "id": "es-005-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

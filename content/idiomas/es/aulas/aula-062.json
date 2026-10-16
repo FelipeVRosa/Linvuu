@@ -330,17 +330,21 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa noite. Em que posso ajudá-lo?»",
+              "enunciado": "Monte a frase: «Claro. Envio assim que terminar o registro.»",
               "opcoes": [
-                "ayudarle?",
-                "Buenas",
-                "puedo",
-                "¿En",
-                "noches.",
-                "qué"
+                "Por",
+                "enviaré",
+                "supuesto.",
+                "Se",
+                "en",
+                "registro.",
+                "lo",
+                "termine",
+                "cuanto",
+                "el"
               ],
-              "gabarito": "Buenas noches. ¿En qué puedo ayudarle?",
-              "explicacao": "Escreva: Buenas noches. ¿En qué puedo ayudarle?",
+              "gabarito": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
+              "explicacao": "Escreva: Por supuesto. Se lo enviaré en cuanto termine el registro.",
               "id": "es-062-x01",
               "complemento": true
             },
@@ -370,15 +374,6 @@
               "id": "es-062-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenas noches. ¿En qué puedo ayudarle?",
-              "respostaEsperada": "Buenas noches. ¿En qué puedo ayudarle?",
-              "explicacao": "Boa noite. Em que posso ajudá-lo?",
-              "id": "es-062-x02",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Leia: «Cuando terminara de trabajar, apagaría el ordenador y saldría a caminar.» O que ela decidiu fazer ao terminar?",
               "opcoes": [
@@ -389,6 +384,15 @@
               "gabarito": "Desligar o computador e sair para caminhar",
               "explicacao": "Leitura: «apagar el ordenador» e «salir a caminar».",
               "id": "es-062-e06"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
+              "respostaEsperada": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
+              "explicacao": "Claro. Envio assim que terminar o registro.",
+              "id": "es-062-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -415,26 +419,6 @@
               "id": "es-062-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Claro. Envio assim que terminar o registro.»",
-              "opcoes": [
-                "Por",
-                "enviaré",
-                "supuesto.",
-                "Se",
-                "en",
-                "registro.",
-                "lo",
-                "termine",
-                "cuanto",
-                "el"
-              ],
-              "gabarito": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
-              "explicacao": "Escreva: Por supuesto. Se lo enviaré en cuanto termine el registro.",
-              "id": "es-062-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -445,6 +429,27 @@
               "gabarito": "Cuando llegamos, la película ya había empezado.",
               "explicacao": "Pluscuamperfecto: a ação é anterior a outro momento passado.",
               "id": "es-062-e09"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Claro. É servido das sete às dez, no térreo.»",
+              "opcoes": [
+                "la",
+                "planta",
+                "sirve",
+                "baja.",
+                "de",
+                "diez,",
+                "Se",
+                "en",
+                "Claro.",
+                "a",
+                "siete"
+              ],
+              "gabarito": "Claro. Se sirve de siete a diez, en la planta baja.",
+              "explicacao": "Escreva: Claro. Se sirve de siete a diez, en la planta baja.",
+              "id": "es-062-x03",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -471,15 +476,6 @@
               "id": "es-062-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
-              "respostaEsperada": "Por supuesto. Se lo enviaré en cuanto termine el registro.",
-              "explicacao": "Claro. Envio assim que terminar o registro.",
-              "id": "es-062-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Ele disse: Irei amanhã» no discurso indireto?",
               "opcoes": [
@@ -490,6 +486,15 @@
               "gabarito": "Dijo que iría al día siguiente.",
               "explicacao": "Verbo principal no passado: futuro vira condicional, e «mañana» vira «al día siguiente».",
               "id": "es-062-e12"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Claro. Se sirve de siete a diez, en la planta baja.",
+              "respostaEsperada": "Claro. Se sirve de siete a diez, en la planta baja.",
+              "explicacao": "Claro. É servido das sete às dez, no térreo.",
+              "id": "es-062-x04",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -516,27 +521,6 @@
               "id": "es-062-e14"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Claro. É servido das sete às dez, no térreo.»",
-              "opcoes": [
-                "la",
-                "planta",
-                "sirve",
-                "baja.",
-                "de",
-                "diez,",
-                "Se",
-                "en",
-                "Claro.",
-                "a",
-                "siete"
-              ],
-              "gabarito": "Claro. Se sirve de siete a diez, en la planta baja.",
-              "explicacao": "Escreva: Claro. Se sirve de siete a diez, en la planta baja.",
-              "id": "es-062-x05",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -549,6 +533,35 @@
               "id": "es-062-e15"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenas noches. ¿En qué puedo ayudarle?",
+              "respostaEsperada": "Buenas noches. ¿En qué puedo ayudarle?",
+              "explicacao": "Boa noite. Em que posso ajudá-lo?",
+              "id": "es-062-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Si lo hubiera sabido, habría dado el paso antes",
+              "opcoes": [
+                "habría",
+                "Si",
+                "paso",
+                "lo",
+                "sabido,",
+                "dado",
+                "hubiera",
+                "antes",
+                "el"
+              ],
+              "gabarito": "Si lo hubiera sabido, habría dado el paso antes",
+              "explicacao": "Escreva: Si lo hubiera sabido, habría dado el paso antes",
+              "id": "es-062-x05",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o sentido de «embarazada»?",
               "opcoes": [
@@ -559,15 +572,6 @@
               "gabarito": "grávida",
               "explicacao": "Falso amigo: «embarazada» é grávida; constrangida é «avergonzada».",
               "id": "es-062-e16"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Claro. Se sirve de siete a diez, en la planta baja.",
-              "respostaEsperada": "Claro. Se sirve de siete a diez, en la planta baja.",
-              "explicacao": "Claro. É servido das sete às dez, no térreo.",
-              "id": "es-062-x06",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -594,6 +598,23 @@
               "id": "es-062-e18"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Quisiera que me enviaran un correo",
+              "opcoes": [
+                "correo",
+                "me",
+                "un",
+                "Quisiera",
+                "enviaran",
+                "que"
+              ],
+              "gabarito": "Quisiera que me enviaran un correo",
+              "explicacao": "Escreva: Quisiera que me enviaran un correo",
+              "id": "es-062-x06",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Cuando ___ a casa mañana, te llamo. (llegar)",
               "opcoes": [
@@ -604,26 +625,6 @@
               "gabarito": "llegue",
               "explicacao": "«Cuando» + futuro pede subjuntivo.",
               "id": "es-062-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Si lo hubiera sabido, habría dado el paso antes",
-              "opcoes": [
-                "habría",
-                "Si",
-                "paso",
-                "lo",
-                "sabido,",
-                "dado",
-                "hubiera",
-                "antes",
-                "el"
-              ],
-              "gabarito": "Si lo hubiera sabido, habría dado el paso antes",
-              "explicacao": "Escreva: Si lo hubiera sabido, habría dado el paso antes",
-              "id": "es-062-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -650,6 +651,25 @@
               "id": "es-062-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Me dijo que llegaría antes de las ocho",
+              "opcoes": [
+                "dijo",
+                "antes",
+                "las",
+                "que",
+                "de",
+                "ocho",
+                "Me",
+                "llegaría"
+              ],
+              "gabarito": "Me dijo que llegaría antes de las ocho",
+              "explicacao": "Escreva: Me dijo que llegaría antes de las ocho",
+              "id": "es-062-x07",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Si ___ sabido, habría venido. (haber)",
               "opcoes": [
@@ -660,23 +680,6 @@
               "gabarito": "hubiera",
               "explicacao": "Pluscuamperfecto de subjuntivo depois de «si».",
               "id": "es-062-e22"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Quisiera que me enviaran un correo",
-              "opcoes": [
-                "correo",
-                "me",
-                "un",
-                "Quisiera",
-                "enviaran",
-                "que"
-              ],
-              "gabarito": "Quisiera que me enviaran un correo",
-              "explicacao": "Escreva: Quisiera que me enviaran un correo",
-              "id": "es-062-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -704,6 +707,24 @@
             },
             {
               "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "El contrato se firmó la semana pasada",
+              "opcoes": [
+                "pasada",
+                "firmó",
+                "se",
+                "contrato",
+                "semana",
+                "la",
+                "El"
+              ],
+              "gabarito": "El contrato se firmó la semana pasada",
+              "explicacao": "Escreva: El contrato se firmó la semana pasada",
+              "id": "es-062-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Si hubiera sabido, habría venido.»",
               "opcoes": [
                 "Si",
@@ -715,25 +736,6 @@
               "gabarito": "Si hubiera sabido, habría venido.",
               "explicacao": "Si + pluscuamperfecto de subjuntivo, condicional compuesto.",
               "id": "es-062-e25"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Me dijo que llegaría antes de las ocho",
-              "opcoes": [
-                "dijo",
-                "antes",
-                "las",
-                "que",
-                "de",
-                "ocho",
-                "Me",
-                "llegaría"
-              ],
-              "gabarito": "Me dijo que llegaría antes de las ocho",
-              "explicacao": "Escreva: Me dijo que llegaría antes de las ocho",
-              "id": "es-062-x09",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -760,19 +762,15 @@
             {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
-              "audio": "El contrato se firmó la semana pasada",
+              "audio": "Cuando llegues, avísame",
               "opcoes": [
-                "pasada",
-                "firmó",
-                "se",
-                "contrato",
-                "semana",
-                "la",
-                "El"
+                "avísame",
+                "llegues,",
+                "Cuando"
               ],
-              "gabarito": "El contrato se firmó la semana pasada",
-              "explicacao": "Escreva: El contrato se firmó la semana pasada",
-              "id": "es-062-x10",
+              "gabarito": "Cuando llegues, avísame",
+              "explicacao": "Escreva: Cuando llegues, avísame",
+              "id": "es-062-x09",
               "complemento": true
             },
             {

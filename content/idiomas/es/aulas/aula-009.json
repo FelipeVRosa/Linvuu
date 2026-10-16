@@ -572,24 +572,6 @@
               "id": "es-009-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Bom dia. A que horas abre a biblioteca?»",
-              "opcoes": [
-                "días.",
-                "abre",
-                "biblioteca?",
-                "¿A",
-                "hora",
-                "la",
-                "Buenos",
-                "qué"
-              ],
-              "gabarito": "Buenos días. ¿A qué hora abre la biblioteca?",
-              "explicacao": "Escreva: Buenos días. ¿A qué hora abre la biblioteca?",
-              "id": "es-009-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Hoy es 12 de octubre",
@@ -606,12 +588,24 @@
               "id": "es-009-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenos días. ¿A qué hora abre la biblioteca?",
-              "respostaEsperada": "Buenos días. ¿A qué hora abre la biblioteca?",
-              "explicacao": "Bom dia. A que horas abre a biblioteca?",
-              "id": "es-009-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Fecha às oito da noite, de segunda a sexta.»",
+              "opcoes": [
+                "viernes.",
+                "de",
+                "a",
+                "las",
+                "Cierra",
+                "tarde,",
+                "de",
+                "ocho",
+                "lunes",
+                "a",
+                "la"
+              ],
+              "gabarito": "Cierra a las ocho de la tarde, de lunes a viernes.",
+              "explicacao": "Escreva: Cierra a las ocho de la tarde, de lunes a viernes.",
+              "id": "es-009-x01",
               "complemento": true
             },
             {
@@ -621,6 +615,15 @@
               "respostaEsperada": "Cierra a las ocho",
               "explicacao": "Escreva: Cierra a las ocho.",
               "id": "es-009-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenos días. ¿A qué hora abre la biblioteca?",
+              "respostaEsperada": "Buenos días. ¿A qué hora abre la biblioteca?",
+              "explicacao": "Bom dia. A que horas abre a biblioteca?",
+              "id": "es-009-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -647,24 +650,6 @@
               "id": "es-009-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Abre às nove da manhã, senhora.»",
-              "opcoes": [
-                "la",
-                "de",
-                "nueve",
-                "señora.",
-                "las",
-                "a",
-                "mañana,",
-                "Abre"
-              ],
-              "gabarito": "Abre a las nueve de la mañana, señora.",
-              "explicacao": "Escreva: Abre a las nueve de la mañana, señora.",
-              "id": "es-009-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é a data correta?",
               "opcoes": [
@@ -675,6 +660,15 @@
               "gabarito": "5 de mayo",
               "explicacao": "Dia + de + mês.",
               "id": "es-009-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Cierra a las ocho de la tarde, de lunes a viernes.",
+              "respostaEsperada": "Cierra a las ocho de la tarde, de lunes a viernes.",
+              "explicacao": "Fecha às oito da noite, de segunda a sexta.",
+              "id": "es-009-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -701,15 +695,6 @@
               "id": "es-009-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Abre a las nueve de la mañana, señora.",
-              "respostaEsperada": "Abre a las nueve de la mañana, señora.",
-              "explicacao": "Abre às nove da manhã, senhora.",
-              "id": "es-009-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «amanhã de manhã»?",
               "opcoes": [
@@ -720,6 +705,15 @@
               "gabarito": "mañana por la mañana",
               "explicacao": "«Por la mañana» sem hora exata.",
               "id": "es-009-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Abre a las nueve de la mañana, señora.",
+              "respostaEsperada": "Abre a las nueve de la mañana, señora.",
+              "explicacao": "Abre às nove da manhã, senhora.",
+              "id": "es-009-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -734,6 +728,27 @@
               "id": "es-009-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Aos sábados abre das dez às duas. Aos domingos está fechada.»",
+              "opcoes": [
+                "diez",
+                "abre",
+                "Los",
+                "domingos",
+                "cerrada.",
+                "dos.",
+                "está",
+                "de",
+                "sábados",
+                "a",
+                "Los"
+              ],
+              "gabarito": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+              "explicacao": "Escreva: Los sábados abre de diez a dos. Los domingos está cerrada.",
+              "id": "es-009-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "La tienda abre de lunes ___ viernes. (a)",
               "opcoes": [
@@ -744,22 +759,6 @@
               "gabarito": "a",
               "explicacao": "«De… a…» para dias.",
               "id": "es-009-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E até que horas fica aberta?»",
-              "opcoes": [
-                "hora",
-                "está",
-                "hasta",
-                "qué",
-                "¿Y",
-                "abierta?"
-              ],
-              "gabarito": "¿Y hasta qué hora está abierta?",
-              "explicacao": "Escreva: ¿Y hasta qué hora está abierta?",
-              "id": "es-009-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -786,15 +785,6 @@
               "id": "es-009-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Y hasta qué hora está abierta?",
-              "respostaEsperada": "¿Y hasta qué hora está abierta?",
-              "explicacao": "E até que horas fica aberta?",
-              "id": "es-009-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "La biblioteca ___ a las ocho. (fecha)",
               "opcoes": [
@@ -805,6 +795,15 @@
               "gabarito": "cierra",
               "explicacao": "«Cerrar» tem «ie» em «ella».",
               "id": "es-009-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+              "respostaEsperada": "Los sábados abre de diez a dos. Los domingos está cerrada.",
+              "explicacao": "Aos sábados abre das dez às duas. Aos domingos está fechada.",
+              "id": "es-009-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -822,6 +821,15 @@
               "id": "es-009-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Y hasta qué hora está abierta?",
+              "respostaEsperada": "¿Y hasta qué hora está abierta?",
+              "explicacao": "E até que horas fica aberta?",
+              "id": "es-009-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «¿Qué hora es?»",
               "opcoes": [
@@ -832,27 +840,6 @@
               "gabarito": "¿Qué hora es?",
               "explicacao": "Pergunta fixa da hora.",
               "id": "es-009-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Fecha às oito da noite, de segunda a sexta.»",
-              "opcoes": [
-                "viernes.",
-                "de",
-                "a",
-                "las",
-                "Cierra",
-                "tarde,",
-                "de",
-                "ocho",
-                "lunes",
-                "a",
-                "la"
-              ],
-              "gabarito": "Cierra a las ocho de la tarde, de lunes a viernes.",
-              "explicacao": "Escreva: Cierra a las ocho de la tarde, de lunes a viernes.",
-              "id": "es-009-x07",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -873,6 +860,21 @@
               "id": "es-009-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Muito obrigada. Até sábado.»",
+              "opcoes": [
+                "sábado.",
+                "Hasta",
+                "gracias.",
+                "Muchas",
+                "el"
+              ],
+              "gabarito": "Muchas gracias. Hasta el sábado.",
+              "explicacao": "Escreva: Muchas gracias. Hasta el sábado.",
+              "id": "es-009-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Son las tres ___ cuarto. (2h45)",
               "opcoes": [
@@ -883,15 +885,6 @@
               "gabarito": "menos",
               "explicacao": "Depois da meia hora, diz-se a hora seguinte «menos» os minutos que faltam.",
               "id": "es-009-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Cierra a las ocho de la tarde, de lunes a viernes.",
-              "respostaEsperada": "Cierra a las ocho de la tarde, de lunes a viernes.",
-              "explicacao": "Fecha às oito da noite, de segunda a sexta.",
-              "id": "es-009-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -918,6 +911,15 @@
               "id": "es-009-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Y los sábados?",
+              "respostaEsperada": "¿Y los sábados?",
+              "explicacao": "E aos sábados?",
+              "id": "es-009-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o plural de «sábado»?",
               "opcoes": [
@@ -930,16 +932,12 @@
               "id": "es-009-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E aos sábados?»",
-              "opcoes": [
-                "los",
-                "sábados?",
-                "¿Y"
-              ],
-              "gabarito": "¿Y los sábados?",
-              "explicacao": "Escreva: ¿Y los sábados?",
-              "id": "es-009-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Muchas gracias. Hasta el sábado.",
+              "respostaEsperada": "Muchas gracias. Hasta el sábado.",
+              "explicacao": "Muito obrigada. Até sábado.",
+              "id": "es-009-x06",
               "complemento": true
             },
             {
@@ -965,15 +963,6 @@
               "gabarito": "cierran",
               "explicacao": "O «e» do radical vira «ie» em todas as pessoas, menos «nosotros» e «vosotros».",
               "id": "es-009-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Y los sábados?",
-              "respostaEsperada": "¿Y los sábados?",
-              "explicacao": "E aos sábados?",
-              "id": "es-009-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

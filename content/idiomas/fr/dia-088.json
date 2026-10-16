@@ -63,23 +63,6 @@
             "id": "fr-022-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O que você fará neste verão?»",
-            "opcoes": [
-              "cet",
-              "?",
-              "feras",
-              "tu",
-              "que",
-              "été",
-              "Qu'est-ce"
-            ],
-            "gabarito": "Qu'est-ce que tu feras cet été ?",
-            "explicacao": "Escreva: Qu'est-ce que tu feras cet été ?",
-            "id": "fr-022-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Je voyagerai l'année prochaine",
@@ -96,12 +79,24 @@
             "id": "fr-022-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Qu'est-ce que tu feras cet été ?",
-            "respostaEsperada": "Qu'est-ce que tu feras cet été ?",
-            "explicacao": "O que você fará neste verão?",
-            "id": "fr-022-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Irei à Itália com minha família. Visitaremos Roma e Florença.»",
+            "opcoes": [
+              "visiterons",
+              "Italie",
+              "et",
+              "en",
+              "famille.",
+              "avec",
+              "Nous",
+              "Florence.",
+              "ma",
+              "Rome",
+              "J'irai"
+            ],
+            "gabarito": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
+            "explicacao": "Escreva: J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
+            "id": "fr-022-x01",
             "complemento": true
           },
           {
@@ -111,6 +106,15 @@
             "respostaEsperada": "Il fera beau demain",
             "explicacao": "Escreva: Il fera beau demain.",
             "id": "fr-022-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Qu'est-ce que tu feras cet été ?",
+            "respostaEsperada": "Qu'est-ce que tu feras cet été ?",
+            "explicacao": "O que você fará neste verão?",
+            "id": "fr-022-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -137,27 +141,6 @@
             "id": "fr-022-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Irei à Itália com minha família. Visitaremos Roma e Florença.»",
-            "opcoes": [
-              "visiterons",
-              "Italie",
-              "et",
-              "en",
-              "famille.",
-              "avec",
-              "Nous",
-              "Florence.",
-              "ma",
-              "Rome",
-              "J'irai"
-            ],
-            "gabarito": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
-            "explicacao": "Escreva: J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
-            "id": "fr-022-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -168,6 +151,15 @@
             "gabarito": "Si tu viens, j'irai.",
             "explicacao": "Depois de «si»: presente.",
             "id": "fr-022-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
+            "respostaEsperada": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
+            "explicacao": "Irei à Itália com minha família. Visitaremos Roma e Florença.",
+            "id": "fr-022-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -194,15 +186,6 @@
             "id": "fr-022-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
-            "respostaEsperada": "J'irai en Italie avec ma famille. Nous visiterons Rome et Florence.",
-            "explicacao": "Irei à Itália com minha família. Visitaremos Roma e Florença.",
-            "id": "fr-022-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Elle ___ médecin. (être)",
             "opcoes": [
@@ -213,6 +196,15 @@
             "gabarito": "sera",
             "explicacao": "Radical «ser-».",
             "id": "fr-022-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Super ! Quand partirez-vous ?",
+            "respostaEsperada": "Super ! Quand partirez-vous ?",
+            "explicacao": "Ótimo! Quando partirão?",
+            "id": "fr-022-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -227,6 +219,21 @@
             "id": "fr-022-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le projet»?",
+            "audio": "le projet",
+            "opcoes": [
+              "ter sucesso",
+              "daqui a dois dias",
+              "o projeto",
+              "amanhã"
+            ],
+            "gabarito": "o projeto",
+            "explicacao": "«le projet» = o projeto.",
+            "id": "fr-022-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quand il ___ , nous mangerons. (arriver)",
             "opcoes": [
@@ -237,21 +244,6 @@
             "gabarito": "arrivera",
             "explicacao": "Depois de «quand».",
             "id": "fr-022-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ótimo! Quando partirão?»",
-            "opcoes": [
-              "Quand",
-              "partirez-vous",
-              "Super",
-              "!",
-              "?"
-            ],
-            "gabarito": "Super ! Quand partirez-vous ?",
-            "explicacao": "Escreva: Super ! Quand partirez-vous ?",
-            "id": "fr-022-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -285,19 +277,25 @@
             "id": "fr-022-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Super ! Quand partirez-vous ?",
-            "respostaEsperada": "Super ! Quand partirez-vous ?",
-            "explicacao": "Ótimo! Quando partirão?",
-            "id": "fr-022-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Amanhã vai fazer sol. Quando eu chegar, eu te ligo. Se você vier, nós iremos ao cinema.",
             "respostaEsperada": "Demain, il fera du soleil. Quand j'arriverai, je t'appellerai. Si tu viens, nous irons au cinéma.",
             "id": "fr-022-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «espérer»?",
+            "audio": "espérer",
+            "opcoes": [
+              "esperar",
+              "o sonho",
+              "mais tarde",
+              "terminar"
+            ],
+            "gabarito": "esperar",
+            "explicacao": "«espérer» = esperar.",
+            "id": "fr-022-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -312,6 +310,15 @@
             "id": "fr-022-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Si tu veux, tu pourras venir avec nous !",
+            "respostaEsperada": "Si tu veux, tu pourras venir avec nous !",
+            "explicacao": "Se quiser, poderá vir conosco!",
+            "id": "fr-022-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Tu ___ ce travail demain. (faire)",
             "opcoes": [
@@ -322,25 +329,6 @@
             "gabarito": "feras",
             "explicacao": "Radical «fer-» + «-as».",
             "id": "fr-022-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Se quiser, poderá vir conosco!»",
-            "opcoes": [
-              "avec",
-              "nous",
-              "tu",
-              "pourras",
-              "venir",
-              "veux,",
-              "Si",
-              "!",
-              "tu"
-            ],
-            "gabarito": "Si tu veux, tu pourras venir avec nous !",
-            "explicacao": "Escreva: Si tu veux, tu pourras venir avec nous !",
-            "id": "fr-022-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -367,6 +355,21 @@
             "id": "fr-022-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le voyage»?",
+            "audio": "le voyage",
+            "opcoes": [
+              "ter sucesso",
+              "semana que vem",
+              "o sonho",
+              "a viagem"
+            ],
+            "gabarito": "a viagem",
+            "explicacao": "«le voyage» = a viagem.",
+            "id": "fr-022-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Vous ___ le directeur demain. (voir)",
             "opcoes": [
@@ -377,15 +380,6 @@
             "gabarito": "verrez",
             "explicacao": "Radical irregular de «voir»: «verr-».",
             "id": "fr-022-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Si tu veux, tu pourras venir avec nous !",
-            "respostaEsperada": "Si tu veux, tu pourras venir avec nous !",
-            "explicacao": "Se quiser, poderá vir conosco!",
-            "id": "fr-022-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -412,6 +406,15 @@
             "id": "fr-022-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "la semaine prochaine",
+            "respostaEsperada": "la semaine prochaine",
+            "explicacao": "semana que vem",
+            "id": "fr-022-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é o futuro de «venir» com «je»?",
             "opcoes": [
@@ -425,17 +428,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «le projet»?",
-            "audio": "le projet",
+            "enunciado": "O que significa «l'année prochaine»?",
+            "audio": "l'année prochaine",
             "opcoes": [
-              "ter sucesso",
-              "daqui a dois dias",
+              "ano que vem",
               "o projeto",
-              "amanhã"
+              "amanhã",
+              "encontrar"
             ],
-            "gabarito": "o projeto",
-            "explicacao": "«le projet» = o projeto.",
-            "id": "fr-022-x09",
+            "gabarito": "ano que vem",
+            "explicacao": "«l'année prochaine» = ano que vem.",
+            "id": "fr-022-x06",
             "complemento": true
           },
           {
@@ -464,21 +467,6 @@
             "gabarito": "Nous irons à Rome en juillet.",
             "explicacao": "Radical de «aller» no futuro: «ir-».",
             "id": "fr-022-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «espérer»?",
-            "audio": "espérer",
-            "opcoes": [
-              "esperar",
-              "o sonho",
-              "mais tarde",
-              "terminar"
-            ],
-            "gabarito": "esperar",
-            "explicacao": "«espérer» = esperar.",
-            "id": "fr-022-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

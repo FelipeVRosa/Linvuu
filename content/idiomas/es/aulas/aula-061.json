@@ -571,6 +571,14 @@
               "id": "es-061-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Nunca he estado en Perú",
+              "respostaEsperada": "Nunca he estado en Perú",
+              "explicacao": "Escreva: Nunca he estado en Perú.",
+              "id": "es-061-e04"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «probablemente»?",
               "audio": "probablemente",
@@ -588,33 +596,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Nunca he estado en Perú",
-              "respostaEsperada": "Nunca he estado en Perú",
-              "explicacao": "Escreva: Nunca he estado en Perú.",
-              "id": "es-061-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Ojalá venga mañana",
               "respostaEsperada": "Ojalá venga mañana",
               "explicacao": "Escreva: Ojalá venga mañana.",
               "id": "es-061-e05"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «esta mañana»?",
-              "audio": "esta mañana",
-              "opcoes": [
-                "já",
-                "esta manhã",
-                "suponho que",
-                "provavelmente"
-              ],
-              "gabarito": "esta manhã",
-              "explicacao": "«esta mañana» = esta manhã.",
-              "id": "es-061-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -650,17 +635,26 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «si tuviera…»?",
-              "audio": "si tuviera…",
+              "enunciado": "O que significa «esta mañana»?",
+              "audio": "esta mañana",
               "opcoes": [
-                "talvez",
-                "há dois anos",
-                "se eu tivesse…",
-                "embora, mesmo que"
+                "já",
+                "esta manhã",
+                "suponho que",
+                "provavelmente"
               ],
-              "gabarito": "se eu tivesse…",
-              "explicacao": "«si tuviera…» = se eu tivesse….",
-              "id": "es-061-x03",
+              "gabarito": "esta manhã",
+              "explicacao": "«esta mañana» = esta manhã.",
+              "id": "es-061-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "hace dos años",
+              "respostaEsperada": "hace dos años",
+              "explicacao": "há dois anos",
+              "id": "es-061-r01",
               "complemento": true
             },
             {
@@ -701,17 +695,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «es posible que»?",
-              "audio": "es posible que",
+              "enunciado": "O que significa «si tuviera…»?",
+              "audio": "si tuviera…",
               "opcoes": [
-                "suponho que",
-                "provavelmente",
-                "é possível que",
-                "provavelmente, com certeza"
+                "talvez",
+                "há dois anos",
+                "se eu tivesse…",
+                "embora, mesmo que"
               ],
-              "gabarito": "é possível que",
-              "explicacao": "«es posible que» = é possível que.",
-              "id": "es-061-x04",
+              "gabarito": "se eu tivesse…",
+              "explicacao": "«si tuviera…» = se eu tivesse….",
+              "id": "es-061-x03",
               "complemento": true
             },
             {
@@ -751,21 +745,6 @@
               "id": "es-061-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «cuando»?",
-              "audio": "cuando",
-              "opcoes": [
-                "enquanto",
-                "de repente",
-                "ainda não",
-                "quando"
-              ],
-              "gabarito": "quando",
-              "explicacao": "«cuando» = quando.",
-              "id": "es-061-x05",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Mientras ___ por la calle, vi a un amigo. (caminar)",
               "opcoes": [
@@ -778,6 +757,30 @@
               "id": "es-061-e15"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "a lo mejor",
+              "respostaEsperada": "a lo mejor",
+              "explicacao": "talvez (com indicativo)",
+              "id": "es-061-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «es posible que»?",
+              "audio": "es posible que",
+              "opcoes": [
+                "suponho que",
+                "provavelmente",
+                "é possível que",
+                "provavelmente, com certeza"
+              ],
+              "gabarito": "é possível que",
+              "explicacao": "«es posible que» = é possível que.",
+              "id": "es-061-x04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Hoy ___ mucho. (trabajar)",
               "opcoes": [
@@ -788,21 +791,6 @@
               "gabarito": "he trabajado",
               "explicacao": "Período ainda não terminado (Espanha): perfecto.",
               "id": "es-061-e16"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «de repente»?",
-              "audio": "de repente",
-              "opcoes": [
-                "se eu tivesse…",
-                "de repente",
-                "talvez",
-                "enquanto"
-              ],
-              "gabarito": "de repente",
-              "explicacao": "«de repente» = de repente.",
-              "id": "es-061-x06",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -841,21 +829,18 @@
               "id": "es-061-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Cuando llegué, el tren ya había salido",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «cuando»?",
+              "audio": "cuando",
               "opcoes": [
-                "el",
-                "tren",
-                "salido",
-                "había",
-                "llegué,",
-                "ya",
-                "Cuando"
+                "enquanto",
+                "de repente",
+                "ainda não",
+                "quando"
               ],
-              "gabarito": "Cuando llegué, el tren ya había salido",
-              "explicacao": "Escreva: Cuando llegué, el tren ya había salido",
-              "id": "es-061-x07",
+              "gabarito": "quando",
+              "explicacao": "«cuando» = quando.",
+              "id": "es-061-x05",
               "complemento": true
             },
             {
@@ -892,21 +877,6 @@
               "id": "es-061-e22"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Si tuviera dinero, viajaría",
-              "opcoes": [
-                "tuviera",
-                "viajaría",
-                "Si",
-                "dinero,"
-              ],
-              "gabarito": "Si tuviera dinero, viajaría",
-              "explicacao": "Escreva: Si tuviera dinero, viajaría",
-              "id": "es-061-x08",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Mientras yo cocinaba, mi padre ___ . (leer)",
               "opcoes": [
@@ -917,6 +887,30 @@
               "gabarito": "leía",
               "explicacao": "Ação simultânea em curso: imperfecto.",
               "id": "es-061-e23"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «de repente»?",
+              "audio": "de repente",
+              "opcoes": [
+                "se eu tivesse…",
+                "de repente",
+                "talvez",
+                "enquanto"
+              ],
+              "gabarito": "de repente",
+              "explicacao": "«de repente» = de repente.",
+              "id": "es-061-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "es posible que",
+              "respostaEsperada": "es posible que",
+              "explicacao": "é possível que",
+              "id": "es-061-r03",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -943,20 +937,6 @@
               "id": "es-061-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Cuando llegues, llámame",
-              "opcoes": [
-                "llegues,",
-                "Cuando",
-                "llámame"
-              ],
-              "gabarito": "Cuando llegues, llámame",
-              "explicacao": "Escreva: Cuando llegues, llámame",
-              "id": "es-061-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Quando cheguei, o filme já tinha começado»?",
               "opcoes": [
@@ -969,6 +949,24 @@
               "id": "es-061-e26"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Cuando llegué, el tren ya había salido",
+              "opcoes": [
+                "el",
+                "tren",
+                "salido",
+                "había",
+                "llegué,",
+                "ya",
+                "Cuando"
+              ],
+              "gabarito": "Cuando llegué, el tren ya había salido",
+              "explicacao": "Escreva: Cuando llegué, el tren ya había salido",
+              "id": "es-061-x07",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual expressão pede subjuntivo?",
               "opcoes": [
@@ -979,22 +977,6 @@
               "gabarito": "dudo que",
               "explicacao": "A dúvida pede subjuntivo.",
               "id": "es-061-e27"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Nunca he estado en Perú",
-              "opcoes": [
-                "en",
-                "Nunca",
-                "Perú",
-                "he",
-                "estado"
-              ],
-              "gabarito": "Nunca he estado en Perú",
-              "explicacao": "Escreva: Nunca he estado en Perú",
-              "id": "es-061-x10",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

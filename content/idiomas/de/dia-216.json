@@ -56,15 +56,6 @@
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Was würdest du machen, wenn du im Lotto gewinnen würdest?",
-            "respostaEsperada": "Was würdest du machen, wenn du im Lotto gewinnen würdest?",
-            "explicacao": "O que você faria se ganhasse na loteria?",
-            "id": "de-054-x02",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Wenn ich reich ___, würde ich reisen. (sein)",
             "opcoes": [
@@ -75,6 +66,27 @@
             "gabarito": "wäre",
             "explicacao": "Konjunktiv II.",
             "id": "de-054-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Was würdest du machen, wenn du im Lotto gewinnen würdest?",
+            "respostaEsperada": "Was würdest du machen, wenn du im Lotto gewinnen würdest?",
+            "explicacao": "O que você faria se ganhasse na loteria?",
+            "id": "de-054-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Wenn ich Zeit hätte, ___ ich reisen. (würde)",
+            "opcoes": [
+              "würde",
+              "werde",
+              "wurde"
+            ],
+            "gabarito": "würde",
+            "explicacao": "würde + infinitivo.",
+            "id": "de-054-e03"
           },
           {
             "tipo": "sentence-ordering",
@@ -99,15 +111,15 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Wenn ich Zeit hätte, ___ ich reisen. (würde)",
+            "enunciado": "Ich ___, ich hätte mehr Zeit. (wünschen)",
             "opcoes": [
-              "würde",
-              "werde",
-              "wurde"
+              "wünschte",
+              "wünsche",
+              "wünscht"
             ],
-            "gabarito": "würde",
-            "explicacao": "würde + infinitivo.",
-            "id": "de-054-e03"
+            "gabarito": "wünschte",
+            "explicacao": "Desejo irreal.",
+            "id": "de-054-e04"
           },
           {
             "tipo": "audio-recognition",
@@ -116,6 +128,15 @@
             "respostaEsperada": "Wenn ich eine Million hätte, würde ich um die Welt reisen.",
             "explicacao": "Se eu tivesse um milhão, viajaria pelo mundo.",
             "id": "de-054-x04",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Wahrscheinlich ja, aber nur halbtags.",
+            "respostaEsperada": "Wahrscheinlich ja, aber nur halbtags.",
+            "explicacao": "Provavelmente sim, mas só meio período.",
+            "id": "de-054-r01",
             "complemento": true
           },
           {
@@ -140,42 +161,6 @@
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Ich ___, ich hätte mehr Zeit. (wünschen)",
-            "opcoes": [
-              "wünschte",
-              "wünsche",
-              "wünscht"
-            ],
-            "gabarito": "wünschte",
-            "explicacao": "Desejo irreal.",
-            "id": "de-054-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Und wenn du reich wärst, würdest du dann noch arbeiten?",
-            "respostaEsperada": "Und wenn du reich wärst, würdest du dann noch arbeiten?",
-            "explicacao": "E se você fosse rico, ainda trabalharia?",
-            "id": "de-054-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Provavelmente sim, mas só meio período.»",
-            "opcoes": [
-              "Wahrscheinlich",
-              "aber",
-              "halbtags.",
-              "nur",
-              "ja,"
-            ],
-            "gabarito": "Wahrscheinlich ja, aber nur halbtags.",
-            "explicacao": "Escreva: Wahrscheinlich ja, aber nur halbtags.",
-            "id": "de-054-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
             "enunciado": "Wenn ich doch nur mehr Zeit ___! (haben)",
             "opcoes": [
               "hätte",
@@ -189,10 +174,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Wahrscheinlich ja, aber nur halbtags.",
-            "respostaEsperada": "Wahrscheinlich ja, aber nur halbtags.",
-            "explicacao": "Provavelmente sim, mas só meio período.",
-            "id": "de-054-x08",
+            "audio": "Und wenn du reich wärst, würdest du dann noch arbeiten?",
+            "respostaEsperada": "Und wenn du reich wärst, würdest du dann noch arbeiten?",
+            "explicacao": "E se você fosse rico, ainda trabalharia?",
+            "id": "de-054-x06",
             "complemento": true
           },
           {
@@ -208,29 +193,18 @@
             "id": "de-054-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então vamos torcer para ganhar logo!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «der Lottogewinn»?",
+            "audio": "der Lottogewinn",
             "opcoes": [
-              "wir",
-              "gewinnen!",
-              "wir,",
-              "bald",
-              "Dann",
-              "dass",
-              "hoffen"
+              "sonhar",
+              "pobre",
+              "milhão",
+              "prêmio da loteria"
             ],
-            "gabarito": "Dann hoffen wir, dass wir bald gewinnen!",
-            "explicacao": "Escreva: Dann hoffen wir, dass wir bald gewinnen!",
-            "id": "de-054-x09",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Dann hoffen wir, dass wir bald gewinnen!",
-            "respostaEsperada": "Dann hoffen wir, dass wir bald gewinnen!",
-            "explicacao": "Então vamos torcer para ganhar logo!",
-            "id": "de-054-x10",
+            "gabarito": "prêmio da loteria",
+            "explicacao": "«der Lottogewinn» = prêmio da loteria.",
+            "id": "de-054-x07",
             "complemento": true
           },
           {
@@ -246,19 +220,27 @@
             "id": "de-054-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu queria que fosse amanhã!»",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Dann hoffen wir, dass wir bald gewinnen!",
+            "respostaEsperada": "Dann hoffen wir, dass wir bald gewinnen!",
+            "explicacao": "Então vamos torcer para ganhar logo!",
+            "id": "de-054-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «wünschen»?",
+            "audio": "wünschen",
             "opcoes": [
-              "morgen!",
-              "wünschte,",
-              "schon",
-              "Ich",
-              "wäre",
-              "das"
+              "mundo",
+              "rico",
+              "desejar",
+              "pobre"
             ],
-            "gabarito": "Ich wünschte, das wäre schon morgen!",
-            "explicacao": "Escreva: Ich wünschte, das wäre schon morgen!",
-            "id": "de-054-x11",
+            "gabarito": "desejar",
+            "explicacao": "«wünschen» = desejar.",
+            "id": "de-054-x08",
             "complemento": true
           },
           {
@@ -274,27 +256,18 @@
             "id": "de-054-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ich wünschte, das wäre schon morgen!",
-            "respostaEsperada": "Ich wünschte, das wäre schon morgen!",
-            "explicacao": "Eu queria que fosse amanhã!",
-            "id": "de-054-x12",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «der Lottogewinn»?",
-            "audio": "der Lottogewinn",
+            "enunciado": "O que significa «die Welt»?",
+            "audio": "die Welt",
             "opcoes": [
               "sonhar",
-              "pobre",
-              "milhão",
-              "prêmio da loteria"
+              "mundo",
+              "(reforça o desejo)",
+              "pobre"
             ],
-            "gabarito": "prêmio da loteria",
-            "explicacao": "«der Lottogewinn» = prêmio da loteria.",
-            "id": "de-054-x13",
+            "gabarito": "mundo",
+            "explicacao": "«die Welt» = mundo.",
+            "id": "de-054-x09",
             "complemento": true
           },
           {
@@ -311,17 +284,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «wünschen»?",
-            "audio": "wünschen",
+            "enunciado": "O que significa «unmöglich»?",
+            "audio": "unmöglich",
             "opcoes": [
-              "mundo",
-              "rico",
-              "desejar",
-              "pobre"
+              "com prazer",
+              "só, apenas",
+              "pobre",
+              "impossível"
             ],
-            "gabarito": "desejar",
-            "explicacao": "«wünschen» = desejar.",
-            "id": "de-054-x14",
+            "gabarito": "impossível",
+            "explicacao": "«unmöglich» = impossível.",
+            "id": "de-054-x10",
             "complemento": true
           },
           {
@@ -342,32 +315,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «die Welt»?",
-            "audio": "die Welt",
+            "enunciado": "O que significa «hoffentlich»?",
+            "audio": "hoffentlich",
             "opcoes": [
-              "sonhar",
-              "mundo",
               "(reforça o desejo)",
-              "pobre"
+              "infelizmente",
+              "prêmio da loteria",
+              "tomara, esperançosamente"
             ],
-            "gabarito": "mundo",
-            "explicacao": "«die Welt» = mundo.",
-            "id": "de-054-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «unmöglich»?",
-            "audio": "unmöglich",
-            "opcoes": [
-              "com prazer",
-              "só, apenas",
-              "pobre",
-              "impossível"
-            ],
-            "gabarito": "impossível",
-            "explicacao": "«unmöglich» = impossível.",
-            "id": "de-054-x16",
+            "gabarito": "tomara, esperançosamente",
+            "explicacao": "«hoffentlich» = tomara, esperançosamente.",
+            "id": "de-054-x11",
             "complemento": true
           },
           {
@@ -389,21 +347,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «hoffentlich»?",
-            "audio": "hoffentlich",
-            "opcoes": [
-              "(reforça o desejo)",
-              "infelizmente",
-              "prêmio da loteria",
-              "tomara, esperançosamente"
-            ],
-            "gabarito": "tomara, esperançosamente",
-            "explicacao": "«hoffentlich» = tomara, esperançosamente.",
-            "id": "de-054-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "O que significa «die Million»?",
             "audio": "die Million",
             "opcoes": [
@@ -414,21 +357,17 @@
             ],
             "gabarito": "milhão",
             "explicacao": "«die Million» = milhão.",
-            "id": "de-054-x18",
+            "id": "de-054-x12",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escolha.",
-            "audio": "Was würdest du machen, wenn du eine Million hättest",
-            "opcoes": [
-              "Was würdest du machen, wenn du eine Million hättest",
-              "Was machst du, wenn du eine Million hast",
-              "Was hast du mit der Million gemacht"
-            ],
-            "gabarito": "Was würdest du machen, wenn du eine Million hättest",
-            "explicacao": "Pergunta hipotética.",
-            "id": "de-054-e12"
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Ich wünschte, das wäre schon morgen!",
+            "respostaEsperada": "Ich wünschte, das wäre schon morgen!",
+            "explicacao": "Eu queria que fosse amanhã!",
+            "id": "de-054-r03",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -447,16 +386,21 @@
             ],
             "gabarito": "Was würdest du machen, wenn du eine Million hättest",
             "explicacao": "Escreva: Was würdest du machen, wenn du eine Million hättest",
-            "id": "de-054-x19",
+            "id": "de-054-x13",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Ich wünschte, das wäre schon morgen",
-            "respostaEsperada": "Ich wünschte, das wäre schon morgen",
-            "explicacao": "Desejo irreal.",
-            "id": "de-054-e13"
+            "enunciado": "Ouça e escolha.",
+            "audio": "Was würdest du machen, wenn du eine Million hättest",
+            "opcoes": [
+              "Was würdest du machen, wenn du eine Million hättest",
+              "Was machst du, wenn du eine Million hast",
+              "Was hast du mit der Million gemacht"
+            ],
+            "gabarito": "Was würdest du machen, wenn du eine Million hättest",
+            "explicacao": "Pergunta hipotética.",
+            "id": "de-054-e12"
           },
           {
             "tipo": "sentence-ordering",
@@ -472,8 +416,16 @@
             ],
             "gabarito": "Ich wünschte, das wäre schon morgen",
             "explicacao": "Escreva: Ich wünschte, das wäre schon morgen",
-            "id": "de-054-x20",
+            "id": "de-054-x14",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ich wünschte, das wäre schon morgen",
+            "respostaEsperada": "Ich wünschte, das wäre schon morgen",
+            "explicacao": "Desejo irreal.",
+            "id": "de-054-e13"
           },
           {
             "tipo": "audio-recognition",
@@ -481,7 +433,7 @@
             "audio": "Was würdest du machen, wenn du eine Million hättest",
             "respostaEsperada": "Was würdest du machen, wenn du eine Million hättest",
             "explicacao": "Escreva: Was würdest du machen, wenn du eine Million hättest",
-            "id": "de-054-x21",
+            "id": "de-054-x15",
             "complemento": true
           },
           {

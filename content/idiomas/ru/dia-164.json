@@ -37,27 +37,18 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Vlad, o que você faz no fim de semana?»",
+            "enunciado": "Monte a frase: «Interessante! E você toca violão?»",
             "opcoes": [
-              "ты",
-              "выходных?",
-              "что",
-              "делаешь",
+              "А",
               "на",
-              "Влад,"
+              "ты",
+              "Интересно!",
+              "играешь",
+              "гитаре?"
             ],
-            "gabarito": "Влад, что ты делаешь на выходных?",
-            "explicacao": "Escreva: Влад, что ты делаешь на выходных?",
+            "gabarito": "Интересно! А ты играешь на гитаре?",
+            "explicacao": "Escreva: Интересно! А ты играешь на гитаре?",
             "id": "ru-041-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Влад, что ты делаешь на выходных?",
-            "respostaEsperada": "Влад, что ты делаешь на выходных?",
-            "explicacao": "Vlad, o que você faz no fim de semana?",
-            "id": "ru-041-x02",
             "complemento": true
           },
           {
@@ -73,31 +64,12 @@
             "id": "ru-041-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sou apaixonada por dança. Aos sábados vou às aulas.»",
-            "opcoes": [
-              "танцами.",
-              "увлекаюсь",
-              "на",
-              "По",
-              "занятия.",
-              "хожу",
-              "субботам",
-              "Я",
-              "я"
-            ],
-            "gabarito": "Я увлекаюсь танцами. По субботам я хожу на занятия.",
-            "explicacao": "Escreva: Я увлекаюсь танцами. По субботам я хожу на занятия.",
-            "id": "ru-041-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Я увлекаюсь танцами. По субботам я хожу на занятия.",
-            "respostaEsperada": "Я увлекаюсь танцами. По субботам я хожу на занятия.",
-            "explicacao": "Sou apaixonada por dança. Aos sábados vou às aulas.",
-            "id": "ru-041-x04",
+            "audio": "Интересно! А ты играешь на гитаре?",
+            "respostaEsperada": "Интересно! А ты играешь на гитаре?",
+            "explicacao": "Interessante! E você toca violão?",
+            "id": "ru-041-x02",
             "complemento": true
           },
           {
@@ -113,19 +85,28 @@
             "id": "ru-041-e03"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Влад, что ты делаешь на выходных?",
+            "respostaEsperada": "Влад, что ты делаешь на выходных?",
+            "explicacao": "Vlad, o que você faz no fim de semana?",
+            "id": "ru-041-r01",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Interessante! E você toca violão?»",
+            "enunciado": "Monte a frase: «Ótimo! Vamos nos encontrar às seis horas.»",
             "opcoes": [
-              "А",
-              "на",
-              "ты",
-              "Интересно!",
-              "играешь",
-              "гитаре?"
+              "Давай",
+              "Отлично!",
+              "часов.",
+              "встретимся",
+              "шесть",
+              "в"
             ],
-            "gabarito": "Интересно! А ты играешь на гитаре?",
-            "explicacao": "Escreva: Интересно! А ты играешь на гитаре?",
-            "id": "ru-041-x05",
+            "gabarito": "Отлично! Давай встретимся в шесть часов.",
+            "explicacao": "Escreva: Отлично! Давай встретимся в шесть часов.",
+            "id": "ru-041-x03",
             "complemento": true
           },
           {
@@ -143,24 +124,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Интересно! А ты играешь на гитаре?",
-            "respostaEsperada": "Интересно! А ты играешь на гитаре?",
-            "explicacao": "Interessante! E você toca violão?",
-            "id": "ru-041-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Com prazer! Que filme?»",
-            "opcoes": [
-              "удовольствием!",
-              "фильм?",
-              "Какой",
-              "С"
-            ],
-            "gabarito": "С удовольствием! Какой фильм?",
-            "explicacao": "Escreva: С удовольствием! Какой фильм?",
-            "id": "ru-041-x07",
+            "audio": "Отлично! Давай встретимся в шесть часов.",
+            "respostaEsperada": "Отлично! Давай встретимся в шесть часов.",
+            "explicacao": "Ótimo! Vamos nos encontrar às seis horas.",
+            "id": "ru-041-x04",
             "complemento": true
           },
           {
@@ -176,31 +143,42 @@
             "id": "ru-041-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "С удовольствием! Какой фильм?",
-            "respostaEsperada": "С удовольствием! Какой фильм?",
-            "explicacao": "Com prazer! Que filme?",
-            "id": "ru-041-x08",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «музыка»?",
+            "audio": "музыка",
+            "opcoes": [
+              "nunca",
+              "música",
+              "filme",
+              "xadrez"
+            ],
+            "gabarito": "música",
+            "explicacao": "«музыка» = música.",
+            "id": "ru-041-x05",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Um filme russo novo. Disseram-me que é muito bom.»",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я увлекаюсь танцами. По субботам я хожу на занятия.",
+            "respostaEsperada": "Я увлекаюсь танцами. По субботам я хожу на занятия.",
+            "explicacao": "Sou apaixonada por dança. Aos sábados vou às aulas.",
+            "id": "ru-041-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «книга»?",
+            "audio": "книга",
             "opcoes": [
-              "очень",
-              "он",
-              "говорили,",
-              "Новый",
-              "фильм.",
-              "что",
-              "русский",
-              "хороший.",
-              "Мне"
+              "às vezes",
+              "com frequência",
+              "hobby",
+              "livro"
             ],
-            "gabarito": "Новый русский фильм. Мне говорили, что он очень хороший.",
-            "explicacao": "Escreva: Новый русский фильм. Мне говорили, что он очень хороший.",
-            "id": "ru-041-x09",
+            "gabarito": "livro",
+            "explicacao": "«книга» = livro.",
+            "id": "ru-041-x06",
             "complemento": true
           },
           {
@@ -216,15 +194,6 @@
             "id": "ru-041-e06"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Новый русский фильм. Мне говорили, что он очень хороший.",
-            "respostaEsperada": "Новый русский фильм. Мне говорили, что он очень хороший.",
-            "explicacao": "Um filme russo novo. Disseram-me que é muito bom.",
-            "id": "ru-041-x10",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«С удовольствием!» significa:",
             "opcoes": [
@@ -237,28 +206,18 @@
             "id": "ru-041-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ótimo! Vamos nos encontrar às seis horas.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «никогда не»?",
+            "audio": "никогда не",
             "opcoes": [
-              "Давай",
-              "Отлично!",
-              "часов.",
-              "встретимся",
-              "шесть",
-              "в"
+              "nunca",
+              "raramente",
+              "todo dia",
+              "filme"
             ],
-            "gabarito": "Отлично! Давай встретимся в шесть часов.",
-            "explicacao": "Escreva: Отлично! Давай встретимся в шесть часов.",
-            "id": "ru-041-x11",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Отлично! Давай встретимся в шесть часов.",
-            "respostaEsperada": "Отлично! Давай встретимся в шесть часов.",
-            "explicacao": "Ótimo! Vamos nos encontrar às seis horas.",
-            "id": "ru-041-x12",
+            "gabarito": "nunca",
+            "explicacao": "«никогда не» = nunca.",
+            "id": "ru-041-x07",
             "complemento": true
           },
           {
@@ -275,32 +234,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «музыка»?",
-            "audio": "музыка",
+            "enunciado": "O que significa «по выходным»?",
+            "audio": "по выходным",
             "opcoes": [
-              "nunca",
-              "música",
-              "filme",
-              "xadrez"
+              "xadrez",
+              "nos fins de semana",
+              "hobby",
+              "raramente"
             ],
-            "gabarito": "música",
-            "explicacao": "«музыка» = música.",
-            "id": "ru-041-x13",
+            "gabarito": "nos fins de semana",
+            "explicacao": "«по выходным» = nos fins de semana.",
+            "id": "ru-041-x08",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "С удовольствием! Какой фильм?",
+            "respostaEsperada": "С удовольствием! Какой фильм?",
+            "explicacao": "Com prazer! Que filme?",
+            "id": "ru-041-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «книга»?",
-            "audio": "книга",
+            "enunciado": "O que significa «спорт»?",
+            "audio": "спорт",
             "opcoes": [
-              "às vezes",
-              "com frequência",
-              "hobby",
-              "livro"
+              "raramente",
+              "livro",
+              "esporte",
+              "dança"
             ],
-            "gabarito": "livro",
-            "explicacao": "«книга» = livro.",
-            "id": "ru-041-x14",
+            "gabarito": "esporte",
+            "explicacao": "«спорт» = esporte.",
+            "id": "ru-041-x09",
             "complemento": true
           },
           {
@@ -317,32 +285,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «никогда не»?",
-            "audio": "никогда не",
+            "enunciado": "O que significa «каждый день»?",
+            "audio": "каждый день",
             "opcoes": [
-              "nunca",
-              "raramente",
+              "violão, guitarra",
+              "livro",
               "todo dia",
-              "filme"
+              "infelizmente"
             ],
-            "gabarito": "nunca",
-            "explicacao": "«никогда не» = nunca.",
-            "id": "ru-041-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «по выходным»?",
-            "audio": "по выходным",
-            "opcoes": [
-              "xadrez",
-              "nos fins de semana",
-              "hobby",
-              "raramente"
-            ],
-            "gabarito": "nos fins de semana",
-            "explicacao": "«по выходным» = nos fins de semana.",
-            "id": "ru-041-x16",
+            "gabarito": "todo dia",
+            "explicacao": "«каждый день» = todo dia.",
+            "id": "ru-041-x10",
             "complemento": true
           },
           {
@@ -359,18 +312,27 @@
             "id": "ru-041-e10"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «спорт»?",
-            "audio": "спорт",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Хочешь пойти в кино?",
             "opcoes": [
-              "raramente",
-              "livro",
-              "esporte",
-              "dança"
+              "пойти",
+              "в",
+              "кино?",
+              "Хочешь"
             ],
-            "gabarito": "esporte",
-            "explicacao": "«спорт» = esporte.",
-            "id": "ru-041-x17",
+            "gabarito": "Хочешь пойти в кино?",
+            "explicacao": "Escreva: Хочешь пойти в кино?",
+            "id": "ru-041-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Новый русский фильм. Мне говорили, что он очень хороший.",
+            "respostaEsperada": "Новый русский фильм. Мне говорили, что он очень хороший.",
+            "explicacao": "Um filme russo novo. Disseram-me que é muito bom.",
+            "id": "ru-041-r04",
             "complemento": true
           },
           {
@@ -387,33 +349,17 @@
             "id": "ru-041-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «каждый день»?",
-            "audio": "каждый день",
-            "opcoes": [
-              "violão, guitarra",
-              "livro",
-              "todo dia",
-              "infelizmente"
-            ],
-            "gabarito": "todo dia",
-            "explicacao": "«каждый день» = todo dia.",
-            "id": "ru-041-x18",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Хочешь пойти в кино?",
+            "audio": "Я увлекаюсь музыкой",
             "opcoes": [
-              "пойти",
-              "в",
-              "кино?",
-              "Хочешь"
+              "увлекаюсь",
+              "Я",
+              "музыкой"
             ],
-            "gabarito": "Хочешь пойти в кино?",
-            "explicacao": "Escreva: Хочешь пойти в кино?",
-            "id": "ru-041-x19",
+            "gabarito": "Я увлекаюсь музыкой",
+            "explicacao": "Escreva: Я увлекаюсь музыкой",
+            "id": "ru-041-x12",
             "complemento": true
           },
           {
@@ -425,26 +371,12 @@
             "id": "ru-041-e12"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Я увлекаюсь музыкой",
-            "opcoes": [
-              "увлекаюсь",
-              "Я",
-              "музыкой"
-            ],
-            "gabarito": "Я увлекаюсь музыкой",
-            "explicacao": "Escreva: Я увлекаюсь музыкой",
-            "id": "ru-041-x20",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Хочешь пойти в кино?",
             "respostaEsperada": "Хочешь пойти в кино?",
             "explicacao": "Escreva: Хочешь пойти в кино?",
-            "id": "ru-041-x21",
+            "id": "ru-041-x13",
             "complemento": true
           },
           {

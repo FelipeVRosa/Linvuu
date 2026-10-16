@@ -405,26 +405,21 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você conhece aquele colega ali?»",
+              "enunciado": "Monte a frase: «Não, não conheço o homem. Como ele se chama?»",
               "opcoes": [
-                "Kollegen",
-                "Kennst",
-                "du",
-                "dort?",
-                "den"
+                "Nein,",
+                "Mann",
+                "den",
+                "kenne",
+                "Wie",
+                "er?",
+                "heißt",
+                "ich",
+                "nicht."
               ],
-              "gabarito": "Kennst du den Kollegen dort?",
-              "explicacao": "Escreva: Kennst du den Kollegen dort?",
+              "gabarito": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+              "explicacao": "Escreva: Nein, ich kenne den Mann nicht. Wie heißt er?",
               "id": "de-030-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Kennst du den Kollegen dort?",
-              "respostaEsperada": "Kennst du den Kollegen dort?",
-              "explicacao": "Você conhece aquele colega ali?",
-              "id": "de-030-x02",
               "complemento": true
             },
             {
@@ -440,22 +435,12 @@
               "id": "de-030-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, não conheço o homem. Como ele se chama?»",
-              "opcoes": [
-                "Nein,",
-                "Mann",
-                "den",
-                "kenne",
-                "Wie",
-                "er?",
-                "heißt",
-                "ich",
-                "nicht."
-              ],
-              "gabarito": "Nein, ich kenne den Mann nicht. Wie heißt er?",
-              "explicacao": "Escreva: Nein, ich kenne den Mann nicht. Wie heißt er?",
-              "id": "de-030-x03",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+              "respostaEsperada": "Nein, ich kenne den Mann nicht. Wie heißt er?",
+              "explicacao": "Não, não conheço o homem. Como ele se chama?",
+              "id": "de-030-x02",
               "complemento": true
             },
             {
@@ -469,15 +454,6 @@
               "gabarito": "liegt",
               "explicacao": "estado: liegen.",
               "id": "de-030-e03"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Nein, ich kenne den Mann nicht. Wie heißt er?",
-              "respostaEsperada": "Nein, ich kenne den Mann nicht. Wie heißt er?",
-              "explicacao": "Não, não conheço o homem. Como ele se chama?",
-              "id": "de-030-x04",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -497,7 +473,25 @@
               ],
               "gabarito": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
               "explicacao": "Escreva: Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
-              "id": "de-030-x05",
+              "id": "de-030-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Kennst du den Kollegen dort?",
+              "respostaEsperada": "Kennst du den Kollegen dort?",
+              "explicacao": "Você conhece aquele colega ali?",
+              "id": "de-030-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+              "respostaEsperada": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
+              "explicacao": "Ele se chama Marco. É estudante e faz estágio aqui.",
+              "id": "de-030-x04",
               "complemento": true
             },
             {
@@ -511,63 +505,6 @@
               "gabarito": "lege",
               "explicacao": "movimento: legen.",
               "id": "de-030-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
-              "respostaEsperada": "Er heißt Marco. Er ist Student und macht hier ein Praktikum.",
-              "explicacao": "Ele se chama Marco. É estudante e faz estágio aqui.",
-              "id": "de-030-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu ajudo o estudante com prazer.»",
-              "opcoes": [
-                "Ich",
-                "helfe",
-                "Studenten",
-                "dem",
-                "gern."
-              ],
-              "gabarito": "Ich helfe dem Studenten gern.",
-              "explicacao": "Escreva: Ich helfe dem Studenten gern.",
-              "id": "de-030-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Das Kind ___ auf dem Stuhl. (estar sentado)",
-              "opcoes": [
-                "sitzt",
-                "setzt",
-                "steht"
-              ],
-              "gabarito": "sitzt",
-              "explicacao": "estado: sitzen.",
-              "id": "de-030-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ich helfe dem Studenten gern.",
-              "respostaEsperada": "Ich helfe dem Studenten gern.",
-              "explicacao": "Eu ajudo o estudante com prazer.",
-              "id": "de-030-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Ich ___ das Kind auf den Stuhl. (sentar)",
-              "opcoes": [
-                "setze",
-                "sitze",
-                "stehe"
-              ],
-              "gabarito": "setze",
-              "explicacao": "movimento: setzen.",
-              "id": "de-030-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -587,8 +524,20 @@
               ],
               "gabarito": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
               "explicacao": "Escreva: Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
-              "id": "de-030-x09",
+              "id": "de-030-x05",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das Kind ___ auf dem Stuhl. (estar sentado)",
+              "opcoes": [
+                "sitzt",
+                "setzt",
+                "steht"
+              ],
+              "gabarito": "sitzt",
+              "explicacao": "estado: sitzen.",
+              "id": "de-030-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -596,20 +545,20 @@
               "audio": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
               "respostaEsperada": "Das ist nett. Gehen wir mit dem Kollegen in die Kantine?",
               "explicacao": "Que gentil. Vamos com o colega ao refeitório?",
-              "id": "de-030-x10",
+              "id": "de-030-x06",
               "complemento": true
             },
             {
               "tipo": "fill-gap",
-              "enunciado": "Das Bild hängt an ___ Wand. (Wo?)",
+              "enunciado": "Ich ___ das Kind auf den Stuhl. (sentar)",
               "opcoes": [
-                "der",
-                "die",
-                "dem"
+                "setze",
+                "sitze",
+                "stehe"
               ],
-              "gabarito": "der",
-              "explicacao": "Wo? dativo feminino.",
-              "id": "de-030-e07"
+              "gabarito": "setze",
+              "explicacao": "movimento: setzen.",
+              "id": "de-030-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -627,7 +576,55 @@
               ],
               "gabarito": "Gute Idee! Wir gehen an den Tisch am Fenster.",
               "explicacao": "Escreva: Gute Idee! Wir gehen an den Tisch am Fenster.",
-              "id": "de-030-x11",
+              "id": "de-030-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich helfe dem Studenten gern.",
+              "respostaEsperada": "Ich helfe dem Studenten gern.",
+              "explicacao": "Eu ajudo o estudante com prazer.",
+              "id": "de-030-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+              "respostaEsperada": "Gute Idee! Wir gehen an den Tisch am Fenster.",
+              "explicacao": "Boa ideia! Vamos à mesa junto da janela.",
+              "id": "de-030-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Das Bild hängt an ___ Wand. (Wo?)",
+              "opcoes": [
+                "der",
+                "die",
+                "dem"
+              ],
+              "gabarito": "der",
+              "explicacao": "Wo? dativo feminino.",
+              "id": "de-030-e07"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E eu ponho a minha jaqueta sobre o encosto.»",
+              "opcoes": [
+                "Jacke",
+                "Und",
+                "meine",
+                "Lehne.",
+                "über",
+                "die",
+                "ich",
+                "lege"
+              ],
+              "gabarito": "Und ich lege meine Jacke über die Lehne.",
+              "explicacao": "Escreva: Und ich lege meine Jacke über die Lehne.",
+              "id": "de-030-x09",
               "complemento": true
             },
             {
@@ -645,27 +642,26 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Gute Idee! Wir gehen an den Tisch am Fenster.",
-              "respostaEsperada": "Gute Idee! Wir gehen an den Tisch am Fenster.",
-              "explicacao": "Boa ideia! Vamos à mesa junto da janela.",
-              "id": "de-030-x12",
+              "audio": "Und ich lege meine Jacke über die Lehne.",
+              "respostaEsperada": "Und ich lege meine Jacke über die Lehne.",
+              "explicacao": "E eu ponho a minha jaqueta sobre o encosto.",
+              "id": "de-030-x10",
               "complemento": true
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu ponho a minha bolsa na cadeira.»",
+              "enunciado": "Monte a frase: «Sim, aqui está. Bom apetite!»",
               "opcoes": [
-                "meine",
-                "stelle",
-                "Tasche",
-                "Stuhl.",
-                "Ich",
-                "den",
-                "auf"
+                "Appetit!",
+                "sie.",
+                "Ja,",
+                "liegt",
+                "hier",
+                "Guten"
               ],
-              "gabarito": "Ich stelle meine Tasche auf den Stuhl.",
-              "explicacao": "Escreva: Ich stelle meine Tasche auf den Stuhl.",
-              "id": "de-030-x13",
+              "gabarito": "Ja, hier liegt sie. Guten Appetit!",
+              "explicacao": "Escreva: Ja, hier liegt sie. Guten Appetit!",
+              "id": "de-030-x11",
               "complemento": true
             },
             {
@@ -683,10 +679,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Ich stelle meine Tasche auf den Stuhl.",
-              "respostaEsperada": "Ich stelle meine Tasche auf den Stuhl.",
-              "explicacao": "Eu ponho a minha bolsa na cadeira.",
-              "id": "de-030-x14",
+              "audio": "Ja, hier liegt sie. Guten Appetit!",
+              "respostaEsperada": "Ja, hier liegt sie. Guten Appetit!",
+              "explicacao": "Sim, aqui está. Bom apetite!",
+              "id": "de-030-x12",
               "complemento": true
             },
             {
@@ -702,30 +698,42 @@
               "id": "de-030-e10"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E eu ponho a minha jaqueta sobre o encosto.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Lehne»?",
+              "audio": "die Lehne",
               "opcoes": [
-                "Jacke",
-                "Und",
-                "meine",
-                "Lehne.",
-                "über",
-                "die",
-                "ich",
-                "lege"
+                "escada",
+                "encosto",
+                "estar sentado",
+                "quadro, imagem"
               ],
-              "gabarito": "Und ich lege meine Jacke über die Lehne.",
-              "explicacao": "Escreva: Und ich lege meine Jacke über die Lehne.",
-              "id": "de-030-x15",
+              "gabarito": "encosto",
+              "explicacao": "«die Lehne» = encosto.",
+              "id": "de-030-x13",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Und ich lege meine Jacke über die Lehne.",
-              "respostaEsperada": "Und ich lege meine Jacke über die Lehne.",
-              "explicacao": "E eu ponho a minha jaqueta sobre o encosto.",
-              "id": "de-030-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ich stelle meine Tasche auf den Stuhl.",
+              "respostaEsperada": "Ich stelle meine Tasche auf den Stuhl.",
+              "explicacao": "Eu ponho a minha bolsa na cadeira.",
+              "id": "de-030-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «das Regal»?",
+              "audio": "das Regal",
+              "opcoes": [
+                "estante",
+                "vaso",
+                "sofá",
+                "gancho"
+              ],
+              "gabarito": "estante",
+              "explicacao": "«das Regal» = estante.",
+              "id": "de-030-x14",
               "complemento": true
             },
             {
@@ -741,22 +749,18 @@
               "id": "de-030-e11"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Onde está o cardápio? Está sobre a mesa.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «liegen»?",
+              "audio": "liegen",
               "opcoes": [
-                "dem",
-                "ist",
-                "Wo",
-                "die",
-                "Sie",
-                "auf",
-                "Tisch.",
-                "liegt",
-                "Speisekarte?"
+                "deitar, pôr deitado",
+                "gancho",
+                "estar deitado",
+                "sofá"
               ],
-              "gabarito": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
-              "explicacao": "Escreva: Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
-              "id": "de-030-x17",
+              "gabarito": "estar deitado",
+              "explicacao": "«liegen» = estar deitado.",
+              "id": "de-030-x15",
               "complemento": true
             },
             {
@@ -772,28 +776,18 @@
               "id": "de-030-e12"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
-              "respostaEsperada": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
-              "explicacao": "Onde está o cardápio? Está sobre a mesa.",
-              "id": "de-030-x18",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, aqui está. Bom apetite!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «der Teppich»?",
+              "audio": "der Teppich",
               "opcoes": [
-                "Appetit!",
-                "sie.",
-                "Ja,",
-                "liegt",
-                "hier",
-                "Guten"
+                "escada",
+                "encosto",
+                "tapete",
+                "vaso"
               ],
-              "gabarito": "Ja, hier liegt sie. Guten Appetit!",
-              "explicacao": "Escreva: Ja, hier liegt sie. Guten Appetit!",
-              "id": "de-030-x19",
+              "gabarito": "tapete",
+              "explicacao": "«der Teppich» = tapete.",
+              "id": "de-030-x16",
               "complemento": true
             },
             {
@@ -813,27 +807,42 @@
               "id": "de-030-e13"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ja, hier liegt sie. Guten Appetit!",
-              "respostaEsperada": "Ja, hier liegt sie. Guten Appetit!",
-              "explicacao": "Sim, aqui está. Bom apetite!",
-              "id": "de-030-x20",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «die Vase»?",
+              "audio": "die Vase",
+              "opcoes": [
+                "estante",
+                "vaso",
+                "encosto",
+                "estar deitado"
+              ],
+              "gabarito": "vaso",
+              "explicacao": "«die Vase» = vaso.",
+              "id": "de-030-x17",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+              "respostaEsperada": "Wo ist die Speisekarte? Sie liegt auf dem Tisch.",
+              "explicacao": "Onde está o cardápio? Está sobre a mesa.",
+              "id": "de-030-r04",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «die Lehne»?",
-              "audio": "die Lehne",
+              "enunciado": "O que significa «sitzen»?",
+              "audio": "sitzen",
               "opcoes": [
-                "escada",
-                "encosto",
+                "estar deitado",
                 "estar sentado",
-                "quadro, imagem"
+                "parede",
+                "escada"
               ],
-              "gabarito": "encosto",
-              "explicacao": "«die Lehne» = encosto.",
-              "id": "de-030-x21",
+              "gabarito": "estar sentado",
+              "explicacao": "«sitzen» = estar sentado.",
+              "id": "de-030-x18",
               "complemento": true
             },
             {
@@ -850,18 +859,20 @@
               "id": "de-030-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «das Regal»?",
-              "audio": "das Regal",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Die Jacke hängt an der Tür",
               "opcoes": [
-                "estante",
-                "vaso",
-                "sofá",
-                "gancho"
+                "der",
+                "Jacke",
+                "hängt",
+                "Die",
+                "an",
+                "Tür"
               ],
-              "gabarito": "estante",
-              "explicacao": "«das Regal» = estante.",
-              "id": "de-030-x22",
+              "gabarito": "Die Jacke hängt an der Tür",
+              "explicacao": "Escreva: Die Jacke hängt an der Tür",
+              "id": "de-030-x19",
               "complemento": true
             },
             {
@@ -873,33 +884,18 @@
               "id": "de-030-e15"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «liegen»?",
-              "audio": "liegen",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Ich helfe dem Studenten",
               "opcoes": [
-                "deitar, pôr deitado",
-                "gancho",
-                "estar deitado",
-                "sofá"
+                "dem",
+                "helfe",
+                "Studenten",
+                "Ich"
               ],
-              "gabarito": "estar deitado",
-              "explicacao": "«liegen» = estar deitado.",
-              "id": "de-030-x23",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «der Teppich»?",
-              "audio": "der Teppich",
-              "opcoes": [
-                "escada",
-                "encosto",
-                "tapete",
-                "vaso"
-              ],
-              "gabarito": "tapete",
-              "explicacao": "«der Teppich» = tapete.",
-              "id": "de-030-x24",
+              "gabarito": "Ich helfe dem Studenten",
+              "explicacao": "Escreva: Ich helfe dem Studenten",
+              "id": "de-030-x20",
               "complemento": true
             },
             {

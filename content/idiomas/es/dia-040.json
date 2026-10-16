@@ -63,20 +63,6 @@
             "id": "es-010-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Oi, Tomás. Onde você está?»",
-            "opcoes": [
-              "Tomás.",
-              "¿Dónde",
-              "estás?",
-              "Hola,"
-            ],
-            "gabarito": "Hola, Tomás. ¿Dónde estás?",
-            "explicacao": "Escreva: Hola, Tomás. ¿Dónde estás?",
-            "id": "es-010-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Estoy en casa",
@@ -93,12 +79,24 @@
             "id": "es-010-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Hola, Tomás. ¿Dónde estás?",
-            "respostaEsperada": "Hola, Tomás. ¿Dónde estás?",
-            "explicacao": "Oi, Tomás. Onde você está?",
-            "id": "es-010-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Então a festa é às oito, na casa da Clara.»",
+            "opcoes": [
+              "Entonces",
+              "las",
+              "casa",
+              "en",
+              "a",
+              "de",
+              "fiesta",
+              "ocho,",
+              "es",
+              "Clara.",
+              "la"
+            ],
+            "gabarito": "Entonces la fiesta es a las ocho, en casa de Clara.",
+            "explicacao": "Escreva: Entonces la fiesta es a las ocho, en casa de Clara.",
+            "id": "es-010-x01",
             "complemento": true
           },
           {
@@ -108,6 +106,15 @@
             "respostaEsperada": "Estoy de acuerdo",
             "explicacao": "Escreva: Estoy de acuerdo.",
             "id": "es-010-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Hola, Tomás. ¿Dónde estás?",
+            "respostaEsperada": "Hola, Tomás. ¿Dónde estás?",
+            "explicacao": "Oi, Tomás. Onde você está?",
+            "id": "es-010-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -134,24 +141,6 @@
             "id": "es-010-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Estou na biblioteca, perto da praça.»",
-            "opcoes": [
-              "plaza.",
-              "cerca",
-              "la",
-              "la",
-              "en",
-              "Estoy",
-              "de",
-              "biblioteca,"
-            ],
-            "gabarito": "Estoy en la biblioteca, cerca de la plaza.",
-            "explicacao": "Escreva: Estoy en la biblioteca, cerca de la plaza.",
-            "id": "es-010-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a forma de «tú» de «estar»?",
             "opcoes": [
@@ -162,6 +151,15 @@
             "gabarito": "estás",
             "explicacao": "Com «tú», «estás», com til.",
             "id": "es-010-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Entonces la fiesta es a las ocho, en casa de Clara.",
+            "respostaEsperada": "Entonces la fiesta es a las ocho, en casa de Clara.",
+            "explicacao": "Então a festa é às oito, na casa da Clara.",
+            "id": "es-010-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -188,15 +186,6 @@
             "id": "es-010-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Estoy en la biblioteca, cerca de la plaza.",
-            "respostaEsperada": "Estoy en la biblioteca, cerca de la plaza.",
-            "explicacao": "Estou na biblioteca, perto da praça.",
-            "id": "es-010-x04",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual é a ortografia correta?",
             "opcoes": [
@@ -207,6 +196,15 @@
             "gabarito": "encima",
             "explicacao": "Uma só palavra, sem acento.",
             "id": "es-010-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Estoy en la biblioteca, cerca de la plaza.",
+            "respostaEsperada": "Estoy en la biblioteca, cerca de la plaza.",
+            "explicacao": "Estou na biblioteca, perto da praça.",
+            "id": "es-010-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -221,6 +219,21 @@
             "id": "es-010-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «cansado, cansada»?",
+            "audio": "cansado, cansada",
+            "opcoes": [
+              "aqui, aí, lá",
+              "ao lado de",
+              "tranquilo, tranquila",
+              "cansado, cansada"
+            ],
+            "gabarito": "cansado, cansada",
+            "explicacao": "«cansado, cansada» = cansado, cansada.",
+            "id": "es-010-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Ellos ___ cansados. (estar)",
             "opcoes": [
@@ -231,27 +244,6 @@
             "gabarito": "están",
             "explicacao": "Estado: «están».",
             "id": "es-010-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Então a festa é às oito, na casa da Clara.»",
-            "opcoes": [
-              "Entonces",
-              "las",
-              "casa",
-              "en",
-              "a",
-              "de",
-              "fiesta",
-              "ocho,",
-              "es",
-              "Clara.",
-              "la"
-            ],
-            "gabarito": "Entonces la fiesta es a las ocho, en casa de Clara.",
-            "explicacao": "Escreva: Entonces la fiesta es a las ocho, en casa de Clara.",
-            "id": "es-010-x05",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -278,15 +270,6 @@
             "id": "es-010-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Entonces la fiesta es a las ocho, en casa de Clara.",
-            "respostaEsperada": "Entonces la fiesta es a las ocho, en casa de Clara.",
-            "explicacao": "Então a festa é às oito, na casa da Clara.",
-            "id": "es-010-x06",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Yo ___ profesor. (ser)",
             "opcoes": [
@@ -297,6 +280,21 @@
             "gabarito": "soy",
             "explicacao": "Profissão: «soy».",
             "id": "es-010-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «¿Dónde está?»?",
+            "audio": "¿Dónde está?",
+            "opcoes": [
+              "ao lado de",
+              "bem",
+              "onde está?",
+              "ocupado, ocupada"
+            ],
+            "gabarito": "onde está?",
+            "explicacao": "«¿Dónde está?» = onde está?.",
+            "id": "es-010-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -315,6 +313,15 @@
             "id": "es-010-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Perfecto, estoy de acuerdo. Hasta luego.",
+            "respostaEsperada": "Perfecto, estoy de acuerdo. Hasta luego.",
+            "explicacao": "Perfeito, concordo. Até logo.",
+            "id": "es-010-r03",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «¿Dónde está la biblioteca?»",
             "opcoes": [
@@ -326,22 +333,6 @@
             "gabarito": "¿Dónde está la biblioteca?",
             "explicacao": "O interrogativo abre a pergunta.",
             "id": "es-010-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Perfeito, concordo. Até logo.»",
-            "opcoes": [
-              "estoy",
-              "de",
-              "luego.",
-              "acuerdo.",
-              "Perfecto,",
-              "Hasta"
-            ],
-            "gabarito": "Perfecto, estoy de acuerdo. Hasta luego.",
-            "explicacao": "Escreva: Perfecto, estoy de acuerdo. Hasta luego.",
-            "id": "es-010-x07",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -362,6 +353,21 @@
             "id": "es-010-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «entre»?",
+            "audio": "entre",
+            "opcoes": [
+              "atrás de",
+              "mal",
+              "entre",
+              "cansado, cansada"
+            ],
+            "gabarito": "entre",
+            "explicacao": "«entre» = entre.",
+            "id": "es-010-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "El gato está ___ la silla. (embaixo da)",
             "opcoes": [
@@ -372,15 +378,6 @@
             "gabarito": "debajo de",
             "explicacao": "«Debajo» pede «de»; com «la silla», fica «debajo de la silla».",
             "id": "es-010-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Perfecto, estoy de acuerdo. Hasta luego.",
-            "respostaEsperada": "Perfecto, estoy de acuerdo. Hasta luego.",
-            "explicacao": "Perfeito, concordo. Até logo.",
-            "id": "es-010-x08",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -407,6 +404,15 @@
             "id": "es-010-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "al lado de",
+            "respostaEsperada": "al lado de",
+            "explicacao": "ao lado de",
+            "id": "es-010-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta para uma mulher?",
             "opcoes": [
@@ -420,17 +426,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «cansado, cansada»?",
-            "audio": "cansado, cansada",
+            "enunciado": "O que significa «tranquilo, tranquila»?",
+            "audio": "tranquilo, tranquila",
             "opcoes": [
-              "aqui, aí, lá",
-              "ao lado de",
               "tranquilo, tranquila",
-              "cansado, cansada"
+              "em cima de",
+              "diante de",
+              "de acordo"
             ],
-            "gabarito": "cansado, cansada",
-            "explicacao": "«cansado, cansada» = cansado, cansada.",
-            "id": "es-010-x09",
+            "gabarito": "tranquilo, tranquila",
+            "explicacao": "«tranquilo, tranquila» = tranquilo, tranquila.",
+            "id": "es-010-x06",
             "complemento": true
           },
           {
@@ -456,21 +462,6 @@
             "gabarito": "atrás de",
             "explicacao": "«Detrás de» é «atrás de»; «delante de» é «diante de».",
             "id": "es-010-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «¿Dónde está?»?",
-            "audio": "¿Dónde está?",
-            "opcoes": [
-              "ao lado de",
-              "bem",
-              "onde está?",
-              "ocupado, ocupada"
-            ],
-            "gabarito": "onde está?",
-            "explicacao": "«¿Dónde está?» = onde está?.",
-            "id": "es-010-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

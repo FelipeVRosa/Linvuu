@@ -412,26 +412,20 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá. O que o senhor está sentindo?»",
+              "enunciado": "Monte a frase: «Três dias. Também tenho tosse e febre.»",
               "opcoes": [
-                "Что",
-                "болит?",
+                "меня",
+                "кашель",
+                "Ещё",
+                "дня.",
+                "температура.",
+                "Три",
                 "у",
-                "вас",
-                "Здравствуйте."
+                "и"
               ],
-              "gabarito": "Здравствуйте. Что у вас болит?",
-              "explicacao": "Escreva: Здравствуйте. Что у вас болит?",
+              "gabarito": "Три дня. Ещё у меня кашель и температура.",
+              "explicacao": "Escreva: Три дня. Ещё у меня кашель и температура.",
               "id": "ru-034-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте. Что у вас болит?",
-              "respostaEsperada": "Здравствуйте. Что у вас болит?",
-              "explicacao": "Olá. O que o senhor está sentindo?",
-              "id": "ru-034-x02",
               "complemento": true
             },
             {
@@ -447,30 +441,12 @@
               "id": "ru-034-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá, doutora. Estou com dor de garganta e de cabeça.»",
-              "opcoes": [
-                "горло",
-                "меня",
-                "Здравствуйте,",
-                "голова.",
-                "У",
-                "и",
-                "доктор.",
-                "болит"
-              ],
-              "gabarito": "Здравствуйте, доктор. У меня болит горло и голова.",
-              "explicacao": "Escreva: Здравствуйте, доктор. У меня болит горло и голова.",
-              "id": "ru-034-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте, доктор. У меня болит горло и голова.",
-              "respostaEsperada": "Здравствуйте, доктор. У меня болит горло и голова.",
-              "explicacao": "Olá, doutora. Estou com dor de garganta e de cabeça.",
-              "id": "ru-034-x04",
+              "audio": "Три дня. Ещё у меня кашель и температура.",
+              "respostaEsperada": "Три дня. Ещё у меня кашель и температура.",
+              "explicacao": "Três dias. Também tenho tosse e febre.",
+              "id": "ru-034-x02",
               "complemento": true
             },
             {
@@ -486,21 +462,25 @@
               "id": "ru-034-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте. Что у вас болит?",
+              "respostaEsperada": "Здравствуйте. Что у вас болит?",
+              "explicacao": "Olá. O que o senhor está sentindo?",
+              "id": "ru-034-r01",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Três dias. Também tenho tosse e febre.»",
+              "enunciado": "Monte a frase: «O que devo fazer?»",
               "opcoes": [
-                "меня",
-                "кашель",
-                "Ещё",
-                "дня.",
-                "температура.",
-                "Три",
-                "у",
-                "и"
+                "делать?",
+                "Что",
+                "мне"
               ],
-              "gabarito": "Три дня. Ещё у меня кашель и температура.",
-              "explicacao": "Escreva: Три дня. Ещё у меня кашель и температура.",
-              "id": "ru-034-x05",
+              "gabarito": "Что мне делать?",
+              "explicacao": "Escreva: Что мне делать?",
+              "id": "ru-034-x03",
               "complemento": true
             },
             {
@@ -518,24 +498,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Три дня. Ещё у меня кашель и температура.",
-              "respostaEsperada": "Три дня. Ещё у меня кашель и температура.",
-              "explicacao": "Três dias. Também tenho tosse e febre.",
-              "id": "ru-034-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ontem estava em trinta e oito.»",
-              "opcoes": [
-                "Вчера",
-                "было",
-                "восемь.",
-                "тридцать"
-              ],
-              "gabarito": "Вчера было тридцать восемь.",
-              "explicacao": "Escreva: Вчера было тридцать восемь.",
-              "id": "ru-034-x07",
+              "audio": "Что мне делать?",
+              "respostaEsperada": "Что мне делать?",
+              "explicacao": "O que devo fazer?",
+              "id": "ru-034-x04",
               "complemento": true
             },
             {
@@ -551,30 +517,42 @@
               "id": "ru-034-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Вчера было тридцать восемь.",
-              "respostaEsperada": "Вчера было тридцать восемь.",
-              "explicacao": "Ontem estava em trinta e oito.",
-              "id": "ru-034-x08",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «кашель»?",
+              "audio": "кашель",
+              "opcoes": [
+                "coriza",
+                "tosse",
+                "dente",
+                "tontura"
+              ],
+              "gabarito": "tosse",
+              "explicacao": "«кашель» = tosse.",
+              "id": "ru-034-x05",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Abra a boca e diga «a». O senhor está resfriado.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте, доктор. У меня болит горло и голова.",
+              "respostaEsperada": "Здравствуйте, доктор. У меня болит горло и голова.",
+              "explicacao": "Olá, doutora. Estou com dor de garganta e de cabeça.",
+              "id": "ru-034-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «слабость»?",
+              "audio": "слабость",
               "opcoes": [
-                "У",
-                "«а».",
-                "рот",
-                "Откройте",
-                "простуда.",
-                "скажите",
-                "и",
-                "вас"
+                "olho",
+                "costas",
+                "tosse",
+                "fraqueza"
               ],
-              "gabarito": "Откройте рот и скажите «а». У вас простуда.",
-              "explicacao": "Escreva: Откройте рот и скажите «а». У вас простуда.",
-              "id": "ru-034-x09",
+              "gabarito": "fraqueza",
+              "explicacao": "«слабость» = fraqueza.",
+              "id": "ru-034-x06",
               "complemento": true
             },
             {
@@ -590,15 +568,6 @@
               "id": "ru-034-e06"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Откройте рот и скажите «а». У вас простуда.",
-              "respostaEsperada": "Откройте рот и скажите «а». У вас простуда.",
-              "explicacao": "Abra a boca e diga «a». O senhor está resfriado.",
-              "id": "ru-034-x10",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«У меня температура» significa:",
               "opcoes": [
@@ -611,25 +580,18 @@
               "id": "ru-034-e07"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «O que devo fazer?»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «горло»?",
+              "audio": "горло",
               "opcoes": [
-                "делать?",
-                "Что",
-                "мне"
+                "garganta",
+                "barriga",
+                "perna, pé",
+                "nariz"
               ],
-              "gabarito": "Что мне делать?",
-              "explicacao": "Escreva: Что мне делать?",
-              "id": "ru-034-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Что мне делать?",
-              "respostaEsperada": "Что мне делать?",
-              "explicacao": "O que devo fazer?",
-              "id": "ru-034-x12",
+              "gabarito": "garganta",
+              "explicacao": "«горло» = garganta.",
+              "id": "ru-034-x07",
               "complemento": true
             },
             {
@@ -646,32 +608,41 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «кашель»?",
-              "audio": "кашель",
+              "enunciado": "O que significa «спина»?",
+              "audio": "спина",
               "opcoes": [
-                "coriza",
-                "tosse",
-                "dente",
-                "tontura"
+                "perna, pé",
+                "costas",
+                "tontura",
+                "mão, braço"
               ],
-              "gabarito": "tosse",
-              "explicacao": "«кашель» = tosse.",
-              "id": "ru-034-x13",
+              "gabarito": "costas",
+              "explicacao": "«спина» = costas.",
+              "id": "ru-034-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Вчера было тридцать восемь.",
+              "respostaEsperada": "Вчера было тридцать восемь.",
+              "explicacao": "Ontem estava em trinta e oito.",
+              "id": "ru-034-r03",
               "complemento": true
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «слабость»?",
-              "audio": "слабость",
+              "enunciado": "O que significa «рука»?",
+              "audio": "рука",
               "opcoes": [
+                "fraqueza",
+                "alergia",
                 "olho",
-                "costas",
-                "tosse",
-                "fraqueza"
+                "mão, braço"
               ],
-              "gabarito": "fraqueza",
-              "explicacao": "«слабость» = fraqueza.",
-              "id": "ru-034-x14",
+              "gabarito": "mão, braço",
+              "explicacao": "«рука» = mão, braço.",
+              "id": "ru-034-x09",
               "complemento": true
             },
             {
@@ -688,32 +659,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «горло»?",
-              "audio": "горло",
+              "enunciado": "O que significa «нос»?",
+              "audio": "нос",
               "opcoes": [
-                "garganta",
-                "barriga",
-                "perna, pé",
-                "nariz"
+                "resfriado",
+                "fraqueza",
+                "nariz",
+                "olho"
               ],
-              "gabarito": "garganta",
-              "explicacao": "«горло» = garganta.",
-              "id": "ru-034-x15",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «спина»?",
-              "audio": "спина",
-              "opcoes": [
-                "perna, pé",
-                "costas",
-                "tontura",
-                "mão, braço"
-              ],
-              "gabarito": "costas",
-              "explicacao": "«спина» = costas.",
-              "id": "ru-034-x16",
+              "gabarito": "nariz",
+              "explicacao": "«нос» = nariz.",
+              "id": "ru-034-x10",
               "complemento": true
             },
             {
@@ -730,18 +686,27 @@
               "id": "ru-034-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «рука»?",
-              "audio": "рука",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "У меня болят зубы",
               "opcoes": [
-                "fraqueza",
-                "alergia",
-                "olho",
-                "mão, braço"
+                "меня",
+                "зубы",
+                "болят",
+                "У"
               ],
-              "gabarito": "mão, braço",
-              "explicacao": "«рука» = mão, braço.",
-              "id": "ru-034-x17",
+              "gabarito": "У меня болят зубы",
+              "explicacao": "Escreva: У меня болят зубы",
+              "id": "ru-034-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Откройте рот и скажите «а». У вас простуда.",
+              "respostaEsperada": "Откройте рот и скажите «а». У вас простуда.",
+              "explicacao": "Abra a boca e diga «a». O senhor está resfriado.",
+              "id": "ru-034-r04",
               "complemento": true
             },
             {
@@ -758,33 +723,17 @@
               "id": "ru-034-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «нос»?",
-              "audio": "нос",
-              "opcoes": [
-                "resfriado",
-                "fraqueza",
-                "nariz",
-                "olho"
-              ],
-              "gabarito": "nariz",
-              "explicacao": "«нос» = nariz.",
-              "id": "ru-034-x18",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
-              "audio": "У меня болят зубы",
+              "audio": "Пейте много воды",
               "opcoes": [
-                "меня",
-                "зубы",
-                "болят",
-                "У"
+                "воды",
+                "много",
+                "Пейте"
               ],
-              "gabarito": "У меня болят зубы",
-              "explicacao": "Escreva: У меня болят зубы",
-              "id": "ru-034-x19",
+              "gabarito": "Пейте много воды",
+              "explicacao": "Escreva: Пейте много воды",
+              "id": "ru-034-x12",
               "complemento": true
             },
             {
@@ -796,26 +745,12 @@
               "id": "ru-034-e12"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Пейте много воды",
-              "opcoes": [
-                "воды",
-                "много",
-                "Пейте"
-              ],
-              "gabarito": "Пейте много воды",
-              "explicacao": "Escreva: Пейте много воды",
-              "id": "ru-034-x20",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "У меня болят зубы",
               "respostaEsperada": "У меня болят зубы",
               "explicacao": "Escreva: У меня болят зубы",
-              "id": "ru-034-x21",
+              "id": "ru-034-x13",
               "complemento": true
             },
             {

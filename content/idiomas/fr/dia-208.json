@@ -94,6 +94,14 @@
             "id": "fr-052-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Tout le monde peut agir",
+            "respostaEsperada": "Tout le monde peut agir",
+            "explicacao": "Escreva: Tout le monde peut agir.",
+            "id": "fr-052-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «gaspiller»?",
             "audio": "gaspiller",
@@ -107,14 +115,6 @@
             "explicacao": "«gaspiller» = desperdiçar.",
             "id": "fr-052-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Tout le monde peut agir",
-            "respostaEsperada": "Tout le monde peut agir",
-            "explicacao": "Escreva: Tout le monde peut agir.",
-            "id": "fr-052-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Si nous ne faisons rien, ça empirera.",
+              "Si nous ne ferons rien, ça empirera.",
+              "Si nous ne ferions rien, ça empirera."
+            ],
+            "gabarito": "Si nous ne faisons rien, ça empirera.",
+            "explicacao": "Sem futuro após si.",
+            "id": "fr-052-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «la pauvreté»?",
             "audio": "la pauvreté",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«la pauvreté» = a pobreza.",
             "id": "fr-052-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual frase está correta?",
-            "opcoes": [
-              "Si nous ne faisons rien, ça empirera.",
-              "Si nous ne ferons rien, ça empirera.",
-              "Si nous ne ferions rien, ça empirera."
-            ],
-            "gabarito": "Si nous ne faisons rien, ça empirera.",
-            "explicacao": "Sem futuro após si.",
-            "id": "fr-052-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -192,6 +192,18 @@
             "id": "fr-052-e11"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "Tout le monde ___ agir. (pode)",
+            "opcoes": [
+              "peut",
+              "peuvent",
+              "pouvoir"
+            ],
+            "gabarito": "peut",
+            "explicacao": "Singular.",
+            "id": "fr-052-e12"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «l'environnement»?",
             "audio": "l'environnement",
@@ -205,18 +217,6 @@
             "explicacao": "«l'environnement» = o meio ambiente.",
             "id": "fr-052-x04",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Tout le monde ___ agir. (pode)",
-            "opcoes": [
-              "peut",
-              "peuvent",
-              "pouvoir"
-            ],
-            "gabarito": "peut",
-            "explicacao": "Singular.",
-            "id": "fr-052-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,6 +243,29 @@
             "id": "fr-052-e14"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Il faut que nous recyclions.»",
+            "opcoes": [
+              "Il",
+              "faut",
+              "que",
+              "nous",
+              "recyclions"
+            ],
+            "gabarito": "Il faut que nous recyclions.",
+            "explicacao": "Obrigação.",
+            "id": "fr-052-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "les énergies renouvelables",
+            "respostaEsperada": "les énergies renouvelables",
+            "explicacao": "as energias renováveis",
+            "id": "fr-052-r01",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «l'inégalité»?",
             "audio": "l'inégalité",
@@ -259,20 +282,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Il faut que nous recyclions.»",
-            "opcoes": [
-              "Il",
-              "faut",
-              "que",
-              "nous",
-              "recyclions"
-            ],
-            "gabarito": "Il faut que nous recyclions.",
-            "explicacao": "Obrigação.",
-            "id": "fr-052-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Le problème, c'est le chômage.»",
             "opcoes": [
               "Le",
@@ -284,21 +293,6 @@
             "gabarito": "Le problème, c'est le chômage.",
             "explicacao": "Problema.",
             "id": "fr-052-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «les énergies renouvelables»?",
-            "audio": "les énergies renouvelables",
-            "opcoes": [
-              "o desemprego",
-              "as energias renováveis",
-              "a poluição",
-              "economizar"
-            ],
-            "gabarito": "as energias renováveis",
-            "explicacao": "«les énergies renouvelables» = as energias renováveis.",
-            "id": "fr-052-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -319,6 +313,21 @@
             "id": "fr-052-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «les énergies renouvelables»?",
+            "audio": "les énergies renouvelables",
+            "opcoes": [
+              "o desemprego",
+              "as energias renováveis",
+              "a poluição",
+              "economizar"
+            ],
+            "gabarito": "as energias renováveis",
+            "explicacao": "«les énergies renouvelables» = as energias renováveis.",
+            "id": "fr-052-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il est interdit ___ jeter des papiers. (de)",
             "opcoes": [
@@ -329,24 +338,6 @@
             "gabarito": "de",
             "explicacao": "«Il est interdit de» + infinitivo.",
             "id": "fr-052-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "De plus en plus de gens trient",
-            "opcoes": [
-              "trient",
-              "De",
-              "en",
-              "gens",
-              "de",
-              "plus",
-              "plus"
-            ],
-            "gabarito": "De plus en plus de gens trient",
-            "explicacao": "Escreva: De plus en plus de gens trient",
-            "id": "fr-052-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -373,6 +364,24 @@
             "id": "fr-052-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "De plus en plus de gens trient",
+            "opcoes": [
+              "trient",
+              "De",
+              "en",
+              "gens",
+              "de",
+              "plus",
+              "plus"
+            ],
+            "gabarito": "De plus en plus de gens trient",
+            "explicacao": "Escreva: De plus en plus de gens trient",
+            "id": "fr-052-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "La température va augmenter ___ deux degrés. (em)",
             "opcoes": [
@@ -383,22 +392,6 @@
             "gabarito": "de",
             "explicacao": "Diferença de valor: «de».",
             "id": "fr-052-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Une solution serait de construire",
-            "opcoes": [
-              "serait",
-              "solution",
-              "Une",
-              "construire",
-              "de"
-            ],
-            "gabarito": "Une solution serait de construire",
-            "explicacao": "Escreva: Une solution serait de construire",
-            "id": "fr-052-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -425,6 +418,22 @@
             "id": "fr-052-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Une solution serait de construire",
+            "opcoes": [
+              "serait",
+              "solution",
+              "Une",
+              "construire",
+              "de"
+            ],
+            "gabarito": "Une solution serait de construire",
+            "explicacao": "Escreva: Une solution serait de construire",
+            "id": "fr-052-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual expressão apresenta o problema?",
             "opcoes": [
@@ -435,24 +444,6 @@
             "gabarito": "Le problème, c'est que…",
             "explicacao": "Abre a exposição do problema.",
             "id": "fr-052-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Le problème, c'est que les loyers montent",
-            "opcoes": [
-              "que",
-              "loyers",
-              "Le",
-              "les",
-              "problème,",
-              "montent",
-              "c'est"
-            ],
-            "gabarito": "Le problème, c'est que les loyers montent",
-            "explicacao": "Escreva: Le problème, c'est que les loyers montent",
-            "id": "fr-052-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -483,17 +474,19 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Il faudrait que l'État agisse",
+            "audio": "Le problème, c'est que les loyers montent",
             "opcoes": [
               "que",
-              "Il",
-              "l'État",
-              "faudrait",
-              "agisse"
+              "loyers",
+              "Le",
+              "les",
+              "problème,",
+              "montent",
+              "c'est"
             ],
-            "gabarito": "Il faudrait que l'État agisse",
-            "explicacao": "Escreva: Il faudrait que l'État agisse",
-            "id": "fr-052-x10",
+            "gabarito": "Le problème, c'est que les loyers montent",
+            "explicacao": "Escreva: Le problème, c'est que les loyers montent",
+            "id": "fr-052-x09",
             "complemento": true
           },
           {

@@ -63,6 +63,14 @@
             "id": "es-021-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Mi abuela cocinaba muy bien",
+            "respostaEsperada": "Mi abuela cocinaba muy bien",
+            "explicacao": "Escreva: Mi abuela cocinaba muy bien. Atenção ao «b» de «-aba».",
+            "id": "es-021-e04"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «antes»?",
             "audio": "antes",
@@ -80,33 +88,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Mi abuela cocinaba muy bien",
-            "respostaEsperada": "Mi abuela cocinaba muy bien",
-            "explicacao": "Escreva: Mi abuela cocinaba muy bien. Atenção ao «b» de «-aba».",
-            "id": "es-021-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Hacía mucho frío",
             "respostaEsperada": "Hacía mucho frío",
             "explicacao": "Escreva: Hacía mucho frío. O «h» é mudo e «-ía» leva acento.",
             "id": "es-021-e05"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «normalmente»?",
-            "audio": "normalmente",
-            "opcoes": [
-              "normalmente",
-              "com frequência",
-              "grávida",
-              "todos os verões"
-            ],
-            "gabarito": "normalmente",
-            "explicacao": "«normalmente» = normalmente.",
-            "id": "es-021-x02",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -142,17 +127,26 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «raro»?",
-            "audio": "raro",
+            "enunciado": "O que significa «normalmente»?",
+            "audio": "normalmente",
             "opcoes": [
-              "esquisito, estranho",
-              "naquela época, então",
-              "brincar, jogar",
-              "enquanto"
+              "normalmente",
+              "com frequência",
+              "grávida",
+              "todos os verões"
             ],
-            "gabarito": "esquisito, estranho",
-            "explicacao": "«raro» = esquisito, estranho.",
-            "id": "es-021-x03",
+            "gabarito": "normalmente",
+            "explicacao": "«normalmente» = normalmente.",
+            "id": "es-021-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "de niño, de niña",
+            "respostaEsperada": "de niño, de niña",
+            "explicacao": "quando criança",
+            "id": "es-021-r01",
             "complemento": true
           },
           {
@@ -193,17 +187,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «embarazada»?",
-            "audio": "embarazada",
+            "enunciado": "O que significa «raro»?",
+            "audio": "raro",
             "opcoes": [
-              "os avós",
-              "com frequência",
-              "grávida",
+              "esquisito, estranho",
+              "naquela época, então",
+              "brincar, jogar",
               "enquanto"
             ],
-            "gabarito": "grávida",
-            "explicacao": "«embarazada» = grávida.",
-            "id": "es-021-x04",
+            "gabarito": "esquisito, estranho",
+            "explicacao": "«raro» = esquisito, estranho.",
+            "id": "es-021-x03",
             "complemento": true
           },
           {
@@ -243,21 +237,6 @@
             "id": "es-021-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «antiguo»?",
-            "audio": "antiguo",
-            "opcoes": [
-              "todos os verões",
-              "delicioso, refinado",
-              "normalmente",
-              "antigo"
-            ],
-            "gabarito": "antigo",
-            "explicacao": "«antiguo» = antigo.",
-            "id": "es-021-x05",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "De niños, nosotros ___ en el patio. (jugar)",
             "opcoes": [
@@ -270,6 +249,30 @@
             "id": "es-021-e15"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "de pequeño, de pequeña",
+            "respostaEsperada": "de pequeño, de pequeña",
+            "explicacao": "quando pequeno",
+            "id": "es-021-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «embarazada»?",
+            "audio": "embarazada",
+            "opcoes": [
+              "os avós",
+              "com frequência",
+              "grávida",
+              "enquanto"
+            ],
+            "gabarito": "grávida",
+            "explicacao": "«embarazada» = grávida.",
+            "id": "es-021-x04",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Eran las nueve y ___ calor. (hacer)",
             "opcoes": [
@@ -280,21 +283,6 @@
             "gabarito": "hacía",
             "explicacao": "O tempo atmosférico no cenário vai para o imperfecto.",
             "id": "es-021-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «cada día»?",
-            "audio": "cada día",
-            "opcoes": [
-              "cada dia",
-              "a escola",
-              "grávida",
-              "esquisito, estranho"
-            ],
-            "gabarito": "cada dia",
-            "explicacao": "«cada día» = cada dia.",
-            "id": "es-021-x06",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -335,18 +323,18 @@
             "id": "es-021-e19"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Yo vivía en Sevilla",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «antiguo»?",
+            "audio": "antiguo",
             "opcoes": [
-              "Sevilla",
-              "vivía",
-              "Yo",
-              "en"
+              "todos os verões",
+              "delicioso, refinado",
+              "normalmente",
+              "antigo"
             ],
-            "gabarito": "Yo vivía en Sevilla",
-            "explicacao": "Escreva: Yo vivía en Sevilla",
-            "id": "es-021-x07",
+            "gabarito": "antigo",
+            "explicacao": "«antiguo» = antigo.",
+            "id": "es-021-x05",
             "complemento": true
           },
           {
@@ -382,22 +370,6 @@
             "id": "es-021-e22"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Íbamos al pueblo cada verano",
-            "opcoes": [
-              "pueblo",
-              "cada",
-              "verano",
-              "Íbamos",
-              "al"
-            ],
-            "gabarito": "Íbamos al pueblo cada verano",
-            "explicacao": "Escreva: Íbamos al pueblo cada verano",
-            "id": "es-021-x08",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "De niño, tú ___ muy tímido. (ser)",
             "opcoes": [
@@ -408,6 +380,30 @@
             "gabarito": "eras",
             "explicacao": "«Ser» no imperfecto: tú «eras».",
             "id": "es-021-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «cada día»?",
+            "audio": "cada día",
+            "opcoes": [
+              "cada dia",
+              "a escola",
+              "grávida",
+              "esquisito, estranho"
+            ],
+            "gabarito": "cada dia",
+            "explicacao": "«cada día» = cada dia.",
+            "id": "es-021-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "todos los veranos",
+            "respostaEsperada": "todos los veranos",
+            "explicacao": "todos os verões",
+            "id": "es-021-r03",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -434,21 +430,6 @@
             "id": "es-021-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Era una casa antigua",
-            "opcoes": [
-              "una",
-              "Era",
-              "antigua",
-              "casa"
-            ],
-            "gabarito": "Era una casa antigua",
-            "explicacao": "Escreva: Era una casa antigua",
-            "id": "es-021-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Eram nove horas e fazia calor»?",
             "opcoes": [
@@ -461,6 +442,21 @@
             "id": "es-021-e26"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Yo vivía en Sevilla",
+            "opcoes": [
+              "Sevilla",
+              "vivía",
+              "Yo",
+              "en"
+            ],
+            "gabarito": "Yo vivía en Sevilla",
+            "explicacao": "Escreva: Yo vivía en Sevilla",
+            "id": "es-021-x07",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «Ela estava grávida»?",
             "opcoes": [
@@ -471,22 +467,6 @@
             "gabarito": "Estaba embarazada.",
             "explicacao": "«Embarazada» é grávida; «avergonzada» é envergonhada.",
             "id": "es-021-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Mi abuela cocinaba muy bien",
-            "opcoes": [
-              "bien",
-              "Mi",
-              "muy",
-              "abuela",
-              "cocinaba"
-            ],
-            "gabarito": "Mi abuela cocinaba muy bien",
-            "explicacao": "Escreva: Mi abuela cocinaba muy bien",
-            "id": "es-021-x10",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",

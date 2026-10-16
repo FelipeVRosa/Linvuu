@@ -94,6 +94,14 @@
             "id": "fr-049-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Dans l'attente de votre réponse, cordialement",
+            "respostaEsperada": "Dans l'attente de votre réponse, cordialement",
+            "explicacao": "Escreva: Dans l'attente de votre réponse, cordialement.",
+            "id": "fr-049-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «annuler»?",
             "audio": "annuler",
@@ -107,14 +115,6 @@
             "explicacao": "«annuler» = cancelar.",
             "id": "fr-049-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Dans l'attente de votre réponse, cordialement",
-            "respostaEsperada": "Dans l'attente de votre réponse, cordialement",
-            "explicacao": "Escreva: Dans l'attente de votre réponse, cordialement.",
-            "id": "fr-049-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Qual pedido é mais educado?",
+            "opcoes": [
+              "Pourriez-vous m'envoyer le prix ?",
+              "Tu peux m'envoyer le prix ?",
+              "Envoie-moi le prix."
+            ],
+            "gabarito": "Pourriez-vous m'envoyer le prix ?",
+            "explicacao": "Condicional + vous.",
+            "id": "fr-049-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «disponible»?",
             "audio": "disponible",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«disponible» = disponível.",
             "id": "fr-049-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual pedido é mais educado?",
-            "opcoes": [
-              "Pourriez-vous m'envoyer le prix ?",
-              "Tu peux m'envoyer le prix ?",
-              "Envoie-moi le prix."
-            ],
-            "gabarito": "Pourriez-vous m'envoyer le prix ?",
-            "explicacao": "Condicional + vous.",
-            "id": "fr-049-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -192,6 +192,18 @@
             "id": "fr-049-e11"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "Je vous demande de ___ rembourser. (queira)",
+            "opcoes": [
+              "bien vouloir me",
+              "veuillez me",
+              "voulez me"
+            ],
+            "gabarito": "bien vouloir me",
+            "explicacao": "Fórmula formal.",
+            "id": "fr-049-e12"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «veuillez»?",
             "audio": "veuillez",
@@ -205,18 +217,6 @@
             "explicacao": "«veuillez» = queira.",
             "id": "fr-049-x04",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Je vous demande de ___ rembourser. (queira)",
-            "opcoes": [
-              "bien vouloir me",
-              "veuillez me",
-              "voulez me"
-            ],
-            "gabarito": "bien vouloir me",
-            "explicacao": "Fórmula formal.",
-            "id": "fr-049-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,6 +243,29 @@
             "id": "fr-049-e14"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Pourriez-vous me confirmer le rendez-vous ?»",
+            "opcoes": [
+              "Pourriez-vous",
+              "me",
+              "confirmer",
+              "le",
+              "rendez-vous"
+            ],
+            "gabarito": "Pourriez-vous me confirmer le rendez-vous",
+            "explicacao": "Pedido formal.",
+            "id": "fr-049-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "je vous écris pour",
+            "respostaEsperada": "je vous écris pour",
+            "explicacao": "escrevo-lhe para",
+            "id": "fr-049-r01",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «un remboursement»?",
             "audio": "un remboursement",
@@ -259,20 +282,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Pourriez-vous me confirmer le rendez-vous ?»",
-            "opcoes": [
-              "Pourriez-vous",
-              "me",
-              "confirmer",
-              "le",
-              "rendez-vous"
-            ],
-            "gabarito": "Pourriez-vous me confirmer le rendez-vous",
-            "explicacao": "Pedido formal.",
-            "id": "fr-049-e15"
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Je vous remercie par avance.»",
             "opcoes": [
               "Je",
@@ -284,21 +293,6 @@
             "gabarito": "Je vous remercie par avance.",
             "explicacao": "Fórmula.",
             "id": "fr-049-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «Madame, Monsieur»?",
-            "audio": "Madame, Monsieur",
-            "opcoes": [
-              "Caro senhor",
-              "Prezados senhores",
-              "confirmar",
-              "atrasado"
-            ],
-            "gabarito": "Prezados senhores",
-            "explicacao": "«Madame, Monsieur» = Prezados senhores.",
-            "id": "fr-049-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -319,6 +313,21 @@
             "id": "fr-049-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «Madame, Monsieur»?",
+            "audio": "Madame, Monsieur",
+            "opcoes": [
+              "Caro senhor",
+              "Prezados senhores",
+              "confirmar",
+              "atrasado"
+            ],
+            "gabarito": "Prezados senhores",
+            "explicacao": "«Madame, Monsieur» = Prezados senhores.",
+            "id": "fr-049-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Suite ___ notre conversation, je confirme. (a)",
             "opcoes": [
@@ -329,19 +338,6 @@
             "gabarito": "à",
             "explicacao": "«Suite à» = em seguida a.",
             "id": "fr-049-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Madame, Monsieur",
-            "opcoes": [
-              "Monsieur",
-              "Madame,"
-            ],
-            "gabarito": "Madame, Monsieur",
-            "explicacao": "Escreva: Madame, Monsieur",
-            "id": "fr-049-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -368,6 +364,19 @@
             "id": "fr-049-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Madame, Monsieur",
+            "opcoes": [
+              "Monsieur",
+              "Madame,"
+            ],
+            "gabarito": "Madame, Monsieur",
+            "explicacao": "Escreva: Madame, Monsieur",
+            "id": "fr-049-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Je reste à votre ___ . (disposição)",
             "opcoes": [
@@ -378,21 +387,6 @@
             "gabarito": "disposition",
             "explicacao": "«À votre disposition» = à sua disposição.",
             "id": "fr-049-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Pourriez-vous m'envoyer le document",
-            "opcoes": [
-              "document",
-              "m'envoyer",
-              "le",
-              "Pourriez-vous"
-            ],
-            "gabarito": "Pourriez-vous m'envoyer le document",
-            "explicacao": "Escreva: Pourriez-vous m'envoyer le document",
-            "id": "fr-049-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -419,6 +413,21 @@
             "id": "fr-049-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Pourriez-vous m'envoyer le document",
+            "opcoes": [
+              "document",
+              "m'envoyer",
+              "le",
+              "Pourriez-vous"
+            ],
+            "gabarito": "Pourriez-vous m'envoyer le document",
+            "explicacao": "Escreva: Pourriez-vous m'envoyer le document",
+            "id": "fr-049-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como pedir um reembolso com educação?",
             "opcoes": [
@@ -429,25 +438,6 @@
             "gabarito": "Je vous demande de bien vouloir me rembourser.",
             "explicacao": "Registro formal e educado.",
             "id": "fr-049-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Je vous écris au sujet de ma commande",
-            "opcoes": [
-              "sujet",
-              "Je",
-              "ma",
-              "vous",
-              "commande",
-              "au",
-              "écris",
-              "de"
-            ],
-            "gabarito": "Je vous écris au sujet de ma commande",
-            "explicacao": "Escreva: Je vous écris au sujet de ma commande",
-            "id": "fr-049-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -481,20 +471,20 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "Je souhaiterais savoir si le produit est disponible",
+            "audio": "Je vous écris au sujet de ma commande",
             "opcoes": [
-              "le",
-              "si",
-              "est",
-              "savoir",
-              "produit",
+              "sujet",
               "Je",
-              "souhaiterais",
-              "disponible"
+              "ma",
+              "vous",
+              "commande",
+              "au",
+              "écris",
+              "de"
             ],
-            "gabarito": "Je souhaiterais savoir si le produit est disponible",
-            "explicacao": "Escreva: Je souhaiterais savoir si le produit est disponible",
-            "id": "fr-049-x10",
+            "gabarito": "Je vous écris au sujet de ma commande",
+            "explicacao": "Escreva: Je vous écris au sujet de ma commande",
+            "id": "fr-049-x09",
             "complemento": true
           },
           {

@@ -488,6 +488,22 @@
               "id": "it-030-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Che cosa stai facendo",
+              "respostaEsperada": "Che cosa stai facendo",
+              "explicacao": "Escreva: Che cosa stai facendo.",
+              "id": "it-030-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Ho appena finito",
+              "respostaEsperada": "Ho appena finito",
+              "explicacao": "Escreva: Ho appena finito.",
+              "id": "it-030-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Silvia, liguei duas vezes! O que você estava fazendo?»",
               "opcoes": [
@@ -510,35 +526,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Che cosa stai facendo",
-              "respostaEsperada": "Che cosa stai facendo",
-              "explicacao": "Escreva: Che cosa stai facendo.",
-              "id": "it-030-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ho appena finito",
-              "respostaEsperada": "Ho appena finito",
-              "explicacao": "Escreva: Ho appena finito.",
-              "id": "it-030-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
-              "respostaEsperada": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
-              "explicacao": "Silvia, liguei duas vezes! O que você estava fazendo?",
-              "id": "it-030-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Stavo dormendo quando hai chiamato",
               "respostaEsperada": "Stavo dormendo quando hai chiamato",
               "explicacao": "Escreva: Stavo dormendo quando hai chiamato.",
               "id": "it-030-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Scusa, stavo facendo la doccia. E tu, dove sei?",
+              "respostaEsperada": "Scusa, stavo facendo la doccia. E tu, dove sei?",
+              "explicacao": "Desculpe, estava tomando banho. E você, onde está?",
+              "id": "it-030-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -565,25 +565,6 @@
               "id": "it-030-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Desculpe, estava tomando banho. E você, onde está?»",
-              "opcoes": [
-                "E",
-                "Scusa,",
-                "tu,",
-                "facendo",
-                "sei?",
-                "dove",
-                "stavo",
-                "doccia.",
-                "la"
-              ],
-              "gabarito": "Scusa, stavo facendo la doccia. E tu, dove sei?",
-              "explicacao": "Escreva: Scusa, stavo facendo la doccia. E tu, dove sei?",
-              "id": "it-030-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Acabei de chegar» em italiano:",
               "opcoes": [
@@ -594,6 +575,15 @@
               "gabarito": "Sono appena arrivato.",
               "explicacao": "«Appena» + passato prossimo.",
               "id": "it-030-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
+              "respostaEsperada": "Silvia, ti ho telefonato due volte! Che cosa stavi facendo?",
+              "explicacao": "Silvia, liguei duas vezes! O que você estava fazendo?",
+              "id": "it-030-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -620,15 +610,6 @@
               "id": "it-030-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Scusa, stavo facendo la doccia. E tu, dove sei?",
-              "respostaEsperada": "Scusa, stavo facendo la doccia. E tu, dove sei?",
-              "explicacao": "Desculpe, estava tomando banho. E você, onde está?",
-              "id": "it-030-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Che cosa ___ facendo ieri sera?",
               "opcoes": [
@@ -639,6 +620,15 @@
               "gabarito": "stavi",
               "explicacao": "Imperfetto de «stare».",
               "id": "it-030-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
+              "respostaEsperada": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
+              "explicacao": "Estou saindo do escritório. Estou prestes a pegar o trem.",
+              "id": "it-030-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -653,6 +643,25 @@
               "id": "it-030-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Perfeito. Estava pensando em fazer macarrão: está bom?»",
+              "opcoes": [
+                "pensando",
+                "la",
+                "pasta:",
+                "Stavo",
+                "va?",
+                "di",
+                "fare",
+                "ti",
+                "Perfetto."
+              ],
+              "gabarito": "Perfetto. Stavo pensando di fare la pasta: ti va?",
+              "explicacao": "Escreva: Perfetto. Stavo pensando di fare la pasta: ti va?",
+              "id": "it-030-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Sono ___ uscita. (acabei de)",
               "opcoes": [
@@ -663,24 +672,6 @@
               "gabarito": "appena",
               "explicacao": "«Appena» entre auxiliar e particípio.",
               "id": "it-030-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Estou saindo do escritório. Estou prestes a pegar o trem.»",
-              "opcoes": [
-                "dall'ufficio.",
-                "Sto",
-                "treno.",
-                "per",
-                "uscendo",
-                "prendere",
-                "il",
-                "Sto"
-              ],
-              "gabarito": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
-              "explicacao": "Escreva: Sto uscendo dall'ufficio. Sto per prendere il treno.",
-              "id": "it-030-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -711,19 +702,19 @@
               "id": "it-030-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
-              "respostaEsperada": "Sto uscendo dall'ufficio. Sto per prendere il treno.",
-              "explicacao": "Estou saindo do escritório. Estou prestes a pegar o trem.",
-              "id": "it-030-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Estou estudando italiano. O trem está para partir. Acabei de chegar. Eu estava dormindo quando você ligou.",
               "respostaEsperada": "Sto studiando italiano. Il treno sta per partire. Sono appena arrivato. Stavo dormendo quando hai chiamato.",
               "id": "it-030-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Perfetto. Stavo pensando di fare la pasta: ti va?",
+              "respostaEsperada": "Perfetto. Stavo pensando di fare la pasta: ti va?",
+              "explicacao": "Perfeito. Estava pensando em fazer macarrão: está bom?",
+              "id": "it-030-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -738,6 +729,15 @@
               "id": "it-030-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Allora ci vediamo tra poco: sto preparando la cena.",
+              "respostaEsperada": "Allora ci vediamo tra poco: sto preparando la cena.",
+              "explicacao": "Então nos vemos daqui a pouco: estou preparando o jantar.",
+              "id": "it-030-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Che cosa state ___? (fazendo)",
               "opcoes": [
@@ -748,25 +748,6 @@
               "gabarito": "facendo",
               "explicacao": "O gerúndio de «fare» é irregular: «facendo».",
               "id": "it-030-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Então nos vemos daqui a pouco: estou preparando o jantar.»",
-              "opcoes": [
-                "sto",
-                "Allora",
-                "vediamo",
-                "poco:",
-                "cena.",
-                "tra",
-                "la",
-                "preparando",
-                "ci"
-              ],
-              "gabarito": "Allora ci vediamo tra poco: sto preparando la cena.",
-              "explicacao": "Escreva: Allora ci vediamo tra poco: sto preparando la cena.",
-              "id": "it-030-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -793,6 +774,21 @@
               "id": "it-030-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «sto parlando»?",
+              "audio": "sto parlando",
+              "opcoes": [
+                "estou prestes a sair",
+                "estou falando",
+                "estou saindo",
+                "de repente"
+              ],
+              "gabarito": "estou falando",
+              "explicacao": "«sto parlando» = estou falando.",
+              "id": "it-030-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Il telefono sta ___ suonare. (para)",
               "opcoes": [
@@ -803,15 +799,6 @@
               "gabarito": "per",
               "explicacao": "«Stare per» + infinitivo indica ação iminente.",
               "id": "it-030-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Allora ci vediamo tra poco: sto preparando la cena.",
-              "respostaEsperada": "Allora ci vediamo tra poco: sto preparando la cena.",
-              "explicacao": "Então nos vemos daqui a pouco: estou preparando o jantar.",
-              "id": "it-030-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -838,6 +825,15 @@
               "id": "it-030-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ottimo! Appena arrivo, ti aiuto.",
+              "respostaEsperada": "Ottimo! Appena arrivo, ti aiuto.",
+              "explicacao": "Ótimo! Assim que eu chegar, te ajudo.",
+              "id": "it-030-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase expressa uma ação em curso no passado?",
               "opcoes": [
@@ -850,18 +846,18 @@
               "id": "it-030-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ótimo! Assim que eu chegar, te ajudo.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «proprio adesso»?",
+              "audio": "proprio adesso",
               "opcoes": [
-                "Appena",
-                "arrivo,",
-                "aiuto.",
-                "Ottimo!",
-                "ti"
+                "estou falando",
+                "estou saindo",
+                "estou lendo",
+                "agora mesmo"
               ],
-              "gabarito": "Ottimo! Appena arrivo, ti aiuto.",
-              "explicacao": "Escreva: Ottimo! Appena arrivo, ti aiuto.",
-              "id": "it-030-x09",
+              "gabarito": "agora mesmo",
+              "explicacao": "«proprio adesso» = agora mesmo.",
+              "id": "it-030-x06",
               "complemento": true
             },
             {
@@ -890,15 +886,6 @@
               "gabarito": "Che cosa stavate facendo ieri sera?",
               "explicacao": "«Stavate» é o imperfetto de «stare» com «voi».",
               "id": "it-030-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ottimo! Appena arrivo, ti aiuto.",
-              "respostaEsperada": "Ottimo! Appena arrivo, ti aiuto.",
-              "explicacao": "Ótimo! Assim que eu chegar, te ajudo.",
-              "id": "it-030-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

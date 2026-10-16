@@ -378,27 +378,18 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Igor, você já começou a escrever o projeto?»",
+              "enunciado": "Monte a frase: «Você não esqueceu de enviar a carta ao cliente?»",
               "opcoes": [
-                "писать",
-                "ты",
-                "начал",
-                "проект?",
-                "Игорь,",
-                "уже"
+                "Ты",
+                "клиенту?",
+                "забыл",
+                "не",
+                "письмо",
+                "отправить"
               ],
-              "gabarito": "Игорь, ты уже начал писать проект?",
-              "explicacao": "Escreva: Игорь, ты уже начал писать проект?",
+              "gabarito": "Ты не забыл отправить письмо клиенту?",
+              "explicacao": "Escreva: Ты не забыл отправить письмо клиенту?",
               "id": "ru-051-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Игорь, ты уже начал писать проект?",
-              "respostaEsperada": "Игорь, ты уже начал писать проект?",
-              "explicacao": "Igor, você já começou a escrever o projeto?",
-              "id": "ru-051-x02",
               "complemento": true
             },
             {
@@ -414,31 +405,12 @@
               "id": "ru-051-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, comecei há uma semana, mas ainda não terminei.»",
-              "opcoes": [
-                "начал",
-                "закончил.",
-                "назад,",
-                "неделю",
-                "Да,",
-                "я",
-                "но",
-                "ещё",
-                "не"
-              ],
-              "gabarito": "Да, я начал неделю назад, но ещё не закончил.",
-              "explicacao": "Escreva: Да, я начал неделю назад, но ещё не закончил.",
-              "id": "ru-051-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Да, я начал неделю назад, но ещё не закончил.",
-              "respostaEsperada": "Да, я начал неделю назад, но ещё не закончил.",
-              "explicacao": "Sim, comecei há uma semana, mas ainda não terminei.",
-              "id": "ru-051-x04",
+              "audio": "Ты не забыл отправить письмо клиенту?",
+              "respostaEsperada": "Ты не забыл отправить письмо клиенту?",
+              "explicacao": "Você não esqueceu de enviar a carta ao cliente?",
+              "id": "ru-051-x02",
               "complemento": true
             },
             {
@@ -455,27 +427,35 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você não esqueceu de enviar a carta ao cliente?»",
+              "enunciado": "Monte a frase: «Não se atrase amanhã para a reunião!»",
               "opcoes": [
-                "Ты",
-                "клиенту?",
-                "забыл",
-                "не",
-                "письмо",
-                "отправить"
+                "завтра",
+                "встречу!",
+                "на",
+                "Не",
+                "опоздай"
               ],
-              "gabarito": "Ты не забыл отправить письмо клиенту?",
-              "explicacao": "Escreva: Ты не забыл отправить письмо клиенту?",
-              "id": "ru-051-x05",
+              "gabarito": "Не опоздай завтра на встречу!",
+              "explicacao": "Escreva: Не опоздай завтра на встречу!",
+              "id": "ru-051-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Игорь, ты уже начал писать проект?",
+              "respostaEsperada": "Игорь, ты уже начал писать проект?",
+              "explicacao": "Igor, você já começou a escrever o projeto?",
+              "id": "ru-051-r01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Ты не забыл отправить письмо клиенту?",
-              "respostaEsperada": "Ты не забыл отправить письмо клиенту?",
-              "explicacao": "Você não esqueceu de enviar a carta ao cliente?",
-              "id": "ru-051-x06",
+              "audio": "Не опоздай завтра на встречу!",
+              "respostaEsperada": "Не опоздай завтра на встречу!",
+              "explicacao": "Não se atrase amanhã para a reunião!",
+              "id": "ru-051-x04",
               "complemento": true
             },
             {
@@ -489,80 +469,6 @@
               "gabarito": "открывай",
               "explicacao": "Proibição: imperfectivo.",
               "id": "ru-051-e04"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, não esqueci. Já a enviei.»",
-              "opcoes": [
-                "отправил.",
-                "забыл.",
-                "Нет,",
-                "Я",
-                "его",
-                "уже",
-                "не"
-              ],
-              "gabarito": "Нет, не забыл. Я его уже отправил.",
-              "explicacao": "Escreva: Нет, не забыл. Я его уже отправил.",
-              "id": "ru-051-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Нет, не забыл. Я его уже отправил.",
-              "respostaEsperada": "Нет, не забыл. Я его уже отправил.",
-              "explicacao": "Não, não esqueci. Já a enviei.",
-              "id": "ru-051-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Не ___! (alerta: atraso)",
-              "opcoes": [
-                "опоздай",
-                "опаздывай",
-                "опоздать"
-              ],
-              "gabarito": "опоздай",
-              "explicacao": "Alerta pontual: perfectivo.",
-              "id": "ru-051-e05"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não se atrase amanhã para a reunião!»",
-              "opcoes": [
-                "завтра",
-                "встречу!",
-                "на",
-                "Не",
-                "опоздай"
-              ],
-              "gabarito": "Не опоздай завтра на встречу!",
-              "explicacao": "Escreva: Не опоздай завтра на встречу!",
-              "id": "ru-051-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Не опоздай завтра на встречу!",
-              "respostaEsperada": "Не опоздай завтра на встречу!",
-              "explicacao": "Não se atrase amanhã para a reunião!",
-              "id": "ru-051-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Я начал ___. (a escrever)",
-              "opcoes": [
-                "писать",
-                "написать",
-                "пишу"
-              ],
-              "gabarito": "писать",
-              "explicacao": "Depois de «начать»: imperfectivo.",
-              "id": "ru-051-e06"
             },
             {
               "tipo": "sentence-ordering",
@@ -581,8 +487,20 @@
               ],
               "gabarito": "Не волнуйся, я не опоздаю. Я каждый день прихожу вовремя.",
               "explicacao": "Escreva: Не волнуйся, я не опоздаю. Я каждый день прихожу вовремя.",
-              "id": "ru-051-x11",
+              "id": "ru-051-x05",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Не ___! (alerta: atraso)",
+              "opcoes": [
+                "опоздай",
+                "опаздывай",
+                "опоздать"
+              ],
+              "gabarito": "опоздай",
+              "explicacao": "Alerta pontual: perfectivo.",
+              "id": "ru-051-e05"
             },
             {
               "tipo": "audio-recognition",
@@ -590,58 +508,17 @@
               "audio": "Не волнуйся, я не опоздаю. Я каждый день прихожу вовремя.",
               "respostaEsperada": "Не волнуйся, я не опоздаю. Я каждый день прихожу вовремя.",
               "explicacao": "Não se preocupe, não vou me atrasar. Todo dia chego na hora.",
-              "id": "ru-051-x12",
+              "id": "ru-051-x06",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "«Я не позвонил» sugere:",
-              "opcoes": [
-                "esqueci ou não consegui ligar",
-                "nunca ligo",
-                "liguei ontem"
-              ],
-              "gabarito": "esqueci ou não consegui ligar",
-              "explicacao": "Não + perfectivo: resultado esperado não veio.",
-              "id": "ru-051-e07"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Então continue trabalhando, e eu ligo para o cliente.»",
-              "opcoes": [
-                "Тогда",
-                "я",
-                "позвоню",
-                "а",
-                "работать,",
-                "продолжай",
-                "клиенту."
-              ],
-              "gabarito": "Тогда продолжай работать, а я позвоню клиенту.",
-              "explicacao": "Escreva: Тогда продолжай работать, а я позвоню клиенту.",
-              "id": "ru-051-x13",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Да, я начал неделю назад, но ещё не закончил.",
+              "respostaEsperada": "Да, я начал неделю назад, но ещё не закончил.",
+              "explicacao": "Sim, comecei há uma semana, mas ainda não terminei.",
+              "id": "ru-051-r02",
               "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Тогда продолжай работать, а я позвоню клиенту.",
-              "respostaEsperada": "Тогда продолжай работать, а я позвоню клиенту.",
-              "explicacao": "Então continue trabalhando, e eu ligo para o cliente.",
-              "id": "ru-051-x14",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Depois de «перестать» vem:",
-              "opcoes": [
-                "infinitivo imperfectivo",
-                "infinitivo perfectivo",
-                "gerúndio"
-              ],
-              "gabarito": "infinitivo imperfectivo",
-              "explicacao": "«перестал читать».",
-              "id": "ru-051-e08"
             },
             {
               "tipo": "sentence-ordering",
@@ -657,8 +534,20 @@
               ],
               "gabarito": "Хорошо. Когда я закончу, я тебе позвоню.",
               "explicacao": "Escreva: Хорошо. Когда я закончу, я тебе позвоню.",
-              "id": "ru-051-x15",
+              "id": "ru-051-x07",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Я начал ___. (a escrever)",
+              "opcoes": [
+                "писать",
+                "написать",
+                "пишу"
+              ],
+              "gabarito": "писать",
+              "explicacao": "Depois de «начать»: imperfectivo.",
+              "id": "ru-051-e06"
             },
             {
               "tipo": "audio-recognition",
@@ -666,7 +555,100 @@
               "audio": "Хорошо. Когда я закончу, я тебе позвоню.",
               "respostaEsperada": "Хорошо. Когда я закончу, я тебе позвоню.",
               "explicacao": "Está bem. Quando eu terminar, ligo para você.",
-              "id": "ru-051-x16",
+              "id": "ru-051-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Я не позвонил» sugere:",
+              "opcoes": [
+                "esqueci ou não consegui ligar",
+                "nunca ligo",
+                "liguei ontem"
+              ],
+              "gabarito": "esqueci ou não consegui ligar",
+              "explicacao": "Não + perfectivo: resultado esperado não veio.",
+              "id": "ru-051-e07"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «не забудь»?",
+              "audio": "не забудь",
+              "opcoes": [
+                "cair",
+                "não se esqueça",
+                "acostumar-se",
+                "vez"
+              ],
+              "gabarito": "não se esqueça",
+              "explicacao": "«не забудь» = não se esqueça.",
+              "id": "ru-051-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «часто»?",
+              "audio": "часто",
+              "opcoes": [
+                "sempre",
+                "ligar",
+                "toda manhã",
+                "com frequência"
+              ],
+              "gabarito": "com frequência",
+              "explicacao": "«часто» = com frequência.",
+              "id": "ru-051-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Depois de «перестать» vem:",
+              "opcoes": [
+                "infinitivo imperfectivo",
+                "infinitivo perfectivo",
+                "gerúndio"
+              ],
+              "gabarito": "infinitivo imperfectivo",
+              "explicacao": "«перестал читать».",
+              "id": "ru-051-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «редко»?",
+              "audio": "редко",
+              "opcoes": [
+                "com cuidado",
+                "perder",
+                "com frequência",
+                "raramente"
+              ],
+              "gabarito": "raramente",
+              "explicacao": "«редко» = raramente.",
+              "id": "ru-051-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Нет, не забыл. Я его уже отправил.",
+              "respostaEsperada": "Нет, не забыл. Я его уже отправил.",
+              "explicacao": "Não, não esqueci. Já a enviei.",
+              "id": "ru-051-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «по субботам»?",
+              "audio": "по субботам",
+              "opcoes": [
+                "com cuidado",
+                "cair",
+                "com frequência",
+                "aos sábados"
+              ],
+              "gabarito": "aos sábados",
+              "explicacao": "«по субботам» = aos sábados.",
+              "id": "ru-051-x12",
               "complemento": true
             },
             {
@@ -683,32 +665,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «не забудь»?",
-              "audio": "не забудь",
+              "enunciado": "O que significa «иногда»?",
+              "audio": "иногда",
               "opcoes": [
-                "cair",
-                "não se esqueça",
-                "acostumar-se",
-                "vez"
-              ],
-              "gabarito": "não se esqueça",
-              "explicacao": "«не забудь» = não se esqueça.",
-              "id": "ru-051-x17",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «часто»?",
-              "audio": "часто",
-              "opcoes": [
-                "sempre",
-                "ligar",
+                "quebrar",
                 "toda manhã",
-                "com frequência"
+                "com cuidado",
+                "às vezes"
               ],
-              "gabarito": "com frequência",
-              "explicacao": "«часто» = com frequência.",
-              "id": "ru-051-x18",
+              "gabarito": "às vezes",
+              "explicacao": "«иногда» = às vezes.",
+              "id": "ru-051-x13",
               "complemento": true
             },
             {
@@ -725,32 +692,41 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «редко»?",
-              "audio": "редко",
+              "enunciado": "O que significa «раз»?",
+              "audio": "раз",
               "opcoes": [
-                "com cuidado",
-                "perder",
-                "com frequência",
+                "quebrar",
+                "vez",
+                "acostumar-se",
                 "raramente"
               ],
-              "gabarito": "raramente",
-              "explicacao": "«редко» = raramente.",
-              "id": "ru-051-x19",
+              "gabarito": "vez",
+              "explicacao": "«раз» = vez.",
+              "id": "ru-051-x14",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «по субботам»?",
-              "audio": "по субботам",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Тогда продолжай работать, а я позвоню клиенту.",
+              "respostaEsperada": "Тогда продолжай работать, а я позвоню клиенту.",
+              "explicacao": "Então continue trabalhando, e eu ligo para o cliente.",
+              "id": "ru-051-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Не забудь позвонить маме",
               "opcoes": [
-                "com cuidado",
-                "cair",
-                "com frequência",
-                "aos sábados"
+                "Не",
+                "позвонить",
+                "маме",
+                "забудь"
               ],
-              "gabarito": "aos sábados",
-              "explicacao": "«по субботам» = aos sábados.",
-              "id": "ru-051-x20",
+              "gabarito": "Не забудь позвонить маме",
+              "explicacao": "Escreva: Не забудь позвонить маме",
+              "id": "ru-051-x15",
               "complemento": true
             },
             {
@@ -767,59 +743,6 @@
               "id": "ru-051-e11"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «иногда»?",
-              "audio": "иногда",
-              "opcoes": [
-                "quebrar",
-                "toda manhã",
-                "com cuidado",
-                "às vezes"
-              ],
-              "gabarito": "às vezes",
-              "explicacao": "«иногда» = às vezes.",
-              "id": "ru-051-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «раз»?",
-              "audio": "раз",
-              "opcoes": [
-                "quebrar",
-                "vez",
-                "acostumar-se",
-                "raramente"
-              ],
-              "gabarito": "vez",
-              "explicacao": "«раз» = vez.",
-              "id": "ru-051-x22",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva em cirílico.",
-              "audio": "Я ещё не обедал",
-              "respostaEsperada": "Я ещё не обедал",
-              "explicacao": "«ещё не» + imperfectivo.",
-              "id": "ru-051-e12"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Не забудь позвонить маме",
-              "opcoes": [
-                "Не",
-                "позвонить",
-                "маме",
-                "забудь"
-              ],
-              "gabarito": "Не забудь позвонить маме",
-              "explicacao": "Escreva: Не забудь позвонить маме",
-              "id": "ru-051-x23",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
               "audio": "Я ещё не обедал",
@@ -831,14 +754,16 @@
               ],
               "gabarito": "Я ещё не обедал",
               "explicacao": "Escreva: Я ещё не обедал",
-              "id": "ru-051-x24",
+              "id": "ru-051-x16",
               "complemento": true
             },
             {
-              "tipo": "producao",
-              "enunciado": "Escreva 5 frases: um hábito, uma negação geral, um alerta, um verbo de início e um de fim.",
-              "respostaEsperada": "Я каждый день читаю. Я не звонил. Не опоздай! Я начал писать. Я закончил работать.",
-              "id": "ru-051-e13"
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva em cirílico.",
+              "audio": "Я ещё не обедал",
+              "respostaEsperada": "Я ещё не обедал",
+              "explicacao": "«ещё не» + imperfectivo.",
+              "id": "ru-051-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -846,8 +771,14 @@
               "audio": "Не забудь позвонить маме",
               "respostaEsperada": "Не забудь позвонить маме",
               "explicacao": "Escreva: Не забудь позвонить маме",
-              "id": "ru-051-x25",
+              "id": "ru-051-x17",
               "complemento": true
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva 5 frases: um hábito, uma negação geral, um alerta, um verbo de início e um de fim.",
+              "respostaEsperada": "Я каждый день читаю. Я не звонил. Не опоздай! Я начал писать. Я закончил работать.",
+              "id": "ru-051-e13"
             }
           ]
         },

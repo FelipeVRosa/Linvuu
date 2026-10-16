@@ -416,25 +416,15 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá! O que o senhor deseja?»",
+              "enunciado": "Monte a frase: «Certo. É tudo?»",
               "opcoes": [
-                "вы",
-                "Здравствуйте!",
-                "хотите?",
-                "Что"
+                "всё?",
+                "Хорошо.",
+                "Это"
               ],
-              "gabarito": "Здравствуйте! Что вы хотите?",
-              "explicacao": "Escreva: Здравствуйте! Что вы хотите?",
+              "gabarito": "Хорошо. Это всё?",
+              "explicacao": "Escreva: Хорошо. Это всё?",
               "id": "ru-010-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте! Что вы хотите?",
-              "respostaEsperada": "Здравствуйте! Что вы хотите?",
-              "explicacao": "Olá! O que o senhor deseja?",
-              "id": "ru-010-x02",
               "complemento": true
             },
             {
@@ -450,29 +440,12 @@
               "id": "ru-010-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Olá! Quero um café e pão, por favor.»",
-              "opcoes": [
-                "хлеб,",
-                "хочу",
-                "кофе",
-                "Здравствуйте!",
-                "пожалуйста.",
-                "и",
-                "Я"
-              ],
-              "gabarito": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
-              "explicacao": "Escreva: Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
-              "id": "ru-010-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
-              "respostaEsperada": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
-              "explicacao": "Olá! Quero um café e pão, por favor.",
-              "id": "ru-010-x04",
+              "audio": "Хорошо. Это всё?",
+              "respostaEsperada": "Хорошо. Это всё?",
+              "explicacao": "Certo. É tudo?",
+              "id": "ru-010-x02",
               "complemento": true
             },
             {
@@ -489,15 +462,29 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Certo. É tudo?»",
+              "enunciado": "Monte a frase: «O café custa cem rublos, o pão, cinquenta.»",
               "opcoes": [
-                "всё?",
-                "Хорошо.",
-                "Это"
+                "хлеб",
+                "Кофе",
+                "рублей,",
+                "сто",
+                "—",
+                "—",
+                "рублей.",
+                "пятьдесят"
               ],
-              "gabarito": "Хорошо. Это всё?",
-              "explicacao": "Escreva: Хорошо. Это всё?",
-              "id": "ru-010-x05",
+              "gabarito": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
+              "explicacao": "Escreva: Кофе — сто рублей, хлеб — пятьдесят рублей.",
+              "id": "ru-010-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте! Что вы хотите?",
+              "respostaEsperada": "Здравствуйте! Что вы хотите?",
+              "explicacao": "Olá! O que o senhor deseja?",
+              "id": "ru-010-r01",
               "complemento": true
             },
             {
@@ -516,25 +503,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Хорошо. Это всё?",
-              "respostaEsperada": "Хорошо. Это всё?",
-              "explicacao": "Certo. É tudo?",
-              "id": "ru-010-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, é tudo. Quanto custa?»",
-              "opcoes": [
-                "стоит?",
-                "всё.",
-                "это",
-                "Да,",
-                "Сколько"
-              ],
-              "gabarito": "Да, это всё. Сколько стоит?",
-              "explicacao": "Escreva: Да, это всё. Сколько стоит?",
-              "id": "ru-010-x07",
+              "audio": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
+              "respostaEsperada": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
+              "explicacao": "O café custa cem rublos, o pão, cinquenta.",
+              "id": "ru-010-x04",
               "complemento": true
             },
             {
@@ -550,30 +522,16 @@
               "id": "ru-010-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Да, это всё. Сколько стоит?",
-              "respostaEsperada": "Да, это всё. Сколько стоит?",
-              "explicacao": "Sim, é tudo. Quanto custa?",
-              "id": "ru-010-x08",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «O café custa cem rublos, o pão, cinquenta.»",
+              "enunciado": "Monte a frase: «Obrigada! Até logo!»",
               "opcoes": [
-                "хлеб",
-                "Кофе",
-                "рублей,",
-                "сто",
-                "—",
-                "—",
-                "рублей.",
-                "пятьдесят"
+                "свидания!",
+                "До",
+                "Спасибо!"
               ],
-              "gabarito": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
-              "explicacao": "Escreva: Кофе — сто рублей, хлеб — пятьдесят рублей.",
-              "id": "ru-010-x09",
+              "gabarito": "Спасибо! До свидания!",
+              "explicacao": "Escreva: Спасибо! До свидания!",
+              "id": "ru-010-x05",
               "complemento": true
             },
             {
@@ -591,25 +549,34 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
-              "respostaEsperada": "Кофе — сто рублей, хлеб — пятьдесят рублей.",
-              "explicacao": "O café custa cem rublos, o pão, cinquenta.",
-              "id": "ru-010-x10",
+              "audio": "Спасибо! До свидания!",
+              "respostaEsperada": "Спасибо! До свидания!",
+              "explicacao": "Obrigada! Até logo!",
+              "id": "ru-010-x06",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Cento e cinquenta rublos. Aqui está.»",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
+              "respostaEsperada": "Здравствуйте! Я хочу кофе и хлеб, пожалуйста.",
+              "explicacao": "Olá! Quero um café e pão, por favor.",
+              "id": "ru-010-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «тридцать»?",
+              "audio": "тридцать",
               "opcoes": [
-                "рублей.",
-                "пятьдесят",
-                "пожалуйста.",
-                "Вот,",
-                "Сто"
+                "dez",
+                "trinta",
+                "eu quero",
+                "quarenta"
               ],
-              "gabarito": "Сто пятьдесят рублей. Вот, пожалуйста.",
-              "explicacao": "Escreva: Сто пятьдесят рублей. Вот, пожалуйста.",
-              "id": "ru-010-x11",
+              "gabarito": "trinta",
+              "explicacao": "«тридцать» = trinta.",
+              "id": "ru-010-x07",
               "complemento": true
             },
             {
@@ -625,12 +592,18 @@
               "id": "ru-010-e07"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Сто пятьдесят рублей. Вот, пожалуйста.",
-              "respostaEsperada": "Сто пятьдесят рублей. Вот, пожалуйста.",
-              "explicacao": "Cento e cinquenta rublos. Aqui está.",
-              "id": "ru-010-x12",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «восемь»?",
+              "audio": "восемь",
+              "opcoes": [
+                "dois",
+                "doze",
+                "oito",
+                "quarenta"
+              ],
+              "gabarito": "oito",
+              "explicacao": "«восемь» = oito.",
+              "id": "ru-010-x08",
               "complemento": true
             },
             {
@@ -642,25 +615,42 @@
               "id": "ru-010-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigada! Até logo!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «сорок»?",
+              "audio": "сорок",
               "opcoes": [
-                "свидания!",
-                "До",
-                "Спасибо!"
+                "dez",
+                "quarenta",
+                "um",
+                "custa"
               ],
-              "gabarito": "Спасибо! До свидания!",
-              "explicacao": "Escreva: Спасибо! До свидания!",
-              "id": "ru-010-x13",
+              "gabarito": "quarenta",
+              "explicacao": "«сорок» = quarenta.",
+              "id": "ru-010-x09",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Спасибо! До свидания!",
-              "respostaEsperada": "Спасибо! До свидания!",
-              "explicacao": "Obrigada! Até logo!",
-              "id": "ru-010-x14",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Да, это всё. Сколько стоит?",
+              "respostaEsperada": "Да, это всё. Сколько стоит?",
+              "explicacao": "Sim, é tudo. Quanto custa?",
+              "id": "ru-010-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «хочу»?",
+              "audio": "хочу",
+              "opcoes": [
+                "sete",
+                "eu quero",
+                "cinco",
+                "quinze"
+              ],
+              "gabarito": "eu quero",
+              "explicacao": "«хочу» = eu quero.",
+              "id": "ru-010-x10",
               "complemento": true
             },
             {
@@ -677,32 +667,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «тридцать»?",
-              "audio": "тридцать",
+              "enunciado": "O que significa «пятьдесят»?",
+              "audio": "пятьдесят",
               "opcoes": [
-                "dez",
-                "trinta",
-                "eu quero",
-                "quarenta"
+                "três",
+                "cinquenta",
+                "cem",
+                "me dê (educado)"
               ],
-              "gabarito": "trinta",
-              "explicacao": "«тридцать» = trinta.",
-              "id": "ru-010-x15",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «восемь»?",
-              "audio": "восемь",
-              "opcoes": [
-                "dois",
-                "doze",
-                "oito",
-                "quarenta"
-              ],
-              "gabarito": "oito",
-              "explicacao": "«восемь» = oito.",
-              "id": "ru-010-x16",
+              "gabarito": "cinquenta",
+              "explicacao": "«пятьдесят» = cinquenta.",
+              "id": "ru-010-x11",
               "complemento": true
             },
             {
@@ -718,21 +693,6 @@
               "id": "ru-010-e10"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «сорок»?",
-              "audio": "сорок",
-              "opcoes": [
-                "dez",
-                "quarenta",
-                "um",
-                "custa"
-              ],
-              "gabarito": "quarenta",
-              "explicacao": "«сорок» = quarenta.",
-              "id": "ru-010-x17",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Я живу ___ Москве.",
               "opcoes": [
@@ -746,32 +706,39 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «хочу»?",
-              "audio": "хочу",
+              "enunciado": "O que significa «три»?",
+              "audio": "три",
               "opcoes": [
-                "sete",
-                "eu quero",
-                "cinco",
-                "quinze"
+                "doze",
+                "três",
+                "dez",
+                "cinquenta"
               ],
-              "gabarito": "eu quero",
-              "explicacao": "«хочу» = eu quero.",
-              "id": "ru-010-x18",
+              "gabarito": "três",
+              "explicacao": "«три» = três.",
+              "id": "ru-010-x12",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «пятьдесят»?",
-              "audio": "пятьдесят",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Сто пятьдесят рублей. Вот, пожалуйста.",
+              "respostaEsperada": "Сто пятьдесят рублей. Вот, пожалуйста.",
+              "explicacao": "Cento e cinquenta rublos. Aqui está.",
+              "id": "ru-010-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Сколько стоит?",
               "opcoes": [
-                "três",
-                "cinquenta",
-                "cem",
-                "me dê (educado)"
+                "стоит?",
+                "Сколько"
               ],
-              "gabarito": "cinquenta",
-              "explicacao": "«пятьдесят» = cinquenta.",
-              "id": "ru-010-x19",
+              "gabarito": "Сколько стоит?",
+              "explicacao": "Escreva: Сколько стоит?",
+              "id": "ru-010-x13",
               "complemento": true
             },
             {
@@ -787,31 +754,17 @@
               "id": "ru-010-e12"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «три»?",
-              "audio": "три",
-              "opcoes": [
-                "doze",
-                "três",
-                "dez",
-                "cinquenta"
-              ],
-              "gabarito": "três",
-              "explicacao": "«три» = três.",
-              "id": "ru-010-x20",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
-              "audio": "Сколько стоит?",
+              "audio": "Дайте, пожалуйста, кофе",
               "opcoes": [
-                "стоит?",
-                "Сколько"
+                "пожалуйста,",
+                "Дайте,",
+                "кофе"
               ],
-              "gabarito": "Сколько стоит?",
-              "explicacao": "Escreva: Сколько стоит?",
-              "id": "ru-010-x21",
+              "gabarito": "Дайте, пожалуйста, кофе",
+              "explicacao": "Escreva: Дайте, пожалуйста, кофе",
+              "id": "ru-010-x14",
               "complemento": true
             },
             {
@@ -828,26 +781,12 @@
               "id": "ru-010-e13"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Дайте, пожалуйста, кофе",
-              "opcoes": [
-                "пожалуйста,",
-                "Дайте,",
-                "кофе"
-              ],
-              "gabarito": "Дайте, пожалуйста, кофе",
-              "explicacao": "Escreva: Дайте, пожалуйста, кофе",
-              "id": "ru-010-x22",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Сколько стоит?",
               "respostaEsperada": "Сколько стоит?",
               "explicacao": "Escreva: Сколько стоит?",
-              "id": "ru-010-x23",
+              "id": "ru-010-x15",
               "complemento": true
             },
             {

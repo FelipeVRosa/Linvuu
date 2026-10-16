@@ -557,21 +557,6 @@
               "id": "it-029-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa noite. Uma mesa para dois?»",
-              "opcoes": [
-                "per",
-                "Buonasera.",
-                "tavolo",
-                "due?",
-                "Un"
-              ],
-              "gabarito": "Buonasera. Un tavolo per due?",
-              "explicacao": "Escreva: Buonasera. Un tavolo per due?",
-              "id": "it-029-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Avrei bisogno di un'informazione",
@@ -588,12 +573,24 @@
               "id": "it-029-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buonasera. Un tavolo per due?",
-              "respostaEsperada": "Buonasera. Un tavolo per due?",
-              "explicacao": "Boa noite. Uma mesa para dois?",
-              "id": "it-029-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Claro, por favor, por aqui. O que lhes trago para beber?»",
+              "opcoes": [
+                "porto",
+                "da",
+                "Certo,",
+                "bere?",
+                "cosa",
+                "prego,",
+                "parte.",
+                "Che",
+                "da",
+                "vi",
+                "questa"
+              ],
+              "gabarito": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+              "explicacao": "Escreva: Certo, prego, da questa parte. Che cosa vi porto da bere?",
+              "id": "it-029-x01",
               "complemento": true
             },
             {
@@ -603,6 +600,15 @@
               "respostaEsperada": "Dovresti riposare di più",
               "explicacao": "Escreva: Dovresti riposare di più.",
               "id": "it-029-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buonasera. Un tavolo per due?",
+              "respostaEsperada": "Buonasera. Un tavolo per due?",
+              "explicacao": "Boa noite. Uma mesa para dois?",
+              "id": "it-029-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -629,25 +635,6 @@
               "id": "it-029-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, obrigado. Poderíamos ter uma mesa perto da janela?»",
-              "opcoes": [
-                "avere",
-                "un",
-                "Sì,",
-                "alla",
-                "Potremmo",
-                "vicino",
-                "grazie.",
-                "tavolo",
-                "finestra?"
-              ],
-              "gabarito": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
-              "explicacao": "Escreva: Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
-              "id": "it-029-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "«Parlerei» significa:",
               "opcoes": [
@@ -658,6 +645,15 @@
               "gabarito": "eu falaria",
               "explicacao": "Armadilha: «parlerei» é condizionale; o futuro é «parlerò».",
               "id": "it-029-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+              "respostaEsperada": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
+              "explicacao": "Claro, por favor, por aqui. O que lhes trago para beber?",
+              "id": "it-029-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -684,15 +680,6 @@
               "id": "it-029-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
-              "respostaEsperada": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
-              "explicacao": "Sim, obrigado. Poderíamos ter uma mesa perto da janela?",
-              "id": "it-029-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Al tuo posto, io ___ presto. (partire)",
               "opcoes": [
@@ -703,6 +690,15 @@
               "gabarito": "partirei",
               "explicacao": "Conselho hipotético: condizionale.",
               "id": "it-029-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
+              "respostaEsperada": "Sì, grazie. Potremmo avere un tavolo vicino alla finestra?",
+              "explicacao": "Sim, obrigado. Poderíamos ter uma mesa perto da janela?",
+              "id": "it-029-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -717,6 +713,26 @@
               "id": "it-029-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Queríamos água sem gás. E poderia nos trazer o cardápio, por favor?»",
+              "opcoes": [
+                "portarci",
+                "per",
+                "potrebbe",
+                "menu,",
+                "E",
+                "dell'acqua",
+                "il",
+                "favore?",
+                "Vorremmo",
+                "naturale."
+              ],
+              "gabarito": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+              "explicacao": "Escreva: Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+              "id": "it-029-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Avrei bisogno ___ un consiglio.",
               "opcoes": [
@@ -727,27 +743,6 @@
               "gabarito": "di",
               "explicacao": "«Avere bisogno di».",
               "id": "it-029-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Claro, por favor, por aqui. O que lhes trago para beber?»",
-              "opcoes": [
-                "porto",
-                "da",
-                "Certo,",
-                "bere?",
-                "cosa",
-                "prego,",
-                "parte.",
-                "Che",
-                "da",
-                "vi",
-                "questa"
-              ],
-              "gabarito": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
-              "explicacao": "Escreva: Certo, prego, da questa parte. Che cosa vi porto da bere?",
-              "id": "it-029-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -776,19 +771,19 @@
               "id": "it-029-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
-              "respostaEsperada": "Certo, prego, da questa parte. Che cosa vi porto da bere?",
-              "explicacao": "Claro, por favor, por aqui. O que lhes trago para beber?",
-              "id": "it-029-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano (use Lei nos pedidos): Eu queria um café. O senhor poderia me ajudar? Eu precisaria de um conselho. Depois, diga a um amigo: no seu lugar, eu iria ao médico.",
               "respostaEsperada": "Vorrei un caffè. Potrebbe aiutarmi? Avrei bisogno di un consiglio. Al tuo posto, andrei dal medico.",
               "id": "it-029-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+              "respostaEsperada": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
+              "explicacao": "Queríamos água sem gás. E poderia nos trazer o cardápio, por favor?",
+              "id": "it-029-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -803,6 +798,15 @@
               "id": "it-029-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "avrei bisogno di",
+              "respostaEsperada": "avrei bisogno di",
+              "explicacao": "eu precisaria de",
+              "id": "it-029-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Potresti ___ la finestra? (abrir)",
               "opcoes": [
@@ -813,26 +817,6 @@
               "gabarito": "aprire",
               "explicacao": "Depois de «potresti» vem o infinitivo.",
               "id": "it-029-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Queríamos água sem gás. E poderia nos trazer o cardápio, por favor?»",
-              "opcoes": [
-                "portarci",
-                "per",
-                "potrebbe",
-                "menu,",
-                "E",
-                "dell'acqua",
-                "il",
-                "favore?",
-                "Vorremmo",
-                "naturale."
-              ],
-              "gabarito": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
-              "explicacao": "Escreva: Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
-              "id": "it-029-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -859,6 +843,26 @@
               "id": "it-029-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Já. Recomendo as tagliatelle: são a especialidade da casa.»",
+              "opcoes": [
+                "sono",
+                "Vi",
+                "casa.",
+                "la",
+                "consiglio",
+                "della",
+                "tagliatelle:",
+                "le",
+                "Subito.",
+                "specialità"
+              ],
+              "gabarito": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+              "explicacao": "Escreva: Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+              "id": "it-029-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Lei ___ andare dal medico. (deveria)",
               "opcoes": [
@@ -869,15 +873,6 @@
               "gabarito": "dovrebbe",
               "explicacao": "Conselho suave com Lei: «dovrebbe».",
               "id": "it-029-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
-              "respostaEsperada": "Vorremmo dell'acqua naturale. E potrebbe portarci il menu, per favore?",
-              "explicacao": "Queríamos água sem gás. E poderia nos trazer o cardápio, por favor?",
-              "id": "it-029-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -904,6 +899,15 @@
               "id": "it-029-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "se è possibile",
+              "respostaEsperada": "se è possibile",
+              "explicacao": "se for possível",
+              "id": "it-029-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Eu gostaria de viajar mais»?",
               "opcoes": [
@@ -916,23 +920,12 @@
               "id": "it-029-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Já. Recomendo as tagliatelle: são a especialidade da casa.»",
-              "opcoes": [
-                "sono",
-                "Vi",
-                "casa.",
-                "la",
-                "consiglio",
-                "della",
-                "tagliatelle:",
-                "le",
-                "Subito.",
-                "specialità"
-              ],
-              "gabarito": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
-              "explicacao": "Escreva: Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
-              "id": "it-029-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+              "respostaEsperada": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
+              "explicacao": "Já. Recomendo as tagliatelle: são a especialidade da casa.",
+              "id": "it-029-x06",
               "complemento": true
             },
             {
@@ -960,15 +953,6 @@
               "gabarito": "Potresti aiutarmi con questo file?",
               "explicacao": "Pedido a um amigo: «potresti».",
               "id": "it-029-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
-              "respostaEsperada": "Subito. Vi consiglio le tagliatelle: sono la specialità della casa.",
-              "explicacao": "Já. Recomendo as tagliatelle: são a especialidade da casa.",
-              "id": "it-029-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

@@ -556,24 +556,6 @@
               "id": "it-008-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Queria um cappuccino e um croissant, por favor.»",
-              "opcoes": [
-                "e",
-                "cornetto,",
-                "un",
-                "cappuccino",
-                "un",
-                "per",
-                "favore.",
-                "Vorrei"
-              ],
-              "gabarito": "Vorrei un cappuccino e un cornetto, per favore.",
-              "explicacao": "Escreva: Vorrei un cappuccino e un cornetto, per favore.",
-              "id": "it-008-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Il conto, per favore",
@@ -590,12 +572,18 @@
               "id": "it-008-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Vorrei un cappuccino e un cornetto, per favore.",
-              "respostaEsperada": "Vorrei un cappuccino e un cornetto, per favore.",
-              "explicacao": "Queria um cappuccino e um croissant, por favor.",
-              "id": "it-008-x02",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il latte»?",
+              "audio": "il latte",
+              "opcoes": [
+                "o queijo",
+                "cem",
+                "o leite",
+                "a conta"
+              ],
+              "gabarito": "o leite",
+              "explicacao": "«il latte» = o leite.",
+              "id": "it-008-x01",
               "complemento": true
             },
             {
@@ -605,6 +593,15 @@
               "respostaEsperada": "ventuno",
               "explicacao": "Escreva: ventuno.",
               "id": "it-008-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Vorrei un cappuccino e un cornetto, per favore.",
+              "respostaEsperada": "Vorrei un cappuccino e un cornetto, per favore.",
+              "explicacao": "Queria um cappuccino e um croissant, por favor.",
+              "id": "it-008-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -631,20 +628,6 @@
               "id": "it-008-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, queria também um pouco de água.»",
-              "opcoes": [
-                "anche",
-                "Sì,",
-                "vorrei",
-                "dell'acqua."
-              ],
-              "gabarito": "Sì, vorrei anche dell'acqua.",
-              "explicacao": "Escreva: Sì, vorrei anche dell'acqua.",
-              "id": "it-008-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Como se escreve 23?",
               "opcoes": [
@@ -655,6 +638,21 @@
               "gabarito": "ventitré",
               "explicacao": "«Tre» no fim de composto leva acento.",
               "id": "it-008-e09"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il prosciutto»?",
+              "audio": "il prosciutto",
+              "opcoes": [
+                "o leite",
+                "um sanduíche",
+                "um sorvete",
+                "o presunto"
+              ],
+              "gabarito": "o presunto",
+              "explicacao": "«il prosciutto» = o presunto.",
+              "id": "it-008-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -681,15 +679,6 @@
               "id": "it-008-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sì, vorrei anche dell'acqua.",
-              "respostaEsperada": "Sì, vorrei anche dell'acqua.",
-              "explicacao": "Sim, queria também um pouco de água.",
-              "id": "it-008-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Compro ___ panini. (uns)",
               "opcoes": [
@@ -700,6 +689,15 @@
               "gabarito": "dei",
               "explicacao": "Plural masculino: «dei».",
               "id": "it-008-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sì, vorrei anche dell'acqua.",
+              "respostaEsperada": "Sì, vorrei anche dell'acqua.",
+              "explicacao": "Sim, queria também um pouco de água.",
+              "id": "it-008-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -714,6 +712,21 @@
               "id": "it-008-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «settanta»?",
+              "audio": "settanta",
+              "opcoes": [
+                "trinta",
+                "setenta",
+                "o leite",
+                "um sorvete"
+              ],
+              "gabarito": "setenta",
+              "explicacao": "«settanta» = setenta.",
+              "id": "it-008-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Quant'___ ? (quanto é)",
               "opcoes": [
@@ -724,21 +737,6 @@
               "gabarito": "è",
               "explicacao": "«Quant'è?»",
               "id": "it-008-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «São três euros e cinquenta.»",
-              "opcoes": [
-                "Sono",
-                "tre",
-                "e",
-                "cinquanta.",
-                "euro"
-              ],
-              "gabarito": "Sono tre euro e cinquanta.",
-              "explicacao": "Escreva: Sono tre euro e cinquanta.",
-              "id": "it-008-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -769,19 +767,25 @@
               "id": "it-008-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sono tre euro e cinquanta.",
-              "respostaEsperada": "Sono tre euro e cinquanta.",
-              "explicacao": "São três euros e cinquenta.",
-              "id": "it-008-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Queria um café e um pouco de água, por favor. Quanto é?",
               "respostaEsperada": "Vorrei un caffè e dell'acqua, per favore. Quant'è?",
               "id": "it-008-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «un cappuccino»?",
+              "audio": "un cappuccino",
+              "opcoes": [
+                "um café (expresso)",
+                "cem",
+                "um sorvete",
+                "um cappuccino"
+              ],
+              "gabarito": "um cappuccino",
+              "explicacao": "«un cappuccino» = um cappuccino.",
+              "id": "it-008-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -796,6 +800,15 @@
               "id": "it-008-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Sono tre euro e cinquanta.",
+              "respostaEsperada": "Sono tre euro e cinquanta.",
+              "explicacao": "São três euros e cinquenta.",
+              "id": "it-008-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vorrei ___ zucchero. (um pouco de)",
               "opcoes": [
@@ -806,20 +819,6 @@
               "gabarito": "dello",
               "explicacao": "«Di + lo» vira «dello», antes de «z».",
               "id": "it-008-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Aqui está. Obrigado, bom dia!»",
-              "opcoes": [
-                "Grazie,",
-                "giornata!",
-                "buona",
-                "Ecco."
-              ],
-              "gabarito": "Ecco. Grazie, buona giornata!",
-              "explicacao": "Escreva: Ecco. Grazie, buona giornata!",
-              "id": "it-008-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -846,6 +845,21 @@
               "id": "it-008-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «il formaggio»?",
+              "audio": "il formaggio",
+              "opcoes": [
+                "trinta",
+                "noventa",
+                "o queijo",
+                "o presunto"
+              ],
+              "gabarito": "o queijo",
+              "explicacao": "«il formaggio» = o queijo.",
+              "id": "it-008-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ho ___ anni. (28)",
               "opcoes": [
@@ -856,15 +870,6 @@
               "gabarito": "ventotto",
               "explicacao": "A dezena perde a vogal final diante de «otto».",
               "id": "it-008-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ecco. Grazie, buona giornata!",
-              "respostaEsperada": "Ecco. Grazie, buona giornata!",
-              "explicacao": "Aqui está. Obrigado, bom dia!",
-              "id": "it-008-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -891,6 +896,15 @@
               "id": "it-008-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ecco. Grazie, buona giornata!",
+              "respostaEsperada": "Ecco. Grazie, buona giornata!",
+              "explicacao": "Aqui está. Obrigado, bom dia!",
+              "id": "it-008-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é o plural de «un tè»?",
               "opcoes": [
@@ -904,17 +918,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «il latte»?",
-              "audio": "il latte",
+              "enunciado": "O que significa «un tè»?",
+              "audio": "un tè",
               "opcoes": [
-                "o queijo",
-                "cem",
-                "o leite",
-                "a conta"
+                "oitenta",
+                "um chá",
+                "um café (expresso)",
+                "setenta"
               ],
-              "gabarito": "o leite",
-              "explicacao": "«il latte» = o leite.",
-              "id": "it-008-x09",
+              "gabarito": "um chá",
+              "explicacao": "«un tè» = um chá.",
+              "id": "it-008-x06",
               "complemento": true
             },
             {
@@ -943,21 +957,6 @@
               "gabarito": "Vorrei del formaggio e del pane.",
               "explicacao": "Partitivo: «del» antes de masculino que começa por consoante.",
               "id": "it-008-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «il prosciutto»?",
-              "audio": "il prosciutto",
-              "opcoes": [
-                "o leite",
-                "um sanduíche",
-                "um sorvete",
-                "o presunto"
-              ],
-              "gabarito": "o presunto",
-              "explicacao": "«il prosciutto» = o presunto.",
-              "id": "it-008-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

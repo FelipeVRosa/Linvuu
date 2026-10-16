@@ -63,21 +63,6 @@
             "id": "it-009-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Giulia, quando estudamos italiano juntos?»",
-            "opcoes": [
-              "Giulia,",
-              "studiamo",
-              "insieme?",
-              "italiano",
-              "quando"
-            ],
-            "gabarito": "Giulia, quando studiamo italiano insieme?",
-            "explicacao": "Escreva: Giulia, quando studiamo italiano insieme?",
-            "id": "it-009-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Che ora è",
@@ -94,12 +79,16 @@
             "id": "it-009-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Giulia, quando studiamo italiano insieme?",
-            "respostaEsperada": "Giulia, quando studiamo italiano insieme?",
-            "explicacao": "Giulia, quando estudamos italiano juntos?",
-            "id": "it-009-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Perfeito! Até quinta!»",
+            "opcoes": [
+              "giovedì!",
+              "A",
+              "Perfetto!"
+            ],
+            "gabarito": "Perfetto! A giovedì!",
+            "explicacao": "Escreva: Perfetto! A giovedì!",
+            "id": "it-009-x01",
             "complemento": true
           },
           {
@@ -109,6 +98,15 @@
             "respostaEsperada": "Oggi è lunedì",
             "explicacao": "Escreva: Oggi è lunedì.",
             "id": "it-009-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Giulia, quando studiamo italiano insieme?",
+            "respostaEsperada": "Giulia, quando studiamo italiano insieme?",
+            "explicacao": "Giulia, quando estudamos italiano juntos?",
+            "id": "it-009-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -135,24 +133,6 @@
             "id": "it-009-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Às segundas trabalho, e às terças tenho aula.»",
-            "opcoes": [
-              "il",
-              "e",
-              "martedì",
-              "lavoro,",
-              "Il",
-              "ho",
-              "lezione.",
-              "lunedì"
-            ],
-            "gabarito": "Il lunedì lavoro, e il martedì ho lezione.",
-            "explicacao": "Escreva: Il lunedì lavoro, e il martedì ho lezione.",
-            "id": "it-009-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «às segundas trabalho»?",
             "opcoes": [
@@ -163,6 +143,15 @@
             "gabarito": "Il lunedì lavoro.",
             "explicacao": "Hábito: artigo.",
             "id": "it-009-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Perfetto! A giovedì!",
+            "respostaEsperada": "Perfetto! A giovedì!",
+            "explicacao": "Perfeito! Até quinta!",
+            "id": "it-009-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -189,15 +178,6 @@
             "id": "it-009-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Il lunedì lavoro, e il martedì ho lezione.",
-            "respostaEsperada": "Il lunedì lavoro, e il martedì ho lezione.",
-            "explicacao": "Às segundas trabalho, e às terças tenho aula.",
-            "id": "it-009-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "A che ___ ? (hora)",
             "opcoes": [
@@ -208,6 +188,15 @@
             "gabarito": "ora",
             "explicacao": "«A che ora?»",
             "id": "it-009-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Il lunedì lavoro, e il martedì ho lezione.",
+            "respostaEsperada": "Il lunedì lavoro, e il martedì ho lezione.",
+            "explicacao": "Às segundas trabalho, e às terças tenho aula.",
+            "id": "it-009-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -222,6 +211,21 @@
             "id": "it-009-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «novembre»?",
+            "audio": "novembre",
+            "opcoes": [
+              "novembro",
+              "e meia",
+              "janeiro",
+              "meio-dia"
+            ],
+            "gabarito": "novembro",
+            "explicacao": "«novembre» = novembro.",
+            "id": "it-009-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Alle sei e ___ . (meia)",
             "opcoes": [
@@ -232,22 +236,6 @@
             "gabarito": "mezza",
             "explicacao": "«E mezza».",
             "id": "it-009-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Quinta está bem. A que horas?»",
-            "opcoes": [
-              "A",
-              "che",
-              "bene.",
-              "ora?",
-              "Giovedì",
-              "va"
-            ],
-            "gabarito": "Giovedì va bene. A che ora?",
-            "explicacao": "Escreva: Giovedì va bene. A che ora?",
-            "id": "it-009-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -277,19 +265,25 @@
             "id": "it-009-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Giovedì va bene. A che ora?",
-            "respostaEsperada": "Giovedì va bene. A che ora?",
-            "explicacao": "Quinta está bem. A que horas?",
-            "id": "it-009-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Que horas são? São duas e quinze. Hoje é quinta-feira, 12 de março.",
             "respostaEsperada": "Che ora è? Sono le due e un quarto. Oggi è giovedì 12 marzo.",
             "id": "it-009-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «Sono le tre»?",
+            "audio": "Sono le tre",
+            "opcoes": [
+              "agosto",
+              "são três horas",
+              "março",
+              "que horas são?"
+            ],
+            "gabarito": "são três horas",
+            "explicacao": "«Sono le tre» = são três horas.",
+            "id": "it-009-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -304,6 +298,15 @@
             "id": "it-009-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Giovedì va bene. A che ora?",
+            "respostaEsperada": "Giovedì va bene. A che ora?",
+            "explicacao": "Quinta está bem. A que horas?",
+            "id": "it-009-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Sono le sette e un ___. (quinze minutos)",
             "opcoes": [
@@ -314,24 +317,6 @@
             "gabarito": "quarto",
             "explicacao": "Quinze minutos se diz «un quarto».",
             "id": "it-009-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Às seis e meia da tarde, no bar?»",
-            "opcoes": [
-              "al",
-              "Alle",
-              "di",
-              "sei",
-              "bar?",
-              "e",
-              "mezza",
-              "sera,"
-            ],
-            "gabarito": "Alle sei e mezza di sera, al bar?",
-            "explicacao": "Escreva: Alle sei e mezza di sera, al bar?",
-            "id": "it-009-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -358,6 +343,21 @@
             "id": "it-009-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «aprile»?",
+            "audio": "aprile",
+            "opcoes": [
+              "julho",
+              "agosto",
+              "fevereiro",
+              "abril"
+            ],
+            "gabarito": "abril",
+            "explicacao": "«aprile» = abril.",
+            "id": "it-009-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Alle sei ___ sera. (da)",
             "opcoes": [
@@ -368,15 +368,6 @@
             "gabarito": "di",
             "explicacao": "Diz-se «di sera» para indicar o período do dia.",
             "id": "it-009-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Alle sei e mezza di sera, al bar?",
-            "respostaEsperada": "Alle sei e mezza di sera, al bar?",
-            "explicacao": "Às seis e meia da tarde, no bar?",
-            "id": "it-009-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -403,6 +394,15 @@
             "id": "it-009-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Alle sei e mezza di sera, al bar?",
+            "respostaEsperada": "Alle sei e mezza di sera, al bar?",
+            "explicacao": "Às seis e meia da tarde, no bar?",
+            "id": "it-009-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «em março»?",
             "opcoes": [
@@ -415,16 +415,18 @@
             "id": "it-009-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Perfeito! Até quinta!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «agosto»?",
+            "audio": "agosto",
             "opcoes": [
-              "giovedì!",
-              "A",
-              "Perfetto!"
+              "janeiro",
+              "domingo",
+              "julho",
+              "agosto"
             ],
-            "gabarito": "Perfetto! A giovedì!",
-            "explicacao": "Escreva: Perfetto! A giovedì!",
-            "id": "it-009-x09",
+            "gabarito": "agosto",
+            "explicacao": "«agosto» = agosto.",
+            "id": "it-009-x06",
             "complemento": true
           },
           {
@@ -453,15 +455,6 @@
             "gabarito": "Sono le sei meno un quarto.",
             "explicacao": "Para 5h45 diz-se «sei meno un quarto».",
             "id": "it-009-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Perfetto! A giovedì!",
-            "respostaEsperada": "Perfetto! A giovedì!",
-            "explicacao": "Perfeito! Até quinta!",
-            "id": "it-009-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

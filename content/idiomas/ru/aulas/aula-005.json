@@ -428,48 +428,27 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi, Olya! Este é meu amigo.»",
+              "enunciado": "Monte a frase: «Ele se chama Piotr. É um bom amigo.»",
               "opcoes": [
+                "хороший",
+                "Его",
+                "Он",
+                "Пётр.",
                 "друг.",
-                "Оля!",
-                "Это",
-                "Привет,",
-                "мой"
+                "зовут"
               ],
-              "gabarito": "Привет, Оля! Это мой друг.",
-              "explicacao": "Escreva: Привет, Оля! Это мой друг.",
+              "gabarito": "Его зовут Пётр. Он хороший друг.",
+              "explicacao": "Escreva: Его зовут Пётр. Он хороший друг.",
               "id": "ru-005-x01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Привет, Оля! Это мой друг.",
-              "respostaEsperada": "Привет, Оля! Это мой друг.",
-              "explicacao": "Oi, Olya! Este é meu amigo.",
+              "audio": "Его зовут Пётр. Он хороший друг.",
+              "respostaEsperada": "Его зовут Пётр. Он хороший друг.",
+              "explicacao": "Ele se chama Piotr. É um bom amigo.",
               "id": "ru-005-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Como ele se chama?»",
-              "opcoes": [
-                "его",
-                "зовут?",
-                "Как"
-              ],
-              "gabarito": "Как его зовут?",
-              "explicacao": "Escreva: Как его зовут?",
-              "id": "ru-005-x03",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Как его зовут?",
-              "respostaEsperada": "Как его зовут?",
-              "explicacao": "Como ele se chama?",
-              "id": "ru-005-x04",
               "complemento": true
             },
             {
@@ -486,43 +465,33 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Ele se chama Piotr. É um bom amigo.»",
+              "enunciado": "Monte a frase: «Oi! Muito prazer!»",
               "opcoes": [
-                "хороший",
-                "Его",
-                "Он",
-                "Пётр.",
-                "друг.",
-                "зовут"
+                "приятно!",
+                "Очень",
+                "Привет!"
               ],
-              "gabarito": "Его зовут Пётр. Он хороший друг.",
-              "explicacao": "Escreva: Его зовут Пётр. Он хороший друг.",
-              "id": "ru-005-x05",
+              "gabarito": "Привет! Очень приятно!",
+              "explicacao": "Escreva: Привет! Очень приятно!",
+              "id": "ru-005-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Привет, Оля! Это мой друг.",
+              "respostaEsperada": "Привет, Оля! Это мой друг.",
+              "explicacao": "Oi, Olya! Este é meu amigo.",
+              "id": "ru-005-r01",
               "complemento": true
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Его зовут Пётр. Он хороший друг.",
-              "respostaEsperada": "Его зовут Пётр. Он хороший друг.",
-              "explicacao": "Ele se chama Piotr. É um bom amigo.",
-              "id": "ru-005-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Muito prazer, Piotr! E quem é esta?»",
-              "opcoes": [
-                "приятно,",
-                "Очень",
-                "это?",
-                "Пётр!",
-                "кто",
-                "А"
-              ],
-              "gabarito": "Очень приятно, Пётр! А кто это?",
-              "explicacao": "Escreva: Очень приятно, Пётр! А кто это?",
-              "id": "ru-005-x07",
+              "audio": "Привет! Очень приятно!",
+              "respostaEsperada": "Привет! Очень приятно!",
+              "explicacao": "Oi! Muito prazer!",
+              "id": "ru-005-x04",
               "complemento": true
             },
             {
@@ -538,38 +507,57 @@
               "explicacao": "«Друг» masculino."
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Очень приятно, Пётр! А кто это?",
-              "respostaEsperada": "Очень приятно, Пётр! А кто это?",
-              "explicacao": "Muito prazer, Piotr! E quem é esta?",
-              "id": "ru-005-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Esta é minha amiga Anna. Ela é estudante nova.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «новая»?",
+              "audio": "новая",
               "opcoes": [
-                "подруга",
-                "моя",
-                "Это",
-                "Анна.",
-                "студентка.",
-                "Она",
-                "новая"
+                "nova",
+                "meu",
+                "amigo (m)",
+                "velha"
               ],
-              "gabarito": "Это моя подруга Анна. Она новая студентка.",
-              "explicacao": "Escreva: Это моя подруга Анна. Она новая студентка.",
-              "id": "ru-005-x09",
+              "gabarito": "nova",
+              "explicacao": "«новая» = nova.",
+              "id": "ru-005-x05",
               "complemento": true
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Это моя подруга Анна. Она новая студентка.",
-              "respostaEsperada": "Это моя подруга Анна. Она новая студентка.",
-              "explicacao": "Esta é minha amiga Anna. Ela é estudante nova.",
-              "id": "ru-005-x10",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «подруга»?",
+              "audio": "подруга",
+              "opcoes": [
+                "nosso",
+                "amiga (f)",
+                "minha",
+                "meu"
+              ],
+              "gabarito": "amiga (f)",
+              "explicacao": "«подруга» = amiga (f).",
+              "id": "ru-005-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Как его зовут?",
+              "respostaEsperada": "Как его зовут?",
+              "explicacao": "Como ele se chama?",
+              "id": "ru-005-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «его»?",
+              "audio": "его",
+              "opcoes": [
+                "boa",
+                "amiga (f)",
+                "dele",
+                "meu (neutro)"
+              ],
+              "gabarito": "dele",
+              "explicacao": "«его» = dele.",
+              "id": "ru-005-x07",
               "complemento": true
             },
             {
@@ -586,55 +574,33 @@
               "explicacao": "Plural: «мои»."
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Oi! Muito prazer!»",
-              "opcoes": [
-                "приятно!",
-                "Очень",
-                "Привет!"
-              ],
-              "gabarito": "Привет! Очень приятно!",
-              "explicacao": "Escreva: Привет! Очень приятно!",
-              "id": "ru-005-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Привет! Очень приятно!",
-              "respostaEsperada": "Привет! Очень приятно!",
-              "explicacao": "Oi! Muito prazer!",
-              "id": "ru-005-x12",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «новая»?",
-              "audio": "новая",
-              "opcoes": [
-                "nova",
-                "meu",
-                "amigo (m)",
-                "velha"
-              ],
-              "gabarito": "nova",
-              "explicacao": "«новая» = nova.",
-              "id": "ru-005-x13",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «подруга»?",
-              "audio": "подруга",
+              "enunciado": "O que significa «твоя»?",
+              "audio": "твоя",
               "opcoes": [
                 "nosso",
+                "tua",
                 "amiga (f)",
-                "minha",
+                "dele"
+              ],
+              "gabarito": "tua",
+              "explicacao": "«твоя» = tua.",
+              "id": "ru-005-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «наш»?",
+              "audio": "наш",
+              "opcoes": [
+                "tua",
+                "nosso",
+                "velho",
                 "meu"
               ],
-              "gabarito": "amiga (f)",
-              "explicacao": "«подруга» = amiga (f).",
-              "id": "ru-005-x14",
+              "gabarito": "nosso",
+              "explicacao": "«наш» = nosso.",
+              "id": "ru-005-x09",
               "complemento": true
             },
             {
@@ -652,47 +618,52 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «его»?",
-              "audio": "его",
+              "enunciado": "O que significa «женщина»?",
+              "audio": "женщина",
               "opcoes": [
-                "boa",
-                "amiga (f)",
-                "dele",
-                "meu (neutro)"
+                "mulher",
+                "meu (neutro)",
+                "meu",
+                "minha"
               ],
-              "gabarito": "dele",
-              "explicacao": "«его» = dele.",
-              "id": "ru-005-x15",
+              "gabarito": "mulher",
+              "explicacao": "«женщина» = mulher.",
+              "id": "ru-005-x10",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «твоя»?",
-              "audio": "твоя",
-              "opcoes": [
-                "nosso",
-                "tua",
-                "amiga (f)",
-                "dele"
-              ],
-              "gabarito": "tua",
-              "explicacao": "«твоя» = tua.",
-              "id": "ru-005-x16",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Очень приятно, Пётр! А кто это?",
+              "respostaEsperada": "Очень приятно, Пётр! А кто это?",
+              "explicacao": "Muito prazer, Piotr! E quem é esta?",
+              "id": "ru-005-r03",
               "complemento": true
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «наш»?",
-              "audio": "наш",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "моя подруга",
               "opcoes": [
-                "tua",
-                "nosso",
-                "velho",
-                "meu"
+                "подруга",
+                "моя"
               ],
-              "gabarito": "nosso",
-              "explicacao": "«наш» = nosso.",
-              "id": "ru-005-x17",
+              "gabarito": "моя подруга",
+              "explicacao": "Escreva: моя подруга",
+              "id": "ru-005-x11",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "хорошая подруга",
+              "opcoes": [
+                "подруга",
+                "хорошая"
+              ],
+              "gabarito": "хорошая подруга",
+              "explicacao": "Escreva: хорошая подруга",
+              "id": "ru-005-x12",
               "complemento": true
             },
             {
@@ -708,44 +679,34 @@
               "explicacao": "«Его» = dele."
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «женщина»?",
-              "audio": "женщина",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "мои друзья",
               "opcoes": [
-                "mulher",
-                "meu (neutro)",
-                "meu",
-                "minha"
+                "друзья",
+                "мои"
               ],
-              "gabarito": "mulher",
-              "explicacao": "«женщина» = mulher.",
-              "id": "ru-005-x18",
+              "gabarito": "мои друзья",
+              "explicacao": "Escreva: мои друзья",
+              "id": "ru-005-x13",
               "complemento": true
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Это моя подруга Анна. Она новая студентка.",
+              "respostaEsperada": "Это моя подруга Анна. Она новая студентка.",
+              "explicacao": "Esta é minha amiga Anna. Ela é estudante nova.",
+              "id": "ru-005-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
               "audio": "моя подруга",
-              "opcoes": [
-                "подруга",
-                "моя"
-              ],
-              "gabarito": "моя подруга",
+              "respostaEsperada": "моя подруга",
               "explicacao": "Escreva: моя подруга",
-              "id": "ru-005-x19",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "хорошая подруга",
-              "opcoes": [
-                "подруга",
-                "хорошая"
-              ],
-              "gabarito": "хорошая подруга",
-              "explicacao": "Escreva: хорошая подруга",
-              "id": "ru-005-x20",
+              "id": "ru-005-x14",
               "complemento": true
             },
             {
@@ -761,41 +722,13 @@
               "explicacao": "Maria é feminino → «Её»."
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "мои друзья",
-              "opcoes": [
-                "друзья",
-                "мои"
-              ],
-              "gabarito": "мои друзья",
-              "explicacao": "Escreva: мои друзья",
-              "id": "ru-005-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "моя подруга",
-              "respostaEsperada": "моя подруга",
-              "explicacao": "Escreva: моя подруга",
-              "id": "ru-005-x22",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "хорошая подруга",
               "respostaEsperada": "хорошая подруга",
               "explicacao": "Escreva: хорошая подруга",
-              "id": "ru-005-x23",
+              "id": "ru-005-x15",
               "complemento": true
-            },
-            {
-              "id": "ru-005-e12",
-              "tipo": "producao",
-              "enunciado": "Escreva 3 frases: 1 amigo, 1 amiga, 1 objeto, com possessivo correto.",
-              "respostaEsperada": "Это мой друг. Это моя подруга. Это моя книга."
             },
             {
               "tipo": "audio-recognition",
@@ -803,8 +736,14 @@
               "audio": "мои друзья",
               "respostaEsperada": "мои друзья",
               "explicacao": "Escreva: мои друзья",
-              "id": "ru-005-x24",
+              "id": "ru-005-x16",
               "complemento": true
+            },
+            {
+              "id": "ru-005-e12",
+              "tipo": "producao",
+              "enunciado": "Escreva 3 frases: 1 amigo, 1 amiga, 1 objeto, com possessivo correto.",
+              "respostaEsperada": "Это мой друг. Это моя подруга. Это моя книга."
             }
           ]
         },

@@ -631,24 +631,6 @@
               "id": "es-058-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Boa tarde, Marcos. Entre, este é o apartamento.»",
-              "opcoes": [
-                "es",
-                "Buenas",
-                "el",
-                "este",
-                "piso.",
-                "Marcos.",
-                "Pasa,",
-                "tardes,"
-              ],
-              "gabarito": "Buenas tardes, Marcos. Pasa, este es el piso.",
-              "explicacao": "Escreva: Buenas tardes, Marcos. Pasa, este es el piso.",
-              "id": "es-058-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "¿Se admiten mascotas?",
@@ -665,12 +647,21 @@
               "id": "es-058-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Buenas tardes, Marcos. Pasa, este es el piso.",
-              "respostaEsperada": "Buenas tardes, Marcos. Pasa, este es el piso.",
-              "explicacao": "Boa tarde, Marcos. Entre, este é o apartamento.",
-              "id": "es-058-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Perfeito. As despesas estão incluídas no aluguel?»",
+              "opcoes": [
+                "incluidos",
+                "¿Los",
+                "están",
+                "gastos",
+                "el",
+                "en",
+                "alquiler?",
+                "Perfecto."
+              ],
+              "gabarito": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
+              "explicacao": "Escreva: Perfecto. ¿Los gastos están incluidos en el alquiler?",
+              "id": "es-058-x01",
               "complemento": true
             },
             {
@@ -680,6 +671,15 @@
               "respostaEsperada": "Antes de firmar, quisiera leer el contrato",
               "explicacao": "Escreva: Antes de firmar, quisiera leer el contrato.",
               "id": "es-058-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Buenas tardes, Marcos. Pasa, este es el piso.",
+              "respostaEsperada": "Buenas tardes, Marcos. Pasa, este es el piso.",
+              "explicacao": "Boa tarde, Marcos. Entre, este é o apartamento.",
+              "id": "es-058-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -706,22 +706,6 @@
               "id": "es-058-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Obrigado. É muito iluminado. É mobiliado?»",
-              "opcoes": [
-                "luminoso.",
-                "Gracias.",
-                "Es",
-                "muy",
-                "amueblado?",
-                "¿Está"
-              ],
-              "gabarito": "Gracias. Es muy luminoso. ¿Está amueblado?",
-              "explicacao": "Escreva: Gracias. Es muy luminoso. ¿Está amueblado?",
-              "id": "es-058-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase diz que o problema dura há dois dias?",
               "opcoes": [
@@ -732,6 +716,15 @@
               "gabarito": "Llevo dos días sin internet.",
               "explicacao": "Use «llevar» + tempo + «sin».",
               "id": "es-058-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
+              "respostaEsperada": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
+              "explicacao": "Perfeito. As despesas estão incluídas no aluguel?",
+              "id": "es-058-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -758,15 +751,6 @@
               "id": "es-058-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Gracias. Es muy luminoso. ¿Está amueblado?",
-              "respostaEsperada": "Gracias. Es muy luminoso. ¿Está amueblado?",
-              "explicacao": "Obrigado. É muito iluminado. É mobiliado?",
-              "id": "es-058-x04",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual palavra é usada para «celular» na América Latina?",
               "opcoes": [
@@ -777,6 +761,15 @@
               "gabarito": "celular",
               "explicacao": "Na Espanha diz-se «móvil»; na América Latina, «celular».",
               "id": "es-058-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Gracias. Es muy luminoso. ¿Está amueblado?",
+              "respostaEsperada": "Gracias. Es muy luminoso. ¿Está amueblado?",
+              "explicacao": "Obrigado. É muito iluminado. É mobiliado?",
+              "id": "es-058-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -791,6 +784,24 @@
               "id": "es-058-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, desde que não incomode os vizinhos.»",
+              "opcoes": [
+                "siempre",
+                "moleste",
+                "no",
+                "que",
+                "Sí,",
+                "a",
+                "los",
+                "vecinos."
+              ],
+              "gabarito": "Sí, siempre que no moleste a los vecinos.",
+              "explicacao": "Escreva: Sí, siempre que no moleste a los vecinos.",
+              "id": "es-058-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Acepto el piso ___ que me lo dejen amueblado.",
               "opcoes": [
@@ -801,24 +812,6 @@
               "gabarito": "siempre",
               "explicacao": "«Siempre que» + subjuntivo expressa condição.",
               "id": "es-058-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Perfeito. As despesas estão incluídas no aluguel?»",
-              "opcoes": [
-                "incluidos",
-                "¿Los",
-                "están",
-                "gastos",
-                "el",
-                "en",
-                "alquiler?",
-                "Perfecto."
-              ],
-              "gabarito": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
-              "explicacao": "Escreva: Perfecto. ¿Los gastos están incluidos en el alquiler?",
-              "id": "es-058-x05",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -845,15 +838,6 @@
               "id": "es-058-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
-              "respostaEsperada": "Perfecto. ¿Los gastos están incluidos en el alquiler?",
-              "explicacao": "Perfeito. As despesas estão incluídas no aluguel?",
-              "id": "es-058-x06",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "El agua está ___. (incluir)",
               "opcoes": [
@@ -864,6 +848,15 @@
               "gabarito": "incluida",
               "explicacao": "«Agua» é feminina e singular.",
               "id": "es-058-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Sí, siempre que no moleste a los vecinos.",
+              "respostaEsperada": "Sí, siempre que no moleste a los vecinos.",
+              "explicacao": "Sim, desde que não incomode os vizinhos.",
+              "id": "es-058-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -878,6 +871,15 @@
               "id": "es-058-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "¿Cuántos meses de fianza piden?",
+              "respostaEsperada": "¿Cuántos meses de fianza piden?",
+              "explicacao": "Quantos meses de caução vocês pedem?",
+              "id": "es-058-r03",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «¿Se admiten mascotas?»",
               "opcoes": [
@@ -888,21 +890,6 @@
               "gabarito": "¿Se admiten mascotas?",
               "explicacao": "«Se» impersonal + verbo concordando com «mascotas».",
               "id": "es-058-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Quantos meses de caução vocês pedem?»",
-              "opcoes": [
-                "¿Cuántos",
-                "fianza",
-                "de",
-                "meses",
-                "piden?"
-              ],
-              "gabarito": "¿Cuántos meses de fianza piden?",
-              "explicacao": "Escreva: ¿Cuántos meses de fianza piden?",
-              "id": "es-058-x07",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -927,6 +914,21 @@
               "id": "es-058-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «sacar dinero»?",
+              "audio": "sacar dinero",
+              "opcoes": [
+                "sacar dinheiro (também «retirar»)",
+                "os dados de internet",
+                "o aluguel (e o valor mensal)",
+                "o sinal, a cobertura"
+              ],
+              "gabarito": "sacar dinheiro (também «retirar»)",
+              "explicacao": "«sacar dinero» = sacar dinheiro (também «retirar»).",
+              "id": "es-058-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Quisiera ___ dinero. (sacar)",
               "opcoes": [
@@ -937,15 +939,6 @@
               "gabarito": "sacar",
               "explicacao": "Depois de «quisiera», usa-se o infinitivo.",
               "id": "es-058-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "¿Cuántos meses de fianza piden?",
-              "respostaEsperada": "¿Cuántos meses de fianza piden?",
-              "explicacao": "Quantos meses de caução vocês pedem?",
-              "id": "es-058-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -972,6 +965,15 @@
               "id": "es-058-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
+              "respostaEsperada": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
+              "explicacao": "Mais uma pergunta: aceitam animais? Tenho um gato.",
+              "id": "es-058-r04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "La luz y el internet los paga el ___ . (quem mora de aluguel)",
               "opcoes": [
@@ -984,22 +986,18 @@
               "id": "es-058-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Mais uma pergunta: aceitam animais? Tenho um gato.»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «el saldo»?",
+              "audio": "el saldo",
               "opcoes": [
-                "admiten",
-                "¿se",
-                "pregunta",
-                "Una",
-                "un",
-                "gato.",
-                "Tengo",
-                "mascotas?",
-                "más:"
+                "o contrato",
+                "o saldo",
+                "o plano, a tarifa",
+                "a conta bancária"
               ],
-              "gabarito": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
-              "explicacao": "Escreva: Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
-              "id": "es-058-x09",
+              "gabarito": "o saldo",
+              "explicacao": "«el saldo» = o saldo.",
+              "id": "es-058-x06",
               "complemento": true
             },
             {
@@ -1025,15 +1023,6 @@
               "gabarito": "Me gustaría saber si hay cobertura.",
               "explicacao": "«Me gustaría» + infinitivo suaviza o pedido.",
               "id": "es-058-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
-              "respostaEsperada": "Una pregunta más: ¿se admiten mascotas? Tengo un gato.",
-              "explicacao": "Mais uma pergunta: aceitam animais? Tenho um gato.",
-              "id": "es-058-x10",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",

@@ -63,25 +63,6 @@
             "id": "fr-024-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia, doutor. Estou muito cansada ultimamente.»",
-            "opcoes": [
-              "en",
-              "Bonjour,",
-              "Je",
-              "fatiguée",
-              "ce",
-              "docteur.",
-              "suis",
-              "moment.",
-              "très"
-            ],
-            "gabarito": "Bonjour, docteur. Je suis très fatiguée en ce moment.",
-            "explicacao": "Escreva: Bonjour, docteur. Je suis très fatiguée en ce moment.",
-            "id": "fr-024-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Pourriez-vous m'aider",
@@ -98,12 +79,18 @@
             "id": "fr-024-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Bonjour, docteur. Je suis très fatiguée en ce moment.",
-            "respostaEsperada": "Bonjour, docteur. Je suis très fatiguée en ce moment.",
-            "explicacao": "Bom dia, doutor. Estou muito cansada ultimamente.",
-            "id": "fr-024-x02",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la réunion»?",
+            "audio": "la réunion",
+            "opcoes": [
+              "tentar",
+              "a reunião",
+              "o médico",
+              "mudar"
+            ],
+            "gabarito": "a reunião",
+            "explicacao": "«la réunion» = a reunião.",
+            "id": "fr-024-x01",
             "complemento": true
           },
           {
@@ -113,6 +100,15 @@
             "respostaEsperada": "J'aimerais voyager",
             "explicacao": "Escreva: J'aimerais voyager.",
             "id": "fr-024-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Bonjour, docteur. Je suis très fatiguée en ce moment.",
+            "respostaEsperada": "Bonjour, docteur. Je suis très fatiguée en ce moment.",
+            "explicacao": "Bom dia, doutor. Estou muito cansada ultimamente.",
+            "id": "fr-024-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -139,23 +135,6 @@
             "id": "fr-024-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Quantas horas a senhora dorme por noite?»",
-            "opcoes": [
-              "nuit",
-              "?",
-              "dormez",
-              "Vous",
-              "par",
-              "d'heures",
-              "combien"
-            ],
-            "gabarito": "Vous dormez combien d'heures par nuit ?",
-            "explicacao": "Escreva: Vous dormez combien d'heures par nuit ?",
-            "id": "fr-024-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase dá um conselho?",
             "opcoes": [
@@ -166,6 +145,21 @@
             "gabarito": "À ta place, je dormirais.",
             "explicacao": "Conselho: condicional.",
             "id": "fr-024-e09"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «je pourrais»?",
+            "audio": "je pourrais",
+            "opcoes": [
+              "o médico",
+              "eu faria",
+              "eu poderia",
+              "eu gostaria"
+            ],
+            "gabarito": "eu poderia",
+            "explicacao": "«je pourrais» = eu poderia.",
+            "id": "fr-024-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -192,15 +186,6 @@
             "id": "fr-024-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Vous dormez combien d'heures par nuit ?",
-            "respostaEsperada": "Vous dormez combien d'heures par nuit ?",
-            "explicacao": "Quantas horas a senhora dorme por noite?",
-            "id": "fr-024-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Si nous avions le temps, nous ___ . (voyager)",
             "opcoes": [
@@ -211,6 +196,15 @@
             "gabarito": "voyagerions",
             "explicacao": "Nous: -ions.",
             "id": "fr-024-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Vous dormez combien d'heures par nuit ?",
+            "respostaEsperada": "Vous dormez combien d'heures par nuit ?",
+            "explicacao": "Quantas horas a senhora dorme por noite?",
+            "id": "fr-024-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -225,6 +219,21 @@
             "id": "fr-024-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «je ferais»?",
+            "audio": "je ferais",
+            "opcoes": [
+              "eu faria",
+              "se eu tivesse",
+              "mudar",
+              "tentar"
+            ],
+            "gabarito": "eu faria",
+            "explicacao": "«je ferais» = eu faria.",
+            "id": "fr-024-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Elle ___ venir. (poder, condicional)",
             "opcoes": [
@@ -235,24 +244,6 @@
             "gabarito": "pourrait",
             "explicacao": "Pourrait.",
             "id": "fr-024-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Durmo cerca de cinco horas. Trabalho muito.»",
-            "opcoes": [
-              "Je",
-              "travaille",
-              "beaucoup.",
-              "environ",
-              "dors",
-              "heures.",
-              "cinq",
-              "Je"
-            ],
-            "gabarito": "Je dors environ cinq heures. Je travaille beaucoup.",
-            "explicacao": "Escreva: Je dors environ cinq heures. Je travaille beaucoup.",
-            "id": "fr-024-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -283,19 +274,25 @@
             "id": "fr-024-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Je dors environ cinq heures. Je travaille beaucoup.",
-            "respostaEsperada": "Je dors environ cinq heures. Je travaille beaucoup.",
-            "explicacao": "Durmo cerca de cinco horas. Trabalho muito.",
-            "id": "fr-024-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Eu gostaria de um café. Se eu tivesse dinheiro, eu viajaria. No seu lugar, eu dormiria mais.",
             "respostaEsperada": "Je voudrais un café. Si j'avais de l'argent, je voyagerais. À ta place, je dormirais plus.",
             "id": "fr-024-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le conseil»?",
+            "audio": "le conseil",
+            "opcoes": [
+              "aconselhar",
+              "se eu fosse rico",
+              "descansar",
+              "o conselho"
+            ],
+            "gabarito": "o conselho",
+            "explicacao": "«le conseil» = o conselho.",
+            "id": "fr-024-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -310,6 +307,15 @@
             "id": "fr-024-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Je dors environ cinq heures. Je travaille beaucoup.",
+            "respostaEsperada": "Je dors environ cinq heures. Je travaille beaucoup.",
+            "explicacao": "Durmo cerca de cinco horas. Trabalho muito.",
+            "id": "fr-024-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "À ta place, je ___ . (partir)",
             "opcoes": [
@@ -320,25 +326,6 @@
             "gabarito": "partirais",
             "explicacao": "Conselho: «je» + condicional.",
             "id": "fr-024-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O senhor acha que eu poderia tomar vitaminas?»",
-            "opcoes": [
-              "Vous",
-              "vitamines",
-              "pourrais",
-              "prendre",
-              "?",
-              "pensez",
-              "des",
-              "que",
-              "je"
-            ],
-            "gabarito": "Vous pensez que je pourrais prendre des vitamines ?",
-            "explicacao": "Escreva: Vous pensez que je pourrais prendre des vitamines ?",
-            "id": "fr-024-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -365,6 +352,21 @@
             "id": "fr-024-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «changer»?",
+            "audio": "changer",
+            "opcoes": [
+              "aconselhar",
+              "mudar",
+              "no seu lugar",
+              "tentar"
+            ],
+            "gabarito": "mudar",
+            "explicacao": "«changer» = mudar.",
+            "id": "fr-024-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Si on ___ au cinéma ? (ir — sugestão)",
             "opcoes": [
@@ -375,15 +377,6 @@
             "gabarito": "allait",
             "explicacao": "Sugestão: «si» + imparfait.",
             "id": "fr-024-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Vous pensez que je pourrais prendre des vitamines ?",
-            "respostaEsperada": "Vous pensez que je pourrais prendre des vitamines ?",
-            "explicacao": "O senhor acha que eu poderia tomar vitaminas?",
-            "id": "fr-024-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -410,6 +403,15 @@
             "id": "fr-024-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Vous pensez que je pourrais prendre des vitamines ?",
+            "respostaEsperada": "Vous pensez que je pourrais prendre des vitamines ?",
+            "explicacao": "O senhor acha que eu poderia tomar vitaminas?",
+            "id": "fr-024-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual pedido é o mais educado?",
             "opcoes": [
@@ -423,17 +425,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «la réunion»?",
-            "audio": "la réunion",
+            "enunciado": "O que significa «la fatigue»?",
+            "audio": "la fatigue",
             "opcoes": [
-              "tentar",
-              "a reunião",
-              "o médico",
-              "mudar"
+              "seria preciso",
+              "o conselho",
+              "o cansaço",
+              "eu poderia"
             ],
-            "gabarito": "a reunião",
-            "explicacao": "«la réunion» = a reunião.",
-            "id": "fr-024-x09",
+            "gabarito": "o cansaço",
+            "explicacao": "«la fatigue» = o cansaço.",
+            "id": "fr-024-x06",
             "complemento": true
           },
           {
@@ -462,21 +464,6 @@
             "gabarito": "Je voudrais habiter à la mer.",
             "explicacao": "«Je voudrais» + infinitivo.",
             "id": "fr-024-e27"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «je pourrais»?",
-            "audio": "je pourrais",
-            "opcoes": [
-              "o médico",
-              "eu faria",
-              "eu poderia",
-              "eu gostaria"
-            ],
-            "gabarito": "eu poderia",
-            "explicacao": "«je pourrais» = eu poderia.",
-            "id": "fr-024-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

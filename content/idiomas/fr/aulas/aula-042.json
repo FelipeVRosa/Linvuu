@@ -470,6 +470,22 @@
               "id": "fr-042-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "On apprend en pratiquant",
+              "respostaEsperada": "On apprend en pratiquant",
+              "explicacao": "Escreva: On apprend en pratiquant.",
+              "id": "fr-042-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Avant de partir, il a fermé la porte",
+              "respostaEsperada": "Avant de partir, il a fermé la porte",
+              "explicacao": "Escreva: Avant de partir, il a fermé la porte.",
+              "id": "fr-042-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Não consigo progredir em francês. O que você me aconselha?»",
               "opcoes": [
@@ -493,35 +509,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "On apprend en pratiquant",
-              "respostaEsperada": "On apprend en pratiquant",
-              "explicacao": "Escreva: On apprend en pratiquant.",
-              "id": "fr-042-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Avant de partir, il a fermé la porte",
-              "respostaEsperada": "Avant de partir, il a fermé la porte",
-              "explicacao": "Escreva: Avant de partir, il a fermé la porte.",
-              "id": "fr-042-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
-              "respostaEsperada": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
-              "explicacao": "Não consigo progredir em francês. O que você me aconselha?",
-              "id": "fr-042-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Après avoir mangé, il est sorti",
               "respostaEsperada": "Après avoir mangé, il est sorti",
               "explicacao": "Escreva: Après avoir mangé, il est sorti.",
               "id": "fr-042-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Je lis déjà, mais je ne comprends pas tout.",
+              "respostaEsperada": "Je lis déjà, mais je ne comprends pas tout.",
+              "explicacao": "Já leio, mas não entendo tudo.",
+              "id": "fr-042-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -548,26 +548,6 @@
               "id": "fr-042-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Lendo um pouco todo dia, você vai progredir rapidamente.»",
-              "opcoes": [
-                "En",
-                "peu",
-                "lisant",
-                "tu",
-                "progresser.",
-                "un",
-                "vas",
-                "chaque",
-                "jour,",
-                "vite"
-              ],
-              "gabarito": "En lisant un peu chaque jour, tu vas vite progresser.",
-              "explicacao": "Escreva: En lisant un peu chaque jour, tu vas vite progresser.",
-              "id": "fr-042-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -578,6 +558,15 @@
               "gabarito": "Je mange en lisant.",
               "explicacao": "«En» obrigatório.",
               "id": "fr-042-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+              "respostaEsperada": "Je n'arrive pas à progresser en français. Que me conseilles-tu ?",
+              "explicacao": "Não consigo progredir em francês. O que você me aconselha?",
+              "id": "fr-042-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -604,15 +593,6 @@
               "id": "fr-042-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "En lisant un peu chaque jour, tu vas vite progresser.",
-              "respostaEsperada": "En lisant un peu chaque jour, tu vas vite progresser.",
-              "explicacao": "Lendo um pouco todo dia, você vai progredir rapidamente.",
-              "id": "fr-042-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Avant ___ partir, il a mangé.",
               "opcoes": [
@@ -623,6 +603,15 @@
               "gabarito": "de",
               "explicacao": "«Avant de».",
               "id": "fr-042-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Et pour parler ?",
+              "respostaEsperada": "Et pour parler ?",
+              "explicacao": "E para falar?",
+              "id": "fr-042-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -637,6 +626,26 @@
               "id": "fr-042-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Lendo um pouco todo dia, você vai progredir rapidamente.»",
+              "opcoes": [
+                "En",
+                "peu",
+                "lisant",
+                "tu",
+                "progresser.",
+                "un",
+                "vas",
+                "chaque",
+                "jour,",
+                "vite"
+              ],
+              "gabarito": "En lisant un peu chaque jour, tu vas vite progresser.",
+              "explicacao": "Escreva: En lisant un peu chaque jour, tu vas vite progresser.",
+              "id": "fr-042-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Tu progresseras en ___ . (praticar)",
               "opcoes": [
@@ -647,25 +656,6 @@
               "gabarito": "pratiquant",
               "explicacao": "Gérondif.",
               "id": "fr-042-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Já leio, mas não entendo tudo.»",
-              "opcoes": [
-                "je",
-                "mais",
-                "ne",
-                "lis",
-                "déjà,",
-                "comprends",
-                "pas",
-                "tout.",
-                "Je"
-              ],
-              "gabarito": "Je lis déjà, mais je ne comprends pas tout.",
-              "explicacao": "Escreva: Je lis déjà, mais je ne comprends pas tout.",
-              "id": "fr-042-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -699,19 +689,19 @@
               "id": "fr-042-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Je lis déjà, mais je ne comprends pas tout.",
-              "respostaEsperada": "Je lis déjà, mais je ne comprends pas tout.",
-              "explicacao": "Já leio, mas não entendo tudo.",
-              "id": "fr-042-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Eu ando ouvindo música. Praticando, você vai progredir. Ele saiu sem dizer adeus.",
               "respostaEsperada": "Je marche en écoutant de la musique. En pratiquant, tu vas progresser. Il est parti sans dire au revoir.",
               "id": "fr-042-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "En lisant un peu chaque jour, tu vas vite progresser.",
+              "respostaEsperada": "En lisant un peu chaque jour, tu vas vite progresser.",
+              "explicacao": "Lendo um pouco todo dia, você vai progredir rapidamente.",
+              "id": "fr-042-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -726,6 +716,15 @@
               "id": "fr-042-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "en même temps",
+              "respostaEsperada": "en même temps",
+              "explicacao": "ao mesmo tempo",
+              "id": "fr-042-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "En ___ tôt, tu éviteras les bouchons. (partir)",
               "opcoes": [
@@ -736,20 +735,6 @@
               "gabarito": "partant",
               "explicacao": "Condição: «en partant» = se você partir.",
               "id": "fr-042-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E para falar?»",
-              "opcoes": [
-                "pour",
-                "?",
-                "parler",
-                "Et"
-              ],
-              "gabarito": "Et pour parler ?",
-              "explicacao": "Escreva: Et pour parler ?",
-              "id": "fr-042-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -776,6 +761,21 @@
               "id": "fr-042-e21"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «en lisant»?",
+              "audio": "en lisant",
+              "opcoes": [
+                "viajando",
+                "antes de",
+                "sem",
+                "lendo"
+              ],
+              "gabarito": "lendo",
+              "explicacao": "«en lisant» = lendo.",
+              "id": "fr-042-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "En ___ du bureau, il a pris un taxi. (sair)",
               "opcoes": [
@@ -786,15 +786,6 @@
               "gabarito": "sortant",
               "explicacao": "Tempo: «en sortant» = ao sair.",
               "id": "fr-042-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Et pour parler ?",
-              "respostaEsperada": "Et pour parler ?",
-              "explicacao": "E para falar?",
-              "id": "fr-042-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -821,6 +812,15 @@
               "id": "fr-042-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "une personne parlant français",
+              "respostaEsperada": "une personne parlant français",
+              "explicacao": "uma pessoa que fala francês",
+              "id": "fr-042-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase usa o gérondif para expressar condição?",
               "opcoes": [
@@ -834,17 +834,17 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «en lisant»?",
-              "audio": "en lisant",
+              "enunciado": "O que significa «en voyageant»?",
+              "audio": "en voyageant",
               "opcoes": [
                 "viajando",
-                "antes de",
-                "sem",
+                "ao voltar",
+                "estudando",
                 "lendo"
               ],
-              "gabarito": "lendo",
-              "explicacao": "«en lisant» = lendo.",
-              "id": "fr-042-x09",
+              "gabarito": "viajando",
+              "explicacao": "«en voyageant» = viajando.",
+              "id": "fr-042-x06",
               "complemento": true
             },
             {
@@ -873,21 +873,6 @@
               "gabarito": "Il lit le journal en mangeant.",
               "explicacao": "Simultaneidade: «en» + particípio presente.",
               "id": "fr-042-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «en voyageant»?",
-              "audio": "en voyageant",
-              "opcoes": [
-                "viajando",
-                "ao voltar",
-                "estudando",
-                "lendo"
-              ],
-              "gabarito": "viajando",
-              "explicacao": "«en voyageant» = viajando.",
-              "id": "fr-042-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

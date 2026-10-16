@@ -493,22 +493,6 @@
               "id": "es-040-e03"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Deve ter perdido o ônibus, como sempre.»",
-              "opcoes": [
-                "autobús,",
-                "Habrá",
-                "siempre.",
-                "perdido",
-                "como",
-                "el"
-              ],
-              "gabarito": "Habrá perdido el autobús, como siempre.",
-              "explicacao": "Escreva: Habrá perdido el autobús, como siempre.",
-              "id": "es-040-x01",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Habremos llegado antes de las ocho",
@@ -525,12 +509,23 @@
               "id": "es-040-e05"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Habrá perdido el autobús, como siempre.",
-              "respostaEsperada": "Habrá perdido el autobús, como siempre.",
-              "explicacao": "Deve ter perdido o ônibus, como sempre.",
-              "id": "es-040-x02",
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Já deve ter visto a minha mensagem. Escrevi para ele há dez minutos.»",
+              "opcoes": [
+                "minutos.",
+                "mensaje.",
+                "Ya",
+                "mi",
+                "habrá",
+                "visto",
+                "Le",
+                "diez",
+                "escribí",
+                "hace"
+              ],
+              "gabarito": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+              "explicacao": "Escreva: Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+              "id": "es-040-x01",
               "complemento": true
             },
             {
@@ -544,6 +539,15 @@
               "gabarito": "habremos terminado",
               "explicacao": "Futuro de «haber» (habremos) + particípio.",
               "id": "es-040-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Habrá perdido el autobús, como siempre.",
+              "respostaEsperada": "Habrá perdido el autobús, como siempre.",
+              "explicacao": "Deve ter perdido o ônibus, como sempre.",
+              "id": "es-040-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -570,26 +574,6 @@
               "id": "es-040-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Já deve ter visto a minha mensagem. Escrevi para ele há dez minutos.»",
-              "opcoes": [
-                "minutos.",
-                "mensaje.",
-                "Ya",
-                "mi",
-                "habrá",
-                "visto",
-                "Le",
-                "diez",
-                "escribí",
-                "hace"
-              ],
-              "gabarito": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
-              "explicacao": "Escreva: Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
-              "id": "es-040-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase expressa obrigação, e não suposição?",
               "opcoes": [
@@ -600,6 +584,15 @@
               "gabarito": "Debes hacer los deberes.",
               "explicacao": "«Deber» sem «de» é obrigação; «deber de» é suposição.",
               "id": "es-040-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+              "respostaEsperada": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
+              "explicacao": "Já deve ter visto a minha mensagem. Escrevi para ele há dez minutos.",
+              "id": "es-040-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -626,15 +619,6 @@
               "id": "es-040-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
-              "respostaEsperada": "Ya habrá visto mi mensaje. Le escribí hace diez minutos.",
-              "explicacao": "Já deve ter visto a minha mensagem. Escrevi para ele há dez minutos.",
-              "id": "es-040-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Ellos ___ llegado ya. (devem ter chegado)",
               "opcoes": [
@@ -645,6 +629,15 @@
               "gabarito": "habrán",
               "explicacao": "Terceira pessoa do plural no futuro: «habrán».",
               "id": "es-040-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "para el viernes",
+              "respostaEsperada": "para el viernes",
+              "explicacao": "até sexta-feira",
+              "id": "es-040-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -659,18 +652,6 @@
               "id": "es-040-e13"
             },
             {
-              "tipo": "fill-gap",
-              "enunciado": "Tú ya ___ visto el mensaje. (já deve ter visto)",
-              "opcoes": [
-                "habrás",
-                "habías",
-                "has"
-              ],
-              "gabarito": "habrás",
-              "explicacao": "Segunda pessoa do singular no futuro: «habrás».",
-              "id": "es-040-e14"
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Então deve ter vindo correndo.»",
               "opcoes": [
@@ -681,8 +662,20 @@
               ],
               "gabarito": "Pues habrás venido corriendo.",
               "explicacao": "Escreva: Pues habrás venido corriendo.",
-              "id": "es-040-x05",
+              "id": "es-040-x03",
               "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Tú ya ___ visto el mensaje. (já deve ter visto)",
+              "opcoes": [
+                "habrás",
+                "habías",
+                "has"
+              ],
+              "gabarito": "habrás",
+              "explicacao": "Segunda pessoa do singular no futuro: «habrás».",
+              "id": "es-040-e14"
             },
             {
               "tipo": "fill-gap",
@@ -712,15 +705,6 @@
               "id": "es-040-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Pues habrás venido corriendo.",
-              "respostaEsperada": "Pues habrás venido corriendo.",
-              "explicacao": "Então deve ter vindo correndo.",
-              "id": "es-040-x06",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «¿Dónde estará Pablo?»",
               "opcoes": [
@@ -731,6 +715,15 @@
               "gabarito": "¿Dónde estará Pablo?",
               "explicacao": "Pergunta com futuro de suposição.",
               "id": "es-040-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Pues habrás venido corriendo.",
+              "respostaEsperada": "Pues habrás venido corriendo.",
+              "explicacao": "Então deve ter vindo correndo.",
+              "id": "es-040-x04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -748,25 +741,19 @@
               "id": "es-040-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "a final de mes",
+              "respostaEsperada": "a final de mes",
+              "explicacao": "no fim do mês",
+              "id": "es-040-r03",
+              "complemento": true
+            },
+            {
               "tipo": "producao",
               "enunciado": "Escreva em espanhol: Até as seis, já terei terminado.",
               "respostaEsperada": "Para las seis, ya habré terminado.",
               "id": "es-040-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Quase. Preciso me sentar um momento.»",
-              "opcoes": [
-                "un",
-                "momento.",
-                "sentarme",
-                "Casi.",
-                "Necesito"
-              ],
-              "gabarito": "Casi. Necesito sentarme un momento.",
-              "explicacao": "Escreva: Casi. Necesito sentarme un momento.",
-              "id": "es-040-x07",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -787,6 +774,21 @@
               "id": "es-040-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Quase. Preciso me sentar um momento.»",
+              "opcoes": [
+                "un",
+                "momento.",
+                "sentarme",
+                "Casi.",
+                "Necesito"
+              ],
+              "gabarito": "Casi. Necesito sentarme un momento.",
+              "explicacao": "Escreva: Casi. Necesito sentarme un momento.",
+              "id": "es-040-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Ellos ya ___ llegado. (suposição)",
               "opcoes": [
@@ -797,15 +799,6 @@
               "gabarito": "habrán",
               "explicacao": "Suposição sobre algo já ocorrido: futuro perfecto.",
               "id": "es-040-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Casi. Necesito sentarme un momento.",
-              "respostaEsperada": "Casi. Necesito sentarme un momento.",
-              "explicacao": "Quase. Preciso me sentar um momento.",
-              "id": "es-040-x08",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -832,6 +825,15 @@
               "id": "es-040-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "todavía no habré llegado",
+              "respostaEsperada": "todavía no habré llegado",
+              "explicacao": "ainda não terei chegado",
+              "id": "es-040-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «Ele já deve ter saído»?",
               "opcoes": [
@@ -844,18 +846,12 @@
               "id": "es-040-e25"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «ya habré terminado»?",
-              "audio": "ya habré terminado",
-              "opcoes": [
-                "já terei terminado",
-                "com certeza",
-                "perder o ônibus",
-                "chegar tarde"
-              ],
-              "gabarito": "já terei terminado",
-              "explicacao": "«ya habré terminado» = já terei terminado.",
-              "id": "es-040-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Casi. Necesito sentarme un momento.",
+              "respostaEsperada": "Casi. Necesito sentarme un momento.",
+              "explicacao": "Quase. Preciso me sentar um momento.",
+              "id": "es-040-x06",
               "complemento": true
             },
             {
@@ -881,21 +877,6 @@
               "gabarito": "habré hecho",
               "explicacao": "«Hacer» tem particípio irregular: «hecho».",
               "id": "es-040-e27"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «perder el autobús»?",
-              "audio": "perder el autobús",
-              "opcoes": [
-                "suponho que",
-                "perder o ônibus",
-                "estragar-se, quebrar",
-                "com certeza"
-              ],
-              "gabarito": "perder o ônibus",
-              "explicacao": "«perder el autobús» = perder o ônibus.",
-              "id": "es-040-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

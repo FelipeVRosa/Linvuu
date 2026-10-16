@@ -37,45 +37,6 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Max, como vocês comemoram o Ano Novo no Brasil?»",
-            "opcoes": [
-              "вы",
-              "Макс,",
-              "отмечаете",
-              "год",
-              "в",
-              "Бразилии?",
-              "как",
-              "Новый"
-            ],
-            "gabarito": "Макс, как вы отмечаете Новый год в Бразилии?",
-            "explicacao": "Escreva: Макс, как вы отмечаете Новый год в Бразилии?",
-            "id": "ru-073-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Макс, как вы отмечаете Новый год в Бразилии?",
-            "respostaEsperada": "Макс, как вы отмечаете Новый год в Бразилии?",
-            "explicacao": "Max, como vocês comemoram o Ano Novo no Brasil?",
-            "id": "ru-073-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "В России принято ___ цветы.",
-            "opcoes": [
-              "дарить",
-              "дарим",
-              "дарил"
-            ],
-            "gabarito": "дарить",
-            "explicacao": "«принято» + infinitivo.",
-            "id": "ru-073-e02"
-          },
-          {
-            "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «Normalmente nos reunimos na praia e vemos os fogos. E vocês?»",
             "opcoes": [
               "мы",
@@ -92,8 +53,20 @@
             ],
             "gabarito": "Обычно мы собираемся на пляже и смотрим салют. А у вас?",
             "explicacao": "Escreva: Обычно мы собираемся на пляже и смотрим салют. А у вас?",
-            "id": "ru-073-x03",
+            "id": "ru-073-x01",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "В России принято ___ цветы.",
+            "opcoes": [
+              "дарить",
+              "дарим",
+              "дарил"
+            ],
+            "gabarito": "дарить",
+            "explicacao": "«принято» + infinitivo.",
+            "id": "ru-073-e02"
           },
           {
             "tipo": "audio-recognition",
@@ -101,7 +74,7 @@
             "audio": "Обычно мы собираемся на пляже и смотрим салют. А у вас?",
             "respostaEsperada": "Обычно мы собираемся на пляже и смотрим салют. А у вас?",
             "explicacao": "Normalmente nos reunimos na praia e vemos os fogos. E vocês?",
-            "id": "ru-073-x04",
+            "id": "ru-073-x02",
             "complemento": true
           },
           {
@@ -133,7 +106,16 @@
             ],
             "gabarito": "В России принято встречать Новый год дома, за большим столом.",
             "explicacao": "Escreva: В России принято встречать Новый год дома, за большим столом.",
-            "id": "ru-073-x05",
+            "id": "ru-073-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Макс, как вы отмечаете Новый год в Бразилии?",
+            "respostaEsperada": "Макс, как вы отмечаете Новый год в Бразилии?",
+            "explicacao": "Max, como vocês comemoram o Ano Novo no Brasil?",
+            "id": "ru-073-r01",
             "complemento": true
           },
           {
@@ -142,7 +124,7 @@
             "audio": "В России принято встречать Новый год дома, за большим столом.",
             "respostaEsperada": "В России принято встречать Новый год дома, за большим столом.",
             "explicacao": "Na Rússia é costume receber o Ano Novo em casa, à mesa farta.",
-            "id": "ru-073-x06",
+            "id": "ru-073-x04",
             "complemento": true
           },
           {
@@ -159,25 +141,17 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E o que é costume dar de presente?»",
+            "enunciado": "Monte a frase: «Com prazer! Obrigado pelo convite.»",
             "opcoes": [
-              "А",
-              "принято",
-              "дарить?",
-              "что"
+              "удовольствием!",
+              "С",
+              "приглашение.",
+              "за",
+              "Спасибо"
             ],
-            "gabarito": "А что принято дарить?",
-            "explicacao": "Escreva: А что принято дарить?",
-            "id": "ru-073-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "А что принято дарить?",
-            "respostaEsperada": "А что принято дарить?",
-            "explicacao": "E o que é costume dar de presente?",
-            "id": "ru-073-x08",
+            "gabarito": "С удовольствием! Спасибо за приглашение.",
+            "explicacao": "Escreva: С удовольствием! Спасибо за приглашение.",
+            "id": "ru-073-x05",
             "complemento": true
           },
           {
@@ -193,28 +167,36 @@
             "id": "ru-073-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Panquecas? Considera-se que elas trazem calor?»",
-            "opcoes": [
-              "Считается,",
-              "что",
-              "тепло?",
-              "они",
-              "приносят",
-              "Блины?"
-            ],
-            "gabarito": "Блины? Считается, что они приносят тепло?",
-            "explicacao": "Escreva: Блины? Считается, что они приносят тепло?",
-            "id": "ru-073-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "С удовольствием! Спасибо за приглашение.",
+            "respostaEsperada": "С удовольствием! Спасибо за приглашение.",
+            "explicacao": "Com prazer! Obrigado pelo convite.",
+            "id": "ru-073-x06",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Блины? Считается, что они приносят тепло?",
-            "respostaEsperada": "Блины? Считается, что они приносят тепло?",
-            "explicacao": "Panquecas? Considera-se que elas trazem calor?",
-            "id": "ru-073-x10",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "А что принято дарить?",
+            "respostaEsperada": "А что принято дарить?",
+            "explicacao": "E o que é costume dar de presente?",
+            "id": "ru-073-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «традиция»?",
+            "audio": "традиция",
+            "opcoes": [
+              "Natal ortodoxo",
+              "queimar",
+              "tradição",
+              "inverno"
+            ],
+            "gabarito": "tradição",
+            "explicacao": "«традиция» = tradição.",
+            "id": "ru-073-x07",
             "complemento": true
           },
           {
@@ -230,23 +212,6 @@
             "id": "ru-073-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, e venha à nossa Maslenitsa!»",
-            "opcoes": [
-              "Масленицу!",
-              "Да,",
-              "приходи",
-              "к",
-              "на",
-              "и",
-              "нам"
-            ],
-            "gabarito": "Да, и приходи к нам на Масленицу!",
-            "explicacao": "Escreva: Да, и приходи к нам на Масленицу!",
-            "id": "ru-073-x11",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Принято» significa:",
             "opcoes": [
@@ -259,27 +224,18 @@
             "id": "ru-073-e07"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, и приходи к нам на Масленицу!",
-            "respostaEsperada": "Да, и приходи к нам на Масленицу!",
-            "explicacao": "Sim, e venha à nossa Maslenitsa!",
-            "id": "ru-073-x12",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Com prazer! Obrigado pelo convite.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «отмечать»?",
+            "audio": "отмечать",
             "opcoes": [
-              "удовольствием!",
-              "С",
-              "приглашение.",
-              "за",
-              "Спасибо"
+              "despedida",
+              "comemorar",
+              "festa, feriado",
+              "queimar"
             ],
-            "gabarito": "С удовольствием! Спасибо за приглашение.",
-            "explicacao": "Escreva: С удовольствием! Спасибо за приглашение.",
-            "id": "ru-073-x13",
+            "gabarito": "comemorar",
+            "explicacao": "«отмечать» = comemorar.",
+            "id": "ru-073-x08",
             "complemento": true
           },
           {
@@ -295,27 +251,42 @@
             "id": "ru-073-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "С удовольствием! Спасибо за приглашение.",
-            "respostaEsperada": "С удовольствием! Спасибо за приглашение.",
-            "explicacao": "Com prazer! Obrigado pelo convite.",
-            "id": "ru-073-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «угощать»?",
+            "audio": "угощать",
+            "opcoes": [
+              "costume",
+              "comemorar",
+              "queimar",
+              "oferecer comida"
+            ],
+            "gabarito": "oferecer comida",
+            "explicacao": "«угощать» = oferecer comida.",
+            "id": "ru-073-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Блины? Считается, что они приносят тепло?",
+            "respostaEsperada": "Блины? Считается, что они приносят тепло?",
+            "explicacao": "Panquecas? Considera-se que elas trazem calor?",
+            "id": "ru-073-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «традиция»?",
-            "audio": "традиция",
+            "enunciado": "O que significa «Рождество»?",
+            "audio": "Рождество",
             "opcoes": [
               "Natal ortodoxo",
-              "queimar",
-              "tradição",
-              "inverno"
+              "despedida",
+              "inverno",
+              "comemorar"
             ],
-            "gabarito": "tradição",
-            "explicacao": "«традиция» = tradição.",
-            "id": "ru-073-x15",
+            "gabarito": "Natal ortodoxo",
+            "explicacao": "«Рождество» = Natal ortodoxo.",
+            "id": "ru-073-x10",
             "complemento": true
           },
           {
@@ -332,32 +303,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «отмечать»?",
-            "audio": "отмечать",
+            "enunciado": "O que significa «проводы»?",
+            "audio": "проводы",
             "opcoes": [
-              "despedida",
-              "comemorar",
-              "festa, feriado",
-              "queimar"
-            ],
-            "gabarito": "comemorar",
-            "explicacao": "«отмечать» = comemorar.",
-            "id": "ru-073-x16",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «угощать»?",
-            "audio": "угощать",
-            "opcoes": [
-              "costume",
-              "comemorar",
+              "inverno",
               "queimar",
-              "oferecer comida"
+              "festa, feriado",
+              "despedida"
             ],
-            "gabarito": "oferecer comida",
-            "explicacao": "«угощать» = oferecer comida.",
-            "id": "ru-073-x17",
+            "gabarito": "despedida",
+            "explicacao": "«проводы» = despedida.",
+            "id": "ru-073-x11",
             "complemento": true
           },
           {
@@ -376,32 +332,42 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «Рождество»?",
-            "audio": "Рождество",
+            "enunciado": "O que significa «гости»?",
+            "audio": "гости",
             "opcoes": [
-              "Natal ortodoxo",
-              "despedida",
-              "inverno",
-              "comemorar"
+              "convidados",
+              "mesa",
+              "costume",
+              "despedida"
             ],
-            "gabarito": "Natal ortodoxo",
-            "explicacao": "«Рождество» = Natal ortodoxo.",
-            "id": "ru-073-x18",
+            "gabarito": "convidados",
+            "explicacao": "«гости» = convidados.",
+            "id": "ru-073-x12",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «проводы»?",
-            "audio": "проводы",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, и приходи к нам на Масленицу!",
+            "respostaEsperada": "Да, и приходи к нам на Масленицу!",
+            "explicacao": "Sim, e venha à nossa Maslenitsa!",
+            "id": "ru-073-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Считается, что блины приносят тепло",
             "opcoes": [
-              "inverno",
-              "queimar",
-              "festa, feriado",
-              "despedida"
+              "блины",
+              "что",
+              "тепло",
+              "приносят",
+              "Считается,"
             ],
-            "gabarito": "despedida",
-            "explicacao": "«проводы» = despedida.",
-            "id": "ru-073-x19",
+            "gabarito": "Считается, что блины приносят тепло",
+            "explicacao": "Escreva: Считается, что блины приносят тепло",
+            "id": "ru-073-x13",
             "complemento": true
           },
           {
@@ -418,45 +384,6 @@
             "id": "ru-073-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «гости»?",
-            "audio": "гости",
-            "opcoes": [
-              "convidados",
-              "mesa",
-              "costume",
-              "despedida"
-            ],
-            "gabarito": "convidados",
-            "explicacao": "«гости» = convidados.",
-            "id": "ru-073-x20",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Считается, что блины приносят тепло",
-            "opcoes": [
-              "блины",
-              "что",
-              "тепло",
-              "приносят",
-              "Считается,"
-            ],
-            "gabarito": "Считается, что блины приносят тепло",
-            "explicacao": "Escreva: Считается, что блины приносят тепло",
-            "id": "ru-073-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Мы отмечаем Новый год дома",
-            "respostaEsperada": "Мы отмечаем Новый год дома",
-            "explicacao": "«отмечать» + acusativo.",
-            "id": "ru-073-e12"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Мы отмечаем Новый год дома",
@@ -469,8 +396,16 @@
             ],
             "gabarito": "Мы отмечаем Новый год дома",
             "explicacao": "Escreva: Мы отмечаем Новый год дома",
-            "id": "ru-073-x22",
+            "id": "ru-073-x14",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Мы отмечаем Новый год дома",
+            "respostaEsperada": "Мы отмечаем Новый год дома",
+            "explicacao": "«отмечать» + acusativo.",
+            "id": "ru-073-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -478,7 +413,7 @@
             "audio": "Считается, что блины приносят тепло",
             "respostaEsperada": "Считается, что блины приносят тепло",
             "explicacao": "Escreva: Считается, что блины приносят тепло",
-            "id": "ru-073-x23",
+            "id": "ru-073-x15",
             "complemento": true
           },
           {

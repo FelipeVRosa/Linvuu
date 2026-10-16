@@ -63,6 +63,22 @@
             "id": "it-013-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Devo studiare domani",
+            "respostaEsperada": "Devo studiare domani",
+            "explicacao": "Escreva: Devo studiare domani.",
+            "id": "it-013-e04"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "So nuotare molto bene",
+            "respostaEsperada": "So nuotare molto bene",
+            "explicacao": "Escreva: So nuotare molto bene.",
+            "id": "it-013-e05"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Monte a frase: «Claro, mas agora tenho de terminar uma ligação. Pode esperar dez minutos?»",
             "opcoes": [
@@ -86,35 +102,19 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Devo studiare domani",
-            "respostaEsperada": "Devo studiare domani",
-            "explicacao": "Escreva: Devo studiare domani.",
-            "id": "it-013-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "So nuotare molto bene",
-            "respostaEsperada": "So nuotare molto bene",
-            "explicacao": "Escreva: So nuotare molto bene.",
-            "id": "it-013-e05"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Certo, ma adesso devo finire una telefonata. Puoi aspettare dieci minuti?",
-            "respostaEsperada": "Certo, ma adesso devo finire una telefonata. Puoi aspettare dieci minuti?",
-            "explicacao": "Claro, mas agora tenho de terminar uma ligação. Pode esperar dez minutos?",
-            "id": "it-013-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Conosco una buona pizzeria",
             "respostaEsperada": "Conosco una buona pizzeria",
             "explicacao": "Escreva: Conosco una buona pizzeria.",
             "id": "it-013-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sì, nessun problema. Devo anche parlare con il capo.",
+            "respostaEsperada": "Sì, nessun problema. Devo anche parlare con il capo.",
+            "explicacao": "Sim, sem problema. Também tenho de falar com o chefe.",
+            "id": "it-013-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -141,25 +141,6 @@
             "id": "it-013-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, sem problema. Também tenho de falar com o chefe.»",
-            "opcoes": [
-              "Devo",
-              "parlare",
-              "nessun",
-              "problema.",
-              "anche",
-              "il",
-              "con",
-              "capo.",
-              "Sì,"
-            ],
-            "gabarito": "Sì, nessun problema. Devo anche parlare con il capo.",
-            "explicacao": "Escreva: Sì, nessun problema. Devo anche parlare con il capo.",
-            "id": "it-013-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase usa «conoscere» corretamente?",
             "opcoes": [
@@ -170,6 +151,15 @@
             "gabarito": "Conosco Marco.",
             "explicacao": "Pessoa: «conoscere».",
             "id": "it-013-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Certo, ma adesso devo finire una telefonata. Puoi aspettare dieci minuti?",
+            "respostaEsperada": "Certo, ma adesso devo finire una telefonata. Puoi aspettare dieci minuti?",
+            "explicacao": "Claro, mas agora tenho de terminar uma ligação. Pode esperar dez minutos?",
+            "id": "it-013-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -196,15 +186,6 @@
             "id": "it-013-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sì, nessun problema. Devo anche parlare con il capo.",
-            "respostaEsperada": "Sì, nessun problema. Devo anche parlare con il capo.",
-            "explicacao": "Sim, sem problema. Também tenho de falar com o chefe.",
-            "id": "it-013-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "Noi ___ partire presto. (querer)",
             "opcoes": [
@@ -217,6 +198,15 @@
             "id": "it-013-e12"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "No, non la conosco ancora. Vuoi presentarmela?",
+            "respostaEsperada": "No, non la conosco ancora. Vuoi presentarmela?",
+            "explicacao": "Não, ainda não a conheço. Quer me apresentá-la?",
+            "id": "it-013-r02",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Voi ___ pagare alla cassa. (dovere)",
             "opcoes": [
@@ -227,18 +217,6 @@
             "gabarito": "dovete",
             "explicacao": "«Voi dovete».",
             "id": "it-013-e13"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "___ nuotare? (tu, sapere)",
-            "opcoes": [
-              "Sai",
-              "So",
-              "Sa"
-            ],
-            "gabarito": "Sai",
-            "explicacao": "«Tu sai».",
-            "id": "it-013-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -258,8 +236,20 @@
             ],
             "gabarito": "Conosci già la nuova collega? Sa usare molto bene quel programma.",
             "explicacao": "Escreva: Conosci già la nuova collega? Sa usare molto bene quel programma.",
-            "id": "it-013-x05",
+            "id": "it-013-x03",
             "complemento": true
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ nuotare? (tu, sapere)",
+            "opcoes": [
+              "Sai",
+              "So",
+              "Sa"
+            ],
+            "gabarito": "Sai",
+            "explicacao": "«Tu sai».",
+            "id": "it-013-e14"
           },
           {
             "tipo": "sentence-ordering",
@@ -288,19 +278,19 @@
             "id": "it-013-e16"
           },
           {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: Eu quero aprender italiano. Devo estudar todos os dias.",
+            "respostaEsperada": "Voglio imparare l'italiano. Devo studiare tutti i giorni.",
+            "id": "it-013-e17"
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Conosci già la nuova collega? Sa usare molto bene quel programma.",
             "respostaEsperada": "Conosci già la nuova collega? Sa usare molto bene quel programma.",
             "explicacao": "Você já conhece a nova colega? Ela sabe usar muito bem aquele programa.",
-            "id": "it-013-x06",
+            "id": "it-013-x04",
             "complemento": true
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva em italiano: Eu quero aprender italiano. Devo estudar todos os dias.",
-            "respostaEsperada": "Voglio imparare l'italiano. Devo studiare tutti i giorni.",
-            "id": "it-013-e17"
           },
           {
             "tipo": "fill-gap",
@@ -315,6 +305,15 @@
             "id": "it-013-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Volentieri. Dopo il caffè andiamo da lei.",
+            "respostaEsperada": "Volentieri. Dopo il caffè andiamo da lei.",
+            "explicacao": "Com prazer. Depois do café vamos até ela.",
+            "id": "it-013-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Marco ___ studiare stasera. (tem de)",
             "opcoes": [
@@ -325,23 +324,6 @@
             "gabarito": "deve",
             "explicacao": "Com «lui», «dovere» é «deve».",
             "id": "it-013-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Não, ainda não a conheço. Quer me apresentá-la?»",
-            "opcoes": [
-              "non",
-              "No,",
-              "ancora.",
-              "Vuoi",
-              "conosco",
-              "la",
-              "presentarmela?"
-            ],
-            "gabarito": "No, non la conosco ancora. Vuoi presentarmela?",
-            "explicacao": "Escreva: No, non la conosco ancora. Vuoi presentarmela?",
-            "id": "it-013-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -368,6 +350,21 @@
             "id": "it-013-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «aprire»?",
+            "audio": "aprire",
+            "opcoes": [
+              "abrir",
+              "cedo, depressa",
+              "cozinhar",
+              "repetir"
+            ],
+            "gabarito": "abrir",
+            "explicacao": "«aprire» = abrir.",
+            "id": "it-013-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Non ___ dov'è la banca. (eu não sei)",
             "opcoes": [
@@ -378,15 +375,6 @@
             "gabarito": "so",
             "explicacao": "Saber um fato ou uma resposta é «sapere»; «conoscere» é para pessoas e lugares.",
             "id": "it-013-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "No, non la conosco ancora. Vuoi presentarmela?",
-            "respostaEsperada": "No, non la conosco ancora. Vuoi presentarmela?",
-            "explicacao": "Não, ainda não a conheço. Quer me apresentá-la?",
-            "id": "it-013-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -413,6 +401,15 @@
             "id": "it-013-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "avere voglia di",
+            "respostaEsperada": "avere voglia di",
+            "explicacao": "ter vontade de",
+            "id": "it-013-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual verbo se usa para «conhecer Roma»?",
             "opcoes": [
@@ -425,20 +422,18 @@
             "id": "it-013-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Com prazer. Depois do café vamos até ela.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la finestra»?",
+            "audio": "la finestra",
             "opcoes": [
-              "caffè",
-              "Volentieri.",
-              "da",
-              "il",
-              "Dopo",
-              "andiamo",
-              "lei."
+              "agora",
+              "a janela",
+              "fechar",
+              "cozinhar"
             ],
-            "gabarito": "Volentieri. Dopo il caffè andiamo da lei.",
-            "explicacao": "Escreva: Volentieri. Dopo il caffè andiamo da lei.",
-            "id": "it-013-x09",
+            "gabarito": "a janela",
+            "explicacao": "«la finestra» = a janela.",
+            "id": "it-013-x06",
             "complemento": true
           },
           {
@@ -465,15 +460,6 @@
             "gabarito": "Non voglio uscire stasera.",
             "explicacao": "A negação vai antes do modal.",
             "id": "it-013-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Volentieri. Dopo il caffè andiamo da lei.",
-            "respostaEsperada": "Volentieri. Dopo il caffè andiamo da lei.",
-            "explicacao": "Com prazer. Depois do café vamos até ela.",
-            "id": "it-013-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

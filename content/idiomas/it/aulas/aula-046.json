@@ -511,6 +511,22 @@
               "id": "it-046-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Parla come se sapesse tutto",
+              "respostaEsperada": "Parla come se sapesse tutto",
+              "explicacao": "Escreva: Parla come se sapesse tutto.",
+              "id": "it-046-e04"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Magari fosse domenica",
+              "respostaEsperada": "Magari fosse domenica",
+              "explicacao": "Escreva: Magari fosse domenica.",
+              "id": "it-046-e05"
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Monte a frase: «Sabe, eu achava que você já tinha partido para as férias.»",
               "opcoes": [
@@ -533,35 +549,19 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Parla come se sapesse tutto",
-              "respostaEsperada": "Parla come se sapesse tutto",
-              "explicacao": "Escreva: Parla come se sapesse tutto.",
-              "id": "it-046-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Magari fosse domenica",
-              "respostaEsperada": "Magari fosse domenica",
-              "explicacao": "Escreva: Magari fosse domenica.",
-              "id": "it-046-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Sai, pensavo che tu fossi già partito per le vacanze.",
-              "respostaEsperada": "Sai, pensavo che tu fossi già partito per le vacanze.",
-              "explicacao": "Sabe, eu achava que você já tinha partido para as férias.",
-              "id": "it-046-x02",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Se solo avessi studiato",
               "respostaEsperada": "Se solo avessi studiato",
               "explicacao": "Escreva: Se solo avessi studiato.",
               "id": "it-046-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Magari potessi partire anch'io! Sono stanchissima.",
+              "respostaEsperada": "Magari potessi partire anch'io! Sono stanchissima.",
+              "explicacao": "Tomara eu pudesse partir também! Estou cansadíssima.",
+              "id": "it-046-r01",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -588,22 +588,6 @@
               "id": "it-046-e08"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Tomara eu pudesse partir também! Estou cansadíssima.»",
-              "opcoes": [
-                "partire",
-                "Magari",
-                "potessi",
-                "stanchissima.",
-                "Sono",
-                "anch'io!"
-              ],
-              "gabarito": "Magari potessi partire anch'io! Sono stanchissima.",
-              "explicacao": "Escreva: Magari potessi partire anch'io! Sono stanchissima.",
-              "id": "it-046-x03",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -614,6 +598,15 @@
               "gabarito": "Pensavo che fosse già partito.",
               "explicacao": "Trapassato.",
               "id": "it-046-e09"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Sai, pensavo che tu fossi già partito per le vacanze.",
+              "respostaEsperada": "Sai, pensavo che tu fossi già partito per le vacanze.",
+              "explicacao": "Sabe, eu achava que você já tinha partido para as férias.",
+              "id": "it-046-x02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -640,15 +633,6 @@
               "id": "it-046-e11"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Magari potessi partire anch'io! Sono stanchissima.",
-              "respostaEsperada": "Magari potessi partire anch'io! Sono stanchissima.",
-              "explicacao": "Tomara eu pudesse partir também! Estou cansadíssima.",
-              "id": "it-046-x04",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Volevo che lei ___ con noi. (venire)",
               "opcoes": [
@@ -659,6 +643,15 @@
               "gabarito": "venisse",
               "explicacao": "Imperfetto.",
               "id": "it-046-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Parli come se non ti riposassi mai.",
+              "respostaEsperada": "Parli come se non ti riposassi mai.",
+              "explicacao": "Você fala como se nunca descansasse.",
+              "id": "it-046-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -673,6 +666,24 @@
               "id": "it-046-e13"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Pois é! Trabalho como se estivesse sempre atrasada.»",
+              "opcoes": [
+                "Lavoro",
+                "in",
+                "come",
+                "se",
+                "fossi",
+                "sempre",
+                "Infatti!",
+                "ritardo."
+              ],
+              "gabarito": "Infatti! Lavoro come se fossi sempre in ritardo.",
+              "explicacao": "Escreva: Infatti! Lavoro come se fossi sempre in ritardo.",
+              "id": "it-046-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vorrei che tu mi ___ . (ascoltare)",
               "opcoes": [
@@ -683,23 +694,6 @@
               "gabarito": "ascoltassi",
               "explicacao": "Pedido educado.",
               "id": "it-046-e14"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você fala como se nunca descansasse.»",
-              "opcoes": [
-                "come",
-                "Parli",
-                "se",
-                "riposassi",
-                "ti",
-                "non",
-                "mai."
-              ],
-              "gabarito": "Parli come se non ti riposassi mai.",
-              "explicacao": "Escreva: Parli come se non ti riposassi mai.",
-              "id": "it-046-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -730,19 +724,19 @@
               "id": "it-046-e16"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Parli come se non ti riposassi mai.",
-              "respostaEsperada": "Parli come se non ti riposassi mai.",
-              "explicacao": "Você fala como se nunca descansasse.",
-              "id": "it-046-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em italiano: Eu achava que ele tinha saído. Queria que você ficasse. Ela fala como se soubesse tudo.",
               "respostaEsperada": "Pensavo che fosse uscito. Volevo che tu restassi. Parla come se sapesse tutto.",
               "id": "it-046-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Infatti! Lavoro come se fossi sempre in ritardo.",
+              "respostaEsperada": "Infatti! Lavoro come se fossi sempre in ritardo.",
+              "explicacao": "Pois é! Trabalho como se estivesse sempre atrasada.",
+              "id": "it-046-x04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -757,6 +751,15 @@
               "id": "it-046-e18"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Vorrei che tu prendessi almeno un fine settimana.",
+              "respostaEsperada": "Vorrei che tu prendessi almeno un fine settimana.",
+              "explicacao": "Eu queria que você tirasse pelo menos um fim de semana.",
+              "id": "it-046-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Volevo che voi ___ con me. (viessem)",
               "opcoes": [
@@ -767,24 +770,6 @@
               "gabarito": "veniste",
               "explicacao": "Congiuntivo imperfetto de «venire» com «voi»: «veniste».",
               "id": "it-046-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Pois é! Trabalho como se estivesse sempre atrasada.»",
-              "opcoes": [
-                "Lavoro",
-                "in",
-                "come",
-                "se",
-                "fossi",
-                "sempre",
-                "Infatti!",
-                "ritardo."
-              ],
-              "gabarito": "Infatti! Lavoro come se fossi sempre in ritardo.",
-              "explicacao": "Escreva: Infatti! Lavoro come se fossi sempre in ritardo.",
-              "id": "it-046-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -811,6 +796,26 @@
               "id": "it-046-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Eu achava que o chefe tinha lhe dado alguns dias de folga.»",
+              "opcoes": [
+                "ti",
+                "libero.",
+                "capo",
+                "il",
+                "qualche",
+                "dato",
+                "che",
+                "Credevo",
+                "avesse",
+                "giorno"
+              ],
+              "gabarito": "Credevo che il capo ti avesse dato qualche giorno libero.",
+              "explicacao": "Escreva: Credevo che il capo ti avesse dato qualche giorno libero.",
+              "id": "it-046-x05",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Vorrei che tu mi ___. (ajudasse)",
               "opcoes": [
@@ -821,15 +826,6 @@
               "gabarito": "aiutassi",
               "explicacao": "«Vorrei che» pede congiuntivo imperfetto.",
               "id": "it-046-e22"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Infatti! Lavoro come se fossi sempre in ritardo.",
-              "respostaEsperada": "Infatti! Lavoro come se fossi sempre in ritardo.",
-              "explicacao": "Pois é! Trabalho como se estivesse sempre atrasada.",
-              "id": "it-046-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -856,6 +852,15 @@
               "id": "it-046-e24"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Hai ragione. Se solo avessi un po' di tempo!",
+              "respostaEsperada": "Hai ragione. Se solo avessi un po' di tempo!",
+              "explicacao": "Você tem razão. Se ao menos eu tivesse um pouco de tempo!",
+              "id": "it-046-r04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que expressa «magari» + imperfetto?",
               "opcoes": [
@@ -868,23 +873,12 @@
               "id": "it-046-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu achava que o chefe tinha lhe dado alguns dias de folga.»",
-              "opcoes": [
-                "ti",
-                "libero.",
-                "capo",
-                "il",
-                "qualche",
-                "dato",
-                "che",
-                "Credevo",
-                "avesse",
-                "giorno"
-              ],
-              "gabarito": "Credevo che il capo ti avesse dato qualche giorno libero.",
-              "explicacao": "Escreva: Credevo che il capo ti avesse dato qualche giorno libero.",
-              "id": "it-046-x09",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Credevo che il capo ti avesse dato qualche giorno libero.",
+              "respostaEsperada": "Credevo che il capo ti avesse dato qualche giorno libero.",
+              "explicacao": "Eu achava que o chefe tinha lhe dado alguns dias de folga.",
+              "id": "it-046-x06",
               "complemento": true
             },
             {
@@ -912,15 +906,6 @@
               "gabarito": "Credevo che fosse già uscito.",
               "explicacao": "Congiuntivo trapassato: «fosse uscito».",
               "id": "it-046-e27"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Credevo che il capo ti avesse dato qualche giorno libero.",
-              "respostaEsperada": "Credevo che il capo ti avesse dato qualche giorno libero.",
-              "explicacao": "Eu achava que o chefe tinha lhe dado alguns dias de folga.",
-              "id": "it-046-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

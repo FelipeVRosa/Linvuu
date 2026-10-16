@@ -63,6 +63,14 @@
             "id": "it-060-e03"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Che cosa significa questa parola",
+            "respostaEsperada": "Che cosa significa questa parola",
+            "explicacao": "Escreva: Che cosa significa questa parola.",
+            "id": "it-060-e04"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «chiarire»?",
             "audio": "chiarire",
@@ -80,33 +88,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Che cosa significa questa parola",
-            "respostaEsperada": "Che cosa significa questa parola",
-            "explicacao": "Escreva: Che cosa significa questa parola.",
-            "id": "it-060-e04"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
             "audio": "Mi sfugge la parola",
             "respostaEsperada": "Mi sfugge la parola",
             "explicacao": "Escreva: Mi sfugge la parola.",
             "id": "it-060-e05"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «un esempio»?",
-            "audio": "un esempio",
-            "opcoes": [
-              "a palavra",
-              "um exemplo",
-              "me escapa",
-              "ou seja"
-            ],
-            "gabarito": "um exemplo",
-            "explicacao": "«un esempio» = um exemplo.",
-            "id": "it-060-x02",
-            "complemento": true
           },
           {
             "tipo": "audio-recognition",
@@ -142,17 +127,26 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «il falso amico»?",
-            "audio": "il falso amico",
+            "enunciado": "O que significa «un esempio»?",
+            "audio": "un esempio",
             "opcoes": [
-              "em outras palavras",
-              "o caderno",
-              "o falso cognato",
+              "a palavra",
+              "um exemplo",
+              "me escapa",
               "ou seja"
             ],
-            "gabarito": "o falso cognato",
-            "explicacao": "«il falso amico» = o falso cognato.",
-            "id": "it-060-x03",
+            "gabarito": "um exemplo",
+            "explicacao": "«un esempio» = um exemplo.",
+            "id": "it-060-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "in altre parole",
+            "respostaEsperada": "in altre parole",
+            "explicacao": "em outras palavras",
+            "id": "it-060-r01",
             "complemento": true
           },
           {
@@ -193,17 +187,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «mi sfugge»?",
-            "audio": "mi sfugge",
+            "enunciado": "O que significa «il falso amico»?",
+            "audio": "il falso amico",
             "opcoes": [
-              "me escapa",
+              "em outras palavras",
+              "o caderno",
               "o falso cognato",
-              "esclarecer",
-              "o contrário"
+              "ou seja"
             ],
-            "gabarito": "me escapa",
-            "explicacao": "«mi sfugge» = me escapa.",
-            "id": "it-060-x04",
+            "gabarito": "o falso cognato",
+            "explicacao": "«il falso amico» = o falso cognato.",
+            "id": "it-060-x03",
             "complemento": true
           },
           {
@@ -243,21 +237,6 @@
             "id": "it-060-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «il quaderno»?",
-            "audio": "il quaderno",
-            "opcoes": [
-              "descobrir",
-              "o caderno",
-              "a palavra",
-              "serve para"
-            ],
-            "gabarito": "o caderno",
-            "explicacao": "«il quaderno» = o caderno.",
-            "id": "it-060-x05",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Può parlare più lentamente?»",
             "opcoes": [
@@ -269,6 +248,30 @@
             "gabarito": "Può parlare più lentamente?",
             "explicacao": "Pedido educado.",
             "id": "it-060-e15"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "una specie di",
+            "respostaEsperada": "una specie di",
+            "explicacao": "uma espécie de",
+            "id": "it-060-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «mi sfugge»?",
+            "audio": "mi sfugge",
+            "opcoes": [
+              "me escapa",
+              "o falso cognato",
+              "esclarecer",
+              "o contrário"
+            ],
+            "gabarito": "me escapa",
+            "explicacao": "«mi sfugge» = me escapa.",
+            "id": "it-060-x04",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -283,21 +286,6 @@
             "gabarito": "Come si dice in italiano?",
             "explicacao": "Pergunta útil.",
             "id": "it-060-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «la parola»?",
-            "audio": "la parola",
-            "opcoes": [
-              "o falso cognato",
-              "ou seja",
-              "serve para",
-              "a palavra"
-            ],
-            "gabarito": "a palavra",
-            "explicacao": "«la parola» = a palavra.",
-            "id": "it-060-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -330,18 +318,18 @@
             "id": "it-060-e19"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Può ripetere, per favore",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il quaderno»?",
+            "audio": "il quaderno",
             "opcoes": [
-              "ripetere,",
-              "per",
-              "favore",
-              "Può"
+              "descobrir",
+              "o caderno",
+              "a palavra",
+              "serve para"
             ],
-            "gabarito": "Può ripetere, per favore",
-            "explicacao": "Escreva: Può ripetere, per favore",
-            "id": "it-060-x07",
+            "gabarito": "o caderno",
+            "explicacao": "«il quaderno» = o caderno.",
+            "id": "it-060-x05",
             "complemento": true
           },
           {
@@ -381,26 +369,6 @@
             "id": "it-060-e22"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Se ho capito bene, lei dice che è tardi",
-            "opcoes": [
-              "bene,",
-              "è",
-              "Se",
-              "ho",
-              "tardi",
-              "lei",
-              "dice",
-              "capito",
-              "che"
-            ],
-            "gabarito": "Se ho capito bene, lei dice che è tardi",
-            "explicacao": "Escreva: Se ho capito bene, lei dice che è tardi",
-            "id": "it-060-x08",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase pede repetição com «Lei»?",
             "opcoes": [
@@ -411,6 +379,30 @@
             "gabarito": "Può ripetere, per favore?",
             "explicacao": "Com «Lei», o verbo vai na terceira pessoa.",
             "id": "it-060-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la parola»?",
+            "audio": "la parola",
+            "opcoes": [
+              "o falso cognato",
+              "ou seja",
+              "serve para",
+              "a palavra"
+            ],
+            "gabarito": "a palavra",
+            "explicacao": "«la parola» = a palavra.",
+            "id": "it-060-x06",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "il falso amico",
+            "respostaEsperada": "il falso amico",
+            "explicacao": "o falso cognato",
+            "id": "it-060-r03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -437,22 +429,6 @@
             "id": "it-060-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Che cosa significa questa parola",
-            "opcoes": [
-              "cosa",
-              "questa",
-              "Che",
-              "parola",
-              "significa"
-            ],
-            "gabarito": "Che cosa significa questa parola",
-            "explicacao": "Escreva: Che cosa significa questa parola",
-            "id": "it-060-x09",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como dizer «Acho que entendi»?",
             "opcoes": [
@@ -463,6 +439,21 @@
             "gabarito": "Se ho capito bene, ...",
             "explicacao": "Fórmula para confirmar o que se entendeu.",
             "id": "it-060-e26"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Può ripetere, per favore",
+            "opcoes": [
+              "ripetere,",
+              "per",
+              "favore",
+              "Può"
+            ],
+            "gabarito": "Può ripetere, per favore",
+            "explicacao": "Escreva: Può ripetere, per favore",
+            "id": "it-060-x07",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -478,21 +469,6 @@
             "gabarito": "Che cosa vuol dire questa parola?",
             "explicacao": "Pergunta sobre o significado.",
             "id": "it-060-e27"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Mi sfugge la parola",
-            "opcoes": [
-              "la",
-              "sfugge",
-              "Mi",
-              "parola"
-            ],
-            "gabarito": "Mi sfugge la parola",
-            "explicacao": "Escreva: Mi sfugge la parola",
-            "id": "it-060-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

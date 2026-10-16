@@ -37,26 +37,22 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «A que horas você se levanta?»",
+            "enunciado": "Monte a frase: «Sim, vou de transporte ao trabalho. Trabalho até as cinco.»",
             "opcoes": [
-              "котором",
-              "встаёшь?",
-              "часу",
-              "ты",
-              "В"
+              "работу.",
+              "пяти",
+              "я",
+              "еду",
+              "до",
+              "на",
+              "Я",
+              "часов.",
+              "Да,",
+              "работаю"
             ],
-            "gabarito": "В котором часу ты встаёшь?",
-            "explicacao": "Escreva: В котором часу ты встаёшь?",
+            "gabarito": "Да, я еду на работу. Я работаю до пяти часов.",
+            "explicacao": "Escreva: Да, я еду на работу. Я работаю до пяти часов.",
             "id": "ru-018-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "В котором часу ты встаёшь?",
-            "respostaEsperada": "В котором часу ты встаёшь?",
-            "explicacao": "A que horas você se levanta?",
-            "id": "ru-018-x02",
             "complemento": true
           },
           {
@@ -70,23 +66,6 @@
             "gabarito": "просыпаюсь",
             "explicacao": "Depois de vogal: -сь.",
             "id": "ru-018-e02"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu me levanto às sete. E você?»",
-            "opcoes": [
-              "семь",
-              "А",
-              "в",
-              "ты?",
-              "Я",
-              "часов.",
-              "встаю"
-            ],
-            "gabarito": "Я встаю в семь часов. А ты?",
-            "explicacao": "Escreva: Я встаю в семь часов. А ты?",
-            "id": "ru-018-x03",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -103,28 +82,32 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Я встаю в семь часов. А ты?",
-            "respostaEsperada": "Я встаю в семь часов. А ты?",
-            "explicacao": "Eu me levanto às sete. E você?",
-            "id": "ru-018-x04",
+            "audio": "Да, я еду на работу. Я работаю до пяти часов.",
+            "respostaEsperada": "Да, я еду на работу. Я работаю до пяти часов.",
+            "explicacao": "Sim, vou de transporte ao trabalho. Trabalho até as cinco.",
+            "id": "ru-018-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "В котором часу ты встаёшь?",
+            "respostaEsperada": "В котором часу ты встаёшь?",
+            "explicacao": "A que horas você se levanta?",
+            "id": "ru-018-r01",
             "complemento": true
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu me levanto cedo, às seis. Tomo café em casa.»",
+            "enunciado": "Monte a frase: «E depois do trabalho?»",
             "opcoes": [
-              "шесть.",
-              "Я",
-              "рано,",
-              "Я",
-              "дома.",
-              "завтракаю",
-              "встаю",
-              "в"
+              "работы?",
+              "после",
+              "А"
             ],
-            "gabarito": "Я встаю рано, в шесть. Я завтракаю дома.",
-            "explicacao": "Escreva: Я встаю рано, в шесть. Я завтракаю дома.",
-            "id": "ru-018-x05",
+            "gabarito": "А после работы?",
+            "explicacao": "Escreva: А после работы?",
+            "id": "ru-018-x03",
             "complemento": true
           },
           {
@@ -142,25 +125,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Я встаю рано, в шесть. Я завтракаю дома.",
-            "respostaEsperada": "Я встаю рано, в шесть. Я завтракаю дома.",
-            "explicacao": "Eu me levanto cedo, às seis. Tomo café em casa.",
-            "id": "ru-018-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Depois você vai ao trabalho?»",
-            "opcoes": [
-              "Потом",
-              "на",
-              "ты",
-              "работу?",
-              "идёшь"
-            ],
-            "gabarito": "Потом ты идёшь на работу?",
-            "explicacao": "Escreva: Потом ты идёшь на работу?",
-            "id": "ru-018-x07",
+            "audio": "А после работы?",
+            "respostaEsperada": "А после работы?",
+            "explicacao": "E depois do trabalho?",
+            "id": "ru-018-x04",
             "complemento": true
           },
           {
@@ -176,12 +144,18 @@
             "id": "ru-018-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Потом ты идёшь на работу?",
-            "respostaEsperada": "Потом ты идёшь на работу?",
-            "explicacao": "Depois você vai ao trabalho?",
-            "id": "ru-018-x08",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «обед»?",
+            "audio": "обед",
+            "opcoes": [
+              "à loja",
+              "para o trabalho",
+              "almoçar",
+              "almoço"
+            ],
+            "gabarito": "almoço",
+            "explicacao": "«обед» = almoço.",
+            "id": "ru-018-x05",
             "complemento": true
           },
           {
@@ -197,32 +171,27 @@
             "id": "ru-018-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, vou de transporte ao trabalho. Trabalho até as cinco.»",
-            "opcoes": [
-              "работу.",
-              "пяти",
-              "я",
-              "еду",
-              "до",
-              "на",
-              "Я",
-              "часов.",
-              "Да,",
-              "работаю"
-            ],
-            "gabarito": "Да, я еду на работу. Я работаю до пяти часов.",
-            "explicacao": "Escreva: Да, я еду на работу. Я работаю до пяти часов.",
-            "id": "ru-018-x09",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я встаю в семь часов. А ты?",
+            "respostaEsperada": "Я встаю в семь часов. А ты?",
+            "explicacao": "Eu me levanto às sete. E você?",
+            "id": "ru-018-r02",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, я еду на работу. Я работаю до пяти часов.",
-            "respostaEsperada": "Да, я еду на работу. Я работаю до пяти часов.",
-            "explicacao": "Sim, vou de transporte ao trabalho. Trabalho até as cinco.",
-            "id": "ru-018-x10",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «просыпаться»?",
+            "audio": "просыпаться",
+            "opcoes": [
+              "levantar-se",
+              "ir de transporte",
+              "cedo",
+              "acordar"
+            ],
+            "gabarito": "acordar",
+            "explicacao": "«просыпаться» = acordar.",
+            "id": "ru-018-x06",
             "complemento": true
           },
           {
@@ -238,16 +207,18 @@
             "id": "ru-018-e07"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «E depois do trabalho?»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «ехать»?",
+            "audio": "ехать",
             "opcoes": [
-              "работы?",
-              "после",
-              "А"
+              "ir de transporte",
+              "tarde (hora)",
+              "tomar café da manhã",
+              "todo dia"
             ],
-            "gabarito": "А после работы?",
-            "explicacao": "Escreva: А после работы?",
-            "id": "ru-018-x11",
+            "gabarito": "ir de transporte",
+            "explicacao": "«ехать» = ir de transporte.",
+            "id": "ru-018-x07",
             "complemento": true
           },
           {
@@ -263,27 +234,27 @@
             "id": "ru-018-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "А после работы?",
-            "respostaEsperada": "А после работы?",
-            "explicacao": "E depois do trabalho?",
-            "id": "ru-018-x12",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «завтрак»?",
+            "audio": "завтрак",
+            "opcoes": [
+              "tomar café da manhã",
+              "lavar-se",
+              "almoço",
+              "café da manhã"
+            ],
+            "gabarito": "café da manhã",
+            "explicacao": "«завтрак» = café da manhã.",
+            "id": "ru-018-x08",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «обед»?",
-            "audio": "обед",
-            "opcoes": [
-              "à loja",
-              "para o trabalho",
-              "almoçar",
-              "almoço"
-            ],
-            "gabarito": "almoço",
-            "explicacao": "«обед» = almoço.",
-            "id": "ru-018-x13",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я встаю рано, в шесть. Я завтракаю дома.",
+            "respostaEsperada": "Я встаю рано, в шесть. Я завтракаю дома.",
+            "explicacao": "Eu me levanto cedo, às seis. Tomo café em casa.",
+            "id": "ru-018-r03",
             "complemento": true
           },
           {
@@ -301,17 +272,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «просыпаться»?",
-            "audio": "просыпаться",
+            "enunciado": "O que significa «одеваться»?",
+            "audio": "одеваться",
             "opcoes": [
-              "levantar-se",
-              "ir de transporte",
-              "cedo",
-              "acordar"
+              "à loja",
+              "tomar café da manhã",
+              "para o trabalho",
+              "vestir-se"
             ],
-            "gabarito": "acordar",
-            "explicacao": "«просыпаться» = acordar.",
-            "id": "ru-018-x14",
+            "gabarito": "vestir-se",
+            "explicacao": "«одеваться» = vestir-se.",
+            "id": "ru-018-x09",
             "complemento": true
           },
           {
@@ -328,32 +299,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «ехать»?",
-            "audio": "ехать",
+            "enunciado": "O que significa «завтракать»?",
+            "audio": "завтракать",
             "opcoes": [
-              "ir de transporte",
-              "tarde (hora)",
+              "à loja",
               "tomar café da manhã",
-              "todo dia"
+              "para casa",
+              "jantar"
             ],
-            "gabarito": "ir de transporte",
-            "explicacao": "«ехать» = ir de transporte.",
-            "id": "ru-018-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «завтрак»?",
-            "audio": "завтрак",
-            "opcoes": [
-              "tomar café da manhã",
-              "lavar-se",
-              "almoço",
-              "café da manhã"
-            ],
-            "gabarito": "café da manhã",
-            "explicacao": "«завтрак» = café da manhã.",
-            "id": "ru-018-x16",
+            "gabarito": "tomar café da manhã",
+            "explicacao": "«завтракать» = tomar café da manhã.",
+            "id": "ru-018-x10",
             "complemento": true
           },
           {
@@ -369,44 +325,6 @@
             "id": "ru-018-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «одеваться»?",
-            "audio": "одеваться",
-            "opcoes": [
-              "à loja",
-              "tomar café da manhã",
-              "para o trabalho",
-              "vestir-se"
-            ],
-            "gabarito": "vestir-se",
-            "explicacao": "«одеваться» = vestir-se.",
-            "id": "ru-018-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «завтракать»?",
-            "audio": "завтракать",
-            "opcoes": [
-              "à loja",
-              "tomar café da manhã",
-              "para casa",
-              "jantar"
-            ],
-            "gabarito": "tomar café da manhã",
-            "explicacao": "«завтракать» = tomar café da manhã.",
-            "id": "ru-018-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Я еду домой",
-            "respostaEsperada": "Я еду домой",
-            "explicacao": "ехать + домой.",
-            "id": "ru-018-e12"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Я иду на работу",
@@ -418,8 +336,39 @@
             ],
             "gabarito": "Я иду на работу",
             "explicacao": "Escreva: Я иду на работу",
-            "id": "ru-018-x19",
+            "id": "ru-018-x11",
             "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Потом ты идёшь на работу?",
+            "respostaEsperada": "Потом ты идёшь на работу?",
+            "explicacao": "Depois você vai ao trabalho?",
+            "id": "ru-018-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Я еду домой",
+            "opcoes": [
+              "еду",
+              "Я",
+              "домой"
+            ],
+            "gabarito": "Я еду домой",
+            "explicacao": "Escreva: Я еду домой",
+            "id": "ru-018-x12",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Я еду домой",
+            "respostaEsperada": "Я еду домой",
+            "explicacao": "ехать + домой.",
+            "id": "ru-018-e12"
           },
           {
             "tipo": "multiple-choice",
@@ -434,26 +383,12 @@
             "id": "ru-018-e13"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Я еду домой",
-            "opcoes": [
-              "еду",
-              "Я",
-              "домой"
-            ],
-            "gabarito": "Я еду домой",
-            "explicacao": "Escreva: Я еду домой",
-            "id": "ru-018-x20",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Я иду на работу",
             "respostaEsperada": "Я иду на работу",
             "explicacao": "Escreva: Я иду на работу",
-            "id": "ru-018-x21",
+            "id": "ru-018-x13",
             "complemento": true
           },
           {

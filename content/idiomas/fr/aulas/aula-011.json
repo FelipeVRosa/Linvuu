@@ -507,6 +507,14 @@
               "id": "fr-011-e05"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Il se promène souvent",
+              "respostaEsperada": "Il se promène souvent",
+              "explicacao": "Escreva: Il se promène souvent.",
+              "id": "fr-011-e06"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «rarement»?",
               "audio": "rarement",
@@ -520,14 +528,6 @@
               "explicacao": "«rarement» = raramente.",
               "id": "fr-011-x02",
               "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Il se promène souvent",
-              "respostaEsperada": "Il se promène souvent",
-              "explicacao": "Escreva: Il se promène souvent.",
-              "id": "fr-011-e06"
             },
             {
               "tipo": "multiple-choice",
@@ -555,6 +555,18 @@
             },
             {
               "tipo": "multiple-choice",
+              "enunciado": "Qual é a forma de «finir» para «ils»?",
+              "opcoes": [
+                "finissent",
+                "finient",
+                "finit"
+              ],
+              "gabarito": "finissent",
+              "explicacao": "«Iss» + «ent».",
+              "id": "fr-011-e09"
+            },
+            {
+              "tipo": "multiple-choice",
               "enunciado": "O que significa «s'appeler»?",
               "audio": "s'appeler",
               "opcoes": [
@@ -567,18 +579,6 @@
               "explicacao": "«s'appeler» = chamar-se.",
               "id": "fr-011-x03",
               "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "Qual é a forma de «finir» para «ils»?",
-              "opcoes": [
-                "finissent",
-                "finient",
-                "finit"
-              ],
-              "gabarito": "finissent",
-              "explicacao": "«Iss» + «ent».",
-              "id": "fr-011-e09"
             },
             {
               "tipo": "multiple-choice",
@@ -605,6 +605,18 @@
               "id": "fr-011-e11"
             },
             {
+              "tipo": "fill-gap",
+              "enunciado": "Tu ___ lèves tôt. (te)",
+              "opcoes": [
+                "te",
+                "t'",
+                "se"
+              ],
+              "gabarito": "te",
+              "explicacao": "«tu te lèves».",
+              "id": "fr-011-e12"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «se laver»?",
               "audio": "se laver",
@@ -618,18 +630,6 @@
               "explicacao": "«se laver» = lavar-se.",
               "id": "fr-011-x04",
               "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Tu ___ lèves tôt. (te)",
-              "opcoes": [
-                "te",
-                "t'",
-                "se"
-              ],
-              "gabarito": "te",
-              "explicacao": "«tu te lèves».",
-              "id": "fr-011-e12"
             },
             {
               "tipo": "fill-gap",
@@ -656,21 +656,6 @@
               "id": "fr-011-e14"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «se coucher»?",
-              "audio": "se coucher",
-              "opcoes": [
-                "lavar-se",
-                "deitar-se",
-                "sempre",
-                "escolher"
-              ],
-              "gabarito": "deitar-se",
-              "explicacao": "«se coucher» = deitar-se.",
-              "id": "fr-011-x05",
-              "complemento": true
-            },
-            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Je ne me lève jamais très tôt.»",
               "opcoes": [
@@ -687,6 +672,30 @@
               "id": "fr-011-e15"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "tous les jours",
+              "respostaEsperada": "tous les jours",
+              "explicacao": "todos os dias",
+              "id": "fr-011-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «se coucher»?",
+              "audio": "se coucher",
+              "opcoes": [
+                "lavar-se",
+                "deitar-se",
+                "sempre",
+                "escolher"
+              ],
+              "gabarito": "deitar-se",
+              "explicacao": "«se coucher» = deitar-se.",
+              "id": "fr-011-x05",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «Elle se couche à dix heures.»",
               "opcoes": [
@@ -700,21 +709,6 @@
               "gabarito": "Elle se couche à dix heures.",
               "explicacao": "Pronome antes do verbo.",
               "id": "fr-011-e16"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «se réveiller»?",
-              "audio": "se réveiller",
-              "opcoes": [
-                "acordar",
-                "sempre",
-                "passear",
-                "muitas vezes"
-              ],
-              "gabarito": "acordar",
-              "explicacao": "«se réveiller» = acordar.",
-              "id": "fr-011-x06",
-              "complemento": true
             },
             {
               "tipo": "producao",
@@ -735,6 +729,21 @@
               "id": "fr-011-e18"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «se réveiller»?",
+              "audio": "se réveiller",
+              "opcoes": [
+                "acordar",
+                "sempre",
+                "passear",
+                "muitas vezes"
+              ],
+              "gabarito": "acordar",
+              "explicacao": "«se réveiller» = acordar.",
+              "id": "fr-011-x06",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Nous nous ___ à sept heures. (levamos)",
               "opcoes": [
@@ -745,23 +754,6 @@
               "gabarito": "levons",
               "explicacao": "Em «nous», o «è» some: «nous levons».",
               "id": "fr-011-e19"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Je me lève à sept heures",
-              "opcoes": [
-                "lève",
-                "me",
-                "Je",
-                "heures",
-                "à",
-                "sept"
-              ],
-              "gabarito": "Je me lève à sept heures",
-              "explicacao": "Escreva: Je me lève à sept heures",
-              "id": "fr-011-x07",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -788,6 +780,23 @@
               "id": "fr-011-e21"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Je me lève à sept heures",
+              "opcoes": [
+                "lève",
+                "me",
+                "Je",
+                "heures",
+                "à",
+                "sept"
+              ],
+              "gabarito": "Je me lève à sept heures",
+              "explicacao": "Escreva: Je me lève à sept heures",
+              "id": "fr-011-x07",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Les enfants ___ un livre. (escolhem)",
               "opcoes": [
@@ -798,22 +807,6 @@
               "gabarito": "choisissent",
               "explicacao": "Com «ils», o verbo em «-ir» faz «-issent».",
               "id": "fr-011-e22"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Nous finissons à six heures",
-              "opcoes": [
-                "Nous",
-                "à",
-                "six",
-                "finissons",
-                "heures"
-              ],
-              "gabarito": "Nous finissons à six heures",
-              "explicacao": "Escreva: Nous finissons à six heures",
-              "id": "fr-011-x08",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -840,6 +833,22 @@
               "id": "fr-011-e24"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Nous finissons à six heures",
+              "opcoes": [
+                "Nous",
+                "à",
+                "six",
+                "finissons",
+                "heures"
+              ],
+              "gabarito": "Nous finissons à six heures",
+              "explicacao": "Escreva: Nous finissons à six heures",
+              "id": "fr-011-x08",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual é a forma de «finir» para «tu»?",
               "opcoes": [
@@ -850,23 +859,6 @@
               "gabarito": "finis",
               "explicacao": "Com «tu», termina em «-is».",
               "id": "fr-011-e25"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Je ne me couche jamais tôt",
-              "opcoes": [
-                "me",
-                "Je",
-                "tôt",
-                "ne",
-                "couche",
-                "jamais"
-              ],
-              "gabarito": "Je ne me couche jamais tôt",
-              "explicacao": "Escreva: Je ne me couche jamais tôt",
-              "id": "fr-011-x09",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -898,16 +890,18 @@
             {
               "tipo": "sentence-ordering",
               "enunciado": "Ouça e monte a frase.",
-              "audio": "Je m'habille le matin",
+              "audio": "Je ne me couche jamais tôt",
               "opcoes": [
-                "le",
+                "me",
                 "Je",
-                "matin",
-                "m'habille"
+                "tôt",
+                "ne",
+                "couche",
+                "jamais"
               ],
-              "gabarito": "Je m'habille le matin",
-              "explicacao": "Escreva: Je m'habille le matin",
-              "id": "fr-011-x10",
+              "gabarito": "Je ne me couche jamais tôt",
+              "explicacao": "Escreva: Je ne me couche jamais tôt",
+              "id": "fr-011-x09",
               "complemento": true
             },
             {

@@ -37,26 +37,22 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Pasha, o que você fez ontem?»",
+            "enunciado": "Monte a frase: «Eu li um livro e vi um filme. Você já terminou o relatório?»",
             "opcoes": [
-              "ты",
-              "вчера?",
-              "Паша,",
-              "что",
-              "делал"
+              "Я",
+              "и",
+              "уже",
+              "фильм.",
+              "отчёт?",
+              "Ты",
+              "смотрела",
+              "книгу",
+              "написал",
+              "читала"
             ],
-            "gabarito": "Паша, что ты делал вчера?",
-            "explicacao": "Escreva: Паша, что ты делал вчера?",
+            "gabarito": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
+            "explicacao": "Escreva: Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
             "id": "ru-050-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Паша, что ты делал вчера?",
-            "respostaEsperada": "Паша, что ты делал вчера?",
-            "explicacao": "Pasha, o que você fez ontem?",
-            "id": "ru-050-x02",
             "complemento": true
           },
           {
@@ -72,28 +68,12 @@
             "id": "ru-050-e02"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Escrevi um relatório o dia todo. E você?»",
-            "opcoes": [
-              "ты?",
-              "писал",
-              "А",
-              "день",
-              "отчёт.",
-              "Весь"
-            ],
-            "gabarito": "Весь день писал отчёт. А ты?",
-            "explicacao": "Escreva: Весь день писал отчёт. А ты?",
-            "id": "ru-050-x03",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Весь день писал отчёт. А ты?",
-            "respostaEsperada": "Весь день писал отчёт. А ты?",
-            "explicacao": "Escrevi um relatório o dia todo. E você?",
-            "id": "ru-050-x04",
+            "audio": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
+            "respostaEsperada": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
+            "explicacao": "Eu li um livro e vi um filme. Você já terminou o relatório?",
+            "id": "ru-050-x02",
             "complemento": true
           },
           {
@@ -110,31 +90,38 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu li um livro e vi um filme. Você já terminou o relatório?»",
+            "enunciado": "Monte a frase: «Sim, finalmente o terminei e o enviei ao chefe.»",
             "opcoes": [
-              "Я",
-              "и",
-              "уже",
-              "фильм.",
-              "отчёт?",
-              "Ты",
-              "смотрела",
-              "книгу",
+              "начальнику.",
+              "отправил",
+              "его",
               "написал",
-              "читала"
+              "я",
+              "наконец",
+              "Да,",
+              "и"
             ],
-            "gabarito": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
-            "explicacao": "Escreva: Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
-            "id": "ru-050-x05",
+            "gabarito": "Да, я наконец написал его и отправил начальнику.",
+            "explicacao": "Escreva: Да, я наконец написал его и отправил начальнику.",
+            "id": "ru-050-x03",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Паша, что ты делал вчера?",
+            "respostaEsperada": "Паша, что ты делал вчера?",
+            "explicacao": "Pasha, o que você fez ontem?",
+            "id": "ru-050-r01",
             "complemento": true
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
-            "respostaEsperada": "Я читала книгу и смотрела фильм. Ты уже написал отчёт?",
-            "explicacao": "Eu li um livro e vi um filme. Você já terminou o relatório?",
-            "id": "ru-050-x06",
+            "audio": "Да, я наконец написал его и отправил начальнику.",
+            "respostaEsperada": "Да, я наконец написал его и отправил начальнику.",
+            "explicacao": "Sim, finalmente o terminei e o enviei ao chefe.",
+            "id": "ru-050-x04",
             "complemento": true
           },
           {
@@ -151,29 +138,16 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, finalmente o terminei e o enviei ao chefe.»",
+            "enunciado": "Monte a frase: «Está bem, termino logo.»",
             "opcoes": [
-              "начальнику.",
-              "отправил",
-              "его",
-              "написал",
+              "Хорошо,",
               "я",
-              "наконец",
-              "Да,",
-              "и"
+              "закончу.",
+              "скоро"
             ],
-            "gabarito": "Да, я наконец написал его и отправил начальнику.",
-            "explicacao": "Escreva: Да, я наконец написал его и отправил начальнику.",
-            "id": "ru-050-x07",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, я наконец написал его и отправил начальнику.",
-            "respostaEsperada": "Да, я наконец написал его и отправил начальнику.",
-            "explicacao": "Sim, finalmente o terminei e o enviei ao chefe.",
-            "id": "ru-050-x08",
+            "gabarito": "Хорошо, я скоро закончу.",
+            "explicacao": "Escreva: Хорошо, я скоро закончу.",
+            "id": "ru-050-x05",
             "complemento": true
           },
           {
@@ -189,26 +163,36 @@
             "id": "ru-050-e05"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Parabéns! E você jantou?»",
-            "opcoes": [
-              "Молодец!",
-              "ты",
-              "А",
-              "ужинал?"
-            ],
-            "gabarito": "Молодец! А ты ужинал?",
-            "explicacao": "Escreva: Молодец! А ты ужинал?",
-            "id": "ru-050-x09",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Хорошо, я скоро закончу.",
+            "respostaEsperada": "Хорошо, я скоро закончу.",
+            "explicacao": "Está bem, termino logo.",
+            "id": "ru-050-x06",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Молодец! А ты ужинал?",
-            "respostaEsperada": "Молодец! А ты ужинал?",
-            "explicacao": "Parabéns! E você jantou?",
-            "id": "ru-050-x10",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Весь день писал отчёт. А ты?",
+            "respostaEsperada": "Весь день писал отчёт. А ты?",
+            "explicacao": "Escrevi um relatório o dia todo. E você?",
+            "id": "ru-050-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «получать / получить»?",
+            "audio": "получать / получить",
+            "opcoes": [
+              "fazer",
+              "em uma hora",
+              "ler",
+              "receber"
+            ],
+            "gabarito": "receber",
+            "explicacao": "«получать / получить» = receber.",
+            "id": "ru-050-x07",
             "complemento": true
           },
           {
@@ -224,21 +208,6 @@
             "id": "ru-050-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Ótimo! Enquanto isso, vou tomar um chá.»",
-            "opcoes": [
-              "пока",
-              "выпью",
-              "Я",
-              "Отлично!",
-              "чай."
-            ],
-            "gabarito": "Отлично! Я пока выпью чай.",
-            "explicacao": "Escreva: Отлично! Я пока выпью чай.",
-            "id": "ru-050-x11",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "«Что ты сделал?» pergunta por:",
             "opcoes": [
@@ -251,26 +220,18 @@
             "id": "ru-050-e07"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Отлично! Я пока выпью чай.",
-            "respostaEsperada": "Отлично! Я пока выпью чай.",
-            "explicacao": "Ótimo! Enquanto isso, vou tomar um chá.",
-            "id": "ru-050-x12",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Está bem, termino logo.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «вдруг»?",
+            "audio": "вдруг",
             "opcoes": [
-              "Хорошо,",
-              "я",
-              "закончу.",
-              "скоро"
+              "de repente",
+              "em uma hora",
+              "imediatamente",
+              "já"
             ],
-            "gabarito": "Хорошо, я скоро закончу.",
-            "explicacao": "Escreva: Хорошо, я скоро закончу.",
-            "id": "ru-050-x13",
+            "gabarito": "de repente",
+            "explicacao": "«вдруг» = de repente.",
+            "id": "ru-050-x08",
             "complemento": true
           },
           {
@@ -286,27 +247,42 @@
             "id": "ru-050-e08"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Хорошо, я скоро закончу.",
-            "respostaEsperada": "Хорошо, я скоро закончу.",
-            "explicacao": "Está bem, termino logo.",
-            "id": "ru-050-x14",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «пить / выпить»?",
+            "audio": "пить / выпить",
+            "opcoes": [
+              "fazer",
+              "beber",
+              "resolver, decidir",
+              "comer"
+            ],
+            "gabarito": "beber",
+            "explicacao": "«пить / выпить» = beber.",
+            "id": "ru-050-x09",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Молодец! А ты ужинал?",
+            "respostaEsperada": "Молодец! А ты ужинал?",
+            "explicacao": "Parabéns! E você jantou?",
+            "id": "ru-050-r03",
             "complemento": true
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «получать / получить»?",
-            "audio": "получать / получить",
+            "enunciado": "O que significa «делать / сделать»?",
+            "audio": "делать / сделать",
             "opcoes": [
-              "fazer",
-              "em uma hora",
               "ler",
-              "receber"
+              "beber",
+              "fazer",
+              "comer"
             ],
-            "gabarito": "receber",
-            "explicacao": "«получать / получить» = receber.",
-            "id": "ru-050-x15",
+            "gabarito": "fazer",
+            "explicacao": "«делать / сделать» = fazer.",
+            "id": "ru-050-x10",
             "complemento": true
           },
           {
@@ -323,32 +299,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «вдруг»?",
-            "audio": "вдруг",
-            "opcoes": [
-              "de repente",
-              "em uma hora",
-              "imediatamente",
-              "já"
-            ],
-            "gabarito": "de repente",
-            "explicacao": "«вдруг» = de repente.",
-            "id": "ru-050-x16",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «пить / выпить»?",
-            "audio": "пить / выпить",
+            "enunciado": "O que significa «за час»?",
+            "audio": "за час",
             "opcoes": [
               "fazer",
-              "beber",
-              "resolver, decidir",
-              "comer"
+              "em uma hora",
+              "receber",
+              "imediatamente"
             ],
-            "gabarito": "beber",
-            "explicacao": "«пить / выпить» = beber.",
-            "id": "ru-050-x17",
+            "gabarito": "em uma hora",
+            "explicacao": "«за час» = em uma hora.",
+            "id": "ru-050-x11",
             "complemento": true
           },
           {
@@ -367,32 +328,41 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «делать / сделать»?",
-            "audio": "делать / сделать",
+            "enunciado": "O que significa «есть / съесть»?",
+            "audio": "есть / съесть",
             "opcoes": [
-              "ler",
-              "beber",
-              "fazer",
+              "normalmente",
+              "resolver, decidir",
+              "olhar, assistir",
               "comer"
             ],
-            "gabarito": "fazer",
-            "explicacao": "«делать / сделать» = fazer.",
-            "id": "ru-050-x18",
+            "gabarito": "comer",
+            "explicacao": "«есть / съесть» = comer.",
+            "id": "ru-050-x12",
             "complemento": true
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «за час»?",
-            "audio": "за час",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Отлично! Я пока выпью чай.",
+            "respostaEsperada": "Отлично! Я пока выпью чай.",
+            "explicacao": "Ótimo! Enquanto isso, vou tomar um chá.",
+            "id": "ru-050-r04",
+            "complemento": true
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Ты уже написал отчёт",
             "opcoes": [
-              "fazer",
-              "em uma hora",
-              "receber",
-              "imediatamente"
+              "Ты",
+              "написал",
+              "отчёт",
+              "уже"
             ],
-            "gabarito": "em uma hora",
-            "explicacao": "«за час» = em uma hora.",
-            "id": "ru-050-x19",
+            "gabarito": "Ты уже написал отчёт",
+            "explicacao": "Escreva: Ты уже написал отчёт",
+            "id": "ru-050-x13",
             "complemento": true
           },
           {
@@ -409,44 +379,6 @@
             "id": "ru-050-e11"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «есть / съесть»?",
-            "audio": "есть / съесть",
-            "opcoes": [
-              "normalmente",
-              "resolver, decidir",
-              "olhar, assistir",
-              "comer"
-            ],
-            "gabarito": "comer",
-            "explicacao": "«есть / съесть» = comer.",
-            "id": "ru-050-x20",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Ты уже написал отчёт",
-            "opcoes": [
-              "Ты",
-              "написал",
-              "отчёт",
-              "уже"
-            ],
-            "gabarito": "Ты уже написал отчёт",
-            "explicacao": "Escreva: Ты уже написал отчёт",
-            "id": "ru-050-x21",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Я встал, умылся и ушёл",
-            "respostaEsperada": "Я встал, умылся и ушёл",
-            "explicacao": "Sequência de ações concluídas.",
-            "id": "ru-050-e12"
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
             "audio": "Я встал, умылся и ушёл",
@@ -459,8 +391,16 @@
             ],
             "gabarito": "Я встал, умылся и ушёл",
             "explicacao": "Escreva: Я встал, умылся и ушёл",
-            "id": "ru-050-x22",
+            "id": "ru-050-x14",
             "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Я встал, умылся и ушёл",
+            "respostaEsperada": "Я встал, умылся и ушёл",
+            "explicacao": "Sequência de ações concluídas.",
+            "id": "ru-050-e12"
           },
           {
             "tipo": "audio-recognition",
@@ -468,7 +408,7 @@
             "audio": "Ты уже написал отчёт",
             "respostaEsperada": "Ты уже написал отчёт",
             "explicacao": "Escreva: Ты уже написал отчёт",
-            "id": "ru-050-x23",
+            "id": "ru-050-x15",
             "complemento": true
           },
           {

@@ -93,38 +93,15 @@
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Olá! Como a senhora se chama?»",
+            "enunciado": "Monte a frase: «Onde a senhora mora?»",
             "opcoes": [
-              "зовут?",
-              "Как",
-              "вас",
-              "Здравствуйте!"
+              "живёте?",
+              "Где",
+              "вы"
             ],
-            "gabarito": "Здравствуйте! Как вас зовут?",
-            "explicacao": "Escreva: Здравствуйте! Как вас зовут?",
+            "gabarito": "Где вы живёте?",
+            "explicacao": "Escreva: Где вы живёте?",
             "id": "ru-013-x01",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Здравствуйте! Как вас зовут?",
-            "respostaEsperada": "Здравствуйте! Как вас зовут?",
-            "explicacao": "Olá! Como a senhora se chama?",
-            "id": "ru-013-x02",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu me chamo Olga.»",
-            "opcoes": [
-              "зовут",
-              "Меня",
-              "Ольга."
-            ],
-            "gabarito": "Меня зовут Ольга.",
-            "explicacao": "Escreva: Меня зовут Ольга.",
-            "id": "ru-013-x03",
             "complemento": true
           },
           {
@@ -142,23 +119,33 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Меня зовут Ольга.",
-            "respostaEsperada": "Меня зовут Ольга.",
-            "explicacao": "Eu me chamo Olga.",
-            "id": "ru-013-x04",
+            "audio": "Где вы живёте?",
+            "respostaEsperada": "Где вы живёте?",
+            "explicacao": "Onde a senhora mora?",
+            "id": "ru-013-x02",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Здравствуйте! Как вас зовут?",
+            "respostaEsperada": "Здравствуйте! Как вас зовут?",
+            "explicacao": "Olá! Como a senhora se chama?",
+            "id": "ru-013-r01",
             "complemento": true
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Onde a senhora mora?»",
+            "enunciado": "Monte a frase: «A senhora lê livros com frequência?»",
             "opcoes": [
-              "живёте?",
-              "Где",
-              "вы"
+              "Вы",
+              "читаете",
+              "книги?",
+              "часто"
             ],
-            "gabarito": "Где вы живёте?",
-            "explicacao": "Escreva: Где вы живёте?",
-            "id": "ru-013-x05",
+            "gabarito": "Вы часто читаете книги?",
+            "explicacao": "Escreva: Вы часто читаете книги?",
+            "id": "ru-013-x03",
             "complemento": true
           },
           {
@@ -176,24 +163,10 @@
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
-            "audio": "Где вы живёте?",
-            "respostaEsperada": "Где вы живёте?",
-            "explicacao": "Onde a senhora mora?",
-            "id": "ru-013-x06",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Eu moro em Moscou.»",
-            "opcoes": [
-              "Я",
-              "в",
-              "Москве.",
-              "живу"
-            ],
-            "gabarito": "Я живу в Москве.",
-            "explicacao": "Escreva: Я живу в Москве.",
-            "id": "ru-013-x07",
+            "audio": "Вы часто читаете книги?",
+            "respostaEsperada": "Вы часто читаете книги?",
+            "explicacao": "A senhora lê livros com frequência?",
+            "id": "ru-013-x04",
             "complemento": true
           },
           {
@@ -209,26 +182,35 @@
             "id": "ru-013-e04"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Я живу в Москве.",
-            "respostaEsperada": "Я живу в Москве.",
-            "explicacao": "Eu moro em Moscou.",
-            "id": "ru-013-x08",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Porque é interessante!»",
+            "opcoes": [
+              "Потому",
+              "что",
+              "интересно!",
+              "это"
+            ],
+            "gabarito": "Потому что это интересно!",
+            "explicacao": "Escreva: Потому что это интересно!",
+            "id": "ru-013-x05",
             "complemento": true
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «A senhora lê livros com frequência?»",
-            "opcoes": [
-              "Вы",
-              "читаете",
-              "книги?",
-              "часто"
-            ],
-            "gabarito": "Вы часто читаете книги?",
-            "explicacao": "Escreva: Вы часто читаете книги?",
-            "id": "ru-013-x09",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Меня зовут Ольга.",
+            "respostaEsperada": "Меня зовут Ольга.",
+            "explicacao": "Eu me chamo Olga.",
+            "id": "ru-013-r02",
+            "complemento": true
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Потому что это интересно!",
+            "respostaEsperada": "Потому что это интересно!",
+            "explicacao": "Porque é interessante!",
+            "id": "ru-013-x06",
             "complemento": true
           },
           {
@@ -245,39 +227,18 @@
             "id": "ru-013-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Вы часто читаете книги?",
-            "respostaEsperada": "Вы часто читаете книги?",
-            "explicacao": "A senhora lê livros com frequência?",
-            "id": "ru-013-x10",
-            "complemento": true
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, eu leio sempre. Eu gosto muito de livros.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «куда»?",
+            "audio": "куда",
             "opcoes": [
-              "люблю",
-              "очень",
-              "читаю.",
-              "книги.",
-              "Да,",
-              "я",
-              "всегда",
-              "Я"
+              "por que",
+              "quando",
+              "para onde",
+              "primeiro"
             ],
-            "gabarito": "Да, я всегда читаю. Я очень люблю книги.",
-            "explicacao": "Escreva: Да, я всегда читаю. Я очень люблю книги.",
-            "id": "ru-013-x11",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Да, я всегда читаю. Я очень люблю книги.",
-            "respostaEsperada": "Да, я всегда читаю. Я очень люблю книги.",
-            "explicacao": "Sim, eu leio sempre. Eu gosto muito de livros.",
-            "id": "ru-013-x12",
+            "gabarito": "para onde",
+            "explicacao": "«куда» = para onde.",
+            "id": "ru-013-x07",
             "complemento": true
           },
           {
@@ -293,26 +254,42 @@
             "id": "ru-013-e06"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Porque é interessante!»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «всегда»?",
+            "audio": "всегда",
             "opcoes": [
-              "Потому",
-              "что",
-              "интересно!",
-              "это"
+              "primeiro",
+              "agora",
+              "sempre",
+              "rápido"
             ],
-            "gabarito": "Потому что это интересно!",
-            "explicacao": "Escreva: Потому что это интересно!",
-            "id": "ru-013-x13",
+            "gabarito": "sempre",
+            "explicacao": "«всегда» = sempre.",
+            "id": "ru-013-x08",
             "complemento": true
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Потому что это интересно!",
-            "respostaEsperada": "Потому что это интересно!",
-            "explicacao": "Porque é interessante!",
-            "id": "ru-013-x14",
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Я живу в Москве.",
+            "respostaEsperada": "Я живу в Москве.",
+            "explicacao": "Eu moro em Moscou.",
+            "id": "ru-013-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «иногда»?",
+            "audio": "иногда",
+            "opcoes": [
+              "às vezes",
+              "difícil",
+              "porque",
+              "ontem"
+            ],
+            "gabarito": "às vezes",
+            "explicacao": "«иногда» = às vezes.",
+            "id": "ru-013-x09",
             "complemento": true
           },
           {
@@ -329,32 +306,17 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «куда»?",
-            "audio": "куда",
+            "enunciado": "O que significa «редко»?",
+            "audio": "редко",
             "opcoes": [
-              "por que",
-              "quando",
-              "para onde",
-              "primeiro"
+              "mal",
+              "fácil",
+              "ainda, mais",
+              "raramente"
             ],
-            "gabarito": "para onde",
-            "explicacao": "«куда» = para onde.",
-            "id": "ru-013-x15",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «всегда»?",
-            "audio": "всегда",
-            "opcoes": [
-              "primeiro",
-              "agora",
-              "sempre",
-              "rápido"
-            ],
-            "gabarito": "sempre",
-            "explicacao": "«всегда» = sempre.",
-            "id": "ru-013-x16",
+            "gabarito": "raramente",
+            "explicacao": "«редко» = raramente.",
+            "id": "ru-013-x10",
             "complemento": true
           },
           {
@@ -372,44 +334,6 @@
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "O que significa «иногда»?",
-            "audio": "иногда",
-            "opcoes": [
-              "às vezes",
-              "difícil",
-              "porque",
-              "ontem"
-            ],
-            "gabarito": "às vezes",
-            "explicacao": "«иногда» = às vezes.",
-            "id": "ru-013-x17",
-            "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «редко»?",
-            "audio": "редко",
-            "opcoes": [
-              "mal",
-              "fácil",
-              "ainda, mais",
-              "raramente"
-            ],
-            "gabarito": "raramente",
-            "explicacao": "«редко» = raramente.",
-            "id": "ru-013-x18",
-            "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "Я очень люблю читать",
-            "respostaEsperada": "Я очень люблю читать",
-            "explicacao": "очень = muito.",
-            "id": "ru-013-e09"
-          },
-          {
-            "tipo": "multiple-choice",
             "enunciado": "O que significa «трудно»?",
             "audio": "трудно",
             "opcoes": [
@@ -420,7 +344,16 @@
             ],
             "gabarito": "difícil",
             "explicacao": "«трудно» = difícil.",
-            "id": "ru-013-x19",
+            "id": "ru-013-x11",
+            "complemento": true
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Да, я всегда читаю. Я очень люблю книги.",
+            "respostaEsperada": "Да, я всегда читаю. Я очень люблю книги.",
+            "explicacao": "Sim, eu leio sempre. Eu gosto muito de livros.",
+            "id": "ru-013-r04",
             "complemento": true
           },
           {
@@ -435,14 +368,16 @@
             ],
             "gabarito": "por que",
             "explicacao": "«почему» = por que.",
-            "id": "ru-013-x20",
+            "id": "ru-013-x12",
             "complemento": true
           },
           {
-            "tipo": "producao",
-            "enunciado": "Escreva 4 frases com advérbios (хорошо, плохо, всегда, никогда не).",
-            "respostaEsperada": "Я хорошо читаю. Я плохо говорю. Я всегда слушаю музыку. Я никогда не смотрю кино.",
-            "id": "ru-013-e10"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Я очень люблю читать",
+            "respostaEsperada": "Я очень люблю читать",
+            "explicacao": "очень = muito.",
+            "id": "ru-013-e09"
           },
           {
             "tipo": "sentence-ordering",
@@ -456,8 +391,14 @@
             ],
             "gabarito": "Я очень люблю читать",
             "explicacao": "Escreva: Я очень люблю читать",
-            "id": "ru-013-x21",
+            "id": "ru-013-x13",
             "complemento": true
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva 4 frases com advérbios (хорошо, плохо, всегда, никогда не).",
+            "respostaEsperada": "Я хорошо читаю. Я плохо говорю. Я всегда слушаю музыку. Я никогда не смотрю кино.",
+            "id": "ru-013-e10"
           }
         ]
       },

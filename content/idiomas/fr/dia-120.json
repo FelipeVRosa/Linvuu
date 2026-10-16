@@ -94,6 +94,14 @@
             "id": "fr-030-e05"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Je voudrais louer un appartement",
+            "respostaEsperada": "Je voudrais louer un appartement",
+            "explicacao": "Escreva: Je voudrais louer un appartement.",
+            "id": "fr-030-e06"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «le supermarché»?",
             "audio": "le supermarché",
@@ -107,14 +115,6 @@
             "explicacao": "«le supermarché» = o supermercado.",
             "id": "fr-030-x02",
             "complemento": true
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Je voudrais louer un appartement",
-            "respostaEsperada": "Je voudrais louer un appartement",
-            "explicacao": "Escreva: Je voudrais louer un appartement.",
-            "id": "fr-030-e06"
           },
           {
             "tipo": "multiple-choice",
@@ -142,6 +142,18 @@
           },
           {
             "tipo": "multiple-choice",
+            "enunciado": "Qual frase está correta?",
+            "opcoes": [
+              "Je suis chez moi.",
+              "Je suis à chez moi.",
+              "Je suis chez à moi."
+            ],
+            "gabarito": "Je suis chez moi.",
+            "explicacao": "«Chez» sem «à».",
+            "id": "fr-030-e09"
+          },
+          {
+            "tipo": "multiple-choice",
             "enunciado": "O que significa «l'annonce»?",
             "audio": "l'annonce",
             "opcoes": [
@@ -154,18 +166,6 @@
             "explicacao": "«l'annonce» = o anúncio.",
             "id": "fr-030-x03",
             "complemento": true
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual frase está correta?",
-            "opcoes": [
-              "Je suis chez moi.",
-              "Je suis à chez moi.",
-              "Je suis chez à moi."
-            ],
-            "gabarito": "Je suis chez moi.",
-            "explicacao": "«Chez» sem «à».",
-            "id": "fr-030-e09"
           },
           {
             "tipo": "multiple-choice",
@@ -192,6 +192,18 @@
             "id": "fr-030-e11"
           },
           {
+            "tipo": "fill-gap",
+            "enunciado": "C'est à cinq minutes ___ pied.",
+            "opcoes": [
+              "à",
+              "en",
+              "de"
+            ],
+            "gabarito": "à",
+            "explicacao": "«À pied».",
+            "id": "fr-030-e12"
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "O que significa «l'appartement»?",
             "audio": "l'appartement",
@@ -205,18 +217,6 @@
             "explicacao": "«l'appartement» = o apartamento.",
             "id": "fr-030-x04",
             "complemento": true
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "C'est à cinq minutes ___ pied.",
-            "opcoes": [
-              "à",
-              "en",
-              "de"
-            ],
-            "gabarito": "à",
-            "explicacao": "«À pied».",
-            "id": "fr-030-e12"
           },
           {
             "tipo": "fill-gap",
@@ -243,21 +243,6 @@
             "id": "fr-030-e14"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «le quartier»?",
-            "audio": "le quartier",
-            "opcoes": [
-              "alugar",
-              "o quarto",
-              "o bairro",
-              "o cômodo"
-            ],
-            "gabarito": "o bairro",
-            "explicacao": "«le quartier» = o bairro.",
-            "id": "fr-030-x05",
-            "complemento": true
-          },
-          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Il y a deux chambres et un salon.»",
             "opcoes": [
@@ -275,6 +260,30 @@
             "id": "fr-030-e15"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "la salle de bains",
+            "respostaEsperada": "la salle de bains",
+            "explicacao": "o banheiro",
+            "id": "fr-030-r01",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «le quartier»?",
+            "audio": "le quartier",
+            "opcoes": [
+              "alugar",
+              "o quarto",
+              "o bairro",
+              "o cômodo"
+            ],
+            "gabarito": "o bairro",
+            "explicacao": "«le quartier» = o bairro.",
+            "id": "fr-030-x05",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Je voudrais visiter cet appartement.»",
             "opcoes": [
@@ -287,21 +296,6 @@
             "gabarito": "Je voudrais visiter cet appartement.",
             "explicacao": "Pedido educado.",
             "id": "fr-030-e16"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "O que significa «la pièce»?",
-            "audio": "la pièce",
-            "opcoes": [
-              "o cômodo",
-              "o bairro",
-              "o inquilino",
-              "o metrô"
-            ],
-            "gabarito": "o cômodo",
-            "explicacao": "«la pièce» = o cômodo.",
-            "id": "fr-030-x06",
-            "complemento": true
           },
           {
             "tipo": "producao",
@@ -322,6 +316,21 @@
             "id": "fr-030-e18"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la pièce»?",
+            "audio": "la pièce",
+            "opcoes": [
+              "o cômodo",
+              "o bairro",
+              "o inquilino",
+              "o metrô"
+            ],
+            "gabarito": "o cômodo",
+            "explicacao": "«la pièce» = o cômodo.",
+            "id": "fr-030-x06",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Il est au deuxième ___ . (andar)",
             "opcoes": [
@@ -332,25 +341,6 @@
             "gabarito": "étage",
             "explicacao": "«Étage» = andar.",
             "id": "fr-030-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Il y a deux pièces et un balcon",
-            "opcoes": [
-              "pièces",
-              "deux",
-              "y",
-              "balcon",
-              "Il",
-              "un",
-              "a",
-              "et"
-            ],
-            "gabarito": "Il y a deux pièces et un balcon",
-            "explicacao": "Escreva: Il y a deux pièces et un balcon",
-            "id": "fr-030-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -377,6 +367,25 @@
             "id": "fr-030-e21"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Il y a deux pièces et un balcon",
+            "opcoes": [
+              "pièces",
+              "deux",
+              "y",
+              "balcon",
+              "Il",
+              "un",
+              "a",
+              "et"
+            ],
+            "gabarito": "Il y a deux pièces et un balcon",
+            "explicacao": "Escreva: Il y a deux pièces et un balcon",
+            "id": "fr-030-x07",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quand puis-je ___ l'appartement ? (visitar)",
             "opcoes": [
@@ -387,24 +396,6 @@
             "gabarito": "visiter",
             "explicacao": "Depois de «pouvoir», usa-se o infinitivo.",
             "id": "fr-030-e22"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Le loyer est de neuf cents euros",
-            "opcoes": [
-              "Le",
-              "euros",
-              "neuf",
-              "est",
-              "de",
-              "loyer",
-              "cents"
-            ],
-            "gabarito": "Le loyer est de neuf cents euros",
-            "explicacao": "Escreva: Le loyer est de neuf cents euros",
-            "id": "fr-030-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -431,6 +422,24 @@
             "id": "fr-030-e24"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ouça e monte a frase.",
+            "audio": "Le loyer est de neuf cents euros",
+            "opcoes": [
+              "Le",
+              "euros",
+              "neuf",
+              "est",
+              "de",
+              "loyer",
+              "cents"
+            ],
+            "gabarito": "Le loyer est de neuf cents euros",
+            "explicacao": "Escreva: Le loyer est de neuf cents euros",
+            "id": "fr-030-x08",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase é a mais educada para querer alugar?",
             "opcoes": [
@@ -441,25 +450,6 @@
             "gabarito": "Je voudrais louer cet appartement.",
             "explicacao": "«Je voudrais» é o pedido educado.",
             "id": "fr-030-e25"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ouça e monte a frase.",
-            "audio": "Le métro est à cinq minutes à pied",
-            "opcoes": [
-              "à",
-              "cinq",
-              "pied",
-              "Le",
-              "est",
-              "métro",
-              "minutes",
-              "à"
-            ],
-            "gabarito": "Le métro est à cinq minutes à pied",
-            "explicacao": "Escreva: Le métro est à cinq minutes à pied",
-            "id": "fr-030-x09",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -491,18 +481,20 @@
           {
             "tipo": "sentence-ordering",
             "enunciado": "Ouça e monte a frase.",
-            "audio": "J'habite 12, rue de la Paix",
+            "audio": "Le métro est à cinq minutes à pied",
             "opcoes": [
-              "de",
-              "rue",
-              "Paix",
-              "la",
-              "J'habite",
-              "12,"
+              "à",
+              "cinq",
+              "pied",
+              "Le",
+              "est",
+              "métro",
+              "minutes",
+              "à"
             ],
-            "gabarito": "J'habite 12, rue de la Paix",
-            "explicacao": "Escreva: J'habite 12, rue de la Paix",
-            "id": "fr-030-x10",
+            "gabarito": "Le métro est à cinq minutes à pied",
+            "explicacao": "Escreva: Le métro est à cinq minutes à pied",
+            "id": "fr-030-x09",
             "complemento": true
           },
           {

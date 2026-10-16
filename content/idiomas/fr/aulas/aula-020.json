@@ -456,6 +456,14 @@
               "id": "fr-020-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "C'était un samedi, il faisait beau",
+              "respostaEsperada": "C'était un samedi, il faisait beau",
+              "explicacao": "Escreva: C'était un samedi, il faisait beau.",
+              "id": "fr-020-e04"
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "O que significa «soudain»?",
               "audio": "soudain",
@@ -473,33 +481,10 @@
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "C'était un samedi, il faisait beau",
-              "respostaEsperada": "C'était un samedi, il faisait beau",
-              "explicacao": "Escreva: C'était un samedi, il faisait beau.",
-              "id": "fr-020-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
               "audio": "Un jour, j'ai rencontré Paul",
               "respostaEsperada": "Un jour, j'ai rencontré Paul",
               "explicacao": "Escreva: Un jour, j'ai rencontré Paul.",
               "id": "fr-020-e05"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «pendant que»?",
-              "audio": "pendant que",
-              "opcoes": [
-                "o barulho",
-                "enquanto",
-                "quando",
-                "o medo"
-              ],
-              "gabarito": "enquanto",
-              "explicacao": "«pendant que» = enquanto.",
-              "id": "fr-020-x02",
-              "complemento": true
             },
             {
               "tipo": "audio-recognition",
@@ -523,6 +508,21 @@
             },
             {
               "tipo": "multiple-choice",
+              "enunciado": "O que significa «pendant que»?",
+              "audio": "pendant que",
+              "opcoes": [
+                "o barulho",
+                "enquanto",
+                "quando",
+                "o medo"
+              ],
+              "gabarito": "enquanto",
+              "explicacao": "«pendant que» = enquanto.",
+              "id": "fr-020-x02",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
               "enunciado": "Acontecimento: qual está correto?",
               "opcoes": [
                 "Soudain, la porte s'est ouverte.",
@@ -532,21 +532,6 @@
               "gabarito": "Soudain, la porte s'est ouverte.",
               "explicacao": "Acontecimento: passé composé.",
               "id": "fr-020-e08"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «tomber»?",
-              "audio": "tomber",
-              "opcoes": [
-                "então",
-                "a porta",
-                "cair",
-                "gritar"
-              ],
-              "gabarito": "cair",
-              "explicacao": "«tomber» = cair.",
-              "id": "fr-020-x03",
-              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -573,6 +558,30 @@
               "id": "fr-020-e10"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "tout à coup",
+              "respostaEsperada": "tout à coup",
+              "explicacao": "de repente",
+              "id": "fr-020-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «tomber»?",
+              "audio": "tomber",
+              "opcoes": [
+                "então",
+                "a porta",
+                "cair",
+                "gritar"
+              ],
+              "gabarito": "cair",
+              "explicacao": "«tomber» = cair.",
+              "id": "fr-020-x03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Il ___ quand je suis sorti. (pleuvoir)",
               "opcoes": [
@@ -583,21 +592,6 @@
               "gabarito": "pleuvait",
               "explicacao": "Cenário.",
               "id": "fr-020-e11"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «rencontrer»?",
-              "audio": "rencontrer",
-              "opcoes": [
-                "encontrar, achar",
-                "naquele dia",
-                "encontrar",
-                "gritar"
-              ],
-              "gabarito": "encontrar",
-              "explicacao": "«rencontrer» = encontrar.",
-              "id": "fr-020-x04",
-              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -624,6 +618,21 @@
               "id": "fr-020-e13"
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «rencontrer»?",
+              "audio": "rencontrer",
+              "opcoes": [
+                "encontrar, achar",
+                "naquele dia",
+                "encontrar",
+                "gritar"
+              ],
+              "gabarito": "encontrar",
+              "explicacao": "«rencontrer» = encontrar.",
+              "id": "fr-020-x04",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Pendant que je cuisinais, il ___. (lire)",
               "opcoes": [
@@ -634,21 +643,6 @@
               "gabarito": "lisait",
               "explicacao": "Ações paralelas.",
               "id": "fr-020-e14"
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «quand»?",
-              "audio": "quand",
-              "opcoes": [
-                "quando",
-                "descobrir",
-                "cair",
-                "a chave"
-              ],
-              "gabarito": "quando",
-              "explicacao": "«quand» = quando.",
-              "id": "fr-020-x05",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -682,25 +676,25 @@
               "id": "fr-020-e16"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «le bruit»?",
-              "audio": "le bruit",
-              "opcoes": [
-                "o barulho",
-                "então",
-                "descobrir",
-                "a rua"
-              ],
-              "gabarito": "o barulho",
-              "explicacao": "«le bruit» = o barulho.",
-              "id": "fr-020-x06",
-              "complemento": true
-            },
-            {
               "tipo": "producao",
               "enunciado": "Escreva em francês: Era sábado e chovia. De repente, eu ouvi um barulho. Abri a porta.",
               "respostaEsperada": "C'était samedi et il pleuvait. Soudain, j'ai entendu un bruit. J'ai ouvert la porte.",
               "id": "fr-020-e17"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «quand»?",
+              "audio": "quand",
+              "opcoes": [
+                "quando",
+                "descobrir",
+                "cair",
+                "a chave"
+              ],
+              "gabarito": "quando",
+              "explicacao": "«quand» = quando.",
+              "id": "fr-020-x05",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -727,23 +721,6 @@
               "id": "fr-020-e19"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Il pleuvait quand je suis sorti",
-              "opcoes": [
-                "je",
-                "Il",
-                "quand",
-                "suis",
-                "pleuvait",
-                "sorti"
-              ],
-              "gabarito": "Il pleuvait quand je suis sorti",
-              "explicacao": "Escreva: Il pleuvait quand je suis sorti",
-              "id": "fr-020-x07",
-              "complemento": true
-            },
-            {
               "tipo": "fill-gap",
               "enunciado": "Chaque hiver, il ___ très froid. (faire)",
               "opcoes": [
@@ -754,6 +731,30 @@
               "gabarito": "faisait",
               "explicacao": "«Chaque hiver» marca hábito: imparfait.",
               "id": "fr-020-e20"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «le bruit»?",
+              "audio": "le bruit",
+              "opcoes": [
+                "o barulho",
+                "então",
+                "descobrir",
+                "a rua"
+              ],
+              "gabarito": "o barulho",
+              "explicacao": "«le bruit» = o barulho.",
+              "id": "fr-020-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "à ce moment-là",
+              "respostaEsperada": "à ce moment-là",
+              "explicacao": "naquele momento",
+              "id": "fr-020-r02",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -780,22 +781,6 @@
               "id": "fr-020-e22"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Soudain, j'ai entendu un bruit",
-              "opcoes": [
-                "entendu",
-                "Soudain,",
-                "bruit",
-                "un",
-                "j'ai"
-              ],
-              "gabarito": "Soudain, j'ai entendu un bruit",
-              "explicacao": "Escreva: Soudain, j'ai entendu un bruit",
-              "id": "fr-020-x08",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase combina corretamente os dois tempos?",
               "opcoes": [
@@ -806,6 +791,23 @@
               "gabarito": "Je dormais quand le téléphone a sonné.",
               "explicacao": "Ação em curso (imparfait) interrompida por um acontecimento (passé composé).",
               "id": "fr-020-e23"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Il pleuvait quand je suis sorti",
+              "opcoes": [
+                "je",
+                "Il",
+                "quand",
+                "suis",
+                "pleuvait",
+                "sorti"
+              ],
+              "gabarito": "Il pleuvait quand je suis sorti",
+              "explicacao": "Escreva: Il pleuvait quand je suis sorti",
+              "id": "fr-020-x07",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -832,23 +834,6 @@
               "id": "fr-020-e25"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "C'était un samedi, il faisait beau",
-              "opcoes": [
-                "beau",
-                "faisait",
-                "il",
-                "samedi,",
-                "C'était",
-                "un"
-              ],
-              "gabarito": "C'était un samedi, il faisait beau",
-              "explicacao": "Escreva: C'était un samedi, il faisait beau",
-              "id": "fr-020-x09",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase descreve um hábito no passado?",
               "opcoes": [
@@ -859,6 +844,22 @@
               "gabarito": "Chaque jour, je prenais le bus.",
               "explicacao": "«Chaque jour» marca hábito: imparfait.",
               "id": "fr-020-e26"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Soudain, j'ai entendu un bruit",
+              "opcoes": [
+                "entendu",
+                "Soudain,",
+                "bruit",
+                "un",
+                "j'ai"
+              ],
+              "gabarito": "Soudain, j'ai entendu un bruit",
+              "explicacao": "Escreva: Soudain, j'ai entendu un bruit",
+              "id": "fr-020-x08",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",
@@ -874,22 +875,6 @@
               "gabarito": "Soudain, il a ouvert la porte.",
               "explicacao": "Acontecimento: passé composé.",
               "id": "fr-020-e27"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Ouça e monte a frase.",
-              "audio": "Un jour, j'ai rencontré Paul",
-              "opcoes": [
-                "rencontré",
-                "j'ai",
-                "Paul",
-                "jour,",
-                "Un"
-              ],
-              "gabarito": "Un jour, j'ai rencontré Paul",
-              "explicacao": "Escreva: Un jour, j'ai rencontré Paul",
-              "id": "fr-020-x10",
-              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

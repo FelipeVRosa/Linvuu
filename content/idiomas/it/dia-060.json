@@ -63,19 +63,6 @@
             "id": "it-015-e03"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Bom dia, posso ajudá-la?»",
-            "opcoes": [
-              "Buongiorno,",
-              "aiutarLa?",
-              "posso"
-            ],
-            "gabarito": "Buongiorno, posso aiutarLa?",
-            "explicacao": "Escreva: Buongiorno, posso aiutarLa?",
-            "id": "it-015-x01",
-            "complemento": true
-          },
-          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Vorrei una taglia più grande",
@@ -92,12 +79,22 @@
             "id": "it-015-e05"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Buongiorno, posso aiutarLa?",
-            "respostaEsperada": "Buongiorno, posso aiutarLa?",
-            "explicacao": "Bom dia, posso ajudá-la?",
-            "id": "it-015-x02",
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Custa cento e vinte euros. O provador fica lá no fundo.»",
+            "opcoes": [
+              "camerino",
+              "è",
+              "centoventi",
+              "in",
+              "là",
+              "euro.",
+              "fondo.",
+              "Costa",
+              "Il"
+            ],
+            "gabarito": "Costa centoventi euro. Il camerino è là in fondo.",
+            "explicacao": "Escreva: Costa centoventi euro. Il camerino è là in fondo.",
+            "id": "it-015-x01",
             "complemento": true
           },
           {
@@ -107,6 +104,15 @@
             "respostaEsperada": "Quel vestito costa cento euro",
             "explicacao": "Escreva: Quel vestito costa cento euro.",
             "id": "it-015-e06"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Buongiorno, posso aiutarLa?",
+            "respostaEsperada": "Buongiorno, posso aiutarLa?",
+            "explicacao": "Bom dia, posso ajudá-la?",
+            "id": "it-015-r01",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -133,24 +139,6 @@
             "id": "it-015-e08"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Sim, gostaria de experimentar aquela jaqueta azul na vitrine.»",
-            "opcoes": [
-              "Sì,",
-              "giacca",
-              "in",
-              "quella",
-              "vetrina.",
-              "blu",
-              "vorrei",
-              "provare"
-            ],
-            "gabarito": "Sì, vorrei provare quella giacca blu in vetrina.",
-            "explicacao": "Escreva: Sì, vorrei provare quella giacca blu in vetrina.",
-            "id": "it-015-x03",
-            "complemento": true
-          },
-          {
             "tipo": "multiple-choice",
             "enunciado": "Como se diz «aquele estudante»?",
             "opcoes": [
@@ -161,6 +149,15 @@
             "gabarito": "quello studente",
             "explicacao": "«S» + consoante pede «quello».",
             "id": "it-015-e09"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Costa centoventi euro. Il camerino è là in fondo.",
+            "respostaEsperada": "Costa centoventi euro. Il camerino è là in fondo.",
+            "explicacao": "Custa cento e vinte euros. O provador fica lá no fundo.",
+            "id": "it-015-x02",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -187,15 +184,6 @@
             "id": "it-015-e11"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Sì, vorrei provare quella giacca blu in vetrina.",
-            "respostaEsperada": "Sì, vorrei provare quella giacca blu in vetrina.",
-            "explicacao": "Sim, gostaria de experimentar aquela jaqueta azul na vitrine.",
-            "id": "it-015-x04",
-            "complemento": true
-          },
-          {
             "tipo": "fill-gap",
             "enunciado": "___ amica è simpatica. (aquela)",
             "opcoes": [
@@ -206,6 +194,15 @@
             "gabarito": "Quell'",
             "explicacao": "Antes de vogal.",
             "id": "it-015-e12"
+          },
+          {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "respostaEsperada": "Sì, vorrei provare quella giacca blu in vetrina.",
+            "explicacao": "Sim, gostaria de experimentar aquela jaqueta azul na vitrine.",
+            "id": "it-015-r02",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -220,6 +217,21 @@
             "id": "it-015-e13"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «il vestito»?",
+            "audio": "il vestito",
+            "opcoes": [
+              "o vestido, o terno",
+              "a camiseta",
+              "custar",
+              "o casaco"
+            ],
+            "gabarito": "o vestido, o terno",
+            "explicacao": "«il vestito» = o vestido, o terno.",
+            "id": "it-015-x03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "È ___ grande per me. (demais)",
             "opcoes": [
@@ -230,20 +242,6 @@
             "gabarito": "troppo",
             "explicacao": "«Troppo» é demais.",
             "id": "it-015-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Claro. Que tamanho a senhora usa?»",
-            "opcoes": [
-              "porta?",
-              "taglia",
-              "Che",
-              "Certo."
-            ],
-            "gabarito": "Certo. Che taglia porta?",
-            "explicacao": "Escreva: Certo. Che taglia porta?",
-            "id": "it-015-x05",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",
@@ -272,19 +270,25 @@
             "id": "it-015-e16"
           },
           {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Certo. Che taglia porta?",
-            "respostaEsperada": "Certo. Che taglia porta?",
-            "explicacao": "Claro. Que tamanho a senhora usa?",
-            "id": "it-015-x06",
-            "complemento": true
-          },
-          {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Gostaria de experimentar aquele casaco preto. Quanto custa?",
             "respostaEsperada": "Vorrei provare quel cappotto nero. Quanto costa?",
             "id": "it-015-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «lì»?",
+            "audio": "lì",
+            "opcoes": [
+              "custar",
+              "o preço",
+              "aquele",
+              "ali"
+            ],
+            "gabarito": "ali",
+            "explicacao": "«lì» = ali.",
+            "id": "it-015-x04",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -299,6 +303,15 @@
             "id": "it-015-e18"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "Certo. Che taglia porta?",
+            "respostaEsperada": "Certo. Che taglia porta?",
+            "explicacao": "Claro. Que tamanho a senhora usa?",
+            "id": "it-015-r03",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Due camicie ___. (pretas)",
             "opcoes": [
@@ -309,20 +322,6 @@
             "gabarito": "nere",
             "explicacao": "«Camicie» é feminino plural: «nere».",
             "id": "it-015-e19"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «O quarenta e dois. Quanto custa?»",
-            "opcoes": [
-              "Quanto",
-              "quarantadue.",
-              "costa?",
-              "La"
-            ],
-            "gabarito": "La quarantadue. Quanto costa?",
-            "explicacao": "Escreva: La quarantadue. Quanto costa?",
-            "id": "it-015-x07",
-            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -349,6 +348,21 @@
             "id": "it-015-e21"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «la camicia»?",
+            "audio": "la camicia",
+            "opcoes": [
+              "aquele",
+              "aqui",
+              "o casaco",
+              "a camisa"
+            ],
+            "gabarito": "a camisa",
+            "explicacao": "«la camicia» = a camisa.",
+            "id": "it-015-x05",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "Quanto ___ questa gonna? (custa)",
             "opcoes": [
@@ -359,15 +373,6 @@
             "gabarito": "costa",
             "explicacao": "Um só item: «costa».",
             "id": "it-015-e22"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "La quarantadue. Quanto costa?",
-            "respostaEsperada": "La quarantadue. Quanto costa?",
-            "explicacao": "O quarenta e dois. Quanto custa?",
-            "id": "it-015-x08",
-            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -394,6 +399,15 @@
             "id": "it-015-e24"
           },
           {
+            "tipo": "repeat",
+            "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+            "audio": "La quarantadue. Quanto costa?",
+            "respostaEsperada": "La quarantadue. Quanto costa?",
+            "explicacao": "O quarenta e dois. Quanto custa?",
+            "id": "it-015-r04",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Onde se experimenta a roupa?",
             "opcoes": [
@@ -406,22 +420,18 @@
             "id": "it-015-e25"
           },
           {
-            "tipo": "sentence-ordering",
-            "enunciado": "Monte a frase: «Custa cento e vinte euros. O provador fica lá no fundo.»",
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «qui»?",
+            "audio": "qui",
             "opcoes": [
-              "camerino",
-              "è",
-              "centoventi",
-              "in",
-              "là",
-              "euro.",
-              "fondo.",
-              "Costa",
-              "Il"
+              "aqui",
+              "os sapatos",
+              "custar",
+              "o provador"
             ],
-            "gabarito": "Costa centoventi euro. Il camerino è là in fondo.",
-            "explicacao": "Escreva: Costa centoventi euro. Il camerino è là in fondo.",
-            "id": "it-015-x09",
+            "gabarito": "aqui",
+            "explicacao": "«qui» = aqui.",
+            "id": "it-015-x06",
             "complemento": true
           },
           {
@@ -449,15 +459,6 @@
             "gabarito": "Vorrei provare quei pantaloni neri.",
             "explicacao": "A cor vem depois do substantivo e concorda com ele.",
             "id": "it-015-e27"
-          },
-          {
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva.",
-            "audio": "Costa centoventi euro. Il camerino è là in fondo.",
-            "respostaEsperada": "Costa centoventi euro. Il camerino è là in fondo.",
-            "explicacao": "Custa cento e vinte euros. O provador fica lá no fundo.",
-            "id": "it-015-x10",
-            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

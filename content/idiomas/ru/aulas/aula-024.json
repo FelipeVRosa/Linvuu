@@ -560,26 +560,18 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Como você vai ao trabalho?»",
+              "enunciado": "Monte a frase: «Eu vou a pé. Meu trabalho é perto.»",
               "opcoes": [
-                "Как",
-                "ты",
-                "ездишь",
-                "работу?",
-                "на"
+                "рядом.",
+                "работа",
+                "пешком.",
+                "хожу",
+                "Моя",
+                "Я"
               ],
-              "gabarito": "Как ты ездишь на работу?",
-              "explicacao": "Escreva: Как ты ездишь на работу?",
+              "gabarito": "Я хожу пешком. Моя работа рядом.",
+              "explicacao": "Escreva: Я хожу пешком. Моя работа рядом.",
               "id": "ru-024-x01",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Как ты ездишь на работу?",
-              "respostaEsperada": "Как ты ездишь на работу?",
-              "explicacao": "Como você vai ao trabalho?",
-              "id": "ru-024-x02",
               "complemento": true
             },
             {
@@ -595,28 +587,12 @@
               "id": "ru-024-e02"
             },
             {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu vou de metrô. E você?»",
-              "opcoes": [
-                "езжу",
-                "на",
-                "метро.",
-                "А",
-                "ты?",
-                "Я"
-              ],
-              "gabarito": "Я езжу на метро. А ты?",
-              "explicacao": "Escreva: Я езжу на метро. А ты?",
-              "id": "ru-024-x03",
-              "complemento": true
-            },
-            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
-              "audio": "Я езжу на метро. А ты?",
-              "respostaEsperada": "Я езжу на метро. А ты?",
-              "explicacao": "Eu vou de metrô. E você?",
-              "id": "ru-024-x04",
+              "audio": "Я хожу пешком. Моя работа рядом.",
+              "respostaEsperada": "Я хожу пешком. Моя работа рядом.",
+              "explicacao": "Eu vou a pé. Meu trabalho é perto.",
+              "id": "ru-024-x02",
               "complemento": true
             },
             {
@@ -633,18 +609,36 @@
             },
             {
               "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Eu vou a pé. Meu trabalho é perto.»",
+              "enunciado": "Monte a frase: «Não, às vezes vou de ônibus.»",
               "opcoes": [
-                "рядом.",
-                "работа",
-                "пешком.",
-                "хожу",
-                "Моя",
-                "Я"
+                "Нет,",
+                "я",
+                "автобусе.",
+                "на",
+                "езжу",
+                "иногда"
               ],
-              "gabarito": "Я хожу пешком. Моя работа рядом.",
-              "explicacao": "Escreva: Я хожу пешком. Моя работа рядом.",
-              "id": "ru-024-x05",
+              "gabarito": "Нет, иногда я езжу на автобусе.",
+              "explicacao": "Escreva: Нет, иногда я езжу на автобусе.",
+              "id": "ru-024-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Как ты ездишь на работу?",
+              "respostaEsperada": "Как ты ездишь на работу?",
+              "explicacao": "Como você vai ao trabalho?",
+              "id": "ru-024-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Нет, иногда я езжу на автобусе.",
+              "respostaEsperada": "Нет, иногда я езжу на автобусе.",
+              "explicacao": "Não, às vezes vou de ônibus.",
+              "id": "ru-024-x04",
               "complemento": true
             },
             {
@@ -658,137 +652,6 @@
               "gabarito": "еду",
               "explicacao": "Agora, de transporte: ехать.",
               "id": "ru-024-e04"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Я хожу пешком. Моя работа рядом.",
-              "respostaEsperada": "Я хожу пешком. Моя работа рядом.",
-              "explicacao": "Eu vou a pé. Meu trabalho é perto.",
-              "id": "ru-024-x06",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Você sempre vai a pé?»",
-              "opcoes": [
-                "пешком?",
-                "всегда",
-                "ходишь",
-                "Ты"
-              ],
-              "gabarito": "Ты всегда ходишь пешком?",
-              "explicacao": "Escreva: Ты всегда ходишь пешком?",
-              "id": "ru-024-x07",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Он всегда ___ на автобусе.",
-              "opcoes": [
-                "ездит",
-                "едет",
-                "ходит"
-              ],
-              "gabarito": "ездит",
-              "explicacao": "Hábito, de transporte: ездить.",
-              "id": "ru-024-e05"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Ты всегда ходишь пешком?",
-              "respostaEsperada": "Ты всегда ходишь пешком?",
-              "explicacao": "Você sempre vai a pé?",
-              "id": "ru-024-x08",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Não, às vezes vou de ônibus.»",
-              "opcoes": [
-                "Нет,",
-                "я",
-                "автобусе.",
-                "на",
-                "езжу",
-                "иногда"
-              ],
-              "gabarito": "Нет, иногда я езжу на автобусе.",
-              "explicacao": "Escreva: Нет, иногда я езжу на автобусе.",
-              "id": "ru-024-x09",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Завтра я ___ в магазин. (a pé)",
-              "opcoes": [
-                "пойду",
-                "иду",
-                "хожу"
-              ],
-              "gabarito": "пойду",
-              "explicacao": "Futuro: по- + forma conjugada.",
-              "id": "ru-024-e06"
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Нет, иногда я езжу на автобусе.",
-              "respostaEsperada": "Нет, иногда я езжу на автобусе.",
-              "explicacao": "Não, às vezes vou de ônibus.",
-              "id": "ru-024-x10",
-              "complemento": true
-            },
-            {
-              "tipo": "fill-gap",
-              "enunciado": "Завтра мы ___ в Москву. (de transporte)",
-              "opcoes": [
-                "поедем",
-                "едем",
-                "ездим"
-              ],
-              "gabarito": "поедем",
-              "explicacao": "Futuro: поехать.",
-              "id": "ru-024-e07"
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «E amanhã você vai a pé para o trabalho?»",
-              "opcoes": [
-                "пешком?",
-                "на",
-                "завтра",
-                "ты",
-                "А",
-                "пойдёшь",
-                "работу"
-              ],
-              "gabarito": "А завтра ты пойдёшь на работу пешком?",
-              "explicacao": "Escreva: А завтра ты пойдёшь на работу пешком?",
-              "id": "ru-024-x11",
-              "complemento": true
-            },
-            {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "А завтра ты пойдёшь на работу пешком?",
-              "respostaEsperada": "А завтра ты пойдёшь на работу пешком?",
-              "explicacao": "E amanhã você vai a pé para o trabalho?",
-              "id": "ru-024-x12",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "«Я приезжаю на работу на метро» significa:",
-              "opcoes": [
-                "Eu chego ao trabalho de metrô",
-                "Eu saio de metrô",
-                "Eu moro no metrô"
-              ],
-              "gabarito": "Eu chego ao trabalho de metrô",
-              "explicacao": "приезжать = chegar de transporte.",
-              "id": "ru-024-e08"
             },
             {
               "tipo": "sentence-ordering",
@@ -807,7 +670,149 @@
               ],
               "gabarito": "Да, завтра я пойду пешком. А ты поедешь на метро?",
               "explicacao": "Escreva: Да, завтра я пойду пешком. А ты поедешь на метро?",
-              "id": "ru-024-x13",
+              "id": "ru-024-x05",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Он всегда ___ на автобусе.",
+              "opcoes": [
+                "ездит",
+                "едет",
+                "ходит"
+              ],
+              "gabarito": "ездит",
+              "explicacao": "Hábito, de transporte: ездить.",
+              "id": "ru-024-e05"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Да, завтра я пойду пешком. А ты поедешь на метро?",
+              "respostaEsperada": "Да, завтра я пойду пешком. А ты поедешь на метро?",
+              "explicacao": "Sim, amanhã vou a pé. E você vai de metrô?",
+              "id": "ru-024-x06",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Завтра я ___ в магазин. (a pé)",
+              "opcoes": [
+                "пойду",
+                "иду",
+                "хожу"
+              ],
+              "gabarito": "пойду",
+              "explicacao": "Futuro: по- + forma conjugada.",
+              "id": "ru-024-e06"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, como sempre!»",
+              "opcoes": [
+                "как",
+                "Да,",
+                "всегда!"
+              ],
+              "gabarito": "Да, как всегда!",
+              "explicacao": "Escreva: Да, как всегда!",
+              "id": "ru-024-x07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Я езжу на метро. А ты?",
+              "respostaEsperada": "Я езжу на метро. А ты?",
+              "explicacao": "Eu vou de metrô. E você?",
+              "id": "ru-024-r02",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Да, как всегда!",
+              "respostaEsperada": "Да, как всегда!",
+              "explicacao": "Sim, como sempre!",
+              "id": "ru-024-x08",
+              "complemento": true
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Завтра мы ___ в Москву. (de transporte)",
+              "opcoes": [
+                "поедем",
+                "едем",
+                "ездим"
+              ],
+              "gabarito": "поедем",
+              "explicacao": "Futuro: поехать.",
+              "id": "ru-024-e07"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «приезжать»?",
+              "audio": "приезжать",
+              "opcoes": [
+                "voar (indeterminado)",
+                "chegar de transporte",
+                "chegar a pé",
+                "partir de transporte"
+              ],
+              "gabarito": "chegar de transporte",
+              "explicacao": "«приезжать» = chegar de transporte.",
+              "id": "ru-024-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "«Я приезжаю на работу на метро» significa:",
+              "opcoes": [
+                "Eu chego ao trabalho de metrô",
+                "Eu saio de metrô",
+                "Eu moro no metrô"
+              ],
+              "gabarito": "Eu chego ao trabalho de metrô",
+              "explicacao": "приезжать = chegar de transporte.",
+              "id": "ru-024-e08"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «летать»?",
+              "audio": "летать",
+              "opcoes": [
+                "chegar a pé",
+                "voar (indeterminado)",
+                "bicicleta",
+                "voar (determinado: лечу, летишь)"
+              ],
+              "gabarito": "voar (indeterminado)",
+              "explicacao": "«летать» = voar (indeterminado).",
+              "id": "ru-024-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Ты всегда ходишь пешком?",
+              "respostaEsperada": "Ты всегда ходишь пешком?",
+              "explicacao": "Você sempre vai a pé?",
+              "id": "ru-024-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «велосипед»?",
+              "audio": "велосипед",
+              "opcoes": [
+                "bicicleta",
+                "chegar de transporte",
+                "avião",
+                "trem"
+              ],
+              "gabarito": "bicicleta",
+              "explicacao": "«велосипед» = bicicleta.",
+              "id": "ru-024-x11",
               "complemento": true
             },
             {
@@ -823,25 +828,18 @@
               "id": "ru-024-e09"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Да, завтра я пойду пешком. А ты поедешь на метро?",
-              "respostaEsperada": "Да, завтра я пойду пешком. А ты поедешь на метро?",
-              "explicacao": "Sim, amanhã vou a pé. E você vai de metrô?",
-              "id": "ru-024-x14",
-              "complemento": true
-            },
-            {
-              "tipo": "sentence-ordering",
-              "enunciado": "Monte a frase: «Sim, como sempre!»",
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «бегать»?",
+              "audio": "бегать",
               "opcoes": [
-                "как",
-                "Да,",
-                "всегда!"
+                "voar (indeterminado)",
+                "partir de transporte",
+                "metrô (não muda)",
+                "correr (indeterminado)"
               ],
-              "gabarito": "Да, как всегда!",
-              "explicacao": "Escreva: Да, как всегда!",
-              "id": "ru-024-x15",
+              "gabarito": "correr (indeterminado)",
+              "explicacao": "«бегать» = correr (indeterminado).",
+              "id": "ru-024-x12",
               "complemento": true
             },
             {
@@ -857,27 +855,18 @@
               "id": "ru-024-e10"
             },
             {
-              "tipo": "audio-recognition",
-              "enunciado": "Ouça e escreva.",
-              "audio": "Да, как всегда!",
-              "respostaEsperada": "Да, как всегда!",
-              "explicacao": "Sim, como sempre!",
-              "id": "ru-024-x16",
-              "complemento": true
-            },
-            {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «приезжать»?",
-              "audio": "приезжать",
+              "enunciado": "O que significa «самолёт»?",
+              "audio": "самолёт",
               "opcoes": [
-                "voar (indeterminado)",
-                "chegar de transporte",
-                "chegar a pé",
-                "partir de transporte"
+                "táxi (não muda)",
+                "avião",
+                "metrô (não muda)",
+                "bicicleta"
               ],
-              "gabarito": "chegar de transporte",
-              "explicacao": "«приезжать» = chegar de transporte.",
-              "id": "ru-024-x17",
+              "gabarito": "avião",
+              "explicacao": "«самолёт» = avião.",
+              "id": "ru-024-x13",
               "complemento": true
             },
             {
@@ -895,17 +884,42 @@
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que significa «летать»?",
-              "audio": "летать",
+              "enunciado": "O que significa «автобус»?",
+              "audio": "автобус",
               "opcoes": [
-                "chegar a pé",
-                "voar (indeterminado)",
-                "bicicleta",
-                "voar (determinado: лечу, летишь)"
+                "metrô (não muda)",
+                "avião",
+                "trem",
+                "ônibus"
               ],
-              "gabarito": "voar (indeterminado)",
-              "explicacao": "«летать» = voar (indeterminado).",
-              "id": "ru-024-x18",
+              "gabarito": "ônibus",
+              "explicacao": "«автобус» = ônibus.",
+              "id": "ru-024-x14",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "А завтра ты пойдёшь на работу пешком?",
+              "respostaEsperada": "А завтра ты пойдёшь на работу пешком?",
+              "explicacao": "E amanhã você vai a pé para o trabalho?",
+              "id": "ru-024-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Я хожу на работу пешком",
+              "opcoes": [
+                "хожу",
+                "на",
+                "работу",
+                "Я",
+                "пешком"
+              ],
+              "gabarito": "Я хожу на работу пешком",
+              "explicacao": "Escreva: Я хожу на работу пешком",
+              "id": "ru-024-x15",
               "complemento": true
             },
             {
@@ -924,33 +938,19 @@
               "id": "ru-024-e12"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «велосипед»?",
-              "audio": "велосипед",
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Завтра я поеду в Москву",
               "opcoes": [
-                "bicicleta",
-                "chegar de transporte",
-                "avião",
-                "trem"
+                "я",
+                "Завтра",
+                "поеду",
+                "Москву",
+                "в"
               ],
-              "gabarito": "bicicleta",
-              "explicacao": "«велосипед» = bicicleta.",
-              "id": "ru-024-x19",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «бегать»?",
-              "audio": "бегать",
-              "opcoes": [
-                "voar (indeterminado)",
-                "partir de transporte",
-                "metrô (não muda)",
-                "correr (indeterminado)"
-              ],
-              "gabarito": "correr (indeterminado)",
-              "explicacao": "«бегать» = correr (indeterminado).",
-              "id": "ru-024-x20",
+              "gabarito": "Завтра я поеду в Москву",
+              "explicacao": "Escreva: Завтра я поеду в Москву",
+              "id": "ru-024-x16",
               "complemento": true
             },
             {
@@ -962,33 +962,12 @@
               "id": "ru-024-e13"
             },
             {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «самолёт»?",
-              "audio": "самолёт",
-              "opcoes": [
-                "táxi (não muda)",
-                "avião",
-                "metrô (não muda)",
-                "bicicleta"
-              ],
-              "gabarito": "avião",
-              "explicacao": "«самолёт» = avião.",
-              "id": "ru-024-x21",
-              "complemento": true
-            },
-            {
-              "tipo": "multiple-choice",
-              "enunciado": "O que significa «автобус»?",
-              "audio": "автобус",
-              "opcoes": [
-                "metrô (não muda)",
-                "avião",
-                "trem",
-                "ônibus"
-              ],
-              "gabarito": "ônibus",
-              "explicacao": "«автобус» = ônibus.",
-              "id": "ru-024-x22",
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Я хожу на работу пешком",
+              "respostaEsperada": "Я хожу на работу пешком",
+              "explicacao": "Escreva: Я хожу на работу пешком",
+              "id": "ru-024-x17",
               "complemento": true
             },
             {

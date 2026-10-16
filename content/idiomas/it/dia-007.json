@@ -9,7 +9,7 @@
   "aula": {
     "numero": 2,
     "titulo": "Essere, pronomes e adjetivos",
-    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», e fazer o adjetivo concordar em gênero e número.",
+    "objetivo": "Usar o presente do verbo «essere» (ser e estar) com todos os pronomes, escolher entre «tu», «Lei» e «voi», fazer o adjetivo concordar em gênero e número e perguntar com «chi», «dove» e «come».",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,8 +20,33 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "texto",
+        "min": 6,
+        "titulo": "Marco e Giulia",
+        "ru": "Lui è Marco. È alto e simpatico. Lei è Giulia. È bassa, ma è molto gentile. Marco e Giulia sono amici. Oggi sono stanchi, ma contenti. Dove sono? Sono qui, a casa di Luca. Anche Luca e Sara sono qui. Sono giovani e simpatici. Che festa!",
+        "pt": "Ele é Marco. É alto e simpático. Ela é Giulia. É baixa, mas muito gentil. Marco e Giulia são amigos. Hoje estão cansados, mas contentes. Onde estão? Estão aqui, na casa do Luca. Luca e Sara também estão aqui. São jovens e simpáticos. Que festa!",
+        "perguntas": [
+          {
+            "pergunta": "Como é o Marco?",
+            "resposta": "«È alto e simpatico.»: é alto e simpático."
+          },
+          {
+            "pergunta": "Como é a Giulia?",
+            "resposta": "«È bassa, ma è molto gentile.»: é baixa, mas muito gentil."
+          },
+          {
+            "pergunta": "Como estão Marco e Giulia hoje?",
+            "resposta": "«Sono stanchi, ma contenti.»: estão cansados, mas contentes."
+          },
+          {
+            "pergunta": "Onde eles estão?",
+            "resposta": "«Sono qui, a casa di Luca.»: estão aqui, na casa do Luca."
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 5,
+        "min": 3,
         "itens": [
           {
             "ru": "chi",
@@ -52,11 +77,25 @@
             "audio": "qui"
           },
           {
+            "ru": "là",
+            "translit": "lá",
+            "pt": "lá, ali",
+            "en": "",
+            "audio": "là"
+          },
+          {
             "ru": "ma",
             "translit": "ma",
             "pt": "mas",
             "en": "",
             "audio": "ma"
+          },
+          {
+            "ru": "anche",
+            "translit": "ánke",
+            "pt": "também",
+            "en": "",
+            "audio": "anche"
           }
         ]
       },
@@ -64,8 +103,34 @@
         "tipo": "gramatica",
         "min": 8,
         "titulo": "Perguntas: chi, dove e come",
-        "explicacao": "PASSO 1: em italiano, uma pergunta de sim ou não tem a mesma ordem da afirmação; só muda a entonação, que sobe no fim: «Sei stanco?». Não há inversão nem «est-ce que». PASSO 2: «chi è?» pergunta quem: «Chi è lui? — È Marco.» PASSO 3: «dove» pergunta onde: «Dove sei? — Sono qui.» Diante de «è», «dove» e «come» se contraem num só som, e o apóstrofo marca a contração: «Dov'è Giulia?» (dove + è), «Com'è Marco?» (come + è). PASSO 4: «com'è?» pergunta como alguém ou algo é: «Com'è la casa? — È grande.» Já «come stai?» pergunta como a pessoa está. PASSO 5: respostas curtas começam por «sì» ou «no»: «Sei stanco? — Sì, sono stanco.» Para a forma negativa completa, veja a aula 4. PASSO 6: «qui» e «lì / là» (aqui, ali): «Giulia è qui», «Marco è là».",
-        "comparacao": "em português a pergunta também mantém a ordem da frase e muda só a melodia («Você está cansado?»). Em italiano é igual. A diferença está na contração: «dov'è», «com'è».",
+        "explicacao": "Você acabou de ouvir «Dove sono?» no texto. Veja como se pergunta. PASSO 1: em italiano, a pergunta de sim ou não tem a mesma ordem da frase afirmativa. Só a melodia muda: ela sobe no fim. «Sei stanco?», você está cansado? PASSO 2: «chi» pergunta quem. «Chi è lui? — È Marco.» PASSO 3: «dove» pergunta onde. «Dove sei? — Sono qui.» PASSO 4: antes de «è», o «dove» e o «come» perdem a última letra e se juntam ao verbo. Fica «dov'è» e «com'è». O apóstrofo marca a letra que caiu. Diga numa só emissão: «dov'è Giulia?» PASSO 5: «com'è?» pergunta como alguém ou algo é: «Com'è Marco? — È alto.» Já «come stai?» pergunta como a pessoa está. PASSO 6: com várias pessoas, o verbo vai para o plural: «Dove sono Marco e Giulia?» PASSO 7: para responder, comece por «sì» ou «no» e repita o verbo: «Sei stanco? — Sì, sono stanco.» PASSO 8: «qui» é aqui, e «là» é lá: «Giulia è qui, Marco è là.»",
+        "comparacao": "em português a pergunta também mantém a ordem da frase e muda só a melodia («Você está cansado?»). Em italiano é igual. A diferença está na contração: «dov'è» e «com'è», que nós não temos.",
+        "exemplos": [
+          {
+            "ru": "Sei stanco?",
+            "pt": "Você está cansado?"
+          },
+          {
+            "ru": "Chi è Giulia?",
+            "pt": "Quem é a Giulia?"
+          },
+          {
+            "ru": "Dov'è Marco?",
+            "pt": "Onde está o Marco?"
+          },
+          {
+            "ru": "Com'è Marco?",
+            "pt": "Como é o Marco?"
+          },
+          {
+            "ru": "Dove sono Luca e Sara?",
+            "pt": "Onde estão Luca e Sara?"
+          },
+          {
+            "ru": "Sei stanco? — Sì, sono stanco.",
+            "pt": "Você está cansado? — Sim, estou cansado."
+          }
+        ],
         "tabela": [
           {
             "interrogativo": "chi",
@@ -79,8 +144,8 @@
           },
           {
             "interrogativo": "come",
-            "significado": "como (modo, estado)",
-            "exemplo": "Com'è la casa?"
+            "significado": "como (modo de ser)",
+            "exemplo": "Com'è Marco?"
           },
           {
             "interrogativo": "sì / no",
@@ -92,12 +157,12 @@
           {
             "errado": "Dove è Marco?",
             "certo": "Dov'è Marco?",
-            "motivo": "«Dove» + «è» se contraem na fala e na escrita."
+            "motivo": "«Dove» e «è» se juntam na fala e na escrita."
           },
           {
             "errado": "Sei tu stanco?",
             "certo": "Sei stanco?",
-            "motivo": "Não se inverte; muda só a entonação."
+            "motivo": "Não se inverte a ordem. Muda só a melodia."
           },
           {
             "errado": "Chi sei lui?",
@@ -105,47 +170,160 @@
             "motivo": "Com «lui», o verbo é «è»."
           },
           {
-            "errado": "Come è la casa?",
-            "certo": "Com'è la casa?",
-            "motivo": "«Come» + «è» se contraem."
+            "errado": "Come è Marco?",
+            "certo": "Com'è Marco?",
+            "motivo": "«Come» e «è» se juntam."
           }
         ],
         "tag": "Perguntas"
       },
       {
-        "tipo": "texto",
-        "min": 8,
-        "titulo": "Marco e Giulia",
-        "ru": "Lui è Marco. È alto e simpatico. Lei è Giulia. È bassa, ma è molto gentile. Marco e Giulia sono amici. Oggi sono stanchi ma contenti. Dove sono? Sono qui, a casa di Luca.",
-        "pt": "Ele é Marco. É alto e simpático. Ela é Giulia. É baixa, mas muito gentil. Marco e Giulia são amigos. Hoje estão cansados, mas contentes. Onde estão? Estão aqui, na casa de Luca.",
-        "perguntas": [
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
           {
-            "pergunta": "Com'è Marco?",
-            "resposta": "È alto e simpatico."
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Dov'è Giulia?",
+            "opcoes": [
+              "Dov'è Giulia?",
+              "Chi è Giulia?",
+              "Com'è Giulia?"
+            ],
+            "gabarito": "Dov'è Giulia?",
+            "explicacao": "Ouça o começo: «dov'è» tem «dove». «Chi» e «com'è» soam bem diferentes.",
+            "id": "it-002-e07"
           },
           {
-            "pergunta": "Com'è Giulia?",
-            "resposta": "È bassa, ma molto gentile."
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Siete contenti?",
+            "opcoes": [
+              "Siete contenti?",
+              "Siamo contenti?",
+              "Sono contenti?"
+            ],
+            "gabarito": "Siete contenti?",
+            "explicacao": "Ouça a diferença entre «siete», «siamo» e «sono». «Siete» é de «voi».",
+            "id": "it-002-e08"
           },
           {
-            "pergunta": "Come sono oggi Marco e Giulia?",
-            "resposta": "Sono stanchi ma contenti."
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Com'è Marco?",
+            "opcoes": [
+              "Com'è Marco?",
+              "Dov'è Marco?",
+              "Chi è Marco?"
+            ],
+            "gabarito": "Com'è Marco?",
+            "explicacao": "Ouça o começo «com'»: é «come» + «è», e pergunta como ele é.",
+            "id": "it-002-e09"
           },
           {
-            "pergunta": "Dove sono?",
-            "resposta": "Sono a casa di Luca."
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Dov'è Marco?",
+            "respostaEsperada": "Dov'è Marco?",
+            "explicacao": "Escreva: Dov'è Marco? «Dove» e «è» se juntam, com apóstrofo e acento.",
+            "id": "it-002-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Sei stanco?",
+            "respostaEsperada": "Sei stanco?",
+            "explicacao": "Escreva: Sei stanco? A pergunta tem a mesma ordem da afirmação. Só a melodia sobe.",
+            "id": "it-002-e11"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Onde está Marco?»",
+            "opcoes": [
+              "Dove è Marco?",
+              "Dov'è Marco?",
+              "Dove sei Marco?"
+            ],
+            "gabarito": "Dov'è Marco?",
+            "explicacao": "«Dove» e «è» se contraem em «dov'è».",
+            "id": "it-002-e12"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual verbo italiano traduz «ser» e «estar»?",
+            "opcoes": [
+              "avere",
+              "parlare",
+              "essere"
+            ],
+            "gabarito": "essere",
+            "explicacao": "O italiano tem um só verbo para os dois: «sono italiano» e «sono stanco».",
+            "id": "it-002-e13"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ è Giulia? (onde)",
+            "opcoes": [
+              "Dov'",
+              "Chi",
+              "Com'"
+            ],
+            "gabarito": "Dov'",
+            "explicacao": "«Dov'è Giulia?» pergunta onde.",
+            "id": "it-002-e14"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ sono Marco e Luca? (onde)",
+            "opcoes": [
+              "Chi",
+              "Come",
+              "Dove"
+            ],
+            "gabarito": "Dove",
+            "explicacao": "«Dove» pergunta o lugar. O verbo no plural «sono» concorda com dois sujeitos.",
+            "id": "it-002-e15"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ è Luca? — È alto e simpatico. (como)",
+            "opcoes": [
+              "Com'",
+              "Dov'",
+              "Chi"
+            ],
+            "gabarito": "Com'",
+            "explicacao": "A resposta descreve Luca, então a pergunta é «com'è?».",
+            "id": "it-002-e16"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Dov'è Sara?»",
+            "opcoes": [
+              "Dov'è",
+              "Sara?"
+            ],
+            "gabarito": "Dov'è Sara?",
+            "explicacao": "Pergunta com «dov'è», seguida do nome.",
+            "id": "it-002-e17"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: Onde está a Sara? Ela está aqui.",
+            "respostaEsperada": "Dov'è Sara? È qui.",
+            "id": "it-002-e18"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Faça em voz alta três perguntas a um amigo imaginário («Come stai?», «Sei stanco?», «Dove sei?») e responda a cada uma."
+        "min": 4,
+        "enunciado": "Faça em voz alta três perguntas a um amigo imaginário («Come stai?», «Sei stanco?», «Dove sei?») e responda a cada uma. Depois pergunte «Chi è?» sobre uma pessoa da sua família e responda."
       },
       {
         "tipo": "revisao",
-        "min": 4,
-        "enunciado": "Descreva em voz alta duas pessoas, uma com um adjetivo em «-o» e outra com um em «-e». Use o feminino e o plural."
+        "min": 3,
+        "enunciado": "Descreva em voz alta duas pessoas, uma com um adjetivo em «o» e outra com um adjetivo em «e». Use o feminino e o plural."
       }
     ]
   },

@@ -4,113 +4,413 @@
   "fase": 1,
   "nivel": "zero",
   "status": "publicada",
-  "titulo": "Olá, mundo!: Diálogos informal e formal + texto",
+  "titulo": "Olá, mundo!: Diálogos informal e formal",
   "objetivo": "Aula 2, sessão 3 de 4 · 30 min",
   "aula": {
     "numero": 2,
     "titulo": "Olá, mundo!",
-    "objetivo": "Cumprimentar em qualquer situação, reconhecer 13 letras novas e distinguir formal de informal.",
+    "objetivo": "Cumprimentar em qualquer situação, reconhecer 13 letras novas, dizer como você se chama e distinguir formal de informal.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "zero"
   },
   "sessao": {
     "sessao": "S3",
-    "titulo": "Diálogos informal e formal + texto",
+    "titulo": "Diálogos informal e formal",
     "duracaoMin": 30,
     "blocos": [
       {
         "tipo": "dialogo",
-        "min": 12,
-        "titulo": "Привет и Здравствуйте / Informal e formal",
-        "contexto": "Primeiro dois amigos na rua. Depois dois colegas no escritório.",
+        "min": 5,
+        "titulo": "Привет! / Informal",
+        "contexto": "Dois colegas de faculdade se conhecem no corredor.",
         "linhas": [
           {
-            "personagem": "Катя",
-            "ru": "— Привет, Антон!",
-            "pt": "— Oi, Anton!",
-            "audio": "Привет, Антон!"
+            "personagem": "Антон",
+            "ru": "— Привет! Я Антон. А ты?",
+            "pt": "— Oi! Eu sou o Antón. E você?",
+            "audio": "Привет! Я Антон. А ты?"
+          },
+          {
+            "personagem": "Лена",
+            "ru": "— Привет! Меня зовут Лена.",
+            "pt": "— Oi! Eu me chamo Lena.",
+            "audio": "Привет! Меня зовут Лена."
           },
           {
             "personagem": "Антон",
-            "ru": "— Привет, Катя! Как дела?",
-            "pt": "— Oi, Katya! Como vai?",
-            "audio": "Привет, Катя! Как дела?"
+            "ru": "— Очень приятно! Как дела?",
+            "pt": "— Muito prazer! Como vai?",
+            "audio": "Очень приятно! Как дела?"
           },
           {
-            "personagem": "Катя",
+            "personagem": "Лена",
             "ru": "— Хорошо, спасибо. А ты?",
             "pt": "— Bem, obrigada. E você?",
             "audio": "Хорошо, спасибо. А ты?"
           },
           {
             "personagem": "Антон",
-            "ru": "— Тоже хорошо. Пока!",
-            "pt": "— Também bem. Tchau!",
-            "audio": "Тоже хорошо. Пока!"
+            "ru": "— Отлично! Ты студентка?",
+            "pt": "— Ótimo! Você é estudante?",
+            "audio": "Отлично! Ты студентка?"
           },
           {
-            "personagem": "Катя",
-            "ru": "— Пока!",
-            "pt": "— Tchau!",
-            "audio": "Пока!"
+            "personagem": "Лена",
+            "ru": "— Да, я студентка. А ты?",
+            "pt": "— Sim, sou estudante. E você?",
+            "audio": "Да, я студентка. А ты?"
           },
           {
-            "personagem": "Сергей",
-            "ru": "— Здравствуйте, Ирина Петровна!",
-            "pt": "— Olá, Irina Petrovna!",
-            "audio": "Здравствуйте, Ирина Петровна!"
+            "personagem": "Антон",
+            "ru": "— Я тоже студент.",
+            "pt": "— Eu também sou estudante.",
+            "audio": "Я тоже студент."
           },
           {
-            "personagem": "Ирина",
-            "ru": "— Здравствуйте, Сергей! Как дела?",
-            "pt": "— Olá, Sergei! Como vai?",
-            "audio": "Здравствуйте, Сергей! Как дела?"
+            "personagem": "Лена",
+            "ru": "— Мне тоже очень приятно. Пока!",
+            "pt": "— Para mim também é um prazer. Tchau!",
+            "audio": "Мне тоже очень приятно. Пока!"
           },
           {
-            "personagem": "Сергей",
-            "ru": "— Отлично, спасибо. До свидания!",
-            "pt": "— Ótimo, obrigado. Até logo!",
-            "audio": "Отлично, спасибо. До свидания!"
-          },
-          {
-            "personagem": "Ирина",
-            "ru": "— До свидания!",
-            "pt": "— Até logo!",
-            "audio": "До свидания!"
+            "personagem": "Антон",
+            "ru": "— Пока, Лена!",
+            "pt": "— Tchau, Lena!",
+            "audio": "Пока, Лена!"
           }
         ]
       },
       {
-        "tipo": "texto",
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Здравствуйте! / Formal",
+        "contexto": "No escritório, Сергей encontra pela primeira vez a diretora, Ирина Петровна.",
+        "linhas": [
+          {
+            "personagem": "Сергей",
+            "ru": "— Здравствуйте! Как вас зовут?",
+            "pt": "— Olá! Como a senhora se chama?",
+            "audio": "Здравствуйте! Как вас зовут?"
+          },
+          {
+            "personagem": "Ирина",
+            "ru": "— Здравствуйте! Меня зовут Ирина Петровна. А вас?",
+            "pt": "— Olá! Eu me chamo Irina Petrovna. E o senhor?",
+            "audio": "Здравствуйте! Меня зовут Ирина Петровна. А вас?"
+          },
+          {
+            "personagem": "Сергей",
+            "ru": "— Меня зовут Сергей. Очень приятно.",
+            "pt": "— Eu me chamo Serguei. Muito prazer.",
+            "audio": "Меня зовут Сергей. Очень приятно."
+          },
+          {
+            "personagem": "Ирина",
+            "ru": "— Мне тоже приятно. Как дела?",
+            "pt": "— O prazer é meu. Como vai?",
+            "audio": "Мне тоже приятно. Как дела?"
+          },
+          {
+            "personagem": "Сергей",
+            "ru": "— Отлично, спасибо. А вы?",
+            "pt": "— Ótimo, obrigado. E a senhora?",
+            "audio": "Отлично, спасибо. А вы?"
+          },
+          {
+            "personagem": "Ирина",
+            "ru": "— Тоже хорошо. Спасибо!",
+            "pt": "— Também bem. Obrigada!",
+            "audio": "Тоже хорошо. Спасибо!"
+          },
+          {
+            "personagem": "Сергей",
+            "ru": "— Пожалуйста. До свидания!",
+            "pt": "— De nada. Até logo!",
+            "audio": "Пожалуйста. До свидания!"
+          },
+          {
+            "personagem": "Ирина",
+            "ru": "— До свидания, Сергей!",
+            "pt": "— Até logo, Serguei!",
+            "audio": "До свидания, Сергей!"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Como dizer o seu nome: «Меня зовут…»",
+        "explicacao": "PASSO 1: Para dizer o seu nome, o russo diz, literalmente, «a mim chamam…». A frase pronta é «Меня зовут Лена» (miniá zavút liéna): «меня» é «a mim», «зовут» é «chamam». No lugar de «Лена», você põe o seu nome. PASSO 2: Para perguntar ao amigo, diga «Как тебя зовут?» (kak tibiá zavút). Para perguntar a alguém que merece respeito, diga «Как вас зовут?» (kak vas zavút). PASSO 3: Repare: não há palavra para «me», «é» nem «meu». A frase é curta e o nome fica por último, do jeito que ele é. PASSO 4: Depois do nome, a resposta educada é «Очень приятно» (ótchin priátna), «muito prazer». A outra pessoa responde «Мне тоже» (mnie tózhe), «para mim também». PASSO 5: Por enquanto, aprenda «меня», «тебя» e «вас» como blocos prontos. Na aula 3 você vê de onde vêm essas formas.",
+        "comparacao": "em português você diz «eu me chamo» ou «meu nome é». Em russo ninguém diz «eu» nem «meu»: a frase usa «a mim chamam», e o nome vem no fim.",
+        "exemplos": [
+          {
+            "ru": "Меня зовут Антон.",
+            "pt": "Eu me chamo Antón."
+          },
+          {
+            "ru": "Как тебя зовут?",
+            "pt": "Como você se chama? Para um amigo."
+          },
+          {
+            "ru": "Как вас зовут?",
+            "pt": "Como o senhor se chama? Formal."
+          },
+          {
+            "ru": "Очень приятно.",
+            "pt": "Muito prazer."
+          },
+          {
+            "ru": "Мне тоже.",
+            "pt": "Para mim também."
+          }
+        ],
+        "tabela": [
+          {
+            "situação": "Com um amigo",
+            "pergunta": "Как тебя зовут?",
+            "resposta": "Меня зовут Антон."
+          },
+          {
+            "situação": "Com o chefe ou um desconhecido",
+            "pergunta": "Как вас зовут?",
+            "resposta": "Меня зовут Ирина Петровна."
+          },
+          {
+            "situação": "Depois de se apresentar",
+            "pergunta": "Очень приятно.",
+            "resposta": "Мне тоже."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Я зовут Антон",
+            "certo": "Меня зовут Антон",
+            "motivo": "A frase não começa com «я». O russo diz «меня зовут», «a mim chamam»."
+          },
+          {
+            "errado": "Как ты зовут?",
+            "certo": "Как тебя зовут?",
+            "motivo": "A pergunta usa «тебя», e não «ты». É uma forma pronta."
+          },
+          {
+            "errado": "Как тебя зовут? (a uma professora)",
+            "certo": "Как вас зовут?",
+            "motivo": "A uma professora, a um chefe ou a um desconhecido, use «вас»."
+          }
+        ],
+        "tag": "Pronomes"
+      },
+      {
+        "tipo": "exercicios",
         "min": 8,
-        "titulo": "Как дела? / Como vai?",
-        "ru": "Утром Катя приходит в офис. Она видит Сергея и говорит: «Доброе утро, Сергей!» Сергей отвечает: «Доброе утро, Катя! Как дела?» Катя говорит: «Хорошо, спасибо. А ты?» Сергей отвечает: «Отлично!»",
-        "pt": "De manhã Katya chega ao escritório. Ela vê Sergei e diz: «Bom dia, Sergei!» Sergei responde: «Bom dia, Katya! Como vai?» Katya diz: «Bem, obrigada. E você?» Sergei responde: «Ótimo!»",
-        "perguntas": [
+        "itens": [
           {
-            "pergunta": "Кто приходит в офис?",
-            "resposta": "Катя"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Меня зовут Лена.",
+            "opcoes": [
+              "Меня зовут Лена.",
+              "Меня зовут Антон.",
+              "Как вас зовут?"
+            ],
+            "gabarito": "Меня зовут Лена.",
+            "explicacao": "A frase começa com «Меня зовут» e termina com o nome «Лена» (liéna). Com «Антон», o final seria outro.",
+            "id": "ru-002-e33"
           },
           {
-            "pergunta": "Что говорит Сергей?",
-            "resposta": "«Доброе утро, Катя! Как дела?»"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Как вас зовут?",
+            "opcoes": [
+              "Как вас зовут?",
+              "Как тебя зовут?",
+              "Как дела?"
+            ],
+            "gabarito": "Как вас зовут?",
+            "explicacao": "No meio da pergunta você ouviu «вас» (vas), a forma formal. Com «тебя» seria informal.",
+            "id": "ru-002-e34"
           },
           {
-            "pergunta": "Как дела у Кати?",
-            "resposta": "Хорошо"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Как тебя зовут?",
+            "opcoes": [
+              "Как тебя зовут?",
+              "Как вас зовут?",
+              "Как дела?"
+            ],
+            "gabarito": "Как тебя зовут?",
+            "explicacao": "No meio da pergunta você ouviu «тебя» (tibiá), a forma informal. Com «вас» seria formal.",
+            "id": "ru-002-e35"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Я тоже студент.",
+            "opcoes": [
+              "Я тоже студент.",
+              "Я тоже студентка.",
+              "Ты тоже студент."
+            ],
+            "gabarito": "Я тоже студент.",
+            "explicacao": "Começa com «Я» (eu) e termina em t, sem «ка»: o falante é um homem.",
+            "id": "ru-002-e36"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Você se apresenta a um desconhecido. Qual pergunta serve para saber o nome dele?",
+            "opcoes": [
+              "Как вас зовут?",
+              "Как тебя зовут?",
+              "Как дела?"
+            ],
+            "gabarito": "Как вас зовут?",
+            "explicacao": "Com um desconhecido usa-se o formal «вас». «Как дела?» pergunta como a pessoa está, não o nome.",
+            "id": "ru-002-e37"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Меня зовут Лена» quer dizer:",
+            "opcoes": [
+              "Eu me chamo Lena.",
+              "Lena é minha amiga.",
+              "Eu vejo Lena."
+            ],
+            "gabarito": "Eu me chamo Lena.",
+            "explicacao": "«Меня зовут» é a fórmula para dizer o próprio nome. Depois vem o nome, sem mudança.",
+            "id": "ru-002-e38"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Quem diz «Мне тоже приятно» está respondendo a:",
+            "opcoes": [
+              "Очень приятно",
+              "Как дела",
+              "Спасибо"
+            ],
+            "gabarito": "Очень приятно",
+            "explicacao": "«Мне тоже» quer dizer «para mim também». Responde a um «muito prazer».",
+            "id": "ru-002-e39"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como o russo diz «Eu me chamo Antón»?",
+            "opcoes": [
+              "Меня зовут Антон",
+              "Я зовут Антон",
+              "Меня Антон зовут"
+            ],
+            "gabarito": "Меня зовут Антон",
+            "explicacao": "A fórmula é fixa: «Меня зовут» e depois o nome. «Я зовут» não existe.",
+            "id": "ru-002-e40"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Как тебя зовут? — ___ зовут Лена.",
+            "opcoes": [
+              "Меня",
+              "Тебя",
+              "Вас"
+            ],
+            "gabarito": "Меня",
+            "explicacao": "Você fala de si mesmo, então usa «меня» (a mim). «тебя» e «вас» são formas para o outro.",
+            "id": "ru-002-e41"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Здравствуйте! Как ___ зовут? (ao professor)",
+            "opcoes": [
+              "вас",
+              "тебя",
+              "меня"
+            ],
+            "gabarito": "вас",
+            "explicacao": "Ao professor, que merece respeito, usa-se «вас».",
+            "id": "ru-002-e42"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Здравствуйте! Как вас зовут? — Меня ___ Сергей.",
+            "opcoes": [
+              "зовут",
+              "дела",
+              "тоже"
+            ],
+            "gabarito": "зовут",
+            "explicacao": "A fórmula é «Меня зовут» e depois o nome. Sem «зовут» a frase fica incompleta.",
+            "id": "ru-002-e43"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Очень приятно! — Мне ___.",
+            "opcoes": [
+              "тоже",
+              "нет",
+              "вот"
+            ],
+            "gabarito": "тоже",
+            "explicacao": "«Мне тоже» é a resposta pronta, «para mim também».",
+            "id": "ru-002-e44"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Meu nome é Antón.»",
+            "opcoes": [
+              "зовут",
+              "Антон",
+              "Меня"
+            ],
+            "gabarito": "Меня зовут Антон.",
+            "explicacao": "A fórmula é fixa: «Меня зовут» e depois o nome, que vem por último.",
+            "id": "ru-002-e45"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Como o senhor se chama?»",
+            "opcoes": [
+              "зовут",
+              "Как",
+              "вас"
+            ],
+            "gabarito": "Как вас зовут?",
+            "explicacao": "A pergunta começa com «Как» (como), depois «вас» e por fim «зовут».",
+            "id": "ru-002-e46"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Меня зовут Антон.",
+            "respostaEsperada": "Меня зовут Антон.",
+            "explicacao": "Três palavras: «Меня», «зовут» e o nome. O «я» de «меня» é uma letra que você vê na aula 3.",
+            "id": "ru-002-e47"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Очень приятно",
+            "respostaEsperada": "Очень приятно",
+            "explicacao": "Duas palavras. O sinal de «ь» e o «я» chegam na aula 3; por ora, copie com cuidado o que você ouve.",
+            "id": "ru-002-e48"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em russo o que você diz ao seu chefe ao conhecer uma pessoa nova: cumprimente, pergunte o nome dela e diga o seu.",
+            "respostaEsperada": "Здравствуйте! Как вас зовут? Меня зовут Антон.",
+            "id": "ru-002-e49"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Repita os dois diálogos. Depois diga em voz alta: «Здравствуйте! Доброе утро!» e «Привет! Как дела?»"
+        "min": 4,
+        "enunciado": "Faça as duas vozes do primeiro diálogo, imitando a entonação, e depois as do segundo. Depois troque «Лена» e «Антон» pelo seu nome e responda em voz alta a «Как тебя зовут?» e a «Как вас зовут?».",
+        "exemplo": "Привет! Меня зовут Антон. Очень приятно!"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Escreva 3 cumprimentos que você lembra e 2 despedidas."
+        "min": 3,
+        "enunciado": "Escreva em cirílico 3 cumprimentos que você lembra e 2 despedidas."
       }
     ]
   },

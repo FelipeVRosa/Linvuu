@@ -6,13 +6,18 @@ export default aula({
   nota: 'Você diz quem é, descreve pessoas, nega e pergunta com o verbo «ser». Próxima aula: apresentações, países, números de 0 a 20 e a idade com «tener».',
   sessoes: [
     sessao('S1', 'Os pronomes e o verbo ser', [
-      revisao(5, 'Cumprimente em voz alta com «tú» e com «usted». Depois leia: jamón, gente, queso, zapato, calle, niño, perro, hotel.'),
-      palavras(8, [
+      revisao(3, 'Retome a aula 1 em voz alta: cumprimente com «tú» e com «usted». Depois leia: jamón, gente, queso, zapato, calle, niño, perro, hotel.'),
+      dialogo(5, 'Un grupo nuevo / Um grupo novo', 'Ana conhece Luis, Marta e Pablo. Ouça sem olhar o texto e perceba as palavras «soy», «eres», «es», «somos» e «son». Elas são o assunto de hoje.', [
+        ['Ana', '¡Hola! Yo soy Ana. ¿Y tú?', 'Oi! Eu sou a Ana. E você?'], ['Luis', 'Yo soy Luis. Ella es Marta.', 'Eu sou o Luis. Ela é a Marta.'], ['Marta', 'Mucho gusto, Ana.', 'Muito prazer, Ana.'], ['Ana', 'Mucho gusto, Marta. ¿Quién es él?', 'Muito prazer, Marta. Quem é ele?'],
+        ['Marta', 'Él es Pablo. Pablo y Luis son amigos.', 'Ele é o Pablo. Pablo e Luis são amigos.'], ['Pablo', 'Sí, somos amigos. ¿Y ustedes? ¿Son amigas?', 'Sim, somos amigos. E vocês? São amigas?'], ['Ana', 'Sí, Marta y yo somos amigas.', 'Sim, a Marta e eu somos amigas.'], ['Luis', '¡Qué bien!', 'Que bom!'],
+      ]),
+      palavras(5, [
         ['yo', 'iô', 'eu', ''], ['tú', 'tú', 'você (informal)', ''], ['él, ella', 'él, élha', 'ele, ela', ''], ['usted', 'ustéd', 'o senhor, a senhora, você (formal)', ''],
         ['nosotros, nosotras', 'nosótros, nosótras', 'nós', ''], ['vosotros, vosotras', 'bosótros, bosótras', 'vocês (informal, Espanha)', ''], ['ellos, ellas', 'élhos, élhas', 'eles, elas', ''], ['ustedes', 'ustédes', 'vocês (formal; na América Latina, todos)', ''],
       ]),
-      gramatica(12, 'Os pronomes sujeito e o presente de ser', 'PASSO 1: «ser» é o verbo para dizer quem alguém é, de onde vem, qual é a profissão e como é. O presente é irregular: soy, eres, es, somos, sois, son. PASSO 2: o verbo já mostra a pessoa, por isso o pronome sujeito quase sempre se omite: «Soy Ana», não «Yo soy Ana». Usa-se o pronome para contrastar ou enfatizar: «Yo soy Ana y ella es Marta.» PASSO 3: «tú» (informal) usa «eres»; «usted» (formal) usa a mesma forma de «él» e «ella»: «Usted es médico.» PASSO 4: no plural, «nosotros» usa «somos»; «ellos» e «ellas» usam «son»; «ustedes» também usa «son». PASSO 5: «vosotros» usa «sois» e é próprio da Espanha. Na América Latina não existe: diz-se «ustedes son», para todos. Na Argentina e em alguns países da América Central também se ouve «vos sos» no lugar de «tú eres». PASSO 6: existem formas femininas: «nosotras», «vosotras», «ellas». Um grupo misto usa o masculino. PASSO 7: não existe pronome neutro obrigatório: diz-se «Es tarde», sem sujeito. PASSO 8: o til importa: «él» (ele) tem til; «el» (o) não. «Tú» (você) tem til; «tu» (seu) não.', {
+      gramatica(11, 'Os pronomes sujeito e o presente de ser', 'Você acabou de ouvir «soy», «es», «somos» e «son». Agora a regra, em passos curtos. PASSO 1: «ser» é o verbo para dizer quem alguém é, de onde vem, qual é a profissão e como é. O presente é irregular: soy, eres, es, somos, sois, son. PASSO 2: o verbo já mostra a pessoa, por isso o pronome sujeito quase sempre se omite: «Soy Ana», não «Yo soy Ana». Usa-se o pronome para contrastar ou enfatizar: «Yo soy Ana y ella es Marta.» PASSO 3: «tú» (informal) usa «eres»; «usted» (formal) usa a mesma forma de «él» e «ella»: «Usted es médico.» PASSO 4: no plural, «nosotros» usa «somos»; «ellos» e «ellas» usam «son»; «ustedes» também usa «son». PASSO 5: «vosotros» usa «sois» e é próprio da Espanha. Na América Latina não existe: diz-se «ustedes son», para todos. Na Argentina e em alguns países da América Central também se ouve «vos sos» no lugar de «tú eres». PASSO 6: existem formas femininas: «nosotras», «vosotras», «ellas». Um grupo misto usa o masculino. PASSO 7: não existe pronome neutro obrigatório: diz-se «Es tarde», sem sujeito. PASSO 8: o til importa: «él» (ele) tem til; «el» (o) não. «Tú» (você) tem til; «tu» (seu) não.', {
         tag: 'Verbos',
+        exemplos: [['Soy Ana.', 'Eu sou a Ana.'], ['Eres muy simpático.', 'Você é muito simpático.'], ['Ella es Marta.', 'Ela é a Marta.'], ['Usted es médico.', 'O senhor é médico.'], ['Somos amigos.', 'Somos amigos.'], ['Ellos son estudiantes.', 'Eles são estudantes.']],
         comparacao: 'em português o verbo também mostra a pessoa, mas o pronome «eu» e «você» é muito usado; em espanhol ele é raro, só para destacar. As formas são parecidas, mas a ortografia engana: «sou» é «soy», «és» é «eres», «somos» é igual, «são» é «son». «Usted» corresponde a «o senhor, a senhora», e «tú» ao «tu» de quem usa essa forma em português.',
         tabela: [
           { pronome: 'yo', forma: 'soy', exemplo: 'Soy Pablo.' },
@@ -24,16 +29,17 @@ export default aula({
         ],
         erros: [['Yo es Ana.', 'Yo soy Ana.', 'Com «yo», o verbo é «soy».'], ['Usted eres Pablo.', 'Usted es Pablo.', '«Usted» usa a forma de «él» e «ella».'], ['Ellos sois amigos.', 'Ellos son amigos.', '«Sois» é só de «vosotros».'], ['Tu eres Ana.', 'Tú eres Ana.', 'Como pronome, «tú» leva til; sem til, «tu» é «seu».']],
       }),
-      producao(5, 'Diga: «Yo soy… Tú eres… Ella es… Nosotros somos… Ellos son…» com nomes de amigos. Depois repita sem os pronomes onde for possível: «Soy… Eres…»'),
+      producao(6, 'Primeiro, diga em voz alta o seu nome: «Soy…». Depois apresente três pessoas que você conhece: «Ella es… Él es… Ellos son amigos.» Por fim, repita todas as seis formas de «ser» seguidas, sem os pronomes: «soy, eres, es, somos, sois, son».'),
     ]),
     sessao('S2', 'Adjetivos: gênero, número e negação', [
-      revisao(4, 'Conjugue «ser» de memória, de «yo» a «ellos», e diga duas frases sem o pronome.'),
-      palavras(6, [
+      revisao(3, 'Conjugue «ser» de memória, de «yo» a «ellos», e diga duas frases sem o pronome.'),
+      palavras(4, [
         ['alto, alta', 'álto, álta', 'alto, alta', ''], ['simpático, simpática', 'simpátiko, simpátika', 'simpático, simpática', ''], ['joven', 'hóben', 'jovem', ''], ['inteligente', 'intelihénte', 'inteligente', ''],
         ['largo, larga', 'lárgo, lárga', 'comprido (falso amigo: largo é «ancho»)', ''], ['exquisito, exquisita', 'ekskisíto, ekskisíta', 'delicioso (falso amigo: não é «esquisito»)', ''],
       ]),
-      gramatica(12, 'Concordância do adjetivo, «muy» e a negação', 'PASSO 1: o adjetivo concorda em gênero e número com o substantivo ou o sujeito: «Pablo es alto», «Lucía es alta», «Ellos son altos», «Ellas son altas». PASSO 2: adjetivos em «-o» mudam para «-a» no feminino: «alto, alta». Adjetivos em «-e» ou em consoante não mudam: «inteligente», «joven», «fácil». Adjetivos em «-or», «-ol», «-án» e «-ín» acrescentam «-a»: «trabajador, trabajadora», «español, española». PASSO 3: o plural acrescenta «-s» depois de vogal e «-es» depois de consoante: «altos», «inteligentes», «jóvenes», «trabajadores». A palavra «joven» ganha til no plural para manter a força na mesma sílaba. Se termina em «z», troca por «c»: «feliz» → «felices». PASSO 4: o adjetivo normalmente vem depois do substantivo e depois de «ser»: «Ella es simpática.» PASSO 5: «muy» (muito) vem antes de adjetivo e nunca muda: «muy simpática», «muy jóvenes». PASSO 6: a negação é «no», sempre antes do verbo: «No soy alto.» O pronome fica antes do «no»: «Yo no soy médico.» Não existe «não» depois do verbo. PASSO 7: para responder a uma pergunta de sim ou não, usa-se «no» duas vezes: «¿Eres alta? — No, no soy alta.» O primeiro é a resposta; o segundo nega o verbo. PASSO 8: cuidado com dois falsos amigos: «largo» é comprido (largo é «ancho») e «exquisito» é delicioso, não «esquisito». A palavra para «esquisito» é «raro» ou «extraño».', {
+      gramatica(10, 'Concordância do adjetivo, «muy» e a negação', 'Ouça: «Pablo es alto. Lucía es alta. Ellos son altos.» O adjetivo muda junto com a pessoa. PASSO 1: o adjetivo concorda em gênero e número com o substantivo ou o sujeito: «Pablo es alto», «Lucía es alta», «Ellos son altos», «Ellas son altas». PASSO 2: adjetivos em «-o» mudam para «-a» no feminino: «alto, alta». Adjetivos em «-e» ou em consoante não mudam: «inteligente», «joven», «fácil». Adjetivos em «-or», «-ol», «-án» e «-ín» acrescentam «-a»: «trabajador, trabajadora», «español, española». PASSO 3: o plural acrescenta «-s» depois de vogal e «-es» depois de consoante: «altos», «inteligentes», «jóvenes», «trabajadores». A palavra «joven» ganha til no plural para manter a força na mesma sílaba. Se termina em «z», troca por «c»: «feliz» → «felices». PASSO 4: o adjetivo normalmente vem depois do substantivo e depois de «ser»: «Ella es simpática.» PASSO 5: «muy» (muito) vem antes de adjetivo e nunca muda: «muy simpática», «muy jóvenes». PASSO 6: a negação é «no», sempre antes do verbo: «No soy alto.» O pronome fica antes do «no»: «Yo no soy médico.» Não existe «não» depois do verbo. PASSO 7: para responder a uma pergunta de sim ou não, usa-se «no» duas vezes: «¿Eres alta? — No, no soy alta.» O primeiro é a resposta; o segundo nega o verbo. PASSO 8: cuidado com dois falsos amigos: «largo» é comprido (largo é «ancho») e «exquisito» é delicioso, não «esquisito». A palavra para «esquisito» é «raro» ou «extraño».', {
         tag: 'Adjetivos',
+        exemplos: [['Pablo es alto.', 'Pablo é alto.'], ['Lucía es alta.', 'Lucía é alta.'], ['Ellos son simpáticos.', 'Eles são simpáticos.'], ['Ella es muy inteligente.', 'Ela é muito inteligente.'], ['No soy alto.', 'Eu não sou alto.'], ['¿Eres alta? No, no soy alta.', 'Você é alta? Não, não sou alta.']],
         comparacao: 'a concordância é igual à do português («alto, alta, altos, altas»), e o «no» antes do verbo corresponde ao nosso «não». As diferenças são o «muy» fixo (em português dizemos «muito» para adjetivo e para verbo) e o plural de palavras terminadas em consoante («joven» → «jóvenes», com til, e não «jovens»).',
         tabela: [
           { tipo: '-o, -a', masc_sg: 'alto', fem_sg: 'alta', masc_pl: 'altos', fem_pl: 'altas' },
@@ -44,14 +50,17 @@ export default aula({
         ],
         erros: [['Ella es alto.', 'Ella es alta.', 'O adjetivo concorda com o gênero do sujeito.'], ['Ellos son simpático.', 'Ellos son simpáticos.', 'O plural pede «-s».'], ['Soy no alto.', 'No soy alto.', 'O «no» vem antes do verbo.'], ['Ella es inteligenta.', 'Ella es inteligente.', 'Adjetivos em «-e» não mudam para «-a».']],
       }),
-      producao(8, 'Descreva em voz alta três pessoas que você conhece, com «muy» e com «no»: «Pablo es muy simpático. No es alto. Ella es inteligente.» Use um adjetivo em «-o/-a», um em «-e» e um em «-or».'),
+      texto(6, 'Mis amigos / Meus amigos', 'Rosa es mi amiga. Es alta y muy simpática. Luis es mi amigo. No es alto, pero es muy inteligente. Los dos son jóvenes y muy trabajadores. Yo soy Carmen. No soy alta, pero soy simpática. Nosotros somos buenos amigos. ¡Qué bien!', 'Rosa é minha amiga. É alta e muito simpática. Luis é meu amigo. Não é alto, mas é muito inteligente. Os dois são jovens e muito trabalhadores. Eu sou Carmen. Não sou alta, mas sou simpática. Nós somos bons amigos. Que bom!', [
+        ['Como é Rosa?', 'Rosa é alta e muito simpática.'], ['Luis é alto?', 'Não: no es alto, pero es muy inteligente.'], ['Como Carmen se descreve?', 'Diz que não é alta, mas que é simpática.'],
+      ]),
+      producao(7, 'Descreva em voz alta três pessoas que você conhece, com «muy» e com «no»: «Pablo es muy simpático. No es alto. Ella es inteligente.» Use um adjetivo em «-o/-a», um em «-e» e um em «-or». Depois conte quantos adjetivos você acertou o gênero.'),
     ]),
     sessao('S3', 'Profissões e perguntas com ser', [
-      revisao(4, 'Diga em voz alta: «Soy… No soy… Ella es… Ellos son muy…» com adjetivos da aula.'),
-      palavras(5, [
+      revisao(2, 'Diga em voz alta: «Soy… No soy… Ella es… Ellos son muy…» com adjetivos da aula.'),
+      palavras(4, [
         ['profesor, profesora', 'profesór, profesóra', 'professor, professora', ''], ['estudiante', 'estudiánte', 'estudante, aluno, aluna', ''], ['médico, médica', 'médiko, médika', 'médico, médica', ''], ['ingeniero, ingeniera', 'inheniéro, inheniéra', 'engenheiro, engenheira', ''], ['camarero, camarera', 'kamaréro, kamaréra', 'garçom, garçonete', ''],
       ]),
-      gramatica(8, 'Dizer a profissão e fazer perguntas com ser', 'PASSO 1: a profissão vem depois de «ser», sem artigo: «Soy médica», «Es profesor». O artigo só aparece se houver um adjetivo ou um complemento: «Es un buen médico.» PASSO 2: muitas profissões mudam no feminino: «-o» vira «-a» («médico, médica»; «ingeniero, ingeniera»), «-or» vira «-ora» («profesor, profesora»). Palavras em «-e» e «-ista» não mudam: «estudiante», «periodista». PASSO 3: a pergunta de sim ou não tem a mesma ordem da frase afirmativa; muda a entonação, e a escrita ganha «¿ ?»: «¿Eres profesor?» A forma de «usted» é «¿Es usted médica?» PASSO 4: palavras interrogativas: «¿Quién es?» (quem), «¿Qué es?» (o que), «¿Cómo es?» (como). O verbo vem logo depois do interrogativo: «¿Quién eres tú?», «¿Cómo es Pablo?» PASSO 5: resposta curta: «Sí, soy profesora.» «No, no soy estudiante.» PASSO 6: «oficina» é falso amigo: significa escritório; oficina de conserto é «taller».', {
+      gramatica(8, 'Dizer a profissão e fazer perguntas com ser', 'Ouça: «Soy profesora. ¿Eres profesor?» PASSO 1: a profissão vem depois de «ser», sem artigo: «Soy médica», «Es profesor». O artigo só aparece se houver um adjetivo ou um complemento: «Es un buen médico.» PASSO 2: muitas profissões mudam no feminino: «-o» vira «-a» («médico, médica»; «ingeniero, ingeniera»), «-or» vira «-ora» («profesor, profesora»). Palavras em «-e» e «-ista» não mudam: «estudiante», «periodista». PASSO 3: a pergunta de sim ou não tem a mesma ordem da frase afirmativa; muda a entonação, e a escrita ganha «¿ ?»: «¿Eres profesor?» A forma de «usted» é «¿Es usted médica?» PASSO 4: palavras interrogativas: «¿Quién es?» (quem), «¿Qué es?» (o que), «¿Cómo es?» (como). O verbo vem logo depois do interrogativo: «¿Quién eres tú?», «¿Cómo es Pablo?» PASSO 5: resposta curta: «Sí, soy profesora.» «No, no soy estudiante.» PASSO 6: «oficina» é falso amigo: significa escritório; oficina de conserto é «taller».', {
         tag: 'Perguntas',
         comparacao: 'em português também dizemos «sou médica» sem artigo, e a pergunta mantém a ordem da afirmação. Em espanhol, a diferença está no «¿» de abertura e no fato de o verbo ir logo depois do interrogativo, sem partículas como o nosso «é que».',
         tabelas: [
@@ -71,15 +80,26 @@ export default aula({
         ],
         erros: [['Ella es profesor.', 'Ella es profesora.', 'A profissão concorda com o gênero.'], ['Ella es estudianta.', 'Ella es estudiante.', 'Palavras em «-e» não mudam de gênero.'], ['Eres profesora?', '¿Eres profesora?', 'A pergunta abre com «¿».'], ['Ellos son camareras.', 'Ellos son camareros.', 'Um grupo de homens usa o masculino.']],
       }),
-      dialogo(8, 'En la escuela / Na escola', 'Marta, a professora, conhece dois alunos novos, Pablo e Sofía.', [
+      dialogo(6, 'En la escuela / Na escola', 'Marta, a professora, conhece dois alunos novos, Pablo e Sofía.', [
         ['La profesora', 'Buenos días. Soy Marta y soy profesora. ¿Y tú?', 'Bom dia. Sou Marta e sou professora. E você?'], ['Pablo', 'Soy Pablo y soy estudiante. Ella es Sofía.', 'Sou Pablo e sou estudante. Ela é Sofía.'], ['Sofía', 'Hola. No soy estudiante, soy ingeniera.', 'Oi. Não sou estudante, sou engenheira.'],
         ['La profesora', '¿Eres ingeniera? ¡Qué bien!', 'Você é engenheira? Que bom!'], ['Pablo', 'Sofía es muy inteligente.', 'A Sofía é muito inteligente.'], ['Sofía', 'Gracias, Pablo. Tú eres muy simpático.', 'Obrigada, Pablo. Você é muito simpático.'],
+        ['La profesora', 'Ustedes son muy simpáticos.', 'Vocês são muito simpáticos.'], ['Pablo', 'Gracias, profesora. Mucho gusto.', 'Obrigado, professora. Muito prazer.'],
       ]),
-      producao(5, 'Pergunte a um colega imaginário: «¿Quién eres? ¿Eres estudiante? ¿Cómo es Pablo?» e responda com a sua profissão e uma descrição.'),
+      exercicios(6, [
+        ouvir('Ella es médica', ['Ella es médica', 'Ellas son médicas', 'Ella es médico'], 'Ella es médica', 'Ouça «es» (uma só pessoa) e o final «-a» (feminino).'),
+        ouvir('¿Quién es él?', ['¿Quién es él?', '¿Quién eres?', '¿Cómo es él?'], '¿Quién es él?', 'Ouça «quién»: pergunta quem é a pessoa.'),
+        ouvir('Eres muy simpático', ['Eres muy simpático', 'Es muy simpático', 'Soy muy simpático'], 'Eres muy simpático', 'Ouça «eres»: é a forma de «tú».'),
+        ditado('Soy estudiante', 'A profissão vem sem artigo, e o verbo já mostra a pessoa: «Soy estudiante».'),
+        lacuna('Pablo ___ estudiante. (é)', ['es', 'eres', 'son'], 'es', 'Pablo é «él»: forma «es».'),
+        lacuna('Ella es ___ . (médica)', ['médica', 'médico', 'médicas'], 'médica', 'Sujeito feminino singular pede «médica».'),
+        mc('Qual é o feminino de «camarero»?', ['camarera', 'camarero', 'camarea'], 'camarera', 'Em «-ero», o feminino é «-era».'),
+        mc('Qual pergunta significa «Como é Pablo?»', ['¿Cómo es Pablo?', '¿Quién es Pablo?', '¿Qué es Pablo?'], '¿Cómo es Pablo?', '«Cómo» pergunta como é a pessoa; «quién», quem é.'),
+      ]),
+      producao(4, 'Faça uma entrevista sozinho, em voz alta, com as duas vozes. Pergunta: «¿Quién eres? ¿Eres estudiante? ¿Cómo eres?» Resposta com os seus dados: «Soy… Soy… Soy muy…» Depois pergunte sobre outra pessoa: «¿Quién es? ¿Cómo es?»'),
     ]),
     sessao('S4', 'Revisão e prática da aula 2', [
-      revisao(5, 'Diga três frases com «ser», uma com «no» e uma com «muy». Depois diga a sua profissão e a de um amigo.'),
-      exercicios(20, [
+      revisao(2, 'Diga três frases com «ser», uma com «no» e uma com «muy». Depois diga a sua profissão e a de um amigo.'),
+      exercicios(26, [
         ouvir('Soy profesora', ['Soy profesora', 'Soy profesor', 'Eres profesora'], 'Soy profesora', 'Ouça o final «-a»: feminino.'), ouvir('Somos estudiantes', ['Somos estudiantes', 'Son estudiantes', 'Sois estudiantes'], 'Somos estudiantes', 'Ouça o «mos» de «somos».'), ouvir('No es alto', ['No es alto', 'No eres alto', 'No soy alto'], 'No es alto', 'Ouça a forma «es».'),
         ditado('Ella es ingeniera', 'Escreva: Ella es ingeniera.'), ditado('Nosotros somos amigos', 'Escreva: Nosotros somos amigos.'), ditado('¿Eres profesor?', 'Escreva: ¿Eres profesor?'),
         mc('Qual é a forma de «ser» para «usted»?', ['es', 'eres', 'sois'], 'es', '«Usted» usa a forma de «él» e «ella».'),
@@ -103,8 +123,13 @@ export default aula({
         ordem('Ordene: «¿Quién es ella?»', ['¿Quién', 'es', 'ella?'], '¿Quién es ella?', 'O verbo vem logo depois do interrogativo.'),
         livre('Escreva em espanhol: Nós somos estudantes e eles são engenheiros.', 'Somos estudiantes y ellos son ingenieros.'),
         livre('Escreva em espanhol: A senhora é engenheira? Não, sou médica.', '¿Es usted ingeniera? No, soy médica.'),
+        ouvir('Ellos son jóvenes', ['Ellos son jóvenes', 'Ellas son jóvenes', 'Ellos son joven'], 'Ellos son jóvenes', 'Ouça «ellos» (masculino) e o plural «jóvenes».'),
+        ouvir('Vosotros sois amigos', ['Vosotros sois amigos', 'Ellos son amigos', 'Nosotros somos amigos'], 'Vosotros sois amigos', 'Ouça «sois», forma própria de «vosotros».'),
+        ditado('Ellos no son altos', 'O «no» vem antes do verbo, e «ellos» pede «son».'),
+        lacuna('Nosotros ___ amigos. (somos)', ['somos', 'son', 'sois'], 'somos', '«Nosotros» pede «somos».'), lacuna('Vosotros ___ jóvenes. (sois)', ['sois', 'son', 'somos'], 'sois', '«Vosotros» pede «sois».'),
+        ordem('Ordene: «Ella es muy simpática.»', ['Ella', 'es', 'muy', 'simpática.'], 'Ella es muy simpática.', '«Muy» vem antes do adjetivo, depois do verbo.'),
       ]),
-      producao(5, 'Apresente em voz alta dois amigos imaginários: nome, profissão e duas qualidades, com «ser», «no» e «muy».'),
+      producao(2, 'Apresente em voz alta dois amigos imaginários: nome, profissão e duas qualidades, com «ser», «no» e «muy». Comece com «Hola. Ella es…»'),
     ]),
   ],
 });

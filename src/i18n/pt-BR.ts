@@ -103,7 +103,7 @@ export const ptBR = {
     opcoes: 'Opções', pecas: 'Toque nas peças abaixo', limpar: 'Limpar', escrevaPrivado: 'Escreva aqui (só você vê)', escreva: 'Escreva aqui', escrevaCirilico: 'Escreva em cirílico',
     certo: 'Certo.', errou: 'Não foi dessa vez. Resposta:', compare: 'Compare com um exemplo:', verExemplo: 'Ver exemplo', verificar: 'Verificar',
     verResultado: 'Ver resultado', proximo: 'Próximo', emPortugues: 'Compare com o português:', erros: 'Erros comuns', revisao: 'Revisão.', suaVez: 'Agora é com você.',
-    esconder: 'Esconder exemplo', ouvirDialogo: 'Ouvir o diálogo todo', parar: 'Parar', mostrarTrad: 'Mostrar tradução', ouvirTexto: 'Ouvir o texto',
+    esconder: 'Esconder exemplo', ouvirExplicacao: 'Ouvir explicação', ouvirDialogo: 'Ouvir o diálogo todo', parar: 'Parar', mostrarTrad: 'Mostrar tradução', ouvirTexto: 'Ouvir o texto',
     perguntas: 'Perguntas', blocosSessao: 'Blocos da sessão', voltar: 'Voltar', continuar: 'Continuar', concluir: 'Concluir sessão', concluida: 'Sessão concluída',
     concluidaNav: 'Sessão concluída neste navegador.', proxSessao: 'Ir para a próxima sessão →',
     provisorio: 'Áudio provisório: este trecho usa a voz do seu navegador. A gravação chega em breve.',

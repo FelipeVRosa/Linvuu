@@ -4,24 +4,29 @@
   "fase": 1,
   "nivel": "zero",
   "status": "publicada",
-  "titulo": "Olá, mundo!: Alfabeto grupo 3 — parte 2 e cumprimentos",
+  "titulo": "Olá, mundo!: Alfabeto grupo 3, parte 2 e cumprimentos",
   "objetivo": "Aula 2, sessão 2 de 4 · 30 min",
   "aula": {
     "numero": 2,
     "titulo": "Olá, mundo!",
-    "objetivo": "Cumprimentar em qualquer situação, reconhecer 13 letras novas e distinguir formal de informal.",
+    "objetivo": "Cumprimentar em qualquer situação, reconhecer 13 letras novas, dizer como você se chama e distinguir formal de informal.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "zero"
   },
   "sessao": {
     "sessao": "S2",
-    "titulo": "Alfabeto grupo 3 — parte 2 e cumprimentos",
+    "titulo": "Alfabeto grupo 3, parte 2 e cumprimentos",
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 2,
+        "texto": "Hoje você aprende a cumprimentar em russo. Primeiro, ouça: «Привет!» (privét) é para um amigo, e «Здравствуйте!» (zdrástvuitie) é para um desconhecido ou para o chefe. Depois chegam as seis últimas letras desta aula: «л», «п» e «ф» soam como no português. Já «ц» (ts), «ч» (tch) e «ш» (x de xícara) são sons que pedem atenção."
+      },
+      {
         "tipo": "alfabeto",
-        "min": 10,
+        "min": 4,
         "grupos": [
           {
             "nome": "Grupo 3b — Novas formas, sons familiares",
@@ -29,7 +34,7 @@
               {
                 "maiuscula": "Л",
                 "minuscula": "л",
-                "som": "como em lua",
+                "som": "como em «lua»",
                 "ipa": "[l]",
                 "exemplo": "лампа",
                 "exemploPt": "lâmpada"
@@ -37,7 +42,7 @@
               {
                 "maiuscula": "П",
                 "minuscula": "п",
-                "som": "como em pato",
+                "som": "como em «pato»",
                 "ipa": "[p]",
                 "exemplo": "папа",
                 "exemploPt": "papai"
@@ -45,15 +50,15 @@
               {
                 "maiuscula": "Ф",
                 "minuscula": "ф",
-                "som": "como em faca",
+                "som": "como em «faca»",
                 "ipa": "[f]",
-                "exemplo": "фамилия",
-                "exemploPt": "sobrenome"
+                "exemplo": "фото",
+                "exemploPt": "foto"
               },
               {
                 "maiuscula": "Ц",
                 "minuscula": "ц",
-                "som": "como 'ts'",
+                "som": "como o «ts» de «tsunami»",
                 "ipa": "[ts]",
                 "exemplo": "центр",
                 "exemploPt": "centro"
@@ -61,16 +66,16 @@
               {
                 "maiuscula": "Ч",
                 "minuscula": "ч",
-                "som": "como 'tch'",
-                "ipa": "[tʃ]",
+                "som": "como o «tch» de «tchau»",
+                "ipa": "[tɕ]",
                 "exemplo": "час",
                 "exemploPt": "hora"
               },
               {
                 "maiuscula": "Ш",
                 "minuscula": "ш",
-                "som": "como 'sh'",
-                "ipa": "[ʃ]",
+                "som": "como o «x» de «xícara»",
+                "ipa": "[ʂ]",
                 "exemplo": "школа",
                 "exemploPt": "escola"
               }
@@ -80,85 +85,518 @@
       },
       {
         "tipo": "palavras",
-        "min": 10,
+        "min": 3,
         "itens": [
           {
-            "ru": "Привет",
+            "ru": "папа",
+            "translit": "pápa",
+            "pt": "papai",
+            "en": "dad",
+            "audio": "папа"
+          },
+          {
+            "ru": "лампа",
+            "translit": "lámpa",
+            "pt": "lâmpada",
+            "en": "lamp",
+            "audio": "лампа"
+          },
+          {
+            "ru": "фото",
+            "translit": "fóta",
+            "pt": "foto",
+            "en": "photo",
+            "audio": "фото"
+          },
+          {
+            "ru": "центр",
+            "translit": "tsentr",
+            "pt": "centro",
+            "en": "center",
+            "audio": "центр"
+          },
+          {
+            "ru": "час",
+            "translit": "chas",
+            "pt": "hora",
+            "en": "hour",
+            "audio": "час"
+          },
+          {
+            "ru": "школа",
+            "translit": "shkóla",
+            "pt": "escola",
+            "en": "school",
+            "audio": "школа"
+          },
+          {
+            "ru": "чай",
+            "translit": "chai",
+            "pt": "chá",
+            "en": "tea",
+            "audio": "чай"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
+        "itens": [
+          {
+            "ru": "Привет!",
             "translit": "privét",
-            "pt": "Oi (informal)",
+            "pt": "oi! (informal)",
             "en": "hi",
-            "audio": "Привет"
+            "audio": "Привет!"
           },
           {
-            "ru": "Здравствуйте",
+            "ru": "Здравствуйте!",
             "translit": "zdrástvuitie",
-            "pt": "Olá (formal)",
+            "pt": "olá! (formal)",
             "en": "hello (formal)",
-            "audio": "Здравствуйте"
+            "audio": "Здравствуйте!"
           },
           {
-            "ru": "Доброе утро",
-            "translit": "dóbroye útro",
-            "pt": "Bom dia",
+            "ru": "Доброе утро!",
+            "translit": "dóbraie útra",
+            "pt": "bom dia! (de manhã)",
             "en": "good morning",
-            "audio": "Доброе утро"
+            "audio": "Доброе утро!"
           },
           {
-            "ru": "Добрый день",
+            "ru": "Добрый день!",
             "translit": "dóbryi dien",
-            "pt": "Boa tarde",
+            "pt": "bom dia, boa tarde (de dia)",
             "en": "good afternoon",
-            "audio": "Добрый день",
+            "audio": "Добрый день!",
             "ainda": [
               "Ы",
               "Ь"
             ]
           },
           {
-            "ru": "Добрый вечер",
-            "translit": "dóbryi viétcher",
-            "pt": "Boa noite (chegando)",
+            "ru": "Добрый вечер!",
+            "translit": "dóbryi viécher",
+            "pt": "boa noite! (ao chegar)",
             "en": "good evening",
-            "audio": "Добрый вечер",
+            "audio": "Добрый вечер!",
             "ainda": [
               "Ы"
             ]
           },
           {
-            "ru": "Пока",
-            "translit": "paká",
-            "pt": "Tchau",
-            "en": "bye",
-            "audio": "Пока"
+            "ru": "Спокойной ночи!",
+            "translit": "spakóinai nóchi",
+            "pt": "boa noite! (para dormir)",
+            "en": "good night",
+            "audio": "Спокойной ночи!"
           },
           {
-            "ru": "До свидания",
+            "ru": "Пока!",
+            "translit": "paká",
+            "pt": "tchau! (informal)",
+            "en": "bye",
+            "audio": "Пока!"
+          },
+          {
+            "ru": "До свидания!",
             "translit": "da svidánia",
-            "pt": "Até logo (formal)",
+            "pt": "até logo! (formal)",
             "en": "goodbye",
-            "audio": "До свидания",
+            "audio": "До свидания!",
             "ainda": [
               "Я"
             ]
           },
           {
+            "ru": "Извините",
+            "translit": "izvinítie",
+            "pt": "com licença, desculpe (formal)",
+            "en": "excuse me",
+            "audio": "Извините"
+          },
+          {
             "ru": "Пожалуйста",
-            "translit": "pozhálusta",
-            "pt": "Por favor / De nada",
-            "en": "please / you're welcome",
+            "translit": "pazhálusta",
+            "pt": "por favor, de nada",
+            "en": "please, you are welcome",
             "audio": "Пожалуйста"
           }
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "я",
+            "translit": "ia",
+            "pt": "eu",
+            "en": "I",
+            "audio": "я",
+            "ainda": [
+              "Я"
+            ]
+          },
+          {
+            "ru": "ты",
+            "translit": "ty",
+            "pt": "tu, você (amigo)",
+            "en": "you",
+            "audio": "ты",
+            "ainda": [
+              "Ы"
+            ]
+          },
+          {
+            "ru": "вы",
+            "translit": "vy",
+            "pt": "o senhor, a senhora, vocês",
+            "en": "you (formal, plural)",
+            "audio": "вы",
+            "ainda": [
+              "Ы"
+            ]
+          },
+          {
+            "ru": "мы",
+            "translit": "my",
+            "pt": "nós",
+            "en": "we",
+            "audio": "мы",
+            "ainda": [
+              "Ы"
+            ]
+          },
+          {
+            "ru": "они",
+            "translit": "aní",
+            "pt": "eles, elas",
+            "en": "they",
+            "audio": "они"
+          },
+          {
+            "ru": "Как тебя зовут?",
+            "translit": "kak tibiá zavút",
+            "pt": "como você se chama? (amigo)",
+            "en": "what's your name?",
+            "audio": "Как тебя зовут?",
+            "ainda": [
+              "Я"
+            ]
+          },
+          {
+            "ru": "Как вас зовут?",
+            "translit": "kak vas zavút",
+            "pt": "como o senhor se chama?",
+            "en": "what's your name? (formal)",
+            "audio": "Как вас зовут?"
+          },
+          {
+            "ru": "Меня зовут Лена",
+            "translit": "miniá zavút liéna",
+            "pt": "eu me chamo Lena",
+            "en": "my name is Lena",
+            "audio": "Меня зовут Лена",
+            "ainda": [
+              "Я"
+            ]
+          },
+          {
+            "ru": "Очень приятно",
+            "translit": "ótchin priátna",
+            "pt": "muito prazer",
+            "en": "nice to meet you",
+            "audio": "Очень приятно",
+            "ainda": [
+              "Ь",
+              "Я"
+            ]
+          },
+          {
+            "ru": "Мне тоже",
+            "translit": "mnie tózhe",
+            "pt": "eu também, igualmente",
+            "en": "me too",
+            "audio": "Мне тоже"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 4,
+        "titulo": "Informal «ты» ou formal «вы»?",
+        "explicacao": "PASSO 1: Em português você diz «você» para quase todo mundo. Em russo existem duas formas, e escolher a certa mostra respeito. PASSO 2: Use «ты» (ty) com amigos, família, colegas jovens e crianças. Com «ты», diga «Привет!» (privét) e «Пока!» (paká). PASSO 3: Use «вы» (vy) com desconhecidos, chefes, professores, pessoas mais velhas, e em lojas e repartições. Com «вы», diga «Здравствуйте!» (zdrástvuitie) e «До свидания!» (da svidánia). Dica: o primeiro «в» de «Здравствуйте» não se pronuncia. PASSO 4: «вы» também é o plural: se você fala com duas pessoas, mesmo amigas, diz «вы». PASSO 5: Na dúvida, use «вы». Ninguém se ofende com respeito demais, e a outra pessoa pode propor o «ты». PASSO 6: Chefes e pessoas mais velhas costumam ser chamados pelo nome e pelo patronímico, o nome do pai: «Ирина Петровна» (irína pitróvna).",
+        "comparacao": "o português tem algo parecido: «tu» ou «você» para o amigo, «o senhor» ou «a senhora» para quem merece respeito. A diferença é que, em russo, a escolha é obrigatória em toda frase e muda a saudação.",
+        "exemplos": [
+          {
+            "ru": "Привет!",
+            "pt": "Oi! Para um amigo."
+          },
+          {
+            "ru": "Здравствуйте!",
+            "pt": "Olá! Para um desconhecido, o chefe, o professor."
+          },
+          {
+            "ru": "Как тебя зовут?",
+            "pt": "Como você se chama? Para um amigo."
+          },
+          {
+            "ru": "Как вас зовут?",
+            "pt": "Como o senhor se chama? Formal."
+          },
+          {
+            "ru": "Пока!",
+            "pt": "Tchau! Informal."
+          },
+          {
+            "ru": "До свидания!",
+            "pt": "Até logo! Formal."
+          }
+        ],
+        "tabela": [
+          {
+            "situação": "Amigo, família, colega jovem",
+            "pronome": "ты",
+            "saudação": "Привет!",
+            "despedida": "Пока!"
+          },
+          {
+            "situação": "Desconhecido, chefe, professor, pessoa mais velha",
+            "pronome": "вы",
+            "saudação": "Здравствуйте!",
+            "despedida": "До свидания!"
+          },
+          {
+            "situação": "Duas ou mais pessoas, mesmo amigas",
+            "pronome": "вы",
+            "saudação": "Привет!",
+            "despedida": "Пока!"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Привет, Ирина Петровна!",
+            "certo": "Здравствуйте, Ирина Петровна!",
+            "motivo": "«Привет» é íntimo. Com nome e patronímico, a saudação é «Здравствуйте»."
+          },
+          {
+            "errado": "Как тебя зовут? (ao chefe)",
+            "certo": "Как вас зовут?",
+            "motivo": "Ao chefe ou a um desconhecido, pergunte com «вас», a forma formal."
+          },
+          {
+            "errado": "Здравствуйте, Антон! (a um amigo)",
+            "certo": "Привет, Антон!",
+            "motivo": "Com um amigo próximo, «Здравствуйте» soa distante."
+          }
+        ],
+        "tag": "Pronomes"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Привет!",
+            "opcoes": [
+              "Привет!",
+              "Пока!",
+              "Здравствуйте!"
+            ],
+            "gabarito": "Привет!",
+            "explicacao": "Começa com «пр» e termina em t: privét, o oi informal. «Пока» é tchau e «Здравствуйте» é muito mais longo.",
+            "id": "ru-002-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Здравствуйте!",
+            "opcoes": [
+              "Здравствуйте!",
+              "Привет!",
+              "До свидания!"
+            ],
+            "gabarito": "Здравствуйте!",
+            "explicacao": "A palavra longa, com muitas consoantes juntas, é a saudação formal: zdrástvuitie.",
+            "id": "ru-002-e18"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Доброе утро!",
+            "opcoes": [
+              "Доброе утро!",
+              "Добрый день!",
+              "Добрый вечер!"
+            ],
+            "gabarito": "Доброе утро!",
+            "explicacao": "«утро» (útra) quer dizer manhã. Você ouviu «ú-tra» no fim.",
+            "id": "ru-002-e19"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Добрый вечер!",
+            "opcoes": [
+              "Добрый вечер!",
+              "Добрый день!",
+              "Доброе утро!"
+            ],
+            "gabarito": "Добрый вечер!",
+            "explicacao": "No fim da saudação, «вечер» (viécher) quer dizer noite, o momento de chegar ao fim do dia.",
+            "id": "ru-002-e20"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "До свидания!",
+            "opcoes": [
+              "До свидания!",
+              "Спокойной ночи!",
+              "Пока!"
+            ],
+            "gabarito": "До свидания!",
+            "explicacao": "«До свидания» é a despedida formal, em duas palavras, com um «ia» no fim. «Пока» tem só duas sílabas.",
+            "id": "ru-002-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual saudação serve para um amigo?",
+            "opcoes": [
+              "Привет",
+              "Здравствуйте",
+              "До свидания"
+            ],
+            "gabarito": "Привет",
+            "explicacao": "«Привет» é informal. «Здравствуйте» e «До свидания» são formais.",
+            "id": "ru-002-e22"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Você encontra seu chefe às 9h da manhã. O que diz?",
+            "opcoes": [
+              "Доброе утро",
+              "Привет",
+              "Пока"
+            ],
+            "gabarito": "Доброе утро",
+            "explicacao": "É de manhã e o chefe pede respeito: «Доброе утро» (bom dia) serve. «Привет» é íntimo e «Пока» é despedida.",
+            "id": "ru-002-e23"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual palavra quer dizer «hora»?",
+            "opcoes": [
+              "час",
+              "чай",
+              "центр"
+            ],
+            "gabarito": "час",
+            "explicacao": "«час» (chas) é hora. «чай» é chá e «центр» é centro.",
+            "id": "ru-002-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra faz o som «tch», como em «tchau»?",
+            "opcoes": [
+              "Ч",
+              "Ш",
+              "Ц"
+            ],
+            "gabarito": "Ч",
+            "explicacao": "«Ч» é o tch de «час». O «Ш» soa x de «xícara» e o «Ц» soa ts.",
+            "id": "ru-002-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra faz o som «x», como em «xícara»?",
+            "opcoes": [
+              "Ш",
+              "Ч",
+              "Ц"
+            ],
+            "gabarito": "Ш",
+            "explicacao": "«Ш» é o x de «школа». O «Ч» soa tch e o «Ц» soa ts.",
+            "id": "ru-002-e26"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Привет! — ___!",
+            "opcoes": [
+              "Привет",
+              "До свидания",
+              "Извините"
+            ],
+            "gabarito": "Привет",
+            "explicacao": "Ao amigo que diz «Привет», responde-se do mesmo jeito. «До свидания» é despedida formal.",
+            "id": "ru-002-e27"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Спасибо! — ___.",
+            "opcoes": [
+              "Пожалуйста",
+              "Здравствуйте",
+              "Привет"
+            ],
+            "gabarito": "Пожалуйста",
+            "explicacao": "A resposta educada a um agradecimento é «Пожалуйста» (de nada), como «Не за что».",
+            "id": "ru-002-e28"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Как дела? — ___, спасибо.",
+            "opcoes": [
+              "Отлично",
+              "Привет",
+              "Пока"
+            ],
+            "gabarito": "Отлично",
+            "explicacao": "«Отлично, спасибо» quer dizer «ótimo, obrigado». «Привет» e «Пока» não respondem a «Как дела?».",
+            "id": "ru-002-e29"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Bom dia!»",
+            "opcoes": [
+              "утро",
+              "Доброе"
+            ],
+            "gabarito": "Доброе утро!",
+            "explicacao": "A saudação fixa começa com «Доброе» (bom) e termina com «утро» (manhã).",
+            "id": "ru-002-e30"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Привет",
+            "respostaEsperada": "Привет",
+            "explicacao": "Escreva p, r, i, v, e, t. O «п» abre a palavra e o «т» fecha.",
+            "id": "ru-002-e31"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Пока",
+            "respostaEsperada": "Пока",
+            "explicacao": "Escreva «п», «о», «к», «а». A força está no «ка»: paká, e por isso o primeiro «о» soa «а».",
+            "id": "ru-002-e32"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Diga em voz alta o cumprimento certo para: manhã com seu chefe / noite com amigo / meio-dia com professor."
+        "min": 2,
+        "enunciado": "Cumprimente em voz alta nas quatro situações: de manhã com o chefe, à noite com um amigo, ao meio-dia com o professor e ao se despedir de um desconhecido. Use «Доброе утро», «Привет», «Добрый день» e «До свидания».",
+        "exemplo": "Доброе утро! Привет! Добрый день! До свидания!"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Ouça e escreva: да, брат, город, жизнь."
+        "min": 1,
+        "enunciado": "Ouça e escreva em cirílico: «да, брат, город, друг»."
       }
     ]
   },

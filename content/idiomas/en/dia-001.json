@@ -4,29 +4,97 @@
   "fase": 1,
   "nivel": "a1",
   "status": "publicada",
-  "titulo": "Sons, alfabeto e primeiras palavras: O alfabeto e as primeiras saudações",
+  "titulo": "Sons, alfabeto e primeiras palavras: Ouça primeiro: o alfabeto e as saudações",
   "objetivo": "Aula 1, sessão 1 de 4 · 30 min",
   "aula": {
     "numero": 1,
     "titulo": "Sons, alfabeto e primeiras palavras",
-    "objetivo": "Soletrar em inglês, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e fazer as primeiras saudações.",
+    "objetivo": "Ouvir e entender as primeiras conversas em inglês, soletrar, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e cumprimentar, agradecer e pedir licença.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
   },
   "sessao": {
     "sessao": "S1",
-    "titulo": "O alfabeto e as primeiras saudações",
+    "titulo": "Ouça primeiro: o alfabeto e as saudações",
     "duracaoMin": 30,
     "blocos": [
       {
         "tipo": "intro",
-        "min": 3,
-        "texto": "Você já conhece muito inglês: shopping, e-mail, internet, ok, hot dog. Nesta aula você começa pelo som, não pela escrita. Ao lado das palavras há uma pronúncia aproximada em letras do português: o acento agudo marca a sílaba forte (hélou), «sh» soa como o «ch» de «chave», «tch» como o «tch» de «tchau», «dj» como o «dj» de «djim» e vogal dobrada (ii) marca um som mais longo. É um apoio, não substitui o áudio: ouça sempre."
+        "min": 2,
+        "texto": "Bem-vindo ao inglês! Você já conhece muitas palavras: shopping, e-mail, internet, ok, hot dog. Nesta aula você começa pelo som, não pela escrita. Primeiro você vai ouvir uma conversa de verdade, num café. Não precisa entender tudo. Depois, descobrimos o que cada palavra quer dizer. Ao lado das palavras há uma pronúncia aproximada em letras do português. A sílaba forte leva acento, como em «helôu» e «hotél». O «sh» soa como o «ch» de «chave», o «tch» como o «tch» de «tchau» e o «dj» como o «dj» de «djim». Vogal dobrada, como em «pliiz», marca um som mais longo. Esse apoio não substitui o áudio: ouça sempre."
+      },
+      {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Good morning! / Bom dia!",
+        "contexto": "Emma entra num café de manhã e faz um pedido. Ouça a cena inteira antes de olhar a tradução. Depois ouça de novo, linha por linha, e repita em voz alta.",
+        "linhas": [
+          {
+            "personagem": "Tom",
+            "ru": "— Good morning!",
+            "pt": "— Bom dia!",
+            "audio": "Good morning!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Good morning! Juice, please.",
+            "pt": "— Bom dia! Um suco, por favor.",
+            "audio": "Good morning! Juice, please."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Orange juice? Apple juice?",
+            "pt": "— Suco de laranja? Suco de maçã?",
+            "audio": "Orange juice? Apple juice?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Apple juice, please.",
+            "pt": "— Suco de maçã, por favor.",
+            "audio": "Apple juice, please."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Apple juice. Yes!",
+            "pt": "— Suco de maçã. Pois não!",
+            "audio": "Apple juice. Yes!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Thank you very much.",
+            "pt": "— Muito obrigada.",
+            "audio": "Thank you very much."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— You're welcome.",
+            "pt": "— De nada.",
+            "audio": "You're welcome."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Oh, sorry! Excuse me. Water, please.",
+            "pt": "— Ah, desculpe! Com licença. Água, por favor.",
+            "audio": "Oh, sorry! Excuse me. Water, please."
+          },
+          {
+            "personagem": "Tom",
+            "ru": "— Water. Yes!",
+            "pt": "— Água. Pois não!",
+            "audio": "Water. Yes!"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Thank you. Goodbye!",
+            "pt": "— Obrigada. Tchau!",
+            "audio": "Thank you. Goodbye!"
+          }
+        ]
       },
       {
         "tipo": "alfabeto",
-        "min": 12,
+        "min": 8,
         "grupos": [
           {
             "nome": "Parte 1 — A a I",
@@ -281,7 +349,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "hello",
@@ -333,6 +401,13 @@
             "audio": "thank you"
           },
           {
+            "ru": "thank you very much",
+            "translit": "thénk iú véri mátch",
+            "pt": "muito obrigado, muito obrigada",
+            "en": "",
+            "audio": "thank you very much"
+          },
+          {
             "ru": "you're welcome",
             "translit": "iór uélkam",
             "pt": "de nada",
@@ -352,13 +427,130 @@
             "pt": "com licença, perdão (para chamar a atenção)",
             "en": "",
             "audio": "excuse me"
+          },
+          {
+            "ru": "yes",
+            "translit": "iés",
+            "pt": "sim",
+            "en": "",
+            "audio": "yes"
+          },
+          {
+            "ru": "no",
+            "translit": "nôu",
+            "pt": "não",
+            "en": "",
+            "audio": "no"
           }
         ]
       },
       {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Quando dizer cada saudação",
+        "explicacao": "PASSO 1: de manhã, diga «good morning». Fala-se «gud mórnin». Serve até mais ou menos o meio-dia. PASSO 2: «hello» e «hi» servem a qualquer hora. O «hi» é mais informal, como o nosso «oi». PASSO 3: «good night» serve só para se despedir à noite ou para ir dormir. Não use para chegar. PASSO 4: «please» quer dizer por favor. Ele vem no fim do pedido: «water, please». PASSO 5: quando alguém agradece, a resposta é «you're welcome». Quer dizer de nada. PASSO 6: «excuse me» serve para chamar a atenção de alguém ou para passar. «Sorry» serve quando você errou ou esbarrou em alguém. Cultura: nos países de língua inglesa, «please» e «thank you» são ditos o tempo todo, até com quem serve o seu café.",
+        "comparacao": "em português, «boa noite» serve para chegar e para sair. Em inglês, «good night» só serve para se despedir ou ir dormir. Para chegar à noite, use «hello» ou «hi».",
+        "exemplos": [
+          {
+            "ru": "Good morning!",
+            "pt": "Bom dia!"
+          },
+          {
+            "ru": "Water, please.",
+            "pt": "Água, por favor."
+          },
+          {
+            "ru": "Thank you very much.",
+            "pt": "Muito obrigado."
+          },
+          {
+            "ru": "You're welcome.",
+            "pt": "De nada."
+          },
+          {
+            "ru": "Excuse me!",
+            "pt": "Com licença!"
+          },
+          {
+            "ru": "Sorry!",
+            "pt": "Desculpe!"
+          },
+          {
+            "ru": "Good night!",
+            "pt": "Boa noite! (ao se despedir)"
+          }
+        ],
+        "tabela": [
+          {
+            "situacao": "chegar de manhã",
+            "diga": "Good morning",
+            "significa": "bom dia"
+          },
+          {
+            "situacao": "chegar a qualquer hora",
+            "diga": "Hello / Hi",
+            "significa": "olá / oi"
+          },
+          {
+            "situacao": "fazer um pedido",
+            "diga": "... , please",
+            "significa": "por favor"
+          },
+          {
+            "situacao": "agradecer",
+            "diga": "Thank you (very much)",
+            "significa": "obrigado (muito obrigado)"
+          },
+          {
+            "situacao": "responder ao agradecimento",
+            "diga": "You're welcome",
+            "significa": "de nada"
+          },
+          {
+            "situacao": "chamar a atenção, passar",
+            "diga": "Excuse me",
+            "significa": "com licença"
+          },
+          {
+            "situacao": "pedir desculpa, esbarrar",
+            "diga": "Sorry",
+            "significa": "desculpe"
+          },
+          {
+            "situacao": "despedir-se à noite",
+            "diga": "Good night",
+            "significa": "boa noite"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Good night! ao chegar a um lugar à noite",
+            "certo": "Hello! ou Hi!",
+            "motivo": "«Good night» só serve para se despedir."
+          },
+          {
+            "errado": "Sorry! para chamar um desconhecido",
+            "certo": "Excuse me!",
+            "motivo": "«Sorry» pede desculpa; «excuse me» chama a atenção."
+          },
+          {
+            "errado": "Thank you! como resposta a «thank you»",
+            "certo": "You're welcome.",
+            "motivo": "Quem agradece ouve «you're welcome»."
+          },
+          {
+            "errado": "Water! sozinho, sem mais nada",
+            "certo": "Water, please.",
+            "motivo": "Sem «please» o pedido soa seco."
+          }
+        ],
+        "tag": "Saudações"
+      },
+      {
         "tipo": "producao",
-        "min": 7,
-        "enunciado": "Soletre em voz alta o seu nome e o seu sobrenome (por exemplo: F-E-L-I-P-E). Depois diga: «Hello! Good morning. Thank you. Goodbye.»"
+        "min": 4,
+        "enunciado": "Soletre em voz alta o seu nome e o seu sobrenome, uma letra por vez, com o nome inglês de cada letra (por exemplo: F, E, L, I, P, E). Depois faça o pedido do café como a Emma, em voz alta: «Good morning! Juice, please. Thank you very much. Goodbye!»",
+        "exemplo": "F, E, L, I, P, E. Good morning! Juice, please. Thank you very much. Goodbye!"
       }
     ]
   },

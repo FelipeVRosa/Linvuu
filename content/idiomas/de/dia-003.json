@@ -21,11 +21,55 @@
     "blocos": [
       {
         "tipo": "gramatica",
-        "min": 10,
-        "titulo": "Combinações de letras que mudam o som",
-        "explicacao": "Algumas letras juntas formam um som próprio. A regra vale sempre. Uma vogal seguida de uma consoante simples costuma ser longa (Tal, Name); seguida de duas consoantes iguais, costuma ser curta (Ball, Kette). O «ch» tem dois sons: suave («ç») depois de e, i, ä, ö, ü, l, n, r; áspero («rr» carioca) depois de a, o, u e au. As combinações «sp» e «st» no início de uma palavra soam «xp» e «xt».",
-        "comparacao": "em português «ei» e «ie» não existem como sons próprios, e o «ch» soa como «x». No alemão, «ei» é «ai», «ie» é um «i» longo, «sch» é «x» e «ch» é «ç» ou «rr».",
+        "min": 6,
+        "titulo": "Vogais longas, curtas e em pares",
+        "explicacao": "Algumas letras juntas formam um som próprio. A regra vale sempre. PASSO 1: ouça «Tal» e depois «Ball». Em «Tal» a vogal «a» é longa, como se você esticasse: «taal». Em «Ball» ela é curta. PASSO 2: depois de uma vogal, uma só consoante costuma deixar a vogal longa, como em «Name». Duas consoantes iguais deixam a vogal curta, como em «Kette». PASSO 3: duas vogais juntas formam um som novo. O par «ei» soa «ai», e «Eis» lê-se «ais». PASSO 4: o par «ie» é um «i» longo, e «Bier» lê-se «bir». PASSO 5: os pares «eu» e «äu» soam «ói», e «Euro» lê-se «ói-ro». PASSO 6: o par «au» soa «au», como em português, e «Haus» lê-se «haus». Cuidado para não confundir: «ei» soa «ai», mas «ie» soa «i».",
+        "comparacao": "em português o «ei» soa «êi», como em «lei». No alemão o «ei» soa «ai», como em «pai». O par «ie» não existe em português: é um «i» comprido.",
+        "exemplos": [
+          {
+            "ru": "Eis",
+            "pt": "gelo, sorvete"
+          },
+          {
+            "ru": "Wein",
+            "pt": "vinho"
+          },
+          {
+            "ru": "Bier",
+            "pt": "cerveja"
+          },
+          {
+            "ru": "Brief",
+            "pt": "carta"
+          },
+          {
+            "ru": "Euro",
+            "pt": "euro"
+          },
+          {
+            "ru": "Häuser",
+            "pt": "casas"
+          },
+          {
+            "ru": "Haus",
+            "pt": "casa"
+          },
+          {
+            "ru": "Auto",
+            "pt": "carro"
+          }
+        ],
         "tabela": [
+          {
+            "combinacao": "vogal + 1 consoante",
+            "som": "vogal longa",
+            "exemplo": "Tal (taal), Name (náme)"
+          },
+          {
+            "combinacao": "vogal + 2 consoantes",
+            "som": "vogal curta",
+            "exemplo": "Ball (bal), Kette (kéte)"
+          },
           {
             "combinacao": "ei",
             "som": "«ai»",
@@ -45,7 +89,60 @@
             "combinacao": "au",
             "som": "«au»",
             "exemplo": "Haus (haus), Auto (áuto)"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Eis, lido «eis»",
+            "certo": "Eis",
+            "motivo": "O «ei» alemão soa «ai», como em «pai». A palavra lê-se «ais»."
           },
+          {
+            "errado": "Bier, lido «bi-er»",
+            "certo": "Bier",
+            "motivo": "O par «ie» é um «i» longo. A palavra lê-se «bir», sem soar o «e»."
+          },
+          {
+            "errado": "Euro, lido «eu-ro»",
+            "certo": "Euro",
+            "motivo": "O par «eu» soa «ói». A palavra lê-se «ói-ro»."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Combinações de consoantes",
+        "explicacao": "PASSO 1: o grupo «sch» soa «x», como em «xícara». A palavra «Schule» lê-se «xúle». PASSO 2: no começo de uma palavra, «sp» e «st» soam «xp» e «xt». «Sport» lê-se «xport» e «Stein» lê-se «xtain». PASSO 3: o grupo «ch» tem dois sons. Depois de «e», «i», «ä», «ö», «ü», «l», «n» e «r», ele é suave: um sopro de ar bem fraco, como um «x» sussurrado. «Ich» lê-se «iç». PASSO 4: depois de «a», «o», «u» e do par «au», o «ch» é áspero: sai do fundo da garganta, como o «rr» carioca de «carro». «Buch» lê-se «burr». PASSO 5: o grupo «tsch» soa «tch», como em «tchau». «Deutsch» lê-se «dóitx». PASSO 6: o grupo «pf» junta o «p» e o «f» numa só emissão: «Apfel». O grupo «qu» soa «kv»: «Quelle». O grupo «ck» soa «k» curto: «Jacke». O grupo «ng» é nasal, sem «g» solto no fim: «singen».",
+        "comparacao": "em português o «ch» soa «x», como em «chá». No alemão o «ch» é outro som, suave ou áspero, e quem faz o som de «x» é o grupo «sch».",
+        "exemplos": [
+          {
+            "ru": "Schule",
+            "pt": "escola"
+          },
+          {
+            "ru": "Sport",
+            "pt": "esporte"
+          },
+          {
+            "ru": "ich",
+            "pt": "eu"
+          },
+          {
+            "ru": "Milch",
+            "pt": "leite"
+          },
+          {
+            "ru": "Buch",
+            "pt": "livro"
+          },
+          {
+            "ru": "Deutsch",
+            "pt": "alemão (idioma)"
+          }
+        ],
+        "tabela": [
           {
             "combinacao": "sch",
             "som": "«x» de «xícara»",
@@ -94,21 +191,26 @@
         ],
         "erros": [
           {
-            "errado": "Eis → «eis»",
-            "certo": "Eis → «ais»",
-            "motivo": "«ei» soa «ai», não «ei»."
+            "errado": "Schule, lido «sku-le»",
+            "certo": "Schule",
+            "motivo": "O grupo «sch» sempre soa «x». A palavra lê-se «xúle»."
           },
           {
-            "errado": "Schule → «sk»",
-            "certo": "Schule → «xúle»",
-            "motivo": "«sch» sempre soa «x»."
+            "errado": "Sport, lido «sport»",
+            "certo": "Sport",
+            "motivo": "No começo da palavra, «sp» soa «xp». A palavra lê-se «xport»."
+          },
+          {
+            "errado": "Buch, lido «buc»",
+            "certo": "Buch",
+            "motivo": "Depois do «u», o «ch» é áspero, como o «rr» carioca. A palavra lê-se «burr»."
           }
         ],
         "tag": "Pronúncia"
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
             "ru": "ich",
@@ -146,11 +248,25 @@
             "audio": "Bier"
           },
           {
+            "ru": "Wein",
+            "translit": "vain",
+            "pt": "vinho",
+            "en": "wine",
+            "audio": "Wein"
+          },
+          {
             "ru": "Euro",
             "translit": "ói-ro",
             "pt": "euro",
             "en": "euro",
             "audio": "Euro"
+          },
+          {
+            "ru": "Buch",
+            "translit": "burr",
+            "pt": "livro",
+            "en": "book",
+            "audio": "Buch"
           },
           {
             "ru": "Deutsch",
@@ -169,290 +285,147 @@
         ]
       },
       {
-        "tipo": "palavras",
-        "min": 3,
-        "itens": [
-          {
-            "ru": "Ich heiße …",
-            "translit": "",
-            "pt": "Eu me chamo …",
-            "en": "",
-            "audio": "Ich heiße …"
-          },
-          {
-            "ru": "Wie schreibt man das?",
-            "translit": "",
-            "pt": "Como se escreve isso?",
-            "en": "",
-            "audio": "Wie schreibt man das?"
-          },
-          {
-            "ru": "Buchstabieren Sie das bitte.",
-            "translit": "",
-            "pt": "Soletre isso, por favor.",
-            "en": "",
-            "audio": "Buchstabieren Sie das bitte."
-          },
-          {
-            "ru": "Noch einmal, bitte.",
-            "translit": "",
-            "pt": "Mais uma vez, por favor.",
-            "en": "",
-            "audio": "Noch einmal, bitte."
-          },
-          {
-            "ru": "Langsamer, bitte.",
-            "translit": "",
-            "pt": "Mais devagar, por favor.",
-            "en": "",
-            "audio": "Langsamer, bitte."
-          },
-          {
-            "ru": "Wie spricht man das aus?",
-            "translit": "",
-            "pt": "Como se pronuncia isso?",
-            "en": "",
-            "audio": "Wie spricht man das aus?"
-          }
-        ]
-      },
-      {
         "tipo": "exercicios",
-        "min": 7,
+        "min": 8,
         "itens": [
           {
             "tipo": "multiple-choice",
-            "enunciado": "Wein começa com som de",
+            "enunciado": "Como se lê «ei» em «Eis»?",
             "opcoes": [
-              "v",
-              "f",
-              "u"
+              "«ai»",
+              "«ei»",
+              "«i»"
             ],
-            "gabarito": "v",
-            "explicacao": "Veja a chave comentada no livro: (a): w soa v",
-            "id": "de-001-L-101"
+            "gabarito": "«ai»",
+            "explicacao": "O par «ei» soa «ai», como em «pai». Por isso «Eis» lê-se «ais».",
+            "id": "de-001-e19"
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Vater começa com som de",
+            "enunciado": "Como se lê «ie» em «Bier»?",
             "opcoes": [
-              "v",
-              "f"
+              "um «i» longo",
+              "«ie»",
+              "«ai»"
             ],
-            "gabarito": "f",
-            "explicacao": "Veja a chave comentada no livro: (b): v soa f",
-            "id": "de-001-L-102"
+            "gabarito": "um «i» longo",
+            "explicacao": "O par «ie» é um «i» comprido, e o «e» não soa. Por isso «Bier» lê-se «bir».",
+            "id": "de-001-e20"
           },
           {
             "tipo": "multiple-choice",
-            "enunciado": "Zeit começa com",
+            "enunciado": "Como se lê «sch» em «Schule»?",
             "opcoes": [
-              "z de “zebra”",
-              "ts"
+              "«x» de xícara",
+              "«sk»",
+              "«s»"
             ],
-            "gabarito": "ts",
-            "explicacao": "Veja a chave comentada no livro: (b): z soa ts",
-            "id": "de-001-L-103"
+            "gabarito": "«x» de xícara",
+            "explicacao": "O grupo «sch» sempre soa «x». O «sk» seria o som do português, que o alemão não usa aqui.",
+            "id": "de-001-e21"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O s de Sonne soa",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Wein",
             "opcoes": [
-              "como z",
-              "como s de “sol”"
+              "Wein",
+              "Wien",
+              "Wasser"
             ],
-            "gabarito": "como z",
-            "explicacao": "Veja a chave comentada no livro: (a): s antes de vogal soa z",
-            "id": "de-001-L-104"
+            "gabarito": "Wein",
+            "explicacao": "Você ouve «vain», com o par «ei» soando «ai». «Wien» (Viena) soaria «vin», com «ie», e «Wasser» soaria «vásser».",
+            "id": "de-001-e22"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O ie de Tier soa",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Fisch",
             "opcoes": [
-              "como i longo",
-              "como “ié”"
+              "Fisch",
+              "Film",
+              "Eis"
             ],
-            "gabarito": "como i longo",
-            "explicacao": "Veja a chave comentada no livro: (a): ie é i longo",
-            "id": "de-001-L-105"
+            "gabarito": "Fisch",
+            "explicacao": "A palavra termina em «x», o som do grupo «sch»: «fix». «Film» termina em «m» e «Eis» começa por vogal.",
+            "id": "de-001-e23"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O eu de heute soa",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Buch",
             "opcoes": [
-              "como “eu”",
-              "como “oi”"
+              "Buch",
+              "Bad",
+              "Bier"
             ],
-            "gabarito": "como “oi”",
-            "explicacao": "Veja a chave comentada no livro: (b): eu soa oi",
-            "id": "de-001-L-106"
+            "gabarito": "Buch",
+            "explicacao": "O final é o «ch» áspero, como o «rr» carioca: «burr». «Bad» termina em «d» e «Bier» termina em «r» suave.",
+            "id": "de-001-e24"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O ch de ich e Milch é",
-            "opcoes": [
-              "suave, soprado no céu da boca",
-              "áspero, na garganta como em Buch"
-            ],
-            "gabarito": "suave, soprado no céu da boca",
-            "explicacao": "Veja a chave comentada no livro: (a): depois de i e de consoante (Milch), o ch é suave",
-            "id": "de-001-L-107"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Schule",
+            "respostaEsperada": "Schule",
+            "explicacao": "O som «x» é escrito com o grupo «sch». Escreva «Schule», e não «Xule», porque o alemão não usa a letra «x» para esse som.",
+            "id": "de-001-e25"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O final -er de Vater e Wasser soa na fala como",
-            "opcoes": [
-              "“êr” forte",
-              "um “a” curto e relaxado (“fá-ta”, “vá-ssa”)"
-            ],
-            "gabarito": "um “a” curto e relaxado (“fá-ta”, “vá-ssa”)",
-            "explicacao": "Veja a chave comentada no livro: (b): -er final soa como um a curto",
-            "id": "de-001-L-108"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → ___ · W → we · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
-            "respostaEsperada": "jot",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201a"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → ___ · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
-            "respostaEsperada": "we",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201b"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → ___ · Z → zet · H → ha · Ä → A-Umlaut · ß → Eszett",
-            "respostaEsperada": "vau",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201c"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → ___ · H → ha · Ä → A-Umlaut · ß → Eszett",
-            "respostaEsperada": "zet",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201d"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ___ · Ä → A-Umlaut · ß → Eszett",
-            "respostaEsperada": "ha",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201e"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ha · Ä → ___ · ß → Eszett",
-            "respostaEsperada": "A-Umlaut",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201f"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva o nome alemão destas letras para soletrar ao telefone: J → jot · W → we · V → vau · Z → zet · H → ha · Ä → A-Umlaut · ß → ___",
-            "respostaEsperada": "Eszett",
-            "explicacao": "Veja a chave comentada no livro: J = jot, W = we, V = vau, Z = zet, H = ha, Ä = A-Umlaut, ß = Eszett",
-            "id": "de-001-L-201g"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: B__r (cerveja, “bía”)",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Bier",
             "respostaEsperada": "Bier",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-202"
+            "explicacao": "O «i» longo é escrito «ie» em alemão. Escreva «Bier», e não «Bir».",
+            "id": "de-001-e26"
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: m__n (meu, “máin”)",
-            "respostaEsperada": "mein",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-203"
+            "enunciado": "B___r (cerveja; lê-se «bir»)",
+            "opcoes": [
+              "ie",
+              "ei",
+              "eu"
+            ],
+            "gabarito": "ie",
+            "explicacao": "O «i» longo se escreve «ie». Com «ei» a palavra soaria «bair».",
+            "id": "de-001-e27"
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: T__r (animal, “tía”)",
-            "respostaEsperada": "Tier",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-204"
+            "enunciado": "W___n (vinho; lê-se «vain»)",
+            "opcoes": [
+              "ei",
+              "ie",
+              "eu"
+            ],
+            "gabarito": "ei",
+            "explicacao": "O som «ai» se escreve «ei». Com «ie» a palavra soaria «vin», que é «Wien», a cidade de Viena.",
+            "id": "de-001-e28"
           },
           {
             "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: Z__t (tempo, “tsáit”)",
-            "respostaEsperada": "Zeit",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-205"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: L__be (amor, “lí-be”)",
-            "respostaEsperada": "Liebe",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-206"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: kl__n (pequeno, “kláin”)",
-            "respostaEsperada": "klein",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-207"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: Br__f (carta, “bríf”)",
-            "respostaEsperada": "Brief",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-208"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Escreva a palavra completa: Arb__t (trabalho, “ár-bait”)",
-            "respostaEsperada": "Arbeit",
-            "explicacao": "Veja a chave comentada no livro.",
-            "id": "de-001-L-209"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Complete com sch, sp ou st: ___ule (escola) · Sport (esporte) · Stadt (cidade) · Straße (rua)",
-            "respostaEsperada": "Sch",
-            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
-            "id": "de-001-L-210a"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Complete com sch, sp ou st: Schule (escola) · ___ort (esporte) · Stadt (cidade) · Straße (rua)",
-            "respostaEsperada": "Sp",
-            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
-            "id": "de-001-L-210b"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Complete com sch, sp ou st: Schule (escola) · Sport (esporte) · ___adt (cidade) · Straße (rua)",
-            "respostaEsperada": "St",
-            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
-            "id": "de-001-L-210c"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Complete com sch, sp ou st: Schule (escola) · Sport (esporte) · Stadt (cidade) · ___raße (rua)",
-            "respostaEsperada": "St",
-            "explicacao": "Veja a chave comentada no livro: Schule, Sport, Stadt, Straße",
-            "id": "de-001-L-210d"
+            "enunciado": "___ule (escola; lê-se «xúle»)",
+            "opcoes": [
+              "Sch",
+              "Sp",
+              "St"
+            ],
+            "gabarito": "Sch",
+            "explicacao": "O som «x» no começo é escrito «sch». Com «sp» ou «st» soaria «xp» ou «xt».",
+            "id": "de-001-e29"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 2,
-        "enunciado": "Leia em voz alta: «ich, Schule, Sport, Eis, Bier, Euro, Deutsch, Apfel»."
+        "min": 3,
+        "enunciado": "Leia em voz alta: «ich, Schule, Sport, Eis, Bier, Wein, Euro, Buch, Deutsch, Apfel». Depois diga duas vezes, bem devagar, as palavras com o «ch»: primeiro o «ch» suave de «ich» e depois o «ch» áspero de «Buch»."
       },
       {
         "tipo": "revisao",
         "min": 3,
-        "enunciado": "Leia as 10 palavras da sessão anterior em voz alta."
+        "enunciado": "Ouça de novo as 10 palavras da sessão anterior e repita cada uma em voz alta. Preste atenção ao «h» aspirado, ao «w» e ao «z»."
       }
     ]
   },

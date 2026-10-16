@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 24,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -34,7 +34,7 @@
             ],
             "gabarito": "Je suis fatigué",
             "explicacao": "Ouça o pronome.",
-            "id": "fr-002-e01"
+            "id": "fr-002-e13"
           },
           {
             "tipo": "audio-recognition",
@@ -47,7 +47,7 @@
             ],
             "gabarito": "Elle est contente",
             "explicacao": "Ouça o final: «contente» tem o «t» audível.",
-            "id": "fr-002-e02"
+            "id": "fr-002-e14"
           },
           {
             "tipo": "audio-recognition",
@@ -60,7 +60,46 @@
             ],
             "gabarito": "Nous sommes amis",
             "explicacao": "Ouça «sommes».",
-            "id": "fr-002-e03"
+            "id": "fr-002-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Vous êtes française",
+            "opcoes": [
+              "Vous êtes française",
+              "Vous êtes français",
+              "Nous sommes français"
+            ],
+            "gabarito": "Vous êtes française",
+            "explicacao": "Ouça o «z» final de «française», sinal do feminino.",
+            "id": "fr-002-e16"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Elles sont fatiguées",
+            "opcoes": [
+              "Elles sont fatiguées",
+              "Elle est fatiguée",
+              "Ils sont fatigués"
+            ],
+            "gabarito": "Elles sont fatiguées",
+            "explicacao": "Ouça «sont» (sõ) com nasal, diferente de «est» (é).",
+            "id": "fr-002-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Tu n'es pas content",
+            "opcoes": [
+              "Tu n'es pas content",
+              "Tu es content",
+              "Il n'est pas content"
+            ],
+            "gabarito": "Tu n'es pas content",
+            "explicacao": "Ouça o «n'» colado a «es» e o «pas».",
+            "id": "fr-002-e18"
           },
           {
             "tipo": "audio-recognition",
@@ -68,7 +107,7 @@
             "audio": "Je ne suis pas fatigué",
             "respostaEsperada": "Je ne suis pas fatigué",
             "explicacao": "Escreva: Je ne suis pas fatigué.",
-            "id": "fr-002-e04"
+            "id": "fr-002-e19"
           },
           {
             "tipo": "audio-recognition",
@@ -76,7 +115,31 @@
             "audio": "Est-ce que tu es content",
             "respostaEsperada": "Est-ce que tu es content",
             "explicacao": "Escreva: Est-ce que tu es content.",
-            "id": "fr-002-e05"
+            "id": "fr-002-e20"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Tu es brésilien",
+            "respostaEsperada": "Tu es brésilien",
+            "explicacao": "Escreva: Tu es brésilien.",
+            "id": "fr-002-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Elle est française",
+            "respostaEsperada": "Elle est française",
+            "explicacao": "Escreva: Elle est française. O feminino termina em «e».",
+            "id": "fr-002-e22"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Nous sommes contents",
+            "respostaEsperada": "Nous sommes contents",
+            "explicacao": "Escreva: Nous sommes contents. O «s» do plural é mudo, mas se escreve.",
+            "id": "fr-002-e23"
           },
           {
             "tipo": "multiple-choice",
@@ -87,8 +150,8 @@
               "sont"
             ],
             "gabarito": "êtes",
-            "explicacao": "«vous êtes».",
-            "id": "fr-002-e06"
+            "explicacao": "«Vous êtes».",
+            "id": "fr-002-e24"
           },
           {
             "tipo": "multiple-choice",
@@ -99,8 +162,8 @@
               "Elle es contente."
             ],
             "gabarito": "Elle est contente.",
-            "explicacao": "Feminino com «-e» e «est».",
-            "id": "fr-002-e07"
+            "explicacao": "Feminino com «e» e «est».",
+            "id": "fr-002-e25"
           },
           {
             "tipo": "multiple-choice",
@@ -112,7 +175,7 @@
             ],
             "gabarito": "com desconhecidos e com mais de uma pessoa",
             "explicacao": "«Vous» é formal e plural.",
-            "id": "fr-002-e08"
+            "id": "fr-002-e26"
           },
           {
             "tipo": "multiple-choice",
@@ -123,8 +186,68 @@
               "brésilienn"
             ],
             "gabarito": "brésilienne",
-            "explicacao": "«-ien → -ienne».",
-            "id": "fr-002-e09"
+            "explicacao": "«-ien» vira «-ienne».",
+            "id": "fr-002-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é o feminino de «grand»?",
+            "opcoes": [
+              "granda",
+              "grandes",
+              "grande"
+            ],
+            "gabarito": "grande",
+            "explicacao": "O feminino acrescenta «e»: «grande».",
+            "id": "fr-002-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Com «on», qual frase está correta?",
+            "opcoes": [
+              "On est contents.",
+              "On sommes contents.",
+              "On êtes contents."
+            ],
+            "gabarito": "On est contents.",
+            "explicacao": "«On» usa a forma de «il»: «est».",
+            "id": "fr-002-e29"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é a forma de «être» para «je»?",
+            "opcoes": [
+              "es",
+              "suis",
+              "sont"
+            ],
+            "gabarito": "suis",
+            "explicacao": "«Je suis».",
+            "id": "fr-002-e30"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é a negação correta de «Elle est ici»?",
+            "opcoes": [
+              "Elle ne pas est ici.",
+              "Elle n'est ici pas.",
+              "Elle n'est pas ici."
+            ],
+            "gabarito": "Elle n'est pas ici.",
+            "explicacao": "«Ne» e «pas» envolvem o verbo, e «ne» vira «n'» diante de vogal.",
+            "id": "fr-002-e31"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Um amigo pergunta «Tu es fatigué ?». Qual resposta é correta?",
+            "opcoes": [
+              "Non, je ne suis pas fatigué.",
+              "Non, tu ne suis pas fatigué.",
+              "Non, je ne pas suis fatigué."
+            ],
+            "gabarito": "Non, je ne suis pas fatigué.",
+            "explicacao": "Responde-se com «je» e a negação envolve o verbo.",
+            "id": "fr-002-e32"
           },
           {
             "tipo": "fill-gap",
@@ -135,8 +258,8 @@
               "jamais"
             ],
             "gabarito": "pas",
-            "explicacao": "«Ne… pas».",
-            "id": "fr-002-e10"
+            "explicacao": "A negação é «ne… pas».",
+            "id": "fr-002-e33"
           },
           {
             "tipo": "fill-gap",
@@ -148,7 +271,7 @@
             ],
             "gabarito": "es",
             "explicacao": "«Tu es».",
-            "id": "fr-002-e11"
+            "id": "fr-002-e34"
           },
           {
             "tipo": "fill-gap",
@@ -160,7 +283,7 @@
             ],
             "gabarito": "sont",
             "explicacao": "«Ils sont».",
-            "id": "fr-002-e12"
+            "id": "fr-002-e35"
           },
           {
             "tipo": "fill-gap",
@@ -172,7 +295,79 @@
             ],
             "gabarito": "n'",
             "explicacao": "Elisão diante de vogal.",
-            "id": "fr-002-e13"
+            "id": "fr-002-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Nous ___ brésiliens. (somos)",
+            "opcoes": [
+              "êtes",
+              "sont",
+              "sommes"
+            ],
+            "gabarito": "sommes",
+            "explicacao": "Com «nous», «être» faz «sommes».",
+            "id": "fr-002-e37"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Madame, vous ___ contente ? (está)",
+            "opcoes": [
+              "êtes",
+              "es",
+              "est"
+            ],
+            "gabarito": "êtes",
+            "explicacao": "Com «vous», «être» faz «êtes».",
+            "id": "fr-002-e38"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elle est ___ . (pequena)",
+            "opcoes": [
+              "petit",
+              "petite",
+              "petites"
+            ],
+            "gabarito": "petite",
+            "explicacao": "Sujeito feminino singular: acrescenta-se «e»: «petite».",
+            "id": "fr-002-e39"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Elles ___ fatiguées. (estão)",
+            "opcoes": [
+              "est",
+              "êtes",
+              "sont"
+            ],
+            "gabarito": "sont",
+            "explicacao": "Com «elles», «être» faz «sont».",
+            "id": "fr-002-e40"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Il ___ pas brésilien. (não é)",
+            "opcoes": [
+              "n'est",
+              "ne est",
+              "n'es"
+            ],
+            "gabarito": "n'est",
+            "explicacao": "Diante de vogal, «ne» vira «n'»: «il n'est pas».",
+            "id": "fr-002-e41"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Marie est ___ . (feliz)",
+            "opcoes": [
+              "heureux",
+              "heureuse",
+              "heureuses"
+            ],
+            "gabarito": "heureuse",
+            "explicacao": "Os adjetivos em «-eux» fazem o feminino em «-euse».",
+            "id": "fr-002-e42"
           },
           {
             "tipo": "sentence-ordering",
@@ -184,8 +379,8 @@
               "fatiguée"
             ],
             "gabarito": "Elle n'est pas fatiguée.",
-            "explicacao": "ne… pas envolve o verbo.",
-            "id": "fr-002-e14"
+            "explicacao": "«Ne… pas» envolve o verbo.",
+            "id": "fr-002-e43"
           },
           {
             "tipo": "sentence-ordering",
@@ -198,138 +393,12 @@
               "content"
             ],
             "gabarito": "Est-ce que tu es content",
-            "explicacao": "est-ce que + frase afirmativa.",
-            "id": "fr-002-e15"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva em francês: Eu sou brasileiro. Ela não está cansada. Você é feliz?",
-            "respostaEsperada": "Je suis brésilien. Elle n'est pas fatiguée. Tu es heureux ?",
-            "id": "fr-002-e16"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Nous ___ brésiliens. (somos)",
-            "opcoes": [
-              "êtes",
-              "sont",
-              "sommes"
-            ],
-            "gabarito": "sommes",
-            "explicacao": "Com «nous», «être» faz «sommes».",
-            "id": "fr-002-e17"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Madame, vous ___ contente ? (está)",
-            "opcoes": [
-              "êtes",
-              "es",
-              "est"
-            ],
-            "gabarito": "êtes",
-            "explicacao": "Com «vous», «être» faz «êtes».",
-            "id": "fr-002-e18"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Elle est ___ . (pequena)",
-            "opcoes": [
-              "petit",
-              "petite",
-              "petites"
-            ],
-            "gabarito": "petite",
-            "explicacao": "Sujeito feminino singular: acrescenta-se «-e»: «petite».",
-            "id": "fr-002-e19"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Elles ___ fatiguées. (estão)",
-            "opcoes": [
-              "est",
-              "êtes",
-              "sont"
-            ],
-            "gabarito": "sont",
-            "explicacao": "Com «elles», «être» faz «sont».",
-            "id": "fr-002-e20"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Il ___ pas brésilien. (não é)",
-            "opcoes": [
-              "n'est",
-              "ne est",
-              "n'es"
-            ],
-            "gabarito": "n'est",
-            "explicacao": "Diante de vogal, «ne» vira «n'»: «il n'est pas».",
-            "id": "fr-002-e21"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Marie est ___ . (feliz)",
-            "opcoes": [
-              "heureux",
-              "heureuse",
-              "heureuses"
-            ],
-            "gabarito": "heureuse",
-            "explicacao": "Os adjetivos em «-eux» fazem o feminino em «-euse».",
-            "id": "fr-002-e22"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual é o feminino de «grand»?",
-            "opcoes": [
-              "granda",
-              "grandes",
-              "grande"
-            ],
-            "gabarito": "grande",
-            "explicacao": "O feminino acrescenta «-e»: «grande».",
-            "id": "fr-002-e23"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Com «on», qual frase está correta?",
-            "opcoes": [
-              "On est contents.",
-              "On sommes contents.",
-              "On êtes contents."
-            ],
-            "gabarito": "On est contents.",
-            "explicacao": "«On» usa a forma de «il»: «est».",
-            "id": "fr-002-e24"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual é a forma de «être» para «je»?",
-            "opcoes": [
-              "es",
-              "suis",
-              "sont"
-            ],
-            "gabarito": "suis",
-            "explicacao": "«Je suis».",
-            "id": "fr-002-e25"
-          },
-          {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual é a negação correta de «Elle est ici»?",
-            "opcoes": [
-              "Elle ne pas est ici.",
-              "Elle n'est ici pas.",
-              "Elle n'est pas ici."
-            ],
-            "gabarito": "Elle n'est pas ici.",
-            "explicacao": "«Ne» e «pas» envolvem o verbo, e «ne» vira «n'» diante de vogal.",
-            "id": "fr-002-e26"
+            "explicacao": "«Est-ce que» mais a frase afirmativa.",
+            "id": "fr-002-e44"
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Vocês são francesa, senhora.»",
+            "enunciado": "Ordene: «A senhora é francesa, madame.»",
             "opcoes": [
               "Vous",
               "êtes",
@@ -337,8 +406,8 @@
               "madame"
             ],
             "gabarito": "Vous êtes française, madame.",
-            "explicacao": "«Vous êtes» e o adjetivo no feminino.",
-            "id": "fr-002-e27"
+            "explicacao": "«Vous êtes» e o adjetivo no feminino, porque a pessoa é uma mulher.",
+            "id": "fr-002-e45"
           },
           {
             "tipo": "sentence-ordering",
@@ -352,31 +421,44 @@
             ],
             "gabarito": "Ils ne sont pas fatigués.",
             "explicacao": "«Ne… pas» envolve «sont».",
-            "id": "fr-002-e28"
+            "id": "fr-002-e46"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em francês: Eu sou brasileiro. Ela não está cansada. Você é feliz?",
+            "respostaEsperada": "Je suis brésilien. Elle n'est pas fatiguée. Tu es heureux ?",
+            "id": "fr-002-e47"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Nós somos amigos. Ele não está cansado.",
             "respostaEsperada": "Nous sommes amis. Il n'est pas fatigué.",
-            "id": "fr-002-e29"
+            "id": "fr-002-e48"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva em francês: Eles são pequenos. Ela é brasileira.",
             "respostaEsperada": "Ils sont petits. Elle est brésilienne.",
-            "id": "fr-002-e30"
+            "id": "fr-002-e49"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em francês: Eu sou a Emma. Eu sou brasileira e estou contente.",
+            "respostaEsperada": "Je suis Emma. Je suis brésilienne et je suis contente.",
+            "id": "fr-002-e50"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Apresente, em voz alta, dois amigos imaginários: um francês e uma brasileira, com como eles estão."
+        "min": 3,
+        "enunciado": "Apresente, em voz alta, dois amigos imaginários: um francês e uma brasileira, com como eles estão. Use pelo menos uma frase negativa.",
+        "exemplo": "Il est français. Il est content. Elle est brésilienne. Elle n'est pas fatiguée."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Conjugue «être» em voz alta e diga duas frases afirmativas e duas negativas."
+        "min": 3,
+        "enunciado": "Conjugue «être» em voz alta e diga duas frases afirmativas e duas negativas. Depois ouça de novo o diálogo «Le premier jour» e repita as falas da Emma."
       }
     ]
   },

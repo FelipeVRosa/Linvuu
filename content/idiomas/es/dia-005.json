@@ -20,8 +20,64 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Un grupo nuevo / Um grupo novo",
+        "contexto": "Ana conhece Luis, Marta e Pablo. Ouça sem olhar o texto e perceba as palavras «soy», «eres», «es», «somos» e «son». Elas são o assunto de hoje.",
+        "linhas": [
+          {
+            "personagem": "Ana",
+            "ru": "— ¡Hola! Yo soy Ana. ¿Y tú?",
+            "pt": "— Oi! Eu sou a Ana. E você?",
+            "audio": "¡Hola! Yo soy Ana. ¿Y tú?"
+          },
+          {
+            "personagem": "Luis",
+            "ru": "— Yo soy Luis. Ella es Marta.",
+            "pt": "— Eu sou o Luis. Ela é a Marta.",
+            "audio": "Yo soy Luis. Ella es Marta."
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— Mucho gusto, Ana.",
+            "pt": "— Muito prazer, Ana.",
+            "audio": "Mucho gusto, Ana."
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Mucho gusto, Marta. ¿Quién es él?",
+            "pt": "— Muito prazer, Marta. Quem é ele?",
+            "audio": "Mucho gusto, Marta. ¿Quién es él?"
+          },
+          {
+            "personagem": "Marta",
+            "ru": "— Él es Pablo. Pablo y Luis son amigos.",
+            "pt": "— Ele é o Pablo. Pablo e Luis são amigos.",
+            "audio": "Él es Pablo. Pablo y Luis son amigos."
+          },
+          {
+            "personagem": "Pablo",
+            "ru": "— Sí, somos amigos. ¿Y ustedes? ¿Son amigas?",
+            "pt": "— Sim, somos amigos. E vocês? São amigas?",
+            "audio": "Sí, somos amigos. ¿Y ustedes? ¿Son amigas?"
+          },
+          {
+            "personagem": "Ana",
+            "ru": "— Sí, Marta y yo somos amigas.",
+            "pt": "— Sim, a Marta e eu somos amigas.",
+            "audio": "Sí, Marta y yo somos amigas."
+          },
+          {
+            "personagem": "Luis",
+            "ru": "— ¡Qué bien!",
+            "pt": "— Que bom!",
+            "audio": "¡Qué bien!"
+          }
+        ]
+      },
+      {
         "tipo": "palavras",
-        "min": 8,
+        "min": 5,
         "itens": [
           {
             "ru": "yo",
@@ -83,10 +139,36 @@
       },
       {
         "tipo": "gramatica",
-        "min": 12,
+        "min": 11,
         "titulo": "Os pronomes sujeito e o presente de ser",
-        "explicacao": "PASSO 1: «ser» é o verbo para dizer quem alguém é, de onde vem, qual é a profissão e como é. O presente é irregular: soy, eres, es, somos, sois, son. PASSO 2: o verbo já mostra a pessoa, por isso o pronome sujeito quase sempre se omite: «Soy Ana», não «Yo soy Ana». Usa-se o pronome para contrastar ou enfatizar: «Yo soy Ana y ella es Marta.» PASSO 3: «tú» (informal) usa «eres»; «usted» (formal) usa a mesma forma de «él» e «ella»: «Usted es médico.» PASSO 4: no plural, «nosotros» usa «somos»; «ellos» e «ellas» usam «son»; «ustedes» também usa «son». PASSO 5: «vosotros» usa «sois» e é próprio da Espanha. Na América Latina não existe: diz-se «ustedes son», para todos. Na Argentina e em alguns países da América Central também se ouve «vos sos» no lugar de «tú eres». PASSO 6: existem formas femininas: «nosotras», «vosotras», «ellas». Um grupo misto usa o masculino. PASSO 7: não existe pronome neutro obrigatório: diz-se «Es tarde», sem sujeito. PASSO 8: o til importa: «él» (ele) tem til; «el» (o) não. «Tú» (você) tem til; «tu» (seu) não.",
+        "explicacao": "Você acabou de ouvir «soy», «es», «somos» e «son». Agora a regra, em passos curtos. PASSO 1: «ser» é o verbo para dizer quem alguém é, de onde vem, qual é a profissão e como é. O presente é irregular: soy, eres, es, somos, sois, son. PASSO 2: o verbo já mostra a pessoa, por isso o pronome sujeito quase sempre se omite: «Soy Ana», não «Yo soy Ana». Usa-se o pronome para contrastar ou enfatizar: «Yo soy Ana y ella es Marta.» PASSO 3: «tú» (informal) usa «eres»; «usted» (formal) usa a mesma forma de «él» e «ella»: «Usted es médico.» PASSO 4: no plural, «nosotros» usa «somos»; «ellos» e «ellas» usam «son»; «ustedes» também usa «son». PASSO 5: «vosotros» usa «sois» e é próprio da Espanha. Na América Latina não existe: diz-se «ustedes son», para todos. Na Argentina e em alguns países da América Central também se ouve «vos sos» no lugar de «tú eres». PASSO 6: existem formas femininas: «nosotras», «vosotras», «ellas». Um grupo misto usa o masculino. PASSO 7: não existe pronome neutro obrigatório: diz-se «Es tarde», sem sujeito. PASSO 8: o til importa: «él» (ele) tem til; «el» (o) não. «Tú» (você) tem til; «tu» (seu) não.",
         "comparacao": "em português o verbo também mostra a pessoa, mas o pronome «eu» e «você» é muito usado; em espanhol ele é raro, só para destacar. As formas são parecidas, mas a ortografia engana: «sou» é «soy», «és» é «eres», «somos» é igual, «são» é «son». «Usted» corresponde a «o senhor, a senhora», e «tú» ao «tu» de quem usa essa forma em português.",
+        "exemplos": [
+          {
+            "ru": "Soy Ana.",
+            "pt": "Eu sou a Ana."
+          },
+          {
+            "ru": "Eres muy simpático.",
+            "pt": "Você é muito simpático."
+          },
+          {
+            "ru": "Ella es Marta.",
+            "pt": "Ela é a Marta."
+          },
+          {
+            "ru": "Usted es médico.",
+            "pt": "O senhor é médico."
+          },
+          {
+            "ru": "Somos amigos.",
+            "pt": "Somos amigos."
+          },
+          {
+            "ru": "Ellos son estudiantes.",
+            "pt": "Eles são estudantes."
+          }
+        ],
         "tabela": [
           {
             "pronome": "yo",
@@ -145,13 +227,13 @@
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Diga: «Yo soy… Tú eres… Ella es… Nosotros somos… Ellos son…» com nomes de amigos. Depois repita sem os pronomes onde for possível: «Soy… Eres…»"
+        "min": 6,
+        "enunciado": "Primeiro, diga em voz alta o seu nome: «Soy…». Depois apresente três pessoas que você conhece: «Ella es… Él es… Ellos son amigos.» Por fim, repita todas as seis formas de «ser» seguidas, sem os pronomes: «soy, eres, es, somos, sois, son»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Cumprimente em voz alta com «tú» e com «usted». Depois leia: jamón, gente, queso, zapato, calle, niño, perro, hotel."
+        "min": 3,
+        "enunciado": "Retome a aula 1 em voz alta: cumprimente com «tú» e com «usted». Depois leia: jamón, gente, queso, zapato, calle, niño, perro, hotel."
       }
     ]
   },

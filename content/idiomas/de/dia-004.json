@@ -20,93 +20,214 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "exercicios",
-        "min": 12,
+        "tipo": "dialogo",
+        "min": 5,
+        "titulo": "Hallo! Wie geht’s? / Oi! Como vai?",
+        "contexto": "Duas pessoas se encontram na rua, de manhã.",
+        "linhas": [
+          {
+            "personagem": "Anna",
+            "ru": "— Hallo, Ben!",
+            "pt": "— Oi, Ben!",
+            "audio": "Hallo, Ben!"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Hallo, Anna! Wie geht’s?",
+            "pt": "— Oi, Anna! Como vai?",
+            "audio": "Hallo, Anna! Wie geht’s?"
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Gut, danke! Und dir?",
+            "pt": "— Bem, obrigada! E você?",
+            "audio": "Gut, danke! Und dir?"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Auch gut, danke.",
+            "pt": "— Também bem, obrigado.",
+            "audio": "Auch gut, danke."
+          },
+          {
+            "personagem": "Anna",
+            "ru": "— Tschüs, Ben!",
+            "pt": "— Tchau, Ben!",
+            "audio": "Tschüs, Ben!"
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Tschüs, Anna!",
+            "pt": "— Tchau, Anna!",
+            "audio": "Tschüs, Anna!"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 4,
         "itens": [
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se lê «ei» em «Eis»?",
-            "opcoes": [
-              "«ai»",
-              "«ei»",
-              "«i»"
-            ],
-            "gabarito": "«ai»",
-            "explicacao": "«ei» soa «ai».",
-            "id": "de-001-e01"
+            "ru": "Hallo",
+            "translit": "hálo",
+            "pt": "olá",
+            "en": "hello",
+            "audio": "Hallo"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se lê «ie» em «Bier»?",
-            "opcoes": [
-              "«i» longo",
-              "«ie»",
-              "«ai»"
-            ],
-            "gabarito": "«i» longo",
-            "explicacao": "«ie» é um «i» longo.",
-            "id": "de-001-e02"
+            "ru": "Guten Morgen",
+            "translit": "gúten mórguen",
+            "pt": "bom dia (de manhã)",
+            "en": "good morning",
+            "audio": "Guten Morgen"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Como se lê «sch» em «Schule»?",
-            "opcoes": [
-              "«x» de xícara",
-              "«sk»",
-              "«s»"
-            ],
-            "gabarito": "«x» de xícara",
-            "explicacao": "«sch» sempre soa «x».",
-            "id": "de-001-e03"
+            "ru": "Guten Tag",
+            "translit": "gúten tak",
+            "pt": "bom dia, boa tarde",
+            "en": "good day",
+            "audio": "Guten Tag"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O «h» de «Haus»:",
-            "opcoes": [
-              "é aspirado, como em «house»",
-              "é mudo, como em português",
-              "soa como «r»"
-            ],
-            "gabarito": "é aspirado, como em «house»",
-            "explicacao": "No começo da palavra, o h é aspirado.",
-            "id": "de-001-e04"
+            "ru": "Guten Abend",
+            "translit": "gúten ábent",
+            "pt": "boa noite (ao chegar)",
+            "en": "good evening",
+            "audio": "Guten Abend"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O «w» de «Wasser» soa como:",
-            "opcoes": [
-              "«v» de vaca",
-              "«u»",
-              "«w» inglês"
-            ],
-            "gabarito": "«v» de vaca",
-            "explicacao": "w = v.",
-            "id": "de-001-e05"
+            "ru": "Gute Nacht",
+            "translit": "gúte narrt",
+            "pt": "boa noite (ao dormir)",
+            "en": "good night",
+            "audio": "Gute Nacht"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O «z» de «Zeit» soa como:",
-            "opcoes": [
-              "«ts»",
-              "«z» de zebra",
-              "«s»"
-            ],
-            "gabarito": "«ts»",
-            "explicacao": "z = ts.",
-            "id": "de-001-e06"
+            "ru": "Tschüs",
+            "translit": "tchüs",
+            "pt": "tchau",
+            "en": "bye",
+            "audio": "Tschüs"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "O «s» de «Sonne» (antes de vogal) soa como:",
-            "opcoes": [
-              "«z»",
-              "«s»",
-              "«x»"
-            ],
-            "gabarito": "«z»",
-            "explicacao": "s antes de vogal = z.",
-            "id": "de-001-e07"
+            "ru": "Danke",
+            "translit": "dánke",
+            "pt": "obrigado, obrigada",
+            "en": "thanks",
+            "audio": "Danke"
           },
+          {
+            "ru": "Bitte",
+            "translit": "bíte",
+            "pt": "por favor, de nada",
+            "en": "please",
+            "audio": "Bitte"
+          },
+          {
+            "ru": "Wie geht’s?",
+            "translit": "vi guéts",
+            "pt": "como vai?",
+            "en": "how are you?",
+            "audio": "Wie geht’s?"
+          },
+          {
+            "ru": "Und dir?",
+            "translit": "unt dir",
+            "pt": "e você?",
+            "en": "and you?",
+            "audio": "Und dir?"
+          },
+          {
+            "ru": "Auch gut",
+            "translit": "aurr gut",
+            "pt": "também bem",
+            "en": "also good",
+            "audio": "Auch gut"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 3,
+        "titulo": "Quando usar cada saudação",
+        "explicacao": "PASSO 1: «Hallo» e «Tschüs» servem para amigos e colegas, a qualquer hora do dia. PASSO 2: «Guten Morgen» se diz de manhã, «Guten Tag» se diz durante o dia e «Guten Abend» se diz à noite, ao chegar. PASSO 3: «Gute Nacht» é diferente. Só se diz na despedida, antes de dormir. PASSO 4: para perguntar como a pessoa está, diga «Wie geht’s?», que se lê «vi guéts». Responda «Gut, danke!». PASSO 5: «Danke» quer dizer obrigado e obrigada. Em alemão a palavra é a mesma para homem e mulher.",
+        "comparacao": "em português, «boa noite» serve para chegar e para ir dormir. Em alemão são duas expressões: «Guten Abend» ao chegar e «Gute Nacht» ao dormir.",
+        "tabela": [
+          {
+            "situacao": "Encontrar alguém de manhã",
+            "alemao": "Guten Morgen!",
+            "pt": "bom dia"
+          },
+          {
+            "situacao": "Encontrar alguém durante o dia",
+            "alemao": "Guten Tag!",
+            "pt": "bom dia, boa tarde"
+          },
+          {
+            "situacao": "Encontrar alguém à noite",
+            "alemao": "Guten Abend!",
+            "pt": "boa noite"
+          },
+          {
+            "situacao": "Ir dormir",
+            "alemao": "Gute Nacht!",
+            "pt": "boa noite"
+          },
+          {
+            "situacao": "Com amigos, a qualquer hora",
+            "alemao": "Hallo!",
+            "pt": "oi"
+          },
+          {
+            "situacao": "Despedir-se",
+            "alemao": "Tschüs!",
+            "pt": "tchau"
+          },
+          {
+            "situacao": "Perguntar como a pessoa está",
+            "alemao": "Wie geht’s?",
+            "pt": "como vai?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Gute Nacht, ao chegar a uma festa à noite",
+            "certo": "Guten Abend",
+            "motivo": "«Gute Nacht» só se diz na despedida, para quem vai dormir. Ao chegar, diga «Guten Abend»."
+          },
+          {
+            "errado": "Guten Tag, às oito da noite",
+            "certo": "Guten Abend",
+            "motivo": "À noite a saudação muda para «Guten Abend». «Guten Tag» fica para o dia."
+          }
+        ],
+        "tag": "Saudações"
+      },
+      {
+        "tipo": "texto",
+        "min": 4,
+        "titulo": "Anna im Café / Anna no café",
+        "ru": "Guten Morgen! Anna ist im Café. Ben ist auch da. Anna sagt: Hallo, Ben! Wie geht’s? Ben sagt: Gut, danke! Und dir? Anna sagt: Auch gut, danke. Anna trinkt Tee. Ben trinkt Wasser. Das Café ist gut. Dann sagt Ben: Tschüs, Anna! Anna sagt: Tschüs, Ben!",
+        "pt": "Bom dia! Anna está no café. Ben também está lá. Anna diz: Oi, Ben! Como vai? Ben diz: Bem, obrigado! E você? Anna diz: Também bem, obrigada. Anna bebe chá. Ben bebe água. O café é bom. Depois Ben diz: Tchau, Anna! Anna diz: Tchau, Ben!",
+        "perguntas": [
+          {
+            "pergunta": "Onde Anna e Ben estão?",
+            "resposta": "No café («im Café»)."
+          },
+          {
+            "pergunta": "O que Anna bebe e o que Ben bebe?",
+            "resposta": "Anna bebe chá («Tee») e Ben bebe água («Wasser»)."
+          },
+          {
+            "pergunta": "Que pergunta Anna faz para saber se Ben está bem?",
+            "resposta": "«Wie geht’s?»."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
@@ -117,16 +238,29 @@
               "Gute Nacht"
             ],
             "gabarito": "Guten Tag",
-            "explicacao": "«Guten Tag» é a saudação do dia.",
-            "id": "de-001-e08"
+            "explicacao": "«Guten Tag» é a saudação do dia. Em «Guten Abend» você ouviria «ábent» no final, e em «Gute Nacht» ouviria o «rr» áspero de «narrt».",
+            "id": "de-001-e30"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Wie geht’s?",
+            "opcoes": [
+              "Wie geht’s?",
+              "Und dir?",
+              "Guten Morgen"
+            ],
+            "gabarito": "Wie geht’s?",
+            "explicacao": "A pergunta começa com «vi», o «w» alemão soando «v», e termina em «guéts». «Und dir?» começa com «unt» e «Guten Morgen» é uma saudação, não uma pergunta.",
+            "id": "de-001-e31"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Danke",
             "respostaEsperada": "Danke",
-            "explicacao": "Obrigado.",
-            "id": "de-001-e09"
+            "explicacao": "Escreva «Danke». O «e» final soa, «dánke», e a palavra é a mesma para homem e mulher.",
+            "id": "de-001-e32"
           },
           {
             "tipo": "multiple-choice",
@@ -137,8 +271,8 @@
               "Gute Nacht"
             ],
             "gabarito": "Guten Morgen",
-            "explicacao": "Morgen = manhã.",
-            "id": "de-001-e10"
+            "explicacao": "«Morgen» quer dizer manhã. «Abend» é a noite, e «Nacht» é a hora de dormir.",
+            "id": "de-001-e33"
           },
           {
             "tipo": "multiple-choice",
@@ -149,100 +283,122 @@
               "por favor"
             ],
             "gabarito": "tchau",
-            "explicacao": "Despedida informal.",
-            "id": "de-001-e11"
+            "explicacao": "«Tschüs» é a despedida informal, que se lê «tchüs». Obrigado é «Danke», e por favor é «Bitte».",
+            "id": "de-001-e34"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Gut, ___! Und dir? (obrigada)",
+            "opcoes": [
+              "danke",
+              "bitte",
+              "tschüs"
+            ],
+            "gabarito": "danke",
+            "explicacao": "Depois de dizer que está bem, você agradece a pergunta com «danke». «Tschüs» é despedida e «bitte» seria «por favor».",
+            "id": "de-001-e35"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Guten ___! (boa noite, ao chegar)",
+            "opcoes": [
+              "Abend",
+              "Morgen",
+              "Nacht"
+            ],
+            "gabarito": "Abend",
+            "explicacao": "Ao chegar à noite se diz «Guten Abend». «Guten Morgen» é de manhã, e «Nacht» fica para «Gute Nacht», ao dormir.",
+            "id": "de-001-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___, Ben! Wie geht’s? (oi)",
+            "opcoes": [
+              "Hallo",
+              "Tschüs",
+              "Danke"
+            ],
+            "gabarito": "Hallo",
+            "explicacao": "Para cumprimentar um amigo se diz «Hallo». «Tschüs» é para se despedir e «Danke» é obrigado.",
+            "id": "de-001-e37"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Como vai?»",
+            "opcoes": [
+              "geht’s",
+              "Wie"
+            ],
+            "gabarito": "Wie geht’s?",
+            "explicacao": "A pergunta começa com a palavra interrogativa «Wie», como, e depois vem «geht’s».",
+            "id": "de-001-e38"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Bem, obrigado! E você?»",
+            "opcoes": [
+              "dir",
+              "Gut",
+              "Und",
+              "danke"
+            ],
+            "gabarito": "Gut, danke! Und dir?",
+            "explicacao": "Primeiro a resposta «Gut, danke!» e depois a pergunta devolvida, «Und dir?».",
+            "id": "de-001-e39"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Bom dia, Ben!»",
+            "opcoes": [
+              "Ben",
+              "Guten",
+              "Morgen"
+            ],
+            "gabarito": "Guten Morgen, Ben!",
+            "explicacao": "A saudação «Guten Morgen» vem inteira primeiro, e o nome da pessoa vem por último.",
+            "id": "de-001-e40"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Também bem, obrigado.»",
+            "opcoes": [
+              "danke",
+              "Auch",
+              "gut"
+            ],
+            "gabarito": "Auch gut, danke.",
+            "explicacao": "«Auch gut» quer dizer também bem, e o agradecimento «danke» fecha a frase.",
+            "id": "de-001-e41"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva uma saudação e uma despedida em alemão.",
             "respostaEsperada": "Hallo! Guten Tag! Tschüs!",
-            "id": "de-001-e12"
+            "id": "de-001-e42"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva como você pergunta a um amigo se ele está bem e como ele responde.",
+            "respostaEsperada": "Wie geht’s? Gut, danke! Und dir?",
+            "id": "de-001-e43"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva o que você diz ao chegar à noite e o que diz antes de dormir.",
+            "respostaEsperada": "Guten Abend! Gute Nacht!",
+            "id": "de-001-e44"
           }
         ]
       },
       {
-        "tipo": "exercicios",
-        "min": 10,
-        "itens": [
-          {
-            "tipo": "producao",
-            "enunciado": "Soletre seu nome e sobrenome em voz alta usando os nomes alemães das letras (Modelo: Bruno = be – er – u – en – o).",
-            "respostaEsperada": "Lucas Silva = el – u – ce – a – es / es – i – el – vau – a.",
-            "id": "de-001-L-p01"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Soletre estas três cidades alemãs: Berlin, Köln e München.",
-            "respostaEsperada": "Berlin = be – e – er – el – i – en. Köln = ka – ö – el – en. München = em – ü – en – ce",
-            "id": "de-001-L-p02"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva um diálogo completo de recepção (5 falas) no estilo da Cena: o recepcionista cumprimenta e pergunta seu nome, você responde, ele pede para repetir (Wie bitte? / Buchstabieren Sie das bitte), você soletra e ele agradece.",
-            "respostaEsperada": "Modelo de diálogo: — Guten Tag! Wie heißen Sie?— Guten Tag. Ich heiße Lucas Silva.— Wie bitte? Buchstabieren Sie das bitte.— L-U-C-A-S, S-I-L-V-A.— Danke, Herr Silva. Willkommen in Berlin!",
-            "id": "de-001-L-p03"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Vater lido como “váter”.",
-            "respostaEsperada": "v soa f e -er soa a curto: “fá-ta”.",
-            "id": "de-001-L-c01"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Jahr lido como “jár”, como em “já”.",
-            "respostaEsperada": "j soa i: “iár”.",
-            "id": "de-001-L-c02"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Sport lido como “sport”, com s de “sol”.",
-            "respostaEsperada": "sp no início soa “xp”: “xport”.",
-            "id": "de-001-L-c03"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Zeit lido como “zeit”.",
-            "respostaEsperada": "ei soa ai e z soa ts: “tsait”.",
-            "id": "de-001-L-c04"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Tag lido como “tági”.",
-            "respostaEsperada": "Sem vogal no fim, g final soa k: “tak”.",
-            "id": "de-001-L-c05"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: Sonne lido como “sone”, com s de “sol”.",
-            "respostaEsperada": "s antes de vogal soa z: “zone”.",
-            "id": "de-001-L-c06"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Esta frase tem erro? Corrija ou escreva «OK»: heute lido como “rêute”.",
-            "respostaEsperada": "h é sopro leve e eu soa oi: “hói-te”.",
-            "id": "de-001-L-c07"
-          }
-        ]
-      },
-      {
-        "tipo": "gramatica",
-        "min": 4,
-        "titulo": "O erro típico do brasileiro",
-        "explicacao": "PASSO 1: O erro que mais custa caro é trocar v e w. Sem ele, você ainda é entendido. Com ele, vira outra palavra (Wein = vinho vs. fein = fino; Wetter = clima vs. Vetter = primo). O segundo erro mais comum é colocar um “i” fantasma depois de consoantes finais (Tag lido como “tági” em vez de “tak”). PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
-        "erros": [],
-        "tag": "Erro típico"
-      },
-      {
-        "tipo": "intro",
-        "min": 1,
-        "texto": "Já consigo? Soletro meu nome com os nomes alemães das letras. · Leio Wasser, Vater, Zeit, Jahr, Sonne e Schule sem errar a primeira letra. · Peço “Wie bitte?” e “Noch einmal, bitte.” sem travar e explico a diferença entre Wein e fein."
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Encene o diálogo em voz alta, fazendo as duas vozes, Anna e Ben. Depois troque os nomes por nomes de pessoas que você conhece e cumprimente cada uma: «Hallo, … ! Wie geht’s?». Termine com «Tschüs!»."
       },
       {
         "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Retorno. O capítulo 1 é o primeiro, e por isso o Retorno olha para a frente. A ideia é voltar a estes sons em intervalos, não de uma vez. Nos capítulos 2, 3 e 4, o Retorno voltará aos sons deste capítulo com palavras novas."
+        "min": 2,
+        "enunciado": "Ouça «Eis», «Bier», «Schule», «Sport», «Haus», «ich» e «Buch» e diga qual combinação de letras aparece em cada uma."
       }
     ]
   },

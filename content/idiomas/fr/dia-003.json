@@ -20,11 +20,130 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Au café / No café",
+        "contexto": "Emma entra num café e pede um café ao garçom. Ouça com atenção as letras que não soam e as ligações.",
+        "linhas": [
+          {
+            "personagem": "Le serveur",
+            "ru": "— Bonjour, madame ! Ça va ?",
+            "pt": "— Bom dia, senhora! Tudo bem?",
+            "audio": "Bonjour, madame ! Ça va ?"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Ça va bien, merci. Un café, s'il vous plaît.",
+            "pt": "— Tudo bem, obrigada. Um café, por favor.",
+            "audio": "Ça va bien, merci. Un café, s'il vous plaît."
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— Voilà, madame.",
+            "pt": "— Aqui está, senhora.",
+            "audio": "Voilà, madame."
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Merci !",
+            "pt": "— Obrigada!",
+            "audio": "Merci !"
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— De rien. Bonne journée !",
+            "pt": "— De nada. Bom dia para a senhora!",
+            "audio": "De rien. Bonne journée !"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Pardon, monsieur... Un café, c'est bon ?",
+            "pt": "— Desculpe, senhor... O café é bom?",
+            "audio": "Pardon, monsieur... Un café, c'est bon ?"
+          },
+          {
+            "personagem": "Le serveur",
+            "ru": "— Oui, madame, c'est très bon !",
+            "pt": "— Sim, senhora, é muito bom!",
+            "audio": "Oui, madame, c'est très bon !"
+          },
+          {
+            "personagem": "Emma",
+            "ru": "— Merci, monsieur. Au revoir !",
+            "pt": "— Obrigada, senhor. Tchau!",
+            "audio": "Merci, monsieur. Au revoir !"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "un café",
+            "translit": "ẽ kafé",
+            "pt": "um café",
+            "en": "",
+            "audio": "un café"
+          },
+          {
+            "ru": "voilà",
+            "translit": "vuálá",
+            "pt": "aqui está",
+            "en": "",
+            "audio": "voilà"
+          },
+          {
+            "ru": "bonne journée",
+            "translit": "bón jurnê",
+            "pt": "tenha um bom dia",
+            "en": "",
+            "audio": "bonne journée"
+          },
+          {
+            "ru": "garçon",
+            "translit": "garsõ",
+            "pt": "garçom, menino",
+            "en": "",
+            "audio": "garçon"
+          },
+          {
+            "ru": "c'est bon",
+            "translit": "sé bõ",
+            "pt": "é bom",
+            "en": "",
+            "audio": "c'est bon"
+          }
+        ]
+      },
+      {
         "tipo": "gramatica",
-        "min": 15,
-        "titulo": "Acentos, letras mudas, ligação e elisão",
-        "explicacao": "PASSO 1: os acentos mudam o som. «é» (agudo) é um «ê» fechado: «café». «è» e «ê» são um «é» aberto: «père», «fête». O circunflexo (â, î, ô, û) quase sempre só marca uma letra antiga que sumiu. O «ç» soa como «s»: «garçon», «français». O trema («ë», «ï») separa vogais: «Noël». PASSO 2: a maioria das consoantes finais não soa: «petit», «grand», «vous», «trop». As que costumam soar são c, r, f e l (lembre de «CaReFuL»): «sac», «bonjour», «chef», «animal». PASSO 3: a ligação (liaison) liga a consoante final muda à vogal da palavra seguinte: «vous avez» soa «vu-zavê»; «les amis» soa «lê-zami». O «s» da ligação soa como «z». PASSO 4: a elisão corta a vogal final de palavras curtas diante de vogal, e usa o apóstrofo: «je + aime = j'aime», «le + ami = l'ami», «ce + est = c'est», «de + eau = d'eau». PASSO 5: pronuncie a frase como uma onda contínua, sem pausas entre as palavras.",
-        "comparacao": "em português quase sempre você pronuncia o que escreve. Em francês, muitas letras do fim das palavras não soam, e as palavras se ligam umas às outras. O áudio vem antes da leitura.",
+        "min": 6,
+        "titulo": "Acentos e letras mudas",
+        "explicacao": "Ouça primeiro: «café», «père», «garçon», «petit», «bonjour». PASSO 1: o acento agudo, «é», dá um «ê» fechado: «café», «été». PASSO 2: o acento grave, «è», e o circunflexo, «ê», dão um «é» aberto: «père», «mère», «fête». PASSO 3: o circunflexo em «â», «î», «ô» e «û» quase sempre só mostra que uma letra antiga sumiu. Não muda muito o som: «hôtel», «bientôt». PASSO 4: o «ç», com cedilha, soa sempre como «s»: «garçon», «français», «ça». PASSO 5: a maioria das consoantes no fim da palavra não soa: «petit», «grand», «vous», «trop», «bon». PASSO 6: as consoantes «c», «r», «f» e «l» costumam soar no fim. Lembre da palavra inglesa «careful»: «sac», «bonjour», «chef», «animal».",
+        "comparacao": "em português, quase sempre você pronuncia o que escreve. Em francês, muitas letras do fim das palavras não soam. A primeira pergunta diante de uma palavra francesa é: o que eu ouço? E não: o que eu leio?",
+        "exemplos": [
+          {
+            "ru": "un café",
+            "pt": "um café"
+          },
+          {
+            "ru": "le père",
+            "pt": "o pai"
+          },
+          {
+            "ru": "un garçon",
+            "pt": "um menino"
+          },
+          {
+            "ru": "petit",
+            "pt": "pequeno"
+          },
+          {
+            "ru": "bonjour",
+            "pt": "bom dia"
+          }
+        ],
         "tabela": [
           {
             "padrao": "é",
@@ -50,16 +169,6 @@
             "padrao": "c, r, f, l finais",
             "som": "costumam soar",
             "exemplos": "sac, bonjour, chef, animal"
-          },
-          {
-            "padrao": "liaison",
-            "som": "«s» soa como «z»",
-            "exemplos": "les amis, vous avez, ils ont"
-          },
-          {
-            "padrao": "elisão",
-            "som": "apóstrofo",
-            "exemplos": "j'aime, l'ami, c'est, d'eau"
           }
         ],
         "erros": [
@@ -71,10 +180,65 @@
           {
             "errado": "«garcon» (sem cedilha)",
             "certo": "garçon",
-            "motivo": "O «ç» soa como «s»."
+            "motivo": "O «ç» soa como «s»; sem cedilha, o «c» soaria «k»."
           },
           {
-            "errado": "«les amis» sem ligação",
+            "errado": "dizer «café» com a última sílaba aberta",
+            "certo": "kafé (ê fechado)",
+            "motivo": "O acento agudo dá um «ê» fechado."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Ligação e elisão: as palavras se juntam",
+        "explicacao": "Ouça primeiro: «les amis», «vous avez», «j'aime», «l'ami». PASSO 1: a ligação, em francês «liaison», acontece quando a palavra seguinte começa com vogal. A consoante final, que era muda, passa a soar, ligada à vogal. PASSO 2: o «s» da ligação soa como «z». «Les amis» soa «lê-zami». «Vous avez» soa «vu-zavê». PASSO 3: a elisão corta a vogal final de palavras curtas diante de vogal. No lugar dela, escrevemos um apóstrofo. «Je» mais «aime» vira «j'aime». «Le» mais «ami» vira «l'ami». «Ce» mais «est» vira «c'est». PASSO 4: fale a frase como uma onda contínua, sem pausas entre as palavras. «J'aime le café» soa quase como uma palavra só.",
+        "comparacao": "o português também junta palavras: «de amigo» soa «dami-go». Em francês isso é regra obrigatória: a elisão aparece até na escrita, com o apóstrofo.",
+        "exemplos": [
+          {
+            "ru": "les amis",
+            "pt": "os amigos"
+          },
+          {
+            "ru": "vous avez",
+            "pt": "vocês têm"
+          },
+          {
+            "ru": "J'aime le café.",
+            "pt": "Eu gosto de café."
+          },
+          {
+            "ru": "C'est bon !",
+            "pt": "É bom!"
+          }
+        ],
+        "tabela": [
+          {
+            "padrao": "liaison",
+            "som": "«s» soa como «z»",
+            "exemplos": "les amis, vous avez, ils ont"
+          },
+          {
+            "padrao": "elisão je",
+            "som": "je + vogal = j'",
+            "exemplos": "j'aime, j'ai"
+          },
+          {
+            "padrao": "elisão le",
+            "som": "le + vogal = l'",
+            "exemplos": "l'ami, l'hôtel"
+          },
+          {
+            "padrao": "elisão ce",
+            "som": "ce + est = c'est",
+            "exemplos": "c'est bon, c'est un café"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "«les amis» sem ligação (lê-ami)",
             "certo": "lê-zami",
             "motivo": "O «s» liga à vogal e soa como «z»."
           },
@@ -82,60 +246,127 @@
             "errado": "«je aime»",
             "certo": "j'aime",
             "motivo": "Diante de vogal, «je» vira «j'»."
+          },
+          {
+            "errado": "«le ami»",
+            "certo": "l'ami",
+            "motivo": "Diante de vogal, «le» vira «l'»."
           }
         ],
         "tag": "Pronúncia"
       },
       {
-        "tipo": "palavras",
+        "tipo": "exercicios",
         "min": 5,
         "itens": [
           {
-            "ru": "café",
-            "translit": "kafé",
-            "pt": "café",
-            "en": "",
-            "audio": "café"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "un café",
+            "opcoes": [
+              "un café",
+              "du café",
+              "le café"
+            ],
+            "gabarito": "un café",
+            "explicacao": "Ouça o início: «un» tem a nasal «ẽ». «Du» tem o «ü» e «le» tem o «e» fraco.",
+            "id": "fr-001-e01"
           },
           {
-            "ru": "garçon",
-            "translit": "garsõ",
-            "pt": "garçom, menino",
-            "en": "",
-            "audio": "garçon"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "garçon",
+            "opcoes": [
+              "garçon",
+              "bonjour",
+              "café"
+            ],
+            "gabarito": "garçon",
+            "explicacao": "Ouça o «s» do «ç» e a nasal «õ» final.",
+            "id": "fr-001-e02"
           },
           {
-            "ru": "Ça va ?",
-            "translit": "sa va",
-            "pt": "tudo bem?",
-            "en": "",
-            "audio": "Ça va ?"
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Bonne journée",
+            "opcoes": [
+              "Bonne journée",
+              "Bonjour",
+              "Bonsoir"
+            ],
+            "gabarito": "Bonne journée",
+            "explicacao": "A expressão tem duas partes: «bonne» e «journée».",
+            "id": "fr-001-e03"
           },
           {
-            "ru": "Ça va bien.",
-            "translit": "sa va biẽ",
-            "pt": "vou bem",
-            "en": "",
-            "audio": "Ça va bien."
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "un café",
+            "respostaEsperada": "un café",
+            "explicacao": "Escreva: un café. O acento agudo está no «e» final.",
+            "id": "fr-001-e04"
           },
           {
-            "ru": "Et toi ?",
-            "translit": "é tuá",
-            "pt": "e você? (informal)",
-            "en": "",
-            "audio": "Et toi ?"
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra tem o som de um «ê» fechado?",
+            "opcoes": [
+              "é",
+              "è",
+              "ê"
+            ],
+            "gabarito": "é",
+            "explicacao": "O acento agudo dá o «ê» fechado, como em «café».",
+            "id": "fr-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Em «petit», o que acontece com o «t» final?",
+            "opcoes": [
+              "Não se pronuncia",
+              "Soa forte",
+              "Soa como «z»"
+            ],
+            "gabarito": "Não se pronuncia",
+            "explicacao": "A maioria das consoantes finais é muda: «peti».",
+            "id": "fr-001-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ café, s'il vous plaît. (um)",
+            "opcoes": [
+              "Un",
+              "Au",
+              "Ça"
+            ],
+            "gabarito": "Un",
+            "explicacao": "«Un café» é «um café».",
+            "id": "fr-001-e07"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Um café, por favor.»",
+            "opcoes": [
+              "Un",
+              "café,",
+              "s'il",
+              "vous",
+              "plaît"
+            ],
+            "gabarito": "Un café, s'il vous plaît.",
+            "explicacao": "É o pedido padrão em qualquer café da França.",
+            "id": "fr-001-e08"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Leia em voz alta, com ligação: «Bonjour ! Ça va ? — Ça va bien, merci. Et toi ?» Depois leia: «Les amis ont un café.»"
+        "min": 3,
+        "enunciado": "Represente o diálogo «Au café» em voz alta, fazendo as duas vozes. Atenção: «un café» (ẽ kafé), «s'il vous plaît» e «c'est très bon» ligados, sem pausas."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Diga em voz alta: tu, rue, bon, deux, pain. Qual é o som de cada um?"
+        "min": 3,
+        "enunciado": "Diga em voz alta: tu, rue, bon, deux, pain. Qual é o som de cada um? Qual deles tem a vogal nasal «ẽ»?"
       }
     ]
   },

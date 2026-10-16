@@ -9,7 +9,7 @@
   "aula": {
     "numero": 2,
     "titulo": "Quem sou eu: o verbo to be",
-    "objetivo": "Dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas) e usar as contrações.",
+    "objetivo": "Ouvir e entender apresentações simples e dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas), usando as contrações.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,55 +20,65 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 6,
-        "titulo": "Descubra você mesmo",
-        "explicacao": "PASSO 1: Observe as três colunas: afirmativa contraída, negativa e pergunta com resposta curta. PASSO 2: Olhe a posição do verbo (am / is / are) quando a afirmação vira pergunta: ele salta para antes da pessoa. PASSO 3: Olhe as respostas curtas afirmativas (Yes, I am / Yes, he is / Yes, it is): o verbo não se contrai no final. Nunca diga «Yes, I'm» nem «Yes, it's».",
-        "tabela": [
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "Late again! / Atrasados de novo!",
+        "contexto": "Ben chega atrasado ao trabalho e conversa com Kate. Ouça primeiro, depois repare em todas as vezes que aparece «not».",
+        "linhas": [
           {
-            "afirmativa": "I'm a manager.",
-            "negativa": "I'm not an engineer.",
-            "resposta": "Are you ready? — Yes, I am. / No, I'm not."
+            "personagem": "Kate",
+            "ru": "— Good morning, Ben! You're here!",
+            "pt": "— Bom dia, Ben! Você chegou!",
+            "audio": "Good morning, Ben! You're here!"
           },
           {
-            "afirmativa": "He's from São Paulo.",
-            "negativa": "He isn't from Rio.",
-            "resposta": "Is he here on business? — Yes, he is. / No, he isn't."
+            "personagem": "Ben",
+            "ru": "— Good morning, Kate. Sorry, I'm late.",
+            "pt": "— Bom dia, Kate. Desculpe, estou atrasado.",
+            "audio": "Good morning, Kate. Sorry, I'm late."
           },
           {
-            "afirmativa": "She's an executive.",
-            "negativa": "She isn't a director.",
-            "resposta": "Is she at the hotel? — Yes, she is."
+            "personagem": "Kate",
+            "ru": "— It's okay. I'm late, too.",
+            "pt": "— Tudo bem. Eu também estou atrasada.",
+            "audio": "It's okay. I'm late, too."
           },
           {
-            "afirmativa": "It's cold outside.",
-            "negativa": "It isn't raining.",
-            "resposta": "Is it free? — Yes, it is. / No, it isn't."
+            "personagem": "Ben",
+            "ru": "— I'm not happy. I'm tired and hungry.",
+            "pt": "— Eu não estou feliz. Estou cansado e com fome.",
+            "audio": "I'm not happy. I'm tired and hungry."
           },
           {
-            "afirmativa": "We're in Toronto.",
-            "negativa": "We aren't late.",
-            "resposta": "Are we in Room 2? — Yes, we are."
+            "personagem": "Kate",
+            "ru": "— I'm not tired. I'm hungry, too!",
+            "pt": "— Eu não estou cansada. Também estou com fome!",
+            "audio": "I'm not tired. I'm hungry, too!"
           },
           {
-            "afirmativa": "They're from Canada.",
-            "negativa": "They aren't hungry.",
-            "resposta": "Are they developers? — No, they aren't."
+            "personagem": "Ben",
+            "ru": "— We are hungry. We are not ready!",
+            "pt": "— Estamos com fome. Não estamos prontos!",
+            "audio": "We are hungry. We are not ready!"
+          },
+          {
+            "personagem": "Kate",
+            "ru": "— Tom is here. He's not tired. He's ready.",
+            "pt": "— O Tom está aqui. Ele não está cansado. Está pronto.",
+            "audio": "Tom is here. He's not tired. He's ready."
+          },
+          {
+            "personagem": "Ben",
+            "ru": "— Tom is happy. We are not happy!",
+            "pt": "— O Tom está feliz. Nós não estamos felizes!",
+            "audio": "Tom is happy. We are not happy!"
           }
-        ],
-        "tag": "Descubra"
+        ]
       },
       {
         "tipo": "palavras",
-        "min": 3,
+        "min": 4,
         "itens": [
-          {
-            "ru": "happy",
-            "translit": "rrépi",
-            "pt": "feliz",
-            "en": "",
-            "audio": "happy"
-          },
           {
             "ru": "tired",
             "translit": "táierd",
@@ -91,13 +101,6 @@
             "audio": "busy"
           },
           {
-            "ru": "ready",
-            "translit": "rédi",
-            "pt": "pronto",
-            "en": "",
-            "audio": "ready"
-          },
-          {
             "ru": "late",
             "translit": "lêit",
             "pt": "atrasado, tarde",
@@ -112,6 +115,27 @@
             "audio": "here"
           },
           {
+            "ru": "cold",
+            "translit": "côld",
+            "pt": "frio",
+            "en": "",
+            "audio": "cold"
+          },
+          {
+            "ru": "hot",
+            "translit": "hót",
+            "pt": "quente, calor",
+            "en": "",
+            "audio": "hot"
+          },
+          {
+            "ru": "okay",
+            "translit": "oukêi",
+            "pt": "tudo bem",
+            "en": "",
+            "audio": "okay"
+          },
+          {
             "ru": "not",
             "translit": "nót",
             "pt": "não (com verbos)",
@@ -122,10 +146,123 @@
       },
       {
         "tipo": "gramatica",
-        "min": 8,
+        "min": 7,
         "titulo": "Dizer «não»: am not, is not, are not",
-        "explicacao": "PASSO 1: para negar, coloque «not» depois do «to be»: «I am not tired», «She is not here», «They are not ready». PASSO 2: na fala e na escrita informal use a contração. Há duas maneiras para «he», «she», «it», «you», «we» e «they»: «He is not» → «He isn't» ou «He's not»; «You are not» → «You aren't» ou «You're not». As duas estão certas. PASSO 3: com «I» só se usa uma contração: «I'm not». A forma «amn't» não faz parte do inglês padrão. PASSO 4: o «not» fica sempre depois do verbo. Não diga «He not is happy». PASSO 5: «no» (não, como resposta) e «not» (negação do verbo) são palavras diferentes: «No, I'm not tired.»",
-        "comparacao": "em português a negação vem ANTES do verbo («não estou cansado»). Em inglês, com «to be», ela vem DEPOIS («I am not tired»).",
+        "explicacao": "PASSO 1: para dizer «não», coloque «not» depois do «to be». Ouça: «I am not tired». «She is not here». «They are not ready». PASSO 2: em português, a negação vem antes do verbo: «não estou cansado». Em inglês, vem depois do verbo: «I am not tired». PASSO 3: o «not» fica sempre depois do verbo. Não diga «He not is happy». PASSO 4: não confunda «no» e «not». «No» é a resposta: não. «Not» nega o verbo. Diga assim: «No, I am not tired». PASSO 5: repare no diálogo. O Ben disse «we are not ready». Foi o «not» depois de «are».",
+        "comparacao": "em português a negação vem ANTES do verbo, como em «não estou cansado». Em inglês, com «to be», ela vem DEPOIS, como em «I am not tired».",
+        "exemplos": [
+          {
+            "ru": "I am not tired.",
+            "pt": "Eu não estou cansado."
+          },
+          {
+            "ru": "She is not here.",
+            "pt": "Ela não está aqui."
+          },
+          {
+            "ru": "They are not ready.",
+            "pt": "Eles não estão prontos."
+          },
+          {
+            "ru": "He is not happy.",
+            "pt": "Ele não está feliz."
+          },
+          {
+            "ru": "We are not late.",
+            "pt": "Nós não estamos atrasados."
+          },
+          {
+            "ru": "No, I am not tired.",
+            "pt": "Não, eu não estou cansado."
+          }
+        ],
+        "tabela": [
+          {
+            "afirmativa": "I am happy.",
+            "negativa": "I am not happy.",
+            "pt": "Eu não estou feliz."
+          },
+          {
+            "afirmativa": "You are busy.",
+            "negativa": "You are not busy.",
+            "pt": "Você não está ocupado."
+          },
+          {
+            "afirmativa": "He is late.",
+            "negativa": "He is not late.",
+            "pt": "Ele não está atrasado."
+          },
+          {
+            "afirmativa": "She is ready.",
+            "negativa": "She is not ready.",
+            "pt": "Ela não está pronta."
+          },
+          {
+            "afirmativa": "We are hungry.",
+            "negativa": "We are not hungry.",
+            "pt": "Nós não estamos com fome."
+          },
+          {
+            "afirmativa": "They are here.",
+            "negativa": "They are not here.",
+            "pt": "Eles não estão aqui."
+          }
+        ],
+        "erros": [
+          {
+            "errado": "He not is happy.",
+            "certo": "He is not happy.",
+            "motivo": "«not» vem depois do «to be»."
+          },
+          {
+            "errado": "She no is here.",
+            "certo": "She is not here.",
+            "motivo": "Use «not», e não «no», para negar o verbo."
+          },
+          {
+            "errado": "I no am tired.",
+            "certo": "I am not tired.",
+            "motivo": "A negação vem depois do verbo."
+          }
+        ],
+        "tag": "Verbos"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Contrações da negativa, o «it» e estar com fome",
+        "explicacao": "PASSO 1: na fala, quase ninguém diz «is not». Diz «isn't», que soa «ízent». E «are not» vira «aren't», que soa «árent». PASSO 2: com «he», «she», «it», «you», «we» e «they» há duas formas certas. «He isn't» ou «He's not». «You aren't» ou «You're not». Escolha a que sair mais natural. PASSO 3: com «I» há uma forma só: «I'm not». A forma «amn't» não existe no inglês padrão. PASSO 4: o «it» também serve para falar do tempo. Em português dizemos «está frio», sem sujeito. Em inglês diga «It's cold». Nunca «is cold». PASSO 5: para fome, frio, calor e cansaço, use o «to be». Em português dizemos «estou com fome». Em inglês, diga «I'm hungry». Nunca use «have». Não existe «I have hungry».",
+        "comparacao": "em português dizemos «estou com fome» e «está frio» sem sujeito. Em inglês, fome, frio, calor e cansaço usam o «to be», e o sujeito «it» aparece sempre na frase do tempo.",
+        "exemplos": [
+          {
+            "ru": "He isn't late.",
+            "pt": "Ele não está atrasado."
+          },
+          {
+            "ru": "You aren't busy.",
+            "pt": "Você não está ocupado."
+          },
+          {
+            "ru": "She's not ready.",
+            "pt": "Ela não está pronta."
+          },
+          {
+            "ru": "I'm not tired.",
+            "pt": "Eu não estou cansado."
+          },
+          {
+            "ru": "It's cold.",
+            "pt": "Está frio."
+          },
+          {
+            "ru": "It's hot.",
+            "pt": "Está calor."
+          },
+          {
+            "ru": "I'm hungry.",
+            "pt": "Estou com fome."
+          }
+        ],
         "tabela": [
           {
             "afirmativa": "I am happy.",
@@ -160,73 +297,33 @@
         ],
         "erros": [
           {
-            "errado": "He not is happy.",
-            "certo": "He is not happy. / He isn't happy.",
-            "motivo": "«not» vem depois do «to be»."
-          },
-          {
             "errado": "I amn't tired.",
             "certo": "I'm not tired.",
             "motivo": "Com «I», use «I'm not»."
           },
           {
-            "errado": "She no is here.",
-            "certo": "She isn't here.",
-            "motivo": "Use «not» (ou «n't»), não «no», para negar o verbo."
+            "errado": "Is cold today.",
+            "certo": "It's cold today.",
+            "motivo": "O sujeito «it» é obrigatório na frase do tempo."
+          },
+          {
+            "errado": "I have hungry.",
+            "certo": "I'm hungry.",
+            "motivo": "Fome usa «to be», nunca «have»."
           }
         ],
         "tag": "Verbos"
       },
       {
-        "tipo": "gramatica",
-        "min": 7,
-        "titulo": "A regra completa de a, an e the",
-        "explicacao": "PASSO 1: Veja como decidir em dois segundos qual artigo usar (ou quando deixar sem artigo). O som decide, não a letra: «a university», «an hour». PASSO 2: As 3 formas de to be no presente:am (só com I), is (com 1 pessoa ou coisa: he, she, it), are (com you e plurais: we, they). Na fala, contraia sempre: I'm, you're, he's, she's, it's, we're, they're. PASSO 3: Artigo indefinido (a vs. an): A escolha depende do som inicial da palavra seguinte: a antes de som de consoante (a manager, a university — som de iu); an antes de som de vogal (an engineer, an hour — o h é mudo). PASSO 4: Artigo definido (the) vs. Zero artigo: Use the para coisas específicas (the Wi-Fi password in this room). Não use the para falar de coisas em geral (Coffee is great, I love music) nem antes de nomes de pessoas, cidades e da maioria dos países (Brazil, Canada, exceto plurais/uniões como the US, the UK).",
-        "tabela": [
-          {
-            "regra": "a + som de consoante",
-            "exemplo": "a laptop, a hotel, a university, a European country",
-            "motivo": "university e European começam com o som consonantal iu, por isso exigem a."
-          },
-          {
-            "regra": "an + som de vogal",
-            "exemplo": "an office, an idea, an umbrella, an hour, an MBA",
-            "motivo": "hour tem h mudo (áu-ãr) e a sigla MBA começa com som de é (êm-bi-êi)."
-          },
-          {
-            "regra": "the (específico / único)",
-            "exemplo": "The meeting is at ten. Close the door, please.",
-            "motivo": "Tanto quem fala quanto quem ouve sabem exatamente de qual reunião e de qual porta se trata."
-          },
-          {
-            "regra": "Zero artigo (geral e próprio)",
-            "exemplo": "I like coffee. Life is good. She works in Brazil, at home.",
-            "motivo": "Coisas em geral (coffee, life), países no singular (Brazil) e expressões fixas (at home, at work, go to bed) não levam the."
-          }
-        ],
-        "erros": [
-          {
-            "errado": "an university / a hour",
-            "certo": "a university / an hour",
-            "motivo": "a/an seguem o som inicial (iu é consoante; o h de hour é mudo)."
-          },
-          {
-            "errado": "I live in the Brazil.",
-            "certo": "I live in Brazil.",
-            "motivo": "Países no singular não levam o artigo the."
-          }
-        ],
-        "tag": "Artigos"
-      },
-      {
         "tipo": "producao",
-        "min": 3,
-        "enunciado": "Responda em voz alta, com frases inteiras: Você está cansado? Você está com fome? Você está atrasado? Use «I'm» ou «I'm not»."
+        "min": 4,
+        "enunciado": "Responda em voz alta, com frases inteiras: Você está cansado? Você está com fome? Você está atrasado? Use «I'm» ou «I'm not». Depois diga se hoje está frio ou calor onde você está, começando com «It's».",
+        "exemplo": "I'm not tired. I'm hungry. I'm not late. It's hot."
       },
       {
         "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma."
+        "min": 4,
+        "enunciado": "Escreva as 7 formas de «to be» (I, you, he, she, it, we, they) e a contração de cada uma. Depois diga em voz alta a diferença entre «a teacher» e «an engineer»."
       }
     ]
   },

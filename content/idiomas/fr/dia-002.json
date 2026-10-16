@@ -20,80 +20,6 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 15,
-        "titulo": "Os sons que mais confundem os brasileiros",
-        "explicacao": "PASSO 1: o «u» francês (ü). Arredonde os lábios como para dizer «u», mas coloque a língua na posição do «i», bem à frente. Em «tu», «rue», «salut», o som não é o «u» de «tudo» (esse é o «ou» francês) nem um «i». PASSO 2: as vogais nasais. Em «an/en» (ã), «on» (õ) e «in/ain/ein» (ẽ), o ar sai pelo nariz e o «n» não se pronuncia como consoante. Não feche a boca com «m» ou «n» no final: «bon» é «bõ», sem «m». PASSO 3: o «r» francês é na garganta, e o brasileiro já tem um som próximo no «r» de «rato». Não use o «r» de «caro» (de uma batida de língua). PASSO 4: «eu» e «œu» (ö): lábios de «ô» com a língua de «ê»: «deux», «peu», «sœur». PASSO 5: o «e» sem acento no fim da sílaba é fraco e às vezes some: «je», «le», «petite». O «h» nunca se pronuncia: «hôtel» soa «ôtél».",
-        "comparacao": "o português tem vogais nasais («bom», «lã», «sim»), então as nasais francesas são mais fáceis para você do que para um inglês. Mas o português não tem o «ü» nem o «ö», e costuma fechar a nasal com um «m» ou «n» que o francês não tem.",
-        "tabela": [
-          {
-            "som": "«u» francês (ü)",
-            "como": "lábios de «u», língua de «i»",
-            "exemplos": "tu, rue, salut, une",
-            "erro": "dizer «tu» como em português"
-          },
-          {
-            "som": "nasal «an/en»",
-            "como": "ã, sem «n» no final",
-            "exemplos": "enfant, France, dans",
-            "erro": "dizer «an-n»"
-          },
-          {
-            "som": "nasal «on»",
-            "como": "õ, sem «m» no final",
-            "exemplos": "bon, nom, bonjour",
-            "erro": "dizer «bom»"
-          },
-          {
-            "som": "nasal «in/ain»",
-            "como": "ẽ, sem «n» no final",
-            "exemplos": "pain, vin, matin",
-            "erro": "dizer «pain» como «pai-n»"
-          },
-          {
-            "som": "«eu» (ö)",
-            "como": "lábios de «ô», língua de «ê»",
-            "exemplos": "deux, peu, sœur",
-            "erro": "dizer «deu» ou «du»"
-          },
-          {
-            "som": "«r» gutural",
-            "como": "na garganta, como o «r» de «rato»",
-            "exemplos": "rue, merci, rouge",
-            "erro": "r de uma batida de língua"
-          },
-          {
-            "som": "«h» mudo",
-            "como": "não se pronuncia",
-            "exemplos": "hôtel, homme, heure",
-            "erro": "dizer o «h»"
-          }
-        ],
-        "erros": [
-          {
-            "errado": "dizer «bom» para bon",
-            "certo": "bõ (nasal, sem «m»)",
-            "motivo": "A vogal é nasal, mas o «n» não vira consoante."
-          },
-          {
-            "errado": "dizer «tu» como em «tudo» para tu",
-            "certo": "tü (u francês)",
-            "motivo": "Língua à frente, lábios arredondados."
-          },
-          {
-            "errado": "dizer «hôtel» com h aspirado",
-            "certo": "ôtél",
-            "motivo": "O «h» francês não se pronuncia."
-          },
-          {
-            "errado": "dizer «deu» para deux",
-            "certo": "dö",
-            "motivo": "Lábios de «ô», língua de «ê»."
-          }
-        ],
-        "tag": "Pronúncia"
-      },
-      {
         "tipo": "palavras",
         "min": 5,
         "itens": [
@@ -112,11 +38,11 @@
             "audio": "rue"
           },
           {
-            "ru": "bon",
-            "translit": "bõ",
-            "pt": "bom",
+            "ru": "salut",
+            "translit": "salü",
+            "pt": "oi, tchau (informal)",
             "en": "",
-            "audio": "bon"
+            "audio": "salut"
           },
           {
             "ru": "deux",
@@ -126,23 +52,227 @@
             "audio": "deux"
           },
           {
+            "ru": "peu",
+            "translit": "pö",
+            "pt": "pouco",
+            "en": "",
+            "audio": "peu"
+          },
+          {
+            "ru": "bon",
+            "translit": "bõ",
+            "pt": "bom",
+            "en": "",
+            "audio": "bon"
+          },
+          {
+            "ru": "enfant",
+            "translit": "ãfã",
+            "pt": "criança",
+            "en": "",
+            "audio": "enfant"
+          },
+          {
             "ru": "pain",
             "translit": "pẽ",
             "pt": "pão",
             "en": "",
             "audio": "pain"
+          },
+          {
+            "ru": "vin",
+            "translit": "vẽ",
+            "pt": "vinho",
+            "en": "",
+            "audio": "vin"
+          },
+          {
+            "ru": "hôtel",
+            "translit": "ôtél",
+            "pt": "hotel",
+            "en": "",
+            "audio": "hôtel"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 8,
+        "titulo": "Três sons que o português não tem: «u», «eu» e «r»",
+        "explicacao": "Ouça primeiro: «tu», «rue», «deux», «merci». PASSO 1: o «u» francês. Diga «i» e deixe a língua parada, bem na frente da boca. Agora arredonde os lábios, como quem vai assobiar. Sai o «u» francês, que aqui escrevemos «ü». Ele está em «tu» (tü), «rue» (rü) e «salut» (salü). PASSO 2: cuidado. O «u» francês não é o «u» de «tudo». O som do «u» de «tudo» se escreve «ou» em francês: «vous» (vu), «bonjour» (bõjúr). PASSO 3: o som «eu». Diga «ê» e arredonde os lábios, como para dizer «ô». Sai o som de «deux» (dö), «peu» (pö) e «sœur» (sör). PASSO 4: o «r» francês fica na garganta. Ele é parecido com o «r» de «rato» em muitos sotaques do Brasil. Não use o «r» de uma batida só, como em «caro». Treine: «rue», «merci», «rouge».",
+        "comparacao": "o português não tem o «ü» nem o «ö». Por isso, o brasileiro tende a trocar o «u» francês pelo «u» de «tudo», e o «eu» por «e» ou «u». O «r» é o mais fácil: se você diz «rato» com o «r» de garganta, já está perto.",
+        "exemplos": [
+          {
+            "ru": "tu",
+            "pt": "você (informal)"
+          },
+          {
+            "ru": "rue",
+            "pt": "rua"
+          },
+          {
+            "ru": "deux",
+            "pt": "dois"
+          },
+          {
+            "ru": "Merci !",
+            "pt": "Obrigado!"
+          },
+          {
+            "ru": "Salut !",
+            "pt": "Oi!"
+          }
+        ],
+        "tabela": [
+          {
+            "som": "«u» francês (ü)",
+            "como": "lábios de «u», língua de «i»",
+            "exemplos": "tu, rue, salut, une",
+            "erro": "dizer o «u» de «tudo»"
+          },
+          {
+            "som": "«ou»",
+            "como": "igual ao «u» do português",
+            "exemplos": "vous, bonjour, rouge",
+            "erro": "dizer «ü»"
+          },
+          {
+            "som": "«eu» (ö)",
+            "como": "lábios de «ô», língua de «ê»",
+            "exemplos": "deux, peu, sœur",
+            "erro": "dizer «deu» ou «du»"
+          },
+          {
+            "som": "«r» gutural",
+            "como": "na garganta, como o «r» de «rato»",
+            "exemplos": "rue, merci, rouge",
+            "erro": "r de uma batida de língua"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "dizer «tu» como em «tudo»",
+            "certo": "tü (u francês)",
+            "motivo": "Língua à frente, lábios arredondados."
+          },
+          {
+            "errado": "dizer «deu» para deux",
+            "certo": "dö",
+            "motivo": "Lábios de «ô», língua de «ê»."
+          },
+          {
+            "errado": "dizer «caro» para o r de «rue»",
+            "certo": "r de garganta",
+            "motivo": "O «r» francês não é de uma batida de língua."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 7,
+        "titulo": "Vogais nasais, «h» mudo e «e» fraco",
+        "explicacao": "Ouça primeiro: «bon», «pain», «enfant», «hôtel». PASSO 1: as vogais nasais. O ar sai pelo nariz, e a língua não toca em nada. O português também tem isso: «bom», «lã», «sim». PASSO 2: em francês há três sons nasais principais. «on» soa «õ»: «bon», «bonjour». «an» e «en» soam «ã»: «enfant», «France». «in», «ain» e «un» soam «ẽ»: «pain», «vin», «matin». PASSO 3: depois da vogal nasal, o «n» ou o «m» não se pronuncia como consoante. Diga «bõ», e não «bom» nem «bon-e». PASSO 4: o «h» nunca soa. «Hôtel» soa «ôtél». PASSO 5: o «e» sem acento no fim de uma sílaba é fraco, quase um sopro, e às vezes some: «je», «le», «petite».",
+        "comparacao": "o português tem vogais nasais, então as nasais francesas são mais fáceis para você do que para um inglês. O erro típico é fechar a nasal com um «m» ou um «n» que o francês não tem.",
+        "exemplos": [
+          {
+            "ru": "bon",
+            "pt": "bom"
+          },
+          {
+            "ru": "un pain",
+            "pt": "um pão"
+          },
+          {
+            "ru": "un bon vin",
+            "pt": "um bom vinho"
+          },
+          {
+            "ru": "un hôtel",
+            "pt": "um hotel"
+          }
+        ],
+        "tabela": [
+          {
+            "som": "nasal «an/en»",
+            "como": "ã, sem «n» no final",
+            "exemplos": "enfant, France, dans",
+            "erro": "dizer «an-n»"
+          },
+          {
+            "som": "nasal «on»",
+            "como": "õ, sem «m» no final",
+            "exemplos": "bon, nom, bonjour",
+            "erro": "dizer «bom»"
+          },
+          {
+            "som": "nasal «in/ain/un»",
+            "como": "ẽ, sem «n» no final",
+            "exemplos": "pain, vin, matin, un",
+            "erro": "dizer «pai-n»"
+          },
+          {
+            "som": "«h» mudo",
+            "como": "não se pronuncia",
+            "exemplos": "hôtel, homme, heure",
+            "erro": "dizer o «h»"
+          },
+          {
+            "som": "«e» fraco",
+            "como": "sopro curto, às vezes some",
+            "exemplos": "je, le, petite",
+            "erro": "dizer «jé» ou «lé» com força"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "dizer «bom» para bon",
+            "certo": "bõ (nasal, sem «m»)",
+            "motivo": "A vogal é nasal, mas o «n» não vira consoante."
+          },
+          {
+            "errado": "dizer «hôtel» com h aspirado",
+            "certo": "ôtél",
+            "motivo": "O «h» francês não se pronuncia."
+          },
+          {
+            "errado": "dizer «pain» como «pai-n»",
+            "certo": "pẽ",
+            "motivo": "As três letras «ain» formam uma só vogal nasal."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "texto",
+        "min": 4,
+        "titulo": "À la boulangerie / Na padaria",
+        "ru": "C'est le matin, à Paris. Lucas arrive à la boulangerie. La vendeuse dit : « Bonjour, monsieur ! » Lucas répond : « Bonjour, madame ! Un pain, s'il vous plaît. » La vendeuse dit : « Voilà ! » Lucas dit : « Merci. » La vendeuse dit : « De rien. Au revoir ! » Lucas dit : « Au revoir ! » Il est content : le pain est bon !",
+        "pt": "É de manhã, em Paris. Lucas chega à padaria. A vendedora diz: «Bom dia, senhor!» Lucas responde: «Bom dia, senhora! Um pão, por favor.» A vendedora diz: «Aqui está!» Lucas diz: «Obrigado.» A vendedora diz: «De nada. Tchau!» Lucas diz: «Tchau!» Ele está contente: o pão é bom!",
+        "perguntas": [
+          {
+            "pergunta": "Onde Lucas chega, e em que momento do dia?",
+            "resposta": "Na padaria («boulangerie»), de manhã, em Paris."
+          },
+          {
+            "pergunta": "O que Lucas pede?",
+            "resposta": "Um pão: «un pain, s'il vous plaît»."
+          },
+          {
+            "pergunta": "O que a vendedora responde quando Lucas diz «merci»?",
+            "resposta": "«De rien» (de nada)."
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Diga cinco vezes, devagar e depois mais rápido: «Un bon pain. Deux rues. Tu as du pain.»"
+        "min": 3,
+        "enunciado": "Diga cinco vezes, devagar e depois mais rápido: «Un bon pain. Deux rues. Tu as du pain.» Depois repita, como Lucas: «Bonjour, madame ! Un pain, s'il vous plaît. Merci. Au revoir !»"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Soletre o nome da sua cidade em francês e diga «bonjour», «merci» e «au revoir» sem olhar."
+        "min": 3,
+        "enunciado": "Sem olhar, diga «bonjour», «bonsoir», «merci» e «au revoir». Depois soletre o nome da sua cidade em francês."
       }
     ]
   },

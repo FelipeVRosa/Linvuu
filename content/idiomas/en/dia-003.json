@@ -9,7 +9,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Sons, alfabeto e primeiras palavras",
-    "objetivo": "Soletrar em inglês, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e fazer as primeiras saudações.",
+    "objetivo": "Ouvir e entender as primeiras conversas em inglês, soletrar, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e cumprimentar, agradecer e pedir licença.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
@@ -20,66 +20,51 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 15,
-        "titulo": "Por que a escrita do inglês engana",
-        "explicacao": "PASSO 1: em inglês, a mesma letra pode ter sons diferentes, e o mesmo som pode ter escritas diferentes. Não adianta ler como se lê em português. PASSO 2: existem padrões que ajudam. O mais útil: vogal + consoante + «e» no fim. O «e» final não se pronuncia, mas faz a vogal «dizer o seu nome»: cap → cape, hop → hope, bit → bite. PASSO 3: duas vogais juntas costumam dar um som longo: «ee» e «ea» (meet, eat), «ai» e «ay» (rain, day), «oa» (boat). PASSO 4: o final «-tion» soa «shan»: nation, information. PASSO 5: há letras escritas que não soam: knife (o k não soa), write (o w não soa), hour (o h não soa), listen (o t não soa). PASSO 6: cada palavra tem UMA sílaba forte, e ela não vem marcada na escrita. Por isso, aprenda a palavra ouvindo-a, não só lendo-a. Em dúvida, use um dicionário com áudio.",
-        "comparacao": "em português quase sempre você escreve o que fala. Em inglês a ortografia guarda a história da palavra, e por isso o áudio vem antes da leitura.",
-        "tabela": [
-          {
-            "padrao": "vogal + consoante + e final",
-            "som": "a vogal diz o próprio nome",
-            "exemplos": "cap → cape, hop → hope, bit → bite"
-          },
-          {
-            "padrao": "ee, ea",
-            "som": "i longo",
-            "exemplos": "meet, see, eat"
-          },
-          {
-            "padrao": "ai, ay",
-            "som": "êi",
-            "exemplos": "rain, day"
-          },
-          {
-            "padrao": "oa",
-            "som": "ôu",
-            "exemplos": "boat, coat"
-          },
-          {
-            "padrao": "-tion",
-            "som": "«shan»",
-            "exemplos": "nation, information"
-          },
-          {
-            "padrao": "letra que não soa",
-            "som": "silêncio",
-            "exemplos": "knife, write, hour, listen"
-          }
-        ],
-        "erros": [
-          {
-            "errado": "ler «make» como «mêiki»",
-            "certo": "make /meɪk/",
-            "motivo": "O e final não soa; ele só muda a vogal."
-          },
-          {
-            "errado": "ler «knife» com o k",
-            "certo": "knife /naɪf/",
-            "motivo": "O k inicial antes de n não soa."
-          },
-          {
-            "errado": "ler «nation» como «nêition»",
-            "certo": "nation /ˈneɪʃən/",
-            "motivo": "-tion soa «shan»."
-          }
-        ],
-        "tag": "Pronúncia"
-      },
-      {
         "tipo": "palavras",
-        "min": 6,
+        "min": 4,
         "itens": [
+          {
+            "ru": "cap",
+            "translit": "kép",
+            "pt": "boné",
+            "en": "",
+            "audio": "cap"
+          },
+          {
+            "ru": "cape",
+            "translit": "kêip",
+            "pt": "capa",
+            "en": "",
+            "audio": "cape"
+          },
+          {
+            "ru": "hop",
+            "translit": "hóp",
+            "pt": "pular",
+            "en": "",
+            "audio": "hop"
+          },
+          {
+            "ru": "hope",
+            "translit": "hôup",
+            "pt": "esperança, esperar",
+            "en": "",
+            "audio": "hope"
+          },
+          {
+            "ru": "bit",
+            "translit": "bit",
+            "pt": "pedacinho",
+            "en": "",
+            "audio": "bit"
+          },
+          {
+            "ru": "bite",
+            "translit": "báit",
+            "pt": "morder, mordida",
+            "en": "",
+            "audio": "bite"
+          },
           {
             "ru": "name",
             "translit": "nêim",
@@ -125,13 +110,329 @@
         ]
       },
       {
-        "tipo": "producao",
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Por que a escrita do inglês engana",
+        "explicacao": "PASSO 1: em português, quase sempre você lê como está escrito. Em inglês, não. A mesma letra pode ter sons diferentes. E o mesmo som pode ter escritas diferentes. PASSO 2: por isso, o áudio vem antes da leitura. Ouça a palavra, depois leia. Em dúvida, use um dicionário com áudio. PASSO 3: existe um padrão muito útil: vogal, consoante e «e» no fim. O «e» final fica mudo, mas faz a vogal dizer o próprio nome. PASSO 4: ouça: «cap» vira «cape». «Hop» vira «hope». «Bit» vira «bite». PASSO 5: lembre os nomes das letras da primeira sessão. O «a» diz «êi», o «i» diz «ai» e o «o» diz «ôu». É esse o som que a vogal ganha.",
+        "comparacao": "em português você escreve o que fala. Em inglês, a ortografia guarda a história da palavra. Por isso o áudio vem antes da leitura.",
+        "exemplos": [
+          {
+            "ru": "cap",
+            "pt": "boné"
+          },
+          {
+            "ru": "cape",
+            "pt": "capa"
+          },
+          {
+            "ru": "hop",
+            "pt": "pular"
+          },
+          {
+            "ru": "hope",
+            "pt": "esperança"
+          },
+          {
+            "ru": "bit",
+            "pt": "pedacinho"
+          },
+          {
+            "ru": "bite",
+            "pt": "morder"
+          },
+          {
+            "ru": "make",
+            "pt": "fazer"
+          }
+        ],
+        "tabela": [
+          {
+            "padrao": "vogal + consoante + e final",
+            "som": "a vogal diz o próprio nome",
+            "exemplos": "cap → cape, hop → hope, bit → bite"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "ler «make» como «mêiki»",
+            "certo": "make /meɪk/",
+            "motivo": "O e final não soa; ele só muda a vogal."
+          },
+          {
+            "errado": "ler «cape» como «kép»",
+            "certo": "cape /keɪp/",
+            "motivo": "Com o «e» final, a vogal diz o próprio nome: «êi»."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Duas vogais juntas, o final «-tion» e as letras mudas",
+        "explicacao": "PASSO 1: duas vogais juntas costumam dar um som longo. «Ee» e «ea» soam como um i longo, em «meet» e «eat». «Ai» e «ay» soam «êi», em «rain» e «day». «Oa» soa «ôu», em «boat» e «coat». PASSO 2: o final «-tion» soa «shan». Ouça: «nation» e «information». PASSO 3: algumas letras são escritas, mas não soam. Em «knife», o k não soa. Em «write», o w não soa. Em «hour», o h não soa. Em «listen», o t não soa. PASSO 4: cada palavra tem uma sílaba forte, e ela não vem marcada na escrita. Aprenda a palavra ouvindo.",
+        "exemplos": [
+          {
+            "ru": "meet",
+            "pt": "encontrar (ee = i longo)"
+          },
+          {
+            "ru": "eat",
+            "pt": "comer (ea = i longo)"
+          },
+          {
+            "ru": "rain",
+            "pt": "chuva (ai = êi)"
+          },
+          {
+            "ru": "day",
+            "pt": "dia (ay = êi)"
+          },
+          {
+            "ru": "boat",
+            "pt": "barco (oa = ôu)"
+          },
+          {
+            "ru": "nation",
+            "pt": "nação (-tion = shan)"
+          },
+          {
+            "ru": "knife",
+            "pt": "faca (k mudo)"
+          },
+          {
+            "ru": "write",
+            "pt": "escrever (w mudo)"
+          },
+          {
+            "ru": "hour",
+            "pt": "hora (h mudo)"
+          }
+        ],
+        "tabela": [
+          {
+            "padrao": "ee, ea",
+            "som": "i longo",
+            "exemplos": "meet, see, eat"
+          },
+          {
+            "padrao": "ai, ay",
+            "som": "êi",
+            "exemplos": "rain, day"
+          },
+          {
+            "padrao": "oa",
+            "som": "ôu",
+            "exemplos": "boat, coat"
+          },
+          {
+            "padrao": "-tion",
+            "som": "«shan»",
+            "exemplos": "nation, information"
+          },
+          {
+            "padrao": "letra que não soa",
+            "som": "silêncio",
+            "exemplos": "knife, write, hour, listen"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "ler «knife» com o k",
+            "certo": "knife /naɪf/",
+            "motivo": "O k inicial antes de n não soa."
+          },
+          {
+            "errado": "ler «nation» como «nêition»",
+            "certo": "nation /ˈneɪʃən/",
+            "motivo": "-tion soa «shan»."
+          },
+          {
+            "errado": "ler «hour» com o h",
+            "certo": "hour /ˈaʊər/",
+            "motivo": "O h de «hour» não soa."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "dialogo",
         "min": 4,
-        "enunciado": "Diga as palavras em pares e note a diferença: cap × cape, hop × hope, bit × bite. Depois escreva 3 palavras que você conhece em inglês e diga se o som bate com a escrita."
+        "titulo": "Name, please / Seu nome, por favor",
+        "contexto": "Mia faz o check-in num hotel e soletra o nome. Repare: «Sorry?» com a voz subindo quer dizer «Como?».",
+        "linhas": [
+          {
+            "personagem": "Receptionist",
+            "ru": "— Hello! Good morning.",
+            "pt": "— Olá! Bom dia.",
+            "audio": "Hello! Good morning."
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Good morning!",
+            "pt": "— Bom dia!",
+            "audio": "Good morning!"
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Name, please.",
+            "pt": "— Seu nome, por favor.",
+            "audio": "Name, please."
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— Mia. M-I-A.",
+            "pt": "— Mia. M-I-A.",
+            "audio": "Mia. M-I-A."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Sorry? N-I-A?",
+            "pt": "— Como? N-I-A?",
+            "audio": "Sorry? N-I-A?"
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— No, no. M-I-A.",
+            "pt": "— Não, não. M-I-A.",
+            "audio": "No, no. M-I-A."
+          },
+          {
+            "personagem": "Receptionist",
+            "ru": "— Ah, M-I-A! Thank you, Mia.",
+            "pt": "— Ah, M-I-A! Obrigado, Mia.",
+            "audio": "Ah, M-I-A! Thank you, Mia."
+          },
+          {
+            "personagem": "Mia",
+            "ru": "— You're welcome.",
+            "pt": "— De nada.",
+            "audio": "You're welcome."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 6,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "cape",
+            "opcoes": [
+              "cap",
+              "cape",
+              "cab"
+            ],
+            "gabarito": "cape",
+            "explicacao": "Ouça a vogal: ela diz «êi», longa. É o «e» final mudo que faz isso em «cape».",
+            "id": "en-001-e01"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "sheep",
+            "opcoes": [
+              "ship",
+              "sheep",
+              "chip"
+            ],
+            "gabarito": "sheep",
+            "explicacao": "Em «sheep» o i é longo, esticado. Em «ship» é curto e rápido.",
+            "id": "en-001-e02"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "bite",
+            "respostaEsperada": "bite",
+            "explicacao": "Escreva: bite. A vogal diz «ai» por causa do «e» final mudo.",
+            "id": "en-001-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Name please",
+            "respostaEsperada": "Name please",
+            "explicacao": "Escreva: name, please. «Name» tem o «e» final mudo e a vogal diz «êi».",
+            "id": "en-001-e04"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual palavra tem o «th» COM voz, como em «mother»?",
+            "opcoes": [
+              "think",
+              "this",
+              "three"
+            ],
+            "gabarito": "this",
+            "explicacao": "Em «this» a voz liga. Em «think» e «three» só sai ar.",
+            "id": "en-001-e05"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Em «rain», qual é o som das letras «ai»?",
+            "opcoes": [
+              "êi",
+              "é",
+              "ii"
+            ],
+            "gabarito": "êi",
+            "explicacao": "Duas vogais «ai» juntas soam «êi», como em «day».",
+            "id": "en-001-e06"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "hop vira ___ com o «e» final mudo.",
+            "opcoes": [
+              "hope",
+              "hoop",
+              "hap"
+            ],
+            "gabarito": "hope",
+            "explicacao": "O «e» final é mudo, mas faz a vogal dizer o próprio nome: «ôu».",
+            "id": "en-001-e07"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "O «k» não soa em ___.",
+            "opcoes": [
+              "knife",
+              "key",
+              "milk"
+            ],
+            "gabarito": "knife",
+            "explicacao": "Em «knife» o k vem antes do n e fica mudo. Em «key» e «milk» ele soa.",
+            "id": "en-001-e08"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Name, please.»",
+            "opcoes": [
+              "Name",
+              "please"
+            ],
+            "gabarito": "Name, please.",
+            "explicacao": "O pedido vem primeiro e o «please» fecha a frase.",
+            "id": "en-001-e09"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva as letras do seu primeiro nome, separadas por hífen, e diga em voz alta o nome em inglês de cada letra.",
+            "respostaEsperada": "F-E-L-I-P-E. Eu digo: éf, ii, él, ai, pi, ii.",
+            "explicacao": "Cada letra tem um nome em inglês, diferente do português. Dizer as letras em voz alta treina o ouvido e a boca ao mesmo tempo.",
+            "id": "en-001-e10"
+          }
+        ]
+      },
+      {
+        "tipo": "producao",
+        "min": 3,
+        "enunciado": "Diga as palavras em pares e note a diferença: cap e cape, hop e hope, bit e bite. Depois leia o diálogo da Mia em voz alta, fazendo os dois papéis."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Diga em voz alta: think, this, red, hotel, ship, sheep. Qual é o som de cada «th»?"
       }
     ]

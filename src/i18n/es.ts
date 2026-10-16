@@ -104,7 +104,7 @@ export const es: Dicionario = {
     opcoes: 'Opciones', pecas: 'Toca las piezas de abajo', limpar: 'Borrar', escrevaPrivado: 'Escribe aquí (solo tú lo ves)', escreva: 'Escribe aquí', escrevaCirilico: 'Escribe en cirílico',
     certo: 'Correcto.', errou: 'Esta vez no. Respuesta:', compare: 'Compara con un ejemplo:', verExemplo: 'Ver ejemplo', verificar: 'Comprobar',
     verResultado: 'Ver resultado', proximo: 'Siguiente', emPortugues: 'Compara con el español:', erros: 'Errores frecuentes', revisao: 'Repaso.', suaVez: 'Ahora te toca a ti.',
-    esconder: 'Ocultar ejemplo', ouvirDialogo: 'Escuchar todo el diálogo', parar: 'Parar', mostrarTrad: 'Mostrar traducción', ouvirTexto: 'Escuchar el texto',
+    esconder: 'Ocultar ejemplo', ouvirExplicacao: 'Escuchar la explicación', ouvirDialogo: 'Escuchar todo el diálogo', parar: 'Parar', mostrarTrad: 'Mostrar traducción', ouvirTexto: 'Escuchar el texto',
     perguntas: 'Preguntas', blocosSessao: 'Bloques de la sesión', voltar: 'Atrás', continuar: 'Continuar', concluir: 'Terminar la sesión', concluida: 'Sesión terminada',
     concluidaNav: 'Sesión terminada en este navegador.', proxSessao: 'Ir a la siguiente sesión →',
     provisorio: 'Audio provisional: este fragmento usa la voz de tu navegador. La grabación llegará pronto.',

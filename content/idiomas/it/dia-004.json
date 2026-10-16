@@ -20,8 +20,33 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Una cartolina da Roma / Um cartão-postal de Roma",
+        "ru": "Ciao, mamma! Saluti da Roma! La città è bellissima e la gente è simpatica. Oggi la cena è speciale: spaghetti, gnocchi e gelato. Il caffè è buonissimo! Domani ho una gita con gli amici di scuola. Un abbraccio e a presto! Giulia",
+        "pt": "Oi, mamãe! Saudações de Roma! A cidade é lindíssima e as pessoas são simpáticas. Hoje o jantar é especial: espaguete, nhoque e sorvete. O café é ótimo! Amanhã tenho um passeio com os amigos da escola. Um abraço e até breve! Giulia",
+        "perguntas": [
+          {
+            "pergunta": "De que cidade Giulia escreve, e para quem?",
+            "resposta": "De Roma, para a mãe («mamma»)."
+          },
+          {
+            "pergunta": "O que ela vai comer no jantar?",
+            "resposta": "«Spaghetti, gnocchi e gelato»: espaguete, nhoque e sorvete."
+          },
+          {
+            "pergunta": "Em quais palavras você ouve o som «nh» e o som «lh»?",
+            "resposta": "«Gnocchi» tem o som «nh» e «gli» (de «gli amici») tem o som «lh»."
+          },
+          {
+            "pergunta": "Como Giulia se despede?",
+            "resposta": "«Un abbraccio e a presto!»: um abraço e até breve."
+          }
+        ]
+      },
+      {
         "tipo": "exercicios",
-        "min": 20,
+        "min": 19,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -33,8 +58,8 @@
               "arrivederci"
             ],
             "gabarito": "buongiorno",
-            "explicacao": "Ouça «giorno», que soa «djôrno».",
-            "id": "it-001-e01"
+            "explicacao": "Ouça «giorno», que soa «djôrno». «Buonasera» termina em «sera» e «arrivederci» é bem mais longa.",
+            "id": "it-001-e09"
           },
           {
             "tipo": "audio-recognition",
@@ -46,45 +71,100 @@
               "scusi"
             ],
             "gabarito": "grazie",
-            "explicacao": "Ouça o «zie», com «ts».",
-            "id": "it-001-e02"
+            "explicacao": "Ouça o «zie», com «ts». «Prego» começa com «pr» e «scusi» com «sk».",
+            "id": "it-001-e10"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escolha.",
-            "audio": "palla",
+            "audio": "Buonasera, signora",
             "opcoes": [
-              "pala",
-              "palla",
-              "balla"
+              "Buonasera, signora",
+              "Buongiorno, signora",
+              "Arrivederci, signora"
             ],
-            "gabarito": "palla",
-            "explicacao": "Ouça a consoante longa de «palla».",
-            "id": "it-001-e03"
+            "gabarito": "Buonasera, signora",
+            "explicacao": "Ouça o começo: «buonasera» tem «sera» e é a saudação do fim da tarde.",
+            "id": "it-001-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Che cena!",
+            "opcoes": [
+              "Che cena!",
+              "Che scena!",
+              "Che sera!"
+            ],
+            "gabarito": "Che cena!",
+            "explicacao": "Ouça o «c» de «cena», que soa «tch». Em «scena» aparece o «x» do «sc», e em «sera» o «s».",
+            "id": "it-001-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "famiglia",
+            "opcoes": [
+              "famiglia",
+              "fama",
+              "fame"
+            ],
+            "gabarito": "famiglia",
+            "explicacao": "Ouça o final «lha»: o «gli» soa «lh». As outras duas terminam em «ma» e «me».",
+            "id": "it-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Piacere",
+            "opcoes": [
+              "Piacere",
+              "Per favore",
+              "Prego"
+            ],
+            "gabarito": "Piacere",
+            "explicacao": "Ouça o «tch» no meio: «piatchêre». É o que se diz ao conhecer alguém.",
+            "id": "it-001-e14"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "arrivederci",
             "respostaEsperada": "arrivederci",
-            "explicacao": "Escreva: arrivederci.",
-            "id": "it-001-e04"
+            "explicacao": "Escreva: arrivederci. Ouça o «tchi» final: o «c» antes de «i» soa «tch».",
+            "id": "it-001-e15"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "per favore",
             "respostaEsperada": "per favore",
-            "explicacao": "Escreva: per favore.",
-            "id": "it-001-e05"
+            "explicacao": "Escreva: per favore. A expressão termina em «e»: o «e» final soa inteiro.",
+            "id": "it-001-e16"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "Come sta?",
             "respostaEsperada": "Come sta?",
-            "explicacao": "Escreva: Come sta?",
-            "id": "it-001-e06"
+            "explicacao": "Escreva: Come sta? Ouça o final «sta»: é a pergunta formal.",
+            "id": "it-001-e17"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "spaghetti",
+            "respostaEsperada": "spaghetti",
+            "explicacao": "Escreva: spaghetti. O «g» duro antes de «e» e «i» se escreve «gh».",
+            "id": "it-001-e18"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Buonasera",
+            "respostaEsperada": "Buonasera",
+            "explicacao": "Escreva: Buonasera. É uma palavra só, e o «s» vem entre vogais.",
+            "id": "it-001-e19"
           },
           {
             "tipo": "multiple-choice",
@@ -96,7 +176,7 @@
             ],
             "gabarito": "tchêna",
             "explicacao": "«c» antes de «e» soa «tch».",
-            "id": "it-001-e07"
+            "id": "it-001-e20"
           },
           {
             "tipo": "multiple-choice",
@@ -107,8 +187,8 @@
               "xê"
             ],
             "gabarito": "kê",
-            "explicacao": "Com «ch», o som é duro.",
-            "id": "it-001-e08"
+            "explicacao": "Com «ch», o som é duro. O «h» protege o «c».",
+            "id": "it-001-e21"
           },
           {
             "tipo": "multiple-choice",
@@ -119,8 +199,8 @@
               "nókki"
             ],
             "gabarito": "nhókki",
-            "explicacao": "«gn» soa «nh».",
-            "id": "it-001-e09"
+            "explicacao": "«gn» soa «nh», como em «ninho».",
+            "id": "it-001-e22"
           },
           {
             "tipo": "multiple-choice",
@@ -131,8 +211,8 @@
               "nena"
             ],
             "gabarito": "nonno",
-            "explicacao": "A consoante dobrada muda o sentido: nono é «nono».",
-            "id": "it-001-e10"
+            "explicacao": "A consoante dobrada muda o sentido: «nono» é «nono».",
+            "id": "it-001-e23"
           },
           {
             "tipo": "multiple-choice",
@@ -144,7 +224,67 @@
             ],
             "gabarito": "Lei",
             "explicacao": "Com desconhecidos, usa-se «Lei», a terceira pessoa.",
-            "id": "it-001-e11"
+            "id": "it-001-e24"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Em «chi» (quem), como soa o «ch»?",
+            "opcoes": [
+              "como «k»",
+              "como «tch»",
+              "como «x»"
+            ],
+            "gabarito": "como «k»",
+            "explicacao": "«Ch» antes de «e» e «i» tem som duro, de «k». O «h» não soa.",
+            "id": "it-001-e25"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual palavra tem o som «x» (como em «xícara»)?",
+            "opcoes": [
+              "scuola",
+              "scarpa",
+              "scena"
+            ],
+            "gabarito": "scena",
+            "explicacao": "«Sc» antes de «e» soa «x». Antes de «a», «o», «u» soa «sk».",
+            "id": "it-001-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual saudação é só para amigos?",
+            "opcoes": [
+              "ciao",
+              "buongiorno",
+              "arrivederci"
+            ],
+            "gabarito": "ciao",
+            "explicacao": "«Ciao» é íntimo. As outras duas servem para qualquer pessoa.",
+            "id": "it-001-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «giorno»?",
+            "opcoes": [
+              "djôrno",
+              "giôrno",
+              "tchôrno"
+            ],
+            "gabarito": "djôrno",
+            "explicacao": "«g» antes de «i» soa «dj», e o «i» quase não soa.",
+            "id": "it-001-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se chama a letra «h» em italiano?",
+            "opcoes": [
+              "ákka",
+              "agá",
+              "ha"
+            ],
+            "gabarito": "ákka",
+            "explicacao": "O nome da letra é «ákka». E, nas palavras, o «h» nunca soa.",
+            "id": "it-001-e29"
           },
           {
             "tipo": "fill-gap",
@@ -156,7 +296,7 @@
             ],
             "gabarito": "Come",
             "explicacao": "«Come sta?» é a pergunta formal.",
-            "id": "it-001-e12"
+            "id": "it-001-e30"
           },
           {
             "tipo": "fill-gap",
@@ -168,7 +308,7 @@
             ],
             "gabarito": "grazie",
             "explicacao": "«Grazie» agradece.",
-            "id": "it-001-e13"
+            "id": "it-001-e31"
           },
           {
             "tipo": "fill-gap",
@@ -180,25 +320,7 @@
             ],
             "gabarito": "Prego",
             "explicacao": "«Prego» responde a «grazie».",
-            "id": "it-001-e14"
-          },
-          {
-            "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Sto bene, grazie.»",
-            "opcoes": [
-              "Sto",
-              "bene,",
-              "grazie"
-            ],
-            "gabarito": "Sto bene, grazie.",
-            "explicacao": "Resposta usual a «Come stai?».",
-            "id": "it-001-e15"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Escreva em italiano: bom dia, obrigado e tchau.",
-            "respostaEsperada": "Buongiorno. Grazie. Arrivederci.",
-            "id": "it-001-e16"
+            "id": "it-001-e32"
           },
           {
             "tipo": "fill-gap",
@@ -209,8 +331,8 @@
               "buono"
             ],
             "gabarito": "bene",
-            "explicacao": "«Bene» é o advérbio para «bem»; o «e» final soa claro, como «e».",
-            "id": "it-001-e17"
+            "explicacao": "«Bene» é o advérbio para «bem». O «e» final soa claro, como «e».",
+            "id": "it-001-e33"
           },
           {
             "tipo": "fill-gap",
@@ -222,7 +344,7 @@
             ],
             "gabarito": "favore",
             "explicacao": "A expressão é «per favore», com «e» final.",
-            "id": "it-001-e18"
+            "id": "it-001-e34"
           },
           {
             "tipo": "fill-gap",
@@ -233,8 +355,8 @@
               "sc"
             ],
             "gabarito": "c",
-            "explicacao": "«C» antes de «e» soa «tch»; «ch» daria som de «k» e «sc» daria «x».",
-            "id": "it-001-e19"
+            "explicacao": "«C» antes de «e» soa «tch». «Ch» daria som de «k» e «sc» daria «x».",
+            "id": "it-001-e35"
           },
           {
             "tipo": "fill-gap",
@@ -245,8 +367,8 @@
               "gh"
             ],
             "gabarito": "gh",
-            "explicacao": "Antes de «e» e «i», o «g» soa «dj»; para o som duro escreve-se «gh».",
-            "id": "it-001-e20"
+            "explicacao": "Antes de «e» e «i», o «g» soa «dj». Para o som duro escreve-se «gh».",
+            "id": "it-001-e36"
           },
           {
             "tipo": "fill-gap",
@@ -257,8 +379,8 @@
               "nh"
             ],
             "gabarito": "gn",
-            "explicacao": "«Gn» soa «nh»; «gli» soa «lh».",
-            "id": "it-001-e21"
+            "explicacao": "«Gn» soa «nh». «Gli» soa «lh».",
+            "id": "it-001-e37"
           },
           {
             "tipo": "fill-gap",
@@ -270,55 +392,55 @@
             ],
             "gabarito": "gli",
             "explicacao": "«Gli» soa «lh», como em «figlio» e «famiglia».",
-            "id": "it-001-e22"
+            "id": "it-001-e38"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual palavra significa «bola»?",
+            "tipo": "fill-gap",
+            "enunciado": "Ciao, come ___ ? (a um amigo)",
             "opcoes": [
-              "pala",
-              "palla",
-              "pallo"
+              "stai",
+              "sta",
+              "sto"
             ],
-            "gabarito": "palla",
-            "explicacao": "A consoante dobrada muda o sentido: «pala» é pá e «palla» é bola.",
-            "id": "it-001-e23"
+            "gabarito": "stai",
+            "explicacao": "Com «tu», o verbo termina em «i»: «stai».",
+            "id": "it-001-e39"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Em «chi» (quem), como soa o «ch»?",
+            "tipo": "fill-gap",
+            "enunciado": "Scusi, signora, come ___ ? (formal)",
             "opcoes": [
-              "como «k»",
-              "como «tch»",
-              "como «x»"
+              "stai",
+              "sta",
+              "sto"
             ],
-            "gabarito": "como «k»",
-            "explicacao": "«Ch» antes de «e» e «i» tem som duro, de «k»; o «h» não soa.",
-            "id": "it-001-e24"
+            "gabarito": "sta",
+            "explicacao": "Com «Lei», o verbo termina em «a»: «sta».",
+            "id": "it-001-e40"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Qual palavra tem o som «x» (como em «xícara»)?",
+            "tipo": "fill-gap",
+            "enunciado": "Sto bene, grazie. E ___ ? (e o senhor?)",
             "opcoes": [
-              "scuola",
-              "scarpa",
-              "scena"
+              "Lei",
+              "tu",
+              "chi"
             ],
-            "gabarito": "scena",
-            "explicacao": "«Sc» antes de «e» soa «x»; antes de «a», «o», «u» soa «sk».",
-            "id": "it-001-e25"
+            "gabarito": "Lei",
+            "explicacao": "Se a pergunta anterior foi formal, devolve-se a pergunta com «Lei».",
+            "id": "it-001-e41"
           },
           {
-            "tipo": "multiple-choice",
-            "enunciado": "Como soa o «e» final de «bene»?",
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Sto bene, grazie.»",
             "opcoes": [
-              "como «i»",
-              "como «e»",
-              "não soa"
+              "Sto",
+              "bene,",
+              "grazie"
             ],
-            "gabarito": "como «e»",
-            "explicacao": "As vogais italianas são claras e completas; o «e» final nunca vira «i».",
-            "id": "it-001-e26"
+            "gabarito": "Sto bene, grazie.",
+            "explicacao": "Resposta usual a «Come stai?».",
+            "id": "it-001-e42"
           },
           {
             "tipo": "sentence-ordering",
@@ -330,42 +452,66 @@
             ],
             "gabarito": "Ciao, come stai?",
             "explicacao": "Saudação informal seguida da pergunta com «stai».",
-            "id": "it-001-e27"
+            "id": "it-001-e43"
           },
           {
             "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Piacere, come sta?»",
+            "enunciado": "Ordene: «Buonasera, signora Rossi!»",
             "opcoes": [
-              "Piacere,",
-              "come",
-              "sta?"
+              "Buonasera,",
+              "signora",
+              "Rossi!"
             ],
-            "gabarito": "Piacere, come sta?",
-            "explicacao": "Com «sta» a pergunta é formal, para o senhor ou a senhora.",
-            "id": "it-001-e28"
+            "gabarito": "Buonasera, signora Rossi!",
+            "explicacao": "Primeiro a saudação, depois o tratamento e o sobrenome.",
+            "id": "it-001-e44"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Come sta, signora?»",
+            "opcoes": [
+              "Come",
+              "sta,",
+              "signora?"
+            ],
+            "gabarito": "Come sta, signora?",
+            "explicacao": "A pergunta formal vem primeiro, e o tratamento fecha a frase.",
+            "id": "it-001-e45"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: bom dia, obrigado e tchau.",
+            "respostaEsperada": "Buongiorno. Grazie. Arrivederci.",
+            "id": "it-001-e46"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Como você está? Estou bem, obrigado. (informal)",
             "respostaEsperada": "Come stai? Sto bene, grazie.",
-            "id": "it-001-e29"
+            "id": "it-001-e47"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva em italiano: Por favor, obrigado.",
             "respostaEsperada": "Per favore, grazie.",
-            "id": "it-001-e30"
+            "id": "it-001-e48"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em italiano: Boa noite, senhora. Como a senhora está?",
+            "respostaEsperada": "Buonasera, signora. Come sta?",
+            "id": "it-001-e49"
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 5,
-        "enunciado": "Cumprimente em italiano um amigo e depois um desconhecido mais velho, em voz alta, e despeça-se de cada um."
+        "min": 4,
+        "enunciado": "Cumprimente em italiano um amigo e depois um desconhecido mais velho, em voz alta, e despeça-se de cada um. Depois leia o cartão-postal da Giulia em voz alta, devagar, cuidando do «tch», do «nh» e do «lh»."
       },
       {
         "tipo": "revisao",
-        "min": 5,
+        "min": 2,
         "enunciado": "Soletre três palavras do alfabeto de memória e diga as saudações da aula, uma com «tu» e uma com «Lei»."
       }
     ]

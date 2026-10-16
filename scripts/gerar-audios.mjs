@@ -30,6 +30,7 @@ const VOZES = {
   fr: { lang: 'fr-FR', m: 'fr-FR-HenriNeural', f: 'fr-FR-DeniseNeural' },
   it: { lang: 'it-IT', m: 'it-IT-DiegoNeural', f: 'it-IT-ElsaNeural' },
   br: { lang: 'pt-BR', m: 'pt-BR-AntonioNeural', f: 'pt-BR-FranciscaNeural' },
+  pt: { lang: 'pt-BR', m: 'pt-BR-AntonioNeural', f: 'pt-BR-FranciscaNeural' }, // narração das explicações (Ouvir explicação)
 };
 const cfg = VOZES[idioma];
 if (!cfg) { console.error(`idioma sem voz configurada: ${idioma}`); process.exit(1); }
@@ -54,6 +55,7 @@ export function lerCsv(texto) {
   return resto.filter((r) => r.length >= cab.length).map((r) => Object.fromEntries(cab.map((k, i) => [k, r[i]])));
 }
 
+const norm = (t) => t.normalize('NFC').replace(/\u0301/g, '').trim();
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 const dir = path.join(raiz, 'public', 'audio', idioma);
 const tts = {};
@@ -74,6 +76,17 @@ async function main() {
   // textos dos livros (scripts/livros/audio-livros.mjs): mesma pasta de MP3, sem repetir o que já está na lista
   const csvLivro = path.join(raiz, 'content', 'audio', `${idioma}-livro-gravar.csv`);
   if (fs.existsSync(csvLivro)) { const ja = new Set(linhas.map((l) => l.arquivo)); linhas = linhas.concat(lerCsv(fs.readFileSync(csvLivro, 'utf8')).filter((l) => !ja.has(l.arquivo))); }
+  // --so-gratis: só o que aparece nas aulas grátis (dias 1 a 8) e ainda não existe público nem privado
+  if (args['so-gratis'] === 'true' && idioma !== 'pt') {
+    const livres = new Set(); const coletar = (v) => { if (typeof v === 'string') livres.add(norm(v)); else if (Array.isArray(v)) v.forEach(coletar); else if (v && typeof v === 'object') Object.values(v).forEach(coletar); };
+    for (let n = 1; n <= 8; n++) { const f = path.join(raiz, 'content', 'idiomas', idioma, `dia-${String(n).padStart(3, '0')}.json`); if (fs.existsSync(f)) coletar(JSON.parse(fs.readFileSync(f, 'utf8'))); }
+    const priv = path.join(raiz, 'server', 'audio-privado', idioma);
+    const feito = (l) => fs.existsSync(path.join(priv, l.arquivo));
+    linhas = linhas.filter((l) => (livres.has(norm(l.texto)) || livres.has(norm(l.texto.replace(/\s*\(.*?\)\s*$/, '')))) && !feito(l));
+  }
+  // narração (scripts/narracao-csv.ts): trechos na língua estudada lidos dentro da «Ouvir explicação»
+  const csvNarr = path.join(raiz, 'content', 'audio', `${idioma}-narracao-gravar.csv`);
+  if (fs.existsSync(csvNarr)) { const ja = new Set(linhas.map((l) => l.arquivo)); linhas = linhas.concat(lerCsv(fs.readFileSync(csvNarr, 'utf8')).filter((l) => !ja.has(l.arquivo))); }
   fs.mkdirSync(dir, { recursive: true });
   const existe = (l) => fs.existsSync(path.join(dir, l.arquivo));
   let pendentes = linhas.filter((l) => refazer.has(l.arquivo.replace('.mp3', '')) || !existe(l));

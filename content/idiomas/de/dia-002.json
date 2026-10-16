@@ -20,16 +20,120 @@
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 8,
-        "titulo": "Descubra você mesmo",
-        "explicacao": "PASSO 1: Leia cada grupo em voz alta, devagar, e tente responder antes de olhar a regra. PASSO 2: Grupo A: mein, Zeit, Wein, klein. Como soa ei? PASSO 3: Grupo B: Tier, Liebe, Bier, Brief (carta). Como soa ie? PASSO 4: Grupo C: heute, Leute (pessoas), neun (nove), Häuser (casas). Como soam eu e äu? PASSO 5: Grupo D: Vater, Vogel (pássaro), viel (muito), von (de). Como soa o v? PASSO 6: Grupo E: Wasser, Wein, Wetter (tempo, clima), wir (nós). Como soa o w? PASSO 7: Grupo F: Sonne, Sofa, lesen (ler), Rose. Compare com Haus, das, Glas (vidro). Como soa o s em cada caso?",
-        "tabela": [],
-        "tag": "Descubra"
+        "tipo": "alfabeto",
+        "min": 9,
+        "grupos": [
+          {
+            "nome": "Grupo 3 — Consoantes que mudam de som",
+            "letras": [
+              {
+                "maiuscula": "H",
+                "minuscula": "h",
+                "som": "h aspirado, como no inglês «house» (em português o h é mudo)",
+                "ipa": "[h]",
+                "exemplo": "Haus",
+                "exemploPt": "casa"
+              },
+              {
+                "maiuscula": "J",
+                "minuscula": "j",
+                "som": "como o «i» de «iogurte»",
+                "ipa": "[j]",
+                "exemplo": "Jahr",
+                "exemploPt": "ano"
+              },
+              {
+                "maiuscula": "R",
+                "minuscula": "r",
+                "som": "r gutural, no fundo da garganta",
+                "ipa": "[ʁ]",
+                "exemplo": "rot",
+                "exemploPt": "vermelho"
+              },
+              {
+                "maiuscula": "S",
+                "minuscula": "s",
+                "som": "«z» antes de vogal; «s» no fim da palavra",
+                "ipa": "[z / s]",
+                "exemplo": "Sonne",
+                "exemploPt": "sol"
+              },
+              {
+                "maiuscula": "V",
+                "minuscula": "v",
+                "som": "«f» na maioria das palavras alemãs",
+                "ipa": "[f]",
+                "exemplo": "Vater",
+                "exemploPt": "pai"
+              },
+              {
+                "maiuscula": "W",
+                "minuscula": "w",
+                "som": "«v» de «vaca»",
+                "ipa": "[v]",
+                "exemplo": "Wasser",
+                "exemploPt": "água"
+              },
+              {
+                "maiuscula": "Z",
+                "minuscula": "z",
+                "som": "«ts», como em «pizza»",
+                "ipa": "[ts]",
+                "exemplo": "Zeit",
+                "exemploPt": "tempo"
+              },
+              {
+                "maiuscula": "ß",
+                "minuscula": "ß",
+                "som": "«ss» (s longo); chama-se «Eszett»",
+                "ipa": "[s]",
+                "exemplo": "Straße",
+                "exemploPt": "rua"
+              },
+              {
+                "maiuscula": "G",
+                "minuscula": "g",
+                "som": "g de «gato», sempre duro",
+                "ipa": "[g]",
+                "exemplo": "gut",
+                "exemploPt": "bom"
+              }
+            ]
+          },
+          {
+            "nome": "Grupo 4 — Letras raras",
+            "letras": [
+              {
+                "maiuscula": "C",
+                "minuscula": "c",
+                "som": "«k» em palavras de fora, como «Computer»; sozinho é raro (aparece em «ch», «sch» e «ck»)",
+                "ipa": "[k / ts]",
+                "exemplo": "Computer",
+                "exemploPt": "computador"
+              },
+              {
+                "maiuscula": "Q",
+                "minuscula": "q",
+                "som": "vem sempre com «u», e o par «qu» soa «kv»",
+                "ipa": "[k]",
+                "exemplo": "Quiz",
+                "exemploPt": "quiz"
+              },
+              {
+                "maiuscula": "Y",
+                "minuscula": "y",
+                "som": "soa como o «ü», em palavras de origem grega",
+                "ipa": "[y]",
+                "exemplo": "Typ",
+                "exemploPt": "tipo"
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "palavras",
-        "min": 12,
+        "min": 5,
         "itens": [
           {
             "ru": "Haus",
@@ -104,14 +208,123 @@
         ]
       },
       {
+        "tipo": "exercicios",
+        "min": 9,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Wasser",
+            "opcoes": [
+              "Wasser",
+              "Vater",
+              "Sonne"
+            ],
+            "gabarito": "Wasser",
+            "explicacao": "O «w» alemão soa como o «v» de «vaca»: «vásser». «Vater» começa com «f» («fáter») e «Sonne» começa com «z» («zône»).",
+            "id": "de-001-e10"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Zeit",
+            "opcoes": [
+              "Zeit",
+              "Sonne",
+              "Straße"
+            ],
+            "gabarito": "Zeit",
+            "explicacao": "A palavra começa com «ts», um som que em português só aparece no meio de palavras como «pizza». «Sonne» e «Straße» começam com «z» e «x».",
+            "id": "de-001-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Jahr",
+            "opcoes": [
+              "Jahr",
+              "Haus",
+              "rot"
+            ],
+            "gabarito": "Jahr",
+            "explicacao": "O «j» alemão soa como o «i» de «iogurte»: «iár». «Haus» começa com «h» soprado e «rot» com o «r» da garganta.",
+            "id": "de-001-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Wasser",
+            "respostaEsperada": "Wasser",
+            "explicacao": "Escreva com «w», que soa como «v». Não escreva «Vasser»: em alemão o «v» quase sempre soa «f». O «ss» no meio é um «s» forte.",
+            "id": "de-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Straße",
+            "respostaEsperada": "Straße",
+            "explicacao": "O «ß» se chama «Eszett» e soa como «ss». Ele não existe em português e aparece depois de vogal longa, como o «a» de «Straße».",
+            "id": "de-001-e14"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «h» de «Haus», no começo da palavra, é:",
+            "opcoes": [
+              "aspirado, como em «house»",
+              "mudo, como em «hora»",
+              "igual ao «r»"
+            ],
+            "gabarito": "aspirado, como em «house»",
+            "explicacao": "Em alemão o «h» no começo é soprado, um fio de ar. Só em português o «h» é mudo.",
+            "id": "de-001-e15"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O «s» de «Sonne» (antes de vogal) soa como:",
+            "opcoes": [
+              "«z»",
+              "«s» de sol",
+              "«x»"
+            ],
+            "gabarito": "«z»",
+            "explicacao": "Antes de vogal o «s» alemão é sonoro, como o «z» de «zebra»: «zône». No fim da palavra ele volta a soar «s».",
+            "id": "de-001-e16"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___asser (água; lê-se «vásser»)",
+            "opcoes": [
+              "W",
+              "V",
+              "F"
+            ],
+            "gabarito": "W",
+            "explicacao": "O som de «v» é escrito com «w» em alemão. A letra «v» soaria «f».",
+            "id": "de-001-e17"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___eit (tempo; lê-se «tsait»)",
+            "opcoes": [
+              "Z",
+              "S",
+              "C"
+            ],
+            "gabarito": "Z",
+            "explicacao": "O som «ts» se escreve com «z». O «s» soaria «z» antes de vogal e o «c» sozinho soaria «k».",
+            "id": "de-001-e18"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
         "min": 4,
-        "enunciado": "Leia as 10 palavras em voz alta. Cuidado com o «h» aspirado, o «w» (v) e o «z» (ts)."
+        "enunciado": "Leia as 10 palavras em voz alta: «Haus, Jahr, rot, Sonne, Vater, Wasser, Zeit, Straße, gut, Hand». Cuidado com o «h» aspirado, o «w» (v) e o «z» (ts). Depois escolha três palavras e diga uma de cada vez, bem devagar, separando o som inicial: «v… vásser»."
       },
       {
         "tipo": "revisao",
-        "min": 6,
-        "enunciado": "Leia em voz alta as 18 letras da sessão anterior sem olhar a tradução."
+        "min": 3,
+        "enunciado": "Ouça de novo as palavras da sessão anterior e repita cada uma em voz alta. Depois leia as 18 letras da sessão anterior sem olhar a tradução."
       }
     ]
   },

@@ -4,24 +4,45 @@
   "fase": 1,
   "nivel": "a1",
   "status": "publicada",
-  "titulo": "Quem sou eu: o verbo to be: Revisão e prática da aula 2",
+  "titulo": "Quem sou eu: o verbo to be: Leitura, revisão e prática da aula 2",
   "objetivo": "Aula 2, sessão 4 de 4 · 30 min",
   "aula": {
     "numero": 2,
     "titulo": "Quem sou eu: o verbo to be",
-    "objetivo": "Dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas) e usar as contrações.",
+    "objetivo": "Ouvir e entender apresentações simples e dizer quem você é, como está e de onde vem com «to be» (afirmativa, negativa, perguntas e respostas curtas), usando as contrações.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "a1"
   },
   "sessao": {
     "sessao": "S4",
-    "titulo": "Revisão e prática da aula 2",
+    "titulo": "Leitura, revisão e prática da aula 2",
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Who am I? / Quem sou eu?",
+        "ru": "Hello! I'm Carlos. I'm a student, and I'm from Brazil. I'm not a doctor. I'm not a teacher. I'm not tired. I'm happy. Maria is my friend. She is a doctor. She is busy, and she is not here. We are happy. Thank you!",
+        "pt": "Olá! Eu sou o Carlos. Sou estudante e sou do Brasil. Não sou médico. Não sou professor. Não estou cansado. Estou feliz. A Maria é minha amiga. Ela é médica. Ela está ocupada e não está aqui. Nós estamos felizes. Obrigado!",
+        "perguntas": [
+          {
+            "pergunta": "Carlos é médico?",
+            "resposta": "Não. Ele é estudante: «I'm a student. I'm not a doctor.»"
+          },
+          {
+            "pergunta": "Quem é a Maria e como ela está?",
+            "resposta": "Ela é amiga do Carlos e é médica. Está ocupada e não está aqui."
+          },
+          {
+            "pergunta": "De onde o Carlos é?",
+            "resposta": "Do Brasil: «I'm from Brazil.»"
+          }
+        ]
+      },
+      {
         "tipo": "exercicios",
-        "min": 19,
+        "min": 17,
         "itens": [
           {
             "tipo": "audio-recognition",
@@ -33,8 +54,8 @@
               "He is from Brazil"
             ],
             "gabarito": "I am from Brazil",
-            "explicacao": "Ouça o sujeito: «I am».",
-            "id": "en-002-e01"
+            "explicacao": "Ouça o sujeito logo no começo: «I am».",
+            "id": "en-002-e09"
           },
           {
             "tipo": "audio-recognition",
@@ -46,8 +67,8 @@
               "He is not tired"
             ],
             "gabarito": "She is not tired",
-            "explicacao": "Ouça «not» e o sujeito «she».",
-            "id": "en-002-e02"
+            "explicacao": "Ouça «not» depois do verbo e o sujeito «she».",
+            "id": "en-002-e10"
           },
           {
             "tipo": "audio-recognition",
@@ -59,24 +80,126 @@
               "Are they students"
             ],
             "gabarito": "Are you a student",
-            "explicacao": "Ouça o verbo no começo e «you».",
-            "id": "en-002-e03"
+            "explicacao": "Ouça o verbo no começo e depois «you»: é pergunta.",
+            "id": "en-002-e11"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "He is a teacher",
+            "opcoes": [
+              "He is a teacher",
+              "She is a teacher",
+              "He is a doctor"
+            ],
+            "gabarito": "He is a teacher",
+            "explicacao": "Ouça o sujeito «he» e a profissão «teacher», com o som «ti» no começo.",
+            "id": "en-002-e12"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "We are not late",
+            "opcoes": [
+              "We are not late",
+              "We are late",
+              "They are not late"
+            ],
+            "gabarito": "We are not late",
+            "explicacao": "Ouça se aparece «not» depois de «are» e o sujeito «we».",
+            "id": "en-002-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Is she busy",
+            "opcoes": [
+              "Is she busy",
+              "Is he busy",
+              "Are you busy"
+            ],
+            "gabarito": "Is she busy",
+            "explicacao": "Ouça o verbo «is» no começo e o sujeito «she», com o som «shii».",
+            "id": "en-002-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "I am hungry and tired",
+            "opcoes": [
+              "I am hungry and tired",
+              "I am happy and tired",
+              "I am hungry and busy"
+            ],
+            "gabarito": "I am hungry and tired",
+            "explicacao": "Ouça as duas palavras que descrevem como a pessoa está: «hungry» e «tired».",
+            "id": "en-002-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Yes, he is",
+            "opcoes": [
+              "Yes, he is",
+              "Yes, she is",
+              "No, he isn't"
+            ],
+            "gabarito": "Yes, he is",
+            "explicacao": "Ouça se a resposta começa com «yes» ou «no» e qual é o sujeito.",
+            "id": "en-002-e16"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "It is cold",
+            "opcoes": [
+              "It is cold",
+              "It is hot",
+              "It is late"
+            ],
+            "gabarito": "It is cold",
+            "explicacao": "Ouça a última palavra: «cold» é frio, «hot» é calor e «late» é tarde.",
+            "id": "en-002-e17"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "We are happy",
             "respostaEsperada": "We are happy",
-            "explicacao": "Escreva: we are happy.",
-            "id": "en-002-e04"
+            "explicacao": "Escreva: we are happy. Sujeito «we» com o verbo «are».",
+            "id": "en-002-e18"
           },
           {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "He is a doctor",
             "respostaEsperada": "He is a doctor",
-            "explicacao": "Escreva: he is a doctor, com «a».",
-            "id": "en-002-e05"
+            "explicacao": "Escreva: he is a doctor, com o «a» antes da profissão.",
+            "id": "en-002-e19"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "I am not tired",
+            "respostaEsperada": "I am not tired",
+            "explicacao": "Escreva: i am not tired. O «not» fica depois do «am».",
+            "id": "en-002-e20"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "What is your name",
+            "respostaEsperada": "What is your name",
+            "explicacao": "Escreva: what is your name. Palavra interrogativa, verbo e sujeito.",
+            "id": "en-002-e21"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Are they ready",
+            "respostaEsperada": "Are they ready",
+            "explicacao": "Escreva: are they ready. O verbo «are» vem antes de «they».",
+            "id": "en-002-e22"
           },
           {
             "tipo": "multiple-choice",
@@ -87,8 +210,8 @@
               "am"
             ],
             "gabarito": "is",
-            "explicacao": "he, she e it usam «is».",
-            "id": "en-002-e06"
+            "explicacao": "«he», «she» e «it» usam «is».",
+            "id": "en-002-e23"
           },
           {
             "tipo": "multiple-choice",
@@ -99,8 +222,8 @@
               "Yes, I are."
             ],
             "gabarito": "Yes, I am.",
-            "explicacao": "A resposta curta afirmativa não se contrai.",
-            "id": "en-002-e07"
+            "explicacao": "A resposta curta com «yes» não se contrai, e «am» é a forma de «I».",
+            "id": "en-002-e24"
           },
           {
             "tipo": "multiple-choice",
@@ -111,8 +234,8 @@
               "She no is a teacher."
             ],
             "gabarito": "She is not a teacher.",
-            "explicacao": "«not» fica depois do «to be».",
-            "id": "en-002-e08"
+            "explicacao": "O «not» fica depois do «to be», e não se usa «no» para negar o verbo.",
+            "id": "en-002-e25"
           },
           {
             "tipo": "multiple-choice",
@@ -123,8 +246,44 @@
               "hes'"
             ],
             "gabarito": "he's",
-            "explicacao": "A contração usa apóstrofo: he's.",
-            "id": "en-002-e09"
+            "explicacao": "A contração usa apóstrofo no lugar da vogal: he's.",
+            "id": "en-002-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Está frio» em inglês?",
+            "opcoes": [
+              "It's cold.",
+              "Is cold.",
+              "Have cold."
+            ],
+            "gabarito": "It's cold.",
+            "explicacao": "Em inglês o sujeito não some: usa-se «it». E o frio usa «to be», não «have».",
+            "id": "en-002-e27"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase usa o artigo certo?",
+            "opcoes": [
+              "I am a teacher.",
+              "I am teacher.",
+              "I am an teacher."
+            ],
+            "gabarito": "I am a teacher.",
+            "explicacao": "Profissão no singular leva artigo. «Teacher» começa com som de consoante, então é «a».",
+            "id": "en-002-e28"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual é a contração certa de «they are»?",
+            "opcoes": [
+              "they're",
+              "theyre",
+              "they's"
+            ],
+            "gabarito": "they're",
+            "explicacao": "A contração troca a vogal de «are» por apóstrofo: they're.",
+            "id": "en-002-e29"
           },
           {
             "tipo": "fill-gap",
@@ -135,8 +294,8 @@
               "are"
             ],
             "gabarito": "am",
-            "explicacao": "«am» só com «I».",
-            "id": "en-002-e10"
+            "explicacao": "«am» só combina com «I».",
+            "id": "en-002-e30"
           },
           {
             "tipo": "fill-gap",
@@ -148,7 +307,7 @@
             ],
             "gabarito": "are",
             "explicacao": "«they» usa «are».",
-            "id": "en-002-e11"
+            "id": "en-002-e31"
           },
           {
             "tipo": "fill-gap",
@@ -160,7 +319,7 @@
             ],
             "gabarito": "is",
             "explicacao": "«he» usa «is».",
-            "id": "en-002-e12"
+            "id": "en-002-e32"
           },
           {
             "tipo": "fill-gap",
@@ -171,8 +330,55 @@
               "Am"
             ],
             "gabarito": "Are",
-            "explicacao": "Pergunta: o verbo vem antes do sujeito.",
-            "id": "en-002-e13"
+            "explicacao": "Em pergunta, o verbo vem antes do sujeito, e «you» usa «are».",
+            "id": "en-002-e33"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "She is ___ engineer. (uma engenheira)",
+            "opcoes": [
+              "an",
+              "a"
+            ],
+            "gabarito": "an",
+            "explicacao": "«Engineer» começa com som de vogal, então o artigo é «an».",
+            "id": "en-002-e34"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "___ cold today! (está frio hoje)",
+            "opcoes": [
+              "It's",
+              "Is",
+              "He's"
+            ],
+            "gabarito": "It's",
+            "explicacao": "O sujeito «it» é obrigatório na frase do tempo.",
+            "id": "en-002-e35"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Is Tom busy? — No, he ___.",
+            "opcoes": [
+              "isn't",
+              "aren't",
+              "not"
+            ],
+            "gabarito": "isn't",
+            "explicacao": "Com «he», o verbo é «is», e a forma negativa é «isn't».",
+            "id": "en-002-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "We are ___ ready. (não estamos prontos)",
+            "opcoes": [
+              "not",
+              "no",
+              "isn't"
+            ],
+            "gabarito": "not",
+            "explicacao": "O «not» vem depois do «are» e nega o verbo. O «no» não serve aqui.",
+            "id": "en-002-e37"
           },
           {
             "tipo": "sentence-ordering",
@@ -184,8 +390,8 @@
               "from"
             ],
             "gabarito": "Where are you from?",
-            "explicacao": "Palavra interrogativa + verbo + sujeito.",
-            "id": "en-002-e14"
+            "explicacao": "Palavra interrogativa, depois o verbo, depois o sujeito.",
+            "id": "en-002-e38"
           },
           {
             "tipo": "sentence-ordering",
@@ -197,126 +403,62 @@
               "happy"
             ],
             "gabarito": "She is not happy.",
-            "explicacao": "«not» depois do verbo.",
-            "id": "en-002-e15"
+            "explicacao": "O «not» vem depois do verbo.",
+            "id": "en-002-e39"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Is he a doctor?»",
+            "opcoes": [
+              "Is",
+              "he",
+              "a",
+              "doctor"
+            ],
+            "gabarito": "Is he a doctor?",
+            "explicacao": "Pergunta de sim ou não: o verbo «is» vem antes do sujeito «he».",
+            "id": "en-002-e40"
           },
           {
             "tipo": "producao",
             "enunciado": "Escreva 4 frases em inglês: quem você é, de onde é, como está agora e uma frase negativa.",
             "respostaEsperada": "I am Felipe. I am from Brazil. I am tired. I am not a doctor.",
-            "id": "en-002-e16"
+            "explicacao": "Escrever quatro frases seguidas mostra se você domina «am», «is» e «are», o «not» depois do verbo e o sujeito sempre presente.",
+            "id": "en-002-e41"
           },
           {
             "tipo": "producao",
-            "enunciado": "Apresente-se dizendo seu nome, de qual cidade e país você é e qual é a sua profissão (com a ou an).",
-            "respostaEsperada": "Hi, I'm Lucas. I'm from São Paulo, Brazil, and I'm a software engineer.",
-            "id": "en-002-p01"
+            "enunciado": "Escreva uma pergunta de sim ou não sobre um amigo e as duas respostas curtas, uma com «yes» e outra com «no».",
+            "respostaEsperada": "Is Maria a doctor? Yes, she is. No, she isn't.",
+            "explicacao": "Uma pergunta e as duas respostas curtas treinam o verbo no começo da pergunta e a resposta com «yes» sem contração.",
+            "id": "en-002-e42"
           },
           {
             "tipo": "producao",
-            "enunciado": "Diga a sua idade e a idade de um familiar seu (sem usar o verbo have).",
-            "respostaEsperada": "I'm 30 years old, and my sister is 27.",
-            "id": "en-002-p02"
+            "enunciado": "Escreva em inglês: está frio e você está com fome.",
+            "respostaEsperada": "It's cold. I'm hungry.",
+            "explicacao": "O sujeito «it» é obrigatório na frase do tempo, e fome usa «to be», nunca «have».",
+            "id": "en-002-e43"
           },
           {
             "tipo": "producao",
-            "enunciado": "Diga que hoje está frio (ou quente) na sua cidade e que você está com fome e com pressa.",
-            "respostaEsperada": "It's hot in my city today, and I'm hungry and in a hurry.",
-            "id": "en-002-p03"
-          },
-          {
-            "tipo": "producao",
-            "enunciado": "Faça duas perguntas com o verbo to be para um colega novo no trabalho e escreva as respostas curtas (uma afirmativa e uma negativa).",
-            "respostaEsperada": "Are you from Rio? Yes, I am. Is the meeting at ten? No, it isn't.",
-            "id": "en-002-p04"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: I have 32 years, and I'm project manager in São Paulo.",
-            "respostaEsperada": "I'm 32, and I'm a project manager in São Paulo.",
-            "explicacao": "idade usa to be e profissão exige «a».",
-            "id": "en-002-c01"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: Is very cold outside today, so I have cold!",
-            "respostaEsperada": "It's very cold outside today, so I'm cold!",
-            "explicacao": "sujeito «It» e sensação com to be.",
-            "id": "en-002-c02"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: My sister is an university student in the Brazil.",
-            "respostaEsperada": "My sister is a university student in Brazil.",
-            "explicacao": "«a university» e sem «the» antes de Brazil.",
-            "id": "en-002-c03"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: — Are they in a hurry? — Yes, they're!",
-            "respostaEsperada": "— Are they in a hurry? — Yes, they are!",
-            "explicacao": "resposta curta afirmativa não contrai.",
-            "id": "en-002-c04"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: The coffee is a great drink, and I'm at the home now.",
-            "respostaEsperada": "Coffee is a great drink, and I'm at home now.",
-            "explicacao": "sem «the» para coisas em geral e em «at home».",
-            "id": "en-002-c05"
-          },
-          {
-            "tipo": "fill-gap",
-            "enunciado": "Corrija: She has afraid of flying.",
-            "respostaEsperada": "She is afraid of flying.",
-            "explicacao": "«ter medo» é be afraid.",
-            "id": "en-002-c06"
+            "enunciado": "Corrija, escrevendo certo: «Am tired. He no is here.»",
+            "respostaEsperada": "I am tired. He is not here.",
+            "explicacao": "Sem sujeito a frase fica errada, e o «not» deve vir depois do verbo. Corrigir erros fixa a regra.",
+            "id": "en-002-e44"
           }
         ]
       },
       {
-        "tipo": "gramatica",
-        "min": 4,
-        "titulo": "O erro típico do brasileiro",
-        "explicacao": "PASSO 1: O erro mais persistente do brasileiro no nível básico é usar o verbo have para idade e sensações e engolir o sujeito It no início da frase. Em português, “Tenho 25 anos” e “Está chovendo” soam naturais; em inglês, diga sempre I'm 25 e It's raining. PASSO 2: Releia a tabela e diga cada frase certa em voz alta antes de olhar o motivo.",
-        "erros": [
-          {
-            "errado": "I have 28 years old.",
-            "certo": "I'm 28 (years old).",
-            "motivo": "Idade em inglês é estado (to be), nunca posse (have)."
-          },
-          {
-            "errado": "Is cold today.",
-            "certo": "It's cold today.",
-            "motivo": "O sujeito neutro It é obrigatório para clima e hora."
-          },
-          {
-            "errado": "I'm engineer.",
-            "certo": "I'm an engineer.",
-            "motivo": "Profissão no singular exige sempre a ou an."
-          },
-          {
-            "errado": "Yes, I'm. / Yes, it's.",
-            "certo": "Yes, I am. / Yes, it is.",
-            "motivo": "nunca se contrai o verbo no fim de uma resposta curta afirmativa."
-          }
-        ],
-        "tag": "Erro típico"
-      },
-      {
         "tipo": "producao",
-        "min": 4,
-        "enunciado": "Fale: apresente-se em 5 frases (nome, origem, profissão ou estudo, como você está, uma frase negativa). Depois faça duas perguntas a um colega."
-      },
-      {
-        "tipo": "intro",
-        "min": 1,
-        "texto": "Já consigo? Apresentar meu nome, origem, idade e profissão sem esquecer a / an e sem usar have para idade. · Fazer perguntas com Am / Is / Are e responder com respostas curtas sem contrair no final afirmativo. · Usar o sujeito obrigatório It's para falar de clima, horas e situações. Refaça o degrau 4 daqui a 7 dias, sem olhar a correção."
+        "min": 5,
+        "enunciado": "Fale: apresente-se em 5 frases, como o Carlos fez no texto: nome, origem, profissão ou estudo, como você está e uma frase negativa. Depois faça duas perguntas a um colega, como a Emma fez.",
+        "exemplo": "Hello! I'm Felipe. I'm from Brazil. I'm a teacher. I'm happy. I'm not tired. Are you a student? Where are you from?"
       },
       {
         "tipo": "revisao",
-        "min": 2,
-        "enunciado": "Retorno. 1) Como se diz «Está frio» em inglês, e qual palavra obrigatória abre a frase? 2) Por que «a university», mas «an umbrella» e «an hour»? 3) Quando alguém pergunta «What do you do?», o que a pessoa quer saber e como você responde?"
+        "min": 3,
+        "enunciado": "Já consigo? Soletrar o meu nome e cumprimentar como na aula 1. Dizer quem sou, de onde sou e como estou com «am», «is» e «are». Negar com «not». Perguntar com o verbo no começo e responder curto, sem contrair no «yes». Se algum item falhar, refaça a sessão correspondente."
       }
     ]
   },

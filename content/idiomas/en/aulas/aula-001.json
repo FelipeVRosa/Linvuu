@@ -6,22 +6,90 @@
   "nivel": "a1",
   "status": "publicada",
   "titulo": "Sons, alfabeto e primeiras palavras",
-  "objetivo": "Soletrar em inglês, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e fazer as primeiras saudações.",
+  "objetivo": "Ouvir e entender as primeiras conversas em inglês, soletrar, reconhecer os sons que o português não tem (th, r, h, vogais curtas e longas), entender por que a escrita engana e cumprimentar, agradecer e pedir licença.",
   "duracaoTotalMin": 120,
   "sessoes": [
     {
       "sessao": "S1",
-      "titulo": "O alfabeto e as primeiras saudações",
+      "titulo": "Ouça primeiro: o alfabeto e as saudações",
       "duracaoMin": 30,
       "blocos": [
         {
           "tipo": "intro",
-          "min": 3,
-          "texto": "Você já conhece muito inglês: shopping, e-mail, internet, ok, hot dog. Nesta aula você começa pelo som, não pela escrita. Ao lado das palavras há uma pronúncia aproximada em letras do português: o acento agudo marca a sílaba forte (hélou), «sh» soa como o «ch» de «chave», «tch» como o «tch» de «tchau», «dj» como o «dj» de «djim» e vogal dobrada (ii) marca um som mais longo. É um apoio, não substitui o áudio: ouça sempre."
+          "min": 2,
+          "texto": "Bem-vindo ao inglês! Você já conhece muitas palavras: shopping, e-mail, internet, ok, hot dog. Nesta aula você começa pelo som, não pela escrita. Primeiro você vai ouvir uma conversa de verdade, num café. Não precisa entender tudo. Depois, descobrimos o que cada palavra quer dizer. Ao lado das palavras há uma pronúncia aproximada em letras do português. A sílaba forte leva acento, como em «helôu» e «hotél». O «sh» soa como o «ch» de «chave», o «tch» como o «tch» de «tchau» e o «dj» como o «dj» de «djim». Vogal dobrada, como em «pliiz», marca um som mais longo. Esse apoio não substitui o áudio: ouça sempre."
+        },
+        {
+          "tipo": "dialogo",
+          "min": 5,
+          "titulo": "Good morning! / Bom dia!",
+          "contexto": "Emma entra num café de manhã e faz um pedido. Ouça a cena inteira antes de olhar a tradução. Depois ouça de novo, linha por linha, e repita em voz alta.",
+          "linhas": [
+            {
+              "personagem": "Tom",
+              "ru": "— Good morning!",
+              "pt": "— Bom dia!",
+              "audio": "Good morning!"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Good morning! Juice, please.",
+              "pt": "— Bom dia! Um suco, por favor.",
+              "audio": "Good morning! Juice, please."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Orange juice? Apple juice?",
+              "pt": "— Suco de laranja? Suco de maçã?",
+              "audio": "Orange juice? Apple juice?"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Apple juice, please.",
+              "pt": "— Suco de maçã, por favor.",
+              "audio": "Apple juice, please."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Apple juice. Yes!",
+              "pt": "— Suco de maçã. Pois não!",
+              "audio": "Apple juice. Yes!"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Thank you very much.",
+              "pt": "— Muito obrigada.",
+              "audio": "Thank you very much."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— You're welcome.",
+              "pt": "— De nada.",
+              "audio": "You're welcome."
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Oh, sorry! Excuse me. Water, please.",
+              "pt": "— Ah, desculpe! Com licença. Água, por favor.",
+              "audio": "Oh, sorry! Excuse me. Water, please."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Water. Yes!",
+              "pt": "— Água. Pois não!",
+              "audio": "Water. Yes!"
+            },
+            {
+              "personagem": "Emma",
+              "ru": "— Thank you. Goodbye!",
+              "pt": "— Obrigada. Tchau!",
+              "audio": "Thank you. Goodbye!"
+            }
+          ]
         },
         {
           "tipo": "alfabeto",
-          "min": 12,
+          "min": 8,
           "grupos": [
             {
               "nome": "Parte 1 — A a I",
@@ -276,7 +344,7 @@
         },
         {
           "tipo": "palavras",
-          "min": 8,
+          "min": 5,
           "itens": [
             {
               "ru": "hello",
@@ -328,6 +396,13 @@
               "audio": "thank you"
             },
             {
+              "ru": "thank you very much",
+              "translit": "thénk iú véri mátch",
+              "pt": "muito obrigado, muito obrigada",
+              "en": "",
+              "audio": "thank you very much"
+            },
+            {
               "ru": "you're welcome",
               "translit": "iór uélkam",
               "pt": "de nada",
@@ -347,13 +422,130 @@
               "pt": "com licença, perdão (para chamar a atenção)",
               "en": "",
               "audio": "excuse me"
+            },
+            {
+              "ru": "yes",
+              "translit": "iés",
+              "pt": "sim",
+              "en": "",
+              "audio": "yes"
+            },
+            {
+              "ru": "no",
+              "translit": "nôu",
+              "pt": "não",
+              "en": "",
+              "audio": "no"
             }
           ]
         },
         {
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "Quando dizer cada saudação",
+          "explicacao": "PASSO 1: de manhã, diga «good morning». Fala-se «gud mórnin». Serve até mais ou menos o meio-dia. PASSO 2: «hello» e «hi» servem a qualquer hora. O «hi» é mais informal, como o nosso «oi». PASSO 3: «good night» serve só para se despedir à noite ou para ir dormir. Não use para chegar. PASSO 4: «please» quer dizer por favor. Ele vem no fim do pedido: «water, please». PASSO 5: quando alguém agradece, a resposta é «you're welcome». Quer dizer de nada. PASSO 6: «excuse me» serve para chamar a atenção de alguém ou para passar. «Sorry» serve quando você errou ou esbarrou em alguém. Cultura: nos países de língua inglesa, «please» e «thank you» são ditos o tempo todo, até com quem serve o seu café.",
+          "comparacao": "em português, «boa noite» serve para chegar e para sair. Em inglês, «good night» só serve para se despedir ou ir dormir. Para chegar à noite, use «hello» ou «hi».",
+          "exemplos": [
+            {
+              "ru": "Good morning!",
+              "pt": "Bom dia!"
+            },
+            {
+              "ru": "Water, please.",
+              "pt": "Água, por favor."
+            },
+            {
+              "ru": "Thank you very much.",
+              "pt": "Muito obrigado."
+            },
+            {
+              "ru": "You're welcome.",
+              "pt": "De nada."
+            },
+            {
+              "ru": "Excuse me!",
+              "pt": "Com licença!"
+            },
+            {
+              "ru": "Sorry!",
+              "pt": "Desculpe!"
+            },
+            {
+              "ru": "Good night!",
+              "pt": "Boa noite! (ao se despedir)"
+            }
+          ],
+          "tabela": [
+            {
+              "situacao": "chegar de manhã",
+              "diga": "Good morning",
+              "significa": "bom dia"
+            },
+            {
+              "situacao": "chegar a qualquer hora",
+              "diga": "Hello / Hi",
+              "significa": "olá / oi"
+            },
+            {
+              "situacao": "fazer um pedido",
+              "diga": "... , please",
+              "significa": "por favor"
+            },
+            {
+              "situacao": "agradecer",
+              "diga": "Thank you (very much)",
+              "significa": "obrigado (muito obrigado)"
+            },
+            {
+              "situacao": "responder ao agradecimento",
+              "diga": "You're welcome",
+              "significa": "de nada"
+            },
+            {
+              "situacao": "chamar a atenção, passar",
+              "diga": "Excuse me",
+              "significa": "com licença"
+            },
+            {
+              "situacao": "pedir desculpa, esbarrar",
+              "diga": "Sorry",
+              "significa": "desculpe"
+            },
+            {
+              "situacao": "despedir-se à noite",
+              "diga": "Good night",
+              "significa": "boa noite"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "Good night! ao chegar a um lugar à noite",
+              "certo": "Hello! ou Hi!",
+              "motivo": "«Good night» só serve para se despedir."
+            },
+            {
+              "errado": "Sorry! para chamar um desconhecido",
+              "certo": "Excuse me!",
+              "motivo": "«Sorry» pede desculpa; «excuse me» chama a atenção."
+            },
+            {
+              "errado": "Thank you! como resposta a «thank you»",
+              "certo": "You're welcome.",
+              "motivo": "Quem agradece ouve «you're welcome»."
+            },
+            {
+              "errado": "Water! sozinho, sem mais nada",
+              "certo": "Water, please.",
+              "motivo": "Sem «please» o pedido soa seco."
+            }
+          ],
+          "tag": "Saudações"
+        },
+        {
           "tipo": "producao",
-          "min": 7,
-          "enunciado": "Soletre em voz alta o seu nome e o seu sobrenome (por exemplo: F-E-L-I-P-E). Depois diga: «Hello! Good morning. Thank you. Goodbye.»"
+          "min": 4,
+          "enunciado": "Soletre em voz alta o seu nome e o seu sobrenome, uma letra por vez, com o nome inglês de cada letra (por exemplo: F, E, L, I, P, E). Depois faça o pedido do café como a Emma, em voz alta: «Good morning! Juice, please. Thank you very much. Goodbye!»",
+          "exemplo": "F, E, L, I, P, E. Good morning! Juice, please. Thank you very much. Goodbye!"
         }
       ]
     },
@@ -363,11 +555,127 @@
       "duracaoMin": 30,
       "blocos": [
         {
+          "tipo": "palavras",
+          "min": 5,
+          "itens": [
+            {
+              "ru": "think",
+              "translit": "thínk",
+              "pt": "pensar",
+              "en": "",
+              "audio": "think"
+            },
+            {
+              "ru": "three",
+              "translit": "thrii",
+              "pt": "três",
+              "en": "",
+              "audio": "three"
+            },
+            {
+              "ru": "this",
+              "translit": "dhis",
+              "pt": "este, isto",
+              "en": "",
+              "audio": "this"
+            },
+            {
+              "ru": "mother",
+              "translit": "mádher",
+              "pt": "mãe",
+              "en": "",
+              "audio": "mother"
+            },
+            {
+              "ru": "red",
+              "translit": "réd",
+              "pt": "vermelho",
+              "en": "",
+              "audio": "red"
+            },
+            {
+              "ru": "car",
+              "translit": "kár",
+              "pt": "carro",
+              "en": "",
+              "audio": "car"
+            },
+            {
+              "ru": "teacher",
+              "translit": "tíitcher",
+              "pt": "professor, professora",
+              "en": "",
+              "audio": "teacher"
+            },
+            {
+              "ru": "hotel",
+              "translit": "hôutél",
+              "pt": "hotel",
+              "en": "",
+              "audio": "hotel"
+            },
+            {
+              "ru": "house",
+              "translit": "háus",
+              "pt": "casa",
+              "en": "",
+              "audio": "house"
+            },
+            {
+              "ru": "stop",
+              "translit": "stóp",
+              "pt": "pare, parar",
+              "en": "",
+              "audio": "stop"
+            },
+            {
+              "ru": "ship",
+              "translit": "ship",
+              "pt": "navio (i curto)",
+              "en": "",
+              "audio": "ship"
+            },
+            {
+              "ru": "sheep",
+              "translit": "shiip",
+              "pt": "ovelha (i longo)",
+              "en": "",
+              "audio": "sheep"
+            }
+          ]
+        },
+        {
           "tipo": "gramatica",
-          "min": 15,
-          "titulo": "Os cinco sons que mais confundem os brasileiros",
-          "explicacao": "PASSO 1: o «th». Existem dois: o som SEM voz (think, thank, three) e o som COM voz (this, that, the). Nos dois, a ponta da língua fica levemente entre os dentes e o ar passa pela frente. Não troque por «t», «f», «s» nem «d». PASSO 2: o «r» americano. A língua puxa para trás e NÃO toca o céu da boca; os lábios ficam um pouco arredondados. Não é o «rr» de «rato» e não é o «r» de «caro». Ele também soa no fim da palavra: car, teacher. PASSO 3: o «h» no começo da palavra é só um sopro leve de ar (hello, house, he). Não desaparece (hotel não é «otel») e não é áspero como o «rr» de «rato». PASSO 4: consoante no fim da palavra fica sozinha, sem vogal extra: «stop» (não «stópi»), «bed» (não «bédi»), «Facebook» (não «feicibúki»). PASSO 5: vogal curta e vogal longa mudam o significado: ship (navio, i curto) × sheep (ovelha, i longo); live × leave; full × fool.",
-          "comparacao": "o português tem vogais abertas e fechadas, mas não tem o «th», não tem este «r» e costuma colocar uma vogal depois das consoantes finais («internet» vira «internéti»). Esses quatro pontos concentram a maior parte do sotaque brasileiro em inglês.",
+          "min": 7,
+          "titulo": "O «th» e o «r»: os dois sons mais difíceis",
+          "explicacao": "PASSO 1: o «th» tem dois sons. Nos dois, a ponta da língua fica levemente entre os dentes. PASSO 2: no primeiro, só sai ar, sem voz. É o som de «think», «thank» e «three». Sopre devagar, como um «s» bem molinho. PASSO 3: no segundo, a voz liga. É o som de «this», «that» e «mother». Encoste os dedos na garganta: ela deve vibrar. PASSO 4: não troque o «th» por «t», «f», «s» nem «d». «Three» não é «tree», e nem «free». PASSO 5: agora o «r» americano. A língua puxa para trás e não toca o céu da boca. Os lábios ficam um pouco arredondados, como para dizer «u». Não é o «rr» de «rato», e não é o «r» de «caro». PASSO 6: esse «r» também soa no fim da palavra: «car» e «teacher».",
+          "comparacao": "o português não tem o «th» e não tem este «r». Por isso, o brasileiro troca o «th» por «t», «f» ou «d» e usa o «rr» de «rato». Esses dois pontos concentram boa parte do sotaque brasileiro em inglês.",
+          "exemplos": [
+            {
+              "ru": "think",
+              "pt": "pensar (th sem voz)"
+            },
+            {
+              "ru": "three",
+              "pt": "três (th sem voz)"
+            },
+            {
+              "ru": "this",
+              "pt": "este, isto (th com voz)"
+            },
+            {
+              "ru": "mother",
+              "pt": "mãe (th com voz)"
+            },
+            {
+              "ru": "red",
+              "pt": "vermelho (r no começo)"
+            },
+            {
+              "ru": "teacher",
+              "pt": "professor (r no fim)"
+            }
+          ],
           "tabela": [
             {
               "som": "«th» sem voz",
@@ -386,18 +694,6 @@
               "como": "língua para trás, sem tocar o céu da boca",
               "exemplos": "red, right, car, teacher",
               "erro": "rr de «rato»"
-            },
-            {
-              "som": "«h» inicial",
-              "como": "sopro leve, sem aspereza",
-              "exemplos": "hello, house, he, hotel",
-              "erro": "omitir o h"
-            },
-            {
-              "som": "i curto × i longo",
-              "como": "i curto é rápido; i longo é esticado",
-              "exemplos": "ship × sheep, it × eat",
-              "erro": "dizer os dois iguais"
             }
           ],
           "erros": [
@@ -406,6 +702,76 @@
               "certo": "think",
               "motivo": "Ponta da língua entre os dentes, só ar."
             },
+            {
+              "errado": "«dis» para this",
+              "certo": "this",
+              "motivo": "No «th» com voz, a língua fica entre os dentes e a voz liga."
+            },
+            {
+              "errado": "«rr» de «rato» em red",
+              "certo": "red",
+              "motivo": "A língua puxa para trás e não toca o céu da boca."
+            }
+          ],
+          "tag": "Pronúncia"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 7,
+          "titulo": "O «h», o fim da palavra e as vogais curtas e longas",
+          "explicacao": "PASSO 1: o «h» no começo da palavra é só um sopro leve de ar, como quando você embaça um vidro. Ouça em «hello», «house» e «hotel». Ele existe: «hotel» não é «otel». E não é áspero como o «rr» de «rato». PASSO 2: consoante no fim da palavra fica sozinha, sem vogal extra. Diga «stop», e não «stópi». Diga «bed», e não «bédi». Diga «Facebook» sem um «i» no fim. PASSO 3: a vogal do inglês pode ser curta ou longa, e isso muda a palavra. «Ship» tem o i curto e quer dizer navio. «Sheep» tem o i longo e quer dizer ovelha. PASSO 4: para o i longo, estique o som e abra um pouco o sorriso. Para o curto, seja rápido e relaxado. PASSO 5: treine mais dois pares: «live» e «leave», «full» e «fool». Para nós, parecem iguais. Para quem fala inglês, são palavras diferentes.",
+          "comparacao": "o português costuma colocar uma vogal depois das consoantes finais, e «internet» vira «internéti». Em inglês, a palavra termina na consoante. O «h» inicial também é diferente: em português ele é mudo, em inglês é um sopro.",
+          "exemplos": [
+            {
+              "ru": "hello",
+              "pt": "olá (h com sopro)"
+            },
+            {
+              "ru": "house",
+              "pt": "casa (h com sopro)"
+            },
+            {
+              "ru": "stop",
+              "pt": "pare (sem vogal no fim)"
+            },
+            {
+              "ru": "ship",
+              "pt": "navio (i curto)"
+            },
+            {
+              "ru": "sheep",
+              "pt": "ovelha (i longo)"
+            },
+            {
+              "ru": "live",
+              "pt": "morar (i curto)"
+            },
+            {
+              "ru": "leave",
+              "pt": "sair (i longo)"
+            }
+          ],
+          "tabela": [
+            {
+              "som": "«h» inicial",
+              "como": "sopro leve, sem aspereza",
+              "exemplos": "hello, house, he, hotel",
+              "erro": "omitir o h"
+            },
+            {
+              "som": "consoante final",
+              "como": "a palavra termina na consoante",
+              "exemplos": "stop, bed, Facebook",
+              "erro": "stópi, bédi"
+            },
+            {
+              "som": "i curto × i longo",
+              "como": "i curto é rápido; i longo é esticado",
+              "exemplos": "ship × sheep, it × eat, live × leave",
+              "erro": "dizer os dois iguais"
+            }
+          ],
+          "erros": [
             {
               "errado": "«otel» para hotel",
               "certo": "hotel",
@@ -425,62 +791,15 @@
           "tag": "Pronúncia"
         },
         {
-          "tipo": "palavras",
-          "min": 5,
-          "itens": [
-            {
-              "ru": "think",
-              "translit": "thínk",
-              "pt": "pensar",
-              "en": "",
-              "audio": "think"
-            },
-            {
-              "ru": "this",
-              "translit": "dhis",
-              "pt": "este, isto",
-              "en": "",
-              "audio": "this"
-            },
-            {
-              "ru": "red",
-              "translit": "réd",
-              "pt": "vermelho",
-              "en": "",
-              "audio": "red"
-            },
-            {
-              "ru": "hotel",
-              "translit": "hôutél",
-              "pt": "hotel",
-              "en": "",
-              "audio": "hotel"
-            },
-            {
-              "ru": "ship",
-              "translit": "ship",
-              "pt": "navio (i curto)",
-              "en": "",
-              "audio": "ship"
-            },
-            {
-              "ru": "sheep",
-              "translit": "shiip",
-              "pt": "ovelha (i longo)",
-              "en": "",
-              "audio": "sheep"
-            }
-          ]
-        },
-        {
           "tipo": "producao",
-          "min": 5,
-          "enunciado": "Diga cinco vezes, devagar e depois mais rápido: «This is three thin things.» Em seguida: «The red ship is here.»"
+          "min": 6,
+          "enunciado": "Primeiro diga estes pares devagar, mostrando a diferença: «ship, sheep», «full, fool», «live, leave». Depois diga cinco vezes, devagar e mais rápido: «This is three thin things.», que quer dizer «Isto são três coisas finas». Por fim: «The red ship is here.», que quer dizer «O navio vermelho está aqui». Note que, nessas frases, os sons difíceis aparecem juntos. Se puder, grave a sua voz e compare com o áudio.",
+          "exemplo": "This is three thin things. The red ship is here."
         },
         {
           "tipo": "revisao",
           "min": 5,
-          "enunciado": "Soletre em voz alta o nome da sua cidade e diga «hello», «thank you» e «goodbye» sem olhar."
+          "enunciado": "Sem olhar, soletre em voz alta o nome da sua cidade e diga «hello», «good morning», «please», «thank you», «you're welcome», «sorry», «excuse me» e «goodbye»."
         }
       ]
     },
@@ -490,66 +809,51 @@
       "duracaoMin": 30,
       "blocos": [
         {
-          "tipo": "gramatica",
-          "min": 15,
-          "titulo": "Por que a escrita do inglês engana",
-          "explicacao": "PASSO 1: em inglês, a mesma letra pode ter sons diferentes, e o mesmo som pode ter escritas diferentes. Não adianta ler como se lê em português. PASSO 2: existem padrões que ajudam. O mais útil: vogal + consoante + «e» no fim. O «e» final não se pronuncia, mas faz a vogal «dizer o seu nome»: cap → cape, hop → hope, bit → bite. PASSO 3: duas vogais juntas costumam dar um som longo: «ee» e «ea» (meet, eat), «ai» e «ay» (rain, day), «oa» (boat). PASSO 4: o final «-tion» soa «shan»: nation, information. PASSO 5: há letras escritas que não soam: knife (o k não soa), write (o w não soa), hour (o h não soa), listen (o t não soa). PASSO 6: cada palavra tem UMA sílaba forte, e ela não vem marcada na escrita. Por isso, aprenda a palavra ouvindo-a, não só lendo-a. Em dúvida, use um dicionário com áudio.",
-          "comparacao": "em português quase sempre você escreve o que fala. Em inglês a ortografia guarda a história da palavra, e por isso o áudio vem antes da leitura.",
-          "tabela": [
-            {
-              "padrao": "vogal + consoante + e final",
-              "som": "a vogal diz o próprio nome",
-              "exemplos": "cap → cape, hop → hope, bit → bite"
-            },
-            {
-              "padrao": "ee, ea",
-              "som": "i longo",
-              "exemplos": "meet, see, eat"
-            },
-            {
-              "padrao": "ai, ay",
-              "som": "êi",
-              "exemplos": "rain, day"
-            },
-            {
-              "padrao": "oa",
-              "som": "ôu",
-              "exemplos": "boat, coat"
-            },
-            {
-              "padrao": "-tion",
-              "som": "«shan»",
-              "exemplos": "nation, information"
-            },
-            {
-              "padrao": "letra que não soa",
-              "som": "silêncio",
-              "exemplos": "knife, write, hour, listen"
-            }
-          ],
-          "erros": [
-            {
-              "errado": "ler «make» como «mêiki»",
-              "certo": "make /meɪk/",
-              "motivo": "O e final não soa; ele só muda a vogal."
-            },
-            {
-              "errado": "ler «knife» com o k",
-              "certo": "knife /naɪf/",
-              "motivo": "O k inicial antes de n não soa."
-            },
-            {
-              "errado": "ler «nation» como «nêition»",
-              "certo": "nation /ˈneɪʃən/",
-              "motivo": "-tion soa «shan»."
-            }
-          ],
-          "tag": "Pronúncia"
-        },
-        {
           "tipo": "palavras",
-          "min": 6,
+          "min": 4,
           "itens": [
+            {
+              "ru": "cap",
+              "translit": "kép",
+              "pt": "boné",
+              "en": "",
+              "audio": "cap"
+            },
+            {
+              "ru": "cape",
+              "translit": "kêip",
+              "pt": "capa",
+              "en": "",
+              "audio": "cape"
+            },
+            {
+              "ru": "hop",
+              "translit": "hóp",
+              "pt": "pular",
+              "en": "",
+              "audio": "hop"
+            },
+            {
+              "ru": "hope",
+              "translit": "hôup",
+              "pt": "esperança, esperar",
+              "en": "",
+              "audio": "hope"
+            },
+            {
+              "ru": "bit",
+              "translit": "bit",
+              "pt": "pedacinho",
+              "en": "",
+              "audio": "bit"
+            },
+            {
+              "ru": "bite",
+              "translit": "báit",
+              "pt": "morder, mordida",
+              "en": "",
+              "audio": "bite"
+            },
             {
               "ru": "name",
               "translit": "nêim",
@@ -595,25 +899,362 @@
           ]
         },
         {
-          "tipo": "producao",
+          "tipo": "gramatica",
+          "min": 6,
+          "titulo": "Por que a escrita do inglês engana",
+          "explicacao": "PASSO 1: em português, quase sempre você lê como está escrito. Em inglês, não. A mesma letra pode ter sons diferentes. E o mesmo som pode ter escritas diferentes. PASSO 2: por isso, o áudio vem antes da leitura. Ouça a palavra, depois leia. Em dúvida, use um dicionário com áudio. PASSO 3: existe um padrão muito útil: vogal, consoante e «e» no fim. O «e» final fica mudo, mas faz a vogal dizer o próprio nome. PASSO 4: ouça: «cap» vira «cape». «Hop» vira «hope». «Bit» vira «bite». PASSO 5: lembre os nomes das letras da primeira sessão. O «a» diz «êi», o «i» diz «ai» e o «o» diz «ôu». É esse o som que a vogal ganha.",
+          "comparacao": "em português você escreve o que fala. Em inglês, a ortografia guarda a história da palavra. Por isso o áudio vem antes da leitura.",
+          "exemplos": [
+            {
+              "ru": "cap",
+              "pt": "boné"
+            },
+            {
+              "ru": "cape",
+              "pt": "capa"
+            },
+            {
+              "ru": "hop",
+              "pt": "pular"
+            },
+            {
+              "ru": "hope",
+              "pt": "esperança"
+            },
+            {
+              "ru": "bit",
+              "pt": "pedacinho"
+            },
+            {
+              "ru": "bite",
+              "pt": "morder"
+            },
+            {
+              "ru": "make",
+              "pt": "fazer"
+            }
+          ],
+          "tabela": [
+            {
+              "padrao": "vogal + consoante + e final",
+              "som": "a vogal diz o próprio nome",
+              "exemplos": "cap → cape, hop → hope, bit → bite"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "ler «make» como «mêiki»",
+              "certo": "make /meɪk/",
+              "motivo": "O e final não soa; ele só muda a vogal."
+            },
+            {
+              "errado": "ler «cape» como «kép»",
+              "certo": "cape /keɪp/",
+              "motivo": "Com o «e» final, a vogal diz o próprio nome: «êi»."
+            }
+          ],
+          "tag": "Pronúncia"
+        },
+        {
+          "tipo": "gramatica",
+          "min": 5,
+          "titulo": "Duas vogais juntas, o final «-tion» e as letras mudas",
+          "explicacao": "PASSO 1: duas vogais juntas costumam dar um som longo. «Ee» e «ea» soam como um i longo, em «meet» e «eat». «Ai» e «ay» soam «êi», em «rain» e «day». «Oa» soa «ôu», em «boat» e «coat». PASSO 2: o final «-tion» soa «shan». Ouça: «nation» e «information». PASSO 3: algumas letras são escritas, mas não soam. Em «knife», o k não soa. Em «write», o w não soa. Em «hour», o h não soa. Em «listen», o t não soa. PASSO 4: cada palavra tem uma sílaba forte, e ela não vem marcada na escrita. Aprenda a palavra ouvindo.",
+          "exemplos": [
+            {
+              "ru": "meet",
+              "pt": "encontrar (ee = i longo)"
+            },
+            {
+              "ru": "eat",
+              "pt": "comer (ea = i longo)"
+            },
+            {
+              "ru": "rain",
+              "pt": "chuva (ai = êi)"
+            },
+            {
+              "ru": "day",
+              "pt": "dia (ay = êi)"
+            },
+            {
+              "ru": "boat",
+              "pt": "barco (oa = ôu)"
+            },
+            {
+              "ru": "nation",
+              "pt": "nação (-tion = shan)"
+            },
+            {
+              "ru": "knife",
+              "pt": "faca (k mudo)"
+            },
+            {
+              "ru": "write",
+              "pt": "escrever (w mudo)"
+            },
+            {
+              "ru": "hour",
+              "pt": "hora (h mudo)"
+            }
+          ],
+          "tabela": [
+            {
+              "padrao": "ee, ea",
+              "som": "i longo",
+              "exemplos": "meet, see, eat"
+            },
+            {
+              "padrao": "ai, ay",
+              "som": "êi",
+              "exemplos": "rain, day"
+            },
+            {
+              "padrao": "oa",
+              "som": "ôu",
+              "exemplos": "boat, coat"
+            },
+            {
+              "padrao": "-tion",
+              "som": "«shan»",
+              "exemplos": "nation, information"
+            },
+            {
+              "padrao": "letra que não soa",
+              "som": "silêncio",
+              "exemplos": "knife, write, hour, listen"
+            }
+          ],
+          "erros": [
+            {
+              "errado": "ler «knife» com o k",
+              "certo": "knife /naɪf/",
+              "motivo": "O k inicial antes de n não soa."
+            },
+            {
+              "errado": "ler «nation» como «nêition»",
+              "certo": "nation /ˈneɪʃən/",
+              "motivo": "-tion soa «shan»."
+            },
+            {
+              "errado": "ler «hour» com o h",
+              "certo": "hour /ˈaʊər/",
+              "motivo": "O h de «hour» não soa."
+            }
+          ],
+          "tag": "Pronúncia"
+        },
+        {
+          "tipo": "dialogo",
           "min": 4,
-          "enunciado": "Diga as palavras em pares e note a diferença: cap × cape, hop × hope, bit × bite. Depois escreva 3 palavras que você conhece em inglês e diga se o som bate com a escrita."
+          "titulo": "Name, please / Seu nome, por favor",
+          "contexto": "Mia faz o check-in num hotel e soletra o nome. Repare: «Sorry?» com a voz subindo quer dizer «Como?».",
+          "linhas": [
+            {
+              "personagem": "Receptionist",
+              "ru": "— Hello! Good morning.",
+              "pt": "— Olá! Bom dia.",
+              "audio": "Hello! Good morning."
+            },
+            {
+              "personagem": "Mia",
+              "ru": "— Good morning!",
+              "pt": "— Bom dia!",
+              "audio": "Good morning!"
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Name, please.",
+              "pt": "— Seu nome, por favor.",
+              "audio": "Name, please."
+            },
+            {
+              "personagem": "Mia",
+              "ru": "— Mia. M-I-A.",
+              "pt": "— Mia. M-I-A.",
+              "audio": "Mia. M-I-A."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Sorry? N-I-A?",
+              "pt": "— Como? N-I-A?",
+              "audio": "Sorry? N-I-A?"
+            },
+            {
+              "personagem": "Mia",
+              "ru": "— No, no. M-I-A.",
+              "pt": "— Não, não. M-I-A.",
+              "audio": "No, no. M-I-A."
+            },
+            {
+              "personagem": "Receptionist",
+              "ru": "— Ah, M-I-A! Thank you, Mia.",
+              "pt": "— Ah, M-I-A! Obrigado, Mia.",
+              "audio": "Ah, M-I-A! Thank you, Mia."
+            },
+            {
+              "personagem": "Mia",
+              "ru": "— You're welcome.",
+              "pt": "— De nada.",
+              "audio": "You're welcome."
+            }
+          ]
+        },
+        {
+          "tipo": "exercicios",
+          "min": 6,
+          "itens": [
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "cape",
+              "opcoes": [
+                "cap",
+                "cape",
+                "cab"
+              ],
+              "gabarito": "cape",
+              "explicacao": "Ouça a vogal: ela diz «êi», longa. É o «e» final mudo que faz isso em «cape».",
+              "id": "en-001-e01"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "sheep",
+              "opcoes": [
+                "ship",
+                "sheep",
+                "chip"
+              ],
+              "gabarito": "sheep",
+              "explicacao": "Em «sheep» o i é longo, esticado. Em «ship» é curto e rápido.",
+              "id": "en-001-e02"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "bite",
+              "respostaEsperada": "bite",
+              "explicacao": "Escreva: bite. A vogal diz «ai» por causa do «e» final mudo.",
+              "id": "en-001-e03"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Name please",
+              "respostaEsperada": "Name please",
+              "explicacao": "Escreva: name, please. «Name» tem o «e» final mudo e a vogal diz «êi».",
+              "id": "en-001-e04"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual palavra tem o «th» COM voz, como em «mother»?",
+              "opcoes": [
+                "think",
+                "this",
+                "three"
+              ],
+              "gabarito": "this",
+              "explicacao": "Em «this» a voz liga. Em «think» e «three» só sai ar.",
+              "id": "en-001-e05"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Em «rain», qual é o som das letras «ai»?",
+              "opcoes": [
+                "êi",
+                "é",
+                "ii"
+              ],
+              "gabarito": "êi",
+              "explicacao": "Duas vogais «ai» juntas soam «êi», como em «day».",
+              "id": "en-001-e06"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "hop vira ___ com o «e» final mudo.",
+              "opcoes": [
+                "hope",
+                "hoop",
+                "hap"
+              ],
+              "gabarito": "hope",
+              "explicacao": "O «e» final é mudo, mas faz a vogal dizer o próprio nome: «ôu».",
+              "id": "en-001-e07"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "O «k» não soa em ___.",
+              "opcoes": [
+                "knife",
+                "key",
+                "milk"
+              ],
+              "gabarito": "knife",
+              "explicacao": "Em «knife» o k vem antes do n e fica mudo. Em «key» e «milk» ele soa.",
+              "id": "en-001-e08"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Name, please.»",
+              "opcoes": [
+                "Name",
+                "please"
+              ],
+              "gabarito": "Name, please.",
+              "explicacao": "O pedido vem primeiro e o «please» fecha a frase.",
+              "id": "en-001-e09"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva as letras do seu primeiro nome, separadas por hífen, e diga em voz alta o nome em inglês de cada letra.",
+              "respostaEsperada": "F-E-L-I-P-E. Eu digo: éf, ii, él, ai, pi, ii.",
+              "explicacao": "Cada letra tem um nome em inglês, diferente do português. Dizer as letras em voz alta treina o ouvido e a boca ao mesmo tempo.",
+              "id": "en-001-e10"
+            }
+          ]
+        },
+        {
+          "tipo": "producao",
+          "min": 3,
+          "enunciado": "Diga as palavras em pares e note a diferença: cap e cape, hop e hope, bit e bite. Depois leia o diálogo da Mia em voz alta, fazendo os dois papéis."
         },
         {
           "tipo": "revisao",
-          "min": 5,
+          "min": 2,
           "enunciado": "Diga em voz alta: think, this, red, hotel, ship, sheep. Qual é o som de cada «th»?"
         }
       ]
     },
     {
       "sessao": "S4",
-      "titulo": "Revisão e prática da aula 1",
+      "titulo": "Leitura, revisão e prática da aula 1",
       "duracaoMin": 30,
       "blocos": [
         {
+          "tipo": "texto",
+          "min": 5,
+          "titulo": "A day of polite words / Um dia de palavras gentis",
+          "ru": "Morning. Hello! Good morning. Juice, please. Apple juice. Thank you very much. You're welcome. Goodbye!\nHotel. Excuse me! Name, please. Sorry? Yes, Emma. E-M-M-A. Thank you. You're welcome.\nStreet. Oh, sorry! Excuse me. No, no. Thank you.\nNight. Hi, Tom! Good night, Tom. Goodbye!",
+          "pt": "De manhã. Olá! Bom dia. Um suco, por favor. Suco de maçã. Muito obrigada. De nada. Tchau!\nNo hotel. Com licença! Seu nome, por favor. Como? Sim, Emma. E-M-M-A. Obrigada. De nada.\nNa rua. Ah, desculpe! Com licença. Não, não. Obrigada.\nÀ noite. Oi, Tom! Boa noite, Tom. Tchau!",
+          "perguntas": [
+            {
+              "pergunta": "O que a Emma pede de manhã?",
+              "resposta": "Um suco de maçã («apple juice»)."
+            },
+            {
+              "pergunta": "Que frase responde a «thank you very much»?",
+              "resposta": "«You're welcome», que quer dizer de nada."
+            },
+            {
+              "pergunta": "Como a Emma soletra o nome dela no hotel?",
+              "resposta": "E-M-M-A. Em inglês: ii, ém, ém, êi."
+            }
+          ]
+        },
+        {
           "tipo": "exercicios",
-          "min": 20,
+          "min": 16,
           "itens": [
             {
               "tipo": "audio-recognition",
@@ -625,8 +1266,8 @@
                 "Goodbye"
               ],
               "gabarito": "Good morning",
-              "explicacao": "Ouça: «morning» é de manhã.",
-              "id": "en-001-e01"
+              "explicacao": "Ouça: «morning» é de manhã. «Night» é à noite e «goodbye» é despedida.",
+              "id": "en-001-e11"
             },
             {
               "tipo": "audio-recognition",
@@ -638,8 +1279,8 @@
                 "Excuse me"
               ],
               "gabarito": "Thank you",
-              "explicacao": "Ouça: agradecimento.",
-              "id": "en-001-e02"
+              "explicacao": "Ouça o «th» do começo, com a língua entre os dentes: é agradecimento.",
+              "id": "en-001-e12"
             },
             {
               "tipo": "audio-recognition",
@@ -648,19 +1289,84 @@
               "opcoes": [
                 "Excuse me",
                 "Please",
-                "You are welcome"
+                "You're welcome"
               ],
               "gabarito": "Excuse me",
-              "explicacao": "Ouça: «excuse me» chama a atenção.",
-              "id": "en-001-e03"
+              "explicacao": "Ouça «excuse me»: chama a atenção de alguém. Não é pedido nem resposta a agradecimento.",
+              "id": "en-001-e13"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Three",
+              "opcoes": [
+                "Three",
+                "Tree",
+                "Free"
+              ],
+              "gabarito": "Three",
+              "explicacao": "O «th» tem a língua entre os dentes, só ar. Em «tree» soa «t», e em «free» soa «f».",
+              "id": "en-001-e14"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Apple juice, please",
+              "opcoes": [
+                "Apple juice, please",
+                "Orange juice, please",
+                "Apple juice, thank you"
+              ],
+              "gabarito": "Apple juice, please",
+              "explicacao": "Ouça a primeira palavra («apple») e a última («please»): o pedido termina com «please».",
+              "id": "en-001-e15"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Good night",
+              "opcoes": [
+                "Good night",
+                "Good morning",
+                "Goodbye"
+              ],
+              "gabarito": "Good night",
+              "explicacao": "Ouça a segunda palavra: «night», com o ditongo «ai». É a despedida da noite.",
+              "id": "en-001-e16"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "No, thank you",
+              "opcoes": [
+                "No, thank you",
+                "Yes, thank you",
+                "No, please"
+              ],
+              "gabarito": "No, thank you",
+              "explicacao": "Ouça a primeira palavra: «no» é não. A frase termina com «thank you».",
+              "id": "en-001-e17"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escolha.",
+              "audio": "Hello, Anna",
+              "opcoes": [
+                "Hello, Anna",
+                "Hello, Emma",
+                "Hi, Anna"
+              ],
+              "gabarito": "Hello, Anna",
+              "explicacao": "Ouça a primeira palavra e o nome. «Hello» é mais comprido que «hi».",
+              "id": "en-001-e18"
             },
             {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Hello",
               "respostaEsperada": "Hello",
-              "explicacao": "Escreva: hello.",
-              "id": "en-001-e04"
+              "explicacao": "Escreva: hello. O «h» no começo existe, mesmo sendo um sopro leve.",
+              "id": "en-001-e19"
             },
             {
               "tipo": "audio-recognition",
@@ -668,7 +1374,23 @@
               "audio": "Goodbye",
               "respostaEsperada": "Goodbye",
               "explicacao": "Escreva: goodbye, em uma palavra só.",
-              "id": "en-001-e05"
+              "id": "en-001-e20"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Thank you very much",
+              "respostaEsperada": "Thank you very much",
+              "explicacao": "Escreva: thank you very much. São quatro palavras.",
+              "id": "en-001-e21"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Good night",
+              "respostaEsperada": "Good night",
+              "explicacao": "Escreva: good night. Duas palavras, e a escrita «igh» soa «ai».",
+              "id": "en-001-e22"
             },
             {
               "tipo": "multiple-choice",
@@ -679,20 +1401,20 @@
                 "free"
               ],
               "gabarito": "three",
-              "explicacao": "«three» começa com «th»; «tree» começa com «tr» e «free» com «f».",
-              "id": "en-001-e06"
+              "explicacao": "«Three» começa com «th»; «tree» começa com «tr» e «free» com «f».",
+              "id": "en-001-e23"
             },
             {
               "tipo": "multiple-choice",
-              "enunciado": "O que acontece com a vogal em «cape» (comparado a «cap»)?",
+              "enunciado": "O que acontece com a vogal em «cape», comparado a «cap»?",
               "opcoes": [
                 "ela diz o próprio nome (êi)",
                 "ela fica muda",
                 "ela fica mais curta"
               ],
               "gabarito": "ela diz o próprio nome (êi)",
-              "explicacao": "O e final é mudo, mas faz a vogal ser longa.",
-              "id": "en-001-e07"
+              "explicacao": "O «e» final é mudo, mas faz a vogal ser longa.",
+              "id": "en-001-e24"
             },
             {
               "tipo": "multiple-choice",
@@ -703,8 +1425,8 @@
                 "pronunciar como «rr» áspero"
               ],
               "gabarito": "pronunciar um sopro leve",
-              "explicacao": "O h inicial existe, mas é leve.",
-              "id": "en-001-e08"
+              "explicacao": "O h inicial existe, mas é leve. Não é mudo e não é áspero.",
+              "id": "en-001-e25"
             },
             {
               "tipo": "multiple-choice",
@@ -715,8 +1437,56 @@
                 "red"
               ],
               "gabarito": "knife",
-              "explicacao": "Em «knife» o k não soa: «náif».",
-              "id": "en-001-e09"
+              "explicacao": "Em «knife» o k não soa: «náif». Em «cat» e «red» todas as letras soam.",
+              "id": "en-001-e26"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Alguém agradece a você. O que você responde?",
+              "opcoes": [
+                "You're welcome.",
+                "Good night.",
+                "Excuse me."
+              ],
+              "gabarito": "You're welcome.",
+              "explicacao": "«You're welcome» é a resposta a um agradecimento. Quer dizer de nada.",
+              "id": "en-001-e27"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Você esbarrou em alguém sem querer. O que diz?",
+              "opcoes": [
+                "Sorry!",
+                "Please!",
+                "Hello!"
+              ],
+              "gabarito": "Sorry!",
+              "explicacao": "«Sorry» pede desculpa por um erro ou esbarrão.",
+              "id": "en-001-e28"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Qual par tem vogais diferentes, uma curta e uma longa?",
+              "opcoes": [
+                "ship e sheep",
+                "ship e ship",
+                "sheep e sheep"
+              ],
+              "gabarito": "ship e sheep",
+              "explicacao": "«Ship» tem o i curto e «sheep» tem o i longo. Por isso são palavras diferentes.",
+              "id": "en-001-e29"
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "Como se diz o nome da letra H em inglês?",
+              "opcoes": [
+                "êitch",
+                "agá",
+                "rrá"
+              ],
+              "gabarito": "êitch",
+              "explicacao": "O nome inglês da letra H é «êitch». «Agá» é o nome em português.",
+              "id": "en-001-e30"
             },
             {
               "tipo": "fill-gap",
@@ -727,8 +1497,8 @@
                 "we"
               ],
               "gabarito": "you",
-              "explicacao": "«Thank you» é a forma completa.",
-              "id": "en-001-e10"
+              "explicacao": "«Thank you» é a forma completa. Quer dizer obrigado a você.",
+              "id": "en-001-e31"
             },
             {
               "tipo": "fill-gap",
@@ -739,8 +1509,8 @@
                 "please"
               ],
               "gabarito": "night",
-              "explicacao": "«Good night» ao se despedir ou ir dormir.",
-              "id": "en-001-e11"
+              "explicacao": "«Good night» serve ao se despedir ou ir dormir. «Morning» é de manhã.",
+              "id": "en-001-e32"
             },
             {
               "tipo": "fill-gap",
@@ -752,7 +1522,67 @@
               ],
               "gabarito": "Excuse",
               "explicacao": "«Excuse me» chama a atenção; «sorry» pede desculpa.",
-              "id": "en-001-e12"
+              "id": "en-001-e33"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Good ___! (bom dia)",
+              "opcoes": [
+                "morning",
+                "night",
+                "please"
+              ],
+              "gabarito": "morning",
+              "explicacao": "«Good morning» é o cumprimento da manhã.",
+              "id": "en-001-e34"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Orange juice, ___. (por favor)",
+              "opcoes": [
+                "please",
+                "sorry",
+                "welcome"
+              ],
+              "gabarito": "please",
+              "explicacao": "«Please» fecha o pedido e quer dizer por favor.",
+              "id": "en-001-e35"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "— Thank you! — You're ___.",
+              "opcoes": [
+                "welcome",
+                "sorry",
+                "please"
+              ],
+              "gabarito": "welcome",
+              "explicacao": "A resposta a um agradecimento é «you're welcome».",
+              "id": "en-001-e36"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "Oh, ___! (desculpe, esbarrei em você)",
+              "opcoes": [
+                "sorry",
+                "welcome",
+                "night"
+              ],
+              "gabarito": "sorry",
+              "explicacao": "«Sorry» é a palavra para pedir desculpa.",
+              "id": "en-001-e37"
+            },
+            {
+              "tipo": "fill-gap",
+              "enunciado": "bit + e = ___ (a vogal diz o próprio nome)",
+              "opcoes": [
+                "bite",
+                "bit",
+                "bet"
+              ],
+              "gabarito": "bite",
+              "explicacao": "Com o «e» final mudo, o «i» diz «ai»: «bite».",
+              "id": "en-001-e38"
             },
             {
               "tipo": "sentence-ordering",
@@ -764,8 +1594,8 @@
                 "much"
               ],
               "gabarito": "Thank you very much.",
-              "explicacao": "Forma enfática de agradecer.",
-              "id": "en-001-e13"
+              "explicacao": "Forma enfática de agradecer: «very much» reforça o «thank you».",
+              "id": "en-001-e39"
             },
             {
               "tipo": "sentence-ordering",
@@ -776,30 +1606,57 @@
                 "Anna"
               ],
               "gabarito": "Good morning, Anna.",
-              "explicacao": "Cumprimento com o nome.",
-              "id": "en-001-e14"
+              "explicacao": "Primeiro o cumprimento e depois o nome da pessoa.",
+              "id": "en-001-e40"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ordene: «Good night, Tom.»",
+              "opcoes": [
+                "Good",
+                "night",
+                "Tom"
+              ],
+              "gabarito": "Good night, Tom.",
+              "explicacao": "A despedida vem primeiro e o nome fecha a frase.",
+              "id": "en-001-e41"
             },
             {
               "tipo": "producao",
               "enunciado": "Escreva em inglês: uma saudação, um agradecimento e uma despedida.",
               "respostaEsperada": "Hello! Thank you. Goodbye.",
-              "id": "en-001-e15"
+              "explicacao": "Uma saudação, um agradecimento e uma despedida são as três frases que você mais vai usar no dia a dia.",
+              "id": "en-001-e42"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Você está num café. Escreva, em inglês, como pedir uma água e agradecer.",
+              "respostaEsperada": "Water, please. Thank you very much.",
+              "explicacao": "Pedir com «please» e agradecer com «thank you» é o que torna o pedido educado em inglês.",
+              "id": "en-001-e43"
+            },
+            {
+              "tipo": "producao",
+              "enunciado": "Escreva o que você diz para chamar a atenção de um desconhecido e o que diz para pedir desculpa ao esbarrar em alguém.",
+              "respostaEsperada": "Excuse me! Sorry!",
+              "explicacao": "São duas frases diferentes: «excuse me» chama a atenção e «sorry» pede desculpa. Não troque uma pela outra.",
+              "id": "en-001-e44"
             }
           ]
         },
         {
           "tipo": "producao",
           "min": 5,
-          "enunciado": "Diga em voz alta: soletre o seu nome; cumprimente; agradeça; peça licença; despeça-se. Depois leia «this is three thin things» sem pressa."
+          "enunciado": "Diga em voz alta: soletre o seu nome; cumprimente; agradeça; peça licença; despeça-se. Depois leia «this is three thin things» sem pressa. Por fim, leia o texto da Emma em voz alta, devagar e depois mais rápido, sem olhar a tradução.",
+          "exemplo": "F, E, L, I, P, E. Hello! Thank you. Excuse me. Goodbye. This is three thin things."
         },
         {
           "tipo": "revisao",
-          "min": 5,
-          "enunciado": "Releia as 5 dicas de pronúncia da sessão 2 e escolha as duas em que você mais erra."
+          "min": 4,
+          "enunciado": "Releia as dicas de pronúncia da sessão 2 e escolha as duas em que você mais erra. Treine só essas duas por um minuto, em voz alta, com uma palavra de exemplo cada."
         }
       ]
     }
   ],
-  "notasParaOAluno": "Você soletra, pronuncia os sons mais difíceis e cumprimenta em inglês. Próxima aula: o verbo «to be» (ser e estar).",
-  "geradaDoLivro": true
+  "notasParaOAluno": "Você soletra, pronuncia os sons mais difíceis e cumprimenta em inglês. Próxima aula: o verbo «to be» (ser e estar)."
 }

@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
-import { falar, falarLista, parar, temVoz } from '../lib/audio';
+import { falar, falarLista, falarTrechos, parar, temVoz } from '../lib/audio';
+import { trechos } from '../lib/narracao';
 import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 import { somErro } from '../lib/sons';
@@ -182,6 +183,23 @@ function Explicacao({ texto }: { texto: string }) {
   );
 }
 
+
+/** «Ouvir explicação»: a narradora lê o texto em português e a voz do idioma estudado lê o que está entre «aspas». Só quando o texto está em português. */
+function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string; explicacao?: string }) {
+  const T = textos(idioma);
+  const [lendo, setLendo] = useState(false);
+  useEffect(() => () => parar(), []);
+  if ((explicacao ?? LOCALE.explicacao) !== 'pt') return null;
+  const ouvir = async () => { setLendo(true); try { await falarTrechos(itens.flatMap((t) => trechos(t, idioma))); } finally { setLendo(false); } };
+  return (
+    <div className="narrar-barra">
+      {lendo
+        ? <button type="button" className="btn btn-ghost" onClick={() => { parar(); setLendo(false); }}>{T.parar}</button>
+        : <button type="button" className="btn btn-ghost" onClick={ouvir}>🔊 {T.ouvirExplicacao}</button>}
+    </div>
+  );
+}
+
 /** `explicacao`: língua em que o bloco está escrito (quando a sessão ainda não foi traduzida, o rótulo acompanha o texto). */
 export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
@@ -189,9 +207,10 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
+      <Narrar itens={[b.explicacao, ...(b.comparacao ? [`Em português: ${b.comparacao}`] : [])]} idioma={idioma} explicacao={explicacao} />
       <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
-      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span> <Audio texto={e.ru} idioma={idioma} /><small className="trad">{e.pt}</small></li>)}</ul>}
+      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><div className="ex-linha"><span lang={idioma} className="ru">{e.ru}</span><Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /></div><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}
       {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
       {b.erros && (
@@ -209,7 +228,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
   switch (b.tipo) {
-    case 'intro': return <p className="callout">{b.texto}</p>;
+    case 'intro': return <><p className="callout">{b.texto}</p><Narrar itens={[b.texto]} idioma={idioma} explicacao={explicacao} /></>;
     case 'revisao': return <p className="callout callout-tarefa"><strong>{T.revisao}</strong> {b.enunciado}</p>;
     case 'producao': return (
       <div className="callout callout-tarefa">

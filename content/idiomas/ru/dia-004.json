@@ -4,176 +4,287 @@
   "fase": 1,
   "nivel": "zero",
   "status": "publicada",
-  "titulo": "Ouvir antes de falar: Cópula zero e prática",
+  "titulo": "Ouvir antes de falar: Sem «é» no presente e prática",
   "objetivo": "Aula 1, sessão 4 de 4 · 30 min",
   "aula": {
     "numero": 1,
     "titulo": "Ouvir antes de falar",
-    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler 19 palavras e produzir 4 frases.",
+    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler as primeiras palavras, ouvir o acento e dizer as primeiras frases.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "zero"
   },
   "sessao": {
     "sessao": "S4",
-    "titulo": "Cópula zero e prática",
+    "titulo": "Sem «é» no presente e prática",
     "duracaoMin": 30,
     "blocos": [
       {
-        "tipo": "gramatica",
-        "min": 10,
-        "titulo": "Cópula zero: não existe «ser/estar» no presente",
-        "explicacao": "Em russo você diz «Это мама» literalmente «isto mãe». Não existe «é». No dia a dia, não diga «Это есть мама».",
-        "exemplos": [
+        "tipo": "texto",
+        "min": 5,
+        "titulo": "Москва / Moscou",
+        "ru": "Это Москва. Вот метро, а там театр. Вот ресторан. Тут Анна, Макс, Вера. Антон там. Он не тут. Кто это? Это Вера. Она мама. Вот сок, вот торт, вот кекс. Это торт? Нет, это не торт, это кекс. Отлично! Спасибо, мама!",
+        "pt": "Esta é Moscou. Aqui está o metrô, e lá o teatro. Aqui está o restaurante. Aqui estão Anna, Max e Vera. Antón está lá. Ele não está aqui. Quem é esta? Esta é Vera. Ela é a mãe. Aqui o suco, aqui a torta, aqui o bolinho. Isto é um bolo? Não, isto não é um bolo, é um bolinho. Ótimo! Obrigado, mãe!",
+        "perguntas": [
           {
-            "ru": "Это мама.",
-            "pt": "Isto é a mãe."
+            "pergunta": "Quem é Vera? Responda em russo, com «Она …».",
+            "resposta": "Она мама."
           },
           {
-            "ru": "Это сок.",
-            "pt": "Isto é suco."
+            "pergunta": "Antón está «тут» ou «там»? Responda em russo.",
+            "resposta": "Он там. (Антон там.)"
           },
           {
-            "ru": "Она мама.",
-            "pt": "Ela é a mãe."
+            "pergunta": "Isto é «торт» ou «кекс»? Responda em russo.",
+            "resposta": "Это не торт, это кекс."
           }
         ]
       },
       {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Sem «é» no presente: «Это мама»",
+        "explicacao": "PASSO 1: Em português você precisa do verbo «ser»: «esta é a mãe». Em russo, no presente, esse verbo não aparece. PASSO 2: Para apontar algo, use «это» (éta), que quer dizer «isto» ou «este é». Depois diga só o nome da coisa: «Это мама» (éta máma), literalmente «isto mãe». PASSO 3: Com «он» (on) e «она» (aná) é igual: «Он Антон» (on antón), «Она мама» (aná máma). Não existe nenhuma palavra entre o sujeito e o resto. PASSO 4: Para negar, ponha «не» (nie) antes da palavra: «Это не торт» (éta nie tort), isto não é bolo. A palavra «нет» fica para a resposta curta: «Нет». PASSO 5: Para perguntar, mantenha a mesma frase e suba a voz na palavra sobre a qual você pergunta: «Это торт?». A ordem das palavras não muda. PASSO 6: Existe uma palavra «есть» (iest), que o dicionário traduz por «ser». No dia a dia ela não entra nestas frases. Não diga «Это есть мама».",
+        "comparacao": "em português «Ela é a mãe» tem três palavras, e o «é» é obrigatório. Em russo basta «Она мама», duas palavras. O verbo «ser» no presente simplesmente não existe.",
+        "exemplos": [
+          {
+            "ru": "Это мама.",
+            "pt": "Esta é a mãe."
+          },
+          {
+            "ru": "Он Антон.",
+            "pt": "Ele é Antón."
+          },
+          {
+            "ru": "Она мама.",
+            "pt": "Ela é a mãe."
+          },
+          {
+            "ru": "Это не торт.",
+            "pt": "Isto não é bolo."
+          },
+          {
+            "ru": "Это торт?",
+            "pt": "Isto é bolo?"
+          },
+          {
+            "ru": "Кто это?",
+            "pt": "Quem é este?"
+          }
+        ],
+        "tabela": [
+          {
+            "português": "Esta é a mãe.",
+            "russo": "Это мама.",
+            "palavra a palavra": "isto mãe"
+          },
+          {
+            "português": "Ela é a mãe.",
+            "russo": "Она мама.",
+            "palavra a palavra": "ela mãe"
+          },
+          {
+            "português": "Isto não é bolo.",
+            "russo": "Это не торт.",
+            "palavra a palavra": "isto não bolo"
+          },
+          {
+            "português": "Isto é bolo?",
+            "russo": "Это торт?",
+            "palavra a palavra": "isto bolo?"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Это есть мама",
+            "certo": "Это мама",
+            "motivo": "No presente não se usa «есть» no lugar de «é». A frase fica só com «Это» e o nome."
+          },
+          {
+            "errado": "Это нет торт",
+            "certo": "Это не торт",
+            "motivo": "Dentro da frase, a negação é «не» e vem antes da palavra. «нет» é o «não» da resposta curta."
+          }
+        ],
+        "tag": "Frase básica"
+      },
+      {
         "tipo": "exercicios",
-        "min": 10,
+        "min": 12,
         "itens": [
           {
-            "id": "ru-001-e01",
             "tipo": "audio-recognition",
-            "enunciado": "Ouça e escolha a letra inicial.",
-            "audio": "мама",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Это Москва.",
             "opcoes": [
-              "А",
-              "М",
-              "О"
+              "Это Москва.",
+              "Это метро.",
+              "Это театр."
             ],
-            "gabarito": "М",
-            "explicacao": "«мама» começa com М."
+            "gabarito": "Это Москва.",
+            "explicacao": "A última palavra é «Москва» (maskvá), com «к» e «в» juntos no meio.",
+            "id": "ru-001-e40"
           },
           {
-            "id": "ru-001-e02",
             "tipo": "audio-recognition",
-            "enunciado": "Ouça e escolha a letra inicial.",
-            "audio": "нет",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Там театр.",
             "opcoes": [
-              "Н",
-              "В",
-              "Р"
+              "Там театр.",
+              "Тут театр.",
+              "Там метро."
             ],
-            "gabarito": "Н",
-            "explicacao": "«нет» começa com Н — parece H latino, mas soa N."
+            "gabarito": "Там театр.",
+            "explicacao": "Começa com «там» (lá), não «тут» (aqui). A última palavra é «театр».",
+            "id": "ru-001-e41"
           },
           {
-            "id": "ru-001-e03",
-            "tipo": "multiple-choice",
-            "enunciado": "Qual letra parece B mas soa V?",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Вот ресторан.",
             "opcoes": [
-              "Б",
-              "В",
-              "Ь"
+              "Вот ресторан.",
+              "Вот метро.",
+              "Вот Москва."
             ],
-            "gabarito": "В",
-            "explicacao": "«В» (ve) soa V em «вот»."
+            "gabarito": "Вот ресторан.",
+            "explicacao": "A palavra final tem três sílabas e termina em n: «ресторан» (ristarán).",
+            "id": "ru-001-e42"
           },
           {
-            "id": "ru-001-e04",
-            "tipo": "multiple-choice",
-            "enunciado": "Qual frase está correta?",
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Антон там.",
             "opcoes": [
-              "Это есть мама",
+              "Антон там.",
+              "Антон тут.",
+              "Анна там."
+            ],
+            "gabarito": "Антон там.",
+            "explicacao": "O nome é «Антон» (antón) e a palavra final é «там» (lá).",
+            "id": "ru-001-e43"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Вот метро.",
+            "respostaEsperada": "Вот метро.",
+            "explicacao": "Duas palavras: «Вот» e «метро». A segunda se escreve com «е», embora se diga mitró.",
+            "id": "ru-001-e44"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Это не торт.",
+            "respostaEsperada": "Это не торт.",
+            "explicacao": "A negação «не» vem antes de «торт». Escreva as três palavras separadas.",
+            "id": "ru-001-e45"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Там Антон.",
+            "respostaEsperada": "Там Антон.",
+            "explicacao": "Para dizer onde alguém está, basta «Там» e o nome. Não há verbo «estar».",
+            "id": "ru-001-e46"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual frase quer dizer «Esta é a mãe»?",
+            "opcoes": [
               "Это мама",
+              "Это есть мама",
               "Мама есть это"
             ],
             "gabarito": "Это мама",
-            "explicacao": "No dia a dia, não se usa «есть» para «é»."
+            "explicacao": "No presente o russo não usa «é». «Это мама» já quer dizer «esta é a mãe».",
+            "id": "ru-001-e47"
           },
           {
-            "id": "ru-001-e05",
-            "tipo": "fill-gap",
-            "enunciado": "— Кто это? — Это ___.",
+            "tipo": "multiple-choice",
+            "enunciado": "Em «Она мама», qual palavra corresponde ao «é» do português?",
             "opcoes": [
-              "мама",
+              "nenhuma: o verbo é omitido",
+              "она",
+              "мама"
+            ],
+            "gabarito": "nenhuma: o verbo é omitido",
+            "explicacao": "O russo não tem «ser» no presente. A frase é só «ela mãe», e isso basta.",
+            "id": "ru-001-e48"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Она» quer dizer:",
+            "opcoes": [
+              "ela",
+              "ele",
+              "mãe"
+            ],
+            "gabarito": "ela",
+            "explicacao": "«Она» é «ela». «Он» é «ele» e «мама» é «mãe». Ouça a diferença: aná e on.",
+            "id": "ru-001-e49"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se diz «Isto não é bolo»?",
+            "opcoes": [
+              "Это не торт",
+              "Это нет торт",
+              "Не это торт"
+            ],
+            "gabarito": "Это не торт",
+            "explicacao": "A negação «не» vem logo antes da palavra negada. «нет» é só para a resposta curta.",
+            "id": "ru-001-e50"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "Это не торт, это ___.",
+            "opcoes": [
+              "кекс",
               "как",
-              "сок"
+              "тут"
             ],
-            "gabarito": "мама",
-            "explicacao": "«Кто это?» → «Это мама»."
+            "gabarito": "кекс",
+            "explicacao": "A frase contrasta duas coisas: não é torta, é bolinho. «как» é «como» e «тут» é «aqui».",
+            "id": "ru-001-e51"
           },
           {
-            "id": "ru-001-e06",
-            "tipo": "sentence-ordering",
-            "enunciado": "Ordene: «Esta é a mãe.»",
-            "opcoes": [
-              "мама",
-              "Это"
-            ],
-            "gabarito": "Это мама.",
-            "explicacao": "Sujeito antes: Это + мама."
-          },
-          {
-            "id": "ru-001-e07",
-            "tipo": "multiple-choice",
-            "enunciado": "Como se diz «obrigado»?",
-            "opcoes": [
-              "Спасибо",
-              "Пока",
-              "Привет"
-            ],
-            "gabarito": "Спасибо",
-            "explicacao": "«Спасибо» = obrigado."
-          },
-          {
-            "id": "ru-001-e08",
-            "tipo": "audio-recognition",
-            "enunciado": "Ouça e escreva em cirílico.",
-            "audio": "не за что",
-            "respostaEsperada": "не за что",
-            "explicacao": "«Не за что» = de nada."
-          },
-          {
-            "id": "ru-001-e09",
-            "tipo": "multiple-choice",
-            "enunciado": "Qual significa «suco»?",
-            "opcoes": [
-              "сор",
-              "сок",
-              "вот"
-            ],
-            "gabarito": "сок",
-            "explicacao": "«Сок» = suco. «Сор» = lixo."
-          },
-          {
-            "id": "ru-001-e10",
             "tipo": "fill-gap",
-            "enunciado": "— Как дела? — ___, спасибо.",
+            "enunciado": "— Кто это? — ___ Вера.",
             "opcoes": [
-              "Хорошо",
-              "Нет",
-              "Кто"
+              "Это",
+              "Как",
+              "Нет"
             ],
-            "gabarito": "Хорошо",
-            "explicacao": "«Хорошо, спасибо» = Bem, obrigado."
+            "gabarito": "Это",
+            "explicacao": "Para apresentar alguém, diz-se «Это» e o nome. «Как» é «como» e «Нет» é «não».",
+            "id": "ru-001-e52"
           },
           {
-            "id": "ru-001-e11",
-            "tipo": "multiple-choice",
-            "enunciado": "«Нормально» significa:",
+            "tipo": "fill-gap",
+            "enunciado": "Вот метро, а ___ театр. (lá)",
             "opcoes": [
-              "Normal (estranho)",
-              "Tudo bem",
-              "Mal"
+              "там",
+              "тут",
+              "нет"
             ],
-            "gabarito": "Tudo bem",
-            "explicacao": "«Нормально» = tudo bem, ok. Não é «anormal»."
+            "gabarito": "там",
+            "explicacao": "O sentido é «lá», longe de quem fala: «там». «тут» é «aqui».",
+            "id": "ru-001-e53"
           },
           {
-            "id": "ru-001-e12",
+            "tipo": "fill-gap",
+            "enunciado": "Антон ___, а Анна там. (aqui)",
+            "opcoes": [
+              "тут",
+              "как",
+              "нет"
+            ],
+            "gabarito": "тут",
+            "explicacao": "Aqui é «тут», lá é «там». A frase contrasta os dois lugares.",
+            "id": "ru-001-e54"
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «Ela é a mãe.»",
             "opcoes": [
@@ -181,20 +292,62 @@
               "Она"
             ],
             "gabarito": "Она мама.",
-            "explicacao": "Sem «é»: Она + мама."
+            "explicacao": "Sem «é»: o sujeito «Она» vem primeiro, depois «мама».",
+            "id": "ru-001-e55"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Isto não é bolo.»",
+            "opcoes": [
+              "не",
+              "Это",
+              "торт"
+            ],
+            "gabarito": "Это не торт.",
+            "explicacao": "«не» vem imediatamente antes da palavra negada: «Это не торт».",
+            "id": "ru-001-e56"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Lá está o teatro.»",
+            "opcoes": [
+              "театр",
+              "Там"
+            ],
+            "gabarito": "Там театр.",
+            "explicacao": "«Там» (lá) abre a frase e depois vem a coisa. Não há verbo «estar».",
+            "id": "ru-001-e57"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em russo: «Esta é Anna. Ela é a mãe.»",
+            "respostaEsperada": "Это Анна. Она мама.",
+            "id": "ru-001-e58"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Escreva em russo, em cirílico, duas frases com «Это» sobre coisas que você aprendeu hoje.",
+            "respostaEsperada": "Это сок. Это торт.",
+            "id": "ru-001-e59"
+          },
+          {
+            "tipo": "producao",
+            "enunciado": "Leia em voz alta e escreva em português: «Кто там? Там Вера, она сестра.»",
+            "respostaEsperada": "Quem está lá? Lá está Vera, ela é a irmã.",
+            "id": "ru-001-e60"
           }
         ]
       },
       {
         "tipo": "producao",
         "min": 5,
-        "enunciado": "Grave-se: «Кто это? Это мама. Она мама. Спасибо!»",
+        "enunciado": "Grave-se por 30 segundos: aponte para quatro coisas ou fotos à sua volta e diga «Это …» para cada uma, usando «сок, торт, кекс, мама, сестра». Depois diga «Это не торт, это кекс.» e termine com «Спасибо!».",
         "exemplo": "Кто это? Это мама. Она мама. Спасибо!"
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Releia o diálogo da S3 e escreva as 3 primeiras linhas em russo."
+        "min": 2,
+        "enunciado": "Releia o diálogo da sessão 3 e escreva as 3 primeiras falas em russo, sem olhar."
       }
     ]
   },

@@ -104,7 +104,7 @@ export const en: Dicionario = {
     opcoes: 'Options', pecas: 'Tap the pieces below', limpar: 'Clear', escrevaPrivado: 'Write here (only you can see it)', escreva: 'Write here', escrevaCirilico: 'Write in Cyrillic',
     certo: 'Correct.', errou: 'Not this time. Answer:', compare: 'Compare with a sample answer:', verExemplo: 'Show example', verificar: 'Check',
     verResultado: 'See result', proximo: 'Next', emPortugues: 'Compare with English:', erros: 'Common mistakes', revisao: 'Review.', suaVez: 'Your turn.',
-    esconder: 'Hide example', ouvirDialogo: 'Listen to the whole dialogue', parar: 'Stop', mostrarTrad: 'Show translation', ouvirTexto: 'Listen to the text',
+    esconder: 'Hide example', ouvirExplicacao: 'Listen to the explanation', ouvirDialogo: 'Listen to the whole dialogue', parar: 'Stop', mostrarTrad: 'Show translation', ouvirTexto: 'Listen to the text',
     perguntas: 'Questions', blocosSessao: 'Session blocks', voltar: 'Back', continuar: 'Continue', concluir: 'Finish session', concluida: 'Session complete',
     concluidaNav: 'Session completed in this browser.', proxSessao: 'Go to the next session →',
     provisorio: "Temporary audio: this passage uses your browser's voice. The recording is coming soon.",

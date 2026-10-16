@@ -9,7 +9,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Ouvir antes de falar",
-    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler 19 palavras e produzir 4 frases.",
+    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler as primeiras palavras, ouvir o acento e dizer as primeiras frases.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "zero"
@@ -20,8 +20,13 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 2,
+        "texto": "Hoje chegam as sete letras mais traiçoeiras, as falsas amigas. Elas parecem letras do nosso alfabeto, mas têm outro som. O «В» parece um B, mas soa V. O «Н» parece um H, mas soa N. O «Р» parece um P, mas soa R. O «С» parece um C, mas soa S. O «У» parece um Y, mas soa U. O «Х» parece um X, mas é um «r» forte, de garganta. E o «Е» soa «iê». Regra de ouro: se a letra parece latina, desconfie e escute."
+      },
+      {
         "tipo": "alfabeto",
-        "min": 12,
+        "min": 4,
         "grupos": [
           {
             "nome": "Grupo 2 — Falsas amigas",
@@ -29,7 +34,7 @@
               {
                 "maiuscula": "В",
                 "minuscula": "в",
-                "som": "como em vaca",
+                "som": "como em «vaca»",
                 "ipa": "[v]",
                 "exemplo": "вот",
                 "exemploPt": "eis aqui"
@@ -37,7 +42,7 @@
               {
                 "maiuscula": "Е",
                 "minuscula": "е",
-                "som": "como 'iê'",
+                "som": "como «iê» de «iê-iê-iê»",
                 "ipa": "[je]",
                 "exemplo": "нет",
                 "exemploPt": "não"
@@ -45,7 +50,7 @@
               {
                 "maiuscula": "Н",
                 "minuscula": "н",
-                "som": "como em navio",
+                "som": "como em «navio»",
                 "ipa": "[n]",
                 "exemplo": "он",
                 "exemploPt": "ele"
@@ -53,7 +58,7 @@
               {
                 "maiuscula": "Р",
                 "minuscula": "р",
-                "som": "como 'rr' em carro",
+                "som": "como o «r» de «caro», batido com a ponta da língua",
                 "ipa": "[r]",
                 "exemplo": "сор",
                 "exemploPt": "lixo"
@@ -61,7 +66,7 @@
               {
                 "maiuscula": "С",
                 "minuscula": "с",
-                "som": "como em sapo",
+                "som": "como em «sapo»",
                 "ipa": "[s]",
                 "exemplo": "сок",
                 "exemploPt": "suco"
@@ -69,7 +74,7 @@
               {
                 "maiuscula": "У",
                 "minuscula": "у",
-                "som": "como 'u' em lua",
+                "som": "como o «u» de «lua»",
                 "ipa": "[u]",
                 "exemplo": "утка",
                 "exemploPt": "pato"
@@ -77,7 +82,7 @@
               {
                 "maiuscula": "Х",
                 "minuscula": "х",
-                "som": "como o 'rr' de 'rato' no sotaque carioca",
+                "som": "como o «rr» de «rato» no sotaque carioca",
                 "ipa": "[x]",
                 "exemplo": "хор",
                 "exemploPt": "coro"
@@ -88,7 +93,7 @@
       },
       {
         "tipo": "palavras",
-        "min": 10,
+        "min": 4,
         "itens": [
           {
             "ru": "вот",
@@ -100,9 +105,37 @@
           {
             "ru": "нет",
             "translit": "niet",
-            "pt": "não",
+            "pt": "não (resposta)",
             "en": "no",
             "audio": "нет"
+          },
+          {
+            "ru": "не",
+            "translit": "nie",
+            "pt": "não (antes de uma palavra)",
+            "en": "not",
+            "audio": "не"
+          },
+          {
+            "ru": "а",
+            "translit": "a",
+            "pt": "e, mas",
+            "en": "and, but",
+            "audio": "а"
+          },
+          {
+            "ru": "там",
+            "translit": "tam",
+            "pt": "lá",
+            "en": "there",
+            "audio": "там"
+          },
+          {
+            "ru": "тут",
+            "translit": "tut",
+            "pt": "aqui",
+            "en": "here",
+            "audio": "тут"
           },
           {
             "ru": "сок",
@@ -119,26 +152,102 @@
             "audio": "сор"
           },
           {
-            "ru": "не за что",
-            "translit": "nié za shto",
-            "pt": "de nada",
-            "en": "you're welcome",
-            "audio": "не за что",
-            "ainda": [
-              "З",
-              "Ч"
-            ]
+            "ru": "хор",
+            "translit": "khor",
+            "pt": "coro",
+            "en": "choir",
+            "audio": "хор"
           },
+          {
+            "ru": "нос",
+            "translit": "nos",
+            "pt": "nariz",
+            "en": "nose",
+            "audio": "нос"
+          },
+          {
+            "ru": "сон",
+            "translit": "son",
+            "pt": "sono, sonho",
+            "en": "sleep, dream",
+            "audio": "сон"
+          },
+          {
+            "ru": "торт",
+            "translit": "tort",
+            "pt": "bolo, torta",
+            "en": "cake",
+            "audio": "торт"
+          },
+          {
+            "ru": "кекс",
+            "translit": "kieks",
+            "pt": "bolinho",
+            "en": "cupcake",
+            "audio": "кекс"
+          },
+          {
+            "ru": "сестра",
+            "translit": "sistrá",
+            "pt": "irmã",
+            "en": "sister",
+            "audio": "сестра"
+          },
+          {
+            "ru": "Анна",
+            "translit": "ánna",
+            "pt": "Anna (nome de mulher)",
+            "en": "Anna",
+            "audio": "Анна"
+          },
+          {
+            "ru": "Вера",
+            "translit": "viéra",
+            "pt": "Vera (nome de mulher)",
+            "en": "Vera",
+            "audio": "Вера"
+          },
+          {
+            "ru": "Антон",
+            "translit": "antón",
+            "pt": "Antón (nome de homem)",
+            "en": "Anton",
+            "audio": "Антон"
+          },
+          {
+            "ru": "Макс",
+            "translit": "maks",
+            "pt": "Max (nome de homem)",
+            "en": "Max",
+            "audio": "Макс"
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
           {
             "ru": "спасибо",
             "translit": "spasíba",
-            "pt": "obrigado",
+            "pt": "obrigado, obrigada",
             "en": "thank you",
             "audio": "спасибо",
             "ainda": [
               "П",
               "И",
               "Б"
+            ]
+          },
+          {
+            "ru": "не за что",
+            "translit": "nie za shto",
+            "pt": "de nada",
+            "en": "you're welcome",
+            "audio": "не за что",
+            "ainda": [
+              "З",
+              "Ч"
             ]
           },
           {
@@ -154,7 +263,7 @@
           },
           {
             "ru": "хорошо",
-            "translit": "khoroshó",
+            "translit": "kharashó",
             "pt": "bem",
             "en": "well",
             "audio": "хорошо",
@@ -164,8 +273,8 @@
           },
           {
             "ru": "нормально",
-            "translit": "normálna",
-            "pt": "tudo bem",
+            "translit": "narmálna",
+            "pt": "tudo bem, normal",
             "en": "okay",
             "audio": "нормально",
             "ainda": [
@@ -175,7 +284,7 @@
           },
           {
             "ru": "отлично",
-            "translit": "otlíchna",
+            "translit": "atlíchna",
             "pt": "ótimo",
             "en": "excellent",
             "audio": "отлично",
@@ -184,32 +293,262 @@
               "И",
               "Ч"
             ]
+          }
+        ]
+      },
+      {
+        "tipo": "dialogo",
+        "min": 4,
+        "titulo": "В кафе / No café",
+        "contexto": "Num café em Moscou, o garçom Антон traz o pedido para Вера e Макс.",
+        "linhas": [
+          {
+            "personagem": "Антон",
+            "ru": "— Вот сок.",
+            "pt": "— Aqui está o suco.",
+            "audio": "Вот сок."
           },
           {
-            "ru": "тут",
-            "translit": "tut",
-            "pt": "aqui",
-            "en": "here",
-            "audio": "тут"
+            "personagem": "Макс",
+            "ru": "— Спасибо!",
+            "pt": "— Obrigado!",
+            "audio": "Спасибо!"
           },
           {
-            "ru": "там",
-            "translit": "tam",
-            "pt": "lá",
-            "en": "there",
-            "audio": "там"
+            "personagem": "Антон",
+            "ru": "— Не за что.",
+            "pt": "— De nada.",
+            "audio": "Не за что."
+          },
+          {
+            "personagem": "Вера",
+            "ru": "— Это торт?",
+            "pt": "— Isto é bolo?",
+            "audio": "Это торт?"
+          },
+          {
+            "personagem": "Антон",
+            "ru": "— Нет, это кекс.",
+            "pt": "— Não, é bolinho.",
+            "audio": "Нет, это кекс."
+          },
+          {
+            "personagem": "Вера",
+            "ru": "— Отлично! Спасибо.",
+            "pt": "— Ótimo! Obrigada.",
+            "audio": "Отлично! Спасибо."
+          },
+          {
+            "personagem": "Макс",
+            "ru": "— Вера, как дела?",
+            "pt": "— Vera, como vai?",
+            "audio": "Вера, как дела?"
+          },
+          {
+            "personagem": "Вера",
+            "ru": "— Нормально, спасибо.",
+            "pt": "— Tudo bem, obrigada.",
+            "audio": "Нормально, спасибо."
+          }
+        ]
+      },
+      {
+        "tipo": "exercicios",
+        "min": 8,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "нет",
+            "opcoes": [
+              "нет",
+              "вот",
+              "нос"
+            ],
+            "gabarito": "нет",
+            "explicacao": "O som inicial é n (letra «н»). «вот» começa com v e «нос» termina com s.",
+            "id": "ru-001-e13"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "вот",
+            "opcoes": [
+              "вот",
+              "тот",
+              "нос"
+            ],
+            "gabarito": "вот",
+            "explicacao": "O som inicial é v (letra «в»). «тот» começa com t.",
+            "id": "ru-001-e14"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "сок",
+            "opcoes": [
+              "сок",
+              "сор",
+              "сон"
+            ],
+            "gabarito": "сок",
+            "explicacao": "Decida pela última letra: «к» (k) em «сок», «р» em «сор», «н» em «сон».",
+            "id": "ru-001-e15"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "нос",
+            "opcoes": [
+              "нос",
+              "сон",
+              "нет"
+            ],
+            "gabarito": "нос",
+            "explicacao": "A ordem dos sons é n-o-s. «сон» é o contrário: s-o-n.",
+            "id": "ru-001-e16"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Не за что.",
+            "opcoes": [
+              "Не за что.",
+              "Как дела?",
+              "Спасибо."
+            ],
+            "gabarito": "Не за что.",
+            "explicacao": "É a resposta educada a um «obrigado». «Как дела?» é uma pergunta e «Спасибо» é o próprio agradecimento.",
+            "id": "ru-001-e17"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra parece um «B», mas faz o som «v»?",
+            "opcoes": [
+              "В",
+              "Н",
+              "Р"
+            ],
+            "gabarito": "В",
+            "explicacao": "O «В» russo é o nosso «v», como em «вот». É uma falsa amiga: parece B, soa V.",
+            "id": "ru-001-e18"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra parece um «H», mas faz o som «n»?",
+            "opcoes": [
+              "Н",
+              "Х",
+              "Р"
+            ],
+            "gabarito": "Н",
+            "explicacao": "O «Н» é o nosso «n», como em «нет». O «Х» é outra letra, de som forte de garganta.",
+            "id": "ru-001-e19"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra parece um «P», mas faz o som «r»?",
+            "opcoes": [
+              "Р",
+              "С",
+              "У"
+            ],
+            "gabarito": "Р",
+            "explicacao": "O «Р» russo é o nosso «r», como em «сор». O som do P é outra letra, que você vê amanhã.",
+            "id": "ru-001-e20"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Leia «сор». O que quer dizer?",
+            "opcoes": [
+              "lixo",
+              "suco",
+              "sono"
+            ],
+            "gabarito": "lixo",
+            "explicacao": "«сор» é lixo. Suco é «сок» (termina em «к») e sono é «сон» (termina em «н»).",
+            "id": "ru-001-e21"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Qual letra parece um «C», mas faz o som «s»?",
+            "opcoes": [
+              "С",
+              "Е",
+              "К"
+            ],
+            "gabarito": "С",
+            "explicacao": "O «С» russo é sempre «s», como em «сок». Nunca soa «k» nem «ts».",
+            "id": "ru-001-e22"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Это торт? — ___, это кекс.",
+            "opcoes": [
+              "Нет",
+              "Вот",
+              "Там"
+            ],
+            "gabarito": "Нет",
+            "explicacao": "A resposta é negativa: o que vem depois é a correção, «é bolinho». Por isso começa com «Нет» (não).",
+            "id": "ru-001-e23"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Как дела? — ___, спасибо.",
+            "opcoes": [
+              "Хорошо",
+              "Нет",
+              "Кто"
+            ],
+            "gabarito": "Хорошо",
+            "explicacao": "«Хорошо, спасибо» quer dizer «bem, obrigado». «Нет» e «Кто» não respondem a «как дела».",
+            "id": "ru-001-e24"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Não, o suco está lá.»",
+            "opcoes": [
+              "сок",
+              "Нет",
+              "там"
+            ],
+            "gabarito": "Нет, там сок.",
+            "explicacao": "A resposta começa com «Нет»; depois vem o lugar («там») e a coisa («сок»). Não há verbo «estar» no meio.",
+            "id": "ru-001-e25"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "сок",
+            "respostaEsperada": "сок",
+            "explicacao": "Escreva s, o, k: «сок». O «с» russo não é o «c» de casa: é sempre o som s.",
+            "id": "ru-001-e26"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "«Нормально» quer dizer:",
+            "opcoes": [
+              "tudo bem, normal",
+              "anormal",
+              "mal"
+            ],
+            "gabarito": "tudo bem, normal",
+            "explicacao": "«Нормально» é «tudo bem, ok». Não é «anormal»: é uma falsa amiga do português.",
+            "id": "ru-001-e27"
           }
         ]
       },
       {
         "tipo": "producao",
         "min": 3,
-        "enunciado": "Repita em voz alta: «нет», «вот», «сок», «спасибо». Depois use «нет, не за что» numa frase."
+        "enunciado": "Leia em voz alta, de uma vez: «вот, нет, там, тут, сок, нос, сон». Depois, no ritmo certo, diga «Спасибо!», «Не за что.», «Как дела?», «Хорошо.». Grave-se lendo o diálogo do café, fazendo as duas vozes.",
+        "exemplo": "Спасибо! Не за что. Как дела? Хорошо."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Ouça e escreva em cirílico as 4 palavras da S1: мама, как, кто, это."
+        "min": 2,
+        "enunciado": "Ouça e escreva em cirílico as palavras da sessão anterior: «мама, как, кто, это». Depois escreva «тот» e «кот»."
       }
     ]
   },

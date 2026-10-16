@@ -9,7 +9,7 @@
   "aula": {
     "numero": 1,
     "titulo": "Ouvir antes de falar",
-    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler 19 palavras e produzir 4 frases.",
+    "objetivo": "Reconhecer os primeiros 12 sons do cirílico, ler as primeiras palavras, ouvir o acento e dizer as primeiras frases.",
     "sessoes": 4,
     "duracaoTotalMin": 120,
     "nivel": "zero"
@@ -21,7 +21,7 @@
     "blocos": [
       {
         "tipo": "dialogo",
-        "min": 15,
+        "min": 6,
         "titulo": "Кто это? / Quem é este?",
         "contexto": "Duas pessoas olham uma foto de família.",
         "linhas": [
@@ -40,14 +40,14 @@
           {
             "personagem": "Анна",
             "ru": "— А это кто?",
-            "pt": "— E este, quem é?",
+            "pt": "— E esta, quem é?",
             "audio": "А это кто?"
           },
           {
             "personagem": "Том",
-            "ru": "— Это папа. Вот сок.",
-            "pt": "— Este é o pai. Aqui está o suco.",
-            "audio": "Это папа. Вот сок."
+            "ru": "— Это сестра. Вот сок.",
+            "pt": "— Esta é a irmã. Aqui está o suco.",
+            "audio": "Это сестра. Вот сок."
           },
           {
             "personagem": "Анна",
@@ -76,14 +76,346 @@
         ]
       },
       {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Москва",
+            "translit": "maskvá",
+            "pt": "Moscou",
+            "en": "Moscow",
+            "audio": "Москва"
+          },
+          {
+            "ru": "метро",
+            "translit": "mitró",
+            "pt": "metrô",
+            "en": "metro",
+            "audio": "метро"
+          },
+          {
+            "ru": "ресторан",
+            "translit": "ristarán",
+            "pt": "restaurante",
+            "en": "restaurant",
+            "audio": "ресторан"
+          },
+          {
+            "ru": "театр",
+            "translit": "tiátr",
+            "pt": "teatro",
+            "en": "theater",
+            "audio": "театр"
+          },
+          {
+            "ru": "Романов",
+            "translit": "ramánaf",
+            "pt": "Românov (sobrenome)",
+            "en": "Romanov",
+            "audio": "Романов"
+          },
+          {
+            "ru": "Макаров",
+            "translit": "makáraf",
+            "pt": "Makárov (sobrenome)",
+            "en": "Makarov",
+            "audio": "Макаров"
+          },
+          {
+            "ru": "вкус",
+            "translit": "fkus",
+            "pt": "sabor, gosto",
+            "en": "taste",
+            "audio": "вкус"
+          }
+        ]
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Vogais sem acento: o «о» soa «а» e o «е» soa «и»",
+        "explicacao": "PASSO 1: A vogal com acento é clara e longa. A vogal sem acento fica fraca e curta, e muda de som. Isso se chama redução. PASSO 2: O «о» sem acento soa como «а». Em «она» (aná), a primeira letra é «о», mas você diz «a». Em «Москва» (maskvá), você diz «ma», e não «mo». PASSO 3: O «о» com acento continua «о». Em «кот» (kot) e em «метро» (mitró), o «о» tem a força e soa «о». PASSO 4: O «е» sem acento soa quase como «и», um «i» rápido. Em «метро», a primeira sílaba soa «mi». Em «сестра» (sistrá), soa «si». Em «ресторан» (ristarán), soa «ri». PASSO 5: A transliteração ao lado de cada palavra, neste curso, já mostra a pronúncia real. Quando ela diferir da escrita, confie na transliteração e no áudio.",
+        "comparacao": "você já faz isso em português sem perceber: o «o» final de «gato» soa «u» (gatu). No russo, o mesmo acontece com o «о» e o «е» que estão longe do acento.",
+        "exemplos": [
+          {
+            "ru": "она́",
+            "pt": "ela: o «о» sem acento soa «а»"
+          },
+          {
+            "ru": "Москва́",
+            "pt": "Moscou: lê-se maskvá"
+          },
+          {
+            "ru": "метро́",
+            "pt": "metrô: o «е» soa «и», lê-se mitró"
+          },
+          {
+            "ru": "сестра́",
+            "pt": "irmã: lê-se sistrá"
+          },
+          {
+            "ru": "рестора́н",
+            "pt": "restaurante: lê-se ristarán"
+          },
+          {
+            "ru": "теа́тр",
+            "pt": "teatro: lê-se tiátr"
+          }
+        ],
+        "tabela": [
+          {
+            "escrito": "она",
+            "se fala": "aná",
+            "o que acontece": "«о» sem acento soa «а»"
+          },
+          {
+            "escrito": "Москва",
+            "se fala": "maskvá",
+            "o que acontece": "«о» sem acento soa «а»"
+          },
+          {
+            "escrito": "метро",
+            "se fala": "mitró",
+            "o que acontece": "«е» sem acento soa «и»; o «о» com acento continua «о»"
+          },
+          {
+            "escrito": "сестра",
+            "se fala": "sistrá",
+            "o que acontece": "«е» sem acento soa «и»"
+          },
+          {
+            "escrito": "ресторан",
+            "se fala": "ristarán",
+            "o que acontece": "«е» soa «и» e o «о» do meio soa «а»"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Москва, dita «móskva»",
+            "certo": "Москва́",
+            "motivo": "O «о» sem acento soa «а»: maskvá."
+          },
+          {
+            "errado": "метро, dito «métro»",
+            "certo": "метро́",
+            "motivo": "Sem acento, o «е» soa «и» e a força cai no «ро»: mitró."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "gramatica",
+        "min": 5,
+        "titulo": "Consoantes sonoras e surdas: o final da palavra muda",
+        "explicacao": "PASSO 1: Consoante sonora é aquela em que a garganta vibra. Ponha a mão no pescoço e diga «v» (vê): você sente vibrar. Agora diga «f» (fê): não vibra. A «f» é a surda, parceira da «v». PASSO 2: O russo tem pares assim: «в» e «ф», «б» e «п», «д» e «т», «г» e «к», «з» e «с», «ж» e «ш». A primeira de cada par é a sonora. Hoje você já conhece a sonora «в» e as surdas «к», «т» e «с». As outras chegam na próxima aula. PASSO 3: A regra do final: no fim da palavra, a sonora perde a vibração e vira a surda parceira. Por isso «Романов» (ramánaf) termina com som de «f», embora se escreva com «в». PASSO 4: A regra do vizinho: a sonora também vira surda antes de uma surda. Em «вкус» (fkus), que quer dizer «sabor», o «в» soa como «f» porque vem antes do «к». PASSO 5: A escrita não muda, só o som. Escreva sempre como a palavra se escreve, e fale como o áudio fala.",
+        "comparacao": "em português a diferença entre «v» e «f» muda a palavra: «vaca» e «faca». Em russo também. Mas, no fim da palavra, essa diferença desaparece e só a surda é pronunciada.",
+        "exemplos": [
+          {
+            "ru": "Романов",
+            "pt": "sobrenome: lê-se ramánaf, com «f» no fim"
+          },
+          {
+            "ru": "Макаров",
+            "pt": "sobrenome: lê-se makáraf"
+          },
+          {
+            "ru": "вкус",
+            "pt": "sabor: lê-se fkus"
+          },
+          {
+            "ru": "Антонов",
+            "pt": "sobrenome: lê-se antónaf"
+          }
+        ],
+        "tabela": [
+          {
+            "escrito": "Романов",
+            "se fala": "ramánaf",
+            "por quê": "«в» no fim da palavra soa «ф»"
+          },
+          {
+            "escrito": "Макаров",
+            "se fala": "makáraf",
+            "por quê": "«в» no fim da palavra soa «ф»"
+          },
+          {
+            "escrito": "вкус",
+            "se fala": "fkus",
+            "por quê": "«в» antes da surda «к» soa «ф»"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Романов, dito «románov»",
+            "certo": "Романов",
+            "motivo": "O «в» do fim perde a vibração: ramánaf."
+          },
+          {
+            "errado": "вкус, dito «vkus»",
+            "certo": "вкус",
+            "motivo": "Antes do «к», o «в» soa «ф»: fkus."
+          }
+        ],
+        "tag": "Pronúncia"
+      },
+      {
+        "tipo": "exercicios",
+        "min": 7,
+        "itens": [
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Кто это?",
+            "opcoes": [
+              "Кто это?",
+              "Как дела?",
+              "Это мама."
+            ],
+            "gabarito": "Кто это?",
+            "explicacao": "A frase começa com «Кто» (quem). «Как дела?» começa com «как» e «Это мама» não é pergunta.",
+            "id": "ru-001-e28"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Это сестра.",
+            "opcoes": [
+              "Это сестра.",
+              "Это мама.",
+              "Это Макс."
+            ],
+            "gabarito": "Это сестра.",
+            "explicacao": "A última palavra é «сестра» (sistrá), com o «с» do início e o «р» no meio.",
+            "id": "ru-001-e29"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escolha.",
+            "audio": "Вот сок.",
+            "opcoes": [
+              "Вот сок.",
+              "Вот торт.",
+              "Вот кекс."
+            ],
+            "gabarito": "Вот сок.",
+            "explicacao": "A última palavra tem uma sílaba só e termina em k: «сок».",
+            "id": "ru-001-e30"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Em «она» (aná), onde está a força da voz?",
+            "opcoes": [
+              "na última sílaba, «на»",
+              "na primeira sílaba, «о»",
+              "nas duas, igualmente"
+            ],
+            "gabarito": "na última sílaba, «на»",
+            "explicacao": "Lê-se aná, com força no «ná». Por isso o «о» da primeira sílaba, sem acento, soa «а».",
+            "id": "ru-001-e31"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «метро»?",
+            "opcoes": [
+              "mitró",
+              "métro",
+              "metró"
+            ],
+            "gabarito": "mitró",
+            "explicacao": "O «е» sem acento soa quase «и» e a força cai no «ро»: mitró.",
+            "id": "ru-001-e32"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como se lê «Москва»?",
+            "opcoes": [
+              "maskvá",
+              "móskva",
+              "moskvá"
+            ],
+            "gabarito": "maskvá",
+            "explicacao": "O «о» sem acento soa «а» e a força cai no «ква»: maskvá.",
+            "id": "ru-001-e33"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "Como soa o «в» no fim de «Романов»?",
+            "opcoes": [
+              "como «f»",
+              "como «v»",
+              "não se ouve"
+            ],
+            "gabarito": "como «f»",
+            "explicacao": "No fim da palavra, a sonora «в» perde a vibração e vira a surda «ф»: ramánaf.",
+            "id": "ru-001-e34"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Кто это? — Это ___.",
+            "opcoes": [
+              "сестра",
+              "как",
+              "нет"
+            ],
+            "gabarito": "сестра",
+            "explicacao": "A pergunta «Кто это?» pede uma pessoa. «сестра» é uma pessoa; «как» e «нет» não respondem a «quem».",
+            "id": "ru-001-e35"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— ___ дела? — Нормально, спасибо.",
+            "opcoes": [
+              "Как",
+              "Кто",
+              "Нет"
+            ],
+            "gabarito": "Как",
+            "explicacao": "«Как дела?» é a pergunta fixa para «como vai?». Com «Кто» a frase quereria dizer «quem vai».",
+            "id": "ru-001-e36"
+          },
+          {
+            "tipo": "fill-gap",
+            "enunciado": "— Кто это? — ___ Антон.",
+            "opcoes": [
+              "Это",
+              "Как",
+              "Нет"
+            ],
+            "gabarito": "Это",
+            "explicacao": "Para apresentar alguém, diz-se «Это» e o nome, sem verbo no meio.",
+            "id": "ru-001-e37"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva em cirílico.",
+            "audio": "Это Антон.",
+            "respostaEsperada": "Это Антон.",
+            "explicacao": "Quatro letras em «Это» e depois o nome. O nome é lido como se escreve, com o «о» tônico: antón.",
+            "id": "ru-001-e38"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Ordene: «Aqui está o restaurante.»",
+            "opcoes": [
+              "ресторан",
+              "Вот"
+            ],
+            "gabarito": "Вот ресторан.",
+            "explicacao": "Para mostrar algo, diz-se «Вот» primeiro e depois a coisa. Não há «está» em russo.",
+            "id": "ru-001-e39"
+          }
+        ]
+      },
+      {
         "tipo": "producao",
-        "min": 10,
-        "enunciado": "Ouça o diálogo completo e repita imitando a entonação. Depois responda em russo: «Кто это?»"
+        "min": 3,
+        "enunciado": "Aponte para uma foto (ou imagine uma) e pergunte «Кто это?». Responda com «Это мама.», «Это сестра.» e «Это Антон.». Diga também «Романов» como se fala: ramánaf.",
+        "exemplo": "Кто это? Это мама. Это сестра. Это Антон."
       },
       {
         "tipo": "revisao",
-        "min": 5,
-        "enunciado": "Ouça e escolha: «сок» / «сор» / «вот». Identifique qual palavra ouviu."
+        "min": 1,
+        "enunciado": "Ouça e escolha: «сок», «сор» ou «вот». Identifique qual palavra você ouviu."
       }
     ]
   },

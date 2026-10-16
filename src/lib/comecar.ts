@@ -59,3 +59,10 @@ export const COMECAR: Record<'pt-BR' | 'en' | 'es', Comecar> = {
     dica: '¿Nunca has estudiado el idioma? Empieza por la lección 1. ¿Ya estudiaste y te atascas en algo? Busca el tema en Gramática y luego practica la sesión que indica.',
   },
 };
+
+/** Guia curto no topo da primeira sessão de cada curso. */
+export const GUIA_SESSAO: Record<'pt-BR' | 'en' | 'es', { titulo: string; passos: string[] }> = {
+  'pt-BR': { titulo: 'Como usar esta sessão', passos: ['Ouça: toque no ícone de alto-falante ao lado de cada palavra, frase ou diálogo.', 'Entenda: o botão «Ouvir explicação» lê a regra em voz alta. Você pode ler e ouvir ao mesmo tempo.', 'Repita em voz alta, imitando o áudio. Falar é parte do exercício.', 'Pratique: os exercícios são corrigidos na hora, com a explicação do porquê.'] },
+  en: { titulo: 'How to use this session', passos: ['Listen: tap the speaker icon next to each word, sentence or dialogue.', 'Understand: read the explanation at your own pace.', 'Repeat out loud, copying the audio. Speaking is part of the exercise.', 'Practise: exercises are marked straight away, with the reason.'] },
+  es: { titulo: 'Cómo usar esta sesión', passos: ['Escucha: toca el icono del altavoz junto a cada palabra, frase o diálogo.', 'Entiende: lee la explicación a tu ritmo.', 'Repite en voz alta, imitando el audio. Hablar es parte del ejercicio.', 'Practica: los ejercicios se corrigen al instante, con el porqué.'] },
+};

@@ -402,6 +402,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Shopping day / Dia de compras",
+          "ru": "Today I need new clothes. First, I go to a shop and look at the shirts. This blue shirt is thirty dollars. That red one is forty-five. I try on the blue one, but it is too small. The assistant brings a bigger size. It fits! Then I look at shoes. These black shoes are eighty dollars, which is too expensive. I buy the shirt and a cheap pair of socks. Then I pay by card.",
+          "pt": "Hoje preciso de roupas novas. Primeiro vou a uma loja e olho as camisas. Esta camisa azul custa trinta dólares. Aquela vermelha custa quarenta e cinco. Provo a azul, mas está pequena demais. A vendedora traz um tamanho maior. Serve! Depois olho sapatos. Estes sapatos pretos custam oitenta dólares, o que é caro demais. Compro a camisa e um par de meias barato. Depois pago com cartão.",
+          "perguntas": [
+            {
+              "pergunta": "How much is the blue shirt?",
+              "resposta": "Thirty dollars."
+            },
+            {
+              "pergunta": "Is the first size right?",
+              "resposta": "No, it is too small."
+            },
+            {
+              "pergunta": "How does the writer pay?",
+              "resposta": "By card."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Encene em voz alta uma compra de roupa: peça, tamanho, preço e decisão."
@@ -457,6 +479,15 @@
               "id": "en-015-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "How much are these shoes",
+              "respostaEsperada": "How much are these shoes?",
+              "explicacao": "Quanto custam estes sapatos?",
+              "id": "en-015-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "It's too expensive",
@@ -487,6 +518,15 @@
               "gabarito": "a blue shirt",
               "explicacao": "Cor antes.",
               "id": "en-015-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "It's sixty-five dollars",
+              "respostaEsperada": "It's sixty-five dollars.",
+              "explicacao": "São sessenta e cinco dólares.",
+              "id": "en-015-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -525,6 +565,15 @@
               "id": "en-015-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I'll take it",
+              "respostaEsperada": "I'll take it.",
+              "explicacao": "Eu vou levar.",
+              "id": "en-015-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "How much ___ these shoes?",
               "opcoes": [
@@ -559,6 +608,15 @@
               "gabarito": "try",
               "explicacao": "try on.",
               "id": "en-015-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "It's too expensive",
+              "respostaEsperada": "It's too expensive.",
+              "explicacao": "É caro demais.",
+              "id": "en-015-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

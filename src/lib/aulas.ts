@@ -10,7 +10,7 @@ export interface Pergunta { pergunta: string; resposta: string }
 export interface ErroComum { errado: string; certo: string; motivo: string }
 export interface TabelaTitulada { titulo?: string; linhas: Record<string, string>[] }
 
-export type TipoExercicio = 'multiple-choice' | 'audio-recognition' | 'fill-gap' | 'sentence-ordering' | 'producao';
+export type TipoExercicio = 'multiple-choice' | 'audio-recognition' | 'fill-gap' | 'sentence-ordering' | 'producao' | 'repeat';
 export interface Exercicio {
   id: string; tipo: TipoExercicio; enunciado: string; opcoes?: string[]; gabarito?: string;
   respostaEsperada?: string; audio?: string; explicacao?: string;

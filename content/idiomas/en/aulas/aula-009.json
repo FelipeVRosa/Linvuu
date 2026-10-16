@@ -704,6 +704,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Marta's talents / Os talentos da Marta",
+          "ru": "Marta is very talented. She can speak three languages: Portuguese, English and Spanish. She can play the guitar, but she can't play the piano. She can swim very well and she can run ten kilometres. She can't cook, so her husband cooks dinner. Can she drive? Yes, she can, but she doesn't have a car. This year she wants to learn French. She can already say hello and thank you!",
+          "pt": "Marta é muito talentosa. Ela sabe falar três idiomas: português, inglês e espanhol. Sabe tocar violão, mas não sabe tocar piano. Nada muito bem e consegue correr dez quilômetros. Não sabe cozinhar, então o marido prepara o jantar. Ela sabe dirigir? Sabe, mas não tem carro. Este ano quer aprender francês. Já consegue dizer olá e obrigada!",
+          "perguntas": [
+            {
+              "pergunta": "How many languages can Marta speak?",
+              "resposta": "Three."
+            },
+            {
+              "pergunta": "Can she play the piano?",
+              "resposta": "No, she can't."
+            },
+            {
+              "pergunta": "Who cooks dinner?",
+              "resposta": "Her husband."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva 5 frases sobre o que você e uma pessoa que conhece sabem e não sabem fazer."
@@ -759,6 +781,15 @@
               "id": "en-009-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She can swim very well",
+              "respostaEsperada": "She can swim very well.",
+              "explicacao": "Ela sabe nadar muito bem.",
+              "id": "en-009-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "He can cook",
@@ -789,6 +820,15 @@
               "gabarito": "Can you cook?",
               "explicacao": "«can» não usa «do».",
               "id": "en-009-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I can't drive",
+              "respostaEsperada": "I can't drive.",
+              "explicacao": "Eu não sei dirigir.",
+              "id": "en-009-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -827,6 +867,15 @@
               "id": "en-009-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Can you help me",
+              "respostaEsperada": "Can you help me?",
+              "explicacao": "Você pode me ajudar?",
+              "id": "en-009-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ you speak Spanish?",
               "opcoes": [
@@ -861,6 +910,15 @@
               "gabarito": "little",
               "explicacao": "a little.",
               "id": "en-009-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "He can cook",
+              "respostaEsperada": "He can cook.",
+              "explicacao": "Ele sabe cozinhar.",
+              "id": "en-009-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

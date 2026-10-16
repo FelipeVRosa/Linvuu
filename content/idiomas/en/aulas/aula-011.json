@@ -438,6 +438,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "A busy calendar / Uma agenda cheia",
+          "ru": "My week is very busy. On Monday I have English class at half past seven. On Tuesday I have lunch with my sister at twelve. My dentist appointment is on Wednesday at a quarter to ten. On Thursday I work from home. On Friday evening I meet my friends at eight o'clock. My birthday is on the twelfth of March, so on Saturday we have a party. On Sunday I rest all day.",
+          "pt": "Minha semana é muito cheia. Na segunda tenho aula de inglês às sete e meia. Na terça almoço com a minha irmã ao meio-dia. Minha consulta no dentista é na quarta, às dez menos quinze. Na quinta trabalho de casa. Na sexta à noite encontro meus amigos às oito. Meu aniversário é no dia doze de março, então no sábado fazemos uma festa. No domingo descanso o dia todo.",
+          "perguntas": [
+            {
+              "pergunta": "When is the English class?",
+              "resposta": "On Monday at half past seven."
+            },
+            {
+              "pergunta": "What does the writer do on Friday?",
+              "resposta": "Meets friends at eight."
+            },
+            {
+              "pergunta": "When is the writer's birthday?",
+              "resposta": "On the twelfth of March."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Marque em voz alta um encontro: dia, hora e lugar."
@@ -493,6 +515,15 @@
               "id": "en-011-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "It's quarter past three",
+              "respostaEsperada": "It's quarter past three.",
+              "explicacao": "São três e quinze.",
+              "id": "en-011-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "My birthday is in June",
@@ -523,6 +554,15 @@
               "gabarito": "I work on Monday.",
               "explicacao": "Dia: on.",
               "id": "en-011-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "See you on Friday",
+              "respostaEsperada": "See you on Friday.",
+              "explicacao": "Até sexta.",
+              "id": "en-011-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -561,6 +601,15 @@
               "id": "en-011-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "What time is it",
+              "respostaEsperada": "What time is it?",
+              "explicacao": "Que horas são?",
+              "id": "en-011-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "The class is ___ 8 o'clock.",
               "opcoes": [
@@ -595,6 +644,15 @@
               "gabarito": "on",
               "explicacao": "Dia: on.",
               "id": "en-011-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "My birthday is in June",
+              "respostaEsperada": "My birthday is in June.",
+              "explicacao": "Meu aniversário é em junho.",
+              "id": "en-011-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

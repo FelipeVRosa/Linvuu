@@ -66,11 +66,11 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const navTeclado = useRef(false); // true depois de um Tab: o Enter passa a agir no botão em foco
   const errosSeguidos = useRef(0); // erros em sequência: o som de erro fica mais baixo a cada um, sem virar alarme
   const ex = itens[i];
-  const corrigiveis = itens.filter((x) => x.tipo !== 'producao');
+  const corrigiveis = itens.filter((x) => x.tipo !== 'producao' && x.tipo !== 'repeat');
 
   const verificar = () => {
     let ok = false;
-    if (ex.tipo === 'producao') { setRes('livre'); return; }
+    if (ex.tipo === 'producao' || ex.tipo === 'repeat') { setRes('livre'); return; }
     if (ex.tipo === 'sentence-ordering') ok = norm(ordem.map((k) => ex.opcoes![k]).join(' ')) === norm(ex.gabarito ?? '');
     else if (ex.opcoes && ex.gabarito !== undefined) ok = escolha === ex.gabarito;
     else ok = norm(texto) === norm(ex.respostaEsperada ?? '');
@@ -86,7 +86,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const recomecar = () => { errosSeguidos.current = 0; setI(0); setAcertos({}); setFim(false); setEscolha(null); setOrdem([]); setTexto(''); setRes(null); };
 
   const comOpcoes = ex.opcoes && ex.gabarito !== undefined && ex.tipo !== 'sentence-ordering';
-  const pode = ex.tipo === 'producao' ? true : ex.tipo === 'sentence-ordering' ? ordem.length > 0 : comOpcoes ? escolha !== null : texto.trim() !== '';
+  const pode = ex.tipo === 'producao' || ex.tipo === 'repeat' ? true : ex.tipo === 'sentence-ordering' ? ordem.length > 0 : comOpcoes ? escolha !== null : texto.trim() !== '';
 
   // Teclado: 1 a 9 escolhem a opção (ou a peça), Enter verifica e avança. Não interfere em campos de texto nem em botões em foco.
   useEffect(() => {
@@ -149,21 +149,22 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           </div>
         </>
       )}
-      {!comOpcoes && ex.tipo !== 'sentence-ordering' && (
+      {!comOpcoes && ex.tipo !== 'sentence-ordering' && ex.tipo !== 'repeat' && (
         ex.tipo === 'producao'
           ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
           : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
       )}
       {res && (
-        <div className={`ex-feedback ${res}`} role="status">
+        <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
           {res === 'ok' && <strong>{T.certo}</strong>}
           {res === 'erro' && <strong>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></strong>}
-          {res === 'livre' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
+          {res === 'livre' && ex.tipo === 'repeat' && <><strong lang={idioma}>{ex.respostaEsperada}</strong>{ex.explicacao && <span> {ex.explicacao}</span>}</>}
+          {res === 'livre' && ex.tipo !== 'repeat' && <strong>{T.compare} <span lang={idioma}>{ex.respostaEsperada}</span></strong>}
           {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
         </div>
       )}
       <div className="ex-acoes">
-        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : T.verificar}</button>
+        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
           : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
       </div>
     </div>

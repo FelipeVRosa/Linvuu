@@ -359,6 +359,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "A cleaner city / Uma cidade mais limpa",
+          "contexto": "Nina e Alex conversam sobre problemas da cidade e soluções.",
+          "linhas": [
+            {
+              "personagem": "Nina",
+              "ru": "— Did you read the news about pollution in our city?",
+              "pt": "— Você leu a notícia sobre a poluição na nossa cidade?",
+              "audio": "Did you read the news about pollution in our city?"
+            },
+            {
+              "personagem": "Alex",
+              "ru": "— Yes. The air is dirty because there are too many cars.",
+              "pt": "— Li. O ar está sujo porque há carros demais.",
+              "audio": "Yes. The air is dirty because there are too many cars."
+            },
+            {
+              "personagem": "Nina",
+              "ru": "— I think the government should invest in public transport.",
+              "pt": "— Acho que o governo deveria investir em transporte público.",
+              "audio": "I think the government should invest in public transport."
+            },
+            {
+              "personagem": "Alex",
+              "ru": "— I agree. If more people took the bus, there would be less traffic.",
+              "pt": "— Concordo. Se mais pessoas pegassem o ônibus, haveria menos trânsito.",
+              "audio": "I agree. If more people took the bus, there would be less traffic."
+            },
+            {
+              "personagem": "Nina",
+              "ru": "— We can also recycle more and use less plastic.",
+              "pt": "— Também podemos reciclar mais e usar menos plástico.",
+              "audio": "We can also recycle more and use less plastic."
+            },
+            {
+              "personagem": "Alex",
+              "ru": "— True. Small actions can make a big difference.",
+              "pt": "— Verdade. Pequenas ações podem fazer grande diferença.",
+              "audio": "True. Small actions can make a big difference."
+            },
+            {
+              "personagem": "Nina",
+              "ru": "— What about planting trees in our street?",
+              "pt": "— Que tal plantar árvores na nossa rua?",
+              "audio": "What about planting trees in our street?"
+            },
+            {
+              "personagem": "Alex",
+              "ru": "— Great idea. Let's talk to our neighbours.",
+              "pt": "— Ótima ideia. Vamos falar com os vizinhos.",
+              "audio": "Great idea. Let's talk to our neighbours."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva um texto de 6 frases sobre um problema da sua cidade e como resolvê-lo."
@@ -414,6 +471,15 @@
               "id": "en-059-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Pollution causes health problems",
+              "respostaEsperada": "Pollution causes health problems.",
+              "explicacao": "A poluição causa problemas de saúde.",
+              "id": "en-059-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "The government should invest in education",
@@ -444,6 +510,15 @@
               "gabarito": "the elderly",
               "explicacao": "the + adjetivo.",
               "id": "en-059-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "If I were the mayor, I would build parks",
+              "respostaEsperada": "If I were the mayor, I would build parks.",
+              "explicacao": "Se eu fosse o prefeito, construiria parques.",
+              "id": "en-059-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -482,6 +557,15 @@
               "id": "en-059-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "We save energy by turning off lights",
+              "respostaEsperada": "We save energy by turning off lights.",
+              "explicacao": "Economizamos energia apagando as luzes.",
+              "id": "en-059-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "We save energy ___ turning off lights.",
               "opcoes": [
@@ -516,6 +600,15 @@
               "gabarito": "were",
               "explicacao": "Segundo condicional.",
               "id": "en-059-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The government should invest in education",
+              "respostaEsperada": "The government should invest in education.",
+              "explicacao": "O governo deveria investir em educação.",
+              "id": "en-059-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

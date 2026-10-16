@@ -807,6 +807,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "A trip to the mountains / Uma viagem às montanhas",
+          "ru": "Last summer we visited the mountains. We arrived on Friday and stayed in a small cabin. On Saturday we walked for six hours and we climbed a hill. We didn't take a map, so we asked a farmer for help. In the evening we cooked dinner and played cards. On Sunday it rained, so we didn't go out. We watched the clouds and talked. Did we enjoy it? Yes, we loved it!",
+          "pt": "No verão passado visitamos as montanhas. Chegamos na sexta e ficamos em uma cabana pequena. No sábado caminhamos por seis horas e subimos uma colina. Não levamos mapa, então pedimos ajuda a um fazendeiro. À noite cozinhamos o jantar e jogamos cartas. No domingo choveu, então não saímos. Olhamos as nuvens e conversamos. Gostamos? Sim, adoramos!",
+          "perguntas": [
+            {
+              "pergunta": "Where did they stay?",
+              "resposta": "In a small cabin."
+            },
+            {
+              "pergunta": "Why did they ask a farmer for help?",
+              "resposta": "They didn't take a map."
+            },
+            {
+              "pergunta": "What did they do on Sunday?",
+              "resposta": "They stayed in and talked."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva 5 frases sobre o seu último sábado, incluindo uma negativa com «didn't»."
@@ -862,6 +884,15 @@
               "id": "en-020-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She worked yesterday",
+              "respostaEsperada": "She worked yesterday.",
+              "explicacao": "Ela trabalhou ontem.",
+              "id": "en-020-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "We visited our friends",
@@ -892,6 +923,15 @@
               "gabarito": "/t/",
               "explicacao": "Depois de /ch/, /t/.",
               "id": "en-020-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Did you watch the movie",
+              "respostaEsperada": "Did you watch the movie?",
+              "explicacao": "Você assistiu ao filme?",
+              "id": "en-020-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -930,6 +970,15 @@
               "id": "en-020-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I didn't study last night",
+              "respostaEsperada": "I didn't study last night.",
+              "explicacao": "Eu não estudei ontem à noite.",
+              "id": "en-020-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "___ you call him? (pergunta)",
               "opcoes": [
@@ -964,6 +1013,15 @@
               "gabarito": "stopped",
               "explicacao": "Dobra o p.",
               "id": "en-020-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "We visited our friends",
+              "respostaEsperada": "We visited our friends.",
+              "explicacao": "Nós visitamos os nossos amigos.",
+              "id": "en-020-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

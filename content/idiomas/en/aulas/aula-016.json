@@ -779,6 +779,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Right now / Neste momento",
+          "ru": "It is Saturday morning and everyone is busy. My mother is cooking in the kitchen. My father is reading the newspaper. My brother is playing a video game and my sister is talking on the phone. I am writing this text. The dog is sleeping next to the door. It is raining, so we are not playing outside. What are you doing right now?",
+          "pt": "É sábado de manhã e todos estão ocupados. Minha mãe está cozinhando na cozinha. Meu pai está lendo o jornal. Meu irmão está jogando videogame e minha irmã está falando ao telefone. Eu estou escrevendo este texto. O cachorro está dormindo ao lado da porta. Está chovendo, então não estamos brincando lá fora. O que você está fazendo agora?",
+          "perguntas": [
+            {
+              "pergunta": "What is the mother doing?",
+              "resposta": "She is cooking."
+            },
+            {
+              "pergunta": "Where is the dog sleeping?",
+              "resposta": "Next to the door."
+            },
+            {
+              "pergunta": "Why are they not playing outside?",
+              "resposta": "Because it is raining."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva 5 frases: 3 do que você está fazendo agora e 2 da sua rotina, sem misturar os tempos."
@@ -834,6 +856,15 @@
               "id": "en-016-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She is cooking dinner now",
+              "respostaEsperada": "She is cooking dinner now.",
+              "explicacao": "Ela está preparando o jantar agora.",
+              "id": "en-016-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I'm not working today",
@@ -864,6 +895,15 @@
               "gabarito": "Are you working?",
               "explicacao": "to be + sujeito.",
               "id": "en-016-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "What are you doing",
+              "respostaEsperada": "What are you doing?",
+              "explicacao": "O que você está fazendo?",
+              "id": "en-016-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -902,6 +942,15 @@
               "id": "en-016-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "They are watching TV",
+              "respostaEsperada": "They are watching TV.",
+              "explicacao": "Eles estão assistindo à TV.",
+              "id": "en-016-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "They ___ waiting. (não estão)",
               "opcoes": [
@@ -936,6 +985,15 @@
               "gabarito": "are",
               "explicacao": "are you.",
               "id": "en-016-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I'm not working today",
+              "respostaEsperada": "I'm not working today.",
+              "explicacao": "Eu não estou trabalhando hoje.",
+              "id": "en-016-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

@@ -371,6 +371,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "My usual day / Meu dia de sempre",
+          "contexto": "Anna e Paul conversam no almoço sobre a rotina de cada um.",
+          "linhas": [
+            {
+              "personagem": "Anna",
+              "ru": "— What time do you get up, Paul?",
+              "pt": "— A que horas você acorda, Paul?",
+              "audio": "What time do you get up, Paul?"
+            },
+            {
+              "personagem": "Paul",
+              "ru": "— I usually get up at six. I have breakfast and then I go to work.",
+              "pt": "— Eu geralmente acordo às seis. Tomo café da manhã e depois vou trabalhar.",
+              "audio": "I usually get up at six. I have breakfast and then I go to work."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Do you always take the bus?",
+              "pt": "— Você sempre pega o ônibus?",
+              "audio": "Do you always take the bus?"
+            },
+            {
+              "personagem": "Paul",
+              "ru": "— No, I sometimes walk. It takes thirty minutes.",
+              "pt": "— Não, às vezes eu vou a pé. Leva trinta minutos.",
+              "audio": "No, I sometimes walk. It takes thirty minutes."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— And what time do you finish work?",
+              "pt": "— E a que horas você sai do trabalho?",
+              "audio": "And what time do you finish work?"
+            },
+            {
+              "personagem": "Paul",
+              "ru": "— I finish at five, but I often stay until six.",
+              "pt": "— Eu saio às cinco, mas muitas vezes fico até as seis.",
+              "audio": "I finish at five, but I often stay until six."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— I never stay late. My son goes to bed at eight.",
+              "pt": "— Eu nunca fico até tarde. Meu filho vai dormir às oito.",
+              "audio": "I never stay late. My son goes to bed at eight."
+            },
+            {
+              "personagem": "Paul",
+              "ru": "— That is a good routine. Mine is very busy!",
+              "pt": "— É uma boa rotina. A minha é bem corrida!",
+              "audio": "That is a good routine. Mine is very busy!"
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva um texto de 6 frases sobre o seu dia, com «then», um advérbio de frequência e «every»."
@@ -426,6 +483,15 @@
               "id": "en-012-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I get up at six every day.",
+              "respostaEsperada": "I get up at six every day.",
+              "explicacao": "Eu acordo às seis todos os dias.",
+              "id": "en-012-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "He is always late",
@@ -456,6 +522,15 @@
               "gabarito": "She is always late.",
               "explicacao": "Depois do to be.",
               "id": "en-012-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She has breakfast at seven.",
+              "respostaEsperada": "She has breakfast at seven.",
+              "explicacao": "Ela toma café da manhã às sete.",
+              "id": "en-012-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -494,6 +569,15 @@
               "id": "en-012-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "He usually takes the bus.",
+              "respostaEsperada": "He usually takes the bus.",
+              "explicacao": "Ele geralmente pega o ônibus.",
+              "id": "en-012-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "What time ___ he start work?",
               "opcoes": [
@@ -530,6 +614,15 @@
               "id": "en-012-e12"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I never drink coffee at night.",
+              "respostaEsperada": "I never drink coffee at night.",
+              "explicacao": "Eu nunca tomo café à noite.",
+              "id": "en-012-r04",
+              "complemento": true
+            },
+            {
               "tipo": "sentence-ordering",
               "enunciado": "Ordene: «She usually has lunch at noon.»",
               "opcoes": [
@@ -564,6 +657,42 @@
               "enunciado": "Escreva 5 frases sobre a rotina de alguém, com horas, um advérbio de frequência e «then».",
               "respostaEsperada": "He gets up at six. Then he has breakfast. He usually works until five. He never watches TV. He goes to bed at ten.",
               "id": "en-012-e15"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "We always have dinner together.",
+              "respostaEsperada": "We always have dinner together.",
+              "explicacao": "Nós sempre jantamos juntos.",
+              "id": "en-012-r05",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "They sometimes watch a movie on Friday.",
+              "respostaEsperada": "They sometimes watch a movie on Friday.",
+              "explicacao": "Eles às vezes veem um filme na sexta.",
+              "id": "en-012-r06",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "What time do you finish work?",
+              "respostaEsperada": "What time do you finish work?",
+              "explicacao": "A que horas você sai do trabalho?",
+              "id": "en-012-r07",
+              "complemento": true
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "My son goes to bed at eight.",
+              "respostaEsperada": "My son goes to bed at eight.",
+              "explicacao": "Meu filho vai dormir às oito.",
+              "id": "en-012-r08",
+              "complemento": true
             }
           ]
         },

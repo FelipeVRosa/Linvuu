@@ -359,6 +359,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "What if? / E se...?",
+          "contexto": "Anna e Tom conversam sobre arrependimentos e o que poderia ter sido.",
+          "linhas": [
+            {
+              "personagem": "Anna",
+              "ru": "— I failed the exam. If I had studied more, I would have passed.",
+              "pt": "— Reprovei na prova. Se eu tivesse estudado mais, teria passado.",
+              "audio": "I failed the exam. If I had studied more, I would have passed."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— You should have asked me for help. I would have helped you.",
+              "pt": "— Você deveria ter me pedido ajuda. Eu teria ajudado.",
+              "audio": "You should have asked me for help. I would have helped you."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— I know. I could have studied with you, but I was too shy.",
+              "pt": "— Eu sei. Eu poderia ter estudado com você, mas fiquei tímida.",
+              "audio": "I know. I could have studied with you, but I was too shy."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Don't be hard on yourself. I might have failed too.",
+              "pt": "— Não seja dura consigo mesma. Eu também poderia ter reprovado.",
+              "audio": "Don't be hard on yourself. I might have failed too."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— If I had known the questions, it would have been easy.",
+              "pt": "— Se eu tivesse sabido as perguntas, teria sido fácil.",
+              "audio": "If I had known the questions, it would have been easy."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— If we had met earlier, we would have studied together.",
+              "pt": "— Se nos tivéssemos conhecido antes, teríamos estudado juntos.",
+              "audio": "If we had met earlier, we would have studied together."
+            },
+            {
+              "personagem": "Anna",
+              "ru": "— Next time I will ask for help.",
+              "pt": "— Da próxima vez vou pedir ajuda.",
+              "audio": "Next time I will ask for help."
+            },
+            {
+              "personagem": "Tom",
+              "ru": "— Good. And I'll be ready.",
+              "pt": "— Ótimo. E eu estarei pronto.",
+              "audio": "Good. And I'll be ready."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva 6 frases sobre uma oportunidade perdida, com terceiro condicional e «should have»."
@@ -414,6 +471,15 @@
               "id": "en-042-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "If I had studied, I would have passed",
+              "respostaEsperada": "If I had studied, I would have passed.",
+              "explicacao": "Se eu tivesse estudado, teria passado.",
+              "id": "en-042-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I wish I had studied more",
@@ -444,6 +510,15 @@
               "gabarito": "I shouldn't have said that.",
               "explicacao": "shouldn't have.",
               "id": "en-042-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I should have called you",
+              "respostaEsperada": "I should have called you.",
+              "explicacao": "Eu deveria ter ligado para você.",
+              "id": "en-042-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -482,6 +557,15 @@
               "id": "en-042-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She must have left",
+              "respostaEsperada": "She must have left.",
+              "explicacao": "Ela deve ter saído.",
+              "id": "en-042-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I should ___ called you.",
               "opcoes": [
@@ -516,6 +600,15 @@
               "gabarito": "wouldn't have",
               "explicacao": "wouldn't have been.",
               "id": "en-042-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I wish I had studied more",
+              "respostaEsperada": "I wish I had studied more.",
+              "explicacao": "Eu queria ter estudado mais.",
+              "id": "en-042-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

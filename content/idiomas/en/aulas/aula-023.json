@@ -367,6 +367,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "At nine o'clock / Às nove horas",
+          "ru": "At nine o'clock last night, everyone in my house was doing something different. My father was watching the news. My mother was talking to my aunt on the phone. My sister was studying for a test and my brother was playing the guitar. I was cooking dinner, and the dog was waiting next to me. It was raining, and nobody was sleeping. It was a normal evening.",
+          "pt": "Às nove horas da noite passada, todos na minha casa estavam fazendo algo diferente. Meu pai estava vendo o noticiário. Minha mãe estava falando com a minha tia ao telefone. Minha irmã estava estudando para uma prova e meu irmão estava tocando violão. Eu estava preparando o jantar e o cachorro estava esperando ao meu lado. Estava chovendo e ninguém estava dormindo. Foi uma noite normal.",
+          "perguntas": [
+            {
+              "pergunta": "What was the father doing?",
+              "resposta": "Watching the news."
+            },
+            {
+              "pergunta": "Who was studying?",
+              "resposta": "The sister."
+            },
+            {
+              "pergunta": "Was anybody sleeping?",
+              "resposta": "No, nobody was."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Diga o que você estava fazendo em 4 horários de ontem, em frases completas."
@@ -422,6 +444,15 @@
               "id": "en-023-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I was watching TV at nine",
+              "respostaEsperada": "I was watching TV at nine.",
+              "explicacao": "Eu estava assistindo à TV às nove.",
+              "id": "en-023-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "She wasn't sleeping",
@@ -452,6 +483,15 @@
               "gabarito": "Were you sleeping?",
               "explicacao": "were + sujeito.",
               "id": "en-023-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "What were you doing",
+              "respostaEsperada": "What were you doing?",
+              "explicacao": "O que você estava fazendo?",
+              "id": "en-023-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -490,6 +530,15 @@
               "id": "en-023-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "They were playing football",
+              "respostaEsperada": "They were playing football.",
+              "explicacao": "Eles estavam jogando futebol.",
+              "id": "en-023-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "We ___ studying. (estávamos)",
               "opcoes": [
@@ -524,6 +573,15 @@
               "gabarito": "wasn't",
               "explicacao": "I → wasn't.",
               "id": "en-023-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She wasn't sleeping",
+              "respostaEsperada": "She wasn't sleeping.",
+              "explicacao": "Ela não estava dormindo.",
+              "id": "en-023-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

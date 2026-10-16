@@ -805,6 +805,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "At the café / No café",
+          "ru": "Emma and Jake are at a café. Emma would like a tea and a piece of cake. Jake would like a coffee with some milk, but he doesn't want any sugar. The waiter says they don't have any chocolate cake, but they have some apple cake. Emma says: Apple cake is fine, please. They ask for the bill and pay ten pounds. Jake leaves a tip because the service is very good.",
+          "pt": "Emma e Jake estão em um café. Emma gostaria de um chá e um pedaço de bolo. Jake gostaria de um café com um pouco de leite, mas não quer açúcar. O garçom diz que não têm bolo de chocolate, mas têm bolo de maçã. Emma diz: bolo de maçã está bom, por favor. Eles pedem a conta e pagam dez libras. Jake deixa gorjeta porque o atendimento é muito bom.",
+          "perguntas": [
+            {
+              "pergunta": "What does Emma order?",
+              "resposta": "Tea and apple cake."
+            },
+            {
+              "pergunta": "Does Jake want sugar?",
+              "resposta": "No, he doesn't."
+            },
+            {
+              "pergunta": "How much do they pay?",
+              "resposta": "Ten pounds."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 3,
           "enunciado": "Faça o seu pedido num café em voz alta, do cumprimento à conta."
@@ -860,6 +882,15 @@
               "id": "en-008-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I'd like a coffee, please",
+              "respostaEsperada": "I'd like a coffee, please.",
+              "explicacao": "Eu gostaria de um café, por favor.",
+              "id": "en-008-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Can I have the bill, please",
@@ -890,6 +921,15 @@
               "gabarito": "I don't have any milk.",
               "explicacao": "Negativa pede «any».",
               "id": "en-008-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Do you have any milk",
+              "respostaEsperada": "Do you have any milk?",
+              "explicacao": "Você tem leite?",
+              "id": "en-008-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -928,6 +968,15 @@
               "id": "en-008-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I don't have any bread",
+              "respostaEsperada": "I don't have any bread.",
+              "explicacao": "Eu não tenho pão.",
+              "id": "en-008-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Do you have ___ bread? (algum)",
               "opcoes": [
@@ -962,6 +1011,15 @@
               "gabarito": "like",
               "explicacao": "I'd like.",
               "id": "en-008-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Can I have the bill, please",
+              "respostaEsperada": "Can I have the bill, please?",
+              "explicacao": "Posso pedir a conta, por favor?",
+              "id": "en-008-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

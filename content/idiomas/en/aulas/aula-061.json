@@ -348,6 +348,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "Before the presentation / Antes da apresentação",
+          "contexto": "Teacher orienta Lara sobre como se preparar para falar em público.",
+          "linhas": [
+            {
+              "personagem": "Teacher",
+              "ru": "— Are you ready for your presentation, Lara?",
+              "pt": "— Você está pronta para a sua apresentação, Lara?",
+              "audio": "Are you ready for your presentation, Lara?"
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— I'm a little nervous. What should I do first?",
+              "pt": "— Estou um pouco nervosa. O que devo fazer primeiro?",
+              "audio": "I'm a little nervous. What should I do first?"
+            },
+            {
+              "personagem": "Teacher",
+              "ru": "— Start with a clear introduction. Say: Today I am going to talk about recycling.",
+              "pt": "— Comece com uma introdução clara. Diga: Hoje vou falar sobre reciclagem.",
+              "audio": "Start with a clear introduction. Say: Today I am going to talk about recycling."
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— And how do I move to the next point?",
+              "pt": "— E como passo para o próximo ponto?",
+              "audio": "And how do I move to the next point?"
+            },
+            {
+              "personagem": "Teacher",
+              "ru": "— Use phrases like: First of all, next, and finally.",
+              "pt": "— Use expressões como: First of all, next e finally.",
+              "audio": "Use phrases like: First of all, next, and finally."
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— What if I don't understand a question?",
+              "pt": "— E se eu não entender uma pergunta?",
+              "audio": "What if I don't understand a question?"
+            },
+            {
+              "personagem": "Teacher",
+              "ru": "— Just say: Could you repeat that, please?",
+              "pt": "— Basta dizer: Could you repeat that, please?",
+              "audio": "Just say: Could you repeat that, please?"
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— Thank you. I feel better now.",
+              "pt": "— Obrigada. Já me sinto melhor.",
+              "audio": "Thank you. I feel better now."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva o roteiro de uma apresentação de 1 minuto sobre um tema que você conhece."
@@ -403,6 +460,15 @@
               "id": "en-061-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Could you repeat that please",
+              "respostaEsperada": "Could you repeat that, please?",
+              "explicacao": "Você poderia repetir, por favor?",
+              "id": "en-061-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "First of all, listening",
@@ -433,6 +499,15 @@
               "gabarito": "skim",
               "explicacao": "skim = geral.",
               "id": "en-061-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Today I am going to talk about English",
+              "respostaEsperada": "Today I am going to talk about English.",
+              "explicacao": "Hoje eu vou falar sobre o inglês.",
+              "id": "en-061-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -469,6 +544,15 @@
               "gabarito": "about",
               "explicacao": "is about.",
               "id": "en-061-e09"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The text is about learning English",
+              "respostaEsperada": "The text is about learning English.",
+              "explicacao": "O texto é sobre aprender inglês.",
+              "id": "en-061-r03",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",

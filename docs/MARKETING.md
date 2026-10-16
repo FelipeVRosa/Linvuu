@@ -18,7 +18,7 @@ O Babbel abre a página com credibilidade (especialistas) e números (lições, 
 - **Newsletter** no rodapé de todas as páginas, com consentimento e link para a política de privacidade.
 - **Barra fina do topo** (novidades, dúvidas, contato), no estilo dos sites europeus de idiomas.
 - **Termos de uso e política de privacidade** (modelo inicial: peça revisão a um advogado e preencha razão social e CNPJ quando houver).
-- **SEO:** título e descrição por página, dados estruturados (Organization, WebSite, FAQPage, Course), sitemap e robots gerados no build, imagem de compartilhamento (`public/og.png`).
+- **SEO:** título e descrição por página, dados estruturados (Organization, WebSite, FAQPage, Course), sitemap e robots gerados no build, imagem de compartilhamento (`public/brand/avatar-1080.png`, símbolo atual).
 - **Textos antigos e falsos removidos** do `index.html` (que as redes sociais leem sem JavaScript): "100 dias para um mundo novo", "vídeo-aula", "quinze minutos".
 
 ## O que NÃO foi feito de propósito
@@ -43,3 +43,6 @@ Teste um título por vez (por exemplo "como um professor ensina" contra "explica
 
 ## Onde mudar os textos
 Todo o texto de marketing está em `src/i18n/pt-BR.ts`. Mudar o título, as provas, a FAQ ou o chamado final é editar esse arquivo.
+
+## Atualização da marca (16/10/2026)
+A peça antiga de fundo preto foi removida a pedido de Felipe. O HTML aponta para o avatar atual, sem criar marca nova. Após o deploy, conferir a prévia publicada e solicitar novo rastreamento da página inicial no Search Console. O Google escolhe suas miniaturas e pode manter uma imagem antiga até novo processamento; esta alteração não garante indexação nem prazo de atualização.

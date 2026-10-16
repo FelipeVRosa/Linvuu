@@ -64,10 +64,10 @@ export default function HomeBrasileiros() {
     <div className="br-benefits"><span><strong>Em português.</strong> Desde a explicação.</span><span><strong>Com áudio.</strong> Para ouvir e repetir.</span><span><strong>No seu ritmo.</strong> Uma sessão por vez.</span></div>
     <section className="br-section" id="metodo"><div className="br-section-head"><div><p className="br-eyebrow">MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.</p><h2>Entender muda<br />o jeito de aprender.</h2></div><p>Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.</p></div>
       <div className="br-method">{[
-        ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉'],
-        ['02', 'Entenda o porquê.', 'Explicações em português, exemplos e comparações para construir uma base.', 'Aa'],
-        ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗'],
-      ].map(([n, titulo, texto, icon]) => <article key={n}><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{titulo}</h3><p>{texto}</p></article>)}</div>
+        ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉', '/fotos/comece.jpg'],
+        ['02', 'Entenda o porquê.', 'Explicações em português, exemplos e comparações para construir uma base.', 'Aa', '/fotos/imersao.jpg'],
+        ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
+      ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{titulo}</h3><p>{texto}</p></article>)}</div>
     </section>
     <section className="br-plans-wrap" id="planos"><div className="br-section"><div className="br-section-head"><div><p className="br-eyebrow">SEU OBJETIVO. SEU ESPAÇO PARA CRESCER.</p><h2>Quanto do mundo<br />você quer conhecer?</h2></div><p>Compare a proposta dos novos planos. Depois, explore os idiomas que combinam com você.</p></div>
       <p className="br-status">Novos planos em preparação · Preços ainda não definidos</p>

@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido } from './server/billing';
 import { registrarProgresso } from './server/progresso';
+import { registrarMedicao } from './server/medicao';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
@@ -41,6 +42,7 @@ async function startServer() {
   registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
   registrarLivroProtegido(app);
   registrarProgresso(app);
+  registrarMedicao(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

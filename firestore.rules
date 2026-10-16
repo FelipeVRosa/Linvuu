@@ -25,6 +25,8 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // 'eventos' (medição do aprendizado) não tem regra de propósito: só o servidor (Admin SDK) grava e lê. O navegador fica negado por padrão.
+
     // Lista de e-mails da newsletter: qualquer visitante pode se inscrever, ninguém pode ler pelo navegador.
     // (Leia a lista pelo Console do Firebase.)
     match /newsletter/{id} {

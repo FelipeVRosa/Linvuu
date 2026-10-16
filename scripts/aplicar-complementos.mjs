@@ -10,12 +10,17 @@ const idioma = process.argv[2];
 if (!idioma) { console.error('uso: node scripts/aplicar-complementos.mjs <idioma>'); process.exit(1); }
 const dirC = path.join(raiz, 'content/idiomas', idioma, 'complementos');
 const dirA = path.join(raiz, 'content/idiomas', idioma, 'aulas');
-if (!fs.existsSync(dirC)) { console.log(`sem complementos para ${idioma}`); process.exit(0); }
+// 'br' (português para estrangeiros) tem outra língua de apoio nas traduções: fica de fora até ter o mesmo tratamento.
+if (idioma === 'br') { console.log('br: não aplicável por enquanto'); process.exit(0); }
+if (!fs.existsSync(dirA)) { console.error(`sem aulas para ${idioma}`); process.exit(1); }
+// Sem pasta de complementos, só o reforço automático (até a meta) é aplicado: é o padrão mínimo de qualquer idioma.
+const lista = fs.existsSync(dirC) ? fs.readdirSync(dirC).filter((x) => /^aula-\d+\.json$/.test(x)) : fs.readdirSync(dirA).filter((x) => /^aula-\d+\.json$/.test(x));
 
 const antesDe = (blocos, tipos) => { const i = blocos.findIndex((b) => tipos.includes(b.tipo)); return i < 0 ? blocos.length : i; };
 let n = 0;
-for (const f of fs.readdirSync(dirC).filter((x) => /^aula-\d+\.json$/.test(x)).sort()) {
-  const c = JSON.parse(fs.readFileSync(path.join(dirC, f), 'utf8'));
+for (const f of lista.sort()) {
+  const arqC = path.join(dirC, f);
+  const c = fs.existsSync(arqC) ? JSON.parse(fs.readFileSync(arqC, 'utf8')) : {};
   const arq = path.join(dirA, f);
   if (!fs.existsSync(arq)) { console.warn(`aviso: ${f} sem aula correspondente`); continue; }
   const a = JSON.parse(fs.readFileSync(arq, 'utf8'));
@@ -81,6 +86,27 @@ for (const f of fs.readdirSync(dirC).filter((x) => /^aula-\d+\.json$/.test(x)).s
       const rnd = semente(p.ru); const outras = emb(pts.filter((x) => x !== p.pt && Math.abs(x.length - p.pt.length) < 14), rnd).slice(0, 3);
       if (outras.length < 3) continue;
       extras.push({ tipo: 'multiple-choice', enunciado: `O que significa «${p.ru}»?`, audio: p.audio ?? p.ru, opcoes: emb([p.pt, ...outras], rnd), gabarito: p.pt, explicacao: `«${p.ru}» = ${p.pt}.`, id: id(), complemento: true }); nMc++;
+    }
+    // 5) aulas de revisão/simulado têm poucas falas e palavras: reaproveita as frases dos próprios exercícios (com o áudio que já existe),
+    //    trocando a habilidade — ouvir e montar a frase, ou ouvir e escrever
+    if (extras.length < falta) {
+      const existentes = a.sessoes.flatMap((x) => x.blocos.filter((b) => b.tipo === 'exercicios').flatMap((b) => b.itens));
+      const jaOrdenadas = new Set(existentes.filter((i) => i.tipo === 'sentence-ordering').map((i) => (i.gabarito ?? '').toLowerCase().replace(/[^\p{L}\p{N} ]/gu, '')));
+      const jaDitadas = new Set([...extras, ...existentes].filter((i) => i.tipo === 'audio-recognition' && !i.opcoes).map((i) => (i.audio ?? '').toLowerCase()));
+      const frases = [...new Set(existentes.filter((i) => i.audio && i.tipo !== 'repeat').map((i) => i.audio))].filter((t) => { const n = t.split(/\s+/).length; return n >= 2 && n <= 14; });
+      for (const t of frases) {
+        if (extras.length >= falta) break;
+        const chave = t.toLowerCase().replace(/[^\p{L}\p{N} ]/gu, '');
+        if (jaOrdenadas.has(chave)) continue;
+        const rnd = semente(`o${t}`); const pal = t.split(/\s+/);
+        let o = emb(pal, rnd); for (let k = 0; k < 5 && o.join(' ') === pal.join(' '); k++) o = emb(pal, rnd);
+        extras.push({ tipo: 'sentence-ordering', enunciado: 'Ouça e monte a frase.', audio: t, opcoes: o, gabarito: t, explicacao: `Escreva: ${t}`, id: id(), complemento: true });
+      }
+      for (const t of frases) {
+        if (extras.length >= falta) break;
+        if (jaDitadas.has(t.toLowerCase())) continue;
+        extras.push({ tipo: 'audio-recognition', enunciado: 'Ouça e escreva.', audio: t, respostaEsperada: t, explicacao: `Escreva: ${t}`, id: id(), complemento: true });
+      }
     }
     bEx.itens = misturar(bEx.itens, extras);
   }

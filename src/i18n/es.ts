@@ -102,7 +102,7 @@ export const es: Dicionario = {
     ouvir: 'Escuchar', ainda: 'escucha y repite', aindaDica: (l: string) => `Esta palabra tiene letras que todavía vas a aprender (${l}). Por ahora, escucha y repite.`, resposta: 'Respuesta:', refazer: 'Rehacer los ejercicios', tocarOuvir: 'Toca para escuchar',
     temaAlterado: (t: string) => `Tema cambiado a ${t}.`, sonsRotulo: 'Sonidos de refuerzo', sonsLig: 'activados', sonsDesl: 'desactivados',
     opcoes: 'Opciones', pecas: 'Toca las piezas de abajo', limpar: 'Borrar', escrevaPrivado: 'Escribe aquí (solo tú lo ves)', escreva: 'Escribe aquí', escrevaCirilico: 'Escribe en cirílico',
-    certo: 'Correcto.', errou: 'Esta vez no. Respuesta:', compare: 'Compara con un ejemplo:', mostrarResposta: 'Mostrar respuesta', verExemplo: 'Ver ejemplo', verificar: 'Comprobar',
+    certo: 'Correcto.', errou: 'Esta vez no. Respuesta:', compare: 'Compara con un ejemplo:', avisoMedicao: 'Ayúdanos a mejorar las clases: ¿podemos registrar, sin nombre ni correo, qué ejercicios aciertas y cuáles fallas?', medicaoSim: 'Sí, registrar', medicaoNao: 'No, gracias', medicaoSaiba: 'Cómo funciona', mostrarResposta: 'Mostrar respuesta', verExemplo: 'Ver ejemplo', verificar: 'Comprobar',
     verResultado: 'Ver resultado', proximo: 'Siguiente', emPortugues: 'Compara con el español:', erros: 'Errores frecuentes', revisao: 'Repaso.', suaVez: 'Ahora te toca a ti.',
     esconder: 'Ocultar ejemplo', ouvirExplicacao: 'Escuchar la explicación', ouvirDialogo: 'Escuchar todo el diálogo', parar: 'Parar', mostrarTrad: 'Mostrar traducción', ouvirTexto: 'Escuchar el texto',
     perguntas: 'Preguntas', blocosSessao: 'Bloques de la sesión', voltar: 'Atrás', continuar: 'Continuar', concluir: 'Terminar la sesión', concluida: 'Sesión terminada',

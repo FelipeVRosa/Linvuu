@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
+import { consentimento, definirConsentimento, registrar } from '../lib/medicao';
 import { falar, falarLista, falarTrechos, parar, temVoz } from '../lib/audio';
 import { trechos } from '../lib/narracao';
 import { textos } from '../lib/textos';
@@ -54,6 +55,22 @@ export function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
   );
 }
 
+function AvisoMedicao({ idioma }: { idioma: string }) {
+  const T = textos(idioma);
+  const [c, setC] = useState(consentimento());
+  if (c !== null) return null;
+  const escolher = (v: 'sim' | 'nao') => { definirConsentimento(v); setC(v); };
+  return (
+    <div className="aviso-medicao" role="region" aria-label={T.medicaoSaiba}>
+      <p>{T.avisoMedicao} <Link to="/privacidade">{T.medicaoSaiba}</Link></p>
+      <div className="aviso-medicao-botoes">
+        <button type="button" className="btn btn-primary" onClick={() => escolher('sim')}>{T.medicaoSim}</button>
+        <button type="button" className="btn btn-ghost" onClick={() => escolher('nao')}>{T.medicaoNao}</button>
+      </div>
+    </div>
+  );
+}
+
 function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const T = textos(idioma);
   const [i, setI] = useState(0);
@@ -75,13 +92,19 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     else if (ex.opcoes && ex.gabarito !== undefined) ok = escolha === ex.gabarito;
     else ok = norm(texto) === norm(ex.respostaEsperada ?? '');
     setAcertos((a) => ({ ...a, [ex.id]: ok }));
+    registrar({ t: 'ex', idioma, ex: ex.id, tp: ex.tipo, ok: ok ? 1 : 0 });
     setRes(ok ? 'ok' : 'erro');
     errosSeguidos.current = ok ? 0 : errosSeguidos.current + 1;
     if (!ok) somErro(errosSeguidos.current);
   };
   const avancar = () => {
     setEscolha(null); setOrdem([]); setTexto(''); setRes(null);
-    if (i + 1 >= itens.length) setFim(true); else setI(i + 1);
+    if (i + 1 >= itens.length) {
+      const aula = Number(/^[a-z]{2,3}-(\d{3})-/.exec(itens[0]?.id ?? '')?.[1] ?? 0);
+      const final = { ...acertos };
+      registrar({ t: 'fim', idioma, aula, ac: corrigiveis.filter((x) => final[x.id]).length, tot: corrigiveis.length });
+      setFim(true);
+    } else setI(i + 1);
   };
   const recomecar = () => { errosSeguidos.current = 0; setI(0); setAcertos({}); setFim(false); setEscolha(null); setOrdem([]); setTexto(''); setRes(null); };
 
@@ -129,6 +152,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
 
   return (
     <div className="exercicio">
+      {i === 0 && res === null && <AvisoMedicao idioma={idioma} />}
       <span className="ex-n">{T.exercicio(i + 1, itens.length)}</span>
       <p className="ex-enunciado">{ex.enunciado}</p>
       {ex.audio && <div className="ex-audio"><Audio texto={ex.audio} idioma={idioma} /> <span>{T.tocarOuvir}</span></div>}

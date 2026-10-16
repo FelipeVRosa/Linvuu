@@ -335,6 +335,20 @@
               "explicacao": "Sem cópula."
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Isto é uma caneta e um carro.»",
+              "opcoes": [
+                "ручка",
+                "Это",
+                "машина.",
+                "и"
+              ],
+              "gabarito": "Это ручка и машина.",
+              "explicacao": "Escreva: Это ручка и машина.",
+              "id": "ru-004-x01",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e02",
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
@@ -348,6 +362,15 @@
               "explicacao": "«машина» = carro."
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Это ручка и машина.",
+              "respostaEsperada": "Это ручка и машина.",
+              "explicacao": "Isto é uma caneta e um carro.",
+              "id": "ru-004-x02",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e03",
               "tipo": "fill-gap",
               "enunciado": "— Что это? — Это ___.",
@@ -358,6 +381,28 @@
               ],
               "gabarito": "кот",
               "explicacao": "«Что это?» → «Это кот»."
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «E quem é este?»",
+              "opcoes": [
+                "это?",
+                "кто",
+                "А"
+              ],
+              "gabarito": "А кто это?",
+              "explicacao": "Escreva: А кто это?",
+              "id": "ru-004-x03",
+              "complemento": true
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "А кто это?",
+              "respostaEsperada": "А кто это?",
+              "explicacao": "E quem é este?",
+              "id": "ru-004-x04",
+              "complemento": true
             },
             {
               "id": "ru-004-e04",
@@ -373,6 +418,20 @@
               "explicacao": "Это + objeto 1 + и + objeto 2."
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «É um gato e um cachorro.»",
+              "opcoes": [
+                "и",
+                "собака.",
+                "Это",
+                "кот"
+              ],
+              "gabarito": "Это кот и собака.",
+              "explicacao": "Escreva: Это кот и собака.",
+              "id": "ru-004-x05",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e05",
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
@@ -383,6 +442,15 @@
               ],
               "gabarito": "Это стол",
               "explicacao": "No dia a dia, sem «есть» no presente."
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Это кот и собака.",
+              "respostaEsperada": "Это кот и собака.",
+              "explicacao": "É um gato e um cachorro.",
+              "id": "ru-004-x06",
+              "complemento": true
             },
             {
               "id": "ru-004-e06",
@@ -397,6 +465,21 @@
               "explicacao": "«Большой» = grande."
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «стул»?",
+              "audio": "стул",
+              "opcoes": [
+                "grande",
+                "cadeira",
+                "janela",
+                "este"
+              ],
+              "gabarito": "cadeira",
+              "explicacao": "«стул» = cadeira.",
+              "id": "ru-004-x07",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e07",
               "tipo": "fill-gap",
               "enunciado": "Это ___ дом. (novo)",
@@ -409,12 +492,42 @@
               "explicacao": "«Дом» masculino → «новый»."
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «книга»?",
+              "audio": "книга",
+              "opcoes": [
+                "janela",
+                "esta",
+                "cadeira",
+                "livro"
+              ],
+              "gabarito": "livro",
+              "explicacao": "«книга» = livro.",
+              "id": "ru-004-x08",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e08",
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Это большой дом",
               "respostaEsperada": "Это большой дом",
               "explicacao": "Adjetivo antes do substantivo."
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «этот»?",
+              "audio": "этот",
+              "opcoes": [
+                "este",
+                "pequeno",
+                "novo",
+                "livro"
+              ],
+              "gabarito": "este",
+              "explicacao": "«этот» = este.",
+              "id": "ru-004-x09",
+              "complemento": true
             },
             {
               "id": "ru-004-e09",
@@ -429,6 +542,36 @@
               "explicacao": "«Окно» neutro → «новое»."
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «кот»?",
+              "audio": "кот",
+              "opcoes": [
+                "esta",
+                "gato",
+                "este",
+                "cadeira"
+              ],
+              "gabarito": "gato",
+              "explicacao": "«кот» = gato.",
+              "id": "ru-004-x10",
+              "complemento": true
+            },
+            {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «и»?",
+              "audio": "и",
+              "opcoes": [
+                "e",
+                "janela",
+                "caneta",
+                "pequeno"
+              ],
+              "gabarito": "e",
+              "explicacao": "«и» = e.",
+              "id": "ru-004-x11",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e10",
               "tipo": "multiple-choice",
               "enunciado": "«Что» significa:",
@@ -441,6 +584,21 @@
               "explicacao": "«Что» = o quê. «Кто» = quem."
             },
             {
+              "tipo": "multiple-choice",
+              "enunciado": "O que significa «большой»?",
+              "audio": "большой",
+              "opcoes": [
+                "grande",
+                "cadeira",
+                "pequeno",
+                "cachorro"
+              ],
+              "gabarito": "grande",
+              "explicacao": "«большой» = grande.",
+              "id": "ru-004-x12",
+              "complemento": true
+            },
+            {
               "id": "ru-004-e11",
               "tipo": "fill-gap",
               "enunciado": "Это ___ книга. (velha)",
@@ -451,6 +609,20 @@
               ],
               "gabarito": "старая",
               "explicacao": "«Книга» feminino → «старая»."
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Ouça e monte a frase.",
+              "audio": "Это большой дом",
+              "opcoes": [
+                "большой",
+                "Это",
+                "дом"
+              ],
+              "gabarito": "Это большой дом",
+              "explicacao": "Escreva: Это большой дом",
+              "id": "ru-004-x13",
+              "complemento": true
             },
             {
               "id": "ru-004-e12",

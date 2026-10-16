@@ -326,6 +326,27 @@
               "id": "en-018-e01"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Olá! Sou o Carlos. Moro no apartamento ao lado do seu.»",
+              "opcoes": [
+                "the",
+                "Carlos.",
+                "I'm",
+                "Hello!",
+                "next",
+                "yours.",
+                "in",
+                "apartment",
+                "live",
+                "to",
+                "I"
+              ],
+              "gabarito": "Hello! I'm Carlos. I live in the apartment next to yours.",
+              "explicacao": "Escreva: Hello! I'm Carlos. I live in the apartment next to yours.",
+              "id": "en-018-x01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escolha.",
               "audio": "I'd like a coffee, please",
@@ -347,12 +368,42 @@
               "id": "en-018-e03"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Hello! I'm Carlos. I live in the apartment next to yours.",
+              "respostaEsperada": "Hello! I'm Carlos. I live in the apartment next to yours.",
+              "explicacao": "Olá! Sou o Carlos. Moro no apartamento ao lado do seu.",
+              "id": "en-018-x02",
+              "complemento": true
+            },
+            {
               "tipo": "repeat",
               "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "She is not happy today",
               "respostaEsperada": "She is not happy today.",
               "explicacao": "Ela não está feliz hoje.",
               "id": "en-018-r01",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Prazer, Carlos. Sou a Julia. De onde você é?»",
+              "opcoes": [
+                "meet",
+                "you,",
+                "I'm",
+                "Carlos.",
+                "Where",
+                "to",
+                "Nice",
+                "from?",
+                "Julia.",
+                "you",
+                "are"
+              ],
+              "gabarito": "Nice to meet you, Carlos. I'm Julia. Where are you from?",
+              "explicacao": "Escreva: Nice to meet you, Carlos. I'm Julia. Where are you from?",
+              "id": "en-018-x03",
               "complemento": true
             },
             {
@@ -376,6 +427,15 @@
               "id": "en-018-e05"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Nice to meet you, Carlos. I'm Julia. Where are you from?",
+              "respostaEsperada": "Nice to meet you, Carlos. I'm Julia. Where are you from?",
+              "explicacao": "Prazer, Carlos. Sou a Julia. De onde você é?",
+              "id": "en-018-x04",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -386,6 +446,21 @@
               "gabarito": "Does she have a car?",
               "explicacao": "Does + sujeito + have.",
               "id": "en-018-e06"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sou do Brasil. E você?»",
+              "opcoes": [
+                "And",
+                "Brazil.",
+                "I'm",
+                "you?",
+                "from"
+              ],
+              "gabarito": "I'm from Brazil. And you?",
+              "explicacao": "Escreva: I'm from Brazil. And you?",
+              "id": "en-018-x05",
+              "complemento": true
             },
             {
               "tipo": "repeat",
@@ -409,6 +484,15 @@
               "id": "en-018-e07"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I'm from Brazil. And you?",
+              "respostaEsperada": "I'm from Brazil. And you?",
+              "explicacao": "Sou do Brasil. E você?",
+              "id": "en-018-x06",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «em junho»?",
               "opcoes": [
@@ -419,6 +503,24 @@
               "gabarito": "in June",
               "explicacao": "Mês: in.",
               "id": "en-018-e08"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sou de Chicago. Você trabalha por aqui?»",
+              "opcoes": [
+                "here?",
+                "Do",
+                "work",
+                "near",
+                "Chicago.",
+                "you",
+                "I'm",
+                "from"
+              ],
+              "gabarito": "I'm from Chicago. Do you work near here?",
+              "explicacao": "Escreva: I'm from Chicago. Do you work near here?",
+              "id": "en-018-x07",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -442,6 +544,15 @@
               "complemento": true
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I'm from Chicago. Do you work near here?",
+              "respostaEsperada": "I'm from Chicago. Do you work near here?",
+              "explicacao": "Sou de Chicago. Você trabalha por aqui?",
+              "id": "en-018-x08",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "She ___ up at six every day.",
               "opcoes": [
@@ -452,6 +563,25 @@
               "gabarito": "gets",
               "explicacao": "she → -s.",
               "id": "en-018-e10"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, trabalho num restaurante na Rua Oak.»",
+              "opcoes": [
+                "Yes,",
+                "work",
+                "on",
+                "a",
+                "restaurant",
+                "I",
+                "Oak",
+                "in",
+                "Street."
+              ],
+              "gabarito": "Yes, I work in a restaurant on Oak Street.",
+              "explicacao": "Escreva: Yes, I work in a restaurant on Oak Street.",
+              "id": "en-018-x09",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -478,12 +608,37 @@
               "id": "en-018-e12"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Yes, I work in a restaurant on Oak Street.",
+              "respostaEsperada": "Yes, I work in a restaurant on Oak Street.",
+              "explicacao": "Sim, trabalho num restaurante na Rua Oak.",
+              "id": "en-018-x10",
+              "complemento": true
+            },
+            {
               "tipo": "repeat",
               "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "There are two beds in the bedroom",
               "respostaEsperada": "There are two beds in the bedroom.",
               "explicacao": "Há duas camas no quarto.",
               "id": "en-018-r04",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Ótimo! Você sabe cozinhar comida brasileira?»",
+              "opcoes": [
+                "Great!",
+                "food?",
+                "you",
+                "Can",
+                "cook",
+                "Brazilian"
+              ],
+              "gabarito": "Great! Can you cook Brazilian food?",
+              "explicacao": "Escreva: Great! Can you cook Brazilian food?",
+              "id": "en-018-x11",
               "complemento": true
             },
             {
@@ -515,6 +670,15 @@
               "gabarito": "She is going to travel next week.",
               "explicacao": "be + going to + verbo.",
               "id": "en-018-e14"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Great! Can you cook Brazilian food?",
+              "respostaEsperada": "Great! Can you cook Brazilian food?",
+              "explicacao": "Ótimo! Você sabe cozinhar comida brasileira?",
+              "id": "en-018-x12",
+              "complemento": true
             },
             {
               "tipo": "producao",

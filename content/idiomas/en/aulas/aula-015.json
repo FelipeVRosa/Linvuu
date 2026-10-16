@@ -471,12 +471,36 @@
               "id": "en-015-e02"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Olá. Posso ajudar?»",
+              "opcoes": [
+                "Can",
+                "you?",
+                "Hello.",
+                "I",
+                "help"
+              ],
+              "gabarito": "Hello. Can I help you?",
+              "explicacao": "Escreva: Hello. Can I help you?",
+              "id": "en-015-x01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I'll take it",
               "respostaEsperada": "I'll take it",
               "explicacao": "Escreva: I'll take it.",
               "id": "en-015-e03"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Hello. Can I help you?",
+              "respostaEsperada": "Hello. Can I help you?",
+              "explicacao": "Olá. Posso ajudar?",
+              "id": "en-015-x02",
+              "complemento": true
             },
             {
               "tipo": "repeat",
@@ -494,6 +518,23 @@
               "respostaEsperada": "It's too expensive",
               "explicacao": "Escreva: it's too expensive.",
               "id": "en-015-e04"
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sim, estou procurando uma jaqueta preta.»",
+              "opcoes": [
+                "for",
+                "jacket.",
+                "I'm",
+                "black",
+                "Yes,",
+                "looking",
+                "a"
+              ],
+              "gabarito": "Yes, I'm looking for a black jacket.",
+              "explicacao": "Escreva: Yes, I'm looking for a black jacket.",
+              "id": "en-015-x03",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -520,6 +561,15 @@
               "id": "en-015-e06"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Yes, I'm looking for a black jacket.",
+              "respostaEsperada": "Yes, I'm looking for a black jacket.",
+              "explicacao": "Sim, estou procurando uma jaqueta preta.",
+              "id": "en-015-x04",
+              "complemento": true
+            },
+            {
               "tipo": "repeat",
               "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
               "audio": "It's sixty-five dollars",
@@ -541,6 +591,20 @@
               "id": "en-015-e07"
             },
             {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Qual é o seu tamanho?»",
+              "opcoes": [
+                "size",
+                "you?",
+                "are",
+                "What"
+              ],
+              "gabarito": "What size are you?",
+              "explicacao": "Escreva: What size are you?",
+              "id": "en-015-x05",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Como se diz «É caro demais»?",
               "opcoes": [
@@ -551,6 +615,15 @@
               "gabarito": "It's too expensive.",
               "explicacao": "too + adjetivo.",
               "id": "en-015-e08"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "What size are you?",
+              "respostaEsperada": "What size are you?",
+              "explicacao": "Qual é o seu tamanho?",
+              "id": "en-015-x06",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",
@@ -571,6 +644,25 @@
               "respostaEsperada": "I'll take it.",
               "explicacao": "Eu vou levar.",
               "id": "en-015-r03",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Sou M. Posso provar esta?»",
+              "opcoes": [
+                "on?",
+                "Can",
+                "I'm",
+                "one",
+                "medium.",
+                "a",
+                "try",
+                "I",
+                "this"
+              ],
+              "gabarito": "I'm a medium. Can I try this one on?",
+              "explicacao": "Escreva: I'm a medium. Can I try this one on?",
+              "id": "en-015-x07",
               "complemento": true
             },
             {
@@ -598,6 +690,15 @@
               "id": "en-015-e11"
             },
             {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "I'm a medium. Can I try this one on?",
+              "respostaEsperada": "I'm a medium. Can I try this one on?",
+              "explicacao": "Sou M. Posso provar esta?",
+              "id": "en-015-x08",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Can I ___ it on? (provar)",
               "opcoes": [
@@ -620,6 +721,24 @@
             },
             {
               "tipo": "sentence-ordering",
+              "enunciado": "Monte a frase: «Claro. O provador é ali.»",
+              "opcoes": [
+                "over",
+                "is",
+                "The",
+                "Of",
+                "there.",
+                "room",
+                "fitting",
+                "course."
+              ],
+              "gabarito": "Of course. The fitting room is over there.",
+              "explicacao": "Escreva: Of course. The fitting room is over there.",
+              "id": "en-015-x09",
+              "complemento": true
+            },
+            {
+              "tipo": "sentence-ordering",
               "enunciado": "Ordene: «I'm looking for a red dress.»",
               "opcoes": [
                 "I'm",
@@ -632,6 +751,15 @@
               "gabarito": "I'm looking for a red dress.",
               "explicacao": "looking for + a + cor + roupa.",
               "id": "en-015-e13"
+            },
+            {
+              "tipo": "audio-recognition",
+              "enunciado": "Ouça e escreva.",
+              "audio": "Of course. The fitting room is over there.",
+              "respostaEsperada": "Of course. The fitting room is over there.",
+              "explicacao": "Claro. O provador é ali.",
+              "id": "en-015-x10",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

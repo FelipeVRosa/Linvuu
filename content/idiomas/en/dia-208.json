@@ -50,12 +50,40 @@
             "id": "en-052-e02"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Ben, você terá terminado o relatório até sexta?»",
+            "opcoes": [
+              "report",
+              "Ben,",
+              "finished",
+              "you",
+              "the",
+              "Friday?",
+              "will",
+              "by",
+              "have"
+            ],
+            "gabarito": "Ben, will you have finished the report by Friday?",
+            "explicacao": "Escreva: Ben, will you have finished the report by Friday?",
+            "id": "en-052-x01",
+            "complemento": true
+          },
+          {
             "tipo": "audio-recognition",
             "enunciado": "Ouça e escreva.",
             "audio": "By Friday, I will have finished",
             "respostaEsperada": "By Friday, I will have finished",
             "explicacao": "Escreva: by Friday, I will have finished.",
             "id": "en-052-e03"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Ben, will you have finished the report by Friday?",
+            "respostaEsperada": "Ben, will you have finished the report by Friday?",
+            "explicacao": "Ben, você terá terminado o relatório até sexta?",
+            "id": "en-052-x02",
+            "complemento": true
           },
           {
             "tipo": "repeat",
@@ -73,6 +101,24 @@
             "respostaEsperada": "Wait until I come back",
             "explicacao": "Escreva: wait until I come back.",
             "id": "en-052-e04"
+          },
+          {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Perfeito. Quando eu chegar, vou ler.»",
+            "opcoes": [
+              "arrive,",
+              "will",
+              "When",
+              "Perfect.",
+              "I",
+              "read",
+              "I",
+              "it."
+            ],
+            "gabarito": "Perfect. When I arrive, I will read it.",
+            "explicacao": "Escreva: Perfect. When I arrive, I will read it.",
+            "id": "en-052-x03",
+            "complemento": true
           },
           {
             "tipo": "multiple-choice",
@@ -99,6 +145,15 @@
             "id": "en-052-e06"
           },
           {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "Perfect. When I arrive, I will read it.",
+            "respostaEsperada": "Perfect. When I arrive, I will read it.",
+            "explicacao": "Perfeito. Quando eu chegar, vou ler.",
+            "id": "en-052-x04",
+            "complemento": true
+          },
+          {
             "tipo": "repeat",
             "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
             "audio": "This time tomorrow, I will be flying",
@@ -120,6 +175,26 @@
             "id": "en-052-e07"
           },
           {
+            "tipo": "sentence-ordering",
+            "enunciado": "Monte a frase: «Quando você aterrissar, já terei enviado.»",
+            "opcoes": [
+              "you",
+              "time",
+              "have",
+              "the",
+              "I",
+              "will",
+              "sent",
+              "it.",
+              "land,",
+              "By"
+            ],
+            "gabarito": "By the time you land, I will have sent it.",
+            "explicacao": "Escreva: By the time you land, I will have sent it.",
+            "id": "en-052-x05",
+            "complemento": true
+          },
+          {
             "tipo": "multiple-choice",
             "enunciado": "Qual frase está correta?",
             "opcoes": [
@@ -130,6 +205,15 @@
             "gabarito": "Wait until I come back.",
             "explicacao": "Presente.",
             "id": "en-052-e08"
+          },
+          {
+            "tipo": "audio-recognition",
+            "enunciado": "Ouça e escreva.",
+            "audio": "By the time you land, I will have sent it.",
+            "respostaEsperada": "By the time you land, I will have sent it.",
+            "explicacao": "Quando você aterrissar, já terei enviado.",
+            "id": "en-052-x06",
+            "complemento": true
           },
           {
             "tipo": "fill-gap",
@@ -150,6 +234,21 @@
             "respostaEsperada": "By Friday, I will have finished.",
             "explicacao": "Até sexta, eu terei terminado.",
             "id": "en-052-r03",
+            "complemento": true
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «at 8 p.m.»?",
+            "audio": "at 8 p.m.",
+            "opcoes": [
+              "terei feito",
+              "a esta hora amanhã",
+              "prazo",
+              "às 8 da noite"
+            ],
+            "gabarito": "às 8 da noite",
+            "explicacao": "«at 8 p.m.» = às 8 da noite.",
+            "id": "en-052-x07",
             "complemento": true
           },
           {
@@ -177,6 +276,21 @@
             "id": "en-052-e11"
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «deadline»?",
+            "audio": "deadline",
+            "opcoes": [
+              "até sexta",
+              "estarei fazendo",
+              "prazo",
+              "disponível"
+            ],
+            "gabarito": "prazo",
+            "explicacao": "«deadline» = prazo.",
+            "id": "en-052-x08",
+            "complemento": true
+          },
+          {
             "tipo": "fill-gap",
             "enunciado": "I'll call you after I ___ . (terminar)",
             "opcoes": [
@@ -198,6 +312,21 @@
             "complemento": true
           },
           {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «will have done»?",
+            "audio": "will have done",
+            "opcoes": [
+              "antes de",
+              "terei feito",
+              "a esta hora amanhã",
+              "até que"
+            ],
+            "gabarito": "terei feito",
+            "explicacao": "«will have done» = terei feito.",
+            "id": "en-052-x09",
+            "complemento": true
+          },
+          {
             "tipo": "sentence-ordering",
             "enunciado": "Ordene: «As soon as I arrive, I will call you.»",
             "opcoes": [
@@ -214,6 +343,21 @@
             "gabarito": "As soon as I arrive, I will call you.",
             "explicacao": "as soon as + presente, will.",
             "id": "en-052-e13"
+          },
+          {
+            "tipo": "multiple-choice",
+            "enunciado": "O que significa «before»?",
+            "audio": "before",
+            "opcoes": [
+              "antes de",
+              "prazo",
+              "enquanto",
+              "até que"
+            ],
+            "gabarito": "antes de",
+            "explicacao": "«before» = antes de.",
+            "id": "en-052-x10",
+            "complemento": true
           },
           {
             "tipo": "sentence-ordering",

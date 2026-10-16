@@ -834,6 +834,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "The lost wallet / A carteira perdida",
+          "ru": "First, I woke up late. Then I had a quick breakfast and ran to the bus stop. I used to take the bus every day, but yesterday it was late. Suddenly, I saw a wallet on the ground. Inside there was an ID card, so I took it to the police station. After that, I went to work. In the evening, the owner called me. He was very grateful, and finally we met and had a coffee.",
+          "pt": "Primeiro, acordei tarde. Depois tomei um café rápido e corri para o ponto de ônibus. Eu costumava pegar o ônibus todos os dias, mas ontem ele atrasou. De repente, vi uma carteira no chão. Dentro havia um documento, então a levei à delegacia. Depois disso, fui trabalhar. À noite, o dono me ligou. Estava muito agradecido e, por fim, nos encontramos e tomamos um café.",
+          "perguntas": [
+            {
+              "pergunta": "What did the writer find?",
+              "resposta": "A wallet."
+            },
+            {
+              "pergunta": "Where did the writer take it?",
+              "resposta": "To the police station."
+            },
+            {
+              "pergunta": "What happened in the evening?",
+              "resposta": "The owner called."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 3,
           "enunciado": "Conte a Lucy uma história sua em que algo deu errado, com 5 conectores."
@@ -889,6 +911,15 @@
               "id": "en-022-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "First, I woke up and then I had breakfast",
+              "respostaEsperada": "First, I woke up and then I had breakfast.",
+              "explicacao": "Primeiro eu acordei, e depois tomei café da manhã.",
+              "id": "en-022-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Suddenly, the phone rang",
@@ -919,6 +950,15 @@
               "gabarito": "What happened?",
               "explicacao": "Sem did.",
               "id": "en-022-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I used to play football every day",
+              "respostaEsperada": "I used to play football every day.",
+              "explicacao": "Eu costumava jogar futebol todos os dias.",
+              "id": "en-022-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -955,6 +995,15 @@
               "gabarito": "First",
               "explicacao": "Começo da sequência.",
               "id": "en-022-e09"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Suddenly, the phone rang",
+              "respostaEsperada": "Suddenly, the phone rang.",
+              "explicacao": "De repente, o telefone tocou.",
+              "id": "en-022-r03",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",

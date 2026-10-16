@@ -688,6 +688,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "A mystery at the office / Um mistério no escritório",
+          "ru": "Someone has taken the cake from the kitchen. It can't be Maria, because she is on holiday. It might be Tom, because he always eats cake. It must be someone who works late. The door was open, so it could have been anyone. Look: there are crumbs on Dan's desk. He must have eaten it, but he can't have been alone. There is a second plate!",
+          "pt": "Alguém levou o bolo da cozinha. Não pode ter sido a Maria, porque ela está de férias. Pode ter sido o Tom, porque ele sempre come bolo. Deve ser alguém que trabalha até tarde. A porta estava aberta, então poderia ter sido qualquer um. Olhe: há migalhas na mesa do Dan. Ele deve ter comido, mas não pode ter estado sozinho. Há um segundo prato!",
+          "perguntas": [
+            {
+              "pergunta": "Why can't it be Maria?",
+              "resposta": "She is on holiday."
+            },
+            {
+              "pergunta": "Where are the crumbs?",
+              "resposta": "On Dan's desk."
+            },
+            {
+              "pergunta": "What is the second clue?",
+              "resposta": "A second plate."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva um mistério de 6 frases e resolva-o com must have, can't have e might have."
@@ -743,6 +765,15 @@
               "id": "en-051-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She must be tired",
+              "respostaEsperada": "She must be tired.",
+              "explicacao": "Ela deve estar cansada.",
+              "id": "en-051-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "She might have forgotten",
@@ -773,6 +804,15 @@
               "gabarito": "can't be",
               "explicacao": "can't be.",
               "id": "en-051-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "He can't have known",
+              "respostaEsperada": "He can't have known.",
+              "explicacao": "Ele não pode ter sabido.",
+              "id": "en-051-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -811,6 +851,15 @@
               "id": "en-051-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "They must have gone to bed",
+              "respostaEsperada": "They must have gone to bed.",
+              "explicacao": "Eles devem ter ido dormir.",
+              "id": "en-051-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "She ___ have forgotten. (talvez)",
               "opcoes": [
@@ -845,6 +894,15 @@
               "gabarito": "been",
               "explicacao": "have been.",
               "id": "en-051-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She might have forgotten",
+              "respostaEsperada": "She might have forgotten.",
+              "explicacao": "Ela pode ter esquecido.",
+              "id": "en-051-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

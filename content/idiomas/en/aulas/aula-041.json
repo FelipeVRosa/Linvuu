@@ -775,6 +775,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "If I could change one thing / Se eu pudesse mudar uma coisa",
+          "ru": "If I won the lottery, I would travel the world. I would visit Japan first, and then I would go to Peru. If I had more free time, I would learn to paint. I wish I lived near the sea. If I were braver, I would change my job. But I am not sure. What would you do if you had a year off? I wish I knew the answer!",
+          "pt": "Se eu ganhasse na loteria, viajaria pelo mundo. Visitaria o Japão primeiro e depois iria ao Peru. Se eu tivesse mais tempo livre, aprenderia a pintar. Queria morar perto do mar. Se eu fosse mais corajoso, mudaria de emprego. Mas não tenho certeza. O que você faria se tivesse um ano de folga? Queria saber a resposta!",
+          "perguntas": [
+            {
+              "pergunta": "What would the writer do if he won the lottery?",
+              "resposta": "Travel the world."
+            },
+            {
+              "pergunta": "Where would he go first?",
+              "resposta": "To Japan."
+            },
+            {
+              "pergunta": "What does he wish?",
+              "resposta": "That he lived near the sea."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 3,
           "enunciado": "Escreva 5 desejos seus com «I wish» e 3 conselhos com «If I were you»."
@@ -830,6 +852,15 @@
               "id": "en-041-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "If I won the lottery, I would travel the world",
+              "respostaEsperada": "If I won the lottery, I would travel the world.",
+              "explicacao": "Se eu ganhasse na loteria, viajaria pelo mundo.",
+              "id": "en-041-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "What would you do",
@@ -860,6 +891,15 @@
               "gabarito": "If I were rich, I would travel.",
               "explicacao": "Irreal.",
               "id": "en-041-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "If I were you, I would call him",
+              "respostaEsperada": "If I were you, I would call him.",
+              "explicacao": "Se eu fosse você, ligaria para ele.",
+              "id": "en-041-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -898,6 +938,15 @@
               "id": "en-041-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I wish I had more time",
+              "respostaEsperada": "I wish I had more time.",
+              "explicacao": "Eu queria ter mais tempo.",
+              "id": "en-041-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "What ___ you do if you won?",
               "opcoes": [
@@ -932,6 +981,15 @@
               "gabarito": "would",
               "explicacao": "would.",
               "id": "en-041-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "What would you do",
+              "respostaEsperada": "What would you do?",
+              "explicacao": "O que você faria?",
+              "id": "en-041-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

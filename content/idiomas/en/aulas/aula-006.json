@@ -807,6 +807,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "My new flat / Meu apartamento novo",
+          "ru": "I have a new flat in the city centre. It has two bedrooms, a bathroom and a small kitchen. In the living room there is a sofa and a television. The television is on the wall. There are two chairs next to the window. My bed is in the bedroom, between the wardrobe and the desk. There is a park in front of the building, and there is a supermarket behind it. I love my flat!",
+          "pt": "Tenho um apartamento novo no centro da cidade. Ele tem dois quartos, um banheiro e uma cozinha pequena. Na sala há um sofá e uma televisão. A televisão está na parede. Há duas cadeiras ao lado da janela. Minha cama está no quarto, entre o guarda-roupa e a escrivaninha. Há um parque em frente ao prédio e um supermercado atrás dele. Eu adoro o meu apartamento!",
+          "perguntas": [
+            {
+              "pergunta": "How many bedrooms are there?",
+              "resposta": "Two."
+            },
+            {
+              "pergunta": "Where is the television?",
+              "resposta": "On the wall."
+            },
+            {
+              "pergunta": "What is behind the building?",
+              "resposta": "A supermarket."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva 5 frases sobre a sua casa, com um adjetivo, um «there is/are» e uma preposição de lugar. Depois leia em voz alta."
@@ -862,6 +884,15 @@
               "id": "en-006-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "There are two beds in the bedroom",
+              "respostaEsperada": "There are two beds in the bedroom.",
+              "explicacao": "Há duas camas no quarto.",
+              "id": "en-006-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I am at home",
@@ -892,6 +923,15 @@
               "gabarito": "on",
               "explicacao": "Superfície pede «on».",
               "id": "en-006-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The phone is on the table",
+              "respostaEsperada": "The phone is on the table.",
+              "explicacao": "O telefone está sobre a mesa.",
+              "id": "en-006-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -930,6 +970,15 @@
               "id": "en-006-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "There is a sofa in the living room",
+              "respostaEsperada": "There is a sofa in the living room.",
+              "explicacao": "Há um sofá na sala de estar.",
+              "id": "en-006-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "The cat is ___ the bed. (embaixo da)",
               "opcoes": [
@@ -964,6 +1013,15 @@
               "gabarito": "behind",
               "explicacao": "«behind» = atrás.",
               "id": "en-006-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I am at home",
+              "respostaEsperada": "I am at home.",
+              "explicacao": "Eu estou em casa.",
+              "id": "en-006-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

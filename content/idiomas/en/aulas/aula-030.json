@@ -678,6 +678,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Have you ever...? / Você já...?",
+          "ru": "Have you ever been to Japan? I have never been there, but my friend has visited Tokyo twice. She has seen snow, she has tried sushi and she has climbed a mountain. I haven't done any of those things. Have I ever travelled alone? Yes, I have. Once I went to Argentina for a week. It was an unforgettable trip, and I want to do it again.",
+          "pt": "Você já esteve no Japão? Eu nunca estive lá, mas minha amiga visitou Tóquio duas vezes. Ela já viu neve, já provou sushi e já escalou uma montanha. Eu não fiz nenhuma dessas coisas. Já viajei sozinho? Sim, já. Uma vez fui à Argentina por uma semana. Foi uma viagem inesquecível e quero fazer de novo.",
+          "perguntas": [
+            {
+              "pergunta": "Has the writer been to Japan?",
+              "resposta": "No, never."
+            },
+            {
+              "pergunta": "How many times has the friend visited Tokyo?",
+              "resposta": "Twice."
+            },
+            {
+              "pergunta": "Where did the writer travel alone?",
+              "resposta": "To Argentina."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Escreva 5 frases sobre as suas experiências de viagem, com «have been», «have never» e «twice»."
@@ -733,6 +755,15 @@
               "id": "en-030-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I have never seen snow",
+              "respostaEsperada": "I have never seen snow.",
+              "explicacao": "Eu nunca vi neve.",
+              "id": "en-030-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "They haven't eaten sushi",
@@ -763,6 +794,15 @@
               "gabarito": "eaten",
               "explicacao": "eat → ate → eaten.",
               "id": "en-030-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Have you ever been to Brazil",
+              "respostaEsperada": "Have you ever been to Brazil?",
+              "explicacao": "Você já esteve no Brasil?",
+              "id": "en-030-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -801,6 +841,15 @@
               "id": "en-030-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She has visited Rome twice",
+              "respostaEsperada": "She has visited Rome twice.",
+              "explicacao": "Ela visitou Roma duas vezes.",
+              "id": "en-030-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I have ___ seen snow. (nunca)",
               "opcoes": [
@@ -835,6 +884,15 @@
               "gabarito": "times",
               "explicacao": "three times.",
               "id": "en-030-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "They haven't eaten sushi",
+              "respostaEsperada": "They haven't eaten sushi.",
+              "explicacao": "Eles não comeram sushi.",
+              "id": "en-030-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

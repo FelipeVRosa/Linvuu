@@ -726,6 +726,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Word families / Famílias de palavras",
+          "ru": "The word happy has a family: happily, happiness, unhappy. The prefix un- gives the opposite, as in unhappy or unlikely. The suffix -ness makes a noun, as in kindness. You make a lot of mistakes when you learn, but that is part of learning. Make a decision, take a break, do homework: these are collocations. Learning words in groups helps you remember them and sound natural.",
+          "pt": "A palavra happy tem uma família: happily, happiness, unhappy. O prefixo un- dá o oposto, como em unhappy ou unlikely. O sufixo -ness forma um substantivo, como em kindness. Você comete muitos erros quando aprende, mas isso faz parte. Make a decision, take a break, do homework: essas são colocações. Aprender palavras em grupos ajuda a lembrar e a soar natural.",
+          "perguntas": [
+            {
+              "pergunta": "What does the prefix un- do?",
+              "resposta": "It gives the opposite."
+            },
+            {
+              "pergunta": "What does -ness make?",
+              "resposta": "A noun."
+            },
+            {
+              "pergunta": "Why learn words in groups?",
+              "resposta": "It helps you remember and sound natural."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 3,
           "enunciado": "Crie 6 palavras com prefixo ou sufixo e use cada uma numa frase."
@@ -781,6 +803,15 @@
               "id": "en-060-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I make a lot of mistakes",
+              "respostaEsperada": "I make a lot of mistakes.",
+              "explicacao": "Eu cometo muitos erros.",
+              "id": "en-060-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I need to make a decision",
@@ -811,6 +842,15 @@
               "gabarito": "take",
               "explicacao": "take a break.",
               "id": "en-060-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Let's take a photo",
+              "respostaEsperada": "Let's take a photo.",
+              "explicacao": "Vamos tirar uma foto.",
+              "id": "en-060-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -849,6 +889,15 @@
               "id": "en-060-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "It is a piece of cake",
+              "respostaEsperada": "It is a piece of cake.",
+              "explicacao": "É moleza (muito fácil).",
+              "id": "en-060-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "She wants to ___ a decision.",
               "opcoes": [
@@ -883,6 +932,15 @@
               "gabarito": "im",
               "explicacao": "impossible.",
               "id": "en-060-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I need to make a decision",
+              "respostaEsperada": "I need to make a decision.",
+              "explicacao": "Eu preciso tomar uma decisão.",
+              "id": "en-060-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

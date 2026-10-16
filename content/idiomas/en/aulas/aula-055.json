@@ -382,6 +382,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "Is homework useful? / O dever de casa é útil?",
+          "ru": "In my opinion, homework is useful because it helps students practise. However, I don't think children should have too much. Some people argue that homework is stressful. I see your point, but I disagree: a little practice every day is better than a lot before a test. On the one hand, it takes time. On the other hand, it builds good habits. To sum up, a balanced amount is best.",
+          "pt": "Na minha opinião, o dever de casa é útil porque ajuda os alunos a praticar. No entanto, não acho que as crianças devam ter demais. Algumas pessoas argumentam que o dever de casa causa estresse. Entendo seu ponto, mas discordo: um pouco de prática todo dia é melhor do que muita antes de uma prova. Por um lado, toma tempo. Por outro, cria bons hábitos. Resumindo, uma quantidade equilibrada é o melhor.",
+          "perguntas": [
+            {
+              "pergunta": "Why is homework useful?",
+              "resposta": "It helps students practise."
+            },
+            {
+              "pergunta": "What do some people argue?",
+              "resposta": "That it is stressful."
+            },
+            {
+              "pergunta": "What is best?",
+              "resposta": "A balanced amount."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva um argumento de 6 frases: ideia, razão, exemplo, contraponto e conclusão."
@@ -437,6 +459,15 @@
               "id": "en-055-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I don't think it is a good idea",
+              "respostaEsperada": "I don't think it is a good idea.",
+              "explicacao": "Eu não acho que seja uma boa ideia.",
+              "id": "en-055-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Neither do I",
@@ -467,6 +498,15 @@
               "gabarito": "Neither do I.",
               "explicacao": "Negativa: neither.",
               "id": "en-055-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "So do I",
+              "respostaEsperada": "So do I.",
+              "explicacao": "Eu também.",
+              "id": "en-055-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -505,6 +545,15 @@
               "id": "en-055-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I see your point, but I disagree",
+              "respostaEsperada": "I see your point, but I disagree.",
+              "explicacao": "Entendo seu ponto, mas discordo.",
+              "id": "en-055-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I can swim. — So ___ I. (também)",
               "opcoes": [
@@ -539,6 +588,15 @@
               "gabarito": "Neither",
               "explicacao": "Negativa.",
               "id": "en-055-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Neither do I",
+              "respostaEsperada": "Neither do I.",
+              "explicacao": "Eu também não.",
+              "id": "en-055-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

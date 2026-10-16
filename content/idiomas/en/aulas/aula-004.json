@@ -857,6 +857,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "A normal week / Uma semana normal",
+          "ru": "Sara works in a bank. She starts at nine and finishes at five. She doesn't drive to work, she takes the bus. At lunch she eats a sandwich and drinks tea. She doesn't like coffee. In the evening she cooks dinner and watches a series. Her brother doesn't work on Saturdays, so he plays football with friends. Does Sara work on weekends? No, she doesn't.",
+          "pt": "Sara trabalha em um banco. Ela começa às nove e termina às cinco. Não dirige para o trabalho, pega o ônibus. No almoço, come um sanduíche e toma chá. Ela não gosta de café. À noite, prepara o jantar e assiste a uma série. O irmão dela não trabalha aos sábados, então joga futebol com os amigos. Sara trabalha nos fins de semana? Não, não trabalha.",
+          "perguntas": [
+            {
+              "pergunta": "How does Sara go to work?",
+              "resposta": "She takes the bus."
+            },
+            {
+              "pergunta": "Does she like coffee?",
+              "resposta": "No, she doesn't."
+            },
+            {
+              "pergunta": "What does her brother do on Saturdays?",
+              "resposta": "He plays football with friends."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 3,
           "enunciado": "Responda em voz alta: Where do you live? What do you do? Do you speak English? Do you study every day? Does your friend work?"
@@ -912,6 +934,15 @@
               "id": "en-004-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She works in a bank",
+              "respostaEsperada": "She works in a bank.",
+              "explicacao": "Ela trabalha em um banco.",
+              "id": "en-004-r01",
+              "complemento": true
+            },
+            {
               "tipo": "multiple-choice",
               "enunciado": "Qual frase está correta?",
               "opcoes": [
@@ -948,6 +979,15 @@
               "id": "en-004-e06"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I do not like coffee",
+              "respostaEsperada": "I do not like coffee.",
+              "explicacao": "Eu não gosto de café.",
+              "id": "en-004-r02",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "He ___ English. (estuda)",
               "opcoes": [
@@ -982,6 +1022,15 @@
               "gabarito": "doesn't",
               "explicacao": "she + doesn't.",
               "id": "en-004-e09"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "We speak English",
+              "respostaEsperada": "We speak English.",
+              "explicacao": "Nós falamos inglês.",
+              "id": "en-004-r03",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",

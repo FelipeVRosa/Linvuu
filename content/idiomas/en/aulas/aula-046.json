@@ -345,6 +345,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "Introducing my family / Apresentando a minha família",
+          "contexto": "John fala da família para uma colega nova, com frases explicativas.",
+          "linhas": [
+            {
+              "personagem": "Lara",
+              "ru": "— Do you have any brothers or sisters, John?",
+              "pt": "— Você tem irmãos, John?",
+              "audio": "Do you have any brothers or sisters, John?"
+            },
+            {
+              "personagem": "John",
+              "ru": "— Yes. My brother, who lives in Rio, is a doctor.",
+              "pt": "— Tenho. Meu irmão, que mora no Rio, é médico.",
+              "audio": "Yes. My brother, who lives in Rio, is a doctor."
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— And your sister?",
+              "pt": "— E sua irmã?",
+              "audio": "And your sister?"
+            },
+            {
+              "personagem": "John",
+              "ru": "— My sister, whose husband is a pilot, lives in London.",
+              "pt": "— Minha irmã, cujo marido é piloto, mora em Londres.",
+              "audio": "My sister, whose husband is a pilot, lives in London."
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— Do you visit them often?",
+              "pt": "— Você os visita com frequência?",
+              "audio": "Do you visit them often?"
+            },
+            {
+              "personagem": "John",
+              "ru": "— Not often, which is a pity. Rio is far from here.",
+              "pt": "— Não muito, o que é uma pena. O Rio é longe daqui.",
+              "audio": "Not often, which is a pity. Rio is far from here."
+            },
+            {
+              "personagem": "Lara",
+              "ru": "— Who is the man standing next to you in this photo?",
+              "pt": "— Quem é o homem em pé ao seu lado nesta foto?",
+              "audio": "Who is the man standing next to you in this photo?"
+            },
+            {
+              "personagem": "John",
+              "ru": "— That is my father, who is eighty and still plays tennis.",
+              "pt": "— É meu pai, que tem oitenta anos e ainda joga tênis.",
+              "audio": "That is my father, who is eighty and still plays tennis."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva um texto de 6 frases sobre a sua família com relativas explicativas e reduzidas."
@@ -400,6 +457,15 @@
               "id": "en-046-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "My brother, who lives in Rio, is a doctor",
+              "respostaEsperada": "My brother, who lives in Rio, is a doctor.",
+              "explicacao": "Meu irmão, que mora no Rio, é médico.",
+              "id": "en-046-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "The book written by her is famous",
@@ -430,6 +496,15 @@
               "gabarito": "which",
               "explicacao": "which comenta.",
               "id": "en-046-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "He passed the exam, which surprised everyone",
+              "respostaEsperada": "He passed the exam, which surprised everyone.",
+              "explicacao": "Ele passou na prova, o que surpreendeu todo mundo.",
+              "id": "en-046-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -468,6 +543,15 @@
               "id": "en-046-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The man standing there is my uncle",
+              "respostaEsperada": "The man standing there is my uncle.",
+              "explicacao": "O homem parado ali é meu tio.",
+              "id": "en-046-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "He is late, ___ is annoying.",
               "opcoes": [
@@ -502,6 +586,15 @@
               "gabarito": "living",
               "explicacao": "-ing.",
               "id": "en-046-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "The book written by her is famous",
+              "respostaEsperada": "The book written by her is famous.",
+              "explicacao": "O livro escrito por ela é famoso.",
+              "id": "en-046-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

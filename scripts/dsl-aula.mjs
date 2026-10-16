@@ -35,6 +35,8 @@ export const lacuna = (enunciado, opcoes, gabarito, explicacao) => ({ tipo: 'fil
 export const ordem = (enunciado, opcoes, gabarito, explicacao) => ({ tipo: 'sentence-ordering', enunciado, opcoes, gabarito, explicacao });
 export const ouvir = (audio, opcoes, gabarito, explicacao) => ({ tipo: 'audio-recognition', enunciado: 'Ouça e escolha.', audio, opcoes, gabarito, explicacao });
 export const ditado = (audio, explicacao) => ({ tipo: 'audio-recognition', enunciado: 'Ouça e escreva.', audio, respostaEsperada: audio, explicacao });
+// Repita: ouvir a frase, repetir em voz alta e então mostrar a resposta (frase + tradução). Não vale nota.
+export const repita = (frase, traducao) => ({ tipo: 'repeat', enunciado: 'Ouça, repita em voz alta e depois mostre a resposta.', audio: frase, respostaEsperada: frase, explicacao: traducao });
 export const livre = (enunciado, respostaEsperada) => ({ tipo: 'producao', enunciado, respostaEsperada });
 export const exercicios = (min, itens) => ({ tipo: 'exercicios', min, itens });
 

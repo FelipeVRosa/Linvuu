@@ -368,6 +368,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "My to-do list / Minha lista de tarefas",
+          "ru": "It is five o'clock and I have already finished most of my tasks. I have written the report and I have answered all the emails. I haven't called the client yet, but I have just found his number. My colleague has gone home early, so I haven't asked him about the project yet. Have I forgotten anything? Yes! I haven't bought milk yet. I will do it on my way home.",
+          "pt": "São cinco da tarde e eu já terminei a maior parte das tarefas. Escrevi o relatório e respondi a todos os e-mails. Ainda não liguei para o cliente, mas acabei de encontrar o número dele. Meu colega foi para casa mais cedo, então ainda não perguntei a ele sobre o projeto. Esqueci alguma coisa? Esqueci! Ainda não comprei leite. Vou comprar no caminho de casa.",
+          "perguntas": [
+            {
+              "pergunta": "Has the writer answered the emails?",
+              "resposta": "Yes, all of them."
+            },
+            {
+              "pergunta": "Why hasn't the writer asked the colleague?",
+              "resposta": "He has gone home early."
+            },
+            {
+              "pergunta": "What hasn't the writer bought yet?",
+              "resposta": "Milk."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva 5 frases sobre algo que você perdeu, quebrou ou achou, com present perfect."
@@ -423,6 +445,15 @@
               "id": "en-031-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I have already finished my homework",
+              "respostaEsperada": "I have already finished my homework.",
+              "explicacao": "Eu já terminei o dever de casa.",
+              "id": "en-031-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I haven't eaten yet",
@@ -453,6 +484,15 @@
               "gabarito": "He has just arrived.",
               "explicacao": "have just.",
               "id": "en-031-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Have you finished yet",
+              "respostaEsperada": "Have you finished yet?",
+              "explicacao": "Você já terminou?",
+              "id": "en-031-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -491,6 +531,15 @@
               "id": "en-031-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "She has just left",
+              "respostaEsperada": "She has just left.",
+              "explicacao": "Ela acabou de sair.",
+              "id": "en-031-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "Have you finished ___ ?",
               "opcoes": [
@@ -525,6 +574,15 @@
               "gabarito": "lately",
               "explicacao": "lately.",
               "id": "en-031-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I haven't eaten yet",
+              "respostaEsperada": "I haven't eaten yet.",
+              "explicacao": "Eu ainda não comi.",
+              "id": "en-031-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

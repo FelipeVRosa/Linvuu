@@ -355,6 +355,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "A job interview / Uma entrevista de emprego",
+          "ru": "Interviewer: Have you ever worked in a restaurant? Candidate: Yes, I have. I worked in a restaurant in 2019. Interviewer: When did you leave? Candidate: I left in 2021. I have also managed a small team. Interviewer: Have you ever lived abroad? Candidate: Yes, I lived in Spain for two years. I learned Spanish there. Interviewer: Thank you. When can you start? Candidate: I can start next Monday.",
+          "pt": "Entrevistadora: Você já trabalhou em um restaurante? Candidato: Já. Trabalhei em um restaurante em 2019. Entrevistadora: Quando saiu? Candidato: Saí em 2021. Também já gerenciei uma pequena equipe. Entrevistadora: Você já morou no exterior? Candidato: Já, morei na Espanha por dois anos. Aprendi espanhol lá. Entrevistadora: Obrigada. Quando pode começar? Candidato: Posso começar na próxima segunda.",
+          "perguntas": [
+            {
+              "pergunta": "When did the candidate work in a restaurant?",
+              "resposta": "In 2019."
+            },
+            {
+              "pergunta": "Where did the candidate live abroad?",
+              "resposta": "In Spain."
+            },
+            {
+              "pergunta": "When can he start?",
+              "resposta": "Next Monday."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Responda em voz alta como se fosse numa entrevista: experiência, último trabalho e por que quer a vaga."
@@ -410,6 +432,15 @@
               "id": "en-033-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I saw her yesterday",
+              "respostaEsperada": "I saw her yesterday.",
+              "explicacao": "Eu a vi ontem.",
+              "id": "en-033-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "This is the first time I have flown",
@@ -440,6 +471,15 @@
               "gabarito": "Have you ever been to Japan?",
               "explicacao": "ever: perfect.",
               "id": "en-033-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Have you ever eaten sushi",
+              "respostaEsperada": "Have you ever eaten sushi?",
+              "explicacao": "Você já comeu sushi?",
+              "id": "en-033-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -478,6 +518,15 @@
               "id": "en-033-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "When did you arrive",
+              "respostaEsperada": "When did you arrive?",
+              "explicacao": "Quando você chegou?",
+              "id": "en-033-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I ___ been to Japan. (já estive)",
               "opcoes": [
@@ -512,6 +561,15 @@
               "gabarito": "did",
               "explicacao": "when: did.",
               "id": "en-033-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "This is the first time I have flown",
+              "respostaEsperada": "This is the first time I have flown.",
+              "explicacao": "É a primeira vez que eu voo.",
+              "id": "en-033-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

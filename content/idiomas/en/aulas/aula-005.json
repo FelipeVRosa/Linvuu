@@ -787,6 +787,28 @@
           ]
         },
         {
+          "tipo": "texto",
+          "min": 6,
+          "titulo": "My desk / Minha mesa",
+          "ru": "This is my desk. These are my books and those are my colleague's papers. That is my computer, and this is my phone. There is an umbrella under the desk. It is red. I have two pens and a notebook. These pens are new, but that notebook is old. Those windows are big, and the view is beautiful.",
+          "pt": "Esta é a minha mesa. Estes são os meus livros e aqueles são os papéis do meu colega. Aquele é o meu computador, e este é o meu telefone. Há um guarda-chuva debaixo da mesa. É vermelho. Tenho duas canetas e um caderno. Estas canetas são novas, mas aquele caderno é velho. Aquelas janelas são grandes e a vista é linda.",
+          "perguntas": [
+            {
+              "pergunta": "What colour is the umbrella?",
+              "resposta": "It is red."
+            },
+            {
+              "pergunta": "How many pens does the writer have?",
+              "resposta": "Two."
+            },
+            {
+              "pergunta": "Is the notebook new?",
+              "resposta": "No, it is old."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 4,
           "enunciado": "Aponte para 4 objetos perto de você e 4 longe e diga: «This is…», «These are…», «That is…», «Those are…»."
@@ -842,6 +864,15 @@
               "id": "en-005-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "These are my keys",
+              "respostaEsperada": "These are my keys.",
+              "explicacao": "Estas são as minhas chaves.",
+              "id": "en-005-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "Those are my children",
@@ -872,6 +903,15 @@
               "gabarito": "cities",
               "explicacao": "Consoante + y vira -ies.",
               "id": "en-005-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "That is an umbrella",
+              "respostaEsperada": "That is an umbrella.",
+              "explicacao": "Aquilo é um guarda-chuva.",
+              "id": "en-005-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -910,6 +950,15 @@
               "id": "en-005-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I have a book",
+              "respostaEsperada": "I have a book.",
+              "explicacao": "Eu tenho um livro.",
+              "id": "en-005-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "She is ___ teacher. (uma)",
               "opcoes": [
@@ -944,6 +993,15 @@
               "gabarito": "Those",
               "explicacao": "Plural e longe: «those».",
               "id": "en-005-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Those are my children",
+              "respostaEsperada": "Those are my children.",
+              "explicacao": "Aquelas são as minhas crianças.",
+              "id": "en-005-r04",
+              "complemento": true
             },
             {
               "tipo": "fill-gap",

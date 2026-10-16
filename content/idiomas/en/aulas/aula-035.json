@@ -367,6 +367,63 @@
           ]
         },
         {
+          "tipo": "dialogo",
+          "min": 8,
+          "titulo": "A busy morning / Uma manhã corrida",
+          "contexto": "Carlos e Maria se preparam para sair e resolvem imprevistos.",
+          "linhas": [
+            {
+              "personagem": "Maria",
+              "ru": "— Carlos, wake up! We have to get up now.",
+              "pt": "— Carlos, acorde! Precisamos levantar agora.",
+              "audio": "Carlos, wake up! We have to get up now."
+            },
+            {
+              "personagem": "Carlos",
+              "ru": "— I'm up. Where is my laptop? I can't find it.",
+              "pt": "— Já levantei. Onde está meu notebook? Não acho.",
+              "audio": "I'm up. Where is my laptop? I can't find it."
+            },
+            {
+              "personagem": "Maria",
+              "ru": "— Look for it in the kitchen. Then check in with the office.",
+              "pt": "— Procure na cozinha. Depois avise o escritório que chegou.",
+              "audio": "Look for it in the kitchen. Then check in with the office."
+            },
+            {
+              "personagem": "Carlos",
+              "ru": "— Found it! Can you turn off the lights, please?",
+              "pt": "— Achei! Você pode apagar as luzes, por favor?",
+              "audio": "Found it! Can you turn off the lights, please?"
+            },
+            {
+              "personagem": "Maria",
+              "ru": "— Sure. We ran out of coffee, so I'll pick some up on the way.",
+              "pt": "— Claro. O café acabou, então vou comprar no caminho.",
+              "audio": "Sure. We ran out of coffee, so I'll pick some up on the way."
+            },
+            {
+              "personagem": "Carlos",
+              "ru": "— Good idea. I need to hurry up. The meeting starts at nine.",
+              "pt": "— Boa ideia. Preciso me apressar. A reunião começa às nove.",
+              "audio": "Good idea. I need to hurry up. The meeting starts at nine."
+            },
+            {
+              "personagem": "Maria",
+              "ru": "— Don't worry. I'll drop you off at the station.",
+              "pt": "— Não se preocupe. Eu deixo você na estação.",
+              "audio": "Don't worry. I'll drop you off at the station."
+            },
+            {
+              "personagem": "Carlos",
+              "ru": "— Thanks! I'll call you back after the meeting.",
+              "pt": "— Obrigado! Eu ligo de volta depois da reunião.",
+              "audio": "Thanks! I'll call you back after the meeting."
+            }
+          ],
+          "complemento": true
+        },
+        {
           "tipo": "producao",
           "min": 5,
           "enunciado": "Escreva uma mensagem de 6 frases a um amigo, usando 5 phrasal verbs desta aula."
@@ -422,6 +479,15 @@
               "id": "en-035-e03"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I'm looking forward to seeing you",
+              "respostaEsperada": "I'm looking forward to seeing you.",
+              "explicacao": "Estou ansioso para ver você.",
+              "id": "en-035-r01",
+              "complemento": true
+            },
+            {
               "tipo": "audio-recognition",
               "enunciado": "Ouça e escreva.",
               "audio": "I'll call you back",
@@ -452,6 +518,15 @@
               "gabarito": "I'm looking forward to seeing you.",
               "explicacao": "-ing depois de to.",
               "id": "en-035-e06"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "We ran out of milk",
+              "respostaEsperada": "We ran out of milk.",
+              "explicacao": "Nosso leite acabou.",
+              "id": "en-035-r02",
+              "complemento": true
             },
             {
               "tipo": "multiple-choice",
@@ -490,6 +565,15 @@
               "id": "en-035-e09"
             },
             {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "Please fill out this form",
+              "respostaEsperada": "Please fill out this form.",
+              "explicacao": "Por favor, preencha este formulário.",
+              "id": "en-035-r03",
+              "complemento": true
+            },
+            {
               "tipo": "fill-gap",
               "enunciado": "I get along ___ my boss.",
               "opcoes": [
@@ -524,6 +608,15 @@
               "gabarito": "down",
               "explicacao": "cut down on.",
               "id": "en-035-e12"
+            },
+            {
+              "tipo": "repeat",
+              "enunciado": "Ouça, repita em voz alta e depois mostre a resposta.",
+              "audio": "I'll call you back",
+              "respostaEsperada": "I'll call you back.",
+              "explicacao": "Eu ligo de volta para você.",
+              "id": "en-035-r04",
+              "complemento": true
             },
             {
               "tipo": "sentence-ordering",

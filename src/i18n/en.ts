@@ -118,7 +118,7 @@ export const en: Dicionario = {
     anterior: (n: number) => `← ${sessaoDe(n)}`, seguinte: (n: number) => `${sessaoDe(n)} →`, rotuloDia: sessaoDe, navDias: 'Move between sessions',
     kickerAula: (a: number, s: string, t: number, m: number) => `Lesson ${a} · session ${s} of ${t} · ${m} min`,
     kickerDia: (d: number, t: number, fase: string, nivel: string) => `Session ${d} of ${t} · ${fase} · ${nivel}`,
-    objetivoAula: (o: string) => `Lesson goal: ${o}`, objetivoDia: (o: string) => `By the end of the session: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
+    objetivoRotulo: 'Lesson goal', objetivoAula: (o: string) => `Lesson goal: ${o}`, objetivoDia: (o: string) => `By the end of the session: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
     emRevisao: 'Lesson under review: the content is written and ready to study, but it is still being reviewed.',
     naoPublicada: (curso: string) => `This ${curso} lesson has not been published yet. Its goal is defined; the audio, text and exercises are in production.`,
     semTraducao: (l: string) => `This session has not been translated into English yet, so its explanations are in ${l}. The sentences, dialogues and audio are the same.`,

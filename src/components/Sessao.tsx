@@ -7,6 +7,8 @@ import { trechos } from '../lib/narracao';
 import { textos } from '../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../lib/progresso';
 import { somErro } from '../lib/sons';
+import { useAuth } from '../lib/AuthContext';
+import { concluirDia } from './AreaAluno';
 import { LOCALE, dicionario } from '../i18n';
 import colunasJson from '../../content/colunas.json';
 
@@ -152,8 +154,15 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
 
   return (
     <div className="exercicio">
-      {i === 0 && res === null && <AvisoMedicao idioma={idioma} />}
-      <span className="ex-n">{T.exercicio(i + 1, itens.length)}</span>
+      <div className="ex-progresso">
+        <div className="ex-progresso-meta">
+          <span className="ex-n">{T.exercicio(i + 1, itens.length)}</span>
+          {Object.keys(acertos).length > 0 && <span className="ex-placar">✓ {Object.values(acertos).filter(Boolean).length}</span>}
+        </div>
+        <div className="ex-barra" role="progressbar" aria-label={T.exercicio(i + 1, itens.length)} aria-valuemin={0} aria-valuemax={itens.length} aria-valuenow={i + (res ? 1 : 0)}>
+          <span style={{ width: `${(100 * (i + (res ? 1 : 0))) / itens.length}%` }} />
+        </div>
+      </div>
       <p className="ex-enunciado">{ex.enunciado}</p>
       {ex.audio && <div className="ex-audio"><Audio texto={ex.audio} idioma={idioma} /> <span>{T.tocarOuvir}</span></div>}
       {comOpcoes && (
@@ -178,6 +187,10 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           ? <textarea className="ex-texto" rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
           : <input className="ex-texto" value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
       )}
+      <div className="ex-acoes ex-acoes-fixas">
+        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
+          : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
+      </div>
       {res && (
         <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role="status">
           {res === 'ok' && <strong>{T.certo}</strong>}
@@ -187,10 +200,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
           {ex.explicacao && res !== 'livre' && <span> {ex.explicacao}</span>}
         </div>
       )}
-      <div className="ex-acoes">
-        {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
-          : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
-      </div>
+      {i <= 1 && <AvisoMedicao idioma={idioma} />}
     </div>
   );
 }
@@ -309,8 +319,12 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
   }
 }
 
-export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma, explicacao }: { sessao: SessaoAula; idioma: string; aula: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
+export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao }: { sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
+  const { usuario } = useAuth();
+  const [msgFim, setMsgFim] = useState<string | null>(null);
+  // Um só "Concluir": fecha a sessão e marca o dia na trilha (e na conta), como o botão do rodapé.
+  const concluir = () => { setCompleta(true); if (dia) setMsgFim(concluirDia(idioma, dia, !!usuario)); };
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
@@ -344,10 +358,10 @@ export function Sessao({ sessao, idioma, aula, proximo, nomeIdioma, explicacao }
         <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>
         {idx < total - 1
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
-          : <button type="button" className="btn btn-primary" onClick={() => setCompleta(true)}>{completa ? T.concluida : T.concluir}</button>}
+          : <button type="button" className="btn btn-primary" onClick={concluir}>{completa ? T.concluida : T.concluir}</button>}
       </div>
       {idx === total - 1 && (completa || proximo) && (
-        <p className="concluida" role="status">{completa && T.concluidaNav} {proximo && <Link to={proximo}>{T.proxSessao}</Link>}</p>
+        <p className="concluida" role="status">{completa && (msgFim ?? T.concluidaNav)} {proximo && <Link to={proximo} className="btn btn-primary concluida-prox">{T.proxSessao}</Link>}</p>
       )}
     </div>
   );

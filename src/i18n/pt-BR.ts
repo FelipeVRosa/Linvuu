@@ -117,7 +117,7 @@ export const ptBR = {
     anterior: (n: number) => `← ${sessaoDe(n)}`, seguinte: (n: number) => `${sessaoDe(n)} →`, rotuloDia: sessaoDe, navDias: 'Navegar entre sessões',
     kickerAula: (a: number, s: string, t: number, m: number) => `Aula ${a} · sessão ${s} de ${t} · ${m} min`,
     kickerDia: (d: number, t: number, fase: string, nivel: string) => `Sessão ${d} de ${t} · ${fase} · ${nivel}`,
-    objetivoAula: (o: string) => `Objetivo da aula: ${o}`, objetivoDia: (o: string) => `Ao final da sessão: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
+    objetivoRotulo: 'Objetivo da aula', objetivoAula: (o: string) => `Objetivo da aula: ${o}`, objetivoDia: (o: string) => `Ao final da sessão: ${o.charAt(0).toLowerCase() + o.slice(1)}`,
     emRevisao: 'Aula em revisão: o conteúdo está escrito e já dá para estudar, mas ainda passa por revisão.',
     naoPublicada: (curso: string) => `Esta aula de ${curso} ainda não foi publicada. O objetivo já está definido; o áudio, o texto e os exercícios estão em produção.`,
     semTraducao: (l: string) => `Esta sessão ainda não foi traduzida para o português; as explicações aparecem em ${l}.`,

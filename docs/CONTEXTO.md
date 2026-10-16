@@ -1,6 +1,6 @@
 # Contexto do projeto (leia primeiro)
 
-Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é público: o Claude consegue clonar e ler sem token. O token só é preciso para enviar (push).
+Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
 
 ## O que é
 Linvuu: idiomas e STEM em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.

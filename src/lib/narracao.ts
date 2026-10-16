@@ -3,7 +3,7 @@
 // Usado pelo botão «Ouvir explicação» e por scripts/narracao-csv.ts, que lista os trechos a gravar (o texto de cada trecho é o hash do MP3).
 export interface Trecho { texto: string; idioma: string }
 
-const MARCAS_PT = /[ãõç]|\b(você|vocês|não|eu|ele|ela|nós|são|está|vou|vai|tem|um|uma|português|brasileiro)\b/i;
+const MARCAS_PT = /[ãõç]|(você|vocês|não|ele|ela|nós|são|vou|vai|um|uma|português|brasileiro|oi|tchau|olá|obrigado|obrigada|sim|nosso|nossa|nossos|bom dia|boa tarde|boa noite|tudo bem|desculpe|com licença|até logo|também|quem|qual|onde|me chamo)/i;
 
 /** Texto corrido para ser falado: sem símbolos que a voz soletraria. */
 const falavel = (t: string) => t
@@ -14,7 +14,7 @@ const falavel = (t: string) => t
 export function trechos(texto: string, idioma: string): Trecho[] {
   const out: Trecho[] = [];
   const pt = (s: string) => {
-    for (const f of falavel(s).split(/(?<=[.!?:;])\s+/)) { const x = f.trim(); if (/[\p{L}\d]/u.test(x)) out.push({ texto: x, idioma: 'pt' }); }
+    for (const f of falavel(s).split(/(?<=[.!?:;])\s+/)) { const x = f.trim(); if (x.replace(/[^\p{L}\d]/gu, '').length > 2) out.push({ texto: x, idioma: 'pt' }); }
   };
   for (const [i, parte] of texto.split(/«([^»]+)»/).entries()) {
     if (i % 2 === 0) { pt(parte); continue; }

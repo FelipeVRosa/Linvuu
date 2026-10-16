@@ -210,7 +210,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       <Narrar itens={[b.explicacao, ...(b.comparacao ? [`Em português: ${b.comparacao}`] : [])]} idioma={idioma} explicacao={explicacao} />
       <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
-      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><span lang={idioma} className="ru">{e.ru}</span> <Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /><small className="trad">{e.pt}</small></li>)}</ul>}
+      {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><div className="ex-linha"><span lang={idioma} className="ru">{e.ru}</span><Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /></div><small className="trad">{e.pt}</small></li>)}</ul>}
       {b.tabela && <Tabela linhas={b.tabela} />}
       {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
       {b.erros && (

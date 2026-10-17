@@ -10,6 +10,7 @@ import { gratis } from '../config/planos';
 import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
+import '../site-publico.css';
 
 export default function Curso() {
   const { id } = useParams();
@@ -38,12 +39,13 @@ export default function Curso() {
   const aulasPorNivel = grupos.reduce<Record<string, number>>((acc, g) => { const k = g.nivel ?? ''; acc[k] = (acc[k] ?? 0) + 1; return acc; }, {});
 
   return (
-    <div className="pagina">
+    <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-curso' : 'pagina'}>
       <JsonLd dados={{ '@context': 'https://schema.org', '@type': 'Course', name: `${curso.nome} (${curso.nomeNativo})`, description: curso.descricao, inLanguage: LOCALE.codigo, educationalLevel: 'Beginner', provider: { '@type': 'Organization', name: 'Linvuu', url: SITE_URL } }} />
       <Navegacao pai="/cursos" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: '/cursos' }, { rotulo: curso.nome }]} />
 
       <header className="curso-topo">
         <div>
+          {LOCALE.codigo === 'pt-BR' && <p className="site-eyebrow">SEU PRÓXIMO IDIOMA, PASSO A PASSO</p>}
           <h1 className="pagina-h1">{curso.nome} {curso.nomeNativo !== curso.nome && <em lang={curso.id}>{curso.nomeNativo}</em>}</h1>
           <p className="lead">{curso.descricao}</p>
           <div className="curso-fatos">
@@ -54,6 +56,7 @@ export default function Curso() {
         </div>
       </header>
 
+      {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}
       {ret && !inicio && (
         <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
           <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">

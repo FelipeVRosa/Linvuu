@@ -125,6 +125,21 @@ const pares = {
   ],
 };
 
+// A composição pública usa os mesmos tons centralizados em tokens.css.
+pares.claro.push(
+  ['site: destaque ocre no papel', 'texto', '--site-ocre-texto', '--papel'],
+  ['site: texto de apoio no papel', 'texto', '--site-texto-lead', '--papel'],
+  ['site: texto secundário no papel', 'texto', '--site-texto-secundario', '--papel'],
+  ['site: botão principal', 'texto', '--site-branco', '--verde-floresta'],
+  ['site: botão em hover', 'texto', '--site-branco', '--site-acao-hover'],
+  ['site: frase no cartão', 'texto', '--verde-floresta', '--site-cartao'],
+  ['site: texto de plano', 'texto', '--site-texto-plano', '--site-plano'],
+  ['site: texto sobre verde', 'texto', '--site-texto-inverso', '--verde-floresta'],
+  ['site: opção selecionada', 'texto', '--verde-floresta', '--site-selecao'],
+  ['site: cartão de idioma', 'texto', '--site-texto-idioma', '--site-idioma-verde'],
+  ['site: resposta de dúvida', 'texto', '--site-texto-faq', '--papel'],
+);
+
 let falhas = 0;
 const linhas = [];
 for (const [tema, bloco] of [['escuro', escuro], ['claro', claro]]) {
@@ -164,6 +179,13 @@ for (const arq of modulos) {
     falhas++;
     linhas.push(`FALHA  ${rel}: hex direto (${[...new Set(achados)].join(', ')}). Use só var().`);
   } else linhas.push(`ok     ${rel}: só var()`);
+}
+
+for (const p of ['src/pages/home-brasileiros.css', 'src/site-publico.css']) {
+  const css = semComentarios(ler(p));
+  const coresFixas = /#[0-9a-fA-F]{3,8}\b|rgba?\(|hsla?\(/.test(css);
+  if (coresFixas) falhas++;
+  linhas.push(`${coresFixas ? 'FALHA ' : 'ok    '} ${p}: cores via tokens`);
 }
 
 // 3. Tamanho do CSS de produção

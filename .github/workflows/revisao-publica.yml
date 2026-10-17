@@ -29,6 +29,7 @@ jobs:
         run: node scripts/revisar-publico.mjs
       - uses: actions/upload-artifact@v4
         if: always()
+        continue-on-error: true # capturas compactas também ficam nos logs; não apagar artifacts do usuário
         with:
           name: revisao-publica-desktop-celular
           path: revisao-publica/

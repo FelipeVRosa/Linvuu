@@ -24,3 +24,7 @@ Novos planos precisam de preços e regras definidos por Felipe, produtos em ambi
 Android: o PR #263 compilou assembleDebug no GitHub Actions (execução 38971505468, sucesso), com CI e segurança verdes. A afirmação anterior de ausência de compilação está desatualizada. Separar e publicar o CORS de /audio antes de validar o APK evita depender de uma publicação conjunta. Permanecem testes em aparelho, compras Google Play, offline e release.
 
 Robots: relatório recebido menciona somente www com rastreamento 11/10. Home e robots com www foram verificados redirecionando 301 à versão canônica. Não liberar /api/ nem material protegido por causa desse aviso. Uma inspeção atual por URL no Search Console ainda é necessária; não há garantia de indexação.
+
+Inspeção por API do Search Console em 16/10: home sem www e /curso/en constam como enviadas e indexadas, robots permitido; www conserva estado antigo de bloqueio (último rastreamento 14/10). Isso não mede posição ou garante aparecer numa busca específica. O usuário não precisa alterar robots para liberar toda a aplicação.
+
+Revisão responsiva encontrou 6px de excesso em 320px na home; tipografia e dimensões mínimas da demonstração foram ajustadas. Cota de artifacts do GitHub está cheia; screenshots compactas também são emitidas nos logs de teste, sem apagar arquivos existentes.

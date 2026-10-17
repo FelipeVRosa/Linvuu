@@ -22,7 +22,11 @@ try {
       await page.evaluate(()=>document.fonts.ready);
       // Uma screenshot é salva mesmo quando há falha de largura.
       await page.screenshot({path:`revisao-publica/${nome}-${arquivo}.png`,fullPage:true});
+      // Captura compacta nos logs: alternativa de leitura quando a cota de artifacts estiver cheia.
+      const shot=await page.screenshot({type:'jpeg',quality:55,fullPage:false});
+      console.log(`LINVUU_SCREEN ${nome}-${arquivo} ${shot.toString('base64')}`);
       const sizes=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth}));
+      if (sizes.document>sizes.viewport+1) console.log('ELEMENTOS_FORA',JSON.stringify(await page.locator('body *').evaluateAll(els=>els.filter(el=>el.getBoundingClientRect().right>innerWidth+1).slice(-15).map(el=>({tag:el.tagName,classe:el.className,right:el.getBoundingClientRect().right})))));
       assert.ok(sizes.document<=sizes.viewport+1,`${nome} ${rota}: sem rolagem horizontal (${JSON.stringify(sizes)})`);
       assert.equal(await page.getByRole('heading',{level:1}).count(),1,`${rota}: um título principal`);
     }

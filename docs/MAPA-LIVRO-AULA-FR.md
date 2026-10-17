@@ -35,3 +35,5 @@ Base: `content/livros/fr/sumario.json` (14 capítulos, A1 p. 8–153, A2 p. 154�
 1. Conferir este mapa no PDF (páginas) e corrigir.
 2. Decidir se o B1 ganha capítulos no livro ou se as aulas bastam.
 3. Repetir para o italiano (237 p.), depois russo, alemão e inglês.
+
+> Atualização (17/10): Felipe decidiu que, no B1, as aulas bastam (sem capítulos novos no livro).

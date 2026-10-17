@@ -1,0 +1,110 @@
+import { LOCALE } from './index';
+
+// Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
+const copy: Record<string, readonly [string, string]> = {
+  'Planos': ['Plans', 'Planes'],
+  'Cursos de idiomas para brasileiros': ['Language courses for Brazilian learners', 'Cursos de idiomas para brasileños'],
+  'Cursos de inglês, espanhol, francês, italiano, alemão e russo feitos para brasileiros. Explicações em português, áudio e exercícios. Experimente 2 aulas grátis.': ['English, Spanish, French, Italian, German and Russian courses for Brazilian learners. Explanations in Portuguese, audio and exercises. Try 2 free lessons.', 'Cursos de inglés, español, francés, italiano, alemán y ruso para brasileños. Explicaciones en portugués, audio y ejercicios. Prueba 2 clases gratis.'],
+  'Aprenda um novo idioma com explicações que fazem sentido para brasileiros. Ouça, entenda e pratique — um passo possível de cada vez.': ['Learn a new language with explanations that make sense to Brazilian learners. Listen, understand and practise — one achievable step at a time.', 'Aprende un nuevo idioma con explicaciones pensadas para brasileños. Escucha, comprende y practica, un paso a tu alcance cada vez.'],
+  'Inglês': ['English', 'Inglés'], 'Espanhol': ['Spanish', 'Español'], 'Francês': ['French', 'Francés'],
+  'Italiano': ['Italian', 'Italiano'], 'Alemão': ['German', 'Alemán'], 'Russo': ['Russian', 'Ruso'],
+  'Do primeiro hello às suas próximas conversas.': ['From your first hello to your next conversations.', 'De tu primer hello a tus próximas conversaciones.'],
+  'Vá além do portunhol, com explicações que fazem sentido.': ['Move beyond mixing Portuguese and Spanish, with clear explanations.', 'Deja atrás el portuñol con explicaciones claras.'],
+  'Descubra os sons e entenda a lógica do francês.': ['Discover the sounds and understand how French works.', 'Descubre los sonidos y comprende la lógica del francés.'],
+  'Aproxime a vontade de falar da prática diária.': ['Turn your wish to speak into everyday practice.', 'Convierte las ganas de hablar en práctica diaria.'],
+  'Descomplique os primeiros passos, uma regra de cada vez.': ['Make your first steps simpler, one rule at a time.', 'Simplifica tus primeros pasos, una regla cada vez.'],
+  'Comece pelo cirílico. Construa o resto com orientação.': ['Start with Cyrillic. Build the rest with guidance.', 'Empieza por el cirílico. Avanza con orientación.'],
+  'Preciso saber alguma coisa para começar?': ['Do I need any previous knowledge?', '¿Necesito conocimientos previos para empezar?'],
+  'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.': ['No. You can start from scratch. Explanations are in Portuguese, and the learning path introduces the language step by step.', 'No. Puedes empezar desde cero. Las explicaciones están en portugués y el recorrido presenta el idioma paso a paso.'],
+  'Como posso conhecer as aulas?': ['How can I try the lessons?', '¿Cómo puedo probar las clases?'],
+  'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.': ['The first two lessons of each course are free. Try them before deciding on a subscription.', 'Las dos primeras clases de cada curso son gratuitas. Puedes probarlas antes de decidir si te suscribes.'],
+  'Os novos planos já estão disponíveis?': ['Are the new plans available yet?', '¿Ya están disponibles los nuevos planes?'],
+  'Start, Basic, Intermediário e Premium estão em preparação. A comparação nesta página apresenta a proposta; os preços e as condições serão informados antes da contratação. A seleção de idiomas aqui não altera sua conta.': ['Start, Basic, Intermediate and Premium are being prepared. This page previews the proposal; prices and terms will be provided before purchase. Selecting languages here does not change your account.', 'Start, Basic, Intermedio y Premium están en preparación. Esta página presenta la propuesta; los precios y las condiciones se comunicarán antes de contratar. Elegir idiomas aquí no modifica tu cuenta.'],
+  'Qual é a diferença do apoio no Premium?': ['What additional support does Premium offer?', '¿Qué apoyo adicional ofrece Premium?'],
+  'A proposta do Premium inclui professor para dúvidas específicas sobre o conteúdo pelo WhatsApp Business. Horários e prazo de resposta serão definidos antes do lançamento. Todos os planos terão a mesma qualidade de conteúdo e suporte técnico.': ['The proposed Premium plan includes a teacher for specific questions about the course content via WhatsApp Business. Availability and response times will be defined before launch. All plans will have the same content quality and technical support.', 'La propuesta de Premium incluye un profesor para dudas específicas sobre el contenido por WhatsApp Business. Los horarios y los plazos de respuesta se definirán antes del lanzamiento. Todos los planes tendrán la misma calidad de contenido y soporte técnico.'],
+  'Quanto tempo preciso reservar?': ['How much time should I set aside?', '¿Cuánto tiempo necesito reservar?'],
+  'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.': ['Sessions are designed to take around 30 minutes. Study at your own pace and return to carry on.', 'Las sesiones están organizadas para unos 30 minutos. Puedes estudiar a tu ritmo y volver para continuar.'],
+  'Não foi possível tocar o áudio. Tente novamente.': ['The audio could not be played. Please try again.', 'No se pudo reproducir el audio. Inténtalo de nuevo.'],
+  'Seu próximo passo:': ['Your next step:', 'Tu próximo paso:'],
+  'Continuar minha sessão →': ['Continue my session →', 'Continuar mi sesión →'],
+  'CURSOS DE IDIOMAS FEITOS PARA BRASILEIROS': ['LANGUAGE COURSES MADE FOR BRAZILIAN LEARNERS', 'CURSOS DE IDIOMAS PENSADOS PARA BRASILEÑOS'],
+  'O mundo tem': ['The world has', 'El mundo tiene'], 'muito a dizer.': ['so much to say.', 'mucho que decir.'],
+  'Entre na conversa.': ['Join the conversation.', 'Únete a la conversación.'],
+  'Encontrar meu plano': ['Find my plan', 'Encontrar mi plan'], 'Encontrar meu plano ↗': ['Find my plan ↗', 'Encontrar mi plan ↗'],
+  'Experimentar o método ↓': ['Try the method ↓', 'Probar el método ↓'],
+  '2 primeiras aulas grátis · Sem cartão para experimentar': ['First 2 lessons free · No card needed to try', '2 primeras clases gratis · Sin tarjeta para probar'],
+  'Olá, mundo.': ['Hello, world.', 'Hola, mundo.'], 'Um novo começo ↗': ['A new beginning ↗', 'Un nuevo comienzo ↗'],
+  'UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['A TASTE OF YOUR NEXT LANGUAGE', 'UNA MUESTRA DE TU PRÓXIMO IDIOMA'],
+  'Quero ouvir em': ['I want to listen in', 'Quiero escuchar en'], 'NO CAFÉ': ['AT THE CAFÉ', 'EN EL CAFÉ'],
+  'Olá. Um café, por favor.': ['Hello. A coffee, please.', 'Hola. Un café, por favor.'],
+  'Ouvir frase em': ['Listen to the phrase in', 'Escuchar la frase en'], 'Ouvindo…': ['Listening…', 'Escuchando…'],
+  'Ouça. Repita.': ['Listen. Repeat.', 'Escucha. Repite.'],
+  'Pequenas frases. Novas possibilidades.': ['Small phrases. New possibilities.', 'Frases pequeñas. Nuevas posibilidades.'],
+  'Abrir aula grátis →': ['Open a free lesson →', 'Abrir una clase gratis →'],
+  'Em português.': ['In Portuguese.', 'En portugués.'], 'Desde a explicação.': ['Starting with the explanations.', 'Desde las explicaciones.'],
+  'Com áudio.': ['With audio.', 'Con audio.'], 'Para ouvir e repetir.': ['To listen and repeat.', 'Para escuchar y repetir.'],
+  'No seu ritmo.': ['At your own pace.', 'A tu ritmo.'], 'Uma sessão por vez.': ['One session at a time.', 'Una sesión cada vez.'],
+  'MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.': ['LESS GUESSWORK. MORE UNDERSTANDING.', 'MENOS ADIVINAR. MÁS COMPRENDER.'],
+  'Entender muda': ['Understanding changes', 'Entender cambia'], 'o jeito de aprender.': ['the way you learn.', 'la forma de aprender.'],
+  'Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.': ['You bring your Portuguese. Linvuu builds on that foundation to explain sounds, structures and common mistakes in the new language.', 'Tú aportas el portugués. Linvuu utiliza esa base para explicar los sonidos, las estructuras y los errores habituales en el nuevo idioma.'],
+  'Ouça o idioma acontecer.': ['Hear the language in action.', 'Escucha el idioma en acción.'],
+  'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.': ['Words and dialogues with audio to connect what you read with what you hear.', 'Palabras y diálogos con audio para conectar lo que lees con lo que escuchas.'],
+  'Entenda o porquê.': ['Understand why.', 'Entiende el porqué.'],
+  'Explicações em português, exemplos e comparações para construir uma base.': ['Explanations in Portuguese, examples and comparisons to build a foundation.', 'Explicaciones en portugués, ejemplos y comparaciones para construir una base.'],
+  'Coloque em prática.': ['Put it into practice.', 'Ponlo en práctica.'],
+  'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.': ['Exercises with feedback, plus speaking and writing activities to use what you have learned.', 'Ejercicios con corrección y actividades de expresión oral y escrita para usar lo que has aprendido.'],
+  'UMA VONTADE JÁ É UM COMEÇO': ['THE WISH TO LEARN IS A START', 'LAS GANAS YA SON UN COMIENZO'],
+  'Qual será o seu': ['What will your', '¿Cuál será tu'], 'próximo “olá”?': ['next “hello” be?', 'próximo «hola»?'],
+  'Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.': ['For travelling, connecting with other cultures or reaching a personal goal. Find a language to get started.', 'Para viajar, acercarte a otras culturas o cumplir una meta personal. Encuentra un idioma para empezar.'],
+  'COLEÇÃO LINVUU': ['THE LINVUU COLLECTION', 'COLECCIÓN LINVUU'], 'Um idioma.': ['One language.', 'Un idioma.'], 'Muitas': ['Many', 'Muchos'],
+  'descobertas.': ['discoveries.', 'descubrimientos.'], 'LEIA · OUÇA · EXPLORE': ['READ · LISTEN · EXPLORE', 'LEE · ESCUCHA · EXPLORA'],
+  'PARA QUEM GOSTA DE IR ALÉM': ['FOR THOSE WHO LIKE TO GO FURTHER', 'PARA QUIENES QUIEREN IR MÁS ALLÁ'],
+  'Seu aprendizado': ['Your learning', 'Tu aprendizaje'], 'também tem páginas.': ['has pages, too.', 'también tiene páginas.'],
+  'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.': ['Explore Linvuu books, read at your own pace and revisit topics that deserve more attention.', 'Explora los libros de Linvuu, lee con calma y repasa los temas que merecen más atención.'],
+  'Conhecer a coleção →': ['Explore the collection →', 'Conocer la colección →'],
+  'VAMOS COMEÇAR BEM': ['LET’S GET OFF TO A GOOD START', 'EMPECEMOS BIEN'],
+  'Uma dúvida': ['Any questions', '¿Alguna duda'], 'antes do primeiro passo?': ['before your first step?', 'antes del primer paso?'],
+  'Fale com a Linvuu →': ['Talk to Linvuu →', 'Habla con Linvuu →'],
+  'SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO': ['YOUR NEXT LANGUAGE STARTS WITH ONE STEP', 'TU PRÓXIMO IDIOMA EMPIEZA CON UN PASO'],
+  'Abra espaço para': ['Make room for', 'Haz espacio para'], 'novas conversas.': ['new conversations.', 'nuevas conversaciones.'],
+  'Conheça a proposta. Explore os idiomas. Experimente uma aula.': ['Discover the plans. Explore the languages. Try a lesson.', 'Conoce la propuesta. Explora los idiomas. Prueba una clase.'],
+  'SEU OBJETIVO. SEU ESPAÇO PARA CRESCER.': ['YOUR GOAL. YOUR ROOM TO GROW.', 'TU OBJETIVO. TU ESPACIO PARA CRECER.'],
+  'Quanto do mundo': ['How much of the world', '¿Cuánto del mundo'], 'você quer conhecer?': ['do you want to discover?', 'quieres conocer?'],
+  'Compare a proposta dos novos planos. Depois, explore os idiomas que combinam com você.': ['Compare the proposed plans. Then explore the languages that suit you.', 'Compara la propuesta de los nuevos planes. Después, explora los idiomas que van contigo.'],
+  'Novos planos em preparação · Preços ainda não definidos': ['New plans in preparation · Prices not yet set', 'Nuevos planes en preparación · Precios aún por definir'],
+  'Intermediário': ['Intermediate', 'Intermedio'], '1 idioma': ['1 language', '1 idioma'], '2 idiomas': ['2 languages', '2 idiomas'], '3 idiomas': ['3 languages', '3 idiomas'],
+  'Todos os idiomas': ['All languages', 'Todos los idiomas'],
+  'Foco no seu primeiro objetivo.': ['Focus on your first goal.', 'Céntrate en tu primer objetivo.'],
+  'Espaço para uma nova possibilidade.': ['Room for a new possibility.', 'Espacio para una nueva posibilidad.'],
+  'Mais caminhos para a sua curiosidade.': ['More paths for your curiosity.', 'Más caminos para tu curiosidad.'],
+  'Liberdade para explorar mais.': ['Freedom to explore more.', 'Libertad para explorar más.'],
+  'Conteúdo com explicações em português': ['Content with explanations in Portuguese', 'Contenido con explicaciones en portugués'],
+  'Áudio e exercícios': ['Audio and exercises', 'Audio y ejercicios'], 'Suporte técnico': ['Technical support', 'Soporte técnico'],
+  'Professor para dúvidas específicas pelo WhatsApp Business': ['A teacher for specific questions via WhatsApp Business', 'Profesor para dudas específicas por WhatsApp Business'],
+  'Selecionado ✓': ['Selected ✓', 'Seleccionado ✓'], 'Explorar este plano': ['Explore this plan', 'Explorar este plan'],
+  'A mesma qualidade de ensino em todos os planos. O nome Intermediário indica a quantidade de idiomas, não o seu nível de conhecimento.': ['The same teaching quality in every plan. Intermediate refers to the number of languages, not your level of knowledge.', 'La misma calidad de enseñanza en todos los planes. El nombre Intermedio indica la cantidad de idiomas, no tu nivel de conocimiento.'],
+  'Quais idiomas despertam sua curiosidade?': ['Which languages spark your curiosity?', '¿Qué idiomas despiertan tu curiosidad?'],
+  'Idiomas de interesse': ['Languages of interest', 'Idiomas de interés'],
+  'Quer consultar a oferta disponível hoje?': ['Want to see the offer available today?', '¿Quieres consultar la oferta disponible hoy?'],
+  'Ver assinatura atual →': ['View the current subscription →', 'Ver la suscripción actual →'],
+};
+
+export const homeText = (text: string): string => {
+  if (LOCALE.codigo === 'pt-BR') return text;
+  const translated = copy[text.trim()]?.[LOCALE.codigo === 'en' ? 0 : 1];
+  return translated === undefined ? text : text.replace(text.trim(), translated);
+};
+
+export const homeNotice = LOCALE.codigo === 'en'
+  ? 'This page is in English. The course materials shown here currently have explanations in Portuguese; adapted materials in English are not available yet.'
+  : 'Esta página está en español. Los materiales de los cursos que se muestran aquí tienen explicaciones en portugués; los materiales adaptados al español aún no están disponibles.';
+
+export function selectionHelp(name: string, limit: number) {
+  if (LOCALE.codigo === 'en') return `${name}: choose up to ${limit} ${limit === 1 ? 'language' : 'languages'} to explore. This is a preview, with no purchase.`;
+  if (LOCALE.codigo === 'es') return `${name}: elige hasta ${limit} ${limit === 1 ? 'idioma' : 'idiomas'} para explorar. Es una vista previa, sin contratación.`;
+  return `${name}: escolha até ${limit} ${limit === 1 ? 'idioma' : 'idiomas'} para explorar. Esta é uma prévia, sem contratação.`;
+}
+export function selectionCount(count: number, limit: number) {
+  return LOCALE.codigo === 'en' ? `${count} of ${limit} selected` : LOCALE.codigo === 'es' ? `${count} de ${limit} seleccionados` : `${count} de ${limit} selecionados`;
+}
+export const tryLanguage = (name: string) => LOCALE.codigo === 'en' ? `Try ${name} →` : LOCALE.codigo === 'es' ? `Probar ${name} →` : `Experimentar ${name} →`;

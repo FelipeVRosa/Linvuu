@@ -79,8 +79,8 @@ const TX = {
 } as const;
 const HOME = {
   'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
-  en: { titulo: 'Languages explained in English', descricao: 'Learn Brazilian Portuguese, Spanish, German, French, Italian and Russian with lessons explained in English. 30-minute sessions, audio for every sentence and exercises corrected on the spot. 2 free lessons.' },
-  es: { titulo: 'Idiomas explicados en español', descricao: 'Aprende portugués de Brasil, inglés, alemán, francés, italiano y ruso con lecciones explicadas en español. Sesiones de 30 minutos, audio en cada frase y ejercicios corregidos al instante. 2 lecciones gratis.' },
+  en: { titulo: 'Language courses for Brazilian learners', descricao: 'English, Spanish, French, Italian, German and Russian courses for Brazilian learners. Explanations in Portuguese, audio and exercises. Try 2 free lessons.' },
+  es: { titulo: 'Cursos de idiomas para brasileños', descricao: 'Cursos de inglés, español, francés, italiano, alemán y ruso para brasileños. Explicaciones en portugués, audio y ejercicios. Prueba 2 clases gratis.' },
 };
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {

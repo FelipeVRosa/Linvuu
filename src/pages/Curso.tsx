@@ -13,7 +13,6 @@ import CursoBr from './CursoBr';
 import '../site-publico.css';
 import { LIVROS } from '../config/livros';
 import { Capacitor } from '@capacitor/core';
-import { APK } from '../plataforma';
 
 export default function Curso() {
   const { id } = useParams();
@@ -41,7 +40,7 @@ export default function Curso() {
   const aberto = grupoInicio?.aula ?? grupoRet?.aula ?? grupos[0]?.aula;
   const aulasPorNivel = grupos.reduce<Record<string, number>>((acc, g) => { const k = g.nivel ?? ''; acc[k] = (acc[k] ?? 0) + 1; return acc; }, {});
   const livro = LIVROS.find((l) => l.capa === `/livros/${curso.id}-a1-a2-v1-600.webp`);
-  const website = !APK && !Capacitor.isNativePlatform();
+  const website = import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform();
   const retomar = ret && !inicio && (
         <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
           <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">

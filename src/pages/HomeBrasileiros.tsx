@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { PlanosPreview } from '../components/PlanosPreview';
+import { HOME_BR } from '../config/oferta-publica';
 import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -14,12 +16,6 @@ const idiomas = [
   { id: 'de', nome: 'Alemão', oi: 'Hallo', frase: 'Guten Tag. Einen Kaffee, bitte.', lang: 'de', detalhe: 'Descomplique os primeiros passos, uma regra de cada vez.' },
   { id: 'ru', nome: 'Russo', oi: 'Привет', frase: 'Здравствуйте. Мне кофе, пожалуйста.', lang: 'ru', detalhe: 'Comece pelo cirílico. Construa o resto com orientação.' },
 ];
-const planos = [
-  { nome: 'Start', quantidade: '1 idioma', limite: 1, texto: 'Foco no seu primeiro objetivo.' },
-  { nome: 'Basic', quantidade: '2 idiomas', limite: 2, texto: 'Espaço para uma nova possibilidade.' },
-  { nome: 'Intermediário', quantidade: '3 idiomas', limite: 3, texto: 'Mais caminhos para a sua curiosidade.' },
-  { nome: 'Premium', quantidade: 'Todos os idiomas', limite: 6, texto: 'Liberdade para explorar mais.' },
-];
 const perguntas = [
   ['Preciso saber alguma coisa para começar?', 'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.'],
   ['Como posso conhecer as aulas?', 'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.'],
@@ -28,26 +24,23 @@ const perguntas = [
   ['Quanto tempo preciso reservar?', 'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.'],
 ];
 export default function HomeBrasileiros() {
-  usePageTitle();
+  usePageTitle(HOME_BR.tituloSeo, HOME_BR.descricao);
   const retomada = useRetomadaGeral();
   const [idioma, setIdioma] = useState(idiomas[0]);
   const [tocando, setTocando] = useState(false);
   const [erro, setErro] = useState('');
-  const [plano, setPlano] = useState<number | null>(null);
-  const [escolhas, setEscolhas] = useState<string[]>([]);
   const ouvir = async () => {
     setErro(''); setTocando(true);
     try { await falar(idioma.frase, idioma.id); }
     catch { setErro('Não foi possível tocar o áudio. Tente novamente.'); }
     finally { setTocando(false); }
   };
-  const escolherPlano = (n: number) => { setPlano(n); setEscolhas([]); };
   return <div className="br-home">
     {retomada && <div className="br-resume"><span>Seu próximo passo: {retomada.nome}</span><Link to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>Continuar minha sessão →</Link></div>}
     <section className="br-hero">
       <div className="br-hero-copy"><p className="br-eyebrow">CURSOS DE IDIOMAS FEITOS PARA BRASILEIROS</p>
         <h1>O mundo tem<br />muito a dizer.<br /><em>Entre na conversa.</em></h1>
-        <p className="br-lead">Aprenda um novo idioma com explicações que fazem sentido para brasileiros. Ouça, entenda e pratique — um passo possível de cada vez.</p>
+        <p className="br-lead">{HOME_BR.lead}</p>
         <div className="br-actions"><a className="br-button" href="#planos">Encontrar meu plano <span aria-hidden="true">↗</span></a><a className="br-text-link" href="#experimente">Experimentar o método ↓</a></div>
         <p className="br-fine">2 primeiras aulas grátis · Sem cartão para experimentar</p>
       </div>
@@ -69,14 +62,8 @@ export default function HomeBrasileiros() {
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
       ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{titulo}</h3><p>{texto}</p></article>)}</div>
     </section>
-    <section className="br-plans-wrap" id="planos"><div className="br-section"><div className="br-section-head"><div><p className="br-eyebrow">SEU OBJETIVO. SEU ESPAÇO PARA CRESCER.</p><h2>Quanto do mundo<br />você quer conhecer?</h2></div><p>Compare a proposta dos novos planos. Depois, explore os idiomas que combinam com você.</p></div>
-      <p className="br-status">Novos planos em preparação · Preços ainda não definidos</p>
-      <div className="br-plans">{planos.map((p, n) => <article key={p.nome} className={plano === n ? 'br-plan selected' : 'br-plan'}><span className="br-plan-name">{p.nome}</span><h3>{p.quantidade}</h3><p>{p.texto}</p><ul><li>Conteúdo com explicações em português</li><li>Áudio e exercícios</li><li>Suporte técnico</li>{n === 3 && <li>Professor para dúvidas específicas pelo WhatsApp Business</li>}</ul><button type="button" className="br-button" aria-pressed={plano === n} onClick={() => escolherPlano(n)}>{plano === n ? 'Selecionado ✓' : 'Explorar este plano'}</button></article>)}</div>
-      <p className="br-plan-note">A mesma qualidade de ensino em todos os planos. O nome Intermediário indica a quantidade de idiomas, não o seu nível de conhecimento.</p>
-      {plano !== null && <div className="br-choose"><h3>Quais idiomas despertam sua curiosidade?</h3><p id="br-choose-help">{planos[plano].nome}: escolha até {planos[plano].limite} {planos[plano].limite === 1 ? 'idioma' : 'idiomas'} para explorar. Esta é uma prévia, sem contratação.</p><div className="br-choices" role="group" aria-describedby="br-choose-help" aria-label="Idiomas de interesse">{idiomas.map(i => <button key={i.id} type="button" aria-pressed={escolhas.includes(i.id)} disabled={!escolhas.includes(i.id) && escolhas.length >= planos[plano].limite} onClick={() => setEscolhas(v => v.includes(i.id) ? v.filter(x => x !== i.id) : [...v, i.id])}>{i.nome}{escolhas.includes(i.id) ? ' ✓' : ''}</button>)}</div><p aria-live="polite">{escolhas.length} de {planos[plano].limite} selecionados</p>{escolhas.map(id => <Link key={id} className="br-sample-link" to={`/curso/${id}/dia/1`}>Experimentar {idiomas.find(i => i.id === id)?.nome} →</Link>)}</div>}
-      <div className="br-current"><span>Quer consultar a oferta disponível hoje?</span><Link to="/assinatura">Ver assinatura atual →</Link></div>
-    </div></section>
-    <section className="br-section" id="idiomas"><div className="br-section-head"><div><p className="br-eyebrow">UMA VONTADE JÁ É UM COMEÇO</p><h2>Qual será o seu<br />próximo “olá”?</h2></div><p>Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.</p></div><div className="br-languages">{idiomas.map((i, n) => <Link key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{i.nome}</h3><span aria-hidden="true">↗</span></div><p>{i.detalhe}</p></Link>)}</div></section>
+    <PlanosPreview />
+    <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">UMA VONTADE JÁ É UM COMEÇO</p><h2>Qual será o seu<br />próximo “olá”?</h2></div><p>Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.</p></div><div className="br-languages">{idiomas.map((i, n) => <Link key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{i.nome}</h3><span aria-hidden="true">↗</span></div><p>{i.detalhe}</p></Link>)}</div></section>
     <section className="br-book"><div className="br-book-art" aria-hidden="true"><span>COLEÇÃO LINVUU</span><strong>Um idioma.<br />Muitas<br /><em>descobertas.</em></strong><span>LEIA · OUÇA · EXPLORE</span></div><div><p className="br-eyebrow">PARA QUEM GOSTA DE IR ALÉM</p><h2>Seu aprendizado<br />também tem páginas.</h2><p>Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.</p><Link className="br-text-link" to="/livros">Conhecer a coleção →</Link></div></section>
     <section className="br-section br-faq" id="faq"><div><p className="br-eyebrow">VAMOS COMEÇAR BEM</p><h2>Uma dúvida<br />antes do primeiro passo?</h2><Link to="/contato" className="br-text-link">Fale com a Linvuu →</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{p}</summary><p>{r}</p></details>)}</div></section>
     <section className="br-last"><p className="br-eyebrow">SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO</p><h2>Abra espaço para<br /><em>novas conversas.</em></h2><a href="#planos" className="br-button">Encontrar meu plano ↗</a><p>Conheça a proposta. Explore os idiomas. Experimente uma aula.</p></section>

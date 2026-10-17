@@ -1,0 +1,31 @@
+/* Moldura pública; nenhuma regra altera a área de exercícios. */
+.site-publico{--r-control:var(--site-r-control);--r-card:var(--site-r-card);padding-top:32px;padding-bottom:72px}
+.site-publico .pagina-h1{font-family:var(--font-display);font-weight:500;font-size:clamp(40px,5vw,62px);line-height:1.08;letter-spacing:-.035em;color:var(--verde-floresta);margin:12px 0 22px}
+.site-eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--verde-floresta);margin:14px 0}
+.site-lead{font-size:20px;line-height:1.6;color:var(--fg-2);max-width:58ch;margin-bottom:28px}
+.site-intro{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:center;margin:36px 0 40px}
+.site-aside{background:var(--site-superficie-verde);border:1px solid var(--site-borda-cartao);padding:28px;border-radius:var(--site-r-card);transform:rotate(1deg)}
+.site-aside strong{font-family:var(--font-display);font-size:30px;font-weight:500;line-height:1.2;display:block;color:var(--verde-floresta)}
+.site-aside p{font-size:16px;line-height:1.7;margin:16px 0}.site-aside a{font-weight:600;color:var(--verde-floresta);text-decoration:underline}
+.site-publico .lv-card{border-radius:var(--site-r-card);background:var(--site-idioma-verde);padding:28px;transition:transform var(--dur-2),box-shadow var(--dur-2);border-color:var(--site-borda-idioma)}
+.site-publico .lv-card:nth-child(3n+2){background:var(--site-idioma-ocre)}.site-publico .lv-card:nth-child(3n){background:var(--site-idioma-neutro)}
+.site-publico .lv-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px var(--site-sombra-cartao)}
+.site-publico .lv-card-t{font-size:27px}.site-publico .lv-saud{font-family:var(--font-display);font-size:48px;color:var(--verde-floresta);margin-bottom:20px}
+.site-publico .lv-card p{line-height:1.7}.site-publico .filtros{border-radius:var(--site-r-card);background:var(--papel-claro);padding:20px;border:var(--borda)}
+.site-publico .curso-topo{padding:28px 32px;background:var(--site-superficie-verde);border:1px solid var(--site-borda-cartao);border-radius:var(--site-r-card);margin:28px 0 24px}
+.site-publico .curso-topo .pagina-h1 em{font-size:.55em;color:var(--fg-3)}
+.site-course-nav{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.site-course-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border:var(--borda-forte);border-radius:var(--r-pill);font-weight:600;font-size:15px;color:var(--verde-floresta)}
+.site-publico .curso-nivel{scroll-margin-top:100px;font-family:var(--font-display);font-size:36px;letter-spacing:-.02em;padding-top:28px}
+.site-publico .fase-bloco{border-radius:var(--site-r-card);overflow:hidden;margin:14px 0;background:var(--papel-claro);border:var(--borda)}
+.site-publico .fase-bloco summary{padding:20px 24px}.site-publico .fase-bloco[open] summary{background:var(--site-idioma-verde)}
+.site-publico .curso-retomar{border-radius:var(--site-r-card);padding:22px 24px;background:var(--papel-claro)}
+.site-assinatura .lv-assinatura{max-width:none}.site-assinatura .lv-planos{gap:20px}.site-assinatura .lv-plano{border-radius:var(--site-r-card);background:var(--papel-claro);padding:28px;border:1px solid var(--site-borda-cartao)}
+.site-assinatura .lv-plano-dest{background:var(--site-idioma-verde)}.site-assinatura .lv-plano h3{font-family:var(--font-display);font-size:30px}.site-assinatura .btn{border-radius:var(--site-r-control);min-height:48px;line-height:1.35;white-space:normal}
+.site-plans-preview{border-radius:var(--site-r-card);overflow:hidden;margin:32px 0}.site-plans-preview .br-section{padding:36px 24px}.site-plans-preview .br-section-head{display:block}.site-plans-preview .br-section-head>p{max-width:60ch}
+.site-offer-heading{padding:24px 0;margin:28px 0;border-top:var(--borda)}.site-offer-heading h2{font-family:var(--font-display);font-size:36px;color:var(--verde-floresta);margin:12px 0}.site-offer-heading p{max-width:72ch;line-height:1.7}
+#oferta-atual{scroll-margin-top:110px}
+@media(max-width:760px){.site-intro{grid-template-columns:1fr;gap:24px;margin-top:24px}.site-aside{transform:none}.site-publico .curso-topo{padding:24px 20px}.site-publico .fase-bloco summary{padding:18px 16px;flex-wrap:wrap}.site-publico .fase-dias{white-space:normal}.site-publico .curso-retomar{align-items:stretch;flex-direction:column}.site-publico .curso-retomar .btn{white-space:normal;line-height:1.4;text-align:left}.site-publico .lv-card{padding:24px}.site-assinatura .lv-planos{grid-template-columns:1fr}.site-plans-preview .br-section{padding:28px 18px}.site-plans-preview .br-plans{grid-template-columns:1fr}.site-lead{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.site-publico .lv-card{transition:none}.site-publico .lv-card:hover{transform:none}}
+.site-carregando{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;color:var(--fg-3);font-size:16px}.site-carregando img{height:auto}
+
+.site-publico .curso-grid{gap:20px}.site-publico .lv-card{border:1px solid var(--site-borda-idioma)}

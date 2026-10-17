@@ -28,9 +28,13 @@ function RolarAoTopo() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (hash) {
-      // espera a página montar antes de procurar a âncora
-      const id = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView(), 0);
-      return () => clearTimeout(id);
+      // Rotas lazy podem montar depois do efeito: aguarda o destino real, sem atrasar a navegação.
+      const rolar = () => { const alvo = document.getElementById(hash.slice(1)); if (!alvo) return false; alvo.scrollIntoView(); return true; };
+      if (rolar()) return;
+      const observer = new MutationObserver(() => { if (rolar()) observer.disconnect(); });
+      observer.observe(document.getElementById('conteudo') ?? document.body, { childList: true, subtree: true });
+      const limite = setTimeout(() => observer.disconnect(), 5000);
+      return () => { clearTimeout(limite); observer.disconnect(); };
     }
     window.scrollTo(0, 0);
   }, [pathname, hash]);

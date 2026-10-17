@@ -7,7 +7,9 @@ import { abrir, useAssinatura } from '../lib/assinatura';
 import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
-import { data, useT } from '../i18n';
+import { data, LOCALE, useT } from '../i18n';
+import { PlanosPreview } from '../components/PlanosPreview';
+import '../site-publico.css';
 
 export default function Assinatura() {
   const t = useT();
@@ -30,9 +32,12 @@ export default function Assinatura() {
     try { await abrir(t, plano); } catch (e) { setErro((e as Error).message); setOcupado(false); }
   };
   return (
-    <div className="pagina">
+    <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-assinatura' : 'pagina'}>
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: s.titulo }]} />
-      <h1 className="pagina-h1">{s.titulo}</h1>
+      <h1 className="pagina-h1">{LOCALE.codigo === 'pt-BR' ? 'Um plano para o seu próximo passo.' : s.titulo}</h1>
+      {LOCALE.codigo === 'pt-BR' && !a.ativa && <><p className="site-lead">Conheça os novos planos em preparação. A oferta disponível para contratação hoje está identificada abaixo.</p><div className="br-home site-plans-preview"><PlanosPreview /></div></>}
+      <div id="oferta-atual" />
+      {LOCALE.codigo === 'pt-BR' && !a.ativa && <header className="site-offer-heading"><p className="site-eyebrow">DISPONÍVEL HOJE</p><h2>Assinatura atual</h2><p>Os valores abaixo pertencem à oferta vigente, com acesso a todos os cursos. Start, Basic, Intermediário e Premium ainda não estão à venda.</p></header>}
       {carregando || (usuario && a.carregando) ? <p className="resultado" role="status">{t.geral.carregando}</p> : (
         <div className="texto-legal lv-assinatura">
           {params.get('ok') && !a.ativa && <p className="nota">{s.recebido} <button type="button" className="link-btn" onClick={a.recarregar}>{s.atualize}</button>.</p>}

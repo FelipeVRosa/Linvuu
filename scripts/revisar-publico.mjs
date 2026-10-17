@@ -16,7 +16,7 @@ try {
     const context=await browser.newContext({viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
-    for (const [rota,arquivo] of [['/','home'],['/cursos','cursos'],['/curso/en','curso-en'],['/assinatura','assinatura']]) {
+    for (const [rota,arquivo] of [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],['/curso/en','curso-en'],['/assinatura','assinatura']]) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();
       await page.evaluate(()=>document.fonts.ready);

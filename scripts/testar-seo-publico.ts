@@ -15,8 +15,12 @@ for (const plano of PLANOS_PREVIA) assert.ok(home.includes(`${plano.nome}: ${pla
 assert.ok(!home.includes('R$ 500'));
 assert.ok(!home.includes('Escolha o idioma</strong>'));
 assert.ok(html('/cursos').includes('<h1>Cursos</h1>'));
-assert.ok(html('/en').includes('Languages explained in English'));
-assert.ok(html('/es').includes('Idiomas explicados en español'));
+assert.ok(html('/en').includes('Language courses for Brazilian learners'));
+assert.ok(html('/en').includes('Explanations in Portuguese'));
+assert.ok(!html('/en').includes('lessons explained in English'));
+assert.ok(html('/es').includes('Cursos de idiomas para brasileños'));
+assert.ok(html('/es').includes('Explicaciones en portugués'));
+assert.ok(!html('/es').includes('lecciones explicadas en español'));
 assert.ok(html('/assinatura').includes('name="robots" content="noindex"'));
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));

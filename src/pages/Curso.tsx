@@ -12,6 +12,8 @@ import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
 import '../site-publico.css';
 import { LIVROS } from '../config/livros';
+import { Capacitor } from '@capacitor/core';
+import { APK } from '../plataforma';
 
 export default function Curso() {
   const { id } = useParams();
@@ -56,7 +58,7 @@ export default function Curso() {
             {IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
           </div>
         </div>
-        {LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
+        {!APK && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
           <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
           <figcaption><span>Coleção Linvuu</span><strong>Leitura para acompanhar seu estudo.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Conhecer o material →</Link></figcaption>
         </figure>}

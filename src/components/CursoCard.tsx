@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Curso, coberturaDoCurso, statusDoCurso } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
+import { Capacitor } from '@capacitor/core';
+import { APK } from '../plataforma';
 
 const SAUDACAO: Record<string, string> = { en: 'Hello', es: 'Hola', ru: 'Привет', de: 'Hallo', fr: 'Bonjour', it: 'Ciao', br: 'Olá' };
 
@@ -13,7 +15,7 @@ export function CursoCard({ curso, nivel = 3 }: { curso: Curso; nivel?: 2 | 3 })
   const cobertura = t.card.cobertura(cob.traduzidas, cob.total);
   return (
     <Link to={`/curso/${curso.id}`} className="lv-card">
-      {LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt="" aria-hidden="true" width="600" height="800" loading="lazy" decoding="async" />}
+      {!APK && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && <img className="curso-card-capa" src={`/livros/${curso.id}-a1-a2-v1-600.webp`} alt="" aria-hidden="true" width="600" height="800" loading="lazy" decoding="async" />}
       {SAUDACAO[curso.id] && <span className="lv-saud" lang={curso.id === 'br' ? 'pt-BR' : curso.id} aria-hidden="true">{SAUDACAO[curso.id]}</span>}
       <Titulo className="lv-card-t">{curso.nome}</Titulo>
       <span className="lv-nativo" lang={curso.id === 'br' ? 'pt-BR' : curso.id}>{curso.nomeNativo !== curso.nome ? curso.nomeNativo : ' '}</span>

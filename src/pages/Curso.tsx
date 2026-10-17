@@ -41,6 +41,20 @@ export default function Curso() {
   const aberto = grupoInicio?.aula ?? grupoRet?.aula ?? grupos[0]?.aula;
   const aulasPorNivel = grupos.reduce<Record<string, number>>((acc, g) => { const k = g.nivel ?? ''; acc[k] = (acc[k] ?? 0) + 1; return acc; }, {});
   const livro = LIVROS.find((l) => l.capa === `/livros/${curso.id}-a1-a2-v1-600.webp`);
+  const website = !APK && !Capacitor.isNativePlatform();
+  const retomar = ret && !inicio && (
+        <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
+          <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">
+            {feitos.size ? t.cursoPagina.continuar(ret.dia, ret.titulo) : t.cursoPagina.comecar}
+          </Link>
+          {feitos.size > 0 && (
+            <span className="curso-retomar-prog">
+              <span className="curso-retomar-barra" aria-hidden="true"><span style={{ width: `${Math.round((100 * feitos.size) / ret.total)}%` }} /></span>
+              {t.cursoPagina.feitas(feitos.size, ret.total)}
+            </span>
+          )}
+        </section>
+      );
 
   return (
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-curso' : 'pagina'}>
@@ -57,28 +71,17 @@ export default function Curso() {
             {stats && <span>{t.cursoPagina.noAr(stats.publicadas, stats.total)}</span>}
             {IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
           </div>
-      {ret && !inicio && (
-        <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
-          <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">
-            {feitos.size ? t.cursoPagina.continuar(ret.dia, ret.titulo) : t.cursoPagina.comecar}
-          </Link>
-          {feitos.size > 0 && (
-            <span className="curso-retomar-prog">
-              <span className="curso-retomar-barra" aria-hidden="true"><span style={{ width: `${Math.round((100 * feitos.size) / ret.total)}%` }} /></span>
-              {t.cursoPagina.feitas(feitos.size, ret.total)}
-            </span>
-          )}
-        </section>
-      )}
+          {website && retomar}
+
         </div>
-        {!APK && !Capacitor.isNativePlatform() && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
+        {website && LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
           <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
           <figcaption><span>Coleção Linvuu</span><strong>Leitura para acompanhar seu estudo.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Conhecer o material →</Link></figcaption>
         </figure>}
       </header>
 
       {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}
-
+      {!website && retomar}
 
       {cursoDeOutroPublico(curso.id) && (
         <p className="nota">{t.cursoPagina.naoParaVoce(curso.nome)} <a href={urlEm('pt-BR')} hrefLang="pt-BR">Português →</a></p>

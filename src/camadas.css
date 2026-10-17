@@ -1,0 +1,117 @@
+/* Camadas internas do website. A home e o aplicativo mantêm suas próprias composições. */
+.site-camadas > .pagina:not(.pagina-aluno){max-width:1200px;padding:36px 40px 88px}
+.site-camadas > .pagina:not(.pagina-aluno) .pagina-h1{font-family:var(--font-display);font-size:clamp(36px,4.8vw,62px);font-weight:500;line-height:1.1;letter-spacing:-.04em;color:var(--verde-floresta);text-wrap:balance;overflow-wrap:anywhere}
+.site-camadas > .pagina:not(.pagina-aluno) .lead{font-size:19px;line-height:1.75;max-width:65ch;color:var(--site-texto-lead)}
+.site-camadas .navegacao{font-size:14px;gap:20px;margin-bottom:28px;color:var(--fg-3)}
+.site-camadas .navegacao a{ text-underline-offset:4px }
+.site-camadas > .pagina:not(.pagina-aluno) .btn{border-radius:var(--site-r-control);min-height:48px;line-height:1.4;white-space:normal;text-align:center}
+
+/* Apresentação do curso: estudo à esquerda, livro como referência à direita. */
+.site-camadas .site-curso .curso-topo{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:48px;align-items:center;padding:44px;background:var(--site-idioma-verde);border-radius:20px;border:1px solid var(--site-borda-cartao)}
+.site-camadas .curso-topo>div{min-width:0}
+.site-camadas .curso-topo .pagina-h1 em{display:block;font-size:.46em;font-style:normal;letter-spacing:-.02em;margin-top:10px;color:var(--site-texto-contexto)}
+.site-camadas .curso-fatos{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:24px;font-size:13px;line-height:1.6}
+.site-camadas .curso-fatos>span{padding-left:12px;border-left:2px solid var(--site-borda-controle)}
+.curso-livro{margin:0;display:grid;justify-items:center;gap:20px;min-width:0}
+.curso-livro>img{display:block;width:164px;max-width:100%;height:auto;transform:rotate(3deg);border-radius:3px;box-shadow:var(--sombra-papel)}
+.curso-livro figcaption{display:grid;gap:8px;text-align:center;font-size:13px;line-height:1.5;color:var(--site-texto-idioma)}
+.curso-livro figcaption>span{font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.curso-livro figcaption strong{font-weight:500;max-width:24ch}
+.curso-livro figcaption a{font-weight:600;text-decoration:underline;text-underline-offset:4px;color:var(--verde-floresta);padding:6px 0}
+.site-camadas .site-course-nav{gap:10px;margin:28px 0}
+.site-camadas .site-course-nav a{background:var(--papel-claro);border:1px solid var(--site-borda-cartao);font-size:14px}
+.site-camadas .site-course-nav a:last-child{margin-left:auto;color:var(--verde-floresta);background:var(--site-superficie-ocre)}
+.site-camadas .site-curso .curso-retomar{border:1px solid var(--site-borda-cartao);padding:22px 26px;gap:22px;background:var(--papel-claro)}
+.site-camadas .site-curso .curso-nivel{font-family:var(--font-display);font-size:clamp(28px,3.5vw,38px);font-weight:500;border-top:1px solid var(--site-divisor);padding-top:32px;margin-top:36px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.site-camadas .curso-nivel small{font-family:var(--font-body);font-size:13px;font-weight:500;color:var(--fg-3);letter-spacing:0}
+.site-camadas .site-curso .fase-bloco{border:1px solid var(--site-borda-cartao);border-radius:14px;margin:12px 0;background:var(--papel-claro)}
+.site-camadas .site-curso .fase-bloco summary{padding:22px;gap:16px;min-height:88px;background:var(--papel-claro)}
+.site-camadas .site-curso .fase-bloco[open] summary{background:var(--site-idioma-verde)}
+.site-camadas .site-curso .fase-num{padding:6px 10px;border-radius:6px;background:var(--site-seletor);font-size:12px;font-weight:600;color:var(--verde-floresta)}
+.site-camadas .site-curso .fase-bloco summary strong{font-size:17px;font-weight:600;line-height:1.5;min-width:0}
+.site-camadas .site-curso .fase-dias{font-size:12px;font-weight:400;color:var(--site-texto-nota);white-space:normal}
+.site-camadas .site-curso .dias{border-color:var(--site-divisor)}
+.site-camadas .site-curso .dias li+li{border-color:var(--site-divisor)}
+.site-camadas .site-curso .dias a{padding:20px 24px;gap:18px;box-shadow:none}
+.site-camadas .site-curso .dias a:hover{background:var(--site-seletor);box-shadow:inset 3px 0 var(--verde-floresta)}
+.site-camadas .site-curso .dia-n{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--site-borda-cartao);border-radius:50%;font-size:13px;font-weight:500;color:var(--verde-floresta)}
+.site-camadas .site-curso .dia-t{font-size:16px;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.site-camadas .site-curso .dia-t small{font-size:12px;line-height:1.6;color:var(--site-texto-nota);margin-top:6px}
+
+/* Catálogo: capa pequena, título e informação preservados no mesmo cartão. */
+.site-camadas .site-catalogo .curso-grid{gap:24px;margin-top:28px}
+.site-camadas .site-catalogo .lv-card{position:relative;min-width:0;padding:30px;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start}
+.site-camadas .site-catalogo .lv-saud{padding-right:84px;min-height:100px;margin-bottom:18px;font-size:42px;max-width:100%;overflow-wrap:anywhere}
+.curso-card-capa{position:absolute;right:24px;top:24px;width:66px;height:auto;max-height:100px;object-fit:contain;border-radius:2px;transform:rotate(5deg);box-shadow:var(--sombra-papel)}
+.site-camadas .site-catalogo .lv-card-t{font-family:var(--font-display);font-size:32px;font-weight:500;letter-spacing:-.025em}
+.site-camadas .site-catalogo .lv-nativo{font-size:13px;margin:4px 0 12px;color:var(--site-texto-contexto)}
+.site-camadas .site-catalogo .lv-card-meta{margin-top:auto;padding-top:22px;line-height:1.6;border-top:1px solid var(--site-borda-cartao);width:100%;font-size:12px}
+.site-camadas .site-catalogo .filtros{padding:24px;background:var(--papel-claro);border-color:var(--site-borda-cartao)}
+.site-camadas .site-catalogo .search-field input{min-height:48px;border-radius:var(--site-r-control);background:var(--papel)}
+
+/* Gramática, livros, institucional, assinatura e formulários: a mesma escala editorial. */
+.site-camadas > .pagina:not(.pagina-aluno) .pagina-h2,.site-camadas .lvr-h2{font-family:var(--font-display);font-weight:500;letter-spacing:-.025em;color:var(--verde-floresta);line-height:1.2}
+.site-camadas .texto-legal{line-height:1.8;max-width:78ch}
+.site-camadas .texto-legal h2{font-family:var(--font-display);font-weight:500;font-size:28px;margin-top:36px;line-height:1.25}
+.site-camadas .topicos{gap:14px;margin-top:26px}
+.site-camadas .topico{border:1px solid var(--site-borda-cartao);border-radius:14px;padding:0 24px;background:var(--papel-claro)}
+.site-camadas .topico summary{padding:22px 0;min-height:72px}
+.site-camadas .topico summary strong{font-size:18px;font-weight:600;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.site-camadas .topico[open]{border-color:var(--site-borda-controle)}
+.site-camadas .topico[open] summary{border-bottom:1px solid var(--site-divisor);margin-bottom:22px}
+.site-camadas .chips{gap:8px;row-gap:10px}
+.site-camadas .chips a,.site-camadas .chips button{min-height:44px;display:inline-flex;align-items:center;line-height:1.4;white-space:normal}
+.site-camadas .lvr-topo{padding:24px 0 36px;border-bottom:1px solid var(--site-divisor);margin-bottom:40px}
+.site-camadas .lvr-cartao{border-radius:14px;border-color:var(--site-borda-cartao);background:var(--papel-claro)}
+.site-camadas .lvr-livro-topo{padding:36px;background:var(--site-colecao);border-radius:20px;gap:40px;margin-top:28px}
+.site-camadas .lvr-sumario{border-color:var(--site-borda-cartao);border-radius:14px;overflow:hidden;background:var(--papel-claro)}
+.site-camadas .lvr-sumario>li+li{border-color:var(--site-divisor)}
+.site-camadas .site-assinatura .lv-plano h3{font-family:var(--font-display);font-weight:500}
+.site-camadas > .conta{padding:56px 24px 88px;min-height:70vh}
+.site-camadas .conta-card{max-width:480px;padding:40px;border:1px solid var(--site-borda-cartao);border-radius:20px;box-shadow:var(--sombra-papel);gap:20px;background:var(--papel-claro)}
+.site-camadas .conta-card h1{font-family:var(--font-display);font-weight:500;letter-spacing:-.035em;font-size:38px;line-height:1.15;color:var(--verde-floresta)}
+.site-camadas .conta-card input{min-height:48px;border-radius:var(--site-r-control)}
+.site-camadas .conta-card .btn{min-height:48px;border-radius:var(--site-r-control)}
+
+/* Área de estudo: somente moldura e hierarquia, com os tokens do tema já existentes. */
+.site-camadas .area-aluno .aa-leitura{max-width:860px;padding-top:32px}
+.site-camadas .area-aluno .dia-header{padding:8px 0 28px;border-bottom:1px solid var(--sem-borda);margin-bottom:28px}
+.site-camadas .area-aluno .dia-header .pagina-h1{font-family:var(--font-display);font-weight:500;font-size:clamp(30px,3.2vw,44px);letter-spacing:-.03em;line-height:1.18;text-wrap:balance;overflow-wrap:anywhere}
+.site-camadas .area-aluno .aa-topo{padding-top:28px}
+.site-camadas .area-aluno .aa-titulo strong{font-family:var(--font-display);font-weight:500;font-size:25px}
+.site-camadas .area-aluno .aa-grupo-topo{padding-top:18px;padding-bottom:18px}
+.site-camadas .area-aluno .guia-sessao{border:1px solid var(--sem-borda);border-radius:12px;padding:0 20px;margin:24px 0;background:var(--sem-superficie)}
+.site-camadas .area-aluno .guia-sessao summary{padding:16px 0;min-height:48px}
+.site-camadas .area-aluno .sessao-nav{gap:14px;margin-top:28px}
+.site-camadas .area-aluno .aa-nav{padding-top:28px;margin-top:32px;border-top:1px solid var(--sem-borda)}
+
+@media(max-width:900px){
+ .site-camadas .site-curso .curso-topo{grid-template-columns:minmax(0,1fr) 180px;padding:32px;gap:28px}
+ .curso-livro>img{width:132px}
+ .site-camadas .site-catalogo .curso-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ .site-camadas > .pagina:not(.pagina-aluno){padding:24px 20px 64px}
+ .site-camadas > .pagina:not(.pagina-aluno) .pagina-h1{font-size:clamp(34px,8vw,46px)}
+ .site-camadas > .pagina:not(.pagina-aluno) .lead{font-size:17px;line-height:1.7}
+ .site-camadas .site-curso .curso-topo{grid-template-columns:minmax(0,1fr);padding:26px 22px;gap:26px}
+ .curso-livro{grid-template-columns:74px minmax(0,1fr);gap:20px;justify-items:start;border-top:1px solid var(--site-borda-cartao);padding-top:24px}
+ .curso-livro>img{width:68px}
+ .curso-livro figcaption{text-align:left;align-self:center;font-size:12px;gap:5px}
+ .curso-livro figcaption a{padding:7px 0}
+ .site-camadas .site-course-nav a:last-child{margin-left:0}
+ .site-camadas .site-curso .curso-retomar{padding:20px}
+ .site-camadas .site-curso .fase-bloco summary{padding:18px;gap:12px;min-height:80px}
+ .site-camadas .site-curso .fase-bloco summary strong{flex-basis:calc(100% - 85px)}
+ .site-camadas .site-curso .fase-dias{margin-left:0}
+ .site-camadas .site-curso .dias a{padding:18px 16px;gap:12px;grid-template-columns:30px minmax(0,1fr)}
+ .site-camadas .site-curso .dia-n{width:28px;height:28px}
+ .site-camadas .site-curso .dia-t{font-size:15px}
+ .site-camadas .site-catalogo .curso-grid{grid-template-columns:minmax(0,1fr)}
+ .site-camadas .site-catalogo .lv-card{padding:26px}
+ .site-camadas .lvr-livro-topo{padding:24px 20px;gap:26px}
+ .site-camadas .topico{padding:0 18px}
+ .site-camadas .conta-card{padding:28px 22px}
+ .site-camadas .conta-card h1{font-size:32px}
+ .site-camadas .area-aluno .aa-leitura{padding-top:22px}
+}

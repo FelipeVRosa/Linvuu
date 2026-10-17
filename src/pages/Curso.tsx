@@ -11,6 +11,7 @@ import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
 import CursoBr from './CursoBr';
 import '../site-publico.css';
+import { LIVROS } from '../config/livros';
 
 export default function Curso() {
   const { id } = useParams();
@@ -37,6 +38,7 @@ export default function Curso() {
   const grupoRet = ret && feitos.size ? grupos.find((x) => ret.dia >= x.dias[0] && ret.dia <= x.dias[1]) : undefined;
   const aberto = grupoInicio?.aula ?? grupoRet?.aula ?? grupos[0]?.aula;
   const aulasPorNivel = grupos.reduce<Record<string, number>>((acc, g) => { const k = g.nivel ?? ''; acc[k] = (acc[k] ?? 0) + 1; return acc; }, {});
+  const livro = LIVROS.find((l) => l.capa === `/livros/${curso.id}-a1-a2-v1-600.webp`);
 
   return (
     <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-curso' : 'pagina'}>
@@ -54,6 +56,10 @@ export default function Curso() {
             {IDIOMAS_GRAMATICA.includes(curso.id) && <Link to={`/gramatica/${curso.id}`} className="link-gramatica">{t.cursoPagina.gramatica(curso.nome)}</Link>}
           </div>
         </div>
+        {LOCALE.codigo === 'pt-BR' && livro?.capa && <figure className="curso-livro">
+          <img src={livro.capa} alt={`Capa do livro de ${curso.nome}, Coleção Linvuu`} width="600" height="800" decoding="async" />
+          <figcaption><span>Coleção Linvuu</span><strong>Leitura para acompanhar seu estudo.</strong><Link to={livro.link?.startsWith('/livros/') ? livro.link : '/livros'}>Conhecer o material →</Link></figcaption>
+        </figure>}
       </header>
 
       {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}

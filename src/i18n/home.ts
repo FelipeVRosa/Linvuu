@@ -57,7 +57,7 @@ const copy: Record<string, readonly [string, string]> = {
   'Qual será o seu': ['What will your', '¿Cuál será tu'], 'próximo “olá”?': ['next “hello” be?', 'próximo «hola»?'],
   'Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.': ['For travelling, connecting with other cultures or reaching a personal goal. Find a language to get started.', 'Para viajar, acercarte a otras culturas o cumplir una meta personal. Encuentra un idioma para empezar.'],
   'COLEÇÃO LINVUU': ['THE LINVUU COLLECTION', 'COLECCIÓN LINVUU'], 'Um idioma.': ['One language.', 'Un idioma.'], 'Muitas': ['Many', 'Muchos'],
-  'descobertas.': ['discoveries.', 'descubrimientos.'], 'LEIA · OUÇA · EXPLORE': ['READ · LISTEN · EXPLORE', 'LEE · ESCUCHA · EXPLORA'],
+  'descobertas.': ['discoveries.', 'hallazgos.'], 'LEIA · OUÇA · EXPLORE': ['READ · LISTEN · EXPLORE', 'LEE · ESCUCHA · EXPLORA'],
   'PARA QUEM GOSTA DE IR ALÉM': ['FOR THOSE WHO LIKE TO GO FURTHER', 'PARA QUIENES QUIEREN IR MÁS ALLÁ'],
   'Seu aprendizado': ['Your learning', 'Tu aprendizaje'], 'também tem páginas.': ['has pages, too.', 'también tiene páginas.'],
   'Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.': ['Explore Linvuu books, read at your own pace and revisit topics that deserve more attention.', 'Explora los libros de Linvuu, lee con calma y repasa los temas que merecen más atención.'],

@@ -36,6 +36,9 @@ try {
 
   const pre = await fetch(base + '/api/billing/status', { method: 'OPTIONS', headers: { Origin: 'capacitor://localhost', 'Access-Control-Request-Method': 'GET' } });
   ok(pre.status === 204 && pre.headers.get('access-control-allow-origin') === 'capacitor://localhost', 'CORS libera o app nativo (capacitor://localhost)');
+  const audio = await fetch(base + '/audio/en/index.json', { headers: { Origin: 'https://localhost' } });
+  ok(audio.status === 200 && audio.headers.get('access-control-allow-origin') === 'https://localhost', 'índice de áudio gratuito permite o app por CORS');
+  ok(!(await fetch(base + '/audio/en/index.json', { headers: { Origin: 'https://site-estranho.com' } })).headers.get('access-control-allow-origin'), 'áudio não libera CORS para origem estranha');
   ok(!(await fetch(base + '/api/billing/status', { headers: { Origin: 'https://site-estranho.com' } })).headers.get('access-control-allow-origin'), 'CORS não libera origens estranhas');
   const ruim = await fetch(base + '/api/billing/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{nao json' });
   const txt = await ruim.text();

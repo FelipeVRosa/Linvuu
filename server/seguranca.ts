@@ -106,6 +106,8 @@ export function registrarSeguranca(app: Express, producao: boolean) {
   app.set('trust proxy', 1); // atrás do proxy do Render: req.ip passa a ser o do visitante
   app.use(cabecalhos(producao));
   app.use('/api', cors);
+  // Índices e MP3 gratuitos são carregados pelo app a partir de https://localhost.
+  app.use('/audio', cors);
   app.use('/api/billing', limitar('billing', 30, 60_000));
   app.use('/api/aula', limitar('aula', 120, 60_000));
   app.use('/api/evento', limitar('evento', 40, 60_000));

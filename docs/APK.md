@@ -13,3 +13,7 @@ Medição local: assets web do APK em torno de 5,4 MiB, contra 85,4 MiB do build
 Validação executada: tipos, builds e inspeção automatizada do bundle; sync Capacitor. Pendentes: navegação visual (Chromium indisponível no ambiente), Android real, latência/memória/áudio, credenciais Firebase no workflow Android e compras de teste. Não foram alterados preços, dados do Firestore, chaves, assinatura release ou produção.
 
 Próximos passos: configurar Firebase do build Android sem expor credenciais; testar em aparelhos; revisar textos legais específicos da plataforma; escolher compras gerenciadas ou integração direta; implementar validação/renovação/restauração no servidor; criar AAB assinado. Felipe decidiu aguardar atualização dos dados empresariais antes do cadastro da Play.
+
+## Validação atualizada em 16/10
+
+assembleDebug compilou no GitHub Actions (execução 38971505468). CI e segurança passaram. A branch foi atualizada com a main para preservar a home brasileira e as fotos. O preparo de CORS do servidor foi separado no PR #268; publicar e verificar antes de validar áudio em aparelho. Sem teste físico ou compra Play.

@@ -7,6 +7,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './styles.css';
 import './redesign.css';
+import './camadas.css';
 import App from './App.tsx';
 // Aba aberta antes de um deploy: os arquivos antigos sumiram. Recarrega uma vez para pegar a versão nova.
 window.addEventListener('vite:preloadError', (e) => {

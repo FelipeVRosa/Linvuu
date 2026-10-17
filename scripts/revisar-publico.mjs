@@ -16,7 +16,8 @@ try {
     const context=await browser.newContext({viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
-    for (const [rota,arquivo] of [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],['/curso/en','curso-en'],['/assinatura','assinatura']]) {
+    const rotas = [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];
+    for (const [rota,arquivo] of rotas) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();
       await page.evaluate(()=>document.fonts.ready);
@@ -24,7 +25,8 @@ try {
       await page.screenshot({path:`revisao-publica/${nome}-${arquivo}.png`,fullPage:true});
       // Captura compacta nos logs: alternativa de leitura quando a cota de artifacts estiver cheia.
       const shot=await page.screenshot({type:'jpeg',quality:55,fullPage:false});
-      console.log(`LINVUU_SCREEN ${nome}-${arquivo} ${shot.toString('base64')}`);
+      if (['curso-en','cursos','sessao-en','gramatica','livro-en','entrar'].includes(arquivo)) console.log(`LINVUU_SCREEN ${nome}-${arquivo} ${shot.toString('base64')}`);
+      console.log(`ROTA_VALIDADA ${nome} ${rota}`);
       const sizes=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth}));
       if (sizes.document>sizes.viewport+1) console.log('ELEMENTOS_FORA',JSON.stringify(await page.locator('body *').evaluateAll(els=>els.filter(el=>el.getBoundingClientRect().right>innerWidth+1).slice(-15).map(el=>({tag:el.tagName,classe:el.className,right:el.getBoundingClientRect().right})))));
       assert.ok(sizes.document<=sizes.viewport+1,`${nome} ${rota}: sem rolagem horizontal (${JSON.stringify(sizes)})`);

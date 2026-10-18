@@ -136,8 +136,8 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
             <div className="aa-linha-acoes">
               <div className="aa-tema" role="group" aria-label={T.tema} data-ativo={tema}>
-                <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>{T.claro}</button>
-                <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 14A8.8 8.8 0 0 1 10 3.5 8.8 8.8 0 1 0 20.5 14Z" /></svg>{T.escuro}</button>
+                <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>{T.claro}</button>
+                <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 14A8.8 8.8 0 0 1 10 3.5 8.8 8.8 0 1 0 20.5 14Z" /></svg>{T.escuro}</button>
               </div>
               <button type="button" className="aa-sons" aria-pressed={sons} onClick={alternarSons}>{T.sonsRotulo}: {sons ? T.sonsLig : T.sonsDesl}</button>
               {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)} →</Link>}

@@ -28,9 +28,11 @@ try {
       if (['curso-en','cursos','sessao-en','gramatica','livro-en','entrar'].includes(arquivo)) console.log(`LINVUU_SCREEN ${nome}-${arquivo} ${shot.toString('base64')}`);
       console.log(`ROTA_VALIDADA ${nome} ${rota}`);
       if (arquivo === 'sessao-en') {
+        if (nome!=='desktop') await page.getByRole('button',{name:'Mostrar trilha',exact:true}).click();
         const bar=page.getByRole('progressbar').first();
         assert.equal(await bar.getAttribute('aria-valuenow'),'0','progresso inicial real é zero');
         assert.equal(await bar.locator('path.traco-linha').count(),0,'zero não desenha progresso');
+        if (nome!=='desktop') await page.getByRole('button',{name:'Recolher trilha',exact:true}).click();
         const guia=page.locator('details.guia-sessao');
         assert.equal(await guia.getAttribute('open'),null,'guia começa recolhido no website');
         await guia.locator('summary').click();

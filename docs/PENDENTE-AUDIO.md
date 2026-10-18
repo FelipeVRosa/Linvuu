@@ -1,5 +1,7 @@
 # PENDENTE: só falta o áudio (es, fr, it, de, ru)
 
+> **Atualização 18/10/2026:** a lista exata do que falta está em `docs/audio-chatgpt/` (915 clipes em 12 lotes, com guia e script de conferência). A tabela abaixo é uma estimativa antiga.
+
 **Lembrete para a próxima sessão.** Os diálogos e as leituras (com tradução e 3 perguntas) de espanhol, francês, italiano, alemão e russo já estão escritos, na mesma linha do inglês. Eles ficam em `content/idiomas/<idioma>/pendentes/` e **não estão no site** porque ainda não têm áudio (publicar assim deixaria botões de som sem som).
 
 | Idioma | Aulas em `pendentes/` | MP3 novos a gerar (estimativa) |

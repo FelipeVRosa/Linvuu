@@ -16,7 +16,7 @@ Lançamento: **5/11/2026**. Foco Brasil. Sem geração de áudio nem mudança de
 
 ## O que falta (lista completa)
 ### Conteúdo e produto
-- Áudio a gravar (contagem do gerador): br 2552 · en 2190 · es 2162 · de 2303 · fr 1665 · it 1814 · ru 1886.
+- Áudio a gravar: **só 915 clipes** (es 261 · fr 280 · it 224 · de 60 · ru 88 · br 2 · en 0), todos do conteúdo novo; o resto já existe. Os números «a gravar» do `aulas.mjs` são o total da lista, não o que falta. Lotes e guia em `docs/audio-chatgpt/`.
 - Ativar os pendentes (diálogo + leitura): es 22/30 aulas, fr 24/34, it 16/35, de 60 leituras, ru 5 diálogos + 47 leituras (aulas sem diálogo/leitura hoje).
 - Exercício «Repita» em todas as aulas (depende de áudio).
 - Depois de ativar, o reforço automático pode elevar a média de exercícios; rodar `npm run complementos` e conferir.

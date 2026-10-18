@@ -14,7 +14,7 @@ import '../site-publico.css';
 export default function Assinatura() {
   const t = useT();
   const s = t.assinatura;
-  usePageTitle(s.titulo);
+  usePageTitle(LOCALE.codigo === 'pt-BR' ? 'Planos e assinatura' : s.titulo, LOCALE.codigo === 'pt-BR' ? 'Conheça a assinatura atual da Linvuu, com acesso aos cursos de idiomas, e os novos planos em preparação. Consulte preços, formas de pagamento e condições.' : undefined);
   const { usuario, carregando } = useAuth();
   const a = useAssinatura();
   const [params] = useSearchParams();

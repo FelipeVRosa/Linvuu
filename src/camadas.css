@@ -116,3 +116,24 @@
  .site-camadas .conta-card h1{font-size:32px}
  .site-camadas .area-aluno .aa-leitura{padding-top:22px}
 }
+
+/* Refinamento da área de estudo: progresso prioritário e preferências discretas. */
+.site-camadas .aa-progresso{padding:16px;border:1px solid var(--sem-borda);border-radius:12px;background:var(--sem-superficie);gap:12px}
+.site-camadas .aa-progresso-resumo{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-camadas .aa-progresso-resumo strong{font-size:22px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--sem-texto)}
+.site-camadas .aa-contagem{font-size:13px;line-height:1.4;max-width:19ch}
+.site-camadas .aa-barra,.site-camadas .aa-barra .traco{height:24px}
+.site-camadas .aa-barra .traco-linha{stroke-width:6}
+.site-camadas .aa-barra .traco-trilha{stroke:var(--sem-texto-2);opacity:.45;stroke-width:1.5;stroke-dasharray:1 7}
+.site-camadas .aa-acalma{font-size:13px;line-height:1.6;margin:0;color:var(--sem-texto-2)}
+.site-camadas .aa-tema{width:208px;max-width:100%;justify-self:start}
+.site-camadas .aa-tema button{min-height:44px;padding:8px 10px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:13px}
+.site-camadas .aa-tema svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.site-camadas .aa-lateral{scrollbar-width:thin;scrollbar-color:var(--sem-texto-2) var(--sem-bg)}
+.site-camadas .area-aluno .voltar{color:var(--sem-texto);background:var(--sem-superficie);border-color:var(--sem-borda);box-shadow:none}
+.site-camadas .area-aluno .voltar:hover{background:var(--sem-superficie-2);transform:none}
+.site-camadas .area-aluno .dia-header .lead{font-size:17px;line-height:1.7;max-width:65ch}
+.site-camadas .aa-dia.atual{box-shadow:inset 3px 0 var(--sem-destaque)}
+html[data-tema-aluno="escuro"]{color-scheme:dark}
+html[data-tema-aluno="claro"]{color-scheme:light}
+@media(prefers-reduced-motion:reduce){.site-camadas .aa-tema::before{transition:none}}

@@ -1,3 +1,6 @@
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { Traco } from '../src/components/Traco.tsx';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
@@ -21,8 +24,19 @@ assert.ok(!html('/en').includes('lessons explained in English'));
 assert.ok(html('/es').includes('Cursos de idiomas para brasileños'));
 assert.ok(html('/es').includes('Explicaciones en portugués'));
 assert.ok(!html('/es').includes('lecciones explicadas en español'));
-assert.ok(html('/assinatura').includes('name="robots" content="noindex"'));
+assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));
+assert.ok(html('/assinatura').includes('<h1>Planos e assinatura</h1>'));
+assert.ok(html('/assinatura').includes('id="oferta-atual"'));
+assert.ok(html('/assinatura').includes('R$ 139'));
+assert.ok(html('/assinatura').includes(PLANOS_AVISO));
+for (const rota of ['/entrar', '/cadastro', '/en/assinatura', '/es/assinatura']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
 assert.ok(!html('/curso/en/dia/9').includes('<h2>Vocabulário</h2>'));
 console.log('SEO público: proposta consistente, idiomas preservados e conteúdo pago fora do HTML.');
+
+const traco = (valor: number) => renderToStaticMarkup(createElement(Traco, {valor, exato:true, trilha:true}));
+assert.ok(!traco(0).includes('<path'), 'zero não desenha progresso fictício');
+assert.ok(traco(1/248).includes('stroke-dasharray:' + (1/248) + ' 1'), 'primeira sessão respeita fração real');
+assert.ok(traco(1).includes('stroke-dasharray:1 1'), 'curso completo desenha todo o traço');
+assert.ok(renderToStaticMarkup(createElement(Traco, {valor:0})).includes('<path'), 'assinatura decorativa mantém comportamento');

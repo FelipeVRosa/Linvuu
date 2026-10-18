@@ -12,6 +12,7 @@ import { gratis } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
 import { OutroIdioma } from '../components/OutroIdioma';
 import { LOCALE, useT } from '../i18n';
+import { Capacitor } from '@capacitor/core';
 import { GUIA_SESSAO } from '../lib/comecar';
 
 const CAMADAS = ['comeceAqui', 'imersao', 'pratica'] as const;
@@ -72,7 +73,7 @@ export default function Dia() {
 
       {aula && (
         <>
-          <header>
+          <header className="dia-header">
             <span className="kicker-pagina">
               {aula.aula ? T.kickerAula(aula.aula.numero, aula.sessao?.sessao.replace('S', '') ?? '', aula.aula.sessoes, aula.sessao?.duracaoMin ?? 30) : T.kickerDia(dia, total, fase?.titulo ?? '', NIVEL_LABEL[aula.nivel])}
             </span>
@@ -92,7 +93,7 @@ export default function Dia() {
           {aula.sessao ? (
             <>
             {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
-              <details className="guia-sessao" open={telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
+              <details className="guia-sessao" open={(import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) && telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
             <Sessao key={dia} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.semTraducao ?? LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
             </>

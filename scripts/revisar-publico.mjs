@@ -27,6 +27,26 @@ try {
       const shot=await page.screenshot({type:'jpeg',quality:55,fullPage:false});
       if (['curso-en','cursos','sessao-en','gramatica','livro-en','entrar'].includes(arquivo)) console.log(`LINVUU_SCREEN ${nome}-${arquivo} ${shot.toString('base64')}`);
       console.log(`ROTA_VALIDADA ${nome} ${rota}`);
+      if (arquivo === 'sessao-en') {
+        const bar=page.getByRole('progressbar').first();
+        assert.equal(await bar.getAttribute('aria-valuenow'),'0','progresso inicial real é zero');
+        assert.equal(await bar.locator('path.traco-linha').count(),0,'zero não desenha progresso');
+        const guia=page.locator('details.guia-sessao');
+        assert.equal(await guia.getAttribute('open'),null,'guia começa recolhido no website');
+        await guia.locator('summary').click();
+        assert.equal(await guia.locator('ol').isVisible(),true,'instruções continuam acessíveis');
+        await guia.locator('summary').click();
+        if (nome==='desktop') {
+          await page.getByRole('button',{name:'Escuro',exact:true}).click();
+          assert.equal(await page.locator('html').getAttribute('data-tema-aluno'),'escuro');
+          const colors=await page.locator('button.voltar').evaluate(el=>({fg:getComputedStyle(el).color,expected:getComputedStyle(el.closest('.area-aluno')).getPropertyValue('--sem-texto').trim()}));
+          assert.equal(colors.fg,'rgb(245, 241, 232)','Voltar usa texto claro no tema escuro');
+          const dark=await page.screenshot({type:'jpeg',quality:65,fullPage:false});
+          console.log(`LINVUU_SCREEN desktop-sessao-escuro ${dark.toString('base64')}`);
+          await page.getByRole('button',{name:'Claro',exact:true}).click();
+          assert.equal(await page.locator('html').getAttribute('data-tema-aluno'),'claro');
+        }
+      }
       const sizes=await page.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth}));
       if (sizes.document>sizes.viewport+1) console.log('ELEMENTOS_FORA',JSON.stringify(await page.locator('body *').evaluateAll(els=>els.filter(el=>el.getBoundingClientRect().right>innerWidth+1).slice(-15).map(el=>({tag:el.tagName,classe:el.className,right:el.getBoundingClientRect().right})))));
       assert.ok(sizes.document<=sizes.viewport+1,`${nome} ${rota}: sem rolagem horizontal (${JSON.stringify(sizes)})`);

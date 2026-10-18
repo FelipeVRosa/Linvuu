@@ -18,7 +18,7 @@ const todos = (c) => LOCALES.map((l) => l.c);
 // Sitemap enxuto (decisão de 15/10/2026): só as páginas com texto próprio e valor de busca. A página central entra nos três idiomas;
 // o resto é em português. Cursos e sessões de aula seguem acessíveis por links e rastreáveis, mas não são enviados: a sessão
 // só entrega título e descrição a quem não roda JavaScript, e 1.848 páginas assim num domínio novo diluem a qualidade do site.
-grupos.push({ p: '/', em: todos() });
+grupos.push({ p: '/', em: todos() }, { p: '/assinatura', em: ['pt-BR'] });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
 grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');

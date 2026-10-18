@@ -25,6 +25,8 @@ jobs:
         run: npm run lint
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
+      - name: Testar corretor e ditados reais
+        run: node --import tsx scripts/testar-correcao-exercicios.ts
       - name: Testar isolamento do progresso
         run: npm run testar:progresso
       - run: npm run build

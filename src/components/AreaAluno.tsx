@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { DIAS, IDIOMAS_GRAMATICA, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
-import { salvarDiaConta, sincronizarConta } from '../lib/progressoConta';
+import { salvarDiaConta, sincronizarConta, estadoProgressoConta, EVENTO_SINCRONIZACAO } from '../lib/progressoConta';
 import { useAuth } from '../lib/AuthContext';
 import { textos } from '../lib/textos';
 import { definirSons, EVENTO_SONS, somClique, somConcluido, sonsLigados } from '../lib/sons';
@@ -54,7 +54,8 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     };
     sync();
     window.addEventListener('linvuu:dias', sync);
-    return () => window.removeEventListener('linvuu:dias', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('linvuu:dias', sync); window.removeEventListener('storage', sync); };
   }, [idioma]);
 
   useEffect(() => {
@@ -63,9 +64,12 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     return () => window.removeEventListener(EVENTO_SONS, sync);
   }, []);
 
-  // Quem entrou na conta traz o progresso de outros aparelhos.
+  // Quem entrou na conta traz o progresso de outros aparelhos e reenvia pendências ao voltar à rede.
   useEffect(() => {
-    if (usuario) sincronizarConta(idioma);
+    const sync = () => { if (usuario) void sincronizarConta(idioma); };
+    sync();
+    window.addEventListener('online', sync);
+    return () => window.removeEventListener('online', sync);
   }, [usuario, idioma]);
 
   const escolherTema = (t: Tema) => {
@@ -174,7 +178,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         )}
       </aside>
 
-      <div className="aa-conteudo" key={`${idioma}-${dia}`}>{children}</div>
+      <div className="aa-conteudo" key={`${idioma}-${dia}`}><EstadoProgresso idioma={idioma} />{children}</div>
     </div>
   );
 }
@@ -197,13 +201,15 @@ export function concluirDia(idioma: string, dia: number, logado: boolean): strin
 export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
+  const { pathname, search, hash } = useLocation();
   const [feito, setFeito] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
   useEffect(() => {
     const sync = () => setFeito(diaConcluido(idioma, dia));
     sync();
     window.addEventListener('linvuu:dias', sync);
-    return () => window.removeEventListener('linvuu:dias', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('linvuu:dias', sync); window.removeEventListener('storage', sync); };
   }, [idioma, dia]);
 
   const clicar = () => {
@@ -218,7 +224,27 @@ export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
         {feito ? `✓ ${T.concluidoDia}` : T.marcarConcluido}
       </button>
       {aviso && <p className="aa-aviso" role="status">{aviso}</p>}
-      {!usuario && <p className="aa-aviso-leve">{T.entrarProgresso}</p>}
+      {!usuario && <p className="aa-aviso-leve">{T.entrarProgresso} <Link to={`/entrar?proximo=${encodeURIComponent(pathname + search + hash)}`}>{T.entrarAgora}</Link></p>}
     </div>
   );
+}
+
+
+function EstadoProgresso({ idioma }: { idioma: string }) {
+  const T = textos(idioma);
+  const { usuario } = useAuth();
+  const [estado, setEstado] = useState(estadoProgressoConta);
+  useEffect(() => {
+    const sync = () => setEstado(estadoProgressoConta());
+    sync();
+    window.addEventListener(EVENTO_SINCRONIZACAO, sync);
+    window.addEventListener('storage', sync);
+    window.addEventListener('linvuu:dias', sync);
+    return () => { window.removeEventListener('storage', sync); window.removeEventListener(EVENTO_SINCRONIZACAO, sync); window.removeEventListener('linvuu:dias', sync); };
+  }, [usuario]);
+  if (!usuario || estado === 'local') return null;
+  return <div className="aa-sync" role="status" aria-live="polite">
+    <span>{estado === 'salvando' ? T.sincronizando : estado === 'salvo' ? T.progressoSalvo : T.progressoPendente}</span>
+    {estado === 'pendente' && <button type="button" className="link" onClick={() => void sincronizarConta(idioma)}>{T.tentarSincronizar}</button>}
+  </div>;
 }

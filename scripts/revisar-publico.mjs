@@ -16,7 +16,7 @@ try {
     const context=await browser.newContext({viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
-    const rotas = [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];
+    const rotas = [['/','home'],['/en','home-en'],['/es','home-es'],['/cursos','cursos'],...['en','es','fr','it','de','ru'].map(id=>[`/curso/${id}`,`curso-${id}`]),['/curso/en/dia/1','sessao-en'],['/curso/fr/dia/1','sessao-fr'],['/curso/ru/dia/1','sessao-ru'],['/curso/es/dia/1','sessao-es'],['/curso/it/dia/1','sessao-it'],['/curso/de/dia/1','sessao-de'],['/gramatica/en','gramatica'],['/livros','livros'],['/livros/en','livro-en'],['/livros/en/capitulo/1','capitulo'],['/sobre','sobre'],['/contato','contato'],['/por-que-linvuu','metodo'],['/privacidade','privacidade'],['/termos','termos'],['/entrar','entrar'],['/cadastro','cadastro'],['/assinatura','assinatura']];
     for (const [rota,arquivo] of rotas) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();
@@ -54,6 +54,46 @@ try {
       assert.ok(sizes.document<=sizes.viewport+1,`${nome} ${rota}: sem rolagem horizontal (${JSON.stringify(sizes)})`);
       assert.equal(await page.getByRole('heading',{level:1}).count(),1,`${rota}: um título principal`);
     }
+    // Jornada de visitante: aula, posição de leitura, progresso, retorno após login e reporte.
+    await page.goto(base+'/curso/en/dia/1');
+    await page.locator('.sessao').waitFor();
+    await page.getByRole('button',{name:'Continuar',exact:true}).click();
+    await page.locator('.bloco h2').filter({hasText:'Diálogo'}).waitFor();
+    await page.reload();
+    await page.locator('.bloco h2').filter({hasText:'Diálogo'}).waitFor();
+    await page.getByRole('button',{name:'Marcar como concluída',exact:true}).click();
+    await page.getByRole('button',{name:'✓ Concluída',exact:true}).waitFor();
+    await page.reload();
+    await page.getByRole('button',{name:'✓ Concluída',exact:true}).waitFor();
+    await page.getByRole('button',{name:'Reportar um problema',exact:true}).click();
+    await page.getByLabel('O que aconteceu?',{exact:true}).fill('Teste de contexto da sessão, sem envio.');
+    const relato = await page.getByRole('link',{name:'Abrir e-mail para enviar relato',exact:true}).getAttribute('href');
+    assert.ok(relato.startsWith('mailto:hello.linvuu@gmail.com?'));
+    assert.ok(decodeURIComponent(relato).includes('/curso/en/dia/1'));
+    assert.ok(decodeURIComponent(relato).includes('Teste de contexto da sessão, sem envio.'));
+    await page.screenshot({path:`revisao-publica/${nome}-reportar.png`,fullPage:false});
+    assert.ok(await page.getByRole('link',{name:'Entrar e continuar nesta sessão',exact:true}).getAttribute('href').then(h=>h.includes('proximo=%2Fcurso%2Fen%2Fdia%2F1')));
+    const proximo = '?proximo=%2Fcurso%2Fen%2Fdia%2F1';
+    assert.equal(await page.locator('.lv-entrar').getAttribute('href'),'/entrar'+proximo);
+    if (nome==='desktop') await page.locator('.lv-entrar').click();
+    else {
+      await page.getByRole('button',{name:'Menu',exact:true}).click();
+      await page.locator('.menu-mobile-conta').getByRole('link',{name:'Entrar',exact:true}).click();
+    }
+    await page.getByRole('heading',{name:'Entre na sua conta',exact:true}).waitFor();
+    assert.ok(page.url().endsWith('/entrar'+proximo));
+    assert.equal(await page.getByRole('link',{name:'Cadastre-se grátis',exact:true}).getAttribute('href'),'/cadastro'+proximo);
+    await page.getByRole('link',{name:'Cadastre-se grátis',exact:true}).click();
+    await page.getByRole('heading',{name:'Crie sua conta grátis',exact:true}).waitFor();
+    assert.equal(await page.locator('.conta-troca').getByRole('link',{name:'Entrar',exact:true}).getAttribute('href'),'/entrar'+proximo);
+    await page.goto(base+'/curso/en');
+    await page.getByRole('link',{name:/Continuar na sessão 2:/}).waitFor();
+    // A sessão paga exige conta; não iniciar checkout nem criar usuário real no CI.
+    await page.goto(base+'/curso/en/dia/9');
+    await page.locator('.paywall').waitFor();
+    assert.equal(await page.locator('.sessao').count(),0,'aula paga não é montada para visitante');
+    assert.equal(await page.getByRole('link',{name:'Já tenho conta',exact:true}).getAttribute('href'),'/entrar?proximo=%2Fcurso%2Fen%2Fdia%2F9');
+    console.log(`JORNADA_VALIDADA ${nome}: posição, conclusão, retomada, reporte, login/cadastro com retorno e acesso pago fechado`);
     await page.goto(base+'/');
     await page.getByRole('heading',{level:1}).waitFor();
     for (const [plano,limite] of [['Start',1],['Basic',2],['Intermediário',3],['Premium',6]]) {

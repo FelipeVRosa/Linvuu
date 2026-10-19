@@ -29,6 +29,8 @@ jobs:
         run: node --import tsx scripts/testar-correcao-exercicios.ts
       - name: Testar isolamento do progresso
         run: npm run testar:progresso
+      - name: Testar reenvio e isolamento do progresso na conta
+        run: node --import tsx scripts/testar-sincronizacao-progresso.ts
       - run: npm run build
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design

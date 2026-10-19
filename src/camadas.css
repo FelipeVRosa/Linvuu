@@ -137,3 +137,12 @@
 html[data-tema-aluno="escuro"]{color-scheme:dark}
 html[data-tema-aluno="claro"]{color-scheme:light}
 @media(prefers-reduced-motion:reduce){.site-camadas .aa-tema::before{transition:none}}
+
+
+/* Ajuda e estado do progresso na jornada do aluno. */
+.aa-sync { padding: var(--s-3) var(--s-4); color: var(--sem-texto); background: var(--sem-superficie); border-bottom: 1px solid var(--sem-borda); display: flex; gap: var(--s-3); flex-wrap: wrap; }
+.aa-reporte { margin-block: var(--s-3); font-size: .875rem; }
+.aa-reporte-corpo { padding: var(--s-4); border: 1px solid var(--sem-borda); border-radius: var(--r-card); background: var(--sem-superficie); }
+.aa-reporte label { display: block; margin-block: var(--s-3) var(--s-2); }
+.aa-reporte textarea { width: 100%; box-sizing: border-box; font: inherit; color: var(--sem-texto); background: var(--sem-superficie); border: 1px solid var(--sem-borda); border-radius: var(--r-card); padding: var(--s-3); resize: vertical; }
+.aa-reporte small { overflow-wrap: anywhere; }

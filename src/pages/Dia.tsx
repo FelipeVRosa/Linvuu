@@ -13,6 +13,7 @@ import NaoEncontrada from './NaoEncontrada';
 import { OutroIdioma } from '../components/OutroIdioma';
 import { LOCALE, useT } from '../i18n';
 import { Capacitor } from '@capacitor/core';
+import { ReportarProblema } from '../components/ReportarProblema';
 import { GUIA_SESSAO } from '../lib/comecar';
 
 const CAMADAS = ['comeceAqui', 'imersao', 'pratica'] as const;
@@ -35,8 +36,10 @@ export default function Dia() {
 
   useEffect(() => {
     if (!valido || bloqueado || decidindo) { setAula(null); return; }
+    let cancelado = false;
     setAula(null); setErro(false);
-    carregarAula(curso!.id, dia).then((a) => { try { sessionStorage.removeItem('linvuu:recarregou-aula'); } catch { /* ok */ } setAula(a); }).catch((e: unknown) => {
+    carregarAula(curso!.id, dia).then((a) => { if (cancelado) return; try { sessionStorage.removeItem('linvuu:recarregou-aula'); } catch { /* ok */ } setAula(a); }).catch((e: unknown) => {
+      if (cancelado) return;
       console.error('Falha ao carregar a aula', curso!.id, dia, e);
       // Arquivo de aula que não existe mais depois de uma publicação nova: uma recarga resolve. Só uma vez, para não entrar em laço.
       const msg = String((e as Error)?.message ?? e);
@@ -48,6 +51,7 @@ export default function Dia() {
       }
       setErro(true);
     });
+    return () => { cancelado = true; };
   }, [valido, curso, dia, bloqueado, decidindo]);
 
   usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined, undefined, []);
@@ -62,7 +66,9 @@ export default function Dia() {
     <div className="aa-leitura">
       <Navegacao pai={`/curso/${curso!.id}`} idioma={curso!.id} trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos, para: curso!.id === 'br' ? '/portugues' : '/cursos' }, { rotulo: curso!.nome, para: `/curso/${curso!.id}` }, { rotulo: T.rotuloDia(dia) }]} />
 
+      {decidindo && <p className="resultado" role="status">{T.carregando}</p>}
       {bloqueado && !decidindo && <Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel} />}
+      <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia} />
       {erro && (
         <div className="vazio">
           <p>{T.semAula}</p>
@@ -95,7 +101,7 @@ export default function Dia() {
             {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
               <details className="guia-sessao" open={(import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) && telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
-            <Sessao key={dia} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.semTraducao ?? LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+            <Sessao key={`${curso!.id}:${dia}`} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.semTraducao ?? LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
             </>
           ) : (
             <div className="camadas">

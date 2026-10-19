@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
 import { googleAtivo, mensagemDeErro } from '../lib/firebase';
@@ -26,6 +26,7 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
   // Só caminhos internos (evita redirecionar para outro site com ?proximo=//site-falso.com).
   const pedido = params.get('proximo') ?? '';
   const destino = /^\/(?![\/\\])/.test(pedido) ? pedido : '/';
+  const emailInput = useRef<HTMLInputElement>(null);
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -44,7 +45,9 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
     executar(() => (cadastro ? criarConta(nome, email, senha) : entrarComEmail(email, senha)));
   };
   const esqueci = () => {
-    if (!email.trim()) { setErro(c.digiteEmail); return; }
+    setAviso('');
+    if (!email.trim()) { setErro(c.digiteEmail); emailInput.current?.focus(); return; }
+    if (!emailInput.current?.reportValidity()) return;
     executar(async () => { await recuperarSenha(email); setAviso(c.linkEnviado); });
   };
   const outra = cadastro ? '/entrar' : '/cadastro';
@@ -68,20 +71,20 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
           </>
         )}
 
-        <form onSubmit={enviar} noValidate={false}>
+        <form onSubmit={enviar} aria-busy={ocupado}>
           {cadastro && (
             <div className="search-field">
               <label htmlFor="c-nome">{c.nome}</label>
-              <input id="c-nome" autoComplete="name" value={nome} onChange={(e) => setNome(e.target.value)} required disabled={!configurado} />
+              <input id="c-nome" autoComplete="name" value={nome} onChange={(e) => setNome(e.target.value)} required maxLength={100} disabled={!configurado || ocupado} />
             </div>
           )}
           <div className="search-field">
             <label htmlFor="c-email">{c.email}</label>
-            <input id="c-email" type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={!configurado} />
+            <input id="c-email" ref={emailInput} type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={!configurado || ocupado} />
           </div>
           <div className="search-field">
             <label htmlFor="c-senha">{c.senha}</label>
-            <input id="c-senha" type="password" autoComplete={cadastro ? 'new-password' : 'current-password'} minLength={6} value={senha} onChange={(e) => setSenha(e.target.value)} required disabled={!configurado} />
+            <input id="c-senha" type="password" autoComplete={cadastro ? 'new-password' : 'current-password'} minLength={6} value={senha} onChange={(e) => setSenha(e.target.value)} required disabled={!configurado || ocupado} />
             {cadastro && <small>{c.minimo}</small>}
           </div>
           {erro && <p className="conta-erro" role="alert">{erro}</p>}

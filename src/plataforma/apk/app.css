@@ -16,3 +16,8 @@ html[data-plataforma="nativo"] .lv-tab{min-height:48px}
 html[data-plataforma="nativo"] .lv-tabbar{background:var(--bg-elevado);border-color:var(--linha-forte)}
 .app-header :focus-visible,.app-ajustes :focus-visible{outline:3px solid var(--foco);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.app-home *{animation:none!important;transition:none!important}}
+
+.app-busca{display:grid;gap:8px;margin:20px 0}.app-busca input{min-height:48px;padding:12px;border:1px solid var(--linha-forte);border-radius:12px;background:var(--bg-elevado);color:var(--fg-1);font:inherit;min-width:0}
+.app-grade{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.app-grade section{min-width:0}.app-grade .lv-card{height:auto;border:1px solid var(--linha);border-radius:18px;background:var(--bg-elevado)}
+.app-preparando{padding:20px;border:1px solid var(--linha);border-radius:16px;margin-top:24px;color:var(--fg-2)}

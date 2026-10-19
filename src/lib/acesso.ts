@@ -25,6 +25,7 @@ export function useAssinatura(): Assinatura {
     if (auth) return;
     if (!usuario) { setEstado({ carregando: false, ativa: false, indisponivel: false, cancelaEm: null, via: null, ate: null }); return; }
     let vivo = true;
+    setEstado({ carregando: true, ativa: false, indisponivel: false, cancelaEm: null, via: null, ate: null });
     chamar('status', 'GET')
       .then((j) => vivo && setEstado({ carregando: false, ativa: !!j.ativa, indisponivel: false, cancelaEm: j.cancelaEm ?? null, via: j.via ?? null, ate: j.ate ?? null }))
       .catch(() => vivo && setEstado({ carregando: false, ativa: false, indisponivel: true, cancelaEm: null, via: null, ate: null }));

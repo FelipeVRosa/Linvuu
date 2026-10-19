@@ -3,7 +3,7 @@ import { APK } from './plataforma';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '@plataforma/Home';
-import Cursos from './pages/Cursos';
+import Cursos from '@plataforma/Cursos';
 const Curso = lazy(() => import('./pages/Curso'));
 const Portugues = lazy(() => import('./pages/Portugues'));
 const Dia = lazy(() => import('./pages/Dia'));

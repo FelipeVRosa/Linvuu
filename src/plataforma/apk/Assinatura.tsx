@@ -13,6 +13,7 @@ export default function Assinatura() {
     <h1 className="pagina-h1">{t.nav.assinatura}</h1>
     {!usuario ? <Link className="btn btn-primary" to="/entrar?proximo=/assinatura">{t.nav.entrar}</Link>
       : <p role="status">{acesso.carregando ? t.geral.carregando : acesso.indisponivel ? t.assinatura.indisponivel : acesso.ativa ? t.assinatura.ativa : a.compras}</p>}
+    {usuario && acesso.indisponivel && <button type="button" className="btn btn-primary" disabled={acesso.carregando} onClick={acesso.recarregar}>{a.tentarNovamente}</button>}
     <p>{a.teste}</p>
     <Link className="btn btn-ghost" to="/cursos">{t.nav.cursos}</Link>
     <p><Link to="/privacidade">{t.rodape.privacidade}</Link> · <Link to="/termos">{t.assinatura.termos}</Link></p>

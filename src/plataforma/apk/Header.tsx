@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { LOCALE, LOCALES, lembrarLocale, urlEm, useT } from '../../i18n';
 import type { CodigoLocale } from '../../i18n/locales';
@@ -13,6 +13,13 @@ export function Header() {
   const { pathname } = useLocation();
   const { usuario, sair } = useAuth();
   const [aberto, setAberto] = useState(false);
+  const botaoAjustes = useRef<HTMLButtonElement>(null);
+  const fecharPainel = useCallback(() => { setAberto(false); botaoAjustes.current?.focus(); }, []);
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape' && aberto) fecharPainel(); };
+    document.addEventListener('keydown', esc);
+    return () => document.removeEventListener('keydown', esc);
+  }, [aberto, fecharPainel]);
   const [online, setOnline] = useState(() => navigator.onLine);
   const [saindo, setSaindo] = useState(false);
   const [erro, setErro] = useState(false);
@@ -34,11 +41,11 @@ export function Header() {
     finally { setSaindo(false); }
   };
   return <>
-    <CicloAndroid />
+    <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
     <header className="app-header">
       {pathname !== '/' ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
       <Link to="/" aria-label={t.geral.paginaInicial}><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
-      <button type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
+      <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
     {aberto && <section id="app-ajustes" className="app-ajustes" aria-label={a.ajustes}>
       <label>{t.barra.idioma}<select value={LOCALE.codigo} onChange={e => idioma(e.target.value as CodigoLocale)}>{LOCALES.map(l => <option key={l.codigo} value={l.codigo}>{l.nome}</option>)}</select></label>

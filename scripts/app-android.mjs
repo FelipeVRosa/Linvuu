@@ -9,3 +9,4 @@ for (const cmd of [['npm', ['run', 'build']], ['npx', ['cap', 'sync', 'android']
   if (r.status !== 0) process.exit(r.status ?? 1);
 }
 console.log(`\nApp pronto para o Android. API: ${API}`);
+

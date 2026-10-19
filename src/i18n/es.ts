@@ -99,6 +99,7 @@ export const es: Dicionario = {
     aula: { planejada: 'Planificada', 'em-producao': 'En producción', publicada: 'Publicada' },
   },
   player: {
+    sincronizando: 'Guardando tu progreso en la cuenta…', progressoSalvo: 'Progreso sincronizado con tu cuenta.', progressoPendente: 'El progreso está guardado en este navegador. Aún no pudimos sincronizarlo con tu cuenta.', tentarSincronizar: 'Intentar sincronizar', entrarAgora: 'Entrar y continuar esta sesión', reportar: 'Informar de un problema', reportarContexto: 'Página de la sesión', reportarAjuda: 'Cuéntanos qué pasó. Se incluirá la página de esta sesión para ayudarnos a revisarlo.', reportarDescricao: '¿Qué pasó?', reportarEmail: 'Abrir correo para enviar el informe', reportarAviso: 'El envío se realiza desde tu aplicación de correo. No incluyas contraseñas ni datos de pago. Si no se abre, escribe a',
     olaNome: (nome: string) => `Hola, ${nome}`, ola: 'Hola', acalma: (d: number, t: number) => `Estás en la sesión ${d} de ${t}. No tienes que terminarlo todo hoy: una sesión ya cuenta.`, msgDia: (n: number, t: number) => `Sesión completada. Ya llevas ${n} de ${t}.`, msgAula: 'Lección completada. Has cerrado un bloque entero.', tema: 'Tema', claro: 'Claro', escuro: 'Oscuro', gramaticaDo: (nome: string) => `Gramática: ${nome.toLowerCase()}`, entrarProgresso: 'Entra en tu cuenta para guardar el progreso en cualquier dispositivo.',
     marcarConcluido: 'Marcar como completada', concluidoDia: 'Completada', recolher: 'Ocultar el recorrido', expandir: 'Mostrar el recorrido', buscarDia: 'Buscar sesión', trilhaAluno: 'Recorrido', diasConcluidos: (a: number, b: number) => `${a} de ${b} sesiones completadas`, semDias: 'No se encontró ninguna sesión.', aula: (n: number) => `Lección ${n}`,
     ouvir: 'Escuchar', ainda: 'escucha y repite', aindaDica: (l: string) => `Esta palabra tiene letras que todavía vas a aprender (${l}). Por ahora, escucha y repite.`, resposta: 'Respuesta:', refazer: 'Rehacer los ejercicios', tocarOuvir: 'Toca para escuchar',
@@ -211,3 +212,4 @@ export const es: Dicionario = {
   linguas: { pt: 'portugués', en: 'inglés', es: 'español' },
   livro: { indisponivelIdioma: 'Este libro está escrito en portugués, para hablantes de portugués.' },
 };
+

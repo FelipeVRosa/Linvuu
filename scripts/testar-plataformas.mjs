@@ -14,3 +14,4 @@ assert.ok(!/R\$\s*(139|417|291|999|79|125)/.test(js), 'APK não contém preços 
 assert.ok(js.includes('https://linvuu.com.br/audio'), 'APK usa áudio remoto');
 const bytes = (dir) => fs.readdirSync(dir, { withFileTypes: true }).reduce((n, f) => n + (f.isDirectory() ? bytes(path.join(dir, f.name)) : fs.statSync(path.join(dir, f.name)).size), 0);
 console.log(`ok: plataformas separadas; website ${(bytes('dist') / 1024 ** 2).toFixed(1)} MiB, assets APK ${(bytes('dist-apk') / 1024 ** 2).toFixed(1)} MiB (não é tamanho do APK compilado)`);
+

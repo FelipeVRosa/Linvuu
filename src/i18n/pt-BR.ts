@@ -98,6 +98,7 @@ export const ptBR = {
     aula: { planejada: 'Planejada', 'em-producao': 'Em produção', publicada: 'Publicada' } as Record<string, string>,
   },
   player: {
+    sincronizando: 'Salvando seu progresso na conta…', progressoSalvo: 'Progresso sincronizado com sua conta.', progressoPendente: 'O progresso ficou neste navegador. Ainda não conseguimos sincronizar com sua conta.', tentarSincronizar: 'Tentar sincronizar', entrarAgora: 'Entrar e continuar nesta sessão', reportar: 'Reportar um problema', reportarContexto: 'Página da sessão', reportarAjuda: 'Conte o que aconteceu. A página desta sessão será incluída para ajudar na análise.', reportarDescricao: 'O que aconteceu?', reportarEmail: 'Abrir e-mail para enviar relato', reportarAviso: 'O envio será feito pelo seu aplicativo de e-mail. Não inclua senhas ou dados de pagamento. Se ele não abrir, escreva para',
     olaNome: (nome: string) => `Olá, ${nome}`, ola: 'Olá', acalma: (d: number, t: number) => `Você está na sessão ${d} de ${t}. Não precisa terminar tudo hoje: uma sessão já conta.`, msgDia: (n: number, t: number) => `Sessão concluída. Você já tem ${n} de ${t}.`, msgAula: 'Aula concluída. Você fechou um bloco inteiro.', tema: 'Tema', claro: 'Claro', escuro: 'Escuro', gramaticaDo: (nome: string) => `Gramática: ${nome.toLowerCase()}`, entrarProgresso: 'Entre na sua conta para salvar o progresso em qualquer aparelho.',
     marcarConcluido: 'Marcar como concluída', concluidoDia: 'Concluída', recolher: 'Recolher trilha', expandir: 'Mostrar trilha', buscarDia: 'Buscar sessão', trilhaAluno: 'Trilha', diasConcluidos: (a: number, b: number) => `${a} de ${b} sessões concluídas`, semDias: 'Nenhuma sessão encontrada.', aula: (n: number) => `Aula ${n}`,
     ouvir: 'Ouvir', ainda: 'ouça e repita', aindaDica: (l: string) => `Tem letras que você ainda vai aprender (${l}). Por enquanto, ouça e repita.`, resposta: 'Resposta:', refazer: 'Refazer os exercícios', tocarOuvir: 'Toque para ouvir',
@@ -209,3 +210,4 @@ export const ptBR = {
   livro: { indisponivelIdioma: '' },
 };
 export type Dicionario = typeof ptBR;
+

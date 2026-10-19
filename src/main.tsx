@@ -2,10 +2,12 @@ import '@fontsource-variable/newsreader/opsz.css';
 import '@fontsource-variable/source-sans-3';
 import '@fontsource-variable/literata';
 import './tokens.css';
+import './site-publico.css';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './styles.css';
 import './redesign.css';
+import './camadas.css';
 import App from './App.tsx';
 // Aba aberta antes de um deploy: os arquivos antigos sumiram. Recarrega uma vez para pegar a versão nova.
 window.addEventListener('vite:preloadError', (e) => {
@@ -17,7 +19,7 @@ window.addEventListener('vite:preloadError', (e) => {
   window.location.reload();
 });
 import { useAuth, AuthProvider } from './lib/AuthContext';
-import { LOCALE, localeLembrado, urlEm } from './i18n';
+import { LOCALE, localeLembrado, urlEm, useT } from './i18n';
 import { carregarTraducoes } from './lib/content';
 
 // Quem já escolheu outro idioma na barra do topo volta a ele ao abrir um endereço sem prefixo (ex.: um link compartilhado).
@@ -27,7 +29,8 @@ document.documentElement.lang = LOCALE.codigo;
 
 function AplicacaoDaConta() {
   const { usuario, carregando } = useAuth();
-  if (carregando) return null;
+  const t = useT();
+  if (carregando) return <div className="site-carregando" role="status"><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="156" height="50" /><p>{t.geral.carregando}</p></div>;
   return <App key={usuario?.uid ?? 'visitante'} />;
 }
 

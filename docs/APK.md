@@ -17,3 +17,15 @@ Próximos passos: configurar Firebase do build Android sem expor credenciais; te
 ## Validação atualizada em 16/10
 
 assembleDebug compilou no GitHub Actions (execução 38971505468). CI e segurança passaram. A branch foi atualizada com a main para preservar a home brasileira e as fotos. O preparo de CORS do servidor foi separado no PR #268; publicar e verificar antes de validar áudio em aparelho. Sem teste físico ou compra Play.
+
+
+
+## Atualização 19/10/2026 — integração e experiência móvel
+- Incorporado main 1b7687b, preservando todas as revisões de conteúdo e o cabeçalho web atual. Conflitos de API, cabeçalho e CI reconciliados.
+- Cabeçalho do APK separado, ajustes, idioma da interface PT/EN/ES, proteção contra troca acidental no meio de uma sessão, aviso de falta de conexão e saída de conta com erro recuperável.
+- Início com retomada e progresso real, cobertura parcial explícita e vitrine limitada a cursos que declaram alguma explicação no idioma atual. Tradução dos materiais não é presumida.
+- Botão físico voltar integrado pelo plugin oficial @capacitor/app; na raiz minimiza. Bibliotecas nativas sincronizadas pelo cap sync. Ainda exige teste em aparelho.
+- Rotas de marketing redirecionam ao início no APK, sem remover as páginas da web; não é habilitado checkout externo.
+- CI preserva o teste recente de sincronização de progresso, verifica ambos os builds e compila APK/AAB debug. Isso não produz um AAB assinado para publicação.
+- A interface e o idioma das explicações ainda seguem o acoplamento legado no carregador. Separar essas preferências integralmente continua pendente; não simular uma escolha independente que os dados não atendem.
+- Offline de aulas, download, reconhecimento de fala, notificações, compras, login nativo e revisão visual/dispositivo ainda não validados por esta atualização.

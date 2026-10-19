@@ -12,3 +12,4 @@ export function Paywall({ curso, indisponivel }: { curso: string; indisponivel?:
     <Link className="btn btn-primary" to="/assinatura">{t.nav.assinatura}</Link>
   </section>;
 }
+

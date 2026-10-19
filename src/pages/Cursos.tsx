@@ -4,7 +4,8 @@ import { CURSOS_ATIVOS as CURSOS } from '../lib/content';
 import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
-import { useT } from '../i18n';
+import { LOCALE, useT } from '../i18n';
+import '../site-publico.css';
 
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
 
@@ -26,9 +27,9 @@ export default function Cursos() {
   };
 
   return (
-    <div className="pagina">
+    <div className={LOCALE.codigo === 'pt-BR' ? 'pagina site-publico site-catalogo' : 'pagina'}>
       <Navegacao pai="/" trilha={[{ rotulo: t.geral.inicio, para: '/' }, { rotulo: t.geral.cursos }]} />
-      <h1 className="pagina-h1">{t.cursosPagina.titulo}</h1>
+      {LOCALE.codigo === 'pt-BR' ? <header className="site-intro"><div><p className="site-eyebrow">UM NOVO IDIOMA. UM NOVO CAMINHO.</p><h1 className="pagina-h1">Seu próximo “olá”<br />começa aqui.</h1><p className="site-lead">Escolha uma língua que combina com seus planos. As explicações são em português; a próxima descoberta é sua.</p></div><aside className="site-aside"><strong>Conheça antes de decidir.</strong><p>Experimente as duas primeiras aulas de cada curso, sem cartão.</p><Link to="/#planos">Comparar os novos planos →</Link></aside></header> : <h1 className="pagina-h1">{t.cursosPagina.titulo}</h1>}
       <div className="filtros">
         <div className="search-field filtro-busca">
           <label htmlFor="q">{t.cursosPagina.buscar}</label>

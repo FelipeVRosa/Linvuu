@@ -2,8 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA } from '../lib/content';
 import { useAuth } from '../lib/AuthContext';
-import { APK } from '../plataforma';
-import { useT } from '../i18n';
+import { LOCALE, useT } from '../i18n';
+import { homeText } from '../i18n/home';
+import '../site-publico.css';
 
 // Gramática: o primeiro curso da vitrine que tem a aba de gramática.
 const GRAMATICA = `/gramatica/${CURSOS_ATIVOS.find((c) => IDIOMAS_GRAMATICA.includes(c.id))?.id ?? 'de'}`;
@@ -28,6 +29,7 @@ export function Header() {
     return () => { document.removeEventListener('mousedown', fora); document.removeEventListener('keydown', esc); };
   }, []);
 
+  const proximo = /^\/(?:curso|gramatica|livros)(?:\/|$)/.test(loc.pathname) ? `?proximo=${encodeURIComponent(loc.pathname + loc.search + loc.hash)}` : '';
   const deslogar = async () => { await sair(); setConta(false); setMenu(false); nav('/'); };
 
   return (
@@ -41,7 +43,7 @@ export function Header() {
           <Link to="/cursos">{t.nav.cursos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/assinatura">{APK ? t.nav.assinatura : t.nav.preco}</Link>
+          <Link to="/#planos">{homeText('Planos')}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
         </nav>
 
@@ -62,8 +64,8 @@ export function Header() {
             </>
           ) : (
             <>
-              <Link to="/entrar" className="lv-entrar">{t.nav.entrar}</Link>
-              <Link to="/cadastro" className="btn btn-primary lv-head-cta">{t.nav.comecar}</Link>
+              <Link to={`/entrar${proximo}`} className="lv-entrar">{t.nav.entrar}</Link>
+              <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{t.nav.comecar}</Link>
             </>
           )}
         </div>
@@ -81,12 +83,12 @@ export function Header() {
           <Link to="/cursos">{t.nav.todos}</Link>
           <Link to={GRAMATICA}>{t.nav.gramatica}</Link>
           <Link to="/#metodo">{t.nav.metodo}</Link>
-          <Link to="/assinatura">{APK ? t.nav.assinatura : t.nav.precoAssinatura}</Link>
+          <Link to="/#planos">{homeText('Planos')}</Link>
           <Link to="/#faq">{t.nav.duvidas}</Link>
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
-              <Link to="/entrar" className="btn btn-ghost">{t.nav.entrar}</Link>
-              <Link to="/cadastro" className="btn btn-primary">{t.nav.comecar}</Link>
+              <Link to={`/entrar${proximo}`} className="btn btn-ghost">{t.nav.entrar}</Link>
+              <Link to={`/cadastro${proximo}`} className="btn btn-primary">{t.nav.comecar}</Link>
             </div>
           )}
         </div>

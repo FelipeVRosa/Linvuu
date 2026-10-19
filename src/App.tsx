@@ -1,7 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { APK } from './plataforma';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { Header } from './components/Header';
 
 import Home from '@plataforma/Home';
 import Cursos from './pages/Cursos';
@@ -19,7 +18,7 @@ const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default
 const Sobre = lazy(() => import('./pages/Sobre'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
-import { BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
+import { Header, BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
 
@@ -27,9 +26,13 @@ function RolarAoTopo() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (hash) {
-      // espera a página montar antes de procurar a âncora
-      const id = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView(), 0);
-      return () => clearTimeout(id);
+      // Rotas lazy podem montar depois do efeito: aguarda o destino real, sem atrasar a navegação.
+      const rolar = () => { const alvo = document.getElementById(hash.slice(1)); if (!alvo) return false; alvo.scrollIntoView(); return true; };
+      if (rolar()) return;
+      const observer = new MutationObserver(() => { if (rolar()) observer.disconnect(); });
+      observer.observe(document.getElementById('conteudo') ?? document.body, { childList: true, subtree: true });
+      const limite = setTimeout(() => observer.disconnect(), 5000);
+      return () => { clearTimeout(limite); observer.disconnect(); };
     }
     window.scrollTo(0, 0);
   }, [pathname, hash]);
@@ -51,12 +54,12 @@ export default function App() {
       <RolarAoTopo />
       {!NATIVO && <BarraTopo semNovidades={AREA_ALUNO.test(pathname)} />}
       <Header />
-      <main id="conteudo" tabIndex={-1}>
+      <main id="conteudo" className={!NATIVO ? 'site-camadas' : undefined} tabIndex={-1}>
         <Suspense fallback={<p className="resultado pagina carga" role="status">{t.geral.carregando}</p>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
-          <Route path="/portugues" element={<Portugues />} />
+          <Route path="/portugues" element={NATIVO ? <Navigate to="/" replace /> : <Portugues />} />
           <Route path="/brazilian-portuguese" element={<Navigate to="/portugues" replace />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
@@ -68,9 +71,9 @@ export default function App() {
           <Route path="/livros" element={<LivrosIndice />} />
           <Route path="/livros/:id" element={<LivroPagina />} />
           <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/por-que-linvuu" element={<PorQue />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/sobre" element={NATIVO ? <Navigate to="/" replace /> : <Sobre />} />
+          <Route path="/por-que-linvuu" element={NATIVO ? <Navigate to="/" replace /> : <PorQue />} />
+          <Route path="/contato" element={NATIVO ? <Navigate to="/" replace /> : <Contato />} />
           <Route path="/assinatura" element={<Assinatura />} />
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />
@@ -83,3 +86,4 @@ export default function App() {
     </>
   );
 }
+

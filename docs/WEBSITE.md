@@ -7,3 +7,4 @@ Escopo aprovado em 16/10/2026: somente idiomas, web e Android. Render gratuito h
 Não duplicar aulas, exercícios nem progresso. `@plataforma/*` é resolvido pelo Vite conforme `VITE_ALVO=website|apk`. Alvo desconhecido faz o build falhar. A seleção do alvo não é autorização de acesso: o servidor continua validando tokens e assinaturas.
 
 Validar: tipos dos dois alvos, builds, `testar:plataformas`, segurança, medição, progresso e design. Os checks não substituem teste no navegador, conta real e cobrança de teste.
+

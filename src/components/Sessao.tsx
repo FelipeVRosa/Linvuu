@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bloco, Exercicio, Palavra, SessaoAula } from '../lib/aulas';
+import { corrigirResposta, resumirExercicios, normalizarResposta as norm } from '../lib/correcaoExercicios';
 import { consentimento, definirConsentimento, registrar } from '../lib/medicao';
 import { falar, falarLista, falarTrechos, parar, temVoz } from '../lib/audio';
 import { trechos } from '../lib/narracao';
@@ -14,7 +15,7 @@ import colunasJson from '../../content/colunas.json';
 
 const COLUNAS = colunasJson as Record<string, Record<string, string>>;
 
-const norm = (s: string) => s.toLowerCase().replace(/ё/g, 'е').replace(/[.,!?«»—…:;"'()]/g, '').replace(/\s+/g, ' ').trim();
+
 const ROTULO_COLUNA: Record<string, string> = { termina_em: 'Termina em', forca_na: 'Força na', masc_sg: 'Masculino singular', fem_sg: 'Feminino singular', masc_pl: 'Masculino plural', fem_pl: 'Feminino plural', yo: 'yo', el_ella_usted: 'él / ella / usted', nosotros: 'nosotros', vosotros: 'vosotros', ellos_ustedes: 'ellos / ellas / ustedes', usa_se: 'Usa-se', infinito: 'Infinito', italiano: 'Em italiano', traducao: 'Tradução', quando: 'Quando', equivale: 'Em português', construcao: 'Construção', observacao: 'Observação', singolare: 'Singular', grafia: 'Grafia', interrogativo: 'Interrogativo', lui_lei: 'lui / lei', cor: 'Cor', se_clausola: 'Cláusula com «se»', consequencia: 'Consequência', precisa: 'Você precisa', use: 'Use', parece: 'Parece', significa: 'Significa', masculino_plural: 'Masculino plural', feminino_plural: 'Feminino plural', positivo: 'Positivo', prep_cui: 'Preposição + cui', ordinal: 'Ordinal', termo: 'Termo', contexto: 'Contexto', recurso: 'Recurso', festa: 'Festa', estrategia: 'Estratégia', passato_prossimo: 'Passato prossimo', com_pronome: 'Com pronome', forca: 'Força', duas_frases: 'Duas frases', com_che: 'Com «che»', suposicao: 'Suposição', original: 'Original', relato: 'Relato', attiva: 'Voz ativa', resposta_igual: 'Resposta (também)', resposta_oposta: 'Resposta (nem)', momento: 'Momento', principal: 'Principal', simultaneo: 'Ao mesmo tempo', anterior: 'Antes', lei: 'Lei (cortesia)', tu: 'tu', parlare: 'parlare', vendere: 'vendere', dormire: 'dormire', finire: 'finire', partire: 'partire', prendere: 'prendere', credere: 'credere', scrivere: 'scrivere', alzarsi: 'alzarsi', divertirsi: 'divertirsi', pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', auxiliar: 'Auxiliar', participio: 'Particípio passado', padrao: 'Padrão', modal: 'Modal', sentido: 'Sentido', wo: 'Wo? (onde: dativo)', wohin: 'Wohin? (para onde: acusativo)', zu: 'zu (até)', frase: 'Frase', alemao: 'Em alemão', informal: 'Informal', oficial: 'Oficial (24 h)', artigo: 'Artigo', definido: 'Definido', indefinido: 'Indefinido', negativo: 'Negativo', pos1: '1ª posição', pos2: '2ª posição (verbo)', resto: 'Resto', masc_neutro: 'Masculino e neutro', fem_plural: 'Feminino e plural', combinacao: 'Combinação', som: 'Som', resposta: 'Resposta', haben: 'haben', sein: 'sein', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino', como: 'Como', erro: 'Erro comum', formal: 'Formal', afirmativa: 'Afirmativa', negativa: 'Negativa', estrutura: 'Estrutura', expressao: 'Expressão', possuidor: 'Possuidor', escrita: 'Escrita', conta: 'Conta', fala: 'Como se diz', partitivo: 'Partitivo', quantidade: 'Quantidade', meio: 'Meio', tonico: 'Pronome tônico', objeto: 'Objeto', pessoa: 'Pessoa', vouloir: 'vouloir (querer)', pouvoir: 'pouvoir (poder)', devoir: 'devoir (dever)', savoir: 'savoir (saber)', nota: 'Nota', motivo: 'Motivo', formula: 'Fórmula', base: 'Base', parler: 'parler', finir: 'finir', etre: 'être', aller: 'aller', imparfait: 'Imparfait', pc: 'Passé composé', tempo: 'Tempo', parte: 'Parte', presente: 'Presente', com_pronomes: 'Com pronomes', fato: 'Fato', definicao: 'Definição', quem: 'Quem fala', pedido: 'Pedido', problema: 'Problema', operacao: 'Operação', fase: 'Fase', etapa: 'Etapa', negacao: 'Negação', registro: 'Tipo', conector: 'Conector', acao: 'Ação', prep: 'Preposição', costume: 'Costume', gatilho: 'Gatilho', modo: 'Modo', conjuncao: 'Conjunção', secao: 'Seção', valor: 'Valor', gerondio: 'Gérondif', ativa: 'Voz ativa', passiva: 'Voz passiva', direto: 'Discurso direto', indireto: 'Discurso indireto', connaitre: 'connaître', voir: 'voir', croire: 'croire', mettre: 'mettre' };
 const humanizar = (c: string) => c.charAt(0).toUpperCase() + c.slice(1).replace(/_/g, ' ');
 /** Cabeçalho de coluna no idioma do site; chaves que são palavras do idioma estudado (ex.: «haben», «parlare») aparecem como estão. */
@@ -80,7 +81,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const [ordem, setOrdem] = useState<number[]>([]);
   const [texto, setTexto] = useState('');
   const [res, setRes] = useState<'ok' | 'erro' | 'livre' | null>(null);
-  const [acertos, setAcertos] = useState<Record<string, boolean>>({});
+  const [acertos, setAcertos] = useState<Record<number, boolean>>({});
   const [fim, setFim] = useState(false);
   const navTeclado = useRef(false); // true depois de um Tab: o Enter passa a agir no botão em foco
   const errosSeguidos = useRef(0); // erros em sequência: o som de erro fica mais baixo a cada um, sem virar alarme
@@ -88,12 +89,9 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   const corrigiveis = itens.filter((x) => x.tipo !== 'producao' && x.tipo !== 'repeat');
 
   const verificar = () => {
-    let ok = false;
     if (ex.tipo === 'producao' || ex.tipo === 'repeat') { setRes('livre'); return; }
-    if (ex.tipo === 'sentence-ordering') ok = norm(ordem.map((k) => ex.opcoes![k]).join(' ')) === norm(ex.gabarito ?? '');
-    else if (ex.opcoes && ex.gabarito !== undefined) ok = escolha === ex.gabarito;
-    else ok = norm(texto) === norm(ex.respostaEsperada ?? '');
-    setAcertos((a) => ({ ...a, [ex.id]: ok }));
+    const ok = corrigirResposta(ex, { escolha, ordem, texto });
+    setAcertos((a) => ({ ...a, [i]: ok }));
     registrar({ t: 'ex', idioma, ex: ex.id, tp: ex.tipo, ok: ok ? 1 : 0 });
     setRes(ok ? 'ok' : 'erro');
     errosSeguidos.current = ok ? 0 : errosSeguidos.current + 1;
@@ -104,7 +102,8 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
     if (i + 1 >= itens.length) {
       const aula = Number(/^[a-z]{2,3}-(\d{3})-/.exec(itens[0]?.id ?? '')?.[1] ?? 0);
       const final = { ...acertos };
-      registrar({ t: 'fim', idioma, aula, ac: corrigiveis.filter((x) => final[x.id]).length, tot: corrigiveis.length });
+      const resumo = resumirExercicios(itens, final);
+      registrar({ t: 'fim', idioma, aula, ac: resumo.acertos, tot: resumo.total });
       setFim(true);
     } else setI(i + 1);
   };
@@ -141,12 +140,11 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
   });
 
   if (fim) {
-    const certos = corrigiveis.filter((x) => acertos[x.id]).length;
-    const erros = corrigiveis.filter((x) => acertos[x.id] === false);
+    const { acertos: certos, erros } = resumirExercicios(itens, acertos);
     return (
       <div className="ex-resumo">
         <h3>{T.acertou(certos, corrigiveis.length)}</h3>
-        {erros.length > 0 && <ul>{erros.map((x) => <li key={x.id}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
+        {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
       </div>
     );

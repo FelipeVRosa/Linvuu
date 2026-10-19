@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { DIAS, IDIOMAS_GRAMATICA, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
 import { diaConcluido, diasConcluidos, marcarDia } from '../lib/progresso';
-import { salvarDiaConta, sincronizarConta } from '../lib/progressoConta';
+import { salvarDiaConta, sincronizarConta, estadoProgressoConta, EVENTO_SINCRONIZACAO } from '../lib/progressoConta';
 import { useAuth } from '../lib/AuthContext';
 import { textos } from '../lib/textos';
 import { definirSons, EVENTO_SONS, somClique, somConcluido, sonsLigados } from '../lib/sons';
 import { Traco } from './Traco';
+import { LOCALE } from '../i18n';
 
 export type Tema = 'claro' | 'escuro';
 /** Na trilha, o título da aula já aparece no grupo: a sessão não precisa repeti-lo. */
@@ -53,7 +54,8 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     };
     sync();
     window.addEventListener('linvuu:dias', sync);
-    return () => window.removeEventListener('linvuu:dias', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('linvuu:dias', sync); window.removeEventListener('storage', sync); };
   }, [idioma]);
 
   useEffect(() => {
@@ -62,9 +64,12 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     return () => window.removeEventListener(EVENTO_SONS, sync);
   }, []);
 
-  // Quem entrou na conta traz o progresso de outros aparelhos.
+  // Quem entrou na conta traz o progresso de outros aparelhos e reenvia pendências ao voltar à rede.
   useEffect(() => {
-    if (usuario) sincronizarConta(idioma);
+    const sync = () => { if (usuario) void sincronizarConta(idioma); };
+    sync();
+    window.addEventListener('online', sync);
+    return () => window.removeEventListener('online', sync);
   }, [usuario, idioma]);
 
   const escolherTema = (t: Tema) => {
@@ -83,7 +88,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
 
   const grupoAtual = grupos.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
   const estaAberto = (aula: number) => abertos[aula] ?? aula === grupoAtual?.aula;
-  const pct = total ? Math.round((concluidos.length / total) * 100) : 0;
+  const pct = total ? Math.round((concluidos.length / total) * 1000) / 10 : 0;
   const termo = busca.trim().toLowerCase();
   const todosOsDias = Array.from({ length: total }, (_, k) => k + 1);
   const encontrados = termo ? todosOsDias.filter((n) => diaDoCurso(idioma, DIAS[n - 1] ?? { dia: n, fase: 0, nivel: 'a2' as const, titulo: '', objetivo: '' }).titulo.toLowerCase().includes(termo)) : [];
@@ -126,17 +131,17 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         {!recolhida && (
           <div className="aa-corpo">
             <div className="aa-progresso">
+              <div className="aa-progresso-resumo"><span className="aa-contagem">{T.diasConcluidos(concluidos.length, total)}</span><strong>{pct.toLocaleString(LOCALE.codigo)}%</strong></div>
               <div className="aa-barra" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={concluidos.length} aria-label={T.diasConcluidos(concluidos.length, total)}>
-                <Traco key={desenho} valor={pct / 100} altura={14} semente={7} trilha animar={desenho > 0} />
+                <Traco key={desenho} valor={total ? concluidos.length / total : 0} exato altura={24} semente={7} trilha animar={desenho > 0} />
               </div>
-              <span className="aa-contagem">{T.diasConcluidos(concluidos.length, total)}</span>
               <p className="aa-acalma">{T.acalma(dia, total)}</p>
             </div>
 
             <div className="aa-linha-acoes">
               <div className="aa-tema" role="group" aria-label={T.tema} data-ativo={tema}>
-                <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}>{T.claro}</button>
-                <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}>{T.escuro}</button>
+                <button type="button" aria-pressed={tema === 'claro'} onClick={() => escolherTema('claro')}><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>{T.claro}</button>
+                <button type="button" aria-pressed={tema === 'escuro'} onClick={() => escolherTema('escuro')}><svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 14A8.8 8.8 0 0 1 10 3.5 8.8 8.8 0 1 0 20.5 14Z" /></svg>{T.escuro}</button>
               </div>
               <button type="button" className="aa-sons" aria-pressed={sons} onClick={alternarSons}>{T.sonsRotulo}: {sons ? T.sonsLig : T.sonsDesl}</button>
               {temGramatica && <Link className="aa-gramatica" to={`/gramatica/${idioma}`}>{T.gramaticaDo(nome)} →</Link>}
@@ -173,7 +178,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
         )}
       </aside>
 
-      <div className="aa-conteudo" key={`${idioma}-${dia}`}>{children}</div>
+      <div className="aa-conteudo" key={`${idioma}-${dia}`}><EstadoProgresso idioma={idioma} />{children}</div>
     </div>
   );
 }
@@ -196,13 +201,15 @@ export function concluirDia(idioma: string, dia: number, logado: boolean): strin
 export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
+  const { pathname, search, hash } = useLocation();
   const [feito, setFeito] = useState(false);
   const [aviso, setAviso] = useState<string | null>(null);
   useEffect(() => {
     const sync = () => setFeito(diaConcluido(idioma, dia));
     sync();
     window.addEventListener('linvuu:dias', sync);
-    return () => window.removeEventListener('linvuu:dias', sync);
+    window.addEventListener('storage', sync);
+    return () => { window.removeEventListener('linvuu:dias', sync); window.removeEventListener('storage', sync); };
   }, [idioma, dia]);
 
   const clicar = () => {
@@ -217,7 +224,27 @@ export function MarcarDia({ idioma, dia }: { idioma: string; dia: number }) {
         {feito ? `✓ ${T.concluidoDia}` : T.marcarConcluido}
       </button>
       {aviso && <p className="aa-aviso" role="status">{aviso}</p>}
-      {!usuario && <p className="aa-aviso-leve">{T.entrarProgresso}</p>}
+      {!usuario && <p className="aa-aviso-leve">{T.entrarProgresso} <Link to={`/entrar?proximo=${encodeURIComponent(pathname + search + hash)}`}>{T.entrarAgora}</Link></p>}
     </div>
   );
+}
+
+
+function EstadoProgresso({ idioma }: { idioma: string }) {
+  const T = textos(idioma);
+  const { usuario } = useAuth();
+  const [estado, setEstado] = useState(estadoProgressoConta);
+  useEffect(() => {
+    const sync = () => setEstado(estadoProgressoConta());
+    sync();
+    window.addEventListener(EVENTO_SINCRONIZACAO, sync);
+    window.addEventListener('storage', sync);
+    window.addEventListener('linvuu:dias', sync);
+    return () => { window.removeEventListener('storage', sync); window.removeEventListener(EVENTO_SINCRONIZACAO, sync); window.removeEventListener('linvuu:dias', sync); };
+  }, [usuario]);
+  if (!usuario || estado === 'local') return null;
+  return <div className="aa-sync" role="status" aria-live="polite">
+    <span>{estado === 'salvando' ? T.sincronizando : estado === 'salvo' ? T.progressoSalvo : T.progressoPendente}</span>
+    {estado === 'pendente' && <button type="button" className="link" onClick={() => void sincronizarConta(idioma)}>{T.tentarSincronizar}</button>}
+  </div>;
 }

@@ -40,6 +40,8 @@ function caminho(comprimento: number, altura: number, seed: number) {
 interface Props {
   /** 0 a 1: quanto da largura o traço ocupa (progresso real). */
   valor?: number;
+  /** Progresso mensurável: respeita zero e frações pequenas, sem o mínimo decorativo. */
+  exato?: boolean;
   altura?: number;
   semente?: number;
   /** mostra a trilha pontilhada atrás do traço */
@@ -50,13 +52,13 @@ interface Props {
   animar?: boolean;
 }
 
-export function Traco({ valor = 1, altura = 14, semente = 5, trilha = false, className, rotulo, animar = false }: Props) {
-  const v = Math.min(1, Math.max(0.04, valor));
+export function Traco({ valor = 1, exato = false, altura = 14, semente = 5, trilha = false, className, rotulo, animar = false }: Props) {
+  const v = Math.min(1, Math.max(exato ? 0 : 0.04, valor));
   return (
     <svg className={`traco${animar ? ' traco-desenhar' : ''}${className ? ` ${className}` : ''}`} viewBox={`0 0 ${LARGURA} ${altura}`} preserveAspectRatio="none" height={altura} width="100%"
       role={rotulo ? 'img' : undefined} aria-label={rotulo} aria-hidden={rotulo ? undefined : true} focusable="false">
       {trilha && <line x1="2" x2={LARGURA - 2} y1={altura / 2} y2={altura / 2} className="traco-trilha" vectorEffect="non-scaling-stroke" />}
-      <path d={caminho(LARGURA * v, altura, semente)} pathLength={1} className="traco-linha" vectorEffect="non-scaling-stroke" fill="none" />
+      {(!exato || v > 0) && <path style={exato ? { strokeDasharray: `${v} 1` } : undefined} d={caminho(LARGURA * (exato ? 1 : v), altura, semente)} pathLength={1} className="traco-linha" vectorEffect="non-scaling-stroke" fill="none" />}
     </svg>
   );
 }

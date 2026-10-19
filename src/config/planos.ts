@@ -8,3 +8,4 @@ export const PRECO_TRIMESTRAL = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 
 export const PRECO_TRIMESTRAL_PIX = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 291,90'; // 30% de desconto, só no Pix
 export const PRECO_EX_ALUNO = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 79'; // mensal, nos primeiros 6 meses, para os 50 primeiros ex-alunos (cupom LINVUU50)
 export const PRECO_ANUAL = import.meta.env?.VITE_ALVO === 'apk' ? '' : 'R$ 999'; // 12 meses, pagamento único
+

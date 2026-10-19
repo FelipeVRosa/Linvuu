@@ -24,11 +24,11 @@ jobs:
       - run: npm ci
       - name: Gerar o site e sincronizar com o Android
         run: npm run app:android
-      - name: Compilar o APK de depuração
+      - name: Compilar APK e AAB de depuração
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          ./gradlew assembleDebug bundleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         continue-on-error: true # se a cota de armazenamento do GitHub estiver cheia, o APK compilou mesmo assim
         with:
@@ -36,3 +36,4 @@ jobs:
           path: android/app/build/outputs/apk/debug/*.apk
           retention-days: 1
           if-no-files-found: error
+

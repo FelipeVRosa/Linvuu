@@ -32,3 +32,4 @@ export function useAssinatura(): Assinatura {
   }, [usuario, auth, n]);
   return { ...estado, recarregar };
 }
+

@@ -26,3 +26,4 @@ export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
 
 export { useAssinatura } from '../../lib/acesso';
 export type { Assinatura } from '../../lib/acesso';
+

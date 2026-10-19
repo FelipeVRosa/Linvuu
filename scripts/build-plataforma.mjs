@@ -9,3 +9,4 @@ if (alvo === 'apk') {
 }
 const r = spawnSync('npm', ['run', 'build'], { env, stdio: 'inherit', shell: process.platform === 'win32' });
 process.exit(r.status ?? 1);
+

@@ -231,3 +231,4 @@ export function Legal({ tipo }: { tipo: 'privacidade' | 'termos' }) {
     </div>
   );
 }
+

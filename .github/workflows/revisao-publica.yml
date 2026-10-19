@@ -1,0 +1,37 @@
+name: Revisão pública (desktop e celular)
+on:
+  pull_request:
+    paths: ['server.ts', 'server/**', 'package.json', 'package-lock.json', 'src/**', 'scripts/revisar-publico.mjs', 'scripts/testar-seo-publico.ts', '.github/workflows/revisao-publica.yml', 'index.html']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Validar HTML de SEO
+        run: node --import tsx scripts/testar-seo-publico.ts
+      - name: Instalar navegador somente no runner
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Rever camadas públicas sem pagamentos
+        run: node scripts/revisar-publico.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true # capturas compactas também ficam nos logs; não apagar artifacts do usuário
+        with:
+          name: revisao-publica-desktop-celular
+          path: revisao-publica/
+          retention-days: 1
+          if-no-files-found: warn

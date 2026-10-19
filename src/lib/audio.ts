@@ -142,3 +142,4 @@ export const temVoz = async (idioma: string): Promise<boolean> => {
     speechSynthesis.addEventListener('voiceschanged', () => { clearTimeout(fim); ok(checar()); }, { once: true });
   });
 };
+

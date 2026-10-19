@@ -18,3 +18,4 @@ export default function Assinatura() {
     <p><Link to="/privacidade">{t.rodape.privacidade}</Link> · <Link to="/termos">{t.assinatura.termos}</Link></p>
   </div>;
 }
+

@@ -25,8 +25,12 @@ jobs:
         run: npm run lint && npm run lint:apk
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
+      - name: Testar corretor e ditados reais
+        run: node --import tsx scripts/testar-correcao-exercicios.ts
       - name: Testar isolamento do progresso
         run: npm run testar:progresso
+      - name: Testar reenvio e isolamento do progresso na conta
+        run: node --import tsx scripts/testar-sincronizacao-progresso.ts
       - run: npm run build:website
       - run: npm run build:apk
       - run: npm run testar:plataformas
@@ -37,3 +41,4 @@ jobs:
           for i in 1 2 3; do npm audit --omit=dev --audit-level=high && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)
         run: npm run testar:seguranca
+

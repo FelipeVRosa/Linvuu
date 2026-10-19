@@ -2,9 +2,10 @@
 // (o WhatsApp, o Facebook e outros robôs não executam JavaScript; sem isto, todo link mostraria o texto da página inicial).
 // Vale para os três idiomas do site: / (português), /en e /es.
 import { COMECAR } from './comecar.ts';
+import { HOME_BR, PLANOS_PREVIA, PLANOS_AVISO, APOIO_PREMIUM } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SESSOES_GRATIS, SESSOES_POR_AULA } from '../config/planos.ts';
+import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL } from '../config/planos.ts';
 import { LOCALES, Locale, caminhoEm, localeDoCaminho, semPrefixo } from '../i18n/locales.ts';
 import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, POR_QUE } from './institucional.ts';
@@ -77,9 +78,9 @@ const TX = {
   },
 } as const;
 const HOME = {
-  'pt-BR': { titulo: undefined, descricao: undefined },
-  en: { titulo: 'Languages explained in English', descricao: 'Learn Brazilian Portuguese, Spanish, German, French, Italian and Russian with lessons explained in English. 30-minute sessions, audio for every sentence and exercises corrected on the spot. 2 free lessons.' },
-  es: { titulo: 'Idiomas explicados en español', descricao: 'Aprende portugués de Brasil, inglés, alemán, francés, italiano y ruso con lecciones explicadas en español. Sesiones de 30 minutos, audio en cada frase y ejercicios corregidos al instante. 2 lecciones gratis.' },
+  'pt-BR': { titulo: HOME_BR.tituloSeo, descricao: HOME_BR.descricao },
+  en: { titulo: 'Language courses for Brazilian learners', descricao: 'English, Spanish, French, Italian, German and Russian courses for Brazilian learners. Explanations in Portuguese, audio and exercises. Try 2 free lessons.' },
+  es: { titulo: 'Cursos de idiomas para brasileños', descricao: 'Cursos de inglés, español, francés, italiano, alemán y ruso para brasileños. Explicaciones en portugués, audio y ejercicios. Prueba 2 clases gratis.' },
 };
 
 export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
@@ -124,7 +125,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
-    '/assinatura': { titulo: tx.assinatura, semIndice: true },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Conheça a assinatura atual da Linvuu, com acesso aos cursos de idiomas, e os novos planos em preparação. Consulte preços, formas de pagamento e condições.' } : { titulo: tx.assinatura, semIndice: true },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
   };
@@ -204,8 +205,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   let corpo = '';
   if (base === '/' || base === '/cursos') {
     const home = HOME[loc.codigo];
-    corpo = cabeca(home.titulo ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
-    if (base === '/') { const g = COMECAR[loc.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
+    corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
+    if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${esc(HOME_BR.lead)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">Conheça os novos planos</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação. Mesma qualidade de conteúdo e suporte técnico em todos os planos.</p><p>${a('/assinatura', 'Consultar a assinatura atual')}</p>`; }
+    if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
   } else {
     const ml = base.match(/^\/livros\/([^/]+)$/), mcl = base.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
     if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + li(LIVROS_META.map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
@@ -230,6 +232,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       corpo = cabeca(m.titulo, m.descricao);
     }
   }
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2>Novos planos em preparação</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação.</p><h2 id="oferta-atual">Assinatura atual</h2><p>A oferta vigente dá acesso a todos os cursos. Os novos planos ainda não estão à venda.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão. O pagamento exige uma conta.</p><p>${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
   if (base === '/sobre') corpo = cabeca(m.titulo ?? '', m.descricao) + AUTORES.map((x) => `<h2 id="${x.id}">${esc(x.nome)}</h2><p>Autoria, revisão e adaptação dos livros e das aulas da Linvuu. ${x.links.map((u) => `<a href="${esc(u)}" rel="me">${/linkedin/.test(u) ? 'LinkedIn' : 'Facebook'}</a>`).join(' · ')}</p>`).join('');
   if (base === '/por-que-linvuu') corpo = cabeca(POR_QUE.titulo, POR_QUE.descricao) + `<p>${esc(POR_QUE.lead)}</p>` + POR_QUE.motivos.map((x) => `<h2 id="${x.id}">${esc(x.titulo)}</h2><p>${esc(x.texto)}</p>`).join('') + `<h2>Para quem é</h2><p>${esc(POR_QUE.paraQuem)}</p><p><a href="/cursos">Veja os cursos</a> · <a href="/livros">Leia os livros</a> · <a href="/contato">Fale com a gente</a></p>`;
   if (base === '/contato') corpo = cabeca(CONTATO.titulo, CONTATO.descricao) + `<p>${esc(CONTATO.lead)}</p>` + li(contatos().filter((c) => c.id !== 'linkedin').map((c) => `<a href="${esc(c.href)}">${esc(c.nome)}: ${esc(c.rotulo)}</a>`)) + `<h2 id="linkedin">LinkedIn</h2>` + li(AUTORES.map((x) => `<a href="${esc(x.links[0])}" rel="me">${esc(x.nome)}</a>`));

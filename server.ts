@@ -76,7 +76,7 @@ async function startServer() {
     const dadosMeta = carregarDadosMeta(__dirname);
     let htmlBase: string | null = null;
     // Arquivo de /assets que não existe mais (aba aberta antes de um deploy) deve dar 404 de verdade, não o HTML do site.
-    app.get('/assets/*', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
+    app.get('/assets/*arquivo', (_req: Request, res: Response) => { res.status(404).type('text/plain').send('Not found'); });
     // Endereços que mudaram de lugar: redirecionamento permanente (o Google transfere a relevância).
     app.get(['/brazilian-portuguese', '/en/brazilian-portuguese', '/es/brazilian-portuguese'], (_req: Request, res: Response) => { res.redirect(301, '/en/portugues'); });
     // Endereços antigos ou digitados à mão que davam 404.
@@ -84,7 +84,7 @@ async function startServer() {
     app.get('/preco', (_req: Request, res: Response) => { res.redirect(301, '/assinatura'); });
     // O curso de português para estrangeiros não existe no site em português: vai para a versão em inglês.
     app.get(/^\/curso\/br(\/.*)?$/, (req: Request, res: Response) => { res.redirect(301, `/en${req.path}`); });
-    app.get('*', (req: Request, res: Response) => {
+    app.get('/{*pagina}', (req: Request, res: Response) => {
       res.setHeader('Cache-Control', 'no-cache');
       htmlBase ??= fs.readFileSync(path.resolve(__dirname, 'dist', 'index.html'), 'utf8');
       const m = metaDaRota(req.path, dadosMeta);

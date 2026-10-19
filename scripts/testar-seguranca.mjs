@@ -12,9 +12,18 @@ const ok = (cond, msg) => { console.log(`${cond ? 'ok   ' : 'FALHA'} ${msg}`); i
 
 try {
   for (let i = 0; i < 60; i++) { try { if ((await fetch(`${base}/healthz`)).ok) break; } catch { /* espera */ } await new Promise((r) => setTimeout(r, 500)); }
+  if (srv.exitCode !== null) throw new Error(`Servidor encerrou antes de ficar pronto: ${log.slice(-2500)}`);
   const home = await fetch(base + '/');
   const h = (n) => home.headers.get(n) ?? '';
   ok(home.status === 200, 'home responde 200');
+  const assetAusente = await fetch(base + '/assets/arquivo-inexistente.js');
+  ok(assetAusente.status === 404 && (assetAusente.headers.get('content-type') ?? '').startsWith('text/plain'), 'asset ausente dá 404 de texto, sem HTML da SPA');
+  const desconhecida = await fetch(base + '/pagina-inexistente-de-teste');
+  ok(desconhecida.status === 404 && (desconhecida.headers.get('content-type') ?? '').includes('text/html'), 'fallback mantém 404 real para página desconhecida');
+  const robots = await fetch(base + '/robots.txt');
+  ok(robots.status === 200 && (robots.headers.get('content-type') ?? '').startsWith('text/plain'), 'robots continua arquivo de texto');
+  const sitemap = await fetch(base + '/sitemap.xml');
+  ok(sitemap.status === 200 && (sitemap.headers.get('content-type') ?? '').includes('xml'), 'sitemap continua XML');
   ok(!home.headers.has('x-powered-by'), 'sem X-Powered-By');
   ok(h('x-content-type-options') === 'nosniff', 'X-Content-Type-Options: nosniff');
   ok(h('x-frame-options') === 'DENY', 'X-Frame-Options: DENY');

@@ -29,6 +29,7 @@ export function Header() {
     return () => { document.removeEventListener('mousedown', fora); document.removeEventListener('keydown', esc); };
   }, []);
 
+  const proximo = /^\/(?:curso|gramatica|livros)(?:\/|$)/.test(loc.pathname) ? `?proximo=${encodeURIComponent(loc.pathname + loc.search + loc.hash)}` : '';
   const deslogar = async () => { await sair(); setConta(false); setMenu(false); nav('/'); };
 
   return (
@@ -63,8 +64,8 @@ export function Header() {
             </>
           ) : (
             <>
-              <Link to="/entrar" className="lv-entrar">{t.nav.entrar}</Link>
-              <Link to="/cadastro" className="btn btn-primary lv-head-cta">{t.nav.comecar}</Link>
+              <Link to={`/entrar${proximo}`} className="lv-entrar">{t.nav.entrar}</Link>
+              <Link to={`/cadastro${proximo}`} className="btn btn-primary lv-head-cta">{t.nav.comecar}</Link>
             </>
           )}
         </div>
@@ -86,8 +87,8 @@ export function Header() {
           <Link to="/#faq">{t.nav.duvidas}</Link>
           {usuario ? <button type="button" className="menu-mobile-sair" onClick={deslogar}>{t.nav.sair} ({usuario.nome})</button> : (
             <div className="menu-mobile-conta">
-              <Link to="/entrar" className="btn btn-ghost">{t.nav.entrar}</Link>
-              <Link to="/cadastro" className="btn btn-primary">{t.nav.comecar}</Link>
+              <Link to={`/entrar${proximo}`} className="btn btn-ghost">{t.nav.entrar}</Link>
+              <Link to={`/cadastro${proximo}`} className="btn btn-primary">{t.nav.comecar}</Link>
             </div>
           )}
         </div>

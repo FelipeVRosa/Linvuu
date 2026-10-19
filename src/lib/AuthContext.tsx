@@ -84,7 +84,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // depois de criar a nova senha, o link do e-mail traz a pessoa de volta para «Entrar», no idioma em que ela estava
       await m.sendPasswordResetEmail(auth, email.trim(), { url: `${window.location.origin}${comPrefixo('/entrar')}` }).catch((e) => {
         // domínio fora da lista autorizada do Firebase: manda o e-mail sem o link de volta
-        if (/continue-uri/.test((e as { code?: string })?.code ?? '')) return m.sendPasswordResetEmail(auth, email.trim());
+        if ((e as { code?: string })?.code === 'auth/user-not-found') return;
+        if (/continue-uri/.test((e as { code?: string })?.code ?? '')) return m.sendPasswordResetEmail(auth, email.trim()).catch((erro) => { if ((erro as { code?: string })?.code !== 'auth/user-not-found') throw erro; });
         throw e;
       });
     },

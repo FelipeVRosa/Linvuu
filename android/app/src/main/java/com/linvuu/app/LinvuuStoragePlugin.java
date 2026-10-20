@@ -14,7 +14,7 @@ import java.util.Map;
 public class LinvuuStoragePlugin extends Plugin {
     private SharedPreferences dados() { return getContext().getSharedPreferences("linvuu_estudo_v1", Context.MODE_PRIVATE); }
     private boolean permitido(String key) {
-        return key != null && key.length() <= 512 && key.matches("^linvuu:(progresso:v1|progresso-pendente:v1|dias-concluidos:v1|pratica-apk:v1)(:.*)?$|^linvuu:(tema-app|leitura-app|sons|locale)$");
+        return key != null && key.length() <= 512 && (key.equals("linvuu:armazenamento:v2") || key.matches("^linvuu:(progresso:v1|progresso-pendente:v1|dias-concluidos:v1|pratica-apk:v1)(:.*)?$|^linvuu:(tema-app|leitura-app|sons|locale)$"));
     }
     @PluginMethod public void snapshot(PluginCall call) {
         JSObject values = new JSObject();

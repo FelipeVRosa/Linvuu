@@ -1,4 +1,4 @@
-import { armazenamentoFalhou } from './armazenamento';
+import { armazenamentoFalhou, sincronizarArmazenamento } from './armazenamento';
 import { Capacitor, SystemBars, SystemBarsStyle } from '@capacitor/core';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -27,6 +27,7 @@ export function Header() {
     return () => { encerrado=true; cancelAnimationFrame(frame); clearTimeout(limite); observer.disconnect(); };
   }, [pathname]);
   const { usuario, sair } = useAuth();
+  const [recuperando,setRecuperando]=useState(false);
   const [falhaArmazenamento,setFalhaArmazenamento]=useState(armazenamentoFalhou);
   useEffect(()=>{const ler=()=>setFalhaArmazenamento(armazenamentoFalhou);window.addEventListener('linvuu:armazenamento',ler);return ()=>window.removeEventListener('linvuu:armazenamento',ler);},[]);
   const [aberto, setAberto] = useState(false);
@@ -92,7 +93,7 @@ export function Header() {
       {usuario ? <button type="button" disabled={saindo} onClick={deslogar}>{saindo ? t.geral.carregando : t.nav.sair}</button> : <Link to="/entrar">{t.nav.entrar}</Link>}
       {erro && <p role="alert">{a.erroSair}</p>}
     </section>}
-    {falhaArmazenamento&&<p className="app-rede" role="alert">{{'pt-BR':'Não foi possível salvar no armazenamento do aparelho. O progresso pode não ser preservado ao fechar.',en:'Could not save to device storage. Progress may not be preserved when you close the app.',es:'No se pudo guardar en el dispositivo. El progreso podría no conservarse al cerrar la aplicación.'}[LOCALE.codigo]}</p>}
+    {falhaArmazenamento&&<p className="app-rede" role="alert">{{'pt-BR':'Não foi possível confirmar a recuperação ou a cópia de segurança do progresso neste aparelho.',en:'Could not confirm progress recovery or its backup on this device.',es:'No se pudo confirmar la recuperación o la copia de seguridad del progreso en este dispositivo.'}[LOCALE.codigo]} <button type="button" className="btn btn-ghost" disabled={recuperando} onClick={()=>{setRecuperando(true);void sincronizarArmazenamento().finally(()=>setRecuperando(false));}}>{recuperando?t.geral.carregando:a.tentarNovamente}</button></p>}
     {!online && <p className="app-rede" role="status">{a.semRede}</p>}
   </>;
 }

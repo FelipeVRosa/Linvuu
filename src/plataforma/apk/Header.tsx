@@ -12,6 +12,18 @@ export function Header() {
   const t = useT(), a = appTextos(), x = experiencia();
   const nav = useNavigate();
   const { pathname } = useLocation();
+  useEffect(() => {
+    let encerrado = false;
+    const focar = () => {
+      const titulo = document.querySelector<HTMLElement>('#conteudo h1');
+      if (!titulo || encerrado) return false;
+      titulo.tabIndex = -1; titulo.focus({preventScroll:true}); return true;
+    };
+    const observer = new MutationObserver(() => { if(focar()) observer.disconnect(); });
+    const frame = requestAnimationFrame(() => { if(!focar()) observer.observe(document.getElementById('conteudo') ?? document.body,{childList:true,subtree:true}); });
+    const limite = setTimeout(() => observer.disconnect(),5000);
+    return () => { encerrado=true; cancelAnimationFrame(frame); clearTimeout(limite); observer.disconnect(); };
+  }, [pathname]);
   const { usuario, sair } = useAuth();
   const [aberto, setAberto] = useState(false);
   const [tema, setTema] = useState(() => { try { return localStorage.getItem('linvuu:tema-app') || 'sistema'; } catch { return 'sistema'; } });
@@ -60,7 +72,7 @@ export function Header() {
     <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
     <header className="app-header">
       {pathname !== '/' ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
-      <Link to="/" aria-label={t.geral.paginaInicial}><img className="app-emblema" src="/brand/linvuu-app-emblema.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
+      <Link to="/" aria-label={`Linvuu, ${t.geral.paginaInicial}`}><img className="app-emblema" src="/brand/linvuu-app-emblema.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
     {aberto && <section id="app-ajustes" className="app-ajustes" aria-label={a.ajustes}>

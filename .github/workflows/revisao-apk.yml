@@ -27,3 +27,6 @@ jobs:
         run: node scripts/revisar-apk.mjs
       - name: Rever redesign, acessibilidade automatizada e fonte ampliada
         run: node scripts/revisar-redesign-apk.mjs
+
+      - name: Validar bloqueadores do parecer nos dois temas
+        run: node scripts/testar-parecer-apk.mjs

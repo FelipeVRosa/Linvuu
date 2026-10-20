@@ -4,7 +4,7 @@ import { Aula, carregarAula, coberturaDoCurso, getCurso, statusDoCurso } from '.
 import { useAssinatura } from '../../lib/acesso';
 import { gratis } from '../../config/planos';
 import { usePageTitle } from '../../lib/usePageTitle';
-import { Sessao } from '../../components/Sessao';
+import { Sessao } from './Sessao';
 import { ReportarProblema } from '../../components/ReportarProblema';
 import NaoEncontrada from '../../pages/NaoEncontrada';
 import DiaLegado from '../../pages/Dia';

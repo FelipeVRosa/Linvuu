@@ -116,3 +116,37 @@ html[data-plataforma="nativo"] .lv-tab{color:var(--fg-2)}html[data-plataforma="n
 .app-missao .app-saudacao{margin-top:1.1rem;font-size:3.125rem}.app-missao h2{font-size:1.1875rem}.app-boasvindas h1 .app-ponto-titulo{display:none}
 .app-boasvindas h1,.app-biblioteca-topo h1,.app-missao h2,.app-aula-topo h1{overflow-wrap:anywhere;min-width:0}
 html[data-plataforma="nativo"] :is(h1,h2,h3){overflow-wrap:anywhere}
+
+/* Rodada 1: corrigir superfícies herdadas sem alterar os estilos do website. */
+html[data-plataforma="nativo"] :is(.btn-ghost,.chip,.conta-card,.conta-sub,.ex-texto,.narrar-barra,.nivel-cartao,.trilha-aba){background:var(--bg-elevado);color:var(--fg-1)}
+html[data-plataforma="nativo"] :is(.chip.on,.trilha-aba.on){background:var(--acao);color:var(--acao-fg)}
+html[data-plataforma="nativo"] .conta-titulo{color:var(--fg-1)}
+html[data-plataforma="nativo"] .app-busca input{border-color:var(--linha-forte)}
+html[data-plataforma="nativo"] .lv-tabbar{height:88px;min-height:0;padding:4px;align-items:center}
+html[data-plataforma="nativo"] .lv-tab{height:72px;min-height:48px;overflow:hidden}
+html[data-plataforma="nativo"] .lv-tab>span:last-child{display:none;white-space:nowrap;overflow-wrap:normal;font-size:12px}
+html[data-plataforma="nativo"] .lv-tab.on>span:last-child{display:block}
+html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:52px minmax(0,1fr)}
+.app-curso-linha>span:last-child{display:none}
+html[data-plataforma="nativo"] :is(.app-unidade strong,.app-unidade small,.app-curso-linha h2){overflow-wrap:normal;hyphens:auto}
+html[data-plataforma="nativo"] .app-header>a>img:last-child{display:none}
+html[data-plataforma="nativo"] .reportar-problema{min-height:48px;display:inline-flex;align-items:center}
+html[data-plataforma="nativo"] .paywall h1{font-size:1.5rem}
+/* O rótulo ativo usa a largura total: permanece ampliável, sem partir palavras. */
+html[data-plataforma="nativo"] .lv-tabbar{padding-bottom:28px}
+html[data-plataforma="nativo"] .lv-tab{height:48px;position:static}
+html[data-plataforma="nativo"] .lv-tab.on>span:last-child{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:.75rem;line-height:1.2}
+html[data-plataforma="nativo"] .aa-reporte>.link{min-height:48px;display:inline-flex;align-items:center}
+.app-sessao-pendente{display:grid;grid-template-columns:30px minmax(0,1fr)}
+.app-sessao-pendente>span{min-width:0;overflow-wrap:anywhere}
+@media(max-width:400px){
+ .app-unidade>summary{display:block;padding:16px}
+ .app-unidade>summary>.app-unidade-num,.app-unidade>summary>span:last-child{display:none}
+ .app-unidade>summary>span{display:block;min-width:0}
+ .app-sessoes{padding-inline:12px}
+ .app-sessoes a{display:grid;grid-template-columns:minmax(0,1fr);padding-inline:8px}
+ .app-sessoes a>.app-sessao-num,.app-sessoes a>span:last-child{display:none}
+ .app-sessoes a>span{min-width:0}
+}
+html[data-plataforma="nativo"] .conta-aviso{background:var(--bg-recuado);color:var(--fg-1)}
+html[data-plataforma="nativo"] .voltar{background:var(--bg-elevado);color:var(--link)}

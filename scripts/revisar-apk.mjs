@@ -22,7 +22,7 @@ try {
     await page.evaluate(()=>document.fonts.ready);
     assert.equal(await page.locator('html').getAttribute('data-plataforma'),'nativo');
     assert.equal(await page.locator('.lv-head').count(),0,'sem cabeçalho marketing web');
-    assert.equal(await page.locator('.app-home .lv-grade section').count(),locale===''?6:1,'vitrine não presume materiais adaptados');
+    assert.equal(await page.locator('.app-home .app-idiomas button').count(),locale===''?6:1,'vitrine não presume materiais adaptados');
     const largura=await page.evaluate(()=>({pagina:document.documentElement.scrollWidth,tela:innerWidth}));
     assert.ok(largura.pagina<=largura.tela+1,'sem rolagem horizontal '+JSON.stringify(largura));
     const alvos=await page.locator('.app-header button, .lv-tab').evaluateAll(els=>els.map(el=>({w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height})));
@@ -31,8 +31,8 @@ try {
     const shot=await page.screenshot({type:'jpeg',quality:55});
     console.log('LINVUU_APK_SCREEN '+width+'-'+(locale||'pt')+' '+shot.toString('base64'));
     await page.locator('button[aria-controls="app-ajustes"]').click();
-    await page.locator('#app-ajustes select').waitFor();
-    assert.equal(await page.locator('#app-ajustes select option').count(),3);
+    await page.locator('#app-idioma').waitFor();
+    assert.equal(await page.locator('#app-idioma option').count(),3);
     await context.setOffline(true);
     await page.locator('.app-rede').waitFor();
     await context.setOffline(false);

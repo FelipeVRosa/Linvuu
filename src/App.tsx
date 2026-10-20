@@ -4,9 +4,9 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '@plataforma/Home';
 import Cursos from '@plataforma/Cursos';
-const Curso = lazy(() => import('./pages/Curso'));
+const Curso = lazy(() => import('@plataforma/Curso'));
 const Portugues = lazy(() => import('./pages/Portugues'));
-const Dia = lazy(() => import('./pages/Dia'));
+const Dia = lazy(() => import('@plataforma/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
 const Assinatura = lazy(() => import('@plataforma/Assinatura'));
 const Legal = lazy(() => import('@plataforma/Legal').then((m) => ({ default: m.Legal })));

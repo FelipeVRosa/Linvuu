@@ -317,7 +317,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
   }
 }
 
-export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao }: { sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
+export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao, compacta = false }: { compacta?: boolean; sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
   const [msgFim, setMsgFim] = useState<string | null>(null);
@@ -340,7 +340,8 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   useEffect(() => { parar(); salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
 
   return (
-    <div className="sessao">
+    <div className={`sessao${compacta ? " app-sessao" : ""}`}>
+      {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx} aria-label={T.blocosSessao} /></div>}
       {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
       {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
       <ol className="passos-nav" aria-label={T.blocosSessao}>

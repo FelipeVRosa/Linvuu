@@ -18,15 +18,19 @@ export async function prepararArmazenamento(backend:Nativo=plugin,nativo=Capacit
  comunicacao=backend;
  iniciado=true;
  const originalSet=Storage.prototype.setItem,originalRemove=Storage.prototype.removeItem,originalClear=Storage.prototype.clear;
+ // Instalar o espelhamento mesmo quando a leitura inicial da ponte falhar.
+ Storage.prototype.setItem=function(k:string,v:string){originalSet.call(this,k,v);if(this===localStorage&&chavePersistente(String(k)))guardar(String(k),String(v));};
+ Storage.prototype.removeItem=function(k:string){originalRemove.call(this,k);if(this===localStorage&&chavePersistente(String(k)))guardar(String(k),null);};
+ Storage.prototype.clear=function(){const keys=this===localStorage?Object.keys(this).filter(chavePersistente):[];originalClear.call(this);keys.forEach(k=>guardar(k,null));};
+ window.addEventListener('online',()=>void sincronizarArmazenamento());
  try{
   let timer:ReturnType<typeof setTimeout>|undefined;
   const {values}=await Promise.race([comunicacao.snapshot(),new Promise<never>((_,reject)=>{timer=setTimeout(()=>reject(new Error('armazenamento-indisponivel')),5000);})]).finally(()=>clearTimeout(timer));
-  for(const [k,v]of Object.entries(values))if(chavePersistente(k)&&typeof v==='string')originalSet.call(localStorage,k,v);
-  for(const k of Object.keys(localStorage))if(chavePersistente(k)&&!(k in values))guardar(k,localStorage.getItem(k));
-  Storage.prototype.setItem=function(k:string,v:string){originalSet.call(this,k,v);if(this===localStorage&&chavePersistente(String(k)))guardar(String(k),String(v));};
-  Storage.prototype.removeItem=function(k:string){originalRemove.call(this,k);if(this===localStorage&&chavePersistente(String(k)))guardar(String(k),null);};
-  Storage.prototype.clear=function(){const keys=this===localStorage?Object.keys(this).filter(chavePersistente):[];originalClear.call(this);keys.forEach(k=>guardar(k,null));};
-  window.addEventListener('online',()=>void sincronizarArmazenamento());
+  // O espelho pode estar atrasado após uma falha de gravação. Um valor local
+  // existente prevalece, inclusive arrays vazios e redefinições intencionais.
+  // Recuperar do nativo apenas chaves ausentes, sem unir contas ou históricos.
+  for(const [k,v]of Object.entries(values))if(chavePersistente(k)&&typeof v==='string'&&!pendentes.has(k)&&localStorage.getItem(k)===null)originalSet.call(localStorage,k,v);
+  for(const k of Object.keys(localStorage))if(chavePersistente(k)&&localStorage.getItem(k)!==values[k])guardar(k,localStorage.getItem(k));
  }catch{avisar(true);}
 }
 export async function apagarEstudoDaConta(uid:string){

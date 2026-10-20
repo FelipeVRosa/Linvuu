@@ -195,7 +195,7 @@ function Exercicios({ itens, idioma, aoFinalizar }: { itens: Exercicio[]; idioma
         {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
           : <button type="button" className="btn btn-primary" onClick={avancar}>{i + 1 >= itens.length ? T.verResultado : T.proximo}</button>}
       </div>
-      {APK && <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{res === 'ok' ? T.certo : res === 'erro' ? T.errou : res === 'livre' ? T.compare : ''}</p>}
+      {APK && <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{res === 'ok' ? T.certo : res === 'erro' ? <>{T.errou} <span lang={idioma}>{ex.gabarito ?? ex.respostaEsperada}</span></> : res === 'livre' ? T.compare : ''}</p>}
       {res && (
         <div className={`ex-feedback ${res}${ex.tipo === 'repeat' ? ' repita' : ''}`} role={APK ? undefined : "status"}>
           {res === 'ok' && <strong>{T.certo}</strong>}
@@ -363,7 +363,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
     <div className={`sessao${compacta ? " app-sessao" : ""}`}>
       <ControlesAudio />
       {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx + 1} aria-label={T.blocosSessao} /></div>}
-      {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
+      {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span aria-hidden="true">⌄</span></summary>{etapas}</details> : etapas}
       <div className="bloco">
         <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2>{!compacta && <span>{T.bloco(idx + 1, total, b.min)}</span>}</div>
         <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} aoFinalizar={(acertos,total)=>setPraticas(p=>({...p,[idx]:salvarPratica(`${chave}:bloco:${idx}`,acertos,total)}))} />
@@ -375,7 +375,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
        {!usuario&&<p>{estudoTexto.local}</p>}
       </div>
       <div className="sessao-nav">
-        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>
+        <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{APK ? ({'pt-BR':'Bloco anterior',en:'Previous block',es:'Bloque anterior'}[LOCALE.codigo]) : T.voltar}</button>
         {idx < total - 1
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
           : <button type="button" className="btn btn-primary" disabled={corrigiveis>0&&!pratica&&!completa} onClick={concluir}>{completa ? T.concluida : corrigiveis ? T.concluir : estudoTexto.concluir}</button>}

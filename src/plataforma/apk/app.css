@@ -140,12 +140,14 @@ html[data-plataforma="nativo"] .aa-reporte>.link{min-height:48px;display:inline-
 .app-sessao-pendente{display:grid;grid-template-columns:30px minmax(0,1fr)}
 .app-sessao-pendente>span{min-width:0;overflow-wrap:anywhere}
 @media(max-width:400px){
- .app-unidade>summary{display:block;padding:16px}
- .app-unidade>summary>.app-unidade-num,.app-unidade>summary>span:last-child{display:none}
+ .app-unidade>summary{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;padding:16px}
+ .app-unidade>summary>span:last-child{display:none}
+ .app-unidade>summary>.app-unidade-num{display:grid;width:32px;height:32px;font-size:.875rem}
  .app-unidade>summary>span{display:block;min-width:0}
  .app-sessoes{padding-inline:12px}
- .app-sessoes a{display:grid;grid-template-columns:minmax(0,1fr);padding-inline:8px}
- .app-sessoes a>.app-sessao-num,.app-sessoes a>span:last-child{display:none}
+ .app-sessoes a{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding-inline:8px}
+ .app-sessoes a>span:last-child{display:none}
+ .app-sessoes a>.app-sessao-num{display:grid;place-items:center;width:28px;min-width:0;font-size:.875rem}
  .app-sessoes a>span{min-width:0}
 }
 html[data-plataforma="nativo"] .conta-aviso{background:var(--bg-recuado);color:var(--fg-1)}

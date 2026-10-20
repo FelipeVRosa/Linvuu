@@ -1,11 +1,10 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, cursoDeOutroPublico, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
-import { OutroIdioma } from '../components/OutroIdioma';
 import { SITE_URL } from '../config/site';
-import { LOCALE, LOCALES, urlEm, useT } from '../i18n';
+import { LOCALE, LOCALES, useT } from '../i18n';
 import { gratis } from '../config/planos';
 import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
@@ -22,7 +21,7 @@ export default function Curso() {
   const feitos = useDiasFeitos(curso?.id);
   usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo));
   if (!curso) return <NaoEncontrada />;
-  if (curso.id === 'br') return LOCALE.codigo === 'pt-BR' ? <OutroIdioma para="en" /> : <CursoBr />;
+  if (curso.id === 'br') return <CursoBr />;
 
   const stats = statusDoCurso(curso.id);
   const nivel = params.get('nivel');
@@ -82,10 +81,7 @@ export default function Curso() {
       {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}
       {!website && retomar}
 
-      {cursoDeOutroPublico(curso.id) && (
-        <p className="nota">{t.cursoPagina.naoParaVoce(curso.nome)} <a href={urlEm('pt-BR')} hrefLang="pt-BR">Português →</a></p>
-      )}
-      {cobertura && !cursoDeOutroPublico(curso.id) && <p className="nota">{cobertura}</p>}
+      {cobertura && <p className="nota">{cobertura}</p>}
 
       {inicio && (
         <section className="aviso aviso-inicio">

@@ -1,10 +1,11 @@
-// Idiomas do SITE (interface e explicação das aulas). O endereço diz o idioma: / (português), /en (inglês), /es (espanhol).
+// Idiomas da INTERFACE. O idioma das explicações é uma preferência separada por curso. O endereço diz o idioma: / (português), /en (inglês), /es (espanhol).
 // A base de cada curso (o idioma estudado: palavras, frases, diálogos e áudio) é a mesma; muda só a explicação.
 export type CodigoLocale = 'pt-BR' | 'en' | 'es';
-/** Língua de explicação usada nos dados das aulas. */
+/** Língua do material pedagógico, independente da interface e do idioma estudado. */
 export type Explicacao = 'pt' | 'en' | 'es';
 export interface Locale {
   codigo: CodigoLocale; rotulo: string; nome: string; prefixo: '' | '/en' | '/es';
+  /** Público editorial das páginas públicas/SEO; não determina a língua carregada nas aulas. */
   explicacao: Explicacao; og: string; dataLocale: string;
   /** Curso que não aparece para este público (é a língua dele). */
   cursoOculto: string;

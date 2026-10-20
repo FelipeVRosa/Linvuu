@@ -36,7 +36,7 @@ export default function Dia(){
   {bloqueado&&!decidindo&&<Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel}/>}
   {erro&&<div className="app-erro" role="alert"><h1>{T.semAula}</h1><button type="button" className="btn btn-primary" onClick={()=>setTentativa(v=>v+1)}>{a.tentarNovamente}</button></div>}
   {!aula&&!erro&&!bloqueado&&!decidindo&&<p className="app-carregando" role="status">{T.carregando}</p>}
-  {aula?.sessao&&<><header className="app-aula-topo"><p className="app-kicker">{curso!.nome} · {T.rotuloDia(dia)}</p><h1>{aula.aula&&aula.titulo.startsWith(aula.aula.titulo+': ')?aula.titulo.slice(aula.aula.titulo.length+2):aula.titulo}</h1><details><summary>{x.objetivo}</summary><p>{aula.aula?.objetivo??aula.objetivo}</p></details></header>
+  {aula?.sessao&&<><header className="app-aula-topo"><p className="app-kicker"><span className="app-aula-insignia" aria-hidden="true">{curso!.id==='br'?'PT':curso!.id.toUpperCase()}</span>{curso!.nome} · {T.rotuloDia(dia)}</p><h1>{aula.aula&&aula.titulo.startsWith(aula.aula.titulo+': ')?aula.titulo.slice(aula.aula.titulo.length+2):aula.titulo}</h1><details><summary>{x.objetivo}</summary><p>{aula.aula?.objetivo??aula.objetivo}</p></details></header>
    {aula.semTraducao&&<p className="nota">{T.semTraducao(aula.semTraducao)}</p>}
    <Sessao key={`${curso!.id}:${dia}`} compacta nomeIdioma={curso!.nome} explicacao={aula.semTraducao??LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero??dia} dia={dia} proximo={dia<total?`/curso/${curso!.id}/dia/${dia+1}`:undefined}/>
    <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia}/>

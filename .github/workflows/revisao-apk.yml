@@ -21,7 +21,9 @@ jobs:
       - run: npm run build:apk
       - name: Instalar navegador apenas no runner
         run: |
-          npm install --no-save --package-lock=false playwright@1.56.1
+          npm install --no-save --package-lock=false playwright@1.56.1 @axe-core/playwright@4.14.0
           npx playwright install --with-deps chromium
       - name: Rever interface APK em três idiomas e duas larguras
         run: node scripts/revisar-apk.mjs
+      - name: Rever redesign, acessibilidade automatizada e fonte ampliada
+        run: node scripts/revisar-redesign-apk.mjs

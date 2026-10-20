@@ -8,7 +8,7 @@ const textos = {
     semRede: 'Você está sem conexão. O download de aulas para estudo offline ainda está em preparação.',
     semCursos: 'Ainda não há aulas adaptadas para este idioma de explicação.', erroSair: 'Não foi possível sair. Tente novamente.',
     trocarIdioma: 'Mudar o idioma recarrega a tela. Respostas ainda não concluídas podem ser perdidas. Continuar?',
-    cobertura: (n: number, total: number) => `${n} de ${total} aulas com explicações adaptadas. As demais ainda estão em preparação.`,
+    cobertura: (n: number, total: number) => n >= total ? `${n} aulas com explicações adaptadas.` : `${n} de ${total} aulas com explicações adaptadas. As demais ainda estão em preparação.`,
     concluidas: (n: number, total: number) => `${n} de ${total} sessões concluídas`,
   },
   en: {
@@ -19,7 +19,7 @@ const textos = {
     semRede: 'You are offline. Lesson downloads for offline study are not available yet.',
     semCursos: 'There are no adapted lessons in this explanation language yet.', erroSair: 'Could not sign out. Please try again.',
     trocarIdioma: 'Changing language reloads this screen. Unfinished answers may be lost. Continue?',
-    cobertura: (n: number, total: number) => `${n} of ${total} lessons have adapted explanations. The others are not available in this language yet.`,
+    cobertura: (n: number, total: number) => n >= total ? `${n} lessons with adapted explanations.` : `${n} of ${total} lessons have adapted explanations. The others are not available in this language yet.`,
     concluidas: (n: number, total: number) => `${n} of ${total} sessions completed`,
   },
   es: {
@@ -30,7 +30,7 @@ const textos = {
     semRede: 'No tienes conexión. Las descargas de lecciones para estudiar sin conexión aún están en preparación.',
     semCursos: 'Aún no hay lecciones adaptadas a este idioma de explicación.', erroSair: 'No se pudo cerrar la sesión. Inténtalo de nuevo.',
     trocarIdioma: 'Cambiar el idioma recarga la pantalla. Las respuestas sin terminar pueden perderse. ¿Continuar?',
-    cobertura: (n: number, total: number) => `${n} de ${total} lecciones tienen explicaciones adaptadas. Las demás aún están en preparación.`,
+    cobertura: (n: number, total: number) => n >= total ? `${n} lecciones con explicaciones adaptadas.` : `${n} de ${total} lecciones tienen explicaciones adaptadas. Las demás aún están en preparación.`,
     concluidas: (n: number, total: number) => `${n} de ${total} sesiones completadas`,
   },
 };

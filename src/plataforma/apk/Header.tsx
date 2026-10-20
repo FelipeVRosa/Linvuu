@@ -60,7 +60,7 @@ export function Header() {
     <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
     <header className="app-header">
       {pathname !== '/' ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
-      <Link to="/" aria-label={t.geral.paginaInicial}><img className="app-emblema" src="/brand/linvuu-app-icon.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
+      <Link to="/" aria-label={t.geral.paginaInicial}><img className="app-emblema" src="/brand/linvuu-app-emblema.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
     {aberto && <section id="app-ajustes" className="app-ajustes" aria-label={a.ajustes}>

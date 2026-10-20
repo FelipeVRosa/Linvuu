@@ -30,3 +30,8 @@ jobs:
 
       - name: Validar bloqueadores do parecer nos dois temas
         run: node scripts/testar-parecer-apk.mjs
+
+      - name: Testar recuperação, controle e cancelamento de áudio
+        run: node scripts/testar-audio-apk.mjs
+      - name: Testar leitura, prática corrigida e retomada
+        run: node scripts/testar-estudo-apk.mjs

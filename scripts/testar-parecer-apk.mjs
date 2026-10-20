@@ -24,7 +24,9 @@ try {
   assert.equal(layout.overflow,false,`${tema} ${path} overflow`);assert.ok(layout.bar<=96,`${tema} ${path} nav ${layout.bar}`);
   if(path==='/curso/en')assert.equal(await page.locator('a[href="/curso/en/dia/9"]').count(),0);
   if(path==='/curso/en/dia/4'){
-   if(!await page.locator('.ex-audio button').count()) await page.locator('.sessao-nav .btn-primary').click();
+   await page.locator('.app-sessao').waitFor();
+   await page.locator('.app-navegador-etapas summary').click();
+   await page.locator('.passo').filter({hasText:'Exercícios'}).first().click();
    const audio=page.locator('.ex-audio button');await audio.waitFor();
    assert.equal(await audio.getAttribute('aria-label'),'Ouvir');
   }

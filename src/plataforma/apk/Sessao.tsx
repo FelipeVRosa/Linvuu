@@ -1,10 +1,12 @@
+import { ControlesAudio } from './ControlesAudio';
+import { lerPratica, salvarPratica, type Pratica } from './estudo';
 import { APK } from '../../plataforma';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bloco, Exercicio, Palavra, SessaoAula } from '../../lib/aulas';
 import { corrigirResposta, resumirExercicios, normalizarResposta as norm } from '../../lib/correcaoExercicios';
 import { consentimento, definirConsentimento, registrar } from '../../lib/medicao';
-import { falar, falarLista, falarTrechos, parar, temVoz } from '../../lib/audio';
+import { falar, falarLista, falarTrechos, parar } from './audio';
 import { trechos } from '../../lib/narracao';
 import { textos } from '../../lib/textos';
 import { chaveSessao, lerSessao, salvarSessao } from '../../lib/progresso';
@@ -75,7 +77,7 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
   );
 }
 
-function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
+function Exercicios({ itens, idioma, aoFinalizar }: { itens: Exercicio[]; idioma: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
   const [i, setI] = useState(0);
   const [escolha, setEscolha] = useState<string | null>(null);
@@ -107,6 +109,7 @@ function Exercicios({ itens, idioma }: { itens: Exercicio[]; idioma: string }) {
       const final = { ...acertos };
       const resumo = resumirExercicios(itens, final);
       registrar({ t: 'fim', idioma, aula, ac: resumo.acertos, tot: resumo.total });
+      if(resumo.total>0)aoFinalizar?.(resumo.acertos,resumo.total);
       setFim(true);
     } else setI(i + 1);
   };
@@ -232,7 +235,7 @@ function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string
     <div className="narrar-barra">
       {lendo
         ? <button type="button" className="btn btn-ghost" onClick={() => { parar(); setLendo(false); }}>{T.parar}</button>
-        : <button type="button" className="btn btn-ghost" onClick={ouvir}>🔊 {T.ouvirExplicacao}</button>}
+        : <button type="button" className="btn btn-ghost" onClick={ouvir}><span aria-hidden="true">🔊</span> {T.ouvirExplicacao}</button>}
     </div>
   );
 }
@@ -260,7 +263,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
   );
 }
 
-function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explicacao?: string }) {
+function Conteudo({ b, idioma, explicacao, aoFinalizar }: { b: Bloco; idioma: string; explicacao?: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
@@ -317,7 +320,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
       </section>
     );
     case 'gramatica': return <Gramatica b={b} idioma={idioma} explicacao={explicacao} />;
-    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} />;
+    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} aoFinalizar={aoFinalizar} />;
   }
 }
 
@@ -329,10 +332,13 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const concluir = () => { setCompleta(true); if (dia) setMsgFim(concluirDia(idioma, dia, !!usuario)); };
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
+  const corrigiveis=sessao.blocos.flatMap(b=>b.tipo==='exercicios'?b.itens:[]).filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length;
+  const blocosCorrigidos=sessao.blocos.map((b,i)=>b.tipo==='exercicios'&&b.itens.some(e=>e.tipo!=='repeat'&&e.tipo!=='producao')?i:-1).filter(i=>i>=0);
+  const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const p=lerPratica(`${chave}:bloco:${i}`);return p?[[i,p]]:[];})));
+  const pratica=blocosCorrigidos.length>0&&blocosCorrigidos.every(i=>praticas[i])?{acertos:blocosCorrigidos.reduce((n,i)=>n+praticas[i].acertos,0),total:blocosCorrigidos.reduce((n,i)=>n+praticas[i].total,0)}:null;
+  const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem teste corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'},es:{leitura:'Sesión de lectura y escucha, sin prueba corregida.',pendente:'Completa la práctica corregida antes de finalizar esta sesión.',resultado:'Práctica corregida',concluir:'Finalizar lectura',local:'El progreso de visitante se guarda en este dispositivo. Borrar los datos puede eliminarlo.'}}[LOCALE.codigo];
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
   const [completa, setCompleta] = useState(() => lerSessao(chave)?.completa ?? false);
-  const [voz, setVoz] = useState<boolean | null>(null);
-  const [provisorio, setProvisorio] = useState(false);
   const b = sessao.blocos[idx];
   const tituloEtapa = useRef<HTMLHeadingElement>(null);
   const primeiraEtapa = useRef(true);
@@ -342,12 +348,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
     tituloEtapa.current?.focus();
   }, [idx, compacta]);
 
-  useEffect(() => { temVoz(idioma).then(setVoz); return () => parar(); }, [idioma]);
-  useEffect(() => {
-    const ouvir = (e: Event) => setProvisorio((e as CustomEvent<string>).detail === 'voz-do-navegador');
-    window.addEventListener('linvuu:fonte-audio', ouvir);
-    return () => window.removeEventListener('linvuu:fonte-audio', ouvir);
-  }, []);
+  useEffect(() => () => parar(), [idioma]);
   useEffect(() => { parar(); salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
 
   const etapas = (
@@ -360,19 +361,24 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
 
   return (
     <div className={`sessao${compacta ? " app-sessao" : ""}`}>
+      <ControlesAudio />
       {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx + 1} aria-label={T.blocosSessao} /></div>}
-      {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
-      {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
       <div className="bloco">
         <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2>{!compacta && <span>{T.bloco(idx + 1, total, b.min)}</span>}</div>
-        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
+        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} aoFinalizar={(acertos,total)=>setPraticas(p=>({...p,[idx]:salvarPratica(`${chave}:bloco:${idx}`,acertos,total)}))} />
+      </div>
+      <div className="app-estudo-resumo">
+       {!corrigiveis&&<p>{estudoTexto.leitura}</p>}
+       {pratica&&<p>{estudoTexto.resultado}: {pratica.acertos}/{pratica.total}</p>}
+       {idx===total-1&&corrigiveis>0&&!pratica&&!completa&&<p role="status">{estudoTexto.pendente}</p>}
+       {!usuario&&<p>{estudoTexto.local}</p>}
       </div>
       <div className="sessao-nav">
         <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{T.voltar}</button>
         {idx < total - 1
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
-          : <button type="button" className="btn btn-primary" onClick={concluir}>{completa ? T.concluida : T.concluir}</button>}
+          : <button type="button" className="btn btn-primary" disabled={corrigiveis>0&&!pratica&&!completa} onClick={concluir}>{completa ? T.concluida : corrigiveis ? T.concluir : estudoTexto.concluir}</button>}
       </div>
       {idx === total - 1 && (completa || proximo) && (
         <p className="concluida" role="status">{completa && (msgFim ?? T.concluidaNav)} {proximo && <Link to={proximo} className="btn btn-primary concluida-prox">{T.proxSessao}</Link>}</p>

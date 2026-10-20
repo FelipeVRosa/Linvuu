@@ -14,10 +14,15 @@ export default defineConfig(({ mode }) => {
   build: { outDir: apk ? 'dist-apk' : 'dist', copyPublicDir: !apk },
   plugins: [react(), ...(apk ? [{
     name: 'publico-apk-sem-audio',
+    enforce: 'pre' as const,
+    resolveId(source, importer) {
+      if (importer && source.startsWith('.') && path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.ts$/, '') === path.resolve('src/lib/audio')) return path.resolve('src/plataforma/apk/audio.ts');
+    },
     generateBundle(_options, bundle) {
       for (const chunk of Object.values(bundle)) {
         if (chunk.type !== 'chunk') continue;
         for (const id of Object.keys(chunk.modules)) {
+          if (id.replaceAll('\\', '/').endsWith('/src/lib/audio.ts')) throw new Error('Motor de áudio do website incluído no APK');
           if (id.replaceAll('\\', '/').endsWith('/src/plataforma/website/checkout.ts')) {
             throw new Error('Checkout do website incluído no APK');
           }

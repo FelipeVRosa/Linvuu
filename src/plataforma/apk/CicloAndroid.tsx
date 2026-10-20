@@ -1,3 +1,4 @@
+import { pausar } from './audio';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
@@ -7,6 +8,12 @@ import { App } from '@capacitor/app';
 export function CicloAndroid({ painelAberto, fecharPainel }: { painelAberto: boolean; fecharPainel: () => void }) {
   const nav = useNavigate();
   const { pathname } = useLocation();
+  useEffect(() => {
+    const aoOcultar=()=>{if(document.hidden)pausar();};
+    document.addEventListener('visibilitychange',aoOcultar);
+    const listener=Capacitor.isNativePlatform()?App.addListener('pause',pausar):null;
+    return ()=>{document.removeEventListener('visibilitychange',aoOcultar);void listener?.then(h=>h.remove()).catch(()=>{});};
+  }, []);
   useEffect(() => {
     if (!Capacitor.isNativePlatform() || Capacitor.getPlatform() !== 'android') return;
     const listener = App.addListener('backButton', ({ canGoBack }) => {

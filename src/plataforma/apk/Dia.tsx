@@ -1,3 +1,4 @@
+import { useAuth } from '../../lib/AuthContext';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Aula, carregarAula, coberturaDoCurso, getCurso, statusDoCurso } from '../../lib/content';
@@ -15,6 +16,7 @@ import { experiencia } from './experiencia';
 import { appTextos } from './textos';
 export default function Dia(){
  const {id,n}=useParams(),curso=getCurso(id),dia=Number(n),x=experiencia(),a=appTextos(),ass=useAssinatura();
+ const {usuario}=useAuth();
  const total=statusDoCurso(id??'')?.total??0;
  const valido=!!curso&&Number.isInteger(dia)&&dia>0&&dia<=total;
  const bloqueado=!gratis(dia)&&!ass.ativa&&!import.meta.env.DEV;
@@ -38,7 +40,7 @@ export default function Dia(){
   {!aula&&!erro&&!bloqueado&&!decidindo&&<p className="app-carregando" role="status">{T.carregando}</p>}
   {aula?.sessao&&<><header className="app-aula-topo"><p className="app-kicker"><span className="app-aula-insignia" aria-hidden="true">{curso!.id==='br'?'PT':curso!.id.toUpperCase()}</span>{curso!.nome} · {T.rotuloDia(dia)}</p><h1>{aula.aula&&aula.titulo.startsWith(aula.aula.titulo+': ')?aula.titulo.slice(aula.aula.titulo.length+2):aula.titulo}</h1><details><summary>{x.objetivo}</summary><p>{aula.aula?.objetivo??aula.objetivo}</p></details></header>
    {aula.semTraducao&&<p className="nota">{T.semTraducao(aula.semTraducao)}</p>}
-   <Sessao key={`${curso!.id}:${dia}`} compacta nomeIdioma={curso!.nome} explicacao={aula.semTraducao??LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero??dia} dia={dia} proximo={dia<total?`/curso/${curso!.id}/dia/${dia+1}`:undefined}/>
+   <Sessao key={`${curso!.id}:${dia}:${usuario?.uid??'visitante'}`} compacta nomeIdioma={curso!.nome} explicacao={aula.semTraducao??LOCALE.explicacao} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero??dia} dia={dia} proximo={dia<total?`/curso/${curso!.id}/dia/${dia+1}`:undefined}/>
    <ReportarProblema key={`${curso!.id}:${dia}`} idioma={curso!.id} dia={dia}/>
   </>}
  </div>;

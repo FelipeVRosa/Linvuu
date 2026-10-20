@@ -150,3 +150,12 @@ html[data-plataforma="nativo"] .aa-reporte>.link{min-height:48px;display:inline-
 }
 html[data-plataforma="nativo"] .conta-aviso{background:var(--bg-recuado);color:var(--fg-1)}
 html[data-plataforma="nativo"] .voltar{background:var(--bg-elevado);color:var(--link)}
+.app-audio-controles{background:var(--bg-elevado);border:1px solid var(--linha-forte);border-radius:16px;padding:16px;margin-bottom:20px}
+.app-audio-controles>p{font-size:.875rem;line-height:1.5;margin:0 0 12px;overflow-wrap:anywhere}
+.app-audio-botoes{display:flex;flex-wrap:wrap;gap:8px}
+.app-audio-botoes .btn{padding:12px;min-height:48px;line-height:1.4}
+.app-audio-botoes label{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:.875rem}
+.app-audio-botoes select{min-height:48px;font:inherit;background:var(--bg-elevado);color:var(--fg-1);border:1px solid var(--linha-forte);border-radius:12px;padding:8px;max-width:100%}
+.app-estudo-resumo{color:var(--fg-2);font-size:.875rem;line-height:1.5;margin-top:16px}
+.app-audio-controles summary{min-height:48px;display:flex;align-items:center;font-size:.875rem;font-weight:600;cursor:pointer}
+.app-audio-controles details[open]>summary{margin-bottom:8px}

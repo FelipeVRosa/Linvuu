@@ -14,6 +14,8 @@ try{
   await page.goto(base+locale+'/');await page.locator('.app-missao').waitFor();await largura(page);
   assert.equal(await page.locator('.app-idiomas [aria-pressed=true]').count(),1);
   await page.locator('[aria-controls=app-ajustes]').click();await page.locator('#app-tema').selectOption('escuro');assert.equal(await page.locator('html').getAttribute('data-tema-aluno'),'escuro');await page.keyboard.press('Escape');
+  const contraste=await page.locator('.lv-tab.on').evaluate(e=>{const rgb=s=>s.match(/[\d.]+/g).slice(0,3).map(Number);const lum=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);const a=lum(rgb(getComputedStyle(e).color)),b=lum(rgb(getComputedStyle(e.closest('nav')).backgroundColor));return(Math.max(a,b)+.05)/(Math.min(a,b)+.05);});assert.ok(contraste>=4.5,'Contraste da aba ativa no tema escuro');
+
   const path=await page.locator('.app-atalho-percurso').getAttribute('href');await page.locator('.app-atalho-percurso').click();await page.locator('.app-unidade').first().waitFor();await largura(page);
   assert.equal(await page.locator('.app-unidade[open]').count(),1);
   const quantidade=await page.locator('.app-unidade').count();

@@ -46,3 +46,7 @@ A dependência de compras já existia no projeto. A integração normal Stripe e
 ## Evidência
 
 Teste de guardas/metadados em scripts/testar-loja-apk.ts e design/apk/loja-rodada3-testes.json. Build Vite/TypeScript não substituem compilação Gradle e dispositivo. Verificar estado atual do CI do commit antes de instalar.
+
+Validação adicional: testes de ponte de armazenamento simulada cobrem hidratação, migração, ordem, exclusão de tokens, isolamento de contas, limpeza e recuperação de falha de escrita. A regressão visual agora inclui Conta, nos dois temas (18cenários), e verifica o link de solicitação sem enviar e-mail.
+
+Fechamento local:42recortes PT/EN/ES, claro/escuro conforme a suíte e raiz200%, sem violações axe detectadas (há verificações inconclusivas). Corrigido overflow de2px no catálogo inglês com cartão de coluna única em tela estreita. Ícone512×512 para preparação da ficha em design/apk/loja/icone-512.png. A privacidade específica do APK e a declaração de uso do Test Store precisam revisão antes de habilitar o SDK; a política web existente não foi modificada. Compilação Android deve ser conferida no CI antes de declarar APK validado.

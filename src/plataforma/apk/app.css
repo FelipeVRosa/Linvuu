@@ -164,3 +164,4 @@ html[data-plataforma="nativo"] .voltar{background:var(--bg-elevado);color:var(--
 .app-exclusao p{font-size:.9375rem;color:var(--fg-2);margin:0}
 .app-exclusao input{min-height:48px;font:inherit;padding:12px;border:1px solid var(--linha-forte);background:var(--bg);color:var(--fg-1);border-radius:12px;width:100%}
 .app-exclusao .btn{min-height:48px;white-space:normal}
+@media(max-width:400px){html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:minmax(0,1fr)}.app-curso-linha>span{justify-self:start}.app-curso-linha>div{min-width:0}}

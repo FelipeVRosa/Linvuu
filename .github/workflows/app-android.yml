@@ -23,7 +23,7 @@ jobs:
           java-version: '21'
       - run: npm ci
       - name: Verificar guardas de preparação da loja
-        run: node --import tsx scripts/testar-loja-apk.ts
+        run: node --import tsx scripts/testar-loja-apk.ts && node --import tsx scripts/testar-armazenamento-apk.ts
       - name: Gerar o site e sincronizar com o Android
         run: npm run app:android
       - name: Compilar APK e AAB de depuração

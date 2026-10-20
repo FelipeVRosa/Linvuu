@@ -11,7 +11,7 @@ try {
  browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
  const context=await browser.newContext({viewport:{width:320,height:640},reducedMotion:'reduce'});const page=await context.newPage();
  await page.route('https://linvuu.com.br/**',r=>r.abort());
- for(const tema of ['claro','escuro'])for(const path of ['/','/cursos','/curso/en','/curso/en/dia/1','/curso/en/dia/4','/curso/en/dia/9','/entrar','/gramatica/en']){
+ for(const tema of ['claro','escuro'])for(const path of ['/','/cursos','/curso/en','/curso/en/dia/1','/curso/en/dia/4','/curso/en/dia/9','/entrar','/assinatura','/gramatica/en']){
   if(page.url()!=='about:blank')await page.evaluate(()=>localStorage.clear());
   await page.goto(base+path);await page.locator('#conteudo h1').waitFor();
   await page.evaluate(t=>{localStorage.setItem('linvuu:tema-app',t);document.documentElement.dataset.temaAluno=t},tema);
@@ -22,6 +22,7 @@ try {
   const layout=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,bar:document.querySelector('.lv-tabbar')?.getBoundingClientRect().height??0}));
   if(layout.overflow)console.log(await page.evaluate(()=>Array.from(document.querySelectorAll('body *')).filter(e=>e.getBoundingClientRect().right>innerWidth+1 || e.scrollWidth>e.clientWidth+1).map(e=>({cls:e.className,text:e.textContent?.slice(0,50),right:e.getBoundingClientRect().right,sw:e.scrollWidth,cw:e.clientWidth})).slice(0,12)));
   assert.equal(layout.overflow,false,`${tema} ${path} overflow`);assert.ok(layout.bar<=96,`${tema} ${path} nav ${layout.bar}`);
+  if(path==='/assinatura'){assert.equal(await page.locator('#excluir-conta').count(),1);assert.match(await page.locator('#excluir-conta a.btn').getAttribute('href'),/^mailto:hello\.linvuu@gmail\.com\?/);}
   if(path==='/curso/en')assert.equal(await page.locator('a[href="/curso/en/dia/9"]').count(),0);
   if(path==='/curso/en/dia/4'){
    await page.locator('.app-sessao').waitFor();

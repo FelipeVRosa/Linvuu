@@ -330,6 +330,13 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const [voz, setVoz] = useState<boolean | null>(null);
   const [provisorio, setProvisorio] = useState(false);
   const b = sessao.blocos[idx];
+  const tituloEtapa = useRef<HTMLHeadingElement>(null);
+  const primeiraEtapa = useRef(true);
+  useEffect(() => {
+    if (!compacta) return;
+    if (primeiraEtapa.current) { primeiraEtapa.current = false; return; }
+    tituloEtapa.current?.focus();
+  }, [idx, compacta]);
 
   useEffect(() => { temVoz(idioma).then(setVoz); return () => parar(); }, [idioma]);
   useEffect(() => {
@@ -350,7 +357,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
         ))}
       </ol>
       <div className="bloco">
-        <div className="bloco-topo"><h2>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
+        <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
         <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
       </div>
       <div className="sessao-nav">

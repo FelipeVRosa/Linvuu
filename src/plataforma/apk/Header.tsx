@@ -22,6 +22,13 @@ export function Header() {
     try { localStorage.setItem('linvuu:tema-app', tema); } catch { /* preferência válida nesta sessão */ }
     return () => media.removeEventListener('change', aplicar);
   }, [tema]);
+  const [escala, setEscala] = useState(() => { try { const v=localStorage.getItem('linvuu:leitura-app'); return ['1','1.25','1.5'].includes(v ?? '') ? v! : '1'; } catch { return '1'; } });
+  useEffect(() => {
+    document.documentElement.style.setProperty('--app-text-scale', escala);
+    try { localStorage.setItem('linvuu:leitura-app', escala); } catch { /* permanece nesta tela */ }
+  }, [escala]);
+  const primeiroAjuste = useRef<HTMLSelectElement>(null);
+  useEffect(() => { if(aberto) primeiroAjuste.current?.focus(); }, [aberto]);
   const botaoAjustes = useRef<HTMLButtonElement>(null);
   const fecharPainel = useCallback(() => { setAberto(false); botaoAjustes.current?.focus(); }, []);
   useEffect(() => {
@@ -57,8 +64,10 @@ export function Header() {
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
     {aberto && <section id="app-ajustes" className="app-ajustes" aria-label={a.ajustes}>
-      <label>{t.barra.idioma}<select id="app-idioma" value={LOCALE.codigo} onChange={e => idioma(e.target.value as CodigoLocale)}>{LOCALES.map(l => <option key={l.codigo} value={l.codigo}>{l.nome}</option>)}</select></label>
+      <label>{t.barra.idioma}<select ref={primeiroAjuste} id="app-idioma" value={LOCALE.codigo} onChange={e => idioma(e.target.value as CodigoLocale)}>{LOCALES.map(l => <option key={l.codigo} value={l.codigo}>{l.nome}</option>)}</select></label>
       <label>{x.aparencia}<select id="app-tema" value={tema} onChange={e => setTema(e.target.value)}><option value="sistema">{x.sistema}</option><option value="claro">{x.claro}</option><option value="escuro">{x.escuro}</option></select></label>
+      <label>{x.leitura}<select id="app-leitura" value={escala} onChange={e => setEscala(e.target.value)}><option value="1">{x.normal}</option><option value="1.25">{x.ampliado}</option><option value="1.5">{x.grande}</option></select></label>
+      <button type="button" className="app-ajustes-fechar" onClick={fecharPainel}>{x.fechar}</button>
       <p>{a.avisoIdiomas}</p>
       <Link to="/assinatura">{t.nav.assinatura}</Link>
       <Link to="/privacidade">{t.rodape.privacidade}</Link>

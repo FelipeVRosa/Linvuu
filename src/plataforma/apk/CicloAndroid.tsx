@@ -1,3 +1,4 @@
+import { sincronizarArmazenamento } from './armazenamento';
 import { pausar } from './audio';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -11,7 +12,7 @@ export function CicloAndroid({ painelAberto, fecharPainel }: { painelAberto: boo
   useEffect(() => {
     const aoOcultar=()=>{if(document.hidden)pausar();};
     document.addEventListener('visibilitychange',aoOcultar);
-    const listener=Capacitor.isNativePlatform()?App.addListener('pause',pausar):null;
+    const listener=Capacitor.isNativePlatform()?App.addListener('pause',()=>{pausar();void sincronizarArmazenamento();}):null;
     return ()=>{document.removeEventListener('visibilitychange',aoOcultar);void listener?.then(h=>h.remove()).catch(()=>{});};
   }, []);
   useEffect(() => {

@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => {
   const alvo = env.VITE_ALVO || 'website';
   if (!['website', 'apk'].includes(alvo)) throw new Error('VITE_ALVO deve ser website ou apk');
   const apk = alvo === 'apk';
+  if(apk && env.VITE_COMPRAS_ATIVAS==='true')throw new Error('Compras de produção bloqueadas nesta fase. Use somente Test Store.');
+  if(apk && env.VITE_BILLING_MODE && env.VITE_BILLING_MODE!=='revenuecat-test-store')throw new Error('Modo de pagamento não autorizado para este APK de teste');
+  if(apk && env.VITE_BILLING_MODE==='revenuecat-test-store' && !env.VITE_REVENUECAT_TEST_KEY?.startsWith('test_'))throw new Error('Test Store exige chave pública test_; nunca use chave de produção');
   return {
   define: { 'import.meta.env.VITE_ALVO': JSON.stringify(alvo) },
   resolve: { alias: { '@plataforma': path.resolve('src/plataforma', alvo) } },
@@ -15,6 +18,9 @@ export default defineConfig(({ mode }) => {
   plugins: [react(), ...(apk ? [{
     name: 'publico-apk-sem-audio',
     enforce: 'pre' as const,
+    transform(code, id) {
+      if(id.split('?')[0]===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
+    },
     resolveId(source, importer) {
       if (importer && source.startsWith('.') && path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.ts$/, '') === path.resolve('src/lib/audio')) return path.resolve('src/plataforma/apk/audio.ts');
     },

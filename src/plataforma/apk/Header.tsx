@@ -1,3 +1,5 @@
+import { armazenamentoFalhou } from './armazenamento';
+import { Capacitor, SystemBars, SystemBarsStyle } from '@capacitor/core';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { LOCALE, LOCALES, lembrarLocale, urlEm, useT } from '../../i18n';
@@ -25,11 +27,13 @@ export function Header() {
     return () => { encerrado=true; cancelAnimationFrame(frame); clearTimeout(limite); observer.disconnect(); };
   }, [pathname]);
   const { usuario, sair } = useAuth();
+  const [falhaArmazenamento,setFalhaArmazenamento]=useState(armazenamentoFalhou);
+  useEffect(()=>{const ler=()=>setFalhaArmazenamento(armazenamentoFalhou);window.addEventListener('linvuu:armazenamento',ler);return ()=>window.removeEventListener('linvuu:armazenamento',ler);},[]);
   const [aberto, setAberto] = useState(false);
   const [tema, setTema] = useState(() => { try { return localStorage.getItem('linvuu:tema-app') || 'sistema'; } catch { return 'sistema'; } });
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
-    const aplicar = () => { document.documentElement.dataset.temaAluno = tema === 'sistema' ? (media.matches ? 'escuro' : 'claro') : tema; };
+    const aplicar = () => { const escolhido=tema === 'sistema' ? (media.matches ? 'escuro' : 'claro') : tema; document.documentElement.dataset.temaAluno=escolhido; if(Capacitor.isNativePlatform())void SystemBars.setStyle({style:escolhido==='escuro'?SystemBarsStyle.Dark:SystemBarsStyle.Light}).catch(()=>{}); };
     aplicar(); media.addEventListener('change', aplicar);
     try { localStorage.setItem('linvuu:tema-app', tema); } catch { /* preferência válida nesta sessão */ }
     return () => media.removeEventListener('change', aplicar);
@@ -82,11 +86,13 @@ export function Header() {
       <button type="button" className="app-ajustes-fechar" onClick={fecharPainel}>{x.fechar}</button>
       <p>{a.avisoIdiomas}</p>
       <Link to="/assinatura">{t.nav.assinatura}</Link>
+      <Link to="/assinatura#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data',es:'Eliminar cuenta y datos'}[LOCALE.codigo]}</Link>
       <Link to="/privacidade">{t.rodape.privacidade}</Link>
       <Link to="/termos">{t.assinatura.termos}</Link>
       {usuario ? <button type="button" disabled={saindo} onClick={deslogar}>{saindo ? t.geral.carregando : t.nav.sair}</button> : <Link to="/entrar">{t.nav.entrar}</Link>}
       {erro && <p role="alert">{a.erroSair}</p>}
     </section>}
+    {falhaArmazenamento&&<p className="app-rede" role="alert">{{'pt-BR':'Não foi possível salvar no armazenamento do aparelho. O progresso pode não ser preservado ao fechar.',en:'Could not save to device storage. Progress may not be preserved when you close the app.',es:'No se pudo guardar en el dispositivo. El progreso podría no conservarse al cerrar la aplicación.'}[LOCALE.codigo]}</p>}
     {!online && <p className="app-rede" role="status">{a.semRede}</p>}
   </>;
 }

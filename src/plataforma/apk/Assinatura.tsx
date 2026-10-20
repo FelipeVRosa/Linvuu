@@ -1,3 +1,5 @@
+import { ExclusaoConta } from './ExclusaoConta';
+import { PagamentosTeste } from './PagamentosTeste';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../lib/AuthContext';
 import { useAssinatura } from '../../lib/acesso';
@@ -21,6 +23,8 @@ export default function Assinatura() {
     <p className="nota">{a.teste}</p>
     </section>
     <Link className="btn btn-ghost" to="/cursos">{t.nav.cursos}</Link>
+    {usuario&&<PagamentosTeste key={usuario.uid} uid={usuario.uid}/>}
+    <ExclusaoConta key={usuario?.uid??'visitante'}/>
     <p className="app-conta-legal"><Link to="/privacidade">{t.rodape.privacidade}</Link> · <Link to="/termos">{t.assinatura.termos}</Link></p>
   </div>;
 }

@@ -1,4 +1,4 @@
-// Cobrança da Linvuu: Stripe é a fonte da verdade (sem banco próprio). O navegador manda o token de login (Firebase);
+// Cobrança da Linvuu: Stripe (site) e Google Play via RevenueCat (app) são as fontes da verdade (sem banco próprio). O navegador manda o token de login (Firebase);
 // o servidor confere o token, acha o cliente no Stripe pelo uid e responde se a assinatura está ativa.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -6,6 +6,7 @@ import type { Express, Request, Response } from 'express';
 import Stripe from 'stripe';
 import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
+import { consultarPlay, playConfigurado } from './play';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -19,7 +20,8 @@ const PRECO_ANUAL = 99900; // 12 meses, pagamento único (cartão ou boleto), se
 const PLANOS_PACOTE = ['trimestral', 'trimestral-pix', 'anual'];
 const somaMeses = (t: number, m: number) => { const d = new Date(t * 1000); d.setMonth(d.getMonth() + m); return Math.floor(d.getTime() / 1000); };
 
-export const cobrancaConfigurada = () => !!(stripe && projeto);
+/** Alguma origem de cobrança pronta: Stripe (site) ou Google Play (app, via RevenueCat). */
+export const cobrancaConfigurada = () => !!((stripe || playConfigurado()) && projeto);
 
 export async function usuario(req: Request): Promise<{ uid: string; email?: string } | null> {
   const h = req.headers.authorization || '';
@@ -60,7 +62,7 @@ function cliente(u: { uid: string; email?: string }): Promise<string> {
   return p;
 }
 
-type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | null; status: string | null; cancelaEm: number | null; ate: number | null };
+type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | 'play' | null; status: string | null; cancelaEm: number | null; ate: number | null };
 
 // Cada sessão paga e cada áudio pago perguntam se o acesso está ativo. Sem memória, eram 3 chamadas ao Stripe por arquivo
 // de áudio (dezenas por sessão), o que estoura o limite da API e deixa o site lento. A resposta vale 60 segundos por pessoa.
@@ -93,6 +95,18 @@ function cobrancaDevolvida(x: Stripe.Checkout.Session): boolean {
 
 /** Acesso = assinatura mensal ativa OU pacote de 3 meses pago (Pix e boleto só contam depois de pagos). Stripe é a fonte da verdade. */
 async function consultarAcesso(u: { uid: string; email?: string }): Promise<Acesso> {
+  // Duas origens, um acesso: assinatura do site (Stripe) OU do app (Google Play). Qualquer erro de consulta vira erro, nunca acesso.
+  // Se uma origem falhar e a outra confirmar acesso, vale a confirmação; se nenhuma confirmar e alguma falhar, é erro.
+  const [rs, rp] = await Promise.allSettled([stripe ? consultarStripe(u) : Promise.resolve(null), consultarPlay(u.uid)]);
+  const site = rs.status === 'fulfilled' ? rs.value : null, play = rp.status === 'fulfilled' ? rp.value : null;
+  if (site?.ativa) return site;
+  if (play?.ativa) return { ativa: true, via: 'play', status: 'active', cancelaEm: play.cancelaEm, ate: play.ate };
+  if (rs.status === 'rejected') throw rs.reason;
+  if (rp.status === 'rejected') throw rp.reason;
+  return site ?? { ativa: false, via: null, status: null, cancelaEm: null, ate: null };
+}
+
+async function consultarStripe(u: { uid: string; email?: string }): Promise<Acesso> {
   const c = await cliente(u);
   const [subs, sessoes] = await Promise.all([
     stripe!.subscriptions.list({ customer: c, status: 'all', limit: 10 }),
@@ -185,6 +199,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
 
   app.post('/api/billing/checkout', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
+    if (!stripe) { nao(res); return; }
     try {
       const base = urlBase();
       const plano = req.body?.plano;
@@ -224,6 +239,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
 
   app.post('/api/billing/portal', async (req: Request, res: Response) => {
     const u = await guarda(req, res); if (!u) return;
+    if (!stripe) { nao(res); return; }
     try {
       const idioma = ['en', 'es'].includes(req.body?.idioma) ? (req.body.idioma as 'en' | 'es') : null;
       const s = await stripe!.billingPortal.sessions.create({ customer: await cliente(u), locale: idioma ?? 'pt-BR', return_url: `${urlBase()}${idioma ? `/${idioma}` : ''}/assinatura` });

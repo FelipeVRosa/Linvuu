@@ -9,7 +9,11 @@ export default defineConfig(({ mode }) => {
   if (!['website', 'apk'].includes(alvo)) throw new Error('VITE_ALVO deve ser website ou apk');
   const apk = alvo === 'apk';
   if(apk && env.VITE_COMPRAS_ATIVAS==='true')throw new Error('Compras de produção bloqueadas nesta fase. Use somente Test Store.');
-  if(apk && env.VITE_BILLING_MODE && env.VITE_BILLING_MODE!=='revenuecat-test-store')throw new Error('Modo de pagamento não autorizado para este APK de teste');
+  // Google Play Billing real: só com modo explícito, chave pública Android (goog_) e autorização escrita do dono no ambiente do build.
+  // Sem LINVUU_COBRANCA_PLAY_AUTORIZADA=sim o build falha, para nenhum APK de teste sair com compra real por engano.
+  const play = apk && env.VITE_BILLING_MODE==='google-play';
+  if(play && (!env.VITE_REVENUECAT_ANDROID_KEY?.startsWith('goog_') || env.LINVUU_COBRANCA_PLAY_AUTORIZADA!=='sim'))throw new Error('Google Play Billing exige VITE_REVENUECAT_ANDROID_KEY=goog_… e LINVUU_COBRANCA_PLAY_AUTORIZADA=sim');
+  if(apk && env.VITE_BILLING_MODE && !play && env.VITE_BILLING_MODE!=='revenuecat-test-store')throw new Error('Modo de pagamento não autorizado para este APK de teste');
   if(apk && env.VITE_BILLING_MODE==='revenuecat-test-store' && !env.VITE_REVENUECAT_TEST_KEY?.startsWith('test_'))throw new Error('Test Store exige chave pública test_; nunca use chave de produção');
   return {
   define: { 'import.meta.env.VITE_ALVO': JSON.stringify(alvo) },

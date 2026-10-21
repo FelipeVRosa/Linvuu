@@ -4,7 +4,7 @@ import { useAuth } from './AuthContext';
 import { carregarAuth } from './firebase';
 import { api } from './api';
 
-export type Assinatura = { carregando: boolean; ativa: boolean; indisponivel: boolean; cancelaEm: number | null; via: 'assinatura' | 'trimestral' | null; ate: number | null; recarregar: () => void };
+export type Assinatura = { carregando: boolean; ativa: boolean; indisponivel: boolean; cancelaEm: number | null; via: 'assinatura' | 'trimestral' | 'play' | null; ate: number | null; recarregar: () => void };
 
 async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
   const { auth } = await carregarAuth();
@@ -18,7 +18,7 @@ async function chamar(caminho: string, metodo: 'GET' | 'POST', corpo?: object) {
 
 export function useAssinatura(): Assinatura {
   const { usuario, carregando: auth } = useAuth();
-  const [estado, setEstado] = useState({ carregando: true, ativa: false, indisponivel: false, cancelaEm: null as number | null, via: null as 'assinatura' | 'trimestral' | null, ate: null as number | null });
+  const [estado, setEstado] = useState({ carregando: true, ativa: false, indisponivel: false, cancelaEm: null as number | null, via: null as 'assinatura' | 'trimestral' | 'play' | null, ate: null as number | null });
   const [n, setN] = useState(0);
   const recarregar = useCallback(() => setN((x) => x + 1), []);
   useEffect(() => {

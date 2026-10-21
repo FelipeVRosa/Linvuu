@@ -4,6 +4,7 @@ import { useAuth } from '../../lib/AuthContext';
 import { appTextos } from './textos';
 import { LOCALE } from '../../i18n';
 import { SESSOES_GRATIS } from '../../config/planos';
+import { comprasPlayDisponiveis } from './comprasPlay';
 export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
   const t = useT(), a = appTextos();
   const { usuario } = useAuth();
@@ -18,7 +19,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
     <h1>{x.titulo}</h1>
     <p>{x.descricao}</p>
     <p>{indisponivel ? t.assinatura.indisponivel : usuario ? a.semAcesso : a.bloqueado}</p>
-    <p>{a.compras}</p>
+    <p>{comprasPlayDisponiveis() ? a.comprasPlay : a.compras}</p>
     {!usuario && <p>{x.conta}</p>}
     {idioma && <Link className="btn btn-primary" to={`/curso/${idioma}`}>{x.revisar}</Link>}
     <Link className="btn btn-ghost" to={usuario ? '/assinatura' : '/entrar?proximo=' + encodeURIComponent(destino)}>{usuario ? t.nav.assinatura : t.nav.entrar}</Link>

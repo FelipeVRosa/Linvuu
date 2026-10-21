@@ -6,6 +6,7 @@ import type { Express, Request, Response } from 'express';
 import Stripe from 'stripe';
 import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
+import { registrarWebhookCobranca } from './billing-webhook';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
@@ -47,13 +48,15 @@ async function preco(): Promise<string> {
 // aparecer. Sem memória, dois cliques seguidos em «Assinar» criavam dois clientes para a mesma pessoa. O id fica guardado
 // por uid (e o pedido em andamento é compartilhado), e a busca só acontece uma vez por processo.
 const clientes = new Map<string, Promise<string>>();
+const usuarioPorCliente = new Map<string, string>();
 function cliente(u: { uid: string; email?: string }): Promise<string> {
   const guardado = clientes.get(u.uid);
   if (guardado) return guardado;
   const p = (async () => {
     const r = await stripe!.customers.search({ query: `metadata['uid']:'${u.uid}'` });
-    if (r.data[0]) return r.data[0].id;
-    return (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
+    const id = r.data[0]?.id ?? (await stripe!.customers.create({ email: u.email, metadata: { uid: u.uid } }, { idempotencyKey: `linvuu-cliente-${u.uid}` })).id;
+    usuarioPorCliente.set(id, u.uid);
+    return id;
   })();
   clientes.set(u.uid, p);
   p.catch(() => clientes.delete(u.uid));
@@ -67,6 +70,17 @@ type Acesso = { ativa: boolean; via: 'assinatura' | 'trimestral' | null; status:
 const ACESSO_MS = 60_000;
 const acessos = new Map<string, { ate: number; p: Promise<Acesso> }>();
 const renovou = new Map<string, number>();
+/** Registra antes de express.json: a assinatura Stripe depende dos bytes originais. */
+export function registrarNotificacoesCobranca(app: Express) {
+  registrarWebhookCobranca(app, {
+    stripe,
+    segredo: () => process.env.STRIPE_WEBHOOK_SECRET,
+    invalidar: (clienteId) => {
+      const uid = usuarioPorCliente.get(clienteId);
+      if (uid) { acessos.delete(uid); renovou.delete(uid); }
+    },
+  });
+}
 setInterval(() => { const t = Date.now(); for (const [k, v] of acessos) if (v.ate < t) acessos.delete(k); for (const [k, v] of renovou) if (t - v > 60_000) renovou.delete(k); }, 5 * 60_000).unref();
 /** Acesso com memória curta; `renovar` ignora a memória (tela de assinatura e volta do pagamento). */
 function acesso(u: { uid: string; email?: string }, renovar = false): Promise<Acesso> {
@@ -246,3 +260,4 @@ export function registrarLivroProtegido(app: Express) {
     try { res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
   });
 }
+

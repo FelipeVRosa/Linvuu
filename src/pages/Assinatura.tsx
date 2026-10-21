@@ -63,6 +63,7 @@ export default function Assinatura() {
           ) : (
             <>
               <p>{s.intro(AULAS_GRATIS)}</p>
+              {LOCALE.codigo === 'pt-BR' && <p className="nota" role="note"><strong>Atualização dos áudios:</strong> estamos atualizando as narrações dos cursos. Alguns áudios podem estar temporariamente indisponíveis. Você pode experimentar as aulas gratuitas antes de contratar e falar com a Linvuu pelo <a href={`mailto:${EMAIL_OFICIAL}`}>e-mail de atendimento</a>.</p>}
               {!usuario && <p className="nota lv-assinatura-conta">{s.semConta} <Link to="/entrar?proximo=/assinatura">{s.jaTemConta}</Link></p>}
               <div className="lv-planos">
                 <div className={`lv-plano lv-plano-dest ${escolhido === 'mensal' ? 'lv-plano-escolhido' : ''}`}>
@@ -96,3 +97,4 @@ export default function Assinatura() {
     </div>
   );
 }
+

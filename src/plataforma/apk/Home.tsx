@@ -44,10 +44,10 @@ export default function Home() {
   {reforco.itens.length>0&&<section className="app-reforco" aria-labelledby="app-reforco-titulo">
    <p className="app-kicker">{reforco.t.rotulo}</p>
    <h2 id="app-reforco-titulo">{reforco.t.titulo(reforco.total)}</h2>
-   <p>{reforco.t.texto(reforco.itens.length)}</p>
-   <Link className="btn btn-primary" to={`/curso/${curso.id}/dia/${reforco.itens[0].dia}?bloco=${reforco.itens[0].bloco}`}>{reforco.t.acao}</Link>
+   <p>{reforco.texto}</p>
+   <Link className="btn btn-primary" to={reforco.link!}>{reforco.t.acao}</Link>
   </section>}
-  <section className="app-avanco" aria-labelledby="app-avanco-titulo"><div className="app-avanco-topo"><span><span className="app-kicker">{x.resumo}</span><h2 id="app-avanco-titulo">{a.concluidas(ret.feitos,ret.total)}</h2></span></div><progress max={ret.total} value={ret.feitos} aria-label={a.progresso} /><p>{x.sinal}</p></section>
+  <section className="app-avanco" aria-labelledby="app-avanco-titulo"><div className="app-avanco-topo"><span><span className="app-kicker">{x.resumo}</span><h2 id="app-avanco-titulo">{a.concluidas(ret.feitos,ret.total)}</h2></span></div><progress max={ret.total} value={ret.feitos} aria-label={a.progresso} /><p>{x.sinal}</p>{!reforco.itens.length&&reforco.proxima&&<p className="app-reforco-proxima">{reforco.proxima}</p>}</section>
   <div className="app-ferramentas">
    <Link className="app-atalho app-atalho-percurso" to={`/curso/${curso.id}`}><span className="app-atalho-icone"><IconeEstudo tipo="percurso" /></span><span><strong>{x.percurso}</strong><small>{curso.nome} · {ret.total} {x.sessoes}</small></span><span className="app-seta" aria-hidden="true">↗</span></Link>
    {IDIOMAS_GRAMATICA.includes(curso.id) && <Link className="app-atalho" to={`/gramatica/${curso.id}`}><span className="app-atalho-icone"><IconeEstudo tipo="livro" /></span><span><strong>{x.consultar}</strong><small>{x.apoio}</small></span><span className="app-seta" aria-hidden="true">↗</span></Link>}

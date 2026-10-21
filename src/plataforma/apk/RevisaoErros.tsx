@@ -14,7 +14,7 @@ export function lerRevisao(bloco:string,itens:Exercicio[],origem:number[]):Revis
  try{const v:unknown=JSON.parse(localStorage.getItem(chave(bloco))??'null');if(revisaoCompativel(v,itens,origem))return v;}catch{/* reiniciar somente a revisão incompatível */}
  return iniciarRevisao(itens,origem);
 }
-export function RevisaoErros({itens,origem,idioma,bloco,aoSair}:{itens:Exercicio[];origem:number[];idioma:string;bloco:string;aoSair:()=>void}) {
+export function RevisaoErros({itens,origem,idioma,bloco,aoSair,titulo,aoTerminar}:{itens:Exercicio[];origem:number[];idioma:string;bloco:string;aoSair:()=>void;titulo?:string;aoTerminar?:(v:Revisao)=>void}) {
  const R=revisaoTextos(),T=textos(idioma),lingua=idioma==='br'?'pt-BR':idioma;
  const [storageKey]=useState(()=>chave(bloco));
  const [v,setV]=useState(()=>lerRevisao(bloco,itens,origem));
@@ -23,7 +23,7 @@ export function RevisaoErros({itens,origem,idioma,bloco,aoSair}:{itens:Exercicio
  const [falha,setFalha]=useState(false);
  const foco=useRef<HTMLHeadingElement>(null),pergunta=useRef<HTMLParagraphElement>(null);
  const atual=v.fila[v.indice],ex=itens[atual],pendentes=pendentesRevisao(v),certas=v.origem.length-pendentes.length;
- useEffect(()=>{try{if(!validarRevisao(v))throw Error('revisao-invalida');localStorage.setItem(storageKey,JSON.stringify(v));setFalha(false);const estado=JSON.stringify({respostas:v.respostas,fim:v.fim});if(estado!==ultimoEstado.current){ultimoEstado.current=estado;window.dispatchEvent(new Event('linvuu:revisao-apk'));}}catch{setFalha(true);}},[v,storageKey]);
+ useEffect(()=>{try{if(!validarRevisao(v))throw Error('revisao-invalida');localStorage.setItem(storageKey,JSON.stringify(v));setFalha(false);const estado=JSON.stringify({respostas:v.respostas,fim:v.fim});if(estado!==ultimoEstado.current){ultimoEstado.current=estado;window.dispatchEvent(new Event('linvuu:revisao-apk'));if(v.fim)aoTerminar?.(v);}}catch{setFalha(true);}},[v,storageKey]);
  useEffect(()=>{if(v.fim)foco.current?.focus();else pergunta.current?.focus();},[v.indice,v.rodada,v.fim]);
  useEffect(()=>()=>parar(),[]);
  const editar=(dados:Partial<Revisao>)=>setV(p=>({...p,...dados,em:new Date().toISOString()}));
@@ -38,7 +38,7 @@ export function RevisaoErros({itens,origem,idioma,bloco,aoSair}:{itens:Exercicio
  const seguir=()=>{parar();setAviso(a=>({...a,texto:'',resposta:''}));setV(avancarRevisao);};
  const resposta=(e:Exercicio)=>e.gabarito??e.respostaEsperada;
  return <section className="app-revisao" aria-labelledby="app-revisao-titulo">
-  <header><p className="app-kicker">{R.rodada} {v.rodada}</p><h3 id="app-revisao-titulo" ref={foco} tabIndex={-1}>{v.fim?R.final:R.titulo}</h3><p>{R.separada}</p></header>
+  <header><p className="app-kicker">{R.rodada} {v.rodada}</p><h3 id="app-revisao-titulo" ref={foco} tabIndex={-1}>{v.fim?R.final:titulo??R.titulo}</h3><p>{R.separada}</p></header>
   <button type="button" className="btn btn-ghost app-revisao-voltar" onClick={()=>{parar();aoSair();}}>← {R.voltar}</button>
   {falha&&<p role="alert">{({'pt-BR':'Não foi possível salvar esta revisão. Ela continua aberta; evite fechar o aplicativo.',en:'This review could not be saved. It remains open; avoid closing the app.',es:'No se pudo guardar este repaso. Sigue abierto; evita cerrar la aplicación.'}[LOCALE.codigo])}</p>}
   <p className="app-revisao-contagem">{certas}/{v.origem.length} {R.concluidas}</p>

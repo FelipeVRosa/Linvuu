@@ -1,6 +1,7 @@
 /** Journal exclusivo do APK. Revisões ordenam cópias; null registra exclusão. */
 import { validarPratica, validarTentativa } from './estudoModelo';
 import { validarRevisao } from './revisaoModelo';
+import { validarEspacado } from './espacadoModelo';
 export const CHAVE_JOURNAL = 'linvuu:armazenamento:v2';
 export const chavePersistente = (k: string) => k.length <= 512 && (/^linvuu:(progresso:v1|progresso-pendente:v1|dias-concluidos:v1)(:uid:[^:]+)?$/.test(k) || /^linvuu:pratica-apk:v1:[^:]+:.+$/.test(k) || /^linvuu:(tema-app|leitura-app|sons|locale)$/.test(k));
 export interface Entrada { revisao: number; valor: string | null; pendente?: boolean }
@@ -15,7 +16,7 @@ export function valorValido(k: string, raw: string | null): boolean {
  try {
   if (k.includes('dias-concluidos:')) { const v=JSON.parse(raw); return Array.isArray(v)&&v.every(x=>typeof x==='string'&&/^[a-z]{2,3}:[1-9]\d*$/.test(x)); }
   if (k.includes('progresso-pendente:')) { const v=JSON.parse(raw); return objeto(v)&&Object.entries(v).every(([id,p])=>/^[a-z]{2,3}:[1-9]\d*$/.test(id)&&objeto(p)&&typeof p.feito==='boolean'&&typeof p.versao==='string'); }
-  if (k.includes('pratica-apk:')) { const p=JSON.parse(raw);return k.endsWith(':revisao-erros') ? validarRevisao(p) : k.endsWith(':tentativa') ? validarTentativa(p) : validarPratica(p); }
+  if (k.includes('pratica-apk:')) { const p=JSON.parse(raw);return k.endsWith(':revisao-erros') ? validarRevisao(p) : k.endsWith(':espacado') ? validarEspacado(p) : k.endsWith(':tentativa') ? validarTentativa(p) : validarPratica(p); }
   if (k.includes('progresso:')) { const v=JSON.parse(raw);return objeto(v)&&Object.entries(v).every(([id,p])=>/^[a-z]{2,3}:[1-9]\d*:.+$/.test(id)&&objeto(p)&&Number.isInteger(p.bloco)&&Number(p.bloco)>=0&&typeof p.completa==='boolean'&&data(p.em)); }
   return raw.length <= 512; // preferências: formatos textuais existentes
  } catch { return false; }

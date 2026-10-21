@@ -39,3 +39,8 @@ html[data-plataforma="nativo"] .chips button.on{background:var(--acao);color:var
 html[data-plataforma="nativo"] .topico{background:var(--bg-elevado);color:var(--fg-1);border-color:var(--linha-forte)}
 html[data-plataforma="nativo"] .topico summary,html[data-plataforma="nativo"] .topico summary strong{color:var(--fg-1)}
 html[data-plataforma="nativo"] .topico :is(.topico-cat,.topico-aula){color:var(--fg-2)}
+
+/* Reforço espaçado: botão da volta de hoje e aviso da próxima, com as cores semânticas do tema. */
+.app-espacado{display:grid;gap:.4rem;margin:.75rem 0}
+.app-espacado p{margin:0;font-size:.95rem;color:var(--fg-2)}
+.app-reforco-proxima{margin:.5rem 0 0;font-size:.95rem}

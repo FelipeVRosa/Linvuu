@@ -23,6 +23,8 @@ jobs:
       - run: npm ci
       - name: Verificar tipos TypeScript
         run: npm run lint && npm run lint:apk
+      - name: Testar consentimento e minimização PostHog sem enviar dados
+        run: node --import tsx scripts/testar-analytics.ts
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
       - name: Testar corretor e ditados reais

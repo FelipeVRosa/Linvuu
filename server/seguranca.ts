@@ -12,7 +12,7 @@ export function politicaCSP(extraMidia = ''): string {
     'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com'],
     'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
     'font-src': ["'self'", 'data:'],
-    'connect-src': ["'self'", ...firebase, ...(extraMidia ? [extraMidia] : [])],
+    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', ...firebase, ...(extraMidia ? [extraMidia] : [])],
     'frame-src': ['https://*.firebaseapp.com', 'https://accounts.google.com', 'https://*.google.com'],
     'object-src': ["'none'"],
     'base-uri': ["'self'"],

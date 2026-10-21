@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { APK } from './plataforma';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '@plataforma/Home';
@@ -82,6 +83,7 @@ export default function App() {
         </Routes>
         </Suspense>
       </main>
+      <AnalyticsConsent />
       {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
       {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
     </>

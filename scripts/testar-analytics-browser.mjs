@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 let browser;
 try{
  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH,args:['--no-sandbox']});
- for(const target of ['website','apk']){
+ for(const target of (process.env.ANALYTICS_TARGET==='website'?['website']:['website','apk'])){
   const base='http://127.0.0.1:4388',outDir=target==='apk'?'dist-apk':'dist';
   const server=spawn(process.execPath,['node_modules/vite/bin/vite.js','preview','--outDir',outDir,'--host','127.0.0.1','--port','4388','--strictPort'],{stdio:'ignore'});
   try{

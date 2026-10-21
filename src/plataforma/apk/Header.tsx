@@ -13,13 +13,19 @@ import { experiencia } from './experiencia';
 export function Header() {
   const t = useT(), a = appTextos(), x = experiencia();
   const nav = useNavigate();
+  useEffect(() => {
+    const teclado=(e:KeyboardEvent)=>{if(e.key==='Tab')document.documentElement.dataset.entradaApp='teclado';};
+    const toque=()=>{document.documentElement.dataset.entradaApp='toque';};
+    document.addEventListener('keydown',teclado);document.addEventListener('pointerdown',toque);
+    return ()=>{document.removeEventListener('keydown',teclado);document.removeEventListener('pointerdown',toque);};
+  }, []);
   const { pathname } = useLocation();
   useEffect(() => {
     let encerrado = false;
     const focar = () => {
       const titulo = document.querySelector<HTMLElement>('#conteudo h1');
       if (!titulo || encerrado) return false;
-      titulo.tabIndex = -1; titulo.focus({preventScroll:true}); return true;
+      titulo.dataset.focoRota = "true"; titulo.tabIndex = -1; titulo.focus({preventScroll:true}); return true;
     };
     const observer = new MutationObserver(() => { if(focar()) observer.disconnect(); });
     const frame = requestAnimationFrame(() => { if(!focar()) observer.observe(document.getElementById('conteudo') ?? document.body,{childList:true,subtree:true}); });
@@ -76,7 +82,7 @@ export function Header() {
   return <>
     <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
     <header className="app-header">
-      {pathname !== '/' ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
+      {!['/', '/cursos', '/gramatica', '/conta', '/assinatura'].includes(pathname) ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
       <Link to="/" aria-label={`Linvuu, ${t.geral.paginaInicial}`}><img className="app-emblema" src="/brand/linvuu-app-monograma.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
@@ -87,8 +93,8 @@ export function Header() {
       <button type="button" className="app-ajustes-fechar" onClick={fecharPainel}>{x.fechar}</button>
       <p>{a.avisoIdiomas}</p>
       <p className="app-build-id">Linvuu Teste · {import.meta.env.VITE_APK_BUILD_ID || 'local'}</p>
-      <Link to="/assinatura">{t.nav.assinatura}</Link>
-      <Link to="/assinatura#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data',es:'Eliminar cuenta y datos'}[LOCALE.codigo]}</Link>
+      <Link to="/conta">{{'pt-BR':'Sua conta',en:'Your account',es:'Tu cuenta'}[LOCALE.codigo]}</Link>
+      <Link to="/conta#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data',es:'Eliminar cuenta y datos'}[LOCALE.codigo]}</Link>
       <Link to="/privacidade">{t.rodape.privacidade}</Link>
       <Link to="/termos">{t.assinatura.termos}</Link>
       {usuario ? <button type="button" disabled={saindo} onClick={deslogar}>{saindo ? t.geral.carregando : t.nav.sair}</button> : <Link to="/entrar">{t.nav.entrar}</Link>}

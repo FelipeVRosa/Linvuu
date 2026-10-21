@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CURSOS_ATIVOS, coberturaDoCurso, type Curso } from '../../lib/content';
 import { pontoDeRetomada, useDiasFeitos } from '../../lib/retomar';
 import { experiencia, saudacoes } from './experiencia';
-import { useT } from '../../i18n';
+import { LOCALE, useT } from '../../i18n';
 import { appTextos } from './textos';
 import { usePageTitle } from '../../lib/usePageTitle';
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -20,7 +20,7 @@ export default function Cursos() {
  const preparando = encontrados.filter(c => coberturaDoCurso(c.id).traduzidas === 0);
  return <div className="pagina app-catalogo">
   <header className="app-biblioteca-topo"><p className="app-kicker">Linvuu · {t.cursosPagina.titulo}</p><h1 className="pagina-h1">{x.biblioteca}</h1><p>{x.bibliotecaTexto}</p></header>
-  <label className="app-busca">{t.cursosPagina.buscar}<input type="search" value={busca} onChange={e => setBusca(e.target.value)} /></label>
+  <label className="app-busca">{t.cursosPagina.buscar}<input type="search" placeholder={{'pt-BR':'Ex.: inglês, alemão…',en:'E.g. English, German…',es:'Ej.: inglés, alemán…'}[LOCALE.codigo]} value={busca} onChange={e => setBusca(e.target.value)} /></label>
   <p role="status">{t.cursosPagina.contagem(prontos.length)}</p>
   {prontos.length > 0 && <div className="app-grade">{prontos.map(c => <CursoItem key={c.id} curso={c}/>)}</div>}
   {!encontrados.length && <div className="vazio"><p>{t.cursosPagina.vazio(busca)}</p><button type="button" className="btn btn-ghost" onClick={() => setBusca('')}>{t.cursosPagina.limpar}</button></div>}

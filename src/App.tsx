@@ -74,7 +74,8 @@ export default function App() {
           <Route path="/sobre" element={NATIVO ? <Navigate to="/" replace /> : <Sobre />} />
           <Route path="/por-que-linvuu" element={NATIVO ? <Navigate to="/" replace /> : <PorQue />} />
           <Route path="/contato" element={NATIVO ? <Navigate to="/" replace /> : <Contato />} />
-          <Route path="/assinatura" element={<Assinatura />} />
+          <Route path="/assinatura" element={NATIVO ? <Navigate to="/conta" replace /> : <Assinatura />} />
+          {NATIVO && <Route path="/conta" element={<Assinatura />} />}
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />
           <Route path="*" element={<NaoEncontrada />} />

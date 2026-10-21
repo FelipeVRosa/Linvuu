@@ -30,7 +30,8 @@ export default function Home() {
  return <div className="pagina app-home app-dashboard">
   <header className="app-boasvindas"><p className="app-kicker"><span className="app-ponto" aria-hidden="true" />{x.rotina}</p><h1>{x.hoje}<span className="app-ponto-titulo" aria-hidden="true">.</span></h1><p>{x.saudacao}</p></header>
   <p className="app-home-selecao" id="app-home-selecao">{d.selecao}</p>
-  <div className="app-idiomas" role="group" aria-labelledby="app-home-selecao">{cursos.map(c=><button type="button" key={c.id} aria-pressed={c.id===curso.id} onClick={()=>setEscolha(c.id)}><span aria-hidden="true">{c.id==='br'?'PT':c.id.toUpperCase()}</span>{c.nome}</button>)}</div>
+  <p className="app-idiomas-ajuda" id="app-idiomas-ajuda">{{'pt-BR':'Deslize para ver mais idiomas →',en:'Swipe to see more languages →',es:'Desliza para ver más idiomas →'}[LOCALE.codigo]}</p>
+  <div className="app-idiomas" role="group" aria-labelledby="app-home-selecao" aria-describedby="app-idiomas-ajuda">{cursos.map(c=><button type="button" key={c.id} aria-pressed={c.id===curso.id} onClick={()=>setEscolha(c.id)}><span aria-hidden="true">{c.id==='br'?'PT':c.id.toUpperCase()}</span>{c.nome}</button>)}</div>
   <p className="app-home-proximo"><span aria-hidden="true">↳</span>{d.passo}</p>
   <section className="app-missao" aria-labelledby="app-missao-titulo">
    <div className="app-missao-meta"><span className="app-missao-etiqueta">{x.foco}</span><span>{curso.nome}</span></div>

@@ -126,20 +126,12 @@ html[data-plataforma="nativo"] :is(.btn-ghost,.chip,.conta-card,.conta-sub,.ex-t
 html[data-plataforma="nativo"] :is(.chip.on,.trilha-aba.on){background:var(--acao);color:var(--acao-fg)}
 html[data-plataforma="nativo"] .conta-titulo{color:var(--fg-1)}
 html[data-plataforma="nativo"] .app-busca input{border-color:var(--linha-forte)}
-html[data-plataforma="nativo"] .lv-tabbar{height:88px;min-height:0;padding:4px;align-items:center}
-html[data-plataforma="nativo"] .lv-tab{height:72px;min-height:48px;overflow:hidden}
-html[data-plataforma="nativo"] .lv-tab>span:last-child{display:none;white-space:nowrap;overflow-wrap:normal;font-size:12px}
-html[data-plataforma="nativo"] .lv-tab.on>span:last-child{display:block}
 html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:52px minmax(0,1fr)}
 .app-curso-linha>span:last-child{display:none}
 html[data-plataforma="nativo"] :is(.app-unidade strong,.app-unidade small,.app-curso-linha h2){overflow-wrap:anywhere;hyphens:auto}
 html[data-plataforma="nativo"] .app-header>a>img:last-child{display:none}
 html[data-plataforma="nativo"] .reportar-problema{min-height:48px;display:inline-flex;align-items:center}
 html[data-plataforma="nativo"] .paywall h1{font-size:1.5rem}
-/* O rótulo ativo usa a largura total: permanece ampliável, sem partir palavras. */
-html[data-plataforma="nativo"] .lv-tabbar{padding-bottom:28px}
-html[data-plataforma="nativo"] .lv-tab{height:48px;position:static}
-html[data-plataforma="nativo"] .lv-tab.on>span:last-child{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:.75rem;line-height:1.2}
 html[data-plataforma="nativo"] .aa-reporte>.link{min-height:48px;display:inline-flex;align-items:center}
 .app-sessao-pendente{display:grid;grid-template-columns:30px minmax(0,1fr)}
 .app-sessao-pendente>span{min-width:0;overflow-wrap:anywhere}
@@ -171,3 +163,11 @@ html[data-plataforma="nativo"] .voltar{background:var(--bg-elevado);color:var(--
 .app-exclusao input{min-height:48px;font:inherit;padding:12px;border:1px solid var(--linha-forte);background:var(--bg);color:var(--fg-1);border-radius:12px;width:100%}
 .app-exclusao .btn{min-height:48px;white-space:normal}
 @media(max-width:400px){html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:minmax(0,1fr)}.app-curso-linha>span{justify-self:start}.app-curso-linha>div{min-width:0}}
+
+/* Cada aba mantém seu próprio rótulo, inclusive sem seleção. */
+html[data-plataforma="nativo"] .lv-tabbar{height:auto;min-height:76px;padding:6px 4px;align-items:stretch;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+html[data-plataforma="nativo"] .lv-tab{position:relative;min-height:60px;height:auto;min-width:0;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;gap:6px;padding:6px 2px;overflow:visible}
+html[data-plataforma="nativo"] .lv-tab>svg{height:30px;flex-shrink:0}
+html[data-plataforma="nativo"] .lv-tab>span:last-child{position:static;display:block;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center;font-size:.6875rem;line-height:1.3}
+html[data-plataforma="nativo"]:not([data-entrada-app="teclado"]) h1[data-foco-rota="true"]:focus-visible{outline:none}
+.app-idiomas-ajuda{font-size:.75rem;line-height:1.5;color:var(--fg-2);margin:.4rem 0 0}

@@ -273,7 +273,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}><span aria-hidden="true">✗ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Errado:',en:'Wrong:',es:'Incorrecto:'})[LOCALE.codigo]} </span>{e.errado}</span><span className="certo" lang={idioma}><span aria-hidden="true">✓ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Certo:',en:'Right:',es:'Correcto:'})[LOCALE.codigo]} </span>{e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>
@@ -367,7 +367,12 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
   const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const bloco=sessao.blocos[i];const p=lerPratica(`${chave}:bloco:${i}`,bloco.tipo==='exercicios'?assinaturaExercicios(bloco.itens):undefined);return p&&bloco.tipo==='exercicios'&&p.total===bloco.itens.filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length?[[i,p]]:[];})));
   const pratica=blocosCorrigidos.length>0&&blocosCorrigidos.every(i=>praticas[i])?{acertos:blocosCorrigidos.reduce((n,i)=>n+praticas[i].acertos,0),total:blocosCorrigidos.reduce((n,i)=>n+praticas[i].total,0)}:null;
   const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem teste corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'},es:{leitura:'Sesión de lectura y escucha, sin prueba corregida.',pendente:'Completa la práctica corregida antes de finalizar esta sesión.',resultado:'Práctica corregida',concluir:'Finalizar lectura',local:'El progreso de visitante se guarda en este dispositivo. Borrar los datos puede eliminarlo.'}}[LOCALE.codigo];
-  const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
+  // ?bloco=N abre direto num bloco (atalho de reforço do início); só vale se existir nesta sessão.
+  const [idx, setIdx] = useState(() => {
+    const pedido = typeof window !== 'undefined' ? Number(new URLSearchParams(window.location.search).get('bloco')) : NaN;
+    if (Number.isInteger(pedido) && pedido >= 0 && pedido < total && sessao.blocos[pedido]?.tipo === 'exercicios') return pedido;
+    return Math.min(lerSessao(chave)?.bloco ?? 0, total - 1);
+  });
   const [completa, setCompleta] = useState(() => lerSessao(chave)?.completa ?? false);
   const b = sessao.blocos[idx];
   const tituloEtapa = useRef<HTMLHeadingElement>(null);

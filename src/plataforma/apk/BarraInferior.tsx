@@ -1,7 +1,10 @@
 // Navegação por abas do app Android (Capacitor). No site ela não aparece: lá o cabeçalho já faz esse papel.
 import { Link, useLocation } from 'react-router-dom';
 import { useRetomadaGeral } from '../../lib/retomar';
+import { useAssinatura } from '../../lib/acesso';
+import { destinoEstudo } from './navegacaoModelo';
 import { LOCALE, useT } from '../../i18n';
+import './rodada4.css';
 
 const ic = { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true } as const;
 
@@ -9,7 +12,8 @@ export function BarraInferior() {
   const { pathname } = useLocation();
   const t = useT();
   const ret = useRetomadaGeral();
-  const estudar = ret ? `/curso/${ret.idioma}/dia/${ret.dia}` : '/cursos';
+  const assinatura = useAssinatura();
+  const estudar = destinoEstudo(ret, assinatura.ativa);
   const aba = (on: boolean) => `lv-tab${on ? ' on' : ''}`;
   const conta = '/conta';
   const abas = [
@@ -24,7 +28,7 @@ export function BarraInferior() {
       {abas.map((a) => (
         <Link key={a.rotulo} to={a.para} className={`${aba(a.on)}${a.destaque ? ' lv-tab-estudar' : ''}`} aria-label={a.rotulo} aria-current={a.on ? 'page' : undefined}>
           {a.destaque ? <span className="lv-tab-pilula"><svg {...ic} width={18} height={18}>{a.svg}</svg></span> : <svg {...ic}>{a.svg}</svg>}
-          <span>{a.rotulo}</span>
+          <span className="lv-tab-rotulo">{a.rotulo}</span>
         </Link>
       ))}
     </nav>

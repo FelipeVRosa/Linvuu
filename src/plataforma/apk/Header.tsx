@@ -1,6 +1,6 @@
 import { armazenamentoFalhou, sincronizarArmazenamento } from './armazenamento';
 import { Capacitor, SystemBars, SystemBarsStyle } from '@capacitor/core';
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useLayoutEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { LOCALE, LOCALES, lembrarLocale, urlEm, useT } from '../../i18n';
 import type { CodigoLocale } from '../../i18n/locales';
@@ -79,9 +79,24 @@ export function Header() {
     catch { setErro(true); }
     finally { setSaindo(false); }
   };
+  // A palavra Linvuu aparece sempre que cabe; com texto grande, fica só o emblema (o nome continua no aria-label).
+  const cabecalho = useRef<HTMLElement>(null);
+  useLayoutEffect(() => {
+    const h = cabecalho.current;
+    if (!h || typeof ResizeObserver === 'undefined') return;
+    const medir = () => {
+      h.classList.remove('app-header-compacto');
+      const marca = h.querySelector<HTMLElement>(':scope > a');
+      h.classList.toggle('app-header-compacto', !!marca && marca.scrollWidth > marca.clientWidth + 1);
+    };
+    medir();
+    const obs = new ResizeObserver(medir);
+    obs.observe(h);
+    return () => obs.disconnect();
+  }, [pathname]);
   return <>
     <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
-    <header className="app-header">
+    <header ref={cabecalho} className="app-header">
       {!['/', '/cursos', '/gramatica', '/conta', '/assinatura'].includes(pathname) ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
       <Link to="/" aria-label={`Linvuu, ${t.geral.paginaInicial}`}><img className="app-emblema" src="/brand/linvuu-app-monograma.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>

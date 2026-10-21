@@ -18,6 +18,16 @@ export default defineConfig(({ mode }) => {
   plugins: [react(), ...(apk ? [{
     name: 'publico-apk-sem-audio',
     enforce: 'pre' as const,
+    // O APK não é indexado: tira metatags de SEO/compartilhamento e o texto pré-renderizado para buscadores.
+    transformIndexHtml(html: string) {
+      return html
+        .replace(/\s*<meta (?:name="description"|property="og:[^"]*"|name="twitter:[^"]*")[^>]*>/g, '')
+        .replace(/\s*<link rel="(?:canonical|alternate)"[^>]*>/g, '')
+        .replace(/\s*<!--[^]*?-->/g, '')
+        .replace(/\s*<style>@media \(scripting: ?enabled\)\{main\[data-prerender\][^<]*<\/style>/, '')
+        .replace(/<main[^>]*data-prerender[^]*?<\/main>/, '')
+        .replace(/<title>[^<]*<\/title>/, '<title>Linvuu</title>');
+    },
     transform(code, id) {
       if(id.split('?')[0]===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
     },

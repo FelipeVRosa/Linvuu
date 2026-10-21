@@ -1,0 +1,20 @@
+/* Rodada 4 (Claude): ajustes do APK medidos em 320–412 px e texto até 200%. Só seletores do app nativo. */
+
+/* Barra inferior: todos os rótulos continuam visíveis (contrato do teste do parecer), mas só quebram
+   em fronteira de sílaba com hífen, nunca no meio de uma letra qualquer ("Iníci/o"). */
+html[data-plataforma="nativo"] .lv-tab>span.lv-tab-rotulo:last-child{overflow-wrap:break-word;word-break:normal;hyphens:auto;-webkit-hyphens:auto}
+
+/* Catálogo: o monograma cresce com o texto em vez de cortar "FR"/"RU". */
+html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:auto minmax(0,1fr)}
+html[data-plataforma="nativo"] .app-curso-monograma{width:auto;min-width:52px;padding-inline:.4em;white-space:nowrap}
+@media(max-width:400px){html[data-plataforma="nativo"] .app-curso-linha{grid-template-columns:minmax(0,1fr)}html[data-plataforma="nativo"] .app-curso-monograma{justify-self:start}}
+
+/* Cabeçalho: a palavra Linvuu volta quando cabe; some só quando o texto grande não deixa espaço. */
+html[data-plataforma="nativo"] .app-header>a>img:last-child{display:block;width:84px;height:auto;flex-shrink:0}
+html[data-plataforma="nativo"] .app-header-compacto>a>img:last-child{display:none}
+
+/* Reforço: erros pendentes da prática corrigida, no início. */
+.app-reforco{margin:1.25rem 0 .25rem;padding:1.1rem 1.1rem 1.2rem;border:1px solid var(--linha-forte);border-left:4px solid var(--acao);border-radius:1.25rem;background:var(--bg-elevado);display:grid;gap:.5rem}
+.app-reforco h2{font-size:1.125rem!important;line-height:1.35;margin:0}
+.app-reforco>p:not(.app-kicker){margin:0;font-size:.9375rem;line-height:1.55;color:var(--fg-2)}
+.app-reforco .btn{background:var(--acao);color:var(--acao-fg);border:1px solid var(--acao);min-height:52px;border-radius:1rem;white-space:normal;line-height:1.4;justify-self:stretch;margin-top:.35rem}

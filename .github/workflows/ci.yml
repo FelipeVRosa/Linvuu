@@ -23,6 +23,8 @@ jobs:
       - run: npm ci
       - name: Verificar tipos TypeScript
         run: npm run lint
+      - name: Testar notificações Stripe assinadas sem cobranças reais
+        run: node --import tsx scripts/testar-billing-webhook.ts
       - name: Testar medição sem dados de produção
         run: npm run testar:medicao
       - name: Testar corretor e ditados reais

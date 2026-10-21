@@ -6,7 +6,7 @@ import path from 'path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import { registrarCobranca, registrarLivroProtegido } from './server/billing';
+import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
 import { credencialConfigurada } from './server/firebase-admin';
@@ -34,6 +34,7 @@ async function startServer() {
   registrarSeguranca(app, producao);
   // HTML, JS, CSS e JSON comprimidos (o pacote principal cai para cerca de um quarto). MP3 já vem comprimido e fica de fora.
   app.use(compression({ filter: (req, res) => !/\.mp3$/.test(req.path) && compression.filter(req, res) }));
+  registrarNotificacoesCobranca(app);
   app.use(express.json({ limit: '10kb' }));
 
   // Saúde do serviço (para o Render e para monitoramento).

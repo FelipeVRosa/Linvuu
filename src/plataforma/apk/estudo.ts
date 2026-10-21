@@ -26,4 +26,12 @@ export function lerTentativa(sessao:string,itens:Exercicio[]):Tentativa|null{
  return p;
  }catch{return null;}
 }
-export function salvarTentativa(sessao:string,p:Tentativa){if(!validarTentativa(p))return;try{localStorage.setItem(chave(`${sessao}:tentativa`),JSON.stringify(p));}catch{/* tentativa continua em memória */}}
+export function salvarTentativa(sessao:string,p:Tentativa){
+ if(!validarTentativa(p))return;
+ try{
+  const k=chave(`${sessao}:tentativa`);let anterior:unknown=null;
+  try{anterior=JSON.parse(localStorage.getItem(k)??'null');}catch{/* substituir somente a tentativa inválida */}
+  if(validarTentativa(anterior)&&JSON.stringify({...anterior,em:''})===JSON.stringify({...p,em:''}))return;
+  localStorage.setItem(k,JSON.stringify(p));
+ }catch{/* tentativa continua em memória */}
+}

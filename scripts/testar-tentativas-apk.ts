@@ -10,6 +10,8 @@ const assinatura=assinaturaExercicios(itens);
 const tentativa={tipo:'tentativa' as const,versao:1 as const,assinatura,indice:0,escolha:'a',ordem:[],texto:'',resultado:'erro' as const,respostas:{0:false},finalizada:false,em:new Date().toISOString()};
 assert(validarTentativa(tentativa));salvarTentativa('en:1:A:bloco:0',tentativa);
 assert.deepEqual(lerTentativa('en:1:A:bloco:0',itens),tentativa);
+salvarTentativa('en:1:A:bloco:0',{...tentativa,em:'2026-10-21T03:00:00.000Z'});
+assert.deepEqual(lerTentativa('en:1:A:bloco:0',itens),tentativa); // reabrir não regrava a tentativa sem mudança
 for(const campo of ['enunciado','gabarito','explicacao','audio','opcoes'] as const){const alterados=[{...itens[0],[campo]:campo==='opcoes'?['a','c']:'changed'}];assert.notEqual(assinaturaExercicios(alterados),assinatura);assert.equal(lerTentativa('en:1:A:bloco:0',alterados),null);}
 salvarPratica('en:1:A:bloco:0',0,1,assinatura);assert(lerPratica('en:1:A:bloco:0',assinatura));assert.equal(lerPratica('en:1:A:bloco:0','other'),null);
 assert(validarPratica({acertos:0,total:1,em:tentativa.em})); // legacy remains readable, never auto-matches content

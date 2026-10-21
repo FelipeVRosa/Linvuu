@@ -37,3 +37,5 @@ jobs:
         run: node scripts/testar-estudo-apk.mjs
       - name: Testar retomada da tentativa e movimento reduzido
         run: node scripts/testar-retomada-tentativa-apk.mjs && node scripts/testar-home-lote2-apk.mjs
+      - name: Testar revisão de erros, retomada e resultado inicial preservado
+        run: node --import tsx scripts/testar-revisao-erros-apk.mjs

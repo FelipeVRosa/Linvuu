@@ -1,4 +1,6 @@
 import { ControlesAudio } from './ControlesAudio';
+import { RevisaoErros, lerRevisao } from './RevisaoErros';
+import { revisaoTextos } from './revisaoTextos';
 import { lerPratica, salvarPratica, lerTentativa, salvarTentativa, assinaturaExercicios, type Pratica } from './estudo';
 import { APK } from '../../plataforma';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -88,6 +90,9 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
   const [res, setRes] = useState<'ok' | 'erro' | 'livre' | null>(inicial?.resultado ?? null);
   const [acertos, setAcertos] = useState<Record<number, boolean>>(inicial?.respostas ?? {});
   const [fim, setFim] = useState(inicial?.finalizada ?? false);
+  const [revisando,setRevisando]=useState(false);
+  const resultadoInicial=useRef<HTMLHeadingElement>(null);
+  useEffect(()=>{if(fim&&!revisando)resultadoInicial.current?.focus();},[fim,revisando]);
   useEffect(()=>{ salvarTentativa(praticaChave,{tipo:'tentativa',versao:1,assinatura,indice:i,escolha,ordem,texto:itens[i]?.tipo==='producao'?'':texto,resultado:res,respostas:acertos,finalizada:fim,em:new Date().toISOString()}); },[praticaChave,assinatura,itens,i,escolha,ordem,texto,res,acertos,fim]);
   const enunciado = useRef<HTMLParagraphElement>(null);
   useEffect(() => { if (APK && i > 0) enunciado.current?.focus(); }, [i]);
@@ -150,9 +155,17 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
 
   if (fim) {
     const { acertos: certos, erros } = resumirExercicios(itens, acertos);
+    const R=revisaoTextos();
+    const origem=itens.flatMap((e,n)=>e.tipo!=='producao'&&e.tipo!=='repeat'&&acertos[n]===false?[n]:[]);
+    const salva=origem.length?lerRevisao(praticaChave,itens,origem):null;
+    const reforcadas=salva?origem.filter(n=>salva.respostas[n]===true).length:0;
+    const iniciou=salva&&(Object.keys(salva.respostas).length>0||salva.escolha!==null||salva.texto.length>0||salva.ordem.length>0);
+    const rotuloRevisao=salva?.fim&&reforcadas===origem.length?R.consultar:iniciou?R.retomar:R.abrir;
+    if(revisando&&origem.length)return <RevisaoErros itens={itens} origem={origem} idioma={idioma} bloco={praticaChave} aoSair={()=>setRevisando(false)}/>;
     return (
       <div className="ex-resumo">
-        <h3>{T.acertou(certos, corrigiveis.length)}</h3>
+        <h3 ref={resultadoInicial} tabIndex={-1}>{T.acertou(certos, corrigiveis.length)}</h3>
+        {origem.length>0?<button type="button" className="btn btn-primary" onClick={()=>setRevisando(true)}>{rotuloRevisao} ({iniciou?`${reforcadas}/${origem.length}`:origem.length})</button>:corrigiveis.length>0&&<p>{R.nenhum}</p>}
         {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
       </div>

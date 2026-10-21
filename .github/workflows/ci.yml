@@ -36,6 +36,7 @@ jobs:
           node --import tsx scripts/testar-armazenamento-apk.ts
           node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts
           node --import tsx scripts/testar-tentativas-apk.ts
+          node --import tsx scripts/testar-revisao-erros-apk.ts
       - run: npm run build:website
       - run: npm run build:apk
       - run: npm run testar:plataformas

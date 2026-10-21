@@ -4,3 +4,4 @@
 .analytics-actions{display:flex;flex-wrap:wrap;gap:.75rem}
 .analytics-actions button{min-height:48px;white-space:normal;line-height:1.5}
 .analytics-consent a{color:var(--link);text-decoration:underline}
+html[data-plataforma="nativo"] .analytics-consent{margin-bottom:calc(6rem + env(safe-area-inset-bottom,0px))}

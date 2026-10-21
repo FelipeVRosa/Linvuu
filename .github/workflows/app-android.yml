@@ -54,8 +54,15 @@ jobs:
               f.write('LINVUU_TEST_KEYSTORE=' + str(target) + '\n')
           PY
       - name: Verificar guardas da loja e recuperação
-        run: node --import tsx scripts/testar-loja-apk.ts && node --import tsx scripts/testar-armazenamento-apk.ts && node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts && node scripts/testar-distribuicao-apk.mjs
+        run: node scripts/testar-firebase-apk.mjs && node --import tsx scripts/testar-loja-apk.ts && node --import tsx scripts/testar-armazenamento-apk.ts && node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts && node scripts/testar-distribuicao-apk.mjs
       - name: Gerar frontend identificado e sincronizar Android
+        env:
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY || vars.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN || vars.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID || vars.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID || vars.VITE_FIREBASE_APP_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET || vars.VITE_FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID || vars.VITE_FIREBASE_MESSAGING_SENDER_ID }}
         run: npm run app:android
       - name: Compilar APK e AAB de testes com assinatura estável
         working-directory: android

@@ -45,6 +45,7 @@ android {
             if (testKeystore) signingConfig signingConfigs.teste
         }
         release {
+            debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -78,4 +79,12 @@ try {
     }
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}
+
+// A distribuição da loja permanece bloqueada até existir verificação de assinatura
+// de produção e do manifesto final. A chave de testes nunca serve para release.
+gradle.taskGraph.whenReady { graph ->
+    if (graph.allTasks.any { it.project == project && it.name ==~ /(?i).*(assemble|bundle|package).*release.*/ }) {
+        throw new GradleException('Release de loja bloqueada: configurar assinatura de produção e validar manifesto final antes de habilitar esta tarefa')
+    }
 }

@@ -3,6 +3,7 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
+import {certificadosDoApk} from './lib/certificado-apk.mjs';
 const source=process.env.LINVUU_SOURCE_SHA,code=process.env.ANDROID_VERSION_CODE;
 assert.match(source??'',/^[a-f0-9]{40}$/,'Commit de origem obrigatório');
 assert.match(code??'',/^[1-9]\d*$/,'Versão obrigatória');
@@ -11,11 +12,12 @@ assert.ok(sdk,'SDK Android necessário para verificar o APK');
 const versions=fs.readdirSync(path.join(sdk,'build-tools')).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
 const tools=path.join(sdk,'build-tools',versions.at(-1));
 const apk='android/app/build/outputs/apk/debug/app-debug.apk';
-function run(cmd,args){const r=spawnSync(cmd,args,{encoding:'utf8'});assert.equal(r.status,0,`Falha em ${path.basename(cmd)}: ${r.stderr??''}`);return r.stdout;}
-const assinatura=run(path.join(tools,'apksigner'),['verify','--verbose','--print-certs',apk]);
-const cert=assinatura.match(/Signer #1 certificate SHA-256 digest:\s*([a-f0-9]+)/i)?.[1]?.toLowerCase();
+function run(cmd,args,comErros=false){const r=spawnSync(cmd,args,{encoding:'utf8'});assert.equal(r.status,0,`Falha em ${path.basename(cmd)}: ${r.stderr??''}`);return comErros?`${r.stdout}\n${r.stderr}`:r.stdout;}
+const assinatura=run(path.join(tools,'apksigner'),['verify','--verbose','--print-certs',apk],true);
+console.log(assinatura); // somente certificados públicos e resultado da verificação
+const cert=certificadosDoApk(assinatura);
 const esperado=fs.readFileSync('design/apk/teste-certificado-sha256.txt','utf8').trim();
-assert.equal(cert,esperado,'Certificado não corresponde à identidade estável de testes');
+assert.deepEqual(cert,[esperado],'APK deve ter somente a identidade estável de testes');
 const manifest=run(path.join(tools,'aapt'),['dump','badging',apk]);
 assert.match(manifest,/package: name='com\.linvuu\.app\.teste'/,'Pacote deve ser separado da produção');
 assert.ok(manifest.includes(`versionCode='${code}'`),'VersionCode não corresponde ao build');
@@ -24,7 +26,7 @@ assert.equal(dentro.source,source,'Frontend do APK pertence a outro commit');ass
 const out=path.join(process.env.RUNNER_TEMP||'/tmp','linvuu-entrega');fs.mkdirSync(out,{recursive:true});
 const bytes=fs.readFileSync(apk),sha256=createHash('sha256').update(bytes).digest('hex');
 const name=`linvuu-teste-${code}-${source.slice(0,7)}.apk`;fs.writeFileSync(path.join(out,name),bytes);
-const info={package:'com.linvuu.app.teste',versionCode:Number(code),versionName:manifest.match(/versionName='([^']+)'/)?.[1],source,build: dentro.build,certificateSha256:cert,sha256,bytes:bytes.length};
+const info={package:'com.linvuu.app.teste',versionCode:Number(code),versionName:manifest.match(/versionName='([^']+)'/)?.[1],source,build: dentro.build,certificateSha256:cert[0],sha256,bytes:bytes.length};
 fs.writeFileSync(path.join(out,'build-info.json'),JSON.stringify(info,null,2));
 fs.writeFileSync(path.join(out,'SHA256SUMS'),`${sha256}  ${name}\n`);
 fs.writeFileSync(path.join(out,'LEIA-ME.txt'),`Linvuu Teste — APK de depuração, não é lançamento de produção.\n\nCommit: ${source}\nVersão: ${info.versionName} (${code})\nPacote separado: ${info.package}\n\nInstala ao lado do APK antigo; não o desinstale para testar este. O histórico do pacote antigo não migra automaticamente para o novo. Atualizações futuras deste pacote de testes devem manter a assinatura e preservar seus dados; ainda é necessário validar isso no aparelho.\n\nNão há promessa de offline completo, cobrança habilitada ou validação física. Nenhuma chave privada está neste pacote.\n`);

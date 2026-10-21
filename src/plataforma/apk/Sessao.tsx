@@ -396,7 +396,7 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
 
   return (
     <div className={`sessao${compacta ? " app-sessao" : ""}`}>
-      <ControlesAudio />
+      <ControlesAudio temAudio={['dialogo','palavras','alfabeto','texto','gramatica'].includes(b.tipo) || (b.tipo==='exercicios' && b.itens.some((e) => !!e.audio)) || (b.tipo==='intro' && (explicacao ?? LOCALE.explicacao)==='pt')} />
       {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx + 1} aria-label={T.blocosSessao} /></div>}
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span aria-hidden="true">⌄</span></summary>{etapas}</details> : etapas}
       <div className="bloco">

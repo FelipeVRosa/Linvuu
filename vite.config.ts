@@ -32,6 +32,8 @@ export default defineConfig(({ mode }) => {
       if(id.split('?')[0]===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
     },
     resolveId(source, importer) {
+      // Telas compartilhadas que têm versão própria no app (só no build APK).
+      if (importer && source === './pages/Gramatica' && importer.split('?')[0] === path.resolve('src/App.tsx')) return path.resolve('src/plataforma/apk/Gramatica.tsx');
       if (importer && source.startsWith('.') && path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.ts$/, '') === path.resolve('src/lib/audio')) return path.resolve('src/plataforma/apk/audio.ts');
     },
     generateBundle(_options, bundle) {

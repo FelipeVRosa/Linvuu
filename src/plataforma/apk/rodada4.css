@@ -18,3 +18,24 @@ html[data-plataforma="nativo"] .app-header-compacto>a>img:last-child{display:non
 .app-reforco h2{font-size:1.125rem!important;line-height:1.35;margin:0}
 .app-reforco>p:not(.app-kicker){margin:0;font-size:.9375rem;line-height:1.55;color:var(--fg-2)}
 .app-reforco .btn{background:var(--acao);color:var(--acao-fg);border:1px solid var(--acao);min-height:52px;border-radius:1rem;white-space:normal;line-height:1.4;justify-self:stretch;margin-top:.35rem}
+
+/* Marca pura: palavra Linvuu sem o traço ocre; a cor acompanha o tema pelo src (Header.tsx). */
+html[data-plataforma="nativo"] .app-header>a>img.app-palavra,html[data-plataforma="nativo"][data-tema-aluno="escuro"] .app-header>a>img.app-palavra{content:normal}
+
+/* Início: a ação principal precisa caber na primeira tela de um celular de 360×780. */
+html[data-plataforma="nativo"] .app-dashboard .app-missao .app-saudacao{margin:.6rem 0 .35rem;font-size:2.75rem}
+html[data-plataforma="nativo"] .app-dashboard .app-missao .app-missao-sessao{margin-bottom:.35rem}
+html[data-plataforma="nativo"] .app-dashboard .app-acao-principal{margin-top:1rem}
+html[data-plataforma="nativo"] .app-dashboard .app-idiomas{padding-bottom:.75rem}
+
+/* Gramática offline: aviso com ação, sem "recarregue a página". */
+.app-gramatica-aviso{display:grid;gap:.6rem;margin:1rem 0;padding:1rem;border:1px solid var(--linha-forte);border-radius:1rem;background:var(--bg-elevado)}
+.app-gramatica-aviso p{margin:0;font-size:.9375rem;line-height:1.55;color:var(--fg-1)}
+.app-gramatica-aviso .btn{min-height:48px;justify-self:start}
+
+/* Gramática no tema escuro: botões de categoria e tópicos usavam a cor primitiva papel-claro (mesma causa do A-02). */
+html[data-plataforma="nativo"] .chips button{background:var(--bg-elevado);color:var(--fg-1);border-color:var(--linha-forte)}
+html[data-plataforma="nativo"] .chips button.on{background:var(--acao);color:var(--acao-fg);border-color:var(--acao)}
+html[data-plataforma="nativo"] .topico{background:var(--bg-elevado);color:var(--fg-1);border-color:var(--linha-forte)}
+html[data-plataforma="nativo"] .topico summary,html[data-plataforma="nativo"] .topico summary strong{color:var(--fg-1)}
+html[data-plataforma="nativo"] .topico :is(.topico-cat,.topico-aula){color:var(--fg-2)}

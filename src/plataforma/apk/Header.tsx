@@ -8,6 +8,8 @@ import { useAuth } from '../../lib/AuthContext';
 import { appTextos } from './textos';
 import { CicloAndroid } from './CicloAndroid';
 import './app.css';
+import palavraVerde from './marca/linvuu-wordmark-verde-puro.svg';
+import palavraPapel from './marca/linvuu-wordmark-papel-puro.svg';
 import { experiencia } from './experiencia';
 
 export function Header() {
@@ -37,10 +39,11 @@ export function Header() {
   const [falhaArmazenamento,setFalhaArmazenamento]=useState(armazenamentoFalhou);
   useEffect(()=>{const ler=()=>setFalhaArmazenamento(armazenamentoFalhou);window.addEventListener('linvuu:armazenamento',ler);return ()=>window.removeEventListener('linvuu:armazenamento',ler);},[]);
   const [aberto, setAberto] = useState(false);
+  const [escuro, setEscuro] = useState(false);
   const [tema, setTema] = useState(() => { try { return localStorage.getItem('linvuu:tema-app') || 'sistema'; } catch { return 'sistema'; } });
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)');
-    const aplicar = () => { const escolhido=tema === 'sistema' ? (media.matches ? 'escuro' : 'claro') : tema; document.documentElement.dataset.temaAluno=escolhido; if(Capacitor.isNativePlatform())void SystemBars.setStyle({style:escolhido==='escuro'?SystemBarsStyle.Dark:SystemBarsStyle.Light}).catch(()=>{}); };
+    const aplicar = () => { const escolhido=tema === 'sistema' ? (media.matches ? 'escuro' : 'claro') : tema; document.documentElement.dataset.temaAluno=escolhido; setEscuro(escolhido==='escuro'); if(Capacitor.isNativePlatform())void SystemBars.setStyle({style:escolhido==='escuro'?SystemBarsStyle.Dark:SystemBarsStyle.Light}).catch(()=>{}); };
     aplicar(); media.addEventListener('change', aplicar);
     try { localStorage.setItem('linvuu:tema-app', tema); } catch { /* preferência válida nesta sessão */ }
     return () => media.removeEventListener('change', aplicar);
@@ -98,7 +101,7 @@ export function Header() {
     <CicloAndroid painelAberto={aberto} fecharPainel={fecharPainel} />
     <header ref={cabecalho} className="app-header">
       {!['/', '/cursos', '/gramatica', '/conta', '/assinatura'].includes(pathname) ? <button type="button" className="app-touch" aria-label={a.voltar} onClick={() => (window.history.state?.idx ?? 0) > 0 ? nav(-1) : nav('/')}>←</button> : <span />}
-      <Link to="/" aria-label={`Linvuu, ${t.geral.paginaInicial}`}><img className="app-emblema" src="/brand/linvuu-app-monograma.svg" alt="" width="34" height="34" /><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="104" height="33" /></Link>
+      <Link to="/" aria-label={`Linvuu, ${t.geral.paginaInicial}`}><img className="app-emblema" src="/brand/linvuu-app-monograma.svg" alt="" width="34" height="34" /><img className="app-palavra" src={escuro ? palavraPapel : palavraVerde} alt="Linvuu" width="104" height="24" /></Link>
       <button ref={botaoAjustes} type="button" className="app-touch" aria-expanded={aberto} aria-controls="app-ajustes" onClick={() => setAberto(v => !v)}>{a.ajustes}</button>
     </header>
     {aberto && <section id="app-ajustes" className="app-ajustes" aria-label={a.ajustes}>

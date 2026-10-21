@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => {
       }
     },
     closeBundle() {
+      if (env.VITE_APK_BUILD_ID) fs.writeFileSync(path.join('dist-apk','linvuu-build.json'),JSON.stringify({build:env.VITE_APK_BUILD_ID,source:env.LINVUU_SOURCE_SHA || null,versionCode:env.ANDROID_VERSION_CODE || null,versionName:env.ANDROID_VERSION_NAME || null}));
       // Mantém imagens e fontes locais; áudios são carregados sob demanda pelo servidor.
       for (const nome of fs.readdirSync('public')) {
         if (['audio', 'sitemap.xml', 'robots.txt'].includes(nome)) continue;

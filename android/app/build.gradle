@@ -1,5 +1,15 @@
 apply plugin: 'com.android.application'
 
+// A assinatura abaixo é exclusiva do aplicativo de testes, nunca da produção.
+def testKeystore = System.getenv('LINVUU_TEST_KEYSTORE')
+def testPassword = System.getenv('LINVUU_TEST_PASSWORD')
+def suppliedCode = System.getenv('ANDROID_VERSION_CODE')
+def suppliedName = System.getenv('ANDROID_VERSION_NAME') ?: '0.1.local'
+if ((testKeystore && !testPassword) || (!testKeystore && testPassword)) throw new GradleException('Configuração incompleta da assinatura de testes')
+if (System.getenv('CI') == 'true' && (!testKeystore || !suppliedCode)) throw new GradleException('CI exige assinatura estável e versão identificável')
+if (suppliedCode && (!(suppliedCode ==~ /[0-9]+/) || suppliedCode.toLong() < 1 || suppliedCode.toLong() > 2100000000)) throw new GradleException('ANDROID_VERSION_CODE inválido')
+if (!(suppliedName ==~ /[0-9A-Za-z.+_-]{1,60}/)) throw new GradleException('ANDROID_VERSION_NAME inválido')
+
 android {
     namespace = "com.linvuu.app"
     compileSdk = rootProject.ext.compileSdkVersion
@@ -7,8 +17,8 @@ android {
         applicationId "com.linvuu.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode suppliedCode ? suppliedCode.toInteger() : 1
+        versionName suppliedName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -16,7 +26,24 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        teste {
+            if (testKeystore) {
+                storeType 'PKCS12'
+                storeFile file(testKeystore)
+                storePassword testPassword
+                keyAlias 'linvuu-test'
+                keyPassword testPassword
+            }
+        }
+    }
     buildTypes {
+        debug {
+            applicationIdSuffix '.teste'
+            versionNameSuffix '-teste'
+            resValue 'string', 'app_name', 'Linvuu Teste'
+            if (testKeystore) signingConfig signingConfigs.teste
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

@@ -86,6 +86,7 @@ export function Header() {
       <label>{x.leitura}<select id="app-leitura" value={escala} onChange={e => setEscala(e.target.value)}><option value="1">{x.normal}</option><option value="1.25">{x.ampliado}</option><option value="1.5">{x.grande}</option></select></label>
       <button type="button" className="app-ajustes-fechar" onClick={fecharPainel}>{x.fechar}</button>
       <p>{a.avisoIdiomas}</p>
+      <p className="app-build-id">Linvuu Teste · {import.meta.env.VITE_APK_BUILD_ID || 'local'}</p>
       <Link to="/assinatura">{t.nav.assinatura}</Link>
       <Link to="/assinatura#excluir-conta">{{'pt-BR':'Excluir conta e dados',en:'Delete account and data',es:'Eliminar cuenta y datos'}[LOCALE.codigo]}</Link>
       <Link to="/privacidade">{t.rodape.privacidade}</Link>

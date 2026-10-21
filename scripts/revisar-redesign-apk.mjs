@@ -9,11 +9,11 @@ let browser;
 try{
  for(let i=0;i<60;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,250));}
  browser=await chromium.launch({args:['--no-sandbox'], executablePath:process.env.CHROME_EXECUTABLE_PATH});
- for(const locale of ['', '/en', '/es'])for(const width of [320,390]){
+ for(const locale of ['', '/en', '/es'])for(const width of [320,360,390,393,412]){
   const context=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   const course=locale?'br':'en';
   for(const [name,path,ready]of [['inicio','/','.app-missao'],['catalogo','/cursos','.app-grade'],['percurso',`/curso/${course}`,'.app-unidade'],['aula',`/curso/${course}/dia/1`,'.app-sessao'],['conta','/assinatura','.app-conta-mobile'],['acesso',`/curso/${course}/dia/9`,'.paywall']]){
-   await page.goto(base+locale+path);await page.locator(ready).first().waitFor();
+   await page.goto(base+locale+path);await page.locator(ready).first().waitFor();await page.evaluate(()=>document.fonts.ready);
    const original=await page.evaluate(()=>[document.documentElement.scrollWidth,innerWidth]);assert.ok(original[0]<=original[1]+1,`Overflow normal ${locale} ${name} ${width}: ${original}`);
    if(!locale&&width===390)await page.screenshot({path:`design/apk/v3-${name}.png`,fullPage:false});
    if(name==='aula'){
@@ -23,6 +23,7 @@ try{
 
    await page.evaluate(()=>document.documentElement.style.setProperty('--app-text-scale','2'));
    const enlarged=await page.evaluate(()=>[document.documentElement.scrollWidth,innerWidth]);if(enlarged[0]>enlarged[1]+1) console.log(await page.evaluate(()=>Array.from(document.querySelectorAll('body *')).map(e=>({tag:e.tagName,cls:e.className,right:e.getBoundingClientRect().right,width:e.getBoundingClientRect().width,text:e.textContent?.slice(0,60)})).filter(e=>e.right>innerWidth+1).slice(0,15)));assert.ok(enlarged[0]<=enlarged[1]+1,`Overflow 200% ${locale} ${name} ${width}: ${enlarged}`);
+   if(name==='percurso'){assert.ok(await page.locator('.app-unidade-num').first().isVisible());assert.ok(await page.locator('.app-sessao-num').first().isVisible());}
    const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
    rows.push({locale:locale||'pt',width,page:name,scale:'200%',violations:axe.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,nodes:v.nodes.map(n=>n.target)})),incomplete:axe.incomplete.map(v=>({id:v.id,count:v.nodes.length}))});
    await page.evaluate(()=>document.documentElement.style.setProperty('--app-text-scale','1'));

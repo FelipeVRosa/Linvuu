@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const ler=p=>fs.readFileSync(p,'utf8');
+const gradle=ler('android/app/build.gradle'),workflow=ler('.github/workflows/app-android.yml');
+assert.match(gradle,/applicationIdSuffix '\.teste'/,'teste separado da produção');
+assert.match(gradle,/System\.getenv\('LINVUU_TEST_PASSWORD'\)/,'senha vem do ambiente');
+assert.match(gradle,/CI exige assinatura estável/,'runner sem chave deve falhar');
+assert.match(gradle,/versionCode suppliedCode/,'versão vem da execução');
+assert.doesNotMatch(workflow,/pull_request_target/,'não executar código de forks com segredos');
+assert.match(workflow,/head\.repo\.full_name == github\.repository/,'restringir acesso a segredos');
+assert.match(workflow,/--draft --prerelease/,'entrega nunca deve publicar release');
+assert.match(workflow,/node scripts\/preparar-entrega-apk\.mjs/,'verificação real é obrigatória antes da entrega');
+assert.match(ler('design/apk/teste-certificado-sha256.txt').trim(),/^[a-f0-9]{64}$/,'identidade pública precisa estar fixada');
+for(const extensao of ['*.p12','*.jks','*.keystore'])assert.ok(ler('.gitignore').includes(extensao),'não versionar material privado');
+console.log('ok: guardas de distribuição; assinatura e manifesto ainda precisam da verificação real após Gradle');

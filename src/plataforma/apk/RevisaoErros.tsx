@@ -18,11 +18,12 @@ export function RevisaoErros({itens,origem,idioma,bloco,aoSair}:{itens:Exercicio
  const R=revisaoTextos(),T=textos(idioma),lingua=idioma==='br'?'pt-BR':idioma;
  const [storageKey]=useState(()=>chave(bloco));
  const [v,setV]=useState(()=>lerRevisao(bloco,itens,origem));
+ const ultimoEstado=useRef(JSON.stringify({respostas:v.respostas,fim:v.fim}));
  const [aviso,setAviso]=useState({seq:0,texto:'',resposta:''});
  const [falha,setFalha]=useState(false);
  const foco=useRef<HTMLHeadingElement>(null),pergunta=useRef<HTMLParagraphElement>(null);
  const atual=v.fila[v.indice],ex=itens[atual],pendentes=pendentesRevisao(v),certas=v.origem.length-pendentes.length;
- useEffect(()=>{try{if(!validarRevisao(v))throw Error('revisao-invalida');localStorage.setItem(storageKey,JSON.stringify(v));setFalha(false);}catch{setFalha(true);}},[v,storageKey]);
+ useEffect(()=>{try{if(!validarRevisao(v))throw Error('revisao-invalida');localStorage.setItem(storageKey,JSON.stringify(v));setFalha(false);const estado=JSON.stringify({respostas:v.respostas,fim:v.fim});if(estado!==ultimoEstado.current){ultimoEstado.current=estado;window.dispatchEvent(new Event('linvuu:revisao-apk'));}}catch{setFalha(true);}},[v,storageKey]);
  useEffect(()=>{if(v.fim)foco.current?.focus();else pergunta.current?.focus();},[v.indice,v.rodada,v.fim]);
  useEffect(()=>()=>parar(),[]);
  const editar=(dados:Partial<Revisao>)=>setV(p=>({...p,...dados,em:new Date().toISOString()}));

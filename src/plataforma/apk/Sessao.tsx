@@ -1,3 +1,4 @@
+import { ConclusaoSessao } from './ConclusaoSessao';
 import { ControlesAudio } from './ControlesAudio';
 import { RevisaoErros, lerRevisao } from './RevisaoErros';
 import { revisaoTextos } from './revisaoTextos';
@@ -11,10 +12,10 @@ import { consentimento, definirConsentimento, registrar } from '../../lib/medica
 import { falar, falarLista, falarTrechos, parar } from './audio';
 import { trechos } from '../../lib/narracao';
 import { textos } from '../../lib/textos';
-import { chaveSessao, lerSessao, salvarSessao } from '../../lib/progresso';
-import { somErro } from '../../lib/sons';
+import { chaveSessao, lerSessao, salvarSessao, diaConcluido, marcarDia } from '../../lib/progresso';
+import { somErro, somConcluido } from '../../lib/sons';
 import { useAuth } from '../../lib/AuthContext';
-import { concluirDia } from '../../components/AreaAluno';
+import { salvarDiaConta } from '../../lib/progressoConta';
 import { LOCALE, dicionario } from '../../i18n';
 import colunasJson from '../../../content/colunas.json';
 
@@ -343,9 +344,22 @@ function Conteudo({ b, idioma, explicacao, praticaChave, aoFinalizar }: { b: Blo
 function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao, compacta = false }: { compacta?: boolean; sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
-  const [msgFim, setMsgFim] = useState<string | null>(null);
+  const [novaConclusao,setNovaConclusao]=useState(false);
+  const [erroConclusao,setErroConclusao]=useState(false);
+  const [,atualizarRevisao]=useState(0);
+  useEffect(()=>{const sync=()=>atualizarRevisao(n=>n+1);window.addEventListener('linvuu:revisao-apk',sync);return()=>window.removeEventListener('linvuu:revisao-apk',sync);},[]);
+  const [confirmada,setConfirmada]=useState(()=>!!lerSessao(chaveSessao(idioma,aula,sessao.sessao))?.completa&&(!dia||diaConcluido(idioma,dia)));
   // Um só "Concluir": fecha a sessão e marca o dia na trilha (e na conta), como o botão do rodapé.
-  const concluir = () => { setCompleta(true); if (dia) setMsgFim(concluirDia(idioma, dia, !!usuario)); };
+  const concluir = () => {
+    if(completa&&confirmada)return;
+    salvarSessao(chave,{bloco:idx,completa:true});
+    if(lerSessao(chave)?.completa!==true){setErroConclusao(true);return;}
+    const jaMarcado=!!dia&&diaConcluido(idioma,dia);
+    if(dia)marcarDia(idioma,dia,true);
+    const ok=!dia||diaConcluido(idioma,dia);
+    if(ok&&dia){if(usuario)salvarDiaConta(idioma,dia,true);if(!jaMarcado)somConcluido();}
+    setCompleta(true);setConfirmada(ok);setErroConclusao(!ok);setNovaConclusao(ok);
+  };
   const chave = chaveSessao(idioma, aula, sessao.sessao);
   const total = sessao.blocos.length;
   const corrigiveis=sessao.blocos.flatMap(b=>b.tipo==='exercicios'?b.itens:[]).filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length;
@@ -365,7 +379,7 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
   }, [idx, compacta]);
 
   useEffect(() => () => parar(), [idioma]);
-  useEffect(() => { parar(); salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
+  useEffect(() => { parar(); const atual=lerSessao(chave);if(atual?.bloco!==idx||atual?.completa!==completa)salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
 
   const etapas = (
       <ol className="passos-nav" aria-label={T.blocosSessao}>
@@ -390,6 +404,7 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
        {idx===total-1&&corrigiveis>0&&!pratica&&!completa&&<p role="status">{estudoTexto.pendente}</p>}
        {!usuario&&<p>{estudoTexto.local}</p>}
       </div>
+      {erroConclusao&&!completa&&<p role="alert">{({'pt-BR':'Não foi possível confirmar a conclusão neste aparelho. Tente novamente.',en:'Completion could not be confirmed on this device. Try again.',es:'No se pudo confirmar la finalización en este dispositivo. Inténtalo de nuevo.'}[LOCALE.codigo])}</p>}
       <div className="sessao-nav">
         <button type="button" className="btn btn-ghost" disabled={idx === 0} onClick={() => setIdx(idx - 1)}>{APK ? ({'pt-BR':'Bloco anterior',en:'Previous block',es:'Bloque anterior'}[LOCALE.codigo]) : T.voltar}</button>
         {idx < total - 1
@@ -397,7 +412,14 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
           : <button type="button" className="btn btn-primary" disabled={corrigiveis>0&&!pratica&&!completa} onClick={concluir}>{completa ? T.concluida : corrigiveis ? T.concluir : estudoTexto.concluir}</button>}
       </div>
       {idx === total - 1 && completa && (
-        <p className="concluida" role="status">{completa && (msgFim ?? T.concluidaNav)} {proximo && <Link to={proximo} className="btn btn-primary concluida-prox">{T.proxSessao}</Link>}</p>
+        <ConclusaoSessao key={confirmada?'confirmada':'pendente'} tipo={!corrigiveis?'leitura':pratica?'pratica':'historico'} resultado={pratica} revisao={pratica?pratica.acertos===pratica.total?'semErros':blocosCorrigidos.every(n=>{
+         const bloco=sessao.blocos[n];if(bloco.tipo!=='exercicios')return true;
+         const tentativa=lerTentativa(`${chave}:bloco:${n}`,bloco.itens);if(!tentativa)return false;
+         const origem=bloco.itens.flatMap((e,k)=>e.tipo!=='repeat'&&e.tipo!=='producao'&&tentativa.respostas[k]===false?[k]:[]);
+         if(!origem.length)return true;const rev=lerRevisao(`${chave}:bloco:${n}`,bloco.itens,origem);
+         return rev.fim&&origem.every(k=>rev.respostas[k]===true);
+        })?'finalizada':'pendente':null} nova={novaConclusao} aoExibir={()=>setNovaConclusao(false)} idioma={idioma} proximo={proximo} confirmado={confirmada} tentar={concluir}/>
+
       )}
     </div>
   );

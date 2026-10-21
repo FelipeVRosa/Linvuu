@@ -19,15 +19,13 @@
 .app-home-universo .app-kicker{color:var(--fg-sobre-marca-2);margin:.75rem 0}
 .app-home-universo h2{font-size:1.75rem;max-width:15ch;margin:0;line-height:1.2;color:inherit}
 .app-home-universo>p:last-child{font-size:.9375rem;line-height:1.6;color:var(--fg-sobre-marca-2);margin:.75rem 0 0;max-width:33ch}
-.app-home-orbita{position:relative;width:min(100%,200px);aspect-ratio:10/7;margin-inline:auto;display:grid;place-items:center}
-.app-home-orbita svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--fg-sobre-marca);stroke-width:.75;opacity:.35}
-.app-home-orbita img{position:relative;width:48px;height:48px;border-radius:14px}
+.app-home-universo em{color:inherit;font-style:italic;font-weight:inherit}
+.app-home-marca{margin-bottom:1.25rem}
+.app-home-marca img{display:block;width:72px;height:72px}
 @media(prefers-reduced-motion:no-preference){
- .app-home-identidade[open] .app-home-orbita svg{animation:app-home-orbita-entrada 1.2s ease-out both}
  .app-home-identidade[open] .app-home-universo h2{animation:app-home-boasvindas .45s ease-out both}
  .app-dashboard .app-acao-principal{transition:transform .15s ease,box-shadow .15s ease}
  .app-dashboard .app-acao-principal:active{transform:scale(.985)}
- @keyframes app-home-orbita-entrada{from{opacity:0;transform:scale(.8) rotate(-12deg)}to{opacity:.35;transform:none}}
  @keyframes app-home-boasvindas{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
 }
 @media(max-width:360px){.app-dashboard .app-avanco-topo{flex-wrap:wrap}.app-home-percentual{font-size:1.5rem}}

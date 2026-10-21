@@ -11,9 +11,9 @@ import { SESSOES_GRATIS } from '../../config/planos';
 import './home-lote2.css';
 
 const detalhes = {
- 'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'Um mundo de possibilidades.', texto: 'Aprenda no seu ritmo. Leve uma nova língua para a sua vida.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu; compras seguem desativadas neste teste.' },
- en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'A world of possibilities.', texto: 'Learn at your own pace. Bring a new language into your life.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned; purchases remain disabled in this test.' },
- es: { selecao: 'Elige tu idioma de estudio', passo: 'Próximo paso', marca: 'Te damos la bienvenida a Linvuu', titulo: 'Un mundo de posibilidades.', texto: 'Aprende a tu ritmo. Lleva un nuevo idioma a tu vida.', progresso: 'de tu recorrido completado', completa: 'Recorrido completado. Sigue practicando.', rever: 'Repasar el recorrido', reverGratis: 'Repasar las sesiones gratuitas', fimGratis: 'Completaste las sesiones gratuitas de este idioma. Refuerza lo aprendido; las compras siguen desactivadas en esta prueba.' },
+ 'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'O mundo tem muito a dizer.', texto: 'Entre na conversa.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu; compras seguem desativadas neste teste.' },
+ en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'The world has so much to say.', texto: 'Join the conversation.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned; purchases remain disabled in this test.' },
+ es: { selecao: 'Elige tu idioma de estudio', passo: 'Próximo paso', marca: 'Te damos la bienvenida a Linvuu', titulo: 'El mundo tiene mucho que decir.', texto: 'Entra en la conversación.', progresso: 'de tu recorrido completado', completa: 'Recorrido completado. Sigue practicando.', rever: 'Repasar el recorrido', reverGratis: 'Repasar las sesiones gratuitas', fimGratis: 'Completaste las sesiones gratuitas de este idioma. Refuerza lo aprendido; las compras siguen desactivadas en esta prueba.' },
 };
 
 export default function Home() {
@@ -47,8 +47,8 @@ export default function Home() {
   <details className="app-home-identidade">
    <summary>{d.marca}<span aria-hidden="true">＋</span></summary>
    <div className="app-home-universo">
-    <div className="app-home-orbita" aria-hidden="true"><svg viewBox="0 0 200 140" focusable="false"><ellipse cx="100" cy="70" rx="88" ry="32"/><ellipse cx="100" cy="70" rx="88" ry="32" transform="rotate(55 100 70)"/><ellipse cx="100" cy="70" rx="88" ry="32" transform="rotate(-55 100 70)"/></svg><img src="/brand/linvuu-app-emblema.svg" alt="" width="48" height="48" /></div>
-    <p className="app-kicker">Linvuu</p><h2>{d.titulo}</h2><p>{d.texto}</p>
+    <div className="app-home-marca" aria-hidden="true"><img src="/brand/linvuu-app-monograma.svg" alt="" width="72" height="72" /></div>
+    <p className="app-kicker">Linvuu</p><h2>{d.titulo}</h2><p><em>{d.texto}</em></p>
    </div>
   </details>
   <p className="app-rodape-teste">{x.teste}</p>

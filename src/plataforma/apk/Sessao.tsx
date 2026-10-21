@@ -1,5 +1,5 @@
 import { ControlesAudio } from './ControlesAudio';
-import { lerPratica, salvarPratica, type Pratica } from './estudo';
+import { lerPratica, salvarPratica, lerTentativa, salvarTentativa, assinaturaExercicios, type Pratica } from './estudo';
 import { APK } from '../../plataforma';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -77,15 +77,18 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
   );
 }
 
-function Exercicios({ itens, idioma, aoFinalizar }: { itens: Exercicio[]; idioma: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
+function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exercicio[]; idioma: string; praticaChave: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
-  const [i, setI] = useState(0);
-  const [escolha, setEscolha] = useState<string | null>(null);
-  const [ordem, setOrdem] = useState<number[]>([]);
-  const [texto, setTexto] = useState('');
-  const [res, setRes] = useState<'ok' | 'erro' | 'livre' | null>(null);
-  const [acertos, setAcertos] = useState<Record<number, boolean>>({});
-  const [fim, setFim] = useState(false);
+  const [inicial] = useState(() => lerTentativa(praticaChave,itens));
+  const assinatura=useMemo(()=>assinaturaExercicios(itens),[itens]);
+  const [i, setI] = useState(inicial?.indice ?? 0);
+  const [escolha, setEscolha] = useState<string | null>(inicial?.escolha ?? null);
+  const [ordem, setOrdem] = useState<number[]>(inicial?.ordem ?? []);
+  const [texto, setTexto] = useState(inicial?.texto ?? '');
+  const [res, setRes] = useState<'ok' | 'erro' | 'livre' | null>(inicial?.resultado ?? null);
+  const [acertos, setAcertos] = useState<Record<number, boolean>>(inicial?.respostas ?? {});
+  const [fim, setFim] = useState(inicial?.finalizada ?? false);
+  useEffect(()=>{ salvarTentativa(praticaChave,{tipo:'tentativa',versao:1,assinatura,indice:i,escolha,ordem,texto:itens[i]?.tipo==='producao'?'':texto,resultado:res,respostas:acertos,finalizada:fim,em:new Date().toISOString()}); },[praticaChave,assinatura,itens,i,escolha,ordem,texto,res,acertos,fim]);
   const enunciado = useRef<HTMLParagraphElement>(null);
   useEffect(() => { if (APK && i > 0) enunciado.current?.focus(); }, [i]);
   const navTeclado = useRef(false); // true depois de um Tab: o Enter passa a agir no botão em foco
@@ -172,7 +175,7 @@ function Exercicios({ itens, idioma, aoFinalizar }: { itens: Exercicio[]; idioma
       {comOpcoes && (
         <div className="ex-opcoes" role="radiogroup" aria-label={T.opcoes}>
           {ex.opcoes!.map((o) => (
-            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}</button>
+            <button key={o} type="button" role="radio" aria-checked={escolha === o} disabled={res !== null} className={`ex-op ${escolha === o ? 'on' : ''} ${res && o === ex.gabarito ? 'certa' : ''} ${res === 'erro' && escolha === o ? 'errada' : ''}`} onClick={() => setEscolha(o)} lang={idioma}>{o}{res && o === ex.gabarito && <span lang={LOCALE.codigo}> · {T.certo}</span>}{res === 'erro' && escolha === o && <span lang={LOCALE.codigo}> · {({'pt-BR':'Incorreta',en:'Incorrect',es:'Incorrecta'}[LOCALE.codigo])}</span>}</button>
           ))}
           <small className="ex-dica">{T.teclado(ex.opcoes!.length)}</small>
         </div>
@@ -188,8 +191,8 @@ function Exercicios({ itens, idioma, aoFinalizar }: { itens: Exercicio[]; idioma
       )}
       {!comOpcoes && ex.tipo !== 'sentence-ordering' && ex.tipo !== 'repeat' && (
         ex.tipo === 'producao'
-          ? <textarea className="ex-texto" aria-labelledby={APK ? `enunciado-${ex.id}` : undefined} autoCapitalize={APK ? "none" : undefined} autoCorrect={APK ? "off" : undefined} spellCheck={APK ? false : undefined} rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
-          : <input className="ex-texto" aria-labelledby={APK ? `enunciado-${ex.id}` : undefined} autoCapitalize={APK ? "none" : undefined} autoCorrect={APK ? "off" : undefined} spellCheck={APK ? false : undefined} value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
+          ? <textarea maxLength={8000} className="ex-texto" aria-labelledby={APK ? `enunciado-${ex.id}` : undefined} autoCapitalize={APK ? "none" : undefined} autoCorrect={APK ? "off" : undefined} spellCheck={APK ? false : undefined} rows={3} value={texto} onChange={(e) => setTexto(e.target.value)} placeholder={T.escrevaPrivado} lang={idioma} />
+          : <input maxLength={8000} className="ex-texto" aria-labelledby={APK ? `enunciado-${ex.id}` : undefined} autoCapitalize={APK ? "none" : undefined} autoCorrect={APK ? "off" : undefined} spellCheck={APK ? false : undefined} value={texto} disabled={res !== null} onChange={(e) => setTexto(e.target.value)} placeholder={idioma === 'ru' ? T.escrevaCirilico : T.escreva} lang={idioma} />
       )}
       <div className="ex-acoes ex-acoes-fixas">
         {res === null ? <button type="button" className="btn btn-primary" disabled={!pode} onClick={verificar}>{ex.tipo === 'producao' ? T.verExemplo : ex.tipo === 'repeat' ? T.mostrarResposta : T.verificar}</button>
@@ -263,7 +266,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
   );
 }
 
-function Conteudo({ b, idioma, explicacao, aoFinalizar }: { b: Bloco; idioma: string; explicacao?: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
+function Conteudo({ b, idioma, explicacao, praticaChave, aoFinalizar }: { b: Bloco; idioma: string; explicacao?: string; praticaChave: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
   const [trad, setTrad] = useState(false);
   const [exemplo, setExemplo] = useState(false);
@@ -320,11 +323,11 @@ function Conteudo({ b, idioma, explicacao, aoFinalizar }: { b: Bloco; idioma: st
       </section>
     );
     case 'gramatica': return <Gramatica b={b} idioma={idioma} explicacao={explicacao} />;
-    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} aoFinalizar={aoFinalizar} />;
+    case 'exercicios': return <Exercicios itens={b.itens} idioma={idioma} praticaChave={praticaChave} aoFinalizar={aoFinalizar} />;
   }
 }
 
-export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao, compacta = false }: { compacta?: boolean; sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
+function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao, compacta = false }: { compacta?: boolean; sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
   const [msgFim, setMsgFim] = useState<string | null>(null);
@@ -334,7 +337,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const total = sessao.blocos.length;
   const corrigiveis=sessao.blocos.flatMap(b=>b.tipo==='exercicios'?b.itens:[]).filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length;
   const blocosCorrigidos=sessao.blocos.map((b,i)=>b.tipo==='exercicios'&&b.itens.some(e=>e.tipo!=='repeat'&&e.tipo!=='producao')?i:-1).filter(i=>i>=0);
-  const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const p=lerPratica(`${chave}:bloco:${i}`);return p?[[i,p]]:[];})));
+  const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const bloco=sessao.blocos[i];const p=lerPratica(`${chave}:bloco:${i}`,bloco.tipo==='exercicios'?assinaturaExercicios(bloco.itens):undefined);return p&&bloco.tipo==='exercicios'&&p.total===bloco.itens.filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length?[[i,p]]:[];})));
   const pratica=blocosCorrigidos.length>0&&blocosCorrigidos.every(i=>praticas[i])?{acertos:blocosCorrigidos.reduce((n,i)=>n+praticas[i].acertos,0),total:blocosCorrigidos.reduce((n,i)=>n+praticas[i].total,0)}:null;
   const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem teste corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'},es:{leitura:'Sesión de lectura y escucha, sin prueba corregida.',pendente:'Completa la práctica corregida antes de finalizar esta sesión.',resultado:'Práctica corregida',concluir:'Finalizar lectura',local:'El progreso de visitante se guarda en este dispositivo. Borrar los datos puede eliminarlo.'}}[LOCALE.codigo];
   const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
@@ -354,7 +357,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const etapas = (
       <ol className="passos-nav" aria-label={T.blocosSessao}>
         {sessao.blocos.map((x, k) => (
-          <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {T.rotuloBloco[x.tipo]}</button></li>
+          <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${completa || praticas[k] ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {T.rotuloBloco[x.tipo]}</button></li>
         ))}
       </ol>
   );
@@ -366,7 +369,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span aria-hidden="true">⌄</span></summary>{etapas}</details> : etapas}
       <div className="bloco">
         <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2>{!compacta && <span>{T.bloco(idx + 1, total, b.min)}</span>}</div>
-        <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} aoFinalizar={(acertos,total)=>setPraticas(p=>({...p,[idx]:salvarPratica(`${chave}:bloco:${idx}`,acertos,total)}))} />
+        <Conteudo key={`${usuario?.uid??'visitante'}:${chave}:${idx}`} b={b} idioma={idioma} explicacao={explicacao} praticaChave={`${chave}:bloco:${idx}`} aoFinalizar={(acertos,total)=>setPraticas(p=>({...p,[idx]:salvarPratica(`${chave}:bloco:${idx}`,acertos,total,b.tipo==='exercicios'?assinaturaExercicios(b.itens):undefined)}))} />
       </div>
       <div className="app-estudo-resumo">
        {!corrigiveis&&<p>{estudoTexto.leitura}</p>}
@@ -380,9 +383,16 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
           ? <button type="button" className="btn btn-primary" onClick={() => setIdx(idx + 1)}>{T.continuar}</button>
           : <button type="button" className="btn btn-primary" disabled={corrigiveis>0&&!pratica&&!completa} onClick={concluir}>{completa ? T.concluida : corrigiveis ? T.concluir : estudoTexto.concluir}</button>}
       </div>
-      {idx === total - 1 && (completa || proximo) && (
+      {idx === total - 1 && completa && (
         <p className="concluida" role="status">{completa && (msgFim ?? T.concluidaNav)} {proximo && <Link to={proximo} className="btn btn-primary concluida-prox">{T.proxSessao}</Link>}</p>
       )}
     </div>
   );
+}
+
+/** Remonta o estado transitório antes de trocar a conta ou o conteúdo da sessão. */
+export function Sessao(props:Parameters<typeof SessaoConteudo>[0]) {
+ const {usuario}=useAuth();
+ const versao=assinaturaExercicios(props.sessao.blocos);
+ return <SessaoConteudo key={`${usuario?.uid??'visitante'}:${props.idioma}:${props.aula}:${props.sessao.sessao}:${versao}`} {...props} />;
 }

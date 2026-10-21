@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {criarArmazenamento} from '../src/plataforma/apk/armazenamento';
 import {CHAVE_JOURNAL,alterar,lerJournal,reconciliar,serializar,valorValido,vazio} from '../src/plataforma/apk/recuperacao';
+import {assinaturaExercicios} from '../src/plataforma/apk/estudoModelo';
 Object.assign(globalThis,{window:new EventTarget()});
 class Memoria {
  constructor(entradas:Record<string,string>={}) {Object.defineProperty(this,'mapa',{value:new Map(Object.entries(entradas)),enumerable:false});for(const [k,v]of Object.entries(entradas))this.setItem(k,v);}
@@ -20,6 +21,16 @@ function ambiente(local:Record<string,string>={},remoto:Record<string,string>={}
  return {storage,persistido,backend,criar,get erro(){return erro;},leitura:(v:boolean)=>{falhaLeitura=v;},escrita:(v:boolean)=>{falhaEscrita=v;}};
 }
 function doc(k:string,v:string|null,rev=1,pendente=false){const j=vazio();j.contador=rev;j.entradas[k]={valor:v,revisao:rev,pendente};return serializar(j);}
+{
+ const k='linvuu:pratica-apk:v1:a:en:1:s1:bloco:0:tentativa';
+ const p={tipo:'tentativa',versao:1,assinatura:assinaturaExercicios([{id:'en-001-m01'}]),indice:0,escolha:null,ordem:[],texto:'answer draft',resultado:null,respostas:{},finalizada:false,em:new Date().toISOString()};
+ const raw=JSON.stringify(p),a=ambiente(),m=a.criar();await m.hidratar();m.gravar(k,raw);await m.sincronizar();
+ const b=ambiente({},Object.fromEntries(a.persistido));await b.criar().hidratar();assert.equal(b.storage.getItem(k),raw);
+ for(const mal of [{...p,texto:'x'.repeat(8001)},{...p,ordem:[0,0]},{...p,respostas:{0:'true'}},{...p,indice:-1},{...p,versao:9}])assert.equal(valorValido(k,JSON.stringify(mal)),false);
+ assert.equal(valorValido(k,JSON.stringify({acertos:1,total:1,em:p.em})),false);
+ assert.equal(valorValido(k.slice(0,-10),raw),false);
+ checks.push('tentativa parcial recuperada da cópia nativa com esquema limitado','tentativa rejeita tipos, duplicações, excesso e troca por resumo');
+}
 {
  const a=ambiente({[dias]:'["en:1"]','firebase:authUser:x':'segredo'},{[outro]:'["ru:2"]'}),m=a.criar();await m.hidratar();
  assert.equal(a.storage.getItem(outro),'["ru:2"]');assert.equal(a.storage.getItem(dias),'["en:1"]');

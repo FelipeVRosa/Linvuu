@@ -35,3 +35,5 @@ jobs:
         run: node scripts/testar-audio-apk.mjs
       - name: Testar leitura, prática corrigida e retomada
         run: node scripts/testar-estudo-apk.mjs
+      - name: Testar retomada da tentativa e movimento reduzido
+        run: node scripts/testar-retomada-tentativa-apk.mjs && node scripts/testar-home-lote2-apk.mjs

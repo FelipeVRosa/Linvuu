@@ -11,7 +11,7 @@ import { LOCALE, T } from '../i18n';
 type Estado = 'carregando' | 'liberado' | 'entrar' | 'assinar' | 'indisponivel';
 
 export default function LivroGramatica() {
-  usePageTitle('Gramática russa A1–A2', 'O livro de gramática russa da Linvuu, do A1 ao A2, explicado em português. Para assinantes.');
+  usePageTitle('Gramática russa A1–A2', 'O livro de gramática russa da Linvuu, do A1 ao A2, explicado em português. Para assinantes.', [], true);
   const { usuario, carregando } = useAuth();
   const [estado, setEstado] = useState<Estado>('carregando');
   const [html, setHtml] = useState('');

@@ -8,7 +8,7 @@ import { IconeContato } from '../components/IconesContato';
 
 /** Contato: site, e-mail, WhatsApp (quando houver número) e LinkedIn dos autores. Só em português. */
 export default function Contato() {
-  usePageTitle(CONTATO.titulo, CONTATO.descricao, ['pt-BR']);
+  usePageTitle(CONTATO.titulo, CONTATO.descricao, ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   const canais = contatos().filter((c) => c.id !== 'linkedin');
   return (
     <div className="pagina lvr">

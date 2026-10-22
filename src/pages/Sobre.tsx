@@ -7,7 +7,7 @@ import { AUTORES } from '../lib/livros';
 
 /** Quem escreve a Linvuu: autoria, origem e método. Só em português (o servidor marca /en/sobre e /es/sobre com noindex). */
 export default function Sobre() {
-  usePageTitle('Quem escreve a Linvuu', 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ['pt-BR']);
+  usePageTitle('Quem escreve a Linvuu', 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">

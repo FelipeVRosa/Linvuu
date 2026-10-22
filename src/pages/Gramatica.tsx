@@ -42,7 +42,7 @@ export default function Gramatica() {
   const lista = useMemo(() => (pacote ? pacote.topicos.filter((t) => cat === 'todas' || t.categoria === cat) : []), [pacote, cat]);
   const t = useT();
   const g = t.gramaticaPagina;
-  usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined);
+  usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined, undefined, curso?.id === LOCALE.cursoOculto || curso?.status === 'em-breve');
   if (!id || !curso || !IDIOMAS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
 
   return (

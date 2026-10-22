@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { SITE_URL } from '../config/site';
 import { LOCALE, LOCALES, useT } from '../i18n';
 import { caminhoEm, type CodigoLocale } from '../i18n/locales';
+import { sincronizarRobots } from './robotsPagina';
 
 const meta = (sel: string, attr: string, valor: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(sel);
@@ -20,12 +22,16 @@ const link = (rel: string, href: string, hreflang?: string) => {
  * `idiomas`: em quais idiomas a página existe (padrão: os três). As sessões passam [] porque a versão traduzida depende da
  * aula; para elas, as alternativas ficam no sitemap.xml.
  */
-export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es']) {
+export function usePageTitle(titulo?: string, descricao?: string, idiomas: CodigoLocale[] = ['pt-BR', 'en', 'es'], semIndice = false) {
   const t = useT();
+  const { pathname } = useLocation();
   useEffect(() => {
     const tit = titulo ? `${titulo} · Linvuu` : t.meta.titulo;
     const desc = descricao ?? t.meta.descricao;
-    const caminho = window.location.pathname;
+    const caminho = window.location.pathname.replace(/\/+$/, '') || '/';
+    // Navegar da página de login/aula paga para uma amostra não pode herdar seu noindex,
+    // e a navegação inversa precisa aplicar a mesma política entregue pelo servidor.
+    sincronizarRobots(document, semIndice);
     document.title = tit;
     meta('meta[name="description"]', 'name=description', desc);
     meta('meta[property="og:title"]', 'property=og:title', tit);
@@ -34,9 +40,9 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
     meta('meta[property="og:locale"]', 'property=og:locale', LOCALE.og);
     link('canonical', SITE_URL + caminho);
     document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
-    if (idiomas.length > 1) {
+    if (!semIndice && idiomas.length > 1) {
       for (const l of LOCALES.filter((x) => idiomas.includes(x.codigo))) link('alternate', SITE_URL + caminhoEm(l.codigo, caminho), l.codigo);
       if (idiomas.includes('pt-BR')) link('alternate', SITE_URL + caminhoEm('pt-BR', caminho), 'x-default');
     }
-  }, [titulo, descricao, t, idiomas.join()]);
+  }, [titulo, descricao, t, idiomas.join(), semIndice, pathname]);
 }

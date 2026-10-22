@@ -6,7 +6,7 @@ import { POR_QUE } from '../lib/institucional';
 
 /** "Por que estudar com a Linvuu?": os motivos, em fatos verificáveis. Só em português. */
 export default function PorQue() {
-  usePageTitle(POR_QUE.titulo, POR_QUE.descricao, ['pt-BR']);
+  usePageTitle(POR_QUE.titulo, POR_QUE.descricao, ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">

@@ -53,7 +53,7 @@ assert.equal((await post({ ...valido, email: 'x'.repeat(11_000) + '@e.com' })).s
 assert.equal((await lista()).length, 1, 'inválidos não gravam');
 
 // 4. campo-isca: parece sucesso, mas não grava
-assert.equal((await post({ ...valido, email: 'robo@exemplo.invalid', website: 'http://spam.invalid' })).status, 204);
+assert.equal((await post({ ...valido, email: 'robo@exemplo.invalid', ref_extra_nl: 'http://spam.invalid' })).status, 204);
 assert.equal((await lista()).length, 1, 'robô não grava');
 
 // 5. rota é só POST; leitura pública da lista não existe

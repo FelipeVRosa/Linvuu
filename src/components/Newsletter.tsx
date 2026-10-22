@@ -26,7 +26,7 @@ export function Newsletter({ origem }: { origem: string }) {
       const r = await fetch(api('/api/newsletter'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim().toLowerCase(), origem: origem.toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40) || 'site', idioma: LOCALE.explicacao, aceite: true, website: isca }),
+        body: JSON.stringify({ email: email.trim().toLowerCase(), origem: origem.toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 40) || 'site', idioma: LOCALE.explicacao, aceite: true, ref_extra_nl: isca }),
       });
       if (!r.ok) throw new Error(String(r.status));
       setEstado('ok');
@@ -42,7 +42,7 @@ export function Newsletter({ origem }: { origem: string }) {
         <input id={`news-${origem}`} type="email" autoComplete="email" placeholder={t.newsletter.email} value={email} onChange={(e) => setEmail(e.target.value)} />
         <button type="submit" className="btn btn-primary" disabled={estado === 'enviando'}>{estado === 'enviando' ? t.newsletter.ocupado : t.newsletter.botao}</button>
       </div>
-      <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" value={isca} onChange={(e) => setIsca(e.target.value)} style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, opacity: 0 }} />
+      <input type="text" name="ref_extra_nl" tabIndex={-1} autoComplete="off" aria-hidden="true" value={isca} onChange={(e) => setIsca(e.target.value)} style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, opacity: 0 }} />
       <label className="check news-aceite"><input type="checkbox" checked={aceite} onChange={(e) => setAceite(e.target.checked)} /> {t.newsletter.consentimento} <Link to="/privacidade">{t.rodape.privacidade}</Link></label>
       {aviso && <p className="conta-erro" role="alert">{aviso}</p>}
       {estado === 'erro' && <p className="conta-erro" role="alert">{t.newsletter.erro} <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>.</p>}

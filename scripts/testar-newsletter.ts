@@ -11,7 +11,8 @@ for (const email of ['', 'semarroba', 'a@b', 'a b@c.com', 'a@@c.com', 'a@c.com\n
 for (const origem of ['', 'Rodape', 'a b', 'x'.repeat(41), '../x', 5, null]) assert.equal(validarInscricao({ ...base, origem }), null, `origem inválida: ${String(origem)}`);
 for (const idioma of ['', 'fr', 'PT', 7, null]) assert.equal(validarInscricao({ ...base, idioma }), null, `idioma inválido: ${String(idioma)}`);
 assert.equal(validarInscricao({ ...base, admin: true }), null, 'campo extra');
-assert.equal(validarInscricao({ ...base, website: '' })?.email, 'pessoa@exemplo.invalid', 'isca vazia é aceita');
+assert.equal(validarInscricao({ ...base, website: '' }), null, 'nome antigo da isca (website) não é mais aceito');
+assert.equal(validarInscricao({ ...base, ref_extra_nl: '' })?.email, 'pessoa@exemplo.invalid', 'isca vazia é aceita');
 for (const corpo of [null, undefined, 'texto', 42, [], [base]]) assert.equal(validarInscricao(corpo), null, 'corpo não-objeto');
 assert.equal(idDoEmail('a@exemplo.invalid'), idDoEmail('a@exemplo.invalid'), 'id estável');
 assert.notEqual(idDoEmail('a@exemplo.invalid'), idDoEmail('b@exemplo.invalid'));

@@ -20,6 +20,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: actions/setup-java@v4 # o emulador do Firestore (testes de regras e da newsletter) exige Java
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/cache@v4 # evita baixar o emulador (~60 MB) a cada execução
+        with:
+          path: ~/.cache/firebase/emulators
+          key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1
       - run: npm ci
       - name: Verificar tipos TypeScript
         run: npm run lint
@@ -35,6 +43,12 @@ jobs:
         run: npm run testar:progresso
       - name: Testar reenvio e isolamento do progresso na conta
         run: node --import tsx scripts/testar-sincronizacao-progresso.ts
+      - name: Testar validação da newsletter (tipos, tamanhos, aceite, campos extras)
+        run: npm run testar:newsletter
+      - name: Testar a rota da newsletter no emulador do Firestore (consentimento, repetição, limite por IP)
+        run: npm run testar:newsletter:rota
+      - name: Testar as regras do Firestore no emulador (duas contas fictícias e visitante)
+        run: npm run testar:regras
       - run: npm run build
       - name: Testar politica publica de indexacao
         run: node --import tsx scripts/testar-seo-publico.ts

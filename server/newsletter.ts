@@ -20,7 +20,7 @@ export interface Inscricao { email: string; origem: string; idioma: string }
 export function validarInscricao(corpo: unknown): Inscricao | null {
   const b = corpo as Record<string, unknown> | null;
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
-  if (Object.keys(b).some((k) => !['email', 'origem', 'idioma', 'aceite', 'website'].includes(k))) return null;
+  if (Object.keys(b).some((k) => !['email', 'origem', 'idioma', 'aceite', 'ref_extra_nl'].includes(k))) return null;
   if (typeof b.email !== 'string' || b.email.length > 254) return null;
   const email = b.email.trim().toLowerCase();
   if (!EMAIL.test(email)) return null;
@@ -34,8 +34,8 @@ export const idDoEmail = (email: string) => crypto.createHash('sha256').update(e
 
 export function registrarNewsletter(app: Express) {
   app.post('/api/newsletter', async (req: Request, res: Response) => {
-    // Campo-isca (`website`): invisível para pessoas; se vier preenchido é robô. Respondemos como sucesso, sem gravar.
-    if (typeof req.body?.website === 'string' && req.body.website !== '') { res.status(204).end(); return; }
+    // Campo-isca (`ref_extra_nl`: nome neutro, que gerenciadores de senha e autopreenchimento não reconhecem): invisível para pessoas; se vier preenchido é robô. Respondemos como sucesso, sem gravar.
+    if (typeof req.body?.ref_extra_nl === 'string' && req.body.ref_extra_nl !== '') { res.status(204).end(); return; }
     const v = validarInscricao(req.body);
     if (!v) { res.status(400).json({ error: 'Pedido inválido.' }); return; }
     if (!projetoFirebase) { res.status(503).json({ error: 'Indisponível no momento.' }); return; }

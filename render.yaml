@@ -9,7 +9,8 @@ services:
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /healthz
-    autoDeploy: true
+    renderSubdomainPolicy: disabled
+    autoDeployTrigger: checksPass
     envVars:
       - key: NODE_ENV
         value: production
@@ -18,6 +19,8 @@ services:
       - key: STRIPE_SECRET_KEY
         sync: false
       - key: STRIPE_PRICE_ID
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
         sync: false
       - key: FIREBASE_SERVICE_ACCOUNT_JSON
         sync: false
@@ -34,4 +37,4 @@ services:
       - key: VITE_FIREBASE_MESSAGING_SENDER_ID
         sync: false
       - key: VITE_AUTH_GOOGLE
-        value: "false"
+        value: "true"

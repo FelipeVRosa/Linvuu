@@ -225,7 +225,10 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const grupos = d?.indice[mc[1]]?.grupos ?? [];
       const tr = d?.indice[mc[1]]?.tr?.[loc.explicacao]?.g;
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
-      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.map((g) => a(`/curso/${mc[1]}/dia/${g.dias[0]}`, `${tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]}`)));
+      // No HTML estático só entram links para sessões que valem a indexação: as grátis (texto completo no HTML) e, fora do português,
+      // as que existem de verdade naquele idioma. As demais seguem acessíveis pelo app (JavaScript), mas não viram URLs "descobertas" à toa.
+      const indexavel = (g: { aula: number; dias: [number, number] }) => g.dias[0] <= SESSOES_GRATIS && (mesmo || !!d?.indice[mc[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
+      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.filter(indexavel).flatMap((g) => { const rot = tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]; return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k).filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`)); }));
     } else if (md) {
       corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
     } else if (m.titulo) {

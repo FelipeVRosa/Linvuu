@@ -9,6 +9,7 @@ import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
+import { registrarNewsletter } from './server/newsletter';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { registrarProntidao } from './server/prontidao';
@@ -46,6 +47,7 @@ async function startServer() {
   registrarLivroProtegido(app);
   registrarProgresso(app);
   registrarMedicao(app);
+  registrarNewsletter(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

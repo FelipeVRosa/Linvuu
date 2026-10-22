@@ -1,22 +1,36 @@
-// REFERÊNCIA — compare com as regras publicadas no Firebase Console (Firestore → Regras).
-// Este arquivo não é publicado automaticamente.
+// Regras do Firestore do projeto `linvuu`. Este arquivo NÃO é publicado automaticamente: a publicação é feita no
+// Firebase Console (Firestore → Regras) ou com `firebase deploy --only firestore:rules`. Testes: `npm run testar:regras`.
+//
+// Princípios:
+//  - Tudo que não tem regra explícita é negado (inclusive a coleção `eventos`, `newsletter`, `usuarios` e `lessons`).
+//  - O navegador só enxerga e cria o PRÓPRIO perfil em `users/{uid}`; XP, streak e aulas concluídas são gravados só pelo
+//    servidor (Admin SDK, que ignora estas regras). Assinatura e cobrança vivem no Stripe, nunca no Firestore.
+//  - A newsletter NÃO é gravada pelo navegador: o formulário chama POST /api/newsletter, que valida, limita por IP e grava
+//    com o Admin SDK. Assim não existe escrita anônima aberta no banco.
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Um documento por usuário, com o mesmo id do login. Cada pessoa só enxerga e altera o próprio.
-    // Qualquer outro caminho é negado por padrão (não há regra que permita).
+    // Um documento por pessoa, com o mesmo id do login.
     match /users/{uid} {
       allow read: if request.auth != null && request.auth.uid == uid;
 
-      // Criação (é o que o site faz no cadastro): campos fixos e começando do zero.
+      // Criação no cadastro: campos fixos, e-mail igual ao do token, começando do zero.
       allow create: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasAll(['nome', 'email', 'xp', 'streak', 'licoesCompletas', 'criadoEm'])
         && request.resource.data.keys().hasOnly(['nome', 'email', 'xp', 'streak', 'licoesCompletas', 'criadoEm'])
-        && request.resource.data.xp == 0
-        && request.resource.data.streak == 0
-        && request.resource.data.licoesCompletas.size() == 0;
+        && request.resource.data.nome is string
+        && request.resource.data.nome.size() <= 100
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 254
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.xp is int && request.resource.data.xp == 0
+        && request.resource.data.streak is int && request.resource.data.streak == 0
+        && request.resource.data.licoesCompletas is list
+        && request.resource.data.licoesCompletas.size() == 0
+        && request.resource.data.criadoEm == request.time;
 
-      // Atualização: o dono só pode mudar o nome. XP, streak e lições são do servidor (não podem ser forjados no navegador).
+      // O dono só pode mudar o nome. XP, streak, aulas e qualquer outro campo são do servidor.
       allow update: if request.auth != null && request.auth.uid == uid
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['nome'])
         && request.resource.data.nome is string
@@ -25,18 +39,11 @@ service cloud.firestore {
       allow delete: if false;
     }
 
-    // 'eventos' (medição do aprendizado) não tem regra de propósito: só o servidor (Admin SDK) grava e lê. O navegador fica negado por padrão.
-
-    // Lista de e-mails da newsletter: qualquer visitante pode se inscrever, ninguém pode ler pelo navegador.
-    // (Leia a lista pelo Console do Firebase.)
-    match /newsletter/{id} {
-      allow create: if request.resource.data.keys().hasOnly(['email', 'origem', 'criadoEm'])
-        && request.resource.data.email is string
-        && request.resource.data.email.size() <= 200
-        && request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
-        && request.resource.data.origem is string
-        && request.resource.data.origem.size() <= 40;
-      allow read, update, delete: if false;
+    // Negação explícita e documentada de todo o resto (já seria negado por padrão):
+    //  - /newsletter e /eventos: só o servidor (Admin SDK) grava e lê.
+    //  - /usuarios (coleção antiga, sem uso no código) e /lessons (conteúdo vem do servidor): sem acesso do navegador.
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

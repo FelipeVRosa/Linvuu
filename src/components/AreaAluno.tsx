@@ -1,3 +1,4 @@
+import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { DIAS, IDIOMAS_GRAMATICA, diaDoCurso, gruposDoCurso, statusDoCurso, STATUS_AULA } from '../lib/content';
@@ -19,6 +20,7 @@ const lerTema = (): Tema => {
 
 /** Trilha lateral da área do aluno: saudação, progresso, aulas recolhíveis, busca, tema e atalho para a gramática. */
 export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nome: string; dia: number; children: ReactNode }) {
+  const destino = useDestinoSessao();
   const T = textos(idioma);
   const { usuario } = useAuth();
   const stats = statusDoCurso(idioma);
@@ -105,7 +107,7 @@ export function AreaAluno({ idioma, nome, dia, children }: { idioma: string; nom
     const atual = n === dia;
     return (
       <li key={n}>
-        <Link to={`/curso/${idioma}/dia/${n}`} className={`aa-dia ${atual ? 'atual' : ''} ${feito ? 'feito' : ''}`} aria-current={atual ? 'page' : undefined}>
+        <Link to={destino(idioma, n)} className={`aa-dia ${atual ? 'atual' : ''} ${feito ? 'feito' : ''}`} aria-current={atual ? 'page' : undefined}>
           <span className="aa-marca" aria-hidden="true">{feito ? '✓' : ''}</span>
           <span className="aa-dia-n">{n}</span>
           <span className="aa-dia-t">{semPrefixo(d.titulo, grupos.find((g) => n >= g.dias[0] && n <= g.dias[1])?.titulo)}<small>{feito ? T.concluidoDia : STATUS_AULA[st]}</small></span>

@@ -1,3 +1,4 @@
+import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { Link } from 'react-router-dom';
 import { gruposDoCurso, statusDoCurso, coberturaDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
@@ -9,6 +10,7 @@ import { LOCALE, useT } from '../i18n';
 
 /** Página do curso de português do Brasil para estrangeiros (inglês e espanhol). */
 export default function CursoBr() {
+  const destino = useDestinoSessao();
   const t = useT();
   const c = t.cursoBr;
   usePageTitle(c.tituloSeo, c.descSeo, ['en', 'es']);
@@ -49,7 +51,7 @@ export default function CursoBr() {
                 <ol className="dias" start={g.dias[0]}>
                   {Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k).map((d, k) => (
                     <li key={d}>
-                      <Link to={`/curso/br/dia/${d}`}>
+                      <Link to={destino('br', d)}>
                         <span className="dia-n">{d}</span>
                         <span className="dia-t">{g.titulo}<small>{t.cursoPagina.sessaoDe(k + 1)} · {d > SESSOES_GRATIS ? t.cursoPagina.assinantes : t.cursoPagina.gratis}</small></span>
                       </Link>

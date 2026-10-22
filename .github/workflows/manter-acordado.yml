@@ -1,19 +1,20 @@
-name: Manter o site acordado
+name: Monitorar site e dependencias
 
 # No plano gratuito do Render o serviço hiberna depois de 15 minutos sem visita, e a primeira visita espera ~50 s.
-# O robô do Google desiste antes disso («Não foi possível buscar o sitemap»). Este workflow visita o site a cada 10 minutos.
-# Quando o serviço estiver num plano pago (sem hibernação), pode apagar este arquivo.
+# Este workflow verifica processo, sitemap e dependencias. Agendamentos do GitHub podem atrasar;
+# nao substitui instancia sem hibernacao ou monitoramento externo de disponibilidade.
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '7,17,27,37,47,57 * * * *'
   workflow_dispatch:
 permissions: {}
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
-      - name: Visitar /healthz e o sitemap
+      - name: Verificar processo, sitemap e dependencias sem cobrancas
         run: |
           curl -fsS --max-time 90 https://linvuu.com.br/healthz
           curl -fsS --max-time 60 -o /dev/null -w "sitemap: %{http_code} %{content_type}\n" https://linvuu.com.br/sitemap.xml
+          curl -fsS --max-time 90 --retry 1 --retry-delay 10 https://linvuu.com.br/readyz

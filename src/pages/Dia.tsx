@@ -1,3 +1,4 @@
+import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Aula, FASES, NIVEL_LABEL, STATUS_AULA, carregarAula, getCurso, statusDoCurso, aulaTraduzida, fonteDoCurso, explicacaoDoCurso } from '../lib/content';
@@ -8,7 +9,7 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { Paywall } from '../components/Paywall';
 import { useAssinatura } from '../lib/assinatura';
 import { textos } from '../lib/textos';
-import { gratis } from '../config/planos';
+import { gratis, SESSOES_POR_AULA } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
 import { IdiomaExplicacao } from '../components/IdiomaExplicacao';
 import { lembrarExplicacao } from '../i18n/ensino';
@@ -23,6 +24,7 @@ const CAMADAS = ['comeceAqui', 'imersao', 'pratica'] as const;
 const telaLarga = () => typeof window === 'undefined' || window.matchMedia('(min-width: 901px)').matches;
 
 export default function Dia() {
+  const destino = useDestinoSessao();
   const { id, n } = useParams();
   const curso = getCurso(id);
   const T = textos(curso?.id);
@@ -59,7 +61,7 @@ export default function Dia() {
     return () => { cancelado = true; };
   }, [valido, curso, dia, bloqueado, decidindo, explicacao]);
 
-  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined, undefined, []);
+  usePageTitle(aula ? `${T.rotuloDia(dia)}: ${aula.titulo} · ${curso!.nome}` : undefined, undefined, [], !valido || !gratis(dia) || curso?.id === LOCALE.cursoOculto || !aulaTraduzida(curso?.id ?? '', Math.ceil(dia / SESSOES_POR_AULA)));
   if (!valido) return <NaoEncontrada />;
 
 
@@ -107,7 +109,7 @@ export default function Dia() {
             {dia === 1 && (() => { const g = GUIA_SESSAO[LOCALE.codigo as 'pt-BR' | 'en' | 'es'] ?? GUIA_SESSAO['pt-BR']; return (
               <details className="guia-sessao" open={(import.meta.env.VITE_ALVO === 'apk' || Capacitor.isNativePlatform()) && telaLarga()}><summary>{g.titulo}</summary><ol>{g.passos.map((x) => <li key={x}>{x}</li>)}</ol></details>
             ); })()}
-            <Sessao key={`${curso!.id}:${dia}`} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.idiomas.explicacaoEfetiva} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? `/curso/${curso!.id}/dia/${dia + 1}` : undefined} />
+            <Sessao key={`${curso!.id}:${dia}`} nomeIdioma={LOCALE.codigo === 'en' ? curso!.nome : curso!.nome.toLowerCase()} explicacao={aula.idiomas.explicacaoEfetiva} sessao={aula.sessao} idioma={curso!.id} aula={aula.aula?.numero ?? dia} dia={dia} proximo={dia < total ? destino(curso!.id, dia + 1) : undefined} />
             </>
           ) : (
             <div className="camadas">
@@ -123,9 +125,9 @@ export default function Dia() {
           )}
 
           <nav className="dia-nav aa-nav" aria-label={T.navDias}>
-            {dia > 1 ? <Link to={`/curso/${curso!.id}/dia/${dia - 1}`}>{T.anterior(dia - 1)}</Link> : <span />}
+            {dia > 1 ? <Link to={destino(curso!.id, dia - 1)}>{T.anterior(dia - 1)}</Link> : <span />}
             <MarcarDia idioma={curso!.id} dia={dia} />
-            {dia < total ? <Link to={`/curso/${curso!.id}/dia/${dia + 1}`}>{T.seguinte(dia + 1)}</Link> : <span />}
+            {dia < total ? <Link to={destino(curso!.id, dia + 1)}>{T.seguinte(dia + 1)}</Link> : <span />}
           </nav>
         </>
       )}

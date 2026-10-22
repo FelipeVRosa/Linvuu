@@ -4,7 +4,7 @@ import { useT } from '../i18n';
 
 export default function NaoEncontrada() {
   const t = useT();
-  usePageTitle(t.naoEncontrada.titulo);
+  usePageTitle(t.naoEncontrada.titulo, undefined, [], true);
   return (
     <div className="pagina">
       <h1 className="pagina-h1">{t.naoEncontrada.titulo}</h1>

@@ -1,3 +1,4 @@
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { lazy, Suspense, useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
@@ -83,6 +84,7 @@ export default function App() {
         </Routes>
         </Suspense>
       </main>
+      <AnalyticsConsent />
       {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
       {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
     </>

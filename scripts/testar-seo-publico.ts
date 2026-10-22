@@ -33,6 +33,16 @@ for (const rota of ['/entrar', '/cadastro', '/en/assinatura', '/es/assinatura'])
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
 assert.ok(!html('/curso/en/dia/9').includes('<h2>Vocabulário</h2>'));
+assert.ok(html('/curso/en/dia/9').includes('name="robots" content="noindex"'), 'sessao paga sem amostra publica tem noindex');
+assert.ok(!html('/curso/en').includes('name="robots" content="noindex"'), 'apresentacao publica do curso segue indexavel');
+for (const curso of ['en', 'ru']) {
+  const links = [...html(`/curso/${curso}`).matchAll(new RegExp(`href="/curso/${curso}/dia/(\\d+)"`, 'g'))].map((x) => Number(x[1]));
+  assert.deepEqual(links, [1, 2, 3, 4, 5, 6, 7, 8], 'todas as oito amostras possuem links estaticos, sem sessoes pagas');
+}
+assert.ok(!/href="\/en\/curso\/de\/dia\//.test(html('/en/curso/de')), 'curso sem aulas traduzidas nao anuncia sessoes inexistentes');
+const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8');
+assert.ok(sitemap.includes('<loc>https://linvuu.com.br/cursos</loc>'));
+assert.ok(sitemap.includes('<loc>https://linvuu.com.br/assinatura</loc>'));
 console.log('SEO público: proposta consistente, idiomas preservados e conteúdo pago fora do HTML.');
 
 const traco = (valor: number) => renderToStaticMarkup(createElement(Traco, {valor, exato:true, trilha:true}));

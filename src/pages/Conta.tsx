@@ -19,7 +19,7 @@ export default function Conta({ modo }: { modo: 'entrar' | 'cadastro' }) {
   const cadastro = modo === 'cadastro';
   const t = useT();
   const c = t.conta;
-  usePageTitle(cadastro ? c.cadastroT : c.entrarT);
+  usePageTitle(cadastro ? c.cadastroT : c.entrarT, undefined, [], true);
   const { usuario, configurado, entrarComGoogle, entrarComEmail, criarConta, recuperarSenha } = useAuth();
   const nav = useNavigate();
   const [params] = useSearchParams();

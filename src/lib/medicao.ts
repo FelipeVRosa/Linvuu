@@ -1,6 +1,7 @@
 // Medição do aprendizado, só com consentimento. Sem nome, e-mail, conta ou terceiros: um identificador aleatório guardado neste navegador
 // e eventos do tipo "este exercício foi acertado ou errado". Serve para saber onde as aulas precisam melhorar.
 import { api } from './api';
+import { analytics } from './analytics';
 
 const CHAVE = 'linvuu:medicao:v1';
 const CHAVE_ID = 'linvuu:medicao-id:v1';
@@ -49,6 +50,7 @@ export function enviar() {
 }
 
 export function registrar(e: Evento) {
+  if(e.t==='fim')void analytics.capture('practice_completed',{study_language:e.idioma,lesson:e.aula});
   if (consentimento() !== 'sim') return;
   if (!ligado && typeof document !== 'undefined') {
     ligado = true;

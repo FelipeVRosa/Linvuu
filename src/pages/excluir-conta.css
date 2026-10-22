@@ -1,0 +1,6 @@
+/* Pedido de exclusão: o botão mantém as cores do botão principal dentro do texto legal (que sublinha e escurece links). */
+.exclusao-pedido{display:grid;gap:.5rem;max-width:32rem;margin:1rem 0 1.5rem}
+.exclusao-pedido input{min-height:48px;font:inherit;padding:.5rem .75rem;border:1px solid currentColor;border-radius:10px}
+.texto-legal .exclusao-pedido a.btn-primary{color:var(--papel);text-decoration:none;justify-self:start;min-height:48px;display:inline-flex;align-items:center}
+.texto-legal ol.exclusao-passos{list-style:decimal;padding-left:1.4rem}
+.texto-legal ol.exclusao-passos li{padding-left:.25rem;margin:.35rem 0}

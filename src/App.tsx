@@ -19,6 +19,7 @@ const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default
 const Sobre = lazy(() => import('./pages/Sobre'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
+const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
 import { Header, BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
@@ -79,6 +80,7 @@ export default function App() {
           {NATIVO && <Route path="/conta" element={<Assinatura />} />}
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />
+          <Route path="/excluir-conta" element={NATIVO ? <Navigate to="/conta#excluir-conta" replace /> : <ExcluirConta />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
         </Suspense>

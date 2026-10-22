@@ -46,7 +46,7 @@ export function Footer({ semNovidades = false }: { semNovidades?: boolean }) {
       </div>
       <div className="lv-foot-base">
         <span>{t.rodape.direitos}</span>
-        <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link></span>
+        <span className="lv-foot-legal"><Link to="/termos">{t.rodape.termos}</Link><Link to="/privacidade">{t.rodape.privacidade}</Link><Link to="/excluir-conta">{({'pt-BR':'Excluir conta',en:'Delete account',es:'Eliminar cuenta'} as const)[LOCALE.codigo]}</Link></span>
         <a href={`mailto:${EMAIL_OFICIAL}`}>{EMAIL_OFICIAL}</a>
       </div>
     </footer>

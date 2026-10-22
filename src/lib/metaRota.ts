@@ -126,13 +126,14 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
+    '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
     '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Conheça a assinatura atual da Linvuu, com acesso aos cursos de idiomas, e os novos planos em preparação. Consulte preços, formas de pagamento e condições.' } : { titulo: tx.assinatura, semIndice: true },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
   };
   if (fixas[p]) return { status: 200, caminho: p, ...fixas[p] };
-  if (!d) return { status: 200, caminho: p }; // sem dados: entrega a página padrão, sem inventar nada
+  if (!d) return { status: 503, caminho: p, semIndice: true }; // falha de conteúdo não vira página genérica indexável
   const curso = (id: string) => { const c = d.cursos.find((x) => x.id === id); return c ? { ...c, ...(c.i18n?.[loc.codigo] ?? {}) } : undefined; };
   const tituloAula = (id: string, aula: number, original: string) => ((d.indice[id]?.fonte ?? 'pt') === ex ? original : d.indice[id]?.tr?.[ex]?.g[aula] ?? original);
   let m = p.match(/^\/curso\/([^/]+)$/);
@@ -167,12 +168,13 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     const total = d.indice[m[1]]?.total ?? 0;
     if (!c || n < 1 || n > total) return naoEncontrada(p, loc);
     const g = d.indice[m[1]].grupos?.find((x) => n >= x.dias[0] && n <= x.dias[1]);
-    if (!g) return { status: 200, caminho: p, titulo: tx.sessao(n, c.nome), descricao: `${c.nome}, ${tx.sessao(n, c.nome)}.` };
+    if (!g) return { status: 503, caminho: p, semIndice: true };
     const t = tituloAula(m[1], g.aula, g.titulo);
     // A sessão só existe de verdade num idioma quando a explicação está nele: o original ou a tradução daquela aula.
     // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
     const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
-    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    // A apresentacao publica do curso continua indexavel. Sessoes sem amostra publica nao entram no indice.
+    return { status: 200, caminho: p, titulo: `${tx.aula(g.aula, t, c.nome)} · ${tx.sessao(n, c.nome).split(' · ')[0]}`, descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: tx.aulaD(c.nome, g.aula, t, n, total), url: `${SITE}${caminhoEm(loc.codigo, p)}`,
@@ -185,7 +187,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   if (m) {
     if (!m[1]) return { status: 200, caminho: p, titulo: tx.gram };
     const c = curso(m[1]);
-    return c ? { status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome) } : naoEncontrada(p, loc);
+    return c ? { status: 200, caminho: p, titulo: tx.gramC(c.nome), descricao: tx.gramD(c.nome), semIndice: c.id === loc.cursoOculto || c.status === 'em-breve' || undefined } : naoEncontrada(p, loc);
   }
   return naoEncontrada(p, loc);
 }
@@ -227,14 +229,20 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const grupos = d?.indice[mc[1]]?.grupos ?? [];
       const tr = d?.indice[mc[1]]?.tr?.[loc.explicacao]?.g;
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
-      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.map((g) => a(`/curso/${mc[1]}/dia/${g.dias[0]}`, `${tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]}`)));
+      // Links estaticos para amostras publicas reais. O Google tambem pode descobrir URLs pelo JavaScript.
+      const indexavel = (g: { aula: number; dias: [number, number] }) => g.dias[0] <= SESSOES_GRATIS && (mesmo || !!d?.indice[mc[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
+      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.filter(indexavel).flatMap((g) => {
+        const rot = tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0];
+        return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
+          .filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`));
+      }));
     } else if (md) {
       corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.titulo, m.descricao);
     }
   }
-  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2>Novos planos em preparação</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação.</p><h2 id="oferta-atual">Assinatura atual</h2><p>A oferta vigente dá acesso a todos os cursos. Os novos planos ainda não estão à venda.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão. O pagamento exige uma conta.</p><p>${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2>Novos planos em preparação</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação.</p><h2 id="oferta-atual">Assinatura atual</h2><p>A oferta vigente dá acesso a todos os cursos. Os novos planos ainda não estão à venda.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>Estamos atualizando as narrações dos cursos. Alguns áudios podem estar temporariamente indisponíveis. Experimente as aulas gratuitas antes de contratar.</p><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão. O pagamento exige uma conta.</p><p>${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];
@@ -301,7 +309,7 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   troca(/(<meta property="og:url" content=")[^"]*(")/, url);
   troca(/(<link rel="canonical" href=")[^"]*(")/, url);
   // uma versão por idioma + x-default (português)
-  const em = m.semIndice && !m.em ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
+  const em = m.semIndice ? [] : LOCALES.filter((l) => !m.em || m.em.includes(l.codigo));
   const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), ...(em.some((l) => l.codigo === 'pt-BR') ? [`<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`] : [])].join('\n    ') : '';
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
@@ -311,3 +319,4 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
   return out;
 }
+

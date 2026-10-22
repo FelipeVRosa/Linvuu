@@ -52,6 +52,12 @@ jobs:
       - run: npm run build
       - name: Testar politica publica de indexacao
         run: node --import tsx scripts/testar-seo-publico.ts
+      - name: Verificar todas as sessoes e idiomas, canonical e destinos publicos
+        run: |
+          node --import tsx scripts/testar-inventario-seo.ts
+          node --import tsx scripts/testar-robots-navegacao.ts
+          node --import tsx scripts/testar-http-seo.ts
+          node --import tsx scripts/testar-links-publicos.ts
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)

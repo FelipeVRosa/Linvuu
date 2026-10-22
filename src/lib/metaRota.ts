@@ -170,7 +170,8 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     // A sessão só existe de verdade num idioma quando a explicação está nele: o original ou a tradução daquela aula.
     // Nos outros, a página mostra o texto original com um aviso e não entra na busca (seria conteúdo duplicado).
     const temNo = (l: Locale) => l.cursoOculto !== c.id && ((d.indice[c.id]?.fonte ?? 'pt') === l.explicacao || !!d.indice[c.id]?.tr?.[l.explicacao]?.aulas?.includes(g.aula));
-    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
+    // A apresentacao publica do curso continua indexavel. Sessoes sem amostra publica nao entram no indice.
+    return { status: 200, caminho: p, titulo: tx.aula(g.aula, t, c.nome), descricao: tx.aulaD(c.nome, g.aula, t, n, total), semIndice: n > SESSOES_GRATIS || !temNo(loc) || undefined, em: LOCALES.filter(temNo).map((l) => l.codigo),
       // Sessão grátis: dados de recurso educacional, sempre gratuito (as demais são por assinatura e não ganham marcação de gratuidade)
       jsonld: n <= SESSOES_GRATIS ? [{
         '@context': 'https://schema.org', '@type': 'LearningResource', name: tx.aula(g.aula, t, c.nome), description: tx.aulaD(c.nome, g.aula, t, n, total), url: `${SITE}${caminhoEm(loc.codigo, p)}`,
@@ -225,7 +226,13 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const grupos = d?.indice[mc[1]]?.grupos ?? [];
       const tr = d?.indice[mc[1]]?.tr?.[loc.explicacao]?.g;
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
-      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.map((g) => a(`/curso/${mc[1]}/dia/${g.dias[0]}`, `${tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0]}`)));
+      // Links estaticos para amostras publicas reais. O Google tambem pode descobrir URLs pelo JavaScript.
+      const indexavel = (g: { aula: number; dias: [number, number] }) => g.dias[0] <= SESSOES_GRATIS && (mesmo || !!d?.indice[mc[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
+      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.filter(indexavel).flatMap((g) => {
+        const rot = tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0];
+        return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
+          .filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`));
+      }));
     } else if (md) {
       corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
     } else if (m.titulo) {
@@ -304,3 +311,4 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   if (m.semIndice) out = out.replace('</head>', () => '    <meta name="robots" content="noindex" />\n  </head>');
   return out;
 }
+

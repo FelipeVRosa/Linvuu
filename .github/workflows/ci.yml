@@ -23,6 +23,8 @@ jobs:
       - run: npm ci
       - name: Verificar tipos TypeScript
         run: npm run lint
+      - name: Testar prontidao sem dependencias de producao
+        run: node --import tsx scripts/testar-prontidao.ts
       - name: Testar notificações Stripe assinadas sem cobranças reais
         run: node --import tsx scripts/testar-billing-webhook.ts
       - name: Testar medição sem dados de produção
@@ -34,6 +36,8 @@ jobs:
       - name: Testar reenvio e isolamento do progresso na conta
         run: node --import tsx scripts/testar-sincronizacao-progresso.ts
       - run: npm run build
+      - name: Testar politica publica de indexacao
+        run: node --import tsx scripts/testar-seo-publico.ts
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)

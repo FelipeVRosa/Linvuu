@@ -1,6 +1,6 @@
 // Página pública de exclusão de conta (/excluir-conta), exigida pela Google Play para apps com conta.
 // Um só texto para a página React e para o HTML pré-renderizado (funciona sem JavaScript).
-// Não tem preço nem link de pagamento. Revisão jurídica recomendada antes de alterar o que é conservado.
+// Não tem preço nem link de pagamento. Prazo de conservação (6 meses) definido pelo dono em 21/10/2026.
 export interface SecaoExclusao { titulo: string; paragrafos?: string[]; itens?: string[]; passos?: string[] }
 export interface TextoExclusao {
   titulo: string; descricao: string; lead: string; secoes: SecaoExclusao[];
@@ -25,7 +25,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en' | 'es', TextoExclusao> = {
         'Inscrição na newsletter, se houver.',
       ] },
       { titulo: 'O que pode ser conservado', paragrafos: [
-        'Registros de pagamento e documentos fiscais podem ser mantidos pela Linvuu, pelo Stripe e pelo Google pelo prazo exigido por lei. A mensagem do seu pedido é guardada como comprovante do atendimento.',
+        'Registros de pagamento e de acesso, e a mensagem do seu pedido, ficam guardados por 6 meses depois da exclusão e então são apagados. O Stripe e o Google mantêm os próprios registros de pagamento, conforme as políticas deles.',
         'Dados de análise e de medição do aprendizado usam um identificador aleatório que não é ligado à sua conta. Para apagá-los, limpe os dados do navegador ou, no app, use "Apagar progresso deste aparelho" na tela Conta.',
       ] },
       { titulo: 'Cancelar a assinatura antes', itens: [
@@ -55,7 +55,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en' | 'es', TextoExclusao> = {
         'Newsletter subscription, if any.',
       ] },
       { titulo: 'What may be kept', paragrafos: [
-        'Payment records and tax documents may be kept by Linvuu, Stripe and Google for the period required by law. Your request message is kept as a record of the service.',
+        'Payment and access records, and your request message, are kept for 6 months after deletion and then erased. Stripe and Google keep their own payment records under their own policies.',
         'Analytics and learning measurement data use a random identifier that is not linked to your account. To delete it, clear your browser data or, in the app, use "Delete progress on this device" on the Account screen.',
       ] },
       { titulo: 'Cancel your subscription first', itens: [
@@ -85,7 +85,7 @@ export const EXCLUSAO: Record<'pt-BR' | 'en' | 'es', TextoExclusao> = {
         'Suscripción al boletín, si la hay.',
       ] },
       { titulo: 'Qué puede conservarse', paragrafos: [
-        'Los registros de pago y los documentos fiscales pueden ser conservados por Linvuu, Stripe y Google durante el plazo que exige la ley. El mensaje de tu solicitud se guarda como comprobante de la atención.',
+        'Los registros de pago y de acceso, y el mensaje de tu solicitud, se guardan durante 6 meses después de la eliminación y luego se borran. Stripe y Google conservan sus propios registros de pago según sus políticas.',
         'Los datos de análisis y de medición del aprendizaje usan un identificador aleatorio que no está vinculado a tu cuenta. Para borrarlos, limpia los datos del navegador o, en la app, usa "Borrar progreso de este dispositivo" en la pantalla Cuenta.',
       ] },
       { titulo: 'Cancela la suscripción antes', itens: [

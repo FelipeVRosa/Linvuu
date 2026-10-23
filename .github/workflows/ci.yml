@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - uses: actions/setup-java@v4 # o emulador do Firestore (testes de regras e da newsletter) exige Java
+      - uses: actions/setup-java@v6 # o emulador do Firestore (testes de regras e da newsletter) exige Java
         with:
           distribution: temurin
           java-version: '21'

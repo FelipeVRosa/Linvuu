@@ -6,8 +6,10 @@ const copia={
  en:{titulo:'Session audio',inicio:'To begin, use the Listen button in the lesson content. Recordings require internet.',carregando:'Loading recording…',tocando:'Playing',pausado:'Paused',concluido:'Audio finished',parado:'Audio stopped',pausar:'Pause',retomar:'Resume',parar:'Stop',repetir:'Repeat segment',velocidade:'Speed',rede:'Could not load audio. Check your connection and try again.',arquivo:'This recording is currently unavailable. Try again.',acesso:'Sign in with an account that has access to this recording.',tentar:'Try again'},
  es:{titulo:'Audio de la sesión',inicio:'Para empezar, pulsa Escuchar en el contenido de la lección. Las grabaciones necesitan internet.',carregando:'Cargando grabación…',tocando:'Reproduciendo',pausado:'En pausa',concluido:'Audio finalizado',parado:'Audio detenido',pausar:'Pausar',retomar:'Reanudar',parar:'Detener',repetir:'Repetir fragmento',velocidade:'Velocidad',rede:'No se pudo cargar el audio. Revisa la conexión e inténtalo de nuevo.',arquivo:'Esta grabación no está disponible ahora. Inténtalo de nuevo.',acesso:'Inicia sesión con una cuenta con acceso a esta grabación.',tentar:'Reintentar'}
 };
-export function ControlesAudio(){
+/** `temAudio`: o bloco atual tem algo para ouvir. Sem áudio e nada tocando, o painel não ocupa a tela. */
+export function ControlesAudio({temAudio=true}:{temAudio?:boolean}={}){
  const e=useSyncExternalStore(observarAudio,lerEstadoAudio),t=copia[LOCALE.codigo];
+ if(!temAudio&&['parado','concluido'].includes(e.fase)&&!e.erro)return null;
  return <section className="app-audio-controles" aria-label={t.titulo}><details open><summary>{t.titulo}</summary>
   <p role="status" aria-live="polite" aria-atomic="true">{e.erro?t[e.erro]:e.repetivel?t[e.fase as Exclude<typeof e.fase,'erro'>]:t.inicio}{e.total>1&&!e.erro?` · ${e.trecho}/${e.total}`:''}</p>
   <div className="app-audio-botoes">

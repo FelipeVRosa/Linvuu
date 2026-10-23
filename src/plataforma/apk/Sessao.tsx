@@ -2,6 +2,7 @@ import { ConclusaoSessao } from './ConclusaoSessao';
 import { ControlesAudio } from './ControlesAudio';
 import { RevisaoErros, lerRevisao } from './RevisaoErros';
 import { revisaoTextos } from './revisaoTextos';
+import { concluirVolta, espacadoVencido } from './reforco';
 import { lerPratica, salvarPratica, lerTentativa, salvarTentativa, assinaturaExercicios, type Pratica } from './estudo';
 import { APK } from '../../plataforma';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -80,6 +81,12 @@ function AvisoMedicao({ idioma }: { idioma: string }) {
   );
 }
 
+const textosEspacado={
+  'pt-BR':{titulo:'Reforço espaçado',abrir:'Fazer o reforço de hoje',nota:(p:number)=>`Volta ${p+1} de 3. Você já corrigiu estes erros; relembrar depois de um intervalo fixa mais do que rever na hora.`},
+  en:{titulo:'Spaced review',abrir:'Do today’s review',nota:(p:number)=>`Round ${p+1} of 3. You already fixed these mistakes; recalling them after a gap makes them stick better than reviewing right away.`},
+  es:{titulo:'Refuerzo espaciado',abrir:'Hacer el refuerzo de hoy',nota:(p:number)=>`Vuelta ${p+1} de 3. Ya corregiste estos errores; recordarlos después de un intervalo fija más que repasarlos enseguida.`},
+};
+
 function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exercicio[]; idioma: string; praticaChave: string; aoFinalizar?: (acertos:number,total:number)=>void }) {
   const T = textos(idioma);
   const [inicial] = useState(() => lerTentativa(praticaChave,itens));
@@ -92,6 +99,9 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
   const [acertos, setAcertos] = useState<Record<number, boolean>>(inicial?.respostas ?? {});
   const [fim, setFim] = useState(inicial?.finalizada ?? false);
   const [revisando,setRevisando]=useState(false);
+  // ?reforco=1 (vindo do cartão de reforço) abre direto a volta espaçada deste bloco, se ela venceu.
+  const [pedidoEspacado,setPedidoEspacado]=useState(()=>{if(typeof window==='undefined')return false;const q=new URLSearchParams(window.location.search);return q.get('reforco')==='1'&&praticaChave.endsWith(`:bloco:${q.get('bloco')}`);});
+  const [espacada,setEspacada]=useState<{passo:number;rodada:string}|null>(null);
   const resultadoInicial=useRef<HTMLHeadingElement>(null);
   useEffect(()=>{if(fim&&!revisando)resultadoInicial.current?.focus();},[fim,revisando]);
   useEffect(()=>{ salvarTentativa(praticaChave,{tipo:'tentativa',versao:1,assinatura,indice:i,escolha,ordem,texto:itens[i]?.tipo==='producao'?'':texto,resultado:res,respostas:acertos,finalizada:fim,em:new Date().toISOString()}); },[praticaChave,assinatura,itens,i,escolha,ordem,texto,res,acertos,fim]);
@@ -162,11 +172,16 @@ function Exercicios({ itens, idioma, praticaChave, aoFinalizar }: { itens: Exerc
     const reforcadas=salva?origem.filter(n=>salva.respostas[n]===true).length:0;
     const iniciou=salva&&(Object.keys(salva.respostas).length>0||salva.escolha!==null||salva.texto.length>0||salva.ordem.length>0);
     const rotuloRevisao=salva?.fim&&reforcadas===origem.length?R.consultar:iniciou?R.retomar:R.abrir;
+    const vencido=salva?espacadoVencido(praticaChave,salva):null;
+    const E=textosEspacado[LOCALE.codigo];
+    if(pedidoEspacado){setPedidoEspacado(false);if(vencido)setEspacada(vencido);}
+    if(espacada&&origem.length)return <RevisaoErros key={espacada.rodada} itens={itens} origem={origem} idioma={idioma} bloco={espacada.rodada} titulo={E.titulo} aoTerminar={(v)=>concluirVolta(praticaChave,v)} aoSair={()=>setEspacada(null)}/>;
     if(revisando&&origem.length)return <RevisaoErros itens={itens} origem={origem} idioma={idioma} bloco={praticaChave} aoSair={()=>setRevisando(false)}/>;
     return (
       <div className="ex-resumo">
         <h3 ref={resultadoInicial} tabIndex={-1}>{T.acertou(certos, corrigiveis.length)}</h3>
-        {origem.length>0?<button type="button" className="btn btn-primary" onClick={()=>setRevisando(true)}>{rotuloRevisao} ({iniciou?`${reforcadas}/${origem.length}`:origem.length})</button>:corrigiveis.length>0&&<p>{R.nenhum}</p>}
+        {vencido&&<div className="app-espacado"><button type="button" className="btn btn-primary" onClick={()=>setEspacada(vencido)}>{E.abrir} ({origem.length})</button><p>{E.nota(vencido.passo)}</p></div>}
+        {origem.length>0?<button type="button" className={vencido?'btn btn-ghost':'btn btn-primary'} onClick={()=>setRevisando(true)}>{rotuloRevisao} ({iniciou?`${reforcadas}/${origem.length}`:origem.length})</button>:corrigiveis.length>0&&<p>{R.nenhum}</p>}
         {erros.length > 0 && <ul>{erros.map((x, indice) => <li key={`${x.id}:${indice}`}><strong>{x.enunciado}</strong> {T.resposta} <span lang={idioma}>{x.gabarito ?? x.respostaEsperada}</span>{x.explicacao && <small> {x.explicacao}</small>}</li>)}</ul>}
         <button type="button" className="btn btn-ghost" onClick={recomecar}>{T.refazer}</button>
       </div>
@@ -273,7 +288,7 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>
-          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}>✗ {e.errado}</span><span className="certo" lang={idioma}>✓ {e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
+          <ul>{b.erros.map((e) => <li key={e.errado}><span className="errado" lang={idioma}><span aria-hidden="true">✗ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Errado:',en:'Wrong:',es:'Incorrecto:'})[LOCALE.codigo]} </span>{e.errado}</span><span className="certo" lang={idioma}><span aria-hidden="true">✓ </span><span className="sr-only" lang={LOCALE.codigo}>{({'pt-BR':'Certo:',en:'Right:',es:'Correcto:'})[LOCALE.codigo]} </span>{e.certo} <Audio texto={e.certo} idioma={idioma} /></span><small>{e.motivo}</small></li>)}</ul>
         </div>
       )}
     </section>
@@ -367,7 +382,12 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
   const [praticas,setPraticas]=useState<Record<number,Pratica>>(()=>Object.fromEntries(blocosCorrigidos.flatMap(i=>{const bloco=sessao.blocos[i];const p=lerPratica(`${chave}:bloco:${i}`,bloco.tipo==='exercicios'?assinaturaExercicios(bloco.itens):undefined);return p&&bloco.tipo==='exercicios'&&p.total===bloco.itens.filter(e=>e.tipo!=='repeat'&&e.tipo!=='producao').length?[[i,p]]:[];})));
   const pratica=blocosCorrigidos.length>0&&blocosCorrigidos.every(i=>praticas[i])?{acertos:blocosCorrigidos.reduce((n,i)=>n+praticas[i].acertos,0),total:blocosCorrigidos.reduce((n,i)=>n+praticas[i].total,0)}:null;
   const estudoTexto={ 'pt-BR':{leitura:'Sessão de leitura e escuta, sem teste corrigido.',pendente:'Conclua a prática corrigida antes de finalizar esta sessão.',resultado:'Prática corrigida',concluir:'Concluir leitura',local:'O progresso do visitante fica neste aparelho. Limpar os dados pode apagá-lo.'},en:{leitura:'Reading and listening session, without a marked test.',pendente:'Complete the marked practice before finishing this session.',resultado:'Marked practice',concluir:'Finish reading',local:'Guest progress is stored on this device. Clearing app data may erase it.'},es:{leitura:'Sesión de lectura y escucha, sin prueba corregida.',pendente:'Completa la práctica corregida antes de finalizar esta sesión.',resultado:'Práctica corregida',concluir:'Finalizar lectura',local:'El progreso de visitante se guarda en este dispositivo. Borrar los datos puede eliminarlo.'}}[LOCALE.codigo];
-  const [idx, setIdx] = useState(() => Math.min(lerSessao(chave)?.bloco ?? 0, total - 1));
+  // ?bloco=N abre direto num bloco (atalho de reforço do início); só vale se existir nesta sessão.
+  const [idx, setIdx] = useState(() => {
+    const pedido = typeof window !== 'undefined' ? Number(new URLSearchParams(window.location.search).get('bloco')) : NaN;
+    if (Number.isInteger(pedido) && pedido >= 0 && pedido < total && sessao.blocos[pedido]?.tipo === 'exercicios') return pedido;
+    return Math.min(lerSessao(chave)?.bloco ?? 0, total - 1);
+  });
   const [completa, setCompleta] = useState(() => lerSessao(chave)?.completa ?? false);
   const b = sessao.blocos[idx];
   const tituloEtapa = useRef<HTMLHeadingElement>(null);
@@ -391,7 +411,7 @@ function SessaoConteudo({ sessao, idioma, aula, dia, proximo, nomeIdioma, explic
 
   return (
     <div className={`sessao${compacta ? " app-sessao" : ""}`}>
-      <ControlesAudio />
+      <ControlesAudio temAudio={['dialogo','palavras','alfabeto','texto','gramatica'].includes(b.tipo) || (b.tipo==='exercicios' && b.itens.some((e) => !!e.audio)) || (b.tipo==='intro' && (explicacao ?? LOCALE.explicacao)==='pt')} />
       {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx + 1} aria-label={T.blocosSessao} /></div>}
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span aria-hidden="true">⌄</span></summary>{etapas}</details> : etapas}
       <div className="bloco">

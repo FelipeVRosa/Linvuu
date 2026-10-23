@@ -192,7 +192,9 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
   app.get('/api/audio/:idioma/:arquivo', async (req: Request, res: Response) => {
     const idioma = String(req.params.idioma), arquivo = String(req.params.arquivo);
     if (!/^[a-z]{2}$/.test(idioma) || !/^[0-9a-f]{8}\.mp3$/.test(arquivo)) { res.status(404).end(); return; }
-    const arq = path.resolve(process.cwd(), 'server', 'audio-privado', idioma, arquivo);
+    // Voz nova (ElevenLabs) em audio-privado-v2; o que ainda não foi regravado cai no áudio antigo (Edge).
+    const novo = path.resolve(process.cwd(), 'server', 'audio-privado-v2', idioma, arquivo);
+    const arq = fs.existsSync(novo) ? novo : path.resolve(process.cwd(), 'server', 'audio-privado', idioma, arquivo);
     if (!fs.existsSync(arq)) { res.status(404).end(); return; }
     const livre = process.env.NODE_ENV !== 'production' && !cobrancaConfigurada();
     if (!livre) {

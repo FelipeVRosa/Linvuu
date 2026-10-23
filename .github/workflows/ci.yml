@@ -24,7 +24,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: actions/cache@v4 # evita baixar o emulador (~60 MB) a cada execução
+      - uses: actions/cache@v6 # evita baixar o emulador (~60 MB) a cada execução
         with:
           path: ~/.cache/firebase/emulators
           key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1

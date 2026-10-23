@@ -1,3 +1,4 @@
+import { APK } from '../plataforma';
 import type { Dicionario } from './pt-BR';
 
 const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1) % 4 + 1}`;
@@ -20,7 +21,7 @@ export const en: Dicionario = {
     sub: 'Get into the language from the very first session: dialogues, audio and speaking. Grammar and vocabulary come in when you need them, explained in plain English.',
     botao: 'Take the first 2 lessons free',
     verCursos: 'See the courses →',
-    nota: (aulas: string) => `No card needed to start. After lesson 2, R$ 139 a month (Brazilian reais; your bank converts). Courses: ${aulas}.`,
+    nota: (aulas: string) => APK ? 'The first two lessons of every course are free.' : `No card needed to start. After lesson 2, R$ 139 a month (Brazilian reais; your bank converts). Courses: ${aulas}.`,
     amostraRotulo: 'Sample session', amostraAbas: 'Language of the sample', amostraFrase: 'Hello. A coffee, please.', ouvir: 'Listen', inicioCaminho: 'Start of the path',
     amostraMeta: (min: number) => `Lesson 1 · session 1 of 4 · ${min} minutes`,
   },
@@ -55,7 +56,7 @@ export const en: Dicionario = {
   faqItens: [
     { p: 'Does it work if I have never studied the language?', r: 'Yes. Every course starts from zero, with the sounds and the writing system. If you already know some, open the course and pick a lesson by its title: the list shows the topic of every session.' },
     { p: 'What can I do at each level?', r: 'A1, from zero: introduce yourself, ask for what you need and understand everyday sentences. A2, daily life: talk about routines, shopping, the past and plans in simple sentences. B1, independent: get by when travelling, studying or working; tell stories and give your opinion. The levels follow the Common European Framework of Reference for Languages (CEFR). Linvuu issues its own certificate for each completed level; it does not replace official exams.' },
-    { p: 'How much does it cost?', r: 'The first 2 lessons of every course are free, with no card. After that the subscription costs R$ 139 a month (Brazilian reais; your card converts the currency), with every course included. Cancel any time and ask for a full refund within 7 days.' },
+    { p: 'How much does it cost?', r: APK ? 'In-app purchases are not available yet.' : 'The first 2 lessons of every course are free, with no card. After that the subscription costs R$ 139 a month (Brazilian reais; your card converts the currency), with every course included. Cancel any time and ask for a full refund within 7 days.' },
     { p: 'How much time do I need each day?', r: 'Each lesson has 4 sessions of about 30 minutes. One hour a day is ideal, but a single session already counts. With an account your progress is saved and you can continue on any device.' },
     { p: 'Will I become fluent?', r: 'Linvuu gives you a method, practice and consistency; the level you reach depends on your study hours and on using the language for real. The courses are designed to take you from zero to a solid B1 foundation.' },
     { p: 'Are all lessons explained in English?', r: 'The Brazilian Portuguese course is written in English from the first to the last lesson. In the other courses, the explanations are being translated lesson by lesson: each course page shows how many lessons are already in English, and an untranslated session says so before you start it.' },
@@ -211,3 +212,4 @@ export const en: Dicionario = {
   linguas: { pt: 'Portuguese', en: 'English', es: 'Spanish' } as Record<string, string>,
   livro: { indisponivelIdioma: 'This book is written in Portuguese, for Portuguese speakers.' },
 };
+

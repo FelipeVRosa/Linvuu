@@ -16,6 +16,12 @@ try {
   const home = await fetch(base + '/');
   const h = (n) => home.headers.get(n) ?? '';
   ok(home.status === 200, 'home responde 200');
+  const prontidao = await fetch(base + '/readyz');
+  const resumo = await prontidao.json();
+  ok(prontidao.status === 503 && resumo.ok === false, 'prontidao falha sem dependencias configuradas');
+  ok(prontidao.headers.get('cache-control') === 'private, no-store', 'prontidao nao fica em cache publico');
+  ok(Object.keys(resumo).sort().join(',') === 'checkedAt,ok', 'prontidao nao revela configuracao ou erros internos');
+  ok((await fetch(base + '/healthz')).status === 200, 'falha de prontidao nao derruba liveness');
   const assetAusente = await fetch(base + '/assets/arquivo-inexistente.js');
   ok(assetAusente.status === 404 && (assetAusente.headers.get('content-type') ?? '').startsWith('text/plain'), 'asset ausente dá 404 de texto, sem HTML da SPA');
   const desconhecida = await fetch(base + '/pagina-inexistente-de-teste');

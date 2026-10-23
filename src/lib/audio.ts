@@ -3,7 +3,7 @@
 // Áudio de sessão paga não fica em public/: sai de /api/audio, com o token de login (ver audioPrivado).
 import { carregarAuth } from './firebase';
 import { api } from './api';
-const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
+const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? (import.meta.env.VITE_ALVO === 'apk' ? 'https://linvuu.com.br/audio' : '/audio')).replace(/\/$/, '');
 const LANG: Record<string, string> = { pt: 'pt-BR', ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
 
 /** O que a voz lê e o que entra no hash: sem acento tônico (U+0301). Mantenha igual a scripts/aulas.mjs. */
@@ -24,6 +24,15 @@ const indice = (idioma: string) => {
     indices.set(idioma, fetch(`${BASE}/${idioma}/index.json`).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
   }
   return indices.get(idioma)!;
+};
+
+/** Voz nova (ElevenLabs): MP3 públicos em /audio/v2/<idioma>/ (caminho novo, para o cache nunca servir a voz antiga). */
+const indicesV2 = new Map<string, Promise<Set<string>>>();
+const indiceV2 = (idioma: string) => {
+  if (!indicesV2.has(idioma)) {
+    indicesV2.set(idioma, fetch(`${BASE}/v2/${idioma}/index.json`).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
+  }
+  return indicesV2.get(idioma)!;
 };
 
 let atual: HTMLAudioElement | null = null;
@@ -88,13 +97,16 @@ const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
 /** Toca um texto com o token `minha` (se `parar()` for chamado, o token muda e a fala é abandonada). */
 async function tocar(texto: string, idioma: string, minha: number) {
   const h = hashTexto(texto);
-  const publico = (await indice(idioma)).has(h);
+  const novo = (await indiceV2(idioma)).has(h);
+  const publico = novo || (await indice(idioma)).has(h);
   if (minha !== cancelar) return;
-  const origem = publico ? `${BASE}/${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
+  const origem = publico ? `${BASE}/${novo ? 'v2/' : ''}${idioma}/${h}.mp3` : await audioPrivado(idioma, h);
   if (minha !== cancelar) return;
   if (origem) {
     try {
       const a = new Audio(origem);
+      // Áudio remoto do APK usa CORS, compatível com Cross-Origin-Resource-Policy.
+      a.crossOrigin = 'anonymous';
       atual = a;
       await new Promise<void>((ok, erro) => { a.onended = () => ok(); a.onerror = () => erro(new Error('sem arquivo')); a.play().then(() => avisar('gravacao')).catch(erro); });
       return;
@@ -130,7 +142,7 @@ export async function falarTrechos(itens: { texto: string; idioma: string }[]) {
 
 /** true = há áudio (gravado ou voz do navegador) no idioma; false = não há. */
 export const temVoz = async (idioma: string): Promise<boolean> => {
-  if ((await indice(idioma)).size > 0) return true;
+  if ((await indiceV2(idioma)).size > 0 || (await indice(idioma)).size > 0) return true;
   return new Promise((ok) => {
     if (typeof speechSynthesis === 'undefined') return ok(false);
     const prefixo = (LANG[idioma] ?? idioma).slice(0, 2).toLowerCase();
@@ -140,3 +152,4 @@ export const temVoz = async (idioma: string): Promise<boolean> => {
     speechSynthesis.addEventListener('voiceschanged', () => { clearTimeout(fim); ok(checar()); }, { once: true });
   });
 };
+

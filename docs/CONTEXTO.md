@@ -3,7 +3,9 @@
 Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.
 
 ## O que é
-Linvuu: idiomas e STEM em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
+Linvuu: idiomas em trilhas em sessões de ~30 min, para falantes de português. Dono: Felipe. Revisão de design e traduções: Luiza. E-mail oficial: hello.linvuu@gmail.com.
+
+Atualização de 16/10/2026: foco somente em idiomas, website e Android. Arquitetura atual em `docs/WEBSITE.md` e `docs/APK.md`; as rodadas históricas abaixo contêm estados antigos.
 
 ## Onde cada coisa fica
 | O quê | Onde | Observação |
@@ -80,3 +82,4 @@ Dois jeitos. O compacto gasta cerca de 40% menos texto:
 - **«Gramática do italiano para brasileiros» (Falando com o Mundo, 25 páginas)**, enviado pelo Felipe em outubro de 2026. É um e-book comercial com licença individual (marca d'água «Licenciado para Aluno … Protegido por Eduzz»), então **não entra no repositório** (que é público) nem no site. Uso permitido: só conferir fatos e a ordem dos tópicos, como os outros livros (`docs/PLANO-PORTUGUES.md`, «Fontes e regra legal»).
 - **Tópicos do e-book:** alfabeto; saudações; números, dias e meses; horas; perguntas; família; pronomes pessoais, reflexivos e possessivos; singular e plural; artigos definidos e indefinidos; preposições; comparativos e superlativos; advérbios de frequência; o verbo essere; principais irregulares.
 - **Conferência:** os 20 tópicos do e-book já estão no curso de italiano da Linvuu (aulas 1 a 26 e 31). O curso vai além, até o B1.
+

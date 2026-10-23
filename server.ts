@@ -9,8 +9,10 @@ import dotenv from 'dotenv';
 import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobranca } from './server/billing';
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
+import { registrarNewsletter } from './server/newsletter';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
+import { registrarProntidao } from './server/prontidao';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
 
@@ -39,11 +41,13 @@ async function startServer() {
 
   // Saúde do serviço (para o Render e para monitoramento).
   app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
+  registrarProntidao(app);
 
   registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
   registrarLivroProtegido(app);
   registrarProgresso(app);
   registrarMedicao(app);
+  registrarNewsletter(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

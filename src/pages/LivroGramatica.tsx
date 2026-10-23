@@ -1,3 +1,4 @@
+import { APK } from '../plataforma';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext';
@@ -10,7 +11,7 @@ import { LOCALE, T } from '../i18n';
 type Estado = 'carregando' | 'liberado' | 'entrar' | 'assinar' | 'indisponivel';
 
 export default function LivroGramatica() {
-  usePageTitle('Gramática russa A1–A2', 'O livro de gramática russa da Linvuu, do A1 ao A2, explicado em português. Para assinantes.');
+  usePageTitle('Gramática russa A1–A2', 'O livro de gramática russa da Linvuu, do A1 ao A2, explicado em português. Para assinantes.', [], true);
   const { usuario, carregando } = useAuth();
   const [estado, setEstado] = useState<Estado>('carregando');
   const [html, setHtml] = useState('');
@@ -31,7 +32,7 @@ export default function LivroGramatica() {
       if (!vivo) return;
       setHtml(texto);
       setEstado('liberado');
-    })();
+    })().catch(() => { if (vivo) setEstado('indisponivel'); });
     return () => { vivo = false; };
   }, [usuario, carregando]);
 
@@ -40,7 +41,7 @@ export default function LivroGramatica() {
       <div style={{ maxWidth: 1180, margin: '0 auto', padding: '16px 16px 0' }}>
         <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
           <p className="lv-eyebrow">O livro faz parte do curso</p>
-          <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto. Quem tem acesso ativo pode ler o livro inteiro.</p>
+          <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
           <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
         </aside>
         <iframe title="Gramática russa A1–A2" srcDoc={html} sandbox="" style={{ width: '100%', height: 'calc(100vh - 230px)', border: 0, display: 'block' }} />
@@ -62,7 +63,7 @@ export default function LivroGramatica() {
         <>
       <aside className="lv-atencao" style={{ margin: '0 0 16px' }}>
         <p className="lv-eyebrow">O livro faz parte do curso</p>
-        <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto. Quem tem acesso ativo pode ler o livro inteiro.</p>
+        <p>A gramática russa da Linvuu não é vendida avulsa. Ela está incluída na assinatura, {!APK && <>por {PRECO_MENSAL} por mês, ou {PRECO_TRIMESTRAL} por 3 meses no cartão ou boleto.</>} Quem tem acesso ativo pode ler o livro inteiro.</p>
         <p>Copiar, baixar, redistribuir ou compartilhar o conteúdo, total ou em parte, é proibido. Quem fizer isso perde o acesso ao curso.</p>
       </aside>
           <p><Link className="btn btn-primary" to="/assinatura">Ver planos</Link></p>
@@ -72,3 +73,4 @@ export default function LivroGramatica() {
     </main>
   );
 }
+

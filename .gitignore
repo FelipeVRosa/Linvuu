@@ -18,3 +18,13 @@ android/local.properties
 
 # Inventários locais de migração: reproduzíveis, sem mídia adicional no Git.
 migracao-audio/
+
+# Saída do build do APK (gerada por npm run build:apk)
+dist-apk/
+
+# Material privado de assinatura nunca entra no Git
+*.jks
+*.keystore
+*.p12
+*.pfx
+keystore.properties

@@ -1,0 +1,75 @@
+{
+  "passed": [
+    "pt reduce: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "pt no-preference: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "/en reduce: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "/en no-preference: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "/es reduce: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "/es no-preference: leitura sem nota fictícia, foco, dois temas/200%, movimento limitado, sem replay",
+    "falha de gravação não celebra nem marca conclusão; retry funciona",
+    "gravação parcial do percurso fica pendente, sem celebração ou próximo passo; retry confirma",
+    "histórico sem resultado compatível não inventa acertos",
+    "prática corrigida e revisão finalizada são estados distintos ao reabrir",
+    "estado de revisão acompanha confirmação em tempo real, sem novo carregamento"
+  ],
+  "measurements": [
+    {
+      "locale": "pt",
+      "motion": "reduce",
+      "animations": []
+    },
+    {
+      "locale": "pt",
+      "motion": "no-preference",
+      "animations": [
+        {
+          "duration": 400,
+          "iterations": 1
+        },
+        {
+          "duration": 500,
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "locale": "/en",
+      "motion": "reduce",
+      "animations": []
+    },
+    {
+      "locale": "/en",
+      "motion": "no-preference",
+      "animations": [
+        {
+          "duration": 400,
+          "iterations": 1
+        },
+        {
+          "duration": 500,
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "locale": "/es",
+      "motion": "reduce",
+      "animations": []
+    },
+    {
+      "locale": "/es",
+      "motion": "no-preference",
+      "animations": [
+        {
+          "duration": 400,
+          "iterations": 1
+        },
+        {
+          "duration": 500,
+          "iterations": 1
+        }
+      ]
+    }
+  ],
+  "limit": "Chromium, visitante, armazenamento simulado; sem métricas de usuários reais, certificação Android físico/TalkBack ou sincronização entre aparelhos."
+}

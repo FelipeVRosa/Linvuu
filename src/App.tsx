@@ -1,26 +1,26 @@
 import { lazy, Suspense, useEffect } from 'react';
-import { Capacitor } from '@capacitor/core';
+import { APK } from './plataforma';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import Home from './pages/Home';
-import Cursos from './pages/Cursos';
-const Curso = lazy(() => import('./pages/Curso'));
+
+import Home from '@plataforma/Home';
+import Cursos from '@plataforma/Cursos';
+const Curso = lazy(() => import('@plataforma/Curso'));
 const Portugues = lazy(() => import('./pages/Portugues'));
-const Dia = lazy(() => import('./pages/Dia'));
+const Dia = lazy(() => import('@plataforma/Dia'));
 const Conta = lazy(() => import('./pages/Conta'));
-const Assinatura = lazy(() => import('./pages/Assinatura'));
-const Legal = lazy(() => import('./pages/Legal').then((m) => ({ default: m.Legal })));
+const Assinatura = lazy(() => import('@plataforma/Assinatura'));
+const Legal = lazy(() => import('@plataforma/Legal').then((m) => ({ default: m.Legal })));
 const Gramatica = lazy(() => import('./pages/Gramatica'));
-const LivroGramatica = lazy(() => import('./pages/LivroGramatica'));
+const LivroGramatica = lazy(() => import('@plataforma/LivroGramatica'));
 const LivrosIndice = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivrosIndice })));
 const LivroPagina = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroPagina })));
 const LivroCapitulo = lazy(() => import('./pages/Livros').then((m) => ({ default: m.LivroCapitulo })));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const PorQue = lazy(() => import('./pages/PorQue'));
 const Contato = lazy(() => import('./pages/Contato'));
-import { BarraTopo } from './components/BarraTopo';
-import { BarraInferior } from './components/BarraInferior';
+const ExcluirConta = lazy(() => import('./pages/ExcluirConta'));
+import { Header, BarraTopo, BarraInferior, Footer } from '@plataforma/Chrome';
 import NaoEncontrada from './pages/NaoEncontrada';
 import { useT } from './i18n';
 
@@ -44,7 +44,7 @@ function RolarAoTopo() {
 // Páginas de dia da área do aluno (/curso/:id/dia/:n): sem bloco de newsletter no rodapé.
 const AREA_ALUNO = /^\/curso\/[^/]+\/dia\//;
 // Dentro do app Android: sem a barra de idiomas do topo e sem o rodapé longo; navegação por abas embaixo.
-const NATIVO = Capacitor.isNativePlatform();
+const NATIVO = APK;
 if (NATIVO && typeof document !== 'undefined') document.documentElement.dataset.plataforma = 'nativo';
 
 export default function App() {
@@ -61,7 +61,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cursos" element={<Cursos />} />
-          <Route path="/portugues" element={<Portugues />} />
+          <Route path="/portugues" element={NATIVO ? <Navigate to="/" replace /> : <Portugues />} />
           <Route path="/brazilian-portuguese" element={<Navigate to="/portugues" replace />} />
           <Route path="/curso/:id" element={<Curso />} />
           <Route path="/curso/:id/dia/:n" element={<Dia />} />
@@ -73,18 +73,22 @@ export default function App() {
           <Route path="/livros" element={<LivrosIndice />} />
           <Route path="/livros/:id" element={<LivroPagina />} />
           <Route path="/livros/:id/capitulo/:n" element={<LivroCapitulo />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/por-que-linvuu" element={<PorQue />} />
-          <Route path="/contato" element={<Contato />} />
-          <Route path="/assinatura" element={<Assinatura />} />
+          <Route path="/sobre" element={NATIVO ? <Navigate to="/" replace /> : <Sobre />} />
+          <Route path="/por-que-linvuu" element={NATIVO ? <Navigate to="/" replace /> : <PorQue />} />
+          <Route path="/contato" element={NATIVO ? <Navigate to="/" replace /> : <Contato />} />
+          <Route path="/assinatura" element={NATIVO ? <Navigate to="/conta" replace /> : <Assinatura />} />
+          {NATIVO && <Route path="/conta" element={<Assinatura />} />}
           <Route path="/privacidade" element={<Legal tipo="privacidade" />} />
           <Route path="/termos" element={<Legal tipo="termos" />} />
+          <Route path="/excluir-conta" element={NATIVO ? <Navigate to="/conta#excluir-conta" replace /> : <ExcluirConta />} />
           <Route path="*" element={<NaoEncontrada />} />
         </Routes>
         </Suspense>
       </main>
+      <AnalyticsConsent />
       {!AREA_ALUNO.test(pathname) && !NATIVO && <Footer />}
       {NATIVO && !AREA_ALUNO.test(pathname) && <BarraInferior />}
     </>
   );
 }
+

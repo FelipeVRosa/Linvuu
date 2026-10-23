@@ -3,7 +3,7 @@
 // Áudio de sessão paga não fica em public/: sai de /api/audio, com o token de login (ver audioPrivado).
 import { carregarAuth } from './firebase';
 import { api } from './api';
-const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? '/audio').replace(/\/$/, '');
+const BASE = (((import.meta.env ?? {}) as Record<string, string | undefined>).VITE_AUDIO_BASE_URL ?? (import.meta.env.VITE_ALVO === 'apk' ? 'https://linvuu.com.br/audio' : '/audio')).replace(/\/$/, '');
 const LANG: Record<string, string> = { pt: 'pt-BR', ru: 'ru-RU', de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', it: 'it-IT', br: 'pt-BR' };
 
 /** O que a voz lê e o que entra no hash: sem acento tônico (U+0301). Mantenha igual a scripts/aulas.mjs. */
@@ -95,6 +95,8 @@ async function tocar(texto: string, idioma: string, minha: number) {
   if (origem) {
     try {
       const a = new Audio(origem);
+      // Áudio remoto do APK usa CORS, compatível com Cross-Origin-Resource-Policy.
+      a.crossOrigin = 'anonymous';
       atual = a;
       await new Promise<void>((ok, erro) => { a.onended = () => ok(); a.onerror = () => erro(new Error('sem arquivo')); a.play().then(() => avisar('gravacao')).catch(erro); });
       return;
@@ -140,3 +142,4 @@ export const temVoz = async (idioma: string): Promise<boolean> => {
     speechSynthesis.addEventListener('voiceschanged', () => { clearTimeout(fim); ok(checar()); }, { once: true });
   });
 };
+

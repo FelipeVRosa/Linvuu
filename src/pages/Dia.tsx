@@ -6,8 +6,8 @@ import { Navegacao } from '../components/Navegacao';
 import { Sessao } from '../components/Sessao';
 import { AreaAluno, MarcarDia } from '../components/AreaAluno';
 import { usePageTitle } from '../lib/usePageTitle';
-import { Paywall } from '../components/Paywall';
-import { useAssinatura } from '../lib/assinatura';
+import { Paywall } from '@plataforma/Paywall';
+import { useAssinatura } from '../lib/acesso';
 import { textos } from '../lib/textos';
 import { gratis, SESSOES_POR_AULA } from '../config/planos';
 import NaoEncontrada from './NaoEncontrada';
@@ -130,3 +130,4 @@ export default function Dia() {
     </div>
   );
 }
+

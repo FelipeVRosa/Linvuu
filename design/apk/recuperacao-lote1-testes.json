@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "tentativa parcial recuperada da cópia nativa com esquema limitado",
+    "tentativa rejeita tipos, duplicações, excesso e troca por resumo",
+    "migração de dados válidos",
+    "isolamento de contas",
+    "credenciais excluídas do journal",
+    "legado nativo removido após confirmação",
+    "recuperação após perda do armazenamento WebView",
+    "redefinição legada vazia não vira união",
+    "revisão nativa mais recente vence cópia local antiga",
+    "intenção local não confirmada é preservada e reversionada",
+    "exclusão pendente não ressuscita após reabertura",
+    "falha de disco visível e reenvio confirmado",
+    "falha inicial mantém journal local e retry sem sobrescrever remoto desconhecido",
+    "escrita durante hidratação vence snapshot atrasado",
+    "ponte travada tem prazo e não impede partida indefinidamente",
+    "gravações concorrentes ordenadas e confirmação antiga não apaga novidade",
+    "journal restaura valor bruto corrompido",
+    "journal local inválido recuperado pela cópia nativa",
+    "formato nativo desconhecido não é sobrescrito",
+    "quota não apresenta gravação como concluída",
+    "validação estrutural e exclusões explícitas",
+    "JSON estruturalmente inválido isolado sem apagar evidência",
+    "interrupção entre journal e valor recuperada na reabertura",
+    "gravação nativa travada não bloqueia a primeira tela",
+    "tombstone nativo prevalece sobre resíduo legado sem journal local"
+  ],
+  "limite": "Storage/ponte simulados. Não comprova SharedPreferences real, TalkBack, login ou sincronização entre aparelhos."
+}

@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {chavePersistente} from '../src/plataforma/apk/armazenamento';
+import {configuracaoComprasTeste} from '../src/plataforma/apk/comprasTeste';
+for(const k of ['linvuu:progresso:v1','linvuu:progresso:v1:uid:u','linvuu:pratica-apk:v1:u:en:1','linvuu:locale','linvuu:tema-app'])assert.equal(chavePersistente(k),true,k);
+for(const k of ['firebase:authUser:abc','access_token','linvuu:token','outra:progresso','linvuu:medicao-id:v1'])assert.equal(chavePersistente(k),false,k);
+assert.equal(configuracaoComprasTeste('revenuecat-test-store','test_exemplo',true),true);
+for(const [modo,chave,nativo]of [['production','goog_exemplo',true],['revenuecat-test-store','goog_exemplo',true],['revenuecat-test-store','sk_exemplo',true],['revenuecat-test-store','test_exemplo',false],[undefined,undefined,true]]as const)assert.equal(configuracaoComprasTeste(modo,chave,nativo),false);
+const manifesto=fs.readFileSync('android/app/src/main/AndroidManifest.xml','utf8');assert.match(manifesto,/allowBackup="false"/);assert.match(manifesto,/dataExtractionRules=/);assert.match(manifesto,/usesCleartextTraffic="false"/);assert.doesNotMatch(manifesto,/FileProvider/);
+assert.match(fs.readFileSync('android/variables.gradle','utf8'),/targetSdkVersion = 36/);
+const temas=fs.readFileSync('android/app/src/main/res/values/styles.xml','utf8');assert.match(temas,/windowSplashScreenAnimatedIcon/);assert.match(temas,/postSplashScreenTheme/);
+const resultados={checks:['chaves de estudo permitidas','tokens excluídos da persistência','Test Store aceita apenas configuração explícita','chaves reais e navegador bloqueados','backup desativado','extração com regras','cleartext desativado','FileProvider removido','API36','splash com marca'],limite:'Análise estática e testes de funções em Node; não substitui Android, Google Play ou RevenueCat reais'};
+fs.writeFileSync('design/apk/loja-rodada3-testes.json',JSON.stringify(resultados,null,2));console.log(JSON.stringify(resultados));

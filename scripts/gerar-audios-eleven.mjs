@@ -8,6 +8,8 @@
 //   ... --simular                 só conta arquivos e créditos
 //   ... --so=publico|privado      limita a um dos lados (padrão: público primeiro, depois privado)
 //   ... --ordem=uso               privados do mais usado para o menos usado (padrão: ordem da lista)
+//   ... --ordem=aula              privados da aula mais cedo para a mais tarde (o curso é ouvido do começo para o fim)
+//   ... --ate-aula=N              privados só até a aula N (usa "aula N" de primeiro_uso; sem número de aula = fica de fora)
 //   ... --limite=N                no máximo N arquivos novos nesta execução
 //   ... --teto=N                  para sozinho ao chegar em N créditos gastos NESTA execução (conta pelo cabeçalho real da API)
 //
@@ -23,6 +25,7 @@ const teto = Number(args.teto ?? 0);
 const limite = Number(args.limite ?? 0);
 const lado = args.so ?? 'tudo';
 const ordem = args.ordem ?? 'lista';
+const ateAula = Number(args['ate-aula'] ?? 0);
 const MODELO = 'eleven_v4';
 const SAIDA = 'mp3_44100_64'; // 64 kbps => ~8000 bytes por segundo de fala
 const CONCORRENCIA = Number(args.conc ?? 4);
@@ -33,9 +36,13 @@ const VOZES = {
   ru: { lang: 'ru', m: 'VwRq6NLQB8AqRusa9F9t' /* Arcadees */, f: 'xcVbjGhhLIoKi3va6mAe' /* Viktoriya Voloshina */ },
   br: { lang: 'pt', m: 'uuRRBfx9C2chYfSRNn6t' /* Vander Maria */, f: 'BQzELs93jJsUOf5rCb9p' /* Vanessa */ },
   pt: { lang: 'pt', m: 'uuRRBfx9C2chYfSRNn6t', f: 'BQzELs93jJsUOf5rCb9p' },
+  // Vozes padrão (sem sotaque regional), de aprendizado/narração clara. Escolhidas pelo catálogo (prévias grátis), sem teste pago.
+  en: { lang: 'en', m: 'Gfpl8Yo74Is0W6cPUWWT' /* Max, eLearning */, f: 'hpp4J3VqNfWAUOO0d1Us' /* Bella, educational */ },
+  de: { lang: 'de', m: 'r8MyP4qUsq5WFFSkPdfV' /* Johannes, Hochdeutsch neutro */, f: 'rKiu7lQ4c5P3az3745s3' /* Carla Blum, e-learning */ },
+  fr: { lang: 'fr', m: 'AfbuxQ9DVtS4azaxN1W7' /* Léo, parisiense */, f: '6vTyAgAT8PncODBcLjRf' /* Claire Estelle, e-learning */ },
 };
 const cfg = VOZES[idioma];
-if (!cfg) { console.error(`idioma sem voz ElevenLabs configurada: ${idioma} (ru, br, pt)`); process.exit(1); }
+if (!cfg) { console.error(`idioma sem voz ElevenLabs configurada: ${idioma} (ru, br, pt, en, de, fr)`); process.exit(1); }
 const voz = (g) => process.env[`ELEVEN_VOZ_${idioma.toUpperCase()}_${g.toUpperCase()}`] ?? cfg[g];
 if (!simular && !CHAVE) { console.error('defina ELEVENLABS_API_KEY'); process.exit(1); }
 
@@ -74,7 +81,8 @@ function carregarLista() {
       const ant = vistos.get(l.arquivo);
       const uso = Number(l.vezes_usado || 1);
       if (ant) { ant.uso = Math.max(ant.uso, uso); ant.narr ||= narr; continue; }
-      vistos.set(l.arquivo, { arquivo: l.arquivo, texto: l.texto, voz: l.voz === 'f' ? 'f' : 'm', uso, narr });
+      const aula = Number((String(l.primeiro_uso ?? '').match(/aula (\d+)/) ?? [])[1] ?? NaN);
+      vistos.set(l.arquivo, { arquivo: l.arquivo, texto: l.texto, voz: l.voz === 'f' ? 'f' : 'm', uso, narr, aula });
     }
   }
   // Público = já era público no áudio atual (public/audio/<idioma>/index.json) ou é narração. O resto é de sessão paga.
@@ -111,8 +119,9 @@ async function main() {
   let pend = lista.filter((l) => !existe(l));
   if (lado === 'publico') pend = pend.filter((l) => l.publico);
   if (lado === 'privado') pend = pend.filter((l) => !l.publico);
+  if (ateAula > 0) pend = pend.filter((l) => l.publico || (Number.isFinite(l.aula) && l.aula <= ateAula));
   // públicos primeiro (é o que o visitante ouve); privados por uso quando pedido
-  const pu = (x) => (ordem === 'uso' ? -x.uso : 0);
+  const pu = (x) => (ordem === 'uso' ? -x.uso : ordem === 'aula' ? (Number.isFinite(x.aula) ? x.aula : 9999) : 0);
   pend.sort((a, b) => (b.publico - a.publico) || (pu(a) - pu(b)));
   if (limite > 0) pend = pend.slice(0, limite);
   const chars = (xs) => xs.reduce((s, l) => s + l.fala.length, 0);

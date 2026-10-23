@@ -1,3 +1,4 @@
+import { APK } from '../plataforma';
 // Todo o texto fixo do site, em um só lugar. Traduzir o site = copiar este arquivo e traduzir os valores (en.ts e es.ts seguem o mesmo tipo).
 const sessaoDe = (n: number) => `Aula ${Math.ceil(n / 4)} · sessão ${(n - 1) % 4 + 1}`;
 
@@ -19,7 +20,7 @@ export const ptBR = {
     sub: 'Entre no idioma desde a primeira sessão: diálogos, áudio e fala. A gramática e o vocabulário entram quando você precisa, explicados em português, com os erros que brasileiros costumam cometer.',
     botao: 'Fazer as 2 primeiras aulas grátis',
     verCursos: 'Ver os cursos →',
-    nota: (aulas: string) => `Sem cartão para começar. Depois da 2ª aula, R$ 139/mês. Aulas já no ar: ${aulas}.`,
+    nota: (aulas: string) => APK ? 'As duas primeiras aulas de cada curso são gratuitas.' : `Sem cartão para começar. Depois da 2ª aula, R$ 139/mês. Aulas já no ar: ${aulas}.`,
     amostraRotulo: 'Exemplo de uma sessão', amostraAbas: 'Idioma do exemplo', amostraFrase: 'Olá. Um café, por favor.', ouvir: 'Ouvir', inicioCaminho: 'Início do caminho',
     amostraMeta: (min: number) => `Aula 1 · sessão 1 de 4 · ${min} minutos`,
   },
@@ -54,7 +55,7 @@ export const ptBR = {
   faqItens: [
     { p: 'Funciona para quem nunca estudou o idioma?', r: 'Sim. A trilha começa do zero, pelos sons e pela escrita. Se você já sabe algo, abra o curso e escolha a aula pelo título: a lista mostra o tema de cada sessão.' },
     { p: 'O que você consegue fazer em cada nível?', r: 'A1, do zero: se apresentar, pedir o que precisa e entender frases do dia a dia. A2, dia a dia: falar de rotina, compras, passado e planos, em frases simples. B1, independente: se virar em viagem, estudo e trabalho; contar experiências e dar opinião. Os níveis são os do Quadro Europeu Comum de Referência para Línguas (QECR). A Linvuu emite um certificado próprio a cada nível concluído; ele não substitui exames oficiais.' },
-    { p: 'Quanto custa?', r: 'As 2 primeiras aulas de cada curso são grátis, sem cartão. Depois, a assinatura custa R$ 139 por mês, com todos os cursos. Você cancela quando quiser e pode pedir reembolso integral em até 7 dias.' },
+    { p: 'Quanto custa?', r: APK ? 'As compras dentro do aplicativo ainda não estão disponíveis.' : 'As 2 primeiras aulas de cada curso são grátis, sem cartão. Depois, a assinatura custa R$ 139 por mês, com todos os cursos. Você cancela quando quiser e pode pedir reembolso integral em até 7 dias.' },
     { p: 'Quanto tempo preciso por dia?', r: 'Cada aula tem 4 sessões de cerca de 30 minutos. O ideal é 1 hora por dia, mas uma sessão já conta. Com a conta criada, o progresso fica salvo e você continua em qualquer aparelho.' },
     { p: 'Vou ficar fluente?', r: 'A Linvuu entrega método, prática e constância; o nível que você alcança depende das suas horas de estudo e do uso real do idioma. As trilhas foram desenhadas para levar você do zero a uma base sólida, até o B1.' },
     { p: 'Quem está por trás da Linvuu?', r: 'O método vem das aulas ao vivo do professor que criou a Linvuu. Cada curso é escrito por professores, com explicações pensadas para quem fala português, e passa por revisão antes de ser publicado.' },
@@ -131,7 +132,7 @@ export const ptBR = {
     paywallT: (n: number, c: string) => `Você terminou as ${n} aulas grátis de ${c}.`,
     paywallP: (p: string) => `Para continuar, assine a Linvuu: ${p} por mês, todos os cursos, cancele quando quiser. Se não gostar, devolvemos o valor em até 7 dias.`,
     paywallErro: 'Não conseguimos confirmar sua assinatura agora. Recarregue a página em instantes.', abrindo: 'Abrindo…', assinar: (p: string) => `Assinar por ${p}/mês`,
-    tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => `3 meses por ${p} no Pix · economize R$ 125`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, exAluno: (p: string) => `Ex-aluno? ${p} por mês nos primeiros 6 meses. Os primeiros 50 usam o cupom LINVUU50 no checkout.`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
+    tres: (p: string) => `3 meses por ${p} (cartão ou boleto)`, trimPix: (p: string) => APK ? '' : `3 meses por ${p} no Pix · economize R$ 125`, anual: (p: string) => `Prefere anual? 12 meses por ${p}`, exAluno: (p: string) => `Ex-aluno? ${p} por mês nos primeiros 6 meses. Os primeiros 50 usam o cupom LINVUU50 no checkout.`, criar: 'Criar conta para assinar', jaTenho: 'Já tenho conta', termos: 'Termos e reembolso',
     voltarBtn: 'Voltar', voceEstaEm: 'Você está em', moeda: '',
   },
   gramaticaPagina: {
@@ -209,3 +210,4 @@ export const ptBR = {
   livro: { indisponivelIdioma: '' },
 };
 export type Dicionario = typeof ptBR;
+

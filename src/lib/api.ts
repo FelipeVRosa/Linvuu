@@ -1,4 +1,4 @@
-// Endereço da API. No site, o caminho é relativo (mesma origem). No app, o site roda dentro do aparelho,
-// então a API precisa do endereço completo do servidor de produção (VITE_API_BASE_URL, definido no build do app).
-const BASE = (((import.meta.env ?? {}).VITE_API_BASE_URL as string | undefined) ?? '').replace(/\/$/, '');
+// No Android a API é remota; testes Node podem não fornecer import.meta.env.
+const env = import.meta.env ?? {};
+const BASE = ((env.VITE_API_BASE_URL as string | undefined) ?? (env.VITE_ALVO === 'apk' ? 'https://linvuu.com.br' : '')).replace(/\/$/, '');
 export const api = (caminho: string) => `${BASE}${caminho}`;

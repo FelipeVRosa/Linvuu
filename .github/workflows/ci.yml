@@ -30,7 +30,9 @@ jobs:
           key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1
       - run: npm ci
       - name: Verificar tipos TypeScript
-        run: npm run lint
+        run: npm run lint && npm run lint:apk
+      - name: Testar consentimento e minimização PostHog sem enviar dados
+        run: node --import tsx scripts/testar-analytics.ts
       - name: Testar prontidao sem dependencias de producao
         run: node --import tsx scripts/testar-prontidao.ts
       - name: Testar notificações Stripe assinadas sem cobranças reais
@@ -43,13 +45,19 @@ jobs:
         run: npm run testar:progresso
       - name: Testar reenvio e isolamento do progresso na conta
         run: node --import tsx scripts/testar-sincronizacao-progresso.ts
+      - name: Testar recuperação nativa simulada e tentativas versionadas do APK
+        run: |
+          node --import tsx scripts/testar-armazenamento-apk.ts
+          node --import tsx scripts/testar-falha-inicial-armazenamento-apk.ts
+          node --import tsx scripts/testar-tentativas-apk.ts
+          node --import tsx scripts/testar-revisao-erros-apk.ts
       - name: Testar validação da newsletter (tipos, tamanhos, aceite, campos extras)
         run: npm run testar:newsletter
       - name: Testar a rota da newsletter no emulador do Firestore (consentimento, repetição, limite por IP)
         run: npm run testar:newsletter:rota
       - name: Testar as regras do Firestore no emulador (duas contas fictícias e visitante)
         run: npm run testar:regras
-      - run: npm run build
+      - run: npm run build:website
       - name: Testar politica publica de indexacao
         run: node --import tsx scripts/testar-seo-publico.ts
       - name: Verificar todas as sessoes e idiomas, canonical e destinos publicos
@@ -58,6 +66,8 @@ jobs:
           node --import tsx scripts/testar-robots-navegacao.ts
           node --import tsx scripts/testar-http-seo.ts
           node --import tsx scripts/testar-links-publicos.ts
+      - run: npm run build:apk
+      - run: npm run testar:plataformas
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
         run: npm run validar:design
       - name: Dependências sem vulnerabilidade conhecida (produção)
@@ -65,3 +75,4 @@ jobs:
           for i in 1 2 3; do npm audit --omit=dev --audit-level=high && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)
         run: npm run testar:seguranca
+

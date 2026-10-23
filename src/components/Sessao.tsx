@@ -319,7 +319,7 @@ function Conteudo({ b, idioma, explicacao }: { b: Bloco; idioma: string; explica
   }
 }
 
-export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao }: { sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
+export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explicacao, compacta = false }: { compacta?: boolean; sessao: SessaoAula; idioma: string; aula: number; dia?: number; proximo?: string; nomeIdioma?: string; explicacao?: string }) {
   const T = textos(idioma);
   const { usuario } = useAuth();
   const [msgFim, setMsgFim] = useState<string | null>(null);
@@ -332,6 +332,13 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const [voz, setVoz] = useState<boolean | null>(null);
   const [provisorio, setProvisorio] = useState(false);
   const b = sessao.blocos[idx];
+  const tituloEtapa = useRef<HTMLHeadingElement>(null);
+  const primeiraEtapa = useRef(true);
+  useEffect(() => {
+    if (!compacta) return;
+    if (primeiraEtapa.current) { primeiraEtapa.current = false; return; }
+    tituloEtapa.current?.focus();
+  }, [idx, compacta]);
 
   useEffect(() => { temVoz(idioma).then(setVoz); return () => parar(); }, [idioma]);
   useEffect(() => {
@@ -341,17 +348,22 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   }, []);
   useEffect(() => { parar(); salvarSessao(chave, { bloco: idx, completa }); }, [idx, completa, chave]);
 
-  return (
-    <div className="sessao">
-      {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
-      {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
+  const etapas = (
       <ol className="passos-nav" aria-label={T.blocosSessao}>
         {sessao.blocos.map((x, k) => (
           <li key={k}><button type="button" className={`passo ${k === idx ? 'atual' : ''} ${k < idx || completa ? 'feito' : ''}`} aria-current={k === idx ? 'step' : undefined} onClick={() => setIdx(k)}><span>{k + 1}</span> {T.rotuloBloco[x.tipo]}</button></li>
         ))}
       </ol>
+  );
+
+  return (
+    <div className={`sessao${compacta ? " app-sessao" : ""}`}>
+      {compacta && <div className="app-etapa-progresso"><span>{T.bloco(idx + 1, total, b.min)}</span><strong>{completa ? total : idx + 1}/{total}</strong><progress max={total} value={completa ? total : idx} aria-label={T.blocosSessao} /></div>}
+      {voz === false && <p className="nota">{T.semVoz(nomeIdioma ?? idioma)}</p>}
+      {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
+      {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
       <div className="bloco">
-        <div className="bloco-topo"><h2>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
+        <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
         <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
       </div>
       <div className="sessao-nav">

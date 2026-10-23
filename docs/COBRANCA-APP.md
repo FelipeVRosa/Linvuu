@@ -93,3 +93,30 @@ As regras de marca do projeto valem para tudo isso: sem promessa de fluência, p
 - Pendente: associar o produto `Premium` ao entitlement `Premium` (Attach).
 - Yearly, Lifetime e produto duplicado foram removidos da configuração de teste.
 - Os produtos reais (mensal R$ 139, trimestral) só serão criados na Play, quando a conta estiver aprovada.
+
+## Estado em 21/10/2026: código pronto, desligado (branch claude/apk-rodada4)
+O app e o servidor já sabem vender e reconhecer a assinatura da Play. Nada liga sozinho.
+
+**App** (`src/plataforma/apk/AssinaturaPlay.tsx`, `comprasPlay.ts`, `comprasPlayModelo.ts`)
+- Tela Conta: preço e frequência vindos da Play, renovação automática e como cancelar aparecem antes do botão. Restaurar compra. Gerenciar no Google Play quando ativa.
+- Não mostra preço, Pix, boleto nem link do site (política de pagamentos: proibido direcionar a outro meio de pagamento). Quem assinou no site só vê que já tem acesso (app "somente consumo" é permitido).
+- Build só liga com `VITE_BILLING_MODE=google-play`, `VITE_REVENUECAT_ANDROID_KEY=goog_…` (chave PÚBLICA do SDK) e `LINVUU_COBRANCA_PLAY_AUTORIZADA=sim`. Sem os três, o build falha.
+- Biblioteca: RevenueCat Capacitor 13.7.4 → purchases-android 10.27.0 → Play Billing Library 8.3.0 (exigida desde 31/08/2026).
+
+**Servidor** (`server/play.ts`, `server/billing.ts`)
+- `acesso = Stripe ativo OU entitlement Play ativo`, consultando `GET https://api.revenuecat.com/v1/subscribers/{uid}` com `REVENUECAT_SECRET_KEY=sk_…` (só no Render, nunca no app).
+- Entitlement: `REVENUECAT_ENTITLEMENT` (padrão `Premium`). Compras de testadores (sandbox) só liberam com `REVENUECAT_ACEITAR_SANDBOX=true` — ligue só durante o teste fechado.
+- Carência de pagamento da Play mantém acesso; reembolso e expiração tiram.
+
+**Passos que só o dono pode fazer, na ordem**
+1. Play Console (conta de organização): criar o app `com.linvuu.app`, perfil de pagamentos (merchant) e conta bancária.
+2. Monetizar › Assinaturas: produto `linvuu_mensal`, plano base mensal renovável, preço em BRL. (Trimestral: decidir se vira plano base de 3 meses.)
+3. Google Cloud: conta de serviço com acesso à Play Developer API; convidar no Play Console com permissão financeira; enviar o JSON ao RevenueCat (Project › Google Play).
+4. Notificações em tempo real (RTDN): tópico Pub/Sub indicado pelo RevenueCat.
+5. RevenueCat: app Android com o pacote `com.linvuu.app`, produto ligado ao entitlement `Premium`, Offering "default" com o pacote mensal. Copiar a chave pública `goog_…` (app) e a secreta `sk_…` (servidor).
+6. Testadores de licença (Configuração › Testes de licença) e faixa de teste interno; o app precisa ser instalado pela Play para a compra funcionar.
+7. Render: `REVENUECAT_SECRET_KEY`, `REVENUECAT_ACEITAR_SANDBOX=true` (só no teste). Build do app com as três variáveis acima.
+8. Teste em aparelho real: compra, cancelamento, restaurar em outro aparelho, reembolso, assinante do site entrando no app. Depois, `REVENUECAT_ACEITAR_SANDBOX` desligado.
+9. Política de privacidade: incluir Google Play (pagamento) e RevenueCat (validação de compras) entre os fornecedores; formulário de Segurança dos dados com "histórico de compras".
+
+**Testes**: `node --import tsx scripts/testar-play-modelo.ts` (servidor, oferta, guardas) e `node scripts/testar-play-apk.mjs` (tela com SDK simulado). Não substituem a compra real com testador de licença.

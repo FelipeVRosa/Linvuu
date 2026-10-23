@@ -9,20 +9,22 @@ export function planejar(entradas, commit, versao = 'r20261019') {
   if (!/^[a-f0-9]{40}$/.test(commit) || !/^[a-zA-Z0-9_-]+$/.test(versao)) throw new Error('Commit ou versão inválidos');
   const vistos = new Set(), itens = [];
   for (const e of entradas) {
-    const m = e.caminho.match(/^(public\/audio|server\/audio-privado)\/([a-z]{2})\/([a-f0-9]{8}\.mp3)$/);
+    // Voz antiga (Edge): public/audio/<idioma>/ e server/audio-privado/<idioma>/.
+    // Voz ElevenLabs (v2): public/audio/v2/<idioma>/ e server/audio-privado-v2/<idioma>/. As duas gerações nunca se fundem.
+    const m = e.caminho.match(/^(?:(public\/audio)(\/v2)?|(server\/audio-privado)(-v2)?)\/([a-z]{2})\/([a-f0-9]{8}\.mp3)$/);
     if (!m || !/^[a-f0-9]{40}$/.test(e.sha) || !Number.isSafeInteger(e.bytes) || e.bytes <= 0)
       throw new Error('Entrada de áudio inválida: ' + e.caminho);
     if (vistos.has(e.caminho)) throw new Error('Origem duplicada: ' + e.caminho);
     vistos.add(e.caminho);
-    const publico = m[1] === 'public/audio';
+    const publico = !!m[1], geracao = (m[2] || m[4]) ? 'v2' : 'v1', idioma = m[5], arquivo = m[6];
     itens.push({ origem: e.caminho, blobGit: e.sha, bytes: e.bytes, visibilidade: publico ? 'publico' : 'privado',
-      bucketProposto: publico ? 'linvuu-audio-publico' : 'linvuu-audio-privado',
-      chave: versao + '/' + m[2] + '/' + m[3], idioma: m[2], arquivo: m[3],
+      bucketProposto: publico ? 'linvuu-audio-publico' : 'linvuu-audio-privado', geracao,
+      chave: versao + (geracao === 'v2' ? '/v2' : '') + '/' + idioma + '/' + arquivo, idioma, arquivo,
       estado: 'aguardando-transferencia' });
   }
   const lotes = new Map();
   for (const item of itens) {
-    const grupo = item.visibilidade + '-' + item.idioma;
+    const grupo = item.visibilidade + '-' + item.idioma + (item.geracao === 'v2' ? '-v2' : '');
     const a = lotes.get(grupo) ?? []; a.push(item); lotes.set(grupo, a);
   }
   return { esquema: 1, commit, versao, modo: 'simulacao-sem-upload',
@@ -38,7 +40,7 @@ async function main() {
   if (!/^[A-Za-z0-9_./-]+$/.test(ref) || ref.startsWith('-')) throw new Error('Referência inválida');
   const commit = execFileSync('git', ['rev-parse', '--verify', ref + '^{commit}'], { encoding: 'utf8' }).trim();
   const raiz = execFileSync('git', ['rev-parse', '--show-toplevel'], { encoding: 'utf8' }).trim();
-  const raw = execFileSync('git', ['ls-tree', '-r', '-l', '-z', commit, '--', 'public/audio', 'server/audio-privado'], { maxBuffer: 32*1024*1024 }).toString('utf8');
+  const raw = execFileSync('git', ['ls-tree', '-r', '-l', '-z', commit, '--', 'public/audio', 'server/audio-privado', 'server/audio-privado-v2'], { maxBuffer: 32*1024*1024 }).toString('utf8');
   const entradas = raw.split('\0').filter(Boolean).flatMap(linha => {
     const m = linha.match(/^([0-9]+) blob ([a-f0-9]+)\s+(\d+)\t([\s\S]+)$/);
     if (!m || !m[4].endsWith('.mp3')) return [];

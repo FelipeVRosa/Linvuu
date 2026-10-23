@@ -2,6 +2,13 @@
 Conferência de 19/10/2026. Commit medido: 1b7687bf61e93d9ba0ac590e2adf1e5948d2e85c.
 Somente leitura. Nenhum arquivo movido/apagado, cobrança ativada, regra alterada ou produção publicada.
 
+> **Atualização de 23/10/2026 (depois da voz ElevenLabs).** Os números abaixo são de 19/10 e ficaram para trás.
+> Na main 9a081ad7 o áudio soma **27.293 MP3 / 496,9 MB** (antes 16.569 / 305,5 MB): à voz antiga somou-se a geração ElevenLabs em
+> `public/audio/v2/<idioma>/` (público) e `server/audio-privado-v2/<idioma>/` (pago). A árvore inteira tem 31.743 arquivos / 574,7 MB.
+> A pasta v2 já resolve o risco de cache da P1 (voz nova em caminho novo, sem sobrescrever a antiga).
+> Os dois scripts desta pasta foram ajustados para reconhecer v2; a chave proposta no R2 fica `r20261019/v2/<idioma>/<hash>.mp3`.
+> Quando a voz antiga deixar de ser usada como reserva, ela é a primeira candidata a sair da árvore (cerca de 305 MB).
+
 ## Resultado
 Os arquivos atuais rastreados somam **380.959.710 bytes (380,96 MB / 363,31 MiB)** em **20.814 arquivos**. Isso NÃO é o tamanho transferido ao abrir a home, o tamanho do APK, o uso do Render em disco, nem o repositório com seu histórico.
 MB neste documento é decimal. A estimativa parcial anterior foi substituída pela soma completa.

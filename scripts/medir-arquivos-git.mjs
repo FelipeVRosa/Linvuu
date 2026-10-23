@@ -17,12 +17,16 @@ for (const f of arquivos) {
   const r = categorias.get(nome) ?? { caminho: nome, arquivos: 0, bytes: 0 };
   r.arquivos++; r.bytes += f.bytes; categorias.set(nome, r);
 }
-const mp3 = arquivos.filter(f => f.caminho.endsWith('.mp3') && (f.caminho.startsWith('public/audio/') || f.caminho.startsWith('server/audio-privado/')));
+// Inclui a geração ElevenLabs: public/audio/v2/<idioma>/ e server/audio-privado-v2/<idioma>/.
+const mp3 = arquivos.filter(f => f.caminho.endsWith('.mp3') && (f.caminho.startsWith('public/audio/') || f.caminho.startsWith('server/audio-privado/') || f.caminho.startsWith('server/audio-privado-v2/')));
 const grupos = new Map();
 for (const f of mp3) { const g = grupos.get(f.sha) ?? []; g.push(f); grupos.set(f.sha, g); }
-const publico = new Map(mp3.filter(f => f.caminho.startsWith('public/audio/')).map(f => [f.caminho.slice('public/audio/'.length), f]));
-const sobreposicoes = mp3.filter(f => f.caminho.startsWith('server/audio-privado/')).flatMap(f => {
-  const chave = f.caminho.slice('server/audio-privado/'.length), outro = publico.get(chave);
+// Chave comparável entre público e privado: "<idioma>/<arquivo>" (v1) ou "v2/<idioma>/<arquivo>" (ElevenLabs).
+const chaveDe = c => c.startsWith('public/audio/') ? c.slice('public/audio/'.length)
+  : c.startsWith('server/audio-privado-v2/') ? 'v2/' + c.slice('server/audio-privado-v2/'.length) : c.slice('server/audio-privado/'.length);
+const publico = new Map(mp3.filter(f => f.caminho.startsWith('public/audio/')).map(f => [chaveDe(f.caminho), f]));
+const sobreposicoes = mp3.filter(f => f.caminho.startsWith('server/')).flatMap(f => {
+  const chave = chaveDe(f.caminho), outro = publico.get(chave);
   return outro ? [{ chave, mesmosBytes: outro.sha === f.sha }] : [];
 });
 const soma = a => ({ arquivos: a.length, bytes: a.reduce((s, f) => s + f.bytes, 0) });

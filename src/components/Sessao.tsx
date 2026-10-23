@@ -11,6 +11,7 @@ import { somErro } from '../lib/sons';
 import { useAuth } from '../lib/AuthContext';
 import { concluirDia } from './AreaAluno';
 import { LOCALE, dicionario } from '../i18n';
+import { explicacaoDoCurso } from '../lib/content';
 import colunasJson from '../../content/colunas.json';
 
 const COLUNAS = colunasJson as Record<string, Record<string, string>>;
@@ -19,7 +20,7 @@ const COLUNAS = colunasJson as Record<string, Record<string, string>>;
 const ROTULO_COLUNA: Record<string, string> = { termina_em: 'Termina em', forca_na: 'Força na', masc_sg: 'Masculino singular', fem_sg: 'Feminino singular', masc_pl: 'Masculino plural', fem_pl: 'Feminino plural', yo: 'yo', el_ella_usted: 'él / ella / usted', nosotros: 'nosotros', vosotros: 'vosotros', ellos_ustedes: 'ellos / ellas / ustedes', usa_se: 'Usa-se', infinito: 'Infinito', italiano: 'Em italiano', traducao: 'Tradução', quando: 'Quando', equivale: 'Em português', construcao: 'Construção', observacao: 'Observação', singolare: 'Singular', grafia: 'Grafia', interrogativo: 'Interrogativo', lui_lei: 'lui / lei', cor: 'Cor', se_clausola: 'Cláusula com «se»', consequencia: 'Consequência', precisa: 'Você precisa', use: 'Use', parece: 'Parece', significa: 'Significa', masculino_plural: 'Masculino plural', feminino_plural: 'Feminino plural', positivo: 'Positivo', prep_cui: 'Preposição + cui', ordinal: 'Ordinal', termo: 'Termo', contexto: 'Contexto', recurso: 'Recurso', festa: 'Festa', estrategia: 'Estratégia', passato_prossimo: 'Passato prossimo', com_pronome: 'Com pronome', forca: 'Força', duas_frases: 'Duas frases', com_che: 'Com «che»', suposicao: 'Suposição', original: 'Original', relato: 'Relato', attiva: 'Voz ativa', resposta_igual: 'Resposta (também)', resposta_oposta: 'Resposta (nem)', momento: 'Momento', principal: 'Principal', simultaneo: 'Ao mesmo tempo', anterior: 'Antes', lei: 'Lei (cortesia)', tu: 'tu', parlare: 'parlare', vendere: 'vendere', dormire: 'dormire', finire: 'finire', partire: 'partire', prendere: 'prendere', credere: 'credere', scrivere: 'scrivere', alzarsi: 'alzarsi', divertirsi: 'divertirsi', pt: 'Português', nominativo: 'Nominativo', acusativo: 'Acusativo', exemplo: 'Exemplo', pronome: 'Pronome', forma: 'Forma', singular: 'Singular', plural: 'Plural', pais: 'País', auxiliar: 'Auxiliar', participio: 'Particípio passado', padrao: 'Padrão', modal: 'Modal', sentido: 'Sentido', wo: 'Wo? (onde: dativo)', wohin: 'Wohin? (para onde: acusativo)', zu: 'zu (até)', frase: 'Frase', alemao: 'Em alemão', informal: 'Informal', oficial: 'Oficial (24 h)', artigo: 'Artigo', definido: 'Definido', indefinido: 'Indefinido', negativo: 'Negativo', pos1: '1ª posição', pos2: '2ª posição (verbo)', resto: 'Resto', masc_neutro: 'Masculino e neutro', fem_plural: 'Feminino e plural', combinacao: 'Combinação', som: 'Som', resposta: 'Resposta', haben: 'haben', sein: 'sein', uso: 'Uso', comparativo: 'Comparativo', conj1: '1ª conjugação', conj2: '2ª conjugação', conjugacao: 'Conjugação', troca: 'Troca', situacao: 'Situação', preposicao: 'Preposição', posicao: 'Posição', verbo: 'Verbo', tipo: 'Tipo', pista: 'Pista', aspecto: 'Aspecto', imperfectivo: 'Imperfectivo', perfectivo: 'Perfectivo', prefixo: 'Prefixo', par: 'Par', futuro: 'Futuro', ideia: 'Ideia', significado: 'Significado', determinado: 'Determinado (agora)', indeterminado: 'Indeterminado (hábito)', a_pe: 'A pé', transporte: 'De transporte', coisa: 'Coisa', tema: 'Tema', regra: 'Regra', aula: 'Aula', hora: 'Hora', russo: 'Em russo', dia: 'Dia', passado: 'Passado', sujeito: 'Sujeito', infinitivo: 'Infinitivo', parado: 'Parado (onde?)', movimento: 'Movimento (para onde?)', palavra: 'Palavra', genero: 'Gênero', terminacao: 'Terminação', exemplos: 'Exemplos', adjetivo: 'Adjetivo', adverbio: 'Advérbio', frequencia: 'Frequência', pergunta: 'Pergunta', caso: 'Caso', funcao: 'Para que serve', dativo: 'Dativo', instrumental: 'Instrumental', possessivo: 'Possessivo',  genitivo: 'Genitivo', preposicional: 'Preposicional', numero: 'Número', masculino: 'Masculino', feminino: 'Feminino', como: 'Como', erro: 'Erro comum', formal: 'Formal', afirmativa: 'Afirmativa', negativa: 'Negativa', estrutura: 'Estrutura', expressao: 'Expressão', possuidor: 'Possuidor', escrita: 'Escrita', conta: 'Conta', fala: 'Como se diz', partitivo: 'Partitivo', quantidade: 'Quantidade', meio: 'Meio', tonico: 'Pronome tônico', objeto: 'Objeto', pessoa: 'Pessoa', vouloir: 'vouloir (querer)', pouvoir: 'pouvoir (poder)', devoir: 'devoir (dever)', savoir: 'savoir (saber)', nota: 'Nota', motivo: 'Motivo', formula: 'Fórmula', base: 'Base', parler: 'parler', finir: 'finir', etre: 'être', aller: 'aller', imparfait: 'Imparfait', pc: 'Passé composé', tempo: 'Tempo', parte: 'Parte', presente: 'Presente', com_pronomes: 'Com pronomes', fato: 'Fato', definicao: 'Definição', quem: 'Quem fala', pedido: 'Pedido', problema: 'Problema', operacao: 'Operação', fase: 'Fase', etapa: 'Etapa', negacao: 'Negação', registro: 'Tipo', conector: 'Conector', acao: 'Ação', prep: 'Preposição', costume: 'Costume', gatilho: 'Gatilho', modo: 'Modo', conjuncao: 'Conjunção', secao: 'Seção', valor: 'Valor', gerondio: 'Gérondif', ativa: 'Voz ativa', passiva: 'Voz passiva', direto: 'Discurso direto', indireto: 'Discurso indireto', connaitre: 'connaître', voir: 'voir', croire: 'croire', mettre: 'mettre' };
 const humanizar = (c: string) => c.charAt(0).toUpperCase() + c.slice(1).replace(/_/g, ' ');
 /** Cabeçalho de coluna no idioma do site; chaves que são palavras do idioma estudado (ex.: «haben», «parlare») aparecem como estão. */
-const rotuloColuna = (c: string) => (LOCALE.explicacao === 'pt' ? ROTULO_COLUNA[c] : COLUNAS[LOCALE.explicacao]?.[c]) ?? humanizar(c);
+const rotuloColuna = (c: string, explicacao: string) => (explicacao === 'pt' ? ROTULO_COLUNA[c] : COLUNAS[explicacao]?.[c]) ?? humanizar(c);
 
 function Audio({ texto, idioma, rotulo }: { texto: string; idioma: string; rotulo?: string }) {
   rotulo = rotulo ?? textos(idioma).ouvir;
@@ -46,12 +47,12 @@ function Palavras({ itens, idioma }: { itens: Palavra[]; idioma: string }) {
   );
 }
 
-export function Tabela({ linhas }: { linhas: Record<string, string>[] }) {
+export function Tabela({ linhas, explicacao = 'pt' }: { linhas: Record<string, string>[]; explicacao?: string }) {
   const cols = Object.keys(linhas[0] ?? {});
   return (
     <div className="tabela-rolagem">
       <table className="tabela">
-        <thead><tr>{cols.map((c) => <th key={c}>{rotuloColuna(c)}</th>)}</tr></thead>
+        <thead><tr>{cols.map((c) => <th key={c}>{rotuloColuna(c, explicacao)}</th>)}</tr></thead>
         <tbody>{linhas.map((l, i) => <tr key={i}>{cols.map((c) => <td key={c}>{l[c]}</td>)}</tr>)}</tbody>
       </table>
     </div>
@@ -222,7 +223,7 @@ function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string
   const T = textos(idioma);
   const [lendo, setLendo] = useState(false);
   useEffect(() => () => parar(), []);
-  if ((explicacao ?? LOCALE.explicacao) !== 'pt') return null;
+  if ((explicacao ?? explicacaoDoCurso(idioma)) !== 'pt') return null;
   const ouvir = async () => { setLendo(true); try { await falarTrechos(itens.flatMap((t) => trechos(t, idioma))); } finally { setLendo(false); } };
   return (
     <div className="narrar-barra">
@@ -236,7 +237,8 @@ function Narrar({ itens, idioma, explicacao }: { itens: string[]; idioma: string
 /** `explicacao`: língua em que o bloco está escrito (quando a sessão ainda não foi traduzida, o rótulo acompanha o texto). */
 export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo: 'gramatica' }>; idioma: string; explicacao?: string }) {
   const T = textos(idioma);
-  const rotuloComparacao = explicacao && explicacao !== LOCALE.explicacao ? dicionario(explicacao === 'pt' ? 'pt-BR' : explicacao as 'en' | 'es').player.emPortugues : T.emPortugues;
+  const lingua = explicacao ?? explicacaoDoCurso(idioma);
+  const rotuloComparacao = dicionario(lingua === 'pt' ? 'pt-BR' : lingua as 'en' | 'es').player.emPortugues;
   return (
     <section className="gramatica">
       <h3 className="bloco-sub">{b.titulo}</h3>
@@ -244,8 +246,8 @@ export function Gramatica({ b, idioma, explicacao }: { b: Extract<Bloco, { tipo:
       <Explicacao texto={b.explicacao} />
       {b.comparacao && <p className="callout comparacao"><strong>{rotuloComparacao}</strong> {b.comparacao}</p>}
       {b.exemplos && <ul className="exemplos">{b.exemplos.map((e) => <li key={e.ru}><div className="ex-linha"><span lang={idioma} className="ru">{e.ru}</span><Audio texto={e.ru.replace(/\s*\(.*?\)\s*$/, '')} idioma={idioma} /></div><small className="trad">{e.pt}</small></li>)}</ul>}
-      {b.tabela && <Tabela linhas={b.tabela} />}
-      {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} /></div>)}
+      {b.tabela && <Tabela linhas={b.tabela} explicacao={lingua} />}
+      {b.tabelas?.map((t, i) => <div key={i}>{t.titulo && <h4 className="bloco-sub">{t.titulo}</h4>}<Tabela linhas={t.linhas} explicacao={lingua} /></div>)}
       {b.erros && (
         <div className="erros">
           <h4 className="bloco-sub">{T.erros}</h4>

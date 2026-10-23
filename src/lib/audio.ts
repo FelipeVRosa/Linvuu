@@ -21,7 +21,7 @@ const indices = new Map<string, Promise<Set<string>>>();
 /** Hashes dos MP3 que existem para o idioma (public/audio/<idioma>/index.json). Falha = conjunto vazio. */
 const indice = (idioma: string) => {
   if (!indices.has(idioma)) {
-    indices.set(idioma, fetch(`${BASE}/${idioma}/index.json`).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
+    indices.set(idioma, fetch(`${BASE}/${idioma}/index.json`, { signal: AbortSignal.timeout(8000) }).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
   }
   return indices.get(idioma)!;
 };
@@ -30,7 +30,7 @@ const indice = (idioma: string) => {
 const indicesV2 = new Map<string, Promise<Set<string>>>();
 const indiceV2 = (idioma: string) => {
   if (!indicesV2.has(idioma)) {
-    indicesV2.set(idioma, fetch(`${BASE}/v2/${idioma}/index.json`).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
+    indicesV2.set(idioma, fetch(`${BASE}/v2/${idioma}/index.json`, { signal: AbortSignal.timeout(8000) }).then((r) => (r.ok ? r.json() : [])).then((l) => new Set<string>(Array.isArray(l) ? l : [])).catch(() => new Set<string>()));
   }
   return indicesV2.get(idioma)!;
 };
@@ -48,13 +48,22 @@ export const parar = () => {
   if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
 };
 
+// Referência viva da fala: no Chrome, uma fala sem referência pode ser coletada e nunca disparar onend.
+let falaAtual: SpeechSynthesisUtterance | null = null;
 const vozDoNavegador = (texto: string, idioma: string) => new Promise<void>((ok) => {
   if (typeof speechSynthesis === 'undefined') return ok();
-  const u = new SpeechSynthesisUtterance(textoParaAudio(texto).replace(/[—…]/g, ' '));
+  const limpo = textoParaAudio(texto).replace(/[—…]/g, ' ');
+  const u = new SpeechSynthesisUtterance(limpo);
   u.lang = LANG[idioma] ?? idioma; u.rate = 0.85;
   const v = speechSynthesis.getVoices().find((x) => x.lang.toLowerCase().startsWith(u.lang.slice(0, 2).toLowerCase()));
   if (v) u.voice = v;
-  u.onend = () => ok(); u.onerror = () => ok();
+  // Alguns navegadores não avisam o fim (sem voz do idioma, aba em segundo plano, fala cancelada).
+  // Teto de tempo proporcional ao texto: quem espera esta promessa (botão "Ouvindo…") nunca fica preso.
+  let feito = false;
+  const fim = () => { if (feito) return; feito = true; clearTimeout(teto); if (falaAtual === u) falaAtual = null; ok(); };
+  const teto = setTimeout(fim, Math.min(20000, 2500 + limpo.length * 110));
+  u.onend = fim; u.onerror = fim;
+  falaAtual = u;
   speechSynthesis.speak(u);
 });
 
@@ -68,13 +77,18 @@ export function limparAudioPrivado() {
   privados.clear();
 }
 
-/** Token do login, se houver. Falha de Auth não impede a tentativa: o servidor é quem decide o acesso. */
-const tokenDoLogin = async (): Promise<string | null> => {
+/** Espera no máximo `ms`; depois segue com `reserva`. Nada no áudio pode deixar o botão preso em "Ouvindo…". */
+const comTeto = <T,>(p: Promise<T>, ms: number, reserva: T): Promise<T> =>
+  Promise.race([p, new Promise<T>((ok) => setTimeout(() => ok(reserva), ms))]);
+
+/** Token do login, se houver. Falha de Auth não impede a tentativa: o servidor é quem decide o acesso.
+ *  Teto de 4 s: o Firebase pode demorar ou não responder (armazenamento bloqueado, rede ruim). */
+const tokenDoLogin = (): Promise<string | null> => comTeto((async () => {
   try {
     const { auth } = await carregarAuth();
     return (await auth.currentUser?.getIdToken()) ?? null;
   } catch { return null; }
-};
+})(), 4000, null);
 /** Áudio de sessão paga: baixa pela API (com o token de login, se houver) e devolve um endereço local. null = sem acesso ou sem arquivo. */
 const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
   const chave = `${idioma}/${h}`;
@@ -83,7 +97,7 @@ const audioPrivado = (idioma: string, h: string): Promise<string | null> => {
       try {
         const geracao = geracaoPrivada;
         const token = await tokenDoLogin();
-        const r = await fetch(api(`/api/audio/${idioma}/${h}.mp3`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+        const r = await fetch(api(`/api/audio/${idioma}/${h}.mp3`), { headers: token ? { Authorization: `Bearer ${token}` } : {}, signal: AbortSignal.timeout(12000) });
         if (!r.ok) return null;
         const blob = await r.blob();
         return geracao === geracaoPrivada ? URL.createObjectURL(blob) : null;
@@ -108,7 +122,16 @@ async function tocar(texto: string, idioma: string, minha: number) {
       // Áudio remoto do APK usa CORS, compatível com Cross-Origin-Resource-Policy.
       a.crossOrigin = 'anonymous';
       atual = a;
-      await new Promise<void>((ok, erro) => { a.onended = () => ok(); a.onerror = () => erro(new Error('sem arquivo')); a.play().then(() => avisar('gravacao')).catch(erro); });
+      // onpause: parar() pausa o áudio; sem isso a promessa ficava pendente e o botão preso em "Ouvindo…".
+      await new Promise<void>((ok, erro) => {
+        // Se o arquivo não começar a tocar em 10 s (rede parada), desiste e cai na voz do navegador.
+        const naoComecou = setTimeout(() => { a.pause(); erro(new Error('sem resposta')); }, 10000);
+        a.onplaying = () => clearTimeout(naoComecou);
+        a.onended = () => { clearTimeout(naoComecou); ok(); };
+        a.onpause = () => { clearTimeout(naoComecou); ok(); };
+        a.onerror = () => { clearTimeout(naoComecou); erro(new Error('sem arquivo')); };
+        a.play().then(() => avisar('gravacao')).catch((e) => { clearTimeout(naoComecou); erro(e); });
+      });
       return;
     } catch { if (minha !== cancelar) return; }
   }

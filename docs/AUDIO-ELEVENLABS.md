@@ -43,3 +43,8 @@ Promo: `marketing/promo/linvuu-promo-{pt,en,es}.mp3` (slogan, 68 créditos).
 ## Pendente
 - Ouvir de ouvido: sílaba tônica do russo, palavras soltas; vozes en/de/fr foram escolhidas só pelo catálogo.
 - Revogar as duas chaves expostas no chat e guardar a nova como segredo do GitHub.
+
+## Estado em 24/10/2026 (saldo ElevenLabs zerado)
+Faltam só as sessões pagas depois da aula 46: **de 434, fr 353, en 506**. Até lá o site e o app tocam a voz Edge nessas falas (o Edge dessas fica no repositório de propósito). Para completar, um comando só, quando houver crédito ou outra chave:
+`ELEVENLABS_API_KEY=... scripts/completar-audio-eleven.sh` (use `--simular` para só contar). Ao terminar, commitar `server/audio-privado-v2/` e então apagar o Edge equivalente com o script de comparação.
+Ressalva: francês tem 54 falas da lista sem nenhum áudio (nem Edge) e inglês tem listas de glossário de livro sem áudio; conferir se aparecem ao aluno antes de gerar.

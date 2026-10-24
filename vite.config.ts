@@ -8,15 +8,14 @@ export default defineConfig(({ mode }) => {
   const alvo = env.VITE_ALVO || 'website';
   if (!['website', 'apk'].includes(alvo)) throw new Error('VITE_ALVO deve ser website ou apk');
   const apk = alvo === 'apk';
-  if(apk && env.VITE_COMPRAS_ATIVAS==='true')throw new Error('Compras de produção bloqueadas nesta fase. Use somente Test Store.');
+  if(apk && env.VITE_COMPRAS_ATIVAS==='true')throw new Error('Compras de produção bloqueadas nesta fase.');
   // Google Play Billing real: só com modo explícito, chave pública Android (goog_) e autorização escrita do dono no ambiente do build.
   // Sem LINVUU_COBRANCA_PLAY_AUTORIZADA=sim o build falha, para nenhum APK de teste sair com compra real por engano.
   const play = apk && env.VITE_BILLING_MODE==='google-play';
   if(play && (!env.VITE_REVENUECAT_ANDROID_KEY?.startsWith('goog_') || env.LINVUU_COBRANCA_PLAY_AUTORIZADA!=='sim'))throw new Error('Google Play Billing exige VITE_REVENUECAT_ANDROID_KEY=goog_… e LINVUU_COBRANCA_PLAY_AUTORIZADA=sim');
-  if(apk && env.VITE_BILLING_MODE && !play && env.VITE_BILLING_MODE!=='revenuecat-test-store')throw new Error('Modo de pagamento não autorizado para este APK de teste');
-  if(apk && env.VITE_BILLING_MODE==='revenuecat-test-store' && !env.VITE_REVENUECAT_TEST_KEY?.startsWith('test_'))throw new Error('Test Store exige chave pública test_; nunca use chave de produção');
-  // Cobrança dentro do app só existe se o build pedir de forma explícita (Test Store ou Google Play autorizado).
-  const cobrancaNoApk = play || env.VITE_BILLING_MODE === 'revenuecat-test-store';
+  if(apk && env.VITE_BILLING_MODE && !play)throw new Error('Modo de pagamento não autorizado para este APK');
+  // Cobrança dentro do app só existe se o build pedir de forma explícita (Google Play autorizado).
+  const cobrancaNoApk = play;
   // v1 sem compras: o app não carrega textos de plano, preço ou renovação. No site os dicionários seguem completos.
   const dicionariosApk = {
     name: 'dicionarios-apk-sem-precos',
@@ -67,7 +66,7 @@ export default defineConfig(({ mode }) => {
       // v1 sem compras: troca os módulos de cobrança por versões vazias; paywall, preços e SDK de loja não entram no pacote.
       if (!cobrancaNoApk && importer && source.startsWith('.')) {
         const alvoImport = path.resolve(path.dirname(importer.split('?')[0]), source).replace(/\.tsx?$/, '');
-        for (const nome of ['comprasPlay', 'AssinaturaPlay', 'PagamentosTeste']) {
+        for (const nome of ['comprasPlay', 'AssinaturaPlay']) {
           if (alvoImport === path.resolve('src/plataforma/apk', nome)) return path.resolve('src/plataforma/apk/sem-cobranca', nome + (nome === 'comprasPlay' ? '.ts' : '.tsx'));
         }
       }

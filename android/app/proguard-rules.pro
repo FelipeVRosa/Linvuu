@@ -19,3 +19,14 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# --- Linvuu (WebView + Capacitor) ---
+# Mantém o rastreio de linhas para os relatórios de falha da Play (o mapping.txt acompanha cada AAB).
+-keepattributes SourceFile,LineNumberTable,*Annotation*,JavascriptInterface,Signature,InnerClasses,EnclosingMethod
+-renamesourcefileattribute SourceFile
+# Ponte JavaScript <-> nativo do Capacitor: plugins e métodos anotados são chamados por reflexão.
+-keep @com.getcapacitor.annotation.CapacitorPlugin public class * { @com.getcapacitor.annotation.PermissionCallback <methods>; @com.getcapacitor.annotation.ActivityCallback <methods>; @com.getcapacitor.PluginMethod public <methods>; }
+-keep public class * extends com.getcapacitor.Plugin { *; }
+-keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
+-keep class com.getcapacitor.** { *; }
+-keep class com.linvuu.app.** { *; }

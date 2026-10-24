@@ -27,7 +27,15 @@ export async function indiceAudio(idioma:string):Promise<Set<string>>{
   catch(e){indices.delete(idioma);const n=(falhas.get(idioma)?.n??0)+1;falhas.set(idioma,{n,ate:Date.now()+Math.min(30000,1000*2**(n-1))});throw e;}
  })();validades.set(idioma,Date.now()+5*60*1000);indices.set(idioma,pedido);return pedido;
 }
-export function recuperarRedeAudio(){falhas.clear();indices.clear();validades.clear();}
+// Voz nova (ElevenLabs): MP3 públicos em /audio/v2/<idioma>/. Se o índice novo não carregar, segue só com o antigo (nunca derruba o áudio).
+const indicesV2=new Map<string,Promise<Set<string>>>(),validadesV2=new Map<string,number>();
+export async function indiceAudioV2(idioma:string):Promise<Set<string>>{
+ if((validadesV2.get(idioma)??0)<Date.now())indicesV2.delete(idioma);
+ if(indicesV2.has(idioma))return indicesV2.get(idioma)!;
+ const pedido=(async()=>{try{const r=await buscar(`${BASE}/v2/${idioma}/index.json`);if(!r.ok)return new Set<string>();const l:unknown=await r.json();return new Set<string>(Array.isArray(l)?l.filter((x):x is string=>typeof x==='string'&&/^[a-f0-9]{8}$/.test(x)):[]);}catch{indicesV2.delete(idioma);return new Set<string>();}})();
+ validadesV2.set(idioma,Date.now()+5*60*1000);indicesV2.set(idioma,pedido);return pedido;
+}
+export function recuperarRedeAudio(){falhas.clear();indices.clear();validades.clear();indicesV2.clear();validadesV2.clear();}
 if(typeof window!=='undefined')window.addEventListener('online',recuperarRedeAudio);
 let atual:HTMLAudioElement|null=null,geracao=0,finalizar:(()=>void)|null=null;
 type Trecho={texto:string;idioma:string};
@@ -39,7 +47,9 @@ function interromper(){geracao++;atual?.pause();if(atual){atual.onended=null;atu
 export function parar(){interromper();informar({fase:'parado',erro:null});}
 export function limparAudioPrivado(){geracaoConta++;parar();for(const url of privados.values())URL.revokeObjectURL(url);privados.clear();ultima=[];informar({repetivel:false,total:0,trecho:0});}
 async function origem(t:Trecho){
- const h=hashTexto(t.texto),lista=await indiceAudio(t.idioma);
+ const h=hashTexto(t.texto);
+ if((await indiceAudioV2(t.idioma)).has(h))return `${BASE}/v2/${t.idioma}/${h}.mp3`;
+ const lista=await indiceAudio(t.idioma);
  if(lista.has(h))return `${BASE}/${t.idioma}/${h}.mp3`;
  const chave=`${t.idioma}/${h}`;if(privados.has(chave))return privados.get(chave)!;
  const conta=geracaoConta;let token:string|undefined;

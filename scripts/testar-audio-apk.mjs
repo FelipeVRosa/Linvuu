@@ -19,6 +19,8 @@ try{
   const original=window.fetch;window.fetch=async(url)=>{
    pedidos.push(String(url));
    if(String(url).includes('/yy/index.json')){await lento;return new Response(JSON.stringify([m.hashTexto('Olá')]));}
+   if(String(url).includes('/v2/vv/index.json'))return new Response(JSON.stringify([m.hashTexto('Nova')]),{status:200});
+   if(String(url).includes('/v2/'))return new Response('[]',{status:200});
    if(String(url).includes('index.json')){if(!rede)throw new Error('offline');return new Response(JSON.stringify([m.hashTexto('Olá'),m.hashTexto('Deux')]),{status:200});}
    if(String(url).includes('/api/audio/'))return acesso?new Response(new Blob(['audio']),{status:200}):new Response('{}',{status:403});
    return original(url);
@@ -31,7 +33,7 @@ try{
   const OriginalAudio=window.Audio;window.Audio=FakeAudio;
   await m.falar('Olá','zz');checar(m.lerEstadoAudio().fase==='erro','falha deve ser visível');
   checar(!pedidos.some(u=>u.includes('/api/audio/')),'falha no índice não pode ir à API privada');
-  await m.falar('Olá','zz');checar(pedidos.length===1,'backoff deve evitar repetição imediata');
+  await m.falar('Olá','zz');checar(pedidos.filter(u=>!u.includes('/v2/')).length===1,'backoff deve evitar repetição imediata');
   rede=true;window.dispatchEvent(new Event('online'));
   const tocando=m.falar('Olá','zz');await tick();checar(m.lerEstadoAudio().fase==='tocando','deve recuperar após online');
   m.pausar();checar(m.lerEstadoAudio().fase==='pausado','pausa');await m.retomar();checar(m.lerEstadoAudio().fase==='tocando','retomada');
@@ -50,8 +52,9 @@ try{
   progresso.definirUsuarioProgresso('conta-a');checar(estudo.lerPratica('teste-isolamento')===null,'visitante não migra à conta');estudo.salvarPratica('teste-isolamento',2,2);
   progresso.definirUsuarioProgresso('conta-b');checar(estudo.lerPratica('teste-isolamento')===null,'contas não compartilham prática');
   progresso.definirUsuarioProgresso(null);checar(estudo.lerPratica('teste-isolamento').acertos===1,'visitante mantém resumo próprio');
+  const privAntes=pedidos.filter(u=>u.includes('/api/audio/')).length;const nova=m.falar('Nova','vv');await tick();checar(instancias.at(-1).src===`https://linvuu.com.br/audio/v2/vv/${m.hashTexto('Nova')}.mp3`,'voz nova (v2) tem prioridade sobre a antiga');checar(pedidos.filter(u=>u.includes('/api/audio/')).length===privAntes,'voz nova não vai à API privada');m.parar();await nova;
   window.fetch=original;window.Audio=OriginalAudio;
-  return {passed:['falha visível','backoff','recuperação online','pausa','retomada','velocidade','cancelamento resolve promessa','fila','repetição','403','retry após 403','cache volátil','limpeza de conta','isolamento da prática entre contas','cancelamento durante download'],requests:pedidos.length,limit:'HTMLAudioElement e rede simulados; não comprova som, CORS real, Android ou foco de áudio'};
+  return {passed:['voz nova (v2) com prioridade','falha visível','backoff','recuperação online','pausa','retomada','velocidade','cancelamento resolve promessa','fila','repetição','403','retry após 403','cache volátil','limpeza de conta','isolamento da prática entre contas','cancelamento durante download'],requests:pedidos.length,limit:'HTMLAudioElement e rede simulados; não comprova som, CORS real, Android ou foco de áudio'};
  });
- assert.equal(results.passed.length,15);fs.writeFileSync('design/apk/audio-rodada2-testes.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));
+ assert.equal(results.passed.length,16);fs.writeFileSync('design/apk/audio-rodada2-testes.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));
 }finally{await browser?.close();server.kill();}

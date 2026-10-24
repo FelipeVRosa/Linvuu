@@ -1,3 +1,4 @@
+import { APK } from '../plataforma';
 import type { Dicionario } from './pt-BR';
 
 const sessaoDe = (n: number) => `Lección ${Math.ceil(n / 4)} · sesión ${(n - 1) % 4 + 1}`;
@@ -20,7 +21,7 @@ export const es: Dicionario = {
     sub: 'Entra en el idioma desde la primera sesión: diálogos, audio y habla. La gramática y el vocabulario llegan cuando los necesitas, explicados en español claro.',
     botao: 'Hacer las 2 primeras lecciones gratis',
     verCursos: 'Ver los cursos →',
-    nota: (aulas: string) => `Sin tarjeta para empezar. Después de la 2.ª lección, R$ 139 al mes (reales brasileños; tu banco hace la conversión). Cursos: ${aulas}.`,
+    nota: (aulas: string) => APK ? 'Las dos primeras lecciones de cada curso son gratuitas.' : `Sin tarjeta para empezar. Después de la 2.ª lección, R$ 139 al mes (reales brasileños; tu banco hace la conversión). Cursos: ${aulas}.`,
     amostraRotulo: 'Ejemplo de una sesión', amostraAbas: 'Idioma del ejemplo', amostraFrase: 'Hola. Un café, por favor.', ouvir: 'Escuchar', inicioCaminho: 'Inicio del camino',
     amostraMeta: (min: number) => `Lección 1 · sesión 1 de 4 · ${min} minutos`,
   },
@@ -55,7 +56,7 @@ export const es: Dicionario = {
   faqItens: [
     { p: '¿Funciona si nunca he estudiado el idioma?', r: 'Sí. Cada curso empieza desde cero, por los sonidos y la escritura. Si ya sabes algo, abre el curso y elige la lección por su título: la lista muestra el tema de cada sesión.' },
     { p: '¿Qué puedo hacer en cada nivel?', r: 'A1, desde cero: presentarte, pedir lo que necesitas y entender frases cotidianas. A2, día a día: hablar de tu rutina, compras, el pasado y tus planes con frases sencillas. B1, independiente: desenvolverte en viajes, estudios y trabajo; contar experiencias y dar tu opinión. Los niveles son los del Marco Común Europeo de Referencia para las Lenguas (MCER). Linvuu emite un certificado propio por cada nivel completado; no sustituye a los exámenes oficiales.' },
-    { p: '¿Cuánto cuesta?', r: 'Las 2 primeras lecciones de cada curso son gratis, sin tarjeta. Después, la suscripción cuesta R$ 139 al mes (reales brasileños; tu tarjeta hace la conversión), con todos los cursos. Cancelas cuando quieras y puedes pedir el reembolso completo en 7 días.' },
+    { p: '¿Cuánto cuesta?', r: APK ? 'Las compras dentro de la aplicación aún no están disponibles.' : 'Las 2 primeras lecciones de cada curso son gratis, sin tarjeta. Después, la suscripción cuesta R$ 139 al mes (reales brasileños; tu tarjeta hace la conversión), con todos los cursos. Cancelas cuando quieras y puedes pedir el reembolso completo en 7 días.' },
     { p: '¿Cuánto tiempo necesito al día?', r: 'Cada lección tiene 4 sesiones de unos 30 minutos. Lo ideal es 1 hora al día, pero una sola sesión ya cuenta. Con una cuenta, tu progreso queda guardado y sigues en cualquier dispositivo.' },
     { p: '¿Voy a hablar con fluidez?', r: 'Linvuu te da método, práctica y constancia; el nivel que alcances depende de tus horas de estudio y de usar el idioma de verdad. Los cursos están pensados para llevarte de cero a una base sólida, hasta el B1.' },
     { p: '¿Todas las lecciones están explicadas en español?', r: 'Las explicaciones se están traduciendo lección a lección. La página de cada curso muestra cuántas lecciones ya están en español, y una sesión sin traducir lo avisa antes de empezar.' },
@@ -211,3 +212,4 @@ export const es: Dicionario = {
   linguas: { pt: 'portugués', en: 'inglés', es: 'español' },
   livro: { indisponivelIdioma: 'Este libro está escrito en portugués, para hablantes de portugués.' },
 };
+

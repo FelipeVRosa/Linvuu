@@ -1,0 +1,32 @@
+/* Exclusivo da Home Android. Nenhuma abertura bloqueia o estudo. */
+.app-dashboard .app-home-selecao{font-size:.8125rem;color:var(--fg-2);margin:1.25rem 0 0;line-height:1.5}
+.app-dashboard .app-idiomas{padding-top:.6rem;padding-bottom:1rem}
+.app-dashboard .app-home-proximo{display:flex;align-items:center;gap:.5rem;margin:.25rem 0 .65rem;color:var(--fg-2);font-size:.8125rem;font-weight:600;line-height:1.5}
+.app-home-proximo>span{font-size:1.25rem;color:var(--link)}
+.app-dashboard .app-missao{border:1px solid var(--linha-sobre-marca)}
+.app-dashboard .app-missao-meta{flex-wrap:wrap}
+.app-dashboard .app-avanco-topo{gap:1rem;align-items:flex-end}
+.app-home-percentual{font-size:1.75rem;font-variant-numeric:tabular-nums;font-weight:700;color:var(--link);line-height:1.1;flex-shrink:0}
+.app-home-percentual small{font-size:.875rem;margin-left:.1rem}
+.app-dashboard .app-avanco-topo>span:first-child{min-width:0}
+.app-home-identidade{margin-top:1.5rem;border:1px solid var(--linha);border-radius:1.25rem;background:var(--bg-elevado);overflow:clip}
+.app-home-identidade>summary{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:56px;padding:1rem;cursor:pointer;color:var(--fg-2);font-size:.875rem;line-height:1.5;list-style:none}
+.app-home-identidade>summary::-webkit-details-marker{display:none}
+.app-home-identidade>summary>span{font-size:1.25rem;flex-shrink:0;color:var(--link)}
+.app-home-identidade[open]>summary>span{transform:rotate(45deg)}
+.app-home-identidade>summary:focus-visible{outline-offset:-4px}
+.app-home-universo{position:relative;isolation:isolate;padding:1.25rem;background:var(--bg-marca);color:var(--fg-sobre-marca);overflow-wrap:anywhere}
+.app-home-universo .app-kicker{color:var(--fg-sobre-marca-2);margin:.75rem 0}
+.app-home-universo h2{font-size:1.75rem;max-width:15ch;margin:0;line-height:1.2;color:inherit}
+.app-home-universo>p:last-child{font-size:.9375rem;line-height:1.6;color:var(--fg-sobre-marca-2);margin:.75rem 0 0;max-width:33ch}
+.app-home-universo em{color:inherit;font-style:italic;font-weight:inherit}
+.app-home-marca{margin-bottom:1.25rem}
+.app-home-marca img{display:block;width:72px;height:72px}
+@media(prefers-reduced-motion:no-preference){
+ .app-home-identidade[open] .app-home-universo h2{animation:app-home-boasvindas .45s ease-out both}
+ .app-dashboard .app-acao-principal{transition:transform .15s ease,box-shadow .15s ease}
+ .app-dashboard .app-acao-principal:active{transform:scale(.985)}
+ @keyframes app-home-boasvindas{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
+}
+@media(max-width:360px){.app-dashboard .app-avanco-topo{flex-wrap:wrap}.app-home-percentual{font-size:1.5rem}}
+@media(prefers-reduced-motion:reduce){.app-home-identidade *{animation:none!important;transition:none!important}}

@@ -12,7 +12,7 @@ export function politicaCSP(extraMidia = ''): string {
     'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com'],
     'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
     'font-src': ["'self'", 'data:'],
-    'connect-src': ["'self'", ...firebase, ...(extraMidia ? [extraMidia] : [])],
+    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', ...firebase, ...(extraMidia ? [extraMidia] : [])],
     'frame-src': ['https://*.firebaseapp.com', 'https://accounts.google.com', 'https://*.google.com'],
     'object-src': ["'none'"],
     'base-uri': ["'self'"],
@@ -111,6 +111,7 @@ export function registrarSeguranca(app: Express, producao: boolean) {
   app.use('/api/billing', limitar('billing', 30, 60_000));
   app.use('/api/aula', limitar('aula', 120, 60_000));
   app.use('/api/evento', limitar('evento', 40, 60_000));
+  app.use('/api/newsletter', limitar('newsletter', 5, 60_000));
   app.use('/api/audio', limitar('audio', 600, 60_000));
   app.use('/api', limitar('api', 300, 60_000));
 }

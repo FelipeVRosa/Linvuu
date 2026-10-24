@@ -252,3 +252,60 @@ p { max-width: var(--max-texto); margin: 0 0 var(--s-4); }
 }
 @page paisagem { size: A4 landscape; margin: 14mm 18mm; }
 .lv-paisagem { page: paisagem; }
+
+/* ---------- 14. Tabela de matriz (casos, declinações, conjugações) ----------
+   Uso: cabeçalho em duas camadas (grupo + subgrupo), rótulo vertical à esquerda,
+   termo variável em negrito com traço ocre, faixas alternadas, bloco de exceções.
+   Acento tônico: grafite em negrito com o acento gráfico. Nunca vermelho. */
+.lv-matriz-wrap { overflow-x: auto; margin: var(--s-5) 0; }
+.lv-matriz { width: 100%; border-collapse: separate; border-spacing: 0; font-size: var(--t-small); }
+.lv-matriz th, .lv-matriz td { padding: 7px 12px; vertical-align: middle; text-align: left; }
+.lv-matriz thead th {
+  font: 600 var(--t-eyebrow)/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase;
+  background: var(--verde-floresta); color: var(--papel); border-left: 2px solid var(--papel);
+}
+.lv-matriz thead tr.lv-matriz-sub th { background: var(--verde-700); }
+.lv-matriz thead th:first-child, .lv-matriz tbody th.lv-rotulo { border-left: 0; }
+.lv-matriz tbody th.lv-rotulo {
+  background: var(--verde-floresta); color: var(--papel); width: 48px; padding: 0; text-align: center;
+  border-top: 2px solid var(--papel); border-bottom: 2px solid var(--papel);
+}
+.lv-rotulo-vertical {
+  display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg);
+  font: 600 var(--t-eyebrow)/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase;
+}
+.lv-matriz tbody td { background: var(--papel-claro); border-bottom: 1px solid var(--linha); }
+.lv-matriz tbody tr.lv-faixa td { background: var(--papel-escuro); }
+.lv-matriz tbody td.lv-celula-exemplo { font-family: var(--font-alvo); font-size: 19px; line-height: 1.35; }
+.lv-termo {
+  font-weight: 700; color: var(--grafite);
+  text-decoration: underline; text-decoration-color: var(--ocre);
+  text-decoration-thickness: 2px; text-underline-offset: 4px;
+}
+.lv-tonica { font-weight: 700; }
+.lv-matriz-nota { font-size: var(--t-caption); color: var(--fg-3); margin-top: var(--s-2); }
+
+/* ---------- 15. Mapa mental elaborado (A4 paisagem) ----------
+   Estrutura: duas colunas de ramos, nó central no meio. Cada ramo tem número,
+   título em Newsreader e subitens com traço ocre à esquerda. Máximo de 5 ramos. */
+.lv-mapa-rico { display: grid; grid-template-columns: 1fr 200px 1fr; gap: var(--s-5); align-items: start; }
+.lv-mapa-rico .lv-coluna { display: grid; gap: var(--s-4); align-content: start; }
+.lv-mapa-rico .lv-no-central { align-self: center; padding: var(--s-5) var(--s-4); font-size: var(--t-h3); }
+.lv-ramo { border-top: 1px solid var(--linha); padding-top: var(--s-3); }
+.lv-ramo-titulo { display: flex; align-items: center; gap: var(--s-2); font: 600 var(--t-h4)/1.2 var(--font-display); color: var(--verde-floresta); margin: 0 0 var(--s-2); }
+.lv-ramo-num {
+  display: inline-grid; place-items: center; flex: none;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--verde-floresta); color: var(--papel); font: 700 13px/1 var(--font-body);
+}
+.lv-ramo ul { list-style: none; margin: 0; padding: 0 0 0 var(--s-4); border-left: 2px solid var(--ocre); }
+.lv-ramo li { font-size: 14px; color: var(--fg-2); line-height: 1.35; padding: 2px 0; }
+.lv-ramo li strong { color: var(--fg-1); font-weight: 600; }
+.lv-ramo li .lv-alvo { font-size: 16px; color: var(--fg-1); }
+@media (max-width: 720px) {
+  .lv-mapa-rico { grid-template-columns: 1fr; }
+  .lv-matriz { font-size: var(--t-caption); }
+}
+@media print {
+  .lv-matriz tr, .lv-ramo { break-inside: avoid; }
+}

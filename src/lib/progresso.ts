@@ -1,3 +1,4 @@
+import { analytics } from './analytics';
 // Progresso local por usuário. A sincronização dos dias com o servidor fica em progressoConta.ts.
 const CHAVE = 'linvuu:progresso:v1';
 let usuarioAtual: string | null = null;
@@ -32,9 +33,11 @@ export const diaConcluido = (idioma: string, dia: number) => lerDias().includes(
 export const marcarDia = (idioma: string, dia: number, feito: boolean, registrar = true) => {
   try {
     const s = new Set(lerDias());
+    const jaFeito=s.has(`${idioma}:${dia}`);
     const k = `${idioma}:${dia}`;
     if (feito) s.add(k); else s.delete(k);
     localStorage.setItem(chaveLocal(CHAVE_DIAS), JSON.stringify([...s]));
+    if(feito&&!jaFeito&&registrar)void analytics.capture('lesson_completed',{study_language:idioma,lesson:dia});
     if (registrar && usuarioAtual) registrarPendenciaDia(idioma, dia, feito);
     window.dispatchEvent(new Event('linvuu:dias'));
   } catch { /* navegador sem armazenamento */ }

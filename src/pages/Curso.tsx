@@ -1,11 +1,11 @@
+import { useDestinoSessao } from '../lib/useDestinoSessao';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
-import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, cursoDeOutroPublico, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
+import { DIAS, FASES, IDIOMAS_GRAMATICA, coberturaDoCurso, diaDoCurso, gruposDoCurso, inicioDoNivel, NIVEL_CURTO, NIVEL_LABEL, STATUS_AULA, getCurso, statusDoCurso } from '../lib/content';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
-import { OutroIdioma } from '../components/OutroIdioma';
 import { SITE_URL } from '../config/site';
-import { LOCALE, LOCALES, urlEm, useT } from '../i18n';
+import { LOCALE, LOCALES, useT } from '../i18n';
 import { gratis } from '../config/planos';
 import { pontoDeRetomada, useDiasFeitos } from '../lib/retomar';
 import NaoEncontrada from './NaoEncontrada';
@@ -15,14 +15,15 @@ import { LIVROS } from '../config/livros';
 import { Capacitor } from '@capacitor/core';
 
 export default function Curso() {
+  const destino = useDestinoSessao();
   const { id } = useParams();
   const [params] = useSearchParams();
   const t = useT();
   const curso = getCurso(id);
   const feitos = useDiasFeitos(curso?.id);
-  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo));
+  usePageTitle(curso && curso.id !== 'br' ? t.cursoPagina.tituloSeo(curso.nome) : undefined, curso?.descricao, LOCALES.filter((l) => l.cursoOculto !== curso?.id).map((l) => l.codigo), !curso || curso.status === 'em-breve' || curso.id === LOCALE.cursoOculto);
   if (!curso) return <NaoEncontrada />;
-  if (curso.id === 'br') return LOCALE.codigo === 'pt-BR' ? <OutroIdioma para="en" /> : <CursoBr />;
+  if (curso.id === 'br') return <CursoBr />;
 
   const stats = statusDoCurso(curso.id);
   const nivel = params.get('nivel');
@@ -43,7 +44,7 @@ export default function Curso() {
   const website = import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform();
   const retomar = ret && !inicio && (
         <section className="curso-retomar" aria-label={t.cursoPagina.feitas(feitos.size, ret.total)}>
-          <Link to={`/curso/${curso.id}/dia/${feitos.size ? ret.dia : 1}`} className="btn btn-primary">
+          <Link to={destino(curso.id, feitos.size ? ret.dia : 1)} className="btn btn-primary">
             {feitos.size ? t.cursoPagina.continuar(ret.dia, ret.titulo) : t.cursoPagina.comecar}
           </Link>
           {feitos.size > 0 && (
@@ -82,17 +83,14 @@ export default function Curso() {
       {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}
       {!website && retomar}
 
-      {cursoDeOutroPublico(curso.id) && (
-        <p className="nota">{t.cursoPagina.naoParaVoce(curso.nome)} <a href={urlEm('pt-BR')} hrefLang="pt-BR">Português →</a></p>
-      )}
-      {cobertura && !cursoDeOutroPublico(curso.id) && <p className="nota">{cobertura}</p>}
+      {cobertura && <p className="nota">{cobertura}</p>}
 
       {inicio && (
         <section className="aviso aviso-inicio">
           <h2>{t.cursoPagina.partida(inicio.dia)}</h2>
           <p>{t.cursoPagina.sugerimos(NIVEL_LABEL[nivel!] ?? nivel!, inicio.dia, tituloInicio)}</p>
           {inicio.aviso && <p>{inicio.aviso}</p>}
-          <Link to={`/curso/${curso.id}/dia/${inicio.dia}`} className="btn btn-primary">{t.cursoPagina.irPara(inicio.dia)}</Link>
+          <Link to={destino(curso.id, inicio.dia)} className="btn btn-primary">{t.cursoPagina.irPara(inicio.dia)}</Link>
         </section>
       )}
       {stats && stats.publicadas < stats.total && <p className="nota">{t.cursoPagina.producao}</p>}
@@ -120,7 +118,7 @@ export default function Curso() {
               const st = stats?.status[d.dia - 1] ?? 'planejada';
               return (
                 <li key={d.dia} className={feitos.has(d.dia) ? 'dia-feito' : undefined}>
-                  <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
+                  <Link to={destino(curso.id, d.dia)}>
                     <span className="dia-n">{feitos.has(d.dia) ? <span aria-label={t.cursoPagina.concluida}>✓</span> : d.dia}</span>
                     <span className="dia-t">{d.titulo}<small>{d.objetivo} · {gratis(d.dia) ? t.cursoPagina.gratis : t.cursoPagina.assinantes}</small></span>
                     {st !== 'publicada' && <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>}
@@ -148,7 +146,7 @@ export default function Curso() {
               const st = stats?.status[d.dia - 1] ?? 'planejada';
               return (
                 <li key={d.dia}>
-                  <Link to={`/curso/${curso.id}/dia/${d.dia}`}>
+                  <Link to={destino(curso.id, d.dia)}>
                     <span className="dia-n">{d.dia}</span>
                     <span className="dia-t">{d.titulo}<small>{d.objetivo}</small></span>
                     {st !== 'publicada' && <span className={`pill pill-aula-${st}`}>{STATUS_AULA[st]}</span>}

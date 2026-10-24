@@ -2,11 +2,11 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Navegacao } from '../components/Navegacao';
 import { Gramatica as BlocoGramatica } from '../components/Sessao';
-import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, fonteDoCurso, getCurso } from '../lib/content';
+import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, fonteDoCurso, explicacaoDoCurso, getCurso } from '../lib/content';
 import { LOCALE, useT } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
-import { Paywall } from '../components/Paywall';
+import { Paywall } from '@plataforma/Paywall';
 import { api } from '../lib/api';
 import { carregarAuth } from '../lib/firebase';
 import { useAuth } from '../lib/AuthContext';
@@ -14,7 +14,7 @@ import { useAuth } from '../lib/AuthContext';
 type Topico = Omit<Extract<Bloco, { tipo: 'gramatica' }>, 'tipo' | 'min' | 'tag'> & { id: string; categoria: string; aula: number; aulaTitulo: string; sessao: string; dia: number; /** língua do texto quando o tópico ainda não foi traduzido */ explicacaoEm?: string };
 interface Pacote { idioma: string; categorias: string[]; topicos: Topico[]; completo: boolean; bloqueados: number; semTraducao?: number }
 // Abas na ordem da vitrine do idioma do site (o curso de português para estrangeiros só aparece em inglês e espanhol).
-const IDIOMAS = CURSOS_ATIVOS.map((c) => c.id).filter((k) => IDIOMAS_GRAMATICA.includes(k));
+const IDIOMAS = [...new Set([...CURSOS_ATIVOS.map((c) => c.id), ...IDIOMAS_GRAMATICA])];
 
 export default function Gramatica() {
   const { id } = useParams();
@@ -31,7 +31,8 @@ export default function Gramatica() {
     setPacote(undefined); setFalhou(false);
     (async () => {
       const token = usuario ? await (await carregarAuth()).auth.currentUser?.getIdToken() : undefined;
-      const l = fonteDoCurso(id) === LOCALE.explicacao ? '' : `?l=${LOCALE.explicacao}`;
+      const explicacao = explicacaoDoCurso(id);
+      const l = fonteDoCurso(id) === explicacao ? '' : `?l=${explicacao}`;
       const r = await fetch(api(`/api/gramatica/${id}${l}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
       if (!r.ok) throw new Error(String(r.status));
       const j = (await r.json()) as Pacote;
@@ -42,7 +43,7 @@ export default function Gramatica() {
   const lista = useMemo(() => (pacote ? pacote.topicos.filter((t) => cat === 'todas' || t.categoria === cat) : []), [pacote, cat]);
   const t = useT();
   const g = t.gramaticaPagina;
-  usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined);
+  usePageTitle(curso ? g.titulo(curso.nome) : g.tituloGeral, curso ? g.descricao(curso.nome) : undefined, undefined, curso?.id === LOCALE.cursoOculto || curso?.status === 'em-breve');
   if (!id || !curso || !IDIOMAS.includes(curso.id)) return <Navigate to={`/gramatica/${IDIOMAS[0]}`} replace />;
 
   return (
@@ -65,7 +66,7 @@ export default function Gramatica() {
         {lista.map((x) => (
           <details key={x.id} className="topico">
             <summary><strong>{x.titulo}</strong><span className="topico-cat">{x.categoria}</span><span className="topico-aula">{g.aula(x.aula)}</span></summary>
-            <BlocoGramatica b={{ tipo: 'gramatica', min: 0, ...x }} idioma={curso.id} explicacao={x.explicacaoEm} />
+            <BlocoGramatica b={{ tipo: 'gramatica', min: 0, ...x }} idioma={curso.id} explicacao={x.explicacaoEm ?? explicacaoDoCurso(curso.id)} />
             <p className="topico-link"><Link to={`/curso/${curso.id}/dia/${x.dia}`}>{g.praticar(x.aula, x.sessao.replace('S', ''))}</Link></p>
           </details>
         ))}
@@ -80,3 +81,4 @@ export default function Gramatica() {
     </div>
   );
 }
+

@@ -19,10 +19,18 @@
     "testar:seguranca": "node scripts/testar-seguranca.mjs && node --import tsx scripts/testar-ip.ts",
     "validar:design": "node scripts/validar-design.mjs",
     "app:android": "node scripts/app-android.mjs",
-    "testar:progresso": "node --import tsx scripts/testar-progresso.ts"
+    "testar:progresso": "node --import tsx scripts/testar-progresso.ts",
+    "build:website": "node scripts/build-plataforma.mjs website",
+    "build:apk": "node scripts/build-plataforma.mjs apk",
+    "testar:plataformas": "node scripts/testar-plataformas.mjs",
+    "lint:apk": "tsc --noEmit -p tsconfig.apk.json",
+    "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
+    "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
+    "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\""
   },
   "dependencies": {
     "@capacitor/android": "^8.5.3",
+    "@capacitor/app": "^8.1.2",
     "@capacitor/core": "^8.5.3",
     "@fontsource-variable/literata": "^5.3.0",
     "@fontsource-variable/newsreader": "^5.3.0",

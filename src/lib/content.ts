@@ -7,6 +7,7 @@ import type { InfoAula, SessaoAula } from './aulas';
 import { api } from './api';
 import { LOCALE, T } from '../i18n';
 import type { Explicacao } from '../i18n/locales';
+import { preferenciaExplicacao, resolverExplicacao, type IdiomasDaAula } from '../i18n/ensino';
 
 export type StatusCurso = 'disponivel' | 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
@@ -36,26 +37,29 @@ export const CURSOS: Curso[] = CURSOS_BASE.map(({ i18n, ...c }) => ({ ...c, ...(
 export const FASES = trilhaJson.fases as Fase[];
 export const DIAS = trilhaJson.dias as DiaMestre[];
 type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, string> };
-/** Traduções dos títulos e lista de aulas traduzidas do idioma do site (content/indice.<en|es>.json), carregadas antes de abrir o site. */
-let TRADUCOES: Record<string, Traducao> = {};
+/** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.<en|es>.json), carregadas antes de abrir o site. */
+let TRADUCOES: Partial<Record<Explicacao, Record<string, Traducao>>> = {};
 const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
 export async function carregarTraducoes() {
-  const f = ARQUIVOS_TR[`../../content/indice.${LOCALE.explicacao}.json`];
-  if (f) TRADUCOES = await f().catch(() => ({}));
+  await Promise.all((['en', 'es'] as const).map(async (l) => {
+    const f = ARQUIVOS_TR[`../../content/indice.${l}.json`];
+    TRADUCOES[l] = f ? await f().catch(() => ({})) : {};
+  }));
 }
 const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; publicadas: number; emProducao: number; planejadas: number; status: StatusAula[]; sobrescritos: Record<string, { t: string; o: string }>; grupos?: { aula: number; titulo: string; nivel?: string; dias: [number, number] }[]; fonte?: Explicacao; amostra?: { min: number; blocos: [string, number][] } }>;
 
 /** Língua em que as explicações do curso foram escritas (o curso de português para estrangeiros foi escrito em inglês). */
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
-const traducao = (id: string): Traducao | undefined => (fonteDoCurso(id) === LOCALE.explicacao ? undefined : TRADUCOES[id]);
+export const explicacaoDoCurso = (id: string): Explicacao => preferenciaExplicacao(id, fonteDoCurso(id));
+const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
 /** Quantas aulas do curso estão explicadas no idioma do site (todas, quando o curso foi escrito nele). */
 export const coberturaDoCurso = (id: string) => {
   const total = INDICE[id]?.grupos?.length ?? 0;
-  if (fonteDoCurso(id) === LOCALE.explicacao) return { traduzidas: total, total, reserva: LOCALE.explicacao };
+  if (fonteDoCurso(id) === explicacaoDoCurso(id)) return { traduzidas: total, total, reserva: explicacaoDoCurso(id) };
   return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
 };
 /** A aula tem explicação no idioma do site? */
-export const aulaTraduzida = (id: string, aula: number) => fonteDoCurso(id) === LOCALE.explicacao || !!traducao(id)?.aulas.includes(aula);
+export const aulaTraduzida = (id: string, aula: number, explicacao = explicacaoDoCurso(id)) => fonteDoCurso(id) === explicacao || !!traducao(id, explicacao)?.aulas.includes(aula);
 
 /** Título e objetivo do dia para um curso (alguns idiomas têm aulas próprias no lugar do texto-mestre). */
 export const diaDoCurso = (id: string, d: DiaMestre) => {
@@ -115,20 +119,20 @@ const comNovaTentativa = async <T,>(f: () => Promise<T>): Promise<T> => {
   try { return await f(); } catch { await new Promise((ok) => setTimeout(ok, 400)); return f(); }
 };
 
-/** Carrega a sessão com a explicação no idioma do site; sem tradução, devolve a versão escrita (com `semTraducao`). */
-export const carregarAula = async (idioma: string, dia: number): Promise<Aula & { semTraducao?: Explicacao }> => {
+/** Carrega a sessão com a explicação escolhida por curso; sem tradução, devolve a versão escrita (com `semTraducao`). */
+export const carregarAula = async (idioma: string, dia: number, explicacao = explicacaoDoCurso(idioma)): Promise<Aula & { semTraducao?: Explicacao; idiomas: IdiomasDaAula }> => {
   const nnn = String(dia).padStart(3, '0');
-  const pasta = fonteDoCurso(idioma) === LOCALE.explicacao ? '' : `${LOCALE.explicacao}/`;
+  const pasta = fonteDoCurso(idioma) === explicacao ? '' : `${explicacao}/`;
   const grupo = INDICE[idioma]?.grupos?.find((g) => dia >= g.dias[0] && dia <= g.dias[1]);
-  const traduzida = !pasta || (grupo ? aulaTraduzida(idioma, grupo.aula) : false);
+  const traduzida = !pasta || (grupo ? aulaTraduzida(idioma, grupo.aula, explicacao) : false);
   const key = `../../content/idiomas/${idioma}/${traduzida ? pasta : ''}dia-${nnn}.json`;
-  const marcar = (a: Aula) => (traduzida ? a : { ...a, semTraducao: fonteDoCurso(idioma) });
+  const marcar = (a: Aula) => ({ ...a, ...(!traduzida ? { semTraducao: fonteDoCurso(idioma) } : {}), idiomas: { interface: LOCALE.codigo, estudado: idioma, explicacaoSolicitada: explicacao, explicacaoEfetiva: resolverExplicacao(fonteDoCurso(idioma), explicacao, traduzida) } });
   if (aulas[key]) return marcar(await comNovaTentativa(() => aulas[key]()));
   if (dia <= SESSOES_GRATIS) throw new Error('aula não encontrada');
   return comNovaTentativa(async () => {
     const { auth } = await carregarAuth();
     const token = await auth.currentUser?.getIdToken();
-    const r = await fetch(api(`/api/aula/${idioma}/${dia}${traduzida && pasta ? `?l=${LOCALE.explicacao}` : ''}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+    const r = await fetch(api(`/api/aula/${idioma}/${dia}${traduzida && pasta ? `?l=${explicacao}` : ''}`), { headers: token ? { Authorization: `Bearer ${token}` } : {} });
     if (!r.ok) throw new Error(`aula não encontrada (${r.status})`);
     return marcar(await r.json());
   });

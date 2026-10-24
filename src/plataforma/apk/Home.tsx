@@ -12,9 +12,9 @@ import './home-lote2.css';
 import { useReforco } from './useReforco';
 
 const detalhes = {
- 'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'O mundo tem muito a dizer.', texto: 'Entre na conversa.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu; compras seguem desativadas neste teste.' },
- en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'The world has so much to say.', texto: 'Join the conversation.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned; purchases remain disabled in this test.' },
- es: { selecao: 'Elige tu idioma de estudio', passo: 'Próximo paso', marca: 'Te damos la bienvenida a Linvuu', titulo: 'El mundo tiene mucho que decir.', texto: 'Entra en la conversación.', progresso: 'de tu recorrido completado', completa: 'Recorrido completado. Sigue practicando.', rever: 'Repasar el recorrido', reverGratis: 'Repasar las sesiones gratuitas', fimGratis: 'Completaste las sesiones gratuitas de este idioma. Refuerza lo aprendido; las compras siguen desactivadas en esta prueba.' },
+ 'pt-BR': { selecao: 'Escolha seu idioma de estudo', passo: 'Próximo passo', marca: 'Boas-vindas à Linvuu', titulo: 'O mundo tem muito a dizer.', texto: 'Entre na conversa.', progresso: 'do percurso concluído', completa: 'Percurso concluído. Continue praticando.', rever: 'Rever o percurso', reverGratis: 'Revisar as sessões gratuitas', fimGratis: 'Você concluiu as sessões gratuitas deste idioma. Reforce o que aprendeu.' },
+ en: { selecao: 'Choose your learning language', passo: 'Next step', marca: 'Welcome to Linvuu', titulo: 'The world has so much to say.', texto: 'Join the conversation.', progresso: 'of your path completed', completa: 'Path completed. Keep practising.', rever: 'Review your path', reverGratis: 'Review the free sessions', fimGratis: 'You completed the free sessions in this language. Practise what you learned.' },
+ es: { selecao: 'Elige tu idioma de estudio', passo: 'Próximo paso', marca: 'Te damos la bienvenida a Linvuu', titulo: 'El mundo tiene mucho que decir.', texto: 'Entra en la conversación.', progresso: 'de tu recorrido completado', completa: 'Recorrido completado. Sigue practicando.', rever: 'Repasar el recorrido', reverGratis: 'Repasar las sesiones gratuitas', fimGratis: 'Completaste las sesiones gratuitas de este idioma. Refuerza lo aprendido.' },
 };
 
 export default function Home() {
@@ -59,6 +59,5 @@ export default function Home() {
     <p className="app-kicker">Linvuu</p><h2>{d.titulo}</h2><p><em>{d.texto}</em></p>
    </div>
   </details>
-  <p className="app-rodape-teste">{x.teste}</p>
  </div>;
 }

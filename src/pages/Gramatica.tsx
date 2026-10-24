@@ -6,7 +6,7 @@ import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, fonteDoCurso, explicacaoDoCurso, getC
 import { LOCALE, useT } from '../i18n';
 import { usePageTitle } from '../lib/usePageTitle';
 import type { Bloco } from '../lib/aulas';
-import { Paywall } from '@plataforma/Paywall';
+import { Paywall } from '@plataforma/Bloqueio';
 import { api } from '../lib/api';
 import { carregarAuth } from '../lib/firebase';
 import { useAuth } from '../lib/AuthContext';

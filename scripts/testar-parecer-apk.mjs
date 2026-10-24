@@ -43,7 +43,7 @@ try {
    }
    await page.setViewportSize({width:320,height:640});
   }
-  if(path==='/curso/en/dia/9')assert.ok(await page.locator('.paywall a[href="/curso/en"]').isVisible(),'bloqueio oferece revisão');
+  if(path==='/curso/en/dia/9')assert.ok(await page.locator('.acesso-limitado a[href="/curso/en"]').isVisible(),'bloqueio oferece revisão');
   if(path==='/curso/en/dia/4'){
    await page.locator('.app-sessao').waitFor();
    await page.locator('.app-navegador-etapas summary').click();

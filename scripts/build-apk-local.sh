@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Build local e rastreável do APK. Substitui o CI enquanto o GitHub Actions estiver parado.
 #   scripts/build-apk-local.sh            APK "minificado" (R8, chave de teste, sufixo .teste) para instalar e testar
-#   scripts/build-apk-local.sh --loja     AAB de release assinado com a chave de upload (ainda bloqueado no Gradle; ver abaixo)
+#   Release de loja: use scripts/build-release.sh (AAB assinado com a sua chave de upload, via android/keystore.properties).
 # Exige árvore Git limpa e ANDROID_VERSION_CODE inteiro e maior que o do último manifesto. Grava dist-builds/<arquivo>.manifest.json
 # com SHA-256, commit, versionCode, versionName e a contagem de DEX/métodos. Nunca imprime senhas; a chave vem de variáveis de ambiente.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-modo="teste"; [ "${1:-}" = "--loja" ] && modo="loja"
+modo="teste"; [ "${1:-}" = "--loja" ] && { echo "Use scripts/build-release.sh para a versão de loja." >&2; exit 1; }
 
 [ -z "$(git status --porcelain)" ] || { echo "Árvore Git suja: faça commit ou stash antes de gerar um build rastreável." >&2; exit 1; }
 : "${ANDROID_VERSION_CODE:?Defina ANDROID_VERSION_CODE (inteiro, sempre maior que o anterior)}"

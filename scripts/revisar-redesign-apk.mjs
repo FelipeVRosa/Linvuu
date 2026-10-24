@@ -12,7 +12,7 @@ try{
  for(const locale of ['', '/en', '/es'])for(const width of [320,360,390,393,412]){
   const context=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   const course=locale?'br':'en';
-  for(const [name,path,ready]of [['inicio','/','.app-missao'],['catalogo','/cursos','.app-grade'],['percurso',`/curso/${course}`,'.app-unidade'],['aula',`/curso/${course}/dia/1`,'.app-sessao'],['conta','/assinatura','.app-conta-mobile'],['acesso',`/curso/${course}/dia/9`,'.paywall']]){
+  for(const [name,path,ready]of [['inicio','/','.app-missao'],['catalogo','/cursos','.app-grade'],['percurso',`/curso/${course}`,'.app-unidade'],['aula',`/curso/${course}/dia/1`,'.app-sessao'],['conta','/assinatura','.app-conta-mobile'],['acesso',`/curso/${course}/dia/9`,'.acesso-limitado']]){
    await page.goto(base+locale+path);await page.locator(ready).first().waitFor();await page.evaluate(()=>document.fonts.ready);
    const original=await page.evaluate(()=>[document.documentElement.scrollWidth,innerWidth]);assert.ok(original[0]<=original[1]+1,`Overflow normal ${locale} ${name} ${width}: ${original}`);
    if(!locale&&width===390)await page.screenshot({path:`design/apk/v3-${name}.png`,fullPage:false});

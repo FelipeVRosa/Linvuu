@@ -6,7 +6,7 @@ import { Navegacao } from '../components/Navegacao';
 import { Sessao } from '../components/Sessao';
 import { AreaAluno, MarcarDia } from '../components/AreaAluno';
 import { usePageTitle } from '../lib/usePageTitle';
-import { Paywall } from '@plataforma/Paywall';
+import { Paywall } from '@plataforma/Bloqueio';
 import { useAssinatura } from '../lib/acesso';
 import { textos } from '../lib/textos';
 import { gratis, SESSOES_POR_AULA } from '../config/planos';

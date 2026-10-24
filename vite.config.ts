@@ -17,6 +17,22 @@ export default defineConfig(({ mode }) => {
   if(apk && env.VITE_BILLING_MODE==='revenuecat-test-store' && !env.VITE_REVENUECAT_TEST_KEY?.startsWith('test_'))throw new Error('Test Store exige chave pública test_; nunca use chave de produção');
   // Cobrança dentro do app só existe se o build pedir de forma explícita (Test Store ou Google Play autorizado).
   const cobrancaNoApk = play || env.VITE_BILLING_MODE === 'revenuecat-test-store';
+  // v1 sem compras: o app não carrega textos de plano, preço ou renovação. No site os dicionários seguem completos.
+  const dicionariosApk = {
+    name: 'dicionarios-apk-sem-precos',
+    enforce: 'pre' as const,
+    transform(code: string, id: string) {
+      const arq = id.split('?')[0].replaceAll('\\', '/');
+      if (!/\/src\/i18n\/(?:pt-BR|en|es)\.ts$/.test(arq)) return;
+      const frases = /renova[çc][ãa]o autom[áa]tica|automatic renewal|renovaci[óo]n autom[áa]tica|LINVUU50|no Pix|on Pix|con Pix|assine a Linvuu|subscribe to Linvuu|suscr[íi]bete a Linvuu|Escolha como pagar|Choose how to pay|Elige c[óo]mo pagar|paywall/i;
+      const literal = /'(?:[^'\\\n]|\\.)*'|`(?:[^`\\]|\\.)*`/g;
+      const chavesPreco = /\b(preco|precoAssinatura|mensalTxt|exAluno|noPix|tresMeses)(\s*:\s*)(?:\([^)]*\)\s*(?::\s*\w+\s*)?=>\s*)?('(?:[^'\\\n]|\\.)*'|`(?:[^`\\]|\\.)*`)/g;
+      let saida = code.replace(chavesPreco, (_m, chave: string, sep: string) => `${chave}${sep}''`);
+      saida = saida.replace(literal, (lit) => (frases.test(lit) ? "''" : lit));
+      saida = saida.replace(/\bpaywall(\w*)(\s*:)/g, 'bloqueio$1$2');
+      return { code: saida, map: null };
+    },
+  };
   return {
   define: { 'import.meta.env.VITE_ALVO': JSON.stringify(alvo) },
   resolve: { alias: { '@plataforma': path.resolve('src/plataforma', alvo) } },
@@ -35,7 +51,12 @@ export default defineConfig(({ mode }) => {
         .replace(/<title>[^<]*<\/title>/, '<title>Linvuu</title>');
     },
     transform(code, id) {
-      if(id.split('?')[0]===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
+      const arq = id.split('?')[0];
+      // O app só leva a capa de 600 px: tira a variante de 900 px do srcSet e do tamanho grande.
+      if (arq === path.resolve('src/components/Vitrine.tsx') || arq === path.resolve('src/pages/Livros.tsx')) {
+        return { code: code.replace(/, \$\{[^`]*?\.replace\('-600', '-900'\)\} 900w/g, '').replace('-${tamanho}', '-600'), map: null };
+      }
+      if(arq===path.resolve('src/main.tsx')) return { code: `import { prepararArmazenamento } from './plataforma/apk/armazenamento';\nawait prepararArmazenamento();\n${code}`, map:null };
     },
     resolveId(source, importer) {
       // Telas compartilhadas que têm versão própria no app (só no build APK).
@@ -80,8 +101,13 @@ export default defineConfig(({ mode }) => {
         if (['audio', 'mascots', 'fotos', 'sitemap.xml', 'robots.txt'].includes(nome)) continue;
         fs.cpSync(path.join('public', nome), path.join('dist-apk', nome), { recursive: true });
       }
+      // Capas: o app usa só a de 600 px; a de 900 px fica apenas no site.
+      const livros = path.join('dist-apk', 'livros');
+      if (fs.existsSync(livros)) for (const f of fs.readdirSync(livros)) if (/-900\.webp$/.test(f)) fs.rmSync(path.join(livros, f));
+      {
+      }
     },
-  }] : [])],
+  }, dicionariosApk] : [])],
   server: {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
     hmr: process.env.DISABLE_HMR !== 'true',

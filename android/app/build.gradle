@@ -4,7 +4,13 @@ apply plugin: 'com.android.application'
 def testKeystore = System.getenv('LINVUU_TEST_KEYSTORE')
 def testPassword = System.getenv('LINVUU_TEST_PASSWORD')
 def suppliedCode = System.getenv('ANDROID_VERSION_CODE')
-def suppliedName = System.getenv('ANDROID_VERSION_NAME') ?: '0.1.local'
+def suppliedName = System.getenv('ANDROID_VERSION_NAME') ?: '1.0.0'
+
+// Assinatura de produção: arquivo local fora do Git (ver keystore.properties.example). A chave nunca entra no repositório.
+def ksFile = rootProject.file('keystore.properties')
+def ksProps = new Properties()
+if (ksFile.exists()) ksFile.withInputStream { ksProps.load(it) }
+def producaoConfigurada = ['storeFile', 'storePassword', 'keyAlias', 'keyPassword'].every { ksProps.getProperty(it) }
 if ((testKeystore && !testPassword) || (!testKeystore && testPassword)) throw new GradleException('Configuração incompleta da assinatura de testes')
 if (System.getenv('CI') == 'true' && (!testKeystore || !suppliedCode)) throw new GradleException('CI exige assinatura estável e versão identificável')
 if (suppliedCode && (!(suppliedCode ==~ /[0-9]+/) || suppliedCode.toLong() < 1 || suppliedCode.toLong() > 2100000000)) throw new GradleException('ANDROID_VERSION_CODE inválido')
@@ -27,6 +33,14 @@ android {
         }
     }
     signingConfigs {
+        producao {
+            if (producaoConfigurada) {
+                storeFile rootProject.file(ksProps.getProperty('storeFile'))
+                storePassword ksProps.getProperty('storePassword')
+                keyAlias ksProps.getProperty('keyAlias')
+                keyPassword ksProps.getProperty('keyPassword')
+            }
+        }
         teste {
             if (testKeystore) {
                 storeType 'PKCS12'
@@ -61,11 +75,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             if (testKeystore) signingConfig signingConfigs.teste
         }
+        // Loja: AAB com R8 ativo, com.linvuu.app, assinado pela chave de upload do dono (keystore.properties).
         release {
             debuggable false
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (producaoConfigurada) signingConfig signingConfigs.producao
         }
     }
 }
@@ -99,10 +115,9 @@ try {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
 }
 
-// A distribuição da loja permanece bloqueada até existir verificação de assinatura
-// de produção e do manifesto final. A chave de testes nunca serve para release.
+// Release de loja só compila com a chave de upload configurada em keystore.properties (nunca com a chave de testes).
 gradle.taskGraph.whenReady { graph ->
-    if (graph.allTasks.any { it.project == project && it.name ==~ /(?i).*(assemble|bundle|package).*release.*/ }) {
-        throw new GradleException('Release de loja bloqueada: configurar assinatura de produção e validar manifesto final antes de habilitar esta tarefa')
+    if (graph.allTasks.any { it.project == project && it.name ==~ /(?i).*(assemble|bundle|package).*release.*/ } && !producaoConfigurada) {
+        throw new GradleException('Release de loja bloqueada: crie android/keystore.properties a partir de keystore.properties.example (chave de upload do dono)')
     }
 }

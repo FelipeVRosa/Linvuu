@@ -5,7 +5,7 @@ import { appTextos } from './textos';
 import { LOCALE } from '../../i18n';
 import { SESSOES_GRATIS } from '../../config/planos';
 import { comprasPlayDisponiveis } from './comprasPlay';
-export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
+export function AcessoLimitado({ curso, indisponivel, idioma }: { curso: string; indisponivel?: boolean; idioma?: string }) {
   const t = useT(), a = appTextos();
   const { usuario } = useAuth();
   const local = useLocation();
@@ -15,7 +15,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
     en: {titulo:'Keep studying with the free sessions',descricao:`The first ${SESSOES_GRATIS} sessions of this course are free. Return to them to study or review.`,revisar:'View free sessions',conta:'Signing in checks your account access; it does not unlock paid content by itself.'},
     es: {titulo:'Sigue estudiando con las sesiones gratuitas',descricao:`Las primeras ${SESSOES_GRATIS} sesiones de este curso son gratuitas. Puedes volver a ellas para estudiar o repasar.`,revisar:'Ver sesiones gratuitas',conta:'Iniciar sesión permite consultar el acceso de tu cuenta; no desbloquea contenido de pago por sí solo.'},
   }[LOCALE.codigo];
-  return <section className="paywall" aria-label={curso}>
+  return <section className="acesso-limitado" aria-label={curso}>
     <h1>{x.titulo}</h1>
     <p>{x.descricao}</p>
     <p>{indisponivel ? t.assinatura.indisponivel : usuario ? a.semAcesso : a.bloqueado}</p>

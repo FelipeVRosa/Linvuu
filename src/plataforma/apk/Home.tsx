@@ -59,6 +59,5 @@ export default function Home() {
     <p className="app-kicker">Linvuu</p><h2>{d.titulo}</h2><p><em>{d.texto}</em></p>
    </div>
   </details>
-  <p className="app-rodape-teste">{x.teste}</p>
  </div>;
 }

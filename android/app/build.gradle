@@ -44,10 +44,22 @@ android {
             resValue 'string', 'app_name', 'Linvuu Teste'
             if (testKeystore) signingConfig signingConfigs.teste
         }
+        // Mesmo conjunto de otimizações da loja (R8), mas assinado com a chave de teste e com o sufixo .teste.
+        // Serve para medir DEX e testar no aparelho sem desbloquear a tarefa de release.
+        minificado {
+            initWith debug
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            matchingFallbacks = ['debug']
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (testKeystore) signingConfig signingConfigs.teste
+        }
         release {
             debuggable false
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }

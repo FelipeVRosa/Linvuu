@@ -115,7 +115,8 @@ async function sintetizar(l, estado) {
 
 async function main() {
   let lista = carregarLista();
-  const existe = (l) => fs.existsSync(path.join(l.publico ? dirPub : dirPriv, l.arquivo));
+  // Existe em v2 em qualquer um dos lados: o índice público antigo (Edge) foi podado, então a classificação público/privado não é confiável para decidir se falta gerar.
+  const existe = (l) => fs.existsSync(path.join(dirPub, l.arquivo)) || fs.existsSync(path.join(dirPriv, l.arquivo));
   let pend = lista.filter((l) => !existe(l));
   if (lado === 'publico') pend = pend.filter((l) => l.publico);
   if (lado === 'privado') pend = pend.filter((l) => !l.publico);

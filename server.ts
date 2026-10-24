@@ -10,6 +10,7 @@ import { registrarCobranca, registrarLivroProtegido, registrarNotificacoesCobran
 import { registrarProgresso } from './server/progresso';
 import { registrarMedicao } from './server/medicao';
 import { registrarNewsletter } from './server/newsletter';
+import { registrarExclusao } from './server/exclusao';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { registrarProntidao } from './server/prontidao';
@@ -48,6 +49,7 @@ async function startServer() {
   registrarProgresso(app);
   registrarMedicao(app);
   registrarNewsletter(app);
+  registrarExclusao(app);
   fecharApi(app);
 
   // -------------------------------------------------------------

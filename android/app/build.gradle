@@ -37,6 +37,12 @@ android {
             }
         }
     }
+    packagingOptions {
+        resources {
+            // Resíduo de depuração das coroutines do Kotlin; não serve a nada no aparelho.
+            excludes += ['DebugProbesKt.bin', '/META-INF/*.version', '/kotlin-tooling-metadata.json']
+        }
+    }
     buildTypes {
         debug {
             applicationIdSuffix '.teste'

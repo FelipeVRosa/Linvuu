@@ -6,6 +6,7 @@ import { EMAIL_OFICIAL } from '../config/site';
 import { LOCALE, useT } from '../i18n';
 import { useAuth } from '../lib/AuthContext';
 import { EXCLUSAO } from '../lib/exclusaoConta';
+import { ExclusaoDireta } from '../components/ExclusaoDireta';
 import './excluir-conta.css';
 
 export default function ExcluirConta() {
@@ -28,6 +29,7 @@ export default function ExcluirConta() {
             {s.paragrafos?.map((p) => <p key={p}>{p}</p>)}
             {i === 0 && (
               <div className="exclusao-pedido">
+                <ExclusaoDireta origem="site" />
                 <label htmlFor="exclusao-email">{f.rotulo}</label>
                 <input id="exclusao-email" type="email" autoComplete="email" maxLength={254} value={email} onChange={(e) => setEmail(e.target.value)} />
                 <a className="btn btn-primary" href={`mailto:${EMAIL_OFICIAL}?subject=${encodeURIComponent(f.assunto)}&body=${encodeURIComponent(f.corpo + email.trim())}`}>{f.botao}</a>

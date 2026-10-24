@@ -2,7 +2,7 @@ import { LOCALE } from '../../i18n';
 const textos = {
   'pt-BR': {
     preparacao: 'Em preparação neste idioma', semAcesso: 'Esta conta ainda não tem acesso a este conteúdo.', tentarNovamente: 'Tentar novamente',
-    compras: 'Compras dentro do aplicativo ainda não estão disponíveis.', comprasPlay: 'Para liberar todas as sessões, assine pelo Google Play na tela Conta.', teste: 'Versão em testes. As duas primeiras aulas de cada curso são gratuitas.', inicio: 'O que vamos estudar hoje?', bloqueado: 'Entre na sua conta para consultar seu acesso.', livro: 'A leitura deste livro no aplicativo está em preparação.',
+    compras: 'Este conteúdo faz parte do módulo avançado e não está habilitado para o seu perfil atual.', comprasPlay: 'Para liberar todas as sessões, assine pelo Google Play na tela Conta.', teste: 'Versão em testes. As duas primeiras aulas de cada curso são gratuitas.', inicio: 'O que vamos estudar hoje?', bloqueado: 'Entre na sua conta para consultar seu acesso.', livro: 'A leitura deste livro no aplicativo está em preparação.',
     ajustes: 'Ajustes', voltar: 'Voltar', estudo: 'Seu espaço de estudo', catalogo: 'Cursos com explicações neste idioma', progresso: 'Sessões concluídas',
     avisoIdiomas: 'O idioma da interface não garante que todas as aulas estejam adaptadas. A cobertura disponível é informada em cada curso.',
     semRede: 'Sem conexão. As sessões gratuitas (1 a 8) continuam funcionando neste aparelho, com exercícios e correção. Áudio, conta e sessões de assinante precisam de internet.',
@@ -13,7 +13,7 @@ const textos = {
   },
   en: {
     preparacao: 'Not yet adapted to this language', semAcesso: 'This account does not have access to this content yet.', tentarNovamente: 'Try again',
-    compras: 'In-app purchases are not available yet.', comprasPlay: 'To unlock every session, subscribe with Google Play on the Account screen.', teste: 'Test version. The first two lessons of every course are free.', inicio: 'What shall we study today?', bloqueado: 'Sign in to check your access.', livro: 'Reading this book in the app is being prepared.',
+    compras: 'This content is part of the advanced module and is not enabled for your current profile.', comprasPlay: 'To unlock every session, subscribe with Google Play on the Account screen.', teste: 'Test version. The first two lessons of every course are free.', inicio: 'What shall we study today?', bloqueado: 'Sign in to check your access.', livro: 'Reading this book in the app is being prepared.',
     ajustes: 'Settings', voltar: 'Back', estudo: 'Your study space', catalogo: 'Courses with explanations in this language', progresso: 'Completed sessions',
     avisoIdiomas: 'The interface language does not mean every lesson has been adapted. Each course shows its available coverage.',
     semRede: 'You are offline. The free sessions (1 to 8) keep working on this device, with exercises and marking. Audio, your account and subscriber sessions need the internet.',
@@ -24,7 +24,7 @@ const textos = {
   },
   es: {
     preparacao: 'En preparación en este idioma', semAcesso: 'Esta cuenta aún no tiene acceso a este contenido.', tentarNovamente: 'Intentar de nuevo',
-    compras: 'Las compras dentro de la aplicación aún no están disponibles.', comprasPlay: 'Para liberar todas las sesiones, suscríbete con Google Play en la pantalla Cuenta.', teste: 'Versión de prueba. Las dos primeras lecciones de cada curso son gratuitas.', inicio: '¿Qué vamos a estudiar hoy?', bloqueado: 'Inicia sesión para consultar tu acceso.', livro: 'La lectura de este libro en la aplicación está en preparación.',
+    compras: 'Este contenido forma parte del módulo avanzado y no está habilitado para tu perfil actual.', comprasPlay: 'Para liberar todas las sesiones, suscríbete con Google Play en la pantalla Cuenta.', teste: 'Versión de prueba. Las dos primeras lecciones de cada curso son gratuitas.', inicio: '¿Qué vamos a estudiar hoy?', bloqueado: 'Inicia sesión para consultar tu acceso.', livro: 'La lectura de este libro en la aplicación está en preparación.',
     ajustes: 'Ajustes', voltar: 'Volver', estudo: 'Tu espacio de estudio', catalogo: 'Cursos con explicaciones en este idioma', progresso: 'Sesiones completadas',
     avisoIdiomas: 'El idioma de la interfaz no significa que todas las lecciones estén adaptadas. Cada curso muestra la cobertura disponible.',
     semRede: 'Sin conexión. Las sesiones gratuitas (1 a 8) siguen funcionando en este dispositivo, con ejercicios y corrección. El audio, la cuenta y las sesiones de suscriptor necesitan internet.',

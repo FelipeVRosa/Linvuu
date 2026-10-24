@@ -9,7 +9,7 @@ import { Sessao } from './Sessao';
 import { ReportarProblema } from '../../components/ReportarProblema';
 import NaoEncontrada from '../../pages/NaoEncontrada';
 import DiaLegado from '../../pages/Dia';
-import { Paywall } from './Paywall';
+import { AcessoLimitado } from './AcessoLimitado';
 import { textos } from '../../lib/textos';
 import { LOCALE } from '../../i18n';
 import { experiencia } from './experiencia';
@@ -35,7 +35,7 @@ export default function Dia(){
  return <div className="pagina app-aula">
   <Link className="app-aula-voltar" to={`/curso/${curso!.id}`}><span aria-hidden="true">← </span>{({'pt-BR':'Percurso de ',en:'',es:'Recorrido de '} as const)[LOCALE.codigo]}{curso!.nome}{LOCALE.codigo==='en'?' path':''}</Link>
   {decidindo&&<p className="app-carregando" role="status">{T.carregando}</p>}
-  {bloqueado&&!decidindo&&<Paywall idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel}/>}
+  {bloqueado&&!decidindo&&<AcessoLimitado idioma={curso!.id} curso={curso!.nome} indisponivel={ass.indisponivel}/>}
   {erro&&<div className="app-erro" role="alert"><h1>{T.semAula}</h1><button type="button" className="btn btn-primary" onClick={()=>setTentativa(v=>v+1)}>{a.tentarNovamente}</button></div>}
   {!aula&&!erro&&!bloqueado&&!decidindo&&<p className="app-carregando" role="status">{T.carregando}</p>}
   {aula?.sessao&&<><header className="app-aula-topo"><p className="app-kicker"><span className="app-aula-insignia" aria-hidden="true">{curso!.id==='br'?'PT':curso!.id.toUpperCase()}</span>{curso!.nome} · {T.rotuloDia(dia)}</p><h1>{aula.aula&&aula.titulo.startsWith(aula.aula.titulo+': ')?aula.titulo.slice(aula.aula.titulo.length+2):aula.titulo}</h1><details><summary>{x.objetivo}</summary><p>{aula.aula?.objetivo??aula.objetivo}</p></details></header>

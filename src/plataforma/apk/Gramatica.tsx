@@ -9,7 +9,7 @@ import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, carregarAula, fonteDoCurso, getCurso 
 import { LOCALE, useT } from '../../i18n';
 import { usePageTitle } from '../../lib/usePageTitle';
 import type { Bloco } from '../../lib/aulas';
-import { Paywall } from './Paywall';
+import { AcessoLimitado } from './AcessoLimitado';
 import { api } from '../../lib/api';
 import { carregarAuth } from '../../lib/firebase';
 import { useAuth } from '../../lib/AuthContext';
@@ -106,7 +106,7 @@ export default function Gramatica() {
         {!pacote.completo && pacote.bloqueados > 0 && estado === 'ok' && (
           <div className="aa-leitura">
             <p className="resultado">{g.bloqueados(pacote.bloqueados)}</p>
-            <Paywall idioma={curso.id} curso={curso.nome} />
+            <AcessoLimitado idioma={curso.id} curso={curso.nome} />
           </div>
         )}
       </>}

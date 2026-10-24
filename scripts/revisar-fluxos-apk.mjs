@@ -27,8 +27,8 @@ try {
    await page.goto(base+'/curso/en/dia/1');await page.locator('.sessao').waitFor();
    await page.locator('.passo').nth(1).click();await page.reload();await page.locator('.passo.atual').waitFor();
    assert.equal(await page.locator('.passo.atual').evaluate(e=>Array.from(e.parentElement.parentElement.children).indexOf(e.parentElement)),1);
-   await page.goto(base+'/curso/en/dia/9');await page.locator('.paywall').waitFor();
-   const login=page.locator('.paywall a[href*="entrar"]');assert.match(await login.getAttribute('href'),/proximo=/);
+   await page.goto(base+'/curso/en/dia/9');await page.locator('.acesso-limitado').waitFor();
+   const login=page.locator('.acesso-limitado a[href*="entrar"]');assert.match(await login.getAttribute('href'),/proximo=/);
    await login.click();await page.locator('#c-email').waitFor();assert.equal(new URL(page.url()).searchParams.get('proximo'),'/curso/en/dia/9');
    assert.equal(await page.locator('#c-email').isEnabled(),true);
   }

@@ -90,7 +90,7 @@ try {
     await page.getByRole('link',{name:/Continuar na sessão 2:/}).waitFor();
     // A sessão paga exige conta; não iniciar checkout nem criar usuário real no CI.
     await page.goto(base+'/curso/en/dia/9');
-    await page.locator('.paywall').waitFor();
+    await page.locator('.bloqueio-aula').waitFor();
     assert.equal(await page.locator('.sessao').count(),0,'aula paga não é montada para visitante');
     assert.equal(await page.getByRole('link',{name:'Já tenho conta',exact:true}).getAttribute('href'),'/entrar?proximo=%2Fcurso%2Fen%2Fdia%2F9');
     console.log(`JORNADA_VALIDADA ${nome}: posição, conclusão, retomada, reporte, login/cadastro com retorno e acesso pago fechado`);

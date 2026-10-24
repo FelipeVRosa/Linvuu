@@ -5,6 +5,7 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from '@plataforma/Home';
 import Cursos from '@plataforma/Cursos';
+// Portugues, Sobre, PorQue, Contato e ExcluirConta só existem no site: no build do APK o vite.config troca esses módulos por um vazio.
 const Curso = lazy(() => import('@plataforma/Curso'));
 const Portugues = lazy(() => import('./pages/Portugues'));
 const Dia = lazy(() => import('@plataforma/Dia'));

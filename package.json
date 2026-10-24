@@ -25,6 +25,7 @@
     "testar:plataformas": "node scripts/testar-plataformas.mjs",
     "lint:apk": "tsc --noEmit -p tsconfig.apk.json",
     "testar:regras": "npm --prefix scripts/regras ci && npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-regras \"node scripts/regras/testar-regras.mjs\"",
+    "testar:exclusao": "node --import tsx scripts/testar-exclusao.ts",
     "testar:newsletter": "node --import tsx scripts/testar-newsletter.ts",
     "testar:newsletter:rota": "npx --yes firebase-tools@15.34.1 emulators:exec --only firestore --project demo-linvuu-newsletter \"node --import tsx scripts/testar-newsletter-rota.ts\""
   },

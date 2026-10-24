@@ -18,7 +18,7 @@ export function Paywall({ curso, indisponivel, idioma }: { curso: string; indisp
     try { await abrir('checkout', plano); } catch (e) { setErro((e as Error).message); setOcupado(false); }
   };
   return (
-    <section className="paywall" aria-labelledby="pw-t">
+    <section className="bloqueio-aula" aria-labelledby="pw-t">
       <h2 id="pw-t">{T.paywallT(AULAS_GRATIS, curso)}</h2>
       <p>{T.paywallP(PRECO_MENSAL)}</p>
       {indisponivel && <p className="erro" role="alert">{T.paywallErro}</p>}

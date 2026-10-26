@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Linvuu · Progresso real (demonstração)</title>
+<style>
+:root{--verde:#1E3B2F;--papel:#F5F1E8;--grafite:#1D1F1C;--ocre:#B7791F;--linha:#DCD5C4;--sec:#5C5E57}
+*{box-sizing:border-box}body{margin:0;background:#EAE4D6;color:var(--grafite);font:16px/1.55 system-ui,sans-serif}
+header{background:var(--verde);color:var(--papel);padding:19px max(24px,calc((100vw - 1050px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px}
+header strong{font:600 32px Georgia,serif;letter-spacing:-.04em}header small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+main{background:var(--papel);max-width:1050px;min-height:750px;padding:42px clamp(20px,5vw,55px);margin:auto}
+.k{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--sec)}
+h1,h2,h3{font:normal 1em Georgia,serif}h1{font-size:clamp(34px,5vw,55px);line-height:1.08;letter-spacing:-.035em;margin:16px 0 11px}h2{font-size:32px;margin:6px 0 16px;line-height:1.2}h3{font-size:27px;margin:10px 0}p{color:var(--sec)}.intro{display:flex;justify-content:space-between;align-items:center;gap:15px}.intro p{max-width:540px}.vuu{width:100px;flex:none}.demo{font-size:12px;color:var(--verde);font-weight:750}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:36px 0}.card{border:1px solid var(--linha);background:#FAF8F2;padding:17px}.card strong{display:block;font:normal 32px Georgia,serif;margin-top:12px}.card small{color:var(--sec);font-size:12px}
+progress{appearance:none;width:100%;height:7px;border:0;border-radius:99px;overflow:hidden;background:#dfd8c9;margin:15px 0 5px}progress::-webkit-progress-bar{background:#dfd8c9}progress::-webkit-progress-value{background:var(--ocre);transition:width .2s}progress::-moz-progress-bar{background:var(--ocre)}
+.layout{border-top:1px solid var(--linha);padding-top:27px;display:grid;grid-template-columns:1.3fr 1fr;gap:22px}.sentence{font:normal 23px/1.5 Georgia,serif;color:var(--grafite);border-left:3px solid var(--ocre);padding-left:15px}
+button{font:600 14px system-ui,sans-serif;padding:14px 20px;min-height:45px;cursor:pointer}button:focus-visible{outline:3px solid var(--ocre);outline-offset:3px}button:disabled{opacity:.5;cursor:default}
+.primary{background:var(--verde);border:1px solid var(--verde);color:var(--papel)}.alt{background:transparent;border:1px solid var(--linha);color:var(--verde)}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.panel{background:#EAE4D6;padding:22px}.panel p{color:var(--grafite);font-size:14px}.status{border:1px solid #beb4a0;padding:5px 9px;display:inline-block;color:var(--verde);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+footer{margin-top:30px;border-top:1px solid var(--linha);padding-top:18px;font-size:12px;color:var(--sec)}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.layout{grid-template-columns:1fr}.vuu{width:66px}main{padding-top:25px}.card{padding:13px 16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style></head><body>
+<header><strong>linvuu.</strong><small>Experimento, não publicado</small></header><main>
+<div class="intro"><div><span class="k">Alemão B1 · Evidências de aprendizagem</span><h1>Seu caminho para conversar melhor.</h1><p>Avançar é bom. Descobrir o que você já consegue fazer, melhor ainda.</p><span class="demo">● PROTÓTIPO — DADOS FICTÍCIOS</span></div>
+<svg class="vuu" viewBox="0 0 115 140" role="img" aria-label="Símbolo provisório do Vuu; mascote não aprovado"><path d="M23 23C10 41 20 94 37 104C50 112 56 90 60 75C66 49 78 14 93 28C110 44 96 94 76 103" stroke="#1E3B2F" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M26 110C45 119 69 119 91 107" stroke="#B7791F" stroke-width="3" fill="none"/></svg></div>
+<section class="cards" aria-label="Três tipos de progresso">
+<div class="card"><span class="k">01 · Percurso</span><strong>9/24</strong><progress value="9" max="24" aria-label="9 de 24 sessões concluídas"></progress><small>Sessões concluídas, não domínio.</small></div>
+<div class="card"><span class="k">02 · Prática independente</span><strong id="p-label">—</strong><progress id="p" value="0" max="5" aria-label="Acertos independentes"></progress><small>Itens novos, sem pistas.</small></div>
+<div class="card"><span class="k">03 · Recuperação</span><strong id="r-label">0/3</strong><progress id="r" value="0" max="3" aria-label="Revisões aprovadas"></progress><small>D1, D7, D30. A lembrar, não a decorar.</small></div>
+</section>
+<div class="layout"><section><span class="k">Competência · Explicar razões</span><h2>Uma frase. Uma descoberta.</h2><p class="sentence">Ich bleibe zu Hause, weil ich krank <b>bin</b>.</p><p>Por que o verbo foi para o final da oração? Entenda, pratique, retome e use essa estrutura em outra situação.</p>
+<div class="actions"><button class="primary" id="next">Simular próxima evidência →</button><button class="alt" id="restart">Recomeçar</button></div><p style="font-size:12px">Nenhum dado é salvo. As transições são apenas uma simulação.</p></section>
+<aside class="panel" aria-live="polite" aria-atomic="true" role="status"><span id="badge" class="status">Ainda não praticada</span><h3 id="title">Cada conquista tem uma razão.</h3><p id="msg">Comece pela explicação e depois pratique sem consultar a resposta.</p><small id="stage"></small></aside></div>
+<footer>Uma barra preenchida não significa “você é B1/B2”. Cinco itens e 80% são hipóteses a validar, não uma escala CEFR. A versão definitiva exigiria dados reais, revisão humana e intervalos verificados pelo servidor.</footer>
+</main>
+<script type="module">
+import {avaliarCompetencia} from './modelo.mjs';
+const id='de.b1.weil-denn', itens=Array.from({length:5},(_,i)=>({skill_id:id,item_id:'novo'+i,kind:'independent',tentativa:1,ajudas:0,correto:i<4}));
+const rec=n=>({skill_id:id,item_id:'rev'+n,kind:'review',tentativa:1,ajudas:0,correto:true,intervalo_dias:n});
+const transfer={skill_id:id,item_id:'contexto-inedito',kind:'transfer',tentativa:1,correto:true,novo_contexto:true,sem_ajuda:true,avaliacao_independente:'aprovado'};
+const stages=[[],[{skill_id:id,item_id:'explicacao',kind:'guided',tentativa:1,ajudas:1,correto:true}],itens,[...itens,rec(1),rec(7)],[...itens,rec(1),rec(7),rec(30),transfer]];
+const titles=[
+ ['Pronto para descobrir','Cada conquista tem uma razão.','A explicação começa agora.'],
+ ['Em descoberta','Você identificou uma nova estrutura.','Ainda não foi demonstrada a capacidade de usá-la sem ajuda.'],
+ ['Prática independente','Parabéns! Você acertou 4 de 5 questões sem pistas.','É um bom resultado nesta simulação, ainda sem comprovação de retenção.'],
+ ['Em consolidação','Você lembrou depois de 1 e 7 dias.','Dois intervalos concluídos. Falta a revisão longa e a transferência.'],
+ ['Domínio demonstrado','Parabéns! Você aplicou a estrutura em uma situação nova.','Todas as etapas de evidência fictícia foram satisfeitas; isso não equivale à certificação de um nível.']
+];let current=0;
+function update(){const r=avaliarCompetencia(id,stages[current]); const [badge,title,msg]=titles[current];
+document.querySelector('#badge').textContent=badge;document.querySelector('#title').textContent=title;document.querySelector('#msg').textContent=msg;document.querySelector('#stage').textContent=r.etapa;
+document.querySelector('#p').value=r.acertos_primeira_tentativa;document.querySelector('#p-label').textContent=r.exercicios_validos?r.acertos_primeira_tentativa+'/'+r.exercicios_validos:'—';
+document.querySelector('#r').value=r.intervalos_verificados.length;document.querySelector('#r-label').textContent=r.intervalos_verificados.length+'/3';
+document.querySelector('#next').disabled=current===stages.length-1;
+}document.querySelector('#next').addEventListener('click',()=>{current=Math.min(current+1,stages.length-1);update()});
+document.querySelector('#restart').addEventListener('click',()=>{current=0;update()}); update();
+</script></body></html>

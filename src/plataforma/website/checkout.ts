@@ -2,6 +2,7 @@ import { LOCALE, T } from '../../i18n';
 import { carregarAuth } from '../../lib/firebase';
 import { api } from '../../lib/api';
 import { Capacitor } from '@capacitor/core';
+import { analytics } from '../../lib/analytics';
 
 /** No app nativo a compra fica desligada até a decisão de cobrança pela loja (Google Play / App Store). Veja docs/APP.md. */
 export const compraNoAppDisponivel = () => !Capacitor.isNativePlatform();
@@ -21,7 +22,10 @@ export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
   if (!compraNoAppDisponivel()) throw new Error(T.erros.compraApp);
   const idioma = LOCALE.explicacao === 'pt' ? undefined : LOCALE.explicacao;
   const j = await chamar(tipo, 'POST', { ...(plano ? { plano } : {}), ...(idioma ? { idioma } : {}) });
-  if (j.url) window.location.href = j.url;
+  if (j.url) {
+    if (tipo === 'checkout') void analytics.capture('checkout_started', { page: 'plans', billing_plan: plano });
+    window.location.href = j.url;
+  }
 }
 
 export { useAssinatura } from '../../lib/acesso';

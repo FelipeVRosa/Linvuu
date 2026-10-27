@@ -40,9 +40,9 @@ As páginas acessadas pela auditoria externa retornam HTTP 200, são indexáveis
 ## Registro e reenvio efetuados
 
 - Sitemap `https://linvuu.com.br/sitemap.xml` contém **81 URLs**; validado como XML HTTP 200, sem erros/avisos no histórico de download em 22/10.
-- **Reenviado e ACEITO** pelo Google Search Console em **2026-10-27 07:52:07 UTC**; `submitted=1`, `accepted=true`, `isPending=true`. O Google realizará nova leitura quando agendar. Reenviar não força a indexação individual.
+- **Reenviado e ACEITO** pelo Google Search Console em **2026-10-27 07:52:07 UTC**; `submitted=1`, `accepted=true`. **Nova leitura concluída às 07:52:08 UTC, com 0 erros e 0 avisos**, confirmada por nova consulta a Sitemaps. Reenviar não força a indexação individual.
 - Anotação criada na propriedade GSC Wizard em 27/10: "Linvuu: correções técnicas publicadas e sitemap reenviado". É registro da ferramenta, não recado entregue ao ranking Google.
-- Rastreador em 27/10, antes das inspeções complementares: 81 URLs; **7 indexadas, 17 não indexadas e 57 não inspecionadas**. Não é índice completo, pois pendentes não têm estado verificado.
+- Rastreador em 27/10, antes das inspeções complementares: 81 URLs; **7 indexadas, 17 não indexadas e 57 não inspecionadas**. **Nota automatizada de saúde do tracker = 27/100**, distorcida para baixo por 57 URLs ainda sem inspeção; não é índice completo nem percentual real de páginas que o Google indexou. Sem avisos internos no tracker.
 
 ## O que só pode ser concluído na interface Search Console
 

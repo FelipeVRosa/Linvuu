@@ -35,3 +35,6 @@
 - Pagamentos web: **não verificado fluxo de compra real ponta a ponta**. Não executar compra real, não mudar preços, descontos, cupons ou eventos Stripe sem tarefa explícita; conferir com teste controlado antes de declarar 8/10 para vendas.
 - APK: build web separado não é Android release/AAB certificada. Não declarar conformidade final com Google Play sem análise de artefato, política de pagamentos e teste em aparelho.
 - Sem acesso conectado ao GA4 pelo GSC Wizard desta conta; não inventar métricas de eventos, conversão ou páginas de erro reais.
+
+## Atualização de auditoria por 20 frentes (27/10/2026)
+Leia [docs/AUDITORIA-20-FRENTES-2026-10-27.md](docs/AUDITORIA-20-FRENTES-2026-10-27.md) antes de prometer lançamento. O relatório distingue fatos de GitHub, Render, Search Console, Stripe e PostHog dos testes reais ainda pendentes. PR #375 corrige JSON-LD e está live; PR #377 impede preços automáticos e está live. PR #378 adiciona eventos opt-in e foi mergeado, mas confirmar SHA de deploy antes de dizer que está live. PR #379 corrigiu transições de cor dos botões do APK, passou na prévia e em rerun e foi mergeado; verificar SHA de produção e homologação física antes de declarar Google Play pronta. Issues #376, #380 e #381 registram blockers. **Não há 20 subagentes independentes nesta execução; são 20 verificações técnicas com fontes.**

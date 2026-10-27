@@ -15,3 +15,5 @@ Use branch e PR; não escreva diretamente na `main`, não faça merge automátic
 Não exponha credenciais, IAM, chaves, informações privadas nem conteúdo protegido de terceiros. Não altere site, APK, pagamentos ou conteúdo A1–A2 como efeito colateral de documentação. Diferencie teste de merge, deploy e verificação real. Registre o resultado no PR.
 
 Este arquivo é a entrada específica do Antigravity, e não substitui `AGENTS.md`.
+
+**Privacidade confirmada em 27/10/2026:** os três repositórios Linvuu, Linvuu-Livros-em-PDF e Linvuu-Auditoria-Firebase foram verificados como PRIVADOS via GitHub API. A URL do site continua pública; não tornar repositórios públicos para SEO. Confira a seção 10 de `docs/CONTINUIDADE-2026-10-27.md` e valide as permissões do conector se retornar 404. A CI de repositórios privados pode estar sujeita a cota. Confirme Render após a alteração de visibilidade.

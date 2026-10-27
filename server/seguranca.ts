@@ -27,7 +27,13 @@ export function cabecalhos(producao: boolean) {
   const nomeCSP = process.env.CSP_MODO === 'report' ? 'Content-Security-Policy-Report-Only' : 'Content-Security-Policy';
   const audioBase = (process.env.VITE_AUDIO_BASE_URL || '').match(/^https:\/\/[^/]+/)?.[0] ?? '';
   const csp = politicaCSP(audioBase);
-  return (_req: Request, res: Response, next: NextFunction) => {
+  return (req: Request, res: Response, next: NextFunction) => {
+    // Vale também para 401/403/404/429 e erros anteriores aos handlers.
+    // A política da CDN não substitui a proteção no servidor e no navegador.
+    if (/^\/api(?:\/|$)/.test(req.path) || /^\/(healthz|readyz)$/.test(req.path)) {
+      res.setHeader('Cache-Control', 'private, no-store');
+      res.setHeader('X-Robots-Tag', 'noindex');
+    }
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
@@ -131,3 +137,4 @@ export function registrarErros(app: Express) {
     res.status(status).json({ error: status === 413 ? 'Pedido grande demais.' : status === 500 ? 'Erro interno.' : 'Pedido inválido.' });
   });
 }
+

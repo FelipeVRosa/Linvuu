@@ -1,0 +1,39 @@
+# Coordenação entre Felipe, Claude e ChatGPT/Codex
+## Fonte comum
+O GitHub registra código, decisões e evidências. As conversas ajudam a formular tarefas, mas não sincronizam automaticamente entre assistentes. Um arquivo também não se mantém atualizado sozinho: cada agente deve atualizar este registro no mesmo PR da mudança.
+Prioridade: instrução atual explícita do Felipe → instruções aplicáveis → código/configuração e evidência atual → documentos históricos. Quando código e produção divergem, registre ambos.
+
+## Início de cada tarefa
+1. Ler AGENTS.md, ESTADO-ATUAL.md e documento do assunto.
+2. Identificar SHA da main, SHA do deploy e PRs abertos. Não presumir que são iguais.
+3. Conferir se outro PR toca os mesmos arquivos. Uma tarefa por branch; coordenação pelo registro do PR, sem sobrescrever commits.
+4. Reproduzir o problema. Registrar URL/caminho, entrada, esperado e observado, sem dados pessoais.
+5. Corrigir a causa e executar teste relevante; não mudar regras de negócio por conveniência.
+6. Atualizar estado, limitações, resultado dos checks, plano de reversão e verificações pendentes.
+7. Fazer merge apenas com verificações aplicáveis aprovadas. Confirmar deploy e respostas públicas antes de declarar produção corrigida.
+
+## Formato obrigatório de passagem
+- Objetivo e escopo:
+- Autor/agente e branch/PR:
+- SHA base e SHA final:
+- Arquivos e decisões:
+- Evidência do problema:
+- Testes executados e resultado:
+- Não testado / bloqueios:
+- Merge e deploy (separados):
+- Verificação em produção e horário:
+- Próxima ação e critério de conclusão:
+
+## Critérios que evitam falsos positivos
+- Uma página abrir não demonstra autorização correta.
+- Um 200 em /readyz não demonstra igualdade entre regras publicadas e firestore.rules.
+- Sitemap aceito não significa URLs indexadas.
+- “Detectada, mas não indexada” sem rastreamento não prova falha de cache.
+- Requests por .php não provam execução PHP nem vazamento.
+- Uma conexão marcada ACTIVE não prova escopo nem credencial válida.
+- CI sem steps não prova erro do código; consultar annotations e cobrança/quotas sem contornar os gates.
+- Purga da CDN não apaga cache já armazenado no navegador.
+- Não salvar chaves, cabeçalhos Authorization, URLs assinadas ou exportações de usuários no registro.
+
+## Prompt comum de retomada
+“Leia AGENTS.md, docs/ESTADO-ATUAL.md e docs/COORDENACAO-IA.md em FelipeVRosa/Linvuu. Confira main, PRs e deploy atuais. Continue a primeira pendência reproduzível da auditoria, registre evidências e atualize o estado no PR. Não considere correção concluída antes da verificação correspondente.”

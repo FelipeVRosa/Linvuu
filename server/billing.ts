@@ -203,7 +203,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
         if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
       } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
     }
-    res.set('Cache-Control', 'private, max-age=3600').type('audio/mpeg').sendFile(arq);
+    res.set('Cache-Control', 'private, no-store').type('audio/mpeg').sendFile(arq);
   });
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {
@@ -275,7 +275,8 @@ export function registrarLivroProtegido(app: Express) {
     if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('X-Robots-Tag', 'noindex, nofollow');
-    try { res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
+    try { res.type('html').send(fs.readFileSync(path.resolve(import.meta.dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
   });
 }
+
 

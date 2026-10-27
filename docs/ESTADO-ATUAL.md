@@ -1,7 +1,7 @@
 # Estado atual da Linvuu
 Registro inicial: 26/10/2026 (Brasília). Atualizado em 27/10/2026 após leitura da coleta Cloud Shell e consultas diretas ao GitHub/Render. Este arquivo é um snapshot, não uma sincronização automática; verificar main e deploy em cada retomada.
 ## Baseline verificado
-- Repositório: FelipeVRosa/Linvuu, privado. Main consultada antes deste PR documental: `118a3abe4c5ce88ac726c8f76042ea5d1a25a7be`. O SHA `751c3b8` é anterior; e-mails de runs desse commit não identificam a main atual.
+- Repositório: FelipeVRosa/Linvuu, privado. Main consultada antes do PR da ponte de auditoria: `663b6ece4df824aa22e958acf4cd831836b462b2` (#370). O SHA `751c3b8` é anterior; e-mails de runs desse commit não identificam a main atual.
 - Render: serviço linvuu (`srv-db03818u01pc738mirig`), deploy `dep-dbg0hpvb9u1s73fopnc0` live, SHA `118a3abe4c5ce88ac726c8f76042ea5d1a25a7be`; conclusão em 27/10/2026 02:15:58 UTC (26/10 23:15:58 Brasília). Reconsultado em 27/10. Trigger checksPass. Não confundir deploy live com saúde de todos os fluxos.
 - Site: https://linvuu.com.br. React/Vite/TypeScript + Express; não é um backend PHP.
 - Firebase configurado no Render: `VITE_FIREBASE_PROJECT_ID=linvuu`, `VITE_FIREBASE_AUTH_DOMAIN=linvuu.firebaseapp.com`, App ID com número `982052790317`. `FIREBASE_PROJECT_ID` não existe como variável direta do serviço; o backend usa a variável VITE como fallback. A identidade do Secret File e eventuais grupos herdados ainda precisam de conferência.
@@ -47,3 +47,6 @@ CONTEXTO.md e PARCERIA-IA.md registram rodadas antigas e contêm informações s
 ## Vuu: referência de design
 Figma: https://www.figma.com/design/GHaocmKtqRw2EQ1QqVx4YD
 Matriz inicial com oito estados. Estudos gerados em 3D são imagens conceituais, não arquivos .blend nem animações finais.
+
+## Conexão de auditoria Firebase pelo GitHub
+Implementada ponte de auditoria manual com OIDC, identidade Google restrita a metadados e confiança no ID do repositório/proprietário, main e caminho do workflow. Ver [configuração e limites](conexao-firebase-github.md). Seis testes locais offline passaram; execução autenticada e configuração Google ainda pendentes. A captura do Felipe confirmou linvuu / 982052790317 no Spark. A consulta pública de Auth confirmou chave web e App ID coerentes com esse número. O Felipe informou que a conta hello.linvuu@gmail.com administra esse Firebase; o acesso humano Firebase Viewer + Security Reviewer para a conta pessoal ainda depende de salvar e verificar. A instalação da ponte exige configuração inicial pela conta administradora; não é substituída por esses papéis de leitura. Nenhuma chave JSON é necessária. Não declarar conexão concluída antes do primeiro workflow autenticado com resultados revisados.

@@ -1,8 +1,21 @@
 # Estado atual da Linvuu
-Registro inicial: 26/10/2026 (Brasília). Atualizado em 27/10/2026 após leitura da coleta Cloud Shell e consultas diretas ao GitHub/Render. Este arquivo é um snapshot, não uma sincronização automática; verificar main e deploy em cada retomada.
+Registro inicial: 26/10/2026 (Brasília). **Atualização factual: 27/10/2026, após confirmação por GitHub e Render.** Este arquivo é um snapshot: verificar main e deploy novamente em cada retomada.
+
+## Atualização operacional verificada — 27/10/2026
+
+- **GitHub público** `FelipeVRosa/Linvuu`: main no SHA `3431e4409065e0f1bfed71c3d704b4079d41ef39` antes da presente limpeza; [CI](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453761867) e [Segurança](https://github.com/FelipeVRosa/Linvuu/actions/runs/40453762120) aprovadas nesse SHA.
+- **Render:** serviço `linvuu` (`srv-db03818u01pc738mirig`), deploy `dep-dbg34nrbc2fs739ptjk0` confirmado `live`, SHA `3431e440`, finalizado 27/10/2026 05:12:48 UTC. Isso **não prova** login, checkout ou regras Firestore publicadas.
+- **Google Cloud `linvuu` / 982052790317:** saída dos dois Cloud Shells mostrou `CONFIGURACAO_GCP_VERIFICADA` com pool `linvuu-audit-private`, provider `github-private` e conta de serviço `auditoria-privada@linvuu.iam.gserviceaccount.com`. Ambas as contas humanas foram identificadas como proprietárias por IAM (saída apresentada pelo proprietário).
+- **Federação OIDC GitHub:** [run #40460208259](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259) **aprovou autenticação temporária e verificação do número do projeto**. O repositório separado `Linvuu-Auditoria-Firebase` está **público**; o job administrativo detalhado é **skipped intencionalmente** por segurança.
+- **Ainda não verificado:** igualdade entre [`firestore.rules`](../firestore.rules) e regras publicadas, comportamento de regras com usuários reais, Stripe/checkout, login autenticado completo, publicação e testes em aparelho Android, integridade integral do SEO.
+- **PRs preservados:** [#360](https://github.com/FelipeVRosa/Linvuu/pull/360) e [#367](https://github.com/FelipeVRosa/Linvuu/pull/367) em rascunho; [#347](https://github.com/FelipeVRosa/Linvuu/pull/347) de dependências ainda aberto, **sem merge automático**. Não alterar produto ao limpar instruções.
+- **Workflows:** o antigo workflow de auditoria Firebase da main pública usava provider antigo e ficou inoperante; está sendo removido nesta limpeza. Outros workflows com execução recente `success` são preservados. `skipped` por branch não prova falha; falhas antigas de monitoramento não devem ser ocultadas.
+
+### Registros anteriores abaixo
+As seções históricas subsequentes contêm *snapshots de momentos anteriores*, inclusive SHA antigo, discussão de contas e estado OIDC superado. Em caso de divergência, prevalecem o **estado verificado acima** e uma nova consulta ao código/CI/produção; veja [conexão Firebase](conexao-firebase-github.md).
 ## Baseline verificado
-- Repositório: FelipeVRosa/Linvuu, PÚBLICO (visibilidade confirmada pela API em 27/10/2026; descrições anteriores como privado estavam incorretas). Main consultada antes desta proteção: `ce4dddd3bd860ec63fbf8c4edd6442fee33837ce` (#371, ponte de auditoria). O SHA `751c3b8` é anterior; e-mails de runs desse commit não identificam a main atual.
-- Render: serviço linvuu (`srv-db03818u01pc738mirig`), deploy `dep-dbg0hpvb9u1s73fopnc0` live, SHA `118a3abe4c5ce88ac726c8f76042ea5d1a25a7be`; conclusão em 27/10/2026 02:15:58 UTC (26/10 23:15:58 Brasília). Reconsultado em 27/10. Trigger checksPass. Não confundir deploy live com saúde de todos os fluxos.
+- Registro histórico: repositório público. SHA `ce4dddd3` era a main durante a auditoria inicial (#371), mas foi substituído pelo SHA `3431e440` e pelos commits de manutenção subsequentes. Conferir a atualização do topo.
+- Registro histórico do Render: deploy `dep-dbg0hpvb9u1s73fopnc0` (SHA `118a3abe`) esteve live, mas foi substituído pelo deploy do SHA `3431e440` confirmado acima. Trigger `checksPass`. Não confundir deploy live com saúde de todos os fluxos.
 - Site: https://linvuu.com.br. React/Vite/TypeScript + Express; não é um backend PHP.
 - Firebase configurado no Render: `VITE_FIREBASE_PROJECT_ID=linvuu`, `VITE_FIREBASE_AUTH_DOMAIN=linvuu.firebaseapp.com`, App ID com número `982052790317`. `FIREBASE_PROJECT_ID` não existe como variável direta do serviço; o backend usa a variável VITE como fallback. A identidade do Secret File e eventuais grupos herdados ainda precisam de conferência.
 - Projeto distinto `linvuu-995d0` (número `371272154247`): coleta Cloud Shell autenticada retornou listas vazias de bancos e releases. Essa conta teve 403 em `linvuu`. NÃO migrar o Render nem publicar regras em `linvuu-995d0` como solução para o 403. Ver [auditoria Firebase](auditoria-firebase-2026-10-27.md).
@@ -48,11 +61,5 @@ CONTEXTO.md e PARCERIA-IA.md registram rodadas antigas e contêm informações s
 Figma: https://www.figma.com/design/GHaocmKtqRw2EQ1QqVx4YD
 Matriz inicial com oito estados. Estudos gerados em 3D são imagens conceituais, não arquivos .blend nem animações finais.
 
-## Conexão de auditoria Firebase pelo GitHub
-Ponte manual com OIDC integrada no PR #371. O proprietário informou que `python3 configurar.py --apply` terminou com sucesso na conta hello.linvuu@gmail.com, sem criação de chaves. Isso ainda não confirma autenticação funcional.
-
-A primeira execução [40451944964](https://github.com/FelipeVRosa/Linvuu/actions/runs/40451944964), no SHA ce4dddd3, terminou em startup_failure sem jobs, check runs ou artefatos. A política Actions consultada permite apenas actions do GitHub (github_owned_allowed=true, verified_allowed=false, patterns_allowed=[]); as duas actions oficiais google-github-actions estão excluídas. Ainda não liberar essas actions nem repetir a coleta detalhada antes de definir destino privado para os relatórios.
-
-A API também confirmou que o repositório está público. A proteção desta mudança bloqueia o workflow antes da autenticação e o coletor antes de obter token quando o evento não confirmar repositório privado; upload de resultados também exige privacidade. Sete testes locais passaram. Não houve coleta Google nessa primeira tentativa; o estado das regras publicadas e IAM de produção continua não verificado. Não houve alteração de visibilidade ou permissões Actions nesta correção.
-
-Ver [configuração e limites](conexao-firebase-github.md). O Felipe precisa escolher entre tornar este repositório privado ou manter o código público com auditoria em outro destino privado; a segunda opção exige adaptar a confiança OIDC e o workflow. A consulta pública de Auth confirmou chave web e App ID coerentes com linvuu / 982052790317. A concessão humana de Firebase Viewer + Security Reviewer à conta pessoal ainda precisa de verificação. Esta ponte concede leitura de configuração, não administração total.
+## Auditoria Firebase — estado atual
+O workflow de auditoria detalhada do repositório principal foi aposentado. A federação OIDC temporária foi efetivamente autenticada pelo workflow de teste **não sensível** em [40460208259](https://github.com/FelipeVRosa/Linvuu-Auditoria-Firebase/actions/runs/40460208259). Não houve publicação de políticas IAM nem confirmação das regras Firestore em produção. Veja [conexao-firebase-github.md](conexao-firebase-github.md) para a arquitetura corrente e verificações pendentes.

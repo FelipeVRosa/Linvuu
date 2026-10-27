@@ -25,13 +25,15 @@ Registro inicial: 26/10/2026 (Brasília). Este arquivo é o ponto de entrada com
 200 e canonical próprio, sem noindex: /, /curso/de, /livros/de, /assinatura, /en e /es. HTML com no-cache e CF-Cache-Status DYNAMIC.
 404 real com noindex: /index.php, /wp-login.php, /nao-existe-auditoria e /login. O endereço de login no código é /entrar; 404 em /login isoladamente não demonstra falha.
 /readyz retornou 200, private/no-store. robots.txt retornou texto e liberou rotas públicas.
-## Achados implementados nesta branch, ainda não publicados
+## Correções integradas — PR #368
 - Política padrão private/no-store e X-Robots-Tag noindex em /api, /healthz e /readyz, incluindo falhas antes dos handlers.
 - Áudio pago deixa de anunciar cache de 1 hora.
 - Livro protegido resolve caminho com import.meta.dirname (ESM); antes referenciava __dirname não definido.
-- Teste de middleware e HTTP real para 401/403/404; teste existente de IP passou. Sem checkout real nem acesso pago em produção.
+- Teste de middleware e HTTP real para 401/403/404; teste existente de IP passou. CI completa do PR #368 aprovada, incluindo builds website/APK e regras em emulador. Sem checkout real nem acesso pago em produção.
+## Autenticação — PR #369
+A exclusão desativa a conta e revoga sessões, mas usuario(req) usava verifyIdToken sem checkRevoked. O PR #369 pede verificação de revogação e conta desativada (true), mantendo a recusa em caso de erro. Ainda depende de CI/merge/deploy e teste real em conta de teste. Uma chamada adicional ao Auth pode aumentar latência; não neutralizar a revogação com cache.
 ## Pendências por prioridade
-1. Esperar/verificar CI deste PR; merge autorizado pelo Felipe, condicionado aos checks. Depois confirmar novo SHA no Render e respostas HTTP.
+1. PR #368 mergeado após build, visual, gitleaks e auditoria de dependências aprovados. Main passou a a2a38e9aa9e76c73a7f9574b64820790672bb786. Deploy/HTTP pós-merge ainda pendentes; Render observado ainda no baseline anterior.
 2. Obter as URLs individuais de redirecionamento/robots no Search Console e testar cadeias e política de indexação de cada uma.
 3. Autenticação administrativa Firebase/Google Cloud: conector Composio disponível é apenas público de Auth e retornou 403; plugin Firebase instalado, mas nenhum método remoto administrativo exposto nesta sessão. Comparar ruleset/release publicado, IAM e restrições de chave com credencial administrativa apropriada.
 4. Concluir revisão de backend, conteúdo servido, idiomas, dependências e histórico de segredos. 164 arquivos de src foram recuperados; isso NÃO equivale a auditoria integral aprovada.

@@ -1,4 +1,12 @@
-# Coordenação entre Felipe, Claude e ChatGPT/Codex
+# Coordenação entre Felipe, Claude, ChatGPT/Codex, Cursor e Antigravity
+## Ponto de entrada por ferramenta
+- **Todas:** `AGENTS.md` é a fonte comum.
+- **Claude:** `CLAUDE.md`.
+- **ChatGPT/Codex:** `AGENTS.md`.
+- **Cursor:** `.cursor/rules/linvuu.mdc` (regra de projeto, aplicada sempre).
+- **Google Antigravity:** `GEMINI.md` (regra reconhecida no workspace).
+- Os arquivos específicos apenas encaminham às regras compartilhadas; não criam políticas alternativas.
+
 ## Fonte comum
 O GitHub registra código, decisões e evidências. As conversas ajudam a formular tarefas, mas não sincronizam automaticamente entre assistentes. Um arquivo também não se mantém atualizado sozinho: cada agente deve atualizar este registro no mesmo PR da mudança.
 Prioridade: instrução atual explícita do Felipe → instruções aplicáveis → código/configuração e evidência atual → documentos históricos. Quando código e produção divergem, registre ambos.
@@ -6,7 +14,7 @@ Prioridade: instrução atual explícita do Felipe → instruções aplicáveis 
 ## Início de cada tarefa
 1. Ler AGENTS.md, ESTADO-ATUAL.md e documento do assunto.
 2. Identificar SHA da main, SHA do deploy e PRs abertos. Não presumir que são iguais.
-3. Conferir se outro PR toca os mesmos arquivos. Uma tarefa por branch; coordenação pelo registro do PR, sem sobrescrever commits.
+3. Conferir se outro PR toca os mesmos arquivos. Uma tarefa por branch e por agente; coordenação pelo registro do PR, sem sobrescrever commits. Nunca usar a mesma branch de escrita simultaneamente em Claude, ChatGPT/Codex, Cursor e Antigravity.
 4. Reproduzir o problema. Registrar URL/caminho, entrada, esperado e observado, sem dados pessoais.
 5. Corrigir a causa e executar teste relevante; não mudar regras de negócio por conveniência.
 6. Atualizar estado, limitações, resultado dos checks, plano de reversão e verificações pendentes.

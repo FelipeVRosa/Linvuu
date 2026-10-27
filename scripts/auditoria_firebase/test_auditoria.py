@@ -11,6 +11,12 @@ import configurar
 
 
 class AuditTests(unittest.TestCase):
+    def test_legacy_installer_cli_refuses_to_apply(self):
+        with patch('sys.argv', ['configurar.py', '--apply']), patch.object(configurar, 'configure') as called:
+            with self.assertRaisesRegex(SystemExit, 'aposentado'):
+                configurar.main()
+            called.assert_not_called()
+
     def test_public_or_unknown_repository_visibility_is_denied(self):
         env = {'GITHUB_REPOSITORY': 'FelipeVRosa/Linvuu', 'GITHUB_REF': 'refs/heads/main'}
         for event in [{}, {'repository': {'private': False}}, {'repository': {'private': 'true'}}]:

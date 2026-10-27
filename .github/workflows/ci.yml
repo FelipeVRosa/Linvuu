@@ -39,6 +39,8 @@ jobs:
         run: node --import tsx scripts/testar-analytics.ts
       - name: Testar prontidao sem dependencias de producao
         run: node --import tsx scripts/testar-prontidao.ts
+      - name: Garantir que o checkout valida preços sem criar produtos no Stripe real
+        run: node --import tsx scripts/testar-contrato-billing.ts
       - name: Testar notificações Stripe assinadas sem cobranças reais
         run: node --import tsx scripts/testar-billing-webhook.ts
       - name: Testar medição sem dados de produção

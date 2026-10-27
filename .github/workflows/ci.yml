@@ -31,6 +31,8 @@ jobs:
       - run: npm ci
       - name: Verificar tipos TypeScript
         run: npm run lint && npm run lint:apk
+      - name: Verificar política de cache e indexação das APIs
+        run: node --import tsx scripts/testar-cache-api.ts
       - name: Testar consentimento e minimização PostHog sem enviar dados
         run: node --import tsx scripts/testar-analytics.ts
       - name: Testar prontidao sem dependencias de producao
@@ -75,4 +77,5 @@ jobs:
           for i in 1 2 3; do npm audit --omit=dev --audit-level=high && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)
         run: npm run testar:seguranca
+
 

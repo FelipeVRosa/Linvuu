@@ -1,3 +1,5 @@
+> **Entrada atual para Claude e ChatGPT/Codex:** leia primeiro [ESTADO-ATUAL.md](ESTADO-ATUAL.md) e [COORDENACAO-IA.md](COORDENACAO-IA.md). O conteúdo abaixo inclui rodadas históricas; não representa uma verificação atual de produção.
+
 # Contexto do projeto (leia primeiro)
 
 Para retomar numa conversa nova com o Claude, diga: "Leia docs/CONTEXTO.md e docs/ANALISE-E-PLANO.md do repositório FelipeVRosa/Linvuu e continue da próxima rodada." O repositório é privado (outubro de 2026). Claude e ChatGPT trabalham nele em parceria: regras em `docs/PARCERIA-IA.md`.

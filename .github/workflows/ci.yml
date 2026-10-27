@@ -29,6 +29,8 @@ jobs:
           path: ~/.cache/firebase/emulators
           key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1
       - run: npm ci
+      - name: Testar coletor e limites da auditoria Firebase sem acesso de produção
+        run: python3 -m unittest discover -s scripts/auditoria_firebase -p 'test_*.py' -v
       - name: Verificar tipos TypeScript
         run: npm run lint && npm run lint:apk
       - name: Verificar política de cache e indexação das APIs

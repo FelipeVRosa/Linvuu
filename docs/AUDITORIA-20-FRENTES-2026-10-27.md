@@ -35,7 +35,7 @@
 
 ## Android / Google Play
 
-20. **APK, acessibilidade e conformidade Play — PARCIAL.** Variante de build e prévia Chromium existem; RevenueCat Billing SDK não entra no Capacitor atual. Check axe de conclusão apontou contraste intermitente [#376](https://github.com/FelipeVRosa/Linvuu/issues/376); PR #379 trata a transição de cores. **Não houve validação de AAB assinado, Play Console, política de pagamentos nem aparelho físico.** Não declarar 8/10 para Google Play.
+20. **APK, acessibilidade e conformidade Play — PARCIAL.** Variante de build e prévia Chromium existem; RevenueCat Billing SDK não entra no Capacitor atual. Check axe de conclusão apontou contraste intermitente [#376](https://github.com/FelipeVRosa/Linvuu/issues/376); PR #379 corrige as transições de cores dos botões, passou em CI e rerun, e foi mergeado no commit `3df784f`. A issue #376 continua aberta para repetição adicional e validação em dispositivo físico. **Não houve validação de AAB assinado, Play Console, política de pagamentos nem aparelho físico.** Não declarar 8/10 para Google Play.
 
 ## Portas de lançamento e notas
 

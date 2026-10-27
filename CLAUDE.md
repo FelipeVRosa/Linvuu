@@ -26,3 +26,12 @@
 5. Não realizar deploy de `firestore.rules`, mudanças de cobrança, Render, credenciais ou APP/APK como efeito colateral de documentação.
 
 **Leia** [estado verificado](docs/ESTADO-ATUAL.md) e [Firebase — situação e verificação](docs/conexao-firebase-github.md). `docs/CONTEXTO.md` e `docs/PARCERIA-IA.md` são registros históricos, não fontes de verdade do presente.
+
+## Verificação de encerramento — 27/10/2026
+- Render: commit `6bf7dd9` publicado `live`, build e deploy aprovados (dep-dbg4aeajnfac739kpjlg). O site atual não foi substituído por uma nova arquitetura.
+- Google Search Console (propriedade `sc-domain:linvuu.com.br`): sitemap com 81 URLs e zero erros/avisos na última leitura do Google, em 22/10. As 81 URLs foram registradas no Indexing Tracker nesta auditoria. Inspeção por URL confirmou indexação de /, /assinatura, /cursos, /curso/en, /en, /sobre, /livros; não indexadas /curso/de, /livros/de e /es. Não afirmar indexação de todas as URLs nem confundir cliques de proprietário com visitantes.
+- Auditoria SEO on-page de 10 páginas: 0 avisos críticos, 0 altos, 4 médios, 13 leves. Problema verificável: objeto Organization em JSON-LD de cursos sem logo; corrigido neste PR com teste. Textos curtos e metadados devem ser revisados editorialmente, sem geração de conteúdo artificial.
+- Stripe conectado em `livemode=true`: 1 preço mensal ativo de R$ 139,00; webhook habilitado para `https://linvuu.com.br/api/stripe/webhook` com eventos de checkout, assinatura e faturas. Nenhum Payment Link encontrado (o site usa Checkout Sessions criadas pelo backend). O fato de existir webhook não comprova entrega bem-sucedida nem conceder acesso ao curso.
+- Pagamentos web: **não verificado fluxo de compra real ponta a ponta**. Não executar compra real, não mudar preços, descontos, cupons ou eventos Stripe sem tarefa explícita; conferir com teste controlado antes de declarar 8/10 para vendas.
+- APK: build web separado não é Android release/AAB certificada. Não declarar conformidade final com Google Play sem análise de artefato, política de pagamentos e teste em aparelho.
+- Sem acesso conectado ao GA4 pelo GSC Wizard desta conta; não inventar métricas de eventos, conversão ou páginas de erro reais.

@@ -1,5 +1,6 @@
 # Linvuu — instruções comuns para agentes
-Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENACAO-IA.md` e as instruções locais aplicáveis. Estas instruções valem para ChatGPT/Codex e Claude.
+Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENACAO-IA.md` e as instruções locais aplicáveis. Estas instruções valem para Claude, ChatGPT/Codex, Cursor e Google Antigravity.
+- Entradas específicas: `CLAUDE.md` (Claude), `.cursor/rules/linvuu.mdc` (Cursor) e `GEMINI.md` (Antigravity). O `AGENTS.md` é a fonte comum; evite duplicar normas contraditórias.
 - Consulte a main atual e os PRs abertos; não trate lembranças da conversa como estado de produção.
 - Use branch e PR. Não sobrescreva trabalho do outro agente. Registre a tarefa e os arquivos no corpo do PR antes das mudanças seguintes.
 - Cada correção deve atualizar o registro do assunto com evidência e limitações.

@@ -1,0 +1,16 @@
+---
+description: "Instruções de trabalho e coordenação da Linvuu para todas as tarefas do Cursor"
+alwaysApply: true
+---
+# Linvuu — Cursor
+O documento normativo compartilhado é `AGENTS.md`. Leia-o por inteiro antes de propor ou alterar arquivos.
+Leia também `docs/ESTADO-ATUAL.md` e `docs/COORDENACAO-IA.md` e as regras locais do diretório afetado.
+
+- Consulte a `main` e os PRs abertos; o estado de produção não é inferido de conversas.
+- Use uma branch e um PR por tarefa; descreva arquivos, evidência, testes, riscos e reversão. Não sobrescreva trabalho de Claude, ChatGPT/Codex ou Antigravity.
+- Não faça merge de PRs em rascunho, de frentes futuras ou com checks aplicáveis falhos. Falhas de inicialização do runner não equivalem a falhas de código.
+- Não publique chaves, dados de IAM, tokens ou materiais de terceiros. Não mude permissões, cobrança ou infraestrutura para contornar checks.
+- Preserve site, APK e conteúdo A1–A2 nas tarefas de documentação. Qualquer mudança nesses alvos exige escopo e verificação próprios.
+- Registre no PR o que foi proposto, testado, mergeado, publicado e efetivamente verificado; são estados distintos.
+
+Se houver divergência entre este arquivo e `AGENTS.md`, mantenha `AGENTS.md` como fonte comum e proponha correção por PR.

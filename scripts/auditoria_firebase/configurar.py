@@ -89,6 +89,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apply", action="store_true", help="Cria recursos e vínculos IAM descritos no plano")
     args = parser.parse_args()
+    if args.apply:
+        raise SystemExit("Instalador OIDC antigo aposentado. Nao aplique ao repositorio publico. Use o instalador atualizado de FelipeVRosa/Linvuu-Auditoria-Firebase.")
     if not args.apply:
         print(json.dumps({"projectId": PROJECT, "projectNumber": NUMBER, "accountRequired": "hello.linvuu@gmail.com",
             "serviceAccount": SA, "pool": POOL, "provider": PROVIDER, "condition": CONDITION,

@@ -12,3 +12,5 @@ Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENAC
 - Autorização atual do Felipe: auditar e corrigir segurança, cache, rotas, idiomas e SEO, inclusive fazer merges verificados. Não é autorização para exclusão indiscriminada de dados.
 - Livros B1–C2, protótipos e Vuu são frentes futuras; não entram no site/app como efeito colateral desta auditoria.
 - Testes da mudança e checks aplicáveis precisam passar antes do merge. Uma limitação externa deve ser registrada, não escondida.
+
+**Privacidade confirmada em 27/10/2026:** os três repositórios Linvuu, Linvuu-Livros-em-PDF e Linvuu-Auditoria-Firebase foram verificados como PRIVADOS via GitHub API. A URL do site continua pública; não tornar repositórios públicos para SEO. Confira a seção 10 de `docs/CONTINUIDADE-2026-10-27.md` e valide as permissões do conector se retornar 404. A CI de repositórios privados pode estar sujeita a cota. Confirme Render após a alteração de visibilidade.

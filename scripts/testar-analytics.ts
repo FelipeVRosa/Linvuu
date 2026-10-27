@@ -26,7 +26,7 @@ a.choose('no');assert.equal(data.has(ANALYTICS_ID),false);await a.capture('page_
 a.choose('yes');await a.capture('lesson_started');assert.notEqual(data.get(ANALYTICS_ID),first);
 const noStorage={getItem:()=>{throw Error('storage blocked');},setItem:()=>{throw Error('storage blocked');},removeItem:()=>{throw Error('storage blocked');}};
 const b=criarAnalytics(cfg,noStorage,send);b.choose('yes');await b.capture('page_viewed');assert.equal(calls.length,5);
-const invalid=criarAnalytics({...cfg,host:'https://attacker.invalid'},store,send);assert.equal(invalid.configured(),false);await invalid.capture('page_viewed');assert.equal(calls.length,3);
+const invalid=criarAnalytics({...cfg,host:'https://attacker.invalid'},store,send);assert.equal(invalid.configured(),false);await invalid.capture('page_viewed');assert.equal(calls.length,5);
 assert.deepEqual(rotaAnalytics('/curso/en/dia/3'),{page:'lesson',study_language:'en',lesson:3});assert.equal(rotaAnalytics('/entrar?token=secret'),null);assert.equal(rotaAnalytics('/user/private@example.com'),null);
 const pending=criarAnalytics(cfg,store,((_u,init)=>new Promise((_resolve,reject)=>{init?.signal?.addEventListener('abort',()=>reject(Error('aborted')));})) as typeof fetch);
 const request=pending.capture('page_viewed');pending.choose('no');assert.equal(await request,false);

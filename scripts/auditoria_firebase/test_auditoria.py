@@ -11,6 +11,15 @@ import configurar
 
 
 class AuditTests(unittest.TestCase):
+    def test_public_or_unknown_repository_visibility_is_denied(self):
+        env = {'GITHUB_REPOSITORY': 'FelipeVRosa/Linvuu', 'GITHUB_REF': 'refs/heads/main'}
+        for event in [{}, {'repository': {'private': False}}, {'repository': {'private': 'true'}}]:
+            with self.subTest(event=event), self.assertRaises(SystemExit):
+                coletar.validate_github_context(env, event)
+        coletar.validate_github_context(env, {'repository': {'private': True}})
+        with self.assertRaises(SystemExit):
+            coletar.validate_github_context({**env, 'GITHUB_REF': 'refs/heads/other'}, {'repository': {'private': True}})
+
     def test_pages_and_exact_rules_and_read_methods(self):
         calls = []
         def fake(req, **kwargs):

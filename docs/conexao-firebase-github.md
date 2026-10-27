@@ -4,7 +4,7 @@
 
 Preparar auditorias de configuração acionáveis pelo GitHub que ChatGPT/Codex e Claude já conseguem consultar. A conexão usa Workload Identity Federation (OIDC), não uma chave JSON compartilhada em conversa. Apenas o workflow `.github/workflows/auditoria-firebase.yml` da main de FelipeVRosa/Linvuu pode obter a identidade.
 
-Estado inicial: implementado e testado offline. A configuração Google ainda depende da conta administradora e o primeiro workflow autenticado ainda não foi executado. Isso NÃO significa Firebase conectado ou seguro. Não substitui os testes de login, billing, revogação e aplicativo.
+Estado em 27/10/2026: ponte integrada no PR #371; proprietário reportou configuração Google aplicada sem chaves. A primeira execução 40451944964 falhou no início, sem jobs ou coleta. A política Actions exclui google-github-actions e o repositório está público. A proteção atual impede coleta detalhada nesse contexto. A autenticação Google ainda não foi verificada. Isso NÃO significa Firebase conectado ou seguro. Não substitui os testes de login, billing, revogação e aplicativo.
 
 ## Identidades e limites
 
@@ -15,7 +15,7 @@ Estado inicial: implementado e testado offline. A configuração Google ainda de
 - Papel personalizado com leitura de metadados de projeto, bancos, regras, IAM e chaves. Sem `datastore.entities.*`, `firebaseauth.users.*`, `apikeys.keys.getKeyString`, criação de chaves, deploy ou escrita IAM.
 - O provider valida IDs numéricos do repositório e proprietário, ref main e caminho do workflow. PRs, forks e outros workflows não recebem a identidade.
 - Disparo manual; não há cron, `push`, `pull_request_target` nem comandos arbitrários fornecidos como entrada.
-- Actions fixadas por SHA. Credencial federada temporária criada pela action oficial, fora da pasta de resultados, com limpeza automática da action. Somente `auditoria-firebase/` é enviada como artefato privado por três dias.
+- Actions fixadas por SHA. Credencial federada temporária criada pela action oficial, fora da pasta de resultados, com limpeza automática da action. Somente `auditoria-firebase/` pode ser enviada por três dias, quando o evento confirmar repositório privado. Artefatos não são privados por si: sua leitura acompanha o acesso ao repositório. A descrição anterior de artefato privado estava incorreta para a visibilidade pública atual.
 
 ## Configuração inicial — pelo proprietário do projeto
 
@@ -31,15 +31,20 @@ Pools com outros providers e contas com outros vínculos de confiança também i
 
 ## Uso após a configuração
 
-1. O workflow precisa estar mergeado na main.
-2. Abrir https://github.com/FelipeVRosa/Linvuu/actions/workflows/auditoria-firebase.yml e executar `Run workflow` na main; o assistente também pode usar a operação de dispatch do conector GitHub, quando exposta e autorizada.
-3. Ler `resultado.json` e os JSON de configuração no artefato da execução. Registrar run ID, SHA, horário e erros no assunto da auditoria.
+1. O workflow precisa estar mergeado na main e o destino dos relatórios precisa ser privado. No estado público atual, a coleta é bloqueada antes de obter token. Não remover esse bloqueio para executar.
+2. Após decisão explícita do proprietário sobre privacidade, revisar a allowlist Actions. Preservar a política selected e as outras entradas; liberar apenas as duas actions oficiais nos SHAs usados:
+   - `google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093`
+   - `google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db`
+3. Abrir https://github.com/FelipeVRosa/Linvuu/actions/workflows/auditoria-firebase.yml e executar `Run workflow` na main; o assistente também pode usar a operação de dispatch do conector GitHub, quando exposta e autorizada.
+4. Ler `resultado.json` e os JSON de configuração no artefato da execução. Registrar run ID, SHA, horário e erros no assunto da auditoria.
 
 Saída 0: coleta prevista concluída e ruleset padrão textualmente igual ao arquivo versionado. Não equivale a aprovação de segurança.
 Saída 1: coleta concluída com diferença textual de regras; investigar antes de publicar qualquer mudança.
 Saída 2: falha de acesso, projeto não confirmado ou comparação incompleta. Não interpretar ausência de dados como sucesso.
 
 O coletor não lista documentos nem contas de usuários, não lê chaves privadas nem valores de API keys. O IAM de organização/pasta e todos os recursos externos continuam fora do escopo. Regras de bancos nomeados são coletadas quando retornadas nas releases; a comparação automática é do ruleset padrão.
+
+Manter o código público e executar a auditoria em outro repositório privado exige revisar os IDs, condição de confiança OIDC, caminhos e validação do coletor. Isso ainda não foi implementado. Não compartilhar políticas IAM detalhadas em issues, logs ou artefatos públicos.
 
 ## Desativar a conexão
 

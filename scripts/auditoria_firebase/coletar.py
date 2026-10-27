@@ -120,14 +120,24 @@ def collect(reader, rules_path):
     return manifest
 
 
+def validate_github_context(environ, event):
+    if environ.get("GITHUB_REPOSITORY") != "FelipeVRosa/Linvuu" or environ.get("GITHUB_REF") != "refs/heads/main":
+        raise SystemExit("Auditoria autenticada permitida apenas na main de FelipeVRosa/Linvuu.")
+    if event.get("repository", {}).get("private") is not True:
+        raise SystemExit("Coleta detalhada bloqueada: repositório privado não confirmado.")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", default="auditoria-firebase")
     parser.add_argument("--rules", default="firestore.rules")
     args = parser.parse_args()
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        if os.environ.get("GITHUB_REPOSITORY") != "FelipeVRosa/Linvuu" or os.environ.get("GITHUB_REF") != "refs/heads/main":
-            raise SystemExit("Auditoria autenticada permitida apenas na main de FelipeVRosa/Linvuu.")
+        try:
+            event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
+        except (OSError, ValueError, KeyError):
+            raise SystemExit("Evento GitHub não legível; nenhuma coleta iniciada.")
+        validate_github_context(os.environ, event)
     result = {"status": "coleta-interrompida"}
     try:
         token = subprocess.check_output(["gcloud", "auth", "print-access-token"], text=True).strip()

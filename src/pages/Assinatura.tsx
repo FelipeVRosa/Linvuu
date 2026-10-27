@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
@@ -9,6 +9,7 @@ import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
 import { PlanosPreview } from '../components/PlanosPreview';
+import { analytics } from '../lib/analytics';
 import '../site-publico.css';
 
 export default function Assinatura() {
@@ -18,6 +19,8 @@ export default function Assinatura() {
   const { usuario, carregando } = useAuth();
   const a = useAssinatura();
   const [params] = useSearchParams();
+  // Retorno do Stripe não é confirmação de pagamento (Pix e boleto são assíncronos).
+  useEffect(() => { if (params.get('ok') === '1') void analytics.capture('checkout_returned', { page: 'plans' }); }, [params]);
   const [ocupado, setOcupado] = useState(false);
   const [erro, setErro] = useState('');
   const nav = useNavigate();

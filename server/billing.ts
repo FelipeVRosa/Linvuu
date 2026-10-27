@@ -28,7 +28,8 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
   const h = req.headers.authorization || '';
   if (!h.startsWith('Bearer ') || !projeto) return null;
   try {
-    const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7));
+    // Revogação e conta desativada também invalidam tokens ainda não expirados.
+    const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7), true);
     return { uid: t.uid, email: t.email };
   } catch (e) {
     if (e instanceof Error && /sem credencial/.test(e.message) && !avisouCredencial) { avisouCredencial = true; console.error('[Linvuu]', e.message); }

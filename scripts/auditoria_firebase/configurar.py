@@ -42,7 +42,7 @@ def configure():
     role = run(["iam", "roles", "describe", ROLE, "--project=" + PROJECT], missing=True)
     if role is None:
         run(["iam", "roles", "create", ROLE, "--project=" + PROJECT, "--title=Linvuu auditoria de configuracao", "--stage=GA", "--permissions=" + ",".join(PERMISSIONS)])
-    elif set(role.get("includedPermissions", [])) != set(PERMISSIONS) or role.get("deleted"):
+    elif set(role.get("includedPermissions", [])) != set(PERMISSIONS) or role.get("deleted") or role.get("stage") != "GA":
         raise RuntimeError("Papel existente diverge do plano. Revisar manualmente; não foi sobrescrito.")
     pool_args = ["iam", "workload-identity-pools"]
     pool = run([*pool_args, "describe", POOL, "--project=" + PROJECT, "--location=global"], missing=True)
@@ -51,6 +51,9 @@ def configure():
     elif pool.get("state") != "ACTIVE" or pool.get("disabled", False):
         raise RuntimeError("Pool existente não está ativo; não foi reativado automaticamente.")
     provider_args = [*pool_args, "providers"]
+    providers = run([*provider_args, "list", "--project=" + PROJECT, "--location=global", "--workload-identity-pool=" + POOL])
+    if providers and any(item.get("name", "").rsplit("/", 1)[-1] != PROVIDER for item in providers):
+        raise RuntimeError("Pool contém outros providers. Revisar antes de compartilhar a confiança da conta.")
     provider = run([*provider_args, "describe", PROVIDER, "--project=" + PROJECT, "--location=global", "--workload-identity-pool=" + POOL], missing=True)
     if provider is None:
         run([*provider_args, "create-oidc", PROVIDER, "--project=" + PROJECT, "--location=global", "--workload-identity-pool=" + POOL,
@@ -65,6 +68,11 @@ def configure():
         run(["iam", "service-accounts", "create", "auditoria-github", "--project=" + PROJECT, "--display-name=Linvuu auditoria GitHub"])
     elif sa.get("disabled", False):
         raise RuntimeError("Conta existente desativada; não foi reativada.")
+    sa_policy = run(["iam", "service-accounts", "get-iam-policy", SA, "--project=" + PROJECT])
+    for binding in sa_policy.get("bindings", []):
+        if (binding.get("role") != "roles/iam.workloadIdentityUser"
+            or set(binding.get("members", [])) - {PRINCIPAL}):
+            raise RuntimeError("Conta possui vínculos de confiança diferentes. Revisar antes de atribuir o papel de auditoria.")
     policy = run(["projects", "get-iam-policy", PROJECT])
     existing_roles = {binding["role"] for binding in policy.get("bindings", [])
                       if "serviceAccount:" + SA in binding.get("members", [])}

@@ -80,6 +80,24 @@ class AuditTests(unittest.TestCase):
         for claim in ['repository_id', 'repository_owner_id', 'ref', 'workflow_ref']:
             self.assertIn('assertion.' + claim, configurar.CONDITION)
 
+    def test_existing_pool_with_other_provider_is_not_trusted(self):
+        calls = []
+        def fake_run(args, missing=False):
+            calls.append(args)
+            if args[:2] == ['projects', 'describe']:
+                return {'projectNumber': configurar.NUMBER}
+            if args[:3] == ['iam', 'roles', 'describe']:
+                return {'includedPermissions': configurar.PERMISSIONS, 'stage': 'GA'}
+            if args[:3] == ['iam', 'workload-identity-pools', 'describe']:
+                return {'state': 'ACTIVE'}
+            if args[:4] == ['iam', 'workload-identity-pools', 'providers', 'list']:
+                return [{'name': 'projects/982052790317/locations/global/workloadIdentityPools/linvuu-auditoria/providers/other'}]
+            return {}
+        with patch.object(configurar.subprocess, 'check_output', return_value='hello.linvuu@gmail.com\n'), patch.object(configurar, 'run', side_effect=fake_run):
+            with self.assertRaisesRegex(RuntimeError, 'outros providers'):
+                configurar.configure()
+        self.assertFalse(any('add-iam-policy-binding' in args for args in calls))
+
 
 if __name__ == '__main__':
     unittest.main()

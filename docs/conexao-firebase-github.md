@@ -27,6 +27,8 @@ O instalador habilita IAM, IAM Credentials e STS, cria um papel de leitura, pool
 
 Recursos compatíveis existentes são reaproveitados. Divergência de papel/provider, conta desativada ou outros papéis de projeto na conta de auditoria interrompem a instalação sem sobrescrever o recurso conflitante. Pode haver recursos de etapas anteriores já criados se uma etapa posterior falhar; consultar o erro e o estado antes de repetir.
 
+Pools com outros providers e contas com outros vínculos de confiança também interrompem a instalação antes dos vínculos da ponte. A propagação de IAM/federação pode levar alguns minutos; um primeiro erro de propagação não justifica ampliar os papéis.
+
 ## Uso após a configuração
 
 1. O workflow precisa estar mergeado na main.

@@ -8,12 +8,12 @@ import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
 import { consultarPlay, playConfigurado } from './play';
 import { registrarWebhookCobranca } from './billing-webhook';
+import { precoMensalObrigatorio, planoSiteValido } from './billing-contrato';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
 const stripe = chave ? new Stripe(chave) : null;
-let precoCache: string | null = process.env.STRIPE_PRICE_ID || null;
-
+// Preços reais são administrados no Stripe e configurados no Render, nunca criados por requisições de compra.
 const PRECO_CENTAVOS = 13900;
 const PRECO_TRIMESTRAL = 41700; // 3 x R$ 139, pagamento único (cartão ou boleto), sem renovação automática
 const PRECO_TRIMESTRAL_PIX = 29190; // 30% de desconto sobre R$ 417 (41700 x 0,7), só no Pix, pagamento único
@@ -39,12 +39,10 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
 let avisouCredencial = false;
 
 async function preco(): Promise<string> {
-  if (precoCache) return precoCache;
-  const achados = await stripe!.prices.search({ query: "active:'true' AND metadata['linvuu']:'mensal'" });
-  if (achados.data[0]) return (precoCache = achados.data[0].id);
-  const produto = await stripe!.products.create({ name: 'Linvuu Mensal', metadata: { linvuu: 'mensal' } });
-  const p = await stripe!.prices.create({ product: produto.id, currency: 'brl', unit_amount: PRECO_CENTAVOS, recurring: { interval: 'month' }, metadata: { linvuu: 'mensal' } });
-  return (precoCache = p.id);
+  // O endpoint /readyz já consulta a API Stripe em modo somente leitura para validar esse preço.
+  // Não criar produtos/preços automaticamente: ausência de configuração é erro operacional,
+  // nunca autorização para mutação financeira silenciosa em modo live.
+  return precoMensalObrigatorio(process.env.STRIPE_PRICE_ID);
 }
 
 // A busca de clientes do Stripe é «eventualmente consistente»: um cliente recém-criado pode levar até um minuto para
@@ -220,7 +218,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     try {
       const base = urlBase();
       const plano = req.body?.plano;
-      if (!['mensal', 'trimestral', 'trimestral-pix', 'anual'].includes(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
+      if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
       const pix = plano === 'trimestral-pix';
       const anual = plano === 'anual';
       const pacote = plano === 'trimestral' || pix || anual;

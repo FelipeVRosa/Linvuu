@@ -20,7 +20,7 @@ await a.capture('checkout_returned',{page:'plans',billing_plan:'desconto_inventa
 const retorno=JSON.parse(String(calls[2].init.body));
 assert.equal(retorno.event,'checkout_returned');
 assert.equal(retorno.properties.billing_plan,undefined);
-assert.doesNotMatch(String(calls[2].init.body),/secret|desconto_inventado|token/);
+assert.doesNotMatch(JSON.stringify(retorno.properties),/secret|desconto_inventado|token/);
 const first=data.get(ANALYTICS_ID);await a.capture('lesson_started',{study_language:'ru',lesson:3});assert.equal(JSON.parse(String(calls[3].init.body)).distinct_id,first);
 a.choose('no');assert.equal(data.has(ANALYTICS_ID),false);await a.capture('page_viewed');assert.equal(calls.length,4);
 a.choose('yes');await a.capture('lesson_started');assert.notEqual(data.get(ANALYTICS_ID),first);

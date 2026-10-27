@@ -1,5 +1,8 @@
 # Linvuu — instruções para Claude (estado comprovado)
 
+## Ponto de entrada obrigatório para a retomada
+Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por inteiro** antes de alterar qualquer coisa. Ela registra todas as entregas de 27/10 (PRs #368–#383, Render, Firebase/Firestore, Google Cloud IAM/OIDC, Search Console, Stripe, APK e mascote Vuu). Os parágrafos abaixo são *snapshots históricos* e podem mencionar repositórios públicos, SHAs antigos ou deploys ultrapassados. Verifique hoje a visibilidade real e a main via GitHub API. **Vuu foi citado pelo proprietário, mas não localizado como implementação na main**: não inventar status de lançamento. Claude não recebe memórias de ChatGPT/Gemini automaticamente; GitHub + testes são o protocolo de sincronia.
+
 **Fonte de regras:** leia `AGENTS.md` e `docs/COORDENACAO-IA.md`. Antes de qualquer edição, consulte a `main`, PRs abertos, checks e `docs/ESTADO-ATUAL.md`; esse último é um *snapshot* com data, não uma sincronização permanente.
 
 ## O que foi verificado em 27/10/2026

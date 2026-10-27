@@ -35,6 +35,12 @@ assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
 assert.ok(!html('/curso/en/dia/9').includes('<h2>Vocabulário</h2>'));
 assert.ok(html('/curso/en/dia/9').includes('name="robots" content="noindex"'), 'sessao paga sem amostra publica tem noindex');
 assert.ok(!html('/curso/en').includes('name="robots" content="noindex"'), 'apresentacao publica do curso segue indexavel');
+for (const curso of ['en', 'de', 'ru', 'fr', 'it', 'es']) {
+  const pagina = html(`/curso/${curso}`);
+  assert.ok(pagina.includes('"logo":"https://linvuu.com.br/brand/linvuu-logo.png"'), `organização com logo real no curso ${curso}`);
+  assert.ok(pagina.includes('"provider":{'), `provedor de curso registrado ${curso}`);
+}
+
 for (const curso of ['en', 'ru']) {
   const links = [...html(`/curso/${curso}`).matchAll(new RegExp(`href="/curso/${curso}/dia/(\\d+)"`, 'g'))].map((x) => Number(x[1]));
   assert.deepEqual(links, [1, 2, 3, 4, 5, 6, 7, 8], 'todas as oito amostras possuem links estaticos, sem sessoes pagas');

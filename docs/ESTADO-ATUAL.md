@@ -1,10 +1,12 @@
 # Estado atual da Linvuu
-Registro inicial: 26/10/2026 (Brasília). Este arquivo é o ponto de entrada comum; atualizar a cada mudança material.
+Registro inicial: 26/10/2026 (Brasília). Atualizado em 27/10/2026 após leitura da coleta Cloud Shell e consultas diretas ao GitHub/Render. Este arquivo é um snapshot, não uma sincronização automática; verificar main e deploy em cada retomada.
 ## Baseline verificado
-- Repositório: FelipeVRosa/Linvuu, privado. Main consultada: `751c3b834a08afa913316839e14b32e3c33ad75e`.
-- Render: serviço linvuu, deploy `dep-dbecv495efls73asv7ig` live, mesmo SHA; conclusão em 24/10/2026 15:34:29 UTC. Trigger checksPass. Não confundir deploy live com saúde de todos os fluxos.
+- Repositório: FelipeVRosa/Linvuu, privado. Main consultada antes deste PR documental: `118a3abe4c5ce88ac726c8f76042ea5d1a25a7be`. O SHA `751c3b8` é anterior; e-mails de runs desse commit não identificam a main atual.
+- Render: serviço linvuu (`srv-db03818u01pc738mirig`), deploy `dep-dbg0hpvb9u1s73fopnc0` live, SHA `118a3abe4c5ce88ac726c8f76042ea5d1a25a7be`; conclusão em 27/10/2026 02:15:58 UTC (26/10 23:15:58 Brasília). Reconsultado em 27/10. Trigger checksPass. Não confundir deploy live com saúde de todos os fluxos.
 - Site: https://linvuu.com.br. React/Vite/TypeScript + Express; não é um backend PHP.
-- Auth e Firestore: projeto linvuu. Regras versionadas em firestore.rules; igualdade com regras publicadas AINDA NÃO verificada nesta rodada.
+- Firebase configurado no Render: `VITE_FIREBASE_PROJECT_ID=linvuu`, `VITE_FIREBASE_AUTH_DOMAIN=linvuu.firebaseapp.com`, App ID com número `982052790317`. `FIREBASE_PROJECT_ID` não existe como variável direta do serviço; o backend usa a variável VITE como fallback. A identidade do Secret File e eventuais grupos herdados ainda precisam de conferência.
+- Projeto distinto `linvuu-995d0` (número `371272154247`): coleta Cloud Shell autenticada retornou listas vazias de bancos e releases. Essa conta teve 403 em `linvuu`. NÃO migrar o Render nem publicar regras em `linvuu-995d0` como solução para o 403. Ver [auditoria Firebase](auditoria-firebase-2026-10-27.md).
+- Regras versionadas em firestore.rules; igualdade com regras publicadas no projeto em uso AINDA NÃO verificada nesta rodada.
 - Cloudflare: zona linvuu.com.br na conta Linvuu; leitura nativa e uma conexão Composio funcionam. A conexão Composio antiga padrão tem header de autenticação inválido.
 - Google Search Console: propriedade sc-domain:linvuu.com.br com acesso de proprietário confirmado via API.
 ## Frentes independentes
@@ -31,11 +33,11 @@ Registro inicial: 26/10/2026 (Brasília). Este arquivo é o ponto de entrada com
 - Livro protegido resolve caminho com import.meta.dirname (ESM); antes referenciava __dirname não definido.
 - Teste de middleware e HTTP real para 401/403/404; teste existente de IP passou. CI completa do PR #368 aprovada, incluindo builds website/APK e regras em emulador. Sem checkout real nem acesso pago em produção.
 ## Autenticação — PR #369
-A exclusão desativa a conta e revoga sessões, mas usuario(req) usava verifyIdToken sem checkRevoked. O PR #369 pede verificação de revogação e conta desativada (true), mantendo a recusa em caso de erro. Ainda depende de CI/merge/deploy e teste real em conta de teste. Uma chamada adicional ao Auth pode aumentar latência; não neutralizar a revogação com cache.
+A exclusão desativa a conta e revoga sessões, mas usuario(req) usava verifyIdToken sem checkRevoked. O PR #369 foi mergeado e publicado em `118a3abe`; agora pede verificação de revogação e conta desativada (true), mantendo a recusa em caso de erro. Build, gitleaks e auditoria de dependências desse SHA: success, reconsultados em 27/10. Ainda falta teste real de tokens revogados/contas desativadas. Uma chamada adicional ao Auth pode aumentar latência; não neutralizar a revogação com cache.
 ## Pendências por prioridade
-1. PR #368 mergeado após build, visual, gitleaks e auditoria de dependências aprovados. Main passou a a2a38e9aa9e76c73a7f9574b64820790672bb786. Deploy/HTTP pós-merge ainda pendentes; Render observado ainda no baseline anterior.
+1. PRs #368 e #369 mergeados e deploy live confirmado. Verificação HTTP pós-deploy registrada no PR #369: APIs 401/404 com private/no-store e noindex; /healthz e /readyz 200 com os mesmos cabeçalhos; home e páginas públicas 200 com no-cache. Isso não substitui teste autenticado ou regras publicadas.
 2. Obter as URLs individuais de redirecionamento/robots no Search Console e testar cadeias e política de indexação de cada uma.
-3. Autenticação administrativa Firebase/Google Cloud: conector Composio disponível é apenas público de Auth e retornou 403; plugin Firebase instalado, mas nenhum método remoto administrativo exposto nesta sessão. Comparar ruleset/release publicado, IAM e restrições de chave com credencial administrativa apropriada.
+3. Autenticação administrativa no projeto `linvuu`: a conta do Cloud Shell não conseguiu listar bancos/regras nele. Confirmar a conta proprietária e obter acesso ao projeto correto, consultar IAM e regras publicadas. O IAM coletado de `linvuu-995d0` não comprova o IAM de produção. Conector Composio é público de Auth; plugin Firebase instalado não expôs métodos remotos administrativos nesta sessão.
 4. Concluir revisão de backend, conteúdo servido, idiomas, dependências e histórico de segredos. 164 arquivos de src foram recuperados; isso NÃO equivale a auditoria integral aprovada.
 5. Identificar os supostos vazamentos PHP por URL/arquivo/evidência. Nenhum PHP encontrado no inventário de src e scripts consultado; duas sondagens públicas deram 404. Não concluir ausência em todo o histórico.
 6. Checagem HTTP das 81 URLs concluída: todas 200, sem redirecionamentos, canonical próprio e sem noindex. Renderização completa de cada página ainda não validada.

@@ -29,12 +29,18 @@ jobs:
           path: ~/.cache/firebase/emulators
           key: firebase-emulators-${{ runner.os }}-firebase-tools-15.34.1
       - run: npm ci
+      - name: Testar coletor e limites da auditoria Firebase sem acesso de produção
+        run: python3 -m unittest discover -s scripts/auditoria_firebase -p 'test_*.py' -v
       - name: Verificar tipos TypeScript
         run: npm run lint && npm run lint:apk
+      - name: Verificar política de cache e indexação das APIs
+        run: node --import tsx scripts/testar-cache-api.ts
       - name: Testar consentimento e minimização PostHog sem enviar dados
         run: node --import tsx scripts/testar-analytics.ts
       - name: Testar prontidao sem dependencias de producao
         run: node --import tsx scripts/testar-prontidao.ts
+      - name: Garantir que o checkout valida preços sem criar produtos no Stripe real
+        run: node --import tsx scripts/testar-contrato-billing.ts
       - name: Testar notificações Stripe assinadas sem cobranças reais
         run: node --import tsx scripts/testar-billing-webhook.ts
       - name: Testar medição sem dados de produção
@@ -66,6 +72,7 @@ jobs:
           node --import tsx scripts/testar-robots-navegacao.ts
           node --import tsx scripts/testar-http-seo.ts
           node --import tsx scripts/testar-links-publicos.ts
+          node scripts/testar-seo-http.mjs
       - run: npm run build:apk
       - run: npm run testar:plataformas
       - name: Sistema de design (contraste nos dois temas, só var() nos módulos, CSS dentro do limite)
@@ -75,4 +82,5 @@ jobs:
           for i in 1 2 3; do npm audit --omit=dev --audit-level=high && exit 0; echo "tentativa $i falhou"; sleep 20; done; exit 1
       - name: Teste de segurança do servidor (cabeçalhos, API fechada, limite de uso)
         run: npm run testar:seguranca
+
 

@@ -2,8 +2,9 @@ import { HomeCourseLink } from '../components/HomeCourseLink';
 import { homeText as h, homeNotice } from '../i18n/home';
 import { LOCALE } from '../i18n';
 import { useState } from 'react';
-import { PlanosPreview } from '../components/PlanosPreview';
+import { OfertaAtual } from '../components/OfertaAtual';
 import { HOME_BR } from '../config/oferta-publica';
+import { LIVROS_EM_PRODUCAO } from '../lib/livros';
 import { Link } from 'react-router-dom';
 import { falar } from '../lib/audio';
 import { usePageTitle } from '../lib/usePageTitle';
@@ -22,8 +23,7 @@ const idiomas = [
 const perguntas = [
   ['Preciso saber alguma coisa para começar?', 'Não. Você pode começar do zero. As explicações são em português e a trilha apresenta o idioma passo a passo.'],
   ['Como posso conhecer as aulas?', 'As duas primeiras aulas de cada curso são gratuitas. Você pode experimentar antes de decidir pela assinatura.'],
-  ['Os novos planos já estão disponíveis?', 'Start, Basic, Intermediário e Premium estão em preparação. A comparação nesta página apresenta a proposta; os preços e as condições serão informados antes da contratação. A seleção de idiomas aqui não altera sua conta.'],
-  ['Qual é a diferença do apoio no Premium?', 'A proposta do Premium inclui professor para dúvidas específicas sobre o conteúdo pelo WhatsApp Business. Horários e prazo de resposta serão definidos antes do lançamento. Todos os planos terão a mesma qualidade de conteúdo e suporte técnico.'],
+  ['Quais cursos estão incluídos?', 'A assinatura atual dá acesso aos cursos da Linvuu. Antes de contratar, experimente as duas primeiras aulas de cada curso sem cartão.'],
   ['Quanto tempo preciso reservar?', 'As sessões são organizadas para cerca de 30 minutos. Você pode estudar no seu ritmo e voltar para continuar.'],
 ];
 export default function HomeBrasileiros() {
@@ -50,7 +50,7 @@ export default function HomeBrasileiros() {
       </div>
       <div className="br-scene" id="experimente">
         <span className="br-orbit br-orbit-one" aria-hidden="true">{h("Olá, mundo.")}</span><span className="br-orbit br-orbit-two" aria-hidden="true">{h("Um novo começo ↗")}</span>
-        <div className="br-demo"><div className="br-demo-top"><span className="br-dot" />{h(" UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</div>
+        <div className="br-demo"><div className="br-demo-top"><img className="br-vuu" src="/assets/vuu/vuu-neutro.svg" width="48" height="48" alt="" /><span>{h("VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</span></div>
           <label htmlFor="br-idioma">{h("Quero ouvir em")}</label><select id="br-idioma" value={idioma.id} disabled={tocando} onChange={e => {setIdioma(idiomas.find(i => i.id === e.target.value)!); setErro('');}}>{idiomas.map(i => <option key={i.id} value={i.id}>{h(i.nome)}</option>)}</select>
           <span className="br-demo-context">{h("NO CAFÉ")}</span><p className="br-phrase" lang={idioma.lang}>{idioma.frase}</p><p className="br-translation">{h("Olá. Um café, por favor.")}</p>
           <div className="br-sound"><button type="button" onClick={ouvir} disabled={tocando} aria-label={`${h('Ouvir frase em')} ${h(idioma.nome)}`}><span aria-hidden="true">{tocando ? '…' : '▶'}</span></button><div className={tocando ? 'br-wave playing' : 'br-wave'} aria-hidden="true">{Array.from({length: 23}, (_, i) => <i key={i} style={{height: `${12 + (i * 17 % 35)}px`, animationDelay: `${i * 45}ms`}} />)}</div><span>{tocando ? h('Ouvindo…') : h('Ouça. Repita.')}</span></div>
@@ -59,6 +59,14 @@ export default function HomeBrasileiros() {
       </div>
     </section>
     <div className="br-benefits"><span><strong>{h("Em português.")}</strong>{h(" Desde a explicação.")}</span><span><strong>{h("Com áudio.")}</strong>{h(" Para ouvir e repetir.")}</span><span><strong>{h("No seu ritmo.")}</strong>{h(" Uma sessão por vez.")}</span></div>
+    <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
+      <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-neutro.svg" alt="" width="220" height="220" loading="lazy" /><span>VUU / LINVUU</span></div>
+      <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
+        <p>{h('Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.')}</p>
+        <p>{h('Comece com uma explicação em português e pratique no seu ritmo.')}</p>
+        <HomeCourseLink to="/curso/de" className="br-text-link">{h('Conhecer o curso de alemão →')}</HomeCourseLink>
+      </div>
+    </section>
     <section className="br-section" id="metodo"><div className="br-section-head"><div><p className="br-eyebrow">{h("MENOS ADIVINHAÇÃO. MAIS COMPREENSÃO.")}</p><h2>{h("Entender muda")}<br />{h("o jeito de aprender.")}</h2></div><p>{h("Você traz o português. A Linvuu usa essa base para explicar os sons, as estruturas e os erros comuns no novo idioma.")}</p></div>
       <div className="br-method">{[
         ['01', 'Ouça o idioma acontecer.', 'Palavras e diálogos com áudio para ligar o que você lê ao que você escuta.', '◉', '/fotos/comece.jpg'],
@@ -66,9 +74,9 @@ export default function HomeBrasileiros() {
         ['03', 'Coloque em prática.', 'Exercícios com correção e atividades de fala e escrita para usar o que aprendeu.', '↗', '/fotos/pratica.jpg'],
       ].map(([n, titulo, texto, icon, foto]) => <article key={n}><img className="br-method-foto" src={foto} alt="" width="1000" height="600" loading="lazy" decoding="async" /><div className="br-method-top"><span>{n}</span><b aria-hidden="true">{icon}</b></div><h3>{h(titulo)}</h3><p>{h(texto)}</p></article>)}</div>
     </section>
-    <PlanosPreview />
+    <OfertaAtual />
     <section className="br-section" id="idiomas"><span id="cursos" /><div className="br-section-head"><div><p className="br-eyebrow">{h("UMA VONTADE JÁ É UM COMEÇO")}</p><h2>{h("Qual será o seu")}<br />{h("próximo “olá”?")}</h2></div><p>{h("Para viajar, se aproximar de outras culturas ou realizar um objetivo seu. Encontre um idioma para começar.")}</p></div><div className="br-languages">{idiomas.map((i, n) => <HomeCourseLink key={i.id} to={`/curso/${i.id}`} className={`br-language br-language-${n}`}><span className="br-greeting" lang={i.lang}>{i.oi}<span aria-hidden="true">.</span></span><div><h3>{h(i.nome)}</h3><span aria-hidden="true">↗</span></div><p>{h(i.detalhe)}</p></HomeCourseLink>)}</div></section>
-    <section className="br-book"><div className="br-book-art" aria-hidden="true"><span>{h("COLEÇÃO LINVUU")}</span><strong>{h("Um idioma.")}<br />{h("Muitas")}<br /><em>{h("descobertas.")}</em></strong><span>{h("LEIA · OUÇA · EXPLORE")}</span></div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link></div></section>
+    <section className="br-book"><div className="br-book-art" aria-hidden="true"><span>{h("COLEÇÃO LINVUU")}</span><strong>{h("Um idioma.")}<br />{h("Muitas")}<br /><em>{h("descobertas.")}</em></strong><span>{h("LEIA · OUÇA · EXPLORE")}</span></div><div><p className="br-eyebrow">{h("PARA QUEM GOSTA DE IR ALÉM")}</p><h2>{h("Seu aprendizado")}<br />{h("também tem páginas.")}</h2><p>{h("Explore os livros da Linvuu, leia com calma e volte aos assuntos que merecem mais atenção.")}</p><p>{h(LIVROS_EM_PRODUCAO)}</p><Link className="br-text-link" to="/livros">{h("Conhecer a coleção →")}</Link><div className="br-book-links"><HomeCourseLink to="/livros/de">{h("Livro de alemão →")}</HomeCourseLink><HomeCourseLink to="/livros/es">{h("Livro de espanhol →")}</HomeCourseLink></div></div></section>
     <section className="br-section br-faq" id="faq"><div><p className="br-eyebrow">{h("VAMOS COMEÇAR BEM")}</p><h2>{h("Uma dúvida")}<br />{h("antes do primeiro passo?")}</h2><Link to="/contato" className="br-text-link">{h("Fale com a Linvuu →")}</Link></div><div>{perguntas.map(([p,r]) => <details key={p}><summary>{h(p)}</summary><p>{h(r)}</p></details>)}</div></section>
     <section className="br-last"><p className="br-eyebrow">{h("SEU PRÓXIMO IDIOMA COMEÇA COM UM PASSO")}</p><h2>{h("Abra espaço para")}<br /><em>{h("novas conversas.")}</em></h2><a href="#planos" className="br-button">{h("Encontrar meu plano ↗")}</a><p>{h("Conheça a proposta. Explore os idiomas. Experimente uma aula.")}</p></section>
     <JsonLd dados={{'@context':'https://schema.org','@type':'EducationalOrganization',name:'Linvuu',url:'https://linvuu.com.br',logo:'https://linvuu.com.br/brand/linvuu-logo.png'}} />

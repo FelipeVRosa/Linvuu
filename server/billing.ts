@@ -8,12 +8,12 @@ import { getAuth } from 'firebase-admin/auth';
 import { firebaseAdmin } from './firebase-admin';
 import { consultarPlay, playConfigurado } from './play';
 import { registrarWebhookCobranca } from './billing-webhook';
+import { precoMensalObrigatorio, planoSiteValido } from './billing-contrato';
 
 const chave = process.env.STRIPE_SECRET_KEY;
 const projeto = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID;
 const stripe = chave ? new Stripe(chave) : null;
-let precoCache: string | null = process.env.STRIPE_PRICE_ID || null;
-
+// Preços reais são administrados no Stripe e configurados no Render, nunca criados por requisições de compra.
 const PRECO_CENTAVOS = 13900;
 const PRECO_TRIMESTRAL = 41700; // 3 x R$ 139, pagamento único (cartão ou boleto), sem renovação automática
 const PRECO_TRIMESTRAL_PIX = 29190; // 30% de desconto sobre R$ 417 (41700 x 0,7), só no Pix, pagamento único
@@ -28,7 +28,8 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
   const h = req.headers.authorization || '';
   if (!h.startsWith('Bearer ') || !projeto) return null;
   try {
-    const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7));
+    // Revogação e conta desativada também invalidam tokens ainda não expirados.
+    const t = await getAuth(firebaseAdmin()).verifyIdToken(h.slice(7), true);
     return { uid: t.uid, email: t.email };
   } catch (e) {
     if (e instanceof Error && /sem credencial/.test(e.message) && !avisouCredencial) { avisouCredencial = true; console.error('[Linvuu]', e.message); }
@@ -38,12 +39,10 @@ export async function usuario(req: Request): Promise<{ uid: string; email?: stri
 let avisouCredencial = false;
 
 async function preco(): Promise<string> {
-  if (precoCache) return precoCache;
-  const achados = await stripe!.prices.search({ query: "active:'true' AND metadata['linvuu']:'mensal'" });
-  if (achados.data[0]) return (precoCache = achados.data[0].id);
-  const produto = await stripe!.products.create({ name: 'Linvuu Mensal', metadata: { linvuu: 'mensal' } });
-  const p = await stripe!.prices.create({ product: produto.id, currency: 'brl', unit_amount: PRECO_CENTAVOS, recurring: { interval: 'month' }, metadata: { linvuu: 'mensal' } });
-  return (precoCache = p.id);
+  // O endpoint /readyz já consulta a API Stripe em modo somente leitura para validar esse preço.
+  // Não criar produtos/preços automaticamente: ausência de configuração é erro operacional,
+  // nunca autorização para mutação financeira silenciosa em modo live.
+  return precoMensalObrigatorio(process.env.STRIPE_PRICE_ID);
 }
 
 // A busca de clientes do Stripe é «eventualmente consistente»: um cliente recém-criado pode levar até um minuto para
@@ -203,7 +202,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
         if (!(await acesso(u)).ativa) { res.status(403).json({ error: 'Assinatura necessária.' }); return; }
       } catch (e) { console.error('audio', e); res.status(500).json({ error: 'Não foi possível verificar a assinatura.' }); return; }
     }
-    res.set('Cache-Control', 'private, max-age=3600').type('audio/mpeg').sendFile(arq);
+    res.set('Cache-Control', 'private, no-store').type('audio/mpeg').sendFile(arq);
   });
 
   app.get('/api/billing/status', async (req: Request, res: Response) => {
@@ -219,7 +218,7 @@ export function registrarCobranca(app: Express, urlBase: () => string) {
     try {
       const base = urlBase();
       const plano = req.body?.plano;
-      if (!['mensal', 'trimestral', 'trimestral-pix', 'anual'].includes(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
+      if (!planoSiteValido(plano)) { res.status(400).json({ error: 'Plano inválido.' }); return; }
       const pix = plano === 'trimestral-pix';
       const anual = plano === 'anual';
       const pacote = plano === 'trimestral' || pix || anual;
@@ -275,7 +274,8 @@ export function registrarLivroProtegido(app: Express) {
     if (!a.ativa) { res.status(402).json({ error: 'Assinatura necessária.' }); return; }
     res.setHeader('Cache-Control', 'private, no-store');
     res.setHeader('X-Robots-Tag', 'noindex, nofollow');
-    try { res.type('html').send(fs.readFileSync(path.resolve(__dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
+    try { res.type('html').send(fs.readFileSync(path.resolve(import.meta.dirname, 'conteudo', 'gramatica-ru.html'), 'utf8')); } catch (e) { console.error('livro/leitura', e); res.status(500).json({ error: 'Indisponível no momento.' }); }
   });
 }
+
 

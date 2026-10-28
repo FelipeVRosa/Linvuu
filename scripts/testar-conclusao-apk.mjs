@@ -24,6 +24,9 @@ try{
   for(const theme of ['claro','escuro']){
    await page.evaluate(t=>{document.documentElement.dataset.temaAluno=t;document.documentElement.style.setProperty('--app-text-scale','2');},theme);
    await page.evaluate(()=>document.fonts.ready);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+   // Garantir que trocar o tema não produz estados transitórios de contraste nos botões da conclusão.
+   const transicoes=await page.locator('.app-sessao :is(.sessao-nav .btn,.app-conclusao .btn)').evaluateAll(els=>els.map(e=>getComputedStyle(e).transitionDuration));
+   assert.ok(transicoes.length>0 && transicoes.every(d=>d.split(',').every(v=>parseFloat(v)===0)), `botoes da conclusao animando cores: ${transicoes}`);
    const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();if(axe.violations.length)console.log(JSON.stringify(axe.violations.map(v=>({id:v.id,nodes:v.nodes}))));assert.deepEqual(axe.violations.map(v=>v.id),[]);
   }
   await page.reload();await page.locator('.app-conclusao').waitFor();assert.equal(await page.locator('.app-conclusao').getAttribute('data-nova'),'nao');

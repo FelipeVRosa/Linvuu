@@ -1,3 +1,5 @@
+> **Entrada atual para Claude e ChatGPT/Codex:** leia primeiro [ESTADO-ATUAL.md](ESTADO-ATUAL.md) e [COORDENACAO-IA.md](COORDENACAO-IA.md). O conteúdo abaixo inclui rodadas históricas; não representa uma verificação atual de produção.
+
 # Linvuu: briefing para o ChatGPT (parceria com o Claude)
 
 > Cole este texto inteiro no ChatGPT, ou peça para ele ler `docs/PARCERIA-IA.md` no repositório `FelipeVRosa/Linvuu`.

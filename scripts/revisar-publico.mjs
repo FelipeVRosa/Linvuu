@@ -96,15 +96,12 @@ try {
     console.log(`JORNADA_VALIDADA ${nome}: posição, conclusão, retomada, reporte, login/cadastro com retorno e acesso pago fechado`);
     await page.goto(base+'/');
     await page.getByRole('heading',{level:1}).waitFor();
-    for (const [plano,limite] of [['Start',1],['Basic',2],['Intermediário',3],['Premium',6]]) {
-      await page.getByRole('article').filter({hasText:plano}).getByRole('button',{name:'Explorar este plano'}).click();
-      const group=page.getByRole('group',{name:'Idiomas de interesse'});
-      const options=group.getByRole('button');
-      for (let n=0;n<limite;n++) await options.nth(n).click();
-      assert.equal(await group.locator('[aria-pressed="true"]').count(),limite);
-      if (limite<6) assert.equal(await options.nth(limite).isEnabled(),false);
-      await options.first().click();
-      if (limite<6) assert.equal(await options.nth(limite).isEnabled(),true);
+    for (const plano of ['mensal','trimestral-pix','anual']) {
+      await page.goto(base+'/');
+      await page.locator(`#planos a[href*="plano=${plano}"]`).click();
+      assert.equal(new URL(page.url()).searchParams.get('plano'),plano,'a oferta selecionada chega à assinatura');
+      await page.locator('.lv-plano-escolhido').waitFor();
+      assert.equal(await page.locator('.lv-plano-escolhido').count(),1,'o plano selecionado é destacado');
     }
     await page.goto(base+'/assinatura#oferta-atual');
     await page.getByRole('heading',{name:'Assinatura atual',exact:true}).waitFor();
@@ -112,5 +109,5 @@ try {
     assert.equal(errors.length,0,`${nome}: erros JS: ${errors.join('; ')}`);
     await context.close();
   }
-  console.log('Revisão pública: desktop, 390px, 320px, seleção de idiomas e âncora de assinatura passaram.');
+  console.log('Revisão pública: desktop, 390px, 320px, ofertas disponíveis e âncora de assinatura passaram.');
 } finally {await browser?.close();server.kill();}

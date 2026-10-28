@@ -22,6 +22,10 @@ migracao-audio/
 # Saída do build do APK (gerada por npm run build:apk)
 dist-apk/
 
+# Relatórios e ferramentas externas locais, nunca incluídos no produto.
+.lighthouseci/
+.ci-seo-deps/
+
 # Material privado de assinatura nunca entra no Git
 *.jks
 *.keystore

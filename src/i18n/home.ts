@@ -2,6 +2,30 @@ import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string, string]> = {
+  'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.', 'Estamos preparando libros para los niveles B1–B2. Todavía no están disponibles.'],
+  'Livro de alemão →': ['German book →', 'Libro de alemán →'], 'Livro de espanhol →': ['Spanish book →', 'Libro de español →'],
+
+  'CONHEÇA O VUU': ['MEET VUU', 'CONOCE A VUU'],
+  'Uma língua fica mais próxima quando faz sentido.': ['A language feels closer when it makes sense.', 'Una lengua se siente más cercana cuando tiene sentido.'],
+  'Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.': ['Vuu shares the curiosity behind Linvuu: understand what words do, hear how they sound and use the language in real situations.', 'Vuu comparte la curiosidad que mueve a Linvuu: entender qué hacen las palabras, escuchar cómo suenan y usar el idioma en situaciones reales.'],
+  'Comece com uma explicação em português e pratique no seu ritmo.': ['Start with an explanation in Portuguese and practise at your own pace.', 'Empieza con una explicación en portugués y practica a tu ritmo.'],
+  'Conhecer o curso de alemão →': ['Explore the German course →', 'Conocer el curso de alemán →'],
+
+  'VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA': ['VUU · A TASTE OF YOUR NEXT LANGUAGE', 'VUU · UNA MUESTRA DE TU PRÓXIMO IDIOMA'],
+  'A OFERTA DE HOJE': ['AVAILABLE TODAY', 'DISPONIBLE HOY'],
+  'Seu ritmo.': ['Your pace.', 'A tu ritmo.'], 'Seu próximo idioma.': ['Your next language.', 'Tu próximo idioma.'],
+  'Acesso aos cursos de idiomas, com explicações em português. Comece pelas duas primeiras aulas grátis, sem cartão.': ['Language courses with explanations in Portuguese. Start with two free lessons, no card required.', 'Cursos de idiomas con explicaciones en portugués. Empieza con dos clases gratis, sin tarjeta.'],
+  'Mensal': ['Monthly', 'Mensual'], 'Três meses no Pix': ['Three months with Pix', 'Tres meses con Pix'], 'Anual': ['Annual', 'Anual'],
+  'por mês · renovação automática': ['per month · automatic renewal', 'por mes · renovación automática'],
+  'pagamento único · 30% de desconto': ['one-time payment · 30% off', 'pago único · 30% de descuento'],
+  '12 meses · pagamento único': ['12 months · one-time payment', '12 meses · pago único'],
+  'Ver condições do plano': ['View plan details', 'Ver condiciones del plan'],
+  'O plano de três meses também está disponível no cartão ou boleto. Consulte os valores e condições antes de contratar.': ['The three-month plan is also available by card or boleto. Review prices and terms before subscribing.', 'El plan de tres meses también está disponible con tarjeta o boleto. Consulta precios y condiciones antes de contratar.'],
+  'Experimentar duas aulas grátis →': ['Try two free lessons →', 'Probar dos clases gratis →'],
+  'Ver todos os detalhes da assinatura →': ['View subscription details →', 'Ver detalles de la suscripción →'],
+  'Quais cursos estão incluídos?': ['Which courses are included?', '¿Qué cursos están incluidos?'],
+  'A assinatura atual dá acesso aos cursos da Linvuu. Antes de contratar, experimente as duas primeiras aulas de cada curso sem cartão.': ['The current subscription includes Linvuu courses. Try the first two lessons of each course without a card before subscribing.', 'La suscripción actual incluye los cursos de Linvuu. Prueba las dos primeras clases de cada curso sin tarjeta antes de contratar.'],
+
   'Planos': ['Plans', 'Planes'],
   'Cursos de idiomas para brasileiros': ['Language courses for Brazilian learners', 'Cursos de idiomas para brasileños'],
   'Cursos de inglês, espanhol, francês, italiano, alemão e russo feitos para brasileiros. Explicações em português, áudio e exercícios. Experimente 2 aulas grátis.': ['English, Spanish, French, Italian, German and Russian courses for Brazilian learners. Explanations in Portuguese, audio and exercises. Try 2 free lessons.', 'Cursos de inglés, español, francés, italiano, alemán y ruso para brasileños. Explicaciones en portugués, audio y ejercicios. Prueba 2 clases gratis.'],

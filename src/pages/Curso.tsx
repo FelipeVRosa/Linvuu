@@ -13,6 +13,7 @@ import CursoBr from './CursoBr';
 import '../site-publico.css';
 import { LIVROS } from '../config/livros';
 import { Capacitor } from '@capacitor/core';
+import { APRESENTACOES_CURSO } from '../lib/apresentacoes';
 
 export default function Curso() {
   const destino = useDestinoSessao();
@@ -81,6 +82,10 @@ export default function Curso() {
       </header>
 
       {LOCALE.codigo === 'pt-BR' && <nav className="site-course-nav" aria-label="Níveis e opções do curso">{Object.keys(aulasPorNivel).filter(Boolean).map(n => <a key={n} href={`#nivel-${n}`}>{NIVEL_LABEL[n] ?? n}</a>)}<Link to="/#planos">Comparar planos ↗</Link></nav>}
+      {website && LOCALE.codigo === 'pt-BR' && APRESENTACOES_CURSO[curso.id] && <section aria-labelledby="curso-apresentacao" className="texto-legal">
+        <h2 id="curso-apresentacao" className="pagina-h2">{APRESENTACOES_CURSO[curso.id].titulo}</h2>
+        {APRESENTACOES_CURSO[curso.id].paragrafos.map((p) => <p key={p}>{p}</p>)}
+      </section>}
       {!website && retomar}
 
       {cobertura && <p className="nota">{cobertura}</p>}

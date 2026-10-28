@@ -70,9 +70,11 @@ async function startServer() {
       redirect: false, // /livros é também uma pasta de capas em dist/: sem isto o express responderia 301 para /livros/
       index: false,
       setHeaders: (res, arquivo) => {
-        // MP3 tem o nome do hash do texto: nunca muda, pode ficar em cache por um ano. A lista (index.json) muda e fica 5 minutos.
-        if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
-        else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        // Apenas arquivos com fingerprint de conteúdo são imutáveis; arquivos públicos podem mudar no mesmo caminho.
+        if (arquivo.includes(`${path.sep}assets${path.sep}`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        else if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+        // O nome do MP3 deriva do texto, não do conteúdo: uma regravação pode reutilizar o nome.
+        else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=86400');
         else if (arquivo.includes(`${path.sep}audio${path.sep}`) && arquivo.endsWith('index.json')) res.setHeader('Cache-Control', 'public, max-age=300');
         // sitemap e robots: o Google relê com frequência; uma hora de cache basta
         else if (/\.(webp|png|jpe?g|svg|woff2?)$/.test(arquivo)) res.setHeader('Cache-Control', 'public, max-age=2592000');

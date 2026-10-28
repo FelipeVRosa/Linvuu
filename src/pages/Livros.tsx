@@ -6,10 +6,11 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { falar, falarLista, parar } from '../lib/audio';
 import { carregarCapitulo, carregarSumario, capitulosDeAmostra } from '../lib/livrosCliente';
 import {
-  AUTORES, CAPITULOS_GRATIS, LIVROS_META, caminhoCapitulo, caminhoLivro, ehTabelaDeFrases, livroMeta, minutosDeLeitura, plano, sumarioDe, tituloLivro, trechos,
+  AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, caminhoCapitulo, caminhoLivro, ehTabelaDeFrases, livroMeta, minutosDeLeitura, plano, sumarioDe, tituloLivro, trechos,
   type BlocoLivro, type CapituloLivro, type ItemSumario, type MetaLivro,
 } from '../lib/livros';
 import NaoEncontrada from './NaoEncontrada';
+import { APRESENTACOES_LIVRO } from '../lib/apresentacoes';
 
 const capaDe = (id: string) => `/livros/${id}-a1-a2-v1-600.webp`;
 const autoresTexto = AUTORES.map((a) => a.nome).join(' e ');
@@ -24,13 +25,14 @@ function NotaIdioma() {
 
 // ------------------------------------------------------------------ /livros
 export function LivrosIndice() {
-  usePageTitle('Coleção Linvuu: livros de gramática', 'Gramática prática de inglês, espanhol, alemão, francês e italiano para quem fala português, do zero ao A2. Leia os dois primeiros capítulos de cada livro, com áudio.', ['pt-BR'], LOCALE.codigo !== 'pt-BR');
+  usePageTitle('Coleção Linvuu: livros de gramática', LIVROS_DESCRICAO, ['pt-BR'], LOCALE.codigo !== 'pt-BR');
   return (
     <div className="pagina lvr">
       <header className="lvr-topo">
         <p className="lv-kicker lv-kicker-esc">Coleção Linvuu · Volume 1</p>
         <h1 className="pagina-h1">Gramática prática para quem fala português</h1>
-        <p className="lead">Cada capítulo parte de um hábito do português que a outra língua não aceita. Quem sabe qual é o hábito corrige o erro em semanas, e não em anos. Escritos por {autoresTexto}.</p>
+        <p className="lead">Cada capítulo parte de dificuldades de quem fala português e apresenta exemplos para entender como a outra língua funciona. Escritos por {autoresTexto}.</p>
+        {LOCALE.codigo === 'pt-BR' && <p>{LIVROS_EM_PRODUCAO}</p>}
         <NotaIdioma />
       </header>
       <ul className="lvr-grade">
@@ -82,6 +84,10 @@ export function LivroPagina() {
           <NotaIdioma />
         </div>
       </header>
+      {LOCALE.codigo === 'pt-BR' && APRESENTACOES_LIVRO[m.id] && <section aria-labelledby="lvr-apresentacao" className="texto-legal">
+        <h2 id="lvr-apresentacao" className="pagina-h2">{APRESENTACOES_LIVRO[m.id].titulo}</h2>
+        {APRESENTACOES_LIVRO[m.id].paragrafos.map((p) => <p key={p}>{p}</p>)}
+      </section>}
       <section aria-labelledby="lvr-sumario">
         <h2 id="lvr-sumario" className="pagina-h2">Sumário</h2>
         <p className="lvr-sub">Os capítulos 1 e 2 estão abertos para leitura, com áudio. O livro inteiro está na plataforma Linvuu, junto das aulas e dos exercícios com correção.</p>

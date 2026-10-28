@@ -38,6 +38,9 @@ export function usePageTitle(titulo?: string, descricao?: string, idiomas: Codig
     meta('meta[property="og:description"]', 'property=og:description', desc);
     meta('meta[property="og:url"]', 'property=og:url', SITE_URL + caminho);
     meta('meta[property="og:locale"]', 'property=og:locale', LOCALE.og);
+    meta('meta[name="twitter:title"]', 'name=twitter:title', tit);
+    meta('meta[name="twitter:description"]', 'name=twitter:description', desc);
+    meta('meta[name="twitter:image"]', 'name=twitter:image', SITE_URL + '/brand/avatar-1080.png');
     link('canonical', SITE_URL + caminho);
     document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
     if (!semIndice && idiomas.length > 1) {

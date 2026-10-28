@@ -45,5 +45,6 @@ for (const g of grupos) for (const c of g.em) {
 }
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${linhas.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(raiz, 'public', 'sitemap.xml'), xml);
-fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+// A página de gramática carrega suas amostras abertas desta API; o acesso pago continua protegido no servidor.
+fs.writeFileSync(path.join(raiz, 'public', 'robots.txt'), `User-agent: *\nAllow: /\nAllow: /api/gramatica/\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 console.log(`sitemap: ${linhas.length} endereços em 3 idiomas`);

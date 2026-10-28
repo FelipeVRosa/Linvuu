@@ -234,6 +234,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
     }
     const mc = base.match(/^\/curso\/([^/]+)$/);
     const md = base.match(/^\/curso\/([^/]+)\/dia\/(\d+)$/);
+    const mg = base.match(/^\/gramatica\/([a-z]{2})$/);
     if (corpo) { /* livros */ } else if (mc) {
       const c = visiveis.find((x) => x.id === mc[1]);
       const grupos = d?.indice[mc[1]]?.grupos ?? [];
@@ -247,8 +248,11 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
         return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
           .filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`));
       }));
+      if (c && d?.raiz && /^[a-z]{2}$/.test(mc[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mc[1]}.json`))) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
     } else if (md) {
       corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
+    } else if (mg && ((loc.codigo === 'pt-BR' && mg[1] !== 'br') || (loc.codigo === 'en' && mg[1] === 'br'))) {
+      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1]) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.titulo, m.descricao);
     }
@@ -268,6 +272,20 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
 
 /** Sessão de aula grátis (dias 1 a SESSOES_GRATIS) em HTML simples para quem não executa JavaScript. O que é pago nunca passa por aqui. */
 type Bloco = Record<string, any>;
+const cacheGramatica = new Map<string, string>();
+/** Apenas tópicos públicos que a página também mostra a visitantes após carregar a API. */
+function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string): string {
+  if (!d?.raiz || !/^[a-z]{2}$/.test(idioma)) return '';
+  const arquivo = path.join(d.raiz, 'content', 'gramatica', `${idioma}.json`);
+  if (cacheGramatica.has(arquivo)) return cacheGramatica.get(arquivo)!;
+  try {
+    const pacote = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
+    const topicos = (pacote.topicos as Bloco[]).filter((t) => typeof t.dia === 'number' && t.dia <= SESSOES_GRATIS);
+    const corpo = topicos.map((t) => `<section><h2>${esc(String(t.titulo ?? ''))}</h2>${String(t.explicacao ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join('')}</section>`).join('');
+    cacheGramatica.set(arquivo, corpo);
+    return corpo;
+  } catch { return ''; }
+}
 const cacheAulas = new Map<string, any>();
 function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): string {
   if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';

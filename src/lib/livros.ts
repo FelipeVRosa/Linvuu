@@ -8,6 +8,8 @@ export const AUTORES = [
 ] as const;
 
 export const CAPITULOS_GRATIS = [1, 2] as const;
+export const LIVROS_EM_PRODUCAO = 'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.';
+export const LIVROS_DESCRICAO = 'Gramática prática de inglês, espanhol, alemão, francês, italiano e russo para quem fala português. Leia os dois primeiros capítulos grátis, com áudio.';
 
 export type FalaLivro = { quem: string; texto: string };
 export type BlocoLivro =

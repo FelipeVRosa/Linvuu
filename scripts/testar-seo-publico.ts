@@ -4,7 +4,8 @@ import { Traco } from '../src/components/Traco.tsx';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
-import { HOME_BR, PLANOS_PREVIA, PLANOS_AVISO } from '../src/config/oferta-publica.ts';
+import { HOME_BR, PLANOS_AVISO } from '../src/config/oferta-publica.ts';
+import { CAPITULOS_GRATIS } from '../src/lib/livros.ts';
 const raiz = process.cwd();
 const dados = carregarDadosMeta(raiz);
 assert.ok(dados);
@@ -13,8 +14,13 @@ const html = (url: string) => aplicarMeta(base, metaDaRota(url, dados), 'https:/
 const home = html('/');
 assert.ok(home.includes(`<h1>${HOME_BR.titulo}</h1>`));
 assert.ok(home.includes(HOME_BR.descricao));
-assert.ok(home.includes(PLANOS_AVISO));
-for (const plano of PLANOS_PREVIA) assert.ok(home.includes(`${plano.nome}: ${plano.quantidade}`));
+for (const rota of ['/curso/de', '/curso/ru', '/livros/de', '/livros/es']) assert.ok(home.includes(`href="${rota}"`), `link público ${rota}`);
+assert.ok(home.includes('Conheça o Vuu'));
+assert.ok(home.includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
+assert.ok(html('/livros').includes('Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.'));
+assert.ok(!home.includes(PLANOS_AVISO), 'a home apresenta a oferta ativa, sem planos não lançados');
+assert.ok(home.includes('R$ 139') && home.includes('R$ 291,90') && home.includes('R$ 999'));
+assert.ok(home.includes('Experimentar duas aulas grátis'));
 assert.ok(!home.includes('R$ 500'));
 assert.ok(!home.includes('Escolha o idioma</strong>'));
 assert.ok(html('/cursos').includes('<h1>Cursos</h1>'));
@@ -28,7 +34,10 @@ assert.ok(!html('/assinatura').includes('name="robots" content="noindex"'));
 assert.ok(html('/assinatura').includes('<h1>Planos e assinatura</h1>'));
 assert.ok(html('/assinatura').includes('id="oferta-atual"'));
 assert.ok(html('/assinatura').includes('R$ 139'));
-assert.ok(html('/assinatura').includes(PLANOS_AVISO));
+assert.ok(!html('/assinatura').includes(PLANOS_AVISO), 'planos em preparação não aparecem na assinatura');
+assert.ok(html('/assinatura').includes('Testar 2 aulas grátis, sem cartão'));
+assert.ok(html('/assinatura').includes('R$ 291,90'));
+assert.ok(!html('/assinatura').includes('Alguns áudios podem estar temporariamente indisponíveis'));
 for (const rota of ['/entrar', '/cadastro', '/en/assinatura', '/es/assinatura']) assert.ok(html(rota).includes('name="robots" content="noindex"'));
 assert.equal(metaDaRota('/pagina-inexistente-auditoria', dados).status, 404);
 assert.ok(!html('/curso/en/dia/9').includes('\"isAccessibleForFree\":true'));
@@ -47,6 +56,9 @@ for (const curso of ['en', 'ru']) {
 }
 assert.ok(!/href="\/en\/curso\/de\/dia\//.test(html('/en/curso/de')), 'curso sem aulas traduzidas nao anuncia sessoes inexistentes');
 const sitemap = fs.readFileSync('public/sitemap.xml', 'utf8');
+for (const match of sitemap.matchAll(/<loc>https:\/\/linvuu\.com\.br\/livros\/[a-z]{2}\/capitulo\/(\d+)<\/loc>/g)) {
+  assert.ok(CAPITULOS_GRATIS.some(n => n === Number(match[1])), 'sitemap inclui somente capítulos gratuitos');
+}
 assert.ok(sitemap.includes('<loc>https://linvuu.com.br/cursos</loc>'));
 assert.ok(sitemap.includes('<loc>https://linvuu.com.br/assinatura</loc>'));
 console.log('SEO público: proposta consistente, idiomas preservados e conteúdo pago fora do HTML.');

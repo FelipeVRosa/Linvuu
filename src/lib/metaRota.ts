@@ -2,7 +2,7 @@
 // (o WhatsApp, o Facebook e outros robôs não executam JavaScript; sem isto, todo link mostraria o texto da página inicial).
 // Vale para os três idiomas do site: / (português), /en e /es.
 import { COMECAR } from './comecar.ts';
-import { HOME_BR, PLANOS_PREVIA, PLANOS_AVISO, APOIO_PREMIUM } from '../config/oferta-publica.ts';
+import { HOME_BR } from '../config/oferta-publica.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { SESSOES_GRATIS, SESSOES_POR_AULA, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX, PRECO_ANUAL } from '../config/planos.ts';
@@ -11,7 +11,8 @@ import { EMAIL_OFICIAL } from '../config/site.ts';
 import { CONTATO, POR_QUE } from './institucional.ts';
 import { EXCLUSAO } from './exclusaoConta.ts';
 import { contatos } from '../config/contato.ts';
-import { AUTORES, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
+import { AUTORES, CAPITULOS_GRATIS, LIVROS_DESCRICAO, LIVROS_EM_PRODUCAO, LIVROS_META, capituloParaHtml, livroMeta, minutosDeLeitura, tituloLivro, type CapituloLivro, type ItemSumario } from './livros.ts';
+import { APRESENTACOES_CURSO, APRESENTACOES_LIVRO } from './apresentacoes.ts';
 
 type CursoMeta = { id: string; nome: string; descricao: string; status?: string; i18n?: Record<string, { nome: string; descricao: string }> };
 export type DadosMeta = {
@@ -47,7 +48,7 @@ function carregarLivros(raiz: string): DadosMeta['livros'] {
     const caps: Record<number, CapituloLivro> = {};
     for (const f of fs.readdirSync(dir)) {
       const n = f.match(/^cap-(\d+)\.json$/)?.[1];
-      if (n) caps[Number(n)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+      if (n && CAPITULOS_GRATIS.some((c) => c === Number(n))) caps[Number(n)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
     }
     const fs0 = path.join(dir, 'sumario.json');
     out[m.id] = { sumario: fs.existsSync(fs0) ? JSON.parse(fs.readFileSync(fs0, 'utf8')) : [], caps };
@@ -93,13 +94,13 @@ export function metaDaRota(pathname: string, d: DadosMeta | null): MetaRota {
 function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
   const tx = TX[loc.codigo];
   const ex = loc.explicacao;
-  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao()] };
+  if (p === '/') return { status: 200, caminho: '/', ...HOME[loc.codigo], jsonld: [organizacao(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Linvuu', url: SITE, inLanguage: loc.codigo }] };
   // Livros e página Sobre: só em português (nos outros idiomas a página existe, mas não entra na busca)
   const livroBase = { em: ['pt-BR'] as Locale['codigo'][], semIndice: loc.codigo !== 'pt-BR' ? true : undefined };
   if (p === '/sobre') return { status: 200, caminho: p, titulo: 'Quem escreve a Linvuu', descricao: 'A Linvuu é feita por Felipe Nascimento Rosa e Luiza Nascimento Rosa, matemáticos com experiência em linguística e ensino de idiomas. Conheça a autoria, a origem e o método.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Quem escreve a Linvuu', url: `${SITE}/sobre`, inLanguage: 'pt-BR', mainEntity: { '@id': ORG_ID } }, organizacao(), ...AUTORES.map(pessoa)] };
   if (p === '/por-que-linvuu') return { status: 200, caminho: p, titulo: POR_QUE.titulo, descricao: POR_QUE.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'WebPage', name: POR_QUE.titulo, url: `${SITE}/por-que-linvuu`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
   if (p === '/contato') return { status: 200, caminho: p, titulo: CONTATO.titulo, descricao: CONTATO.descricao, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ContactPage', name: CONTATO.titulo, url: `${SITE}/contato`, inLanguage: 'pt-BR', about: { '@id': ORG_ID } }, organizacao()] };
-  if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: 'Gramática prática de inglês, espanhol, alemão, francês e italiano para quem fala português, do zero ao A2. Leia os dois primeiros capítulos de cada livro, com áudio.', ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
+  if (p === '/livros') return { status: 200, caminho: p, titulo: 'Coleção Linvuu: livros de gramática', descricao: LIVROS_DESCRICAO, ...livroBase, jsonld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'Coleção Linvuu', itemListElement: LIVROS_META.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/livros/${l.id}`, name: tituloLivro(l) })) }] };
   let lm = p.match(/^\/livros\/([^/]+)$/);
   if (lm) {
     const l = livroMeta(lm[1]);
@@ -122,17 +123,25 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
     ] };
   }
   const fixas: Record<string, { titulo: string; descricao?: string; semIndice?: boolean }> = {
-    '/cursos': { titulo: tx.cursos },
+    '/cursos': { titulo: tx.cursos, descricao: loc.codigo === 'pt-BR' ? 'Cursos de idiomas Linvuu: sem medo de gramática, com sessões de 30 minutos. Experimente duas aulas gratuitas.' : loc.codigo === 'en' ? 'Linvuu language courses: grammar without fear, with 30-minute sessions. Try two lessons for free.' : 'Cursos de idiomas Linvuu: gramática sin miedo, con sesiones de 30 minutos. Prueba dos clases gratis.' },
     '/portugues': { titulo: tx.pt, descricao: tx.ptD },
     '/entrar': { titulo: tx.entrar, semIndice: true },
     '/cadastro': { titulo: tx.cadastro, semIndice: true },
     '/livro/gramatica-ru': { titulo: 'Gramática russa A1–A2', semIndice: true },
-    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Conheça a assinatura atual da Linvuu, com acesso aos cursos de idiomas, e os novos planos em preparação. Consulte preços, formas de pagamento e condições.' } : { titulo: tx.assinatura, semIndice: true },
+    '/assinatura': loc.codigo === 'pt-BR' ? { titulo: 'Planos e assinatura', descricao: 'Aprenda idiomas com a Linvuu: planos mensal, trimestral com 30% OFF no Pix e anual. Experimente duas aulas grátis, sem cartão.' } : { titulo: tx.assinatura, semIndice: true },
     '/privacidade': { titulo: tx.priv, descricao: tx.privD },
     '/termos': { titulo: tx.termos, descricao: tx.termosD },
     '/excluir-conta': { titulo: EXCLUSAO[loc.codigo].titulo, descricao: EXCLUSAO[loc.codigo].descricao },
   };
-  if (fixas[p]) return { status: 200, caminho: p, ...fixas[p] };
+  if (fixas[p]) {
+    const jsonld: object[] = [];
+    if (p === '/cursos' && d) jsonld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: d.cursos.filter((c) => c.status !== 'em-breve' && c.id !== loc.cursoOculto).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Course', name: c.nome, description: c.descricao, url: `${SITE}${loc.prefixo}/curso/${c.id}`, provider: { '@id': ORG_ID, '@type': 'EducationalOrganization', name: 'Linvuu' } } })) });
+    if (p === '/assinatura' && loc.codigo === 'pt-BR') jsonld.push(
+      { '@context': 'https://schema.org', '@type': 'Product', name: 'Assinatura Linvuu', description: fixas[p].descricao, image: `${SITE}/brand/linvuu-logo.png`, offers: [ ['Mensal', '139.00'], ['Trimestral Pix', '291.90'], ['Trimestral cartão ou boleto', '417.00'], ['Anual', '999.00'] ].map(([name, price]) => ({ '@type': 'Offer', name, price, priceCurrency: 'BRL', url: `${SITE}/assinatura` })) },
+      { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Posso experimentar sem cartão?', acceptedAnswer: { '@type': 'Answer', text: 'As duas primeiras aulas de cada curso são gratuitas, sem cartão.' } }, { '@type': 'Question', name: 'Qual é o desconto no Pix?', acceptedAnswer: { '@type': 'Answer', text: 'O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.' } }] },
+    );
+    return { status: 200, caminho: p, ...fixas[p], jsonld };
+  }
   if (!d) return { status: 503, caminho: p, semIndice: true }; // falha de conteúdo não vira página genérica indexável
   const curso = (id: string) => { const c = d.cursos.find((x) => x.id === id); return c ? { ...c, ...(c.i18n?.[loc.codigo] ?? {}) } : undefined; };
   const tituloAula = (id: string, aula: number, original: string) => ((d.indice[id]?.fonte ?? 'pt') === ex ? original : d.indice[id]?.tr?.[ex]?.g[aula] ?? original);
@@ -153,7 +162,7 @@ function metaSemLocale(p: string, d: DadosMeta | null, loc: Locale): MetaRota {
           '@context': 'https://schema.org', '@type': 'Course', name: tx.cursoJ(c.nome), description: c.descricao, inLanguage: loc.codigo, url,
           teaches: c.id === 'br' ? 'Brazilian Portuguese' : c.nome, educationalLevel: 'A1–B1 (CEFR)', isAccessibleForFree: false,
           ...(aulas ? { coursePrerequisites: 'None', timeRequired: `PT${aulas * 2}H` } : {}),
-          provider: { '@type': 'Organization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png` },
+          provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png` },
           offers: [{ '@type': 'Offer', category: 'Subscription', price: 139, priceCurrency: 'BRL', url: `${SITE}${loc.prefixo}/assinatura` }],
           hasCourseInstance: [{ '@type': 'CourseInstance', courseMode: 'Online', courseWorkload: 'PT30M', courseSchedule: { '@type': 'Schedule', repeatFrequency: 'Daily', repeatCount: aulas * 4 } }],
         },
@@ -210,14 +219,15 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
   if (base === '/' || base === '/cursos') {
     const home = HOME[loc.codigo];
     corpo = cabeca(base === '/' && loc.codigo === 'pt-BR' ? HOME_BR.titulo : (base === '/cursos' ? tx.cursos : home.titulo) ?? 'Linvuu · Idiomas para quem fala português', m.descricao ?? home.descricao ?? 'Cursos de inglês, espanhol, alemão, francês, italiano e russo para quem fala português.') + `<h2>${esc(tx.cursos)}</h2>` + li(visiveis.map((c) => `${a(`/curso/${c.id}`, c.nome)}: ${esc(c.descricao)}`)) + `<p>${loc.codigo === 'pt-BR' ? 'Criada por' : loc.codigo === 'es' ? 'Creada por' : 'Created by'} ${AUTORES.map((x) => esc(x.nome)).join(loc.codigo === 'pt-BR' ? ' e ' : loc.codigo === 'es' ? ' y ' : ' and ')}.</p>`
-    if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${esc(HOME_BR.lead)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">Conheça os novos planos</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação. Mesma qualidade de conteúdo e suporte técnico em todos os planos.</p><p>${a('/assinatura', 'Consultar a assinatura atual')}</p>`; }
+    if (base === '/' && loc.codigo === 'pt-BR') { corpo += `<p>${esc(HOME_BR.lead)}</p><h2>Conheça o Vuu</h2><p>Vuu acompanha a curiosidade que move a Linvuu: entender as palavras, ouvir como soam e praticar o idioma.</p><p>${a('/curso/de', 'Conhecer o curso de alemão')} · ${a('/curso/ru', 'Conhecer o curso de russo')} · ${a('/livros/de', 'Livro de alemão')} · ${a('/livros/es', 'Livro de espanhol')}</p><p>${esc(LIVROS_EM_PRODUCAO)}</p><h2>Ouça, entenda e pratique</h2><p>Explicações em português, áudio e exercícios. Experimente as duas primeiras aulas de cada curso sem cartão.</p><h2 id="planos">A oferta de hoje</h2><p>Acesso aos cursos de idiomas, com explicações em português.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>Três meses no Pix: ${esc(PRECO_TRIMESTRAL_PIX)}, pagamento único e 30% de desconto.</li><li>Anual: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>${a('/assinatura', 'Ver todos os detalhes da assinatura')} · ${a('/cursos', 'Experimentar duas aulas grátis')}</p>`; }
     if (base === '/' && loc.codigo !== 'pt-BR') { const g = COMECAR[loc.codigo as 'pt-BR' | 'en' | 'es'] ?? COMECAR['pt-BR']; corpo += `<h2>${esc(g.titulo)}</h2><p>${esc(g.lead)}</p><ol>${g.passos.map((x) => `<li><strong>${esc(x.t)}.</strong> ${esc(x.d)}</li>`).join('')}</ol><p>${esc(g.dica)}</p>`; }
   } else {
     const ml = base.match(/^\/livros\/([^/]+)$/), mcl = base.match(/^\/livros\/([^/]+)\/capitulo\/(\d+)$/);
-    if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + li(LIVROS_META.map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
+    if (base === '/livros') corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? `<p>${esc(LIVROS_EM_PRODUCAO)}</p>` : '') + li(LIVROS_META.map((l) => `<a href="/livros/${l.id}">${esc(tituloLivro(l))}</a>`));
     else if (ml && livroMeta(ml[1])) {
       const l = livroMeta(ml[1])!; const lv = d?.livros[l.id];
-      corpo = cabeca(tituloLivro(l), l.descricao) + `<p>Por ${AUTORES.map((a) => esc(a.nome)).join(' e ')}.</p><h2>Sumário</h2><ol>${(lv?.sumario ?? []).map((x) => `<li>${lv?.caps[x.n] ? `<a href="/livros/${l.id}/capitulo/${x.n}">${esc(x.titulo)}</a>` : esc(x.titulo)}</li>`).join('')}</ol>`;
+      const apresentacao = loc.codigo === 'pt-BR' ? APRESENTACOES_LIVRO[l.id] : undefined;
+      corpo = cabeca(tituloLivro(l), l.descricao) + `<p>Por ${AUTORES.map((a) => esc(a.nome)).join(' e ')}.</p>` + (apresentacao ? `<h2>${esc(apresentacao.titulo)}</h2>${apresentacao.paragrafos.map((p) => `<p>${esc(p)}</p>`).join('')}` : '') + `<h2>Sumário</h2><ol>${(lv?.sumario ?? []).map((x) => `<li>${lv?.caps[x.n] ? `<a href="/livros/${l.id}/capitulo/${x.n}">${esc(x.titulo)}</a>` : esc(x.titulo)}</li>`).join('')}</ol>`;
     } else if (mcl && d?.livros[mcl[1]]?.caps[Number(mcl[2])]) {
       const c = d.livros[mcl[1]].caps[Number(mcl[2])];
       corpo = cabeca(`Capítulo ${c.n}: ${c.titulo}`, undefined) + `<p>${AUTORES.map((a) => esc(a.nome)).join(' e ')}</p>` + capituloParaHtml(c, livroMeta(mcl[1])?.lang ?? mcl[1]) + `<p><a href="/livros/${mcl[1]}">Voltar ao livro</a></p>`;
@@ -231,7 +241,8 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       const mesmo = (d?.indice[mc[1]]?.fonte ?? 'pt') === loc.explicacao;
       // Links estaticos para amostras publicas reais. O Google tambem pode descobrir URLs pelo JavaScript.
       const indexavel = (g: { aula: number; dias: [number, number] }) => g.dias[0] <= SESSOES_GRATIS && (mesmo || !!d?.indice[mc[1]]?.tr?.[loc.explicacao]?.aulas?.includes(g.aula));
-      corpo = cabeca(m.titulo ?? '', c?.descricao) + li(grupos.filter(indexavel).flatMap((g) => {
+      const apresentacao = loc.codigo === 'pt-BR' ? APRESENTACOES_CURSO[mc[1]] : undefined;
+      corpo = cabeca(m.titulo ?? '', c?.descricao) + (apresentacao ? `<h2>${esc(apresentacao.titulo)}</h2>${apresentacao.paragrafos.map((p) => `<p>${esc(p)}</p>`).join('')}` : '') + li(grupos.filter(indexavel).flatMap((g) => {
         const rot = tx.aula(g.aula, mesmo ? g.titulo : tr?.[g.aula] ?? g.titulo, c?.nome ?? '').split(' · ')[0];
         return Array.from({ length: g.dias[1] - g.dias[0] + 1 }, (_, k) => g.dias[0] + k)
           .filter((n) => n <= SESSOES_GRATIS).map((n) => a(`/curso/${mc[1]}/dia/${n}`, `${rot} · ${tx.sessao(n, c?.nome ?? '').split(' · ')[0]}`));
@@ -242,7 +253,7 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       corpo = cabeca(m.titulo, m.descricao);
     }
   }
-  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2>Novos planos em preparação</h2><p>${esc(PLANOS_AVISO)}</p>${li(PLANOS_PREVIA.map((p) => `${esc(p.nome)}: ${esc(p.quantidade)}. ${esc(p.texto)}`))}<p>${esc(APOIO_PREMIUM)} no Premium. Condições de atendimento em preparação.</p><h2 id="oferta-atual">Assinatura atual</h2><p>A oferta vigente dá acesso a todos os cursos. Os novos planos ainda não estão à venda.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><p>Estamos atualizando as narrações dos cursos. Alguns áudios podem estar temporariamente indisponíveis. Experimente as aulas gratuitas antes de contratar.</p><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão. O pagamento exige uma conta.</p><p>${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
+  if (base === '/assinatura' && loc.codigo === 'pt-BR') corpo = cabeca(m.titulo ?? '', m.descricao) + `<h2 id="oferta-atual">Assinatura Linvuu</h2><p>Acesso a todos os cursos de idiomas.</p><ul><li>Mensal: ${esc(PRECO_MENSAL)}, com renovação automática.</li><li>3 meses: ${esc(PRECO_TRIMESTRAL_PIX)} no Pix (30% OFF) ou ${esc(PRECO_TRIMESTRAL)} no cartão ou boleto, pagamento único.</li><li>12 meses: ${esc(PRECO_ANUAL)}, pagamento único.</li></ul><h2>Posso experimentar sem cartão?</h2><p>As duas primeiras aulas de cada curso são gratuitas, sem cartão.</p><h2>Qual é o desconto no Pix?</h2><p>O plano trimestral custa R$ 291,90 no Pix, 30% de desconto sobre R$ 417.</p><p>${a('/cursos', 'Testar 2 aulas grátis, sem cartão')} · ${a('/cadastro', 'Criar conta')} · ${a('/termos', 'Consultar termos e condições')}</p>`;
   if (base === '/excluir-conta') {
     // Sem JavaScript a página continua útil: texto completo e o endereço para o pedido.
     const x = EXCLUSAO[loc.codigo];
@@ -284,7 +295,7 @@ function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): 
 
 const SITE = 'https://linvuu.com.br';
 const ORG_ID = `${SITE}/#organizacao`;
-const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'Organization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
+const organizacao = () => ({ '@context': 'https://schema.org', '@type': 'EducationalOrganization', '@id': ORG_ID, name: 'Linvuu', url: SITE, logo: `${SITE}/brand/linvuu-logo.png`, email: EMAIL_OFICIAL, founder: AUTORES.map((a) => ({ '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, sameAs: [...a.links] })) });
 const pessoa = (a: (typeof AUTORES)[number]) => ({ '@context': 'https://schema.org', '@type': 'Person', '@id': `${SITE}/sobre#${a.id}`, name: a.nome, url: `${SITE}/sobre#${a.id}`, worksFor: { '@id': ORG_ID }, sameAs: [...a.links], knowsAbout: ['Matemática', 'Linguística', 'Ensino de idiomas', 'Inteligência artificial', 'Teoria dos números', 'Álgebra linear'] });
 const naoEncontrada = (p: string, loc: Locale): MetaRota => ({ status: 404, caminho: p, titulo: TX[loc.codigo].nao, semIndice: true });
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -313,6 +324,9 @@ export function aplicarMeta(html: string, m: MetaRota, site: string, d: DadosMet
   const alternativos = em.length > 1 ? [...em.map((l) => `<link rel="alternate" hreflang="${l.codigo}" href="${esc(site + caminhoEm(l.codigo, m.caminho))}" />`), ...(em.some((l) => l.codigo === 'pt-BR') ? [`<link rel="alternate" hreflang="x-default" href="${esc(site + caminhoEm('pt-BR', m.caminho))}" />`] : [])].join('\n    ') : '';
   out = out.replace(/<link rel="alternate" hreflang="pt-BR" href="[^"]*" \/>/, () => alternativos);
   troca(/(<meta name="twitter:card" content=")[^"]*(")/, 'summary_large_image');
+  const twitterTitle = esc(`${m.titulo ?? 'Linvuu'} · Linvuu`);
+  const twitterDescription = esc(m.descricao ?? 'Cursos de idiomas Linvuu.');
+  out = out.replace('</head>', () => `<meta name="twitter:title" content="${twitterTitle}" /><meta name="twitter:description" content="${twitterDescription}" /><meta name="twitter:image" content="${esc(site)}/brand/avatar-1080.png" />\n</head>`);
   if (m.jsonld?.length) out = out.replace('</head>', () => m.jsonld!.map((j) => `    <script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>\n`).join('') + '  </head>');
   const conteudo = conteudoRota(m, d, loc);
   if (conteudo) out = out.replace('<div id="root"></div>', () => `<div id="root">${conteudo}</div>`);

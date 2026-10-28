@@ -55,7 +55,7 @@ export default function Gramatica() {
         {IDIOMAS.map((k) => <Link key={k} to={`/gramatica/${k}`} className={k === curso.id ? 'chip on' : 'chip'} aria-current={k === curso.id ? 'page' : undefined}>{getCurso(k)?.nome}</Link>)}
       </div>
       {falhou && <p className="erro" role="alert">{g.erro}</p>}
-      {!pacote && !falhou && <p className="resultado" role="status">{t.geral.carregando}</p>}
+      {!pacote && !falhou && <p className="resultado carga-lista" role="status">{t.geral.carregando}</p>}
       {pacote && <>
       {!!pacote.semTraducao && <p className="nota">{g.semTraducao}</p>}
       <div className="chips" role="group" aria-label={g.categoria}>

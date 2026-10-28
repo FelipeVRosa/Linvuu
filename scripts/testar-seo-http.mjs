@@ -19,9 +19,18 @@ try {
   const robots = await fetch(`${base}/robots.txt`);
   assert.equal(robots.status, 200);
   assert.match(robots.headers.get('content-type'), /^text\/plain/);
-  assert(!/Disallow:\s*\/livro\//.test(await robots.text()));
+  const regras = await robots.text();
+  assert(!/Disallow:\s*\/livro\//.test(regras));
+  assert.match(regras, /Allow:\s*\/api\/gramatica\//);
+  assert.match(regras, /Disallow:\s*\/api\//);
   const antigo = await fetch(`${base}/livro/gramatica-ru`);
   assert.match(await antigo.text(), /name="robots" content="noindex"/);
+  const api = await fetch(`${base}/api/gramatica/ru`);
+  assert.equal(api.status, 200);
+  assert.match(api.headers.get('x-robots-tag'), /noindex/);
+  const pacote = await api.json();
+  assert(pacote.topicos.length > 0 && pacote.topicos.every(t => t.dia <= 8), 'API anônima só devolve tópicos gratuitos');
+  assert.equal(pacote.completo, false, 'API não libera conteúdo pago sem assinatura');
 
   const sitemap = await fetch(`${base}/sitemap.xml`);
   assert.equal(sitemap.status, 200);

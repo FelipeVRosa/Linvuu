@@ -20,6 +20,10 @@ try {
     for (const [rota,arquivo] of rotas) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();
+      if (arquivo === 'gramatica') {
+        await page.locator('.topico').first().waitFor();
+        assert.ok(await page.locator('.topico').count() > 0, 'amostras de gramática carregam para visitante');
+      }
       await page.evaluate(()=>document.fonts.ready);
       // Uma screenshot é salva mesmo quando há falha de largura.
       await page.screenshot({path:`revisao-publica/${nome}-${arquivo}.png`,fullPage:true});

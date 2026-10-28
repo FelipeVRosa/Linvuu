@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from '../src/lib/metaRota.ts';
 import { HOME_BR, PLANOS_AVISO } from '../src/config/oferta-publica.ts';
 import { CAPITULOS_GRATIS } from '../src/lib/livros.ts';
+import { LIVROS } from '../src/config/livros.ts';
 const raiz = process.cwd();
 const dados = carregarDadosMeta(raiz);
 assert.ok(dados);
@@ -48,6 +49,7 @@ for (const curso of ['en', 'de', 'ru', 'fr', 'it', 'es']) {
   const pagina = html(`/curso/${curso}`);
   assert.ok(pagina.includes('"logo":"https://linvuu.com.br/brand/linvuu-logo.png"'), `organização com logo real no curso ${curso}`);
   assert.ok(pagina.includes('"provider":{'), `provedor de curso registrado ${curso}`);
+  assert.ok(pagina.includes(`href="/gramatica/${curso}"`), `curso ${curso} aponta à gramática no HTML inicial`);
 }
 
 for (const curso of ['en', 'ru']) {
@@ -61,6 +63,17 @@ for (const match of sitemap.matchAll(/<loc>https:\/\/linvuu\.com\.br\/livros\/[a
 }
 assert.ok(sitemap.includes('<loc>https://linvuu.com.br/cursos</loc>'));
 assert.ok(sitemap.includes('<loc>https://linvuu.com.br/assinatura</loc>'));
+assert.ok(!sitemap.includes('/livro/gramatica-ru'), 'rota legada não entra no sitemap');
+assert.ok(!LIVROS.some((livro) => livro.link === '/livro/gramatica-ru'), 'vitrine não promove a rota legada');
+for (const [idioma, prefixo] of [['en', ''], ['es', ''], ['de', ''], ['fr', ''], ['it', ''], ['ru', ''], ['br', '/en']]) {
+  const pacote = JSON.parse(fs.readFileSync(`content/gramatica/${idioma}.json`, 'utf8'));
+  const livre = pacote.topicos.find((t: {dia: number}) => t.dia <= 8);
+  const nomesLivres = new Set(pacote.topicos.filter((t: {dia: number}) => t.dia <= 8).map((t: {titulo: string}) => t.titulo));
+  const pago = pacote.topicos.find((t: {dia: number; titulo: string}) => t.dia > 8 && t.titulo && !nomesLivres.has(t.titulo));
+  const pagina = html(`${prefixo}/gramatica/${idioma}`);
+  assert.ok(livre && pagina.includes(livre.titulo), `gramática ${idioma} contém tópico gratuito no HTML inicial`);
+  if (pago) assert.ok(!pagina.includes(pago.titulo), `gramática ${idioma} não expõe tópico pago`);
+}
 console.log('SEO público: proposta consistente, idiomas preservados e conteúdo pago fora do HTML.');
 
 const traco = (valor: number) => renderToStaticMarkup(createElement(Traco, {valor, exato:true, trilha:true}));

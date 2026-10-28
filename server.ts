@@ -14,6 +14,7 @@ import { registrarExclusao } from './server/exclusao';
 import { credencialConfigurada } from './server/firebase-admin';
 import { fecharApi, registrarErros, registrarSeguranca } from './server/seguranca';
 import { registrarProntidao } from './server/prontidao';
+import { registrarAssetLinks } from './server/assetlinks';
 import { aplicarMeta, carregarDadosMeta, metaDaRota } from './src/lib/metaRota.ts';
 import { SITE_URL } from './src/config/site.ts';
 
@@ -43,6 +44,7 @@ async function startServer() {
   // Saúde do serviço (para o Render e para monitoramento).
   app.get('/healthz', (_req: Request, res: Response) => { res.json({ ok: true }); });
   registrarProntidao(app);
+  registrarAssetLinks(app);
 
   registrarCobranca(app, () => process.env.APP_URL || (producao ? SITE_URL : `http://localhost:${PORT}`));
   registrarLivroProtegido(app);

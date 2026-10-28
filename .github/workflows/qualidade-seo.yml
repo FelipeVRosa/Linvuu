@@ -76,7 +76,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Instalar ferramentas isoladas e fixadas
-        run: npm ci --prefix scripts/seo-tools
+        run: npm ci --ignore-scripts --prefix scripts/seo-tools
       - name: Construir website sem credenciais de produção
         env:
           DOTENV_PATH: ${{ runner.temp }}/linvuu-sem-credenciais.env

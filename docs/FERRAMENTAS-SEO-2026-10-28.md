@@ -12,12 +12,16 @@ Para executar localmente em um checkout limpo, com Node, npm e Chrome instalados
 
 ```powershell
 npm ci
-npm ci --prefix scripts/seo-tools
+npm ci --ignore-scripts --prefix scripts/seo-tools
 npm run build:website
 node scripts/seo-tools/node_modules/@lhci/cli/src/cli.js autorun --config=lighthouserc.cjs
 ```
 
 Se necessário, defina `CHROME_PATH` para o executável do Chrome. A porta local 4398 deve estar livre. Preserve os relatórios anteriores se precisar mantê-los. O servidor de auditoria desativa os principais segredos de integração e usa um caminho de dotenv inexistente; execute a construção em checkout limpo sem arquivos `.env`, pois ferramentas de build podem lê-los separadamente.
+
+Em 28/10/2026, nove medições locais passaram nas exigências de SEO e acessibilidade. A mediana simulada de desempenho da gramática russa foi 58/100: o relatório aponta recursos bloqueando a renderização, com economia estimada de 900 ms. Essa medição local não representa usuários reais. Priorize investigar CSS e carregamento inicial antes de afirmar que desempenho foi resolvido.
+
+O `npm audit` da instalação isolada do Lighthouse CI 0.15.1 apontou dependências transitivas com alertas, inclusive de gravidade alta, sem atualização segura automática disponível para toda a árvore. A instalação é restrita às auditorias, sem executar scripts de instalação, sem credenciais de produção e sem integrar esses pacotes ao site. Revise atualizações oficiais antes de auditar páginas ou arquivos não confiáveis; não force mudanças incompatíveis para esconder os alertas.
 
 ## Interpretador oficial do Google
 

@@ -1,0 +1,94 @@
+name: Qualidade SEO (Lighthouse e robots do Google)
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'server.ts'
+      - 'server/**'
+      - 'content/**'
+      - 'public/assets/**'
+      - 'public/fotos/**'
+      - 'public/robots.txt'
+      - 'public/sitemap.xml'
+      - 'scripts/seo.mjs'
+      - 'scripts/seo-tools/**'
+      - 'scripts/google-robots/**'
+      - 'scripts/testar-robots-google.mjs'
+      - 'scripts/iniciar-servidor-lhci.mjs'
+      - 'lighthouserc.cjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'index.html'
+      - '.github/workflows/qualidade-seo.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: qualidade-seo-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  robots-google:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Obter parser oficial do Google em revisão fixa
+        uses: actions/checkout@v4
+        with:
+          repository: google/robotstxt
+          ref: 22b355ff855419e6a3ff8ff09c0ad7fdb17116f9
+          path: .ci-seo-deps/google-robotstxt
+          persist-credentials: false
+      - name: Obter Abseil em revisão fixa
+        uses: actions/checkout@v4
+        with:
+          repository: abseil/abseil-cpp
+          ref: d9e4955c65cd4367dd6bf46f4ccb8cd3d100540b
+          path: .ci-seo-deps/abseil
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Compilar parser oficial sem alterar o site
+        run: |
+          cmake -S scripts/google-robots -B "$RUNNER_TEMP/linvuu-robots" -DGOOGLE_ROBOTS_DIR="$GITHUB_WORKSPACE/.ci-seo-deps/google-robotstxt" -DABSEIL_DIR="$GITHUB_WORKSPACE/.ci-seo-deps/abseil" -DCMAKE_BUILD_TYPE=Release
+          cmake --build "$RUNNER_TEMP/linvuu-robots" --target linvuu-google-robots --parallel 2
+      - name: Testar sitemap e regras reais de Googlebot
+        env:
+          GOOGLE_ROBOTS_BIN: ${{ runner.temp }}/linvuu-robots/linvuu-google-robots
+        run: |
+          node scripts/seo.mjs
+          git diff --exit-code -- public/robots.txt public/sitemap.xml
+          node scripts/testar-robots-google.mjs
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Instalar ferramentas isoladas e fixadas
+        run: npm ci --prefix scripts/seo-tools
+      - name: Construir website sem credenciais de produção
+        env:
+          DOTENV_PATH: ${{ runner.temp }}/linvuu-sem-credenciais.env
+        run: npm run build:website
+      - name: Auditar três páginas públicas com Lighthouse CI
+        run: node scripts/seo-tools/node_modules/@lhci/cli/src/cli.js autorun --config=lighthouserc.cjs
+      - name: Guardar relatórios no GitHub Actions
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-seo
+          path: .lighthouseci/relatorios/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: warn

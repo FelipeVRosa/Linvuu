@@ -11,6 +11,8 @@ import { usePageTitle } from '../lib/usePageTitle';
 import { JsonLd } from '../components/JsonLd';
 import { useRetomadaGeral } from '../lib/retomar';
 import { textoRetomada } from '../lib/mensagemRetomada';
+import { LIVROS } from '../config/livros';
+import { IDIOMAS_GRAMATICA } from '../lib/content';
 import './home-brasileiros.css';
 
 const idiomas = [
@@ -40,10 +42,10 @@ export default function HomeBrasileiros() {
     finally { setTocando(false); }
   };
   return <div className="br-home">
-    {retomada && (() => { const r = textoRetomada(retomada.feitos, retomada.total); return <section className="br-resume" aria-label={`Continuar ${retomada.nome}`}>
+    {retomada && (() => { const r = textoRetomada(retomada.feitos, retomada.total); const livro = LIVROS.find((l) => l.capa === `/livros/${retomada.idioma}-a1-a2-v1-600.webp`)?.link; const apoio = [livro?.startsWith('/livros/') ? { para: livro, texto: `Livro de ${retomada.nome}` } : null, IDIOMAS_GRAMATICA.includes(retomada.idioma) ? { para: `/gramatica/${retomada.idioma}`, texto: `Gramática de ${retomada.nome}` } : null].filter((x): x is { para: string; texto: string } => !!x); return <section className="br-resume" aria-label={`Continuar ${retomada.nome}`}>
       <img className="br-resume-vuu" src="/assets/vuu/vuu-feliz-2d.svg" width="44" height="50" alt="" />
       <div className="br-resume-texto"><p className="br-resume-frase">{h(r.frase)}</p><p className="br-resume-prog">{retomada.nome} · {h(r.contagem)}</p><p className="br-resume-prox">{h('Próxima:')} {h('sessão')} {retomada.dia}{retomada.titulo ? ` · ${retomada.titulo}` : ''}</p></div>
-      <HomeCourseLink to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão →")}</HomeCourseLink></section>; })()}
+      <HomeCourseLink to={`/curso/${retomada.idioma}/dia/${retomada.dia}`}>{h("Continuar minha sessão →")}</HomeCourseLink>{apoio.length > 0 && <p className="br-resume-apoio">{apoio.map((a) => <Link key={a.para} to={a.para}>{a.texto}</Link>)}</p>}</section>; })()}
     <section className="br-hero">
       <div className="br-hero-copy"><p className="br-eyebrow">{h("CURSOS DE IDIOMAS FEITOS PARA BRASILEIROS")}</p>
         <h1>{h("O mundo tem")}<br />{h("muito a dizer.")}<br /><em>{h("Entre na conversa.")}</em></h1>

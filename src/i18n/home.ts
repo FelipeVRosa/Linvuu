@@ -2,6 +2,7 @@ import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string, string]> = {
+  'Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.': ['A1–A2 books in six languages. Read the first two chapters free, with audio.', 'Libros A1–A2 en seis idiomas. Lee los dos primeros capítulos gratis, con audio.'],
   'Escolher meu idioma': ['Choose my language', 'Elegir mi idioma'],
   'Começar a primeira sessão em': ['Start the first session in', 'Empezar la primera sesión de'],
   'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.', 'Estamos preparando libros para los niveles B1–B2. Todavía no están disponibles.'],

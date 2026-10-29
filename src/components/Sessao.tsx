@@ -335,7 +335,6 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
   const tituloEtapa = useRef<HTMLHeadingElement>(null);
   const primeiraEtapa = useRef(true);
   useEffect(() => {
-    if (!compacta) return;
     if (primeiraEtapa.current) { primeiraEtapa.current = false; return; }
     tituloEtapa.current?.focus();
   }, [idx, compacta]);
@@ -363,7 +362,7 @@ export function Sessao({ sessao, idioma, aula, dia, proximo, nomeIdioma, explica
       {provisorio && <p className="nota nota-audio" role="status">{T.provisorio}</p>}
       {compacta ? <details className="app-navegador-etapas"><summary><span>{T.blocosSessao}</span><span>{idx + 1}/{total} <span aria-hidden="true">⌄</span></span></summary>{etapas}</details> : etapas}
       <div className="bloco">
-        <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={compacta ? -1 : undefined}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
+        <div className="bloco-topo"><h2 ref={tituloEtapa} className={compacta ? "app-etapa-titulo" : undefined} tabIndex={-1}>{T.rotuloBloco[b.tipo]}</h2><span>{T.bloco(idx + 1, total, b.min)}</span></div>
         <Conteudo key={idx} b={b} idioma={idioma} explicacao={explicacao} />
       </div>
       <div className="sessao-nav">

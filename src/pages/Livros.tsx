@@ -57,12 +57,20 @@ export function LivroPagina() {
   const m = livroMeta(id);
   const [sumario, setSumario] = useState<ItemSumario[]>([]);
   const [titulos, setTitulos] = useState<Record<number, CapituloLivro>>({});
+  const [estadoSumario, setEstadoSumario] = useState<'carregando' | 'pronto' | 'erro'>('carregando');
   usePageTitle(m ? tituloLivro(m) : undefined, m ? m.descricao : undefined, ['pt-BR'], !m || LOCALE.codigo !== 'pt-BR');
   useEffect(() => {
     if (!m) return;
     let vivo = true;
-    carregarSumario(m.id).then((s) => vivo && setSumario(s));
-    Promise.all(capitulosDeAmostra(m.id).map((n) => carregarCapitulo(m.id, n))).then((cs) => vivo && setTitulos(Object.fromEntries(cs.filter(Boolean).map((c) => [c!.n, c!]))));
+    setEstadoSumario('carregando');
+    setSumario([]);
+    setTitulos({});
+    carregarSumario(m.id).then((s) => {
+      if (vivo) { setSumario(s); setEstadoSumario(s.length ? 'pronto' : 'erro'); }
+    }).catch(() => { if (vivo) setEstadoSumario('erro'); });
+    Promise.all(capitulosDeAmostra(m.id).map((n) => carregarCapitulo(m.id, n)))
+      .then((cs) => { if (vivo) setTitulos(Object.fromEntries(cs.filter(Boolean).map((c) => [c!.n, c!]))); })
+      .catch(() => { /* O sumário continua utilizável sem estimativas de leitura. */ });
     return () => { vivo = false; };
   }, [m]);
   if (!m) return <NaoEncontrada />;
@@ -91,6 +99,8 @@ export function LivroPagina() {
       <section aria-labelledby="lvr-sumario">
         <h2 id="lvr-sumario" className="pagina-h2">Sumário</h2>
         <p className="lvr-sub">Os capítulos 1 e 2 estão abertos para leitura, com áudio. O livro inteiro está na plataforma Linvuu, junto das aulas e dos exercícios com correção.</p>
+        {estadoSumario === 'carregando' && <p role="status">Carregando o sumário…</p>}
+        {estadoSumario === 'erro' && <div role="alert"><p>Não foi possível carregar o sumário. Recarregue a página para tentar novamente.</p><button type="button" className="btn btn-ghost" onClick={() => window.location.reload()}>Recarregar página</button></div>}
         <ol className="lvr-sumario">
           {sumario.map((s) => {
             const aberto = liberados.has(s.n);

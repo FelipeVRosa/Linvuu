@@ -2,6 +2,8 @@ import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string, string]> = {
+  'Escolher meu idioma': ['Choose my language', 'Elegir mi idioma'],
+  'Começar a primeira sessão em': ['Start the first session in', 'Empezar la primera sesión de'],
   'Estamos produzindo livros para os níveis B1–B2. Eles ainda não estão disponíveis.': ['We are producing books for B1–B2 levels. They are not available yet.', 'Estamos preparando libros para los niveles B1–B2. Todavía no están disponibles.'],
   'Livro de alemão →': ['German book →', 'Libro de alemán →'], 'Livro de espanhol →': ['Spanish book →', 'Libro de español →'],
 

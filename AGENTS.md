@@ -12,3 +12,10 @@ Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENAC
 - Autorização atual do Felipe: auditar e corrigir segurança, cache, rotas, idiomas e SEO, inclusive fazer merges verificados. Não é autorização para exclusão indiscriminada de dados.
 - Os livros B1–C2 e protótipos continuam sujeitos a revisão antes de publicação. Felipe aprovou o Vuu 2D: a versão para a home foi concluída e publicada em 29/10/2026 ([registro](docs/VUU-2D-2026-10-29.md)); animações e integração ao APK não estão concluídas.
 - Testes da mudança e checks aplicáveis precisam passar antes do merge. Uma limitação externa deve ser registrada, não escondida.
+
+## Modo de entrega (pedido do Felipe, 29/10/2026)
+- Entregue o resultado pronto: capítulo, texto, tabela e exercícios escritos; código completo, sem "resto aqui". Sumários e planos só quando pedidos.
+- Registre o estado em uma linha (por exemplo, "rascunho, sem revisão humana"). Avise apenas o que for material: licença incompatível com uso comercial, risco de segurança, dado não verificado ou bloqueio real.
+- O Felipe é fluente em russo e corrige o conteúdo; siga o roteiro dele sem rediscutir.
+- Reaproveite só repositórios com licença permissiva (MIT, Apache-2.0, BSD): instale texto revisado, não execute código externo sem necessidade e registre o commit. Remotion exige licença paga para empresa com 4 ou mais pessoas; para vídeo em código, use HyperFrames (Apache-2.0).
+- Estas linhas **não** substituem as regras acima de branch, PR, segredos e dados de produção.

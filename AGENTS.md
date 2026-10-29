@@ -10,5 +10,5 @@ Antes de alterar este repositório, leia `docs/ESTADO-ATUAL.md`, `docs/COORDENAC
 - Não publique segredos ou material comercial de terceiros.
 - Não altere cobrança, planos de infraestrutura ou permissões para contornar um teste falho.
 - Autorização atual do Felipe: auditar e corrigir segurança, cache, rotas, idiomas e SEO, inclusive fazer merges verificados. Não é autorização para exclusão indiscriminada de dados.
-- Livros B1–C2, protótipos e Vuu são frentes futuras; não entram no site/app como efeito colateral desta auditoria.
+- Os livros B1–C2 e protótipos continuam sujeitos a revisão antes de publicação. Felipe aprovou o Vuu 2D: a versão para a home foi concluída e publicada em 29/10/2026 ([registro](docs/VUU-2D-2026-10-29.md)); animações e integração ao APK não estão concluídas.
 - Testes da mudança e checks aplicáveis precisam passar antes do merge. Uma limitação externa deve ser registrada, não escondida.

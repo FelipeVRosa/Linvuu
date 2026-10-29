@@ -50,7 +50,7 @@ export default function HomeBrasileiros() {
       </div>
       <div className="br-scene" id="experimente">
         <span className="br-orbit br-orbit-one" aria-hidden="true">{h("Olá, mundo.")}</span><span className="br-orbit br-orbit-two" aria-hidden="true">{h("Um novo começo ↗")}</span>
-        <div className="br-demo"><div className="br-demo-top"><img className="br-vuu" src="/assets/vuu/vuu-neutro.svg" width="48" height="48" alt="" /><span>{h("VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</span></div>
+        <div className="br-demo"><div className="br-demo-top"><img className="br-vuu" src="/assets/vuu/vuu-feliz-2d.svg" width="48" height="48" alt="" /><span>{h("VUU · UM GOSTINHO DO SEU PRÓXIMO IDIOMA")}</span></div>
           <label htmlFor="br-idioma">{h("Quero ouvir em")}</label><select id="br-idioma" value={idioma.id} disabled={tocando} onChange={e => {setIdioma(idiomas.find(i => i.id === e.target.value)!); setErro('');}}>{idiomas.map(i => <option key={i.id} value={i.id}>{h(i.nome)}</option>)}</select>
           <span className="br-demo-context">{h("NO CAFÉ")}</span><p className="br-phrase" lang={idioma.lang}>{idioma.frase}</p><p className="br-translation">{h("Olá. Um café, por favor.")}</p>
           <div className="br-sound"><button type="button" onClick={ouvir} disabled={tocando} aria-label={`${h('Ouvir frase em')} ${h(idioma.nome)}`}><span aria-hidden="true">{tocando ? '…' : '▶'}</span></button><div className={tocando ? 'br-wave playing' : 'br-wave'} aria-hidden="true">{Array.from({length: 23}, (_, i) => <i key={i} style={{height: `${12 + (i * 17 % 35)}px`, animationDelay: `${i * 45}ms`}} />)}</div><span>{tocando ? h('Ouvindo…') : h('Ouça. Repita.')}</span></div>
@@ -60,7 +60,7 @@ export default function HomeBrasileiros() {
     </section>
     <div className="br-benefits"><span><strong>{h("Em português.")}</strong>{h(" Desde a explicação.")}</span><span><strong>{h("Com áudio.")}</strong>{h(" Para ouvir e repetir.")}</span><span><strong>{h("No seu ritmo.")}</strong>{h(" Uma sessão por vez.")}</span></div>
     <section className="br-section br-vuu-section" aria-labelledby="br-vuu-title">
-      <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-neutro.svg" alt="" width="220" height="220" loading="lazy" /><span>VUU / LINVUU</span></div>
+      <div className="br-vuu-portrait"><img src="/assets/vuu/vuu-feliz-2d.svg" alt="" width="220" height="249" loading="lazy" /><span>VUU / LINVUU</span></div>
       <div><p className="br-eyebrow">{h('CONHEÇA O VUU')}</p><h2 id="br-vuu-title">{h('Uma língua fica mais próxima quando faz sentido.')}</h2>
         <p>{h('Vuu acompanha a curiosidade que move a Linvuu: entender o que as palavras fazem, ouvir como soam e usar o idioma em situações reais.')}</p>
         <p>{h('Comece com uma explicação em português e pratique no seu ritmo.')}</p>

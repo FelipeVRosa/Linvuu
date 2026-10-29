@@ -72,8 +72,9 @@ async function startServer() {
       redirect: false, // /livros é também uma pasta de capas em dist/: sem isto o express responderia 301 para /livros/
       index: false,
       setHeaders: (res, arquivo) => {
-        // Apenas arquivos com fingerprint de conteúdo são imutáveis; arquivos públicos podem mudar no mesmo caminho.
-        if (arquivo.includes(`${path.sep}assets${path.sep}`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        // Apenas arquivos com fingerprint de conteúdo, direto em dist/assets (saída do Vite), são imutáveis. Subpastas (assets/vuu/...) são arte pública
+        // com nome escolhido à mão: um nome como «vuu-feliz-2d.svg» casaria por acaso com o padrão de hash e ficaria um ano em cache.
+        if (path.dirname(arquivo).endsWith(`${path.sep}assets`) && /-[A-Za-z0-9_-]{8}\.[A-Za-z0-9]+$/.test(path.basename(arquivo))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
         else if (arquivo.includes(`${path.sep}assets${path.sep}`)) res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
         // O nome do MP3 deriva do texto, não do conteúdo: uma regravação pode reutilizar o nome.
         else if (arquivo.endsWith('.mp3')) res.setHeader('Cache-Control', 'public, max-age=86400');

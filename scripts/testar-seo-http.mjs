@@ -55,6 +55,13 @@ try {
   assert.equal(vuu.status, 200);
   assert.match(vuu.headers.get('cache-control'), /must-revalidate/);
   assert(!vuu.headers.get('cache-control')?.includes('immutable'));
+  for (const arte of ['vuu-feliz-2d.svg']) {
+    const r = await fetch(`${base}/assets/vuu/${arte}`);
+    assert.equal(r.status, 200, arte);
+    assert.match(r.headers.get('cache-control'), /must-revalidate/, `${arte} precisa revalidar`);
+    assert(!r.headers.get('cache-control')?.includes('immutable'), `${arte} não pode ser imutável (nome sem hash de conteúdo)`);
+    assert(r.headers.get('etag'), `${arte} possui ETag`);
+  }
   const etag = vuu.headers.get('etag');
   assert(etag, 'SVG possui ETag para revalidação');
   // fetch acrescenta Cache-Control: no-cache aos pedidos condicionais; usar HTTP direto como um cache comum.

@@ -97,6 +97,11 @@
 .br-language h3{font-size:21px}
 .br-language p{font-size:15px;line-height:1.6;margin-top:12px;color:var(--site-texto-idioma)}
 .br-book{max-width:1136px;margin:0 auto 40px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;background:var(--site-colecao);padding:50px 65px;border-radius:16px}
+.br-book-covers{display:flex;align-items:center;justify-content:center;min-width:0;padding:25px 0}
+.br-book-covers img{display:block;width:35%;height:auto;box-shadow:0 14px 26px var(--site-sombra-cartao);border-radius:3px}
+.br-book-covers img:first-child{transform:rotate(-9deg) translateX(12%)}
+.br-book-covers img:nth-child(2){position:relative;z-index:1;transform:translateY(-8%)}
+.br-book-covers img:last-child{transform:rotate(9deg) translateX(-12%)}
 .br-book-art{max-width:300px;padding:30px;background:var(--br-green);color:var(--papel);border-left:8px solid var(--site-lombada);transform:rotate(-5deg);box-shadow:12px 15px 0 var(--site-sombra-livro);border-radius:3px}
 .br-book-art>span{display:block;font-size:10px;letter-spacing:.12em}
 .br-book-art strong{display:block;font-size:43px;font-weight:400;line-height:1.1;margin:32px 0}

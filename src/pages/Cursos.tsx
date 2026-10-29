@@ -5,6 +5,8 @@ import { CursoCard } from '../components/CursoCard';
 import { Navegacao } from '../components/Navegacao';
 import { usePageTitle } from '../lib/usePageTitle';
 import { LOCALE, useT } from '../i18n';
+import { livroMeta } from '../lib/livros';
+import { Capacitor } from '@capacitor/core';
 import '../site-publico.css';
 
 const norm = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -39,7 +41,13 @@ export default function Cursos() {
       <p className="nota"><Link to="/portugues">{t.cursosPagina.portugues}</Link></p>
       <p className="resultado" aria-live="polite">{t.cursosPagina.contagem(lista.length)}</p>
       {lista.length > 0
-        ? <div className="curso-grid">{lista.map((c) => <CursoCard key={c.id} curso={c} nivel={2} />)}</div>
+        ? <div className="curso-grid">{lista.map((c) => {
+          const livro = LOCALE.codigo === 'pt-BR' && import.meta.env.VITE_ALVO !== 'apk' && !Capacitor.isNativePlatform() && livroMeta(c.id);
+          return livro ? <div className="catalogo-idioma" key={c.id}>
+            <CursoCard curso={c} nivel={2} />
+            <div className="catalogo-livro"><span>Livro A1–A2 · 2 capítulos grátis</span><Link to={`/livros/${c.id}`}>Abrir livro de {c.nome} <span aria-hidden="true">↗</span></Link></div>
+          </div> : <CursoCard key={c.id} curso={c} nivel={2} />;
+        })}</div>
         : <p className="vazio">{t.cursosPagina.vazio(q)} <button type="button" className="link" onClick={() => setParams({}, { replace: true })}>{t.cursosPagina.limpar}</button>.</p>}
     </div>
   );

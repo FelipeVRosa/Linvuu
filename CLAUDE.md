@@ -1,10 +1,15 @@
 # Linvuu — instruções para Claude (estado comprovado)
 
+## Atualização para Claude — Vuu e próximo passo, 29/10/2026
+Felipe aprovou a arte sorridente e a versão 2D do Vuu para a home. A entrega do mascote 2D para o site está **concluída**: [PR #395](https://github.com/FelipeVRosa/Linvuu/pull/395), merge `ba7a76b`, publicado no Render e conferido no domínio. O arquivo atual é `public/assets/vuu/vuu-feliz-2d.svg`; aparece na amostra de áudio e na apresentação da home. Ele é uma interpretação vetorial da referência aprovada. O estudo e o arquivo editável também estão em `C:\site\Vuu-estudio\arte-mestre\recebidas`. Esta conclusão diz respeito ao site; não afirma que animação, outras expressões ou integração ao APK estejam concluídas. Leia [o registro do Vuu](docs/VUU-2D-2026-10-29.md).
+
+O próximo passo priorizado é [progresso compreensível e reforço positivo](docs/PROXIMO-PASSO-PROGRESSO-2026-10-29.md), aproveitando os dados reais já existentes. O PR #367 é um protótipo em rascunho a consultar, não uma funcionalidade já entregue. Não representar sessões marcadas pelo aluno como domínio comprovado.
+
 ## Retomada do site e SEO — 27/10/2026
 Leia primeiro [a passagem de contexto da integração](docs/HANDOFF-SITE-2026-10-27.md). Ela atualiza os snapshots abaixo: o Vuu já está implementado nesta integração e o proprietário autorizou a publicação das correções do site. Confira o estado real da `main`, do deploy e dos PRs antes de afirmar que algo está publicado.
 
 ## Ponto de entrada obrigatório para a retomada
-Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por inteiro** antes de alterar qualquer coisa. Ela registra todas as entregas de 27/10 (PRs #368–#383, Render, Firebase/Firestore, Google Cloud IAM/OIDC, Search Console, Stripe, APK e mascote Vuu). Os parágrafos abaixo são *snapshots históricos* e podem mencionar repositórios públicos, SHAs antigos ou deploys ultrapassados. Verifique hoje a visibilidade real e a main via GitHub API. **Vuu foi citado pelo proprietário, mas não localizado como implementação na main**: não inventar status de lançamento. Claude não recebe memórias de ChatGPT/Gemini automaticamente; GitHub + testes são o protocolo de sincronia.
+Leia [**CONTINUIDADE-2026-10-27.md**](docs/CONTINUIDADE-2026-10-27.md) **por inteiro** antes de alterar qualquer coisa. Ela registra as entregas de 27/10 e contém snapshots históricos; a atualização acima prevalece quanto ao Vuu. Verifique a visibilidade real, a main e o deploy antes de afirmar estados atuais. Claude não recebe memórias de ChatGPT/Gemini automaticamente; GitHub + testes são o protocolo de sincronia.
 
 **Fonte de regras:** leia `AGENTS.md` e `docs/COORDENACAO-IA.md`. Antes de qualquer edição, consulte a `main`, PRs abertos, checks e `docs/ESTADO-ATUAL.md`; esse último é um *snapshot* com data, não uma sincronização permanente.
 

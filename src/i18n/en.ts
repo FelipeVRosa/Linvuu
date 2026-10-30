@@ -5,8 +5,8 @@ const sessaoDe = (n: number) => `Lesson ${Math.ceil(n / 4)} · session ${(n - 1)
 
 export const en: Dicionario = {
   meta: {
-    titulo: 'Linvuu · Languages explained in English',
-    descricao: 'Learn Brazilian Portuguese, Spanish, German, French, Italian and Russian with lessons explained in English. 30-minute sessions, audio for every sentence and exercises corrected on the spot. 2 free lessons.',
+    titulo: 'Linvuu · Learn Russian, German, Spanish and more from English',
+    descricao: 'Language courses for English speakers: Brazilian Portuguese explained in English today, Russian, German, Spanish, French and Italian next. Audio, dialogues and speaking practice. First 2 lessons free.',
   },
   geral: {
     pular: 'Skip to content', carregando: 'Loading…', inicio: 'Home', cursos: 'Courses', voltar: 'Back', voceEstaEm: 'You are here',

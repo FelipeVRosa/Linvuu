@@ -11,6 +11,7 @@ const pixel = criarTikTokPixel(store,()=>({win,doc,path,search}));
 const queue = () => (win as Window & {ttq:unknown[][]}).ttq;
 pixel.pageView(); pixel.checkout(); assert.equal(scripts.length,0);
 saved.set('linvuu:marketing:v1','yes'); pixel.pageView(); assert.equal(scripts.length,0,'consentimento antigo não cobre TikTok');
+search='?tt_test_id=DBIBAAJC77UF91063L30_1793374244';
 saved.set(MARKETING_CHOICE,'yes'); pixel.pageView(); pixel.pageView();
 assert.equal(scripts.length,1); assert.ok(scripts[0].src.includes(TIKTOK_PIXEL_ID)); assert.deepEqual(queue().slice(),[['page']]);
 path='/assinatura'; search='?plano=mensal'; pixel.pageView(); pixel.checkout(); assert.deepEqual(queue().slice(-2),[['page'],['track','InitiateCheckout']]);

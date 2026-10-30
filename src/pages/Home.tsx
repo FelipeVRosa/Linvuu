@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import HomeBrasileiros from './HomeBrasileiros';
-import HomeSimples from './HomeSimples';
 import { Link } from 'react-router-dom';
 import { COMUNIDADE } from '../lib/comunidade';
 import { CURSOS_ATIVOS, IDIOMAS_GRAMATICA, statusDoCurso } from '../lib/content';
@@ -39,7 +38,7 @@ const PADRAO = NO_AR[0]?.id;
 const FOTOS = ['/fotos/comece.jpg', '/fotos/imersao.jpg', '/fotos/pratica.jpg'];
 
 export default function Home() {
-  return LOCALE.codigo !== 'pt-BR' ? <HomeSimples /> : <HomeBrasileiros />;
+  return <HomeBrasileiros />;
 }
 
 function HomeOriginal() {

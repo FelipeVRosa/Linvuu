@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import { criarMetaPixel, MARKETING_CHOICE, META_PIXEL_ID, rotaSeguraParaPixel } from '../src/lib/metaPixel';
+
+const saved = new Map<string,string>();
+const store = { getItem:(k:string)=>saved.get(k)??null, setItem:(k:string,v:string)=>{saved.set(k,v);} };
+const scripts: {src:string;async:boolean}[] = [];
+const documentMock = { createElement:()=>({src:'',async:false}), head:{appendChild:(s:{src:string;async:boolean})=>scripts.push(s)} } as unknown as Document;
+const win = {} as Window;
+let path = '/livros/de/capitulo/1', search = '?utm_source=facebook&utm_medium=organic_social&utm_campaign=tabelas_alemao';
+const pixel = criarMetaPixel(store, ()=>({win,doc:documentMock,path,search}));
+const queue = () => (win as Window & {fbq:{queue:unknown[][]}}).fbq.queue;
+pixel.pageView(); pixel.checkout(); assert.equal(scripts.length,0,'sem consentimento não carregar nem enviar');
+pixel.choose('no'); pixel.pageView(); assert.equal(scripts.length,0,'recusa não carrega o SDK');
+pixel.choose('yes'); pixel.pageView(); assert.equal(scripts.length,1); assert.equal(scripts[0].src,'https://connect.facebook.net/en_US/fbevents.js');
+assert.deepEqual(queue().slice(0,4),[['consent','grant'],['set','autoConfig',false,META_PIXEL_ID],['init',META_PIXEL_ID],['track','PageView']]);
+pixel.pageView(); assert.equal(queue().filter(q=>q[1]==='PageView').length,1,'não duplicar efeito React');
+path='/assinatura'; search='?plano=mensal'; pixel.pageView(); pixel.checkout(); assert.equal(queue().filter(q=>q[1]==='InitiateCheckout').length,1);
+path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().filter(q=>q[1]==='PageView').length,2,'conta não envia página'); assert.equal(queue().filter(q=>q[1]==='InitiateCheckout').length,1);
+assert.equal(rotaSeguraParaPixel('/livros/de/capitulo/1','?email=cliente@example.com'),false);
+assert.equal(rotaSeguraParaPixel('/entrar',''),false); assert.equal(rotaSeguraParaPixel('/en/curso/ru','?fbclid=abc-123'),true);
+assert.equal(rotaSeguraParaPixel('/en',''),true); assert.equal(rotaSeguraParaPixel('/es',''),true);
+pixel.choose('no'); assert.equal(saved.get(MARKETING_CHOICE),'no'); assert.deepEqual(queue().at(-1),['consent','revoke']);
+path='/'; search=''; const before=queue().length; pixel.pageView(); assert.equal(queue().length,before,'sem novos eventos após revogar');
+path='/conta'; pixel.choose('yes'); pixel.pageView(); assert.equal(queue().length,before,'não reativar o pixel em rota de conta');
+path='/'; pixel.pageView(); assert.deepEqual(queue().slice(-2),[['consent','grant'],['track','PageView']]);
+console.log('ok: pixel isolado por consentimento, rotas, UTMs, checkout e revogação');

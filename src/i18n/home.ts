@@ -2,6 +2,12 @@ import { LOCALE } from './index';
 
 // Textos da home compartilhada. O conteúdo didático não é traduzido aqui.
 const copy: Record<string, readonly [string, string]> = {
+  'Que bom ter você de volta. Seu próximo passo está aqui.': ['Welcome back. Your next step is right here.', 'Qué bueno verte de nuevo. Tu próximo paso está aquí.'],
+  'Vamos começar pela primeira sessão, no seu ritmo.': ['Let us start with the first session, at your own pace.', 'Empecemos por la primera sesión, a tu ritmo.'],
+  'Nenhuma sessão marcada ainda': ['No sessions marked yet', 'Ninguna sesión marcada todavía'],
+  'Você marcou todas as sessões deste curso. Revisar o que quiser é sempre uma boa ideia.': ['You have marked every session in this course. Reviewing whatever you like is always a good idea.', 'Has marcado todas las sesiones de este curso. Repasar lo que quieras siempre es buena idea.'],
+  'Próxima:': ['Next:', 'Siguiente:'],
+  'Livro de': ['Book:', 'Libro de'], 'Gramática de': ['Grammar:', 'Gramática de'],
   'Livros A1–A2 em seis idiomas. Leia os dois primeiros capítulos grátis, com áudio.': ['A1–A2 books in six languages. Read the first two chapters free, with audio.', 'Libros A1–A2 en seis idiomas. Lee los dos primeros capítulos gratis, con audio.'],
   'Escolher meu idioma': ['Choose my language', 'Elegir mi idioma'],
   'Começar a primeira sessão em': ['Start the first session in', 'Empezar la primera sesión de'],
@@ -119,6 +125,8 @@ const copy: Record<string, readonly [string, string]> = {
 
 export const homeText = (text: string): string => {
   if (LOCALE.codigo === 'pt-BR') return text;
+  const contagem = text.trim().match(/^(\d+) de (\d+) (sessão marcada|sessões marcadas)$/);
+  if (contagem) return LOCALE.codigo === 'en' ? `${contagem[1]} of ${contagem[2]} ${contagem[1] === '1' ? 'session' : 'sessions'} marked` : `${contagem[1]} de ${contagem[2]} ${contagem[1] === '1' ? 'sesión marcada' : 'sesiones marcadas'}`;
   const translated = copy[text.trim()]?.[LOCALE.codigo === 'en' ? 0 : 1];
   return translated === undefined ? text : text.replace(text.trim(), translated);
 };

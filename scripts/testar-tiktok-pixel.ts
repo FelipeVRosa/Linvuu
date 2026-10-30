@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import { MARKETING_CHOICE } from '../src/lib/metaPixel';
+import { criarTikTokPixel, TIKTOK_PIXEL_ID } from '../src/lib/tiktokPixel';
+
+const saved = new Map<string,string>();
+const store = { getItem:(k:string)=>saved.get(k)??null, setItem:(k:string,v:string)=>{saved.set(k,v);} };
+const scripts: {src:string;async:boolean}[] = [];
+const doc = { createElement:()=>({src:'',async:false}), head:{appendChild:(s:{src:string;async:boolean})=>scripts.push(s)} } as unknown as Document;
+const win = {} as Window; let path='/', search='?ttclid=abc-123';
+const pixel = criarTikTokPixel(store,()=>({win,doc,path,search}));
+const queue = () => (win as Window & {ttq:unknown[][]}).ttq;
+pixel.pageView(); pixel.checkout(); assert.equal(scripts.length,0);
+saved.set('linvuu:marketing:v1','yes'); pixel.pageView(); assert.equal(scripts.length,0,'consentimento antigo não cobre TikTok');
+saved.set(MARKETING_CHOICE,'yes'); pixel.pageView(); pixel.pageView();
+assert.equal(scripts.length,1); assert.ok(scripts[0].src.includes(TIKTOK_PIXEL_ID)); assert.deepEqual(queue().slice(),[['page']]);
+path='/assinatura'; search='?plano=mensal'; pixel.pageView(); pixel.checkout(); assert.deepEqual(queue().slice(-2),[['page'],['track','InitiateCheckout']]);
+path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().length,3,'conta é excluída');
+saved.set(MARKETING_CHOICE,'no'); pixel.choose('no'); assert.deepEqual(queue().at(-1),['revokeConsent']);
+path='/'; search=''; pixel.pageView(); assert.equal(queue().length,4);
+saved.set(MARKETING_CHOICE,'yes'); pixel.pageView(); assert.deepEqual(queue().slice(-2),[['grantConsent'],['page']]);
+console.log('ok: pixel TikTok respeita consentimento, rotas, checkout e revogação');

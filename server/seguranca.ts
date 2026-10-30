@@ -7,12 +7,12 @@ export function politicaCSP(extraMidia = ''): string {
   const firebase = ['https://*.googleapis.com', 'https://*.firebaseio.com', 'wss://*.firebaseio.com', 'https://*.firebaseapp.com', 'https://*.google.com'];
   const d: Record<string, string[]> = {
     'default-src': ["'self'"],
-    'script-src': ["'self'", 'https://apis.google.com', 'https://connect.facebook.net'],
+    'script-src': ["'self'", 'https://apis.google.com', 'https://connect.facebook.net', 'https://analytics.tiktok.com'],
     'style-src': ["'self'", "'unsafe-inline'"], // React usa style="" em alguns componentes
-    'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com'],
+    'img-src': ["'self'", 'data:', 'blob:', 'https://*.googleusercontent.com', 'https://www.facebook.com', 'https://analytics.tiktok.com'],
     'media-src': ["'self'", 'blob:', 'data:', ...(extraMidia ? [extraMidia] : [])],
     'font-src': ["'self'", 'data:'],
-    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', ...firebase, ...(extraMidia ? [extraMidia] : [])],
+    'connect-src': ["'self'", 'https://us.i.posthog.com', 'https://eu.i.posthog.com', 'https://www.facebook.com', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.us', ...firebase, ...(extraMidia ? [extraMidia] : [])],
     'frame-src': ['https://*.firebaseapp.com', 'https://accounts.google.com', 'https://*.google.com'],
     'object-src': ["'none'"],
     'base-uri': ["'self'"],

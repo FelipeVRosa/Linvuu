@@ -11,7 +11,7 @@ try {
   for (let i=0;i<60;i++) {try {if ((await fetch(base+'/healthz')).ok) {ready=true;break;}} catch {} await new Promise(r=>setTimeout(r,500));}
   assert.ok(ready,'servidor local iniciou');
   await fs.mkdir('revisao-publica',{recursive:true});
-  browser=await chromium.launch();
+  browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE_PATH});
   for (const [nome,viewport] of [['desktop',{width:1440,height:1000}],['celular',{width:390,height:844}],['estreito',{width:320,height:740}]]) {
     const context=await browser.newContext({viewport,reducedMotion:'reduce'});
     const page=await context.newPage();
@@ -20,6 +20,11 @@ try {
     for (const [rota,arquivo] of rotas) {
       await page.goto(base+rota);
       await page.getByRole('heading',{level:1}).waitFor();
+      // A jornada é testada com análise e publicidade recusadas quando o aviso aparece.
+      for (const tipo of ['analytics','ads']) {
+        const recusar=page.locator(`.analytics-consent-${tipo}[open] .analytics-actions button`).last();
+        if (await recusar.isVisible()) await recusar.click();
+      }
       if (arquivo === 'gramatica') {
         await page.locator('.topico').first().waitFor();
         assert.ok(await page.locator('.topico').count() > 0, 'amostras de gramática carregam para visitante');

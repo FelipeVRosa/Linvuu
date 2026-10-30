@@ -1,6 +1,7 @@
 // Pixel de publicidade: inicializado apenas depois de uma escolha específica do visitante.
 export const META_PIXEL_ID = '28831394486482407'; // identificador público do conjunto da Linvuu
-export const MARKETING_CHOICE = 'linvuu:marketing:v1';
+// Consentimento anterior mencionava apenas Meta; nova escolha inclui TikTok.
+export const MARKETING_CHOICE = 'linvuu:marketing:v2';
 type Choice = 'yes' | 'no' | null;
 type Store = Pick<Storage, 'getItem' | 'setItem'>;
 type Queue = { (...args: unknown[]): void; callMethod?: (...args: unknown[]) => void; queue: unknown[][]; push: Queue; loaded: boolean; version: string };
@@ -9,7 +10,7 @@ type MetaWindow = Window & { fbq?: Queue; _fbq?: Queue };
 // O SDK pode enviar a URL atual: não o chamamos em áreas de conta ou em URLs com parâmetros inesperados.
 export function rotaSeguraParaPixel(path: string, search: string): boolean {
   if (!/^\/(?:en|es)\/?$/.test(path) && !/^\/(?:en\/|es\/)?(?:|cursos|assinatura|curso\/(?:en|es|de|fr|it|ru|br)|livros(?:\/(?:en|es|de|fr|it|ru)(?:\/capitulo\/[12])?)?)\/?$/.test(path)) return false;
-  const allowed = new Set(['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','plano']);
+  const allowed = new Set(['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','ttclid','plano']);
   for (const [key, value] of new URLSearchParams(search)) if (!allowed.has(key) || value.length > 200 || !/^[A-Za-z0-9_.~-]*$/.test(value)) return false;
   return true;
 }

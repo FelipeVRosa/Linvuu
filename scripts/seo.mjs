@@ -30,9 +30,15 @@ if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort())
 }
 // Aulas grátis (dias 1 a 8 de cada curso, só em português): texto completo no HTML e dados de recurso educacional, então entram no sitemap.
 // Excluídos: o curso escrito para o próprio público (br, que não aparece em português) e cursos sem explicação em português.
+// Quando o curso também tem a versão em inglês (aulas em content/indice.en.json, gramática em content/gramatica/<id>.en.json),
+// a URL /en/... entra no mesmo grupo, com hreflang recíproco.
+const aulasEn = (id) => tr.en?.[id]?.aulas ?? [];
+const gramaticaEn = (id) => fs.existsSync(path.join(raiz, 'content', 'gramatica', `${id}.en.json`));
 for (const c of cursos.filter((x) => x.status !== 'em-breve' && x.id !== 'br' && fonte(x.id) === 'pt')) {
-  grupos.push({ p: `/curso/${c.id}`, em: ['pt-BR'] }, { p: `/gramatica/${c.id}`, em: ['pt-BR'] });
-  for (let d = 1; d <= 8; d++) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: ['pt-BR'] });
+  const dias = Array.from({ length: 8 }, (_, k) => k + 1);
+  const comEn = dias.filter((d) => aulasEn(c.id).includes(Math.ceil(d / 4)));
+  grupos.push({ p: `/curso/${c.id}`, em: comEn.length ? ['pt-BR', 'en'] : ['pt-BR'] }, { p: `/gramatica/${c.id}`, em: gramaticaEn(c.id) ? ['pt-BR', 'en'] : ['pt-BR'] });
+  for (const d of dias) grupos.push({ p: `/curso/${c.id}/dia/${d}`, em: comEn.includes(d) ? ['pt-BR', 'en'] : ['pt-BR'] });
 }
 // Português para estrangeiros possui versão pública em inglês.
 grupos.push({ p: '/curso/br', em: ['en'] }, { p: '/gramatica/br', em: ['en'] });

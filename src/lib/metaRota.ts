@@ -67,9 +67,9 @@ const TX = {
   en: {
     cursos: 'Courses', entrar: 'Sign in', cadastro: 'Sign up', assinatura: 'Subscription', priv: 'Privacy policy', privD: 'What data Linvuu collects, why, and what your rights are.', termos: 'Terms of use', termosD: 'Rules for using the Linvuu site and courses.',
     pt: 'Brazilian Portuguese for English speakers, A1 to B1', ptD: 'Learn Brazilian Portuguese from zero to B1 in 62 lessons explained in English, with audio, dialogues, grammar and exercises.',
-    curso: (n: string) => `${n} for English speakers, from zero to B1`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
+    curso: (n: string) => `Learn ${n} online, from zero to B1: course for English speakers`, cursoJ: (n: string) => `${n} for English speakers`, inicio: 'Home',
     aula: (a: number, t: string, n: string) => `Lesson ${a}: ${t} · ${n}`, aulaD: (n: string, a: number, t: string, s: number, tot: number) => `${n}, lesson ${a} (${t}), session ${s} of ${tot}: explained in English, with audio for every sentence and exercises.`,
-    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar`, gramD: (n: string) => `${n} grammar explained in English, topic by topic, with tables, examples and common mistakes.`, nao: 'Page not found',
+    sessao: (s: number, n: string) => `Session ${s} · ${n}`, gram: 'Grammar', gramC: (n: string) => `${n} grammar for English speakers`, gramD: (n: string) => `${n} grammar explained in English, topic by topic, with tables, examples and common mistakes. Free topics included.`, nao: 'Page not found',
   },
   es: {
     cursos: 'Cursos', entrar: 'Entrar', cadastro: 'Regístrate', assinatura: 'Suscripción', priv: 'Política de privacidad', privD: 'Qué datos recoge Linvuu, para qué y cuáles son tus derechos.', termos: 'Términos de uso', termosD: 'Reglas de uso del sitio y de los cursos de Linvuu.',
@@ -250,9 +250,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
       }));
       if (c && d?.raiz && /^[a-z]{2}$/.test(mc[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mc[1]}.json`))) corpo += `<p>${a(`/gramatica/${mc[1]}`, tx.gramC(c.nome))}</p>`;
     } else if (md) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
-    } else if (mg && ((loc.codigo === 'pt-BR' && mg[1] !== 'br') || (loc.codigo === 'en' && mg[1] === 'br'))) {
-      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1]) + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
+      corpo = cabeca(m.titulo ?? '', m.descricao) + (loc.codigo === 'pt-BR' ? sessaoGratisParaHtml(d, md[1], Number(md[2])) : loc.codigo === 'en' ? sessaoGratisEnParaHtml(d, md[1], Number(md[2])) : '') + `<p>${a(`/curso/${md[1]}`, visiveis.find((x) => x.id === md[1])?.nome ?? md[1])}</p>`;
+    } else if (mg && ((loc.codigo === 'pt-BR' && mg[1] !== 'br') || (loc.codigo === 'en' && (mg[1] === 'br' || (!!d?.raiz && /^[a-z]{2}$/.test(mg[1]) && fs.existsSync(path.join(d.raiz, 'content', 'gramatica', `${mg[1]}.en.json`))))))) {
+      corpo = cabeca(m.titulo ?? '', m.descricao) + gramaticaGratisParaHtml(d, mg[1], loc.codigo === 'en' && mg[1] !== 'br' ? 'en' : 'pt') + `<p>${a(`/curso/${mg[1]}`, visiveis.find((x) => x.id === mg[1])?.nome ?? mg[1])}</p>`;
     } else if (m.titulo) {
       corpo = cabeca(m.titulo, m.descricao);
     }
@@ -274,9 +274,9 @@ export function conteudoRota(m: MetaRota, d: DadosMeta | null, loc: Locale): str
 type Bloco = Record<string, any>;
 const cacheGramatica = new Map<string, string>();
 /** Apenas tópicos públicos que a página também mostra a visitantes após carregar a API. */
-function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string): string {
+function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string, explicacao: 'pt' | 'en' = 'pt'): string {
   if (!d?.raiz || !/^[a-z]{2}$/.test(idioma)) return '';
-  const arquivo = path.join(d.raiz, 'content', 'gramatica', `${idioma}.json`);
+  const arquivo = path.join(d.raiz, 'content', 'gramatica', explicacao === 'en' ? `${idioma}.en.json` : `${idioma}.json`);
   if (cacheGramatica.has(arquivo)) return cacheGramatica.get(arquivo)!;
   try {
     const pacote = JSON.parse(fs.readFileSync(arquivo, 'utf8'));
@@ -285,6 +285,31 @@ function gramaticaGratisParaHtml(d: DadosMeta | null, idioma: string): string {
     cacheGramatica.set(arquivo, corpo);
     return corpo;
   } catch { return ''; }
+}
+const cacheSessoesEn = new Map<string, any>();
+/** Sessão gratuita (dias 1 a 8) explicada em inglês, lida de content/idiomas/<curso>/en/dia-NNN.json. Mesma regra de privacidade da versão em português. */
+function sessaoGratisEnParaHtml(d: DadosMeta | null, curso: string, dia: number): string {
+  if (!d?.raiz || dia < 1 || dia > SESSOES_GRATIS || !/^[a-z]{2}$/.test(curso)) return '';
+  const f = path.join(d.raiz, 'content', 'idiomas', curso, 'en', `dia-${String(dia).padStart(3, '0')}.json`);
+  let arq = cacheSessoesEn.get(f);
+  if (!arq) { try { arq = JSON.parse(fs.readFileSync(f, 'utf8')); cacheSessoesEn.set(f, arq); } catch { return ''; } }
+  const sessao = arq.sessao;
+  if (!sessao?.blocos) return '';
+  const t = (x: unknown) => esc(String(x ?? ''));
+  const en = (x: Bloco) => x.en ?? x.pt;
+  const paras = (x: string) => String(x ?? '').split(/\s*(?:PASSO|STEP) \d+:\s*/).filter(Boolean).map((y) => `<p>${t(y)}</p>`).join('');
+  const tab = (linhas: Bloco[]) => linhas?.length ? `<table><thead><tr>${Object.keys(linhas[0]).map((k) => `<th>${t(k)}</th>`).join('')}</tr></thead><tbody>${linhas.map((l) => `<tr>${Object.values(l).map((v) => `<td>${t(v)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
+  const partes: string[] = [`<p>${t(arq.objetivo)}</p>`];
+  for (const b of sessao.blocos as Bloco[]) {
+    if (b.tipo === 'intro' || b.tipo === 'revisao') partes.push(`<p>${t(b.texto ?? b.enunciado)}</p>`);
+    else if (b.tipo === 'palavras') partes.push(`<h2>Vocabulary</h2>${tab((b.itens ?? []).map((i: Bloco) => ({ [curso]: i.ru, pronunciation: i.translit, english: en(i) })))}`);
+    else if (b.tipo === 'alfabeto') partes.push(`<h2>Alphabet and sounds</h2>` + (b.grupos ?? []).map((g: Bloco) => `<h3>${t(g.nome)}</h3>${tab((g.letras ?? []).map((l: Bloco) => ({ letter: `${l.maiuscula} ${l.minuscula}`, sound: l.som, example: l.exemplo, english: l.exemploPt })))}`).join(''));
+    else if (b.tipo === 'gramatica') partes.push(`<h2>${t(b.titulo)}</h2>${paras(b.explicacao)}${b.comparacao ? `<p><strong>In English:</strong> ${t(b.comparacao)}</p>` : ''}${b.exemplos ? `<ul>${b.exemplos.map((e: Bloco) => `<li>${t(e.ru)} — ${t(en(e))}</li>`).join('')}</ul>` : ''}${b.tabela ? tab(b.tabela) : ''}${(b.tabelas ?? []).map((x: Bloco) => `<h3>${t(x.titulo)}</h3>${tab(x.linhas)}`).join('')}`);
+    else if (b.tipo === 'dialogo') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.contexto)}</p><ul>${(b.linhas ?? []).map((l: Bloco) => `<li><strong>${t(l.personagem)}:</strong> ${t(l.ru)} <em>${t(en(l))}</em></li>`).join('')}</ul>`);
+    else if (b.tipo === 'texto') partes.push(`<h2>${t(b.titulo)}</h2><p>${t(b.ru)}</p><p>${t(en(b))}</p>`);
+    else if (b.tipo === 'producao') partes.push(`<p><strong>Practise:</strong> ${t(b.enunciado)}</p>`);
+  }
+  return `<h2>${t(sessao.titulo)} (${t(sessao.duracaoMin)} min)</h2>${partes.join('')}`;
 }
 const cacheAulas = new Map<string, any>();
 function sessaoGratisParaHtml(d: DadosMeta | null, curso: string, dia: number): string {

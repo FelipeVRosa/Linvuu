@@ -6,6 +6,8 @@ Esta branch prepara o pixel na web com preferência de publicidade independente 
 
 Os cabeçalhos CSP autorizam somente os domínios Meta necessários ao SDK e seus pedidos; o site não usa script inline. As alterações não ativam o pixel no APK. A política e os controles não são uma auditoria completa de comportamento dos navegadores ou de terceiros.
 
+Em 30/10/2026 o Gestor de Eventos mostrava ativa a opção da Meta para incluir automaticamente detalhes de página e produtos; eventos automáticos e correspondência avançada automática estavam desativados. O código pede `autoConfig=false`, mas ainda é necessário verificar em teste real quais dados são enviados com as configurações do conjunto. A opção da Meta não foi alterada.
+
 Testes locais: tipos web e APK; teste isolado sem rede para aceitação, recusa, revogação, rotas, parâmetros e checkout; navegador simulado em PT/EN/ES com o SDK interceptado; build e testes de segurança. Após CI, revisão e deploy, validar um evento de teste no Gestor de Eventos com o visitante autorizando publicidade e verificar CSP real. Até isso, não declarar eventos recebidos ou vendas atribuídas.
 
 TikTok, Pinterest, LinkedIn, Google Ads/YouTube e X possuem sistemas e identificadores próprios: perfil conectado não demonstra tag ativa nem acesso à conta de anúncios. Inventariar cada conta e o ID antes de integrá-las. Não criar contas duplicadas, gastar em campanhas ou inventar eventos de venda.

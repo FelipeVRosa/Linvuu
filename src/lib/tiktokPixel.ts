@@ -12,7 +12,7 @@ export function criarTikTokPixel(store: Store, runtime: () => { win: PixelWindow
   let lastPage = '';
   const choice = (): Choice => { try { const v = store.getItem(MARKETING_CHOICE); return v === 'yes' || v === 'no' ? v : null; } catch { return null; } };
   function choose(value: 'yes' | 'no') {
-    if (value === 'no') { lastPage = ''; granted = false; const w = runtime()?.win; if (initialized) w?.ttq?.revokeConsent(); }
+    if (value === 'no') { lastPage = ''; const w = runtime()?.win; if (initialized && granted) w?.ttq?.revokeConsent(); granted = false; }
   }
   function tracker() {
     const r = runtime();
@@ -38,7 +38,15 @@ export function criarTikTokPixel(store: Store, runtime: () => { win: PixelWindow
     if (!granted) { r.win.ttq?.grantConsent(); granted = true; }
     return r.win.ttq;
   }
-  function pageView() { const r = runtime(); if (!r) return; const key = r.path + r.search; if (lastPage === key) return; const q = tracker(); if (!q) return; q.page(); lastPage = key; }
+  function pageView() {
+    const r = runtime(); if (!r) return;
+    if (!rotaSeguraParaPixel(r.path, r.search)) {
+      lastPage = '';
+      if (initialized && granted) { r.win.ttq?.revokeConsent(); granted = false; }
+      return;
+    }
+    const key = r.path + r.search; if (lastPage === key) return; const q = tracker(); if (!q) return; q.page(); lastPage = key;
+  }
   function checkout() { tracker()?.track('InitiateCheckout'); }
   return { choose, pageView, checkout };
 }

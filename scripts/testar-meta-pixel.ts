@@ -16,6 +16,7 @@ assert.deepEqual(queue().slice(0,4),[['consent','grant'],['set','autoConfig',fal
 pixel.pageView(); assert.equal(queue().filter(q=>q[1]==='PageView').length,1,'não duplicar efeito React');
 path='/assinatura'; search='?plano=mensal'; pixel.pageView(); pixel.checkout(); assert.equal(queue().filter(q=>q[1]==='InitiateCheckout').length,1);
 path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().filter(q=>q[1]==='PageView').length,2,'conta não envia página'); assert.equal(queue().filter(q=>q[1]==='InitiateCheckout').length,1);
+assert.deepEqual(queue().at(-1),['consent','revoke'],'rota de conta suspende SDK já carregado');
 assert.equal(rotaSeguraParaPixel('/livros/de/capitulo/1','?email=cliente@example.com'),false);
 assert.equal(rotaSeguraParaPixel('/entrar',''),false); assert.equal(rotaSeguraParaPixel('/en/curso/ru','?fbclid=abc-123'),true);
 assert.equal(rotaSeguraParaPixel('/en',''),true); assert.equal(rotaSeguraParaPixel('/es',''),true);

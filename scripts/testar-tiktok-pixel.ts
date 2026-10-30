@@ -15,7 +15,7 @@ search='?tt_test_id=DBIBAAJC77UF91063L30_1793374244';
 saved.set(MARKETING_CHOICE,'yes'); pixel.pageView(); pixel.pageView();
 assert.equal(scripts.length,1); assert.ok(scripts[0].src.includes(TIKTOK_PIXEL_ID)); assert.deepEqual(queue().slice(),[['page']]);
 path='/assinatura'; search='?plano=mensal'; pixel.pageView(); pixel.checkout(); assert.deepEqual(queue().slice(-2),[['page'],['track','InitiateCheckout']]);
-path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().length,3,'conta é excluída');
+path='/conta'; pixel.pageView(); pixel.checkout(); assert.equal(queue().length,4,'conta suspende o SDK'); assert.deepEqual(queue().at(-1),['revokeConsent']);
 saved.set(MARKETING_CHOICE,'no'); pixel.choose('no'); assert.deepEqual(queue().at(-1),['revokeConsent']);
 path='/'; search=''; pixel.pageView(); assert.equal(queue().length,4);
 saved.set(MARKETING_CHOICE,'yes'); pixel.pageView(); assert.deepEqual(queue().slice(-2),[['grantConsent'],['page']]);

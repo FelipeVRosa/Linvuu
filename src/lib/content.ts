@@ -7,7 +7,7 @@ import type { InfoAula, SessaoAula } from './aulas';
 import { api } from './api';
 import { LOCALE, T } from '../i18n';
 import type { Explicacao } from '../i18n/locales';
-import { preferenciaExplicacao, resolverExplicacao, type IdiomasDaAula } from '../i18n/ensino';
+import { chaveExplicacao, explicacaoValida, resolverExplicacao, type IdiomasDaAula } from '../i18n/ensino';
 
 export type StatusCurso = 'disponivel' | 'em-producao' | 'em-breve' | 'em-planejamento';
 export type StatusAula = 'planejada' | 'em-producao' | 'publicada';
@@ -50,7 +50,11 @@ const INDICE = indiceJson.cursos as unknown as Record<string, { total: number; p
 
 /** Língua em que as explicações do curso foram escritas (o curso de português para estrangeiros foi escrito em inglês). */
 export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt';
-export const explicacaoDoCurso = (id: string): Explicacao => preferenciaExplicacao(id, fonteDoCurso(id));
+/** Sem escolha salva: a língua do site, se o curso já tem aulas traduzidas nela; senão a língua em que o curso foi escrito. Aula sem tradução cai na original (resolverExplicacao). */
+export const explicacaoDoCurso = (id: string): Explicacao => {
+  try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ }
+  return (TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0) > 0 ? LOCALE.explicacao : fonteDoCurso(id);
+};
 const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
 /** Quantas aulas do curso estão explicadas no idioma do site (todas, quando o curso foi escrito nele). */
 export const coberturaDoCurso = (id: string) => {

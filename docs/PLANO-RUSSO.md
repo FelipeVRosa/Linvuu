@@ -37,3 +37,70 @@ Participios (причастия) ficam para o B2.
 - Acento: no russo é a maior fonte de erro, no texto e no áudio; revisar o que a voz sintética lê errado.
 - Revisão por falante nativo pelo menos do A1 e do A2, antes de anunciar.
 - Áudio: pelo texto; frases iguais reaproveitam o MP3.
+
+## Livro B1–B2: onde termina o A2, matriz B1 e ementa B2 (atualização de 29/10/2026)
+O plano do **site** continua A1 a B1. O plano dos **livros** passa a ir até o **B2** (pedido do Felipe em 29/10/2026). O sumário detalhado e os rascunhos ficam no cofre Obsidian (`Cofre-Linvuu/10-Livros-B1-B2`), fora deste repositório.
+
+### Onde termina o A2
+- **Site:** aula 49 (revisão e simulado A2).
+- **Livro:** capítulo 28 (quadro geral dos seis casos e revisão), no sumário proposto de 28 capítulos para o A1–A2. Os capítulos atuais 12–15 do livro (4 a 9 mil caracteres cada) serão reescritos e expandidos em 12–28. Sumário **ainda a aprovar** pelo Felipe.
+
+### Matriz B1 (aulas 50–78 do site → capítulos do livro)
+| Capítulo | Tema | Aula(s) do site |
+|---|---|---|
+| B1-01 | Ponte A2→B1 | 49 |
+| B1-02 | Aspecto IV: processo e resultado | 50 |
+| B1-03 | Aspecto V: repetição, negação, verbos de fase | 51 |
+| B1-04 | Aspecto em pedidos e proibições | 32, 51 |
+| B1-05 | Levar e trazer (нести/носить, вести/водить, везти/возить) | 52 |
+| B1-06 | Prefixos de movimento 2 e sentidos figurados | 46 |
+| B1-07 | который I | 53 |
+| B1-08 | который II | 54 |
+| B1-09 | Condicional: бы, если бы | 55 |
+| B1-10 | чтобы | 56 |
+| B1-11 | Discurso indireto e ли | 57 |
+| B1-12 | Gerúndio | 58 |
+| B1-13 | Passiva e impessoais | 59 |
+| B1-14 | Regência dos verbos | 60 |
+| B1-15 | Causa, consequência, concessão | 61 |
+| B1-16 | Numerais: casos, coletivos, aproximados | 64 |
+| B1-17 | Forma curta e comparação avançada | 63 |
+| B1-18 | Pronomes indefinidos e negativos | 65 |
+| B1-19 | Partículas do discurso (же, ведь, даже, только, разве, неужели) | 66 |
+| B1-20 | Conectores, opinião, escrita formal e informal, textos temáticos (trabalho, mídia, cidade, cultura) | 67–73 |
+| B1-21 | Formação de palavras, leitura, escuta e apresentação oral | 74–77 |
+| B1-22 | Revisão e simulado B1 | 78 |
+O plural nos casos oblíquos (aula 62) entra no A2 do livro (capítulo 13).
+
+### Ementa B2 (B2-01 a B2-20) e o padrão oficial
+Base: *Государственный образовательный стандарт по русскому языку как иностранному. Второй уровень. Общее владение* (Т. А. Иванова e outros; Златоуст, 1999; PDF no site do Instituto da Língua Russa da MGU). Leitura de 29/10/2026 limitou-se à seção de conteúdo linguístico (fonética, morfologia, sintaxe); **o texto do padrão não é reproduzido**. Trechos de busca confirmam *причастие, причастный оборот, полные e краткие страдательные причастия, деепричастие, деепричастный оборот* no B2.
+| Capítulo | Tema | Seção do padrão |
+|---|---|---|
+| B2-01 | Particípios ativos (настоящего e прошедшего времени) | Глагол: причастие |
+| B2-02 | Particípios passivos, formas plena e curta | Глагол: причастие; прилагательное: полные/краткие |
+| B2-03 | Оборот причастный × который | Синтаксис: СПП |
+| B2-04 | Gerúndio e оборот деепричастный (avançado) | Глагол: деепричастие |
+| B2-05 | Aspecto em casos difíceis (fato geral, narração) | Глагол: виды |
+| B2-06 | Verbos de movimento: sentidos figurados e prefixos raros | Глагол |
+| B2-07 | Impessoais, concordância de sujeito e predicado | Синтаксис: субъект и предикат |
+| B2-08 | Ordem das palavras e tema-rema | Синтаксис: порядок слов |
+| B2-09 | Preposições derivadas e formais (в течение, в связи с, благодаря, вследствие) | Служебные части речи |
+| B2-10 | Conjunções de oração complexa (хотя, несмотря на то что, так как, в то время как) | Синтаксис: СПП |
+| B2-11 | Condicionais, concessivas e hipóteses mistas | Синтаксис: СПП |
+| B2-12 | Numerais em registro formal | Имя числительное |
+| B2-13 | Nominalização (отглагольные существительные) e formação de palavras | Словообразование |
+| B2-14 | Registros: coloquial, neutro, oficial, científico, jornalístico | Функционально-стилистическое употребление |
+| B2-15 | Acentuação e entonação (ИК5–ИК7) | Фонетика |
+| B2-16 | Idiomatismos e colocações (léxico mínimo B2: Klobukova e outros; **não aberto**) | Lexical |
+| B2-17 | Produção escrita: resumo, e-mail formal, reclamação | Синтаксис / estilo |
+| B2-18 | Leitura de originais em domínio público: Tchékhov (*Хамелеон*, *Толстый и тонкий*) e Púchkin (*Выстрел*), em edição verificada; notas editoriais modernas têm direitos próprios | Leitura |
+| B2-19 | Escuta e fala (áudio: licença a definir) | Fala |
+| B2-20 | Revisão e simulado B2 (itens originais; **não** reutilizar os testes típicos de terceiros) | — |
+
+### Fontes abertas e créditos
+- **CC BY 4.0 — Russian Constructicon** (`constructicon/russian-data`, commit `7806b7d`): 1.214 construções B1 e 1.282 B2 no banco; crédito obrigatório no expediente do livro.
+- Wikcionário (CC BY-SA) só para conferir acentos, sem copiar texto.
+- Verificador local de acentos: `ferramentas-externas/extratores/verificar-acentos-ru.py` (fora do repositório; dependência de rede: API do Wikcionário).
+
+### Pendências
+Sumário a aprovar pelo Felipe; revisão humana de todos os rascunhos; licença de áudio; foto definitiva das capas B1/B2; leitura integral do padrão TRKI-2 e do léxico mínimo.

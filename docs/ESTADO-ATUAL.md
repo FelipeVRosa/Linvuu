@@ -1,4 +1,6 @@
 # Estado atual da Linvuu
+> **Atualização 29/10/2026:** este arquivo é um snapshot de 27/10. O estado verificado em 29/10 (deploy, idiomas, conflitos e plano de fechamento) está em [AUDITORIA-MESTRE-2026-10-29.md](AUDITORIA-MESTRE-2026-10-29.md); em divergência, vale a auditoria mais recente e uma nova consulta ao GitHub, ao Render e ao site.
+
 Registro inicial: 26/10/2026 (Brasília). **Atualização factual: 27/10/2026, após confirmação por GitHub e Render.** Este arquivo é um snapshot: verificar main e deploy novamente em cada retomada.
 
 ## Atualização operacional verificada — 27/10/2026

@@ -3,6 +3,7 @@ import { carregarAuth } from '../../lib/firebase';
 import { api } from '../../lib/api';
 import { Capacitor } from '@capacitor/core';
 import { analytics } from '../../lib/analytics';
+import { metaPixel } from '../../lib/metaPixel';
 
 /** No app nativo a compra fica desligada até a decisão de cobrança pela loja (Google Play / App Store). Veja docs/APP.md. */
 export const compraNoAppDisponivel = () => !Capacitor.isNativePlatform();
@@ -23,7 +24,7 @@ export async function abrir(tipo: 'checkout' | 'portal', plano?: Plano) {
   const idioma = LOCALE.explicacao === 'pt' ? undefined : LOCALE.explicacao;
   const j = await chamar(tipo, 'POST', { ...(plano ? { plano } : {}), ...(idioma ? { idioma } : {}) });
   if (j.url) {
-    if (tipo === 'checkout') void analytics.capture('checkout_started', { page: 'plans', billing_plan: plano });
+    if (tipo === 'checkout') { void analytics.capture('checkout_started', { page: 'plans', billing_plan: plano }); metaPixel.checkout(); }
     window.location.href = j.url;
   }
 }

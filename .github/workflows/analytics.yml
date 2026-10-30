@@ -1,7 +1,7 @@
 name: Privacidade e integração PostHog
 on:
   pull_request:
-    paths: ['src/lib/analytics.ts', 'src/components/AnalyticsConsent.tsx', 'src/components/analytics-consent.css', 'src/lib/medicao.ts', 'src/lib/progresso.ts', 'scripts/testar-analytics*', '.github/workflows/analytics.yml']
+    paths: ['src/lib/analytics.ts', 'src/lib/metaPixel.ts', 'src/components/AnalyticsConsent.tsx', 'src/components/analytics-consent.css', 'src/lib/medicao.ts', 'src/lib/progresso.ts', 'scripts/testar-analytics*', 'scripts/testar-meta-pixel*', '.github/workflows/analytics.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -31,6 +31,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Consentimento, recusa, revogação e acessibilidade nos três idiomas
         run: node scripts/testar-analytics-browser.mjs
+      - name: Consentimento do pixel da Meta nos três idiomas sem enviar dados
+        run: node scripts/testar-meta-pixel-browser.mjs
       - name: Confirmar ingestão com um único evento técnico identificado como teste
         if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'gpt/website-apk'
         env:

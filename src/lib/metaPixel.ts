@@ -22,7 +22,7 @@ export function criarMetaPixel(store: Store, runtime: () => { win: MetaWindow; d
   const choice = (): Choice => { try { const v = store.getItem(MARKETING_CHOICE); return v === 'yes' || v === 'no' ? v : null; } catch { return null; } };
   function choose(value: 'yes' | 'no') {
     try { store.setItem(MARKETING_CHOICE, value); } catch { return; }
-    if (value === 'no') { lastPage = ''; granted = false; const w = runtime()?.win; if (initialized && w?.fbq) w.fbq('consent', 'revoke'); }
+    if (value === 'no') { lastPage = ''; const w = runtime()?.win; if (initialized && granted && w?.fbq) w.fbq('consent', 'revoke'); granted = false; }
   }
   function tracker() {
     const r = runtime();
@@ -45,6 +45,11 @@ export function criarMetaPixel(store: Store, runtime: () => { win: MetaWindow; d
   }
   function pageView() {
     const r = runtime(); if (!r) return;
+    if (!rotaSeguraParaPixel(r.path, r.search)) {
+      lastPage = '';
+      if (initialized && granted) { r.win.fbq?.('consent', 'revoke'); granted = false; }
+      return;
+    }
     const key = r.path + r.search;
     if (lastPage === key) return;
     const q = tracker(); if (!q) return;

@@ -1,6 +1,6 @@
 # Linvuu
 
-Plataforma de ensino de idiomas com **frontend React + Vite + TypeScript**, servidor **Node.js/Express** e versões web e Android tratadas separadamente. Código no repositório público; site: https://linvuu.com.br.
+Plataforma **internacional** de ensino de idiomas (português, inglês e espanhol; ver [docs/DECISAO-SITE-INTERNACIONAL.md](docs/DECISAO-SITE-INTERNACIONAL.md)) com **frontend React + Vite + TypeScript**, servidor **Node.js/Express** e versões web e Android tratadas separadamente. Código no repositório público; site: https://linvuu.com.br.
 
 **O estado verificável fica em [docs/ESTADO-ATUAL.md](docs/ESTADO-ATUAL.md)**. Registros antigos, como `docs/CONTEXTO.md`, não substituem o código, CI e as consultas de produção. Não tratar recursos em rascunho como lançados.
 

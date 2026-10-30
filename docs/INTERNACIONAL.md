@@ -1,3 +1,5 @@
+> **SUPERADO em 29/10/2026** por [DECISAO-SITE-INTERNACIONAL.md](DECISAO-SITE-INTERNACIONAL.md). Mantido como histórico.
+
 # Linvuu internacional
 
 A Linvuu começa no Brasil e foi preparada para crescer. Estado hoje e como abrir um novo idioma.

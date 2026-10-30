@@ -1,4 +1,5 @@
 # Estado atual da Linvuu
+> **29/10/2026: a Linvuu é um site internacional** ([decisão](DECISAO-SITE-INTERNACIONAL.md)). Cobertura de tradução em [COBERTURA-IDIOMAS.md](COBERTURA-IDIOMAS.md). Textos abaixo que digam "para brasileiros" estão superados.
 Registro inicial: 26/10/2026 (Brasília). **Atualização factual: 27/10/2026, após confirmação por GitHub e Render.** Este arquivo é um snapshot: verificar main e deploy novamente em cada retomada.
 
 ## Atualização operacional verificada — 27/10/2026

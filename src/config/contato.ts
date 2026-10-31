@@ -11,7 +11,7 @@ export const LINKEDIN_EMPRESA = '';
 export type IdContato = 'site' | 'email' | 'whatsapp' | 'linkedin';
 export interface Contato { id: IdContato; nome: string; rotulo: string; href: string; externo: boolean }
 
-export const whatsappUrl = (): string => (WHATSAPP_NUMERO ? `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(WHATSAPP_MENSAGEM)}` : '');
+export const whatsappUrl = (mensagem: string = WHATSAPP_MENSAGEM): string => (WHATSAPP_NUMERO ? `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensagem)}` : '');
 
 /** Só entram os canais que existem de verdade: nada de ícone que leva a lugar nenhum. */
 export function contatos(): Contato[] {

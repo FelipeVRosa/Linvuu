@@ -28,7 +28,7 @@ try {
       for (let n = 1; n <= d.indice[c.id].total; n++) paths.push(caminhoEm(loc.codigo, `/curso/${c.id}/dia/${n}`));
       paths.push(caminhoEm(loc.codigo, `/curso/${c.id}/dia/0`), caminhoEm(loc.codigo, `/curso/${c.id}/dia/${d.indice[c.id].total + 1}`));
     }
-    for (const p of ['/', '/cursos', '/assinatura', '/entrar', '/cadastro', '/livros', '/sobre', '/contato', '/privacidade', '/termos', '/livro/gramatica-ru', '/nao-existe-auditoria']) paths.push(caminhoEm(loc.codigo, p));
+    for (const p of ['/', '/cursos', '/assinatura', '/entrar', '/cadastro', '/livros', '/sobre', '/contato', '/ex-alunos-udemy', '/privacidade', '/termos', '/livro/gramatica-ru', '/nao-existe-auditoria']) paths.push(caminhoEm(loc.codigo, p));
     for (const [id, book] of Object.entries(d.livros)) {
       paths.push(caminhoEm(loc.codigo, `/livros/${id}`));
       for (const n of Object.keys(book.caps)) paths.push(caminhoEm(loc.codigo, `/livros/${id}/capitulo/${n}`));

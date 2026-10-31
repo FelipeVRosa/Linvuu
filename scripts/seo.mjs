@@ -19,7 +19,7 @@ const todos = (c) => LOCALES.map((l) => l.c);
 // o resto é em português. O sitemap lista URLs canonicas desejadas; nao limita as URLs que o Google pode descobrir.
 grupos.push({ p: '/', em: todos() }, { p: '/cursos', em: ['pt-BR'] }, { p: '/assinatura', em: ['pt-BR'] });
 // Livros e Sobre: só em português. Cada capítulo de amostra publicado (content/livros/<idioma>/cap-NN.json) entra no sitemap.
-grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
+grupos.push({ p: '/sobre', em: ['pt-BR'] }, { p: '/por-que-linvuu', em: ['pt-BR'] }, { p: '/contato', em: ['pt-BR'] }, { p: '/ex-alunos-udemy', em: ['pt-BR'] }, { p: '/livros', em: ['pt-BR'] });
 const dirLivros = path.join(raiz, 'content', 'livros');
 if (fs.existsSync(dirLivros)) for (const id of fs.readdirSync(dirLivros).sort()) {
   // Apenas os capítulos de amostra: a presença de outro arquivo não o torna público.

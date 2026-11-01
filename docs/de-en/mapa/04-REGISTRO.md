@@ -22,3 +22,10 @@
 ## Lista de progresso real por aula
 
 As 72 notas estão em `aulas/L01.md` … `aulas/L72.md`. Todas com `aprovada: false`; ao revisar, registrar parecer na nota e só depois alterar índice de cobertura. Próxima prioridade editorial: primeiras **duas aulas gratuitas** e contraste de pronúncia para anglófonos.
+
+## Continuação de conteúdo — primeiras sessões gratuitas
+
+- `content/idiomas/de/en/dia-001..004.json`: `titulo` e `aula.titulo` corrigidos para os nomes ingleses **já aprovados como títulos de interface** no `indice.en.json`. `aula.objetivo` já estava em inglês e foi preservado.
+- Sem alteração de textos alemães, IDs, links de áudio, preço ou acessos.
+- `scripts/testar-mapa-de-en.mjs` adicionado para verificar 72 notas, 288 arquivos, 302 tópicos, 15 fichas de fonte e coerência entre o índice de aulas anunciadas e as notas aprovadas. **Ainda precisa executar em checkout da branch; não é revisão linguística.**
+- **A primeira aula não foi marcada aprovada**: faltam auditoria detalhada dos exercícios e revisão independente de inglês e alemão.

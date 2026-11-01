@@ -1,7 +1,7 @@
 // biblioteca comum: detecção de português, varredura e regras de modelo (alemão para falantes de inglês)
 const fs = require('fs');
 const path = require('path');
-const REPO = 'C:/site/Linvuu-gram-en/';
+const REPO = path.resolve(__dirname, '../../..') + path.sep;
 const SKIP = new Set(['id', 'tipo', 'audio', 'idioma', 'status', 'origem', 'ipa', 'maiuscula', 'minuscula', 'en', 'responsavel', 'sessao', 'nivel', 'ru', 'translit', 'dia', 'fase', 'min', 'duracaoMin', 'sessoes', 'numero', 'aula', 'personagem', 'de', 'ingles']);
 const SW = /(^|[^\p{L}])(o|os|as|do|dos|em|no|na|nos|nas|uma|que|é|não|com|para|por|ou|ao|mais|como|você|isso|esta|este|são|ser|ouça|escolha|escreva|palavra|letra|sílaba|vogal|sim|aqui|quando|onde|quem|qual|quais|foi|era|tem|têm|muito|sempre|depois|antes|porque|também|só|seu|sua|meu|minha|nosso|nossa|nós|eu|ele|ela|eles|elas|dele|dela|pelo|pela|num|numa|sobre|entre|até|ainda|já|mesmo|cada|todo|toda|todos|todas|outro|outra|fala|diz|use|usa|veja|leia|complete|traduza|marque|responda|masculino|feminino|neutro|português|alemão|inglês|artigo|verbo)([^\p{L}]|$)/iu;
 const PTC = /[ãõçêâôáíóúà]/i;

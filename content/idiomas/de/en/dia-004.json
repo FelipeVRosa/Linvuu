@@ -21,217 +21,228 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 2,
+        "texto": "Your final mission: navigate two real situations. First, you meet a friend in a café. Then you greet someone you do not know. You will choose a greeting, understand a short story, reply naturally and finish the conversation. At the end, you should be able to do this without English prompts."
+      },
+      {
         "tipo": "dialogo",
-        "min": 5,
-        "titulo": "Hallo! Wie geht’s? / Hi! How are you?",
-        "contexto": "Anna and Ben meet on the street. Listen without the translation first. Who asks the first question, and how does the conversation end?",
+        "min": 4,
+        "titulo": "One conversation, two speakers",
+        "contexto": "First listen with English hidden. Anna and Ben know each other and speak informally. Notice how they ask a question back and how they end the exchange.",
         "linhas": [
           {
             "personagem": "Anna",
             "ru": "— Hallo, Ben!",
-            "en": "— Hi, Ben!",
+            "pt": "— Hi, Ben!",
             "audio": "Hallo, Ben!"
           },
           {
             "personagem": "Ben",
             "ru": "— Hallo, Anna! Wie geht’s?",
-            "en": "— Hi, Anna! How are you?",
+            "pt": "— Hi, Anna! How are you?",
             "audio": "Hallo, Anna! Wie geht’s?"
           },
           {
             "personagem": "Anna",
             "ru": "— Gut, danke! Und dir?",
-            "en": "— Fine, thanks! And you?",
+            "pt": "— Fine, thanks! And you?",
             "audio": "Gut, danke! Und dir?"
           },
           {
             "personagem": "Ben",
             "ru": "— Auch gut, danke.",
-            "en": "— Also fine, thanks.",
+            "pt": "— I'm good too, thanks.",
             "audio": "Auch gut, danke."
           },
           {
             "personagem": "Anna",
             "ru": "— Tschüs, Ben!",
-            "en": "— Bye, Ben!",
+            "pt": "— Bye, Ben!",
             "audio": "Tschüs, Ben!"
           },
           {
             "personagem": "Ben",
             "ru": "— Tschüs, Anna!",
-            "en": "— Bye, Anna!",
+            "pt": "— Bye, Anna!",
             "audio": "Tschüs, Anna!"
           }
         ]
       },
       {
-        "tipo": "palavras",
-        "min": 4,
-        "itens": [
-          {
-            "ru": "Hallo",
-            "translit": "hah-LOH",
-            "pt": "hello",
-            "en": "hello",
-            "audio": "Hallo"
-          },
-          {
-            "ru": "Guten Morgen",
-            "translit": "GOO-ten MOR-gen",
-            "pt": "good morning",
-            "en": "good morning",
-            "audio": "Guten Morgen"
-          },
-          {
-            "ru": "Guten Tag",
-            "translit": "GOO-ten tahk",
-            "pt": "good day",
-            "en": "good day",
-            "audio": "Guten Tag"
-          },
-          {
-            "ru": "Guten Abend",
-            "translit": "GOO-ten AH-bent",
-            "pt": "good evening",
-            "en": "good evening",
-            "audio": "Guten Abend"
-          },
-          {
-            "ru": "Gute Nacht",
-            "translit": "GOO-tuh nahkht",
-            "pt": "good night",
-            "en": "good night",
-            "audio": "Gute Nacht"
-          },
-          {
-            "ru": "Tschüs",
-            "translit": "chues",
-            "pt": "bye",
-            "en": "bye",
-            "audio": "Tschüs"
-          },
-          {
-            "ru": "Danke",
-            "translit": "DAHN-kuh",
-            "pt": "thanks",
-            "en": "thanks",
-            "audio": "Danke"
-          },
-          {
-            "ru": "Bitte",
-            "translit": "BIT-uh",
-            "pt": "please",
-            "en": "please",
-            "audio": "Bitte"
-          },
-          {
-            "ru": "Wie geht’s?",
-            "translit": "vee gayts",
-            "pt": "how are you?",
-            "en": "how are you?",
-            "audio": "Wie geht’s?"
-          },
-          {
-            "ru": "Und dir?",
-            "translit": "oont deer",
-            "pt": "and you?",
-            "en": "and you?",
-            "audio": "Und dir?"
-          },
-          {
-            "ru": "Auch gut",
-            "translit": "owkh goot",
-            "pt": "also good",
-            "en": "also good",
-            "audio": "Auch gut"
-          }
-        ]
-      },
-      {
         "tipo": "gramatica",
-        "min": 3,
-        "titulo": "When to use each greeting",
-        "explicacao": "Use «Hallo» when you greet someone informally and «Tschüs» when you say goodbye. «Guten Morgen» is a morning greeting, «Guten Tag» is a daytime greeting and «Guten Abend» is used in the evening. «Gute Nacht» is normally said when someone is going to bed, not when you arrive. To ask a friend how they are, say «Wie geht’s?». A natural answer is «Gut, danke! Und dir?» — Fine, thanks! And you? With strangers, use a more formal greeting and consider «Wie geht es Ihnen?» instead of informal «Wie geht’s?».",
-        "comparacao": "English works the same way here: «good evening» when you arrive and «good night» when you go to bed. German also has two expressions: «Guten Abend» on arriving and «Gute Nacht» before sleeping.",
+        "min": 4,
+        "titulo": "Choose the greeting and the register",
+        "explicacao": "STEP 1: For a friend, use «Hallo!» and «Wie geht’s?»; answer «Gut, danke! Und dir?». STEP 2: For a stranger or a formal setting, «Guten Tag!» and «Wie geht es Ihnen?» are useful polite options; you can ask back «Und Ihnen?». STEP 3: «Guten Morgen» is a morning greeting, «Guten Tag» a daytime greeting and «Guten Abend» an evening greeting. STEP 4: «Gute Nacht» is normally said when someone is going to bed, not as an evening arrival greeting. STEP 5: «Tschüs!» is an informal goodbye; «Auf Wiedersehen!» is a more formal farewell. German choices depend on the context, not simply the clock.",
+        "comparacao": "English 'you' does not distinguish du and Sie. German does: «dir» with a friend, «Ihnen» in polite speech. Learn the right phrase for the situation before studying the grammar behind the pronoun endings.",
         "tabela": [
           {
-            "situation": "Meeting someone in the morning",
-            "german": "Guten Morgen!",
-            "en": "Good morning"
+            "situation": "Meeting a friend",
+            "german": "Hallo! Wie geht’s?",
+            "meaning": "Hi! How are you?"
           },
           {
-            "situation": "Meeting someone during the day",
-            "german": "Guten Tag!",
-            "en": "Good day / hello"
+            "situation": "Meeting someone formally",
+            "german": "Guten Tag! Wie geht es Ihnen?",
+            "meaning": "Good day! How are you?"
           },
           {
-            "situation": "Meeting someone in the evening",
+            "situation": "Answering a friend",
+            "german": "Gut, danke! Und dir?",
+            "meaning": "Fine, thanks! And you?"
+          },
+          {
+            "situation": "Answering formally",
+            "german": "Gut, danke! Und Ihnen?",
+            "meaning": "Fine, thanks! And you?"
+          },
+          {
+            "situation": "Arriving in the evening",
             "german": "Guten Abend!",
-            "en": "Good evening"
+            "meaning": "Good evening!"
           },
           {
-            "situation": "Before going to sleep",
+            "situation": "Someone is going to bed",
             "german": "Gute Nacht!",
-            "en": "Good night"
+            "meaning": "Good night!"
           },
           {
-            "situation": "With friends, at any time",
-            "german": "Hallo!",
-            "en": "Hi / hello"
-          },
-          {
-            "situation": "Saying goodbye",
+            "situation": "Leaving a friend",
             "german": "Tschüs!",
-            "en": "Bye"
+            "meaning": "Bye!"
           },
           {
-            "situation": "Asking how someone is",
-            "german": "Wie geht’s?",
-            "en": "How are you?"
+            "situation": "Formal farewell",
+            "german": "Auf Wiedersehen!",
+            "meaning": "Goodbye!"
           }
         ],
         "erros": [
           {
-            "errado": "Gute Nacht, when arriving at a party in the evening",
-            "certo": "Guten Abend",
-            "motivo": "«Gute Nacht» is only said when parting, to someone going to sleep. When you arrive, say «Guten Abend»."
+            "errado": "Gute Nacht! (arriving at dinner)",
+            "certo": "Guten Abend!",
+            "motivo": "Use the evening greeting when arriving; good night is associated with going to sleep."
           },
           {
-            "errado": "Guten Tag, at eight in the evening",
-            "certo": "Guten Abend",
-            "motivo": "In the evening the greeting changes to «Guten Abend». «Guten Tag» is for the daytime."
+            "errado": "Und dir? (in a formal exchange)",
+            "certo": "Und Ihnen?",
+            "motivo": "The polite form is Ihnen, not dir."
           }
         ],
-        "tag": "Greetings"
+        "tag": "Situational German"
       },
       {
         "tipo": "texto",
         "min": 4,
-        "titulo": "Anna im Café / Anna in the café",
+        "titulo": "At the café — a short story you can now understand",
         "ru": "Guten Morgen! Anna ist im Café. Ben ist auch da. Anna sagt: Hallo, Ben! Wie geht’s? Ben sagt: Gut, danke! Und dir? Anna sagt: Auch gut, danke. Anna trinkt Tee. Ben trinkt Wasser. Das Café ist gut. Dann sagt Ben: Tschüs, Anna! Anna sagt: Tschüs, Ben!",
         "pt": "Good morning! Anna is at the café. Ben is there too. Anna says: Hi, Ben! How are you? Ben says: Fine, thanks! And you? Anna says: Also fine, thanks. Anna drinks tea. Ben drinks water. The café is good. Then Ben says: Bye, Anna! Anna says: Bye, Ben!",
         "perguntas": [
           {
             "pergunta": "Where are Anna and Ben?",
-            "resposta": "At the café («im Café»)."
+            "resposta": "At a café. The clue is «im Café»."
           },
           {
-            "pergunta": "What does Anna drink and what does Ben drink?",
-            "resposta": "Anna drinks tea («Tee») and Ben drinks water («Wasser»)."
+            "pergunta": "Who drinks tea, and who drinks water?",
+            "resposta": "Anna drinks tea («Tee»). Ben drinks water («Wasser»). You can infer both from the familiar words."
           },
           {
-            "pergunta": "What question does Anna ask to find out whether Ben is well?",
-            "resposta": "«Wie geht’s?»."
+            "pergunta": "What do they say when leaving?",
+            "resposta": "They say «Tschüs!» — an informal goodbye."
+          }
+        ]
+      },
+      {
+        "tipo": "palavras",
+        "min": 3,
+        "itens": [
+          {
+            "ru": "Hallo",
+            "pt": "hi",
+            "en": "hi",
+            "translit": "Listen and repeat",
+            "audio": "Hallo"
+          },
+          {
+            "ru": "Guten Morgen",
+            "pt": "good morning",
+            "en": "good morning",
+            "translit": "Listen and repeat",
+            "audio": "Guten Morgen"
+          },
+          {
+            "ru": "Guten Tag",
+            "pt": "good day / hello",
+            "en": "good day / hello",
+            "translit": "Listen and repeat",
+            "audio": "Guten Tag"
+          },
+          {
+            "ru": "Guten Abend",
+            "pt": "good evening",
+            "en": "good evening",
+            "translit": "Listen and repeat",
+            "audio": "Guten Abend"
+          },
+          {
+            "ru": "Gute Nacht",
+            "pt": "good night",
+            "en": "good night",
+            "translit": "Listen and repeat",
+            "audio": "Gute Nacht"
+          },
+          {
+            "ru": "Tschüs",
+            "pt": "bye (informal)",
+            "en": "bye (informal)",
+            "translit": "Listen and repeat",
+            "audio": "Tschüs"
+          },
+          {
+            "ru": "Danke",
+            "pt": "thanks",
+            "en": "thanks",
+            "translit": "Listen and repeat",
+            "audio": "Danke"
+          },
+          {
+            "ru": "Bitte",
+            "pt": "please / you're welcome",
+            "en": "please / you're welcome",
+            "translit": "Listen and repeat",
+            "audio": "Bitte"
+          },
+          {
+            "ru": "Wie geht’s?",
+            "pt": "how are you? (informal)",
+            "en": "how are you? (informal)",
+            "translit": "Listen and repeat",
+            "audio": "Wie geht’s?"
+          },
+          {
+            "ru": "Und dir?",
+            "pt": "and you? (informal)",
+            "en": "and you? (informal)",
+            "translit": "Listen and repeat",
+            "audio": "Und dir?"
+          },
+          {
+            "ru": "Auch gut",
+            "pt": "good too",
+            "en": "good too",
+            "translit": "Listen and repeat",
+            "audio": "Auch gut"
           }
         ]
       },
       {
         "tipo": "exercicios",
-        "min": 9,
+        "min": 11,
         "itens": [
           {
+            "id": "de-001-e30",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen: which daytime greeting do you hear?",
             "audio": "Guten Tag",
             "opcoes": [
               "Guten Tag",
@@ -239,12 +250,12 @@
               "Gute Nacht"
             ],
             "gabarito": "Guten Tag",
-            "explicacao": "«Guten Tag» is the daytime greeting. In «Guten Abend» you would hear «AH-bent» at the end, and in «Gute Nacht» you would hear the harsh «ch» of «nahkht».",
-            "id": "de-001-e30"
+            "explicacao": "Tag means day. Abend means evening; Nacht means night."
           },
           {
+            "id": "de-001-e31",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Which question do you hear?",
             "audio": "Wie geht’s?",
             "opcoes": [
               "Wie geht’s?",
@@ -252,109 +263,109 @@
               "Guten Morgen"
             ],
             "gabarito": "Wie geht’s?",
-            "explicacao": "The question starts with «vee», the German «w» sounding like «v», and ends in «GAYTS». «Und dir?» starts with «oont» and «Guten Morgen» is a greeting, not a question.",
-            "id": "de-001-e31"
+            "explicacao": "«Wie geht’s?» asks how someone is."
           },
           {
+            "id": "de-001-e32",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
+            "enunciado": "Listen and write the word for 'thanks'.",
             "audio": "Danke",
             "respostaEsperada": "Danke",
-            "explicacao": "Write «Danke». The final «e» is sounded, «DAHN-kuh», and the word is the same for a man or a woman.",
-            "id": "de-001-e32"
+            "explicacao": "Remember the final unstressed -e."
           },
           {
+            "id": "de-001-e33",
             "tipo": "multiple-choice",
-            "enunciado": "Which greeting is used in the morning?",
+            "enunciado": "It's 9 a.m. You enter a bakery. Which greeting fits?",
             "opcoes": [
               "Guten Morgen",
               "Guten Abend",
               "Gute Nacht"
             ],
             "gabarito": "Guten Morgen",
-            "explicacao": "«Morgen» means morning. «Abend» is evening, and «Nacht» is the time to sleep.",
-            "id": "de-001-e33"
+            "explicacao": "Morgen = morning. The context determines the greeting."
           },
           {
+            "id": "de-001-r01",
             "tipo": "repeat",
-            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "enunciado": "Listen, imitate and reveal the German sentence.",
             "audio": "Hallo, Anna! Wie geht’s?",
             "respostaEsperada": "Hallo, Anna! Wie geht’s?",
             "explicacao": "Hi, Anna! How are you?",
-            "id": "de-001-r01",
             "complemento": true
           },
           {
+            "id": "de-001-e34",
             "tipo": "multiple-choice",
-            "enunciado": "What does «Tschüs» mean?",
+            "enunciado": "You are leaving a friend. What does «Tschüs» mean?",
             "opcoes": [
               "bye",
               "thank you",
               "please"
             ],
             "gabarito": "bye",
-            "explicacao": "«Tschüs» is the informal goodbye, which reads «chüs». Thank you is «Danke», and please is «Bitte».",
-            "id": "de-001-e34"
+            "explicacao": "«Tschüs» closes an informal conversation."
           },
           {
+            "id": "de-001-e35",
             "tipo": "fill-gap",
-            "enunciado": "Gut, ___! Und dir? (thanks)",
+            "enunciado": "Gut, ___! Und dir?",
             "opcoes": [
               "danke",
               "bitte",
               "tschüs"
             ],
             "gabarito": "danke",
-            "explicacao": "After saying you are well, you thank the person for asking with «danke». «Tschüs» is goodbye and «bitte» would be «please».",
-            "id": "de-001-e35"
+            "explicacao": "Thank the person, then ask back."
           },
           {
+            "id": "de-001-e36",
             "tipo": "fill-gap",
-            "enunciado": "Guten ___! (good evening, on arriving)",
+            "enunciado": "Guten ___! (arriving for an evening event)",
             "opcoes": [
               "Abend",
               "Morgen",
               "Nacht"
             ],
             "gabarito": "Abend",
-            "explicacao": "When you arrive in the evening you say «Guten Abend». «Guten Morgen» is for the morning, and «Nacht» is kept for «Gute Nacht», when going to sleep.",
-            "id": "de-001-e36"
+            "explicacao": "Guten Abend is used in the evening, while Gute Nacht is associated with bedtime."
           },
           {
+            "id": "de-001-e37",
             "tipo": "fill-gap",
-            "enunciado": "___, Ben! Wie geht’s? (hi)",
+            "enunciado": "___, Ben! Wie geht’s? (greeting a friend)",
             "opcoes": [
               "Hallo",
               "Tschüs",
               "Danke"
             ],
             "gabarito": "Hallo",
-            "explicacao": "To greet a friend you say «Hallo». «Tschüs» is for saying goodbye and «Danke» is thank you.",
-            "id": "de-001-e37"
+            "explicacao": "«Hallo» opens an informal exchange."
           },
           {
+            "id": "de-001-r02",
             "tipo": "repeat",
-            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "enunciado": "Repeat the answer and check your phrasing.",
             "audio": "Gut, danke! Und dir?",
             "respostaEsperada": "Gut, danke! Und dir?",
             "explicacao": "Fine, thanks! And you?",
-            "id": "de-001-r02",
             "complemento": true
           },
           {
+            "id": "de-001-e38",
             "tipo": "sentence-ordering",
-            "enunciado": "Put in order: «How are you?»",
+            "enunciado": "Build the question: 'How are you?'",
             "opcoes": [
               "geht’s",
               "Wie"
             ],
             "gabarito": "Wie geht’s?",
-            "explicacao": "The question starts with the question word «Wie», how, and then comes «geht’s».",
-            "id": "de-001-e38"
+            "explicacao": "The question word Wie comes before geht’s."
           },
           {
+            "id": "de-001-e39",
             "tipo": "sentence-ordering",
-            "enunciado": "Put in order: «Fine, thanks! And you?»",
+            "enunciado": "Build a polite response to a friend: 'Fine, thanks! And you?'",
             "opcoes": [
               "dir",
               "Gut",
@@ -362,71 +373,69 @@
               "danke"
             ],
             "gabarito": "Gut, danke! Und dir?",
-            "explicacao": "First the answer «Gut, danke!» and then the question handed back, «Und dir?».",
-            "id": "de-001-e39"
+            "explicacao": "Answer, thank, then hand back the question."
           },
           {
+            "id": "de-001-e40",
             "tipo": "sentence-ordering",
-            "enunciado": "Put in order: «Good morning, Ben!»",
+            "enunciado": "Build the morning greeting for Ben.",
             "opcoes": [
               "Ben",
               "Guten",
               "Morgen"
             ],
             "gabarito": "Guten Morgen, Ben!",
-            "explicacao": "The greeting «Guten Morgen» comes first, in full, and the person's name comes last.",
-            "id": "de-001-e40"
+            "explicacao": "Use the full greeting first, then the name."
           },
           {
+            "id": "de-001-r03",
             "tipo": "repeat",
-            "enunciado": "Listen, repeat out loud and then show the answer.",
+            "enunciado": "Respond naturally before revealing the answer.",
             "audio": "Auch gut, danke.",
             "respostaEsperada": "Auch gut, danke.",
-            "explicacao": "Also fine, thanks.",
-            "id": "de-001-r03",
+            "explicacao": "I'm good too, thanks.",
             "complemento": true
           },
           {
+            "id": "de-001-e41",
             "tipo": "sentence-ordering",
-            "enunciado": "Put in order: «Also fine, thanks.»",
+            "enunciado": "Build: 'I'm good too, thanks.'",
             "opcoes": [
               "danke",
               "Auch",
               "gut"
             ],
             "gabarito": "Auch gut, danke.",
-            "explicacao": "«Auch gut» means also fine, and the thanks «danke» closes the sentence.",
-            "id": "de-001-e41"
+            "explicacao": "Auch = also, gut = well, danke = thanks."
           },
           {
+            "id": "de-001-e42",
             "tipo": "producao",
-            "enunciado": "Write one greeting and one goodbye in German. Example: use Hallo and Tschüs.",
+            "enunciado": "Write a greeting and goodbye you would use with a friend.",
             "respostaEsperada": "Hallo! Tschüs!",
-            "id": "de-001-e42"
+            "explicacao": "Other natural informal greetings and farewells can also work."
           },
           {
+            "id": "de-001-e43",
             "tipo": "producao",
-            "enunciado": "Write a natural two-line exchange asking a friend how they are. Include their reply.",
-            "respostaEsperada": "Wie geht’s? Gut, danke! Und dir?",
-            "id": "de-001-e43"
+            "enunciado": "Write a two-turn exchange between friends: question, answer, question back.",
+            "respostaEsperada": "Wie geht’s? — Gut, danke! Und dir?",
+            "explicacao": "The goal is an appropriate natural response, not a single mandatory wording."
           },
           {
+            "id": "de-001-e44",
             "tipo": "producao",
-            "enunciado": "Write the greeting for arriving in the evening, then the expression used when someone goes to sleep.",
-            "respostaEsperada": "Guten Abend! Gute Nacht!",
-            "id": "de-001-e44"
+            "enunciado": "Write the evening arrival greeting and what you say at bedtime.",
+            "respostaEsperada": "Guten Abend! — Gute Nacht!",
+            "explicacao": "These expressions serve different situations."
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 3,
-        "enunciado": "Final mission: play Anna and Ben without reading the English translations. Open with «Hallo!», ask «Wie geht’s?», reply «Gut, danke! Und dir?» and close with «Tschüs!». Then choose «Guten Morgen», «Guten Tag» or «Guten Abend» for the situation. Explain why «Gute Nacht» is not the normal greeting when arriving at an evening event."
-      },
-      {
-        "tipo": "revisao",
         "min": 2,
-        "enunciado": "Listen to «Eis», «Bier», «Schule», «Sport», «Haus», «ich» and «Buch» and say which letter combination appears in each one."
+        "enunciado": "Capstone: perform two conversations, first with a friend and then formally with a stranger. With the friend: «Hallo! Wie geht’s? — Gut, danke! Und dir? — Auch gut, danke. Tschüs!». Formally: «Guten Tag! Wie geht es Ihnen? — Gut, danke! Und Ihnen?». Check whether you adjusted the greeting, question and ending to the person.",
+        "exemplo": "Friend: Hallo! Wie geht’s? — Gut, danke! Und dir? — Auch gut, danke. Tschüs! / Formal: Guten Tag! Wie geht es Ihnen? — Gut, danke! Und Ihnen? — Auf Wiedersehen!"
       }
     ]
   },

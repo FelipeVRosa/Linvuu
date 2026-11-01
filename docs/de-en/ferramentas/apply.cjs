@@ -8,7 +8,7 @@ if (!process.argv.includes('--permitir-sobrescrita')) {
   console.error('Proteção editorial: apply.cjs sobrescreve sessões. Requer --permitir-sobrescrita e mapas completos conferidos.');
   process.exit(2);
 }
-if (!fs.existsSync(out) || fs.readdirSync(out).filter(f => /^out.*\\.json$/.test(f)).length === 0) {
+if (!fs.existsSync(out) || fs.readdirSync(out).filter(f => /^out.*\.json$/.test(f)).length === 0) {
   console.error('Mapas de tradução ausentes em docs/de-en/ferramentas/out/. Nada foi alterado.');
   process.exit(2);
 }

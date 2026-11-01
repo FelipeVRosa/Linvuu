@@ -6,7 +6,7 @@
 
 | Aula | Nível (Linvuu) | Título em inglês | Sessões | Gramática EN | Estado |
 |---:|---|---|---|---:|---|
-| 1 | ZERO | [Sounds and first words](aulas/L01.md) | 1–4 | 3 | TR / REV pendente |
+| 1 | ZERO | [First Steps in German](aulas/L01.md) | 1–4 | 3 | TR / REV pendente |
 | 2 | A1 | [Who I am](aulas/L02.md) | 5–8 | 4 | TR / REV pendente |
 | 3 | A1 | [Nouns and articles](aulas/L03.md) | 9–12 | 6 | TR / REV pendente |
 | 4 | A1 | [Present tense verbs and word order](aulas/L04.md) | 13–16 | 5 | TR / REV pendente |

@@ -40,6 +40,8 @@ type Traducao = { aulas: number[]; g: Record<string, string>; s: Record<string, 
 /** Traduções dos títulos e lista de aulas por idioma de explicação (content/indice.<en|es>.json), carregadas antes de abrir o site. */
 let TRADUCOES: Partial<Record<Explicacao, Record<string, Traducao>>> = {};
 const ARQUIVOS_TR = import.meta.glob('../../content/indice.{en,es}.json', { import: 'default' }) as Record<string, () => Promise<Record<string, Traducao>>>;
+// Apenas builds de prévia explicitamente configurados: NÃO libera aulas na produção.
+const PREVIA_DE_EN_L01 = import.meta.env.VITE_DE_EN_L01_PREVIEW === '1';
 export async function carregarTraducoes() {
   await Promise.all((['en', 'es'] as const).map(async (l) => {
     const f = ARQUIVOS_TR[`../../content/indice.${l}.json`];
@@ -53,6 +55,7 @@ export const fonteDoCurso = (id: string): Explicacao => INDICE[id]?.fonte ?? 'pt
 /** Sem escolha salva: a língua do site, se o curso já tem aulas traduzidas nela; senão a língua em que o curso foi escrito. Aula sem tradução cai na original (resolverExplicacao). */
 export const explicacaoDoCurso = (id: string): Explicacao => {
   try { const v = localStorage.getItem(chaveExplicacao(id)); if (explicacaoValida(v)) return v; } catch { /* sem armazenamento */ }
+  if (PREVIA_DE_EN_L01 && id === 'de' && LOCALE.explicacao === 'en') return 'en';
   return (TRADUCOES[LOCALE.explicacao]?.[id]?.aulas.length ?? 0) > 0 ? LOCALE.explicacao : fonteDoCurso(id);
 };
 const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | undefined => fonteDoCurso(id) === explicacao ? undefined : TRADUCOES[explicacao]?.[id];
@@ -60,10 +63,13 @@ const traducao = (id: string, explicacao = explicacaoDoCurso(id)): Traducao | un
 export const coberturaDoCurso = (id: string) => {
   const total = INDICE[id]?.grupos?.length ?? 0;
   if (fonteDoCurso(id) === explicacaoDoCurso(id)) return { traduzidas: total, total, reserva: explicacaoDoCurso(id) };
+  if (PREVIA_DE_EN_L01 && id === 'de' && explicacaoDoCurso(id) === 'en') return { traduzidas: 1, total, reserva: fonteDoCurso(id) };
   return { traduzidas: traducao(id)?.aulas.length ?? 0, total, reserva: fonteDoCurso(id) };
 };
 /** A aula tem explicação no idioma do site? */
-export const aulaTraduzida = (id: string, aula: number, explicacao = explicacaoDoCurso(id)) => fonteDoCurso(id) === explicacao || !!traducao(id, explicacao)?.aulas.includes(aula);
+export const aulaTraduzida = (id: string, aula: number, explicacao = explicacaoDoCurso(id)) =>
+  (PREVIA_DE_EN_L01 && id === 'de' && aula === 1 && explicacao === 'en') ||
+  fonteDoCurso(id) === explicacao || !!traducao(id, explicacao)?.aulas.includes(aula);
 
 /** Título e objetivo do dia para um curso (alguns idiomas têm aulas próprias no lugar do texto-mestre). */
 export const diaDoCurso = (id: string, d: DiaMestre) => {

@@ -1,0 +1,38 @@
+name: German from English - Lesson 1 QA
+
+on:
+  push:
+    branches:
+      - de-en/entrega-rascunho
+    paths:
+      - 'content/idiomas/de/en/dia-00[1-4].json'
+      - 'content/gramatica/de.en.json'
+      - 'content/indice.en.json'
+      - 'src/lib/content.ts'
+      - 'scripts/testar-l01-de-en.mjs'
+      - '.github/workflows/de-en-l01.yml'
+  pull_request:
+    paths:
+      - 'content/idiomas/de/en/dia-00[1-4].json'
+      - 'content/gramatica/de.en.json'
+      - 'content/indice.en.json'
+      - 'src/lib/content.ts'
+      - 'scripts/testar-l01-de-en.mjs'
+      - '.github/workflows/de-en-l01.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  lesson-one:
+    name: Structural QA and TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node scripts/testar-l01-de-en.mjs
+      - run: npm run lint

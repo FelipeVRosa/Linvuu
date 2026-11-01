@@ -21,3 +21,20 @@ Dicionário «frase em português → inglês» por agentes, junção por script
 - Não alterar conteúdo em português nem áudios.
 - Cidades brasileiras nas frases alemãs ficaram (o alemão não muda).
 - Merge só com OK do Felipe no chat.
+
+## Continuação ChatGPT no PR #429 (31/10/2026)
+
+Foram acrescentados os seguintes trabalhos **somente na branch de rascunho**:
+
+- `scripts/auditar-de-en.mjs`: auditoria de 288 sessões e gramática, com detecção de resíduos portugueses, preservação de IDs/áudio/texto alemão, gabaritos e metadados. Executar `node scripts/auditar-de-en.mjs --limit=100` (ou `--json`). **O retorno diferente de zero é esperado enquanto houver pendências; ele não certifica revisão linguística humana.**
+- Correções de conteúdo nos `dia-003`, `dia-006`, `dia-010` e `dia-192`: glosas, tabelas, alternativas de múltipla escolha, gabaritos e justificativas em inglês. Não alterados os trechos de alemão, áudios nem IDs.
+- `content/gramatica/de.en.json`: tradução dos títulos de aula usando os 72 nomes **já existentes** em `content/indice.en.json`, categorias pedagógicas, títulos ainda portugueses e glosas/tabelas identificadas. A gramática **ainda não está integralmente revista**.
+- `docs/de-en/ferramentas/lib.cjs`: agora localiza a raiz do repositório em vez de usar o caminho privado de Windows. `apply.cjs` falha em modo seguro sem `--permitir-sobrescrita` e sem mapas presentes.
+
+### Bloqueios para liberação
+
+**Não marcar `de.aulas` como 72** apenas porque existem 288 arquivos. O `content/indice.en.json` tem 72 títulos de aulas em `de.g` e 288 títulos de sessões em `de.s`, mas `de.aulas` continua vazio deliberadamente: existem textos curtos, objetivos, glosas e fragmentos de exercício ainda em português. Um exemplo é `aula.titulo` e `aula.objetivo` em sessões traduzidas, mesmo que os blocos centrais estejam em inglês.
+
+Próxima passagem editorial: harmonizar as três camadas de cada sessão (`titulo`, `aula.titulo`, `aula.objetivo`) com o índice EN; revisar todas as chaves `pt`/tabelas, `enunciado`, `opcoes`, `gabarito` e `explicacao` dos 288 arquivos; corrigir o que a auditoria reportar; validar o português intacto e os IDs/áudios; conferir gramática e comparação de erros específicos de falantes de inglês. Só depois executar o conjunto de testes e encaminhar para revisão de falante nativo.
+
+**Não rodar `apply.cjs` sobre esta branch sem os dicionários originais completos**, porque os diretórios temporários `sh/` e `out/` não foram commitados: a reexecução pode sobrescrever as traduções. Não regenerar nem fazer merge/deploy até o gate editorial e a autorização do Felipe. O aviso visual “In production” da interface inglesa está em trabalho separado do Claude; não editar aqui.

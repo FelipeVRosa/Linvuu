@@ -3,6 +3,15 @@ const fs = require('fs');
 const L = require('./lib.cjs');
 const SP = __dirname.replace(/\\/g, '/');
 const out = SP + '/out/';
+// Os mapas sh/out não foram versionados. Nunca sobrescrever as 288 sessões já traduzidas por engano.
+if (!process.argv.includes('--permitir-sobrescrita')) {
+  console.error('Proteção editorial: apply.cjs sobrescreve sessões. Requer --permitir-sobrescrita e mapas completos conferidos.');
+  process.exit(2);
+}
+if (!fs.existsSync(out) || fs.readdirSync(out).filter(f => /^out.*\\.json$/.test(f)).length === 0) {
+  console.error('Mapas de tradução ausentes em docs/de-en/ferramentas/out/. Nada foi alterado.');
+  process.exit(2);
+}
 const M = {}, KEYS = {}, TL = {};
 for (const f of fs.readdirSync(out).filter((x) => /\.json$/.test(x))) {
   const j = JSON.parse(fs.readFileSync(out + f, 'utf8'));

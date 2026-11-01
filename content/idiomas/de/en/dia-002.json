@@ -21,112 +21,169 @@
     "duracaoMin": 30,
     "blocos": [
       {
+        "tipo": "intro",
+        "min": 2,
+        "texto": "English spelling is an unreliable guide to German pronunciation. Today you will stop reading German V, W, J and Z as if they were English. Your challenge: listen to two words, predict their first sounds, then correct yourself using the audio."
+      },
+      {
+        "tipo": "gramatica",
+        "min": 6,
+        "titulo": "Four letter traps — and two new mouth positions",
+        "explicacao": "STEP 1: German W usually sounds /v/, as in English very: Wasser. STEP 2: V often sounds /f/, as in father: Vater; loanwords such as Vase may use /v/. STEP 3: J sounds /j/, the first sound in English yes: Jahr. STEP 4: Z sounds /ts/, like the end of English cats: Zeit. STEP 5: German S often sounds /z/ before a vowel at the beginning of a syllable, as in Sonne; in other positions it can sound /s/. STEP 6: To make Ü, position your tongue as for English ee and round the lips; Ö combines a front e-like tongue position with rounded lips. Neither is simply an English oo. Listen rather than trusting approximations.",
+        "comparacao": "The most tempting mistake for an English speaker is to pronounce Wasser with an English /w/ and Vater with /v/. German often reverses those expectations.",
+        "tabela": [
+          {
+            "letter": "W",
+            "ipa": "/v/",
+            "example": "Wasser",
+            "english_hint": "v in very"
+          },
+          {
+            "letter": "V (common)",
+            "ipa": "/f/",
+            "example": "Vater",
+            "english_hint": "f in father"
+          },
+          {
+            "letter": "J",
+            "ipa": "/j/",
+            "example": "Jahr",
+            "english_hint": "y in yes"
+          },
+          {
+            "letter": "Z",
+            "ipa": "/ts/",
+            "example": "Zeit",
+            "english_hint": "ts in cats"
+          },
+          {
+            "letter": "Ü",
+            "ipa": "/yː/ or /ʏ/",
+            "example": "Tür",
+            "english_hint": "ee tongue + rounded lips"
+          },
+          {
+            "letter": "Ö",
+            "ipa": "/øː/ or /œ/",
+            "example": "Öl",
+            "english_hint": "front e-like tongue + rounded lips"
+          }
+        ],
+        "erros": [
+          {
+            "errado": "Wasser pronounced with English w",
+            "certo": "Wasser",
+            "motivo": "German w normally sounds like English v."
+          },
+          {
+            "errado": "Vater pronounced with English v",
+            "certo": "Vater",
+            "motivo": "Native German Vater begins with /f/."
+          },
+          {
+            "errado": "Zeit pronounced as English z-eye-t",
+            "certo": "Zeit",
+            "motivo": "German z begins with /ts/, not /z/."
+          }
+        ],
+        "tag": "Pronunciation workshop"
+      },
+      {
         "tipo": "alfabeto",
-        "min": 9,
+        "min": 8,
         "grupos": [
           {
-            "nome": "Group 3 — Consonants that change sound",
+            "nome": "English traps",
             "letras": [
-              {
-                "maiuscula": "H",
-                "minuscula": "h",
-                "som": "breathy h, as in English «house»",
-                "ipa": "[h]",
-                "exemplo": "Haus",
-                "exemploPt": "house"
-              },
-              {
-                "maiuscula": "J",
-                "minuscula": "j",
-                "som": "like the «y» in «yogurt»",
-                "ipa": "[j]",
-                "exemplo": "Jahr",
-                "exemploPt": "year"
-              },
-              {
-                "maiuscula": "R",
-                "minuscula": "r",
-                "som": "throaty r, made at the back of the throat (not the English r)",
-                "ipa": "[ʁ]",
-                "exemplo": "rot",
-                "exemploPt": "red"
-              },
-              {
-                "maiuscula": "S",
-                "minuscula": "s",
-                "som": "Often /z/ at the beginning of a syllable before a vowel (Sonne), but /s/ in other positions.",
-                "ipa": "[z / s]",
-                "exemplo": "Sonne",
-                "exemploPt": "sun"
-              },
-              {
-                "maiuscula": "V",
-                "minuscula": "v",
-                "som": "Usually /f/ in native German words (Vater), but /v/ in many loanwords (Vase).",
-                "ipa": "[f]",
-                "exemplo": "Vater",
-                "exemploPt": "father"
-              },
               {
                 "maiuscula": "W",
                 "minuscula": "w",
-                "som": "Like the English v in very: German w is pronounced /v/.",
                 "ipa": "[v]",
+                "som": "Like v in English very",
                 "exemplo": "Wasser",
                 "exemploPt": "water"
               },
               {
+                "maiuscula": "V",
+                "minuscula": "v",
+                "ipa": "[f] / [v]",
+                "som": "Usually /f/ in native words; some loanwords have /v/",
+                "exemplo": "Vater",
+                "exemploPt": "father"
+              },
+              {
+                "maiuscula": "J",
+                "minuscula": "j",
+                "ipa": "[j]",
+                "som": "Like y in English yes, not j in jam",
+                "exemplo": "Jahr",
+                "exemploPt": "year"
+              },
+              {
                 "maiuscula": "Z",
                 "minuscula": "z",
-                "som": "«ts», as in «pizza»",
                 "ipa": "[ts]",
+                "som": "Join t and s, as in English cats",
                 "exemplo": "Zeit",
                 "exemploPt": "time"
-              },
-              {
-                "maiuscula": "ß",
-                "minuscula": "ß",
-                "som": "The voiceless /s/ sound, called Eszett.",
-                "ipa": "[s]",
-                "exemplo": "Straße",
-                "exemploPt": "street"
-              },
-              {
-                "maiuscula": "G",
-                "minuscula": "g",
-                "som": "Usually /g/ as in go initially, but /k/ at the end of many words (Tag).",
-                "ipa": "[g]",
-                "exemplo": "gut",
-                "exemploPt": "good"
               }
             ]
           },
           {
-            "nome": "Group 4 — Less common letters",
+            "nome": "A new set of vowel movements",
             "letras": [
               {
-                "maiuscula": "C",
-                "minuscula": "c",
-                "som": "«k» in foreign words, like «Computer»; on its own it is rare (it appears in «ch», «sch» and «ck»)",
-                "ipa": "[k / ts]",
-                "exemplo": "Computer",
-                "exemploPt": "computer"
+                "maiuscula": "Ä",
+                "minuscula": "ä",
+                "ipa": "[ɛː / ɛ]",
+                "som": "Similar to the vowel in bed, but long and short forms vary",
+                "exemplo": "Käse",
+                "exemploPt": "cheese"
               },
               {
-                "maiuscula": "Q",
-                "minuscula": "q",
-                "som": "always comes with «u», and the pair «qu» sounds «kv»",
-                "ipa": "[kv]",
-                "exemplo": "Quiz",
-                "exemploPt": "quiz"
+                "maiuscula": "Ö",
+                "minuscula": "ö",
+                "ipa": "[øː / œ]",
+                "som": "Keep a front e-like tongue position while rounding the lips",
+                "exemplo": "Öl",
+                "exemploPt": "oil"
               },
               {
-                "maiuscula": "Y",
-                "minuscula": "y",
-                "som": "sounds like the «ü», in words of Greek origin",
-                "ipa": "[y]",
-                "exemplo": "Typ",
-                "exemploPt": "type"
+                "maiuscula": "Ü",
+                "minuscula": "ü",
+                "ipa": "[yː / ʏ]",
+                "som": "Keep an ee-like tongue position while rounding the lips",
+                "exemplo": "Tür",
+                "exemploPt": "door"
+              }
+            ]
+          },
+          {
+            "nome": "Listen for context",
+            "letras": [
+              {
+                "maiuscula": "S",
+                "minuscula": "s",
+                "ipa": "[z / s]",
+                "som": "Often /z/ before a vowel at syllable start; sometimes /s/",
+                "exemplo": "Sonne",
+                "exemploPt": "sun"
+              },
+              {
+                "maiuscula": "H",
+                "minuscula": "h",
+                "ipa": "[h]",
+                "som": "An audible h at the start of Haus",
+                "exemplo": "Haus",
+                "exemploPt": "house"
+              },
+              {
+                "maiuscula": "ß",
+                "minuscula": "ß",
+                "ipa": "[s]",
+                "som": "The sound /s/, called Eszett",
+                "exemplo": "Straße",
+                "exemploPt": "street"
               }
             ]
           }
@@ -134,87 +191,81 @@
       },
       {
         "tipo": "palavras",
-        "min": 5,
+        "min": 4,
         "itens": [
           {
-            "ru": "Haus",
-            "translit": "hows",
-            "pt": "house",
-            "en": "house",
-            "audio": "Haus"
-          },
-          {
-            "ru": "Jahr",
-            "translit": "yahr",
-            "pt": "year",
-            "en": "year",
-            "audio": "Jahr"
-          },
-          {
-            "ru": "rot",
-            "translit": "roht",
-            "pt": "red",
-            "en": "red",
-            "audio": "rot"
-          },
-          {
-            "ru": "Sonne",
-            "translit": "ZON-uh",
-            "pt": "sun",
-            "en": "sun",
-            "audio": "Sonne"
-          },
-          {
-            "ru": "Vater",
-            "translit": "FAH-ter",
-            "pt": "father",
-            "en": "father",
-            "audio": "Vater"
-          },
-          {
             "ru": "Wasser",
-            "translit": "VAHS-er",
             "pt": "water",
             "en": "water",
+            "translit": "/ˈvasɐ/",
             "audio": "Wasser"
           },
           {
+            "ru": "Vater",
+            "pt": "father",
+            "en": "father",
+            "translit": "/ˈfaːtɐ/",
+            "audio": "Vater"
+          },
+          {
+            "ru": "Jahr",
+            "pt": "year",
+            "en": "year",
+            "translit": "/jaːɐ̯/",
+            "audio": "Jahr"
+          },
+          {
             "ru": "Zeit",
-            "translit": "tsite",
             "pt": "time",
             "en": "time",
+            "translit": "/tsaɪ̯t/",
             "audio": "Zeit"
           },
           {
+            "ru": "Sonne",
+            "pt": "sun",
+            "en": "sun",
+            "translit": "/ˈzɔnə/",
+            "audio": "Sonne"
+          },
+          {
             "ru": "Straße",
-            "translit": "SHTRAH-suh",
             "pt": "street",
             "en": "street",
+            "translit": "/ˈʃtʁaːsə/",
             "audio": "Straße"
           },
           {
-            "ru": "gut",
-            "translit": "goot",
-            "pt": "good",
-            "en": "good",
-            "audio": "gut"
+            "ru": "Tür",
+            "pt": "door",
+            "en": "door",
+            "translit": "/tyːɐ̯/",
+            "audio": "Tür"
           },
           {
-            "ru": "Hand",
-            "translit": "hahnt",
-            "pt": "hand",
-            "en": "hand",
-            "audio": "Hand"
+            "ru": "Käse",
+            "pt": "cheese",
+            "en": "cheese",
+            "translit": "/ˈkɛːzə/",
+            "audio": "Käse"
+          },
+          {
+            "ru": "Öl",
+            "pt": "oil",
+            "en": "oil",
+            "translit": "/øːl/",
+            "audio": "Öl"
           }
         ]
       },
       {
         "tipo": "exercicios",
-        "min": 9,
+        "min": 8,
         "itens": [
           {
+            "id": "de-001-e10",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Listen for the word beginning with /v/.",
             "audio": "Wasser",
             "opcoes": [
               "Wasser",
@@ -222,12 +273,12 @@
               "Sonne"
             ],
             "gabarito": "Wasser",
-            "explicacao": "The German «w» sounds like the English «v» in «van»: «VAH-ser». «Vater» starts with «f» («FAH-ter») and «Sonne» starts with «z» («ZO-nuh»).",
-            "id": "de-001-e10"
+            "explicacao": "Wasser begins with /v/, even though it is written W. Vater begins with /f/."
           },
           {
+            "id": "de-001-e11",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Which word begins with /ts/?",
             "audio": "Zeit",
             "opcoes": [
               "Zeit",
@@ -235,12 +286,12 @@
               "Straße"
             ],
             "gabarito": "Zeit",
-            "explicacao": "The word starts with «ts», a sound that in English appears only inside or at the end of words like «pizza» or «cats». «Sonne» and «Straße» start with «z» and «sht».",
-            "id": "de-001-e11"
+            "explicacao": "German Z represents /ts/, a small t followed by s."
           },
           {
+            "id": "de-001-e12",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and choose.",
+            "enunciado": "Which word begins with the sound y in yes?",
             "audio": "Jahr",
             "opcoes": [
               "Jahr",
@@ -248,84 +299,79 @@
               "rot"
             ],
             "gabarito": "Jahr",
-            "explicacao": "The German «j» sounds like the «y» in «yogurt»: «yahr». «Haus» starts with a breathy «h» and «rot» with the throaty «r».",
-            "id": "de-001-e12"
+            "explicacao": "German J is /j/; it does not sound like the j in English jam."
           },
           {
+            "id": "de-001-e13",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
+            "enunciado": "Listen and type the German word for water.",
             "audio": "Wasser",
             "respostaEsperada": "Wasser",
-            "explicacao": "Write it with «w», which sounds like «v». Do not write «Vasser»: in German the «v» almost always sounds like «f». The «ss» in the middle is a strong «s».",
-            "id": "de-001-e13"
+            "explicacao": "Write W, not V: its /v/ sound is represented by W."
           },
           {
+            "id": "de-001-e14",
             "tipo": "audio-recognition",
-            "enunciado": "Listen and write.",
+            "enunciado": "Listen and write the German word for street.",
             "audio": "Straße",
             "respostaEsperada": "Straße",
-            "explicacao": "The «ß» is called «Eszett» and sounds like «ss». It does not exist in English and appears after a long vowel, like the «a» in «Straße».",
-            "id": "de-001-e14"
+            "explicacao": "At the start of Straße, st sounds /ʃt/. The ß represents /s/."
           },
           {
+            "id": "de-001-e15",
             "tipo": "multiple-choice",
-            "enunciado": "The «h» of «Haus», at the start of the word, is:",
+            "enunciado": "German W in «Wasser» normally sounds like which English consonant?",
             "opcoes": [
-              "breathy, as in «house»",
-              "silent, as in «hour»",
-              "the same as the «r»"
+              "v in very",
+              "w in water",
+              "f in fine"
             ],
-            "gabarito": "breathy, as in «house»",
-            "explicacao": "In German, an «h» at the start of a word is breathed out, a puff of air, just as in English «house». It is never silent at the start of a word.",
-            "id": "de-001-e15"
+            "gabarito": "v in very",
+            "explicacao": "You know the sound from English v; the letter is different."
           },
           {
+            "id": "de-001-e16",
             "tipo": "multiple-choice",
-            "enunciado": "The «s» of «Sonne» (before a vowel) sounds like:",
+            "enunciado": "Which description fits the German Z in «Zeit»?",
             "opcoes": [
-              "«z»",
-              "the English s in sun",
-              "«x»"
+              "t and s together",
+              "z in zebra",
+              "s in sun"
             ],
-            "gabarito": "«z»",
-            "explicacao": "At the start of «Sonne», German s is voiced /z/, like z in English zebra. In other positions, s may sound /s/.",
-            "id": "de-001-e16"
+            "gabarito": "t and s together",
+            "explicacao": "Z is /ts/. Feel the brief t release before s."
           },
           {
+            "id": "de-001-e17",
             "tipo": "fill-gap",
-            "enunciado": "___asser (water; read «VAH-ser»)",
+            "enunciado": "___asser (water; initial sound /v/).",
             "opcoes": [
               "W",
               "V",
               "F"
             ],
             "gabarito": "W",
-            "explicacao": "German w represents /v/ (Wasser). German v often represents /f/, although some loanwords have /v/.",
-            "id": "de-001-e17"
+            "explicacao": "German W makes the /v/ sound in Wasser."
           },
           {
+            "id": "de-001-e18",
             "tipo": "fill-gap",
-            "enunciado": "___eit (time; read «tsite»)",
+            "enunciado": "___eit (time; starts with /ts/).",
             "opcoes": [
               "Z",
               "S",
               "C"
             ],
             "gabarito": "Z",
-            "explicacao": "The «ts» sound is written with «z». The «s» would sound like «z» before a vowel, and a «c» on its own would sound like «k».",
-            "id": "de-001-e18"
+            "explicacao": "The letter Z represents /ts/ in Zeit."
           }
         ]
       },
       {
         "tipo": "producao",
-        "min": 4,
-        "enunciado": "English-speaker challenge: read «Vater» and «Wasser» aloud without relying on English letter values. German v in Vater sounds /f/, while w in Wasser sounds /v/. Then contrast «Zeit» (/ts/) and «Jahr» (/j/ as in yes), using the audio."
-      },
-      {
-        "tipo": "revisao",
-        "min": 3,
-        "enunciado": "Listen again to the words from the previous session and repeat each one out loud. Then read the 18 letters from the previous session without looking at the translation."
+        "min": 2,
+        "enunciado": "Two-round pronunciation challenge. Round 1: say «Wasser, Vater, Jahr, Zeit» without using English letter names. Round 2: listen and imitate «Käse, Öl, Tür». Compare your mouth position with the audio; do not replace ö or ü with plain English vowels.",
+        "exemplo": "Wasser /v/ · Vater /f/ · Jahr /j/ · Zeit /ts/"
       }
     ]
   },

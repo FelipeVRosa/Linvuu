@@ -1,0 +1,13 @@
+# nota05 - lote sh05 (frase de origem -> o que mudou)
+- STEP 3 "só há -e em quatro lugares (nominativo singular nos três gêneros e acusativo feminino e neutro)" -> são CINCO lugares. Corrigido para "five".
+- "PASSO 1 (hängen/Konjunktiv)": nada errado; "sollte" sem trema mantido.
+- "Retorno ... Conjugue ... Sie wären": sem mudança.
+- Genitivo: PASSO 2 dizia "(ao contrário do inglês)" sobre a ordem do possuidor; adaptado para "unlike English my father's car" e o apóstrofo ("Tom's Auto") passa a contrastar com o "'s" do inglês.
+- "Dos erros": warten/denken/träumen com preposição errada: o texto citava erros de falante de português (warten sem auf, denken in, träumen mit); trocado pelos erros típicos de falante de inglês (warten für, denken über, träumen über).
+- "mehr schön" (calco do português "mais bonito") -> calco do inglês "more beautiful".
+- wann/wenn/als: o português "quando" único vira inglês "when" único (mesma lógica).
+- Datas: acrescentei que alemão usa dia.mês.ano, não mês/dia/ano como nos EUA; andar: "im ersten Stock" explicado como um lance acima do térreo (inglês americano/britânico divergem).
+- wehtun: acrescentei que em inglês a parte do corpo é o sujeito ("my head hurts"); alemão acrescenta a pessoa no dativo.
+- sich bewerben um (não "für"): acrescentei contraste com "apply for".
+- Frases alemãs com cidades brasileiras (Recife) ficaram intactas (regra: alemão nunca muda); pode-se trocar depois por cidades anglófonas.
+- Tradução "Pedro ... me busca no aeroporto" mantém Pedro (nome próprio).

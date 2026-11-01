@@ -1,0 +1,8 @@
+# nota04 - correcoes do lote sh04 (frase de origem -> correcao)
+- 'PASSO 2: nove preposicoes de duas vias: ... so o masculino muda entre os dois casos: Wo? dem, Wohin? den; feminino: der/die; neutro: dem/das' -> o texto dizia que so o masculino muda, mas ele proprio lista que feminino (der->die) e neutro (dem->das) tambem mudam. No ingles: 'the article changes between the two cases in every gender'.
+- 'PASSO 3: ... use a forma contraida sempre que o artigo for dem ... ' -> suavizado: contracao so nas combinacoes listadas (nao e obrigatoria com todas as preposicoes, ex. nach dem, aus dem).
+- 'so ha -e em quatro lugares (nominativo singular nos tres generos e acusativo feminino e neutro)' -> sao CINCO lugares (3 nominativos + 2 acusativos). Corrigido para 'five'.
+- 'Complete os adjetivos no Dativo, Plural e sem artigo (Grupo C): Er trinkt morgens ___ heiss Kaffee (m., Akk.) und ... Milch (f., Akk.)' -> o enunciado dizia 'Dativo, Plural' mas o exercicio e acusativo singular sem artigo. Ingles: 'with no article (Group C), accusative'.
+- Adaptacoes por contraste PT x EN (nao erros): explicacao de 'wo/wohin' (in x into em ingles), 'mehr schoen' (calco de 'more beautiful'), 'wann/wenn/als' (ingles usa when para os tres), 'ob' (ingles usa if/whether), declinacao de adjetivo (ingles nao flexiona), stehen/stellen e liegen/legen (ingles tem lie/lay, sit/set).
+- Frases em alemao com cidades brasileiras (Recife, Sao Paulo, Florianopolis, Rio, Curitiba) ficaram intactas por regra (alemao nao muda); o Felipe pode decidir trocar por cidades de lingua inglesa no conteudo alemao.
+- 'Particip/Cuidado': 'bekommen' aparece como pergunta de significado (to get, nao 'become'); opcoes mantidas.

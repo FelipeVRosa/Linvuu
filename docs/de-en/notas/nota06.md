@@ -1,0 +1,14 @@
+# nota06 - lote sh06 (frase de origem -> o que mudou)
+- Nenhum erro factual de alemao encontrado no lote; as alteracoes sao adaptacoes PT -> EN:
+  - "que" unico do portugues -> "who/that/which" do ingles (relativas), com nota de que o ingles nao usa virgula em relativa restritiva e frequentemente omite o pronome.
+  - preposicao no fim da relativa em ingles ("the man I speak with") x alemao sempre antes ("mit dem").
+  - "quando" unico do portugues -> "when" unico do ingles (als/wenn).
+  - "para + infinitivo" -> "to + infinitive" (ingles) x "um ... zu" obrigatorio; "sem/em vez de + fazer" -> "-ing" em ingles.
+  - "aber x sondern": "mas" portugues -> "but" ingles (mesma ambiguidade).
+  - passivo "ser + particípio" -> "be + participle"; wurde nao e "war".
+  - "-bar/-lich" ganhou comparacao com "-able".
+  - "Plusquamperfekt" comparado com past perfect ("I had eaten").
+  - "dessen/deren" explicado como "whose".
+  - "Ich bewerbe mich um" (sich bewerben um, nao "für" como no "apply for") foi tratado no sh05.
+- Frases em alemao com cidades brasileiras (Sao Paulo, Florianopolis, Rio, Curitiba, Recife) ficaram intactas (regra: alemao nao muda). O check marca "PORTUGUES?" so por causa do "São Paulo" (falso positivo).
+- Regra de "firme": PASSO "Depois de wenn, evite würde: use hätte, wäre" (sh06 idx ~629) convive com o exemplo "wenn du im Lotto gewinnen würdest" no mesmo lote; deixei como esta, so uma preferencia de estilo.

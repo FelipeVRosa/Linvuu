@@ -75,6 +75,20 @@ for (let n=1;n<=288;n++) {
     err(file,'titulo','session title has untranslated lesson prefix',String(b.titulo));
   if (a.aula?.objetivo && a.aula.objetivo === b.aula?.objetivo)
     err(file,'aula.objetivo','lesson objective unchanged from Portuguese',String(b.aula.objetivo));
+  // Aula 1 EN é um produto editorial próprio. Seus blocos, frases e chaves de áudio podem
+  // diferir legitimamente do português. Preservar IDs; verificar o conteúdo pelo teste L01.
+  const editorialIndependente = n >= 1 && n <= 4;
+  if (editorialIndependente) {
+    const av=collect(a,'id').sort(), bv=collect(b,'id').sort();
+    if (JSON.stringify(av)!==JSON.stringify(bv))
+      err(file,'id','independent English lesson must preserve the original exercise IDs');
+    if (b.sessao?.blocos?.[0]?.tipo !== 'intro' || b.sessao?.blocos?.at(-1)?.tipo !== 'producao')
+      err(file,'sessao.blocos','independent lesson lacks an opening mission or transfer task');
+    validateAnswers(b,file);
+    visit(b,file);
+    checked++;
+    continue;
+  }
   if (JSON.stringify(a.sessao?.blocos?.map(x=>x.tipo)) !== JSON.stringify(b.sessao?.blocos?.map(x=>x.tipo)))
     err(file,'','lesson block types changed');
   for (const key of ['ru','audio','id','ipa','maiuscula','minuscula']) {

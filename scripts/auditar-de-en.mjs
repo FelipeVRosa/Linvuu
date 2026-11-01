@@ -13,6 +13,7 @@ const skip = new Set(['ru','audio','ipa','origem','id','idioma','nivel','status'
 const pt = /[ãõêâôáíóúà]|\b(?:você|vocês|ouça|escolha|escreva|responda|corrija|pronúncia|terminação|trema|palavra|letra|vogal|sílaba|certo|errado|livro|língua|alemão|português|inglês|porque|também|não|leia|depois|antes|preposição|conjunção|tudo|algo|jornal|série|esporte|leite|água|casa|maçã|muito|só|quem|livraria|romance|saudação|objeto|sujeito|posse|nada|muita\s+coisa)\b/iu;
 const err = (file, at, message, detail = '') => issues.push({file,at,message,detail:String(detail).slice(0,200)});
 const read = f => JSON.parse(fs.readFileSync(f,'utf8'));
+const englishLessonTitles = read(path.join(root,'content/indice.en.json')).de?.g ?? {};
 function visit(value, file, at = '', key = '') {
   if (typeof value === 'string') {
     if (skip.has(key)) return;
@@ -40,6 +41,9 @@ function sameShape(a,b,at,file) {
     if (!b || typeof b !== 'object' || Array.isArray(b)) { err(file,at,'object changed type');return; }
     // Table column headings can legitimately be translated; compare shared fields only.
     for (const k of Object.keys(a)) if (k in b) sameShape(a[k],b[k],at+'.'+k,file);
+    if (typeof a.pt === 'string' && a.pt === b.pt && a.pt.length > 2 &&
+        !new Set(['euro','hotel','taxi','sport','film','pizza','radio','menu','internet','okay','ok']).has(a.pt.toLowerCase()))
+      err(file,at+'.pt','gloss identical to Portuguese source: review translation',a.pt);
     const removed = Object.keys(a).filter(k=>!(k in b));
     if (removed.length && !at.includes('.tabela') && !at.includes('.tabelas')) err(file,at,'fields missing',removed.join(','));
   }
@@ -64,6 +68,13 @@ for (let n=1;n<=288;n++) {
     err(file,'','invalid course/language/day metadata');
   if (a.aula?.numero !== b.aula?.numero || a.sessao?.sessao !== b.sessao?.sessao)
     err(file,'','lesson/session number changed');
+  const enTitle = englishLessonTitles[String(a.aula?.numero)];
+  if (enTitle && b.aula?.titulo !== enTitle)
+    err(file,'aula.titulo','lesson title not localised',String(b.aula?.titulo));
+  if (enTitle && !String(b.titulo).startsWith(enTitle+': '))
+    err(file,'titulo','session title has untranslated lesson prefix',String(b.titulo));
+  if (a.aula?.objetivo && a.aula.objetivo === b.aula?.objetivo)
+    err(file,'aula.objetivo','lesson objective unchanged from Portuguese',String(b.aula.objetivo));
   if (JSON.stringify(a.sessao?.blocos?.map(x=>x.tipo)) !== JSON.stringify(b.sessao?.blocos?.map(x=>x.tipo)))
     err(file,'','lesson block types changed');
   for (const key of ['ru','audio','id','ipa','maiuscula','minuscula']) {

@@ -4,7 +4,7 @@ import type { Plano } from '../lib/assinatura';
 import { Navegacao } from '../components/Navegacao';
 import { useAuth } from '../lib/AuthContext';
 import { abrir, useAssinatura } from '../lib/assinatura';
-import { AULAS_GRATIS, PRECO_ANUAL, PRECO_EX_ALUNO, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
+import { AULAS_GRATIS, PRECO_ANUAL, PRECO_MENSAL, PRECO_TRIMESTRAL, PRECO_TRIMESTRAL_PIX } from '../config/planos';
 import { EMAIL_OFICIAL } from '../config/site';
 import { usePageTitle } from '../lib/usePageTitle';
 import { data, LOCALE, useT } from '../i18n';
@@ -74,7 +74,6 @@ export default function Assinatura() {
                   <p className="lv-plano-preco">{PRECO_MENSAL}<span>{s.porMes}</span></p>
                   <p>{s.mensalTxt}</p>
                   <button type="button" className="btn btn-primary" onClick={() => ir('checkout', 'mensal')} disabled={ocupado}>{ocupado ? t.geral.abrindo : s.assinarBtn}</button>
-                  <p className="nota">{s.exAluno(PRECO_EX_ALUNO)}</p>
                 </div>
                 <div className={`lv-plano ${escolhido?.startsWith('trimestral') ? 'lv-plano-escolhido' : ''}`}>
                   <h3>{s.tresMeses}</h3>

@@ -1,4 +1,5 @@
 // Plano da Linvuu. Cada aula tem 4 sessões; as 2 primeiras aulas de cada curso são grátis.
+// Preços canónicos: docs/PRECOS-DEFINIDOS.md — mudar um valor aqui exige atualizar esse documento no mesmo PR.
 export const AULAS_GRATIS = 2;
 export const SESSOES_POR_AULA = 4;
 export const SESSOES_GRATIS = AULAS_GRATIS * SESSOES_POR_AULA;

@@ -152,6 +152,7 @@ export const ptBR = {
     mensal: 'Mensal', porMes: ' por mês', mensalTxt: 'Cartão, renovação automática. Cancele quando quiser.', assinarBtn: 'Assinar',
     tresMeses: '3 meses', noPix: ' no Pix, pagamento único', pixTxt: '30% de desconto para quem paga por Pix. Sem renovação automática. O QR code aparece na tela seguinte.', pixBtn: 'Pagar 3 meses no Pix',
     cartaoBoleto: ' no cartão ou boleto, pagamento único', tresBtn: 'Pagar 3 meses no cartão ou boleto', dozeMeses: '12 meses', anoTxt: 'Um ano de acesso a todos os cursos. Sem renovação automática.', anoBtn: 'Pagar 12 meses',
+    menorPrecoMes: 'Menor preço por mês', equivMes: (p: string) => `≈ ${p} por mês`,
     escolhido: (p: string) => `Plano escolhido: ${p}.`, continuarPagamento: 'Continuar para o pagamento', semConta: 'Para pagar, você cria uma conta grátis no próximo passo. Os preços abaixo já são os finais.', jaTemConta: 'Já tenho conta: entrar',
     termos: 'Termos de uso e reembolso', moeda: '',
   },

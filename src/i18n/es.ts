@@ -153,6 +153,7 @@ export const es: Dicionario = {
     mensal: 'Mensual', porMes: ' al mes', mensalTxt: 'Tarjeta, renovación automática. Cancela cuando quieras.', assinarBtn: 'Suscribirme',
     tresMeses: '3 meses', noPix: ' con Pix, pago único', pixTxt: '30 % de descuento pagando con Pix (requiere cuenta bancaria en Brasil). Sin renovación automática. El código QR aparece en la pantalla siguiente.', pixBtn: 'Pagar 3 meses con Pix',
     cartaoBoleto: ' con tarjeta, pago único', tresBtn: 'Pagar 3 meses con tarjeta', dozeMeses: '12 meses', anoTxt: 'Un año de acceso a todos los cursos. Sin renovación automática.', anoBtn: 'Pagar 12 meses',
+    menorPrecoMes: 'Menor precio por mes', equivMes: (p: string) => `≈ ${p} por mes`,
     escolhido: (p: string) => `Plan elegido: ${p}.`, continuarPagamento: 'Continuar al pago', semConta: 'Para pagar, creas una cuenta gratis en el siguiente paso. Los precios de abajo ya son los finales.', jaTemConta: 'Ya tengo cuenta: entrar',
     termos: 'Términos de uso y reembolso', moeda: ' (reales brasileños)',
   },

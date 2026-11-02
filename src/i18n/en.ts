@@ -154,6 +154,7 @@ export const en: Dicionario = {
     exAluno: (p: string) => `Former student? ${p} a month for the first 6 months. The first 50 use code LINVUU50 at checkout.`,
     tresMeses: '3 months', noPix: ' by Pix, one payment', pixTxt: '30% off when you pay by Pix (requires a Brazilian bank account). No automatic renewal. The QR code appears on the next screen.', pixBtn: 'Pay 3 months by Pix',
     cartaoBoleto: ' by card, one payment', tresBtn: 'Pay 3 months by card', dozeMeses: '12 months', anoTxt: 'A year of access to every course. No automatic renewal.', anoBtn: 'Pay 12 months',
+    menorPrecoMes: 'Lowest price per month', equivMes: (p: string) => `≈ ${p} per month`,
     escolhido: (p: string) => `Selected plan: ${p}.`, continuarPagamento: 'Continue to payment', semConta: 'To pay, you create a free account in the next step. The prices below are final.', jaTemConta: 'I already have an account: sign in',
     termos: 'Terms of use and refunds', moeda: ' (Brazilian reais)',
   },

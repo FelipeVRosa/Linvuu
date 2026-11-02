@@ -19,8 +19,9 @@ window.addEventListener('vite:preloadError', (e) => {
   window.location.reload();
 });
 import { useAuth, AuthProvider } from './lib/AuthContext';
-import { LOCALE, localeLembrado, urlEm, useT } from './i18n';
+import { LOCALE, localeLembrado, urlEm } from './i18n';
 import { carregarTraducoes } from './lib/content';
+import Carregando from './components/Carregando';
 
 // Quem já escolheu outro idioma na barra do topo volta a ele ao abrir um endereço sem prefixo (ex.: um link compartilhado).
 const lembrado = localeLembrado();
@@ -29,8 +30,7 @@ document.documentElement.lang = LOCALE.codigo;
 
 function AplicacaoDaConta() {
   const { usuario, carregando } = useAuth();
-  const t = useT();
-  if (carregando) return <div className="site-carregando" role="status"><img src="/brand/linvuu-wordmark-verde.svg" alt="Linvuu" width="156" height="50" /><p>{t.geral.carregando}</p></div>;
+  if (carregando) return <Carregando marca />;
   return <App key={usuario?.uid ?? 'visitante'} />;
 }
 

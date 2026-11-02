@@ -1,1 +1,30 @@
-Ly8gQXVkaXRvcmlhcyBkZSB2aXNpdGFudGVzIGVtIHNlcnZpZG9yIGxvY2FsLCBzZW0gY3JlZGVuY2lhaXMgb3UgcmVsYXTDs3Jpb3MgcMO6YmxpY29zIGRlIHRlcmNlaXJvcy4KbW9kdWxlLmV4cG9ydHMgPSB7CiAgY2k6IHsKICAgIGNvbGxlY3Q6IHsKICAgICAgc3RhcnRTZXJ2ZXJDb21tYW5kOiAnbm9kZSBzY3JpcHRzL2luaWNpYXItc2Vydmlkb3ItbGhjaS5tanMnLAogICAgICBzdGFydFNlcnZlclJlYWR5UGF0dGVybjogJ0xJTlZVVV9MSENJX1JFQURZJywKICAgICAgc3RhcnRTZXJ2ZXJSZWFkeVRpbWVvdXQ6IDMwMDAwLAogICAgICB1cmw6IFsKICAgICAgICAnaHR0cDovLzEyNy4wLjAuMTo0Mzk4LycsCiAgICAgICAgJ2h0dHA6Ly8xMjcuMC4wLjE6NDM5OC9jdXJzby9kZScsCiAgICAgICAgJ2h0dHA6Ly8xMjcuMC4wLjE6NDM5OC9ncmFtYXRpY2EvcnUnLAogICAgICAgICdodHRwOi8vMTI3LjAuMC4xOjQzOTgvZW4nLAogICAgICAgICdodHRwOi8vMTI3LjAuMC4xOjQzOTgvZXMnLAogICAgICAgICdodHRwOi8vMTI3LjAuMC4xOjQzOTgvZW4vY3Vyc28vcnUnLAogICAgICBdLAogICAgICBudW1iZXJPZlJ1bnM6IDMsCiAgICAgIHNldHRpbmdzOiB7IG9ubHlDYXRlZ29yaWVzOiBbJ3BlcmZvcm1hbmNlJywgJ2FjY2Vzc2liaWxpdHknLCAnYmVzdC1wcmFjdGljZXMnLCAnc2VvJ10gfSwKICAgIH0sCiAgICBhc3NlcnQ6IHsKICAgICAgYXNzZXJ0aW9uczogewogICAgICAgICdjYXRlZ29yaWVzOnNlbyc6IFsnZXJyb3InLCB7IG1pblNjb3JlOiAwLjkgfV0sCiAgICAgICAgJ2NhdGVnb3JpZXM6YWNjZXNzaWJpbGl0eSc6IFsnd2FybicsIHsgbWluU2NvcmU6IDAuOSB9XSwKICAgICAgICAnY2F0ZWdvcmllczpwZXJmb3JtYW5jZSc6IFsnd2FybicsIHsgbWluU2NvcmU6IDAuNjUgfV0sCiAgICAgICAgJ2lzLWNyYXdsYWJsZSc6ICdlcnJvcicsCiAgICAgICAgJ3JvYm90cy10eHQnOiAnZXJyb3InLAogICAgICB9LAogICAgfSwKICAgIHVwbG9hZDogeyB0YXJnZXQ6ICdmaWxlc3lzdGVtJywgb3V0cHV0RGlyOiAnLmxpZ2h0aG91c2VjaS9yZWxhdG9yaW9zJyB9LAogIH0sCn07Cg==
+// Auditorias de visitantes em servidor local, sem credenciais ou relatórios públicos de terceiros.
+module.exports = {
+  ci: {
+    collect: {
+      startServerCommand: 'node scripts/iniciar-servidor-lhci.mjs',
+      startServerReadyPattern: 'LINVUU_LHCI_READY',
+      startServerReadyTimeout: 30000,
+      url: [
+        'http://127.0.0.1:4398/',
+        'http://127.0.0.1:4398/curso/de',
+        'http://127.0.0.1:4398/gramatica/ru',
+        'http://127.0.0.1:4398/en',
+        'http://127.0.0.1:4398/es',
+        'http://127.0.0.1:4398/en/curso/ru',
+      ],
+      numberOfRuns: 3,
+      settings: { onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] },
+    },
+    assert: {
+      assertions: {
+        'categories:seo': ['error', { minScore: 0.9 }],
+        'categories:accessibility': ['warn', { minScore: 0.9 }],
+        'categories:performance': ['warn', { minScore: 0.65 }],
+        'is-crawlable': 'error',
+        'robots-txt': 'error',
+      },
+    },
+    upload: { target: 'filesystem', outputDir: '.lighthouseci/relatorios' },
+  },
+};
